@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T13:31+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">KLM Form Analyzer: automated evaluation of web form filling tasks using human performance models</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christos</forename><surname>Katsanos</surname></persName>
+							<email>ckatsanos@eap.gr</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Hellenic Open University</orgName>
+								<address>
+									<addrLine>Parodos Aristotelous 18</addrLine>
+									<postCode>26335</postCode>
+									<settlement>Patras</settlement>
+									<region>Achaia</region>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nikos</forename><surname>Karousos</surname></persName>
+							<email>nkarousos@eap.gr</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Hellenic Open University</orgName>
+								<address>
+									<addrLine>Parodos Aristotelous 18</addrLine>
+									<postCode>26335</postCode>
+									<settlement>Patras</settlement>
+									<region>Achaia</region>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nikolaos</forename><surname>Tselios</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Patras</orgName>
+								<address>
+									<postCode>26500</postCode>
+									<settlement>Rio</settlement>
+									<region>Achaia</region>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Michalis</forename><surname>Xenos</surname></persName>
+							<email>xenos@eap.gr</email>
+							<affiliation key="aff0">
+								<orgName type="institution">Hellenic Open University</orgName>
+								<address>
+									<addrLine>Parodos Aristotelous 18</addrLine>
+									<postCode>26335</postCode>
+									<settlement>Patras</settlement>
+									<region>Achaia</region>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nikolaos</forename><surname>Avouris</surname></persName>
+							<email>avouris@upatras.gr</email>
+							<affiliation key="aff1">
+								<orgName type="institution">University of Patras</orgName>
+								<address>
+									<postCode>26500</postCode>
+									<settlement>Rio</settlement>
+									<region>Achaia</region>
+									<country key="GR">Greece</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">KLM Form Analyzer: automated evaluation of web form filling tasks using human performance models</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Web form design</term>
+					<term>task efficiency</term>
+					<term>user performance time</term>
+					<term>automat- ed tool</term>
+					<term>human performance models</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Abstract. Filling forms is a common and frequent task in web interaction. Therefore, designing web forms that enhance users' efficiency is an important task. This paper presents a tool entitled KLM Form Analyzer (KLM-FA) that enables effortless predictions of execution times of web form filling tasks. To this end, the tool employs established models of human performance, namely the Keystroke Level Model and optionally the Fitts' law. KLM-FA can support various evaluation scenarios, both in a formative and summative context, and according to different interaction strategies or modeled users' characteristics. A study investigated the accuracy of KLM-FA predictions by comparing them to participants' execution times for six form filling tasks in popular social networking websites. The tool produced highly accurate predictions (89.1% agreement with user data) in an efficient manner.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Usability of interactive web forms is a critical aspect of the overall user experience. Form filling is a data entry task, and thus user efficiency is of particular importance in the design of web forms. Current design practices are mostly empirical and rely on guidelines derived from experimental studies comparing alternative designs and usability experts' experience or observations. For instance, the type of form elements as well as their positioning in the form layout significantly affect users' performance <ref type="bibr" target="#b0">[1]</ref>. One may argue that theoretically-based approaches have had a limited impact on web form design practices. Unlike desktop <ref type="bibr" target="#b1">[2]</ref> or mobile interfaces <ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref>, GOMS <ref type="bibr" target="#b4">[5]</ref> and its simplified version Keystroke-Level Model (KLM) <ref type="bibr" target="#b4">[5]</ref><ref type="bibr" target="#b5">[6]</ref>, have been rarely used to guide web form design or evaluation. In addition, if field size and position on the form layout are not taken into account in such model-based techniques, superficial results may arise. For instance, interaction with a dropdown menu theoretically takes longer than interaction with radio buttons. This is due to an additional point and click needed to open the dropdown menu. However, in one study the latter hypothesis was confirmed <ref type="bibr" target="#b6">[7]</ref> and in another it was rejected <ref type="bibr" target="#b7">[8]</ref>.</p><p>As a result, there is a need to bridge HCI models, such as KLM, with design and evaluation practices. Previous research <ref type="bibr" target="#b8">[9]</ref> resulted in the development of CogTool, a tool that can produce quantitative, model-based predictions of skilled performance time from tasks demonstrated on storyboard mockups of a user interface. CogToolExplorer <ref type="bibr" target="#b9">[10]</ref> builds upon CogTool to predict a user's goal-directed exploratory interaction with a website. Currently available model-based tools require non-trivial manual work to examine forms. In addition, if a large scale summative evaluation is needed, the evaluator has to repeat the same process without any particular assistance. Furthemore, the plethora of available functions and generic modeling nature of existing tools can overwhelm and discourage practitioners who, in most cases, need a simple tool focused on the problem at hand.</p><p>To tackle the aforementioned problems, in this paper a novel tool entitled KLM Form Analyzer (KLM-FA) is presented. KLM-FA extends the capabilities of existing modeling tools for practitioners by focusing specifically on automating the analysis of web forms. The paper is organized as follows: The tool functionality and usage is delineated in the next section, along with its internal architecture and reasoning. Finally, a validation study comparing KLM-FA results to human performance data is presented and discussed.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>2</head><p>The KLM Form Analyzer Tool</p><p>The main objective of KLM-FA (available at http://klmformanalyzer.weebly.com) is to support design and evaluation of web forms in an effective and efficient manner. The tool employs web parsing algorithms, coupled with KLM and Fitts' modeling to estimate the time required to fill a web form according to different interaction strategies (e.g. using tab to move across the elements) or users' characteristics (e.g. age and typing expertise). <ref type="figure" target="#fig_0">Figure 1</ref> presents the main interface and functionality of KLM-FA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">KLM-FA Typical Usage Scenario</head><p>First, the evaluator inputs the URL of the web form to be evaluated or selects a previously evaluated form. Next, the evaluator selects a set of analysis preferences related to the modeled user profile (typing ability, age), usage (or not) of Fitts' law in the calculations, and hypotheses about the interaction, such as initial cursor position and whether the user moves across form elements using the mouse or the keyboard. The evaluator can also assign a predefined field type to text elements (e.g. username, email) to easily specify their number of keystrokes. The tool provides an editable list of field types that covers most of the elements used. The default typical field entry lengths rely on empirical data available in the literature (e.g. mean password length <ref type="bibr" target="#b10">[11]</ref>) and a dataset of our own with 839 registered web users' personal data. Next, KLM-FA runs an algorithm which parses the evaluated form, produces the sequence of predicted user actions (KLM operators) based on the evaluator's selected analysis preferences and estimates task completion time based on a set of analysis parameters related to KLM and Fitts' law calculations. Based on empirical data <ref type="bibr">[12- 13]</ref>, the tool provides a set of default values for the analysis parameters, which can be easily modified through appropriate dialogues. The internal architecture and algorithms employed by the tool are delineated in the next section. The output of the tool is an interactive web form preview synchronized with a results list: when an element is selected in the web form preview it is highlighted in the results list and vice versa. Depending on the evaluation scenario, mental operators can be added or any element can be excluded from the analysis by simply unchecking it from the results list. In all cases, the tool updates the results in real time. Furthermore, KLM-FA provides an option that elaborates the underlying KLM modeling for each element in a tooltip. In this way, one can trace step-by-step the KLM modeling analysis by simply selecting the sequence of the form elements either in the web preview or in the list. Each evaluated form can be saved and/or subsequently modified. In addition, KLM-FA can employ mass scale summative evaluations by selecting a set of saved projects. Then, the tool runs an analysis of all the selected forms using the same settings for all projects and saves the results in an XML file.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Internal Architecture and Reasoning</head><p>The KLM-FA internal architecture comprises two conceptual layers: the user interface layer, responsible for the interaction with the tools' user, and the KLM analysis layer (named KLMKernel). The form identifier parses the HTML DOM loaded in the internal browser and finds all forms. It filters out forms that cannot be eligible for analysis (hidden) and presents a "select form" dialogue if two or more forms are found. Then, the element identifier parses the selected form, identifies and stores visible fields in the internal ElementList. Currently, the tool cannot identify fields when either Flash or AJAX is used. However, KLM-FA provides support to manually add fields and specify their properties in a straightforward manner (e.g. clicking on unidentified field registers its position and size). The following pseudocode sketches the element identifier algorithm which produces an updated ElementList. For each form element the algorithm produces the sequence of required actions (KLM operators) to first reach it (ReachTime) and then manipulate it (ManipulationTime). This distinction enables flexible modeling of various user interaction strategies (e.g. tab-based navigation). In addition, the algorithm creates an explanatory text of the KLM modeling rationale which can be displayed as a tooltip in the web preview form.</p><p>Concerning Fitts' law, the analysis module calculates the pointing operator by storing the previous position of a simulated mouse cursor and updating it whenever the modeling process requires its movement to a new position. The MacKenzie-Shannon formula and constants <ref type="bibr" target="#b1">[2]</ref> for Fitts' law are the default selection for modeling pointing device movement time. However, given the lack of consensus on the Fitts' formula <ref type="bibr" target="#b13">[14]</ref>, the tool offers additional options (e.g. Welford's formulation <ref type="bibr" target="#b1">[2]</ref>) and it is also easy to add further formulas or modify constants values.</p><p>Finally, KLM-FA sums up the results and produces a sequence of operators and the predicted form completion time for the provided analysis preferences and parameters. The entire form analysis concludes to an updated ElementList that can be saved, reanalyzed with a different set of parameters or exported to an XML file. In addition, the form analysis algorithm can be executed for a set of saved forms (ElementLists) to rapidly produce massive KLM modeling results for the same set of analysis parameters. The following pseudocode sketches the form analysis algorithm.</p><p>Analyze(ElementList){ TypeElement prev_el; foreach element in ElementList if (is_active(element)) prev_el = ElementList.GetPreviousActiveElement (element, nav_using_mouse()); if (Fitts_Law is_enabled() and nav_using_mouse()) estimate_FittsP_Reach(element); analyze_element_reach(element, prev_el); analyze_element_manipulation (element); }</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Validation Study</head><p>The aim of the study was to investigate the accuracy of the results obtained by using KLM-FA. The study compared the KLM-FA predictions with user testing data for three signup forms of popular social networking websites: facebook, twitter, and myspace. For each form, two interaction strategies were investigated: a) mouse-based, in which a user is assumed to interact with the form using the mouse, except for input in text entry fields, b) keyboard-based, in which form fields are reached using the tab key and manipulated only through the keyboard. In both interaction strategies, users were assumed to fill the fields following the form layout. All in all, times for a total of six form-filling tasks (3 forms x 2 interaction strategies) as calculated by KLM-FA and measured through user testing were compared.</p><p>Fifteen University students, 12 male, with a mean age of 27 (sd=5.8), a mean of 14 years of QWERTY keyboard usage (sd=4.2) and a mean typing speed of 42 corrected words per minute (sd=16) took part in the study. First, participants completed a short online demographics questionnaire and a typing speed test. Next, they were asked to perform 10 trials for each of the six tasks and their behavior was monitored by an inhouse web-based software developed for the needs of the study. Ten trials have been used in similar studies <ref type="bibr" target="#b14">[15]</ref> to allow users' to reach skilled performance. In this study, participants were allowed to perform additional trials if their tenth trial was not errorfree (max number of trials observed = 12). Task execution times were derived from participants' last error-free trial.</p><p>In each trial, participants were first presented with an instructions webpage, followed by the actual form which appeared when they clicked on a link. In the instructions page, they were asked to familiarize themselves with the form registration data and were instructed to strictly employ a specific interaction strategy (i.e. mouse-based or keyboard-based) in order to fill the form as fast and correct as possible. In the form webpage, participants were first required to press a start button located in the top-left of the screen, which started logging of actions and ensured the same starting cursor position for all. The presentation order of both the forms and interaction strategies were counterbalanced to avoid serial order effects. Participants used an HP standard keyboard, an HP 3-button optical mouse and a TFT 17" screen with a resolution of 1280x1024. User sessions lasted about 75 minutes.</p><p>In KLM-FA, the following assumptions were used: a) the user was a poor typist (40 wpm) and aged below 40, b) system response time was negligible, c) the cursor's initial position was at the top-left corner of the page, d) tool defaults for all analysis parameters were used, apart from field entry lengths that were appropriately adjusted for each task, e) the user's hand began on the main device of each interaction strategy, and f) Fitts' law calculations were enabled in KLM-FA. KLM-FA analyses were also conducted on a TFT 17" screen with a resolution of 1280x1024. The process to evaluate all six tasks using KLM-FA required approximately 10 minutes. <ref type="table" target="#tab_2">Table 2</ref> presents participants' task execution times and KLM-FA calculated times for each form and interaction strategy combination, along with the KLM-FA error rate. The error rate was calculated as the participants' mean task time minus the KLM-FA predicted time, and this difference divided by the participants' mean task time. Results show that the mean error of KLM-FA predictions was 10.9% (sd=6.4%), which is well within the 20% margin of error reported in the literature for KLM predictions in other contexts <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b15">[16]</ref>. The lowest and highest KLM-FA error rate values were 4.5% and 17.6% respectively. In general, KLM-FA tended to slightly overestimate (16.7% on average) and underestimate (5.1% on average) task time in the mouse-based and keyboard-based interaction strategies respectively. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Conclusions</head><p>This paper presents KLM-FA, a tool that employs predictive models of human performance to estimate execution times of web form filling tasks. In addition, a study is presented that demonstrates the accuracy of KLM-FA predictions by comparing them to human execution times for the same six form filling tasks. KLM-FA extends the capabilities of existing general modeling tools for practitioners, such as CogTool <ref type="bibr" target="#b8">[9]</ref>, by focusing specifically on web form interaction. In this way, KLM-FA increases automation of evaluation tasks, minimizes the required effort and achieves increased simplicity and flexibility, thus increasing the chances of its adoption in actual practice. As a result, practitioners can rapidly evaluate alternative web form design approaches using a variety of scenarios. In addition, the ability of KLM-FA to evaluate keyboard-based interaction with web forms can be valuable in automated accessibility testing. KLM-FA can also be used to produce benchmark data of form completion times for specific web domains, such as social networking or e-commerce. Finally, the tools' step-by-step tracing of the KLM modeling supports learning through examples and thus can be valuable for both educators and students.</p><p>Investigating the effect of KLM-FA adoption on the learning outcome, while educating students in KLM, constitutes a future research goal. In addition, we plan to conduct additional studies that compare KLM-FA predictions with human performance data. An additional future research goal is to incorporate enriched models of KLM <ref type="bibr" target="#b16">[17]</ref> in order to support design of web forms that enhance users' efficiency in mobile interaction contexts.</p><p>Despite the advantages of the presented automated approach, it only addresses task efficiency which is one aspect of the web user experience. Other tools that automate different aspects of web design are also available <ref type="bibr" target="#b17">[18]</ref>. However, all such approaches should be used in conjunction with user-based methods.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1 .</head><label>1</label><figDesc>Overview of the KLM-FA interface and functionality: (a) Mass scale evaluation, (b) Analysis rules and parameters, (c) Analysis preferences, (d) Tooltip explaining KLM modeling for the selected field, (e) Semantic mapping of a text-entry element to a number of keystrokes</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc>The latter handles the elements identification through a b c d e webpage parsing and the KLM modeling calculations.The fundamental data structure of the KLM-FA is the Element class, which is used to represent each element.Table 1presents its main data members. The KLMKernel first parses a given form to produce a structured list of Elements (named ElementList) and then performs the KLM analy- sis and updates the ElementList with the results.Table 1. Data members of the Element class, the fundamental data structure of KLM-FA. Data member Brief Description TagName HTML form tag (e.g. &lt;select&gt;) or special KLM-FA tag (e.g. tabholder) Type HTML type of &lt;input&gt; tag (e.g. password, text, radio etc.) Name Value of the HTML name attribute Choices Number of choices for radio buttons and drop-down lists MappedField Semantic mapping of a text-entry element to a number of keystrokes Position X and Y coordinates of the element position in the form layout Size Width and height of the element MentalExtras Mental operators manually added or removed Active Flag to denote whether the element is included in the calculations ReachTime Predicted time required to reach the element ManipulationTime Predicted time required to manipulate the element KLMexplanation Explanatory text describing the rationale of the derived KLM operators Parsing Module. It is responsible for parsing a provided webpage to identify existing forms and their elements. To this end, it employs two separate algorithms: a) form identifier, and b) element identifier.</figDesc><table>a 
+b 
+c 
+
+d 
+
+e 
+
+Data member 
+Brief Description 
+TagName 
+HTML form tag (e.g. &lt;select&gt;) or special KLM-FA tag (e.g. tabholder) 
+Type 
+HTML type of &lt;input&gt; tag (e.g. password, text, radio etc.) 
+Name 
+Value of the HTML name attribute 
+Choices 
+Number of </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head></head><label></label><figDesc>Analysis Module. This module performs the KLM modeling and related calculations. It takes as input the ElementList along with the following parameters:  evaluator-defined preferences concerning modeled users' typing proficiency and age, mouse or keyboard usage for navigation and manipulation of the elements, Fitts' Law activation, and initial position of the user's hands and cursor,  predefined time values for KLM operators and Fitts' constants,  paired list of [fieldname-keystrokes] that is used for text entry calculations, and  set of KLM analysis rules regarding placement of mental operators, and other spe- cific modeling assumptions (e.g. manipulation of dropdown lists with keyboard).</figDesc><table>GetFormElements(FormNode, ElementList){ 
+foreach Element in FormNode.Elements 
+if (validate_element(Element)) 
+if (Element.Type == "radio") 
+calculate_middle_Element(formNode, Element) 
+else 
+if (Element.Type == "select") 
+calculate_select_options(formNode, Element) 
+ElementList.Add(Element) 
+Element.Active = isElementInsideHiddenDiv(Element) 
+} 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="true"><head>Table 2 .</head><label>2</label><figDesc>Study results showing means and, in parenetheses, standard deviations.</figDesc><table>Signup 
+form 
+
+Interaction 
+strategy 
+
+Participants' 
+task time (ms) 
+
+KLM-FA predicted 
+time (ms) 
+
+Error rates of KLM-
+FA predictions (%) 
+Facebook Mouse-based 
+30739 (6742) 
+35320 
+14.9% 
+Facebook Keyboard-based 27306 (7752) 
+25640 
+6.1% 
+Myspace Mouse-based 
+33201 (6341) 
+39050 
+17.6% 
+MySpace Keyboard-based 29641 (9310) 
+28320 
+4.5% 
+Twitter 
+Mouse-based 
+22478 (5146) 
+26420 
+17.5% 
+Twitter 
+Keyboard-based 23144 (6108) 
+24240 
+4.7% 
+
+</table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>This work has been partly funded by the European Territorial Cooperation Operational Programme "Greece-Italy 2007-2013" under the project Intersocial.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Working towards Usable Forms on the Worldwide Web: Optimizing Multiple Selection Interface Elements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">A</forename><surname>Bargas-Avila</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Brenzikofer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">N</forename><surname>Tuch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">P</forename><surname>Roth</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Opwis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Human-Computer Interaction</title>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">347171</biblScope>
+			<biblScope unit="page">pages</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Towards a Standard for Pointing Device Evaluation, Perspectives on 27 Years of Fitts&apos; Law Research in HCI</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">W</forename><surname>Soukoreff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Mackenzie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of HumanComputer Studies</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="751" to="789" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Keystroke-Level Analysis of Korean Text Entry Methods on Mobile Phones</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Myung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Human-Computer Studies</title>
+		<imprint>
+			<biblScope unit="volume">60</biblScope>
+			<biblScope unit="page" from="545" to="563" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Maragoudakis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">K</forename><surname>Tselios</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Fakotakis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">M</forename><surname>Avouris</surname></persName>
+		</author>
+		<title level="m">Improving SMS usability using Bayesian Networks. Ιn: Methods and Applications of Artificial Intelligence, Lecture Notes in AI, LNAI no. 2308</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="179" to="190" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">The Psychology of Human Computer Interaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Card</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">P</forename><surname>Moran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Newell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1983" />
+			<publisher>Lawrence Erlbaum Associates</publisher>
+			<pubPlace>Hillsdale, NJ, USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">The Keystroke-Level Model for User Performance Time with Interactive Systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">K</forename><surname>Card</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">P</forename><surname>Moran</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Newell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Communications of the ACM</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="396" to="410" />
+			<date type="published" when="1980" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Drop Downs and Scrollmice: The Effect of Response Option Format and Input Mechanism Employed on Data Quality in Web Surveys</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Healey</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Social Science Computer Review</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="111" to="128" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Drop-down, Radio Buttons, or Fill-in-the-blank? Effects of Attribute Rating Scale Type on Web Survey Responses</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hogg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Masztal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings ESOMAR</title>
+		<meeting>ESOMAR</meeting>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Predictive Human Performance Modeling Made Easy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">E</forename><surname>John</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Prevas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">D</forename><surname>Salvucci</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Koedinger</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings CHI</title>
+		<meeting>CHI</meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="455" to="462" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">CogTool-Explorer: towards a Tool for Predicting User Interaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Teo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">E</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Ext. Abstracts CHI</title>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="2793" to="2798" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Password Security: An Empirical Investigation into E-Commerce Passwords and Their Crack Times</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cazier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Medlin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Information Systems Security</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="45" to="55" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Using the Keystroke-Level Model to Estimate Execution Times</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kieras</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+<note type="report_type">Unpublished report</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Growth of Cognitive Modeling in Human-Computer Interaction since GOMS</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">R</forename><surname>Olson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">M</forename><surname>Olson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Human-Computer Interaction</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="221" to="265" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Drewes</surname></persName>
+		</author>
+		<title level="m">Only One Fitts&apos; Law Formula Please! In: Ext. Abstracts CHI 2010</title>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="2813" to="2822" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Predicting Task Execution Time on Handheld Devices Using the Keystroke-Level Model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">E</forename><surname>John</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Ext. Abstracts CHI 2005</title>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="1605" to="1608" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">The State of the Art in Automating Usability Evaluation of User Interfaces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">E</forename><surname>Ivory</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Hearst</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Computing Surveys</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="470" to="516" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Keystroke-Level Model for Advanced Mobile Phone Interaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Holleis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Hussmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Schmidt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings CHI</title>
+		<meeting>CHI</meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="1505" to="1514" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A Survey of Tools supporting Design and Evaluation of Websites based on Models of Human Information Interaction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Katsanos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Tselios</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Avouris</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal on Artificial Intelligence Tools</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="755" to="781" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

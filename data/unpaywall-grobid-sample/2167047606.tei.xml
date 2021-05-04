@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-04T23:27+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">An Invisible Gorilla: Is It a Matter of Focus of Attention?</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Chen</forename><surname>Wang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Centrum voor Wiskunde&amp;Informatica</orgName>
+								<address>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Pablo</forename><surname>Cesar</surname></persName>
+							<email>p.s.cesar@cwi.nl</email>
+							<affiliation key="aff0">
+								<orgName type="department">Centrum voor Wiskunde&amp;Informatica</orgName>
+								<address>
+									<country key="NL">the Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Erik</forename><surname>Heelhoed</surname></persName>
+							<email>erik.geelhoed@falmouth.ac.uk</email>
+							<affiliation key="aff1">
+								<orgName type="institution">Falmouth University</orgName>
+								<address>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">An Invisible Gorilla: Is It a Matter of Focus of Attention?</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>EEG Sensors</term>
+					<term>focus of attention</term>
+					<term>video training exercises</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Abstract</head><p>How to evaluate users' attention level in a video task is a challenge. One of the conventional methods is to link users' focus of attention to their performance undertaken in a video. However, this is not always true in a video environment, as users' poor performance may be resulted from some other reasons rather than a lack of focus of attention. In this article, we demonstrated our assumption by using an Electroencephalography (EEG) sensor, which measured the users' attention level in a video task. Our results showed one case that some of the users with a poor performance in the video task had the same level of attention compared to those users with a good performance. In particular, an interference object in the video, aimed for distracting the users' attention, had no impact on some of the users' focus when they were already involved in the video task.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Focus of attention (similar to concentration), in cognitive neuroscience, refers to the individuals' capacity to choose what they pay attention to and what they ignore <ref type="bibr" target="#b5">[10]</ref>. It is also known as endogenous attention or executive attention.</p><p>Focus of attention is important for learning. The ability to regulate and direct attention makes one being able to guide their attention towards the information-rich areas for learning. Moreover, people believe that the focus of attention has influence on the studying. The higher focus one has during lecture, the higher possibility is to acquire a good score in a test.</p><p>Previous studies have proven that multimedia learning resources can be used to enhance users' attention and motivation <ref type="bibr" target="#b7">[12]</ref>. Many multimedia training applications are developed to train and improve users' ability of focus. They are considered useful and helpful, especially used as exercises to train users how to concentrate at a certain task. In these training videos, normally there is a task or more than one task included, and users are required to fulfill the task with sufficient attention. Through many training exercises, users may improve their ability of focus which might be benefit for their studies and reduce learning time.</p><p>Focus of attention is one of the important factors during studying and it may be intensified through video training exercises. But we cannot simply use the performance results in video training exercises to judge how much attention users have paid. Users may give a poor performance due to a lack of focus or users can not follow the task properly. In the latter situation, the reasons may due to unconsciously users' eyes moved away from the target, but users were still focused at the task they were conducting. Second, some training videos design an interference object in a task. The purpose of using an interference object is to train users how to focus at the task with ignoring the influence of the interference object. Some of the users may alter their visual focus to the interference object when they were involved at the task, while some of the other users may not notice the presence of the interference object as they were concentrated at the task <ref type="bibr">[7]</ref>. Therefore, without users' attention feedback, it is difficult to judge whether users have paid different level of focus of attention when they obtained different performance scores in a video task. In particular, there is no proof to conclude that users' attention dropped at the presence of an interference object without users' attention feedback.</p><p>In this article, we used an EEG sensor to measure the user s' focus of attention in a training video exercise. With the help of an EEG sensor, we monitored users' attention levels when they were in the task so that we could link the users' attention values to the users' performance results. In addition, we evaluated the effects of an interference object on the users' focus of attention in the training video exercise. Our studies aim to validate the following two hypotheses: H1: In a video training exercise, users may show the same attention level even though they have different performance scores.</p><p>H2: In a video training exercise, users may have the ability to keep attention at the presence of the interference object.</p><p>By validating our hypothesis, they may be beneficial for us to learn more knowledge about users' behavior of focus of attention during in a multimedia environment. Our results contribute the further studies on users' focus of attention in terms of multimedia consumption. First, users' attention feedback might be helpful for trainers to objective judge users' performance in a video training exercise. Second, attention feedback may also useful in e-learning environment, e.g., teachers obtain students' feedback from a remote location. Last, it opens a door to the researches on the multimedia design, especially how to design an effective video by detecting users' focus of attention for the purpose of training, teaching and some other applications, for instance advertisement.</p><p>This article is structured as follow. The next section describes the related work. Then section 3 describes the experiment design and reports the results. Section 4 discusses the results. And finally, section 5 concludes the article.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Related Work</head><p>Attention is a complex process. Users' attention level may be affected by the media form, media content and user characteristics <ref type="bibr" target="#b6">[11]</ref>. In the previous studies, neuroscientist has found that the users found some tasks difficult done simultaneously if these tasks require the control from the same area of a brain, whereas the users tend to be capable of dealing some of the tasks in the same time if they require the different control parts from a brain. Therefore, it is possible for a user maintains the focus when he or she is conducting multiple tasks.</p><p>Recent advancement in the neuroscience technology makes focus of attention measureable. Users' focus of attention is measured by detecting users' EEG electrical activity along the scalp. The EEG sensor is used extensively in neuroscience, cognitive science and cognitive psychology research. The EEG sensor can easily be used without requiring bulky and immobile equipment. Mick et al. <ref type="bibr" target="#b4">[9]</ref> studied the accuracy and reliability of the MindSet <ref type="bibr">[2]</ref>, a type of EEG sensor produced by NeuroSky <ref type="bibr" target="#b3">[8]</ref>; Raffaella et al. <ref type="bibr" target="#b0">[3]</ref>, <ref type="bibr" target="#b1">[4]</ref>, <ref type="bibr" target="#b2">[5]</ref> used this type of (or similar) EEG sensor to detect users' focus of attention in the different applications.</p><p>Our research interests were motivated by the availability and convenience of an EEG sensor. An EEG sensor provides the user's attention feedback, which can be used to measure users' attention level in a video consumption. The contributions of this paper are to provide the methodologies to investigate users' behaviour of focus of attention by using an EEG sensor. Educators may use them as a feedback to link users' focus of attention to their performance results in a video training exercise. Teachers may find them beneficial to get an attention feedback from the students sitting in a remote location. Video designers may try to test different design concepts in order to produce the effective videos in the different applications.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Experiment Design</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Sensor</head><p>The MindWave EEG sensor, a new version of MindSet, processes brainwaves into digital signals to make the measurement available to games and some other applications, for instance attention training. The MindWave uses eSense <ref type="bibr">[6]</ref> algorithm to calculate users' engaging attention (similar to concentration), and the algorithm amplifies the raw brainwave signal and removes the ambient noise and muscle movement.</p><p>MindWave communicates with the server using a RF dongle. It is attached on the users' forehead, with also reference points located on the ear pad <ref type="figure">(Fig. 1)</ref>. The eSense meters (attention) are calculated and being sent to the server. The user' attention value is reported on a relative scale from 1 to 100. A value in the range of 40 to 60 is considered "neutral". A value from 60 to 80 is considered "higher attention", and values from 80 to 100 are considered "highest attention". Similar, on the other end of the scale, a value from 20 to 40 indicates "lower attention", while a value in the range of 1 to 20 indicates "lowest attention" <ref type="bibr" target="#b8">[13]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Fig. 1. MindWave EEG sensor</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Server-Side Component</head><p>A laptop is used as the server-side component, and it acts as the monitoring centre. The brain wave sensor communicates with the laptop using a RF dongle. All the data is sampled at 514Hz. The software for monitoring and mixing the data from a brain wave sensor is written in Python and C++ language.</p><p>The inputs from a brain wave sensor are being sent to the laptop at the same time. <ref type="figure" target="#fig_0">Fig. 2</ref>, for example, visualizes the data gathered by the brainwave sensor. In the attention graph, the green line represents the attention value and the red line is the meditation value. These two values reflect the user's internal attention and meditation state. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Video Selection</head><p>The video selected in our experiment was produced by the psychologists Daniel Simons and Christopher Chabris <ref type="bibr">[1]</ref>. The video showed six people, three in black and three in white, passing a basketball back and forth <ref type="figure" target="#fig_1">(Fig. 3)</ref>. In the meanwhile, a person in a gorilla costume walked across the group of players <ref type="figure">(Fig. 4)</ref>. The task in this video was to ask users to pay attention to count passing time of the ball from the team in white. The use of the Gorilla was to test whether users could see the Gorilla or not when they were in the counting task.</p><p>Although this video is not special designed for our experiment, it is suitable for our studies. First, it has a counting task, and users may have different counting performance results. Second, users may or may not see the Gorilla when they were busy in the counting task. With the help of an EEG sensor, we can analyse whether different counting scores and the appearance of the Gorilla have effects on the users' attention level. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.4">Participants</head><p>The participants included 8 females and 14 males; the majority were from the Netherlands (10 people), five were European (1 Greek, 2 Germans, 1 Spanish and 1 Bulgarian), one was South American (Brazil) and three were from Asia (1 Vietnamese, 2 Indian, and 1 Chinese). The average age of the participants is 32 years (SD: 6.7) old. All the participants were first time to this video and received a free gift after the experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.5">Methodology</head><p>The EEG sensor data was analyzed using Analysis of Variance (ANOVA). An alpha level of .05 was adopted. For each outcome only F values, p values and Cohen's partial eta squared ( p 2 ) are provided. We performed a two-way between-subjects design in our experiment, including two between-subjects independent variables. The two variables are: counting results and the appearance of the Gorilla. The dependent variable was the focus of attention, which measured by the EEG sensor across all the participants. This design allowed us to analyze three effects on the focus of attention: the main effect of the presence of the Gorilla, the main effect of counting results and the two-way interaction (Gorilla * counting results).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.6">Procedure</head><p>Before watching the video, we helped the users wear the EEG sensor. The users followed the video instruction and fulfilled the counting task in the video. After watching, we took notes about their counting results and whether they saw the Gorilla or not.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7">Results</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7.1">Counting results effect</head><p>In our experiment there were four different counting results in the answers of the ball passed within the white team: 13 times, 14 times, 15 times and 16 times. The correct answer is 15 times. The users' attention values measured by the EEG sensor at the different counting scores are shown in <ref type="table" target="#tab_0">Table 1</ref>: The two-way ANOVA analysis showed there was no significant attention difference among the users with the different counting results: F (3, 14) = 1.18, p &gt; .05,  p 2 = 0.16, so that we cannot reject our first hypothesis (H1). This result proved that some users gave a poor performance results (e.g. counting 13 times), who paid the same level of attention as the users counted correctly. The different counting results may result from the users' eyes unconsciously moved to somewhere else in the video, so that they missed counting. Some of the users reported that they were very nervous at the start, so that they missed the one or two counting in the beginning of the task.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7.2">Gorilla presence effect</head><p>Twelve users reported that they saw the Gorilla during counting, while the 10 users did not noticed the appearance of the Gorilla at all. The user' attention values in these two different situations are displayed in the <ref type="table" target="#tab_1">Table 2</ref>. The ANOVA analysis results cannot reject the second hypothesis: F (1, 14) = .03, p &gt; .05,  p 2 = .002, which means that the presence of the Gorilla did not change users' focus of attention when they were busy at the counting task. This again proved our second assumption. Some of the users busying in the counting task were not be interfered by the presence of the Gorilla, or in other words, in this video, the Gorilla designed as an interference object had distracted some of the users' visual attention, but it had the least effect ( p 2 = .002) on users' focus of attention.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.7.3">Two-way interaction</head><p>There was no interaction found in our analysis results: F (3, 14) = 0.98, p = .43,  p 2 = 0.16. It indicates that the simultaneous influence of the two variables (counting results * Gorilla) on the users' focus of attention was not additive. The descriptive statistics on the users' attention value is displayed in <ref type="table" target="#tab_2">Table 3</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Discussion</head><p>This paper studied one of the patterns on the user's focus of attention during a training video exercise. An EEG sensor was used to measure the user's attention values when they were at the counting task during the video. The user performance results effect, the Gorilla presence effects and the interaction (counting results * Gorilla) were analyzed on the users' focus of attention.</p><p>Our findings showed that focus of attention was not the only one factor which affected users' performance results during a video training exercise. The presence of the Gorilla effect analysis revealed that some of the users' attention levels would not be affected by the presence of the interference object when they were already involved in a task. By employing the EEG sensor and following the methodology mentioned in this article, educators may be more rational assess the users' performance results during a video training exercise. Moreover, in an e-learning environment, although students were in a remote location, their focus of attention may be obtained by using an EEG sensor. Last but not least, based on users' attention feedback, it may be possible to explore the different evaluation methods on the video design, especially a video aimed to improve users' ability of focus.</p><p>In this experimental study, it would be interesting to further analyze the attention difference when users obtained the same counting results based on the two different visual attention situations: the users saw the Gorilla and the users did not see the Gorilla. We did not process the analysis due to lack of enough participants in this study, for instance the 4 users saw the Gorilla versus the 3 users did not see the Gorilla when they all counted the 15 times of the ball being passed. Furthermore, it would be more helpful to combine some of the other methods, for instance eye tracking, in our studies to investigate where users looked at during the counting task. In such a way, we may have more arguments to explain why users had different counting results even though they have paid the same level of focus of attention. In the future, we suppose to invite more participants and combine the possible compensative solutions to enrich our studies, in the purpose of exploring users' attention behavior in a video consumption.</p><p>The results reported in this article are part of a bigger ongoing project, aimed at developing novel video-based communication paradigms. These include remote lecturing and distributed performances. This feedback will be used for the implementation of adaptation mechanisms, which are reactive to the viewers' level of immersion.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 2 .</head><label>2</label><figDesc>Real-Time visualization of the attention and meditation</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 3 .</head><label>3</label><figDesc>The two teams were playing the basketball back and forth Fig. 4. The Gorilla walked across the players</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="true"><head>Table 1 .</head><label>1</label><figDesc>The descriptive statistics on the counting results effect</figDesc><table>Score 
+Mean 
+Std. Deviation 
+Number of 
+Participants 
+13 
+46.78 
+8.63 
+5 
+14 
+56.11 
+12.38 
+6 
+15 
+55.58 
+12.74 
+7 
+16 
+60.48 
+10.31 
+4 
+Total 
+54.61 
+11.59 
+22 
+
+Score: Counting Score, Mean (Std. Deviation): Attention values mean (std. deviation) 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="true"><head>Table 2 .</head><label>2</label><figDesc>The descriptive statistics on the presence of the Gorilla effect</figDesc><table>Gorilla 
+Mean 
+Std. Deviation 
+Number of 
+Participants 
+N 
+54.13 
+12.95 
+10 
+Y 
+55.02 
+10.9 
+12 
+Total 
+54.61 
+11.59 
+22 
+
+N: the participants not seeing the Gorilla, Y: the participants seeing the Gorilla 
+
+Score: Counting Score, Mean (Std. Deviation): Attention values mean (std. deviation) 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head>Table 3 .</head><label>3</label><figDesc>The descriptive statistics on the interaction Score Gorilla Mean Std. Devia- tion Number of Participants 13 N 48.99 7.48 3 Y 43.47 12.24 2 Total 46.78 8.63 5 14 N 58.74 17.66 3 Y 53.49 7.13 3 Total 56.11 12.38 6 15 N 49.27 12.24 3 Y 60.31 12.46 4 Total 55.58 12.74 7 16 N 70.27 1 Y 57.21 9.77 3 Total 60.48 10.31 4 Total N 54.13 12.95 10 Y 55.02 10.91 12 Total 54.61 11.59 22 N: the participants not seeing the Gorilla, Y: the participants seeing the Gorilla Score: Counting Score, Mean (Std. Deviation): Attention value mean (std. deviation)</figDesc><table>Score 
+Gorilla 
+Mean 
+Std. Devia-
+tion 
+
+Number of 
+Participants 
+13 
+N 
+48.99 
+7.48 
+3 
+Y 
+43.47 
+12.24 
+2 
+Total 
+46.78 
+8.63 
+5 
+14 
+N 
+58.74 
+17.66 
+3 
+Y 
+53.49 
+7.13 
+3 
+Total 
+56.11 
+12.38 
+6 
+15 
+N 
+49.27 
+12.24 
+3 
+Y 
+60.31 
+12.46 
+4 
+Total 
+55.58 
+12.74 
+7 
+16 
+N 
+70.27 
+1 
+Y 
+57.21 
+9.77 
+3 
+Total 
+60.48 
+10.31 
+4 
+Total 
+N 
+54.13 
+12.95 
+10 
+Y 
+55.02 
+10.91 
+12 
+Total 
+54.61 
+11.59 
+22 
+
+</table></figure>
+
+			<note place="foot" n="5"> Conclusion Based on the results from our user studies, we can conclude that the users&apos; performance results during a video training exercise are not only affected by the users&apos; focus of attention. During the training process, some of the users have the ability to remain their focus at the presence of the interference object, especially when they were already involved in the task.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" />
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">A BCI-based application in music: Conscious playing of single notes by brainwaves</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Raffaella</forename><surname>Folgieri</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Matteo</forename><surname>Zichella</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Comput. Entertain</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2012-12" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">NeuroPlace: making sense of a place</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Lulwah</forename><surname>Al-Barrak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Eiman</forename><surname>Kanjo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 4th Augmented Human International Conference (AH &apos;13)</title>
+		<meeting>the 4th Augmented Human International Conference (AH &apos;13)<address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">BRAVO: a brain virtual operator for education exploiting brain-computer interfaces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marco</forename><surname>Marchesi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Bruno</forename><surname>Riccò</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CHI &apos;13 Extended Abstracts on Human Factors in Computing Systems (CHI EA &apos;13)</title>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Neurosky</surname></persName>
+		</author>
+		<ptr target="http://www.neurosky.com/" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Better brain interfacing for the masses: progress in event-related potential detection using commercial brain computer interfaces</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mick</forename><surname>Grierson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Chris</forename><surname>Kiefer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">CHI &apos;11 Extended Abstracts on Human Factors in Computing Systems (CHI EA &apos;11)</title>
+		<meeting><address><addrLine>New York, NY, USA</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title/>
+		<ptr target="http://en.wikipedia.org/wiki/Attention" />
+	</analytic>
+	<monogr>
+		<title level="j">Attention</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">B</forename><surname>Sheridan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Musings on telepresence and virtual presence</title>
+		<imprint>
+			<date type="published" when="1992" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="120" to="125" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Educational Multimedia. Current Developments in Technology-Assisted Education</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Dervan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Mccosker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Macdaniel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>O&amp;apos;nuallain</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Fourth International Conference on Multimedia and Information and Communication Technologies in Education</title>
+		<meeting><address><addrLine>Seville, Spain</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mindwave</forename><surname>User Guide</surname></persName>
+		</author>
+		<ptr target="http://download.neurosky.com/support_page_files/MindWaveMobile/docs/mindwave_mobile_user_guide.pdf" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

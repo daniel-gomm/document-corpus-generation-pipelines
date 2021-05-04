@@ -1,0 +1,2594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T06:23+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The first 25 years of the FPL conference: Significant papers</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017-03">2017. March 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Philip</forename><forename type="middle">H W</forename><surname>Leong</surname></persName>
+							<email>s:philip.leong@sydney.edu.au</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jason</forename><surname>Anderson</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Koen</forename><surname>Bertels</surname></persName>
+							<email>k.l.m.bertels@tudelft.nl</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Guy</forename><surname>Gogniat</surname></persName>
+							<email>guy.gogniat@univ-ubs.fr</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mike</forename><surname>Hutton</surname></persName>
+							<email>mhutton@altera.com</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Altera</forename><surname>Corp</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wayne</forename><surname>Luk</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marco</forename><surname>Platzner</surname></persName>
+							<email>platzner@upb.de</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Viktor</forename><forename type="middle">K</forename><surname>Prasanna</surname></persName>
+							<email>prasanna@usc.edu</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><roleName>Politecnico</roleName><forename type="first">Cristina</forename><surname>Silvano</surname></persName>
+							<email>cristina.silvano@polimi.it</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Di</forename><surname>Milano</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hayden</forename><surname>Kwok-Hay</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>So</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><forename type="middle">U</forename><surname>Wang</surname></persName>
+							<email>yu-wang@tsinghua.edu.cn.</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Leong</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lee</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">;</forename><forename type="middle">M</forename><surname>Hutton</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Altera</forename><surname>Corp</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">San</forename><surname>Jose</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">H W</forename><surname>Leong</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Philip</forename><forename type="middle">H W</forename><surname>Leong</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hideharu</forename><surname>Amano</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jason</forename><surname>Anderson</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Koen</forename><surname>Bertels</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jõ</forename><surname>Ao</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">P</forename><surname>Cardoso</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Oliver</forename><surname>Diessel</surname></persName>
+							<email>odiessel@cse.unsw.edu.au</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Guy</forename><surname>Gogniat</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mike</forename><surname>Hutton</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Junkyu</forename><surname>Lee</surname></persName>
+							<email>jun.kyu.lee@sydney.edu.au</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wayne</forename><surname>Luk</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Patrick</forename><surname>Lysaght</surname></persName>
+							<email>patrick.lysaght@xilinx.com</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marco</forename><surname>Platzner</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Viktor</forename><forename type="middle">K</forename><surname>Prasanna</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Tero</forename><surname>Rissa</surname></persName>
+							<email>tero.rissa@nokia.com</email>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Cristina</forename><surname>Silvano</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hayden</forename><surname>Kwok-Hay</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yu</forename><surname>So</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Wang</surname></persName>
+						</author>
+						<author>
+							<affiliation key="aff0">
+								<orgName type="laboratory">Delft University of Technology JO˜AOJO˜ JO˜AO M. P. CARDOSO, Universidade do Porto OLIVER DIESSEL</orgName>
+								<orgName type="institution" key="instit1">The University of Sydney HIDEHARU AMANO</orgName>
+								<orgName type="institution" key="instit2">Keio University</orgName>
+								<orgName type="institution" key="instit3">University of Toronto</orgName>
+								<address>
+									<country>UNSW Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff1">
+								<orgName type="laboratory">Imperial College London PATRICK LYSAGHT, Xilinx Research Labs</orgName>
+								<orgName type="institution" key="instit1">University of South Brittany</orgName>
+								<orgName type="institution" key="instit2">JUNKYU LEE</orgName>
+								<orgName type="institution" key="instit3">The University of Sydney</orgName>
+								<orgName type="institution" key="instit4">University of Paderborn</orgName>
+								<orgName type="institution" key="instit5">University of Southern California TERO RISSA</orgName>
+								<orgName type="institution" key="instit6">Nokia Corporation</orgName>
+								<orgName type="institution" key="instit7">University of Hong</orgName>
+								<address>
+									<settlement>Kong</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff2">
+								<orgName type="institution" key="instit1">Tsinghua University</orgName>
+								<orgName type="institution" key="instit2">The University of Sydney</orgName>
+								<orgName type="institution" key="instit3">Keio University</orgName>
+								<address>
+									<country key="JP">Japan</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff3">
+								<orgName type="institution">University of Toronto</orgName>
+								<address>
+									<country key="CA">Canada</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff4">
+								<orgName type="institution">Delft University of Technology</orgName>
+								<address>
+									<country key="NL">Netherlands</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff5">
+								<orgName type="institution">University of NSW</orgName>
+								<address>
+									<country key="AU">Australia</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff6">
+								<orgName type="institution">Uni-versity of South Brittany</orgName>
+								<address>
+									<country key="FR">France</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff7">
+								<orgName type="laboratory">Xilinx Re-search Labs</orgName>
+								<orgName type="institution">Imperial College London</orgName>
+								<address>
+									<settlement>San Jose</settlement>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff8">
+								<orgName type="institution">University of Paderborn</orgName>
+								<address>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff9">
+								<orgName type="institution">University of Southern California</orgName>
+								<address>
+									<country key="US">USA</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff10">
+								<orgName type="laboratory">H. K.-H. So</orgName>
+								<orgName type="institution">Politecnico di Milano</orgName>
+								<address>
+									<country key="IT">Italy</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff11">
+								<orgName type="institution">University of Hong Kong</orgName>
+								<address>
+									<settlement>Hong Kong</settlement>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<affiliation key="aff12">
+								<orgName type="laboratory">ACM Reference Format</orgName>
+								<orgName type="institution">Tsinghua University</orgName>
+								<address>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">The first 25 years of the FPL conference: Significant papers</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">ACM Transactions on Reconfigurable Technology and Systems</title>
+						<imprint>
+							<biblScope unit="volume">10</biblScope>
+							<biblScope unit="issue">2</biblScope>
+							<date type="published" when="2017-03">2017. March 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1145/2996468</idno>
+					<note type="submission">15, Publication date: March 2017.</note>
+					<note>15 15:2</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>CCS Concepts: r Computer systems organization → Reconfigurable computing</term>
+					<term>r Hardware → Reconfigurable logic and FPGAs</term>
+					<term>Additional Key Words and Phrases: Field-programmable Logic and Applications, Significant papers, FPL, 25 years</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>A summary of contributions made by significant papers from the first 25 years of the Field-Programmable Logic and Applications conference (FPL) is presented. The 27 papers chosen represent those which have most strongly influenced theory and practice in the field.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>The first International Conference on Field-Programmable Logic and Applications (FPL) was held in 1991 at Oxford University. In the ensuing years, it has become the largest meeting on field-programmable gate array (FPGA) technologies and systems, and many important contributions have been published at the conference.</p><p>This article lists the most significant contributions from 1991 to 2014 <ref type="bibr" target="#b48">[Leong et al. 2015]</ref>. The selection was made by an international Significant Papers Committee (SPC), composed of the authors of this article.</p><p>Only regular papers were considered, and Google Scholar was used for citation counts. Since an objective process was desired, those papers having more than nine citations per year, or more than 100 overall citations, were included on an initial shortlist. Concurrently, an open call to the community was made through the FPGA mailing list (fpga-list@mailman.sydney.edu.au), inviting nomination of papers with impact other than the number of citations. A total of 24 nominations were received and all papers that were not already on the initial short list (13 papers) were included in the final short list.</p><p>The resulting 60 short-listed papers were divided into five categories, each with a corresponding subcommittee. SPC members served on a subcommittee according to their expertise. Since some nominated papers were authored by SPC members, subcommittee chairs were chosen to ensure that no SPC member had conflicts of interest during the paper selection process. Following discussions within each subcommittee, recommendations were consolidated for the SPC. A final dialogue regarding the choices was then undertaken.</p><p>The total number of papers considered was 1,765 (this figure may be larger than the total number of full papers as it was not possible to distinguish them from posters in some cases). The process described previously resulted in 27 papers (1.5% of the total) being selected. Inevitably, the inclusion and exclusion of certain papers will be the subject of debate; however, the papers presented here represent the best efforts of the SPC to ensure a fair and objective selection process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">FPL SIGNIFICANT PAPER LIST (1991-2014)</head><p>The selected papers were grouped according to the topics represented by the following subsections.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Applications and Benchmarks</head><p>Software executing on instruction-driven processors such as multicores or graphics processing units (GPUs) faces limitations on computational speed and energy efficiency due to the need for extensive logic to fetch and decode instructions. Data-driven FPGA designs address these issues through higher degrees of customization, allowing more operations to be performed per clock cycle, enabling improved speed, energy efficiency and ability to respond to real-time events.</p><p>Eight application papers are introduced, each of which has influenced the development of other FPGA-based applications and benchmarks. FPGAs are well suited to signal processing applications in which multiplication often involves a constant multiplicand, and customization in this case can save hardware resources <ref type="bibr">[Petersen and</ref> The First 25 Years of the FPL Conference</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>15:3</head><p>Hutchings 1995], and real-time operation, particularly in video signal processing, has always been a challenge <ref type="bibr" target="#b38">[Haynes et al. 1999]</ref>. DNA sequence alignment is another computationally intensive kernel, and customization to allow more computational elements to fit on a single FPGA is described <ref type="bibr" target="#b86">[Yu et al. 2003</ref>]. Another application that takes customization to the extreme is to exploit process variations to produce physically uncloneable functions <ref type="bibr" target="#b37">[Guajardo et al. 2007]</ref>. Arithmetic optimization utilising arithmetic of different precisions has been effectively used to solve global atmospheric equations <ref type="bibr" target="#b29">[Gan et al. 2013]</ref>. The general problem of multitasking on FPGAs has been extensively researched, and introducing the restriction that only one task can operate at any time has important advantages <ref type="bibr" target="#b73">[Simmler et al. 2000]</ref>. Two other benchmarking papers were included: a quantitative comparison between FPGAs, GPUs, and CPUs for image processing applications <ref type="bibr" target="#b5">[Asano et al. 2009]</ref>, and a comparison of the round 2 SHA-3 candidates that played an important role in the competition for the standard <ref type="bibr" target="#b8">[Baldwin et al. 2010]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>-An Assessment of the Suitability of FPGA-Based Systems for Use in Digital Signal</head><p>Processing <ref type="bibr" target="#b68">[Petersen and Hutchings 1995]</ref>. This early work compared serial, parallel, and distributed FPGA multiplier performance with that of digital signal processor (DSP) and application-specific integrated circuit approaches. Their performance in finite impulse response (FIR) filters and a radix-4 fast Fourier transform was studied. The paper showed the potential of FPGAs in signal processing and laid the foundations for this key application domain. The authors showed how arithmetic units could be assembled on such devices, which were very rudimentary at that time. The key optimization of constant operand multiplication was applied, and the potential for accelerating DSP problems on an emerging hardware platform identified. Many existing applications apply ideas from this work <ref type="bibr" target="#b61">[Meyer-Baese and Meyer-Baese 2007]</ref>, and research in this domain is ongoing.</p><p>-SONIC: A Plug-in Architecture for Video Processing <ref type="bibr" target="#b38">[Haynes et al. 1999]</ref>. This work proposed a reconfigurable computing architecture for video processing that was composed of multiple Plug-In Processing Elements (PIPEs) consisting of a Pipe Engine, Pipe Router, and Pipe Memory. An application programming interface to handle resource allocation and scheduling was also introduced. Performance was demonstrated with a 19-tap 2D FIR filter with eight PIPEs. This achieved more than 15 frames per second operating on 512 × 512-resolution video transferred over the PCI bus. This paper pioneered a reconfigurable hardware architecture with software plugins for accelerating video image processing applications and utilized modularity to reduce application design time. It had significant impact on reconfigurable media processing applications, hardware/software codesign research, and embedded video image processing research [ <ref type="bibr" target="#b28">Galuzzi and Bertels 2011]</ref>. It provides the foundation for the UltraSonic system <ref type="bibr" target="#b39">[Haynes et al. 2002]</ref>, which was commercialized by Sony Broadcast.</p><p>-Multitasking on FPGA Coprocessors <ref type="bibr" target="#b73">[Simmler et al. 2000]</ref>. This paper details the requirements and overheads associated with preemptive multitasking for FPGA coprocessors. The proposed technique involved a single hardware task being executed at any time, which had three advantages: (1) while parallel execution of several tasks on the FPGA is possible, executing a single task at a time allows the full communication data rate with the host processor; (2) multitasking allows switching of the FPGA at any time, and (3) I/O resources do not need to be shared. A task manager was also described, which was used to manage loading of circuits and states for different hardware tasks.</p><p>This paper is significant in that it pioneers preemptive multitasking with an FPGA coprocessor and also inspired other multitasking research <ref type="bibr" target="#b77">[Steiger et al. 2004a</ref>].</p><p>-A Smith-Waterman Systolic Cell <ref type="bibr" target="#b86">[Yu et al. 2003</ref>]. This paper presents an improved systolic processing element (PE) for implementing the Smith-Waterman DNA sequence alignment algorithm on an FPGA. The authors proposed a scheme in which two PEs were merged into a compact cell, a technique commonly used in VLSI layout.</p><p>Only by considering two PEs together could adjacent memory elements be utilized, which serves to achieve a 25% area saving. A large linear systolic array of elements was connected together to achieve a high degree of parallelism, and it was interfaced to an FPGA board via the SDRAM bus to achieve the highest reported density and system performance at the time.</p><p>Sequence alignment is the computational bottleneck in many bioinformatics applications, including sequence database searching, multiple sequence alignment, genome assembly, and short read mapping. Thus, acceleration of bioinformatics applications using FPGAs has become an important application domain and the Smith-Waterman algorithm continues to be used. Compared with previous designs, this work removed the requirement of runtime reconfiguration while maintaining equivalent functionality. The paper represents a reference design widely used in that domain <ref type="bibr" target="#b36">[Gokhale and Graham 2006]</ref> and inspired other work in FPGA-based pattern matching <ref type="bibr" target="#b84">[Van Court and Herbordt 2007]</ref> and biosequence analysis <ref type="bibr" target="#b65">[Oliver et al. 2005]</ref>.</p><p>-Physical Unclonable Functions, FPGAs, and Public-Key Crypto for IP Protection <ref type="bibr" target="#b37">[Guajardo et al. 2007]</ref>. This paper presented several new protocols to address the IP protection problem on FPGAs, supporting hardware authentication, hardware platform authentication, and complete design confidentiality. The authors' approach relies on public-key cryptography, with secret key information being generated by a physical unclonable function (PUF) implemented in the FPGA. Since a unique PUF output is internally generated in the device, security is enhanced by removing the requirement to transfer the key on or off the FPGA. The paper also details how the PUF can be implemented using the random initialization state of on-FPGA static RAM cells. This paper provides efficient protocols for IP protection and introduces an original solution for PUFs based on SRAM memories with good properties. It has become one of the key references in this area <ref type="bibr" target="#b57">[Maes and Verbauwhede 2010]</ref>.</p><p>-Performance Comparison of FPGA, GPU, and CPU in Image Processing <ref type="bibr" target="#b5">[Asano et al. 2009]</ref>. This paper gives a quantitative performance comparison between FPGA, GPU, and CPU implementations of image processing applications. Special characteristics for each platform were highlighted; for example, an FPGA can implement an optimized circuit according to an application, a GPU can utilize many cores, and a CPU can utilize its SIMD features. This paper found that in two-dimensional filters, GPUs are the best choice, since shared variables are not required. In stereo-vision and K-means clustering applications, an FPGA excels because it avoids local memory access conflicts. Finally, a CPU is usually a good choice for applications in which cache miss rates are low. This research provided informative descriptions of how performance is affected by application characteristics. It has significance from a tutorial perspective and impacted other performance comparison research <ref type="bibr" target="#b67">[Pauwels et al. 2012]</ref>.</p><p>-FPGA Implementations of the Round Two SHA-3 Candidates [ <ref type="bibr" target="#b8">Baldwin et al. 2010]</ref>.</p><p>This paper provides a summary of the algorithms associated with the round 2 candidates for the secure hash algorithm 3 (SHA-3), along with a detailed study of their suitability for an efficient hardware implementation. Hardware implementations of all of the algorithms were compared for different message sizes. Moreover, this was the only work to include padding as part of the hardware. At the time of publication, the US National Institute of Standards and Technology (NIST) was holding a competition to determine a successor to the SHA-2 algorithm.</p><p>The research work outlined in this paper was considered as part of the SHA-3 algorithm selection process by NIST <ref type="bibr" target="#b82">[Turan et al. 2011]</ref>. The Keccak candidate was identified in the paper as having the highest overall performance and best performance per area. Keccak was subsequently chosen for the SHA-3 hashing standard in August 2015 <ref type="bibr" target="#b63">[NIST 2015</ref>].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>-Accelerating Solvers for Global Atmospheric Equations Through Mixed-Precision</head><p>Data Flow Engine <ref type="bibr" target="#b29">[Gan et al. 2013]</ref>. This paper showed that reconfigurable supercomputing can provide faster and more energy-efficient solutions, compared to conventional supercomputers for global climate modeling. The paper also provides guidance on how to apply mixed-precision arithmetic to complex problems that do not easily fit onto limited hardware resources. The experimental results reported two orders of magnitude speedup over a multicore CPU, and the design was one order of magnitude faster and had one order of magnitude lower power than a hybrid CPU-GPU platform. It has been cited by a number of promising research efforts that follow a similar direction, including D ¨ uben and Palmer <ref type="bibr">[2014]</ref> and Russell et al. <ref type="bibr">[2015]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Architecture</head><p>The development of reconfigurable architectures to efficiently perform computing tasks has been studied since the introduction of FPGAs. Common issues included striking a balance between fine-and coarse-grained computing resources, time-multiplexing to efficiently utilize resources, interfacing with processors, and reducing power and energy consumption. Five architecture papers are introduced in this subsection. The RaPiD architecture combined static and cycle-by-cycle dynamic configuration <ref type="bibr" target="#b26">[Ebeling et al. 1996]</ref>. SCORE introduced the abstraction of streams of computation, mapped to a programmable fabric via time-multiplexing <ref type="bibr" target="#b20">[Caspi et al. 2000]</ref>. The ADRES approach combined a very long instruction word processor with coarse-grained arithmetic blocks <ref type="bibr" target="#b59">[Mei et al. 2003</ref>].</p><p>One of the advantages of FPGAs is in power and energy consumption. Power modeling for FPGAs has been a major concern and an early paper largely solved this problem in a general manner for the widely used VPR tool <ref type="bibr" target="#b69">[Poon et al. 2002]</ref>. Finally, using multiple VDD supplies allows power to be reduced without sacrificing performance <ref type="bibr" target="#b30">[Gayasen et al. 2004</ref>].</p><p>-RaPiD: Reconfigurable Pipelined Datapath <ref type="bibr" target="#b26">[Ebeling et al. 1996]</ref>. This early paper proposed a reconfigurable, deeply pipelined datapath tailored to application-specific requirements. Pipelined datapaths consisting of a mixture of arithmetic logic units (ALUs), multipliers, general-purpose registers, and local memories are constructed by a combination of static and dynamic configurations. While the static configuration determines the overall pipeline structure through a set of programmable routing switches, the dynamic configuration determines the cycle-by-cycle operations of the pipeline similar to the operation of a microcontroller. This paper was highly influential, having inspired numerous subsequent works in pipelined and coarse-grained reconfigurable architectures <ref type="bibr" target="#b9">[Baumgarte et al. 2003</ref>]. Its pipelined reconfiguration has influenced commercial products such as Tabula, and many ideas originally developed for the RaPiD design have also found applications in application-specific standard products and other tightly coupled accelerator architecture designs. As this work dates back to the 1990s, it was truly visionary and fundamental to the evolution of field-programmable architectures.</p><p>-Stream Computations Organized for Reconfigurable Execution (SCORE) <ref type="bibr" target="#b20">[Caspi et al. 2000]</ref>. This paper introduces a new computational model for reconfigurable computing, based on streams of computation virtualized onto a programmable fabric via time-multiplexing. The model facilitates a language abstraction and mapping that allows arbitrary computations to be implemented onto a target device without recompilation, overcoming the key challenge of vendor and device generation portability, and the constraint of fixed resources on the physical hardware. The streaming/paging abstraction introduced in the paper offers solutions for important practical problems such as dealing with exceptions via flow control. SCORE continued to grow and develop beyond this extended abstract, and a summary can be found in DeHon et al. <ref type="bibr">[2006]</ref>. The formalized model in SCORE influenced subsequent work on overlays, hardware virtualization, and heterogeneous computing. Moreover, virtualization has become one of the largest growth areas for FPGAs, which are now moving into data centers and cloud computing as compute accelerators for processors. This paper provided mechanisms to address many of the key problems: bitstream portability, targeting heterogeneous resources, scaling computational resources to match availability on the physical fabric, and tolerating uncertain latency on links between operators. It not only addressed interesting problems of the day but also foreshadowed those of the future. -A Flexible Power Model for FPGAs <ref type="bibr" target="#b69">[Poon et al. 2002]</ref>. This was the first work to incorporate a power model into the widely used open-source VPR FPGA architecture and CAD framework. While today's FPGAs incorporate power-aware features and FPGAs in low-power/mobile scenarios are increasing in importance, this powermodeling work was done at a time when power was not a significant axis along which FPGAs were optimized. The proposed power model is flexible in the sense that, instead of modeling the power of a specific FPGA, the model is adaptive to the architecture specified to VPR. Dynamic and static power can be estimated for a range of LUT sizes, cluster sizes, and interconnection structures.</p><p>The "Poon power model" has been used and improved <ref type="bibr" target="#b50">[Li et al. 2005</ref>] by researchers in a variety of power-aware CAD and architecture research endeavors. The power model, its associated source code, and documentation were released into the public domain, and for several years it was the primary model used to study power consequences of architecture and CAD algorithm changes. This work thus represents a significant service to the FPGA community.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>-ADRES: An Architecture with Tightly Coupled VLIW Processor and Coarse-Grained</head><p>Reconfigurable <ref type="bibr">Matrix [Mei et al. 2003</ref>]. This paper introduces a novel coarse-grained reconfigurable array (CGRA), which is a style of FPGA that uses large ALU-like logic blocks and multibit routing. While the CGRA concept was already known at the time of publication, the ADRES (Architecture for Dynamically Reconfigurable Embedded System) architecture incorporates features not seen in prior work. The CGRA fabric in ADRES is closely coupled with a Very Long Instruction Word (VLIW) processor, and in fact is able to access the same register file as the processor, obviating the need for costly transfers to/from the CGRA. VLIW processors frequently use a concept called loop pipelining to exploit loop-level parallelism by overlapping adjacent loop iterations. With the attached CGRA fabric, ADRES offers the added ability to exploit spatial parallelism, providing higher computational throughput than the VLIW processor alone. The functional units in the VLIW processor are also part of the CGRA fabric, permitting resources to be shared between the two. The ADRES architecture has had a far-reaching impact in the commercial space, which took many years to materialize. Samsung Electronics began a long-term collaboration with the ADRES researchers to develop a commercial CGRA, which today is known as the Samsung Reconfigurable Processor (SRP). SRP publications began to appear in the 2010s; it has been used in a variety of commercial Samsung products, including smartphones. ADRES can be viewed as an ancestor of the SRP <ref type="bibr" target="#b44">[Kim et al. 2012]</ref>. . This work also helped inspire several academic efforts that considered interactions between configurable circuit fabrics and CAD flow optimizations for power reduction.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Design Methods and Tools</head><p>FPGA users often need to master complex design flows and evaluate a large design space to meet requirements. Advances in design methods and tools are thus of paramount importance for both researchers and practitioners, which continues to be a crucial research area. The four papers selected point to the breadth of research presented at the conference. They focus on placement and routing tools and algorithms <ref type="bibr" target="#b13">[Betz and Rose 1997]</ref>, generation of stream-based application-specific architectures from object-oriented descriptions <ref type="bibr" target="#b60">[Mencer et al. 2000]</ref>, an approach proposing power/energy reductions via the insertion of pipelining stages <ref type="bibr" target="#b85">[Wilton et al. 2004]</ref>, and FPGA support and a methodology for making easier the development of designs taking advantage of dynamic reconfiguration features <ref type="bibr" target="#b55">[Lysaght et al. 2006</ref>].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>-VPR: A New Packing, Placement, and Routing Tool for FPGA Research [Betz and</head><p>Rose <ref type="bibr">1997]</ref>. This paper presented the Versatile Place and Route (VPR) tool, which performs placement and routing. A key feature is that it targeted a parameterized island-style FPGA defined through a configuration file, allowing it to be adapted to a broad range of different architectures. Its simulated annealing-based place and route algorithm had a smaller routing area than all previous work and the paper introduced a new set of benchmark circuits. VPR became an important piece of infrastructure for FPGA architecture and CAD tool research and has been widely used and extended by other research groups. This tool was further developed by the authors at Right Track CAD Corp., which was acquired by Altera in 2000, and VPR then became the basis for both Altera's placement and routing and architecture evaluation tools. This paper made a seminal contribution with the idea of a succinct and humanreadable FPGA architecture description that drives a flexible CAD flow in order to explore new FPGA architectures, and has been used in a very wide range of FPGA architecture studies. The VPR architecture description language and CAD flow have been extended and enhanced in many ways, most recently with version 7.0 of the Verilog-to-Routing CAD flow <ref type="bibr" target="#b54">[Luu et al. 2014]</ref>. VTR 7.0 can investigate the architecture not only of programmable logic and routing, as this original VPR could, but also arithmetic structures, RAM and DSP blocks, and other special purpose structures. An enhanced version of VPR also forms the basis of Altera's FPGA Modeling Toolkit (FMT), which has been used to architect all of Altera's FPGAs from 2000 to the present day <ref type="bibr" target="#b49">[Lewis et al. 2013]</ref>. VPR has also been used as a framework for the investigation of enhanced placement and routing algorithms, both in academia and in Altera's commercial Quartus II CAD suite, which uses an enhanced version of VPR as its placement and routing engine <ref type="bibr" target="#b53">[Ludwin and Betz 2011]</ref>. The advantage of this approach is that distributed FIFO buffers are able to exploit temporal data locality, while streaming data through pipelines exploits spatial data locality. StReAm uses operator overloading and template functions in C++ to create dataflow graphs, which are consecutively scheduled to obtain a stream architecture.</p><p>They key contribution of this paper lies in an efficient compilation of a streamingoriented programming model to FPGAs, which is evident in contemporary products by Maxeler, a company founded by the authors. Maxeler has become the major provider of FPGA-based solutions in finance-and oil-related applications <ref type="bibr" target="#b51">[Lindtjorn et al. 2011]</ref>.</p><p>-The Impact of Pipelining on Energy per Operation in Field-Programmable Gate Arrays <ref type="bibr" target="#b85">[Wilton et al. 2004]</ref>. This paper was the first to quantitatively study the impact of pipelining stages on power and energy consumption. It was found that pipelining could reduce energy per operation by between 40% and 90% on an Altera high-end FPGA and a Xilinx low-cost FPGA. In addition, the authors showed that poweraware clustering enables further reductions, and interaction between pipelining and clustering was also studied to understand how the degree of pipelining affects the effectiveness of the lower-level CAD algorithms in reducing energy. The quantitative results presented for two representative FPGA devices include real measurements and estimations provided by vendor-specific tools. The results presented had many implications and highlighted the importance of considering pipelining stages when datapath design and/or generation are addressed in contemporary FPGAs. This work foresaw the importance of pipelining for reducing energy, a fact that is employed in the recently announced Altera Stratix <ref type="bibr">10</ref>  This paper was the first from a vendor to provide a complete dynamically reconfigurable FPGA and design flow. All major vendors now support similar flows <ref type="bibr" target="#b46">[Kohn 2015;</ref><ref type="bibr" target="#b3">Altera 2010]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Dynamic Reconfiguration</head><p>Dynamic reconfiguration is the modification, at runtime, of a section of an FPGA's configuration memory with the aim of changing the implemented functionality. Reasons for doing so include altered functional requirements, reducing energy consumption, reducing device size, correcting faults, and enhancing performance. As evidenced by the number of citations and publication dates, FPL is one of the most important venues for discussing the opportunities and challenges presented by dynamically reconfigurable FPGA-based systems. Six papers on dynamic reconfiguration were selected.</p><p>The six selected papers cover the early exploration of dynamically reconfigurable systems <ref type="bibr" target="#b56">[Lysaght and Dunlop 1994]</ref>, first efforts to model infrastructure requirements in a general manner <ref type="bibr" target="#b17">[Brebner 1996]</ref>, hardware virtualization on a coarse-grained reconfigurable array and corresponding co-simulation techniques <ref type="bibr" target="#b27">[Enzler et al. 2003</ref>], techniques to save and restore context to facilitate task pre-emption and relocation <ref type="bibr" target="#b42">[Kalte and Porrmann 2005]</ref>, methods and tools for generating dynamically reconfigurable systems <ref type="bibr" target="#b45">[Koch et al. 2008]</ref>, and applications to simultaneously error scrub and reconfigure the functionality of a design <ref type="bibr" target="#b40">[Heiner et al. 2009]</ref>.</p><p>-Dynamic Reconfiguration of FPGAs <ref type="bibr" target="#b56">[Lysaght and Dunlop 1994]</ref>. This paper comprehensively summarized the state of the art and the ideas underpinning dynamically reconfigurable systems at a very early stage in their history. The concepts that were explained set the scene for all subsequent investigation. The paper describes a large number of ideas that have later (in some cases much later) been the topic of significant papers themselves. It is a highly educational paper rather than being purely technical, yet it still includes a system example and discusses implementation issues. The limitations of the technology are also discussed. This influential paper presented the basis for dynamic reconfiguration of FPGAs <ref type="bibr" target="#b46">[Kohn 2015;</ref><ref type="bibr" target="#b3">Altera 2010]</ref>. It includes various concepts that are in use today, including a nomenclature for reconfiguration, FPGA-centric self-adapting systems <ref type="bibr" target="#b72">[Sander et al. 2008]</ref>, and the concept of logic caching. Many researchers have worked on solving or reducing the limitations identified in this paper, particularly optimizing FPGAs for speed of reconfiguration, state readback and update, automatic partitioning based on temporal specifications, and tools for modeling new FPGA architectures.</p><p>-A Virtual Hardware Operating System for the Xilinx XC6200 <ref type="bibr" target="#b17">[Brebner 1996]</ref>. This paper introduced the concept of sea of accelerators and parallel harness virtual hardware models to support time-multiplexed hardware in which designs larger than physical FPGA resources could be executed. Swappable logic units (SLUs) were introduced, which are variable-sized processing elements that could be implemented on the FPGA resources and swapped out when needed. At the time of this paper, the Xilinx XC6200 was a new device that supported fine-grained partial reconfiguration. The sea-of-accelerators model was demonstrated along with an operating system that managed the configuration and utilization of SLUs. Concepts and challenges in developing an operating system for a reconfigurable computer were introduced, and in the ensuing years, many further developments were inspired by working to address the challenges identified in this paper <ref type="bibr" target="#b78">[Steiger et al. 2004b]</ref>. -Virtualizing Hardware with Multicontext Reconfigurable Arrays <ref type="bibr" target="#b27">[Enzler et al. 2003</ref>].</p><p>The main contribution of this paper is an approach to overcome hardware resource limitations via hardware virtualization, enabling forward compatibility for reconfigurable fabrics. To achieve these goals, the paper proposes a coarse-grained, multicontext reconfigurable array that is attached as a coprocessor to a CPU. The coarsegrained array is tailored to processing data streams with a macro-pipelined data path. If sufficient resources are available, pipeline stages are mapped spatially. Otherwise, time-multiplexing on a single-array instance is used to provide virtualization, allowing one to execute macro-pipelines of arbitrary length on restricted hardware resources. The second contribution of this work was that it was one of the first works that proposed cycle-accurate cosimulation of the complete reconfigurable computing system to account for configuration, data transfer, and execution times. This detailed level of simulation allows the designer to accurately assess the performance of a single instance of the architecture and to perform a system-level evaluation for comparing design alternatives. The impact and commercial relevance of this work is demonstrated by the considerable number of times it has been cited as prior art in patents (e.g., Rohe et al. <ref type="bibr">[2007]</ref>). <ref type="bibr" target="#b42">and Porrmann 2005]</ref>. This paper described a method for reducing dynamic task deallocation/relocation time by only saving the context of the task that is to be (re)moved. The idea was demonstrated using Xilinx Virtex FPGAs, which supports column-wise reconfiguration. All modules were full height with varying width, reducing the placement problem to one dimension. Communication infrastructure is horizontal, with static modules in their own reserved area. Context relocation involved a configuration manager, state extraction filter, state inclusion filter, and REPLICA filter for relocation, with a database being used to store hardware task information. A detailed quantitative study of relocation time is made in the paper. The idea and technique presented in the paper are at the core of any runtime system for dynamically reconfigurable computing. The solution was practical and formed the basis for future work in multitasking hardware operating systems <ref type="bibr" target="#b52">[L ¨ ubbers and Platzner 2009]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>-Context Saving and Restoring for Multitasking in Reconfigurable Systems [Kalte</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>-ReCoBus-Builder: A Novel Tool and Technique to Build Statically and Dynamically</head><p>Reconfigurable Systems for FPGAs <ref type="bibr" target="#b45">[Koch et al. 2008]</ref>. This paper presents an easily usable tool chain for implementing dynamically reconfigurable systems on FPGAs. ReCoBus-Builder provides sophisticated communication architectures allowing for direct bus connection as well as point-to-point connections. With this tool, over a hundred partially reconfigurable modules can be placed into a shared reconfigurable region. Here, modules can be relocated and instantiated multiple times while still being able to carry out dedicated communication with each module. This provides outstanding flexibility and is essential for reducing fragmentation in reconfigurable systems. The ReCoBus-Builder approach is further applicable for a component-based design methodology where modules from a library can be plugged together by a process called bitstream linking, which can fully eliminate long synthesis runs or place and route steps. ReCoBus-Builder was used for implementing several very sophisticated reconfigurable systems. For instance, in Oetken et al. <ref type="bibr">[2010]</ref>, a system is presented where various two-dimensionally relocatable reconfigurable video processing modules directly access external DDR memory using fast 64-bit DMA transfer concurrently with a complex PowerPC SoC on a Virtex-II Pro FPGA. The development of ReCoBusBuilder continued with the GoAhead tool <ref type="bibr" target="#b10">[Beckhoff et al. 2012]</ref>, which supports recent Xilinx FPGAs and provides a powerful scripting interface. The next release of GoAhead will provide a TCL interface to the Vivado suite from Xilinx.</p><p>-FPGA Partial Reconfiguration via Configuration Scrubbing <ref type="bibr" target="#b40">[Heiner et al. 2009]</ref>.</p><p>Many critical FPGA-based systems rely on configuration memory scrubbing to repair radiation-induced errors, and a variety of configuration scrubbers have been proposed. One disadvantage of performing continuous configuration scrubbing is it occupies the configuration port, preventing the ability to perform other configuration functions such as partial reconfiguration. This paper proposed a simple method for performing partial reconfiguration in the course of a typical scrub cycle, thereby eliminating the need to interrupt scrubbing while the configuration port is used to perform a partial reconfiguration. To achieve this, the paper introduced a self-scrubber, utilizing a small portion of the FPGA, which performs the necessary operations to reconfigure a portion of the design while continuously scrubbing the entire FPGA.</p><p>While the proposed technique is simple in nature, the paper's significance arises from the interesting and clearly presented concepts, the convincing experimental evaluation, and the fact that the ideas have high practical value. Radiation-induced errors are gaining increasing attention due to their increased presence in modern FPGAs.</p><p>A number of interesting projects have been developed based on some of the ideas presented in this paper. A generic lightweight configuration controller was developed using ideas in this paper to provide local fault detection and isolation <ref type="bibr" target="#b79">[Straka et al. 2013]</ref>. A novel configuration controller was created to facilitate FPGA bootstrapping for a multi-FPGA configuration process <ref type="bibr" target="#b66">[Ostler et al. 2011]</ref>. A self-adaptive FPGA system was developed to modify the implementation of a function in runtime using both partial reconfiguration and configuration scrubbing to address changes in a radiation environment <ref type="bibr" target="#b32">[Glein et al. 2014</ref>].</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5.">Security and Network on Chip</head><p>Networking has always been an important application domain since FPGAs are the only programmable technology that can keep up with network line rates, and they can combine on-chip networking hardware with custom pattern matching. Furthermore, the success of off-chip networking has raised the question of whether FPGAs should contain soft or hard networks on chip (NoCs). Advantages are that this can reduce required FPGA routing resources, introduce greater routing flexibility, and facilitate dynamic reconfiguration. Four significant papers were selected around this topic. Two early papers identified the advantages of network intrusion detection on FPGAs and described designs that achieved performance far exceeding processor-based implementations <ref type="bibr" target="#b33">[Gokhale et al. 2002;</ref><ref type="bibr" target="#b75">Sourdis and Pnevmatikatos 2003]</ref>. Significant papers concerning NoCs include one that advocates using them to support reconfigurable operating systems <ref type="bibr" target="#b58">[Marescaux et al. 2003</ref>] and another quantifying the advantages of hardware NoCs for performance and energy efficiency <ref type="bibr" target="#b0">[Abdelfattah and Betz 2013]</ref>.</p><p>-Granidt: Towards Gigabit Rate Network Intrusion Detection Technology <ref type="bibr" target="#b33">[Gokhale et al. 2002]</ref>. This paper described an FPGA-accelerated network intrusion detection system (NIDS). A compiler that translated filter rules from the public domain Snort database into content-addressable memories (CAMs) was implemented on FPGA hardware, and a software representation of the rules was used as an input to the software. The hardware appends the result of the match to the packet, and the rule software performs the action associated with the matching rules. The approach allowed changes to the rules to be implemented by creating new CAM entries, avoiding the need for reconfiguration. Using this approach, it was shown that the design could process data at a line rate of 2Gbps, this being 24.9× the speed of the Snort software implementation. This paper was seminal in FPGA-based network filtering technology and has been cited by other influential papers such as <ref type="bibr" target="#b47">Kumar et al. [2006]</ref> and <ref type="bibr" target="#b22">Clark and Schimmel [2004b]</ref>. It heralded commercial FPGA-based network intrusion detection systems from companies including TippingPoint Technologies, Sensory Networks, and Emulex Endace. Deep packet inspection has since evolved into deep content inspection, pioneered by Wedge Networks, which can do object-level analysis of network traffic. As network speeds continue to increase and the importance of the Internet continues to rise, network filtering will increase in importance and is an ideal application of FPGA technology. -Fast, Large-Scale String Match for a 10Gbps FPGA-Based Network Intrusion Detection System [Sourdis and <ref type="bibr" target="#b75">Pnevmatikatos 2003]</ref>. This paper addressed the problem of pattern matching for intrusion detection, which compares a set of strings against a (high-speed) network traffic. It proposed a micro-architecture and a number of circuit-level optimizations exploiting parallelism between string matchers, pipelining of comparison units and large-fanout signals, parallel pipelined merge of individual results, and so forth to achieve a very high clock rate. The implementation on a Virtex2 FPGA exceeded 10Gbps processing throughput, a 3 to 5× improvement over previous work. Even ASIC approaches for NIDS pattern matching in the following years remained at this performance level <ref type="bibr" target="#b80">[Tan and Sherwood 2005]</ref>. This paper paved the way for subsequent FPGA-based influential research that further exploited parallelism to improve pattern matching (area) efficiency while maintaining the 10Gbps performance goal such as Clark and <ref type="bibr" target="#b21">Schimmel [2004a]</ref> and <ref type="bibr" target="#b76">Sourdis and Pnevmatikatos [2004]</ref>. Work in this area was later extended to cover regular expressions <ref type="bibr" target="#b74">[Sourdis et al. 2008;</ref><ref type="bibr" target="#b18">Brodie et al. 2006</ref>].</p><p>-Networks on Chip as Hardware Components of an OS for Reconfigurable Systems <ref type="bibr" target="#b58">[Marescaux et al. 2003</ref>]. This paper is a significant refinement of a paper presented at FPL the previous year, which suggested that interconnection networks could enable fine-grained dynamic multitasking on FPGAs with low hardware overhead. The new paper proposed multiple networks on chip as hardware support for reconfigurable operating systems (OSs), with reconfiguration, OS, and application data communications being implemented as separate networks, each optimized appropriately; for example, the reconfiguration network is optimized for latency and the application network optimized for bandwidth. This allowed the elegant support of features such as dynamic task relocation with state transfer, hardware debugging, and security. Subsequent operating systems supporting dynamic reconfiguration were inspired by ideas from this paper, notable examples including HERMES <ref type="bibr" target="#b62">[Moraes et al. 2004]</ref>, automotive runtime systems [ <ref type="bibr" target="#b83">Ullmann et al. 2004]</ref>, and Dynoc <ref type="bibr" target="#b16">[Bobda et al. 2005]</ref>.</p><p>-The Power of Communication: Energy-Efficient NoCs for FPGAs <ref type="bibr" target="#b0">[Abdelfattah and Betz 2013]</ref>. This quantitative study of hard networks on chip (NoCs) in FPGAs described two novel implementations: mixed NoCs, which used hard routers and soft links, and hard NoCs, which utilized hard routers and hard links. When compared with soft NoCs implemented entirely using the FPGA fabric, the mixed/hard NoCs were 20×/23× smaller and 5×/6× faster. Moreover, a 64-node hard NoC adds less than 1% to the total area of a large FPGA. The authors found that hard NoCs consume 4.5 to 10.4mJ of energy per GB of data transferred, which is comparable to the energy efficiency of soft point-to-point links requiring 4.7mJ/GB.</p><p>The unexpected result that hard NoCs can be as energy efficient as the simplest traditional FPGA point-to-point soft interconnect, with minimal area overhead and higher flexibility, makes a compelling case for including them in future devices. While the impact is difficult to judge at this early stage, this work has the potential to enhance the system-level interconnection of future FPGA applications.</p><p>Embedded NoCs have since been used to prototype Ethernet switching <ref type="bibr" target="#b15">[Bitar et al. 2014]</ref> and packet processing ] applications on FPGAs, and the addition of embedded NoCs improved both the performance and efficiency of these applications significantly. Follow-on work in this area ] focused on making embedded NoCs easier to use on FPGAs by defining design rules and creating CAD tools that enable hardware-friendly abstractions for this new kind of FPGA interconnect.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">CONCLUSION</head><p>This article highlighted a selection of FPL publications that advanced the field over the last 25 years. We hope that it will help to inspire the next generation of researchers and industrialists over the next 25 years and beyond.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>The language and model proved valuable for other resource-and performance-scaleable implementations, including custom VLIW mappings [Kapre and DeHon 2011]. The streaming model plays a prominent role in some of the more usable commercial software offerings for reconfigurable computers including Am- bric's Structural Object Programming Model [Butts et al. 2007] and IBM's Lime [Auerbach et al. 2010].</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>-A</head><label></label><figDesc>Dual-VDD Low Power FPGA Architecture [<ref type="bibr" target="#b30">Gayasen et al. 2004]</ref>. This work pro- posed a CAD-driven approach to configure the power domains of different portions of the FPGA. Both logic and interconnect were optimized<ref type="bibr" target="#b4">[Anderson and Najm 2006]</ref>by utilizing slack from routed nets to assign voltage configurations. Similar approaches have been adopted commercially for power reduction using configurable back bias interacting with CAD tools in Altera Programmable Power Technology<ref type="bibr" target="#b2">[Altera 2007]</ref>and by reconfigurable circuit fabrics fromXilinx [Tuan et al. 2012</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>-</head><label></label><figDesc>StReAm: Object-Oriented Programming of Stream Architectures Using PAM- Blox [Mencer et al. 2000]. This paper presents StReAm, a domain-specific compiler focused on compiling streaming-oriented applications to FPGA-based architectures. The approach was based on the PAM-Blox object-oriented module generation en- vironment and employed a pipelined dataflow graph mapped directly to hardware.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc><ref type="bibr" target="#b41">[Hutton 2015</ref>].</figDesc><table>-Enhanced Architectures, Design Methodologies, and CAD Tools for Dynamic Recon-
+figuration of Xilinx FPGAs [Lysaght et al. 2006]. This paper presents Xilinx FPGA 
+enhancements for providing better support for the creation of dynamically reconfig-
+urable designs. Architecturally, it advocated prerouted bus macros for implementing 
+the communication ports to interface static and dynamic regions of a design, de-
+scribed new features of the Virtex 4 architecture to support finer reconfiguration 
+granularity, and introduced a higher bandwidth reconfiguration port. It also pre-
+sented a design flow that supported partially reconfigurable designs, enabled by the 
+two key enhancements: allowing arbitrary rectangular regions to be reconfigured 
+and permitting signals in the static design to cross through partially reconfigurable 
+regions without the use of a bus macro. </table></figure>
+
+			<note place="foot">ACM Transactions on Reconfigurable Technology and Systems, Vol. 10, No. 2, Article 15, Publication date: March 2017.</note>
+
+			<note place="foot">P. H. W. Leong et al.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>Authors Leong and Lee acknowledge partial support from the Australian Research Council's Linkage Projects funding scheme (project number LP130101034) Zomojo Pty Ltd, and the Faculty of Engineering and Information Technologies, the University of Sydney, by the Faculty Research Cluster Program.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The power of communication: Energy-efficient NoCs for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Abdelfattah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2013.6645496</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2013.6645496" />
+	</analytic>
+	<monogr>
+		<title level="m">2013 23rd International Conference on Field Programmable Logic and Applications (FPL&apos;13)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1" to="8" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Take the highway: Design for embedded NoCs on FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Abdelfattah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bitar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+		<idno type="doi">10.1145/2684746.2689074</idno>
+		<ptr target="http://dx.doi.org/10.1145/2684746.2689074" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA&apos;15)</title>
+		<meeting>the 2015 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA&apos;15)<address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="98" to="107" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">Stratix III Programmable Power</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Altera</surname></persName>
+		</author>
+		<idno>WP-01006-1.1</idno>
+		<ptr target="https://www.altera.com/en_US/pdfs/literature/wp/wp-01006.pdf" />
+		<imprint>
+			<date type="published" when="2007" />
+			<pubPlace>San Jose, CA</pubPlace>
+		</imprint>
+	</monogr>
+<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Increasing Design Functionality with Partial and Dynamic Reconfiguration in 28-nm FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Altera</surname></persName>
+		</author>
+		<idno>WP-01137-1.0</idno>
+		<ptr target="https://www.altera.com/content/dam/altera-www/global/en_US/pdfs/literature/wp/wp-01137-stxv-dynamic-partial-reconfig.pdf" />
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Active leakage power optimization for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">H</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><forename type="middle">N</forename><surname>Najm</surname></persName>
+		</author>
+		<idno type="doi">10.1109/TCAD.2005.853692</idno>
+		<ptr target="http://dx.doi.org/10.1109/TCAD.2005.853692" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="423" to="437" />
+			<date type="published" when="2006-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Performance comparison of FPGA, GPU and CPU in image processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Asano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Maruyama</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Yamaguchi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Field Programmable Logic and Applications</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>FPL&apos;09</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title/>
+		<idno type="doi">10.1109/FPL.2009.5272532</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2009.5272532" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE</title>
+		<imprint>
+			<biblScope unit="page" from="126" to="131" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Lime: A Java-compatible and synthesizable language for heterogeneous architectures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Auerbach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">F</forename><surname>Bacon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Cheng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Rabbah</surname></persName>
+		</author>
+		<idno type="doi">10.1145/1869459.1869469</idno>
+		<ptr target="http://dx.doi.org/10.1145/1869459.1869469" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM International Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA&apos;10)</title>
+		<meeting>the ACM International Conference on Object Oriented Programming Systems Languages and Applications (OOPSLA&apos;10)<address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="89" to="108" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">FPGA implementations of the round two SHA-3 candidates</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Baldwin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Byrne</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hamilton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Hanley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Oneill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">P</forename><surname>Marnane</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2010.84</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2010.84" />
+	</analytic>
+	<monogr>
+		<title level="m">2010 International Conference on Field Programmable Logic and Applications (FPL&apos;10)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="400" to="407" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">PACT XPPA selfreconfigurable data processing architecture</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Baumgarte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Ehlers</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>May</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Vorbach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Weinhardt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Supercomputing</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="page" from="167" to="184" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Go ahead: A partial reconfiguration framework</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Beckhoff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Torresen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 20th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM&apos;12</title>
+		<meeting>the 20th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM&apos;12</meeting>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="37" to="44" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Reconfigurable Technology and Systems</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page">14</biblScope>
+			<date type="published" when="2017-03" />
+		</imprint>
+	</monogr>
+	<note>Article. Publication date</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">H W</forename><surname>Leong</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">VPR: A new packing, placement and routing tool for FPGA research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Rose</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>FieldProgrammable Logic and Applications, W. Luk, P. Y. K. Cheung, and M. Glesner</editor>
+		<imprint>
+			<biblScope unit="volume">1304</biblScope>
+			<biblScope unit="page" from="213" to="222" />
+			<date type="published" when="1997" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Bringing programmability to the data plane: Packet processing with a NoC-enhanced FPGA</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bitar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Abdelfattah</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2015 International Conference on Field-Programmable Technology (FPT&apos;15)</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Efficient and programmable ethernet switching with a NoC-enhanced FPGA</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bitar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cassidy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">E</forename><surname>Jerger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+		<idno type="doi">10.1145/2658260.2658272</idno>
+		<ptr target="http://dx.doi.org/10.1145/2658260.2658272" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 10th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS&apos;14)</title>
+		<meeting>the 10th ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS&apos;14)<address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="89" to="100" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Dynoc: A dynamic infrastructure for communication in dynamically reconfugurable devices</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bobda</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ahmadinia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Majer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Teich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Fekete</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Veen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Field Programmable Logic and Applications Conference</title>
+		<meeting>the International Field Programmable Logic and Applications Conference</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="153" to="158" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">A virtual hardware operating system for the Xilinx XC6200</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Brebner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic Smart Applications, New Paradigms and Compilers</title>
+		<editor>R.W. Hartenstein and M. Glesner</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="volume">1142</biblScope>
+			<biblScope unit="page" from="327" to="336" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">A scalable architecture for high-throughput regularexpression pattern matching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">C</forename><surname>Brodie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">K</forename><surname>Cytron</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Taylor</surname></persName>
+		</author>
+		<idno type="doi">10.1109/ISCA.2006.7</idno>
+		<ptr target="http://dx.doi.org/10.1109/ISCA.2006.7" />
+	</analytic>
+	<monogr>
+		<title level="m">33rd International Symposium on Computer Architecture, 2006 (ISCA&apos;06</title>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="191" to="202" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">A structural object programming model, architecture, chip and tools for reconfigurable computing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Butts</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Jones</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Wasson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the IEEE Workshop on FPGAs for Custom Computing Machines</title>
+		<meeting>the IEEE Workshop on FPGAs for Custom Computing Machines</meeting>
+		<imprint>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="55" to="64" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Stream computations organized for reconfigurable execution (SCORE)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Caspi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yeh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wawrzynek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dehon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic and Applications: The Roadmap to Reconfigurable Computing</title>
+		<editor>Reiner Hartenstein and Herbert GrünbacherGr¨Grünbacher</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="volume">1896</biblScope>
+			<biblScope unit="page" from="605" to="614" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Scalable pattern matching for high speed networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">R</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Schimmel</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FCCM.2004.50</idno>
+		<ptr target="http://dx.doi.org/10.1109/FCCM.2004.50" />
+	</analytic>
+	<monogr>
+		<title level="m">12th Annual IEEE Symposium on Field-Programmable Custom Computing Machines, 2004 (FCCM&apos;04</title>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="249" to="257" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Scalable pattern matching for high speed networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">R</forename><surname>Clark</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Schimmel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 12th Annual IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM&apos;04)</title>
+		<meeting>the 12th Annual IEEE Symposium on Field-Programmable Custom Computing Machines (FCCM&apos;04)</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title/>
+		<ptr target="http://dl.acm.org/citation.cfm?id=1025123.1025834" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Computer Society</title>
+		<imprint>
+			<biblScope unit="page" from="249" to="257" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Stream computations organized for reconfigurable execution</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dehon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Markovsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Caspi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Perissakis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Pozzi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yeh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wawrzynek</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Microprocessors and Microsystems</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="334" to="354" />
+			<date type="published" when="2006-09" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Benchmark tests for numerical weather forecasts on inexact hardware</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">D</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">N</forename><surname>Palmer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Monthly Weather Review</title>
+		<imprint>
+			<biblScope unit="volume">142</biblScope>
+			<biblScope unit="page" from="3809" to="3829" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">RaPiD reconfigurable pipelined datapath</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Ebeling</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">C</forename><surname>Cronquist</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Franklin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">FieldProgrammable Logic Smart Applications, New Paradigms and Compilers</title>
+		<editor>Reiner Hartenstein and Manfred Glesner</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="volume">1142</biblScope>
+			<biblScope unit="page" from="126" to="135" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Virtualizing hardware with multi-context reconfigurable arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Enzler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Plessl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Platzner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field Programmable Logic and Applications, Peter Y. K. Cheung and George A. Constantinides</editor>
+		<imprint>
+			<biblScope unit="volume">2778</biblScope>
+			<biblScope unit="page" from="151" to="160" />
+			<date type="published" when="2003" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">The instruction-set extension problem: A survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Galuzzi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bertels</surname></persName>
+		</author>
+		<idno type="doi">10.1145/1968502.1968509</idno>
+		<ptr target="http://dx.doi.org/10.1145/1968502.1968509" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Reconfigurable Technology Systems</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<date type="published" when="2011-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Accelerating solvers for global atmospheric equations through mixed-precision data flow engine</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Gan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Xue</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Yang</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2013.6645508</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2013.6645508" />
+	</analytic>
+	<monogr>
+		<title level="m">2013 23rd International Conference on Field Programmable Logic and Applications (FPL&apos;13)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A dual-VDD low power FPGA architecture</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Gayasen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Vijaykrishnan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kandemir</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Irwin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Tuan ; Applications</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J ¨ Urgen</forename><surname>Becker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marco</forename><surname>Platzner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field Programmable Logic and</title>
+		<imprint>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Serge Vernalde</editor>
+		<imprint>
+			<biblScope unit="volume">3203</biblScope>
+			<biblScope unit="page" from="145" to="157" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">A self-adaptive SEU mitigation system for FPGAs with an internal block RAM radiation particle sensor</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Glein</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Rittner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Teich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Ziener</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FCCM.2014.79</idno>
+		<ptr target="http://dx.doi.org/10.1109/FCCM.2014.79" />
+	</analytic>
+	<monogr>
+		<title level="m">2014 IEEE 22nd Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM&apos;14</title>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="251" to="258" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Granidt: Towards gigabit rate network intrusion detection technology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gokhale</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Dubois</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dubois</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Boorman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Poole</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Hogsett</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic and Applications: Reconfigurable ACM Transactions on Reconfigurable Technology and Systems</title>
+		<imprint>
+			<date type="published" when="2002-03" />
+			<biblScope unit="volume">10</biblScope>
+		</imprint>
+	</monogr>
+	<note>Publication date</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<monogr>
+				<title level="m">The First 25 Years of the FPL Conference</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="page">15</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Computing Is Going Mainstream</title>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Manfred Glesner, Peter Zipf, and Michel Renovell</editor>
+		<imprint>
+			<biblScope unit="volume">2438</biblScope>
+			<biblScope unit="page" from="404" to="413" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">B</forename><surname>Gokhale</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Graham</surname></persName>
+		</author>
+		<title level="m">Reconfigurable Computing: Accelerating Computation with FieldProgrammable Gate Arrays</title>
+		<imprint>
+			<publisher>Springer Science &amp; Business Media</publisher>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Physical unclonable functions and publickey crypto for FPGA IP protection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Guajardo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G.-J</forename><surname>Schrijen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Tuyls</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2007.4380646</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2007.4380646" />
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Field Programmable Logic and Applications, 2007 (FPL&apos;07)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="189" to="195" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">SONIC -A plug-in architecture for video processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">D</forename><surname>Haynes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">Y K</forename><surname>Cheung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Stone</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field Programmable Logic and Applications, Patrick Lysaght, James Irvine, and Reiner Hartenstein</editor>
+		<imprint>
+			<biblScope unit="volume">1673</biblScope>
+			<biblScope unit="page" from="21" to="30" />
+			<date type="published" when="1999" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">UltraSONIC: A reconfigurable architecture for video image processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">D</forename><surname>Haynes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">G</forename><surname>Epsom</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">L</forename><surname>Mcalpine</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic and Applications: Reconfigurable Computing Is Going Mainstream</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="482" to="491" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">FPGA partial reconfiguration via configuration scrubbing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Heiner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Sellers</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wirthlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kalb</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2009.5272543</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2009.5272543" />
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Field Programmable Logic and Applications, 2009 (FPL&apos;09)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="99" to="104" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Architectural paths to faster and more robust FPGAs (keynote)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hutton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">2015 International Conference on Field-Programmable Technology (FPT&apos;15)</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Context saving and restoring for multitasking in reconfigurable systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Kalte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Porrmann</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2005.1515726</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2005.1515726" />
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Field Programmable Logic and Applications</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="223" to="228" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">VLIW-SCORE: Beyond C for sequential control of SPICE FPGA acceleration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Kapre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Dehon</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPT.2011.6132678</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPT.2011.6132678" />
+	</analytic>
+	<monogr>
+		<title level="m">2011 International Conference on Field-Programmable Technology (FPT&apos;11). 1-9</title>
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">ULP-SRP: Ultra low power samsung reconfigurable processor for biomedical applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Cho</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Konijnenburg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ryu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kim</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPT.2012.6412157</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPT.2012.6412157" />
+	</analytic>
+	<monogr>
+		<title level="m">2012 International Conference on FieldProgrammable Technology (FPT&apos;12</title>
+		<imprint>
+			<date type="published" when="2012" />
+			<biblScope unit="page" from="329" to="334" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">ReCoBus-Builder: A novel tool and technique to build statically and dynamically reconfigurable systems for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Koch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Beckhoff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Teich</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2008.4629918</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2008.4629918" />
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Field Programmable Logic and Applications</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="119" to="124" />
+		</imprint>
+	</monogr>
+	<note>FPL&apos;08)</note>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<monogr>
+		<title level="m" type="main">Partial Reconfiguration of a Hardware Accelerator with Vivado Design Suite</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Kohn</surname></persName>
+		</author>
+		<idno>XAPP1231</idno>
+		<ptr target="http://www.xilinx.com/support/documentation/application_notes/xapp1231-partial-reconfig-hw-accelerator-vivado.pdf" />
+		<imprint>
+			<date type="published" when="2015" />
+			<pubPlace>San Jose, CA</pubPlace>
+		</imprint>
+	</monogr>
+<note type="report_type">Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Algorithms to accelerate multiple regular expressions matching for deep packet inspection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Dharmapurikar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Crowley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Turner</surname></persName>
+		</author>
+		<idno type="doi">10.1145/1159913.1159952</idno>
+		<ptr target="http://dx.doi.org/10.1145/1159913.1159952" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 2006 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM&apos;06)</title>
+		<meeting>the 2006 Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM&apos;06)<address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="339" to="350" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Significant papers from the first 25 years of the FPL conference</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">H W</forename><surname>Leong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Amano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bertels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M P</forename><surname>Cardoso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Diessel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Gogniat</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hutton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Junkyu</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Lysaght</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Platzner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><forename type="middle">K</forename><surname>Prasanna</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Rissa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Silvano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>So</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yu</forename><surname>Wang</surname></persName>
+		</author>
+		<idno type="doi">1-3.DOI:10.1109/FPL.2015.7293747</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. International Conference on Field Programmable Logic and Applications (FPL</title>
+		<meeting>International Conference on Field Programmable Logic and Applications (FPL</meeting>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Architectural enhancements in stratix V TM</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Lewis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cashman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Chan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Chromczak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Lai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Vanderhoek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Yu</surname></persName>
+		</author>
+		<idno type="doi">10.1145/2435264.2435292</idno>
+		<ptr target="http://dx.doi.org/10.1145/2435264.2435292" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the ACM/SIGDA International Symposium on Field Programmable Gate Arrays (FPGA&apos;13)</title>
+		<meeting>the ACM/SIGDA International Symposium on Field Programmable Gate Arrays (FPGA&apos;13)<address><addrLine>New York, NY</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="147" to="156" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Power modeling and characteristics of field programmable gate arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>He</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="page" from="1712" to="1724" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">Beyond traditional microprocessors for geoscience high-performance computing applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Lindtjorn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Clapp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Pell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Haohuan</forename><surname>Fu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Flynn</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Haohuan</forename><surname>Fu</surname></persName>
+		</author>
+		<idno type="doi">10.1109/MM.2011.17</idno>
+		<ptr target="http://dx.doi.org/10.1109/MM.2011.17" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Micro</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="41" to="49" />
+			<date type="published" when="2011-03" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">ReconOS: Multithreaded programming for reconfigurable computers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Platzner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Embedded Computing Systems (TECS)</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page">1</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Efficient and deterministic parallel placement for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ludwin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+		<idno type="doi">10.1145/1970353.1970355</idno>
+		<ptr target="http://dx.doi.org/10.1145/1970353.1970355" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Design Automation of Electronic Systems</title>
+		<imprint>
+			<biblScope unit="volume">16</biblScope>
+			<date type="published" when="2011-06" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">VTR 7.0: Next generation architecture and CAD system for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Luu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Goeders</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wainberg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Somerville</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Nasartschuk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Nasr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Wang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ahmed</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">B</forename><surname>Kent</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Anderson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Rose</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Betz</surname></persName>
+		</author>
+		<idno type="doi">10.1145/2617593</idno>
+		<ptr target="http://dx.doi.org/10.1145/2617593" />
+	</analytic>
+	<monogr>
+		<title level="j">ACM Transactions on Reconfigurable Technology and Systems</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2014-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Invited paper: Enhanced architectures, design methodologies and CAD tools for dynamic reconfiguration of Xilinx FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Lysaght</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Blodget</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Mason</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Young</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Bridgford</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FPL.2006.311188</idno>
+		<ptr target="http://dx.doi.org/10.1109/FPL.2006.311188" />
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Field Programmable Logic and Applications, 2006 (FPL&apos;06)</title>
+		<imprint>
+			<publisher>IEEE</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="1" to="6" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">Dynamic reconfiguration of FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Lysaght</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Dunlop</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Selected Papers from the Oxford 1993 International Workshop on Field Programmable Logic and Applications on More FPGAs</title>
+		<meeting><address><addrLine>Oxford, UK</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1994" />
+			<biblScope unit="page" from="82" to="94" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Physically unclonable functions: A study on the state of the art and future research directions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Maes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Verbauwhede</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Towards Hardware-Intrinsic Security</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="3" to="37" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Networks on chip as hardware components of an OS for reconfigurable systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Marescaux</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J.-Y</forename><surname>Mignolet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bartic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Moffat</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Verkest</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Vernalde</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Lauwereins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field Programmable Logic and Applications</title>
+		<editor>Peter Y. K. Cheung and George A. Constantinides</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2003" />
+			<biblScope unit="volume">2778</biblScope>
+			<biblScope unit="page" from="595" to="605" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">ADRES: An architecture with tightly coupled VLIW processor and coarse-grained reconfigurable matrix</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Mei</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Vernalde</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Verkest</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>De Man</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Lauwereins</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field Programmable Logic and Applications, Peter Y. K. Cheung and George A. Constantinides</editor>
+		<imprint>
+			<biblScope unit="volume">2778</biblScope>
+			<biblScope unit="page" from="61" to="70" />
+			<date type="published" when="2003" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">StReAm: Object-oriented programming of stream architectures using PAM-Blox</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Mencer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Hübert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Morf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Flynn</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic and Applications: The Roadmap to Reconfigurable Computing</title>
+		<editor>Reiner Hartenstein and Herbert GrünbacherGr¨Grünbacher</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="volume">1896</biblScope>
+			<biblScope unit="page" from="595" to="604" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Meyer-Baese</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Meyer-Baese</surname></persName>
+		</author>
+		<title level="m">Digital Signal Processing with Field Programmable Gate Arrays</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="volume">65</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">HERMES: An infrastructure for low area overhead packet-switching networks on chip</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Moraes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Calazans</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mello</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Möller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Ost</surname></persName>
+		</author>
+		<idno type="doi">10.1016/j.vlsi.2004.03.003</idno>
+		<ptr target="http://dx.doi.org/10.1016/j.vlsi.2004.03.003" />
+	</analytic>
+	<monogr>
+		<title level="j">Integrated VLSI Journal</title>
+		<imprint>
+			<biblScope unit="volume">38</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="69" to="93" />
+			<date type="published" when="2004-10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nist</forename></persName>
+		</author>
+		<ptr target="http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf" />
+	</analytic>
+	<monogr>
+		<title level="m">Federal Information Processing Standards Publication FIPS Pub 202</title>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b64">
+	<analytic>
+		<title level="a" type="main">A bus-based SoC architecture for flexible module placement on reconfigurable FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Oetken</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Wildermann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Teich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Koch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Field Programmable Logic and Applications (FPL&apos;10</title>
+		<meeting>the International Conference on Field Programmable Logic and Applications (FPL&apos;10</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="234" to="239" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b65">
+	<analytic>
+		<title level="a" type="main">Reconfigurable architectures for bio-sequence database scanning on FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">F</forename><surname>Oliver</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">L</forename><surname>Maskell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Circuits and Systems II: Express Briefs</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="851" to="855" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b66">
+	<analytic>
+		<title level="a" type="main">FPGA bootstrapping on PCIe using partial reconfiguration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">S</forename><surname>Ostler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Wirthlin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Jensen</surname></persName>
+		</author>
+		<idno type="doi">10.1109/ReConFig.2011.40</idno>
+		<ptr target="http://dx.doi.org/10.1109/ReConFig.2011.40" />
+	</analytic>
+	<monogr>
+		<title level="m">2011 International Conference on Reconfigurable Computing and FPGAs (ReConFig&apos;11</title>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="380" to="385" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b67">
+	<analytic>
+		<title level="a" type="main">A comparison of FPGA and GPU for real-time phase-based optical flow, stereo, and local image features</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Pauwels</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Tomasi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Diaz Alonso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Ros</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">M</forename><surname>Van Hulle</surname></persName>
+		</author>
+		<idno type="doi">10.1109/TC.2011.120</idno>
+		<ptr target="http://dx.doi.org/10.1109/TC.2011.120" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computers</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="999" to="1012" />
+			<date type="published" when="2012-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b68">
+	<analytic>
+		<title level="a" type="main">An assessment of the suitability of FPGA-based systems for use in digital signal processing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Petersen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">L</forename><surname>Hutchings</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field-Programmable Logic and Applications, Will Moore and Wayne Luk</editor>
+		<imprint>
+			<biblScope unit="volume">975</biblScope>
+			<biblScope unit="page" from="293" to="302" />
+			<date type="published" when="1995" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b69">
+	<analytic>
+		<title level="a" type="main">A flexible power model for FPGAs</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">K W</forename><surname>Poon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J E</forename><surname>Wilton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic and Applications: Reconfigurable Computing Is Going Mainstream</title>
+		<editor>Manfred Glesner, Peter Zipf, and Michel Renovell</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">2438</biblScope>
+			<biblScope unit="page" from="312" to="321" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b70">
+	<monogr>
+		<title level="m" type="main">Operational time extension</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rohe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Teig</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Schmit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Redgrave</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Caldwell</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007-06-26" />
+			<biblScope unit="page">9</biblScope>
+		</imprint>
+	</monogr>
+	<note>Patent 7,236</note>
+</biblStruct>
+
+<biblStruct xml:id="b71">
+	<analytic>
+		<title level="a" type="main">Architectures and precision analysis for modelling atmospheric variables with chaotic behaviour</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Russell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">D</forename><surname>D ¨ Uben</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">X</forename><surname>Niu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Luk</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">N</forename><surname>Palmer</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FCCM.2015.52</idno>
+		<ptr target="http://dx.doi.org/10.1109/FCCM.2015.52" />
+	</analytic>
+	<monogr>
+		<title level="m">2015 IEEE 23rd Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM&apos;15</title>
+		<imprint>
+			<date type="published" when="2015" />
+			<biblScope unit="page" from="171" to="178" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b72">
+	<analytic>
+		<title level="a" type="main">Data reallocation by exploiting FPGA configuration mechanisms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Braun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Becker</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Reconfigurable Computing: Architectures, Tools and Applications</title>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="312" to="317" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b73">
+	<analytic>
+		<title level="a" type="main">Multitasking on FPGA coprocessors</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Simmler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Levinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Field-Programmable Logic and Applications: The Roadmap to Reconfigurable Computing</title>
+		<editor>Reiner Hartenstein and Herbert GrünbacherGr¨Grünbacher</editor>
+		<meeting><address><addrLine>Berlin</addrLine></address></meeting>
+		<imprint>
+			<publisher>Springer</publisher>
+			<date type="published" when="2000" />
+			<biblScope unit="volume">1896</biblScope>
+			<biblScope unit="page" from="121" to="130" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b74">
+	<analytic>
+		<title level="a" type="main">Regular expression matching in reconfigurable hardware</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sourdis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Bispo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M P</forename><surname>Cardoso</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Vassiliadis</surname></persName>
+		</author>
+		<idno type="doi">10.1007/s11265-007-0131-0</idno>
+		<ptr target="http://dx.doi.org/10.1007/s11265-007-0131-0" />
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Signal Processing Systems</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="99" to="121" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b75">
+	<analytic>
+		<title level="a" type="main">Fast, large-scale string match for a 10Gbps FPGA-based network intrusion detection system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sourdis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Pnevmatikatos</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field Programmable Logic and Applications, Peter Y. K. Cheung and George A. Constantinides</editor>
+		<imprint>
+			<biblScope unit="volume">2778</biblScope>
+			<biblScope unit="page" from="880" to="889" />
+			<date type="published" when="2003" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b76">
+	<analytic>
+		<title level="a" type="main">Pre-decoded CAMs for efficient and high-speed NIDS pattern matching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Sourdis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Pnevmatikatos</surname></persName>
+		</author>
+		<idno type="doi">10.1109/FCCM.2004.46</idno>
+		<ptr target="http://dx.doi.org/10.1109/FCCM.2004.46" />
+	</analytic>
+	<monogr>
+		<title level="m">12th Annual IEEE Symposium on Field-Programmable Custom Computing Machines, 2004 (FCCM&apos;04</title>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="258" to="267" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b77">
+	<analytic>
+		<title level="a" type="main">Operating systems for reconfigurable embedded platforms: Online scheduling of real-time tasks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Steiger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Walder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Platzner</surname></persName>
+		</author>
+		<idno type="doi">10.1109/TC.2004.99</idno>
+		<ptr target="http://dx.doi.org/10.1109/TC.2004.99" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computers</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="1393" to="1407" />
+			<date type="published" when="2004-11" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b78">
+	<analytic>
+		<title level="a" type="main">Operating systems for reconfigurable embedded platforms: Online scheduling of real-time tasks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Steiger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Walder</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Platzner</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computers</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="1393" to="1407" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b79">
+	<analytic>
+		<title level="a" type="main">Fault tolerant system design and SEU injection based testing</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Straka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kastil</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Kotasek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Miculka</surname></persName>
+		</author>
+		<idno type="doi">10.1016/j.micpro.2012.09.006DigitalSystemSafetyandSecurity</idno>
+		<ptr target="http://dx.doi.org/10.1016/j.micpro.2012.09.006DigitalSystemSafetyandSecurity" />
+	</analytic>
+	<monogr>
+		<title level="j">Microprocessors and Microsystems</title>
+		<imprint>
+			<biblScope unit="volume">37</biblScope>
+			<biblScope unit="page" from="155" to="173" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b80">
+	<analytic>
+		<title level="a" type="main">A high throughput string matching architecture for intrusion detection and prevention</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Tan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Sherwood</surname></persName>
+		</author>
+		<idno type="doi">10.1109/ISCA.2005.5</idno>
+		<ptr target="http://dx.doi.org/10.1109/ISCA.2005.5" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 32nd International Symposium on Computer Architecture, 2005 (ISCA&apos;05</title>
+		<meeting>the 32nd International Symposium on Computer Architecture, 2005 (ISCA&apos;05</meeting>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="112" to="122" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b81">
+	<monogr>
+		<title level="m" type="main">Programmable integrated circuit with voltage domains</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Tuan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">L</forename><surname>Cline</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Rahman</surname></persName>
+		</author>
+		<ptr target="https://www.google.com/patents/US8159263USPatent8159263" />
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b82">
+	<monogr>
+		<title level="m" type="main">Status Report on the Second Round of the SHA-3 Cryptographic Hash Algorithm Competition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Turan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Perlner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">E</forename><surname>Bassham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">E</forename><surname>Burr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">H</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">H</forename><surname>Chang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Dworkin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Kelsey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Paul</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">C</forename><surname>Peralta</surname></persName>
+		</author>
+		<idno>7764</idno>
+		<imprint>
+			<date type="published" when="2011-02" />
+		</imprint>
+	</monogr>
+<note type="report_type">NIST Interagency Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b83">
+	<analytic>
+		<title level="a" type="main">An FPGA run-time system for dynamical ondemand reconfiguration</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Ullmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Huebner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Grimm</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Becker</surname></persName>
+		</author>
+		<idno type="doi">10.1109/IPDPS.2004.1303106</idno>
+		<ptr target="http://dx.doi.org/10.1109/IPDPS.2004.1303106" />
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 18th International Parallel and Distributed Processing Symposium</title>
+		<meeting>the 18th International Parallel and Distributed Processing Symposium</meeting>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="volume">135</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b84">
+	<analytic>
+		<title level="a" type="main">Families of FPGA-based accelerators for approximate string matching</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Van Court</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">C</forename><surname>Herbordt</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Microprocessors and Microsystems</title>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="page" from="135" to="145" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b85">
+	<analytic>
+		<title level="a" type="main">The impact of pipelining on energy per operation in fieldprogrammable gate arrays</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J E</forename><surname>Wilton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S.-S</forename><surname>Ang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Luk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field Programmable Logic and Applications, Jürgen Becker, Marco Platzner, and Serge Vernalde</editor>
+		<imprint>
+			<biblScope unit="volume">3203</biblScope>
+			<biblScope unit="page" from="719" to="728" />
+			<date type="published" when="2004" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b86">
+	<analytic>
+		<title level="a" type="main">A smith-waterman systolic cell</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">W</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">H</forename><surname>Kwong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">H</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">H W</forename><surname>Leong</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer Science</title>
+		<editor>Field Programmable Logic and Applications, Peter Y. K. Cheung and George A. Constantinides</editor>
+		<imprint>
+			<biblScope unit="volume">2778</biblScope>
+			<biblScope unit="page" from="375" to="384" />
+			<date type="published" when="2003" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

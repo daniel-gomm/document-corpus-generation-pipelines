@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-05T11:52+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Secure Aggregated Routing Protocol in WSN -A Review</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2014-08">August 2014</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Anuradha</forename><forename type="middle">M P</forename></persName>
+							<affiliation key="aff0">
+								<orgName type="department" key="dep1">School of Computer Science</orgName>
+								<orgName type="department" key="dep2">School of Computer Science, Engineering and Applications</orgName>
+								<orgName type="institution">Engineering and Applications Bharathidasan University</orgName>
+								<address>
+									<addrLine>TamilNadu 620 023</addrLine>
+									<settlement>Tiruchirapalli</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Gopinath</forename><surname>Ganapathy</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Bharathidasan University</orgName>
+								<address>
+									<addrLine>TamilNadu 620 023</addrLine>
+									<settlement>Tiruchirapalli</settlement>
+									<country key="IN">India</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Secure Aggregated Routing Protocol in WSN -A Review</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal of Computer Applications</title>
+						<imprint>
+							<biblScope unit="volume">100</biblScope>
+							<biblScope unit="issue">16</biblScope>
+							<biblScope unit="page" from="975" to="8887"/>
+							<date type="published" when="2014-08">August 2014</date>
+						</imprint>
+					</monogr>
+					<note>17</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>WSN</term>
+					<term>LEACH</term>
+					<term>Aggregation</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ABSTRACT</head><p>Wireless sensor Networks (WSN) require secure aggregated routing of sensor data transmitted from source node to the sink node for most of its applications. Several existing routing protocols are explained in this paper with aggregation for WSN's are explored. The main objective of this paper provides the importance of secure aggregated routing algorithms for WSN to collect process and aggregate the data from sensors in an energetic conservative manner. Hence the network performance is enhanced. This paper scrutinizes the relationship between aggregation, routing and security issues in WSN. This survey covers a wide range of key issues in routing protocols based on its own evaluation metrics such as throughput, Packet delivery ratio, network lifetime, energy conservation, complexity, scalability and efficiency. In this work, the routing protocols, and its associated parameters are discussed along with the parameters based on the literature survey open research problem and further research directions in the future related to aggregate routing in WSN are discussed.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>WSN is a wireless network consisting of nodes <ref type="bibr" target="#b0">[1]</ref> with limitations in aspects such as power and memory. Routing <ref type="bibr" target="#b1">[2]</ref> is the data processing techniques among the sensor node to improvise the performance of the network. Routing involves passing the data through several intermediate nodes to the sink node. Traditional routing techniques <ref type="bibr" target="#b2">[3]</ref> do not perform well in WSN because in wireless network, bandwidth is considerable, but in WSN bandwidth is inadequate and unpredictable. Energy consumption <ref type="bibr" target="#b1">[2]</ref> of sensor node is an important concern in WSN. The main objective of routing is to achieve optimality, simplicity, minimal overhead, robustness, stability, speed and flexibility. The design of routing protocols <ref type="bibr" target="#b2">[3]</ref> in sensor networks is altered by many critical and disputing factors. These are Node deployment: In self-organized method the nodes are scattered in a random manner. If the sensors are not uniformly distributed optimal clustering becomes mandatory to authorize energy efficient network operation. Energy considers: Sensor node lifetime strongly depends on the battery lifetime. In a multi-hop WSN each node will act as a sender as well as a router. Data Reporting Model: These protocols are highly inclined by the data reporting model with respect to route stability and energy utilization. Data aggregation: Due to proximity many sensor nodes will send similar packets. The number of transmission is reduced by allowing redundant data transmission from many nodes for aggregation. Aggregation involves duplicate suppression, maxima, minima and average. Fault tolerance may require rerouting of packets so routing protocol must form a new link to route the data. It needs multiple level of redundancy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1">Architecture Based Routing Protocols:</head><p>Routing Protocols <ref type="bibr" target="#b2">[3]</ref> are classified according to the structure of the sensor network, which is very important for the intended operation. These protocols are Flat-based routing, Hierarchical-based routing and Location-based routing.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>1.1.1Flat-Based Routing: Flat based routing [3] is</head><p>required in case of a large number of sensor nodes; every node has a significant role in this routine. Energy Aware Routing (EAR) Direct Diffusion (DD), Minimum Cost Forwarding Algorithm (MCFA), Sensor Protocols for Information via Negotiation (SPIN) and Active Query forwarding In sensor network (ACQUIRE) are comes under Flat-based routing protocols. In direct diffusion, the concept of data centric routing is used to aggregate received data from many sources by reducing the redundant data. This data centric approach will find routes from various sources to a particular destination. Initially, all the Sensor nodes measure the events when occurred and create an information gradient in their neighborhood. If a sink node wants to collect the information about the event, it will broadcast the interests of the network by hop to hop communication. Intermediate nodes propagate these interests. Interests are nothing but the query/ tasks which required by the network. After getting the interests, the node sends the gradient about that to the respective node. The gradient refers to an attribute value and to a certain direction. If the gradient satisfies the interests, that path is reinforced to prevent further flooding. If the sink node receives data from the sources, it will refresh and re-sends the interests periodically. In this each node has the ability to perform the aggregation. It is based on on-demand queries sent by the sink node. The major advantages of this method are all communications are neighbor to neighbor without addressing node and each node can do aggregation along with caching the data. The problem with this method is that, it is not suitable for monitoring. In ACQUIRE (Active Query Forwarding in Sensor Networks), initially BS sends the query to each node, and then the nodes try to respond partially to the query from base station through utilizing the information precached. This information's are then forwarded to other sensor node. If the information pre-cached is not recently updated, then the node will collect the data from the neighboring node within hopes. to BS instead of many nodes. Signal strength is used to measure the distance between two nodes. The aggregated data will be transmitted to BS by nodes in the chain. Every node in the chain will get turn for sensing data to BS. Advantages are improved performance gain; limit the no. of transmissions and eliminating overhead of Dynamic Cluster formation and the disadvantages are delay due to nodes at long distance and leader becomes bottleneck.. Scalability is the big issue.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.1.3">Location-Based Routing: This type of</head><p>architecture is utilized where the sensor nodes are deployed randomly in a particular area of interest and these nodes are generally known by the geographic position <ref type="bibr" target="#b2">[3]</ref>. The distance between nodes is analyzed by the signal strength between these nodes and coordinates are estimated by information exchange between the neighboring nodes. Geographic and energy aware routing (GEAR) <ref type="bibr" target="#b8">[9]</ref> and Geographic distance routing (GEDIR) <ref type="bibr" target="#b8">[9]</ref> are the examples of location-based routing networks. Geographical and Energy Aware Routing (GEAR) is the advanced form of direct diffusion routing. This allows the interests from one region only and restricts interests from other regions. It conserves more energy when compared to direct diffusion. Each and every node has both cost for estimation and learning. Cost of estimation will be the combined cost of remaining energy and length to arrive at destination. The alteration of the estimated cost results in learning cost. Any node in the absence of neighbors is called as a hole. It there is no hole in a network, learned cost and an estimated cost will be equal. As soon as the destination receives the packet, the cost of learning flips one hop consistently. It is used for the route setup for the incoming packets. It forwards the packet within the region as well as towards the region.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Aggregation Based Routing Protocol: This</head><p>section the aggregation <ref type="bibr" target="#b5">[6]</ref>, <ref type="bibr" target="#b8">[9]</ref> based routing protocol is discussed. The aggregation based routing enhances the quality of routing among the sensor nodes. Some of the aggregation routing protocols are as follows:</p><p>2.1COUGAR: It is one of the data centric protocols <ref type="bibr" target="#b6">[7]</ref> used for huge distributed system. It follows in-network data aggregation. In this routing, query layer is used which lies between network and application layer. Cluster leader is used perform data aggregation and send the aggregated data to BS and sets the query plan based on generating queries. The drawbacks are increased overhead, failure of leader nodes, requires more synchronization.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">TAG:</head><p>Tiny Aggregation Service (TAG) <ref type="bibr" target="#b6">[7]</ref> is a datacentric framework for efficient data aggregation. To attain this, parent nodes should allow the other children nodes to realize the time required for transmission. as well as parent nodes reserve the data of their children to avert from data failure. Precisely, the message transmission from the base station takes place at the distribution phase and it needs its sensor nodes to systemize routing tree for the base station to send its request easily. In this approach every message has a field denoting the distance from the root to node which is sending. Usually it considers as zero at the root level and if any node that does not have any level but receives message, then it will assign its own level starting from zero. This will be incremented basically from a level of one and consigns the sending node as parent node. Until all the process lasts in all the sensor nodes in the network joins the tree has a parent. This message seasonally continual to keep the structure of tree  <ref type="bibr" target="#b7">[8]</ref>: In WSN, an important concern is security. There exists some link between security needs and data aggregation process. The (DOS) Denial of service is a major problem in wireless networks and it may disable the node constantly leading to some redundancy and also allowing the availability losses. SDAP <ref type="bibr" target="#b6">[7]</ref>, <ref type="bibr" target="#b7">[8]</ref> affords data confidentiality, source authentication and data integrity. In SDAP hop-by-hop aggregation process more faith is placed in higher level nodes because the large number of data manipulated in this node. Sometimes the compromised nodes produce some fake data and this form a drastic change in the final result.. SDAP form sub trees by randomly dividing the topology tree, those sub trees are similar in size. By this approach, higher level nodes reduce the potential threat to security by another compromised high level node. This envisioned protocol performs the authentication and encryption in sensed data and after decrypting then it is transmitted to the base station. At every middle node, the data aggregation takes place so the energy efficiency is improvised. Due to incompatible target both the data aggregation and security protocol <ref type="bibr" target="#b8">[9]</ref> must be structured together and can be accomplished without reassuring security.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">EADAT: The protocol experiments formulated on</head><p>Energy-Aware Distributed Aggregation Tree protocol <ref type="bibr" target="#b9">[10]</ref>. The base station, which initiates the tree that is forming the root of the aggregation, disseminates the control message which contains five fields: ID, parent, power, status, and hopcount. Each sensor node consists of separate id and aggregation tree contains parent node, the path length, which defines the number of hops from the sink. This message forwards the sensor nodes up to once the message broadcast by each node and leads to an aggregation tree set up at the base station. By monitoring the sensor node energy level <ref type="bibr" target="#b9">[10]</ref>, <ref type="bibr" target="#b10">[11]</ref>, there is a higher probability to get the higher residual power in sensor nodes to grow into a non-leaf node so the simulation results display this protocol protract network lifetime and conserves more energy. In EADAT, tree structure, routing is followed to select the active non-leaf nodes. There is some traffic load occurring in the construction of tree aggregation and chomp energy. By describing the overhead effects computation of the energy utilization by EADAT control message is done and matching it with the entire system.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Tree based Data Aggregation [11]:</head><p>The protocols in this class are based on the hierarchical manner. The method involving less complexity for data aggregation from the source towards the sink node is to nominate some special nodes, which will function as aggregation points in a predefined direction during data forwarding. Aggregation <ref type="bibr" target="#b10">[11]</ref> comes into picture when a node of the tree experiences the arrival of data packets from two or more source nodes. This particular node then performs aggregation by combining the data received by its own data the data of and pass on exactly one data packet to its neighbors which is its successor in the tree in sense lower in the hierarchy. The major defect in this approach is that when a data packet is lost accounted to channel wreckage, the data from the entire sub tree will be lost. Therefore, this requires a structure for fault tolerance for ensuring reliability in forwarding the aggregated data. Despite the fact, there is a high cost requirement for maintenance of the hierarchical structure in vital networks and the scarcity in the strength of the system, if it is prone to damage; these methods are in particular suited for designing aggregation function <ref type="bibr" target="#b11">[12]</ref> for optimality and enhancing the energy management efficiency while facilitating the data aggregation in the in-between nodes. In utmost cases, a shortest path routing tree is built by the tree-based protocols. This approach is on the basis, using the shortest path routing every node encounters an event, and announces the information collected to the sink node. The Directed Diffusion algorithm which is proposed for attribute-based routing wherein there is an opportunistic data aggregation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">DRINA: Data Routing for In-network</head><p>Aggregation <ref type="bibr">[</ref>  <ref type="bibr" target="#b15">[16]</ref>: Formation of Cluster: The leader election algorithm is started at the moment when an event is sensed by one or many nodes. Such nodes will take part in the election and the leader is one which is closest to the sink or the closest to existing established route. If a tie arises then the node with the smallest value of ID becomes eligible or taking energy level as another criterion. The result of the election process is that one node which satisfies the criteria becomes the leader node and the other node which detects an occurrence of an event becomes the Collaborators. The task accomplished by the coordinator is receiving the information gathered by the collaborators and forward it towards the sink.</p><p>The key aspect this algorithm is that the information from all the nodes which representing the same action will be stored or aggregated at the coordinator. 20 of hop tree starts. The above steps are replicated until the sink or a node belonging to an existing route is reached. The routes are established by taking the best nearby node at every hop. The best neighbor is chosen on the basis of two factors: 1) the shortest path to the sink on the occurrence of the first event. 2) When subsequent events occur, the best neighbor node is one which is closer to the sink in terms of already established route. By this way the maximization of aggregation points occurs. The resulting route is the tree that establishes the connection between the coordinator and the sink. By HCM message concept we ensure control flooding such that the whole cost of this infrastructure equals the flooding. To ensure reliability of data transmission a route repair mechanism is implemented which is discussed in the next section.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.6">DBMAC [15]:</head><p>To solve the problems of wellorganized data aggregation trees WSN is a different approach called Delay Bounded Medium Access Control (DBMAC) is introduced. This protocol combines routing and MAC protocol mechanisms to accomplish data aggregation. The main aim of DBMAC scheme is to obtain a reduction in latency for delay bounded applications and to improvise energy efficiency by enhancing the advantage of data aggregation mechanisms. DBMAC introduces the carrier sense multiple access with collision avoidance (CSMA/CA) mechanism. By considering the advantage of CTS messages of other nodes, the sensor nodes can select the relay node in the middle of nodes that consist of some packets to broadcast in the containing queue. Hence the aggregation efficiency is increased in the network as well as information in that path is formed as single packet.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.7">Information</head><p>Fusion-based Role Assignment (InFRA) <ref type="bibr" target="#b14">[15]</ref>: The algorithm forms a cluster for event containing only the nodes that are discoverable. Here cluster head will combine all the data in the cluster and forwards towards the cluster head. The main objective of InFRA algorithm is to find the shortest path to reduce the information fusion. Group coordinate system is used here to reduce the information fusion, hence once the cluster is formed then the sink node will elect the shortest path towards the sink node. Advantage of InFRA algorithm is fusion based aggregation. Disadvantage of this algorithm is for arrival of each and every event should be broadcasted to the entire network to notify other nodes in the network about the new arrival and to revise the collected information in the coordinates. This in case raises the communication cost and reduces the scalability. <ref type="bibr" target="#b14">[15]</ref>: Shortest path tree is a data aggregation protocol and it is proposed for Data centric routing protocol. SPT based data aggregation protocol promotes about the energetic awareness of the parent nodes. In this protocol the selection of the parent node is done based on the distance of sensor nodes to the BS and their energy level. The merits of the shortest path tree protocol are aggregation protocols that it considers information theory as routing metric. The disadvantage of SPT is not accurate and it is less efficient too.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.8">Shortest Path Tree</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.9">RDAT [15]:</head><p>In wireless networks a unique, fast data aggregation and transmission protocol, which is based on functional reputation. This protocol improves dependability of data aggregation and transmission by defining sensor node action and displaying corresponded function status. RDAT provides a fault tolerant Reed-Solomon coding technique that occupies on multi path data transmission algorithm to certify the actual data transmission to the base station, and simulation also denotes the reliability of data transmission and aggregation in the occurrence of impaired nodes. In this protocol, security is certified for particular data aggregators using functional reputation and weighing sensor data using sensing functional reputation, so follow in addition uses a multipath transmission algorithm that is designed on routing functional reputation. There is firsthand information about neighboring node, obtain with the help of sensor nodes, which supervise the neighborhood and also each sensor node retrieves good and bad performance of its neighbors on a table referred to a stable of functional reputation. Normally it is not applicable for aggregators to verify the correctness of sensor node's data. Sometimes neighboring nodes get overlapped and data sensed are correlated, the neighbor, it is reading of local outlier, false data injection attacks are detected. During a false data reports are transmitting it may induce false data and to deceive the base station. By using the density of sensor nodes the threshold value is determined depending on application. RDAT to make sure of the consistent data transmission to the base station and this protocol is not generous, so making the operation of protocol RDAT is realistic.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.9">EEHA[15]: Energy-efficient and high accuracy</head><p>technique for data aggregation. This technique has included consideration of the three issues: communication overhead, aggregation accuracy and protection of privacy and appraise to project the tradeoffs among them. This protocol technique has reduced bandwidth, energy utilization and also improves data accuracy <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref>, provides data privacy. Four steps involved: aggregation tree construction, slicing, mixing and aggregation. In this technique combines both from sensor nodes to form a data aggregation tree and path and are not required to shortest paths. The aggregation tree <ref type="bibr" target="#b12">[13]</ref>, <ref type="bibr" target="#b13">[14]</ref> is optimized and the network is routed to base station. Each leaf arbitrarily chosen set of nodes within the hops and leaf then forms slices into private data and in mixing step aggregation tree leaves waiting for some time, which assure that all slices are accepted, and then decryption takes place and add all the accepted slices finally slice left by it to execute a result. In aggregation step encrypted the result and then transmit to parent, the accepted results are forwarded by their children and intermediate node perform the operation of aggregation here we determined the time interval difference because the parent node wait for a long time than child nodes, and finally we got an overall sensor reading and accepted data encryption takes place then transmit to parent node at that time is elapsed. The target of the protocol is that the sensor can calculate an absolute aggregation final value and the private sensor value is released to another sensor. Data privacy <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref> is different for both the leaf and intermediate node there is no occurrence of collisions, more energy efficient protocol.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.11">SRDA [14], [15]: Secure Reference-Based Data</head><p>Aggregation (SRDA) protocol is projected for cluster based WSN. In SDRA the data obtained from sensing are compared with some set of predefined reference values and values which are different are only transmitted. The set of reference values are taken on basis of the previous values. Whereas, aggregation minimizes the number of packet being transmitted by reducing the size of packets transmitted. This will increase energy saving. Usually the aggregation algorithms <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref>, sensors broadcast the raw data to all nodes. This will waste the bandwidth. Some data which are same are already stored in the nodes. The raw data sensed is compared with the predefined sensed value and only the difference is ransmitted. Therefore, differential aggregation has greater possibility to decrease the amount of data to be broadcasted from sensor nodes to cluster heads. The shortcoming of SRDA is that they do not allow intermediate nodes to do data aggregation.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.12">CDAP [13], [14]: Concealed data aggregation</head><p>protocol makes use of the privacy homomorphism to present hierarchical concealed data aggregation in the network. Once the network deployed, each AGGNODE determines pairwise keys with its neighboring nodes. These nodes can send their readings to the AGGNODE securely. Each AGGNODE increase its neighbor for sensor readings during the collection phase. AGGNODE obtains the encrypted data from its neighboring node. The data is encrypted using a symmetric key encryption algorithm. The received data is decrypted and aggregated and further it encrypts the aggregated data using a privacy homomorphic encryption algorithm. Only the base station is capable of decrypting the data using its private key. On the other hand, it improves the aggregation, energy efficiency and usage of bandwidth networks whilst affording secure communication.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">CONCLUSION</head><p>In this work the design issues and various routing protocols <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref> related to the improvement of mobility, position awareness, data aggregation, scalability and energy usage are discussed. These surveys <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b11">[12]</ref> are used to identify the drawbacks of existing routing protocols, and also used to develop the proposed framework model. The comparisons of evaluation parameters of routing techniques of existing routing protocols are summarized in <ref type="table" target="#tab_4">Table 1 and Table 2</ref> respectively. Based on the detailed survey in existing routing protocols, the following problems are identified. In existing routing protocol, finding and maintaining the routes between the sensor nodes in WSN are time consuming process. The existing routing protocols the attention of unexpected variations in node status, recurrent and volatile changes in network structure are very difficult. The data organization and data management in sensor node is an important practice in WSN. The sensor nodes are controlled in energy and bandwidth. The sensor nodes are very large in WSN; it is not possible to use the global addressing scheme for sensor nodes which leads the additional overhead of ID maintenance. </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head></head><label></label><figDesc>renewed. Advantage of Tag protocol is used to monitor applications and admits a flexible sleep schedule for sensor nodes. The disadvantage of TAG is not accurate and it has low efficiency. Nevertheless, like numerous referred to tree based aggregation aware routing algorithm, the TAG approach requires a large number of messages swap to preserve the tree.</figDesc><table>International Journal of Computer Applications (0975 -8887) 
+Volume 100 -No.16, August 2014 2.3 Secure Hop-by-Hop Data Aggregation Protocol [7], 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head></head><label></label><figDesc>ID and Hop to Tree. ID stands for the node identifier that initiated or imparted the HCM and Hop to Tree is the hop distance by which passing of HCM occurs. The Hop to Tree value is initialized to 1 at the sink node. Verification of Hop To Tree value is done by each node upon receiving the HCM and checks whether the value is less than the value stored in Hop To Tree and on the condition that the value of First Sending is true, then the value of the Next Hop variable is updated with the field ID value of the HCM else if the condition is false, then it means that the HCM is already received by the node by SPT. The node drops the HCM message received. These steps take place frequently, until the configuration of the whole network occurs. Earlier to the occurrence of the first event, there is no routes established and the smallest distance to the sink is the value the Hop to Tree variable retains. After an event has occurred, it will contain the smaller of two values, i.e. firstly the initial value and secondly the occurred event hop distance: and the value that it finally it contains is the smallest distance to the sink measured in hops. Phase 2</figDesc><table>16]: The primary motive of DRINA is to 
+
+maximize the data aggregation with the inclusion of shortest 
+path routing to the sink node. 
+
+Phase 1 [16]: Construction of Hop Tree: The phase is 
+initiated by the sink node forwarding the Hop Configuration 
+Message (HCM) to all the nodes in the network with the aid 
+of flooding technique. The two segments of the HCM 
+message: </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" validated="true"><head>Table 1 :</head><label>1</label><figDesc>Comparisons of Evaluation Parameters of Routing Protocols</figDesc><table>Protocol 
+Mobility 
+
+Data 
+
+Aggregation 
+
+Scalability 
+Power 
+Usage 
+
+Spin 
+Possible 
+Yes 
+Limited 
+Limited 
+
+Directed 
+
+Diffusion 
+
+Limited 
+Yes 
+Limited 
+Limited 
+
+Cougar 
+No 
+Yes 
+Limited 
+Limited 
+Acquire 
+Limited 
+Yes 
+Limited 
+N/A 
+
+Leach 
+Fixed 
+Bs 
+
+Yes 
+Good 
+Maximum 
+
+Teen &amp; 
+Apteen 
+
+Fixed 
+Bs 
+
+Yes 
+Good 
+Maximum 
+
+Pegasis 
+Fixed 
+Bs 
+
+No 
+Good 
+Maximum 
+
+Hcr 
+No 
+No 
+Good 
+N/A 
+
+Gear 
+Limited 
+Limited 
+No 
+No 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" validated="false"><head>Table 2 :</head><label>2</label><figDesc>Advantages and Disadvantages of Existing Routing Protocols Protocol Advantages Disadvantages Shortest Path Tree Data aggregation protocols that consider information theory as routing metric. Not Accurate, Low Efficiency Tiny Aggregation Service (TAG) Specifically designed for monitoring applications and allows an adjustable sleep schedule for sensor nodes. Not Energy Efficient, Does not alter the network structure Information Fusion-based Role Assignment (InFRA) A fusion based aggregation Less Efficient LEACH Randomization to evenly distribute the energy expenditure among the sensor nodes. Not optimized one HEED Average Minimum Reachability Power (AMRP). AMPR is used to estimate the communication cost in each cluster. Additional Computational overhead Secure Reference- Based Data Aggregation (SRDA) protocol Raw data sensed by sensor nodes are compared with reference data values and then only the difference data are transmitted. Do not allow intermediate nodes to perform data aggregation Secure Hop- by-hop Data Aggregation Protocol (SDAP)Compared to low-level sensor nodes, more trust is placed on the high- level nodes (i.e., nodes closer to the root) during a normal hop-by- hop aggregation process in a tree topology.</figDesc><table>Protocol 
+Advantages 
+Disadvantages 
+
+Shortest Path 
+Tree 
+
+Data 
+aggregation 
+protocols that consider 
+information theory as 
+routing metric. 
+
+Not Accurate, 
+Low 
+Efficiency 
+
+Tiny 
+Aggregation 
+Service 
+(TAG) 
+
+Specifically designed 
+for monitoring 
+applications and allows 
+an adjustable sleep 
+schedule for sensor 
+nodes. 
+
+Not Energy 
+Efficient, Does 
+not alter the 
+network 
+structure 
+
+Information 
+Fusion-based 
+Role 
+Assignment 
+(InFRA) 
+
+A fusion based 
+aggregation 
+
+Less Efficient 
+
+LEACH 
+Randomization to 
+evenly distribute the 
+energy expenditure 
+among the sensor nodes. 
+
+Not optimized 
+one 
+
+HEED 
+Average Minimum 
+Reachability Power 
+(AMRP). AMPR is used 
+to estimate the 
+communication cost in 
+each cluster. 
+
+Additional 
+Computational 
+overhead 
+
+Secure 
+Reference-
+Based Data 
+Aggregation 
+(SRDA) 
+protocol 
+
+Raw data sensed by 
+sensor nodes are 
+compared with 
+reference data values 
+and then only the 
+difference data are 
+transmitted. 
+
+Do not allow 
+intermediate 
+nodes to 
+perform data 
+aggregation 
+
+Secure Hop-
+by-hop Data 
+Aggregation 
+Protocol 
+(SDAP) 
+
+Not dynamic 
+
+Energy-
+efficient and 
+secure pattern 
+based data 
+aggregation 
+ESPDA 
+
+Uses pattern codes to 
+perform data 
+aggregation. That is 
+extracted from the 
+actual data in such a 
+way that every pattern 
+code has certain 
+characteristics of the 
+corresponding actual 
+data. 
+
+Pattern 
+matching is 
+difficult. </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" validated="false"><head></head><label></label><figDesc>The sensor nodes are strongly reserved in energy, computational rate, and storage dimensions. Routing challenges and design issues are Node deployment, Energy consumption without losing accuracy, Data Reporting Model, Fault Tolerance, Scalability, Connectivity, Coverage, Data Aggregation and Quality of Service. Those factors will really affect the routing process in WSNs. The single routing protocol does not cover all the design issues. The single routing protocol does not provide the optimal route and does not afford maximum network lifetime, resource awareness &amp;use of metadata. Some routing protocols that use a single path and thereby does not focus Route Repair Mechanism. An existing routing protocol is enhanced for the limited capabilities of the nodes but does not consider security. Existing routing protocols does not concentrate the total number of messages for setting up a routing tree, number of covering routes, aggregation rate, and reliability.</figDesc><table></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Sensor nodes share a common symmetric key with the base station</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Easy way of Access</head><p>International Journal of Computer Applications (0975 -8887)   Volume 100 -No.16, August 2014  </p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Wireless sensor and actor networks: research challenges, Ad Hoc Network</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">F</forename><surname>Akyildiz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">H</forename><surname>Kasimoglu</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="351" to="367" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Design guidelines for wireless sensor networks: communication, clustering and aggregation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Mhatre</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Ad Hoc Networks Journal</title>
+		<imprint>
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="45" to="63" />
+			<date type="published" when="2004" />
+			<publisher>Elsevier Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">A survey on secure multipath routing protocols in WSN&apos;s, Comput</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Stavrou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Pitsillides</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Network</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="2215" to="2238" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Low Energy Adaptive ClusteringHierarchy with Deterministic Cluster-Head Selection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">J</forename><surname>Handy</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Haase</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Timmermann</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc.4 th International Workshop on Mobile and Wireless Communications Network</title>
+		<meeting>.4 th International Workshop on Mobile and Wireless Communications Network<address><addrLine>USA</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2002" />
+			<biblScope unit="volume">1</biblScope>
+			<biblScope unit="page" from="368" to="372" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">A Novel Cluster-based Routing Protocol with Extending Lifetime for Wireless Sensor Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lotf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bonab</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Khorsandi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 5th IFIP International Conference on Wireless and OpticalCommunications Networks (WOCN08)</title>
+		<meeting>5th IFIP International Conference on Wireless and OpticalCommunications Networks (WOCN08)<address><addrLine>East Java Indonesia, Surabaya</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="page" from="1" to="5" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Performance Evaluation of Low Energy Adaptive Clustering Hierarchy Protocol for Wireless Sensor Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">A</forename><surname>Vidhate</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">K</forename><surname>Patil</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Pophale</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. International Conference and Workshop on Emerging Trends in Technology (ICWET 2010)TCET</title>
+		<meeting>International Conference and Workshop on Emerging Trends in Technology (ICWET 2010)TCET<address><addrLine>Mumbai, India</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="59" to="63" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Highly Dynamic Routing Protocol for Data Aggregation in Sensor Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Villas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Boukerche</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">B</forename><surname>De Araujo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A F</forename><surname>Loureiro</surname></persName>
+		</author>
+		<idno type="doi">10.1109/ISCC.2010.5546580</idno>
+		<ptr target="http://dx.doi.org/10.1109/ISCC.2010.5546580" />
+	</analytic>
+	<monogr>
+		<title level="m">Proc. IEEE Symp. Computers and Comm. (ISCC)</title>
+		<meeting>IEEE Symp. Computers and Comm. (ISCC)</meeting>
+		<imprint>
+			<date type="published" when="2010" />
+			<biblScope unit="page" from="496" to="502" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Energy-efficient and high-accuracy secure data aggregation in wireless sensor networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hongjuan</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kai</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Keqiu</forename><surname>Li</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Communications</title>
+		<imprint>
+			<biblScope unit="volume">34</biblScope>
+			<biblScope unit="page" from="591" to="597" />
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">A Survey of Wireless Sensor Network Interconnection to External Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Agnius</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Arunas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Egidijus</surname></persName>
+		</author>
+		<idno type="doi">DOI:10.1007/978-90-481-3662-9_7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Business Media B.V</title>
+		<imprint>
+			<date type="published" when="2010" />
+			<publisher>Springer Science</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Energy-efficient data gathering in large wireless sensor networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Lu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Wan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Xu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Second International Conference on Embedded Software and Systems</title>
+		<imprint>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="5" to="10" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Secure data aggregation in wireless sensor networks: A comprehensive overview</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yang</forename><surname>Ozdemir</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Xiao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Computer Networks</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="2022" to="2037" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Innetwork Aggregation Techniques for Wireless Sensor Networks: A Survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Fasolo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Rossi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Widmer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Zorzi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Wireless Comm</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="70" to="87" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">A Reliable and Data Aggregation Aware Routing Protocol for Wireless Sensor Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">A</forename><surname>Villas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Boukerche</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">B</forename><surname>Araujo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">A</forename><surname>Loureiro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proc. 12th ACM Int&apos;l Conf. Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM)</title>
+		<meeting>12th ACM Int&apos;l Conf. Modeling, Analysis and Simulation of Wireless and Mobile Systems (MSWiM)</meeting>
+		<imprint>
+			<biblScope unit="page" from="245" to="252" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">A simple, leasttime, and energy-efficient routing protocol with onelevel data Aggregation for wireless sensor networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Sudipmisra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Dias Thomasinous</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Systems and Software</title>
+		<imprint>
+			<biblScope unit="volume">83</biblScope>
+			<biblScope unit="page" from="852" to="860" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">EIRDA: An Energy Efficient Interest based Reliable Data Aggregation Protocol for Wireless Sensor Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hemant</forename><surname>Sethi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">B</forename><surname>Patel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Applications</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="975" to="8887" />
+			<date type="published" when="2011-05" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">DRINA: A Lightweight and Reliable Routing Approach for In-Network Aggregation in Wireless Sensor Networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Leandro</forename><forename type="middle">Aparecido</forename><surname>Villas</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Azzedine</forename><surname>Boukerche</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Heitor</forename><surname>Soares Ramos</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Horacio</forename><forename type="middle">A B</forename><surname>Fernandes De Oliveira</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Regina</forename><surname>Borges De Araujo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Antonio Alfredo Ferreira</forename><surname>Loureiro</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Computers</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<date type="published" when="2013-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ijca</forename><surname>Tm</surname></persName>
+		</author>
+		<ptr target="www.ijcaonline.org" />
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

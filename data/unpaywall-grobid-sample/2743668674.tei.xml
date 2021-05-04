@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T21:02+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">DECISION-MAKING SYSTEM SUPPORTED BY ADAPTIVE COLOURED PETRI NETS</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017-07">July 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Haroldo</forename><forename type="middle">Issao</forename><surname>Guibu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution" key="instit1">Instituto Federal de Educação</orgName>
+								<orgName type="institution" key="instit2">Ciência e Tecnologia de São Paulo</orgName>
+								<address>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+							<affiliation key="aff1">
+								<orgName type="institution">Escola Politécnica da Universidade de São Paulo</orgName>
+								<address>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">João</forename><forename type="middle">José</forename><surname>Neto</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Escola Politécnica da Universidade de São Paulo</orgName>
+								<address>
+									<country key="BR">Brazil</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">DECISION-MAKING SYSTEM SUPPORTED BY ADAPTIVE COLOURED PETRI NETS</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal of Computer Networks &amp; Communications (IJCNC)</title>
+						<imprint>
+							<biblScope unit="volume">9</biblScope>
+							<biblScope unit="issue">4</biblScope>
+							<date type="published" when="2017-07">July 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.5121/ijcnc.2017.9401</idno>
+					<note>1</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Adaptive Petri Nets</term>
+					<term>Coloured Petri Nets</term>
+					<term>Adaptive Decision Tables</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ABSTRACT</head><p>This work presents a decision-making system supported by Adaptive Coloured Petri Net (ACPN). Experts in a given field can establish a set of rules for the proper functioning of a manufacturing process or even acompany, facilitating the decision-making process. However, whenever the scenario changes and new rules need to be incorporated into the rule set, or old rules need to be deleted or modified, the manager may find it difficult to reformulate this set of rules. An adaptive mechanism that facilitates the modification of the set of rules is fundamental to assist the manager in making decisions. The Adaptive Color Petri Net is a tool that enables the modification of the set of rules, transforming the IF-THEN rule format used by anauxiliary Extended Adaptive Decision Table in an equivalent ACPN subnet.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">INTRODUCTION</head><p>In the area of decision-making systems, the tools most used by the specialists are the decision tables, which gave rise to several methods to help managers in their choices. Among the methods developed for decision making are the so-called multi criteria methods, which involve the adoption of multiple hierarchically linked decision tables. In the process of improving the decision tables, new features are incorporated and they provide the specialists the ability to describe their model in a more realistic way.</p><p>On the other hand, Petri nets were created by Carl Petri in the 1960s to study discrete events dynamic systems with the aim of communication between automata. Several extensions were made in the original Petri nets, with the introduction of timed transition, the expansion of the token concept and the possibility of dynamic network modification. Coloured Petri nets are an enhancement of the original Petri net in which tokens can be variables of various types, including integer, real, and string types, simplifying the network and enabling the concise description of complex problems, rendering them appropriate in modeling engineering and business problems. Another enhancement of Petri Net is Adaptive Coloured Petri Net (ACPN) <ref type="bibr" target="#b4">[5]</ref>.Adaptive Coloured Petri Net introduces an adaptive layer which involves Coloured Petri Net, and are composed of several functions that are capable to change the subjacent network topology, including or excluding places, transitions and arcs. This paper describes how the adaptive layer operates and the way of transcribing the rules of the tables for extended functions of Petri nets. By embedding a decision table in a Petri net, the simulation and analysis tools available in the Petri net development environments can be used, which leads to an increase in confidence in the decision criteria adopted.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">PETRI NETS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1.">Ordinary Petri Nets</head><p>Petri nets (PN) were created by Carl Petri in the 1960s to model communication between automata, which at that time also encompassed Discrete Event Systems (DES). Formally, a Petri net is a quadruple PN= [P, T, I, O] where P is a finite set of places; T is a finite set of transitions; I: (P x T) → N is the input application, where N is the set of natural numbers; O: (T x P) → N is the output application, where N is the set of natural numbers A marked network is a double MPN = <ref type="bibr">[PN, M]</ref>, where PN is a Petri net and M is a set with the same dimension of P such that M (p) contains the number of marks or tokens of place p.</p><p>At the initial moment, M represents the initial marking of the MPN and it varies over time as the transitions succeed. In addition to the matrix form indicated in the formal definition of the Petri nets, it is possible to interpret the Petri nets as a graph with two types of nodes interconnected by arcs that presents a dynamic behaviour, and also as a system of rules of the type "condition → action" which represent a knowledge base. <ref type="figure" target="#fig_0">Figure 1</ref> shows a Petri net in the form of a graph, in which the circles are the "Places", the rectangles are the "Transitions". The "Places" and the "Transitions" constitute the nodes of the graph and they are interconnected through the oriented arcs </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2.">Reconfigurable Petri Nets</head><p>Several extensions of the Petri Nets were developed with the objective of simplifying the modelling of Discrete Events Systems, even for distributed environments. However, m Several extensions of the Petri Nets were developed with the objective of simplifying the modelling of Systems to Discrete Events, even for distributed environments. However, most extensions are not designed to model systems that change during their operation.</p><p>One group of Petri Nets extensions that attempts to tackle the problem of modelling systems that change during their operation is composed by the Self-Modifying Petri Nets <ref type="bibr" target="#b12">[12]</ref>, by the Reconfigurable Petri Nets via graph rewriting <ref type="bibr" target="#b7">[8]</ref>, by the Adaptive Petri Nets <ref type="bibr" target="#b0">[1]</ref> and the Adaptive Fuzzy Petri Nets <ref type="bibr" target="#b5">[6]</ref>.Each of these extensions has its own characteristics, but they share the fact that they can modify, during execution, the firing rules of the transitions or the topology of the network.</p><p>With the same name, the same acronym, but of different origins, we find in the literature Reconfigurable Petri Nets (RPN) introduced in <ref type="bibr" target="#b2">[3]</ref> and in <ref type="bibr" target="#b7">[8]</ref>.The work of Llorens and Oliver is an evolution of the work of Badouel and Oliver <ref type="bibr" target="#b0">[1]</ref> and combines the techniques of graph grammars with the idea of Valk's Self-Modifying Petri Net, creating a system of rewriting of the network. In their work, Llorens and Oliver demonstrated the equivalence between the RPN and the PN in terms of properties and also that the RPN are equivalent to the Turing machines regarding the power of expression.</p><p>In <ref type="figure" target="#fig_1">Figure 2</ref> we have schematized a Reconfigurable Petri Net according to Guan <ref type="bibr" target="#b2">[3]</ref>. There are two interdependent layers, the control layer and the presentation layer. The places of the control layer are different in their nature from the places of the presentation layer. Each place of the control layer has associated a set of functions that is capable to change the topology of the presentation layer, that is, they reconfigure the presentation layer. The tokens of the places are actually functions designed to modify the topology of the presentation layer. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3.">Adaptive Petri Nets</head><p>An adaptive Petri net was defined by Camolesi <ref type="bibr" target="#b1">[2]</ref> from the underlying device scheme plus adaptive layer as follows:</p><formula xml:id="formula_0">= ( , , Σ, , , , , ) in initial configuration .</formula><p>Input stimuli move the APN to the next configuration if, and only if, a non-empty adaptive action is performed.In the k-th step we have: = ( , , Σ, , , , , ), where = ( , ) is formed by an underlying initial device ( ) and an adaptive mechanism AM;</p><p>PN is the Petri Net device in step k. is the initial underlying device and the set represents the initial non-adaptive behaviour; is the set of all possible behaviours of PN in step k and is its initial behavior in step k; ε ("empty string") denotes absence of valid element;</p><p>Σ is the set of all possible events that make up the input chain; A⊆C is the subset of PN acceptance configurations; F = C-A is the set of PN rejection configurations; BA and AA are sets of adaptive actions, which include empty action; = … is the input string;</p><p>NA is a finite set of all symbols that can be generated as output by APN in response to the application of adaptive rules;</p><p>is the set of adaptive rules that define the adaptive behaviour of APN in step k and is given by a relation ⊆ × Σ × × × .</p><p>defines the initial behaviour of APN and the adaptive actions of insertion or elimination of places and transitions are transforming the set of rules.</p><p>The rules ∈ are of the form (&lt;ba&gt;, (P, T, I, O), &lt;aa&gt;) and operate as follows:</p><p>A symbol Σ causes reg to execute the action . If the action of deletes reg from , the execution of reg is aborted, otherwise, the underlying rule of reg = (P, T, I, O) applies. Finally, the adaptive action is performed .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4.">Adaptive Coloured Petri Nets</head><p>The Adaptive Coloured Petri Net uses the same scheme of wrapping the underlying device (CPN) with an adaptive layer (AL) <ref type="bibr" target="#b4">[5]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACPN = (CPN, AL) where</head><p>CPN is the conventional coloured Petri net, LA = (AF, AR) is the adaptive layer.</p><p>In turn, the adaptive layer is composed by the set of adaptive functions (AF) and by the set of rules type IF -THEN (AR).</p><p>AF is the set of adaptive functions and is embedded in the Adaptive Coloured Petri net. AR is the set of rules that must be inserted in the Adaptive Coloured Petri net through the execution of the adaptive functions.</p><p>The basic adaptive functions are inspection, insertion or incorporation and exclusion of a rule. The ACPN uses the same strategy of RPN devised by Guan, but the control layer is a kind of interpreter of Decision Tables previously defined in order to produce the decision layer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.">DECISION TABLES</head><p>The Decision Table is an auxiliary tool in describing procedures for solving complex problems <ref type="bibr" target="#b11">[11]</ref>.A Conventional Decision <ref type="table" target="#tab_0">Table, presented in Table 1</ref>, can be considered as a problem composed of conditions, actions and rules where conditions are variables that must be evaluated for decision making, actions are the set of operations to be performed depending on the conditions at this moment, and the rules are the set of situations that are verified in response to the conditions.</p><p>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rules column Conditions rows Condition values Actions rows</head><p>Actions to be taken A rule is constituted by the association of conditions and actions in a given column. The set of rule columns should cover all possibilities that may occur depending on the observed conditions and the actions to be taken. Depending on the current conditions of a problem, we look for which table rules satisfy these conditions:</p><p>• If no rule satisfies the conditions imposed, no action is taken;</p><p>• If only one rule applies, then the actions corresponding to the rule are executed;</p><p>• If more than one rule satisfies the conditions, then the actions corresponding to the rules are applied in parallel.</p><p>• Once the rules are applied, the table can be used again.</p><p>• The rules of a decision table are pre-defined and new rules can only be added or deleted by reviewing the table.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.">Adaptive Decision Tables</head><p>In 2001 Neto introduces the Adaptive Decision Table (ADT) <ref type="bibr" target="#b8">[9]</ref>from a rule-driven adaptive device. In addition to rule lookup, an ADT allows you to include or exclude a rule from the rule set during device operation. As an example of its potential, Neto simulates an adaptive automaton to recognize sentences from context-dependent languages. In the ADT a conventional decision table is the underlying device to which a set of lines will be added to define the adaptive functions.</p><p>Adaptive functions constitute the adaptive layer of the adaptive device governed by rules. Modifying the rule set implies increasing the number of columns in the case of rule insertion, or decreasing the number of columns in the case of rule deletion. In both cases the amount of lines remains fixed. The Adaptive Decision <ref type="table">Table (</ref>ADT) is capable to change its set of rules as a response to an external stimulus through the action of adaptive functions <ref type="bibr" target="#b11">[11]</ref>. However, the implementation of more complex actions is not a simple task due to the limitation of the three elementary operations supported by ADT <ref type="bibr" target="#b11">[11]</ref>.</p><p>When a typical adaptive device is in operation and does not find applicable rules, it stops executing, indicating that this situation was not foreseen. For continuous operation devices, which do not have accepting or rejecting terminal states, stopping their execution would recognize an unforeseen situation and constitutes an error.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.">Extended Adaptive Decision Tables</head><p>To overcome this problem faced by continuous operation devices, Tchemra <ref type="bibr" target="#b11">[11]</ref>created a variant of ADT and called it Extended Adaptive Decision <ref type="table">Table (</ref>EADT), shown in <ref type="table" target="#tab_1">Table 2</ref> . In EADT, adaptability does not apply only during the application of a rule, but also in the absence of applicable rules. A modifier helper device is queried and the solution produced by the modifier device is incorporated into the table in the form of a new rule, that is, in the repetition of the conditions that called the modifier device, the new rule will be executed and the modifier device will not need to be called.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.">EXAMPLES OF RULE INSERTION AND EADT TRANSFORMATION</head><p>In this section two examples will be presented, the first showing the insertion of a rule into a manufacturing process <ref type="bibr" target="#b3">[4]</ref> and the second example showing the transformation of an Adaptive Decision </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Rule insertion in manufacturing environment</head><p>In <ref type="table" target="#tab_3">Table 3</ref> we have schematized an example of set of rules to be inserted in a ACPN.    As the rules are inserted, they are grouped hierarchically, that is, the execution of the rules will depend on the sequence of decisions that occur in the Petri net.In <ref type="figure" target="#fig_4">Figure 4</ref> the result of the insertion of three rules that compose a certain subset that make up the total of rules. By inserting these rules in the Petri net, the knowledge generated by the expert is incorporated into the routine of monitoring the enterprise, alerting the manager in case of any decision implying non-compliance with the rules. <ref type="figure" target="#fig_5">Figure 5</ref> shows the manufacturing process of a product from 4 raw materials, using three machines. Machine 1 converts the raw materials MP1 and MP2 into part 1, machine 2 transforms the raw materials MP3 and MP4 into part 2, and machine 3 uses the two parts Pc1 and Pc2 to generate the Product.</p><p>In <ref type="figure" target="#fig_6">Figure 6</ref> the sub-network corresponding to the operation of the machine 1 and which is the same for the machines 2 and 3 is schematized. The operation of the machines specified by the Petri net of <ref type="figure" target="#fig_5">Figure 5</ref> was defined by the manufacturing sector (ocupada=busy, livre=free, acabou=finished in portuguese).Subsequently, the quality control sector detected that the final product was not adequate, presenting a simple rule to improve product quality. If x1 of Pc1greater or equal x2 of Pc2, then complete the product, otherwise Pc1 and Pc2 should be directed for recycling, where x1 is the actual value of a parameter x for Part 1 and x2 is the actual value of the same parameter x for Part 2.   Transforming the rule format is useful when the target format is more suitable for an application than the original format. In the example given, Petri nets are more used in manufacturing processes than Decision Tables. In addition, several methodologies developed for the Petri Nets make it possible to detect the existence of deadlocks and also the application of schemes that prevent their appearance in manufacturing networks.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>4.2.EADT transformation into ACPN</head><p>The transformation of EADT into ACPN is based on an algorithm composed of four main phases:</p><p>Phase I: definition of the underlying decision table, with the inclusion of the criteria, alternatives and rules of the decision problem; Phase II: generation of the decision matrix, whose values represent the relative weights and preferences of criteria and alternatives of the decision maker; Phase III: transformation of the decision matrix in a XML format, in order to incorporate as a set of rules.</p><p>Phase IV: appending the XML file to the basic ACPN, resulting in the second layer, the decision layer.</p><p>The following example was adapted from <ref type="bibr" target="#b11">[11]</ref> to illustrate the sequence of phases mentioned above, based in a decision procedure proposed in <ref type="bibr" target="#b10">[10]</ref>. This is a decision problem in which the decision maker needs to certify and select suppliers of a particular product for his company. Two suppliers A and B are analysed, according to the judgments of the decision-maker in accordance with selected for comparison:</p><p>C1 -Quality of services; C2 -Flexibility for product delivery; C3 -Distance from supplier and company location. In phase I, criteria and alternatives to the problem are introduced in a conventional decision table, and the decision maker can create an initial set of rule, as showed in <ref type="table" target="#tab_5">Table 4</ref>. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rule1</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Rule2 Rule3 Rule4</head><p>Criteria</p><formula xml:id="formula_1">C1 -Quality Y N N Y C2 -Flexibility Y Y Y Y C3 -Distance Y N Y N Alternatives A1 -Supplier A X X X A2 -Supplier B X</formula><p>In this example, the comparisons between the criteria are shown in <ref type="table" target="#tab_6">Table 5</ref>, in which the decision-maker judges the criteria pairs, obtaining the matrix of reciprocal judgments <ref type="bibr" target="#b11">[11]</ref>.  According to <ref type="bibr" target="#b10">[10]</ref>, the value of CR = 0.09 indicates that the judgments are consistent and acceptable since CR &lt;10%, otherwise it would be necessary to review <ref type="table" target="#tab_6">Table 5</ref>. The next operation is to obtain the performance matrix. For this, the alternatives are compared to the pairs, with each of the criteria. The comparisons made by the decision maker in the example are shown in <ref type="table" target="#tab_6">Table 5</ref>.   From the performance matrix Z we obtain vector ax containing the figures indicating the relative importance of the alternatives.</p><p>! 1 = 0.85 and ! 2 = 0.15 indicating that in this example the alternative A1 is much better than the alternative A2 and supplier A must be chosen. <ref type="figure">Figure 9</ref> shows the Petri Net version of the initial decision table. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.">CONCLUSIONS</head><p>In this paper we show how to incorporate new rules into Adaptive Coloured Petri Nets in a manufacturing environment and how to incorporate decision tables into Adaptive Coloured Petri Nets in a business environment. Good management practices are often overlooked in a company's day-to-day business due to the unawareness of the consequences of certain decisions, which are not always apparent because the business expert does not share his knowledge with the plant manager. Sharing two knowledges that are generally isolated provides a synergy for the company. These incorporations of rules and tables were facilitated by the reconfigurable nature of the Adaptive ColouredPetri Nets. Reconfigurable networks can be understood as a particular case of adaptive networks, where adaptation is achieved through reconfiguration of the network. The adaptive network is more general than the reconfigurable network because it can change its behavior by maintaining the same configuration by modifying the trigger rules of the transitions.</p><p>In an adaptive network, rules that handle failures can be incorporated into the standard network, allowing greater agility in the operation without the need to stop the process until fault experts take over. The recommendations of the experts would already be incorporated into the standard Petri net used in the monitoring of the operation <ref type="bibr" target="#b14">[14]</ref> <ref type="bibr" target="#b15">[15]</ref>.Reconfigurable systems during operation are a trend in the design of control systems and the ability to incorporate procedures from related areas is a feature that cannot be underestimated.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 .</head><label>1</label><figDesc>Example of a Petri Net</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 2 .</head><label>2</label><figDesc>Reconfigurable Petri Net, version of Guan</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>The rule R1 has three conditions (A &lt;4, B = ON, C = X) and two actions (D = A + 2, E = ON). To transform this rule into a part of a Petri net, a model (Place, Transition, Place) sketched inFigure 3is used.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Figure 3 .</head><label>3</label><figDesc>Basic model for transcribing a rule from</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Figure 4 .</head><label>4</label><figDesc>Subset of rules in a hierarchy</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Figure 5 .</head><label>5</label><figDesc>Petri net illustrating the manufacturing of a product from 4 raw materials.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Figure 6 .</head><label>6</label><figDesc>Petri net illustrating the operation of machine 1 (maq1).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head>Figure 7 .</head><label>7</label><figDesc>Petri sub-network corresponding to the quality control rule to be inserted.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Figure 7</head><label>7</label><figDesc>details the transformation of the rule inserted in the manufacturing Petri Net from a new IF-THEN rule, producing the new Petri Net schematized in Figure 8.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Figure 8 .</head><label>8</label><figDesc>Modified Petri net after insertion of new control rule.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head></head><label></label><figDesc>the consistency of the values of judgment and normalization of values, the weights of each criterion are calculated, generating the vector of weights: W = (0.62, 0.22, 0.16). According to the judgment of the decision maker, the vector with the weight of each criterion represents the relative importance of each one. In this example, the resulting weights indicate that the criterion is more important in relative to others: Quality: 0.62 -Flexibility: 0.22 -Distance: 0.16. At this point, it is necessary to check the consistency of the criteria judgments.The matrix of comparison between the criteria of Table 4 is evaluated for the verification of the degree of consistency of the judgments, which is given by the consistency ratio (CR), as a function of the order of the matrix: a) vector of weights pe = (1.98, 0.69, 0.47) T b) consistency vector cs = (3.20, 3.08, 3.04) T c) eigenvalue λ ! = 3.11 d) consistency index CI = 0.05 e) consistency ratio CR = 0.09</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>Figure 9 .Figure 10 .</head><label>910</label><figDesc>Petri Net equivalent of initial Decision Table International Journal of Computer Networks &amp; Communications (IJCNC) Vol.9, No.4, July 2017 11 Figure 10. Petri Net Petri net of the decision-making process Figure 10 summarizes the decision process in a graphical way.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head>Table 1 .</head><label>1</label><figDesc>Conventional Decision Tables.</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="true"><head>Table 2 .</head><label>2</label><figDesc>Extended Adaptive Decision Table.</figDesc><table>Adaptive Actions 
+Rules 
+Conventional 
+Criteria 
+Criteria values 
+Decision 
+Alternative 
+Actions to be 
+Table 
+Set of elementary 
+applied 
+Set of 
+Auxiliary 
+auxiliary 
+Auxiliary 
+Adaptive actions 
+Functions to be 
+functions 
+functions 
+called 
+Adaptive 
+Adaptive 
+Adaptive actions to be 
+layer 
+functions 
+performed 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head></head><label></label><figDesc>Table into an Adaptive Coloured Petri Net[5].</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="false"><head>Table 3 .</head><label>3</label><figDesc>Set of rules to be transformed in ACPN functions.</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" validated="true"><head>Table 3</head><label>3</label><figDesc></figDesc><table>Rules 
+R1 
+R2 
+R3 
+R4 
+R5 
+
+Conditions 
+
+A A = 4 
+A &gt; 4 
+A=4 
+A=6 
+A=1 
+B B= TRUE 
+B=FALSE B 
+B 
+B 
+C C &gt;6 
+C ≠6 
+C=6 
+C 
+C 
+Actions/ 
+Decisions 
+
+D A+2 
+5 
+4 
+A-3 
+2 
+E TRUE 
+FALSE 
+TRUE 
+TRUE 
+FALSE </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" validated="false"><head>Table 4 .</head><label>4</label><figDesc>Initial Decision Table.</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" validated="false"><head>Table 5 .</head><label>5</label><figDesc>Judgement Matrix.</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" validated="false"><head>Table 6 .</head><label>6</label><figDesc>Pairwise comparison matrix. C1 C2 C3 A1 A2 A1 A2 A1 A2 A1 -Supplier A 1 8 1 6 1 4 A2 -Supplier B 1/8 1 1/6 1 1/4 1 Normalizing the matrices, we obtain the following values:</figDesc><table>C1 
+C2 
+C3 
+A1 
+A2 
+A1 
+A2 
+A1 
+A2 
+A1 -Supplier A 
+1 
+8 
+1 
+6 
+1 
+4 
+A2 -Supplier B 
+1/8 
+1 
+1/6 
+1 
+1/4 
+1 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" validated="false"><head>Table 7 .</head><label>7</label><figDesc>Performance matrix Z.</figDesc><table>C1 
+C2 
+C3 
+A1 -Supplier A 
+0.89 
+0.86 
+0.80 
+A2 -Supplier B 
+0.11 
+0.14 
+0.20 
+
+</table></figure>
+
+			<note place="foot">International Journal of Computer Networks &amp; Communications (IJCNC) Vol.9, No.4, July 2017</note>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Reconfigurable Nets, a Class of High Level Petri Nets Supporting Dynamic Changes in Workflow Systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Badouel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Oliver</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1998" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Proposta de um Gerador de Ambientes para a Modelagem de Aplicações usando Tecnologia Adaptativa. Tese (Doutorado) -Escola Politécnica da Universidade de São Paulo</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">R</forename><surname>Camolesi</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+	<note>in portuguese</note>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Modeling adaptable multimedia and self-modifying protocol execution</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">U</forename><surname>Guan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Future Generation Computing Systems</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="123" to="143" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Incorporação de novas regras em uma Rede de Petri Colorida Adaptativa</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">I</forename><surname>Guibu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Neto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">São</forename><surname>Epusp</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Paulo</surname></persName>
+		</author>
+		<idno>978- 85-86686-90-0</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Memórias do XI Workshop de Tecnologia Adaptativa -WTA 2017</title>
+		<imprint>
+			<biblScope unit="page" from="128" to="132" />
+		</imprint>
+	</monogr>
+	<note>26 e 27 de Janeiro, 2017.. in portuguese</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Use of Adaptive Coloured Petri Network in Support of Decision-Making</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">I</forename><surname>Guibu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Neto</surname></persName>
+		</author>
+		<editor>DhinaharanNagalamai et al.</editor>
+		<imprint>
+			<date type="published" when="2017" />
+			<biblScope unit="page" from="2017" to="2034" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">A High Level Net for Modeling and Analysis Reconfigurable Discrete Event Control Systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Kheldoun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Barkaoui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>&amp;amp;ioualalen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IFIP International Conference on Computer Science and its Applications_x000D</title>
+		<imprint>
+			<publisher>Springer International Publishing</publisher>
+			<date type="published" when="2015-05" />
+			<biblScope unit="page" from="551" to="562" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Synchronization and storage model for multimedia objects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">D C</forename><surname>Little</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ghafoor</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE J. Selected Areas Comm</title>
+		<imprint>
+			<biblScope unit="page" from="413" to="427" />
+			<date type="published" when="1990-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Structural and dynamic changes in concurrent systems: Reconfigurable petri nets</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Llorens</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Oliver</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Trans. Comput</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<biblScope unit="page">11471158</biblScope>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Adaptive rule-driven devices -general formulation and case study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">J</forename><surname>Neto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Implementation and Proc</title>
+		<editor>Watson, B.W.and Wood, D.</editor>
+		<imprint>
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+	<note>Proc.</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Implementation and Application of Automata 6th International Conf</title>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes in Computer</title>
+		<editor>Science. Watson, B.W. and Wood, D.</editor>
+		<imprint>
+			<biblScope unit="volume">2494</biblScope>
+			<biblScope unit="page" from="234" to="250" />
+			<date type="published" when="2001" />
+			<publisher>Springer-Verlag</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">How to make a decision: the Analytic Hierarchy Process</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">L</forename><surname>Saaty</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Interfaces</title>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page" from="19" to="43" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<monogr>
+		<title level="m" type="main">Tabela de decisão adaptativa na tomada de decisões multicritério</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">H</forename><surname>Tchemra</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2009" />
+			<pubPlace>São Paulo</pubPlace>
+		</imprint>
+	</monogr>
+	<note>Tese (Doutorado), Escola Politécnica da USP. in portuguese</note>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Self-modifying nets, a natural extension of petri nets</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Valk</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lecture Notes Lecture Notes in Com</title>
+		<imprint>
+			<biblScope unit="volume">62</biblScope>
+			<biblScope unit="page" from="464" to="476" />
+			<date type="published" when="1978" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">R-TNCES: A novel formalism for reconfigurable discrete event control systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Khalgui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Mosbahi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">M</forename><surname>Al-Ahmari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Systems, Man, and Cybernetics: Systems</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="757" to="772" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Reconfigurable coordination of distributed discrete event control systems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Khalgui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Z</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Frey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Mosbahi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">B</forename><surname>Salah</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Control Systems Technology</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="323" to="330" />
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<monogr>
+		<title level="m" type="main">Modeling and verification of reconfigurable discrete event control systems (Doctoral dissertation, XIDIAN UNIVERSITY)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Zhang</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2015" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-05T21:10+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Embedded image processing engine using ARM cortex-M4 based STM32F407 microcontroller</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2017">2017. 2014. 2017. 2017. 2014. 2017. 2017. 2017</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Fan</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Ordnance Engineering College</orgName>
+								<address>
+									<postCode>050003</postCode>
+									<settlement>Shijiazhuang</settlement>
+									<country>China. a</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Chunting</forename><surname>Ma</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Ordnance Engineering College</orgName>
+								<address>
+									<postCode>050003</postCode>
+									<settlement>Shijiazhuang</settlement>
+									<country>China. a</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Haoyi</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Ordnance Engineering College</orgName>
+								<address>
+									<postCode>050003</postCode>
+									<settlement>Shijiazhuang</settlement>
+									<country>China. a</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Fan</forename><surname>Yang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Ordnance Engineering College</orgName>
+								<address>
+									<postCode>050003</postCode>
+									<settlement>Shijiazhuang</settlement>
+									<country>China. a</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Chunting</forename><surname>Ma</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Ordnance Engineering College</orgName>
+								<address>
+									<postCode>050003</postCode>
+									<settlement>Shijiazhuang</settlement>
+									<country>China. a</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Haoyi</forename><surname>Li</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="institution">Ordnance Engineering College</orgName>
+								<address>
+									<postCode>050003</postCode>
+									<settlement>Shijiazhuang</settlement>
+									<country>China. a</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Embedded image processing engine using ARM cortex-M4 based STM32F407 microcontroller</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">AIP Conference Proceedings</title>
+						<imprint>
+							<biblScope unit="volume">1618</biblScope>
+							<biblScope unit="page">10001</biblScope>
+							<date type="published" when="2017">2017. 2014. 2017. 2017. 2014. 2017. 2017. 2017</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1063/1.4977288</idno>
+					<note>View online: https://doi.org/10.1063/1.4977325 View Table of Contents: http://aip.scitation.org/toc/apc/1820/1 Published by the American Institute of Physics Articles you may be interested in Energy harvesting from low frequency applications using piezoelectric materials Applied Physics Reviews</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>STM32</term>
+					<term>wireless video transmission</term>
+					<term>NRF24L01</term>
+					<term>OV7670</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Abstract. The design of a wireless video transmission system based on STM32, the system uses the STM32F103VET6 microprocessor as the core, through the video acquisition module collects video data, video data will be sent to the receiver through the wireless transmitting module, receiving data will be displayed on the LCD screen. The software design process of receiver and transmitter is introduced. The experiment proves that the system realizes wireless video transmission function.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>INTRODUCTION</head><p>With the increase of mobile communication, wireless communication has been widely used. The technology of video coding and transmission for wireless communication has become the front topic of information science and technology <ref type="bibr" target="#b0">[1]</ref>. At present, the cost of wireless video transmission system is high, it is difficult to meet the needs of society. This paper designed a video transmission system at a very low cost using the STM32 microprocessor as the core. Through the video acquisition module, wireless transmission module, LCD module to realize the wireless video transmission at relative high cost performance and good effect.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>OVERALL DESIGN OF THE SYSTEM</head><p>The video transmission system is divided into data acquisition transmitter and receiver display end acquisition transmitter hardware resources including a STM32F103ZET6 chip as the main controller, a OV7670 camera as a video data acquisition module <ref type="bibr" target="#b1">[2]</ref>, a NRF24L01 module as a video data transmitter. Receiving display using a STM32F103ZET6 chip as the main controller, a NRF24L01 module as a video data receiver, a LCD display used to display video data <ref type="bibr" target="#b1">[2]</ref>. The overall design of the system is shown in <ref type="figure">figure 1</ref>:</p><p>The video acquisition module collects video data acquisition transmitter for STM32F103, STM32F103 data through the NRF24L01 wireless transmission module transmit, receive and display terminal receives the wireless data through NRF24l01 sent to STM32F103, then the data through the LCD screen display. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>HARDWARE DESIGN</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Microprocessor Selection</head><p>Using STM32F103ZET6's ST chip as collection of transmitter and receiver shows the main controller and the internal Flash capacity of 512Kbytes, RAM 64Kbytes, contains 2 basic timer, 4 general timer, 2 senior timer, 2 DMA controller, 3 SPI, 2 IIC, 5, a serial port USB, a 3 CAN, 12 ADC, a 12 bit DAC, a SDIO interface, a FSMC interface. High system integration, easy to develop. Can reduce the product development cycle. STM32 also has low power consumption, small size, cost-effective, rich and flexible configuration, high reliability advantages. Conducive to the production of industrial grade products, use.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Hardware Circuit Design</head><p>The main controller of acquisition transmitter completes the initialization of OV7670 module and controls the operation mode of OV7670 by SCCB bus interface and OV7670 communication. The image data storage pointer oV7660 written by manipulating FIFO read and use the I/O port directly read the temporary image data in FIFO. When a VSYNC (frame synchronization signal) comes to trigger the master controller external interrupt, notify the main controller image data to start the output, the main controller enable FIFO write pointer, image data is written to FIFO. The next VSYNC (frame synchronization signal) comes, indicating that the frame signal is over, the main controller prohibits the FIFO write pointer. At the same time the read pointer FIFO, using IO port to read just temporary image data in FIFO, and sent through the NRF24L01. Since FIFO cannot read and write simultaneously, the data of one frame is discarded.</p><p>In order to improve the LCD screen refresh rate and reduce the delay of data update, for each frame of image data stored in the FIFO, only the 1/4, that is to say a frame image data FIFO 4 frames is displayed on the LCD complete, but because of the high speed picture is not taken, if not shake violently, picture quality can reach the clear degree.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Video Capture Module</head><p>Acquisition transmitter OV76760 is OV (OmniVision) company produces a 1/6 inch CMOS VGA image sensor, small size, low operating voltage, providing single-chip VGA camera and image processor all functions. Through the SCCB bus control, you can output the entire frame, sub sampling, and take the window and other means of various resolutions 8 bit image data. The inch screen VGA image up to 30 frames / sec. Users can completely control image quality, data format and transmission mode. All image processing process including gamma curve, white balance, color, etc. can be programmed through the SCCB interface.</p><p>The image data output format OV7670 VGA (resolution of 640x480), QVGA (resolution of 320x240), QQVGA (160x120 resolution), the 3 clock signal output: PCLK (pixel clock, a PCLK clock, the output of a pixel (VSYNC), /HSYNC frame synchronous signal) and HREF (synchronous signal). OV7670 image data output (in the D <ref type="bibr">[7:0]</ref> port) under the control of PCLK, VSYNC, HREF/HSYNC. This paper uses QVGA output format, the image is RGB565 format, that is, each 2 bytes constitute a pixel color (high byte in the front, low byte in the rear) <ref type="bibr" target="#b3">[4]</ref>.</p><p>Because the OV7670d pixel clock (PCLK) up to 24MHZ, using the main controller I/O port to obtain pixel data is very difficult. So this scheme is used in the camera module, which comes with a FIFO chip, used for temporary storage of image data. The FIFO chip capacity is 384KB, enough to store 2 frames of QVGA image data. The schematic diagram of the module is as follows: . FIFO_WRST write signal reset signal input pin, when it is 0, FIFO write pointer is reset. FIFO_RRST read pointer reset pin for the FIFO, when it is 0, read the pointer reset. FIFO_OE for the output enable pin, when it is low, allowing the FIFO output data.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Wireless Transmitting and Receiving Module</head><p>Using NRF24L01 as wireless video data transceiver, the 2.4G wireless module based on SPI interface has the highest working speed 2Mbps, Wireless data transmission, multipoint communication and frequency hopping communication. High efficiency GFSK modulation, strong anti-interference ability, especially suitable for industrial control occasions. Low power 1.9V-3.6V operation, standby mode state 22uA; power down mode for 900nA. Communication distance: 50 meters without loss or little loss <ref type="bibr" target="#b2">[3]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 3. Connection Diagram of Wireless Transmitting and Receiving Module and Main Controller</head><p>CE pin for mode control input pin. CSN module for chip select signal line, when it is in low level, the chip will work. Clock signal line provided by SCK main controller. MOSI chip control data line (Master slave input), MISO chip control data line (Master slave output), IRQ interrupt signal pin for input. The module communicate with the main controller through the SPI bus.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Video Display Module</head><p>Using ILI9341 LCD module driver as a video display terminal, the size is 2.8 inches, the memory size is 172800bytes, the resolution is 320 * 240.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>060010-3</head><p>The LCD module in the display pixel will be set in accordance with the prior direction, including the left-right and up-down direction, such as setting the direction from left to right and from top to bottom, then the LCD controller will be in accordance with the direction of scanning LCD the pixel data of each pixel in order to fill. In addition to set the display of the cursor coordinates, that is, LCD controller will fill the pixel data from the location.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SOFTWARE DESIGN</head><p>Wireless video transmitter work flow is: when the acquisition terminal launch start after the completion of the initialization of STM32 controller, OV7670 module initialization, NRF24L01 module initialization after entering a cycle of death, sending the main controller cycle commands to OV7670 module to collect video data and a frame image 1/4 is stored in the memory, then the main controller and sends the data to the NRF24L01 module, NRF24L01 module, the video data is transmitted, so.</p><p>To determine the value of ov_sta in the process of image acquisition, when it was 2 when the image data acquisition, ov_sta initial value of 0, when entering the camera output field interrupt signal caused by the interrupt service program, the value of ov_sta will be changed, when the ov_sta is less than 2 (i.e. 0 or 1), if 0, the camera has a frame of data show that the acquisition is completed (this will be the field at this time, the interrupt signal) data can be written to the FIFO, and then add 1 to ov_sta, then present an interrupt when according to the value judgment of ov_sta (note that at this time the output of the camera ready second frames. The FIFO deposit is the first frame image, the FIFO should be forbidden to write, but in the main program, FIFO data read out) FIFO should prohibit the writing or continue to write. When the ov_sta is 1, interrupt the program will prohibit the FIFO write, and then ov_sta plus 1, so that the ov_sta is 2. The main program will enter the stage of reading FIFO data.</p><p>In the process of reading FIFO, and not the complete 240x320 image are stored in memory, the reason for this is because there is a wireless video transmission does not require data better, but can see clearly can not meet the sensor data, so precise, clear and can only to be able to maintain a continuous video. Two is to save a frame of the image requires relatively large memory, and increase the processing burden of the controller. In order to maximize the processing capacity of the controller, the image is divided into several transmission methods. Each column of 320 pixel data really read the complete, the 240 line did not read in order, but every line read a line, a total of 60x320 data read, saved to the ImageData[60] <ref type="bibr">[240]</ref>[2] array. After sending these data, ov_sta cleared to 0, in front of the program execution, if there is a field interrupt signal will not bother. When sending data, is sent in the form of packets, each send 32 U8 elements, is the data of 16 pixels. Each send a so-called frame before the image (actually 1/4 frame), will be a number that indicates that this is a few 1/4 sent, the receiver will be based on how to judge how to combine data into images on the screen. Specifically, the program will receive each time according to the received image is the first of several 1/4 frames to fill the data to determine how many lines of the screen, when receiving the first 1/4 frame, the receiver will be to fill the data in 1, 5, 9... 237 a total of 60 lines, when receiving a second 1/4 image receiver the data will be filled to 2, 6, 10, 60....238, when receiving third 1/4 frame image, the data will be filled to 3, 7, 11... 239 a total of 60 lines, when receiving a fourth frame image, the data will be filled to 4, 8, 12... 240 a total of 60 lines.</p><p>Camera output field interrupt signal caused by the main controller interrupt program flow as shown in <ref type="figure" target="#fig_1">figure 4</ref>:</p><p>The receiving end after starting the electric, STM32 main controller completes its initialization, LCD module initialization, NRF24L01 initialization after the same into the dead cycle, in the cycle of main controller will save the wireless video data received by the NRF24L01 module and into memory, then the main controller to the memory of the data sent to the LCD control chip in the LCD module display the data. The specific process as shown in figure 5:</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 5. Receive Program Flow Chart</head><p>The receiving terminal receives a data header each time the 1/4 frame image is received, which has the verification information and the information which represents the image of the first 1/4 frames. When verified correctly, the host controller will let the wireless receiver module save the 1/4 frame image into memory, and then display it on the LCD screen.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>EXPERIMENTAL VERIFICATION</head><p>The sending and receiving terminals are shown in <ref type="figure">figure 6:</ref> 060010-5</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>FIGURE 6. Sender and Receiver Physical Map</head><p>Above the picture is the wireless transmission side, the camera facing a trademark text. The following is to receive the display side, you can see the camera captured text. Wireless module shooting objects can be displayed on the receiving end of the LCD screen.</p><p>The wireless video transmission system based on STM32 is designed in this paper, which is composed of video acquisition module, wireless transmitting and receiving module, and STM32 display module. The system is suitable for industrial environment, the whole system design is simple, high reliability, to achieve a short distance wireless video transmission. The problem is the image refresh rate is slow, because the image data is not compressed, leading to wireless transmission and reception of the original image data, which is large amount of data. This requires faster processors and the use of video data compression solutions.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 2 .</head><label>2</label><figDesc>Connection Diagram between Camera Module and Main ControllerOV7670 OV_XCLK for external clock input pins need to provide external 12M crystal. The output of OV7670 OV_HREF and STM32F103 FIFO_WEN output through a logic circuit with output of FIFO_WE, used to control the FIFO chip write enable pin, only two to 1, the output is low, is to enable the FIFO write pointer can be used.The PG13 and PD3 pins of the master controller constitute the SCCB bus, used to control the initialization of the OV7670 and configure the internal registers of the STM32F103. Camera output pixel clock is OV_PCLK, connected to the FIFO chip input to provide the clock, FIFO according to the clock will camera output each pixel data written to the internal RAM.OV7670 pixel data through the OV_D[0]<ref type="bibr" target="#b0">[1]</ref><ref type="bibr" target="#b1">[2]</ref><ref type="bibr" target="#b2">[3]</ref><ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref>[6][7]connected to the FIFO, FIFO data output through the FIFO_D[0-7] and STM32F103 connected to the PC[0-7</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>FIGURE 4 .</head><label>4</label><figDesc>Transmitter Interrupt Program Flow Chart 060010-4</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc>Advances in Materials, Machinery, Electronics I AIP Conf. Proc. 1820, 060010-1-060010-6; doi: 10.1063/1.4977325</figDesc><table>Published by AIP Publishing. 978-0-7354-1488-4/$30.00 NRF24L01 
+module 
+STM32F103 
+NRF24L01 
+module 
+
+LCD 
+screen 
+
+FIFO 
+
+Collecting and sending 
+end 
+
+Receiving display 
+
+STM32F103 
+
+OV7670 
+Camera 
+
+FIGURE 1. System Overall Design 
+
+</table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Development of wireless video transmission technology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Shen</forename><surname>Lan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Sun</forename><surname>Tiandong</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Atomic teach you to play STM32 library function</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Zhang</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Liu</forename><surname>Jun</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">So</forename><surname>On</surname></persName>
+		</author>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+				<title level="m">NORDIC SEMICONDUCTOR Inc. nRF24L01+ Single Chip 2.4GHz Transceiver Product Specification v1.0 .Norway: Nordic Semiconductor</title>
+		<imprint>
+			<date type="published" when="2008-09" />
+			<biblScope unit="page" from="2016" to="2023" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">Omni Vision Technology Inc. Advanced Information. Preliminary Datasheet. OV7670/OV7171CMOS VGA (640x480) CAMERA CHIP TM with Omni Pixel® Technology</title>
+		<imprint>
+			<date type="published" when="2005" />
+			<publisher>Omni Vision Technologies, Inc</publisher>
+			<biblScope unit="page" from="2016" to="2023" />
+			<pubPlace>USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+				<title level="m">AVER LOGIC Inc. AL422 Data Sheet. AL422 3M-Bits FIFO Field Memory</title>
+		<meeting><address><addrLine>Taiwan</addrLine></address></meeting>
+		<imprint>
+			<publisher>Aver Logic Technologies, Inc</publisher>
+			<date type="published" when="2001-01" />
+			<biblScope unit="page" from="2016" to="2023" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

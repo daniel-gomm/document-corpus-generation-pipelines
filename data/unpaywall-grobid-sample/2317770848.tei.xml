@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T12:53+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Tracking Control Properties of Human-robot Systems</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Toshio</forename><surname>Tsuji</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Takashi</forename><surname>Kato</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Makoto</forename><surname>Kaneko</surname></persName>
+						</author>
+						<title level="a" type="main">Tracking Control Properties of Human-robot Systems</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Human-robot Systems</term>
+					<term>Impedance Control</term>
+					<term>Tracking Test</term>
+					<term>Man-machine Systems</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Human-robot systems including interaction between human operators and robots should be designed with careful consideration for dynamic property and control ability of the human operator. In this paper, tracking tests of the human-robot system using an impedance-controlled robot are performed in order to clarify the control ability of human operators, and changes of the tracking ability and the dynamic property of the human operator are analyzed for different values of the robot impedance. From the experimental results, it is shown that the human operator tries to keep the dynamic property of the overall system as constant as possible by adjusting his or her own impedance property.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Key</head><p>Words:</p><p>Human-robot Systems, Impedance Control, Tracking Test, Man-machine Systems </p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><formula xml:id="formula_0">d = 0.55 [m], Subject = B) Ux=•çtf0f2x(t)dt/•çtf0r2(t)dt(4)Uy=•çtf0f2y(t)dt /•çtf0r2(t)dt(5) J ‚Í2•ae •Î •· -Ê •Ï,U‚Í Žè •ae -Íf=(fx,fy)T‚Ì2•ae˜a ae˜a ‚ð -Ú •W ‹O "¹ ‚Ì2•ae •Ï •ª 'l ‚Å •³ ‹K ‰» ‚µ ‚½ 'l ‚Å,Ux,Uy‚Í ‚» ‚ê ‚¼ ‚ê Žè •ae ‹O "¹ ‚Ì •Ú •ü •û OEü,-@ •ü •û OEü ‚Ì •¬ •ª ‚ð •\ ‚·.‚± ‚± ‚Å,tf‚Í ŽŽ •s Žž ŠÔ ‚Åtf=60[s]‚Å ‚ ‚é.</formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig</head><label></label><figDesc>ƒg ‚É ‰Á‚¦ ‚é -Í ‚ð 'ª 'è ‚· ‚é. ŽÀ OE±' † ‚Í "í OE±ŽÒ ‚ðˆÖ‚ðˆÖ Žq ‚É •À ‚ç ‚¹,ƒ• ƒ{ ƒb ƒg ‚Ì ƒe •[ ƒu ƒ‹ •" ‚É Žae ‚è •t ‚¯ ‚½ ƒn ƒ" ƒh ƒ‹(zŽ² ‰ñ ‚è ‚Ì ‰ñ"] ‚ª ‰Â "\)‚ð "c Ž• ‚µ ‚½ •ó 'Ô ‚Å ƒ• ƒ{ ƒb ƒg ‚ð '€ •ì ‚· ‚é ‚ae ‚¤ ‚É ŽwŽ¦ ‚· ‚é.‚± ‚Ì ‚AE ‚« "í OE±ŽÒ ‚Í "c Ž• -Í ‚Ì '² •ß ‚ð •• ˆÓ "I ‚É •s ‚¤ ‚± ‚AE‚ª ‚Å ‚« ‚é.‚È ‚¨,ƒ• ƒ{ ƒb ƒg• § OEä ‚Ì ƒT ƒ" ƒv ƒŠ ƒ" ƒO Žü "g •" ‚Í1[kHz],‰ð •Í ‚É -p‚¢ ‚é ƒf •[ ƒ^ ‚Ì ƒT ƒ" ƒv ƒŠ ƒ" ƒO Žü "g •" ‚Í25[Hz]‚AE ‚µ ‚½. -Ú•W "ü -Í ‚Í,"' •F ŽG ‰¹ ‚ð2ŽŸ ƒo ƒ^ ƒ• •[ ƒX ƒt ƒBƒ‹ ƒ^(ƒJ ƒb ƒg ƒI ƒt Žü "g •"0.5[Hz])‚Å •½ ŠŠ ‰» ‚µ ‚½ •M • † ‚Å,"í OE±ŽÒ‚Ì •³ -Ê ‚É•Ý 'u ‚µ ‚½ ƒI ƒV ƒ• ƒX ƒR •[ ƒv ‚É ‚Í,•Î •·e‚ð •\ Ž¦ ‚µ ‚½."í OE±ŽÒ ‚É ‚Í ‚± ‚Ì •Î •· ‚ð ‚Å ‚« ‚é ‚¾ ‚¯ •¬ ‚³ ‚-‚· ‚é ‚ae ‚¤ ‚É ‹³ Ž¦ ‚µ ‚½. 2.2ŽÀ OE±•ð OE• ŽÀOE± ‚Å ‚Í,ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚ðK=-55.0,-27.5,0, 27.5,55.0,82.5,110,137.5[N/m]‚Ì8Ží -Þ,OEÅ -LŠp Žü "g •" ƒÖn‚ð ƒÖn=•ãK/M=2,4,6,8,10[rad/s]‚Ì5Ží -Þ,OE¸•OE¸•Š OEW •" ‚ð ƒÄ=B/•ã2MK=-0.5,0,0.5,1.0,1.5,2.0,2.5,3.0 ‚Ì8Ží -Þ ‚AE ‚µ ‚½.‚Ü ‚½ "í OE±ŽÒ ‚© ‚ç ƒn ƒ" ƒh ƒ‹ ‚Ü ‚Å ‚Ì ‹--£d‚Í d=0.55[m],-Ú •W "ü -Í ‚Ì •Å 'å •U •• ‚Ì •â 'Î 'l ‚Í0.1[m]‚AE ‚µ ‚½. ‚È ‚¨ƒ‚¨ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚É ŠÖ‚· ‚é Žè •ae ‚Ì •½ •t ˆÊ 'uxe‚Í "í OE±ŽÒ ‚Ì 'Ì ‚Ì ' † •S ‚© ‚ç 'O •û ‚É ‹--£d-£ ‚ê ‚½ˆÊ‚½ˆÊ 'u ‚AE ‚µ,‚± ‚Ì "_ ‚ð •ì ‹AE •À •W OEn ‚Ì OE´"OE´"_(xe=0)‚AE ‚µ ‚½(Fig.2ŽQ •</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Fig. 3 An example of experimental results (K = 55 [N/m], ƒÖ n = 10 [rad/s], ƒÄ= 1, d = 0.55 [m], Subject = A)</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig.</head><label></label><figDesc>4‚É,‚ ‚é "í OE± ŽÒ ‚Ì ŽŽ •s ‰ñ •" ‚É 'Î ‚· ‚é •v ‚AE ƒÐ ‚Ì •Ï ‰» ‚ð Ž¦ ‚·.‚½ ‚¾ ‚µ,ŽÀ OE± •ð OE• ‚Í ƒÖn=6[rad/s],ƒÄ=-0.5, K=55.0[N/m]‚Å,˜A '± ‚· ‚é ŽŽ •s ‚Í ŽÀ •ü ‚Å OE‹ ‚ñ ‚Å ‚¢ ‚é.‚± ‚Ì "í OE± ŽÒ ‚Í,ˆÀ 'è ‚È ƒ• ƒ{ ƒb ƒg ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É 'Î ‚· ‚é 'Ç •] • § OEä ŽÀ OE± ‚Í OEo OE± ‚µ ‚Ä ‚¢ ‚é ‚ª,ƒÄ=-0.5‚AE ‚¢ ‚¤ •s ˆÀ 'è ‚È ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É 'Î ‚µ ‚Ä ‚Í •‰ ‚ß ‚Ä ‚Ì ŽÀ OE± ‚Å ‚ ‚é.Fig.4‚ae ‚è,20•`30ŽŽ •s -Ú ‚Ü ‚Å ‚Í,J‚Í1ˆÈ •ã ‚Ì 'å ‚« ‚¢ •" 'l ‚ð Ž¦ ‚µU‚à 'å ‚« ‚-•Ï "® ‚µ ‚Ä ‚¢ ‚é ‚ª,30ŽŽ •s ˆÈ •~ ‚Å ‚ÍJ‚ª 'á ‰º ‚µU‚à ‚© ‚È ‚èˆÀ‚èˆÀ 'è ‚µ ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é.‚· ‚È ‚í ‚¿,"í OE± ŽÒ ‚Í ŽŽ •s ‚ð •d ‚Ë ‚é ‚É ‚Â ‚ê ‚Ä •¬ ‚³ ‚È '€ •ì -Í ‚Å •‚ ‚¢ 'Ç •] "Á •« ‚ð ŽÀ OE» ‚Å ‚« ‚é ‚ae ‚¤ ‚É ‚È ‚Á ‚Ä ‚¢ ‚é ‚Ì ‚Å ‚ ‚é.-{ ˜_ • ¶ ‚Å ‚Í,‚ ‚é 'ö "x •l ŠÔ ‚ª •ì ‹AE ‚É •n -û ‚µ ‚½ OEã ‚Ì • § OEä "Á •« Fig. 5 Change of the control performance J and Ux depending on the natural frequency wn and subjects (K = 55 [N/m], ƒÄ= 1 , d = 0.55 [m]) Fig. 6 Change of the control performance J and Ux depending on the damping coefficient (and subjects (K = 55 [N/m], ƒÖn = 4 [rad/s], d = 0 .55 [m]) ‚ð ‰ð•Í ‚· ‚é ‚± ‚AE ‚É ‚· ‚é. 3.ƒ• ƒ{ ƒb ƒg ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É ‚ae ‚é •l ŠÔ ‚Ì • § OEä "Á •« ‚Ì •Ï ‰» 3.1ƒ• ƒ{ ƒb ƒg ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É ‚ae ‚é • § OEä •¬ •Ñ ‚Ì •Ï ‰» Fig.5‚É • § OEä •¬ •ÑJ,Ux‚Ì •Ï ‰» ‚ð Ž¦ ‚·.•} ‚Í OEÅ-LŠp Žü "g •" ƒÖ n‚É ‚ae ‚é •\ •ª ‚È ŽŽ •s OEã ‚Ì10ŽŽ •s ‚Ì •½ ‹Ï ‚AE •W •€ •Î •· ‚ð Žl •l ‚Ì "í OE± ŽÒ •Ê ‚É Ž¦ ‚µ ‚½ ‚à ‚Ì ‚Å,ŽÀ OE± •ð OE• ‚ÍK=55.0[N/m],ƒÄ=1.0 ‚Å ‚ ‚é.•} ‚© ‚ç ‚ ‚é 'ö "x ‚Ì OEÂ •l •· ‚Í OE© ‚ç ‚ê ‚é ‚à ‚Ì ‚Ì,ƒ• ƒ{ ƒb ƒg ‚Ì OEÅ-L Šp Žü "g •"ƒÖn‚Ì OE¸•OE¸•-‚É "º ‚Á ‚Ä • § OEä •¬ •Ñ •v ‚ª '• ‰Á ‚µ ,Žè •ae -Í ‚Ì2•ae˜aUx‚à ae˜aUx‚à '• ‰Á ‚µ ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é.‚± ‚ê ‚ÍƒÖn‚ª OE¸ •-‚· ‚é ‚É ‚Â ‚ê ‚Ä ƒ• ƒ{ ƒb ƒg ‚Ì Šµ •«M,"S •«B‚ª '• ‰Á ‚µ,'€ •ì ‚É 'å ‚« ‚È -Í ‚ª •K -v ‚AE ‚È ‚é ‚½ ‚ß ‚Å ‚ ‚é. ˆê •û ,Fig.6‚É OE¸•OE¸•Š OEW•" ƒÄ ‚É ‚ae ‚é • § OEä •¬ •ÑJ,Ux‚Ì •Ï ‰» ‚ð Ž¦ ‚·.ŽÀ OE± •ð OE• ‚ÍK=55.0[N/m],ƒÖn=4[rad/s]‚Å,‚¢ ‚¸ ‚ê ‚à10ŽŽ •s ‚Ì •½ ‹Ï ‚AE •W •€ •Î •· ‚ð Ž¦ ‚µ ‚Ä ‚¢ ‚é.•} ‚© ‚ç,OE¸• OE¸•Š OEW •" ƒÄ ‚ª '• ‰Á ‚µ ‚Ä ‚àJ‚Í ‚í ‚¸‚©‚¸‚© ‚É '• ‰Á‚· ‚é ‚¾ ‚¯ ‚¾ ‚ª,"S •« ‚ª '• ‰Á‚· ‚é ‚½ ‚ß '€ •ì ‚É 'å ‚« ‚È -Í ‚ª •K -v ‚AE ‚È ‚è,• § ‚Í 'å ‚« ‚-'• ‰Á ‚µ ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é.‚Ü ‚½ ‚Ç ‚Ì "í OE± ŽÒ ‚à OE¸•OE¸•Š OEW•" ƒÄ=1.0‚Ì •t ‹ß ‚Å • § OEä •¬ •Ñ ‚ª •Å ‚à -Ç ‚-‚È ‚Á ‚Ä ‚¢ ‚é.ƒÄ ‚ª •‰ ‚É ‚È ‚é ‚AE ƒ• ƒ{ ƒb ƒg ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚ª •s ˆÀ 'è ‚É ‚È ‚é ‚½ ‚ß •v ‚Í '• ‰Á‚· ‚é ‚ª,‚» ‚ê ‚Å ‚à0.7•`0.8'ö "x ‚É ‚AE ‚Ç ‚Ü ‚è,"í OE± ŽÒ ‚ª ƒ• ƒ{ ƒb ƒg ‚ðˆÀ‚ðˆÀ 'è ‰» ‚µ ,‚ ‚é 'ö "x ‚Ì 'Ç •] "Á •« ‚ð ŽÀ OE» ‚µ ‚Ä ‚¢ ‚é.‚± ‚Ì ‚AE ‚« ‚Ì ŽÀ OE± OE‹ ‰Ê ‚Ìˆê‚Ìˆê</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>ŽU ‚· ‚é ‚± ‚AE ‚È ‚--Ú •W "ü -Ír‚ð ‚© ‚È ‚è -Ç ‚-'Ç •] ‚µ ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é. ‚Ü ‚½Fig.8‚É ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚É ‚ae ‚é • § OEä •¬ •ÑJ,Ux‚Ì •Ï ‰» ‚ð Ž¦ ‚·(ƒÄ=0,M=3.43[kg]).ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚ª '• ‰Á‚· ‚é ‚AE '€ •ì ‚É 'å ‚« ‚È -Í ‚ª •K -v ‚AE ‚È ‚é ‚½ ‚ß,Ux‚Í 'å ‚« ‚-'• ‰Á ‚· ‚é.‹t ‚ÉK‚ª •‰ ‚É ‚È ‚é ‚AE •s ˆÀ 'è ‚È ƒ• ƒ{ ƒb ƒg ‚Ì ‰^ "® ‚ð ‰Ÿ ‚³ ‚¦ ‚é •K -v‚ª • ¶ ‚ ¶ ‚é ‚½ ‚ßUx‚Í '• ‰Á‚µ,J‚à '• ‰Á‚· ‚é.‚½ ‚¾ ‚µ,‚Ç ‚Ì "í OE± ŽÒ ‚à OEn ‚ðˆÀ‚ðˆÀ 'è ‰»‚Å ‚« ‚Ä ‚¨‚è‚¨‚è,‚Ü ‚½K=0•`137.5[N/m] ‚Ì "Í ˆÍ ‚Å ‚Í ‚© ‚È ‚è •‚ ‚¢ 'Ç •] "Á •« ‚ª ŽÀ OE» ‚³ ‚ê ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é. 3.2"® "Á •« ‰ð•Í ŽŸ ‚É ŽÀ OE± OE‹ ‰Ê‚© ‚ç •l ŠÔ-ƒ• ƒ{ ƒb ƒg OEn ‚Ì "® "Á •« ‚ð ‰ð•Í ‚µ ‚½.Fig.1 ‚É Ž¦ ‚µ ‚½ ‚ae ‚¤ ‚É •l ŠÔ ‚Ì˜r‚Ì˜r ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX "Á •« ‚Í Žè •aêÊ 'u ‚ÉˆË‚ÉˆË ' ¶ ‚µ ‚Ä •Ï ‰» ‚· ‚é ‚ª,‚± ‚± ‚Å ‚Í 'aêê ŽŸ ‹ß Ž-‚ÌˆÓ‚ÌˆÓ -¡ ‚Å ‹L •q ŠÖ •" ‚ð •" 'è ‚µ ‚½.ˆÈ ‰º ‚É Ž¦ ‚· ƒf •[ ƒ^ ‚Í,•Î •·e‚© ‚ç ƒ• ƒ{ ƒb ƒgˆÊƒgˆÊ 'ux‚Ü ‚Å ‚Ì ŠJ ƒ‹ •[ ƒv ‹L •q ŠÖ •"G(jƒÖ),•Î •·e‚© ‚ç Žè •ae -Ífx‚Ü ‚Å ‚Ì •l ŠÔ ‚Ì ‹L •q ŠÖ •"H(jƒÖ)‚Å,•" •ª ‹ó ŠÔ -@[20]‚ð -p ‚¢ ‚Ä OEv ŽZ ‚µ ‚½ OE‹ ‰Ê ‚Å ‚ ‚é.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 9 (</head><label>9</label><figDesc>a)‚É ƒ• ƒ{ ƒb ƒg ‚Ì OEÅ -L Šp Žü "g •" ƒÖn‚É ‚ae ‚éG(jƒÖ) ‚Ì •Ï ‰» ‚ð Ž¦ ‚·.•} ' †,ŽÀ •ü ‚Í ƒÖn=2[rad/s],ˆê "_ •½ •ü ‚Í ƒÖ n=4[rad/s],"_ •ü ‚ÍƒÖn=10[rad/s]‚Ì •ê • ‡ ‚Ì •" 'è OE‹ ‰Ê ‚Å,‚¢ ‚¸‚ê‚¸‚ê ‚à10ŽŽ •s ‚Ì •½ ‹Ï ‚Å ‚ ‚é.•} ‚© ‚ç ƒÖn‚Ì •Ï ‰» ‚É ‚à ‚© ‚© ‚í ‚ç ‚¸ƒ{‚¸ƒ{ •[ ƒh •ü •} ‚É ‚Í 'å ‚« ‚È •Ï ‰» ‚Í OE© ‚ç ‚ê ‚È ‚¢ ‚± ‚AE ‚ª •ª ‚© ‚é. ‚± ‚Ì ‚AE ‚« ‚Ì •l ŠÔ ‚Ì ‹L •q ŠÖ •"H(jƒÖ)‚ðFig.9(b)‚É Ž¦ ‚·.•} ‚© ‚ç OEÅ-L Šp Žü "g •" ‚ª OE¸•OE¸•-‚· ‚é ‚É ‚Â ‚ê ‚Ä,•l ŠÔ ‚Ì ƒQ ƒC ƒ" "Á •« ‚ª •‚ Žü "g '¤ ‚Å ‚ ‚ª ‚Á ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é.•l ŠÔ ‚ª ƒ• ƒ{ ƒb ƒg ‚Ì ƒC ƒ" ƒs •[Fig. 9 Estimated describing functions with different wn (K = 55 [N/m], ƒÄ= 1, Subject = A) Fig. 10 Estimated describing functions with different ( (K = 55 [N/m], ƒÖn = 4 [rad/s], Subject = A) Fig. 11 Estimated describing functions with different K (M = 3.43 [kg], ƒÄ= 0, Subject = A) ƒ_ ƒ" ƒX "Á •« ‚Ì •Ï ‰» ‚É ‰ž ‚ ¶ ‚Ä Ž© ‚ç ‚Ì ‰ž "š "Á •« ‚ð 'å ‚« ‚-•Ï ‰» ‚³ ‚¹ ‚Ä ‚¢ ‚é ‚Ì ‚Å ‚ ‚é. ŽŸ ‚É ƒ• ƒ{ ƒb ƒg ‚Ì OE¸•OE¸•Š OEW•" ƒÄ ‚ð •Ï ‚¦ ‚½ •ê • ‡ ‚ÌG(jƒÖ),H(jƒÖ) ‚ðFig.10(a),(b)‚É ‚» ‚ê ‚¼ ‚ê Ž¦ ‚·.•} ' † ‚Ì ŽÀ •ü ‚Í ƒÄ=-0.5, ˆê "_ •½ •ü ‚Í ƒÄ=0 ,"_ •ü ‚Í ƒÄ=1.0,"j •ü ‚Í ƒÄ=3.0‚Ì •ê • ‡ ‚Ì •" 'è OE‹ ‰Ê ‚Å ‚ ‚é.OE¸• OE¸•Š OEW•"ƒÄ ‚ª-0.5‚Ì •ê • ‡ ‚ð •oe ‚«,OEn 'S 'Ì ‚Ì "® "Á •« ‚É 'å ‚« ‚È •Ï ‰» ‚Í OE© ‚ç ‚ê ‚È ‚¢ ‚ª,OE¸• OE¸•Š OEW•" ƒÄ ‚ªˆê ‚ªˆê •Z.5‚Ì •ê • ‡ ‚Í '¼ ‚Ì •ð OE• ‚É "ä ‚×,ƒQ ƒC ƒ" "Á •« ‚ª ‚â ‚â 'á ‰º ‚µ ‚Ä ‚¨‚è‚¨‚è,ƒ• ƒ{ ƒb ƒg ‚ª 'å ‚« ‚È •s ˆÀ 'è •« ‚ð -L ‚µ ‚Ä ‚¢ ‚é •ê • ‡ ‚É ‚Í •l ŠÔ ‚ª Ž© ‚ç ‚Ì "® "Á •« ‚ð '² •ß ‚µ ‚É ‚-‚¢ ‚± ‚AE ‚ª •ª ‚© ‚é. ‚Ü ‚½ ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚ð •Ï ‚¦ ‚½ •ê • ‡ ‚ÌG(jƒÖ),H(jƒÖ)‚ð Fig.11(a),(b)‚É Ž¦ ‚·.•} ' † ‚Ì ŽÀ •ü ‚ÍK=-55.0[N/m],ˆê "_ •½ •ü ‚ÍK=27.5[N/m],"_ •ü ‚ÍK=137.5[N/m]‚Ì •ê • ‡ ‚Ì •" 'è OE‹ ‰Ê‚Å ‚ ‚é.•} ‚© ‚ç ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚Ì •Ï ‰» ‚É ‰ž ‚ ¶ ‚Ä •l ŠÔ ‚ª Ž© ‚ç ‚Ì ‰ž "š "Á •« ‚ð 'å ‚« ‚-•Ï ‰» ‚³ ‚¹ ‚Ä ‚¢ ‚é ‚Ì ‚ª •ª ‚© ‚é.ƒ• ƒ{ ƒb ƒg ‚Ì •" •« ‚ª •s ˆÀ 'è ‚È ‚AE ‚« ‚â ‹t ‚É 'å ‚« ‚È ‚AE ‚« ‚Å ‚à,‚ ‚é 'ö "x ‚Ì "Í ˆÍ ‚Å •l ŠÔ ‚ª ‰ž "š "Á •« ‚ð •Ï ‰» ‚³ ‚¹,OEn 'S 'Ì ‚Ì • § OEä "Á •« ‚ðˆÛ‚ðˆÛ</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig</head><label></label><figDesc>‚é ‚± ‚AE‚ª •ª ‚© ‚é. ˆê "Ê ‚É ƒ} ƒ" •Eƒ} ƒV ƒ" • § OEäOEn ‚Å ‚Í • § OEä 'Î •Û ‚Ì "Á •« ‚ª ‚© ‚È ‚è 'å ‚« ‚-•Ï ‰»‚µ ‚Ä ‚à •l ŠÔ‚ª Ž©‚ç ‚Ì "Á •« ‚ð "K ‰ž"I ‚É '² •ß ‚µ,OEn 'S 'Ì ‚Ì • § OEä "Á •« ‚ð ‚Ù ‚Úˆê‚Úˆê 'è ‚É •Û ‚Â ‚± ‚AE‚ª OEÃ‚-‚© ‚ç 'm ‚ç ‚ê ‚Ä ‚¢ ‚é[21].-{ ŽÀ OE±‚Å Žae ‚è •ã ‚° ‚½ •l ŠÔ-ƒ• ƒ{ ƒb ƒg OEn ‚É ‚¨‚¢‚¨‚¢ ‚Ä ‚à OEÅ-LŠp Žü "g •"wn ‚ª -ñ2•`10[rad/s]‚Ì "Í ˆÍ,OE¸• OE¸•Š OEW •" ƒÄ ‚ª -ñ0•`3.0,ƒ• ƒ{ ƒb ƒg ‚Ì •" •«K‚ª -ñ-55.0•`137.5[N/m]‚Ì "Í ˆÍ ‚Å •l ŠÔ ‚Ì "K ‰ž"® •ì ‚ª -LOEø ‚É "-‚« OEn'S 'Ì ‚Ì • § OEä "Á •« ‚ª ‚Ù ‚Úˆê‚Úˆê 'è ‚É •Û ‚½ ‚ê ‚é ‚± ‚AE ‚ð Šm "F ‚· ‚é ‚± ‚AE‚ª ‚Å ‚« ‚½. ‚» ‚± ‚Å,•l ŠÔ-ƒ• ƒ{ ƒb ƒg OEn‚Ì • § OEä"Á •« ‚ð ƒ‚ ƒf ƒ‹ ‰»‚· ‚é ‚½ ‚ß,•" •ª ‹ó ŠÔ-@ ‚ð -p‚¢ ‚Ä •" 'è ‚µ ‚½ ‹L •q ŠÖ•" ‚É ŽŸ ‚Ì ‚ae ‚¤ ‚È "` 'B ŠÖ•" ƒ‚ ƒf ƒ‹ ‚ð ‚ ‚Ä ‚Í ‚ß •Å •¬2•ae -@‚Å Še ƒp ƒ‰ƒ• •[ ƒ^ ‚ð •" 'è ‚µ ‚½ . G(8)KS-TS-1 +TSse(6) K.‚Í ƒQ ƒC ƒ",TS‚Í Žž 'è •",T‚Í •l ŠÔ‚Ì ‚Þ ‚¾ Žž ŠÔ ‚ð •\ ‚· .•" 'è ‚µ ‚½ ƒp ƒ‰ƒ• •[ ƒ^Kx,Ts,T‚Ì10ŽŽ •s ‚Ì •½ ‹Ï ‚AE•W •€ •Î •· ‚ª,OEÅ -LŠp Žü "g •"ƒÖn,OE¸• OE¸•Š OEW •" ƒÄ,•" •«K‚É ‚ae ‚Á ‚Ä ‚Ç ‚Ì ‚ae ‚¤ ‚É •Ï ‰» ‚µ ‚Ä ‚¢ ‚é ‚© ‚ð ‚» ‚ê ‚¼ ‚êFig.12(a),(b),(c)‚É Ž¦ ‚·.•" 'è OE‹ ‰Ê‚ae ‚è,-{ ˜_ • ¶ ‚Å Žae ‚è •ã ‚° ‚½ ŽÀOE±•ð OE•‚Ì "Í ˆÍ "à ‚Å ‚Í,•l ŠÔ ‚AE ƒ• ƒ{ ƒb ƒg ‚ð ‚Ü ‚AE‚ß ‚½ • § OEä "Á •« ‚ð1ŽŸ 'x ‚ê -v'f ‚AE ‚Þ ‚¾ Žž ŠÔ-v'f ‚Å ‹ß Ž-‚Å ‚« ‚é ‚± ‚AE,OE¸•OE¸•Š OEW •" ‚ª ƒÄ=1ˆÈ •ã ‚Ì ƒ• ƒ{ ƒb ƒg ƒCƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É 'Î ‚µ ‚Ä ‚ÍG(8)‚Ì Še ƒp ƒ‰ƒ• •[ ƒ^ ‚ª ‚Ù ‚Úˆê‚Úˆê 'è ‚É •Û ‚½ ‚ê ‚é ‚± ‚AE (Fig.12(a),(b)ŽQ •AE)‚È ‚Ç ‚ª -¾ ‚ç ‚© ‚É ‚È ‚Á ‚½. ‚± ‚Ì ‚AE ‚«,Fig.1‚ae ‚è •l ŠÔ‚Ì "` 'B "Á •« ‚Í •¬ (s)=KS(Ms2+Bs+K)/1+TsSe-Ts(7) ‚AE‹ß Ž-‚· ‚é ‚± ‚AE‚ª ‚Å ‚« ‚é.Fig.13‚É •l ŠÔ ‚Ì "` 'B "Á •« ‚Ì ƒ‚ ƒf ƒ‹ ‚ð Ž¦ ‚·.‚± ‚Ì ƒ‚ ƒf ƒ‹ ‚Í '€ •ì ŽÒ ‚Å ‚ ‚é •l ŠÔ ‚Ì "Á •«(Fig.1ŽQ •AE) ‚ð ' † •• •_ OEo •" ‚AE •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX •" ‚Ì "ñ ‚Â ‚Ì -v'f ‚É •ª ‚¯ ‚½ ‚à ‚Ì ‚Å,' † •• •_ OEo •" ‚© ‚ç Žè •ae •" •« ‚Ì •½ •t ˆÊ 'ux*‚¨‚ae ‚¨‚ae ‚Ñ -] ‚Ü ‚µ ‚¢ •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒXMh,Bh,Kh‚ª •o -Í ‚³ ‚ê,•ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX •" ‚ª Žè •ae -Í ‚ð •o -Í ‚· ‚é.•l ŠÔ‚Ì Žè •ae ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚Í2 ŽŸ OEn‚Å ‚ ‚é ‚© ‚ç Ž®(7)‚Ì •ª Žq ‚ÌˆÊ‚ÌˆÊ 'Š •i ‚Ý -v'f ‚ð Žå ‚É ŽÀ OE» ‚µ,1 ŽŸ 'x ‚ê -v'f ‚AE ‚Þ ‚¾ Žž ŠÔ-v'f ‚Í ' † •• •_ OEo•" ‚Å ŽÀ OE» ‚³ ‚ê ‚é.‚± ‚Ì •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX '² •ß ‹@•\ ‚Ì -ð Š" ‚ð -¾Šm ‚É ‚· ‚é ‚½ ‚ß,ŽŸ •ß ‚Å ‚Í •l ŠÔ‚Ì •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚ª • § OEäOE‹ ‰Ê‚É ‰e‹¿ ‚µ ‚È ‚¢ ‚ae ‚¤ ‚È •ð OE• ‚Å "ä Šr ŽÀOE± ‚ð •s ‚Á ‚½.‚± ‚Ì •ê • ‡,Ž®(7)‚Ì •ª Žq ‚ÌˆÊ‚ÌˆÊ 'Š •i ‚Ý -v'f ‚ð ŽÀ OE» ‚· ‚é ‚± ‚AE‚ª "ï ‚µ ‚-‚È ‚è,OEn ‚Ì • § OEä"Á •« ‚Í 'á ‰º ‚· ‚é ‚AE-\ 'z ‚³ ‚ê ‚é. 4.•l ŠÔ ‚Ì •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É ‚ae ‚é • § OEä "Á •« ‚Ì •Ï ‰» 'O •ß ‚Ì ŽÀOE±‚Å ‚Í "í OE±ŽÒ‚Ì˜rOE±ŽÒ‚Ì˜r ‚Í ƒ• ƒ{ ƒb ƒg ‚AE ‚AE ‚à ‚É ‰^"® ‚µ ‚½.‚» ‚± ‚Å ŽŸ ‚É ƒ• ƒ{ ƒb ƒg ‚Ì ƒn ƒ" ƒh ƒ‹ ‚ð OEÅ'è ‚µ ,"í OE±ŽÒ‚ª -Í ‚ð ‰Á‚¦ ‚Ä ‚à "® ‚© ‚È ‚¢ ‚ae ‚¤ ‚É ‚µ ‚Ä "¯ -l ‚Ì ŽÀOE± ‚ð •s ‚Á ‚½.‚± ‚Ì ŽÀ OE±‚Å ‚Í,"í OE± ŽÒ ‚ª ‰Á‚¦ ‚½ -Í‚© ‚ç Ž®(1)‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX "Á •« ‚ð OEvŽZ ‹@ "à ‚Å ƒV ƒ~ ƒ…ƒOE•[ ƒg ‚µ,OEv ŽZ ‚µ ‚½ ‰¼ 'z "I ‚È ƒ• ƒ{ ƒb ƒg ‚ÌˆÊ‚ÌˆÊ 'ux‚AE -Ú•W‹O "¹r‚AE ‚Ì •Î •·e‚ð ƒf ƒBƒX ƒv ƒOE ƒC‚É •\ Ž¦ ‚µ ‚½."í OE±ŽÒ ‚É ‚Í ‚± ‚Ì •Î •· ‚ð ‚Å ‚« ‚é ‚¾ ‚¯ •¬ ‚³ ‚-‚· ‚é ‚ae ‚¤ ‚É ‹³ Ž¦ ‚µ ‚½.‚· ‚È ‚í ‚¿,ˆê "Ê ‚É -p‚¢ ‚ç ‚ê ‚é ƒ} ƒ" •[ ƒ} ƒV ƒ" • § OEä OEn[21]‚É ‚¨‚¢‚¨‚¢ ‚Ä,• § OEä 'Î •Û ‚É2ŽŸ 'x ‚ê -v'f ‚ð -p‚¢ ‚Ä 'Ç •] • § OEä ŽÀOE±‚ð •s ‚Á ‚½ ‚± ‚AE ‚É ‚È ‚é.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head>Fig. 14 ,</head><label>14</label><figDesc>15‚É • § OEä •¬ •ÑJ,Ux‚Ì •Ï ‰»‚ð Ž¦ ‚·.‚¢ ‚¸‚ê‚¸‚ê ‚à(a) ‚Í OEÅ-LŠp Žü "g •" ƒÖn,(b)‚Í OE¸•OE¸•Š OEW •" ƒÄ,(c)‚Í •" •«K‚É ‚ae ‚é •Ï ‰»‚Å,•\ •ª ‚È ŽŽ •s OEã ‚Ì10ŽŽ •s ‚Ì •½ ‹Ï ‚AE•W •€ •Î •· ‚ð4•l ‚Ì "í OE±ŽÒ •Ê ‚É Ž¦ ‚µ ‚Ä ‚¢ ‚é.‚» ‚Ì '¼ ‚Ì ŽÀOE±•ð OE•,"í OE±ŽÒ ‚ÍFig.5,6, 8‚AE "¯ ‚ ¶ ‚Å ‚ ‚é.Fig.14‚© ‚ç ‚¢ ‚¸‚ê‚¸‚ê ‚Ì ŽÀOE±•ð OE• ‚Å ‚à ƒ• ƒ{ ƒb ƒg ‚Ì ƒn ƒ" ƒh ƒ‹ ‚ª •l ŠÔ‚Ì •ã Žˆ‚AEˆêŽˆ‚AEŽˆ‚AEˆê •• ‚É "® ‚-•ê • ‡(Fig .5,6,8)‚É "ä ‚× ‚Ä •v ‚ª 'å ‚« ‚-'• ‰Á‚µ ‚Ä ‚¢ ‚é .‹t ‚É OEÞ ‚Í 'å ‚« ‚-OE¸•OE¸•-‚µ,•l ŠÔ ‚ª Ž©‚ç ƒQ ƒC ƒ" ‚ð •ã ‚° ‚é ‚± ‚AE‚ª ‚Å ‚« ‚È ‚¢ ‚± ‚AE‚ª •ª ‚© ‚é(Fig .15). "Á ‚É OE¸•OE¸•Š OEW •" ƒÄ ‚ª •‰ ‚Ì •s ˆÀ 'è ‚È ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX "Á •« ‚É 'Î ‚µ ‚Ä ‚Í • § OEä •s "\ ‚Å ‚ ‚Á ‚½(Fig.14(b)ƒÄ=-0 .5).ƒÄ=0‚Ì ‚AE ‚« ‚à •s ˆÀ 'è ‚É ‚Í ‚È ‚ç ‚È ‚¢ ‚à ‚Ì ‚Ì,-Ú •W'l ‚Ö ‚Ì 'Ç •] ‚Í ‚Ù ‚AE‚ñ ‚Ç ‚Å ‚« ‚Ä ‚¢ ‚È ‚¢(Fig.14(c)).‚¢ ‚¸‚ê‚¸‚ê ‚Ì •ê • ‡ ‚à,-{ ˜_ • ¶ ‚Å Žae ‚è •ã ‚° ‚½ •l ŠÔˆê ƒ• ƒ{ ƒb ƒg OEn‚Ì • § OEä•« "\ ‚ª 'Ê •í ‚Ì ƒ} ƒ" •[ ƒ} ƒV ƒ" • § OEäOEn[21]‚ð 'å ‚« ‚-•ã ‰ñ‚Á ‚Ä ‚¢ ‚é ‚± ‚AE ‚ª •ª ‚© ‚é. ˆÈ •ã ‚Ì OE‹ ‰Ê‚Í,•l ŠÔ‚Ì •ã Žˆ‚ÌŽˆ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX "Á •« ‚ª •l ŠÔˆê ƒ• ƒ{ ƒb ƒgOEn ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX "Á •« ‚É -^‚¦ ‚é ‰e‹¿ ‚É ‹Nˆö‹Nˆö ‚· ‚é .•l ŠÔ ‚Í •ã Žˆ‰^Žˆ‰^"® ‚É ‚¨‚¢‚¨‚¢ ‚Ä Žè •ae ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚ð •• ˆÓ "I ‚É '² •ß ‚· ‚é ‚± ‚AE‚ª ‚Å ‚« ‚é[11]•`[14].‚µ ‚½ ‚ª ‚Á ‚Ä,"íOE± ŽÒ ‚Ì˜r‚Ì˜r ‚ª ƒ• ƒ{ ƒb ƒg ‚AE "ú-{ ƒ• ƒ{ ƒb ƒgŠw‰ïŽ•18Šª2• † 2000"N3OEŽ 131</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head></head><label></label><figDesc>‚É ‰^"® ‚· ‚é 'O •ß ‚Ì ŽÀOE±‚Å ‚Í "í OE±ŽÒ ‚Í Ž©‚ç ‚Ì •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚ð •Ï ‚¦ ‚é ‚± ‚AE ‚É ‚ae ‚è ƒ• ƒ{ ƒb ƒg ‚AE˜r ‚ð • ‡ ‚í ‚¹ ‚½ OEn'S 'Ì ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚ð ‚ ‚é 'ö "x,'² •ß ‚· ‚é ‚± ‚AE‚ª ‚Å ‚« ‚é.‚AE ‚± ‚ë ‚ª,ƒ• ƒ{ ƒb ƒgƒn ƒ" ƒh ƒ‹ ‚ª OEÅ'è ‚³ ‚ê ‚é ‚AE ‚à ‚Í ‚â •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚Í OEn ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX "Á •« ‚É ‰e‹¿ ‚ð -^‚¦ ‚È ‚¢.•l ŠÔˆê ƒ• ƒ{ ƒb ƒg OEn ‚Å ‚Í ƒ• ƒ{ ƒb ƒg ‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚¾ ‚¯ ‚Å ‚È ‚-,•l ŠÔ‚Ì •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚ª •d -v‚È -ð Š" ‚ð ‰Ê‚½ ‚µ ‚Ä ‚¨‚è‚¨‚è,‚± ‚Ì "_ ‚ª 'Ê •í ‚Ì ƒ} ƒ" •[ ƒ} ƒV ƒ" • § OEä OEn[21]‚AE ‚Ì 'å ‚« ‚È 'Š ˆá "_ ‚Å ‚ ‚é. •Å OEã ‚É •l ŠÔ-ƒ• ƒ{ ƒb ƒg OEn ‚Ì "® "Á •« ‚ð 'O •ß ‚AE "¯ -l ‚É •" •ª ‹ó ŠÔ -@[20]‚É ‚ae ‚è •" 'è ‚µ ‚½ OE‹ ‰Ê‚ðFig.16‚É Ž¦ ‚·.Fig.16(a)‚Í ƒ• ƒ{ ƒb ƒg‚Ì OEÅ-LŠp Žü "g •"ƒÖn,(b)‚Í OE¸•OE¸•Š OEW •" ƒÄ,(c)‚Í •" •«K‚É ‚ae ‚éG(jƒÖ)‚Ì •Ï ‰»‚Å,‚» ‚ê ‚¼ ‚êFig.9,10,11‚É 'Î ‰ž‚· ‚é.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>Fig. 16 (</head><label>16</label><figDesc>a)‚© ‚çƒÖn=2‚Ì ‚AE ‚« ‚É •‚ Žü "g '¤ ‚Å ƒQ ƒC ƒ" "Á •« ‚ª ‚© ‚È ‚è 'á ‰º ‚µ ‚Ä ‚¢ ‚é ‚± ‚AE‚ª •ª ‚© ‚é.‚Ü ‚½ OE¸•OE¸•Š OEW •" ‚ð •Ï ‰» ‚³ ‚¹ ‚½ •ê • ‡ (Fig.16(b))‚Í ƒÄ ‚ª0‚Ì •ê • ‡ ‚ð •oe ‚«,OEn 'S 'Ì ‚Ì "® "Á •« ‚É 'å ‚« ‚È •Ï ‰»‚Í OE©‚ç ‚ê ‚È ‚¢ ‚ª,ƒÄ=0‚Ì •ê • ‡ ‚Í '¼ ‚Ì •ð OE• ‚É "ä ‚×,ƒQ ƒC ƒ" "Á •« ‚ª 'å ‚« ‚-'á ‰º ‚µ ‚Ä ‚¢ ‚é.Fig.16(c)‚à "¯ -l ‚É ƒV ƒX ƒe ƒ€ ‚Ì "® "Á •«G(jƒÖ)‚Í ƒ• ƒ{ ƒb ƒg‚Ì "® "Á •«R(jƒÖ)‚AE ‚© ‚È ‚è Ž-‚½ OE`OE`‚ð Ž¦ ‚µ ‚Ä ‚¨‚è‚¨‚è,•l ŠÔ‚ª Ž©‚ç ‚Ì "® "Á •« ‚ð '² •ß ‚µ ‚« ‚ê ‚Ä ‚¢ ‚È ‚¢ ‚± ‚AE‚ª •ª ‚© ‚é. 5.‚Ü ‚AE ‚ß -{ ˜_ • ¶ ‚Å ‚Í •l ŠÔˆê ƒ• ƒ{ ƒb ƒg OEn‚Ì • § OEä "Á •« ‚ª ƒ• ƒ{ ƒb ƒg‚Ì ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ƒp ƒ‰ƒ• •[ ƒ^,•ì ‹AE ŽÒ‚Ì •n -û"x,•l ŠÔ‚Ì •ã ŽˆƒCŽˆƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É ‚ae ‚Á ‚Ä ‚Ç ‚Ì ‚ae ‚¤ ‚É •Ï ‰»‚· ‚é ‚Ì ‚© ‚ð ŽÀOE±"I ‚É ‰ð•Í ‚µ ‚½.‚» ‚Ì OE‹ ‰Ê, (1)•l ŠÔ‚Ì • § OEä "Á •« ‚ª ƒ• ƒ{ ƒb ƒg •E ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É ‰ž‚ ¶ ‚Ä 'å ‚« ‚-•Ï ‰»‚· ‚é ‚± ‚AE, (2)‚ ‚é "Í ˆÍ ‚Ì ƒ• ƒ{ ƒb ƒg •E ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚É 'Î ‚µ ‚Ä ‚Í OEn 'S 'Ì ‚Ì • § OEä "Á •« ‚ª ‚Ù ‚Úˆê‚Úˆê 'è ‚É •Û ‚½ ‚ê ‚é ‚± ‚AE, JRSJ Vol</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc>‚¨ŽŽ‚¨ŽŽ •s ŠÔ‚É ‚Í •\ •ª ‚È ‹x OEe ‚ð ‚Í ‚³ ‚ñ ‚Å ‚¢ ‚é.</figDesc><table>). 
+
+ŽŽ •s Žž ŠÔ‚Ítf=60[s],"í 
+OE±ŽÒ ‚Í 'j Žq 'å Šw• ¶4-¼ 
+‚Å ‚ ‚é.‚È 
+
+2.3ŽÀ 
+OE±OE‹ ‰Ê‚Ìˆê‰Ê‚Ìˆê -á 
+
+Fig.3‚É 
+ƒÖn=10[rad/s],ƒÄ=1.0,K=55.0[N/m]‚AE 
+•Ý 
+
+'è ‚µ ‚½ ‚AE ‚« ‚Ì ŽÀ OE±OE‹ ‰Ê‚Ìˆê‰Ê‚Ìˆê -á‚ð Ž¦ ‚·.•ã 
+‚© ‚ç • ‡ ‚É -Ú •W "ü -Ír, 
+
+Žè •aêÊ 'ux,•Î 
+•·e,•ì 
+‹AE •û OEü‚Å ‚ ‚é ƒe •[ ƒu ƒ‹ ‚Ì •Ú •ü •û OEü‚Ì Žè 
+
+•ae -Ífx,ƒe 
+•[ ƒu ƒ‹ ‚Ì -@•ü •û OEü‚Ì Žè •ae -Ífy‚Å 
+‚ ‚é. 
+
+‚± ‚Ì ‚AE ‚« ‚Ì • § OEä "Á •« ‚ð •] ‰¿‚· ‚é ‚½ ‚ß,ŽŸ 
+‚Ì ‚ae ‚¤ ‚È •] ‰¿Žw •"J, 
+
+U ‚ð 'è ‹` ‚· ‚é. 
+
+J=•çtf0e2(t)dt/•çtf0r2(t)dt(2) 
+
+U =Ux+Uy(3) 
+
+JRSJ Vol.18 
+No.2 
+Mar.,2000 
+128 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head></head><label></label><figDesc>‰¡ •¬ ˜H:•g ƒ} ƒX ƒ^ •EƒX ƒOE •[ ƒu • § OEä ‚Ì -• ˜_ •h,"ú -{ ƒ• ƒ{ ƒb ƒg Šw ‰ï Ž• , vol.11, no.6, pp.794-802, 1993. [3] Y. Yokokohji and T. Yoshikawa:•gBilateral control of Master- Slave Manipulations for Ideal Kinesthetic Coupling ,•h Proceed- ings of IEEE International Conference on Robotics and Au- tomations, pp.849-858. 1992. [4] J.E. Colgate: •gRobust Impedance Shaping Telemanipulation,•h IEEE Transactions on Robotics and Automation, vol.9 , no.4, pp.374-384, 1993. [5] K. Kosuge, Y. Fujisawa and T. Fukuda: •gControl of Mechani- cal System with Man-machine Interaction.•h Proceedings of the IEEE International Conference on Intelligent Robots and Sys- tems, pp.87-92, 1992. [6] K. Kosuge and N. Kazamura: •gControl of a Robot Handling an Object in Cooperation with a Human ,•h Proceedings of IEEE International Workshop on Robot and Human Communication , no.1, pp.142-147, 1997. [7] O.M. Al-Jarrah and Y.F. Zheng: •gArm-manipulator coordina- tion for load sharing using compliant control,•h Proceedings of IEEE International Conference on Robotics and Automation , pp.1000-1005, 1996. [8] O.M. Al-Jarrah and Y.F. Zheng: •gArm-manipulator coordi- nation for load sharing using Reflexive Motion Control ,•h Pro- ceedings of IEEE International Conference on Robotics and Automation, pp.2326-2331, 1997. [9] R. Ikeura: •gManual Control Approach to the Teaching of a Robot Task,•h IEEE Transactions on Systems, Man , and Cy- bernetics, vol.24, no.9, pp.1339-1346, 1994. [10] R. Ikeura and H. Inooka: •gVariable impedance control of a robot for cooperation with a human,•h Proceedings of IEEE In- ternational Conference on Robotics and Automation , pp.3097- 3102, 1995. [11] F.A. Mussa-Ivaldi, N. Hogan and E. Bizzi: •gNeural, mechanical and geometrical factors sub-serving arm posture in humans ,•h Journal of Neuroscience, vol.5, no.10, pp.2732-2743 , 1985. [12] T. Tsuji, P.G. Morasso, K. Goto and K. Ito: •gHuman hand impedance characteristics during maintained posture ,•h Biolog- ical Cybernetics, vol.72. pp.475-485 , 1995.[13] 'Ò,•X 'J,‹à Žq,ˆÉ "¡:•g "™ ŽÚ •« ‹Ø Žû •k ‚É ‚¨‚¯‚¨‚¯ ‚é •l ŠÔ ‚Ì Žè •ae ƒC ƒ" ƒs •[ ƒ_ ƒ" ƒX ‚Ì ‰ð •Í •h,OEv 'ª Ž© "® • § OEä Šw ‰ï˜_‰ï˜_ • ¶ •W , vol</figDesc><table>18 No.2 
+Mar.,2000 
+132 
+
+[1] 
+
+H. 
+Kazerooni: •gHuman-Robot 
+Interaction 
+via 
+the 
+Transfer 
+of 
+
+Power 
+and 
+Information 
+Signals,•h 
+IEEE 
+Transactions 
+on 
+Sys-
+
+tems, 
+Man, 
+and 
+Cybernetics, 
+vol.20, 
+no.2, 
+pp .450-463, 
+1990. 
+
+[ 2] 
+no.6, 
+pp.794-802, 
+1993. 
+
+[3] 
+Y. 
+Yokokohji 
+and 
+T. 
+Yoshikawa:•gBilateral 
+control 
+of 
+Master-
+
+Slave 
+Manipulations 
+for 
+Ideal 
+Kinesthetic 
+Coupling 
+,•h Proceed-
+
+ings 
+of 
+IEEE 
+International 
+Conference 
+on 
+Robotics 
+and 
+Au-
+
+tomations, 
+pp.849-858. 
+1992. 
+
+[4] 
+J.E. 
+Colgate: •gRobust 
+Impedance 
+Shaping 
+Telemanipulation,•h 
+
+IEEE 
+Transactions 
+on 
+Robotics 
+and 
+Automation, 
+vol.9 
+, no.4, 
+
+pp.374-384, 
+1993. 
+
+[5] 
+K. 
+Kosuge, 
+Y. 
+Fujisawa 
+and 
+T. 
+Fukuda: •gControl 
+of Mechani-
+
+cal 
+System 
+with 
+Man-machine 
+Interaction.•h 
+Proceedings 
+of the 
+
+IEEE 
+International 
+Conference 
+on 
+Intelligent 
+Robots 
+and 
+Sys-
+
+tems, 
+pp.87-92, 
+1992. 
+
+[6] 
+K. 
+Kosuge 
+and 
+N. 
+Kazamura: •gControl 
+of a Robot 
+Handling 
+an 
+
+Object 
+in 
+Cooperation 
+with 
+a Human 
+,•h Proceedings 
+of 
+IEEE 
+
+International 
+Workshop 
+on 
+Robot 
+and 
+Human 
+Communication 
+, 
+
+no.1, 
+pp.142-147, 
+1997. 
+
+[7] 
+O.M. 
+Al-Jarrah 
+and 
+Y.F. 
+Zheng: •gArm-manipulator 
+coordina-
+
+tion 
+for 
+load 
+sharing 
+using 
+compliant 
+control,•h 
+Proceedings 
+of 
+
+IEEE 
+International 
+Conference 
+on 
+Robotics 
+and 
+Automation 
+, 
+
+pp.1000-1005, 
+1996. 
+
+[8] 
+O.M. 
+Al-Jarrah 
+and 
+Y.F. 
+Zheng: •gArm-manipulator 
+coordi-
+
+nation 
+for 
+load 
+sharing 
+using 
+Reflexive 
+Motion 
+Control 
+,•h Pro-
+
+ceedings 
+of 
+IEEE 
+International 
+Conference 
+on 
+Robotics 
+and 
+
+Automation, 
+pp.2326-2331, 
+1997. 
+
+[9] 
+R. 
+Ikeura: •gManual 
+Control 
+Approach 
+to 
+the 
+Teaching 
+of 
+a 
+
+Robot 
+Task,•h 
+IEEE 
+Transactions 
+on 
+Systems, 
+Man 
+, and 
+Cy-
+
+bernetics, 
+vol.24, 
+no.9, 
+pp.1339-1346, 
+1994. 
+
+[10] 
+R. 
+Ikeura 
+and 
+H. 
+Inooka: •gVariable 
+impedance 
+control 
+of 
+a 
+
+robot 
+for 
+cooperation 
+with 
+a human,•h 
+Proceedings 
+of IEEE 
+In-
+
+ternational 
+Conference 
+on 
+Robotics 
+and 
+Automation 
+, pp.3097-
+
+3102, 
+1995. 
+
+[11] 
+F.A. 
+Mussa-Ivaldi, 
+N. 
+Hogan 
+and 
+E. 
+Bizzi: •gNeural, 
+mechanical 
+
+and 
+geometrical 
+factors 
+sub-serving 
+arm 
+posture 
+in 
+humans 
+,•h 
+
+Journal 
+of Neuroscience, 
+vol.5, 
+no.10, 
+pp.2732-2743 
+, 1985. 
+
+[12] 
+T. 
+Tsuji, 
+P.G. 
+Morasso, 
+K. 
+Goto 
+and 
+K. 
+Ito: •gHuman 
+hand 
+
+impedance 
+characteristics 
+during 
+maintained 
+posture 
+,•h Biolog-
+
+ical 
+Cybernetics, 
+vol.72. 
+pp.475-485 
+, 1995. 
+
+[13] 
+'Ò,•X 
+'J,‹à 
+Žq,ˆÉ 
+"¡:•g 
+"™ 32, 
+no.2, 
+pp.271-280 
+
+, 1996. 
+
+[14] 
+T. 
+Tsuji: •gHuman 
+arm 
+impedance 
+multi-joint 
+movements,•h 
+
+Self-Organization, 
+Computational 
+Maps, 
+and 
+Motor 
+Control. 
+
+P. Morasso 
+(Editor), 
+Elsevier 
+Science 
+B.V., 
+pp.357-381, 
+1997 
+. 
+
+[15] 
+H. 
+Gomi 
+and 
+R. 
+Osu: •gTask-Dependent 
+Viscoelasticity 
+of 
+Hu-
+
+man 
+Multijoint 
+Arm 
+and 
+Its 
+Spatial 
+Characteristics 
+for 
+Interac-
+
+tion 
+with 
+Environments,•h 
+The 
+Journal 
+of 
+Neuroscience 
+, vol.18, 
+
+no.21, 
+pp.8965-8978, 
+1998. </table></figure>
+		</body>
+		<back>
+			<div type="annex">
+<div xmlns="http://www.tei-c.org/ns/1.0"> <ref type="bibr">[16]</ref> <p>N.</p><p>Hogan [ </p></div>			</div>
+			<div type="references">
+
+				<listBibl/>
+			</div>
+		</back>
+	</text>
+</TEI>

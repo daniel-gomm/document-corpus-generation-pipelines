@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T01:34+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Editorial Knowledge-Assisted Media Analysis for Interactive Multimedia Applications</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Hindawi Publishing Corporation</publisher>
+				<availability status="unknown"><p>Copyright Hindawi Publishing Corporation</p>
+				</availability>
+				<date type="published" when="2007">2007</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Izquierdo</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Electronic Engineering</orgName>
+								<orgName type="institution">University of London</orgName>
+								<address>
+									<addrLine>Mile End Road</addrLine>
+									<postCode>E1 4NS</postCode>
+									<settlement>London</settlement>
+									<region>Queen Mary</region>
+									<country key="GB">UK</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hyoung</forename><forename type="middle">Joong</forename><surname>Kim</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="department">Department of Control and Instrumentation Engineering</orgName>
+								<orgName type="institution">Kangwon National University</orgName>
+								<address>
+									<addrLine>192 1 Hyoja2 Dong, Kangwon Do 200 701</addrLine>
+									<country key="KR">South Korea</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Thomas</forename><surname>Sikora</surname></persName>
+							<affiliation key="aff2">
+								<orgName type="department">Communication Systems Group</orgName>
+								<orgName type="institution">Technical University Berlin</orgName>
+								<address>
+									<addrLine>Einstein Ufer 17</addrLine>
+									<postCode>10587</postCode>
+									<settlement>Berlin</settlement>
+									<country key="DE">Germany</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Editorial Knowledge-Assisted Media Analysis for Interactive Multimedia Applications</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">EURASIP Journal on Advances in Signal Processing</title>
+						<imprint>
+							<publisher>Hindawi Publishing Corporation</publisher>
+							<biblScope unit="volume">36404</biblScope>
+							<date type="published" when="2007">2007</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1155/2007/36404</idno>
+					<note type="submission">Received 30 December 2007; Accepted 30 December 2007</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Advances in technologies for new forms of interactive multimedia services are driving the emergence of a digital world which is transforming all aspects of how people consume and interact with digital content. This emergent digital world is characterised by online access to knowledge resources and services independently from location and time. Here, digital services evolve in response to user behaviour, and technology adapts itself to user needs. As a consequence, new forms of interactive user-centred multimedia services materialise originating in turn new business models and economic growth. These services are underpinned by the confluence of different research fields including knowledge management, data mining, and signal processing. The convergence of these areas is the key to many applications including interactive TV, networked medical imaging, visionbased surveillance, and multimedia visualisation, navigation, search, and retrieval. The latter is a crucial application since the exponential growth of audiovisual data, along with the critical lack of tools to record the data in a well-structured form, is rendering vast portions of available useless content.</p><p>This special issue reports the work related to the development of innovative paradigms and tools that are driving technological advances and producing new interactive knowledge-assisted multimedia services. After a thorough review process, a total of nine papers were selected.</p><p>The first three papers address the challenging problem of analysis for annotation and retrieval. In their paper, C.-C. Chiang et al. propose a learning state approach for image retrieval. The authors design a scheme of region-based image representation based on concept units, which are integrated with different types of feature spaces and with different region scales of image segmentation. In the second paper by Q. Zhang and E. Izquierdo, an object-oriented approach for semantic-based image retrieval is presented. The goal is to identify key patterns of specific objects in the training data and to use them as object signatures. Two important aspects of semantic-based image retrieval are considered: retrieval of images containing a given semantic concept and fusion of different low-level features to achieve higher discrimination power in the underlying classification problem. A multiobjective optimisation technique is used to find a suitable multidescriptor space in which several low-level image primitives can be fused. The paper by G. Zaji´cZaji´c et al. describes a content-based image retrieval system with relevance feedback. The approach uses dimensionality reduction. Clustering is achieved by comparison of magnitudes of descriptor components in a query.</p><p>The next two papers are dedicated to the more specific problem of image classification. G. Papadopoulos et al. combine global and local image information to achieve knowledge-assisted image classification. The proposed learning approach exploits knowledge in the form of ontology. The ontology specifies the domain of interest, its subdomains, the concepts related to each subdomain, as well as contextual information. Support Vector Machines are employed in order to provide image classification to the ontology subdomains based on global image descriptions. In the second paper R. Srikantaswamy and R. Samuel propose a fast and efficient algorithm for segmenting a face suitable for recognition from a video sequence. The cluttered background is first subtracted from each frame, in the foreground regions a coarse face region is found using skin colour. Then using a dynamic template matching approach, the face is efficiently segmented.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Advances in technologies for new forms of interactive multimedia services are driving the emergence of a digital world which is transforming all aspects of how people consume and interact with digital content. This emergent digital world is characterised by online access to knowledge resources and services independently from location and time. Here, digital services evolve in response to user behaviour, and technology adapts itself to user needs. As a consequence, new forms of interactive user-centred multimedia services materialise originating in turn new business models and economic growth. These services are underpinned by the confluence of different research fields including knowledge management, data mining, and signal processing. The convergence of these areas is the key to many applications including interactive TV, networked medical imaging, visionbased surveillance, and multimedia visualisation, navigation, search, and retrieval. The latter is a crucial application since the exponential growth of audiovisual data, along with the critical lack of tools to record the data in a well-structured form, is rendering vast portions of available useless content.</p><p>This special issue reports the work related to the development of innovative paradigms and tools that are driving technological advances and producing new interactive knowledge-assisted multimedia services. After a thorough review process, a total of nine papers were selected.</p><p>The first three papers address the challenging problem of analysis for annotation and retrieval. In their paper, C.-C. Chiang et al. propose a learning state approach for image retrieval. The authors design a scheme of region-based image representation based on concept units, which are integrated with different types of feature spaces and with different region scales of image segmentation. In the second paper by Q. Zhang and E. Izquierdo, an object-oriented approach for semantic-based image retrieval is presented. The goal is to identify key patterns of specific objects in the training data and to use them as object signatures. Two important aspects of semantic-based image retrieval are considered: retrieval of images containing a given semantic concept and fusion of different low-level features to achieve higher discrimination power in the underlying classification problem. A multiobjective optimisation technique is used to find a suitable multidescriptor space in which several low-level image primitives can be fused. The paper by G. Zaji´cZaji´c et al. describes a content-based image retrieval system with relevance feedback. The approach uses dimensionality reduction. Clustering is achieved by comparison of magnitudes of descriptor components in a query.</p><p>The next two papers are dedicated to the more specific problem of image classification. G. Papadopoulos et al. combine global and local image information to achieve knowledge-assisted image classification. The proposed learning approach exploits knowledge in the form of ontology. The ontology specifies the domain of interest, its subdomains, the concepts related to each subdomain, as well as contextual information. Support Vector Machines are employed in order to provide image classification to the ontology subdomains based on global image descriptions. In the second paper R. Srikantaswamy and R. Samuel propose a fast and efficient algorithm for segmenting a face suitable for recognition from a video sequence. The cluttered background is first subtracted from each frame, in the foreground regions a coarse face region is found using skin colour. Then using a dynamic template matching approach, the face is efficiently segmented.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">EURASIP Journal on Advances in Signal Processing</head><p>The last four papers selected for the special issue address different yet important areas of knowledge-based media analysis. In their paper, J. ´ Calic and W. Campbell focus on the visualisation of video summaries. The authors present a system for compact and intuitive video summarisation aimed at both high-end professional production environments and small-screen portable devices. In the next paper, S.-S. Hung and D. Liu propose a class of view-based projection-generation methods for mining various frequent sequential traversal patterns in the virtual environments. The frequent sequential traversal patterns are used to predict the user navigation behaviour and, through a clustering scheme, help reduce disk access time with proper patterns placement into disk blocks. A prototype system for selective dissemination of broadcast news is presented in the paper by R. Amaral et al. The goal of this work is to study the impact of audio preprocessing errors on the speech recognition module and the impact of speech recognition errors on segmentation and indexation. The last paper by H. Bredin and G. Chollet reviews recent works in the field of audiovisual speech. More specifically it looks at techniques developed to measure the level of correspondence between audio and visual speech. It overviews the most common audio and visual speech frontend processing, transformations performed on audio, visual, or joint audiovisual feature spaces and the actual measure of correspondence between audio and visual speech.</p></div>		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>This special issue has assembled a small sample of papers originating from well-known research groups. The contributing authors were instrumental in the completion of the special issue and the Guest Editors would like to thank all of them. The anonymous referees played a key role in the review and selection process ensuring the special issue includes only the submissions of the highest technical quality.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Izquierdo Hyoung Joong Kim</head><p>Thomas Sikora</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl/>
+			</div>
+		</back>
+	</text>
+</TEI>

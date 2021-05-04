@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-05T09:02+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Error modeling and Sensitivity Analysis of 5-DOF Parallel Tripod Head</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Dianfan</forename><surname>Zhang</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electric Engineering</orgName>
+								<orgName type="institution">Yanshan University</orgName>
+								<address>
+									<postCode>066004</postCode>
+									<settlement>Qinhuangdao</settlement>
+									<country>China, PRC</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jiang</forename><surname>Hu</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electric Engineering</orgName>
+								<orgName type="institution">Yanshan University</orgName>
+								<address>
+									<postCode>066004</postCode>
+									<settlement>Qinhuangdao</settlement>
+									<country>China, PRC</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yu</forename><surname>Rong</surname></persName>
+							<affiliation key="aff1">
+								<orgName type="institution">Hebei Normal University Science &amp; Technology</orgName>
+								<address>
+									<postCode>066004</postCode>
+									<settlement>Qinhuangdao</settlement>
+									<region>PRC</region>
+									<country key="CN">China</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Xiaoman</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electric Engineering</orgName>
+								<orgName type="institution">Yanshan University</orgName>
+								<address>
+									<postCode>066004</postCode>
+									<settlement>Qinhuangdao</settlement>
+									<country>China, PRC</country>
+								</address>
+							</affiliation>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Shuhong</forename><surname>Cheng</surname></persName>
+							<affiliation key="aff0">
+								<orgName type="department">School of Electric Engineering</orgName>
+								<orgName type="institution">Yanshan University</orgName>
+								<address>
+									<postCode>066004</postCode>
+									<settlement>Qinhuangdao</settlement>
+									<country>China, PRC</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Error modeling and Sensitivity Analysis of 5-DOF Parallel Tripod Head</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>parallel mechanism</term>
+					<term>kinematics</term>
+					<term>error modeling</term>
+					<term>sensitivity analysis</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Abstract. Aiming at 5-dof parallel tripod head, the integrated parameter modeling of parallel mechanism with less degree of freedom is researched in this paper. Firstly, the kinematics parameters analysis of each component of 5-dof parallel mechanism is carried out and kinematics model of 5-dof mechanism is established, mathematical modeling of 5-dof mechanism error then is systematically proposed with integrated modeling method within the identical framework, which constructs the corresponding relationship between end-effector's pose errors and geometric error and clearly discloses the influence of geometric error source on end effector's uncontrollable errors. Finally, by the given the structure parameters, distribution rule of the uncontrollable errors coming from different height of workspace can be figured out with Monte Carlo simulation method, sensitivity analysis can then be carried out to diminish these errors. Error sensitivity represented by the Jacobin matrix shows that ce e is extremely sensitive to 1 b δ . Moreover, in order to obtain the required accuracy, standard. deviation caused by 1 b δ is limited within0.02mm/m, tolerance of 1 b δ should precisely be 0.0449mm. Consequently, uncontrollable errors caused by the UPS chains of the 5-dof parallel tripod head, which can not be compensated by the theoretical method, need more stringent restrictions in manufacturing and assembly stages.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Vision system is a major way to obtain information from outside, under the background of computer technology and artificial intelligent technology, computer vision comes to be a new subject, it has began to develop towards strong practicability, such as active vision, active measurement and multisensor fusion. For the precise forecasting, tracking, detection and segmentation respecting target, the research and invention of vision tripod head have got some achievement. Parallel mechanism <ref type="bibr" target="#b0">[1]</ref>are utilized widely in computer vision tripod head due to their advantages of few drive elements, low cost and compact structure <ref type="bibr" target="#b1">[2]</ref>. The 5-dof visual monitoring parallel tripod head based on TriVariant mechanism is proposed in this paper, it has the advantages of simple and compact structure, strong bearing capacity, well stability, small accumulated error <ref type="bibr" target="#b2">[3]</ref>, error can be compensated and large working space of end effector. Besides, the moving platform can change and adjust the motion states by constraint driven limb structure resulted from good dexterity, driving limb fails to impose constraint and interference on moving platform. Furthermore, kinematics limb is relatively less and the drive near the base is easy to control. Nevertheless, in order to obtain clearer object in visual monitoring process, geometric precision of mechanism need higher requirements <ref type="bibr" target="#b3">[4]</ref><ref type="bibr" target="#b4">[5]</ref>. Therefore, the geometric precision analysis <ref type="bibr" target="#b5">[6]</ref> is quite important in terms of 5-dof parallel tripod head. This paper puts forward a error modeling <ref type="bibr" target="#b6">[7]</ref> methodology based on screw <ref type="bibr" target="#b7">[8]</ref> and establishes a mapping model between geometric error and end effector's pose error for 5-dof parallel mechanism by integrated modeling method to analyze the influence of geometric errors on end effector's pose error.Besides, clearly separate the geometric error source of effector's uncontrollable error <ref type="bibr" target="#b8">[9]</ref>.</p><p>Architecture description and degree of freedom analysis Architecture description. The 5-dof parallel tripod head mentioned in section 1 is 2-UPS&amp;UPU structure, which is shown in Figs. 1. This mechanism consists of a base, a moving platform(end effector), a UPU chain and two UPS chains, these three limbs connecting the moving platform with the base.  </p><formula xml:id="formula_0">=     = −     −   = = (1)</formula><p>Where u i , v i , w i is unit vector. The orientation of each limb can be denoted by</p><formula xml:id="formula_1">x arcsin( ), arctan( ) iy i i i iz w w w γ ϕ − = = (2)</formula><p>In proposed kinematic model, <ref type="bibr" target="#b2">3</ref> O is chosen as the reference point that can provide necessary input information to servo control and provide essential mathematical model to subsequent analysis.</p><p>The closed-loop constraint equations under the fixed coordinate frame 3 3 3 3 P x y z − can be obtained by . The 3 l and 3 s can be derived based on Eqs. <ref type="formula">(3)</ref> and <ref type="formula">(4)</ref> for UPScan be represented Based on Eqs (2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Error sources analysis and error modeling</head><p>For error modeling, establishing reference coordinate frame</p><formula xml:id="formula_2">3 { } P R</formula><p>with origin point P 3 in the base, z-axis is perpendicular to plane P and the direction of x-axis points middle point of <ref type="bibr" target="#b0">1</ref>   </p><formula xml:id="formula_3">        = = = =         × ×         ， ，<label>(15)</label></formula><formula xml:id="formula_4">− × − ×         = = = =                 ，<label>(16)</label></formula><p>The error model of UPU chain is derived through performing inner product simultaneously both sides of Eqs. <ref type="formula">(11)</ref>   of $ tc should be paid more attentions in manufacturing and assembly stage in order to reduce or eliminate the effect to pose error.</p><formula xml:id="formula_5">− ×         = = = =                 ， ，<label>(19)</label></formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Sensitivity analysis</head><p>Sensitivity analysis model. To investigate the influences of each geometric error on the pose accuracy of the moving platform, a probability model should be proposed. e ,and error transformation matrix between the two vector is denoted by ce J . Now some sensitivity indices can evaluate the influences of each geometric error on the pose errors that can not be uncompensated of moving platform, which are</p><formula xml:id="formula_6">( ) / k k V dV V µ µ = ∫ (32) 3 2 1 k ceij i J µ = = ∑ (33)</formula><p>note that k µ denotes the sensitivity of e relative to ce e , which represent the standard deviation of e caused by the unit standard deviation of ce e . k µ denotes the universe value of k µ . Sensitivity analysis. Based on the indices defined by Eqs.(31), the sensitivity analysis can be carried out for the mechanism shown in <ref type="figure">Fig.2</ref>. The investigated workspace, which takes <ref type="bibr" target="#b2">3</ref> O as reference point, is a cylinder area of 500 </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Fig.1 Sturcture of 2ups&amp;upu mechanical leg</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>l , i s represents length and unit vector of limb i respectively, and 0i o indicate the position vector of point i o under the moving coordinate frame 3</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head></head><label></label><figDesc>of the end is denoted by e , geometric error sources vector is denoted by ce</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>,</head><label></label><figDesc>value is 0.0352mm/m, minimum value is 0.0329mm/m, and average value reaches 0.0340mm/m. The global sensitivity coefficient that ce e is about geometrical parameter errors 1 b δ , 2 b δ and a δ are 1 1.334 / kb rad m µ = , 2 1.183 / kb rad m µ = , 1.291 / ka rad m µ = , As shown in Fig. 4, 1 b δ has the greatest influence on ce e .based on 3σ criterion, the tolerance of 1 b δ should be calculated as 1 ( ) (3 0.02 / 1.334) 0.0449 T b mm δ = ± × = . 1437 Table 1 The effects of constraint limb on the position error of end effector Geometric error Standard deviation /mm Maximum orientation error of the end effector mm/m 1 b δ 0.01 0.0352 2 b δ 0.01 0.0329 a δ 0.02 0.0340 0.0360 0.0340 0.0320 0.0300 2 0 0 ce e orientation error m m / m 200 -2 0 0 0 -200 0 400 -400 X Y Fig. 4 Distribution of uncontrolled error Conclusions i) Comparing with the existing error model based on space vector chain and vector differential method, the integrated error model, which is on account of variational screw for parallel mechanism, reflects more accurately nonlinear mapping relation between pose error and geometric error. ii) The sensitivity indice k µ can be defined in the sense of statistics. The error brought by the two non-intersecting axes of universal joint, the position error result from the zero point of universal joint and the error in torsional angle of sleeve guide, all of which have great influences on the end effector's errors by the sensitivity analysis. iii) According sensitivity analysis, the error sources 1 b δ , 2 b δ a δ p δ and o δ have remarkable effect on the uncontrollable error, and ce e is sensitive to the linear error result from 1 b δ . Thus, the tolerance of 1 b δ must meet the design requirements in advance.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head></head><label></label><figDesc>is rotated about z-axis by β i . In UPU chain, reference coordinate frame0.3 { } R coincides with the system 3 { } P R . For the sake of describing the joint geometry error of each limb i ( ) 3 , 2 , 1 = i , the origin point . ja i P of body-fixed coordinate frame . { } ja i R fixed on the parts consisting of the joint, z ja.i -axis coincides with the joint axis, x ja.i -axis is perpendicular to z ja+1.i -axis. Let point 1.i P is the intersection point of z 1.i -axis and x 1.i -axis, then . ja i P is intersection point of z ja.i -axis and x ja-1.i -axis.</figDesc><table>2 
+PP . Moreover, 
+instantaneous reference coordinate system 
+
+3 
+
+{ } 
+
+O 
+
+R 
+
+can be obtained whose coordinate axis is parallel 
+to that of 
+
+3 
+
+{ } 
+
+P 
+
+R 
+
+instantaneously. In the ith UPS chain ( 
+) 
+
+2 
+, 
+1 
+= 
+i 
+
+, system 0. 
+
+{ } 
+
+i 
+
+R 
+
+can be got through the 
+system 
+
+3 
+
+{ } 
+
+P 
+
+R 
+
+{ } 
+R 
+
+coincides with the system 
+
+3 
+
+{ } 
+
+3 
+, 
+2 
+, 
+1 
+= 
+i 
+
+, the origin point . 
+
+ja i 
+
+P 
+
+of body-fixed coordinate frame 
+
+. 
+
+{ } 
+
+ja i 
+
+R 
+
+ja i 
+
+P 
+
+6 
+
+. . 
+. . 
+. 
+1 
+
+ˆ 
+$ 
+$ 
+$ 
+1, 2 
+
+t 
+a ja i ta ja i 
+G i 
+ja 
+
+i 
+
+θ 
+
+= 
+
+=∆ 
++ 
+= 
+
+∑ 
+
+， 
+
+(9) 
+
+1 
+6 
+
+6 
+1 
+1 
+6 
+6 
+. 
+. 
+. 
+7. 
+7. 
+. 
+. 
+1 
+
+$ 
+
+o 
+o 
+ja 
+
+ja 
+ja 
+G i 
+ja i 
+ja i 
+i 
+i 
+g 
+i 
+g i 
+ja 
+
+d 
+P 
+d 
+P 
+
+′ 
+′ 
+− 
+
+− 
+− 
+
+= 
+
+= 
+Α 
+∆ +Α 
+∆ 
+
+∑ 
+
+(10) 
+
+5 
+
+. .3 
+. .3 
+.3 
+1 
+
+ˆ 
+$ 
+$ 
+$ 
+
+t 
+a ja 
+ta ja 
+G 
+ja 
+
+θ 
+
+= 
+
+= ∆ 
++ 
+
+∑ 
+
+(11) 
+
+1 
+3 
+
+5 
+1 
+1 
+5 
+5 
+.3 
+.3 
+.3 
+6.3 
+6.3 
+.3 
+.3 
+1 
+
+$ 
+
+o 
+o 
+ja 
+
+ja 
+ja 
+G 
+ja 
+ja 
+g 
+g 
+ja 
+
+d 
+P 
+d 
+P 
+
+′ 
+′ 
+− 
+
+− 
+− 
+
+= 
+
+= 
+Α 
+∆ +Α 
+∆ 
+
+∑ 
+
+(12) 
+
+Doing inner product simultaneously both sides of Eqs. (9) by 
+
+,2, 
+
+$ wa K and then by 
+
+,3, 
+
+$ wa K , the 
+general error model for UPS chain are given by 
+
+.1.1 
+.1.2 
+.3.1 
+.3.2 
+
+$ 
+$ 
+$ 
+$ 
+
+T 
+T 
+T 
+T 
+T 
+xa 
+wa 
+wa 
+wa 
+wa 
+
+J 
+ 
+ 
+=  
+ 
+
+(13) 
+
+.1.1 
+.1.1 
+.1.2 
+.1.2 
+3.1 
+.3.1 
+3.2 
+.3.2 
+
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+[$ 
+$ 
+$ 
+$ 
+$ $ 
+$ $ ] 
+
+T 
+T 
+T 
+T 
+pa 
+wa 
+ta 
+wa 
+ta 
+wa 
+ta 
+wa 
+ta 
+
+J 
+diag 
+= 
+
+(14) 
+
+2.1 
+2.2 
+3.1 
+3.2 
+.1.1 
+.1.2 
+.3.1 
+.3.2 
+1 
+2.1 
+2 
+2.2 
+
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+$ 
+$ 
+,$ 
+$ 
+0 
+0 
+
+wa 
+wa 
+wa 
+wa 
+
+s 
+s 
+s 
+s 
+o s 
+o s 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" validated="false"><head></head><label></label><figDesc>error screw $ tc can not be compensated. Thus, the geometric error sources ec</figDesc><table>where 1 1.3 2.3 
+
+n s s 
+= 
+
+× . 
+
+the general error model of parallel mechanism can be expressed as 
+
+$ 
+
+a ta 
+pa 
+a 
+ae ae 
+
+J 
+J 
+E 
+
+θ 
+e 
+
+= 
+∆ + 
+
+(20) 
+
+$ 
+
+c tc 
+ce ce 
+
+J 
+
+E e 
+
+= 
+
+(21) 
+in which ae 
+e and ce 
+e is the given independent geometric error sources. Some items of Eq. (20) 
+and (21) can be explained as follows: .1.1 
+
+.1.2 
+.3.1 
+.3.2 
+.3.3 
+
+ˆ 
+$ 
+$ 
+$ 
+$ 
+$ 
+
+T 
+T 
+T 
+T 
+T 
+T 
+a 
+wa 
+wa 
+wa 
+wa 
+wa 
+
+J 
+ 
+ 
+=  
+ 
+
+(22) 
+
+c.1.3 
+
+ˆ 
+$ 
+
+T 
+T 
+c 
+w 
+
+J  
+ 
+=  
+ 
+
+(23) 
+
+.1.1 
+.1.1 
+.1.2 
+.1.2 
+3.1 
+.3.1 
+3.2 
+.3.2 
+.3.3 
+.3.3 
+
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+diag[$ 
+$ 
+$ 
+$ 
+$ $ $ $ 
+$ 
+$ ] 
+
+T 
+T 
+T 
+T 
+T 
+pa 
+wa 
+ta 
+wa 
+ta 
+wa 
+ta 
+wa 
+ta 
+wa 
+ta 
+
+J = 
+
+(24) 
+
+.1.1 
+1 
+.1.2 
+1 
+.3.1 
+1 
+.3.2 
+2 
+.3.3 
+3 
+
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+ˆ 
+[ $ 
+$ 
+$ 
+$ 
+$ 
+] 
+
+T 
+T 
+T 
+T 
+T 
+ea 
+wa 
+wa 
+wa 
+wa 
+wa 
+
+E 
+diag 
+E 
+E 
+E 
+E 
+E 
+= 
+
+(25) 
+
+0. 
+1. 
+5. 
+
+0 
+1 
+5 
+1. 
+2. 
+6. 
+
+[ 
+.. 
+], 
+1, 2,3 
+
+o 
+o 
+o 
+i 
+i 
+i 
+
+k 
+i 
+i 
+i 
+g 
+g 
+g 
+
+E 
+d P d P 
+d P k 
+
+′ 
+′ 
+′ 
+
+= Α 
+Α 
+Α 
+= 
+
+(26) 
+
+when 
+
+3 
+
+k = , that is to say, the analyzed object is UPU chain 
+
+.1.3 
+
+ˆ 
+[$ 
+] 
+
+T 
+ce 
+wc 
+k 
+
+E 
+diag 
+E 
+= 
+
+(27) 
+
+1 
+2 
+3 
+4 
+5 
+
+( 
+) 
+
+T 
+T 
+T 
+T 
+T T 
+ae 
+
+e 
+e 
+e 
+e 
+e 
+e 
+
+= 
+
+(28) 
+
+6 
+
+( 
+) 
+
+T 
+T 
+T 
+ce 
+ae 
+
+e 
+e 
+e 
+
+= 
+
+(29) 
+In light of Eqs. (19), error screw $ ta can be compensated by kinematic calibration that adjusting 
+kinematic error of active joints, let $ 0 
+ta = , we have 
+
+1 
+a 
+pa ae ae 
+
+J E 
+
+θ 
+e 
+
+− 
+
+∆ = − 
+
+(30) 
+However, e 
+
+</table></figure>
+
+			<note place="foot">© 2015. The authors -Published by Atlantis Press</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgements</head><p>The research was supported by The Youth Natural Science Foundation of Hebei, China (Grant: F2012203031) and The Excellent Going Abroad Experts' Training Program in Hebei Province, China.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Error Analysis and Distribution of 6-SPS and 6-PSS Reconfigurable Parallel Manipulators</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Yao Rui</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Tang Xiaoqiang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Li Tiemin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Tsinghua Science and Technolocy</title>
+		<imprint>
+			<biblScope unit="volume">15</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="547" to="554" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Kinematics Analysis of Spatial 4-SPS/CU Parallel Mechanism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wang</forename><surname>Gengxiang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yuan</forename><surname>Daning</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Liu</forename><surname>Hongzhao</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions of the Chinese Society for Agricultural Machinery</title>
+		<imprint>
+			<biblScope unit="volume">43</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="208" to="212" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Kinematics Analysis of 4-UPS_RPS Spatial 5-DOF Parallel Mechanism</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Chen</forename><surname>Xiulong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Sun</forename><surname>Xianyang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Deng</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Transactions of the Chinese Society for Agricultural Machinery</title>
+		<imprint>
+			<biblScope unit="volume">44</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="257" to="261" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Accuracy analysis of 3-DOF parallel manipulator</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mei F</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Zhao</forename><surname>Xh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Tianjin University of Technology</title>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="15" to="17" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Motion error modeling and compensating for 6_PUS parallel robot of wind tunnel support system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Tan</forename><surname>Xingqiang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Zhang</forename><surname>Jian</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Transactions of the Chinese Society for Agricultural Machinery</title>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="volume">45</biblScope>
+			<biblScope unit="page" from="334" to="346" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Error modeling of 3-RSR parallel robot based on D-H transformation matrix</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Yang</forename><surname>Li Ruiqin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Bin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Measurement Science and Instrumentation</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="53" to="60" />
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Error Modeling and Sensitivity Analysis of Spherical 5R Parallel Manipulator Based on D-H Matrix</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Li</forename><surname>Yongquan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Zhang</forename><surname>Lijie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Guo</forename><surname>Zhimin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China Mechanical Engineering</title>
+		<imprint>
+			<biblScope unit="volume">23</biblScope>
+			<biblScope unit="issue">12</biblScope>
+			<biblScope unit="page" from="1470" to="1474" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Identification of structure errors of 3-PRS-XY mechanism with Regularization method.Mechanism and Machine Theory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Huang</forename><surname>Peng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wang</forename><surname>Wang Jingsong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Liping</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="volume">46</biblScope>
+			<biblScope unit="page" from="927" to="944" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Statics Optimum Design of a New Parallel Robot</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wu</forename><surname>Mengli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wang</forename><surname>Liwen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">China Mechanical Engineering</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">19</biblScope>
+			<biblScope unit="page" from="2308" to="2313" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

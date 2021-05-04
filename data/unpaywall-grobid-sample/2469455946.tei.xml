@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T08:40+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Learning a Distance Metric from Relative Comparisons between Quadruplets of Images</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Springer Verlag</publisher>
+				<availability status="unknown"><p>Copyright Springer Verlag</p>
+				</availability>
+				<date type="published" when="2016">2016</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marc</forename><forename type="middle">T</forename><surname>Law</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nicolas</forename><surname>Thome</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Matthieu</forename><surname>Cord</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marc</forename><forename type="middle">T</forename><surname>Law</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nicolas</forename><surname>Thome</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Matthieu</forename></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marc</forename><forename type="middle">T</forename><surname>Law</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nicolas</forename><surname>Thome</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Matthieu</forename><surname>Cord</surname></persName>
+						</author>
+						<title level="a" type="main">Learning a Distance Metric from Relative Comparisons between Quadruplets of Images</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">International Journal of Computer Vision</title>
+						<imprint>
+							<publisher>Springer Verlag</publisher>
+							<biblScope unit="page" from="1" to="30"/>
+							<date type="published" when="2016">2016</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.1007/s11263-016-0923-4&gt;</idno>
+					<note type="submission">Submitted on 18 Jul 2016 Received: date / Accepted: date</note>
+					<note>HAL Id: hal-01346190 https://hal.sorbonne-universite.fr/hal-01346190 HAL is a multi-disciplinary open access archive for the deposit and dissemination of sci-entific research documents, whether they are pub-lished or not. The documents may come from teaching and research institutions in France or abroad, or from public or private research centers. L&apos;archive ouverte pluridisciplinaire HAL, est destinée au dépôt et à la diffusion de documents scientifiques de niveau recherche, publiés ou non, émanant des établissements d&apos;enseignement et de recherche français ou étrangers, des laboratoires publics ou privés. To cite this version: Noname manuscript No. (will be inserted by the editor)</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Metric Learning · Relative Attributes · Web Mining · Change Detection</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Abstract This paper is concerned with the problem of learning a distance metric by considering meaningful and discriminative distance constraints in some contexts where rich information between data is provided. Classic metric learning approaches focus on constraints that involve pairs or triplets of images. We propose a general Mahalanobis-like distance metric learning framework that exploits distance constraints over up to four different images. We show how the integration of such constraints can lead to unsupervised or semi-supervised learning tasks in some applications. We also show the benefit on recognition performance of this type of constraints, in rich contexts such as relative attributes, class taxonomies and temporal webpage analysis.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Image representation for classification has been deeply investigated in recent years <ref type="bibr" target="#b12">[13,</ref><ref type="bibr" target="#b46">47]</ref>. For instance, the traditional Bag-of-Visual-Words representation <ref type="bibr" target="#b53">[54]</ref> has been extended for the coding step <ref type="bibr" target="#b20">[21,</ref><ref type="bibr" target="#b63">64]</ref> as well as for the pooling <ref type="bibr" target="#b3">[4]</ref>, with bio-inspired models <ref type="bibr" target="#b49">[50,</ref><ref type="bibr" target="#b57">58]</ref>. Nonetheless, the choice of a good similarity function is also crucial to compare, classify and retrieve images. Extensive work has been done (see the survey <ref type="bibr" target="#b33">[34]</ref>) to learn a (dis)similarity function that is relevant to some specific tasks. One of the most standard forms of (dis)similarity functions used for learning is distance (pseudo-)metric.</p><p>Distance metric learning has been proven to be useful in many Computer Vision applications, such as image classifiSorbonne Universités, UPMC Univ Paris 06, UMR 7606, LIP6, F-75005, Paris, France E-mail:</p><p>Marc.Law@lip6.fr, Nicolas.Thome@lip6.fr, Matthieu.Cord@lip6.fr cation <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b19">20,</ref><ref type="bibr" target="#b44">45]</ref>, image retrieval <ref type="bibr" target="#b11">[12]</ref>, face verification or person re-identification <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b45">46]</ref>.</p><p>Each metric learning problem depends on both the application task and the way the input data is provided. In other words, it depends on the input data representation (e.g., unimodal or multimodal), the type of labels and/or relations between samples, the formulation of the metric, the resulting optimization problem and its computational complexity.</p><p>Binary (boolean) similarity labels on image pairs <ref type="bibr" target="#b62">[63]</ref> are usually provided for the learning. In the context of face verification <ref type="bibr" target="#b21">[22]</ref>, binary similarity labels establish whether two images should be considered as equivalent (i.e., the two face images represent the same person) or not. Metrics are learned in order to minimize dissimilarities between similar pairs while separating dissimilar ones.</p><p>Recently, some attempts have been made to go beyond learning metrics using only pairwise similarity information. For instance, constraints that involve triplets of images have been considered to learn metrics <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b34">35,</ref><ref type="bibr" target="#b61">62]</ref>. These attempts follow the work of <ref type="bibr" target="#b31">[32]</ref> that made the argument that humans are better at providing relative (hence triplet-wise) comparisons than absolute (i.e., pairwise) comparisons. Notably, the most natural way to generate triplet constraints is to exploit, if available, class membership information. The goal is then to have distances between images in the same class smaller than distances between images from different classes. More sophisticated triplet constraints can also be inferred from richer relationships. For example, Verma et al. <ref type="bibr" target="#b59">[60]</ref> learn a similarity that depends on a class hierarchy: an image should be closer to another image from a sibling class than to any image from a more distant class in the hierarchy. In other contexts, such as learning attributes, one can exploit specific rankings between classes in order to learn a semantical metric and representation space <ref type="bibr" target="#b39">[40,</ref><ref type="bibr" target="#b47">48]</ref>.</p><p>In this paper, we focus on these rich contexts for learning similarity metrics. Instead of pairwise or triplet-wise tech- niques, we propose to investigate meaningful relations between quadruplets of images. We first motivate why this type of constraints may be useful in different contexts. For this purpose, we illustrate in <ref type="figure" target="#fig_0">Fig. 1</ref> our approach in the context of relative attributes <ref type="bibr" target="#b47">[48]</ref> for which the goal is to learn a projection of visual image features into a high-level semantic space. Each dimension of this semantic space corresponds to the degree of presence of a given attribute (e.g., the presence of nature or large objects in the images). Four scene classes are considered in the figure: tall building (T ), inside city (I), street (S) and open country (O). Class membership information and relative orderings on classes for the attributes "Natural" and "Large objects" are also provided.</p><p>In <ref type="bibr" target="#b47">[48]</ref>, they want the projected representations of images in the semantic space to satisfy the relative attribute constraints defined over their respective classes. They consider only inequality constraints (i.e., (e) (f ): the presence of an attribute is stronger in class (f ) than in class (e)) and pairwise equivalence constraints (i.e., (f ) ∼ (g): the presence of an attribute is equivalent in class (f ) and class (g)).</p><p>In <ref type="figure" target="#fig_0">Fig. 1</ref>, the degrees of presence of nature and large objects in the street image and the inside-city image are clearly not equivalent. Learning a projection that enforces an equivalence (i.e., the same position) of these two images in the high-level semantic space, as proposed in <ref type="bibr" target="#b47">[48]</ref>, then seems limited. We argue in this paper that this type of absolute similarity information between the two images is restrictive, and thus noisy. Alternatively, a natural way to relax and exploit this equivalence information is to majorize the difference of attribute presence by considering pairs of classes for which the difference of attribute presence is greater. Such pairs of classes are easy to find when the following ordering is given: (e) (f ) ∼ (g) (h). The difference between (f ) and (g) is smaller than the difference between (h) and (e). Since the proposed relaxed constraints better describe relative orderings between the different images, they are more robust to noisy information. This paper is an extension of our own previous work <ref type="bibr" target="#b39">[40]</ref> where we proposed to exploit constraints that involve quadruplets of images to learn simple forms of distance metrics. We propose here to enrich the model in <ref type="bibr" target="#b39">[40]</ref> by combining quadruplet-wise with pairwise constraints to learn a metric. In contexts where quadruplet-wise constraints can be automatically generated, this allows to learn a metric in an semisupervised way. We also extend our model to learn a more general form of Mahalanobis distance metric. We present optimization techniques to deal with a large number of constraints and make the learning scheme more powerful. We extend the experiments in order to study the impact of the proposed constraints on recognition performance in different contexts.</p><p>The remainder of the paper is structured as follows. Section 2 presents related work on distance metric learning. We describe our learning problem in Section 3 and its optimization in Section 4. In Sections 5 to 7, we present experiments on temporal webpage analysis, class taxonomy and relative attribute applications. Finally, we offer our conclusions and plans for future research. Notations: let S d and S d + denote the sets of d×d real-valued symmetric and symmetric positive semidefinite (PSD) matrices, respectively. The set of considered images is P = {I i } M i=1 , each image I i is represented by a feature vector x i ∈ R d . For matrices A ∈ S d and B ∈ S d , denote the Frobenius inner product by A, B = tr(A B) where tr denotes the trace of a matrix. Π C (x) is the Euclidean projection of the vector or matrix x on the convex set C (see Chapter 8.1 in <ref type="bibr" target="#b7">[8]</ref>). For a given vector a = (a 1 , . . . , a d ) ∈ R d , Diag(a) = A ∈ S d corresponds to a square diagonal matrix such that ∀i, A ii = a i where A = [A ij ]. For a given square matrix A ∈ R d×d , Diag(A) = a ∈ R d corresponds to the diagonal elements of A set in a vector: i.e., a i = A ii . Finally, for x ∈ R, let [x] + = max(0, x).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Related Work</head><p>The goal of distance metric learning is to produce a linear transformation of data which is optimized to fit semantical relationships between training samples. In this paper, the distance metric considered for learning is the widely used Mahalanobis-like distance metric D M parameterized by a PSD matrix M ∈ S d + :</p><formula xml:id="formula_0">D 2 M (I i , I j ) = Φ(I i , I j ) M Φ(I i , I j ) = M, Φ(I i , I j )Φ(I i , I j ) = M, C ij<label>(1)</label></formula><p>where Φ(I i , I j ) ∈ R d is the aggregation in a single vector of d elementary dissimilarity functions φ k where ∀k ∈ {1, . . . , d}, φ k : P × P → R. The commonly used function Φ is Φ(I i , I j ) = x i − x j . For convenience, we note the outer product C ij = Φ(I i , I j )Φ(I i , I j ) . Although most approaches learn the same form of distance metric, different types of information or optimization methods are used in the learning process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Metric Learning via linear transformations and unsupervised approaches</head><p>Different optimization methods to learn a metric have been proposed in the literature. For instance, every symmetric PSD matrix M ∈ S d + can be decomposed as the product M = L L where L ∈ R e×d and e ≥ rank(M) = rank(L). As a consequence, learning a PSD matrix M and learning a linear transformation parameterized a matrix L ∈ R e×d are two equivalent ways to learn a metric <ref type="bibr" target="#b61">[62]</ref>. Indeed, every Mahalanobis-like distance metric can be rewritten 1 as a function of L (i.e., D 2 M (I i , I j ) = L(x i − x j ) 2 ), and from any linear transformation parameterized by L, any distance D L L = D M can be induced. This is why eigenvector methods, such as principal component analysis (PCA) and linear discriminant analysis (LDA), that learn a linear transformation in order to satisfy some criterion (e.g., projecting <ref type="bibr" target="#b0">1</ref> Note that the decomposition from M is not unique. the training inputs into a variance-maximizing subspace in the case of PCA) can be considered as metric learning approaches <ref type="bibr" target="#b61">[62]</ref>.</p><p>In addition to PCA and manifold learning approaches, for which the key idea is to learn an underlying low-dimensional manifold that preserves distances in the input space between observed data <ref type="bibr" target="#b5">[6,</ref><ref type="bibr" target="#b56">57]</ref>, several approaches learn a metric in an unsupervised manner (i.e., from an unlabeled dataset) by assuming the availability of several (partially) labeled datasets that share the same metric <ref type="bibr" target="#b16">[17]</ref>. It is the case in the context of partitioning problems where a supervised learning framework aims at learning how to perform an unsupervised task <ref type="bibr" target="#b17">[18,</ref><ref type="bibr" target="#b36">37]</ref>. This framework is also referred to as supervised clustering <ref type="bibr" target="#b16">[17,</ref><ref type="bibr" target="#b17">18]</ref> and has been applied in different domains (e.g., video segmentation, image segmentation, change-point detection in bioinformatics <ref type="bibr" target="#b22">[23]</ref>...).</p><p>We focus in this work on supervised learning methods where constraints over distances between training samples are given as input of the algorithm, and a metric is learned to satisfy most of them. The learning strategy is usually driven by the form of provided information and the application. When supervision is considered, the way the dataset is labeled, e.g., binary labels on pairwise or triplet-wise rankings, greatly affects the optimization problem formulation. In practice, the more informative constraints one gives, the better the performance of the learned metric is.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Pairwise optimization framework</head><p>In pairwise approaches <ref type="bibr" target="#b45">[46,</ref><ref type="bibr" target="#b62">63]</ref>, the problem is formulated as learning the PSD matrix M ∈ S d + such that the distance metric D 2 M is optimized on a training set composed of a subset S of pairs of similar images and a subset D of pairs of dissimilar images. For instance, in the context of Mahalanobis Metric Learning for Clustering, Xing et al. <ref type="bibr" target="#b62">[63]</ref> define the resulting convex objective function 2 :</p><formula xml:id="formula_1">min M∈S d + (Ii,Ij )∈S D 2 M (I i , I j ) s.t. (Ii,Ij )∈D D 2 M (I i , I j ) ≥ 1<label>(2)</label></formula><p>The distances of similar pairs are minimized whereas dissimilar pairs are separated. A regularization term may be added: e.g., the term</p><formula xml:id="formula_2">(Ii,Ij )∈S D 2 M (I i , I j ) = tr(MA) with the PSD matrix A = (Ii,Ij )∈S (x i − x j )(x i − x j )</formula><p>can be seen as a regularizer <ref type="bibr" target="#b33">[34]</ref> in Eq. (2). In <ref type="bibr" target="#b62">[63]</ref> and in most metric learning algorithms, a (projected) gradient method is used to efficiently solve the optimization problem. A hinge loss or a generalized logistic loss function may be used to express all the constraints (over S and D) in a single objective function <ref type="bibr" target="#b45">[46]</ref>. In the context of face verification, Mignon and Jurie <ref type="bibr" target="#b45">[46]</ref> try to learn a metric such that the distances of similar images are smaller than a given threshold b = 1 whereas the distances of dissimilar images are greater than that threshold. They formulate their optimization problem as the sum of the loss related to each of these constraints:</p><formula xml:id="formula_3">min M∈S d + (Ii,Ij )∈(S∪D) β y ij (D 2 M (I i , I j ) − 1)<label>(3)</label></formula><p>where y ij ∈ {−1, 1} indicates whether the images (I i , I j ) are dissimilar or not, and β (x) = 1 β log(1+e βx ) is the generalized logistic loss function and a smooth approximation of the hinge loss function h(x) = max <ref type="bibr">(0, x)</ref>. This learning process may be extended to kernel functions <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b45">46]</ref>.</p><p>Many supervised approaches have been proposed recently to generate training sets S and D. Most of those approaches use binary similarity labels: two images represent the same object or not <ref type="bibr" target="#b21">[22,</ref><ref type="bibr" target="#b62">63]</ref>, two images belong to the same class or not <ref type="bibr" target="#b45">[46]</ref>, an image is relevant to a query or not <ref type="bibr" target="#b11">[12,</ref><ref type="bibr" target="#b19">20]</ref> .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.3">Triplet-based methods</head><p>Another way to exploit labeled datasets is to consider a set T of triplets of images</p><formula xml:id="formula_4">T = {(I i , I + i , I − i )} N i=1 where the distance D M (I i , I + i ) between (I i , I + i ) is smaller than the distance D M (I i , I − i ) between (I i , I − i )</formula><p>. This type of constraints is easy to generate in classification contexts: the pair of images (I i , I + i ) ∈ S is sampled using images from the same class and (I i , I − i ) ∈ D from different classes <ref type="bibr" target="#b19">[20,</ref><ref type="bibr" target="#b34">35,</ref><ref type="bibr" target="#b58">59,</ref><ref type="bibr" target="#b61">62]</ref>. For instance, Large Margin Nearest Neighbor algorithm (LMNN) <ref type="bibr" target="#b61">[62]</ref> learns a Mahalanobis distance for kNearest Neighbors (k-NN) approach using these triplet-wise training sets. More precisely, LMNN uses a scheme similar to Eq. (2) in order to enforce D M (I i , I − i ) to be larger than D M (I i , I + i ) where I + i is one of the k target nearest neighbors of I. Their optimization problem can be formulated as:</p><formula xml:id="formula_5">min M∈S d + ,ξ (Ii,I + i )∈S D 2 M (I i , I + i ) + (Ii,I + i ,I − i )∈T ξ i s.t.D 2 M (I i , I − i ) ≥ 1 + D 2 M (I i , I + i ) − ξ i ∀(I i , I + i , I − i ) ∈ T , ξ i ≥ 0<label>(4)</label></formula><p>where the same regularizer as in Eq. (2) is used. In classification task, Frome et al. <ref type="bibr" target="#b18">[19,</ref><ref type="bibr" target="#b19">20]</ref> also generate triplets of images using the same strategy as LMNN. However, their metric learning framework that is inspired by RankSVM <ref type="bibr" target="#b26">[27]</ref> and based on a linear combination of patchto-image distances, is different.</p><p>In image retrieval, the Online Algorithm for Scalable Image Similarity (OASIS) <ref type="bibr" target="#b11">[12]</ref> learns a non-PSD square matrix M in the similarity function</p><formula xml:id="formula_6">S M (I i , I j ) = x i Mx j . For any triplet of images (I i , I + i , I − i ), a safety margin constraint is defined: S M (I i , I + i ) ≥ S M (I i , I − i ) + 1, which is equiv- alent to x i M(x + i − x − i ) ≥ 1 .</formula><p>As explained by the authors <ref type="bibr" target="#b11">[12]</ref>, OASIS requires images represented as sparse vectors to be computationally efficient.</p><p>In the next subsection, we present different contexts where information richer than the sole membership of (I i , I j ) in S or D can be exploited to learn a distance metric. Such contexts involve, for instance, taxonomies which have a hierarchical structure and describe relationships between the different classes.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.4">Exploiting rich relationships between samples</head><p>Some approaches investigate other types of information than class membership or richer semantic relationships in order to learn a metric that reflects more accurately global relations. For instance, in <ref type="bibr" target="#b60">[61]</ref>, a class taxonomy is used in order to get elements of related classes, close to each other. Verma et al. <ref type="bibr" target="#b59">[60]</ref> extend this work by learning a local Mahalanobis distance metric for each category in a hierarchy. <ref type="bibr">Shaw et al.</ref> [51] learn a distance metric from a network such that the learned distances are tied to the inherent connectivity structure of the network. Hwang et al. <ref type="bibr" target="#b23">[24]</ref> learn discriminative visual representations while exploiting external semantic knowledge about object category relationships. Parikh and Grauman <ref type="bibr" target="#b47">[48]</ref> use semantic comparisons between classes over different criteria. They consider totally ordered sets of classes that describe relations among classes. Based on these rich relations, they learn image representations by exploiting only pairwise class relations. We propose to explore this type of data knowledge in metric learning for image comparison.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.5">Quadruplet-based methods</head><p>Noting that pairwise or triplet-wise approaches may, sometimes, be limited (see Section 1), our metric learning framework is based on constraints over quadruplets.</p><p>Relative distances that involve four samples have already been considered in the context of embedding problems. A classic approach of embedding problems is Multidimensional Scaling (MDS) that consists in assigning Euclidean coordinates to a set of objects such that a given set of dissimilarity, similarity or ordinal relations between the points are satisfied. Unlike metric learning approaches, classic embedding methods do not extend to new samples, a new embedding has to be learned each time a (new) test sample is added.</p><p>In the context of non-metric MDS, Shepard <ref type="bibr" target="#b51">[52,</ref><ref type="bibr" target="#b52">53]</ref> considered in 1962 the following problem that involves quadruplets of samples:</p><p>Problem: Given a symmetric zero diagonal matrix of distances ∆ = [d ij ] ∈ S n between samples i and j, find the Euclidean coordinates X = [x i ] ∈ R d×n such that:</p><formula xml:id="formula_7">∀i, j, k, l x i − x j 2 2 &lt; x k − x l 2 2 ⇐⇒ d ij &lt; d kl<label>(5)</label></formula><p>In 1964, Kruskal posed the problem as an optimization problem and introduced an algorithm to solve it <ref type="bibr" target="#b32">[33]</ref>. He formulated the input distance matrix ∆ as an exhaustive table of distances where all the values of d ij are given as input. By noting the output distance matrixˆ∆matrixˆ matrixˆ∆ ∈ S n which contains the distancesˆddistancesˆ distancesˆd ij = x i − x j 2 of each pair of samples. The goal is to find an Euclidean embedding such that each distancê d ij is close enough to d ij . This leads to the problem of minimizing the following criterion function called stress:</p><formula xml:id="formula_8">σ 1 (X) = min θ ij x i − x j 2 − θ(d ij ) 2 ij x i − x j 2 (6)</formula><p>where θ is an arbitrary monotonic function. The problem in Eq. (6) consists in minimizing the distance between the scalar input value θ(d ij ) and the distance between the samples i and j in the underlying low-dimensional space. The underlying idea is that if σ 1 (X) is minimized, then (most of) the constraints in Eq. (5) are satisfied. The smaller the value of the stress value in Eq. (6), the greater the correspondance between the matrices ∆ andˆ∆andˆ andˆ∆. Noticing that the formulation of the problem formulated by Kruskal requires the magnitudes of all the distances d ij as input, and not the relative orderings of distances as in Eq. (5), Agarwal et al. <ref type="bibr" target="#b2">[3]</ref> propose to consider only ordinal information as input to learn a generalized non-metric multidimensional scaling. This work is extended to kernels in <ref type="bibr" target="#b42">[43]</ref>.</p><p>In the context of embedding problem, Hwang et al.</p><p>[25] exploit analogy preserving constraints that involve four concepts (e.g., "a canine is to a dog as a feline is to cat" or "a fish is to water as a bird is to sky"). However, they are only interested in equivalence constraints.</p><p>In our previous work <ref type="bibr" target="#b39">[40]</ref>, we proposed to include constraints that involve up to four different images to learn a distance metric. Contrary to Eq. (5), we did not learn an embedding but a metric with different types of supervision. Constraints on quadruplets allow to better exploit rich relationships between samples in different contexts. In <ref type="bibr" target="#b39">[40]</ref>, we applied our framework to the contexts of relative attributes <ref type="bibr" target="#b47">[48]</ref>, hierarchical taxonomy classification <ref type="bibr" target="#b59">[60]</ref> and temporal webpage analysis. For simplicity, we constrained our metric to be paramaterized by vectors instead of a full matrix. In this paper, we consider a metric that is parameterized by a full matrix as well. This metric formulation allows to better exploit correlations between feature images. We explain why our proposed constraints are a generalization of pairwise and tripletwise constraints. We also extend <ref type="bibr" target="#b39">[40]</ref> with significant differences and contributions that we point out in the following. Especially, we:</p><p>• extend our proposed model so that absolute/non-relative distance constraints are considered in the learning framework. In particular, this allows to learn a distance threshold that separates similar pairs from dissimilar pairs when both quadruplet-wise and pairwise constraints are combined. This is particularly useful in the webpage analysis context framework proposed in <ref type="bibr" target="#b39">[40]</ref> where unsupervised quadruplet-wise constraints, that are automatically generated using temporal information, are now combined with supervised pairwise constraints. By combining large unlabeled datasets with small labeled datasets, supervision cost (i.e., human annotation) is minimized while learning a meaningful metric.</p><p>• discuss optimization issues caused by a possibly very large number of constraints. We present optimization techniques, such as active set methods and the 1-slack cutting plane method, that can be useful to deal with a large number of constraints and make the learning scheme tractable.</p><p>• extend the experiments introduced in <ref type="bibr" target="#b39">[40]</ref>:</p><p>1. temporal webpage analysis: we thoroughly study the benefits for recognition of (1) learning a metric parameterized by a full matrix and (2) combining unsupervised quadruplet-wise constraints with a relatively small number of supervised pairwise constraints. 2. hierarchical taxonomy classification: we demonstrate how (1) our method can deal with a large number of constraints and (2) full matrix distance metrics improve recognition over diagonal matrix distance metrics in the k-NN classification framework. 3. relative attributes: we analyse the robustness introduced by our proposed quadruplet-wise constraints. We present and compare different strategies for sampling constraints to compensate for labeling imprecisions. We investigate the impact of these strategies as a function of the number of exploited constraints.</p><p>3 Quadruplet-wise Similarity Learning Framework</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Quadruplet Constraints</head><p>As explained in Section 2.5, our goal is to learn a metric that satisfies constraints that involve quadruplets of images. In some cases (e.g., <ref type="figure" target="#fig_0">Fig. 1</ref>), pair or triplet constraints may be noisy or irrelevant, leading to less than optimal learning schemes when provided at a class level. On the other hand, working on appropriate dissimilarities between quadruplets of images limits the risk of incorporating misleading annotations. We are given a set P of images I i , and the target dissimilarity function D : P × P → R between pairs of images (I i , I j ), we note D(I i , I j ) = D ij . In this paper, interested in comparing pairs of dissimilarities (D ij , D kl ). Learn dissimilarity D such that: <ref type="figure">Fig. 2</ref> Illustration of the quadruplet-wise (Qwise) strategy in a class taxonomy context. The goal is to learn a projection of animals of the same species such that members of the same breed are closer to each other than members from different breeds, and members from the same subspecies are closer to each other than member from different subspecies.</p><formula xml:id="formula_9">D( , ) &lt; D( , ) D( , ) &lt; D( , )</formula><p>Each of them involves up to four different images (I i , I j , I k , I l ). In order to deal with these constraints, we approximate them by creating the set of constraints N in this way:</p><formula xml:id="formula_10">∀q = (I i , I j , I k , I l ) ∈ N , D kl ≥ D ij + δ q (7)</formula><p>where δ q ∈ R is a safety margin specific to the quadruplet q.</p><p>The non-strict inequality constraint corresponds to δ q = 0. And the strict inequality constraint corresponds to δ q &gt; 0, δ q is usually set to 1 (i.e., δ q = 1). Actually, Eq. <ref type="formula">(7)</ref> is a generalization of triplet-wise and pairwise constraints. Indeed:</p><p>• every triplet-wise constraint D ik ≥ D ij +δ q can be formulated by creating the quadruplet q = (I i , I j , I i , I k ) ∈ N .</p><p>• every pairwise constraint that involves a dissimilar pair of images (I i , I j ) ∈ D, D ij ≥ l, where l is a given lower bound that represents the minimum value such that (I i , I j ) are considered as dissimilar, can be formulated by creating the quadruplet q = (I i , I i , I i , I j ) ∈ N with δ q = l.</p><p>• every pairwise constraint that involves a similar pair of images (I i , I j ) ∈ S, u ≥ D ij , where u is a given upper bound that represents the maximum value such that images (I i , I j ) are considered as similar, can be formulated by creating the quadruplet q = (I i , I j , I i , I i ) ∈ N with δ q = −u.</p><p>Although quadruplet-wise constraints can be inferred from pairwise approaches <ref type="bibr" target="#b13">[14,</ref><ref type="bibr" target="#b45">46]</ref>, the converse is not true. Indeed, if the two pairs (I i , I j ) and (I k , I l ) are in S and D, respectively, the following constraints D ij &lt; D kl can be inferred. However, the constraint D ij &lt; D kl does not imply that pairs (I i , I j ) and (I k , I l ) are in S and D, respectively. In other words, from a quadruplet-wise constraint D ij &lt; D kl , there is no need to determine arbitrary values of u and l such that D ij &lt; u and l &lt; D kl since u and l can take all the possible values (as long as u ≤ l) and satisfy the quadruplet-wise constraint. Only the order of similarity between (I i , I j ) and (I k , I l ) is required. Since the provided annotations are less restrictive and thus less prone to noise, relative distances are particularly useful when human users that are not experts of the domain have to annotate similarity/relation information. A similar problem is pointed out in the context of relative attributes <ref type="bibr" target="#b47">[48]</ref> in which boolean presence of an attribute is difficult to provide, whereas relative comparisons are easier and more natural for humans to annotate. <ref type="figure">Fig. 2</ref> illustrates some examples of constraints for which a pairwise formulation is difficult, or at least for which constraints of relative distance comparisons seem more natural and intuitive. It shows different members of the Ca-nis lupus species that are gathered together depending on their respective subspecies and breeds. By considering only pairwise similarity constraints, it is difficult to formulate the distance metric learning problem such that (1) members of the same breed are closer to each other than other members of the same subspecies are, and (2) members of the same subspecies are closer to each other than members from different subspecies. Depending on whether we consider members of the same subspecies as similar or dissimilar, the distance metric learned with pairwise constraints does not fully exploit the rich information given by the provided taxonomy. This limitation can be easily overcome by using relative distance comparison constraints as illustrated in <ref type="figure">Fig. 2</ref>.</p><p>We also note that quadruplet-wise constraints act as a complement to triplet-wise constraints to better describe rich relationships. For instance, the first quadruplet-wise constraint illustrated in <ref type="figure">Fig. 2</ref> enforces the similarity between different Dalmatians. Indeed, we want animals of the same breed to be more similar to each other than animals of different breeds. Although this kind of information can be described with triplet-wise constraints by enforcing the distance between two Dalmatians to be smaller than the distance between one of these Dalmatians and an animal of another breed, quadruplet-wise constraints extend this kind of constraint by describing the fact that any pair of Dalmatians have to be closer to each other than any pair of animals of different breeds in general. Triplet-wise constraints then represent only a subset of the possible constraints that can describe such relationships.</p><p>We present in the following two different frameworks to learn a Mahalanobis distance metric that exploit this type of constraints. The first one considers the learning of a Mahalanobis distance metric parameterized by a full matrix M ∈ S d + . The second one considers the learning of a distance metric parameterized by one or many vectors that are learned independently.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Learning a Mahalanobis-like distance metric parameterized by a matrix</head><p>We present in this subsection the general Mahalanobis-like distance metric learning framework where a distance metric is parameterized by a full PSD matrix M.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Optimization problem</head><p>The goal of our distance metric learning framework is to maximize the number of satisfied constraints in Eq. <ref type="bibr" target="#b6">(7)</ref>. However, the problem of maximizing the number of satisfied constraints in Eq. <ref type="formula">(7)</ref> is NP-hard <ref type="bibr" target="#b26">[27]</ref>, we then approximate it by using slack variables. By noting each quadruplet q = (I i , I j , I k , I l ) ∈ N , we optimize the following problem:</p><formula xml:id="formula_11">min M∈S d + ,ξ Ω(M) + C q q∈N ξ q s.t.∀q ∈ N , D 2 M (I k , I l ) ≥ D 2 M (I i , I j ) + δ q − ξ q ∀q ∈ N , ξ q ≥ 0 (8)</formula><p>where Ω(M) is a regularization term and C q a regularization parameter that controls the trade-off between fitting and regularization. Note that the problem in Eq. <ref type="formula">(8)</ref> is very similar to LMNN <ref type="bibr" target="#b61">[62]</ref> (see Eq. <ref type="formula" target="#formula_5">(4)</ref>) with the exception that we exploit quadruplets of constraints instead of triplets.</p><p>Regularization: The choice of regularization has a significant impact on the learned distance model, both theorically and algorithmically. Different types of regularization have been proposed in the literature. Typically, the nuclearnorm regularizer Ω(M) = M * is known to prefer lowrank solutions. When M ∈ S d + is PSD, the nuclear norm can be rewritten equivalently M * = tr(M). The Frobenius norm regularizer Ω(M) = 1 2 M 2 F = 1 2 M, M may be viewed as the matrix analog of the popular and standard squared-2 regularization, particularly when M is a diago-</p><formula xml:id="formula_12">nal matrix since 1 2 M 2 F = 1 2 Diag(M) 2 2 in this case. In MMC [63] and LMNN [62], the term (Ii,Ij )∈S D 2 M (I i , I j ) = M, (Ii,Ij )</formula><p>∈S C ij can also be seen as a regularizer (see Section 2.4.2.2 in <ref type="bibr" target="#b33">[34]</ref>).</p><p>In the experiments, we use the same regularization as LMNN when we use LMNN as a baseline and we want to study the benefit of our proposed constraints in order to have a fair comparison. When we constrain the matrix M ∈ S d + to be diagonal, we use the squared Frobenius norm in order to apply an efficient RankSVM <ref type="bibr" target="#b10">[11]</ref> optimization scheme.</p><p>We will explain in Section 4.1 how to efficiently solve the problem in Eq. (8). We first propose to enrich the model with other types of constraints.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Combining pair and quadruplet constraints</head><p>As mentioned in Section 3.1, pairwise constraints can be rewritten as quadruplet-wise constraints. Nonetheless, in order to enhance the readability of the paper, we consider to explicitly distinguish the sets of similar image pairs S and of dissimilar image pairs D from the set of relative distance comparisons N .</p><p>Especially, if we are provided with a set of similar pairs (S) and a set of dissimilar pairs (D), we expect the distances of similar pairs to be smaller than a given threshold u and the distances of dissimilar pairs to be greater than another threshold l (with u ≤ l). To know whether a test pair is similar or dissimilar, one only needs to compute its distance and compare it to b = u+l 2 . The resulting constraints can be written in this way:</p><formula xml:id="formula_13">∀(I i , I j ) ∈ S : D 2 M (I i , I j ) ≤ u (9) ∀(I i , I j ) ∈ D : D 2 M (I i , I j ) ≥ l (10)</formula><p>The integration of pairwise information in Eq. <ref type="formula">(8)</ref> then results in the following problem:</p><formula xml:id="formula_14">min M∈S d + Ω(M) + C q q∈N [δ q + M, C ij − C kl ] + + C p (Ii,Ij )∈S [M, C ij − u] + + C p (Ii,Ij )∈D [l − M, C ij ] + (11)</formula><p>This problem is equivalent to Eq. <ref type="formula">(8)</ref> </p><formula xml:id="formula_15">when C p = 0 or S = D = ∅. It is convex w.r.t. M.</formula><p>However, naive optimization methods can be comptutationally expensive to solve it. We discuss optimization schemes to efficiently solve this problem in Section 4.</p><p>We present an alternative distance metric formulation in order to obtain a convex optimization problem that can be solved efficiently.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3">Simplification of the model by optimizing over vectors</head><p>In order to obtain an efficient learning framework, we consider in this subsection cases where a distance metric is formulated as a function of one or many vectors. The distance metric is then learned by optimizing over those vectors.</p><p>We particularly focus on two contexts where the optimization process may be done efficiently <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref> by using this vector optimization approach and by learning a model with a relatively small number of parameters. The first one constrains the learned PSD matrix M ∈ S d + to be diagonal (see Section 3.3.1). The second one considers that the training information is provided as multiple relative orderings; we then learn a linear transformation matrix whose rows each try to find a projection that satisfies a given relative ordering (see Section 3.3.2).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.1">Learning a diagonal PSD matrix</head><p>In the first context, the PSD matrix M ∈ S d + is constrained to be a diagonal matrix in Eq. (11). By noting w = Diag(M), it is easy to verify that, if M is a diagonal matrix, we have:</p><formula xml:id="formula_16">D 2 M (I i , I j ) = M, C ij = Diag(w), Diag(Diag(C ij )) = w [Φ(I i , I j ) • Φ(I i , I j )]</formula><p>with Diag(</p><formula xml:id="formula_17">C ij ) = Φ(I i , I j )•Φ(I i , I j )</formula><p>where • is the Hadamard product (element-by-element product). For convenience, we also note</p><formula xml:id="formula_18">Φ •2 (I i , I j ) = Φ(I i , I j ) • Φ(I i , I j ).</formula><p>The problem can then be rewritten as a function of w.</p><p>In this context, the constraint M ∈ S d + is equivalent to the constraint w ∈ R d + (the elements of w are non-negative). Indeed, all the diagonal elements of a square diagonal matrix are its eigenvalues and a symmetric matrix is PSD iff all its eigenvalues are non-negative. We then consider the constraint w ∈ R d + in this case.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.2">Learning the rows of a linear transformation</head><p>If the provided annotations are M different dissimilarity functions (e.g., relative attributes), where each of them represents a relative ordering focused on a given criterion (e.g., I i is more smiling than I j , I i is younger than I j ...), each row of the matrix L ∈ R M ×d can be learned independently.</p><p>The m th row of L (denoted w m ) satisfies the ordering of the m th dissimilarity function D <ref type="bibr">wm</ref> </p><formula xml:id="formula_19">(I i , I j ) = w m Φ(I i , I j ).</formula><p>The matrix L can then be written in this form:</p><formula xml:id="formula_20">L =    w 1,1 . . . w 1,d . . . . . . . . . w M,1 . . . w M,d    =    w 1 . . . w M    , w m : m th row (12)</formula><p>In the end, a linear transformation parameterized by the matrix L is learned, and, as explained in Section 2.1, learning a linear transformation is equivalent to learning a distance metric <ref type="bibr" target="#b61">[62]</ref> parameterized by the matrix M = L L.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.3.3">Unified problem formulation</head><p>In both cases mentioned above, the learning problem may be expressed as a linear combination of the parameter</p><formula xml:id="formula_21">w ∈ C d where C d is a d-dimensional convex set in R d . In this paper, the convex set C d is either R d or R d + .</formula><p>Without loss of generality, we consider optimizing the following dissimilarity function:</p><formula xml:id="formula_22">D w (I i , I j ) = w Ψ (I i , I j ) s.t. w ∈ C d<label>(13)</label></formula><p>where</p><formula xml:id="formula_23">• Ψ = Φ •2 and C d = R d + in the case M ∈ S d + is a diagonal matrix (Section 3.3.1). • Ψ = Φ and C d = R d in the other case (Section 3.3.2).</formula><p>We formulate our vector optimization problem as:</p><formula xml:id="formula_24">min (w,b,ξ) 1 2 (w 2 2 + b 2 ) + C q q∈N ξ q + C p (Ii,Ij )∈(S∪D) ξ ij s.t.∀(I i , I j ) ∈ S, D w (I i , I j ) ≤ b − 1 + ξ ij ∀(I i , I j ) ∈ D, D w (I i , I j ) ≥ b + 1 − ξ ij ∀q ∈ N , D w (I k , I l ) ≥ D w (I i , I j ) + δ q − ξ q ξ q ≥ 0, ξ ij ≥ 0, w ∈ C d , b ∈ C<label>(14)</label></formula><p>It is very similar to Eq. (11) when the matrix Diag(w) = M is constrained to be diagonal,</p><formula xml:id="formula_25">Ω(M) = 1 2 M 2 F = 1 2 w 2 2 , u = b − 1 and l = b + 1.</formula><p>The only difference is the inclusion of the b 2 /2 term in the regularizer. Note that both w and b are learned in <ref type="bibr">Eq (14)</ref>. The problem is convex w.r.t. w and b, and the inclusion of the b 2 /2 term in the regularizer does not affect generalization <ref type="bibr" target="#b30">[31]</ref>. The optimization process is briefly discussed in Section 4.2 and a detailed discussion is provided in Section A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Quadruplet-wise (Qwise) optimization scheme</head><p>We first focus on the case where M ∈ S d + is a full (nondiagonal) matrix, then we discuss the case where the learned metric is parameterized by one vector of a set of vectors. Finally, we describe optimization issues that are common to both distance metric formulations.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Full matrix metric optimization</head><p>To solve the optimization problem of Eq. <ref type="formula" target="#formula_0">(11)</ref>, we use the projected gradient method. A subgradient of Eq. <ref type="formula" target="#formula_0">(11)</ref> w.r.t. M is computed as follows:</p><formula xml:id="formula_26">=C p   (Ii,Ij )∈S + C ij − (Ii,Ij )∈D + C ij   + C q q∈N + (C ij − C kl ) + ∂Ω(M) ∂M<label>(15)</label></formula><p>where N + , S + and D + are the subsets of violated constraints in N , S, D for a given value of M, respectively, i.e., :</p><formula xml:id="formula_27">• q ∈ N + ⇐⇒ q = (I i , I j , I k , I l ) ∈ N and δ q +M, C ij − C kl &gt; 0 • (I i , I j ) ∈ S + ⇐⇒ (I i , I j ) ∈ S and D 2 M (I i , I j ) &gt; u • (I i , I j ) ∈ D + ⇐⇒ (I i , I j ) ∈ D and D 2 M (I i , I j ) &lt; l The value of ∂Ω(M) ∂M depends on the choice of regular- izer Ω(M). For instance, ∂Ω(M) ∂M = I d if Ω(M) = tr(M), ∂Ω(M) ∂M = M if Ω(M) = 1 2 M 2 F , and ∂Ω(M) ∂M = (Ii,Ij )∈S C ij if Ω(M) = M, (Ii,Ij )∈S C ij in the case of MMC [63] and LMNN [62].</formula><p>The whole algorithm of this subgradient method is presented in Algorithm 1 where η t is the step size (see <ref type="bibr" target="#b6">[7]</ref> for optimal stepsize strategies in subgradient methods). The complexity of Algorithm 1 is linear in the number of constraints and its complexity is dominated by the projection Π S d + onto the PSD cone performed at each iteration (step 6). In the full matrix case, it requires an eigendecomposition of the matrix (M t − η t t ), whose complexity is cubic in the dimensionality d. This can be prohibitive if d is large. However, the dimensionality d of our input data is always smaller or equal to 1000 in our experiments. On a single 3,40 GHz computer, the eigendecomposition of a 10 3 × 10 3 matrix takes less than 0.1 second, which is tractable for our applications. As one can see in Eq. (15), the subgradient related to the loss of each quadruplet of images q = (I i , I j , I k , I l ) ∈ N is:</p><formula xml:id="formula_28">∂ [δ q + M, C ij − C kl ] + ∂M = 0 if q / ∈ N + (C ij − C kl ) if q ∈ N +</formula><p>The value of the subgradient does not depend on the degree to which the constraint associated to the quadruplet q ∈ N is violated, but depends only on whether q is in N + or not. Then let h(N + ) be a subgradient associated to the set N + , i.e., :</p><formula xml:id="formula_29">h(N + ) = q∈N + (C ij − C kl )</formula><p>. Let N + t be the set of violated constraints in N at iteration t of the subgradient method. We note that:</p><formula xml:id="formula_30">h(N + t+1 ) = h(N + t ) − h(N + t \ N + t+1 ) + h(N + t+1 \ N + t )</formula><p>Since the sets (N + t \ N + t+1 ) and (N + t+1 \ N + t ) are very small in practice, it is more efficient to store the matrix h(N + t ) and compute h(</p><formula xml:id="formula_31">N + t \ N + t+1 ) and h(N + t+1 \ N + t ) to obtain h(N + t+1 ) than naively computing q∈N + (C ij − C kl ) for which the complexity is O(|N + t+1 |d 2 )</formula><p>. Note that the same technique can be used for the sets S and D when they are not empty.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Simplified metric optimization</head><p>To solve the vector optimization problem in Eq. <ref type="formula" target="#formula_0">(14)</ref>, we adapt the RankSVM model <ref type="bibr" target="#b26">[27]</ref>. The complexity is linear in the number of constraints and large-scale efficient solvers have been proposed (e.g., Newton's method <ref type="bibr" target="#b10">[11]</ref>). In order to exploit Newton's method, we use a Huber loss function instead of a hinge loss function like in Eq. (11). The optimization process is detailed in Section A and is a Newton adaptation of Algorithm 1 for vector optimization.</p><p>A small adaptation needs to be done to exploit the optimization techniques presented in Section 4.1 since we use Huber loss functions instead of a hinge loss. As the Huber loss function is composed of two linear parts (sets β 0 i,y and β L i,y in Section A.2) and a quadratic part, the technique presented in Section 4.1 for the hinge loss can be applied to the linear parts of the Huber loss function, which represent nearly all the domain of L h i .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Active sets</head><p>As the number of possible quadruplets can be very large, it is computationally prohibitive and sub-optimal to use all the quadruplets.</p><p>To overcome this limitation, we propose to add to our optimization schemes an active set strategy that exploits the</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 1 Projected Subgradient Method</head><p>Require: Sets N , D, S (some of them can be empty) 1: Iteration t = 0 2: Initialize M t ∈ S d + (e.g., M t = 0) 3: Initialize the step size η t &gt; 0 (e.g., η t = 1) 4: repeat 5: Compute t (subgradient w.r.t. M t , Eq. <ref type="formula" target="#formula_0">(15)</ref></p><formula xml:id="formula_32">) 6: M t+1 ← Π S d + (M t − η t t ) 7: t ← t + 1 8: until ||M t − M t−1 || 2 F ≤ 9: Return M t</formula><p>fact that the great majority of training quadruplets do not incur margin violations. Only a small fraction of the quadruplets in N are in N + . In a similar manner as in LMNN <ref type="bibr" target="#b61">[62]</ref>, we check all the quadruplets and maintain an active list of those with margin violations: a full re-check is performed every 10-20 iterations, depending on fluctuations of the set N + t . For intermediate iterations, we only check for margin violations from among those active quadruplets accumulated over previous iterations. When the optimization converges for a given active set N + t , the most active constraints that are not in</p><formula xml:id="formula_33">N + t are added in N + t+1 , note that N + t ⊂ N + t+1</formula><p>. If all the possible active constraints are already in N + t , then we have reached an optimal solution for the global optimization problem. Otherwise, some remaining active constraints are added to the current set N t until convergence.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4">Structural Metric Learning</head><p>We present in this subsection an extension of our model based on structured output prediction for large margin methods <ref type="bibr" target="#b27">[28,</ref><ref type="bibr" target="#b29">30]</ref>. The proposed extension is inspired by <ref type="bibr" target="#b43">[44]</ref> and learns a metric to predict a ranking over a set of samples. Its formulation allows to exploit efficient optimization techniques such as the 1-slack cutting-plane method <ref type="bibr" target="#b29">[30]</ref>.</p><p>The goal of Metric Learning to Rank (MLR) <ref type="bibr" target="#b43">[44]</ref> is to learn a matrix M ∈ S d + that minimizes a ranking loss function ∆ : Y × Y → R + over permutations Y induced by distance. By considering a set X of queries x and a corpus C of points c i that represent images or pairs of images, the structured output optimization problem can be expressed as:</p><formula xml:id="formula_34">min M∈S d + ,ξ≥0 Ω(M) + Cξ s.t. ∀x ∈ X , y ∈ Y M, ψ(x, y x )) − ψ(x, y) ≥ ∆(y x , y) − ξ<label>(16)</label></formula><p>where Ω(M) &gt; 0 is a regularization term and C &gt; 0 is a regularization parameter. The loss ∆(y x , y) quantifies the penalty for making prediction y if the correct ranking output is y x . Rankings are represented as a matrix of pairwise orderings Y ⊂ {−1, 0, +1} |C|×|C| between points c i in C. For any y ∈ Y, y ij = +1 if c i is ranked ahead of c j , y ij = −1 if c j is ranked ahead of c i , and y ij = 0 if c i and c j have equal rank. The 1-slack approach in Eq. (16) shares a single slack variable ξ across all constraint batches, which are in turn aggregated by averaging over each point in the training set.</p><p>Let C + x and C − x denote the set of relevant and non-relevant images or pairs of images of C for the query x, respectively. In this paper, we consider the commonly used partial order feature map ψ:</p><formula xml:id="formula_35">ψ(x, y) = ci∈C + x cj ∈C − x y ij φ(x, c i ) − φ(x, c j ) |C + x |.|C − x |<label>(17)</label></formula><p>where φ(x, c i ) is a feature map which characterizes the relation between x and c i . In the model proposed by <ref type="bibr" target="#b43">[44]</ref>, they consider that x and c i are images represented by vectors x x and x i in the same space R d , and thus express φ as:</p><formula xml:id="formula_36">φ R d (x, c i ) = −(x x − x i )(x x − x i )</formula><p>In this case, they have M,</p><formula xml:id="formula_37">φ R d (x, c i ) = −D 2 M (x, c i ).</formula><p>In our case of quadruplets, we consider that c i is a pair of images and is represented by a pair of vectors</p><formula xml:id="formula_38">(x i1 , x i2 ) ∈ R d ×R d . For convenience, we write R d 2 = R d ×R d .</formula><p>We then express φ as:</p><formula xml:id="formula_39">φ R d 2 (x, c i ) = φ R d 2 (x, i 1 , i 2 ) = −(x i1 − x i2 )(x i1 − x i2 )</formula><p>In the pairwise approach, if the sets S and D of similar and dissimilar pairs are the only provided training labels, we consider that there exists only one query x. The sets are</p><formula xml:id="formula_40">C + x = S, C − x = D and φ = φ R d 2 .</formula><p>In the tripletwise approach, if training samples are provided as triplets of images (x, c k , c l ), as in LMNN <ref type="bibr" target="#b61">[62]</ref>, where (x, c k ) ∈ S are similar and (x, c l ) ∈ D are dissimilar, we consider that each such image x is a query. The sets are then</p><formula xml:id="formula_41">C + x = {c k | (x, c k ) ∈ S}, C − x = {c l | (x, c l ) ∈ D} and φ = φ R d</formula><p>. This is the case considered in <ref type="bibr" target="#b43">[44]</ref>. It generalizes LMNN when C + x is the set of k nearest neighbors of x in the original input space, and C − x is the set of images in categories different from x. Since LMNN extends linear ordinal regression SVM <ref type="bibr" target="#b28">[29]</ref> by learning a PSD matrix instead of a vector (and using a different regularization term), MLR extends LMNN in the same way as structural SVM extends ordinal regression <ref type="bibr" target="#b28">[29]</ref>.</p><p>Quadruplet formulation: In our case where training labels are relative distances over quadruplets (c i , c j , c k , c l ) ∈ N , we consider that each query is a pair x = (c i , c j ), their corresponding positive and negative sets are Optimization: In order to optimize Eq. <ref type="formula" target="#formula_0">(16)</ref>, we use the same 1-slack cutting plane solver <ref type="bibr" target="#b29">[30]</ref> as <ref type="bibr" target="#b43">[44]</ref>. The difference with <ref type="bibr" target="#b43">[44]</ref> is the formulation of the feature map induced by φ and the fact that we try to satisfy relative orderings of distances between image pairs. The structural formulation of our problem can greatly reduce the number of possible constraints compared to the non-structural formulation (in the same way as <ref type="bibr" target="#b28">[29]</ref>). The 1-slack cutting plane method efficiently selects the most penalized constraints among a huge set of possible constraints, and optimizes the problem over a small set of active constraints. We can then solve problems that deal with huge numbers of quadruplets as training information.</p><formula xml:id="formula_42">C + x = {x}, C − x = {(c k , c l )|(c i , c j , c k , c l )} ∈ N , x = (c i , c j )}, φ = φ R d 2 .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Temporal Metric Learning for Webpages</head><p>We present in this section the first application of our metric learning method. We introduced in <ref type="bibr" target="#b39">[40]</ref> a distance metric learning framework for webpage comparison and detection of important semantic regions. The goal is to determine whether semantical changes occurred between two successive versions of the same webpage or not. <ref type="figure" target="#fig_2">Fig. 3</ref> illustrates two pairs of successive versions of webpages. On the left one, the change of advertisement (yellow region) is the only observable change. Since it does not change the content shared by the webpage, the two versions are considered as similar. A human (or indexing robot) then does not need to visit these two versions. On the contrary, on the right pair of <ref type="figure" target="#fig_2">Fig. 3</ref>, although an advertisement (yellow region) has also changed, the main news shared by the webpage (blue region) is different. The versions then both need to be visited and indexed. They are thus are considered as dissimilar. Several approaches that extract meaningful information in webpages admit the importance of visual information <ref type="bibr" target="#b41">[42,</ref><ref type="bibr" target="#b54">55,</ref><ref type="bibr" target="#b55">56]</ref> since the layout is taken into account when pages are created. In order to exploit visual information, classic webpage analysis methods, such as the VIsion-based Page Segmentation algorithm (VIPS) <ref type="bibr" target="#b8">[9]</ref>, integrate visual descriptors based on the structure (e.g., position, width, border of regions or font colors) from the page source code rather than using computer vision-based features. We extend the webpage analysis experiments performed in <ref type="bibr" target="#b39">[40]</ref> in several ways: 1) we propose a semi-supervised metric learning framework by combining unsupervised quadruplet constraints with pairwise constraints that are manually labeled; 2) we propose a novel heuristic to perform unsupervised change detection; 3) we combine both visual and structural <ref type="bibr" target="#b8">[9]</ref> information.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1">Webpage change detection framework</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.1">Unsupervised constraints</head><p>Our approach relies on the assumption of monotony of changes, which is illustrated in <ref type="figure">Fig. 4</ref> where four successive versions of the same webpage v t−1 , v t , v t+1 , v t+2 are crawled with a sufficiently high frequency (each hour). Although the four versions are all different, one can see that v t seems more similar to v t+1 than to v t+2 . Similarly, v t and v t+1 are more similar than v t−1 and v t+2 are. By exploiting time information, one can automatically generate a set B of quadruplets of versions (v t , v t+1 , v r , v s ) where r ≤ t &lt; s. The goal is to learn a dissimilarity function D that satisfies most of the following constraints:</p><formula xml:id="formula_43">∀(v t , v t+1 , v r , v s ) ∈ B : D(v t , v t+1 ) ≤ D(v r , v s )<label>(18)</label></formula><p>In order to satisfy these constraints, the metric D has to ignore random and periodic changes, which are often caused by advertisements. <ref type="figure">Fig. 4</ref> illustrates a case where a car advertisement (at the right of the page) is identical in v t−1 , v t and v t+2 and different in v t+1 . By ignoring this advertisement region, it is easier for D to satisfy the constraints in Eq. <ref type="bibr" target="#b17">(18)</ref>. A trivial solution to satisfy all the constraints in Eq. (18) is a pseudometric such that: ∀(v i , v j ), D(v i , v j ) = 0. To avoid this degenerate solution, one can assume that there exists a change period γ &gt; 1 such that for all r ≤ t &lt; r + γ we have the strict inequality D(v t , v t+1 ) &lt; D(v r , v r+γ ). In other words, we assume that there exists a change period γ specific to the page such that the changes that occurred between the two versions v r and v r+γ are more important <ref type="figure">Fig. 4</ref> Four successive versions of the NPR homepage. Although it is hard and expensive to ask users to label version pairs as similar or not, it is cheaper to infer that the dissimilarity between v t and v t+1 , or even v t−1 and v t+1 is smaller than the dissimilarity between v t−1 and v t+2 .</p><formula xml:id="formula_44">time v t−1 v t v t+1 v t+2</formula><p>than between directly successive versions v t and v +1 where r ≤ t &lt; r + γ. Although v t and v t+1 may be dissimilar, their dissimilarity is assumed smaller than the dissimilarity between v r and v r+γ 3 . In the same way as B, we create a set A (with A ∩ B = ∅) such that:</p><formula xml:id="formula_45">∀(v t , v t+1 , v r , v s ) ∈ A : D(v t , v t+1 ) + 1 ≤ D(v r , v s ) (19)</formula><p>where 1 is a safety margin, r ≤ t and s ≥ r + γ ≥ t + 1. The constraints defined in Eq. (19) penalize content that does not change much in some regions, although a change in the whole page is expected. This type of static content usually corresponds to menus: the algorithm learns to ignore these areas. Note that γ determines whether a quadruplet belongs to B or A, and thus its related constraint <ref type="bibr">(Eq. (18)</ref> or <ref type="bibr" target="#b18">(19)</ref>). Nonetheless, since constraints satisfied in Eq. <ref type="bibr" target="#b18">(19)</ref> are also satisfied in Eq. <ref type="formula" target="#formula_0">(18)</ref>, choosing a value of γ greater than the actual change period of the page is not problematic. There is a straight connection between these equations and Eq. (7). Any quadruplet q in B can be formulated as q ∈ N with δ q = 0 and any quadruplet q in A can be formulated as q ∈ N with δ q = 1.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.2">Pairwise supervised constraints</head><p>Additionally to the automatically generated constraints based on monotony of changes, richer information of whether a pair of versions is similar or dissimilar can be integrated. This information can be provided by human users (or heuristically determined). Let S be the set of pairs of versions annotated as (or assumed) similar and D the set of dissimilar version pairs, an interesting property of the function D 3 Different ways to set the parameter γ exist. It can for example be determined with prior knowledge about the page or it can be chosen heuristically following the observation in Adar et al. <ref type="bibr" target="#b0">[1]</ref>: human users tend to visit more frequently webpages that often change. In other words, human users can be considered as intelligent web crawlers with a good crawling strategy. For instance, a page that is visited everyday by a lot of unique visitors can be assumed to be different everyday (in this case γ = 24 hours). This popularity information can be obtained from services that provide detailed statistics about the visits to a website (e.g., Google Analytics).</p><p>would be to satisfy:</p><formula xml:id="formula_46">∀(v r , v s ) ∈ S : D(v r , v s ) + 1 ≤ b (20) ∀(v r , v s ) ∈ D : b + 1 ≤ D(v r , v s )<label>(21)</label></formula><p>where 1 is a safety margin and b ∈ R a learned threshold. These two types of constraints (Eq. <ref type="formula" target="#formula_1">(20)</ref> and Eq. <ref type="formula" target="#formula_0">(21)</ref>) follow the classic approach in metric learning <ref type="bibr" target="#b25">[26,</ref><ref type="bibr" target="#b62">63]</ref> that minimizes the distance of similar pairs while separating dissimilar pairs (in our case, keeping their distances beyond the threshold b). To know whether a test pair (v r , v s ) is similar or not, one only has to study the sign of D(v r , v s ) − b (positive for dissimilar pairs, and negative for similar pairs).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.1.3">Distance Metric formulation</head><p>We integrate the constraints mentioned from Eq. (18) to (21) in the learning framework described in Section 3 (see Eq. <ref type="formula" target="#formula_0">(11)</ref> and Eq. <ref type="formula" target="#formula_0">(14)</ref>) by considering N = A ∪ B. We consider the diagonal and full matrix Mahalanobis-like distance metric formulations where the:</p><p>• metric D w is parameterized by the d-dimensional vector w ∈ R d + . This metric tries to satisfy the ideal properties of the target function D (Eq. <ref type="formula" target="#formula_0">(18)</ref> to <ref type="formula" target="#formula_0">(21)</ref></p><note type="other">). D w is a linear combination of d distances between versions v i and v j over d different spatial regions (one distance per region). These d distances are concatenated in the vector d regions (</note><formula xml:id="formula_47">v i , v j ) ∈ R d . The computation of d regions is detailed is Section 5.2. D w is written: D w (v i , v j ) = w d regions (v i , v j )<label>(22)</label></formula><p>where w ∈ R d + is the weight vector: the value of the k-th element of w corresponds to the importance of change assigned to the k-th region of the page. An element of w close to 0 means that the corresponding region is ignored, whereas an element with a relatively high absolute value has more impact on the global dissimilarity function D w . By avoiding w to have negative elements, the learned metric tends to ignore unimportant changes rather than penalizing them (which would mean negative scores in order to minimize the learned function).</p><p>• metric D M is paramaterized by the symmetric PSD matrix</p><formula xml:id="formula_48">M ∈ S d + . D M is written: D 2 M (v i , v j ) = c ij Mc ij<label>(23)</label></formula><p>where c ij = (d regions (v i , v j )) • 1 2 and • 1 2 is the Hadamard square root (element-wise square root).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.2">Visual and Structural Comparisons of Webpages</head><p>Visual distance representation: We present here how to compute a visual distance representation d regions (mentioned in Section 5.1.3) that relies on computer vision-based features. The method considers screen captures of page versions as images. Only the visible part of pages without scrolling is considered since it generally contains the main information shared by the page <ref type="bibr" target="#b40">[41,</ref><ref type="bibr" target="#b54">55]</ref>. Our proposed method computes the GIST [47] descriptors of screen captures. GIST descriptor segments images by an m by m grid 4 . We formulate the vector d regions (v i , v j ) ∈ R m 2 as an m 2 -dimensional vector for which each element corresponds to the squared 2 -distance between bins that fall into the same cell of the grids of the screenshots of v i and v j . GIST descriptor was proven to provide very high accuracy for near-duplicate detection <ref type="bibr" target="#b15">[16]</ref>, which is close to our context of successive versions of the same document. The high efficiency, small memory usage and estimation of coarsely localized information of the global GIST descriptor, allowing to scale up to very large datasets <ref type="bibr" target="#b15">[16]</ref>, motivated this choice. Examples of our regular m × m segmentation are illustrated in <ref type="figure" target="#fig_3">Fig. 5</ref>. Learning a multimodal visual/structural metric: We also propose to learn a multimodal distance metric D M by late fusion. It is expressed as a linear combination of visual and structural distance metrics:</p><formula xml:id="formula_49">D M (v i , v j ) = α 1 D w (v i , v j )+α 2 D H (v i , v j )+α 3 D U (v i , v j )</formula><p>where the coefficients α i ≥ 0 are learned with a binary SVM classifier that separates the pairs in S from pairs in D.  <ref type="bibr" target="#b3">4</ref> We use the publicly available code of Oliva and Torralba <ref type="bibr" target="#b46">[47]</ref> in MATLAB to compute GIST descriptors. In particular, we choose the following setting: 8 oriented edge responses at 4 different scales. The computation time of the GIST descriptor of a page version (screen capture of about 1000 × 1000 pixels) using a 10 × 10 grid is 3.2 seconds. <ref type="bibr" target="#b4">5</ref> We also tried to include the Jaccard distance of words (similar to Dice's coefficient of words used in <ref type="bibr" target="#b1">[2]</ref>, with the exception that it satisfies the properties of a distance metric) but it does not improve performances.</p><formula xml:id="formula_50">D w (v i , v j ) is</formula><p>Computation time: the whole process of computation of distances between GIST descriptors, creation of constraints and learning of the diagonal matrix distance D w takes 0.7 seconds on a 3.4 GHz machine in MATLAB. It takes 4.5 seconds in the full matrix distance case. It can be done offline: only the learned parameter of the distance (w or M), the threshold b, the coefficients α i in the late fusion setup, and the descriptors of test pairs are necessary for test.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.3">Datasets and evaluation protocol</head><p>We hourly crawled different types of popular webpages (homepages or non-homepages of news or educational websites) as done in <ref type="bibr" target="#b0">[1,</ref><ref type="bibr" target="#b4">5]</ref> for approximatly 50 days: the version v t+1 is visited 1 hour after v t . The crawled webpages 6 are the homepages of some news websites (e.g., CNN, BBC, National Public Radio (NPR), New York Times (NYT)), the finance section of Yahoo! News, the music section of NPR (that is not often updated) and educational webpages: the homepage of Boston's University and the open courseware page of the Massachusetts Institute of Technology (MIT).</p><p>To evaluate our approach with quantitative results, we labeled pairs of versions of some of these websites (∼ 1, 200 per site). To simplify the labeling process, we select only news websites that are easier to annotate, and we choose as similarity criterion the presence of change of the main news in the page. Only the successive version pairs (v t , v t+1 ) of the CNN, BBC, NPR and New York Times homepages were labeled. We distinguish 4 labels for version pairs: -identical: two given versions are identical. -similar: a change not important enough to download both version occurs (e.g., a change of advertisement, see <ref type="figure" target="#fig_2">Fig. 3</ref> (left)). -dissimilar: the main news of the page changes. Particularly, we consider (v t , v t+1 ) as dissimilar only if textual news information is added in the page between v t and v t+1 . We give more details about the annotation criterion in Section 5.4. -ambiguous: two given versions are difficult to label as similar or dissimilar.</p><p>For each website, we create 10 train/test splits: for each split, we use 5 successive days for training, the 45 remaining days for test <ref type="bibr" target="#b6">7</ref> . Ambiguous version pairs are ignored in the test evaluation process. However, they are used in automatically generated quadruplet-wise constraints to train important change maps.  <ref type="bibr" target="#b6">7</ref> We minimize the number of common versions used for training among the different splits: i.e., the first training split contains the first 5 days, the second one the 6 th to 10 th days, the third one the 11 th to 15 th days... for test because their distance would be 0 (the lowest possible value) with any distance metric; since they are easy examples (e.g., they would be the first retrieved similar pairs in the average precision evaluation), the performance measures would return very high scores by using them for test.</p><p>We compute the average precision for the similar class AP S by ranking distance values of test pairs of successive versions (v t , v t+1 ) in ascending order and the average precision for the dissimilar class AP D by ranking distance values of test pairs in descending order. The Mean Average Precision (MAP) is the mean of AP S and AP D . Classification accuracy is also used: it is the mean of the accuracies of the class of similar pairs (S) and of the class of dissimilar pairs (D). Average precision is particularly useful to measure how much the relative orderings of distances are satisfied by the metric. Classification accuracy is useful to determine the most effective crawling strategies since it can measure how frequently a webpage changes in a given period. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.4">Qualitative results</head><p>We present in this subsection qualitative results when no human supervision is integrated in the learning process (i.e., we only consider the automatically generated constraints A and B, the sets D and S are both empty).</p><p>A first qualitative evaluation is illustrated in <ref type="figure" target="#fig_3">Fig. 5</ref>. The figure shows the weights of regions learned for the 8 webpages mentioned in Section 5.3 without human supervision. In order to learn these weights/maps of importance, we sample version quadruplets (v t , v t+1 , v r , v s ) using Eq. <ref type="formula" target="#formula_0">(18)</ref> and <ref type="bibr">Eq. (19)</ref> so that r ≥ t − 6, s ≤ t + 7, γ = 4. Images are segmented as a 10 × 10 or 8 × 8 grid. Training sets to learn these maps contain screenshots of pages visited every hour during 5 days. In terms of training constraints, we deal with less than 10, 000 constraints in our experiments, which makes the learning of the diagonal matrix metric D w very fast. The maps of importance in <ref type="figure" target="#fig_3">Fig. 5</ref> plot the relative values of the parameter w ∈ R d + of the learned metric. The highest positive values, represented by dark regions, correspond to important change regions of the page (e.g., news title). Menus and advertisements are ignored by the learned metric as expected.</p><p>We also tested our method on governmental websites but their change frequency is so low (the page often remains unchanged in 5 days) that a meaningful distance metric is not learnable in only 5 days. This is consistent with the observations of Adar et al. <ref type="bibr" target="#b1">[2]</ref>: government domain addresses do not change as frequently or as much as pages in other domains do, and this may reflect the fact this type of site provides richer and less transient content that only requires small, infrequent updates. <ref type="figure" target="#fig_4">Fig. 6</ref> illustrates the eigenvector v 1 of the largest eigenvalue λ 1 of M when we learn a full matrix metric D M . The matrix M = λ 1 v 1 v 1 is the projection of M onto the set of rank-1 symmetric PSD matrices, and thus the nearest rank-1 matrix of M in the spectral norm. The vector v 1 weighs the importance of spatial regions of the webpage since we have <ref type="figure" target="#fig_4">Fig. 6</ref> shows that v 1 correctly detects important change regions and ignores menus and advertisements.</p><formula xml:id="formula_51">D 2 M (v i , v j ) = λ 1 (v 1 c ij ) 2 .</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5.5">Quantitative Results:</head><p>We present in this subsection quantitative results obtained by our method. We first present average precision scores obtained in the unsupervised set (i.e., D ∪ S = ∅). Eventually, we present classification accuracy scores in the unsupervised and semi-supervised setups. Average Precision: <ref type="table">Table 1</ref> compares the average precision scores obtained using different distance metrics: -the Euclidean distance metric often used for the GIST descriptor <ref type="bibr" target="#b46">[47]</ref>. -a triplet-based method for which the set A is used to generate triplet-wise constraints. -our learned visual metric D w parameterized by a vector w.</p><p>-our proposed visual metric D M parameterized by the nondiagonal matrix M and learned using classic projected subgradient method (described in Algorithm 1). -our proposed visual metric D struct M parameterized by the non-diagonal matrix M and learned using 1-slack cutting plane method (described in Section 4.4).</p><p>More precisely, <ref type="table">Table 1</ref> presents the recognition scores when screenshot images of webpages are segmented 8 as m 2 regions (i.e., d regions (v i , v j ) ∈ R m 2 ) where m = 10. The Euclidean distance metric is outperformed by all the learned metrics although its performance is good, which means that the Euclidean distance is fitted for change detection. The triplet-based method which exploits a small number of constraints is outperformed by quadruplet-wise methods that exploit a larger number of meaningful constraints. The full matrix distance metric D M outperforms all the other methods. Particularly, it outperforms the diagonal matrix distance metric D w proposed in <ref type="bibr" target="#b39">[40]</ref> due to the exploitation of correlations between the different spatial regions. The distance metric D struct M learned with structural metric learning returns slightly worse results than D M . This is due to the fact that the cutting plane method solves an approximation of the original problem (by exploiting a subset of active constraints). In general, D struct M also outperforms the other metrics. The relatively low AP D for the BBC homepage is due to false detections of semantical changes because of the similarity criterion used to label version pairs. As mentioned in Section 5.3, two versions are considered as dissimilar only if their textual news content is different. However, a specificity of the BBC website is that each breaking news story goes along with a breaking news logo that appears only within the hour after its publication. After this given period, the BBC breaking news logo is replaced by a related news picture. <ref type="figure" target="#fig_8">Fig. 7</ref> illustrates one such example where the text content is identical (and the pair of versions is thus annotated as similar) but the breaking news logo is replaced by a news picture. Our method, which detects for <ref type="figure" target="#fig_8">Fig. 7</ref> a visual change in an important region, returns a high dissimilarity value although the version pair is annotated as similar. The AP D obtained by our method is then affected by this kind of noisy behavior of the BBC website. The other news websites studied in this paper do not have such a behavior and return better values of AP D . In a context where any new image about an important event has to be archived, the example illustrated in <ref type="figure" target="#fig_8">Fig. 7</ref>  92.8 ± 0.6% 81.8 ± 1.4% 87.3 ± 1.0% <ref type="table">Table 1</ref> Test average precisions obtained by the classic Euclidean distance and by learned metrics in the fully unsupervised setup. <ref type="figure" target="#fig_8">Fig. 7</ref> The important region of two successive versions of the BBC homepage. A specificity of the BBC website is that it always uses its "breaking news" logo to introduce recent breaking news and removes it after a short period. In this case, since the textual content of the main news is unchanged, we consider the two versions are similar. However, in a Web archiving context, these two versions are considered as dissimilar since a relevant visual information is updated. Our algorithm tends to detect a visual change in the important change region although the news is the same.</p><p>tups. For the sake of clarity of the paper and scalability of the method, we present in the following only the results obtained with the diagonal Qwise visual distance metric D w and with GIST descriptor. The relative quantitative performances of other models follow the same tendencies as in <ref type="table">Table 1</ref>.</p><p>When human annotations to distinguish similar pairs from dissimilar pairs are not provided (i.e., S ∪ D = ∅), a dis-tance D w can be learned from the training set N = A ∪ B composed of quadruplets of successive versions of the same webpage (crawled for 5 days in our experiments). However, no threshold (b in Eq. <ref type="formula" target="#formula_1">(20)</ref> and Eq. <ref type="formula" target="#formula_0">(21)</ref>) is learned to distinguish similar pairs from dissimilar pairs. In other words, pair distances can be compared to one another but our learned metric cannot determine whether or not important changes occurred in a given pair of versions. We present here how to learn a change detection algorithm (that can distinguish similar pairs of versions from dissimilar pairs) without exploiting information provided by human users. In particular, we propose to learn a change detection algorithm that exploits the metric D w learned from the set N to automatically generate the training sets S (class −1) and D (class +1). Once these sets are created, we learn a binary classifier that discriminates pairs in S from pairs in D. Assuming that the metric D w learned in Eq. <ref type="formula" target="#formula_0">(14)</ref> provides lowest distance values for similar pairs and highest values for dissimilar pairs, the training pairs in S and D can be automatically inferred from the training set of page versions in N . Let k be the cardinality of the created sets S and D (k = |S| = |D|). The k version pairs (v t , v t+1 ) (among the 24 × 5 = 120 possible pairs) with highest values of D w (v t , v t+1 ) form D, whereas the k version pairs with values D w (v t , v t+1 ) closest to 0 (and that are not completely identical) form S. Any binary classifier that exploits the generated training samples in S and D can be learned. We learn a linear SVM classifier that discriminates pairs in D from pairs in S.  <ref type="table" target="#tab_5">Table 2</ref> report classification accuracies in the unsupervised setup described above. We learn a linear SVM with the automatically created sets S and D using the |S| = |D| = k = 25 version pairs with lowest and highest distances, respectively. <ref type="figure" target="#fig_5">Fig. 8</ref> illustrates the change detection accuracy as a function of the grid resolution used to segment webpage screenshots (i.e., the number of regions in webpages). Change detection improves as the grid resolution increases. At a grid resolution of 4 × 4, the change detection is already better for all websites than a naive classifier that randomly determines whether a test pair is similar and would reach 50% accuracy. We reach accuracies up to 87% on NPR with a 10 × 10 grid resolution. <ref type="table" target="#tab_5">Table 2</ref> compares accuracies (using a 10 × 10 grid resolution) depending on whether visual features are used independently (as in <ref type="figure" target="#fig_5">Fig. 8</ref>) or combined with structural distances. The combination of structural and visual distances improves the accuracy up to 2% on CNN.</p><p>All these results illustrate the ability of our model to learn a change detection algorithm without human supervision.</p><p>We now show how the results may be improved by exploiting little human supervision. <ref type="figure">Fig 9 reports</ref>   number of annotated pairs per class (k = |S| = |D|) 9 . Using k = 5 annotated pairs per class improves accuracy by 5% when compared to the unsupervised method (k = 0), and using 20 annotated pairs further improves recognition by 5.5%. However, we reach a ceiling for k &gt; 20, around which the accuracy does not improve significantly. Using a small number of annotated pairs is then sufficient. Moreover, note that the selected pairs in S and D are randomly chosen among the 24×5 = 120 possible pairs. Active strategies can be performed to minimize integrated human supervision. <ref type="table">Table 3</ref> compares the accuracies obtained with the change detection method proposed in <ref type="bibr" target="#b40">[41]</ref> and with our method that combines a learned visual metric with structural distances. To the best of our knowledge, the approach in <ref type="bibr" target="#b40">[41]</ref> is the only machine learning method proposed for change detection in the context of Web archiving. This approach combines unlearned visual and structural distances to learn a linear SVM. The approach in <ref type="bibr" target="#b40">[41]</ref> exploits SIFT and colorbased bags-of-words representations which are slow to compute (see <ref type="bibr">[39, Section 5]</ref> for details on computation time). For the sake of scalability, we consider instead GIST descriptor which is more appropriate to our large scale problem <ref type="bibr" target="#b15">[16]</ref> and can be related to SIFT-based BoWs <ref type="bibr" target="#b53">[54]</ref> since it provides gradient information for the different spatial grids in the image. As shown in <ref type="bibr" target="#b38">[39]</ref>, the recognition performance of similarity between pairs of webpage versions is dominated by gradient-based descriptors. Color descriptors can also be included at the expense of additional computation time.  <ref type="table">Table 3</ref> Test accuracies (in %) in the (semi-)supervised setup of the baseline method described in <ref type="bibr" target="#b40">[41]</ref> and our method using the same visual and structural descriptors.</p><p>Our proposed approach outperforms the approach in <ref type="bibr" target="#b40">[41]</ref> by a margin of 12%. Moreover, combining structural and visual distances (see <ref type="table">Table 3</ref>) improves recognition over visual distances alone (see <ref type="figure">Fig 9)</ref> with a global margin of 1% for all websites. This result is consistent with the observations in <ref type="bibr" target="#b40">[41]</ref> that structural and visual distances are complementary. In conclusion, our semi-supervised method outperforms the unsupervised approach and the approach in <ref type="bibr" target="#b40">[41]</ref> that does not focus on important regions.</p><p>In conclusion of these Webpage experiments, we have shown that:</p><p>• the metric learned with our proposed strategy allows to detect important regions in webpages. The learned metric also implicitly returns small distances for semantically similar pairs of versions and larger values for semantically distant versions.</p><p>• the metrics learned in an unsupervised way perform very well and their recognition performance is improved with very little human supervision.</p><p>• our sampling strategy allows to create a lot of significant constraints. This is particularly useful when triplet-wise sampling strategies generate a relatively small number of constraints.</p><p>• the learned distance metric can be extended by combining both visual and structural information metrics.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6">Hierarchical Metric Learning</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.1">Creation of constraints</head><p>In this section, the goal is to learn a distance metric that is relevant to a given hierarchical object class taxonomy. More precisely, our objective is to learn a metric such that images from close (e.g., sibling) classes with respect to the class semantic hierarchy are more similar than images from more distant classes. Our strategy is illustrated in <ref type="figure">Fig. 2</ref> where different subclasses of the general class Canis lupus are gathered together depending on their subspecies and their breed, which corresponds to subclasses and subsubclasses in the taxonomy, respectively.</p><p>Given a semantic taxonomy expressed by a tree of classes, let us consider two sibling classes c a and c b and a class c d that is not their sibling (we call it a cousin class). We generate two types of quadruplet-wise constraints in order to:</p><p>(1) Enforce the dissimilarity between two images from the same class to be smaller than between two others from sibling classes. If (I i , I j ) are both sampled from c a , and</p><formula xml:id="formula_52">(I k , I l ) are sampled from c a × c b , we want D ij &lt; D kl .</formula><p>These constraints are similar to the ones exploited by LMNN with the exception that we use quadruplets of images and that LMNN does not exploit taxonomy information: i.e., we sample I l from a sibling class of c a whereas LMNN samples I l from any class different from c a .</p><p>(2) Enforce the dissimilarity between two images from sibling classes to be smaller than between two images from cousin classes. If (I i , I j ) are sampled from c a × c b and</p><formula xml:id="formula_53">(I k , I l ) from c a ×c d , we want D ij &lt; D kl .</formula><p>These constraints are strongly related to the taxonomy information and allow to discriminate images from sibling classes better than from any other class. They follow the idea that semantically close objects should be closer with the learned distance metric.</p><p>In order to limit the number of training constraints, we sample the image I j such that I j is one of the k nearest neighbors of I i : I j is sampled in the same class in the case (1) and in a sibling class in the case (2).</p><p>We consider both the diagonal PSD matrix and the full matrix distance metric formulations described in Section 3. The experiments are performed on datasets where billions of constraints can be generated. To have a tractable framework, we use the optimization strategies mentioned in Section 4.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.2">Classification results</head><p>To evaluate our metric learning for class hierarchy, we follow the subtree classification task described in <ref type="bibr" target="#b59">[60]</ref>. There are 9 datasets which are all subsets of ImageNet <ref type="bibr" target="#b14">[15]</ref>): Amphibian, Fish, Fruit, Furniture, Geological Formation, Musical Instrument, Reptile, Tool, Vehicle. Each of these 9 datasets contains 8 to 40 different classes and from 8000 to 54000 images each. We use the train, validation and test sets de-  <ref type="table">Table 4</ref> Standard classification accuracy for the various datasets using the SVM classification framework for the 9 datasets from ImageNet.</p><p>fined in <ref type="bibr" target="#b59">[60]</ref>, and also the same publicly available features 10 : 1000 dimensional SIFT-based Bag-of-Words (BoW) <ref type="bibr" target="#b53">[54]</ref>. We learn a PSD matrix M ∈ S d + that exploits the constraints described in introduction and that we decompose <ref type="bibr" target="#b10">11</ref> as M = L L. The matrix L is used to project input data in another representation space which is the input space of another classifier. We choose a standard classifier (linear SVM) to perform classification.</p><p>When we constrain M ∈ S d + to be diagonal, we formulate our metric</p><formula xml:id="formula_54">D 2 M (I i , I j ) = D w (I i , I j ) = w Ψ (I i , I j ) where Ψ (I i , I j ) = (x i − x j ) • (x i − x j ) and w = Diag(M).</formula><p>Once the diagonal PSD matrix M ≥ 0 is learned, we project the input space using the linear transformation parameterized by the diagonal matrix <ref type="table">Table 4</ref> presents the results reported in <ref type="bibr" target="#b59">[60]</ref> (a nonlinear SVM, TaxEmb <ref type="bibr" target="#b60">[61]</ref> and the method proposed in <ref type="bibr" target="#b59">[60]</ref>) and our Qwise methods (diagonal matrix <ref type="bibr" target="#b39">[40]</ref>, and full matrix).</p><formula xml:id="formula_55">M 1/2 = L ∈ R d×d such that ∀i ∈ {1, . . . , d}, L ii = √ M ii (note that L L = M).</formula><p>The model of Verma et al. <ref type="bibr" target="#b59">[60]</ref> and TaxEmb <ref type="bibr" target="#b60">[61]</ref> also exploit class taxonomy information to learn hierarchical similarity metrics or embedding. It is worth mentioning that Verma et al. <ref type="bibr" target="#b59">[60]</ref> have a complex learning framework: they learn a local metric parameterized by a full PSD matrix for each class (leaf of the subtree), which can lead to overfitting. Our Qwise-learning model is simpler since we learn only one global metric for each subtree. Moreover, when we use a diagonal matrix model, the number of parameters only grows linearly with the input space dimension. Both proposed methods obtain surprisingly very similar results with a global accuracy of 36.4 ∼ 36.5%, which is 1.6% better than the method of Verma et al. <ref type="bibr" target="#b59">[60]</ref>. Both proposed methods outperform all the reported methods, globally and on each dataset except Fruit and Tool. All these results validate the fact that the proposed constraints are useful when richer information compared to class membership information is provided. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="6.3">Further analysis with k-NN classification</head><p>We now further analyze our metrics. We use the same k-NN classification 12 for all the compared approaches to focus on the discussion of the metrics. <ref type="table">Table 5</ref> reports the results obtained with the Euclidean distance (M = I d ), LMNN <ref type="bibr" target="#b61">[62]</ref>, and our Qwise (diagonal and full matrix models). All the learned models outperform the Euclidean distance in this setup for the mentioned datasets. Full matrix models that exploit correlations between features outperform metric learning models that learn a diagonal distance matrix. We note that our proposed methods, that exploit hierarchical taxonomy information, slightly outperform LMNN that uses only class membership information. It is worth mentioning that this gain is not straightforward as our proposed constraints focus on preserving semantic distances w.r.t. the provided taxonomy rather than performing k-NN classification task. Moreover, although the method in Verma et al. <ref type="bibr" target="#b59">[60]</ref> exploits a k-NN classification framework, it cannot be directly compared to the results in <ref type="table">Table 5</ref> since it exploits an ad hoc k-NN classifier which is optimized for the learned metric and is not the same as the one used by the methods reported in <ref type="table">Table 5</ref>. All the methods in <ref type="table">Table 5</ref> exploit the same k-NN classifier as LMNN and can thus be compared to one another.</p><p>To better observe the preservation of relationship (in the hierarchy) between the predicted class and the ground truth class instead of only focusing on the correct assignment of an image to its class, we use the modified accuracy Acc</p><formula xml:id="formula_56">c = 1 − 1 m m t=1 ∆(c, ˆ y c t )</formula><p>where c andˆyandˆ andˆy c t denote the ground truth and predicted class labels of the t th test example, respectively, and m is the total number of test examples in the class c. We consider:</p><formula xml:id="formula_57">∆(c, ˆ y c t ) =    0 ifˆyifˆ ifˆy c t = c 0.5 ifˆyifˆ ifˆy c</formula><p>t is a sibling class of c 1 otherwise <ref type="formula" target="#formula_1">(24)</ref> The proposed evaluation metric ∆ takes class hierarchy information into account. In particular, Eq. <ref type="formula" target="#formula_1">(24)</ref>   <ref type="table">Table 6</ref> Classification accuracy that takes class hierarchy information into account for the various datasets using the k-NN classification framework (see text).</p><p>as a special case of the Context Sensitive Loss (CSL) function 13 used in <ref type="bibr" target="#b59">[60]</ref>. In <ref type="bibr" target="#b59">[60]</ref>, they consider that ∆(c, ˆ y c t ) is the height of the lowest common ancestor of the pair (c, ˆ y c t ) normalized by the maximum tree height of the taxonomy tree when c = ˆ y c t . Eq. (24) corresponds to the same CSL loss as in <ref type="bibr" target="#b59">[60]</ref> when the maximum tree height of the category taxonomy is 2. Since the constraints that we consider in Section 6.1 focus on pairs of images in the same category or in sibling categories, the loss defined in Eq. <ref type="formula" target="#formula_1">(24)</ref> is more appropriate to evaluate that our learned metric better takes into account images in the two lowest levels of the taxonomy. <ref type="table">Table 6</ref> reports the corresponding scores. Qwise outperforms other methods, and the gap with LMNN is more significant. This demonstrates that the proposed constraints allow to better fit semantic relationships between classes. This result corroborates the claim of <ref type="bibr" target="#b59">[60]</ref> that exploiting class taxonomy to learn a metric is beneficial for recognition.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7">Metric learning and Relative Attributes</head><p>In this section, we present and compare different strategies for sampling quadruplet-wise constraints in the context of relative attributes. We show that relaxing strong equivalence constraints by quadruplet-wise constraints introduces robustness and compensates for labeling imprecisions.</p><p>Relative attributes have been introduced in <ref type="bibr" target="#b47">[48]</ref>. Attributes are human-nameable concepts used to describe images. For instance, in <ref type="figure" target="#fig_0">Fig. 10</ref>, the attribute a m = "presence of smile" allows to rank 4 celebrity classes from the least to the most smiling. Instead of considering attributes as boolean values as done in <ref type="bibr" target="#b37">[38]</ref> (i.e., the concept is present in the image or not), Parikh and Grauman <ref type="bibr" target="#b47">[48]</ref> learn for each attribute a m a vector w m ∈ R d such that the score w m x i ∈ R represents the degree of presence of a m in the image I i . <ref type="bibr" target="#b12">13</ref> As mentioned in [60, footnote 1], there exist several ways to define a CSL and one of these ways is chosen in <ref type="bibr" target="#b59">[60]</ref>. <ref type="figure" target="#fig_0">Fig. 10</ref> Quadruplet-wise (Qwise) strategy on 4 face classes ranked according to the degree of presence of smile. Qwise strategy defines quadruplet-wise constraints to express that dissimilarities between examples from (f ) and (g) should be smaller than dissimilarities between examples from (e) and (h).</p><formula xml:id="formula_58">Presence of smile − + Least smiling ? ∼ ? Most smiling Class (e) Class (f ) Class (g) Class (h) ⇓ Learn dissimilarity D such that: D( , ) &lt; D( , ) D( , ) &lt; D( , )</formula><p>To learn w m , they use original training sets about relative ordering between classes such as the one presented in <ref type="figure" target="#fig_0">Fig. 10</ref>: (e) (f ) ∼ (g) (h). In <ref type="bibr" target="#b47">[48]</ref>, only pairwise relations are considered for learning:</p><p>• (e) (f ) meaning that images in class (f ) have stronger presence of the attribute a m than images in class (e).</p><p>• (f ) ∼ (g) meaning that images in (f ) and (g) have equivalent strength of presence of the attribute a m .</p><p>Let M be the total number of attributes that are considered for a given dataset. Once the optimal weight vectors w m are learned for all the attributes a m with m ∈ {1, . . . , M }, each image I i is described by a high level feature representation:  <ref type="formula" target="#formula_0">(12)</ref>). As explained in Section 2.1, their problem can then be cast as a metric learning problem.</p><formula xml:id="formula_59">h i = [w 1 x i , . . . , w m x i , . . . , w M x i ] ∈ R M</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1">Integrating quadruplet-wise constraints</head><p>Following our vector formalism defined in Section 3.3.2, we consider to learn for each attribute a m the signed dissimilarity function D wm such that D wm (I i , I j ) = w m Ψ (I i , I j ), with Ψ (I i , I j ) = x i − x j . The sign of D wm (I i , I j ) determines the relative ordering of presence of the attribute a m between the images I i and I j . For instance, D wm (I i , I j ) &gt; 0 means that the presence of a m is stronger in I i than in I j .</p><p>The provided information concerning the degree of presence of an attribute in an image is given at a class level: pairwise constraints may be noisy or irrelevant, leading to less than optimal learning scheme. Considering triplet-wise constraints (e.g., class (x) is more similar to (y) than to (z)) could be helpful but still generates inconsistent constraints in some cases: in <ref type="figure" target="#fig_0">Fig. 10</ref> (second row), Owen (f ) seems to be smiling more like Johansson (h) than like Rodriguez (g). To further exploit the available ordered set of classes and overcome these limitations, we consider relations between quadruplets. Two types of Qwise constraints may be derived from the training set.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1.1">Replacing ordered pairs by quadruplets</head><p>The first type of relation that we consider in this section is: (e) (f ) (g) (h). We do the following assumption: any image pair from the extreme border classes (e) and (h) is more dissimilar than any image pair from the intermediate classes (f ) and (g). This information can be written:</p><formula xml:id="formula_60">∀(I i , I j , I k , I l ) ∈ (g) × (f ) × (h) × (e) D kl &gt; D ij (25)</formula><p>By sampling such quadruplets from the whole set of relative orderings over classes (e.g., <ref type="table">Table 7</ref>, see experiments for details), we build our Qwise set N such that for all quadruplet q in N , we have δ q = 1 in Eq. (14).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.1.2">Flexible constraints instead of equivalence constraints</head><p>The second type of relations is: (e) (f ) ∼ (g) (h), which means that the presence of the attribute a m is equivalent for any pair of images (I i , I j ) ∈ (f ) × (g). To take into account the fact that the dissimilarity D ij between I i and I j is signed whereas the provided information is not, we consider the following constraint 14 : D kl &gt; |D ij | where <ref type="bibr" target="#b13">14</ref> It is not necessary to discuss the sign of D kl since I k was annotated to have stronger presence of a m than I l . We infer D kl &gt; 0.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>OSR Attributes</head><p>Relative Ordering of Classes Natural  (I k , I l ) ∈ (h) × (e). In order to have a convex problem, we rewrite it as two constraints:</p><formula xml:id="formula_61">T I ∼ S H C ∼ O ∼ M ∼ F Open T F I ∼ S M H ∼ C ∼ O Perspective O C M ∼ F H I S T Large-Objects F O M I ∼ S H ∼ C T Diagonal-Plane F O M C I ∼ S H T Close-Depth C M O T ∼ I ∼ S ∼ H ∼ F PubFig Attributes Relative Ordering of Classes Masculine-Looking S M Z V J A H C White A C H Z J S M V Young V H C J A S Z M Smiling J V H A ∼ C S ∼ Z M Chubby V J H C Z M S A Visible-Forehead J Z M S A ∼ C ∼ H ∼ V Bushy-Eyebrows M S Z V H A C J Narrow-Eyes M J S A H C V Z Pointy-Nose A C J ∼ M ∼ V S Z H Big-Lips H J V Z C M A S Round-Face H V J C Z A S M</formula><formula xml:id="formula_62">D kl ≥ D ij + 1 D kl ≥ D ji + 1 (26)</formula><p>We thus generate two quadruplets in N from Eq. (26).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2">Classification Experiments</head><p>To evaluate and compare our Qwise scheme, we follow a classification framework inspired from <ref type="bibr" target="#b47">[48]</ref>   <ref type="bibr" target="#b47">[48]</ref>: a 512-dimensional GIST <ref type="bibr" target="#b46">[47]</ref> descriptor for OSR and a concatenation of the GIST descriptor and a 45-dimensional Lab color histogram for PubFig. Relative orderings of classes according to some semantic attributes are also available (see <ref type="table">Table 7</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2.1">Recognition with Gaussian Models</head><p>We study here the impact of our proposed constraints on the original relative attribute problem <ref type="bibr" target="#b47">[48]</ref>. Baseline: As a baseline, we use the relative attribute learning problem of Parikh and Grauman <ref type="bibr" target="#b47">[48]</ref> that exploits relative attribute orderings between classes (see <ref type="table">Table 7</ref>) to generate pairwise constraints. A Gaussian model is learned to perform recognition, as explained below. Qwise Method: We use for OSR and Pubfig the quadrupletwise constraints defined in Section 7.1. The Qwise scheme uses only relative attribute information to learn a linear transformation. Particularly, we distinguish two QWise adaptations of the problem of <ref type="bibr" target="#b47">[48]</ref> named QWSL and OQWSL: -QWSL: this method replaces pairwise equivalence constraints as explained in Section 7.1.2 (Eq. <ref type="formula" target="#formula_1">(26)</ref>) and exploits the same pairwise ordered constraints as <ref type="bibr" target="#b47">[48]</ref>. By relaxing only restrictive pairwise equivalence constraints, this method is more robust to the annotation problems described in <ref type="figure" target="#fig_0">Fig 10.</ref> -OQWSL: this method exploits only quadruplet-wise constraints for training. The pairwise equivalence constraints are relaxed as explained in Section 7.1.2, and pairwise ordered constraints are replaced by quadruplet-wise constraints as explained in Section 7.1.1. On some datasets, the pairwise ordered annotations performed by humans may be noisy in the same way as equivalence constraints. The purpose of this method is to relax the pairwise constraints generated by these possibly noisy annotations. Values of B: when at least one of the two images I i and I j belongs to extreme border classes (e.g., the most or least smiling classes), a pair of images (I k , I l ) such that D kl &gt; D ij cannot be sampled. We ignore the constraint in this case: since we cannot generate Qwise constraints from a pairwise constraint that involves extreme border classes, the maximum possible value for B is C−2 2 = 15 for OQWSL where C = 8 is the number of classes. Otherwise, the maximum possible value for B is C 2 = 28. Results: The comparison of our proposed methods and the baseline <ref type="bibr" target="#b47">[48]</ref> is illustrated in <ref type="figure" target="#fig_0">Fig. 11</ref> for the OSR dataset and PubFig dataset. -Pairwise baseline study: we first study for the baseline <ref type="bibr" target="#b47">[48]</ref> the impact of the pairwise equivalence constraints (i.e., (f ) ∼ (g)) on recognition performance to better analyze the benefit of our Qwise constraints. On both OSR and PubFig, recognition performance is comparable when pairwise equivalence constraints are exploited and when they are not. This proves that equivalence constraints are not informative and do not appropriately exploit the provided equivalence information. In the following, we study the impact on performance recognition induced by the integration of our proposed Qwise constraints: -OSR: On OSR, our methods reach an accuracy of 74.3% and 74.1%, which is 3% better than the optimal baseline accuracies. QWSL is more robust as B increases, it seems to benefit both from the precision of strict order pairwise constraints and from the flexibility applied on problematic equivalent pairs of classes. OQWSL performs surprisingly well with a set of 4 classes (B = 1) per attribute, attesting that our Qwise scheme performs well with a small number of constraints. -PubFig: On PubFig, since there are not many equivalence constraints (see <ref type="table">Table 7</ref>), QWSL mostly uses the same pair- Proposed methods: wise constraints as the baselines and then performs similarly. OQWSL reaches 72% accuracy, which is 2% better than baselines with comparable B (number of constraints). Moreover, when combining OQWSL and pairwise ordered constraints for extreme border classes, our method reaches 74.5% accuracy.</p><formula xml:id="formula_63">QWSL-1 OQWSL-1 QWSL-2 OQWSL-2 ♦ QWSL-3 OQWSL-3</formula><p>The recognition performance of all the baselines and proposed methods decreases with large values of B on OSR but increases on PubFig, which suggests that the provided annotations of OSR are noisy, or at least not reliable. QWSL is more robust and performs at least as well as baselines on both datasets. However, OQWSL is clearly better that all the other methods on PubFig with comparable B.</p><p>In conclusion, our approach outperforms the baselines on both OSR and PubFig with a margin of 3% accuracy, reaching state-of-the-art results in this original setup 15 <ref type="bibr" target="#b47">[48]</ref>. This proves that relaxing noisy pairwise constraints by intuitive quadruplet-wise constraints introduces robustness and compensates for labeling imprecisions described in Section 7.1.</p><p>Impact of the distance of surrounding classes to create quadruplets: We have a totally ordered set of classes per attribute to describe relations. We only studied the case where we upper bound the dissimilarity between two classes with their nearest neighbor classes in the ordered set. What happens if we choose more distant classes in the set to create quadruplets? <ref type="figure" target="#fig_0">Fig. 12</ref> shows that our methods are very robust to the distance of surrounding classes. In the figures, the methods (O)QWSL-1, (O)QWSL-2, (O)QWSL-3 correspond to different sampling strategies to generate a given quadruplet q = (I i , I j , I k , I l ) from a given pair (I i , I j ). For a given p ∈ {1, 2, 3}, (O)QWSL-p corresponds to sam-15 A different setup is used in <ref type="bibr" target="#b48">[49]</ref> where additional feedback improves recognition.</p><p>pling the images I k and I l from the p th closest classes of the classes of I i and I j . <ref type="bibr" target="#b15">16</ref> Except in <ref type="figure" target="#fig_0">Fig 12 (b)</ref> where OQWSL-3 performs little worse than OQWSL-1, choosing further neighbors gives better results than choosing nearest neighbors. Our best accuracies are obtained by doing so: QWSL-2 in <ref type="figure" target="#fig_0">Fig. 12 (a)</ref>, OQWSL-2 in <ref type="figure" target="#fig_0">Fig. 12 (b)</ref> and OQWSL-3 in <ref type="figure" target="#fig_0">Fig. 12 (d)</ref>. Our performances are about 4% and 1.5% better than the optimal baselines accuracies on OSR and PubFig respectively (3.5% better on PubFig with comparable B). The reason of this phenomenon seems to be the high intra-class variance. In general, using two close classes seems to be the right choice to learn a good margin between classes. However, if the generated training constraints are noisy, the quality of the learned projection direction w is affected.</p><p>In conclusion, Qwise constraints allow to refine relations between samples and can improve recognition.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="7.2.2">Comparison of different classification models</head><p>Learning for each class a multivariate Gaussian distribution N (µ s , Σ s ) can be seen as learning a Mahalanobis distance metric D Σ −1 s (x, µ s ). We propose to compare the performances of models learned with our constraints when combined with metric LMNN <ref type="bibr" target="#b61">[62]</ref>. LMNN exploits only class membership information in order to learn a Mahalanobislike distance metric. For each image, LMNN tries to satisfy the condition that members of a predefined set of target neighbors (of the same class) are closer than samples from other classes. In <ref type="bibr" target="#b61">[62]</ref>, those neighbors are chosen using the 2 -distance in the input space. on the dataset, we use a different definition of Q+Pwise based on the results obtained in Section 7.2.1.</p><p>• For OSR, Q+Pwise is QWSL which obtained the best results with a Gaussian model and proved to be robust.</p><p>• For Pubfig, Q+Pwise is OQWSL to which we add pairwise inequality constraints that are applied to extreme border categories for each attribute.</p><p>In both cases, our method combines quadruplet-wise and pairwise constraints. We denote: -LMNN: the methods for which a k-NN classifier is used (since LMNN is designed for k-NN classification). -LMNN-G: the methods for which a linear transformation is learned but used with a multivariate Gaussian model instead of a k-NN classifier. We propose these methods in order to have the same classifier as <ref type="bibr" target="#b47">[48]</ref> and be fair in comparison. -RA + LMNN is a combination of the baselines <ref type="bibr" target="#b47">[48]</ref> and <ref type="bibr" target="#b61">[62]</ref> that first exploits pairwise constraints based on relative attribute annotations to learn a representation of images in attribute space, and second, learns a metric in attribute space with LMNN.</p><p>We use the publicly available codes of <ref type="bibr" target="#b47">[48]</ref> and <ref type="bibr" target="#b61">[62]</ref>. For comparison, we also report as baselines the combination of OQWSL (which exploits only quadruplet-wise constraints) and QWSL with LMNN. Results: <ref type="table">Table 8</ref> reports the classification scores for the different baselines, Q+Pwise, and Q+Pwise+LMNN.</p><p>On OSR and Pubfig, Q+PWise reaches an accuracy of 74.1% and 74.5%, respectively. It outperforms the baselines <ref type="bibr" target="#b47">[48]</ref> and <ref type="bibr" target="#b61">[62]</ref> on both datasets by a margin of 3% accuracy. Moreover, performance is further improved when relative attributes and LMNN are combined. Particularly, an improvement of about 3% is obtained on Pubfig, reaching 77.6%. Relative attribute annotations (used for Qwise learning) and class membership information (used for LMNN) then seem complementary. It can also be noted that the combination of pairwise and Qwise constraints obtain the best results (compared to OQWSL).</p><p>In conclusion, we have proposed and compared different strategies for sampling constraints to compensate for labeling imprecisions. Relaxing strong equivalence constraints by quadruplet-wise constraints improves recognition.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="8">Conclusion and Perspectives</head><p>In this paper, we have proposed a general and efficient Mahalanobis distance metric learning framework that exploits constraints over quadruplets of images. Our approach can easily combine relative and absolute distance constraints. We experimentally show in different scenarios (i.e., relative attributes, metric learning on class hierarchy and temporal webpage analysis) that it is specifically adapted to incorporate knowledge from rich or complex semantic label relations.</p><p>In the context of relative attributes, we have shown that some pairwise comparisons of images are limited and can be improved by relaxing the quadruplet-wise relaxed constraints. In the context of hierarchical classification, class taxonomies can be used to better describe semantical relationships between images.</p><p>We have proposed a novel webpage change detection method that exploits temporal relationships between versions and detects important change regions. This method can be easily learned in a unsupervised or semi-supervised way and exploit structural information of webpages. Particularly, the change detection algorithm learned without human supervision obtains good recognition results on different websites. In order to improve recognition, it can also exploit a small number of human annotations that are performed globally on page version pairs instead of requiring annotation of each semantical block of each page as usually done. Since our method mostly relies on visual comparisons on rendered pages, it is generic and robust to the way the analyzed pages are coded. Structural distances, that use the source code of webpages, are also easy to integrate in our framework. The possible applications of our approach are diverse: Web crawling and search engine improvements, navigation in Web archives, improvement of mobile phone applications that load the important content of webpages...</p><p>Future work includes the learning of non-linear distance metrics and more general types of constraints that exploit sets of images. Also, the implementation of a webpage segmentation method dedicated to change detection by using our algorithm as a preprocessing step will be investigated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A Solver for the vector optimization problem</head><p>We describe here the optimization process when the goal is to learn a dissimilarity function D w parameterized by a vector w.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.1 Primal form of the optimization problem</head><p>We first rewrite <ref type="bibr">Eq. (14)</ref> in the primal form in order to use the efficient and scalable primal Newton method <ref type="bibr" target="#b10">[11]</ref>.</p><p>The first two constraints of Eq. <ref type="formula" target="#formula_0">(14)</ref> over S and D try to satisfy Eq. <ref type="formula">(9)</ref> and Eq. (10). They are equivalent to y ij (D w (I i , I j ) − b) ≥ 1 − ξ ij where y ij = 1 ⇐⇒ (I i , I j ) ∈ D and y ij = −1 ⇐⇒ (I i , I j ) ∈ S. Eq. <ref type="formula" target="#formula_0">(14)</ref> can then be rewritten equivalently :</p><formula xml:id="formula_64">min (w,b) 1 2 (w 2 2 + b 2 ) + C p (I i ,I j )∈S∪D L 1 (y ij , D w (I i , I j ) − b) + C q q∈N L δ q (1, D w (I k , I l ) − D w (I i , I j )) s.t.w ∈ C d , b ∈ C (27)</formula><p>where L 1 and L δ q are loss functions and y ij ∈ {−1; 1}. In particular, for Eq. <ref type="formula" target="#formula_0">(14)</ref> and Eq. (27) to be strictly equivalent, they have to correspond to the classic hinge loss function L δ (y, t) = max(0, δ − yt).</p><p>We actually use a differentiable approximation of this function to have good convergence properties <ref type="bibr" target="#b9">[10,</ref><ref type="bibr" target="#b10">11]</ref>. For convenience, we rewrite some variables: • ω = <ref type="bibr">[w , b]</ref> is the concatenation of w and b in a single (d + 1)-dimensional vector. We note e = d + 1 and then have ω ∈ R e .</p><p>• c ij = [(Ψ (I i , I j )) , −1] is the concatenation vector of Ψ (I i , I j ) and −1. We also have c ij ∈ R e .</p><p>• p = (I i , I j ) ⇐⇒ c p = c ij and y p = y ij .</p><p>• q = (I i , I j , I k , I l ) ⇐⇒ z q = x kl − x ij .</p><p>Eq. <ref type="bibr" target="#b26">(27)</ref> can be rewritten equivalently with these variables:</p><formula xml:id="formula_65">min ω∈C e 1 2 ω 2 2 + C p p∈S∪D L 1 (y p , ω c p ) + C q q∈N L δ q (1, ω z q )<label>(28)</label></formula><p>By choosing such a regularization, our scheme may be compared to a RankSVM <ref type="bibr" target="#b10">[11]</ref>, with the exception that the loss function L δ q works on quadruplets. The complexity of this convex problem w.r.t. ω is linear in the number of constraints (i.e., the cardinality of N ∪ D ∪ S). It can be solved with a classic or stochastic (sub)gradient descent w.r.t. ω depending on the number of constraints. The number of parameters to learn is small and grows linearly with the input space dimension, limiting overfitting <ref type="bibr" target="#b45">[46]</ref>. It can also be extended to kernels <ref type="bibr" target="#b10">[11]</ref>.</p><p>We describe in the following how to apply Newton method <ref type="bibr" target="#b30">[31,</ref><ref type="bibr" target="#b9">10,</ref><ref type="bibr" target="#b10">11]</ref> to solve Eq. (28) with good convergence properties. The primal Newton method <ref type="bibr" target="#b10">[11]</ref> is known to be fast for SVM classifier and RankSVM training. As our vector model is an extension of the RankSVM model, the learning is then also fast.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.2 Loss functions</head><p>Let us first describe loss functions that are appropriate for Newton method. Since the hinge loss function is not differentiable, we use differentiable approximations of L 1 and L δ q inspired by the Huber loss function.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm 2 Projected Newton Step</head><p>Require: Sets S, D, A, B (some of them can be empty) 1: Iteration t = 0 2: Initialize ω t ∈ C e (e.g., ω t = 1) 3: Initialize the step size η t &gt; 0 (e.g., η t = 1) 4: repeat 5: Compute t and H t (gradient and hessian w.r.t. ω t ) 6: ω t+1 ← Π C e (ω t − η t H −1 t t ) 7:</p><p>t ← t + 1 8: until ||ω t − ω t−1 || 2 2 ≤ 9: Return ω t For simplicity, we also constrain the domain of δ q to be 0 or 1 (i.e., δ q ∈ {0, 1}). The set N can then be partitioned as two sets A and B such that for all:</p><p>• q ∈ N , δ q = 1 ⇐⇒ q ∈ A • q ∈ N , δ q = 0 ⇐⇒ q ∈ B</p><p>In Eq. <ref type="formula" target="#formula_1">(28)</ref>, we consider t p = ω c p or t q = ω z q . Without loss of generality, let us consider t r with r ∈ β (with β = S, D, A or B) and y ∈ {−1, +1}. Our loss functions are written: </p><p>where h ∈ [0.01, 0.5]. In all our experiments, we set h = 0.05. As described in <ref type="bibr" target="#b9">[10]</ref>, L h 1 is inspired from the Huber loss function, it is a differentiable approximation of the hinge loss (L 1 (y, t) = max(0, 1 − yt)) when h → 0. Similarly, L h 0 is a differentiable approximation when h → 0 of L 0 (y, t) = max(0, −yt), the adaptation of the hinge loss that considers the absence of security margin. Given set β and y ∈ {−1, +1}, we can infer three disjoint sets:</p><p>• β 0 i,y is the subset of elements in β that have zero loss in L h i (y, ·).</p><p>• β Q i,y is the subset of elements in β that are in the quadratic part of L h i (y, ·).</p><p>• β L i,y is the subset of elements in β in the non-zero loss linear part of L h i (y, ·). </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A.3 Gradient and Hessian Matrices</head><p>and the Hessian matrix H ∈ R e×e of Eq. 28 w.r.t. ω is:</p><formula xml:id="formula_68">H = I e + C p 2h p∈(S∪D) Q 1,yp c p c p + C q 2h q∈(A Q 1,1 ∪B Q 0,1 ) z q z q<label>(32)</label></formula><p>where I e ∈ R e×e is the identity matrix. H is the sum of a positive definite matrix (I e ) and of positive semi-definite matrices. H is then positive definite, and thus invertible (because every positive definite matrix is invertible).</p><p>Proof: H can be written H = I e + B with B ∈ R e×e a positive semi-definite matrix. For all vector z ∈ R e , we have z Hz = z I e z + z Bz. By definition of positive (semi-)definiteness, we have the following property: for all nonzero z ∈ R e , z I e z &gt; 0 and z Bz ≥ 0. Then for all nonzero z ∈ R e , z Hz &gt; 0. H is then a positive definite matrix.</p><p>The global learning scheme is described in Algorithm 2. The step size η t &gt; 0 can be set to 1 and unchanged as in <ref type="bibr" target="#b9">[10]</ref>, or optimized at each iteration through line search (see Section 9.5.2 in <ref type="bibr" target="#b7">[8]</ref>). The parameter ≥ 0 determines the stopping criterion by controlling the 2 -norm of the difference of ω between iteration t and t − 1.</p><p>Complexity: Computing the Hessian takes O(σe 2 ) time (where σ = |(S ∪ D) Q 1,y p | + |(A Q 1,1 ∪ B Q 0,1 )|) and solving the linear system is O(e 3 ) because of the inversion of H t ∈ R e×e . This can be prohibitive if e is large but we restrict e ≤ 1001 in our experiments; the inversion of H t is then very fast. Other optimization methods are proposed in <ref type="bibr" target="#b10">[11]</ref> (e.g., a truncated Newton method) if e is large.</p><p>It can be noticed that Newton method is appropriate for unconstrained problems, where the inclusion of H −1 at each iteration allows to converge faster to the global minimum. When C e is R e + , Eq. <ref type="formula" target="#formula_1">(28)</ref> is a constrained problem and the minimum of the unconstrained problem is not necessarily the minimum of the constrained problem. In Eq. (28), since our loss functions are linear almost everywhere on their domain, the Hessian of the problem is close to the identity matrix and it is affected almost exclusively by the regularization term. This is why applying a projected Newton method is not a major issue in our case. If computing the inverse of the Hessian is too much expensive, the Hessian can be omitted and a classic projected gradient method can be used.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Fig. 1</head><label>1</label><figDesc>Tall Building ≺ Inside-city ~ Street ≺ Open-countryAttribute "Large Objects":Open-country ≺ Inside-city ~ Street ≺ Tall BuildingRich Relationship-based Learned SpaceLearn dissimilarity D such that:D( , ) &lt; D( , )Fig. 1Illustration of the quadruplet-wise (Qwise) strategy in a relative attribute context. The goal is to learn a projection of scene images by exploiting rich relationships (here relative attributes) over quadruplets of images such that samples satisfy the relationship constraints in the projected space.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Fig. 3</head><label>3</label><figDesc>(left) A pair of successive versions of the New York Times homepage wherein only the advertisement (yellow region) is different. The change of advertisement does not affect the information shared by the page, the two versions are thus considered as similar. (right) A pair of successive versions of the CNN homepage. The change of news title (blue region), which is the main information shared by the page, makes the two versions dissimilar and is thus considered as an important change.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>Fig. 5</head><label>5</label><figDesc>Important change maps for the homepages of BBC, CNN, NYTimes, NPR, Boston's University, the open courseware page of the MIT, the finance section of Yahoo! News and the music section of NPR. (left) Webpage screenshot, with relevant area (news) in blue, unimportant parts (menu and advertisement) in green and purple, respectively. (right) Spatial weights of important change learned by our method with versions crawled during 5 days and without human annotations (higher values are darker).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_4"><head>Fig. 6</head><label>6</label><figDesc>Important change maps for the homepages of BBC, CNN, New York Times and NPR. (left) Webpage screenshot with webpage regular segmentation blocks (red lines). (right) Absolute values of the eigenvector of the dominant eigenvalue of the distance non-diagonal matrix learned by our method with versions crawled during 5 days and without human supervision (higher values are darker).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_5"><head>Fig. 8 and</head><label>8</label><figDesc>Fig. 8 and Table 2 report classification accuracies in the unsupervised setup described above. We learn a linear SVM with the automatically created sets S and D using the |S| = |D| = k = 25 version pairs with lowest and highest distances, respectively.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_6"><head></head><label></label><figDesc>10 http://www.image-net.org/challenges/LSVRC/ 2010/ 11 We use the eigendecomposition M = UDU where D is a diago- nal matrix, and we formulate L = D 1/2 U .</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_7"><head></head><label></label><figDesc>This corresponds to learning a linear transformation param- eterized by L ∈ R M ×d such that h i = Lx i where the m th Learning a Distance Metric from Relative Comparisons between Quadruplets of Images 21 row of L is w m (see Eq.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_8"><head>7</head><label>7</label><figDesc>Relative orderings used in [48] for the OSR dataset (cate- gories: coast (C), forest (F), highway (H), inside-city (I), mountain (M), open-country (O), street (S) and tall-building (T)) and the Pub- Fig dataset (categories: Alex Rodriguez (A), Clive Owen (C), Hugh Laurie (H), Jared Leto (J), Miley Cyrus (M), Scarlett Johansson (S), Viggo Mortensen (V) and Zac Efron (Z)).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_9"><head>Fig. 11</head><label>11</label><figDesc>Recognition performance of the baseline<ref type="bibr" target="#b47">[48]</ref>and the proposed methods on OSR dataset (a) and PubFig dataset (b) as a function of B (the number of pairs of classes used to generate relative constraints per attribute). Accuracies smaller than 69% are not reported for B = 1 on OSR. Accuracies smaller than 66% are not reported for B = 1 or B = 2 on PubFig.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_10"><head></head><label></label><figDesc>QWSL on OSR (b) OQWSL on OSR (c) QWSL on PubFig (d) OQWSL on PubFig</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_11"><head>Fig. 12</head><label>12</label><figDesc>Recognition performance of our proposed methods for different neighbor sampling strategies (see text) on OSR dataset ((a) &amp; (b)) and PubFig dataset ((c) &amp; (d)) as a function of B (the number of pairs of classes used to generate relative constraints per attribute). Accuracies smaller than 69% are not reported for B = 1 on OSR. Accuracies smaller than 66% are not reported for B = 1 or B = 2 on PubFig.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_12"><head>if</head><label></label><figDesc>|1 − yt r | ≤ h set: β Q 1,y 1 − yt r if yt r &lt; 1 − h set: β L 1,y(29)L h 0 (y, t r ) =      0 if yt r &gt; 0 set :β 0 0,y t 2 r 4h if | − h − yt r | ≤ h set :β Q 0,y −h − yt r if yt r &lt; −2h set :β L 0,y</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_13"><head>By considering L 1 =</head><label>1</label><figDesc>L h 1 and L 0 = L h 0 in Eq. (28), the gradient ∈ R e of Eq.(28)w.r.t. ω is:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc>D ij ≤ D kl . Note that D ij = D kl can be rewritten as two relations D ij ≤ D kl and D ij ≥ D kl .</figDesc><table>Two types of relations R are considered between D ij and 
+D kl : (1) strict inequality between dissimilarities: D ij &lt; D kl , 
+(2) non-strict inequality: </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head></head><label></label><figDesc>the learned visual distance metric mentioned in Eq. (22). D H (or D U ) is the Jaccard distance between hyper- links (or image URLs) of v i and v j . D H and D U were shown to be discriminative for semantic change detection [41] 5</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head></head><label></label><figDesc>The identical versions are also ignored 6 www.cnn.com, www.bbc.co.uk, www.npr.org, www.nytimes.com, finance.yahoo.com, www.npr. org/music, www.bu.edu, ocw.mit.edu</figDesc><table>6 
+
+www.cnn.com, 
+www.bbc.co.uk, 
+www.npr.org, 
+www.nytimes.com, 
+finance.yahoo.com, 
+www.npr. 
+org/</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="false"><head></head><label></label><figDesc>would be considered as dissimilar, and the AP D of BBC would be higher. Classification Accuracy: We now present classification ac- curacy results in the unsupervised and semi-supervised se</figDesc><table>National Public Radio (NPR) 
+Method 
+AP S 
+AP D 
+MAP 
+Eucl. Distance 
+96.3 ± 0.2% 89.5 ± 0.5% 92.9 ± 0.3% 
+Triplet-based 
+98.0 ± 0.6% 92.5 ± 1.1% 95.2 ± 0.9% 
+Proposed D w 
+98.6 ± 0.2% 94.3 ± 0.6% 96.5 ± 0.4% 
+Proposed D M 
+98.7 ± 0.2% 
+94.5 ± 0.7% 
+96.6 ± 0.4% 
+Proposed D struct 
+
+M 
+
+98.3 ± 0.3% 94.0 ± 0.6% 96.1 ± 0.5% 
+New York Times 
+Method 
+AP S 
+AP D 
+MAP 
+Eucl. Distance 
+69.8 ± 0.9% 79.5 ± 0.4% 74.6 ± 0.5% 
+Triplet-based 
+83.2 ± 1.4% 89.1 ± 2.7% 86.1 ± 2.0% 
+Proposed D w 
+85.5 ± 5.4% 92.3 ± 4.1% 88.9 ± 4.6% 
+Proposed D M 
+91.6 ± 4.4% 
+94.7 ± 2.4% 
+93.1 ± 3.4% 
+Proposed D struct 
+
+M 
+
+90.5 ± 4.7% 94.0 ± 2.5% 92.2 ± 3.6% 
+CNN 
+Method 
+AP S 
+AP D 
+MAP 
+Eucl. Distance 
+68.1 ± 0.6% 85.9 ± 0.6% 77.0 ± 0.5% 
+Triplet-based 
+78.8 ± 1.9% 91.7 ± 1.7% 85.2 ± 1.8% 
+Proposed D w 
+82.7 ± 4.1% 94.6 ± 1.8% 88.6 ± 2.9% 
+Proposed D M 
+87.9 ± 3.1% 
+96.6 ± 0.6% 
+92.2 ± 1.9% 
+Proposed D struct 
+
+M 
+
+87.4 ± 3.2% 96.3 ± 0.6% 91.9 ± 1.9% 
+BBC 
+Method 
+AP S 
+AP D 
+MAP 
+Eucl. Distance 
+91.1 ± 0.3% 76.7 ± 0.6% 83.9 ± 0.4% 
+Triplet-based 
+92.5 ± 0.4% 80.1 ± 1.0% 86.3 ± 0.6% 
+Proposed D w 
+92.8 ± 0.4% 79.3 ± 1.3% 86.1 ± 0.8% 
+Proposed D M 
+93.0 ± 0.6% 
+82.5 ± 1.3% 
+87.7 ± 1.0% 
+Proposed D struct 
+
+M 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" validated="false"><head></head><label></label><figDesc>classifica- tion accuracies on the different websites as a function of the</figDesc><table>Accuracy (%) 
+
+4 × 4 
+8 × 8 10 × 10 
+Grid resolution 
+
+50 
+
+60 
+
+70 
+
+80 
+
+90 
+
+Accuracies of our model on: 
+-NPR 
+-New York Times 
+-CNN 
+-BBC 
+
+Fig. 8 Test accuracies in the similarity detection task without human 
+supervision as the grid resolution of the GIST descriptor increases 
+(k = 25). 
+
+Web Site 
+Visual Method Multimodal Vis./Struct. Method 
+NPR 
+87.0 
+86.7 
+NYTimes 
+76.4 
+77.0 
+CNN 
+72.9 
+75.0 
+BBC 
+68.6 
+68.6 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" validated="false"><head>Table 2</head><label>2</label><figDesc>Test accuracies (in %) in the fully unsupervised setup using only visual descriptors or combining them with structural metrics. A 10 × 10 grid resolution is considered (k = 25).</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" validated="false"><head></head><label></label><figDesc>can be seen</figDesc><table>Model 
+Amphibian Fish Fruit Furn. Geological F. Musical I. Reptile Tool Vehicle 
+AVG 
+Euclidean distance 10-NN 
+35.5 
+33.9 
+16.9 
+36.6 
+43.3 
+27.0 
+17.2 
+24.5 
+20.2 
+28.3 
+LMNN Diagonal Matrix 10-NN 
+39.0 
+37.4 
+19.5 
+39.4 
+47.2 
+27.5 
+19.8 
+23.8 
+22.9 
+30.8 
+LMNN Full Matrix 10-NN 
+41.8 
+38.3 
+21.1 
+41.1 
+49.5 
+28.5 
+21.2 
+24.0 
+28.0 
+32.6 
+Qwise Diagonal Matrix 10-NN 
+39.3 
+37.6 
+20.6 
+40.0 
+47.6 
+28.0 
+20.7 
+23.8 
+24.8 
+31.4 
+Qwise Full Matrix 10-NN 
+41.8 
+38.5 
+21.7 
+41.6 
+51 
+29.3 
+21.8 
+24.2 
+29.3 
+33.2 
+
+Table 5 Standard classification accuracy for the various datasets using the k-NN classification framework. 
+
+Model 
+Amphibian Fish Fruit Furn. Geological F. Musical I. Reptile Tool Vehicle 
+AVG 
+Euclidean distance 10-NN 
+50.1 
+35.3 
+32.1 
+42.2 
+45.1 
+28.5 
+21.3 
+26.2 
+29.1 
+34.4 
+LMNN Diagonal Matrix 10-NN 
+53.0 
+42.0 
+34.2 
+42.7 
+48.5 
+30.2 
+22.4 
+25.5 
+32.2 
+36.7 
+LMNN Full Matrix 10-NN 
+56.0 
+42.3 
+34.5 
+44.1 
+51.1 
+31.7 
+22.4 
+25.7 
+32.8 
+37.8 
+Qwise Diagonal Matrix 10-NN 
+54.8 
+42.5 
+39.1 
+44.8 
+50.0 
+33.1 
+24.4 
+25.6 
+33.2 
+38.6 
+Qwise Full Matrix 10-NN 
+56.7 
+43.6 
+39.7 
+46.9 
+53.2 
+34.1 
+25.5 
+26.1 
+34.7 
+40.1 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9" validated="false"><head>Table</head><label></label><figDesc></figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11" validated="false"><head></head><label></label><figDesc>From each of the B selected pairs of classes, we extract N × N image pairs or quadruplets to create train- ing constraints. To carry out fair comparisons, we generate one Qwise constraint for each pairwise constraint generated by<ref type="bibr" target="#b47">[48]</ref>using the strategies described in Section 7.1.1. In this way, we have the same number of constraints. Once all the M projection directions w m are learned, a multivariate Gaussian distribution is learned for each class c s of images: the mean µ s ∈ R M and covariance matrix Σ s ∈ R M ×M are estimated using the h i of all the training images I i in c s . A test image I t is assigned to the class corresponding to the highest likelihood. The performance is measured as the average classification accuracy across all classes over 10 random train/test splits.</figDesc><table>Learning setup: We use the same experimental setup as [48] 
+to learn our Qwise metric. N = 30 training images are used 
+per class, the rest is for testing. Let B be the number of pairs 
+of classes that we select to learn the projection direction w m 
+of attribute a m , </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12" validated="false"><head>Setup :</head><label>Setup</label><figDesc>The high level features h i ∈ R M learned with our method are used as input of LMNN. We call this strategy Qwise + Pairwise + LMNN (Q+Pwise + LMNN) since we combine both Qwise and pairwise constraints. Depending 16 For instance, if we have(k) (i) (e) (f ) ∼ (g) (h) (j) (l), the classes (i) and (j) and the second closest classes of (f ) and (g). The classes (k) and (l) are their third closest classes.24Marc T. Law et al.OSRPubfig LMNN<ref type="bibr" target="#b61">[62]</ref>71.2 ± 2.0% 71.5 ± 1.6% LMNN-G 70.7 ± 1.9% 69.9 ± 2.0% RA (Parikh's code<ref type="bibr" target="#b47">[48]</ref>)71.3 ± 1.9% 71.3 ± 2.0% RA + LMNN 71.8 ± 1.7% 74.2 ± 1.9% OQSWL + LMNN-G 73.5 ± 1.7% 74.1 ± 1.8% OQWSL + LMNN 73.9 ± 1.9% 75.7 ± 1.8% QWSL + LMNN-G 74.6 ± 1.7% 74.8 ± 1.7% QWSL + LMNN 74.3 ± 1.9% 77.0 ± 1.9% Qwise + Pairwise (Q+Pwise) 74.1 ± 2.1% 74.5 ± 1.3% Q+Pwise + LMNN-G 74.6 ± 1.7% 76.5 ± 1.2% Q+Pwise + LMNN 74.3 ± 1.9% 77.6 ± 2.0%Table 8Test classification accuracies on the OSR and Pubfig datasets for different methods.</figDesc><table>OSR 
+Pubfig 
+LMNN [62]  71.2 ± 2.0% 71.5 ± 1.6% 
+LMNN-G 
+70.7 ± 1.9% 69.9 ± 2.0% 
+RA (Parikh's code [48]) 
+71.3 ± 1.9% 71.3 ± 2.0% 
+RA + LMNN 
+71.8 ± 1.7% 74.2 ± 1.9% 
+OQSWL + LMNN-G 
+73.5 ± 1.7% 74.1 ± 1.8% 
+OQWSL + LMNN 
+73.9 ± 1.9% 75.7 ± 1.8% 
+QWSL + LMNN-G 
+74.6 ± 1.7% 
+74.8 ± 1.7% 
+QWSL + LMNN 
+74.3 ± 1.9% 77.0 ± 1.9% 
+Qwise + Pairwise (Q+Pwise) 
+74.1 ± 2.1% 74.5 ± 1.3% 
+Q+Pwise + LMNN-G 
+74.6 ± 1.7% 
+76.5 ± 1.2% 
+Q+Pwise + LMNN 
+74.3 ± 1.9% 
+77.6 ± 2.0% 
+
+Table 8 </table></figure>
+
+			<note place="foot" n="8"> We experimented with different values of m (i.e., m = 4, 8 and 10), and this setting returned the best recognition performance for all the distance metrics. All the distance metrics benefit from greater values of m, which means that they need to focus on highly detailed small regions of pages.</note>
+
+			<note place="foot" n="9"> The accuracies reported with zero annotated pair sample per class correspond to those of Section 5.5, Fig. 8 and Table 2.</note>
+
+			<note place="foot" n="12"> We report the results for 10 nearest neighbor classification (which performs better than 1-NN, 5-NN and 50-NN).</note>
+
+			<note place="foot" n="16"> For instance, if we have (k) (i) (e) (f ) ∼ (g) (h) (j) (l), the classes (i) and (j) and the second closest classes of (f ) and (g). The classes (k) and (l) are their third closest classes.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknowledgements This work was partially supported by the SCAPE Project cofunded by the European Union under FP7 ICT2009.4.1 (Grant Agreement nb 270137).</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Resonance on the web: web dynamics and revisitation patterns</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Adar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Teevan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Dumais</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM CHI Conference on Human Factors in Computing Systems (CHI)</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">The web changes everything: understanding the dynamics of web content</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Adar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Teevan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Dumais</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Elsas</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM WSDM Conference Series Web Search and Data Mining (WSDM)</title>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Generalized non-metric multidimensional scaling</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Agarwal</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wills</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cayton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Lanckriet</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">J</forename><surname>Kriegman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Belongie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Artificial Intelligence and Statistics</title>
+		<imprint>
+			<publisher>AISTATS</publisher>
+			<date type="published" when="2007" />
+			<biblScope unit="page" from="11" to="18" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Pooling in image representation: The visual codeword point of view. Computer Vision and Image Understanding</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Avila</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Thome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Valle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">D A</forename><surname>Araújo</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">CVIU)</title>
+		<imprint>
+			<biblScope unit="volume">117</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="453" to="465" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Archiving the Web using Page Changes Pattern: A Case Study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ben</forename><surname>Saad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Gançarski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Joint Conference on Digital Library (JCDL)</title>
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Modern multidimensional scaling: Theory and applications</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Borg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Groenen</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Springer Series in Statistics</title>
+		<imprint>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<ptr target="http://see.stanford.edu/materials/" />
+		<title level="m">Subgradient. Notes for EE364b</title>
+		<meeting><address><addrLine>Stanford University, Winter</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="2006" />
+			<biblScope unit="page">7</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">P</forename><surname>Boyd</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Vandenberghe</surname></persName>
+		</author>
+		<title level="m">Convex optimization</title>
+		<imprint>
+			<publisher>Cambridge university press</publisher>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title level="m" type="main">Vips: a vision-based page segmentation algorithm</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Ma</surname></persName>
+		</author>
+		<idno>MSR-TR- 2003-79-2003</idno>
+		<imprint>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+<note type="report_type">Microsoft Technical Report</note>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Training a support vector machine in the primal</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Chapelle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Computation</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="1155" to="1178" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Efficient algorithms for ranking with svms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Chapelle</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Keerthi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Inf. Retrieval</title>
+		<imprint>
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="201" to="215" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Large scale online learning of image similarity through ranking</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Chechik</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Sharma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Shalit</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bengio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research (JMLR)</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="1109" to="1135" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+		<title level="m" type="main">Machine learning techniques for multimedia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Cunningham</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2008" />
+			<publisher>Springer</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Informationtheoretic metric learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">V</forename><surname>Davis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Kulis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sra</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><forename type="middle">S</forename><surname>Dhillon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Imagenet: A large-scale hierarchical image database</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Deng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Dong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Socher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">J</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Li</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Fei-Fei</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition (CVPR</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Evaluation of gist descriptors for web-scale image search</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Douze</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Jégou</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Sandhawalia</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Amsaleg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Schmid</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM International Conference on Image and Video Retrieval</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Supervised clustering with support vector machines</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Finley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Joachims</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="217" to="224" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Supervised k-means clustering</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Finley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Joachims</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cornell Computing and Information Science Technical Report</title>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Image retrieval and classification using local distance functions</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Frome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Malik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Learning globallyconsistent local distance functions for shape-based image retrieval and classification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Frome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Singer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sha</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Malik</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Unsupervised and supervised visual codes with restricted boltzmann machines</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Goh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Thome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Lim</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Computer Vision (ECCV)</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Is that you? metric learning approaches for face identification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Guillaumin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Verbeek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Schmid</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Learning smoothing models of copy number profiles using breakpoint annotations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">D</forename><surname>Hocking</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Schleiermacher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Janoueix-Lerosey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Boeva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cappo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Delattre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">P</forename><surname>Vert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BMC bioinformatics</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">164</biblScope>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Learning a tree of metrics with disjoint visual features</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Grauman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sha</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Analogy-preserving semantic embedding for visual object categorization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">J</forename><surname>Hwang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Grauman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Sha</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<imprint>
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Fast image search for learned metrics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Jain</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Kulis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Grauman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Optimizing search engines using clickthrough data</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Joachims</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the eighth ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+		<meeting>the eighth ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2002" />
+			<biblScope unit="page" from="133" to="142" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">A support vector method for multivariate performance measures</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Joachims</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 22nd international conference on Machine learning</title>
+		<meeting>the 22nd international conference on Machine learning</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="377" to="384" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Training linear svms in linear time</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Joachims</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining</title>
+		<meeting>the 12th ACM SIGKDD international conference on Knowledge discovery and data mining</meeting>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2006" />
+			<biblScope unit="page" from="217" to="226" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Cutting-plane training of structural svms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Joachims</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Finley</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">N J</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Machine Learning</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="27" to="59" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">A modified finite newton method for fast solution of large scale linear svms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">S</forename><surname>Keerthi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Decoste</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">341</biblScope>
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<monogr>
+		<title level="m" type="main">Rank correlation methods</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">G</forename><surname>Kendall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">D</forename><surname>Gibbons</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<publisher>Oxford University Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Nonmetric multidimensional scaling: a numerical method</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B</forename><surname>Kruskal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychometrika</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="115" to="129" />
+			<date type="published" when="1964" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Metric learning: a survey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Kulis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Found. and Trends in Machine Learning</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="287" to="364" />
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">An invariant large margin nearest neighbour classifier</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Torr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Zisserman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Attribute and simile classifiers for face verification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Kumar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Berg</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Belhumeur</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Nayar</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Large-margin metric learning for constrained partitioning problems</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Lajugie</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Bach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Arlot</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<imprint>
+			<date type="published" when="2014" />
+			<biblScope unit="page" from="297" to="305" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Learning to detect unseen object classes by between-class attribute transfer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">H</forename><surname>Lampert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Nickisch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Harmeling</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Structural and visual similarity learning for web page archiving</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Sureda Gutierrez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Thome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gançarski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">10th workshop on Content-Based Multimedia Indexing (CBMI)</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<analytic>
+		<title level="a" type="main">Quadruplet-wise image similarity learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Thome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<date type="published" when="2013" />
+			<biblScope unit="page" from="249" to="256" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">Structural and visual comparisons for web page archiving</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Law</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Thome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Gançarski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM Symposium on Document Engineering (DocEng)</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Web article extraction for web printing: a dom+ visual based approach</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Luo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Fan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Xiong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Liu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM Symposium on Document Engineering (DocEng</title>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Partial order embedding with multiple kernels</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Mcfee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Lanckriet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<imprint>
+			<publisher>ACM</publisher>
+			<date type="published" when="2009" />
+			<biblScope unit="page" from="721" to="728" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">Metric learning to rank</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Mcfee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Lanckriet</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">International Conference on Machine Learning (ICML)</title>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title level="a" type="main">Metric learning for large-scale image classification: generalizing to new classes at near-zero cost</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Mensink</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Verbeek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Perronnin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Csurka</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Computer Vision (ECCV)</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title level="a" type="main">Pcca: A new approach for distance learning from sparse pairwise constraints</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mignon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Jurie</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b46">
+	<analytic>
+		<title level="a" type="main">Modeling the shape of the scene: A holistic representation of the spatial envelope</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Oliva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Torralba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Computer Vision (IJCV)</title>
+		<imprint>
+			<biblScope unit="volume">42</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="145" to="175" />
+			<date type="published" when="2001" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b47">
+	<analytic>
+		<title level="a" type="main">Relative attributes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Parikh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Grauman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV</title>
+		<imprint>
+			<date type="published" when="2011" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b48">
+	<analytic>
+		<title level="a" type="main">Attributes for classifier feedback</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Parkash</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Parikh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">European Conference on Computer Vision (ECCV</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b49">
+	<analytic>
+		<title level="a" type="main">Robust object recognition with cortex-like mechanisms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Serre</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Wolf</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Bileschi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Riesenhuber</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Poggio</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="411" to="426" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b50">
+	<analytic>
+		<title level="a" type="main">Learning a distance metric from a network</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Shaw</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">C</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Jebara</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+		<imprint>
+			<date type="published" when="2011" />
+			<biblScope unit="page" from="1899" to="1907" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b51">
+	<analytic>
+		<title level="a" type="main">The analysis of proximities: Multidimensional scaling with an unknown distance function. i</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">N</forename><surname>Shepard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychometrika</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="125" to="140" />
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b52">
+	<analytic>
+		<title level="a" type="main">The analysis of proximities: Multidimensional scaling with an unknown distance function. ii</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">N</forename><surname>Shepard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Psychometrika</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="246" />
+			<date type="published" when="1962" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b53">
+	<analytic>
+		<title level="a" type="main">Video Google: A text retrieval approach to object matching in videos</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sivic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Zisserman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE International Conference on Computer Vision (ICCV)</title>
+		<imprint>
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b54">
+	<analytic>
+		<title level="a" type="main">Learning block importance models for web pages</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Song</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Ma</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">World Wide Web Conference</title>
+		<imprint>
+			<publisher>WWW</publisher>
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b55">
+	<analytic>
+		<title level="a" type="main">Document structure meets page layout: Loopy random fields for web news content extraction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Spengler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Gallinari</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">ACM Symposium on Document Engineering (DocEng)</title>
+		<imprint>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b56">
+	<analytic>
+		<title level="a" type="main">A global geometric framework for nonlinear dimensionality reduction</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Tenenbaum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>De Silva</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Langford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<imprint>
+			<biblScope unit="volume">290</biblScope>
+			<biblScope unit="issue">5500</biblScope>
+			<biblScope unit="page" from="2319" to="2323" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b57">
+	<analytic>
+		<title level="a" type="main">Extended coding and pooling in the hmax model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Theriault</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Thome</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Cord</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Image Processing</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="764" to="777" />
+			<date type="published" when="2013" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b58">
+	<analytic>
+		<title level="a" type="main">Large margin component analysis</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Torresani</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Lee</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b59">
+	<analytic>
+		<title level="a" type="main">Learning hierarchical similarity metrics</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Verma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Mahajan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Sellamanickam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Nair</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</title>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b60">
+	<analytic>
+		<title level="a" type="main">Large margin taxonomy embedding with an application to document categorization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Weinberger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">O</forename><surname>Chapelle</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+		<imprint>
+			<date type="published" when="2008" />
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="page" from="1737" to="1744" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b61">
+	<analytic>
+		<title level="a" type="main">Distance metric learning for large margin nearest neighbor classification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Weinberger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Saul</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Machine Learning Research</title>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="page" from="207" to="244" />
+			<date type="published" when="2009" />
+			<publisher>JMLR</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b62">
+	<analytic>
+		<title level="a" type="main">Distance metric learning, with application to clustering with side-information</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Xing</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ng</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Jordan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Russell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems (NIPS)</title>
+		<imprint>
+			<date type="published" when="2002" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b63">
+	<analytic>
+		<title level="a" type="main">Linear spatial pyramid matching using sparse coding for image classification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Yang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Yu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Gong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Huang</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">IEEE Conference on Computer Vision and Pattern Recognition</title>
+		<imprint>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

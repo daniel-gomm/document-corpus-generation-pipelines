@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-05T14:27+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Network Protocols and Algorithms Introduction to Network Protocols and Algorithms</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="2009">2009. 1943-3581 2009</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Jaime</forename><surname>Lloret_Mauri</surname></persName>
+							<email>tel:34-609-549-043e-mail:jlloret@dcom.upv.es</email>
+							<affiliation key="aff0">
+								<orgName type="department">Department of Communications</orgName>
+								<orgName type="institution">Polytechnic University of Valencia Camino Vera</orgName>
+								<address>
+									<postCode>46022</postCode>
+									<region>S/N, Valencia</region>
+									<country key="ES">Spain</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Network Protocols and Algorithms Introduction to Network Protocols and Algorithms</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Network Protocols and Algorithms</title>
+						<imprint>
+							<biblScope unit="volume">1</biblScope>
+							<biblScope unit="issue">1</biblScope>
+							<date type="published" when="2009">2009. 1943-3581 2009</date>
+						</imprint>
+					</monogr>
+					<note>1 www.macrothink.org/npa 2</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>Network protocols, Network algorithms</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Abstract</head><p>Since the appearance of the data networks, many researchers have focused their efforts on designing and developing many ways to communicate the network devices. This paper will introduce the reader to the network protocols and algorithms that are used for data transfer between devices. The meaning of the terms, their description and their explanation are provided. Finally, the scope of the journal and its aim are presented.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Introduction</head><p>The term protocol comes from the Greek "protokollon", which was the cover page glued to a manuscript volume that provided a description of the contents. Just as people use language to communicate, network devices use network protocols to transmit data over a network in order to communicate inside the network. A network protocol is a standard procedure and format that two data communication devices must understand, accept and must strictly use to be able to talk to each other. Two network devices must be using the same protocol in order to talk to each other.</p><p>A network protocol can be formally defined as a set of rules, conventions and data structure which is used by network devices to communicate with each other across a network. These rules govern the syntax, semantics, and synchronization of communication, and how data is packaged into messages, sent and received. It includes mechanisms for devices to identify, control and make connections, communication, and data transfer between computing endpoints. Tasks such as data representation, authentication, and error detection are also performed. Network protocols are intended for the secure, fast and error free data delivery between two communication devices. Protocols may be implemented by hardware, firmware, software or by a combination of them. -Simplicity, reducing the communication complexity -Modularity, allows making changes easily without affecting the rest of the layers -Compatibility, communication between two entities in the same layer can be performed without the dependence of the rest of layers.</p><p>A layered communication standardizes the interfaces, makes the technology interoperability, and speeds up the evolution <ref type="bibr" target="#b0">[1]</ref>. The number of layers that must be created depends on several issues: -A layer must be created when a new abstraction level is needed -Each layer must perform well defined function or set of functions. -Each layer should be chosen thinking on the standardized protocols. -Layer boundaries must be chosen bearing in mind to make low information flow between the layers of the same device. -The amount of layers should not be high in order to have an operative and easy to use architecture, but not too much reduced to force a set of functions in one layer.</p><p>There are many network protocols designed and developed that are defined by standard organizations worldwide and technology vendors over years for specific purposes and environments. The rules, or protocols, that work together to ensure successful communication are grouped into what is known as a protocol suite. One of the most famous network protocol family is TCP/IP suite, which is the technical foundation of the Internet.</p><p>Most of the Internet's communication protocols are described in the Requests For Comment (RFC) documents <ref type="bibr" target="#b1">[2]</ref> of the Internet Engineering Task Force (or IETF) <ref type="bibr" target="#b2">[3]</ref>. RFCs are numbered when they are accepted to be published. There are more than 5,700 RFCs today, but many of them have become out of date. Another organization that issues communication standards is the International Telecommunication Union (ITU) <ref type="bibr" target="#b3">[4]</ref>. Some standards are also published by the Institute of Electrical and Electronics Engineers (IEEE) <ref type="bibr" target="#b4">[5]</ref>. The International Standardization Office (ISO) has standardized a reference model for developing network protocols called as OSI (Open System Interconnection) <ref type="bibr" target="#b5">[6]</ref>.</p><p>The OSI Reference Model for network protocols is used to understand how network protocols work (although there are some developed protocols that follow this model). This model appeared in order to help the interconnection of different networks, because when computer networks first appeared they usually used proprietary solutions, with no option to use equipments from different vendors. <ref type="bibr">ISSN 1943</ref><ref type="bibr">-3581 2009</ref> The OSI model is divided into seven layers <ref type="bibr" target="#b0">[1]</ref>. Each layer is in charge of some kind of processing and each layer only talks to the layers immediately below and above it. One given layer receives data from the layer above/below, process what it is receiving, add/remove some control information (and may be some error detection and control information, depending on the layer) to the data that this particular layer is in charge of, and sending the new data with this new control information added to the layer below/above. Protocols like TCP/IP (used in Internet), IPX/SPX (used by Novell Netware), NetBEUI (used by Microsoft products), SNA (used by IBM products) and AppleTalk (used by Apple products) don't fully follow this model. Network protocols evolve as time goes on. An example can be seen in HTTP protocol <ref type="bibr" target="#b6">[7]</ref>. A nice list of network protocols is shown in <ref type="bibr" target="#b7">[8]</ref> <ref type="bibr" target="#b8">[9]</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Network Protocols and Algorithms</head><p>The word algorithm comes from the ninth-century (it is not clear who the first was: the Persian mathematician Mohammed al-Khowarizmi or the Arabic scholar al-Khuwarizmi). One of the oldest algorithms known is that of Greek mathematician Euclid (fl. 300 BC).</p><p>The term algorithm is used to describe a wide variety of procedures or formulas to solve a problem. An algorithm can be described informally, with a basic set of steps that must be performed to reach a predetermined result, or with mathematical rigor. The sequence of steps that are carried out in the algorithm must have five important features: finiteness (is guaranteed to terminate after a finite number of steps), definiteness (each step in the sequence is clear and unambiguous), input (zero or more values are available to the algorithm before it begins execution), output (one or more quantities are the result of the algorithm's execution of the inputs), and effectiveness (each of the steps of the algorithm must be completed in some finite length of time).</p><p>The term algorithm is used in a variety of fields, including mathematics, engineering, computer programming, and linguistics. In computing, an algorithm is a sequence of unambiguous instructions for solving a problem <ref type="bibr" target="#b9">[10]</ref>. It allows achieving a desired result for any legitimate input in a finite amount of time <ref type="bibr" target="#b10">[11]</ref>.</p><p>All network devices must execute an algorithm in order to know how to act to communicate with other network devices. A network Algorithm consists of a finite list of instructions (which are well defined) that can be used by the network device to perform the communication. The network algorithm has an initial state; it will use the list of instructions to produce a variety of different, and sequential, states given by the messages sent or received, and eventually leading to the final or terminating state. Because of the inherent difficulty in constructing a network algorithm, many people choose to construct flowcharts, which can help to diagram out the algorithm, in pseudocode, which takes advantage of human words mixed with code, or in a programming language.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.">Journal</head><p>The International Journal "Network Protocols and Algorithms" was created bearing in mind the information provided. It publishes papers focused on network protocols, communication systems, algorithms for communications and any type of protocol and algorithm to communicate network devices in a data network.</p><p>The scope of the journal includes, but is not limited to, the following topic areas: The topics suggested by the journal can be discussed in term of concepts, state of the art, standards, implementations, running experiments and applications. Proposals, designs and deployments are also welcome.</p><formula xml:id="formula_0">-</formula></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Protocols perform different functions according to their purpose. They can vary greatly in purpose and sophistication. It is difficult to generalize, but there are some basic properties of most of the network protocols: -There must be a common language for all the cooperative devices.-Share the medium with other devices. -How to start and end a message -How to send and receive a message. -Negotiation of the various connections characteristics. -Detection of the underlying physical connection (wired or wireless), or the existence of the other endpoint or node. -Data Transmission over the medium. -Priority establishment. -Encapsulation. -Procedures on formatting a message -Procedures to segment a message. -Correction of the corrupted or improperly formatted messages (error correction). -Detect unexpected loss of the connection. -Message acknowledgement -Flow control. -Sequencing. -Handshaking. -Termination of the session and/or connection. -Multiplexing. -Security and Privacy.Network Protocols and AlgorithmsISSN 1943-3581  2009www.macrothink.org/npa 3 -Data compression. -Routing.In order to make easy the communication of the network devices and decrease the communication complexity, the communication should be split in several entities placed in different layers. Each one of them must perform different functions. Protocols are used between entities.A layered communication model provides:</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Synchronization Protocols and Algorithms -Security Protocols and Algorithms -QoS Protocols and Algorithms -Ad-Hoc and Sensor Network Protocols and Algorithms -Content Delivery Networks Protocols and Algorithms -P2P Protocols and Algorithms -Cluster-Based Protocols and Algorithms -Real-Time Protocols and Algorithms -Wireless Protocols and Algorithms -MAC Protocols and Algorithms for Wired Networks -Mobile wireless internet protocols and algorithms -Delay Tolerant protocols and algorithms -Mesh network protocols and algorithms -Protocols and algorithms for Voice over IP delivery -Cognitive Radio Network Protocols and Algorithms -Monitoring and management protocols and algorithms -Optical networking protocols and algorithms -Scalable Network Protocols and Algorithms -Protocols and algorithms for Green Computing and Resource Allocation -Power Efficient and Energy Saving Network Protocols and Algorithms -Routing Protocols and Algorithms -Tree-based Protocols and Algorithms -Distributed/Decentralized Algorithms for Networks -Fault tolerant Protocols and Algorithms -Protocols and algorithms for Mobile and Dynamic Networks -Cross-Layer Collaborative Protocols and Algorithms -Formal methods and cryptographic algorithms for communication</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc>, No. 1 www.macrothink.org/npa</figDesc><table>4 
+
+</table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Acknowledgement</head><p>I would like to give many thanks to the associate editors that have believed in this new International Journal by being in the editorial board. Especially to the ones that have been involved in the first issue, because of their effort. I would also give thanks to the reviewers for their valuable comments in their reviews in order to improve the works submitted to the issue. Finally, I want to thank my wife, Cristina Pascual, for her support and confidence.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Andrew</forename><forename type="middle">S</forename><surname>Tanenbaum</surname></persName>
+		</author>
+		<idno type="doi">10.1145/356859.356864</idno>
+		<ptr target="http://dx.doi.org/10.1145/356859.356864" />
+		<title level="m">Network Protocols, ACM Computing Surveys</title>
+		<imprint>
+			<date type="published" when="1981-12" />
+			<biblScope unit="volume">13</biblScope>
+			<biblScope unit="page" from="453" to="489" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Rfc Database</surname></persName>
+		</author>
+		<ptr target="http://www.rfc-editor.org/rfc.html" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<monogr>
+		<title level="m" type="main">The Internet Engineering Task Force (IETF) website</title>
+		<ptr target="http://www.ietf.org/" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+		<title level="m" type="main">International Telecommunication Union (ITU) website</title>
+		<ptr target="http://www.itu.int/" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">The Institute of Electrical and Electronics Engineers website</title>
+		<ptr target="http://www.ieee.org/" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">OSI Reference Model -The ISO Model of Architecture for OPEN Systems Interconnection</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hubert</forename><surname>Zimmermann</surname></persName>
+		</author>
+		<idno type="doi">10.1109/TCOM.1980.1094702</idno>
+		<ptr target="http://dx.doi.org/10.1109/TCOM.1980.1094702" />
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Communications</title>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="425" to="432" />
+			<date type="published" when="1980-04" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<monogr>
+		<title level="m" type="main">Change History for HTTP</title>
+		<ptr target="http://www.w3.org/Protocols/History.html" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Javvin network management and security website</title>
+		<ptr target="http://www.javvin.com/protocol/index.html" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Protocols</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>Com Webste</surname></persName>
+		</author>
+		<ptr target="http://www.protocols.com/protocols.htm" />
+		<imprint>
+			<date type="published" when="2009-11-01" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Introduction to the Design &amp; Analysis of Algorithms</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Levitin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2002-11" />
+			<publisher>Addison-Wesley</publisher>
+			<pubPlace>Boston. MA. USA</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Sedgewick</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Algorithms</title>
+		<imprint>
+			<date type="published" when="1983" />
+			<publisher>Addison Wesley Longman Publishing</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

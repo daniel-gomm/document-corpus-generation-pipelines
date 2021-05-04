@@ -1,0 +1,987 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-06T00:49+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Ensembles of Radial Basis Function Networks for Spectroscopic Detection of Cervical Pre-Cancer</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+				<date type="published" when="1999-05-20">20 May 1999</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kagan</forename><surname>Tumer</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nirmala</forename><surname>Ramanujam</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Joydeep</forename><surname>Ghosh</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Rebecca</forename><surname>Richards-Kortum</surname></persName>
+						</author>
+						<title level="a" type="main">Ensembles of Radial Basis Function Networks for Spectroscopic Detection of Cervical Pre-Cancer</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date type="published" when="1999-05-20">20 May 1999</date>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Abstract</head><p>The mortality related to cervical cancer can be substantially reduced through early detection and treatment. However, current detection techniques, such as Pap smear and colposcopy, fail to achieve a concurrently high sensitivity and specificity. In vivo fluorescence spectroscopy is a technique which quickly, non-invasively and quantitatively probes the biochemical and morphological changes that occur in pre-cancerous tissue. A multivariate statistical algorithm was used to extract clinically useful information from tissue spectra acquired from 361 cervical sites from 95 patients at 337, 380 and 460 nm excitation wavelengths. The multivariate statistical analysis was also employed to reduce the number of fluorescence excitation-emission wavelength pairs required to discriminate healthy tissue samples from pre-cancerous tissue samples. The use of connectionist methods such as multi layered perceptrons, radial basis function networks, and ensembles of such networks was investigated. RBF ensemble algorithms based on fluorescence spectra potentially provide automated, and near real-time implementation of pre-cancer detection in the hands of non-experts. The results are more reliable, direct and accurate than those achieved by either human experts or multivariate statistical algorithms.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1">Introduction</head><p>Cervical carcinoma is the second most common cancer in women worldwide, exceeded only by breast cancer <ref type="bibr">(American Cancer Society, 1995)</ref>. The mortality related to cervical cancer can be reduced if this disease is detected at its pre-cancerous state, known as squamous intraepithelial lesion (SIL) <ref type="bibr" target="#b31">(Wright et al., 1994)</ref>. Even though widespread use of organized screening (Pap smear) and diagnostic (colposcopy) programs are currently in place, approximately 15,900 new cases of cervical cancer and 4,900 cervical cancer related deaths were reported in the United <ref type="bibr">States alone, in 1995</ref><ref type="bibr">(American Cancer Society, 1995</ref>.</p><p>Laser induced fluorescence spectroscopy is an optical technique which has the capability to quickly, non-invasively and quantitatively probe the biochemical and morphological changes that occur as tissue becomes neoplastic. The altered biochemical and morphological state of the neoplastic tissue is reflected in the spectral characteristics of the measured fluorescence. This spectral information can be correlated to tissue histo-pathology, the current "gold standard" to develop clinically effective screening algorithms. These mathematical algorithms can be implemented in software, potentially enabling automated, fast, non-invasive and accurate pre-cancer detection in hands of non-experts. Although a complete understanding of the quantitative information contained within a tissue fluorescence spectrum has not been achieved, many groups have investigated the use of fluorescence spectroscopy for real-time, non-invasive, automated characterization of tissue pathology <ref type="bibr">(Brai- chotte et al., 1995;</ref><ref type="bibr" target="#b4">Cothren et al., 1990;</ref><ref type="bibr" target="#b14">Lohmann et al., 1989;</ref><ref type="bibr" target="#b15">Marchesini et al., 1992;</ref><ref type="bibr" target="#b21">Richards-Kortum et al., 1991;</ref><ref type="bibr" target="#b22">Schomacker et al., 1992;</ref><ref type="bibr" target="#b32">Yuanlong et al., 1987)</ref>.</p><p>A detection technique for human cervical pre-cancer based on laser induced fluorescence spectroscopy has been developed recently <ref type="bibr" target="#b18">(Ramanujam et al., 1996)</ref>. Discrimination was achieved using a multivariate statistical algorithm (MSA) based on Principal Component Analysis (PCA) and Logistic Discrimination of tissue spectra acquired in vivo. This linear method of algorithm development demonstrated an improved classification accuracy relative to both the Pap smear and colposcopy in expert hands. In this article, we investigate neural network based non-linear methods for algorithm development, and compare them to both the MSA and conventional clinical methods. Specifically, we investigate the performance of Multi-Layered Perceptron (MLP) and Radial Basis Function (RBF) networks, and ensembles of these networks, on cervical tissue fluorescence spectra. The connectionist methods aim at improving the classification accuracy and reliability of the MSA, as well as simplifying the decision making process. Section 2 presents the data collection/processing techniques. In Section 3, the MSA, and the neural network based methods are described. Section 4 contains the results of our analysis and compares the neural network results to that of the MSA and current clinical detection methods. A discussion of the results is given in Section 5.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2">Data Collection and Processing</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.1">Instrumentation and Clinical Measurements</head><p>A portable fluorimeter consisting of two nitrogen pumped-dye lasers, a fiber-optic probe and a polychromator coupled to an intensified diode array controlled by an optical multichannel analyzer was utilized to measure fluorescence spectra from the cervix in vivo at three excitation wavelengths: 337, 380 and 460 nm <ref type="bibr" target="#b18">(Ramanujam et al., 1996)</ref>. Data acquisition, calibration and processing have been described in detail elsewhere ( <ref type="bibr" target="#b18">Ramanujam et al., 1996)</ref>.</p><p>A randomly selected group of non-pregnant patients referred to the colposcopy clinic of the University of Texas MD Anderson Cancer Center on the basis of abnormal cervical cytology was asked to participate in the in vivo fluorescence spectroscopy study. Informed consent was obtained from each patient who participated and the study was reviewed and approved by the Institutional Review Boards of the University of Texas, Austin and the University of Texas, MD Anderson Cancer Center.</p><p>Each patient underwent a complete history and a physical examination including a pelvic exam, a Pap smear and colposcopy of the cervix, vagina and vulva. After colposcopic examination of the cervix, but before tissue biopsy, fluorescence spectra were acquired on average from two colposcopically abnormal sites, two colposcopically normal squamous sites and 1 normal columnar site (if colposcopically visible) from each patient, from a total of 361 cervical sites in 95 patients.</p><p>Tissue biopsies were obtained only from abnormal sites identified by colposcopy and subsequently analyzed by the probe to comply with routine patient care procedure. All tissue biopsies were fixed in formalin and submitted for histologic examination. Hemotoxylin and eosin stained sections of each biopsy specimen were evaluated by a panel of four board certified pathologists and a consensus diagnosis was established using the Bethesda classification system <ref type="bibr" target="#b31">(Wright et al., 1994)</ref>. This classification system which has previously been used to grade cytologic specimens has now been extended to classification of histology samples. Samples were classified as normal squamous (NS), normal columnar (NC), inflammation 3 , low grade (LG) SIL and high grade (HG) SIL. <ref type="table" target="#tab_0">Table 1</ref> provides the number of samples in the training (calibration) and test (prediction) sets.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="2.2">Spectral Data</head><p>Figure 1 illustrates average fluorescence spectra per site acquired from cervical sites at 337 nm excitation from a typical patient. All fluorescence intensities are reported in the same set of calibrated units. Evaluation of the spectra at 337 nm excitation indicates that the fluorescence intensity of SILs (LG and HG) is less than that of the corresponding normal squamous tissue; however, their fluorescence intensity is greater than that of the corresponding normal columnar tissue over the entire emission spectrum. <ref type="figure">Figure 2</ref> illustrates average fluorescence spectra per site acquired from cervical sites at 380 nm excitation, from the same patient. In <ref type="figure">Figure 2</ref>, the fluorescence intensity of SILs is less than that of the corresponding normal squamous tissue, with the LG SIL exhibiting the weakest fluorescence intensity over the entire emission spectrum. Note that the fluorescence intensity of the normal columnar sample is indistinguishable from that of the HG SIL. <ref type="figure" target="#fig_1">Figure 3</ref> illustrates spectra at 460 nm excitation from the same patient. Evaluation of <ref type="figure" target="#fig_1">Figure 3</ref> indicates that the fluorescence intensity of SILs is less than that of the corresponding normal squamous tissue and greater than that of the corresponding normal columnar sample over the entire emission spectrum.</p><p>Tissue fluorescence spectra at 337 nm excitation consists of intensities at a total of 59 emission wavelengths; tissue spectra at 380 nm excitation consists of intensities at a total of 56 emission wavelengths and that at 460 nm excitation consists of intensities at 45 emission wavelengths. Hence, fluorescence spectra at all three excitation wavelengths comprise of fluorescence intensities at a total of 160 excitation-emission wavelengths pairs. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3">Algorithm Development</head><p>In this section, the development of the multivariate statistical algorithm and the neural network based algorithms are described. Each type of algorithm was utilized to develop a detection method that can effectively discriminate between SILs and non-SILs (normal squamous and normal columnar).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1">Multivariate Statistical Algorithms</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.1">Full-Parameter Multivariate Statistical Algorithm</head><p>The Multivariate Statistical Algorithm (MSA) development described in ( <ref type="bibr" target="#b18">Ramanujam et al., 1996)</ref> consists of the following five steps:</p><p>1. pre-processing to reduce inter-patient and intra-patient variation of fluorescence spectra from a tissue type, using either normalization or normalization followed by meanscaling,</p><p>2. dimension reduction of the pre-processed tissue fluorescence spectra using Principal Component Analysis (PCA),</p><p>3. selection of diagnostically relevant principal components, using an unpaired, one-sided student's t-test, 4. development of a classification algorithm based on logistic discrimination, using the diagnostically relevant principal components, and finally 5. retrospective and prospective evaluation of the algorithm's accuracy on a training and test set, respectively.</p><p>unkown tissue sample This process of algorithm development was applied to tissue fluorescence spectra acquired at all three excitation wavelengths, as described in detail in ( <ref type="bibr" target="#b18">Ramanujam et al., 1996)</ref>. Discrimination between the SILs and the two normal tissue types was achieved using a composite algorithm of two independently developed constituent algorithms. Constituent algorithm (1), which is based on tissue spectra that have been pre-processed by normalization, discriminates between SILs and normal squamous tissue samples. Constituent algorithm (2), which is based on tissue spectra that have been pre-processed by normalization followed by mean-scaling, discriminate between SILs and normal columnar tissue samples. The classification outputs from both constituent algorithms were used to determine whether a sample being evaluated is SIL/non-SIL. A sample is first presented to constituent algorithm (1). If it is classified as non-SIL, the algorithm terminates. If it is classified as SIL, then the sample is presented to constituent algorithm <ref type="bibr">(2)</ref>, and the result of that algorithm determines the final classification of the tissue sample. <ref type="figure" target="#fig_2">Figure 4</ref> illustrates this procedure.</p><formula xml:id="formula_0">✲ algo (1) ✒ ❅ ❅ ❅ | non-SIL ✓ ✒ ✏ ✑ possible SIL ✲ algo (2) ✒ ❅ ❅ ❅ | non-SIL ✓ ✒ ✏ ✑ SIL ✓ ✒ ✏ ✑</formula></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.1.2">Reduced-Parameter Multivariate Statistical Algorithms</head><p>The full-parameter MSA utilizes fluorescence spectra at all three excitation wavelengths to develop a classification scheme for cervical pre-cancer detection; the fluorescence spectra at these three excitation wavelengths correspond to fluorescence intensities at a total of 160 excitation-emission wavelength pairs (5 nm spectral resolution). However, there is a significant cost penalty for using all 160 values. To alleviate this concern, a more cost-effective fluorescence imaging system can be developed if the number of required excitation-emission wavelength pairs at which fluorescence intensities need to be recorded is significantly reduced. For example, if the number of required excitation-emission wavelength pairs that need to measured can be reduced by an order of magnitude, the polychromator and intensified diode array can be replaced by a mechanical filter assembly and a single channel detector. The resulting system represents a substantial decrease in cost and complexity of this instrumentation.</p><p>We have shown that component loadings calculated from Principal Component Analysis ( <ref type="bibr" target="#b18">Ramanujam et al., 1996)</ref> can be used to reduce the number of fluorescence excitationemission wavelength pairs required to generate the constituent algorithms from 160 to 13, with a minimal decrease in classification accuracy. The component loadings represent the correlation between a principal component and the pre-processed fluorescence spectra at each excitation-emission wavelength pair. More precisely, the diagnostically relevant principal components of the full-parameter set (160 variables) selected using the students t-test are used to calculate the component loadings. The intensity/wavelength pairs that show a strong correlation to the relevant principal components form the reduced-parameter set. <ref type="table">Table 2</ref> shows the fluorescence intensities at the reduced number of excitation-emission wavelength pairs. These pairs are used to redevelop constituent algorithms <ref type="formula" target="#formula_1">(1)</ref> and <ref type="formula" target="#formula_2">(2)</ref> using the MSA process. <ref type="table">Table 2</ref>: Fluorescence intensities at 13 excitation-emission wavelength pairs needed to redevelop the two reduced-parameter constituent algorithms. Aside from the pre-processing, the two sets only differed in two selections, identified by * .</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Features for Algorithm (1)</head><p>Features for Algorithm <ref type="formula" target="#formula_2">(2)</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2">Algorithms Based on Neural Networks</head><p>The second stage of algorithm development consists of evaluating the applicability of neural networks to this problem. For this study, we consider two types of feed forward neural networks, the Multi-Layered Perceptron (MLP) and the Radial Basis function (RBF) network ( <ref type="bibr" target="#b26">Tumer et al., 1997</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.1">Multi-Layered Perceptrons</head><p>The MLP, probably the most commonly used neural network architecture, is a feed-forward neural network with an input layer, an output layer and possibly multiple hidden layers. Each layer is connected only to the subsequent layer by variable weights which are adjusted to minimize a predetermined cost function, such as the Mean Square Error (MSE). For an MLP with one hidden layer, the responses of the kth hidden unit, h k , and the jth output, o j , are respectively given by:</p><formula xml:id="formula_1">h k = g( i v ki x i );<label>(1)</label></formula><p>and</p><formula xml:id="formula_2">o j = f ( k w jk h k ),<label>(2)</label></formula><p>where the input to hidden connections strength are given by v, the hidden to output connection strengths are given by w, and indices i and k sum over the input (x) and hidden units respectively. The activation functions f (·) and g(·) are sigmoidal functions.</p><p>In order to adapt the weights, the backpropagation algorithm is generally used. The principle of this algorithm is based on distributing the "blame" or the contribution of each unit to the overall error, across the proper weights. Further details can be found in <ref type="bibr" target="#b9">(Haykin, 1994;</ref><ref type="bibr" target="#b1">Bishop, 1995)</ref>. In this study we only explore MLPs with a single hidden layer.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.2">Radial Basis Function Networks</head><p>Radial Basis Function networks are feed-forward networks with a single hidden layer where the activation function is a radially symmetric basis function. The output units perform a weighted sum over the outputs of the hidden units (also called kernels). One class of radial basis functions that is of particular interest consists of those with Gaussian kernels, or where the basis', (R j (x)), have the following activation function <ref type="bibr" target="#b9">(Haykin, 1994)</ref>:</p><formula xml:id="formula_3">R j (x) = e − 1 2 x−x j 2 σ 2 j ,<label>(3)</label></formula><p>where σ j determines the width of the receptive field, and x j determines the centroid of the jth kernel, respectively. The jth hidden node has a maximum output of 1 when input x = x j . Important parameters in the design of RBF networks include the number, location and receptive field widths of the kernels.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="3.2.3">Combining Multiple Networks</head><p>The performance of a given MLP or RBF network depends on many parameters, including size, learning rate, training strategy and initial weights. These differences result in different classification decisions, making the selection of a single "best" network a delicate matter. This problem is further compounded when the amount of training patterns is limited, because the definition of "best" depends on the particular validation set chosen. In such cases, it is difficult to ascertain whether one network will outperform all others given a different test set, as the validation sets are small. Furthermore, selecting only one classifier discards a large amount of potentially relevant information. In order to use all the available data, and to increase both the performance and the reliability of the methods, one can pool the outputs of the individual classifiers before a classification decision is made <ref type="bibr" target="#b7">(Hampshire and Waibel, 1992;</ref><ref type="bibr" target="#b8">Hansen and Salamon, 1990;</ref><ref type="bibr" target="#b17">Perrone and Cooper, 1993;</ref><ref type="bibr" target="#b24">Tumer and Ghosh, 1996a;</ref><ref type="bibr" target="#b29">Wolpert, 1992)</ref>.</p><p>In this study we use the median combiner, f med i , which belongs to the class of order statistics combiners introduced in <ref type="bibr" target="#b23">(Tumer and Ghosh, 1995)</ref>, and the averaging combiner, f ave i which performs an arithmetic average of the corresponding outputs:</p><formula xml:id="formula_4">f med i (x) =      f N 2 :N i (x) + f N 2 +1:N i (x) 2 if N is even f N+1 2 :N i (x) if N is odd,<label>(4)</label></formula><p>and</p><formula xml:id="formula_5">f ave i (x) = 1 N N m=1 f m i (x),<label>(5)</label></formula><p>where N represents the number of available classifiers, and f m i (x) the ith output of the mth classifier for input x. We selected these two combiners, because of their simplicity in both interpretation and implementation, and because they typically result in good and robust performance ( <ref type="bibr" target="#b10">Kittler et al., 1996;</ref><ref type="bibr" target="#b23">Tumer and Ghosh, 1995</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4">Results</head><p>In this section we discuss the application of various neural network based algorithms to the spectral data discussed in Section 2. In order to establish the validity of using the neural network ensembles to perform this task, we conducted the following sets of experiments:</p><p>1. To evaluate the suitability of the neural network methods, we re-developed constituent algorithms (1) and (2) with the RBF and MLP ensembles using:</p><p>(a) the full-parameter, pre-processed data sets;</p><p>(b) the diagnostically relevant principal components obtained from the full-parameter, pre-processed data sets;</p><p>(c) the reduced-parameter, pre-processed data sets.</p><p>2. Reduce the two-step algorithm developed using MSA into a single-step algorithm using RBF and/or MLP ensembles.</p><p>3. Produce full comparative results showing the neural network ensembles' classification accuracy and reliability relative to the MSA, Pap smear and colposcopy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.1">Neural Network Ensembles on Full-Parameter Set</head><p>The first step in applying the neural network ensembles to this problem consisted of determining whether the algorithms were suited for this task. To that end, both the MLP and RBF ensembles were used to separate the normal squamous tissues from the SILs (constituent algorithm (1)). The task proved to be impossible using the full 160 parameters mainly because of the small number of training samples. Constraining the number of weights required to handle 160 parameters with the available data resulted in a highly ill-posed problem <ref type="bibr" target="#b27">(Wahba, 1982)</ref>. As a result the network tried to memorize the training data and performed poorly on the test set. In order to avoid this pitfall, we used the three diagnostically relevant principal components from the full-parameter data set containing normalized fluorescence spectra. (Note, the MSA was developed using these same three PCs, because it also was unable to solve this problem using the full-parameter data.) Both networks had two outputs, each representing the posterior probabilities of the corresponding class. The MLP networks had a single hidden layer with three hidden units, and the RBF networks had three kernels which were initialized by a k-means algorithm on the training set 4 .</p><p>The ensemble results reported in <ref type="table">Table 3</ref> correspond to the pooling of 20 different classifiers (MLPs or RBFs), each of which started from a different random weight initializations, using the average and median combiners, respectively 5 . All the results reported in this article are based on test set performance. We report the sensitivity and specificity values separately, rather than a single classification rate, to emphasize the difference between a false-positive and a false-negative. For an application such as pre-cancer detection, the cost of a misclassification varies greatly from one class to another. Erroneously labeling a healthy tissue as pre-cancerous can be corrected when further tests are performed. Labeling a pre-cancerous tissue as healthy however, can lead to disastrous consequences. Therefore, for algorithm (1), we increased the cost of a misclassified SIL until the sensitivity 6 reached a satisfactory level (comparable to the sensitivity of current clinical detection).</p><p>For this experiment, the RBF based combiners provide higher specificity than either the MLP ensembles or the MSA, for a similar sensitivity. This experiment was conducted to ensure that neural network ensembles could duplicate the MSA results <ref type="bibr" target="#b18">(Ramanujam et al., 1996)</ref>, using the principal components extracted from the full-parameter set. <ref type="table">Table 3</ref>: Accuracy of constituent algorithm (1) for differentiating between SILs and normal squamous tissues, based on the diagnostically relevant principal components of the fullparameter set containing normalized spectra. All results are based on test test performance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm</head><p>Specificity Sensitivity MSA 68% 88% RBF-single 71% ±3.8% 86% ±2.1% MLP-single 65% ±0.0% 83% ±1.1%</p><p>RBF-ave 74% ±0.7% 86% ±0.5% RBF-med 72% ±1.7% 86% ±1.5% MLP-ave 65% ±0.0% 83% ±0.0% MLP-med 65% ±0.0% 84% ±0.7%</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.2">Neural Networks on Reduced-Parameter Set (2-step Algorithm)</head><p>The second step in applying neural networks to this problem consisted of determining whether the neural network ensemble performance on the reduced-parameter data set was acceptable, by retracing the development of the two-step process outlined for the multivariate statistical algorithm. Specifically, the neural network ensemble was applied to the pre-processed reduced-parameter data sets, used to develop constituent algorithms (1) and (2).</p><p>For constituent algorithm (1) the RBF kernels were initialized using a k-means clustering algorithm on the training set containing normal squamous tissue samples and SILs. The RBF networks had 10 kernels, whose locations and spreads were adjusted during training. The MLP had one hidden layer with 10 hidden units. For constituent algorithm (2), we selected 10 kernels, half of which were fixed to patterns from the columnar normal class, while the other half were initialized using a k-means algorithm. Neither the kernel locations nor their spreads were adjusted during training. This process was adopted to rectify the large discrepancy between the number of samples from each category (13 for columnar normal vs. 58 for SILs). In this case, the MLP algorithm had 10 hidden units. Training was shypothesizetopped when the performance on the training set slowed down sufficiently to suggest further training would cause overtraining <ref type="bibr">7</ref> Once a stopping time was selected, 20 cases were run for each algorithm 8 . <ref type="table">Table 4</ref>: Accuracy of constituent algorithm (1) for differentiating SILs and normal squamous tissues, based on the reduced-parameter set containing normalized spectra.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm</head><p>Specificity Sensitivity MSA 63% 90% RBF-single 66% ±2.7% 84% ±2.0% MLP-single 61% ±0.0% 91% ±0.2%</p><p>RBF-ave 66% ±0.6% 90% ±0.0% RBF-med 66% ±1.1% 90% ±0.7% MLP-ave 61% ±0.0% 91% ±0.0% MLP-med 61% ±0.0% 91% ±0.0% <ref type="table">Table 5</ref>: Accuracy of constituent algorithm <ref type="formula" target="#formula_2">(2)</ref> for differentiating SILs and normal columnar tissues, based on the reduced-parameter set containing normalized and mean-scaled spectra.</p><p>Algorithm Specificity Sensitivity MSA 36% 97% RBF-single 35% ±15% 97% ±1.6% MLP-single 47% ±6.9% 89% ±3.5%</p><p>RBF-ave 37% ±5.0% 97% ±0.0% RBF-med 44% ±7.5% 97% ±0.0% MLP-ave 50% ±0.0% 88% ±0.7% MLP-med 50% ±0.0% 89% ±2.5%</p><p>The ensemble results reported are based on the pooling of 20 different runs of RBF networks, initialized and trained as described in the previous section. Once again we increased the cost of misclassifying a SIL in order to increase the sensitivity at the expense of reducing the specificity. For algorithm (1), the cost of a misclassified SIL was 2.5 times the cost of a misclassified normal tissue sample. The sensitivity and specificity values for constituent algorithm (1) based on MSA, MLP and RBF ensembles are provided in <ref type="table">Table 4</ref>. <ref type="table">Table 5</ref> presents sensitivity and specificity values for constituent algorithm (2) obtained from MSA, and MLP and RBF ensembles. In this case, there was no need to increase the cost of a misclassified SIL for the RBF network, because of the high prominence of SILs in the training set. For the MLPs however, the cost of normal columnars had to be increased in order to obtain classification decisions 9 .</p><p>For both algorithms (1) and (2), the RBF based combiners provide higher specificity than the MSA, while the MLP ensemble does so only for algorithm <ref type="bibr">(1)</ref>. Furthermore in the case of the RBF algorithm, this increase is achieved without a decrease in the sensitivity. The median combiner provides results similar to those of the average combiner, except for algorithm (2) where it provides better specificity. From these experiments we can conclude that the RBF network is better suited for this task than the MLP. While in some other work such as classification of sonar signals we have found combining MLPs with RBFs to be fruitful ( <ref type="bibr" target="#b6">Ghosh et al., 1996)</ref>, in this problem we were surprised to find that combining MLPs and RBFs always gave worse results than combining RBFs alone. We hypothesize that the fine tuning required to accommodate the varying number of class samples poses severe problems for MLPs global computations. The RBF networks significantly alleviate this problem by placing the kernels in the appropriate places.</p><p>We conducted this experiment to not only to demonstrate that the reduced-parameter data set does not compromise the performance of the network ensembles, but also to compare the RBF and MLP ensembles. having established the validity of the reduced-parameter set, we performed the remaining experiments on the reduced-parameter data set only. This is a significant step, since it allows us to solely depend on the 13 parameters obtained from the component loadings, rather than on the principal components from the original 160 values. Furthermore, the results of the first two steps indicate that the RBF network ensembles not only duplicate and surpass the MSA results, but also outperform the MLP algorithms at every step. Since the MLP ensembles fail to show any areas where they may be more desirable than the RBF network ensembles, we will restrict the remainder of the experiments to RBF network ensembles only.</p><p>In Sections 4.1 and 4.2, we used the two constituent algorithms separately, to discriminate different types of normal tissue from SILs. In order to obtain the final discrimination between normal tissue and SILs, constituent algorithms (1) and (2) need to be used sequentially. This two step approach, highlighted in <ref type="figure" target="#fig_2">Figure 4</ref>, was specifically developed for the multivariate statistical analysis, which performed best when the decision tasks were simplified. In the next section we present a more direct approach that uses the strengths of the neural network ensembles to reduce the multi-step classification scheme to a direct, one-step, process.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3">Single Step Classification using Reduced-Parameter Set</head><p>In this section, we examine the potential of RBF ensembles for separating SILs from normal tissue samples in a single classification step. Because the pre-processing for algorithms (1) and <ref type="formula" target="#formula_2">(2)</ref> is different 10 , we formed 26-dimensional inputs by concatenating the two reduced features sets describes in Section 3.1.2. We initialized 10 kernels using a k-means algorithm on a trimmed 11 version of the training set. Without this trimming process, few patterns belonging to the columnar normal class are selected as kernels due to their low prominence in the training set, resulting in poor performance when such a sample is seen. During training, the kernel locations and spreads were not adjusted, to allow kernels to remain in sections of the input space where few patterns are observed. The cost of a misclassified SIL was set at 2.5 times the cost of a misclassified normal tissue sample, in order to provide the best sensitivity/specificity pair. The average and median combiner results are obtained by pooling 20 RBF networks 12 . </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm</head><p>Specificity Sensitivity 2-step MSA 65% 84% 2-step RBF-ave 65% ± 2% 87% ±1% 2-step RBF-med 67% ± 2% 87% ±1% 1-step RBF-single 65% ± 9% 89% ±2.8% 1-step RBF-ave 67% ± .7% 91% ±1.5% 1-step RBF-med 65.5% ± .5% 91% ±1% <ref type="table" target="#tab_2">Table 6</ref> shows the performance of the algorithms for a given SIL misclassification cost. For comparison purposes, the results of the 2-step RBF ensemble algorithms are also provided. These algorithms perform the same steps as the MSA, using the results presented in Section 3.1.2 for each constituent algorithm).</p><p>As we discussed above, for an application such as pre-cancer detection, it is far more critical to increase the classification accuracy of some classes than others, to eliminate certain types of errors. By making the algorithm more compact, the one step algorithm also makes this trade-off more visible.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.3.1">Sensitivity-Specificity Tradeoff</head><p>In this subsection we detail the interaction between the cost of misclassification and the variation in the sensitivity/specificity of the RBF ensembles. Since it may be required to reach a predetermined sensitivity, we have varied the cost of misclassifying a SIL to obtain a wide range of sensitivity/specificity pairs. <ref type="table" target="#tab_3">Table 7</ref> shows the specificity and sensitivity for various costs of a misclassification.</p><p>On observing the performance of the RBF ensembles at various costs of misclassifying SILs, the improvements over the two-step MSA algorithm are apparent. If the specificity is required to be above 60%, for example, using a SIL misclassification cost of three improves the sensitivity of the MSA by a significant 10%, using the average RBF ensembles. If, on the other hand, a sensitivity above 83% is required, using a SIL misclassification cost of two, provides an improvement of 12% over the specificity of the MSA.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="4.4">Comparative Results</head><p>In the previous sections we discussed how the neural network ensembles were applied to various stages of this classification tasks. In this section we compare the final results of the RBF network ensembles to the best MSA result and to clinical methods. The SIL misclassification cost of 2.5 provided the best compromise between sensitivity and specificity. To find the variability of the methods, we performed the ensemble averaging 10 times on 20 different individual classifiers.</p><p>The results of both the two-step and one-step RBF algorithms and the results of the two-step MSA are compared to the accuracy of Pap smear screening and colposcopy in expert hands in <ref type="table">Table 8</ref>. A comparison of one-step RBF algorithms to the two-step RBF algorithms indicates that the one-step algorithms have similar specificities, but a moderate improvement in sensitivity relative to the two-step algorithms. Compared to the MSA, the one-step RBF algorithms have a slightly decreased specificity, but a substantially improved sensitivity. In addition to the improved sensitivity, the one step RBF algorithms simplify the decision making process. A comparison between the one step RBF algorithms and Pap smear screening indicates that the RBF algorithms have a nearly 30% improvement in sensitivity with no compromise in specificity; when compared to colposcopy in expert hands <ref type="bibr" target="#b5">(Fahey et al., 1995)</ref>, the RBF ensemble algorithms maintain the sensitivity of expert colposcopists, while improving the specificity by almost 20%. <ref type="table">Table 8</ref>: One step RBF algorithm compared to multi-step MSA ( <ref type="bibr" target="#b18">Ramanujam et al., 1996)</ref> and clinical methods <ref type="bibr" target="#b5">(Fahey et al., 1995)</ref> for differentiating SILs and normal tissue samples.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Algorithm</head><p>Specificity Sensitivity 2-step MSA 65% 84% RBF-single 65% ± 9% 89% ±2.8% RBF-ave 67% ±.75% 91% ±1.5% RBF-med 65.5% ±.5% 91% ±1%</p><p>Pap smear (human expert) 68% ±21% 62% ±23% Colposcopy (human expert) 48%±23 % 94% ±6% <ref type="figure">Figure 5</ref> further illustrates the trade-off between specificity and sensitivity for clinical methods, MSA and RBF ensembles, obtained by changing the misclassification cost. The one-step RBF ensembles provide better sensitivity and higher reliability than any other method for a given specificity value.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="5">Discussion</head><p>In this article we demonstrate that cervical tissue fluorescence spectra can be used to develop detection algorithms that differentiate SILs from normal tissue samples. Of the various algorithms explored, the RBF network ensemble proved to be the best alternative, surpassing single networks, MLP ensembles, and the multivariate statistical algorithm.</p><p>The classification results of both the multivariate statistical algorithms and the radial basis function network ensembles demonstrate that significant improvement in classification accuracy can be achieved over current clinical detection modalities using cervical tissue spectral data obtained from in vivo fluorescence spectroscopy. The one-step RBF algorithm has the potential to significantly reduce the number of pre-cancerous cases missed by Pap smear screening and the number of normal tissues misdiagnosed by expert colposcopists.</p><p>The qualitative nature of current clinical detection modalities leads to a significant variability in classification accuracy. For example, estimates of the sensitivity and specificity of Pap smear screening have been shown to range from 11-99% and 14-97%, respectively <ref type="bibr" target="#b5">(Fahey et al., 1995)</ref>. This limitation can be addressed by exploiting the variance reducing properties of an ensemble approach. In particular, RBF ensembles demonstrate a significantly Figure 5: Trade-off between sensitivity and specifity for MSA ( <ref type="bibr" target="#b18">Ramanujam et al., 1996)</ref> and RBF ensembles. For reference, Pap smear and colposcopy results from the literature on various data sets are included <ref type="bibr" target="#b5">(Fahey et al., 1995</ref>).</p><p>smaller variability in classification accuracy, therefore enabling more reliable classification. In addition to demonstrating a superior sensitivity, the RBF ensembles simplify the decision making process of the two-step algorithms based on RBF and MSA into a single step that discriminates between SILs and normal tissues. We note that for the given data set, both MSA and MLP were unable to provide satisfactory solutions in one step.</p><p>The one-step algorithm development process can be readily implemented in software, enabling automated detection of cervical pre-cancer. It can potentially provide near real time implementation of pre-cancer detection in the hands of non-experts, and could lead to wide-scale implementation of screening and diagnosis, and more effective patient management in the prevention of cervical cancer. The success of this application will represent an important step forward in both medical laser spectroscopy and gynecologic oncology.</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>Figure 1 :Figure 2 :</head><label>12</label><figDesc>Fluorecsence spectra from a typical patient at 337 nm excitation.350.0 450.0 550.0 650.0 Wavelength (nm) 0.00 0.10 0.20 0.30 Fluorescence Intensity NC NS HG LG Figure 2: Fluorecsence spectra from a typical patient at 380 nm excitation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 3 :</head><label>3</label><figDesc>Fluorecsence spectra from a typical patient at 460 nm excitation.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 4 :</head><label>4</label><figDesc>Schematic representation of the composite MSA algorithm.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="true"><head>Table 1 :</head><label>1</label><figDesc>Histo-pathologic classification of samples from the training and test sets. Note, biopsies for histological evaluation were not obtained from colposcopically normal squamous and columnar tissue sites to comply with routine patient care procedure.</figDesc><table>Histo-pathology 
+Target Classification Training Set Test Set 
+Normal Squamous 
+94 
+94 
+Normal Columnar 
+non-SIL 
+13 
+14 
+Inflammation 
+15 
+14 
+LG SIL 
+SIL 
+23 
+24 
+HG SIL 
+35 
+35 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head>Table 6 :</head><label>6</label><figDesc>One step RBF algorithm compared to multi-step MSA. (Based on reduced- parameter set.)</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="true"><head>Table 7 :</head><label>7</label><figDesc>Effect of misclassification cost on 1-step RBF algorithm.</figDesc><table>Algorithm 
+Cost of SIL 
+Specificity Sensitivity 
+misclassification 
+2-step MSA 
+65% 
+84% 
+RBF-ave 
+1 
+85% 
+61% 
+RBF-med 
+84% 
+61% 
+RBF-ave 
+2 
+75% 
+88% 
+RBF-med 
+74% 
+86% 
+RBF-ave 
+2.5 
+67% 
+91% 
+RBF-med 
+66% 
+91% 
+RBF-ave 
+3 
+63% 
+93% 
+RBF-med 
+59% 
+93% 
+RBF-ave 
+4 
+55% 
+95% 
+RBF-med 
+52% 
+97% 
+RBF-ave 
+5 
+39% 
+97% 
+RBF-med 
+37% 
+97% 
+
+</table></figure>
+
+			<note place="foot" n="1"> Sensitivity is the correct classification percentage on the pre-cancerous tissue samples. 2 Specificity is the correct classification percentage on normal tissue samples.</note>
+
+			<note place="foot" n="3"> In this paper we will not focus on the classification of tissues with inflammation. Evaluation of these tissues using both MSA and neural networks indicates that they are nearly indistinguishable from SILs based on the spectral data presented here (Ramanujam et al., 1995a; Ramanujam et al., 1995b). To remedy the situation, different optical spectroscopic techniques are needed.</note>
+
+			<note place="foot" n="4"> The appropriate sizes of both the MLP and the RBF network were determined experimentally. Because we found that the performance was comparable over fairly large range of network sizes, it was not necessary to use sophisticated methods. 5 The gains due to combining were minimal if more classifiers were used. 6 In the results reported in this section, the cost of misclassifying a SIL was two times the cost of misclassifying a normal tissue sample.</note>
+
+			<note place="foot" n="7"> In general, Leave-One-Out or K-fold cross validation woudl be more desirable. However, because the results were similar over a large window of stopping times, this more naive method seemed adequate. 8 Each run has a different initialial set of kernels/spreads/weights.</note>
+
+			<note place="foot" n="9"> When the cost of a misclassified SIL was the same as the cost of a misclassified normal columnar, all patterns were classified as SILs by the MLP. Only when the cost of normal columnars was increased did the MLP start to make non-trivial classification decisions.</note>
+
+			<note place="foot" n="10"> Normalization vs. normalization followed by mean scaling.</note>
+
+			<note place="foot" n="11"> The trimmed set has the same number of patterns from each class. Thus, it forces each class to have a similar number of kernels. This set is used only for initializing the kernels, not while training. 12 This procedure is repeated 10 times, in order to determine the variability in the ensembles.</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Acknoledgements: This research was supported in part by NSF grant ECS 9307632, AFOSR contract F49620-93-1-0307, and Lifespex, Inc.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title level="m" type="main">Cancer Facts and Figures</title>
+		<imprint>
+			<date type="published" when="1995" />
+			<publisher>American Cancer Society</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">Neural Networks for Pattern Recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">M</forename><surname>Bishop</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1995" />
+			<publisher>Oxford University Press</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Clinical pharmacokinetic studies of photofrin by fluorescence spectroscopy in the oral cavity, the esophagus and the bronchi</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">R</forename><surname>Braichotte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Wagnieres</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Bays</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Monnier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">E</forename><surname>Van Den Bergh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<biblScope unit="issue">11</biblScope>
+			<biblScope unit="page" from="2768" to="2778" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Burke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><forename type="middle">S</forename><surname>Ducatman</surname></persName>
+		</author>
+		<title level="m">Colposcopy, Text and Atlas</title>
+		<meeting><address><addrLine>Norwalk, CT</addrLine></address></meeting>
+		<imprint>
+			<publisher>Appleton and Large</publisher>
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title level="m" type="main">Gastrointestinal tissue diagnosis by laser induced fluorescence spectroscopy at endoscopy. Gastrointestinal Endoscopy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">M</forename><surname>Cothren</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Richards-Kortum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>Rava</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">A</forename><surname>Boyce</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Doxtader</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Blackman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Ivanc</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><forename type="middle">B</forename><surname>Hayes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">S</forename><surname>Feld</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">E</forename><surname>Petras</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1990" />
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="105" to="111" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Meta-analysis of pap test accuracy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">T</forename><surname>Fahey</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Irwig</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Macaskill</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">American Journal of Epidemiology</title>
+		<imprint>
+			<biblScope unit="volume">141</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="680" to="689" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Integration of neural classifiers for passive sonar signals</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ghosh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Tumer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Beck</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Deuser</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Control and Dynamic Systems-Advances in Theory and Applications</title>
+		<editor>Leondes, C.</editor>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1996" />
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="301" to="338" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The Meta-Pi network: Building distributed representations for robust multisource pattern recognition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Hampshire</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Waibel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="751" to="769" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Neural network ensembles</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">K</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Salamon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Transactions on Pattern Analysis and Machine Intelligence</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="issue">10</biblScope>
+			<biblScope unit="page" from="993" to="1000" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<monogr>
+		<title level="m" type="main">Neural Networks: A Comprehensive Foundation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Haykin</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1994" />
+			<publisher>Macmillan</publisher>
+			<pubPlace>New York</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Combining classifiers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Kittler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hatef</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P W</forename><surname>Duin</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the International Conference on Pattern Recognition</title>
+		<meeting>the International Conference on Pattern Recognition<address><addrLine>Vienna</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1996" />
+			<biblScope unit="volume">3</biblScope>
+			<biblScope unit="page" from="897" to="901" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Pap tests: What you need to know</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Korman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Business Week</title>
+		<imprint>
+			<biblScope unit="page">194</biblScope>
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">The Papanicolaou test for cervical cancer detection: a triumph and a tragedy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">G</forename><surname>Koss</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of American Medical Association</title>
+		<imprint>
+			<biblScope unit="page" from="737" to="743" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Interim guidelines of management of abnormal cervical cytology</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Kurman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">E</forename><surname>Henson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">L</forename><surname>Herbst</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">L</forename><surname>Noller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">H</forename><surname>Schiffman</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of American Medical Association</title>
+		<imprint>
+			<biblScope unit="volume">271</biblScope>
+			<biblScope unit="page" from="1866" to="1869" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Fluorescence of the cervix uteri as a marker for dysplaxia and invasive carcinoma</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Lohmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Mußmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Lohmann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Kunzel</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">European Journal of Obstetrics and Gynecology and Reproductive Biology</title>
+		<imprint>
+			<biblScope unit="volume">131</biblScope>
+			<biblScope unit="page" from="249" to="253" />
+			<date type="published" when="1989" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Light-induced fluorescence spectroscopy of adenomas, adenocarcinomas and non-neoplastic mucosa in human colon</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Marchesini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Brambilla</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Pignoli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Bottiroli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">C</forename><surname>Croce</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Dal Fante</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Spinelli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Di</forename><surname>Palma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Photochemistry and Photobiology</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">3</biblScope>
+			<biblScope unit="page" from="219" to="230" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Accuracy of colposcopy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Mitchell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Consultations in Obstetrics and Gynecology</title>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="70" to="73" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">When networks disagree: Ensemble methods for hybrid neural networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Perrone</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><forename type="middle">N</forename><surname>Cooper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Neural Networks for Speech and Image Processing</title>
+		<editor>Mammone, R. J.</editor>
+		<imprint>
+			<publisher>Chapmann-Hall</publisher>
+			<date type="published" when="1993" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Cervical pre-cancer detection using a multivariate statistical algorithm based on fluorescence spectra at multiple excitation wavelengths</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ramanujam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mahadevan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Thomsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Malpica</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Atkinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Richards-Kortum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Photochemistry and Photobiology</title>
+		<imprint>
+			<biblScope unit="volume">64</biblScope>
+			<biblScope unit="issue">4</biblScope>
+			<biblScope unit="page" from="720" to="735" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Development of a multivariate statistical algorithm to analyze human cervical tissue fluorescence spectra acquired in-vivo</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ramanujam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mahadevan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Thomsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Malpica</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Atkinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Richards-Kortum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lasers in Medicine and Surgery</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="46" to="62" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Spectroscopic diagnosis of cervical squamous intraepithelial neoplasia in vivo using laser induced fluorescence spectra at multiple excitation wavelengths</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ramanujam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Mitchell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mahadevan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Thomsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Malpica</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Atkinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Richards-Kortum</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lasers in Medicine and Surgery</title>
+		<imprint>
+			<biblScope unit="volume">19</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="63" to="74" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Spectroscopic diagnosis of colonic dysplaxia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">R</forename><surname>Richards-Kortum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>Rava</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Fitzmaurice</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">V</forename><surname>Sivak</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Photochemistry and Photobiology</title>
+		<imprint>
+			<biblScope unit="volume">53</biblScope>
+			<biblScope unit="page" from="777" to="786" />
+			<date type="published" when="1991" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Ultraviolet laser induced fluorescence of colonic tissue: basic biology and diagnostic potential</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">T</forename><surname>Schomacker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">K</forename><surname>Friscoli</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">C</forename><surname>Compton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">J</forename><surname>Flotte</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">M</forename><surname>Richter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><forename type="middle">S</forename><surname>Nishioka</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">F</forename><surname>Deutsch</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lasers in Surgery and Medicine</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="63" to="78" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Order statistics combiners for neural classifiers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Tumer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ghosh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the World Congress on Neural Networks</title>
+		<meeting>the World Congress on Neural Networks<address><addrLine>Washington D.C</addrLine></address></meeting>
+		<imprint>
+			<publisher>INNS Press</publisher>
+			<date type="published" when="1995" />
+			<biblScope unit="page" from="31" to="34" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Analysis of decision boundaries in linearly combined neural classifiers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Tumer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ghosh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Pattern Recognition</title>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="341" to="348" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Error correlation and error reduction in ensemble classifiers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Tumer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ghosh</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Connection Science, Special Issue on Combining Artificial Neural Networks: Ensemble Approaches</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">3 &amp; 4</biblScope>
+			<biblScope unit="page" from="385" to="404" />
+			<date type="published" when="1996" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Spectroscopic detection of cervical pre-cancer through radial basis function networks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Tumer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Ramanujam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Richards-Kortum</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ghosh</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Advances in Neural Information Processing Systems-9</title>
+		<editor>Mozer, M. C., Jordan, M. I., and Petsche, T.</editor>
+		<imprint>
+			<publisher>M.I.T. Press</publisher>
+			<date type="published" when="1997" />
+			<biblScope unit="page" from="981" to="987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Constrained regularization for ill-posed linear operator equations, with applications in meteorology and medicine</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Wahba</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Statistical Decisions Theory and Related Topics III</title>
+		<editor>Gupta, S. S. and Berger, J. O.</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<publisher>Academic Press</publisher>
+			<date type="published" when="1982" />
+			<biblScope unit="volume">2</biblScope>
+			<biblScope unit="page" from="383" to="418" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Pap smears and screening for cervical neoplasia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><forename type="middle">J</forename><surname>Wilkinson</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Clinical Obstetrics and Gynecology</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="817" to="825" />
+			<date type="published" when="1990" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Stacked generalization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">H</forename><surname>Wolpert</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Neural Networks</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="241" to="259" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<analytic>
+		<title level="a" type="main">Cytological Screening in the Control of Cervical Cancer: Technical Guidelines</title>
+	</analytic>
+	<monogr>
+		<title level="j">World Health Organization</title>
+		<imprint>
+			<date type="published" when="1988" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Cervical intraepithelial neoplasia</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><forename type="middle">C</forename><surname>Wright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">J</forename><surname>Kurman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Ferenczy</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Pathology of the Female Genital Tract</title>
+		<editor>Blaustein, A., editor</editor>
+		<meeting><address><addrLine>New York</addrLine></address></meeting>
+		<imprint>
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Characteristic autofluorescence for cancer diagnosis and its origin</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Yuanlong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Yanming</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Fuming</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Yufen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Paozhong</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Lasers in Surgery and Medicine</title>
+		<imprint>
+			<biblScope unit="volume">7</biblScope>
+			<biblScope unit="page" from="528" to="532" />
+			<date type="published" when="1987" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>

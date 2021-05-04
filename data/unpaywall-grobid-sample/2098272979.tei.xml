@@ -1,0 +1,2423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /vol3/mag/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.4-SNAPSHOT" ident="GROBID" when="2019-02-05T07:10+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main"></title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+					<note></note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>Dosimetry</term>
+					<term>Intensity Modulated Radiotherapy</term>
+					<term>Optimization Algorithms</term>
+					<term>Volumetric Modulated Arc Therapy</term>
+				</keywords>
+			</textClass>
+			<abstract>
+<div xmlns="http://www.tei-c.org/ns/1.0"><p>Abstract-Purpose: Planning and dosimetry of different VMAT algorithms (SmartArc, Ergo++, Autobeam) is compared with IMRT for Head and Neck Cancer patients. Modelling was performed to rule out the causes of discrepancies between planned and delivered dose.</p><p>Methods: Five HNC patients previously treated with IMRT were re-planned with SmartArc (SA), Ergo++ and Autobeam. Plans were compared with each other and against IMRT and evaluated using DVHs for PTVs and OARs, delivery time, monitor units (MU) and dosimetric accuracy. Modelling of control point (CP) spacing, Leafend Separation and MLC/Aperture shape was performed to rule out causes of discrepancies between planned and delivered doses. Additionally estimated arc delivery times, overall plan generation times and effect of CP spacing and number of arcs on plan generation times were recorded.</p><p>Results: Single arc SmartArc plans (SA4d) were generally better than IMRT and double arc plans (SA2Arcs) in terms of homogeneity and target coverage. Double arc plans seemed to have a positive role in achieving improved Conformity Index (CI) and better sparing of some Organs at Risk (OARs) compared to Step and Shoot IMRT (ss-IMRT) and SA4d. Overall Ergo++ plans achieved best CI for both PTVs. Dosimetric validation of all VMAT plans without modelling was found to be lower than ss-IMRT. Total MUs required for delivery were on average 19%, 30%, 10.6% and 6.5% lower than ss-IMRT for SA4d, SA2d (Single arc with 2 0 Gantry Spacing), SA2Arcs and Autobeam plans respectively. Autobeam was most efficient in terms of actual treatment delivery times whereas Ergo++ plans took longest to deliver.</p><p>Conclusion: Overall SA single arc plans on average achieved best target coverage and homogeneity for both PTVs. SA2Arc plans showed improved CI and some OARs sparing. Very good dosimetric results were achieved with modelling. Ergo++ plans achieved best CI. Autobeam resulted in fastest treatment delivery times.</p></div>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. INTRODUCTION</head><p>OLUMETRIC MODULATED ARC THERAPY (VMAT) is a promising technology in the field of radiation therapy. It is one of the rotational forms of Intensity Modulated Radiation therapy (IMRT) and seems to offer a number of advantages in terms of more conformal dose distributions and faster treatment times. IMRT is currently regarded as a gold standard for a variety of tumour sites and offers better plan quality and Organ at Risk (OAR) sparing than 3D Conformal Radiotherapy (3DCRT) by use of inverse planning and fluence modulation <ref type="bibr" target="#b0">[1]</ref>- <ref type="bibr" target="#b4">[5]</ref>. However IMRT also has a few undesirable features such as increased treatment times, considerable rise in number of monitor units (MUs) delivered and require more extensive physics quality A.Taqaddas is with Research Wormhole and JMIRS, Canada (e-mail: taqaddas@mail.com).</p><p>Financial support for the research project was provided by RMH in terms of paying M.Sc. Research module fee. assurance checks <ref type="bibr" target="#b5">[6]</ref>- <ref type="bibr" target="#b7">[8]</ref>. With IMRT a large volume of normal tissue can get low doses of radiation that increases the potential risk of secondary cancers <ref type="bibr" target="#b8">[9]</ref>- <ref type="bibr" target="#b10">[11]</ref>. VMAT deals with some of the problems of IMRT.</p><p>Unlike fixed gantry IMRT, rotational IMRT does not have to deal with the problem of incoming beam angle selection due to their rotational nature <ref type="bibr" target="#b11">[12]</ref>. Other advantages of rotational IMRT include less treatment time as radiation delivery does not stop in between different beam angles and less monitor units (MUs). Large reduction in MUs means significant reduction in treatment time. More over reduced beam on time means less total body scatter. Therefore VMAT reduces theoretical risk of secondary malignancies as risk is related to scatter dose, MUs and volume of normal tissue receiving low dose radiotherapy. However VMAT won't be able to completely eliminate the risk as like IMRT, VMAT delivers low dose RT to a larger volume of normal tissue than 3DCRT <ref type="bibr" target="#b12">[13]</ref>. Some forms of rotational IMRT include IMAT, AMAT, VMAT and Tomotherapy.</p><p>In 1995 Yu, put forward the idea of Intensity Modulation Arc Therapy (IMAT) which involves continuous gantry rotation with dynamic MLC (Multi leaf collimator) motion to produce fluence modulation while beam is on <ref type="bibr" target="#b14">[14]</ref>. In this approach a number of arcs are used over different gantry angles. Physicists then realized that instead of multiple arcs a single arc with dynamic MLC motion can be sufficient to achieve intensity modulation and hence VMAT concept emerged <ref type="bibr" target="#b11">[12]</ref>. This was made possible as modern linear accelerators (Linacs) acquire the ability to deliver the plans with varying angular dose rate <ref type="bibr" target="#b15">[15]</ref>, leading to a reduction in the number of arcs and treatment time required as shown by a number of studies <ref type="bibr" target="#b12">[13]</ref>, <ref type="bibr" target="#b16">[16]</ref>, <ref type="bibr" target="#b17">[17]</ref>. The ability of VMAT to simultaneously vary gantry speed, dose rate and MLC leaf position during gantry rotation and the ability to deliver radiation in a single arc unlike IMAT has resulted in a number of potential benefits compared to both IMRT and IMAT in terms of fast treatment times, reduced toxicity of critical structures, improved dosimetric quality and reduced number of MUs possibly leading to reduce risk of secondary malignancies <ref type="bibr" target="#b18">[18]</ref>, <ref type="bibr" target="#b19">[19]</ref>.</p><p>The potential benefits of VMAT are greatly reliant on the VMAT optimization algorithms employed in the treatment planning systems (TPS). A number of VMAT optimizers are either being released or have already been released and include RapidArc (RA), SmartArc (SA), Oncentra Master Plan, Ergo++, Monaco etc. It is therefore important to study the VMAT capabilities of these optimizers to assess their potential benefits in radiation treatment planning and delivery.</p><p>This retrospective study compared different VMAT inverse planning algorithms (optimization) to understand basic differences between them and to find out which one gives the best dose distribution on the planning system for Head and Neck cancer (HNC). The VMAT plans were also compared to</p><p>Step and shoot IMRT (ss-IMRT). The HN site was chosen because IMRT and 3DCRT is challenging for HN volumes because they are generally large and are in close proximity of critical structures and consequently often require highly modulated plans to achieve adequate coverage of target volumes while sparing Organs at risks (OARs). Treatment planning was performed with Elekta Ergo++, Philips SmartArc (SA), Philips Pinnacle (IMRT) and Autobeam (Inhouse VMAT TPS) and plans were generated for Elekta linear accelerators.</p><p>The secondary goals of this study were to examine how accurately the Linear Accelerator is delivering the plan for each VMAT system and to investigate the causes of any discrepancies found and to suggest methods of overcoming these discrepancies. This involves that planning system must accurately model the delivery and then the delivery must be reproducible and in accordance with planning system model. This was tested in terms of control Point (CP) spacing, MLC/aperture shape and MLC leaf-end separation. Furthermore estimated arc delivery times and overall plan optimization and calculation times were recorded. This investigation has 3 main parts: Planning study, Dose Verification and Modelling.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>II. MATERIALS AND METHOD</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Planning Study</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head n="1.">Patient Selection, Contouring and Dose Levels</head><p>CT data (3mm slice thickness) for 5 previously treated HNC patients were selected for this study and transferred to the appropriate planning systems. These patients were selected randomly from the list of patients with Head and Neck cancer that have received IMRT at our department. Patient characteristics are listed in <ref type="table" target="#tab_1">Table I</ref>. Due to retrospective nature of the study the structures were already accurately outlined. The main OARs were ipsi-lateral parotid, contra-lateral parotid, spinal cord and brainstem. Two PTVs (PTV1edited and PTV2edited) were defined from respective clinical Target volumes (CTVs) by adding 3mm margin with 3D expansion. They were treated with two dose levels giving high dose to primary tumour (PTV1edited) and low dose to nodal disease (PTV2edited volume). Prescriptions to PTV1edited volume were 65Gy or 66.6Gy in 30 fractions (#) and PTV2 edited volume were 54Gy in 30#. The PTVs were called edited PTVs because for optimization, the PTVs were reduced to 5mm under the skin surface to avoid optimization problems in the build-up region. Single volumes are not applicable for multiple arcs. Therefore it was necessary to draw additional contours for all the 5 patients for Autobeam planning. For instance for two arcs PTV1+PTV2 R (Primary+RT sided nodal PTV) and PTV1+PTV2L (Primary+Left Sided Nodal PTV) were drawn. For three arcs PTVR and PTVL (i.e. PTV2_edited volume was separated into PTVR and PTVL) were drawn and these two contours were used along with PTV1 edited volume. Thus 3 arc plans were done using an arc to high dose volume (PTV1edited) plus an arc to each of the nodal PTVs. Plans generated with IMRT, SmartArc and Ergo were normalized to PTV1 mean dose. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Planning Objectives and Evaluation Tools</head><p>Plans were primarily assessed using the volume of PTV covered by 95% isodose and the irradiated volumes of OARs by means of standard Dose-Volume Histogram (DVH). For all PTVs, plans intend to achieve a minimum dose of 95% of the prescribed dose and a maximum dose lower than 107%. The planning DVH objectives used to access plan quality for all plans included : minimum dose, D95% and D5%-maximum dose (difference between the dose covering 5% and 95% of the target) to determine target homogeneity (D 5% -D 95% ), V&lt;95% and V&gt;107% (the volume receiving minimum of 95% and at most 107% of the prescribed dose respectively). In addition to it Conformity Index, CI 95% was also calculated which is the ratio between the body volume receiving at least 95% of the prescribed dose and the volume of the PTV.</p><p>For spinal cord with 3mm margin (SC_3mm) a maximum dose of 46Gy was allowed. For brainstem with 3mm margin (Brainstem_3mm) the maximum dose limit was set to 55Gy. In case of parotids the planning objectives tried to keep the mean dose below or at 26Gy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Statistical Analysis</head><p>Two strategies have been employed to do statistical analysis to improve the integrity of the results. Firstly paired t-test analysis was used to analyze results. Results were considered statistically significant for p&lt;=0.05. Although the number of cases is 5 but a large number of plans were created and many plan parameters have been tested in this study. Hence it is fairly justified to use paired t-test analysis in the present study. In the literature there are examples where paired t-test is used for 5 cases <ref type="bibr" target="#b20">[20]</ref>. Secondly the analysis is further supported by considering superiority of one treatment technique if results were improved in majority of cases. This later analysis approach has also been used by Guckenberger et al. <ref type="bibr" target="#b21">[21]</ref> who had a small sample size of 5 HNC cases. Paired t-test was chosen rather unpaired as this study is comparing different plans for the same set of 5 patients. Presence of interval level data also warranted the use of parametric test. patient consent is required as this is a retrospective study in a department which handles patient data normally anyway. Inshort Local ethics offered advice and no approval was needed for this work.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Ethical Approval</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Overview of Planning Techniques</head><p>Four sets of plans were compared in this study (IMRT, SmartArc, Ergo++, Autobeam) with final dose calculation for all plans done on Pinnacle ver. 9.0 to exclude differences due to dose calculation algorithms as much as possible. All plans were designed with 6MV photon beam to be delivered on Elekta synergy Linear accelerator running RTDESKTOP v 7.01(Linac Controller) equipped with Multileaf collimator with 80 leaves (1cm leaf width at isocentre with Maximum leaf speed of 2cm/s) and variable jaws with no interdigitations. All plans were delivered using variable dose rate and variable gantry speed. For SmartArc plans the maximum desired delivery time was set to 400s and maximum gantry speed to 6deg/sec with maximum leaf displacement of 0.3cm/sec. For Autobeam plans the nominal gantry speed was set to 1.5deg/sec. All IMRT and SmartArc plans were calculated using 0.25 cm dose grid on CCC algorithm. However Autobeam and Ergo++ plans were calculated using Adaptive convolve algorithm with either 0.4 cm or 1 cm dose grid because the system could not cope with large number of beams on fine dose grid. Effort was made to keep constraints similar. They cannot be kept identical due to different nature of TPS/Algorithms tested in this investigation. Hence occasionally they were altered to improve plan quality. Overall more effort was required to improve plan quality for Ergo++ and Autobeam than SmartArc. The planning rules/ constraints were altered to push the optimization just to achieve planning objectives not to reach maximum achieve results when possible. This strategy has been used by Vanetti et al. <ref type="bibr" target="#b22">[22]</ref>. Planning techniques are discussed in Sections F to J.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>F. IMRT Planning</head><p>Four sets of plans were compared in this study (IMRT, SmartArc, Ergo++, Autobeam) with final dose calculation for all plans done on Pinnacle ver 9.0 to exclude differences due to dose calculation algorithms as much as possible. All plans were designed with 6MV photon beam to be delivered on Elekta synergy Linear accelerator running RTDESKTOP v 7.01 (Linac Controller) equipped with Multileaf collimator with 80 leaves (1cm leaf width at isocentre with Maximum leaf speed of 2cm/s) and variable jaws with no inter-digitation. All plans were delivered using variable dose rate and variable gantry speed. For SmartArc plans the maximum desired delivery time was set to 400s and maximum gantry speed to 6deg/sec with maximum leaf displacement of 0.3cm/sec. For Autobeam plans the nominal gantry speed was set to 1.5deg/sec. All IMRT and SmartArc plans were calculated using 0.25 cm dose grid on CCC algorithm. However, Autobeam and Ergo++ plans were calculated using Adaptive convolve algorithm with either 0.4 cm or 1 cm dose grid because the system could not cope with large number of beams on fine dose grid. Effort was made to keep constraints similar. They cannot be kept identical due to different nature of TPS/Algorithms tested in this investigation. Hence occasionally they were altered to improve plan quality. Overall more effort was required to improve plan quality for Ergo++ and Autobeam than SmartArc. The planning rules/ constraints were altered to push the optimization just to achieve planning objectives not to reach maximum achieve results when possible. This strategy has been used by Vanetti et al. <ref type="bibr" target="#b22">[22]</ref>. Note: SS=Step and Shoot, No=Number, ChA=Couch Angle, CA=Collimator Angle, E=Energy.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>G. SmartArc (SA) Planning</head><p>A preclinical version of Philips Pinnacle SmartArc (9.0) was used which had the ability to do simultaneous optimization of multiple arcs. After optimization, dose was calculated with Pinnacle using Collapsed Cone Convolution with a calculation grid of 0.25 cm. The dose objectives were kept same as in ss-IMRT plans for edited PTVs, Spinalcord_3mm, Brainstem_3mm, and both Parotids. Occasionally they were changed to improve the dose distribution e.g. to avoid hotspots. All SmartArc plans consisted of 350 0 gantry rotation with fixed collimator angle of 5 0 to minimize tongue and groove effects and to avoid doses due to interleaf leakage. The 2 arc plans were produced to see if they improve dose homogeneity and dosimetric accuracy of plan delivery compared to single arc plans as some studies have reported better PTV homogeneity with double arc plans than single arc plans <ref type="bibr" target="#b21">[21]</ref>, <ref type="bibr" target="#b23">[23]</ref>. In double arc plan the first arc rotated counter clockwise from 175-185 0 and second arc clockwise from 185-175 0 . See <ref type="table" target="#tab_1">Table III</ref> for SmartArc planning/arc parameters. All SmartArc plans were generated with maximum beam delivery time of 400s to permit maximum modulation per arc and with maximum dose rate of 600MU/min using Dynamic Arc Optimization. Single arc plans were produced with 4 0 and 2 0 gantry spacing (SA4d and SA2d) and double arc plans were generated with 4 0 spacing (SA2Arcs). In this study variable dose rate was used. This means the dose of each CP may take any value up to maximum Dose rate (600MU/min). SA Plan parameters are shown in two  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>H. Recording SmartArc Estimated Delivery Times</head><p>One of the variables in the SmartArc optimization is the delivery time for the arc and the aim is to keep it below a user defined maximum value so that machine constraints (such as MLC travel) are not violated <ref type="bibr" target="#b19">[19]</ref>. It is important to realize that delivery time is only an estimate. This is because plans are calculated using variable dose rate and constant gantry speed by setting 'Limit Gantry Acceleration' value to 'No'. However when it comes to delivering the plan the linac controller which is commissioned for binned dose delivery in steps of two rather than continuous variable dose delivery ((i.e. doses are decreased by a factor of 2 between maximum and minimum available binned doses) chooses the gantry speed and dose rate for the fastest possible delivery <ref type="bibr" target="#b15">[15]</ref>, <ref type="bibr" target="#b19">[19]</ref>, <ref type="bibr" target="#b24">[24]</ref>. Consequently the actual delivery time can vary considerably from the estimated value which assumes a constant gantry speed and continuously variable dose rate.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>I. Estimating SA Optimization and Dose Calculation Times</head><p>Optimization and calculation times were noted and they included individual computational steps (segmentation, Direct Machine Parameter Optimization-DMPO, dose calculation etc) excluding overall planning time such as setting up dose volume objectives etc. To speed up the process all SmartArc plans were recalculated using 0.4cm dose grid with Adaptive Convolve Algorithm and were timed. These plans were not verified and were created only for the purposes of obtaining an estimate for SA planning times.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>J. Ergo++ Planning</head><p>Ergo++ TPS version 1.7.3 uses pencil beam algorithm for dose calculation and offers greater flexibility in terms of adapting MLC leaves dynamically to the target structures <ref type="bibr" target="#b25">[25]</ref>. This is because it allows the planner to define all the field shapes <ref type="bibr" target="#b26">[26]</ref>, <ref type="bibr" target="#b27">[27]</ref>. The field shapes are defined by conformal avoidance using 'Define Structures' option or can manually be adjusted with 6mm leaf margin to PTV. There are two options for shielding OARs. One is OAR is shielded always and the other is OAR is shielded only when it is in front of the target in Beam's Eye view <ref type="bibr" target="#b26">[26]</ref>. In this study spinal cord_3mm and brainstem_3mm are shielded always whereas both parotids are shielded when in front of the target. A single Clockwise (CW) arc with 89 CPs was used to generate Ergo++ plans. The whole arc was divided into odd and even CPs treating different PTVs. Arc Parameters used for HN Ergo++ treatment planning are shown in <ref type="table" target="#tab_1">Table IV</ref>. Once optimization was completed the plans were transferred to Pinnacle for recalculation and further assessment. This is to exclude differences in dose calculation algorithm from the study.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>K. Autobeam Planning -In-House VMAT TP System (V 4.9)</head><p>Single and multiple arcs were used to plan 5 HN cases with fixed collimator rotation of 5 0 and no floor rotation. <ref type="table">Table V</ref> gives beam/arc parameters for AB plans. A number of plans were produced from ranging from single to multiple and combination arcs to improve plan quality. A combination of conformal and Intensity Modulation arcs was used as it produced good plans in some cases. Once a satisfactory plan is achieved in Autobeam the plan can be exported to Pinnacle for recalculation on adaptive convolve algorithm and for visualization purposes. The final plan is exported to linac in DICOM format. From Pinnacle the plan could be directly calculated on Delta 4 phantom representing the Delta4 geometry and density and then exported to Delta4 software to be compared against measured phantom doses.</p><p>In Autobeam we supply nominal gantry speed which means when plan is delivered the Linac controller tries not to go below nominal gantry speed. The nominal gantry speed and number of arcs determine the quality of plan and delivery speed <ref type="bibr" target="#b28">[28]</ref>. For complex cases like HN, the emphasis is to produce good quality plans rather than on delivery speed <ref type="bibr" target="#b28">[28]</ref>.</p><p>Hence a low nominal gantry speed (1.5 degree/sec) was chosen to allow more collimator and MLC leaf motion. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>L. VMAT Dose Verification</head><p>VMAT plan dose verification was conducted using Delta4 phantom. Only two sets of patient data were verified. For this purpose the dose distribution for each plan (from 2 HN cases) was recalculated on delta4 phantom in pinnacle. The doses were exported from Pinnacle with a resolution of 0.2 cm using dose calculation algorithms of adaptive convolve. Gamma analysis was used to verify the correspondence between planned and measured doses. The gamma analysis thresholds/indices with electronic arrays were chosen to be 3% dose error (of the dose in primary PTV) and 3mm distance to agreement. The tolerance of 90% was used based on a study by Bedford et al. <ref type="bibr" target="#b29">[29]</ref>. The delivery times were recorded for the duration when beam on button was pressed and when the last beam was delivered.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>III. RESULTS</head><p>The overall results in terms of target dose homogeneity, target coverage, Conformity Index and OARs statistics from DVH and plan analysis are displayed in <ref type="table" target="#tab_1">Tables VI and VII</ref>  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Dose Homogeneity and Target Coverage</head><p>Target coverage was defined by the volume of specific target volume receiving at least 95% of the prescription dose. SA4d plans provided better PTV1 coverage than IMRT technique. However difference was not statistically significant. IMRT plans were better covered by 95% isodose compared to SA2d and 2 Arc plans. SA2Arcs plans resulted in highly reduced coverage of PTV1. Similar trends were observed for PTV2 V&lt;95% coverage. Only on average 76.6% of PTV1 and 72.2% of PTV2 volume was covered by &gt;=95% of the prescribed dose in case of double arc plans compared to about 97% of both PTVs for single arc plans . ss-IMRT plans were very similar to single arc (SA4d) plans in terms of V&gt;107%. However ss-IMRT was still superior to SA2d and SA 2Arc. However ss-IMRT was still superior to SA2d and SA 2Arc for both PTVs in terms of V&lt;95% with statistical significance observed only between IMRT v SA2Arcs. In terms of V&gt;107% ss-IMRT was marginally better than SA2d and SA2Arcs for PTV1 but was lower than SA2d and SA2Arcs for PTV2. Double arc plans (SA 2Arc) did not improve target coverage compared to single arc plans. However for PTV2 double arc plans achieved the best results for V&gt;107%. They were better than IMRT and SA4d and SA2d with statistical significance.</p><p>In terms of PTV1 homogeneity SA4d plans achieved best homogeneity followed by ssIMRT. SA4d plans were better than IMRT with a statistical significance of p =0.005. ssIMRT (4/5) was better than SA2d plans with statistical significance of p=0.05 and was marginally better than 2 arc plans. For PTV2 homogeneity, again single arc plans were better than ssIMRT in most cases (4/5) but difference between the two techniques was not statistically significant. Among SmartArc plans single arc plans were better than SA2d (with p value 0.015) and 2 arc plans (p=0.416).</p><p>IMRT plans achieved better PTV1 and PTV2 homogeneity compared to Autobeam plans with statistical significance observed in case of PTV2. In terms of target coverage (V&lt;95%, V&gt;107%) IMRT plans were superior to AB plans for both PTV1 and PTV2 with marked difference observed in case of PTV2 V&gt;107% (p=0.015). Autobeam plans showed superior target coverage and homogeneity for both PTVs compared to Ergo++ plans. Overall ss-IMRT plans were better than Ergo++ plans in terms of target coverage and Homogeneity with statistical significance.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Conformity Index</head><p>SA2Arc plans achieved very conformal plans for PTV1 and PTV2 with a mean CI of 0.746 and 0.716 respectively. SA2d</p><p>and IMRT achieved quite similar results for PTV1 CI with SA2d plans slightly better than IMRT. Among SmartArc plans both SA2d and two Arc plans were superior than SA4d in terms of CI for PTV1 and PTV2 with statistical significance (PTV1 p=0.004, P=0.016 respectively, PTV2 p=0.002, p=0.002). Autobeam showed more conformal plans than IMRT as shown by the conformity Index although the difference is rather small. However Ergo++ plans achieved better CI than AB and ss-IMRT  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IV. OAR SPARING &amp; OTHER RESULTS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. SmartArc</head><p>Double arc plans allowed the largest sparing of spinal cord_3mm in terms maximum dose (5/5 cases) although no statistical significance was observed when compared to IMRT. Double arc plans were better than SA4d plans as shown by pvalues (0.027). IMRT and double arc plans produced similar results with IMRT slightly better than 2 arc plans in terms of Brainstem_3mm maximum dose. Among the dynamic arc plans SA4d spared the brainstem_3mm least with statistical significance observed between SA4d and SA2arc plans. The results are reported for whole parotid glands in terms of mean dose. Overall SA2Arcs and SA2d plans allowed reduced parotid involvement compared to IMRT with more prominent efficacy of double arc plans compared to Single arc plans with </p><note type="other">World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences Vol:8, No:8, 2014 507 International Scholarly and Scientific</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. Autobeam</head><note type="other">Autobeam spares brainstem_3mm better than IMRT but difference is rather small. Sparing of parotids and SC_3mm is better achieved with IMRT compared to Autobeam. Difference between the two techniques in sparing SC_3mm is not huge. C. Ergo++ Ergo++ plans on average reduced maximum dose to brainstem_3mm and mean dose to both parotids compared to ss-IMRT with statistical significance observed for brain stem_3mm and LT Parotid. The maximum doses to brainstem_3mm and mean dose to Lt Parotid were lowest on average in Ergo++ VMAT plans compared to SA, Autobeam and IMRT. Ergo++ plans reduced doses to both brainstem_3mm and LT Parotid in 5 out of 5 cases. The maximum dose to SC_3mm on average was much higher in Ergo++ plans than in ss-IMRT.</note></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>D. Effects of CP Spacing and Number of Arcs on Calculation and Optimization Time</head><p>The results are displayed in the Table VIII. Analysis of the results show that combined optimization and calculation time increase with increase in number of arcs and reducing the CP spacing. The combined optimization and calculation time varied from 7-29 min with average time being 13.2 min, from 24-57min with mean time being 37min and from 25 -61min with average time being 49.2 mins for SA4d, SA2d and for SA2Arcs plans respectively. It was also noted that as the number of iterations performed during optimization increased so did the optimization time in all types of dynamic arc plans. The estimated delivery time ranged from 330s to 400s for SA 4d, 337 -400s for SA 2d and from 218-312 for 1 st arc and 249-317 for 2 nd arc in SA 2Arc plans.</p><p>Overall Autobeam optimization and dose calculation took more time compared to SmartArc. It takes about 2hrs upto 23hrs for optimization and dose calculation to complete depending on the size of the input (e.g. number of arcs, number of constraints, and number of control points etc). Although exact times for optimization and calculation were not recorded for each patient, Ergo++ optimization could take up to 8-10 hours. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>E. Total Monitor Units and Delivery Times</head><p>Autobeam was most efficient in terms of actual treatment delivery times as a 3 arc plan with 273 CPs only took 6min 45 sec to deliver whereas 2 arc SmartArc plans took from 7min -11min approximately. Longer (Actual) delivery times were observed with 2 0 spacing and with 2 arc plans compared to single arc and 4 0 spacing plans during SmartArc plan verification. Similarly with Autobeam increase in number of arcs resulted in increased delivery time. Ergo++ plans took longest to deliver.</p><p>The total MUs required for delivery were on average 19%, 30%, 10.6% and 6.5% lower than IMRT for SA4d, SA2d, SA2Arc, AB respectively. The difference was statistically significant between IMRT and SA4d and IMRT vs SA2d. Ergo++ plans had higher monitor units than ss-IMRT (MUs before exporting to Pinnacle for recalculation and before setting Prescription to ROI Mean). Overall VMAT plans with single and double arcs needed lower MUs, double arcs on average required higher number of MUs than Single arcs.</p><p>All estimated delivery times for individual arcs (SmartArc) were between 4.15 min to 6.66 min <ref type="table" target="#tab_16">(Table X)</ref>     </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VI. MODELLING</head><p>Modelling was performed to examine how accurately the Linac is delivering the plan for each VMAT system. This means that planning system must accurately model the delivery to reduce dosimetric errors. This was also done as the dosimetric results of VMAT plans did not show good agreement with planned doses as shown in the Table X. The effect of MLC leaf-end separation, MLC/Aperture shape and CP spacing on dosimetric agreement was evaluated.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>A. Leaf-End Separation Modelling</head><p>To test the effect of MLC leaf-end separation on dosimetric accuracy, a set of new MLC leaf values depicting differences between MLC leaf tip position and 50% isodose line for a variety of leaf positions was used. The leaf offset values are shown in the Table XII and were result of Geometric construction <ref type="bibr" target="#b30">[30]</ref>. The MLC model in Pinnacle (from version 7.4 and above) Treatment Planning System (TPS) uses a rounded leaf -end design and provides a number of MLC parameters including leaf tip position offset relative to the light field, inter-leaf transmission, radius of the curvature of rounded leaf-tip etc <ref type="bibr" target="#b31">[31]</ref>.</p><p>A machine with new MLC leaf-end separation values was created in Photon Physics Tool Module of SmartArc v 9.0 and then dose was recalculated using this new Machine on Delta 4 Phantom for a number of VMAT plans (SA4d, SA2d, SA2Arcs) for 2 sets of patients <ref type="figure" target="#fig_1">(HN1 and HN2)</ref>. New values were result of geometric construction. In this way MLC model was optimized to achieve good agreement for 6MV photons between measured and modelled data. The recalculated plans were then transferred to Delta 4 software and then new planned doses were added to previously verified (SA4d, SA2d, SA2Arcs plans for HN1 and HN2 cases) plans to see the difference in Gamma values.</p><p>The results showed huge improvement in the dosimetric accuracy due to inclusion of rounded leaf-ends in the MLC model <ref type="table" target="#tab_1">(Table XIII)</ref>. It was also noted that 2 0 CP spacing achieved best results overall with new Leaf-end separation values and results were close to IMRT.  </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>B. MLC Shape/Aperture Modelling</head><p>The effect of different aperture shapes due to varies MLC orientations and positions on verification accuracy were tested for an Autobeam plan for HN1 case. The Autobeam Plan for HN1 case had 91 beams with 10 interpolated CPs between beams. All 91 beams were turned into 91 static beams and all CPs in between were removed. The dose was recalculated and then plan was exported to Delta 4 phantom for verification. The results were close to IMRT verification results and showed big improvement in dosimetric accuracy compared to dynamic VMAT Autobeam plan as shown in the Table XIV. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>C. Control Point Modelling</head><p>To test the effect of CP spacing on dosimetric accuracy Autobeam VMAT software was used with 90 0 arc. A plan was created using Delta 4 phantom with a prescription of 50Gy in 25fractions. This plan was then exported to Autobeam for VMAT planning. Once a reasonable plan was achieved in Autobeam using 10 segments with only 90 0 Arc (to keep plan simple), it was imported back into pinnacle for adaptive convolve dose calculation on 0.4 dose grid. This resulted in an Autobeam plan with 10 beams each having 10 interpolated segments. We call it Delta 4 1Plan 0.0 Orig (original plan). Using original plan, 4 more plans were created with different CP spacing (1 0 , 2 0 , 5 0 , 10 0 CP spacing) giving a total of 5 plans.</p><p>Delta4 1Plan0.0 1DEG had 100 beams with each beam having 1 CP (except 1 st beam which had no CP) at 1 0 separation between 0 and 90 0 . Delta4 1Plan0.0 2DEG, Delta4 1Plan0.0 5DEG, Delta4 and 1Plan0.0 10DEG plans had 2 0 , 5 0 and 10 0 CP spacing respectively with every 2 nd CP with 0 MUs, with non zero MUs for every 4 th beams and every 10 th beam respectively. The total MUs and MUs/fraction were kept same for all 5 plans. These plans were then exported to delta4 for verification. 1 0 CP spacing achieved best whereas 10 0 CP spacing produced worst results <ref type="table" target="#tab_16">(Table XV)</ref>. As the CP spacing increased dosimetric accuracy reduced. CP spacing of 2 and below are thus should be used to achieve good agreement between planned and measured doses for HN VMAT plans. Although results were generated using Autobeam VMAT planning system they can be generalized to other VMAT systems. </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VII. DISCUSSION</head><p>This retrospective study compared different VMAT inverse planning algorithms (optimization) to understand basic differences between them and to find out which one gives the best dose distribution on the planning system for Head and Neck cancer (HNC). The VMAT plans were also compared to Segmental IMRT. The results were verified using delta 4 phantom. The present study also discusses the effect of CP, MLC leaf-end Separation and MLC shape modelling on dosimetric accuracy of VMAT plans. Additionally combined Optimization and calculation times for SA were noted and how it was influenced by CP spacing and number of Arcs. Estimated SA Delivery times were also recorded.</p><p>Depending upon the complexity of the volume (size, proximity to OARs), number of arcs, control point spacing and the type of VMAT algorithm used for optimization the VMAT plans were found to be similar, better or worse than IMRT. Single arc VMAT plans generated using SmartArc preclinical v 9.0 were generally better than ss-IMRT and double arc plans in terms of homogeneity and target coverage. Planning with double arcs produced either almost similar or inferior plans to ssIMRT. Some SmartArc studies have reported that more than one arc is required for complex cases such as HNC <ref type="bibr" target="#b21">[21]</ref>, <ref type="bibr" target="#b32">[32]</ref>, <ref type="bibr" target="#b33">[33]</ref>. The study by Guckenberger et al. <ref type="bibr" target="#b21">[21]</ref> has reported better plan quality with increase in number of dynamic arcs except for cancer of the paranasal sinuses. Multiple arcs improved target coverage and homogeneity with results marginally inferior than IMRT. Similarly there are RapidArc (RA) studies on HNC that concluded better target coverage and homogeneity with double arc plans compared to IMRT and single arc RA plans for HNC sites with either similar or better OAR sparing <ref type="bibr" target="#b22">[22,</ref><ref type="bibr" target="#b23">23]</ref>. The authors of these RA studies suggest that this is because a second arc provides more degree of freedom for probable leaf positions plus a second arc compensates the dose modulation of the first arc resulting in enhanced PTV dose homogeneity with summed dose distribution of both arcs. This also resulted in better dosimetric accuracy at verification stage <ref type="bibr" target="#b23">[23]</ref>. Doornaert et al. <ref type="bibr" target="#b34">[34]</ref> used only double arcs to generate all RA plans. They reported excellent PTV coverage with on average &gt; 99% of both PTVs getting greater than or equal to 95% of prescription dose. An Autobeam study also found that multiple arcs are required for multiple target volumes such as for a HN case <ref type="bibr" target="#b28">[28]</ref>. This is not the findings of the current study.</p><p>Results of a single arc SA (ver 8.9) study for HNC are similar to our study in terms of target coverage <ref type="bibr" target="#b35">[35]</ref>. This study concluded that single arc VMAT plans produced equivalent or better target coverage compared to ss-IMRT. Similarly another SmartArc study compared single dynamic arcs with ss-IMRT for a variety of sites i.e. HN, Brain, lung, Prostate, Tonsil <ref type="bibr" target="#b19">[19]</ref>. They also found plan quality for all dynamic arcs to be either superior or similar to the corresponding ss-IMRT. Both these studies and the present study support the concept that single arc SmartArc plans can produce comparable or superior plans than IMRT for complex cases such as HN. However this relationship is not so prominent in RA plans. The present study achieved good quality plans with Single arc. We reckon this could be due to use of different VMAT technologies, RA and SA and most likely to do with the fact that either no maximum delivery time limit is set or high value is assigned to it thereby maximizing the modulation of single arc. This is also supported by a theoretical and philosophical study <ref type="bibr" target="#b36">[36]</ref> that concluded that by keeping single arc treatment time for complex cases below 2min will compromise their quality. Other factors could also influence the results between single vs multiple arcs such as different target volumes, prescription doses and presence or absence of intermediate dose calculation.</p><p>In the current study one of the major differences among IMRT, SA single and double arc plans was the improved conformity Index with double arc plans which was statistically significant for IMRT vs double arc and double arc vs single arc for both PTVs. Single arc plans (SA4d) produced slightly inferior conformal plans to ss-IMRT without any significant difference observed between two techniques. The relationship between better conformity Index and single or multiple arc VMAT plans has also been observed by Guckenberger et al. <ref type="bibr" target="#b21">[21]</ref>. However this trend was not observed unanimously for all sites and for all PTVs i.e. in some cases double arcs produced more conformal plans and in others single arc. More conformal VMAT plans (pinnacle ver 8.0) had been reported by Matuszak et al. <ref type="bibr" target="#b15">[15]</ref> for stereotactic radiosurgery of spine using a partial arc. A RapidArc study also showed very conformal plans with double arc plans with a mean CI of 1.13 for locally advanced HNC patients <ref type="bibr" target="#b34">[34]</ref>.</p><p>Similar trends were observed in Autobeam plans. Again single arc plans were superior to triple arc plans in terms of PTV1 homogeneity and Target coverage. The results were variable for PTV2. Autobeam plans were inferior to IMRT in terms of PTV homogeneity and target coverage although marked difference between two techniques was only observed for PTV2 V&gt;107%. Autobeam achieved better conformal plans than ss-IMRT. Multiple arc Autobeam plans resulted in either similar or better CI than Single Arc plans.</p><p>In the current study Single arc plans generally had lower maximum dose or hotspots and higher minimum dose than IMRT. This is in contradiction to results described by some other researchers. Bzdusek et al. <ref type="bibr" target="#b19">[19]</ref> stated that dynamic arcs for 3 HN Nasopharynx cases are more likely to have marginally higher maximum dose and lower minimum dose. A preliminary study conducted <ref type="bibr" target="#b33">[33]</ref> showed that increasing number of arcs from 1-2 and from 1-3 increased the minimum dose to the high dose region (Boost PTV) on average by 1.9Gy and 4.6Gy respectively. They further reported that Single arc VMAT plans frequently resulted in reduced boost PTV volume coverage compared to IMRT plans. However a RA study by <ref type="bibr">Zhang et al. [37]</ref> on prostate cancer cases produced higher dose to PTV with IMRT compared with VMAT.</p><p>In the present study dynamic arc plans resulted in improved sparing of some OARs with small differences between SmartArc and IMRT. These differences were in favour of SmartArc plans for SC_3mm and both parotids. Overall 2 arc plans were superior in reducing maximum doses to these OARs compared to ss-IMRT and other dynamic arc plans (SA4d, SA2d). In case of brainstem_3mm IMRT was superior than dynamic arc plans. Autobeam resulted in reduced maximum dose to brainstem_3mm than ss-IMRT whereas ss-IMRT resulted in better sparing of SC_3mm and both parotids with statistical significance observed for both parotids. Improved one or more OAR sparing with an increase in number of arcs has also been reported by other researchers for a number of sites including HN <ref type="bibr" target="#b28">[28]</ref>, <ref type="bibr" target="#b21">[21]</ref>- <ref type="bibr" target="#b23">[23]</ref>, <ref type="bibr" target="#b33">[33]</ref>. One study concluded that use of three arcs did not achieve marked decrease in OAR doses as desired level of critical structure sparing was already reached with double arcs <ref type="bibr" target="#b33">[33]</ref>.</p><p>Increasing the control point spacing from 4-2 0 did not improve plan quality contrary to the expectation but resulted in increased optimization, calculation times and actual delivery times than SA4d VMAT plans. SA2d plans seemed to have a positive role in achieving better conformity index than SA4d for both PTVs with statistical significance and sparing some OARs than single arc plans but were inferior to 2 arc plans. Increased optimization and calculation times have been reported when moving from 4-2 0 CP spacing but with improved plan quality by Bzdusek et al. <ref type="bibr" target="#b19">[19]</ref>. Some studies have concluded that dosimetric accuracy of small-arc approximation strongly depend on CP spacing <ref type="bibr" target="#b18">[18]</ref>, <ref type="bibr" target="#b24">[24]</ref>, <ref type="bibr" target="#b33">[33]</ref>, <ref type="bibr" target="#b38">[38]</ref>, <ref type="bibr" target="#b39">[39]</ref>. CP spacing of 4 0 and less is recommended by <ref type="bibr" target="#b19">[19]</ref>, <ref type="bibr" target="#b24">[24]</ref>, <ref type="bibr" target="#b38">[38]</ref> for a number of sites including HN for preclinical version of SmartArc. In addition to CP spacing, Feygelman et al. <ref type="bibr" target="#b24">[24]</ref> also found that segment shape and position also affect the dosimetric accuracy. The results of the present study agree with these findings as dosimetric accuracy was found to be dependent on CP spacing, MLC shapes and Leaf-end separation modelling.</p><p>In the current study dosimetric validation of all VMAT plans (SA, AB, Ergo++) without modelling was found to be lower than ss-IMRT. Single arc SmartArc plans showed better agreement between measured and calculated doses than 2 0 and 2 arc plans. Similarly Autobeam and Ergo++ gamma results were lower than ss-IMRT. However when CP modelling was applied as discussed above in the Modelling section, the 2 0 CP spacing Autobeam plans resulted in improved plan quality compared to 5 0 and 10 0 spacing plans. This means that CP modelling resulted in better Pinnacle dose calculation which in turn resulted in better dosimetric accuracy during verification. These Autobeam CP modelling results can be generalized to SmartArc. This is because in VMAT the apertures are thin and are in dynamic motion. The concept is explained by Feygelman et al. <ref type="bibr" target="#b24">[24]</ref>. As gantry moves from one CP to other the MLC leaves transition continuously from one point to the next maintaining a gap while monitor units are being delivered, resulting in the irradiation of areas for which VMAT TPS does not calculate dose. This overdose area can be reduced by reducing the CP spacing or increasing the segment width.</p><p>Furthermore leaf-End modelling improved the dosimetric results in terms of Gamma index by 2%, 15.8% and 19.4% on average for SA4d, SA2d and SA2Arcs. The MLC shape modelling also greatly improved Gamma index value and the results were close to ss-IMRT. This is the first time these MLC leaf-end values have been successfully tested at our centre resulting in substantial improvement in dosimetric accuracy of VMAT plans. The leaf-end separation effect seems to influence VMAT deliveries more than ss-IMRT perhaps again due to the dynamic nature of these deliveries. In ss-IMRT the leaf-end separation effect is more near the edges of the apertures but in dynamic mode due to continuous gantry and MLC motion the leaf-end separation effect is not restricted to field edges but moves as the MLC leaves move or MLC shape changes thereby shifting towards the isocentre and resulting in large dose errors.</p><p>Based on the results of verification data Bertelsen and colleagues <ref type="bibr" target="#b35">[35]</ref> found that VMAT deliveries were noticeably better than IMRT on average with respect to dose deviation and distance to agreement. Consequently they suggested that VMAT deliveries may be less prone to small setup errors. This effect is not evident in the present study. The dose deviation and distance to agreement values with or without Leaf-end modelling were mostly on average lower than corresponding ss-IMRT. However, this effect could still be there but due to low number of patients or plans verified (2 sets of patient data) the effect was not obvious.</p><p>Another advantage of VMAT was the reduced treatment times. All VMAT plans except Ergo++ showed delivery times ranging between 4min 51s and 7min 42s with fastest treatment delivery achieved with Autobeam. These delivery times are considerably less than usually 7 field ss-IMRT delivery times. This is because with VMAT the entire volume can be treated at one time which in turn means treatment times are not target size dependent as long as the whole target can be covered in a single field <ref type="bibr" target="#b8">[9]</ref>, <ref type="bibr" target="#b40">[40]</ref>. Thus VMAT can allow more efficient treatment delivery that can lead to reduced patient discomfort, reduced intra-fractional motion and increased time for image guided radiotherapy. Ergo++ plans showed longest delivery times mainly due to beam terminating as it approaches very low MUs per segment during Ergo++ plan delivery. Other Ergo++ comparative planning studies for prostate cases report MU reduction of 11% and reduced treatment times of 1.9 min on average <ref type="bibr" target="#b41">[41]</ref>, 1.8-3.7 min [42] and 1.6 min <ref type="bibr" target="#b27">[27]</ref>. Data on Ergo++ comparative planning is very limited especially no data is available for HN cases making its assessment difficult.</p><p>In the current study total MU required for delivery were on average 19%, 30%, 10.6% and 6.5% lower than ss-IMRT for SA4d, SA2d, SA2Arcs and Autobeam plans respectively. Ergo++ plans however required more MUs than ss-IMRT (without setting Prescription to PTV1edited mean dose). Consequently reduced MUs in VMAT plans can lead to reduced scatter which can decrease risk of secondary malignancies <ref type="bibr" target="#b8">[9]</ref>- <ref type="bibr" target="#b10">[11]</ref>. This is particularly important for patients with long life expectancy. However VMAT like IMRT gives an integral dose to normal tissue which kind of offsets the benefit gained by reduced MUs <ref type="bibr" target="#b8">[9]</ref>, <ref type="bibr" target="#b10">[11]</ref>, <ref type="bibr" target="#b42">[42]</ref>. However there is some evidence that VMAT gives about 12% less integral dose compared to IMRT <ref type="bibr" target="#b43">[43]</ref>. Literature review from other SmartArc studies for single arc plans for HN sites show MU reduction from 16.8% to 36% <ref type="bibr" target="#b21">[21]</ref>, from 5% to 15%  <ref type="bibr" target="#b19">[19]</ref> and 35% <ref type="bibr" target="#b35">[35]</ref> compared to ss-IMRT. The results of our study are better than the one reported previously by <ref type="bibr">Bedford [28]</ref> as it shows that Autobeam is more efficient in terms of total number of MUs and treatment delivery times than ss-IMRT.</p><p>Our study showed relatively lower reduction in monitor units for SmartArc plans compared to some of the RA studies <ref type="bibr" target="#b22">[22]</ref>, <ref type="bibr" target="#b23">[23]</ref>. This is probably due to large number of MUs required for sliding window fixed field IMRT approach than ss-IMRT. The same trend has been observed by Guckenberger et al. <ref type="bibr" target="#b21">[21]</ref>. The estimated delivery times after plan optimization were close to the actual treatment delivery times. In most cases the difference between estimated and actual delivery times was less than 1min.</p><p>Variations were observed for plan optimization and calculation times. Overall SA4d plans took least optimization and calculation times. Two degree spacing plans took longest time to optimize and calculate for 2 out of 5 cases whereas 2 arcs (SA2Arcs) took longest in 3/5 cases with highest recorded time of 61 min. It seemed to be related to PTV1 volume size (HN3-5 have bigger PTV1 volume than HN1-2), number of iterations performed by the optimization algorithm (HN3-5 had more iterations), length of dose grid and number of arcs and number of CPs. Bzdusek et al. <ref type="bibr" target="#b19">[19]</ref> also found some of these parameters to influence optimization times. They reported longest optimization time with large lung volume and dose grid.</p><p>Analysis of planning studies and research work has shown that overall SA algorithm produces better plans than Autobeam and Ergo++ and is more time and space efficient. Perhaps this is because SA allows addition of CPs during optimization, reduces the complexity of optimization parameter space by not allowing second set of CPs required to achieve user-defined final gantry spacing to be part of machine parameter optimization phase, by multithreading the algorithm and by using a pencil beam algorithm based on singular value decomposition (SVD) approach. On the other hand Autobeam and Ergo++ only uses standard pencil beam algorithm and therefore perhaps takes lot of time for optimization and dose calculation compared to SA and that's why Autobeam and Ergo++ algorithms are comparatively less time and space efficient. Moreover Ergo++ is just a segment weight optimizer. Overall Autobeam and Ergo++ required more effort to achieve reasonable plans than SmartArc.</p><p>Evaluation of Elekta VMAT system (Ergo++) and Autobeam was difficult due to limited availability of peer review literature especially for HNC cases. In case of Autobeam it is mainly because it is an in-house software that has quite recently been available for VMAT planning. Autobeam has great potential for producing good quality plans for a number of sites as shown by a previous study at researcher's centre <ref type="bibr" target="#b28">[28]</ref> and consequently it is used for producing clinical lung plans. The results with HN sites have improved but further research is required.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>VIII. CONCLUSION</head><p>Overall SmartArc plans were better than ss-IMRT with single arc plans achieving best results in terms of PTV homogeneity and target coverage whereas double arc plans produced very conformal plans. The analysis of our results show that double arc plans have a positive role in achieving improved plan conformity and in sparing of some OARs.</p><p>In Autobeam plans, again single arc plans were superior to triple arc plans in terms of PTV1 homogeneity and Target coverage. The results were variable for PTV2. Autobeam plans were inferior to IMRT in terms of PTV homogeneity and target coverage although marked difference between two techniques was only observed for PTV2 V&gt;107%. Autobeam achieved better conformal plans than ss-IMRT. These plans were found to be very efficient resulting in fastest treatment delivery times compared to SmartArc and Ergo++. Results with Autobeam for HN sites are encouraging but further research is required. Ergo++ Plans were inferior to ss-IMRT, SA and AB. However they achieved best CI among all the techniques investigated in this study.</p><p>All VMAT plans reported reduced MU than ss-IMRT except Ergo++.VMAT plans. Dosimetric accuracy depends on CP spacing, MLC aperture shape and Leaf-end separation Modelling. Leaf-end separation values have been tested successfully for the first time at researcher's centre leading to increased dosimetric accuracy. CP spacing of 4 or less with accurate modelling of VMAT system can give rise to acceptable dosimetric results which are close to ss-IMRT. Overall Single arc (SA4d) plans took least optimization and calculation times followed by 2 0 spacing plans whereas 2 arcs SmartArc plans took longest in 3/5 cases with highest recorded time of 61 min. To maintain a reasonable balance between VMAT inverse planning and dosimetric accuracy it is recommended to use CP spacing &lt; 4 only for very complex HNC cases requiring lot of MLC leaf motion rather than for all cases.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>IX. LIMITATIONS OF THE STUDY AND FUTURE DIRECTIONS</head><p>The data comparison for the planning part of the study was not straight forward due to different natures of various VMAT algorithms used. However efforts were made to make data comparison simple wherever possible by applying planning rules as similar as possible between different VMAT techniques, dose calculation algorithm and dosimetric verification methods but still not all sources of bias and their potential influence on plan comparison, plan quality and verification could be ruled out. It is not possible to make comparison completely fair due to different nature of VMAT systems employed in the present study.</p><p>Another limitations of the current study is the use of small number of HNC cases (n=5). However the literature review shows that there are some other SmartArc HN studies with small patient population i.e. 5 or less <ref type="bibr" target="#b21">[21]</ref>, <ref type="bibr" target="#b32">[32]</ref>, <ref type="bibr" target="#b38">[38]</ref>. Hence it is safe to some extent to generalize the results of the present study to other cases. It is important to realize that due to limited research time not all the possible scenarios have been tested. Therefore the results of this study need to be interpreted with care and with further research the results with Autobeam and Ergo++ are likely to improve for very complex cases. A new version of Autobeam is being released and is expected to have strong VMAT planning capabilities and therefore could be tested for more complex cases in future studies. For Ergo++ role of multiple or partial arcs need to be tested in HNC cases and could be part of a future research. Further research areas could also include the implication of VMAT in terms of tumour control probability and Normal tissue toxicity, Image guided and adaptive VMAT in HNC.  </p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Fig. 1 consisting of List of Abbreviations and Fig. 2 consists of Glossary.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Fig. 1</head><label>1</label><figDesc>Fig. 1 List of Abbreviations</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head></head><label></label><figDesc>Investigation of VMAT Algorithms and Dosimetry A. Taqaddas V World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences Vol:8, No:8, 2014 502 International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 scholar.waset.org/1307-6892/9999305 International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>A. Taqaddas 
+
+V 
+
+World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+502 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head>TABLE I PATIENT</head><label>I</label><figDesc></figDesc><table>CHARACTERISTICS 
+Cases 
+Site 
+Target Dose 
+PTV1/PTV 
+2 
+
+Number of 
+Fractions 
+
+Volume 
+PTV1 
+edited (cm 3 ) 
+
+Volume 
+PTV2 
+edited (cm 3 ) 
+HN1 Oropharynx 
+65/54 
+30 
+95.65 
+407.42 
+HN2 
+Thyroid 
+66.6./54 
+30 
+394.055 
+425.26 
+HN3 Oropharynx 
+65/54 
+30 
+357.72 
+207.22 
+HN4 Oropharyn/h 
+ypo-pharynx 
+
+65/54 
+30 
+548.898 
+419.028 
+
+HN5 Oropharynx 
+65/54 
+30 
+577.001 
+489.552 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head></head><label></label><figDesc>The Head of Local Research Ethics Committee of researcher's Trust has informed that no ethics approval or World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences Vol:8, No:8, 2014 503 International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 scholar.waset.org/1307-6892/9999305 International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+503 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="false"><head>TABLE II IMRT</head><label>II</label><figDesc></figDesc><table>PLAN PARAMETERS 
+Cases No of 
+beams 
+
+Beam Type 
+ChA 
+CA 
+No of 
+segments 
+
+E 
+
+HN1 
+7 
+Step and 
+shoot 
+
+0 
+357,1,358,0,2, 
+359,3 
+
+4-12 
+6x 
+
+HN2 
+7 
+Step and 
+shoot 
+
+0 
+359,1,359,0,3, 
+358,2 
+
+4-12 
+6x 
+
+HN3 
+7 
+Step and 
+shoot 
+
+0 
+358,0,5,2,357, 
+358,356 
+
+5-11 
+6x 
+
+HN4 
+7 
+Step and 
+shoot 
+
+0 
+3,3,3,357,358, 
+359,2 
+
+6-11 
+6x 
+
+HN5 
+7 
+Step and 
+shoot 
+
+0 
+359,1,3,0,358, 
+2,1 
+
+7-10 
+6x 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_4" validated="false"><head>Table IIIB .</head><label>IIIB</label><figDesc></figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+504 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_5" validated="false"><head>TABLE III</head><label>III</label><figDesc></figDesc><table>A 
+SA PLAN PARAMETERS 
+Cases/Plans 
+No of Arcs Gantry Range 
+(degree) 
+
+CP spacing 
+(degree) 
+
+Cases/Plans 
+No of CPs CA (degree) 
+ChA 
+(degree) 
+
+OT 
+
+HN1/SA4d 
+1 
+CCW:175-185 
+4 
+HN1/SA4d 
+89 
+5 
+0 
+DA 
+HN1/SA2Arc 
+2 
+CCW:175-185 
+CW: 185-175 
+
+4 
+HN1/SA2Arc 
+178 
+5 
+0 
+DA 
+
+HN1/SA2d 
+1 
+CCW:175-185 
+2 
+HN1/SA2d 
+176 
+5 
+0 
+DA 
+HN2/SA4d 
+1 
+CCW:175-185 
+4 
+HN2/SA4d 
+89 
+5 
+0 
+DA 
+HN2/SA2Arc 
+2 
+CCW:175-185 
+CW: 185-175 
+
+4 
+HN2/SA2Arc 
+178 
+5 
+0 
+DA 
+
+HN2/SA2d 
+1 
+CCW:175-185 
+2 
+HN2/SA2d 
+176 
+5 
+0 
+DA 
+HN3/ SA4d 
+1 
+CCW:175-185 
+4 
+HN3/ SA4d 
+89 
+5 
+0 
+DA 
+HN3/ SA2Arc 
+2 
+CCW:175-185 
+CW: 185-175 
+
+4 
+HN3/ SA2Arc 
+178 
+5 
+0 
+DA 
+
+HN3/ SA2d 
+1 
+CCW:175-185 
+2 
+HN3/ SA2d 
+176 
+5 
+0 
+DA 
+HN4/ SA4d 
+1 
+CCW:175-185 
+4 
+HN4/ SA4d 
+89 
+5 
+0 
+DA 
+HN4/ SA2Arc 
+2 
+CCW:175-185 
+CW: 185-175 
+
+4 
+HN4/ SA2Arc 
+178 
+5 
+0 
+DA 
+
+HN4/ SA2d 
+1 
+CCW:175-185 
+2 
+HN4/ SA2d 
+176 
+5 
+0 
+DA 
+HN5/ SA4d 
+1 
+CCW:175-185 
+4 
+HN5/ SA4d 
+89 
+5 
+0 
+DA 
+HN5/ SA2Arc 
+2 
+CCW:175-185 
+CW: 185-175 
+
+4 
+HN5/ SA2Arc 
+178 
+5 
+0 
+DA 
+
+HN5/ SA2d 
+1 
+CCW:175-185 
+2 
+HN5/ SA2d 
+176 
+5 
+0 
+DA 
+
+Note: CCW=Counter Clockwise (175 0 -185 0 ), CW=Clockwise (185 0 -175 0 ), CP=Control Point. 
+OT=Optimization Type, GR=Gantry Range, DA=Dynamic Arc, CP=Control Point, CA=Collimator Angle, ChA=Couch Angle. 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_6" validated="false"><head></head><label></label><figDesc>International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+505 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_7" validated="false"><head>TABLE IV ERGO++</head><label>IV</label><figDesc>PLANNING PARAMETERS No of Arcs No of CPs CA ChA GR CW CP spacing Dose Grid (mm) OT E Single Arc 89 5 0 360 0 183-175 4 0 3*3*3 AMOA 6X Note: CA=Collimator Angle, ChA=Couch Angle, GR=Gantry Range, CP=Control Point, OT=Optimization Type, E=Energy, CW=Clockwise TABLE V AB PLAN PARAMETER Cases No of arcs No of CPs Gantry start-stop Gantry Sp (deg) nominal GS (deg/s) CA ChA OT HN1 1 91 175-185 4 1.5 5 0 IM HN2 3 273 175-185, 185-175 175-185 4 1.5 5 0 ACI, CWC, ACC HN3 3 273 175-185, 185-175, 175-185 4 1.5 5 0 ACI, CWC, ACC HN4 1 91 175-185 4 1.5 5 0 ACI HN5 3 273 175-185, 185-175, 175-185 4 1.5 5 0 ACI, CWI, ACC Note: ACI = Anti Clockwise Intensity Modulated Arc, CWC = Clockwise Conformal Arc, ACC = Anti Clockwise Conformal Arc, CWI = Clockwise Intensity Modulated Arc. CPs = Control Points, IM=Intensity Modulation, No=Number, GS=Gantry speed, GSp=Gantry Spacing, ChA=Couch angle, CA=Collimator Angle.</figDesc><table>Single Arc 89 
+5 0 
+360 0 183-175 4 0 
+3*3*3 
+AMOA 6X 
+
+Note: CA=Collimator Angle, ChA=Couch Angle, GR=Gantry Range, CP=Control Point, OT=Optimization Type, E=Energy, CW=Clockwise 
+
+TABLE V 
+AB PLAN PARAMETER 
+Cases No of arcs No of CPs 
+Gantry start-stop 
+Gantry Sp (deg) nominal GS (deg/s) CA ChA 
+OT 
+
+HN1 
+1 
+91 
+175-185 
+4 
+1.5 
+5 
+0 
+IM 
+HN2 
+3 
+273 
+175-185, 185-175 175-185 
+4 
+1.5 
+5 
+0 
+ACI, CWC, ACC 
+HN3 
+3 
+273 
+175-185, 185-175, 175-185 
+4 
+1.5 
+5 
+0 
+ACI, CWC, ACC 
+HN4 
+1 
+91 
+175-185 
+4 
+1.5 
+5 
+0 
+ACI 
+HN5 
+3 
+273 
+175-185, 185-175, 175-185 
+4 
+1.5 
+5 
+0 
+ACI, CWI, ACC 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_8" validated="false"><head></head><label></label><figDesc>for both PTVs for IMRT vs. SA and for IMRT vs. Autobeam vs. Ergo++. Combined optimization and calculation times for SmartArc plans is shown in Table VIII whereas MU comparison is shown in Table IX. Summary of the dosimetric results for 2 sets of HN cases is shown in Tables X and XI. Paired t-test analysis was used to report statistical significance (p&lt;=0.05) for IMRT vs. SA4d, IMRT vs. SA2d, IMRT vs. SA2Arcs, IMRT vs. AB, IMRT vs. Ergo++, SA4d vs. SA2d and SA4d vs. SA2Arc. In all tables statistically significant values are shown in bold. Standard deviations, SD are also done for IMRT vs. SA4d, IMRT vs. SA2d, IMRT vs. SA2Arcs, IMRT vs. Ergo++ and IMRT vs. Autobeam. A second independent method to assess the difference between the techniques was based on considering superiority of one treatment technique if results were improved in 4 of 5 cases. Overall less planning objectives were achieved in Autobeam and Ergo++ than SmartArc.</figDesc><table></table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_9" validated="false"><head></head><label></label><figDesc>International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 scholar.waset.org/1307-6892/9999305 International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+506 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_10" validated="false"><head>TABLE VI IMRT</head><label>VI</label><figDesc>Note: P = probability for IMRT vs. SA4d, IMRT vs. SA2d and IMRT vs. SA2Arc. P-= probability for SA4d vs. SA2d, SA4d vs. SA2d. SD= Standard Deviation in brackets for IMRT vs. SA4d, IMRT vs. SA2d, IMRT vs. SA2Arcs. Max = Maximum dose. Better (+) or worse (-) results in at least 4/5 cases are indicated for IMRT vs. SA4d, IMRT vs. SA2d and IMRT vs. SA2Arcs.</figDesc><table>V SA TARGET H, CI, COVERAGE &amp; OAR STATISTICS 
+IMRT 
+SA4d 
+P (IMRT 
+vs. SA4d 
+
+SA2d 
+P (IMRT 
+vs. SA2d) 
+
+P-(SA4d 
+vs. SA2d) 
+
+SA2Arcs 
+P (IMRT vs. 
+SA2Arcs) 
+
+P -(SA4d vs. 
+SA2Arcs) 
+PTV1 H 
+5.24 (1.27) 
+3.85 (1.11) 
+0.005 6.08 (1.71) 
+0.05 
+0.003 5.37 (1.09) 
+0.523 
+0.001 
+PTV2 H 
+6.38 (1.22) 
+5.92 (0.88) 
+0.242 6.92 (0.85) 
+0.396 
+0.015 6.12 (0.79) 
+0.321 
+0.416 
+PTV1 CI 
+0.896 (0.098) 
+0.97 (0.012) 
+0.179 0.832 (0.051) 
+0.243 
+0.004 0.746 (0.12) 
+0.023 
+0.016 
+PTV2 Cl 
+0.91 (0.151) 
+0.97 (0.015) 
+0.374 0.764 (0.071) 
+0.079 
+0.002 0.716 (0.088) 
+0.019 
+0.002 
+PTV1 V &lt;95% 
+9.04 (10.06) 
+2.362 (1.29) 
+0.233 16.54 (5.22) 
+0.17 
+0.005 23.4 (11.57) 
+0.02 
+0.019 
+PTV2 V &lt;95% 
+8.58 (15.36) 
+2.3 (1.46) 
+0.379 22.32 (6.52) 
+0.084 
+0.002 27.78 (8.99) 
+0.021 
+0.002 
+PTV1 V&gt;107% 0.0127 (0.026) 0.0097 (0.0130) 
+0.774 0.2013 (0.308) 
+0.236 
+0.221 0.045(0.064) 
+0.309 
+0.29 
+PTV2 V&gt;107% 5.154 (1.47) 
+5.25 (0.61) 
+0.896 3.24 (1.31) 
+0.133 
+0.02 2.134 (0.69) 
+0.015 
+0 
+SC_3mm Max 
+dose 
+
+5042.2 (4.8) 
+4773 (1.83)+ 
+0.154 4763.7 (2.50)+ 
+0.14 
+0.882 4665.4 (1.93)+ 
+0.072 
+0.027 
+
+BS_3mm Max 
+dose 
+
+4101.1 (17.5) 
+4544.3 (13.8)-
+0.124 4539.9 (16.0)-
+0.099 
+0.975 4396.2 (14.68)-
+0.226 
+0.115 
+
+Ips Parotid 
+Mean Dose 
+
+3510.56 (9.5) 
+3482.24 (9.4)-
+0.657 3279.04 (8.9)+ 
+0.035 
+0.012 3241.14 (8.9)+ 
+0.007 
+0.002 
+
+Con Parotid 
+Mean dose 
+
+3234.16 (7.7) 
+3208.1 (7.4)+ 
+0.65 
+3201.9 (7.5)-
+0.834 
+0.967 
+3062.9 (7.3)+ 
+0.091 
+0.01 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_11" validated="false"><head>TABLE VII IMRT</head><label>VII</label><figDesc>V AB V ERGO++ TARGET H, CI, COVERAGE, OAR STATISTICS Plans IMRT AB P(IMRT V AB) Ergo++ P(IMRT V Ergo++) P (AB V Ergo++) PTV1 H 5.24 (1.27) 20.92 (15.4)- 0.081 31.64 (15.14)-/- 0.014 0.085 PTV2 H 6.38 (1.22) 16.99 (2.64)- 0.002 20.02 (9.17)-/0 0.034 0.499 PTV1 CI 0.896 (0.098) 0.758 (0.12)+ 0.182 0.532(0.13)+/+ 0.001 0.081 PTV2 Cl 0.91 (0.15) 0.712 (0.14)+ 0.115 0.512(0.32)+/+ 0.034 0.115 PTV1 V &lt;95% 9.04 (10.06) 23.56 (12.3)- 0.192 46.26(13.1)-/- 0.00 0.087 PTV2 V &lt;95% 8.58 (15.36) 27.96 (14.3)- 0.124 48.1(31.5)-/- 0.036 0.112 PTV1 V&gt;107% 0.0127 (0.026) 16.54 (15.7)- 0.077 23.39(18.1)-/- 0.04 0.40 PTV2 V&gt;107% 5.15 (1.47) 20.76 (9.54)- 0.015 19.98 (15.1)-/0 0.078 0.8 SC_3mm Max (Gy) 50.42 (4.8) 51.33 (1.36)- 0.677 59.59 (7.60)-/- 0.01 0.059 BS_3mm Max (Gy) 41.01(17.5) 40.21 (17.42) 0 0.750 32.98 (22.61)+/+ 0.058 0.161 Ips parotid Mean 35.11 (9.5) 41.51 (12.42)- 0.029 27.25 (7.45)+/+ 0.031 0.013 Con Parotid Mean 32.34 (7.7) 39.11 (9.1)- 0.005 29.93 (10.44) 0/+ 0.57 0.056 Note: P= Probability. SD = Standard Deviations in bracket for IMRT vs. AB and IMRT vs. Ergo++ . Max = Maximum dose. Better (+) or worse (-) results in at least 4/5 cases are indicated for IMRT vs. Autobeam and IMRT vs. Ergo++. No difference in planning techniques is shown with (0). AB was also compared with Ergo++(x/x).</figDesc><table>Plans 
+IMRT 
+AB 
+P(IMRT V AB) 
+Ergo++ 
+P(IMRT V Ergo++) P (AB V Ergo++) 
+
+PTV1 H 
+5.24 (1.27) 
+20.92 (15.4)-
+0.081 
+31.64 (15.14)-/-
+0.014 
+0.085 
+PTV2 H 
+6.38 (1.22) 
+16.99 (2.64)-
+0.002 
+20.02 (9.17)-/0 
+0.034 
+0.499 
+PTV1 CI 
+0.896 (0.098) 
+0.758 (0.12)+ 
+0.182 
+0.532(0.13)+/+ 
+0.001 
+0.081 
+PTV2 Cl 
+0.91 (0.15) 
+0.712 (0.14)+ 
+0.115 
+0.512(0.32)+/+ 
+0.034 
+0.115 
+PTV1 V &lt;95% 
+9.04 (10.06) 
+23.56 (12.3)-
+0.192 
+46.26(13.1)-/-
+0.00 
+0.087 
+
+PTV2 V &lt;95% 
+8.58 (15.36) 
+27.96 (14.3)-
+0.124 
+48.1(31.5)-/-
+0.036 
+0.112 
+
+PTV1 V&gt;107% 
+0.0127 (0.026) 16.54 (15.7)-
+0.077 
+23.39(18.1)-/-
+0.04 
+0.40 
+PTV2 V&gt;107% 
+5.15 (1.47) 
+20.76 (9.54)-
+0.015 
+19.98 (15.1)-/0 
+0.078 
+0.8 
+SC_3mm Max (Gy) 50.42 (4.8) 
+51.33 (1.36)-
+0.677 
+59.59 (7.60)-/-
+0.01 
+0.059 
+BS_3mm Max (Gy) 41.01(17.5) 
+40.21 (17.42) 0 0.750 
+32.98 (22.61)+/+ 0.058 
+0.161 
+Ips parotid Mean 
+35.11 (9.5) 
+41.51 (12.42)-
+0.029 
+27.25 (7.45)+/+ 
+0.031 
+0.013 
+Con Parotid Mean 
+32.34 (7.7) 
+39.11 (9.1)-
+0.005 
+29.93 (10.44) 0/+ 0.57 
+0.056 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_12" validated="false"><head></head><label></label><figDesc>International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305 2 0 gantry separation. Similar trend was observed for LT Parotid.</figDesc><table>Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_13" validated="false"><head>TABLE VIII COMBINED</head><label>VIII</label><figDesc>OPTIMIZATION/CALCULATION AND ESTIMATED DELIVERY TIMES FOR DYNAMIC ARC (SA) PLANS</figDesc><table>Cases 
+Combined O&amp;C Time 
+(min) 
+
+Est. Delivery Time 
+(sec) 
+
+No of Arcs CP spacing 
+No of CPs 
+
+HN1 SA 
+7 
+381 
+1 
+4 
+89 
+HN1 SA 2deg G 
+36 
+337 
+1 
+2 
+176 
+HN1 SA 2 Arc 
+25 
+256+249 =505 
+2 
+4 
+178 
+HN2 SA 100 10C 
+29 
+400 
+1 
+4 
+89 
+HN2 SA 2deg G spacing 
+57 
+400 
+1 
+2 
+176 
+HN2 2 Arc SA 
+52 
+400 s 
+2 
+4 
+89+89 =178 
+HN3 SA 
+8 
+330 
+1 
+4 
+89 
+HN3 2deg G spacing 
+24 
+399 
+1 
+2 
+176 
+HN 3 2Arc 
+49 
+218s+317s 
+2 
+4 
+178 
+HN4 SA(2 nd SA) 
+10 
+399 
+1 
+4 
+89 
+HN4 2deg G spacing 
+31 
+400 
+1 
+2 
+176 
+HN4 2 Arc 
+59 
+275+276 
+2 
+4 
+178 
+HN5 SA 100,10 
+12 min 
+400 s 
+1 
+4 
+89 
+HN5 2deg G spacing 
+37 min 
+396 
+1 
+2 
+176 
+HN 5 2Arc 
+61 
+312+258 
+2 
+4 
+178 
+
+Note: CP (s) = Control Point (s), O&amp;C=Combined Optimization and Calculation, Est. =Estimated 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_14" validated="false"><head></head><label></label><figDesc>based on Elekta machine specifications with variable dose rate and constant gantry speed. World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences Vol:8, No:8, 2014 508 International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 scholar.waset.org/1307-6892/9999305 International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+508 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_15" validated="false"><head>TABLE IX MONITOR</head><label>IX</label><figDesc>UNITS FOR IMRT &amp; VMAT PLANS Cases IMRT SA 4d SA 2d SA 2Arc AB Ergo++/PX set to MUs Ergo++/PX set to PTV1edited mean HN1 530.5 428.2 223.2 428.9 337.6 434 358.3 HN2 613.9 452.2 482.7 454.4 623.5 395 400.6 HN3 534 475.2 550.8 613.8 639.3 1087 381.1 HN4 747.3 576.3 609.2 639.8 411.6 954 547.9 HN5 679.4 587.6 309.1 639.6 893.8 785 543.4 P-values IMRT vs VMAT 0.005 0.054 0.185 0.710 0.456 0.000 P--values 0.393 0.111 Mean 621.02 503.9 435 555.3 581.16 731 446.26 Note: PX = Prescription, AB = Autobeam, P--= P values SA4d v Sa2d v SA2Arcs V. DOSIMETRIC VERIFICATION All VMAT plans were successfully delivered on Elekta Synergy accelerator. Gamma Index moved from an average 91.45% for a 4 0 CP spacing to 83.95% for a 2 0 CP spacing when analyzed at 3% and 3mm level. Similar trends were observed with dose deviation and distance to agreement. Contrary to our expectations, 2 0 CP spacing did not improved dosimetric accuracy of SmartArc plans. Similarly Gamma Index for Autobeam and Ergo++ plans on average was 83.45% and 19.65% respectively.</figDesc><table>HN1 
+530.5 
+428.2 
+223.2 
+428.9 
+337.6 
+434 
+358.3 
+HN2 
+613.9 
+452.2 
+482.7 
+454.4 
+623.5 
+395 
+400.6 
+HN3 
+534 
+475.2 
+550.8 
+613.8 
+639.3 
+1087 
+381.1 
+HN4 
+747.3 
+576.3 
+609.2 
+639.8 
+411.6 
+954 
+547.9 
+HN5 
+679.4 
+587.6 
+309.1 
+639.6 
+893.8 
+785 
+543.4 
+P-values IMRT vs VMAT 
+0.005 
+0.054 
+0.185 
+0.710 
+0.456 
+0.000 
+P--values 
+0.393 
+0.111 
+Mean 
+621.02 
+503.9 
+435 
+555.3 581.16 
+731 
+446.26 
+
+Note: PX = Prescription, AB = Autobeam, P--= P values SA4d v Sa2d v SA2Arcs 
+
+V. DOSIMETRIC VERIFICATION 
+
+All VMAT plans were successfully delivered on Elekta 
+Synergy accelerator. Gamma Index moved from an average 
+91.45% for a 4 0 </table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_16" validated="false"><head>TABLE X RESULTS</head><label>X</label><figDesc>Note:  = Gamma Index. a Percentage of measurements agreeing with the plan to within 3% and 3mm, DD=Dose Deviation, DA=Distance to Agreement.</figDesc><table>FOR DELIVERY AND ACCURACY 
+Cases 
+No of arcs 
+Est. Time 
+In sec 
+
+Actual Time 
+In min 
+
+Mu/Arc 
+(3%,3mm) % pass 
+DD% 
+DA% 
+
+HN1 SA4d 
+1 
+386 
+5.65 
+428.2 
+91.5 
+64.0 
+87.00 
+HN1 SA2d 
+1 
+323 
+6 
+223.2 
+77.8% 
+43.0 
+78.70 
+HN1 SA2Arc 
+2 
+256+249s=505 
+1st Arc: 3.8 2nd Arc: 
+3.75 Total : 7.55 
+
+428.9 for 2arcs 
+combined 
+
+75.4 
+37.90% 77.60% 
+
+HN1 AB3 
+1 
+-
+4.85 
+337.6 
+78.2% 
+48.2% 
+75.6 
+HN1 Ergo++ 
+plan7 
+
+1 
+-
+17.8 
+434 
+14.7 
+9.9 
+14.10 
+
+HN2 SA4d 
+1 
+400 
+6.80 
+452.2 
+91.4% 
+70.20 
+88.60 
+HN2 SA2d 
+1 
+400 
+7.7 
+482.7 
+90.10 
+68.10 
+90.60 
+HN2 SA2Arc 
+400s +400s=800 or 6.66 min 
+1st arc = 5.55min 
+2nd Arc: = 5.55min 
+Total:11.1 
+
+454.4 for 2 arcs 
+combined 
+
+86.10 
+53.10 
+86.0 
+
+HN2 AB10 
+3 
+-
+1st arc = = 3:20 2nd arc 
+= = 1:75. 3rd arc = 1.8 
+Total: 6.75 
+
+623.5 
+88.7 
+72.0 
+88.9 
+
+HN2 Ergo++ 
+1 
+-
+22.50 
+395 
+24.60 
+15.20 
+28.70 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_17" validated="false"><head>TABLE XI</head><label>XI</label><figDesc>Note:  = Gamma Index. a Percentage of measurements agreeing with the plan to within 3% and 3mm. DD = Dose Deviation. DA = Distance to Agreement</figDesc><table>IMRT VERIFICATION RESULTS 
+Cases 
+Gamma 
+Index,  
+
+DD% 
+DA% 
+
+HN1 
+99.5 
+86.9 
+99.2 
+HN2 
+97.3 
+77.1 
+93.6 
+Mean 
+98.4 
+82 
+96.4 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_18" validated="false"><head></head><label></label><figDesc>International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+509 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_19" validated="false"><head>TABLE XII LEAF</head><label>XII</label><figDesc></figDesc><table>OFF SET VALUES [30] 
+Leaf Pos 
+Offset 
+Leaf Pos 
+Offset 
+Leaf Pos 
+Offset 
+
+-12.5 
+-0.2486 
+0 
+0.1 
+13 
+-0.2769 
+-12 
+-0.2213 
+1 
+0.0978 
+14 
+-0.3368 
+-11 
+-0.1702 
+2 
+0.091 
+15 
+-0.4011 
+-10 
+-0.1234 
+3 
+0.0798 
+16 
+-0.4697 
+-9 
+-0.081 
+4 
+0.0642 
+17 
+-0.5426 
+-8 
+-0.0431 
+5 
+0.044 
+18 
+-0.6198 
+-7 
+-0.0096 
+6 
+0.0185 
+19 
+-0.7013 
+-6 
+0.0185 
+7 
+-0.0096 
+20 
+-0.787 
+-5 
+0.044 
+8 
+-0.0431 
+-4 
+0.0642 
+9 
+-0.081 
+-3 
+0.0798 
+10 
+-0.1234 
+-2 
+0.091 
+11 
+-0.1702 
+-1 
+0.0978 
+12 
+-0.2213 
+
+Note: Leaf Pos = Positions 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_20" validated="false"><head>TABLE XIII</head><label>XIII</label><figDesc>Note:  = Gamma Index. a Percentage of measurements agreeing with the plan to within 3% and 3mm. DD = Dose Deviation, DA = Distance to Agreement.</figDesc><table>LEAF-END SEPARATION MODELLING 
+Cases Gamma Index DD% DA% Gamma Index 
+DD% 
+DA5 
+Gamma Index DD% 
+DA% 
+
+SA 4d 
+SA2d 
+SA2Arc 
+HN1 
+92.60 
+71.00 88.00 
+97.20% 
+73.60% 97.00% 
+96.40% 
+68.6 
+96.50% 
+HN2 
+94.10 
+74.00 91.90 
+97.20% 
+83.90% 97.40% 
+96.4 
+76.2 
+95.90% 
+Mean 
+93.35 
+72.5 
+89.95 
+97.2 
+78.75 
+97.2 
+96.4 
+72.4 
+96.2 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_21" validated="false"><head>TABLE XIV VERIFICATION</head><label>XIV</label><figDesc>RESULTS FOR MLC SHAPE MODELLING</figDesc><table>Plans 
+Gamma Index,  DD% 
+DA% 
+
+IMRT HN1 
+99.5 
+86.90 
+99.20 
+AB3 original VMAT 
+78.2 
+48.2 
+75.6 
+AB3 with static beams 
+98.00 
+87.70 
+98.60 
+
+Note: DD = Dose Deviation, DA = Distance to Agreement 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_22" validated="false"><head>TABLE XV RESULTS</head><label>XV</label><figDesc></figDesc><table>FOR CP SPACING MODELLING 
+Plans 
+Gamma Index, 
+DD% 
+DA% 
+
+Delta4 1Plan 0.0 ORIG 
+95.0% 
+75.90% 
+88.30% 
+Delta4 1Plan 0.0 1DEG 
+99% 
+84.30% 
+98.90% 
+Delta4 1Plan 0.0 2DEG 
+97.50% 
+77.30% 
+98.30% 
+Delta4 1Plan 0.0 5DEG 
+66.10% 
+37.00% 
+75.00% 
+Delta4 1Plan 0.0 10DEG 
+29.50% 
+9.40% 
+52.20% 
+
+Note:  = Gamma Index, DD = Dose Deviation, DA = Distance to 
+Agreement. 
+
+World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+510 
+International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 
+scholar.waset.org/1307-6892/9999305 
+International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_24" validated="false"><head></head><label></label><figDesc>International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 scholar.waset.org/1307-6892/9999305 International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table>World Academy of Science, Engineering and Technology 
+International Journal of Medical and Health Sciences 
+Vol:8, No:8, 2014 
+
+512 
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_25" validated="false"><head></head><label></label><figDesc>World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences Vol:8, No:8, 2014 513 International Scholarly and Scientific Research &amp; Innovation 8(8) 2014 scholar.waset.org/1307-6892/9999305 International Science Index, Medical and Health Sciences Vol:8, No:8, 2014 waset.org/Publication/9999305</figDesc><table></table></figure>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0" />
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">Intensity modulated radiation therapy for Head and Neck carcinomas</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Gregoire</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>De Neve</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Eisbruch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Van Den Weyngaert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Van</forename><surname>Gestel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">The Oncologist</title>
+		<imprint>
+			<biblScope unit="volume">12</biblScope>
+			<biblScope unit="page" from="555" to="564" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Intensity Modulated Radiotherapy significantly reduces xerostomia compared with conventional radiotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Braam</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Terhaard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Roesink</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="975" to="980" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Xerostomia and quality of life after intensity modulation radiotherapy vs conventional radiotherapy for early-stage nasopharyngeal carcinomas: initial report on a randomized controlled clinical trial</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Pow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Kwong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Mcmillan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Leung</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Leung</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">66</biblScope>
+			<biblScope unit="page" from="981" to="991" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">organ sparing by conformal avoidance intensity-modulated radiation therapy for anal cancer: dosimetric evaluation of coverage of pelvis and inguinal/femoral nodes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Liu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Tsai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Vora</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Pezner</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Schulthesis</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">63</biblScope>
+			<biblScope unit="page" from="274" to="81" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Salivary gland sparing and improved target irradiation by conformal and intensity modulated irradiation of head and neck cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Eisbruch</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Ship</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Dawson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Kim</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Bradford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Terrell</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">World J Surg</title>
+		<imprint>
+			<biblScope unit="volume">27</biblScope>
+			<biblScope unit="page" from="832" to="837" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">American Society for Therapeutic Radiology and Oncology (ASTRO) and American College of Radiology (ACR) Practice Guidelines for Intensity-Modulated Radiation Therapy (IMRT)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Hartford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Palisca</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Eichler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Beyer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Devinen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Ibbott</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">73</biblScope>
+			<biblScope unit="page" from="9" to="14" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Development of an optimization concept for arc-modulated cone beam therapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ulrich</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Nill</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Oelfke</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys Med Biol</title>
+		<imprint>
+			<biblScope unit="volume">52</biblScope>
+			<biblScope unit="page" from="4099" to="119" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">Guidance document on delivery, treatment planning, and clinical implementation of IMRT: report of IMRT Subcommittee of the AAPM Radiation Therapy Committee</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Ezzell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Galvin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Low</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Palta</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Rosen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Sharpe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">30</biblScope>
+			<biblScope unit="page" from="2089" to="115" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">New developments in arc radiation therapy: A review</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Palma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Verbakel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Otto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Senan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Cancer Treat Rev</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="393" to="399" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">Intensity-modulated radiation therapy, protons and the risk of second cancers</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Hall</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">65</biblScope>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Radiation-induced second cancers: the impact of 3D-CRT and IMRT</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Hall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Wuu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">56</biblScope>
+			<biblScope unit="page" from="83" to="88" />
+			<date type="published" when="2003" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">The role of medical physicists and the AAPM in the development of treatment planning and optimization</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Orton</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="4911" to="4923" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Volumetric Modulated arc therapy for delivery of prostate radiotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Palma</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Vollans</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>James</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Nakano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Moiseenko</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shaffer</surname></persName>
+		</author>
+		<ptr target="scholar.waset.org/1307-6892/9999305" />
+	</analytic>
+	<monogr>
+		<title level="j">World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note>514 International Scholarly and Scientific Research &amp; Innovation</note>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">waset.org/Publication/9999305 comparison with intensity-modulated radiotherapy and threedimensional conformal radiotherapy</title>
+	</analytic>
+	<monogr>
+		<title level="j">International Science Index, Medical and Health Sciences</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="996" to="1001" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+	<note>Int J Radiat Oncol Biol Phys.</note>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Intensity-modulated arc therapy with dynamic multileaf collimation: an alternative to Tomotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Yu</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys Med Biol</title>
+		<imprint>
+			<biblScope unit="volume">40</biblScope>
+			<biblScope unit="page" from="1435" to="1484" />
+			<date type="published" when="1995" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Clinical Evaluation of Volumetric Modulated Arc Therapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Matuszak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Yan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Grills</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Martinez</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="608" to="616" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Comparison of plan quality provided by intensity-modulted arc therapy and helical tomotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Cao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Holmes</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Afhan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Shepard</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">69</biblScope>
+			<biblScope unit="page" from="240" to="250" />
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title level="a" type="main">Intensity-modulated arc therapy for treatment of high-risk endometrial malignancies</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Wong</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Souza</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Chen</forename><forename type="middle">J</forename><surname>Lock</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Rodrigues</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Coad</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">61</biblScope>
+			<biblScope unit="page" from="830" to="841" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Volumetric modulated arc therapy: IMRT in a single gantry arc</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Otto</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">35</biblScope>
+			<biblScope unit="page" from="310" to="327" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Development and evaluation of an efficient approach to volumetric arc therapy planning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Bzdusek</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Friberger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Eriksson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Hardemark</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Robinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kaus</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="2328" to="2367" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Volumetric Modulated Arc Therapy Improves Dosimetry and Reduces Treatment Time Compared To Conventional Intensity-Modulated Radiotherapy for Locoregional Radiotherapy Of Left-Sided Breast Cancer and Internal Mammary Nodes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Popescu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Olivotto</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Beckham</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Ansbacher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Zavgorodni</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shaffer</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page" from="287" to="295" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Is a Single arc sufficient in volumetric modulated arc therapy (VMAT) for complex-shaped target volumes</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Guckenberger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Richter</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Krieger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Wilbert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Baier</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Flentje</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiother Oncol</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="259" to="265" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Volumetric modulated arc radiotherapy for carcinomas of the oropharynx, hypo-pharynx and larynx: a treatment planning comparison with fixed field IMRT</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Vanetti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Clivio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Nicolini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Fogliata</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Ghosh-Laskar</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Agarwal</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiother Oncol</title>
+		<imprint>
+			<biblScope unit="volume">92</biblScope>
+			<biblScope unit="page" from="111" to="118" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Volumetric intensity modulated arc therapy vs conventional IMRT in Head and Neck Cancer: A comparative planning and dosimetric study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Verbakel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Cuijpers</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Hoffmans</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bieker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Slotman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Senan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">74</biblScope>
+			<biblScope unit="page" from="252" to="259" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<analytic>
+		<title level="a" type="main">Initial dosimetric evaluation of Smartarc -a novel VMAT treatment planning module implemented in a multi-vendor delivery chain</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Feygelman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Stevens</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J Appl Clin Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page">3169</biblScope>
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">A fast Radiotherapy Paradigm for anal cancer with volumetric modulated arc therapy (VMAT)</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Stieler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wolff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lohr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Steil</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Abo-Madyan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lorenz</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiat Oncol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="page">48</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Dose verification of intensity modulated arc therapy using an ERGO++ treatment planning system and Elekta internal multileaf collimators for prostate Cancer treatment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Yoda</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Nakagawa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Shiraishi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Okano</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ohtomo</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Pellegrini</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Br J Radiol</title>
+		<imprint>
+			<biblScope unit="volume">82</biblScope>
+			<biblScope unit="page" from="328" to="331" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Quality assurance of volumetric modulated arc therapy using Elekta Synergy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Haga</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Nakagawa</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Shiraishi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Itoh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Terahara</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Yamashita</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Acta Oncol</title>
+		<imprint>
+			<biblScope unit="volume">48</biblScope>
+			<biblScope unit="page" from="1" to="5" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Treatment planning for volumetric modulated arc therapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Bedford</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="5128" to="5138" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Evaluation of the Delta 4 phantom for IMRT and VMAT verification</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Bedford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Wai</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>South</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Warrington</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys Med Biol</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="167" to="176" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title level="m" type="main">Department of Medical Physics and Philips Medical System. The Royal Marsden Hospital, Surrey, UK. MLC leaf-end Separation Values</title>
+		<imprint/>
+	</monogr>
+	<note>Unpublished</note>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">Verification of a rounded leaf-end MLC model used in a radiotherapy treatment planning system</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Williams</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Metcalfe</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys Med Biol</title>
+		<imprint>
+			<biblScope unit="volume">51</biblScope>
+			<biblScope unit="page" from="65" to="78" />
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Initial experience with Philips smartArc on an Elekta Linac</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Shepard</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Ca</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Rao</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Chen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Mehta</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Med Phys</title>
+		<imprint>
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page" from="2548" to="2557" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Effect of Multiple Arcs on Planned Dose Distributions Delivered using Volumetric Modulated Arc Techniques -A Treatment Planning Study</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Cooper</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Rowbottom</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Suppl 710</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">RapidArc Planning and Delivery in Patients with Locally Advanced Head-And-Neck Cancer undergoing Chemoradiotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Doornaert</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Verbkel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Bieker</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Slotman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Senan</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="page" from="1" to="7" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Single Arc Volumetric Modulated Arc Therapy of Head and Neck Cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Bertelsen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Hansen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Johansen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Brink</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiother Oncol</title>
+		<imprint>
+			<biblScope unit="volume">95</biblScope>
+			<biblScope unit="page" from="142" to="148" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Single-Arc IMRT</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Bortfield</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Webb</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Phys Med Biol</title>
+		<imprint>
+			<biblScope unit="volume">54</biblScope>
+			<biblScope unit="page" from="9" to="20" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b37">
+	<analytic>
+		<title level="a" type="main">Volumetric Modulated Arc Therapy: Planning and Evaluation for Prostate Cancer Cases</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Zhang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Happersett</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hunt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Jackson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Zelefsky</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Mageras</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">76</biblScope>
+			<biblScope unit="page" from="1456" to="1462" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b38">
+	<analytic>
+		<title level="a" type="main">Investigation into the Pinnacle Smartarc Module for VMAT Planning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Rowbottom</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Golby</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Atherton</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Mackay</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">IFMBE Proceedings</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="721" to="724" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b39">
+	<monogr>
+		<title level="m" type="main">Planning and verification of intensity modulated arc therapy (IMAT) The Royal Marsden NHS Foundation Trust and The Institute of Cancer Research</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Bedford</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Warrington</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b40">
+	<analytic>
+		<title level="a" type="main">On the performances of intensity modulation with photons for benign intracranial tumours: a planning comparison of volumetric single arc, helical arc, and fixed gantry techniques</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Fogliata</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Clivio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Nicolini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Clivio</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Vanetti</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Wyttenbach</surname></persName>
+		</author>
+		<ptr target="http://www.ro-journal.com/content/4/1/2Accessed:12/10/10" />
+	</analytic>
+	<monogr>
+		<title level="j">Radiat Oncol</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b41">
+	<analytic>
+		<title level="a" type="main">Optimization of Volumetric Modulated Arc Therapy (VMAT) Planning Strategy using Ring-shaped ROI for Localized Prostate Cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Ishii</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Hosono</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Tatsumi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Nakada</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Tsutsumi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Ogino</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Int J Radiat Oncol Biol Phys</title>
+		<imprint>
+			<biblScope unit="volume">75</biblScope>
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+	<note>Suppl 1: S320-S321. Poster viewing Abstract</note>
+</biblStruct>
+
+<biblStruct xml:id="b42">
+	<analytic>
+		<title level="a" type="main">Volumetric modulated arc therapy (VMAT) vs. serial tomotherapy, stepand-shoot IMRT and 3D-conformal RT for treatment of prostate cancer</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Wolff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Stieler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Welzel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Lorenz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Y</forename><surname>Abomadyan</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mai</forename><forename type="middle">S</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiother Oncol</title>
+		<imprint>
+			<biblScope unit="volume">93</biblScope>
+			<biblScope unit="page" from="226" to="233" />
+			<date type="published" when="2009" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b43">
+	<analytic>
+		<title level="a" type="main">A treatment planning study comparing volumetric arc modulation with RapidArc and fixed field IMRT for cervix uteri radiotherapy</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">L</forename><surname>Cozzi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Dinshaw</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><surname>Shrivastava</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">U</forename><surname>Mahatshetty</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Engineer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Deshpande</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Radiother Oncol</title>
+		<imprint>
+			<biblScope unit="volume">89</biblScope>
+			<biblScope unit="page" from="180" to="191" />
+			<date type="published" when="2008" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b44">
+	<analytic>
+		<title/>
+		<idno>scholar.waset.org/1307-6892/9999305</idno>
+	</analytic>
+	<monogr>
+		<title level="j">World Academy of Science, Engineering and Technology International Journal of Medical and Health Sciences</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+	<note>515 International Scholarly and Scientific Research &amp; Innovation</note>
+</biblStruct>
+
+<biblStruct xml:id="b45">
+	<analytic>
+		<title/>
+		<idno>waset.org/Publication/9999305</idno>
+	</analytic>
+	<monogr>
+		<title level="j">International Science Index, Medical and Health Sciences</title>
+		<imprint>
+			<biblScope unit="volume">8</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<date type="published" when="2014" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
