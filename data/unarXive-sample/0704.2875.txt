@@ -1,0 +1,1537 @@
+
+PHASE STRING THEORY FOR DOPED ANTIFERROMAGNETS
+Zheng-Yu Weng
+Center for Advanced Study, Tsinghua University, Beijing 100084, China
+2020/09/07 18:37:18
+The recent developments of the phase string theory for doped
+antiferromagnets will be briefly reviewed. Such theory is built upon a
+singular phase string effect induced by the motion of holes in a doped
+antiferromagnet, which as a precise property of the FORMULA -FORMULA  model dictates
+the novel competition between the charge and spin degrees of freedom. A
+global phase diagram including the antiferromagnetic, superconducting, lower
+and upper pseudogap, and high-temperature “normal” phases, as well as a series of anomalous physical
+properties of these phases will be presented as the self-consistent and
+systematic consequences of the phase string theory.
+INTRODUCTION
+Since the discovery of high-FORMULA  superconductivity two decades ago, a
+great effort has been put into the search for a unified microscopic
+mechanism for both superconductivity as well as anomalous spin and charge
+properties in the cuprates.
+In this paper, I shall review a systematic endeavor along a particular line
+approaching the doped Mott insulator/doped antiferromagnet, which has been
+proposed{{cite:9f75e1f1-7f79-4cca-940d-61d06a988ec2}} as the unique property of the cuprates due to the
+strong Coulomb interaction. It has gradually become a consensus that the
+doped Mott insulator physics holds the key to understanding the cuprate
+superconductor, and distinguishes the latter from a conventional BCS
+superconductor.
+The present line, known as the phase string theory, will be
+characteristically different from the main-stream approach to a doped Mott
+insulator. The latter has been mainly built on the resonating valence bond
+(RVB) pairing of fermionic spins and the spin-charge separation in
+the early proposals,{{cite:9f75e1f1-7f79-4cca-940d-61d06a988ec2}}, {{cite:74d7e2a1-8700-45b3-8f16-aa6111ee1d5c}}, {{cite:5fa7541f-e002-4629-8bc1-c0de1f37e8f6}} the latest
+developments of which have been summarized and reviewed in Refs. {{cite:34924483-2048-4195-94ec-fce126f19215}}, {{cite:110ddfd1-5420-4ed9-802d-42230034ce99}}.
+The phase string theory, on the other hand, has been built on a singular
+nonlocal effect hidden in a typical doped Mott insulator, e.g., the FORMULA -FORMULA  model. This effect is largely omitted in other approaches, but is
+critical in constructing a self-consistent theory of the doped
+antiferromagnet evolving continuously from the half-filling
+Mott-antiferromagnetic insulator. I shall present a rich phase diagram with
+complex phenomena as the physical consequences of the phase string effect.
+One will see that the RVB and spin-charge separation concepts remain
+essential, but they will also acquire a distinct mathematical
+characterization in this theory.
+Although the leading order results of the phase string theory share some
+striking similarity with the experimental measurements in the cuprates, in
+this review, a direct comparison with experiment will be minimal,
+partly due to the length limitation and partly because I wish to emphasize
+that the physical consequences naturally flow from the theoretical
+structure, not from a phenomenology based on the experiment. I will not be
+able to discuss many interesting theoretical efforts along different lines of thought in this brief review, also due to the space limitation,
+which may be found through our original papers in the references.
+The rest of the paper will be organized as follows. In Sec. 2, I will
+discuss some important general properties of the FORMULA -FORMULA  model, including
+the Marshall sign rule, bosonic RVB description, phase string effect, and
+exact phase string formalism. In Sec. 3, based on the phase string
+formalism, I will describe how an effective theory, known as the phase
+string model, is constructed. In Sec. 4, the physical consequences of the
+phase string model will be given which cover the superconducting phase,
+lower and upper pseudogap phases, high-temperature normal state, as well as
+low-doping antiferromagnetic state. Finally, a synthesis and perspectives
+are presented in Sec. 5.
+
+GENERAL PROPERTIES OF THE FORMULA -FORMULA  MODEL
+The FORMULA -FORMULA  model is defined by FORMULA :
+FORMULA 
+and
+FORMULA 
+with a restricted Hilbert space under the no double occupancy constraint
+FORMULA 
+Due to the no double occupancy constraint, the FORMULA -FORMULA  model describes a
+Mott insulator at half filling with FORMULA , where the hopping term FORMULA  and the
+superexchange term FORMULA  depicts the Heisenberg antiferromagnetic (AF)
+interaction in the unfrozen spin degrees of freedom. Away from the half
+filling, charge carriers are introduced with removing or injecting electrons
+into the system, which are known as the hole or electron-doped Mott
+insulators. Since the half-filling case is an AF spin state, the doped
+system can be also properly called a doped antiferromagnet.
+For a bipartite lattice with only the nearest-neighboring (nn) hopping and
+superexchange couplings [denoted by FORMULA  in Eqs. (REF ) and (REF )], there exists a particle-hole symmetry and one
+may only focus on the hole-doped side without loss of generality. Note that
+the next nn hopping may be important in real materials and its effect will
+be commented on in Sec. 5.
+Half-Filling: A Bosonic RVB Description
+At half-filling, the FORMULA -FORMULA  model reduces to the Heisenberg model, where
+the physical properties are fairly well understood, as a consensus, in
+contrast to the doped case. This model predicts a long-range Néel order
+in the ground state as well as low-lying spin-wave excitations, consistent
+with experiment.
+It is important to point out that in the study of the doped case, one needs
+to have a correct description of spin correlations not only at long
+distance, but at all ranges. This is because the hole hopping in FORMULA  involves the nn sites, which will be generally quite sensitive to
+the short-range spin correlations. Thus, as a starting point, a precise
+description of both long and short range spin correlations at half-filling
+is essential.
+Marshall sign rule
+As proven by Marshall,{{cite:c02c03e3-66d5-4d7d-a6a4-815cdbda98f5}} the ground-state wave function of the
+Heisenberg model for a bipartite lattice must be real and satisfies a sign
+rule. This sign rule dictates that the flip of a pair of antiparallel spins
+at two opposite sublattice sites will always be accompanied by a sign change
+in the wave function.
+This Marshall sign rule may be easily understood as below. Define a spin
+basis state with the built-in Marshall signs as
+FORMULA 
+where FORMULA  denotes the total number of down spins at the FORMULA 
+sublattice such that the aforementioned Marshall sign rule is always
+satisfied. Then it is straightforward to verify that the matrix element of FORMULA  under the complete set FORMULA  is negative definite
+FORMULA 
+so that for the ground state
+FORMULA 
+the wave function FORMULA  is always real and positive (except for a
+trivial global phase).
+
+Liang-Doucot-Anderson wave function
+While the exact ground state of the Heisenberg model in two dimensions (2D)
+is not known, the best variational state proposed by Liang, Doucot and
+Anderson is given by{{cite:76fb2caa-ec38-4edb-ac6d-5ce51d2da34f}}
+FORMULA 
+where FORMULA  stands for a singlet spin pairing at two opposite sublattice
+sites FORMULA  and FORMULA , and FORMULA , the positive weight factor associated with
+it. Since each singlet bond FORMULA  automatically satisfies the Marshall sign
+rule, the total wave function can be easily shown to obey the sign rule as
+well.
+The variational wave function in Eq. (REF ) can produce{{cite:76fb2caa-ec38-4edb-ac6d-5ce51d2da34f}} an
+unrivaled accurate ground-state energy (FORMULA  per bond as compared to
+the exact numerical value of FORMULA  per bond for the Heisenberg model).
+Since the energy of the Heisenberg model is directly related to the nn
+spin-spin correlation, a good variational energy also means a good
+description of short-range spin correlations. On the other hand, this wave
+function possesses an AF long-range order (AFLRO) in the spin correlation
+function with a similarly accurate magnetization as the system size is
+extrapolated to infinity.{{cite:76fb2caa-ec38-4edb-ac6d-5ce51d2da34f}}
+
+Doping: Phase String Effect
+Now let us consider doping. In the above we have seen that the ground state
+wave function of the Heisenberg model satisfies the Marshall sign. In fact,
+such a Marshall sign rule would hold even at arbitrary doping, if holes
+remain static on lattice sites. Consider the single hole case for example.
+Define the following spin basis incorporating the Marshall signs similar to
+Eq. (REF )
+FORMULA 
+where FORMULA  denotes the hole site. Then it is straightforward to check that
+FORMULA 
+still holds to ensure the Marshall sign rule.
+But once the hole starts to move, the Marshall sign rule will be scrambled
+by the hopping of the hole. Indeed, based on Eq. (REF ) the
+hopping matrix is given by
+FORMULA 
+where FORMULA  is the site FORMULA  spin index in the state FORMULA , and FORMULA  is different from FORMULA  by an exchange of the spin FORMULA  with the hole at site FORMULA  Since FORMULA , the hopping matrix element is no longer sign definite.
+Based on Eq. (REF ), a hole hops on the lattice will pick up a
+product of sequential FORMULA  and FORMULA  signs,{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+FORMULA 
+where FORMULA  is the number of FORMULA  spins which are
+exchanged with the hole during its hopping on a given path FORMULA . Because of
+Eq. (REF ), the superexchange interaction cannot “repair” such a phase string effect created by the
+nn hole hopping.{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+For example, the single-hole propagator FORMULA  with FORMULA  may be formally expressed as
+FORMULA 
+in which for each path FORMULA  connecting FORMULA  and FORMULA  there is a phase string
+factor FORMULA  weighted by FORMULA 
+with
+FORMULA 
+at FORMULA , whose proof is based on Eq. (REF ).{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+Here FORMULA  denotes the ground-state energy when the hole remains static. Similarly, the total energy FORMULA  of the state at a
+momentum FORMULA  can be also formally expressed in terms of the
+Wigner-Brillouin expansion as{{cite:117ad3b8-4c09-43cb-8871-12832247466e}}
+FORMULA 
+where
+FORMULA 
+with a positive semi-definite weight functional
+FORMULA 
+Physically, the phase string effect represents the transverse spin
+mismatches created by the motion of the hole on the AF background, in
+additional to the mismatches in the FORMULA  component.{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} The
+irreparableness of the phase string means that the three components of the
+spin defect induced by the motion of the hole cannot be simultaneously
+repaired via the spin flips in the superexchange term. It has been concluded
+that either the quasiparticle weight vanishes{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} or the doped hole
+is self-localized{{cite:117ad3b8-4c09-43cb-8871-12832247466e}} due to the phase string effect in a spin
+background with long-range AF correlation (in the half-filling limit).
+One can similarly demonstrate the irreparable phase string effect in an
+arbitrary multi-hole case although the formulation will be slightly
+modified with the emergence of an extra sign factor FORMULA  in additional to FORMULA , where FORMULA  is the number of the exchanges between the holes and FORMULA  here
+denotes the multi-hole paths.{{cite:363e10d4-e2bc-4d11-ac30-84660e4afbf7}}
+The significant role of the phase string factor FORMULA 
+in Eqs. (REF ) and (REF ) is to cause strong phase
+interference between different hole paths and thus greatly influence the
+charge dynamics. But since the spin degrees of freedom are involved in FORMULA , the spin correlations will also get simultaneously reshaped to minimize the total kinetic and superexchange
+energy. Therefore, the irreparable phase string effect will play a role to
+mediate nonlocal mutual influence between the charge and spin degrees
+of freedom as a new kind of interaction which emerges from the
+strongly correlated system of doped Mott insulator/antiferromagnet.
+The factor FORMULA  is very singular, as a
+fluctuation in FORMULA  by FORMULA  can result in a total sign
+change. So the quantum fluctuations are normally extremely strong especially
+for long paths, and there is no well-controlled quantum many-body method to
+directly handle such an effect. Alternatively a unitary transformation FORMULA  can be explicitly introduced{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+to precisely keep track of the phase string effect. Then, with the Marshall
+sign basis FORMULA  [cf, Eq. (REF )] being changed
+to FORMULA , the new
+ground-state wave function FORMULA  in FORMULA  should become more
+or less “conventional” as the singular
+phase string effect is now sorted out into FORMULA .
+The FORMULA -FORMULA  Hamiltonian in this new representation, known as the phase
+string formalism,{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} is expected to be perturbatively treatable as
+the singular part of the phase string effect is “gauged
+away” by the unitary transformation. In the following, we
+shall present such an exact reformulation of the FORMULA -FORMULA  Hamiltonian at
+arbitrary doping.
+
+Phase string formalism
+The phase string formalism is equivalent to “bosonizing” the electron operator as follows{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+FORMULA 
+where “holon” FORMULA 
+and “spinon” FORMULA  operators are
+both bosonic fields, satisfying the constraint
+FORMULA 
+The nonlocal phase string factor FORMULA  in Eq. (REF ) is defined by
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+in which FORMULA  and FORMULA  are spinon and holon number
+operators respectively, at site FORMULA  with FORMULA  a complex
+coordinate on the lattice.
+It is easily verified that the fermionic statistics of FORMULA  is
+automatically ensured by FORMULA , in which the factor
+FORMULA  (FORMULA  is the total holon number operator)
+guarantees anticommutation relations between opposite spins, and the factor FORMULA  (for FORMULA  even/odd) is a staggered factor added for
+convenience. Furthermore, the equality (REF ) replaces the original
+no double occupancy constraint (REF ) imposed on the electron
+operator. Therefore, this is an exact representation of the electron
+operator in the Hilbert space constrained by the no double occupancy
+condition.
+Nontrivial gauge structure
+Rewriting the FORMULA  model using this new electron decomposition (REF ), one gets{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+FORMULA 
+and
+FORMULA 
+with
+FORMULA 
+Here the three link fields defined on the nn sites are given by
+FORMULA 
+FORMULA 
+and
+FORMULA 
+The strengths of these link fields can be obtained as follows
+FORMULA 
+and
+FORMULA 
+for an arbitrary closed loop FORMULA  such that the fluxes enclosed, FORMULA  FORMULA  and FORMULA , are determined by the number
+of spinons and holons respectively, in the region FORMULA  enclosed by
+the loop FORMULA . Furthermore, the phase FORMULA  describes a constant
+flux with a strength FORMULA  per plaquette:
+FORMULA 
+The unique feature in the above phase string formalism of the FORMULA  model is
+the emergence of three link fields: FORMULA , FORMULA  and FORMULA . Without them, there should be no nontrivial sign problem
+in the Hamiltonian, because FORMULA  and FORMULA  are both bosonic fields. Namely the
+matrix elements of FORMULA  would be real and negative-definite in the
+occupation number representation of FORMULA  and FORMULA . Consequently, the ground
+state expanded in terms of these bosonic fields would have real and positive
+coefficients, which is the case at half-filling as discussed above and the
+one-dimensional (1D) case to be discussed below.
+It is easy to see that the Hamiltonian FORMULA  is invariant under U(1)FORMULA U(1) gauge transformations:
+FORMULA 
+and
+FORMULA 
+Thus FORMULA  and FORMULA  are gauge fields, seen by holons and
+spinons respectively, as the latter carry their gauge charges according to (REF ) and (REF ).
+Here FORMULA  and FORMULA  are not independent gauge fields with
+their own dynamics. Rather they are directly connected to the matter fields
+as a pair of mutual topological gauge fields. The term
+“mutual” refers to the fact that FORMULA  describes quantized FORMULA  fluxoids attached to the spinons,
+coupled to the holons. Conversely, FORMULA  describes quantized FORMULA 
+fluxoids bound to the holons, coupled to the spinons.
+By the construction, the phase string formalism is defined in a Hilbert
+space where the total FORMULA  is an eigen operator.{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} So the
+total numbers of FORMULA  and FORMULA  spinons are conserved
+respectively, such that the topological gauge field FORMULA  behaves
+smoothly as defined in (REF ). It is also consistent with the gauge
+invariance under (REF ). Different FORMULA  states can be connected by
+the spin flip operators, defined in the phase-string representation as
+FORMULA 
+(a factor FORMULA  has been dropped for simplicity) and FORMULA , and FORMULA . These definitions follow from (REF ). The nonlocal phase FORMULA  in (REF ) will play a
+crucial role in restoring the spin rotational symmetry.
+Finally, the superconducting order parameter can be expressed in the phase
+string representation as follows
+FORMULA 
+with the amplitude operator given by
+FORMULA 
+(again the factor FORMULA  is omitted).
+
+One-dimensional case
+In the 1D case, one may define
+FORMULA 
+such that
+FORMULA 
+Thus there is no sign problem in the phase string representation of the FORMULA -FORMULA  model. It implies that the Hamiltonian may be treated within a
+“mean field” approximation.{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+Namely the holons and spinons defined in the phase string representation of
+the FORMULA -FORMULA  model may be regarded as the true “free” elementary excitations.
+However, the correlation functions will be highly nontrivial because of the
+singular phase string effect, which is now precisely kept in the phase
+factor of the decomposition (REF ) with{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}}
+FORMULA 
+in which
+FORMULA 
+and
+FORMULA 
+Thus, to create a hole by FORMULA  according to Eq. (REF ), means the creation of a pair of holon and spinon excitations together
+with a nonlocal phase shift. Denoting the average hole concentration
+FORMULA , the phase string factor in
+Eq. (REF ) can be rewritten as
+FORMULA 
+where
+FORMULA 
+is the Fermi momentum (FORMULA  is the lattice constant) and
+FORMULA 
+with FORMULA . While the leading term
+of the phase string factor reproduces the correct Fermi momentum FORMULA  for the electron system, the fluctuations in FORMULA  will
+be responsible for reproducing{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} the correct Luttinger
+liquid behavior known from the large-FORMULA  Hubbard model.
+The important connection between the phase string effect and the Luttinger
+liquid in 1D has been first established previously in a path-integral study{{cite:873383e5-0244-4c16-a124-8011c69016aa}} of the large-FORMULA  Hubbard model.
+
+Two-dimensional case
+At half-filling, FORMULA  has no contribution due to the no double occupancy
+constraint, and under a proper gauge choice one may set FORMULA  in FORMULA . In this limit, there is no nontrivial sign problem in the 2D
+Hamiltonian which is fully bosonized. This is the case previously
+discussed in Sec. 2.1, where a precise bosonic RVB description of spin
+correlations in all ranges of length scale is available, which can serve a
+very good starting point for the doped case in 2D.
+In contrast to the full bosonization case at half-filling, as well as in the
+1D case, the nontrivial phase structure emerges at finite doping in 2D,
+which are represented by the link fields, FORMULA , FORMULA ,
+and FORMULA  These link phases can no longer be “gauged away” here and they completely capture the
+essential sign problem (i.e., the phase string effect) of the doped FORMULA -FORMULA  model. These gauge fields are generally well controlled in the
+regimes of our interest: FORMULA  is a non-dynamic phase describing
+a constant FORMULA  flux per plaquette; FORMULA  is cancelled when spinons
+are RVB paired at low-temperature phases; FORMULA  remains weak at small
+doping or well behaves if the holons are coherent. Therefore, these gauge
+fields will be well tractable at least in low doping and low temperature
+regimes.
+It is noted that the bosonization decomposition (REF ) was
+actually first obtained{{cite:299bf369-2748-4eac-9277-b6affef46b7a}} based on optimizing a slave-boson
+mean-field state using a “flux binding” scheme. Similar procedure has been also employed recently to get essentially
+the same bosonization decomposition in Ref. {{cite:ca34af01-53b9-4515-a1e6-bd75e02b6832}}. This bosonization
+decomposition may be also regarded as the mutual-semion scheme as
+described in Ref. {{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} without explicitly breaking the
+time-reversal symmetry. It is thus clearly distinguished{{cite:299bf369-2748-4eac-9277-b6affef46b7a}} from an
+earlier flux-binding construction leading to a slave-semion type of
+formulation,{{cite:3f51872d-99f6-4f58-8d55-3fa4872167b9}} or a variant of it in a more complicated semionic
+representation proposed{{cite:ee88d073-a889-4c7c-9a10-321cc8b0dda5}} in literature.
+
+Wave function structure
+In the above, we have discussed how the intrinsic phase
+structure of the FORMULA -FORMULA  model can be revealed in the exact phase string
+formalism. In the following we further examine the corresponding wave
+function structure.
+A wave function FORMULA  in the electron FORMULA -operator representation can
+be related to FORMULA  in the full bosonic FORMULA  and FORMULA  representation of
+the phase string formalism by{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+where the FORMULA  spin electron sites, FORMULA  and the FORMULA  spin sites, FORMULA  and FORMULA 
+denote the empty sites that are not independent from FORMULA  and FORMULA  under the no double occupancy constraint. Here and below, we use FORMULA  to specify an FORMULA  spin, FORMULA  a FORMULA  spin, and FORMULA , a
+holon, where the subscripts FORMULA , FORMULA , and FORMULA  label the sequences of the FORMULA  spins, FORMULA  spins, and holons, respectively.
+According to Eq. (REF ), the FORMULA  factor is given by{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+in which the coefficient FORMULA  is given by
+FORMULA 
+with FORMULA  and FORMULA  running through all lattice sites such that FORMULA 
+is a constant.
+It is easily seen that the Jastrow-like factors in FORMULA 
+automatically enforce the single occupancy constraint: FORMULA 
+vanishes if two spinons (or holons) occupy the same site, or if a holon and
+a spinon occupy the same site. The factor FORMULA  further explicitly
+captures the fermionic statistics of the electrons. Therefore, the no double
+occupancy constraint, which has been considered as one of the most important
+effects but difficult to tackle with in the FORMULA -FORMULA  model, is no longer
+important in the phase string representation FORMULA , since FORMULA 
+in (REF ) naturally plays the role of a projection operator. This
+may be understood in the following way. In the phase string representation,
+the effect of FORMULA  in the original FORMULA , is transformed into
+the topological gauge fieldsFORMULA  FORMULA  and FORMULA  in the
+Hamiltonians, (REF ) and (REF ), which describe spinons and holons
+as mutual vortices, as perceived by each other. This clearly implies a
+mutual repulsion between two species, since a spinon cannot stay at
+the center of its vortex (where a holon is located), and vice versa. Thus the constraint that a holon and a spinon cannot occupy the same site
+is now reflected in the interactions present in the new Hamiltonian,
+and the condition (REF ) is not needed as an extra condition to
+enforce. Note that the constraint (REF ) also requires the hard core
+conditions among the holons or spinons themselves. But since both holon and
+spinon fields are bosonic fields, local hard core exclusions usually do not
+involve the sign change of the wave function. Hence, in the phase string
+representation, the local constraint (REF ) is neither crucial nor
+singular, as far as low energy physics is concerned.
+Finally, the singular phase string effect is captured by the factor FORMULA  in FORMULA . Firstly the sign factor FORMULA  can be identified with the Marshall sign, and FORMULA  denotes the total number of FORMULA  spins in sublattice FORMULA  (note
+that it is equivalent to the previous definition using FORMULA  by a trivial global sign factor). Then the phase factor FORMULA 
+will describe the phase string effect – disordered Marshall sign. Note that
+it is asymmetric with regard to FORMULA  and FORMULA  spins: it only
+involves an FORMULA  spin complex coordinate FORMULA  and a
+holon coordinate FORMULA , and then will acquire the following
+additional phase as a hole moves through a closed path FORMULA , FORMULA , with the displaced spins
+being restored to the original configuration by the exchange term FORMULA .{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+
+Phase String Model: Effective Theory
+The exact phase-string formalism of the FORMULA -FORMULA  Hamiltonian provides a new
+starting point to construct an effective theory which can be smoothly
+connected to the better-understood half-filling limit. The gauge
+structure in the phase-string formalism is a very useful guide for such a
+construction as it generally cannot be spontaneously broken according to the
+Elitzur's theorem.
+Phase string model
+Based on the FORMULA -FORMULA  Hamiltonian in the phase string formalism, a minimal effective model may be written down as follows{{cite:dea5ea1d-ed32-462d-8af9-34b8e74b79dd}}, {{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+with
+FORMULA 
+This model remains invariant under the gauge transformations, (REF )
+and (REF ), and is thus a gauge model, known as the phase string
+model.
+The U(1)FORMULA U(1) gauge invariance here corresponds to
+the charge and spin FORMULA  conservations of the holons and spinons,
+respectively, which ensures the correct quantum numbers in such a
+spin-charge separation description. This is in contrast to the slave-boson
+U(1) gauge theory{{cite:7f6ceb1b-b4ce-4533-92f7-2fa2f5a8a5c5}} where both holon and spinon carry
+partial charges. In Eq. (REF ), an external electromagnetic gauge
+potential FORMULA  is explicitly introduced which couples to the holon
+field carrying an electric charge FORMULA  By contrast, the spinon field does
+not carry the electric charge and thus describes a charge neutral and spin-FORMULA  object, which can directly couple to the external magnetic field FORMULA 
+only by a Zeeman term
+FORMULA 
+Note that, without loss of generality, the magnetic field will be always
+added along the spin quantization FORMULA  axis due to the requirement of the
+FORMULA  conservation in the phase string formulation.
+The global conditions of
+FORMULA 
+can be added to FORMULA  and FORMULA  by the Lagrangian multipliers, FORMULA  and FORMULA  respectively. Due to the relaxation of the local no
+double occupancy constraint, to avoid the short-distance uncertainty at each
+center of a FORMULA -flux tube, on the right-hand sides of Eqs. (REF )
+and (REF ), the distribution of a holon or spinon at site FORMULA  should
+be understood as being slightly smeared within a small area centered
+at FORMULA .
+Based on the spin operators defined in the phase string representation like
+Eq. (REF ), It is straightforward to verify the spin rotational
+invariance of the phase string model
+FORMULA 
+where FORMULA  by noting that FORMULA  (using the fact that the core of each
+flux-tube being slightly smeared within a small area as mentioned above).
+The time-reversal symmetry at FORMULA  can be also easily verified by
+noting that FORMULA , FORMULA , FORMULA , and FORMULA 
+according to their definitions, under the time-reversal transformation.
+
+Topological gauge structure and mutual Chern-Simons description
+The phase string model is uniquely featured by the two topological gauge
+fields, FORMULA  and FORMULA . According to Eqs. (REF ) and (REF ), the holons in (REF ) feel the presence of the spinons as
+quantized FORMULA  fluxoids through FORMULA , which reflects the nonlocal
+frustrations of the spin background on the kinetic energy of the charge
+degrees of freedom. Vice versa the spinons also perceive the doped
+holes as FORMULA  flux quanta through FORMULA  which represents the
+dynamic frustrations of the doped holes on the spin degrees of freedom.
+It is instructive to reformulate the above phase string model in the
+following path-integral formalism{{cite:0d864396-bee8-45de-929d-1c55e1cfc867}}
+FORMULA 
+in which the Euclidean Lagrangian of the phase string model is given by
+FORMULA 
+where
+FORMULA 
+For simplicity, two chemical potential terms enforcing the global
+constraints (REF ) and () are not included in FORMULA .
+In such a Lagrangian formalism, two matter fields, bosonic spinons and
+holons, are minimally coupled to the FORMULA  gauge fields, FORMULA  and
+FORMULA , whose gauge structure is decided by the mutual-Chern-Simons term FORMULA  in (), in replacement of the original
+topological constraints (REF ) and (REF ). So the phase string
+theory is also known as the mutual Chern-Simons theory. The time-reversal,
+parity, and spin rotational symmetries can be explicitly shown to be
+preserved.{{cite:0d864396-bee8-45de-929d-1c55e1cfc867}}
+Note that the original constraints (REF ) and (REF ) can be
+obtained by the equations of motion for the temporal components FORMULA 
+and FORMULA :
+FORMULA 
+with FORMULA  and FORMULA  Here the indices FORMULA  and FORMULA  are used to denote the spatial components (FORMULA , FORMULA ),
+and the lattice gauge fields FORMULA  (FORMULA ) and FORMULA  (FORMULA ). The lattice sites FORMULA  and FORMULA  refer to two sets of “dual” lattices where the holons and spinons live on,
+respectively, which is a technical way to “regulate” the theory at the short-distance, which is not
+expected to change the low-energy physics.{{cite:0d864396-bee8-45de-929d-1c55e1cfc867}}
+
+Bosonic RVB order parameter
+To justify the above phase string model, let us first consider the
+superexchange term FORMULA  in Eq. (REF ).
+FORMULA  is expressed in terms of the RVB operator FORMULA 
+which is invariant under the gauge transformation (REF ). It is
+natural to define the bosonic RVB order parameter{{cite:dea5ea1d-ed32-462d-8af9-34b8e74b79dd}}
+FORMULA 
+for nn sites. At half filling, FORMULA  reduces to the well-known
+Schwinger-boson mean-field order parameter{{cite:2737c8e0-5c2b-4139-986e-054e74ab16cb}} FORMULA 
+as FORMULA  FORMULA . Since FORMULA  up to a temperature FORMULA  at half-filling, FORMULA  defined in Eq. (REF ) is expected to survive and persist into a finite doping and lower
+temperature regime.
+It is interesting to distinguish the Schwinger-boson order parameter and the
+bosonic RVB order parameter at finite doping. By using the
+aforementioned unitary transformation{{cite:cc982dff-b8b5-4558-854d-6dd32effc89f}} FORMULA , the Schwinger-boson order parameter can be expressed
+in the phase string formalism as
+FORMULA 
+with FORMULA . So FORMULA  and FORMULA  differ by a phase factor which is composed of FORMULA  vortices
+with the cores located at the hole sites, FORMULA 's, with FORMULA . Namely,
+each doped hole will induce a FORMULA  vortex in the Schwinger-boson order
+parameter. The general topological vortex excitation in the Schwinger-boson
+mean-field state has been previously discussed by Ng.{{cite:8b90660c-fa18-4fba-b272-e34065657f76}} The case that
+a doped hole is bound to the vortex core has been discussed as one of
+several possibilities there. It turns out that since the bare hole
+will induce a highly frustrated phase string effect, its binding with a
+topological vortex will be stabilized, as the composite object can
+effectively erase the singular effect and is thus in favor of the
+kinetic energy. Such a composite object is nothing but the bosonic holon in
+the present phase string formalism. Generally the bosonic RVB state with FORMULA  means that the original Schwinger-boson order parameter
+is phase disordered with FORMULA  according to Eq. (REF ), unless the holons are localized which corresponds to a
+low-doping AF state to be discussed in Sec. 4.5.
+Based on Eq. (REF ), a “mean-field” version of the superexchange Hamiltonian may
+be rewritten as{{cite:dea5ea1d-ed32-462d-8af9-34b8e74b79dd}}
+FORMULA 
+where
+FORMULA 
+where FORMULA  is a renormalized superexchange coupling to
+be further specified below. The Lagrangian multiplier FORMULA  is
+introduced to implement the condition ().
+In the limit where the gauge field FORMULA  can be treated as a static
+field, e.g., in the holon condensed regime, Eq. (REF ) can be
+straightforwardly diagonalized by a Bogoliubov transformation{{cite:dea5ea1d-ed32-462d-8af9-34b8e74b79dd}}
+FORMULA 
+as FORMULA , where FORMULA  FORMULA  and FORMULA  The Lagrangian multiplier FORMULA  is determined by
+enforcing FORMULA . The wave function FORMULA 
+and the spectrum FORMULA  are determined by the following eigen equation,
+FORMULA 
+Self-consistently, an another gauge-invariant mean-field order parameter
+FORMULA 
+in this mean-field scheme.
+FIGURE 
+The corresponding ground state is given by{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+where the RVB amplitude FORMULA  It can be further shown{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}} that FORMULA  only if FORMULA  different sublattices, i.e., the RVB amplitude FORMULA  only connects FORMULA  and FORMULA  spins on opposite sublattices. The calculated FORMULA  is plotted in Fig. REF  for FORMULA  and FORMULA  belong to
+different sublattices, which shows that while FORMULA , for FORMULA  at
+half-filling, its absolute value becomes exponentially decay at finite
+doping:{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+with a characteristic length scale which is to be identified as the spin
+correlation length later
+FORMULA 
+where FORMULA  is the typical “cyclotron” radius decided by Eq. (REF ).
+At half-filling, the ground state FORMULA 
+qualitatively describes the AF correlations fairly well.{{cite:2737c8e0-5c2b-4139-986e-054e74ab16cb}} In
+particular, one may define
+FORMULA 
+where FORMULA  denotes the projection to a single occupancy with each
+lattice site occupied by one spin. FORMULA  is equivalent to
+Eq. (REF ) with FORMULA  shown in Fig. REF . Based on Eq. (REF ), a numerical calculation{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}} gives rise to FORMULA  and a
+staggered magnetization FORMULA  with the maximum sample size FORMULA . These results are essentially the same as the best variational result{{cite:76fb2caa-ec38-4edb-ac6d-5ce51d2da34f}} and also compare extremely well with exact numerical results of FORMULA 
+and FORMULA .
+
+Ground-state wave function
+At finite doping, it is easy to see that a simple ansatz for the full ground
+state: FORMULA  does not work here because Eq. (REF ) would lead
+to vanishing FORMULA .
+According to FORMULA  in Eq. (REF ), the hopping of a holon should be
+always accompanied by a spinon “backflow” or vice versa. But this is not properly “registered” in utilizing Eq. (REF ). It implies that
+the correct way to add holes in the ground state should be{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}} FORMULA  or more precisely
+FORMULA 
+where FORMULA  describes the bosonic holon wave function, while the
+“spinon backflow” operator is given by
+FORMULA 
+where the summation over the spin index FORMULA  is under the
+constraint FORMULA  (note that FORMULA  in FORMULA . Here FORMULA  is understood as describing the
+“half-filling” spin background even at
+finite doping. Obviously the no double occupancy constraint is automatically
+satisfied by FORMULA  defined in Eq. (REF ) at arbitrary
+doping.
+Then, in accordance with the gauge invariance under (REF ) and (REF ), in minimizing FORMULA , FORMULA  will be determined as the ground state of the effective
+hopping Hamiltonian FORMULA  in Eq. (REF ), while the renormalized
+hopping integral FORMULA  is given by
+FORMULA 
+In the dilute hole limit where the correlations between the
+“backflow spinons” are negligible, FORMULA  may be
+reduced to a product of the single-spinon wave function FORMULA 
+which can be variationally determined by optimizing FORMULA  as the maximal
+eigen value of the following eigen equation{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+with FORMULA  FORMULA 
+Numerically FORMULA  thus determined is weakly doping dependent with FORMULA .{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+Self-consistently let us go back to check the superexchange energy since FORMULA  is now modified by FORMULA  for the
+spin degrees of freedom:
+FORMULA 
+Note that FORMULA . And FORMULA 
+with FORMULA  (FORMULA ), such that
+FORMULA 
+at small doping. Here FORMULA  has been empirically determined{{cite:f048ab0b-ac29-4044-9ed4-38a1c6c0d538}} by FORMULA 
+by comparing with the experimental measurements. The mean-field treatment of
+the last line in Eq. (REF ) leads to the effective spinon Hamiltonian ().
+Generally speaking, in order to minimize FORMULA  the “backflow spinons” in FORMULA  are better paired up{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+with FORMULA  FORMULA , where FORMULA  denotes the pairing
+amplitude between the two “backflow
+spinons”, which is no longer restricted to the pairing
+between two opposite sublattices. The paring FORMULA  is expected
+to reduce the hopping integral FORMULA  and enhance FORMULA  but
+the detailed values of them will not affect the general properties of the
+phase string model discussed below.
+
+PHYSICAL CONSEQUENCES
+The minimal phase string model is composed of Eqs. (REF ) and (). In the following we shall see that such a simple model will possess a
+rich phase diagram unifying the AF state, the SC phase, the pseudogap regime
+including both the upper and lower pseudogap phases, as well as a
+high-temperature “normal state”. The
+richness of this model can be attributed to the unconventional competition
+between the charge and spin degrees of freedom via the mutual Chern-Simons
+gauge structure.
+Superconducting (SC) phase
+The SC state is a simple self-consistent solution of the phase string model
+at finite doping.{{cite:dea5ea1d-ed32-462d-8af9-34b8e74b79dd}} First, the bosonic holons will experience a
+Bose condensation at FORMULA  if FORMULA  in FORMULA . Once the
+holons are condensed, the gauge field FORMULA  will reduce to a
+non-dynamic FORMULA  to describe a uniform flux of strength
+FORMULA 
+per plaquette. Then, according to FORMULA , a gap will open up in the spinon
+spectrum, such that the fluctuations of FORMULA  get gapped, which in
+return self-consistently ensures the holon condensation in FORMULA .
+With the holon condensation FORMULA , the amplitude of the SC order parameter, Eq. (REF ), becomes finite:
+FORMULA 
+and in the ground state, the phase coherence
+FORMULA 
+can be realized because of a finite-range RVB pairing of spinons with a
+finite excitation energy gap (cf. Sec. 4.1.6.). Then the
+superconducting order parameter defined in Eq. (REF ) gains a finite
+mean value
+FORMULA 
+Note that the phase factor FORMULA  will also decide the d-wave symmetry of FORMULA  (FORMULA  is s-wave-like in general).{{cite:772c861f-123a-4db0-8044-7574c256eb75}}
+Ground-state wave function
+The holon condensation as the solution of Eq. (REF ) at FORMULA  may be
+approximately treated as an ideal one with
+FORMULA 
+Then the corresponding ground state of Eqs. (REF ) and (REF ) is
+simplified to{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+in which FORMULA  denotes a projection onto a FORMULA -hole state and
+FORMULA 
+Equation (REF ) implies FORMULA 
+Then, in terms of Eqs. (REF ) and (REF ){{cite:13125b62-aabd-416f-a9c7-549995afc8e6}}
+FORMULA 
+where FORMULA  is
+a s-wave constant{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}} based on Eq. (REF ). Thus, it confirms
+again that the SC off-diagonal-long-range-order (ODLRO) [Eq. (REF )] is
+established once the phase coherence (REF ) is realized in the ground
+state.
+
+Generalized Ginzburg-Landau (GL) equation
+In the SC state, one may treat the charge condensate in terms of a slowly
+varying continuous field, FORMULA . Note that in the continuum limit Eq. (REF ) can
+be rewritten as
+FORMULA 
+where FORMULA  FORMULA  and FORMULA  is the continuum
+version of FORMULA  given by
+FORMULA 
+with FORMULA .
+By noting that the holons here are hard-core bosons with a repulsive
+short-range interaction, one may generally write down the corresponding GL
+free energy FORMULA  FORMULA  where{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}
+FORMULA 
+with FORMULA  denoting the “normal
+state” free energy density.  And the “supercurrent” density is given by
+FORMULA 
+These equations are similar to an ordinary GL theory describing a charge FORMULA 
+Bose condensate coupled to an external electromagnetic field FORMULA , except that FORMULA  is further coupled to the spin degrees of
+freedom through the vector potential FORMULA . It means that each
+isolated spin (spinon) will register as a FORMULA  flux tube in Eq. (REF ) to exert frustration effect on the charge condensate. Thus, such a
+generalized GL must be coupled to the spinon Hamiltonian FORMULA  to
+govern the basic physics in the SC state.
+FIGURE 
+FIGURE 
+FIGURE 
+
+Non-BCS-type elementary excitation: FORMULA  spin excitation
+As outlined in Sec. 3.3, the spinon Hamiltonian FORMULA  can be diagonalized
+under the condition (REF ). Figure REF  shows the
+dispersive behavior of the FORMULA  spin excitation based on the peak position
+of the spin dynamic susceptibility FORMULA  at different doping concentrations, which clearly depicts how the spin
+excitation evolves from the spin-wave picture at half-filling (dotted curve)
+to the non-propagating modes (solid bars) in the SC state.{{cite:8773ecd2-f36d-4cf2-9bc4-c0b1e9ea7215}}
+A clear spin gap is opened up at FORMULA  in the SC state with the gapless
+spin wave replaced by a resonancelike mode (Fig. REF ) around the AF
+wave vector FORMULA  whose doping dependence
+is also shown in the inset of the left panel in Fig. REF . Such a
+resonance mode has a finite width in momentum which implies a finite spin
+correlation length FORMULA  [Eq. (REF )] as shown in Fig. REF .
+Furthermore, the spatial charge inhomogeneity can affect the width of the
+resonance peak via FORMULA  as shown{{cite:8773ecd2-f36d-4cf2-9bc4-c0b1e9ea7215}} in the right panel of Fig. REF , in which the inset illustrate the local spin susceptibility FORMULA 
+FORMULA . Finally it is noted that the
+envelop of the high energy FORMULA  excitation still roughly tracks the spin
+wave with a softened upper bound energy FORMULA , which
+decreases monotonically with doping [Fig. REF ].
+
+Non-BCS-type topological excitation: Spinon vortex
+In the above we have examined the FORMULA  spin excitation which is composed of
+a pair of FORMULA  spinons according to Eq. (REF ). However, a single FORMULA  spinon excitation will be “confined” in the SC state, i.e., will not appear in
+the finite energy spectrum. In this sense, the above FORMULA  excitations are
+true elementary ones, which do not fractionalize. We shall elaborate this as
+follows.
+It is convenient to rewrite the nn SC order parameter as the mean value of (REF ) in the continuum version (without considering the d-wave symmetry
+of the relative coordinate for simplicity):{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}
+FORMULA 
+where the amplitude
+FORMULA 
+and the phase
+FORMULA 
+FIGURE 
+From Eq. (REF ), it is clear that FORMULA  describes FORMULA  phase
+vortices whose cores are centered at spinons: i.e., FORMULA  or FORMULA  each time as the coordinate FORMULA 
+continuously winds around a spinon once according to Eq. (REF ). In other words, a spinon is always associated with a FORMULA  vortex in FORMULA , known as a spinon-vortex composite{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}, {{cite:3d865821-571b-4288-bf45-ef17381cc6a3}} which is schematically illustrated in Fig. REF (a). A
+spinon-vortex and -antivortex pair of a finite range of separation will
+result in the cancellation of the phase FORMULA  at a large length scale
+as shown in Fig. REF (b).
+By writing
+FORMULA 
+a London equation for the supercurrent based on Eq. (REF ) is given by{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}
+FORMULA 
+Since each unpaired spinon will contribute to FORMULA  in terms Eq. (REF ) if the loop FORMULA 
+encloses such a spinon, a minimal supercurrent vortex centered around
+it is then given by
+FORMULA 
+at FORMULA  according to Eq. (REF ).
+For a single spinon vortex centered at the origin, we have FORMULA , for distances FORMULA , the size of the
+vortex core. Using FORMULA ,
+one can estimate the energy cost of a spinon-induced vortex current based on
+Eq. (REF ) by{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}
+FORMULA 
+where FORMULA  is the size of the sample. Thus one concludes that a single FORMULA 
+spinon excitation is forbidden owing to a logarithmically diverging energy.{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}
+
+Topological defects: Flux quantization and Zn impurity
+The phase string model predicts that an isolated spinon excitation is a
+topological vortex which cannot live alone in the bulk of the SC state. So
+there is no electron fractionalization at low energy and long distance.
+However, in the presence of two kinds of special defects in the
+superconductor, a single spinon excitation can be naturally induced as a
+unique prediction of the model.
+Flux quantization
+In the presence of magnetic field, using Eq. (REF ) we get
+FORMULA 
+where the integral is over a closed loop FORMULA  and FORMULA , an integer. Now
+suppose that the integration is carried over a loop that is far away from
+the magnetic vortex core, where FORMULA . Then one arrives at
+FORMULA 
+If FORMULA , the magnetic flux will be quantized at FORMULA  in
+units of FORMULA ; i.e., the minimal flux quantum in this case is FORMULA , as expected for a charge FORMULA  Bose system. However,
+the presence of FORMULA  changes the quantization condition
+radically. Suppose there is one excited spinon trapped in the core of a
+magnetic fluxoid [Fig. REF (a)]. Then, from Eq. (REF ), we obtain
+the minimal flux quantization condition{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}}
+FORMULA 
+which is precisely the quantization condition at FORMULA . As the holons do not distinguish between internal
+(fictitious) and external (magnetic) flux in (REF ), they still perceive
+a total flux quantized at FORMULA  [see Fig. REF (a)], even though
+the true magnetic flux quantum is FORMULA .
+FIGURE 
+Therefore, an excited spinon or free FORMULA  moment will be
+“nucleated” inside the core of a magnetic
+vortex, which plays a crucial role to ensure the flux quantization at FORMULA .{{cite:1f37420f-3bf2-480a-b789-e018dd1126bf}} But normally the Kondo screening effect due to the
+coupling to the background quasiparticles may complicate the analysis of
+possible experimental behavior of such a free moment at very low
+temperatures.
+
+Zn impurity
+In the FORMULA -FORMULA  model, a zinc impurity is treated as an empty site
+with excluding the occupation of any electrons. If one reformulates the
+model, with the defect, in the phase string representation outlined in Secs.
+2 and 3, it is found{{cite:0f839592-22b3-4a92-ba88-77b1847b6e1e}} that such a “vacancy” site will behave like a topological defect which
+induces a vortex current in the resulting phase string model, as shown in
+Fig. REF (a). A heuristic understanding is to imagine exciting a
+spinon in the pure system at a given site and then freezing its spin such
+that the superexchange coupling with the surrounding spins is effectively
+cutoff. Nor a holon can hop to this site such that the effect of a zinc
+impurity is effectively created, which is nothing but a vortex in Fig. REF (a).
+Now it is natural to see why a zinc impurity will generally induce a spin-FORMULA  around it in the SC state: Such a Zn-vortex would cost a
+logarithmically divergent energy and thus must be “screened” by nucleating a neutral FORMULA  spinon which
+carries an antivortex and is bound to the latter, as shown in Fig. REF (b).
+FIGURE 
+Once the topological origin of the FORMULA  moment around a zinc impurity is
+established, a simple effective description of the system with one zinc
+impurity can be developed{{cite:0f839592-22b3-4a92-ba88-77b1847b6e1e}} based on a “sudden
+approximation” using the phase string model. The physical
+consequences, as clearly illustrated in Figs. REF , REF , and REF , are that the FORMULA  free moment induced by the zinc
+impurity distributes in an AF staggered pattern around the “vacancy” site.
+FIGURE 
+FIGURE 
+FIGURE 
+
+Superconducting transition
+We have seen that a single excited spinon is a topological vortex. The
+interaction between spinon-vortices can be obtained by substituting Eq. (REF ) into Eq. (REF ) and carrying out the area integration{{cite:3d865821-571b-4288-bf45-ef17381cc6a3}}
+FORMULA 
+in which FORMULA  refer to the signs of vorticities carried by
+spinons and
+FORMULA 
+with FORMULA . Eq. (REF ) is similar to the XY model, except that FORMULA  introduces FORMULA  instead FORMULA  vortices and the vortex
+cores are attached to spinons which have their own dynamics as governed by FORMULA  with an intrinsic quantum length scale FORMULA .
+These spinon-vortex composites form vortex-antivortex bound pairs at low
+temperature [cf. Fig. REF (b)]. Such a binding directly results
+in a phase coherence
+FORMULA 
+of the SC order parameter (REF ). A detailed renormalization group
+analysis leads to the following FORMULA  relation{{cite:823b692b-903e-4a7a-9519-0aa961aad723}}
+FORMULA 
+which connects the phase coherence temperature with the spin resonancelike
+energy FORMULA  (cf. Fig. REF ).
+The superconducting phase coherence (REF ) implies that spinons are
+confined in the bulk where a single spinon-vortex excitation costs a
+logarithmically divergent energy. In this case, a finite energy elementary
+excitation is an FORMULA  spin excitation composed of pairs of spinon-vortices,
+whose minimal excitation corresponds to the spin resonancelike mode with FORMULA  with FORMULA  denoting
+the lowest level in the spinon spectrum in terms of FORMULA .
+
+Emergence of the nodal quasiparticle
+So far we have surveyed some novel properties of the SC state, which
+generally are non-BCS like. They involve either “high
+energy” (e.g., spin excitations above the spin gap FORMULA ) or short-distance (e.g., the vortex core at a length scale FORMULA ) physics. However, in a sufficiently long wavelength and low
+energy regime, a typical d-wave BCS superconductor will eventually emerge,{{cite:44a3e27b-0ea0-4900-afb2-e2dab6999538}} where the physical properties will be essentially dominated by
+the conventional nodal quasiparticle excitations.
+A quasiparticle excitation is created by the electron FORMULA -operator.{{cite:44a3e27b-0ea0-4900-afb2-e2dab6999538}} According to the definition (REF ), it is composed of a pair
+of holon and spinon together with a phase vortex factor FORMULA 
+as a “bound state”. Such a low-lying
+excitation is a “collective mode”,{{cite:44a3e27b-0ea0-4900-afb2-e2dab6999538}} which will be independent of the “mean-field” phase string model FORMULA  below
+the spinon gap FORMULA . Besides the spinon gap in FORMULA , the
+gapless “phonon mode” for the condensed
+holons in FORMULA  will be turned into the plasma mode by coupling to the
+external electromagnetic field — the Anderson-Higgs mechanism. So a
+low-lying quasiparticle should remain coherent since there are neither other
+low-lying states for it to decay into nor to scatter with.
+To further see how a quasiparticle is compatible with FORMULA ,
+one may examine the behavior of its three components. It has been seen that
+an isolated spinon excitation will cost a logarithmically divergent energy
+via the gauge field FORMULA . Similarly a single localized holon excited
+from the condensate will also create a divergent energy due to the global
+spinon response via the gauge field FORMULA  in FORMULA .{{cite:772c861f-123a-4db0-8044-7574c256eb75}}
+Furthermore, a divergent energy is also associated with the creation of
+vortices by FORMULA .{{cite:772c861f-123a-4db0-8044-7574c256eb75}} However, as the bound state of
+these three fields, a quasiparticle excitation will no longer invite any
+nonlocal response from FORMULA  neither from the holons nor the
+spinons.{{cite:44a3e27b-0ea0-4900-afb2-e2dab6999538}}, {{cite:772c861f-123a-4db0-8044-7574c256eb75}} In other words, the holon and spinon are confined
+inside a quasiparticle, making it a stable “local” excitation with a finite excitation energy.
+The confining potential is logarithmic.
+The existence of the low-lying quasiparticle excitation may be also
+understood based on the ground state (REF ),{{cite:13125b62-aabd-416f-a9c7-549995afc8e6}} which can be
+considered as the Bose condensation of the bosonic field FORMULA  on the
+RVB background FORMULA  with FORMULA . Then a low-lying excitation may be constructed based
+on FORMULA , with some smooth change
+in the FORMULA . Generally with achieving the phase coherence (REF ),
+one has
+FORMULA 
+with
+FORMULA 
+according to the discussion in Sec. 4.1.1. Therefore, such type of low-lying
+excitations, constructed with a smooth change in FORMULA , can
+always be described in terms of a pair of fermionic electronic
+(quasiparticle) excitations. In particular, due to the d-wave nature of FORMULA , the separation of the quasiparticles along the nodal line
+may be infinitely large. As “collective
+modes”, the quasiparticles are not directly described by FORMULA , consistent with the fact that FORMULA 
+determines FORMULA  and FORMULA  in Eq. (REF ),
+but not the spinon backflow wave function FORMULA  in FORMULA .
+FIGURE 
+FIGURE 
+The effective Hamiltonian governing the motion of a quasiparticle excitation
+can be derived based on the original FORMULA -FORMULA  model.{{cite:44a3e27b-0ea0-4900-afb2-e2dab6999538}}, {{cite:76015c2a-1674-436a-ab48-d43c6f32e98d}} The
+renomalization effect from interacting with the background electrons will be
+represented by the mean-field order parameter FORMULA ,
+etc. An equation of motion description of such a quasiparticle has been
+developed,{{cite:44a3e27b-0ea0-4900-afb2-e2dab6999538}}, {{cite:76015c2a-1674-436a-ab48-d43c6f32e98d}} which shows the low-energy part of the spectral
+function is similar to a sharp d-wave BCS one, but the high-energy part (FORMULA ) is nontrivial as the composite (spin-charge separation) feature
+will show up, where the quasiparticle can decay into a pair of spinon and
+holon locally without costing much from the logarithmic confining
+potential. Figure REF  illustrates the d-wave nodal quasiparticle
+dispersion schematically, where the quasiparticle spectral function has a
+sharp lineshape at
+FORMULA 
+Namely, the spinon gap FORMULA  (or spin gap FORMULA  will provide a
+protection for the coherent quasiparticles in the SC state. Indeed, in the
+half-filling limit, FORMULA  and the single-electron spectral
+function has only an incoherent “composite” part{{cite:117ad3b8-4c09-43cb-8871-12832247466e}} as shown in Fig. REF .
+The more detailed results for the spectral function in the SC state will be
+presented in a forthcoming paper.{{cite:76015c2a-1674-436a-ab48-d43c6f32e98d}}
+
+Lower Pseudogap Phase (LPP) [Spontaneous Vortex Phase (SVP)]
+Due to the composite structure of the SC order parameter FORMULA  [Eq. (REF )], a regime may exist at FORMULA  where FORMULA  but the Cooper pair
+amplitude FORMULA  remains finite. Such a regime is known as the
+spontaneous vortex phase (SVP) or the lower pseudogap phase (LPP) of the
+phase string model.{{cite:3d865821-571b-4288-bf45-ef17381cc6a3}}, {{cite:545d4660-928b-4eb9-be59-bbe03521fe00}}
+The LPP is described by free spinon vortices, which are thermally
+excited and proliferate such that the phase FORMULA  gets disordered.
+Namely, the LPP is an electron “fractionalized” state with the proliferation of unbinding
+spinons, and the main distinction between the SC phase and LPP lies in the
+phase (de)coherence or spinon (de)confinement.
+In the LPP, a finite FORMULA  ensures that the spinon vortices are
+still well defined. In fact, FORMULA  means that the generalized GL
+equations [Sec. 4.1.2.] are also applicable in the LPP. Since the holon
+condensation persists in the LPP, the spin dynamics at FORMULA  should also
+remain qualitatively similar to the SC phase [Sec. 4.1.3.].
+Phase diagram for the LPP
+FIGURE 
+FORMULA  is composed of the RVB pairing FORMULA  and holon
+condensate FORMULA , which disappear at some FORMULA  and FORMULA ,
+respectively. We will see generally FORMULA , as FORMULA  is
+always underpinned by the spin singlet pairing. Thus FORMULA  will represent
+the characteristic temperature for the LPP, whereas FORMULA  defines the
+boundary of the so-called upper pseudogap phase (UPP) to be discussed in the
+next section.
+Note that without FORMULA , the holon system would be a simple 2D
+hard-core boson problem according to Eq. (REF ) or (REF ), with
+the Kosterlitz-Thouless (KT) transition temperature for the holon
+condensation given by FORMULA  as shown in Fig. REF  by a dotted line (with FORMULA ).
+However, the frustration effect of FORMULA  on the holon
+condensation will play a crucial role here. The spinon-vortex density is
+determined by FORMULA . Due to the opening up of a spin gap FORMULA  in the holon condensation phase, FORMULA  is exponentially small for FORMULA . With increasing temperature, FORMULA  will monotonically
+increase until reaching the maximal number FORMULA 
+at FORMULA  where all the RVB pairs break up.
+FIGURE 
+Since each free spinon carries a FORMULA  fluxoid as perceived by the holons,
+the quantum phase coherence among bosonic holons will be violently
+interrupted if on average there is an excited (unpaired) spinon sitting
+between two neighboring holons (as illustrated by Fig. REF ),
+where an exchange between a pair of holons can gain a minus sign in the wave
+function. In other words, the holon condensation must break down when the
+vortex density FORMULA  is comparable to holon density FORMULA , far less
+than FORMULA  at low doping. Such a consideration provides an
+estimate of the upper bound for FORMULA  as{{cite:545d4660-928b-4eb9-be59-bbe03521fe00}}
+FORMULA 
+Equation (REF ) can be also understood based on the “core touching” picture of spontaneously excited spinon
+vortices. Note that the average distance between excited spinons may be
+defined by FORMULA  Since the characteristic core
+size of a spinon vortex is FORMULA , then one expects that the
+“supercurrents” carried by
+spinon-vortices are totally destroyed when the sample is fully packed by the
+“cores” with FORMULA  which also
+results in Eq. (REF ).
+FIGURE 
+The numerical result of the characteristic temperature FORMULA  in terms of
+Eq. (REF ) is plotted in the left panel of Fig. REF  by the
+filled circles. It shows that FORMULA  is nested below FORMULA  at
+low doping and is dramatically reduced from FORMULA  with the
+further increasing of doping due to the frustrations induced by spinon
+excitations, which at larger doping remains nested below FORMULA  of the UPP
+and eventually vanishes at FORMULA  together with FORMULA  (see the
+next section).
+An external magnetic field will break up more RVB pairs through the
+Zeeman effect (REF ) at a given temperature. By considering the
+Zeeman effect on the energy spectrum, FORMULA , the magnetic field dependence of FORMULA  can be
+further obtained from Eq. (REF ) (note that we do not distinguish the
+magnetic field FORMULA  and induction FORMULA  as the magnetization is usually very
+weak here). Or conversely, for each FORMULA  there is a characteristic
+field FORMULA  at which the LPP phase is destroyed [Fig. REF ]. FORMULA (FORMULA  determined this way is shown in the left panel
+of Fig. REF  by the filled squares.
+For comparison, the SC temperature FORMULA  [Eq. (REF )] is shown as the
+dashed curve in the left panel of Fig. REF . Furthermore, in the
+mixed state below FORMULA , by including the Zeeman energy, FORMULA  is
+reduced to FORMULA  such that one can
+estimate FORMULA  by using a simple relation FORMULA  Then in turn one may define FORMULA  which is shown in Fig. REF  by a dashed curve. Note that FORMULA  so defined will vanish at FORMULA  resembling the
+conventional FORMULA  in a BCS superconductor. However, since free spinon
+vortices are generally present at FORMULA  FORMULA , FORMULA  is
+a crossover field which no longer has the same meaning as FORMULA  in a
+conventional BCS superconductor. Roughly speaking, the Abrikosov magnetic
+vortices are expected to be present below FORMULA  where the
+spontaneous spinon-vortices, generated by the Zeeman effect, are still
+loosely paired, whereas the vortex unbinding occurs above FORMULA .
+So FORMULA  defines a crossover between two types of vortex regime.
+The numerical result shows that FORMULA , which results in FORMULA  FORMULA  according to Eq. (REF ).
+
+Nernst effect
+Base on the London-like equation (REF ), using the steady current
+condition
+FORMULA 
+and the electric field FORMULA  in the
+transverse gauge, one finds{{cite:3d865821-571b-4288-bf45-ef17381cc6a3}}
+FORMULA 
+where FORMULA  denotes the density of spinon vortices and antivortices
+with drifting velocity FORMULA  along a direction perpendicular
+to the electric field. As illustrated by Fig. REF (a), the
+electric field and the drifting of vortices and antivortices must be
+balanced according to Eq. (REF ) in order to avoid the system being
+accelerated indefinitely with FORMULA . So the
+applied electric field will drive the vortices and antivortices moving along
+a perpendicular direction with opposite velocities: FORMULA  if the vortices and antivortices are not polarized by the external
+magnetic field, i.e., FORMULA  FORMULA  FORMULA .
+FIGURE 
+The Nernst signal FORMULA  is the electric field measured along the FORMULA -direction when spinon vortices and antivortices are both driven by a
+temperature gradient in the same direction along the FORMULA -direction:
+FORMULA 
+Such a case is shown in Fig. REF (b), where the
+spinon-vortices and -antivortices move along the FORMULA -direction
+with FORMULA . To have a finite FORMULA  in terms of Eq. (REF ), then the vortex density FORMULA  has to
+be polarized by the external magnetic field FORMULA  according to the “neutrality” condition FORMULA  such that
+FORMULA 
+Suppose FORMULA  is the transport entropy carried by a spinon
+vortex and FORMULA  is its viscosity such that the drift velocity FORMULA  can be decided by FORMULA 
+Then one has FORMULA . On the other hand, in the
+absence of the temperature gradient, a charge current can also drive a
+transverse motion of spinon vortices and antivortices along opposite
+directions, i.e., FORMULA  such that an electric
+field is generated along the current direction according to Eq. (REF ),
+leading to a finite resistivity due to the presence of free vortices, which
+is given by
+FORMULA 
+with FORMULA . This formula is familiar in the
+vortex flow regime of a conventional superconductor. Then, by eliminating FORMULA , one obtains{{cite:545d4660-928b-4eb9-be59-bbe03521fe00}}
+FORMULA 
+FIGURE 
+What really makes the Nernst transport unique in the present theory is that
+the transport entropy FORMULA  here is associated with the spin degree of
+freedom due to its free FORMULA  moment, instead of a normal core in a
+conventional BCS superconductor, which is given by FORMULA  The temperature and magnetic field dependence of FORMULA 
+is shown in Fig. REF .{{cite:545d4660-928b-4eb9-be59-bbe03521fe00}} The magnitude of such a quantity
+is comparable to the experimental data, implying that the transport entropy
+due to the free moment in a spinon-vortex is capable to produce the Nernst
+signal observed experimentally.{{cite:51fe2de0-49bb-4056-867a-fb4d52650958}}
+
+Spin Hall effect
+A unique prediction related to the spinon-vortex motion driven by an
+external electric field is the existence of a conserved dissipationless spin
+Hall current.{{cite:0d864396-bee8-45de-929d-1c55e1cfc867}} As shown in Fig. REF (a),
+vortices can be driven by an in-plane electric field to move along the
+transverse direction. Since each vortex carries a free moment, if these
+moments are partially polarized, say, by an external magnetic field via the
+Zeeman effect, then a spin Hall current can be generated along the vortex
+motion direction. The spin Hall conductivity is determined as follows:{{cite:7b806658-4f54-4b5f-86bc-cf84c6e37308}}
+FORMULA 
+which only depends on the intrinsic properties of the system like the
+uniform spin susceptibility FORMULA  with the electron FORMULA -factor FORMULA . It is important to note that the external magnetic field FORMULA 
+applied perpendicular to the 2D plane reduces the spin rotational symmetry
+of the system to the conservation of the FORMULA  component only, satisfying FORMULA  Thus the
+polarized spin current FORMULA  is still conserved and remains
+dissipationless as the current of its carriers – vortices is dissipationless in the LPP. In contrast, the charge current remains
+dissipative as FORMULA .
+
+Magnetization
+Inspired by the experiment,{{cite:51fe2de0-49bb-4056-867a-fb4d52650958}} the diamagnetism has been also
+studied. The total magnetization can be expressed as{{cite:641b3acd-665b-4241-aa5b-6fb91e209ab2}}
+FORMULA 
+in which FORMULA  and FORMULA  stand for the orbital
+diamagnetism from the vortices and the paramagnetism from the Zeeman
+coupling, respectively. Based on the mutual Chern-Simons formulation of the
+phase string model outlined in Sec. 3.2, with a systematic description of
+multi-spinon excitations and interaction between them, the nonlinear effect
+of the magnetization vs. magnetic field can be effectively treated.{{cite:641b3acd-665b-4241-aa5b-6fb91e209ab2}}
+The magnetic field and temperature dependence of the total magnetization at
+different doping concentrations as well as the diamagnetism part FORMULA  at FORMULA  are shown in Fig. REF  based on a
+mean-field approximation in the mutual Chern-Simons description.{{cite:641b3acd-665b-4241-aa5b-6fb91e209ab2}}
+Note that FORMULA  with FORMULA  as the uniform
+spin susceptibility to be discussed later in the weak field limit.
+FIGURE 
+
+Magneto-resistance
+Due to the deconfinement of spinons, the quasiparticles are no longer the
+stable low-lying excitations in the LPP. The origin of the dissipation comes
+mainly from the flow of the spinon vortices. In fact, the resistivity (REF ) is similar to the flux-flow resistivity in a Type II superconductor
+except that FORMULA  in general is not simply proportional to the external
+magnetic field FORMULA . Namely, the spinon vortices can be spontaneously
+(thermally) generated with FORMULA  such that FORMULA  even at FORMULA . The resistivity FORMULA  can be then expanded as{{cite:641b3acd-665b-4241-aa5b-6fb91e209ab2}}
+FIGURE 
+FORMULA 
+where the odd power terms of FORMULA  vanish due to the symmetry FORMULA . Suppose that the dependence of the viscosity FORMULA  on FORMULA  is
+negligible, then the quadratic coefficient FORMULA  can be expressed as
+FORMULA 
+The coefficient FORMULA  and FORMULA , with the
+external magnetic field FORMULA  perpendicular and parallel to the 2D plane,
+respectively, can be calculated numerically as shown in Fig. REF .{{cite:641b3acd-665b-4241-aa5b-6fb91e209ab2}} An important prediction of the present theory, as shown by Fig. REF , is that FORMULA  is comparable to FORMULA . This is a rather unusual case for a vortex-flow-induced resistivity, since
+normally the in-plane vortices are always created by the perpendicular
+magnetic field in a Type II superconductor, where the vortex-flow-induced
+resistivity only exhibits field-dependent magneto-resistivity for the
+component of FORMULA  which is perpendicular to the plane. But in the present
+theory, vortices are tied to the free spinons. Since the latter can be
+created by the Zeeman term with the external magnetic field pointing at
+any directions, the former can thus be created by the in-plane field
+as well. The present mean-field-type treatment of FORMULA  may not be
+expected to be quantitatively accurate in view of possible corrections from
+the fluctuations, but the existence of an anomalous transverse
+magneto-resistivity with FORMULA  comparable to FORMULA 
+remains a very peculiar prediction.{{cite:641b3acd-665b-4241-aa5b-6fb91e209ab2}}
+
+Upper Pseudogap Phase (UPP)
+At FORMULA , the bosonic holons will be in a non-degenerate regime where
+the quantum coherence is destroyed by the excited spinons via FORMULA . By contrast, the bosonic spinons can still maintain their quantum
+coherence up to FORMULA  where the spin singlet pairing order parameter FORMULA  eventually vanishes. The UPP as characterized by FORMULA  is defined at FORMULA , whose key features will be
+described in the following.
+Phase diagram for the UPP
+Based on the self-consistent solution of FORMULA , the characteristic
+temperature FORMULA  at which FORMULA  is given by{{cite:f048ab0b-ac29-4044-9ed4-38a1c6c0d538}}
+FORMULA 
+Figure REF  shows FORMULA  (solid curve) as a function of doping with FORMULA  K. The experimental data determined by the uniform spin
+susceptibility measurement in FORMULA  {{cite:c1d8c458-f3a8-432d-b9b1-bf8751f40ec0}}, {{cite:4ef21dac-9159-4455-9162-4466815db73e}} (see the
+discussion in the next section) are shown by the full squares. Furthermore,
+the open circles are independently determined from the c-axis transport {{cite:649f08e7-b31c-4a9c-818a-84ea0e919a6c}} in the overdoped regime.
+FIGURE 
+Note that here FORMULA  vanishes at FORMULA  FORMULA  and the curve FORMULA  versus FORMULA  in Fig. REF  is not sensitive to the choice
+of FORMULA  Based on the above experimental data{{cite:c1d8c458-f3a8-432d-b9b1-bf8751f40ec0}}, {{cite:4ef21dac-9159-4455-9162-4466815db73e}}, {{cite:649f08e7-b31c-4a9c-818a-84ea0e919a6c}} FORMULA  is fixed at FORMULA  such that FORMULA .
+Due to the bosonic RVB origin of the UPP, the Zeeman effect of an external
+magnetic field can effectively destroy the singlet pairing of spins in the
+strong field limit, which is the only direct field effect on the RVB
+background.
+With incorporating the Zeeman term (REF ), one can obtain the
+zero-temperature “critical” field FORMULA  at which FORMULA  vanishes:
+FORMULA 
+In Fig. REF , FORMULA  is plotted as the dashed
+curve which scales with the zero-field FORMULA  fairly well, which means FORMULA . The temperature dependence of
+the “critical” field FORMULA 
+is shown in the inset of Fig. REF  at FORMULA  together with the
+experimental data obtained from the c-axis magneto transport measurements.{{cite:649f08e7-b31c-4a9c-818a-84ea0e919a6c}} We see that the high-temperature experimental data
+(open circles) fit the theoretical curve very well without any additional
+adjustable parameter. Furthermore the zero-field FORMULA  determined by the
+same experiments is also in good agreement with the theory as shown
+(open circles) in the main panel of Fig. REF . But one may notice that
+the experimental FORMULA  starts to deviate from the theoretical
+curve in the inset (full squares) as the temperature is further lowered and
+saturated to approximately the half of the predicted number (which implies FORMULA . However, such a deviation
+occurs only for those data (full squares) which have been obtained by extrapolation in the experimental measurement {{cite:649f08e7-b31c-4a9c-818a-84ea0e919a6c}} and therefore
+may not be as reliable as the higher temperature ones (open squares) in the
+inset of Fig. REF .
+Finally, the three-dimensional phase diagram of the UPP, together with the
+LPP and SC phase, in the parameter of magnetic field, doping concentration,
+and the temperature is summarized in the right panel of Fig. REF . FORMULA  vs. FORMULA  at FORMULA  is also plotted in Fig. REF  FORMULA
+
+Uniform spin susceptibility
+The spin singlet pairing (RVB) nature of the UPP is clearly manifested in
+the uniform spin susceptibility FORMULA  given in the main panel of Fig. REF (a) at different doping concentrations.{{cite:0f839592-22b3-4a92-ba88-77b1847b6e1e}} Note that FORMULA  reaches a maximum value FORMULA  at temperature FORMULA  where
+the RVB order parameter FORMULA  vanishes. At FORMULA , FORMULA 
+follows a Curie-FORMULA  behavior as spins become free moments at the
+mean-field level. The curves in Fig. REF (a) are presented as FORMULA  versus FORMULA , which approximately collapse onto
+a single curve independent of doping. The comparison with experiment has
+been discussed in Ref. {{cite:f048ab0b-ac29-4044-9ed4-38a1c6c0d538}}.
+FIGURE 
+In Fig. REF (b), the calculated FORMULA  versus FORMULA  at FORMULA 
+is shown together with the high temperature series expansion (HTSE) result{{cite:a29ec2b1-f5db-4a68-9f52-b454ea088e8a}}. It is noted that the experimental scaling curve actually
+coincides with the half-filling HTSE very well.{{cite:c1d8c458-f3a8-432d-b9b1-bf8751f40ec0}}, {{cite:4ef21dac-9159-4455-9162-4466815db73e}} Thus one
+can clearly see the overall qualitative agreement between the bosonic RVB
+theory and the experiment from Figs. REF (a) and (b). Note that the
+mean-field FORMULA  deviates from the HTSE result prominently around FORMULA  where the latter is a much smoother function of FORMULA  It reflects the
+fact that FORMULA  is only a crossover temperature and the vanishing FORMULA  does not represent a true phase transition. Obviously, the amplitude
+fluctuations beyond the mean-field FORMULA  have to be considered in
+order to better describe FORMULA  in this regime. FORMULA  determined in
+the mean-field theory is quite close to the HTSE result, indicating the
+crossover temperature itself can still be reasonably decided by the
+mean-field bosonic RVB description given above.
+
+Spin-lattice relaxation and spin-echo decay rates
+The NMR spin-lattice relaxation rate of nuclear spins is determined by{{cite:f048ab0b-ac29-4044-9ed4-38a1c6c0d538}}
+FORMULA 
+where the form factor FORMULA  comes from the hyperfine coupling
+between nuclear spin and spin fluctuations. Due to the fact that the FORMULA  for planar FORMULA  nuclear spins vanishes at
+the AF wave vector FORMULA , while for planar FORMULA  nuclear spins is peaked at FORMULA , a
+combined measurement of FORMULA  and FORMULA  will thus provide
+important information about the AF correlations at low frequency FORMULA .
+FIGURE 
+Based on the mean-field equation,{{cite:f048ab0b-ac29-4044-9ed4-38a1c6c0d538}} the calculated spin-lattice
+relaxation rates, FORMULA  and FORMULA  for the planar copper
+and oxygen nuclear spins are presented in the left panel of Fig. REF .
+It shows that the ratio FORMULA , which is a constant above FORMULA , starts to increase with reducing temperature below FORMULA . At lower
+temperature, FORMULA , such a ratio arises sharply. For example, FORMULA  diverges at FORMULA  as a true AFLRO exists at FORMULA  And it can still reach about 100 in the low temperature limit at FORMULA , all qualitatively consistent with the experimental
+observations. As pointed out above, such behavior clearly demonstrates that
+strong low-lying AF correlations around FORMULA  develop
+in the UPP, leading to the simultaneous enhancement of FORMULA  and
+the cancellation in FORMULA . In the inset of the left panel in Fig. REF , FORMULA  has been plotted, which is also qualitatively
+consistent with the experiment, but deviates from the conventional Korringa
+behavior FORMULA  for a Fermi liquid system. By
+contrast, the ratio FORMULA  in an f-RVB mean-field state
+(the FORMULA  flux phase) at half-filling remains flat over the whole
+temperature region as shown by the dashed line in Fig. REF ,
+indicating the absence of any significant AF correlations around FORMULA  in the pseudogap regime of the fermionic RVB state.
+FIGURE 
+The spin-echo decay rate FORMULA , which is related to the static AF
+correlations via the real part of spin susceptibility function, is also
+examined in the right panel of Fig. REF . It shows that FORMULA 
+begins to increase with reducing temperature below FORMULA . Such behavior
+has been also observed in the experiment, which once again clearly supports
+the picture that the strong AF correlations start to develop in the UPP.
+By comparison, the corresponding magnetic properties in the LPP are
+presented Fig. REF . In the main panel, the uniform spin susceptibility
+shows a true “spin gap” behavior, in
+contrast to the “scaling” curve shown in
+the UPP in Fig. REF  where FORMULA  in the doped regime roughly
+behaves like that at half-filling—in the latter case FORMULA  saturates
+to a constant at FORMULA . In the LPP, these FORMULA 's can drop below that
+at FORMULA  and vanish at FORMULA . Furthermore, FORMULA  also
+decreases with temperature (see the left inset of Fig. REF ), as opposed
+to the behavior in the UPP, indicating the appearance of the spin gap over
+whole momenta. On the other hand, although the low-energy spin fluctuations
+are gapped, the static AF spin-spin correlations as described by the real
+part of spin susceptibility function still remain, as reflected by FORMULA 
+shown in the right inset of Fig. REF , where the monotonic increase of FORMULA  in the UPP (Fig. REF ) is replaced by the saturation at the
+LPP.
+
+Incoherent “Normal State”:
+Classical Regime
+As shown above, at FORMULA , the mean-field RVB order parameter FORMULA  vanishes and to the leading order of approximation the spins are
+localized at the lattice sites with very weak correlations between them. The
+residual AF superexchange coupling will come from FORMULA  which has been neglected in the minimal phase
+string model.
+In this regime, the charge dynamics will be highly nontrivial as governed by
+FORMULA . According to Eq. (REF ), an isolated spinon excitation will
+behave like a FORMULA -flux tube as perceived by the holons and thus provides
+a strong, unconventional charge scattering source. So at high temperature
+where a lot of spinons (FORMULA ) are thermally excited, one expects
+a severe intrinsic frustration effect exerted from FORMULA  on the
+holons.
+Novel scattering mechanism for the charge carriers
+To see how the spin dynamics influences the charge degree of freedom via FORMULA , one may write down the propagator for FORMULA  [Eq. (REF )]{{cite:d8a7372b-9c6a-470a-a0af-24a1fc7566ed}}
+FORMULA 
+Define the local flux per plaquette (surrounding a lattice site) FORMULA  Its total strength is generally determined by
+FORMULA 
+where the spin structure factor FORMULA .
+In particular, at FORMULA , there is no more significant AF
+correlations among spins as FORMULA  and one finds FORMULA . Thus the corresponding gauge flux fluctuation becomes truly
+static with the weight FORMULA  concentrating at FORMULA . At low doping, FORMULA  is comparable to the
+simple picture that each excited spinon contribute to a flux of order of FORMULA , which represents the maximal frustration effect that the holons can
+experience in the phase string model.{{cite:d8a7372b-9c6a-470a-a0af-24a1fc7566ed}}
+FIGURE 
+Figure REF  illustrates{{cite:d8a7372b-9c6a-470a-a0af-24a1fc7566ed}} how the holon density of states
+(DOS) will get reshaped by FORMULA  or FORMULA . The
+quenched method is used to average over the static random flux
+configurations for FORMULA  on the lattice plaquetteFORMULA  It shows how the
+DOS drastically reshaped by the gauge field, i.e., the suppression in
+the high-energy (mid-band) DOS, as compared to the flux free case (dashed
+curve). Note that the dotted curve in Fig. REF  represents the DOS for
+the case of a uniform FORMULA  flux per plaquette, which looks similar to the
+random flux case FORMULA 
+except that the momenta remains well defined in a reduced Brillouin zone in
+contrast to a strong mixing of momenta over a wide range by the scattering
+effect in the latter.
+
+Optical conductivity
+FIGURE 
+Figure REF  shows the real part of the calculated optical
+conductivity.{{cite:d8a7372b-9c6a-470a-a0af-24a1fc7566ed}} The main feature of the spectral curves at various
+temperatures FORMULA  is that there is generally a two-component
+structure with a usual low-energy Drude component (FORMULA ) and
+a mid-infrared resonancelike peak around the energy scale FORMULA . Furthermore, such a mid-infrared peak will actually
+smoothly evolve into the FORMULA  behavior with reducing FORMULA , as clearly illustrated in the right panel of
+Fig. REF  at a fixed holon concentration FORMULA  where the
+mid-infrared resonancelike peak at smaller FORMULA 's becomes softened and finally behaves like a FORMULA 
+tail in the regime FORMULA  with the weight shifting towards the
+lower energy.
+The origin of the mid-infrared resonance has been one of the most intriguing
+optical properties in the underdoped cuprates. Normally a photon with the
+momentum FORMULA  cannot excite a high-energy particle-hole pair
+involving a large momentum transfer due to the momentum conservation law,
+unless there is a scattering mechanism to strongly and widely smear the
+momentum. This is difficult to realize in a conventional
+electron-collective-mode coupling mechanism. The phase string model provides
+an alternative scattering mechanism due to the strong correlation effect.
+We have already seen that the effect of FORMULA  results in a double-peak
+structure in the holon DOS (Fig. REF ). In contrast to the uniform FORMULA  flux case shown in the same figure, which also has a double-peak
+structure, the high-energy inter-peak transition at FORMULA 
+becomes possible in the random flux case due to the mixing between the small
+and large momenta by the strong scattering via FORMULA  This is the origin
+for the mid-infrared peak found in Fig. REF .
+FIGURE 
+Finally, as a comparison, the low-energy optical conductivity at FORMULA 
+can be obtained by using the perturbative method.{{cite:d8a7372b-9c6a-470a-a0af-24a1fc7566ed}} Such an
+approach is meaningful in the regime where the spin fluctuations are
+substantially suppressed, which in turn results in the weak fluctuations of FORMULA  according to Eq. (REF ). As shown in Fig. REF , a prominent suppression of FORMULA  at low-FORMULA 
+is present at FORMULA  with a second “mid-infrared” peak emerging around FORMULA  which sits somewhat between the two characteristic magnetic
+energy scalesFORMULA  FORMULA  and FORMULA , as marked in the
+figure. Note that such a new energy scale in the low-FORMULA  optical
+conductivity merely reflects some weighted energy scale based on the
+magnetic FORMULA . With the increase of temperature, the
+“gap” at low energy in FORMULA  is quickly filled up by the thermal excitations as shown in Fig. REF . The lower “mid-infrared” peak feature remains around FORMULA  at low temperature
+throughout the LPP below FORMULA  Note that FORMULA  is between FORMULA  and FORMULA  and the dashed curve at FORMULA is obtained by supposing
+that FORMULA  where FORMULA  behaves differently.{{cite:f048ab0b-ac29-4044-9ed4-38a1c6c0d538}}
+As compared to the solid curve at the same FORMULA , which corresponds
+to the case inside the LPP, the overall difference is small except
+for the vanishing the lower “mid-infrared” peak [Fig. REF ].
+
+Density-density correlation function
+The mid-infrared resonance peak of the FORMULA  optical conductivity
+has been attributed to a large-FORMULA  transition between the double peaks
+of the holon DOS [Fig. REF ]. In the following we discuss an
+independent probe of such a peculiar DOS structure by studying the
+density-density function at finite momentum FORMULA  and energy FORMULA  and compare the results with the exact numerical calculations.
+FIGURE 
+The imaginary part of the (retarded) density-density correlation function FORMULA  is presented in Fig. REF  (solid
+curves), which evolves distinctively with different momenta. Note that FORMULA  is shown in the figure because it is
+quantity roughly doping independent. For comparison, the exact
+diagonalization results{{cite:10c16965-fc82-41c3-a416-03d2c35364b6}} are presented as dotted curves. It is
+interesting to see that the overall FORMULA -peak feature of the calculated
+density-density correlation function is in qualitative and systematic
+agreement with the numerical one at different FORMULA 's without fitting
+parameters (here FORMULA  is simply set at FORMULA  as the mid-infrared feature
+peaks around FORMULA  in the numerical calculation). Such a consistency
+between the present effective theory and the exact diagonalization provides
+another strong evidence that the gauge-coupling boson model (REF )
+correctly captures the high-energy charge excitations in the FORMULA -FORMULA  model
+and large-FORMULA  Hubbard model.
+
+Scattering rate
+Experimentally the scattering rate is normally defined by
+FORMULA 
+which is determined by the measured optical conductivity. Here FORMULA 
+denotes the plasma frequency, which in the present case is given by FORMULA .
+FIGURE 
+In the left panel of Fig. REF , FORMULA  based on the
+calculated FORMULA  is plotted as a function of FORMULA  in
+different temperatures at FORMULA , with FORMULA  which corresponds to the case where the high-FORMULA  optical conductivity looks more like a FORMULA  behavior (Fig. REF ). Here one finds that FORMULA  increases monotonically
+with FORMULA  and is roughly linear-FORMULA  dependent over a wide FORMULA  region at FORMULA . Note that generally the FORMULA -dependence of FORMULA  at higher energies is closely correlated
+with the evolution of the aforementioned mid-infrared feature, as shown in
+the inset of the left panel of Fig. REF .
+In particular, one sees a parallel shift of FORMULA  with
+increasing temperature at low-FORMULA , which implies a linear-temperature
+dependence of the dc scattering rate. The dc scattering rate FORMULA  can be determined by extrapolating FORMULA  to FORMULA . The obtained dc resistivity based on the Drude formula FORMULA  FORMULA  is shown in the right panel of Fig. REF  which
+is indeed quite linear over a very wide range of temperature at FORMULA .
+It is important to note that FORMULA  FORMULA  over a
+very wide range of the temperature at FORMULA  where the Bose distribution
+factor FORMULA  i.e., in the classical regime of the
+bosons (FORMULA  is the holon energy spectrum). The corresponding
+scattering rate FORMULA  for the case
+shown in the main right panel of Fig. REF , whose slope is slightly FORMULA  dependent as indicated in the
+inset. Indeed, as discussed above, the bosonic degenerate regime for the
+holons already ends up at FORMULA , i.e., at the boundary of the
+LPP/SVP (Fig. REF ). At FORMULA , totally FORMULA  randomly
+distributed FORMULA -flux tubes are perceived by the FORMULA  holons and the
+latter behave like classical particles. One expects this anomalous transport
+be smoothly connected to the Brinkman-Rice retracing path regime{{cite:659e4814-2c5f-44ff-8726-d3c9b6699f4d}} in
+the large FORMULA  limit.
+The dc scattering rate FORMULA  has been
+previously obtained{{cite:19c2bbca-eca7-4e5f-8e64-acf38ed1c456}} by the quantum Monte Carlo numerical method,
+where the starting model is a system of interacting bosons coupled with
+strong Gaussian fluctuations of the static gauge field of the strength FORMULA 
+Note that FORMULA  used in the Monte Carlo simulation{{cite:19c2bbca-eca7-4e5f-8e64-acf38ed1c456}} is about
+the same order of magnitude as in the above case and, in particular, it is
+temperature independent in contrast to a linear-FORMULA  dependent FORMULA 
+predicted in the slave-boson U(1) gauge theory{{cite:7f6ceb1b-b4ce-4533-92f7-2fa2f5a8a5c5}} which was
+the original motivation for such a Monte Carlo study.
+
+Low-Doping AF State: Beyond the Minimal Model
+At half-filling, the antiferromagnetism can be well described by FORMULA .
+However, even in the presence of a very dilute hole concentration, an AFLRO
+would be immediately destroyed due to the opening up of a spin gap FORMULA  as predicted by the minimal phase string model, as
+illustrated by the phase diagram in Fig. REF . In the following we
+discuss a modified phase diagram by taking into account of a new topological
+excitation in this regime.
+The motion of holes will generally induce the irreparable phase string
+effect (Sec. 2.2.). In the dilute limit of the hole concentration, the phase
+string effect should mainly influence the hole dynamics, without drastically
+affecting the spin part which is AFLRO ordered in the ground state. It turns
+out that the holes can be self-localized by the phase string effect here.{{cite:117ad3b8-4c09-43cb-8871-12832247466e}}, {{cite:428394aa-7ede-45b8-a84d-434749f7702d}}, {{cite:8710d2a1-c133-4beb-a6ab-848e41d47664}} Without the condensation of the holons, then a spin
+gap FORMULA  will no longer exist in this dilute doping
+regime.
+Mathematically, a ZFORMULA  topological excitation{{cite:35a776f4-5da0-4126-8849-54f7d34f6046}} (meron) is allowed
+by the phase string model{{cite:428394aa-7ede-45b8-a84d-434749f7702d}}, {{cite:2ff6c6fc-e29b-4015-98e9-dffd3f584912}}
+FORMULA 
+FORMULA 
+where FORMULA  with the
+core position FORMULA  either inside a plaquette or on a lattice site.
+Such a meron can be “nucleated” from the
+AF state where the spinons are Bose condensed with FORMULA  and the holon becomes a topological vortex with a
+logarithmically divergent energy.{{cite:428394aa-7ede-45b8-a84d-434749f7702d}}, {{cite:2ff6c6fc-e29b-4015-98e9-dffd3f584912}} A holon must be then
+forced to be “confined” to a meron
+to form a truly stable hole object, known as a hole dipole FORMULA{{cite:428394aa-7ede-45b8-a84d-434749f7702d}}, {{cite:2ff6c6fc-e29b-4015-98e9-dffd3f584912}} Two typical hole-dipoles of minimal size are sketched in Fig. REF  FORMULA
+FIGURE 
+It can be shown that the effective mass of the induced meron is infinity
+such that the hole-dipole object is self-trapped in space.{{cite:2ff6c6fc-e29b-4015-98e9-dffd3f584912}}, {{cite:8710d2a1-c133-4beb-a6ab-848e41d47664}}
+FIGURE 
+In such a self-localization regime, the kinetic energy of the holes is
+suppressed. Without the balance from the kinetic energy, the low-energy
+physics in this regime will be determined by potential energies. The latter
+will then decide various competing orders in this low-doping insulating
+phase. The AFLRO should persist if a weak interlayer coupling is
+considered.{{cite:428394aa-7ede-45b8-a84d-434749f7702d}} But the freedom in the directions of the hole-dipole
+moment will lead to the reduction of the Néel temperature FORMULA  as
+shown in Fig. REF . Based on the hole-dipole picture and the
+renormalization group (RG) calculation,{{cite:428394aa-7ede-45b8-a84d-434749f7702d}} the critical doping FORMULA . Beyond FORMULA  or FORMULA  the system is in a cluster
+spin glass phase with the dipole moments being quenched randomly in space.
+With the further increase of doping, the sizes of hole dipoles will get
+larger and larger, and eventually a deconfinement can occur at a critical
+doping FORMULA  beyond which single holons will be
+unbound from their anti-vortex partners and experience a Bose condensation
+leading to a finite FORMULA .{{cite:428394aa-7ede-45b8-a84d-434749f7702d}}
+Some interesting properties including the thermopower,
+variable-range-hopping resistivity, and dielectric constant, etc., in this
+self-localization regime have been also discussed.{{cite:8710d2a1-c133-4beb-a6ab-848e41d47664}} Furthermore, a
+possible stripe instability has been explored. Note that in the above it is
+assumed that the hole dipoles are self-trapped uniformly in space.
+However, if there is no impurities or disorders, the uniform distribution of
+the self-trapped hole-dipoles may not be stable against the formation of the
+stripes due to the long-range dipole-dipole interaction.{{cite:2ff6c6fc-e29b-4015-98e9-dffd3f584912}}, {{cite:8c3096f3-5b7b-4f8b-896e-dfce25feac47}}
+So in the low-doping regime, the minimal phase string model in Eqs. (REF ) and () can be generalized to
+FORMULA 
+to include a ZFORMULA  gauge field FORMULA :
+FORMULA 
+which is allowed by the general construction of the phase string model and
+compatible with the bosonic RVB pairing FORMULA . Normally the core
+energy of a ZFORMULA  vortex is too big in the superconducting phase, but a ZFORMULA  vortex excitation can become important at FORMULA  in the
+AF state. Furthermore, a quasipaticle excitation discussed in Sec. 4.1.7.
+may be equivalently considered as a bound state of a spinon, a holon, and a ZFORMULA  vortex. The details will be presented elsewhere.
+
+Synthesis and Perspectives
+In this brief review, I have surveyed a systematic effort in the study of a
+doped antiferromagnet, which may be relevant to the mechanism of the high-FORMULA  cuprates. The core of this approach lies in the so-called phase
+string effect, which has been mathematically identified based on the FORMULA -FORMULA 
+model. It is by nature a frustration effect induced by the motion of
+doped holes in an antiferromagnetic spin background.
+Such a frustration effect on the spin degrees of freedom differs
+fundamentally from an ordinary frustrated antiferromagnet in the presence of
+geometrically “mismatched” spin
+interactions, e.g., the next nearest neighbor superexchange coupling.
+The key distinction is that the frustration in the former is dynamically
+driven and mutual between the spin and charge degrees of freedom. Namely the
+extent that the spins get frustrated crucially depends on the charge
+behavior and vise versa. In different doping, temperature, magnetic
+field, or other parameter regimes, the spin and charge parts will then
+behave differently in order to minimize the total free energy. For
+example, in the dilute hole limit, the superexchange energy of spins will
+dominate and with maintaining longer range antiferromagnetic correlations
+the kinetic energy of doped holes can get severely frustrated by the phase
+string effect, resulting in their self-localization at low temperature; At
+higher doping, to gain the kinetic energy of the doped holes, however, the
+spin correlations can be “forced” to
+become short-ranged via the phase string effect, and the spin background
+becomes a spin liquid state. The superconducting phase coherence and nodal
+quasiparticle excitation are protected by the spin gap of such a spin liquid
+state.
+The mathematical description of the phase string effect is rather simple,
+which is basically represented by a sequence of signs [Eq. (REF )]
+picked up by the nearest neighboring hoppings of the holes in a Heisenberg
+spin background. It depends on the path of the hole hopping as well as the
+polarizations of those spins exchanged with the hole during its motion. It
+is thus both geometric and dynamic, which weights each motion path of the
+holes. We have seen that such a phase string is irreparable in the
+sense that the system cannot generate other signs to compensate it at each
+path. In fact, the Heisenberg superexchange interaction respects the
+Marshall signs, so a phase string as the disordered Marshall signs caused by
+hopping cannot be “self-healed” through
+the superexchange process.
+Such an irreparable phase string effect identified as the most important
+frustration effect in the doped antiferromagnet is singularly sensitive to
+any perturbative treatment, since Eq. (REF ) will change sign for
+a fluctuation with merely one additional or less FORMULA  spin
+exchanged with the hole on a given path, no matter how long the path is.
+Fortunately a unitary transformation exists in the FORMULA -FORMULA  model which can
+precisely keep track of such a phase string because it essentially involves
+the counting of the exchanges occurring between the holes and spins during
+the their travelling. Then in the new representation after the unitary
+transformation, known as the phase string formalism, the FORMULA -FORMULA  model
+presumably becomes less singular and perturbatively treatable.
+The FORMULA -FORMULA  model in the exact phase string formalism is a
+topological gauge model, in which the phase string effect is precisely
+described by a pair of mutual Chern-Simons gauge fields in two dimensions.
+Without these gauge fields, the model reduces to a full bosonic one free
+from any “sign problem”. In other words,
+the nontrivial spin and charge dynamics will be governed by the topological
+gauge fields which precisely reflect the phase string effect. Thus, the exact phase string formalism of the FORMULA -FORMULA  model provides a unique
+starting point to study the doped antiferromagnet.
+Based on the precise topological gauge structure and the good understanding
+of the half-filling phase, an effective minimal phase string model working
+for small doping can be then constructed as given by Eqs. (REF ) and (). Despite its novel looking, this is a rather simple model where
+two bosonic matter fields, spinless holons and neutral spinons,
+interact with each other by perceiving the opposite species as a FORMULA  flux
+fluxoid, and the spinons form the RVB pairing whose amplitude is
+self-consistently determined.
+FIGURE 
+Figure REF  summaries the global phase diagram of this minimal
+model. The “normal state” at FORMULA  is
+an incoherent “classical” regime for both
+spinons and holons, where the spinons are weakly correlated, while the
+diffusive holons are maximally scattered by the FORMULA  flux fluxoids
+bound to the randomly distributed spinons, leading to a linear-temperature
+scattering rate. At FORMULA , the spinons start to form the singlet RVB
+pairing, and the short-range antiferromagnetic correlations become enhanced
+with the reducing temperature, as clearly indicated by the NMR spin
+relaxation rate and spin-echo decay rate. This regime is known as the upper
+pseudogap phase, which is superexchange energy driven and continuously
+evolves into the AFLRO state at half-filling and FORMULA . The holons remain
+diffusive in this phase, although the scattering from the gauge field gets
+reduced with decreasing temperature as more and more spinons are RVB paired
+with the cancellation of their FORMULA  fluxoids. Eventually at FORMULA , the gauge flux is reduced so much that the bosonic coherence between
+the holons can be finally established, which defines the lower pseudogap
+phase that is obviously kinetic energy driven. In this phase, with the holon
+condensation, a spin gap is opened up for the low-lying antiferromagnetic
+fluctuations, with the weight being pushed up and concentrated at a
+resonancelike peak at FORMULA  around FORMULA ,
+and the spin correlation length gets “truncated” at a finite scale comparable to the average
+hole-hole distance. A very unique feature in this regime is the presence of
+a lot of spontaneous spinon vortices, composites of isolated spinons locking
+with current vortices, which are responsible for the Nernst effect, residual
+diamagnetism, and spin Hall effect, etc. In this peculiar phase, the Cooper
+pair amplitude is finite because of the RVB pairing of the spinons and Bose
+condensation of the holons. But the phase is disordered as the proliferation
+of the spinon vortices. Eventually, at a lower temperature FORMULA , the
+binding of vortices-antivortices or the confinement of the spinons will
+finally lead to the superconducting phase coherence. It turns out that both
+the kinetic energy of the holons and superexchange energy of the spinons are
+generally benefited from this phase transition. The nodal quasiparticles
+also become coherent in the superconducting phase as the result of the phase
+coherence and spinon confinement. The non-BCS neutral FORMULA  spin excitation
+is similar to the lower pseudogap phase with a reasonancelike structure at FORMULA  and the suppression of antiferromagnetic correlations below FORMULA ,
+as caused by the holon condensation.
+Such a top-down phase diagram demonstrates an amazing richness of the
+minimal phase string model, which covers almost all the interesting regimes
+of the high-FORMULA  cuprate superconductors, except for the very underdoped
+regime where the superconducting phase ends as well as the overdoped regime
+where the upper pseudogap terminates, which is question-marked in Fig. REF .
+At half filling, with the vanishing gauge fields, the minimal model does
+produce an AFLRO state with a very precise variational ground-state energy.
+But once away from half-filling, the holon condensation will force the
+opening up of a spin gap FORMULA  and thus the disappearance
+of the AFLRO. But this is unphysical at sufficiently low doping where the
+long-range antiferromagnetic correlations should remain dominant. Indeed, in
+this regime a topological ZFORMULA  vortex can become a low-lying excitation
+once being bound to a holon to form a localized composite object, known as a
+hole dipole. In this regime the correct low-energy phase string model is
+given by Eqs. (REF ) and (), and a hole dipole in Fig. REF  can be regarded as the realization of the dual holon confinement in
+the antiferromagnetic phase in contrast to the spinon confinement in the
+superconducting phase.
+In the overdoped regime where the spinon RVB pairing disappears at FORMULA ,
+the minimal phase string model should be also modified. A possibility is for
+the ZFORMULA  vortex to be bound with a bosonic spinon such that two gauge
+fields are effectively cancelled in Eq. (REF ), in favor of the holon
+condensation as well as the kinetic energy. In this way, the bosonic spinons
+will be effectively turned into fermions and a Fermi liquid state may be
+recovered if the bosonic holons remain condensed in the high-doping regime.
+So the phase string model may simply reduce to the slave-boson mean-field
+description at FORMULA .
+Finally we remark on that throughout this paper, only the nearest
+neighboring hopping of the FORMULA -FORMULA  model is considered, which is related to
+the origin of the singular phase string effect. However, the phase string
+effect will get qualitatively modified in the presence of the next nearest
+neighbor hopping process. This is an important issue which has not been
+touched upon so far. Just like the phase string effect is very singular in
+the original FORMULA -FORMULA  model, the next nearest neighbor hopping term will also
+become singular in the phase string formalism. It is thus expected to be
+important to interpret the detailed experimental measurements in the
+cuprates, e.g., the asymmetry in the hole- and electron-doped
+cuprates.
+
+Acknowledgements
+This work is partially supported by the NSFC grants.

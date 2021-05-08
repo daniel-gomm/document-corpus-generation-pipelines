@@ -1,0 +1,3409 @@
+
+ucsdthesis
+
+
+UNIVERSITY OF CALIFORNIA, SAN DIEGO
+
+Strongly Interacting Higgs Sector Without Technicolor
+
+A dissertation submitted in partial satisfaction of the
+
+requirements for the degree Doctor of Philosophy
+
+in Physics
+
+by
+
+Chuan Liu
+
+Commīttee in charge:
+Professor Julius G. Kuti, Chairman
+Professor Aneesh V. Manohar
+Professor James G. Branson
+Professor Bruce K. Driver
+Professor Jeffrey M. Rabin
+
+1994
+
+Copyright
+Chuan Liu, 1994
+All rights reserved.
+tocschapterSignature Page
+
+
+
+The dissertation of Chuan Liu is approved, and it is
+acceptable in quality and form for publication on
+microfilm:
+
+
+
+
+
+
+
+
+
+
+ Chairman 
+
+University of California, San Diego
+
+1994
+
+tocschapterDedication Page
+
+
+
+To my wife Dan
+my parents and grandparents
+
+
+Acknowledgements
+It has been a very pleasant and fruitful six years for me to stay at
+Department of Physics at UCSD, during which many friends helped me in
+many ways. Here I want to express my appreciation to them.
+First, I would like to thank my advisor, Professor Julius Kuti, for his
+continued energy and enthusiasm
+under all circumstances.
+He encourages me to enter the exciting fields of high energy
+physics and field theory and keeps
+stimulating my interests in the field.
+He has given me not only important directions on physics research
+but also precious advices on how to be a physicist.
+It was from many intriguing discussions with him
+that I gained so much knowledge of physics.
+Without his patient guidance, it would be much more
+difficult for me to complete this work
+satisfactorily.
+I would also like to thank the other members of my committee
+(Professor Aneesh Manohar, Professor
+James Branson, Professor Bruce Driver and Professor
+Jeffrey M. Rabin) for taking the time to review my work
+and giving me helpful suggestions.
+I should also thank the following Professors at UCSD Physics
+Department from whom I benefit so much in their lectures:
+Professor D. Arovas, Professor P. Diamond,
+Professor R. Dashen, Professor H. Levine and
+Professor H. Paar.
+Special thanks go to Dr. Karl Jansen, who helped me so much
+in many ways. He has been a collaborator with me for
+quite some time and I have benefited a great deal from
+discussions with him. It has always been a great pleasure
+for me to work with him.
+Bonnie Horstmann and Debra Bomar
+in the Physics Office have helped
+a lot. I would especially thank
+Mary Ann for her help on the administrative works and her patient
+reading the thesis and correcting the language mistakes.
+Many friends have supported and encouraged me throughout this journey,
+among them, Y. Shen, L. Lin, X. Che, X. Hong, G. Sun, Z, Guralnik,
+M. Schmaltz, C. Chen, X. Zou, W. Zhang and Y. Liang.
+I would also like to thank my parents and my grandmother
+for their understanding and support.
+Finally, I would like to thank my wife Dan Wei, not only for her
+moral support , but also for her patience of
+reading the
+thesis and even debugging the programs. Without her continued
+encouragement and help, it would have been very difficult for me
+to accomplish this goal successfully.
+
+Vita
+1111111111111111111
+14 February 1966  Born, Beijing, P. R. China
+1988  B.S. in Physics,
+ Peking University, Beijing, P. R. China
+1988-1994  Research/Teaching Assistant,
+ University of California, San Diego
+1991  M.S. in Physics,
+ University of California, San Diego
+1994  Ph.D. in Physics,
+ University of California, San Diego
+
+Publications
+
+K. Jansen, J. Kuti and C. Liu, Phys. Lett. B 309, (1993) 119.
+
+K. Jansen, J. Kuti and C. Liu, Phys. Lett. B 309, (1993) 127.
+
+K. Jansen, J. Kuti and C. Liu,
+Nucl. Phys. B 30 (Proc. Suppl.),(1993) 681.
+
+C. Liu, K. Jansen and J. Kuti,
+Nucl. Phys. B 34 (Proc. Suppl.),(1994) 635.
+
+
+Strongly Interacting Higgs Sector Without Technicolor
+
+
+by
+
+Chuan Liu
+Doctor of Philosophy in Physics
+University of California, San Diego, 1994
+Professor Julius Kuti, Chairman
+
+
+The theoretical framework
+for the higher derivative FORMULA  scalar field
+theory is established and the theory is
+shown to be finite and unitary
+with the indefinite metric quantization.
+It has been shown that if the ghost states are
+represented by a complex conjugate pair, the theory
+is free of any logical inconsistencies and the ghost pair can
+easily evade the experimental tests.
+With an underlying hypercubic lattice structure,
+the higher derivative FORMULA  model is
+studied nonperturbatively in computer simulations.
+The Higgs mass bound problem is also studied within
+the framework of higher derivative theory. A much
+higher Higgs mass value in the TeV range is found
+with the ghost pair well-hidden in the multi-TeV range.
+Therefore, the higher derivative FORMULA  model can
+incorporate a strongly interacting Higgs sector
+without introducing
+more complicated structures, like technicolor, which
+was impossible for the conventional lattice scalar model.
+This means that, although the added higher derivative term
+is a higher dimensional operator,
+it changes the fundamental features (metric, energy spectrum,
+strength of interaction, etc.) of the theory so
+much that we can no longer view it as an irrelevant operator
+in the Lagrangian. Moreover, due to the strong interaction
+of the theory, it would be impossible to meaningfully define
+the scaling violation in the higher derivative FORMULA  model.
+This implies that we will not be able to set up
+the Higgs mass bound in this theory unless a
+new nonperturbative interpretation of the
+Higgs mass bound is developed.
+
+
+Introduction
+
+The Higgs Sector of the Minimal Standard Model
+The Standard Model was first
+introduced in the late 1960's to unify the electromagnetic and
+weak interactions {{cite:54155f4a-5b7e-4e86-92ce-ef8de1f0e156}}, {{cite:82f4992a-f2c9-4f0e-8172-d514e36698e6}}, {{cite:986149a7-9e1a-4b4c-9f2d-4a2b244ec9be}}. The symmetry group of
+the Standard Model is
+FORMULA .
+The Minimal Standard Model corresponds to taking only
+one Higgs doublet in the basic representation of FORMULA .
+The action of the Standard Model consists of several sectors
+which are coupled together.
+The action of the Higgs sector for the theory can be written
+as:
+FORMULA 
+where FORMULA  is a FORMULA -doublet Higgs field,
+FORMULA 
+and the potential can be written as:
+FORMULA 
+In the limit of small gauge coupling and Yukawa
+coupling, the Higgs sector decouples from the rest and becomes a
+FORMULA  type scalar field theory with a global symmetry FORMULA .
+This limit is also referred to as the FORMULA  limit of the
+Minimal Standard Model.
+In the Standard Model, the symmetry FORMULA  is
+spontaneously broken to FORMULA , which, in the FORMULA  limit,
+corresponds to the symmetry breaking FORMULA .
+In this limit, the Higgs mass and the vacuum expectation value
+FORMULA  are related by
+FORMULA 
+where FORMULA  is the renormalized coupling constant.
+The experimental value for FORMULA  is fixed to be FORMULA  GeV.
+Therefore, the ratio FORMULA  also characterizes
+the strength of the quartic self-interaction.
+The FORMULA  limit of the Standard Model is a very interesting
+limit to study for two reasons. First of all, the
+FORMULA  gauge coupling is found to be very small,
+FORMULA . Therefore, the effects of the gauge fields
+on the Higgs sector is perturbative.
+Although the mass of the top quark remains to be
+determined, it is unlikely that the top mass will be much higher than
+200 GeV. All the quark masses are
+rather light compared with the weak scale, therefore the effects of
+the fermion sector can also be evaluated within perturbation theory.
+In other words, the symmetry breaking mechanism is almost completely
+determined by the Higgs sector alone, plus some perturbative corrections.
+Secondly, on the phenomenology side, people have shown a so-called
+Equivalence Theorem {{cite:ad5196a1-cdb5-43e4-b3da-55cea167d06c}} which says: when the center of mass energy
+FORMULA  is much higher than the FORMULA  boson mass, the scattering
+amplitude of the FORMULA  bosons in the full Standard Model is equal to
+the scattering amplitude of the corresponding channel in the
+FORMULA  model with FORMULA  corrections.
+One of the methods in the Higgs search experiment is utilizing
+the FORMULA  or FORMULA  boson scattering channel.
+Therefore, if we consider the energy range for the Higgs
+search, assuming that the Higgs mass
+is above the vev scale or even in the TeV range, the FORMULA  limit
+would be a good approximation for the FORMULA  scattering in the
+Standard Model.
+Thus, we conclude that the FORMULA  limit of the
+Standard Model would be a very good laboratory for the investigation
+of the symmetry breaking mechanism and the mass of the Higgs particle.
+
+ The Triviality Higgs Mass Bound 
+Despite the successes of the Standard Model, two types of
+particle that are important in this model remain unconvinced by the
+experiments, namely, the top quark and the Higgs particle. The missing
+of the Higgs particle is very problematic because the Higgs plays such an
+important role in the spontaneous symmetry breaking which
+gives rise to all
+the masses of gauge bosons and fermions.
+In the past decade, there have been many efforts to put an upper bound
+on the Higgs mass. The early works utilized the tree level unitarity
+and the unitarity bound was found to be around 1 TeV {{cite:ad5196a1-cdb5-43e4-b3da-55cea167d06c}}.
+Later, it was then realized that the FORMULA  scalar field theory is a trivial
+field theory and this implies an upper bound on the Higgs mass
+{{cite:373cffb9-d8cc-451b-bc15-a2a0278f0157}}, {{cite:648a955f-cc13-45ca-b446-19c9112b925f}}.
+The triviality picture of field theory
+was first encountered by Landau et. al.
+long ago when studying the renormalization properties of Quantum
+Electrodynamics (QED) {{cite:784f453d-2995-461e-bec3-cd4adc9d3de5}}.
+They discovered that, if the
+cutoff was brought to infinity in QED, the renormalized coupling constant
+of QED (the electric charge)
+was driven to zero logarithmically. Therefore, in order to
+have an interacting theory, a large but finite cutoff had to remain
+in the theory. Thus, QED has a built-in
+cutoff parameter.
+This implies that
+every quantity calculated in QED depends on this arbitrary
+cutoff parameter. As the energy scale gets closer and
+closer to the cutoff, there is more dependence on this
+arbitrary cutoff parameter. It seems then that we will
+lose the predictability of the theory.
+In fact, this is not a problem at all for QED. The built-in
+cutoff scale, also know as the Landau ghost scale, is enormous
+(typically FORMULA  MeV) for
+QED and therefore the dependence of the physical quantities on this cutoff
+scale is negligible. Furthermore, before this energy scale is reached,
+new physics (weak interactions, strong interactions)
+will set in and QED must be modified.
+However, one thing becomes clear from the above discussion, namely,
+we cannot calculate to arbitrary accuracy in a trivial field theory
+due to the existence of the arbitrary cutoff parameter.
+The triviality scenario of the Higgs sector
+is quite similar to that of QED, except that
+in the Higgs sector we do not
+know the mass of the Higgs and the coupling constant.
+Therefore, the built-in
+cutoff for the Higgs sector could be as low as a few TeV, or as
+high as the Planck scale, depending on the value of the Higgs mass.
+Also, we do not know the nature of the new physics that lies between
+the built-in cutoff and the weak scale, if there is any.
+The triviality of the Higgs sector can be easily seen
+in either perturbation theory or
+in the FORMULA  expansion {{cite:be2a246d-5e3b-4009-aaba-31ebd74a8e7a}} of the model. Extensive
+nonperturbative studies have also been performed on this
+model with a lattice regulator {{cite:2d7952b1-2a5c-4e23-9807-a9b9069ccd7b}}, {{cite:49234004-c5f3-44e1-aa0e-fe1be3d92eba}}, {{cite:145350f4-25ef-4151-b15f-49462bb633ee}}.
+All nonperturbative simulation results suggest that the
+triviality scenario found in perturbation theory
+is a feature of the full theory. In these studies, the upper
+bound of the Higgs particle was found to be about
+640 GeV under some well defined conditions which we now come to.
+With the lattice regulator, the theory is made finite and the momentum
+cutoff is given by FORMULA . The continuum limit is achieved by
+taking FORMULA , or equivalently, taking the
+lattice correlation length FORMULA . For very large
+FORMULA , triviality of the theory forces the renormalized
+coupling constant FORMULA  to go to zero logarithmically. Since
+the vacuum expectation value FORMULA  is fixed in physical units, this
+would mean the Higgs mass is also going to zero in this limit
+like FORMULA . Making a larger
+Higgs mass is therefore equivalent to bringing down the cutoff FORMULA 
+relative to the Higgs mass. Of course, this will generate larger cutoff
+dependent terms (scaling violation) in the physical scattering cross section.
+In the case of the lattice cutoff, the scaling violation is represented
+by the violation of Euclidean invariance.
+The old triviality Higgs mass bound was
+obtained by demanding that in a Goldstone scattering process
+(which is equivalent to FORMULA  scattering in the Standard Model
+according to the Equivalence Theorem),
+there was not more than a few percent Euclidean invariance violation in the
+scattering cross section {{cite:49234004-c5f3-44e1-aa0e-fe1be3d92eba}}.
+It is evident from the above discussion
+that two things are crucial to set up the triviality
+mass bound of the Higgs particle. First, one has to know what
+the scaling violation will be when a certain type of regulator is introduced.
+Second, one has to have a well-defined method to calculate this
+scaling violation for a given set of parameters.
+In the case of the lattice Higgs bound study, the scaling violation
+is the Euclidean invariance violation and the method to calculate
+it is perturbation theory. Perturbation theory is a valid approach
+for the Higgs sector,
+because for all Higgs mass values below the bound,
+the coupling is weak enough for meaningful perturbative expansion.
+The old triviality Higgs mass
+bound was rather low because even at the upper
+bound value the renormalized coupling constant of the theory remains
+perturbative. In terms of the Higgs mass over
+vev ratio, FORMULA  is only about 3.
+Further increase to the Higgs mass results in
+a scattering amplitude with large lattice effects and can no longer represent
+the low energy continuum theory. Therefore,
+if the hypercubic lattice will not be the new
+physics, then the existence of
+a strongly interacting Higgs sector is excluded in a lattice regulated
+scalar field theory.
+There has been great concern that this finding was
+an artifact of the lattice regulator itself which breaks Euclidean
+invariance. This concern is reasonable if we consider
+the analogue in QCD. We know that the linear sigma model,
+which is nothing but the FORMULA  model in the broken phase,
+will generate the right physics
+of QCD at low energies (low energy theorems, PCAC, etc.).
+However, the corresponding ratio FORMULA 
+is much higher than in the Higgs case.
+Based on this analogy, technicolor models have been introduced which offers
+a possibility of strongly interacting Higgs sector.
+Due to the strong interacting nature of the technicolor at low
+energies, perturbation theory breaks down. Most of the analytic
+calculations are therefore performed using the effective chiral
+Lagrangian methods. A complete nonperturbative simulation of the
+technicolor theory including the dynamical fermions is very costly.
+Therefore, it would be nice to have a scalar model that can incorporate
+a strongly interacting Higgs sector.
+People have tried to perform the lattice calculation
+with better Euclidean invariance for the scalar models.
+The first significant increase of the Higgs mass
+bound (750 GeV) was reported
+{{cite:893e55ab-b619-44d9-8860-c5a9265722bc}} within the Symanzik improvement program
+on a hypercubic lattice structure {{cite:f93d122a-e6cb-4e39-839a-2df075f026bd}}. Similar results on
+different lattice structures, with higher dimensional lattice operators
+in the interaction term, have also been reported {{cite:7f5d6bd8-bd6f-40ef-a7b3-574ce97aba29}}.
+In this thesis, I will study
+the scalar sector of the Minimal Standard Model and the Higgs
+mass problem by adding a higher derivative term in the kinetic
+energy of the Higgs Lagrangian. With the higher derivative term,
+we have a finite FORMULA  scalar field theory interacting via a
+quartic coupling constant.
+
+Higher Derivative Field Theory and Indefinite Metric
+Quantization
+There have been serious concerns about the potential difficulties
+in higher derivative field theories
+{{cite:c5da66df-d1e8-435b-8d71-7c53468edb58}}, {{cite:39b46fc5-55f9-4fc1-9910-bbcddb6a92fa}}, {{cite:1511f66b-3463-4126-869e-c84d11a4b8a6}}, {{cite:d92de97e-bf63-4650-81f8-ebd374ae504c}}, {{cite:7930a53e-de1d-4483-958a-90ae5506ac4b}}, {{cite:0d518c0e-0465-455d-b27a-671212245e15}}, {{cite:7061f092-4a4a-4e67-90a2-a6f1bda37f22}}, {{cite:2f23a85e-c1c3-4d28-afa3-9f63016f899f}}, {{cite:2f0ddb14-3533-4fc0-8f51-fa5953bd2a41}}, {{cite:829bb6dc-4bc2-4df3-a8c1-17d0e5f8ed30}}, {{cite:d3d9d51a-43b0-4a8f-bd7d-0fe71627c0f8}}, {{cite:dda5a05d-343c-4bd9-8878-81a3e8217fa2}}.
+I will briefly mention some of these difficulties in
+this section, and the detailed
+study will be the subject of the subsequent chapters.
+First of all, as we will see in Chapter (), the conventional
+quantization procedure does not offer a meaningful theory because
+the spectrum is neither bounded below nor above. So, finding new ways of
+quantizing the higher derivative theory is necessary. One of the
+choices is the indefinite metric quantization {{cite:29741b77-9b21-4beb-8c12-84fbdb2f5d09}}, {{cite:2f23a85e-c1c3-4d28-afa3-9f63016f899f}}, {{cite:0d518c0e-0465-455d-b27a-671212245e15}}. By
+doing this the theory has a unique vacuum but, in the meantime, the
+positivity of the norm in the Hilbert space is lost.
+Therefore, one has
+to identify a subspace in the full Hilbert space as the physical
+space and maintain all the physical principles.
+Unitarity is one of
+these principles that one would like to maintain because this is
+at the heart of any quantum theory for which Born's probability
+description still applies. Before any meaningfully
+interpretation of negative probability is found,
+unitarity should be preserved in any physical theory. This is
+a big challenge for the higher derivative theories simply
+because the full Hilbert space is not positively normed, and negative
+normed states, also called ghost states, may violate unitarity.
+This is one of the main reasons why many people have
+abandoned the higher derivative field theories. However,
+I will demonstrate that, there could be a scenario in which the ghost particles
+are represented as a complex conjugate pair,
+and unitarity is maintained {{cite:d92de97e-bf63-4650-81f8-ebd374ae504c}}, {{cite:0d518c0e-0465-455d-b27a-671212245e15}}, {{cite:6e7760e6-b8df-4b47-a706-c3e997126237}}.
+This possibility was first pointed out by T. D. Lee in the late
+sixties. There have been a lot of discussions on this issue and
+it still remains quite controversial.
+Causality is another principle of the physical theory. As has been
+pointed out earlier by Lee {{cite:d92de97e-bf63-4650-81f8-ebd374ae504c}}, with the complex conjugate ghost pair,
+only microscopic causality is violated, and macroscopically it is
+very difficult to detect in the experiments (see Chapter () for
+further information).
+
+ Higgs Mass Problem in Higher Derivative Scalar Field Theory
+It is very interesting to study the Higgs mass bound problem in
+this higher derivative scalar field theory.
+There have always been several ways of viewing this theory.
+The first and most conventional
+way is to view it as the Pauli-Villars regulated Higgs
+theory {{cite:0051db0c-7761-4b13-a329-2e9b37d157a8}}, {{cite:0d518c0e-0465-455d-b27a-671212245e15}}, {{cite:7536ab34-a256-45d7-ba2b-b1bad666b341}}, {{cite:e74a4a49-4511-43fd-ad06-f1da0665a238}}.
+The second is to view it as a stand-alone, finite,
+well-defined theory with ghosts.
+The third is to view it as some truncated expansion of the
+effective low energy theory after the degrees of freedom representing
+the new physics have been integrated out.
+The original full theory probably has no ghost states, but after the
+truncation of the full series, the model may contain
+ghost excitations.
+Obviously, the distinction between the second and the third view
+is ambiguous since we do not know what the full theory should be.
+The first view, however, should be taken very carefully.
+Strictly speaking, this view is only valid in the limit of
+small FORMULA  ratio, where FORMULA  is the Higgs mass and FORMULA  is the
+Pauli-Villars mass parameter. If the mass of the Higgs is getting
+close to the Pauli-Villars mass parameter, we have to take the
+second view and treat the theory as a finite theory with ghosts.
+In the limit of FORMULA ,
+this finite theory coincides with
+the conventional FORMULA  scalar field theory with a Pauli-Villars
+cutoff. When the Higgs mass scale is comparable with the ghost
+parameter, the higher derivative field theory becomes a theory with
+complicated particle contents.
+To study the Higgs mass bound problem in the higher derivative
+FORMULA  model, we have to answer the same two questions. First, what
+is the scaling violation; second, how does one calculate it?
+The answer to the first question is not easy in the case of the
+higher derivative theory. Naively thinking, one would expect there should
+be some ghost effects. However, despite the negative metric ghost
+states in the theory, it remains unitary and the scattering cross
+section of ordinary particles looks perfectly normal (see
+Chapter () for details).
+The only unusual effect
+found for the higher derivative FORMULA  model is the
+violation of microscopic causality. As has been mentioned above,
+this type of acausal effect is extremely difficult to detect.
+That is to say, introducing the higher derivative terms to the
+theory makes the theory finite, only at the cost of violating
+microscopic causality, which is invisible for practical reasons.
+One might still worry that, in this theory, all the results will depend on
+the ghost mass parameter and this is some sort of scaling violation.
+This leads us to the second fundamental
+question of the problem, namely, how to calculate the scaling
+violations.
+Obviously, if the Higgs particle remains light and the theory
+is still in the perturbative regime, we can do the perturbative
+calculation and find out how the scattering amplitude depends on
+the new parameter FORMULA . Whether to call it the scaling violation
+is still a question. It is some deviation from the Minimal Standard
+Model in the perturbative range.
+However, if the Higgs is heavy and the
+interaction is getting stronger, we will not be able to find out
+the scaling violation simply because we have nothing to compare with.
+In a strong interacting theory, we have no idea what the universal
+scattering amplitude will look like. In fact, we do not know how to
+define such a quantity meaningfully.
+A new nonperturbative
+interpretation of the Higgs mass bound therefore becomes necessary.
+From the above discussion, we can see that there are several
+major differences between the higher derivative theory and the
+conventional theory on the lattice in regards to the Higgs
+mass bound problem. First, the scaling violation in the conventional
+theory with the lattice regulator is unambiguously defined, both
+perturbatively and nonperturbatively. Even without the help of the
+perturbation theory, we can quantify the violation of the Euclidean
+invariance meaningfully {{cite:1e72222d-9178-4dfa-a1ba-70b6ba78e840}}. In the higher derivative case,
+however, the scaling violation is not well-defined, at least not
+nonperturbatively. One can try to search the FORMULA  dependence of the
+theory only in perturbation theory.
+Although the higher derivative theory is a finite theory, it still
+has infinite degrees of freedom. In order to carry out
+a nonperturbative simulation of the model, one must make the number
+of degree of freedom finite. This can be done by introducing an
+underlying hypercubic lattice structure to the model. The lattice
+spacing FORMULA  introduces a new short distance energy scale with
+the associated lattice momentum cutoff FORMULA . In order to
+recover the higher derivative theory in the continuum, one would have
+to work towards the limit FORMULA  with a fixed
+ratio of FORMULA . In so doing, the higher derivative FORMULA  model
+has the same scaling violation as the conventional model, that is,
+it violates Euclidean invariance. In the lattice higher derivative
+model, in order to recover the corresponding continuum model, one
+only has to eliminate the scaling violation that is associated with
+the lattice.
+For the higher derivative model on the lattice, one can view it
+as the conventional model on the lattice plus some so-called
+higher dimensional (or irrelevant) operators.
+Recently, Neuberger et. al. {{cite:7f5d6bd8-bd6f-40ef-a7b3-574ce97aba29}}
+reported a new Higgs mass bound based
+on the systematic search in all the dimension 6 operators added
+to the conventional Higgs model on the FORMULA  lattice.
+Based on their study, they claim that
+the triviality Higgs mass bound is
+FORMULA  GeV, and this bound value is
+universal in the sense that no other higher dimensional
+operators will change it. However, our model discussed herein
+contradicts their conclusion. Our model can be viewed as
+the conventional model plus one dimension 8 operator, which
+is supposed to be irrelevant according to their study. However, from
+all our simulation results, we can easily drive the Higgs mass
+value into the TeV range (see Chapter ()
+for more details). We believe that the so-called “irrelevant
+operators” are not irrelevant at all, at least not for the Higgs
+mass bound problem. After all, by adding new dimension 6 irrelevant
+operators, Neuberger et. al. have found a rather different bound.
+Therefore, the notion of irrelevant operators is a very misleading
+one as far as the Higgs mass bound problem is concerned.
+As we discussed above, in our model,
+it is impossible to set up a precise Higgs mass bound
+due to the strong interaction. However, the model is
+able to accommodate a Higgs particle which is heavier than the
+old Higgs mass bounds with no lattice scaling violations.
+My thesis is organized as follows: in Chapter 2 ,
+the quantization of the higher derivative theory is
+established using indefinite metric quantization.
+In Chapter 3, the higher derivative FORMULA  model is
+studied within the framework of FORMULA  expansion and
+the important issue of
+unitarity and causality are also discussed
+. In Chapter 4, the lattice version of the
+higher derivative field theory is presented and the possibility
+of nonperturbative studies using Monte Carlo simulation is discussed,
+and the symmetry breaking mechanism in the finite
+volume is studied within the Born-Oppenheimer approximation.
+In Chapter 5,
+numerical results of the simulation are presented and analyzed.
+These simulation results demonstrate
+that the interaction of the higher derivative
+scalar field theory is much stronger than the conventional
+scalar field theory. Therefore, a heavy Higgs particle in the
+TeV range becomes a real possibility in the theory.
+Chapter 6 discusses the extraction of the resonance
+parameters of the unstable Higgs particle in the finite volume
+using finite size techniques. This method, first suggested by
+Lüscher {{cite:eecb6dea-3636-40e6-bb74-6babfdd8dbbc}}, {{cite:6d69cf20-a062-4748-8131-05620b17054a}}, has proved to work very well for the
+conventional FORMULA  model {{cite:784ae573-0e05-4b78-b3c9-3a51f8eab438}}, {{cite:5397a205-98a0-4ff2-b1d4-db07df6d6d99}}.
+We demonstrate that this also
+works in the higher derivative FORMULA  model after
+appropriate adjustments. In fact, we believe this is the
+only sensible way to extract the mass parameter in the simulation
+of a strongly interacting theory.
+
+Higher Derivative Field Theories
+and Indefinite Metric Quantization
+
+Higher Derivative Oscillator
+Classical Hamiltonian
+Many important features of higher derivative field theories can
+be illustrated by their simple quantum mechanical counterparts. As
+an example, let us first study a higher derivative oscillator
+{{cite:d61afb23-e417-46b8-9440-9cd3671b5410}}
+given by the following Lagrangian
+FORMULA 
+This Lagrangian describes a simple harmonic oscillator of
+frequency FORMULA  with second and third derivative terms added.
+For simple interpretation of the spectrum, the coefficients of
+the derivative terms are given in terms of FORMULA  and FORMULA ;
+the only restrictions imposed are FORMULA  and FORMULA .
+With the higher derivative terms added,
+this Lagrangian produces new features that are not present in the conventional
+theory. Classically, one can look at the time evolution of the
+position FORMULA  which is a solution of the
+corresponding Euler-Lagrange equation
+FORMULA 
+Some of the new features of the higher derivative theory
+already appear at the classical level. For example, in order
+to specify the solution, one has to know more initial conditions
+than in the usual theory. In this particular example, one needs to
+know FORMULA  to specify a unique solution,
+where FORMULA  denotes the FORMULA -th time derivative of
+the variable FORMULA .
+This in fact tells us that the higher derivative theory has
+more degrees of freedom than the conventional theory.
+Another new feature is that
+there are runaway solutions to this classical
+equation of motion {{cite:18d4b39e-10f9-4333-9205-25ea8eaa4882}}.
+The Hamiltonian of a higher derivative Lagrangian
+was worked out long time ago by
+Ostrogradsky {{cite:3c3c082f-8dd9-4d3f-b1cb-9d17e038b2fe}}. In the Hamiltonian formalism, new degrees
+of freedom show up explicitly due to the higher derivative terms. In this
+particular example, there are three independent coordinates and their
+corresponding conjugate momenta, given by
+FORMULA 
+Notice that FORMULA  is not proportional to FORMULA  any more.
+Instead, both FORMULA  and FORMULA  become independent variables.
+In terms of these variables the Hamiltonian reads
+FORMULA 
+The classical equation of motion can be written out in the
+Hamiltonian form
+FORMULA 
+where FORMULA  runs from 1 to 3. It is easy to verify that
+the Hamilton equations of motion are equivalent to the Euler-Lagrange form,
+once we have expressed everything in terms of FORMULA 
+and its time derivatives.
+Note , however, that this Hamiltonian does not look like the conventional
+Hamiltonian at all. The limit of small FORMULA  is a singular limit, and
+we will not be able to recover the standard oscillator Hamiltonian by
+taking this limit.
+
+Quantization
+Let us now try to quantize this Hamiltonian with the
+conventional canonical method. We will treat FORMULA , FORMULA  and
+FORMULA  as independent variables and they have the usual
+commutator with the corresponding momenta
+FORMULA 
+with other commutators vanishing. This already
+says something unusual about this quantum theory, namely that
+the position of a particle and its velocity
+are independent variables and can be measured
+simultaneously; while in conventional quantum mechanics
+they form a conjugate pair and cannot be measured simultaneously.
+In the higher derivative theory, it is the quantity FORMULA  that
+cannot be simultaneously measured with FORMULA .
+From the expression of FORMULA ,
+it implies that the
+measurement of FORMULA  together with FORMULA ,
+FORMULA  together with FORMULA  and
+FORMULA  together with FORMULA  are impossible.
+It is not very easy to see that
+the quadratic Hamiltonian in
+Equation (REF ) still
+represents the oscillator spectrum.
+In fact, using a linear transformation, the quadratic part
+of the Hamiltonian can be diagonalized exactly
+FORMULA 
+with FORMULA  and FORMULA . The creation and
+annihilation operators appeared in the
+above equation are linear combinations
+of FORMULA  and FORMULA  and satisfy the
+following standard commutation relations:
+FORMULA 
+The other commutators all vanish.
+This type of spectrum has many problems {{cite:d61afb23-e417-46b8-9440-9cd3671b5410}}.
+It is not bounded below, not even the real part.
+Therefore, no ground state exists in this theory. This unboundedness is
+a very common feature to all higher derivative quantum theories.
+It is a direct reflection of the the “wrong sign” in front of
+one of the quadratic terms in the Hamiltonian.
+One way of dealing with these problems is to try another
+quantization procedure and this is where indefinite metric
+quantization {{cite:ed770717-24c6-4d97-bbdd-9f8810f00266}}, {{cite:d2673d33-f736-4f9f-890d-f98958749797}}, {{cite:5620ed50-f3e9-4d38-ba9f-b1156b401f14}} comes in.
+The idea of using negative metric in the quantization procedure
+was introduced long ago, especially for the
+quantization of gauge fields {{cite:5620ed50-f3e9-4d38-ba9f-b1156b401f14}}.
+In this framework, the full Hilbert space is too large
+for physical interests. It contains negative normed states which are
+necessary for the consistent quantization.
+The negative normed states must be removed from the
+physical subspace to maintain the probability interpretation
+of the theory. We will apply the same idea here {{cite:880d3c85-1c6f-4c5c-a6b1-52edbc7e73ff}}.
+First, notice that by appropriate scaling: FORMULA  and FORMULA , with
+FORMULA  and by the change
+FORMULA , we can rewrite the
+Hamiltonian into the following form
+FORMULA 
+Now make the substitution
+FORMULA 
+This will not change the commutator of FORMULA  and FORMULA  and we may
+write the Hamiltonian as
+FORMULA 
+where the P's and Q's are related to original variables
+by the following table
+FORMULA 
+We have used the matrix notation FORMULA  and FORMULA  and
+the mass matrix FORMULA  is
+FORMULA 
+Negative metric quantization corresponds to
+demanding that the FORMULA 's and FORMULA 's
+are hermitian, so the Hamiltonian (REF )
+itself is not hermitian. Rather, it is self-adjoint with respect
+to a metric operator FORMULA  satisfying
+FORMULA 
+In this indefinite Hilbert space, the inner product of any two
+states, FORMULA  and FORMULA , is defined to be
+FORMULA . It is easy to show that
+the expectation value of any self-adjoint operator is real
+in any states.
+Therefore, the expectation value of the
+Hamiltonian in any state is real, although the eigenvalues
+of the Hamiltonian may be complex.
+This immediately implies that the complex energy
+eigenstates have zero norm.
+The dynamics of any state
+vector are still governed by the Schrödinger equation
+FORMULA 
+It is easy to show that the norm of a state is still preserved
+under time evolution.
+
+Diagonalization
+We can now perform transformation of the variables
+FORMULA  and FORMULA  according to a “rotation”  FORMULA
+FORMULA 
+and diagonalize the mass matrix FORMULA . The eigenvalues of this matrix
+are simply given by FORMULA , FORMULA 
+and FORMULA .
+This is why we chose complicated parametrization of the Lagrangian.
+Therefore, we can define the creation and annihilation operators as
+FORMULA 
+These operators satisfy the standard commutation relation
+FORMULA 
+and the Hamiltonian has the standard oscillator form
+FORMULA 
+The ground state is defined to be the state which is simultaneously
+annihilated by FORMULA , FORMULA  and FORMULA .
+We assume that the
+ground state is positively normed to 1. Negative metric is seen from
+the adjoint relations among the creation and annihilation operators
+FORMULA 
+We can then build up our full Hilbert space by applying the various
+creation operators to the ground state. The eigenvalues of the
+Hamiltonian can, in general, be complex if the complex ghost pair
+is not evenly excited. All the eigenstates with
+complex energy have zero norms. This is a common feature for all
+self-adjoint Hamiltonians. The excited states are constructed and
+normalized according to
+FORMULA 
+
+Ground State Wave Function
+We can work out the coordinate space wavefunction for the ground
+state by substituting the old variables. We get
+FORMULA 
+In order for the ground state to be normalizable, some constraints must
+be put on the parameters FORMULA  and FORMULA .
+First of all, the normalization condition is somewhat different in the
+case of indefinite metric quantization. The condition is
+FORMULA 
+where we have omitted the sum (integration) over the FORMULA 's.
+The ground state wave function given above is just
+FORMULA . Therefore, due to the
+existence of FORMULA  which flips the sign of FORMULA , the normalization
+condition for the ground state wave function is written as
+FORMULA 
+Now we can write down the sufficient condition for
+this Gaussian type integral to converge.
+Since the quantity
+FORMULA 
+is always positive, the condition for normalizability
+reduces to the following
+FORMULA 
+The condition FORMULA  is equivalent to the
+condition FORMULA . In order to fulfill the other
+conditions the parameter pair FORMULA  has to be
+in some range. In Figure (REF ),
+the function
+FORMULA  is plotted
+as a function of FORMULA  for some values of FORMULA . Since this
+combination is symmetric with respect to the change FORMULA , it is sufficient to study
+the behavior in the parameter range FORMULA .
+FIGURE 
+It is seen from this figure that for any value of the parameter FORMULA , there
+exists a critical value FORMULA  below which the
+ground state normalizability is preserved. In
+Figure (REF ), this function is plotted in
+the whole range FORMULA . As a result, if we restrict
+the angle FORMULA  to be less than about FORMULA , the ground
+state wave function is normalizable for all values of FORMULA .
+FIGURE 
+It is useful to have the expression of FORMULA  in terms of the
+creation and annihilation operators:
+FORMULA 
+This concludes our discussion of the higher derivative oscillator.
+Note that, if we have an extra term FORMULA  in the starting
+Lagrangian, then our Hamiltonian would consist of two parts,
+FORMULA , where FORMULA  is just the oscillator Hamiltonian
+discussed above and FORMULA  with FORMULA  given by
+Equation (REF ) . Thus, the oscillator
+gives us a good starting point
+for perturbation theory.
+
+ Euclidean Path Integral 
+Now let us evaluate the partition function of the
+higher derivative theory defined by
+FORMULA 
+where the summation is over all states FORMULA 
+such that they are complete:
+FORMULA 
+One convenient choice for the states is FORMULA .
+Then one can make use of the derivative forms of the momentum
+operators and derive a path integral form for the partition
+function, just like in the usual theory. First one
+has to slice the Euclidean time FORMULA  into small intervals and, then,
+the partition function is written in terms of the integration
+of the intermediate positions. This path integral form of
+the partition function is exactly the
+Euclidean path integral that one would naively write down
+when not concerned with the canonical quantization
+procedure {{cite:97b2b3af-ae5e-42c8-95dd-f7f208a98fc7}}, {{cite:72f630b8-cf58-43b1-90f6-0f1baa260b22}}
+FORMULA 
+The Euclidean propagator of the variable FORMULA 
+can be found by differentiating the partition functional
+with respect to the external source FORMULA . In Fourier
+space, it is given by
+FORMULA 
+The multiple pole structure in the propagator is a manifestation of
+the spectrum of the theory. As can be seen clearly, the poles are
+located exactly at three types of energy gaps of the theory.
+There is a big difference here in the
+higher derivative theory as compared with the usual theory.
+The Minkowski path integral {{cite:880d3c85-1c6f-4c5c-a6b1-52edbc7e73ff}}, {{cite:5732c5d3-e071-4cd7-83c3-971f31b586f4}}
+is not well defined. In fact, due
+to the complex ghost energy, it has runaway modes at large
+temporal separation. Also,
+we cannot do a wick rotation from the Euclidean to the Minkowski
+because of the complex ghost pole on the first sheet.
+We should emphasize that the Euclidean path integral
+is still well defined. This is the object that we will
+be using in our numerical simulation of the theory.
+Also, the Euclidean path integral in principle contains all
+the information about the higher derivative theory.
+By measuring the Euclidean propagator of the theory, one can
+extract the energy excitations of the higher derivative theory
+and, hence, the eigenvalues of the Hamiltonian.
+
+Higher Derivative Free Field Theory
+Having discussed the quantum mechanical oscillator,
+let us now turn
+to the simplest higher derivative field theory,
+free field theory.
+Since most of the procedures are quite similar to the
+quantum mechanical case, we will be very brief in this section.
+Consider the one component higher derivative scalar field theory
+parametrized by the
+Lagrangian
+FORMULA 
+where the FORMULA  is the Minkowski d'Alambert operator.
+The Hamiltonian density can be obtained in the same way as in
+the quantum mechanical example
+FORMULA 
+Again, we can interchange the role of FORMULA  and FORMULA , which
+amounts to FORMULA  and
+FORMULA  .
+We also impose negative metric on FORMULA  and FORMULA  by doing the
+substitution FORMULA  and
+FORMULA  , and after these changes our Hamiltonian density
+is,
+FORMULA 
+Negative metric quantization then corresponds to making FORMULA  and FORMULA  hermitian operators. Then the
+Hamiltonian itself is not hermitian but still self-adjoint
+with respect to the negative metric FORMULA  which flips the
+sign of FORMULA  and FORMULA . We have
+FORMULA 
+Introducing the Fourier modes
+FORMULA 
+where the index FORMULA  runs from 1 to 3.
+We can also write the similar expression for  FORMULA
+FORMULA 
+To ensure basic commutation relations, we must have
+FORMULA 
+We can then write the Hamiltonian as
+FORMULA 
+After some rescaling of the variables
+we can bring the Hamiltonian into similar form as in the
+quantum mechanical oscillator case
+FORMULA 
+We then perform the same “rotation” transformation
+as in the oscillator case, and then the above Hamiltonian is
+diaganolized to
+FORMULA 
+where the frequency
+FORMULA ,
+FORMULA  and
+FORMULA .
+The creation and annihilation operators are given by
+FORMULA 
+with FORMULA . The Hamiltonian finally looks like
+FORMULA 
+where the summation is over all the momentum modes and
+three types of excitations. The
+creation and annihilation operators have the standard
+commutation relations
+FORMULA 
+Similarly, the field FORMULA  can be expressed as a linear combination
+of the creation and annihilation operators which will be
+given explicitly in the next section. The particle contents of this
+free Hamiltonian is now clear. One has three types of excitations for
+each three-momentum FORMULA . The operator
+FORMULA 
+creates an ordinary particle of mass FORMULA , momentum FORMULA  and
+energy FORMULA .
+The operator
+FORMULA 
+creates a ghost particle of mass FORMULA , momentum FORMULA  and
+energy FORMULA .
+The operator
+FORMULA 
+creates an antighost particle.
+
+Higher Derivative FORMULA  Model in the Symmetric Phase
+The higher derivative field theory can be easily generalized
+to an FORMULA -symmetric scalar field theory with a quartic coupling.
+In the symmetric phase it is convenient to parametrize the Lagrangian
+as
+FORMULA 
+The Hamiltonian of the theory,
+after indefinite metric quantization, can be expressed in terms of
+creation and annihilation operators, FORMULA ,
+where the free part of the Hamiltonian
+is given by Equation (REF ).
+The interaction part of the Hamiltonian is the conventional one, namely
+FORMULA ,
+where the field FORMULA  can be written as a linear combination
+of the creation and annihilation operators,
+FORMULA 
+where the
+values for FORMULA  are given by the following list:
+FORMULA 
+The negative metric is seen from the
+adjoint relations among the creation and annihilation operators
+FORMULA 
+where FORMULA  is the metric operator satisfying FORMULA  and
+FORMULA . It is clear that the
+Hamiltonian itself is self-adjoint with respect to the metric FORMULA , i.e.
+FORMULA .
+
+Higher Derivative FORMULA  Model in the Broken Phase
+One starts with the general higher derivative Lagrangian which
+has a global FORMULA  symmetry
+FORMULA 
+where FORMULA 
+is the Minkowski space d'Alambert operator and
+the coefficients are parametrized as
+FORMULA 
+After the usual steps of indefinite metric quantization, the
+Hamiltonian has the form
+FORMULA 
+The corresponding FORMULA  generators are given by
+FORMULA 
+which obviously commute with the Hamiltonian.
+Next, the Fourier modes are introduced for each variable
+FORMULA 
+The Hamiltonian is brought into the following form:
+FORMULA 
+We will single out the direction of the FORMULA  variable
+and fix it in some direction in the FORMULA  space.
+This treatment is only valid in the limit of infinite volume.
+Strictly speaking, in a finite volume, the symmetry is not
+broken. Therefore, the description of symmetry breaking in the finite
+volume needs more careful study. As we will show in Chapter (),
+in a very large but finite volume, one can apply the adiabatic
+approximation (or Born-Oppenheimer Approximation)
+to the direction of the zeromode.
+We find that the direction of the zeromode rotates very slowly and
+decouples from the other modes in the theory.
+Therefore, if the volume is very large,
+it is legitimate to assume that the direction of the
+zeromode is frozen in the FORMULA  space.
+With this in mind, we can then decompose
+FORMULA 
+and similarly for the FORMULA  and FORMULA  variables.
+The value of FORMULA  is set to FORMULA .
+The Hamiltonian is then written as sum of three types of
+terms:
+FORMULA 
+where FORMULA .
+We will examine each piece separately.
+The FORMULA  piece can be diagonalized the same way
+as in section (). The interaction piece is also
+expressed as the creation and annihilation operators through
+the field variables. The FORMULA  piece is the only one that
+is new in the broken phase. For convenience we use the rescaled
+variables given by
+FORMULA 
+and express the radial variables FORMULA  as
+FORMULA 
+The derivatives for the FORMULA  are now substituted by
+FORMULA 
+where the index FORMULA  runs from 1 to FORMULA .
+We have assumed that the volume is practically infinite and
+the direction FORMULA  is really a constant unit vector in
+FORMULA  space. As we will see in Chapter (), this is
+only approximately true in a finite volume.
+Use the following identity
+FORMULA 
+FORMULA  is further decomposed into
+two parts
+FORMULA 
+The longitudinal part has the same form as the simple oscillator
+and can be easily diagonalized. The transverse part FORMULA  can also be
+diagonalized with the transformation
+FORMULA 
+where FORMULA  is a two by two matrix
+FORMULA 
+The angle FORMULA  is the complex phase of the
+Goldstone ghost mass parameter
+FORMULA , which is given by
+FORMULA 
+The transverse part of the Hamiltonian is then diagonalized to
+FORMULA 
+where the summation of FORMULA  is from 1 to FORMULA  and the
+energy gap is FORMULA  and
+FORMULA .
+In terms of these operators we can write out the explicit
+form of  FORMULA
+FORMULA 
+where the polarization factor FORMULA  is given by
+FORMULA .
+To summarize, in the broken phase we would have the following
+Hamiltonian
+FORMULA 
+The
+index FORMULA  takes the value FORMULA  and FORMULA  respectively. All the
+operators can be expressed in terms of the creation and annihilation
+operators as
+FORMULA 
+where the form factors FORMULA  are given by the following
+table
+FORMULA 
+The creation and annihilation operators enjoy the following
+commutation relations
+FORMULA 
+
+ Unitarity and Large FORMULA  Expansion 
+
+Lippmann-Schwinger Equation And Unitarity
+In this section, we will try to answer one of the most important
+questions about higher derivative theories, namely, the unitarity
+problem {{cite:44d54053-9316-4847-87b0-9d6beff62288}}, {{cite:c7833275-f362-4a39-a040-8680a0a59344}}, {{cite:8ca7cc54-4bb8-40dc-9ff2-35df8b1ec5b0}}, {{cite:a78acd77-e41f-41ce-a841-48e654e18f74}}, {{cite:0156576b-8ac2-4596-a648-968f6cae9e07}}.
+In the first part of the discussion,
+we will set up the general formalism of scattering
+matrix in the higher derivative theory and argue that the
+FORMULA -matrix defined within the
+physical subspace can be made unitary.
+In the second part, we will present
+a concrete example of the unitary scattering amplitude in the
+large FORMULA  limit of the FORMULA  model which involves the ghost
+states as intermediate states.
+General Formalism and Unitarity
+Let us imagine that our Hilbert space is built up by all the states
+generated from the vacuum by successive operations of creation operators
+as described in Chapter ().
+Some states will have negative norm and complex energy
+components. We assume that
+all states available to build the initial state
+contain only real
+energy components of the free Hamiltonian in all Lorentz frames
+{{cite:c7833275-f362-4a39-a040-8680a0a59344}}. We will call these states “normal states” or
+“physical states”. Denote
+the eigenstate of the free Hamiltonian by FORMULA  such that
+FORMULA 
+Then one can construct two states, denoted as FORMULA  and FORMULA ,
+from the Lippmann-Schwinger equation
+FORMULA 
+It is then easy to show that the states FORMULA  are eigenstates of
+the full Hamiltonian with corresponding energy FORMULA . If we now form
+wavepackets from these states, one can see that they correspond to
+incoming and outgoing waves in the past or future. Therefore, they give us
+a good description of the scattering process. We can rewrite the
+above equation as
+FORMULA 
+In this form, it is clear that only energy conserving components of
+FORMULA  survive the scattering since, if the components are of different
+energy, they will make the operator FORMULA  nonsingular in the FORMULA 
+goes to zero limit, hence are killed by the FORMULA  in front. The FORMULA -
+matrix between any two normal states FORMULA  and FORMULA  is then
+defined to be
+FORMULA 
+Using the perturbative expansion of the Green's function one can show
+that the FORMULA -matrix element defined above is related to the so called
+FORMULA -matrix (or FORMULA -matrix) element by
+FORMULA 
+To show unitarity, we write the Lippmann-Schwinger equation in a
+special way
+FORMULA 
+where FORMULA  and
+FORMULA  are called wave operators.
+Using the adjointness of the Hamiltonian we see that
+FORMULA 
+From these two relations we can see that
+FORMULA 
+where FORMULA  is the complex energy projector for the free Hamiltonian.
+Let us now consider the sum
+FORMULA 
+where, in the second step, we have inserted
+the complete set of the full Hamiltonian.
+This establishes the unitarity of the FORMULA -matrix.
+The above proof looks very formal.
+To clearly understand the role of the ghost states in
+the theory let us calculate some scattering processes
+in the higher derivative FORMULA  model.
+
+Large-FORMULA  Scattering Amplitude of FORMULA  Model
+The basic formula is the perturbation expansion of the FORMULA -matrix given
+by Equation (REF ) .
+We will consider the large-FORMULA  limit of the geometric
+resummation of the FORMULA -channel bubble diagram. We will show how the
+modified Feynman Rules arise naturally from this calculation.
+First, we calculate the FORMULA -matrix elements to second order
+in bare perturbation
+theory of the higher derivative FORMULA  theory in the broken phase.
+The final large FORMULA  scattering amplitude can then be formed
+from the geometric resummation of the bubbles and the
+large FORMULA  Higgs propagator.
+The calculation in the symmetric phase is quite similar.
+We will parametrize the FORMULA -matrix elements as
+FORMULA 
+where the amplitude FORMULA  is the Feynman amplitude.
+The lowest order is trivial namely
+FORMULA 
+To the second order, we have to consider the intermediate states
+contributions and, in the large-FORMULA  limit, this reduces to only
+FORMULA -channel scattering. This leads us to the study of the
+following one loop contribution,
+FORMULA 
+in which two types of intermediate states are included, one has
+energy FORMULA , the other has energy
+FORMULA .
+This form can be brought into the usual loop integral form by using the
+identity
+FORMULA 
+where the complex contour is a contour that separates FORMULA  and
+FORMULA  from FORMULA  and FORMULA  as
+shown in Figure (REF ).
+FIGURE 
+However, this type of contour could have some pinching problem
+{{cite:c7833275-f362-4a39-a040-8680a0a59344}}, {{cite:8ca7cc54-4bb8-40dc-9ff2-35df8b1ec5b0}}.
+The problem only occurs for the
+ghost and antighost pair contribution in
+the above equation, i.e. FORMULA .
+In order to see how the potential pinching problem occurs,
+we have shown
+the movement of the poles in the complex
+FORMULA  plane as the center of mass energy increases
+in Figure (REF )
+The appropriate contour before the pinching is also shown.
+It is easy to see that if the center of mass energy FORMULA  is
+less than the so called ghost antighost threshold
+FORMULA , there is no pinching
+and the contour is well defined. As the center of mass energy
+increases, four of the eight poles move to the right and
+two of them pinch with FORMULA  and FORMULA .
+One then has to specify how to deform the contour in
+the case of pinching.
+FIGURE 
+This type of contour deformation
+in the presence of possible pinching was also discussed before by
+Cutkosky et al. {{cite:8ca7cc54-4bb8-40dc-9ff2-35df8b1ec5b0}}.
+They started directly from the integral representation
+and tried to define a contour when the ghost and antighost
+masses are not exactly complex conjugate of each other, namely
+FORMULA , where FORMULA  is some small parameter.
+Then, for every nonvanishing FORMULA , they were able to find
+a suitable contour. The final result is defined to be the limit
+where FORMULA .
+The corresponding contour is shown in Figure (REF ).
+FIGURE 
+This prescription has a disadvantage that it is
+not justified with any theoretical consideration.
+In fact, the Cutkosky prescription is only one of the many ways
+to analyticly continue the integral (REF ).
+To specify the “right” analytic continuation, one would need
+some input from the Hamiltonian description of the theory.
+We have started from the Hamiltonian picture of
+the theory, so the Hamiltonian should tell us how to
+define our contour. Note that pinching only occurs when
+the FORMULA  prescription is not applied to the integral.
+With the
+FORMULA , however, the pinching is avoided for real value of FORMULA  and
+we can always find a suitable contour. This contour is shown
+in Figure (REF ). It is clear that our contour differs
+from the one discussed by Cutkosky et al. and therefore, our final
+result is different from theirs.
+Now the Feynman amplitude can be expressed as
+FORMULA 
+This amplitude represents the Feynman diagram as shown
+in Figure (REF ).
+FIGURE 
+We can shift the integration variable FORMULA  and
+after a Wick rotation we can perform the FORMULA  integral.
+The integral
+itself is finite due to the modification of the propagator at large
+momentum and we are left with an integral with Feynman parameter only
+FORMULA 
+It is very interesting to study the imaginary part of the bubble
+integral. The imaginary part comes only from the angular part of the
+argument in the logarithm. The function being quadratic in FORMULA  has two
+roots in the complex FORMULA  plane which are given by
+FORMULA 
+where FORMULA  and FORMULA  can take values of three different
+masses in the theory. The most important combination is when both are
+Goldstone particles. Then, for FORMULA , we have two conjugate roots whose
+real part is exactly FORMULA , therefore, just by symmetry, there is no
+imaginary part contribution from this term. This corresponds to the case
+that the center of mass energy is less than the threshold. Due to the
+massless Goldstone, the lowest threshold is at zero energy. However, when
+FORMULA  two roots are real and the imaginary part develops,
+we have
+FORMULA 
+In fact one can show, just from the symmetric form
+of the integral, that this is the only imaginary part
+contribution to the diagram!
+For example the imaginary part from the
+mass pair FORMULA  and FORMULA  exactly cancels the imaginary part from the
+mass pair FORMULA  and FORMULA  and so on. In the large-FORMULA  limit
+the scattering amplitude is obtained by summing the geometric
+chain of the bubbles and the tree contribution from the
+intermediate Higgs state
+FORMULA 
+Taking the imaginary part of this equation, we get the Optical
+Theorem in the large-FORMULA  limit
+FORMULA 
+The bubble integral can be exactly worked out. It is a function with
+rather complicated analytic structure.
+The detailed discussion is listed in the appendix.
+The scattering amplitude
+is obtained by taking FORMULA  on the physical sheet.
+It is interesting to study the Goldstone-Goldstone scattering cross
+section in the large-FORMULA  limit.
+FIGURE 
+In Figure (REF ) we plotted the cross section
+as a function of FORMULA  in Goldstone ghost mass unit. Here the
+Goldstone ghost pair has a complex phase of FORMULA  and the peak
+corresponds to the Higgs pole on the second sheet. It is amazing
+that the ghost pair is so well-hidden in the tail of the cross section
+that it would be very difficult
+for experimentalists to determine that there is a ghost pair
+hidden somewhere. Also plotted in Figure (REF )
+is the scattering phase shift
+as a function of center of mass energy. We see that the
+phase shift starts out increasing with FORMULA  , and at the Higgs pole
+it has a sharp rise. If the Higgs particle were infinitely
+narrow then the rise would be exactly FORMULA . Due to the finiteness of
+its width and the Goldstone background, the cross section differs from the
+description of Breit-Wigner shape. What is
+“unusual” about this theory is that the phase shift decreases as the
+energy gets through the real part of the ghost mass. This is an
+indication of possible acausal behavior in the
+scattering, because the sign of FORMULA 
+determines the relative phase of the scattered wave to the incident
+wave. Although for the scattering by a repulsive
+potential in the usual theory, this quantity can also be
+negative, it would become acausal if this quantity becomes too large,
+that is, a sharp drop of FORMULA  with respect to FORMULA .
+In the ordinary theory, this can never happen.
+In the higher derivative theory with the ghost
+pair, it could happen if the ghost pair is sufficiently close to the
+real axis. It had been argued long ago
+by T. D. Lee {{cite:c7833275-f362-4a39-a040-8680a0a59344}} that, even in this case, such acausal
+behavior would only occur at microscopic scale
+typical of the Compton wave length of the ghost, and it will not lead to
+macroscopic disasters.
+In fact, this violation of microscopic causality
+is barely visible experimentally.
+
+ Large FORMULA  Expansion of the Higher Derivative FORMULA  Model
+The higher derivative FORMULA  model can be studied in the
+large FORMULA  limit. Many aspects of the theory can be illustrated
+in the large FORMULA  expansion {{cite:000dd28b-baad-4729-b31a-ca2339f57531}}, {{cite:5e17856d-5ccc-4da6-b7af-6c7a8b5af030}}.
+The general formalism for the large
+FORMULA  expansion has been previously studied {{cite:2f5ce1c8-f02a-4476-acd9-b340ea358955}}, {{cite:cef24bf5-71c3-4aa3-82dd-f9d62778c33a}}.
+Let us briefly
+review the main ideas and focus on its application to the higher
+derivative FORMULA  model, and also emphasize the comparison of the
+higher derivative FORMULA  model with the conventional FORMULA  model within
+the large FORMULA  approximation.
+The Hamiltonian picture that originates from the quantization was
+discussed in the last section, so we will
+only consider the Euclidean version of the large FORMULA 
+approximation here.
+ General Formalism 
+Consider the partition function of the theory as expressed by the
+following Euclidean path integral
+FORMULA 
+where the field FORMULA  is an FORMULA  field and the function
+FORMULA  is a polynomial function of the operator
+FORMULA  of the form
+FORMULA 
+For example, our choice of the Pauli-Villars theory corresponds to
+the form of FORMULA .
+To perform the large FORMULA  expansion, it is convenient to introduce the
+auxiliary fields FORMULA  such that the path integral is rewritten in the
+following form
+FORMULA 
+The effective potential can then be worked out in a standard fashion
+FORMULA 
+where the variable FORMULA  is a function of FORMULA 
+determined from the gap equation
+FORMULA 
+The vacuum can be found from the derivative of the above effective
+potential. Due to the gap equation, the derivative has the following
+form
+FORMULA 
+Therefore there could be two phases of the theory. One with
+FORMULA  , which is the symmetric
+phase; the other one has
+FORMULA  , which is the broken phase.
+In the broken phase, the vacuum expectation value is obtained via
+FORMULA 
+Note that unlike the conventional theory, the integral in the above
+equation is finite as long as we have take the highest momentum power
+in the propagator to be greater or equal to 6.
+The critical phase transition line is obtained by setting FORMULA  to
+zero in the above equation, i.e.
+FORMULA 
+As we will see in Chapter (), the large FORMULA  prediction
+of the critical line is in very good agreement with the simulation.
+We can work out the propagator of the fields in the large
+FORMULA  approximation. If we are in the symmetric phase, the leading order
+correction to the propagator is just from the mass renormalization.
+Therefore, we have
+FORMULA 
+In the broken phase, the Goldstone
+propagator remains unchanged to the leading order but the longitudinal
+Higgs propagator is modified by the bubble summation of the Goldstone
+intermediate states. Thus, we have
+FORMULA 
+The scattering amplitude can be worked out in both the symmetric and
+broken phase. In the symmetric phase,
+FORMULA 
+where FORMULA  is related to the bare mass parameter
+FORMULA  according to Equation (REF ).
+If we define the scattering amplitude at FORMULA  to be
+FORMULA , we can express the above equation
+in terms of the renormalized coupling constant  FORMULA
+FORMULA 
+In the broken phase, we have
+FORMULA 
+Note that although we are dealing with the Euclidean
+scattering amplitude here in
+large FORMULA , it should be understood as the amplitude arising from the
+Hamiltonian formalism described in the previous section.
+As long as the correct complex contour integration is implemented,
+and the analytic properties of these amplitudes are understood,
+the Euclidean amplitude will also give us the correct physical picture.
+We can also modify the above formalism to the theory
+on the lattice in a finite volume. All we have to do is to change the
+integral into finite lattice summations.
+Let us now show some examples of the application of the large FORMULA 
+results and see what we can learn from it.
+
+ Renormalized Coupling Constant in the Symmetric Phase
+In the first example, we compare the higher derivative FORMULA 
+model on the lattice and the conventional FORMULA  model on the lattice
+in the symmetric phase. As described in Equation (REF ), the
+renormalized coupling constant FORMULA  can be defined as
+FORMULA 
+where everything is measured in lattice unit.
+In this formula, the factor FORMULA  is the exact
+group theory factor. However, in the naive large FORMULA  approximation,
+we should use FORMULA  instead of FORMULA . When we apply this to
+the FORMULA  model, this makes a factor of 3 difference.
+We therefore have to conclude that the leading order large
+FORMULA  results are ambiguous when applied to FORMULA .
+As we will see in the next example, similar situation
+occurs for the broken phase.
+We can calculate this
+renormalized coupling constant at
+the same correlation length FORMULA  in the conventional FORMULA  model
+and in the Pauli-Villars theory, with some fixed
+value of FORMULA , for every value of the bare coupling constant
+FIGURE 
+FORMULA . The magnitude of this quantity reflects the strength of
+the interaction in the symmetric phase.
+In Figure (REF ) , the comparison
+between the two theories is shown for FORMULA  for every given
+FORMULA . The lattice summation is calculated on a FORMULA  lattice
+with the naive lattice discretization of the Laplacian.
+The continuum Pauli-Villars result is also shown in the figure.
+For this choice of the correlation length, the lattice effects are
+rather small in both theories. It is clear that
+the Pauli-Villars theory has stronger interaction,
+about a factor of 4, for the same
+correlation length when compared with the conventional FORMULA  model.
+As mentioned above, the large FORMULA  expansion has its own ambiguities,
+so we do not anticipate this large FORMULA  result to give us a precise
+quantitative description of the theory. However, we do expect that the
+increase of the coupling constant in the Pauli-Villars theory
+relative to the conventional theory should also be present
+in the full theory. Similar
+results in the broken phase also support this picture,
+as we will see in the next subsection.
+
+Higgs Mass and Width for Conventional FORMULA  Model 
+Now, we will examine the situation in the broken phase of the theory.
+We will first briefly review the large FORMULA  result for the conventional
+FORMULA  model with a hypercubic lattice regulator {{cite:2f5ce1c8-f02a-4476-acd9-b340ea358955}}, {{cite:cef24bf5-71c3-4aa3-82dd-f9d62778c33a}} in
+the broken phase. The large FORMULA  Goldstone propagator will remain the
+free propagator in the leading order of FORMULA  expansion, but the
+large FORMULA  Higgs propagator will be
+FORMULA 
+In general, the lattice bubble is a very
+complicated function of FORMULA . However in the
+limit of small FORMULA , which is the regime of
+physical interests, it has been worked out and has the following
+asymptotic expression {{cite:552e040a-1c54-4002-9f56-fcebeb020db5}}
+FORMULA 
+where the constant FORMULA  for the hypercubic lattice.
+We can now use this relation to find the complex pole to the Higgs
+propagator. Since the higher order terms are
+neglected in the bubble, it is sufficient to keep
+only the leading term in the lattice momentum.
+Setting FORMULA , we have (taking the
+second Rieman sheet value for the logarithm)
+FORMULA 
+The phase FORMULA  is first determined from the second equation
+and then substituted into the first one to get the real and
+imaginary part of the Higgs pole.
+FIGURE 
+The result is summarized in Figure (REF ) . For the Higgs
+correlation length of about 2, the ratio FORMULA  is only about
+3. The correlation length 2 is chosen because if the Higgs is
+too heavy in lattice units, the lattice effects would become
+significant and the theory would no longer
+describe continuum physics {{cite:552e040a-1c54-4002-9f56-fcebeb020db5}}.
+Another feature that we can study is the width of the Higgs particle.
+There has been quite a lot of confusion even with the conventional
+FORMULA  model. The large FORMULA  width of the FORMULA  model was first
+carefully studied by Einhorn using a sharp momentum cutoff {{cite:cef24bf5-71c3-4aa3-82dd-f9d62778c33a}}.
+He found that the large FORMULA  formula, if FORMULA  is substituted in,
+gives too large a width (40 percent larger) when compared
+with the perturbation theory of the FORMULA  model.
+Therefore, the large FORMULA  results seem to indicate
+that the theory is more strongly interacting than the perturbative
+predictions. Some authors interpret this finding
+as genuine nonperturbative effects of the model {{cite:2f5ce1c8-f02a-4476-acd9-b340ea358955}}.
+However, we do not think this is true for the following
+two reasons. First of all, the large FORMULA  result of the width does not
+agree with perturbation theory, even for very weak couplings. In this
+regime, the next to leading term of the width has been calculated in
+perturbation theory. The correction is very small, typically of the
+order of one percent. Therefore, it is unlikely that even higher order
+terms will change this perturbative result significantly. Secondly, the
+perturbative result has been proven to be correct by extensive
+nonperturbative Monte Carlo simulation studies. No mysterious
+nonperturbative effects as predicted by large FORMULA  have been found.
+We believe this discrepancy is because of the ambiguity
+within the large FORMULA  framework. The large FORMULA 
+result can only be accurate to about 20 to 30 percent because of the
+large subleading FORMULA  terms at FORMULA . After all, FORMULA  is too
+far from FORMULA . This has been previously pointed out by
+Kuti, et. al. {{cite:afea5a49-1abb-48a4-8f41-740fcba2720d}}.
+More importantly, we have over
+estimated the decay channel of the Higgs particle
+in the naive large FORMULA  formula.
+At FORMULA , the Higgs particle can decay into 3 colors of the Goldstone
+pairs while the large FORMULA  formula counts 4. When we take this into
+account and substitute FORMULA  for FORMULA  in the large FORMULA  formula,
+we expect compatible results with the perturbation theory.
+FIGURE 
+In Figure (REF ),
+we have plotted the two large FORMULA  results of the width
+as a function of the Higgs mass and compared them with the
+perturbative results. As expected, the corrected large FORMULA  width
+agrees reasonably well with the perturbative predictions, especially
+in the weakly interacting region or small Higgs mass. The naive large
+FORMULA  result, however, overshoots by about 30 to 40 percent simply
+because it
+fails to identify the correct number of decay channels of the Higgs
+particle. From this calculation, we conclude that the large FORMULA 
+approximation has its own ambiguities when it is applied to
+FORMULA  values that are not very large. Therefore, one must modify the naive
+large FORMULA  formula in order to get meaningful quantitative results.
+
+ Higgs Mass and Width for Higher Derivative FORMULA  Model 
+In higher derivative theory, things are getting more
+complex because of the ghost pair.
+One could try to evaluate the continuum bubble integral in
+Equation (REF ) and solve for the complex pole
+of the Higgs propagator. Note that this integral is
+finite and no regulator has to be introduced.
+FIGURE 
+The precise form of the bubble integral
+is very complicated and is listed in the Appendix of this chapter.
+The analytic structure ( Riemann sheets and cuts ) are also
+quite complex, as described in the Appendix.
+The resulting function is then substituted into the full large
+FORMULA  Higgs propagator to solve for the poles. The complex pole structure of
+the function is also very complicated due to the existence of the
+ghost states.
+The poles
+are numerically searched for a given parameter FORMULA  in FORMULA  unit
+and a fixed value of the bare coupling constant FORMULA .
+The result is shown in Figure (REF ).
+One has to be careful with the Riemann sheet
+structure of the function in order to get the right result.
+The poles are characterized by their positions on the Riemann sheets. On
+the first Riemann sheet, due to the ghost states, one finds a conjugate
+pair of poles represented by the open hexagonal points in the figure.
+They are moving towards the higher energy values as the interaction is
+turned on. These complex conjugate ghost pairs have
+“shadow images” on the second Riemann
+sheet which are represented by the filled hexagonal points. Because
+of the interaction with the Higgs pole on the second sheet, these poles
+are not moving symmetrically. The conventional Higgs poles are
+on the second Riemann sheet, represented by the filled circles. As the
+vacuum expectation value
+is increases in FORMULA  unit, the Higgs pole is moving
+towards the higher energy range. When the Higgs pole is at very low
+energy and far away from the ghost poles, the effects of the ghost
+states can be viewed as an effective cutoff to the conventional theory.
+This can also be seen in Equation (REF ). When FORMULA  is
+small, the bubble integral becomes very simple and can be very well
+approximated by
+FORMULA 
+But, if the Higgs pole is getting closer to the energy scale of
+the ghost poles, the higher
+derivative theory feature has great importance and viewing the ghosts as
+the effective cutoff to the conventional theory becomes meaningless.
+Identifying the real part of the Higgs pole with the mass parameter
+and the imaginary part with the half width, we can plot the ratio
+FORMULA  as a function of the bare coupling constant, which is shown
+in Figure (REF ).
+FIGURE 
+In this figure, we have selected 4 different vev
+values and the ratio saturates to about 4 when the bare coupling
+constant is brought to infinity. When we set the physical value of the
+vacuum expectation value to 250 GeV, this implies a Higgs particle
+with the mass FORMULA  TeV.
+This should be compared with the result of the conventional FORMULA  model
+discussed earlier in Figure (REF ).
+Although the absolute values of the
+Higgs mass may be somewhat ambiguous due to the large FORMULA 
+approximation,
+this result indicates there is a 30 percent relative increase in
+the Higgs mass over vev ratio when the Pauli-Villars theory is
+compared with the conventional FORMULA  model on the hypercubic lattice.
+So we would expect the full Pauli-Villars theory should also
+generate a larger FORMULA  ratio compared with the conventional
+theory. Recall that the Higgs mass bound for the conventional
+theory is about 750 GeV (which is a ratio of 3), we
+expect the Pauli-Villars theory could have a heavy Higgs particle
+in the TeV range. In fact, this hint from the large
+FORMULA  expansion initiated our nonperturbative study of the
+Pauli-Villars theory {{cite:000dd28b-baad-4729-b31a-ca2339f57531}}.
+As we will see in the coming chapters, this
+scenario of strongly interacting Higgs sector in the Pauli-Villars
+theory is confirmed by our nonperturbative simulation results.
+We can plot the width of the Higgs particle as a function
+of the Higgs mass, just as we did for the conventional theory.
+FIGURE 
+In Figure (REF ),
+the similar plot for the higher derivative
+Pauli-Villars
+theory is shown. One has to again
+modify the naive large FORMULA  results for
+the right decay channels. At very low energy, this result agrees with
+the perturbative result, which means that the theory can be viewed as
+a Pauli-Villars regulated conventional theory. However, when the
+Higgs mass is getting heavier, it deviates quite rapidly from the perturbative
+result, and in this range, the higher derivative theory
+does not resemble a regulated conventional theory.
+
+ Perturbation Theory of the Higher Derivative FORMULA  Model
+The renormalized perturbation theory of the higher derivative
+scalar FORMULA  model can be established in the usual way, except we
+pay special attention to the role
+of the ghost pair. In the low energy regime, we expect to
+recover the conventional theory. When the energy scale is increased,
+one should see the ghost pair begins to play a more important role.
+To incorporate this energy dependence, a mass dependent renormalization
+scheme is needed. We now illustrate this briefly by considering the model
+in the broken phase.
+ Lagrangian and Renormalization Conditions 
+Let us consider the following Euclidean Lagrangian,
+FORMULA 
+We can define the bare fields and bare parameters according to
+FORMULA 
+Then, the total Lagrangian can be written as
+FORMULA 
+In the broken phase, it is convenient to separate the Higgs field and
+the Goldstone fields as
+FORMULA 
+where FORMULA  is the renormalized vev. We can then
+write down various propagators to one loop order and impose the
+following mass dependent renormalization conditions,
+FORMULA 
+Notice that the above renormalization conditions uniquely determines the
+four renormalized parameters. The arbitrary scale FORMULA  is introduced
+to avoid the infrared divergences. All the renormalized parameters will
+depend on this running scale through the above definitions. It is easy
+to fix the counter terms according to the above equations,
+FORMULA 
+where the bubble integrals FORMULA ,FORMULA ,
+,FORMULA  and the tadpoles FORMULA ,FORMULA  are listed
+below:
+FORMULA 
+
+ One-loop Mass-dependent Beta-functions 
+Now we can work out the one loop mass dependent FORMULA -function of
+the theory, which is obtained by noticing that the bare coupling
+constant FORMULA  does not depend on the renormalization scale
+FORMULA . The result can be written in the following form,
+FORMULA 
+where FORMULA  and the
+mass parameters FORMULA , FORMULA  and their
+corresponding residues are determined from the following decomposition:
+FORMULA 
+The important feature of these coeffecients is
+FORMULA 
+Now it is easy to see how the effective coupling constant evolve with the
+energy scale FORMULA . When FORMULA  is very small, the ghost pair
+contributions to the beta-function is negligible. The summation in the
+beta-function reduces to only the FORMULA  contribution, which is the
+conventional, well-known beta-function of the FORMULA  model in the broken
+phase. As FORMULA  increases, the ghost contributions become
+increasingly important. When the energy scale is well above the ghost scale,
+the integral in the beta-function reduces to 1 and the quantity in the
+bracket vanishes due to Equation (REF ). This means that, at
+high energies, beta-function of the theory vanishes. Therefore, as
+the energy scale increases, the
+running coupling constant FORMULA  also increases. However, at
+the scale of the ghost pair or higher,
+the coupling constant gradually flattens out to some finite number.
+This is a very different feature when compared with the conventional
+FORMULA  model. In the conventional FORMULA  model, the running coupling
+constant keeps increasing and becomes divergent at the so-called
+Landau ghost energy scale. In our higher derivative theory, we have
+replaced the Landau ghost with real ghost pair and the running coupling
+constant will remain finite for all energies.
+
+Appendix
+In this appendix we list the explicit form of the bubble integral
+and discuss some analytic properties of such.
+The function is given by the parametric integral representation
+FORMULA 
+where the sum over FORMULA  and FORMULA  runs from 0 to 2 with the following
+values of FORMULA  and  FORMULA
+FORMULA 
+The integral can be worked out explicitly with the result
+FORMULA 
+where the last term is the ghost-antighost contribution and
+the function FORMULA  is given by
+FORMULA 
+The logarithm
+functions in the above equations take the complex angle between FORMULA 
+and FORMULA .
+The function FORMULA  was worked out long ago by Lee and
+Wick but our results is different from theirs {{cite:c7833275-f362-4a39-a040-8680a0a59344}}.
+Their results correspond to
+combining the two logarithms in the above equation,
+which is not always legitimate
+because of the restricted
+range of the complex phase of the arguments under the logarithms. The
+Rieman sheet structure of this function is highly nontrivial as shown
+in Figure (REF ).
+FIGURE 
+Our function agrees with Lee's function when
+FORMULA . The function FORMULA  has a cut which is
+a hyperbola whose center is at FORMULA  in the complex
+FORMULA  plane. The function FORMULA 
+has a finite jump anywhere across the cut
+except at FORMULA  where it is continuous.
+This function is analytic everywhere else away from the cut.
+The so-called “ghost-antighost threshold” is not a real one, and no
+imaginary part contribution will arise when the center of mass energy
+steps through FORMULA . This is necessary for the unitarity
+to hold.
+Other parts in the FORMULA  function have cuts starting at the ghost pole
+location.
+In the small FORMULA  and large FORMULA  region the function FORMULA  simplifies to
+FORMULA 
+This concludes our discussion of the analytic properties of the
+function.
+
+Higher Derivative Field Theories on the Lattice
+
+The Naive Lattice Action and Phase Diagram
+The need of a lattice for the higher derivative scalar field theory
+presented in the previous chapter is not
+for the purpose of regularization, but rather,
+to make the degree of freedom finite so that a nonperturbative study
+of the model can be performed in computer
+simulations. The lattice spacing FORMULA 
+introduces a new short distance energy scale with the associated
+momentum cutoff FORMULA . In order to recover the higher
+derivative field theory in the continuum, we would have to work
+towards the FORMULA  limit with a fixed ratio
+of FORMULA . The lattice action we choose to study {{cite:4bf1530c-6063-4d10-802d-dc008a5e7f5c}}, {{cite:23782e57-7ea0-4580-96b5-787233617f19}} is
+FORMULA 
+where the FORMULA  is the lattice Laplace operator. The phase structure
+of this lattice model is quite similar to the conventional FORMULA  scalar
+field theory. It has two phases as shown in
+Figure (REF ). The FORMULA  symmetric phase
+FIGURE 
+is separated from the broken phase with residual FORMULA  symmetry
+by a second order phase transition line for every value of the
+lattice coupling constant FORMULA  in the FORMULA  plane.
+Near the critical line, we expect to recover the continuum theory
+without the lattice artifacts. However, the critical behavior of
+our model is more complicated than the conventional FORMULA  model. It can
+represent different universal continuum theories along different
+paths towards the critical line. Tuning the value of FORMULA  towards
+the critical line for any fixed value of FORMULA  corresponds to the
+trivial field theory in the continuum. In this limit, the operator
+FORMULA  becomes irrelevant in the critical region.
+However, if we tune the value of FORMULA  towards the critical line
+in such a way that the ratio FORMULA  remains fixed, we will recover
+the continuum higher derivative field theory with the corresponding
+ratio of the ghost mass parameter and the Higgs mass. In this limit
+the operator FORMULA  cannot be viewed as an irrelevant
+operator {{cite:3cb44c32-ff25-4760-9ddd-70b4fa2e986b}} in the Lagrangian. Thus,
+it becomes clear, from the
+discussion above, that if we want to study the higher derivative
+field theory, we have to work towards the second limit.
+In the practical application, however, this limit is not very
+easy to arrange. One reason is that if we want our results
+to represent the continuum results, we have to keep the ghost mass
+parameter FORMULA  reasonably small in lattice units
+in order to get rid of the lattice
+effects associated with it. On the other hand, we need to put the
+Higgs mass below the ghost mass parameter. Therefore, we are
+very restricted in the parameter space. On the one hand, making
+the Higgs mass smaller will lead to huge finite size effects for
+the practical lattice sizes; on the other hand, making the Higgs mass
+larger will push up the ghost mass and will result in large lattice
+effects. So we have a rather narrow range in the Pauli-Villars
+correlation length FORMULA . Typical values we took in the beginning
+of our simulation were: FORMULA , FORMULA .
+This, of course, was unsatisfactory because the ratio
+FORMULA  is too narrow of a range. If we
+view this theory as a Pauli-villars regulated theory, for example, we
+would hope to see the conventional scaling behavior in the
+large FORMULA  limit. It turns out that the scaling form
+may apply only for rather large FORMULA  values which is
+impossible for us to investigate using this naive lattice action.
+Also, due to this restricted range, it was also impossible for
+us to study the scattering phase shift profile of the model.
+This type of analysis offers us a very good way of extracting
+the mass value for an unstable particle in the finite box ( see
+Chapter () for full discussion ).
+This restriction in the parameters is purely due to the
+introduction of the underlying lattice structure. When
+we were able to eliminate most of the lattice effects, we were then
+able to enlarge our parameter space quite substantially.
+Therefore, the need for an improved lattice action
+becomes quite obvious.
+
+ The Improved Lattice Action 
+Improving the lattice action so that it has better
+Euclidean invariance was studied long ago {{cite:4e791751-e946-4da6-9f65-9149bd7a666f}}. Our choice
+of the improvement corresponds to modifying the lattice
+Laplacian so that it resembles the continuum
+Laplacian. Therefore, we take
+FORMULA 
+where the coefficients are given by the following table
+TABLE 
+In fact, we calculated the renormalized coupling constant in the
+large FORMULA  limit and we found that this improved action significantly
+decreased the lattice effects. With this improved lattice action, even at
+FORMULA , there was negligible lattice effects on the large FORMULA 
+results. The phase diagram of the improved action is similar to
+the naive action.
+The improved action offers us another power: the possibility
+of performing a phase shift simulation on the higher derivative
+FORMULA  model. This is the subject in Chapter ().
+As we will demonstrate, without the improved action, we are in the
+parameter range that is impossible for this type of simulation because
+we would need unrealisticly large lattices to extract the
+phase shift. With the improved action, this type of calculation
+becomes possible.
+
+ The Rotator States and Born Oppenheimer Approximation 
+Studying the higher derivative FORMULA  model in the broken phase and
+the corresponding Higgs mass problem requires a better understanding
+of the symmetry breaking mechanism in the finite volume. In fact this
+is already an important issue in the conventional FORMULA  theory
+without the higher derivative terms added.
+The symmetry breaking mechanism has been understood very well
+in the infinite volume limit. However, it has not been answered
+satisfactorily in the FORMULA  model in a finite volume.
+There are several complications. First of all, the notion of
+symmetry breaking in the infinite volume cannot be applied to
+a system in a finite volume. Strictly speaking, in a finite volume,
+the symmetry is never broken.
+Secondly, it turns out that the dynamics of the zeromode
+are crucial for the understanding, and the zeromode
+is coupled to other modes in a complicated
+way. For the one component FORMULA  theory, Hartree type of
+approximation will give us a very good description of the
+symmetry breaking. For the FORMULA  model, extra care must
+be paid to the motion of the zeromode and new approximation
+schemes are needed for the understanding of the problem.
+This section consists of several parts.
+In the first part, we will review what is known to the
+symmetry breaking in a ordinary one-component FORMULA 
+theory in the broken phase. It turns out that this is
+a very instructive model to study. In the second part,
+the conventional FORMULA  model is studied in the broken phase.
+Here we introduce the Born-Oppenheimer Approximation (or Adiabatic
+Approximation) and fully investigate
+the dynamics of the zeromode.
+In the third part, we consider some important
+applications of the Born-Oppenheimer Approximation.
+The machinery is applied to the ground state
+and higher energy excited states.
+The rotator correction to the energy of these states
+is calculated. This will serve as a theoretical guide line to
+the analysis of the simulation results in Chapter ().
+Then,
+the higher derivative FORMULA  theory is presented in the
+next section.
+ Symmetry Breaking of the One-component FORMULA  Model 
+Consider the one component FORMULA  theory in a cubic box. The
+Hamiltonian of the theory is given by
+FORMULA 
+This Hamiltonian is obviously invariant under the
+change FORMULA . That is to say
+that one can construct a parity operator FORMULA , which
+flips the sign of the FORMULA  field and it
+commutes with the Hamiltonian. Therefore,
+all the eigenstates of the Hamiltonian can be
+chosen to have a definite parity.
+We can build up two approximate ground states of the
+Hamiltonian FORMULA , which are Gaussian wavefunctions centered at
+FORMULA  respectively.
+This picture is very well illustrated
+by the so-called “Hartree approximation”. We start with a trial
+wave functional which is a Gaussian
+FORMULA 
+where FORMULA ,FORMULA  are variational parameters and the summation
+over FORMULA  and FORMULA  is implied. The approximate ground state of the
+system can be found by using the minimization condition of the
+energy. This condition in the broken phase will give us two
+solutions for the parameter FORMULA , namely,
+FORMULA  and the propagator FORMULA 
+is given by
+FORMULA 
+If we denote these two states as FORMULA  then we see
+they satisfy the following properties
+FORMULA 
+Note that the
+states FORMULA  are not orthogonal to
+each other in the finite volume.
+The true ground state and the first excited state are given by the
+symmetric and antisymmetric linear combination of these two
+states
+FORMULA 
+The true ground state is a parity even
+state, while the first excited state is a parity odd state.
+The energy difference between the two is exponentially
+small when the volume is large.
+This means that if the
+system were started at one of the minimum, after a long enough
+time, there is a finite
+probability of finding the system
+tunneled to the other minimum. The typical time
+scale for this is FORMULA , where FORMULA  is the
+energy difference between the ground and the first excited state.
+If we use a infinite volume, the state
+FORMULA  would be exactly orthogonal to the state
+FORMULA ; then the system starting from one
+particular minimum of the potential as the true vacuum
+will stay there, without knowing
+the other one and the FORMULA 
+symmetry is broken. However, in a
+finite but large volume, the system
+will stay around one minimum for such a
+long enough time that we may say
+the symmetry is “almost broken”.
+In the one component model, the symmetry is a discrete symmetry
+and the Hartree approximation gives us a very good understanding
+of the symmetry breaking mechanism in the finite volume.
+Nonperturbative works have also been done to measure the
+energy gap between the ground state and the first excited
+state, which is related to the surface tension of the
+system.
+
+FORMULA  Model: General Setup
+The situation is much more complicated when we try to do
+a similar analysis for the FORMULA  model. The main reason
+is that the symmetry is a continuous symmetry, therefore,
+the dynamics of the zeromode is much more complicated.
+We could first try out the Hartree approximation, but it
+will not give us the right energy spectrum of the theory.
+This is because the Hartree approximation
+treats every mode of the system equally. In
+the one component model this is valid, but it is not valid for the
+FORMULA  model. In the FORMULA  model there exists one special mode,
+that is, the direction of the zero Fourier mode which
+can be characterized by an FORMULA  unit vector. In a large but
+finite volume, this mode
+is a slow varying mode when compared with the other
+modes. It is the counter part of the parity operator
+in the one component model. The only difference is that,
+in the one component
+model, the parity only takes discrete values and is not
+dynamical. In the O(N) model, however, this unit vector lives on
+a FORMULA -sphere and has its own dynamics.
+Therefore, we expect that the Born-Oppenheimer
+Approximation (BOA), also known as the
+Adiabatic Approximation, will give us a very good description
+of the zeromode dynamics.
+The Born-Oppenheimer Approximation was first introduced
+in the study of diatomic molecules. In the molecular
+problem, there are two types of degrees of freedom. The motion
+of the electron is called “fast”, and the motion of
+the nucleus is called “slow”. Therefore, when solving the
+energy eigenvalues of the system, one should first nail down
+the slow variable, namely the configuration of the
+nucleus, and solve the fast variable spectrum. In this step,
+the configuration of the slow variable is treated as an
+external field. The eigenvalues and eigenstates that
+come out will, in general, depend on the prescribed
+configuration of the slow variable. These eigenvalues
+are then taken back into the Schrödinger equation for
+the slow variables as the effective potential, which
+reflects the feedback of the fast variable to the
+slow variable. Finally, the Schrödinger equation for
+the slow variable is solved to get the spectrum of the
+molecule.
+The spectrum of the molecule has a three fold hierarchy:
+electron energy, oscillation energy and rotational energy.
+These energy gaps are characterized by different powers of
+a small parameter, which is the ratio FORMULA , where
+FORMULA  is the mass of the electron and FORMULA  is the mass
+of the nucleus. Born-Oppenheimer is a very good
+approximation for the molecule, since this ratio is so small.
+It is not hard to imagine that a Hartree approximation to the
+molecular problem would be a poor choice, since it
+treats the electron (fast variable) and the nucleus (slow variable)
+equally, while ignoring the enormous difference in the mass of the two.
+Similarly, in our application, Hartree is a poor approximation
+for the same reason.
+To get the right picture, one has to separate the special
+zeromode and use the Born-Oppenheimer type of approximation.
+In our model, we will treat the direction of the
+zeromode as the only slow variable. We will use the
+same Born-Oppenheimer type of spirit to solve for
+the energy levels of our model.
+We begin with the Hamiltonian
+FORMULA 
+where for convenience we have discretize the system on a
+cubic lattice. The operator FORMULA  is just the
+derivative operator FORMULA  in the
+field variable diagonal representation.
+Two classes of symmetry operators that commute with this Hamiltonian are
+very important. First, there are
+global FORMULA  symmetry generators FORMULA  given by
+FORMULA 
+We also have the 3-momentum operators  FORMULA
+FORMULA 
+where FORMULA  is the unit vector in the FORMULA  direction. It is
+trivial to verify that these operators commute with the full
+Hamiltonian hence are symmetries of the theory.
+We now introduce the Fourier modes of the field variable,
+FORMULA 
+where FORMULA  is the 3-volume of the box. As we mentioned
+above, the zero mode FORMULA  plays a very important role
+in the broken phase. Therefore we have singled out this mode from the
+nonzero momentum modes. Let us define:
+FORMULA 
+where FORMULA  is the
+vev of the theory.
+In the Born-Oppenheimer type of
+approach, we will treat the direction of FORMULA , namely
+FORMULA , as the only
+slow varying variable and treat the rest as fast variables.
+The justification of this will be seen shortly.
+Then the Hamiltonian can be expressed in terms of
+these Fourier modes.
+We use the radial variables for the mode
+FORMULA . Thus we write the wavefunctional of
+the system as FORMULA  and the
+effective Hamiltonian for FORMULA  will contain only the
+second derivative with respect to FORMULA . For the nonzero
+Fourier modes, let us introduce the creation and
+annihilation operators as
+FORMULA 
+where FORMULA  is the higgs excitation.
+We can define the Higgs creation and annihilation operators as
+FORMULA 
+Similarly, we can define the transverse Goldstone creation and
+annihilation operators as
+FORMULA 
+where FORMULA  is the Goldstone energy.
+In terms of these operators, we can rewrite the effective
+Hamiltonian in the following form
+FORMULA 
+where the fields FORMULA  and FORMULA  are given by
+FORMULA 
+and the constant FORMULA . The operator
+FORMULA  is the FORMULA  Casimir of
+the zeromode variable.
+The above creation and annihilation operators satisfy the following
+commutation relations
+FORMULA 
+It is also very convenient to introduce the following decomposition
+for the fields. For a given FORMULA  unit vector FORMULA , we can find
+additional FORMULA  unit vectors which, together with FORMULA , form a
+complete set in the FORMULA  space. We therefore define
+FORMULA 
+It is readily checked that these operators satisfy the standard
+commutation relations
+FORMULA 
+Note that due to the leftover FORMULA  symmetry, the determination of
+the unit vectors FORMULA  is not unique. However, the physical quantities
+will not depend on this ambiguity. Moreover we can calculate the
+commutator of the operator FORMULA  with the unit vectors,
+FORMULA 
+Now we can set up a basis in our Hilbert space from the eigenstate
+of the free Hamiltonian. We will also choose the angular momentum
+eigenstate of the FORMULA  variable, namely
+FORMULA 
+where the state FORMULA  is the eigenstate of FORMULA  with eigenvalue
+FORMULA . This is just a symbolic notation
+of the state. Strictly speaking, for
+FORMULA  model, we need more quantum numbers to specify
+the state. Note that the oscillator part of the state actually
+depends on the unit vector FORMULA  via the definition of the
+longitudinal and transverse projection, although
+the eigenvalue does not. Therefore, if we were to
+act the operator FORMULA  on the states above, it would not only
+act on the state FORMULA , but also act on the rest of the components
+( except FORMULA , of course, since it is the radial zero
+momentum mode ). As we will see below, the Born-Oppenheimer
+Approximation will first neglect the effect of FORMULA  on the
+fast modes and only consider the slow mode part of the
+state, i.e. FORMULA . The next order correction has
+to take this into account and the BOA is valid when
+the correction is small.
+The global FORMULA  generator FORMULA  now can be expressed in terms
+of the creation and annihilation operators defined in
+Equation (REF )
+FORMULA 
+where the index FORMULA  and FORMULA  run from 0 to FORMULA .
+The operators FORMULA  and the functions FORMULA , FORMULA  are
+defined by the following:
+FORMULA 
+We will need the result of FORMULA  acting on the oscillator
+states. Let us consider the object
+FORMULA .
+This can be easily obtained by noticing that the state is
+annihilated by the global FORMULA  generators FORMULA .
+Therefore we would induce that
+FORMULA 
+We will also need the commutation relations between
+FORMULA  and the annihilation operators
+FORMULA 
+or equivalently, in terms of operators FORMULA  and FORMULA ,
+we have
+FORMULA 
+The corresponding commutators with the creation operators
+can be obtained from hermitian conjugation of the
+above equations. We now have all the tools to study the
+rotator energy spectrum.
+
+FORMULA  Model: The Ground States
+The full ground state of the free Hamiltonian consists of two
+parts. One is the ground state of oscillator states. The other part
+is the rotator states.
+FORMULA 
+Note that, before the rotator energy contributions are taken into
+account, the degeneracy of the ground state is infinite, since any
+rotator state FORMULA  will belong to the same energy.
+It is very easy to check that all these states are eigenstates of
+the momentum operator with eigenvalue of 0. They can also be taken
+as the eigenstates of the appropriate FORMULA  operators. To see this,
+notice that when the operator FORMULA  is applied to the states, it
+generally has two contributions. One is from FORMULA  acting on the
+oscillator state FORMULA , which is zero in this case; the
+other is from FORMULA  acting on the rotator states FORMULA , which
+is equivalent to FORMULA . Therefore, we have
+FORMULA 
+By taking the states FORMULA  to be the eigenstates of the
+zeromode Casimir, we also make the ground states to have the
+appropriate FORMULA  charges. Basically, the oscillator ground state
+has FORMULA  charge 0, and all the FORMULA  charges comes from the
+rotator states.
+As mentioned above, the leading order ground states are infinitely
+degenerate due to the rotator states. This degeneracy is lifted
+once the first nonvanishing rotator correction is taken into account.
+To do this, let us evaluate the matrix element of the rotator
+energy operator FORMULA  among the ground states
+FORMULA 
+where we have used Equation (REF ). Therefore we get
+FORMULA 
+As expected, the degeneracy is lifted, and the ground states now
+have a degeneracy of FORMULA , for a given FORMULA  value. The second term
+in the above equation is an FORMULA  independent constant and can be absorbed
+into the definition of the ground state energy. The first term is
+FORMULA  dependent and is known as the rotator energy spectrum. This
+formula was derived before by Leutwyler using
+the rigid rotator approximation in the chiral Lagrangian formalism.
+The significance of this energy spectrum in the Monte Carlo simulation
+was also discussed {{cite:c2da0f48-bcf7-4cbc-8d62-5506a55d904b}}.
+The low energy excitations of the model exhibit a three hierarchy
+of energy gaps. The largest energy gap is the mass gap of the Higgs
+particle, whose energy is independent of the 3-volume. The second
+largest gap is the Goldstone particle, whose energy gap is typically
+of order FORMULA , where FORMULA  is the size of the 3 dimensional
+cubic box. The smallest gap is the rotator energy differences between
+different FORMULA  values, whose energy is of order
+FORMULA . In a practical simulation, the size of the Higgs gap
+and the Goldstone energy gap are of the same order, since the size of
+the box is not large enough. However, the energy gap of the rotator
+is usually much smaller compared with the Higgs and Goldstone. Therefore
+we expect the Born-Oppenheimer picture should be a very good description
+of the theory in the finite box.
+It is also possible to evaluate the second order correction to
+the ground state energy. Let us first look at the following
+quantity
+FORMULA 
+The first term in the above equation will contribute at the second order
+but it is a term independent of FORMULA . If we only focus on the
+FORMULA -dependent terms, we can forget about this term. The last term
+is diagonal, it will not contribute to the second order correction of
+the ground state energy. Therefore, only the second term will give
+us FORMULA -dependent contribution to the ground state energy.
+The state left over is
+FORMULA 
+Therefore, it will contribute a second order energy correction that
+looks like
+FORMULA 
+The matrix element that appears in the above equation can be simplified
+by noticing
+FORMULA 
+We can pick our FORMULA  axis such that the unit vector is in the
+direction FORMULA . Then the above operator simplifies to
+the difference of two Casimirs: the Casimir of the FORMULA  and the
+Casimir of the unbroken  FORMULA
+FORMULA 
+This correction is usually very small for practical simulation
+parameters. However, there is another second order correction of the
+rotator Hamiltonian. Recall that we can expand the rotator Hamiltonian
+into the form
+FORMULA 
+Note that the operator
+FORMULA . therefore we
+have a systematic expansion in inverse powers of
+the 3-volume. If we introduce the rotator energy
+FORMULA , then we have a expansion
+in terms of the small quantity FORMULA .
+Therefore, there is another contribution from the
+operator FORMULA  which is also
+of the order of FORMULA . So we have
+FORMULA 
+The first term basically takes into account the nonrigid effects
+of the rotator.
+
+FORMULA  Model: The Zero Momentum Higgs States
+Let us consider the energy corrections to the state
+FORMULA .
+Since the zero momentum Higgs excitation is just the
+radial excitation which commute with the angular
+variables. Therefore the energy corrections to the state
+are very much like the corrections for the ground states.
+FORMULA 
+The second order correction is down by an extra factor of FORMULA 
+compared with the first order correction. However, due
+to the large numerical factor in front, the effect of the first term is
+still quite significant.
+In a practical simulation, the correlation function
+FORMULA 
+is measured and used as a way of extracting the
+vacuum expectation value FORMULA . This correlation
+function will pick up the
+energy difference of FORMULA  states.
+In most of the old simulations on FORMULA , the
+ratio FORMULA  is very small and
+the rigid approximation of the rotator
+energy gives very reliable results. In our
+recent simulations on the higher derivative
+theories, this ratio is of the order of
+10 percent and the correction is noticeable.
+We would find the wrong FORMULA  value if we did not
+include this correction.
+
+FORMULA  Model: Two Pion States
+We can perform the similar calculation for the two pion states. Let us
+take the isospin zero channel states
+FORMULA . We have
+FORMULA 
+which implies that relative to the ground state the finite volume
+correction is
+FORMULA 
+This correction is also very small when we extract the two pion
+energy. For the simulation points where we extract the two
+pion energies, this correction is below 1 percent and is
+therefore hidden in the statistical errors.
+
+ Symmetry Breaking of the Higher Derivative FORMULA  Model
+The similar analysis can be done with the higher derivative
+FORMULA  model. Having discussed the ordinary FORMULA  theory
+we will be very brief and only point out the differences.
+Many steps are also similar to the quantization of the
+higher derivative theory which was discussed in detail in
+Chapter ().
+One starts with the general higher derivative Lagrangian which
+has a global FORMULA  symmetry
+FORMULA 
+where FORMULA 
+is the Minkowski space d'Alambert operator and
+the coefficients are parametrized as
+FORMULA 
+After the usual steps of indefinite metric quantization, and
+introduction of the Fourier modes, the
+Hamiltonian has the form
+( see Equation (REF ) to
+Equation (REF ) for detail )
+FORMULA 
+Because we are now treating the system in a finite volume, we can
+no longer neglect the motion of the zeromode. Instead, following
+the idea of Born-Oppenheimer Approximation ( or Adiabatic
+Approximation ),
+we will single out the direction of the FORMULA  variable
+and make it the slow variable in our Born-Oppenheimer approximation.
+We can then decompose
+FORMULA 
+and similarly for the FORMULA  and FORMULA  variables.
+The Hamiltonian is then written as sum of three types of
+terms
+FORMULA 
+This Hamiltonian is identical to what we had in
+Chapter (), except for the FORMULA  piece
+( see Equation (REF ) ).
+For example,
+the FORMULA  piece can be diagonalized in the same way
+as in Chapter (). The interaction piece is also
+expressed as the creation and annihilation operators through
+the field variables. The FORMULA  piece can be decomposed as follows
+in the finite volume. For convenience we use the rescaled
+variables given by
+FORMULA 
+and use the radial variables for  FORMULA
+FORMULA 
+The derivatives for the FORMULA  are now substituted by
+FORMULA 
+where the index FORMULA  runs from 1 to FORMULA  while the index
+FORMULA  only runs from 1 to FORMULA .
+The main difference lies in the derivative term with respect
+to the rotator variable FORMULA . In Chapter (),
+this was neglected because we were in the infinite volume.
+This term practically serves as the kinetic energy of the
+zeromode variable FORMULA .
+One can establish
+the following identity
+FORMULA 
+where FORMULA  is the generator of the variable
+FORMULA  only, i.e.,
+FORMULA 
+With these transformations, FORMULA  is further decomposed into
+three parts
+FORMULA 
+The longitudinal part has the same form as the simple oscillator
+and can be diagonalized easily. The transverse part can also be
+diagonalized as shown in Chapter ()
+FORMULA 
+where the summation of FORMULA  is from 1 to FORMULA  and the
+energy gap is FORMULA  and
+FORMULA .
+In terms of these operators we can write out the explicit
+form of  FORMULA
+FORMULA 
+where the polarization factor FORMULA  is given by
+FORMULA .
+To summarize, in the finite volume we would have the following
+Hamiltonian
+FORMULA 
+In this expression, the first two terms are just the Hamiltonian of
+the model in the broken phase in the infinite volume. The third
+term is a purely finite volume correction which describes the coupling
+between the zeromode and the rest of degrees of freedom. The
+index FORMULA  takes the value FORMULA  and FORMULA  respectively. All the
+operators can be expressed in terms of the creation and annihilation
+operators as
+FORMULA 
+where the form factors FORMULA  are given by the following
+table
+FORMULA 
+The creation and annihilation operators enjoy the following
+commutation realtions
+FORMULA 
+In the higher derivative model we have the similar relation
+for the FORMULA  generators acting on the ground state
+FORMULA 
+With these relations we can now calculate the rotator contribution
+to the energy of the state. Due to the selection rule for the
+operator FORMULA , the first order correction vanishes. The lowest
+order correction comes in at the second order in the perturbation
+Hamiltonian. Using the representations of the operators in terms
+of the creation and annihilation operators, it is easy to show
+that the first correction is simply the rotator energy,
+FORMULA 
+Therefore, just like in the conventional FORMULA  model in the
+broken phase, the rotator energy spectrum is the most densely
+spaced excitation and dominates the invariant correlation
+functions.
+
+Simulation Results and Discussions
+
+ Simulation Algorithms 
+Finding the right algorithms for the higher derivative FORMULA 
+model has been quite tricky {{cite:c24f3871-6c41-4947-99ae-ad98da01f5de}}, {{cite:d223cb85-d221-400d-af73-7fd7e813d2c8}}.
+In the beginning of this project, we ran many tests
+on the existing algorithms for our model. First we tried
+some conventional update algorithms, for example: metropolis,
+heatbath and hybrid Monte Carlo. But these type of
+algorithms had several serious problems.
+One of these problems was that due to the next-next nearest neighbor
+coupling terms in our model, the neighbor gathering process
+becomes a rather time consuming task. In four dimensions, with the
+naive discretization, we would have had to collect the field
+variables at 128 neighbors for every lattice point.
+Compared with the ordinary theory, this is
+a factor of 16 more.
+Another problem of such algorithms was the critical slowing
+down when close to the criticality.
+This second problem was understandable
+because, in our model, the spectrum of the Fourier modes is greatly
+broadened by the higher derivative term.
+To understand more about this issue,
+let us look at the autocorrelation
+time in a standard hybrid Monte Carlo algorithm.
+Consider the higher derivative free field theory governed
+by the Euclidean Lagrangian
+FORMULA 
+where the spectrum FORMULA .
+The acceptance and autocorrelationts in this Gaussian type of
+hybrid Monte Carlo has been studied by A. D. Kennedy et. al.
+{{cite:1aac44c0-5583-4826-a887-53cc41fa082e}}. The autocorrelation time of the algorithm
+was found to be:
+FORMULA 
+where FORMULA  is the average length of each hybrid trajectory.
+The quantity FORMULA  is the lowest frequency of the
+Fourier modes, i.e. FORMULA .
+The minimum of the autocorrelation time is obtained when
+FORMULA  with the value FORMULA .
+For the stability of the leapfrog integration scheme, the step
+size cannot exceed FORMULA , where
+FORMULA  is the highest frequency of
+the Fourier modes. Therefore, the computer time that
+the algorithm consumes to generate an independent configuration
+is given by
+FORMULA 
+Thus, the computer time needed to generate an independent
+configuration greatly depends on how broad the extent of the spectrum.
+In the conventional model, the highest frequency is given by
+FORMULA . The lowest frequency is
+just FORMULA .
+With the higher derivative term added, the extension of
+this frequency is much broader than the former case.
+The highest frequency changes to
+FORMULA  while
+the lowest frequency remains unchanged.
+For the parameter range of FORMULA  where we perform our simulation,
+this highest frequency is larger by a factor of 10 or more. Therefore,
+the autocorrelation time is enormous for the higher derivative
+theory in standard hybrid Monte Carlo due to the broadening
+effect of the frequency.
+For the Gaussian model, this effect can be overcome by
+the so-called Fourier acceleration procedure
+{{cite:a85ef0b3-e839-4a48-9dd0-8a63e28b60cd}}, {{cite:6d3e9ce7-e9e2-4b29-a931-9967073f1f25}}, {{cite:55d2354e-8836-44a8-b7b7-ca4db387906b}}, which is nothing
+but noticing that the ideal
+algorithm for the free Lagrangian above is to perform the simulation
+in Fourier space by adding the momentum dependent kinetic
+energy part
+FORMULA 
+This FORMULA -dependent kinetic energy part will take into
+account exactly the frequency differences of the modes and, in fact, the
+FORMULA -dependence for the step size then drops out completely
+from the Hamilton equation of motion,
+as one can easily check.
+This hybrid algorithm is then equivalent to simulating FORMULA  independent
+harmonic oscillators with frequency 1
+in lattice units. However, nobody would be impressed if
+one can simulate a free theory effectively. When the interaction
+terms are added, doing the simulation completely in Fourier space is
+sometimes hopeless. This is particularly true if the interaction is
+of the FORMULA  type, which is completely local in real
+space, but highly nonlocal in Fourier space. Therefore, the
+hope is that we use a Fast Fourier Transformation program to
+go back and forth between the real space and the Fourier space.
+When the quadratic parts are evaluated, we go to the
+Fourier space, and when the interaction part is needed, we go
+to the real space. Obviously, this depends greatly on how fast
+one can do the Fourier transform. It turns out the existing
+FFT package runs reasonably well on the cray with a speed of
+FORMULA  Mflop on the C90-machine. Another complication is that
+in the interacting theory we do not know what type of FORMULA -dependent
+kinetic energy term to add. The only clue is perturbation theory,
+however, one would expect that the low energy modes should be
+very well described by the renormalized parameters. It turns out
+that the main effect is the broadening effect due to FORMULA , and
+FORMULA  does not get renormalized very much. Therefore, putting in the
+bare value for FORMULA  basically overcomes most of the critical
+slowing down. We are able to perform the simulation with an
+autocorrelation time which is below 10 hybrid Monte Carlo trajectories
+with each trajectory consisting of FORMULA  steps. Although this
+performance is not ideal, it works thousands of times better than
+the old programs, for which the autocorrelation time was hopelessly
+long. Also, in the Fourier accelerated Hybrid Monte Carlo,
+it is trivial to extend the algorithm to the improved actions.
+Since the quadratic part is evaluated in the Fourier space, it
+does not cost anything more for us to use the improved propagator
+as compared with the naive one. If this were implemented in the
+real space, it would require a lot more work.
+All of our results were obtained with the appropriate Fourier
+accelerated Hybrid Monte Carlo program. We currently have only
+the version for the finite bare coupling constant. Therefore,
+all results presented here are for some finite bare coupling constant.
+However, some of our simulation points have a rather large
+bare coupling constant in continuum notation, therefore,
+we expect that most of the physically interesting results
+will be quite similar in the nonlinear limit.
+
+ The Extraction of Physical Parameters 
+We will now extract some physical quantities from our
+simulation results {{cite:d223cb85-d221-400d-af73-7fd7e813d2c8}}.
+One of the most interesting quantities is
+the vacuum expectation value FORMULA . This is the quantity which
+sets the energy scale of the simulation.
+In the old simulations, this parameter was obtained by
+measuring the bare expectation value of the averaged
+field variable. The wave function renormalization constant
+was then obtained from a linear fit to the momentum space
+propagator. From these quantities, the
+renormalized vev is then obtained using
+FORMULA 
+The crucial point is the measurement of the wave function
+renormalization constant. But in our case, things are more
+complicated. The momentum space propagator will
+not only contain the usual FORMULA  term, but will also contain the higher
+derivative terms. In general, the interaction will
+generate more terms which were not in
+the bare free propagator. This makes it more difficult for
+us to get a very accurate determination of the
+wave function renormalization constant.
+Another way of extracting the renormalized vev is
+from the rotator correlation functions. Using the
+theory discussed in Chapter () , we can
+write down an expression for the rotator correlation
+function FORMULA , where FORMULA  is
+the unit vector of the zeromode at a given time
+slice  FORMULA
+FORMULA 
+where FORMULA  is the
+rotator energy unit.
+This correlation function is dominated
+by the rotator energy spectrum in the finite volume.
+All the other energy excitations are much higher
+than the rotator energy scale. Usually the lowest one
+is the one Higgs contamination, whose energy
+scale is an order of magnitude higher. This
+correction can be easily taken into account according to
+the formula given in Chapter () . Since the rotator
+energy depends only on the renormalized vacuum
+expectation value (and the 3 volume), this is
+a direct way of extracting the vev.
+In our simulations, we have tried both methods and have obtained
+compatible results.
+FIGURE 
+In Figure (REF ), a typical rotator correlation function
+is shown compared with the fit to the theoretical
+form. The bare parameters are shown at the top
+of the figure. The lattice size for this run is FORMULA .
+The output data has a total statistic of 32k hybrid Monte Carlo
+trajectories.
+At very short distances, higher energy excitations
+will contribute. Therefore, the fit was performed from FORMULA 
+all the way to the end. The fit is very stable if the starting
+point is after FORMULA . The fit is also very stable with respect
+to the number of rotator states (FORMULA  in the figure) that has been included.
+It turns out that any number which is greater
+than 3 would be adequate.
+In this fit, the correction of the single Higgs state is included
+using the formula described in Chapter ().
+This correction is about
+10 percent even at large FORMULA  values. This is because
+of the small vev value of our simulation. The corrections due to the
+other states are all very small at large FORMULA  values.
+It is clear that we have found a very good agreement with
+the theoretical formula.
+FIGURE 
+For comparison, the momentum space Higgs propagator is shown in
+Figure (REF ).
+This momentum propagator was obtained from a run of the
+same input bare parameters as in Figure (REF )
+except that it was on
+a cubic geometry of FORMULA  with the statistic of 20k trajectories.
+The form of the fitting function is taken to be
+FORMULA .
+Note that the size of the coefficient of
+FORMULA  term is quite significant which is a signal of
+strong interaction effects. We should keep in mind that the above
+function has no justification if the interaction is strong.
+In general, the interaction could introduce complicated functional
+forms to the full Higgs propagator. It could generate
+FORMULA  terms, higher polynomial terms and even terms that
+cannot be written as functions of FORMULA  alone. Therefore, the
+size of the interaction terms like FORMULA  basically reflects
+the ambiguity of the fit. If we had tried the same fit but setting
+the coefficients of FORMULA  to zero, we would have arrived at a
+rather different value of FORMULA  ( FORMULA  ).
+From this we conclude that, due to the strong interaction, it would
+be very difficult to extract the wave function renormalization constant
+from the momentum space propagator.
+Other methods are needed for the extraction of the physical
+parameters and the momentum space propagator can only be used as an
+independent check.
+Another important quantity is the mass of the
+Higgs particle. In the old simulations, there were also
+two ways of obtaining the Higgs mass.
+One way is to use a
+fit to the momentum space propagator. The mass obtained
+this way has both advantages and disadvantages. The advantage
+is that the signal is very clean and we get a very
+stable fit for the mass even with low statistics.
+We can fit the very low momentum portion of the momentum
+space propagator where the effects of the interaction
+terms are small and the mass values are rather stable.
+The disadvantage is
+that the mass obtained from the propagator is not yet the
+physical Higgs mass. We must use perturbation
+theory to relate the two masses. This is legitimate in
+the old FORMULA  calculation because, in that case, the
+theory is perturbative and the perturbative formula offers
+us a rather accurate prediction. In a truly nonperturbative
+theory, however, this could be misleading. The mass obtained
+from the propagator fit, what we call the off-shell mass,
+could deviate significantly from the physical mass.
+Another way of determining the Higgs mass is from the time
+slice correlation function of the Higgs field. In this
+approach, the lowest energy gap of the Higgs excitation
+is extracted and identified as the Higgs mass in the
+finite volume. This, of course, should be closer to
+the physical mass than the off-shell mass and, in a
+strongly interacting theory this is the only way to
+get a good control of the Higgs mass. In our simulation of
+the higher derivative theory, the interaction is much stronger
+than the conventional FORMULA  case, therefore, we used this method to
+extract the Higgs mass. The off shell Higgs mass was also
+determined and only served as a comparison.
+FIGURE 
+In Figure (REF ),
+we have shown the time sliced Higgs correlation function
+as a function of the Euclidean time separation FORMULA . The bare
+parameters are also shown at the top of the figure. At small distances,
+all higher energy excitations contribute, including the ghost states.
+Therefore, to ensure that we extract the lowest radial excitation, we
+started the fit from some FORMULA  values so that the fit was stable
+from there on. The functional form that we used is the standard
+hyperbolic cosine function for a single excitation.
+The data of the correlation function is derived from
+a blocking analysis of 32k hybrid Monte Carlo trajectories. If we
+compare this fitted mass value with the off shell mass, we find
+that the difference is very significant, which means the interaction
+is really much stronger when compared with the conventional FORMULA  case.
+The data points of the correlation function are highly correlated.
+Therefore, we should develop a method to determine the error of
+the fitted mass value.
+To determine the error of the mass parameter, we performed the following
+blocking procedure. The output data is originally divided into small
+blocks. For this particular example, we had 80 blocks available.
+Due the large fluctuation, a single block is not enough to give stable
+mass values. Therefore, the small blocks are first grouped together to
+form FORMULA  larger blocks, large enough so that we can extract stable mass
+values from them. For each large block FORMULA , the following ratio is formed
+FORMULA 
+where FORMULA  runs from 1 to the total number of large blocks FORMULA .
+If we have only a single excitation that dominates the correlation
+function, then
+the correlation function should be of the form
+FORMULA 
+Therefore, the ratio should only depend on the mass FORMULA  and
+the Euclidean time separation FORMULA ,
+FORMULA 
+Then the blocked values FORMULA  are set to the theoretical value
+and we can solve for the mass numerically for each FORMULA . The outcome of this
+procedure is called the “effective mass”, denoted as FORMULA .
+Then, the averaged effective mass is obtained by
+FORMULA 
+We can also obtain an error for the effective mass by
+FORMULA 
+FIGURE 
+We can then plot the effective mass as a function of the time
+separation FORMULA , together with the appropriate errors.
+This is shown in Figure (REF ).
+We found
+that,
+since many states contribute for small values of FORMULA , the
+effective mass is varying with FORMULA . However, if we go to FORMULA 
+values that are large enough, all the higher energy excitations die
+out exponentially and the lowest energy excitation dominates. Therefore
+starting from some FORMULA  value, we should see a plateau behavior of
+the effective mass. The value of the plateau should basically be
+the energy of the lowest energy excitation.
+Since the signal is getting exponentially small with FORMULA , the error
+of the effective mass function will grow significantly with FORMULA .
+Usually near the endpoint (FORMULA ), the errors become so
+large that effective mass value is no longer meaningful. We
+can then perform a FORMULA  fit to the effective mass, giving higher
+weight to the more accurate points. From this fit, we can determine
+the mass and its error.
+But this is not the whole story yet. In fact even in the second
+approach, what we extract is not the infinite volume Higgs mass.
+The reason for this is very simple. All the simulations are
+done in a finite volume, and finite size effects must
+be taken into account. Among all the finite effects, there is
+one effect that is most disturbing. In the infinite volume, the
+Goldstone particles are exactly massless. Therefore, the Higgs
+particle can decay into two Goldstone particles, thus the Higgs
+has a finite lifetime. In the simulation, however, because the
+volume is finite, the lowest Goldstone pair is not at zero
+energy, but is equal to FORMULA . This number is rather
+large for most of our simulations. In fact, it is larger
+than the Higgs mass itself. So the situation that we have in
+our simulation is that the Higgs is lighter than the Goldstone
+pair, and it therefore cannot decay. Of course, when the volume
+is increased, the Higgs mass energy level will meet the two
+Goldstone levels and the so-called level crossing phenomenon occurs. This
+was noticed quite some time ago. In fact, many groups have
+used this picture to get both the physical Higgs mass and its
+width from the measurement of the two Goldstone levels. In this
+picture, the Higgs is viewed as a resonance of the Goldstone
+Goldstone scattering process. Lüscher derived a formula which
+relates the Goldstone pair energy level in the finite volume
+to the infinite volume Goldstone-Goldstone scattering phase
+shift. By measuring the two Goldstone energy levels as accurately
+as possible for various volumes, one gets the continuum
+scattering phase shift profile in an energy range. If all the
+parameters are well chosen, one would be able to see a phase
+shift stepping from almost zero to almost FORMULA  exactly at
+the threshold energy which is equal to the physical Higgs mass.
+One would also be able to get the physical width of the Higgs
+by fitting it to the Breit-Wigner shape near the resonance.
+So, instead of fighting against the finite
+volume effects, one could utilize it to gain precious information
+about the continuum theory.
+To carry out a similar calculation in our model is more difficult
+than the usual FORMULA  model. First of all, we must establish
+an equivalent formula in the higher derivative theory which can
+relate the energy levels in the finite volume to the phase shift
+in the infinite volume. Secondly, we have extra particles in our
+model, namely the ghost pairs. We have to control their
+contribution to the correlation functions in order to get
+reliable results for the two Goldstone energy levels. Thirdly,
+our model requires much more computing power to get good
+stable results for the time sliced correlation functions.
+The detailed analysis of this problem is given in the
+next chapter.
+The simulation results we have obtained belong to one of
+the following two categories. One is performed with the naive
+discretization action and the other category is performed by using
+the improved action. We have done simulations in both
+phases of the theory. The following table summarizes the
+bare parameter and extracted physical quantities of the points.
+TABLE 
+In this table, points FORMULA  through FORMULA  are the results for
+the naive action while points FORMULA  through
+FORMULA  are for the improved action. Point
+FORMULA  and point FORMULA  are in the symmetric phase, while
+all other points are in the broken phase.
+In the symmetric phase, the important physical quantity
+is the renormalized coupling constant, which could be defined
+to be the connected 4-point function at zero external
+momenta. In order to get this quantity, the propagator mass is
+measured. The renormalized coupling
+constant
+is directly measured by forming the connected
+4-point function. The
+measurement of the renormalized coupling
+constant is very noisy, which requires large
+statistics of the data. We used the following
+formula to extract the connected four point function
+FORMULA 
+where FORMULA  is the number of components of the field,
+FORMULA  is the propagator mass and FORMULA  is the
+4-volume of the system. The quantity
+FORMULA  is defined to be
+FORMULA 
+where FORMULA  is the 4-volume average of
+the field FORMULA .
+The quantity FORMULA  is just a short hand notation for
+FORMULA , and the bracket means the
+Monte Carlo ensemble average.
+It is the subtraction in the bracket which causes most of
+the noise. Therefore, in order to get sensible results
+we have accumulated large statistics for the two points
+in the symmetric phase (Point G and J in the table).
+FIGURE 
+In Figure (REF ),
+we have shown the renormalized coupling constant for
+individual runs for the higher derivative FORMULA  model.
+It can be seen that the result is
+quite noisy and the points scatter a lot around the
+average. Usually FORMULA  is needed for an error of
+about 10 percent.
+We can now compare the renormalized coupling constant that
+we measured for the higher derivative FORMULA  model with that
+of the conventional FORMULA  model {{cite:b0b213f0-f776-4b61-b13f-84dd200a9152}}.
+In the symmetric phase (point G and J),
+we found that the renormalized coupling constants
+were much larger than in the
+old lattice simulation results of FORMULA  model.
+In the conventional
+FORMULA  model, when the correlation length was about FORMULA 
+the renormalized coupling constant FORMULA  was typically
+of the order of FORMULA . In our model, however, we saw
+a huge jump (about a factor of 2 to 3)
+of the renormalized coupling constant. This is a signal that
+the higher derivative model is much more strongly coupled
+than the conventional FORMULA  model.
+Recall that, from the large FORMULA  calculations in Chapter (), large
+FORMULA  also predicts a jump in the renormalized coupling constant in
+the symmetric phase. Therefore, our simulation results agree
+with the large FORMULA  results qualitatively.
+In the broken phase, the renormalized vacuum expectation
+values are obtained using the rotator correlation functions
+as described above. The errors are estimated from
+a blocking analysis of the data.
+The Higgs mass is taken to be
+lowest radial energy excitation in the finite volume.
+As described above, we tried two ways of extracting
+this energy gap. One by fitting the time sliced correlation
+function to the hyperbolic cosine function, the other from
+the effective mass plot. Both methods gave compatible results
+and the errors are determined from the FORMULA  fit of the
+effective mass plateau in the appropriate range.
+Identifying this energy gap with the infinite volume
+Higgs mass is of course a rather crude approximation
+and is subject to finite volume corrections. However, as
+shown in the table, we did not see a significant change
+in the FORMULA  ratio when the lattice volume was increased.
+In fact, they are compatible with each other within errors.
+We also tested this within the framework of the large
+FORMULA  approximation. We found that the ratio FORMULA  was
+rather stable when the size of the box was changed, as long
+as the box size was not too small and the energy crossing
+phenomenon had not occurred. And the value of the ratio was
+in agreement with the infinite volume large FORMULA  value.
+Therefore, we expect that this ratio represents the feature
+of the continuum higher derivative theory. The correct way
+of extracting the Higgs mass has to come from the finite
+volume resonance picture, which we will discuss in the
+next chapter.
+Another issue in the Higgs mass bound problem is to determine
+how much scaling violations (cutoff effects) are present
+in our results. This turns out to be a rather subtle
+issue. To study this problem, we have to answer the following
+two questions: (1) what is the nature of the scaling violations
+in our model and, (2) how can we calculate the scaling violations
+once the Higgs mass and the ghost parameters are known.
+First we will review how the above two questions are answered in
+the conventional FORMULA  model simulations. In the conventional
+FORMULA  model, the scaling violation is due to the hypercubic
+lattice that violates Euclidean (or rotational) invariance.
+This scaling violation can be defined both perturbatively and
+nonperturbatively. To calculate this scaling violation, we can
+check the rotational invariance of some quantity, for example, the
+free propagator of the field {{cite:9e001ce0-572a-4b3d-8491-5b1088a704f8}}, or
+evaluate the Goldstone scattering amplitude and compare with
+perturbation theory {{cite:87e24096-a42f-452d-9fd7-1a240352321b}}, {{cite:6d9c0fa9-100f-4cdd-a314-44e74079409e}}, {{cite:0ad0ccc8-f930-4f05-a6f2-18449cfb4140}}, {{cite:0aa48ad6-2057-4838-a46c-a0b12a2ae7d8}}. The second method
+seems to be more closely related to measurable quantities, but
+it relies on the perturbative nature of the problem.
+It worked out nicely for the conventional FORMULA  simply
+because even at the highest bound, the theory is still perturbative.
+The first method
+offers us an unambiguous result
+without using perturbation theory.
+Now, let us look at the situation for the higher derivative
+lattice theory.
+People tend to think that in the higher derivative FORMULA  theory
+there exist two types of scaling violations. One is the effect due
+to the lattice; the other one is what is usually called the
+Pauli-Villar cutoff (or ghost) effects. However, such a statement
+is very misleading. In fact, as we have shown in the
+previous chapters, this should not be the view, at least not the
+only view, of the higher
+derivative theory. This theory is a well defined field theory which
+has a unitary FORMULA -matrix and the ghost effects can easily evade the
+experimental tests. It is also
+a well-defined theory free of divergences.
+Therefore, if we could do the simulation
+in the continuum, we would have had no cutoff effects
+at all. It is only because the computer cannot handle
+infinite number of variables that we have to introduce
+the underline lattice to the theory. As long as we
+can constrain our lattice effects to be small, our
+simulation results should represent the higher derivative
+FORMULA  model in the continuum. In other words, there are no
+“ghost effects” if the ghosts are well
+hidden from any experiment.
+As stated previously, in analyzing the lattice effects,
+perturbation theory should only be taken as a hint.
+There have been ways of doing
+nonperturbative analysis of the lattice
+effects, though none of them is really
+sophisticated. One of the things that could be
+done is to analyze the breaking of the Euclidean
+invariance of the free propagator at some given parameters.
+This was first discussed by Lang et. al. in 1988 {{cite:9e001ce0-572a-4b3d-8491-5b1088a704f8}}.
+Although it only uses the tree level propagator,
+it is still a very good measurement
+of the amount of lattice violations in the theory.
+Obviously, going beyond this using perturbation
+theory is hopeless if the
+theory is strongly interacting. One can try to
+carry out the same analysis for the propagator
+in the large FORMULA  approximation, but again, the
+justification for the large FORMULA  approximation at
+FORMULA  is not very promising either.
+Let us now review some of the basic ideas of how this
+procedure is carried out for the propagator.
+On the lattice, the propagator in momentum space
+is, in general, a function
+of every individual momentum component.
+In the continuum, however, it should only depend on
+the combination FORMULA 
+due to Euclidean invariance. This symmetry is violated on
+the lattice and we can define a quantity
+FORMULA  which represents the
+amount of violation due to the lattice.
+For the inverse momentum space propagator,
+the quantity FORMULA 
+is defined in the following way.
+Let us pick some prescribed momentum scale FORMULA  in lattice
+units, and pick our reference momentum to be
+FORMULA . Then we can form all the momenta that
+have the same magnitude as this reference momentum in
+the form
+FORMULA .
+We can then define the rotational invariance violation by
+FORMULA  by
+FORMULA 
+where FORMULA  is the invariant measure for the rotational
+group normalize in such a way that FORMULA . Obviously
+this quantity is identically zero in the continuum where the
+rotational invariance is restored. On the lattice, the size
+of this quantity is a measure of the lattice effects in the
+discretized theory. In principle we can define
+similar quantities for other functions.
+We have performed the rotation invariance analysis for our
+simulation points using both the tree level and
+large FORMULA  approximation.
+In Figure (REF ), we have shown some of the rotational
+invariance violations
+for the tree level propagator of our simulation points
+FIGURE 
+We found that all our
+simulation points have very small lattice effects.
+For example, even with the naive propagator, in
+the Higgs mass range where we did our simulation,
+the rotational invariance violation is not larger
+than the old FORMULA  simulation points with correlation
+length of FORMULA .
+We can also calculate the finite volume lattice violation
+in both the free propagator and in the large FORMULA  approximation.
+In a finite box with lattice structure the lattice momenta
+are discrete and can only be multiples of FORMULA . For each
+integer FORMULA  there will be more than one set of solution
+FORMULA 
+to the equation FORMULA .
+Denoting the total number of solutions by FORMULA ,
+we can then define the counterpart of FORMULA  in
+the finite lattice
+FORMULA 
+Due the finite size effects, the momentum lattice is coarse grained.
+This will result in some zigzag behavior of the function
+FORMULA , as FORMULA  is increasing.
+However, for a reasonably large lattice, we will recover the
+infinite lattice results.
+FIGURE 
+In Figure (REF ), this rotational violation
+is shown for one of our simulation points for
+the large FORMULA  propagator. All the rotational invariance violation
+are well under one percent level.
+We are therefore confident that our results should
+represent the features of the higher derivative
+theory in the continuum.
+
+ Extracting Scattering Phase Shift Using Finite Size Techniques
+
+ Resonance in Finite Volume 
+In the previous chapter we argued that extracting the mass
+parameter of an unstable particle in a finite volume is not
+a trivial task. For the volume that people usually perform
+their Monte Carlo simulations, the lowest two Goldstone particle state has
+an energy eigenvalue which is higher than the Higgs mass parameter.
+This means that in such volumes the Higgs cannot decay into the
+Goldstone pair as it should in the infinite volume, even
+if the interaction between the Higgs and two Goldstone state
+is turned on. This problem
+can be solved in two ways if the theory is
+only weakly interacting. In the first conventional
+way, one tries to extract the propagator mass in the
+finite volume, then the finite volume corrections are added
+to get the propagator mass in the continuum infinite volume.
+After that the perturbation theory is used again to relate
+the propagator mass to the on-shell physical mass of the
+Higgs particle. The width of the Higgs can also
+be calculated using perturbation theory. This method
+heavily utilizes perturbation theory. The second method is
+to extract the infinite volume continuum results directly by measuring
+some quantity in the finite volume. With this method, one needs
+a general formula which will relate the infinite volume
+quantities to the finite volume quantities without using
+perturbation theory. In the conventional FORMULA  simulations
+both methods have been tried and they give compatible
+results. It is obvious that for our higher derivative
+FORMULA  model, due to its strong interaction, only the
+second one can be used to analyze the finite size effects.
+In fact, the basic idea of the second approach is to
+make use of the finite size effects
+instead of fighting them. Let us now review some of the
+basic ideas of this approach.
+We start with the conventional FORMULA  model without the
+higher derivatives. The basic particle excitations in the
+broken phase in a finite box consist of Higgs excitations and Goldstone
+excitations. Consider the eigenstate of one Higgs
+excitation and the eigenstates of two
+Goldstone excitations.
+FIGURE 
+Due to the Euclidean invariance, we can
+take the rest frame of the Higgs particle.
+There is a major difference between the energy of the
+Higgs excitation and the Goldstone excitations.
+The Goldstone pair with opposite three
+momenta has an energy eigenvalue which is
+dependent of the box size. The lowest one
+is FORMULA  where FORMULA  is cubic box size.
+The Higgs excitation, however, will not
+depend on the box size and is just a constant.
+To the lowest order, these particles behave just like
+free particles. In Figure (REF ), the dependence of these
+eigenvalues are shown.
+After the interaction is turned on,
+the one Higgs excitation mixes with the
+Goldstone pair excitation. For small box
+sizes, when the Higgs mass is below the
+lowest Goldstone pair excitation energy
+for that box size, ordinary perturbation theory
+will give us the correction of these
+energy levels if the interaction is not too
+strong. For some larger box size, however, the Higgs
+excitation will cross the Goldstone pair excitation
+and for that particular box size, degenerate perturbation
+theory should be used to calculate the level crossing.
+If the interaction is weak, one would expect a plateau
+in a range of FORMULA  which should be identified as the
+physical Higgs mass and the splitting at the crossing
+point basically gives you the width of the Higgs particle.
+In order to use this picture of resonance in a finite box,
+a nonperturbative relation must be established from which
+one can get the relation between infinite volume quantities
+and the finite volume quantities. Finally, if the finite volume
+quantities are measured in the Monte Carlo simulations, we
+can use this relation to deduce the infinite volume results
+nonperturbatively.
+
+ Lüscher's Formula
+In the infinite volume, the Higgs particle is identified as
+a resonance in the isospin 0 channel in Goldstone-Goldstone
+scattering. As in any two particle scattering process, the
+scattering cross section is characterized by the scattering
+phase shift FORMULA  at a given center of mass energy.
+When the center of mass energy is at the physical Higgs mass,
+we see a peak in the scattering cross section and the
+scattering phase shift rises dramatically from almost
+zero to almost FORMULA . In this case, there is
+a resonance in the scattering process and a Higgs particle
+is produced. The mass of the Higgs particle is identified
+by the position of the peak or
+equivalently by the energy at which FORMULA  crosses
+FORMULA . The width of the particle is given
+by the range in which FORMULA  steps from almost 0
+to almost FORMULA .
+For an ideal resonance, that is
+the resonance which is infinitely narrow,
+the scattering phase shift will step up
+exactly FORMULA . But for wide resonances the sharpness
+and the height of the step is greatly reduced.
+Therefore, the scattering phase shift in the infinite volume
+fully describes the properties of the Higgs particle.
+People have derived a relation which relates the infinite volume
+phase shift to the two Goldstone particle energy eigenvalues
+in the finite volume. This relation, with the name Lüscher's
+formula, was derived first by DeWitt
+in a different form {{cite:c9fb8fe2-3ad6-49c5-a4f4-f14225325b5d}}.
+Later Lüscher rederived it and expreseed in a form suitable
+for nonperturbative Monte Carlo simulations
+{{cite:086a3f5c-c7fc-45bd-a9b8-066ef9543c75}}, {{cite:ddab16f0-d78d-4cae-be69-c6e4d8b16135}}. It was used by
+Zimmermann et. al. to study the conventional FORMULA  model
+and proved to work very well {{cite:c98cd3f4-8b38-417e-b7c8-a131bc87fbf5}}, {{cite:daf3ce36-99ce-4d11-bbe8-fc676ce2d9c9}}.
+We now derive this formula with
+a method that is based on DeWitt, since this can be easily generalized
+to the higher derivative case.
+Consider a quantum mechanical system governed by the Hamiltonian
+FORMULA  in a three dimensional box whose side is FORMULA . We can
+define the resolvent operators FORMULA  and FORMULA  as
+FORMULA 
+where FORMULA  is just an arbitrary complex number.
+Consider the matrix elements of FORMULA 
+between two states FORMULA  and FORMULA .
+where FORMULA  and FORMULA 
+are eigenstates of the free
+Hamiltonian FORMULA , i.e.
+FORMULA ,
+FORMULA .
+We have
+FORMULA 
+Let us now define the self energy operator such that
+FORMULA 
+Then the matrix element of FORMULA  may be written as
+FORMULA 
+The self energy operator defined above satisfies the following
+integral equations
+FORMULA 
+Setting FORMULA  in the above equation we get
+FORMULA 
+Note that the pole of FORMULA  in the complex FORMULA  plain should be
+the exact eigenvalue of state FORMULA , and we get
+FORMULA 
+where FORMULA  is the eigenvalue of the
+full Hamiltonian for the state that is perturbed from FORMULA .
+This formula tells us that the expectation value of the
+self energy operator in some state gives us
+the so-called energy shift which is the energy
+difference between the exact eigenvalues and the free
+eigenvalues.
+Let us now look at this integral equation in a very large
+box, where the intermediate states are very dense and we
+would expect to be able to go to the continuum limit. In fact,
+we can write down an expression
+FORMULA 
+where the function FORMULA  is given by the energy shell sum
+FORMULA 
+This relation is obtained in the following way. Imagine that
+FORMULA  is some real number and we take some small real positive
+number FORMULA  and divide the real axis into a small interval
+FORMULA  and the rest. For a very large box, the
+eigenvalues FORMULA  will be very dense and they are treated
+separately, depending on whether they fall in the interval or not.
+For those states whose eigenvalues fall outside the small interval,
+the sum will better approximate the principal valued expression
+if we take smaller FORMULA  values. For any fixed FORMULA 
+there will be infinite eigenvalues which fall into the small interval, as
+long as the box size is going to infinity. For these states, if the
+operator is inserted in some smooth function of the energy,
+they are equivalent to the delta function which selects out
+the specific energy. The function FORMULA  is basically the
+degeneracy sum of all the states that has almost the same energy
+in the infinite volume.
+With this relation we can rewrite Equation (REF )
+in the following way
+FORMULA 
+If we now take FORMULA  and make use of
+Equation (REF ) we get
+FORMULA 
+We can then multiply both sides by a factor of
+FORMULA .
+Note that the scattering phase shift operator
+is given by
+FORMULA 
+also we can take our states FORMULA  to
+be diagonal in angular momentum, we then get
+FORMULA 
+This is the basic formula which relates the scattering
+phase shift in the infinite volume to the exact
+energy eigenvalues in the finite volume.
+To be specific with the function FORMULA , note that
+in the isospin 0 channel of two Goldstone
+particles with opposite momenta FORMULA , we have the relation
+FORMULA 
+where FORMULA  is the energy of one Goldstone particle. We
+get FORMULA  ,so
+FORMULA 
+where we have used the dispersion relation for the
+Goldstone FORMULA  and FORMULA . The zeta function
+is defined to be
+FORMULA 
+where the function FORMULA  is the usual
+spherical harmonics. When this expression is substituted
+into the general formula, we get
+FORMULA 
+This is exactly Lüscher's formula that has been used by
+Zimmermann et. al. in their simulation except that they
+were working with the nonzero mass case for the Goldstone
+particle. It is clear from the above derivation that
+the condition of the massive Goldstone is not necessary.
+In fact, as we will see below,
+we have tested the massless case in the conventional
+FORMULA  case and got consistent results with Zimmermann et. al..
+This problem can be understood in the following way. Recall that
+in Lüscher's derivation of the formula, he assumes that
+the pion (Goldstone) has a finite mass due to
+the non-vanishing external source.
+This external source tilts the potential and makes the
+potential lower in the direction of the external source.
+Therefore in the potential valley it is not flat but rather
+has a slope. This is why the Goldstone particles become massive.
+Then the Higgs field is defined to be the 4-volume
+average of the field variable along that particular
+direction. The Goldstone field is defined to be the field along the
+directions that are orthogonal to the Higgs field.
+However, when the external source is gets smaller,
+the tilting in the potential becomes weaker. As a
+result, the fluctuation around the Higgs direction becomes
+stronger. In the limit of a vanishing external source, the
+special direction is not defined at all and the potential
+becomes totally FORMULA  invariant.
+It is clear that in this limit, the Higgs field and the pion
+field is not well-defined.
+This is also seen in the finite volume correction of the
+pion mass.
+Therefore, if the
+box is too small, we will not be able to disentangle the
+energy correction to the one pion energy and the interaction
+between the two. In this case, the correction to the single
+pion mass depends on the quantity FORMULA  exponentially.
+When the pion mass goes to zero, the finite size correction
+to the single pion energy will be very large. This is the
+main reason that one has to take the nonzero pion mass.
+In fact, the situation in the FORMULA  model is more subtle.
+First of all, the massless pion dispersion relation is
+protected by the symmetry in the very large volume limit.
+Therefore, the energy of a
+single pion would be exactly multiple of FORMULA , even if
+the interaction is turned on.
+Exactly at the vanishing external source, we know that the
+above picture is not a good picture of the symmetry breaking
+mechanism in the finite volume. Instead, we should use
+the Born-Oppenheimer picture discussed in
+Chapter () . In the Born-Oppenheimer picture, the pions are
+massless, and the zero momentum pion is replaced by the
+rotator excitations. The Higgs field can also be meaningfully
+defined. As we have seen in Chapter () ,
+there will be no large finite volume corrections
+to the two pion energy hence the energy shift in the
+finite box totally reflects the interaction between the
+two pions. Note that there is no contradiction to the finite
+external source case. If the external source is present and
+significantly different from 0, then the conventional picture of
+the massive pion works very well and
+the Born-Oppenheimer picture
+would be a very bad approximation since the potential is so tilted.
+On the other hand, the Born-Oppenheimer picture is valid for
+very small external source
+where the conventional picture breaks down.
+Therefore, our conclusion is that Lüsher's formula will still
+work even in the massless pion case, as long as the
+field definitions are adjusted according to the
+Born-Oppenheimer picture described in detail in Chapter ().
+
+ Integral Representation of the Zeta Function 
+In the Lüscher's formula, the zeta function needs to be dealt with
+carefully. For the cubic geometry, it turns out that a useful integral
+representation of the function
+exists which we will now discuss {{cite:086a3f5c-c7fc-45bd-a9b8-066ef9543c75}}.
+In general, the zeta function is defined to be
+FORMULA 
+where the symbol FORMULA  stands for the usual spherical
+harmonic functions and the summation is over all the three dimensional
+integers. In order to derive the integral representation, let us also
+define the heat kernel by
+FORMULA 
+We will also need the truncated heat kernel
+FORMULA 
+Then the zeta function has the following representation
+FORMULA 
+as long as FORMULA  satisfies the condition FORMULA . Note that
+the combination FORMULA 
+has the following asymptotic behavior
+FORMULA 
+Therefore we immediately have the following analytic continuation for
+the zeta function in the range FORMULA ,
+FORMULA 
+In particular for FORMULA  we have
+FORMULA 
+The above integral representation is suitable for numerical evaluation
+of the zeta function. The integrand is evaluated for any FORMULA  value
+and the integrals are performed numerically using the standard
+integration subroutines (e.g. IMSL). When evaluating the integrand one
+has to distinguish the case for FORMULA  and FORMULA . The first
+line in the representation (REF )
+is used for the case FORMULA  while the
+second line is used for the case FORMULA  for better convergence. It
+turns out that an accurate numerical answer can be obtained for
+FORMULA  values not larger than 10, which is the case in the practical
+applications.
+
+ Simulation Results on the Conventional FORMULA  Model 
+As mentioned in the previous section, we performed a test simulation
+first on the conventional FORMULA  model without the external source
+term. Therefore, our pion dispersion is the massless dispersion. The
+simulation was done using a cluster update program which runs very
+efficiently on the alpha AXP workstation. In the simulation, we made
+measurements after every 10 cluster updates and for each lattice size
+a 100,000 to 200,000 measurements were accumulated. The operators that we
+took into account were the radial Higgs field, and the four lowest pion
+pair states. We chose our
+simulation point so that the Higgs mass would
+come out around FORMULA . We were also working in the nonlinear limit of the
+FORMULA  model and the input bare parameter was the hopping parameter
+FORMULA  which we fixed to be FORMULA . Old simulation results indicate
+FIGURE 
+that the Higgs mass for this point should be FORMULA . We scanned the
+size of our 3-volume from 8 to 24 with a step of 2. The correlation
+functions were then analyzed to extract the energy levels in this isospin
+zero channel. The correlation matrix was diagonalized and the eigenvalues
+were used to extract the energy levels. The errors of the energy levels
+were obtained by blocking the data. These errors in the energy levels
+then translate into the errors in the phase shift when using
+Lüscher's formula.
+The final results can be summarized in Figure (REF ),
+where we
+have plotted the the scattering phase shift as a function of the center
+of mass energy obtained from the application of Lüscher's formula
+(the data points). The solid line is a perturbative fit to the data
+which yields a mass and width compatible with the expected results. The
+dashed line represent the
+perturbative results when the old values of FORMULA  are
+substituted in.
+The highest point is for the lattice size FORMULA  and
+this point overshoots the expected values. This could be
+because of the lattice effects and the subleading finite
+volume effects. The rest of the points agree nicely with the perturbative
+results. The large error bars for the larger lattices is
+purely due to the lack of the statistics.
+This plot is a clear indication that the formula also works in
+the massless case, as long as we define our Higgs field properly.
+
+ Lüscher's Fomula for Higher Derivative Theory 
+The relation in the higher derivative theory is quite similar to that
+in the conventional theory. We just have to repeat most parts
+of the previous derivation and make adjustments accordingly.
+In the case of the higher derivative theory, the Hamiltonian is still
+self adjoint, i.e.
+FORMULA 
+We will still define the resolvent operators as
+FORMULA 
+We will set up the basis FORMULA  such that
+FORMULA 
+where the eigenvalue FORMULA  could be complex. The state
+are chosen to satisfy FORMULA . We can now define the self energy operator
+according to
+FORMULA 
+and it satisfies the following integral equation
+FORMULA 
+Similarly the energy shift is given by the diagonal matrix element of
+the self energy operator.
+FORMULA 
+In the large 3-volume limit,
+the intermediate state summation in the integral equation of the self
+energy reduce to the following
+FORMULA 
+Taking FORMULA  we again arrive at
+FORMULA 
+The delta function in the above equation restricts the intermediate
+states summation to take only
+the real energy eigenstates. The matrix element
+of the operator FORMULA  between
+the physical states is nothing but the phase shift as can be verified
+from the general formula established in Chapter ().
+Therefore, we would
+conclude that the Lüscher's formula will still work, even in the
+case of the higher derivative theory with ghost states.
+
+ Phase Shift for Higher Derivative Theory in FORMULA  Expansion 
+As we have established the validity for the Lüscher's formula for
+the higher derivative, it is very instructive to show that this
+indeed will work out in the large FORMULA  expansion. Recall that the
+continuum scattering phase shift for the higher derivative theory has
+been calculated in Chapter () in the large FORMULA  expansion. There the
+FIGURE 
+unitarity is maintained in the large FORMULA  expansion and the phase
+shift could have some microscopic acausal effects. To verify that
+Lüscher's formula in the higher derivative theory, we have evaluated
+the energy eigenvalues for the two Goldstone particle in the isospin
+0 channel in the large FORMULA  limit.
+This is done by solving for the real roots of the matrix element
+FORMULA . In the leading order of
+the FORMULA  expansion this matrix element reduces to the geometric
+summation of the Goldstone bubbles.
+Then these eigenvalues are
+substituted into Lüscher's formula to extract the phase shift, which
+is then plotted against the center of mass energy of the scattering.
+In Figure (REF ),
+the result of this calculation is shown. The points are
+the phase shift values obtained from Lüscher's formula. The solid line
+is the corresponding continuum calculation of the phase shift as
+described in Chapter ().
+It is evident that the formula is working very
+well. We have tried the same procedure for other set of parameters
+and they all give good agreement with the continuum calculations.
+
+ Phase Shift Simulations for Higher Derivative Theory 
+The result from the large FORMULA  expansion makes us confident
+that the same procedure could be carried out for the higher derivative
+field theory just as it was done for the conventional FORMULA  model.
+Owing to the improved action, we can now select our Higgs mass
+value to be around FORMULA  and the ghost mass parameter at
+FORMULA  and still keep the lattice effects small. This makes it
+possible to perform such simulations on the higher derivative
+FORMULA  model.
+However, there are quite a number of technical difficulties.
+One of the
+main difficulties is that some efficient
+algorithms that are available for the
+conventional theory break down miserably for the higher derivative
+theory. For example, the over relaxation algorithm
+is very slow for the higher derivative theory due to the neighbor
+gathering. The cluster algorithm is simply not working at all (
+the whole lattice tends to become one huge cluster).
+In fact the only usable algorithm is the Fourier accelerated hybrid
+Monte Carlo algorithm, which only
+works for finite bare coupling. Also, it
+is not as efficient as the algorithms mentioned above for the
+conventional theory. This means that to really get the stable
+energy levels, we would have to run a rather long time.
+Another difficulty is the understanding of the shape of the
+phase shift as a function of the center of mass energy. If the
+theory is strongly interacting, we can no longer hope to fit the
+simulation data to the perturbative results.
+A scheme to extract the physical parameters like the Higgs mass
+and its width is needed. If the Higgs resonance is well separated
+from the ghost, we could try the Breit-Wigner shape near the
+resonance, neglecting the effects of the ghosts.
+The simulation of this project is still in progress and we hope
+to release the results in the near future.
+
+Conclusions
+Our project was first motivated by the study of the Higgs
+mass bound problem in a Pauli-Villars regulated theory
+{{cite:bdc1fede-3b98-4c18-a429-2cbc90119f95}}, {{cite:572f2633-4a4c-400d-9123-47c865271dda}}, {{cite:2d7e9be0-5c18-44b1-9816-e31bd4dfca2e}}.
+This theory
+can be viewed as a limiting case of the higher derivative
+FORMULA  scalar field theory.
+The study of the higher derivative theory goes
+beyond the scope of the Higgs mass bound problem.
+The higher derivative FORMULA  model that we have studied is
+obtained from the conventional FORMULA  scalar field theory by
+adding higher derivative terms to the Higgs kinetic energy
+{{cite:bdf09830-6112-495b-b6f5-3553eed4d505}}, {{cite:bdc1fede-3b98-4c18-a429-2cbc90119f95}}, {{cite:572f2633-4a4c-400d-9123-47c865271dda}}.
+We have established
+the consistent quantization procedure of the higher derivative
+scalar field theory, and have shown this theory to
+be finite and unitary with possible violations of microscopic
+causality {{cite:7d67129f-8daf-4d96-9690-a8408c43f803}}. Therefore, the ghost states in the theory
+can easily evade experimental tests.
+We have also studied
+the model nonperturbatively in
+computer simulations by introducing an underlying lattice structure.
+In the continuum,
+the higher derivative FORMULA  model can be viewed as the
+Pauli-Villars regulated conventional FORMULA  model in the
+small FORMULA  limit, where FORMULA  is the Higgs mass and
+the FORMULA  is the Pauli-Villars mass parameter. It can also
+be viewed as a finite, well-defined
+and unitary theory with ghost excitations.
+The continuum large FORMULA  study of our model shows that
+this theory can incorporate a heavy Higgs particle in the
+TeV range, with the ghost pair well hidden at a few times
+heavier than the Higgs particle {{cite:bdc1fede-3b98-4c18-a429-2cbc90119f95}}.
+On the lattice, our model can represent different universality
+classes of models, depending on how the criticality is approached.
+It could represent the conventional
+trivial FORMULA  model at criticality,
+in which case, the higher derivative terms indeed become irrelevant.
+However, in another limit, it
+could also represent the higher derivative FORMULA  theory in the
+continuum, in which case, the theory is not trivial and
+the higher derivative terms cannot be viewed as irrelevant
+operators in the Lagrangian.
+From our simulation results of the model, it is evident that
+any attempt to perform a systematic search of higher dimensional
+operators to determine the Higgs mass bound would not make
+any sense {{cite:2d7e9be0-5c18-44b1-9816-e31bd4dfca2e}}, since,
+as far as the Higgs mass bound is concerned,
+one cannot tell whether a higher dimensional operator is
+relevant for the problem or not.
+In our nonperturbative simulation of the model, we find:
+(1) Our model can generate a much heavier Higgs particle than
+the conventional FORMULA  model, which is in agreement with the
+large FORMULA  result qualitatively.
+Without introducing the more complicated structures like
+technicolor,
+it is possible in our model to
+have a strongly interacting
+Higgs sector, which was excluded
+by earlier lattice studies of the conventional model.
+(2) It is difficult to establish a bound for Higgs particle
+in our model, because by the time the Higgs is heavy enough, it
+would be impossible for us to define the scaling violations in
+our model. In fact, in our model, we believe the notion of the
+Higgs mass bound loses its meaning, unless some new nonperturbative
+definition is provided.
+Many interesting theoretical issues remains unsolved for our
+higher derivative FORMULA  model. For example, can this theory
+incorporate a techni-rho-like resonance in the isospin 1 channel?
+This is obviously a nonperturbative problem. To answer it, we have
+to extract the phase shift in the isospin 1 channel for the higher
+derivative theory. We are still working on this issue.

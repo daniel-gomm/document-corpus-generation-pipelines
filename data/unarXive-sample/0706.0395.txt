@@ -1,0 +1,1200 @@
+
+Photonic-crystal slabs with a triangular lattice of triangular holes
+investigated
+using a guided-mode expansion method
+Lucio Claudio Andreani and Dario Gerace FORMULA
+Dipartimento di Fisica “A. Volta,” Università di
+Pavia, via Bassi 6, I-27100 Pavia, Italy
+2020/09/07 10:21:13
+According to a recent proposal [S. Takayama et al., Appl.
+Phys. Lett. 87, 061107 (2005)], the triangular lattice of
+triangular air holes may allow to achieve a complete photonic band
+gap in two-dimensional photonic crystal slabs. In this work we
+present a systematic theoretical study of this photonic lattice in
+a high-index membrane, and a comparison with the conventional
+triangular lattice of circular holes, by means of the guided-mode
+expansion method whose detailed formulation is described here.
+Photonic mode dispersion below and above the light line, gap maps,
+and intrinsic diffraction losses of quasi-guided modes are
+calculated for the periodic lattice as well as for line- and
+point-defects defined therein. The main results are summarized as
+follows: (i) the triangular lattice of triangular holes does
+indeed have a complete photonic band gap for the fundamental
+guided mode, but the useful region is generally limited by the
+presence of second-order waveguide modes; (ii) the lattice may
+support the usual photonic band gap for even modes (quasi-TE
+polarization) and several band gaps for odd modes (quasi-TM
+polarization), which could be tuned in order to achieve
+doubly-resonant frequency conversion between an even mode at the
+fundamental frequency and an odd mode at the second-harmonic
+frequency; (iii) diffraction losses of quasi-guided modes in the
+triangular lattices with circular and triangular holes, and in
+line-defect waveguides or point-defect cavities based on these
+geometries, are comparable. The results point to the interest of
+the triangular lattice of triangular holes for nonlinear optics,
+and show the usefulness of the guided-mode expansion method for
+calculating photonic band dispersion and diffraction losses,
+especially for higher-lying photonic modes.
+42.70.Qs, 42.82.Et, 78.20.Bh, 42.65.Ky
+Introduction
+Photonic crystals (PhC) embedded in planar waveguides, also called
+PhC slabs, are at the heart of current research on photonic
+crystals{{cite:aa97734a-02b5-4011-a622-baa0424405e6}}, {{cite:13cac9e4-b830-4fa4-80f0-9f022559b9d0}}, {{cite:6918c603-3444-453a-920c-def2a50138de}}, {{cite:34b8cd23-83b6-42aa-bc2c-5d4c04a34394}}, {{cite:54ec9d0e-a950-438e-be02-62a5746f5766}}, {{cite:a3519792-f270-4071-8fe7-e22508dff4be}} because
+of the possibility of confining light in all spatial directions
+combined with the advantage of a lithographic definition of the
+pattern. The propagation of light in these systems can be
+controlled by a two-dimensional (2D) photonic lattice in the
+waveguide plane, and by total internal reflection in the
+perpendicular direction. Waveguides with strong refractive index
+contrast (like the suspended membrane, or air bridge) support
+truly guided modes lying below the light line dispersion in the
+cladding
+materials.{{cite:21c9c674-49ba-4415-9a2a-31a172e77742}}, {{cite:de1e9fce-12ff-4d66-84d0-831e17fb262a}}, {{cite:d0b6d9ec-9f48-4396-b9d4-3142796616ca}}, {{cite:429ee4e8-3fbb-47cb-82ea-bc16c162fa58}}, {{cite:2444bbf9-2a81-49c6-baa8-63945788c281}}, {{cite:a9982f3e-2c9f-464d-add7-14e1c3529328}}, {{cite:ac265293-0989-4b73-84be-e8d0aa3e1010}}, {{cite:6607b68d-dd58-4ae4-8ef4-6c314655d117}}
+However, most of the photonic modes (or all of them, in the case
+of waveguides with weak refractive index contrast) lie above the
+light line and are only quasi-guided, as they are subject to
+intrinsic losses due to out-of-plane
+diffraction.{{cite:9c6ae2a0-f775-403f-8453-e1cca1df4c7e}}, {{cite:c9809d3e-baf9-4095-830c-fcdd884953fc}}, {{cite:bfd09391-28f1-44b0-91f5-094716b8a981}}, {{cite:e9757816-d4cb-4359-886c-6ae4b186cb33}}, {{cite:6be5a00d-8681-43b7-9e6b-94b1cab48a65}}, {{cite:bd48d899-6088-4ad9-b5ab-459542c18e0f}}, {{cite:172e1814-fdf5-4488-b8ed-44f7cdb977ca}}, {{cite:eeb6615b-7912-4104-9402-2fe6152af9dc}}, {{cite:f4fc36b3-c409-463b-a868-f664a55e6711}}, {{cite:e7a1b2f9-5362-475d-9fac-7e776a582635}}, {{cite:a2ecb2fe-640a-44ca-bb46-dab645f1b4df}}
+The physical properties of PhC slabs can be significantly
+different from those of the corresponding 2D system, for several
+reasons. First, the 2D photonic modes are subject to confinement
+in the vertical waveguide and the resulting blue shift is strongly
+polarization-dependent. Second, the presence of second- and
+higher-order waveguide modes can produce a complicated pattern of
+photonic bands, especially for higher-lying states. Third,
+diffraction losses of quasi-guided modes are an inherent feature
+of PhC slabs which is absent in the ideal 2D case. For all of
+these reasons, some basic and well-known properties of 2D photonic
+crystals cannot be easily translated to PhC slabs. For example, it
+is well known that the triangular lattice of circular air holes in
+2D supports a complete photonic band gap for all propagation
+directions and light polarizations at sufficiently large air
+fractions.{{cite:aa97734a-02b5-4011-a622-baa0424405e6}}, {{cite:a7380505-21ca-48d7-a7bd-5c1d34140818}}, {{cite:b8fe1131-1a4d-4721-b74e-652808f082c9}}, {{cite:6d8f52f2-eecb-453a-8747-0c91c6e0dc61}}
+Nevertheless, the same lattice realized in a high-index membrane
+does not possess a complete band gap, as the odd modes with
+respect to a horizontal mirror plane (often called quasi-TM modes)
+are subject to a strong and non-uniform blue shift which
+eliminates the gap.{{cite:d0b6d9ec-9f48-4396-b9d4-3142796616ca}}, {{cite:4cb34fe7-caa7-4edb-8d54-e18f69506980}} Indeed, most
+applications of PhC slabs employ the even modes (often called
+quasi-TE), which do possess a band gap for all propagation
+directions.
+It was recently suggested{{cite:9d6dc728-0001-4153-ab55-82ec00cf667c}} that the triangular
+lattice of triangular air holes in a high-index membrane gives
+rise to a complete photonic gap for both even and odd modes. The
+physical mechanism is the reduction of symmetry of the basis in
+the unit cell, as compared to the hexagonal symmetry of the 2D
+lattice, giving rise to a splitting between the first and the
+second odd bands at the K point of the Brillouin zone: when
+realized in a high-index membrane, this gap overlaps the usual gap
+between the first and the second even bands, giving rise to a
+complete gap for all directions and polarizations. The
+experimental results reported in Ref. takayama05
+support the existence of a complete photonic gap.
+A main purpose of this paper is to perform a systematic study of
+the triangular lattice of triangular holes, as compared to the
+triangular lattice of circular holes, both being realized in a
+high-index dielectric membrane. We calculate the photonic band
+dispersion, gap maps, and intrinsic losses of quasi-guided modes
+for the 2D lattice. We also treat line-defect waveguides obtained
+by removing a full row of holes, and point cavities consisting of
+three missing holes. In addition to a determination of photonic
+gaps for even and odd modes as a function of membrane thickness
+and air fraction, we compare diffraction losses for the lattices
+with conventional (circular) and reduced symmetry (triangular)
+holes: this comparison is important in order to assess the
+possible usefulness of the reduced-symmetry lattice. Among the
+results, we find interesting prospects of the triangular lattice
+of triangular holes for nonlinear optics, as it may allow to
+achieve doubly-resonant second-harmonic generation (SHG) with an
+even (quasi-TE) fundamental wave and an odd (quasi-TM) harmonic
+wave when line-defect waveguides or photonic cavities are
+introduced.
+The calculations reported in this paper are performed with an
+approach which we name Guided-Mode Expansion (GME) method. Maxwell
+equations are treated by expanding the magnetic field into the
+basis of guided modes of an effective homogeneous waveguide, and
+by solving the resulting eigenvalue equation numerically.
+Intrinsic losses of quasi-guided modes are obtained by calculating
+the coupling to leaky modes of the effective waveguide within
+perturbation theory (i.e., the photonic analog of Fermi Golden
+Rule for quantum-mechanical problems). The GME method, although
+being an approximate one (since the basis of guided modes is not a
+complete basis set), has been applied to a variety of photonic
+lattices and has proven to be useful especially for obtaining
+quasi-guided modes and their diffraction
+losses.{{cite:4cb34fe7-caa7-4edb-8d54-e18f69506980}}, {{cite:1ea8c213-5d75-4d05-8acc-1503bbe5f9f3}}, {{cite:0e622da6-13ca-4974-b02e-94aaa0ef5988}}, {{cite:d3fb180e-5883-49ab-a4d3-c0f7c2632329}}, {{cite:ea7e9ae3-4488-44d4-bd5b-9f895a299edb}}, {{cite:2ade299a-77de-4b71-b899-1132d1cbf146}}, {{cite:0d94d8fa-79a0-4d16-8b62-0eb15ffb8093}} It has also been
+successfully employed for the interpretation of optical
+experiments on PhC
+slabs.{{cite:32a63104-075b-4531-83bd-5cab22bc3af1}}, {{cite:06a35754-79c7-4856-92ba-44a64e899ce6}}, {{cite:91b27f53-01cd-4648-acf7-7445682afbc1}}, {{cite:4dc7ac2d-028e-4ccf-a537-4a51061bc95b}}, {{cite:021f0c17-6689-4d48-91ba-19203d2a09b3}}, {{cite:9f335ad8-2966-466b-b593-8708eca7c4b3}}, {{cite:ec406bc6-455b-4c43-b1ce-2b0966a4d2b2}} Another purpose of this paper is to
+provide a detailed description of the GME method, together with
+convergence tests and exemplifying applications.
+The rest of this work is organized as follows. In Section II we
+outline the GME method and discuss a few convergence tests.
+Section III contains the results for the 2D triangular lattice of
+triangular holes in a high-index membrane, namely photonic
+dispersion, gap maps and intrinsic losses. In Sec. IV we present a
+few results for line-defect waveguides and point cavities in the
+triangular lattice of triangular holes. Section V contains a
+discussion of the results and of prospective applications of the
+investigated lattice. Technical details, which are needed by the
+reader in order to implement the GME method, are given in the
+Appendices.
+
+Guided-mode expansion method
+As PhC slabs are intermediate between 2D photonic crystals and
+dielectric slab waveguides, it is reasonable to describe photonic
+modes in these systems starting from slab waveguide modes and
+introducing the effect of a dielectric modulation in the core and
+cladding layers. This is the central idea of the guided-mode
+expansion method, in which PhC slab modes are expanded in the
+basis of guided modes of an effective homogeneous waveguide and
+coupling to radiative modes is taken into account by perturbation
+theory. In this Section we describe the formalism for calculating
+mode dispersion and intrinsic losses, for the general case of an
+asymmetric PhC slab, and discuss convergence of the method.
+Formalism for photonic dispersion
+The system we are considering is shown in Fig. REF a.
+It consists of a PhC slab made of three layers 1,2,3, each of
+which is homogeneous in the vertical (FORMULA ) direction and is
+patterned with a 2D photonic lattice in the FORMULA  plane. The core
+layer has a thickness FORMULA , while the lower and upper claddings are
+taken to be semi-infinite.{{cite:2152e088-2abe-4076-a6dc-4eb11ae2a1f3}} Patterning of
+each layer is characterized by the same 2D Bravais lattice, while
+the basis in the unit cell can be different - a typical situation
+is that the core layer 2 is patterned, while layers 1 and 3 are
+not (i.e., they can be described by the same Bravais lattice as
+layer 2, but with a vanishing air fraction). Writing
+FORMULA , the dielectric constant
+FORMULA  is piecewise constant in the
+FORMULA  direction and takes the form
+FORMULA  in each layer FORMULA .
+We assume a magnetic permeability FORMULA .
+FIGURE 
+As is well known, Maxwell equations for the electric and magnetic
+fields E, H with harmonic time dependence can be
+transformed into the second-order equation for the magnetic field
+
+FORMULA 
+
+with the condition FORMULA . By
+expanding the magnetic field in an orthonormal set of basis states
+as
+
+FORMULA 
+
+the orthonormality condition being expressed by
+
+FORMULA 
+
+Eq. (REF ) becomes equivalent to a linear eigenvalue
+problem
+
+FORMULA 
+
+where the matrix FORMULA  is given by
+
+FORMULA 
+
+This formulation of the electromagnetic problem bears strong
+analogies to the quantum-mechanical treatment of electrons, with the
+hermitian matrix FORMULA  playing the role of a quantum
+Hamiltonian. Once the magnetic field of a photonic mode is known,
+the electric field can be obtained from
+
+FORMULA 
+
+and the electric field eigenmodes are orthonormal according to
+
+FORMULA 
+
+as is well known{{cite:8786b653-639d-4504-bf33-646e8092e8b1}} and easily verified.
+In order to define an appropriate basis set FORMULA  for the expansion (REF ), we introduce an
+effective slab waveguide made of three homogeneous layers with
+dielectric constants FORMULA , FORMULA ,
+FORMULA , as illustrated in Fig. REF b. We
+take FORMULA  as the spatial average of
+FORMULA  in each layer:
+
+FORMULA 
+
+where the integral extends over a unit cell of area FORMULA . This
+choice for the average dielectric constants is convenient, but by
+no means unique - numerical tests and other issues related to the
+choice of FORMULA  are discussed in
+Subsec. REF . In any case, we assume that the
+average dielectric constants fulfill the inequalities
+
+FORMULA 
+
+in order for the effective slab to support a set of guided modes.
+Their explicit form is well known{{cite:b0cf3ab5-cd46-4d23-9431-008ec332ccc1}} and it will be
+summarized here in order to specify our notation, as well as for the
+paper to be self-contained. Let us denote by FORMULA 
+the 2D wavevector in the FORMULA  plane with modulus FORMULA  and unit vector
+FORMULA , by FORMULA  a
+unit vector perpendicular to both g and FORMULA , and by
+FORMULA  the frequency of a guided mode which satisfies
+FORMULA . Moreover we define the following
+quantities:
+
+FORMULA 
+
+which represent the real (imaginary) parts of the wavevector in
+the core (upper/lower cladding), respectively. The guided mode
+frequencies are found by solving the following implicit equations
+(with the suffix FORMULA  being understood for simplicity):
+
+FORMULA 
+
+for transverse electric (TE) polarization, and
+
+FORMULA 
+
+for transverse magnetic (TM) polarization. The guided modes at a
+given wavevector g are labelled by the index
+FORMULA  and the eigenfrequencies are denoted by
+FORMULA . Explicit forms for the electric and magnetic
+fields of the guided modes are given in Appendix
+, as they are needed for the calculation of
+the matrix elements (REF ).
+The guided modes of the effective waveguide in
+Fig. REF b depend on a wavevector g which can
+take any value in the 2D plane. However, photonic modes in the PhC
+slab of Fig. REF a have the form dictated by
+Bloch-Floquet theorem and they depend on a wavevector k
+which is usually restricted to the first Brillouin zone of the 2D
+lattice: indeed, the effect of the dielectric modulation
+FORMULA  is to fold the guided modes of the
+effective waveguide to the first Brillouin zone and to produce
+photonic bands and band gaps. We therefore write
+FORMULA , where the Bloch vector
+k lies in the first Brillouin zone and G is a
+reciprocal lattice vector. As the basis states for the expansion
+(REF ) of the magnetic field, we choose the guided
+modes
+FORMULA 
+of the effective waveguide given in Appendix
+. The guided-mode expansion of the magnetic
+field therefore reads{{cite:ec481b06-4dd7-4052-85b8-ac6f44fd7893}}
+
+FORMULA 
+
+The basis set is orthonormal according to Eq.
+(REF ), but not complete, since the radiative modes
+of the effective waveguide are not included in the basis set. This
+approximation will be partially lifted in Sec. REF ,
+where the effect of radiative modes in determining diffraction
+losses will be taken into account.
+With this choice for the basis set, the general index FORMULA  can be
+written as FORMULA . The matrix
+elements FORMULA  of Eq. (REF )
+can be calculated in a straightforward way from the field profiles
+of the guided modes: the resulting analytic expressions are
+somewhat lengthy and are given in Appendix
+. They depend on the inverse dielectric
+matrices
+
+FORMULA 
+
+in the various layers. Like in usual 2D plane wave calculations, a
+numerically convenient approach to calculate these matrix elements
+is to define the dielectric matrix
+
+FORMULA 
+
+and to find FORMULA  by numerical matrix
+inversion as
+FORMULA :
+this procedure is known to have much better convergence properties
+as a function of the number of plane waves,{{cite:b128c42c-23e9-4ca4-9f18-115c9c69443f}}, {{cite:0e89d448-eb23-4936-aaad-0b6b32bc8397}}
+since the truncation rules for Fourier series in the presence of
+discontinuous functions are better represented.{{cite:11a98e04-e482-450e-890c-2d603af12825}} If the
+photonic lattices in layers 1–3 have a center of inversion (the
+same for all layers), the dielectric matrices
+FORMULA ,
+FORMULA  are symmetric in
+FORMULA  and FORMULA  turns out to be
+a real, symmetric matrix when the phases of the fields are chosen
+as in Appendix . In the most general case of
+a photonic lattice without a center of inversion (like the
+triangular lattice with triangular holes investigated in this
+work), the matrix FORMULA  is complex hermitian. Line
+and point defects can be treated by introducing a supercell in one
+or two directions, respectively, like in 2D plane-wave
+calculations.
+The formalism presented here refers to the most general case of an
+asymmetric PhC slab. If the structure is symmetric under
+reflection by a horizontal mirror plane FORMULA  [i.e., if the upper
+and lower claddings have the same dielectric pattern and are made
+of the same dielectric materials,
+FORMULA ],
+the basis states as well as the photonic eigenmodes can be
+classified as even or odd with respect to the mirror plane. We
+denote by FORMULA  the corresponding specular
+reflection operator and we shall refer to even (odd) states with
+respect to this operator as FORMULA  (FORMULA )
+modes. The simplest way to exploit this mirror symmetry is to
+solve the eigenvalue problem (REF ) separately for
+FORMULA  and FORMULA  states by keeping only the
+appropriate solutions of Eqs. (REF ),(REF ),
+as detailed in Appendix . There we also discuss
+the issue of polarization mixing in the framework of the GME
+method: in general, a photonic mode of a PhC slab is a
+superposition of TE-polarized and TM-polarized basis states and
+all six components of the electric and magnetic fields are usually
+non-vanishing. Another useful symmetry property holds when the
+Bloch vector k lies along special symmetry directions,
+for which mirror reflection FORMULA  with
+respect to a vertical plane (FORMULA ) is a symmetry
+operation of the PhC slab: in this case the eigenmodes can be
+classified as even or odd with respect to this mirror symmetry,
+i.e., they have FORMULA  or
+FORMULA  respectively. Vertical mirror symmetry
+can be exploited by transforming the matrix FORMULA 
+with a unitary transformation which decouples the blocks
+corresponding to FORMULA  states.
+
+Formalism for intrinsic losses
+When a photonic mode in the PhC slab falls above the cladding
+light line (or light lines, if the waveguide is asymmetric), it is
+coupled to leaky modes of the slab by the dielectric modulation
+and it becomes quasi-guided, i.e., it is subject to intrinsic
+losses due to scattering out of the plane. The losses can be
+represented by an imaginary part of the frequency
+FORMULA , which is related to the Q-factor of a
+resonance by FORMULA .
+Within the GME method, the imaginary part of frequency can be
+calculated by time-dependent perturbation theory, like in Fermi
+Golden Rule for quantum mechanics. The imaginary part of the
+squared frequency of a PhC mode with Bloch vector k,
+whose frequency lies above the cladding light lines (or at least
+above one of them), is given by
+
+FORMULA 
+
+where the matrix element between a guided and a leaky PhC slab
+mode is given by
+
+FORMULA 
+
+and FORMULA  is the 1D
+photonic density of states (DOS) at fixed in-plane wave vector for
+radiation states that are outgoing in medium FORMULA :
+
+FORMULA 
+
+Notice the sum over reciprocal lattice vectors and polarizations
+in Eq. (REF ), as all diffraction processes contribute
+to FORMULA .
+Equations (REF )–(REF ) generalize the
+expressions given in Ref. ochiai01-pert to the case
+of an asymmetric PhC slab and to situations in which processes
+with all FORMULA  contribute to diffraction losses. Once
+FORMULA  is found, the imaginary part of
+frequency is easily obtained as
+FORMULA .
+FIGURE 
+For a given wavevector g and polarization FORMULA  of the
+radiative modes, there are two scattering channels, corresponding to
+states with an outgoing component in the lower cladding (medium 1)
+or in the upper cladding (medium 3).{{cite:8786b653-639d-4504-bf33-646e8092e8b1}}, {{cite:4ada9787-7270-440e-b36a-e0edf1d971e4}}
+The radiation modes are schematically shown in
+Fig. REF . The state which is outgoing in medium 1
+corresponds to a photonic DOS with FORMULA  in Eq. (REF ),
+while the outgoing state in medium 3 corresponds to a DOS with
+FORMULA . Radiation states are normalized according to
+Eq. (REF ), and only the field components in the
+cladding regions are relevant in determining the
+normalization. {{cite:b43493f6-3752-427c-a606-bd3300d4cb54}} Since the field profile of
+a scattering state tends to a plane-wave form in the far field, the
+photonic density of states (REF ) is appropriate whatever
+the explicit field profile of radiative PhC slab modes. In the
+present GME method, we evaluate the matrix element by approximating
+the radiation modes of the PhC slab with those of the effective
+waveguide. This approximation is consistent with the treatment of
+the previous Subsection, as the set of guided+radiation modes of the
+effective waveguide is orthonormal according to
+Eq. (REF ), and will be shown later to yield accurate
+results for diffraction losses when compared to more exact methods.
+In Appendix  we give the explicit form of
+radiation states of the effective waveguide which are outgoing in
+either the lower cladding (Fig. REF a) or in the
+upper cladding (Fig. REF b), for both TE and TM
+polarizations. Using expansion (REF ) for the
+magnetic field of a PhC slab mode, the matrix element
+(REF ) becomes
+
+FORMULA 
+
+where
+
+FORMULA 
+
+are matrix elements between guided and radiation modes
+of the effective waveguide, which can be calculated analytically.
+In Appendix  we collect the matrix elements
+(REF ), for all possible combinations of
+polarizations. Those expressions are implemented together with
+Eqs. (REF )–(REF ), in order to
+evaluate the imaginary part of frequency and hence the intrinsic
+diffraction losses of quasi-guided modes.
+The calculation of losses is computationally more demanding than
+the photonic dispersion alone, as the eigenvectors of the linear
+problem (REF ) are also needed. The formalism for
+intrinsic diffraction losses presented in this Subsection and in
+the Appendix refers to the general case of an asymmetric PhC slab.
+If the slab is symmetric, and if the PhC slab modes are found as
+FORMULA  states as outlined in Appendix
+, it is possible to define and use symmetric or
+antisymmetric outgoing states instead of the scattering states
+illustrated in Fig. REF . If this is done,
+FORMULA  (FORMULA ) quasi-guided modes are coupled
+only to symmetric (antisymmetric) radiative states. From a
+computational point of view there is no special advantage in using
+symmetry-adapted radiative states, as the computing time needed to
+implement the perturbative formula Eq. (REF ) is usually
+small. Thus even in the case of a symmetric PhC slab it is
+convenient to use the general loss formalism, and simply obtain
+FORMULA  or FORMULA  PhC slab states by selecting
+the basis states of the effective waveguide, as explained in
+Appendix .
+
+Discussion of the method
+In this Subsection we discuss the convergence properties of the
+GME as a function of numerical parameters and give a brief
+overview of previously published results and comparison with other
+approaches. Truncation parameters in the GME method are the choice
+and number FORMULA  of plane waves and the number
+FORMULA  of guided modes of the effective waveguide kept in
+the expansion. The dimension of the eigenvalue problem
+(REF ) is FORMULA , or about
+half of this value when vertical parity
+FORMULA  is used. The choice of plane waves
+can be made in analogy to usual 2D plane-wave expansion: the
+important point is how to calculate the inverse dielectric matrix
+FORMULA  properly, as already noticed in
+Subsec. REF . In the present implementation we
+take an isotropic cutoff for reciprocal lattice vectors and adopt
+the common procedure of inverting the dielectric matrix
+numerically:{{cite:b128c42c-23e9-4ca4-9f18-115c9c69443f}} while this is adequate for many purposes,
+improved implementations of the plane-wave expansion
+{{cite:5e9d0c60-92c9-4646-a103-9a6469c384d0}}, {{cite:77427201-d2d1-4169-ad62-6f117422de3e}} could also be introduced in the GME
+method in order to speed up convergence.
+FIGURE 
+The optimal FORMULA  depends on waveguide parameters and on
+the frequency region considered: typically, for PhC slabs defined
+in a thin high-index membrane, FORMULA  in each parity
+sector (i.e., for both FORMULA  and FORMULA 
+modes) yields very accurate results for the lower-lying modes. As
+an example, in Fig. REF  we show the real and
+imaginary parts of the frequency for a few photonic modes as a
+function of the number of guided modes FORMULA , for
+FORMULA  modes in the triangular lattice of circular air
+holes. Structure parameters are similar to those used later in the
+paper. The number of plane waves is truncated to
+FORMULA , which is sufficient for convergence in the
+present lattice. It can be seen that both the mode energies and
+the imaginary parts are stable for FORMULA , while a good
+approximation is obtained already for FORMULA  or even
+FORMULA . This is very convenient for the purpose of design
+and search of parameters, as a photonic structure in a high-index
+contrast PhC slab can be optimized within a fully 3D approach,
+with the same computing time of a conventional 2D plane-wave
+expansion. The precise calculation (e.g., with FORMULA )
+can be performed a posteriori once the structure parameters
+are optimized.
+FIGURE 
+It is also important to discuss the choice of the dielectric
+constant of the effective waveguide, which is usually taken to be
+the spatial average (REF ) in each layer. While this
+choice is a natural one, it might be asked whether the results
+depend on the assumed value of FORMULA . In
+Fig. REF  we show the real and imaginary parts of
+frequency for a few modes, with the same parameters of the
+previous Figure, as a function of the effective dielectric
+constant in the core region. It can be seen that the results are
+rather insensitive to the assumed value of FORMULA ,
+except when it becomes smaller than about five. All curves are
+flat around the value FORMULA  which corresponds
+to the spatial average. This satisfactory behavior arises because
+the GME method employs the set of all guided modes of the
+effective waveguide (although in practice they are truncated to a
+finite number for numerical convenience), thereby compensating for
+different choices of the effective waveguide used to define the
+basis set. Thus the choice of the dielectric constant of the
+effective waveguide as the spatial average of
+FORMULA  is justified, at least for the low
+air fractions that are commonly employed. Although one might
+consider extending the method by introducing an anisotropic
+dielectric tensor for each layer of the effective waveguide,
+Fig. REF  strongly suggests that the results of the
+GME method would not be changed by such a complicated extension
+which is therefore unnecessary.
+The approximations of the GME method are: (i) for photonic
+dispersion, the shift of guided and quasi-guided modes due to
+second-order coupling to leaky modes of the effective waveguide is
+neglected; (ii) for diffraction losses, the density of radiative
+modes of the PhC slab is approximated with that of the effective
+waveguide. The effect of these approximations can be judged by
+comparing the results with those of other methods that are known
+to be exact within numerical accuracy. A full analysis of this
+issue is outside the scope of this paper, however comparisons
+between the results of GME and those obtained by other methods
+have already been published and are shortly summarized here. The
+dispersion of quasi-guided modes was found to be in very good
+agreement with the resonance positions in reflectance or
+transmittance spectra found from a scattering-matrix
+treatment.{{cite:4cb34fe7-caa7-4edb-8d54-e18f69506980}} In fact, the complex frequencies
+of photonic modes can be obtained from the poles of a scattering
+matrix.{{cite:6be5a00d-8681-43b7-9e6b-94b1cab48a65}}, {{cite:eeb6615b-7912-4104-9402-2fe6152af9dc}}, {{cite:f4fc36b3-c409-463b-a868-f664a55e6711}} The intrinsic
+propagation losses of line-defect waveguides in the triangular
+lattice obtained with different methods (GME,{{cite:0e622da6-13ca-4974-b02e-94aaa0ef5988}}
+finite-difference time-domain or FDTD{{cite:a2ecb2fe-640a-44ca-bb46-dab645f1b4df}} and from the
+poles of a scattering matrix{{cite:6be5a00d-8681-43b7-9e6b-94b1cab48a65}}, {{cite:831a54a3-05df-4373-bfb2-e5fa1c9dc3f5}}) were
+compared for the same waveguide parameters and were found to agree
+very well with each other: a detailed comparison is presented in
+Ref. sauvan05thesis. A comparative study of GME and
+Fourier modal methods applied to cavity modes in one-dimensional
+PhC slabs has been reported in Ref. gerace05oqe, and
+very good agreement was found for the photonic dispersion as well
+as the intrinsic losses. Finally, the Q-factors of cavity modes in
+L1, L2 and L3 nanocavities (one, two or three missing holes in the
+triangular lattice) as a function of nearby hole displacement are
+found to be almost identical when calculated with either the GME
+method{{cite:2ade299a-77de-4b71-b899-1132d1cbf146}} or the poles of a scattering
+matrix.{{cite:06003a7d-5760-4a28-9412-0ce35440c6b1}} Agreement with experiments performed on
+PhC slabs made of
+Silicon-on-Insulator,{{cite:32a63104-075b-4531-83bd-5cab22bc3af1}}, {{cite:4dc7ac2d-028e-4ccf-a537-4a51061bc95b}}, {{cite:021f0c17-6689-4d48-91ba-19203d2a09b3}} Si
+membranes,{{cite:9f335ad8-2966-466b-b593-8708eca7c4b3}}
+GaAs/AlGaAs,{{cite:06a35754-79c7-4856-92ba-44a64e899ce6}}, {{cite:91b27f53-01cd-4648-acf7-7445682afbc1}} and Silicon
+Nitride{{cite:ec406bc6-455b-4c43-b1ce-2b0966a4d2b2}} is also very satisfactory. The set of
+these comparisons indicates that the GME is a reliable method for
+both photonic mode dispersion and intrinsic losses, whose main
+advantages are computational efficiency and ease of application to
+various kinds of vertical waveguides and of photonic lattices,
+both periodic in 2D and containing line- and point defects.
+FIGURE 
+
+Triangular lattice with triangular holes
+We report in this Section a systematic study of the triangular
+lattice of triangular air holes patterned on a free-standing
+high-index slab of thickness FORMULA , as schematically shown in
+Fig. REF . The relevant dimensions of this
+lattice are the triangular basis side, FORMULA , and the slab
+thickness. Throughout this Section we assume (unless otherwise
+specified) that the lattice is patterned in a material with
+dielectric constant FORMULA , which is appropriate for
+Silicon at the usual telecom wavelength FORMULA  FORMULA m but
+also to other materials with similar dielectric constants (e.g.,
+GaAs). For the calculations shown in the present Section, we
+employed up to 109 plane waves and 4 guided modes per parity
+sector in the basis set of the GME method. All the calculations
+have been done on an ordinary Pentium computer with low
+computational effort. The complex Fourier transform of the
+dielectric constant for the triangular lattice of triangular holes
+is given in Appendix . Notice that the lattice
+is invariant under rotations by FORMULA  and is not
+centrosymmetric, but since
+FORMULA  by time-reversal
+symmetry, the same symmetry directions of the usual triangular
+lattice of circular air holes do apply.
+FIGURE 
+FIGURE 
+The first realization of such a lattice has been reported in
+Ref. takayama05, with the purpose of measuring a
+complete photonic band gap in a waveguide-embedded 2D PhC thanks
+to a reduction of symmetry for the basis in the unit cell of the
+triangular lattice, as already pointed out in the Introduction.
+The importance of finding a complete photonic band gap in a
+waveguide-embedded photonic structure is related to the practical
+realization of linear waveguides or cavities with reduced losses
+or higher Q-factors, as scattering into quasi-guided modes of
+opposite parity would be avoided. In Fig. REF  we
+present the photonic band dispersion calculated with the GME
+method for structure parameters as in
+Ref. takayama05. Even (TE-like) and odd (TM-like)
+modes are reported in Figs. REF a and b,
+respectively. It is worth noticing that in the absence of
+second-order waveguide modes, the fundamental gaps of both
+parities would overlap in the dimensionless frequency range
+0.31-0.32, as it can be seen from the Figure. However, the
+presence of a second-order mode with cut-off around FORMULA  for both polarizations, as shown in
+Fig. REF , prevents the opening of a true photonic
+band gap. Such second-order modes (which do not appear in a 2D
+treatment with an effective index) are unavoidable in the present
+structure, due to the relatively large slab thickness, FORMULA .
+We believe that our result is not in contrast with the
+experimental findings reported in Ref. takayama05, in
+which a strong reduction of the transmission intensity was
+measured along the FORMULA K and FORMULA M directions. Since the
+dispersion of the second-order waveguide mode is very close to the
+air light line in the relevant frequency region, such modes are
+barely coupled to the external beam focused on the sample side and
+also they are subject to large disorder-induced losses; thus, it
+is likely that transmission into such modes is attenuated in a few
+lattice periods, which would explain the apparent photonic band
+gap observed experimentally. On the other hand, when line- or
+point-defects are introduced, such second-order modes are
+necessarily present within the gap, thus limiting the usefulness
+of this design for applications. In the following, we will
+consider a photonic band gap for the waveguide-embedded structure
+only when no higher-order modes are present within the apparent
+gaps formed by the fundamental modes, i.e., when the PhC slab is
+truly single-mode.
+With the aim of optimizing the design proposed by Takayama
+et al., we performed a systematic study of the present
+photonic lattice at varying structure parameters. In
+Fig. REF  we show the photonic band dispersion and
+gap maps for the triangular lattice of triangular air holes with
+slab thickness FORMULA  (Figs. REF a and d),
+FORMULA  (Figs. REF b and e), and for the reference
+2D system of infinite thickness (Figs. REF c and f),
+respectively. As is well known for more conventional lattices,
+{{cite:d0b6d9ec-9f48-4396-b9d4-3142796616ca}}, {{cite:4cb34fe7-caa7-4edb-8d54-e18f69506980}} the blue shift of photonic modes
+with respect to the ideal 2D system due to the dielectric
+confinement is strongly polarization-dependent; in particular, it
+is more pronounced for odd (TM-like) modes. This physical behavior
+is seen by comparing Figs. REF a-c, in which the
+dispersion of photonic modes is calculated for the same 2D
+photonic lattice in which triangular air holes have side
+FORMULA . For FORMULA  the second-order cut-off is rather high
+in energy, thus the system can be considered as single-mode below
+the light line. On increasing the slab thickness, the second-order
+cut-off red shifts. For FORMULA , both even and odd modes open
+their fundamental band gaps, but they do not overlap to give a
+complete photonic band gap for all symmetry directions. In order
+to span a wider range of structure parameters, important
+information can be inferred by the gap width as a function of the
+holes' side. As it can be seen in Figs. REF d-f, the
+gap maps depend strongly on the waveguide thickness and differ
+substantially from those of the 2D system. For FORMULA , the
+fundamental odd gap is closed for all values of FORMULA , due to the
+larger blue shift of band edges at the K-point than at the
+M-point. Even if both fundamental band gaps are present for
+FORMULA , no complete gap opens due to the stronger blue shift of
+odd modes. For FORMULA , the presence of higher-order modes
+prevents the opening of complete gaps as well. The gap map for the
+ideal 2D system presents a great variety of photonic gaps for both
+polarizations, and also some complete gaps at high frequencies. It
+is worth noting that the fundamental TE and TM band gaps do not
+overlap in frequency, unlike in the ordinary triangular lattice of
+circular air holes.{{cite:aa97734a-02b5-4011-a622-baa0424405e6}} Furthermore, the fundamental TE
+gap turns out to be narrower than the usual gap for circular
+holes.
+Even if no truly complete band gaps appear to be present for this
+waveguide-embedded lattice, it is interesting to investigate the
+formation of resonant gaps at FORMULA  and FORMULA , to be
+exploited in non-linear optical applications like second-harmonic
+generation (SHG). While doubly-resonant SHG has been widely
+studied in one-dimensional systems like multilayers and
+microcavities,{{cite:b494d84c-fe43-4969-ac73-65184a6408e7}}, {{cite:df7a5d96-eb95-4ec5-b043-9eebe9d6c98d}}, {{cite:327b217b-7468-4aba-b67b-c9ead68fbd25}}, {{cite:fd8552d4-a8db-4926-93b1-bbf704bb4fc9}}, {{cite:42b64739-d5ba-4653-b3bf-7eba70b99814}}, {{cite:23b38f4e-2f8d-4f10-8990-5eb59a2ddc84}}, {{cite:1b8c6d3b-7e92-4b1d-8c0c-7b3f2f2e4421}}, {{cite:6b1c6059-6254-4980-b43e-a5c9909d7f72}} no 2D photonic lattice giving such an
+interesting result has been reported in the literature. In
+particular, it can be seen from Fig. REF e that many
+odd gaps are present for a slab thickness FORMULA . In this case,
+it is easy to find a condition for which the fundamental
+FORMULA  gap at pump frequency FORMULA  is resonant with a
+FORMULA  gap at FORMULA . One of the possibilities is
+indeed shown in Fig. REF . It is substantially the same
+result reported in Fig. REF b, but here the odd modes
+(Fig. REF b) are plotted in a doubled frequency range
+with respect to the even modes (Fig. REF a). As it can be
+seen, there is a good overlap in frequency between the large band
+gap of Fig. REF a and the rather narrow but robust gap of
+Fig. REF b. This could be interesting, e.g., for
+applications to non-linear optical converters based on GaAs, in
+which the pump s-polarized field would be converted into a
+p-polarized second-harmonic field.{{cite:0d0a08b4-bfe4-40f3-ac93-e3b81a498640}} In this respect,
+the usefulness of the present lattice would be enhanced with
+ad hoc fabricated line- or point-defects. It should be
+reminded that these results have been obtained by using the same
+dielectric constant for both pump and second-harmonic modes, but
+it is easy to extend the present calculations to non-linear
+materials with optical constants of known frequency dispersion.
+One of the issues when dealing with the triangular lattice of
+triangular holes would be given by intrinsic losses. In order to
+show the general interest of the triangular hole-based lattice,
+and also to show an application of the GME method, we compare
+intrinsic losses of the present system to the ones of an ordinary
+circular hole-based PhC slab. In this case, we restrict our
+discussion to FORMULA  modes along the FORMULA K symmetry
+direction. Intrinsic losses are quantified by calculating the
+imaginary part of frequency, as detailed in the previous Section.
+In Fig. REF a and c we show the photonic dispersion
+and intrinsic losses for the first few bands of an ordinary PhC
+slab with a triangular lattice of circular holes. It can be
+noticed that the modes along the chosen symmetry direction are
+separated according to their mirror symmetry with respect to the
+vertical plane, which can be either even (FORMULA ) or odd
+(FORMULA ).{{cite:ed75d086-35d6-455e-a426-bd120b054ecf}} On the right hand side, in
+Fig. REF b and d, we plot dispersion and losses for
+the case of triangular holes. In this case no symmetry operation
+FORMULA  holds, so the modes are mixed. The
+choice of FORMULA  for the circular holes and FORMULA  for
+triangular ones, respectively, allows to obtain roughly the same
+air fraction FORMULA  for the two lattices. This can be also
+verified by the roughly equal second-order cut-offs. The
+dispersion is only slightly modified when changing the hole shape
+from circular to triangular, and in particular it appears that a
+general blue shift occurs for the modes in
+Fig. REF b with respect to the ones in
+ REF a. For what concerns intrinsic losses, we can
+see that they remain almost of the same order on going from
+circular to triangular holes, at least for the lower frequency
+bands. This means that (in the absence of disorder) no particular
+differences are introduced by changing the basis of the lattice,
+apart from the loss of symmetry FORMULA . As
+the band labelled with 1 is almost unchanged on going from the
+circular to the triangular hole shape, also the intrinsic losses
+are quite similar between the two lattices. For higher lying
+bands, in particular for the band labelled with 2, such similarity
+becomes less evident on approaching the light line, owing to the
+blue shift of modes for the triangular hole-based lattice and to
+the mixing with other modes which does not occur in the
+conventional lattice. In particular, owing to the lack of
+FORMULA  symmetry, there is an anticrossing
+between mode 2 and the second-order waveguide mode occurring very
+close to the light line, which correspondingly affects the
+imaginary part of frequency (see Figs. REF b-d).
+The mode labelled with 3 has larger losses for triangular holes
+than for circular ones, but it is quite high in energy.
+FIGURE 
+As a conclusion to this section, we have shown that the triangular
+lattice of triangular air holes does indeed have a complete
+photonic band gap between the fundamental waveguide modes, but the
+gap is actually eliminated by the presence of second-order modes.
+The lattice can be designed for nonlinear optical applications in
+order to have a gap for even modes at the pump frequency which is
+resonant with a gap for odd modes at the SH frequency. Intrinsic
+losses are of the same order as in the circular hole-based
+triangular lattice. The GME method is useful for a comparison of
+the two lattices and for the design of structures with desired
+characteristics.
+
+Line-defect waveguides and point cavities
+We show in the present Section that line- and point-defects can be
+introduced into the triangular-hole lattice without any loss of
+performance with respect to the circular-hole one. It is well
+known that removing a row of holes in a 2D photonic lattice
+introduces a linear defect supporting guided modes within the
+photonic band gap. In a triangular lattice such waveguide is
+usually called W1, and its channel width (namely the distance
+between the holes surrounding the waveguide) is FORMULA .
+These guided modes exploit the usual index confinement along the
+vertical direction added to the gap confinement in the waveguide
+plane, and they are studied with great interest by the scientific
+community owing to prospective applications in photonic integrated
+circuits.
+FIGURE 
+FIGURE 
+In Fig. REF  we report a comparison between the W1
+waveguide realized in the triangular lattice with circular
+(Figs. REF a-c) and triangular holes
+(Figs. REF b-d), respectively. For the circular
+hole-lattice the guided modes are classified according to their
+mirror symmetry with respect to the vertical plane FORMULA . For such
+calculations, we used supercells along the FORMULA M direction of
+widths ranging from FORMULA  to FORMULA , with 181 to 323 plane waves
+and 4 guided modes in the basis set for the expansion. Then, an
+average was taken to get final results for losses, in order to
+smooth out finite supercell effects.{{cite:0e622da6-13ca-4974-b02e-94aaa0ef5988}} As it is
+seen from the Figure, the dispersion of the guided modes is very
+similar between the two systems, apart in the region of mixing. In
+fact, as FORMULA  is a symmetry operation for
+the system in Fig. REF a, the two guided modes are
+completely decoupled, while in Fig. REF b they mix
+producing a consistent anti-crossing and a mini-gap. Looking at
+the imaginary part of frequency, we see by comparing
+Figs. REF c and d that they are almost identical away
+from the mixing region, which means that W1 waveguides in
+triangular lattice of triangular holes may behave as standard W1
+waveguides.{{cite:2c29487b-e22a-422b-836f-784df6190889}} Such result is quite surprising,
+as the asymmetry of such a waveguide could be expected to lead to
+higher scattering of propagating light states. On the contrary,
+the reduction of symmetry does not increase losses in the
+perfect photonic lattice - of course, the role of
+fabrication imperfections may affect differently the two
+structures in real lattices.
+FIGURE 
+The final goal of this paper is to exploit the potential of the
+triangular lattice of triangular holes for non-linear optical
+applications. In this respect, the ultimate system for frequency
+conversion at the nanoscale is a photonic cavity with double
+resonance for pump and harmonic waves. Doubly-resonant
+microcavities for second-harmonic generation have been studied in
+the context of Fabry-Perot
+cavities.{{cite:b494d84c-fe43-4969-ac73-65184a6408e7}}, {{cite:df7a5d96-eb95-4ec5-b043-9eebe9d6c98d}}, {{cite:23b38f4e-2f8d-4f10-8990-5eb59a2ddc84}}, {{cite:1b8c6d3b-7e92-4b1d-8c0c-7b3f2f2e4421}}, {{cite:6b1c6059-6254-4980-b43e-a5c9909d7f72}}
+According to a recent proposal, double resonance in photonic
+crystal cavities may allow to achieve strong coupling between
+single photons.{{cite:eb76a365-2f02-4f74-8d7c-cbe16f814ade}} It has been shown that full 3D
+confinement of light with a very high figure of merit (quality
+factor, Q) can be achieved by properly designed point-defects in
+2D PhC slabs.{{cite:e7a03c80-beb5-46ea-84f1-c815de673d89}} In particular, removing three holes
+along the FORMULA K direction (L3 cavity) and optimizing the
+positions of the holes surrounding the cavity allows to achieve
+Q-factors of the order of FORMULA .{{cite:4efd4689-24aa-418a-81d6-e9d81e6b1244}} We compare here
+the L3 cavity structure made in a triangular lattice of triangular
+air holes to the usual L3 cavity with circular holes and the
+results are shown in Fig. REF . For such calculations,
+a square supercell of dimensions FORMULA  has been taken.
+Up to 1551 plane waves and two guided modes were used in the GME.
+As it can be seen from Fig. REF a, many dispersionless
+FORMULA  defect modes appear in the photonic band gap, due
+to the tight confinement provided by the cavity. We can evaluate
+the vertical Q-factor of such modes (i.e., the one determined by
+intrinsic out-of-plane losses) by the definition
+FORMULA , where both FORMULA  and
+FORMULA  have been averaged over the folded Brillouin
+zone in order to reduce the effects of a finite supercell size.
+Very good agreement with measured Q-factors and defect mode
+energies has been already found with this GME-based
+procedure.{{cite:2ade299a-77de-4b71-b899-1132d1cbf146}} The Q-factor of the un-optimized L3
+cavity in the lattice of circular holes is theoretically estimated
+to be FORMULA . When the same cavity is realized in the
+triangular lattice of triangular holes (Fig. REF b),
+we see that the fundamental mode is almost unchanged, and its
+Q-factor is comparable to the one of Fig. REF a. The
+slight blue shift of the defect mode and of the lower band edge in
+Fig. REF b with respect to Fig. REF a is
+due to the slightly different air fractions of the two lattices.
+As we have already shown in Fig. REF , we can design a
+triangular lattice with triangular holes having a doubly-resonant
+band gap. Thus, we plot in Fig. REF c the dispersion
+of FORMULA  modes within the doubled frequency range with
+respect to Fig. REF b, in analogy with
+Fig. REF . Many defect modes appear within the FORMULA 
+band gap, and the lowest mode has a Q-factor of almost FORMULA ,
+which is a very promising value considering that the structure has
+not been optimized in any way. There is, in fact, much room for
+improving the Q-factors at both FORMULA  and FORMULA  by means of
+geometry optimization of the nearby holes. The present result make
+us confident that high-Q, doubly-resonant nanocavities may be
+realized in PhC slabs made of non-linear materials, bringing new
+exciting results in integrated optics at nanoscale level.
+
+Conclusions
+The triangular lattice of triangular holes in a high-index
+dielectric slab has been thoroughly investigated by means of the
+guided-mode expansion method, whose detailed formulation and
+examples of applications have been given in the paper. The
+investigated lattice does have a complete band gap for both
+polarizations when the fundamental waveguide mode is considered,
+consistently with the results of Ref. takayama05, but
+the gap is actually eliminated by the presence of second-order
+waveguide modes. The intrinsic losses of quasi-guided modes in the
+triangular lattice with triangular and circular holes, and in
+line-defect waveguides as well as nanocavities defined therein,
+are comparable.
+An interesting application of the triangular lattice of triangular
+holes for nonlinear optics follows from the fact that a gap for
+FORMULA  (TE-like) modes at the pump frequency can be
+designed to be in resonance with a gap for FORMULA 
+(TM-like) modes at the harmonic frequency: thus, resonant
+second-harmonic generation exploiting band-edge effects may be
+realized. Promising results are also found for point cavities: the
+L3 cavity in the triangular lattice of triangular holes supports a
+FORMULA  cavity mode at FORMULA  which can be resonant
+with a FORMULA  cavity mode at FORMULA . There is much
+room for improving the design of doubly-resonant, high-Q
+nanocavities by geometry optimization. These results are
+interesting in view of application of the triangular lattice of
+triangular holes for nanoscale nonlinear optical processes.
+
+Acknowledgments
+The authors are grateful to M. Agio, H. Benisty, D. Cassagne,
+Ph. Lalanne, M. Le Vassor d'Yerville, M. Liscidini, and C. Sauvan
+for useful conversations and suggestions. They also would like to
+acknowledge K. Hennessy and W.T.M. Irvine for providing them with
+the preprint of Ref. irvine06 prior to its
+publication, thereby motivating the search for doubly resonant PhC
+cavities. This work was supported by MIUR through Cofin project
+“Silicon-based photonic crystals for the control of light
+propagation and emission” and FIRB project “Miniaturized
+electron and photon systems”, as well as by CNR-INFM through PRA
+PHOTONIC.
+
+Guided modes of the effective waveguide
+The frequencies of the guided modes of the effective waveguide are
+found from the implicit equations (REF ) for TE
+polarization, and (REF ) for TM polarization. The guided
+modes are labelled by the wavevector g and the mode index
+FORMULA ,{{cite:ec481b06-4dd7-4052-85b8-ac6f44fd7893}} which can be combined into a single
+index FORMULA . The mode profiles for TE
+polarization can be written as follows (with the time dependence
+FORMULA  being understood), with reference to the
+geometry of Fig. REF :
+
+FORMULA 
+
+FORMULA 
+
+
+In the above expressions, FORMULA  is a normalization surface, which
+disappears from the final results, while the magnetic field is
+obtained from the electric field thorugh the Maxwell equation
+FORMULA . Application of standard
+transfer-matrix theory leads to the following relations between
+coefficients (with the suffix FORMULA  being understood for
+simplicity):
+
+FORMULA 
+
+and to the well known implicit equation (REF ) of the
+main text. The normalization integral (REF ) implies
+the relation
+
+FORMULA 
+
+which, together with
+Eqs. (REF )–(), determines all
+coefficients FORMULA  and FORMULA .
+The guided modes for TM polarization are characterized by the
+following field profiles:
+
+FORMULA 
+
+FORMULA 
+
+
+where the electric field follows from the magnetic field profile
+through Eq. (REF ). The appropriate relations between
+coefficients can be derived from
+(REF )-() by the replacements
+FORMULA , FORMULA  and
+FORMULA , FORMULA  (except in the trigonometric functions),
+FORMULA . The normalization
+integral of the magnetic field gives the condition
+
+FORMULA 
+
+
+Matrix elements for photonic dispersion
+We calculate the matrix elements FORMULA  of Eq.
+(REF ) between guided modes of the effective
+waveguide from the field profiles given in Appendix
+ for TE and TM polarizations. We adopt the
+following notations:
+FORMULA 
+and
+FORMULA ,
+where FORMULA  is the Bloch-Floquet vector, FORMULA  and
+FORMULA  are reciprocal lattice vectors and FORMULA ,
+FORMULA  are the indices of guided modes of the effective
+waveguide at wavevectors FORMULA ,
+FORMULA  respectively. There are four kinds of
+matrix elements: TE-TE, TM-TM, TE-TM and TM-TE. The FORMULA  integral
+in Eq. (REF ) can be broken into three terms
+over the regions 1,2,3 where the dielectric constant does not
+depend on FORMULA , and can be expressed in terms of the following
+integrals:
+
+FORMULA 
+
+The FORMULA  integrals in Eq. (REF ) yield the
+inverse dielectric matrices in the three layers,
+FORMULA , defined in Eq. (REF ).
+The matrix elements are then obtained as follows:
+
+FORMULA 
+
+FORMULA 
+
+FORMULA 
+
+FORMULA 
+
+
+Symmetry properties and TE/TM mixing
+If the PhC slab is invariant under reflection
+through a mirror plane bisecting the slab (which we take as FORMULA ),
+the effective waveguide has the same reflection symmetry and its
+eigenmodes can be classified as even or odd with respect to the
+reflection operator FORMULA  defined in the main text.
+The spatial symmetries of the nonvanishing field components are
+given in Table REF , assuming a wavevector along the
+FORMULA  direction. The guided mode frequencies are found from the
+following implicit equations:
+
+FORMULA 
+
+Notice that the first-order TE and TM modes of the effective
+waveguide are described by Eqs. (REF ) and
+(), respectively. By keeping only FORMULA 
+(FORMULA ) basis states in the guided-mode expansion,
+photonic eigenmodes which are even (odd) with respect to
+horizontal mirror symmetry are obtained, and the computational
+effort in solving the eigenvalue equation (REF ) is
+reduced.
+TABLE 
+In general, a photonic eigenmode in a PhC slab is a linear
+combination of TE- and TM-polarized basis states and all six
+components of the electric and magnetic field are nonvanishing.
+Nevertheless, low-lying photonic modes are often dominated by the
+lowest-order guided mode of the effective waveguide. In this
+situation, FORMULA  states are dominated by the TE guided
+modes described by Eq. (REF ) and can be called
+“quasi-TE”, while FORMULA  states are dominated by the TM
+guided modes described by Eq. () and can be called
+“quasi-TM”. This widespread terminology is useful and appropriate
+for large wavevectors, when the dominant field components are the
+spatially even ones: making reference to Table REF , and
+since the dielectric modulation FORMULA  couples guided
+modes with all wavevector directions in the 2D plane, the dominant
+components are FORMULA  (for FORMULA  or TE-like modes)
+or FORMULA  (for FORMULA  or TM-like modes). However,
+the terminology becomes inadequate when the PhC slab is multimode,
+as it always happens at sufficiently high frequencies. If the
+waveguide is not symmetric, any PhC slab mode is a linear
+combination of basis states arising from all equations
+(REF )–() and even the lowest-order
+TE/TM guided modes of the effective waveguide are mixed.
+
+Radiation modes of the effective waveguide
+In this Appendix we give the radiation modes of the effective
+waveguide which are outgoing in either the lower or the upper
+cladding (see Fig. REF ). Each of these radiation
+modes is labelled by the wavevector g in the 2D plane, the
+frequency FORMULA , and the polarization. In the following the
+quantum numbers FORMULA  will be understood in order to
+simplify the notations. Instead of distinguishing between real and
+imaginary components of the wavevectors in the three regions as in
+Eq. (REF ), we define three complex wavevectors as
+
+FORMULA 
+
+While the wavevector FORMULA  in the core region is always real,
+the wavevectors FORMULA  in the cladding regions can be
+either real or purely imaginary according to the values of the
+dielectric constants and of FORMULA . If the effective
+waveguide is symmetric (FORMULA ) all
+radiation modes have real FORMULA , while if
+FORMULA  there is a frequency region
+FORMULA  in
+which FORMULA  is real but FORMULA  is imaginary: i.e., a quasi-guided
+mode in this region of FORMULA -FORMULA  space is diffracted to the
+lower (but not to the upper) cladding. This phenomenon is
+automatically taken into account by the Kronecker
+FORMULA -function in the DOS formula (REF ), as the
+photonic DOS vanishes when FORMULA  is imaginary. Therefore we
+shall write down the electric and magnetic field components of
+radiative waveguide modes assuming that all FORMULA 's are real - if
+one of them is purely imaginary, that radiation mode does not
+carry an energy flux and it does not contribute to scattering
+loss.
+With this proviso, the radiation modes of the effective waveguide
+for TE polarization in the three regions FORMULA  can be written
+as follows (setting FORMULA , FORMULA , FORMULA  and with the
+time dependence FORMULA  being understood):
+
+FORMULA 
+
+FORMULA 
+
+For the scattering state which is outgoing in the lower cladding
+(Fig. REF a), FORMULA  and the normalization
+condition (REF ) determines the coefficient of the
+outgoing component{{cite:3f8af3f5-071d-45a6-ab1e-0d0bfdc7d4e8}} as
+FORMULA . All other coefficients are then
+found from a standard transfer-matrix calculation, which yields
+
+FORMULA 
+
+and
+
+FORMULA 
+
+On the other hand, for the state outgoing in the upper cladding
+(Fig. REF b), FORMULA  and the proper normalization
+condition{{cite:3f8af3f5-071d-45a6-ab1e-0d0bfdc7d4e8}} is FORMULA .
+The other coefficients can then be found from the inverse relations
+of (REF ), (REF ).
+For what concerns TM-polarized radiation modes, the field profiles
+are given by
+
+FORMULA 
+
+FORMULA 
+
+For the scattering state outgoing in the lower cladding (Fig.
+REF a), FORMULA  and the normalization condition
+(REF ) determines the coefficient of the outgoing
+component as FORMULA . For the state outgoing in the upper cladding
+(Fig. REF b), FORMULA  and the proper normalization
+condition is FORMULA . All other coefficients can be found from
+transfer-matrix theory, the relevant expressions being obtained from
+(REF ), (REF ) by the
+replacements FORMULA , FORMULA  and FORMULA  (except in the exponential functions).
+
+Matrix elements for diffraction losses
+We calculate the matrix elements (REF ) between
+guided and radiation modes of the effective waveguide, to be used in
+formula (REF ) for the loss calculation. The
+expressions are similar to those of Appendix
+, but care must be taken to distinguish
+between the different quantum numbers. Guided modes are labelled by
+the wavevector FORMULA  and by the
+index FORMULA , which are combined as before into a single index
+FORMULA . Radiation modes are labelled by the wavevector
+FORMULA , the frequency FORMULA ,
+the polarization FORMULA , and an additional index which specifies
+whether the mode is outgoing in medium 1 or 3: all these quantum
+numbers will be grouped into a single index FORMULA . Like for the matrix
+elements between guided modes, there are four possible combinations
+of polarizations. The FORMULA  integral can be broken into three terms
+over the regions 1,2,3 and it can be expressed in terms of the
+following integrals:
+
+FORMULA 
+
+The matrix elements between guided and radiative modes are found
+as follows:
+
+FORMULA 
+
+FORMULA 
+
+FORMULA 
+
+FORMULA 
+
+
+Fourier transform of triangular holes
+We give here the complex Fourier transform of the dielectric
+constant in the unit cell for the triangular lattice of triangular
+holes, to be used for the calculations shown in
+Secs.  and . Let us refer to
+the geometry shown in Fig. REF , the side of the
+triangle and the lattice constant being denoted by FORMULA  and FORMULA ,
+respectively. The triangle is made of a medium of dielectric
+constant FORMULA  (in the case of an air hole, FORMULA )
+embedded in a background with dielectric constant FORMULA .
+The origin of coordinates in the unit cell is taken to be at the
+center of the triangle. The filling factor of the triangle is
+
+FORMULA 
+
+where FORMULA  is the unit-cell area. The Fourier
+transform is written as
+
+FORMULA 
+
+For zero reciprocal lattice vector it is obviously given by:
+
+FORMULA 
+
+For nonzero reciprocal lattice vector it is calculated as
+
+FORMULA 
+
+where
+
+FORMULA 
+
+FORMULA 
+
+with FORMULA , FORMULA . In this work, the
+triangles are oriented in such a way that one of the triangle'
+sides is along the FORMULA -axis as in Fig. REF 
+(i.e., along the FORMULA -K direction of the triangular lattice):
+if other orientations have to be considered, the simplest way is
+to apply a 2D rotation matrix to the vector G before
+calculating the Fourier transform with the above formulas.

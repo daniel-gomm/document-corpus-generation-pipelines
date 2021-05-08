@@ -1,0 +1,179 @@
+
+Connection between some nonperturbative approaches in QCD
+V. DzhunushalievSenior Associate of the Abdus Salam ICTP
+dzhun@krsu.edu.kg
+Dept. Phys.
+and Microel. Engineer., Kyrgyz-Russian
+Slavic University, Bishkek, Kievskaya Str. 44, 720021, Kyrgyz
+Republic
+The connection between two nonperturbative approaches in quantum chromodynamics is considered. The first one is based on a collective coordinate method, the second one on a spin-charge separation. It is shown that both approaches have some close connection: the existence of two condensates which are necessary to confinement.
+Introduction
+In this paper we would like to ascertain the connection between some nonperturbative calculations in quantum chromodynamics.
+The approach (presented in Ref. {{cite:79ee2f74-31cc-4f34-a89f-117edf57881b}}) is based on the idea that the off-diagonal components of the non-abelian gluon field become composite particles, with a separation between their color-charge and spin degrees of freedom {{cite:62273395-cf39-4c78-82c4-2b6bb94d1256}} (see also {{cite:b67862e3-6432-4815-bc6a-784c8ccd6c8e}}-{{cite:6461bbd4-bf1c-4bd3-b26b-ee5bcfe0090d}}). The authors apply the mean-field approach where a mean-field state is constructed integrating over the charge neutral spin degree of freedom of the off-diagonal gluon.
+The focus of the second approach {{cite:1ffce1f9-6df1-4395-90c8-42b0f17e5b2e}} is the breaking down of the non-Abelian gauge group into smaller pieces. For example:
+FORMULA  or FORMULA  or
+FORMULA . The procedure also uses some aspects of an old method by Heisenberg to calculate the n-point Green's function of a strongly interacting, non-linear theory. Using these ideas one can give approximate calculations of the 2 and 4-points Green's function of the theories considered. This method can be called as the method of collective coordinates since in this approach some set of quantum degrees of freedom fluctuate in phase.
+
+The basic ideas of the collective coordinates method
+In this section we will describe in shorten the method of collective coordinates method. The classical SU(N) FORMULA  Yang-Mills equations are
+FORMULA 
+where FORMULA 
+is the field strength; FORMULA  are the SU(N) color indices; FORMULA  is the coupling constant; FORMULA  are the structure constants for the SU(N) gauge group. In quantizing the system given in Eqs. (REF ) - via Heisenberg's method
+{{cite:d203d2dd-a3c8-4ee6-ac06-a2a058f3b857}} one first replaces the classical fields by field operators
+FORMULA . This yields the following differential equations for the operators
+FORMULA 
+These nonlinear equations for the field operators of the nonlinear quantum fields can be used to determine expectation values for the field operators
+FORMULA , where
+FORMULA  and FORMULA  is some quantum state). One can also use these equations to determine the expectation values of operators
+that are built up from the fundamental operators FORMULA . The simple gauge field expectation values, FORMULA , are obtained by average Eq. (REF ) over some quantum state  FORMULA
+FORMULA 
+One problem in using these equations to obtain expectation values like FORMULA , is that these equations involve not only powers or derivatives of FORMULA  (i.e. terms like FORMULA  or FORMULA ) but also contain terms like FORMULA . Starting with Eq. (REF ) one can generate an operator differential equation for the product FORMULA  thus allowing the determination of the Green's function  FORMULA
+FORMULA 
+However this equation will in turn contain other, higher order Green's functions. Repeating these steps leads to an infinite set of equations connecting Green's functions of ever increasing order. In fact these equations are the Dyson-Schwinger equatons but ordinary the designation “Dyson-Schwinger equatons ” is reserved for the application in perturbative quantum field theory. We consider these equations in nonperturbative quantum field theory.
+This construction, leading to an infinite set of coupled, differential equations, does not have an exact, analytical solution and so must be handled using some approximation.
+The quantization of equations (REF )-(REF ) evidently is very hard and
+deriving exact results is probably impossible. In order to do some calculations we give an approximate method which leads to the 2 and 4-points Green's functions only. In order to derive the equations describing the quantized field we average the Lagrangian over a quantum state  FORMULA
+FORMULA 
+Now we will detail the kind of physical situations we wish to describe. The model given here is similar to stationary turbulence when there are time dependent fluctuations in any point of the liquid but all averaged quantities are time independent. For a QFT this means that all Green's functions are time independent and there is a correlation between quantum fields in different points at one moment
+FORMULA 
+In linear and perturbative QFT this is not the case because the interaction is carried by quanta which move with a speed less than or equal to the speed of light. In these theories the correlation between quantum fields in different points at the same time is zero.
+FORMULA 
+In this sense one can say that nonperturbative QFT in some physical situations is very close to turbulence, i.e. in nonperturbative QFT there may exist extended objects where quantized fields at all points are correlated between themselves (example from QCD are flux tubes and glueballs). Such objects fall into two categories
+
+The averaged value of all quantized fields are zero (all components are in one or more collective modes)
+FORMULA 
+But the square of these fields are nonzero
+FORMULA 
+
+The averaged value of some components of the quantized fields are nonzero (approximately they can be considered on the classical level) and the averaged value of some zero (they are in one or more collective modes), and the square of some components is nonzero
+FORMULA 
+The most natural case is when FORMULA  belongs to a small subgroup
+of FORMULA  gauge group (for example, to FORMULA  or FORMULA  or FORMULA  all these cases will be considered below) and FORMULA  are the coset components FORMULA .
+
+In the first case the quantized fields are in a completely disordered phase. In the second case one has both ordered and disordered phases.
+
+The concrete realization of the collective coordinates method
+The key idea in this approach is to cut off an infinite equations set connecting all Green functions. For this we average the Lagrangian of a gauge theory
+FORMULA 
+Schematically the averaged Lagrangian has
+FORMULA  and
+FORMULA  terms. We assume that there are components of gauge potential  FORMULA
+FORMULA 
+where FORMULA  is a small subgroup. In this case we will say that FORMULA  is in an ordered phase. As well there are components of gauge potential  FORMULA
+FORMULA 
+In this case we will say that FORMULA  is in a disordered phase.
+The main problem in this approach is calculating two and four points Green functions
+FORMULA 
+Both functions FORMULA  are non-local. The different approximation for FORMULA  will result in the different non-perturbative approximate approaches. For example, one can to single out with various ways the color and spacetime indices.
+The collective coordinates method for the SU(2) gauge group: the Ginzburg-Landau equation
+The application of this method to SU(2) gauge group (where FORMULA  is in ordered phase and FORMULA ) gives us {{cite:1481833a-c5f1-4b1d-a08d-3e50feed6309}}
+FORMULA 
+where FORMULA  lead to
+FORMULA 
+where FORMULA  can be considered as the ordinary electromagnetic field. As well here we assume that
+FORMULA 
+In Ref. {{cite:1481833a-c5f1-4b1d-a08d-3e50feed6309}} it is shown that a tachyonic mass term can be generated for the off-diagonal gauge fields of a pure SU(2) Yang-Mills via a condensation of ghost and anti-ghost fields. In this case
+FORMULA 
+Let us note the following essential thing: the approxiamtion (REF ) splits the non-local function FORMULA  into the product of two local functions FORMULA  and FORMULA .
+
+The collective coordinates method for the SU(3) gauge group: flux tube
+In this case {{cite:1ffce1f9-6df1-4395-90c8-42b0f17e5b2e}} the initial degrees of freedom
+FORMULA  are decomposed on two sets: (a) almost classical degrees of freedom FORMULA  and (b) pure quantum degrees of freedom
+FORMULA . The components FORMULA  are in a disordered phase and form a condensate of the gluon filed. The Green function
+FORMULA 
+where FORMULA  are the structural constants of the SU(3) gauge group FORMULA  and
+FORMULA . In Ref. {{cite:1ffce1f9-6df1-4395-90c8-42b0f17e5b2e}} the scalar field FORMULA  is real function but it is not too hard to generalize to the complex scalar field. Similar to (REF ) we have the decomposition of a non-local function FORMULA  into some linear combination of local functions FORMULA . Let us note that the components FORMULA  with the different spacetime indices FORMULA  do not interact each with other but the components FORMULA  with the different color indices FORMULA  interact each with other.
+The four point Green function can be decomposed in a similar manner with Eq. (REF )
+FORMULA 
+After some assumptions and simplifications one can receive
+FORMULA 
+here is assumed that there are mass terms FORMULA  (which breaks the SU(2) gauge invariance of the initial Lagrangian) and FORMULA . These terms can be derived if to change the decomposition (REF ) from
+FORMULA  to
+FORMULA  where FORMULA  are some constants.
+The numerical solution of the corresponding field equations {{cite:1ffce1f9-6df1-4395-90c8-42b0f17e5b2e}} shows that there is a flux tube solution filled with the color longitudinal electric field FORMULA  and the linear energy density presented in Fig. REF .
+FIGURE 
+
+The collective coordinates method for the SU(3) gauge group: the bag of quantum fields
+In this case all degrees of freedom are pure quantum but there are two kinds of collective modes. For two point Green function
+FORMULA 
+here the same words about real and complex scalar fields can be said as in the previous section. Four point Green function is decomposed similar to previous section
+FORMULA 
+For the concrete calculations of (REF ) it is very essential the assumtions that for this case the color space is anisotropic. Roughly speaking, it means that
+FORMULA 
+The averaged Lagrangian is now
+FORMULA 
+The quantum Lagrangian describes the interaction of two scalar fields FORMULA  and FORMULA  which present two and four Green functions of SU(3) gauge fields. The numerical calculations of the corresponding field equations show that exists a spherically symmetric solution which can be interpret as a bag filled with the quantum SU(3) gauge fields {{cite:1ffce1f9-6df1-4395-90c8-42b0f17e5b2e}}. The solution has finite energy for some value of FORMULA  only, in other words mathematically the search of a regular solution is nonlinear eigenvalue problem for eigenfunctions FORMULA  and eigenvalues FORMULA .
+
+The collective coordinate method for the SU(3) gauge group: confinement of the field angular momentum
+In this case in contrast with the previous subsection there is almost classical degree of freedom FORMULA  {{cite:1ffce1f9-6df1-4395-90c8-42b0f17e5b2e}} and other components of the SU(3) gauge potential are pure quantum degrees of freedom similar to the previous section with one exception: the index FORMULA  in Eq. (REF ). The averaged Lagrangian is now
+FORMULA 
+which describes the interaction of the U(1) gauge field FORMULA , with two scalar fields FORMULA  (FORMULA ) and FORMULA  (FORMULA ). The solution of the corresponding field equations shows that the ball of quantum fields FORMULA  can confine FORMULA  component of the SU(3) gauge potential. The space profile of FORMULA  is made by such a way that a field angular momentum of FORMULA  appears.
+It is necessary to note that all solutions presented in this section exist only for some discrete choice of parameters of the corresponding equations. Mathematically it means that we have a non-linear eigenvalue problem and physically that we actually solve a quantum problem.
+
+A spin-charge separation
+In this section we would like to briefly outline the non-perturbative approach for QCD following to {{cite:41927de3-0db9-4e21-92af-17a4c8e45e05}} (with all corresponding references).
+The slave-boson decomposition (spin-charge separation) of the FORMULA  gauge field FORMULA  (FORMULA  and FORMULA ) proceeds as follows {{cite:62273395-cf39-4c78-82c4-2b6bb94d1256}}: We first separate the diagonal
+Cartan component FORMULA  from the off-diagonal components FORMULA , and combine the latter into the complex field FORMULA . We then
+introduce a complex vector field FORMULA  with
+FORMULA 
+We also introduce two spinless complex scalar fields FORMULA  and FORMULA . The ensuing decomposition of FORMULA  is {{cite:62273395-cf39-4c78-82c4-2b6bb94d1256}}
+FORMULA 
+A decomposition of FORMULA  into spinless bosonic scalars FORMULA  which describe the gluonic holons that carry the color charge of the FORMULA , and a color-neutral spin-one vector FORMULA  which is
+the gluonic spinon that carries the statistical spin degrees of freedom of FORMULA .
+The mean-field approximation applied in this case is averaging the FORMULA  Yang-Mills action both over the color-spinon FORMULA  and the Cartan component FORMULA  of the gauge field. Since we are only interested in the phase structure of the ensuing
+mean-field theory, it is sufficient to consider the free energy in a London limit where the slave-boson condensates
+FORMULA 
+are spatially uniform.
+The integration over FORMULA  and FORMULA  can be performed in various different ways.
+In Ref. {{cite:41927de3-0db9-4e21-92af-17a4c8e45e05}} the free energy in mean-field approximation is investigated. After some calculations the final version of the free energy is
+FORMULA 
+where FORMULA  is some constant.
+The generic features of this free energy, a ridge along the lines FORMULA , and a narrow hyperbolic valley on both sides of these lines, are independent of FORMULA , but the depth of the valleys and steepness of the potential are more prominent for larger values of FORMULA , as used here.
+The four branches of the hyperbola that minimize (REF ),
+FORMULA 
+are separated by (non-analytic) ridges along the lines FORMULA . At the minima along the hyperbolic valleys the free energy is given by
+FORMULA 
+This ground state is highly degenerate, but the combination on the left-hand side of (REF ) is not the proper gauge invariant condensate. The gauge invariant
+condensate is given by
+FORMULA 
+and one can employ it to remove the infinite degeneracy of the hyperbolic vacuum.
+From (REF ) we conclude that the ground state value FORMULA  of the gauge invariant condensate (REF ) is bounded from below by a non-vanishing
+quantity,
+FORMULA 
+When FORMULA  is larger than the lower bound in (REF ), there are eight solutions FORMULA  to the equations that define the vacuum
+FORMULA 
+But when FORMULA  coincides with the lower bound there are only four solutions,
+FORMULA 
+which correspond to the vertices of the hyperbola.
+The solutions of (REF ) describe the generic situation where both condensates are non-vanishing. The remaining ground state is doubly degenerate under exchange of FORMULA  and FORMULA , which correspond to the physical scenario that in general the London
+limit densities are unequal.
+Finally, the degenerate solutions (REF ) correspond to the limit where one of the two condensates vanishes, and again by selecting the physical quadrant FORMULA  one can remove the degeneracy.
+According to (REF ) the ground state value of (REF ) is non-vanishing for all non-vanishing values of the coupling constant FORMULA . This suggests that in the Yang-Mills theory the gauge invariant condensate is also nonvanishing for all
+non-vanishing values of the coupling constant. This would mean that the mass gap in the Yang-Mills theory is present for all values of the coupling, and it vanishes only asymptotically in the short distance limit where the gluons become asymptotically free and massless.
+The classical treatment of the mean-field theory suggests that the condensate is always non-vanishing, hence a mass gap is present for all nontrivial values of the coupling. One can to inspect what effects spatially homogeneous quantum fluctuations around the classical mean-field value have on this condensate. For this it is necessary to improve the free energy so that it also includes the contribution from the momenta FORMULA  that are canonically conjugate to the (spatially homogeneous) condensates FORMULA .
+The result of Ref. {{cite:41927de3-0db9-4e21-92af-17a4c8e45e05}} suggests that the possibility of a spin-charge separation in the Yang-Mills theory may occur. Furthermore, there is a need to address theoretical issues such as electric-magnetic duality and the description of the Yang-Mills theory in
+terms of the spin-charge separated dual variables.
+
+The comparison of the collective coordinate and spin-charge separation methods
+It is very important to compare some different approaches in a non-perturbative quantum field theory. Every approach has own weakness and advantages. If some conclusions in these approaches coincide then it gives us some confidence that both approaches are correct.
+In this section we would like to compare the collective coordinate method briefly sketched in section  with a spin-charge separation briefly sketched in section .
+The deep connection between the collective coordinate method (CCM) and the spin-charge separation method (SCSM) is the existence of two condensates FORMULA  and FORMULA  in Eq's (REF ) (REF ) in CCM and FORMULA  and FORMULA  in Eq. (REF ) SCSM. The field equations for the Lagrangians (REF ), (REF ) have regular solutions (with a finite energy) for two different scalar fields FORMULA  only. SBDM tells us similar thing: the condensates FORMULA  and FORMULA  should be different in order to have a mass gap Eq's () (REF ).
+In Ref. {{cite:41927de3-0db9-4e21-92af-17a4c8e45e05}} the free energy (REF ) is investigated. FORMULA  can be connected with the energy by the following way
+FORMULA 
+where FORMULA  are correspondingly the energy, temperature and entropy. In Fig. REF  the free energy of SCSM and the potential energy of CCM are plotted. It is visible that both pictures are a little similar. FORMULA  has two highly degenerated local maxima on the lines
+FORMULA 
+and four global degenerated minima located on the hyperbola
+FORMULA 
+FIGURE 
+The potential (see. Fig. REF )
+FORMULA 
+has one local non-degenerate maximum FORMULA  instead of (REF ) and two local non-degenerate and two global non-degenerate minima FORMULA  FORMULA  instead of (REF ). This difference probably is connected with the fact that the free energy FORMULA  has derived from one-loop approximation but the potential FORMULA  is derived by the assumption about a non-perturbative structure of two-point Green function.
+The spherically symmetric solution from the section REF  (a bag filled with quantum SU(3) gauge field which are presented by the scalar fields FORMULA  and FORMULA ) is plotted in Fig. REF . In Fig. REF  the energy density is plotted. We see that for the existence of this regular solution it is absolutely necessary to have the different space distribution of two condesates FORMULA  and FORMULA . At the infinity FORMULA  but FORMULA  that coincides with the condition (REF ).
+FIGURE 
+The similiraty between two approaches is that the ordered phase in CCM has the same essence as in SCSM. The difference is that two disordered phases FORMULA  and FORMULA  in CCM are constructed from two sets of gauge potential FORMULA  and
+FORMULA  but in SCSM two condensates are build from SU(2)/U(1) coset. In other words each off-diagonal FORMULA  in SCSM is decomposed on spinless bosonic scalars FORMULA  and one color-neutral spin-one vector FORMULA  but in CCM such decomposition corresponds to section REF  where the ordered phase (color-neutral spin-one) vector is FORMULA  and disordered phases (spinless bosonic scalars) are FORMULA  and FORMULA  and obtained from SU(2) and
+FORMULA  components of SU(3) gauge potential correspondingly.
+The advantage of CCM is that it allows us to calculate the functions FORMULA  in contrast with SCSM which consider spatially uniform condensate only.
+
+Conclusions
+In this letter we have compared two non-perturbative approahes in QCD: the collective coordinate method and the spin-charge separation. We have seen that both approaches have some close connection: the existence of two condensates which are necessary to confinement. The difference is that the first approach has the possibility to give us the space distribution of both condensates in contrast with the second approach which may give us spatially uniform distribution of these condensates only.

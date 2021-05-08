@@ -1,0 +1,455 @@
+
+Melting of the vortex lattice in layered superconductors
+Bo Feng, Zhigang Wu, and Dingping Li
+corresponding author
+[E-mail address:]lidp@mail.phy.pku.edu.cn
+Department of Physics, Peking University, Beijing
+100871, China
+The structure function of the vortex lattice of layered
+superconductor is calculated to one-loop order. Based on a
+phenomenological melting criterion concerning the Debye-Waller
+factor, we calculate the melting line of the vortex lattice, and
+compare our results to Monte Carlo simulation and experiment. We
+find that our results are quantitatively in good agreement with
+the Monte Carlo results. Moreover, our analytic calculation of the
+melting line of BSCCO fits the experiment reasonably well in a
+temperature range not far from FORMULA .
+74.20.De, 74.40.+k, 74.25.Ha, 74.25.Dw
+INTRODUCTION
+Magnetic fields can penetrate into the layered high-FORMULA 
+superconductors(LHTS) and generate the well-known vortex
+matter.{{cite:d1669b10-b196-4c9a-9639-0d003086148c}} Thermal fluctuations and the effects of
+disorder are able to drive the vortex matter to undergo very
+complicated phase transitions among glass, solid and liquid phases.
+{{cite:d2e940ff-9a55-434f-bc68-03499bd45f41}}, {{cite:6e5dff36-b450-4914-8e61-3ab4e8fa5a25}}, {{cite:7c45b9f7-b0b7-488b-8bc8-7fee1b0716c6}} This led to a burst of investigations
+both experimental and theoretical, to understand the physical
+properties of such vortex matter.{{cite:6e5dff36-b450-4914-8e61-3ab4e8fa5a25}} One interesting
+aspect concerning vortex matter is to determine the phase transition
+line of the melting between the vortex solid state and the vortex
+liquid state.{{cite:edf893ee-7fdb-4344-bbb8-77bf78699936}}, {{cite:b10bd201-fe26-4ba1-8db9-0445f8951702}} Several significant
+experiments{{cite:9497712b-fd81-4ff4-8ff1-c01de85a8a61}}, {{cite:cf249a73-4001-4b56-aba4-5f40840d4e5a}}, {{cite:894c7f0a-9bb5-4e71-9967-83bfb5def9cd}} have observed the phase
+transition of the melting between the vortex solid state and the
+vortex liquid state. In addition, magnetization jumps{{cite:9497712b-fd81-4ff4-8ff1-c01de85a8a61}}, {{cite:cf249a73-4001-4b56-aba4-5f40840d4e5a}}, {{cite:894c7f0a-9bb5-4e71-9967-83bfb5def9cd}}, {{cite:3eebeba5-fce8-4434-b8a9-269d1159f49b}} and specific heat spikes{{cite:e13ee339-9a65-416c-8b96-4e31393ce1ac}}, {{cite:3d65c61e-bac4-4c7a-a428-c6189ef9e2b6}}, {{cite:2044657e-2066-4745-a528-52cdff2f5d81}} were observed, which indicate that the vortex
+lattice melting is a first-order phase transition. An often used
+theoretical description of the vortex lattice is the elastic
+theory,{{cite:6e5dff36-b450-4914-8e61-3ab4e8fa5a25}}, {{cite:d1669b10-b196-4c9a-9639-0d003086148c}}, {{cite:ffa5e88e-4a89-439a-b297-0b604d612bc6}}, {{cite:19124a30-54ed-42c5-86e7-2a13c201c623}}, {{cite:541b6ff6-0cdd-4465-905b-62c009df9e78}}
+which is based on the lowest energy excitations on a perfect vortex
+lattice and can retain in fact most of the interesting physics. In
+the framework of elastic theory, one uses a phenomenological
+criterion, Lindemann criterion,{{cite:31729d04-8d41-4fe4-9ae7-f3b52f330501}}, {{cite:68bb3fc2-d431-437e-8c93-0f8f0d4e4a46}}, {{cite:2663f70f-202f-4aea-8e3c-9459521f38f1}} to
+calculate the phase transition line.
+Near FORMULA  vortices overlap and the elastic theory is
+questionable. Furthermore for vortex liquid, the elastic theory is
+not applicable. Another theoretical approach to study the phase
+transition in vortex matter is studying the thermal fluctuations
+of the more fundamental model, the Ginzburg-Landau(GL)
+model.{{cite:76fff32c-d088-4be2-8238-3b665f21b2ce}} The model can describe very well both vortex
+lattice and vortex liquid in the region near FORMULA .
+However, the full Ginzburg-Landau(GL) theory is too complicated, and
+one needs to use some sort of approximations to advance the
+theoretical investigation. Usually, the interested phase transition
+is located not far away from FORMULA . Near FORMULA , it is
+well known that one can use the lowest Landau level(LLL)
+approximation.{{cite:bf17b744-113b-44da-b6bd-74512c4a63c7}}, {{cite:d1669b10-b196-4c9a-9639-0d003086148c}} A number of researchers had
+studied the vortex liquid phase.{{cite:6ec77287-adb7-4933-ae39-4fb5624441ea}}, {{cite:5172f037-6cb2-4ddb-9609-b0a4a292a043}}, {{cite:14db8012-94b4-4a26-8d57-00dac83ccf21}}
+For solid phase, however, due to supersoft phonon modes, the
+perturbation theory was questioned. The problem was resolved by
+Rosenstein{{cite:21c07a65-6402-492b-af99-8f47c1fe5781}} and it was found that all infrared
+divergencies are canceled. Non-perturbative Gaussian variational
+calculation had been carried out.{{cite:333ec580-c3c9-458c-b10a-138f7a4c7da4}} Spinodal line was
+determined and recently was confirmed by experiments.{{cite:6c961965-938b-4d3f-9a7b-5afd31b59c0d}}, {{cite:213c426f-6282-41d3-9017-fea59f6a6ebc}} By comparing the free energy of vortex liquid with vortex
+solid, the melting line had been obtained.{{cite:333ec580-c3c9-458c-b10a-138f7a4c7da4}} The result was
+used to explain the melting transition of YBCO type (not too high
+anisotropy).{{cite:894c7f0a-9bb5-4e71-9967-83bfb5def9cd}}, {{cite:3eebeba5-fce8-4434-b8a9-269d1159f49b}} Recently it was also used to
+explain the melting transition in low FORMULA 
+materials.{{cite:982278b9-54ff-4a67-8c1d-21ba9a5d1b62}}
+While for highly anisotropic ones such as the BSCCO, the case is
+far more complicated. The relevant model for highly anisotropic
+superconductors is the Lawrence-Doniach-GL
+model(LDGL).{{cite:fc44bdc7-2a84-4109-8273-7c7eb4538f23}}. The LDGL model has been proposed to
+describe LHTS with weak Josephson interlayer
+coupling.{{cite:d1669b10-b196-4c9a-9639-0d003086148c}}, {{cite:82fc96d3-93f0-4bdb-812a-2d61424578bb}}, {{cite:9ca69a8a-e9af-46f9-8f35-e8f9c07ad0c1}}, {{cite:36a67792-7aad-4ad8-a2fc-5cc89b292ae2}} However the full
+studying of this model is not tractable. We assume that we can
+start from an effective LLL LDGL by integrating the higher Landau
+level modes and focus our studies on this model. The phase diagram
+of the LLL LDGL model had been investigated numerically in Ref.
+MacDonald, and the melting transition line was
+obtained. It is highly interesting if one can obtain the melting
+transition of the LLL LDGL model analytically. However even for
+the LLL LDGL, there is not a nonperturbative calculation of vortex
+liquid energy, therefore we have not yet determined the melting
+transition directly by comparing the liquid and solid free energy.
+Therefore we come back to use more phenomenological criterions to
+determine the melting transition. We might use the Lindemann
+criterion to study the melting transition, however unfortunately
+we do not know how to obtain the elastic modulii of the
+Lawrence-Doniach model and used them to obtain the melting
+transition.
+In this paper, instead we will use another criterion to determine
+the transition, the Debye-Waller factor criterion (DW
+criterion).{{cite:c5c13715-322c-4ef6-92af-91acffa9186f}}, {{cite:ebb8a13f-4f83-4c73-85ac-9abc70d4fdab}} Based on this criterion, we
+will study analytically the model and the result will be compared
+quantitatively  with the Monte Carlo(MC) one in
+Ref. MacDonald, and the model will also be used to
+calculate the melting transition line in BSCCO.
+The Debye-Waller factor is the number of the original height of
+the second Bragg peak (thermal fluctuation not considered) divided
+by the height of the second Bragg peak with thermal fluctuation
+considered. Due to thermal fluctuations, the Debye-Waller factor
+will be reduced. If the peak height is lowered to some extent, for
+example, 60%, the lattice will be melted. The applications of the
+DW criterion in both Yukawa system{{cite:ebb8a13f-4f83-4c73-85ac-9abc70d4fdab}} and three
+dimensional (3D) anisotropic case of the high-FORMULA 
+superconductors{{cite:333ec580-c3c9-458c-b10a-138f7a4c7da4}} indicate that the criterion is quite
+accurate in determining the melting transition line. By using the
+DW criterion, we find that our calculations fit the result very
+well obtained by the MC simulation for studying the effective LLL
+LD model. The analytic calculation of the melting transition line
+is compared reasonable well with experiment.{{cite:b3772a35-dc3d-408d-ac2c-7f4440297a52}} We
+also stress that the calculations for the structure function and
+the Debye-Waller factor are fairly simple and straightforward.
+The paper is organized as follows. The model is described and a
+perturbative mean-field solution is developed in section II. Then in
+section III the structure function of the vortex lattice is
+calculated to one-loop. A melting criterion is discussed in section
+IV, comparison with MC simulations and experiment was also discussed
+in this section.
+
+MODEL, MEAN FIELD SOLUTION, AND THE PERTURBATION THEORY
+Model
+We start from the following Lawrence-Doniach free energy:
+FORMULA 
+where FORMULA  is the order parameter defined on discretely
+labelled continuum layers, FORMULA  is the layer thickness, FORMULA  is
+the interlayer spacing, the covariant derivative is defined by
+FORMULA , and FORMULA . In the limit that FORMULA  and FORMULA  goes to 0, the LD
+model reduces to the 3D anisotropic Ginzburg-Landau model. For
+layered superconductors far from FORMULA  (this is the range of
+interest in this paper), the magnetic field is homogeneous due to
+the overlap of the vortices. We choose the Landau gauge FORMULA , which describes a nonfluctuating constant magnetic
+field directed perpendicular to the layers. For simplicity, we
+assume FORMULA , and other
+parameters are
+temperature independent.
+For convenience, within the LLL approximation, we use the
+following units to rescale the model:{{cite:baa9307d-390e-48dc-9e97-37dd37c1c7bb}} the units of
+length of the “ab” plane and the “z” direction are
+FORMULA  and
+FORMULA , respectively; the
+unit of magnetic field is FORMULA , and the order parameter field
+is rescaled as FORMULA . The dimensionless free energy in these
+units is
+FORMULA 
+The dimensionless coefficient is FORMULA ,
+where the Ginzburg number is defined by FORMULA 
+and FORMULA  is the anisotropy parameter.
+
+Mean field solution
+By minimizing FORMULA  with respect to FORMULA , this standard
+variation problem leads to the well-known GL equation
+FORMULA 
+where FORMULA , FORMULA , and
+FORMULA . If FORMULA  is sufficiently small,
+the FORMULA  equation can be solved perturbatively. Within the LLL
+approximation, one gets the mean field solution of the FORMULA 
+equation
+FORMULA 
+Where FORMULA  is the Abrikosov's lattice
+solution,{{cite:bf17b744-113b-44da-b6bd-74512c4a63c7}} its definition is
+FORMULA 
+and where FORMULA ,
+FORMULA  is the Abrikosov's constant, the
+“cell” here is a primitive cell of the vortex lattice. Obviously,
+the mean field solution is independent of the layer index n.
+
+Fluctuation spectrum
+In order to get the excitation spectrum one expands the free energy
+functional around the mean field solution. The fluctuating order
+parameter FORMULA  can be written as the sum of the mean field
+part and a small fluctuating part
+FORMULA 
+We emphasize here that the argument “FORMULA ” in (5) stands for a 3D
+vector (i.e., FORMULA ), and the bold-face font (e.g.,
+FORMULA ) stands for the 2D vector in the “ab” plane in this
+paper. The field FORMULA  can be expanded in a basis of
+quasimomentum eigenfunctions FORMULA (within the LLL
+approximation):
+FORMULA 
+In order to do the perturbation calculation more conveniently
+(this can be seen later), we define FORMULA  and
+ FORMULA
+FORMULA 
+while FORMULA , FORMULA  are shorted as FORMULA , respectively. We get
+FORMULA 
+where FORMULA , FORMULA , FORMULA  and FORMULA . For simplicity, we have
+used in (8) the “real” field FORMULA  and FORMULA , which satisfy
+the relations: FORMULA , FORMULA . Within
+the LLL approximation, at order FORMULA , the eigenstates are
+FORMULA , FORMULA , We find that it is convenient for us to get the
+eigenvalues by using FORMULA  in the expansion of FORMULA .
+The eigenvalues are
+FORMULA 
+FORMULA 
+
+In particular, when FORMULA ,
+FORMULA , while
+FORMULA  has a finite gap.
+
+STRUCTURE FUNCTION OF THE VORTEX LATTICE 
+In this section we calculate the structure function to order
+FORMULA  within the LLL approximation, i.e., neglecting higher
+FORMULA  correlations. Firstly, we calculate the density-density
+correlation function defined by
+FORMULA 
+where FORMULA , and the subscript FORMULA  here
+indicates the average over the unit cell. The correlation function
+is calculated using the well-known Wick expansion:{{cite:26cb0065-c518-492a-9e79-74c0df7a29c8}}
+FORMULA 
+where the first term is the mean field part, while the second term
+is the correction due to thermal fluctuations.
+Mean field contribution
+The mean field part is
+FORMULA 
+The structure function is the fourier transform FORMULA ,
+hence, the mean field part of the structure function is
+FORMULA 
+In order to derive Eq.(13), we have used the following relation:
+FORMULA 
+where FORMULA  is the sample area, and where we have used the notation:
+FORMULA ,
+FORMULA , FORMULA , FORMULA , FORMULA 
+are the reciprocal lattice basis vectors
+FORMULA 
+which are dual to the lattice basis vectors
+FORMULA 
+
+Fluctuation contribution
+We calculate the fluctuation contribution of the structure function
+(FORMULA ) to one loop. For convenience, the results are
+divided into four parts:
+FORMULA 
+where FORMULA  is the fourier transform of
+FORMULA , FORMULA  is the fourier transform of
+FORMULA , FORMULA  is the fourier transform of
+FORMULA , and FORMULA  is the fourier transform of
+FORMULA . We emphasize that the final term is due to the
+vacuum renormalization, which cause the shift FORMULA  in
+FORMULA  be renormalized. To
+one-loop order, let FORMULA , here
+FORMULA , and FORMULA  is given by
+minimizing the effective one-loop free energy
+FORMULA 
+where FORMULA  are the scales of the sample. From
+Eq.(18), we get
+FORMULA 
+Each term of the r.h.s of (17) is given as follows:
+FORMULA 
+where FORMULA , FORMULA  is the fractional part of
+FORMULA , while FORMULA  is the integer part of FORMULA . After
+combining the mean field part and the one loop correction part of
+the structure function, we get
+FORMULA 
+where FORMULA  are given as follows:
+FORMULA 
+It is very interesting to notice that each of the four terms
+FORMULA  is divergent, respectively, as FORMULA , however, the sums FORMULA  and FORMULA 
+are not. Here we just take the sum FORMULA  as an example:
+FORMULA 
+In order to see it more clearly, we use FORMULA  to rescale the
+momentum. As it can be shown that FORMULA  when FORMULA , the function FORMULA , and FORMULA , hence it will cancel the FORMULA  singularity of
+FORMULA .
+It is also easy to show that FORMULA  is the case.
+Consequently, we get a not divergent result. The fluctuation
+correction of the structure function (for non-peak region) is shown
+in Fig.1.
+
+MELTING OF THE VORTEX LATTICE
+A melting criterion
+The above calculations also indicate that thermal fluctuations will
+reduce the intensity of the Bragg peak of the structure function. In
+fact, the Debye-Waller factor has been used to describe the melting
+of the lattice system.{{cite:ebb8a13f-4f83-4c73-85ac-9abc70d4fdab}} If the intensity of the peak is
+lowered to some extent, for example, 60%, the lattice will be
+melted. In 3D case, we know the exact melting transition temperature
+via a different method.{{cite:333ec580-c3c9-458c-b10a-138f7a4c7da4}} With this temperature, we find
+that the one loop calculation of the Debye-Waller factor is reduced
+to 50%. This does not mean that the criterion “60%” is wrong as
+the higher order correction to the one loop calculation usually will
+increase this value to some number above 50% (it is too complicated
+to calculate the structure function to two loop and we will leave it
+to future studies). In this paper, we also calculate the structure
+function to one loop order. Thus we will use the "one loop
+criterion" that the Debye-Waller factor calculated to one loop is
+reduced to 50% at the melting transition line.
+According to the definition of the Debye-Waller factor, we denote
+the ratio of the one-loop value to the mean field value of the
+intensity of the second Bragg peak by FORMULA , we get
+FORMULA 
+where FORMULA  denotes the shortest reciprocal vector of the
+triangular vortex lattice. We define the critical value of FORMULA 
+corresponding to melting by FORMULA . According to the above
+discussion, the one loop criterion corresponding to FORMULA  is
+about 50%.
+
+Comparison with MC simulations
+Now we compare our results with MC simulations of the LLL layered
+system in Ref. MacDonald. In Ref.
+MacDonald, the authors use two dimensionless parameters
+FORMULA  and FORMULA  to describe the melting transition of the system. The
+FORMULA  and FORMULA  measure the intralayer and interlayer coupling,
+respectively, and they are equivalent to the FORMULA  and FORMULA  in this
+paper (in fact, they are the functions of FORMULA  and FORMULA ). In order to
+carry out the comparison, first, we make our notations consistent
+with the ones of Ref. MacDonald.
+FORMULA 
+Furthermore, from Eq.(26), (27), it is easy to see that FORMULA  is only dependent on FORMULA , we define
+FORMULA , then, we have
+FORMULA 
+After combining Eq.(31),(32),(33) together, we get
+FORMULA 
+According to the knowledge from 3D anisotropic model,{{cite:333ec580-c3c9-458c-b10a-138f7a4c7da4}} we
+choose FORMULA , hence, Eq.(34) gives out the relationship
+between FORMULA  and FORMULA .
+In Ref. MacDonald, the MC simulation was employed to
+determine the melting transition. On the melting transition the
+value of FORMULA  is a function on FORMULA . We denote the function
+FORMULA  in Ref. MacDonald by FORMULA , and the FORMULA 
+determined by Eq.(34) is denoted by FORMULA . The result of the
+comparison is given in Table I. For typical LHTS such as BSCCO,
+FORMULA  is about 25Å, FORMULA  is about 200, FORMULA  is
+about 50T, FORMULA  is about 90K, and the interlayer spacing
+FORMULA  is about 4Å. For temperature and magnetic field at
+75K and 400G respectively, the value of FORMULA  is about
+FORMULA (actually FORMULA  on the all points on the theoretical curve
+on fig.2 is less than 0.1). when FORMULA  increases, FORMULA  is
+gradually larger than FORMULA . As discussed in Ref.
+MacDonald that the finite size effects of MC
+simulation become stronger as FORMULA  increased, and the finite
+size effects lead the FORMULA  to be less than its actual value.
+In summary, we find the two results fit very well for not too big
+FORMULA  (less than FORMULA ) . This also demonstrates that the DW
+criterion works well.
+TABLE 
+
+Comparison with experiment
+In Ref. Beidenkopf, the material parameters describe
+BSCCO: FORMULA , FORMULA , FORMULA K, FORMULA Å. The
+interlayer spacing FORMULA  and FORMULA  have not given, we find
+FORMULA Å, FORMULA T give the best fit to the
+experimental data, the results is shown in Fig.2. The deviation
+become large as FORMULA  reduces, this is expected as the effects of
+disorder will be enhanced as temperature lowed. The effects of
+disorder tend to lower the curve. However, the effects of thermal
+fluctuations dominated in the region of our interest (near FORMULA ). The comparison indicate that the effective LLL LD model is
+quite good to describe the melting phase transition of the LHTS
+near FORMULA . In future work we will include the disorder
+effect, and we expect that the result can be extended to the
+region with lower temperature.
+
+CONCLUSIONS
+To conclude, we have calculated the structure function of layered
+superconductors and the melting line can be obtained
+quantitatively by "one-loop" DW criterion,i.e. the ratio of the
+one-loop value of the intensity of the second Bragg peak of the
+structure function to the mean-field value is about 50%, the
+solid melts. With this criterion, we calculate the melting line
+and compare the results with existing MC results and experiments.
+Our results fit the MC results very well. Moreover, our results
+fit the experimental data reasonably well in the range not far
+from FORMULA  (for BSCCO, FORMULA K, the range we
+fitted is from 72K to 86K).
+The authors acknowledge fruitful discussion with Prof. B.
+Rosenstein and thank Prof. Zeldov for using his experimental data.
+The work is supported by the National Natural Science Foundation
+of China under Grant NO.90403002.
+G. Blatter, M. V. Feigelman, V. B. Geshkenbein, A. I. Larkin, and V. M. Vinokur,
+Rev. Mod. Phys. ¦66¦, 1125 (1994), and references therein.
+T. Nattermann and S. Scheidl, Adv. Phys. ¦49¦, 607
+(2000), and references therein.
+T. Giamarchi and S. Bhattacharya, in ¦High Magnetic Fields¦, edited by C. Berthier, L. P. Levy, and G.
+Martinez, (Springer-Verlag, Berlin, 2002), p.314 cond-mat/0111052,
+and references therein.
+D. Li, B. Rosenstein, and V. Vinokur, Journal of
+Superconductivity and Novel Magnetism ¦19¦, 369 (2006), and
+references therein.
+D. R. Nelson, Phys. Rev. Lett. ¦60¦, 1973
+(1988).
+J. Kierfeld and V. Vinokur, Phys. Rev. B ¦61¦, R14928 (2000).
+E. Zeldov, D. Majer, M. Konczykowski, V. B. Geshkenbein,
+V. M. Vinokur, and H. Shtrikman, Nature(London) ¦375¦,
+373 (1995).
+R. Liang, D. A. Bonn, and W. N. Hardy, Phys. Rev.
+Lett. ¦76¦, 835 (1996).
+M. Willemin, A. Schilling,
+H. Keller, C. Rossel, J. Hofer, U. Welp, W. K. Kwok, R. J. Olsson,
+and G. W. Crabtree, Phys. Rev. Lett. ¦81¦, 4236 (1998).
+N. Kobayashi, T. Nishizaki, K. Shibata, T. Sato, M. Maki, and T. Sasaki,
+Physica C ¦362¦, 121 (2001).
+A. Schilling, R. A. Fisher, N. E. Phillips,
+U. Welp, D. Dasgupta, W. K. Kwok, and G. W. Crabtree, Nature
+(London) ¦382¦, 791 (1996).
+M. Roulin, A. Junod, and E. Walker, Science ¦273¦, 1210
+(1996).
+F. Bouquet, C. Marcenat, E. Steep, R. Calemczuk,
+W. K. Kwok, U. Welp, G. W. Crabtree, R. A. Fisher, N. E. Phillips,
+and A. Schilling, Nature (London) ¦411¦, 448 (2001).
+E. H. Brandt, Phys. Rev. Lett. ¦63¦, 1106
+(1989).
+A. Houghton, R. A. Pelcovits and A. Sudbo,
+Phys. Rev. B ¦40¦, 6763 (1989).
+T. Giamarchi and P. Le Doussal, Phys. Rev. B ¦52¦, 1242 (1995).
+F. Lindemann, Phys. Z ¦11¦, 69 (1910).
+G. P. Mikitik and E. H. Brandt, Phys. Rev. B ¦64¦, 184514 (2001).
+G. P. Mikitik and E. H. Brandt, Phys. Rev. B ¦68¦, 054509 (2003).
+M. Tinkham, ¦Introduction to
+Superconductivity¦ (McGraw-Hill, New York, 1996).
+A. A. Abrikosov, Zh. Eksp. Teor. Fiz. ¦32¦,
+1442 (1957)[Sov. Phys. JETP ¦50¦, 1174 (1957)].
+G. J. Ruggeri and D. J. Thouless, J. Phys. F ¦6¦, 2063 (1976).
+Z. Tesanovic, L. Xing, L. Bulaevskii, Q. Li, and M. Suenaga, Phys.
+Rev. Lett. ¦69¦, 3563 (1992); Z. Tesanovic and A.V. Andreev,
+Phys. Rev. B ¦49¦, 4064 (1994).
+E. Brezin, D.R. Nelson, and A. Thiaville, Phys. Rev. B ¦31¦, 7124
+(1985); E. Brezin, S. Hikami, and A. I. Larkin, Phys. Rev. B ¦60¦, 3589 (1999).
+B. Rosenstein, Phys. Rev. B ¦60¦, 4268
+(1999).
+D. Li and B. Rosenstein, Phys. Rev. Lett. ¦86¦,
+3618 (2001); Phys. Rev. Lett. ¦90¦, 167004 (2003); Phys. Rev. B
+¦65¦, 220504(R) (2002); Phys. Rev. B ¦70¦, 144521 (2004).
+Z. L. Xiao, O. Dogru, E. Y. Andrei, P. Shuk, and M. Greenblatt, Phys. Rev. Lett.
+¦92¦, 227004 (2004).
+A. D. Thakur, S. S. Banerjee, M. J. Higgins, S. Ramakrishnan, and
+A. K. Grover, Phys. Rev. B ¦72¦, 134524 (2005).
+N. Kokubo, K. Kadowaki, and K.Takita, Phys. Rev. Lett. ¦95¦, 177005 (2005);N. Kokubo, T. Asada, K. Kadowaki, K. Takita, T.
+G. Sorop, and P. H. Kes, Phys. Rev. B ¦75¦, 184512 (2007)
+W.E. Lawrence and S. Doniach, in
+¦Proceeding of the Twelfth International Conference on Low
+Temperature Physics¦, Kyoto, Japan, 1971, edited by E.
+Kanda(Keigaku, Tokyo, 1971), p.316.
+D. Feinberg, S. Theodorakis, and A. M. Ettouhami,
+Phys. Rev. B ¦49¦, 6285 (1994).
+L. I. Glazman, A. E. Koshelev, Phys. Rev. B ¦43¦, 2835 (1991).
+A. Zamora, Phys. Rev. B ¦69¦, 054506 (2004).
+J. Hu, A. H. MacDonald, Phys. Rev B ¦56¦,
+2788 (1997).
+N. W. Ashcroft and N. D. Mermin, ¦Solid State
+Physics¦ (Saunders, Orlando, 1976)
+M. Stevens and M. Robbins, J. Chem. Phys. ¦98¦, 2319
+(1993).
+H. Beidenkopf, T. Verdene, Y. Myasoedov, H.
+Shtrikman, E. Zeldov, B. Rosenstein, D. Li, and T. Tamegai, Phys.
+Rev. Lett. ¦98¦, 167004 (2007).
+D. Li and B. Rosenstein, Phys. Rev. B ¦60¦, 10460 (1999);
+Phys. Rev. B ¦60¦, 9704 (1999).
+J. Zinn-Justin, ¦Quantum Field Theory and Critical Phenomena¦
+(Clarendon, Oxford, 2002)
+Figure Captions
+Figure 1
+Fluctuation correlation to the structure
+function of the Abrikosov vortex lattice. The peaks at reciprocal
+lattice points are removed, only the correction to the non-peak
+region is plotted (i.e. only FORMULA  is plotted.
+Figure 2
+Comparison of the theoretical melting curve(line) of highly over
+doped BSCCO with experimental results.
+

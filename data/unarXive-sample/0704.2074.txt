@@ -1,0 +1,710 @@
+
+Star-formation in low luminosity AGN
+De Vries et al.
+Star-Formation in Low Radio Luminosity AGN from the Sloan Digital Sky Survey
+W. H. de Vries, J. A. Hodge, R. H. Becker
+University of California, 1 Shields Ave, Davis, CA 95616
+Lawrence Livermore National Laboratory, L-413, Livermore, CA 94550
+devries1@llnl.gov
+R. L. White
+Space Telescope Science Institute, 3700 San Martin Drive,
+Baltimore, MD 21218
+D. J. Helfand
+Columbia Astrophysics Laboratory, Columbia University, 550 West
+120th Street, New York, NY 10027
+We investigate faint radio emission from low- to high-luminosity
+Active Galactic Nuclei (AGN) selected from the Sloan Digital Sky
+Survey (SDSS). Their radio properties are inferred by co-adding large
+ensembles of radio image cut-outs from the FIRST survey, as almost all
+of the sources are individually undetected. We correlate the median
+radio flux densities against a range of other sample properties,
+including median values for redshift, [O3] luminosity,
+emission line ratios, and the strength of the 4000Å break. We
+detect a strong trend for sources that are actively undergoing
+star-formation to have excess radio emission beyond the FORMULA 
+ergs sFORMULA  HzFORMULA  level found for sources without any
+discernible star-formation. Furthermore, this additional radio
+emission correlates well with the strength of the 4000Å break in
+the optical spectrum, and may be used to assess the age of the
+star-forming component. We examine two subsamples, one containing the
+systems with emission line ratios most like star-forming systems, and
+one with the sources that have characteristic AGN ratios. This
+division also separates the mechanism responsible for the radio
+emission (star-formation vs. AGN). For both cases we find a strong,
+almost identical, correlation between [O3] and radio
+luminosity, with the AGN sample extending toward lower, and the
+star-formation sample toward higher luminosities. A clearer separation
+between the two subsamples is seen as function of the central velocity
+dispersion FORMULA  of the host galaxy. For systems at similar
+redshifts and values of FORMULA , the star-formation subsample is
+brighter than the AGN in the radio by an order of magnitude. This
+underlines the notion that the radio emission in star-forming systems
+can dominate the emission associated with the AGN.
+galaxies: active — galaxies: starburst — radio continuum: galaxies
+Introduction
+The formation of the bulge component of galaxies and their central
+black holes is now understood to be tightly linked
+{{cite:2cbb9d26-ea81-43a6-955c-7ae7ca0994f7}}, {{cite:711cc874-ac4a-41d9-8139-25a045ec8172}}, {{cite:fd338d74-a32b-4bba-a1cc-bfb82655b300}}. There are several
+observational lines of evidence for this theoretical claim. For
+instance, the central velocity dispersion of bulges is found not just
+to correlate with the mass of the bulge, but also with the inferred
+mass of the central black hole {{cite:a2977a17-45cf-490b-8244-ba1be6260a37}}, {{cite:49d4d81c-2918-423b-8fcd-f8c0a2254b75}}.
+Since the correlation between the mass of the central black hole and
+the bulge exists over a large range of bulge masses, it is thought
+that, above some lower mass limit, all bulges harbor massive central
+black holes. Locally, accurate black hole mass measurements have been
+made for our own Galaxy {{cite:cf995d38-dd73-4c95-95ca-12b2b4469c59}}, {{cite:0a8805f1-2620-441a-90de-39564e4c28f1}}, and the
+Andromeda galaxy {{cite:0e57c14f-7da7-4f81-aaee-3d7b1a26dd44}}. Our own Galactic black
+hole is rather dormant based on its relatively low X-ray emission
+{{cite:9f1432bb-6ba9-4aa7-b1e5-88c144632eb8}}, {{cite:40ae6ec8-0dea-4ef7-bab5-d897bea0c84d}}, but in general these massive black
+holes are considered a key component of Active Galactic Nuclei (AGN),
+in which accretion onto the black hole itself can produce large
+amounts of energy efficiently {{cite:4d42e5d9-3b5d-48fa-ba9f-b521584440b9}}, {{cite:a6ca1880-090a-4457-8540-e08dc479d53a}}.
+It is of interest, then, to study AGN properties over a large range of
+luminosities, ranging from the AGN-emission-dominated quasars to
+galaxies for which the presence of a weak AGN can be inferred through
+unusual optical emission line ratios. Kauffmann et al. (2003a,b)
+studied the properties of the host galaxies of AGN, using large,
+well-defined samples from the Sloan Digital Sky Survey {{cite:4f289830-06af-4373-bc49-b62188a4b64a}}, {{cite:9ea7f030-8fb9-4d54-a38e-400c27de5b34}}. The sheer size of these samples (a few
+tens of thousands of galaxies) allows for very accurate measurements
+of sample averages and their trends as function of optical continuum
+and emission-line (mainly [O3]) luminosities. One of the
+conclusions from {{cite:68a07897-7a48-4f87-9335-c2b5e38935f5}} is that the
+main difference between low- and high-luminosity AGN is the
+significant presence of a young stellar population in the latter.
+In this paper, we will concentrate on the radio emission properties of
+a large sample of AGN, similarly selected from the SDSS survey
+{{cite:4e1983ab-5b87-4f56-a359-ed60b57581f1}}. We use the latest AGN
+compilation of Kauffmann et
+al.http://www.mpa-garching.mpg.de/SDSS/DR4 who used the BPT
+{{cite:cc16a388-f0b4-490a-a0ab-9d1775b7886c}} diagram of emission line ratios to select for AGN
+activity. The current version of this catalog contains 80,156
+candidate objects which are also covered by the VLAThe Very
+Large Array is an instrument of the National Radio Astronomy
+Observatory, a facility of the National Science Foundation operated
+under cooperative agreement by Associated Universities, Inc. FIRST
+radio survey {{cite:d299d452-bbf1-4de4-82b8-836280909056}}. In addition, we selected 14,165 quasars
+from the DR4 release for which we have FIRST images and [O3]
+line coverage (limiting the quasar redshifts to FORMULA ). These quasars
+will form the high-luminosity portion of our sample.
+We focus our attention on the radio emission of the AGN for several
+reasons. First, almost all AGN are thought to produce radio flux at
+some level; even the Galactic black hole, currently in a “quiescent”
+phase, emits in the radio. Some AGN are extremely luminous in the
+radio (compared to their optical output) – the so-called radio-loud
+objects, although we are not considering these specifically, as our
+average AGN is radio-quiet by a wide margin. Secondly, radio emission
+is unaffected by intrinsic absorption within each source. It therefore
+provides a more or less accurate measure of AGN radio output, with the
+sole caveat being relativistic beaming effects. Since none of our
+sources are classified as Blazars for which beaming effects can be
+large, we assume this to play a minor role. Finally, the ready
+availability of a large-area, high-resolution radio survey in FIRST
+provides radio information on the large numbers of AGN in its 9033
+degFORMULA  coverage.
+There is, however, one apparent problem: almost none of the sources in
+the SDSS sample are detected by the FIRST survey, with its flux
+density threshold at 1.4GHz of 1.0 mJy (5FORMULA ). Out of 80 154
+AGN, only 5 875 (7.3%) are detected directly by the FIRST
+survey. The relevant numbers for the quasars are only slightly better:
+1 493 out of 14 165 (10.5%). Clearly by limiting the sample to the
+brightest sources, one is ignoring the bulk (FORMULA %) of the
+population. Fortunately, we can stack radio images, and detect the
+mean and median peak flux densities of ensembles of undetected
+sources. This method is discussed in depth by {{cite:2cd958d9-bfde-4da1-9346-effef07a265e}}; we summarize the method in § .
+Given our large sample size, we are able to detect not just the
+(median) ensemble flux density values, but also discern small trends
+in those values. For our typical stack sample size of 5000 sources, we
+attain an rms noise of 2.6FORMULA Jy, and are therefore very sensitive to
+small changes in the sample median values as we vary other parameters
+such as the redshift distribution and the [O3] luminosity
+distribution. We only have a single sample, so the way we investigate
+the varying dependencies is by re-grouping the stacks according to the
+quantity of interest. For instance, if we order the sample by redshift
+and generate 15 adjacent bins (5343 sources per bin), the resulting
+radio stacks will be different from the 15 bins sorted by [O3]
+luminosity; each plot in this paper contains the exact same data, but
+arranged differently.
+The typical median radio flux densities for these sources is found to
+be on the order of 50 to 100 FORMULA Jy, well below the FIRST threshold,
+but clearly within the capabilities of the VLA. Indeed, various very
+deep, small-scale radio surveys exist {{cite:723597a9-01d7-40c8-9a2f-aa3c1f97a341}}, {{cite:4130c222-5e5c-4396-b3b4-ad735e8ddedc}}, {{cite:61ce1a5c-b82c-4e71-bb6e-8af401bdbb4b}}. At these low flux densities, star-formation
+could account for a large fraction of the radio emission in our
+objects, since flux density levels of 50 FORMULA Jy are well within range
+of starforming galaxies (without AGN) at similar redshifts {{cite:4fb2bbf4-81fb-4fe5-bd25-c99299f7fd2a}}, {{cite:431f18cf-54f6-4587-b742-87643e08f6d1}}. We cannot, therefore, assign all of
+the radio emission to the AGN, as some fraction of the emission may be
+due to star-formation.
+The paper is organized as follows. In §  we summarize
+the stacking method as presented in Paper I. The next section
+describes the properties of the complete sample of 80,156 sources. We
+then use emission line ratios as well as the strength of the 4000Å break to isolate two subsamples of 26,715 sources each
+(§ ). The first subsample has properties most
+consistent with the presence of an AGN (the “pure” AGN sample); the
+second has star-formation characteristics while still meeting the AGN
+selection criterion of K03a. Section  details the
+differences and similarities of these subsamples, which are discussed
+in further in § .
+
+FIRST image Stacking Technique
+Paper I demonstrates that it is possible to measure the mean and
+median radio flux density values of distributions of sources, even
+though individual sources fall far below the detection threshold of
+the FIRST survey. Provided that the sample is large enough, one can
+attain rms noise values in the radio sky well below the canonical
+FIRST value of 0.15 mJy. Actual snap-shot stacking experiments of
+blank pieces of skyNo pieces of the sky are truly blank, but
+will consist of faint, unresolved background objects. Our stacking
+technique is not sensitive enough to pick up this signal: we measured
+a background signal consistent with 0FORMULA Jy to within the 0.9FORMULA Jy
+rms noise (for 80 154 empty patches). conform to the expected
+FORMULA  behavior in the pixel statistics, down to better than
+1FORMULA Jy. Based on these numbers, it is clear that one can detect
+stacked point-source mean flux densities of a few tens of FORMULA Jy with
+high fidelity.
+As outlined in Paper I, we prefer to use the median value of the
+distributions over the mean. The latter quantity is rather easily
+affected by outliers with large flux densities (the ones which are
+actually above the FIRST detection threshold). Simply removing the
+sources above the threshold from the sample to arrive at the mean of
+the undetected sources is not robust, as a small change in the cut-off
+flux density (e.g., from 1.0 to 0.9 mJy) results in a significant
+change in the mean flux value.
+The second concern addressed in Paper I is the calibration of the
+stacking procedure for effects introduced by the radio data analysis
+in general and the 'CLEAN' algorithm in particular. Analysis of both
+stacked artificial sources, and actual sub-threshold sources detected
+in full-synthesis, deeper radio imaging shows that one does not
+recover fully the flux that went into the stack. These results are
+illustrated in Fig. 2 of Paper I; the correction for this
+“snapshot-bias" for sub-threshold sources is given by FORMULA , where FORMULA  is the median peak flux density value. All of
+our stacked peak flux density measurements have been corrected by this
+factor.
+Stacking luminosity images
+Since most of our subsequent discussion deals with radio luminosities,
+and not radio flux densities, we have to consider whether there are
+any distribution peculiarities that might affect these quantities. We
+do not know the flux density distribution of sub-threshold sources,
+nor the nature of the sources that make up this population. Below flux
+densities of a few mJy, the composition of the radio source population
+changes from AGN-dominated to star-formation dominated
+{{cite:4fb2bbf4-81fb-4fe5-bd25-c99299f7fd2a}}.
+There are two ways of calculating the median radio luminosity. One is
+simply to stack the cut-outs (with pixels in units of Jy), and use the
+median peak flux density and median redshift (of the sources that were
+used in the stack) to calculate the median radio luminosity. The tacit
+assumption here is that those two median values actually describe the
+same “median object”. The alternative approach is to convert each
+snapshot into a luminosity image using the redshift of the individual
+source, and then stack these images instead. Each pixel in a snapshot
+image is converted from flux density to luminosity using the following
+cosmological parameters: FORMULA  km sFORMULA  MpcFORMULA ,
+FORMULA , and FORMULA .
+It turns out that the results are not exactly the same. Table 2
+(columns 4 and 5) lists the radio luminosities derived using both
+methods for the sample sorted in DFORMULA (4000) strength, showing
+typical differences of less than 25%. For the sake of consistency, we
+will use the luminosity-stacked values instead of the flux
+density-stacked ones for the remainder of the paper.
+
+Star-formation vs. AGN activity
+FIGURE 
+FIGURE 
+Our data sample was initially selected based on source locations in
+the BPT plot (Kauffmann et al. 2003a, see also Kewley et al. 2006).
+The ratios of the narrow-lines of [N2] and [O3] over
+the permitted Balmer lines HFORMULA  and FORMULA , respectively, serve
+as an excellent proxy for the amount of star-formation in an object
+{{cite:2e0716ef-bf92-41d6-be7a-a19486c9c8c7}}. Our galaxies with AGN cover a large
+range in the BPT plot, and are thus affected by star-formation to
+varying degrees; the objects found close to the sample cut-off arc,
+toward the left of the distribution (see Fig. REF ), have
+optical spectra dominated by emission line ratios commonly associated
+with ongoing star-formation. It should also be noted that Kauffmann et
+al. used a more liberal cut for their AGN classification than for
+instance, {{cite:4e398966-b960-4355-ad57-8743a8ad0814}}, resulting in a fraction of the sources
+being more H II region-like than AGN-like. These sources are
+classified as “composite” in the related {{cite:f8e67829-ab3b-4ce7-b5be-de1f28a1b87b}} paper.
+We use the 4000Å break strength index DFORMULA (4000) as defined
+by {{cite:30230434-b9eb-458e-baa5-8394e9ca97c8}}. This index can be parameterized as the age
+since the last (instantaneous) episode of star-formation (see Fig. 2
+of Kauffmann et al. 2003b), in the sense that smaller break strengths
+correspond to more recent star-formationIt should be noted
+that Kauffmann et al. (2003a) found that the AGN contribution to the
+blue continuum, which would give rise to an overestimate of the
+star-formation rate using this method, is small enough to be ignored
+for these objects.. The ranges of the DFORMULA (4000) under
+consideration for our sources roughly correspond to ages since
+star-formation between 10FORMULA  years. The short end of this
+range is comparable to typical galaxy merger timescales
+{{cite:03223a21-babb-469d-8d31-7ceff84379c2}}, whereas FORMULA  years at FORMULA  is close to the age of the universe and therefore represents the
+initial burst of star-formation. Since we are not going to distinguish
+between starbursts of different metallicities, we are approximating
+the relation between age and DFORMULA (4000) by a straight line over
+the DFORMULA (4000) range 1.3 to 2.0 (the relevant range for our
+sample): FORMULA ,
+with age given in years.
+The results for median radio luminosity as function of the strength of
+the 4000Å break are plotted in Fig. REF . It is clear
+that the brightest radio emission is associated with the smallest
+breaks (i.e., the most recent episodes of star-formation). The
+approximate time since the last epoch of star-formation is given
+across the top of the plot. Above a DFORMULA (4000) index of about
+1.8, there is no change in radio luminosity, which levels off at about
+FORMULA  ergs sFORMULA  HzFORMULA . This might reflect the absence of
+any contribution to the radio emission from star-formation. The color
+coding indicates the [O3] luminosity, which is also seen to
+decline steeply as DFORMULA (4000) increases.
+Line emission diagnostics
+FIGURE 
+As a double check on the level of star-formation, we can see where the
+DFORMULA (4000)-sorted data points from Fig. REF  land on
+the BPT plot. In other words, do the sources with the low DFORMULA (4000) values have emission line ratios that reflect a higher
+incidence of star-formation? The results are plotted in
+Fig. REF  as a grayscale sequence of squares, running from
+light-gray to black for the small-to-large valued DFORMULA (4000)
+systems. It is clear that these two quantities do correlate rather
+well for our objects, and trace out a sequence of decreasing
+star-formation versus increasing 4000Å break strength. The gray
+squares in the top right corner have emission line ratios completely
+consistent with pure AGN emission, whereas the squares to the left are
+significantly affected by star-formation.
+The combination of Figs. REF  and REF  leads us to
+suggest that for the “pure” AGN cases as indicated by large 4000Å breaks, the radio luminosity is strictly due to the AGN with average
+luminosities near FORMULA  ergs sFORMULA  HzFORMULA . The additional
+radio luminosity we see for other sources can be attributed completely
+to ongoing star-formation. This star-forming component can be an order
+of magnitude more luminous than the radio component due to the AGN.
+{{cite:f8e67829-ab3b-4ce7-b5be-de1f28a1b87b}} use the strength of the 4000Å break to
+calculate the inferred star-formation rate (their sample not only
+encompasses our AGN sample, but also non-AGN which land to the left of
+the distribution in Fig. REF ). They corrected for the
+limited angular extent of the SDSS fiber which typically does not
+contain all of the light of the galaxy. We use these corrected values
+to sort our sample in ascending order of star-formation rate. The
+median stacked radio luminosities for 15 bins of FORMULA  sources
+each are calculated and plotted against median star-formation rate in
+Fig. REF . The strong correlation again underlines the
+importance of the star-formation component to the overall radio
+luminosity, even for systems containing AGN. The FORMULA  ergs
+sFORMULA  HzFORMULA  “ground-state” radio luminosity from
+Fig. REF  corresponds, based on this plot, to a
+star-formation rate of FORMULA  MFORMULA  yrFORMULA , or less, whereas
+the largest radio luminosities from Fig. REF  have rates
+exceeding 10 MFORMULA  yrFORMULA .
+The non-AGN portion of the Brinchmann et al. sample, once sorted by
+star-formation rate, exhibit a very tight correlation with median
+radio luminosity (Fig. REF ). The least squares fit is given
+by FORMULA . This slope of 1.37 is almost identical to that of
+{{cite:ac16df87-c50e-4742-8935-997a7e314c2a}} who find a slope of 1.30 for radio luminosities less
+than FORMULA  ergs sFORMULA  HzFORMULA . The Bell results,
+however, show a different normalization, suggesting they underestimate
+the amount of star-formation for a given radio luminosity by a factor
+of 2.
+Even more remarkable than the tight correlation between estimated
+star-formation rate and mean radio luminosity over two orders of
+magnitude is that the AGN contribution to the radio luminosity can be
+represented by a constant (FORMULA  ergs sFORMULA  HzFORMULA )
+which, once added to the star-formation estimate (black line), gives
+us the red line. This single constant implies that the AGN output (in
+the radio) is more or less independent of the star-formation level of
+the host galaxy. It is also a better measure of this AGN
+"ground-state" than the FORMULA  value derived from
+Fig. REF .
+In summary, since the star-formation rates are based on the DFORMULA (4000) values, we will use the latter to isolate two subsamples;
+one that presumably has no, or very little, ongoing star-formation
+(labeled I in Figs. REF  and REF ), and one that
+contains the systems with the most ongoing star-formation (labeled
+II). Each one of these subsamples contain 26,715 sources.
+
+A closer look at the “pure” AGN subsample
+FIGURE 
+We designate the five rightmost data points in Figs REF  and
+REF  as representing the most AGN-like sources. Their
+emission line ratios are the least star-formation-like, and their
+median [O3] and [O2] luminosities are among the lowest
+in our sample (see Table 2).
+Figure REF  shows the distribution densities in redshift
+versus velocity dispersion space for the large 4000Å break, low
+star-formation sources (red contours), compared to the sources with
+the smallest 4000Å break and the highest levels of star-formation
+(blue contours). The redshift distribution for each subset is
+comparable, whereas there is a clear offset in velocity
+dispersion. This is most likely due to the way the subsets have been
+selected. For a given burst of star-formation with some upper limit to
+its optical luminosity, it will appear more prominent (with a
+consequently lower value of the DFORMULA (4000) index) in smaller
+galaxies than in large systems. Since the mass and size of the galaxy
+spheroid scales with its central velocity dispersion
+{{cite:49d4d81c-2918-423b-8fcd-f8c0a2254b75}}, {{cite:a2977a17-45cf-490b-8244-ba1be6260a37}}, we will be biased toward
+finding more star-formation among the lower FORMULA  systems.
+Radio Luminosity and redshift dependence
+FIGURE 
+FIGURE 
+Luminosity, as in all flux-limited samples, is closely correlated with
+redshift, resulting in an apparent correlation that is dominated by
+the lack of bright sources locally, and faint sources at higher
+redshifts (due to the detection limit). This is illustrated in
+Fig. REF . Both subsamples I and II were sorted in
+redshift, and divided up into 13 bins of 2056 sources each. The
+“pure” AGN-like bins are plotted as pentagons, and the sources most
+affected by star-formation as stars. In addition, we plotted 7 bins of
+2025 quasars each, depicted as green squares.
+It is immediately clear that the median radio luminosities of the
+quasars are directly comparable to the narrow-line AGN values. There
+is no a-priori reason for the quasar radio luminosity medians not to
+be much brighter than the galaxies, but their values are comparable at
+the same redshift. The quasar radio luminosities are slightly less
+than the star-formation values, and slightly more than the AGN
+subsample values (at the same redshift). On the other hand, quasars
+are consistently brighter in [O3] luminosity than the
+narrow-line AGN at similar redshifts (see Fig. REF ).
+The fact that the median radio luminosity is the same would suggest
+that we are observing an isotropic emission component, and not
+orientation / obscuration-dependent quantities like emission lines and
+the presence of broad permitted lines. The median radio luminosity
+therefore underlines the validity of the standard AGN unification
+model {{cite:6bf36b01-3d52-48be-b42f-686cdb3fbd5a}}, {{cite:5315a557-7cee-431e-9441-a8cde65b74f9}}.
+Another result based on Fig. REF  is that the
+star-formation-dominated galaxies are brighter in the radio than the
+pure AGN galaxies, albeit that the difference becomes smaller at
+redshifts beyond 0.1 (where both samples I and II merge into the low
+end of the quasar trend). The more or less constant offset of a factor
+FORMULA  (0.5 in log) between the two subsamples (below FORMULA )
+suggests that the average radio luminosity due to the AGN accounts for
+at most 25% of the total radio emission during an ongoing phase of
+star-formation.
+
+[O3] luminosity as AGN activity indicator
+The [O3] emission-line luminosity offers another way of
+gauging the AGN output. {{cite:68a07897-7a48-4f87-9335-c2b5e38935f5}} estimate that perhaps as
+little as 7% of the [O3] line emission can be attributed to
+star-formation in their AGN composite spectrum. This means that, even
+though both the radio and [O3] luminosities depend on
+redshift, their correlation should be relatively free of redshift bias
+(by dropping out of the ratio).
+For this purpose, we first order the sample in [O3]
+luminosity, and then stack the cutouts to calculate the median radio
+luminosity. The [O3] luminosities have been corrected for
+extinction using the HFORMULA  / HFORMULA  emission line ratio, under
+the assumption that the [O3] emission is co-spatial (see
+K03a). The [O3] sorting and stacking also helps in minimizing
+the redshift differences among the bins. Ideally, one would like to
+have similar source redshift distributions for each [O3]
+luminosity bin, which would in effect isolate one from the other.
+The results are presented in Fig. REF . We see a strong
+correlation between [O3] and radio luminosity. For comparison,
+we also included seven bins of low-redshift quasars. The spectral
+coverage of the SDSS is such that the [O3] emission line is
+included in the spectrum up to redshifts of FORMULA . This results in
+a sample of 14,165 DR4 quasars that have FORMULA  and are covered by
+the FIRST survey. We split the sample into seven equal-sized bins,
+sorted in [O3] luminosity. Since we are looking at presumably
+unobscured quasars, we do not correct the [O3]
+luminosities for intrinsic extinctionWe know that the main
+sample of galaxies has to have some extinction towards the AGN (they
+would otherwise appear as type 1 Seyfert objects), so correcting for
+the [O3] luminosity (mainly due to the AGN) makes sense. But
+since the quasars are type 1 objects, we will assume that the
+corrections for the quasars are considerably smaller than the typical
+factor FORMULA  corrections in the median [O3] luminosity for
+the galaxies..
+The two solid lines are least squares fits to the quasars and the
+star-formation subsample. The first ten data points of the AGN
+subsample (pentagons) are more or less consistent with the quasar
+relation, though we do note that there are excursions along the quasar
+fit. This may have to do with the extinction correction being less
+than ideal for the AGN subsample. The star-formation subsample does
+not exhibit similar behavior. The fits are:
+FORMULA 
+with all the luminosities in units of log(ergs/s). It should
+be noted that the origin of the radio emission is different for the
+two subsamples. For the AGN- dominated sample the radio emission is
+largely due to the AGN (though the star-formation component dominates
+at the highest luminosities, see Fig. REF ), whereas the AGN
+component is only a small contributor for the star-formation
+subsample. As such, it is clear that the differences in the
+[O3] – radio luminosity relations cannot be explained by a
+simple translation along either the [O3] or the radio
+luminosity axes. From Fig. REF  we already know that the
+starforming subsample is brighter in the radio than either the AGN or
+quasar samples (at the same redshifts). Therefore, the correct
+conclusions from Fig. REF  are: the starforming subsample
+is both brighter in [O3] and in radio luminosity than
+the AGN subsample at the same redshift, and they have a different
+slope. Also, the AGN subsample has a similar slope to the quasar
+sample, which is what one would expect if the AGN are obscured
+quasars.
+
+Velocity Dispersion
+FIGURE 
+The central velocity dispersions of galaxies have been found to
+correlate tightly with the inferred masses of their central black
+holes {{cite:a2977a17-45cf-490b-8244-ba1be6260a37}}, {{cite:49d4d81c-2918-423b-8fcd-f8c0a2254b75}}. The latter quantity
+also scales with the mass of the stellar bulge. There is some evidence
+that the most massive bulge systems are more likely to be radio loud
+compared to less massive systems {{cite:580edf5a-275e-4b48-a00c-722ee7681a23}}, {{cite:66d13e7b-d98f-4010-9233-2b4119553e1b}}, but
+in our cases we derive median radio luminosities well below what one
+would consider radio-loud objects. As such, our analysis pertains more
+to ordinary systems covering a range of AGN indicators (see
+§ ).
+The results are shown in Fig. REF . It is clear that there
+is a trend for the most massive systems (highest values of FORMULA )
+to have the highest radio luminosities. This should not come as a
+surprise, based on the correlations between black hole mass and bulge
+mass. As seen in § REF , the median radio luminosity is
+apparently not very much affected by orientation effects (since the
+radio luminosities are comparable for quasars and AGN to within a
+factor of two at the same redshift), and provides a rather clean
+measure of the AGN output (at least for the “pure” AGN
+subsample). This then would presumably scale nicely with the mass of
+the central black hole, giving rise to the tight correlation between
+median radio luminosity and velocity dispersion (see
+Fig. REF , pentagon symbols). The least-squares fit to the
+star-formation subsample (star-shaped symbols) is given by:
+FORMULA 
+The AGN-dominated sample does not allow for a straight line
+(in log-log) fit, which may indicate other dependencies beyond a
+simple velocity dispersion / galaxy mass scaling.
+One thing we need to check though, is the effect the small range in
+redshift may have on radio luminosity. Based on their tight
+correlation in Fig. REF , a small change in median
+redshift may account for most of the trend we see in
+Fig. REF . To this end, we calculate the median redshift of
+the sources used for each velocity dispersion bin, and applied the
+redshift – radio luminosity fits from Fig. REF  to infer
+the radio luminosity that way. These values are overplotted as the
+smaller black symbols (so each FORMULA  bin has two radio luminosities
+associated with it). Now, if the large and small symbols would closely
+track each other, then the correlation between velocity dispersion and
+radio luminosity is spurious due the sample being flux-limited.
+However, since this is not the case, the radio luminosity – velocity
+dispersion correlation is real.
+Note that the offset in radio luminosity between the star-formation
+dominated and “pure” AGN subsamples is even larger than in
+Fig. REF , at about an order of magnitude compared to a
+factor of about 3 (for FORMULA ). Clearly for some objects at similar
+redshifts and similar mass (velocity dispersion), star-formation can
+account for 90% of the total radio luminosity. This would also
+suggest that the correlation for the star-formation subsample is
+driven by the bulge mass – FORMULA  relation (higher FORMULA  equals
+a more massive galaxy, which translates into a higher absolute amount
+of star-formation for a given DFORMULA (4000) value). The radio
+luminosity for the “pure” AGN subsample (pentagons in
+Fig. REF ) on the other hand, scales with the mass of the
+central black hole, which itself scales with the bulge mass (which is
+directly related to the velocity dispersion).
+
+Discussion and Summary
+FIGURE 
+We note the correlations of the median values of the [O3] and
+radio luminosities in § REF  and Fig. REF , in
+particular the similar ratios for the AGN, star-formation, and quasar
+subsamples. Given that the mechanisms responsible for the radio
+emission are thought to be different between the AGN and
+star-formation subsamples, this comes as a surprise. Our work is not
+the first that that touches on this subject. For instance,
+{{cite:d275a2af-e27d-47c9-a678-b5ad3c345972}} worked on a sample of nearby (FORMULA ),
+low-luminosity AGN taken from a 2Jy radio sample. They found an
+[O3] – radio luminosity slope of 0.85, based on a sample of a
+few dozen sourcesWe converted their 5GHz radio flux
+densities to 1.4GHz values using a constant spectral radio index of
+ FORMULA. This value is comparable to the AGN value (0.87, see Eqn. 1),
+but that may be coincidental since their sample is so much brighter
+than ours (compare the solid line in Fig. REF  to our median
+values); even though the Wills et al. sample is considered low radio
+luminosity, it is still more than 3 orders of magnitude brighter than
+our median values. They are probing the brightest part of the radio
+source population. This can be put into more perspective by comparing
+our sample to the one of {{cite:5f4fb801-2620-4b47-83be-c242fa1bf4b9}}. Their paper is also based on
+FIRST and SDSS data. Actually, their data-set is wholly contained
+within ours.
+In Fig. REF , we replot the data from Fig. REF 
+onto the data from Best et al. We only include sources from their
+sample (open square symbols) that are both in our sample and have
+detected [O3] emission (Fig. 9, lower right panel from Best et
+al. includes a set of [O3] non-detections). Our median
+[O3] values cover the exact same range as the Best et
+al. sample; the main difference is the radio luminosity. Since our
+data represent median values, it implies that a full 50% of the
+sources are located to the left of our data-points. The fact
+that the Best et al. data can be up to more than 3 orders of magnitude
+brighter (in the radio) illustrates the severe radio selection bias of
+their sample. It also makes it clear that one has to be careful in
+interpreting possible correlations between [O3] and radio
+luminosities. The Best et al. sample would result in a much steeper
+relation.
+Since our sample has not been selected on radio properties, and since
+we include all sources in the median calculations, we consider
+our median [O3] – radio luminosity correlation more robust
+than previous work based on radio-selected samplesThat is
+not to say that our sample is without biases: galaxies in our sample
+have to have measurable emission-line ratios.. Consequently, one can
+use the median radio luminosity for the star-formation subsample to
+estimate the star-formation rate. {{cite:ae2bcd34-29c3-479b-9269-0c1e7422374b}} compares various
+star-formation indicators using SDSS data, and incorporates the
+radio-derived star-formation rate method of {{cite:ac16df87-c50e-4742-8935-997a7e314c2a}}. The
+inferred star-formation rates are listed in Table 3, and range from
+less than 1 to about 20 MFORMULA  per year. These modest
+star-formation rates are consistent with values derived through, for
+instance, HFORMULA  luminosities of star-forming galaxies that have
+been detected by FIRST {{cite:ae2bcd34-29c3-479b-9269-0c1e7422374b}}. The listed values should not
+be taken at face value, however. On the one hand there is an unknown
+AGN contribution to the overall radio luminosity which inflates the
+star-formation rate, and on the other hand our median stacking
+technique is insensitive to extended (beyond FORMULA  arcseconds) radio
+emission, causing it to underestimate the actual radio luminosity and
+star-formation rate.
+In fact, we measure slightly different sizes for the AGN and
+star-formation subsamples: FORMULA  by
+FORMULA  and FORMULA  by
+FORMULA , respectively. The AGN sizes are comparable
+to the median size for SDSS quasars of 6.4 by 7.0 (also along RA and DEC), as given in Paper I. This implies that there
+is no extended radio emission detected for the star-formation
+subsample, while some has been detected for the AGN subsample beyond
+the FORMULA  FWHM of the FIRST point-spread-function.
+Summary
+Combining a large number of objects across a range of AGN activity
+from the SDSS with the FIRST radio survey allows us to correlate
+various sample statistics with radio emission at levels that are too
+low for individual sources to be detected. We are able to measure
+median radio emission down to a few tens of FORMULA Jy, well below the
+FIRST detection threshold.
+We find the following quantities to correlate strongly with the median
+radio luminosity:
+
+DFORMULA (4000) index / star-formation rate. This index traces
+the amount of star-formation in a given galaxy by measuring the
+amount of blue light relative to the red. Low values of the DFORMULA (4000) index correspond to more active star-formation, and are
+found to have the highest median radio luminosities (more than an
+order of magnitude larger than high-index objects).
+
+[O3] luminosity. Higher levels of [O3]
+luminosity correspond to higher median radio luminosities. This is
+true over at least 3 orders of magnitude. The [O3] – radio
+luminosity correlation for the "pure-AGN" subsample is consistent
+with the same relation for quasars, but extended towards lower
+luminosities. The highest levels of [O3] and median radio
+emission are seen among the "pure-star-formation" subsample, with
+levels comparable to the quasar ones.
+
+Central velocity dispersion FORMULA . Generally, higher values
+of FORMULA  (i.e., larger galaxies) correspond to larger median
+radio luminosities. However, there are clear differences between the
+AGN and star-formation dominated subsamples. For a given median
+radio luminosity, star-forming systems have a much smaller FORMULA 
+than AGN-dominated systems. Conversely, for a given galaxy size and
+FORMULA , star-formation dominated systems can be an order of
+magnitude more luminous in the radio than the AGN-dominated
+systems.
+
+We furthermore find that the AGN contribution to the overall median
+radio luminosity is roughly constant in these galaxies at the
+FORMULA  ergs sFORMULA  HzFORMULA  level. The other component is
+very tightly correlated to the star-formation rate (as derived from
+the optical spectrum). This also implies that if one is considering a
+system without an AGN, its star-formation rate can be accurately
+assessed using the radio luminosity of the system. There is no
+indication that this correlation cannot be extended to star-formation
+rates below 0.1 MFORMULA  / yr.
+It is clear that by studying (median) statistical properties of
+carefully selected and representative samples, one can infer subtle
+trends that otherwise are either too small to detect, or are masked by
+source intrinsic variations. Our median radio luminosity measurements
+are at least a few orders of magnitude below typical studies (see
+Fig. REF ), and provide a much less-biased view of the radio
+properties of galaxies. Methods such as that used in this paper hold
+great potential when applied to future, large-scale multi-wavelength
+surveys.
+We like to thank the anonymous referee for helpful comments. The work
+by WDV and RHB was partly performed under the auspices of the
+U.S. Department of Energy, National Nuclear Security Administration by
+the University of California, Lawrence Livermore National Laboratory
+under contract No. W-7405-Eng-48. JAH acknowledges support of the
+GAANN Fellowship from the U.S. department of Education. The authors
+also acknowledge support from the National Radio Astronomy
+Observatory, the National Science Foundations (grant AST 00-98355),
+and the Space Telescope Science Institute.
+rccrrr
+0pt
+1
+Median Results for Star-formation Binning
+
+
+FORMULA   SFR 
+FORMULA   FORMULA   DFORMULA (4000)
+  [MFORMULA  / yr] 
+[ergs/s/Hz]  [FORMULA Jy]  
+
+0.0784  0.15  27.69FORMULA 0.02  61.7FORMULA 3.6  1.814
+0.0845  0.47  27.90FORMULA 0.02  80.4FORMULA 3.6  1.754
+0.0819  0.79  27.96FORMULA 0.02  91.0FORMULA 3.8  1.728
+0.0832  1.12  28.06FORMULA 0.01  101.8FORMULA 3.9  1.704
+0.0842  1.47  28.14FORMULA 0.01  114.2FORMULA 3.4  1.697
+0.0865  1.85  28.24FORMULA 0.01  128.0FORMULA 3.2  1.683
+0.0908  2.26  28.26FORMULA 0.01  127.1FORMULA 3.8 1.671
+0.0946  2.72  28.36FORMULA 0.01  139.3FORMULA 3.6  1.653
+0.0994  3.26  28.41FORMULA 0.01  143.9FORMULA 3.5  1.639
+0.1045  3.90  28.54FORMULA 0.01  172.9FORMULA 3.6  1.625
+0.1081  4.68  28.62FORMULA 0.01  190.7FORMULA 3.8  1.612
+0.1151  5.65  28.71FORMULA 0.01 193.5FORMULA 3.6  1.595
+0.1193  6.97  28.80FORMULA 0.01  224.6FORMULA 3.4  1.584
+0.1292  9.08  28.92FORMULA 0.01  242.9FORMULA 3.5  1.565
+0.1481  14.1  29.15FORMULA 0.01  316.8FORMULA 3.9  1.527
+Both the radio luminosities and flux densities have been
+corrected for the snapshot-bias (see text). The star-formation rate is taken from
+Brinchmann et al. (2004)
+ccccccc
+0pt
+2
+Results for DFORMULA (4000) Binning
+
+
+DFORMULA (4000) 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+     
+[ergs/s/Hz]  [ergs/s/Hz] 
+  
+
+2.044  0.0724  0.0818  28.15  28.05  6.08  6.50
+1.942  0.0826  0.0927  28.21  28.10  6.12  6.54
+1.885  0.0873  0.0963  28.20  28.05  6.18  6.57
+1.836  0.0928  0.0994  28.26  28.10  6.28  6.64
+1.791  0.0951  0.1009  28.24  28.06  6.30  6.71
+1.747  0.0960  0.1027  28.30  28.14  6.39  6.79
+1.705  0.0972  0.1034  28.36  28.21  6.53  6.91
+1.665  0.1008  0.1063  28.42  28.28  6.65  7.01
+1.624  0.1014  0.1077  28.48  28.35  6.79  7.17
+1.584  0.1031  0.1079  28.56  28.44  6.92  7.30
+1.541  0.1053  0.1095  28.66  28.55  7.04  7.39
+1.496  0.1069  0.1106  28.73  28.62  7.17  7.53
+1.446  0.1114  0.1147  28.86  28.79  7.34  7.69
+1.384  0.1143  0.1178  28.99  28.94  7.54  7.86
+1.276  0.1201  0.1244  29.21  29.19  7.85  8.11
+FORMULA  and FORMULA  are luminosities
+based on flux-stacking and luminosity-stacking, respectively. The bolometric luminosity
+of the sun (FORMULA ) is FORMULA  ergs sFORMULA .
+ccc
+0pt
+3
+Inferred Star-formation Rates – Star-formation subsample
+
+
+FORMULA   FORMULA   SFR
+  [ergs/s/Hz]  [MFORMULA  / yr]
+
+0.075  27.60  0.45
+0.095  28.10  1.07
+0.100  28.34  1.61
+0.101  28.46  1.97
+0.106  28.57  2.37
+0.108  28.72  3.06
+0.112  28.78  3.38
+0.115  28.91  4.49
+0.119  28.99  5.40
+0.123  29.08  6.64
+0.128  29.23  9.38
+0.134  29.34  12.1
+0.149  29.65  24.7
+For reference, an FORMULA  galaxy corresponds to FORMULA  and an SFR of 3.57 MFORMULA  / year.

@@ -1,0 +1,434 @@
+
+Optical and magneto-optical properties of ferromagnetic
+full-Heusler films: experiments and first-principles calculations
+F. RicciFORMULA , S. PicozziFORMULA , A. ContinenzaFORMULA , F. D'OrazioFORMULA , F. LucariFORMULA ,
+K. WesterholtFORMULA ,
+M. Kim FORMULAPresent address:
+Seoul National University, Seoul,
+Korea and A. J. FreemanFORMULA  
+FORMULA  Dip. di Fisica, Univ. dell'Aquila, 67010 Coppito (L'Aquila),
+Italy;
+FORMULA  Istituto Nazionale di Fisica della Materia (INFM-CNR);
+FORMULA  Consorzio Nazionale Interuniversitario Scienze della Materia (CNISM);
+FORMULA  Institut fur Experimentalphysik IV, Ruhr-Univ. Bochum, Germany;
+FORMULA  Dept.FORMULA of Physics and Astronomy, Northwestern Univ., 60208 Evanston, Il, USA
+We report a joint theoretical and experimental study focused on understanding the optical and magneto-optical
+properties of Co-based full-Heusler compounds. We show that
+magneto-optical spectra calculated within ab-initio density functional theory are able to uniquely identify the features of the
+experimental spectra
+in terms of spin resolved electronic transitions.
+As expected for 3FORMULA -based magnets, we find that the largest Kerr rotation for these alloys is of the order of 0.3FORMULA 
+in polar geometry. In addition, we demonstrate that (i) multilayered structures have to be carefully handled in the theoretical calculations
+in order to improve the agreement with experiments, and (ii)
+combined theoretical and experimental investigations constitute a powerful approach to designing new materials for magneto-optical and spin-related
+applications.
+75.50.Cc, 78.20.Ls, 71.15.-m
+Introduction
+Spin electronics, or spintronics, is a multidisciplinary field that involves the active manipulation of
+the electron spin degree of freedom. Recent developments in material design allow to combine magnetic and
+semiconducting character, thus opening the possibility to build devices with highly polarized
+currents. In fact, one of the major challenges in spintronics is
+the search for compounds
+that could act as efficient injectors of spin-polarized current
+in semiconductors. Diluted magnetic semiconductors (DMS){{cite:bd13dab9-8737-4677-8afd-df30f213e78c}}
+are obviously
+among the best candidates as spin-polarized sources,
+due to their excellent structural
+compatibility with the spin-current semiconducting
+“sink". Indeed, spin-light emitting devices have been successfully
+realized using DMS as spin-injectors{{cite:2dd593b7-eaa5-4974-b403-dad29827dc8c}}.
+However, the very low Curie
+temperatures
+and the need for high magnetic fields
+seem to have hindered so far
+a large-scale application of DMS in the spin-injection
+framework.
+On the other hand, the discovery of a wide class of half-metallic (HM)
+compounds, initially predicted by de Groot et al.{{cite:b29c99f8-bde7-49e8-aa0d-81393aab5a32}}, has gained importance in this
+context{{cite:eb4096aa-18f1-482c-9a2b-7b915086507d}}. The CoFORMULA MnX (with X = Al, Si, Ga, Ge, Sn) full-Heusler family has interested the scientific
+community because of its ideal
+100% spin polarization at the Fermi level, a good structural matching
+with mainstream semiconductors (in terms of lattice constants
+and crystal structure)
+and very high Curie temperatures{{cite:876783fa-9732-4f47-87dd-928877a75d85}}, {{cite:4ba84ecd-c114-4c1e-ad20-906395cda7a8}} (FORMULA  900 K).
+Recently, a number of Heusler compounds have been grown epitaxially on
+semiconducting substrates: for example, CoFORMULA MnGe{{cite:710bddc1-9e66-4bbb-b4c5-299644bb6d62}}, CoFORMULA MnSi FORMULA{{cite:26f5aca5-f8ca-4c8c-a367-e2fb849b8656}}, {{cite:0bc8dcab-665f-4662-a34c-cf490a32125b}},
+NiFORMULA MnGa{{cite:7bbce611-c672-455e-a18a-4602e794d8f6}}, NiFORMULA MnGe{{cite:16f1c964-4417-47ac-86b9-e0d54477adf7}} on
+GaAs [001] and NiFORMULA MnIn on InAs [001]{{cite:296fe393-22d5-491c-b250-31f4033efa41}}.
+On the other hand, also RF-sputtering technique has been shown to produce homogeneous Heusler films with good
+structural and magnetic quality{{cite:c8d59ece-007c-48e8-81c8-dda6a4f92aa5}}, {{cite:a457e5f6-c14e-4ef1-97e0-723c84128b57}}.
+The first noticeable application of electrical spin injection
+from CoFORMULA MnGe into a FORMULA  AlFORMULA GaFORMULA As/GaAs light emitting diode heterostructure
+was reported only recently{{cite:e825c2fd-0e5c-46eb-a7a7-bc7b9626a604}}: a steady state polarization of 13FORMULA  resulted at 2 K.
+The injected polarization was significantly lower than
+the theoretically predicted 100FORMULA  value expected for half-metals
+{{cite:59882464-79f3-4ded-80de-6c46ee07a611}}, {{cite:4ba84ecd-c114-4c1e-ad20-906395cda7a8}}, pointing to
+the importance of interfacial disorder or temperature effects{{cite:d645db94-080d-4000-bbdc-e0c096d7687c}}.
+Moreover, within this family of compounds, PtMnSb has been found to exhibit a giant
+Kerr rotation (up to 2.0FORMULA  at room temperature and
+5.0FORMULA  at 80 K) that is totally unexpected
+for a 3FORMULA -based material{{cite:5e1d31e6-60af-4b85-861a-7d76bdec3125}}. This is of technologically relevant
+importance in the context
+of magneto-optical reading and recording technology.
+Since then, there has been great interest in magneto-optics for this
+class of compounds{{cite:de929b28-d33a-4b96-b880-ac38f296a71b}}; in particular, CoFORMULA MnSi FORMULA{{cite:9c678a1c-7e96-4b48-8457-2edc1c155d17}} and CoFORMULA MnGe{{cite:f0951441-5c19-4cf7-b97a-b61501c8173a}}, {{cite:27afe8ed-e2fb-475f-b29d-e9a8966418b6}}, {{cite:fae9c5ee-d471-4393-bcbb-79f1cff39f9b}} were characterized by means of
+X-ray absorption and magnetic circular dichroism.
+However, to our knowledge,
+there are no experimental or first-principles characterizations (within the local-spin
+density approximation (LSDA) to density functional theory (DFT))
+of these
+Co-based compounds, as far as the magneto-optical Kerr effect (MOKE) is concerned.
+This paper presents a joint theoretical and experimental study of Heusler compounds, aimed at a more complete
+understanding of their optical and magneto-optical properties. Therefore, we pick two prototype examples of the full-Heusler family
+(CoFORMULA MnGe and CoFORMULA MnSn), which are similar enough to support the comparison between calculated
+and experimental MOKE spectra. These crystals are expected to have a high degree
+of spin-polarization at the Fermi level (FORMULA 100%), and a similar response when they are excited with electromagnetic radiation.
+The paper is organized as follows: after some computational details are reported in Sec. , we focus
+on the description of the experimental approach to the magneto–optical
+properties (Sec. ) and
+on the comparison between theory
+and experiments for the
+Kerr rotation and ellipticity
+(Sec. ).
+The good agreement with the experimental spectra suggests that a first principles
+calculation describes sufficiently
+well the Heusler's electronic structure
+on the basis of a bare DFT approach, without invoking correlation or excited-state
+effects beyond a standard LSDA treatment. Therefore, in Sec. , we
+give a comprehensive theoretical description of both optical and
+magneto–optical properties for CoFORMULA MnGe and CoFORMULA MnSnFORMULA on the basis of their underlying
+electronic structure. In Sec.  we draw conclusions.
+
+Computational details
+Accurate
+first-principles calculations, using the full-potential linearized augmented plane-wave (FLAPW) method{{cite:f518d6de-eb89-4af9-834c-124e9b841258}},
+were performed within the LSDA approximation
+to DFT, according to the von Barth-Hedin treatment for the exchange–correlation functional.
+In the calculations, we used
+muffin tin radii of 2.1 a.u. for Ge, Co, Mn and 2.3
+a.u. for Sn; wave function and charge density cut-offs were set at 3.8 and 8.0 a.u., respectively
+and 110 k-points were used in the irreducible
+wedge of the Brillouin zone for the self-consistent cycle, according to
+the standard Monkhorst-Pack procedure{{cite:fada9f2a-95a3-4b2d-bfea-631c1e40082c}}.
+We recall that MOKE is based on the change experienced by linearly polarized light reflected from a
+ferromagnetic material, which
+becomes elliptically polarized with its major axis rotated by an angle FORMULA  (with respect to the
+incident polarization plane) and ellipticity  FORMULA{{cite:64fe3f5b-a3e8-417d-a556-ecb1a38822e8}}.
+The MOKE interband transition is a direct consequence of the interplay
+between spin-orbit coupling and the exchange interaction: the relation between the magnetic field,
+acting on spins, and radiation, which interacts with the orbital degrees of freedom,
+is established through spin-orbit coupling. The symmetry breaking resulting from this
+interaction changes the electronic selection rules of the system in such a way that most
+of the important features in the conductivity tensor FORMULA  can be interpreted in terms of the
+bare band structure (see Sec. ).
+The optical conductivity
+tensor FORMULA 
+is calculated within linear response theory in the
+long wavelength limit, using the relativistic single-particle Kohn-Sham eigenvalues and wave
+functions{{cite:0a342178-c2eb-41d3-89e0-54cb181a0e4c}}. Linear response theory within the Kubo formalism allows us to write
+the conductivity tensor FORMULA  as:
+FORMULA 
+where the sum is taken between the occupied and unoccupied states, FORMULA  respectively; FORMULA 
+is the FORMULA  component (FORMULA ) of the dipole matrix calculated between the FORMULA  states;
+FORMULA  is the interband relaxation time.
+In polar geometry at normal incidence (i.e. with
+the propagation direction (FORMULA  axis) parallel to the magnetization direction and perpendicular to the
+surface), for cubic crystals,
+the complex polar Kerr angle can be expressed to first order as:
+FORMULA 
+where FORMULA  is
+the photon energy and we define the quantity FORMULA  containing only the diagonal terms
+of the optical conductivity.
+We account for other transitions that are not included in the interband term expressed in Eq. (REF )
+(i.e. scattering at lattice imperfections or phonons){{cite:b5ae84cb-73a3-4f2b-8b2c-203fd31b7193}} by considering intraband
+transitions described by an empirical Drude contribution (characterized by an intraband
+relaxation time FORMULA ) added to the diagonal elements of the FORMULA  tensor:
+FORMULA 
+Here the plasma frequency is expressed as:
+FORMULA 
+where FORMULA  is the Fermi energy, and FORMULA  the diagonal element of the dipole matrix.
+The calculation of the optical and magneto-optical properties has been performed
+using 1000 k-points.
+In order to consider the effect of finite lifetimes, as well as of the experimental
+resolution, a Lorentzian broadening equal to FORMULA  = 0.4 eV was applied for both
+the interband and intraband contributions. Since MOKE is a very small effect, an accurate
+all-electron code with no approximations on the potential, as the FLAPW used in the
+present work, is highly recommended in order to obtain reliable results{{cite:f08e0430-b127-4f3d-ab61-c3fd61473019}}.
+
+Experimental results
+Experimental MOKE spectra were obtained on CoFORMULA MnSnFORMULA and CoFORMULA MnGe films grown by RF-sputtering on AlFORMULA OFORMULA  a-plane substrates. Before deposition,
+a 5 nm thick seed layer of vanadium was deposited in order to induce excellent (110)-growth of the 100 nm thick Heusler
+film{{cite:c8d59ece-007c-48e8-81c8-dda6a4f92aa5}}. A final protective overlayer of amorphous alumina, 5 nm thick, was then grown on top of the
+film.
+At each photon energy complete hysteresis loops were performed and both FORMULA - and FORMULA -waves
+MOKE rotation and ellipticity were measured as a function of the magnetic field, in the range FORMULA 5600
+Oe. In this way, the presence of paramagnetic or diamagnetic terms can be detected as a linearly field dependent
+component and then subtracted from the overall signal. This is particularly important for low temperature measurements
+in which the cryostat windows may provide an appreciable diamagnetic contribution.
+As expected in thin films, due to shape anisotropy, magnetization in the direction perpendicular to the surface is not (energetically)
+favored. This is evidenced by the linear field dependence of the polar MOKE hysteresis loops all over the magnetic
+field range (not shown). On the contrary, longitudinal FORMULA -polarized MOKE experiments lead to hysteresis loops with a saturation field on
+the order of 50 Oe.
+As an example, we report in Fig. REF  some FORMULA -wave longitudinal MOKE hysteresis loops for the CoFORMULA MnGeFORMULA  sample at a
+photon energy of 0.83 eV. In-plane anisotropy is observed when longitudinal experiments
+are repeated with the sample rotated around the axis perpendicular to the surface; it turns out that the easy and hard axes are
+mutually perpendicular.
+The in-plane anisotropy is induced during growth by the step edges on the surface of the AlFORMULA OFORMULA 
+substrate. However, since we
+are interested in comparing the experimental MOKE results with the theoretical prediction, the
+meaningful quantity to be considered is the saturation of the loops, which does not depend on the
+in-plane angle and corresponds to the remanence measured
+when the magnetic field lies along the easy axis direction.
+The temperature
+dependence is shown more clearly in Fig. REF , where the complete spectrum of s-polarized longitudinal
+Kerr saturation rotation is reported at 300 K and 12 K for CoFORMULA MnGe.
+The main features are well
+reproduced at both temperatures,
+except for a slightly higher peak observed at low temperature.
+This is attributed to a reduced magnetization at high temperature. Similar
+outcomes are found for the CoFORMULA MnSnFORMULA film as well. In the following, we examine in detail
+the results obtained at room temperature, since the presence of the
+cryostat windows and the undesirable vibrations of the sample holder lower the signal-to-noise ratio at low temperature,
+thus preventing an accurate and complete determination of the spectra. It is also worthwhile mentioning
+that room temperature magnetization measurements, performed with an alternating gradient
+magnetometer, provide a saturation magnetization corresponding to 83.06 emu/g and 74.38 emu/g
+for FORMULA  and CoFORMULA MnSnFORMULA , respectively. Not unexpectedly, these values are 20FORMULA  and 15FORMULA  lower, respectively, than
+the values obtained at 5 K on similar films reported previously{{cite:c8d59ece-007c-48e8-81c8-dda6a4f92aa5}}.
+
+Comparison between theory and experiments
+In Figs. REF  and REF , the complete experimental and theoretical spectra obtained for
+longitudinal Kerr geometry are compared for the CoFORMULA MnGe and CoFORMULA MnSnFORMULA films, respectively.
+The different panels show the MOKE rotation and ellipticity, both in FORMULA  and FORMULA  polarization.
+Our theoretical calculations are obtained according to the following procedure: the FORMULA  conductivity tensor is calculated by
+ab-initio simulations. Using Eq. (REF ), one can compute the Kerr angle at normal incidence
+on the interface between two semi-infinite media: vacuum and CoFORMULA MnSnFORMULA or CoFORMULA MnGe.
+However, in order to compare the experimental data with the theoretical predictions,
+the calculated spectrum has to be evaluated in the same geometry and reflection conditions
+(incident radiation at 45FORMULA  on the sample surface) taking also into account the sample structural characteristics.
+In particular, due to the finite
+thickness of the Heusler compound, we must consider that the reflected
+radiation is affected by the optical and magneto-optical response of a multilayered structure.
+This is possible according to the formalism introduced by Zak et al.{{cite:3bb1d46b-5df6-4c7e-822d-33e6c8aeb9c0}}: propagation
+of the radiation within each layer is characterized by a propagation matrix P and a boundary matrix A,
+which are functions of geometrical
+parameters, of the complex refractive index FORMULA  of the constituent material, and the complex magneto-optical
+coefficient Q (if the layer is magnetic). The latter terms (FORMULA , Q) are related to the diagonal and off-diagonal
+elements, respectively, of the conductivity tensor calculated according to
+Eq. (REF ). Using the P and A matrices, the boundary conditions
+can be directly applied to the electric and magnetic field vectors that, depending on the light polarization (FORMULA  or FORMULA ), satisfy
+a different set of homogenous non-linear equations. All results obtained within the Zak model are of the first order in Q.
+This framework takes into account multiple reflections at the interface
+between sample layers and it allows us to predict the magneto-optical response of a “film” or a multilayered
+structure.
+The wavelength
+dependence of the refractive index of the sapphire capping layer and substrate was taken from the literature{{cite:9310b2e3-5d7d-4ead-9163-e987f0280d93}};
+the vanadium seed layer was neglected since only a small contribution to the reflected radiation is expected from more internal thin layers.
+For comparison, in the two upper panels of Fig. REF , the results calculated for the semi-infinite magnetic layer
+(“bulk” calculation) are included only for the case of FORMULA -wave in CoFORMULA MnGe.
+We observe that the experimental features (in particular the peak positions) are better matched by the film calculation (solid lines).
+The intraband contribution to the conductivity tensor was modeled according to Eq. (REF )
+taking FORMULA  3.0 eV and FORMULA  0.2 eV for both
+samples, while for the interband term line-width, the value FORMULA  0.4 eV was considered.
+These values were chosen in order to fit the experimental spectra and they are all within the typical
+range of values for these parameters; their energy dependence was neglected{{cite:b5ae84cb-73a3-4f2b-8b2c-203fd31b7193}}.
+In particular, the above mentioned value for FORMULA 
+differs from the plasma frequency calculated
+from first principles (i.e. FORMULA  4.4 eV for both compounds).
+However, this is not a serious discrepancy since the plasma frequency is known to be strongly affected by sample
+purity and it is absolutely
+reasonable (if not expected) that disorder, neglected
+in the FORMULA  simulations, exists in real samples and is responsible for the different FORMULA  value.
+Overall, for both compounds and for both FORMULA - and FORMULA -wave cases,
+the agreement is good as far as the Kerr rotation and the ellipticity
+are concerned: theory reproduces the exact sign of the angle and the spectral shape
+in the whole energy range examined. In particular,
+the agreement between the energy positions of the main features is excellent, whereas the
+magnitude shows a disagreement. This is really not too surprising if we consider that:
+i) simulations are performed at zero
+temperature and, therefore, they do not take into account spin fluctuations that occur
+at room temperature as in the case of the actual measurements; ii) at low energies (E FORMULA  1.5 eV ), intraband excitations
+play an important role and may not be well reproduced by the simple Drude expression;
+iii) disorder in the Co and Mn sublattices occupation might also be present in real samples, thus affecting the electronic and magnetic
+structure. For example, it has been theoretically shown that Co antisites
+in bulk CoFORMULA MnGeFORMULA  have low formation energy and destroy
+half-metallicity{{cite:96574e34-5811-4fd4-8777-cc58bdbb24f6}}, at variance with the NiMnSb case where recent calculations showed that
+low formation energy defects preserve
+the half metallic character{{cite:c1d905c2-3493-47ae-859a-5a832d032143}}. However, our theoretical investigation allows us to obtain valuable insights
+on the electronic properties of the materials, which are not easily accessible to experiment alone.
+
+Discussion of theoretical results
+Before going into the details of the origin of the optical and
+magneto-optical properties, we briefly recall
+the structural and electronic properties
+of the different Heusler
+compounds. In particular, in Table REF  we report our
+calculated{{cite:436a24e6-6421-418e-b389-e3070ad3a283}}
+equilibrium lattice constant,
+along with the total magnetic moment, plasma frequency
+and density of states at the Fermi level (FORMULA ), the last two quantities
+being spin-resolved. The plasma frequency of the majority-spin component is pretty large for both compounds, reflecting the
+highly dispersed character of the bands crossing FORMULA .
+We recall that, according to the previously calculated
+electronic structure for CoFORMULA MnSnFORMULA and CoFORMULA MnGe{{cite:96574e34-5811-4fd4-8777-cc58bdbb24f6}},
+the majority spin DOS has metallic character, and the number of unoccupied electronic states
+is low (FORMULA  0.2 states/(eV cell)). On the other hand, the minority spin presents
+an occupied and unoccupied DOS (obviously separated by the
+gap giving rise to HM character), both with appreciable weight (FORMULA  5 states/(eV cell)).
+In addition, we observe that, in the energy range of interest
+(from 0 to 5 eV), the dipole matrix elements for transitions
+within the minority channel are more than twice
+as large than those in the majority spin channel, thus suggesting that optical
+transitions will more likely occur in the minority spin channel.
+In the following analysis, therefore, we will mainly consider possible transitions
+in the minority spin-channel (see below).
+Let us first focus on CoFORMULA MnGe. The real parts of the optical conductivity,
+the dielectric function
+and the minority band structure are reported in
+Fig. REF  (a), (b) and (c), respectively.
+In order to investigate the relation between the features in the optical
+properties and the underlying band structure, we show
+two spectra obtained with a Lorentzian
+broadening of FORMULA  0.4 eV (used in Figs. REF  and REF  to compare with
+the experimental results) and 0.1 eV (see Eq. (REF )), respectively.
+The higher resolution of the latter spectrum is useful to trace back more clearly the origin of the transitions,
+starting
+from the band-structure. In the insets of Fig. REF  (a) and (b), we show
+a comparison between the total (interband + intraband) and
+interband-only contributions to the optical properties. The arrows (dotted, solid and dashed)
+mark some possible vertical
+transitions with an energy corresponding to the
+main maxima (at 0.4, 2.0 and 2.5 eV, respectively) in the optical conductivity.
+We note that the optical conductivity shows:
+i) a different behavior for energies FORMULA  1.5 eV,
+depending on whether the Drude contribution is included or not; ii)
+three main features in the interband spectra (more evident with the smaller
+applied broadening), at FORMULA  0.4, FORMULA  2.0 and FORMULA  2.5 eV.
+The former consideration is in line with what is generally observed:
+for typical plasma frequencies of a few eV, the
+intraband Drude contribution is relevant at small frequencies and becomes negligible
+at energies larger than FORMULA  1.5 eV (given the frequency dependence of Eq. (REF )). Similarly, the dielectric function
+also shows a typical Drude-like behavior at small energies.
+In order to better explain the origin of the maxima just
+mentioned in the real part of the optical conductivity,
+FORMULA , let us focus on
+the minority band-structure of CoFORMULA MnGe.
+To better understand the hybridization process, we take a look at the minority spin only:
+the interaction between FORMULA  orbitals of the two Co atoms in the primitive cell forms bonding (antibonding)
+states between a 3-fold degenerate FORMULA  (FORMULA ) and 2-fold degenerate
+FORMULA  (FORMULA ) states.
+The hybridization between FORMULA  and FORMULA  Co-Co orbitals and Mn FORMULA  states gives rise{{cite:876783fa-9732-4f47-87dd-928877a75d85}} to bonding and antibonding levels between
+3-fold FORMULA  and 2-fold FORMULA , while the FORMULA 
+and FORMULA  levels do not hybridize with Mn states due to symmetry rules. Therefore, the latter levels are localized at Co sites only.
+The hybrid level positions can be inferred from the atom projected density of states (not shown); their energies are:
+FORMULA 
+with a total number of occupied minority spin levels equal to 8 electrons per cell.
+In a more “crude” picture, FORMULA  can be obtained simply from the product of the dipole matrix element (taken k-independent) and
+the joined density of states (JDOS){{cite:b5ae84cb-73a3-4f2b-8b2c-203fd31b7193}} related to the gradient of the energy of the initial and final states.
+The highlighted transitions (Fig. REF  panel (c)) at 2.0 and 2.5 eV are relative to excitations from
+FORMULA  to
+FORMULA  and FORMULA  levels around the K and W points (and, to a lower extent, around the X and L
+points as well) of the Brillouin zone. Transitions around 0.4 eV and 1.0 eV occur close to the FORMULA 
+point and the FORMULA X line exclusively, and involve
+electronic excitations from FORMULA  to FORMULA  states.
+The involved bands show a predominantly FORMULA -character and are pretty flat; thus, we expect a larger contribution coming from
+the JDOS rather than the dipole matrix element.
+Finally, since we do not have experimental optical data to compare
+with, we recall that for the similar
+compound NiFORMULA MnSn{{cite:d29ba10b-9ee1-4db8-8f39-51edee7bbf5d}}, a good agreement between theory and experiments
+was obtained. More recently, a paper on NiFORMULA MnIn{{cite:bea36d9a-e930-45b7-bad5-4fdb0434d398}} showed that the agreement between first-principles
+simulations and optical measurements was sufficiently good, as far as the main
+features are concerned, and could be optimized (especially for the peak
+energy positions), including some empirical corrections
+(e.g., the FORMULA -fitting{{cite:0602373f-41ea-4d5c-995d-e4449afc9130}} process)
+to account for
+many-body and excited state effects. Here, we prefer to not consider
+any empirical corrections: in fact,
+since the agreement with the by far more delicate magneto-optical properties
+is already satisfying, we expect that the inclusion
+of excited-state corrections would only marginally affect the overall picture which is seen to be
+accurate enough already within DFT.
+Having understood the optical properties, we now move to the magneto-optical
+properties. Figure REF  (a) shows the calculated polar spectra (both rotation and ellipticity)
+at normal incidence for bulk CoFORMULA MnGe and CoFORMULA MnSnFORMULA : this is the geometry which provides
+the highest Kerr response and,
+therefore, it is the one considered to evaluate the performance of a possible magneto-optical application.
+The main features of the spectra are similar to those shown in Figs. REF  and REF , relative
+to the longitudinal Kerr effect at 45FORMULA , except for a much larger peak size.
+First of all, the longitudinal Kerr rotation is around 0.05FORMULA 
+(although it should be recalled that the maximum Kerr rotation strictly
+depends on the smearing value considered): this is a typical value
+for 3FORMULA  based materials, which are generally not very active from the
+magneto-optical point of view.
+Upon reduction of the broadening
+values within a physically meaningful range (i.e. FORMULA  0.1 eV), the Kerr angle
+increases up to 0.07FORMULA . Still, given the 3FORMULA  nature of the compounds,
+these are not unexpected results, at variance with
+the case of PtMnSb where a giant Kerr rotation was observed both experimentally
+{{cite:5e1d31e6-60af-4b85-861a-7d76bdec3125}} and theoretically{{cite:de929b28-d33a-4b96-b880-ac38f296a71b}}. This is consistent with the
+picture given previously{{cite:de929b28-d33a-4b96-b880-ac38f296a71b}}, {{cite:27794015-7121-47f1-b3bb-547cad2c6c3d}} for half-Heusler compounds: in
+order to have an extremely high Kerr angle, a large spin-orbit coupling is required in addition to a
+large magnetic moment, in this case provided by Mn atoms.
+In our samples, cobalt (a light transition metal) acts as a “cation",
+providing a spin–orbit coupling much smaller than other heavier elements (such as Pt or Au).
+On the other hand, also the FORMULA 
+element (Ge or Sn) behaves differently from Sb, but the effect of an increased spin-orbit coupling
+with increased atomic number of the FORMULA -electron source element is negligible{{cite:96574e34-5811-4fd4-8777-cc58bdbb24f6}}, since most of the
+states involved in the transitions are localized on the cation sites (Co, Mn).
+Our generally small Kerr angles indicate that half-metallicity alone (such as that
+typical of CoFORMULA MnSnFORMULA and CoFORMULA MnGe) is not sufficient to guarantee strong MO effects.
+Along the same line, the maximum magnitude of the Kerr angle in CoFORMULA MnSn, which deviates from half metallicity,
+is not remarkably smaller, but rather of the
+same order of magnitude as in CoFORMULA MnGe.
+Moreover, irrespective of the actual chemical composition,
+the Kerr spectra look pretty similar for the two compounds: the Kerr rotation is
+generally negative and shows two minima, marked with vertical lines in Fig. REF , whereas the Kerr ellipticity exhibits
+some zero crossings and two main positive peaks. This has to be related,
+of course, to the underlying electronic structure which, as noted before, is very
+similar in the two compounds.
+As shown in Eq. (), the Kerr angle is given by a strictly magneto-optical numerator,
+which depends only on the off-diagonal part of the FORMULA  matrix (and, therefore, is related to the simultaneous
+presence of exchange and spin-orbit coupling), and by an optical denominator (related
+to the diagonal part of the conductivity tensor only). Therefore, some hints
+about the origin of the features in the Kerr angles can be gained by plotting,
+as reported in Fig. REF ,
+the Kerr rotation (panel (a)) and, separately, the numerator (real and imaginary parts, panel (b))
+and inverse denominator
+(real and imaginary parts, panel (c)) of Eq. ().
+In agreement with what was suggested for the half-Heusler compounds
+{{cite:de929b28-d33a-4b96-b880-ac38f296a71b}} and also confirmed for a large class of full-Heusler
+alloys, we find that
+the first minimum (photon energy FORMULA  1.0 eV) is mostly due to optical contributions (compare with panel (b)),
+whereas the second minimum (FORMULA  3.4 eV) shows a magneto-optical origin (compare with panel (c)).
+Finally, we recall that the imaginary part of the off-diagonal conductivity (Fig. REF (c))
+is directly related to the difference in absorption of the left- (LCP) and
+right-circularly polarized (RCP) light. Therefore, the wavelengths characterized by a zero rotation angle
+(though slightly dependent on the broadening used) mark the points where
+LCP and RCP-induced transitions have the same overall probability. For both
+CoFORMULA MnGe and CoFORMULA MnSn, this occurs around 2.0-2.3 eV.
+
+Conclusions
+In summary, we have presented a full characterization of MOKE spectra in CoFORMULA MnGeFORMULA  and CoFORMULA MnSnFORMULA Heusler
+compounds, both from first-principles and experimental points of view.
+We have shown that, for a correct comparison between theory and experiment,
+the exact measurement conditions have to be taken into account, namely:
+Kerr geometry, angle of incidence of the light and multilayered structure
+of the samples. This has been achieved by implementing ab-initio simulations
+in DFT of the tensor FORMULA  within the Zak model which imposes the correct boundary conditions
+in any given geometry and multilayered configuration.
+The maximum Kerr rotation results to be of the order of FORMULA 0.25FORMULA , which is
+not very appealing for magneto-opto-electronic applications. On the other hand,
+the agreement between theory and experiment allowed a
+deep understanding of
+the main features in the optical and magneto-optical spectra of these compounds
+in terms of the underlying band-structure. This could be very useful in the design of
+ad-hoc materials, since a solid basis for predicting their properties and their possible applications
+is established.
+Work at Northwestern University supported by the U.S.N.S.F. through its MRSEC Program at the N. U. materials Research Center.
+
+TABLE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 

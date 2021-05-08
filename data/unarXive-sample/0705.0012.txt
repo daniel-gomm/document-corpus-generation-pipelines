@@ -1,0 +1,237 @@
+
+When does a satellite knot fiber? 
+Mikami Hirasawapartially supported by MEXT, Grant-in-Aid for
+Young Scientists (B) 18740035Department of MathematicsNagoya Institute of TechnologyNagoya Aichi 466-8555JAPANKunio Murasugipartially supported by NSERC Grant A 4034Department of MathematicsUniversity of TorontoToronto ON M5S 2E4 CANADA
+Daniel S. SilverSupported in part by NSF Grant DMS #0304971Department of Mathematics and Statistics
+University of South AlabamaMobile AL 36688USA
+2020/09/07 17:57:58Necessary and sufficient conditions are given
+for a satellite knot to be fibered.
+Any knot FORMULA  embeds in an unknotted solid torus
+FORMULA  with arbitrary winding number
+in such a way that no satellite knot with pattern
+FORMULA  is fibered.
+In particular, there exist nonfibered satellite knots
+with fibered pattern and companion knots and nonzero winding number.
+Introduction
+Proposition 4.15 of the monograph Knots
+{{cite:437d8c1d-d59a-4924-ad1a-b6cf8d3b51f1}} erroneously asserts and proves that a satellite knot is fibered if and only if it has nonzero winding number and both its companion and pattern knots are fibered. In 1990, the third author of the present paper contacted the authors of Knots, informed them of the mistake, and provided a counterexample. The recent second edition of the now-classic textbook acknowledged the error and reproduced the example. However, the necessary and sufficient conditions that it provided are not the most convenient in practice.
+The present paper is an expanded version of an unpublished note that the third author wrote in 1991. Its algebraic necessary and sufficient conditions for a satellite knot to fiber, do not appear to be well known. (It is briefly mentioned on pages 221–222 of {{cite:0949a808-2cb2-4553-a7a6-a48429a6bd4c}}.)
+Theorem 4.2 of the monograph {{cite:515277b6-82af-42bd-9eb6-5ff634983e17}} by D. Eisenbud and W. Neumann gives topological necessary and sufficient conditions for a satellite knot in a homology 3-sphere to fiber. Stated in terms of “splice components" arising from the Jaco-Shalen Johannson splitting theorem, it requires that each component be fibered and that the fibers meet each other compatibly.
+An alternative, topological condition presented here (see Theorem REF ) is more convenient in many situations. It was discovered by the first author, who proved it using D. Gabai's sutured manifold theory. An elementary group theoretic proof was subsequently found by the second author.
+We work throughout in the smooth category. As usual, a knot is an embedded circle in the 3-sphere FORMULA . It is trivial if it is the boundary of an embedded disk in FORMULA .
+More generally, a link is a union of finitely many pairwise disjoint knots. When each component is provided with a direction, the link is said to be oriented.
+The complement of an open tubular neighborhood of a knot or link FORMULA  is called its exterior, and it is denoted by FORMULA . Its boundary FORMULA  can be identified with FORMULA . A knot FORMULA  is fibered if the projection FORMULA  extends to a fibration of FORMULA . In such a case, FORMULA  is the total space of a fiber bundle over the circle FORMULA . By theorems of L. Neuwirth {{cite:f442d4c4-473d-46e6-a31f-daca5b293f22}} and J. Stallings {{cite:ff59c350-b840-41a3-8fad-d270e8f9b79b}}, FORMULA  is fibered if and only if the commutator subgroup FORMULA  of the knot group FORMULA  is finitely generated and hence free.
+The commutator subgroup is the kernel of the abelianization homomorphism
+FORMULA  sending the class of an oriented meridian of FORMULA  to 1.
+
+Fibering criterion.
+Satellite knots were introduced by H. Schubert {{cite:5b55649e-305a-448f-9663-96d1b86080e1}} as a generalization of knot product. We briefly review their definition and some key properties. Let FORMULA  be a knot embedded in a standard solid torus FORMULA . Assume that FORMULA  is not isotopic to FORMULA  nor is it contained in any 3-ball of FORMULA . Let FORMULA  be a homeomorphism from FORMULA  onto a closed tubular neighborhood of a nontrivial knot FORMULA , mapping a longitude of FORMULA  onto a longitude of FORMULA . (By a longitude of FORMULA , we mean a meridian of the complementary solid torus FORMULA .)
+The image FORMULA  is called a satellite knot with companion knot FORMULA  and pattern FORMULA . By a
+pattern knot we mean FORMULA  regarded in FORMULA .
+The winding number of FORMULA  in FORMULA  is the nonnegative integer FORMULA  such that the homomorphism FORMULA  induced by inclusion has image FORMULA .
+Two patterns FORMULA  and FORMULA  are regarded as the same if FORMULA  and FORMULA  are isotopic in FORMULA .
+We denote the various groups FORMULA  and FORMULA  by FORMULA  and FORMULA , respectively. By the Seifert-van Kampen theorem,
+FORMULA 
+the amalgamated free product of FORMULA  and FORMULA  with subgroups
+FORMULA  and FORMULA  identified via FORMULA .
+It is convenient to regard FORMULA  as the group of the 2-component link FORMULA , where FORMULA  is a meridian of FORMULA . Let FORMULA  be a longitude of FORMULA , and let FORMULA  denote its homotopy class in FORMULA . The quotient group FORMULA  is naturally isomorphic to FORMULA . We define FORMULA  to be the kernel of FORMULA , where FORMULA  and FORMULA  are the quotient and abelianization homomorphisms, respectively. When the winding number FORMULA  is nonzero, then the Reidemeister-Schreier method can be used to show that the commutator subgroup FORMULA  decomposes as an amalgamated free product:
+FORMULA 
+Here FORMULA  is the class of a meridian of FORMULA , while FORMULA  is the subgroup of FORMULA  generated by FORMULA . (For a proof, see Section 4.12 of {{cite:437d8c1d-d59a-4924-ad1a-b6cf8d3b51f1}}.)
+Let FORMULA  denote the complement of an open tubular neighborhood of FORMULA  in FORMULA . We say that the pattern FORMULA  is fibered if there exists a fibration FORMULA  inducing the homomorphism FORMULA  on fundamental groups. It is well known (and not difficult to see) that in this case, the winding number of FORMULA  in FORMULA  is nonzero. Moreover, FORMULA  is the fundamental group of the fiber, a compact surface with boundary, and hence FORMULA  is free.
+The following fibering criterion for satellite knots is implicit in the knot theory literature (e.g. {{cite:515277b6-82af-42bd-9eb6-5ff634983e17}}), but to our knowledge it has not previously appeared.
+Theorem 2.1 
+Let FORMULA  be a satellite knot with companion knot FORMULA  and pattern FORMULA .
+Then the following conditions are equivalent.
+
+   FORMULA  is fibered;
+
+   FORMULA  and FORMULA  are finitely generated;
+
+   FORMULA  and FORMULA  are fibered.
+
+
+Proof. Suppose that FORMULA  is fibered. The winding number FORMULA  of FORMULA  in FORMULA  must be nonzero. For otherwise, FORMULA , which is a subgroup of FORMULA  by equation REF , would be contained in the free commutator subgroup FORMULA  – an impossibility. Consequently, FORMULA  has the form
+described by equation REF . Since a free product of groups amalgamated over a finitely generated group is itself finitely generated if and only if each of its factors is (see Lemma 4.14 of {{cite:437d8c1d-d59a-4924-ad1a-b6cf8d3b51f1}}, for example), both FORMULA  and FORMULA  are finitely generated.
+If FORMULA  and FORMULA  are finitely generated, then Stallings's theorem {{cite:ff59c350-b840-41a3-8fad-d270e8f9b79b}} implies that FORMULA  and FORMULA  are fibered.
+Finally, if FORMULA  and FORMULA  are fibered, then FORMULA  and FORMULA  are isomorphic to fundamental groups of fibers for respective fibrations. Consequently, both groups are finitely generated. Equation REF  implies that the commutator subgroup FORMULA  is finitely generated. By Stallings's theorem {{cite:ff59c350-b840-41a3-8fad-d270e8f9b79b}}, the satellite knot FORMULA  is fibered.
+
+Pattern fibering criterion.
+Let FORMULA  be an oriented link. A meridian of any component acquires an orientation by the right-hand rule. The link is fibered if its exterior FORMULA  admits a fibration FORMULA . Such a fibration induces an epimorphism FORMULA , and as usual we require that the class of each meridian be sent to 1.
+The epimorphism FORMULA  is the abelianization of an epimorphism FORMULA . By {{cite:f442d4c4-473d-46e6-a31f-daca5b293f22}} and {{cite:ff59c350-b840-41a3-8fad-d270e8f9b79b}}, the link FORMULA  is fibered if and only if the kernel FORMULA  of FORMULA  is finitely generated. The group FORMULA  is known as the augmentation subgroup of the group of FORMULA .
+Remark 3.1  Orientation is not required in the definition of a fibered knot, since any knot is fibered if and only if the knot with reversed orientation is fibered. Similarly, an orientated link is fibered if and only if the link obtained by reversing the orientation of every component is fibered.
+However, reversing the orientation of some but not all components can destroy the condition of fiberedness. (A simple example is provided by the closure of the
+2-braid FORMULA .)
+
+Consider a pattern FORMULA  such that FORMULA  has nonzero winding number FORMULA . We associate an oriented 3-component link FORMULA , where FORMULA  and FORMULA  are disjoint meridians of FORMULA  with opposite orientations. The orientation of FORMULA  is arbitrary.
+Theorem 3.2  The pattern FORMULA  is fibered if and only if FORMULA  is a fibered link.
+
+Proof. As in section 2, let FORMULA  be the group of the 2-component link FORMULA , and let FORMULA  be the kernel of the epimorphism FORMULA  mapping the class of a meridian of FORMULA  to 1 and FORMULA , the class of a meridian of FORMULA , to 0.
+It suffices to show that the augmentation subgroup FORMULA  of the link FORMULA  is the free product of FORMULA  and a finitely generated group (in fact, a free group of rank FORMULA , the winding number of FORMULA  in FORMULA ). Since the free product of two groups is finitely generated if and only if each of its factors is finitely generated, it will then follow that FORMULA  is finitely generated if and only if FORMULA  is. Equivalently, the pattern FORMULA  is fibered if and only if the link FORMULA  is fibered.
+Part of a diagram FORMULA  for FORMULA  appears in
+Fig. REF  (a) with families of generators indicated. There are FORMULA  strands of FORMULA  passing
+the meridional disk bounded by the unknotted circle representing FORMULA .
+Assign a weight FORMULA  of 1 or 0 to each arc of FORMULA  according to whether the arc belongs to FORMULA  or FORMULA , respectively.
+The Wirtinger algorithm combined with the Reidemeister-Schreier method enables us to write a presentation for FORMULA . Each arc represents an infinite family FORMULA  FORMULA  of generators, indexed by FORMULA . The letters FORMULA  correspond to arcs of FORMULA , with one arc labeled only with the identity element; the remaining letters correspond to arcs of FORMULA .
+Relators, which come in families indexed by FORMULA , correspond to the crossings of FORMULA , and have the form
+FORMULA , where FORMULA  and FORMULA  are the weights of the arcs corresponding to FORMULA  and FORMULA , respectively. We use relators FORMULA  (indicated in the figure by boxed numbers) to eliminate FORMULA .
+Recall that in a link diagram, any one Wirtinger relator is a consequence of the others. Consequently, any single relator family is a consequence of the others. We regard FORMULA  as a redundant family of relators.
+The relator families arising from the remaining crossings in the figure have the form FORMULA , where FORMULA  denotes inverse.
+Consider now the partial diagram FORMULA  for FORMULA  that appears in Fig. REF  (b),
+again with families of generators indicated. Letters FORMULA  correspond to arcs of FORMULA  while FORMULA  and FORMULA  correspond to arcs of FORMULA  and FORMULA , respectively.
+The parts of FORMULA  and FORMULA  not shown are identical.
+FIGURE 
+Relator families FORMULA  (indicated in the figure by boxed numbers) are used to eliminate FORMULA . The relator family FORMULA  expresses FORMULA  in terms of FORMULA ; it also expresses FORMULA  in terms of FORMULA .
+The top front relator families are used to eliminate FORMULA .
+Relator families FORMULA  are used to eliminate FORMULA . The relator family FORMULA  is regarded as redundant.
+The bottom front relator families are of the form
+FORMULA .
+Introduce a new generator family FORMULA  and defining relators
+FORMULA . Rewrite the relators as FORMULA , and use them to eliminate FORMULA .
+Relator family FORMULA  can be used to eliminate FORMULA  for FORMULA , writing them in terms of FORMULA . None of the remaining relators contain FORMULA , and so these generate a free factor FORMULA  of rank FORMULA .
+The other generators and remaining relators are identical with those of the presentation obtained for FORMULA . Hence FORMULA  is isomorphic to the free product FORMULA .
+
+Examples.
+We give examples to demonstrate the applicability
+of Theorem REF .
+We show that the knot FORMULA  (with braid index 4)
+gives two 4-braided fibered patterns and
+infinitely many mutually non-conjugate 4-braided
+non-fibered patterns.
+Let FORMULA  denote the 4-braid
+FORMULA , where FORMULA . Let
+FORMULA  be its closure along an axis FORMULA .
+Each FORMULA  is (the mirror
+image of) the knot FORMULA .
+Let FORMULA  denote a closed tubular neighborhood of FORMULA  that is disjoint from FORMULA . Then FORMULA  is a solid torus, and FORMULA  is a pattern of FORMULA .
+Proposition 4.1  With FORMULA  defined as above:
+
+   The pattern FORMULA  is not fibered for any FORMULA ;
+
+   Patterns FORMULA  and FORMULA  are fibered.
+
+
+Remark 4.2 Since FORMULA  is a homogeneous braid, J. Stallings {{cite:1df8dd2c-a6b4-4a00-b055-b1daa04ce97b}} and L. Rudolph {{cite:a8dc2099-9f9f-4832-a1cf-e5ebb116308d}} claim that FORMULA  is a fibered pattern. However, for completeness we include a proof for this case.
+Then encircled closures of FORMULA  and FORMULA  are links with distinct 1-variable Alexander polynomials, and hence the braids are non-conjugate.
+The braids FORMULA , FORMULA , will be seen to be mutually non-conjugate as a consequence of the fact that the genera of the 3-component links
+consisting the closed braids and two copies of axes with
+opposite orientations are distinct. Consequently, the patterns
+FORMULA  are seen to be pairwise distinct.
+
+Proof. For any FORMULA , let FORMULA  denote the 3-component link consisting
+of FORMULA  and FORMULA , two copies of FORMULA 
+with opposite orientations. We will construct a minimal genus Seifert surface
+for FORMULA , and show that it is not a fiber surface unless FORMULA . We use sutured manifold theory. (For basic facts about sutured manifolds,
+see {{cite:2a5eac02-eaef-4163-aaa1-f5e22de5ade5}} and {{cite:dcc3e152-17be-4ad4-9c6d-97bf6d4e96b8}}.)
+Consider the Seifert surface FORMULA  for
+FORMULA  as in Figure REF  (a), obtained by
+smoothing the ribbon intersections of the Seifert surface
+for FORMULA  and the annulus spanned by FORMULA .
+Recall that if a Seifert surface has minimal genus or is a fiber, then it remains so after plumbing or deplumbing of Hopf bands.
+Let FORMULA  be the surface
+as in Figure REF  (b), obtained
+from FORMULA  by deplumbing Hopf bands.
+FIGURE 
+Consider the sutured manifold FORMULA ,
+where FORMULA  is an interval.
+Apply a FORMULA -procut decomposition at each `ribbon hole' to obtain the sutured manifold as in Figure
+REF  (a).
+The `annulus part' of FORMULA  gives rise to the four
+1-handles. We can slide each of them
+as in Figure REF  (b)
+and then remove them by FORMULA -product decompositions.
+FIGURE 
+We now have a sutured manifold which is a 3-ball with
+a single suture. By {{cite:2a5eac02-eaef-4163-aaa1-f5e22de5ade5}}, FORMULA  is a fiber
+surface (of genus 5) and hence FORMULA  is fibered.
+By Theorem REF ,
+FORMULA  is a fibered pattern.
+Assume that FORMULA .
+Let FORMULA  be a Seifert surface for FORMULA 
+(not of minimal genus) as in Figure REF .
+FIGURE 
+By superimposing an annulus spanned by FORMULA 
+and smoothing the ribbon intersections as before,
+we obtain a Seifert surface FORMULA  (of genus FORMULA  if FORMULA ) for FORMULA .
+Recall that for any fibered link FORMULA , fiber surfaces are
+unique Seifert surfaces of minimal genus.
+Therefore, to show that FORMULA  is not a fibered link,
+it suffices to show that FORMULA  is not a fiber surface
+but that it has minimal genus.
+Without loss of generality,
+we can remove some of parallel half-twisted bands by
+deplumbing Hopf bands so that the remaining ones are
+as in Figure REF  (a).
+Then we slide a band as in Figure
+REF  (b) and remove
+the band marked FORMULA  by another Hopf deplumbing.
+FIGURE 
+Obtain a sutured manifold by thickening the resulting
+Seifert surface and apply FORMULA -product decompositions
+at each cite of a ribbon singularity. The sutured manifold
+appears in Figure REF  (a).
+As before, we can remove three 1-handles
+marked FORMULA  by FORMULA -product decompositions.
+Then applying another FORMULA -product decomposition
+along the shaded disk (where the dots indicate
+the intersections with the sutures),
+we obtain a sutured manifold as in Figure
+REF  (b).
+FIGURE 
+A final FORMULA -product decomposition yields
+a sutured manifold FORMULA .
+Since it is a solid torus with
+four meridional sutures (Figure REF  (c)),
+its complement
+is not a product sutured manifold.
+By {{cite:2a5eac02-eaef-4163-aaa1-f5e22de5ade5}}, FORMULA  is not a fiber surface.
+However, we can apply a disk decomposition
+to FORMULA  so that the result is a 3-ball
+with a single suture, and hence by {{cite:dcc3e152-17be-4ad4-9c6d-97bf6d4e96b8}},
+FORMULA  is a minimal
+genus Seifert surface. Therefore, FORMULA  is not
+a fibered link.
+By Theorem REF ,
+we conclude that FORMULA 
+is not fibered for any FORMULA .
+In the remaining case FORMULA , a sequence of
+FORMULA - product decompositions as above produces
+a solid torus with two meridional sutures. Consequently,
+FORMULA  is a fiber for FORMULA .
+
+Fibered patterns of the unknot.
+We will denote by FORMULA  the collection of all fibered patterns FORMULA  such that FORMULA  is a trivial knot with winding number FORMULA  in FORMULA . The following theorem classifies the members of FORMULA .
+Theorem 5.1  Let FORMULA  be a pattern such that FORMULA  is the trivial knot with winding number in FORMULA  equal to FORMULA . Then FORMULA  is fibered if and only if the meridian FORMULA  of FORMULA  is the closure of an FORMULA -braid FORMULA  with axis FORMULA . The mapping FORMULA  is a bijection between FORMULA  and the set of conjugacy classes of the FORMULA -braid group FORMULA .
+
+For the definition and elementary properties of FORMULA -braids, the reader is referred to {{cite:cf578f7a-f87e-4f79-a0d2-a1c476dbcb43}}.
+Proof. We use notation established in section 2. Assume that FORMULA  is a member of FORMULA . Then there exists a fibration FORMULA  inducing the homomorphism FORMULA  on fundamental groups. Let FORMULA  be a fiber FORMULA . Since FORMULA  restricts to a fibration of
+FORMULA , it follows that FORMULA  consists of a longitude of FORMULA  together with longitudes FORMULA  of FORMULA . We can extend FORMULA  to a fibration FORMULA  such that FORMULA  is the “capped off" fiber FORMULA , since FORMULA  is unknotted. Assume now that FORMULA  is a trivial knot. Then FORMULA  must be a disk. Moreover, FORMULA  is isotopic in FORMULA  to a standardly embedded solid torus FORMULA . Since FORMULA  intersects each FORMULA  in exactly FORMULA  points, FORMULA  is the closure of an FORMULA -braid FORMULA  with axis FORMULA . The particular embedding of FORMULA  in FORMULA  that we obtain in this way is independent up to isotopy of the choices that we make. Hence by Theorem 1 of {{cite:2bead40d-b86e-421d-8efb-5a082aa62d9c}}, the conjugacy class of FORMULA  in the FORMULA -braid group is well defined.
+In order to prove that the mapping FORMULA  is a bijection, it suffices to produce the inverse mapping. The method that we use is essentially the reverse of the above, and it has been used elsewhere (cf. {{cite:2bead40d-b86e-421d-8efb-5a082aa62d9c}}). Assume that FORMULA  is an FORMULA -braid that closes to a trivial knot FORMULA . Denote the axis of FORMULA  by FORMULA . Let FORMULA  and FORMULA  be disjoint tubular neighborhoods in FORMULA  of FORMULA  and FORMULA , respectively, and consider the space FORMULA . Regarded as the exterior of the closed FORMULA -braid FORMULA  in the solid torus FORMULA , the space FORMULA  fibers over FORMULA ; the fiber is a disk with FORMULA  holes and boundary consisting of a meridian of FORMULA  together with FORMULA  meridians of FORMULA . On the other hand, FORMULA  can be viewed as the exterior of the trivial knot FORMULA  in the unknotted solid torus FORMULA . From this vantage, the boundary of the fiber consists of a longitude of FORMULA  together with FORMULA  longitudes of FORMULA , each also a meridian of FORMULA . It follows that the pattern FORMULA  is fibered. Notice that FORMULA  has winding number in FORMULA  equal to FORMULA . Also, FORMULA  depends only on the conjugacy class of FORMULA . Clearly, FORMULA  is the desired inverse mapping.
+If FORMULA  is the the closure of a 1-braid with unknotted axis FORMULA , then FORMULA  is a Hopf link. We obtain the following corollary. In effect, it asserts that there is no fibered satellite knot with unknotted pattern knot FORMULA  having winding number 1 in the solid torus FORMULA .
+Corollary 5.2  Let FORMULA  be a trivial knot embedded in an unknotted solid torus FORMULA  with winding number equal to 1. Then FORMULA  is fibered if and only if FORMULA .
+
+Remark 5.3 There exist nontrivial fibered patterns with winding number 1. Such an example FORMULA  can be constructed from the closure of the 3-braid FORMULA  in FORMULA  by adding a short band with a full twist between the
+1st and 2nd strings, away from the crossings.
+Here FORMULA  naturally spans a fiber surface FORMULA  consisting of a checkerboard-colorable surface together with a plumbed Hopf band. A fiber FORMULA  for the 3-component link of Theorem REF  is obtained by adding an annulus to FORMULA . By Theorem REF  and arguments similar to earlier ones, we see that FORMULA  is a fibered pattern.
+
+By reasoning similar to that of Corollary REF  we find that there exist only two fibered patterns FORMULA  such that FORMULA  is a trivial knot with winding number in FORMULA  equal to 2. These correspond to the conjugacy classes of the 2-braids FORMULA  and FORMULA .
+See Fig. REF .
+FIGURE 
+For FORMULA , there are only three fibered patterns, corresponding to the conjugacy classes of 3-braids FORMULA  and FORMULA  {{cite:77131df4-8781-4168-87e8-67947abc421f}}. (The braid FORMULA  does not appear in the list since it is conjugate to
+FORMULA  in FORMULA .)
+If FORMULA  is greater than 3, the situation is more complicated. We note that
+FORMULA  represent infinitely many pairwise non-conjugate 4-braids
+{{cite:2bead40d-b86e-421d-8efb-5a082aa62d9c}}. Axes FORMULA  of non-conjugate braids form distinct fibered patterns of the unknot by Theorem REF . Hence FORMULA  is infinite.
+Corollary 5.4 Any knot FORMULA  can be embedded in an unknotted solid torus FORMULA  with arbitrary winding number FORMULA  in such a way that no satellite knot with pattern FORMULA  is fibered.
+
+Proof. By Theorem REF  it suffices to prove that FORMULA  can be embedded in FORMULA  with arbitrary winding number FORMULA  such that FORMULA  is not fibered. We may assume that FORMULA  is positive (see remarks preceding Theorem REF ). We will prove the corollary assuming further that FORMULA  is the trivial knot. The general result will then follow by trying an arbitrary “local knot" in FORMULA  (that is, forming the knot product of FORMULA  and an arbitrary knot, and doing so within a 3-ball in FORMULA ), since a product of knots is fibered if and only if each of the factors is.
+For FORMULA , consider the oriented link FORMULA  depicted in Fig. REF  (a),
+consisting of two unknotted components FORMULA  and FORMULA .
+Let FORMULA  be a tubular neighborhood in FORMULA  of FORMULA  that is disjoint from FORMULA . Then FORMULA  is an unknotted solid torus FORMULA  containing the trivial knot FORMULA  with winding number FORMULA .
+(When FORMULA , the pattern FORMULA  is the configuration in Fig. REF  (b)
+(cf. {{cite:e622244a-d926-4644-94de-f35bf9f457eb}})). Assume that FORMULA  is fibered. By Theorem REF , the link FORMULA  can be isotoped in such a way that FORMULA  appears as the closure of an FORMULA -braid with axis FORMULA . Consequently, FORMULA  is the closure of an FORMULA -braid. A theorem of J. Franks and R.F. Williams {{cite:3d4cd24f-f956-4a67-9d5f-bc89621bcfd0}} (also proved by H.R. Morton) implies that the braid index of
+FORMULA  is at least
+FORMULA , where FORMULA  and FORMULA  are respectively the largest and smallest exponents of FORMULA  in the 2-variable Jones polynomial FORMULA  of FORMULA .
+An easy calculation reveals that FORMULA , where FORMULA  denotes the left-hand trefoil knot, and from this it is not difficult to verify that FORMULA , a contradiction. Hence FORMULA  is not fibered.
+FIGURE 
+Remark 5.5 The orientation of the components of FORMULA  is critical. If the orientation of just one component is reversed, then the braid index of FORMULA  becomes 3, for any nonzero FORMULA .
+

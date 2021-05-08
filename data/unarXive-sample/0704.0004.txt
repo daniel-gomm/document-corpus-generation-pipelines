@@ -1,0 +1,396 @@
+
+
+
+A Determinant of Stirling Cycle Numbers
+Counts Unlabeled Acyclic Single-Source Automata
+
+
+DAVID CALLAN
+Department of Statistics
+
+University of Wisconsin-Madison
+
+1300 University Ave
+
+Madison, WI  53706-1532
+callan@stat.wisc.edu
+
+March 30, 2007
+We show that a determinant of Stirling
+cycle numbers counts unlabeled acyclic single-source automata. The
+proof involves a bijection from these automata to certain marked
+lattice paths and a sign-reversing involution to evaluate the determinant.
+
+1    Introduction  The chief purpose of this
+paper is to show bijectively that a determinant of Stirling cycle
+numbers counts unlabeled acyclic single-source automata.
+Specifically, let
+FORMULA  denote the FORMULA  matrix with
+FORMULA  entry FORMULA , where FORMULA  is the
+Stirling cycle
+number, the number of permutations on FORMULA  with FORMULA  cycles. For example,
+FORMULA 
+As evident in the example, FORMULA  is formed from FORMULA  copies of each of
+rows 2 through FORMULA  of the Stirling cycle triangle, arranged so that the first
+nonzero entry in each row is a 1 and, after the first row, this 1
+occurs just before the main diagonal; in other words, FORMULA  is a Hessenberg
+matrix with 1s on the infra-diagonal. We will show
+Main Theorem The determinant of FORMULA  is the number of unlabeled acyclic single-source automata
+with FORMULA  transient states on a FORMULA -letter input alphabet.
+
+Section 2 reviews basic terminology
+for automata and recurrence relations to count finite acyclic automata.
+Section 3 introduces
+column-marked subdiagonal paths, which play an intermediate role, and a
+way to code them. Section 4
+presents a bijection from these column-marked subdiagonal paths to
+unlabeled acyclic single-source automata. Finally, Section 5 evaluates
+FORMULA  using a sign-reversing involution and shows that the
+determinant counts the codes for column-marked subdiagonal paths.
+
+2    Automata 
+A (complete, deterministic) automaton consists of a set of states and
+an input alphabet whose letters transform the states among
+themselves: a letter and a state produce another state (possibly the
+same one). A finite automaton (finite set of states, finite input
+alphabet of, say, FORMULA  letters) can be represented as a FORMULA -regular
+directed multigraph with ordered edges: the vertices represent the
+states and the first, second, ...edge from a vertex give the
+effect of the first, second, ...alphabet letter on that state.
+A finite automaton cannot be acyclic in the usual sense of no cycles:
+pick a vertex and follow any path from it. This path must ultimately
+hit a previously encountered vertex, thereby creating a cycle. So the
+term acyclic is used in the looser sense that only one vertex, called
+the sink, is involved in cycles. This means that all edges from
+the sink loop back to itself (and may safely be omitted)
+and all other paths feed into the sink.
+A non-sink state is called transient. The size of an
+acyclic automaton is the number of transient states. An acyclic
+automaton of size FORMULA  thus has transient states which we label
+FORMULA  and a sink, labeled FORMULA . Liskovets
+{{cite:86ff6c39-0179-4f77-b48b-ea8e453f0eb5}} uses the inclusion-exclusion principle (more about
+this below) to obtain the following recurrence relation for the
+number FORMULA  of acyclic automata of size FORMULA  on a FORMULA -letter
+input alphabet (FORMULA ):
+FORMULA 
+A source is a vertex with no incoming edges. A finite acyclic
+automaton has at least one source because a path traversed backward
+FORMULA  must have
+distinct vertices and so cannot continue indefinitely. An automaton
+is single-source (or initially connected) if it has only one
+source. Let FORMULA  denote the set of single-source acyclic
+finite (SAF) automata on a FORMULA -letter input alphabet with vertices
+FORMULA  where 1 is the source and FORMULA  is the sink, and
+set FORMULA . The two-line representation of
+an automaton in FORMULA  is the FORMULA  matrix whose columns
+list the edges in order. For example,
+FORMULA 
+is in FORMULA  and the source-to-sink paths in FORMULA  include
+FORMULA , where
+the alphabet is FORMULA .
+Proposition 1 
+The number FORMULA  of SAF automata of size FORMULA  on a FORMULA -letter
+input alphabet FORMULA  is given by
+FORMULA 
+
+Remark   This formula is a bit more succinct than the the
+recurrence in {{cite:86ff6c39-0179-4f77-b48b-ea8e453f0eb5}}.
+Proof   Consider the set FORMULA  of acyclic automata with
+transient vertices FORMULA  in which 1 is a source.
+Call FORMULA  the interior vertices. For FORMULA , let
+FORMULA 
+Then FORMULA  and by
+Möbius inversion {{cite:0bd496f2-acd6-4d3a-a79a-7afeecacdb34}} on the lattice of subsets of
+FORMULA 
+where FORMULA  is the Möbius function for this lattice. Since
+FORMULA  if FORMULA , we have in
+particular that
+FORMULA 
+Let FORMULA  so that FORMULA . When FORMULA  consists
+entirely of sources, the vertices in FORMULA  and their
+incident edges form a subautomaton with FORMULA  transient states; there
+are FORMULA  such. Also, all edges from the FORMULA 
+vertices comprising FORMULA  go directly into FORMULA  choices. Thus FORMULA . By
+definition, FORMULA  is the number of automata in FORMULA  for which
+1 is the only source, that is, FORMULA  and the
+Proposition now follows from (REF ).  FORMULA
+An unlabeled SAF automaton is an equivalence class of SAF automata
+under relabeling of the interior vertices. Liskovets notes
+{{cite:86ff6c39-0179-4f77-b48b-ea8e453f0eb5}} (and we prove below) that FORMULA  has no
+nontrivial automorphisms, that is, each of the FORMULA  relabelings
+of the interior vertices of FORMULA  produces a different
+automaton. So unlabeled SAF automata of size FORMULA  on a FORMULA -letter
+alphabet are counted by
+FORMULA . The next result establishes a
+canonical representative in each relabeling class.
+Proposition 2 Each equivalence class in FORMULA  under relabeling of
+interior vertices has size FORMULA  and contains exactly one SAF
+automaton with the “last occurrences increasing” property: the last
+occurrences of the interior vertices—FORMULA —in the
+bottom row of its two-line representation occur in that order.
+
+Proof   The first assertion follows from the fact that the
+interior vertices of an automaton FORMULA  can be distinguished
+intrinsically, that is, independent of their labeling. To see this,
+first mark the source, namely 1, with a mark (new label) FORMULA  and
+observe that there exists at least one interior vertex whose only
+incoming edge(s) are from the source (the only currently marked vertex)
+for otherwise a cycle would be present. For each such interior vertex
+FORMULA , choose the last edge from the marked vertex to FORMULA  using the
+built-in ordering of these edges. This determines an order on these
+vertices; mark them in order FORMULA . If there
+still remain unmarked interior vertices, at least one of them has incoming
+edges only from a marked vertex or again a cycle would be present. For
+each such vertex, use the last incoming edge from a marked vertex,
+where now edges are arranged in order of initial vertex FORMULA  with
+the built-in order breaking ties, to order and mark these vertices
+FORMULA . Proceed similarly until all interior vertices
+are marked. For example, for
+FORMULA 
+FORMULA  and there is just one interior vertex, namely 4, whose only
+incoming edge is from the source, and so FORMULA  and 4 becomes a
+marked vertex. Now all incoming edges to both 3 and 5 are from marked
+vertices and the last such edges (built-in order comes into play) are
+FORMULA  and FORMULA  putting vertices 3, 5 in the
+order 5, 3. So FORMULA  and FORMULA . Finally, FORMULA .
+This proves the first assertion. By construction of the FORMULA s,
+relabeling each interior vertex FORMULA  with the subscript of its
+corresponding FORMULA  produces an automaton in FORMULA  with the
+“last occurrences increasing” property and is the only relabeling
+that does so. The example yields
+FORMULA 
+ FORMULA
+Now let FORMULA  denote the set of canonical SAF automata in
+FORMULA  representing unlabeled automata; thus FORMULA .
+Henceforth, we identify an unlabeled automaton with its canonical
+representative.
+
+3    Column-Marked Subdiagonal Paths 
+A subdiagonal FORMULA -path is a lattice path of steps
+FORMULA  and FORMULA , FORMULA  for east and FORMULA  for north, from FORMULA 
+to FORMULA  that never rise above the line FORMULA . Let
+FORMULA  denote the set of such paths.For FORMULA , it is clear
+that FORMULA  is nonempty only for FORMULA  and it is
+known (generalized ballot theorem) that
+FORMULA 
+A path FORMULA  in FORMULA  can be coded by the heights of its FORMULA  steps
+above the line FORMULA ; this gives a a sequence FORMULA 
+subject to the restrictions FORMULA 
+and FORMULA  for all FORMULA .
+A column-marked subdiagonal FORMULA -path is one in which,
+for each FORMULA , one of the lattice squares below the FORMULA th
+FORMULA  step and above the horizontal line FORMULA  is marked, say with a
+`FORMULA '.
+Let FORMULA  denote the set
+of such marked paths.
+(-4,-1.5)(4,5.5)
+(-4,1)(-2,1)(-2,2)(1,2)(1,3)(4,3)(4,4)
+(-4,1)(4,5)
+[linecolor=red,linestyle=dotted](-4,0)(4,0)
+[linecolor=red,linestyle=dotted](-2,1)(4,1)
+[linecolor=red,linestyle=dotted](1,2)(4,2)
+[linecolor=red,linestyle=dotted](-4,0)(-4,1)
+[linecolor=red,linestyle=dotted](-3,0)(-3,1)
+[linecolor=red,linestyle=dotted](-2,0)(-2,1)
+[linecolor=red,linestyle=dotted](-1,0)(-1,2)
+[linecolor=red,linestyle=dotted](0,0)(0,2)
+[linecolor=red,linestyle=dotted](1,0)(1,2)
+[linecolor=red,linestyle=dotted](2,0)(2,3)
+[linecolor=red,linestyle=dotted](3,0)(3,3)
+[linecolor=red,linestyle=dotted](4,0)(4,3)
+(-4,1)(-3,1)(-2,1)(-2,2)(-1,2)(0,2)(1,2)(1,3)(2,3)(3,3)(4,3)(4,4)
+(0,3)(2,4)(4,5)
+(-3.5,0.5) FORMULA
+(-2.5,0.5) FORMULA
+(-1.5,0.5) FORMULA
+(-0.5,1.5) FORMULA
+(0.5,0.5) FORMULA
+(1.5,2.5) FORMULA
+(2.5,0.5) FORMULA
+(3.5,1.5) FORMULA
+(-4.5,1.2)(0,0)
+(4.5,5.2)(8,4)
+(0,-0.3) FORMULA
+(-1,3.0) FORMULA
+(0,-1.3)A path in  FORMULA
+A marked path FORMULA  in FORMULA  can be coded by
+a sequence of pairs FORMULA  where
+FORMULA  is the code for the underlying path FORMULA  and
+FORMULA  gives the position of the FORMULA  in the FORMULA th column.
+The example is coded by
+FORMULA .
+An explicit sum for FORMULA 
+is
+FORMULA 
+because the summand FORMULA  is the number of ways
+to insert the `FORMULA 's in the underlying path coded by
+FORMULA .
+It is also possible to obtain a recurrence for
+FORMULA , and then, using Prop. REF , to
+show analytically that FORMULA .
+However, it is much more pleasant to give a bijection
+and in the next section we will do so.
+In particular, the number of SAF automata on
+a 2-letter alphabet is
+FORMULA 
+sequence
+A082161http://www.research.att.com:80/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=A082161
+in {{cite:04825523-d070-4b13-8b45-73c3c4ccd3c5}}.
+
+4    Bijection from Paths to Automata 
+In this section we exhibit a bijection from
+FORMULA  to
+FORMULA . Using the illustrated path as a working example
+with FORMULA  and FORMULA ,
+(-4,0)(4,5.5)
+(-4,1)(-2,1)(-2,2)(1,2)(1,3)(4,3)(4,4)(4,5)
+(-4,1)(4,5)
+[linecolor=red,linestyle=dotted](-4,0)(4,0)
+[linecolor=red,linestyle=dotted](-2,1)(4,1)
+[linecolor=red,linestyle=dotted](1,2)(4,2)
+[linecolor=red,linestyle=dotted](-4,0)(-4,1)
+[linecolor=red,linestyle=dotted](-3,0)(-3,1)
+[linecolor=red,linestyle=dotted](-2,0)(-2,1)
+[linecolor=red,linestyle=dotted](-1,0)(-1,2)
+[linecolor=red,linestyle=dotted](0,0)(0,2)
+[linecolor=red,linestyle=dotted](1,0)(1,2)
+[linecolor=red,linestyle=dotted](2,0)(2,3)
+[linecolor=red,linestyle=dotted](3,0)(3,3)
+[linecolor=red,linestyle=dotted](4,0)(4,3)
+(-4,1)(-3,1)(-2,1)(-2,2)(-1,2)(0,2)(1,2)(1,3)(2,3)(3,3)(4,3)(4,4)
+(0,3)(2,4)(4,5)
+(-3.5,0.5) FORMULA
+(-2.5,0.5) FORMULA
+(-1.5,0.5) FORMULA
+(-0.5,1.5) FORMULA
+(0.5,0.5) FORMULA
+(1.5,2.5) FORMULA
+(2.5,0.5) FORMULA
+(3.5,1.5) FORMULA
+(-4.5,1.2)(0,0)
+(4.5,5.2)(8,4)
+(0,-0.3) FORMULA
+(-1,3.0) FORMULA
+first construct the top row of a two-line representation consisting of
+FORMULA  each 1s, 2s,  ..., FORMULA  s and number them left to right:
+FORMULA 
+The last step in the path is necessarily an FORMULA  step. For the second
+last, third last,...FORMULA  steps in the path, count the number of
+steps following it. This gives a sequence FORMULA  satisfying FORMULA  and
+FORMULA  for all FORMULA . Circle the positions FORMULA  in the two-line representation and then insert (in
+boldface) FORMULA  in the second row in the circled positions:
+FORMULA 
+These will be the last occurrences of FORMULA  in the second row.
+Working from the last column in the path back to the first, fill in
+the blanks in the second row left to right as follows. Count the number of
+squares from the FORMULA  up to the path (including the FORMULA  square) and
+add this number to the nearest boldface number to the left of the
+current blank entry (if there are no boldface numbers to the left,
+add this number to 1) and insert the result in the current blank
+square. In the example the numbers of squares are 2,3,1,2,1,2,1,1
+yielding
+FORMULA 
+This will fill all blank entries except the last. Note that FORMULA  s in
+the bottom row correspond to sink (that is, FORMULA ) labels in the
+second row. Finally, insert FORMULA  into the last remaining blank space
+to give the image automaton:
+FORMULA 
+This process is fully reversible and the map is a bijection.  FORMULA
+
+5    Evaluation of det FORMULA   
+For simplicity, we treat the case FORMULA , leaving the generalization to
+arbitrary FORMULA  as a not-too-difficult exercise for the interested reader.
+Write FORMULA  for FORMULA .
+Thus FORMULA .
+From the definition of FORMULA  as a sum of signed products, we
+show that FORMULA  is
+the total weight of certain lists of permutations, each list
+carrying weight FORMULA . Then a weight-reversing involution cancels all FORMULA 
+weights and reduces the problem to counting the surviving lists. These
+surviving lists are essentially the codes for paths in
+FORMULA , and the Main Theorem
+follows from §4.
+To describe the permutations giving a nonzero contribution to FORMULA ,
+define the code of a permutation FORMULA  on FORMULA  to be the
+list FORMULA  with
+FORMULA . Since the FORMULA  entry of FORMULA , is 0 unless FORMULA , we must have
+FORMULA  for all FORMULA . It is well known
+that there are FORMULA  such permutations, corresponding to
+compositions of FORMULA , with codes characterized by the following four
+conditions: (i) FORMULA  for all FORMULA , (ii) FORMULA , (iii) each FORMULA  is
+immediately followed by FORMULA  zeros in the list, (iv)
+FORMULA . Let us call such a list a padded
+composition of FORMULA : deleting the zeros is a bijection to ordinary
+compositions of FORMULA . For example, FORMULA  is a padded composition of 6.
+For a permutation FORMULA  with padded composition code c, the
+nonzero entries in c give the cycle lengths of FORMULA . Hence
+sgn FORMULA , which is the parity of “FORMULA cycles in FORMULA ”, is
+given by FORMULA .
+We have FORMULA , and so
+FORMULA 
+where the sum is restricted to padded compositions c of FORMULA  with
+FORMULA  for all FORMULA 
+(A002083http://www.research.att.com:80/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=A002083)
+because FORMULA  unless FORMULA .
+Henceforth, let us write all permutations in standard cycle form
+whereby the smallest entry occurs first in each cycle and these
+smallest entries increase left to right. Thus, with dashes
+separating cycles, 154-2-36 is the standard cycle form of the
+permutation FORMULA . We define a nonfirst entry to be one that does not
+start a cycle. Thus the preceding permutation has 3 nonfirst entries:
+5,4,6. Note that the
+number of nonfirst entries is 0 only for the identity permutation. We
+denote an identity permutation (of any size) by FORMULA .
+By definition of Stirling cycle number, the product in (REF ) counts lists
+FORMULA  of permutations where FORMULA  is a
+permutation on FORMULA  with FORMULA  cycles, equivalently, with
+FORMULA  nonfirst entries.
+So define FORMULA  to be the set all lists of permutations
+FORMULA  where FORMULA  is a
+permutation on FORMULA , # nonfirst entries in FORMULA  is FORMULA ,
+FORMULA  is the transposition (1,2), each nonidentity permutation FORMULA 
+is immediately followed by FORMULA  FORMULA 's where
+FORMULA  is the number of nonfirst entries in FORMULA  (so the total
+number of nonfirst entries is FORMULA ). Assign a weight to FORMULA 
+by wtFORMULA .
+Then
+FORMULA 
+We now define a weight-reversing involution on (most of) FORMULA .
+Given FORMULA , scan the list of its component
+permutations FORMULA  left to right. Stop
+at the first one that either (i) has more than one nonfirst entry, or (ii)
+has only one nonfirst entry, FORMULA  say, and FORMULA  maximum nonfirst entry FORMULA  of the
+next permutation in the list. Say FORMULA  is the permutation where
+we stop.
+In case (i) decrement (i.e. decrease by 1) the number of FORMULA 's in the list by
+splitting FORMULA  into two nonidentity permutations as follows. Let
+FORMULA  be the largest nonfirst entry of FORMULA  and let FORMULA  be
+its predecessor. Replace FORMULA  and its successor in the
+list (necessarily an FORMULA ) by the following
+two permutations: first the transposition FORMULA  and second the
+permutation obtained from FORMULA  by erasing FORMULA  from its cycle and
+turning it into a singleton. Here are two examples of this case
+(recall permutations are in standard cycle form and, for clarity,
+singleton cycles are not shown).
+FORMULA 
+and
+FORMULA 
+The reader may readily check that this sends case (i) to case (ii).
+In case (ii), FORMULA  is a
+transposition FORMULA  with FORMULA  maximum nonfirst entry FORMULA  of
+FORMULA . In this case, increment the number of FORMULA 's in the list by
+combining FORMULA  and FORMULA  into a single permutation
+followed by an FORMULA : in FORMULA  is a singleton; delete this singleton and
+insert FORMULA  immediately after FORMULA  in FORMULA  (in the same cycle). The
+reader may check that this reverses the result in the two examples above
+and, in general, sends case (ii) to case (i). Since the map alters the
+number of FORMULA 's in the list by 1,
+it is clearly weight-reversing. The map fails only for lists
+that both consist entirely of transpositions
+and have the form
+FORMULA 
+Such lists have weight 1. Hence FORMULA  is the number of lists
+FORMULA  satisfying FORMULA  for FORMULA , and FORMULA .
+After subtracting 1 from each FORMULA , these lists code the paths
+in FORMULA  and, using §4,
+FORMULA .

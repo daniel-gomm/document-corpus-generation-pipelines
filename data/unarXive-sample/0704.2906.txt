@@ -1,0 +1,811 @@
+
+[Pulsar transient radio emission]Pulsar radiation belts and transient radio emission
+[Luo, et al]
+Qinghuan Luo and Don Melrose
+School of Physics, The University of Sydney, NSW 2006, Australia
+ — Received
+in original form February, 2007
+
+2006
+It is proposed that radiation belts similar to the ones in the planetary
+magnetosphere can exist for a pulsar with a relatively long period and a
+strong magnetic field. In the belts located in the closed
+field line region near the light cylinder relativistic pairs
+are trapped and maintained at a density substantially higher than the
+local Goldreich-Julian corotation density. The trapped plasma can be supplied
+and replenished by either direct injection of relativistic pairs from acceleration
+of externally-supplied particles in a dormant outer gap or in situ ionization
+of the accreted neutral material in the trapping region. The radiation belts can be disrupted by
+waves that are excited in the region as the result of plasma instabilities or emitted from the surface
+due to starquakes or stellar oscillations. The disruption can cause an intermittent
+particle precipitation toward the star producing radio bursts. It is suggested that
+such bursts may be seen as rotating radio transients (RRATs).
+pulsar – particle acceleration – radiation mechanism: nonthermal
+Introduction
+The recent discovery of a new class of
+radio transient sources, known as rotating radio transients (RRATS)
+{{cite:3ce1c8fc-1cbb-4656-9108-79e19cfa7ab6}}, suggests that radio transient phenomena may be
+quite common for typical pulsars. About 11 such sources have been detected so far;
+they are characterized by short outbursts of a typical from 2 to 30 millisecond duration
+with an average interval between two consective bursts from a few minutes
+to a few hours. Ten RRATs have their periodicities determined and three of them
+have their period derivatives identified. Observations appear to suggest that these objects
+are part of the normal pulsar population, with periods of a few seconds, within the period
+range of typical radio pulsars, and magnetic fields up to FORMULA ,
+close to a lower limit of the magnetic field of the known magnetars.
+No transient X-rays or optical counter part has been observed, though
+thermal X-ray emission was detected from one RRAT, which appears to
+be similar to X-ray dim isolated neutron stars
+(XDINS) {{cite:6267ed07-aa40-47bc-a0ed-7e33cb17945c}}, {{cite:08d8b5f8-9bd2-4067-b809-b256c5cd6b93}}.
+Three RRATs with both periods and period derivatives
+identified overlap with normal radio pulsars in the FORMULA -FORMULA  (pulsar
+period vs period derivative) distribution,
+which strongly suggests that RRATs may have similar properties to radio pulsars and should
+have normal radio emission as well. However, regular radio pulses have not been detected
+from any of these sources, suggesting that either (1) these radio bursts are distinct
+from the normal radio emission in aspects of emission geometry or processes or (2)
+normal radio pulses are too weak to be detectable {{cite:f54c6071-f204-4ff1-9ab7-3ca47d52ec26}}.
+For case (1), one could postulate, for example, that radio emission
+jumps between two alternative beaming direction, one of which intersects
+the Earth. For case (2), RRATs may be considered as extreme pulses and
+the `missing' normal radio pulses can be detected with a sufficiently
+long observing time {{cite:f54c6071-f204-4ff1-9ab7-3ca47d52ec26}}. {{cite:f54c6071-f204-4ff1-9ab7-3ca47d52ec26}}, {{cite:279c2f17-6cf0-41e5-a096-a2ba005cb231}} specifically
+considered PSR B0656+14, which is a nearby pulsar that has
+pulsed X-rays and intense bursty radio pulses similar to RRATs.
+They suggested that if this pulsar were at a distance
+similar to that RRATs, one would see the strong radio bursts as RRATs and its
+normal radio emission becomes nondetectable.
+If RRATs are indeed pulsars, one has a major difficulty in interpretation of
+the observed intense radio bursts on the basis of conventional polar cap models because
+most of RRATs have long periods and pair production is not effective.
+{{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}} proposed that the bursty emission by RRATs is due to
+circumpulsar asteroids randomly straying into the magnetosphere; the
+neutral material is evaporated and ionized, leading to a sudden downward flow of
+charged particles in the polar region, which in turn ignites a transient pair cascade toward
+the PC. The low-mass disk hypothesis has some observational support from the recent
+discovery of the fall-back disk of a magnetar, cf. {{cite:981e85fd-cc0d-4bf3-809a-3c3325819b8c}}. One main ingredient of
+the Cordes & Shannon's model is that a cascade is assumed to be due to acceleration in the outer
+gap. However, RRATs are in the regime in the FORMULA -FORMULA  distribution
+where the outer gap is inactive for pair production (through photon-photon
+collision) except for the case of a nearly orthogonal inclination angle where the
+outer gap may form close to the PC and pair production through a single photon decay
+in the magnetic field is important. In this latter case,
+the cascade has to be close to the PC and backward emission from the cascade
+may not be able to propagate freely through the intervening plasma near
+the star in the closed field line region (CFLR)
+where induced three-wave interactions are expected to be strong {{cite:6ff56464-7796-49f6-baec-66de9ccb5a18}}.
+In this paper, we propose that typical pulsars may have radiation belts
+in the CFLR where relativistic plasmas are trapped.
+The trapping regions bear many similarities to the Earth's radiation belts.
+For example, they are similarly subject to various low-frequency disturbances that disrupt
+the trapped plasma causing intense precipitation. While in the case of the Earth's van Allen belts,
+which are subject to disruption by geomagnetic storms due to the solar wind,
+the proposed main disturbances to the
+pulsar's radiation belts are low-frequency Alfvén waves generated from the star's surface as a
+result of stellar oscillations {{cite:e3418120-56cd-4c0c-bb32-6af30128b3ed}} or shear waves in the neutron star's crust
+due to starquakes {{cite:c5a5ae3f-30c0-4772-92e3-5e1ce6e2e255}}. It is suggested
+here that transient radio emission similar to RRATs can be generated as a result of
+catastrophic disruption of the trapping region and that the coherent emission is produced
+by particles precipitating toward the star.
+The density of the trapped plasma can be maintained at a much higher value
+than the local GJ density. In the trapping region the magnetic
+field is relatively weak and the synchrotron decay time is long so that the
+plasma can be replenished, leading to a build-up in the density.
+The major sources of the trapped plasma can be particle acceleration in a dormant
+outer gap or ablation and ionization of the accreted neutral matter.
+We assume that low-level accretion of neutral grains from a dust disk or from
+the ISM occurs and that the accreted matter is ionized inside the LC
+feeding charged particles directly to both the open field line region
+(OFLR) {{cite:ec987fc3-2a5e-4618-9f06-59b8014716ed}}, {{cite:ef13c7b4-5319-4199-933c-9fdca639fdf6}}, {{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}} and CFLR {{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}}. Note that there were
+also previous discussions on accretion of neutral material from the ISM and
+possible effects on radio emission by ionization of the neutral matter in
+the pulsar magnetosphere {{cite:eb16e2bb-eb34-48f2-8560-5336fe98a854}}, {{cite:608b4d50-afef-4bfa-bb89-dbb01ac1bfef}}. Charged particles created from
+destruction and ionization of neutral material in the CFLR can accumulate and
+be trapped in the region. Charged particles created in the OFLR can be
+accelerated in the outer gap and inject relativistic pairs into
+the trapping region. High-energy gamma rays emitted by
+the accelerated particles produce pairs in the trapping region
+on the thermal radiation emitted from the surface. The pair production rate
+is rather slow, but provided that it exceeds the loss rate,
+it can accumulate plasma near the LC in the CFLR.
+Note that reignition of a latent outer gap was discussed by {{cite:ef13c7b4-5319-4199-933c-9fdca639fdf6}}
+in the context of gamma-ray bursts. However, they considered nearly aligned rotators
+with a period much shorter than that considered here. In their model,
+injection of externally-supplied particles in the outer gap
+is assumed to lead to efficient pair creation, a case that does not apply
+to RRATs or magnetars.
+In Sec. 2, it is argued that plasma trapping regions
+similar to the Earth's radiation belts can exist in the CFLR of typical pulsars
+with a long period. Injection of charged particles to the trapping region
+due to latent particle acceleration in an outer gap or direct ionization of accreted
+neutral dust grains is discussed in Sec. 3 and 4.
+Sec. 5 discusses the stability of the pulsar radiation belts and possible
+mechanisms for particle precipitation. Application to RRATs is discussed
+in Sec. 6.
+
+Radiation belts
+It is argued here that radiation belts similar to that in planetary
+magnetospheres may exist in pulsar magnetospheres with relatively weak magnetic
+fields at the LC.
+Magnetic mirror
+Particles injected with nonzero perpendicular
+momenta can be trapped in the CFLR due to the magnetic mirror
+effect. For a particle with a perpendicular momentum FORMULA , the first
+adiabatic invariant can be expressed as FORMULA . In this section,
+we ignore the loss of perpendicular energy due to cyclotron decay, which can be important
+for pulsars and is considered in Sec. 2.2. From a quantum mechanical view point, this corresponds to
+a particle remaining in the same Landau level. The magnetic field in the CFLR
+forms a `magnetic bottle' and particles injected at a radial height FORMULA 
+(FORMULA  is the radius in unit of FORMULA )
+can be trapped at FORMULA  provided that their perpendicular momenta satisfy the condition:
+FORMULA 
+where FORMULA  with FORMULA  the parallel momentum.
+For example, particles injected with FORMULA  at the LC
+(FORMULA ) can be trapped; they bounce back and forth between two opposite hemispheres
+in the CLFR above FORMULA . The right-hand side can be written into the
+form FORMULA , where the angle FORMULA  defines a conal surface
+in the momentum space, referred to as the loss cone at FORMULA . Particles
+with a pitch angle smaller than FORMULA  (inside the cone) pass through the point FORMULA 
+and those with a pitch angle larger than FORMULA  (outside the cone) are reflected above FORMULA .
+For particles moving along the last closed field lines, the typical bounce
+time is (cf. Appendix)
+FORMULA 
+which is not sensitive to the particle's initial pitch angle FORMULA 
+at the injection but required to satisfy the condition
+FORMULA 
+i.e., the reflection radius must be above the stellar radius.
+Eq (REF ) is much smaller than the minimum loss-cone angle
+of the van Allen belts in the Earth's magnetosphere, which is a few degrees.
+However, it is shown in Sec 2.2 that the minimum loss-cone angle determmined
+by cylcotron decay can be much larger than (REF ).
+Since the dipole magnetic field is inhomogeneous, the guiding centers of trapped particles
+undergo both a gradient drift and curvature drift across the field lines {{cite:bc9b1f82-6c7a-4b24-84af-0bcb647db982}}.
+These drifts cause particles to circulate around the star forming a ring current,
+similar to the ring current in the Earth's radiation belts. The current gives
+rise to perturbations to the dipole field at FORMULA :
+FORMULA 
+where FORMULA  is the magnetic energy density at the LC, FORMULA ,
+FORMULA  is the half-opening angle of the PC,
+and FORMULA 
+is the GJ density at the PC where the magnetic field is assumed to be FORMULA .
+In practical situations where the plasma density can be much higher than the GJ density (Sec 3),
+the perturbations can exceed the estimate given by (REF ).
+Since the ring current can vary temporally as a result of instabilities in the trapped plasma
+(cf. Sec 5), FORMULA  should be time dependent. The effect of such perturbations on
+pulsar electrodynamics and their possible contribution to
+pulsar timing noise will be discussed elsewhere.
+
+The loss-cone angle
+The lifetime of trapped particles is limited by cyclotron decay and
+pitch-angle scattering, both of which violate the first invariant. The electron's
+synchrotron cooling time, i.e., the time that it loses half of its energy
+(FORMULA ), is FORMULA  with
+FORMULA 
+where FORMULA  is the classical radius of the electron
+and FORMULA  is the electron cyclotron frequency. Figure REF  shows
+a pulsar distribution on FORMULA -FORMULA  with the time (REF ) indicated.
+Six examples where FORMULA  is calculated are listed in Table 1. For fast rotating young pulsars
+or millisecond pulsars, (REF ) is very short FORMULA ,
+and for typical pulsars it can be quite long FORMULA .
+Since in the synchrotron regime, the pitch angle remains constant,
+the relevant time that constrains particle trapping is
+the cooling time in the limit FORMULA ,
+FORMULA  {{cite:7daaae32-43e3-4040-ae84-b0da817d5dba}},
+where FORMULA  and FORMULA  are the perpendicular and
+parallel components of the particle's dimensionless initial momentum. This gives
+FORMULA , which has the following numerical form
+FORMULA 
+One has FORMULA  if a particle is injected into the trapping
+region with a large initial pitch angle FORMULA .
+However, one has a much shorter cooling time if the initial pitch angle is small FORMULA .
+In the cyclotron regime, the particle radiates at a much slower
+rate, relaxing to the ground Landau state on a time
+FORMULA .
+Equating the cyclotron decay time to the bounce time, one finds the
+minimum pitch angle for a particle to be reflected at the mirror point.
+This angle is estimated to be
+FORMULA 
+For particles to remain trapped for time much longer than FORMULA , the pitch
+angle at injection needs to be much larger than (REF ).
+FIGURE 
+Pitch angle scattering by waves can lead to particle diffusion to small pitch angles
+and limit the life time of the trapped particles.
+Since the decay time decreases rapidly with decreasing altitude according to
+FORMULA , particles scattered to small pitch angles can reach low altitudes
+rapidly radiating away their perpendicular energy and eventually reach the star.
+For example, particles with FORMULA , which are scattered into the loss cone of
+FORMULA , can travel down to an altitude FORMULA  where the decay time is only
+FORMULA . The sources of the waves can be internal,
+i.e., they are generated in situ through plasma instabilities,
+or external, i.e., they are generated outside the region.
+Since particles with small pitch angles escape through both
+ends of the `magnetic bottle', there is an excess of particles with a
+large pitch angle; this gives rise to an ideal condition for instabilities to develop (driven by
+an inversion in the particle pitch angle distribution).
+Waves generated from instabilities can cause pitch angle diffusion,
+further enhancing particle precipitation. In principle, this process can
+impose an upper limit to the density of the trapped plasma {{cite:cb74501a-a21d-481a-af70-1c92bfe2acf3}}.
+However, since the efficiency of pitch-angle scattering depends explicitly on the
+wave intensity that in this case is limited to much smaller than the density of
+the particle kinetic energy, one needs a relatively high plasma density
+for such upper limit to be significant (cf. Sec 5). Alternatively,
+pitch-angle scattering can be significant if waves that propagate into
+the region can interact with the trapped particles in resonance. This possibility is
+discussed in Sec. 5.
+
+Sources for the trapped plasma
+Particle loading into the trapping region can be achieved through a process that
+is not constrained by the first adiabatic invariant.
+We consider two possible sources for the trapped
+plasma, both of which involve extrinsic charged particles: (1) pair production
+in the trapping region by high-energy gamma rays
+emitted by particles accelerated in an outer gap and
+(2) direct ionization of neutral material in the thermal radiation field in the CFLR.
+Both cases may involve ionization of neutral matter migrating into the magnetosphere
+due to accretion of a disk {{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}}, {{cite:ab41f4c1-ff02-460e-aa86-b34c9026e563}} or neutral dust grains in the ISM {{cite:ec987fc3-2a5e-4618-9f06-59b8014716ed}}.
+For (1), the outer gap, which is usually dormant for
+typical pulsars, is reignited with the supply of charged particles.
+Although the gap is rather inefficient for
+pair production, it can lead to a build-up of particles in
+the CFLR over a time much longer than the pulsar period (cf. Sec. 4).
+For (2), charged particles from the ionization
+can be accelerated through either inward (toward the star) cross-field diffusion
+or resonant wave-particle interactions, which is similar to
+the particle acceleration in the van Allen belts in the Earth's
+magnetosphere {{cite:78bae7e6-e651-4f4c-8d53-a5646303d3a0}}.
+In principle, high-energy cosmic rays can also inject pairs
+into the trapping region. (Note that cosmic rays contribute to trapped
+plasmas in the van Allen belts through decay of upward deflected neutrons
+produced by high-energy cosmic rays.) For example,
+cosmic protons with a gyroradius larger than FORMULA  can drift into the pulsar magnetosphere.
+For a typical pulsar, the proton needs to have a Lorentz factor FORMULA ,
+where FORMULA  is the proton cyclotron frequency at the LC and FORMULA .
+Ultrarelativistic protons produce pairs on the thermal radiation through
+FORMULA . However, it can be shown that such mechanism is not
+effective. Assuming a typical proton flux density
+similar to that received on the Earth, FORMULA  at
+FORMULA , one finds a pair injection rate
+about FORMULA . It would take
+much longer than the Hubble time to fill the magnetosphere
+to the GJ density.
+FIGURE 
+
+Dormant outer gap
+We show that a dormant outer gap can supply pairs to the trapping regions.
+It is generally thought an outer gap exists between the null surface
+and the boundary surface separating the OFLR and the CFLR
+{{cite:75e31b29-b91e-4d5b-86db-d91a86d978cd}}, {{cite:57d9f1ea-6388-4d39-aa78-efc3679659a9}}, {{cite:def79d73-2469-4b6e-b149-ac70ff2d467a}}, {{cite:32ba4039-7408-4b7a-9b17-8595b0e68aad}}, {{cite:1c7bce27-3493-4579-8a41-c29d883f29f3}}. For young, fast rotating pulsars, particle acceleration in
+the outer gap can self-sustain a pair cascade, which can transfer a significant fraction of the
+gap potential into the secondary particles kinetic energy, which is then radiated at high energies.
+As the pulsar period increases, the gap become less efficient in pair production
+and thus, for slow pulsars, pair production in the outer gap becomes negligible.
+However, provided that there is an external source of particles,
+the potential energy of such dormant gap can be tapped and transferred
+to plasma kinetic energy trapped in the CFLR.
+Acceleration in the outer gap
+The accelerating electric field along the field lines in an outer gap can be written as
+a fraction of the maximum potential drop FORMULA  across the PC:
+FORMULA 
+where FORMULA  is a parameter characterizing the geometry of the gap and
+FORMULA . Since pair production can change the gap geometry,
+the parameter FORMULA  is usually determined self-consistently by taking into
+account the effect on the accelerating potential by pair creation
+{{cite:1c7bce27-3493-4579-8a41-c29d883f29f3}}. As we consider
+here specifically slowly rotating pulsars, in contrast to rapidly
+rotating young pulsars such as the Crab pulsar, pair production
+has little effect on the gap electrodynamics and thus, one can treat
+FORMULA  as a constant.
+Assume that the outer gap is located along the last open field line starting
+from the null surface at a radius FORMULA  and consider acceleration
+of an electron toward the star. Possible extrinsic sources of charged particles are discussed
+in Sec. 3.3. When curvature radiation is the dominant energy loss process,
+an assumption used in the usual outer gap models {{cite:75e31b29-b91e-4d5b-86db-d91a86d978cd}}, {{cite:57d9f1ea-6388-4d39-aa78-efc3679659a9}},
+the radiation-reaction limited Lorentz factor is
+FORMULA 
+where FORMULA ,
+FORMULA , the curvature radius at FORMULA  is assumed to be
+FORMULA ,
+and FORMULA  is the classical radius of the electron.
+The characteristic energy (in FORMULA ) of curvature photons emitted by these electrons is
+FORMULA 
+where FORMULA , the approximation
+is obtained with FORMULA , and
+FORMULA  is the Compton wavelength divided
+by FORMULA . One may estimate the pulsar period range where the acceleration is limited
+by curvature radiation:
+FORMULA 
+The probability of a photon being converted to a pair through collision with
+thermal photons is tiny, and hence the bulk of curvature photons escape as a
+MeV gamma-ray flux with a luminosity
+FORMULA . For slowly rotating pulsars this flux may be too low to be detectable.
+For pulsars with rotation periods that do not satisfy (REF ),
+primary particles may lose energy principally through inverse Compton scattering (ICS)
+on thermal radiation from the star's surface. For a surface temperature
+FORMULA , the number density of thermal photons
+with a characteristic energy FORMULA  is
+FORMULA 
+where FORMULA .
+Since the thermal photons propagate radially, backward moving electrons
+undergo head-on scattering on these photons. In the electron rest frame,
+the thermal photon energy is FORMULA , implying that
+the scattering is in the Klein-Nishina (KN) regime. The energy loss rate is
+FORMULA 
+with FORMULA  the Thomson cross section.
+TABLE 
+
+Pair creation
+The only viable channel for pair creation far from the star's surface
+is through photon-photon collision. The primary photons can be
+produced from curvature radiation or ICS.
+First, consider pair production due to curvature radiation.
+The number of curvature photons with energy FORMULA  emitted
+by a primary electron over a distance FORMULA  is written as
+FORMULA 
+where FORMULA  is the thickness (in units of FORMULA ) of the shell region,
+FORMULA  is the fine constant and FORMULA  is the modified Bessel function.
+The number of curvature photons emitted decreases rapidly with increasing FORMULA .
+One has FORMULA  for FORMULA  and
+FORMULA  for FORMULA  and FORMULA  for
+FORMULA , with FORMULA ,
+FORMULA , and FORMULA . The number of pairs per electron produced
+near the LC, i.e., the multiplicity denoted by FORMULA , is estimated
+as FORMULA  where
+FORMULA 
+is the cross section of pair production via photon-photon collision.
+Since pairs are produced on the Wien tail of the thermal spectrum,
+in stead of (REF ), the thermal photon number density is written as
+FORMULA ,
+where FORMULA 
+is the parameter characterizing the Wien tail (FORMULA )
+where thermal photons satisfy the pair production threshold,
+FORMULA 
+where FORMULA  is the angle between the pair-producing gamma-ray and thermal
+photon. One has FORMULA  for FORMULA , FORMULA  and
+the numbers given in (REF ).
+Assuming that (REF ) is satisfied, one obtains
+FORMULA 
+with FORMULA .
+The multiplicity increases rapidly with decreasing pulsar period.
+As examples, from Eq (REF ) one obtains
+FORMULA  for J1913+1333 with FORMULA  and
+FORMULA  for J1819FORMULA 1458 with FORMULA , where FORMULA 
+and FORMULA  is assumed.
+Pair production due to ICS becomes significant if the curvature photon energy
+is too low to satisfy the threshold condition (REF ).
+Since the scattered photon energy is FORMULA 
+in the KN regime, the production rate of the scattered photons with
+energy FORMULA  is FORMULA . The number of photons emitted through ICS over a distance
+FORMULA  is
+FORMULA 
+Similarly, one has FORMULA ,
+which takes the following numerical form
+FORMULA 
+Pair production is strongly dependent on the surface temperature but
+insensitive to the pulsar period.
+In the outer gap models, the primary particles are assumed to be created
+in a pair cascade in the gap {{cite:75e31b29-b91e-4d5b-86db-d91a86d978cd}}, {{cite:57d9f1ea-6388-4d39-aa78-efc3679659a9}} and the primary flux is limited to
+a value near the GJ flux. To allow a substantial energy transfer from primaries to pairs,
+as this is the case for high-energy pulsars, one must have the pair multiplicity in the vicinity of the
+gap to be at least one, i.e., FORMULA , with FORMULA  defining a deathline where the gap becomes inactive.
+For parameters appropriate for RRATs and magnetars, one has FORMULA  except for FORMULA .
+Thus, one can ignore the feedback effect by pair production on the accelerating
+electric field in the gap.
+
+Source of primary particles
+Low-level accretion of neutral grains from a dust disk or the ISM can provide
+extrinsic charged particles. The accreted neutral material can be ionized inside the
+pulsar magnetosphere by the thermal radiation from the star's surface and
+particles produced from ionization are then channeled to the outer gap
+or trapped in the CFLR. The maximum flux that can be tolerated
+in the gap is about the GJ flux FORMULA  with the gap location assumed to be
+along the last open field lines starting from the null surface at the radius
+FORMULA . It is unlikely that the supply of charged particles
+matches exactly the GJ flux and the acceleration may become oscillatory so that the
+net flux is maintained at about the GJ level.
+For the case of accretion of the ISM dust grains,
+the accretion rate is FORMULA , where FORMULA  is the gravitation constant,
+FORMULA  is the neutron star's mass,
+and FORMULA  is the pulsar velocity, FORMULA  is
+the ISM density. Dust grains of small size (FORMULA ) may not survive
+sputtering by protons when crossing the bow shock and those with size
+FORMULA  have a better chance to reach the LC {{cite:ec987fc3-2a5e-4618-9f06-59b8014716ed}}.
+Assuming that flux rate FORMULA  of electrons into the gap is FORMULA  of this flux rate,
+one estimates FORMULA . Here we assume
+FORMULA  and FORMULA .
+One finds this flux is considerably larger than the GJ flux FORMULA .
+The accelerating electric field changes sign if the
+flux exceeds the GJ flux {{cite:def79d73-2469-4b6e-b149-ac70ff2d467a}}.
+Although a divergent solution for FORMULA  is possible {{cite:def79d73-2469-4b6e-b149-ac70ff2d467a}}, here we
+assume that the maximum accelerating potential is limited by (REF )
+determined by the vacuum potential drop.
+For pulsars with FORMULA , the ISM grains may not survive
+disintegration {{cite:ec987fc3-2a5e-4618-9f06-59b8014716ed}} and in this case the disk is the main source of
+the accreted neutral matter. The disk model was discussed in detail
+by {{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}}. The recent discovery of a fall-back disk
+around a magnetar lends support for the existence of such disks
+around long-period pulsars.
+
+Particle loading in the CFLR
+Despite the slow rate of pair production, a significant number of
+particles can be accumulated in the CFLR over a time FORMULA .
+A schematic of pair injection by a latent outer gap is shown in Figure REF .
+One may estimate the time required for the plasma density to increase to the
+GJ density in the trapping region.
+Assume a particle flux in the gap is FORMULA .
+Acceleration of these particles can inject pairs into the CFLR at a rate
+FORMULA  with the gap's cross section area approximated by
+FORMULA  (where FORMULA ). A continuous injection of pairs can lead
+to build-up of the plasma density in the trapping region. The time
+for the density to reach the GJ density FORMULA  is
+FORMULA 
+We refer to (REF ) as the pair loading time.
+Numerical examples of FORMULA  are shown in table 1, where we assume
+FORMULA , FORMULA , and FORMULA . The surface
+temperature is assumed to be FORMULA  for J1913+1333,
+FORMULA  for J1819-1458 {{cite:6267ed07-aa40-47bc-a0ed-7e33cb17945c}} and
+FORMULA  for a magnetar. One has
+FORMULA  for these three pulsars. For J1317-5759, one finds
+FORMULA  for FORMULA , FORMULA  and
+FORMULA .
+Alternatively, the plasma can be injected near the star through
+photon decay in the magnetic field {{cite:b833e49d-fccf-476d-9b53-b70445c19e72}}. Such case was also considered
+by {{cite:8b47ea60-65f2-489d-b801-06f20f40aa69}} for
+the double pulsar system. In their model, they considered pitch angle increase
+due to absorption of the coherent radio waves from the other pulsar in
+the system.
+
+Injection through ionization
+Radiation belts can form directly through evaporation and
+ionization of neutral grains accreted from
+a disk or the ISM. One can show that the density of trapped plasmas
+can easily exceed the local GJ density with a slow accretion rate.
+For example, to accumulate a plasma with the GJ density over a time FORMULA ,
+a rate as low as FORMULA  would be sufficient.
+The trapped particles can be accelerated to relativistic energy through
+either cross field diffusion toward the star or interactions with
+waves near the cyclotron resonance. Both processes are believed to be responsible
+for particle acceleration in the Earth's van Allen belts where electrons are
+accelerated up to 10 MeV energy {{cite:78bae7e6-e651-4f4c-8d53-a5646303d3a0}}.
+In the cross field diffusion, extremely low-frequency disturbances (ELFWs)
+in resonance with the particle drift frequency (around the star)
+can force particles to diffusion across the field lines inward
+(toward the star) where the magnetic field increases. Conservation of both
+the first adiabatic invariant FORMULA  and the second adiabatic invariant
+FORMULA  (bouncing back and forth between two mirror points)
+implies an increase in both FORMULA  and FORMULA ;
+thus, FORMULA  increases as FORMULA  increases with decreasing
+FORMULA  (inward), that is, the particles are accelerated. For the Earth's radiation belts,
+ELFWs are generated due to the large scale spatial disturbances
+by the solar wind. In the pulsar case, the most plausible candidate for such low
+frequency waves is Alfvén waves (cf. Sec. 6).
+
+Stability of the trapped plasma
+The pulsar radiation belts have many similarities to planetary radiation belts.
+For example, in both cases the stability of the trapped plasma can be strongly
+affected by change of the global magnetic field structure, i.e. distortion of the
+`magnetic bottle', or strong pitch-angle scattering of particles on waves. For the Earth's van
+Allen belts, such activities are due to the disturbances from the solar wind,
+while activities in the pulsar radiation belts are powered by the rotational energy
+or magnetic energy. In magnetars, strong starquakes can lead to significant distortion of magnetic field lines,
+but such major events may not be common for normal pulsars.
+Here we only discuss low-level starquakes or neutron star oscillations (cf. Fig REF ), which
+can lead to pitch-angle scattering by Alfvén waves generated at the surface.
+Pitch-angle scattering
+A formal theory for diffusion of particles in momentum space is the quasilinear
+diffusion formalism in which the processes arising from a feedback from
+growth of linear waves are determined by diffusion coefficients. In momentum space, such diffusion can
+be separated into diffusion in pitch angle and in FORMULA . The general formalism is outlined in Appendix
+B. Here we consider specifically the pitch angle diffusion coefficient
+FORMULA  (cf. Appendix). Quasilinear diffusion occurs effectively through resonant
+wave-particle interactions. The most widely-discussed process in the context
+of cosmic ray confinement is the scattering due to cyclotron resonance
+FORMULA  with FORMULA  {{cite:5f75091d-20a6-4d71-b26c-31c65a78d415}}. In this case,
+the wave fluctuations can be regarded as predominantly magnetic and as the zeroth order
+approximation in the expansion on FORMULA , the process can
+be viewed as elastic scattering of particles by magnetic
+fluctuations, causing change of their motion direction.
+Since the frequency of waves generated from starquakes {{cite:c5a5ae3f-30c0-4772-92e3-5e1ce6e2e255}} or
+stellar oscillations {{cite:e3418120-56cd-4c0c-bb32-6af30128b3ed}} is low, about kHz as compared to
+the cyclotron frequency FORMULA , the cyclotron resonance condition is generally not satisfied
+except for the cases where these waves can cascade into high-frequency waves,
+e.g., through three-wave interactions. Here we only consider
+pitch-angle scattering due to the Cerenkov resonance.
+Unlike wave-particle interactions in the cyclotron resonance, the Cerenkov resonance
+only changes FORMULA  not FORMULA . In general, it leads to an increase
+in FORMULA , corresponding to a decreasing pitch angle FORMULA .
+There are two relevant low-frequency wave modes: the FORMULA  mode and
+the FORMULA , corresponding respectively to the fast mode
+and the Alfvén mode in the MHD.
+Pitch angle diffusion due to the fast mode waves in Cerenkov resonance was
+discussed by {{cite:37e27f15-33ac-4202-baa8-fa6436e84ca7}}. Since there is a nonzero FORMULA  along the mean magnetic field,
+fast particles in the Cerenkov resonance bounce back and forth between
+two successive magnetic compressions (acting as two magnetic mirrors) in the wave frame. On average,
+particles gain energy causing an increase in FORMULA . This process, also called
+transit-time damping, works for a low Alfvén speed FORMULA , a condition not satisfied for pulsars.
+So, instead we consider a low frequency FORMULA  mode, which we refer to as the Alfvén wave.
+In kinetic theory in the limit FORMULA , which is appropriate for pulsar
+magnetopheric plasmas, Alfvén waves have a nonzero FORMULA  along the magnetic field
+{{cite:97343a58-8e8e-41e7-a8aa-3cbf4402501e}}, {{cite:34f1d5c0-a9fb-4d02-83ab-3c1d02f60af1}} and particles can be accelerated through the
+Cerenkov resonance {{cite:69e42867-c0da-4890-98f9-cd512da3ca7e}}.
+The scattering time FORMULA  may be
+written in terms of the ratio of the magnetic energy density
+FORMULA  of the wave to the plasma kinetic
+energy density FORMULA  (Appendix)
+FORMULA 
+Considering a plasma consisting of electrons and positrons,
+for FORMULA , FORMULA , FORMULA  and FORMULA , one
+estimates FORMULA . One concludes that
+diffusion due to particles in Cerenkov resonance
+with a low frequency Alfvén wave can effectively
+transfer particles to small pitch angles.
+It is appropriate to comment here that growth or damping of Alfvén waves through
+the Cerenkov resonance is generally not effective because the parallel component of
+the wave polarization is rather small, FORMULA .
+Thus, quasilinear diffusion as a result of such linear wave growth is not significant, limited
+by FORMULA  (cf. Eq. REF ). This has been the main reason
+that such two-stage diffusion mechanism is not favored for the interpretation of cosmic-ray propagation, which,
+as inferred from observations, is subject to strong-pitch angle scattering in the
+ISM {{cite:5f75091d-20a6-4d71-b26c-31c65a78d415}}. However, such limit is not applicable in our case as Alfvén waves are
+assumed to be generated externally, not through the Cerenkov resonance, with magnetic
+energy density comparable with FORMULA ; thus, efficient diffusion occurs
+even for FORMULA .
+
+Precipitation
+Disturbances to the radiation belt can be catastrophic if the wave that propagates
+to the region is in the form of short bursts producing
+FORMULA  in the trapping region. As shown from
+(REF ), the scattering time can be as short as seconds.
+The requirement of FORMULA  is rather modest.
+For example, for FORMULA , one has
+FORMULA , giving
+a luminosity FORMULA  where FORMULA  is the pulse duration.
+As this luminosity is minuscule compared with transient emission in magnetars (typically
+FORMULA ), these waves are not significant in producing high-energy emission.
+Strong pitch angle diffusion channels most particles into the much smaller
+loss cone through which particles can reach a region close to the star
+where their synchrotron decay time is short. This can cause a sudden intense
+precipitation of particles on a time scale shorter than the pulsar period.
+One may estimate the required wave amplitude in terms of magnetic fluctuations
+as FORMULA ,
+implying low intensity quakes or oscillations would be sufficient for triggering
+disruption of the trapped plasma.
+If the triggering mechanism is starquakes, the reoccurrence time of such particle storms
+is essentially the reoccurrence time of the quakes. The physics of neutron star
+quakes or oscillations is not well understood. A possibility is
+that a strong toroidal field exists in the crust underneath the surface
+and its stress can be released as quakes transfering the magnetic energy to
+the magnetosphere in Alfvén waves {{cite:c5a5ae3f-30c0-4772-92e3-5e1ce6e2e255}}, {{cite:39199af1-85fb-4665-a62e-b1a41f04d94a}}. One expects that such starquakes are
+relatively more frequent for a high-field, young pulsar. If
+generation of low-intensity Alfvén waves is so frequent that
+the reoccurrence time is much shorter than the pulsar period, trapped plasmas do not
+have enough time to accumulate and radiation belts may not form. This may be the case
+for magnetars with active transient emission.
+FIGURE 
+
+Application to RRATs
+An important consequence of the formation of pulsar radiation belts is
+transient emission—radio bursts that can be produced as particles precipitate
+and such transient emission may be relevant to RRATs.
+Coherent emission
+RRATs are bright radio bursts with a flux density up to a few Jy at 1.4 GHz.
+As for normal radio pulses, the emission mechanism must be coherent.
+Since there is no widely accepted mechanism for the pulsar radio emission,
+it is expected that many uncertainties would remain in
+identifying the specific emission mechanism for the transient case. Nonetheless,
+in the following we consider two possibilities
+in particular: two-stream instability and cyclotron/synchrotron maser.
+Two-stream instability
+The two-stream instability has been discussed extensively
+as a possible mechanism for pulsar radio emission, but
+the growth rate is not sufficient for the instability to develop in the polar
+region, mainly because of the very high Lorentz factor of the primary particle
+beam {{cite:f6908fc7-7fef-46ac-a28e-1d1d63819e1e}}. It is shown here that the plasma conditions
+created during the particle precipitation is favorable for such an instability to
+occur.
+Two-stream instability can develop when particles traverse a corotating
+background plasma which is assumed to be stationary. Assuming the precipitating
+plasma density is FORMULA  times the local GJ density FORMULA  and the spread
+in the particle momentum distribution is ignored (this spread can
+reduce the growth rate, cf discussion below). Consider
+wave growth due to the Cerenkov resonance FORMULA .
+The characteristic frequency is determined by the denser plasma.
+For FORMULA , the characteristic frequency is the frequency
+FORMULA  of the stationary background, corotating plasma, with
+the backflowing plasma regarded as a weak beam satisfying
+the resonance condition. The growth rate is then estimated to be
+FORMULA 
+The growth rate reaches maximum at FORMULA  in the limit FORMULA .
+For FORMULA , the growth rate can be estimated in the rest frame of the
+backflowing plasma assuming that the corotating background plasma is a beam in Cerenkov resonance.
+One finds
+FORMULA 
+where FORMULA  is the characteristic frequency seen in the
+pulsar frame.
+Note that for two-stream instability in the polar cap model, the energetic particle
+beam is usually identified as those primary particles from the PC, with
+a Lorentz factor as high as FORMULA  and instability is strongly suppressed
+{{cite:122d9359-1402-4989-8f25-68972a95e028}}, {{cite:f6908fc7-7fef-46ac-a28e-1d1d63819e1e}}. In the model discussed here FORMULA  is about a few and
+the growth rate (REF ) or (REF ) can be quite fast.
+For FORMULA , FORMULA , (REF ) gives FORMULA .
+Although the growth rate can be reduced due to a spread in the
+particle momentum distribution, it seems that the instability can develop rapidly.
+It should be pointed out here that radio emission from two-stream instability is
+a two-stage process. The instability can generate Langmuir
+waves which can in turn be converted to electromagnetic waves and at the same time facilitate
+the particle precipitation.
+
+Cyclotron/synchrotron maser
+Since particles with small pitch angles escape through the loss cone,
+particle precipitation creates an inversion in the pitch angle distribution
+of the upward flowing particles, driving cyclotron maser {{cite:39d4c3fe-16cc-4c7e-9008-655dc3c3cffd}}, {{cite:6193ca97-f244-46d9-b6f9-9ef050767808}} or synchrotron maser
+{{cite:e040c2e0-5d01-4429-8a96-5406a3742487}}, {{cite:3e05f9c7-077e-4b1b-a816-b7cfc70c85d9}}, {{cite:1f84d99b-b2c1-4d74-a961-a1830d1c80a3}}. This mechanism was discussed widely in interpretation of
+planetary radio bursts {{cite:72abc34c-aa64-4eda-b9f7-f6f5763d6993}}, {{cite:8d3c263d-0b03-41eb-b244-403e6bb98672}} and solar bursts {{cite:39d4c3fe-16cc-4c7e-9008-655dc3c3cffd}}.
+Synchrotron maser is applicable in the relativistic regime
+FORMULA , while cyclotron maser may be the more relevant when such inversion occurs close to the star
+during the precipitation when their gyration is in the nonrelativistic regime.
+The relevant radio wave can grow when the frequency satisfies the cyclotron resonance condition.
+For cyclotron resonance at the fundmental harmonic FORMULA ,
+the growth rate is given by {{cite:39d4c3fe-16cc-4c7e-9008-655dc3c3cffd}}
+FORMULA 
+where FORMULA  is the number density of particles in cyclotron resonance,
+and FORMULA  is the velocity of particles in cyclotron resonance. For a typical
+pulsar with FORMULA  and FORMULA , this condition can be
+satisfied at a radius FORMULA . It is worth noting that the related but different
+process—cyclotron instability due to the anomalous doppler effect, which has been considered
+in the literature for pulsar radio emission {{cite:fe92c7bc-78c7-41a5-8d5f-16434024e974}}, is not applicable here; it requires
+an energetic beam (FORMULA ) of particles that satisfy the anomalous doppler condition.
+
+Beaming properties
+Bursts produced from particle precipitation are characterized by sharp spikes.
+In the case of two-stream instability, since emission arising from the instability
+is confined to a thin shell region in the CFLR near the last open field lines, one expects the beaming direction
+of the radio emission to be similar to that of reverse emission in the conventional
+polar cap models {{cite:1597895c-8cd3-4d5c-93f9-c2c6e9e75e58}}, {{cite:d0ffca38-62f0-4604-94b4-c49e0c543713}}. Consider a trapping region has
+a radial range from FORMULA  to FORMULA . The inward tangent angles at FORMULA  are
+respectively given by FORMULA  and FORMULA . One has a conal structure with an
+angular thickness as FORMULA  for FORMULA .
+For the emission to be in radio, the emission radius has to be FORMULA , giving
+FORMULA  for FORMULA . Thus, the model predicts a rather
+narrow burst profile. Since particle precipitation and subsequent burst emission
+can be highly localized and occurs over a large range of altitudes, such
+bursts can appear on a wide range of pulsar phase.
+For cyclotron maser, the beam width is FORMULA  {{cite:6193ca97-f244-46d9-b6f9-9ef050767808}};
+thus, the maser emission can produce narrow spiky profiles. Since cyclotron maser
+emission occurs near particle reflection, the emission is beamed at a large
+angle to the field lines. This beaming feature is very different from
+the usual relativistic beaming (FORMULA ) along the field lines.
+Such unsual beaming feature can be tested observationally
+if both bursts and weak emission (i.e., the usual pulsed emission)
+can be detected and relative phase between the two components can be determined.
+
+Propagation
+Propagation of radio emission in the CFLR is constrained by
+induced scattering by electrostatic waves excited by the radio emission
+itself {{cite:6ff56464-7796-49f6-baec-66de9ccb5a18}}. Assuming a brightness temperature FORMULA  and a beaming solid angle
+FORMULA , one may define a radius of an opaque sphere {{cite:6ff56464-7796-49f6-baec-66de9ccb5a18}},
+FORMULA 
+such that the wave with a frequency FORMULA  can only propagate outside the
+sphere FORMULA . Here we assume that the plasma density in the propagation
+path is the local GJ density.
+Although FORMULA  is not well constrained, the condition (REF )
+is quite robust. For an observed flux density FORMULA  and a pulsar distance FORMULA ,
+the brightness temperature times the beaming solid angle can be estimated from
+FORMULA 
+where FORMULA  is the distance between the scattering region and the emission region.
+In the case of inward emission due to two-stream instability,
+(REF ) gives a lower limit to the emission radius; for the
+emission to be potentially visible, the emission radius must be FORMULA 
+{{cite:6ff56464-7796-49f6-baec-66de9ccb5a18}}.
+
+Conclusions and discussion
+We consider possible existence of transient radiation belts in
+the magnetospheres of pulsars with low LC magnetic fields. It is suggested
+that particle acceleration in latent outer gaps can lead to creation of pairs with
+large pitch angles in the CFLRs near the LC where they are trapped due to the
+magnetic mirror effect. In the trapping regions where the magnetic fields are weak
+(FORMULA ), particles radiate away their perpendicular energy over a time
+much longer than a typical pulsar period.
+Thus, the plasma density can build up over a synchrotron cooling time, which is much longer than
+the pulsar period. Similar to the planetary radiation belts, pulsar radiation belts can be
+disrupted due to disturbances of waves propagating into the regions. Catastrophic
+disruption of these regions may lead to intense particle precipitation, which in turn
+generates radio bursts that can be seen as radio transients. The main triggering mechanism is
+scattering of trapped particles into a loss cone as a result of interactions with
+waves generated in plasma instabilities in the trapping regions or
+Alfvén waves emitted at the surface due to low-intensity starquakes or oscillations.
+The plasma that rushes through the background corotating plasma can produce bursts of coherent radio
+emission through streaming instability or cylcotron/synchrotron maser. Existence of such
+radiation belts, if observationally confirmed, would imply that some of the bursty phenomena
+of pulsar radio emission may be due to particle precipitation. In particular, we suggest
+that such transient radio emission may be seen as RRATs.
+A notable feature of our model, as applied to RRATs, is that in comparison with conventional polar cap models,
+the transient emission mechanism considered here is less constrained by the pair production
+efficiency; it predicts that pulsars below the `deathline' can
+still produce radio bursts. One of the major problems with polar cap models is the low
+efficiency of pair production. Most RRATs have long periods and for pulsars with such long periods,
+there is insufficient supply of pairs needed for coherent emission. Although an
+outer gap can supply additional pairs through acceleration of charged
+particles supplied externally {{cite:ec987fc3-2a5e-4618-9f06-59b8014716ed}}, {{cite:ef13c7b4-5319-4199-933c-9fdca639fdf6}}, {{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}}, the pair production
+efficiency is too low to produce a substantial downflow of pairs; the only possible
+location for reverse emission in the polar regions is near or in the polar gap
+where a downward pair cascade can occur; for example, externally-supplied
+particles flush the polar gap resulting in a downward transient pair cascade
+followed by quenching of the gap {{cite:61b6ce77-4887-4e5d-a6f1-02ae6ac903c1}}. However, such a scenario would predict
+an emission region very close to the star and any reverse emission
+may be eclipsed by either the star or a dense plasma near the surface.
+In our model, since particle precipitation occurs in the CFLR,
+it does not quench the polar gap, allowing
+the possibility of observing both burst and normal radio emission.
+In application to magnetars with active high-energy transient emission, one expects
+low-intensity quakes to occur much more frequently than in normal pulsars {{cite:39199af1-85fb-4665-a62e-b1a41f04d94a}}. Such frequent
+disruption may prevent a radiation belt forming in a magnetar magnetosphere, even though
+the synchrotron decay time is relatively long near the LC. This scenario seems to be supported
+by lack of any detection of RRAT-like radio bursts from the known magnetars.
+Although transient radio emission was recently detected from the magnetar
+XTE J1810FORMULA 197, polarization study suggests that the emission geometry
+resembles that of young pulsars {{cite:167c632a-e4e5-4a70-a941-2d96282e68c1}}.
+In principle, our model may also apply to old, long-period pulsars. The
+loading time FORMULA  can be significantly longer than the synchrotron decay time.
+The plasma trapping can be due to in situ ionization of the accreted neutral grains
+in the CFLR. Since the synchrotron decay time is long, for example, FORMULA 
+for PSR J2144FORMULA 3933 with FORMULA  and FORMULA , a nearby long-period pulsar,
+accumulation of plasma can occur over a long time (provided that the reoccurrence time
+of the triggering mechanism is also long). Since old pulsars are not energetic,
+the predicted radio luminosity is low. As it takes a long time to replenish the trapped plasma, such
+transient events can be rather infrequent but may still be detectable provided
+these pulsars are located relatively nearby.
+
+Acknowledgements
+We thank Kouichi Hirotani for helpful discussion.
+
+Bouncing time
+From the first adiabatic invariant FORMULA  and the energy conservation
+FORMULA , one has
+FORMULA 
+where the relevant quantities are functions of FORMULA .
+Assuming FORMULA , the time to travel
+from the injection radius FORMULA  to the reflection radius FORMULA  and back to FORMULA 
+can be written in terms of integration along the particle's path FORMULA :
+FORMULA 
+where we assume a particle follows the last closed field line of a dipole field and
+FORMULA  satisfies the condition FORMULA .
+The integration yields approximately FORMULA .
+One may assume without loss
+of generality FORMULA  to show that the bounce time (back and forth between two mirror points)
+is FORMULA . The bounce time is not sensitive to
+the pitch angle at the injection provided that the condition FORMULA  is
+satisfied; this condition requires the reflection radius to be larger
+than the stellar radius, FORMULA .
+
+Pitch-angle scattering
+We outline quasilinear theory for pitch-angle scattering. Let
+FORMULA  be a gyrophase-averaged distribution in the particle
+momentum space. In the quasilinear diffusion formalism one has
+FORMULA 
+where the diffusion coefficients are written in terms of the scattering
+probability FORMULA  and the wave occupation number FORMULA  {{cite:5f75091d-20a6-4d71-b26c-31c65a78d415}}:
+FORMULA 
+with FORMULA , FORMULA , and FORMULA . The scattering probability is
+FORMULA 
+FORMULA 
+with FORMULA  for positrons and FORMULA  for electrons,
+FORMULA  is the ratio of the electric to total wave energy density,
+FORMULA  and FORMULA .
+In the following we consider the small FORMULA  limit.
+The Bessel function has an approximation
+FORMULA  for FORMULA . This gives
+FORMULA  and FORMULA .
+The polarization of a low-frequency Alfvén wave can be written as
+FORMULA 
+where FORMULA 
+{{cite:97343a58-8e8e-41e7-a8aa-3cbf4402501e}}, {{cite:34f1d5c0-a9fb-4d02-83ab-3c1d02f60af1}}, and FORMULA  is the refractive index.
+It can easily be verified that FORMULA  for FORMULA .
+Assuming FORMULA  and FORMULA , one obtains
+FORMULA 
+The diffusion coefficient is
+FORMULA 
+where FORMULA ,
+FORMULA  is the magnetic energy density of
+the wave concerned, and FORMULA  is the
+density of the plasma kinetic energy. It should be emphasized here that the disffusion
+in pitch angle is caused by change in FORMULA  not FORMULA .

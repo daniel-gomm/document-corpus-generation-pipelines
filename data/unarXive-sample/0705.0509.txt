@@ -1,0 +1,407 @@
+
+Thermalized non-equilibrated matter and high temperature
+superconducting state in quantum many-body systems
+L. BenetInstituto de Ciencias Físicas,
+Univeridad Nacional Autónoma de México (UNAM)
+Apdo. Postal 48–3, 62251–Cuernavaca, Mor., MéxicoM. BienertInstituto de Ciencias Físicas,
+Univeridad Nacional Autónoma de México (UNAM)
+Apdo. Postal 48–3, 62251–Cuernavaca, Mor., MéxicoS.Yu. KunFacultad de Ciencias, Universidad del Estado de Morelos (UAEM)
+62209-Cuernavaca, Morelos, MexicoCentre for Nonlinear Physics, RSPhysSE,
+Australian National University
+Canberra ACT 0200, Australia
+2020/09/07 17:57:57
+A characteristic feature of thermalized non-equilibrated matter is
+that, in spite of energy relaxation–equilibration, a phase memory
+of the way the many-body system was excited remains. As an example,
+we analyze data on a strong forward peaking of thermal proton yield
+in the Bi(FORMULA ,p) photonuclear reaction. New analysis shows that
+the phase relaxation in highly-excited heavy nuclei can be 8 orders
+of magnitude or even much longer than the energy relaxation. We
+argue that thermalized non-equilibrated matter resembles a
+high temperature superconducting state in quantum many-body
+systems. We briefly present results on the time-dependent
+correlation function of the many-particle density fluctuations for
+such a superconducting state. It should be of interest to
+experimentally search for manifestations of thermalized
+non-equilibrated matter in many-body mesoscopic systems and
+nanostructures.
+ 
+Keywords: thermalized non-equilibrated matter; high temperature
+superconductivity
+thermalized non-equilibrated matter; high temperature
+superconductivity
+Introduction
+Consider a beam of photons or electrons directed on a many-electron
+quantum dot. Let the quantum dot be three dimensional with spherically
+symmetric or two dimensional with circularly symmetric confining
+potential. Upon the interaction of the incoming radiation with the
+electrons inside the dot and because of the inter-dot
+electron–electron interaction the total energy of the system
+eventually gets redistributed among many electrons: The quasi-bound
+many-electron quantum dot reaches a thermally equilibrated
+state. Then, after a certain period of time, due to the strong
+electron–electron interaction, a sufficient energy may be
+concentrated on a single electron for its escape from the dot. Such a
+thermal emission can also be viewed as an evaporation process usually
+described by the statistical reaction theory or phase space
+theory {{cite:0aa465db-8c45-4437-97e6-8018bd6db8cc}}.
+We ask the question: Do angular distributions for the thermal emission
+carry any information of the way the quantum dot was excited? Is there
+any memory about a direction of the beam of incoming radiation for the
+thermal emission? More specifically, are angular distributions of the
+thermal emission necessarily symmetric about 90FORMULA  in the center
+of mass system (c.m.) with respect to the direction of the incident
+beam? These questions have never been addressed
+experimentally. Indeed, in modern physics the notions
+“thermalization” and “energy equilibration” are considered to be
+equivalent to the notion “statistical equilibrium”. This equivalence
+seems so obvious that it has never been questioned for highly-excited
+quantum many-body systems.
+While for the above stated reasons the problem has never been
+addressed either theoretically or experimentally for mesoscopic
+systems, e.g. for many-electron quantum dots, it turns out that
+there are many well–documented nuclear data sets which reveal
+unexpected and counterintuitive forward peaking for a thermal emission
+from highly excited quantum many-body systems. Curiously, some of
+these data sets have been available for longer than 50 years. Yet, the
+fact that thermal emission from a compound nucleus can demonstrate a
+strong angular asymmetry around 90FORMULA  c.m. has never been
+recognized by nuclear physicists. Accordingly, the effect has been
+unknown to a wide physics community. As an illustration, we present an
+extended analysis of the data on a strong forward peaking of thermal
+proton yield in the Bi(FORMULA ,p) photonuclear reaction. The effect
+is described in terms of anomalously slow phase relaxation in
+highly-excited quantum many-body systems. This effect is of
+significant implications for multi-qubit (FORMULA ) quantum
+computers since it can extend the time for quantum computing far
+beyond the quantum chaos border {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}}, {{cite:15ad05ba-df2c-4354-9d68-cccba1ffcdd8}}. The effect of
+anomalously slow phase relaxation has also been revealed for heavy ion
+collisions {{cite:19a29d8d-7e71-48d3-a66f-dd3ee10c4443}}, {{cite:a523b4f6-3876-4b9d-b8f6-ace765d4c25c}}, {{cite:a2a7a46b-ec02-4e63-bfaf-052d0046ebbd}}, {{cite:e3fcc978-d5ca-4b55-afbd-a62272f5ccdb}}, {{cite:5fc6db0b-20eb-4a79-a4dc-fd2c5d724e12}}, {{cite:c13b511e-f291-4ca2-8d9a-be84444ceafd}}, {{cite:e490e5ee-c4ec-4856-8761-4eafa72566b9}}, {{cite:4c93b8f7-0eb6-4c73-b55b-0ab354bf9fcb}}, {{cite:603aff61-19c4-4b8f-8dde-f06fb0c95794}} and bimolecular chemical
+reactions {{cite:603aff61-19c4-4b8f-8dde-f06fb0c95794}}, {{cite:65d6526f-0bad-4459-9cb4-4b7d26495cdd}}. We find that the phase memory in
+highly-excited heavy nuclei can be 8 orders of magnitude or even much
+longer than the energy relaxation. We argue that a new form of matter
+- thermalized non-equilibrated matter, introduced by one of
+us {{cite:717b95f3-719f-4ffd-b845-2a2b02cdcddc}}, {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}, resembles a high temperature superconducting
+state in quantum many-body systems. It should be of interest to
+experimentally search for manifestations of thermalized
+non-equilibrated matter in many-body mesoscopic systems and
+nanostructures.
+In the Appendix, we briefly outline the results on time-dependent
+correlation function of the many-particle density fluctuations in such
+a high temperature superconducting state of the thermalized
+non-equilibrated matter.
+
+Experimental evidence for a formation of thermalized
+non-equilibrated matter in FORMULA (FORMULA ) photonuclear
+proton evaporation
+We analyze the proton yield of the Bi(FORMULA ,p) photonuclear
+reaction produced by 24 MeV bremsstrahlung. The properly scaled
+angle-integrated spectrum for the proton energy FORMULA  MeV has an exponential shape with a slope of
+0.55 MeV {{cite:15ad05ba-df2c-4354-9d68-cccba1ffcdd8}}. This is characteristic for the decay of
+thermalized compound nucleus with a “temperature” FORMULA  MeV of
+the residual nucleus. The average excitation energy of the compound
+nucleus can be evaluated as FORMULA  MeV, i.e. slightly
+above the center of the dipole giant resonance peak at
+13.5 MeV {{cite:adbe979c-95d4-41e8-87b5-71ba72e4baca}}. Then, the experimentally determined
+nuclear “temperature” is in a good agreement with the statistical
+model calculations {{cite:15ad05ba-df2c-4354-9d68-cccba1ffcdd8}}.
+In Fig. REF  we present experimental proton angular
+distributions from the Bi(FORMULA ,p) photonuclear reaction for
+FORMULA  MeV {{cite:17fd2cec-fbb2-429e-9851-2316556f863f}}. We observe that, in spite of
+complete energy relaxation in the thermalized compound nucleus, the
+angular distributions are strongly asymmetric about 90FORMULA , i.e., memory of the direction of the incident FORMULA -ray beam is
+clearly retained. Therefore, even though the compound nucleus is in a
+thermalized state, it is far from being fully equilibrated.
+FIGURE 
+
+Theoretical interpretation of the forward peaking of
+evaporating protons in the FORMULA (FORMULA )
+photonuclear reaction
+Clearly, a description of the decay of thermalized but yet
+non-equilibrated matter requires a major modification of conventional
+picture of compound nucleus (see e.g. Ref. {{cite:d55aea3d-5217-40af-b9ca-c9f769476a9a}})
+originally formulated by Bohr, Bethe, Weisskopf, Wigner, Dyson and
+others. The basic idea behind the conventional picture is that
+thermalization of the compound nucleus guarantees a complete loss of
+memory of initial phase relations. A modification of this conventional
+picture of the compound nucleus was proposed by one of us in
+Refs. {{cite:717b95f3-719f-4ffd-b845-2a2b02cdcddc}}, {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}. Unfortunately, there has been no other
+interpretations of an angular asymmetry around 90FORMULA  c.m. in
+evaporation processes. The key element in the description of the
+asymmetry of angular distributions around 90FORMULA  c.m. for
+evaporating particles is the total spin off-diagonal correlation
+between compound nucleus partial width amplitudes. Such correlation is
+neglected in a conventional picture of compound
+nucleus. Following {{cite:717b95f3-719f-4ffd-b845-2a2b02cdcddc}}, {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}, we have
+FORMULA 
+where the overlines denote ensemble averaging. Here, FORMULA 
+are the compound nucleus total spin values, FORMULA  are the
+resonance energies with FORMULA  being running indices, FORMULA  is average
+level spacing of the compound nucleus, and FORMULA  are the
+partial width amplitudes for the formation and decay of the compound
+nucleus. The FORMULA  indices specify the orbital momenta
+FORMULA , the channel spins
+FORMULA , and the microstates FORMULA  of
+the target and residual nucleus, respectively. Accordingly, FORMULA  denotes the ground state of the target, and FORMULA  specifies the microstates of the residual nucleus. The
+phase relaxation width FORMULA , introduced in
+Refs. {{cite:a5983921-0b94-4634-b4bb-7ead4a736abc}}, {{cite:717b95f3-719f-4ffd-b845-2a2b02cdcddc}}, {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}, determines a characteristic time,
+FORMULA , for the decay of the spin off-diagonal phase
+correlations. The above correlation between the partial width
+amplitudes leads to a correlation between fluctuating compound nucleus
+FORMULA -matrix elements carrying different total spin values,
+FORMULA 
+Here, FORMULA  is the compound nucleus decay width,
+FORMULA  are compound nucleus FORMULA -matrix elements with total
+spin FORMULA  and the brackets FORMULA  denote the energy FORMULA 
+averaging. For finite values of FORMULA , non-vanishing
+spin off-diagonal correlations in Eq. (2) reflect non-vanishing
+interference between resonance levels with different total spins upon
+energy averaging.
+For the correlation between FORMULA -matrix elements carrying the same
+total spin values and the same microstates FORMULA  and FORMULA , but different orbital momenta and/or
+channel spins, we have {{cite:717b95f3-719f-4ffd-b845-2a2b02cdcddc}}, {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}
+FORMULA 
+The above equation results from a strong correlation between
+the partial width amplitudes FORMULA  and
+FORMULA  with FORMULA  and FORMULA  but FORMULA , FORMULA ,
+FORMULA , FORMULA . Such a correlation is
+referred to {{cite:717b95f3-719f-4ffd-b845-2a2b02cdcddc}}, {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}} as the continuum correlation.
+For FORMULA , the spin off-diagonal correlations in
+Eq. (REF ) result in the angular distributions symmetric around
+90FORMULA  c.m., recovering the conventional Bohr picture of the
+compound nucleus. However, if FORMULA , i.e. the
+phase relaxation time FORMULA  is comparable or longer
+than the average life–time of the compound nucleus
+FORMULA , this allows us to describe a strong asymmetry of
+the angular distributions of the evaporating yield around 90FORMULA 
+c.m.
+We analyze the angular distribution of the thermal proton yield in
+Fig. 1 following Ref. {{cite:15ad05ba-df2c-4354-9d68-cccba1ffcdd8}}. Without repeating details we note
+that the shape of the angular distribution has been found to depend on
+the four parameters: FORMULA , FORMULA , FORMULA , and
+FORMULA . Here, FORMULA  are the entrance channel transmission
+coefficients for the formation of the compound nucleus with the total
+spins FORMULA  and FORMULA  due to the absorption of electric dipole and
+quadrupole radiation, accordingly. The exit channel transmission
+coefficients FORMULA  with FORMULA  being orbital
+momenta of the evaporated protons have been assumed to be independent
+of the compound nucleus spin FORMULA  and the spin of the residual
+nucleus {{cite:d55aea3d-5217-40af-b9ca-c9f769476a9a}}.
+From the best fit of the experimental angular distributions in Fig. 1
+we obtain: FORMULA , FORMULA , FORMULA  and FORMULA .
+The compound nucleus decay width FORMULA  for Bi with an
+excitation energy of 14 MeV can be estimated from the systematics in
+Fig. 7 of Ref. {{cite:0310e9d3-2fc7-4775-9bd9-969892d20c1e}}, which provides a good description of
+the experimentally determined FORMULA  for a wide range of mass
+numbers. From this estimation we obtain FORMULA  eV
+yielding FORMULA  eV. At the same time, the standard nuclear
+physics estimate for the spreading width of the Bi nucleus with the
+excitation energy 14 MeV is about 2 MeV (see Fig. 2.1 in
+Ref. {{cite:7e6cce6d-118c-4da6-a995-21a807f65fc4}}). This is close to another estimate of
+FORMULA  as the width of a dipole giant
+resonance {{cite:fe264c9f-edb9-4648-8df9-80180c0c6496}}, which is about 4.5 MeV for
+Bi {{cite:adbe979c-95d4-41e8-87b5-71ba72e4baca}}. Notice that FORMULA  is the
+energy relaxation time and FORMULA  is the phase relaxation
+time. Therefore we observe that the phase relaxation is at least 8
+orders of magnitude slower than energy relaxation.
+In Fig. REF  we also present the best fit for FORMULA  (but still with FORMULA  {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}). It is
+obtained with FORMULA , FORMULA  and FORMULA . One can see that the
+two fits are practically undistinguishable. Therefore the estimate
+FORMULA  eV should be considered as upper limit of FORMULA 
+value. Thus its actual value can be much less than FORMULA  eV, though
+still much larger than the average level spacing of the compound
+nucleus {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}, for which the statistical model
+calculations {{cite:d55aea3d-5217-40af-b9ca-c9f769476a9a}} yields FORMULA  eV.
+We recall that the total spin off-diagonal FORMULA -matrix correlations for
+evaporation processes were justified in Ref. {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}} in the
+limit FORMULA , where FORMULA  is an effective dimension
+of the Hilbert space of the quasi-bound intermediate system. For the
+analyzed Bi(FORMULA , p) photonuclear reaction we estimate
+FORMULA . Interestingly, the
+condition of the exponentially large FORMULA  for the anomalously
+slow phase relaxation is consistent with the experimental data on a
+proton thermal emission (evaporation) in proton induced nuclear
+reactions {{cite:fe09ed34-2ac1-4306-bddd-e13257b487ea}}. For heavy targets, Pt and Au, FORMULA  {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}} and the proton evaporating yields are strongly
+forward peaked revealing that FORMULA . However, for
+lighter targets Cu, Fe and Ni, FORMULA  {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}}
+and the proton evaporating yields are symmetric about
+90FORMULA  c.m. indicating that FORMULA . Using the
+statistical model formalism {{cite:d55aea3d-5217-40af-b9ca-c9f769476a9a}} we obtain that FORMULA 
+for the Pt and Au targets is about 5 orders of magnitude smaller than
+FORMULA  for the Cu, Fe and Ni targets. Accordingly, the value of
+FORMULA  for FORMULA  is at least 6 orders of magnitude
+or more smaller than the value of FORMULA  for FORMULA .
+The condition FORMULA  for the anomalously slow phase
+relaxation also suggests that, with the decrease of the excitation
+energy and the compound nucleus temperature,
+FORMULA  also decreases exponentially since FORMULA 
+increases exponentially while FORMULA  is approximately
+constant. Then, such a decrease of FORMULA  is expected to lead to an
+increase of the phase relaxation width,
+FORMULA . This means that, for
+temperatures less than certain value, memory about the initial phase
+relations is completely lost and the compound nucleus is no longer in
+a superconducting state. This problem is worth an experimental study,
+e.g., for Pt(p,pFORMULA ) inelastic scattering {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}}.
+There are many more data sets, including recent ones (see, e.g.,
+ {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}}), demonstrating a strong, a factor two or more, forward
+peaking for thermal emission in compound nucleus reactions. These
+nuclear data will be analyzed in a future work. However, it should be
+of interest to experimentally search for manifestations of thermalized
+non-equilibrated matter in many-body mesoscopic systems and
+nanostructures. For example, one may try to search for an asymmetry
+around 90FORMULA  in angular distributions of thermal electron yield
+originated from the interaction of the electron beam with
+many-electron quantum dots, often referred to as artificial nuclei.
+It should be noted that while we have been able to determine an upper
+limit of the anomalously small value of FORMULA  from the data
+analysis, its theoretical evaluation is an open problem.
+
+Thermalized non-equilibrated matter as a high temperature
+superconducting state
+Consider a proton beam directed on a heavy nucleus. Suppose the proton
+from the incident beam is captured by the nucleus. As a result, a
+thermalized compound nucleus, with strongly overlapping resonances,
+FORMULA ,
+is formed. This compound nucleus can emit
+a proton either with the energy lower than the energy of the incoming
+proton or with the same energy as that of the incoming proton. The
+latter possibility is referred to as compound elastic scattering. Since
+the compound nucleus is formed due to the coherent contribution of
+partial waves with orbital momenta ranging from FORMULA  to FORMULA ,
+only a fraction of the incoming plane wave contributes to the
+formation of the thermalized compound nucleus. The intensity of this
+fraction of the incoming plane wave is forward peaked with an angular
+dispersion FORMULA . Suppose that FORMULA , as it can be the case for the Pt(p,p') compound
+nucleus scattering {{cite:23d285d2-0b0f-44b6-9af4-5b849f0c4b13}}. Then, the compound
+elastic proton yield emitted from the fully thermalized (since
+FORMULA  {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}}) intermediate nucleus would
+have precisely the same forward-peaked angular distribution, with the
+same angular dispersion, as that for the fraction of the incoming
+plane wave contributing to the formation of the compound nucleus. This
+is because the phase relations between partial waves with different
+angular momenta (total spins) for the emitted proton are the same as
+for the incoming plane wave. In other words the incident beam passes
+through the compound nucleus without any resistance. Such an ideal
+transparency takes place in spite of a complete thermalization of the
+intermediate compound nucleus having a high temperature. For this
+reason, such a state of the thermalized compound nucleus can
+formally be referred to as a high temperature superconducting state in
+strongly interacting quantum many-body system. It should be noted
+that, on the basis of arguments in Ref. {{cite:fc33342d-2cda-49f5-ab17-968803e2f5a3}}, such a
+superconducting state may be formed not only for the target nucleus
+being in a ground state but also for highly-excited target nucleus.
+On the contrary, for FORMULA , the phase
+relaxation-randomization is very fast,
+initial spin off-diagonal phase correlations
+are completely forgotten. This results in the conventional Bohr's
+picture of compound nucleus leading to symmetric angular distributions
+around 90FORMULA  c.m. Within this picture, half of the initial
+forward-peaked incoming current would be emitted back implying an
+infinite resistance for a proton wave propagation through the
+thermalized compound nucleus: Equal forward and backward emission
+intensities cancel each other resulting in zero net current.
+
+Conclusion
+The main purpose of this paper is not to promote the presented
+description of the anomalously slow phase relaxation, which is many
+orders of magnitude slower than energy relaxation
+(thermalization). Rather, we intended to indicate a new field of
+research in quantum many–body physics. Our intention is motivated by
+an existence of nuclear data that reveal a clear physical picture for
+a new form of matter – thermalized non-equilibrated matter. The
+problem is of importance not only for nuclear physics (and
+applications for nuclear data evaluation) but it should be of interest
+to a wider physics community. Indeed, the fact that in highly excited
+many-body systems the phase relaxation can be many orders of magnitude
+longer than energy
+relaxation is of significant implications for quantum
+computing {{cite:c18d8ec1-2b30-476b-b30f-799b65d3d221}}, {{cite:15ad05ba-df2c-4354-9d68-cccba1ffcdd8}} as well as, e.g., time-delayed
+“statistical” ionization of many-electron quantum dots and atomic
+clusters (see, e.g., {{cite:0aa465db-8c45-4437-97e6-8018bd6db8cc}} and references therein). A
+clear presence of the effect of anomalously slow phase relaxation in
+chemical reactions (see {{cite:603aff61-19c4-4b8f-8dde-f06fb0c95794}}, {{cite:65d6526f-0bad-4459-9cb4-4b7d26495cdd}} and references
+therein) would require a modification of the statistical theories,
+phase space and transition state theories (see, e.g., {{cite:1683e6c1-4617-4e72-ae2d-d828d99dbb11}} and references therein). And, as has been
+discussed above, thermalized non-equilibrated matter may be viewed as
+high temperature superconducting state in highly-excited
+quantum many-body systems.
+Yet, the nuclear data indicating an existence of anomalously slow
+phase relaxation, which is much slower than energy relaxation, have
+been completely unrecognized by nuclear physicists and, for this
+reason, are completely unknown outside the nuclear physics
+community. In many fields, including statistical physics, the notions
+of “thermalization” or “energy equilibration” are considered to be
+equivalent to the notion “statistical equilibrium”.
+The conventional idea of a very fast phase relaxation in quantum
+many-body systems is at the very foundation of the statistical model
+and random matrix theory. Accordingly, it is widely presented in the
+University courses on, e.g., nuclear physics, molecular and
+atomic cluster physics, condensed matter, mesoscopic physics etc. Yet, students should not be denied the opportunity and right
+to know that other possibilities exist. Namely, that a thermalized
+system is not necessarily in equilibrium due to the anomalously long
+phase memory. These concepts may be counterintuitive, despite of the
+sounding experimental evidence in their favor. Thus, a conceptual
+revision of the long-standing conventional physical pictures is
+required.
+SK would like to thank the organizers of the First International
+Meeting on Recent Developments in the Study of Radiation Effects in
+Matter, Q. Roo, December 5-8, 2006 for a kind invitation to give a
+talk and a warm hospitality. One of us (SK) is grateful to Professor
+Lew Chadderton for many useful discussions of the subject. This work
+has been supported by the projects IN–111607 (DGAPA) and 43375
+(CONACyT).
+
+Time-dependent correlation function of the many-particle
+density fluctuations for thermalized non-equilibrated matter
+All known superconductors are solids. None are gases or liquids. Does
+our analysis of the nuclear data suggest a possibility of a high
+temperature superconducting state for highly excited boiling “nuclear
+liquid”? In this Appendix we briefly outline some results of
+Ref. {{cite:92e9714f-9248-48e8-8474-c6f654926cb6}} which indicate that this is not quite so.
+The wave function of the compound nucleus may be written as
+FORMULA 
+Here, FORMULA  are real partial-width amplitudes for the
+formation of the compound nucleus resonance level FORMULA  with the total
+spin FORMULA  and energy FORMULA  from the channel FORMULA , FORMULA  are the resonance eigenstates with FORMULA  denoting the
+coordinates of all the particles, and FORMULA  is the time. For each FORMULA 
+value the summation over FORMULA  includes FORMULA  terms with
+FORMULA , where FORMULA  is average level
+spacing of the compound nucleus. Summation over FORMULA -values goes from
+FORMULA  to FORMULA .
+We consider the correlation between the density fluctuations, FORMULA , for two different moments of time, FORMULA  and
+FORMULA . Here,
+FORMULA 
+with FORMULA , FORMULA  being a
+multi-dimensional effective volume of the system, and
+FORMULA  standing for FORMULA . For FORMULA  and FORMULA ,
+we obtain {{cite:92e9714f-9248-48e8-8474-c6f654926cb6}}
+FORMULA 
+where the summation runs over all spin values except for FORMULA  and
+FORMULA , and FORMULA  and FORMULA  are time–independent quantities. The first
+term in the r.h.s. of Eq. (REF ) corresponds to a very quick
+decay of the density correlations on the very short period of time
+FORMULA . Yet, for FORMULA , this term does
+not depend on FORMULA . This is characteristic of a liquid or gas
+phase. On the contrary, in the second term the dependence on FORMULA  and
+FORMULA  is factorized. Also, for FORMULA , the
+second term does not depend on FORMULA  resembling the behaviour of a
+solid (or glass). Pictorially, this may be viewed as a certain, not
+necessarily spherically symmetric, spatial configuration of ice put in
+a liquid or gas. Notice that on this time scale,
+FORMULA , the thermalized non-equilibrated
+matter resembles a high temperature superconducting state. As time
+goes on the “ice” slowly melts down and, for FORMULA , the density fluctuations due to the “solid”
+phase relaxes completely. This corresponds to the regime of complete
+phase relaxation (complete loss of the phase memory) recovering the
+conventional picture of the compound nucleus by Bohr. One also
+observes that if only states with a single total spin value are
+excited (FORMULA ) the second term in the r.h.s. of
+Eq. (REF ) vanishes. Therefore, a formation of the “solid”
+phase is essentially due to the coherent excitation of and a peculiar
+interference between the strongly overlapping (FORMULA ) states
+with different FORMULA -values in Eq. (REF ).
+The third term in the r.h.s. of Eq. (REF ), which vanishes for
+FORMULA , corresponds to the interplay between
+the “solid” phase and gas or liquid phase. This term will be
+analyzed elsewhere.

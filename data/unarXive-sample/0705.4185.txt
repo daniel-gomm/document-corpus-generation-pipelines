@@ -1,0 +1,441 @@
+
+
+
+
+
+Secure Two-party Protocols for Point Inclusion Problem
+
+Secure Two-party Protocols for Point Inclusion Problem
+
+
+Tony Thomas
+Department of Mathematics
+Korea Advanced Institute of Science and Technology
+Daejeon, 305-701, Republic of Korea
+Email: tonythomasiit@yahoo.com
+keywords: multiparty computation, point inclusion problem,
+computational geometry
+Introduction
+The rapid growth of networks has opened up tremendous opportunities
+for cooperative computation, where the output depends on the private
+inputs of several entities. These computations could even occur
+between mutually untrusted entities or competitors. The problem is
+trivial if the context allows to have a trusted entity that would
+know the inputs from all the participants; however if the context
+disallows this, then the techniques of secure multi-party
+computation are used to provide useful solutions.
+Generally
+speaking, a secure multi-party computation problem deals with
+computing a function in a distributed network where each participant
+holds one of the inputs, ensuring that no more information is
+revealed to a participant in the computation than that can be
+computed from that participant's input and output. The history of
+the multi-party computation problem is extensive since it was
+introduced by Yao  {{cite:5844ac5d-4f32-4997-9f5e-769891859899}} and extended by Goldreich, Micali,
+and Wigderson {{cite:99e91a3e-7734-42df-a987-7bc8dd64969f}} and by many others. These works use a
+similar methodology: each functionality FORMULA  is represented as a
+Boolean circuit, and then the parties run a protocol for every gate
+in the circuit. The protocols it generates depend on the size of the
+circuit. This size depends on the size of the input and on the
+complexity of expressing F as a circuit. If the functionality F is
+complicated, using the circuit evaluation protocol will typically
+not be practical. Therefore, Goldreich {{cite:6ed0e6d2-ff90-461d-aa37-ade72c3428c5}} pointed out that
+using the solutions from these general results for special cases of
+multi-party computation could be impractical; special
+efficient solutions should be developed for specific problems.
+This is the motivation for seeking solutions to specific
+cooperative computational problems, in which the solutions are more
+efficient than the general theoretical solutions. To this end some
+problems such as comparing two private
+numbers {{cite:12cae9ed-ad7a-4966-815f-114e58b124e9}}, {{cite:d54e0dae-80f5-4fbe-9553-4a295e31f780}}, {{cite:8be00844-aeeb-4407-884e-9ba4a098eac4}}, {{cite:5bbbe91e-84da-4f5c-a909-a906de2bf922}}, privacy preserving data
+mining {{cite:dadeba0c-b2d5-4f48-b9e1-868d5f63d698}}, {{cite:e0b9bf03-ba41-40bd-97bb-243dd70d4cfb}}, comparing information {{cite:5afd9ff5-4d37-4d14-a61f-87dfe2b64e04}},
+privacy preserving geometric computation {{cite:d2bf6b71-8786-44d3-93cd-875a97a12605}}, privacy
+preserving cooperative scientific computation {{cite:efea82cb-2dd2-43ec-be8a-b4f91cdbe1f7}}, {{cite:c586ef84-fd6e-4d06-b92c-e9d4c8f49696}},
+privacy preserving database query {{cite:877e087e-faf3-40fc-bcc2-9804d53e2a64}}, privacy preserving
+auction {{cite:678f2da0-b513-4987-9a7b-6188c371e60a}}, privacy preserving statistical
+analysis {{cite:e3393440-d762-4c27-8eb4-982e9cd65646}}, {{cite:a3f236ac-ec67-4f67-8317-f68d41c32f4e}}, privacy preserving set
+operations {{cite:5d94b054-be43-4fc0-8096-130865d59714}} have been investigated.
+In secure
+multi-party computational geometry we seek secure protocols for
+several geometric problem like point inclusion problem, intersection
+of two shapes, range searching problem etc where the data is shared
+by two or more entities. In this paper, we construct secure
+two-party protocols for the point inclusion problem in star-shaped
+domains and more complex polygonal domains. Here, one entity Alice
+has a point FORMULA , and Bob has a polygon FORMULA . Their aim is to
+determine whether FORMULA  is inside FORMULA , or not without revealing to
+each other their private inputs.
+We outline the related work in
+Section 2. In Section 3, we introduce our adversary models as well
+as the cryptographic tools used in the subsequent sections. In
+sections 4, we study the point inclusion problem in star-shaped
+domains and in Section 5, we consider more general polygonal
+domains. The paper concludes with some remarks in Section 6.
+
+Related Work
+The secure multiparty computational geometry has got wide
+applications in the fields of military, computer graphics etc. The
+study of secure multiparty computational geometry was initiated by
+Atallah et al. {{cite:d2bf6b71-8786-44d3-93cd-875a97a12605}} with their work on secure point
+inclusion problem and polygonal intersection problem. Their protocol
+for the point inclusion problem is applicable to simple polygonal
+domain and has complexity FORMULA  where FORMULA  is the number of edges of
+the polygon. Later Li et al. {{cite:261fc205-2112-47ae-bdf4-e34df9ccd16e}} studied the point
+inclusion problem for circular domain. However, their solution is
+not secure in the sense that each party gets additional information
+regarding the location of the other party's object. Moreover, their
+solution is highly inefficient. A more efficient protocol for the
+point inclusion problem in a circular domain was recently proposed
+by Luo et al. {{cite:8bc67598-3bbd-4d40-91a6-ee4985d09064}}.
+In this paper we consider the
+point inclusion problem in a star-shaped domain and a more general
+polygonal domain (can have several disconnected nested components).
+Two protocols for the star shaped domain with round complexities
+FORMULA  and FORMULA  respectively, and a protocols for more
+general polygonal domain with round complexity FORMULA , where FORMULA  is
+the number of vertices are given.
+
+Preliminaries
+In this section we state our security assumptions and list the
+building block for our protocols.
+Security Assumption
+We assume that all parties are semihonest. A semi-honest party is
+the one who follows the protocol correctly with the exception that
+it keeps a record of all its intermediate computations and might
+derive the other parties inputs from the record.
+The existing protocols listed below serve as important building
+blocks for our protocols.
+
+Homomorphic Encryption Schemes
+An encryption scheme is homomorphic if for some operations FORMULA 
+and FORMULA , FORMULA ,
+where FORMULA  and FORMULA  are two elements from the message space and FORMULA  is
+the key. Many such systems exist, and examples include the systems
+by Benaloh {{cite:93c2cd73-011a-4ebf-af49-2d4b574b9028}}, Naccache and Stern {{cite:d69f13b7-09e2-41b5-a3b5-a99bab869246}}, Okamoto and
+Uchiyama {{cite:1b431ba3-e1d5-4d31-8b39-1d549a516fe5}}, Paillier {{cite:1733ea9f-37c8-4b04-b120-241d6480578b}}, to mention a few.
+A useful property of homomorphic encryption schemes is that an
+addition operation can be conduced based on the encrypted data
+without decrypting them.
+
+Yao's Millionaire Protocol
+The purpose of this protocol is to
+compare two private numbers and to determine which one is larger
+without revealing the numbers. This was first proposed by
+Yao {{cite:5844ac5d-4f32-4997-9f5e-769891859899}} and is referred as Yao's Millionaire Problem
+(because two millionaires wish to know who is richer, without
+revealing any other information about their net wealth). The early
+cryptographic solution by Yao {{cite:5844ac5d-4f32-4997-9f5e-769891859899}} uses an untrusted third
+party and has communication complexity that is exponential in the
+number of bits of the numbers involved. Cachin proposed a
+solution {{cite:678f2da0-b513-4987-9a7b-6188c371e60a}} based on an untrusted third party that can
+misbehave on its own (for the purpose of illegally obtaining
+information about Alice's or Bob's private vectors) but does not
+collude with either participant. The communication complexity of
+Cachin's scheme is FORMULA , where FORMULA  is the number of bits of each
+input number. Recently many efficient protocols which do not need a
+third party have been suggested by various
+authors {{cite:12cae9ed-ad7a-4966-815f-114e58b124e9}}, {{cite:d54e0dae-80f5-4fbe-9553-4a295e31f780}}.
+
+Scalar Product Protocol
+Let Alice has a vector FORMULA  and Bob has a vector FORMULA . The scalar product protocol is to securely
+compute the scalar (dot) product of FORMULA  and FORMULA , given by FORMULA .
+In  {{cite:d2bf6b71-8786-44d3-93cd-875a97a12605}} Du and Atallah
+considered a slightly different and more general form of the scalar
+product protocol in which Alice has the vector FORMULA  and Bob has the
+vector FORMULA , and the goal of the protocol is for Alice (but not Bob)
+to get FORMULA  where FORMULA  is random and known to Bob only. Their
+protocols can be easily modified to work for the version of the
+problem where the random FORMULA  is given ahead of time as part of Bob's
+data (the special case FORMULA  puts us back to the usual scalar
+product definition). They had developed two protocols for it. Secure
+protocols for the scalar product problem can be found in
+ {{cite:d2bf6b71-8786-44d3-93cd-875a97a12605}}, {{cite:2ae55543-0d55-4322-ac34-cf817e8397aa}}, {{cite:2d638195-4619-4258-8623-81269464eed3}}.
+
+Point Inclusion in Star-shaped Domain
+In this
+section, we study the point inclusion problem in a star-shaped polygonal domain.
+Problem: Let Alice has a point FORMULA  and Bob has a star-shaped
+polygon FORMULA  with vertices FORMULA , for FORMULA , where the
+vertices are named in the anticlockwise direction. Alice and Bob
+want to securely check
+whether FORMULA  lies inside (including boundary) FORMULA  or not.
+Since FORMULA  is a star-shaped polygon, it contains a point FORMULA  such the
+line segments joining FORMULA  to FORMULA  for FORMULA  lies
+entirely in FORMULA .
+We have the following algorithm for point inclusion from  {{cite:50a8dfb5-0171-44b3-820b-ca396de64cf3}}.
+The Point Inclusion Protocol Without Privacy
+
+Determine by binary search the wedge in which FORMULA  lies. FORMULA  lies in the
+wedge bounded by the rays FORMULA  and
+FORMULA  if and only if the angle formed by FORMULA ,
+FORMULA  and FORMULA  is a left turn and the angle formed by FORMULA , FORMULA  and
+FORMULA  is a right turn.
+
+Once FORMULA  and FORMULA  are found, then FORMULA  is internal if
+and only if the angle formed by FORMULA , FORMULA  and FORMULA  is a left
+turn.
+
+
+Theorem 4.1  {{cite:50a8dfb5-0171-44b3-820b-ca396de64cf3}}
+The inclusion question can be answered in FORMULA  time, given
+FORMULA  space and FORMULA  processing time.
+
+To decide whether the angle FORMULA  is a right or left
+turn corresponds to evaluating a FORMULA  determinant in the
+points' coordinates. Let FORMULA  for FORMULA .
+The determinant
+FORMULA 
+gives twice the signed area of the triangle FORMULA ,
+where the sign is FORMULA  if and only if FORMULA  forms a
+counterclockwise cycle.
+Let the coordinates of FORMULA  be FORMULA 
+and that of FORMULA  be FORMULA  with respect to some coordinate system
+known to both Alice and Bob. Now Bob chooses a new coordinate system
+with origin
+at FORMULA  and axes parallel to the original axes. Let the co-ordinates
+of FORMULA  with respect to the new coordinate axes be FORMULA  for
+FORMULA . The new coordinates of FORMULA  becomes FORMULA . Now the angle FORMULA  is a right turn or
+left turn according as the determinant
+FORMULA 
+is positive or negative. For FORMULA , let FORMULA ,
+FORMULA  and FORMULA .
+Now we have,
+FORMULA 
+The point FORMULA  lies in the wedge bounded by the rays
+FORMULA  and FORMULA  if and only
+if FORMULA  and FORMULA  and if it happens to lie
+in that wedge, it lies inside the polygon if and only if FORMULA . Note that Alice has the vector FORMULA  and Bob has the vectors FORMULA 
+and FORMULA  for FORMULA .
+We now give the corresponding secure protocol for the point inclusion problem.
+The Secure Point Inclusion Protocol 4.1
+
+For FORMULA , Alice and Bob do the following:
+
+Bob computes FORMULA , FORMULA  and chooses at random FORMULA  and FORMULA .
+
+Alice engages in two secure scalar product protocols with Bob and gets FORMULA  and FORMULA .
+
+Alice compares FORMULA 
+with FORMULA  and FORMULA  with FORMULA  using millionaire protocol with
+Bob.
+
+
+Alice identifies the index, FORMULA  at which FORMULA  and FORMULA .
+
+Alice looks at the millionaire protocol output for the pair
+FORMULA  and FORMULA . If FORMULA  was smaller than FORMULA  then the point is
+inside else it is outside.
+
+Alice communicates the result to Bob.
+
+Analysis of the Protocol 4.1
+Theorem 4.2 The Protocol 4.1 is correct, secure and has round complexity FORMULA .
+
+Correctness: Using the millionaire protocol, in Step 2 Alice
+identifies the wedge in which the point
+FORMULA  lies and in Step 3 she checks whether the point FORMULA  lies inside
+or outside the polygon. The correctness of the protocol
+follows from the correctness of the corresponding insecure protocol.
+Security: The security of the protocol immediately follows
+from the privacy of the secure scalar product protocol and that of
+the secure protocol for the millionaire problem. Also, Alice does
+not reveal to Bob the wedge in which FORMULA  lies, and so Bob will not
+get
+any idea about the location of the point FORMULA .
+Round Complexity:
+It is easy to see that the round complexity of the protocol is
+FORMULA .
+
+Using Binary Search to Reduce Round Complexity
+Now, we will incorporate binary search in the above protocol to
+reduce its round complexity to FORMULA .
+Let FORMULA  be a
+homomorphic commutative encryption scheme. That is if FORMULA 
+and FORMULA  be the encryption and decryption pairs of Alice and
+Bob corresponding to their keys and let FORMULA  or FORMULA ,
+then
+
+FORMULA ;
+
+FORMULA .
+
+Given FORMULA , let FORMULA .
+We now give the modified
+secure protocol for the point inclusion problem.
+The Secure Point Inclusion Protocol 4.2
+
+For FORMULA , Bob computes FORMULA , and FORMULA .
+
+Bob sends FORMULA  and FORMULA  to Alice.
+
+Alice picks an FORMULA  randomly such that FORMULA  and cyclically rotates
+the lists obtained from Bob by FORMULA  positions to get FORMULA  and FORMULA .
+
+Alice sends FORMULA  and FORMULA  to Bob.
+
+Bob decrypts the list obtained from Alice with his private key FORMULA 
+and obtains
+FORMULA 
+
+Alice computes FORMULA .
+
+Alice identifies the index, FORMULA  for which FORMULA  and FORMULA 
+using the following sub protocol in the binary search.
+
+For each index FORMULA  Alice picks up in the binary search, Bob picks a
+random FORMULA  encrypts with his key and sends Alice FORMULA .
+
+Alice encrypts with her key and sends back to Bob FORMULA .
+
+Bob decrypts and obtains FORMULA .
+
+Bob computes FORMULA .
+
+Alice engages in a secure scalar product protocol with Bob and
+obtains
+FORMULA .
+
+Alice decrypts and obtains FORMULA 
+and checks whether it is positive or not.
+
+
+Alice checks whether FORMULA  is negative or positive using a similar sub protocol as in
+Step 7. If it is negative, the point is inside else it
+is outside.
+
+Alice communicates the result to Bob.
+
+Analysis of the Protocol 4.2
+Theorem 4.3 The Protocol 4.2 is correct, secure and has round complexity FORMULA .
+
+Correctness: It is clear that, in Step 5, Bob gets the
+encryption of the vectors FORMULA  and FORMULA  for FORMULA  with
+the key of Alice. For each index FORMULA  occurring in the binary search,
+Alice has FORMULA  and Bob has FORMULA . Using the secure
+scalar product protocol she obtains FORMULA , which is
+equal to FORMULA  from the homomorphic property of the
+encryption scheme. By decryption using her private key Alice gets
+FORMULA  and she can check whether FORMULA , since FORMULA . Thus Alice can identify the wedge in which the point FORMULA  lies.
+Similarly, once the wedge is identified, she can check whether the
+point lies inside the polygon or not. Thus the correctness of the
+protocol follows
+from the correctness of the corresponding insecure protocol.
+Security: Since Bob is sending FORMULA  and FORMULA  for FORMULA , after encryption with his key, Alice will not get any
+information about the private data of Bob. Since Alice rotates the
+list of FORMULA  and FORMULA  after masking with her key, Bob will not get
+any idea of the specific FORMULA  and FORMULA  Alice is using in the
+binary search in Step 7. Hence, Bob will not get any idea of the
+wedge in which the point FORMULA  lies. The privacy of the secure scalar
+product protocol guarantees the privacy of the individual inputs
+during the scalar product computation in Step 7 and Step 8. Also
+since FORMULA  is random known only to Bob, the only information Alice
+can get from the
+scalar product is its sign.
+Round Complexity: As Alice is using binary search in the identification
+of the wedge in which the point FORMULA  lies, it is clear that the
+round complexity of the protocol is FORMULA , since the
+complexity of the binary search is FORMULA .
+
+Point Inclusion in More General Polygonal Domain
+In this
+section, we consider an algorithm for the point inclusion problem
+for a more general polygonal domain given in  {{cite:6f08c87b-99f0-4d6c-956b-d56adea6892e}}. This
+domain is more general
+than any of the domains so far considered in the context of secure point inclusion problem.
+Problem: Alice has a point FORMULA  and Bob has a polygon FORMULA  that may have multiple disconnected nested
+components, with vertices FORMULA . Alice and Bob wants to
+securely check
+whether FORMULA  lies inside (including boundary) FORMULA  or not.
+The characteristic function, FORMULA  of the polygon FORMULA  is
+defined as,
+FORMULA 
+where FORMULA . Let FORMULA , be the included
+angle (edges swept inside the polygon) at a vertex FORMULA . The
+extension to FORMULA  in both directions of the edges incident on
+the vertex FORMULA  divide the plane into 4 wedges. If FORMULA 
+(convex vertex), there are two wedges with angle FORMULA  and two
+wedges with angle FORMULA . We call the wedges with angle
+FORMULA  as inner and those with angle FORMULA  as outer. If
+FORMULA  (concave vertex), there are two wedges with angle
+FORMULA  and two wedges with angle FORMULA . In this
+case, we call the wedges with angle FORMULA  as inner and
+those with angle FORMULA  as outer.
+We assume for
+convenience that the point FORMULA  does not lie on any of the four rays
+emanating from any of the vertices of the polygon. The case in which
+FORMULA  lies on a ray can be easily handled separately. Now, the cross function, FORMULA  of a point FORMULA  with respect to a
+vertex FORMULA  of the polygon is defined as
+FORMULA 
+Theorem 5.1  {{cite:6f08c87b-99f0-4d6c-956b-d56adea6892e}}
+The characteristic function of the whole polygon is the sum of the
+cross functions of its vertices. That is
+FORMULA 
+
+Before we give the secure protocol for the point inclusion problem,
+we outline a way for Alice to securely identify whether her point
+lies in an inner or outer wedge corresponding to a vertex FORMULA .
+Bob chooses four points FORMULA  and FORMULA  on the four rays emanating from the vertex
+FORMULA . Without loss of generality let us suppose that
+FORMULA  and FORMULA  bound one
+inner wedge and FORMULA  and
+FORMULA  bound the other one. Now Alice and Bob
+engages in a secure protocol (as described in the previous section) and Alice checks
+whether FORMULA  is inside any of these two wedges. If that is the
+cases FORMULA  is inside an inner wedge else FORMULA  is inside an outer
+wedge.
+For FORMULA , let FORMULA  be the included angle at the
+vertex FORMULA . We now give a secure protocol for the point inclusion problem.
+The Secure Point Inclusion Protocol 5.1
+
+Bob computes FORMULA , where FORMULA  if FORMULA  is a convex vertex (FORMULA ) and FORMULA ,
+otherwise.
+
+For FORMULA  Alice and Bob do the following.
+
+For the vertex FORMULA , Alice checks whether FORMULA 
+lies inside an inner or outer wedge using the protocol described
+above.
+
+If the wedge is inner, Alice assigns FORMULA , else
+she assigns FORMULA .
+
+If the edge is convex Bob assigns FORMULA , else he assigns
+FORMULA .
+
+
+Alice assigns FORMULA .
+
+Bob assigns FORMULA .
+
+Bob engages in a secure scalar product protocol with Alice and gets FORMULA .
+
+Bob computes FORMULA .
+
+Bob communicates the result to Alice.
+
+Analysis of the Protocol 5.1
+Theorem 5.2 The Protocol 5.1 is correct, secure and has round complexity FORMULA .
+
+Correctness: Let FORMULA  be the set of convex vertices where the
+point FORMULA  lies in an inner wedge, FORMULA  be the set of convex
+vertices where the point FORMULA  lies in an outer wedge, FORMULA  be the
+set of concave vertices where the point FORMULA  lies in an inner wedge
+and FORMULA  be the set of concave vertices where the point FORMULA  lies in
+an outer wedge. Then we have,
+FORMULA 
+Thus Bob can compute FORMULA  and hence the protocol is
+correct.
+Security: The security of the protocol immediately follows
+from the privacy of the secure scalar product protocol and that of
+the secure protocol for the millionaire problem.
+Round Complexity: It is clear that the round complexity of the
+protocol is FORMULA .
+
+Conclusion
+In this paper, we studied the point inclusion problem for polygons
+in 2 dimension. The Protocol 4.2 for the star shaped domain has
+far better round complexity than the existing protocols. The
+Protocol 5.1 for the general polygonal domains is applicable for a
+large class of polygonal domains than the existing protocols. We
+hope to extend these ideas to more general domains and to higher
+dimensions.

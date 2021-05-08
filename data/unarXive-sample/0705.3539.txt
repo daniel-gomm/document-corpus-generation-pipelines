@@ -1,0 +1,264 @@
+
+Dynamics of wrinkles on a vesicle in external flow
+K.S. Turitsyn and S.S. Vergeles
+Landau Institute for Theoretical Physics,
+Moscow, Kosygina 2, 119334, Russia
+2020/09/07 03:05:36
+Recent experiments by Kantsler et. al. (2007) have shown that the relaxational
+dynamics of a vesicle in external elongation flow is accompanied by the formation
+of wrinkles on a membrane. Motivated by these experiments we present a theory
+describing the dynamics of a wrinkled membrane. Formation of wrinkles is related
+to the dynamical instability induced by negative surface tension of the membrane.
+For quasi-spherical vesicles we perform analytical study of the wrinkle structure
+dynamics. We derive the expression for the instability threshold and
+identify three stages of the dynamics. The scaling laws for the temporal
+evolution of wrinkling wavelength and surface tension are established and
+confirmed numerically.
+
+87.16.Dg, 46.70.Hg, 46.30.Lx
+Wrinkling of different thin sheets is a well-known effect which can be frequently
+observed in everyday life. Usually wrinkle patterns appear due to the
+external tensions applied to some material, or as a result of compression of
+inextensible films. Main properties of steady and/or equilibrium wrinkling structures
+are now well understood {{cite:e297353d-6872-43e9-998f-a5b69fc92d97}}, {{cite:760b650f-3f8f-44b7-9d1f-40c03cbb12aa}}. However, much less is
+known about the dynamics of wrinkle structures. In certain biologically motivated
+experiments on membranes and vesicles {{cite:a2dbdb85-be2b-4910-b801-a9600b3da057}}, {{cite:656b3ce6-df50-4a70-b8ae-4009a25d4ed2}}, the wrinkles
+are formed because of the instability induced by negative membrane tension,
+which is closely related to a buckling instability. Wrinkles formed this way
+exhibit non-trivial growth and relaxational dynamics. Theoretical description
+of these essentially non-equilibrium processes is a challenging problem which
+we attempt to approach in this paper. Although in this letter we focus on the analysis
+of the recent experiments {{cite:656b3ce6-df50-4a70-b8ae-4009a25d4ed2}}, some predictions of our theory are universal
+and may be successfully applied to other systems where the formation of wrinkles
+is caused by negative tension.
+Vesicles exhibit a
+variety of different regimes of motion in external fluid flows. These regimes were extensively
+studied during the last decade both by the experimentalists {{cite:2b612ac0-a736-4c33-b38b-263e0e9742e1}}, {{cite:f891ea8f-dd72-47db-9edb-652e24bc919e}}, {{cite:c0325093-d3a5-410d-88f7-0188a2f4ab3c}}, {{cite:52a8254a-b92d-491a-890d-56e936f3cf4d}}
+and theoreticians {{cite:0abfa7dc-9edd-47e8-b501-b5d15af1fd2e}}, {{cite:33c6cfdf-87c4-44d8-b6c7-cc2cd8a146aa}}, {{cite:8edce1c6-c099-4b6b-815b-4509b796ddfc}}, {{cite:a4522db5-0448-4063-8d5b-b5572a89f8df}}, {{cite:ba65f5f2-087e-4c7f-a072-5c321d75ea89}}, {{cite:fb6ab05e-32f7-4893-9df2-860d05d0f6b0}}, {{cite:f61e3fb5-b2d6-40c9-9248-ff5669ef9331}}. Depending
+on the external parameters a vesicle in external shear flow can experience three
+types of behavior: tank-treading, tumbling and trembling (also referred as
+vacillating-breathing {{cite:a4522db5-0448-4063-8d5b-b5572a89f8df}} or swinging {{cite:fb6ab05e-32f7-4893-9df2-860d05d0f6b0}}) {{cite:52a8254a-b92d-491a-890d-56e936f3cf4d}}. Although these
+motions correspond to quite non-trivial dynamics, the shape of a vesicle
+always remains smooth and can be effectively approximated by an ellipsoid. Recently,
+experiments performed by Kantsler et. al. {{cite:656b3ce6-df50-4a70-b8ae-4009a25d4ed2}} revealed a qualitatively
+new effect observed in non-stationary elongation flows. It was shown
+that in strong flows the relaxational dynamics of a vesicle is accompanied by
+the excitement of high order membrane deformation modes called wrinkles. Such
+dynamics can not be described in a framework of low-dimensional models which
+were used for the analysis of vesicle tank-treading, tumbling, and trembling. In this
+letter we extend these models to include the interaction between the vesicle shape
+and the wrinkle structure.
+Before proceeding further we would also like to mention the experimental {{cite:b94057b0-55c4-4e15-a0a1-556351476f85}}
+and theoretical {{cite:875306ce-0c5d-4e0b-aa66-c896fc4a6f83}} investigations of wrinkle formation on microcapsules in external
+shear flows. Although this effect is similar to the one discussed here the underlying physics
+and main properties of wrinkles are essentially different. For example, the wrinkles which are
+observed on vesicles are not stationary and are excited only for a limited amount of time.
+This letter is organized as follows: First we discuss the main features of a
+vesicle and show that the negative tension leads to instabilities of the flat membrane.
+Second, we present a model of a quasi-spherical vesicle in external flow.
+We derive the threshold of the instability and analyze the dynamics of wrinkle
+formation in strong flows. We show that one can distinguish three different
+stages of the dynamics. The first one lasts for a vanishingly small amount
+of time and is characterized by the exponential growth of short wavelength
+excitations. During the second stage the amplitude of wrinkles and their characteristic
+wavelengths grow algebraically. We derive the corresponding exponents and
+compare them to the experimental results. During the third stage the amplitude
+of wrinkles gradually reaches maximum and afterwards decays to zero. We find the
+scaling estimations for the wrinkle wavelength and the surface tension. In the
+end we present the results of our numerical simulations which confirm the analytical
+theory. We conclude by discussing the future challenges.
+Vesicles are closed lipid bilayers which are incompressible and impermeable to the
+surrounding fluid. These two properties result in the conservation of the vesicle volume
+and the membrane area. Thus any vesicle is characterized by its excess area
+FORMULA  which is the measure of vesicle's
+“nonsphericity”: FORMULA  where FORMULA  is the membrane area and FORMULA  is the
+effective vesicle radius, defined by the vesicle volume: FORMULA .
+Free energy of the closed membrane is defined by the Helfrich functional and consists of the
+contributions from the bending energy and the surface tension FORMULA  {{cite:0411adce-7999-47a4-a1ff-617ced85476b}}:
+FORMULA 
+Here FORMULA  is the local mean curvature and FORMULA  is the bending rigidity of a membrane.
+Note that for closed membrane geometry, the surface tension FORMULA  is a quantity
+adjusting to other membrane parameters (similar to the pressure in an
+incompressible fluid) to ensure a given value of the membrane area
+FORMULA . It is useful to analyze the stability of a flat membrane with a given value of FORMULA  before
+proceeding to the case of a closed membrane with a fixed area. Small perturbations of a
+flat membrane can be parameterized by a height function FORMULA  which can
+be expanded in Fourier harmonics: FORMULA . The quadratic part
+of the Helfrich energy has the following form:
+FORMULA 
+For positive FORMULA , this function is minimized by FORMULA , so the flat membrane state is stable.
+However, for negative tension FORMULA , when the membrane is being shrinked, the modes with
+FORMULA  become unstable.
+As we will show, this particular kind of instability is responsible for the formation of wrinkles
+in the experiment {{cite:656b3ce6-df50-4a70-b8ae-4009a25d4ed2}}. More precisely, we will show that the surface tension becomes
+negative when the direction of the external flow is reversed instantly. In this case small thermally
+induced membrane deformations on top of a smooth vesicle shape are amplified and lead to the
+formation of wrinkles.
+In order to study this effect quantitatively we analyze the model of quasi-spherical (FORMULA )
+vesicles which proved itself to be very successful in analytical investigations of vesicle dynamics
+in external flows {{cite:0abfa7dc-9edd-47e8-b501-b5d15af1fd2e}}, {{cite:a4522db5-0448-4063-8d5b-b5572a89f8df}}, {{cite:ba65f5f2-087e-4c7f-a072-5c321d75ea89}}, {{cite:f61e3fb5-b2d6-40c9-9248-ff5669ef9331}}. The vesicle shape is parameterized by the
+small displacement function FORMULA : FORMULA  which can be expanded in the
+series of spherical harmonics:
+FORMULA 
+The external velocity is assumed to have a linear elongational profile with the time-dependent strain:
+FORMULA , where FORMULA  is the
+characteristic time-scale associated with the membrane bending forces. The numerical
+factor in this definition was included to simplify the expressions below.
+Throughout the paper we will discuss the experimentally interesting situation when FORMULA 
+is the Heaviside-like function FORMULA .
+The dynamical equations describing the dynamics of a quasi-spherical vesicle in
+external flow were first derived in {{cite:0abfa7dc-9edd-47e8-b501-b5d15af1fd2e}} in the leading order in the small parameter
+FORMULA :
+FORMULA 
+Here FORMULA  and
+FORMULA  is the dimensionless angularly averaged part of the surface tension
+which is a Lagrangian multiplier associated with the excess area conservation constraint
+FORMULA .
+The numerical coefficients of (REF ) are given by:
+FORMULA , and
+FORMULA . The statistical properties of thermal Langevin forces FORMULA  can be found in {{cite:0abfa7dc-9edd-47e8-b501-b5d15af1fd2e}}. In this letter we assume that
+the temperature FORMULA  is small, so that FORMULA  in (REF ) are negligible during the
+evolution of the wrinkle structure. They only affect the dynamics through the
+non-zero initial conditions FORMULA  which ensure that the instability
+can indeed take the system out of the unstable state. In stationary
+planar elongational flows most of the excess area is stored in the FORMULA  harmonics.
+We therefore use the following parametrization : FORMULA  and
+FORMULA  for FORMULA . The fraction of
+total excess area stored in the second-order spherical harmonics FORMULA  is given by FORMULA .
+The argument of FORMULA  is related to the vesicle orientation angle FORMULA  in the FORMULA -plane:
+FORMULA . The normalization condition can be rewritten as
+FORMULA . The dynamical equations acquire the following form:
+FORMULA 
+Using the excess area conservation law one can also
+find the expression for the surface tension:
+FORMULA 
+where FORMULA  and FORMULA . Using
+the expression (REF ) one can easily show that there will be an instability for large enough
+values of FORMULA . Indeed, for constant positive FORMULA  at FORMULA  the vesicle exhibits small
+thermal fluctuations near the stable point FORMULA . However as FORMULA  changes sign this state
+becomes unstable and the vesicle starts rotating to the new stable point which corresponds
+to FORMULA .
+The stability of the membrane can be studied by
+analyzing the expression (REF ). The surface tension instantly
+becomes negative after changing the velocity field: FORMULA .
+Negative FORMULA  can destabilize the high-order harmonics. The explicit condition can be found
+from (REF ). All harmonics of order up to FORMULA  become unstable if
+FORMULA , which yields FORMULA .
+For large FORMULA  one can use the expansions FORMULA  to
+obtain FORMULA . The most unstable mode can be found
+by maximizing the growth increment FORMULA . One obtains
+FORMULA  for strong flows with FORMULA .
+Below the instability threshold, for relatively small values of FORMULA  higher order harmonics are
+not excited and the dynamics of a vesicle can be well described in terms of a single FORMULA  variable.
+The conservation of excess area implies that the dynamics is purely rotational and FORMULA .
+The characteristic time-scale associated with the rotational dynamics is estimated as FORMULA .
+Describing the dynamics of the vesicle above the instability threshold is a considerably more
+difficult problem which requires an analysis of a complex nonlinear system (REF ) with large number
+of degrees of freedom. Fortunately, it is possible to approach this problem analytically for
+strong flows which correspond to FORMULA . Although quantitative predictions of such an analysis
+can be applied only to strong flows, the qualitative picture is in most aspects the same even for
+moderate strains FORMULA .
+FIGURE 
+For large values of FORMULA  one can distinguish between several different stages in the
+wrinkle evolution. At the first stage most of the excess area is stored in the
+second order angular harmonics and the surface tension can be assumed to be constant
+FORMULA . Unstable higher order harmonics grow exponentially and the
+distribution of FORMULA  becomes centered near the most unstable modes with FORMULA , so
+the terms FORMULA  can be estimated as FORMULA  and FORMULA .
+This rapid growth saturates when the total excess area, stored in higher-order harmonics, becomes large enough
+so that their contribution to the surface tension becomes comparable to the contribution from the external flow.
+Formal condition can be found from (REF ): FORMULA . Note that at this time most
+of the excess area is still stored in the second-order harmonics. The characteristic
+duration of this stage can be estimated as FORMULA .
+This time is much less than the characteristic relaxation time of the variable FORMULA ,
+which can be estimated as FORMULA  from the equation (REF ) as in the situation below
+the instability threshold.
+FIGURE 
+Second stage starts at FORMULA  after the exponential growth has saturated.
+During the second stage higher order harmonics FORMULA  provide the main contribution
+to the surface tension (REF ) which can be approximated as FORMULA . Note that it
+depends only on the distribution of excess area over the higher-order harmonics FORMULA . In order
+to find this distribution for large FORMULA  one can use the formal solution of (REF ):
+FORMULA  where FORMULA  is the normalization
+constant and FORMULA . The distribution of excess area
+FORMULA 
+is a narrow function of FORMULA  centered around some FORMULA  which is determined as maximum
+of FORMULA : FORMULA . The characteristic width of the distribution
+can be also estimated in a usual way: FORMULA . It is much less than FORMULA  for
+FORMULA . Narrowness of the distribution allows one to find the exact expression for the surface
+tension: FORMULA . Using the definition of FORMULA  we
+obtain the following closed equation:
+FORMULA 
+One can find its solution using the initial condition for the surface tension:
+FORMULA  at FORMULA .
+This yields FORMULA , where FORMULA  is a constant of order
+unity. Similarly we obtain FORMULA  and FORMULA .
+Therefore, second stage of the dynamics is characterized by the algebraic decay of the
+surface tension and by the narrow spectral distribution FORMULA  of the wrinkling structure, whose
+peak smoothly drifts towards small FORMULA . As the absolute value of FORMULA  goes down the external
+velocity contribution FORMULA  to the surface tension in (REF ) becomes important
+again. Comparing different contributions in (REF ) one can estimate the duration of the second
+stage as FORMULA . In the end of the second stage the peak of the FORMULA  distribution is centered near
+FORMULA . This scaling law relates wavelength of wrinkles to the strain FORMULA 
+and is one of the main results of this letter. Note that this wavelength is much smaller compared
+to the wavelength of the initially most unstable mode which is given by FORMULA . Our scaling is
+in reasonable agreement with the experimental results of Kantsler et. al. {{cite:656b3ce6-df50-4a70-b8ae-4009a25d4ed2}}.
+Second stage is followed by third one during which the surface tension in (REF ) is determined
+both by the external velocity and the wrinkles. The characteristic value of the surface tension can be
+estimated as FORMULA  which is much smaller than its initial value FORMULA . Due to a significant
+decrease of the surface tension, the dynamics of the second-order harmonics during the second stage
+is determined solely by the external velocity term FORMULA  in (REF ). Therefore one can find the solution
+of (REF ) in the leading order: FORMULA . The characteristic amplitude of wrinkles obeys the
+following simple law: FORMULA . In order to analyze the evolution of the surface
+tension FORMULA  and the wrinkles wavelength FORMULA  one has to solve the equation
+FORMULA  keeping all the contributions to the surface tension. With the parametrization
+FORMULA  the problem is reduced to the ordinary differential equation:
+FORMULA 
+with the initial condition FORMULA  for FORMULA  determined by the second
+stage. It is possible to solve (REF ) analytically:
+FORMULA , where FORMULA  is a constant of order unity.
+Note, that this solution adds only logarithmical factors of order FORMULA  to the previously
+derived scalings FORMULA  and FORMULA .
+Although the second stage is formally present in the solution of (REF ) and
+corresponds to the limit FORMULA  we purposely separate it from the third one because
+of its universality: during the second stage the surface tension is determined solely
+by the wrinkle structure. Therefore one may expect that the scaling laws
+FORMULA  and FORMULA  will also hold for other problems
+where the initial negative surface tension was caused by different means.
+We have tested our results by direct numerical simulations of equation (REF ).
+The total number of harmonics in our simulations was FORMULA .
+The temperature which determines the power of the
+thermal noises FORMULA  in (REF ) was taken to be FORMULA . On
+FIG. REF  one can see the results of simulations for FORMULA . Three
+temporal stages with qualitatively different dynamics are clearly distinguishable.
+The behavior of FORMULA  is very close to quadratic and the dynamics
+of FORMULA  may be well fitted by the solution of (REF ). The scaling law
+FORMULA  was confimed by simulations at different FORMULA  (FIG. REF  )
+In conclusion we compile a list of main results presented in this paper. Motivated by recent
+experiments {{cite:656b3ce6-df50-4a70-b8ae-4009a25d4ed2}}, we studied the relaxational dynamics of a vesicle in an
+elongational flow. We showed that high order membrane deformation modes
+are excited by the negative surface tension induced by external flow.
+For quasi-spherical vesicles we have found an analytical expression for the instability
+threshold and analyzed the evolution of the wrinkle structure. We identified three
+stages of the dynamics. The first stage corresponds to FORMULA  and
+is characterized by the exponential growth of unstable high order harmonics with the
+characteristic scales of order FORMULA .
+This rapid growth quickly saturates and is followed by the second stage. For FORMULA 
+the surface tension decays algebraically as FORMULA  and the characteristic
+wavelength of wrinkles grows as FORMULA . Characteristic amplitude of the
+wrinkles grows as FORMULA . During the third stage which ends at FORMULA  wrinkle
+amplitude behaves like FORMULA  and the characteristic wavelength
+can be estimated as FORMULA .
+Finally we would like to note, that the algebraic growth of the characteristic wrinkle wavelength
+although with different exponent FORMULA  was observed in the studies
+of the thin rods dynamics experiencing the buckling instability {{cite:9dcbf239-2d68-4af1-bb84-7d1aed565554}}. We believe that
+the algebraic growth of wrinkle wavelength is a universal property of the interface dynamics
+experiencing the buckling instability. Although in this letter we considered a particular
+experiment, we believe that the scaling laws for the wrinkle wavelength FORMULA  and
+for the surface tension FORMULA  derived for the second stage are universal and can be
+observed in other experiments where the total area of the interface is conserved and the wrinkle
+growth is initiated by the external forces leading to negative surface tension.
+We are indebted to V. Kantsler and V. Steinberg for turning our attention
+to this problem. We also appreciate the fruitful discussions with V. Lebedev.
+This work was supported by the RFBR grant and by Dynasty and
+RSSF foundations.

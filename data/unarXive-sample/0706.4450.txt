@@ -1,0 +1,1090 @@
+
+*Quadratic optimal functional quantization of
+stochastic processes and numerical applications
+Functional Quantization
+Gilles Pagès1
+Laboratoire de Probabilités et Modèles aléatoires, UMR 7599, Université Paris 6, case 188, 4,
+pl. Jussieu, F-75252 Paris Cedex 5, France.
+gpa@ccr.jussieu.fr
+In this paper, we present an overview of the recent developments of functional
+quantization of stochastic processes, with an emphasis on the quadratic case. Functional quantization is a way to
+approximate a process, viewed as a Hilbert-valued random variable, using a nearest neighbour projection on a finite
+codebook. A special emphasis is made on the computational aspects and the numerical applications, in particular the pricing
+of some path-dependent European options.
+
+Introduction
+Functional quantization is a way to discretize the path space of a
+stochastic process. It has been extensively investigated since the
+early 2000's by several authors (see among
+others {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}, {{cite:3837b5d5-47ad-448a-ac51-d529dc0dd0b2}}, {{cite:d0cf52ec-4772-49ec-8212-c6055626cfa5}},
+{{cite:9a2f9d99-52fa-45f3-b8d8-646cb67b7236}}, {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}}, etc). It first appeared as a natural
+extension of the Optimal Vector Quantization theory of
+(finite-dimensional) random vectors which finds its origin in the
+early 1950's for signal processing (see {{cite:1e8275bd-3a0b-4f7f-918f-c87b2b58ae01}}
+or {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}).
+Let us consider a Hilbertian setting. One considers
+a random vector FORMULA  defined on a probability space FORMULA  taking its values
+in a separable Hilbert space FORMULA  (equipped with its natural Borel FORMULA -algebra) and satisfying
+FORMULA . When FORMULA  is an Euclidean space (FORMULA ), one speaks about Vector Quantization. When FORMULA  is an infinite dimensional space like
+FORMULA  (endowed with the usual Hilbertian norm
+FORMULA ) one
+speaks of functional quantization (denoted FORMULA  from
+now on). A (bi-measurable) stochastic process FORMULA 
+defined on FORMULA  satisfying
+FORMULA  FORMULA -FORMULA  can always be
+seen, once possibly modified on a FORMULA -negligible set, as an
+FORMULA -valued random variable. Although we will focus on the
+Hilbertian framework, other choices are possible for FORMULA , in
+particular some more general Banach settings like FORMULA  or
+FORMULA  spaces.
+This paper is organized as follows: in Sections  we introduce quadratic quantization in a
+Hilbertian setting. In Section , we focus on optimal quantization, including some extensions to non
+quadratic quantization. Section  is devoted to some quantized cubature formulae. Section  provides
+some classical background on the quantization rate in finite dimension. Section  deals with
+functional quantizations of Gaussian processes, like the Brownian motion, with a special emphasis on the numerical
+aspects. We present here what is, to our guess, the first large scale numerical optimization of the quadratic quantization of
+the Brownian motion. We compare it to the optimal product quantization, formerly investigated in {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}}. In section, we
+propose a constructive approach to the functional quantization of scalar or multidimensional diffusions (in the
+Stratanovich sense). In Section , we show how to use functional quantization to price path-dependent
+options like Asian options (in a heston stochastic volatility model). We conclude by some recent results showing
+how to derive universal (often optimal) functional quantization rate from time regularity of a process
+in Section  and by a few clues in Section  about the specific methods that
+produce some lower bounds (this important subject as many others like the connections with small deviation theory is not
+treated in this numerically oriented overview. As concerns statistical applications of functional quantization we refer
+to {{cite:0cc408dd-60e5-4dfe-b96f-62c43b0a1a2b}}, {{cite:a99e3952-c766-4a99-bc85-148795b1b585}}.
+Notations. FORMULA  FORMULA  means FORMULA  and FORMULA ; FORMULA  means FORMULA .
+FORMULA  If FORMULA  (Hilbert space), then FORMULA .
+FORMULA  FORMULA  denotes the integral part of the real FORMULA .
+
+What is quadratic functional quantization?
+Let FORMULA  denote a separable Hilbert space. Let FORMULA  FORMULA  a random vector
+FORMULA  (FORMULA  is endowed with its Borel FORMULA -algebra) such that
+FORMULA . An FORMULA -quantizer (or FORMULA -codebook) is defined as a subset
+FORMULA 
+with cardFORMULA . In numerical applications, FORMULA  is also called grid. Then, one can quantize
+(or simply discretize) FORMULA  by FORMULA  where FORMULA  is a Borel function. It is
+straightforward that
+FORMULA 
+so that the best pointwise approximation of FORMULA  is provided by considering for FORMULA  a nearest neighbour projection on
+FORMULA , denoted FORMULA . Such a projection is in one-to-one correspondence
+with the Voronoi partitions (or diagrams) of FORMULA  induced by FORMULA  FORMULA  the Borel partitions of FORMULA  satisfying
+FORMULA 
+where FORMULA  denotes the closure of FORMULA  in FORMULA  (this heavily uses the Hilbert structure). Then
+FORMULA 
+is a nearest neighbour projection on FORMULA . These projections only differ
+on the boundaries of the Voronoi cells
+FORMULA , FORMULA . All Voronoi partitions have the same boundary contained in the union of
+the median hyperplanes defined by the pairs FORMULA , FORMULA . Figure REF  represents the Voronoi
+diagram defined by a (random) 10-tuple in FORMULA .
+FIGURE 
+Then, one defines a Voronoi FORMULA -quantization of FORMULA  by setting for every
+FORMULA ,
+FORMULA 
+One clearly has, still for every FORMULA , that
+FORMULA 
+The mean (quadratic) quantization error is then defined by
+FORMULA 
+The distribution of FORMULA  as a random vector is given by the FORMULA -tuple FORMULA  of the Voronoi cells. This distribution clearly depends on the choice of the
+Voronoi partition as emphasized by the following elementary situation: if FORMULA , the distribution of FORMULA 
+is given by FORMULA , FORMULA  and FORMULA  since
+FORMULA . However, if
+FORMULA  weights no hyperplane, the distribution of FORMULA  depends only on FORMULA .
+As concerns terminology, Vector Quantization is concerned with the finite dimensional case
+– when FORMULA  – and is a rather old story, going back to the early 1950's when it was designed in
+the field of signal processing and then mainly developed in the community of Information Theory.
+The term functional quantization, probably introduced in {{cite:1c8a30c4-80a7-42a2-8074-fc60c0c3c656}}, {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}, deals with the
+infinite dimensional case including the more general Banach-valued setting. The term
+“functional" comes from the fact that a typical infinite dimensional Hilbert space is
+the function space FORMULA . Then, any (bi-measurable) process FORMULA  can be seen as a random vector taking values in the set of Borel functions on FORMULA . Furthermore,
+FORMULA  if and only if FORMULA  since
+FORMULA 
+
+Optimal (quadratic) quantization
+At this stage we are lead to wonder whether it is possible to design some optimally fitted grids to a given
+distribution FORMULA  FORMULA  which induce the lowest possible mean quantization error among all grids of
+size at most FORMULA . This amounts to the following optimization problem
+FORMULA 
+FIGURE 
+It is convenient at this stage to make a correspondence between
+quantizers of size at most FORMULA  and FORMULA -tuples of FORMULA : to any
+FORMULA -tuple FORMULA  corresponds a quantizer FORMULA  (of size at most FORMULA ). One introduces the
+quadratic distortion, denoted FORMULA , defined on FORMULA  as a (symmetric)
+function by
+FORMULA 
+Note that, combining (REF ) and the definition of the distortion, shows that
+FORMULA 
+so that,
+FORMULA 
+The following proposition shows the existence of an optimal FORMULA -tuple FORMULA  such that FORMULA . The corresponding optimal quantizer at level FORMULA  is denoted
+FORMULA . In finite dimension we refer to {{cite:eaf7dcf7-736c-4694-ba9b-3808aa0ef7d8}} (1982) and in infinite dimension
+to {{cite:1378886d-a93f-4472-a3c9-3538a5570093}} (1988) and
+{{cite:7af057b0-d6fd-4a27-abc1-c6908dc84e39}} (1990); one may also see {{cite:03fba821-f012-4396-9591-b0666507c23a}}, {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}} and {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}. For recent developments on existence and
+pathwise regularity of optimal quantizer see {{cite:4957cb34-6c0a-4dc2-a351-f7d2f79a2696}}.
+FORMULA  The function FORMULA  is lower semi-continuous for
+the product weak topology on FORMULA .
+FORMULA  The function FORMULA  reaches a minimum at a
+FORMULA -tuple FORMULA  (so that FORMULA  is an optimal quantizer at level
+ FORMULA).
+– If FORMULA , the quantizer has full
+size FORMULA  (FORMULA  FORMULA ) and
+FORMULA .
+– If FORMULA , FORMULA .
+Furthermore FORMULA .
+FORMULA  Any optimal (Voronoi)
+quantization at level FORMULA , FORMULA  satisfies
+FORMULA 
+where FORMULA  denotes the FORMULA -algebra generated by
+FORMULA .
+FORMULA  Any optimal (quadratic) quantization at level FORMULA  is a best least square (FORMULA  FORMULA )
+approximation of FORMULA  among all FORMULA -valued random variables taking at most FORMULA  values:
+FORMULA 
+Proof (sketch of): FORMULA  The claim follows from the
+l.s.c. of FORMULA  for the weak topology and Fatou's Lemma.
+FORMULA  One proceeds by induction on FORMULA . If FORMULA , the
+optimal 1-quantizer is FORMULA  and
+FORMULA .
+Assume now that an optimal quantizer FORMULA  does exist at
+level FORMULA .
+FORMULA  – If FORMULA , then the FORMULA -tuple
+FORMULA  (among other possibilities) is also optimal at level FORMULA  and
+FORMULA .
+FORMULA  – Otherwise, FORMULA , hence
+FORMULA  has pairwise distinct components and there exists FORMULA .
+Then, with obvious notations,
+FORMULA 
+Then, the set FORMULA  is non empty, weakly closed since FORMULA 
+is l.s.c.. Furthermore, it is bounded in FORMULA . Otherwise there would exist a sequence FORMULA  such
+that FORMULA  as FORMULA . Then, by Fatou's Lemma, one checks
+that
+FORMULA 
+Consequently FORMULA  is weakly compact and the minimum of FORMULA  on FORMULA  is
+clearly its minimum over the whole space FORMULA . In particular
+FORMULA 
+If FORMULA , set FORMULA  (as sets) so that t
+FORMULA  which implies FORMULA .
+To establish that FORMULA  goes to 0, one
+considers an everywhere dense sequence FORMULA  in the separable space FORMULA .
+Then, FORMULA  goes to 0 as FORMULA  for every FORMULA . Furthermore, FORMULA . One concludes by the Lebesgue dominated convergence
+Theorem that FORMULA  goes to 0 as FORMULA .
+FORMULA  and FORMULA  Temporarily set FORMULA  for convenience. Let
+FORMULA  be a random vector taking at most FORMULA 
+values. Set FORMULA . Since FORMULA  is a
+Voronoi quantization of FORMULA  induced by FORMULA ,
+FORMULA 
+so that
+FORMULA 
+On the other hand, the optimality of FORMULA  implies
+FORMULA 
+Consequently
+FORMULA 
+The inequality holds as an equality since FORMULA  takes at most FORMULA  values. Furthermore,
+considering random vectors of the form FORMULA  (which take at most as many values as the
+size of FORMULA ) shows, going back to the very definition of conditional expectation, that FORMULA  FORMULA -FORMULA   FORMULA
+Item FORMULA  introduces a very important notion in (quadratic) quantization.
+ A quantizer FORMULA  is stationary (or
+self-consistent) if (there is a nearest neighbour projection such that FORMULA 
+satisfying)
+FORMULA 
+
+Note in particular that any stationary quantization satisfies FORMULA .
+As shown by Proposition FORMULA  any quadratic
+optimal quantizer at level FORMULA  is stationary. Usually, at least
+when FORMULA , there are other stationary quantizers: indeed, the distortion function
+FORMULA  is FORMULA -differentiable at FORMULA -quantizers
+FORMULA  with pairwise distinct components and
+FORMULA 
+hence, any critical points of FORMULA  is a stationary quantizer.
+Remarks and comments. FORMULA  In fact (see Theorem 4.2, p. 38, {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}), the Voronoi
+partitions of FORMULA  always have a FORMULA -negligible boundary so that (REF ) holds for any
+Voronoi diagram induced by FORMULA .
+FORMULA  The problem of the uniqueness of
+optimal quantizer (viewed as a set) is not mentioned in the above
+proposition. In higher dimension, this essentially never occurs. In
+one dimension, uniqueness of the optimal FORMULA -quantizer was first established
+in {{cite:369111f9-8929-40cc-afc0-1a351d63be08}}
+with strictly FORMULA -concave density function. This was successively
+extended
+in {{cite:9eae5128-63b8-4052-a6e8-6013f81051da}} and {{cite:402b794b-b5b3-4244-8518-c7febec0c5c9}}
+and lead to the following criterion (for
+more general “loss" functions than the square function):
+If the distribution of FORMULA  is absolutely continuous with a FORMULA -concave
+density function, then, for every FORMULA , there exists only one stationary quantizer of size FORMULA ,
+which turns out to be the optimal quantizer at level FORMULA .
+More recently,
+a more geometric approach to
+uniqueness based on the Mountain Pass Lemma first developed in {{cite:b4c1ab47-1132-40a3-9464-a211f3e7fc77}} and then generalized
+in {{cite:0d724217-5c5c-484b-ba2b-944ce1ce585a}}) provided a slight extension of the above criterion (in terms of loss functions).
+This FORMULA -concavity assumption is satisfied by many families of probability distributions
+like the uniform distribution on compact intervals, the normal
+distributions, the gamma distributions. There are examples of
+distributions with a non FORMULA -concave density function having a
+unique optimal quantizer for every FORMULA  (see FORMULA  the Pareto
+distribution in {{cite:b7a7e3e9-8bff-4df4-820a-b91f22c70744}}). On the other hand simple examples of
+scalar distributions having multiple optimal quantizers at a given
+level can be found in {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}.
+FORMULA  A stationary quantizer can be sub-optimal.
+This will be emphasized in Section  for the Brownian motion
+(but it is also true for finite dimensional Gaussian random vectors)
+where some families of sub-optimal quantizers – the product
+quantizers designed from the Karhunen-Lov̀e basis – are stationary quantizers.
+FORMULA  For the uniform distribution over an interval
+FORMULA , there is a closed form for the optimal quantizer at level
+FORMULA  given by
+FORMULA . This
+FORMULA -quantizer is optimal not only in the quadratic case but also for
+any FORMULA -quantization (see a definition further on). In general there is no such closed form,
+either in 1 or higher dimension. However, in {{cite:b7a7e3e9-8bff-4df4-820a-b91f22c70744}} some
+semi-closed forms are obtained for several families of (scalar)
+distributions including the exponential and the Pareto distributions: all the optimal quantizers can be expressed
+using a single underlying sequence FORMULA  defined by an induction
+FORMULA .
+FORMULA  In one dimension, as soon as the optimal quantizer at level FORMULA  is
+unique (as a set or as an FORMULA -tuple with increasing components), it
+is generally possible to compute it as the solution of the stationarity
+equation (REF ) either by a zero search (Newton-Raphson gradient descent) or a fixed point
+(like the specific Lloyd I procedure, see {{cite:9e231bba-5e7f-43fc-a915-b671d656cd2c}}) procedure.
+FORMULA  In higher dimension, deterministic
+optimization methods become intractable and one uses stochastic
+procedures to compute optimal quantizers. The main topic of this paper being functional quantization, we
+postponed the short overview on these aspects to Section , devoted to the optimal quantization
+of the Brownian motion. But it is to be noticed that all efficient optimization methods rely on the so-called splitting method which increases progressively the quantization level
+FORMULA . This method is directly inspired by the
+induction developed in the proof of claim FORMULA  of Proposition  since one designs the starting
+value of the optimization procedure at size FORMULA  by “merging" the
+optimized FORMULA -quantizer obtained at level FORMULA  with one further point of FORMULA , usually randomly sampled with
+respect to an appropriate distribution (see {{cite:c1acae49-3563-46cc-8385-e854d79d456c}} for a discussion).
+FORMULA  As concerns functional quantization, FORMULA  FORMULA , there is a close connection
+between the regularity of optimal (or even stationary) quantizers and that of FORMULA  form FORMULA  into
+FORMULA . Furthermore, as concerns optimal quantizers of Gaussian processes, one shows (see {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}) that
+they belong to the reproducing space of their covariance operator, FORMULA  to the Cameron-Martin space
+FORMULA  when FORMULA . Other properties of optimal quantization of
+Gaussian processes are established in {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}.
+Extensions to the FORMULA -quantization of random variables.
+In this paper, we focus on the purely quadratic framework (FORMULA  and FORMULA -norms), essentially because
+it is a natural (and somewhat easier) framework for the computation of optimized
+grids for the Brownian motion and for some first applications (like the pricing of path-dependent options,
+see section ). But a more general and natural framework is to consider the functional
+quantization of random vectors taking values in a separable Banach space FORMULA . Let
+FORMULA , such that FORMULA  for some FORMULA  (the case FORMULA  can also be taken in consideration).
+The FORMULA -level FORMULA -quantization problem for FORMULA  reads
+FORMULA 
+The main examples for FORMULA  are the non-Euclidean norms on FORMULA , the functional spaces
+FORMULA , FORMULA , equipped with
+its usual norm, FORMULA , etc. As concerns, the existence of an optimal quantizer, it
+holds true for reflexive Banach spaces (see Pärna (90)) and FORMULA , but otherwise it may fail even when FORMULA 
+(see {{cite:4957cb34-6c0a-4dc2-a351-f7d2f79a2696}}). In finite dimension, the Euclidean feature is not
+crucial (see {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}). In the functional setting, many results
+originally obtained in a Hilbert setting have been extended to the Banach
+setting either for existence or regularity results (see {{cite:4957cb34-6c0a-4dc2-a351-f7d2f79a2696}})
+or for rates
+see {{cite:652e7283-f476-463b-ac81-3233606e12a1}}, {{cite:d0cf52ec-4772-49ec-8212-c6055626cfa5}}, {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}}, {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}}.
+
+Cubature formulae: conditional expectation and numerical integration
+Let FORMULA  be a continuous functional (with respect to the
+norm FORMULA ) and let FORMULA  be an
+FORMULA -quantizer. It is natural to
+approximate FORMULA  by FORMULA . This
+quantity FORMULA  is simply the finite
+weighted sum
+FORMULA 
+Numerical computation of FORMULA  is possible as soon as FORMULA  can be computed at any
+FORMULA  and the distribution FORMULA  of FORMULA  is known. The induced
+quantization error
+FORMULA  is used to control the error
+(see below). These quantities related to the quantizer FORMULA  are also called companion parameters.
+Likewise, one can consider a priori the FORMULA -measurable random variable
+FORMULA  as a good approximation of the conditional
+expectation FORMULA .
+Lipschitz functionals
+Assume that the functional FORMULA  is Lipschitz continuous on FORMULA . Then
+FORMULA 
+so that, for every real exponent FORMULA ,
+FORMULA 
+(where we applied conditional Jensen inequality to the convex
+function FORMULA ). In particular, using that
+FORMULA , one derives (with
+FORMULA ) that
+FORMULA 
+Finally, using the monotony of the FORMULA -norms as a function of FORMULA  yields
+FORMULA 
+In fact, considering the Lipschitz functional
+FORMULA , shows that
+FORMULA 
+The Lipschitz functionals making up a characterizing family for the weak convergence of probability measures on
+FORMULA , one derives that, for any sequence of FORMULA -quantizers FORMULA  satisfying
+FORMULA  as FORMULA ,
+FORMULA 
+where FORMULA  denotes the weak convergence
+of probability measures on FORMULA .
+
+Differentiable functionals with Lipschitz differentials
+Assume now that FORMULA  is
+differentiable on FORMULA , with a Lipschitz continuous differential FORMULA , and that
+the quantizer FORMULA  is stationary (see Equation (REF )).
+A Taylor expansion yields
+FORMULA 
+Taking conditional expectation given FORMULA  yields
+FORMULA 
+Now, using that the random variable FORMULA  is
+FORMULA -measurable, one has
+FORMULA 
+so that
+FORMULA 
+Then, for every real exponent FORMULA ,
+FORMULA 
+In particular, when FORMULA , one derives like in the former setting
+FORMULA 
+In fact, the above inequality holds provided FORMULA  is FORMULA  with
+Lipschitz differential on every Voronoi cell FORMULA . A similar
+characterization to (REF ) based on these functionals could be established.
+Some variant of these cubature formulae can be found in {{cite:c1acae49-3563-46cc-8385-e854d79d456c}}
+or {{cite:609682cf-ebef-4624-9065-107b54f0a744}} for functions or functionals FORMULA  having only
+some local Lipschitz regularity.
+
+Quantized approximation of  FORMULA
+Let FORMULA  and FORMULA  be two FORMULA -valued random vector defined on the
+same probability space FORMULA  and FORMULA  be a
+Borel functional. The natural idea is to approximate
+FORMULA  by the quantized conditional expectation
+FORMULA  where FORMULA  and FORMULA  are quantizations of FORMULA  and FORMULA  respectively.
+Let FORMULA  be a (Borel) version of the conditional
+expectation FORMULA  satisfying
+FORMULA 
+Usually, no closed form is available for the function FORMULA  but
+some regularity property can be established, especially in a
+(Feller) Markovian framework. Thus assume that both FORMULA  and
+FORMULA  are Lipschitz continuous with Lipschitz coefficients FORMULA  and FORMULA . Then
+FORMULA 
+Hence, using that FORMULA  is FORMULA -measurable and that conditional expectation is an FORMULA -contraction,
+FORMULA 
+The last inequality follows form the definition of conditional
+expectation given FORMULA  as the best quadratic approximation
+among FORMULA -measurable random variables. On the other
+hand, still using that FORMULA  is an FORMULA -contraction and this time that
+FORMULA  is Lipschitz continuous yields
+FORMULA 
+Finally,
+FORMULA 
+In the non-quadratic case the above inequality remains valid
+provided FORMULA  is replaced by FORMULA .
+
+Vector quantization rate (FORMULA )
+The fact that
+FORMULA  is a non-increasing sequence that goes to 0 as
+FORMULA  goes to FORMULA  is a rather simple result
+established in Proposition . Its rate of
+convergence to 0 is a much more challenging problem. An answer is
+provided by the so-called Zador Theorem stated below.
+This theorem was first stated and established for distributions
+with compact supports by Zador (see {{cite:30c82cf1-9a01-45dd-b44b-c51959b3fa58}}, {{cite:bf96457c-da0f-4ebb-a288-9d3534a4cdd7}}).
+Then a first extension to general probability distributions on FORMULA 
+is developed in {{cite:591c2811-add2-44c0-9f7c-90d9eda1597c}}. The first mathematically rigorous proof can be found in {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}, and relies on a
+random quantization argument (Pierce Lemma).
+ FORMULA  Sharp rate. Let FORMULA  and FORMULA 
+for some FORMULA . Let FORMULA  be the canonical decomposition of
+the distribution of FORMULA  (FORMULA  and the Lebesgue measure are
+singular). Then (if FORMULA ),
+FORMULA 
+where FORMULA .
+FORMULA  Non asymptotic upper bound (see FORMULA  {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}}). Let FORMULA . There exists
+FORMULA  such that, for every
+FORMULA -valued random vector FORMULA ,
+FORMULA 
+Remarks.
+FORMULA  The real constant FORMULA  clearly corresponds to
+the case of the uniform distribution over the unit hypercube FORMULA  for which the slightly more precise
+statement holds
+FORMULA 
+The proof is based on a self-similarity argument. The value of FORMULA  depends
+on the reference norm on FORMULA . When FORMULA , elementary
+computations show that
+FORMULA . When FORMULA , with the canonical Euclidean norm,
+one shows (see {{cite:1fdf2233-7533-4352-900f-869bf0a06187}} for a proof, see also {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}) that
+FORMULA .
+Its exact value is unknown for FORMULA  but, still for the canonical Euclidean
+norm, one has (see {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}) using some random quantization arguments,
+FORMULA 
+FORMULA  When FORMULA  the distribution of FORMULA  is purely singular. The rate (REF )
+still holds in the sense that FORMULA .
+Consequently, this is not the right asymptotics. The quantization problem
+for singular measures (like uniform distribution on fractal compact sets)
+has been extensively investigated by several authors, leading to
+the definition of a quantization dimension in connection with the rate
+of convergence of the quantization error on these sets. For more
+details we refer to {{cite:7ea69acb-f70b-473f-8628-6d65cd00f8fe}}, {{cite:92c93e30-97e4-4c16-aacb-73538c718481}} and the references therein.
+FORMULA  A more naive way to quantize the
+uniform distribution on the unit
+hypercube is to proceed by product quantization FORMULA  by
+quantizing the marginals of the uniform distribution. If FORMULA , FORMULA , one easily proves that the best quadratic
+product quantizer (for the canonical Euclidean norm on FORMULA ) is the “midpoint square grid"
+FORMULA 
+which induces a quadratic quantization error equal to
+FORMULA 
+Consequently, product quantizers are still rate optimal in
+every dimension FORMULA . Moreover, note that the ratio of these two rates remains bounded as FORMULA .
+
+Optimal quantization and  FORMULA
+The principle of Quasi-Monte Carlo method (FORMULA ) is to approximate the integral of a function FORMULA 
+with respect to the uniform distribution on
+FORMULA , FORMULA  FORMULA  (FORMULA  denotes the Lebesgue
+measure on FORMULA ), by the uniformly weighted sum
+FORMULA 
+of values of FORMULA  at the points of a so-called low discrepancy FORMULA -tuple FORMULA  (or set).
+This FORMULA -tuple can the first FORMULA  terms of an infinite sequence.
+If FORMULA  has finite variations denoted FORMULA  – either in the measure sense (see {{cite:bd769260-e8b0-45c6-9117-b7092a4cb5f4}}, {{cite:51887b14-dde1-431b-8f9b-1f9074b2fcde}}) or in the Hardy and Krause sense (see {{cite:55d5c0d7-9e4c-41fc-bf53-1ad9764f9642}}
+p.19) – the Koksma-Hlawka inequality provides an upper bound for the integration error induced by this method, namely
+FORMULA 
+where
+FORMULA 
+(with FORMULA , FORMULA ). The error modulus
+FORMULA  denotes the discrepancy at the origin of the FORMULA -tuple
+FORMULA . For every FORMULA , there exists FORMULA -valued FORMULA -tuples
+FORMULA  such that
+FORMULA 
+where FORMULA  is a real constant only depending on FORMULA . This result can be proved using the so-called Hammersely procedure (see
+FORMULA  {{cite:55d5c0d7-9e4c-41fc-bf53-1ad9764f9642}}, p.31). When
+FORMULA  is made of the first FORMULA  terms of a FORMULA -valued sequence FORMULA , then the above upper bound has be
+replaced by
+FORMULA  (FORMULA ). Such a sequence FORMULA  is said to be a sequence
+with low discrepancy (see {{cite:55d5c0d7-9e4c-41fc-bf53-1ad9764f9642}} an the references therein for a comprehensive theoretical overview, but also {{cite:bd769260-e8b0-45c6-9117-b7092a4cb5f4}}, {{cite:51887b14-dde1-431b-8f9b-1f9074b2fcde}} for examples
+supported by numerical tests). When one only has
+FORMULA  as
+FORMULA , the sequence is said to be uniformly distributed in FORMULA .
+It is widely shared by
+FORMULA  specialists that these rates are (in some sense) optimal although this remains a conjecture except when
+FORMULA . To be precise what is known and what is conjectured is the following:
+– Any FORMULA -valued FORMULA -tuple FORMULA  satisfies FORMULA  where FORMULA  if FORMULA 
+(see {{cite:610e3bb6-2482-4b5d-ba5f-85e516a25740}} and also {{cite:55d5c0d7-9e4c-41fc-bf53-1ad9764f9642}} and the references therein),
+FORMULA  and FORMULA  is a real constant only depending on FORMULA ; the
+conjecture is that
+FORMULA .
+– Any FORMULA -valued sequence FORMULA  satisfies FORMULA  for infinitely many FORMULA , where FORMULA  if
+FORMULA  and FORMULA  and FORMULA  is a real constant only depending on FORMULA ; the conjecture is that FORMULA . This follows from the result
+for
+FORMULA -tuple by the Hammersley procedure (see
+FORMULA  {{cite:bd769260-e8b0-45c6-9117-b7092a4cb5f4}}).
+Furthermore, as concerns the use of Koksma-Hlawka inequality as an error bound for FORMULA  numerical integration, the different notions of
+finite variation (which are closely connected) all become more and more restrictive – and subsequently less and less “natural" as a regularity
+property of functions – when the dimension FORMULA  increases. Thus the
+Lipschitz continuous function FORMULA  defined by
+FORMULA  has infinite
+variation on FORMULA .
+When applying Quasi-Monte Carlo approximation of integrals with “standard" continuous functions on FORMULA , the best known error
+bound, due to Proinov, is given by the following theorem.
+ (Proinov {{cite:0ad35f97-5da8-4d40-84b6-35754aaab133}}) FORMULA  Assume FORMULA  is equipped with the FORMULA -norm FORMULA . Let FORMULA . For every continuous function FORMULA ,
+FORMULA 
+where FORMULA , FORMULA ,
+is the uniform continuity modulus of FORMULA  (with respect to the FORMULA -norm) and FORMULA  is a universal constant only depending on FORMULA .
+FORMULA  If FORMULA , FORMULA  and if FORMULA , FORMULA .
+Remark. Note that if FORMULA  is Lipschitz continuous, then FORMULA  where FORMULA 
+denotes the Lipschitz coefficient of FORMULA  (with respect to the FORMULA -norm).
+First, this result emphasizes that low discrepancy sequences or sets do suffer from the curse of dimensionality when a FORMULA  approximation is
+implemented on functions having a “natural" regularity like Lipschitz continuity.
+One also derives from this theorem an inequality between FORMULA -quantization error of the uniform distribution FORMULA  and
+the discrepancy at the origin of a FORMULA -tuple FORMULA , namely
+FORMULA 
+since the function
+FORMULA  is clearly FORMULA -Lipschitz continuous with Lipschitz coefficient 1. The inequality
+also follows from the characterization established in (REF ) (which is clearly still true for non Euclidean norms). Then one may derive some
+bounds for Euclidean norms (and in fact any norms) on FORMULA  (probably not sharp in terms of constant) since all the norms are strongly equivalent.
+However the bounds for optimal quantization error derived from Zador's Theorem (FORMULA  and those for low discrepancy sets (see (REF ))
+suggest that overall, optimal quantization provides lower error bounds
+for numerical integration of Lipschitz functions than low discrepancy
+sets, at least for for generic values of
+FORMULA . (However, standard computations show that for midpoint square grids
+(with
+FORMULA  points) both quantization errors and discrepancy behave like FORMULA ).
+
+Optimal quadratic functional quantization of Gaussian processes
+Optimal quadratic functional quantization of Gaussian processes is closely
+related to their so-called Karhunen-Loève expansion which
+can be seen in some sense as some infinite dimensional Principal Component Analysis (FORMULA ) of a
+(Gaussian) process. Before stating a general result for Gaussian
+processes, we start by the standard Brownian motion: it is the most important example in view of
+(numerical) applications and for this process, everything can be made explicit.
+Brownian motion
+One considers the Hilbert space
+FORMULA , FORMULA ,
+FORMULA . The covariance operator FORMULA  of the Brownian motion FORMULA  is defined on FORMULA  by
+FORMULA 
+It is a symmetric positive trace class operator which can be diagonalized in the so-called Karhunen-Loève
+(FORMULA -FORMULA ) orthonormal basis FORMULA  of FORMULA , with eigenvalues FORMULA , given by
+FORMULA 
+This classical result can be established as a simple exercise by solving the functional equation FORMULA .
+In particular, one can expand FORMULA  itself on this basis so that
+FORMULA 
+Now, the orthonormality of the (FORMULA -FORMULA ) basis implies, using Fubini's Theroem,
+FORMULA 
+where FORMULA  denotes the Kronecker symbol. Hence the Gaussian sequence FORMULA  is pairwise non-correlated
+which implies that these random variables are independent. The above identity also implies that FORMULA .
+Finally this shows that
+FORMULA 
+where FORMULA , FORMULA , is an i.i.d. sequence of FORMULA -distributed random variables.
+Furthermore, this FORMULA -FORMULA  expansion converges in a much stronger sense since FORMULA  FORMULA -FORMULA  and
+FORMULA 
+(see FORMULA  {{cite:30550f89-9af0-4a34-9e79-ae4c30e86990}}). Similar results (with various rates) hold true for a wide class of Gaussian processes expanded on
+“admissible" basis (see FORMULA  {{cite:620862db-8884-45db-b2a6-d5dbe85388ea}}).
+({{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}} (2002) and {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}} (2003)) Let
+FORMULA , FORMULA , be a sequence of optimal FORMULA -quantizers for FORMULA .
+FORMULA  For every FORMULA , FORMULA  with FORMULA . Furthermore FORMULA  and FORMULA  are independent.
+FORMULA  FORMULA  as FORMULA .
+Remark. FORMULA  The fact, confirmed by numerical experiments (see Section REF 
+Figure REF ), that FORMULA  holds as a conjecture.
+FORMULA  Denoting FORMULA  the orthogonal projection on FORMULA , one derives from FORMULA  that FORMULA  (optimal quantization at level FORMULA ) and
+FORMULA 
+where FORMULA .
+
+Centered Gaussian processes
+The above Theorem REF  devoted to the standard Brownian motion is a particular case of a more general theorem which holds for a wide
+class of Gaussian processes
+({{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}} (2002) and {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}} (2004)) Let FORMULA  be a Gaussian process
+with
+FORMULA -FORMULA  eigensystem FORMULA  (with FORMULA  is non-increasing). Let FORMULA , FORMULA , be
+a sequence of quadratic optimal FORMULA -quantizers for
+FORMULA . Assume
+FORMULA 
+FORMULA  FORMULA  and FORMULA .
+FORMULA  FORMULA .
+Remarks. FORMULA  The above result admits an extension to the case FORMULA  as FORMULA  with FORMULA  regularly varying, index FORMULA  (see {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}}).
+In {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}, upper or lower bounds are also established when
+FORMULA 
+FORMULA  The sharp asymptotics FORMULA  holds as a conjecture.
+Applications to classical (centered) Gaussian processes.
+FORMULA  Brownian bridge: FORMULA , FORMULA  and
+FORMULA , FORMULA , so that FORMULA .
+FORMULA  Fractional Brownian motion with Hurst constant  FORMULA
+FORMULA 
+where FORMULA 
+and FORMULA  denotes the Gamma function at FORMULA .
+FORMULA  Some further explicit sharp rates can be derived from the above
+theorem for other classes of Gaussian stochastic processes (see {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}}, 2004) like the fractional
+Ornstein-Uhlenbeck processes, the Gaussian diffusions, a wide class Gaussian
+stationary processes (the quantization rate is derived from the high frequency asymptotics of its spectral
+density, assumed to be square integrable on the real line), for the FORMULA -folded integrated Brownian motion,
+the fractional Brownian sheet, etc.
+FORMULA  Of course some upper bounds can be derived for some even wider classes of processes,
+based on the above first remark (see FORMULA  {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}, 2002).
+Extensions to  FORMULA When the processes have some self-similarity
+properties, it is possible to obtain some sharp rates in the non purely quadratic case: this has
+been done for fractional Brownian motion in {{cite:d0cf52ec-4772-49ec-8212-c6055626cfa5}} using some quite different techniques
+in which self-similarity properties plays there a crucial role. It leads to the following sharp
+rates, for
+FORMULA  and
+ FORMULA
+FORMULA 
+
+Numerical optimization of quadratic functional quantization
+Thanks to the scaling property of Brownian motion, one may focus on the normalized case FORMULA . The numerical approach to
+optimal quantization of the Brownian motion is essentially based on Theorem REF  and the
+remark that follows: indeed these results show that quadratic
+optimal functional quantization of a centered Gaussian process
+reduces to a finite dimensional optimal quantization problem for a
+Gaussian distribution with a diagonal covariance structure. Namely
+the optimization problem at level FORMULA  reads
+FORMULA 
+Moreover, if FORMULA  denotes an optimal FORMULA -quantizer of
+FORMULA , then, the optimal FORMULA -quantizer
+FORMULA  of FORMULA  reads FORMULA  with
+FORMULA 
+The good news is that FORMULA  is in fact a finite
+dimensional quantization optimization problem for each FORMULA .
+The bad news is that the problem is somewhat ill conditioned since the
+decrease of the eigenvalues of FORMULA  is very steep for small values of
+FORMULA :
+FORMULA , FORMULA . This is probably one reason for which former
+attempts to produce good quantization of the Brownian motion first
+focused on other kinds of quantizers like scalar product
+quantizers (see {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}} and Section REF  below) or
+FORMULA -dimensional block product quantizations (see {{cite:d2e8fc7d-40a2-4d1c-8ca7-ba9b16a39b4d}}
+and {{cite:fabb6640-f7d0-43b7-b979-f2f341b14bc9}}).
+Optimization of the (quadratic) quantization of FORMULA -valued random vector
+has been extensively investigated since the early 1950's,
+first in 1-dimension, then in higher dimension when the cost of numerical
+Monte Carlo simulation was drastically cut down
+(see {{cite:1e8275bd-3a0b-4f7f-918f-c87b2b58ae01}}). Recent application of optimal vector quantization to numerics
+turned out to be much more demanding in terms of
+accuracy. In that direction, one may cite {{cite:c1acae49-3563-46cc-8385-e854d79d456c}}, {{cite:60ccfdba-69e0-4683-8c68-d9482c37cbce}}
+(mainly focused on numerical optimization of the quadratic
+quantization of normal distributions). To apply the methods developed in
+these papers, it is more convenient to rewrite our optimization
+problem with respect to the standard FORMULA -dimensional distribution FORMULA 
+by simply considering the Euclidean norm derived
+from the covariance matrix FORMULA   FORMULA
+FORMULA 
+The main point is of course that the dimension FORMULA  is unknown.
+However (see Figure REF ), one clearly verifies on small values
+of FORMULA  that the conjecture (FORMULA ) is most likely true. Then for higher
+values of FORMULA  one relies on it to shift from one dimension to
+another following the rule FORMULA ,
+FORMULA .
+A toolbox for quantization optimization: a short overview
+Here is a short overview of stochastic optimization methods to compute
+optimal or at least locally optimal quantizers in finite dimension. For
+more details we refer to {{cite:c1acae49-3563-46cc-8385-e854d79d456c}} and the references therein. Let FORMULA .
+Competitive Learning Vector Quantization (FORMULA ).
+This procedure is a recursive stochastic approximation gradient descent
+based on the integral representation of the gradient FORMULA  (temporarily coming back to FORMULA -tuple notation)
+of the distortion as the expectation of a local gradient
+ FORMULA
+FORMULA 
+so that, starting from FORMULA , one sets
+FORMULA 
+where FORMULA  is a real constant to be tuned. As set, this looks quite formal but the
+operating
+FORMULA  procedure consists of two phases at each iteration:
+FORMULA  Competitive Phase: Search of the nearest neighbor FORMULA  of FORMULA 
+among the components of
+FORMULA , FORMULA  (using a “winning convention" in case of conflict on the
+boundary of the Voronoi cells).
+FORMULA  Cooperative Phase: One moves the winning component toward FORMULA  using a
+dilatation FORMULA 
+FORMULA .
+This procedure is useful for small or medium values of FORMULA . For an extensive study of this procedure, which turns out to be
+singular in the world of recursive stochastic approximation algorithms, we
+refer to {{cite:b695f036-243b-45b1-8880-43127d07fa13}}. For general background on stochastic approximation,
+we refer to {{cite:023fdef4-cb6e-4664-9259-666602c9424b}}, {{cite:4a3e4825-dfd2-4c42-933c-fbb5a660f3c6}}.
+The randomized “Lloyd I procedure". This
+is the randomization of the stationarity based fixed point procedure since any optimal quantizer
+satisfies (REF ):
+FORMULA 
+At every iteration the conditional expectation FORMULA  is computed using a Monte Carlo simulation. For
+more details about practical aspects of Lloyd I procedure we refer
+to {{cite:c1acae49-3563-46cc-8385-e854d79d456c}}. In {{cite:60ccfdba-69e0-4683-8c68-d9482c37cbce}}, an approach based on genetic evolutionary algorithms is developed.
+For both procedures, one may substitute a sequence of quasi-random numbers to the usual pseudo-random sequence.
+This often speeds up the rate of convergence of the method, although this can only be proved (see {{cite:50683cbc-9b2c-40e9-be72-14cd2db0900c}}) for a
+very specific class of stochastic algorithm (to which FORMULA  does not belong).
+The most important step to preserve the accuracy of the quantization as FORMULA  (and FORMULA ) increase is to
+use the so-called splitting method which finds its origin in the proof
+of the existence of an optimal FORMULA -quantizer: once the optimization
+of a quantization grid of size FORMULA  is achieved, one specifies the
+starting grid for the size FORMULA  or more generally FORMULA , FORMULA , by
+merging the optimized grid of size FORMULA  resulting from the former
+procedure with FORMULA  points sampled independently from
+the normal distribution with probability density proportional to
+FORMULA  where FORMULA  denotes the p.d.f. of
+FORMULA . This rather unexpected choice is motivated by
+the fact that this distribution provides the
+lowest in average random quantization error (see {{cite:0d724217-5c5c-484b-ba2b-944ce1ce585a}}).
+As a result, to be downloaded on the website {{cite:8d16a0d1-2094-4d29-950c-df70b1357799}} devoted to quantization:
+ FORMULA
+FORMULA  Optimized stationary codebooks for  FORMULA: in
+practice, the FORMULA -quantizers FORMULA  of the distribution
+FORMULA , FORMULA  up to
+FORMULA  (FORMULA  runs from 1 up to 9).
+FORMULA  Companion parameters:
+FORMULA  – distribution of FORMULA : FORMULA .
+FORMULA  – The quadratic quantization error: FORMULA .
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+
+An alternative: product functional quantization
+Scalar Product functional quantization is a quantization method
+which produces rate optimal sub-optimal quantizers. They
+were used FORMULA  in {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}} to provide exact rate (although not
+sharp) for a very large class of processes. The first attempts to use functional quantization
+for numerical computation with the Brownian motion was achieved
+with these quantizers (see {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}}). We will see further on
+their assets. What follows is presented for the Brownian motion but
+would work for a large class of centered Gaussian processes.
+Let us consider again the expansion of FORMULA  in its FORMULA -FORMULA  basis :
+FORMULA 
+where FORMULA  is an i.i.d. sequence FORMULA -distributed random variables (keep in mind this convergence also holds FORMULA  uniformly in FORMULA ). The idea is
+simply to quantize these (normalized) random coordinates FORMULA : for every
+FORMULA , one considers an optimal FORMULA -quantization of FORMULA ,
+denoted FORMULA  (FORMULA ). For FORMULA ,
+set FORMULA  and FORMULA  (which is the optimal
+1-quantization). The integer FORMULA  is called the length of
+the product quantization. Then, one sets
+FORMULA 
+Such a quantizer takes FORMULA  values.
+If one denotes by
+FORMULA  the (unique) optimal
+quadratic FORMULA -quantizer of the FORMULA -distribution, the
+underlying quantizer of the above quantization FORMULA  can be expressed as follows (if one
+introduces the appropriate multi-indexation): for every multi-index
+FORMULA , set
+FORMULA 
+Then the product quantization FORMULA 
+can be rewritten as
+FORMULA 
+where the Voronoi cell of FORMULA  is given by
+FORMULA 
+with FORMULA ,
+FORMULA , FORMULA .
+Quantization rate by product quantizers
+It is clear that the optimal product quantizer is the solution to
+the optimal integral bit allocation
+FORMULA 
+Expanding FORMULA  yields
+FORMULA 
+FORMULA 
+(see {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}) For every FORMULA , there exists an optimal scalar product quantizer
+of size at most FORMULA  (or at level FORMULA ), denoted FORMULA , of the
+Brownian motion defined as the solution to the minimization
+problem (REF ). Furthermore these optimal product
+quantizers make up a rate optimal sequence: there exists a real
+constant FORMULA  such that
+FORMULA 
+Proof (sketch of). By scaling one may assume without loss of generality that FORMULA . Combining (REF )
+and Zador's Theorem shows
+FORMULA 
+with FORMULA . Setting FORMULA  and FORMULA , FORMULA , yields the announced
+upper-bound.  FORMULA
+Remarks. FORMULA  One can show that the length
+FORMULA  of the optimal quadratic product quantizer satisfies
+FORMULA 
+FORMULA  The most striking fact is that very few ingredients are
+necessary to make the proof work as far as the quantization rate is
+concerned. We only need the basis of FORMULA  on
+which FORMULA  is expanded to be orthonormal or the random
+coordinates to be orthogonal in FORMULA . This robustness of the
+proof has been used to obtain some upper bounds for very wide
+classes of Gaussian processes by considering alternative orthonormal
+basis of FORMULA  like the Haar basis for processes having
+self-similarity properties (see {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}), or trigonometric
+basis for stationary processes (see {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}). More recently,
+combined with the non asymptotic Zador's Theorem, it was used to
+provide some connections between mean regularity of stochastic
+processes and quantization rate (see Section  and {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}}).
+FORMULA  Block quantizers combined with large deviations estimates
+were used to provide the sharp rate obtained in Theorem REF  in {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}}.
+FORMULA  FORMULA -dimensional block quantization is also
+possible, possibly with varying block size, providing a constructive approach to sharp
+rate, see {{cite:d2e8fc7d-40a2-4d1c-8ca7-ba9b16a39b4d}} and {{cite:fabb6640-f7d0-43b7-b979-f2f341b14bc9}}.
+FORMULA  A similar approach can also provide some FORMULA -rates for product quantization with respect to the
+FORMULA -norm over FORMULA , see {{cite:30550f89-9af0-4a34-9e79-ae4c30e86990}}.
+
+How to use product quantizers for numerical computations ?
+For numerics one can assume by a scaling argument that FORMULA . To use product quantizers for numerics we need to have access to
+the quantizers (or grid) at a given level FORMULA , their weights (and
+the quantization error). All these quantities are available with
+product quantizers. In fact the first attempts to use functional
+quantization for numerics (path dependent option pricing) were
+carried out with product quantizers (see {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}}).
+FORMULA  The optimal product quantizers (denoted FORMULA ) at level FORMULA  are
+explicit, given the optimal quantizers of the scalar normal
+distribution FORMULA . In fact the optimal allocation of the size FORMULA  of each
+marginal has been already achieved up to very high values of FORMULA . Some typical optimal allocation (and the resulting
+quadratic quantization error) are reported in the table below.
+ TABLE
+FORMULA  The weights FORMULA  are explicit too:
+the normalized coordinates FORMULA  of FORMULA  in its FORMULA -FORMULA  basis are
+independent, consequently
+FORMULA 
+FORMULA  Equation () shows that the
+(squared) quantization error of a product quantizer can be
+straightforwardly computed as soon as one knows the eigenvalues and
+the (squared) quantization error of the normal distributions for
+the FORMULA 's.
+The optimal allocations up to FORMULA  can
+be downloaded on the website {{cite:8d16a0d1-2094-4d29-950c-df70b1357799}}
+as well as the necessary 1-dimensional optimal quantizers (including the weights and the
+quantization error) of the scalar normal
+distribution (up to a size of 500 which quite enough for this
+purpose).
+For numerical purpose we are also interested in the stationarity
+property since such quantizers produce lower (weak) errors in cubature formulas.
+(see {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}}) The product quantizers obtained from the FORMULA -FORMULA  basis
+are stationary quantizers (although sub-optimal).
+Proof. Firstly, note that
+FORMULA 
+so that FORMULA . Consequently
+FORMULA 
+Remarks. FORMULA  This result is no longer true for
+product quantizers based on other orthonormal basis.
+FORMULA  This shows the existence of non optimal stationary quantizers.
+FIGURE 
+FIGURE 
+
+Optimal FORMULA  product quadratic functional quantization (FORMULA )
+FORMULA  (Numerical) Optimized Quantization: By scaling, we can assume without loss of generality that FORMULA .
+We carried out a huge optimization task in order to produce some optimized quantization
+grids for the Brownian motion by solving numerically FORMULA  for FORMULA  up to FORMULA .
+FORMULA 
+This value (see Figure REF (left)) is significantly greater than the theoretical
+(asymptotic) bound given by Theorem REF  which is
+FORMULA 
+Our guess, supported by our numerical experiments, is that in fact FORMULA  is
+possibly not monotonous but unimodal.
+FORMULA  Optimal Product quantization: as displayed on Figure REF (right), one has approximately
+FORMULA 
+FORMULA  Optimal FORMULA -dimensional block product quantization: let us
+briefly mention this approach developed in {{cite:d2e8fc7d-40a2-4d1c-8ca7-ba9b16a39b4d}} in which
+product quantization is achieved by quantizing some
+marginal blocks of size 1, 2 or 3. By this approach, the
+corresponding constant is approximately FORMULA , FORMULA  roughly in
+between scalar product quantization and optimized numeric quantization.
+The conclusion, confirmed by our numerical experiments on option pricing (see Section ), is that
+– Optimal quantization is significantly more accurate
+on numerical experiments but is much more demanding since it needs to keep off line or
+at least to handle large files (say 1 FORMULA  for FORMULA ).
+– Both approaches are included in the option pricer Premia (MATHFI Project, Inria). An online benchmark is available on the website {{cite:8d16a0d1-2094-4d29-950c-df70b1357799}}.
+FIGURE 
+
+Constructive functional quantization of diffusions
+Rate optimality for Scalar Brownian diffusions
+One considers on a probability space FORMULA  an homogenous Brownian diffusion
+process:
+FORMULA 
+where FORMULA  and FORMULA  are continuous on FORMULA  with at most linear growth (FORMULA  FORMULA ) so that at least a weak solution to the equation exists.
+To devise a constructive way to quantize the diffusion FORMULA , it seems natural to start from a
+rate optimal quantization of the Brownian motion and to obtain some “good" (but how good?)
+quantizers for the diffusion by solving an appropriate FORMULA . So let
+FORMULA , FORMULA , be a sequence of
+stationary rate optimal FORMULA -quantizers of FORMULA . One considers the following (non-coupled)
+Integral Equations:
+FORMULA 
+Set
+FORMULA 
+The process FORMULA  is a non-Voronoi quantizer (since it is
+defined using the Voronoi diagram of FORMULA ). What is interesting is that it is
+a computable quantizer (once the above integral equations have been solved) since the
+weights FORMULA  are known. The Voronoi quantization defined by FORMULA  induces a lower quantization error but we have no access to its weights for
+numerics. The good news is that FORMULA is already rate optimal.
+ ({{cite:3837b5d5-47ad-448a-ac51-d529dc0dd0b2}} (2006)) Assume that FORMULA  is differentiable, FORMULA 
+is positive twice differentiable and that FORMULA  is bounded. Then
+FORMULA 
+If furthermore, FORMULA , then FORMULA .
+Remarks. FORMULA  For some results in the non homogenous case, we refer
+to {{cite:3837b5d5-47ad-448a-ac51-d529dc0dd0b2}}. Furthermore, the above estimates still hold true for the FORMULA -quantization, FORMULA  provided FORMULA .
+FORMULA  This result is closely connected to the Doss-Sussman
+approach (see FORMULA  {{cite:f7fc8d1c-55f0-4586-8de1-970084eefee6}}) and in fact the results can be extended to some
+classes multi-dimensional diffusions (whose diffusion coefficient is the inverse of the
+gradient of a diffeomorphism) which include several standard multi-dimensional financial
+models (including the Black-Scholes model).
+FORMULA  A sharp quantization rate FORMULA  for scalar elliptic diffusions is established in {{cite:652e7283-f476-463b-ac81-3233606e12a1}}, {{cite:f9afa3d8-7602-49cd-9c12-0505f0e9a01f}} using a non
+constructive approach, FORMULA .
+Example: Rate optimal product quantization of the
+Ornstein-Uhlenbeck process.
+FORMULA 
+One solves the non-coupled integral (linear) system
+FORMULA 
+where FORMULA  is a rate optimal sequence of
+quantizers
+FORMULA 
+If FORMULA  is optimal for FORMULA  then FORMULA , FORMULA , FORMULA  with the notations introduced in (REF ). If FORMULA  is an optimal product quantizer
+(and FORMULA  denote the optimal size allocation), then FORMULA , where
+FORMULA . Elementary computations show that
+FORMULA 
+
+Multi-dimensional diffusions for Stratanovich SDE's
+The correcting term FORMULA  coming up in the integral equations
+suggest to consider directly some diffusion in the Stratanovich sense
+FORMULA 
+(see FORMULA  {{cite:f8cf0856-bf58-4f0d-8ed7-076d9aad669d}} for an
+introduction) where FORMULA  is a FORMULA -dimensional standard Brownian Motion.
+In that framework, we need to introduce the notion of FORMULA -variation: a continuous function FORMULA  has
+finite
+FORMULA -variations if
+FORMULA 
+Then FORMULA  defines a distance on the set of functions with finite
+FORMULA -variations. It is classical background that FORMULA  FORMULA -FORMULA  for every FORMULA .
+One way to quantize FORMULA  at level (at most) FORMULA  is to quantize each component FORMULA  at level FORMULA . One shows (see {{cite:461a8b9e-b33f-4165-b0e4-5e666266b306}}) that FORMULA .
+Let FORMULA  FORMULA , denote the set of FORMULA -times differentiable bounded functions
+FORMULA  with bounded partial derivatives up to order FORMULA  and whose partial derivatives of
+order FORMULA  are FORMULA -Hölder.
+(see {{cite:e2d6803a-a403-4190-9154-7c35da21c43b}}) Let
+FORMULA 
+FORMULA  and let
+FORMULA , FORMULA , be a sequence of FORMULA -quantizers of the standard FORMULA -dimensional Brownian
+motion FORMULA  such that
+FORMULA  as FORMULA . Let
+FORMULA 
+where, for every FORMULA , FORMULA  is solution to
+FORMULA 
+Then, for every FORMULA ,
+FORMULA 
+Remarks. FORMULA  The keys of this results are
+the Kolmogorov criterion, stationarity (in a slightly extended sense) and the
+connection with rough paths theory (see {{cite:f41755f0-1618-4d6e-b4fe-a7bb63b18d03}} for an introduction to rough paths
+theory, convergence in FORMULA -variation, etc).
+FORMULA  In that general setting we have no convergence rate although we conjecture that
+FORMULA  remains rate optimal if FORMULA  is.
+FORMULA  There are also some results about the convergence of stochastic integrals of the form
+FORMULA , with some rates of
+convergence when FORMULA  or FORMULA  and FORMULA  independent (depending on the regularity of the function FORMULA , see {{cite:e2d6803a-a403-4190-9154-7c35da21c43b}}).
+
+Applications to path-dependent option pricing
+The typical functionals FORMULA  defined on FORMULA  for which FORMULA  can be
+approximated by the cubature formulae (REF ), (REF ) are of the form FORMULA  where
+FORMULA  is locally Lipschitz continuous in the second variable, namely
+FORMULA 
+(with FORMULA  is increasing, convex and FORMULA ) and FORMULA  is
+Lipschitz continuous. One could consider for FORMULA  some càdlàg functions as well. A classical example is the
+Asian payoff in a Black-Scholes model
+FORMULA 
+Numerical integration (II): FORMULA -Romberg
+extrapolation
+Let FORMULA  be a 3 times
+FORMULA -differentiable functional with bounded differentials. Assume FORMULA , FORMULA , is a sequence of a rate-optimal stationary quantizations of the standard Brownian motion FORMULA . Assume
+furthermore that
+FORMULA 
+and
+FORMULA 
+Then, a higher order Taylor expansion yields
+FORMULA 
+Then, one can design a FORMULA -Romberg extrapolation by considering FORMULA , FORMULA  (FORMULA  FORMULA ), so that
+FORMULA 
+For practical implementation, it is suggested in {{cite:d2e8fc7d-40a2-4d1c-8ca7-ba9b16a39b4d}} to replace FORMULA  by the more
+consistent “estimator"
+FORMULA .
+In fact Assumption (REF ) holds true for optimal product quantization when FORMULA  is
+polynomial function FORMULA , FORMULA . Assumption (REF ) holds true in that case as well
+(see {{cite:609682cf-ebef-4624-9065-107b54f0a744}}). As concerns optimal quantization, these statements are still conjectures. However, given
+that
+FORMULA  and
+FORMULA  are independent (see {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}), (REF ) is equivalent to the simple
+case where
+FORMULA  is constant.
+Note that the above extrapolation or some variants can be implemented with other stochastic processes in accordance
+with the rate of convergence of the quantization error.
+
+Asian option pricing in a Heston stochastic volatility model
+In this section, we will price an Asian call option in a Heston stochastic volatility model using some optimal
+(at least optimized) functional quantization of the two Brownian motions that drive the diffusion. This model
+has already been considered in {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}} in which functional
+quantization was implemented for the first time with some product quantizations of the Brownian motions.
+The Heston stochastic volatility model was introduced
+in {{cite:795e8e23-aa83-4d8a-a346-5d3fb9e72c72}} to model stock price dynamics. Its popularity partly comes from the existence of
+semi-closed forms for vanilla European options, based on inverse Fourier transform and from its ability to
+reproduce some skewness shape of the implied volatility surface. We consider it under its risk-neutral
+probability measure.
+FORMULA 
+where FORMULA  such that
+FORMULA . We consider the Asian Call payoff with maturity FORMULA  and strike FORMULA . No closed form is available for its premium
+FORMULA 
+We briefly recall how to proceed (see {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}} for details): first, one projects
+FORMULA  on FORMULA  so that FORMULA  and
+FORMULA 
+The chaining rule for conditional expectations yields
+FORMULA 
+Combining these two expressions and using that FORMULA  and FORMULA  are independent show that
+FORMULA  is a functional of FORMULA  (as concerns the squared volatility
+process FORMULA , only FORMULA  and FORMULA  are involved).
+Let FORMULA  be an FORMULA -quantizer of the Brownian motion. One solves
+for FORMULA , the differential equations for  FORMULA
+FORMULA 
+using
+FORMULA  a Runge-Kuta scheme. Let FORMULA  denote the approximation of FORMULA 
+resulting from the resolution of the above FORMULA  (FORMULA  is the time discretization parameter of the
+scheme).
+Set the (non-Voronoi) FORMULA -quantization of FORMULA  by
+FORMULA 
+Note this formula requires the computation of a quantized stochastic integral
+FORMULA  (which corresponds to the independent
+case).
+The weights of the product cells FORMULA  is
+given by
+FORMULA 
+owing to the independence. For practical implementations different
+sizes of quantizers can be considered to quantize FORMULA 
+and FORMULA .
+We follow the guidelines of the methodology introduced in {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}}: we compute the crude
+quantized premium for two sizes FORMULA  and FORMULA , then proceed a space Romberg FORMULA -extrapolation. Finally, we
+make a FORMULA -linear interpolation based on the (Asian) forward moneyness
+FORMULA  (like in {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}})
+and the Asian Call-Put parity formula
+FORMULA 
+The anchor strikes FORMULA  and FORMULA  of the
+extrapolation are chosen symmetric with respect to the forward
+moneyness. At FORMULA , the Call is deep out-of-the-money: one
+uses the Romberg extrapolated FORMULA  computation; at FORMULA  the
+Call is deep in-the-money: on computes the Call by parity. In
+between, one proceeds a linear interpolation in FORMULA  (which yields
+the best results, compared to other extrapolations like the
+quadratic regression approach).
+FIGURE 
+FORMULA  Parameters of the Heston model: FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA .
+FORMULA  Parameters of the option portfolio: FORMULA , FORMULA  (13 strikes).
+FORMULA  The reference price has been computed by a FORMULA 
+trial Monte Carlo simulation (including a time Romberg
+extrapolation of the Euler scheme with FORMULA ).
+FORMULA  The differential equations (REF ) are solved with the
+parameters of the quantization cubature formulae FORMULA ,
+with couples of quantization levels FORMULA ,
+FORMULA , FORMULA .
+FIGURE 
+FIGURE 
+Functional Quantization can compute a
+whole vector (more than 10) option premia for the Asian option in
+the Heston model with 1 cent accuracy
+in less than 1 second (implementation in FORMULA  on a FORMULA  FORMULA  processor).
+Further numerical tests carried out or in progress with the FORMULA -FORMULA 
+model and with the FORMULA  model (Asian, vanilla European options)
+show the same efficiency. Furthermore, recent attempt to quantize
+the volatility process and the asset dynamics at different level of
+quantizations seem very promising in two directions: reduction of
+the computation time and increase of the robustness of the method
+to parameter change.
+
+Comparison: optimized quantization FORMULA  (optimal)
+product quantization
+FIGURE 
+The comparison is balanced and probably needs some further in situ experiments since it may depend on the
+modes of the computation. However, it seems that product quantizers (as those implemented in {{cite:fb90df61-572f-4fee-9908-3d29335a38c8}}) are
+from 2 up to 4 times less efficient than optimal quantizers within our range of application (small values of
+FORMULA ). On the other hand, the design of product quantizer from 1-dim scalar quantizers is easy and can be made
+from some light elementary “bricks" (the scalar quantizer up to FORMULA  and the optimal allocation rules).
+Thus, the whole set of data needed to design all optimal product quantizers up to FORMULA  is approximately
+500 FORMULA  whereas one optimal quantizer with size FORMULA ...
+
+Universal quantization rate and mean regularity
+The following theorem points out the connection between functional
+quantization rate and mean regularity of FORMULA  from FORMULA 
+to FORMULA .
+ ({{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}} (2005)) Let
+FORMULA  be a stochastic process. If there is FORMULA  and FORMULA  such that
+FORMULA 
+for some positive real constant FORMULA , then
+FORMULA 
+
+The proof is based on a constructive approach which involves the Haar basis (instead of FORMULA -FORMULA 
+basis), the non asymptotic version Zador Theorem and product functional quantization. Roughly speaking, we use the
+unconditionality of the Haar basis in every FORMULA  (when FORMULA ) and its
+wavelet feature FORMULA  its ability to “code" the path regularity of a function on the decay
+rate of its coordinates.
+Examples (see {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}}): FORMULA 
+FORMULA -dimensional Itô processes (includes FORMULA -dim
+diffusions with sublinear coefficients) with FORMULA .
+FORMULA  General Lévy process FORMULA  with Lévy measure FORMULA  with
+square integrable big jumps. If FORMULA  has a Brownian component, then FORMULA , otherwise if
+FORMULA  where FORMULA  (Blumenthal-Getoor index of FORMULA ), then FORMULA . This rate is the exact rate  FORMULA
+FORMULA 
+for many classes of Lévy processes like symmetric stable processes, Lévy processes having a Brownian component, etc (see {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}} for further examples).
+FORMULA  When FORMULA  is a compound Poisson processes, then FORMULA  and one shows, still
+with constructive methods, that
+FORMULA 
+which is in-between the finite and infinite dimensional settings.
+
+About lower bounds
+In this overview, we gave no clue toward lower bounds although most of the rates
+we mentioned are either exact (FORMULA ) or sharp (FORMULA ) (we tried to emphasize the numerical
+aspects). Several approaches can be developed to get some lower bounds. Historically,
+the first one was to rely on subadditivity property of the
+quantization error derived from self-similarity of the distribution:
+this works with the uniform distribution over FORMULA  but also in
+an infinite dimensional framework (see FORMULA  {{cite:d0cf52ec-4772-49ec-8212-c6055626cfa5}} for
+the fractional Brownian motion).
+A second approach consists in pointing out the connection with the Shannon-Kolmogorov entropy
+(see FORMULA  {{cite:ae9ee546-68d5-4a8a-ad7c-5459f6573de4}}) using that the entropy of a random variable taking at most FORMULA  values is at most FORMULA .
+A third connection can be made with small deviation theory (see {{cite:9a2f9d99-52fa-45f3-b8d8-646cb67b7236}}, {{cite:8faaabde-f065-4a81-b1eb-3ff8d04e2853}} and {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}}). Thus,
+in {{cite:8faaabde-f065-4a81-b1eb-3ff8d04e2853}}, a connection is established between (functional) quantization and small ball deviation for Gaussian processes. In particular
+this approach provides a method to derive a lower bound for the
+quantization rate from some upper
+bound for the small deviation problem. A careful reading of the proof of Theorem 1.2 in {{cite:8faaabde-f065-4a81-b1eb-3ff8d04e2853}} shows
+that this small deviation lower bound holds for any unimodal (w.r.t. 0) non zero process. To be precise:
+assume that FORMULA  is FORMULA -unimodal FORMULA  there exists a real
+FORMULA  such that
+FORMULA 
+For centered Gaussian processes (or processes “subordinated" to
+Gaussian processes) this follows from the Anderson Inequality (when FORMULA ). If
+FORMULA 
+for some increasing unbounded function FORMULA , then
+FORMULA 
+This approach is efficient in the non quadratic case as emphasized in {{cite:74dd3eda-aaa6-4996-b435-2c8688d11536}} where several universal bounds are shown
+to be optimal using this approach.
+Acknowledgement. I thank S.
+Graf, H. Luschgy J. Printems and B. Wilbertz for all the fruitful
+discussions and collaborations we have about functional quantization.

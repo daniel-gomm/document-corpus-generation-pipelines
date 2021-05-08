@@ -1,0 +1,219 @@
+
+
+The one-dimensional Schrödinger-Newton equations
+Philippe Choquard* and Joachim Stubbe**
+The one-dimensional Schrödinger-Newton equations
+Philippe Choquard* and Joachim Stubbe**
+*Institut for Theoretical Physics, EPFL, CH-1015 Lausanne, Switzerland**EPFL, IMB-FSB, Station 8, CH-1015 Lausanne, SwitzerlandPhilippe.Choquard@epfl.ch, Joachim.Stubbe@epfl.ch
+We are indebted to Marc Vuffray for providing us his numerical studies of the model.22th june 2007
+
+Schrödinger-Newton equations, nonlinear
+Schrödinger equation, ground state, rearrangement inequality
+
+We prove an existence and uniqueness result for ground states of
+one-dimensional Schrödinger-Newton equations.
+
+Introduction
+We consider the one-dimensional Schrödinger-Newton system
+FORMULA 
+which is equivalent to the nonlinear Schrödinger equation
+FORMULA 
+with nonlocal nonlinear potential
+FORMULA 
+We are interested in the existence of nonlinear bound states of
+the form
+FORMULA 
+The Schrödinger-Newton system in three space dimensions
+FORMULA 
+has a long standing history. With FORMULA  designating appropriate
+positive coupling constants it appeared first in 1954, then in
+1976 and lastly in 1996 for describing the quantum mechanics of a
+Polaron at rest by S. J. Pekar  {{cite:bd2d57bb-1bbf-42d2-9dde-e9d0c94ce332}}, of an electron trapped
+in its own hole by the first author  {{cite:9c3ec785-a501-4683-b4b4-00c0a7990722}} and of
+selfgravitating matter by R. Penrose  {{cite:166b0e0e-c58d-4785-a118-f6bf1a1c565e}}. The
+two-dimensional model is studied numerically in  {{cite:e98acf2d-9880-4605-9f7d-e7492d965ac9}}.
+For the bound state problem there are rigorous results only for
+the three dimensional model. In  {{cite:9c3ec785-a501-4683-b4b4-00c0a7990722}} the existence of a
+unique ground state of the form (REF ) is shown by
+solving an appropriate minimization problem. This ground state
+solution FORMULA  is a positive spherically
+symmetric strictly decreasing function. In  {{cite:4ead12f5-e29d-4e7e-8c7e-2bf5d3ec9ed9}} the
+existence of infinitely many distinct spherically symmetric
+solutions is proven and a proof for the existence of anisotropic
+bound states is claimed. So far, there are no results for the
+one-dimensional model except for its semiclassical approximation
+ {{cite:9bc76c8c-e49b-40fc-9d35-e6ef658dc019}}. One mathematical difficulty of the one-dimensional
+problem is that the Coulomb potential does not define a positive
+definite quadratic form (see below).
+From numerical investigations of the problem we conjecture that in
+the attractive case FORMULA  equation (REF ) admits for
+each FORMULA  infinitely many nonlinear bound states of the form
+(REF ) which means that subject to a normalization
+condition FORMULA  the model exhibits an
+infinite discrete energy spectrum. In the present letter, we are
+interested in the ground states of the model
+FORMULA 
+We prove for any FORMULA  the existence of an unique spherically
+symmetric ground state by solving an appropriate minimization
+problem. We also prove the existence of an antisymmetric solution
+by solving the same minimization problem restricted to the class
+of antisymmetric functions.
+
+Mathematical Framework
+Functional Setting
+The natural function space FORMULA  for the quasi-stationary problem is given by
+FORMULA 
+Indeed, for each FORMULA  the energy FORMULA  and the particle number
+(or charge) FORMULA  associated to (REF ) given by
+FORMULA 
+and
+FORMULA 
+respectively, are well-defined quantities. In particular, the
+energy functional FORMULA  is of class FORMULA .
+The space FORMULA  is a Hilbert space and by Rellich's criterion (see,
+e.g. theorem XIII.65 of  {{cite:b8e37090-d9d1-46d4-9ddf-e48b7a7cdf5e}}) the embedding
+FORMULA  is compact.
+
+Scaling properties
+If FORMULA  is a
+solution of the stationary equation
+FORMULA 
+then FORMULA 
+solves
+FORMULA 
+and
+FORMULA 
+In addition, by the virial theorem
+FORMULA 
+
+Ground states
+Existence of ground states
+We consider the following
+minimization problem:
+FORMULA 
+We note that the functional FORMULA  is not convex since the
+quadratic form FORMULA  is not positive
+so that standard convex minimization does not apply. To see this
+choose, for example, FORMULA  where
+FORMULA  denotes the characteristic function of the
+interval FORMULA . For finite discrete systems it has been shown
+that the associated matrix has only one positive eigenvalue
+ {{cite:296d3e5f-af38-4244-b98c-8a9214ae968e}}), which was computed in  {{cite:dd265772-15bf-47cc-b835-7674eb72c111}}).
+Theorem 3.1 For any FORMULA  there is a spherically symmetric
+decreasing FORMULA  such that
+FORMULA  and FORMULA .
+
+Let FORMULA  be a minimizing sequence for
+FORMULA , that is FORMULA  and
+FORMULA . We also may
+assume that FORMULA  is uniformly bounded. Denoting FORMULA  the
+spherically symmetric-decreasing rearrangement of FORMULA  we have (see
+e.g. lemma 7.17 in  {{cite:e124215a-5047-43a2-a942-cf9e438e3ef2}})
+FORMULA 
+For the potential FORMULA  we apply the following rearrangement
+inequality:
+Lemma 3.2 Let FORMULA  be two nonnegative functions on FORMULA , vanishing at
+infinity with spherically symmetric-decreasing rearrangement
+FORMULA  , respectively. Let FORMULA  be a nonnegative spherically
+symmetric increasing function. Then
+FORMULA 
+
+If FORMULA  is bounded, FORMULA , then FORMULA  and by Riesz's
+rearrangement inequality (lemma 3.6 in  {{cite:e124215a-5047-43a2-a942-cf9e438e3ef2}}) we have
+FORMULA 
+Since
+FORMULA 
+the claim follows. If FORMULA  is unbounded we define a truncation by
+FORMULA  and apply the monotone convergence
+theorem.
+By the preceding lemma we have
+FORMULA 
+since FORMULA  is an increasing spherically symmetric function.
+Therefore we may suppose that FORMULA . We claim that
+FORMULA . Indeed, since FORMULA  is a convex function we have
+FORMULA 
+by Jensen's inequality and therefore
+FORMULA 
+proving our claim. We may extract a subsequence which we denote
+again by FORMULA  such that FORMULA  weakly in FORMULA ,
+strongly in FORMULA  and a.e. where FORMULA  is a nonnegative
+spherically symmetric decreasing function. Note that FORMULA 
+since FORMULA . We want to show that FORMULA . Since
+FORMULA 
+it remains to analyze the functional FORMULA . First of all, we note
+that for spherically symmetric densities FORMULA  we have
+FORMULA 
+Let
+FORMULA 
+Then FORMULA  uniformly since
+FORMULA 
+Now
+FORMULA 
+As FORMULA  the first integral will tend to zero while the
+second will remain nonnegative since the continuous functional
+FORMULA  is positive. Hence
+FORMULA 
+proving the theorem.
+
+Uniqueness of ground states
+As in  {{cite:9c3ec785-a501-4683-b4b4-00c0a7990722}} we need a
+strict version of the rearrangement inequality for the potential
+energy FORMULA :
+Lemma 3.3 If FORMULA  and FORMULA , then we have the strict inequality:
+FORMULA 
+
+We write
+FORMULA 
+where FORMULA  is a spherically symmetric strictly decreasing
+function and FORMULA  is increasing. Then, from the strict
+inequality for strictly decreasing functions (see  {{cite:9c3ec785-a501-4683-b4b4-00c0a7990722}}) we
+have FORMULA .
+After suitable rescaling the solution of the minimization problem
+(REF ) satisfies the stationary equation (REF )
+which is equivalent to the system of ordinary differential
+equations
+FORMULA 
+Obviously, FORMULA  for all FORMULA  and after another rescaling we
+may assume that the pair FORMULA  satisfies the initial
+conditions FORMULA . System
+(REF ) is Hamiltonian with energy function given by
+FORMULA 
+and FORMULA  for any symmetric solution.
+Theorem 3.4 The system (REF ) admits a unique symmetric solution
+FORMULA  such that FORMULA  and FORMULA  as FORMULA .
+
+Suppose there are two distinct solutions FORMULA ,
+FORMULA  having the required properties. We may suppose
+FORMULA . For FORMULA  we consider the Wronskian
+FORMULA 
+Note that FORMULA  and FORMULA  as FORMULA . It satisfies
+the differential equation
+FORMULA 
+Suppose FORMULA  for all FORMULA . Then FORMULA 
+for all FORMULA  since FORMULA  and hence
+FORMULA  for all FORMULA  which is impossible. Hence there exists
+FORMULA  such that FORMULA  for
+FORMULA , FORMULA  and FORMULA .
+However, then FORMULA , but
+FORMULA  for all FORMULA  which is again impossible.
+
+Existence of antisymmetric ground states
+We consider the subspace FORMULA  of FORMULA  consisting of
+antisymmetric functions, i.e. of functions FORMULA  such that
+FORMULA . Repeating the arguments of the proof of theorem 2.1
+we prove the existence of a solution of the minimization problem
+FORMULA 
+which we conjecture to be the first excited state.
+Theorem 3.5 For any FORMULA  there is an antisymmetric FORMULA , positive for FORMULA  such that FORMULA  and
+FORMULA .
+
+We may restrict the problem to the positive half-axis with Dirichlet boundary conditions. Then
+FORMULA 
+Let FORMULA  be a minimizing sequence for FORMULA , that is
+FORMULA  and FORMULA . We may suppose that the FORMULA  are
+nonnegative on the positive half-axis. The rest of the proof
+follows the same lines as the proof of theorem 3.1.
+Remark 3.6 As in theorem 3.3 we can show that the odd solution FORMULA  of
+(REF ) such that FORMULA  for all FORMULA  which
+corresponds to the initial conditions FORMULA  is unique.
+

@@ -1,0 +1,415 @@
+
+
+IPM/P-2007/038  
+
+Entropy Function for Non-extremal
+D1D5 and D2D6NS5-branes
+
+
+
+Ahmad Ghodsi and Mohammad R. Garousi
+
+Department of Physics, Ferdowsi University, P.O. Box 1436, Mashhad, Iran
+ and
+ Institute for Studies in Theoretical Physics and Mathematics (IPM)
+P.O. Box 19395-5531, Tehran, Iran
+E-mail:  garousi@ipm.ir, ahmad@ipm.ir
+
+We apply the entropy function formalism to non-extremal FORMULA  and FORMULA -branes
+whose throat approximation is given by the Schwarzschild black hole in
+FORMULA  and FORMULA , respectively.
+We find the Bekenstein-Hawking entropy and the FORMULA  corrections
+from the value of the entropy function at its saddle point. While the higher derivative
+terms have no effect on the temperature, they decrease the value of the entropy.
+Introduction
+The black hole attractor mechanism has been an active subject over the past
+few years in string theory. This is originated from the observation that there
+is a connection between the partition function of four-dimensional BPS black
+holes and partition function of topological strings {{cite:82a77757-6f04-4a4d-b186-9b5c1f21a58d}}.
+This mechanism states that in the extremal black hole backgrounds
+the moduli scalar fields at horizon are determined by the charge of black
+hole and are independent of their asymptotic values.
+One may study the attractor mechanism by finding the effective
+potential for the moduli fields and examining the behavior of the effective
+potential at its extremum. This extremum should be a local minimum for extremal
+black holes. The entropy of black hole is
+then given by the value of the effective potential at its minimum. Using
+this, the entropy of some extremal black holes has been calculated in {{cite:7e8d4d40-d410-42bc-9124-02357dc1d98b}}.
+Recently, it has been proposed by A. Sen that
+the entropy of a specific class of extremal black holes in higher derivative
+gravity can be calculated using the entropy function formalism {{cite:72b59705-604b-43ac-8032-9613f9020e32}}.
+According to this formalism, the entropy function for the black holes that
+their near horizon is FORMULA  is defined by integrating the
+Lagrangian density over FORMULA  for a general FORMULA 
+background characterized by the size of FORMULA  and FORMULA , and taking
+the Legendre transform of the resulting function with respect to the
+parameters labeling the electric fields. The result is a function of
+moduli scalar fields as well as the sizes of FORMULA  and FORMULA . The
+values of moduli fields and the sizes are determined by extremizing
+the entropy function with respect to the moduli fields
+and the sizes. Moreover, the entropy is given by
+the value of the entropy function at the extremumIt is assumed
+that in the presence of higher derivative terms there is a solution whose near
+horizon geometry is FORMULA . In the cases that the higher
+derivative corrections modify the solution such that the near horizon is
+not FORMULA  anymore, one cannot use the entropy function formalism.
+In those cases one may use the Wald formula {{cite:eacdab31-3ff5-4758-a012-3a50edabfc94}} to calculated the
+entropy directly.. Using this method the entropy of some extremal black
+holes have been found in {{cite:72b59705-604b-43ac-8032-9613f9020e32}},{{cite:fdb960ef-01c9-4ec5-8f87-61d1d07cd912}},{{cite:bacbcae2-664c-4026-9a62-52335ac6d93d}}.
+The above discussion does not indicate that the entropy function should have
+local minimum at the near horizon. In fact, it has been shown in {{cite:4afca75a-23fd-4dff-89a8-c686120dada1}}
+that the entropy function has a saddle point at the near horizon of extremal
+black holes. One may then conclude that the entropy function formalism should
+not be something specific for the extremal black holes. Indeed, it has been
+shown in {{cite:b0c6f156-2900-4d92-adbf-0f50f8251330}}, {{cite:4afca75a-23fd-4dff-89a8-c686120dada1}} that the entropy function formalism works for
+some non-extremal black hole/branes at the supergravity level. It has been
+speculated in {{cite:4afca75a-23fd-4dff-89a8-c686120dada1}} that the entropy function formalism works for the
+non-extremal black holes/branes whose near horizons are some extension of FORMULA 
+space, e.g., Schwarzschild black hole in FORMULA .
+The non-extremal black branes that have been studied in {{cite:4afca75a-23fd-4dff-89a8-c686120dada1}}
+are FORMULA , FORMULA  and FORMULA -branes whose near horizon geometries are Schwarzschild
+black hole in FORMULA  where FORMULA  and 5, respectively. When higher
+derivative corrections are included, however, the near horizon geometry is
+not the Schwarzschild black hole in FORMULA  anymore. Consequently, the
+entropy function formalism does not work for these cases when one considers
+the higher derivative terms.
+In this paper, we would like to study the non-extremal black hole/brane solutions
+that the higher derivative terms respect the symmetry of the tree level solutions.
+Consider the non-extremal FORMULA  and FORMULA -branes. The near horizon (throat
+approximation) of their tree level geometries are the Schwarzschild black hole
+in FORMULA . Moreover, in these cases, the higher derivative terms of the effective
+action respect the symmetry of the supergravity solution. In fact, the Schwarzschild
+black hole in FORMULA  is the BTZ black hole {{cite:b2a5cb6d-d2d7-4c33-bfc0-66ebb78621be}} in which the inner horizon
+FORMULA . On the other hand, it is known that the BTZ black hole is an exact
+solution of the string theory {{cite:f158bee9-be50-4ff8-ade8-9057c4efb50a}}. So one expects that the entropy function
+formalism works for the non-extremal FORMULA  and FORMULA -branes even in the
+presence of the higher derivative terms.
+An outline of the paper is as follows. In section 2, we review the non-extremal
+FORMULA  and FORMULA  solutions of the effective action of type II string theory.
+In sections 3, using the entropy function formalism we derive the Bekenstein-Hawking
+entropy of FORMULA -branes in terms of the temperature of black branes. We show that the entropy
+is given by the entropy function at its saddle point. In subsection 3.1 we show
+that the higher derivative terms respect the symmetries of the solution at the
+tree level and the entropy function formalism works in the presence of the
+higher derivative terms. Using this we find the entropy as the saddle point
+of the entropy function. As a double check, we also calculate the entropy
+using the Wald formula directly and find exact agreement with the result
+from the entropy function formalism. In section 4, we repeat the calculations
+for FORMULA -branes. We shall show that, in both cases, the higher derivative
+terms do not modify the tree level temperature, however, the entropy decreases
+with respect to the Bekenstein-Hawking entropy.
+
+Review of the non-extremal solutions
+In this section we review the non-extremal FORMULA  and FORMULA -branes solutions
+of the effective action of type II string theory. The two-derivatives effective
+action in the string frame is given by
+FORMULA 
+where FORMULA  is the dilaton, FORMULA  is NS-NS 3-form field
+strength, and FORMULA  is the electric R-R n-form field strength where
+FORMULA  for IIB and FORMULA  for type IIA theory. In above equation, dots
+represent fermionic terms in which we are not interested. The effective action
+includes a Chern-Simons term which is zero for the FORMULA  and FORMULA  solutions. Moreover, for these solutions FORMULA .
+The 5-form field
+strength tensor is self-dual, hence, it is not described by the
+above simple action. It is sufficient to adopt the
+above action for deriving the equations of motion, and impose the
+self-duality by hand.
+The non-extremal FORMULA -branes solution of the IIB effective action when
+FORMULA -branes are along the compact FORMULA  direction FORMULA  and FORMULA -branes along the compact FORMULA  directions FORMULA  is given
+by the following, (see e.g. {{cite:dbf5df6c-8c1c-449b-b435-9ade81e1c782}}):
+FORMULA 
+where
+FORMULA 
+The above solution is the D1D5P solution {{cite:dbf5df6c-8c1c-449b-b435-9ade81e1c782}}, {{cite:89fa6858-9170-4e58-b861-77e11188f160}} in which the amount of left and right moving momenta, propagating in the compact direction FORMULA , is chosen to be equal, i.e., FORMULA  in the notation {{cite:89fa6858-9170-4e58-b861-77e11188f160}}.
+For FORMULA  we obtain the extremal solution, depending on the two
+parameters FORMULA  and FORMULA  which are related to the number of FORMULA -branes.
+For FORMULA  a horizon develops at FORMULA . The near horizon geometry which
+is described by a throat,
+can be found by using the throat approximation where FORMULA  and FORMULA .
+In these limits the non-extremal solution becomes
+FORMULA 
+The geometry is the product of FORMULA  with the Schwarzschild
+black hole in FORMULA .
+The non-extremal FORMULA -branes solution of the IIA effective action
+when FORMULA -branes are along the compact FORMULA  directions FORMULA , FORMULA -branes along the compact FORMULA  directions FORMULA 
+and FORMULA -branes along the compact FORMULA  directions FORMULA  is given by the following
+(see e.g. {{cite:90e1f3b1-1948-4941-bfd8-1ecb9ff86e16}}):
+FORMULA 
+where
+FORMULA 
+The above solution is the D2D6NS5P solution {{cite:90e1f3b1-1948-4941-bfd8-1ecb9ff86e16}}, {{cite:89fa6858-9170-4e58-b861-77e11188f160}} in which the amount of left and right moving momenta, propagating in the compact direction FORMULA , is chosen to be equal, i.e., FORMULA  in the notation {{cite:89fa6858-9170-4e58-b861-77e11188f160}}.
+For FORMULA  one obtains the extremal solution by sending
+FORMULA  such that FORMULA 
+is kept fixed. The extremal solution then depends on the three
+parameters FORMULA , FORMULA  and FORMULA  which are related to the number of
+FORMULA -branes.
+For FORMULA  a horizon develops at FORMULA . The near horizon geometry
+which is described by a throat
+can be found by using the throat approximation where FORMULA  and
+FORMULA .
+In this limit FORMULA  and the non-extremal
+solution becomes
+FORMULA 
+where we have made also the coordinate transformations
+FORMULA . The above geometry is now
+the product of FORMULA  with the Schwarzschild black hole in FORMULA .
+
+Entropy function for non-extremal FORMULA -branes
+Following {{cite:72b59705-604b-43ac-8032-9613f9020e32}}, in order to apply the entropy function formalism to the non-extremal
+FORMULA -branes one should deform the near horizon geometry (REF ) to the most general form which is the product of the FORMULA -Schwarzchild and FORMULA  space, that is
+FORMULA 
+where FORMULA  are supposed to be constants, otherwise the above geometry is not product space. The electric field strengths
+are deformed such that the electric charges are remaining fixed. The function FORMULA  is
+defined to be the integral of the Lagrangian density over the
+horizon FORMULA .
+The result of inserting the background of (REF ) into FORMULA  is
+FORMULA 
+where FORMULA  is the volume of FORMULA , FORMULA  is the volume of the 3-sphere with radius one,
+and FORMULA  is the FORMULA  volume. The electric charges are carried by the
+branes and are given by
+FORMULA 
+Note that the electric charges are independent of the scales
+FORMULA  and FORMULA  as expected, i.e.,
+FORMULA 
+Following {{cite:72b59705-604b-43ac-8032-9613f9020e32}}, for FORMULA  space, one defins the entropy function as the Legendre transform of FORMULA 
+with respect to the electric fields FORMULA  and FORMULA . Extending that definition to our case which is FORMULA  space, we define the entropy function by taking the Legendre transform of FORMULA 
+with respect to the electric fields FORMULA  and FORMULA , and dividing the result by FORMULA , that isFor FORMULA  space, one should divide the Legendre transform of FORMULA  by FORMULA  to define the entropy function in FORMULA  space.
+FORMULA 
+where we have substituted the values of FORMULA  and FORMULA  from (REF ). Note that we have already assumed that FORMULA  and FORMULA  are independent of FORMULA , that is, FORMULA  and FORMULA  are not appeared in the Lagrangian. Hence, diving the Legendre transform of FORMULA  by FORMULA  does not change the equations of motionAn alternative way to deal with the FORMULA  space is to dimensionally reduce it to FORMULA  space and then use the entropy function formalism of the FORMULA  space {{cite:02d26c3b-23f7-4254-b2d2-f5fac4434dcb}}.. Solving the equations of motion
+FORMULA 
+one finds the following solution
+FORMULA 
+This confirms that (REF ) is a solution of the type IIB supergravity action.
+Let us now consider the behavior of the entropy function around the
+above critical point. To this end, consider the following matrix
+FORMULA 
+Ignoring the overall factor, the eigenvalues of this matrix are FORMULA .
+This shows that the above critical point is a saddle point of the entropy function.
+It is a general property of the entropy function for both extremal and
+non-extremal cases {{cite:4afca75a-23fd-4dff-89a8-c686120dada1}}.
+Let us now return to the entropy associated with this solution.
+It is straightforward to find the entropy from the Wald formula {{cite:eacdab31-3ff5-4758-a012-3a50edabfc94}}
+FORMULA 
+For this background we have FORMULA 
+and FORMULA .
+These simplify the entropy relation to
+FORMULA 
+where FORMULA  is an expression similar to FORMULA 
+except that each FORMULA  Riemann tensor component is scaled by a factor of FORMULA .
+To find FORMULA  using the prescription given
+in {{cite:72b59705-604b-43ac-8032-9613f9020e32}} and {{cite:fdb960ef-01c9-4ec5-8f87-61d1d07cd912}},
+we note that in addition to FORMULA , the Riemann tensor components FORMULA  and
+FORMULA  are proportional to FORMULA , i.e.,
+FORMULA 
+Hence, one should rescale them too. We use the following scaling for these components
+FORMULA 
+Now, FORMULA  must be of the form FORMULA  for some function FORMULA .
+Then one can show that the following relation holds for FORMULA  and its derivatives
+with respect to scales, FORMULA  and FORMULA :
+FORMULA 
+In addition, there is a relation between the rescaled Riemann tensor
+components at the supergravity level, which can be found by using (REF )
+FORMULA 
+Replacing the above relation into (REF ) and using the equations of
+motion, one finds that FORMULA . It is easy to see that the entropy
+is proportional to the entropy function up to a constant coefficient, i.e.,
+FORMULA 
+This is the Bekenstein-Hawking entropy. One may write the entropy in terms
+of the temperature of black brane. The relation between FORMULA  and temperature can be read
+from the metric. The surface gravity is given by
+FORMULA 
+which in our case we find FORMULA . Note that the constant FORMULA  is canceled in the above surface gravity. This causes that the higher derivative terms which modifies FORMULA  have no effect on the temperature. The entropy in terms of temperature becomes
+FORMULA 
+where we have used the relations FORMULA , FORMULA , FORMULA , and
+FORMULA  where FORMULA  is the number of
+D1-branes and FORMULA  is the number of D5-branes {{cite:fdb960ef-01c9-4ec5-8f87-61d1d07cd912}}. Alternatively, one may write the entropy in terms of the number of left moving or right moving momenta. Note that for our case FORMULA . The relation between FORMULA  and FORMULA  is given as
+FORMULA 
+where we have set FORMULA  in the relations for FORMULA  and FORMULA  in {{cite:89fa6858-9170-4e58-b861-77e11188f160}}. In terms of FORMULA , the entropy (REF ) becomes
+FORMULA 
+Note that for two charges extremal black hole, FORMULA , i.e., FORMULA , the entropy function is exactly
+the same as the non-extremal case but the value of the entropy is zero.
+We have seen that the entropy function works despite the fact that the
+horizon is not attractive. To see more explicitly that the horizon here
+is not attractive, we use the intuitional explanation for attractor mechanism
+given in {{cite:ae3c3319-5d90-4714-9fcd-4859f3676aa8}}. According to this, the physical distance
+from an arbitrary point to the attractive horizon is infinite. The proper
+distance of an arbitrary point from the horizon in our case is
+FORMULA 
+which is finite (infinite) for the non-extremal (extremal) case.
+Higher derivative terms 
+In the previous sections we have seen that the entropy function formalism
+works at two derivatives level. It will be interesting to consider stringy
+effects and take a look at the entropy function mechanism again. To this
+end, we consider the higher derivative corrections coming from string theory.
+To next leading order the Lagrangian of type II theory is given by {{cite:eaf247cc-038d-440a-a28c-568bcfceeb13}}
+FORMULA 
+where FORMULA  and FORMULA  can be written in terms
+of the Weyl tensors
+FORMULA 
+Following {{cite:72b59705-604b-43ac-8032-9613f9020e32}}, we consider the general background consist of FORMULA -Schwarzchild times FORMULA  space (REF ) in the presence of the higher derivative terms. As we shall see shortly, the higher derivative terms respect the symmetry of the tree level solution, i.e., the coefficients FORMULA  and FORMULA  remain constant. To see this we calculate the contribution of the above higher
+derivative terms to the entropy functionNote that for FORMULA  with identical radii, the Weyl tensor is zero as noted in {{cite:6d3a0ff4-f016-49cc-aef9-330c0d46e7f3}}. However, this tensor is non-vanishing for the space FORMULA  in which we are interested in 10-dimensional space-time.
+FORMULA 
+It is important to note that FORMULA  is independent of FORMULA . This is consistent with our assumption that FORMULA  and FORMULA  are constants. By variation of FORMULA  with respect to FORMULA  and FORMULA  one
+finds the equations of motion. Since these equations are valid only up
+to first order of FORMULA , we consider the following perturbative
+solutions:
+FORMULA 
+One should replace them into the equations of motion, i.e.,
+FORMULA 
+these equations are consistent and give the following results:
+FORMULA 
+It is interesting to note that the stringy effect decreases the closed
+string coupling at the near horizon, i.e., FORMULA .
+Similar behavior appears for the non-extremal FORMULA -branes {{cite:6d3a0ff4-f016-49cc-aef9-330c0d46e7f3}}.
+Let us now return to the entropy associated with this solution. The entropy is given by
+FORMULA 
+where we have used the fact that all the steps toward writing the Wald
+formula (REF ) for entropy in terms of the above entropy function
+remain unchanged. In particular the relation (REF ) holds in the presence
+of the higher derivative terms. It turns out, in order to find the entropy to linear order of FORMULA , one
+does not need to know the values of FORMULA , and FORMULA . To see this, note
+that if one replaces (REF ) into the first term above, one finds
+that FORMULA , and FORMULA  do not appear in this term linearly. The second term has
+an overall factor of FORMULA , hence to the linear order of FORMULA , one
+has to replace FORMULA  into it. The result is
+FORMULA 
+As a double check, we calculate the entropy using the ward
+formula (REF ) directly, i.e.,
+FORMULA 
+where the function FORMULA  is given by
+FORMULA 
+This second term is proportional to FORMULA , so to the first order of
+FORMULA  one has to replace the Schwarzschild FORMULA  solution (REF )
+in FORMULA  which gives
+FORMULA 
+For the first term, on the other hand, one has to replace (REF ) which gives
+FORMULA 
+Now inserting the solution (REF ) for FORMULA  and FORMULA  into the above equation,
+one finds exactly the result (REF ).
+To write the entropy in terms of the temperature, we note that FORMULA  appears
+as an overall factor of FORMULA  in the background (REF ), hence, the
+temperature (REF ) remains the same as the tree level temperature, i.e., FORMULA . This
+is unlike the temperature of non-extremal FORMULA -branes that stringy effects
+increase the tree level temperature.
+The entropy of FORMULA -branes
+in terms of temperature or in terms of FORMULA  is
+FORMULA 
+In the second line, we have used the fact that the higher derivative corrections do not change the Hawking temperature which means the number of
+excitations for the left and right moving momenta remain the same as the tree level result. Note that the leading FORMULA  correction makes the entropy decreases.
+
+Entropy function for non-extremal FORMULA -branes
+Following {{cite:72b59705-604b-43ac-8032-9613f9020e32}}, in order to apply the entropy function formalism to the non-extremal
+FORMULA -branes one should deform the near horizon geometry (REF ) to the most general form which is the product of the FORMULA -Schwarzchild and FORMULA  space, that is
+FORMULA 
+where FORMULA  are supposed to be constants. The electric field strength
+is deformed such that the corresponding electric charge remains fixed. Similarly,
+to have the fixed magnetic charges, one does not need to deform the
+magnetic field strength.
+The function FORMULA  is defined to be the integral of the Lagrangian density over
+the horizon FORMULA .
+The result of inserting the background (REF ) into FORMULA  is
+FORMULA 
+where FORMULA  is the volume of FORMULA , FORMULA  is the volume of the 2-sphere with radius one,
+and FORMULA  is the FORMULA  volume. The electric charge carried by the FORMULA -brane
+is given by
+FORMULA 
+Note that the electric charge is independent of the scales FORMULA  as expected, i.e.,
+FORMULA 
+Now we define the entropy function by taking the Legendre transform of FORMULA 
+with respect to the electric field FORMULA , and dividing by FORMULA , that is
+FORMULA 
+where we have substituted the value of FORMULA .
+Solving the equations of motion
+FORMULA 
+one finds the following solutions
+FORMULA 
+This confirms that (REF ) is a solution of the type IIA supergravity action.
+To find the behavior of the entropy function around the above critical point,
+consider again the matrix (REF ).
+Ignoring the overall factor, the eigenvalues of this matrix are FORMULA .
+This shows again that the above critical point is a saddle point of the entropy function.
+Let us now return to the entropy associated with this solution.
+The Wald formula {{cite:eacdab31-3ff5-4758-a012-3a50edabfc94}} is given by
+FORMULA 
+For this background we have FORMULA  and FORMULA .
+These simplify the entropy relation to
+FORMULA 
+where FORMULA  is an expression similar to FORMULA 
+except that each FORMULA  Riemann
+tensor component is scaled by a factor of FORMULA .
+To find FORMULA ,
+we note that in addition to FORMULA , the Riemann
+tensor components FORMULA  and
+FORMULA  are proportional to FORMULA , i.e.,
+FORMULA 
+Hence, one should also rescale these components. We use the following scaling
+FORMULA 
+Now we see that FORMULA  must be of the form FORMULA  for some function FORMULA .
+Then one can show that the following relation holds for FORMULA  and its
+derivatives with respect to scales, FORMULA  and  FORMULA
+FORMULA 
+As in the FORMULA  case, by using the equation (REF ) one finds the
+same relation as (REF )
+between the rescaled Riemann tensor components at the supergravity level.
+Replacing (REF ) into (REF ) and using the equations of
+motion, one finds again FORMULA . Hence, the entropy is
+proportional to the entropy function up to a constant coefficient, i.e.,
+FORMULA 
+This is the Bekenstein-Hawking entropy. One may write the entropy
+in terms of temperature. An alternative way to find temperature is to impose regularity of Euclidean metric near the horizon. So consider
+the proper distance of an arbitrary point from the horizon, i.e.,
+FORMULA 
+Near FORMULA , one finds FORMULA . So
+the metric (REF ) near FORMULA  becomes
+FORMULA 
+The period of the Euclidean time, required by the regularity of
+metric is FORMULA . Note that here also the constant FORMULA  does not appear in the above metric, so the temperature is independent of the value of FORMULA . The
+entropy in terms of the temperature is
+FORMULA 
+where in the last expression we have used
+FORMULA 
+where FORMULA  and FORMULA . Alternatively, one may write the entropy in terms of the number of left moving or right moving momenta where in our case FORMULA . The relation between FORMULA  and FORMULA  is given as
+FORMULA 
+where we have set FORMULA  in the relations for FORMULA  and FORMULA  in {{cite:89fa6858-9170-4e58-b861-77e11188f160}}, and used the rescaling FORMULA , FORMULA . In terms of FORMULA , the entropy (REF ) becomes
+FORMULA 
+which is in the conventional form appearing in {{cite:89fa6858-9170-4e58-b861-77e11188f160}}.
+Higher derivative terms 
+We now consider the general background consist of FORMULA -Schwarzchild times FORMULA  space (REF ) in the presence of the higher derivative terms. The higher derivative terms respect the symmetry of the tree level solution, i.e., the coefficients FORMULA  and FORMULA  remain constant. To see this we calculate the contribution of the above higher
+derivative terms to the entropy function i.e.,
+FORMULA 
+By variation of FORMULA  with respect to FORMULA  and FORMULA  one
+finds the equations of motion. Considering the perturbative
+solutions (REF ), one finds
+FORMULA 
+these equations are consistent, and give the following results
+FORMULA 
+Similar to the FORMULA  case, the stringy effects decrease the
+closed string coupling at the near horizon.
+Let us return to the entropy associated with this solution. The entropy is given by
+FORMULA 
+where again we have used the fact that all the steps toward writing the Wald formula
+for the entropy in terms of the entropy function above, remain unchanged.
+In this case also, in order to find the entropy to linear order of FORMULA , one does not need to know the solutions
+for FORMULA  and FORMULA . That is, if one replaces (REF ) into the tree level entropy
+function, i.e., the first term above, one finds that FORMULA , and FORMULA  do not appear in it linearly.
+The second term, on the other hand, has an overall factor of FORMULA , hence to
+linear order of FORMULA , one has to replace FORMULA  into it. The result is
+FORMULA 
+As a double check, we calculate the entropy using the ward formula
+(REF ) directly, i.e.,
+FORMULA 
+The second term is proportional to FORMULA , so to the first order
+of FORMULA  one has to replace the Schwarzschild FORMULA  solution (REF )
+in FORMULA  which gives
+FORMULA 
+For the first term, one has to replace (REF ) which gives
+FORMULA 
+Now inserting the solutions for FORMULA  and FORMULA  into the above equation,
+one finds exactly the result (REF ).
+The entropy (REF ) in terms of temperature is
+FORMULA 
+This entropy, like the entropy of the FORMULA -branes, is less than the
+Bekenstein-Hawking entropy. This is unlike the entropy of the non-extremal
+FORMULA -branes {{cite:6d3a0ff4-f016-49cc-aef9-330c0d46e7f3}} which is FORMULA , where the
+first term is the Bekenstein-Hawking entropy and the second term which is the FORMULA  correction, is positive.
+The increase in the entropy for FORMULA -branes is consistent with the fact that the Bekenstein-Hawking entropy at strong 't Hooft coupling is less than the entropy of FORMULA  SYM theory at zero coupling by a factor of FORMULA  {{cite:30c2ae94-8bd6-4331-8a14-f8f3b5bcb627}}. On the other hand, the correction to the entropy at weak coupling is negative {{cite:89fc75a9-ee0c-433d-9665-223cbddc6d90}} which is an indication of smooth interpolation between the weak and strong coupling regimes. For FORMULA -branes, our result indicates that the correction to the entropy at strong coupling is negative. On the other hand, it is known that the entropy at zero coupling is the same as the Bekenstein-Hawking entropy at strong coupling {{cite:da652d76-596e-4d2e-af95-bd973eaf9bc2}}. This indicates that the correction to the entropy at weak coupling should be non-vanishing too. Assuming the interpolating function between the strong and the weak coupling regimes of the Higgs branch of the FORMULA  SYM at finite temperature in FORMULA  dimensions does not cross the zeroth order entropy at any point in finite coupling, one expects the correction to the entropy at weak coupling to be negative. It would be interesting to perform this calculation.

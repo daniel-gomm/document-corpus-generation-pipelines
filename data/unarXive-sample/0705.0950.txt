@@ -1,0 +1,738 @@
+
+Contraction semigroups of elliptic quadratic differential operatorsKarel Pravda-Starovamerican
+CONTRACTION SEMIGROUPS OF ELLIPTIC QUADRATIC DIFFERENTIAL OPERATORS
+Karel Pravda-Starov
+University of California, Berkeley
+Abstract. We study the contraction semigroups of elliptic quadratic differential operators. Elliptic quadratic differential operators are the
+non-selfadjoint operators defined in the Weyl quantization by complex-valued elliptic quadratic symbols. We establish in this paper that under the
+assumption of ellipticity, as soon as the real part of their Weyl symbols is a non-zero non-positive quadratic form, the norm of contraction semigroups generated
+by these operators decays exponentially in time.
+Key words. contraction semigroups, elliptic quadratic differential operators, exponential decay, pseudospectrum, subellipticity.
+2000 AMS Subject Classification. 47D06, 47F05.
+Miscellaneous facts about elliptic quadratic differential operators
+We study in this paper the class of elliptic quadratic differential operators. It is the class of pseudodifferential operators defined in the Weyl quantization
+FORMULA 
+by some symbols FORMULA , where FORMULA  and FORMULA , which are some complex-valued elliptic quadratic forms i.e. complex-valued quadratic forms verifying
+FORMULA 
+Since the symbols of these operators are some quadratic forms, these are only differential operators. Indeed, the quadratic symbol FORMULA , with
+FORMULA  and FORMULA , is quantized in the differential operator
+FORMULA 
+Since their Weyl symbols are complex-valued, elliptic quadratic differential operators are a priori non-selfadjoint.
+We prove in this paper (Theorem REF ) that under this assumption of ellipticity, as soon as the real part of their Weyl symbols is a non-zero non-positive quadratic form, the norm of contraction semigroups generated
+by these operators decays exponentially in time.
+Let us first begin by setting some notations and recalling known results about these operators.
+Let FORMULA  be a complex-valued elliptic quadratic form
+FORMULA 
+with FORMULA , that is a complex-valued quadratic form verifying (REF ). The numerical range FORMULA  of FORMULA  is defined by the subset in the
+complex plane of all values taken by this symbol
+FORMULA 
+and the Hamilton map FORMULA  associated to the quadratic form FORMULA  is uniquely defined by the identity
+FORMULA 
+where FORMULA  stands for the polar form associated to the quadratic form FORMULA  and FORMULA  is the symplectic
+form on FORMULA ,
+FORMULA 
+Let us first notice from this definition that an Hamilton map is skew-symmetric with respect to FORMULA . This is just a consequence of the properties of skew-symmetry of the symplectic form
+and symmetry of the polar form
+FORMULA 
+Under this assumption of ellipticity, the numerical range of a quadratic form can only take very particular shapes. Indeed, J. Sjöstrand proves in the lemma 3.1 in {{cite:d384cd68-34f8-414c-9958-986f67bd576a}} that
+if
+FORMULA 
+is a complex-valued elliptic quadratic form then there exists FORMULA  such that
+FORMULA  is a positive definite quadratic form. If FORMULA , the same result is fulfilled if we assume besides that FORMULA .
+This result shows that the numerical range of an elliptic quadratic form can only take two shapes. The first possible shape is when FORMULA  is equal to the whole
+complex plane. This case can only occur in dimension FORMULA . The second possible shape is when FORMULA  is equal to a closed angular sector with a top in 0 and an
+opening strictly lower than FORMULA .
+FIGURE 
+Indeed, if FORMULA , using that the set FORMULA  is a semi-cone
+FORMULA 
+because FORMULA  is a quadratic form, we have
+FORMULA 
+if FORMULA  is the non-zero complex number mentioned above and FORMULA  the compact interval
+FORMULA 
+where FORMULA  is the following compact subset of FORMULA ,
+FORMULA 
+The compactness of FORMULA  is a direct consequence of the fact that FORMULA  is a positive definite quadratic form.
+Elliptic quadratic differential operators define some Fredholm operators (see Lemma 3.1 in {{cite:098e7e8a-2a3a-409b-8884-fbcbcf9b2d6a}} or Theorem 3.5 in {{cite:d384cd68-34f8-414c-9958-986f67bd576a}}),
+FORMULA 
+where FORMULA  is the Hilbert space
+FORMULA 
+with the norm
+FORMULA 
+The Fredholm index of the operator FORMULA  is independent of FORMULA  and is equal to 0 if FORMULA . In the case where FORMULA , this index can take the values FORMULA , 0 or 2. More
+precisely, this index is always equal to 0 if FORMULA .
+If FORMULA , J. Sjöstrand proves in the theorem 3.5 in {{cite:d384cd68-34f8-414c-9958-986f67bd576a}} (see also Lemma FORMULA  and Theorem 3.3
+in {{cite:098e7e8a-2a3a-409b-8884-fbcbcf9b2d6a}}) that the spectrum of an elliptic quadratic differential operator
+FORMULA 
+is only composed of eigenvalues with finite multiplicity
+FORMULA 
+where FORMULA  is the Hamilton map associated to the quadratic form FORMULA  and FORMULA  is the dimension of the space of generalized eigenvectors of FORMULA  in FORMULA 
+belonging to the eigenvalue FORMULA . Let us notice that the spectra of these operators are always included in the numerical range of their Weyl symbols.
+
+Contraction semigroups of elliptic quadratic differential operators
+Let us consider a complex-valued elliptic quadratic form
+FORMULA 
+with FORMULA , verifying
+FORMULA 
+Since the quadratic form FORMULA  is non-positive, we deduce from the theorem 21.5.3 in  {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}} that there exists a real linear symplectic transformation FORMULA  of
+FORMULA  such that
+FORMULA 
+with FORMULA  and FORMULA  for all FORMULA . Then, it follows from
+the symplectic invariance of the Weyl quantization (Theorem 18.5.9 in
+{{cite:2e538905-024e-4d43-910b-99c41e32ff6e}}) that we can find a metaplectic operator FORMULA ,
+which is a unitary transformation on FORMULA  and an automorphism of the spaces FORMULA  and FORMULA , where FORMULA  is the Hilbert space defined in (REF ) such that
+FORMULA 
+By using that FORMULA  is a unitary operator on FORMULA , we obtain that for all FORMULA  and FORMULA ,
+FORMULA 
+because the operator FORMULA  is formally skew-selfadjoint.
+By using the Cauchy-Schwarz inequality and the density of the Schwartz space FORMULA  in FORMULA , we deduce from (REF ) that
+FORMULA 
+because we get from (REF ) and (REF ) that
+FORMULA 
+This induces that the elliptic quadratic differential operator FORMULA  generates a contraction semigroup
+FORMULA 
+Indeed, this fact is a direct consequence of the following classical result, which can be found for example in the theorem 2.21 in {{cite:93ae9d8d-7dfe-4764-91fe-f1b61f97a039}} : let FORMULA  be a closed
+unbounded linear operator with a dense domain on
+FORMULA , FORMULA  is the generator of a one-parameter semigroup FORMULA  verifying
+FORMULA 
+if and only if
+FORMULA 
+Remark. As mentioned in {{cite:3306ff52-c0bc-49a0-9dba-86b82f78d683}} (p. 426), the assumption of ellipticity for a quadratic symbol FORMULA  verifying (REF ) is not necessary to obtain
+that the operator defined in the Weyl quantization generates a contraction semigroup.
+Statement of the main result
+The main result contained in this paper is the following.
+Theorem 2.1 
+If FORMULA  is a complex-valued elliptic quadratic form with FORMULA  such that
+FORMULA 
+then the elliptic quadratic differential operator FORMULA  generates a contraction semigroup with a norm decaying exponentially in time
+FORMULA 
+
+
+Some remarks about this result
+Let us first notice that the assumption of ellipticity is essential. Indeed, let us consider the operator defined in the Weyl quantization by the following
+quadratic form
+FORMULA 
+This operator is just the operator of multiplication by FORMULA , which generates the contraction semigroup
+FORMULA 
+We can easily check in this case that for all FORMULA ,
+FORMULA 
+The second assumption in (REF ),
+FORMULA 
+is also important. Indeed, if the quadratic form FORMULA  is identically equal to zero, the two elliptic quadratic differential operators FORMULA  and FORMULA  generate
+some contraction semigroups verifying
+FORMULA 
+This induces that we also have for all FORMULA ,
+FORMULA 
+in this case.
+
+Structure of the proof
+We shall study two cases in the proof of the theorem REF . The first case is the case where the Hamilton map FORMULA  associated to the real
+part of the operator's Weyl symbol FORMULA  is non-nilpotent. This case corresponds to the case where the integer FORMULA  appearing in (REF ) is non-zero. In this case,
+the assumption
+of ellipticity will not be needed and we shall get straightforwardly the result of the theorem REF  from (REF ).
+The most interesting case is the case where the Hamilton map FORMULA 
+is nilpotent. The assumption of ellipticity is then essential. In this case, we shall see that in a suitable new system of symplectic coordinates, we can tensor
+the variables
+FORMULA 
+to write the Weyl symbol of the studied operator
+FORMULA 
+with FORMULA  for all FORMULA , FORMULA  and FORMULA , as a sum of a complex-valued elliptic quadratic form FORMULA  on FORMULA  verifying
+FORMULA 
+such that its associated Hamilton map FORMULA  has no real eigenvalue,
+and the symbol of an harmonic oscillator in dimension FORMULA . Thanks to this tensorization, it will be sufficient to prove the result of exponential decay in time for the norm of the contraction semigroup
+generated by the elliptic quadratic differential operator FORMULA .
+In a second step, we shall see that the properties about its Hamilton map will induce that the symbol
+FORMULA  is of finite order in every non-zero point of its numerical range. By using some results proved in {{cite:4459dc43-ebbd-4511-a521-f7cba4f790cb}} about the pseudospectrum
+of elliptic quadratic differential operatorsThese results are linked to some properties of subellipticity., we will deduce from this fact some estimates for the resolvent's norm of
+the operator FORMULA  inside some particular regions of its numerical range FORMULA . These estimates will allow to give an integral formula for the contraction semigroup
+generated by the operator FORMULA , which will permit to prove the result of exponential decay in time for its norm.
+
+Proof of the theorem  REF
+Let us denote by FORMULA  the Hamilton map associated to the quadratic form FORMULA . It follows from (REF ) that its real part FORMULA  and its imaginary part
+FORMULA  are respectively the Hamilton maps associated to the quadratic forms FORMULA  and FORMULA . We deduce from (REF ) and (REF ) that
+we have in the system of symplectic coordinates FORMULA , where FORMULA ,
+FORMULA 
+with
+FORMULA 
+if FORMULA  stands for the matrix of the real linear symplectic transformation FORMULA .
+We deduce from (REF ), (REF ) and (REF ) that the Hamilton map FORMULA  is nilpotent if and only if FORMULA . In this case FORMULA , the index of nilpotence
+is equal to 2. Let us begin by first considering the non-nilpotent case.
+The non-nilpotent case
+Let us consider the case where FORMULA . We deduce from (REF ) that for all FORMULA  and FORMULA ,
+FORMULA 
+
+because FORMULA  for all FORMULA .
+Since we get from the Cauchy-Schwarz inequality
+FORMULA 
+where FORMULA  stands for the commutator of the operators FORMULA  and FORMULA , because FORMULA  is unitary on FORMULA , we deduce from (REF ) that
+for all FORMULA  and FORMULA ,
+FORMULA 
+Since from (REF ), the spectrum of the operator FORMULA  is only composed of eigenvalues and that the Schwartz space FORMULA  is dense in FORMULA , we get from
+(REF ) that
+FORMULA 
+which induces in view of (REF ) and (REF ) that for all FORMULA ,
+FORMULA 
+This proves the theorem REF  in the non-nilpotent case.
+
+The nilpotent case
+Let us now consider the nilpotent case, which is the most interesting one. The Hamilton map FORMULA  is then nilpotent of index 2,
+FORMULA 
+We deduce from (REF ), (REF ), (REF ) and (REF )
+that in this case
+FORMULA 
+because the quadratic form FORMULA  is non identically equal to zero.
+Tensorization of variables
+Let us first notice that we can freely choose the symplectic coordinates, in which we express the symbol FORMULA  of the studied operator. Indeed, by using
+the symplectic invariance of the Weyl quantization given by the theorem 18.5.9 in
+{{cite:2e538905-024e-4d43-910b-99c41e32ff6e}}, we can find a metaplectic operator FORMULA , which is a unitary transformation on FORMULA  and an automorphism of the spaces FORMULA  and FORMULA  such that
+FORMULA 
+if FORMULA  is a real linear symplectic transformation of FORMULA .
+Since (REF ) induces that
+FORMULA 
+at the level of the generated semigroups, we actually get that for all FORMULA ,
+FORMULA 
+because FORMULA  is a unitary operator on FORMULA . This last identity justifies this first remark.
+Let us now assume that we can find a decomposition of the phase space
+FORMULA 
+in a direct sum of symplectic sub-vector spaces
+FORMULA 
+which are symplectically orthogonal and stable by the maps FORMULA  and FORMULA ,
+FORMULA 
+for all FORMULA . We consider a symplectic basis FORMULA  of the symplectic space FORMULA . By collecting these previous basis, we get a
+symplectic basis of FORMULA . By using the stability and the orthogonality properties of the symplectic spaces FORMULA , we obtain the following decomposition in this new system of symplectic
+coordinates
+FORMULA 
+
+with
+FORMULA 
+for all FORMULA . Since from (REF ), (REF ) and (REF ), FORMULA  is a complex-valued elliptic quadratic form on FORMULA  verifying
+FORMULA 
+the operator FORMULA  generates of a contraction semigroup
+FORMULA 
+such that for all FORMULA ,
+FORMULA 
+We deduce from (REF ) that it is sufficient for proving (REF ) to find an integer FORMULA  such that
+FORMULA 
+This second remark will allow us to reduce in the following our study to the case where the Hamilton map FORMULA  associated to the quadratic form FORMULA  has no real eigenvalue.
+Indeed, it will be a consequence of the following lemma.
+Lemma 3.1 
+If FORMULA  is a real eigenvalue of the Hamilton map FORMULA  associated to a complex-valued elliptic quadratic form FORMULA  verifying (REF ) then this eigenvalue FORMULA  is
+necessarily non-zero
+FORMULA 
+and the complex sub-vector space FORMULA  is the sub-vector space complex conjugate of FORMULA .
+If we consider
+FORMULA 
+then the vector space FORMULA  is a complexification of the space
+FORMULA . Moreover, FORMULA  has a structure of symplectic vector space, which is stable by the Hamilton map FORMULA  and verifies
+FORMULA 
+Moreover, if FORMULA  is another real eigenvalue of FORMULA  distinct from FORMULA  and FORMULA , then we have the following symplectically orthogonal direct sum
+FORMULA 
+where
+FORMULA 
+
+Proof of Lemma REF . Let FORMULA  be a real eigenvalue of FORMULA . The proposition FORMULA  in {{cite:3306ff52-c0bc-49a0-9dba-86b82f78d683}}
+shows that the sub-vector space of FORMULA ,
+FORMULA 
+is the complex conjugate of the complex sub-vector space FORMULA 
+Moreover, we also get from this proposition that
+FORMULA 
+and that the vector space FORMULA , if FORMULA , and FORMULA  are the complexifications of their intersections with FORMULA .
+If FORMULA , then we could find FORMULA  such that FORMULA  and
+FORMULA . Let us consider FORMULA  such that FORMULA . Thus, we would get that
+FORMULA 
+which would contradict the ellipticity of the quadratic form FORMULA . This induces that the eigenvalue FORMULA  is non-zero. The fact that
+FORMULA 
+implies that
+FORMULA 
+Moreover, since the space FORMULA  is stable by FORMULA , it follows from (REF ) that it is also stable by FORMULA .
+The stability of the sub-space FORMULA  by the matrix FORMULA  then directly follows from the fact that
+FORMULA . Let us now consider FORMULA  such that for all FORMULA ,
+FORMULA 
+It follows that for all FORMULA  and FORMULA  in FORMULA ,
+FORMULA 
+which induces that
+FORMULA 
+because FORMULA  is a complexification of FORMULA .
+On the other hand, since FORMULA , we have FORMULA , which implies that
+FORMULA 
+We can then deduce from the ellipticity of the quadratic form FORMULA  that FORMULA , which proves the symplectic structure of the space FORMULA .
+Let us now assume
+that there exists a real eigenvalue FORMULA  of FORMULA  distinct from FORMULA  and FORMULA . We already know that this eigenvalue FORMULA  is necessarily non-zero. Let
+FORMULA 
+with FORMULA , we have
+FORMULA 
+according to the skew-symmetry of the Hamilton map FORMULA  with respect to FORMULA . Since
+FORMULA 
+because FORMULA  and FORMULA  are some real numbers such that FORMULA , we finally deduce that
+FORMULA 
+which proves that the sub-vector spaces FORMULA  and FORMULA  are symplectically orthogonal.  FORMULA
+Let us consider the real eigenvalues of the Hamilton map FORMULA . In view of the previous lemma, we can write the two by two different elements of this set
+FORMULA 
+By using the notations introduced above, let us consider the following space
+FORMULA 
+which is actually a direct sum because of the symplectic structure of sub-vector spaces FORMULA  and their properties of two by two symplectic
+orthogonality. The lemma REF  shows that the symplectic vector space FORMULA  is stable by the Hamilton maps FORMULA  and
+FORMULA . Let us denote by FORMULA  its symplectic orthogonal vector space in FORMULA . This space FORMULA 
+is then a symplectic vector space, which is also stable by FORMULA  and FORMULA . Indeed, let us consider
+FORMULA .
+Since from the skew-symmetry of Hamilton maps with respect to FORMULA , we get that for all FORMULA ,
+FORMULA 
+because FORMULA  and FORMULA .
+It follows that for all FORMULA ,
+FORMULA 
+which proves that FORMULA  and FORMULA . In view of our construction (REF ),
+the map FORMULA  has no real eigenvalue.
+If we now consider some symplectic coordinates FORMULA ,
+FORMULA 
+such that FORMULA  and FORMULA  are respectively some symplectic coordinates in FORMULA  and FORMULA , we deduce from the symplectic orthogonality
+of the spaces FORMULA  and FORMULA , their stabilities by Hamilton maps FORMULA , FORMULA  and the previous results that we can
+tensorize the variables in the symbol FORMULA ,
+FORMULA 
+with
+FORMULA 
+and
+FORMULA 
+if FORMULA  and FORMULA  stand respectively for the canonical symplectic forms on FORMULA  and FORMULA . We deduce from (REF ),
+(REF ) and (REF ) that FORMULA  and FORMULA  are some complex-valued elliptic quadratic forms respectively on FORMULA  and FORMULA  verifying
+FORMULA 
+Since from (REF ) and the lemma REF ,
+FORMULA 
+we deduce from (REF ), (REF ), (REF ) and (REF ) that there exists FORMULA  such that
+FORMULA 
+Let us also notice that (REF ) implies that
+FORMULA 
+It follows in view of the reasoning mentioned above that we can reduce our study in the nilpotent case to the case where the Hamilton map FORMULA  associated to the complex-valued
+quadratic form FORMULA  defined in (REF ) has no real eigenvalue. In all the following, we make this additional licit assumption.
+
+Some algebraic properties
+Let us begin this paragraph by proving the following lemma.
+Lemma 3.2 
+If FORMULA  and FORMULA  are two complex-valued quadratic forms on FORMULA , then the Hamilton map associated to the complex-valued quadratic form defined by the Poisson
+bracket
+FORMULA 
+is FORMULA  if FORMULA  stands for the commutator of FORMULA  and FORMULA  the Hamilton maps of FORMULA  and FORMULA .
+
+Proof of Lemma REF .
+Let us first notice that we can write from (REF ) and (REF ) that for all FORMULA  and FORMULA  in FORMULA ,
+FORMULA 
+for FORMULA  if
+FORMULA 
+It follows that for all FORMULA ,
+FORMULA 
+Since we have
+FORMULA 
+we deduce from (REF ), (REF ), (REF ) and (REF ) that for all FORMULA ,
+FORMULA 
+which induces that
+FORMULA 
+by skew-symmetry of FORMULA  and skew-symmetry of Hamilton maps with respect to FORMULA .
+Since for all FORMULA  and FORMULA  in FORMULA ,
+FORMULA 
+we deduce that
+FORMULA 
+is the polar form associated to the quadratic form FORMULA  and that FORMULA  is its Hamilton map.  FORMULA
+Let us now consider the following quadratic form
+FORMULA 
+Since from (REF ), FORMULA  is a non-positive quadratic form, we already know that FORMULA  is a non-negative quadratic form. We are now going to see that
+FORMULA  is actually a positive definite quadratic form.
+Lemma 3.3 
+The quadratic form FORMULA  is positive definite.
+
+Proof of Lemma REF . Let us assume that there exists FORMULA , FORMULA  such that
+FORMULA 
+The non-positivity of the quadratic form FORMULA  induces that for all FORMULA ,
+FORMULA 
+If FORMULA  stands for the polar form associated to the quadratic form FORMULA , we deduce from the Cauchy-Schwarz inequality and (REF ) that
+for all FORMULA  and FORMULA ,
+FORMULA 
+
+It follows that for all FORMULA  and FORMULA ,
+FORMULA 
+which implies that for all FORMULA ,
+FORMULA 
+because the symplectic form is non-degenerate.
+Let us set
+FORMULA 
+This is licit. Indeed, since from (REF ), FORMULA , the ellipticity of the quadratic form FORMULA  implies that
+FORMULA 
+because FORMULA .
+By using the skew-symmetry of the Hamilton map FORMULA , it follows that
+FORMULA 
+which shows that the system FORMULA  is symplectic.
+If FORMULA , we deduce that for all FORMULA ,
+FORMULA 
+because from (REF ) and (REF ),
+FORMULA 
+This contradicts (REF ) and ends the proof of the lemma REF  in the case where FORMULA .
+We can thus assume in the following that FORMULA .
+In view of the proposition FORMULA  in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}}, this system can be completed in a symplectic basis
+FORMULA  of FORMULA .
+We now check that the vector space FORMULA  generated by the vectors
+FORMULA  and FORMULA ,
+FORMULA 
+is not stable by the Hamilton map FORMULA . Indeed, if the vector space FORMULA  was stable by FORMULA ,
+we could write in the symplectic coordinates associated to the symplectic basis FORMULA  the decomposition
+FORMULA 
+because on one hand, we have
+FORMULA 
+since from (REF ) and (REF ),
+FORMULA 
+and that on the other hand
+FORMULA 
+because we assume that the space FORMULA  is stable by FORMULA . Since the quadratic form FORMULA  is elliptic, we deduce
+from (REF ) that the quadratic form
+FORMULA 
+is also elliptic on FORMULA .
+It follows from the result proved by J. Sjöstrand (Lemma 3.1 in {{cite:d384cd68-34f8-414c-9958-986f67bd576a}}) and recalled in (REF ) that a real-valued elliptic quadratic form is necessarily
+positive definite or negative definite. Then, we deduce from (REF ) and the lemma 18.6.4 in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}} that we can find a new symplectic basis FORMULA  of the space FORMULA 
+such that in these new coordinates
+FORMULA 
+with FORMULA . We can easily check that (REF ) implies that the Hamilton map FORMULA  associated to the quadratic form FORMULA  has some real eigenvalues,
+which contradicts our assumption.
+Indeed, by computing the Hamilton map FORMULA  from (REF ) as in (REF ), we obtain that
+FORMULA 
+if FORMULA  and FORMULA . We conclude that the vector space FORMULA  is actually not stable by the
+Hamilton map FORMULA .
+We can now resume the symplectic coordinates associated to the symplectic basis FORMULA  defined just before (REF ).
+Since the vector space FORMULA  is not stable by FORMULA , we can find by using the following symplectically orthogonal direct sum
+FORMULA 
+and (REF ), an element FORMULA , FORMULA  and some real numbers FORMULA  such that
+FORMULA 
+It follows from (REF ), (REF ) and (REF ) that
+FORMULA 
+because FORMULA .
+We can then consider the following new vectors
+FORMULA 
+which is possible according to the fact that from (REF ),
+FORMULA 
+and to the ellipticity of FORMULA .
+It follows that
+FORMULA 
+because according to our construction FORMULA  and FORMULA  and that we get from (REF ), (REF ) and (REF ),
+FORMULA 
+and that from (REF ), (REF ), (REF ) and (REF ),
+FORMULA 
+We deduce from (REF ), (REF ), (REF ) and (REF ) that
+FORMULA 
+By checking as before that the vector space
+FORMULA 
+cannot be stable by the Hamilton map FORMULA , because it would imply the existence of real eigenvalues for FORMULA , we can using (REF ) iterate this construction to build a
+symplectic basis FORMULA  of FORMULA 
+such that for all FORMULA ,
+FORMULA 
+This induces that for all FORMULA ,
+FORMULA 
+which contradicts (REF ) and ends the proof of the lemma REF .  FORMULA
+By using the two previous lemmas, we can now prove that the quadratic symbol FORMULA  has a finite order FORMULA  verifying
+FORMULA 
+in every non-zero point of the numerical range
+FORMULA 
+Let us first recall the classical definition of the order FORMULA 
+of a symbol FORMULA  at a point FORMULA  (see section 27.2, chapter 27 in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}}). This order FORMULA  is an element of the set FORMULA  defined by
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  stands for the iterated Poisson brackets
+FORMULA 
+where FORMULA  and FORMULA  are respectively the real and the imaginary part of the symbol FORMULA , FORMULA . The order of a symbol FORMULA  at a point FORMULA  is then defined as the
+maximal order of the symbol FORMULA  at every point FORMULA  verifying
+FORMULA 
+Let FORMULA  be in FORMULA , FORMULA . Let us denote by FORMULA  the lowest integer in FORMULA  such that
+FORMULA 
+given the lemma REF . It follows that for all FORMULA ,
+FORMULA 
+Let us prove that
+FORMULA 
+Indeed, we deduce from the lemma REF  that the Hamilton map associated to the quadratic form FORMULA  is
+FORMULA 
+with exactly FORMULA  terms FORMULA  appearing in the previous formula. We can write
+FORMULA 
+with FORMULA  for all FORMULA . Indeed, by using the following identity
+FORMULA 
+we can prove by induction that for all FORMULA , there exist some positive constants FORMULA , FORMULA  such that
+FORMULA 
+if there are exactly FORMULA  terms FORMULA  in the left-hand side of the previous identity.
+It follows from (REF ) and (REF ) that
+FORMULA 
+
+Since on one hand
+FORMULA 
+
+by skew-symmetry of the Hamilton map FORMULA , and that on the other hand we get from (REF ), (REF ) and the Cauchy-Schwarz inequality
+FORMULA 
+
+and
+FORMULA 
+
+if FORMULA , we deduce (REF ) from (REF ) and (REF ) that
+FORMULA 
+because FORMULA . We conclude from (REF ), (REF ) and (REF ) that the quadratic symbol FORMULA  has a finite order lower or equal than FORMULA 
+in every non-zero point of the numerical range FORMULA .
+
+Some estimates for the resolvent of elliptic quadratic differential operators
+To obtain the result of exponential decay in time for the norm of the contraction semigroup given by the theorem REF , we need to estimate
+the resolvent of its generator in some particular regions of the resolvent set.
+The first estimate is given by the following proposition, which shows that the resolvent of an elliptic quadratic differential operator
+cannot blow up in norm far from the numerical range of its symbol. This result is proved in {{cite:4459dc43-ebbd-4511-a521-f7cba4f790cb}}. For the sake of completeness of this paper, we recall its proof.
+Proposition 3.1 
+Let FORMULA , FORMULA , be a complex-valued elliptic quadratic form. We have
+FORMULA 
+where FORMULA  stands for the distance from FORMULA  to the numerical range FORMULA .
+
+Proof of Proposition  REF.
+If the numerical range is equal to the whole complex plane, there is nothing to prove. If FORMULA , we have seen after (REF ) that
+the numerical range is necessarily a closed angular sector with a top in 0 and an opening strictly lower than FORMULA .
+Let us consider FORMULA 
+and denote by FORMULA  its orthogonal projection on the non-empty closed convex set FORMULA . According to the shape of the numerical range, it follows that FORMULA 
+belongs to its boundary and that we can find a complex number FORMULA , FORMULA  such that
+FORMULA 
+and
+FORMULA 
+Using now that the operator FORMULA 
+is formally skew-selfadjoint, we obtain that for all FORMULA ,
+FORMULA 
+Then, since the quadratic form FORMULA  is non-negative, we deduce from the symplectic invariance of the Weyl quantization (Theorem 18.5.9 in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}})
+and the theorem 21.5.3 in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}} that there exists a metaplectic operator FORMULA , which is a unitary transformation of FORMULA  and an automorphism of the
+spaces FORMULA  and FORMULA , such that
+FORMULA 
+with FORMULA  and FORMULA  for all FORMULA . By using that FORMULA  is a unitary operator on FORMULA , we obtain that the quantity
+FORMULA 
+is non-negative. Then, we can deduce from the Cauchy-Schwarz inequality, FORMULA  and FORMULA  that for all FORMULA ,
+FORMULA 
+Finally, using the density of the Schwartz space FORMULA  in FORMULA  and the fact that FORMULA , we obtain that
+FORMULA 
+since according to (REF ),
+ FORMULA
+The second estimate that we will use is a consequence of the semiclassical result given by the following
+proposition. This result deals with a result of absence of semiclassical pseudospectrum for elliptic quadratic differential operators at the boundary of their numerical ranges. It
+is linked to some properties of subellipticity of these operators. This result is proved in {{cite:4459dc43-ebbd-4511-a521-f7cba4f790cb}}. We also recall its proof for the sake of completeness of this paper.
+Let us consider a complex-valued quadratic form
+FORMULA 
+and FORMULA  an open half-line with a top in 0 included in its numerical range
+FORMULA 
+We need to define a notion of order for the symbol FORMULA  on this half-line FORMULA .
+Since FORMULA  is a quadratic form, all the iterated Poisson brackets are also some quadratic forms. The property of degree two homogeneity of these Poisson brackets induces
+that the symbol FORMULA  has the same order at every point of the open half-line FORMULA . This allows to define the order of the symbol FORMULA  on the half-line FORMULA  by
+defining this order with this common value. As underlined in {{cite:4459dc43-ebbd-4511-a521-f7cba4f790cb}}, this order can be finite or infinite. In the case where the Weyl symbol of
+an elliptic quadratic differential operator is of finite order on an open half-line belonging to the boundary of its numerical range, we have the following result.
+Proposition 3.2 
+Let us consider a complex-valued elliptic quadratic form
+FORMULA 
+with a numerical range FORMULA  distinct from the whole complex plane
+FORMULA 
+which is a closed angular sector with a top in 0 and a positive opening.
+If this symbol FORMULA  is of finite order FORMULA  on an open half-line belonging to the boundary of its numerical range
+FORMULA 
+then this order is necessarily even and there is no semiclassical pseudospectrum of index FORMULA  on
+FORMULA  for the associated semiclassical operator, that is that for all FORMULA ,
+FORMULA 
+
+Proof of Proposition REF .
+Let us consider the following symbol belonging to the FORMULA  space composed of bounded complex-valued functions on FORMULA  with all derivatives bounded
+FORMULA 
+with FORMULA . Setting
+FORMULA 
+we can first notice that
+FORMULA 
+Let us also notice that the symbol FORMULA  fulfills the principal-type condition in 0. Indeed, if FORMULA  was such that FORMULA  and FORMULA ,
+we would get from (REF ) that
+FORMULA 
+Since by using the lemma 3.1 in {{cite:d384cd68-34f8-414c-9958-986f67bd576a}} and the lemma 18.6.4 in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}}, we can find a non-zero complex number FORMULA  and a real linear
+symplectic transformation FORMULA  of FORMULA  such that
+FORMULA 
+with FORMULA  for all FORMULA , we deduce from (REF ) that
+FORMULA 
+with FORMULA . This would first imply that
+FORMULA 
+because FORMULA  for all FORMULA .
+It would then follow that FORMULA  because FORMULA  is a quadratic form. However, since FORMULA , we get from (REF ) that FORMULA  because
+FORMULA 
+which induces a contradiction. It follows that the symbol FORMULA  actually fulfills the principal-type condition in 0.
+Let us now notice that, since symbol FORMULA  is of finite order FORMULA  in FORMULA , this induces in view of (REF ) that the symbol FORMULA  is also of finite order FORMULA  in 0.
+On the other hand, we deduce from (REF ) and (REF ) that the set
+FORMULA 
+is compact. Under these conditions, we can apply the theorem 1.4 in {{cite:65c61741-bf75-4ad9-9af3-62e55bae8c33}}, which proves that the integer FORMULA  is even and gives the existence of positive constants FORMULA  and FORMULA 
+such that
+FORMULA 
+Remark. We did not check the dynamical condition FORMULA  in {{cite:65c61741-bf75-4ad9-9af3-62e55bae8c33}}, because this assumption is not necessary
+for the proof of Theorem 1.4. Indeed, this proof only use a part of the proof of Lemma 4.1 in {{cite:65c61741-bf75-4ad9-9af3-62e55bae8c33}} (a part of the second paragraph), where this condition (1.7) is not needed.
+By using some results of symbolic calculus given by the theorem 18.5.4 in {{cite:2e538905-024e-4d43-910b-99c41e32ff6e}} and (REF ), we can write
+FORMULA 
+with
+FORMULA 
+and
+FORMULA 
+We can easily check from (REF ) that these functions FORMULA  and FORMULA  belong to the space FORMULA , and we deduce from the Calderón-Vaillancourt theorem
+that there exists a positive constant FORMULA  such that for all FORMULA  and FORMULA ,
+FORMULA 
+It follows from (REF ), (REF ), (REF ) and the triangular inequality that for all FORMULA  and FORMULA ,
+FORMULA 
+
+Since from the Cauchy-Schwarz inequality, we have for all FORMULA  and FORMULA ,
+FORMULA 
+
+we obtain that for all FORMULA  and FORMULA ,
+FORMULA 
+Since FORMULA  because  FORMULAWe recall that FORMULA  is a closed angular sector., we deduce from (REF ) that there exist some positive constants FORMULA  and FORMULA  such that
+for all FORMULA  and FORMULA ,
+FORMULA 
+Using that the Schwartz space FORMULA  is dense in FORMULA  and that the operator
+FORMULA 
+is a Fredholm operator of index 0, we obtain that for all FORMULA ,
+FORMULA 
+which ends the proof of the proposition REF .  FORMULA
+By using that FORMULA  is a quadratic form, we obtain from the change of variables
+FORMULA 
+with FORMULA , the following identity between the quantum operator
+FORMULA  and its associated semiclassical operator FORMULA ,
+FORMULA 
+if FORMULA . It follows that when (REF ) is fulfilled, we get from (REF ) the following estimate for the resolvent of the elliptic quadratic differential operator FORMULA ,
+FORMULA 
+
+Exponential decay in time for the norm of contraction semigroups
+Let
+FORMULA 
+be a complex-valued elliptic quadratic form verifying
+FORMULA 
+We consider the nilpotent case
+FORMULA 
+where FORMULA  stands for the Hamilton map associated to FORMULA , and we assume that this Hamilton map FORMULA  has no real eigenvalue. This reduction is licit according to section REF .
+As mentioned after (REF ), the numerical range FORMULA  is necessarily a closed angular sector with a top in 0 and an opening strictly lower than FORMULA  when the
+assumption (REF ) is fulfilled. We deduce from (REF ), (REF ), (REF ) and the ellipticity of FORMULA  that the numerical range FORMULA  is actually a closed angular sector with a positive opening
+such that one of the two half-lines FORMULA  or FORMULA  belongs to its boundary. We will consider in the following the case where
+FORMULA 
+The proof of the theorem REF  in the second case
+FORMULA 
+will be a straightforward adaptation of the one given when (REF ) is fulfilled.
+FIGURE 
+We know from (REF ) that the spectrum of the elliptic quadratic differential operator FORMULA  is only composed of eigenvalues and is given by
+FORMULA 
+Since from (REF ),
+FORMULA 
+it follows that
+FORMULA 
+if FORMULA . Since we assume that the Hamilton map FORMULA  has no real eigenvalue, we obtain that
+FORMULA 
+if FORMULA  and FORMULA . This implies that
+FORMULA 
+with
+FORMULA 
+Let us prove that there exists a curve FORMULA  in the complex plane such that there exist some positive constants FORMULA , FORMULA , FORMULA  and FORMULA  such that
+FORMULA 
+FORMULA 
+FORMULA 
+and
+FORMULA 
+where FORMULA  and FORMULA  are the subsets appearing on the following figure in the cutoff of the complex plane
+FORMULA 
+FIGURE 
+To justify this fact, let us begin by noticing that since we have proved in section REF  that the quadratic symbol FORMULA  has always a finite order lower or equal than FORMULA  in
+every non-zero point of the numerical range
+FORMULA , we can deduce from the proposition REF  and (REF ) that
+FORMULA 
+This induces that for all FORMULA  and FORMULA ,
+FORMULA 
+It follows from (REF ) that for all FORMULA  and
+FORMULA 
+we have
+FORMULA 
+
+which induces that
+FORMULA 
+because the spectrum of the operator FORMULA  is only composed of eigenvalues. Since
+FORMULA 
+if the positive constant FORMULA  is sufficiently large and
+FORMULA 
+it follows that
+FORMULA 
+According to the shape of the numerical range (see the figure 2), we can assume that
+FORMULA 
+if the positive constant FORMULA  is chosen sufficiently large.
+We can then obtain from the proposition REF  that there exists a positive constant FORMULA  such that for all
+FORMULA 
+FORMULA 
+if the positive constant FORMULA  is chosen sufficiently large.
+We can also deduce from the proposition REF  that there exists a positive constant FORMULA  such that for all
+FORMULA 
+FORMULA 
+since we can find a positive constant FORMULA  such that for all FORMULA  belonging to the set (REF ),
+FORMULA 
+The inclusion (REF ) and the three estimates (REF ), (REF ) and (REF ) allow to justify (REF ),
+(REF ), (REF ), (REF ) and (REF ).
+Using this curve FORMULA , we can now give an integral formula for the contraction semigroup generated by the operator FORMULA , which allows to prove the result
+of exponential decay in time for its norm. In the following, we follow a method used by F. Hérau and F. Nier in {{cite:faf7e09a-f17e-43a9-8a69-e4c326c34fc8}}.
+Let us set
+FORMULA 
+for all FORMULA . Since from (REF ),
+FORMULA 
+we deduce from (REF ) that
+FORMULA 
+for all FORMULA . Moreover if FORMULA , we can write that for all FORMULA ,
+FORMULA 
+because from (REF ), FORMULA . Let us set
+FORMULA 
+for all FORMULA . Since we can easily check from (REF ) that for all FORMULA ,
+FORMULA 
+we deduce from (REF ) and (REF ) that for all FORMULA ,
+FORMULA 
+By using (REF ) and (REF ), we can check that the right-hand side of (REF ) is continuous with respect to FORMULA  and that for all FORMULA ,
+FORMULA 
+
+because
+FORMULA 
+
+and that from (REF ),
+FORMULA 
+Since
+FORMULA 
+
+because FORMULA , we deduce from (REF ) and (REF ) that for all FORMULA ,
+FORMULA 
+in FORMULA . On the other hand, it follows from (REF ) that
+FORMULA 
+We need the following lemma to conclude.
+Lemma 3.4 
+We have
+FORMULA 
+
+By using this lemma, we get from (REF ), (REF ) and (REF ) that for all FORMULA  and FORMULA ,
+FORMULA 
+By using that FORMULA  if FORMULA , and the density of the space FORMULA  in FORMULA , we obtain that for all FORMULA  and FORMULA ,
+FORMULA 
+Let us notice from (REF ) and (REF ) that for all FORMULA , FORMULA  and FORMULA ,
+FORMULA 
+We deduce from (REF ), (REF ) and (REF ) that for all FORMULA  and FORMULA ,
+FORMULA 
+Since
+FORMULA 
+
+because according to (REF ) and (REF ),
+FORMULA 
+we obtain from (REF ) that there exists a positive constant FORMULA  such that for all FORMULA ,
+FORMULA 
+Finally, by using that the elliptic quadratic differential operator FORMULA  generates a contraction semigroup, we deduce from (REF ) that
+FORMULA 
+It follows that it only remains to prove the lemma REF  to end our proof of the theorem REF .
+To prove the lemma REF , it is sufficient to prove that for all FORMULA  and FORMULA  in FORMULA ,
+FORMULA 
+Since the function
+FORMULA 
+is holomorphic in an open neighbourhood of the set FORMULA , the Cauchy Theorem proves that
+FORMULA 
+if FORMULA  and FORMULA  stands for the oriented contour appearing on the following figure
+FORMULA 
+FIGURE 
+defined by
+FORMULA 
+FORMULA 
+FORMULA 
+and
+FORMULA 
+It follows from (REF ) and (REF ) that
+FORMULA 
+
+For FORMULA , we get from (REF ), (REF ), (REF ) and (REF ) that
+FORMULA 
+
+when FORMULA . Finally, we deduce (REF ) from (REF ) and (REF ) by considering the limit when FORMULA  in (REF ). This ends
+the proof of the lemma REF  and also the proof of the theorem REF .  FORMULA
+Department of Mathematics, University of California, Evans Hall,
+Berkeley, CA 94720, USA
+E-mail address : karel@math.berkeley.edu

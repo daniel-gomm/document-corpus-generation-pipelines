@@ -1,0 +1,591 @@
+
+Effect of node deleting on network structure
+Ke Deng
+dengke@jsu.edu.cn
+Heping Zhao
+Dejun Li
+Department of Physics, Jishou University, Jishou, Hunan
+416000, People's Republic of China
+The ever-increasing knowledge to the structure of various real-world
+networks has uncovered their complex multi-mechanism-governed
+evolution processes. Therefore, a better understanding to the
+structure and evolution of these networked complex systems requires
+us to describe such processes in more detailed and realistic manner.
+In this paper, we introduce a new type of network growth rule which
+comprises of adding and deleting of nodes, and propose an evolving
+network model to investigate the effect of node deleting on network
+structure. It is found that, with the introduction of node deleting,
+network structure is significantly transformed. In particular,
+degree distribution of the network undergoes a transition from
+scale-free to exponential forms as the intensity of node deleting
+increases. At the same time, nontrivial disassortative degree
+correlation develops spontaneously as a natural result of network
+evolution in the model. We also demonstrate that node deleting
+introduced in the model does not destroy the connectedness of a
+growing network so long as the increasing rate of edges is not
+excessively small. In addition, it is found that node deleting will
+weaken but not eliminate the small-world effect of a growing
+network, and generally it will decrease the clustering coefficient
+in a network.
+INTRODUCTION
+Network structure is of great importance in the topological
+characterization of complex systems in reality. Actually, these
+networked complex systems have been found to share some common
+structural characteristics, such as the small-world properties, the
+power-law degree distribution, the degree correlation, and so on
+{{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}. In the theoretical description of these findings, the
+Watts-Strogatz (WS) model {{cite:841905e2-99dd-4ebe-a1c5-e3e3be950897}} provides a simple way to generate
+networks with the small-world properties. Barabási and Albert
+(BA) {{cite:d08141ba-d67e-4ad5-a0b8-8f1e467958ed}}, with a somewhat different aim, proposed an evolving
+network model to explain the origin of power-law degree
+distribution. In this model, by considering two fundamental
+mechanisms: growth and preferential attachment (PA), power-law
+degree distribution emerges naturally from network evolution. Based
+on the framework of BA model, many other mechanisms were introduced
+into network evolution to reproduce some more complex observed
+network structures {{cite:8ac94cbc-6a8f-42be-8ecf-290f4c54f789}}, {{cite:75062eed-f8ac-47f1-b465-8b93a3f76ec4}}, {{cite:3ff2071e-bf45-4639-897d-f96a8984dcd3}}, {{cite:2490b297-3399-4489-9c00-738c9a467574}}, {{cite:78c033c1-a69c-4fe0-b6e2-319de48ae377}}, {{cite:615cbbf8-7c3c-4dfc-ac25-50553c22ac69}}, {{cite:a1eac66f-c4d0-4b48-833a-40d5cb78d9fc}}, {{cite:04635f7d-6ff8-4939-869d-f1902281d4f7}}, {{cite:a49ddbe6-6d56-4f8d-bf36-99fb1c324c55}}, {{cite:066ec6bc-7c4d-4452-9e47-deb283e78621}}, {{cite:064ab755-2ad2-4bce-941f-236011124ead}}, {{cite:c99b4480-1fe7-4174-99de-b4e750e831ca}}, such as
+the degree distribution of broad scale and single scale {{cite:8ac94cbc-6a8f-42be-8ecf-290f4c54f789}}, as
+well as the degree correlation {{cite:c99b4480-1fe7-4174-99de-b4e750e831ca}}. These further studies show
+that real networked systems may undergo a very complex evolution
+process governed by multiple mechanisms on which the occurrence of
+network structures depends. Therefore, to get a better understanding
+of the structure and evolution of complex networks, describing such
+processes in more detailed and realistic manner is necessary.
+In the BA's framework, the growing nature of real-world networks is
+captured by a BA-type growth rule. According to this rule, one node
+is added into the network at each time step, intending to mimic the
+growing process of real systems. This rule gives an explicit
+description to the real-network' growing process which, however, can
+in fact be much more complex. One fact is that in many real growing
+networks, there are constant adding of new elements, but accompanied
+by permanent removal of old elements (deletion of nodes)
+{{cite:fa08221c-d8f5-4ffd-82ca-e14642af148d}}, {{cite:2600120d-a2ab-4188-a3fe-93ebb13efe80}}, {{cite:9111ca1d-be20-47cf-b5fb-b3e69aa99364}}, {{cite:e43b6091-3b1c-4bd8-9813-b22838ff556a}}, {{cite:f4b71e45-510c-4a9d-8093-959580c9611a}}, {{cite:53f36e34-7059-44ea-a3d9-21b3c2b38145}}. Take the food webs for a example: there
+are both additions and losses of nodes (species) at ecological and
+evolutionary time scales by means of immigration, emigration,
+speciation, and extinction {{cite:fa08221c-d8f5-4ffd-82ca-e14642af148d}}. Likewise, for Internet and the
+World Wide Web (WWW), node-deleting is reported experimentally in
+spit of their rapid expansion of size {{cite:2600120d-a2ab-4188-a3fe-93ebb13efe80}}, {{cite:9111ca1d-be20-47cf-b5fb-b3e69aa99364}}, {{cite:e43b6091-3b1c-4bd8-9813-b22838ff556a}}, {{cite:f4b71e45-510c-4a9d-8093-959580c9611a}}, {{cite:53f36e34-7059-44ea-a3d9-21b3c2b38145}}. In the
+Internet's Autonomous Systems (ASs) map case, a node is an AS and a
+link is a relationship between two ASs. An AS adding means a new
+Internet Service Provider (ISP) or a large institution with multiple
+stub networks joins the Internet. An AS deleting happens due to the
+permanent shutdown of the corresponding AS as it is, for example,
+out of business. Investigations of the evolution of real Internet
+maps from 1997 to 2000 verified such network mechanism
+{{cite:2600120d-a2ab-4188-a3fe-93ebb13efe80}}, {{cite:9111ca1d-be20-47cf-b5fb-b3e69aa99364}}, {{cite:e43b6091-3b1c-4bd8-9813-b22838ff556a}}. The same is for the evolution of WWW, in which the
+deletions of invalid web pages are also frequently discovered
+{{cite:f4b71e45-510c-4a9d-8093-959580c9611a}}, {{cite:53f36e34-7059-44ea-a3d9-21b3c2b38145}}. In most cases, the deletion of a node is also
+accompanied with the removal of all edges once attached to it. These
+facts justify the investigation of node-deletion's influence on
+network structure. In this paper, we introduce a new type of network
+growth rule which comprises of adding and deleting of nodes, and
+propose an evolving network model to investigate the effect of node
+deleting on the network structure. Before now several authors have
+proposed some models on node removal in networks, such as AJB
+networks in which a portion nodes are simultaneously removed from
+the network {{cite:58ca0ba3-3ced-4d9a-b661-0d855db2c62c}}, and also the decaying {{cite:49d66f20-01ae-4174-a58d-e17c07aa5bd1}} and mortal
+{{cite:0491982e-d7b4-47e2-83c3-63f29dc775f6}} networks, which concerns networks' scaling property and
+critical behavior respectively. Sarshar et al {{cite:ac242def-1ba1-41e3-9e37-8f84aa15690a}}
+investigated the ad hoc network with node removal, focusing
+on the compensatory process to preserve true scale-free state. They
+are different from present work, in which node deleting is treated
+as an ubiquitous mechanism accompanied with the evolution of
+real-world networks.
+This paper is organized as follows. In Section , an
+evolving network model taking account of the effect of node deleting
+is introduced which reduces to a generalized BA model when the
+effect of node deleting vanishes. Then the effect of node deleting
+on network structure are investigated in five aspects: degree
+distribution (Section ), degree correlation
+(Section ), size of giant component
+(Section ), average distance between nodes
+(Section ) and clustering (Section ). Finally,
+Section  presents a brief summary.
+
+THE MODEL
+We consider the following model. In the initial state, the network
+has FORMULA  isolated nodes. At each time step, either a new node is
+added into the network with probability FORMULA  or a randomly chosen
+old node is deleted from the network with probability FORMULA ,
+where FORMULA  is an adjustable parameter. When a new node is added to
+the network, it connects to FORMULA  (FORMULA ) existing node in
+the network according to the preferential probability introduced in
+the BA model {{cite:d08141ba-d67e-4ad5-a0b8-8f1e467958ed}}, which reads
+FORMULA 
+where FORMULA  is the degree of node FORMULA . When an old node is
+deleted from the network, edges once attached to it are removed as
+well. In the model, FORMULA  is varied in the range of FORMULA ,
+since in the case of FORMULA  the network can not grow. In
+order to give a chance for isolated nodes to receive a new edge, we
+choose preferential probability FORMULA  proportional to
+FORMULA  {{cite:75062eed-f8ac-47f1-b465-8b93a3f76ec4}}. Note that when FORMULA , our model reduces to
+a generalized BA model {{cite:f5ab1082-b527-4ae3-8f56-38ae3f35ba91}}.
+To get a general knowledge to the effect of node deleting on network
+structure, firstly, a simple analysis to the surviving probability
+FORMULA  is helpful. Here, FORMULA  is defined as the probability
+that a node is added into the network at time step FORMULA , and this
+node (the FORMULA th node) has not been deleted until time step FORMULA ,
+where FORMULA . Supposing that a node-adding event happens at
+time step FORMULA , and the probability that the FORMULA th node has not
+been deleted until time step FORMULA  is denoted as FORMULA . Then, due
+to the independence of events happened at each time step, it is easy
+to verify that FORMULA  with
+FORMULA , where FORMULA  is the number of nodes in the
+network at moment FORMULA  (in the limit of large FORMULA ). In the continuous
+limit, we obtain
+FORMULA 
+which yields
+FORMULA 
+Thus to get the FORMULA  we should multiply FORMULA  with FORMULA ,
+i.e.
+FORMULA 
+One can easily find that FORMULA  decreases rapidly as FORMULA  increases
+and/or as FORMULA  decreases provided FORMULA . It is well known that
+highly connected nodes, or hubs, play very important roles in the
+structural and functional properties of growing networks
+{{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}. The formation of hubs needs a long time to gain a
+large number of connections. As a consequence, according to
+Eq. (REF ), a large portion of potential hubs are deleted
+during the network evolution. Thus it can be expected that the
+introduction of node deleting has nontrivial effects on network
+structure. In the following we show how network structure can be
+effected by the node deleting introduced in present model.
+
+DEGREE DISTRIBUTION
+The degree distribution FORMULA , which gives the probability that a
+node in the network possesses FORMULA  edges, is a very important
+quantity to characterize network structure. In fact, FORMULA  has been
+suggested to be used as the first criteria to classify real-world
+networks {{cite:8ac94cbc-6a8f-42be-8ecf-290f4c54f789}}. Therefore it is necessary to investigate the
+effect of node deleting on the degree distribution of networks
+firstly. Now we adopt the continuous approach {{cite:e5255a23-6058-4818-80b6-580a6cf54c1a}} to give a
+qualitative analysis of FORMULA  for our model with slight node
+deletion (i.e., when FORMULA  is very small). Supposing that there is a
+node added into the network at time step FORMULA , and this node is
+still in the network at time FORMULA , let FORMULA  be the degree of the
+FORMULA th node at time FORMULA , where FORMULA . Then the increasing
+rate of FORMULA  is
+FORMULA 
+where
+FORMULA 
+and the FORMULA  denotes the sum of all FORMULA  during the time
+step between 0 and FORMULA . It is easy to verify that the first term
+in Eq. (REF ) is the increasing number of links of the FORMULA th
+node due to the preferential attachment made by the newly added
+node. The second term in Eq. (REF ) accounts for the losing of
+a link of the FORMULA th node during the process of node deletion, which
+happened with the probability FORMULA .
+Firstly we solve for the FORMULA  and get
+FORMULA 
+(see the Appendix for details). Inserting Eq. (REF ) back into
+Eq. (REF ), one gets
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+When FORMULA , the solution of Eq. (REF ) is
+FORMULA 
+Now, to get the probability FORMULA  that a randomly selected node
+at time FORMULA  will have degree FORMULA , we need to calculate the expected
+number of nodes FORMULA  with degree FORMULA  at time FORMULA . Then the
+FORMULA  can be obtained from FORMULA , where FORMULA  is
+the total number of nodes at time FORMULA . Let FORMULA  represent the
+set of all possible nodes with degree FORMULA  at time FORMULA , then one gets
+FORMULA 
+In the continuous-time approach, the number of nodes in FORMULA  is
+the number of FORMULA 's for which FORMULA , and
+it is approximated to FORMULA , where FORMULA  is the solution of the
+equation FORMULA . To proceed with our analysis, now we make the
+approximation that all nodes in FORMULA  have the same surviving
+probability FORMULA  It seems that this is not a very
+good approximation, since investigations indicate that values of
+FORMULA  are large and
+increase rapidly with the decrease of FORMULA . Thus the analysis here
+is a qualitative one and only suit for the condition of slight node
+deletion in the model.. Under this mean-field approximation,
+Eq. (REF ) can be written as
+FORMULA 
+From Eq. (REF ), we obtain
+FORMULA 
+then
+FORMULA 
+Inserting Eq. (REF ) back into Eq. (REF ) we get
+FORMULA 
+Inserting Eqs. (REF ) and  (REF ) into
+Eq. (REF ), and noting that FORMULA , we get
+FORMULA 
+
+which is a generalized power-law form with the exponent
+FORMULA 
+FIGURE 
+We point out again that equation (REF ) is only valid when
+FORMULA , which translates into FORMULA , i.e.
+FORMULA 
+Considering that FORMULA , Eq. (REF ) is satisfied when
+FORMULA 
+In Fig. REF , we plot FORMULA  as a function of FORMULA . One can
+see from Fig. REF  that the curve divides our model into two
+regimes. FORMULA  FORMULA : in this case FORMULA  and equation
+(REF ) is valid. Thus, the degree distribution of the network
+FORMULA  exhibits a generalized power-law form. FORMULA 
+FORMULA : In this case FORMULA  can not be always satisfied
+and equation (REF ) is not valid. Therefore, our continuous
+approach fails to predict the behavior of FORMULA , and we will
+investigate it with numerical simulations. The FORMULA , as
+one can find from Fig. REF , decreases with the increase of
+FORMULA .
+In the power-law regime [FORMULA ], the behavior of FORMULA 
+is predicted by Eqs. (REF ) and (REF ), which are
+obtained using a mean-field approximation [Eq. (REF )]. One
+can easily verify that such approximation is only exact when
+FORMULA , in which case Eq. (REF ) turns into FORMULA ,
+in good agreement with the results obtained from generalized BA
+model studied in Ref {{cite:f5ab1082-b527-4ae3-8f56-38ae3f35ba91}}. If FORMULA ,
+Eqs. (REF ) and (REF ) still give qualitative
+predictions for the model: with slight node deletion, FORMULA  of the
+network is still power-law, and the exponential FORMULA  increases
+with the decrease of FORMULA  (inset of Fig. REF ).
+In remaining regime [FORMULA ], the limiting case is
+FORMULA , in which the growth of network is suppressed (a
+very slowly growing one). Similar non-growing networks have been
+studied, for example, for the Model B in Ref{{cite:b75adf67-40ce-481f-bf14-b19ce5f277ec}}, and the
+degree distribution has the exponential form. Here we conjecture
+that, in this regime, FORMULA  of our model crossovers to an
+exponential form, which is verified by the numerical simulation
+results below.
+FIGURE 
+Now we verify the above analysis with numerical simulations. In
+Fig. REF , we give the cumulative degree distributions FORMULA 
+{{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}} of the networks with different FORMULA . As FORMULA  gradually
+decreases from 1 to FORMULA , Fig. REF  shows an interesting
+transition process which can be roughly divided into three stages.
+FORMULA  FORMULA : In this stage, the model works
+in the power-law regime and the power-law exponent FORMULA 
+increases as FORMULA  decreases. Inset of Fig. REF  gives the
+comparison between the value of FORMULA  predicted by
+Eq. (REF ) and the one obtained from numerical simulations.
+One sees that the theory and the simulation results are in perfect
+agreement for FORMULA . As FORMULA  decreases, however, the agreement is
+only qualitative and the deviation between theory and simulation
+becomes more and more obvious. As we have mentioned above, such
+increasing deviation is due to the mean-field approximation used in
+the analysis. These results tell us that slight node deletion does
+not cause deviation of the network from scale-free state, but only
+increases its power-law exponent. Such robustness of power-low
+FORMULA  revealed here gives an explanation to the ubiquity of
+scale-free networks in reality. It should be noted that a very
+similar robustness has also been found in the study of network
+resilience, where simultaneously deleting of a portion of nodes was
+taken into account in static scale-free networks {{cite:58ca0ba3-3ced-4d9a-b661-0d855db2c62c}}. FORMULA 
+FORMULA : In this stage, the model works in the regime
+of FORMULA . As one sees from Fig. REF , FORMULA  of the
+network behaviors exponentially. This result indicates that with
+manifest node deletion, the network will deviate from scale-free
+state and become exponential. FORMULA  FORMULA : In this stage, a
+crossover of the model from the power-law regime to the exponential
+regime is found, in which the FORMULA  is no longer pure scale-free
+but truncated by an exponential tail. As one can see, the truncation
+in FORMULA  increases as FORMULA  decreases.
+Besides the power-law degree distribution, it is now known that
+FORMULA  in real world may deviate from a pure power-law form
+{{cite:dfc3c638-5738-4d24-87ec-84ca96a94ca4}}, {{cite:edb13d48-3f17-46a2-bbe6-85eac7db36f7}}, {{cite:4139e2ac-9aad-4357-b3b1-03670c48b0fc}}, {{cite:fa08221c-d8f5-4ffd-82ca-e14642af148d}}, {{cite:d50d5d48-8d77-4673-95e3-632fe896055c}}. According to the extent of deviation, FORMULA 
+of real systems has been classified into three groups {{cite:8ac94cbc-6a8f-42be-8ecf-290f4c54f789}}:
+scale-free (pure power-law), broad scale (power-law with a
+truncation), and single scale (exponential). Many mechanisms, such
+as aging {{cite:8ac94cbc-6a8f-42be-8ecf-290f4c54f789}}, {{cite:3ff2071e-bf45-4639-897d-f96a8984dcd3}}, {{cite:2490b297-3399-4489-9c00-738c9a467574}}, cost {{cite:8ac94cbc-6a8f-42be-8ecf-290f4c54f789}}, and information filtering
+{{cite:78c033c1-a69c-4fe0-b6e2-319de48ae377}}, have been introduced into network growth to explain these
+distributions. Here, the results of Fig. REF  indicate that a
+modified version of growth rule can lead to all the three kinds of
+FORMULA  in reality, and it provides another explanation for the
+origin of the diversity of degree distribution in real-world: such
+diversity may be a natural result of network growth.
+
+DEGREE CORRELATION
+It has been recently realized that, besides the degree distribution,
+structure of real networks are also characterized by degree
+correlations {{cite:2600120d-a2ab-4188-a3fe-93ebb13efe80}}, {{cite:37cca37c-af6f-4bcd-a12c-4266fa46d317}}, {{cite:71da0c44-bbb1-43b3-891b-bac379766f7a}}, {{cite:b725c26a-f620-4fc4-a58e-913800226ab1}}, {{cite:1c296cc3-ee38-4c48-89d8-0956fcdaf38b}}. This translates into the fact
+that degrees at the end of any given edge in real networks are not
+usually independent, but are correlated with one another, either
+positively or negatively. A network in which the degrees of adjacent
+nodes are positively (negatively) correlated is said to show
+assortative (disassortative) mixing by degree. An interesting
+observation emerging from the comparing of real networks of
+different types is that most social networks appear to be
+assortatively mixed, whereas most technological and biological
+networks appear to be disassortative. The level of degree
+correlation can be quantified by the assortativity coefficient FORMULA 
+lying in the range FORMULA , which can be written
+as
+FORMULA 
+for practical evaluation on an observed network, where FORMULA ,
+FORMULA  are the degrees of the vertices at the ends of the FORMULA th
+edge, with FORMULA  {{cite:37cca37c-af6f-4bcd-a12c-4266fa46d317}}. This formula gives FORMULA 
+when the corresponding network is positively (negatively)
+correlated, and FORMULA  when there is no correlation Another
+way to represent degree correlation is to calculate the mean degree
+of the nearest neighbors of a vertex as a function of the degree FORMULA 
+of that vertex. Although such way is explicit to characterize degree
+correlation for highly heterogeneously organized networks, for less
+heterogeneous networks (this is the case in the proposed model when
+the intensity of node deleting increases, see Fig. REF ), it may
+be very nosy and difficult to interpret. So here we adopt the
+assortativity coefficient FORMULA  to characterize degree correlation in
+the model..
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+Recently, Maslov et al {{cite:a08a5ce0-19cd-42a2-bdae-dc0a54f019a1}} and Park et al
+{{cite:705248ac-8496-4c75-81b3-8c6bbabbe2e4}} have proposed a possible explanation for the origin of
+such correlation. They show for a network the restriction that there
+is at most one edge between any pair of nodes induces negative
+degree correlations. This restriction seems to be an universal
+mechanism (indeed, there is no double edges in most real networks),
+therefore, the authors of Ref. {{cite:705248ac-8496-4c75-81b3-8c6bbabbe2e4}} conjecture that
+disassortativity by degree is the normal state of affairs for a
+network. Although only a part of the measured correlation can be
+explained in the way of Ref. {{cite:705248ac-8496-4c75-81b3-8c6bbabbe2e4}}, this universal mechanism
+does give a promising explanation for the origin of degree
+correlation observed in real networks of various types.
+It will be of great interest to discuss the effect of node deleting
+on degree correlation. In Fig. REF , we give the assortativity
+coefficient FORMULA  as a function of network size FORMULA , for different
+FORMULA  in our model, for FORMULA . As one sees from Fig. REF , for
+each value of FORMULA , after a transitory period with finite-size
+effect, each FORMULA  of networks tends to reach a steady value. When
+FORMULA , FORMULA  as FORMULA  becomes large. This result indicates
+that networks in the BA model are uncorrelated, in agreement with
+results obtained in previous studies {{cite:37cca37c-af6f-4bcd-a12c-4266fa46d317}}, {{cite:1c296cc3-ee38-4c48-89d8-0956fcdaf38b}}. When FORMULA ,
+nontrivial negative degree correlations spontaneously develop as
+networks evolve. One can see from Fig. REF  that the steady value
+of FORMULA  in the model decreases with the decreasing FORMULA . In
+particular, when FORMULA , the value of FORMULA  is about
+FORMULA . These results indicate that node deleting leads to
+disassortative mixing by degree in evolving networks. To make such
+relation more clear, in Fig. REF , we plot FORMULA  of networks in
+our model as a function of FORMULA , for different FORMULA . As the
+Fig. REF  indicates, when the network size is larger than
+40000, the assortativity coefficient FORMULA  is nearly stable. So all
+results in Fig. REF  are obtained from networks with FORMULA .
+Fig. REF  gives us the same relation between FORMULA  and FORMULA 
+shown in Fig. REF . What is more, it tells us that for a given
+FORMULA , FORMULA  will increase with the increasing FORMULA . The increment gets
+its maximum between FORMULA  and other values. We point out that this
+is because when FORMULA , the network has been broke up into small
+separate components (see the following section). We can also find
+from Fig. REF  that the gap between different curves decreases
+with the increasing FORMULA  and the curves tend to merge at large FORMULA .
+Now we give some explanations to the above observations. In the BA
+model, the network being uncorrelated is the result of a competition
+between two factors: the growth and the preferential attachment
+(PA). On the one hand, networks with pure growth is positively
+correlated. This is because the older nodes, also tending to be
+higher degree ones, have a higher probability of being connected to
+one another, since they coexisted earlier. In Fig. REF , we
+compute the assortativity coefficient FORMULA  of a randomly growing
+network, which grows by the growth rule of BA-type, while the newly
+added nodes connect to randomly chosen existing ones. As one
+can see from Fig. REF  that pure growth leads to positive
+FORMULA . On the other hand, the introduction of PA makes the connection
+between nodes tend to be negatively correlated, since newly added
+nodes (usually low degree ones) prefer to connect to highly
+connected ones. Then degree correlation characteristic of the BA
+model is determined by this two factors. In Fig. REF , we
+plot the average degree of the nearest neighbor FORMULA  as a
+function of FORMULA  in the BA model. It is found that nodes with large
+FORMULA  show no obvious biases in their connections. But there is a
+short disassortative mixing region when FORMULA  is relatively small
+(also reported in Ref. {{cite:a61c479a-bec6-48b6-a641-37eb4837c2cd}}, see Fig.1a therein). Such
+phenomenon can be explained by the effect of these two factor:
+Growth together with PA makes nodes with large FORMULA  equally connect
+to both large and small degree nodes, and the latter makes nodes
+with small degree be disassortatively connected. Now, we introduce
+node-deletion. According to Eq. (REF ), depression of the
+growth of large-degree nodes also decreases the connections between
+them, therefore makes the correlation negative. We also investigate
+the effect of node deleting on the FORMULA  of the randomly growing
+network, and obtained similar results. As one sees from
+Fig. REF , depression of connections between higher degree
+nodes causes the network less positively correlated, and with
+stronger node-deletion, negatively correlated. Finally, with regard
+to the effect of FORMULA  in this relation (Fig. REF ), larger FORMULA 
+means more edges are established according to the PA probability
+Eq. (REF ). We conjecture that the orderliness of newly added
+nodes connecting to large degree nodes will be weakened by the
+increasing randomness as FORMULA  becomes larger, thus leading to a less
+negative correlation. Such randomness can not always increase and,
+as we see from Fig. REF , for large FORMULA , e.g., FORMULA , the
+curves tend to merge together.
+
+SIZE OF GIANT COMPONENT
+FIGURE 
+In a network, a set of connected nodes forms a component. If the
+relative size of the largest component FORMULA  in a network approaches a
+nonzero value when the network is grown to infinite size, this
+component is called the giant component of the network
+{{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}. In most previously studied growing models
+{{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}, due to the BA-type growth rule they adopted, there is
+only one huge component in the network, i.e., FORMULA . In this
+extreme case the network gains a perfect connectedness. The opposite
+case of FORMULA  is the extreme of FORMULA , in which case the network,
+made up of small components, exhibits no connectedness. Experiments
+indicate that some real networks seem to lie in somewhere between
+these two extreme: they contain a giant component as well as many
+separate components {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}, {{cite:522f22e5-8ff8-4d05-bddc-1a2c0fb4f123}}, {{cite:645baa78-7529-4aa5-b815-875994bf4d7a}}. For example, According to
+Ref.{{cite:522f22e5-8ff8-4d05-bddc-1a2c0fb4f123}}, in May of 1999, the entire WWW, containing
+FORMULA  pages, consisted of a giant component of
+FORMULA  pages and the disconnected components (DC) of
+about FORMULA  pages. In general, the introduction of node
+deletion in our model will cause the emergence of separate
+components even isolated nodes in the network. What we interest here
+is the connectedness of the network. In Fig. REF  we plot the
+relative size of the largest component FORMULA  in the model, as a
+function of FORMULA , for FORMULA , where FORMULA  is the number of edges
+generated with the adding of a new node. One sees from Fig. REF 
+that for any FORMULA , a giant component can be observed in
+the model if FORMULA . In addition, for the same FORMULA , FORMULA  increase as
+the increase of FORMULA . While when FORMULA , the network is found to be
+broke up into separate components if FORMULA . For example, when
+FORMULA , FORMULA  of the network with FORMULA  rapidly drops to
+FORMULA . Inset of Fig. REF  gives the FORMULA  Vs FORMULA  curve for
+FORMULA . These results indicate that node deleting does not destroy
+the connectedness of a growing network so long as the increasing
+rate of edges is not excessively small.
+
+AVERAGE DISTANCE BETWEEN NODES
+Now we study the effect of node deletion on networks' average
+distance FORMULA  between nodes. Here the distance between any two nodes
+is defined as the number of edges along the shortest path connecting
+them. It has been revealed that, despite their often large size,
+most real networks present a relatively short FORMULA , showing the
+so-called small-world effect {{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}, {{cite:841905e2-99dd-4ebe-a1c5-e3e3be950897}}. Such an effect has a
+more precise meaning: networks are said to show the small-world
+effect if the value of FORMULA  scales logarithmically or slower with
+network size for fixed mean degree. This logarithmic scaling can be
+proved for a variety of network models {{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}. As we have
+demonstrated in Section , node deleting does not destroy
+the connectedness of the network in our model for any FORMULA , since
+there is always a giant component exists. Here in our simulation, we
+calculate FORMULA  of the giant component of the network in our model
+using the ¡°burning algorithm¡± {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}. In Fig. REF , we plot
+FORMULA  as a function of network size FORMULA , for different FORMULA  in our
+model. As one can see from the figure, for any FORMULA , a
+logarithmic scaling FORMULA  is obtained, while the proportional
+coefficient increases with the decrease of FORMULA . Furthermore, for a
+given FORMULA , FORMULA  increases with the decrease of FORMULA . These results
+tell us that node deleting will weaken but not eliminate the
+small-world effect of a growing network.
+FIGURE 
+
+CLUSTERING
+Finally, we investigate the effect of node deletion on network's
+cluster coefficient FORMULA , which is defined as the average probability
+that two nodes connected to a same other node are also connected.
+For a selected node FORMULA  with degree FORMULA  in the network, if there
+are FORMULA  edges among its FORMULA  nearest neighbors, the cluster
+coefficient FORMULA  of node FORMULA  is defined as
+FORMULA 
+Then the clustering coefficient of the whole network is the average
+of all individual FORMULA . In Fig. REF , we plot FORMULA  of
+the giant component in the network as a function of network size
+FORMULA , for different FORMULA . As one sees from Fig. REF ,
+for each FORMULA , the clustering coefficient FORMULA  of our model
+decreases with the network size, following approximately a power law
+form. Such size-dependent property of FORMULA  is shared by many growing
+network model {{cite:d60f7e6d-c5ba-4033-88ec-aed8d242076d}}, {{cite:91bf5d2c-5fe6-4132-9436-dbe07abd101f}}, {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}. Moreover, as Fig. REF 
+shows, for the same network-size FORMULA , FORMULA  decreases as FORMULA 
+decreases. The results of Fig. REF  indicate that node
+deleting weakens network's clustering.
+FIGURE 
+
+CONCLUSION
+In summary, we have introduced a new type of network growth rule
+which comprises of adding and deleting of nodes, and proposed an
+evolving network model to investigate effects of node deleting on
+network structure. It has been found that, with the introduction of
+node deleting, network structure was significantly transformed. In
+particular, degree distribution of the network undergoes a
+transition from scale-free to exponential forms as the intensity of
+node deleting increased. At the same time, nontrivial disassortative
+degree correlation spontaneously develops as a natural result of
+network evolution in the model. We also have demonstrated that node
+deleting introduced in our model does not destroy the connectedness
+of a growing network so long as the increasing rate of edge is not
+excessively small. In addition, it has been observed that node
+deleting will weaken but not eliminate the small-world effect of a
+growing network. Finally, we have found that generally node deleting
+will decrease the clustering coefficient in a network. These
+nontrivial effects justify further studies of the effect of node
+deleting on network function {{cite:aec43104-a14c-460a-9d9d-ba22e06752d5}}, which include topics such as
+percolation, information and disease transportation, error and
+attack tolerance, and so on.
+The authors thank Doc. Ke Hu for useful discussions. This work is
+supported by the National Natural Science Foundation of China, Grant
+No. 10647132, and Natural Science Foundation of Hunan Province,
+China, Grant No. 00JJY6008.
+*
+
+THE CALCULATION OF  FORMULA
+To get FORMULA , we multiply both sides of Eq. (REF ) by
+FORMULA  and sum up all FORMULA  between 0 and FORMULA :
+FORMULA 
+To get the above equation we have used the definition of FORMULA 
+[Eq. (REF )] and the following equation:
+FORMULA 
+The left-hand side of Eq. (REF ) can be simplified as:
+FORMULA 
+
+Substituting the above expression in Eq. (REF ), and noting
+that FORMULA  and FORMULA , we get
+FORMULA 
+The solution to the above equation is
+FORMULA 
+R. Albert and A.-L. Barabási, Rev. Mod. Phys. ¦74¦, 47 (2002).
+S. N. Dorogovtsev, and J. F. F. Mendes, Adv. Phys. ¦51¦, 1079 (2002).
+M. E. J. Newman, SIAM Review ¦45¦, 167 (2003).
+D. J. Watts and S.H. Strogatz, Nature (London) ¦393¦, 440 (1998).
+A.-L. Barabási and R. Albert, Science, ¦286¦, 509 (1999).
+L. A. N. Amaral, A. Scala, M. Barthélémy and H. E. Stanley, Proc. Natl. Acad. Sci. U.S.A. ¦97¦, 11149 (2000).
+R. Albert and A.-L. Barabási, Phys. Rev. Lett. ¦85¦, 5234 (2000).
+S. N. Dorogovtsev and J. F. F. Mendes, Phys. Rev. E ¦62¦, 1842 (2000).
+K. Klemm and V. M. Eguíluz, Phys. Rev. E ¦65¦, 036123 (2002).
+S. Mossa, M. Barthélémy, H. E. Stanley and L. A. N. Amaral, Phys. Rev. Lett. ¦88¦, 138701 (2002).
+Z. Liu, Y.-C. Lai and N. Ye, Phys. Rev. E ¦66¦, 036112 (2002).
+S. Fortunato, A. Flammini and F. Menczer, Phys. Rev. Lett. ¦96¦, 218701 (2006).
+W. Jeżewski, Phys. Rev. E ¦66¦, 067102 (2002).
+R. Xulvi-Brunet and I. M. Sokolov, Phys. Rev. E ¦66¦, 026118 (2002).
+A. Vázquez, Phys. Rev. E ¦67¦, 056104 (2003).
+Tao Zhou, Gang Yan and B.-H. Wang, Phys. Rev. E ¦71¦, 046141 (2005).
+Wen-Xu Wang, Bo Hu, Tao Zhou, Bing-Hong Wang, and Yan-Bo Xie, Phys. Rev. E ¦72¦, 046140 (2005).
+J. A. Dunne, R. J. Williams and N. D. Martinez, Proc. Natl. Acad. Sci. U.S.A. ¦99¦, 12917 (2002).
+K.-I. Goh, B. Kahng and D. Kim, Phys. Rev. Lett. ¦88¦, 108701 (2002).
+Q. Chen ¦et al.¦, ¦The origins of
+power laws in Internet topologies revisited¦, in Proceedings of the
+21st Annual Joint Conference of the IEEE Computer and Communications
+Societies, IEEE Computer Society (2002).
+A. Vázquez, R. Pastor-Satorras1 and A. Vespignani, Phys. Rev. E ¦65¦, 066130 (2002).
+S. Lawrence and C. Lee Giles, Science, ¦280¦, 98 (1998).
+B. A. Huberman and L. A. Adamic, Nature (London), ¦401¦, 131 (1999).
+R. Albert, H. Jeong and A.-L. Barabási, Nature (London) ¦406¦, 378 (2000).
+S. N. Dorogovtsev and J. F. F. Mendes, EuroPhys. Lett. ¦52¦, 33 (2000).
+J. L. Slater, B. D. Hughes and K. A. Landman, Phys. Rev. E ¦73¦, 066111 (2006).
+N. Sarshar and V. Roychowdhury, Phys. Rev. E ¦69¦, 026101 (2004).
+S. N. Dorogovtsev, J. F. F. Mendes and A. N. Samukhin, Phys. Rev. Lett. ¦85¦, 4633 (2000).
+S. N. Dorogovtsev and J. F. F. Mendes, Phys. Rev. E ¦63¦, 056125 (2001).
+A.-L. Barabási, R. Albert and H. Jeong, Physica A ¦272¦, 173 (1999).
+M. E. J. Newman, Computer Physics Communications ¦147¦, 40 (2002).
+J. Camacho, R. Guimerà and L. A. N. Amaral, Phys. Rev. Lett. ¦88¦, 228102 (2002).
+M. E. J. Newman, S. Forrest and J. Balthrop, Phys. Rev. E ¦66¦, 035101 (2002).
+H. Jeong, S. P. Mason, A.-L. Barabási and Z. N. Oltvai, Nature (London), ¦411¦, 41 (2001).
+M. E. J. Newman, Phys. Rev. Lett. ¦89¦, 208701 (2002).
+R. Pastor-Satorras1, A. Vázquez and A. Vespignani, Phys. Rev. Lett. ¦87¦, 258701 (2001).
+S. Maslov and K. Sneppen, Science, ¦296¦, 910 (2002).
+M. E. J. Newman, Phys. Rev. E ¦67¦, 026126 (2003).
+S. Maslov, K. Sneppen and A. Zaliznyak, e-print cond-mat/0205379.
+J. Park and M. E. J. Newman, Phys. Rev. E ¦68¦, 026112 (2003).
+Huang Zhuang-Xiong, Wang Xin-Ran and Zhu Han, Chinese Physics ¦13¦, 273 (2004).
+A. Broder, R. Kumar, F. Maghoul, P. Raghavan, S. Rajagopalan,
+R. Stata, A. Tomkins, and J. Wiener, in Proceedings of the 9th WWW
+Conference (Elsevier, Amsterdam, 2000), p. 309.
+S. N. Dorogovtsev, J. F. F. Mendes and A. N. Samukhin, Phys. Rev. E ¦64¦, 025101(R) (2001).

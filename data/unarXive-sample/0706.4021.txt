@@ -1,0 +1,166 @@
+
+Nonergodicity and Central Limit Behavior for Long-range Hamiltonians
+Title
+A. Pluchino1 A. Rapisarda1 C. Tsallis2,3
+1 Dipartimento di Fisica e Astronomia, Università di
+Catania, and INFN sezione di Catania, - Via S. Sofia 64, I-95123
+Catania, Italy
+2 Centro Brasileiro de Pesquisas Fisicas, - Rua Xavier Sigaud 150, 22290-180 Rio de Janeiro-RJ, Brazil
+3 Santa Fe Institute, 1399 Hyde Park Road, Santa Fe, NM 87501, USA
+64.60.My Metastable phases 
+89.75.-k  Complex systems
+We present a molecular dynamics test of the Central Limit Theorem (CLT)
+in a paradigmatic long-range-interacting many-body classical Hamiltonian system, the
+HMF model. We calculate sums of velocities at equidistant times along deterministic trajectories for
+different sizes and energy densities. We show that,
+when the system is in a chaotic regime (specifically, at thermal equilibrium), ergodicity is essentially
+verified, and the Pdfs of the sums appear to be Gaussians, consistently with the standard CLT.
+When the system is, instead, only weakly chaotic (specifically, along longstanding metastable
+Quasi-Stationary States), nonergodicity (i.e., discrepant ensemble and time averages) is observed,
+and robust FORMULA -Gaussian attractors emerge, consistently with recently proved generalizations of the CLT.
+Introduction
+During recent years there has been an increasing interest in generalizations of the
+Central Limit Theorem (CLT). This theorem – so called because of its central position in theory of probabilities –
+has ubiquitous and important applications in several fields.
+It essentially states that a (conveniently scaled) sum of FORMULA  independent (or nearly independent)
+random variables with finite variance has a Gaussian distribution.
+Understandingly, this theorem is not
+applicable to those complex systems where long-range correlations are the rule, such as those
+addressed by nonextensive statistical mechanics {{cite:4e6d1796-63d5-42d1-9c52-7b5366c011f8}}, {{cite:a3ed910b-34f7-4c70-b1af-3065ccf254a9}}. Therefore, several papers {{cite:03fd8a26-4b58-41cb-b583-84fdddb99569}}, {{cite:8a4317d3-63de-4819-ab80-5e2a25a5d324}}, {{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}}, {{cite:f84e2621-3893-41ba-ad95-d5a930c104c6}}, {{cite:367e6453-63d3-4694-9e05-68fbe6c9c437}}, {{cite:ff96f3b9-44a1-45aa-bf92-cf3382a095e0}}, {{cite:7bff6d09-c36d-41d9-b717-6496f09f3162}}, {{cite:eaf30641-1c4a-4396-a107-01f40b919ded}} have
+recently discussed extensions of the CLT and their corresponding attractors.
+In this paper, following {{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}}, {{cite:367e6453-63d3-4694-9e05-68fbe6c9c437}}, we present several numerical
+simulations for a long-range Hamiltonian system, namely the Hamiltonian Mean Field (HMF) model. This model is a
+paradigmatic one for classical Hamiltonian systems with long-range interactions which has been
+intensively studied in the last decade (see, for example, {{cite:d454c0f3-eddd-4702-a4f2-286ba5cbc9d3}}, {{cite:dd213c1d-2a82-42a5-954a-2c84b0714799}}, {{cite:13187c72-178c-4c96-b002-090660351a0c}}, {{cite:e68b3170-06df-4940-80d5-23173282ab1d}}, {{cite:93a02149-feb3-4710-812e-6dcf66ba62dc}}, {{cite:a501d7ce-c624-46ee-928b-0b6aa950de99}}, {{cite:c7efaffa-2a67-4a86-93db-ea08a67ff0c6}}, {{cite:02c239a8-bd9f-4a0e-a383-f3509e1e026e}}, {{cite:73c30488-c46f-4c15-b0ae-15d0c3e1a704}}, {{cite:5d157211-8fa3-484f-a4ed-a3fd0e890d92}}, {{cite:4fd6aba4-2ebb-4a57-949d-301d23b37ffb}}, {{cite:367e6453-63d3-4694-9e05-68fbe6c9c437}}, and references therein).
+In {{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}} it was shown that
+the probability density of rescaled sums of iterates of deterministic dynamical systems (e.g., the logistic map)
+at the edge of chaos (where the Lyapunov exponent vanishes) violates the CLT.
+Here we study rescaled sums of velocities considered along deterministic trajectories in the HMF model.
+It is well known that, in this model, a wide class of out-of-equilibrium initial conditions induce a violent relaxation
+followed by a metastable regime characterized by nearly vanishing (strictly vanishing in the thermodynamic limit)
+Lyapunov exponents, and glassy dynamics {{cite:e68b3170-06df-4940-80d5-23173282ab1d}}, {{cite:93a02149-feb3-4710-812e-6dcf66ba62dc}}, {{cite:a501d7ce-c624-46ee-928b-0b6aa950de99}}.
+We exhibit that correlations and nonergodicity created along these Quasi-Stationary States (QSS)
+can be so strong that, when summing the velocities calculated during the deterministic trajectories of single rotors
+at fixed intervals of time, the standard CLT is no longer applicable.
+In fact, along the QSS, FORMULA -Gaussian Pdfs emerge as attractors instead of simple
+Gaussian Pdfs, consistently with the recently advanced
+FORMULA -generalized CLT {{cite:8a4317d3-63de-4819-ab80-5e2a25a5d324}}, {{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}}, {{cite:7bff6d09-c36d-41d9-b717-6496f09f3162}}, and ensemble averages are different from time averages.
+
+Numerical simulations
+The HMF model describes a system of FORMULA  fully-coupled classical inertial
+XY spins (rotors)
+FORMULA with unitary module and mass {{cite:d454c0f3-eddd-4702-a4f2-286ba5cbc9d3}}, {{cite:dd213c1d-2a82-42a5-954a-2c84b0714799}}.
+These spins can also be thought as particles rotating
+on the unit circle.
+The Hamiltonian is given by
+FORMULA 
+where FORMULA  (FORMULA ) is the angle
+and FORMULA  the conjugate variable representing the rotational
+velocity of spin FORMULA .
+The equilibrium solution of the model in the canonical ensemble
+predicts a second order phase transition from a high
+temperature paramagnetic phase to a low temperature
+ferromagnetic one {{cite:d454c0f3-eddd-4702-a4f2-286ba5cbc9d3}}.
+The critical temperature is FORMULA  and corresponds to
+a critical energy per particle FORMULA .
+The order parameter of this phase transition is the modulus of
+the average magnetization per spin defined as:
+FORMULA .
+Above FORMULA , the spins point in different directions and FORMULA .
+Below FORMULA , most spins
+are aligned (the rotators are trapped in a single cluster) and FORMULA .
+The out-of equilibrium dynamics of the model is also very interesting. In a range
+of energy densities between FORMULA , special initial conditions called
+water-bag (characterized by initial magnetization FORMULA  and uniform distribution of the momenta)
+drive the system, after a violent relaxation,
+towards metastable QSS. The latter slowly decay towards equilibrium with a lifetime which diverges
+like a power of the system size FORMULA  {{cite:13187c72-178c-4c96-b002-090660351a0c}}, {{cite:e68b3170-06df-4940-80d5-23173282ab1d}}, {{cite:93a02149-feb3-4710-812e-6dcf66ba62dc}}.
+In this section we simulate the dynamical evolution of several HMF systems with different
+sizes and at different energy densities,
+in order to explore their behavior either inside or outside the QSS regime.
+For each of them, following the prescription of the CLT, we construct probability density functions of quantities expressed as a finite sum of stochastic variables. But in this case, following the procedure adopted in ref.{{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}} for the logistic map, we will select these variables along the deterministics time evolutions of the N rotors.
+More formally, we study the Pdf of the quantity FORMULA  defined as
+FORMULA 
+where FORMULA , with FORMULA , are the velocities of the FORMULA -rotor taken at fixed intervals of time FORMULA  along the same trajectory. The latter are obtained integrating the HMF equations of motions (see {{cite:e68b3170-06df-4940-80d5-23173282ab1d}} for details about these equations and the integration algorithm adopted
+). The quantity FORMULA  is the average of the FORMULA 's over the single trajectory.
+The product FORMULA  gives the total simulation time.
+Note that the variables FORMULA 's are proportional to the time average of the velocities
+along the single rotor trajectories. In the following we will distinguish this kind of average, i.e. time average, from the standard ensemble average, where the average of the velocities of the FORMULA  rotators is calculated at a given fixed time  and over many different realizations of the dynamics. The latter can also be obtained from eq.(REF ) considering the FORMULA 's variables with FORMULA  and FORMULA .
+FIGURE 
+In general, although the standard CLT predicts a Gaussian shape for sum of FORMULA  independent stochastic values strictly when FORMULA , in practice a finite sum converges quite soon to the Gaussian shape and this, in absence of correlations, is certainly true at least for the central part of the distribution {{cite:31940ef9-4f52-4ed9-ab7b-dd97d078a47d}}.
+Typically we will use in this section a sum of FORMULA  values of velocities along the deterministic trajectories for each of the FORMULA  rotors of the HMF system, though larger values of FORMULA  were also considered.
+In the following we will show that, if correlations among velocities are strong enough and the system is weakly chaotic, CLT predictions are not verified and, consistently with recent generalizations of the CLT, FORMULA -Gaussians appear {{cite:03fd8a26-4b58-41cb-b583-84fdddb99569}}, {{cite:8a4317d3-63de-4819-ab80-5e2a25a5d324}}, {{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}}.
+The latter are a generalization of Gaussians which emerge in the context of nonextensive statistical mechanics {{cite:4e6d1796-63d5-42d1-9c52-7b5366c011f8}}, {{cite:a3ed910b-34f7-4c70-b1af-3065ccf254a9}} and are defined as
+FORMULA 
+being FORMULA  the so-called entropic index (for FORMULA  one recovers the usual Gaussian) , FORMULA  another suitable parameter (characterizing the width of the distribution), and FORMULA  a normalization constant (see also ref. {{cite:eaf30641-1c4a-4396-a107-01f40b919ded}} for a simple and general way to generate them).
+In particular we will show in this section that:
+(i) at equilibrium, when correlations are weak and the system is strongly chaotic (hence ergodic) standard CLT is verified, and time average coincides with ensemble average (both corresponding Pdfs are Gaussians, either in the limit FORMULA  or FORMULA );
+(ii) in the QSS regime, where velocities are strongly correlated and the system is weakly chaotic and nonergodic, the standard CLT is no longer applicable, and FORMULA -Gaussian attractors replace the Gaussian ones; in this regime ensemble averages do not agree with time averages.
+For all the present simulations, water-bag initial conditions with initial magnetizazion FORMULA , usually referred as M1, will be used. In general, several different realizations of the initial conditions will be performed also for the time average Pdfs case, but only in order to have a good statistics for small values of FORMULA  (for N=50000, on the contrary, only one realization has been used: see fig.REF (b)). Finally, to allow a correct comparison with standard Gaussians (represented as dashed lines in all the figures) and FORMULA -Gaussians (represented as full lines), the Pdf curves were always normalized to unit area and unit variance, by subtracting from the FORMULA 's their average FORMULA  and dividing by the correspondent standard deviation FORMULA  (hence, the traditional FORMULA  scaling adopted in Eq. (2) is in fact irrelevant).
+FIGURE 
+The case N=100
+We start the discussion of the numerical simulations for the HMF model considering a size FORMULA  and two different energy densities, FORMULA  and FORMULA . In the first case no QSS exist, while in the second case QSS characterize the out-of-equilibrium dynamics and correlations formed during the first part of the dynamics decay slowly while the system relaxes towards equilibrium {{cite:e68b3170-06df-4940-80d5-23173282ab1d}}, {{cite:93a02149-feb3-4710-812e-6dcf66ba62dc}}. With FORMULA  this relaxation takes however a reasonable amount of time steps, thus one can easily study also the equilibrium regime. The situation is illustrated in fig. REF ,
+where we show the time evolution of the temperature - calculated as twice the average kinetic energy per particle - for the two energy densities considered, starting from FORMULA  initial conditions. As expected QSS are clearly visible only in the case FORMULA , although a small transient regime exists also for the case FORMULA  {{cite:e68b3170-06df-4940-80d5-23173282ab1d}}.
+
+N=100 and U=0.4
+Here we discuss numerical simulations for the HMF model with size FORMULA  and FORMULA .
+In this case it has been shown in the past that the equilibrium regime is reached quite fast and is
+characterized by a very chaotic dynamics {{cite:d454c0f3-eddd-4702-a4f2-286ba5cbc9d3}}, {{cite:dd213c1d-2a82-42a5-954a-2c84b0714799}}.
+In fig. REF  a transient time of 40000 units has been performed before the calculations, so that the equilibrium is fully reached (see fig.REF ). In (a) we consider the ensemble average of the velocities, i.e. the FORMULA  variables defined as in (REF ) with FORMULA , at FORMULA  and taking 1000 different realizations of the initial conditions (events). The Pdf compares very well with the Gaussian curve (dashed line), as expected at equilibrium.
+On the other hand, we consider in (b), (c) and (d) the Pdfs for the variable FORMULA  with FORMULA  and
+with different time intervals FORMULA  over an increasing simulation time at equilibrium.
+As previously explained, this procedure corresponds to performing a time average along the trajectory for all the rotors of the system. In this case only the central part of the curve exhibits a Gaussian shape. On the other hand, Pdfs have long fat tails which can be very well reproduced with FORMULA -Gaussians (full lines). If one increases the time interval FORMULA  going from FORMULA  (b), to FORMULA  (c) and finally to FORMULA  (d), the tails tend to disappear, the entropic index FORMULA  of the FORMULA -Gaussians decreases from FORMULA  towards FORMULA  and the Pdf tends to the standard Gaussian. This means that, as expected, summed velocities are less and less correlated as FORMULA  increases (see also ref.{{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}}) and therefore the assumptions of the CLT are satisfied as well as its prediction.
+Notice that FORMULA  terms and a time interval FORMULA  are sufficiently large to reach a Gaussian-shaped Pdf. This situation reminds similar observations in the analysis of returns in financial markets {{cite:31940ef9-4f52-4ed9-ab7b-dd97d078a47d}},
+or in turbulence {{cite:e2f4a1c6-ede3-49b2-ae99-952b36437f2d}}.
+FIGURE 
+FIGURE 
+
+N=100 and U=0.69
+Let us to consider now numerical simulations for the HMF model with size FORMULA  and FORMULA . In this case a QSS regime exists, but its characteristic lifetime is quite short since the noise induced by the finite size drives the system towards equilibration rapidly. However strong correlations, created by the FORMULA  initial conditions, exist and their decay is slower than in the case FORMULA . In fig. REF  we show in (a) the Pdf of the velocities calculated at FORMULA  (i.e. at the beginning of the QSS regime). An ensemble average over 1000 realizations was considered. The Pdf shows a strange shape which remains constant in the QSS, as already observed in the past {{cite:13187c72-178c-4c96-b002-090660351a0c}}, and which differs from both the Gaussian and the FORMULA -Gaussian curves.
+On the other hand, we show in (b) the Pdf of the variable FORMULA  with FORMULA  and FORMULA , i.e. calculated over a total of 2000 time steps after a transient of 100 units, in order to stay inside the QSS temperature plateaux (see fig.REF ).
+In this case the system is weakly chaotic and non ergodic {{cite:e68b3170-06df-4940-80d5-23173282ab1d}}, {{cite:93a02149-feb3-4710-812e-6dcf66ba62dc}} and the numerical Pdf is reproduced very well by a FORMULA -Gaussian with FORMULA . Although in this case we have used differents initial conditions also for time averages, these results provide a first indication that ensemble and time averages are inequivalent in the QSS regime. Note that, due to the shortness of the QSS plateaux, for FORMULA  it is not possible to use greater values of FORMULA  or FORMULA  in the numerical calculations of the FORMULA 's.
+In fig.REF  we repeat the previous simulations for FORMULA  and FORMULA , but adopting a transient time of 40000 steps, in order to study the behavior of the system after the QSS regime.
+The ensemble average Pdf (over 1000 realizations) of the single rotor velocities at the time FORMULA  is shown in (a) and indicates that equilibrium seems to have been reached. In fact the agreement with the standard Gaussian is almost perfect up to FORMULA . In the other figures we plot the time average Pdfs for the variable FORMULA  with FORMULA  and for different time intervals FORMULA , as done for FORMULA . More precisely FORMULA =100 in (b), FORMULA =1000 in (c) and FORMULA =2000 in (d). Again it is evident a strong dependence of the Pdf shapes on the time interval FORMULA  adopted. In fact initially (b) the Pdf is well fitted by a FORMULA -Gaussian with a FORMULA , however increasing FORMULA , in (c) and (d), the central part of the Pdf becomes Gaussian while tails are still present and can be well fitted by FORMULA -Gaussians with values of FORMULA  that tend towards unity. However, at variance with the FORMULA  case, in this case not even a time interval FORMULA  is sufficient to reach a complete Gaussian-shaped Pdf down to FORMULA : evidently the strong correlations characterizing the QSS regime decay very slowly even after it, making the equilibrium shown by the ensemble average Pdf in (a) only apparent. This means that full ergodicity, i.e., full equivalence between ensemble and time averages, is reached, in this case, only asymptotically.
+The last statements are confirmed by panels (e) and (f) of fig.REF , where the effect of increasing the number FORMULA 
+of summed velocities, keeping fixed the value of FORMULA , has been investigated.
+More precisely FORMULA =100 and FORMULA  in (e) and FORMULA  in (f). As expected, the increment of FORMULA  makes the Pdf closer to the Gaussian, essentially because the total time over which the sum is considered increases (for FORMULA  we cover a simulation time of FORMULA ) and therefore correlations become asymptotically weaker and weaker, thus finally
+satisfying the prediction of the standard CLT
+In order to study in more details the ensemble-time inequivalence along the QSS regime in the next subsection we will increase the system size and discuss numerical results for FORMULA  and FORMULA .
+FIGURE 
+FIGURE 
+
+N=5000 and N=50000 at U=0.69
+In fig.REF  we show the time evolution of the temperature for the cases FORMULA  and FORMULA  at FORMULA , always starting (as usual) from the M1 initial conditions.
+It is evident that, for both systems, the length of the QSS plateaux is very much greater than for FORMULA .
+We discuss first numerical simulations done inside the QSS for FORMULA  and FORMULA .
+In fig.REF  we show in (a) the ensemble average Pdf of velocities calculated over 1000 realizations
+at FORMULA , i.e. at the beginning of the QSS regime.
+Its shape, constant along the entire QSS, is clearly not Gaussian and looks similar to that of fig.REF  (a).
+In panels (b-d) we show the effect of increasing the number FORMULA  of velocity terms in the FORMULA  sum on the time average Pdfs, calculated using a fixed value of FORMULA . An average over 200 different realizations of the initial conditions was also considered in order to have good statistics. In this case only for FORMULA  a FORMULA -Gaussian, with FORMULA , emerges. This is most likely due not to the effective number of FORMULA  used but, consistently with
+fig.REF , to the fact that when choosing a large FORMULA  one is averaging over a larger interval of time
+and thus considers in a more appropriate way the average over the entire QSS regime.
+In any case the observed behavior goes in the opposite direction to the prescriptions of the standard CLT and to the trend shown in panels (e-f) of fig.REF . Indeed, increasing FORMULA , the Pdf tails do not vanish but become more and more evident, thus supporting even further the claim about the existence of a non-Gaussian attractor for the nonergodic QSS regime of the HMF model.
+Moreover, the results of fig.REF  confirm the robustness of the FORMULA -Gaussian shape along the entire QSS plateaux and the inequivalence between ensemble and time averages in the metastable regime.
+Let us now definitively demonstrate this inequivalence considering the case N=50000 at U=0.69.
+In fig.REF  (a) we plot the ensemble average Pdf of the velocities calculated (over 100 different realizations) at FORMULA , i.e. at the beginning of the QSS regime, and after a very long transient, at FORMULA  (full circles). In panel (b) we plot the time average Pdf for the normalized variable FORMULA  with FORMULA  and FORMULA , after a transient of 200 time units and over a simulation time of 500000 units along the QSS.
+It is important to stress that in this case only one single realization of the initial conditions has been performed, realizing this way a pure time average.
+The shape of the time average Pdf (b) results to be again a robust FORMULA -Gaussian, with FORMULA ,
+not only in the tails, but also in the center (see inset).
+The time average Pdf is completely different from the ensemble average Pdf of fig.REF (a) (that is also very robust over all the plateaux), thus confirming definitively the inequivalence between the two kind of averages and the existence of a FORMULA -Gaussian attractor in the QSS regime of the HMF model. These results indicate that standard
+statistical mechanics based on the ergodic hypothesis cannot be applied in this case, while a generalized version, like the FORMULA -statistics {{cite:4e6d1796-63d5-42d1-9c52-7b5366c011f8}}, {{cite:a3ed910b-34f7-4c70-b1af-3065ccf254a9}} is likely more suitable {{cite:93a02149-feb3-4710-812e-6dcf66ba62dc}}.
+FIGURE 
+
+Conclusions
+The numerical simulations presented in this paper strongly indicate that dynamical correlations and ergodicity breaking, induced in the HMF model by the initial out-of equilibrium violent relaxation, are present along the entire QSS metastable regime and decay very slowly even after it. In particular, considering finite sums of FORMULA  correlated variables (velocities in this case) selected with a constant time interval FORMULA  along single rotor trajectories, allowed us to study this phenomenon in detail. Indeed, we numerically showed that, in the weakly chaotic QSS regime, (i) ensemble average and time average of velocities are inequivalent, hence the ergodic hypothesis is violated, (ii) the standard CLT is violated, and (iii) robust FORMULA -Gaussian attractors emerge.
+On the contrary, when no QSS exist, or at a very large time after equilibration, i.e., when the system is fully chaotic and ergodicity has been restored, the ensemble average of velocities results to be equivalent to the time average and one observes a convergence towards the standard Gaussian attractor. In this case, the predictions of CLT are satisfied, even if we have only considered a finite sum of stochastic variables. How fast this happens depends on the size FORMULA , on the number FORMULA  of terms summed in the FORMULA  variables and on the time interval FORMULA  considered.
+These results are consistent with the recent FORMULA -generalized forms of the CLT discussed in the literature {{cite:03fd8a26-4b58-41cb-b583-84fdddb99569}}, {{cite:8a4317d3-63de-4819-ab80-5e2a25a5d324}}, {{cite:83214496-e4e8-42c9-9ff9-1b9045dbef40}}, {{cite:367e6453-63d3-4694-9e05-68fbe6c9c437}}, {{cite:7bff6d09-c36d-41d9-b717-6496f09f3162}}, and pose severe questions to the often adopted procedure of using ensemble averages instead of time averages. Nonergodicity in coupled many particle systems goes back to the famous FPU experiment {{cite:10e5f638-35c1-4136-8528-b82df83ab3be}}, but in our case is due to the long-range nature of the interaction.
+More recently, nonergodicity was found in deterministic iterative systems exibiting subdiffusion {{cite:45539d0c-0a37-416f-929e-b5017ae85184}}, but also in real experiments of shear flows, with results that were fitted with Lorentzians, i.e., FORMULA -Gaussians with FORMULA  {{cite:65210055-1387-46ed-aa82-563068a7ab80}}.
+The whole scenario reminds that found for the leptokurtic returns Pdf in financial markets {{cite:31940ef9-4f52-4ed9-ab7b-dd97d078a47d}}, or in turbulence {{cite:e2f4a1c6-ede3-49b2-ae99-952b36437f2d}}, among many other systems,
+and could probably explain why FORMULA -Gaussians appear to be ubiquitous in complex systems.
+Finally, we would like to add that, although it is certainly nontrivial to prove analytically whether the attractor in the nonergodic QSS regime of the HMF model precisely is a FORMULA -Gaussian or not (analytical results, as well as numerical dangers, have been recently illustrated in ref.{{cite:ff96f3b9-44a1-45aa-bf92-cf3382a095e0}} for various models), our numerical simulations unambiguously provide a very strong indication towards the existence of a robust FORMULA -Gaussian attractor in the case considered. This opens new ways to the possible application of the FORMULA -generalized statistics in long-range Hamiltonian systems which will be explored in future papers.
+We thank Marcello Iacono Manno for many technical discussions and help in the preparation
+of the scripts to run our codes on the GRID platform. The numerical calculations here presented
+were done within the TRIGRID project.
+A.P. and A.R. acknowledge financial support from the PRIN05-MIUR project "Dynamics and Thermodynamics
+of Systems with Long-Range Interactions". C.T. acknowledges financial support from the Brazilian
+Agencies Pronex/MCT, CNPq and Faperj.

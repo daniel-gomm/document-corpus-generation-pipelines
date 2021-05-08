@@ -1,0 +1,186 @@
+
+Conditional displacement operator for traveling fields
+Simone Souza
+Instituto de Física, Universidade Federal de Goiás, 74.001-970, Goiânia (GO), Brazil
+A. T. Avelar
+[Electronic address:]avelar@if.ufg.br
+Instituto de Física, Universidade Federal de Goiás, 74.001-970, Goiânia (GO), Brazil
+J. M. C. Malbouisson
+Instituto de Física, Universidade Federal da Bahia, 40.210-310,
+Salvador (BA), Brazil
+B. Baseia
+Instituto de Física, Universidade Federal de Goiás, 74.001-970, Goiânia (GO), Brazil
+We show that the conditional displacement operator FORMULA 
+acting upon an arbitrary state of traveling waves can be well approximated
+by the action of a Kerr medium placed between two beam splitters whose
+respective second ports are fed by highly excited coherent states.
+Applications to the generation of nonclassical states and
+measurement of Wigner function of arbitrary states are also considered.
+42.50.Dv, 42.50.Ct, 03.65.Wj
+Introduction
+The conditional displacement operator (CDO) has been extensively used
+in the literature, e.g., by Milburn and Walls {{cite:9c0b46bd-bf5f-4fa1-8f0c-a9c8707cad6e}} in quantum
+nondemolition measurements via quantum counting; by Ban {{cite:848f0ca1-0558-472e-9b65-28b659e0e069}} in
+theoretical studies of the photon statistics in the four-wave mixer; and by
+Avelar et al. {{cite:6b358cff-061c-4df1-b804-39041895a16a}} in measurements of Wigner
+characteristic function describing field states of running waves. In cavity
+QED, Zou et al. {{cite:c0b2f069-ccb0-4290-8244-e5bafcd2cdff}} have proposed the creation of the CDO
+through a two-level atom interacting with a single-mode cavity field and
+driven additionally by an external classical field. The authors used this
+scheme for the measurements of the Wigner characteristic function. It has
+been employed also for the generation of nonclassical states {{cite:bbd9d309-04fe-4344-bd2b-7572e242d6de}}, {{cite:af0b1a8b-fcd5-4dc4-bd65-202b69497cce}}. However, to our knowledge, there is no suggestion on how
+to implement this operator in a reliable way for arbitrary quantum states in
+running waves.
+Here we present a calculation which shows how to displace conditionally
+arbitrary (pure or mixed) quantum states using a Kerr medium placed between
+two beam splitters (along the path of the signal beam) whose respective
+second ports are fed by appropriate, highly excited, coherent states. As
+applications, we show how to engineer for running waves the even (FORMULA ) and
+odd (FORMULA ) superpositions of an arbitrary single-mode state with its
+displaced counterparts, FORMULA .
+To this end the CDO device is coupled to one arm of a Mach-Zehnder
+interferometer (MZI) fed by the vacuum and one-photon states, as applied for
+Kerr medium by Sanders and Milburn {{cite:55d7d6ef-4935-472e-8929-4aa7e4d524c6}} to investigate
+complementarity in a quantum nondemolition measurement. The present scheme
+constitutes a modification of another one proposed by Villas-Bôas
+et al. {{cite:57d19127-9327-4f4e-999b-cd5ca70eb867}} to measure directly the Wigner function. As
+a by-product, it is shown that our scheme allows one to measure the Wigner
+caracteristic function of the state FORMULA  through the measurement
+of photon-detection probabilities in the output of the MZI.
+
+Engineering the conditional displacement operator
+A schematic diagram of the procedure is shown in Fig. REF . Both beam splitters
+(BS1 and BS2) produce the action of the displacement operator FORMULA  on a
+quantum state of the field-mode FORMULA , when the second port is fed by highly
+excited coherent states FORMULA  and FORMULA  as shown
+in {{cite:ef7d747d-c5fb-4728-a5a2-fbd89a6c172d}}. Thus, after the BS1 the state describing the whole
+system becomes
+FORMULA 
+where FORMULA , with FORMULA  standing for the reflectance of the
+BS1.
+FIGURE 
+The dispersive Kerr interaction between modes FORMULA  and FORMULA  is described by
+the Hamiltonian {{cite:d1bf812f-43ee-4649-92cf-e5bf6b9bc192}}
+FORMULA 
+where FORMULA  is proportional to the third-order nonlinear susceptibility FORMULA . So, the action of the Kerr medium upon (bipartite) field states is
+represented by the unitary operator,
+FORMULA 
+where FORMULA , FORMULA  is the length of the Kerr-medium and FORMULA  the
+velocity of light in the medium. Due to the action of the Hamiltonian (REF ) upon the modes FORMULA  and FORMULA , and the action of the BS2 corresponding
+to a second displacement, the state of the system evolves to
+FORMULA 
+Next, a little algebra furnishes
+FORMULA 
+and for realistic Kerr-media small values of phase shifts FORMULA  are produced in
+laboratories; so, when adjusting the device to high values of FORMULA  the foregoing
+equation becomes
+FORMULA 
+where FORMULA , with FORMULA  finite,
+and
+FORMULA 
+is the wanted CDO. We emphasize that Eq. (REF ) is an algebraic operator relation,
+and so, it does not depend on the input state of the CDO device.
+
+Applications
+As interesting applications of the foregoing scheme we will use it to
+prepare the superposition states FORMULA 
+and to measure Wigner characteristic function of FORMULA , where FORMULA  is an arbitrary state incoming in the CDO.
+Engineering the superposed state:  FORMULA
+The superposed state of the kind FORMULA 
+in traveling waves has interesting applications in the literature. For
+example, setting FORMULA  and FORMULA 
+one obtains the even (FORMULA ) and odd (FORMULA ) Schrödinger's cat states FORMULA ; setting FORMULA 
+one obtains the superposition of the vacuum state and a coherent state, FORMULA , with the CDO playing the role of the optical
+quantum switch {{cite:ab9ca47f-5dda-470a-8bc7-84c467d64429}} . Other interesting family of states can
+be got from FORMULA , yielding the superposition FORMULA , which depends on the availability of a
+Fock state  FORMULA
+To prepare the superposition FORMULA  one
+needs a MZI associated with an auxiliary CDO and a phase shifter (PS), both
+inserted in one arm (mode b) of the MZI. The schematic setup is
+depicted in the Fig. REF . The CDO couples one of the internal
+modes of the MZI (mode FORMULA ) with an external mode (mode a) where a
+field in the state FORMULA  is injected. Measurements of the
+probability of photon detection in the output of the MZI allow us the
+preparation of the superposition FORMULA 
+in the mode FORMULA , as follows.
+FIGURE 
+Consider the states FORMULA  and FORMULA  entering the ideal
+FORMULA  symmetric BS1 of the MZI, whose action upon them, such as that of
+the BS2, is described by the following transformations {{cite:5ad4e998-0154-428b-9e1f-39673de792ad}}
+FORMULA 
+The PS is assumed to add a phase FORMULA  to the field crossing it.
+Thus, just after the BS1 and the PS the (entangled) state of the whole
+system reads,
+FORMULA 
+where the state FORMULA  in the second member stands for the
+initial state entering the mode FORMULA .
+Now, the action of the CDO device on the state FORMULA  is
+obtained from the relations
+FORMULA 
+and, after the BS2, the state of the whole system can be written as
+FORMULA 
+with FORMULA . Note that in this scheme the PS
+turns irrelevant the action of the additional factor FORMULA  accompanying the CDO in the Eq. (REF ).
+At this point we can see that if the detector D1 fires (does not fire) while
+D2 does not fire (fires) this corresponds to the output state FORMULA  (FORMULA ) in the BS2, and the modeFORMULA  is projected onto the state
+FORMULA 
+Finally, up to a global phase, our wanted state FORMULA  is obtained from the Eq. (REF ); this can be
+achieved by adjusting the PS such that FORMULA .
+
+Measuring the Wigner function
+As discussed previously in {{cite:6b358cff-061c-4df1-b804-39041895a16a}}, a MZI supplemented by a
+nonlinear medium allows us to measure the Wigner characteristic functions of
+field states in traveling waves, yielding the reconstruction of the Wigner
+functions themselves. The scheme in {{cite:6b358cff-061c-4df1-b804-39041895a16a}} employs a MZI associated
+with an auxiliary (specific) four-wave mixer that entangles the field state
+in one arm of the apparatus with an external field crossing it. We now show
+in which way the CDO implemented here can be used to measure the Wigner
+function. To this end, we start from the success probabilities FORMULA  and FORMULA  to get the states given in the
+Eq. (REF ). Actually, in the present scenario these properties
+furnish the values of Wigner characteristic function of the state FORMULA . As the photodetection experiment is repeated many times,
+starting from the same initial field state FORMULA  , one obtains the probabilities
+FORMULA 
+leading to
+FORMULA 
+where the relation FORMULA  has been employed {{cite:cd36d935-f260-4dec-b6f4-566185dbac59}}. As
+shown in {{cite:6b358cff-061c-4df1-b804-39041895a16a}} the measurement of FORMULA  (FORMULA ) furnishes the real (imaginary) part of the characteristic
+function. So, one gets
+FORMULA 
+These two measurements actually lead to values of FORMULA  at two
+points (namely, FORMULA  and FORMULA ) owing to the property FORMULA .
+Now, since the Wigner function is the Fourier transform of the
+characteristic function FORMULA , namely,
+FORMULA 
+the determination of FORMULA  for a reasonable set of values
+permits the reconstruction of the Wigner function of the original state of
+the external mode FORMULA . We note that FORMULA  is a free-parameter in the Eq. (REF ) and, since FORMULA  where FORMULA  was
+assumed to be large and FORMULA  takes small values in the experiment, then
+FORMULA  can be varied in the range of interest through the control of the
+parameters FORMULA  and FORMULA .
+
+Conclusions
+In summary, this report introduces a method to engineer the conditional
+displacement operator in running fields via a Kerr-medium placed between two
+beam-splitters. This device, when conveniently inserted in one arm of a
+Mach-Zehnder interferometer, allows one to prepare states of the kind FORMULA  with the interesting applications
+mentioned in the Sect. 2.A, and the measurement of their Wigner functions
+(Sect.2.B). The procedure is also valid for mixed states. Concerning with
+the reliability of the scheme, it is supported by recent technological
+advances which have achieved photodetectors with efficiency near FORMULA 
+{{cite:81112b8c-3d25-4dfb-b937-5aaf8e8f66cb}} and stable single-photon sources yielding many single
+photons, e.g., using: single quantum dots {{cite:b3719a5e-3ae3-4782-9dbd-69529b691043}}; single molecules
+{{cite:5835ae0c-a3f8-4add-bd8c-b0c17de8a494}}; diamond colour centers {{cite:eca794cf-0116-4636-ba4e-857c9e71ed93}}; atoms {{cite:6fb112b0-caa3-4b08-a4dc-167144504fa3}}; turnstile devices {{cite:40f6439d-eb27-463d-9a5a-38c365ff9335}}; and also traditional parametric
+down conversion methods {{cite:7818b6c2-7131-4cce-a391-e9d8bbcb8654}}. With respect to the Wigner function, it
+is worth mentioning a pertinent comparison between the present scheme
+and the Ref. {{cite:57d19127-9327-4f4e-999b-cd5ca70eb867}}: in {{cite:57d19127-9327-4f4e-999b-cd5ca70eb867}} the Wigner function
+is measured directly and in this aspect it is advantageous. However, {{cite:57d19127-9327-4f4e-999b-cd5ca70eb867}} requires a very large nonlinear susceptibility yielding FORMULA , whose experimental implementation is very hard till now.
+Here, our goal is achieved via the use of small values of
+phase-shifts FORMULA , available in laboratories through realistic
+Kerr-medium, which constitutes a remarkable result from the experimental
+point of view, a feature having no guarantee in Ref. {{cite:6b358cff-061c-4df1-b804-39041895a16a}}.
+In fact, following various trials to get large Kerr nonlinearities {{cite:f4a01f89-cbc3-46dd-bb30-0582da181225}}, a recent result by Munro et al. {{cite:1ad18111-ffae-4940-b880-7dc0283f0e4b}} has achieved
+phase shifts FORMULA  FORMULA , with residual absorption rates less
+than FORMULA . Finally, we mention that decoherence effects, not
+considered here, could be included via the phenomenological operator
+approach, as implemented in {{cite:0ee39f1d-0c0b-49ee-aefa-a6197730b950}}.
+We thank the CAPES and CNPq, Brazilian agencies, for partial supports.

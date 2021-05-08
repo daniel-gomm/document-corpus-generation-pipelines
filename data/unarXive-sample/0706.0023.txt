@@ -1,0 +1,737 @@
+
+The Cosmological Slingshot Scenario in details
+Cristiano Germani
+germani@sissa.it
+SISSA and INFN, via Beirut 4, 34014 Trieste, Italy
+Nicolás E. Grandi
+grandi@fisica.unlp.edu.ar
+IFLP-CONICET, cc67, CP1900 La Plata, Argentina
+Alex Kehagias
+Physics Division, National Technical University of Athens,
+15780 Zografou Campus, Athens, Greece
+kehagias@central.ntua.gr
+We generalize the Cosmological Slingshot Scenario for a Slingshot
+brane moving in a Klebanov-Strassler throat.
+We show that the horizon and isotropy problems of standard cosmology are avoided,
+while the flatness problem is acceptably alleviated. Regarding the
+primordial perturbations, we identify their vacuum state and
+elucidate the evolution from the quantum to the classical regimes.
+Also, we calculate their exact power spectrum showing its
+compatibility with current data. We discuss the bouncing
+solution from a four dimensional point of view.
+In this framework the radial and angular motion of the Slingshot brane are described by two scalar fields.
+We show that the bouncing solution for the scale factor in String frame is mapped into a monotonically
+increasing (in conformal time) solution
+in the Einstein frame. We finally discuss about the regularity of the geometry in Einstein frame.
+.
+SISSA 32/2007/A
+Introduction
+The Cosmological Slingshot Scenario {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, shortly the
+“Slingshot", is a proposal for the cosmic early-time evolution in
+the String Theory context. According to that, our Universe is a
+FORMULA -brane moving in a String Theory background of the form
+FORMULA . FORMULA  is a “warped" Minkowskian
+space-time and FORMULA  is a compact Calabi-Yau (CY) space. The
+latter includes a “throat" sourced by a stack of a large number
+(FORMULA ) of other FORMULA  branes. The Slingshot is characterized by a
+non-trivial orbital motion of the Universe in the compact space
+around the stack of FORMULA -branes. If back-reactions due to the
+brane motion can be neglected (probe brane approximation), a brane
+observer measures a FORMULA  dimensional induced metric in terms of
+the brane embedding. This metric defines a cosmological brane
+evolution commonly called Mirage Cosmology {{cite:b524aecb-2cb9-4c44-a2a0-ff80c7c4eece}}.
+The early-time evolution (i.e. well before nucleosynthesis)
+corresponds to the motion of the FORMULA -brane deep into the throat (Slingshot era) moving towards
+the hat of the compact space. The
+late-time cosmology starts when the FORMULA -brane reaches the hat of the CY. There,
+the probe brane approximation breaks down and local gravity
+à la Randall-Sundrum {{cite:630e7470-a38b-4329-a48d-805e9d251147}} dominates the cosmological evolution.
+Since FORMULA  is taken to be large, close to the
+stack, the probe brane approximation of {{cite:b524aecb-2cb9-4c44-a2a0-ff80c7c4eece}} can be used. Under this approximation, the
+Slingshot brane observer experiences, at early-times, a non-singular bouncing
+cosmology
+in the String frame. In Einstein frame on the other hand, the induced cosmology is monotonically increasing (in
+conformal time). Moreover, assuming
+that in the past infinity the brane starts in the hat of the Calabi-Yau without modifying its regular structure,
+no past singularities can ever be present in the both frames, as we shall argue in the paper. This scenario
+is then a realization of the emergent Universe idea {{cite:14d3b9aa-ab6c-49dc-886b-adff0a9d549a}}, although in a technically very different way.
+Additionally, as we shall show later on, the brane induced cosmology naturally avoids the
+Standard Cosmology problems (i.e. horizon, isotropy and flatness).
+This model can be included in a more general class of bouncing/cyclic models that have successfully tried to address some of the Standard
+Cosmology problems, such that ekpyrotic models {{cite:554b7ff6-6b95-4f83-a859-c342208d3c60}}, phantom based cyclic models {{cite:daa1fd22-9128-4b0c-b74a-67a7701cd177}} and emergent cyclic models {{cite:b77caf06-9701-42b8-8089-e0c0c3490725}}.
+For a review on bouncing cosmologies see {{cite:8a119521-0c1d-4236-9df8-aeff144dc1b6}}.
+The plan of the paper is as follows. In section  we show how the standard cosmological problems are solved
+when the slingshot brane
+is moving in a Klebanov-Strassler throat. In section  we calculate the primordial perturbation spectrum and the
+corresponding spectral index. In section  we write the effective 4D theory, which
+reproduces in the string frame the mirage solution, we discuss the Slingshot in the Einstein frame and we finally conclude in section .
+
+The Cosmological Slingshot Scenario in a Klebanov-Strassler throat
+To make the discussion concrete, we shall consider a probe FORMULA -brane moving in the Klebanov-Strassler
+(KS) throat {{cite:1ef68175-f888-4f23-9e8b-54fbe5903c4c}} of a Calabi-Yau (CY)
+compact manifold. The KS geometry is obtained by putting together a
+stack of FORMULA  FORMULA -branes and FORMULA  fractional branes at the apex of a
+conifold {{cite:64457bf9-4e7d-4165-b2fb-1328d59832aa}}, {{cite:fd0e7f77-eee5-4984-a636-0231bf004f65}}, {{cite:0e7ecf1d-5fed-43dc-9caa-8a9907b662a1}}, {{cite:adca88fe-14aa-46ea-b723-b05e7185c917}}. Then, the conical singularity is
+deformed by blowing up a 3-sphere at the tip {{cite:8db6ee4f-9161-45d2-97b1-6b4c5ec29444}}. We
+restrict the probe brane motion to a region far from the tip of the
+KS geometry. In this case, the KS geometry can be well approximated
+by the Klebanov-Tseytlin (KT) metric {{cite:1ae64882-215b-4a09-8a1e-b9a9a49ddf73}}
+FORMULA 
+where FORMULA  is the metric of a
+FORMULA  manifold. The warp factor in the metric (REF ) is
+FORMULA 
+where FORMULA  is proportional to the radius of the blown up sphere, FORMULA  is the string length and FORMULA  is the
+string coupling. The supergravity approximation is
+valid as long as the curvature radius of the solution is large
+compared to the string length FORMULA . String perturbation theory
+on the other hand requires FORMULA .
+In what follows, we will assume that moduli are stabilized by some mechanism that does not
+affect the motion of our probe brane. Since we are assuming that back-reaction effects
+are negligible, we can expand any potential arising from moduli stabilization in powers of the
+probe brane tension in units of local curvatures. In this way, the general results of {{cite:5a20c452-1ce7-4789-b4b4-5760548755ef}}
+for stabilization mechanisms that include Euclidean FORMULA -branes wrapping four cycles in the
+CY, or non-perturbative effects on FORMULA -branes, imply no modification for our probe brane
+potential to first order.
+The dynamics of a probe brane is governed by the Dirac-Born-Infeld
+action with a Wess-Zumino term (that takes into account the coupling
+to the bulk Ramond-Ramond five-form with the brane charge):
+FORMULA 
+In the KS background FORMULA . We assume that
+all other fields on the brane are switched off and matter is
+created later.
+The sign of the Wess-Zumino term has been chosen to
+represent a FORMULA -brane in the mostly plus convention for the
+metric, and FORMULA  is the tension of the
+probe.
+The probe brane is extended
+parallel to the stack of FORMULA s, so that it looks like a point particle
+moving in transverse space (for inhomogeneous embedding see
+{{cite:97f282cd-2d10-4a67-9b18-e25790d82177}}). In the static gauge
+we identify the minkowskian coordinates of FORMULA  in
+eq.(REF ) with the brane world-volume coordinates. The resulting induced
+metric is
+FORMULA 
+where a prime FORMULA  denotes a derivative with respect to FORMULA  and FORMULA  indicates the position of the brane in the bulk.
+In the case of slow (adiabatic) brane motion (FORMULA ) the brane action (REF )
+turns out to be
+FORMULA 
+In (REF ) we used
+the symmetries of the background to write FORMULA , where FORMULA  parameterizes one of the FORMULA  angles.
+The equations of motion of the probe brane follow from varying the action (REF ) with respect to  FORMULA
+FORMULA 
+First integrals of this system are provided by
+FORMULA 
+and eq.(REF ) is then solved by the bouncing solution
+FORMULA 
+A constant of integration has been fixed by requiring that
+at FORMULA  the probe is at the turning point
+FORMULA . For discussions on
+the exact solutions of (REF ), one may see {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, {{cite:b524aecb-2cb9-4c44-a2a0-ff80c7c4eece}}, {{cite:ab6cdee0-3904-46a7-9796-3761300d8a85}}, {{cite:824709dd-79dd-4cd5-9a16-b1bde83cbbdb}}, {{cite:45d8593e-35ce-40d4-a475-830638fe2178}}, {{cite:80dda751-3d0d-4678-a936-9fa00dbfda96}}.
+One can easily find that the non-relativistic approximation is accurate whenever
+FORMULA . In this approximation, the induced metric on the brane reads
+FORMULA 
+An observer on the brane will therefore experience a
+Friedman-Robertson-Walker metric with scale factor
+FORMULA 
+where FORMULA  is the
+observer conformal time. Since FORMULA  has a turning point, it is
+easy to see that the same happens to FORMULA , generating a
+nonsingular bouncing cosmology.
+The model is completed by smoothly pasting this Mirage era to
+a local gravity driven late evolution when the brane reaches the
+top of the CY and gravity becomes localized á la
+Randall-Sundrum {{cite:630e7470-a38b-4329-a48d-805e9d251147}}. There, the standard late time evolution of the observed Universe, is supposed to be well reproduced by the brane dynamics.
+This assumption involves a transition from a mirage dominated era with a moving brane without any matter,
+into a local gravity dominated era with a static brane and matter fields excited on it. This transition
+has to be understood as an analogous of the reheating process in standard inflationary models. It entails
+a dynamical mechanism under which the kinetic energy of the brane is passed to matter fields
+and the brane motion is stabilized by acquiring a mass for the radion and and the angular scalar fields.
+The exact
+description of this dynamics as well as the robustness of our predictions for physical observable is an
+open point of the model which is left for future research.
+The Standard Cosmological Problems
+In {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}} we showed how the standard cosmological problems are solved for the simpler version of the Slingshot
+scenario, in which the probe brane moves in an FORMULA  throat. In what follows, we will complete the proof, extending it
+to the KS case. An important ingredient in our argument is that the scale
+factor for a brane moving in a KS throat (REF ) can be rewritten as a conformal re-scaling of the corresponding
+scale factor for a brane moving in FORMULA , namely FORMULA . Indeed, we can write (REF ) as
+FORMULA 
+Note that the above scaling should not be considered as a change of frame but just as a relation between two different
+Friedman-Robertson-Walker scale factors (for example the Lagrangian will not be re-scaled as one would do for a conformal transformation).
+It should be kept in mind that our approximations are valid whenever FORMULA .
+Under such a re-scaling, the Hubble constant changes as
+FORMULA 
+FORMULA  is the mirage Hubble constant of a brane moving in an FORMULA  throat {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, namely
+FORMULA 
+We are now ready to study how standard cosmological problems are solved in the Slingshot scenario.
+
+A. Horizon. As explained in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, in the KS throat
+the probe brane experiences a bounce in the String frame. This immediately ensures that
+horizon problem is solved. To check this explicitly, we write the comoving horizon as
+FORMULA 
+where FORMULA  is the smallest conformal time. To solve horizon problem it is required that FORMULA .
+Since we have FORMULA  due to the bounce, this condition is trivially satisfied.
+
+B. Isotropy. In the FORMULA  case, mirage matter contributes to Hubble equation with a term
+FORMULA  {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}. This term dominates over the shear FORMULA  at early times,
+avoiding the chaotic behavior {{cite:136ca348-60ea-4a65-8a70-3e17f52dc182}}.
+To check whether this is true in the KS case, we should verify that the corresponding
+mirage contribution dominates over the shear.
+The form of this contribution can be read from (REF ). On the other hand,
+the FORMULA  term will still be given as FORMULA  in the KS throat.
+To compare them we can write the quotient as
+FORMULA 
+The proportionality constant in (REF ) parameterize the anisotropic perturbations in the pre-bounce era.
+FIGURE 
+It is simple to check that (REF ) is an increasing function of FORMULA  in the region FORMULA  (figure REF ).
+As we assumed that the Slingshot brane never approaches the tip of the KS throat, this condition is automatically satisfied.
+Therefore, FORMULA  decreases very rapidly close to the bouncing point in the pre-bounce era solving the isotropy problem.
+C. Flatness. The curvature contribution to the Hubble
+equation The details of how to include a curvature term in the mirage Hubble equation can be found in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}.
+can be disregarded if the quantity FORMULA  passes through a minimum where it satisfies the
+phenomenological constraint
+FORMULA 
+where the value FORMULA  represents the measured curvature during the BBN.
+In the FORMULA  case, this condition results in a restriction to a two dimensional region of parameter space.
+In this sense flatness problem might be alleviated in the Slingshot scenario.
+For the KS case we have, after conformal re-scaling
+FORMULA 
+The KT approximation is valid for FORMULA ; to fix ideas we will use FORMULA . In this region we have FORMULA  and
+decreasing in FORMULA . Consequently,
+the flatness problem in the KS space might, in good approximation,
+be alleviated by the same choice of parameters used in the FORMULA  case.
+
+Primordial Perturbations
+Before calculating the power spectrum of density perturbations, let us recall a lesson from inflation. In
+inflation the primordial perturbations are produced by quantum
+fluctuations of a scalar field, the inflaton. These fluctuations are
+codified into the two point correlation function of the inflaton in
+its vacuum state (the Bunch-Davis vacuum), which also sets the initial
+conditions. However, these fluctuations are over-damped by the expansion of the Universe at super-horizon scales.
+At these scales then, the quantum state becomes characterized by a large occupation number and
+the system collapses into a classical state. This classical state
+represent a random (gaussian) spectrum of perturbations
+with variance given by the quantum correlations at the
+quantum to classical transition point {{cite:2053a012-8316-4444-8c34-9e99983bc5f6}} (see {{cite:1387c1c7-342c-4962-879a-0d22159f662c}} for other cases).
+Let us now turn our attention to the mechanism proposed by {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}}.
+A perturbation of wavelength FORMULA 
+smaller than the typical quantum scale (say FORMULA ) of a given system,
+is in its pure quantum state (vacuum). However, in an expanding background, the
+wavelength of a perturbation grows in time (FORMULA ). In this
+case whenever FORMULA ,
+or in other words, as soon as the perturbation becomes macroscopic, wavelengths
+bigger than the horizon scale collapse into a classical random state, with the same mechanism discussed before.
+In the proposal of {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}}, the relevant fluctuations are so continuously “created”
+at “super-horizon” scales.
+Thus, a coherent (gaussian) spectrum of classical perturbations is produced
+with variance given by matching the classical correlations with the quantum correlations
+at the quantum to classical transition point For a similar mechanism in the context of space-time non-commutativity see {{cite:dd4d40a4-674c-43df-bac6-ca8b95d05e74}}..
+In the Slingshot the mechanism of {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}} is used, however the region in which the perturbations are frozen is not parameterized by the
+horizon but by the centrifugal barrier, as we shall discuss later on.
+Before working out the perturbation spectrum, a clarification must be added.
+In the original proposal of {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}} the perturbation was
+produced by the same radiation which sets the Cosmic Microwave
+Background. However, as pointed out by {{cite:d21e2f82-a379-4ae8-bdf9-448690b15a81}}, the perturbation coming out from the horizon today, should have been
+born when the curvature sourced by the energy density of
+radiation was much bigger than the Planck scale, which makes the
+mechanism unreliable. In the Slingshot this problem is avoided.
+There, perturbations are in fact created by brane fluctuations in a regime
+in which the supergravity approximation is still valid. Moreover, the “quantum gravity” scale in this context, i.e. the string length,
+is much smaller than the wavelengths of the relevant observable brane fluctuations.
+For this reason, no extra quantum gravity effect
+participate to the primordial perturbation spectrum.
+Finally, also note that the general result that bouncing cosmologies produce a blue spectrum in a Bunch-Davis vacuum
+(see {{cite:17bcf1c6-f12e-486b-b9a9-ad778f16b7dc}} for this result in mirage models) is avoided if the vacuum of {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}} is used.
+Having set the scenario, let us make more explicit the calculation of the primordial power spectrum.
+In the mechanism introduced,
+we can say that classical modes are created at the time FORMULA 
+when the proper wavelength of the corresponding quantum mode reaches the value
+FORMULA 
+In the Slingshot scenario, a suitable value for the collapse length FORMULA  compatible
+with all the observational constraints is FORMULA  where FORMULA  {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}.
+Even if this choice is not essential for the model, let us point out that is compatible
+with a flat spectrum only in a background with a constant FORMULA , like KS or FORMULA .
+We start by perturbing the embedding of the probe brane by writing FORMULA  and
+FORMULA .
+The action (REF ) can be expanded to quadratic order in FORMULA 's and their derivatives, getting in Fourier space
+FORMULA 
+In what follows, we will find convenient to use the Bardeen potential {{cite:3f224b2b-4f00-4c7e-852b-454710d9ed80}}
+FORMULA  instead of FORMULA . With this change of variable we get
+FORMULA 
+The resulting generalized momenta are
+FORMULA 
+Then the Hamiltonian obtained form the above Lagrangian is
+FORMULA 
+which is positive definite and has a well defined ground state so that a
+quantum mechanical description of this system is possible.
+Normalized operators
+The equations of motion for the fluctuations are derived from the action (REF ) and are written as
+FORMULA 
+The normalized solution for these equations are
+FORMULA 
+where
+FORMULA 
+They satisfy the commutation rules
+FORMULA 
+provided that
+the operators FORMULA  are standard annihilation and creation
+operators, i.e.,
+FORMULA 
+We are interested in the correlation of the Bardeen potential FORMULA  at the time of creation FORMULA . It
+is straightforward to check that
+FORMULA 
+where FORMULA .
+
+Classical Solution and Matching
+We will consider the transition point of the quantum to the classical description in the region in which
+FORMULA  (this was called the frozen region in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}). Here in fact the oscillations of
+the classical solutions of the equations of motion
+are drastically damped and therefore the system can be considered classical, as it happens in inflation
+{{cite:2053a012-8316-4444-8c34-9e99983bc5f6}}. In this limit, we can discard the FORMULA  term in the equations (,)
+and the resulting equations of motion read
+FORMULA 
+The real solutions of these equations are
+FORMULA 
+where FORMULA  are constants, FORMULA  and
+FORMULA 
+With these definitions, it is easy to invert for FORMULA  to obtain
+FORMULA 
+We now consider initial conditions arising from the matching of the classical to the quantum system at the
+time FORMULA . Therefore FORMULA  will be taken as Gaussian stochastic variables with
+correlations FORMULA  matching the quantum correlators FORMULA  at FORMULA .
+The constants FORMULA  will instead be related to the fact that the quantum
+system picks up only positive frequencies in the vacuum state.
+Using the quantum solutions described above at the matching point FORMULA  after a lengthly but
+straightforward calculation we have
+FORMULA 
+The matching of
+FORMULA 
+requires FORMULA ; this is the selection of positive frequencies.
+So we are left for each mode with
+FORMULA 
+In general correlators depend on time through FORMULA .
+However in the frozen region, the oscillation rapidly stabilizes
+in time. We will consider this asymptotic region (FORMULA ) to be well before the nucleosynthesis. At this time
+then
+FORMULA 
+Using the initial conditions found above we then get in the limit  FORMULA
+FORMULA 
+so the power spectrum of temperature fluctuations is
+FORMULA 
+A consistency condition for the production of the perturbation is that FORMULA . So we see that in the limit
+FORMULA  we obtain the power spectrum introduced in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}. Note that FORMULA  as follows from eq.(REF ).
+
+Spectral index
+Since we assumed that perturbations are created
+when the physical wavelength reaches a fixed value FORMULA , we have from eq.(REF ), FORMULA . In the Klebanov-Tseytlin (KT) metric this means
+FORMULA 
+where FORMULA  and FORMULA  is the negative branch of Lambert's FORMULA -function
+{{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}. Then the power spectrum (REF ) is explicitly written as
+FORMULA 
+whereas, the scalar spectral index FORMULA , turns out to be
+FORMULA 
+The first term in the parenthesis in (REF ) above is the redshift due to the KT metric reported
+in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}. The second term in the parenthesis, gives a new correction coming form the time evolution of
+the correlation function.
+In the case in which FORMULA , we can use
+the expansion of the Lambert W function for small argument FORMULA  so to get
+FORMULA 
+and
+FORMULA 
+Since the FORMULA  for small FORMULA , the first correction on FORMULA  is negative.
+On the other hand, the second correction comes from time evolution, and it is red or blue according to
+the sign of its denominator. It will be negative whenever
+FORMULA 
+from which we immediately see that long wavelengths are red-shifted.
+On the other hand, if the last term is positive, then FORMULA  and the overall sign of the correction has to be evaluated
+taking into account the joint contribution of both terms in (REF ). After some manipulations we find that the correction is red whenever
+FORMULA 
+from which we conclude that short wavelengths are also red-shifted, and there is an intermediate range of wavelengths that is blue-shifted.
+The various parameters appearing in the formulas for the power spectrum and the spectral index may be partially fixed by
+using the above expressions at a
+pivot wavelength FORMULA  where FORMULA . Then we can write
+FORMULA 
+and
+FORMULA 
+which gives two constraints for the three unknowns FORMULA  and FORMULA .
+Other constraints come from the requirement that the relevant primordial perturbations related to
+the today's observational scales were born frozen.
+These cross-constraints have been studied in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}} in the case in which FORMULA . The space of parameter is obviously larger
+in the more general case in which FORMULA . However, for what concern the analysis in this paper we will be content in using the constraints
+of {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}.
+The last comment we need to add regards possible Trans-Planckian contributions to the primordial spectrum of perturbations.
+As we have already stressed before, these contributions are not present in our model as the dynamics is always
+controlled by the low energy regime of String Theory,
+i.e. the supergravity approximation, and hence quantum stringy corrections are suppressed.
+This is due to the fact that the brane is always slowly moving and that FORMULA , i.e. the brane is never too close to the stack.
+The semiclassical treatment of the brane fluctuation is therefore the dominant effect.
+
+Four Dimensional Point of View
+The 4D effective theory for warped compactifications of IIB supergravity with (static) D-branes
+has been derived by a perturbative approach in {{cite:8653e92f-1561-42f4-a199-1f47c39b9774}}, and
+by a gradient expansion method in {{cite:b0d94708-0954-49bd-8278-057e363a5cab}}. In this last approach, the universal Kähler modulus FORMULA 
+is obtained by writing the metric as {{cite:b0d94708-0954-49bd-8278-057e363a5cab}}, {{cite:5e479ee8-ea06-4b08-838d-7b80e78da9df}}
+FORMULA 
+with FORMULA , and identifying
+FORMULA 
+Here, FORMULA  is the volume of the (un-warped) compact manifold. The perturbative potential for FORMULA  has been
+also obtained in {{cite:b0d94708-0954-49bd-8278-057e363a5cab}}
+and it depends on the curvature of the transverse metric FORMULA , the localized negatively charged objects
+like anti-branes and the 3-form fluxes.
+The effective four dimensional action is found to be {{cite:b0d94708-0954-49bd-8278-057e363a5cab}}
+FORMULA 
+where FORMULA  and FORMULA  is the ten dimensional Newtonian constant.
+We consider the background to be stabilized on the minimum of the potential of the universal Kähler modulus FORMULA 
+(by non-perturbative corrections or some other yet unknown mechanism) and we focalize on simplest case of an
+FORMULA  throat sourced by a stack of FORMULA  FORMULA -branes, this can be easily generalized to the KS case.
+In this case, the background close to the stack of FORMULA -branes has the solution found by {{cite:742298f0-c048-4282-be4a-8b8251f2768c}} where FORMULA ,
+FORMULA  and FORMULA  is a cut-off radius for which the
+approximate solution of {{cite:742298f0-c048-4282-be4a-8b8251f2768c}} is no longer valid. Recalling that for this solution FORMULA  and
+plugging it into the action (REF ), we get an overall FORMULA  factor that can be reabsorbed by re-scaling the
+metric FORMULA  (and defining FORMULA ).
+We are now ready to add to the action (REF ) the contribution
+of a moving brane. A single brane slowly moving on a background sourced by a stack of others FORMULA  D3-branes will
+obviously produce gravity back-reactions sourced by the kinetic DBI energy of the brane.
+In order to keep these back-reactions small we need to assume that we are in the adiabatic limit
+FORMULA .
+The following effective action at order FORMULA  and in the slow velocity limit, i.e. at leading order
+on the tension expansion in local curvature units, is thus obtained
+FORMULA 
+Here FORMULA  and FORMULA  parameterize respectively the angular and the linear motion of the moving D3 brane
+on the warped CY. We have also included the conformal coupling to the four
+dimensional Ricci scalar of {{cite:94545610-f0ff-4d28-8a59-efb13adfbdaf}}, which, consistently, is of order FORMULA .
+The second term in (REF ) is nothing else than the DBI action (REF ) in the adiabatic limit.
+In the expansion leading to (REF ) the ratio FORMULA 
+has been considered to be at second order in the spirit of the Mirage approximation of {{cite:c796ab39-abac-46a3-afce-70c647bea67a}}.
+This action has been derived assuming a negligible backreaction on the CY geometry. This assumption should be valid
+whenever the brane is deep inside the throat or,
+in other words, whenever the value of the effective scalar field FORMULA  (the radion) is small.
+As soon as the brane exits the throat, i.e. for a large FORMULA , the radion motion would acquire an effective (large) mass due to the
+backreaction on the compact embedding. This in principle should stabilize FORMULA  at late time. Together with that, another mechanism enters into
+the stabilization of the effective String frame Newtonian constant. At late time FORMULA  is supposed to couple to brane matter fields so to
+re-heat the Universe.
+From the ten dimensional point of view this re-heating can be understood as
+the dissipation of the kinetic energy of the brane into world-volume excitations. As explained in the introduction, the details of this late
+time dynamics are however out of the scope of the present paper and are left to future work.
+String frame
+The effective action (REF ) does not however describe any physically relevant frame. In fact,
+the metric FORMULA  is not related to any physical choice of units. Units might be fixed either in terms of
+particle masses (String frame) or of the four dimensional Planck length (Einstein frame).
+In the String frame all particles masses are constant in time as
+the Standard Model is supposed to live on the Slingshot brane. In the Einstein frame instead the gravitational
+coupling is constant in time.
+Although both the Einstein and String frames are of physical relevance, only the
+String frame has a geometrical meaning from the ten dimensional
+perspective. To make connection to what has been
+described in the previous sections we will start discussing this case.
+The induced metric in the slow velocity limit can be written as
+FORMULA 
+where FORMULA  describe the brane embedding. In the simplest FORMULA  case
+FORMULA . The effective action on the String
+frame is then
+FORMULA 
+From the action (REF ) we can finally find the effective Slingshot equations at zeroth order in the expansion.
+Note that to get zeroth order back-reactions to the metric we need to consistently solve at first order the
+scalar field equations.
+At first order in FORMULA  expansion we have
+FORMULA 
+By varying the action (REF ) with respect to the
+scalar fields FORMULA  and FORMULA  and by substituting the Ricci scalar obtained by the Einstein equations (REF ),
+the scalar field equations turn out to be, at leading order,
+FORMULA 
+
+Cosmology
+We now consider the theory (REF -REF ) in a Friedman-Robertson-Walker (FRW) background. Here we have
+FORMULA 
+and all fields are time dependent.
+The equation for FORMULA  reads
+FORMULA 
+where FORMULA  is a constant of integration. Using this solution in the equation for FORMULA  we find that
+FORMULA 
+Moreover, from the FORMULA  component of (REF ), we get, at leading order in FORMULA , the Friedman equation
+FORMULA 
+which
+is solved by the mirage solution FORMULA  or in other words by FORMULA . The constant FORMULA  can be fixed to
+FORMULA  by appropriate
+rescaling of the coordinates.
+The scalar equation (REF ) ensures
+instead the bouncing behavior
+FORMULA 
+where FORMULA  is another constant of integration and the bounce occurs at FORMULA .
+The effective theory therefore reproduces the bouncing solution of {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}
+to leading order in the back-reaction parameters FORMULA 
+and FORMULA , which define the mirage approximation of {{cite:c796ab39-abac-46a3-afce-70c647bea67a}}.
+First order corrections are certainly interesting and even non-negligible when the brane leaves the CY
+throat far from the bouncing point. However, the zeroth order solution describes very well the motion of the Slingshot brane
+deep into the throat of the CY. This is exactly the
+framework in which the early time Slingshot is based.
+We leave for future research the investigation of higher order corrections to the
+mirage approximation.
+
+Energy conditions
+The Slingshot solution is ultimately related to the violation
+of the energy conditions. To verify this, let us define the
+effective energy condition FORMULA  as the right-hand side of
+eq.(REF ), which is, to leading order
+FORMULA 
+In a FRW background we may define the effective energy density FORMULA  and the effective pressure FORMULA .
+By using the field equations (REF -REF ) we get
+FORMULA 
+and
+FORMULA 
+When the centrifugal barrier double the Hubble expansion, or in other words, when FORMULA , both
+strong (FORMULA ) and weak (FORMULA ) energy conditions are violated and the bounce occurs. Strong energy conditions alone are however
+violated as soon as the centrifugal barrier overtake the Hubble expansion, i.e. for FORMULA , this generates a short period of acceleration.
+The number of e-foldings (FORMULA ) of cosmological acceleration, can then be easily bounded by
+FORMULA 
+A more precise numerical calculation shows that the number of e-foldings is actually bounded by 2 {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, {{cite:80dda751-3d0d-4678-a936-9fa00dbfda96}}.
+On the explicit solution it is easy to check that the energy conditions are both violated for
+FORMULA 
+From a more geometrical perspective,
+brane curvatures violate energy conditions via the projection of bulk curvatures onto the brane, as discussed in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}.
+
+Perturbations
+In section III we considered the primordial spectrum of perturbation by explicitly neglecting the local gravity contribution (mirage
+approximation).
+One might ask whether this is appropriate. Unfortunately, to fully answer this question a non-linear effective four
+dimensional theory, in the expansion parameter FORMULA , must be developed.
+Nevertheless, a convincing positive answer can be obtained by just looking at the
+first order effective theory (REF ). We will use the short notation FORMULA  for the right hand side of (REF ).
+Standard arguments {{cite:ed175af0-ca8a-4e1d-9864-dc922daaa618}}, shows that the local gravity contribution can be neglected if the Bardeen potential FORMULA  satisfies
+FORMULA 
+whenever FORMULA  is in the frozen region. In our model, all perturbations are frozen at their value FORMULA .
+For small FORMULA s (i.e. for super-horizon scales) the Bardeen potential FORMULA  is then well approximated with {{cite:ed175af0-ca8a-4e1d-9864-dc922daaa618}}
+FORMULA 
+where FORMULA  is the perturbation of the energy momentum tensor FORMULA .
+The condition for which local gravity can be neglected in the calculation of the Bardeen potential is therefore
+FORMULA 
+where we have used (REF ). The inequality (REF ), is then always satisfied for large
+scale modes.
+This analysis therefore shows that local gravity can be safely neglected in the calculation of the scalar primordial perturbations related with the
+CMB.
+As we have shown in section REF 
+when local gravity can be neglected, the effective action (REF ) faithfully reproduce the mirage cosmology results.
+We can define an effective matter content and pressure by making use of Hubble equation FORMULA 
+and Raychaudhuri equation FORMULA . Since far form the bounce the angular momentum contribution
+is subdominant, equation (REF ) imply
+FORMULA 
+or in other words FORMULA . This is the well known result that mirage matter behaves like radiation {{cite:b524aecb-2cb9-4c44-a2a0-ff80c7c4eece}}.
+The Hollands-Wald result {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}} of an almost flat power-spectrum can then be qualitatively
+used from the effective theory point of view. Note however
+that here perturbations are created whenever the angular momentum plays a determinant role. Nevertheless, the angular momentum signatures
+on the later time evolution of the perturbations are expected to “decay” very quickly,
+as shown before in the Mirage analysis.
+
+Einstein frame
+The Slingshot was originally developed in the so called String
+frame {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}. In the String frame, particle masses are
+defined by the oscillations of the fundamental string, and
+therefore are constant in time. However, a brane observer
+experiences an induced time varying gravitational coupling until,
+at late times, the brane leaves the throat and ends into the CY.
+In {{cite:22455a10-978a-4ce3-a7b7-fceb9a4a9e19}}, it
+was claimed that a physical description of a gravitational system
+may only be performed in a frame in which the induced
+gravitational coupling is constant, i.e. in the so called
+Einstein frame. However, as it is clearly explained in
+{{cite:3da34950-3726-42d9-ab5e-b1c498d00725}}, the only requirement of the constancy of the
+newtonian coupling (FORMULA ) is meaningless. In local gravity for example, a physical meaningful
+quantity is in fact not the Newton constant but rather the
+gravitational force. In particular, the gravitational attraction
+FORMULA  between two bodies of masses, let us say, FORMULA  and FORMULA , is
+FORMULA . The change to the Einstein frame in
+which FORMULA , does not make the gravitational force
+time-independent, as in this case masses are FORMULA 
+{{cite:3da34950-3726-42d9-ab5e-b1c498d00725}}. The same conclusion can be obtained by considering
+cosmological observations that involve the redshift.
+The redshift is indeed defined as FORMULA  where FORMULA  and FORMULA  are respectively the
+frequencies emitted and observed
+of some atomic transition. In this physical system FORMULA , where FORMULA  is the electron mass setting the units.
+By a conformal transformation
+FORMULA , we also have FORMULA 
+and therefore the redshift is un-modified.
+Finally, we also wish to quickly comment on the power spectrum of primordial perturbations.
+In String frame the perturbed metric is FORMULA  where FORMULA 
+is the Bardeen potential. By re-scaling to a conformal frame such that FORMULA ,
+we still obtain the same Bardeen potential FORMULA . The power spectrum of primordial perturbations
+(a physical quantity) is therefore unchanged
+by the change of conformal frames.
+To conclude, one can then in general show that any conformal frame
+is physically equivalent {{cite:3ac93409-3d35-4c6f-afff-131d897cfb38}}.
+It seems much more economical and natural
+to attribute the time dependence of the gravitational force to a
+corresponding time variation of the gravitational coupling rather
+than to the masses of the string excited states. Only during nucleosynthesis the question of whether the
+gravitational coupling is constant or not is well posed and very
+strict constraints do apply. Therefore, the time variation of the
+four dimensional newtonian constant in the Slingshot era can never
+be ruled out by observations.
+During the Slingshot era, our Universe is a FORMULA -brane
+moving in a throat of a CY space. When the throat is embedded in a compactification scheme, it should be cut off at some FORMULA 
+and glued back to the rest of
+the compactification space {{cite:742298f0-c048-4282-be4a-8b8251f2768c}}. On the other hand, the conical singularity, at the tip of the cone,
+is smoothed out by effectively
+cutting off the throat at FORMULA  and
+appropriately deforming the space so that a smooth geometry is obtained. In the case in which the throat is taken to be FORMULA  as
+in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, and neglecting brane velocities contributions, this construction strongly resembles the RS1
+scenario {{cite:6d4a3ca7-0e79-4090-8966-794ca84d6a88}} (see {{cite:c796ab39-abac-46a3-afce-70c647bea67a}} and for a 10D tentative construction see {{cite:b0d94708-0954-49bd-8278-057e363a5cab}}), where
+the vicinity of FORMULA  and FORMULA  correspond to the IR and UV branes, respectively (see fig.1).
+FIGURE 
+The correct analysis for
+the induced Einstein theory on a third brane in the RS1 background has been performed in {{cite:c74df16c-d85d-4e51-be2e-56185e5b9f9a}}. The result for a probe brane is
+FORMULA 
+where FORMULA  and FORMULA  are the proper distances from the probe brane to, respectively, the FORMULA  and FORMULA 
+boundary and FORMULA  is the higher dimensional gravitational coupling.
+One can easily see that, once the probe brane reaches the FORMULA  boundary, the newtonian constant stabilizes
+to a constant value. In an exact FORMULA  geometry we have
+FORMULA 
+and
+FORMULA 
+where FORMULA  is the
+probe brane position at fixed bulk time.
+Thus we get that
+FORMULA 
+As the probe is moving in the vicinity of the IR region FORMULA  and
+far from the UV, FORMULA , we may write (as already noted in {{cite:89dbef55-ec53-401e-bf19-f2fefb5d4d02}})
+FORMULA 
+where FORMULA  is the Newton constant on the UV brane. Whenever instead the brane reaches the
+UV boundary, the local gravitational coupling on the
+moving brane stabilizes to the measured Newtonian constant.
+The string theory system is slightly more involved as one needs to consider the conformal coupling between the local Ricci scalar
+and the brane position introduced before. This is due to the fact that the bulk is not sourced by a cosmological constant, as in RS1 case,
+but by a Ramond-Ramond five form. Nevertheless, we can use this toy model for a
+qualitative description of what we would expect in the late time evolution of the Slingshot brane.
+Let us consider two particles living on the brane. As the extra-dimensions are compact,
+the Newtonian force between them behaves four-dimensionally,
+i.e. FORMULA , at distances FORMULA .
+When the probe brane reaches the UV region after the bounce, FORMULA 
+stabilizes to the measured newtonian constant and therefore
+local 4D gravity dominates at low energies.
+Viceversa, as the brane approaches the bouncing point, FORMULA 
+becomes smaller and smaller and therefore
+the scale for which gravity looks four-dimensional, become
+larger and larger. Eventually, gravity would look four-dimensional only above cosmological distances in the vicinity of the bouncing point.
+In other words there, the FORMULA  gravity dominates over the local gravitational attraction
+up to very large scales and the probe
+brane approximation of {{cite:b524aecb-2cb9-4c44-a2a0-ff80c7c4eece}}
+is justified. In this case, local FORMULA  gravity cannot be used to describe gravitational attraction up to cosmological scales.
+Although the effective theory discussed above is strictly valid only in the RS1 context, it actually
+captures the essential fact that the gravitational coupling scales like FORMULA  close to the IR boundary,
+as pointed out by {{cite:22455a10-978a-4ce3-a7b7-fceb9a4a9e19}}.
+Let us indeed consider the String frame effective theory (REF ), which is again valid
+close to the bouncing point. The Einstein frame can be
+found by re-scaling the metric by a conformal factor
+FORMULA 
+The scale factor in Einstein frame is therefore
+FORMULA 
+where in the last equality we used the solutions of the equations (REF -REF ), at leading order.
+In Einstein frame, the spacetime is therefore not evolving at zeroth order Nevertheless, a next to
+leading order analysis of the background evolution
+around the bounce show that FORMULA  evolves very slowly like radiation {{cite:afae84ce-2fff-484c-82bd-58a9000fa58e}}..
+However, as already stressed before,
+effective masses vary as FORMULA , where FORMULA  are the bare (String frame) particle masses. The physical
+observable are therefore not only non-trivial in the Einstein frame, as conversely claimed by {{cite:22455a10-978a-4ce3-a7b7-fceb9a4a9e19}},
+but are physically equivalent to the physical observable in the String frame {{cite:3ac93409-3d35-4c6f-afff-131d897cfb38}}.
+To get an insight of what the next to leading order could be, we refer the reader to the exact solution of eqs.
+(REF -REF ) found in {{cite:afae84ce-2fff-484c-82bd-58a9000fa58e}}
+FORMULA 
+Note that in this solution there is a past singularity at negative FORMULA  in the field FORMULA .
+However the effective theory (REF ) is valid for FORMULA , i.e. the effective
+theory cannot be trusted when the brane sits in the hat of the CY. Since from the ten dimensional point of view the
+hat of the Calabi-Yau is a regular compact geometry, everything behaves regularly there and the value of FORMULA  is
+bounded from above by constant FORMULA  determined by the details of the compactification.
+In conclusion, the field singularity of solution (REF ) is only an apparent singularity and
+if an exact solution could be found this should be regular in the past infinity and future. To properly show this
+assertion however the full back-reacting Stringy solution must be performed, this is beyond the scope of this paper.
+In terms of (REF ), the Einstein frame scale factor reads
+FORMULA 
+Note that the apparent past singularity on FORMULA  gets mutated into a scale factor singularity,
+however again the same discussions on its regularity apply.
+The exact solution for the Einstein frame scale factor should then smoothly approach in the past infinity a constant
+which is fixed by the scale of compactification. This resembles the emergent Universe idea {{cite:14d3b9aa-ab6c-49dc-886b-adff0a9d549a}}.
+From the above considerations it is then clear that, even in the Einstein frame, no singularities should
+appear whenever the Slingshot brane wanders in the throat of the CY, which is the case studied in this paper.
+An interesting question is whether the spectrum of primordial perturbations analyzed in the probe brane approximation
+can be reproduced from a four dimensional point of view. To achieve this goal,
+a more detailed effective four dimensional theory than the one used here to describe the cosmological background, is needed. However, as
+this study is far beyond
+the scope of the present paper, we leave it for future work.
+
+Conclusions
+The Cosmological Slingshot Scenario,
+aspires to provide a new paradigm for the early time cosmology.
+In there, the observable universe is a FORMULA -brane moving in a
+warped throat of a CY solution of the IIB supergravity. The inflationary era is
+replaced by a period of Mirage Cosmology {{cite:b524aecb-2cb9-4c44-a2a0-ff80c7c4eece}}, where local gravity effects are neglected.
+At later times instead, when the probe brane is approaching
+the base of the CY throat, local
+gravity becomes important and completely takes over the dynamics.
+In the Slingshot, the probe brane trajectory has a non-vanishing angular momentum in
+the KS throat region of a CY space. The presence of the angular momentum provides a turning point on the
+brane orbit at a finite distance to the tip of the throat.
+From the point of view of an observer living in the brane, the
+turning point prevents an initial singularity and gives rise to a
+bouncing cosmology
+in String frame, without passing through a quantum gravity
+regime. In Einstein frame on the other hand the scale factor starts as a finite constant in the past
+corresponding to the Slingshot brane sitting at the hat of the Calabi-Yau.
+In this context, by generalizing the results of {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}} to a KS throat,
+we showed that the problems of standard cosmology (horizon and isotropy) are naturally avoided and the flatness problem
+is acceptably alleviated.
+Concerning the calculation of the
+quantum primordial perturbations, we have here identified their vacuum state
+and elucidated the matching conditions from the quantum to the
+classical regime of the perturbation. Using this detailed analysis, we have found the exact
+power spectrum of primordial perturbations showing its compatibility with latest WMAP data {{cite:ea87e67d-d264-4388-bdc6-65d0013f5a84}}
+(see {{cite:71b71b9b-2ae5-408f-aea9-0cf6b2a8dcb5}} for the exact match of the Slingshot primordial power spectrum with the full set of WMAP data).
+A comment on a criticism raised by {{cite:22455a10-978a-4ce3-a7b7-fceb9a4a9e19}} should be added here. As pointed out by {{cite:d21e2f82-a379-4ae8-bdf9-448690b15a81}} the scenario of {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}} is un-reliable.
+In {{cite:bf37940f-74c9-465a-accb-a7edd77ebd0e}} the primordial
+perturbations are created by the same radiation that fills the Universe today.
+However, if this is the case, the perturbation coming out from the horizon today would
+have been born when the curvature scale was much bigger than the Planck scale. Fortunately, in the Slingshot this problem is avoided
+as perturbations are created by brane fluctuations in a regime
+in which the supergravity approximation is still valid.
+In the second part of our paper we have studied the Slingshot cosmology from a four dimensional perspective.
+In this context, we showed that the results found in {{cite:62bc64c1-6608-485c-956b-5a1f6a80a67d}}, obtained by using
+the mirage approach of {{cite:c796ab39-abac-46a3-afce-70c647bea67a}}, are reproduced.
+Interestingly, we also clarified that strong and weak energy conditions are
+violated in the effective theory approach during the bouncing.
+In the Slingshot frame (or String frame), particle masses are fixed and Newton constant FORMULA  is time-dependent.
+This time variation might
+seem odd. However, no observational
+constraints on the variation of FORMULA  are applicable to the pre-nucleosynthesis era.
+The Slingshot, that aims for an early time description of the Universe,
+is therefore observationally safe.
+Nevertheless, a frame where FORMULA  is constant might be more familiar for some {{cite:22455a10-978a-4ce3-a7b7-fceb9a4a9e19}}.
+This frame, at leading order in the tension expansion with respect
+local curvatures, is easily found from the action (REF ) by a conformal transformation.
+The same conformal transformation that fix in time the Newtonian constant, makes
+however particle masses time varying. It is then easy to note that
+the physical observable are frame-independent, as already elucidated by Dicke's
+original paper {{cite:e2ec1198-e05f-4e1f-89c8-a233c5ae2f87}} (see {{cite:3ac93409-3d35-4c6f-afff-131d897cfb38}} for a modern view).
+Finally, one may ask of whether cosmological singularities might
+occur in the Einstein frame.
+Here we have showed that during the early time cosmology, there
+are no singularities in any frame. Although the effective theory
+for the whole brane trajectory is not known, and thus, definite
+statements cannot be made, one might speculate that if no
+singularities are formed during the brane motion deep into the
+throat, future singularities, in the hat of the CY, are unlikely
+to appear. The physical system reaches high energies only when the
+brane is close to the stack. Therefore, from the “mirage”
+perspective, there cannot possibly be any future cosmological
+singularities Here we assume that there are no brane
+collisions, embedding singularities in the hat of the CY and/or
+singular dynamics of the CY volume.. As Physics is frame
+independent, the same conclusion should be valid in Einstein frame
+as well. Nevertheless, a quantitative exploration of this point,
+involving the transition from the mirage to the local era, should
+be done in future research.
+CG wishes to thank Valerio Bozza and Filippo Vernizzi for
+enlightening discussions on cosmological perturbations. CG also wishes to thank Cliff Burgess for the discussion on physical observable
+on different conformal frames. Finally, CG
+wishes to thank the Physics Department of the King's College London
+for the hospitality during part of this work. CG and AK wish too thank Elias Kiritsis for useful comments.
+NEG thanks H. Vucetich
+and G. A. Silva for helpful discussions on the definition of newtonian constant. CG and NEG wish to thank
+Susha Parameswaran for discussions on possible realizations of the Slingshot scenario in the RS1 context.

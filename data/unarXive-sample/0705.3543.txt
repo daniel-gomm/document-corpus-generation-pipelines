@@ -1,0 +1,1202 @@
+
+Nearly spherical vesicles in an external flow
+V. V. Lebedev, K. S. Turitsyn, and S. S. Vergeles
+Landau Institute for Theoretical Physics,
+Moscow, Kosygina 2, 119334, Russia
+2020/09/07 03:05:18
+Tank-treading, tumbling and trembling are different types of the vesicle behavior in an
+external flow. We derive a dynamical equation for nearly spherical vesicles enabling to
+establish a phase diagram of the system predicting the regimes. The diagram is drawn in
+terms of two dimensionless parameters depending on the vesicle excess area, fluid
+viscosities, membrane viscosity and bending modulus, strength of the flow, and ratio of
+the elongational and rotational components of the flow. The tank-treading to tumbling
+transition occurs via a saddle-node bifurcation whereas the tank-treading to trembling
+transition occurs via a Hopf bifurcation. We establish a critical slowing near the
+merging point of the transition lines.
+87.16.Dg, 47.15.G-, 47.20.Ky, 83.50.-v
+Introduction
+Vesicles, which are closed membranes separating two regions filled up by generally
+different fluids, have very much in common with biological cells and have a number of
+applications in pharmaceutics. The truly non-equilibrium problem of describing the
+vesicle dynamics in external flows attracted lots of attention both from experimentalists
+{{cite:cc2effdf-4182-4cdd-8999-ec77ca808fca}}, {{cite:4846d24f-27c2-4968-86fe-64c1869ad6e2}}, {{cite:efd4e6a3-1986-4d3d-a492-a95d12a41bff}}, {{cite:c1d503d6-d85f-43d2-8357-f39956c372f0}}, {{cite:c8337bbd-df94-41e9-9cc1-0522327d7633}}, {{cite:07e6e2d1-8335-4de3-93b6-e2c08331e8f3}}, {{cite:4878bb8b-63ca-468c-b288-d44f7f8bb70c}} and theoreticians
+{{cite:c4c31667-687d-4869-981d-1014d469613c}}, {{cite:8f61df2b-311d-488d-8758-df24235c104f}}, {{cite:8a372ced-209c-46f0-a308-bc0c14b636d1}}, {{cite:c04a496b-f7ff-4154-a3f0-6d2de7a4751c}}, {{cite:34d1bbed-ed7f-425c-9091-22a58b0b1bb7}}, {{cite:70f56fd8-8acd-4f10-b826-3a9081aa42a5}}, {{cite:458d8781-9402-42f1-a4f9-e295ef9fd2bd}}, {{cite:764145d1-686a-4efa-a0a9-2ec60be67cd3}}, {{cite:4cb4fa75-4ca6-40ee-9258-5c89be797fdc}}, {{cite:65fe589f-564c-4515-ac6a-37f56aa60fc0}}, {{cite:69049448-8890-437f-a8eb-9336175df386}}, {{cite:196b92d9-fea7-4ed0-9f33-88b3d757225c}}, {{cite:1449d061-9c99-413e-b051-571e4ce2d5f7}}, {{cite:005c2e52-8614-4817-aa57-79555c319459}}, {{cite:b0dd9d27-4a29-46cb-aefd-2400da500dfd}}, {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}}, {{cite:1f80401d-2658-436b-a966-fd29e7ac52bb}}, {{cite:a3ae7534-b4cf-4280-8b50-47ef841fc62a}}. In experiments different regimes of vesicle
+dynamics were observed, usually in share flows. In the tank-treading regime a vesicle
+shape is stationary. In the tumbling regime a vesicle experiences periodic flipping in
+the shear plane. Trembling, experimentally discovered in the work {{cite:4878bb8b-63ca-468c-b288-d44f7f8bb70c}}, is an
+intermediate regime between tank-treading and tumbling, in the regime a vesicle trembles
+around the flow direction. Theoretical studies {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}} and {{cite:a3ae7534-b4cf-4280-8b50-47ef841fc62a}} have
+predicted similar vesicle behavior and called it vacillating-breathing and swinging
+respectively. The different types of the motion are illustrated in Fig.
+REF .
+FIGURE 
+In this paper we focus on constructing the phase diagram, which would predict what kind
+of regime corresponds to a given set of external parameters, such as vesicle
+non-sphericity, viscosity contrast, strength of external flow. Although this problem was
+addressed previously by different authors, it is still far from being closed. As long as
+no analytic solution of this problem exists, theoretical studies were based either on
+numerical simulations or on some approximations allowing analytical treatment. Numerical
+investigations of this problem involved several different computational schemes,
+including boundary element method {{cite:8f61df2b-311d-488d-8758-df24235c104f}}, {{cite:34d1bbed-ed7f-425c-9091-22a58b0b1bb7}}, mesoscopic particle-based
+approximation {{cite:70f56fd8-8acd-4f10-b826-3a9081aa42a5}}, {{cite:65fe589f-564c-4515-ac6a-37f56aa60fc0}}, {{cite:1449d061-9c99-413e-b051-571e4ce2d5f7}}, {{cite:005c2e52-8614-4817-aa57-79555c319459}}, {{cite:b0dd9d27-4a29-46cb-aefd-2400da500dfd}}, and an advected field approach
+{{cite:458d8781-9402-42f1-a4f9-e295ef9fd2bd}}, {{cite:764145d1-686a-4efa-a0a9-2ec60be67cd3}}, {{cite:69049448-8890-437f-a8eb-9336175df386}}, {{cite:196b92d9-fea7-4ed0-9f33-88b3d757225c}}. These approaches have shown qualitative agreement with
+experiment. However, they did not solve the problem of constructing the vesicle phase
+diagram completely. Analytical studies of the problem can be divided in two major
+classes. In the first one, see Refs. {{cite:4cb4fa75-4ca6-40ee-9258-5c89be797fdc}}, {{cite:65fe589f-564c-4515-ac6a-37f56aa60fc0}}, {{cite:a3ae7534-b4cf-4280-8b50-47ef841fc62a}}, phenomenological models of
+vesicle dynamics based on the classical work of Keller and Skallak {{cite:c4c31667-687d-4869-981d-1014d469613c}} were
+proposed and proved themselves to be rather efficient in explaining particular
+experiments. However, they cannot cover wide range of parameters and cannot,
+consequently, be used for constructing a phase diagram for the vesicle dynamics. In the
+second series of works, Refs. {{cite:8a372ced-209c-46f0-a308-bc0c14b636d1}}, {{cite:c04a496b-f7ff-4154-a3f0-6d2de7a4751c}}, {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}}, {{cite:1f80401d-2658-436b-a966-fd29e7ac52bb}}, the studies are focused on
+nearly spherical (quasi-spherical) vesicles whose shape is close to spherical one and can
+be parameterized by an expansion over spherical harmonics.
+We propose a natural extension of the theory developed for quasi-spherical vesicles by
+accounting higher-order expansion terms. A perturbation scheme around the Lamb solution
+for spherical body in an external flow {{cite:0dc0d8de-e4b4-4b48-8427-4cb802188b34}} allows one to derive the dynamic
+equations for the shape and the orientation of a vesicle and to investigate them
+analytically. We show that the high-order in the vesicle distortion terms produce a
+qualitative change in the phase diagram and make it significantly more complicated. The
+resulting diagram contains all three types of vesicle behavior which were observed
+experimentally. In our work, we analyze how the vesicle dynamics depends on different
+control parameters, such as viscosity contrast, vesicle excess area, internal membrane
+viscosity, strength of the flow, and ratio of the elongational and rotational components
+of the flow. We analyze also the vesicle orientation in the tank-treading regime. Some of
+the results, derived in this paper were already reported in {{cite:e7ed4f55-bc96-482b-9df9-18391c6987dc}}. Here we present
+significantly more detailed derivations and analyze several aspects of the problem which
+were not discussed in {{cite:e7ed4f55-bc96-482b-9df9-18391c6987dc}}.
+Speaking about membranes we have in mind lipid bilayers, the simplest type of the
+biological membranes. Physical properties of such objects have been extensively studied,
+both experimentally and theoretically (see e.g. the books {{cite:8a1ccd97-e720-46fd-8b84-35a90fb793ca}}, {{cite:7a071df4-d30f-4650-99e9-99daeb18b75f}}, {{cite:eacd68c6-ddcb-4dea-87af-0d00ccb18d21}} and the
+reviews {{cite:51d41175-a801-4c15-a6dc-f321777073c2}}, {{cite:f7daf54b-f742-4c20-8ef6-40e8ab52ddb9}}, {{cite:e7c7b1bb-8632-4804-bc85-8ff753208414}}). There are several features of the membranes which are
+important for our analysis. First, we assume that the membrane is in a fluid (isotropic)
+state (is a FORMULA  liquid), which is typical of lipid bilayers under normal conditions.
+Second, we assume that the vesicle has an excess area, that enables one to treat the
+membrane as incompressible. Third, we assume that the membrane is impermeable to the
+surrounding fluids, the condition is usually well satisfied in experiment. Finally, we
+take into account the membrane internal viscosity, which can play an essential role, say,
+in the vicinity of the lipid-bilayer melting point {{cite:175357ca-783c-4099-8b07-6aab7184413f}}.
+The structure of our paper is as follows. In Section  we expose basic
+theoretical facts concerning physics of membranes. A special attention is paid to dynamic
+properties of the membranes which can be treated as moving interfaces immersed in a FORMULA 
+fluid. In Section  we formulate peculiarities of nearly spherical
+vesicles, analyze their equilibrium properties, and derive phenomenological equation
+which describe their dynamics in weak external flows. In Section  we
+establish a dynamic equation for the vesicle evolution obtained in the framework of
+expansion over deviations from the ideal spherical shape. We introduce dimensionless
+parameters controlling the vesicle behavior. In Section  we consider the
+case of planar external velocity field. In this case the dynamic equations can be
+essentially simplified enabling one to establish the phase diagram of the system
+containing domains corresponding to tank-treading, trembling and tumbling. In Section
+ we analyze limit cases of weak and strong external flows where it is
+possible to study the vesicle behavior in details. In Conclusion we discuss some outcomes
+of our work and its possible extensions. Some technical details of the perturbation
+expansion are presented in Appendix.
+
+Basic Relations
+We are interested in processes which take place at scales of the order of the vesicle
+size which are assumed to be much larger than the membrane thickness. This assumption is
+well justified for giant vesicles, usually examined in experiment. In the main
+approximation, the membrane can be treated as infinitesimally thin, that is as a FORMULA 
+object (film) immersed into a FORMULA  fluid. In this case the vesicle is characterized by
+its geometrical shape. In other words, in this limit the vesicles can be considered as
+active interfaces separating different pieces of the fluid.
+The two membrane properties, its incompressibility and impermeability, imply that both
+the vesicle volume FORMULA  and its surface area FORMULA  are conserved, provided the
+vesicle has an excess area. The latter can be characterized by a dimensionless factor
+FORMULA , which is traditionally introduced as
+FORMULA 
+where FORMULA  is a vesicle “radius” determined by its volume. The excess area factor is
+non-negative, FORMULA , and the minimal value FORMULA  corresponds to the ideal
+spherical geometry. The nearly spherical (quasi-spherical) vesicles are characterized by
+the condition FORMULA .
+The energy of the membrane is determined by its bending distortions and can be written as
+the following surface integral {{cite:ee7324a2-ad4d-4dba-949d-c1372630c7bc}}, {{cite:49005929-641f-4855-b593-289bad35acf0}}, {{cite:6c85f9dd-1fba-43dd-af3a-89e49889c037}}, {{cite:bef02d34-fe51-4ad5-90cc-2331b7fda344}}
+FORMULA 
+over the membrane position. Here FORMULA  and FORMULA  are bending modules, FORMULA  and
+FORMULA  are the mean and Gaussian curvatures, respectively. They are related to the local
+curvature radii of the membrane FORMULA  and FORMULA  as
+FORMULA 
+In accordance with the Gauss-Bonnet theorem, the second term in the right-hand side of
+Eq. (REF ) (with the factor FORMULA ) is invariant under smooth
+deformations of the membrane shape. Therefore the term is irrelevant provided the vesicle
+topology is fixed.
+Besides the bending energy (REF ) the membrane is characterized by its surface
+tension FORMULA . One should stress that for vesicles with excess area the surface
+tension is an auxiliary variable adjusting to other quantities characterizing the
+membrane and the surrounding flow to ensure the membrane incompressibility.
+Flow near the vesicle
+In this paper we consider the situation where both fluids, outside and inside the
+vesicle, are Newtonian. Furthermore, we assume that the Reynolds number associated with
+the vesicle dynamics is vanishingly small, which is the case in real experiments
+{{cite:cc2effdf-4182-4cdd-8999-ec77ca808fca}}, {{cite:4846d24f-27c2-4968-86fe-64c1869ad6e2}}, {{cite:efd4e6a3-1986-4d3d-a492-a95d12a41bff}}, {{cite:c1d503d6-d85f-43d2-8357-f39956c372f0}}, {{cite:c8337bbd-df94-41e9-9cc1-0522327d7633}}, {{cite:07e6e2d1-8335-4de3-93b6-e2c08331e8f3}}, {{cite:4878bb8b-63ca-468c-b288-d44f7f8bb70c}}. Under these assumptions the fluids can
+be described by the Stokes equation
+FORMULA 
+where FORMULA  is pressure, FORMULA  is the fluid velocity, FORMULA  is its mass density, and
+FORMULA  is its dynamic viscosity. The equation (REF ) has to be supplemented by
+the incompressibility condition FORMULA , which leads to the Laplace equation
+FORMULA  for the pressure.
+We divide the flow near the vesicle into two parts: an external flow, which would be
+observed in the fluid in the absence of the vesicle, and an induced flow, which is
+excited as a result of the vesicle reaction to the external flow. The external flow is
+assumed to be stationary, its velocity is designated as FORMULA . One should remember that
+the vesicle is advected by the flow, and therefore the above assumption should be valid
+in the Lagrangian reference frame attached to the vesicle. Below, we neglect the term
+with the time derivative in Eq. (REF ) since the characteristic time scale
+associated with the vesicle dynamics is assumed to be large compared to the viscous
+relaxation time FORMULA .
+We assume that the characteristic spatial scale of the external flow is much larger than
+the vesicle size. In this case the external velocity FORMULA  near the vesicle can be
+approximated by a linear profile, determined by a derivative matrix FORMULA . The
+incompressibility condition implies that the matrix FORMULA  is traceless.
+Generally, the external flow has two contributions, elongational and rotational:
+FORMULA 
+where FORMULA  is the strain matrix (symmetric part of the matrix FORMULA ) and
+FORMULA  is the angular velocity vector. The strain can be characterized by its
+strength FORMULA , defined as FORMULA . Note that for a shear flow
+FORMULA , where FORMULA  is the shear rate.
+The fluids inside and outside the vesicle are assumed to be different. We use the
+designations FORMULA  for the external fluid viscosity, the viscosity of the internal fluid
+is designated as FORMULA . An important parameter which controls the tank-treading to
+tumbling transition is the viscosity contrast FORMULA . The limit where the
+viscosity contrast tends to infinity corresponds to a solid body behavior of the vesicle,
+that was concerned by Jeffery {{cite:b5e9e86f-0f71-426b-a7e8-08d73f8fb0d7}}.
+The membrane moves together with the fluid that is the velocity field FORMULA  is
+continuous on the membrane and the field FORMULA  determines the membrane velocity as well
+as the fluid velocity. For relatively slow processes, we are investigating, the membrane
+can be treated as locally incompressible, that leads to the condition
+FORMULA 
+to be satisfied on the membrane. Here FORMULA  is the projector to the
+membrane, it can be written as FORMULA  where FORMULA  is
+the unit vector normal to the membrane. The FORMULA  incompressibility condition FORMULA  together with Eq. (REF ) leads to the relation FORMULA , to
+be satisfied at both sides of the membrane.
+
+Membrane stress
+The membrane reaction is characterized by its surface stress tensor FORMULA . There are three contributions to the tensor related to the bending energy
+(REF ), to the surface tension of the membrane, and to the internal membrane
+viscosity:
+FORMULA 
+where FORMULA  is the surface tension coefficient and FORMULA  is the membrane (FORMULA )
+dynamic viscosity. Note that the surface tension FORMULA  plays an auxiliary role being
+adjusted to other stresses to ensure the local membrane incompressibility. An expression
+for the bending contribution to the surface stress tensor was found in the work
+{{cite:68a293eb-1027-4c3f-b71e-1ff31dac6b87}} (see also the book {{cite:c48c73e1-dd62-4596-a5f7-fa2dca06bc00}}). It can be written as
+FORMULA 
+where FORMULA  is the membrane mean curvature and FORMULA  is defined
+by Eq. (REF ).
+The surface force FORMULA  (force per unit area) associated with the membrane stress
+tensor FORMULA  can be calculated as FORMULA . Then one obtains from the expressions (REF ,REF ) three
+contributions to the surface force
+FORMULA 
+where
+FORMULA 
+Here, again, FORMULA  and FORMULA  are the mean curvature and the Gaussian curvature of the
+membrane, and FORMULA  is the Laplace-Beltrami operator, FORMULA , associated with the mebrane. Note that the expression
+for the force (REF ) can also be derived by calculating the variation of the
+bending energy (REF ) due to infinitesimal membrane deformations {{cite:83262324-4cef-4e45-8bbd-5b194f4149a8}}.
+The surface force FORMULA  is compensated by the momentum flux from the surrounding medium
+to the membrane. This flux consists of two parts, related to the fluid pressure and the
+fluid viscosity. As a result of the balance, we find the following relations
+FORMULA 
+for the normal and tangential to the membrane components of the force. Here, we assumed
+that the unit vector FORMULA  is directed outwards the vesicle and the subscripts FORMULA  and
+FORMULA  label regions inside and outside the vesicle, respectively. Thus, FORMULA 
+is the pressure difference between the inner and outer regions that is the pressure jump
+on the membrane. Note that a fluid viscous contribution is absent in Eq. (REF )
+due to the condition FORMULA , following from the membrane
+incompressibility (see above).
+To find the velocity field at a given membrane shape one should solve the stationary
+Stokes equation FORMULA  (inside and outside the vesicle) with the
+boundary conditions (REF ,REF ,) on the membrane. An
+additional boundary condition reads that FORMULA  far away from the membrane. Note
+that due to linearity of the equations and the boundary conditions for the velocity a
+solution of the equations can be written as a sum
+FORMULA 
+where FORMULA  is proportional to the gradient of the external flow (REF ),
+and FORMULA  is proportional to the bending modulus FORMULA . Of course, FORMULA  and FORMULA  are complicated functions of the vesicle shape.
+
+Membrane shape parametrization
+Below, we use a particular parametrization of the vesicle shape which is
+FORMULA 
+where FORMULA  is determined by the relation (REF ). We use the spherical coordinate
+system with variables FORMULA  and with the origin in the center of the vesicle.
+The dimensionless radial displacement FORMULA  characterizes the deviations of the membrane
+shape from the spherical one.
+There are constraints imposed on the function FORMULA  due to the conditions
+(REF ). In terms of the displacement FORMULA  the conditions can be rewritten as
+FORMULA 
+The relations (REF ,) are formally exact. However, they can
+be directly used only if FORMULA  is a single-valued function.
+Advection of the membrane by the surrounding fluid implies the following kinematic
+relation
+FORMULA 
+Here FORMULA  are spherical components of the velocity FORMULA  taken at
+the membrane, that is at FORMULA  determined by Eq. (REF ). Again, the relation
+(REF ) is formally exact, but can be directly used only if FORMULA  is
+a single-valued function.
+Closed equation which describes the dynamics of the membrane displacement FORMULA  can be
+derived in two steps. First, one should find the fluid velocity profile for a given
+displacement FORMULA . Second, one should use the kinematic relation
+(REF ). This procedure results in a closed non-linear equation for FORMULA . Note that
+due to the property (REF ) the expression is a sum of two terms, which are
+proportional to the external flow gradient (REF ) and to the bending modulus
+FORMULA . Of course, both terms are non-linear in FORMULA .
+
+Perturbation expansion: weak flows
+Below, we consider nearly spherical (quasispherical) vesicles, that is the excess area
+parameter FORMULA , introduced by Eq. (REF ), is considered to be small. In this
+case the dimensionless displacement FORMULA  is small and it is possible to develop an
+expansion over FORMULA . This perturbation series is a basis for subsequent consideration.
+It is natural to represent the function FORMULA  as a sum over spherical
+harmonics:
+FORMULA 
+The homogeneous contribution to FORMULA  (its zero angular harmonic FORMULA ) can be
+expressed via the inhomogeneous one (non-zero harmonics) from the relation
+(REF ) which reflects the volume conservation. Substituting the obtained
+expression for the zero angular harmonic into Eq. () we obtain an
+expression for FORMULA  whose expansion over FORMULA  starts from the second order term.
+Therefore the displacement FORMULA  can be estimated as FORMULA . That justifies the
+expansion over FORMULA .
+Different angular harmonics in FORMULA  play different roles. The zero harmonic FORMULA  can
+be excluded from the beginning, as we explained. First order harmonics FORMULA ,
+describe a shift of the vesicle without changing its shape, and therefore do not play any
+important role in the vesicle dynamics. The most essential role is played by the second
+angular harmonic which determines mainly the vesicle shape (at small FORMULA ). As to
+higher harmonics, they relax fast in comparison with the relatively slow dynamics of the
+second harmonic. Therefore, the higher harmonics also do not play an essential role in
+the vesicle dynamics. To avoid a misunderstanding, let us stress that the last assertion
+is valid for stationary external flows. As it was discovered experimentally {{cite:3da4a203-8210-42aa-a5fe-fc72f32e1e9d}}
+and explained theoretically {{cite:19fd9da6-076c-445e-8931-4a2cf0e89aa6}}, at some conditions (abrupt inversion of the
+external purely elongational flow) high angular harmonics are generated, the phenomenon
+is called wrinkling.
+The vesicle shape depends on the strength of the external flow. In weak flows it is close
+to an equilibrium one whereas in strong flows it is determined by the velocity gradient
+matrix (REF ). In this section we consider the first case. We discuss the
+equilibrium vesicle shape and then develop phenomenology for the vesicle dynamics in weak
+flows.
+Equilibrium
+In the absence of the external flow, an equilibrium shape of the vesicle can be found by
+minimization of an effective free energy
+FORMULA 
+where the first term is determined by the expression (REF ) and FORMULA 
+is the membrane excess area expressed in terms of the displacement FORMULA . The Lagrange
+multiplier FORMULA , related to a fixed value of the membrane area, coincides with
+the equilibrium value of the surface tension. The second Lagrange multiplier (related to
+the volume FORMULA ) is absent in Eq. (REF ) since we imply that the zero
+angular harmonic in an expansion of the displacement FORMULA  is expressed via other ones from
+the relation (REF ). Therefore, the volume conservation is automatically
+satisfied in our scheme.
+If FORMULA  is small, the principal contributions to the energy (REF ) as well
+as to the excess area are of the second order in FORMULA . It is convenient to write the
+contributions in terms of the coefficients FORMULA  of the expansion (REF )
+of FORMULA  over the angular harmonics:
+FORMULA 
+Note, that the first angular harmonic (with FORMULA ) is absent in the expansions. The
+reason is that it corresponds to a vesicle shift as a whole, which does not change the
+energy and the area of the vesicle. As it follows from Eq. (REF ), the free
+energy is minimal if only the second angular harmonic is excited. In this case
+FORMULA , which is an equilibrium value of the surface tension.
+Note that the second order term (REF ) is degenerate in FORMULA . Therefore, in order
+to determine the vesicle equilibrium shape, one should take into account terms of higher
+order in the expansion of the effective free energy (REF ), which violate
+the degeneracy. In the main approximation, it is possible to keep third order in FORMULA 
+terms, and a contribution to FORMULA  related to the second angular harmonics.
+For a subsequent analysis, it is convenient for us to use the following real basis
+FORMULA 
+instead of the traditional angular functions FORMULA . The functions FORMULA 
+are normalized as
+FORMULA 
+In terms of the functions (REF ), the contribution to FORMULA  related to the second
+angular harmonic, can be rewritten as follows
+FORMULA 
+where FORMULA  are some real coefficients.
+Expanding the bending energy (REF ) and the excess area FORMULA  upto the third
+order in FORMULA  and substituting there the expansion (REF ) one obtains
+FORMULA 
+where summation over repeated indices is implied and we designated
+FORMULA 
+Components of the object FORMULA  are of order unity, they can be found from
+the definition (REF ) after substituting the expressions (REF ).
+Minimizing the free energy (REF ) over FORMULA  and determining the Lagrangian
+multiplier FORMULA  from the condition FORMULA , one obtains
+FORMULA 
+This is the correction related to the third order term in the expansion of the free
+energy. The minimum of the energy corresponds to a prolate uniaxial ellipsoid. If the
+principal axis of the ellipsoid is directed along the FORMULA -axis its shape is determined by
+the expression FORMULA , that is
+FORMULA 
+Substituting the expression (REF ) into Eq. (REF ) we find that the
+coefficient before FORMULA  term in the effective free energy is estimated as
+FORMULA . It contains an extra small factor FORMULA  in comparison with
+the natural estimation FORMULA . Thus, both, second order and third order, terms in the
+free energy (REF ) are of the same order. That gives a formal justification of
+taking the third order term into account despite the smallness of FORMULA .
+
+Weak external flow, phenomenology
+Here, we analyze the case of weak external flows that cannot significantly distort the
+vesicle equilibrium shape. As we established in the preceding subsection, the equilibrium
+shape of a nearly spherical vesicle is the prolate ellipsoid possessing the uniaxial
+symmetry. An orientation of such ellipsoid in space can be characterized by a unit vector
+FORMULA  directed along the principal axis of the ellipsoid. If FORMULA  is directed along
+the FORMULA -axis then the vesicle shape is determined by the expression (REF ).
+Note that the vectors FORMULA  and FORMULA  describe the same physical state since the
+ellipsoid is invariant under inversion.
+One can formulate a phenomenological equation for the dynamics of FORMULA  in a weak
+external flow: FORMULA , where FORMULA  is the
+velocity gradient matrix of the external flow and FORMULA  is some tensor related to the
+vesicle orientation. Due to the symmetry FORMULA  the tensor FORMULA  contains
+only odd powers of FORMULA . Using the relation FORMULA , that is FORMULA , we
+arrive to the following equation
+FORMULA 
+containing a single dimensionless parameter FORMULA . Deriving this equation, we exploited the
+fact, that the vesicle dynamics should be purely rotational FORMULA  in a case of an external flow FORMULA  corresponding to a solid rotation. The factor FORMULA  in Eq.
+(REF ) is dependent on relative significance of the viscous mechanisms and on the
+excess area parameter FORMULA , the dependence will be established further, see Section
+.
+FIGURE 
+For an external shear flow, it is convenient to utilize the following parametrization of
+the unit vector  FORMULA
+FORMULA 
+The components here are written in the Cartesian reference frame attached to the flow:
+the FORMULA -axis is directed along the velocity and the FORMULA -axis is directed opposite to the
+angular velocity vector FORMULA  (see Fig. REF  for clarification).
+Substituting the expression (REF ) into Eq. (REF ) and taking into
+account that the shear velocity gradient matrix has the only non-zero component
+FORMULA  one obtains
+FORMULA 
+Note that the dynamics of the angle FORMULA  is separated. The equations
+(REF ,) resemble equations for a single polymer dynamics examined in
+Ref. {{cite:da6a11fd-37de-4f06-92ed-dda337ce3dc1}}.
+The equations (REF ,) lead to either tank-treading or tumbling regimes
+of vesicle motion. For FORMULA  the tank-treading regime is realized, with a steady tilt
+angle (between the vector FORMULA  and the velocity direction)
+FORMULA 
+Otherwise, for FORMULA , the tumbling regime takes place: the vector FORMULA  experiences a
+time-periodic motion with an average rotation in the shear plane. Thus, FORMULA  corresponds
+to the tank-treading to tumbling transition. As follows from Eq. (REF ), the
+transition is realized via the saddle-node bifurcation.
+
+Perturbation expansion: general dynamics
+Here, we start to carry out the program (formulated in Subsection REF )
+leading to a dynamic equation for the dimensionless displacement FORMULA . The program can be
+realized for nearly spherical vesicles by using a generalization of the Lamb scheme. In
+accordance with Lamb {{cite:0dc0d8de-e4b4-4b48-8427-4cb802188b34}} (see also Ref. {{cite:e0f707a0-61d4-4f6e-b811-1254bc3636da}}), a solution of the
+stationary Stokes equation can be explicitly expressed via the velocity field taken at a
+sphere both for the internal and external problems. The Lamb scheme can be directly
+applied to a spherical solid body immersed into a fluid or to a spherical cavity filled
+up by a fluid. Then the velocity field is expressed in terms of its surface value. For a
+nearly spherical vesicle the scheme has to be slightly modified. Namely, one should
+express the velocity field via its value on the sphere of the radius FORMULA . The values
+can be obtained by an analytical continuation of the internal and of the external
+velocity fields and are slightly different for the internal and for the external
+problems. The next idea is to represent the boundary conditions as an expansion over the
+displacement FORMULA  which is small parameter for nearly spherical vesicles.
+In the zeroth approximation, one can ascribe the membrane velocity directly to the sphere
+FORMULA  ignoring deviations of the vesicle shape from the sphere. Keeping then the lowest
+in FORMULA  terms in all expressions one passes to an equation for the displacement FORMULA 
+equivalent to the one discussed in Refs. {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}}, {{cite:1f80401d-2658-436b-a966-fd29e7ac52bb}}. However, as we demonstrated
+in Ref. {{cite:e7ed4f55-bc96-482b-9df9-18391c6987dc}}, such approximation is not self-consistent. The problem is that it
+leads to a dynamics sensitive to initial conditions. And one can overcome this
+sensitivity only by accounting for high order terms in FORMULA .
+Closed equation
+Here, we derive an equation for the displacement FORMULA  in the approximation where the
+membrane velocity and the boundary conditions (REF ,) are related to
+the sphere FORMULA . Corrections to the equations associated with the deviations of the
+vesicle shape from the sphere are small in FORMULA . However, for the reasons formulated
+above, we keep the leading non-linear in FORMULA  term in the expression for the boundary
+force (REF ).
+Note, first of all, that the variational derivative of the effective free energy
+(REF ) can be represented as
+FORMULA 
+Therefore the boundary condition (REF ) can be rewritten as
+FORMULA 
+Here, we divided the surface tension, FORMULA , into a homogeneous, FORMULA , and an
+inhomogeneous, FORMULA , parts. By definition, the zero angular harmonic is absent
+in FORMULA . Next, for the sphere FORMULA  the average curvature is FORMULA  and
+FORMULA , that explains validity of the expression (REF ).
+To find the inhomogeneous part of the surface tension, FORMULA , one has to use the
+second boundary condition, (). Taking the derivative FORMULA  of
+the relation () and relating a result to the sphere FORMULA  one obtains
+FORMULA 
+where FORMULA  and FORMULA  are contributions to the surface tension and to the radial
+velocity, respectively, associated with the FORMULA -th order angular harmonic. As above, the
+subscripts FORMULA  and FORMULA  are related to the interior and exterior regions of the
+vesicle.
+Applying the Lamb scheme to the sphere FORMULA , one finds for the internal problem
+FORMULA 
+Here, we used the condition FORMULA , following from the relation FORMULA  where FORMULA  is the unit vector perpendicular to the sphere FORMULA . We
+substituted also FORMULA , which is the kinematic relation
+(REF ) taken in the main approximation in FORMULA .
+For the external problem, one should separate the external flow velocity FORMULA  since it
+does not tend to zero as FORMULA . Writing FORMULA , one obtains from the
+Lamb scheme
+FORMULA 
+where, again, we used the incompressibility condition FORMULA  and the
+kinematic relation FORMULA . However, the expressions
+(REF ,) should be modified for FORMULA  because of the external flow. The
+modified incompressibility condition is FORMULA  and
+the modified kinematic condition is FORMULA . The
+modified conditions lead to the expressions
+FORMULA 
+Collecting together the relations (REF -) one finds a closed
+equation for the displacement  FORMULA
+FORMULA 
+where FORMULA  is a dimensionless operator with angular components
+FORMULA 
+We included into Eq. (REF ) a dependence on the rotational part of the external
+flow, which can be established by an account of the non-linear term in the kinematic
+relation (REF ). The FORMULA -axis of our reference frame is implied to be directed
+opposite to the angular velocity FORMULA  of the external flow.
+Recall that the quantity FORMULA  entering the dynamic equation (REF ) through
+Eq. (REF ) is the surface tension FORMULA  averaged over angles. As
+previously, FORMULA  is an auxiliary quantity ensuring the surface conservation law.
+Let us stress that FORMULA  is a function of time adjusting to the current vesicle
+shape. Note that the strain and the rotation parts of the external flow are separated:
+the angular velocity FORMULA  extends the time derivative (its effect is equivalent to
+passing to the rotating reference frame) whereas the strain matrix enters the term
+FORMULA  playing a role similar to the free energy derivative. The reason is that
+the elongational part of the flow leads to some viscous dissipation whereas the solid
+rotation does not imply any dissipation.
+One can further elaborate the equation (REF ). First of all, one can keep in the
+effective free energy (REF ) terms of the second and of the third order in
+FORMULA . Higher order terms in FORMULA  are small since FORMULA . The reason why the third
+order term should be kept besides the second order one is explained above. Next, the
+expansion of the term FORMULA  does not contain any angular harmonics with FORMULA ,
+so this term does not push FORMULA  outside the FORMULA  subspace. Therefore the higher order
+angular harmonics in FORMULA  die out after a finite time due to the last term in
+(REF ). Therefore one can use a reduced equation where FORMULA  contains only second
+order angular harmonics. The operator FORMULA  in this case is reduced to a constant
+FORMULA 
+depending on the viscous ratios. The constant FORMULA  can be called a generalized viscosity
+contrast. Note that the limit FORMULA  (where the viscosity of the internal fluid or
+the membrane viscosity tend to infinity) should correspond to a solid body behavior of
+the vesicle.
+One can substitute the expression (REF ) into the equation (REF ) and then
+project the equation on the subspace FORMULA . Then the equation (REF ) is reduced to
+FORMULA 
+where the subscripts in FORMULA  and FORMULA  designate
+projections to the basis (REF ) calculated in accordance with Eq.
+(REF ).
+
+Rescaled equation
+The factor FORMULA  in Eq. (REF ) should be extracted from the condition FORMULA , which is the area conservation law written in the main
+approximation in FORMULA . Then one obtains
+FORMULA 
+where terms of the order FORMULA  are neglected. In accordance with Eq. (REF ),
+the right-hand side of Eq. (REF ) is a sum of two terms, proportional to FORMULA 
+and to FORMULA . Note that the term proportional to FORMULA , is of the second order in
+FORMULA  (the first order term is absent), that justifies keeping this high-order term in the
+expansion of the free energy.
+Deriving the equation (REF ) we neglected terms of order FORMULA . They are much less
+compared to the term with FORMULA  provided FORMULA . This
+is the applicability condition of the equation. However, below we demonstrate that
+results obtained from the equation (REF ) can be extended to stronger flows.
+After some rescaling the equation (REF ) can be rewritten as
+FORMULA 
+where FORMULA . The parameters in the equation
+(REF ) are defined as follows
+FORMULA 
+where FORMULA .
+The “vector” FORMULA  in Eq. (REF ) has an absolute value FORMULA , given by Eq.
+(), its “direction” is determined by the projections of the object
+FORMULA  to the basis (REF ) that is the “direction” is determined by
+the structure of the strain matrix FORMULA . Therefore the two parameters, FORMULA  and
+FORMULA , together with the “direction” of the “vector” FORMULA  completely determine
+a character of the vesicle dynamics in the external flow.
+The quantity FORMULA  is the characteristic time scale of the vesicle relaxation. In
+comparison with the combination FORMULA , related to the external fluid, the
+time FORMULA  contains an additional factor FORMULA , reflecting the contributions of the
+internal fluid viscosity and the membrane viscosity into the relaxation, and also the
+factor FORMULA . This extra factor reflects the slowness of the second order
+angular harmonic relaxation related to the degeneracy of the second order free energy in
+FORMULA . Due to the degeneracy the relaxation is determined by the third order term in FORMULA  in
+the effective free energy, which contains a smallness FORMULA  in comparison with
+the energy of higher angular harmonics. Therefore the adiabaticity condition, enabling
+one to use the stationary Stokes equation, can be written as FORMULA  that is FORMULA . The inequality is valid
+because of the large value of the radius FORMULA  (in comparison with the molecular length)
+and the small value of FORMULA .
+The parameter FORMULA  characterizes the relative strength of the external flow. The
+expression () for FORMULA  can be explained as follows. The external viscous
+surface force FORMULA  should be balanced by the surface tension FORMULA  times a
+variation of the vesicle curvature which is estimated as FORMULA . Therefore
+FORMULA . As we have established in Subsection
+REF , see Eq. (REF ), the characteristic equilibrium surface
+tension can be estimated FORMULA . Ratio of the
+surface tension values is therefore estimated as FORMULA : FORMULA . The
+applicability condition FORMULA  of the equations
+(REF ,REF ) can be rewritten as FORMULA , in terms of FORMULA .
+The parameter FORMULA  determines the relative strength of the rotational part of the
+external flow. Note, that FORMULA . The condition FORMULA 
+corresponds to the angular velocity whose effect is comparable with the effect of the
+strain, the condition gives FORMULA . This characteristic angular
+velocity does not coincide with the characteristic value of FORMULA , that stresses again
+different roles of the rotational and of the elongational parts of the external flow.
+
+Very strong external flows
+Let us consider the case of very strong external flows, FORMULA , that is
+FORMULA . As we already explained, the membrane surface
+tension, which is determined by the balance between the viscous surface force FORMULA 
+and the product of surface tension FORMULA  and the variation of the vesicle
+curvature FORMULA , is estimated as FORMULA .
+Therefore for the external flows, we consider here, FORMULA . The
+inequality implies that the leading role in the vesicle reaction to the external flow is
+played by the surface tension.
+Based on the inequality FORMULA , one could try to neglect the terms
+with the module FORMULA  in Eq. (REF ) to obtain an equation independent of the
+curvature energy (REF ). That would correspond to omitting the contribution
+FORMULA  in the decomposition (REF ). However, the resulting equation
+is incorrect. First, there are additional terms in the equation for FORMULA , originating from
+the regular expansion over FORMULA  and related to an account of deviations of the vesicle
+shape from the sphere FORMULA . The additional terms, which can be estimated as FORMULA , are
+of the same order as kept in Eq. (REF ). We ignored the terms in the equation
+(REF ) for FORMULA  at FORMULA  since then the term FORMULA  is small. Now the additional terms should be taken into account. Second, as we will
+see in the case of the planar flow, the truncated equation (without FORMULA -terms)
+cannot be used for describing the vesicle dynamics because of its internal properties.
+If the terms with the module FORMULA  are neglected in the boundary conditions
+(REF ,) then they appear to be invariant under the transformation
+FORMULA . The stationary Stokes equation
+FORMULA  and the boundary condition (REF ) are also
+invariant under the transformation. The kinematic relation (REF ) becomes
+invariant under the transformation if one adds the rule FORMULA . Therefore, in this
+approximation the backward in time evolution of the displacement FORMULA  is equivalent to the
+direct evolution in the external flow with the velocity FORMULA . Since the vesicle
+dynamics is determined by the matrix (REF ), the transformation FORMULA 
+is equivalent to space inversion. That produces some additional symmetry leading to
+essential consequences for planar velocity fields.
+
+Planar velocity field
+In this section we discuss in more details the case of a planar external velocity field,
+when the velocity vector FORMULA  lies in a plane and is independent of a coordinate
+normal to the plane. Then the velocity gradient matrix FORMULA  has nonzero
+elements only in the plane being a FORMULA  matrix. We choose FORMULA  and FORMULA  axes of our
+reference system parallel to the plane and assume without the loss of generality that the
+diagonal elements of the matrix FORMULA  are zero. Two non-diagonal components of
+the matrix FORMULA  completely determine the flow, they can be parameterized in
+terms of the strain FORMULA  and the angular velocity FORMULA  as FORMULA 
+and FORMULA . In particular, for an external shear flow the only
+nonzero element of the matrix is FORMULA  and FORMULA .
+For a planar velocity field, the only nonzero element of FORMULA  in Eq. (REF ) is
+FORMULA . Thus only two parameters in Eq. (REF ), FORMULA  and FORMULA , completely
+determine the type of the vesicle dynamics. One of the main goals of this paper is to
+construct a “phase diagram” in the plane FORMULA , which indicates a type of the
+vesicle motion for a given pair of these parameters.
+Very strong flows, characterized by FORMULA  need a special consideration due
+to the reasons formulated above. It is presented in a separate subsection. Surprisingly,
+the case can be analyzed in the framework of the same equations
+(REF ,REF ).
+General consideration
+For the planar flow, it is convenient to pass from the variables FORMULA  ()
+to another set of variables, “angles” FORMULA , defined as
+FORMULA 
+where FORMULA  varies from FORMULA  to FORMULA  and FORMULA  varies from 0 to FORMULA . The
+representation (REF ) satisfies the normalization condition
+() and, correspondingly, consists of four variables instead of five
+components FORMULA .
+As follows from the equations (REF ), there is a solution with FORMULA . Actually,
+it is a consequence of general symmetry FORMULA , which is present in the
+vesicle equations in the planar flow. Due to this symmetry, there exists a symmetric in
+FORMULA  solution of FORMULA , that corresponds to FORMULA  as it follows from Eqs.
+(REF ,REF ,REF ). A special analysis is required to
+analyze the stability of the solution. Our numerical simulations demonstrated the
+stability. That is why we mainly limit ourselves to the investigation of this case. At
+FORMULA  the displacement FORMULA  is
+FORMULA 
+Therefore the “angle” FORMULA  characterizes the vesicle orientation in the FORMULA  plane
+whereas the “angle” FORMULA  determines the vesicle shape. In the case FORMULA  the system
+of equations (REF ) is reduced to the following two equations
+FORMULA 
+Note that the last, nonlinear in FORMULA , summand in (REF ) produces the term
+FORMULA  in Eq. (REF ) and no term in Eq. ().
+FIGURE 
+FIGURE 
+Let us find a region of parameters FORMULA  and FORMULA  where the equations
+(REF ,) admit stable stationary points, the case corresponds
+to the tank-treading vesicle motion. Equating to zero the right hand sides of the
+equations, one finds relations determining a stationary point (for given parameters FORMULA 
+and FORMULA ). In order to investigate its stability one should linearize the equations
+(REF ,) near the stationary point to obtain
+FORMULA 
+The stationary point is stable, if both eigenvalues of the matrix FORMULA  have negative
+real parts. Thus the stability conditions are FORMULA  and FORMULA .
+A region in the FORMULA -FORMULA  plane where stationary stable points exist is shown on the
+Fig. REF . The region below the line FORMULA 
+corresponds to positive values of FORMULA . The tank-treading regime above the line
+FORMULA  leads to negative values of FORMULA  for FORMULA .
+For the upper region in Fig. REF  the attractors of the system
+(REF ,) are limit cycles. They correspond to either tumbling
+or trembling behavior. The difference is illustrated in Fig. REF  where the
+FORMULA  atlas is plotted. The tumbling regime corresponds to a cycle separating the
+atlas into two regions each containing a pole FORMULA , and the trembling regime
+corresponds to a cycle separating the atlas into two regions one of which does not
+contain any of the poles. In the tumbling regime the “angle” FORMULA  grows without a
+limit whereas in the trembling regime it varies in a restricted domain. A transition line
+from tumbling to trembling, obtained numerically, is depicted by a dashed line in Fig.
+REF .
+The diagram has a complicated structure near the special point FORMULA ,
+FORMULA . A vicinity of the point is depicted on Fig. REF ,
+where the regions of coexistence of two different stable points and of a stable point and
+of a limit cycle are shown. More detailed description is given below.
+To avoid a misunderstanding, note that there is an additional region in the FORMULA 
+plane where stationary solutions exist, which are stable in terms of the variables
+FORMULA  and FORMULA . However, a stability investigation in the framework of the complete
+equation (REF ) shows that these solutions are unstable in the extended space
+with the variables FORMULA  and FORMULA . Therefore these solutions cannot be realized as the
+tank-treading motion in real systems.
+
+Tank-treading to trembling transition
+The tank-treading to trembling transition is determined by the condition FORMULA . The corresponding curve on the FORMULA  plane starts from the above special
+point FORMULA , FORMULA  (the point FORMULA  on Fig. REF ) and
+goes to the right. This curve, marked as red, is described by the equation
+FORMULA 
+where FORMULA  varies from FORMULA  to FORMULA . Above the red curve, at FORMULA , the stationary point loses its stability via a Hopf bifurcation. Let us
+establish characteristics of the bifurcation.
+Expanding the equations (REF ,) near the point (REF ),
+one finds the equation for a complex variable  FORMULA
+FORMULA 
+where
+FORMULA 
+The variable FORMULA  is expressed via the deviations of the “angles” from their stationary
+values as
+FORMULA 
+Above the transition line, at FORMULA , the vesicle motion is described by
+a limit cycle with the radius proportional to FORMULA , near the
+transition curve. This motion corresponds to trembling since the radius is small, and the
+corresponding limit cycle cannot surround a pole, see the atlas in Fig.
+REF .
+Note the critical dependence of all parameters in Eq. (REF ) on FORMULA . Taking
+into account the critical dependence, one concludes that near the line the amplitudes of
+the FORMULA  and FORMULA  variations can be estimated as FORMULA ,
+without a critical dependence on FORMULA .
+A vicinity of the special point FORMULA  needs an additional analysis since the frequency
+FORMULA  of the Hopf bifurcation tends to zero at the point and the
+approximation leading to the equation (REF ) is not valid there.
+
+Tank-treading to tumbling transition
+The transition from tank-treading to tumbling is determined by the condition
+FORMULA . The transition curve on the FORMULA  plane, designated as orange,
+has a complicated shape, it can be described in a parametric form
+FORMULA 
+where the parameter FORMULA  varies from FORMULA  upto FORMULA . The boundary
+value FORMULA  corresponds to the above special point FORMULA ,
+FORMULA , and the boundary value FORMULA  corresponds to the point
+FORMULA , FORMULA . The expression for FORMULA  has a maximum at FORMULA , for FORMULA  close to FORMULA  we obtain FORMULA . The value FORMULA  corresponds to the turning point FORMULA  on
+Fig. REF .
+To be more precise the condition FORMULA  determines a stability boundary of
+the tank-treading regime. The region of parameters FORMULA ,
+determining the part of the orange curve going from the point FORMULA  to the point FORMULA ,
+corresponds to a transition from one tank-treading regime to another one. That is why the
+dark green region on Fig. REF  corresponds to coexisting two
+tank-treading regimes. At passing from the region through the red curve the Hopf
+bifurcation occurs. However, the bifurcation takes place for one of two possible
+tank-treading regimes, the other one remains stable. Therefore there exists a region of
+coexistence of the tank-treading and trembling, the region is marked as fuchsia on Fig.
+REF . Its left boundary, corresponding to an instability of the
+trembling motion, is found numerically.
+Let us consider now the region of parameters FORMULA , giving the upper
+part of the orange curve. We are interested in the dynamics of the deviations
+FORMULA , FORMULA  from the stationary values of the “angles”. An analysis
+shows that there exists a linear combination FORMULA  of the deviations possessing a slow
+dynamics, that is the characteristic relaxation time of FORMULA  scales as
+FORMULA  where FORMULA  and FORMULA  is the
+value of the parameter FORMULA  at the transition curve, determined by the expressions
+(REF ). Then, using adiabaticity, it is possible to formulate a closed equation
+for the parameter FORMULA  which is
+FORMULA 
+valid at small FORMULA  and FORMULA . The expression (REF ) is characteristic of
+a saddle-node bifurcation.
+The parameters of the saddle-node bifurcation (REF ) have critical behavior near the
+boundary points FORMULA  and FORMULA  which can be expressed as
+FORMULA 
+where FORMULA  and FORMULA  are functions of FORMULA  varying less than by FORMULA  as FORMULA 
+runs from FORMULA  to FORMULA . In the normalization where FORMULA  one finds FORMULA  and FORMULA  at FORMULA .
+The function FORMULA  tends to zero as FORMULA . Therefore higher order terms in
+the equation for FORMULA  should be taken into account near the point.
+The limit cycle which is a result of the saddle-node bifurcation, destroying the
+tank-treading regime, could be unstable in its turn. The situation is realized between
+the points FORMULA  and FORMULA , see Fig. REF . Above the segment FORMULA  a
+final result of the instability is another tank-treading regime continuously continuing
+to larger FORMULA . Above the segment FORMULA  it is trembling, characterized by a limit cycle
+which does not pass through the stationary point. After the point FORMULA  (to the left from
+the point) the tank-treading regime is destroyed and a limit cycle passing through the
+stationary point is formed. Above the segment FORMULA  the cycle corresponds to
+trembling, otherwise it corresponds to tumbling.
+Both functions, FORMULA  and FORMULA , tend to zero as FORMULA . This is the limit
+of weak external flows, where the vesicle relaxation rate is proportional to the strength
+of the flow. Then the right-hand side of the equation should be proportional to FORMULA  which
+behaves like FORMULA  as a consequence of Eq. (REF ). That
+explains the dependence FORMULA . However, the limit of weak
+flows needs an additional analysis since, in accordance with results of Subsection
+REF , there are two soft degrees of freedom corresponding to rotations of
+the equilibrium uniaxial ellipsoid. We postpone the analysis to the next section.
+
+Limit cases
+We established a general picture of the vesicle dynamics in an external flow which
+appears to be rich of different types of behavior. Particularly, the phase diagram
+depicted in Fig. REF  contains different domains and has a
+complicated structure. The situation is simplified for different limiting cases which can
+be analyzed in more detail.
+For example, the equation () leads to the conclusion that in the case
+FORMULA  the vesicle rotates with the angular velocity FORMULA . For external
+flows with comparable strain and rotational parts vesicle rotation is quite natural,
+since in accordance with the definition () the limit FORMULA  is
+achieved either at FORMULA  or at FORMULA . The first case corresponds to a solid body
+behavior of the vesicle, so one should reproduce the classical Jeffery's result
+{{cite:b5e9e86f-0f71-426b-a7e8-08d73f8fb0d7}}, which predicts, that for external flows with FORMULA  the
+tumbling regime supersedes the tank-treading one. The second case corresponds to a purely
+rotational external flow, where the fluid rotates as a whole with all inclusions.
+Below, we analyze more complicated limit cases.
+Purely elongational flow
+The purely elongational flow is realized provided the angular velocity FORMULA  is equal
+to zero, that is FORMULA . Therefore, in our designations,
+the elongation is directed along the main diagonal in the FORMULA  plane.
+The condition FORMULA  leads to FORMULA , in accordance with the definition
+(). In this case the system of equations (REF ,)
+has a stable stationary point FORMULA , determined by the relations
+FORMULA 
+The “angle” FORMULA  monotonically decreases from FORMULA  to zero as FORMULA  increases
+from zero to infinity. The value FORMULA  is quite natural since it corresponds to
+the vesicle orientation along the elongation direction, as is seen from Eq.
+(REF ).
+The stability of the point (REF ) can be easily established from the linearized
+equations
+FORMULA 
+In the limit FORMULA  both “angles” relax to their equilibrium values with the same rate
+FORMULA .
+Recently a wrinkling effect was observed in purely elongational flows at a sudden
+invertion of the elongation direction, see Ref. {{cite:3da4a203-8210-42aa-a5fe-fc72f32e1e9d}}. The effect can be explained
+in the framework of our scheme, the corresponding analysis is presented in Ref.
+{{cite:19fd9da6-076c-445e-8931-4a2cf0e89aa6}}.
+
+Weak external flows
+Let us consider weak external flows characterized by the condition FORMULA . We have
+already discussed the case in Section REF  from the phenomenological point
+of view. We can analyze the case in terms of the “angles” FORMULA  and FORMULA  and then
+establish a value of the phenomenological constant FORMULA , introduced in Eq. (REF ).
+As follows from Eq. (REF ), for FORMULA  the “angle” FORMULA  is close to
+FORMULA , which is a stable point of the equation. Substituting the value FORMULA 
+into Eq. () one obtains a closed equation for the “angle”  FORMULA
+FORMULA 
+If FORMULA  then the equation (REF ) has a stationary point
+FORMULA 
+which is stable. Otherwise FORMULA  increases unlimited, that corresponds to the tumbling
+regime. Therefore FORMULA  is the transition point from tank-treading to
+tumbling.
+If FORMULA  then the expression (REF ) describes a prolate uniaxial
+ellipsoid with the principal axis directed along the vector (REF ) with
+FORMULA  and FORMULA . Comparing then the equation (REF ) with Eq.
+(REF ) (obtained for a shear flow with FORMULA ) one finds
+FORMULA 
+As it should be, the transition point FORMULA  from tank-treading to tumbling corresponds to
+FORMULA . Let us stress that the value (REF ) is independent of the
+character of the external flow. Therefore the equation (REF ) with (REF )
+is correct for any external flow FORMULA .
+Note that in the “solid body” limit FORMULA  (where the viscosity of the internal
+fluid or the membrane viscosity tend to infinity) the quantity FORMULA  tends to zero. Account
+of higher order terms in FORMULA  gives, that in the solid limit FORMULA  stops decrease at
+value order of FORMULA . Diminishing of FORMULA  leads to a solid rotation of the
+vesicle in particular case of external shear flow as follows from Eqs.
+(REF ,). The behavior corresponds to the classical result of Jeffery
+{{cite:b5e9e86f-0f71-426b-a7e8-08d73f8fb0d7}}, who demonstrated that a solid ellipsoid rotates in an external planar
+flow, provided FORMULA .
+
+Strong external flows, truncated equations
+In the case of strong external flows, where FORMULA  is large, the last (non-linear in FORMULA )
+term in the right-hand side of Eq. (REF ) is small in comparison with the first
+one. If to omit this last term we pass to a truncated equation. In terms of the variables
+introduced by Eq. (REF ) the truncated equation is written as a system
+of equations
+FORMULA 
+homogeneous in FORMULA . The system (REF ) corresponds to the limit case considered
+by Misbah {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}} and Vlahovska and Gracia {{cite:1f80401d-2658-436b-a966-fd29e7ac52bb}}. In the subsection we examine
+solutions of the system (REF ). A relation to observable behavior of vesicles,
+which is not straightforward, is discussed in the next subsection.
+The system (REF ) leads to conservation of two quantities, FORMULA  and an
+additional integral FORMULA , which can be introduced via the relation
+FORMULA 
+For definiteness, we choose a root of the equation (REF ) lying in the domain
+FORMULA . Existence of two integrals of motion, FORMULA  and
+FORMULA , implies that a character of an evolution, described by the system
+(REF ), depends on initial conditions (determining the values of the
+integrals).
+Thanks to existence of two integrals of motion, the system of equations (REF )
+can be completely integrated. For the purpose we introduce a variable
+FORMULA 
+It turns out, that for arbitrary initial conditions a solution passes through a point,
+where FORMULA . It is convenient to choose initial time, FORMULA , as a moment, when FORMULA  and FORMULA . Then the initial conditions are FORMULA  and
+FORMULA  and one derives from the system (REF ) the following
+equation
+FORMULA 
+which can be obviously solved explicitly. The parameters FORMULA  and FORMULA  are
+expressed via the variables FORMULA  and FORMULA  as
+FORMULA 
+FIGURE 
+A solution of the equation (REF ) behaves differently at FORMULA  and at
+FORMULA . At FORMULA  the variable FORMULA  trends to infinity as time grows, thus
+FORMULA  has its utmost value be equal to FORMULA , that corresponds to a stable
+point (tank-treading behavior). At FORMULA  the variable FORMULA  experiences
+oscillations. Then one conclude from Eqs. (REF -REF ), that the
+vesicle evolution is described by a limit cycle, its characteristics are determined by
+values of the integrals FORMULA  and FORMULA . If the angle FORMULA  grows (decreases)
+unlimited, the vesicle is in the tumbling regime. On the contrary, if FORMULA  is bounded,
+one deals with the trembling regime. It is convenient to represent vesicle dynamics as a
+geographic atlas, where FORMULA  and FORMULA  play roles of latitude and longitude,
+correspondingly, see Fig. REF . The trembling regime corresponds to a
+closed curve on the FORMULA -FORMULA  atlas, which does not surround a pole. The tumbling
+regime corresponds to a curve separating the poles. In Fig. REF  such
+curves terminate at the boundaries of the atlas having the same FORMULA  on the ends,
+since points on the right and on the left boundaries of the atlas with the same latitude
+are physically identical. For the truncated system (REF ) the tumbling and
+trembling regimes coexist at any FORMULA . A choice between the regimes is determined
+by a value of FORMULA . If FORMULA , then the limit cycle
+corresponds to tumbling, otherwise the cycle corresponds to trembling. If FORMULA 
+takes one of its boundary values, that is if FORMULA , then the limit
+cycle degenerates into a point
+FORMULA 
+Thus, the truncated system of equations (REF ) has two stationary points
+corresponding to the tank-treading regime.
+
+Strong external flows, slow dynamics
+We demonstrated that the truncated system of equations (REF ) can be
+completely integrated. However, the system cannot be directly used for an analysis of the
+vesicle dynamics in the limit of strong shears FORMULA . Indeed, the system leads to a
+dependence of its solution on initial conditions and admits different limit cycles for
+any FORMULA . Both these properties contradict obviously to the results obtained in
+Subsec. REF . The contradiction is resolved if one restores the terms
+omitted in the truncated system (REF ) and originating from the last
+(non-linear in FORMULA ) term in the right-hand side of Eq. (REF ). The restored terms
+provide a relatively slow evolution of both integrals of motion, FORMULA  and FORMULA ,
+which leads to a well defined behavior, independent of the initial conditions.
+Our nearest goal is to deduce the equations of motion for FORMULA  and FORMULA . We
+consider the case FORMULA  where the truncated system of equations (REF )
+leads to limit cycles. Then, analyzing the complete system of equations, one can separate
+fast motion along the limit cycles and relatively slow evolution of the integrals of
+motion on scales larger than the cycle period. Note, that a typical time of the fast
+dynamics is FORMULA  whereas a typical time of the slow dynamics is FORMULA , the
+large ratio of the times justifies the separation. The equation controlling the slow
+evolution can be found by averaging over the cycle period of the expressions for the time
+derivatives of FORMULA  and FORMULA  obtained from the complete system (REF ). At
+this averaging, one can use the fast dynamics described by the system (REF ).
+The result can be schematically represented in the form FORMULA , FORMULA . Explicit
+expressions for FORMULA  and FORMULA  are quite cumbersome, so we do not present
+here its final form.
+One can check, that the ultimate value of FORMULA  is equal to zero at any FORMULA . That
+is why below we consider the case FORMULA , and find the slow dynamics for the quantity
+FORMULA  at the condition. Then FORMULA  is a function of FORMULA  and
+FORMULA , the function can be found from Eqs.
+(REF ,,REF )
+FORMULA 
+where angular brackets mean averaging over the cycle period. The evolution of FORMULA 
+described by the equation FORMULA  leads to a stationary value
+which can be found from the equation FORMULA . The value corresponds to a limit
+cycle, which is stable provided FORMULA . In
+accordance with the analysis, made in the previous subsection, a character of the limit
+cycle depends on the value of FORMULA . If FORMULA , then
+the limit cycle corresponds to tumbling, otherwise the cycle corresponds to trembling. A
+numerical investigation based on Eq. (REF ) shows that the boundary value of
+FORMULA , FORMULA , is achieved at FORMULA , larger FORMULA  correspond to tumbling, smaller FORMULA  correspond to
+trembling.
+At FORMULA  all the limit cycles appear to be unstable. That means that the
+condition the stationary point (REF ) appears to be an attractor. Thus, the
+system falls to the stationary point that corresponds to the tank-treading regime. Note
+that the position of the stationary point is slightly shifted due to the presence of the
+additional term in the equation for FORMULA  (REF ). The new position is
+FORMULA 
+in the main approximation in FORMULA . A correction to the value FORMULA  is of the order FORMULA .
+
+Extremely strong flows
+The above analysis is, strictly speaking, correct for flows characterized by FORMULA . For stronger flows, FORMULA , our consideration should
+be extended. Some additional terms of the higher order in FORMULA  should be taken into
+account in the equation for FORMULA , which for FORMULA  are larger than
+those kept in Eq. (REF ). Leading terms of such kind can be estimated as FORMULA ,
+they originate, say, from account of deviations of the vesicle shape from a spherical
+one. The terms are associated with the contribution FORMULA  to the membrane
+velocity, whereas the second term in the right hand side of Eq. (REF ) is
+associated with the contribution FORMULA  to the membrane velocity, see Eq.
+(REF ).
+However, there is an essential difference between the terms FORMULA  and FORMULA . If one omits the term FORMULA  then there appears a symmetry of
+the vesicle dynamics expressed in terms of the equation for FORMULA , which is invariant under
+simultaneous time and space invertions, see Subsection REF . Since the axes
+of our reference system are attached to the eigen vectors of the strain matrix FORMULA ,
+the space inversion is equivalent to the transformation FORMULA ,
+FORMULA , that is it can be written as FORMULA  and FORMULA  in
+terms of the “angles” (REF ). Therefore the equations for FORMULA 
+and FORMULA  should be invariant under the transformation
+FORMULA 
+One can easily check that the truncated equations (REF ) are invariant under
+the transformation (REF ). However, our analysis demonstrated that the symmetry
+survives even though higher in FORMULA  terms will be taken into account provided
+FORMULA .
+If small in FORMULA  corrections to the truncated equation (REF ) will be taken
+into account then the system of limit cycles, characteristic of this equation at
+FORMULA , will survive with small perturbations. Next, if the term FORMULA 
+in the expression (REF ) is neglected all the limit cycles will be neutral
+(they are no stable, no unstable). Indeed, the cycle passing through a point
+FORMULA  cannot be stable, since then due to the symmetry (REF ) it
+should remain stable after the time inversion. Thus, the corrections to the truncated
+equation (REF ) keep its main property which is an existence of an additional
+integral of motion (leading to the neutrality of the limit cycles).
+Thus only the term FORMULA  proportional to FORMULA  can destroy the
+integrability corresponding to the neutral limit cycles. It produces a selection leading
+to stable limit cycles or to stable stationary points. Since the selection is produced
+among limit cycles slightly disturbed in comparison with the ones corresponding to the
+truncated equation (REF ), the results will be the same in the main
+approximation in FORMULA . Thus the above results obtained for strong flows can be
+immediately extended to the extremely strong flows, where FORMULA .
+
+Conclusion
+We have investigated dynamics of nearly spherical vesicles in an external stationary
+flow, being mainly focused on the shear flow. The general calculational scheme developed
+for nearly spherical vesicles enabled us to analyze the dynamics in detail. The scheme is
+based on solving the FORMULA  hydrodynamic (Stokes) equations with boundary conditions posed
+on the membrane. Besides the membrane bending elasticity we have taken into account the
+internal membrane viscosity, leading to an additional dissipation mechanism.
+There are essentially different regimes of the vesicle dynamics dependent on a relation
+between the strain of the external flow and the vesicle relaxation rate. In the weak
+flows the vesicle shape is close to an equilibrium one which is a prolate ellipsoid. Then
+a role of the external flow is reduced mainly to an orientation of the ellipsoid. In the
+strong flows the vesicle shape and orientation are determined by the flow. We established
+the vesicle behavior for different strengthes of the external flow including its
+orientation relative to the external velocity.
+The most interesting phenomenon in the vesicle dynamics is transition to tumbling regime
+which occurs at increasing the generalized viscous contrast (REF ) or at increasing
+the rotational component of the external flow. We demonstrated that in weak flows a
+direct transition from tank-treading to tumbling occurs whereas in strong flows an
+intermediate regime, trembling, is realized. The behavior is in accordance with
+experiment of Kantsler and Steinberg {{cite:4878bb8b-63ca-468c-b288-d44f7f8bb70c}} and corresponds qualitatively to
+numerics of Noguchi and Gompper {{cite:a3ae7534-b4cf-4280-8b50-47ef841fc62a}}. The phase diagram we obtained is plotted in
+Fig. REF  where the variables FORMULA  and FORMULA  are some
+combinations of observable quantities ().
+The possibility of an intermediate regime between tank-treading and tumbling was
+discussed theoretically, first by Misbah {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}} and then (qualitatively) by Noguchi
+and Gompper {{cite:a3ae7534-b4cf-4280-8b50-47ef841fc62a}}. Note, however, that the calculational scheme used by Misbah
+{{cite:af951c50-d663-42a2-9d29-20d913ec21fd}} and then by Vlahovska and Gracia {{cite:1f80401d-2658-436b-a966-fd29e7ac52bb}} is not self-consistent though
+formally the authors have taken into account principal terms of the equation for the
+vesicle distortions. The situation cannot be improved by introducing higher order terms
+related to the external flow. And only after introducing higher order terms related to
+the membrane bending elasticity into the equation it enables one to find, say, boundaries
+of the region where the trembling regime is realized.
+The transitions tank-treading to tumbling and tank-treading to trembling have essentially
+different scenarios. The first transition is described as a saddle-node bifurcation
+whereas the second one is described as a Hopf bifurcation. Our theory predicts existence
+of a special point on the diagram where the two above transition lines merge. One expects
+an essential “critical” slowness of the vesicle dynamics near the point. Therefore it
+plays a role analogous to some extent to the critical point on fluid phase diagram.
+Near the transitions thermal fluctuations are relevant which smear the transitions. One
+expects that the effect is especially strong near the special point on the phase diagram.
+Role of the thermal fluctuations, which can be examined in the spirit of the works
+{{cite:a5a1fcc1-da07-4d17-8f5b-ee18c080527e}}, {{cite:da6a11fd-37de-4f06-92ed-dda337ce3dc1}}, {{cite:59bc0613-9ecd-426e-9c59-df267f203b77}}, constitutes a subject of special investigation, to be done
+separately. Here we note only, that due to fluctuations one should be careful in
+comparison an experiment with the phase diagram obtained in our work since the diagram is
+deduced ignoring the fluctuations.
+It is worth to mention the effect, related to the thermal fluctuations, recently
+discovered by Kantsler et. al. {{cite:3da4a203-8210-42aa-a5fe-fc72f32e1e9d}}. It was shown that the relaxational dynamics
+of a vesicle in external elongational flow is accompanied by the formation of wrinkles on
+a membrane. Theoretical investigation of this effect presented in {{cite:19fd9da6-076c-445e-8931-4a2cf0e89aa6}} was based
+on the theory, developed in this paper. It was shown that the formation of wrinkles is
+related to the dynamical instability induced by negative surface tension of the
+membrane.
+We investigated nearly spherical vesicles assuming that the excess area factor FORMULA 
+is small. It enables one to formulate a powerful calculational scheme enabling to find
+details of the vesicle dynamics analytically. We have doubts that the scheme can be
+generalized for a general case FORMULA . Probably, the case can be investigated only
+numerically. However, the general approach should be the same: one has to solve the
+stationary Stokes equation inside and outside the vesicle with the boundary conditions
+(REF ,REF ,) at a given vesicle shape and then to use the
+equation (REF ) to formulate an equation for membrane distortions.
+We wish to thank V. Kantsler, I. Kolokolov, and V. Steinberg for numerous valuable
+discussions. This work has been partially supported by RFBR grant 06-02-17408-a and joint
+RFBR-Israel grant 06-02-72028. KT and SV acknowledge the financial support from
+“Dynasty” and RSSF foundations.
+
+General dynamics
+In the appendix we present the derivation of Equation (REF ). For brevity we
+introduce viscosity contrast parameter FORMULA  and surface viscosity
+parameter  FORMULA
+At low Reynolds numbers velocity field of fluid is completely determined by the boundary
+conditions. One can solve the Stokes equation (REF ) inside and outside the
+vesicle membrane with boundary conditions on the membrane and a fixed boundary condition
+at the infinity (REF ). This allows one to exclude the fluid motion and arrive
+to the close equation onto membrane surface. On the way one obtains integral equation,
+describing membrane surface motion {{cite:69049448-8890-437f-a8eb-9336175df386}}, {{cite:eaaa7a22-dd08-40a7-b3ac-1d73583ceebc}}. Further analytical progress
+is possible only at the limit FORMULA , when it is possible to expand the equation
+describing the membrane dynamics in series over FORMULA . This expansion has no regular
+limit at FORMULA . Physically, exactly spherical vesicle can not conserve
+its volume and area in arbitrary small external flow: to describe the vesicle behavior in
+an external flow one should restore final surface compressibility of the vesicle
+membrane. As a consequence, expansion series of some quantities, which depend on the
+vesicle shape, starts from zero or even negative order in FORMULA  terms.
+First derivation of this type of equation was presented in {{cite:8a372ced-209c-46f0-a308-bc0c14b636d1}} in particular case
+of equal inner and outer viscosities, FORMULA  and zero surface viscosity,
+FORMULA  (see also further generalizations {{cite:af951c50-d663-42a2-9d29-20d913ec21fd}}, {{cite:1f80401d-2658-436b-a966-fd29e7ac52bb}}, where case
+FORMULA  was considered). To proceed to the derivation, let us first exclude fluid
+motion inside and outside the vesicle. We parameterize velocity field inside and
+perturbed part of velocity field FORMULA  outside the vesicle by the functions
+FORMULA 
+correspondingly. The functions (REF ) are functions of spherical angles
+FORMULA , FORMULA . Procedure of restoration of velocity field into the bulk from the
+functions is known as Lamb solution. The physical meaning of the functions
+(REF ) is the following. On a sphere with the radius FORMULA  the components
+of velocity and vorticity fields are given by
+FORMULA 
+where FORMULA  is vorticity. Using the Lamb solution one can make analytical
+continuation of the velocity into whole interior of the vesicle. We expand each of
+functions (REF ) into series over spherical harmonics: for example,
+FORMULA 
+where FORMULA  runs from FORMULA  to FORMULA . Assuming that the velocity field is a regular function
+inside the sphere, one finds by solving of (REF ) that
+FORMULA 
+where
+FORMULA 
+FORMULA 
+FORMULA 
+In (REF -REF ) the summation goes over FORMULA  as well, although we omit
+it in the equatoins for brevity. The pressure field
+FORMULA 
+is induced only by the last velocity component in (REF ).
+Curvilinear coordinates
+In the Appendix we use the curvilinear coordinates for the vector quantities in contrast
+to the main text, where we used cartesian coordinates for clarity. Let us parametrize the
+vesicle surface by two internal coordinates FORMULA . Leaving indices FORMULA 
+for vector quantities, written in cartesian coordinates, we identify vector quantities,
+projected onto the membrane surface and written in the internal coordinates by indices
+FORMULA . We denote the metric and curvature tensors as FORMULA 
+and FORMULA  correspondingly. Recall, that by definition the mean curvature of
+the membrane is given by FORMULA , where as usual we assume
+summation over repeating indices. Also we introduce covariant derivative on the surface
+FORMULA , and for any quantity, for example FORMULA ,
+we use the notation FORMULA .
+Force balance equations (REF ,), written in the curvilinear
+coordinates, have the following form:
+FORMULA 
+FORMULA 
+where FORMULA  is doubled symmetric part of velocity gradient, in Cartesian
+coordinates FORMULA  and brackets
+FORMULA  denote the difference between the “inside" and “outside"
+values. The index “m" near vertical line indicates, that the equations are written on
+the membrane surface.
+We choose the two spherical angles as the internal coordinates, see (REF ).
+While developing a perturbation theory over FORMULA , it is convenient to use the method
+of domain perturbations, and to use the sphere with the radius FORMULA , parameterized by
+the spherical angles, as intermediate surface. Each point on the membrane surface
+corresponds to a point on the sphere with radius FORMULA , having the same spherical angles.
+To distinguish vector quantities and equations, defined on the intermediate surfaces, we
+write index “s" near vertical curve instead of index “m" for the membrane surfaces, see
+for example (REF ). Any quantity defined in a bulk or on a membrane
+surface can be represented as a taylor expansion through its value and its derivatives
+defined on a intermediate sphere. This method is well defined for quasi-spherical
+membranes with FORMULA .
+For the sphere we introduce one more object – directional derivative, defined by the
+equation
+FORMULA 
+where FORMULA  is antisymmetric unit symbol, FORMULA . Also we
+denote Beltrami-Laplace operator on the sphere as FORMULA , such that
+FORMULA  is Beltrami-Laplace operator on unit sphere.
+
+Utilization of Lamb solution.
+In this subsection we express a list of quantities, which are involved in process of
+satisfying of boundary conditions, through functions (REF ). We use the
+following notations. Suppose function FORMULA  is a function of spherical angles FORMULA ,
+FORMULA  and FORMULA  is some function of angular harmonics FORMULA . Then linear
+operator FORMULA  is defined as
+FORMULA 
+Also we introduce linear operator FORMULA , whose definition can be obtained
+from (REF ) through replacing FORMULA . Also we denote
+FORMULA 
+We need in pressure, velocity and some components of symmetric part of velocity gradient
+FORMULA  on sphere with radius FORMULA . Here we list all quantities on inner side
+of the sphere, omitting index FORMULA . Quantities on outer side of the sphere can be
+obtaining by changing FORMULA  and plugging functions (REF ) with
+index FORMULA . Pressure inside is
+FORMULA 
+where
+FORMULA 
+The velocity is given by
+FORMULA 
+We represent the local value of the surface tension as FORMULA , where FORMULA  does not depend on angles FORMULA  and the
+integral of FORMULA  over the angles is zero. The reason of the division is
+different scaling laws of parts FORMULA  and FORMULA  with FORMULA : expansion
+of the quantities in series over FORMULA  are
+FORMULA 
+where lower index FORMULA  near a term corresponds to the term scaling as FORMULA .
+Let us find equation of motion in zero order in FORMULA . Surface
+incompressibility, i.e. continuity of FORMULA  reads
+FORMULA 
+where FORMULA , definition of FORMULA  is
+FORMULA 
+Continuity of FORMULA  leads to
+FORMULA 
+where again FORMULA . For continuity of normal component of vorticity one
+should assume
+FORMULA 
+where FORMULA  and FORMULA  is unit vector
+on sphere having radius FORMULA . Membrane incompressibility condition yields the equation
+FORMULA 
+Relation between the velocity field and the dynamics of the vesicle shape has the form
+FORMULA 
+In order to derive the dynamic boundary conditions (REF ) and (), we
+should use the expansion of local mean FORMULA  and Gaussian FORMULA  curvatures in
+FORMULA :
+FORMULA 
+Now we have determined all the objects required to write down (REF ) and
+() in the main approximation over  FORMULA
+FORMULA 
+Values of first terms in (REF ) and () should be taken from
+() and () correspondingly. In the approximation
+FORMULA , it is convenient to obtain the statement using the directional
+divergence (REF ) of Eq. (): the resulting equation is
+a linear homogeneous equation on FORMULA . Taking simple divergence of Eq.
+(), one can find alternating part of the surface tension
+FORMULA 
+Substituting (REF ) it into (REF ) one eventually obtains:
+FORMULA 
+Surface tension FORMULA  can be obtained from the membrane area conservation law
+in the main approximation, FORMULA . Formally, FORMULA  in
+(REF ) is order of 1, that is reflected by low index “0". Note,
+that rotational part of external flow FORMULA  does not entered in
+(REF ). This is the consequence of the fact, that the rotational
+part of the external flow enters in the exact equation on FORMULA  though extension of time
+derivative, FORMULA , that is
+corrections from FORMULA  to (REF ) are formally order of
+FORMULA .
+
+Corrections order of FORMULA .
+In this subsection we find the first corrections in FORMULA  to the equation of
+motion (REF ). One should repeat the steps
+(REF ,REF ,REF ,
+REF ,REF ,), accounting next order in FORMULA 
+and find correction FORMULA  order of FORMULA  to FORMULA 
+(REF ).
+In the main approximation we required (REF ), that
+FORMULA  on the sphere with radius FORMULA .
+Here low index “0" stands for contribution from FORMULA , see definition
+(REF ), whereas low index “1" in (REF ) corresponds to
+contribution from FORMULA . Quantity FORMULA  calculated on the membrane surface
+through found coefficients FORMULA , differs from that on the sphere:
+FORMULA 
+where summation index FORMULA  corresponds to contribution order of FORMULA . Thus
+continuity of normal velocity component FORMULA  in first order in FORMULA  looks
+like
+FORMULA 
+where indices “s" and “m" stands for sphere surface and membrane surface
+correspondingly. Condition can be rewritten as
+FORMULA 
+since FORMULA  and
+FORMULA 
+Next boundary condition FORMULA  in the first order of FORMULA 
+reads
+FORMULA 
+where
+FORMULA 
+It follows from evolution equation, written in the main approximation over
+FORMULA , that at long times all excess area becomes confined in harmonics FORMULA .
+Coupling of higher order harmonics with sector FORMULA  occurs only due to nonlinear terms,
+concerned in Subsection REF . Relative part of excess area, confined
+in higher order harmonics is order of FORMULA . Hence, back influence of higher order
+harmonics on sector FORMULA  appears, if one accounts terms order of FORMULA , that is the
+influence is negligible in our approximation. Thus, to obtain corrections to dynamics in
+sector FORMULA  in the approximation, it is sufficient to account only coupling of mode
+FORMULA  with itself.
+Bilinear function FORMULA  becomes in the case
+FORMULA 
+and nonzero elements of linear operator in the basis (REF ) are
+FORMULA 
+FORMULA 

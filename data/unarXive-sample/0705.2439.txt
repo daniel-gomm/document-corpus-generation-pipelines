@@ -1,0 +1,501 @@
+
+[figure]labelfont=bf,font=small
+break9pt9pt0pt
+2
+A tight bound on the collection of edges in MSTs of induced subgraphs
+Gregory B. Sorkin, Angelika Steger and Rico Zenklusen
+Let FORMULA  be a complete FORMULA -vertex graph with distinct positive edge
+weights. We prove that for FORMULA , the set consisting of the
+edges of all minimum spanning trees (MSTs) over induced subgraphs of FORMULA  with
+FORMULA  vertices has at most FORMULA  elements. This proves a
+conjecture of Goemans and Vondrak {{cite:5b7ed92d-b736-4cc5-bf88-ba19d36cfa36}}. We also show
+that the result is a generalization of Mader's Theorem, which bounds the
+number of edges in any edge-minimal FORMULA -connected graph.
+Introduction
+Let FORMULA  be a complete FORMULA -vertex graph with distinct
+positive edge weights.
+For any set FORMULA ,
+denote by FORMULA  the subgraph of FORMULA  induced by FORMULA .
+We will also sometimes write this graph as FORMULA ,
+ignoring edges in FORMULA  incident on vertices in FORMULA .
+FORMULA  denotes the set of edges in the graph's
+minimum spanning tree.
+(The MST is unique due to the assumption that the edge
+weights are distinct.)
+For FORMULA , define
+FORMULA 
+Note that for FORMULA  we have FORMULA . In
+{{cite:5b7ed92d-b736-4cc5-bf88-ba19d36cfa36}}, Goemans and Vondrak considered
+the problem of finding a
+sparse set of edges which, with high probability,
+contain the MST of a random subgraph of FORMULA . In this context
+they proved an upper bound on FORMULA , namely that
+FORMULA , and they conjectured that one
+should be able to improve the bound to FORMULA . In this paper we prove this conjecture.
+Theorem 1 
+For any complete graph FORMULA  on FORMULA  vertices with distinct positive edge weights,
+FORMULA 
+
+As Goemans and Vondrak recognized, the bound is tight:
+for any FORMULA  and FORMULA  it is easy to produce edge weights
+giving equality in (REF ).
+One way is to fix an arbitrary
+set FORMULA  with cardinality FORMULA , and partition the
+edges FORMULA  into three sets FORMULA , FORMULA  and FORMULA  where,
+for FORMULA , FORMULA  contains all edges of FORMULA  having
+exactly FORMULA  endpoints in FORMULA . Assign arbitrary distinct positive
+weights to the edges in FORMULA 
+such that all weights on FORMULA  are smaller than those
+on FORMULA , which in turn are smaller than those on FORMULA . It
+can easily be verified that FORMULA  and thus
+FORMULA .
+Theorem REF 's assumption
+that FORMULA  is complete is not meaningfully restrictive.
+If FORMULA  is such that deletion of some FORMULA  vertices leaves it
+disconnected, then the notion of FORMULA  does not make sense;
+otherwise, it does not matter if other edges of FORMULA  are
+simply very costly or are absent.
+The bound of Theorem REF  applies equally
+if we consider the edge set of MSTs of induced subgraphs of size
+at most FORMULA  (rather than exactly that number).
+This is an immediate consequence of the following remark.
+Remark 2 For any complete graph FORMULA  on FORMULA  vertices with distinct positive edge weights,
+and FORMULA ,
+FORMULA .
+
+We will show that any edge FORMULA  in FORMULA  is also in FORMULA .
+By definition, FORMULA  means that there is
+some vertex set FORMULA  of cardinality FORMULA  for which
+FORMULA , where FORMULA .
+Consider any leaf vertex FORMULA  of FORMULA , with neighbor FORMULA .
+We claim that deleting FORMULA  from FORMULA 
+(call the resulting graph FORMULA ) results in
+the same MST less the edge FORMULA , i.e.,
+that FORMULA .
+This follows from considering the progress of Kruskal's algorithm
+on the two graphs.
+Before edge FORMULA  is added to FORMULA ,
+the two processes progress identically:
+every edge added to FORMULA  is also a cheapest edge
+for the smaller graph FORMULA .
+The edge FORMULA , added to FORMULA , of course has no parallel in FORMULA .
+As further edges are considered in order of increasing cost,
+again, every edge added to FORMULA  will also be added to FORMULA ,
+using the fact that none of these edges is incident on FORMULA .
+Thus, if FORMULA  is not a vertex of FORMULA , then FORMULA .
+Since FORMULA  has at least two leaves,
+it has at least one leaf FORMULA  not in FORMULA , unless FORMULA ,
+which is impossible since FORMULA  has at least 3 vertices.
+Outline of the paper
+In Section  we define a “FORMULA -constructible” graph,
+and show that
+every graph FORMULA  is FORMULA -constructible,
+and every FORMULA -constructible graph is a subgraph of some graph FORMULA .
+This allows a simpler reformulation of Theorem REF 
+as Theorem REF ,
+which also generalizes a theorem of Mader {{cite:cb084b78-5493-4b1e-b30c-65430dbb2b28}}.
+We prove Theorem REF  in Section .
+
+FORMULA -constructible graphs
+We begin by recalling Menger's theorem for undirected
+graphs, which motivates our definition of FORMULA -constructible
+graphs. Two vertices in an undirected graph are called
+FORMULA -connected if there are FORMULA  (internally) vertex-disjoint paths
+connecting them.
+Theorem 3 (Menger's theorem) 
+Let FORMULA  be two vertices in an undirected graph FORMULA  such that
+FORMULA . Then FORMULA 
+and FORMULA  are FORMULA -connected in FORMULA  if and only if after
+deleting any FORMULA  vertices (distinct from FORMULA  and FORMULA ), FORMULA  and
+FORMULA  are still connected.
+
+Definition 4 (FORMULA -constructible graph) 
+A graph FORMULA  is called FORMULA -constructible if there exists
+an ordering FORMULA  of the edges in FORMULA 
+such that for all FORMULA  the graph
+FORMULA  contains at most FORMULA  vertex-disjoint paths
+between the two endpoints of FORMULA . We say
+that FORMULA  is a FORMULA -construction order for the graph FORMULA .
+
+Note that 1-constructible graphs are forests, and
+edge-maximal 1-constructible graphs are spanning trees. We therefore
+have in particular that graphs of the form FORMULA 
+(i.e., MSTs, recalling the FORMULA  is complete)
+are edge-maximal 1-constructible graphs.
+A slightly weaker statement
+is true for all FORMULA :
+every graph FORMULA  is FORMULA -constructible
+(Theorem REF .REF ),
+and every FORMULA -constructible graph is a subgraph of some graph FORMULA 
+(Theorem REF .REF ).
+Note that a stronger statement, that the graphs of the form FORMULA 
+are exactly the edge-maximal FORMULA -constructible graphs, is not true.
+To see this consider a cycle FORMULA  of length four. Assign weights
+FORMULA  to these four edges (in arbitrary order) and weights FORMULA 
+to the remaining edges of the complete graph on four vertices. It
+is easily checked that FORMULA . But FORMULA  is not edge-maximal,
+as a diagonal to the cycle FORMULA  can be added without destroying
+2-constructibility.
+Theorem 5
+
+[i)]
+For every complete graph FORMULA  with distinct
+positive edge weights, FORMULA 
+is FORMULA -constructible.
+
+Let FORMULA  be FORMULA -constructible. Then there exist distinct
+positive edge weights
+for the complete graph
+FORMULA  such that
+FORMULA .
+Part (REF ):
+Let FORMULA  be a complete graph on FORMULA  vertices with
+distinct positive edge weights.
+Let FORMULA  be the
+ordering of the edges in FORMULA  by increasing edge weights
+and FORMULA  be
+the ordering of the edges in FORMULA  by increasing edge
+weights. We will now show that FORMULA  is a
+FORMULA -construction order for FORMULA . Let
+FORMULA . As FORMULA  there exists a
+set FORMULA  with FORMULA  and
+FORMULA , implying that the two endpoints
+of FORMULA  are not connected in the graph
+FORMULA .
+By Menger's
+theorem, this implies that there are at most FORMULA  vertex-disjoint paths
+between the two endpoints of FORMULA 
+in FORMULA . This statement remains
+thus true for the subgraph
+FORMULA .
+The ordering FORMULA  is thus a FORMULA -construction order for FORMULA .
+Part (REF ):
+Conversely let FORMULA  be a FORMULA -constructible graph with
+FORMULA -construction order FORMULA .
+Let FORMULA  be the complete graph on FORMULA .
+We assign the following edge weights FORMULA  to the edges
+in FORMULA . We assign the weight 1 to FORMULA , 2 to FORMULA 
+and so on. The remaining edges FORMULA 
+get arbitrary distinct weights greater than FORMULA . In order to show
+that the graph FORMULA 
+satisfies FORMULA  consider an arbitrary edge
+FORMULA  and let FORMULA  with
+FORMULA  be a vertex set separating the two endpoints of
+FORMULA  in the graph FORMULA .
+Applying Kruskal's algorithm to
+FORMULA ,
+the set of all edges considered before FORMULA  is contained
+in FORMULA , leaving the endpoints of FORMULA  separated,
+so FORMULA  will be accepted:
+FORMULA .
+We remark that the first part of the
+foregoing proof shows an efficient construction of FORMULA :
+follow a generalization of Kruskal's algorithm,
+considering edges in order of increasing weight,
+adding an edge if (prior to addition) its endpoints are
+at most FORMULA -connected.
+Connectivity can be tested as a flow condition, so that the algorithm runs
+in polynomial time — far more efficient than the naive
+FORMULA  protocol suggested by the definition
+of FORMULA .
+This again was already observed in {{cite:5b7ed92d-b736-4cc5-bf88-ba19d36cfa36}}.
+By Theorem REF ,
+the following theorem
+is equivalent to Theorem REF .
+Theorem 6 
+For FORMULA , every FORMULA -constructible graph FORMULA 
+with FORMULA  vertices satisfies
+FORMULA 
+
+Theorem REF  generalizes a result of
+Mader {{cite:cb084b78-5493-4b1e-b30c-65430dbb2b28}},
+based on results in {{cite:b34864fd-c885-473f-b32f-504872489634}}, concerning
+“FORMULA -minimal” graphs
+(edge-minimal FORMULA -connected graphs).
+Every FORMULA -minimal graph is FORMULA -constructible, since
+every order of its edges is a FORMULA -construction order.
+The following theorem is thus a corollary of Theorem REF .
+Theorem 7 (Mader's theorem)  
+Every FORMULA -minimal graph with FORMULA  vertices
+has at most FORMULA  edges.
+
+Note that Mader's theorem (Theorem REF ) is
+weaker than Theorem REF , because
+while every FORMULA -minimal graph is FORMULA -constructible, the converse is false:
+not every FORMULA -constructible graph is FORMULA -minimal.
+An example with FORMULA  is a cycle FORMULA  with length four with an
+additional diagonal FORMULA . The vertex set remains 2-connected even upon
+deletion of the edge FORMULA , so the graph is not 2-minimal, but it
+is 2-constructible (by any order where FORMULA  is not last).
+Proof of the main theorem
+In this section we prove Theorem REF .
+We fix FORMULA  and prove the theorem by induction on FORMULA .
+The theorem is trivially true for
+FORMULA , so assume that FORMULA 
+and that the theorem is true for all smaller values of FORMULA .
+We prove (REF ) for a
+FORMULA -constructible graph FORMULA  on FORMULA 
+vertices and FORMULA  edges which, without loss of generality,
+we may assume is edge-maximal
+(no edges may be added to FORMULA  leaving it FORMULA -constructible).
+Fix a FORMULA -construction order
+FORMULA 
+
+of FORMULA  and (for any FORMULA ) let
+FORMULA .
+Also fix a set
+FORMULA  of size FORMULA  such that the two
+endpoints of FORMULA  lie in two different components FORMULA  of FORMULA 
+(the set FORMULA  exists by FORMULA -constructibility of FORMULA  and
+Menger's theorem). The edge maximality of FORMULA 
+implies that FORMULA  form a
+partition of FORMULA . Let FORMULA  and FORMULA .
+(If there were a third component FORMULA  then, even after adding FORMULA ,
+any FORMULA  and FORMULA  are at most FORMULA -connected
+and so the edge FORMULA  could be added,
+contradicting maximality.)
+Our goal is to define two graphs
+FORMULA  and FORMULA  that satisfy
+the following property.
+Property 8
+
+FORMULA  and FORMULA  are both FORMULA -constructible.
+
+FORMULA  contains all edges of FORMULA .
+
+FORMULA  contains all edges of FORMULA .
+
+For every pair of vertices FORMULA  not connected by an edge in FORMULA , there is an
+edge FORMULA  in either FORMULA  or in FORMULA  (but not both).
+If we can find graphs FORMULA  and FORMULA 
+satisfying Property REF , then
+the proof can be finished as follows. Note that we have the
+following equality:
+FORMULA 
+The term FORMULA  comes from the fact that FORMULA  covers
+all edges of FORMULA  except FORMULA , the term FORMULA  represents the
+double counting of edges contained in FORMULA , and the last term
+counts the edges
+which are covered by FORMULA  and FORMULA  but not in FORMULA .
+We therefore have
+FORMULA 
+Applying the inductive hypothesis on FORMULA  and FORMULA 
+(which by Property REF  are FORMULA -constructible)
+we get the desired result:
+FORMULA 
+
+where in the second inequality we have used FORMULA .
+We will finally concentrate on finding
+FORMULA  and
+FORMULA  satisfying Property REF .
+Let FORMULA  be the set of all
+anti-edges in FORMULA .
+(FORMULA  denotes the set of unordered pairs of elements of FORMULA .)
+For FORMULA , let FORMULA  be the smallest value of FORMULA 
+such that FORMULA  and FORMULA  are FORMULA -connected in FORMULA .
+(Considering FORMULA  vertex-disjoint paths between FORMULA  and FORMULA  in FORMULA ,
+and noting that deletion of the single edge FORMULA  leaves them at least
+FORMULA  connected, it follows that FORMULA  and FORMULA 
+are precisely FORMULA -connected in FORMULA .)
+Define FORMULA .
+Since by edge maximality of FORMULA  every pair FORMULA 
+is FORMULA -connected in FORMULA ,
+it follows that FORMULA  form a partition of FORMULA .
+Our basic strategy to define the graphs FORMULA  and FORMULA 
+(and appropriate orderings of their edges
+which prove that they are FORMULA -constructible) is as follows.
+In a particular way,
+we will partition each FORMULA  as FORMULA ,
+and determine orders FORMULA  and FORMULA  on their respective edges.
+Let FORMULA  be the graph constructed by the order
+FORMULA 
+
+where (recalling that FORMULA  has vertex set FORMULA )
+we ignore any edge FORMULA .
+(There is no issue with edges from FORMULA , as these
+belong to FORMULA .)
+Define FORMULA  symmetrically.
+We need to show that the graphs FORMULA  and FORMULA  satisfy
+Property REF ;
+the central point will be to ensure that
+FORMULA  is a FORMULA -construction order for FORMULA ,
+and FORMULA  for FORMULA .
+(By definition of the edges FORMULA , note that every edge FORMULA 
+when added after FORMULA  in the order FORMULA  violates FORMULA -constructibility,
+but in the following we show how FORMULA  can be
+chosen such that it will not violate FORMULA -constructibility in FORMULA ;
+likewise for edges FORMULA  and FORMULA .)
+To show that FORMULA  and FORMULA  are FORMULA -construction orders
+we need to check that, just before an edge is added,
+its endpoints are at most FORMULA -connected.
+To prove this, we distinguish between edges FORMULA  and edges FORMULA .
+We first dispense with the easier case of an edge FORMULA .
+Proposition REF  shows that
+(for any orders FORMULA  of FORMULA )
+in the edge sequence FORMULA ,
+every edge FORMULA  has endpoints which are at most FORMULA -connected
+upon its addition to the graph
+FORMULA .
+It follows that the endpoints are also at most FORMULA -connected
+upon the edge's addition to FORMULA  (respectively, FORMULA ), i.e., in the graph
+FORMULA ,
+where as usual we disregard edges not in FORMULA .
+Proposition 9 
+Let FORMULA  and FORMULA 
+such that FORMULA  is not an edge in FORMULA .
+If the maximum number of vertex-disjoint paths between
+FORMULA  and FORMULA  in FORMULA  is FORMULA , then the maximum
+number of vertex-disjoint paths between FORMULA  and FORMULA  in
+the graph
+FORMULA  is FORMULA , too.
+
+For any FORMULA  as above,
+let FORMULA , FORMULA , be a set separating FORMULA  and
+FORMULA  in FORMULA . As FORMULA , FORMULA  cannot separate
+two FORMULA -connected vertices in FORMULA . This implies that any two
+vertices in FORMULA  that are FORMULA -connected in FORMULA 
+lie in the same connected component of  FORMULA. As
+every edge in FORMULA  connects two vertices
+that are FORMULA -connected in FORMULA , adding the
+edges FORMULA  to  FORMULA
+does not change the component structure of FORMULA . The
+set FORMULA  thus remains a separating set for FORMULA  and FORMULA  in the graph
+FORMULA ,
+proving that FORMULA  and FORMULA  are at most FORMULA -connected in this graph.
+Proposition  REF
+With Proposition REF  addressing edges FORMULA ,
+to ensure FORMULA -constructibility of FORMULA  and FORMULA ,
+it suffices
+to choose for FORMULA  and FORMULA  the
+orders FORMULA  in such a way that successively
+adding any edge FORMULA  to the graph FORMULA 
+connects two vertices which were at most FORMULA -connected.
+Let FORMULA  with FORMULA  a set separating the
+endpoints of FORMULA  in the graph FORMULA .
+Let FORMULA  be the two components
+of FORMULA  containing
+the two endpoints of the edge FORMULA .
+We define FORMULA , FORMULA .
+Figure REF  illustrates these sets.
+
+ FIGURE
+
+Sets defined to prove
+Propositions REF –REF .
+
+The following proposition shows that the edges FORMULA  form a bipartite graph.
+Proposition 10
+FORMULA 
+
+Suppose by way of contradiction that
+FORMULA .
+Let
+FORMULA 
+
+the edge order obtained by inserting FORMULA 
+immediately before FORMULA  in the original order
+FORMULA .
+We will show that FORMULA  is a FORMULA -construction order, thus contradicting
+the edge maximality of FORMULA .
+For edges up to FORMULA  this is immediate from the fact that FORMULA 
+is a FORMULA -construction order. Proposition REF 
+shows that edges FORMULA  and later do not violate FORMULA -constructibility.
+(Literally, Proposition REF  applies to the order
+FORMULA 
+rather than to FORMULA , but for edges FORMULA  and later the swap of
+FORMULA  and FORMULA  is irrelevant.)
+The edge FORMULA  itself does not violate FORMULA -constructibility,
+since by the definition of FORMULA  its two endpoints are at most FORMULA 
+connected in FORMULA .
+This leaves only edge FORMULA  to check,
+but since FORMULA ,
+FORMULA  remains a separating set with cardinality FORMULA 
+for the two endpoints of FORMULA  in the graph
+FORMULA .
+Thus FORMULA  is a FORMULA -construction order, giving the desired contradiction.
+We will now describe a method for constructing the orders FORMULA , FORMULA .
+Our approach is to define an order FORMULA 
+on (a subset of) the vertices of FORMULA 
+and to assign to every vertex
+FORMULA  a label FORMULA .
+The two orders FORMULA , FORMULA  are then defined as follows.
+We begin with FORMULA  and add all edges in FORMULA 
+which are incident to FORMULA  at the end of FORMULA  in any order.
+In the next step all edges of FORMULA  which are incident to FORMULA  and
+not already assigned to one of the orders FORMULA  are
+added at the end of FORMULA  in any order.
+This is repeated until all edges are assigned.
+In what follows we show how to
+choose a vertex order FORMULA  and labels FORMULA  so that
+FORMULA  and FORMULA  are FORMULA -construction orders.
+Just as FORMULA  and FORMULA  are built iteratively, so is FORMULA ,
+starting with FORMULA .
+For any FORMULA , we define FORMULA  to be the set of edges
+in FORMULA  incident on vertices in FORMULA , i.e.,
+FORMULA .
+Proposition 11 
+Let FORMULA  and FORMULA . We then
+have that FORMULA  there
+are at most FORMULA  vertex-disjoint paths
+between the two endpoints of FORMULA  in the graph
+FORMULA .
+
+Observe that the set FORMULA  separates the two
+endpoints of the edge FORMULA  in the graph
+FORMULA . As this set has cardinality
+FORMULA  the result follows by Menger's theorem.
+Let FORMULA  be the set of vertices labeled 1 contained in the
+partially constructed FORMULA , and FORMULA  those labeled 2.
+If we can find a vertex FORMULA 
+where the number of “new” edges incident on FORMULA  satisfies
+FORMULA 
+then by Proposition REF ,
+adding FORMULA  at the end of the current order
+FORMULA  and labeling it
+FORMULA 
+does not violate FORMULA -constructibility of the orders FORMULA 
+and FORMULA .
+The following proposition shows that, until the process is complete
+(until FORMULA ), such a vertex FORMULA  can always be found.
+Proposition 12 
+Let FORMULA  be two disjoint sets.
+If FORMULA ,
+then there exists a vertex FORMULA 
+that satisfies (REF ).
+
+Note that FORMULA , FORMULA , and FORMULA  are disjoint and contained in FORMULA , so
+FORMULA 
+
+where FORMULA  by definition. Also,
+FORMULA 
+
+>From the fact that the right side of (REF ) is equal to
+FORMULA  minus that of (REF ), we get
+FORMULA 
+
+By disjointness of FORMULA  and FORMULA ,
+FORMULA 
+
+using (REF ) in the last inequality.
+Thus, the smaller summand in (REF ) is at most the larger summand
+in (), and without loss of generality we suppose that
+FORMULA 
+By the hypothesis FORMULA ,
+there is an edge FORMULA ;
+by Proposition REF , FORMULA 
+with FORMULA  and FORMULA ;
+and by definition of FORMULA ,
+FORMULA ,
+i.e., FORMULA 
+and FORMULA .
+Then FORMULA  satisfies (REF )
+because the new edges on FORMULA  must go to so-far-unused vertices in FORMULA :
+FORMULA 
+
+whence (REF ) closes the argument.
+Therefore there always exist two FORMULA -construction
+orders FORMULA  as desired, which completes the proof of
+Theorem REF .
+Acknowledgment
+The authors are grateful to Michel Goemans for bringing the problem
+to their attention.

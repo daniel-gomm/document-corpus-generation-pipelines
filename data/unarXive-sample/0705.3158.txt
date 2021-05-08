@@ -1,0 +1,1200 @@
+
+Bower et al.
+Radio Transients
+SubmilliJansky Transients in Archival Radio Observations
+Geoffrey C. Bower, Destry Saul, Joshua S. Bloom1,
+Alberto Bolatto, Alexei V. Filippenko, Ryan J. Foley, and Daniel Perley
+Department of Astronomy & Radio Astronomy Laboratory,
+University of California, Berkeley, CA 94720-3411; gbower@astro.berkeley.edu
+1Sloan Research Fellow.
+We report the results of a 944-epoch survey for
+transient sources with archival data from the Very Large
+Array spanning 22 years with a typical epoch separation
+of 7 days. Observations were obtained at 5 or 8.4 GHz
+for a single field of view with a full-width at half-maximum
+of FORMULA  and FORMULA , respectively,
+and achieved a typical point-source detection threshold at the beam center of
+ FORMULAFORMULA 300  FORMULA 1”FORMULA 15” FORMULAFORMULA 0.07  FORMULAFORMULA R  FORMULAFORMULA 40  deg-2 yr-1FORMULA 20  min  FORMULAFORMULA tchar  FORMULAFORMULA 7  dFORMULA 1.5 0.4 FORMULAFORMULA 3FORMULA z = 0.040FORMULA L 2 1038FORMULA -1FORMULA z = 0.249FORMULA R 27FORMULA Ks 18FORMULA 
+radio continuum: general — radio continuum: stars —
+supernovae: general — gamma rays: bursts — surveys
+Introduction
+Radio transient sources have primarily been studied
+through follow-up observations after discovery at optical,
+X-ray, or FORMULA -ray wavelengths
+{{cite:86e193ab-e00b-4ccc-ac77-4eed2eff215b}}, {{cite:78cd20a8-6bab-4cb7-9bd6-8d91981b6223}}, {{cite:a63b3577-4501-404b-84e1-502c5910373e}}, {{cite:cd681aea-a4c3-4d6b-9e82-dee859192e47}}, {{cite:4e03f478-a204-4f73-90f9-0bd69510c28e}}, {{cite:b07e2036-b003-449d-8b9b-588383fcec40}}, or through serendipitous discovery
+{{cite:4be64aad-2f1e-4deb-8b98-ce756524a8d0}}, {{cite:3175e5e5-d9ab-40c0-922e-cc1eda388f7d}}, {{cite:d4a1839f-68ec-47af-a1dd-9f74d7354e8d}}.
+This is principally due to the high cost of observing
+time to survey large areas of sky to significant depth at radio
+wavelengths {{cite:90840833-98c1-4263-8b3d-feb019e16467}}.
+Moreover, existing blind surveys have typically been performed at
+low frequencies, where
+survey time is shorter but the effect of synchrotron self-absorption
+may hide certain source classes.
+The available parameter space for radio transient surveys is extensive:
+transients have been detected at, and are predicted for all, radio
+wavelengths; timescales of transient and variable behavior range
+from nanoseconds {{cite:dceb31d0-930c-4bd8-bc67-3ac1842ef39b}} to the longest timescales
+probed {{cite:10462e5a-330c-4ec6-875c-7c6f5140ba3c}}; and transients may originate from
+nearly all astrophysical environments including the solar system
+{{cite:777afb3c-ce7f-4f84-a357-1e718aa92ac7}}, star-forming regions
+{{cite:d4a1839f-68ec-47af-a1dd-9f74d7354e8d}}, the Galactic
+Center {{cite:3175e5e5-d9ab-40c0-922e-cc1eda388f7d}}, {{cite:b7b3d60d-f3e0-4c61-8e3d-3fca6361cc9f}}, and other
+galaxies {{cite:a63b3577-4501-404b-84e1-502c5910373e}}.
+Nevertheless, extensive surveys have been carried out, exploring different
+volumes of the parameter space, and, in some cases, discovering new phenomena.
+Roughly, one can separate transients surveys into two classes: (a) burst
+searches that probe timescales of less than FORMULA  second, are
+often performed with low angular resolution instruments, and are most often
+performed at low frequencies; and (b) imaging surveys
+conducted with interferometers which typically probe timescales of tens of
+seconds and longer. Examples of burst searches include
+STARE, a 611-MHz all-sky survey {{cite:777afb3c-ce7f-4f84-a357-1e718aa92ac7}} sensitive
+to timescales of 0.1 s to a few minutes; a 843-MHz survey with
+the Molonglo Observatory synthesis Telescope (MOST)
+sensitive to timescales of 1 FORMULA s
+to 800 ms {{cite:81526500-d8a7-4c0f-be67-bf8090c565fd}};
+and the Parkes 1.4-GHz multi-beam pulsar survey.
+STARE used dipole antennas with a sensitivity threshold
+of 27 kJy simultaneously over a significant fraction of the sky
+and found no extra-solar transients on timescales of 0.125 s
+to a few minutes in 18 months of observations. The MOST survey
+determined an upper limit to the transient rate of 5 events
+FORMULA  for 10 ms events at a flux density
+limit of 1 Jy. The Parkes multi-beam survey has been used for extensive
+searches for periodic emission as well as
+for pulsed emission. The latter search led to the discovery of
+rotating radio transients (RRATs), which appear to be pulsars with
+erratic emission {{cite:701a9e7a-9166-4d2b-9cee-411a92673b36}}.
+Imaging surveys for transients have focused on individual fields
+and on large-scale surveys.
+Recently, a blind survey of the Galactic center at 330 MHz
+has discovered an unusual radio transient that displays
+quasi-periodic emission on a timescale of 70 min
+{{cite:c47ab506-1acb-481e-8763-3e70ce338255}}. {{cite:4d3f8a4d-6e56-4463-bc23-d008b655ced9}}
+used FORMULA  hr of observation of the Lockman hole to characterize
+variability on a timescale of 19 d and 17 mon at 1.4 GHz. They found
+no transients above 100 FORMULA Jy and conclude that the transient density
+on these timescales is fewer than 18 per square degree.
+Similarly,
+{{cite:e92558ac-3c63-4b17-93eb-92766b0bf4d5}} identified 4 highly variable sources but no
+transient sources at 5 and
+8.4 GHz using VLA observations of fields in which gamma-ray bursts are
+present. They set an upper limit to the variable source population of 6
+degFORMULA  at sub-mJy sensitivity, comparable to the limit set by
+{{cite:4d3f8a4d-6e56-4463-bc23-d008b655ced9}}. Recently, drift scan interferometric
+observations have identified several transients of unknown origin,
+including a 3-Jy transient with a duration of 72
+hr and three FORMULA  Jy transients of  FORMULAFORMULA 1 FORMULA
+The most extensive imaging search for transients derives from a comparison
+of the FIRST and NVSS 1.4 GHz catalogs
+{{cite:817c2ddb-bf38-4666-9972-21effdb9deed}}, {{cite:1edd93a3-7daa-4d0c-846a-69a171a8a6ce}}. The search covered
+2400 square degrees at a flux density threshold of 6 mJy. This search
+generated a number of transient candidates. Of these, one
+source was identified as a radio supernova in a nearby galaxy and another
+was seen only once in the radio and could not be
+associated with any known optical source. Transient identification
+in this survey suffers from the
+methodological problem of the extremely mismatched resolutions (FIRST:
+FORMULA , NVSS: FORMULA ) of the
+two surveys.
+In addition to radio supernovae (RSNe), a number of highly variable and
+transient sources are expected to be detectable in significant
+numbers at radio wavelengths. One example is
+gamma-ray burst (GRB) afterglows associated with GRBs which are beamed
+in a direction away from Earth, and therefore not observable at
+high-energy wavelengths {{cite:d4ae51ee-df03-4c73-abe8-656f80ef7d55}}.
+These so-called “orphan gamma-ray burst afterglows” (OGRBAs)
+are expected to outnumber GRBs by a factor of 10 to 1000,
+the specific value depending on the characteristics of the relativistic
+outflow of the GRB and the surrounding medium. There may be related
+phenomena such as those associated with X-ray flashes
+{{cite:4925f265-d22c-4038-8fab-0c3c7367d895}}, supernovae (SNe)
+{{cite:00f45a1b-5a5e-40b7-a9d5-eaa240b84f94}}, and short-duration GRBs
+{{cite:569a30ba-95dd-4c93-ab43-45f643fbe021}}.
+Activity from stars and compact objects in the
+Galaxy may also be detected as transients
+{{cite:0c8b5b4e-162f-4b9e-ac36-b3f2d5891bbb}}, {{cite:b7b3d60d-f3e0-4c61-8e3d-3fca6361cc9f}}, {{cite:1d992530-8247-4f30-8c86-7d50ab40be6c}}.
+A range of active galactic nucleus (AGN) phenomena is also
+anticipated, including intra-day variability and other short-term
+variability driven by the effect of interstellar scintillation
+on compact components of extragalactic radio sources
+{{cite:f7ea8f76-99b2-4d5b-8246-507e8c34e8d3}}.
+Intrinsic AGN variability is also expected. Sudden increases in
+the mass accretion rate following the tidal disruption of an orbiting
+star, for instance, will produce a transient soft X-ray flare and
+possibly radio emission {{cite:e7bd158a-e9a5-4129-967f-5e46566dc3de}}, {{cite:b5261c76-eead-4974-84b9-2e8b741f541a}}.
+Significant numbers of RSNe, OGRBAs, and tidal flares
+are predicted for surveys that achieve a sensitivity FORMULA  mJy and
+cover an area of FORMULA  square degrees. These phenomena all
+produce self-absorbed synchrotron radiation and, therefore, are more
+likely to be observed at high radio frequencies.
+We describe here the results of a search for extragalactic radio transients
+using 5 and 8.4 GHz observations from the Very Large Array data archives.
+The survey includes 944 epochs over 22 years consisting of observations
+of the same field. At a sensitivity threshold of 370 FORMULA Jy,
+the survey has an effective survey area comparable to that of a
+survey consisting of two epochs of 10 square degrees each,
+making this thus far the largest-area sub-mJy imaging survey of
+radio transient phenomena.
+
+Observations and Analysis
+The Archival Survey
+Between 1983 and 2005, the VLA performed calibration and system check
+observations
+of the same blank field with a typical interval of FORMULA  d.
+Each epoch typically was 20 min in duration and consisted of 10 s
+integrations. The field is centered at
+FORMULA , FORMULA 
+(J2000). The field is
+out of the plane of the Galaxy (FORMULA , FORMULA ).
+626 epochs of observations were obtained at a frequency of
+5 GHz between 1983 and 1999.
+599 epochs were obtained at a frequency of 8.4 GHz between 1989 and 2005.
+VLA observations of this field ceased in 2005.
+Between 1989 and 1999, there was overlap between some of the 5 and 8.4 GHz
+observations. 281 of the 8.4 GHz epochs were simultaneously observed
+at 5 GHz, giving a total of 944 independent epochs at either frequency.
+Data were all obtained in standard continuum mode with 50 MHz of bandwidth
+in each of two intermediate-frequency bands (with centers separated by
+100 MHz) and two circular polarizations.
+We used a pipeline procedure for flagging, calibrating, and imaging.
+Phase calibration was made based on
+brief observations of the compact source J1803+784. Since no
+standard flux density calibrator was used in these observations, we
+set the amplitude scale of the observations by assuming the mean
+flux density for J1803+784
+as measured in the University of Michigan Radio Astronomy Observatory
+database over the same period {{cite:e11b5125-4357-41ec-b21c-8eb77b00aa71}}.
+The assumption of constant flux density introduces
+less than 15% uncertainty in
+the flux-density scale for individual epochs. Images of the target
+field typically had a root-mean-square (rms) error in the flux density
+of 40 to 50 FORMULA Jy.
+Images from two successive epochs (19840613 and 19840620)
+are shown in Figure . Throughout the paper, we
+use the notation of YYYYMMDD to denote epoch date and refer to specific
+transients as RT YYYYMMDD, based on the epoch of detection.
+Images were obtained in all configurations of the Very Large Array.
+For the extended configurations, bandwidth smearing within the primary
+beam can become significant. We compensated for this effect by
+applying a Gaussian taper with a full-width at half-maximum (FWHM)
+of 150 FORMULA 
+to the FORMULA  data before imaging, which reduces sensitivity and
+angular resolution but
+provides imaging to large radii without bandwidth distortions.
+Images were made using natural
+weighting to achieve maximal sensitivity and were deconvolved using
+the CLEAN algorithm {{cite:fb98e2e6-dad4-41d6-bba7-211d336bf70d}}. We imaged a region slightly larger
+than the region containing
+a circle of radius equal to twice the half-power radius, which is FORMULA 
+at 5 GHz and FORMULA  at 8.4 GHz.
+A deep image of the region at 5 and 8.4 GHz was also constructed through
+merging of
+all visibilities and imaging with a FORMULA  taper of 150 FORMULA 
+using the MIRIAD software package. The resulting images had resolutions
+of FORMULA  and FORMULA , and an rms of 2.6 FORMULA Jy
+and 2.8 FORMULA Jy at 5 and 8.4 GHz, respectively. The location
+of steady and transient radio sources on the deep image is shown
+in Figure . Fluxes in the deep image are typically lower
+than the average of detections since our high detection threshold and
+the low flux densities of the sources bias
+the mean. Further details of the deep images will be
+published separately.
+Transient Identification
+Sources were identified using AIPS task SAD (search and destroy), which
+identifies peaks in the image above a flux-density threshold and fits
+point sources. For the relatively uncluttered images that we have, SAD
+is efficient and accurate.
+We identified sources within twice the half-power radius and corrected
+their flux densities for primary beam losses.
+The detection threshold for each image was chosen such that the probability
+of a false detection (PFD) in the full imaged region was FORMULA , or
+a single false source for 1000 identical epochs, assuming Gaussian statistics
+for noise in the image.
+Since the synthesized beam changes with array configuration while
+the primary beam remains the same, the number
+of independent pixels in the field of view varied substantially.
+Detection thresholds were in the range FORMULA  to FORMULA ,
+dependent on array configuration. The typical flux density threshold at
+the center of the image was FORMULA  FORMULA Jy. For the number of epochs
+observed and the circular area of the region searched for sources, we have
+an expectation of FORMULA  false source in the entire survey.
+Inverting the sign of the intensity in each image
+and searching for sources with the same thresholds and methods revealed
+one significant source, consistent with our expectations of one or fewer
+false detections in the entire survey.
+Wider-field images (FORMULA  at 5 GHz, FORMULA  at 8.4 GHz)
+were made for all epochs in which a transient was detected.
+A number of transients that were detected on the western and northern edges
+of the individual epoch image were determined to be aliased power from two
+bright radio sources (FORMULA  mJy) at radii greater than two
+primary beam widths (NVSS J1457+7817, J1500+7827).
+One source above the detection threshold was rejected on the basis of
+a non-pointlike image and deep negative stripes in the image.
+Detected sources and their measured properties are listed in
+Tables  and .
+Table  identifies persistent sources above or near
+the detection threshold and not multiple-epoch transients.
+Six persistent sources at 5 GHz and 2 persistent sources at 8.4 GHz
+were detected in multiple epochs. The epochs of detection were
+distributed over the entire survey.
+Of these persistent sources,
+three radio sources with flux densities FORMULA  FORMULA Jy were
+detected hundreds of times.
+One radio source (J150123+781806) was detected with
+our pipeline software at 5 GHz in
+452 of 626 epochs, and at 8.4 GHz in 159 of 599 epochs
+(Figure ); with a reduced source detection
+threshold of FORMULA , we find that this source was present in 602 epochs
+at 5 GHz and in 445 epochs at 8.4 GHz. The results for this source indicate
+the overall quality of the data.
+Variations in the flux density of this source are caused by the
+changing sensitivity of the VLA
+in different configurations, variability in the
+amplitude calibrator J1803+784,
+and possibly intrinsic variability in the source.
+Seven sources at 5 GHz and
+1 source at 8.4 GHz were detected in individual epochs
+(Table ).
+These sources were detected
+only once and are classified as transients.
+We plot the light curves of each transient for the year
+surrounding their detection (Figure ).
+We searched for time variability for each transient by splitting the
+data into four-minute segments and comparing the flux densities.
+The reduced FORMULA  for the hypothesis of no variability is less than 1.4
+for all the transients, implying no strong evidence for variability. We
+also imaged each transient in Stokes V and found no evidence for circular
+polarization above FORMULA . Finally, we differenced images
+between the intermediate frequency bands and found no evidence for
+a large spectral index.
+The radial distribution of sources is consistent with a real source population
+rather than imaging defects. Imaging defects
+would be uniformly distributed throughout the image, without regard
+for the decline in sensitivity due to the primary beam.
+Four of the eight transients are contained within the
+half-power radius. This number is
+inconsistent with the expectation of a uniform
+distribution within the same region, FORMULA .
+On the other hand,
+a source population with a power-law distribution of flux densities
+FORMULA  in a flux-density limited sample has an expectation of
+FORMULA  within the half-power radius, in better agreement with the
+observed number.
+Images were also constructed in a search for faint radiation from the
+transients and for new transients using all data from two-month,
+one-year, and one-decade time spans. We found two new transients in
+the two-month averages (Table )
+and no transients in the year and decade images.
+Light curves for these sources are shown in Figure . Given
+the smaller number of epochs, the expected number of false sources in
+the two-month average data is FORMULA . Further searches on different
+time scales or with filters matched to light curve shapes
+are possible with the same data but are beyond the scope of this paper.
+Dual frequency observations were made only after 1989 and not at every
+epoch. Of the remaining 5 GHz transients, only 1 (RT 19920826)
+is located within the imaged region of the 8.4 GHz survey.
+Unfortunately, there were no 8.4 GHz observations
+for this epoch. Similarly, for RT 19970205 which
+was detected at 8.4 GHz, there was not a simultaneous 5 GHz observation.
+
+Keck Imaging
+On 25 July 2006 (UT dates are used throughout this paper),
+we observed the central portion of the
+radio field with the Low-Resolution Imaging Spectrometer
+{{cite:306e5a6e-0b35-46fd-a130-f69149cca7c2}} on the Keck-I 10-m telescope. Eight of the
+radio transient positions (see Figure 6) were observed in two separate
+pointing centers (each covered by the LRIS field-of-view of FORMULA ). At each pointing center we obtained six dithered
+10-min exposures. The instrument is outfitted with a beam splitter,
+allowing us to observe simultaneously in the FORMULA  and FORMULA  bands. The data
+were reduced following standard optical imaging reduction
+procedures. After fitting a world coordinate system (tied to the USNO
+B1.0) to each reduced frame, we made a mosaic for a given filter using
+SWARP {{cite:1c8b29c8-444e-4f2e-9528-b2f67f5bad26}}. The final astrometric
+uncertainty relative to the International
+Celestial Reference System (ICRS) is 250 mas in each axis.
+On the night of the Keck/LRIS imaging, we observed the Landolt
+standard star field PG1633+099 {{cite:6bad8bf7-da19-4fa9-ab66-ca285f2e2bff}} in
+both filters at an airmass of FORMULA . The catalog
+magnitudes were converted to the FORMULA  band from the FORMULA -band
+magnitude and the FORMULA 
+color using the prescription in Bilir et al. (2005)
+. From the observed photometry of
+four PG1633+099 stars, the zeropoint conversion from flux in both
+filters was determined in an FORMULA  aperture. The flux
+of FORMULA -detected sources in both the FORMULA  and FORMULA  stacked
+image of the radio field were determined in the same-sized
+aperture. Accounting for the average extinction per unit airmass at
+Mauna Kea, we determine that the non-detections of some of the
+counterparts correspond to upper limits of
+FORMULA  and
+FORMULA  mag.
+These limits assume an unresolved source and a color
+similar to those of the Landolt field stars.
+
+Keck Spectroscopy
+An optical spectrum of the counterpart of RT 19840613 was taken
+on 2005 Dec. 4
+with the DEIMOS spectrograph {{cite:f6f75cfc-7c80-41f9-b435-90e963873295}} mounted on the Keck-II
+telescope, using a 600 line mmFORMULA  grating and the GG400 order-blocking
+filter. Spectra of the
+counterparts and nearby companions of
+RTs 19860115, 19870422, 19920826, and 19970528 were taken on
+2006 June 26 with LRIS using the 600/4000 grism, the 400/8500
+grating, and the D560 dichroic.
+All spectral data were reduced using standard techniques
+{{cite:02d2cffe-9665-4493-9435-47f4275b4552}}. Standard CCD
+processing and spectrum extraction were completed with IRAFIRAF
+is distributed by the National Optical Astronomy Observatory, which is
+operated by the Association of Universities for Research in Astronomy,
+Inc., under cooperative agreement with the National Science Foundation..
+The data were extracted with the optimal algorithm of {{cite:ea5231ec-f2b8-42e2-bd97-61d8d35d15fc}}.
+We obtained the wavelength scale from low-order polynomial fits to
+calibration-lamp spectra. Small wavelength shifts were applied after
+cross-correlating night-sky lines extracted with the object to a template
+sky. Using our own IDL routines, we fit spectrophotometric standard star
+spectra to flux calibrate our data and remove telluric lines {{cite:ab7e34a6-0188-4f86-a24a-fb82af2295cd}}, {{cite:c3da6639-2b53-4caa-83db-269fbbcbce94}}.
+We give redshifts for the counterparts and nearby companions in
+Table . In the cases of RTs 19840613, 19870422, 19920826,
+and 19970528, the redshift is for the galaxy that the RT is situated in
+or closest to. RT 19860115 has two possible hosts in the Keck image;
+Objects 1 and 2 are located to the northeast and southwest of the RT,
+respectively.
+
+PAIRITEL Observations
+Data were obtained with PAIRITEL {{cite:e5ce19ec-6869-4a3d-b5b5-afbefbf71ab9}}
+on 16 Feb. 2006. Images were taken
+simultaneously in the FORMULA , FORMULA , and FORMULA  bands in four different pointings
+with a total integration time of about 1120 s per pointing.
+Additionally, to get a deep infrared (IR) image in one
+portion of the radio field, several hours of imaging in June and July
+2006 were obtained centered at J2000 position FORMULA  =
+FORMULA , FORMULA  = FORMULA . The
+approximate FORMULA  upper limits
+in the shallow, wide-angle map are FORMULA  mag, FORMULA  mag,
+and FORMULA  mag (the limits are significantly worse toward the
+edges of the mosaic).
+The pointings were stitched together using SWARP after
+finding preliminary WCS solutions in all bands. The result is
+a FORMULA  pixel set of mosaic images with FORMULA 
+resolution that overlaps most of the radio image.
+An astrometric solution for
+the mosaic images was found through a
+cross-correlation with 43 stars in common with the USNO B1.0
+catalog. Typical rms uncertainty of the astrometric tie to the ICRS
+is 250 mas.
+
+Results
+We have detected a total of 8 transient radio sources in single epochs
+of this survey (Figure ). Additionally, we have detected
+two transients in two-month averages of the data.
+Our source identification methods described previously
+argue that no more than one of these sources is a false
+detection. All of these sources
+are adequately fit as point sources. None of the transients is
+detected in epochs other than the detection epoch, or in longer-term
+averages with the possible exception of RT 19840613, in which the
+host galaxy is detected in the full 20-year image.
+In Figures  and   we show
+images of the transients overlaid on the deep radio image, on
+multi-color images from the Keck imaging, and, where Keck data
+are missing for two objects, on FORMULA -band images from PAIRITEL.
+We identify several hosts or potential hosts to the RTs using
+the Minnesota Palomar Plate Survey
+{{cite:917734a2-ffd9-482d-876d-ffa2090a994a}}. MAPS
+is a catalog of sources found with and characterized by
+plate-measuring equipment surveying
+the Palomar Sky Survey I (POSS I). MAPS
+coordinates are consistent with the radio reference frame with an
+accuracy of FORMULA . We confirmed this by comparison of the position of
+two bright reference stars in the MAPS catalog with positions in
+the Tycho catalog. Referring the Tycho positions to epoch 1950 (appropriate
+for POSS), we find
+agreement of FORMULA  for GSC 04562-00668 and FORMULA  for
+GSC 04562-00458.
+A Transient Associated with a Spiral Galaxy: RT 19840613
+One transient is of particular interest because it is coincident with
+a spiral galaxy at a redshift FORMULA  (a distance of FORMULA  Mpc
+using FORMULA ). The galaxy, identified as
+MAPS-P023-0189928, has FORMULA  mag, FORMULA  mag, and a major axis
+of FORMULA . The transient is clearly non-nuclear; it is offset to
+the southwest of the optical nucleus by FORMULA , corresponding
+to a projected distance of FORMULA  kpc. The optical nucleus
+is coincident with the infrared nucleus as identified in the 2MASS
+catalog at an accuracy of FORMULA . The probability of a single chance
+association with an optical source in the POSS at a few arcsecond
+precision is  FORMULAFORMULA 1%FORMULA 2 1028FORMULA -1FORMULA -1FORMULA 2 1038FORMULA -1FORMULA The transient is not detected in any other individual epoch, even with
+reduced detection thresholds. The transient is also not detected in any
+two-month average in the year surrounding its detection, nor is it detected
+in any annual average from the entire data set. It is also not detected
+in the year prior to detection, nor in the six years following detection.
+The absence of a detection in other light curves at 5 GHz
+is consistent with a rapid rise and a decline
+in the flux density with a power law of FORMULA .
+The deep image of the region surrounding the transient shows extended
+radio continuum emission associated with the spiral galaxy
+and a companion galaxy
+(Figure ). The location of the transient coincides with
+a region of peak emission, but it is not possible to conclude whether that
+emission is the result of the transient or a peak in the galactic
+emission. The peak of emission
+near the position of the transient is FORMULA Jy, which corresponds to
+a star-formation rate of FORMULA 
+{{cite:fc84f72d-f3ef-4101-9195-68eedc798444}}.
+The association of the transient with the non-nuclear region of a spiral
+galaxy, together with its luminosity, suggest that the transient may
+be a RSN. The transient is very unlikely to be a Type II RSN, as these
+sources exhibit rise and decay timescales of months to years, implying
+that a Type II RSN would be detected multiple times in our survey
+{{cite:cd681aea-a4c3-4d6b-9e82-dee859192e47}}.
+Type Ia RSN have never been detected at radio wavelengths
+{{cite:66f7bc35-ee75-4529-93ca-34f91611b123}}. Type Ib/c
+RSN, on the other hand, evolve on timescales of days to months. The
+anomalous Type Ib/c RSN associated with SN 1998bw and GRB 980425
+doubled its flux density during its rise and halved its flux density
+following the peak in FORMULA  d
+{{cite:649a468f-3a96-4fd3-a950-6dd93b91c6a8}}.
+The light curve declined as FORMULA 
+with the exception of a brief period of increase attributed to
+clumpiness in the circumstellar medium. The luminosity of
+RT 19840613 places it among the brightest SNe Ib/c,
+although a factor of a few fainter than SN 1998bw
+{{cite:00f45a1b-5a5e-40b7-a9d5-eaa240b84f94}}.
+The luminosity of SN 2002ap, also a SN Ib/c,
+is four orders of magnitude less than that of SN 1998bw
+{{cite:00f45a1b-5a5e-40b7-a9d5-eaa240b84f94}}.
+The luminosity of RT 19840613 is three orders
+of magnitude less than the typical radio luminosity of a GRB
+afterglow.
+
+A Transient Associated with a Blue Galaxy: RT 19870422
+RT 19870422 is located within FORMULA  of the centroid of
+MAPS-P023-0189613. The Keck image shows that this
+RT is clearly associated
+with a blue galaxy and is significantly offset from the nucleus.
+The integrated FORMULA  magnitude of the galaxy is 20.2,
+with FORMULA  mag, and the
+redshift is determined to be FORMULA  (or a distance of 1050 Mpc).
+Galaxy-template matching to the Keck spectrum
+shows it to most likely be an Sc galaxy with
+strong [O2] and [O3] emission, indicating current
+star formation.
+The inferred isotropic radio luminosity is
+FORMULA , or
+FORMULA  for a bandwidth of
+10 GHz.
+RT 19870422 was detected in a two-month integration, implying a
+total energy release
+FORMULA  erg. We see no evidence for detection
+in other epochs, implying a source that fades with a timescale of
+two months or less following its peak.
+In the deep integration, we see that the galaxy is detected
+with an irregular morphology (Figure ).
+The faint radio emission, however, is offset from the position of
+RT 19870422.
+RT 19870422 shares many characteristics with RT 19840613.
+The RT position is clearly separated from the peak of the optical emission,
+ruling out the possibility of an AGN event. Its longer duration
+and higher luminosity, however, differentiate it.
+The luminosity is nearly an order of magnitude greater
+than that of SN 1998bw, and two orders of magnitude more luminous
+than the bright Type II SN 1979C {{cite:cd681aea-a4c3-4d6b-9e82-dee859192e47}}.
+Thus, the luminosity falls in between the maximum observed
+luminosity of a RSN and the typical luminosity of a
+GRB afterglow. The two-month duration of RT 19870422 is more consistent
+with known RSNe of both Type Ib/c or Type II, as well as GRB afterglows.
+
+Transients Possibly Associated with Galaxies or
+Galaxy Groups: RT 19920826 & 19970528 
+RT 19920826 is located FORMULA  to the southeast of
+a red galaxy identified in the Keck image, which is not identified
+in the MAPS catalog.
+The host is a red object with no clear emission or absorption
+lines.
+RT 19970528 is located FORMULA  to the northwest of
+MAPS-P023-0189499, which has FORMULA  mag and FORMULA  mag.
+Two other galaxies are identified within a radius
+of FORMULA .
+The nearest one is a red, early-type galaxy at FORMULA .
+Galaxy-template matching shows it is most likely an elliptical galaxy,
+but it is also well fit by an S0 spectrum.
+We computed
+the probability of false association of these galaxies with
+transients through Monte Carlo simulations. We randomly distributed 100,000
+radio sources over the field and then measured the distance to
+the nearest galaxy as identified in the MAPS catalog. The probability
+of a false association at a distance of less than FORMULA  is only 2%.
+The probability of a false association at a distance of FORMULA  is
+FORMULA %. The probability for any one of the 10 RTs being randomly
+associated with
+a galaxy at a distance of FORMULA  is FORMULA , and at a distance of
+FORMULA  the probability is nearly unity. The probability of multiple sources
+located within FORMULA  is  FORMULAFORMULA 5% FORMULA
+
+Sources without Radio or Optical Counterparts: RT 19840502,
+19860115, 19860122, 19970205, 19990504, & 20010331
+There is no evidence for faint radio, optical, or infrared counterparts
+for six of our sources: RT 19840502, 19860115, 19860122, 19970205,
+19990504, 20010331. There are no sources apparent in the image
+obtained by averaging the succeeding two months of data, as well as
+in the year-long and decade-long averages.
+These results require a rapidly decreasing light curve, proportional
+to FORMULA  or steeper.
+RT 19860115 has two possible hosts. The first possible host, Object 1,
+is located FORMULA  to the northeast of the RT and is a
+starburst galaxy at FORMULA  with strong emission lines and a blue
+continuum.
+Object 1 is identified as
+MAPS-P023-0190130, a galaxy with FORMULA  mag and FORMULA  mag, and
+is also detected as a faint, extended radio source.
+The other possible host, Object 2, is located FORMULA  to
+the southwest of the RT and is an early-type galaxy at
+FORMULA . Galaxy-template matching shows the spectrum is best fit by
+either an elliptical or S0 galaxy spectrum.
+Several other objects, likely to be galaxies,
+are in the field.
+The physical separation of RT 19860115 from the two objects is
+FORMULA –100 kpc, which is still within a radius at which the
+galaxy may contain stars.
+Nevertheless, given the Monte Carlo simulations discussed above, we conclude
+that this transient is likely associated only by chance with these galaxies.
+For the remainder of sources, there are no obvious associations with galaxies
+or stars. The absence of optical or infrared counterparts only eliminates
+host candidates; the non-simultaneity of radio and optical observations
+implies that we place no limits on optical transients.
+
+Radio Transient Rates
+We can compute rates of transients in several different
+ways. We are limited in the accuracy of estimating transient rates
+by our lack of knowledge of the characteristic time scale, FORMULA , of
+the transient sources. This characteristic
+time falls between the duration of the observations (FORMULA  min)
+and the typical separation between epochs (7 days).
+The two-epoch survey sensitivity is independent of FORMULA .
+The effective area for a two-epoch survey for a given flux-density limit is
+just the sum of the areas in each epoch in which a source above
+the flux-density
+limit is detectable. For a set of FORMULA  images with uniform sensitivity over
+a solid angle FORMULA  in which FORMULA  transients are detected,
+the two-epoch source density is FORMULA .
+For a sample with varying image properties,
+we can compute the two-epoch source density
+given the image noise statistics, the synthesized beam size,
+and the primary beam shape. The ratio of the primary beam solid angle to the
+synthesized beam solid angle gives the number of independent pixels in the
+image. The source detection threshold per image is then set based on
+the number of independent pixels and the rms noise.
+We combine the 5 GHz and 8.4 GHz survey limits
+and transient detections together.
+The accumulated results as a function of flux-density threshold are
+listed in Table .
+We use a non-parametric
+Kaplan-Meier method {{cite:d1a9f227-7c4a-48d5-9d59-c5a718666280}},
+for estimating the cumulative source-count distribution
+and then compute transient rates (Figure ).
+Seven transients are detected above a flux density of 370 FORMULA Jy, giving a
+two-epoch source density of FORMULA . The
+transient rates
+are reasonably fit by a distribution with FORMULA  and FORMULA ,
+which corresponds to a non-evolving, volume-limited sample. However,
+the constraints on FORMULA  are not very strong. A larger FORMULA  appears to
+be required to achieve agreement between the rate determined from this
+survey and the NVSS-FIRST survey
+{{cite:1edd93a3-7daa-4d0c-846a-69a171a8a6ce}}.
+Different event rates at 1.4 and 5 GHz due to synchrotron self-absorption
+or other spectral index effects may also influence this comparison.
+Additionally, the FIRST-NVSS survey may be incomplete due to confusion
+from the mismatched resolution of these surveys.
+We detected no transients in the 17 annual average images. The typical
+flux detection threshold at the half-power radius is 90 FORMULA Jy. The total
+two-epoch area surveyed at this sensitivity is 0.3 degFORMULA , implying a
+FORMULA  upper
+limit to the two-epoch density for year-long transients at 90 FORMULA Jy of
+FORMULA . In 96 images composed of two-month averages,
+we found two transients. At a flux-density threshold
+of 200 FORMULA Jy, the effective area surveyed is 1.9 degFORMULA , giving a
+FORMULA  upper limit to the two-month transient rate
+of FORMULA .
+We can also determine a rate as a function of area and time. The
+precision of this rate is limited by our lack of measurement of
+the characteristic time of the transient events.
+The rate for sources brighter than 370 FORMULA Jy is then
+FORMULA .
+If we assume that RTs 19840613 and 19870422 belong to a distinct
+transient class based on their association with blue galaxies,
+we can estimate a rate for such transients as a function of volume and time.
+We could detect this transient to a distance of FORMULA  Mpc, which gives
+a total volume of FORMULA  MpcFORMULA . Assuming FORMULA ,
+we find a rate of FORMULA .
+Similarly for RT 19870422, we find a maximum volume of FORMULA  MpcFORMULA 
+and use FORMULA  to find a rate of
+FORMULA . Jointly for RT 19840613
+and RT 19870422, the rate is FORMULA .
+These rates are consistent within an order of magnitude of the SN Ib/c
+rate determined optically,
+FORMULA 
+{{cite:00f45a1b-5a5e-40b7-a9d5-eaa240b84f94}}.
+There is some evidence that our VLA field contains an overdensity
+of galaxies at FORMULA  (Table ).
+Additionally, the cluster Abell 2047 is located within FORMULA  of the
+center of the VLA field {{cite:daeecb44-98c7-46df-99e8-08327b69f6c2}}. A2047 is a low-density
+cluster (richness class 0) with a radius FORMULA 
+and a distance class of 6. The distance class is an estimate of distance
+based on visual inspection of photographic plates. The distance class
+of 6 is consistent with a redshift of 0.25 for the cluster
+{{cite:54dda7b6-ee8a-4bab-b90c-c317558bfd50}}. If all
+the RTs are extragalactic, then the
+RT rates may be overestimated relative to the rate for the
+field by no more than a factor of a few.
+
+Discussion
+Two of the transients are reasonably identified as RSNe, possibly
+Type Ib/c or II and similar to known RSNe associated with GRBs.
+We consider now whether the eight transients not clearly
+identified with nearby galaxies
+are examples of known or expected
+classes of radio transients. These transients are unlikely to be RSNe
+unless they are associated with faint and/or low surface brightness galaxies.
+As we demonstrate below, the observed transient
+parameters do not easily fit into any expected class.
+The known and anticipated sources of radio transients are very broad.
+Since we have no evidence for variability on a timescale of less than
+20 min,
+we exclude from further discussion transient sources that have characteristic
+timescales of less than 1 s. These include pulsars and related
+phenomena such as RRATS and giant pulses
+{{cite:701a9e7a-9166-4d2b-9cee-411a92673b36}}, {{cite:dceb31d0-930c-4bd8-bc67-3ac1842ef39b}}, {{cite:b0cd51ea-1ffb-4445-8d0d-577c7eaddf58}},
+as well as flares from
+extrasolar planets {{cite:9a132bdd-e039-495d-9e43-9b6d752c4f8c}}, {{cite:0e6cedbf-fb30-471f-b253-84047ba67d6e}}.
+X-ray Sources
+Information on the X-ray properties of the transients and transient hosts
+is very limited.
+The ROSAT catalog of bright sources does not identify any sources
+in the field of our survey {{cite:77cd4206-c961-4929-942c-6978cd70bcc2}}.
+There are also no sources in the RXTE All Sky Monitor catalog in the field,
+indicating an upper limit to the X-ray flux of events between 1997
+and 2001 of FORMULA  mCrab {{cite:e43432aa-cfe6-4286-add8-790c7053c0d4}}.
+No observations of the field have been made with the Chandra
+or XMM Newton X-ray Observatories.
+
+Gamma-Ray Burst Afterglows
+Higher-energy counterparts to these transients have not been clearly
+detected. There are no known optically discovered SNe in the field of view
+of our survey, nor have there been any optical variability campaigns in this
+field. There are no GRBs which are uniquely localized
+to this field, although there are bursts with large positional uncertainties
+that could have originated in the field of view of our survey. We identify
+7 BATSE events that occurred within FORMULA  of our field center between
+1991 and 1999. Uncertainties in the BATSE positions, however, are
+FORMULA ,
+indicating a probability of FORMULA  for even one of these GRBs to have
+occurred within our field
+of view. Of the GRBs, one event (GRB 990508) occurred 4 d after
+RT 19990504. Given the low probability of concurrence and the
+lack (in other GRBs) of radio emission before gamma-ray emission,
+we conclude that this is almost certainly a coincidence. There is no
+systematic relationship between the remainder of the events and the
+radio transients.
+
+Orphan Gamma-Ray Burst Afterglows
+In the standard paradigm of GRBs and GRB afterglows, the gamma-ray emission is
+highly anisotropic while the afterglow emission is less anisotropic or even
+isotropic. Thus, the observed GRBs and their afterglows from Earth are a
+subset of the total number of
+GRBs. Afterglows detected without gamma-ray emission are known as orphan
+gamma-ray burst afterglows. The ratio of OGRBAs to GRBs is the
+inverse of the
+beaming fraction, FORMULA  {{cite:3b78227a-7489-494e-ac4c-018a3976393e}}. The
+phenomenon of a GRB afterglow without a corresponding gamma-ray burst has
+not been conclusively detected.
+Detailed models of OGRBAs predict FORMULA 1 per square degree at
+sensitivity thresholds
+of 0.1 mJy, which is consistent with our number of transient detections
+{{cite:817c2ddb-bf38-4666-9972-21effdb9deed}}, {{cite:fd22b06b-07e9-4824-9a93-4a1f67c3a7e2}}.
+Whereas the canonical radio afterglow for the forward shock rises on a
+timescale of days and decays slowly, the majority of the radio
+transients found in the present survey occur on timescales
+less than 1 week. One possible explanation in the context of
+GRB orphans is that the emission is due to the reverse shock, which is
+known, in the few cases where follow-up observations occurred
+soon after the GRB, to produce a bright and rapid (FORMULA  d) radio signature
+{{cite:5789c7d6-766b-4e29-b2e2-6c205924bb1e}}, {{cite:c8e0a0a8-148e-454f-98a6-5759ba90b21d}}.
+Strong scintillation {{cite:a63b3577-4501-404b-84e1-502c5910373e}}
+of a standard, faint afterglow could also be responsible for producing
+short-term amplification that leads to an apparent fast transient, but then
+we might see marginal evidence for the forward shock in
+the epochs following the transient — yet this is not seen
+in individual sources.
+The single long-timescale transient (RT 20010331) could be consistent with
+having arisen from the long-lived forward shock (as it transitions from
+mildly relativistic to nonrelativistic).
+Levinson et al. (2002) {{cite:817c2ddb-bf38-4666-9972-21effdb9deed}}
+calculate the expected number of forward-shock dominated OGRBAs for
+radio surveys. Taking the canonical interstellar medium density
+of FORMULA  cmFORMULA , it is
+reasonable to expect that we only find 1 viable forward-shock candidate
+with the nominal beaming of FORMULA . Nevertheless, since for the
+parameters of our survey we probe only to FORMULA , the
+non-detection of an apparent host galaxy in deep Keck imaging of
+RT 20010331 would seem to suggest that our basic model assumptions
+for the radio afterglow are suspect.
+Thus, the transients that we have detected can be considered consistent
+with the expectations of OGRBAs. There is, however, a large diversity
+of high-energy phenomena with poorly explored electromagnetic
+signatures beyond the classical GRB afterglow picture, including
+X-ray flashes, X-ray rich GRBs
+{{cite:4925f265-d22c-4038-8fab-0c3c7367d895}},
+GRBs associated with SNe Ib/c
+{{cite:00f45a1b-5a5e-40b7-a9d5-eaa240b84f94}}, and short-duration GRBs
+{{cite:569a30ba-95dd-4c93-ab43-45f643fbe021}}. The richness
+of this phenomenology suggests that the radio transients we have discovered
+could reflect the continuum of stellar collapse events.
+
+Active Galactic Nuclei
+AGNs are highly variable and common.
+With the appropriate selection technique, AGNs can be found with a
+number density of FORMULA  per square degree
+{{cite:fabbd2ab-da53-4828-9617-f4f98aa9bc5a}}. If our
+transients are AGNs, then the absence of deep, static detections indicates
+they are associated with radio-quiet objects,
+which constitute the majority of AGNs. Short-timescale variability of
+AGNs is often associated with interstellar scintillation and
+extreme scattering events, and typically has amplitudes of FORMULA 
+{{cite:f7ea8f76-99b2-4d5b-8246-507e8c34e8d3}}.
+Variations of a factor of a few on timescales of hours
+have been seen in the most
+extreme cases such as PKS 0405-385 and J1819+3845,
+which is not sufficient to account for the observed
+transients given the very large amplitude of variation observed
+{{cite:2d1694d0-c24e-4147-816c-9f9c7e6f5938}}, {{cite:042102b9-8dad-4b5b-9076-a313b77ca26c}}.
+Intrinsic variations among luminous AGNs
+are observed to have a
+timescale of months to years at radio frequencies
+{{cite:10462e5a-330c-4ec6-875c-7c6f5140ba3c}}.
+Variations are rarely larger than a factor of a few in radio-loud objects.
+A survey of variable background sources in the direction of M31 found
+a small number of objects with variability of a factor of a few to 10
+on timescales of years {{cite:02251456-bbc8-4d9f-b01f-44df2adab11e}}.
+An interesting example is the nucleus of the
+nearby spiral galaxy III Zw 2, which has exhibited factor of 20 fluctuations
+in its radio luminosity on timescales of months to years
+{{cite:8cc52039-0fee-40f4-bb3f-f3267604a985}}.
+The TeV blazar Mrk 421 shows 50% variations on
+a timescale of FORMULA  d {{cite:124eeb13-fcc0-48ea-a4e9-e1673d90fe57}}.
+Sudden increases
+in the accretion rate, or shocks in the jet,
+could lead to a dramatic flare at radio wavelengths;
+however, these flares are expected to have timescales on the order of
+months to a year, inconsistent with our observations.
+Recently discovered evidence for tidal disruption events in AGNs observed
+in the ultraviolet indicate the possibility for large-amplitude AGN
+transients {{cite:b5261c76-eead-4974-84b9-2e8b741f541a}}.
+However, the timescale for the observed UV transients
+are months to a year rather than days. Without a mechanism for a short
+timescale in the radio, tidal disruption events are unlikely to account
+for the observed radio transients.
+
+Stellar Sources
+We cannot exclude a Galactic origin for these transients. A wide range of
+stars and stellar systems are known to flare on timescales of minutes to
+hours to days. However, no known stellar types closely fit the properties
+of these transients. Our field (FORMULA , FORMULA )
+is out of the plane of the Galaxy,
+away from the Galactic center and bulge,
+and is not near any known star cluster or star-forming region.
+It is likely, therefore, that any stellar origin for these transients would
+be even more numerous in one of these more favored directions.
+Known Luminous Transients
+The luminosity of the observed
+transients is FORMULA . This is near the upper limit of
+the known stellar radio luminosity distribution
+{{cite:023b54b2-94c8-498c-b1e7-c9479ccd762b}}.
+RS CVn binaries, FK Com class stars, Algol-class stars, and T Tauri
+stars have been observed to radiate at this luminosity
+{{cite:d4a1839f-68ec-47af-a1dd-9f74d7354e8d}}.
+The total number of known RS CVn, FK Com stars, and Algol stars
+discovered at X-ray wavelengths is
+FORMULA , indicating that we are unlikely to detect any such objects by
+chance, even if the distance cutoff in our survey is 10 kpc
+{{cite:6204a119-65c8-4d0a-b15d-3d663dbb513a}}.
+T Tauri stars are more common but are
+unlikely to be found outside regions of active star formation.
+
+Late-Type Stars
+M-type dwarfs at distances as large as 1 kpc
+have been identified as an important contribution to optical
+transient rates {{cite:395aa676-0c6b-41f5-99b9-1e381d112e76}}, {{cite:65d19129-c6d0-4e4b-8fe3-87a2ee39410f}}.
+Due to the typical low radio luminosity
+(FORMULA  – FORMULA ) of known
+dMe stars and brown dwarfs, they are likely to be detected at
+distances of 30 pc or less. In an extreme case, the dMe star
+EV Lac was observed to undergo a flare of
+a factor of FORMULA  to a maximum luminosity
+FORMULA ,
+with a rise time of minutes and a
+decay time of hours
+{{cite:1d992530-8247-4f30-8c86-7d50ab40be6c}}. Such a flare would be observed in our survey
+to a distance of 100 pc.
+The local space density of stars with FORMULA  is
+0.035 pcFORMULA , implying only a small chance of a low-mass star
+or brown dwarf within the volume to which we are sensitive
+{{cite:f4f89624-2694-4c0f-9396-826a6357727a}}.
+Any stellar origin for these transients must come from a faint
+source, since we have no detection of stellar counterparts in Keck,
+2MASS, or PAIRITEL images.
+The 2MASS magnitude limit of FORMULA  implies that
+any L dwarf (FORMULA  mag) or earlier-type star must be at
+a distance FORMULA  pc to remain undetected. PAIRITEL limits require
+such stars to be at a distance FORMULA  pc.
+The limiting Keck magnitude requires late-type M stars to
+be at a distance FORMULA  pc.
+The probability distribution of radio activity in low-mass stars
+is not well quantified. Few stars have been observed at radio
+wavelengths for more than a few hours or a few days.
+Despite the lack of long-term monitoring of dMe
+stars, one can estimate the probability distribution
+of flares by comparison with the properties of the Sun. The
+probability of a solar flare at centimeter wavelengths
+of a given flux density FORMULA  scales as FORMULA  {{cite:64edc60b-3668-43ff-b106-b23b6c969b4f}}.
+>From observations of a large sample of late-type stars
+{{cite:d1c1b547-0216-4718-b885-b91da88cd532}}, we estimate a probability of FORMULA 
+for a late-type star to exhibit a luminosity
+FORMULA .
+If the probability of stellar flares scales with the same relation as
+solar flares, a flare of FORMULA  from a late-type star at a distance of
+1 kpc would be visible in our radio survey but
+missing in the Keck image, and it would occur with a probability
+of FORMULA . Assuming a constant density of stars set to the local
+value, the total number of M dwarfs out to 1 kpc within our field
+of view is FORMULA . Given our FORMULA  observations, the expected
+number of flares of this magnitude detected is  FORMULAFORMULA 1FORMULA Very large radio flares might be accompanied by luminous X-ray flares.
+If the transients follow the radio/X-ray correlation
+{{cite:023b54b2-94c8-498c-b1e7-c9479ccd762b}}, then
+a radio flare of FORMULA  at a distance
+of 1 kpc would have an X-ray luminosity of
+FORMULA , which exceeds the RXTE ASM detection
+threshold of FORMULA . However, many sources
+do not closely follow this relationship, including many low-mass
+stars {{cite:0c8b5b4e-162f-4b9e-ac36-b3f2d5891bbb}}.
+
+Soft Gamma-Ray Repeaters
+The transients share some properties with
+soft gamma-ray repeaters (SGRs). SGRs are magnetars that exhibit
+dramatic flares at gamma-ray and radio wavelengths
+{{cite:4e03f478-a204-4f73-90f9-0bd69510c28e}}, {{cite:b07e2036-b003-449d-8b9b-588383fcec40}}.
+SGR 1806–20 produced a flare that reached a luminosity of
+FORMULA , had a characteristic
+timescale of days, and declined as FORMULA . Such a flare would be
+detectable in our dataset at a distance of FORMULA  kpc, would
+appear in only a single epoch, would fade away rapidly so that it is not
+seen in long-term averages, and would have no lasting optical counterpart.
+If all of our transients are Milky Way
+SGRs to a distance of  FORMULAFORMULA 200 FORMULA FORMULAFORMULA 0.01  kpc-3 y-1 FORMULA FORMULAFORMULA 3  yr-1 FORMULA
+
+X-ray Binaries
+X-ray binaries (XRBs) can be seen throughout the Galaxy
+{{cite:b7b3d60d-f3e0-4c61-8e3d-3fca6361cc9f}} but are rare
+{{cite:40ae0e15-8eed-4bb8-a4b5-af037d8ea563}}. For the extremely overdense Galactic center,
+the XRB detection rate in the radio is  FORMULAFORMULA 0.01  kpc-3 yr-1 FORMULA
+
+Pulsars
+Most pulsar variability occurs on time scales much shorter than our
+observations and is therefore unlikely to account for our observed
+transients. There have been some examples, however, of longer timescale
+variability. PSR B1931+24, for instance, has periods of
+activity and inactivity with characteristic times of days to tens of
+days {{cite:d68c3662-7d90-440c-95cc-24fe0e7170fe}}. This variability is quasi-periodic, however, indicating
+that we would detect it and similar pulsars in multiple epochs throughout
+our survey.
+
+Propagation Effects
+We have already referred to the phenomenon of intra-day variability (IDV),
+which in the most extreme cases leads to variations of a factors of a
+few on a timescale of hours. IDV of this scale has been demonstrated to
+originate from interstellar scintillation of compact structure in the
+source. {{cite:d6cb8e20-577b-4327-9b54-ed57b2b05196}}
+identified a factor of 43 fluctuation in the flux density
+of PSR B0655+64 at 325 MHz, which they argue originates from strong
+focusing in the interstellar medium — that is, a caustic. It is difficult
+to estimate the frequency with which such a phenomenon can occur, but
+observational evidence is scarce.
+Microlensing could also produce a transient amplification of a background
+source. A simple calculation estimates that to explain all 10 RTs as
+the result of microlensing requires the product
+ FORMULAFORMULA 10-2FORMULA n FORMULA FORMULAFORMULA 10-7FORMULA n  FORMULAFORMULA 109 FORMULA
+Finally, reflected solar flares off objects in the Solar System could
+produce detectable radio flares. A 1 MJy solar flare reflecting off a
+1000 km object at a distance of 1 AU from the Earth would produce a
+0.1 mJy flare at Earth. Our observed field is far out of the
+ecliptic plane, however, and there are few known Solar-System objects
+of this size outside of the ecliptic. Nearer objects could be smaller
+but would move significantly during the course of the observation.
+
+Conclusions
+We have conducted a 944-epoch, 20-yr-long survey for radio transients
+with archival 5 and 8.4 GHz Very Large Array data. Ten radio transients
+are apparent in this data set. Eight transients appear in only a single epoch
+and disappear completely thereafter. Two transients appear in two-month
+integrations and also never reappear. We estimate the rate of radio
+transients below 1 mJy with a large uncertainty due to the wide range
+of characteristic times possible for these sources.
+Two of the transients may be peculiar
+Type Ib/c and/or Type II radio SNe in nearby galaxies.
+All of these transients share some characteristics with those expected
+of orphan gamma-ray burst afterglows, but they cannot be conclusively
+identified as such. The diversity of high-energy stellar-death
+phenomena makes it difficult to
+place specific limits on the nature of GRBs based on these results.
+The absence of persistent counterparts to these sources indicate that
+they are unlikely to be AGNs.
+Galactic sources appear unlikely to be an explanation, but
+they certainly cannot be ruled out. In particular, late-type stars could
+contribute to the number of radio transients if their luminosity distribution
+can be extrapolated by several orders of magnitude beyond the most
+luminous observed M-dwarf flare.
+Deeper multi-wavelength imaging is critical for identifying the hosts
+of these events.
+In the near future, the Allen Telescope Array {{cite:f99b836d-54b0-47e8-9c1c-1ef2cf3f36c2}}
+will be efficient at
+discovering transients of this sort. The wide field of view of this
+telescope makes it a powerful instrument for large solid angle radio
+surveys. Given the apparently short timescale of these
+phenomena, rapid response to transient discovery at radio and other
+wavelengths will be critical for determining the nature of these
+transients.
+These observations made use of archival data from the Very Large Array.
+The National Radio Astronomy Observatory is a facility of the National
+Science Foundation (NSF) operated under cooperative agreement by
+Associated Universities, Inc. This research utilized the NASA/IPAC
+Extragalactic Database (NED), which is operated by the Jet
+Propulsion Laboratory, California Institute of Technology, under
+contract with the National Aeronautics and Space Administration (NASA).
+It also used the SIMBAD database, operated at CDS,
+Strasbourg, France, as well as data from the University of Michigan
+Radio Astronomy Observatory, which has been supported by the
+University of Michigan and the NSF.
+Some of the data presented here were obtained at the W. M. Keck
+Observatory, which is operated as a scientific partnership among the
+California Institute of Technology, the University of California,
+and the National Aeronautics and Space Administration. The Observatory
+was made possible by the generous financial support of the W. M. Keck
+Foundation. We thank the Keck staff for their assistance.
+The Peters Automated Infrared
+Imaging Telescope (PAIRITEL) is operated by the Smithsonian
+Astrophysical Observatory (SAO) and was made possible by a grant
+from the Harvard University Milton Fund, a camera loan from the
+University of Virginia, and the continued support of the SAO,
+M. Skrutskie, and UC Berkeley. The PAIRITEL project and D.P. are
+further supported by NASA/Swift Guest Investigator Grant NNG06GH50G.
+A.V.F. acknowledges NSF grant AST–0607485 and NASA/Swift grant
+NNG06GI86G. We thank Daniel Stern, Mark Dickinson, and Hyron Spinrad
+for assistance with some of the Keck observations and analysis.
+rrrrr
+
+Steady Sources Detected in at Least One Epoch
+RA  Dec.  FORMULA  
+FORMULA    FORMULA
+(J2000)  (J2000)  
+(FORMULA Jy)  (FORMULA Jy)
+
+5c5 GHz
+15 00 11.48 FORMULA  0.10  78 12 42.26 FORMULA  00.13  26  2380 FORMULA  73  502 FORMULA  17
+15 00 44.87 FORMULA  0.10  78 18 39.04 FORMULA  00.32  4  874 FORMULA  36  180 FORMULA  7
+15 01 11.70 FORMULA  0.10  78 15 20.23 FORMULA  00.10  141  504 FORMULA  6  307 FORMULA  4
+15 01 16.19 FORMULA  0.10  78 12 45.88 FORMULA  00.10  363  1146 FORMULA  14  741 FORMULA  5
+15 01 22.67 FORMULA  0.10  78 18 05.66 FORMULA  00.10  452  880 FORMULA  9  634 FORMULA  3
+15 02 51.40 FORMULA  0.10  78 18 12.46 FORMULA  00.10  23  351 FORMULA  19  155 FORMULA  3
+15 03 24.83 FORMULA  0.14  78 17 37.62 FORMULA  00.46  1  318 FORMULA  54  166 FORMULA  4
+15 03 28.07 FORMULA  0.30  78 09 21.50 FORMULA  01.04  1  2045 FORMULA  301   FORMULA
+5c8.4 GHz
+15 01 11.13 FORMULA  0.12  78 15 22.45 FORMULA  00.32  1 1081 FORMULA  154  291 FORMULA  9
+15 01 22.58 FORMULA  0.10  78 18 05.80 FORMULA  00.10  159  1099 FORMULA  36  794 FORMULA  8
+15 02 51.38 FORMULA  0.10  78 18 13.14 FORMULA  00.18  3  518 FORMULA  31  225 FORMULA  4
+15 03 23.41 FORMULA  0.41  78 17 35.74 FORMULA  00.64  1  840 FORMULA  157  212 FORMULA  8
+Columns are (1) right ascension, (2) declination, (3)
+the number of epochs in which the source is detected,
+(4) mean flux density of detections, and (5) flux density in the deep image.
+rrrrrrrrr
+
+Transient Sources from a Single Epoch
+Epoch RA  Dec. 
+FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   Host
+ (J2000)  (J2000) 
+(FORMULA Jy)  (FORMULA Jy)  (days)  (FORMULA Jy)
+
+8c5 GHz
+19840502  15 02 24.61 FORMULA  0.21  78 16 10.08 FORMULA  00.46  448 FORMULA  74  FORMULA   7  FORMULA  4.5  X
+19840613  15 01 38.07 FORMULA  0.21  78 18 40.75 FORMULA  00.39  566 FORMULA  81  FORMULA   7  FORMULA  7.5  G
+19860115  15 02 26.40 FORMULA  0.44  78 17 32.39 FORMULA  01.59  370 FORMULA  67  FORMULA   7  FORMULA  3.6  X
+19860122  15 00 50.15 FORMULA  0.34  78 15 39.37 FORMULA  01.38  1586 FORMULA  248  FORMULA   7  FORMULA  6.4  X
+19920826  15 02 59.89 FORMULA  0.35  78 16 10.82 FORMULA  02.44  642 FORMULA  101  FORMULA   56  FORMULA  6.3  ?
+19970528  15 00 23.55 FORMULA  0.10  78 13 01.37 FORMULA  00.17  1731 FORMULA  232  FORMULA   7  FORMULA  7.9  ?
+19990504  14 59 46.42 FORMULA  0.56  78 20 29.03 FORMULA  00.74  7042 FORMULA  963  FORMULA   21  FORMULA  9.1  X
+8c8.4 GHz
+19970205  15 01 29.35 FORMULA  0.10  78 19 49.20 FORMULA  00.10  2234 FORMULA  288  FORMULA   5  FORMULA   8.0  X
+Columns are (1) RT epoch, (2) right ascension, (3) declination,
+(4) mean flux density of detection, (5) flux density in the deep image,
+(6) separation in days between next epoch and epoch of transient,
+(7) flux density in the next epoch,
+(8) the negative logarithm of the probability of false detection in
+the single epoch, and (9) optical/IR host identification, where “G”
+indicates galaxy, “?” indicates possible galaxy association, and “X”
+indicates no host.
+rrrrrrrrr
+
+Transient Sources with FORMULA  months
+Epoch RA  Dec. 
+FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   Host
+ (J2000)  (J2000) 
+(FORMULA Jy)  (FORMULA Jy)  (days)  (FORMULA Jy)
+
+8c5 GHz
+19870422  15 00 50.01 FORMULA  0.35  78 09 45.49 FORMULA  0.97  FORMULA   FORMULA   96  FORMULA   3.0  G
+8c8.4 GHz
+20010331  15 03 46.18 FORMULA  0.10  78 15 41.68 FORMULA  00.11  697 FORMULA  94  FORMULA   59  85 FORMULA  85  3.4  X
+Columns are (1) RT epoch, (2) right ascension, (3) declination,
+(4) mean flux density of detection, (5) flux density in the deep image,
+(6) separation in days between next epoch and epoch of transient,
+(7) flux density in the next epoch, (8) the negative logarithm of
+the probability of false detection in the single epoch, and (9)
+optical/IR host identification, where “G” indicates galaxy,
+“?” indicates possible galaxy association, and “X” indicates no host.
+lrrrrr
+Magnitudes, Colors, and Redshifts of Transient Host Galaxies
+RT Epoch  MAPS Counterpart  Host Offset  FORMULA   FORMULA    FORMULA
+   (mag)  (mag)
+
+19840613  P023-0189928  2.7FORMULA  NW  16.5  1.8  0.040
+19860115-1  P023-0190130  15FORMULA  NE  19.2  1.3  0.130
+19860115-2  ... 20FORMULA  SW    0.242
+19870422  P023-0189613  1.5FORMULA  SE  20.2  2.5  0.249
+19920826  ... 5FORMULA  NW    unknown
+19970528  P023-0189499  5FORMULA  SE  19.6  2.4  0.245
+Host offset is position relative to the transient.
+Magnitudes and colors are from MAPS catalog.
+rrrrrrr
+
+Effective Area Searched for a Comparable Two-Epoch Survey
+  2c5 GHz  2c8.4 GHz  Total
+Flux Density  Number of Epochs  Area  Number of Epochs  Area  Number of Epochs  Area
+(FORMULA Jy)   (degFORMULA )  (degFORMULA )  (degFORMULA )
+
+70  9  0.16  0  0.0  9  0.16
+100  10  0.24  0  0.0  10  0.24
+140  12  0.34  0  0.0  12  0.34
+200  35  0.50  0  0.0  35  0.50
+280  201  1.42  442  1.45 435  2.19
+400  464  4.57  560  3.08 761  6.20
+560  561  9.14  584  4.79 873  11.68
+800  596  14.56  591  6.64 910  18.09
+1120  606  19.85  591  8.40 924  24.31
+1600  607  25.51  598  10.28 925  30.97
+rrrrrrr
+
+Effective Area Searched for a Comparable Two-Epoch Survey for FORMULA  months
+  2c5 GHz  2c8.4 GHz  Total
+Flux Density  Number of Epochs  Area  Number of Epochs  Area  Number of Epochs  Area
+(FORMULA Jy)   (degFORMULA )  (degFORMULA )  (degFORMULA )
+
+70  24  0.10  9  0.02  26  0.1
+100  41  0.49  38  0.22  54  0.56
+140  55  0.91  61  0.67  73  1.11
+200  75  1.51  74  1.31  99  1.91
+280  90  2.24  78  1.97  115  2.84
+400  95  3.11  78  2.69  120  3.94
+560  95  3.93  78  3.37  120  4.97
+800  95  4.81  78  4.09  120  6.07
+1120  95  5.64  78  4.77  120  7.11
+1600  95  6.52  78  5.48  120  8.22
+rrrrrrr
+
+Effective Area Searched for a Comparable Two-Epoch Survey for FORMULA  year
+  2c5 GHz  2c8.4 GHz  Total
+Flux Density  Number of Epochs  Area  Number of Epochs  Area  Number of Epochs  Area
+(FORMULA Jy)   (degFORMULA )  (degFORMULA )  (degFORMULA )
+
+50  5  0.02  10  0.02  15  0.04
+70  13  0.09  14  0.05  15  0.10
+100  17  0.24  15  0.08  20  0.26
+140  17  0.38  15  0.14  20  0.42
+200  17  0.53  16  0.18  21  0.57
+280  17  0.67  16  0.23  21  0.73
+400  17  0.82  16  0.27  21  0.89
+560  17  0.96  16  0.32  21  1.14
+800  17  1.09  16  0.35  21  1.19
+1120  17  1.15  16  0.36  21  1.24
+1600  17  1.16  16  0.36  21  1.25
+ FIGUREFIGURE 
+Image from epochs 19840613 (left) and 19840620 (right) at 5 GHz.
+The two westernmost sources are steady
+sources J150112+781520 and J150123+781806. The northernmost source is a
+transient, J150138+781841, detectable only in epoch 19840613.
+Contours are 5, 6, and 7 times the image rms of 57 and 63 FORMULA Jy.
+f2.eps
+[]Deep image obtained at 5 GHz. We show the positions
+of single-epoch transient sources at 5 GHz (squares), single-epoch
+transient source at 8.4 GHz (triangle), two-month epoch transient
+sources (diamonds), and steady sources detected at least once in
+an individual epoch (circles). The two large circles indicate the
+half-power radius and twice the half-power radius of the 5-GHz field.
+The grey scale stretches from FORMULA 2.5 to 30 FORMULA Jy. The image has not been
+corrected for primary beam attenuation.
+f3.eps
+[]Light curve of J150123+781806 at 5 GHz (top) and
+8.4 GHz (bottom) from the entire data set.
+ FIGURE FIGURE
+ FIGURE FIGURE
+ FIGURE FIGURE
+ FIGURE FIGURE
+ FIGURE FIGURE
+Light curves of the transient sources for the year surrounding
+detection. A circle around the point denotes the epoch of detection. Other
+points for all sources are all non-detections; values given are best-fit
+Gaussians at the position of the transient.
+ FIGURE FIGUREFIGURE   FIGURE FIGUREFIGURE   FIGURE FIGUREFIGURE   FIGUREContour plots of transients overlaid on color images from
+the deep radio image. Each image is FORMULA  in scale. Contours are 3, 4, 5, 6,
+and 7 times the image rms. The synthesized beam for each image is
+displayed in blue in the lower left-hand corner. The color
+scale of the deep radio image has a range of 0 to 100 FORMULA Jy.
+ FIGURE FIGUREFIGURE   FIGURE FIGUREFIGURE   FIGURE FIGUREFIGURE   FIGUREOptical and infrared images at the positions of transient
+sources. The white circle indicates the uncertainty in the position
+of the RT. Images are from Keck except for RTs 19990504 and 20010331,
+which are from PAIRITEL. The color composite for the Keck images
+was made by using the FORMULA -band image for the blue channel, FORMULA  band
+for the red channel, and the geometric mean of the two images for the
+green channel. Keck images are FORMULA  on a side. The PAIRITEL image
+is in the FORMULA  band and is FORMULA  on a side. The orientation and
+location of the spectroscopic slit is indicated with blue bars.
+North is up and east is to the left. The bright streak in the image of
+RT 19860122 is a diffraction spike from a nearby bright star.
+FIGURE 
+Deep image of the region centered on the transient
+19840613. The small cross marks the position and FORMULA  uncertainty
+in its position. The position is clearly offset from the centroid of
+the radio emission and from the centroid of the optical emission, marked
+with the large cross. The extent of the large cross delineates the
+major and minor axes of the galaxy as measured in 2MASS. Contours are
+3, 4, 5, 6, 7, 8, 9, and 10 times the image rms of 2.6 FORMULA Jy.
+FIGURE 
+Deep image of the region centered on the transient
+19870422. We mark the position and FORMULA  uncertainty of the
+RT (plus sign) and the position of the optical centroid (star).
+The RT position is offset from any peak of the radio emission
+but is consistent with the peak of the optical emission.
+Contours are FORMULA , 2, 3, and 4 times the image rms of 14 FORMULA Jy
+at the location of the transient.
+f9.eps
+[]The cumulative
+two-epoch source density for radio transients as a function of
+flux density. The solid black line shows the rate while the
+dotted lines show the FORMULA  upper and lower bounds. The red
+dashed lines show FORMULA  and FORMULA  curves. Both are
+reasonable fits to these data, while the latter shows greater
+consistency with lower-frequency results. The arrows show
+FORMULA  upper limits for transients from this survey with a
+1-year timescale, two-month timescale, and for transients
+from the comparison of the 1.4 GHz NVSS and FIRST surveys
+{{cite:1edd93a3-7daa-4d0c-846a-69a171a8a6ce}}, from the {{cite:4d3f8a4d-6e56-4463-bc23-d008b655ced9}}
+survey (labeled C2003), and from the {{cite:e92558ac-3c63-4b17-93eb-92766b0bf4d5}}
+survey (labeled F2003). See the main text for details of these
+surveys.

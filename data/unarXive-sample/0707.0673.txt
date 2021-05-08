@@ -1,0 +1,252 @@
+
+Minimal geodesics and topological entropy on  FORMULAEva Leschinsky
+Fakultät für Mathematik, Ruhr-Universität Bochum,D-44780 Bochum, Germany
+2020/09/07 15:50:50Let FORMULA  be the two-dimensional Riemannian torus. In this paper we prove that the topological entropy of the geodesic flow restricted to the set of initial conditions of minimal geodesics vanishes, independent of the
+choice of the Riemannian metric.
+Let FORMULA  be a two-dimensional Riemannian torus. The lift of a geodesic FORMULA  on the universal covering is called a minimal geodesic if it is a globally minimizing geodesic. A precise definition of the topological entropy will be given later. The geodesic flow is denoted by FORMULA  and a geodesic with initial condition FORMULA  is denoted by FORMULA . By construction it holds FORMULA .
+Our aim is to prove the following Main Theorem:
+Main Theorem. 
+Let FORMULA  be a two-dimensional torus with a Riemannian metric and FORMULA  its universal covering.
+Let FORMULA  be defined as follows:
+FORMULA 
+and FORMULA , where FORMULA  is the covering map.
+Let FORMULA  be the restriction of the geodesic flow FORMULA  on the unit tangent bundle of FORMULA  to FORMULA . Then,
+FORMULA 
+
+First we have to introduce some definitions and results for minimal geodesics on FORMULA .
+Definition 1 Let FORMULA  be a compact metric space and let FORMULA  be a continuous flow. Then, for given FORMULA  the dynamical distance function is
+defined as
+FORMULA 
+for all FORMULA .
+Two distance functions FORMULA , FORMULA  on FORMULA  are called uniformly equivalent, if
+FORMULA 
+are both uniformly continuous.
+
+Remark 2 (Distance functions on FORMULA )  
+The Riemannian metric FORMULA  on FORMULA  induces the Sasaki metric on FORMULA . By this we get a distance function FORMULA  on FORMULA .
+Let FORMULA  denote the distance function on the universal covering FORMULA  of FORMULA  induced by FORMULA . Then FORMULA  is another metric on FORMULA  defined by
+FORMULA 
+The distance functions FORMULA  and FORMULA  are uniformly equivalent.
+Then, for given FORMULA  the dynamical distance functions on FORMULA  with FORMULA  are
+FORMULA 
+and
+FORMULA 
+
+Definition 3 (Topological entropy)  
+Let FORMULA  be a compact metric space and let FORMULA  be a continuous flow. We fix FORMULA .
+A subset FORMULA  is called a FORMULA -separated set of FORMULA  with respect to FORMULA , if for FORMULA  it holds  FORMULA
+A subset FORMULA  is called a FORMULA -spanning set of FORMULA  with respect to FORMULA , if for each FORMULA  there exists a FORMULA  with FORMULA 
+The topological entropy of FORMULA  is defined by Bowen as
+FORMULA 
+Here FORMULA  denotes the maximal cardinality of any FORMULA -separated set and FORMULA  denotes the minimal cardinality of any FORMULA -spanning set of FORMULA  with respect to FORMULA .
+When we restrict ourselves to a compact subset FORMULA  and elect separated and spanning sets with respect to FORMULA , then we denote the topological entropy restricted to FORMULA  by FORMULA . Obviously it holds FORMULA . For a later theorem we also need the expression
+FORMULA 
+For more details see for example {{cite:f008a751-f78f-4b67-987f-4c6297b0b9e3}} or {{cite:2043160c-f7e1-4943-92d8-c03db79066b1}}.
+
+Remark 4 As the topological entropy of a continuous flow is independent of the choice of uniformly equivalent distance functions, we consider the distance function FORMULA  instead of FORMULA  on FORMULA .
+
+Definition and Remark 5 
+Let FORMULA  be the induced Riemannian metric on the universal covering FORMULA  of FORMULA . We fix a Euclidian metric FORMULA  on FORMULA  which is automatically equivalent to FORMULA  and call it the background metric. There exists a constant FORMULA  such that
+for the distance functions FORMULA  and FORMULA  induced by FORMULA  and FORMULA  on the universal covering FORMULA  it holds
+FORMULA 
+for all FORMULA .
+
+Remark 6 (Minimal geodesics and Euclidian lines)  
+Hedlund and Morse (see {{cite:a0a7fdb4-b643-4710-8cfa-38acf40eff28}}) proved that there exists a constant FORMULA , such that for each minimal geodesic FORMULA  on the universal covering FORMULA  there exists a Euclidian line FORMULA , and for each Euclidian line FORMULA  there exists a minimal geodesic FORMULA  such that
+FORMULA 
+The Euclidian slope of FORMULA  implies for each minimal geodesic FORMULA  a rotation number FORMULA . Let FORMULA  denote the set of all minimal geodesics on FORMULA  with a fixed rotation number FORMULA .
+As shown by Bangert (see {{cite:565f6c98-5bf0-4bb0-accf-96e3e431b2de}}), for irrational FORMULA  the set FORMULA  is totally ordered, i.e. all minimal geodesics in FORMULA  have pairwise no intersections with each other.
+For FORMULA  rational (FORMULA  is rational) let FORMULA  denote the set of periodic minimal geodesics with rotation number FORMULA . Obviously, by the minimality of the geodesics two arbitrary elements in FORMULA  do not intersect.
+We distinguish two cases:
+1) The periodic geodesics in a closed geodesic strip are foliated, i.e. for each point FORMULA  in the strip there exists a minimal geodesic FORMULA  with rotation number FORMULA  and FORMULA .
+2) The periodic geodesics in a closed geodesics strip are not foliated, i.e. there exist gaps bounded by so called neighboring minimal geodesics.
+With respect to some introduced order on FORMULA  in FORMULA , let FORMULA  be two neighboring elements of FORMULA . Neighboring means then, that there exists no FORMULA  with FORMULA . Let
+FORMULA 
+FORMULA 
+The sets FORMULA , FORMULA  denote the unions of FORMULA  and FORMULA  extended over all pairs of neighboring elements.
+Then, for rational FORMULA  the set FORMULA  is the disjoint union of FORMULA , FORMULA  and FORMULA , and the sets FORMULA  and FORMULA  are ordered. For more details see {{cite:565f6c98-5bf0-4bb0-accf-96e3e431b2de}}.
+
+To prove the Main Theorem we have to introduce a construction on the universal covering. This construction goes back to Manning in {{cite:e35d4970-2a64-45b9-be2b-bab7cb68ff09}}. The central idea of the proof of the Main Theorem is then Theorem REF  of R. Bowen which allows us to bound FORMULA  by the sum of the topological entropy of strips with finite width and the topological entropy of a single strip.
+Central construction
+Let FORMULA  be a fundamental domain in FORMULA  of diameter FORMULA , FORMULA  its closure and let FORMULA  be a small number. We choose FORMULA  large with respect to the constants FORMULA  and FORMULA , and consider the set
+FORMULA 
+For each FORMULA  the set FORMULA  is obviously contained in the closed ball FORMULA  (see Figure REF ).
+FIGURE 
+Let FORMULA  be some FORMULA -separated set of FORMULA  with maximal cardinality.
+Let FORMULA . Then,
+FORMULA 
+Let FORMULA  be some FORMULA -separated set of FORMULA  with maximal cardinality.
+We consider the flat background metric as introduced in Definition REF . Obviously, geodesics on the universal covering with respect to FORMULA  are straight lines.
+For FORMULA  and FORMULA  let FORMULA  be a straight line, joining FORMULA  and FORMULA . As mentioned in Remark REF  there exists a minimal geodesic FORMULA  for FORMULA , and a constant FORMULA  such that FORMULA  for all FORMULA . We choose FORMULA  as an initial vector of FORMULA , such that FORMULA  and re-parametrize FORMULA  such that FORMULA . Obviously FORMULA .
+Let
+FORMULA 
+be the set of initial conditions of minimal geodesics (parametrized by arc length) which have the same rotation number as the connecting straight lines between FORMULA  and FORMULA , and which are constructed as described above.
+Theorem 1 
+There exists a constant FORMULA  independent of FORMULA , such that FORMULA  is a FORMULA -spanning set of FORMULA  with respect to FORMULA  and the metric FORMULA , i.e. for each FORMULA  there exists FORMULA  with FORMULA .
+
+Lemma 2 
+FORMULA .
+
+Lemma 3 
+Let FORMULA  be a geodesic and FORMULA  a Euclidian straight line on FORMULA  endowed with an order. Then any map FORMULA  with
+FORMULA 
+is an injective and strictly monotone function.
+
+Assume FORMULA  is not injective, then there exist FORMULA  with FORMULA  and FORMULA . Let FORMULA  and FORMULA  denote the minimal geodesic segments connecting FORMULA  with FORMULA  and FORMULA  with FORMULA , respectively. FORMULA  and FORMULA  are both orthogonal to FORMULA  in FORMULA , otherwise the distance of FORMULA  or FORMULA  to FORMULA  could be shortened. But then FORMULA  and this implies that FORMULA . If FORMULA  then FORMULA , in contradiction to FORMULA . Let FORMULA  and w.l.o.g. let FORMULA  for FORMULA . But then FORMULA  and FORMULA  intersect twice, in contradiction to their minimality. Hence, FORMULA  is injective.
+Assume FORMULA  is not monotone, then there exist FORMULA  such that FORMULA . But then at least two of the connecting segments FORMULA  intersect. W.l.o.g. let FORMULA  and FORMULA  intersect. Then there exist times FORMULA  and FORMULA  with FORMULA . It holds FORMULA , otherwise we get a contradiction to the minimality of the segments FORMULA  and FORMULA . But then
+FORMULA 
+has the same length as FORMULA . Because of the kink in FORMULA  this piecewise geodesics segment can be shortened, in contradiction to FORMULA . Hence, FORMULA  is monotone and by the injectivity strictly monotone.
+[Proof of Theorem REF ]
+We choose an arbitrary FORMULA . Let FORMULA  be the minimal geodesic with FORMULA . Hence, it holds that FORMULA  and FORMULA .
+As FORMULA  and FORMULA  are FORMULA -separating sets with maximal cardinality, there exist FORMULA  and FORMULA  with
+FORMULA 
+We consider the straight line FORMULA , joining FORMULA  and FORMULA , and the corresponding geodesic FORMULA  with FORMULA  and FORMULA . By FORMULA  we denote
+a straight line which accompanies FORMULA  (see Remark REF ), satisfying FORMULA  for all FORMULA . Let FORMULA , FORMULA  be two maps such that
+FORMULA 
+By Lemma REF  these maps are injective and strictly monotone.
+For an illustration of the introduced objects see Figure REF .
+FIGURE 
+We have to prove that the distance of FORMULA  and FORMULA  is bounded for all FORMULA  and that the bound is independent of FORMULA  and FORMULA .
+As there exist the accompanying lines FORMULA  and FORMULA  the main part of the proof will be to show that the distance of the points FORMULA  and FORMULA  is bounded. For this we will consider finite segments FORMULA  of FORMULA  and FORMULA  which contain the images of the maps FORMULA  and FORMULA , respectively. Then we will use that the distances of the end points of FORMULA  and FORMULA  with respect to the Euclidian background metric give us bounds for the distances of the segments in between.
+In the first step we want to bound FORMULA . Let FORMULA  be a time with FORMULA . Then by the triangle-inequality:
+FORMULA 
+and
+FORMULA 
+Both inequalities together imply
+FORMULA 
+By this we get
+FORMULA 
+Now we can bound the distance of FORMULA  and FORMULA :
+FORMULA 
+A much easier task is to find an upper bound for the distance between FORMULA  and FORMULA :
+FORMULA 
+We want to fix finite segments FORMULA  of FORMULA  and FORMULA  such that
+FORMULA 
+By Lemma REF  we choose as FORMULA  the connected segment between FORMULA  and FORMULA , and as FORMULA  the connected segment between FORMULA  and FORMULA , respectively.
+The next Lemma will allow us to bound the distance of FORMULA  and FORMULA  for all FORMULA  independently of FORMULA  and FORMULA :
+Lemma 4 
+There exists a constant FORMULA  such that
+FORMULA 
+
+
+Before we give a proof of this Lemma, we finish the proof of the Theorem REF :
+By Lemma REF  we get for all  FORMULA
+FORMULA 
+This implies the statement of the Theorem:
+FORMULA 
+We set FORMULA .
+Hence, FORMULA  is a FORMULA -spanning set of FORMULA  with respect to FORMULA  and the distance function FORMULA .
+
+[Proof of Lemma REF ]
+To prove this statement we will first show that for each FORMULA  there exists FORMULA  such that
+FORMULA 
+and
+FORMULA 
+Then we will conclude the statement of the Lemma.
+As introduced before let FORMULA  denote the Euclidian distance function and FORMULA  the equivalence constant between the Euclidian and Riemannian distance. We consider two affine linear functions FORMULA  with
+FORMULA 
+and
+FORMULA 
+Obviously FORMULA  and FORMULA .
+Then FORMULA  is a convex and continuous function. Hence, it has its maximum on the boundary, i.e.
+FORMULA 
+For fixed FORMULA  we choose FORMULA  such that FORMULA . There exists FORMULA 
+such that FORMULA . By construction it holds FORMULA  and obviously,
+FORMULA 
+This implies that
+FORMULA 
+
+FIGURE 
+Now we will bound FORMULA :
+FORMULA 
+and
+FORMULA 
+Both inequalities together imply
+FORMULA 
+We can now conclude that
+FORMULA 
+
+[Proof of Lemma REF ]
+Let FORMULA  be a FORMULA -spanning set of FORMULA  of minimal cardinality with respect to FORMULA  and FORMULA . Then:
+FORMULA 
+
+Definition 7 
+Let FORMULA  be a compact metric space and FORMULA  a continuous flow.
+We will call the set
+FORMULA 
+a FORMULA -tube for an element FORMULA .
+The topological entropy of FORMULA  restricted to FORMULA -tubes is given by
+FORMULA 
+FORMULA  is called FORMULA -expansive if FORMULA  for some FORMULA . For more details see {{cite:11082c56-d902-4a07-9616-31833d3487ed}}.
+
+Theorem 5 
+The geodesic flow FORMULA  on FORMULA  is FORMULA -expansive for FORMULA 
+defined in Theorem REF .
+
+Let FORMULA  and consider the distance function FORMULA  as defined in Remark REF .
+Then,
+FORMULA 
+Hence the FORMULA -tube is given by
+FORMULA 
+We will show that FORMULA .
+Minimal geodesics in the tube FORMULA  have a bounded distance. Hence their accompanying straight lines are parallel.
+This implies that all minimal geodesics in this tube are of the same type, i.e. they have the same rotation number. We distinguish the cases that the direction of the tube is rational or irrational.
+1) First we consider the case that the direction is irrational. According to Bangert (see {{cite:565f6c98-5bf0-4bb0-accf-96e3e431b2de}} or Remark REF ) all of the minimal geodesics have no intersections.
+We fix FORMULA  and FORMULA  with FORMULA , where FORMULA  is the diameter of a fundamental area as introduced in the central construction. We denote by FORMULA  a FORMULA -separated set for FORMULA  with maximal cardinality and with respect to FORMULA  and FORMULA . Let FORMULA , i.e., FORMULA .
+As the minimal geodesics FORMULA  and FORMULA  do not intersect, they are ordered if FORMULA . The special case that the geodesics have a shifted parametrization but the same image, we will consider later.
+As FORMULA  there exists a time FORMULA  such that FORMULA .
+We choose a minimal geodesic FORMULA  with length FORMULA  connecting FORMULA  and FORMULA . By construction it holds
+FORMULA 
+We consider the geodesic triangle FORMULA , where the sides of the triangle have minimal length.
+FIGURE 
+Obviously, both FORMULA  and FORMULA  intersect this triangle in no inner point. Otherwise, we would get a contradiction to the minimality of FORMULA  and FORMULA . Hence, the whole triangle lies in the strip between FORMULA  and FORMULA .
+Let
+FORMULA 
+denote the FORMULA -neighborhood of FORMULA . All geodesic segments FORMULA  with FORMULA  lie in FORMULA  and also the triangles FORMULA  for FORMULA . Furthermore,
+there exists a constant FORMULA  such that the volume of FORMULA  is smaller than FORMULA .
+The main idea in the proof of the statement of this Theorem REF  is that the number of elements of FORMULA  corresponds to the number of triangles FORMULA . And the number of the triangles is bounded by the quotient of the volume of FORMULA  and a lower bound of the volume of a single triangle.
+For precise estimations we will need the following Lemma:
+Lemma 6 
+Let FORMULA  denote the volume of the geodesic triangle FORMULA .
+Then, there exists a constant FORMULA  such that
+FORMULA 
+
+Now we will bound the number of FORMULA -separated minimal geodesics in the tube FORMULA  with irrational direction.
+Let FORMULA  denote a FORMULA -separated set of maximal cardinality such that FORMULA  for FORMULA .
+Applying Lemma REF 
+we get:
+FORMULA 
+Now we consider minimal geodesics with the same image. Also they have to be separated and their number can be bounded by FORMULA . It follows for the whole FORMULA -separated set FORMULA 
+with respect to the geodesic flow FORMULA  and the distance function FORMULA :
+FORMULA 
+i.e., the growth of FORMULA  is bounded by a linear function in FORMULA .
+Let FORMULA  denote the set of initial conditions FORMULA  such that the geodesics FORMULA  are minimal and have an irrational rotation number. Then,
+FORMULA 
+2) As the second case we consider a tube FORMULA  such that FORMULA  has a rational rotation number FORMULA . Assume that a FORMULA -separated set FORMULA  of maximal cardinality fulfills the following properties:
+
+For FORMULA  the corresponding minimal geodesic FORMULA  has rotation number FORMULA .
+
+FORMULA  growths exponentially with FORMULA .
+
+Let FORMULA . The set of minimal geodesics with a fixed rational direction FORMULA  consists of the three subsets FORMULA  and FORMULA  as introduced in Remark REF . Then by assumption one of the ordered sets FORMULA , FORMULA  or FORMULA  growths exponentially with FORMULA . But by the same arguments as in the case of irrational directions we get a contradiction because the growth of the number of geodesics without intersections between each other is bounded by linear growth.
+[Proof of Lemma REF ]
+By the triangle-inequality we get that the length FORMULA  of the single sides of the triangle FORMULA  is bounded by
+FORMULA 
+Assume there existed a triangle with a side of length FORMULA . Then we get an alternative way from FORMULA  to FORMULA  with length FORMULA  and a kink (if there were no kink, then FORMULA  and FORMULA  would intersect), in contradiction to the minimality of the geodesic segment FORMULA . Hence, especially FORMULA .
+Assume that there does not exist a lower bound FORMULA  for FORMULA .
+Let a min-FORMULA -triangle be a triangle such that its sides are minimal geodesic segments, one side has length FORMULA , the length FORMULA  of the other sides is bounded by FORMULA  and their vertices lie on two minimal geodesics, i.e., the min-FORMULA -triangle are of the type of the triangles FORMULA .
+We fix a compact set FORMULA  in FORMULA  large enough such that for each min-FORMULA -triangle FORMULA  in FORMULA  there exists a translation element FORMULA  such that FORMULA .
+We consider the set
+FORMULA 
+Hence, all possible triangles belong to FORMULA .
+As the constant FORMULA  does not exist, there exists a sequence of triangles FORMULA  such that their corners converge and FORMULA  tends to zero. As FORMULA  is compact there exists a triangle FORMULA  with FORMULA . Also for FORMULA  it holds that FORMULA , otherwise we get a contradiction to the fact that the minimal geodesics through the vertices do not intersect.
+But each non-degenerate geodesic triangle contains an open set which has positive volume,
+in contradiction to the existence of FORMULA . Hence, FORMULA  exists.
+Theorem 7 (Bowen, see {{cite:11082c56-d902-4a07-9616-31833d3487ed}})  
+Let FORMULA  be a compact metric space and FORMULA  a homeomorphism. Then
+FORMULA 
+In particular, FORMULA  if FORMULA  is an FORMULA -expansive constant for FORMULA .
+
+[Proof of the Main Theorem]
+By Theorem REF  and Theorem REF  we get that FORMULA  and FORMULA . Applying the inequality of Theorem REF  and extending it to continuous flows for FORMULA  and FORMULA  we conclude that FORMULA .
+

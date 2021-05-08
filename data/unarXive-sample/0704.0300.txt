@@ -1,0 +1,263 @@
+
+Scaling of Resistance and Electron Mean Free Path of Single-Walled Carbon Nanotubes
+Meninder PurewalFORMULA 
+Byung Hee HongFORMULA 
+Anirudhh RaviFORMULA 
+Bhupesh ChandraFORMULA 
+James HoneFORMULA 
+Philip Kim FORMULA
+FORMULA  Department of Applied Physics, Columbia
+University, New York, New York 10027 FORMULA  Department
+of Physics, Columbia University, New York, New York 10027
+FORMULA  Department of Mechanical Engineering, Columbia
+University, New York, New York 10027
+We present an experimental investigation on the scaling of
+resistance in individual single walled carbon nanotube devices with
+channel lengths that vary four orders of magnitude on the same
+sample. The electron mean free path is obtained from the linear
+scaling of resistance with length at various temperatures. The low
+temperature mean free path is determined by impurity scattering,
+while at high temperature the mean free path decreases with
+increasing temperature, indicating that it is limited by
+electron-phonon scattering. An unusually long mean free path at room
+temperature has been experimentally confirmed. Exponentially
+increasing resistance with length at extremely long length scales
+suggests anomalous localization effects.
+Single walled carbon nanotubes (SWNTs) are 1D conductors that
+exhibit a rich variety of low dimensional charge transport
+phenomena {{cite:19d0b69d-f1ae-402a-97ac-e09c2ffda42d}}, including ballistic
+conduction {{cite:682412f3-1ebf-4e42-b201-07e26c548efe}}, {{cite:d2e2bfac-1c65-4378-b520-328012badca7}}, {{cite:53309d73-71d8-485f-9013-69ec4fe2b5a4}}, {{cite:374cd816-ed56-403e-8160-f6e7604daf11}}, {{cite:15840079-c866-43dd-a2fd-6fe3b51f0843}},
+localization {{cite:2167c5b1-5916-4fd2-a2a7-2eb0acd35eac}} and 1D variable range
+hopping {{cite:6abd46c1-701a-4bb5-9050-c13d3d946aca}}. The electron mean free path, FORMULA , is one
+of the important length scales that characterize the different 1D
+transport regimes. One method of determining FORMULA  in SWNTs is to
+measure ballistic conduction for a given device channel length.
+However, this method yields a lower bound of FORMULA , and works only
+at low temperature  {{cite:682412f3-1ebf-4e42-b201-07e26c548efe}}, {{cite:d2e2bfac-1c65-4378-b520-328012badca7}}, {{cite:53309d73-71d8-485f-9013-69ec4fe2b5a4}}, {{cite:374cd816-ed56-403e-8160-f6e7604daf11}} or at higher
+temperature for small length scales (FORMULA 60 nm) {{cite:15840079-c866-43dd-a2fd-6fe3b51f0843}}.
+Another approach to obtain FORMULA  at room temperature is to employ
+scanning probe microscopy to measure the linear scaling of the
+channel resistance {{cite:9fb08ac5-08d3-4045-833c-997dfcfc858b}}, or use non-invasive multi-terminal
+measurements {{cite:97141d61-645d-4153-b676-64a4af6953c4}}. Due to the experimental limitations of
+these approaches, the characterization of FORMULA  for the same SWNTs
+over a range of temperatures is yet to be realized.
+Recent advances in the growth of extremely long SWNTs (FORMULA 1 mm) {{cite:2a34b78e-05c7-4c80-8d27-8ef11675adc9}} now allow
+for an intensive study on their intrinsic properties. In this letter, we present
+experimental measurements on the scaling behavior of resistance in individual,
+millimeter long SWNTs for the temperature range of 1.6 - 300 K. From the linear scaling
+of resistance, the temperature dependent electron mean free path is calculated for
+each temperature. Beyond the linear scaling regime, we observe that the resistance
+increases exponentially with length, indicating localization behavior.
+Macroscopically long and straight individual SWNTs were grown on a
+degenerately doped Si/SiOFORMULA  substrate (FORMULA  500 nm) using
+the chemical vapor deposition method described in Ref.{{cite:2a34b78e-05c7-4c80-8d27-8ef11675adc9}}.
+This was followed by the fabrication of multiple Pd electrodes with
+various separations (200 nm- 400 FORMULA m)(Fig. REF (a)). Pd
+electrodes were chosen to create highly transparent SWNT-electrode
+contacts {{cite:53309d73-71d8-485f-9013-69ec4fe2b5a4}}. The diameters of the SWNTs were measured by
+atomic force microscope (AFM). We chose SWNTs with diameter
+FORMULA  less than 2.5 nm to exclude any possibility of including multiwalled nanotubes (MWNT)
+in this study. In addition, we confirmed that the high bias saturation current is
+FORMULA  30 FORMULA A for all SWNTs studied {{cite:bf1e6082-ea85-4064-86e0-4d3dd20c8bea}}, assuring that the samples consisted
+of single tubes rather than small bundles or MWNTs. The substrate was used as a gate
+electrode to tune the chemical potential of the sample by the application of a gate
+voltage FORMULA . A small dc source-drain bias voltage (FORMULA  10 mV), FORMULA , was applied
+between pairs of consecutive electrodes, and the two-terminal linear response conductance
+was determined from the measured source-drain current FORMULA .
+FIGURE 
+Fig. REF (b-c) shows the measured FORMULA  as a function of
+FORMULA  for selected channel length sections on two
+representative SWNTs. All curves exhibit a `gap' like feature - a
+range of FORMULA  where FORMULA  is suppressed. On the same SWNT,
+every device (pair of consecutive electrodes) shows a similar
+FORMULA  up to a length-dependent multiplicative factor,
+once we align the centers of the gap region for each curve. The
+similarity of the FORMULA  behavior in different sections
+for each SWNT sample indicates that the corresponding `gap'
+features are derived from the intrinsic electronic structure of
+the SWNT rather than the effects of random local variation.
+TABLE 
+We use the qualitatively different FORMULA  behaviors of
+different SWNTs to categorize them as metallic (M-NT) or
+semiconducting nanotubes (S-NT). Typical S-NTs
+(Fig. REF (c)) exhibit an off current region
+FORMULA A when the Fermi energy FORMULA  lies n the energy
+gap  {{cite:a7c5316d-0c9d-4b02-ab56-ce3d6b296bce}}, {{cite:2b44b880-b84a-4db0-93f6-208427150d35}}. On the other hand, a weaker
+suppression of FORMULA  is observed in the `small gap'
+region in M-NTs (Fig. REF (b)). The `small gap' in M-NTs has
+been attributed to the curvature-induced energy gap
+FORMULA 100 meV {{cite:3a25d5d5-1982-46b5-8328-351864188927}}, which is distinguished from the
+S-NT energy gap, which scales with diameter as
+FORMULA  1/FORMULA  (nm) {{cite:19d0b69d-f1ae-402a-97ac-e09c2ffda42d}}. Among the 11 SWNTs we
+studied in this letter, we found 4 M-NTs and 7 S-NTs. Each of
+these SWNTs exhibit a gap centered at FORMULA , indicating their
+FORMULA -doped nature. At large negative gate voltage (FORMULA  V),
+FORMULA  lies well outside of the gap region and FORMULA 
+saturates to FORMULA , whose value depends only on the
+applied FORMULA  and channel length FORMULA  of the SWNT section. The
+two-terminal resistance of the SWNT section is then obtained from
+FORMULA . We note that four-terminal resistance
+measurements are possible for each section by utilizing the
+available multiple electrode configuration. However, in our
+experiment, the four terminal measurements yield essentially
+similar results to the two terminal FORMULA , which prevents
+separation of the `contact' resistance contribution from FORMULA .
+Such inseparable contact resistance between SWNT-metal electrodes
+was reported to be caused by the invasiveness of metal
+contacts {{cite:599c24bc-a48b-463b-8e93-25a92b7e27c8}}.
+FIGURE 
+We designed many pairs of electrodes with different FORMULA  on each
+SWNT so that the scaling of FORMULA  can be studied for a specific
+sample at a given temperature FORMULA . Fig. REF (a) show FORMULA 
+of a representative SWNT measured in the temperature range of
+1.6 - 300 K and with an FORMULA  range of 200 nm - 50 FORMULA m. In these
+ranges, FORMULA  increases linearly and appears to converge to a
+finite value for small FORMULA  (inset to Fig. REF (a)). We found
+that this scaling behavior can be described well by a simple
+linear dependence with an offset: FORMULA , where
+FORMULA  and FORMULA  are interpreted as the 1D resistivity and
+contact resistance, respectively. The solid lines in
+Fig. REF (a) are the two parameter line fits of the data
+points at a given FORMULA  value. From these fits, FORMULA  and
+FORMULA  are obtained as shown in Fig. REF (b) and
+Fig. REF (c), respectively. For this sample, FORMULA  remains
+fairly constant at FORMULA 8 kFORMULA  and FORMULA  exhibits
+typical metallic behavior, i.e. it decreases with FORMULA  and
+saturates to a value FORMULA  at low temperatures. Similar
+scaling behavior of FORMULA  is observed in other SWNTs, from which
+both FORMULA  and FORMULA  are extracted within the linear scaling
+regime. Table  REF  summarizes FORMULA , FORMULA , and
+FORMULA  for the 4 M-NTs and 7 S-NTs considered in this study.
+To understand the scaling of FORMULA  in Fig. REF , we begin
+with the two-terminal Landauer-Buttiker formula applied to
+SWNTs {{cite:9fb08ac5-08d3-4045-833c-997dfcfc858b}}. If we consider 4 low-energy channels in the
+SWNT, 2 each for spin and band degeneracy, then the scaling of
+resistance is given by FORMULA , where
+FORMULA  and FORMULA  are electron charge and Plank constant and FORMULA  and
+FORMULA  are the electron mean free path and the non-transparent
+contact resistance, respectively. Note that we separate out the
+contribution of FORMULA  from the total contact resistance
+FORMULA , so that the contact resistance becomes the quantum
+resistance FORMULA  when the contacts become fully
+transparent. From the experimentally obtained FORMULA  and
+FORMULA , we can deduce FORMULA  and FORMULA  for each of our SWNT samples. In particular, we note that
+FORMULA  for the majority of our samples, suggesting
+that the barrier at the contacts is very thin and adds only a
+negligible contribution when FORMULA  becomes substantially large.
+FIGURE 
+We now discuss the temperature dependent behavior of the mean free
+path. Fig. REF  is the central result of this letter,
+showing FORMULA  of the SWNTs listed in Table REF .
+Overall, FORMULA  exhibits different behaviors in two regimes
+separated by FORMULA : (i) the high temperature regime
+(FORMULA ) where FORMULA  (dashed line in
+Fig. REF ), which indicates that inelastic scattering
+between electrons and acoustic phonons is dominant {{cite:9fb08ac5-08d3-4045-833c-997dfcfc858b}}, {{cite:6a2d8d1b-026a-48f9-a2ca-45b8696349da}} regardless of chirality {{cite:a313773f-b65f-4095-9cc2-82980e41360f}}; and (ii) the low
+temperature regime FORMULA  where FORMULA  saturates to the the
+tube specific FORMULA . In this low temperature limit, the
+phonons freeze out and FORMULA  is determined by the
+temperature independent elastic scattering with impurities. We
+believe the widely spread FORMULA  values (0.4-10FORMULA m) in
+(ii) are a result of each SWNT sample having a static disorder of
+different strengths and densities. We employ scanning gate
+microscopy (SGM) {{cite:4403b0df-94ed-43c3-b6f1-3336a980d063}} to image this static disorder.
+Indeed, the SGM images on S-NTs (insets to Fig. REF ) reveal
+that the SWNT with a shorter FORMULA  shows more defects.
+Note also that we have experimentally confirmed that FORMULA  is
+generally much higher for M-NTs than that of S-NTs. This is an
+indication that the scattering of electrons is strongly suppressed
+in M-NTs, as predicted by Ando et al. {{cite:ef5c6d9e-f00f-46a9-bb10-ed665dc07e38}} and McEuen et
+al. {{cite:a848b69c-117d-4a9b-a2d3-ecda6e8b6865}}. In M-NTs we have experimentally shown that
+the ballistic electron conduction is possible for channel lengths
+up to 8 FORMULA m at low temperature and 0.8 FORMULA m even at room
+temperature.
+FIGURE 
+Finally, we turn our attention to the non-linear scaling of
+FORMULA . Fig. REF  presents FORMULA  beyond the linear scaling
+regime of a representative S-NT and M-NT. At extremely long length
+scales and low temperatures, FORMULA  deviates from the linear
+dependence extended from the linear regime (dashed lines in main
+figure and see also FORMULA  in lower
+insets). Since FORMULA  for all temperatures,
+we emphasize here that this non-linear behavior in FORMULA  is
+solely due to increasing electron scattering in the bulk part of
+the SWNTs rather than an increasing barrier between the SWNT and
+electrodes. In order to experimentally determine the critical
+length scale FORMULA  beyond which the non-linear behaviors is
+dominant, we use a phenomenological equation:
+FORMULA  to fit the data (solid
+curves in Fig. REF ). While FORMULA  shows a strong sample
+dependent behavior, generally we found FORMULA  in all
+temperature ranges, with the temperature dependence exhibiting a
+trend of increasing FORMULA  with increasing FORMULA (upper insets to
+Fig. REF ). This observed behavior of FORMULA  excludes
+the quantum interference related to strong localization effects
+such as Anderson Localization {{cite:2167c5b1-5916-4fd2-a2a7-2eb0acd35eac}} from the possible
+scenarios. In particular, in the high temperature regime
+FORMULA , the phase coherence length FORMULA  is limited by
+the phase-breaking electron-phonon scattering, and thus
+FORMULA , inviting further study to elucidate
+the observed localization behavior beyond the strong localization
+limit {{cite:ef5ec406-88cc-4524-adca-fa7a0f9937ce}}, {{cite:52d6f9bf-7c82-4065-a995-e4483e00e7cc}}.
+In conclusion, we determine the length dependent resistance for
+SWNTs with channel lengths ranged 200 nm - 400FORMULA m. From the
+scaling behavior we evaluate the electron mean free path and
+localization length of the SWNT for a range of temperatures. While
+the low temperature mean free path is determined by the impurity
+scattering, an unusually long mean free path is demonstrated at room
+temperature, even with the dominant electron-phonon scattering.
+We thank I. Aleiner, B. Altshuler, and P. Jarillo-Herrero for
+helpful discussions. This work is supported by the NSF NIRT(ECS
+0507111), CAREER (DMR-0349232), NSEC (CHE-0117752), and the New York
+State Office of Science, Technology, and Academic Research (NYSTAR).
+R. Saito, G. Dresselhaus, and M.S. Dresselhaus,
+Physical Properties of Carbon Nanotubes (Imperial College Press, London 1998).
+J. Kong, E. Yenilmez, T.W. Tombler, W. Kim, H. Dai,
+R.B. Laughlin, L. Liu, C.S. Jayanthi, and S.Y. Wu, Phys. Rev.
+Lett. ¦87¦, 106801 (2001).
+W. Liang, M. Bockrath, D. Bozovic, J.H. Hafner,
+M. Tinkham, and H. Park, Nature ¦411¦, 665 (2001).
+D. Mann, A. Javey, J. Kong,
+Q. Wang, and H. Dai, Nano Lett. ¦3¦, 1541 (2003).
+A. Javey, J. Guo, Q. Wang,
+M. Lundstrom and H. Dai, Nature, ¦424¦, 654 (2003).
+A. Javey, J. Guo, M. Paulsson, Q. Wang,
+D. Mann, M. Lundstrom, and H. Dai, Phys. Rev. Lett. ¦92¦,
+106804 (2004).
+C. Gomez-Navarro, P.J. de Pablo, J. Gomez-Herrero,
+B. Biel, F.J. Garcia-Vidal, A. Rubio and F. Flores, Nat. Mater.
+¦4¦, 534 (2005).
+B. Gao, D.C. Glattli, B. Placais and A. Bachtold,
+Phys. Rev. B ¦74¦, 085410 (2006).
+J. Park, S. Rosenblatt, Y. Yaish, V. Sazonova, H. Ustunel,
+S. Braig, T.A. Arias, P.W. Brouwer and P.L. McEuen, Nano Lett.
+¦4¦, 517 (2004).
+B. Gao, Y.F. Chen, M.S. Fuhrer, D.C. Glattli, and
+A. Bachtold, Phys. Rev. Lett. ¦95¦, 196802 (2005).
+B.H. Hong, J.Y. Lee, T. Beetz,
+Y. Zhu, P. Kim, and K.S. Kim, J. Am. Chem. Soc. ¦127¦,
+15336 (2005).
+Z. Yao, C.L. Kane, and C. Dekker,
+Phys. Rev. Lett. ¦84¦, 2941 (2000).
+S.J. Tans, A.R.M. Verschueren, and C. Dekker, Nature ¦393¦, 49 (1998).
+J. Appenzeller, J. Knoch, V. Derycke, R. Martel,
+S. Wind and Ph. Avouris, Phys. Rev. Lett. ¦89¦, 126801
+(2002).
+C. Zhou, J. Kong, and H. Dai, Phys. Rev. Lett. ¦84¦, 5604 (2000).
+A. Bezryadin, A. R. M. Verschueren,
+S. J. Tans, and C. Dekker, Phys. Rev. Lett. ¦80¦, 4036
+(1998).
+V. Perebeinos, J. Tersoff, and Ph. Avouris, Phys. Rev. Lett. ¦94¦, 086802 (2005).
+X. Zhou, J. Park, S. Huang, J. Liu,
+and P. L. McEuen, Phys. Rev. Lett. ¦95¦, 146805 (2005).
+A. Bachtold, M.S. Fuhrer, S. Plyasunov,
+M. Forero, E.H. Anderson, A. Zettl, and P.L. McEuen, Phys. Rev.
+Lett. ¦84¦, 6082 (2000).
+T. Ando and T. Nakanishi, Jpn. J. Appl. Phys. ¦67¦, 1704 (1998).
+P.L. McEuen, M. Bockrath, D.H. Cobden,
+Y. G. Yoon, and S.G. Louie, Phys. Rev. Lett. ¦83¦, 5098
+(1999).
+F. Triozon, S. Roche, A. Rubio, and D. Mayou, Phys. Rev. B ¦69¦,
+121410(R) (2004).
+R. Avriller, S. Latil, F. Triozon, X. Balse, and S. Roche, Phys. Rev. B ¦74¦,
+121406(R) (2006).

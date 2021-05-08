@@ -1,0 +1,257 @@
+
+Entropy exchange, coherent information and concurrence
+Yang Xiang
+njuxy@sina.com
+Shi-Jie Xiong
+National Laboratory of Solid State Microstructures and
+Department of Physics, Nanjing University, Nanjing 210093, China
+2020/09/07 17:58:45
+
+For a simple model we derive analytic expressions of entropy
+exchange and coherent information, from which relations between them
+and the concurrence are drawn. We find that in the quantum evolution
+the entropy exchange exhibits behavior opposite to that of
+the concurrence, whereas the coherent information shows features
+very similar to those of the concurrence. The meaning of this result
+for general systems is discussed.
+03.67.Mn, 03.65.Ud
+Quantum entanglement is not only of interest in the interpretation
+of the foundation of quantum mechanics, but also a resource useful
+in quantum information processing and quantum computation. A measure
+of the entanglement in a state of two qubits is the Wooters
+concurrence {{cite:f519da9d-a52b-40cb-be34-6d46dd28c09f}}. For pure bipartite states one also
+uses the Von Neumann entropy of the reduced density matrix for
+either of the parties {{cite:dabc59a7-fed2-4428-a2fe-3ca5a9f3a8ac}}, {{cite:5147e748-5faa-4612-b793-deecb8ea28ae}} to measure the
+entanglement. For a simple example, which has been proposed by
+Jordan et al. {{cite:ca02e631-95cc-4478-bf8b-8c4a80f42a92}}, we have shown that in the
+quantum evolution a modified entanglement fidelity exhibits the
+behavior similar to that of the concurrence {{cite:f21803c7-f604-4a00-8e44-c8a723e17a1f}}. In this
+paper we investigate other two quantities, the entropy
+exchange and the coherent information
+{{cite:0a8a2094-894c-4aab-b16a-d5481b0cf754}}, {{cite:391b320e-0de9-4d2c-bbb3-feeb0d7874c8}}, by deriving analytic expressions for
+the system proposed by Jordan et al.. From these we obtain
+relations between them and the concurrence in the quantum evolution
+and discuss the possibility of using them as measures of the
+entanglement.
+We begin with a brief discussion of noisy quantum processes and
+their mathematical descriptions. FORMULA  and FORMULA  are two quantum systems
+and the joint system FORMULA  is initially prepared in a pure entangled
+state FORMULA . The system FORMULA  is dynamically isolated and
+has a zero internal Hamiltonian, while the system FORMULA  undergoes some
+evolution that possibly involves interaction with the environment.
+The evolution of FORMULA  might represent a transmission process via some
+quantum channel for the quantum information in FORMULA . In general, the
+evolution of FORMULA  can be represented by a quantum operator
+FORMULA , which gives the mapping from the initial state to
+the final state
+FORMULA 
+Here, FORMULA  which
+represents the initial state of system FORMULA , and after the dynamical
+process the final state of the system becomes FORMULA . In the
+most general case, the map FORMULA  must be trace
+preserving and is a linear positive map {{cite:b9266f31-6147-4895-9a99-326ae2888427}}, {{cite:39ce0e34-687c-4a6c-9101-4738bafdabe6}}, so
+it can represent all unitary evolutions. The evolution may also
+include unitary evolving interactions with an environment FORMULA .
+Suppose that the environment is initially in state FORMULA . The
+operator can be written as
+FORMULA 
+where FORMULA  is the spectral
+decomposition of FORMULA  with FORMULA  being a base in
+the Hilbert space FORMULA  of the environment FORMULA , and
+FORMULA . The final
+state of FORMULA  is
+FORMULA 
+The entropy exchange FORMULA  is defined as
+{{cite:0a8a2094-894c-4aab-b16a-d5481b0cf754}}
+FORMULA 
+It is the von Neumann entropy of the final state of the joint system
+FORMULA . Throughout this paper we use FORMULA  to denote FORMULA . The
+intrinsic expression of the entropy exchange is given by
+FORMULA , FORMULA  is the von Neumann entropy of density
+operator FORMULA  and FORMULA  is a density operator with components (in an
+orthonormal basis)
+FORMULA 
+The entropy exchange is an intrinsic property of FORMULA , depending only
+on FORMULA  and FORMULA . It is a measure of the
+information exchanged between system FORMULA  and the environment during
+evolution FORMULA . If there is no interaction between
+system FORMULA  and the environment, i.e., FORMULA  is a unitary
+operator, then after the dynamical process the final state of the
+joint system FORMULA  is still a pure state. This means that in this
+case the entropy exchange equals zero. A complete discussion of the
+entropy exchange can be seen in Refs.
+{{cite:0a8a2094-894c-4aab-b16a-d5481b0cf754}}, {{cite:391b320e-0de9-4d2c-bbb3-feeb0d7874c8}}, {{cite:bfaaf919-4b32-4b2d-b96f-73bdfd1e65d7}}. In Ref. {{cite:f21803c7-f604-4a00-8e44-c8a723e17a1f}} we show
+that the modified entanglement fidelity (MEF) admirably reflects the
+entanglement preservation. The MEF is defined as
+FORMULA 
+where FORMULA  is a unitary transformation acting on FORMULA . A
+connection between the MEF and the entropy exchange is given by the
+quantum Fano inequality {{cite:0a8a2094-894c-4aab-b16a-d5481b0cf754}},
+FORMULA 
+where FORMULA  and FORMULA  is the
+number of the complex dimensions of the Hilbert space FORMULA 
+describing system FORMULA . We can easily find that when FORMULA , i.e.,
+the entanglement is admirably preserved in the evolution process,
+FORMULA  equals zero. This implies that there may be some connection
+between the entropy exchange and the measures of the entanglement,
+e.g., the concurrence.
+Another important intrinsic quantity is the coherent
+information FORMULA . It is defined as {{cite:391b320e-0de9-4d2c-bbb3-feeb0d7874c8}}
+FORMULA 
+For classical systems, FORMULA  can never be positive since the
+entropy of the joint system FORMULA  can never be less than the entropy
+of the subsystem FORMULA . But, for quantum systems, FORMULA  may take
+positive value. For example, if FORMULA  is an entangled pure
+state, then FORMULA  is a mixed state, implying that
+FORMULA  and FORMULA . Thus, FORMULA  can be
+regarded as a measure of the “nonclassicity” of the final joint
+state FORMULA , or, in other words, the degree of the quantum
+entanglement retained by FORMULA  and FORMULA .
+Now we discuss a simple example introduced by Jordan et al.
+in their work {{cite:ca02e631-95cc-4478-bf8b-8c4a80f42a92}}. For this example we can give analytic
+expressions of the entropy exchange and the coherent information
+from which the relations between them and the concurrence can be
+obtained. We consider two entangled qubits, FORMULA  and FORMULA , and suppose
+that qubit FORMULA  interacts with a control qubit FORMULA . Then FORMULA , FORMULA  and
+FORMULA  respectively correspond to systems FORMULA , FORMULA  and environment FORMULA 
+discussed above. We suppose that the initial states of the three
+qubits are
+FORMULA 
+where FORMULA  is the initial state of joint system FORMULA  and FORMULA .
+According to the Schmidt theorem {{cite:6d1c7d81-8ea2-46f9-b567-665c415aae8a}}, a pure state of two
+FORMULA -spins can be decomposed as
+FORMULA 
+where FORMULA  and FORMULA  are two points on the Poincaré
+sphere, and the subscript specifies the related qubit FORMULA  or FORMULA .
+The “angle” FORMULA  in Eq. (REF ) determines the degree of
+entanglement in the state. The angle satisfies FORMULA ,
+FORMULA  and FORMULA  correspond to the product states, and
+the maximal entanglement is obtained for FORMULA .
+Without losing generality we set the initial state of the joint
+system FORMULA  and FORMULA  as
+FORMULA 
+where FORMULA  represent the eigenstates of FORMULA  with
+eigenvalues FORMULA . So the density matrix
+FORMULA . For simplicity, we omit the
+“azimuthal angle" FORMULA , as factor FORMULA  can be
+absorbed in eigenstates FORMULA  and has no effect on the final
+results.
+We suggest an interaction between qubits FORMULA  and FORMULA  described by
+the unitary transformation
+FORMULA 
+where
+FORMULA 
+with FORMULA  being the strength of the interaction, and
+FORMULA  and FORMULA  are two orthonormal vectors for
+system FORMULA . Then the changing density matrix for joint system of FORMULA 
+and FORMULA  can be calculated as
+FORMULA 
+The changing density matrix FORMULA  usually represents a mixed
+state. In order to quantify the entanglement we adopt the Wootters
+concurrence {{cite:f519da9d-a52b-40cb-be34-6d46dd28c09f}} defined as
+FORMULA 
+where FORMULA  is the density matrix representing the investigated
+state of the joint system of FORMULA  and FORMULA , FORMULA ,
+FORMULA , FORMULA , and FORMULA  are the eigenvalues
+of FORMULA  in the decreasing order, and
+FORMULA  is the complex conjugation of FORMULA .
+FIGURE 
+From Eq. (REF ) we can obtain
+FORMULA 
+It is found that at time FORMULA , the state
+FORMULA  is changed from the initial entangled state at FORMULA  to
+a separable state, while at time FORMULA  the state
+FORMULA  returns to the state with the initial entanglement. We
+can also find that if the initial state is a product state, i.e.,
+FORMULA  or FORMULA , the concurrence always equals zero.
+Using Eqs. (REF ), (REF ), (REF ), and (REF ),
+we obtain the quantum operation on qubit FORMULA ,
+FORMULA 
+So FORMULA  and
+FORMULA . Substituting them
+into Eq. (REF ) and noting that FORMULA , we can get the density matrix FORMULA  in Eq. (REF ) as
+FORMULA 
+Thus, we have
+FORMULA 
+
+We can also directly calculate FORMULA  by using Eq. (REF ) and
+Eq. (REF ). From Eq. (REF ), we find that if the initial
+state is a product one, i.e., FORMULA  or FORMULA , the
+entropy exchange always equals zero.
+The evolutions of the entropy exchange FORMULA  and the concurrence
+FORMULA  are depicted in Fig. REF . We can see that the
+entropy exchange exhibits the behavior opposite to that of
+the concurrence in the quantum evolution. During the evolution
+FORMULA , the more information exchanged between FORMULA  and
+“environment” FORMULA , the more entanglement between FORMULA  and FORMULA  is
+lost.
+Now we discuss the coherent information FORMULA . By using Eq.
+(REF ) we find that FORMULA , so from Eq. (REF ) we can obtain FORMULA .
+The evolutions of the coherent information FORMULA  and the
+concurrence FORMULA  are depicted in Fig. REF . It can
+be seen that FORMULA  exhibits the behavior very similar to that of
+the concurrence in the quantum evolution, although their values are
+not exactly consistent with each other at all moments.
+FIGURE 
+The negative correlation between the entropy exchange and the
+concurrence is a striking feature of the quantities. In this example
+the range of FORMULA  is in FORMULA , where the left-hand side of the
+Fano inequality (REF ) is a monotonic decreasing function of
+the MEF FORMULA . This means that for a quantum operation with a
+given FORMULA  there should be an upper bound of FORMULA . In Ref.
+{{cite:f21803c7-f604-4a00-8e44-c8a723e17a1f}} we have shown that FORMULA  exhibits the behavior
+similar to that of the concurrence in the quantum evolution. So for
+a quantum operation giving FORMULA  there is also an upper bound of
+the concurrence. This only gives a rough correlation between the
+concurrence and the entropy exchange. Owing to the simplicity of the
+example we are able to obtain the analytical expressions of FORMULA 
+and FORMULA  and to illustrate the definite negative correlation
+between them. In this sample the effect of the environment is
+represented by only a single qubit (FORMULA ). In Eq. (REF ), we
+assumed the initial state of qubit FORMULA  is a mixed one. For a more
+complicated environment we may introduce an extra system, e.g., a
+qubit FORMULA , in addition to qubit FORMULA . If this new qubit purifies the
+initial state, then all the results obtained above are retained. In
+fact, we can regard the system FORMULA  and the environment FORMULA  as a
+new joint system and assume that the initial state of this joint
+system is a pure state. After a quantum operation which represents
+the interaction between subsystems FORMULA  and FORMULA , the final state of
+the joint system must be a pure state too, so the entropy exchange
+can also be seen as a measure of the entanglement between FORMULA  and
+FORMULA . The information exchange between FORMULA  and FORMULA , which is the
+result of the interaction, will cause the entanglement between FORMULA 
+and FORMULA , and decrease the entanglement between FORMULA  and FORMULA . This
+results in the opposite behavior between the entropy exchange and
+the concurrence in the quantum evolution. This also means that the
+entanglement between FORMULA  and FORMULA  and the entanglement between FORMULA 
+and FORMULA  have negative correlation. Thus, the conclusion about the
+negative correlation between the entropy exchange and the
+concurrence may be extended to the case of environment having two
+qubits but the initial state being purified. In other cases where
+the environment includes more qubits but there are no correlations
+between them, the effect of every qubit in the environment should be
+similar to that of the single qubit investigated in this example.
+The coherent information FORMULA  depends only on FORMULA  and
+FORMULA  and is used to measure the amount of quantum
+information conveyed in the noisy channel. We imagine that the
+initial state of system FORMULA  is FORMULA  which arises from the
+entanglement between FORMULA  and a reference system FORMULA . Now the goal of
+Alice in FORMULA  is to send the initial state FORMULA  to Bob via a
+quantum channel (which can be described by FORMULA ) and
+establish an entanglement between reference system FORMULA  and Bob's
+output system FORMULA . The coherent information FORMULA  can express the
+degree of achieving this aim. In above investigation we just model
+the time evolution of quantum information transmitted via a noisy
+quantum channel described by the interaction with a control qubit.
+By comparing the coherent information FORMULA  and the concurrence,
+we find that FORMULA  is indeed a good measure for the capacity of a
+quantum channel to transmit the entanglement.
+In summary, for an example modeling interaction with environment we
+derive the analytic expressions of the entropy exchange and the
+coherent information. From these we find that both the entropy
+exchange and the coherent information have profound correlations
+with the measure of the entanglement.
+Acknowledgments This work was supported by the State Key
+Programs for Basic Research of China (Grants No. 2005CB623605 and
+No. 2006CB921803), and by National Foundation of Natural Science in
+China Grant No. 10474033 and No. 60676056.

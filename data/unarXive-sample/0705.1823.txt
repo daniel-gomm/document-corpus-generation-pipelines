@@ -1,0 +1,106 @@
+
+Bounds to unitary evolution
+Mark Andrews
+Mark.Andrews@anu.edu.au
+Department of Physics, Faculty of Science, Australian National University, ACT 0200, Australia.
+2020/09/07 17:56:00
+Upper and lower bounds are established for the survival probability FORMULA  of a quantum state, in terms of the energy moments FORMULA . Introducing a cut-off in the energy generally enables considerable improvement in these bounds and allows the method to be used where the exact energy moments do not exist.
+03.65.-w
+Introduction
+How rapidly (or how slowly) can a state evolve? This question has been approached {{cite:e0dd9d69-5eb2-441a-838b-850ac3a52e08}}, {{cite:40131517-e2ce-48ef-83dc-3eff03a744d0}}, {{cite:5fa892ec-05d0-4de7-bea1-cc3cfbbdff01}}, {{cite:2321ceda-6d70-48cc-a859-0dfc6fd94830}} through the survival probability of the state:
+FORMULA 
+which is the probability that the system, initially in state FORMULA , will be found to be still in that state after time FORMULA . The Hamiltonian FORMULA  is assumed to be independent of the time. Lower bounds to FORMULA  have been established {{cite:e0dd9d69-5eb2-441a-838b-850ac3a52e08}}, {{cite:5fa892ec-05d0-4de7-bea1-cc3cfbbdff01}} in terms of the energy uncertainty FORMULA , but these bounds can be well below the actual evolution. Also it has been claimed {{cite:7dd5eb50-a332-44c1-bfc3-c9bb728750a7}} that there can be no upper bound (other than FORMULA ) in terms of FORMULA  alone; without an upper bound one can not be sure that the state will change at all. Here, upper and lower bounds will be found in terms of higher energy moments.
+Expanding the exponential in Eq.(REF ) as a power series gives
+FORMULA 
+where FORMULA , the FORMULA -th energy moment. The absence of a linear term in this expansion is important to the discussion of the quantum Zeno effect {{cite:bfe82d71-9143-4182-af6b-8f3f68eb97c1}}, {{cite:803b6931-3bd6-4e20-a989-0bad91816f33}}.
+There are good reasons why FORMULA  and FORMULA  should exist {{cite:40131517-e2ce-48ef-83dc-3eff03a744d0}}, but for many states used in physics some of the higher energy moments do not exist. It will be established in Section  that, apart from the factor FORMULA , the coefficient of FORMULA  in Eq.(REF ) must be positive if it exists, and that the partial sums of this series give alternately upper and lower bounds to FORMULA ; an upper bound if the last included term is positive or a lower bound if the last included term is negative. Section  introduces a cut-off in the energy, equivalent to projecting onto a finite-energy subspace. This enables considerable improvement in these bounds (including the one in terms of FORMULA ) and also allows the method to be used where the exact energy moments do not exist. We first need to show that the coefficients in Eq.(REF ) are moments over the autocorrelation of the energy distribution.
+
+The energy distribution
+Consider a complete set of commuting observables FORMULA  with common eigenstates FORMULA , so that FORMULA  and FORMULA . (In general, FORMULA  represents a set of operators and FORMULA  a set of eigenvalues.) Then, for any function FORMULA  of the Hamiltonian,
+FORMULA 
+Define the energy distribution FORMULA . Then FORMULA  and
+FORMULA 
+For example, FORMULA .
+Let FORMULA  and FORMULA  be the lower and upper bounds to the energies for which FORMULA  is non-zero, but allow the possibility that FORMULA  and even the unphysical case that FORMULA . The survival probability FORMULA  is not changed by a shift in energy and for all the examples used here FORMULA  or FORMULA . In terms of FORMULA ,
+FORMULA 
+Change the integration variables from FORMULA  to FORMULA  with FORMULA , and introduce the autocorrelation of FORMULA  through the even function
+FORMULA 
+Then FORMULA  is never negative and
+FORMULA 
+Also FORMULA .
+Expanding the cosine in Eq.(REF ), gives
+FORMULA 
+[which must agree with Eq.(REF )], where
+FORMULA 
+The moments FORMULA  are positive and can be expressed, for even FORMULA , in terms of the energy moments FORMULA  with FORMULA  :
+FORMULA 
+Now expand FORMULA  as a sum of products of powers of FORMULA  and FORMULA . Thus, for example, FORMULA  leads to FORMULA  and FORMULA . More generally,
+FORMULA 
+
+Bounds on the survival
+We first show that the partial sums of the Taylor series for FORMULA  provide alternately upper and lower bounds to FORMULA . To prove this, note that if we have an upper (or lower) bound to FORMULA  for all FORMULA , applying FORMULA  gives an upper (lower) bound to FORMULA . Then applying FORMULA  gives a lower (upper) bound to FORMULA . Thus FORMULA  and so on. Using this sequence of inequalities for FORMULA , it follows directly from Eq.(REF ) that
+FORMULA 
+and so on. Whereas the series Eq.(REF ) for FORMULA  may or may not converge, each of these bounds is valid provided the moments FORMULA  in it exist.
+The lower bound in Eq.(REF ) is well known and has been improved {{cite:e0dd9d69-5eb2-441a-838b-850ac3a52e08}}, {{cite:5fa892ec-05d0-4de7-bea1-cc3cfbbdff01}} to FORMULA . To my knowledge, the other bounds are new; furthermore I know of no other upper bounds to FORMULA .
+FIGURE 
+As a simple example, consider the energy distribution FORMULA , FORMULA . [One of many possible realizations of this as a wavefunction is as the free Gaussian FORMULA , where FORMULA .] The exact evolution has the survival probability FORMULA  and the coefficient of FORMULA  in the power series for this must be FORMULA . In fact, FORMULA  with FORMULA . The autocorrelation is FORMULA , but it is not needed. All energy moments exist because the energy distribution falls off faster than any power of the energy. Fig. REF  shows the exact evolution and four successive bounds for this case.
+FIGURE 
+When the energy distribution FORMULA  decreases slowly (slower than exponentially) then higher energy moments may not exist and even if some do exist the bounds provided by Eqs.(REF -) may be very poor. For example, if FORMULA , FORMULA , then FORMULA  but no other even moments exist. Eqs.(REF -) provide no upper bound and the lower bound FORMULA  is very poor, as shown in Fig. REF . We will now show how using an energy cut-off yields good upper and lower bounds for this system and many others.
+
+Using a cut-off in the energy
+Following the work of Uffink and Hilgevoord {{cite:70e596d2-9125-44ff-8edd-d11e8dc9036c}}, we cut off the energy at say FORMULA  and write
+FORMULA 
+The exact state of the system can be expressed as
+FORMULA 
+where, in the notation of Eq.(REF ),
+FORMULA 
+Then FORMULA  and FORMULA  are normalized and orthogonal, and the survival amplitude FORMULA  is
+FORMULA 
+where FORMULA  and FORMULA . Since FORMULA  we have the inequalities {{cite:70e596d2-9125-44ff-8edd-d11e8dc9036c}}
+FORMULA 
+We now apply the bounds in Eqs.(10)-(12) to FORMULA :
+FORMULA 
+and so on, where
+FORMULA 
+Note that it is not necessary to calculate the autocorrelation FORMULA  for the truncated system; the moments FORMULA  can be obtained from the energy moments of the truncated system using Eq.(REF ).
+FIGURE 
+Returning to the example with FORMULA  which has FORMULA , Fig. REF  shows these bounds for selected values of FORMULA  using the quadratic lower bound in Eq.(23) and the quartic upper bound in Eq.(24).
+It is now clear that the bounds from a given cut-off FORMULA  are good only for a limited range of the time and the best we can do with each of the bounds in Eqs.(REF -) is to calculate the envelope as FORMULA  varies. Each bound to FORMULA  is given by a function
+FORMULA 
+where FORMULA  is a polynomial of degree FORMULA  in FORMULA . The envelope of these bounds as FORMULA  varies is found by solving
+FORMULA 
+to give FORMULA  as a function of FORMULA . This can be done explicitly for the quadratic case, FORMULA , and for the quartic, FORMULA ; but in general only numerical solution is practical. The details are in the appendices. Then inserting this FORMULA  into FORMULA  gives the envelope FORMULA  at time FORMULA  parametrically in terms of FORMULA . The envelopes for the first four bounds for the distribution FORMULA  are shown in Fig. REF .
+FIGURE 
+FIGURE 
+The Breit-Wigner system FORMULA  is unphysical because neither FORMULA  nor FORMULA  exist, but it is used because it exhibits exact exponential decay: FORMULA . None of the bounds in Eqs.(REF -) can be used, but cutting off all energies outside the range FORMULA  to FORMULA  gives the bounds shown in Fig. REF .
+
+Bounds on the real and imaginary parts of the survival amplitude
+FIGURE 
+The survival amplitude can be expressed as FORMULA . The methods used in Section  applied to FORMULA  and FORMULA  lead to
+FORMULA 
+and so on. Fig. REF  shows the results when this is applied to the same distribution as used in Fig. REF . Again an energy cut-off could be used to improve these bounds, or to apply them when the energy moments do not exist.
+
+Discussion
+All cases considered here have just one FORMULA  from Eq.(REF ) for each FORMULA , but this has not been proven in general. Note that if FORMULA  increases suddenly then FORMULA  may not be monotonic in FORMULA ; then there is more than one bound for a period of time and the only the best one is of value.
+Thanks are due to M J W Hall for useful comments.
+
+Determining the envelope
+Applying FORMULA  to FORMULA  in Eq.(REF ) leads to FORMULA . From Eq.(REF ), FORMULA , where FORMULA ,
+FORMULA 
+and FORMULA . Then the equation for the envelope is
+FORMULA 
+This must be solved for FORMULA  and the envelope is FORMULA  at time FORMULA .
+Replacing FORMULA  by FORMULA  in Eq.(REF ) shows that FORMULA , where FORMULA ; so the envelope equation is simplest in terms of the FORMULA  only. For the quadratic bound (FORMULA ): FORMULA . The quartic bound (FORMULA ) leads to a cubic equation in FORMULA : FORMULA  with FORMULA . The relevant solution of this is FORMULA , where FORMULA , FORMULA , with FORMULA . Note that all the FORMULA , and FORMULA  from the Schwarz inequality. Also FORMULA  and this is positive because FORMULA  from the Schwarz inequality. It follows that this root of the cubic is positive. The next bound FORMULA  leads to a quintic equation in FORMULA  and numerical solution is probably the most practical option.
+
+finite range of energies
+When FORMULA  for all FORMULA , the energy cut-off must also stop at FORMULA . This causes the envelope to be valid only for times greater than FORMULA  given by FORMULA  at FORMULA . But the envelope will match smoothly to the bound without cut-off at that time, because the envelope osculates the sequence of bounds as FORMULA  approaches FORMULA . These two bounds together provide a continuous bound for all times until the envelope reaches either 0 or 1.
+To illustrate this, consider the simple case of a square energy distribution: FORMULA  for FORMULA . With an energy cut-off at FORMULA , FORMULA  and FORMULA , so the envelope equation (REF ) becomes independent of FORMULA  if FORMULA , where FORMULA  is a dimensionless constant. Each upper envelope has the form FORMULA  and each lower envelope the form FORMULA , where FORMULA  is the positive solution of
+FORMULA 
+FORMULA  and FORMULA  equals either side of Eq.(REF ).
+The envelope for FORMULA  has FORMULA  and FORMULA , which gives the bound to FORMULA  as FORMULA  for FORMULA . Since FORMULA  at FORMULA , the useful range of this envelope is FORMULA . This can be seen in Fig. REF , which also shows the bounds for FORMULA . The limit as FORMULA  can be taken for the upper bounds by summing the series in Eq.(REF ) in terms of FORMULA  and FORMULA , leading to FORMULA , FORMULA  and the bound FORMULA  for FORMULA .
+FIGURE 
+
+discrete energy spectra
+The envelope does not exist in regions where the energy spectrum is discrete, i.e. where the energy distribution consists of FORMULA -functions only, because the bounds provided by Eqs.(REF )-() do not change as FORMULA  moves from one FORMULA -function to the next. Then the present method gives a continuous series of bounds and FORMULA  can be used to specify the period of time that each bound will be valid.
+As a simple example, consider a 3-state system with equal space between the energy levels: FORMULA  with FORMULA . For FORMULA , FORMULA , all the FORMULA  are zero, and the only bound that can be obtained from Eqs.(REF )-() is FORMULA  (useful only if FORMULA ). If FORMULA , FORMULA , FORMULA  and the bound from Eq.(REF ) is valid for FORMULA , where FORMULA , which leads to FORMULA  and FORMULA . For FORMULA , one must use the bound without cut-off. This is illustrated for a particular choice of the FORMULA  in Fig. REF , which also shows the quartic bounds.
+FIGURE 

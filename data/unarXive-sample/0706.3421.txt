@@ -1,0 +1,320 @@
+
+Upper limit on 1H 1905+000
+Jonker et al.
+The cold neutron star in the soft X-ray transient 1H 1905+000
+Peter G. Jonker1,2
+SRON, Netherlands Institute for Space Research, Sorbonnelaan 2, 3584 CA, Utrecht, The Netherlands
+p.jonker@sron.nl
+Daniel Steeghs3
+Harvard–Smithsonian Center for Astrophysics, 60 Garden Street, Cambridge, MA 02138, Massachusetts,
+U.S.A.
+dsteeghs@cfa.harvard.edu
+Deepto Chakrabarty
+Department of Physics and Kavli Institute for Astrophysics and Space Research, Massachusetts Institute
+of Technology, Cambridge, MA 02139, U.S.A.
+deepto@space.mit.edu
+Adrienne M. Juett
+Department of Astronomy, University of Virginia, Charlottesville, VA 22903, U.S.A.
+amj3r@astsun.astro.virginia.edu
+1Harvard–Smithsonian Center for Astrophysics, 60 Garden Street, Cambridge, MA 02138, Massachusetts,
+U.S.A.
+2Astronomical Institute, Utrecht University, P.O.Box 80000, 3508 TA, Utrecht, The Netherlands
+3Astronomy & Astrophysics, Department of Physics, University of Warwick, Coventry
+CV4 7AL, U.K.
+We report on our analysis of 300 ks of Chandra observations of the neutron
+star soft X–ray transient 1H 1905+000 in quiescence. We do not detect the source down
+to a 95% confidence unabsorbed flux upper limit of FORMULA  erg cmFORMULA  sFORMULA  in
+the 0.5–10 keV energy range for an assumed FORMULA  power law spectral model.
+A limit of FORMULA  erg cmFORMULA  sFORMULA  is derived if we assume that the spectrum
+of 1H 1905+000 in quiescence is described well with a black body of temperature of 0.2
+keV. For the upper limit to the source distance of 10 kpc this yields a 0.5–10
+keV luminosity limit of FORMULA  erg sFORMULA / FORMULA  erg sFORMULA  for
+the abovementioned power law or black body spectrum, respectively. This
+luminosity limit is lower than the luminosity of A 0620–00, the weakest black
+hole soft X–ray transient in quiescence reported so far. Together with the
+uncertainties in relating the mass transfer and mass accretion rates we come to
+the conclusion that the claim that there is evidence for the presence of a black
+hole event horizon on the basis of a lower quiescent luminosity for black holes
+than for neutron stars is unproven. We also briefly discuss the implications of
+the low quiescent luminosity of 1H 1905+000 for the neutron star equation of state.
+Using deep Magellan images of the field of 1H 1905+000 obtained at excellent observing
+conditions we do not detect the quiescent counterpart of 1H 1905+000 at the position
+of the outburst optical counterpart down to a magnitude limit of FORMULA . This
+can be converted to a limit on the absolute magnitude of the counterpart of
+FORMULA  which implies that the counterpart can only be a brown or a white dwarf.
+stars: individual (1H 1905+000) —
+accretion: accretion discs — stars: binaries — stars: neutron
+— X-rays: binaries
+Introduction
+Low–mass X–ray binaries (LMXBs) are binary systems in which a compact object,
+either a neutron star or a black hole, accretes matter from a companion star
+that has a mass of typically less than 1 MFORMULA . Such systems are excellent
+test beds for a range of astrophysical questions and probe fundamental physics.
+Theories, such as Einstein's Theory of General Relativity, can be tested in the
+strong field regime by comparing the observed black hole and neutron star
+properties. The presence of an event horizon in the case of a black hole is such
+a prediction. Observations of neutron star LMXBs can also help constrain the
+equation of state of matter at supra-nuclear densities encountered in the
+neutron star core.
+Observationally, it was found that in general the luminosity of quiescent black
+hole LMXBs is lower than that of quiescent neutron star LMXBs
+(e.g. {{cite:c992215e-8529-495c-a367-3c224f933833}}, {{cite:5f1d720e-aa93-4649-816f-f0fa7186375f}} and
+{{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}}). However, recent Chandra and XMM–Newton observations of several transient neutron star LMXBs in quiescence have
+shown that the luminosities of these sources span a much larger range extending
+to lower luminosities than previously thought
+(e.g. {{cite:641c1618-add5-4e8b-8e94-d4ec8e7a6ed1}}, {{cite:58e5719b-83ce-417a-a4b5-7775a7911829}}).
+The neutron star transient with the lowest quiescent X–ray luminosity is 1H 1905+000.
+Using a 25 ks long observation of 1H 1905+000 with the Chandra satellite,
+{{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}} did not detect the source in quiescence down to a
+luminosity of 1.8FORMULA  erg sFORMULA . This means that the neutron star
+luminosity in this source is comparable to that of several quiescent black hole
+LMXBs. For a recent introduction on 1H 1905+000, for a more detailed
+introduction on the difference in quiescent luminosity between neutron star and
+black hole LMXBs, and for an explanation why these transient neutron stars in
+quiescence can provide information on the neutron star equation of state we
+refer to {{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}} (see also {{cite:d2547c6f-cb17-4d35-a443-0c6e7634616b}} and
+{{cite:326de9f9-9356-4c0f-8cdd-46568f7f09ba}} for the latter subject).
+In this Letter, we present our analysis of a long Chandra and a deep
+Magellan observation of 1H 1905+000 obtained with the aim to detect the source or
+provide a stringent limit on the source flux and the source luminosity in
+quiescence.
+
+Observations and analysis
+Chandra X–ray observations
+We have observed 1H 1905+000 with the back–illuminated S3 CCD–chip of the
+Advanced CCD Imaging Spectrometer (ACIS) detector on board the Chandra
+satellite. A log of the observations is given in Table REF . The data
+telemetry mode was set to very faint to allow for a thorough background
+subtraction. A CCD frame time of 3.04104 s has been used. We have reprocessed
+and analysed the data using the CIAO 3.4 software developed by the Chandra
+X–ray Center using CALDB version 3.3.0.1, to benefit from the latest
+calibrations available early 2007 and to take full advantage of the very
+faint data mode. In our analysis we have selected events only if their energy
+falls in the 0.3–7 keV range in order to reduce the background contamination
+that occurs at high energies. The lower cut–off was chosen to avoid calibration
+uncertainties below 0.3 keV. Since fluxes and luminosities are commonly provided
+in the 0.5–10 keV range, we extrapolate our 0.3–7 keV event rate to model
+fluxes over the 0.5–10 keV range in the remainder of this Letter. Data were
+excluded for which the 0.3–7 keV background count rate is higher than 0.4
+counts sFORMULA . The net on–source exposure time is 300.8 ks.
+In the observations presented in Table REF  one source
+(CXOU J190834.1+001139) is always detected (we will describe the properties of
+detected sources unrelated to 1H 1905+000 or to the presented analysis in a
+forthcoming paper). The J2000.0 FORMULA  and FORMULA  position of that source
+was determined in {{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}} to be FORMULA 0FORMULA 033,  FORMULAFORMULA 01FORMULA 0FORMULA 032. We use this source to apply a boresight
+correction to each of the observations separately (see Table REF ) before
+combining them. In addition we applied a boresight correction of (FORMULA ,
+FORMULA )=0FORMULA 090FORMULA 0FORMULA 013,-0FORMULA 208FORMULA 0FORMULA 014 to the final
+combined image such that the coordinates for CXOU J190834.1+001139 measured on
+the combined image are, within errors, consistent with the optical coordinates.
+The latter boresight correction accounts for the limited accuracy with which the
+source position can be determined in the individual observations.
+cccc
+
+Log of the Chandra observations 
+0pt
+
+ID  TFORMULA   Exposurea
+ Boresight corr.
+  (UTC)  (ks)
+ (FORMULA , FORMULA ) 
+5549  Febr. 25, 2005  24.84  0FORMULA 128FORMULA 0FORMULA 044,-0FORMULA 074FORMULA 0FORMULA 041
+6649  Sept. 17, 2006  151.92 0FORMULA 314FORMULA 0FORMULA 018,0FORMULA 611FORMULA 0FORMULA 019
+6650  Sept. 20, 2006  40.63  -1FORMULA 07FORMULA 0FORMULA 030,0FORMULA 047FORMULA 0FORMULA 039
+8261  Sept. 17, 2006  41.61  -1FORMULA 08FORMULA 0FORMULA 029,0FORMULA 539FORMULA 0FORMULA 033
+8262  Sept. 22, 2006  38.65  -0FORMULA 789FORMULA 0FORMULA 025,0FORMULA 392FORMULA 0FORMULA 030
+8283  Sept. 19, 2006  3.15  -0FORMULA 820FORMULA 0FORMULA 066,0FORMULA 758FORMULA 0FORMULA 087
+aAfter taking into account the CCD read–out time and after filtering for flares.
+The outburst position of 1H 1905+000 is FORMULA 0FORMULA 084,  FORMULAFORMULA 10FORMULA 0FORMULA 087 ({{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}}). The
+largest off–axis angle that the source position was observed at was
+FORMULA 0FORMULA 54 (see Table REF ). Using the analytical expression for the
+90% encircled energy radius, RFORMULA  (in FORMULA )= 0.881 + 0.107 FORMULA 
+(FORMULA  in arc minutes) as given in {{cite:c0ea558a-d88c-4fc0-84f6-203dcfb941f0}}, this leads to
+a 90% encircled energy radius of RFORMULA =0FORMULA 91. Less than two photons
+have been detected in the circular area spanned by RFORMULA  (see
+Figure REF ). From the number of photons detected in 300.8 ks we
+calculate a 95% confidence upper limit on the source count using both the
+method explained in {{cite:2d105b22-2b38-4663-b176-20c4f06b8d51}} as well as the method explained
+in the appendix of {{cite:dc9defeb-2a2f-4947-a962-8044422d0e17}}. Even though the number of
+photons falling inside this area is less than 2 we take 2 as the number of
+detected photons in what follows, to account for the fact that we took the 90%
+encircled energy radius (not 100%), and to account for the slight smearing that
+will have occurred due to the alignment of the images introduced by the finite
+accuracy at which the boresight correction can be determined. Following
+{{cite:dc9defeb-2a2f-4947-a962-8044422d0e17}} we calculate the probability that the background
+contributes fewer than the 2 photons inside the 90% encircled energy radius.
+This probability is effectively 0.
+FIGURE 
+From the method of {{cite:2d105b22-2b38-4663-b176-20c4f06b8d51}}, we derive a 95% confidence upper
+limit on the source count of 6.3 which given the exposure time corresponds to an
+upper limit on the count rate of 2.1FORMULA  counts sFORMULA . In the
+method of {{cite:dc9defeb-2a2f-4947-a962-8044422d0e17}} mFORMULA  and mFORMULA  are defined, corresponding to
+the number of X–ray photons detected in the Target and Reference apertures of
+measure FORMULA  and FORMULA , respectively. For FORMULA  we have taken a
+circular region with radius of 1FORMULA  centered on the source position, as above
+this gives FORMULA 2 counts in the detection region. For FORMULA  we have taken
+an annulus with inner and outer radius of 4FORMULA 92 and 39FORMULA 36, respectively.
+We have excluded a weak source from this background area. The size of the areas
+FORMULA  and FORMULA  is 3.14 arcsecFORMULA  and 4790.94 arcsecFORMULA , respectively
+(mFORMULA  and mFORMULA  are 2 and 2750, respectively). The expectation value on the number
+of source counts for a confidence level of 95% is FORMULA 5 counts which corresponds to
+an upper limit on the count rate of 1.7FORMULA  counts sFORMULA . In the
+remainder of the Paper we conservatively use the slightly higher value from the
+{{cite:2d105b22-2b38-4663-b176-20c4f06b8d51}} method.
+We have used W3PIMMSavailable at
+http://heasarc.gsfc.nasa.gov/Tools/w3pimms.html to estimate 95% confidence
+limits on the source flux and luminosity in different X–ray bands employing the
+various models often found for neutron star soft X–ray transients (SXTs) in
+quiescence. The obtained limits are listed in Table REF . We have
+estimated the effective temperature at the surface of the neutron star,
+TFORMULA , and as measured at infinity, TFORMULA , as follows: we have
+used the flux limit obtained for a 0.2 keV black body model as limit for the
+neutron star atmosphere model in xspec version 11.3.2p ({{cite:b7558188-d2bd-484c-8a9f-60ec6267d728}};
+{{cite:a59e8f18-f481-42b4-ba1e-6bcb7682106f}}). Ideally, one would like to use a response and
+auxiliary response matrix specific for the location of the source on the CCD.
+However, for the combined observation this is not possible, hence, we have used
+the standard response files for on–axis ACIS–S observations. Given the
+distance of 10 kpc, assuming a 1.4 MFORMULA  neutron star with radius of 10 km,
+a pure Hydrogen, non–magnetic atmosphere, the limits on TFORMULA  and
+TFORMULA  are 4.6FORMULA  K and 3.5FORMULA  K, respectively.
+cccc
+
+Upper limits to the unabsorbed source fluxa and luminosityb.
+0pt
+
+Model  FFORMULA  unabs.  FFORMULA  unabs.  L FORMULA
+  erg cmFORMULA  sFORMULA   erg cmFORMULA  sFORMULA   FORMULA  erg s FORMULA
+
+PLc FORMULA =2.0  2.0FORMULA  4.5FORMULA   2.4 FORMULA
+BBc T=0.2 keV 1.4FORMULA  1.9FORMULA   1.6 FORMULA
+BBc T=0.1 keV 2.2FORMULA  8.8FORMULA   2.6 FORMULA
+aUnabsorbed flux (F) is given in the 0.5–10 keV and 0.01–10 keV band. The used interstellar extinction is 2.1FORMULA  cmFORMULA . 
+bThe luminosity (L) is given for 0.5–10 keV and a distance of 10 kpc.
+cPL stands for power law and BB for blackbody.
+Using the stringent limit on the source luminosity together with detections and
+limits on the detection of the source obtained at other times we have
+constructed the long term X–ray lightcurve of 1H 1905+000 (see
+Fig. REF )Data for Fig. REF  was taken or derived from
+{{cite:423a2ba4-2ca0-44da-83bc-61384f92bf24}} (Ariel–V), {{cite:1773d39f-dbaa-4a88-8fa4-f9094c4fea3c}} (SAS–3),
+{{cite:18cd8baa-e584-4261-bf96-617fba9532c4}} (HEAO–I), {{cite:b1dc5407-fedc-4884-8877-f5dc246b4d9b}} (Einstein),
+{{cite:276e17c9-b2ed-45fc-be96-f38aebfdd65d}} (EXOSAT, MJD 46316), {{cite:02962a62-c7ab-4f2e-ae50-06d5c3cc29e5}}
+(EXOSAT, MJD 45982), {{cite:5c5759d8-9641-493f-8ed9-95ef643fa10b}} (ROSAT),
+{{cite:ab6388ae-d566-4d62-94ce-e1f303e2f0f7}} (Chandra1), {{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}} (Chandra2),
+and this work (Chandra 2+3). From Fig. REF  it is clear that the source
+underwent an outburst with a duration of at least 9.9 years (the time between
+the first and last detection). Using the SAS–3 satellite several type I X–ray
+bursts were detected ({{cite:f190be84-2880-4579-8a9b-0a7a6c52b323}} [multiple bursts],
+{{cite:1773d39f-dbaa-4a88-8fa4-f9094c4fea3c}} [5], {{cite:45373d64-ec64-4cfc-bbc8-5e7cd85c3466}} [1]). However,
+since the persistent flux level was in most cases not quoted only 1 SAS–3 point
+appears in Fig. REF .
+FIGURE 
+
+Magellan optical observations
+We obtained Sloan FORMULA –band images using the Magellan Instant Camera (MagIC)
+instrument mounted on the 6.5 m Magellan–Clay telescope at Las Campanas
+Observatory. On June 23, 2006 (MJD 53909 UTC), three 300 second exposures were
+collected between 5:02–5:19 UTC. The observing conditions were excellent with a
+photometric sky and a seeing of 0FORMULA 4. MagIC delivers a 2.35FORMULA  field of
+view sampled at 0FORMULA 069/pixel. Frames were readout in quad amplifier mode, and
+were debiased and then flatfielded using dithered twilight sky observations.
+We astrometrically calibrated the median combined CCD image by matching the
+positions of stars in the image against those of stars from images presented in
+Jonker et al. (2006). The latter images were calibrated with respect to the second
+version of the USNO CCD Astrograph Catalog ({{cite:f9a52a08-3d74-4ab1-b62d-76212fed060c}})
+to provide a ICRS J2000.0 astrometric frame.
+Photometric calibration was performed using images obtained on June 25, 2006
+with the 4-m Blanco telescope and its MOSAIC imager at CTIO. A 120s Sloan
+FORMULA –band image of the field surrounding 1H 1905+000 was obtained under photometric
+conditions together with observations of the standard star fields PG 1323 and
+SA 107. These allowed us to perform an absolute magnitude calibration of stars
+in the proximity of our target. Since we only observed the field of 1H 1905+000 in one
+filter no color terms have been calculated.
+Despite the excellent observing conditions at Magellan, the counterpart of 1H 1905+000 in
+quiescence is not detected down to a 5FORMULA  magnitude limit of FORMULA . A high
+resolution finder chart is presented in Fig. REF .
+FIGURE 
+
+Discussion
+We have obtained a 300 ks–long Chandra observation of the field of 1H 1905+000.
+Using this observation we do not detect the quiescent X–ray counterpart to this
+neutron star soft X–ray transient. The limit on the source flux depends on the
+assumed spectral model. For instance, a spectral model of an absorbed power law
+with index of 2 as observed for weak quiescent neutron star transients and
+quiescent black hole X-ray transients ({{cite:10ac349e-a061-4d4f-9862-653a82cf5149}},
+{{cite:5f1d720e-aa93-4649-816f-f0fa7186375f}}), gives a 95% confidence upper limit on the
+0.5–10 keV source flux of 2.0FORMULA  erg cmFORMULA  sFORMULA . Given
+the upper limit on the source distance of 10 kpc ({{cite:276e17c9-b2ed-45fc-be96-f38aebfdd65d}},
+{{cite:bbb34373-0994-4605-a096-835bef3ad5dc}}) this converts to a 0.5–10 keV luminosity limit
+of FORMULA . This means that the luminosity of
+this neutron star SXT is lower than that observed for the weakest black hole SXT
+A 0620–00 which has for a distance of 1 kpc an unabsorbed quiescent 0.5–10 keV
+luminosity of FORMULA  erg sFORMULA  ({{cite:c992215e-8529-495c-a367-3c224f933833}},
+{{cite:5f1d720e-aa93-4649-816f-f0fa7186375f}}). Note that some black hole SXTs have not been
+detected in quiescence, and whereas the present upper limit to the luminosity in
+those cases is well above that derived for 1H 1905+000 one cannot exclude that deeper
+observations will reveal a lower luminosity than that derived for 1H 1905+000.
+Nevertheless, from present data the claim that there is evidence for a black
+hole event horizon from a lower quiescent luminosity in black holes than neutron
+stars (e.g. {{cite:c992215e-8529-495c-a367-3c224f933833}}) is unproven and at least does not
+hold universally.
+Scaling of the observed quiescent luminosity with the Eddington luminosity in order
+to try to normalize the neutron star and black hole systems to the same mass
+accretion rate is very uncertain. For instance, since an unknown amount of the
+transfered mass might be lost from the system in the form of a disk wind
+(e.g. {{cite:ed592bc2-c179-4faa-a6d5-db2c3087fb1c}}), the relation between the mass transfer and
+mass accretion rate is not well constrained. This might be especially important for
+neutron star systems in quiescence if a propellor regime exists
+({{cite:1959b5f2-33c5-4a5b-86f8-93f4e6b4867a}}). On the other hand, as shown for instance by
+{{cite:fbf591f0-d8d4-41b5-a36f-7e497a073796}}, {{cite:4aa9df9c-da8f-4ea4-a331-0eaff6712395}} and
+{{cite:23fc278c-9571-49fb-8eeb-54517019bbad}}, black holes are producing more powerful jets
+observable in radio. Matter could also be lost from these systems via these jets,
+the amount depends on the unknown composition of the jets. Finally, it is unclear
+whether accretion in low–tranfer states proceeds via an advection dominated
+accretion flow (e.g. ADAF; {{cite:045966e0-12b0-4b85-87ab-96c11a9987ca}}) or via a disk
+(e.g. {{cite:de7c7799-104e-4f8c-b390-c610f54a22f8}}).
+In deep optical Sloan FORMULA –band images obtained with the 6.5 m Magellan telescope
+under excellent conditions (seeing 0FORMULA 4) we do not detect the optical
+counterpart to 1H 1905+000. For a distance of 10 kpc the magnitude upper limit of FORMULA 25.3
+converts into an upper limit on the absolute magnitude of FORMULA 9.6 (as in
+{{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}} we converted the observed outburst NFORMULA  from
+{{cite:b1dc5407-fedc-4884-8877-f5dc246b4d9b}} to a reddening AFORMULA  in the sloan FORMULA  band using
+the conversion factors given in {{cite:114e0462-78b7-4d4e-a73b-513d140634ed}} and
+{{cite:034ec700-1f57-432b-a8de-bd9bda2c29c7}}). This limit implies that the companion star of 1H 1905+000 has a
+spectral type later than M5 or is a white dwarf as in ultra–compact X–ray
+binaries. It strengthens the identification of 1H 1905+000 as an ultra–compact X–ray
+binary ({{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}}).
+An absorbed thermal neutron star atmosphere spectral model for a distance of 10
+kpc gives a limit to the effective temperature at the surface of the neutron
+star of 4.6FORMULA  K (for a neutron star mass and radius of 1.4 MFORMULA 
+and 10 km, respectively and assuming a pure Hydrogen non–magnetic atmosphere).
+For such a neutron star this implies an effective temperature of 3.5FORMULA  K at infinity.
+A factor in determining the limit on the source flux is the amount of interstellar
+extinction that is assumed. We have taken the conservative value for the Hydrogen
+column density of FORMULA  from the results of
+{{cite:b1dc5407-fedc-4884-8877-f5dc246b4d9b}} who found FORMULA . Those authors found that the Hydrogen column densities derived
+for several LMXBs from their spectral fits to Einstein data agree with values found
+using ROSAT spectra. Besides and related to the NFORMULA , the bolometric
+correction is important in the conversion of the 0.5–10 keV band limit to a
+bolometric luminosity limit. E.g. from the upper limit on the effective temperature
+of a neutron star atmosphere an upper limit to the bolometric luminosity of
+FORMULA  erg sFORMULA  is determined implying a bolometric correction of
+FORMULA 4–5. For a power law spectral model with index 2, the bolometric
+correction would be FORMULA 3 (here we have taken the 0.01–100 keV luminosity as
+a good measure of the bolometric luminosity). In this we again have taken FORMULA .
+The new deep limit on the quiescent thermal X–ray emission of 1H 1905+000 implies that
+the neutron star must cool faster than possible with modified URCA processes even
+for time averaged mass accretion rates as low as 10FORMULA  MFORMULA  yearFORMULA 
+({{cite:199e84f6-5c8d-4fb6-acf2-cc4a066e22d3}}), unless the neutron star core is not in a steady
+state. This would mean that 1H 1905+000 had been in quiescence prior to the FORMULA 10 year
+long outburst for FORMULA 10 thousand years since the core reaches steady state on
+such timescales ({{cite:3c2624af-fb5a-4975-8bc6-6c5509cf296b}}, {{cite:d2547c6f-cb17-4d35-a443-0c6e7634616b}}). On
+the other hand, here again one should keep in mind that the relation between the
+mass transfer and mass accretion rate is not well known especially for quiescent
+systems. So, it is possible that the time averaged mass transfer rate is larger
+than 10FORMULA  MFORMULA  yearFORMULA  whereas the mass accretion rate onto the
+neutron star is lower than this.
+PGJ acknowledges Ed Brown for useful discussions, support from NASA
+grant G06-7032X and support from the Netherlands Organisation for Scientific
+Research. DS acknowledges support through the NASA Guest Observer program as
+well as a PPARC/STFC Advanced Fellowship. This paper includes data gathered with
+the 6.5 m Magellan Telescopes located at Las Campanas Observatory, Chile. Facilities: Magellan, CXO (ACIS).

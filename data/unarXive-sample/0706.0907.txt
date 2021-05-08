@@ -1,0 +1,334 @@
+
+
+Latin Square Thue-Morse Sequences are Overlap-Free
+C. Robinson Tompkins
+Latin Square Thue-Morse Sequences are Overlap-Free
+C. Robinson Tompkins
+
+
+11B85
+
+We define a morphism based upon a Latin square that generalizes the
+Thue-Morse morphism. We prove that fixed points of this
+morphism are overlap-free sequences, generalizing results
+of Allouche - Shallit and Frid.
+
+Introduction
+In his 1912 paper, Axel Thue introduced the first binary sequence
+that does not contain an overlap {{cite:62f0784d-dd24-48e8-bdd6-696932490caf}}. It is now called the
+Thue-Morse sequence:
+FORMULA 
+An overlap is a string of letters in the form
+FORMULA  where FORMULA  is a single letter and
+FORMULA  is finite string that is potentially empty. Overlaps
+begin with a square, namely FORMULA  where
+FORMULA  as given above. It is easy to observe, as
+Thue did, that any binary string of four or more letters must contain
+a square.
+There are several ways to define the Thue-Morse sequence {{cite:61abde17-ccfe-4848-b36a-cb47c3ff05b9}}.
+We will derive it as a fixed point of a morphism. Let FORMULA  be an
+alphabet and let FORMULA  be the set of all finite or infinite strings over FORMULA . A morphism is a mapping
+FORMULA 
+that obeys the identity FORMULA , for FORMULA  a finite string
+and FORMULA  {{cite:3e454f5e-aa43-40f6-b993-8611fb7be60d}}.
+By {{cite:3e454f5e-aa43-40f6-b993-8611fb7be60d}}, define the Thue-Morse morphism on
+FORMULA  as
+FORMULA 
+The sequence found by applying 0 to the the FORMULA th iterate
+of FORMULA  converges to the Thue-Morse sequence, denoted
+FORMULA , which of course is infinite. In particular,
+FORMULA 
+Notice that FORMULA  and
+FORMULA . This second observation says
+that the Thue-Morse sequence is a fixed point of FORMULA  {{cite:3e454f5e-aa43-40f6-b993-8611fb7be60d}}.
+We can identify the binary alphabet of the Thue-Morse sequence with
+FORMULA  the integers modulo 2. It is natural to then
+generalize it to FORMULA , by considering the alphabet
+FORMULA , and for FORMULA , defining the
+morphism
+FORMULA 
+where FORMULA  is the residue modulo FORMULA . Notice that for
+FORMULA , FORMULA . In 2000, Allouche and Shallit
+proved that FORMULA  is overlap-free {{cite:ed09e641-5128-4e8b-bcf9-26e1f1a52229}}.
+In this paper, we generalize FORMULA , which is based on the Cayley
+table of FORMULA , to Latin squares of arbitrary finite size
+FORMULA . We define our morphism based the Latin square, and prove that
+the fixed point of the Latin square morphism is an overlap-free
+sequence. Note that the Cayley table for FORMULA  is a Latin
+square, but not every Latin square is a Cayley table.
+
+Latin Square Morphisms produce Tilings
+Allouche and Shallit's morphism can be seen as a mapping of FORMULA  to
+the FORMULA  row (that begins with FORMULA ) of the Cayley table
+for FORMULA . For example when FORMULA , we have
+FORMULA 
+This suggests a natural generalization to any Latin square.
+Begin with a generic alphabet of FORMULA  letters, which we may assume
+to be FORMULA . Recall that a Latin square FORMULA 
+is an FORMULA  table with FORMULA  different letters such that each
+letter occurs only once in each column and only once in each row. We
+will concern ourself with the Latin squares in which the first
+column retains the natural order of our alphabet FORMULA .
+For FORMULA , there are two such Latin squares. The one that does not
+come from FORMULA  directly is
+FORMULA 
+Let FORMULA  denote the FORMULA  row of our Latin
+square FORMULA . For each FORMULA  we define the Latin
+square morphism by FORMULA . For example we can use
+the above Latin square for FORMULA  to define the following morphism,
+FORMULA 
+Given any FORMULA , FORMULA 
+converges to a sequence FORMULA , which is a fixed point of
+the morphism FORMULA . So,
+FORMULA 
+In fact every fixed point of FORMULA  is of the form FORMULA 
+for some FORMULA  {{cite:3e454f5e-aa43-40f6-b993-8611fb7be60d}}.
+Express the sequence as FORMULA , so
+FORMULA 
+Thus, we have a tiling of our sequence (and of the natural numbers)
+by the rows of our Latin square FORMULA . Again, in terms of
+our example where FORMULA  we have three tiles 132, 213, and 321 and so
+FORMULA 
+Now, consider the subsequence created by taking the first letter of
+each tile. Notice that this sequence is in fact our original
+sequence. Thus our sequence contains itself as a subsequence. These
+two observations, our sequence as a tiling and our sequence equaling
+a subsequence of itself, will be critical for the proof of our main
+result.
+
+Overlap-Free Latin Square Sequences
+In this section we prove our main result.
+Theorem 3.1 Let FORMULA , and let FORMULA  be an
+FORMULA  Latin square using the letters from FORMULA ,
+with the first column in its natural order. For an arbitrary
+FORMULA , let FORMULA  denote the row of
+FORMULA  corresponding to FORMULA  in the first column. If we
+define the Latin square morphism as
+FORMULA 
+then we have that for any FORMULA , FORMULA  is an
+overlap-free sequence.
+
+Remark The Latin square for FORMULA  above can be seen to be the Cayley table
+for FORMULA  with the last two columns transposed. Frid has
+shown that all morphisms based upon such Latin squares for
+FORMULA  produce overlap-free sequences as their fixed points
+{{cite:aded9620-7e07-4315-ba73-4c8f325e0bf8}}. Of course not every Latin square comes from a group
+Cayley table. For an example of a Latin square that is not a group
+Cayley table see below {{cite:8c30adae-1897-454b-8cb0-5c6e4cf24c34}}.
+FORMULA 
+
+Let FORMULA  so the FORMULA  letter in the sequence is FORMULA .
+Similarly, the FORMULA  tile in the
+sequence is FORMULA . We will be also using the notion of length of a
+string of letters, meaning the number of letters in a string. For an
+arbitrary string FORMULA  the length of FORMULA  will be denoted FORMULA .
+Use FORMULA  to denote the location of FORMULA  on its tile
+FORMULA , so FORMULA  with FORMULA  and FORMULA .
+Assume for a contradiction that FORMULA  contains an
+overlap; moreover that FORMULA  is the shortest
+overlap in FORMULA . Write
+FORMULA , where FORMULA  is a single
+letter, FORMULA  is a finite string with FORMULA , FORMULA  is a finite string, and FORMULA  is the infinite tail of our
+sequence. We have that FORMULA  (bound by the length
+of the tiles) because each tile is a permutation of
+FORMULA , and we cannot have two of the three copies of FORMULA 
+contained in one tile. Our subscripts place this overlap
+in our sequence. For FORMULA , let FORMULA  denote the
+subscript of the FORMULA  FORMULA . Thus,
+FORMULA 
+Our argument proceeds as follows: there are two cases
+FORMULA  and
+FORMULA . In the first case we use the
+fact that we have a tiling of FORMULA  by the rows of a
+Latin square, to show that the overlap FORMULA  is
+not possible. In the
+second case, when FORMULA , we argue based
+upon the fact that FORMULA  contains itself as a subsequence
+that the existence of the overlap FORMULA 
+leads to the existence of a shorter overlap, and thus a
+contradiction.
+Case 1:  FORMULA
+For each FORMULA , let FORMULA  such that
+FORMULA . In other words FORMULA  is the
+FORMULA  letter in its tile in
+FORMULA . Also, we will refer to the tile containing FORMULA  as
+FORMULA . It is now possible to write the length of
+FORMULA  as FORMULA . So,
+FORMULA 
+Six Cases
+Since FORMULA 
+there are two main cases that we will first consider: FORMULA 
+and FORMULA . However, for the explicit details of our
+conclusions we will consider all six of the following possibilities depending on
+the value of FORMULA ,
+FORMULA 
+The equalities on the left arise out of equation (4) and the fact
+that the integer FORMULA  satisfies, FORMULA .
+This means that FORMULA  is the element in the set
+FORMULA  that lies in the interval
+FORMULA . Notice that FORMULA  in both cases when
+FORMULA  and FORMULA .
+
+FORMULA  and the beginning of each  FORMULA
+When FORMULA , we pick FORMULA  to be the last FORMULA 
+letters in FORMULA  such that FORMULA  has no specific order and
+FORMULA . Of course, the remainder of the letters in
+FORMULA  are in FORMULA , the complement of FORMULA . Notice
+that this puts FORMULA . By equating the letters
+in FORMULA  with the corresponding letters in
+FORMULA , we find that the last FORMULA  letters
+of FORMULA 
+(starting with FORMULA ) are in FORMULA . Also, we find that
+the first FORMULA  letters of FORMULA  are FORMULA .
+When FORMULA , we pick FORMULA  to be the last FORMULA 
+letters in FORMULA  such that FORMULA  has no specific order and
+FORMULA . Obviously, the remainder of letters in FORMULA 
+must be those that make up FORMULA  again placing
+FORMULA . By equating the letters in FORMULA 
+with the corresponding letters in FORMULA  we find
+that the last FORMULA  letters of FORMULA  (starting with FORMULA )
+are in FORMULA . Also, we find that the first FORMULA 
+letters of FORMULA  are FORMULA .
+We have discussed the appearance of FORMULA  and its complement
+FORMULA  in the beginning of each FORMULA . So, we set
+forth to describe FORMULA  and FORMULA  at the end of each
+FORMULA .
+
+Following FORMULA  through the overlap
+It is a basic observation that because each tile is a permutation
+of the letters in FORMULA , each tile can be partitioned into FORMULA 
+and its complement FORMULA . It is fundamental to our
+argument that because of the equality FORMULA , the letters in FORMULA  form a
+contiguous collection of elements in each tile involved in our
+overlap excluding FORMULA  (each of which will need further description),
+either the beginning or the ending of each tile. The idea
+involved in following FORMULA  through the overlap is quite simple,
+we illustrate it in one particular case FORMULA .
+We have explicitly described the location of FORMULA  at
+the beginning of each FORMULA . We will now use our example
+FORMULA  to show to the reader how the tiling of our sequence
+can be used to find the location of FORMULA  at the end of each
+FORMULA . In doing so, we will refer to Figure 1.
+In Figure 1, we have displaced the overlap from our sequence (represented by the
+continuous solid horizontal line). We have also split
+our overlap in half leaving FORMULA  intact for equality
+purposes. We have placed FORMULA  over
+FORMULA  with FORMULA  directly over FORMULA 
+and FORMULA  directly over FORMULA  so that we can see equality
+of terms simply by looking straight up or straight down (displayed
+by vertical arrows). The set of letters FORMULA  is represented by a
+horizontal solid line above and below our sequence line, and the set of letters
+FORMULA  is represented by horizontal dotted lines above
+and below the sequence line. Also,
+notice that we have drawn in the edges of the tiles with smaller
+vertical black lines.
+FORMULA 
+Figure 1: The situation when FORMULA .
+Now notice that by using the tiles we can equate letters in
+FORMULA  with FORMULA  all the
+way through the overlap. Since we know that FORMULA  occurs in the
+first FORMULA  letters of FORMULA , then FORMULA  is
+the last FORMULA  letters of FORMULA . This causes
+FORMULA  to be the first FORMULA  letters of
+FORMULA , and thus FORMULA  appears in the last
+FORMULA  letters of FORMULA . Thus we can conclude that FORMULA 
+occurs in the last FORMULA  letters of all the tiles in
+FORMULA  except for FORMULA . We can also
+conclude that FORMULA  occurs in the first FORMULA  letters of all the
+tiles in FORMULA  up through FORMULA . We can approach every case by
+the same process.
+
+FORMULA  and how each FORMULA  ends
+We now will explain the conclusions for the six possible
+cases that we defined earlier, leaving the actual drawing to the reader.
+Case FORMULA  (as seen in Figure 1). After
+we follow FORMULA  through the overlap, we find that FORMULA  occurs in the
+first FORMULA  letters of FORMULA . Recall FORMULA . So, we have that the next
+FORMULA  letters of FORMULA  are not
+in FORMULA . Notice that the size of FORMULA , FORMULA , added to FORMULA  make
+up all of FORMULA . This places the boundary between FORMULA  and FORMULA 
+exactly in line with the end of FORMULA  in FORMULA  and the beginning
+of FORMULA . We then equate the first letters in FORMULA  with those in
+FORMULA  to find that FORMULA  occurs nowhere in FORMULA . So now, we
+have described FORMULA  fully. Earlier we defined FORMULA  such that
+FORMULA  occurred from FORMULA  to the end of the tile, and
+we have just shown that the first FORMULA  letters of FORMULA  (which
+includes FORMULA ) must be in FORMULA . So FORMULA 
+does not appear in anywhere in FORMULA , and since
+FORMULA , we must have a contradiction.
+Cases FORMULA  and FORMULA .
+After we follow FORMULA  through the overlap, we find that FORMULA  occurs
+in the first FORMULA  letters of FORMULA . So, FORMULA 
+occurs in the final FORMULA  letters of FORMULA  causing the
+first FORMULA  letters of FORMULA  to be FORMULA .
+Notice that FORMULA . So the boundary between
+FORMULA  and FORMULA  in FORMULA  coincides with the boundary
+between FORMULA  and FORMULA . This means that FORMULA ,
+but we assumed that FORMULA  earlier which is a contradiction.
+Case FORMULA . After we follow FORMULA  through the
+overlap, we find that FORMULA  occurs in the last FORMULA  letters of
+FORMULA . This causes FORMULA  to occur in the first FORMULA  letters
+of FORMULA  by equality of FORMULA  and
+FORMULA . To describe the remaining letters of
+FORMULA  up to and including FORMULA  consider
+FORMULA . So FORMULA  occurs in the next FORMULA 
+letters after FORMULA . Thus we have
+that FORMULA  is repeated twice in FORMULA  so we have our
+contradiction.
+Cases FORMULA  and FORMULA . After we
+follow FORMULA  through the overlap we find that FORMULA  occurs in the
+first FORMULA  letters of FORMULA . This causes FORMULA 
+to occur in the final FORMULA  letters of FORMULA  and thus
+the first FORMULA  letters of FORMULA . Since
+FORMULA , we see that the left boundary of
+FORMULA  coincides with the right boundary of these first
+FORMULA  letters of FORMULA . In particular, this means that
+the last FORMULA  letters of FORMULA , which include FORMULA , are in
+FORMULA . But, this contradicts the fact that FORMULA .
+
+Case 2:  FORMULA
+We begin by considering some FORMULA  the symmetric group on
+FORMULA  letters. Note that we may apply FORMULA  to any string by
+requiring FORMULA  to act on each individual letter, so
+FORMULA . Thus
+FORMULA  can be treated as a morphism. Moreover,
+FORMULA  is an invertible map because FORMULA . Thus FORMULA  contains an overlap if and only if
+FORMULA  contains an overlap.
+Define the function
+FORMULA  by FORMULA .
+Now if we let FORMULA  be a sequence, then define the sequence
+given by the function FORMULA  to be the subsequence
+FORMULA  of FORMULA . So for FORMULA 
+arbitrary we have that
+FORMULA 
+Define FORMULA  with FORMULA , such that if
+FORMULA ,
+FORMULA . Recall that FORMULA  refers to the
+FORMULA  row of our Latin square FORMULA .
+So we have that FORMULA  maps each letter in the
+first column of our Latin square, to the FORMULA  letter of
+its corresponding row. Now, we want to show that
+FORMULA  for all FORMULA . So take
+FORMULA 
+Since FORMULA  is invertible we can conclude that
+FORMULA  contains an overlap if and only if
+FORMULA  contains an overlap.
+Since FORMULA 
+pick FORMULA . By applying FORMULA  to (4) we
+obtain
+FORMULA 
+where
+FORMULA 
+and FORMULA .
+Observe that FORMULA  contains a shorter
+overlap which implies that FORMULA  also contains
+a shorter overlap, a contradiction of our assumption.
+
+Acknowledgements
+I would like to thank Dr. Griff Elder, my research advisor for his
+guidance. I would also like to thank Dr. Dan Farkas for introducing
+me to the Thue-Morse sequence at Virginia Tech's Undergraduate
+Research workshop in 2006 funded by the NSA and for the idea that
+lead to the argument for FORMULA . Lastly, I would
+like to thank the referees and Professor Anca Muscholl for helping
+me correct my notation.

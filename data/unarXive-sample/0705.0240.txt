@@ -1,0 +1,813 @@
+
+Gravitational Wave Constraints on DBI Inflation
+2020/09/07 17:57:28
+James E. Lidsey and Ian Huston
+Astronomy Unit, School of Mathematical Sciences
+Queen Mary, University of London
+Mile End Road, London E1 4NS
+United Kingdom
+J.E.Lidsey@qmul.ac.uk, I.Huston@qmul.ac.uk
+JCAP
+
+An upper bound on the amplitude of the primordial gravitational wave spectrum
+generated during ultra-violet DBI inflation is derived.
+The bound is insensitive to the form of the inflaton
+potential and the warp factor of the compactified
+dimensions and can be expressed entirely in terms of
+observational parameters once the volume of the five-dimensional
+sub-manifold of the throat has been specified. For standard type IIB
+compactification schemes, the bound predicts
+undetectably small tensor perturbations
+with a tensor-scalar ratio FORMULA .
+This is incompatible with a corresponding lower limit of
+FORMULA , which applies to any model
+that generates a red spectral index FORMULA  and a potentially
+detectable non-Gaussianity in the curvature perturbation.
+Possible ways of evading these bounds in more
+general DBI-type scenarios are discussed and a
+multiple-brane model is investigated as a specific example.
+
+Keywords:
+Inflation,
+Physics of the early universe.
+Introduction
+The inflationary scenario provides the
+theoretical framework for the early history
+of the universe. It has now been successfully tested by observations,
+including the third year data from the Wilkinson Microwave Anisotropy
+Probe (WMAP3) {{cite:0cfb3f6f-28a4-4499-9a64-918ebfc7cc2d}}. Despite this success, however, the high energy
+physics that resulted in a phase of accelerated expansion is still
+not well understood. String/M-theory unifies the fundamental interactions
+including gravity and it is natural and important to
+develop inflationary models within string theory and to confront them with
+cosmological observations.
+One class of string-theoretic models that has received
+considerable attention is D-brane inflation
+{{cite:b7c95d32-d645-45fb-8ed9-ccb8f5e55f00}}, {{cite:d9b050c6-ede9-44c9-9632-0186c1530e24}}, {{cite:6f696862-b08b-4f2a-b554-80abad089a28}}, {{cite:e6edd85c-69b1-4d8b-a7b0-12a61c7ba6a0}}, {{cite:faa3bf91-4440-4903-8b4c-2ed5d0a04341}}, {{cite:28cf68bf-42bc-449a-863e-975934919ed8}}, {{cite:5b316daa-24c0-41f9-b75f-5f9883a84573}}, {{cite:13e635ff-4016-43d2-9f20-6db421b48bf9}}, {{cite:ffdbc448-99f6-455c-916a-2417759c1acb}}, {{cite:c85df112-9d57-4c3e-90dc-5e7c48ff2593}}, {{cite:fe0dc8ba-a971-421f-a839-d0db5a33ec15}}, {{cite:fa86bbde-a710-41a4-9a1d-7bcae07d67e4}}, {{cite:82ea40c0-b9f2-4e4a-b981-23fc597ae764}}, {{cite:2093d613-5c35-4c08-9ed7-19b3f4ab6017}}, {{cite:bba76906-0685-4a81-b406-a999a9ca3c14}}, {{cite:963ca153-0793-49e8-a418-044af30864ff}}, {{cite:ce5c75f3-2450-487a-b58b-1403bb5d2c23}}, {{cite:ce039f98-4ebb-4e8a-80c6-c041b0d4aaad}}, {{cite:3d770aa6-d100-4c76-aa85-9c2180f3e726}}, {{cite:8cfea061-6fab-471b-84c7-2624c42df8d3}}, {{cite:f5092620-c93e-4a21-a260-e51ef0547eac}}, {{cite:a452e179-e26b-4efe-a33f-40a5bd59d209}}, {{cite:1411dfa5-0f28-471d-af43-30063d554f73}}, {{cite:8127f301-1546-4829-80ca-cedb0d215326}}, {{cite:8178ccb7-ed13-4ce2-b7dc-6be9a0d7bcbd}}.
+(For recent reviews, see, e.g., {{cite:bb06bb65-58a7-436c-a88d-fc969cdd3948}}, {{cite:7054adfa-9817-4611-a4cf-5f9d25d3a39f}}).
+Of particular interest
+is the DBI inflationary scenario {{cite:28cf68bf-42bc-449a-863e-975934919ed8}}, {{cite:fe0dc8ba-a971-421f-a839-d0db5a33ec15}}.
+This is based on the compactification of type IIB string theory on a
+Calabi-Yau (CY) three-fold, where the form-field fluxes generate locally
+warped regions known as `throats'. The propagation of a
+FORMULA -brane in such a region can drive inflation, where the inflaton
+field is identified with the radial position of the brane
+along the throat. Since this is an open string mode, the field
+equation for the inflaton is determined by a Dirac-Born-Infeld (DBI) action.
+The purpose of the present work is to
+explore the observational consequences of DBI inflation.
+In general, primordial gravitational wave fluctuations
+and non-Gaussian statistics in the curvature perturbation provide
+two powerful discriminants of inflationary scenarios.
+The nature of the DBI action is such that the sound
+speed of fluctuations in the inflaton can be much less than the speed of
+light. This induces a large and potentially detectable non-Gaussian
+signal in the density perturbations {{cite:28cf68bf-42bc-449a-863e-975934919ed8}}, {{cite:fe0dc8ba-a971-421f-a839-d0db5a33ec15}}, {{cite:d9b258a1-e3ac-4a94-ae5e-301afb15003f}}, {{cite:9774e647-efe9-4366-9023-d3aa741dddec}}.
+The gravitational wave background generated in DBI
+inflation was recently investigated by Baumann and McAllister (BM)
+{{cite:766483d1-0907-4091-a402-22f31b5ca409}}. By exploiting a relationship due originally
+to Lyth {{cite:c54af3e6-24bf-49b1-bfcd-9d166ed7b45e}}, these authors derived a field-theoretic upper limit
+to the tensor amplitude and concluded that
+rather stringent conditions would need to be satisfied for these
+perturbations to be detectable.
+Moreover, the special case of
+DBI inflation driven by a quadratic potential is incompatible with the WMAP3
+data when this constraint is imposed {{cite:b203b444-e93f-490d-a019-a1a9097ab66b}}.
+Our aim is to derive observational constraints on DBI inflation that are
+insensitive to the details of the throat geometry and the inflaton potential.
+In general, there are two realizations of the scenario,
+which are referred to as the ultra-violet (UV) and infra-red (IR)
+versions, respectively. These are characterized by whether the brane is
+moving towards or away from the tip of the throat.
+We focus initially on the UV scenario
+and derive an upper bound on
+the gravitational wave amplitude in terms of observable
+parameters. This limit arises by considering
+the variation of the inflaton field during the era when
+observable scales cross the Hubble radius, and
+we find in general that the tensor-scalar ratio must satisfy
+FORMULA . This
+is below the projected sensitivity of future Cosmic Microwave Background (CMB) polarization
+experiments {{cite:50bb9aa0-b251-45f5-b944-cdf77a659c8f}}, {{cite:87fcec09-6102-4dac-9ffd-0b7d31dd020b}}. On the other hand, the WMAP3 data
+favours a red perturbation spectrum with
+FORMULA  when the tensor modes are negligible and
+the scalar spectral index is effectively constant {{cite:0cfb3f6f-28a4-4499-9a64-918ebfc7cc2d}}.
+For models which generate such a spectrum,
+we identify a corresponding lower limit on the
+tensor modes such that FORMULA .
+This is incompatible with the upper bound
+on FORMULA  when FORMULA , as inferred
+by the observations.
+Hence, a reconciliation between theory and observation
+requires either a relaxation of the upper limit on FORMULA  or a blue
+spectral index FORMULA . The DBI scenario would need
+to be generalized in a suitable way for the upper bound on FORMULA 
+to be weakened. We identify necessary conditions that a
+generalized action must satisfy for the Baumann-McAllister
+constraint to be relaxed.
+We then show that such conditions can be realized in a recently
+proposed IR version of DBI inflation driven
+by multiple coincident branes {{cite:d9a5b807-ce7b-4d22-a89f-ecc1ba60cb84}}.
+The paper is organized as follows. We briefly review DBI inflation
+in Section . In Sections  and
+, we derive the respective
+limits on the amplitude of the tensor perturbations.
+We determine how the BM bound may be relaxed in generalized DBI models in
+Section  and discuss multi-brane
+IR scenarios in Section . Finally, we conclude
+in Section .
+Units are chosen such that FORMULA 
+defines the reduced Planck mass and FORMULA .
+
+DBI inflation
+Flux compactification of type IIB string theory to four dimensions
+results in a warped geometry, where the six-dimensional CY
+manifold contains one or more throats (see {{cite:948091b0-8ea6-43dd-b967-08ca78900e06}}, {{cite:86131c5c-b467-44ae-a977-da439418f123}} for reviews).
+The metric inside a throat has the generic form
+FORMULA 
+where the warp factor FORMULA  is a function of the
+radial coordinate FORMULA  along the throat and FORMULA 
+is a Sasaki-Einstein five-manifold.
+In many cases, the ten-dimensional metric (REF ) can be
+approximated locally by the geometry FORMULA , where the
+warp factor is given by FORMULA  and
+the radius of curvature of the FORMULA  space is defined by
+FORMULA 
+such that FORMULA  is the dimensionless volume of
+FORMULA  with unit radius, FORMULA  is the FORMULA  charge of the throat,
+FORMULA  is the string coupling and FORMULA  is the string mass scale.
+In the Klebanov-Strassler (KS) background {{cite:64181820-ea48-404b-802e-82dfb8e2ba00}}, the throat
+is a warped deformed conifold and
+corresponds to a cone over the manifold
+FORMULA 
+in the UV limit (FORMULA ). This has
+a volume FORMULA  and topology
+FORMULA , where the FORMULA  is fibred over the FORMULA .
+The conical singularity at the tip of the throat
+is smoothed out by an
+FORMULA  `cap' due to the wrapping of the fluxes along the cycles of the conifold
+{{cite:64181820-ea48-404b-802e-82dfb8e2ba00}}, {{cite:ebd32827-342b-4dab-858f-a41f911b8a4d}} and the warp factor asymptotes to
+a constant value in this region.
+In general, the low-energy world-volume dynamics
+of a probe FORMULA -brane in a warped throat is determined
+by an effective, four-dimensional DBI action.
+The inflaton field is related to the radial
+position of the brane by
+FORMULA , where FORMULA 
+is the brane tension. The action is then given by
+FORMULA 
+where FORMULA  is the Ricci curvature scalar,
+FORMULA 
+is the kinetic energy of the inflaton, FORMULA  denotes
+the field's interaction
+potential and FORMULA 
+defines the warped brane tension. We refer to FORMULA  as the
+`kinetic function' for the inflaton.
+We consider a spatially flat and isotropic cosmology
+sourced by a homogeneous scalar field.
+In this case, the Friedmann equations for a monotonically
+varying inflaton can be expressed in the form {{cite:28cf68bf-42bc-449a-863e-975934919ed8}}
+FORMULA 
+where FORMULA  represents the Hubble parameter
+as a function of the field and a prime denotes FORMULA .
+An important consequence of the non-trivial kinetic structure
+of the DBI action is that the sound speed of fluctuations in the inflaton
+differs from unity:
+FORMULA 
+where a subscripted comma denotes partial differentiation.
+Furthermore, the condition that the sound speed be real
+imposes an upper bound on the kinetic energy
+of the inflaton, FORMULA , which
+is independent of the steepness of the potential.
+The motion of the brane is said to be `relativistic' when this bound is
+close to saturation.
+We now define the epoch that is directly
+accessible to cosmological observations as `observable inflation'.
+Depending on the reheating
+temperature, this occurred some 30 to 60 e-foldings before the end of
+inflation. The inflationary dynamics during this phase can
+be quantified in terms of three parameters:
+FORMULA 
+where FORMULA .
+We will assume that the `slow-roll' conditions
+FORMULA  applied during observable inflation.
+In this regime, the amplitudes and spectral indices of the two-point functions
+for the scalar and tensor perturbations are given by {{cite:15caa0cd-d6a7-4ffb-8b1e-bc2afdf3e161}}
+FORMULA 
+respectively, where the quantities on the right-hand sides are evaluated
+when the scale with comoving wavenumber FORMULA  crossed
+the Hubble radius during inflation.
+The tensor-scalar ratio, FORMULA , is directly related to
+the tensor spectral index by {{cite:15caa0cd-d6a7-4ffb-8b1e-bc2afdf3e161}}
+FORMULA 
+Hence, a sound speed different to unity leads to a violation of the
+standard inflationary consistency equation, which might be
+detectable in the foreseeable future {{cite:a1c17106-fd7c-4097-91b3-cf7d5e947875}}, {{cite:0050b886-fef1-4f0b-98bf-3fae2aa4c845}}.
+Recent observations of the CMB
+indicate that FORMULA  and FORMULA  {{cite:0cfb3f6f-28a4-4499-9a64-918ebfc7cc2d}}.
+The best-fit value for a constant spectral index is
+FORMULA  if FORMULA  is assumed as a prior.
+This is strengthened to
+FORMULA  for a prior of FORMULA  {{cite:0cfb3f6f-28a4-4499-9a64-918ebfc7cc2d}}.
+A further important consequence of a small sound speed is that departures
+from purely Gaussian statistics may be large
+{{cite:28cf68bf-42bc-449a-863e-975934919ed8}}, {{cite:fe0dc8ba-a971-421f-a839-d0db5a33ec15}}, {{cite:d9b258a1-e3ac-4a94-ae5e-301afb15003f}}, {{cite:9774e647-efe9-4366-9023-d3aa741dddec}}. It is conventional
+to quantify such deviations by expressing the non-Gaussian curvature
+perturbation FORMULA  in the form
+FORMULA , where
+FORMULA  represents the Gaussian contribution,
+the quadratic piece is a convolution and FORMULA  defines
+the `non-linearity' parameter {{cite:b228211c-3d70-42e0-9140-f8e30cf8703e}}.
+In general, this parameter is a function of the three momenta which
+form a triangle in Fourier space. However, in the limit where
+these momenta have equal magnitude, the non-linearity parameter
+is given to leading-order by {{cite:9774e647-efe9-4366-9023-d3aa741dddec}}, {{cite:0050b886-fef1-4f0b-98bf-3fae2aa4c845}}
+FORMULA 
+Currently, WMAP3 constrains this parameter
+to be FORMULA  {{cite:0cfb3f6f-28a4-4499-9a64-918ebfc7cc2d}}, {{cite:7a390ecf-ec0b-47d1-bf10-9831e973cc46}}.
+Finally, Eqs. (REF ), (REF ) and (REF )
+may be combined to constrain the warped brane tension
+during observable inflation:
+FORMULA 
+where a subscript `FORMULA ' denotes that the quantity is to be evaluated
+at that epoch.
+In the following, we first consider the UV version of DBI inflation,
+where the brane moves relativistically
+towards the tip of the throat. We will assume implicitly
+that the sound speed is sufficiently small to generate a non-Gaussianity in
+excess of FORMULA , since this is the projected
+sensitivity of the Planck satellite {{cite:01499e63-2d7d-4fa9-9ddd-605bcc15d441}}. Furthermore, we consider
+an arbitrary warp factor and inflaton potential,
+subject only to the condition that a sufficiently long phase of
+quasi-exponential expansion can be maintained to solve the horizon problem of
+the hot big bang model.
+
+An Upper Bound on the Primordial Gravitational Waves
+Recently, Baumann and McAllister (BM) {{cite:766483d1-0907-4091-a402-22f31b5ca409}}
+derived a field-theoretic upper bound on the tensor-scalar ratio
+by noting that the four-dimensional Planck mass is related
+to the volume of the compactified CY manifold, FORMULA , such that
+FORMULA , where FORMULA . In general, the compactified volume
+is comprised of bulk and throat contributions,
+FORMULA , where the latter is
+given by
+FORMULA 
+and FORMULA  denotes the radial coordinate at
+the edge of the throat (defined as the region
+where FORMULA  is of order unity).
+If one assumes that the bulk volume is
+non-negligible relative to
+that of the throat (i.e. FORMULA ),
+it follows that FORMULA .
+For a warped FORMULA  geometry, this leads to an
+upper limit on the total variation of the inflaton field in
+the throat region:
+FORMULA 
+Condition (REF ) may be converted into a
+corresponding limit on the tensor-scalar ratio by noting from
+the definition (REF )
+that FORMULA .
+This implies that the variation of the inflaton field
+is given by the Lyth bound
+{{cite:c54af3e6-24bf-49b1-bfcd-9d166ed7b45e}}, {{cite:766483d1-0907-4091-a402-22f31b5ca409}}
+FORMULA 
+where FORMULA .
+Since FORMULA , this
+results in an upper bound on the observable tensor-scalar ratio
+{{cite:766483d1-0907-4091-a402-22f31b5ca409}}:
+FORMULA 
+where FORMULA 
+is a model-dependent parameter that quantifies
+how FORMULA  varies during the final stages of inflation.
+Typically, one expects FORMULA ,
+although smaller values may be possible if the slow-roll conditions are
+violated after observable scales have crossed the horizon.
+Furthermore, FORMULA  is necessary
+for backreaction effects to be negligible. Hence, the
+constraint (REF )
+imposes a strong restriction on DBI inflationary models.
+On the other hand, the numerical value
+of FORMULA  is uncertain.
+Our aim here is to focus on the range of values covered by the
+inflaton field during the observable stages of inflation.
+This will result in a constraint on the tensor modes that
+can be expressed in terms of observable parameters.
+To proceed, we denote the change in the value of the inflaton field over
+observable scales by
+FORMULA .
+Since the brane moves towards the tip of the throat in
+UV DBI inflation, it follows that FORMULA , which
+implies that
+FORMULA 
+This change in the inflaton value will correspond
+to a fraction of the throat volume,
+FORMULA ,
+where equality in the second limit arises if
+the bulk volume is negligible. Hence,
+FORMULA  is bounded such that
+FORMULA 
+The observations of the CMB
+that directly constrain the primordial tensor perturbations only
+cover multipole values in the range FORMULA .
+This is equivalent to no more than FORMULA 
+e-foldings of inflationary expansion and, in general,
+corresponds to a narrow range of inflaton values.
+To a first approximation, therefore, the fraction of the throat volume
+(REF ) that is accessible to cosmological
+observation can be estimated to be
+FORMULA 
+Combining the inequality (REF ) with Eq. (REF )
+then implies that
+FORMULA 
+and substituting the CMB normalization (REF ) and
+condition (REF ) into the bound (REF )
+yields the upper limit
+FORMULA 
+Hence, employing the Lyth bound in the form FORMULA 
+results in a very general upper limit on the tensor-scalar ratio:
+FORMULA 
+Condition (REF ) is
+only weakly dependent on the level of non-Gaussianity
+when FORMULA  and we may therefore neglect the
+factor involving this parameter. Substituting the WMAP3 normalization
+FORMULA  then implies that
+FORMULA 
+Furthermore, the most optimistic
+estimate for the minimum number of e-foldings that could be
+probed by observation is FORMULA , whereas
+a generic compactification arises when
+the volume of the Einstein five-manifold is FORMULA  {{cite:64181820-ea48-404b-802e-82dfb8e2ba00}}. This yields a model-independent
+upper bound on the tensor-scalar ratio for standard UV DBI inflation:
+FORMULA 
+This is significantly below the sensitivity
+of future CMB polarization experiments, which will measure
+FORMULA  {{cite:50bb9aa0-b251-45f5-b944-cdf77a659c8f}}, {{cite:87fcec09-6102-4dac-9ffd-0b7d31dd020b}}. If CMB
+observations are able to span the full range of e-foldings such that
+FORMULA , this constraint is strengthened to
+FORMULA .
+Before concluding this section, we should remark that
+the estimate (REF ) was derived under the assumption
+that the integrand in Eq. (REF )
+is constant. This inevitably introduces errors into the bound
+(REF ). However, the two limiting cases of interest
+in KS-type geometries arise
+when the warp factor scales either as FORMULA 
+or as FORMULA  {{cite:64181820-ea48-404b-802e-82dfb8e2ba00}}, {{cite:ebd32827-342b-4dab-858f-a41f911b8a4d}}. In both cases
+the integral (REF ) can be performed analytically.
+Indeed, if we specify FORMULA  for some constant FORMULA ,
+evaluate the integral between FORMULA 
+to FORMULA , and expand to second-order in a
+Taylor series, we find that
+FORMULA 
+This implies that the error in Eq. (REF )
+is no greater than
+about FORMULA  if
+FORMULA . More generally, it follows that a similar
+error will arise for any warp factor
+FORMULA , where the function
+FORMULA  satisfies FORMULA 
+over observable scales.
+We conclude, therefore, that Eq. (REF )
+provides a sufficiently good estimate of the volume element
+for a generic warp factorAs we shall see in the following Section,
+even an order of magnitude error will make little
+difference to our final conclusions..
+
+A Lower Bound on the Primordial Gravitational Waves
+The analysis of the previous Section
+indicates that standard versions of UV DBI inflation generate a
+tensor spectrum that is unobservably
+small. Hence, FORMULA  can be assumed as a prior
+when discussing the WMAP3 data. However, in this case the data
+excludes a scale-invariant density spectrum at the FORMULA  level
+when the running in the spectral index, FORMULA ,
+is negligible {{cite:0cfb3f6f-28a4-4499-9a64-918ebfc7cc2d}}.
+Furthermore, a blue spectral index
+is only marginally consistent with the data when FORMULA  and FORMULA .
+(The inferred upper limit is FORMULA ).
+Although the results from WMAP3 do allow for a blue spectrum if there is
+significant negative running in the spectral index, we will
+focus in this Section
+on models that generate a red spectral index FORMULA , since these seem
+to be preferred by the current data.
+In general, the spectral index may be related to the tensor-scalar ratio.
+After differentiating Eq. (REF )
+with respect to cosmic time, and employing Eqs. ()
+and (), we find that
+FORMULA 
+where the minus (plus) sign corresponds to
+a brane moving down (up) the warped throat.
+The second term in Eq. (REF )
+can be converted into observable parameters
+by defining the `tilt' of the non-linearity parameter,
+FORMULA  {{cite:2093d613-5c35-4c08-9ed7-19b3f4ab6017}}.
+This implies that FORMULA  and
+substitution of Eqs. ()–(REF )
+into Eq. (REF ) then yields
+FORMULA 
+In {{cite:0050b886-fef1-4f0b-98bf-3fae2aa4c845}}, brane inflation near the tip of a KS-type
+throat was considered, where the warped brane tension asymptotes to a
+constant value. In this regime, Eq. (REF ) reduces to
+the condition FORMULA  when FORMULA  is
+sufficiently large to be detectable by Planck,
+i.e., FORMULA . It then follows from the
+WMAP3 best-fit value FORMULA  and upper limit
+FORMULA  {{cite:7a390ecf-ec0b-47d1-bf10-9831e973cc46}} that the gravitational wave amplitude
+is bounded both from above and below such that FORMULA . These bounds follow from
+current WMAP3 limits on the spectral index and the
+non-linearity parameter, but do not take into account the
+field-theoretic upper bound that must be imposed
+on the variation of the inflaton field during inflation.
+More generally, in UV DBI inflation where the brane moves towards the
+tip of the throat, it is reasonable to assume
+that the warp factor decreases monotonically
+with the radial coordinate over the observable range of inflaton values,
+i.e., that FORMULA . This condition is satisfied for
+FORMULA  compactifications and KS-type solutions.
+Consequently, the third term in
+Eq. (REF ) will be semi-negative definite,
+which implies that
+FORMULA 
+Condition (REF ) is a consistency relation on UV DBI
+inflation in terms of observable parameters and it
+may be combined with the upper bound
+(REF ) to confront the scenario with observations.
+Firstly, let us assume that the tensor-scalar ratio is negligible.
+The WMAP3 data implies that FORMULA , and this is only
+compatible with condition (REF ) if
+FORMULA 
+However, when FORMULA , this would violate the slow-roll conditions
+that must be satisfied for a consistent
+derivation of the perturbation spectra
+(REF ). For example, the conservative
+bound FORMULA  with FORMULA  is violated if
+FORMULA .
+In view of this, let us consider the case where the tensor
+perturbations are non-negligible.
+The magnitude of the second term in condition (REF )
+is suppressed by a factor of FORMULA 
+relative to the first. This is expected to
+be a significant effect in DBI inflation. Consequently,
+by saturating the WMAP3 limit FORMULA  {{cite:7a390ecf-ec0b-47d1-bf10-9831e973cc46}}, we arrive at
+a lower bound on the tensor-scalar ratio which applies
+to any model for which the ratio FORMULA  is
+negligible:
+FORMULA 
+This requires FORMULA  for the WMAP3 best-fit value
+FORMULA , which is incompatible with the upper limit
+(REF ).
+In general, therefore, it is difficult to simultaneously satisfy
+the bounds on FORMULA  with the WMAP3 data
+in standard UV DBI inflation. There is a
+small observational window where a blue spectrum is consistent
+with the data, in which case the lower limit
+(REF ) does not apply.
+However, if the tensor modes are negligible,
+as implied by the inequality (REF ), the
+data strongly favours a red spectral index with FORMULA ,
+and this violates the condition (REF ). A significant
+detection of a red spectral index requires either a
+violation of the slow-roll conditions or a sufficiently
+small value for the volume of FORMULA .
+In particular, combining the limits
+(REF ) and (REF ) results in the condition
+FORMULA 
+and we find that FORMULA 
+for typical values FORMULA  and
+FORMULA . This
+is comparable to the limit on the volume derived for the special case of a
+quadratic inflaton potential {{cite:766483d1-0907-4091-a402-22f31b5ca409}}.
+As noted in {{cite:766483d1-0907-4091-a402-22f31b5ca409}}, {{cite:b203b444-e93f-490d-a019-a1a9097ab66b}}, condition
+(REF ) may be achieved
+if FORMULA  corresponds to a FORMULA  space,
+which has arbitrarily small volume in the limit
+FORMULA  and FORMULA  {{cite:0083bf10-71d3-4268-b2c4-0a027fd8057b}}.
+Small volumes could also be realized
+by orbifolding the FORMULA  symmetry of a KS-type throat.
+On the other hand,
+our upper limit (REF ) on the gravitational waves
+follows as a consequence of assuming
+the constraint (REF ). This
+could be violated in IR versions of the scenario, where
+observable scales crossed the Hubble radius when the
+brane was near the tip of the throat and FORMULA 
+{{cite:fa86bbde-a710-41a4-9a1d-7bcae07d67e4}}, {{cite:2093d613-5c35-4c08-9ed7-19b3f4ab6017}}.
+Nonetheless, we emphasize that the upper bound (REF )
+on the tensor modes
+will also apply to any IR DBI model for which
+FORMULA .
+In view of the above discussion, therefore,
+we will proceed in the following Section
+to discuss a framework for generalizing the DBI scenario so
+that the constraints on the tensor modes can be satisfied.
+
+Relaxing the Baumann-McAllister Bound
+In this Section, we take a phenomenological
+approach and consider a general kinetic function of the form:
+FORMULA 
+where FORMULA  are unspecified functions of the inflaton
+fieldIt is assumed
+implicitly that the functions have a suitable form for
+generating a successful phase of inflation..
+A direct comparison with Eq. ()
+indicates that the standard DBI action exhibits two important properties.
+The first is the condition that FORMULA . This implies that
+FORMULA  and greatly simplifies the form of Eq. (REF ).
+The second property is that the warp factor uniquely determines
+the kinetic structure of the action, i.e., FORMULA .
+In view of this, it is interesting to consider whether
+the gravitational wave constraints could be weakened by relaxing one
+or both of these conditions.
+Eq. (REF )
+can be transformed into a similar form to that of
+Eq. () through the field redefinition
+FORMULA 
+This implies that the sound speed of fluctuations in
+the inflaton is given by
+FORMULA 
+and the scalar perturbation amplitude by
+FORMULA 
+However, the consistency equation (REF ) and
+non-Gaussianity constraint (REF ) remain unaltered
+for this more general class
+of models {{cite:0050b886-fef1-4f0b-98bf-3fae2aa4c845}}. It
+follows, therefore,
+that the CMB normalization condition (REF )
+generalizes to a constraint on the value of FORMULA :
+FORMULA 
+Finally, the expression for the scalar spectral index
+follows most directly by generalizing Eq. (REF )
+via the correspondence (REF ). It
+is straightforward to show that
+FORMULA 
+Eq. (REF ) also allows us to deduce
+that the infinitesimal variation of the effective
+field FORMULA  is given by the Lyth bound,
+FORMULA . This implies that
+the variation of the inflaton field during inflation is
+FORMULA 
+If we now restrict our attention to
+the observable stage of inflation, and further assume that the variation
+of FORMULA  is negligible during that epoch, we find that
+FORMULA 
+On the other hand, the BM bound restricts the maximal
+variation of the scalar field FORMULA  in the throat region.
+This will be determined by expression (REF )
+for generic warped geometries that are asymptotically
+FORMULA  away from the tip of the throat. Moreover,
+if observable scales leave the horizon
+while the brane is inside the throat, the change in the field value
+must satisfy FORMULA . Hence, it follows from
+Eq. (REF ) thatWe are
+being conservative by restricting our discussion to the
+observable phase of inflation. More generally, if
+FORMULA  remains nearly constant over the last FORMULA 
+e-foldings of inflation,
+we may substitute FORMULA , where FORMULA 
+may be as large as 60. Thus, the generalized bound
+(REF ) should be regarded as a necessary
+(but not sufficient) condition to be satisfied by the tensor modes.
+FORMULA 
+We will refer to condition
+(REF ) as the
+generalized BM bound.
+Combining expressions (REF ) and (REF ) then
+results in a necessary condition on the value of FORMULA 
+for the generalized BM bound to be satisfied:
+FORMULA 
+This condition can also be interpreted as a lower limit on FORMULA 
+for a given value of FORMULA .
+In UV models, identical arguments that led to
+the lower limit (REF ) on the tensor-scalar ratio
+will also apply in this more general context if, as expected, FORMULA 
+is a monotonically increasing function. A necessary condition for
+the lower and upper limits
+(REF ) and (REF ) to be compatible, therefore, is
+that
+FORMULA 
+In IR scenarios, however, the positive sign will apply in the
+last term of the right-hand side of Eq. (REF ).
+Hence, assuming FORMULA  and neglecting the term proportional to
+FORMULA  yields an upper limit on the tensor-scalar ratio:
+FORMULA 
+Combining conditions (REF ) and (REF )
+therefore leads to a constraint on FORMULA 
+for the generalized BM bound to be satisfied in IR inflation:
+FORMULA 
+To summarize this Section,
+expression (REF ) implies that the
+BM bound (REF )
+could be relaxed if FORMULA  on observable scales.
+It is therefore important to develop string-inspired models
+where this condition arises naturally. This will be the focus of the
+next Section.
+
+IR Inflation and Multiple Branes
+Recently, an interesting version of IR DBI inflation
+was proposed by Thomas and Ward {{cite:d9a5b807-ce7b-4d22-a89f-ecc1ba60cb84}}. In this model, the flux annihilation process
+generates FORMULA  coincident branes that are initially located at the
+bottom of a throat region. The dynamics of this configuration
+is determined by the non-Abelian world-volume theory {{cite:c89a771d-a196-46f6-b0de-cd2ace775058}}, {{cite:cdb8d726-b322-4b20-951d-8ac4bd42448c}}.
+This theory exhibits extra stringy degrees of freedom which arise due to the
+fuzzy nature of the geometry. For the case where a fuzzy two-sphere is
+embedded in a three-cycle in the FORMULA  manifold,
+the kinetic structure of the action is given in the large FORMULA  limit by
+{{cite:d9a5b807-ce7b-4d22-a89f-ecc1ba60cb84}}
+FORMULA 
+where
+FORMULA 
+defines the so-called `fuzzy' potential,
+FORMULA  is a model-dependent constant and
+FORMULA 
+is the quadratic Casimir of the FORMULA -dimensional representation of
+FORMULA .
+Comparison with Eq. (REF )
+implies that FORMULA  and FORMULA . Hence,
+the new features of this model relative to the standard single-brane
+scenario are parametrized in terms of the fuzzy potential FORMULA .
+This configuration is conjectured to be dual to
+a FORMULA -brane which is wrapped around a two-cycle
+of the throat {{cite:93263d8f-f6b1-4ca4-bbbf-d4e3baa215a4}}, {{cite:5e24ec43-2a1b-4662-a46b-c36bbb1346aa}}, {{cite:56b2b618-c6b4-408a-899b-24d6d882fa09}}.
+The regime FORMULA  is of interest for
+relaxing the gravitational wave constraintsNote that
+the case FORMULA  and
+FORMULA  will not significantly relax the BM bound,
+since we require FORMULA  for backreaction effects to be negligible..
+The generalized BM bound (REF ) may now be expressed as
+a limit on the value of the warp factor FORMULA  on CMB scales:
+FORMULA 
+We now consider whether this limit can be satisfied for reasonable choices
+of parameters when the warped compactification corresponds to
+an FORMULA  or KS throat, respectively. Recall that the warp
+factor for the FORMULA  throat is given by FORMULA .
+Condition (REF ) therefore reduces to a constraint on the
+value of the inflation during observable inflation:
+FORMULA 
+where FORMULA .
+However, non-perturbative string effects are expected to become
+important below a cutoff scale, FORMULA , where FORMULA  is the value of the
+warp factor at that scale. For consistency, therefore, one requires
+FORMULA , which implies an upper limit on the
+FORMULA -brane charge:
+FORMULA 
+Assuming the typical values FORMULA ,
+FORMULA  and
+FORMULA  implies
+FORMULA , where
+the latter inequality follows for FORMULA  and FORMULA .
+For an FORMULA  throat, the fuzzy potential
+is a constant and the condition that FORMULA  becomes
+FORMULA 
+Hence, combining inequalities
+(REF ) and (REF ) implies that
+FORMULA 
+and specifying FORMULA  and
+FORMULA  then yields the limit
+FORMULA , or equivalently,
+FORMULA . Furthermore, since FORMULA ,
+the inequality (REF ) may be strengthened by a
+factor of FORMULA  by
+substituting
+FORMULA . This ratio
+could be as
+high as FORMULA , which would rule out this particular
+model.
+Since the branes are initially located at the tip of the
+throat, another case of interest is the IR limit of the KS geometry, where
+the warp factor asymptotes to a constant value
+{{cite:48ff9fd2-d02e-43e1-9c8c-84df5b393743}}:
+FORMULA 
+and FORMULA  are the units of flux associated
+with the NS-NS and R-R three-forms, respectively, such that FORMULA .
+In this case, the generalized BM bound (REF ) becomes
+FORMULA 
+The radius of the three-sphere at the tip of the KS
+throat is of the order FORMULA  in string units
+and this must be large (and at the very least should exceed
+unity) for the supergravity approximation to be reliable.
+Substituting this requirement into expression (REF )
+results in a necessary (but not sufficient) condition
+on the FORMULA -brane charge for the
+generalized BM bound to be satisfied:
+FORMULA 
+Recalling that a necessary condition for the backreaction
+of the branes to be negligible is
+FORMULA  implies that the
+exponential term in (REF ) will dominate unless
+the string coupling constant is extremely small. Hence, for
+the parameter estimations quoted above, we
+deduce the lower limit
+FORMULA 
+which becomes FORMULA  for FORMULA  and FORMULA .
+In general, however, the FORMULA  and FORMULA  units of flux are not independent.
+F-theory compactification on Calabi-Yau four-folds
+provides a geometric way of parameterizing
+type IIB string compactifications
+{{cite:c15c6362-d437-4222-b675-9a0809be22ea}}, {{cite:bc84e192-0995-4fa7-aeea-5364cf9441d6}}, {{cite:fe12cc03-a12d-4867-8cce-defacc6836e7}}, {{cite:bf38b437-592f-46b2-89a3-0a68d883745e}}, {{cite:48ff9fd2-d02e-43e1-9c8c-84df5b393743}}, {{cite:1d053cbf-9a8d-4dba-99c2-635960dfc66b}}.
+Global tadpole cancellation constrains the topology of the four-fold
+and this restricts the brane and flux configurations.
+When the KS system is embedded into F-theory, the
+constraint is given by {{cite:48ff9fd2-d02e-43e1-9c8c-84df5b393743}}
+FORMULA 
+where FORMULA  is the Euler characteristic of the four-fold.
+Hence, FORMULA  and together with condition
+(REF ), this implies that
+FORMULA 
+for FORMULA .
+It is known that the Euler number for four-folds
+corresponding to hypersurfaces in weighted projective spaces
+can be as high as FORMULA  {{cite:1d053cbf-9a8d-4dba-99c2-635960dfc66b}},
+so there are many compactifications that could
+in principle satisfy the generalized BM bound.
+On the other hand, the above limit on the Euler characteristic
+does allow us to gain some insight into the
+topology of the extra dimensions, since compactifications
+which result in a small Euler characteristic would be
+incompatible with the generalized BM bound.
+
+Conclusion
+In this paper, we have derived an upper limit to
+the amplitude of the primordial gravitational wave spectrum
+generated during UV DBI inflation. We considered
+the maximal inflaton field variation
+that can occur during the observable stages of inflation and assumed
+only that the brane was inside the throat during that epoch.
+The bound (REF ) is valid for an arbitrary inflaton potential and
+warp factor (modulo some weak caveats) and can be expressed
+entirely in terms of observable parameters once the volume of
+the five-dimensional sub-manifold of the throat has been specified.
+The inferred upper limit on FORMULA  is surprisingly strong.
+We find that the standard UV
+scenario predicts tensor perturbations that are undetectably small,
+at a level FORMULA .
+The current WMAP3 data
+favours models that generate a red spectral index FORMULA 
+when both the gravitational waves and running in the scalar
+spectral index are negligible. For UV versions of the scenario,
+we have identified a corresponding
+lower limit on FORMULA  which applies in this region of
+parameter space, FORMULA . It is clear that
+the standard model
+can not satisfy both the upper and lower bounds
+on the tensor modes for the observationally favoured value
+FORMULA .
+The generality of our
+analysis implies that modifying either the inflaton potential
+or the form of the warp factor is unlikely to resolve this discrepancy.
+On the other hand, there are a number of possible ways of reconciling
+theory with observation. In general,
+either the upper or lower limit on FORMULA  needs to be relaxed.
+Weakening the latter would require a violation of the slow-roll
+conditions or a blue spectral index.
+A value of FORMULA  is compatible with WMAP3 if the running of the
+spectral index
+is sufficiently negative, but is only marginally
+consistent if just the tensor modes are non-negligible. The
+upper limit on FORMULA  can be weakened by reducing
+the volume of FORMULA  or
+by generalizing the DBI action. Furthermore, it need not necessarily
+apply in IR versions of the scenario, although the BM bound will still hold
+in such cases.
+We considered a generalized version of the
+DBI action and identified a necessary condition on the form of such
+an action for the BM bound to be relaxed.
+As a concrete example,
+we investigated a version of IR inflation that is driven by
+multiple coincident branes and found that
+the bounds on the tensor-scalar ratio can indeed
+be made compatible if the brane charges satisfy appropriate
+conditions.
+The upper bound on FORMULA  that we derived in section 3 arises
+because the warp factor in standard DBI models
+completely specifies the kinetic
+energy of the inflaton field. Deriving a corresponding bound for
+the generalized model (REF ) would be more involved,
+since the CMB normalization (REF ) only
+directly constrains the function
+FORMULA  and this may not necessarily depend on the warp factor.
+Nonetheless, the constraints (REF ) and
+(REF ) can be
+combined with Eq. (REF ) to derive a limit
+on the tensor-scalar ratio in terms of the warp factor and the
+kinetic function (REF ) and we find that
+FORMULA 
+For a specific model where the warp factor and
+the functions FORMULA  are determined by particle
+physics considerations,
+condition (REF )
+may be interpreted as a bound that relates
+the tensor modes directly to the value of the inflaton field during observable
+inflation. This constraint provides a consistency
+check that any given model must satisfy
+irrespective of the form of the inflaton potential.
+In conclusion, therefore, primordial gravitational wave constraints
+combined with cosmological observations of the density perturbation
+spectrum act as a powerful discriminant of DBI inflationary models.
+They also serve as an important
+observational guide for identifying viable
+generalizations of the scenario.
+IH is supported jointly by a Queen Mary studentship and
+the Science and Technology Facilities Council (STFC).
+We thank S. Thomas and J. Ward for helpful discussions.
+
+References

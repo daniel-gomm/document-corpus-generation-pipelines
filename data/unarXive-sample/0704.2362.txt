@@ -1,0 +1,169 @@
+
+0.6mm
+0.3mm
+ On Brownian flightsAthanasios BATAKISMAPMO , Pierre LEVITZLPMC, Ecole Polytechnique and Michel ZINSMEISTER FORMULALet K be a compact subset of FORMULA . We choose at random with uniform law a point at distanceFORMULA  of K and start a Brownian motion
+(BM) from this point. We study the probability that this BM hits K for the first time at a distance FORMULA  from the starting point.
+
+This work is partially financed by the ANR MIPOMODIM
+Keywords : Brownian Motion, Minkowski dimension, Harmonic measure, quasi-conformal maps, John domains.
+Introduction and motivation.
+Porous materials, concentrated colloidal suspensions or physiological organs such that lung or kidney are systems developping large specific surfaces with a rich variety of shapes that influence the diffusive dynamics of Brownian particles. A typical example is the diffusion of water molecules in a colloidal suspension. NMR relaxation allows to measure the statistics of the flights of these molecules over long colloidal shapes such as proteins or DNA chains. It is thus tempting to rely these statistics to the geometry of the molecules, the goal being to probe shapes using this method. An ideal (but far-reaching) objective would be to make up a DNA-test for example using NMR relaxation.
+This program has been developped in {{cite:918a53e9-5409-4984-ad26-e1dc87f27576}} where various kind of simulations or experiments have shown remarkable commun properties.
+All the simulations measure the statistics of the same random phenomenon: an irregular curve or surface is implemented, consisting of a union of a large (but finite) number of equal affine pieces. Such a piece is chosen at random with uniform distribution and a random walker is started at some small but fixed distance from this piece inside the complement of the surface. One is interested in the law of the variable FORMULA  the length of the flight, i.e. the distance between the starting point and the first hitting point on the surface of the random walker. Whatever shape the surface shows, the experiment shows the same behaviour
+FORMULA 
+where FORMULA  is the dimension of the ambiant space and FORMULA  is the Minkowski dimension of the surface.
+A first mathematical explanation of this behavior was outlined in {{cite:918a53e9-5409-4984-ad26-e1dc87f27576}}. The main purpose of the present paper is to give first a rigorous statement of this result and to prove it with minimal assumptions so that all the cases of the simulations are covered. This will be the content of the second paragraph.
+The third section concerns an alternative approach of the result in a special but important case: a quasiconformal perturbation of the line in 2D. The paper being dedicated to Fred Gehring is one of the reasons of this section, but not the only one: indeed this alternative proof is neat and instructive.
+There is a case of particular importance for physics and particularly polymer physics. It is the case of a curve being a self-avoiding walk, since this has been shown to be a good model for polymers. In 2D there are two evidences that the result should remain in this case : first intensive simulations performed by P.Levitz and secondly some computations by Duplantier using conformal field theory. We present in the last section these simulations and sho how, despite the fact that this case is not covered by results of section 3, one can use results about SLE to prove the result in this situation.
+We would like to conclude this introduction with two remarks:
+1) The result may be surprising since it involves only the Minkowski dimension while the experiment suggests that harmonic measure is involved (and it is!) and consequently that the result should depend on some multifractal property of the harmonic measure. This is not the case because of the law of the choice of the starting point. A completely different behavior would occur if instead of uniform law we had chosen harmonic measure and this case is extremely interesting since essentially it models the second flight: this case will be considered in a forecoming paper.
+2) The paper {{cite:918a53e9-5409-4984-ad26-e1dc87f27576}} has been written while the second author was hosted by the laboratory of physics of condensed matter at Ecole Polytechnique whose members he thanks for their warm hospitality. This paper is an example of a successfull pluridisciplinar research and we would like to emphasize the fact that firstly problems coming from physics (especially polymer physics) are extremely rich mathematically speaking and that, secondly, modern Function Theory as we herited from great mathematicians as Fred Gehring is an extremely efficient tool to attack these challenging problems.
+Our goal will be achieved if the reader gets convinced of this last statement after having read this paper.
+
+Geometric considerations
+For convenience all domains in the next two sections of this paper will be assumed to have compact boundary.
+An estimate like (REF ) cannot be true for every domain. Some geometric conditions are needed : one of them is that Minkowski dimension of the boundary exists, i.e. that
+FORMULA  exists, where FORMULA  is the minimal number of cubes of size FORMULA  needed to cover the boundary.
+As we shall see later Whitney decomposition is a central tool in our proof; a second condition we have to impose is that the number of cubes of the Whitney decomposition at distance FORMULA  must also be comparable to FORMULA . A sufficient condition for this is given by the first property of NTA domains ({{cite:c1d044b3-fb4e-4eb7-b4ae-c21def98165e}}) called the “corkscrew” condition:
+Définition 2.1 We say that a domain FORMULA  satisfies the “corkscrew” condition if there exists FORMULA  and a constant FORMULA  such that for all FORMULA  and any FORMULA  there exists FORMULA  such that
+FORMULA  and FORMULA .
+
+Proposition 2.1 Under the corkscrew condition the number of Whitney cubes with size that intersect the level surface FORMULA  is comparable to
+the minimal of cubes of size FORMULA  needed to cover the boundary.
+
+The straightforward proof is left to the reader.
+
+The case of open sets in FORMULA ,  FORMULA
+Although our approach can be easily adapted to open sets in the plane, we present it for FORMULA  for two reasons: First, Green function and related formulas being different we try to avoid writing everything twice. Secondly, a different approach is proposed in section  for open sets in the complex plane, using the quasi-conformal theory.
+Notation 3.1 
+Given an open set FORMULA , a point FORMULA  and a set FORMULA  we denote FORMULA  the probability that Brownian motion started at x touches FORMULA  before leaving FORMULA . The Green function of FORMULA  will be denoted FORMULA  and let FORMULA  be the Green function of FORMULA . The ball of center FORMULA  and radius FORMULA  is denoted by FORMULA  and the distance from FORMULA  to FORMULA  is denoted by FORMULA . We say that two quantities FORMULA  are “comparable" (we denote FORMULA ) if the exists a constant FORMULA  such that FORMULA . The harmonic measure of a set FORMULA  (usually a subset of FORMULA ) at a point FORMULA  is denoted by FORMULA  or FORMULA .
+
+Green estimates
+Proposition 3.1 
+Let FORMULA  be a domain in FORMULA , FORMULA  and FORMULA . There exists a universal constant FORMULA  depending only on FORMULA  such that for all  FORMULA
+FORMULA 
+
+Proof 
+First, notice that by the maximum principle, FORMULA  for all FORMULA . It is then easy to check that there exists a constant FORMULA  such that FORMULA  for all FORMULA .
+Therefore the function that assigns FORMULA  is harmonic in FORMULA , tends to 0 at FORMULA  and takes values between FORMULA  and 1 on FORMULA .
+The probability FORMULA  is then comparable to FORMULA . In a similar way FORMULA  is equivalent to FORMULA  and the proof is complete since FORMULA  is symmetric.
+  FORMULA
+We suppose from now on that the domain FORMULA  is uniformly “fat", i.e. that there exists a constant FORMULA  such that for any FORMULA  and FORMULA , we have
+FORMULA 
+In particular, this implies that there exists a uniform lower bound FORMULA  of the probability that Brownian motion started at FORMULA  hits the boundary of FORMULA  before leaving FORMULA  (see {{cite:12889654-403d-4673-8038-39c377ae1879}}, lemma 5). This notion (also called “uniform capacity density condition") has previously been introduced in various contexts, cf. {{cite:1b5339ba-66a3-4886-aced-b48b5fce52da}}, {{cite:12889654-403d-4673-8038-39c377ae1879}}, {{cite:6f4cd9a7-e355-463c-a2d3-a8f364d6ec06}}.
+
+Main Results
+We consider a Whitney decomposition of FORMULA  in dyadic cubes FORMULA  satisfying
+FORMULA 
+where FORMULA  are positive constants (powers of 2, for convenience) depending on FORMULA .
+For FORMULA  we note FORMULA  the subcollection of cubes of the Whitney decomposition that intersect the level surface FORMULA .
+Theorem 3.2  Take FORMULA , fix a cube FORMULA  and consider, for every FORMULA , its center FORMULA . Then
+FORMULA  is equivalent to FORMULA .
+
+Proof 
+According to proposition REF  we have
+FORMULA 
+where FORMULA  is the center of the cube FORMULA . We now show that FORMULA  is equivalent to the harmonic measure FORMULA  of FORMULA  at FORMULA  (in FORMULA ) which equals 1.
+For this purpose we will use hypothesis (REF ) together with an easy control of multiple coverings.
+Take any FORMULA  and consider the cube FORMULA  of same center but of FORMULA  times the sidelength of FORMULA  (FORMULA  being the constant of the Whitney decomposition). By condition (REF ) the probability for Brownian motion started anywhere in FORMULA  to exit FORMULA  before exiting FORMULA  is bounded below by a positive constant FORMULA . Hence, the harmonic measure FORMULA  of FORMULA  at FORMULA  (in FORMULA ) is greater than FORMULA . Summing over all cubes FORMULA  we get
+FORMULA 
+On the other hand, every FORMULA  can only belong to a finite number of cubes FORMULA ; this proves that FORMULA  is comparable to the harmonic measure of the boundary FORMULA  of FORMULA  and therefore FORMULA  has an upper bound depending only on FORMULA  and on condition's (REF ) constant. The lower bound is trivial by the “fatness” condition.
+  FORMULA
+Theorem 3.3 
+Choose FORMULA  at random with uniform law in FORMULA . The probability for a Brownian motion started at any point FORMULA  of FORMULA  to hit FORMULA  before exiting FORMULA  is comparable to  FORMULA
+
+Proof  First observe that by the Harnack principle we can choose FORMULA  the center of the cube FORMULA . Since the cube FORMULA  is arbitrarily chosen there are FORMULA  possible choices.
+We consider now the cubes of FORMULA  and we define FORMULA  as the part of the boundary of FORMULA  separating the set FORMULA  and FORMULA . We say that a cube in FORMULA  has a seashore if part of its boundary is also part of FORMULA , and , in this case, this access to the “sea" is at least a square whose diameter is FORMULA  to a constant depending only on FORMULA  times the size of the cube. We then consider the open set FORMULA  consisting in the union of the components of FORMULA . We denote by FORMULA  the boundary of this open set: we are interested in the probability that Brownian motion started at any point FORMULA  of FORMULA  hits FORMULA  before exiting FORMULA . Denote by FORMULA  the component of FORMULA  containing FORMULA . Let FORMULA  be a cube in FORMULA  having a seashore. Each one of its sides touching FORMULA  contains a dyadic square FORMULA  of FORMULA  times the size of FORMULA , FORMULA  being the constant in Whitney decomposition, such that FORMULA . Let FORMULA  be a cube of the same center as FORMULA  but FORMULA  its size.We consider the dyadique cube FORMULA  contained in FORMULA  of size FORMULA  times the size of FORMULA  vertically above FORMULA  and at distance FORMULA  from FORMULA  .
+We use the Boundary Harnack Principle to prove that the probability that Brownian motion started at FORMULA  leave FORMULA  through FORMULA  is comparable to
+FORMULA .
+By “adapted cylinder" to a graph of a Lipschitz function we understand a vertical revolution cylinder of finite height centered on the graph. Let us remind the Boundary Harnack Principle : Let FORMULA  and FORMULA  be positive harmonic functions on a Lipschitz domain vanishing on the graph between the adapted cylinder (to a graph-component of the boundary) FORMULA  and the “sub"-adapted cylinder FORMULA  of the same center and revolution axis but of FORMULA  times the size, FORMULA . If FORMULA  is the “middle" cylinder of the same center and revolution axis but of FORMULA  times the size of FORMULA . Then for all  FORMULA
+FORMULA 
+where FORMULA  is the intersection point of the revolution axis of the cylinder FORMULA  and of its boundary. The multiplicative constants in the equivalence relation depend on the ratio (revolution radius):(height) of FORMULA  , on FORMULA , on the local Lipschitz norm of the boundary and on the dimension of the space FORMULA , see {{cite:500f7e55-1562-4c1f-aab3-eb09fc5e387d}}.
+Remark that FORMULA  only touches the neighbouring cubes of FORMULA . Clearly, FORMULA  is a Lipschitz domain (its boundary is composed of a finite union of squares). We can find a finite number of adapted cylinders FORMULA  that do not touch the cubes FORMULA  such that the “sub"-adapted cylinders FORMULA  of half their size cover the boundary of FORMULA . Furthermore, we can ask these cylinders to touch the boundary of the cube FORMULA  of the same center as FORMULA  but of FORMULA  the size (see figure REF ). Note that, since there is a finite number of configurations of the neighborhood of FORMULA  in the Whitney decomposition, the number of adapted cylinders needed to this covering is bounded by a uniform constant FORMULA  depending only on FORMULA .
+We consider the harmonic functions FORMULA  and FORMULA  in the domain FORMULA . Clearly,
+FORMULA 
+FIGURE 
+We can apply the Boundary Harnack Principle to every one of these cylinders FORMULA  for the functions FORMULA  and FORMULA . We get that for all FORMULA  and all  FORMULA
+FORMULA 
+where FORMULA  is the intersection point of the revolution axis of the cylinder and of it's boundary. The boundary of our domain is the inner boundary of the cubes of the Whitney decomposition; hence we may restrain ourselves to a finite number of configurations of the “adapted cylinders" (up to a contractions-dilatations that do not affect constants) and therefore the multiplicative constants in the equivalence relation will be finite in number and so uniformly bounded away from 0 and infinity. Since the distance of FORMULA  is equivalent to the distance FORMULA  we can prove by standard arguments of harmonic analysis that FORMULA  is bounded below by a constant depending only on dimension FORMULA . Using the Harnack principle and the fact that all adapted cylinders intersect FORMULA  we get the existence of a constant FORMULA  depending only on FORMULA  such that FORMULA  for all FORMULA .
+After summing over FORMULA , taking in account equations (REF ) and (REF ) and using standard Harnack inequalities we get
+FORMULA 
+for all
+FORMULA . By the maximum principle we thus obtain
+FORMULA 
+for all FORMULA .
+Theorem REF  applies to the domain FORMULA  where FORMULA  is replaced by the collection FORMULA  coming from all “wet”sides of all cubes with a seashore. We obtain that
+FORMULA 
+a quantity bounded from below by some FORMULA  by the fatness condition. The proof is completed by suming over all FORMULA  and FORMULA s and by noticing that up to a multiplicative factor depending only on the dimension, the number of cubes with a seashore is comparable to the number of cubes in FORMULA .
+  FORMULA
+Theorem 3.4 
+Choose FORMULA  at random with uniform law in FORMULA . The probability for a Brownian motion started at any point FORMULA  of FORMULA  to exit FORMULA  at distance greater than FORMULA  from the starting point is comparable to  FORMULA
+
+Proof 
+It depends on a comparison between the probability of “cruising along the coast" FORMULA  and the probability to move at distance FORMULA  before coming back to the coast. The second is comparable to FORMULA  according theorem REF  while the first is exponentially small.
+Take FORMULA  and FORMULA . Consider the annuli centered at FORMULA  of inner radii FORMULA  and outer radii FORMULA  where FORMULA . Brownian motion started at FORMULA  and moving at distance FORMULA  from FORMULA  before exiting FORMULA  must go through all these annuli.
+The probability of going through such an annulus while staying at distance at most FORMULA  from the boundary is bounded by a FORMULA  by the “fatness" hypothesis. To see this take any point FORMULA  in the middle of the annulus (i.e. at distance FORMULA  from FORMULA ) and consider the ball of center FORMULA  and radius FORMULA . If FORMULA , the probability to exit the ball without touching FORMULA  is uniformly bounded away from 1 by the “fatness" hypothesis. This probability being greater than the probability of going through the annulus we have the statement.
+By the independence of the “crossing annulli" events we get that the probability that Brownian motion goes through all the annulli is smaller that FORMULA .
+Let us now prove the following statement: “there exist FORMULA  positive constants depending only on dimension and on the constant FORMULA  of the fatness condition such that for any FORMULA  there exist disjoint sets FORMULA  verifying FORMULA  and FORMULA  for FORMULA . Once more this is a consequence of the “fatness" property. Cut the sphere FORMULA  in small equal normal polygons (spherical triangles in FORMULA ) and consider the intersections FORMULA  of the cones of summit FORMULA  and basis these polygons with the set FORMULA  (see figure REF ). Clearly, we can choose the polygons small enough (independently of FORMULA  and FORMULA ) to have that
+FORMULA , where FORMULA  is the constant in the fatness condition. It is now clear that FORMULA  and therefore there are two non-neighboring FORMULA 's having harmonic measure greater than FORMULA , which proves the statement.
+FIGURE 
+The previous statement implies that once we reached distance FORMULA  from the boundary of the domain the Brownian motion will revisit the boundary at distance comparable to FORMULA  from the starting point with probability greater than FORMULA . Putting together all the above we get the theorem.
+  FORMULA
+As a corollary we get the following.
+Theorem 3.5 If FORMULA  satisfies
+
+The corkscrew condition
+
+The fatness condition
+
+and if FORMULA  has a Minkowski content,
+
+then for every FORMULA  there exists a constant FORMULA  such that for all FORMULA  if we choose FORMULA  at random with uniform law in FORMULA , the probability that a Brownian motion started at any point FORMULA  of FORMULA  hits for the first time FORMULA  at distance greater than FORMULA  from the starting point FORMULA  verifies
+FORMULA 
+
+
+An alternative approach in the quasicircle perturbative case.
+We present here a simple 2D case for which the proof of the main result is particularly simple using conformal mapping which preserves Brownian trajectories. The curve we consider will be a quasiconformal perturbation of the line. More precisely we consider a domain FORMULA  where FORMULA  is holomorphic and such that
+FORMULA 
+It is known that under this hypothesis FORMULA  is injective and has a quasiconformal extention to the whole plane. In particular FORMULA  is a quasicircle close to a line. We will moreover assume that FORMULA  has a Minkowski dimension which we denote by FORMULA . By Koebe theorem, the quantity FORMULA  is uniformly comparable to the distance from FORMULA  to FORMULA . For FORMULA  we then define FORMULA  and FORMULA  will serve as a substitute for the level set FORMULA .
+Lemma 4.1 If FORMULA  satisfies (FORMULA ) then FORMULA  is the graph of a Lipschitz function FORMULA .
+
+Proof  We apply the implicit function theorem to the function
+FORMULA 
+The computation gives
+FORMULA 
+where
+FORMULA 
+The result follows because FORMULA  and by FORMULA .
+We now consider a portion of the curve with diameter 1 and FORMULA . We divide the portion of FORMULA  between FORMULA  and FORMULA  into pieces of diameter FORMULA . The preimages of these pieces are rough squares of sidelength FORMULA  where FORMULA  is the left-hand point of the intersection with FORMULA . By the results of the preceeding paragraph it suffices to compute the probability that a Brownian motion started at FORMULA  will hit FORMULA  before returning to FORMULA . By conformal invariance, this probability is comparable to FORMULA  a quantity which is equivalent by Koebe to
+FORMULA 
+On the other hand, by quasiconformality,
+FORMULA 
+Combining all the estimates we see that the probability we look for is comparable to
+FORMULA 
+and we see a Riemann sum appearing: we finally get as an estimate for the probability we seek
+FORMULA 
+which is precisely what we wanted.
+  FORMULA
+The preceeding proof has been presented because it is particurlarly simple, but of course the result is not optimal. The results of paragraph 2 remain true in dimension 2 and the proof requires only minor changes. In particular the result is true for all quasicircles; the difference with the case presented is that the topology of the level sets of the function distance to the boundary is more complicated in general.
+
+The self-avoiding walks case
+Self-avoiding walks (S.A.W.) (see  {{cite:18ff4a2b-9efe-48b9-8d54-8aeb02eb404d}} and  {{cite:85f8bddd-8582-42fc-83e0-39b835b471b1}} for a definition) serve as a good model for polymers in physics. On the other hand it is strongly believed that in 2D self-avoiding walks is the same as FORMULA  (see {{cite:85f7ff5d-e1b3-4cde-ac77-e9e0996cfcff}} for a definition of FORMULA ). This conjecture, highly plausible, is comforted by the adequation between the computed dimension, which is FORMULA  and the proved dimension for FORMULA  curves , FORMULA  (Beffara,  {{cite:f76ca17b-cc1a-42b5-aa08-daca6395ef9e}}).
+The following simulations can be seen as a new way of probing the adequation between SAW's and FORMULA :
+In order to check that the statistics of flights over a self avoiding walk follow the expected law with FORMULA , we have performed extended computer simulations. We have generated a set of self-avoiding walks on a square lattice using an implementation of the pivot algorithm described by Kennedy  {{cite:61d43b40-eda2-4b0f-acff-03c2c9cdbac3}} (see also {{cite:4921aa22-28e0-4c30-9da4-8c2804cb5331}}). The number of steps of the self avoiding walk is fixed at FORMULA . Two S.A.W. are shown in Fig. REF .
+FIGURE 
+We have checked by a box counting method that the mass fractal dimension of these curves are numerically founded around FORMULA . These values are very close to the expected value FORMULA .
+We have performed an on-lattice simulation analyzing the first passage statistics of a random walk starting in the close vicinity of the SAW and going back for the first time nearby the SAW. The numerical computations were performed on several configurations of SAW, using a statistical analysis over more than FORMULA  flights. Two probability density functions were computed. First, the probability density FORMULA  that a flight has a total length equals to n. Second, the probability distribution of displacements FORMULA . In order to limit edge effects, we have selected flights starting and ending on the same side of the S.A.W.. As shown Fig. REF  and Fig. REF , we found that FORMULA  and FORMULA .
+FIGURE 
+FIGURE 
+It was shown in  {{cite:918a53e9-5409-4984-ad26-e1dc87f27576}} that for a boundary of fractal dimension FORMULA  embedded in an Euclidian space of Euclidean
+dimension FORMULA , we should have
+FORMULA 
+We are now in position to prove this estimate rigorously; this result is contained a paper to come.
+Moreover as FORMULA , we get
+FORMULA 
+For FORMULA , we expect to have FORMULA  and FORMULA . As shown in Figs. REF and  REF , numerical results provide a very good approximation of these above predictions.
+After these convincing simulations, let us prove rigourously these asymptotics for FORMULA  curves. First, combining results of Rohde-Schramm {{cite:85f7ff5d-e1b3-4cde-ac77-e9e0996cfcff}} and Beffara {{cite:f76ca17b-cc1a-42b5-aa08-daca6395ef9e}}, we see that the limsup in the definition of Minkowski upper-dimension for FORMULA  is actually a limit, allowing asymptotic values for all values of FORMULA . Secondly, we observed in the last section that the result follows from the understanding of the number of Whitney cubes of given order. By a nice result of Bishop {{cite:d6b60284-a8ca-4361-83d9-6ee9386ee1de}} , it follows immediately that we get the right estimate if we allow the starting point to be chosen on both sides of the curve, which is actually the case in the above simulations.
+If we always start from the same side, then not only Bishop's result does not apply but neither does it follow from the previous discussion because the corresponding domains do not have the corkscrew property. But, as Rohde and Schramm have proved, these domains are Hölder, meanning that the Riemman mapping from the upper half-plane onto them is Hölder continuous. This condition implies a weaker form of the the corkscrew condition which is sufficient to ensure the possibility to compute the Minkowski dimension of the FORMULA  curve via the counting of Whitney cubes. As we have seen this is enough to prove the main result about statistics of flights.
+The case of self affine curves is a little more delicate and will be treated in a forthcoming paper.
+It is to be noticed that, using quantum gravity arguments, Duplantier also obtained the right exponents for all FORMULA (cf. {{cite:eb8b164a-1873-4155-87f9-0106d7e30022}})

@@ -1,0 +1,457 @@
+
+PLASTIC RESPONSE OF A 2D AMORPHOUS SOLID TO QUASI-STATIC SHEAR :
+II - DYNAMICAL NOISE AND AVALANCHES IN A MEAN FIELD MODEL
+Anaël LemaîtreFORMULA 
+Christiane CaroliFORMULA 
+FORMULA  Institut Navier – LMSGC, CNRS, UMR 113, 2 allée Képler,77420 Champs-sur-Marne, France
+FORMULA  INSP, Université Pierre et Marie Curie-Paris 6,
+CNRS, UMR 7588, 140 rue de Lourmel, 75015 Paris, France
+2020/09/07 03:04:25
+We build a minimal, mean-field, model of plasticity of amorphous
+solids, based upon a phenomenology of dissipative events derived, in
+a preceding paper [A. Lemaitre, C. Caroli, arXiv:0705.0823]
+from extensive molecular simulations. It reduces to the dynamics of an
+ensemble of identical shear transformation zones interacting via the
+dynamic noise due to the long ranged elastic fields induced by zone
+flips themselves. We find that these ingredients are sufficient to
+generate flip avalanches with a power-law scaling with system size,
+analogous to that observed in molecular simulations. We further show
+that the scaling properties of avalanches sensitively depend on the
+detailed shape of the noise spectrum. This points out the importance
+of developing a realistic coarse-grained description of elasticity in
+these systems.
+Introduction
+Much effort has recently been devoted to the development of
+theoretical descriptions of plasticity of amorphous media. They aim at
+proposing macroscopic constitutive laws consistent with the microscopic
+information emerging from a wealth of numerical results accumulated
+over the past twenty years. In particular, it is now well established
+that plastic deformation in these systems proceeds via irreversible
+sudden
+rearrangements of small clusters of atoms. Even at zero
+temperature, these flips occur intermittenly. These empirical facts
+are the basis of two recently proposed phenomenologies: the STZ
+(shear transformation zone) theory {{cite:dc9979f0-1ca0-4fcb-a456-00dcd9ebc3ae}} and SGR (soft glass rheology) model {{cite:166db89c-02a6-4ab9-bf28-aab57c55135a}}.
+Both represent the sheared disordered solid as a set of spatially
+random and independent "zones" or "traps" of small size
+embedded in a homogeneous background. These structures are metastable,
+so that, when loaded elastically by the external driving strain, in
+the absence of noise elastic loading would stop at an instability
+threshold where they flip into an unstressed state. Moreover, in both
+models, structural disorder gives rise to a noise acting in parallel
+with advective loading, thus resulting in intermittent flips occurring
+before absolute instability is reached. An important point is that
+they introduce noise via Arrhenius factors associated with a
+constant, strain-rate independent effective temperature.
+In an attempt at testing the validity of the assumption concerning
+flip independence, Maloney and Lemaître {{cite:5a12e0d0-f2af-4f48-8c37-693923fdd8af}}
+later carried out extensive
+numerical simulations on 2D glasses of various sizes FORMULA  in the
+athermal quasi-static regime (FORMULA ; vanishing strain rate
+FORMULA ), hereafter abbreviated as AQS. In this
+regime, pure elastic, reversible, loading is interrupted by randomly
+spaced discontinuous stress drops associated with the
+(quasi-instantaneous) plastic events. They found that these events
+can be interpreted as avalanches involving a varying number FORMULA  of
+elementary zone flips. In the stationary state, the avalanche size
+FORMULA , hence the stress drop amplitude FORMULA  are broadly
+distributed, and their averages are system-size dependent. The
+average avalanche size scales roughly as FORMULA  {{cite:da673d8d-b81f-423e-b31b-d564286e9fcd}}.
+Distributed
+avalanches have also been found by Bailey et al in 3D simulations {{cite:4a02890a-18d6-4147-a4c7-b1b4734022d3}},
+with an approximate scaling FORMULA .
+In the 2D simulations, flips show up clearly as elastic quadrupolar
+structures in the energy and the non-affine displacement field,
+consistent with their representation as shear transformations of
+Eshelby-like inclusions {{cite:d2f6b02a-9050-402c-bd20-46a5206a837a}}. Avalanches are known to result from
+long range interactions. In the present case interzone elastic couplings
+mediated by the background medium are thus likely to be responsible for
+the avalanche behavior.
+Motivated by this analysis, we have performed in a previous, companion,
+paper {{cite:d571429b-45c5-4a9c-86c5-0addebe43a61}} an extensive numerical study of the
+evolution with strain of the non-affine field in a 2D LJ glass. It
+substantiates the importance of interzone elastic couplings and leads
+to the following picture,
+consistent with that proposed already long ago by Argon et al {{cite:de2fb0ef-f5f5-4f43-ad2d-222db20c20ab}}:
+via its associated quadrupolar
+field, a zone flip induces, at any other zone site in the system, a
+shift of the strain level whose amplitude and sign depend on the
+relative position of target and source. These shifts may bring some
+zones past their instability threshold, hence triggering an
+avalanche. For the zones which do not take part in an avalanche, the
+flip-induced elastic signals act as an intrinsic dynamical noise
+the frequency of which scales as the strain rate FORMULA . The
+statistical study of particle motion shows that this noise dominates
+largely over fluctuations associated with non affine deformations
+during the elastic episodes separating the plastic events.
+In this article we propose a minimal model which incorporates as
+simply as possible the essential features of this phenomenology in
+terms of a set of identical spatially random zones embedded in a 2D
+elastic continuum, driven by external loading toward their instability
+threshold and coupled via flip-induced quadrupolar elastic fields.
+In Section II we define our model in detail. We discuss the various
+relevant time scales in steady plastic flow, which allows us to
+identify, for finite systems, a size-dependent quasi-static regime
+where avalanches can be considered instantaneous. We then study
+numerically, in a mean-field approximation for the elastic noise, the
+steady state dynamics for different system sizes. We find that
+dissipation occurs via broadly distributed flip avalanches, the average size of
+which exhibits a power law scaling with system size: FORMULA . However, the exponent, FORMULA , is definitely
+smaller than the value, of order 1, measured in reference {{cite:da673d8d-b81f-423e-b31b-d564286e9fcd}}.
+So, in Section III we discuss the various simplifications involved in
+our modelling of zones and of their elastic field. This leads us to
+test a second version of the model in which we assume
+empirically a gaussian spectrum for the elastic noise. While
+preserving the existence of the avalanche dynamics, this modified
+model turns out to predict the correct power law scaling for FORMULA . We
+further show that, in this case, an analytical estimate based on a
+Fokker-Planck-like approximation yields the same prediction for the scaling
+exponent.
+Although still preliminary, these results lead us to conclude that
+phenomenologies of plasticity of amorphous media should definitely
+incorporate into their basic ingredients the
+strain-rate dependent elastic noise generated by the zone flips
+themselves.
+
+Elastically coupled zones and avalanches:
+The model
+We consider an ensemble of FORMULA  identical zones of size FORMULA , shear
+elastic modulus FORMULA , randomly distributed with a fixed density
+FORMULA  in a FORMULA  elastic medium of lateral size FORMULA . The average
+distance between nearest zones FORMULA  is fixed and given by :
+FORMULA . The elastic state of each zone is
+characterized by an internal strain FORMULA , which measures
+the departure from its zero stress state. The FORMULA 's lie
+below a common instability threshold FORMULA . The athermal system is
+driven by external shear at rate FORMULA , which advects all
+FORMULA 's. When a zone reaches FORMULA , it disappears
+while releasing an amount of internal strain FORMULA . At
+the same time another one is created, at an uncorrelated position,
+with zero initial stress (hence zero internal strain).
+During a zone flip the cluster of atoms forming the zone jump into a
+configuration compatible with the externally imposed strain. This
+process relaxes the intra-zone stress and, at the same time, deforms the
+surrounding elastic medium. Following Picard et al {{cite:fb1f6b9c-c183-464b-a80b-d149bd11d653}}, its field can be
+represented as due to two force dipoles (Figure REF ).
+We take for this
+strain field its expression in an infinite medium. At relative position
+FORMULA  from the flipping center:
+FORMULA 
+where FORMULA  is measured from the shearing direction.
+FIGURE 
+It has quadrupolar symmetry, hence zero average.
+FORMULA  and FORMULA  can be related using the
+following argument: the amount of stress FORMULA 
+released inside the zone by a flip gives rise to a spatially
+averaged, macroscopic stress drop FORMULA , where the number
+FORMULA  depends on the shape of the system. From
+now on, we assume that FORMULA . In stationary state, over a
+large strain interval, the average number of zone flips is
+FORMULA . The associated macroscopic plastic
+stress release FORMULA  must balance the increase of
+elastic stress, FORMULA , due to loading. Hence
+FORMULA 
+The duration FORMULA  of a flip is controlled by the time necessary
+to radiate elastic energy out of the zone region, i.e. by radiative
+acoustic damping, so FORMULA , with FORMULA  a sound
+speed. This acoustic signal, emitted from site FORMULA ,
+propagates throughout and modifies the strains of all other zones FORMULA 
+which adjust, over a time FORMULA , to this space-dependent
+shift FORMULA . Flip signals thus constitute a
+noise acting on the FORMULA 's.
+In steady state, the average flip rate in the whole system is
+FORMULA 
+If flips occur independently, i.e. in the absence of avalanches, the
+noise correlation time is FORMULA , and the QS regime, where flips
+can be assumed instantaneous, corresponds to FORMULA , that is to:
+FORMULA 
+For a glass-like system, with FORMULA , FORMULA nm,
+zone density FORMULA , lateral size FORMULA mm,
+this yields the loose criterion FORMULA .
+Now, a first elastic noise signal may drive some FORMULA 's
+beyond FORMULA , hence trigger secondary flips, thus initiating
+an avalanche whose duration FORMULA  is set by sound propagation.
+For a very conservative estimate, we take the average distance between
+successive flips to be FORMULA . This leads to a duration FORMULA , with FORMULA  the average avalanche size. It must be
+compared with the average time interval {{cite:3a4cf917-f3ae-4891-acfe-8b81b4e9dbef}}
+between avalanches FORMULA , given by:
+FORMULA 
+The QS condition then becomes
+FORMULA 
+Let us emphasize here an important point, usually ignored in related earthquake
+models centered on the issue of criticallity:
+the quasi-static range is limited by the acoustic delays
+controlling avalanche spreading, hence shrinks with system size.
+We will assume from now on that the QS condition is fulfilled. We
+thus model the noise by instantaneous shifts FORMULA  of
+the zone strains. Moreover, we treat our model, now coined
+"E model", in the mean-field
+approximation, i.e. assume that the FORMULA 's are
+independent random variables, which amounts to neglecting space
+correlations between flip centers. That is, we take the spectrum
+FORMULA  of these noise signals to be that due to a
+spatially uniform distributions of sources truncated at the average
+distance between nearest zones FORMULA .
+FORMULA 
+with FORMULA  given by equation (REF ).
+FIGURE 
+FORMULA , plotted on Figure REF , is
+size-dependent, and has variance
+FORMULA 
+It exhibits a narrowly peaked structure, associated with distant
+zones, and vanishes beyond the cut-off FORMULA , so that all its moments are finite.
+Yet, it presents broad, power law, tails. For example, its first half
+moment
+FORMULA 
+At this stage, the model can be summarized into the following two-step
+algorithm. Since, in the QS regime, the dynamics between instantaneous
+avalanches reduces to steady drift of all FORMULA 's at constant
+loading rate:
+(i) Starting from an initial configuration where all
+FORMULA , we first identify FORMULA . We shift all FORMULA  by
+FORMULA , and the first
+avalanche is triggered. Then:
+(ii) Zone FORMULA  flips, i.e. is removed, while a new one is
+introduced at zero strain. This first flip emits a noise signal which
+randomly shifts all the other zones: FORMULA , where the
+FORMULA 's are independent and distributed according to
+FORMULA . If all FORMULA , we
+are back to step (i). Otherwise, an avalanche starts: we count
+the number FORMULA  of zones which flip at this stage and are replaced
+by new, unstrained, ones.
+(iii) Each zone must now receive FORMULA  signals, which we
+treat successively. The first of these yields a new shifted
+configuration FORMULA  which produces FORMULA  new flips.
+FORMULA  is then updated to FORMULA , etc...The
+avalanche stops when FORMULA  vanishes. Its size is FORMULA .
+
+Numerical results
+In order to study the statistical properties of our model in steady
+state, we eliminate the initial transients (FORMULA ) and perform ergodic averaging over long strain intervals involving
+FORMULA  avalanches.
+FIGURE 
+As shown on Figure REF , their size distribution
+FORMULA  depends only weakly on the size FORMULA  for small FORMULA (
+FORMULA ). For FORMULA , it presents a quasi-exponential
+tail, which broadens noticeably with increasing FORMULA . This size
+dependence reflects into the growth with FORMULA 
+of the average avalanche size (see Figure REF ) which we
+find to fit closely, over the whole FORMULA -range (two decades) a power
+law behavior:
+FORMULA 
+FIGURE 
+When plotting FORMULA  versus FORMULA  (see insert of Figure REF ) it turns out, however,
+that FORMULA  does not obey a simple scaling. Even though power
+law like decay may be identified on a limited, small-FORMULA , range, this
+by no means allows us to conclude to self-criticallity – at variance
+with a previous claim by Chen et al on a related earthquake model {{cite:f5c7918a-a097-49fe-9427-c1b72743f4e6}}.
+We must now confront the above results with those of the molecular
+simulations. Clearly, our highly simplified model shows that long range
+interzone elastic couplings indeed produce broadly distributed
+avalanches with an average size growing as a power law of system size.
+However, at this stage, agreement is merely qualitative, since
+(i) The scaling exponent FORMULA  differs from the
+simulation value FORMULA .
+(ii) In the molecular simulations {{cite:5a12e0d0-f2af-4f48-8c37-693923fdd8af}}, rescaling avalanche sizes by
+their FORMULA -dependent average results in a rather good collapse of
+data, which does not hold in the model.
+
+Discussion
+Approximations of the E model
+The above comparison leads us to discuss in more detail the
+assumptions involved in our minimal model.
+First of all, let us consider more closely our representation of
+elastic couplings in our finite system. When approximating the static
+elastic propagator by its value for an infinite medium, we neglect
+the finite global elastic recoil which necessarily accompanies, when
+driving at imposed strain, the macroscopic stress release after each
+flip. This recoil, of order FORMULA , should be modelled as a common
+backward shift, FORMULA  which should be added to the noise
+FORMULA . We have rerun the E model for FORMULA  and 2.
+We find that a finite recoil leaves the power law scaling of FORMULA  (equation (REF )) unchanged, the intuitively
+expected avalanche size reduction showing up only in a slow decrease
+with FORMULA  of the prefactor.
+Let us now try to list the various simplifications underlying our
+representation of the coupled zones. They can be separately into
+approximations concerning respectively (a) the zones themselves and
+(b) the elasticity of the embedding medium.
+(a) Zones:
+We have taken them to be identical, i.e. to have the
+same threshold strain FORMULA , and the same shear modulus
+FORMULA , which we have assumed to be constant up to FORMULA . However, clearly, in atomically disordered systems,
+both FORMULA  and FORMULA  depend on details of the internal
+structure of the zone and of its immediate vicinity. So, these two
+parameters are certainly distributed about characteristic averages.
+For example, a signature of the spread of FORMULA  is the observation in
+the LJ simulations {{cite:d571429b-45c5-4a9c-86c5-0addebe43a61}} of instances in which a zone "overtakes"
+another one during an elastic loading episode. Moreover, we know {{cite:94e37517-699f-4354-9c78-8f4f2fe4c543}}
+and
+have checked in ref. {{cite:d571429b-45c5-4a9c-86c5-0addebe43a61}} that significant elastic softening occurs near the
+threshold, where a metastability barrier vanishes.
+On the other hand, it was observed in {{cite:d571429b-45c5-4a9c-86c5-0addebe43a61}}
+that, frequently, a first
+flip does not result in the disappearance of the zone. Rather, this
+persists after a finite strain release, several flips being needed for
+it to finally "die out". Describing this behavior would demand a
+multistate zone model.
+(b) Elastic couplings:
+We have represented the embedding elastic medium as a homogeneous
+continuum, and have taken for the elastic field (equation
+(REF )) its expression for an infinite sytem. We believe that
+this last approximation does not affect avalanche size scaling.
+Indeed, an elementary dimensional analysis for the stain field
+FORMULA  in a finite FORMULA  box shows that all its
+moments retain the same FORMULA  dependence as those of the FORMULA 
+spectrum (equation (REF )) used in Section II.
+Note however that the homogeneous continuum approximation itself is probably
+overschematic, in particular at short distances, where numerical
+studies of the response to a localized force have shown that it is
+dominated by disorder-induced fluctuations {{cite:44dee57c-304e-427e-a41a-687f189e5c0d}}.
+This certainly contributes to a decrease of the tail of noise spectrum.
+Pending more quantitative information about these finer disorder
+effects, we now propose to test the robustness of our minimal model by
+investigating the avalanche statistics under the empirical assumption of a
+gaussian elastic noise spectrum.
+
+Avalanches in a gaussian noise model
+In this "G model", we choose the gaussian noise spectrum
+FORMULA  to have the same variance FORMULA  as
+that (equation (REF )) for the E model. The algorithm is
+then implemented as already described.
+FIGURE 
+Here again, we find broadly distributed avalanches, whose average size
+increases with FORMULA  The data, shown on Figure REF , are
+consistent with the asymptotic (see insert) power-law behavior:
+FORMULA 
+FIGURE 
+Moreover, Figure REF  shows that the rescaling of the
+size distribution FORMULA  as
+FORMULA  leads to good collapse.
+So, agreement with the results of the molecular simulations is much
+more satisfactory than was the case for the E model.
+We now attempt to clarify how the noise spectrum affects so significantly the
+avalanche behavior. We plot on Figure REF  the strain (ergodic)
+averages of the distributions FORMULA  of zone strains
+in steady state for the two models and various system sizes FORMULA  ranging
+from 250 to 32000. For each model, FORMULA  converges rapidly almost
+everywhere toward a limit curve. This reflects into a very weak size
+dependence of the macroscopic stress FORMULA , which varies by less than FORMULA  (G model)
+and FORMULA  (E model) when FORMULA  increases from 1000 to 32000.
+FIGURE 
+While FORMULA  and FORMULA  are similar in most of the FORMULA  range,
+they present significant differences in the two regions FORMULA  and FORMULA . The peak in FORMULA  results
+from refeeding zones at FORMULA  after flips. The larger an
+avalanche is, the more the corresponding peak is broadened by ulterior
+flips within the avalanche itself. We therefore attribute the washing
+out of the peak for the G model to the fact that it exhibits much
+larger avalanches. More significant for our purpose is the detailed
+behavior of FORMULA  near threshold, which reflects avalanche statistics.
+In particular, FORMULA  is directly related to
+FORMULA . Indeed, the average flip and avalanche rates
+verify FORMULA . On
+the other hand, in steady state, the flux of zones which cross
+threhold under the effect of advective elastic loading, i.e. which
+initiate avalanches, is FORMULA .
+So:
+FORMULA 
+Since the data indicate that FORMULA  diverges for FORMULA , they also indicate that the absorbing boundary
+condition FORMULA  should hold asymptotically here. Relation
+(REF ) provides a consistency test of our calculations. We
+determine FORMULA  with the help of a second order polynomial
+extrapolation near FORMULA , with sampling intervals FORMULA . We find that relation (REF )
+holds within FORMULA  for the G model and FORMULA  for the E one.
+In order to try and obtain analytical estimates for
+avalanche size scalings, we describe the evolution of FORMULA 
+by the approximate master equation :
+FORMULA 
+where FORMULA  is the single flip transition probability
+FORMULA 
+with FORMULA  the noise distribution, and FORMULA . The delta
+term, proportional to the normalized zone flux FORMULA , accounts for post-flip reinjection and
+ensures the conservation of zone number.
+In this approximation,
+advection operates between all single flips, which amounts to
+neglecting intra-avalanche time correlations. This leads to an
+average advective FORMULA -shift during an avalanche
+FORMULA , to be compared with the average diffusive broadening
+FORMULA , with
+FORMULA  the noise variance. Hence,
+FORMULA , which suggests that our
+approximation should improve in the large FORMULA  limit.
+Integration of equation (REF ) in steady state yields:
+FORMULA 
+Since FORMULA  is peaked around zero, in the spirit of the Fokker-Planck
+approximation,we expand FORMULA  close to
+FORMULA  to first order: FORMULA . Using FORMULA , we obtain for the avalanche average
+size:
+FORMULA 
+where the (semi)-moments
+FORMULA 
+For both models FORMULA , while
+FORMULA  and FORMULA  is given
+by equation (REF ).
+If FORMULA  converges towards a finite value FORMULA ,
+equation (REF ) predicts that, for large systems,
+– for the G model:     FORMULA
+– for the E model:     FORMULA
+While this prediction accounts satisfactorily for the numerical
+results for the gaussian model, we have checked (see also Figure
+REF ) that the log scaling is ruled our by our data. The
+reason for this failure is illustrated by the insert of
+Figure REF  (top). For the E model, we find that, for
+increasing FORMULA , FORMULA  becomes increasingly steep in the near vicinity
+of FORMULA . In the FORMULA -range investigated, we see a marked,
+non-saturating, increase of FORMULA  suggesting a possible
+divergence, higher derivatives increasing even faster. This highly
+singular behavior, reminiscent of that analyzed by Chabanol and Hakim {{cite:782bb7a4-7701-4dae-9635-ba2e4545808a}}
+for a related model, clearly invalidates the above Fokker-Planck
+expansion for model E. Conversely, for the G model, we find
+numerically that FORMULA  does exhibit
+convergence, towards FORMULA . This regular behavior suggests
+that a Fokker-Planck expansion of the master equation
+(REF ) should be valid for model G in the large FORMULA  limit.
+We have indeed checked that, for increasing FORMULA , the steady state
+distribution FORMULA  converges rapidly towards the solution of this
+FP equation.
+So, while even a schematic representation of long range elastic
+couplings suffices to account for avalanches with power law size
+scaling,
+this discussion underscores that the detailed shape of the
+noise spectrum is of crucial importance. Indeed, not only does it
+affect the scaling exponent, but, as well, the scaling properties of
+the distribution of avalanche sizes.
+We consider that the results presented here, though still preliminary,
+clearly show that the
+dynamical noise due to long range elastic couplings is a key
+ingredient that must be included in phenomenologies of plasticity of
+amorphous solids. As FORMULA  increases beyond
+the limit of the QS rgime, since avalanches are no longer separable,
+the spectrum of the flip-generated dynamical noise will of course
+change. The question of its evolution with FORMULA , as well as
+that of its interplay with thermal noise at finite temperature remain for
+the moment completely open ones.
+Besides, the above discussion indicates two main
+routes for further investigation.
+On the one hand, a more realistic modelization of elastic couplings in
+the presence of structural disorder is needed. Indeed, Leonforte et al {{cite:9be0ca22-4533-4901-986a-24606c28e328}}, {{cite:44dee57c-304e-427e-a41a-687f189e5c0d}}
+have shown that the elastic response of amorphous solids self-averages
+into the continuum elastic response only beyond a length scale FORMULA 
+of order FORMULA  atomic diameters FORMULA . For FORMULA , the
+elastic response is dominated by non-affine effects. So, for the
+existing molecular simulations focussing on avalanche dynamics, where
+FORMULA  is limited to FORMULA , noise tails are very likely to
+be controlled by elastic non-affinity. This issue, as well as that of
+the statistical distribution of zone parameters (such as shear
+modulus and threshold strain), will demand the development of a
+coarse-grained description of the elasticity of glassy systems.
+On the other hand, our mean-field approximation wipes out from the
+start the correlation anisotropy arising from the quadrupolar symmetry
+of elementary events, responsible for the preferential
+avalanche orientations observed in the glass simulations of Maloney et
+al {{cite:5a12e0d0-f2af-4f48-8c37-693923fdd8af}} and Tanguy et al {{cite:2896eade-948d-4cf8-bc23-fb80671a5193}}.
+In order to evaluate the robustness of the
+mean-field scalings and also start addressing the issue of
+localization, full simulations of model E in the presence of rigid
+boundaries will be necessary.
+Acknowledgements
+We are grateful to V. Hakim and F. Lequeux for useful comments.

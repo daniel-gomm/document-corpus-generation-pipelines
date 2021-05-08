@@ -1,0 +1,1216 @@
+
+Supersymmetric sources, integrability and generalized-structure compactifications
+Paul Koerber
+Max-Planck-Institut für Physik – Theorie
+Föhringer Ring 6, 80805 München, Germany
+E-mail: koerber@mppmu.mpg.de
+Dimitrios Tsimpis
+Arnold Sommerfeld Center for Theoretical Physics
+Department für Physik, Ludwig-Maximilians-Universität
+Theresienstr. 37, 80333 München, Germany
+E-mail: tsimpis@theorie.physik.uni-muenchen.de
+0706.1244
+MPP-2007-66
+LMU-ASC 37/07
+In the context of supersymmetric compactifications of type II supergravity to
+four dimensions, we show that orientifold sources can be compatible
+with a generalized FORMULA -structure that is neither
+strictly FORMULA  nor static FORMULA . We illustrate this with explicit
+examples, obtained by suitably T-dualizing known solutions on the six-torus.
+In addition we prove the following integrability statements, valid under certain mild assumptions:
+(a) for general type II supergravity backgrounds with orientifold and/or
+D-brane generalized-calibrated sources, the source-corrected Einstein and dilaton equations of motion
+follow automatically from the supersymmetry equations once the likewise source-corrected form equations
+of motion and Bianchi identities are imposed; (b) in the special case of supersymmetric compactifications to
+four-dimensional Minkowski space,
+the equations of motion of all fields, including the NSNS three-form,
+follow automatically once the supersymmetry and the Bianchi identities of the forms are imposed.
+Both (a) and (b) are equally valid whether the sources are smeared or localized. As
+a byproduct we obtain the calibration form for a space-filling NS5-brane.
+D-branes, orientifolds, FORMULA -structures, generalized geometry
+Introduction
+It has recently been appreciated that flux compactifications
+(for reviews see e.g. {{cite:e42c2fb4-283d-4753-a562-0c94df02699d}}, {{cite:63f5faa3-cd1d-433c-bad0-049f7c3164cd}}, {{cite:23d771c3-f312-4b4a-bc2d-c50ed27f06dc}})
+may be the right framework wherein to address long-standing issues which have
+hitherto prevented string theory from making contact with realistic
+low-energy physics. In this context, however, one faces the problem presented by
+the large number of possible string theory flux vacua. String theory is approximated at low-energies
+by ten-dimensional supergravity,
+possibly enriched by `stringy' objects such as orientifolds and D-branes,
+and therefore a logical starting point would be to try to
+explore the nature of supergravity solutions with fluxes turned on. To that end
+it is useful to have as many generally-valid results as possible.
+A natural language in which to recast the conditions for a supersymmetric FORMULA 
+flux compactification of type II supergravity to four-dimensional Minkowski space {{cite:e8e3413b-beb7-4fb1-aef3-9ab529e43a9a}}, {{cite:ee881770-4ff1-4f65-be3b-a19e127b9f40}}, {{cite:73d54c3f-2828-46f4-a2f1-bc18bafbdb98}}
+is that of generalized complex geometry {{cite:84f3532e-77a1-4f5f-a1d9-48d05c8f642d}}, {{cite:754c675f-9fe6-4b50-9d54-0b919e46d437}}.
+More specifically: for a supersymmetric FORMULA  vacuum the six-dimensional
+internal space must support two compatible generalized
+complex structures,
+one of which is integrable while the other one is not – its nonintegrability being parameterized by the RR-fields.
+The case of four-dimensional FORMULA 
+AdS vacua can also be described in the same formalism,For a detailed analysis in the
+language of ordinary FORMULA -structures, see {{cite:5d109562-c2ea-4a15-ba3c-36e4a69fea78}}, {{cite:ac81a387-bf08-4a17-98b7-722731625af6}}. The last
+reference contains the most general
+form of supersymmetric compactifications to AdSFORMULA  on manifolds
+of FORMULA -structure, including a treatment of the equations of motion
+and Bianchi identities. although in this case neither of the generalized complex structures is
+integrable – hinting at a role for `almost' generalized complex geometry {{cite:ee881770-4ff1-4f65-be3b-a19e127b9f40}}, {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}.
+Equations of motion
+To obtain an FORMULA  vacuum the supersymmetry conditions
+need to be supplemented by the form Bianchi identities
+and equations of motion. General integrability results
+ensure however that no further equations of motion need to be imposed.
+Indeed, it was shown –
+in {{cite:ac81a387-bf08-4a17-98b7-722731625af6}} for IIA and
+in {{cite:7f95dfe3-2797-49cb-9c11-75bde539b790}} for IIB supergravity –
+that the
+Einstein equation and the dilaton equation of motion follow automatically from
+the supersymmetry and the Bianchi identities and equations of motion of the
+form-fields (for a discussion
+in the context of M-theory see {{cite:d929aa36-537b-4939-aecf-8fb9f180d730}}).
+Upon adding D-brane and/or
+orientifold sources to the supergravity Lagrangian
+there will be a contribution to the Einstein and dilaton equation from the Dirac-Born-Infeld
+terms, and to the Bianchi identities and equations of motion of the RR-fields from the Chern-Simons terms.
+As we show in the present paper, provided the sources are supersymmetric
+(or, equivalently, as we will explain in the following, generalized-calibrated), both contributions
+exactly conspire so that supersymmetry together with the Bianchi
+identities and equations of motion of the form-fields
+still imply the Einstein and dilaton equations of motionIn the special case of the backgrounds of {{cite:ac81a387-bf08-4a17-98b7-722731625af6}} with an O6 source,
+it was verified in {{cite:afad688a-8951-4c6d-955c-5e10e39a04ff}} that the dilaton equation and the four-dimensional part
+of the Einstein equation follow automatically,
+provided that the sources are proportional to FORMULA  – which in that context implies that
+they are calibrated..
+In hindsight it is obvious that the Einstein and dilaton equations of motion could not have followed
+from the supersymmetry conditions alone, as this would have left no room for source contributions.
+Nevertheless, it was noted in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} that, for the case of supersymmetric
+compactifications to four-dimensional Minkowski vacua,
+the equations of motion (but not the Bianchi identities) for the internal parts of the RR-fields do follow from the
+supersymmetry equations. The rationale in this case is that the sources that would contribute to these equations
+are forbidden because they would break the four-dimensional Poincaré symmetry. The proof is based on the integrability
+of the generalized calibration conditions of the corresponding magnetic sources.
+In the same way one would expect
+the equation of motion for the NSNS FORMULA -field – having as a source the fundamental string – to follow from
+the supersymmetry conditions. However, up to now it had not been possible to show this since the
+equation of motion for the FORMULA -field does not fit well in the
+generalized geometry framework {{cite:bf7dc232-1118-43e5-91d1-83abd52bdd8e}}. In the present paper
+we will show that this equation does indeed follow from the supersymmetry equations and the Bianchi identities
+– much like the case of the RR fields. As a bonus, the proof also provides the calibration form
+for the space-filling NS5-brane.
+The situation can thus be schematically summarized as follows:
+
+
+SUSY
++
+form BIs
+(source-modified)
++
+form EOMs
+(source-modified)
+FORMULA  
+
+Einstein, dilaton EOMs
+(source-modified)
+
+for general backgrounds, and
+
+
+SUSY
++
+form BIs
+(source-modified)
+FORMULA  
+
+form EOMs
+(source-modified)
++
+Einstein, dilaton EOMs
+(source-modified)
+
+for compactifications to four-dimensional Minkowski space. Let us note that
+we did not consider the possibility of adding a source term to the Bianchi identity of the FORMULA -field,
+which would be generated by NS5-branes, although we expect our integrability results to be readily extendable
+to include that case. We stress that
+the proof remains equally valid whether the source terms are localized or not –
+the main requirement being that the sources are generalized-calibrated.
+The concept of a generalized-calibrated
+D-brane was introduced in {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}},
+extending the work of {{cite:d41c6efe-91a2-4f9c-93e9-5f9522b3bb1f}}
+to include a non-trivial gauge field FORMULA  on the world-volume.
+A generalized-calibrated
+D-brane extremizes its energy, rather than its volume
+(which is the case for an ordinary calibration), and therefore corresponds to a (static)
+solution of the equations of motion. Moreover, it was shown in {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}}
+that the calibration conditions
+are equivalent to the requirement that the D-brane preserve the supersymmetry of the background.
+The D-branes originally considered in {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}} were localized;
+the generalization of the calibration conditions
+to the case of smeared D-brane/orientifold sources is straightforward.
+The superpotential for the moduli space of generalized calibrations was introduced
+in {{cite:8a4eae3f-67fe-4472-838d-4494ade10d8c}}, the deformation theory further studied in {{cite:18344af4-9c68-49ac-9849-e60f6f091dbe}},
+and networks of calibrated D-branes in {{cite:56128534-262e-4e32-ac46-f9b85b762044}}.
+
+Orientifolds
+Independent of whether the vacuum is supersymmetric or not, in the case of
+flux compactifications of ten-dimensional supergravity to
+Minkowski space there exists a no-go theorem {{cite:10a07972-23f8-488c-97de-e158392a13e2}}, {{cite:7718c993-d194-4740-a95c-a460a0bc3b08}} which (under certain assumptions such
+as the absence of higher-order derivative corrections) requires
+the presence of sources with negative tension. In string theory,
+such sources are indeed available: the orientifolds.
+The supersymmetry conditions for orientifolds
+in terms of the two generalized complex structures of the background, were
+first studied in {{cite:80c8c1b0-38a8-4e66-bbd7-94e4a1b13cdf}}. In that reference,
+the supersymmetry conditions were extrapolated from the analogous conditions in the (warped) Calabi-Yau case.
+Subsequently, they were used in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} to argue that orientifolds would only be
+compatible with either strict FORMULA -structure, or
+static FORMULA -structure.
+This would then imply that
+the most interesting cases from the point-of-view of generalized
+complex geometry – i.e. solutions with dynamic FORMULA -structure which is
+neither strictly FORMULA  nor
+static FORMULA , but interpolates between the two – would effectively be excluded for flux compactifications.
+In this paper we will derive and confirm the conditions of {{cite:80c8c1b0-38a8-4e66-bbd7-94e4a1b13cdf}}
+from a world-sheet perspective, as was done earlier for the Calabi-Yau
+case in {{cite:1b3c7054-b84e-4c71-a6de-f4a557e161de}}. We will however also show that the
+argument of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} is too restrictive, and that supersymmetric orientifolds can be
+compatible with a dynamic FORMULA -structure.
+Moreover starting from a so-called type FORMULA  (or “warped Calabi-Yau”) solution on a torus
+and performing two T-dualities, we will provide explicit
+examples on nilmanifolds.
+A non-geometric background with dynamic FORMULA -structure and orientifold sources,
+appeared recently in {{cite:752e44e4-d0ed-4490-a71f-483b67a59569}} (see also {{cite:2878717e-ce3d-4988-82d5-287212bb1494}}).
+This paper is organized as follows. After a brief review of generalized
+geometry and supersymmetric vacua in the next section, we come to the orientifold
+analysis in section . Our results concerning the integrability
+of the supersymmetry equations in the presence of sources are contained in section .
+The source-corrected equation of motion for the NSNS three-form as well as
+the NS5 calibration form, are derived in section .
+We conclude in section .
+Many useful technical details can be found in the appendices.
+After this paper was posted on the hep-th archive, we were informed of a forthcoming
+publication {{cite:3f0bc5f7-8bfb-4874-830b-6fc9623323c7}} with potential overlap with the present work.
+
+Supersymmetry and generalized complex geometry
+This section is a brief review of FORMULA  supersymmetric backgrounds in the
+language of generalized geometry, and is included here mainly to establish notation and
+conventions. For more details the reader is referred to appendices , .
+For an introduction to generalized complex geometry we refer to e.g. section 3 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} or, for a more complete treatment, to the original
+work of {{cite:754c675f-9fe6-4b50-9d54-0b919e46d437}}.
+Setup
+We will consider type II supergravity and, for most of the paper (with the exception of section ),
+we will make the following compactification
+ansatz for the metric
+FORMULA 
+where FORMULA  is the warp factor, FORMULA  the four-dimensional Minkowski metric, and FORMULA 
+the metric of the
+six-dimensional internal space. Apart from the metric, type II supergravity also contains the dilaton FORMULA ,
+the NSNS three-form FORMULA  and the RR-fields FORMULA . We will use the democratic formalism of {{cite:a3f02741-c838-4d10-9596-edfa8703f9ff}}
+As in {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}}, we make the following changes with respect to {{cite:a3f02741-c838-4d10-9596-edfa8703f9ff}}: in IIB we take FORMULA  and in IIA FORMULA .
+with a doubling of the number of RR-fields, so that FORMULA  in type IIA and FORMULA  in type IIB.
+The additional RR fields then satisfy (REF ). For further details on our conventions on type II supergravity see appendix .
+For the RR-fields, the most general ansatz compatible with four-dimensional Poincaré
+invariance reads:
+FORMULA 
+with FORMULA  the (warped) four-dimensional volume form.
+In addition, the most general ansatz for FORMULA  supersymmetry in four dimensions is
+FORMULA 
+where the upper/lower sign is for type IIA/IIB respectively,
+and FORMULA , FORMULA  are the complex conjugates of
+FORMULA , FORMULA . For our detailed spinor conventions we refer to section REF .
+We define FORMULA  and FORMULA . As shown in {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}},
+supersymmetric D-branes require FORMULA , which
+will also be the case for supersymmetric orientifolds as we demonstrate in section ;
+we will assume this to be the case in the rest of the paper.
+From bilinears of the internal spinors FORMULA  one
+can construct the FORMULA  pure spinors FORMULA  as follows
+FORMULA 
+where the underline replaces the Dirac slash as in (REF ).
+Indeed, we can identify polyforms, i.e. sums of forms of different dimensions, with spinor bilinears by contracting
+the indices with gamma-matrices. On the other hand,
+the polyforms are also isomorphic to spinors of FORMULA 
+(up to a choice of the volume form),
+with the FORMULA  Clifford action defined as in (REF ).
+These spinors are pure, i.e. they have a null space of maximal dimension; for FORMULA 
+this is equal to six.
+Indeed, in the spinor bilinear picture the null space consists of the three
+annihilators of FORMULA  acting on
+the left and the three annihilators/creators of FORMULA  acting on the right.
+In {{cite:ee881770-4ff1-4f65-be3b-a19e127b9f40}} it was shown that the supersymmetry
+variations of the fermions () vanish for
+the above ansatz – so that the compactification
+preserves FORMULA  supersymmetry – if and only if
+FORMULA 
+
+
+In the above we have
+normalized the internal spinors such that FORMULA . Moreover,
+we set FORMULA , FORMULA  for type IIA/IIB respectively.
+The twisted exterior derivative FORMULA  is given by FORMULA .
+It was noted in {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}} that the above equations correspond to
+space-filling, domain wall and string-like D-branes respectively, indicating
+a close relation between the background supersymmetry and its supersymmetric probes.
+In the language of FORMULA -structures the internal manifolds above have a structure group
+contained in FORMULA  – since they have at least one
+nowhere-vanishing spinor: FORMULA . The appearance of a second
+invariant spinor FORMULA  translates to the statement that
+the internal manifolds have FORMULA -structure.
+This terminology may be somewhat
+confusing from the point-of-view of ordinary FORMULA -structures,
+since the second spinor may or may not be different from the first one.
+In fact, in six dimensions the most general
+relation between the two spinors is
+FORMULA 
+If FORMULA  and FORMULA  are everywhere parallel, i.e. FORMULA  and FORMULA , we say that we
+have a strict FORMULA -structure; if the two spinors are everywhere orthogonal,
+i.e. FORMULA ,
+we have a static FORMULA -structure.
+The interpolating, generic, case is called dynamic FORMULA -structure
+or local FORMULA -structure. In the latter case,
+it is possible to have FORMULA  at generic points and either FORMULA  or FORMULA  at special points –
+which, as will shortly become clear, means that the type (the lowest
+form-dimension appearing in the
+corresponding polyform) of one of the pure spinors changes.
+The existence of a static FORMULA -structure implies that the internal manifold has FORMULA -structure
+in the ordinary sense. On the other hand,
+the existence of a dynamic FORMULA -structure
+does not generally impose any further topological constraints beyond the existence of an
+FORMULA -structure in the ordinary sense {{cite:754c675f-9fe6-4b50-9d54-0b919e46d437}}, except if FORMULA  everywhere
+which leads again to FORMULA -structure.
+In the orientifold examples of section REF  of this
+paper, we will be considering structures on nilmanifolds (see appendix
+ for a brief review)
+that are constant in the basis of left-invariant one-forms. In particular, this
+implies that FORMULA  everywhere.
+From the discussion of the previous paragraph, it then follows
+that in these examples the internal manifolds have FORMULA -structure in the ordinary sense.
+This is of course not a surprise, as nilmanifolds are parallelizable and have in fact
+a trivial FORMULA -structure (i.e. their structure group is the identity).
+It follows that in the nilmanifold case there exists a
+complete basis of invariant spinors allowing for an extended supersymmetry ansatz.
+This does not necessarily lead to vacua with extended supersymmetry in four dimensions,
+since the differential equations (REF ) have to be satisfied in addition.
+This observation highlights a point which is a frequent
+source of confusion, and is therefore worth emphasizing:
+the generalized-structure of a
+supergravity solution refers to the spinor ansatz,
+not to the topological FORMULA -structure of the internal manifold.
+
+(Local) FORMULA -structure
+For local and static FORMULA , it will be convenient
+to express the pure spinors in terms of FORMULA -structure quantities.
+Following {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}},
+we introduce a unimodular internal spinor FORMULA  and set
+FORMULA 
+
+
+with FORMULA  and FORMULA .
+Comparing with (REF ) we have
+FORMULA 
+This description is redundant,
+so that we can choose FORMULA  and FORMULA  real and positive and absorb their phases in FORMULA  and FORMULA 
+respectively. We then
+have FORMULA  and FORMULA .
+We can also rotate FORMULA  so that FORMULA , and therefore
+only the phase of FORMULA  has physical meaning.
+Let us define
+FORMULA 
+
+
+where FORMULA . The somewhat asymmetric notation highlights the fact that, except in the case of static FORMULA -structure, FORMULA  and FORMULA 
+are different from the corresponding quantities built from FORMULA :
+FORMULA 
+With these definitions it follows that
+FORMULA 
+
+
+where FORMULA  is the one-form dual to the vector FORMULA .
+The two-form FORMULA  satisfies FORMULA . Moreover
+FORMULA 
+
+
+where
+FORMULA 
+so that FORMULA .
+Another useful expression we will need later on is
+FORMULA 
+With the above definitions we can reexpress the pure spinors (REF ) as follows
+FORMULA 
+
+
+with FORMULA . These relations can be inverted using (REF ).
+We can now see that the type (the lowest form-dimension in a polyform)
+of FORMULA  is in general FORMULA .
+At special points where FORMULA  or FORMULA , it jumps to FORMULA  or FORMULA  respectively.
+
+Orientifolds
+We now come to the study of supersymmetric orientifolds and, in particular, their
+compatibility with the different types of generalized structures defined in the
+previous section. After deriving the action of the orientifold involution on the pure spinors,
+we will argue that the claim of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} can be relaxed, and
+supersymmetric orientifolds can be compatible
+with dynamic FORMULA -structure.
+The orientifold involution
+An orientifold action FORMULA  is a composition of a reflection on the world-sheet
+(denoted by FORMULA )
+exchanging the left-movers with the right-movers,
+and a target-space involution FORMULA  (FORMULA  on bosonic fields) acting
+on the internal manifold. A factor FORMULA , where FORMULA  is the
+fermion number of the left-movers, is sometimes needed to ensure FORMULA 
+on all states including spinors. Whether it appears or not depends on the
+number of FORMULA -eigenvalues of FORMULA , which also determines the dimensionality of
+the orientifold plane. This is the fixed point set of the involution which,
+in our case, fills the four-dimensional space-time.
+In detail, the orientifold projection is given by
+FORMULA 
+
+
+In our conventions the O6 projection does not contain a FORMULA  factor:
+see appendix REF  for more details.
+For the dilaton FORMULA , metric FORMULA  and NSNS three-form FORMULA  to be invariant
+under the total orientifold projection FORMULA , they have to transform under the involution as
+FORMULA 
+For the RR fields we need
+FORMULA 
+
+
+where the action of FORMULA  on forms is defined in (REF ).
+The orientifold is supersymmetric if and only
+if the orientifold operator leaves the total supersymmetry
+generator FORMULA  invariant.
+Since FORMULA  exchanges left- and right-moving supersymmetry generators, we have
+FORMULA 
+
+
+where FORMULA  is responsible for the sign difference between the two
+lines. Note that using (REF ), at the orientifold plane locus we find
+(with suitable orientation conventions) exactly the same formula as eq. (REF ) for D-branes, provided we set
+FORMULA .
+Plugging in the ansatz (REF ),
+we immediately see that FORMULA  is forced by the orientifold action
+to be the same in both lines of (REF ) forbidding an FORMULA  ansatz based on different FORMULA s
+in the two linesAn FORMULA  ansatz based on a doubling of the internal invariant spinors is still possible. See e.g. the example in REF ..
+Furthermore, taking (REF ) into account together
+with the fact that FORMULA  contains an even/odd number of internal FORMULA -matrices
+in IIB/IIA respectively,
+we arrive at the following simple action on the internal supersymmetry generators
+FORMULA 
+
+
+From FORMULA  it follows that for supersymmetric orientifolds,
+just as for supersymmetric D-branes, we should have FORMULA .
+Furthermore, using (REF ), we see that
+FORMULA 
+
+
+which agrees with the conjectured transformations
+of {{cite:80c8c1b0-38a8-4e66-bbd7-94e4a1b13cdf}}, {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}.
+As a consistency check, one can verify that using (REF )
+and (REF ), the equations (REF )
+as well as the Calabi-Yau condition (REF )
+transform covariantly. Finally, one can readily see that the generalized metric induced
+by FORMULA  in the way explained around (REF ), is FORMULA .
+
+Compatibility of dynamic FORMULA -structure with orientifolds
+Let us start with relation (REF )
+and solve for FORMULA  to obtain:
+FORMULA 
+On the other hand, using (REF ) we see that in
+type IIB (REF ) transforms under FORMULA  as
+FORMULA 
+where the upper/lower sign is for FORMULA  and FORMULA  respectively.
+Comparing with (REF ) we find
+FORMULA 
+
+
+By considering this relation at the
+orientifold fixed plane we find that
+FORMULA . Moreover FORMULA  must be
+perpendicular to the FORMULA , along the FORMULA  respectively.
+For FORMULA  and FORMULA  we find that FORMULA  at the fixed plane.
+We conclude that a supersymmetric O3-plane,
+just as a D3-brane, can only exist at
+points where the type is FORMULA . It follows that static FORMULA -structure is incompatible with
+O3-planes.
+Let us now look at IIA, for which (REF ) transforms under FORMULA  as
+FORMULA 
+The upper/lower sign is for FORMULA , FORMULA  respectively.
+Comparing this with the complex conjugate of (REF )
+FORMULA 
+we find
+FORMULA 
+
+
+By considering these relations at the FORMULA  fixed plane,
+we see that we must have FORMULA . It follows that the case of FORMULA  is
+incompatible with strict FORMULA -structure.
+From
+(REF ) and (REF ) we see that
+FORMULA 
+Considering (REF ) and (REF ) on the orientifold plane itself
+we find that the phase FORMULA , defined in (REF ), is completely fixed for O3,O5,O7 and O9.
+This phase is commonly used to classify strict FORMULA  compactifications: FORMULA  is called type B and
+FORMULA  is called type C, and so we see here that this carries over to some extent.
+Moreover, on the O3- and O9-plane we can only have type FORMULA  for the pure spinors FORMULA  and on the O4- and O8-plane only type FORMULA .
+We stress again that off the orientifold plane there are no such restrictions. If we specialize however to e.g. constant structures on nil- or
+solvmanifolds, these properties do carry over to the whole internal manifold.
+We list these properties in table REF .
+TABLE 
+We can explicitly work out the orientifold action in terms of the forms defined in (REF ) in two ways.
+We can either start from (REF ) and definitions (REF ),
+or we can use (REF )
+and (REF ) instead. In both cases we find
+FORMULA 
+
+
+for IIB, and
+FORMULA 
+
+
+for IIA. We can now
+see precisely where the caveat in the
+proof of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} lies: the requirement
+that FORMULA  and FORMULA  should not mix under the orientifold involution is too strong.
+Defining FORMULA 
+and FORMULA  with FORMULA  for IIB,
+FORMULA 
+and FORMULA  with FORMULA  for IIA,
+we find
+FORMULA 
+
+
+This is a rotation, over an angle FORMULA , in the FORMULA -space.
+
+Examples from T-duality
+We will now illustrate the point made in the previous subsection, i.e. that orientifolds can be
+compatible with a dynamic FORMULA -structure, by considering two
+explicit examples obtained by T-duality from known solutions. The first of the two
+has FORMULA  supersymmetry, and is therefore somewhat trivial; the
+second one has FORMULA .
+Example 1
+We start from a compactification on the torus FORMULA  with an FORMULA -plane and
+imaginary self-dual FORMULA  –
+a so-called type B solution –
+and apply two T-dualities, ending up with a nilmanifold. This was first considered
+in {{cite:42829bd3-2c3d-4265-8c23-5c6a5d766a9e}}. The way to obtain a dynamic FORMULA -structure is to
+choose one of the T-duality directions `misaligned'
+with the complex structure. For ease of
+comparison we will start from one of
+the T-dual solutions discussed in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}.
+For a type B or `warped Calabi-Yau' solution we have a strict FORMULA -structure with pure spinors
+following from (REF ) in the limit  FORMULA
+FORMULA 
+where for compatibility with FORMULA -branes
+we must have FORMULA . The supersymmetry conditions read
+(see e.g. {{cite:7058ab30-9c17-426d-a6d3-179541e77144}}, {{cite:e42c2fb4-283d-4753-a562-0c94df02699d}})
+FORMULA 
+
+
+The last condition (together with FORMULA  which follows from the first condition) can be
+rephrased
+as the well-known
+statement that FORMULA  is imaginary (anti-)self-dual: FORMULA .
+We take the following explicit solution for  FORMULA
+FORMULA 
+
+
+which can be obtained by rotating FORMULA  and FORMULA  of the example
+on p. 50 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}
+by an angle FORMULA  in the FORMULA -plane,
+keeping FORMULA  fixed. The vielbeins FORMULA  satisfy FORMULA .
+One can easily verify that this still solves (REF ) for all values of FORMULA .
+We now perform a T-duality in the
+directions FORMULA  and FORMULA .
+The transformation of the vielbein under a T-duality in the direction FORMULA  is given in
+{{cite:364f44f0-8a5e-48f2-81f0-34f9fc6fe246}}
+and reads
+FORMULA 
+with
+FORMULA 
+We can take the gauge choice FORMULA  so that:
+FORMULA 
+
+
+and all other vielbein components remain unchanged.
+From (REF ) we read off that we end up with nilmanifold FORMULA ,
+which is FORMULA  of table 4 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}.
+The T-dual vielbein is FORMULA ,
+FORMULA  and FORMULA  for FORMULA .
+Furthermore, in the flat coordinates corresponding to the T-dual vielbeins, FORMULA 
+remains unchanged while
+FORMULA  undergoes a reflection in the 5 and 6 direction:
+FORMULA 
+Using (REF ) one can easily check that
+this relation corresponds to the action of an O5 orientifold along FORMULA .
+From (REF ) we can read off
+FORMULA 
+
+
+where we assume that FORMULA . For FORMULA  we find static FORMULA -structure while for FORMULA 
+we have strict FORMULA . From (REF ) and (REF ) we find
+FORMULA 
+
+
+Finally, after the two T-dualities the dilaton, NSNS three-form and RR fluxes take the form
+FORMULA 
+
+
+One can verify that this solves the supersymmetry equations (REF ).
+Moreover we find for the source
+FORMULA 
+
+where FORMULA  is the Laplacian constructed from the unwarped metric in FORMULA .
+This has indeed the right sign for an orientifold, as will be argued below in (REF ),
+and indeed corresponds
+to the O5-plane obtained by applying two T-dualities to the original O3-plane.
+The “modulus” FORMULA  appears in the pure spinors, but not in the metric nor in any of the form-fields.
+These non-metric moduli were discussed in some detail in {{cite:2a563436-6d91-4e1a-ba20-7ddc1ec274e6}}. It was shown that for FORMULA -structure
+they are in the vector representation, and were excluded by hand.
+These moduli are signals of extended supersymmetry, indicating that the FORMULA  description is not
+appropriate anymore. Indeed, different
+pure spinors (and thus also different pairs FORMULA  of ordinary spinors)
+are possible for the same background.
+Since the supersymmetry equations () are linear, we can take an arbitrary linear combination
+with independent four-dimensional spinors FORMULA  and thus make an extended supersymmetry ansatz. For  FORMULA
+FORMULA 
+with FORMULA  (and complex conjugates FORMULA  and FORMULA ) generating the four-dimensional supersymmetry.
+As was already noted in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}, the present example does indeed have FORMULA  supersymmetry.
+Explicitly, in the above ansatz we can take
+FORMULA 
+where FORMULA  is the internal spinor generating the FORMULA  and FORMULA  of (REF ).
+The pure spinors built from (REF ),(REF )
+can be obtained by taking FORMULA 
+and FORMULA , with FORMULA  generating the corresponding FORMULA  spinor ansatz.
+Hence the dynamic FORMULA -structure is rather trivial in this example, since the same background
+can be equally well described either
+by a strict FORMULA - or by a static FORMULA -structure. Rather, one should
+use the FORMULA  ansatz (REF ) instead.
+We now turn to our next example, which
+only has FORMULA  supersymmetry.
+
+Example 2
+Let us consider the type IIB example on p. 51 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}, which corresponds to an
+FORMULA  solution on the flat six-torus
+FORMULA . We make the following coordinate transformation:
+FORMULA 
+
+After the above transformation, the metric is no longer diagonal along the
+FORMULA  directions:
+FORMULA 
+
+and the vielbein in these directions is
+FORMULA 
+
+In addition, let us define FORMULA , which should not be confused with the vielbein that
+takes the above non-diagonal form.
+Equation (REF ) is merely a coordinate transformation, so we still have a solution of eqs. (REF ).
+We have in mind to perform two T-dualities along the direction FORMULA  and the transformed direction FORMULA 
+so let us focus on the part of the FORMULA -structure containing FORMULA :
+FORMULA 
+
+with
+FORMULA 
+
+Moreover, after the transformation the
+NSNS three-form FORMULA  takes on the simple form
+FORMULA 
+
+so that with a gauge choice we can set
+FORMULA 
+The action of the two T-dualities on the spinors can be immediately read off
+from eqs. (REF ), (REF ) and is given by
+FORMULA , where FORMULA , and
+FORMULA 
+
+In the above it is understood that FORMULA  is defined using the original vielbein.
+Comparing with (REF ),
+we see that we
+end up with dynamic FORMULA -structure. As before we also have an O5-plane, which
+in this case is along the directions 1 and 6.
+To actually determine the T-dual vielbein and nilmanifold we have to work a little harder.
+Proceeding similarly to the previous example,
+the action of T-duality
+on the vielbein is encoded in the matrices FORMULA , FORMULA , defined
+in (REF ). The T-dual vielbein, FORMULA , is then given by
+FORMULA 
+It follows that
+FORMULA 
+Putting FORMULA  and FORMULA  otherwise, we find,
+after some further relabelling and changing signs,
+the nilmanifold FORMULA  of table 4 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}.
+Concluding, we arrive at the following recipe for constructing
+examples by T-duality. We start from a constant (up to a warp factor)
+type B solution on the torus. Then we perform two T-dualities along, say 5 and 6, where to end up with
+a dynamic FORMULA -structure, we only need to make sure that both FORMULA  and
+FORMULA  are non-zero. This amounts to choosing the T-dual directions “misaligned”
+with the FORMULA -structure. Furthermore we should have FORMULA  since otherwise
+we would end up with a non-geometric T-dual. The resulting nilmanifold then only depends on FORMULA 
+since we find FORMULA  and FORMULA . With two T-dualities we then find
+O5-backgrounds on nilmanifolds from 4.4 in table 4 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} on. Furthermore, it turns out that
+by performing three T-dualities in this way one can only get strict FORMULA -structure.
+
+Integrability in the presence of calibrated sources
+In this section we show that – under certain conditions –
+in a bosonic supersymmetric background
+the Einstein equation as well as the dilaton equation of motion follow
+from setting the supersymmetry variations of the fermions to zero,
+provided the equations of motion and Bianchi identities of all form-fields
+are also imposed and the sources are calibrated. The conditions mentioned are that
+there is a time/space split and that the sources are static,
+without any world-volume electric fields. Moreover, the time/space components
+of the Einstein equation FORMULA  have to be imposed by hand.
+In the absence of sources,
+this was already shown in {{cite:ac81a387-bf08-4a17-98b7-722731625af6}} for IIA and {{cite:7f95dfe3-2797-49cb-9c11-75bde539b790}}
+for IIB, so here we will focus on the contribution of the sources.
+The proof relies on the fact that  the sources are generalized calibrated.
+This follows naturally from the fact that the source
+should preserve the supersymmetry of the background. As we will see, the
+generalization to the case of smeared sources is straightforward.
+For concreteness, let us
+consider a single localized supersymmetric
+D-brane source with world-volume FORMULA  and world-volume
+gauge field FORMULA , such that FORMULA . The
+case of a localized orientifold source can be obtained from the present analysis by
+replacing FORMULA  and setting FORMULA .
+Moreover, since the whole argument depends linearly on
+the sources, it can be readily extended to arbitrary sums of D-branes and orientifolds.
+The action for a localized D-brane source is given by
+FORMULA 
+
+where FORMULA  are the gauge potentials defined above (REF ) and FORMULA  are their magnetic duals.
+At the level of the equations of motion the duality constraint (REF ) will identify both, but at the level
+of the action they should still be considered as differentWe thank Toine Van Proeyen for discussions on this point. This
+subtlety let to a mistake of a factor of 2 in () in the previous version of this paper.. The second term on the right hand side – which contributes to the equations of
+motion and Bianchi identities of the RR-fields – is the easiest to analyse,
+so let us consider that one first.
+To proceed we define a current FORMULA  associated to
+the D-brane FORMULA  such that for any polyform  FORMULA
+FORMULA 
+This current, introduced in this form in {{cite:18344af4-9c68-49ac-9849-e60f6f091dbe}},
+can be thought of as a pure spinor whose annihilator space is the generalized
+tangent bundle FORMULA  associated to FORMULA  {{cite:754c675f-9fe6-4b50-9d54-0b919e46d437}}.
+So we can associate a pure spinor with a single source.
+From FORMULA  it follows that
+FORMULA 
+so FORMULA  defines a generalized cocycle
+in FORMULA -twisted cohomology {{cite:56128534-262e-4e32-ac46-f9b85b762044}}. In the democratic formalism,
+the RR part of the action reads
+FORMULA 
+which immediately leads to the source-corrected equations of motion and Bianchi identities ().
+The first term on the right-hand side of
+(REF ) is more complicated. In fact, without some relation
+between the two terms of the D-brane action, we cannot expect it to give
+an exactly matching contribution to the Einstein and dilaton equations.
+This relation is of course provided by
+the calibration condition, which is equivalent {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}} to the
+requirement that
+the D-brane source should be supersymmetric {{cite:6300193c-3395-4600-aee9-bb5af007b276}}.
+In the conventions of {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}}:
+FORMULA 
+with
+FORMULA 
+Moreover,
+FORMULA 
+Calibration
+To show that a supersymmetric D-brane source is necessarily
+calibrated we proceed along the lines of {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}}.
+We extend that result to a more general setting and show
+that when the D-brane is calibrated the Dirac-Born-Infeld action
+reduces to an integration of the calibration form (appropriately twisted by FORMULA ).
+To make progress we must separate the time coordinate, so that the structure group
+reduces as FORMULA . Note that
+this is a weaker condition than the
+four-dimensional compactification ansatz FORMULA 
+assumed in the other sections of the paper and in {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}}.
+The reason for making this time/space split is that there is a scalar representation in the
+tensor decomposition of the FORMULA  spinor bilinear, while this is not the case for FORMULA 
+bilinears with spinors of the same chirality.
+This allows us to define spinor norms, a prerequisite for the calibration argument which we will review in a moment.
+In particular, the metric takes the form
+FORMULA 
+The supersymmetry parameters decompose as follows
+FORMULA 
+where FORMULA  is the commuting FORMULA  part of the supersymmetry parameters.
+The gamma-matrices decompose accordingly as
+FORMULA 
+with FORMULA  the Pauli matrices, and FORMULA  the 9-dimensional gamma-matrices.
+We will take the latter to be real and symmetric. We
+also need to impose a further condition, namely that FORMULA  splits as
+FORMULA 
+with FORMULA  purely spatial.
+This will be the case if the D-brane configuration is static and there are no
+electric world-volume fields. We note that this excludes some
+interesting supersymmetric configurations such as the BIon {{cite:449cada3-17e9-4b3e-b5ca-89347c81f6c1}}.
+It follows from (REF ) that FORMULA  is symmetric, so that the norms of
+the FORMULA  parts of the two
+supersymmetry generators are equal:
+FORMULA .
+We are now ready to derive a calibration bound for the Dirac-Born-Infeld action
+in a way completely analogous to {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}} (see {{cite:ae311eba-5061-4eb4-a612-18e2ac13d5b0}} for an earlier version).
+We work purely in the spatial part and define
+FORMULA 
+so that
+FORMULA 
+We sandwich both sides between FORMULA  and FORMULA  and insert
+a complete set FORMULA 
+to find
+FORMULA 
+Because FORMULA  the right-hand side
+is in fact a sum of squares,
+while in a supersymmetric configuration only the term with
+FORMULA  survives.
+We have thus arrived at the advertised result that supersymmetric D-branes correspond
+to generalized calibrated D-branes.
+Indeed the Dirac-Born-Infeld part of the action, expanded around the supersymmetric configuration,
+reduces as followsIf in addition one wishes to show that these D-branes minimize
+the action, one would need to show that the remaining part of
+the Dirac-Born-Infeld together with the Chern-Simons term is invariant under deformations. This amounts
+to showing that FORMULA . Upon a FORMULA  split this indeed
+follows from the background supersymmetry equations (REF ).
+For the minimal FORMULA  split we leave the analysis for future work {{cite:f4343e57-a6fb-4f70-a851-92ee025261a3}}.
+FORMULA 
+with
+FORMULA 
+By FORMULA  we mean that the corrections to this calibrated configuration are quadratic in the
+supersymmetry condition (REF ).
+The contribution to the dilaton and Einstein equations of motion can now
+be read off:
+FORMULA 
+
+
+In the above equations we use ten-dimensional notation, but the
+reader should keep in mind that FORMULA  transforms covariantly
+only under time-independent coordinate transformations. Note in particular
+that, as expected for static sources, the mixed time/space components on the
+right-hand side of (REF ) vanish.
+The complete set of equations – including the contribution of the sources – for type II
+supergravity is summarized in appendix .
+So far we have assumed that
+FORMULA  corresponds to a localized source, however the generalization
+to smeared sources is immediate. We simply need to take (REF ) as
+the starting point for the Dirac-Born-Infeld action, in addition to imposing the calibration condition.
+The rest of the proof remains unchanged, whether
+the source is smeared or localized.
+
+Integrability
+Let us now come to the proof that supersymmetry
+implies the dilaton and Einstein equations of motion,
+provided that the form equations of motion and
+Bianchi identities are satisfied.
+In the absence of sources this has already been discussed
+in detail in {{cite:ac81a387-bf08-4a17-98b7-722731625af6}}, {{cite:7f95dfe3-2797-49cb-9c11-75bde539b790}}, so we only need to focus on the
+contribution of the sources.
+As already stressed, the crucial input for the proof to go through
+is that the source terms are calibrated.
+Let us use FORMULA  for the FORMULA -form part of FORMULA .
+After some standard
+(see for example {{cite:ac81a387-bf08-4a17-98b7-722731625af6}})
+gamma-matrix manipulations, taking the gravitino variation
+() as well as
+the identity
+FORMULA 
+into account,
+it follows thatWe have found it
+most convenient to perform the computation in the Einstein frame and then translate
+back to the string frame.
+FORMULA 
+
+where FORMULA  is the Einstein equation without sources and the ellipsis
+denotes terms that vanish under the projection onto the traceless symmetric part,
+which we will apply in a moment.
+To obtain the source term in the equation above, we also made use
+of the following relation, which is a consequence of (),
+FORMULA 
+where
+FORMULA 
+and the ellipsis denotes terms which do not depend on the sources.
+To proceed, we can take the above equation for either FORMULA 
+or FORMULA , make the decomposition (REF ) of the spinor and hit
+on the left with FORMULA  or FORMULA  respectively.
+Next, we project on the traceless and symmetric (in FORMULA  and FORMULA ) part. For FORMULA  and FORMULA  purely spatial
+we can take into account the following useful identity
+FORMULA 
+
+where both sides should be thought of as projected onto the traceless part.
+In this way, we arrive at
+exactly the traceless part of the source-corrected Einstein equation (REF ). Just as
+in the absence of sources (see e.g. {{cite:ac81a387-bf08-4a17-98b7-722731625af6}}, {{cite:7f95dfe3-2797-49cb-9c11-75bde539b790}}),
+the mixed time/space components of the
+Einstein equation FORMULA  have to be imposed by hand. Note that, as remarked below
+(REF ), the mixed time/space components of the source contribution
+vanish identically for static sources.
+The dilaton equation can be treated similarly.
+From the supersymmetry variations () it
+follows that
+FORMULA 
+
+where FORMULA  is the dilaton equation in the absence of sources.
+In the same way as above it correctly reproduces the trace of the source-corrected dilaton
+equation ().
+Equation (REF ) can be arrived at by noting that
+FORMULA 
+where the ellipsis denotes source-independent terms.
+Finally, the trace of the Einstein equation ()
+follows from similar manipulations,
+after using the dilaton equation to substitute for FORMULA .
+
+The equation of motion for  FORMULA
+For a compactification to four-dimensional Minkowski space, only space-time filling sources are allowed.
+Indeed, sources that only partially fill the four-dimensional space-time would break Poincaré symmetry, while
+instantonic sources are not
+allowed in supergravity with Minkowskian signature. Such “forbidden”
+sources would appear
+in the equations of motion of FORMULA . As shown in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} exactly these equations of motion
+follow – without source terms –
+from the integrability of (REF )
+FORMULA 
+where, as in the rest of this paper,
+we assume that there are no NS5-brane sources so that FORMULA .
+The equation of motion for FORMULA  would have as a source the fundamental string which is similarly forbidden.
+Since this equation does not fit very well in the language of generalized geometry, it is harder to show that
+it also follows from supersymmetry. Nevertheless, a (tedious)
+calculation shows that, taking (REF ) into account, supersymmetry implies:
+FORMULA 
+where FORMULA  and FORMULA  are constructed from FORMULA  and FORMULA  respectively as in
+(REF ) and (REF ).
+The calculation is quite similar to the one which shows that
+(REF ) follows from the supersymmetry
+equations.
+The term between the outer brackets on the left-hand side is
+the calibration form for a space-filling NS5-brane.
+The right-hand side then corresponds to its magnetic coupling to FORMULA  and its couplings,
+via a Chern-Simons-like term,
+to the RR-fields. This may be difficult to derive directly from the NS5-brane world-volume
+action, which is rather complicated. It follows from the above that for strict FORMULA -structure and FORMULA ,
+a calibrated NS5-brane is not possible. However setting FORMULA  or FORMULA  (this
+leads to the so-called
+type A solutions, which only have NSNS-flux and
+are common to type IIA, IIB and heterotic theory {{cite:0d8e7a6b-e68b-498c-a6b6-5570b15155c7}}),
+one finds space-filling supersymmetric NS5-branes
+calibrating FORMULA  or FORMULA  respectively. These were studied in {{cite:c4b2ae61-3ddc-40bd-8dca-48391028b2a2}}.
+Taking the exterior derivative of equation (REF ) leads to the
+source-corrected equation of motion for
+the FORMULA -field:
+FORMULA 
+The contribution from the sources vanishes in some
+common cases, like O3- and O5-planes, which may be the reason why it was not noted before.
+We conclude that the equation of motion for FORMULA  is implied by the supersymmetry and
+the Bianchi identities. The proof highlights the fact that the close relationship
+between background supersymmetry conditions and calibrations also holds for NS5-branes.
+
+Conclusions
+We have seen that not only D-brane sources, but also supersymmetric orientifolds can be compatible
+with a dynamic FORMULA -structure. This opens up the possibility
+for the construction of compactification manifolds which are
+highly non-trivial from the generalized-geometry point-of-view.
+Taking the integrability results of this paper into account we can summarize
+the minimal conditions that a supersymmetric vacuum has to obey as in appendix .
+Unfortunately an extensive, although not exhaustive, scan of the nilmanifolds and solvmanifolds
+has produced no explicit examples – except for the ones that are T-dual to the six-torus.
+As in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} we restricted
+to left-invariant structures, i.e. structures that are constant in terms of the left-invariant
+one-forms, and orientifolds whose action takes a simple diagonal form in this basis.
+Our results may be pointing to the fact
+that these genuine generalized-structure backgrounds are very rare.
+Alternatively, it may be
+that nilmanifolds and solvmanifolds are simply not the right class to look for examples,
+or the two simplifying assumptions we made within this class are too restrictive.
+We should keep in mind that
+the authors of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}} only found a few examples of static FORMULA - and strict FORMULA -structure,
+all of them on just two of these manifolds.
+Although the equation of motion for the NSNS three-form does not fit very well in the
+generalized-geometry framework, we were able to show that – for compactifications
+to four-dimensional Minkowski space – it simply follows from the supersymmetry conditions and the
+Bianchi identities. Not having to impose this equation as an extra condition,
+should facilitate mathematical considerations concerning general properties of generalized vacua,
+such as have recently appeared in {{cite:bf7dc232-1118-43e5-91d1-83abd52bdd8e}}. Furthermore we have established that the close connection
+between the supersymmetry conditions of the background and the generalized calibrations
+of supersymmetric probes, extends to the case of the NS5-brane.
+Our integrability results show that the usefulness of generalized calibrations
+extends beyond the probe approximation to fully back-reacting sources. Indeed,
+having precisely these calibrated sources ensures that the source-corrected Einstein and dilaton equations still
+follow from the supersymmetry conditions and the equations for the form fields.
+Since the supersymmetry equations are much easier to analyse than the
+equations of motion, our integrability results open up a host of new possibilities
+for supergravity solutions with (smeared) sources. The potential phenomenological importance
+of such vacua was recently noted in {{cite:afad688a-8951-4c6d-955c-5e10e39a04ff}}.
+Of potential phenomenological importance is also the application of our results
+to FORMULA : five-dimensional AdS space can be thought of (in appropriate coordinates) as
+four-dimensional warped Minkowski space, and therefore the relevant
+strong integrability statement of the present paper applies. In many
+physically interesting setups one would like to consider the addition of back-reacting sources
+to the background, leading to source-modified Bianchi identities.
+In the past several authors have checked on a case-by-case basis
+{{cite:13e9a31d-c099-49e3-bbb2-f4fa0e1a02f7}}, {{cite:3b32ee50-d47a-43ab-9580-559051b21497}}, {{cite:02700071-d331-4fce-aa81-cc4659fac366}}, {{cite:a8fa5d82-de4e-40a6-b73e-98ccb57ca606}} that once a supersymmetric FORMULA  background with
+supersymmetric sources satisfies the
+source-modified Bianchi identities, the source-modified dilaton and Einstein equations follow.
+Thanks to the results of the present paper, we now know that this is in fact a general result.
+The study of four-dimensional AdS vacua from the point-of-view of generalized structure,
+would also be an interesting avenue for future research.
+Finally, it would be interesting to obtain an alternative
+derivation of the calibration form for the space-filling NS5-brane presented here,
+directly from a world-volume analysis. Exploiting the connection between bulk supersymmetry
+and calibrated probes, may lead to a better handle on
+the complicated world-volume action for the NS5-brane.
+P.K. wishes to thank Jerome Gauntlett and Toine Van Proeyen for discussions. We are also grateful to
+Luca Martucci for useful remarks and proofreading,
+and to Fernando Marchesano for making his latest paper available to us before publication.
+
+Notation, conventions and useful formulae
+In this appendix we explain in more
+detail our conventions and notation, and we summarize
+several useful technical points referred to in the main text.
+General
+Let FORMULA  be the operator that reverses all the indices of a (poly)form
+FORMULA 
+The Mukai pairing between polyforms is defined as
+FORMULA 
+where we select the top form.
+The FORMULA  tensor is given by FORMULA . We define
+the Hodge dual of a form as follows
+FORMULA 
+and the contraction of a top form (or the top form part of a polyform) with the FORMULA -tensor
+FORMULA 
+We introduce the following notation for
+the contraction of a (poly)form with gamma matrices:
+FORMULA 
+For any form FORMULA  we have FORMULA  and in particular for the RR fields, using (REF ),
+FORMULA .
+Throughout the text we will use the above definitions for both the total ten-dimensional space-time FORMULA ,
+as, mutatis mutandis, for the internal manifold six-dimensional FORMULA .
+
+Spinors, ordinary & generalized
+Ordinary spinors
+With the compactification ansatz (REF ), the
+ten-dimensional FORMULA -matrices decompose accordingly as
+FORMULA 
+with FORMULA  four-dimensional and FORMULA  six-dimensional gamma-matrices, and
+FORMULA 
+the corresponding four-dimensional and six-dimensional chirality operators. The ten-dimensional
+chirality operator reads
+FORMULA 
+We impose the following Majorana condition in ten dimensions
+FORMULA 
+with FORMULA , where FORMULA  and FORMULA  are used to impose the Majorana conditions in four
+and ten dimensions
+FORMULA 
+and satisfy the defining relations
+FORMULA 
+
+
+It also follows,
+as required for consistency, that FORMULA .
+Note that this consistency condition
+does not allow for other choices of signs in (REF ). From (REF )
+we find
+FORMULA 
+and, as again required for consistency,
+FORMULA .
+Note that if we define the usual charge conjugation matrix FORMULA  by
+FORMULA 
+and setting in addition FORMULA , we see that (REF ) can be
+cast in more standard form FORMULA .
+In ten dimensions there is another choice
+for the matrix imposing the Majorana condition,
+namely FORMULA . This would lead to the introduction of
+the operator FORMULA  for the FORMULA , as seems to be the usual convention. We will not make this choice
+here as it would not be compatible with our
+spinor ansatz (REF ) for type IIA without some inconvenient sign changes.
+A reflection in the FORMULA th internal direction is generated on spinors by
+FORMULA 
+and with the above reality condition (REF )
+it converts Majorana spinors into Majorana spinors.
+We note that FORMULA 
+and FORMULA , so that if FORMULA  contains FORMULA  internal reflections
+we have on spinors
+FORMULA 
+If FORMULA  we need to compensate in the orientifold projection with a factor of FORMULA ,
+resulting in the choices of (REF ).
+
+Generalized spinors
+A generalized vector FORMULA  acts on
+a polyform FORMULA  as
+FORMULA 
+Because this action satisfies FORMULA ,
+with the natural FORMULA -signature metric defined as
+FORMULA 
+it makes FORMULA  into a Clifford algebra and FORMULA  into an FORMULA -spinor.
+Two compatible pure spinors FORMULA  define a generalized metric FORMULA  (with FORMULA  an ordinary metric and FORMULA  a 2-form)
+as follows. First we define the null spaces FORMULA  of FORMULA  and FORMULA  respectively,
+i.e. FORMULA  if and only if FORMULA  and analogously for FORMULA , and their
+complex conjugates FORMULA . Next we can define the spaces
+FORMULA 
+It is possible to show that the elements of FORMULA  and FORMULA  have the form
+FORMULA 
+with FORMULA . It is then easy to extract the sought for generalized metric FORMULA .
+For the pure spinors defined from spinor bilinears as in (REF ), we find FORMULA .
+In fact, in this picture the 2-form FORMULA  is completely absorbed in FORMULA  in (REF ).
+The vectors of FORMULA  act as FORMULA  gamma-matrices on the left, while those of FORMULA  act on the right.
+By making a FORMULA -transform on these pure spinors, FORMULA  with FORMULA ,
+it is possible to switch to an alternative picture where FORMULA  in (REF ), while its information is completely contained
+in the generalized metric FORMULA . We will not use the latter picture in this paper, because FORMULA  is generically
+not globally defined, so that one needs to allow gauge transformations between local patches.
+A number of useful properties of the spinor bilinears defined in (REF )
+follow from the Fierz identity
+FORMULA 
+Note the reversal of the indices and the appearance of the factor 8 from tracing over the spinor
+representation. Taking FORMULA  we find
+that (REF ) can be explicitly expanded as follows
+FORMULA 
+Taking instead FORMULA  to be
+FORMULA 
+
+
+respectively, we find
+FORMULA 
+
+
+As a companion to (REF ) one can also define
+FORMULA 
+and show the following – which will be useful in demonstrating the equation of motion for FORMULA  –
+FORMULA 
+
+
+for any (poly)form FORMULA .
+Furthermore, FORMULA  satisfy
+FORMULA 
+so that the generalized Calabi-Yau property
+FORMULA 
+is automatically obeyed
+for FORMULA -spinors created as spinor bilinears. They are also automatically
+pure and compatible.
+In addition,
+they satisfy the following duality properties
+FORMULA 
+Finally, using (REF ) it is straightforward to show the following reality properties
+FORMULA 
+
+Type II supergravity
+The bosonic content of type II supergravity consists of a metric FORMULA , a dilaton FORMULA , an NSNS three-form FORMULA  and RR-fields
+FORMULA . In the democratic formalism of {{cite:a3f02741-c838-4d10-9596-edfa8703f9ff}}, with double the number
+of RR-fields, FORMULA  runs over FORMULA  in IIA and over FORMULA  in type IIB. In this paper FORMULA  will always indicate
+the dimension of the RR-fields; for example FORMULA  stands for FORMULA  in type IIA and FORMULA  in type IIB.
+After deriving the equations of motion from the action the redundant RR-fields can then be removed by hand
+by means of the duality condition
+FORMULA 
+As in the above equation we will often collectively denote the RR-fields with the polyform FORMULA . We also have doubled
+the RR-potentials, collectively denoted by FORMULA . In addition they
+satisfy FORMULA .In the type IIA case with non-zero Romans mass parameter FORMULA  the
+potentials are in fact defined by FORMULA . In particular FORMULA . Also the Chern-Simons term
+in the D-brane action has to be
+adjusted accordingly. One can check that this does not change the analysis of this paper.
+Taking the compactification ansatz (REF ) into account,
+the duality relation translates into
+FORMULA 
+The fermionic content consists
+of a doublet of gravitino's FORMULA  and a doublet of dilatino's FORMULA .
+The components of the doublet are of different chirality
+in type IIA and of the same chirality in type IIB.
+The supersymmetry variation of the gravitino and dilatino doublet are given by
+FORMULA 
+
+
+with
+FORMULA 
+The Einstein equation (in the string frame),
+its trace, and the dilaton equation of motion,
+including the contribution from the `Dirac-Born-Infeld' part of the calibrated sources, D-branes and orientifolds,
+read
+FORMULA 
+
+
+with FORMULA .
+Finally, the Bianchi identities and equations of motion
+for the RR-fields, including the contribution from the `Chern-Simons' terms of the sources,
+take the form
+FORMULA 
+
+
+and the equation of motion for  FORMULA
+FORMULA 
+Note that the last term in the above equation comes from the Dirac-Born-Infeld term of the sources, while a careful analysis reveals that the
+Chern-Simons contribution cancels with a contribution from the RR part of the bulk action upon using ().
+
+Conditions for FORMULA  compactifications to  FORMULA
+We collect here the complete conditions for an FORMULA 
+four-dimensional Minkowski background. The latter is described
+by two complex polyforms FORMULA ,
+whereas the (smeared or localized) sources are given by a real polyform FORMULA . Considered as spinors of the 12-dimensional
+space FORMULA , FORMULA  and FORMULA  must be pure
+i.e. their annihilator space must be maximal
+(six-dimensional in the present case).
+Every FORMULA  spinor and thus also FORMULA  can be written as a sum of pure spinors.
+For each term the purity means that, roughly-speaking, it can be written as FORMULA 
+with the FORMULA -form FORMULA  decomposable in one-forms – so that it can be interpreted as a single
+D-brane or orientifold source. From a microscopic point of view one should require supersymmetry
+for each of the sources, and thus the calibration constraints () for each individual
+term.
+The pure spinors FORMULA  and FORMULA  must satisfy
+FORMULA 
+
+
+See the discussion around (REF ) for the prescription for finding the metric FORMULA 
+associated with both pure spinors. Note that one has to explicitly check
+the positive-definiteness of this metric.
+It follows from these conditions that the two (almost) generalized complex structures associated to
+FORMULA  and FORMULA  are commuting and the structure is FORMULA .
+These conditions, as well as
+the condition of purity, are automatically satisfied in the case where FORMULA 
+and FORMULA  are constructed from spinor bilinears as in (REF ).
+The calibration conditions for each D-brane and orientifold plane (for the latter FORMULA ) read
+FORMULA 
+
+
+As shown in {{cite:5506d3c1-356f-4f98-a5f0-7f73bd4d4c57}}, {{cite:a0f3a16f-1500-4916-a752-78524dbe951e}}, for a localized D-brane source,
+the calibration conditions are equivalent to the statement
+that the source preserves the background supersymmetry (REF ). In addition,
+they imply the equations of motion for the D-brane world-volume fields, provided one takes () into account.
+In fact, supersymmetry will lead to the same equations also for smeared sources,
+and then our argument that the supersymmetry conditions together with the form equations imply the
+source-corrected Einstein and dilation equations holds regardless of whether the source is localized or smeared.
+In addition, the differential supersymmetry conditions read:
+FORMULA 
+
+
+Finally we have the Bianchi identities for the form-fields:
+FORMULA 
+
+
+As shown in {{cite:ee881770-4ff1-4f65-be3b-a19e127b9f40}},
+conditions () guarantee that the supersymmetry variation of
+the gravitino and dilatino () vanish,
+so the background is supersymmetric. They also imply the equations of motion
+for FORMULA  and FORMULA  following section .
+Moreover, as shown in section , conditions ()
+together with the Bianchi identities () imply
+that the Einstein equation and the dilaton equation of motion are satisfied –
+even in the presence of sources – provided that the sources
+satisfy the calibration conditions
+().
+As shown in {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}},
+equation () together with the Bianchi identities
+leads directly to the no-go theorem.
+Indeed, suppose that all FORMULA  and non-zero fluxes then
+FORMULA 
+It follows that at least one FORMULA , so we must have at least one orientifold.
+
+Nilmanifolds
+A nilmanifold has a basis of globally defined one-forms FORMULA , called left-invariant
+one-forms, satisfying the Maurer-Cartan
+relation
+FORMULA 
+where FORMULA  are the structure constants of the underlying nilpotent Lie-algebra.
+The one-forms FORMULA  are not necessarily a vielbein, although a simple
+choice for the vielbein FORMULA  (and corresponding metric) could indeed be (a warping of) FORMULA .
+One can always make a nilmanifold compact
+by dividing by a discrete group FORMULA . Moreover, when restricting to left-invariant structures,
+i.e. structures with constant coefficients in the basis
+of the left-invariant one-forms, the analysis does not depend on the choice of FORMULA .
+For a nilpotent algebra, there is always a choice of FORMULA s
+such that FORMULA  is integer and non-zero only if FORMULA . With such a choice,
+notation such as FORMULA  stands for a nilmanifold with FORMULA ,
+FORMULA , and all other FORMULA  zero (this is the Iwasawa manifold).
+There are 34 isomorphism classes of six-dimensional, simply-connected, nilpotent Lie-groups, for which in
+the present paper we use the
+numbering of table 4 of {{cite:9cba5b0c-aa05-48fc-99a7-529d5a2b8cc3}}.
+In the physics literature (compactified) nilmanifolds are also
+called twisted tori, because they can be regarded as iterated torus bundles.

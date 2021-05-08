@@ -1,0 +1,562 @@
+
+On the Entropy Function and the Attractor Mechanism for
+Spherically Symmetric Extremal Black Holes
+Rong-Gen Caie-mail address:
+cairg@itp.ac.cn
+
+Institute of Theoretical Physics, Chinese
+Academy of Sciences, P.O. Box 2735, Beijing 100080, China
+Li-Ming Caoe-mail address:
+caolm@itp.ac.cn
+Institute of Theoretical Physics, Chinese
+Academy of Sciences,
+P.O. Box 2735, Beijing 100080, China
+Graduate School of the Chinese Academy of Sciences, Beijing 100039, China
+In this paper we elaborate on the relation between the entropy
+formula of Wald and the “entropy function" method proposed by A.
+Sen. For spherically symmetric extremal black holes, it is shown
+that the expression of extremal black hole entropy given by A. Sen
+can be derived from the general entropy definition of Wald, without
+help of the treatment of rescaling the FORMULA  part of near horizon
+geometry of extremal black holes. In our procedure, we only require
+that the surface gravity approaches to zero, and it is easy to
+understand the Legendre transformation of FORMULA , the integration of
+Lagrangian density on the horizon, with respect to the electric
+charges. Since the Noether charge form can be defined in an
+“off-shell" form, we define a corresponding entropy function, with
+which one can discuss the attractor mechanism for extremal black
+holes with scalar fields.
+
+Introduction
+The attractor mechanism for extremal black holes has been studied
+extensively in the past few years in supergravity theory and
+superstring theory. It was initiated in the context supersymmetric
+BPS black holes {{cite:20e7f8a0-364d-454f-8028-b62c93d2e7e6}}, {{cite:db5c6b88-a4e7-49a4-9ef5-cd57af505e50}}, {{cite:52e8a45b-ae56-464d-b65b-7fde4ed4f433}}, {{cite:2e36e81c-8b61-4751-9253-bf3d107b0076}}, {{cite:98af05c7-946c-48f0-81de-fbdf11e3af28}}, {{cite:7f5ed372-aeef-4f56-95e5-ad58148ca2a6}} and generalized
+to more general cases, such as supersymmetric black holes with
+higher order corrections {{cite:657126ed-f66e-4c9b-aec9-f1231876d923}}, {{cite:d0938251-1def-4263-8a40-34e367ebd213}}, {{cite:7f74e119-5854-4480-9656-bccdde4808f8}}, {{cite:91b99187-262f-4d1d-9362-b31ae49e0383}} and
+non-supersymmetric attractors {{cite:2e8169e2-2b57-4228-aa63-f07c1eb9cd84}}, {{cite:a2e61e25-2b24-4777-a0b4-2a9500b1c97d}}, {{cite:4257a4a7-1acb-46a3-8f84-8968d2ed92a2}}, {{cite:0c1cb97f-74b0-4150-8c4c-c0373fc7e480}}, {{cite:e9869834-5e25-41fe-bff9-bd2bc0ec88fb}}.
+Recently, A. Sen has proposed a so-called “entropy function”
+method for calculating the entropy of FORMULA -dimensional extremal black
+holes, where the extremal black holes are defined to be the
+space-times which have the near horizon geometry FORMULA  and corresponding isometry {{cite:e649e42d-c802-4496-a85b-2dd5193d9895}}, {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}, {{cite:40174021-b050-404c-882f-397d2e1a8032}}.
+It states that the entropy of such kind of extremal black holes can
+be obtained by extremizing the “entropy function” with respect to
+some moduli on the horizon, where the entropy function is defined as
+FORMULA  times the Legendre transformation ( with respect to the
+electric charges ) of the integration of the Lagrangian over the
+spherical coordinates on the horizon in the near horizon field
+configurations. This method does not depend upon supersymmetry and
+has been applied or generalized to many solutions in supergravity
+theory, such as extremal black objects in higher dimensions,
+rotating extremal black holes, various non-supersymmetric extremal
+black objects and even near-extremal black holes {{cite:a4c04f00-6140-41e4-9f04-a50cb97e6553}}, {{cite:24755bdc-e50e-4a24-b2f7-9803e3339f2a}}, {{cite:4dde4f57-24f8-4413-9c08-d348814ee288}}, {{cite:fa41fd79-39bf-4eeb-970a-88813ecd9e86}}, {{cite:63ab733e-dc4f-4e05-b3d8-b674f17d4041}}, {{cite:bb2e0638-4ace-491a-8bc2-62a149d0b0f7}}, {{cite:1362ff05-6172-40ed-9c78-68f4878fcb7c}}, {{cite:5972b1db-3a5e-43e0-9d22-913892ee161f}}, {{cite:548851c8-29d8-47c0-9bcd-90036a51da6b}}, {{cite:1fbc20d8-8b55-4c0f-8b26-49e00ec796f8}}, {{cite:574e60ed-b683-44d2-895e-e4b0e31cf97b}}, {{cite:23ba34a5-90b3-46d2-bf41-251486eb133a}}, {{cite:44c7d407-f106-4241-8364-f06dc7017a3a}}, {{cite:2e041365-c573-419a-94ca-8607480a2b11}}, {{cite:eba36dbd-26ef-4bdb-8dfd-8cd7439143fb}}, {{cite:b8410051-310f-4dc4-999f-f1018af8008d}}, {{cite:3a595499-b166-4e60-9786-2071a5208cd1}}, {{cite:4e8a561d-ecb0-43dc-9ede-c0c4e3a5e5e6}}, {{cite:bee16f0a-80cf-4609-ad0f-4b9a3175f401}}, {{cite:6c22f4ef-bd42-43f7-bfcd-681e25e00efe}}, {{cite:d39a5bd8-d7b0-4bc8-be49-b7a4bef30864}}, {{cite:2cbd64aa-13ff-4520-a6fe-cc9b2ee279e2}}.
+In general, for spherically symmetric extremal black holes in a
+theory with Lagrangian FORMULA , the near horizon geometry of these black holes has
+the form FORMULA   {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}. Due to
+FORMULA  isometry of this geometry, the field
+configuration have the form as follows: The metric can be written
+down as
+FORMULA 
+where FORMULA  are constants which stand for the sizes of FORMULA 
+and FORMULA . Some other dynamical fields such as the scalar fields
+and FORMULA  gauge fields are also taken to be constant: FORMULA 
+and FORMULA . The magnetic-type fields are also fixed
+with magnetic-charges FORMULA . Then, for this configuration, defining
+FORMULA 
+where the integration is taken on the horizon, and FORMULA  are angle coordinates of FORMULA , those constant moduli
+can be fixed via the equations of motion
+FORMULA 
+where FORMULA  are electrical-like charges for FORMULA  gauge fields
+FORMULA . To relate the entropy of the black holes to these
+definitions, one defines FORMULA  as (REF ) with the
+Riemann tensor part in FORMULA  multiplied by a factor
+FORMULA , and then one finds a relation between FORMULA  and
+the Wald formula for spherically symmetric black holes {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}:
+FORMULA .
+Consider the structure of the Lagrangian, one can find
+FORMULA 
+When the equations of motion are satisfied, the entropy of black
+holes turns out to be FORMULA .
+Therefore, one can
+introduce the “entropy function" for the extremal black holes
+FORMULA 
+which is obtained by carrying an integral of the Lagrangian density
+over FORMULA  and then taking the Legendre transformation with
+respect to the electric fields FORMULA . For fixed electric changes
+FORMULA  and magnetic charges FORMULA , these fields FORMULA  and FORMULA  and
+FORMULA  are determined by extremizing the entropy function with
+respect to the variables FORMULA  and FORMULA  and FORMULA . And then the
+entropy of the extremal black holes is given by the extremum
+of the entropy function by substituting the values of FORMULA ,
+FORMULA  and FORMULA  back into the entropy function. In addition, let us
+notice that if the moduli fields FORMULA  are only dependent of the
+charges FORMULA  and FORMULA , the attractor mechanism is then manifested,
+and the entropy is a topological quantity.
+This is a very simple and powerful method for calculating the
+entropy of such kind of extremal black holes. In particular, one can
+easily find the corrections to the entropy due to the higher
+derivative terms in the effective action. However, we notice that
+this method is established in a fixed coordinate system (REF ).
+If one uses another set of coordinates for the FORMULA  part, instead
+of the coordinates FORMULA , it seems that one can not
+define an entropy function as (REF ) because the
+function FORMULA  is not invariant under the coordinate transformation.
+In addition, the reason that to get the entropy of black holes, one
+should do the Legendre transformation with respect to the electric
+charges, but not include magnetic charges seems unclear in this
+procedure. Some authors have pointed out that the entropy function
+FORMULA  resulting from this Legendre transformation of the
+function FORMULA  with respect to electric charges transforms as a
+function under the electric-magnetic dual, while the function FORMULA 
+does not {{cite:4e8a561d-ecb0-43dc-9ede-c0c4e3a5e5e6}}. But it is not easy to understand the Legendre
+transformation with respect to the angular-momentum FORMULA  in the
+rotating attractor cases {{cite:44c7d407-f106-4241-8364-f06dc7017a3a}}. There might be a more general
+formalism for the entropy function, and the Legendre transformation
+can be naturally understood in this frame. In this paper, we will
+elaborate these issues in the “entropy function" method and show
+that a general formalism of the “entropy function" method can be
+extracted from the black hole entropy definition due to Wald et
+al. {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}, {{cite:46deb468-3c19-4f35-b5f0-89666668b13c}}, {{cite:7944b256-38d4-47bc-8751-d0735e46817e}}. In this procedure, we only require
+that the surface gravity of the black hole approaches to zero. Our
+entropy expression will reduce to the expression of A. Sen if we
+choose the same coordinates as in {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}.
+The extremal black holes are different objects from the non-extremal
+ones due to different topological structures in Euclidean
+sector {{cite:95de2676-d3f4-499a-a92a-27bf4f229823}}, {{cite:cec684ca-990c-47c7-9941-4e4cf28844cd}}, {{cite:a381c4b4-62f0-4fa6-a0e1-bc6e7debf0b5}}. The extremal black hole has
+vanishing surface gravity and has no bifurcation surface, so the
+Noether charge method of Wald can not be directly used {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}.
+Thus, in this paper we regard the extremal black holes as the
+extremal limit of non-extremal black holes as in {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}, {{cite:26602c3d-a8e1-4b0f-9d69-e6ca217f361c}}. That is, we will first consider non-extremal black holes
+and then take the extremal limit. In this sense, the definitions of
+Wald are applicable.
+The paper is organized as follows. In section II, we make a brief
+review on the entropy definition of Wald and give the required
+formulas. In section III, we give the near horizon analysis for the
+extremal black holes and derive the general form of the entropy. In
+section IV, we define the entropy function and discuss the attractor
+mechanism for the black holes with various moduli fields. The
+conclusion and discussion are given in section V.
+
+The Definition of Wald
+In differential covariant theories of gravity, Wald showed that the
+entropy of a black hole is a kind of Noether charge {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}, {{cite:46deb468-3c19-4f35-b5f0-89666668b13c}}. In this paper, we will use the Wald's method to define the
+entropy functions for spherically symmetric black holes. Assume the
+differential covariant Lagrangian of FORMULA -dimensional space-times
+FORMULA  is
+FORMULA 
+where we have put the Lagrangian in the form of differential form
+and FORMULA  is the volume element.
+FORMULA  is Riemann tensor (since we are mainly concerning with
+extremal black holes, therefore we need not consider the covariant
+derivative of the Riemann tensor). FORMULA , FORMULA  are
+scalar fields, FORMULA , FORMULA  are FORMULA  gauge
+potentials, and the corresponding gauge fields are
+FORMULA . We will not consider
+the Chern-Simons term as {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}.
+The variation of the Lagrange density FORMULA  can be written as
+FORMULA 
+where FORMULA  is an
+FORMULA -form, which is called symplectic potential form, and
+it is a local linear function of field variation (we have denoted
+the dynamical fields as FORMULA ).
+FORMULA  corresponds to the equations of motion for the
+metric and other fields. Let FORMULA  be any smooth vector field on the
+space-time manifold, then one can define a Noether current
+form as
+FORMULA 
+where FORMULA  means the inner product of a vector field with a
+differential form, while FORMULA  denotes the Lie
+derivative for the dynamical fields. A standard calculation gives
+FORMULA 
+It implies that FORMULA  is closed when the equations of
+motion are satisfied. This indicates that there is a locally
+constructed FORMULA -form FORMULA  such that, whenever
+FORMULA  satisfy the equations of motion, we have
+FORMULA 
+In fact, the Noether charge form FORMULA  can be
+defined in the so-called “off shell" form so that the Noether
+current FORMULA -form can be written as {{cite:7944b256-38d4-47bc-8751-d0735e46817e}}
+FORMULA 
+where FORMULA  is locally constructed out of the dynamical
+fields in a covariant manner. When the equations of motion hold,
+FORMULA  vanishes. For general stationary black holes, Wald
+has shown that the entropy of the black holes is a Noether
+charge {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}, and may be expressed as
+FORMULA 
+here FORMULA  be the Killing field which vanishes on the bifurcation
+surface of the black hole. It should be noted that the Killing
+vector field has been normalized here so that the surface gravity
+equals to “1". Furthermore, it was shown in {{cite:46deb468-3c19-4f35-b5f0-89666668b13c}} that the
+entropy can also be put into a form
+FORMULA 
+where FORMULA  is the binormal to the
+bifurcation surface FORMULA , while FORMULA  is the
+functional derivative of the Lagrangian with respect to the Riemann
+tensor with metric held fixed. This formula is purely geometric and
+does not include the surface gravity term. In this paper, since we
+will treat a limit procedure with surface gravity approaching to
+zero, we will not normalize the Killing vector such that the surface
+gravity equal to one. So we use the formula (REF ) to
+define the entropy of black holes as in {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}, {{cite:26602c3d-a8e1-4b0f-9d69-e6ca217f361c}}.
+For an asymptotically flat, static spherically symmetric black hole,
+one can simply choose FORMULA .
+For the Lagrangian as (REF ), we have
+FORMULA 
+where
+FORMULA 
+FORMULA 
+FORMULA 
+are the equations of motion for the FORMULA  gauge fields, the scalar
+fields and the metric FORMULA , respectively. The symplectic
+potential form has the form
+FORMULA 
+Let FORMULA  be an arbitrary vector field on the space-time, The Lie
+derivative of FORMULA  on the fields are
+FORMULA 
+Substituting these Lie derivatives into the symplectic potential
+form, we find
+FORMULA 
+Then, we have
+FORMULA 
+The first line in the above equation will give the Noether charge
+form, while the second line together with the terms in FORMULA  in Eq. (REF ) will give the constraint
+which corresponds to the equations of motion for the metric. For
+example, the first term in the second line combined with scalar
+fields terms in FORMULA  will give the energy-momentum
+tensor for scalar fields. Similarly the second term in the second
+line will enter the energy-momentum tensor for the FORMULA  gauge
+fields in the equations of motion for the metric. The last line in
+the above equation will give the constraint which corresponds to the
+equations of motion for the FORMULA  gauge fields. Thus, we find
+FORMULA 
+where
+FORMULA 
+with
+FORMULA 
+FORMULA 
+The FORMULA  terms are not important for our following
+discussion, so we brutally drop them at first. We will give a
+discussion at the end of the next section for these additional
+terms. Especially, the constraint for the FORMULA  gauge fields is
+simply
+FORMULA 
+The term FORMULA  in the FORMULA  was not discussed
+explicitly in the earlier works of Wald et al. {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}, {{cite:46deb468-3c19-4f35-b5f0-89666668b13c}}, {{cite:7944b256-38d4-47bc-8751-d0735e46817e}}. This is because that the killing vector vanishes on
+the bifurcation surface and the dynamical fields are assumed to be
+smooth on the bifurcation surface. However, in general, the FORMULA 
+gauge fields are singular on the bifurcation surface, so one have to
+do a gauge transformation, FORMULA ,
+such that the FORMULA  are vanished on this surface, and then
+FORMULA . This gauge transformation will modify the data of
+gauge potential at infinity and an additional potential-charge term
+FORMULA  into the dynamics of the charged black holes from
+infinity, where FORMULA  is the electrostatic
+potential on the horizon of the charged black hole and FORMULA  is the
+electric charge {{cite:497fa8f6-88f6-4303-851a-f1d257b19b54}}. Another treatment is: We only require
+the smoothness of the gauge potential projecting on the bifurcation
+surface, i.e., FORMULA  instead of the gauge potential itself, so
+FORMULA  will generally not vanish on the bifurcation surface,
+and then FORMULA  is introduced into the law
+of black hole without help of gauge transformation {{cite:cabdd4af-fb56-4ff1-85fd-c0080b904db7}}.
+Similarly, in the next sections of this paper we only require that
+the projection of the gauge potential on the bifurcation surface is
+smooth. Since our final result will not depend on the gauge
+potential, the gauge transformation mentioned above will not effect
+our discussion. One can do such gauge transformation if necessary.
+In this paper, however, we will merely use the explicit form of the
+Noether charge FORMULA -form and we will not discuss the first law.
+Certainly, it is interesting to give a general discussion on the
+thermodynamics of these black holes. The relevant discussion can be
+found in a recent paper {{cite:0125d160-3117-40e7-8d57-b61802ac3a6b}}.
+
+Entropy of extremal black holes
+In this section, we will use the formulas above to give the general
+entropy function for static spherically symmetric extremal black
+holes. Assume that the metric for these black holes is of the form
+FORMULA 
+where FORMULA  are functions of radial coordinate FORMULA , and
+FORMULA  is the line element for the FORMULA -dimensional
+sphere. The horizon FORMULA  corresponds to FORMULA . If the
+equations of motion are satisfied, the constraint FORMULA ,
+and we have
+FORMULA 
+Consider a near horizon region ranged from FORMULA  to FORMULA ,
+we have
+FORMULA 
+If FORMULA  is a Killing vector, then FORMULA , and
+FORMULA 
+Thus we arrive at
+FORMULA 
+Taking FORMULA , (since we consider the asymptotically flat
+space-time, FORMULA  has the property FORMULA , such that FORMULA  has a unit norm at infinity.), we
+have FORMULA , and
+FORMULA 
+where we have defined a function  FORMULA
+FORMULA 
+Note that the FORMULA  terms in the right hand side of Eq.
+(REF ) can be written as
+FORMULA 
+where FORMULA , FORMULA , and the FORMULA  electrical-like charges are defined
+to be
+FORMULA 
+They do not change with the radii FORMULA . This is ensured by the
+Gaussian law. Note that there is an integration on the sphere part
+in (REF ), therefore the only FORMULA  in FORMULA  is
+relevant, so that we can simply write FORMULA  as
+FORMULA . Considering
+FORMULA  we
+have
+FORMULA 
+Substituting this result into the definition of the electric
+charges, we find
+FORMULA 
+Here FORMULA  will be defined below in Eq.
+(REF ). The last term in the right hand side of Eq.
+(REF ) can be written as
+FORMULA 
+where
+FORMULA 
+Thus we arrive at
+FORMULA 
+up to the leading order of FORMULA . Substituting Eqs.
+(REF ), (REF ) and (REF ) into Eq.
+(REF ), we get
+FORMULA 
+Considering the limit FORMULA , we find
+FORMULA 
+So far, we have not specialized to extremal black holes; therefore,
+the above results hold for general non-extremal black holes. For the
+extremal black holes limit with FORMULA , while
+FORMULA , from (REF ) we have
+FORMULA 
+Since we view the extremal black holes as the extremal limit of
+non-extremal black holes, the entropy formula of Wald is applicable
+for the extremal black holes. Note that FORMULA  is nothing but the
+integration in Eq. (REF ) without the FORMULA  factor.
+Thus, the entropy of the extremal black holes can be expressed as
+FORMULA 
+This is one of main results in this paper. It is easy to see that
+this entropy form is very similar to the one in the “entropy
+function" method of A. Sen. But some remarks are in order:
+(i). We have not stressed that the extremal black holes have
+the near horizon geometry FORMULA  as in {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}} although the vanishing surface gravity and the metric
+assumption (REF ) may coincide with the definition
+through the near horizon geometry. However, let us notice that some
+extremal black holes have near horizon geometries of the form
+FORMULA  products some compact manifold FORMULA . In our procedure, the
+near horizon geometry is not necessary to be FORMULA 
+and the only requirement is to have vanishing surface gravity.
+Therefore our procedure can be used to discuss that kind of extremal
+black holes whose near horizon geometry is of the form FORMULA  by simply modifying the metric assumption
+in Eq.(REF ).
+(ii). Our result is explicitly invariant under coordinate
+transformation, and this can be easily seen from the above process.
+We have not used the treatment method Eq.(REF ) employed by A.
+Sen.
+(iii). The Legendre transformation with respect to the
+electric charges appears naturally in this procedure, while the
+Legendre transformation with respect to the magnetic charges does
+not appear.
+(iv). If we choose a set of coordinates as the one
+in {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}, our expression for the entropy is exactly same
+as the one given by A. Sen. This can be seen as follows. In the
+extremal limit FORMULA , we can rewrite the metric near the
+horizon as
+FORMULA 
+Redefine the coordinates as
+FORMULA 
+Then, the near horizon metric can be further rewritten as
+FORMULA 
+The components of gauge fields FORMULA  and FORMULA  are
+dependent of coordinates, in this new set of coordinates they are
+FORMULA 
+FORMULA 
+where
+FORMULA 
+Since the entropy is invariant under the coordinate transformation,
+we find in these coordinates like FORMULA ,
+FORMULA 
+This is nothing but the entropy formula given by A. Sen for extremal
+black holes. Since the factor FORMULA 
+in (REF ) disappears in this new set of coordinates, the entropy
+formula becomes more simple and good look. This is an advantage of
+this set of coordinates. But we would like to stress that the
+entropy expression with the factor FORMULA  makes it
+invariant under coordinate transformation.
+(v). Finally the function FORMULA  is evaluated for
+the solution of the equations of motion, i.e. all the fields:
+FORMULA  are on shell. For example, if the
+near horizon geometry has the form
+FORMULA 
+and the equations of motion are satisfied, then we can express the
+entropy in the form (REF ). There FORMULA  and FORMULA  should equal to FORMULA  and FORMULA . FORMULA  ,
+FORMULA , and other fields, should satisfy the equations of motion.
+One may worry about that the conserved charge form FORMULA  in
+Eq.(REF ) is not complete: For example, we will
+have an additional term FORMULA  if the action has a dilaton coupling
+term FORMULA . In general, the conserved charge form can be
+written as FORMULA , where FORMULA ,
+FORMULA  and FORMULA  are smooth functions of fields and
+their derivatives, and FORMULA  is linear for the field
+variation {{cite:46deb468-3c19-4f35-b5f0-89666668b13c}}, {{cite:7944b256-38d4-47bc-8751-d0735e46817e}}. Obviously, FORMULA  and
+FORMULA  will not give contributions to the near horizon
+integration  (REF ) if FORMULA  is a killing vector. It seems
+that FORMULA  will give an additional contribution to
+this integration. For the extremal case, this contribution will
+vanish due to the smoothness of FORMULA  and the vanishing
+surface gravity. For example, the term corresponding to the dilaton
+coupling mentioned above will vanish in the near horizon
+integration. So the final form of the entropy (REF )
+will not change. For the non-extremal case, this term essentially
+appear in the near horizon integration if we add the
+FORMULA  into FORMULA . However, if necessary, we can
+always change the Lagrangian FORMULA  to be
+FORMULA  and put the conserved charge
+form FORMULA  into the form of (REF ) without
+the FORMULA  terms, where FORMULA  is a
+FORMULA -form. This change of Lagrangian will not affect the
+equations of motion and the entropy of the black holes {{cite:46deb468-3c19-4f35-b5f0-89666668b13c}}, {{cite:7944b256-38d4-47bc-8751-d0735e46817e}}. Then, the formulas (REF ) and therefore
+(REF ) are still formally correct for the non-extremal
+case after considering that ambiguity of the Lagrangian and
+therefore FORMULA . But this ambiguity has no contribution
+to Eq. (REF ) which describes the entropy of the black
+hole in the extremal case.
+
+Entropy function and attractor mechanism
+In this section we show further that one can define an entropy
+function with the help of the entropy definition of Wald. The
+Noether current can always be written as
+FORMULA  where
+FORMULA  corresponds to constraint. The constraint for the
+FORMULA  gauge fields is (REF ). If the equations of
+motion for the FORMULA  gauge fields hold, this constraint vanishes.
+In this section, we will assume the equations of motion for the
+FORMULA  gauge fields are always satisfied, but not for the metric and
+scalar fields. In other word, we will not consider the constraint
+for the gauge fields. Assuming that the metric of the extremal black
+holes has the form
+FORMULA 
+on the horizon FORMULA  of an extremal black hole, one has
+FORMULA , FORMULA , but FORMULA . Thus the near
+horizon geometry will be fixed if FORMULA  and FORMULA  are
+specified. This means the “off-shell" of the near horizon geometry
+corresponds to the arbitrariness of the parameter FORMULA  and
+FORMULA . In the near horizon region ranged from FORMULA  to
+FORMULA , we have
+FORMULA 
+If FORMULA  is a Killing vector for the field configuration space for
+our discussion (the solution space is a subset of this space), then
+FORMULA , and we have
+FORMULA 
+With this, we obtain
+FORMULA 
+Define our “entropy function" as
+FORMULA 
+If the equations of motion are satisfied, obviously, this
+FORMULA  will reduce to the entropy of extremal black holes
+given in the previous section. Therefore this definition is
+meaningful. Further, from Eq. (REF ), we have
+FORMULA 
+Recalling that the equations of motion for the FORMULA  gauge fields
+have been assumed to hold always, and following the calculations in
+the previous section, we have
+FORMULA 
+This expression looks the same as the one given in the previous
+section. However, a crucial difference from the one in the previous
+section is that here the fields need not be the solutions of the
+equations of motion. To give the entropy of the extremal black
+holes, we have to solve the equations of motion or extremize the
+entropy function with respect to the undetermined values of fields
+on the horizon. It is easy to find that entropy function has the
+form
+FORMULA 
+where, for simplicity, we have denoted the FORMULA  and
+FORMULA  by FORMULA  and FORMULA , respectively. The terms FORMULA 
+will not appear because those kinetic terms of scalar fields in the
+action always have a vanishing factor FORMULA  on the horizon.
+Similarly, FORMULA  will not appear because
+that the components of the Riemann tensor which include these terms
+have to contract with the vanished factors FORMULA  or FORMULA .
+Certainly, this point can be directly understood from the near
+horizon geometry in Eq. (REF ). So,
+extremizing the entropy function becomes
+FORMULA 
+The electric charges are determined by
+FORMULA 
+The entropy of the black hole can be obtained by solving these
+algebraic equations, and substituting the solutions for FORMULA ,
+FORMULA , FORMULA  back into the entropy function. If the values of
+moduli fields on the horizon are determined by charges of black
+holes, then the attractor mechanism is manifest. Then the entropy
+has the form
+FORMULA 
+a topological quantity which is fully determined by
+charges {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}. These definitions will become more simple
+if one chooses the coordinates FORMULA  so that one
+can define
+FORMULA 
+then, the entropy function can be written as
+FORMULA 
+where FORMULA  are gauge fields on the horizon in this set of
+coordinates, and FORMULA  are electric
+charges which are not changed with the coordinate transformation.
+So, in this set of coordinates, our entropy function form reduces to
+the entropy function defined by A. Sen {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}.
+
+Conclusion and discussion
+In this paper, we have shown that the “entropy function" method
+proposed by A. Sen can be extracted from the general black hole
+entropy definition of Wald {{cite:856417f5-f47e-4ba4-a9dc-6e8d640069ff}}. For a spherically symmetry
+extremal black hole as described by metric (REF ), we
+find that the entropy of the black hole can be put into a form
+FORMULA 
+which is similar to the one given in Ref. {{cite:0abfe914-62bb-44cf-92a0-7bf2c0b9a2ce}}, {{cite:d74fd8d5-70f8-4d3c-9181-88ab9f64d917}}. To get
+this entropy form, we have regarded the extremal black hole as the
+extremal limit of an non-extremal black hole, i.e., we have required
+(and only required) that the surface gravity approaches to zero. In
+a special set of coordinates, i.e., FORMULA , this
+entropy is exactly of the same form as the one given by A. Sen. We
+have obtained a corresponding entropy function
+(REF ). After extremizing this entropy function
+with respect to FORMULA , FORMULA  and other scalar fields, one gets
+the entropy of the extremal black holes. Similarly, in the
+coordinates FORMULA , our entropy function reduces to
+the form of A. Sen. Note that in our procedure, we have neither used
+the treatment of rescaling FORMULA  part of the near horizon geometry
+of extremal black holes, nor especially employed the form of the
+metric in the coordinates FORMULA  as Eq.(REF ).
+In this procedure, it can be clearly seen why the electric charge
+terms FORMULA  appear, but not the magnetic charges terms in the
+entropy function.
+Recently it was shown that for some near-extremal black holes with
+BTZ black holes being a part of the near horizon geometry, that the
+“entropy function" method works as well {{cite:d39a5bd8-d7b0-4bc8-be49-b7a4bef30864}}. A similar
+discussion for non-extremal FORMULA  and FORMULA  branes has also been
+given in {{cite:2cbd64aa-13ff-4520-a6fe-cc9b2ee279e2}}. Therefore it is interesting to see whether
+the procedure developed in this paper works or not for near-extremal
+black holes. In this case, FORMULA  is an infinitesimal one instead
+of vanishing. Eq. (REF ) then gives
+FORMULA 
+where
+FORMULA 
+and FORMULA  approximately equals to
+FORMULA  if the
+higher derivative corrections in the effective action are small.
+Thus, after considering that ambiguity in FORMULA  becomes
+very small and for large FORMULA  (sometimes, this corresponds to large
+charges), the entropy function method gives us an approximate
+entropy for near-extremal black holes, but the attractor mechanism
+will be destroyed {{cite:e9869834-5e25-41fe-bff9-bd2bc0ec88fb}}. In addition, it is also interesting to
+discuss the extremal rotating black holes with the procedure
+developed in this paper. Certainly, in this case, the Killing vector
+which generates the horizon should be of the form
+FORMULA  instead of FORMULA .
+A term including angular-momentum FORMULA  will naturally appear in the
+associated entropy function {{cite:44c7d407-f106-4241-8364-f06dc7017a3a}}. This issue is under
+investigation.
+
+Acknowledgements
+L.M.Cao thanks Hua Bai, Hui Li, Da-Wei Pang, Ding Ma, Yi Zhang and
+Ya-Wen Sun for useful discussions and kind help. This work is
+supported by grants from NSFC, China (No. 10325525 and No.
+90403029), and a grant from the Chinese Academy of Sciences.

@@ -1,0 +1,355 @@
+
+Emergence of spatiotemporal chaos driven by far-field breakup of spiral waves in the plankton ecological systemsQuan-Xing Liu
+Department of Mathematics, North University of China, Taiyuan,
+Shan'xi 030051, People's Republic of China
+Gui-Quan Sun
+Department of Mathematics, North University of China, Taiyuan,
+Shan'xi 030051, People's Republic of China
+Bai-Lian LiEcological Complexity and Modeling Laboratory,
+Department of Botany and Plant Sciences,
+University of California, Riverside, CA 92521-0124, USA Zhen Jin []Corresponding authorjinzhn@263.net
+Department of Mathematics, North University of China, Taiyuan,
+Shan'xi 030051, People's Republic of China
+2020/09/07 07:31:36
+
+Alexander B. Medvinsky et al [A. B. Medvinsky, I. A.
+Tikhonova, R. R. Aliev, B.-L. Li, Z.-S. Lin, and H. Malchow, Phys.
+Rev. E 64, 021915 (2001)] and Marcus R. Garvie et al [M. R. Garvie and C.
+Trenchea, SIAM J. Control. Optim. 46, 775-791 (2007)] shown that the minimal
+spatially extended reaction-diffusion model of phytoplankton-zooplankton can exhibit
+both regular, chaotic behavior, and spatiotemporal patterns in a
+patchy environment. Based on that, the spatial plankton model is
+furtherly investigated by means of computer simulations and theoretical analysis in the present paper when its parameters would be expected in the case of mixed Turing-Hopf bifurcation region. Our results show that the spiral
+waves exist in that region and the spatiotemporal chaos emerge, which
+arise from the far-field breakup of the spiral
+waves over large ranges of diffusion coefficients of phytoplankton
+and zooplankton. Moreover, the
+spatiotemporal chaos arising from the far-field breakup of spiral waves does not gradually involve the whole space within
+that region. Our results are confirmed by means of computation spectra and nonlinear bifurcation of wave trains.
+Finally, we give some explanations about the spatially
+structured patterns from the community level.
+87.23.Cc, 82.40.Ck, 82.40.Bj, 92.20.jm 
+Spiral waves; Spatio-temporal pattern; Plankton dynamics; Reaction-diffusion system
+Introduction
+There is a growing interest in the spatial pattern dynamics of
+ecological
+systems {{cite:8cabc329-c8bf-4771-a081-60de2fd6bdcb}}, {{cite:80caa09b-fcb3-416f-ae8a-07256467f6c9}}, {{cite:75ae67a0-f749-448c-9efa-547ca3e21d51}}, {{cite:665f6bee-037b-4821-8e9d-7fed953b903e}}, {{cite:50a56994-2a1a-4286-ab15-3a5af459903e}}, {{cite:ad197655-8b99-4537-9f3e-e11a57603480}}, {{cite:39e4dac5-86dc-40e5-833c-5016b5e41267}}, {{cite:01662822-d720-43b4-8fdb-c1b4873fe520}}, {{cite:577bc25d-ebd1-4250-a226-dfe9de6cc751}}, {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:9c4c88af-b1a8-44c3-ac27-deb85b8580c6}}, {{cite:0a16c6c0-f4d6-4769-b537-1ccceb1724c1}}.
+However, many mechanisms of the spatio-temporal variability of
+natural plankton populations are not known yet. Pronounced physical
+patterns like thermoclines, upwelling, fronts and eddies often set
+the frame for the biological process. Measurements of the underwater
+light field are made with state-of-the-art instruments and used to
+calculate concentrations of phytoplankton biomass (as chlorophyll)
+as well as other forms of organic matter. Very high diffusion of the
+marine environment would prevent the formation of any stable patch
+spatial distribution with much longer life-time than the typical
+time of biodynamics. Meanwhile, in addition to very changeable
+transient spatial patterns, there also exist other spatial patterns
+in marine environment, much more stable spatial structure associated
+with ocean fronts, spatiotemporal
+chaos {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}}, {{cite:59030f75-b01e-4627-8eb4-c96997f40378}}, cyclonic rings, and
+so called meddies {{cite:09f17c77-46c3-4663-a605-294d895312ba}}. In fact, it is significant to
+create the biological basis for understanding spatial patterns of
+plankton {{cite:5eef0056-ff96-4d77-93f9-22d3a38d6f96}}. For instance, the impact of space on the persistence
+of enriched ecological systems was proved in laboratory experiments {{cite:6eff981a-6da0-424b-b5a7-d43de917d138}}. Recently, it has been shown both in laboratory experiments {{cite:0934e473-c546-4d63-9db6-87f66f0076e5}} and theoretically {{cite:ceab5e9c-3800-4bf3-97f7-60564cbebdf1}}, {{cite:2ebb6252-17f6-4c9c-93ac-b5a4f1f16fb5}}, {{cite:f8a0a8b6-5757-4e41-a45b-74dcfdd45a46}}, {{cite:59030f75-b01e-4627-8eb4-c96997f40378}} that the existence of a spatial structure makes a predator-prey system less prone to extinction. This is due to the temporal variations of the density of different sub-populations can become asynchronous and the events of local extinction can be compensated due to re-colonization from other sites in the space {{cite:22adbc92-73fe-448d-9176-c6ff37f47c0a}}.
+During a long period of time, all
+the spiral waves have been widely observed in diverse physical,
+chemical, and biological
+systems {{cite:109c3a04-d4d3-482f-85ff-15a2d6df2ee7}}, {{cite:c78282bf-260c-4876-a1e1-b32c7ff2ed04}}, {{cite:ba9d1c17-5c19-4ce9-bb5f-aa048a2f1e9f}}, {{cite:e4ce9cfb-209d-49b3-9dcf-1a99599d0da0}}.
+However, a quite limited number of
+documents {{cite:9c4c88af-b1a8-44c3-ac27-deb85b8580c6}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:9cb69a4e-0efc-4120-b6d3-02716f600fdd}}, {{cite:6d5715f1-e433-4520-83be-3bb4cb431693}}, {{cite:3ab06807-0bd2-4881-9454-b611b191766e}}
+concern the spiral wave pattern and its breakup in the ecological systems.
+The investigation of transition from regular patterns to
+spatiotemporally chaotic dynamics in spatially extended systems remains a
+challenge in nonlinear
+science {{cite:17775157-764a-459e-89e0-c861b7ce5d92}}, {{cite:4852e96a-3156-4284-b893-1d9681f4106a}}, {{cite:109c3a04-d4d3-482f-85ff-15a2d6df2ee7}}, {{cite:59030f75-b01e-4627-8eb4-c96997f40378}}. In
+a nonlinear ecology system, the two most commonly seen patterns are
+spiral waves and turbulence (spatio-temporal chaos) for the level of the community {{cite:d03e7124-b22b-4b23-8ff3-bc0368e37246}}. It has been recently shown that spontaneous spatiatemoporal
+pattern formation is an instrinsic property of a predator-prey system {{cite:7837ddfa-51cf-44cd-bec7-b3f00269a16f}}, {{cite:d5ec073e-f585-4696-92e6-36f316b1f491}}, {{cite:9b20a431-3d4b-4ecf-bccc-906bed7833bc}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:59030f75-b01e-4627-8eb4-c96997f40378}}, {{cite:f7bcc819-3000-4711-ab9b-b04026aab07e}} and spatiotemporal structures play an important role in
+ecological systems. For example, spatially induced speciation
+prevents the extinction of the predator-prey
+models {{cite:58c20a32-6d74-48b7-a45b-7fa9920afcd7}}, {{cite:9c4c88af-b1a8-44c3-ac27-deb85b8580c6}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}. So far, plankton patchiness has been observed on a wide range of spatial temporal scales {{cite:7d1e91f4-6a32-4437-8e31-38161e6930fc}}, {{cite:a4c03058-956b-4258-bd70-172a86ed43b8}}. There
+exist various, often heuristic explanations of the spatial patterns
+phenomenon for these systems. It should be noted that, although conclusive
+evidence of ecological chaos is still to be found, there is a growing number of indications of chaos in real ecosystems {{cite:bf27cd6b-9923-4178-a9a7-6322bd03f7f0}}, {{cite:7f30c6eb-42df-4812-8f2f-08aca580872b}}, {{cite:80311e88-c74b-4f0e-938a-7139e2dc1be4}}, {{cite:098a7575-11b2-460a-b14c-069eab717ba2}}.
+Recently developed models show that spatial self-structuring in multispecies systems can meet both criteria and provide a rich substrate for community-level section and a major transition in evolution. In present paper, the scenario in the spatially extended
+plankton ecological system is observed by means of the numerical simulation. The system has been demonstrated to exhibit regular or chaostic, depending on the initial conditions and the parameter values {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}}, {{cite:3ab06807-0bd2-4881-9454-b611b191766e}}.
+We find that the far-field breakup of the spiral wave leads to complex
+spatiotemporal chaos (or a turbulentlike state) in the
+spatially extended plankton model (). Our results show that regular spiral wave pattern shifts into spatiotemporal chaos pattern by modulating the diffusion coefficients of the species.
+
+model
+In this paper we study the spatially extended nutrient-phytoplankton-zooplankton-fish reaction-diffusion system.
+Following Scheffer's minimal approach {{cite:ce0497a8-548a-4c2d-8166-addb24125310}}, which was originally formulated as a system of ordinary diffential equation (ODEs) and later developed models {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:acdbbae3-2109-4a28-a3d0-650d3132b752}}, {{cite:bb190757-e0cc-4b09-83fd-a34008edeaad}}, {{cite:3ab06807-0bd2-4881-9454-b611b191766e}},
+as a further investigation, we study a two-variable
+phytoplankton and zooplankton model on the level of the community to describe pattern formation with the diffusion. The dimensionless model is written as
+FORMULA 
+FORMULA 
+
+where the parameters are FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , and
+FORMULA  which refer to work in Refs. {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}. The explanation of model () relates to the nutrient-phytoplankton-zooplankton-fish ecological system [see Refs. {{cite:3ab06807-0bd2-4881-9454-b611b191766e}}, {{cite:ce0497a8-548a-4c2d-8166-addb24125310}}, {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}} for details]. The local dynamics are given by
+FORMULA 
+FORMULA 
+From the earlier
+results {{cite:acdbbae3-2109-4a28-a3d0-650d3132b752}} about non-spatial system of model () by means of numerical bifurcation
+analysis show that the bifurcation and bistability can be found
+in the system () when the parameters are varied within a
+realistic range. For the fixed parameters (see the caption of
+Fig. REF  and REF ), we can see that the FORMULA  controls the distance from
+Hopf bifurcation. For larger FORMULA , there exists only one stable
+steady state. As FORMULA  is decreased further, the homogeneous steady state undergoes a saddle
+node bifurcation (SN), that is FORMULA . In this case, a stable and an
+unstable steady state become existence. Moreover, the bistability will emerge
+when the parameter FORMULA  lies the interval FORMULA 
+(this value is more than the Hopf onset, FORMULA ). There are
+three steady states: with these kinetics A and C are linearly stable
+while B is unstable. Outside this interval, the system ()
+has unique nontrivial equilibrium. Recent studies {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:3ab06807-0bd2-4881-9454-b611b191766e}} shown that the systems () can
+well-develop the spiral waves in the oscillation regime, but where the
+authors only consider the special case, i.e., FORMULA . A few important issue have not yet
+been properly addressed such as the spatial pattern if FORMULA .
+Here we report the result that emergence of spatiotemporal chaos due to
+breakup in the system under the FORMULA  case. We may now use
+the FORMULA  and diffusion ratio, FORMULA , as control parameters to evaluate the
+region for the spiral wave. Turing instability in reaction-diffusion can be recast in
+terms of matrix stability {{cite:66480ae1-507c-4a43-9497-f7a8abc68955}}, {{cite:e32c362e-84d9-4a1a-98d5-f1322cd92cf6}}. Such with the help of Maple software
+assistance algebra computing, we obtain the parameters space
+FORMULA  bifurcation diagrams of the spiral waves as showing
+Fig. REF , in which two lines are plotted, Hopf
+line (solid) and Turing lines (dotted) respectively. In
+domain I, located above all three bifurcation lines, the homogeneous steady states is the only
+stable solution of the system. Domain II are
+regions of homogeneous oscillation in two
+dimensional spaces {{cite:4396baba-9558-490b-8b8f-2f917ecd0e6a}}. In domain III, both Hopf and Turing instabilities occur, (i.e., mixed Turing-Hopf modes arise), in which the system generally
+produces the phase waves. Our results show that the
+system has spiral wave in this regions. One can see that a Hopf bifurcation can occur at the steady when the parameter FORMULA  passes through a critical values FORMULA  while the diffusion coefficients FORMULA  and the bifurcation periodic solutions are stable. From our analysis (see Fig. REF ), one
+could also see that the diffusion can induce Turing type instability for the spatial homogeneous stable periodic solutions and the spatially extended model () exhibit spatio-temporal chaos patterns. These spatial pattern formation arise from interaction between Hopf and Turing modes, and their subharmonics near hte codimension-two Hopf-Turing bifucation point. Special, it is interesting that spiral wave and travelling wave will appear when the parameters correspond to the Turing-Hopf bifurcation region III in the spatially extended model (), i.e., the Turing instability and Hopf bifurcation occur simultaneously.
+FIGURE 
+FIGURE 
+
+Numerical results
+The simulation is done in a two-dimensional (2D) Cartesian
+coordinate system with a grid size of FORMULA . The fourth
+order Runger-Kutta integrating method is applied with a time step
+FORMULA  time unit and a space step FORMULA 
+length unit. The results remain the same when the reaction-diffusion equations
+were solved numerically in one and two spatial dimensions using a finite-difference approximation for the spatial derivatives and an explicit Euler method for the time integration. Neumann (zero-flux) boundary conditions were emmployed in our simulation. The diffusion terms in Eqs. (REF ) and
+(REF ) often describe the spatial mixing of species due
+to self-motion of the organism. The typical diffusion coefficient of plankton patterns FORMULA  is about FORMULA , based on the parameters estimatie of Refs {{cite:d8c97604-da30-4731-bf7d-432439a6a50b}}, {{cite:10efb77a-9418-4e15-8460-6a02606bc0a6}} using the relationship between
+turbulent diffusion and the scale of the space in the
+sea. In the previous studies {{cite:987397d0-cade-4df3-a8a9-6814994f5b1e}}, {{cite:364e3ee8-e3cf-4de8-85d7-b4375d2c102b}}, {{cite:acdbbae3-2109-4a28-a3d0-650d3132b752}}, {{cite:bb190757-e0cc-4b09-83fd-a34008edeaad}}, {{cite:3ab06807-0bd2-4881-9454-b611b191766e}}, the authors provided a valueable insight into the role of spatial pattern for the system () if FORMULA . From
+the biological meaning, the diffusion coefficients should satisfy
+FORMULA . However, in nature waters it is turbulent
+diffusion that is supposed to dominate plankton
+mixing {{cite:e1db9e3b-61bd-4ad2-9cd4-e8ff6a68be81}}, when FORMULA  is allowed. The other
+reason for choosing such parameter is that it is well-known new
+patterns, such as Turing patterns, can emerge in reaction-diffusion
+systems in which there is an imbalance between the diffusion
+coefficients FORMULA  and FORMULA  {{cite:f8bc8fb2-a562-4e4d-bb8a-7e9cd33f7f2e}}, {{cite:109c3a04-d4d3-482f-85ff-15a2d6df2ee7}}.
+Therefore, we set FORMULA , and investigated whether a
+spiral wave would break up into complex spatiotemporal chaos when
+the diffusion ratio was varied. Throughout this paper, we fix
+FORMULA  and FORMULA  is a control parameter.
+In the following, we will show that the dynamic behavior of the
+spiral wave qualitatively change as the control parameter FORMULA 
+increases from zero, i.e., the diffusion ratio FORMULA  increases from
+zero, to more than one. For large FORMULA  (FORMULA ), the outwardly
+rotating spiral wave is completely stable everywhere, and fills in
+the space when the proper parameters are chosen, as shown in
+Fig. REF (A). Figure REF (A) shows a series of
+snapshots of a well-developed single spiral wave formed
+spontaneously for the variable FORMULA  in system (). The
+spiral is initiated on a FORMULA  grid by the cross-field
+protocol (the initial distribution chosen in the form of allocated “constant-gradient” perturbation of the co-existence steady state) and zero boundary conditions are employed for simulations
+in the two dimensions. From Fig. REF (A) we can see that
+the well-developed spiral waves are formed firstly by the evolution.
+Inside the domain, new waves emerge, but are evolved by the spiral
+wave growing from the center. The spiral wave can steadily grow
+and finally prevail over the whole domain (a movie illustrating the
+dynamical evolution for this case {{cite:79140b4d-fdb7-4a7e-a2e8-e204131ed7aa}} [partly
+FORMULA , FORMULA , and FORMULA  for FORMULA ]).
+Fig. REF (B) shows that the spiral wave first break up far
+away from the core center and eventually relatively large spiral
+fragments are surrounded by a `turbulent' bath remain. The size of
+the surviving part of the spiral does not shrink when FORMULA  is
+further decreasing until finally FORMULA  equals to 0, which is
+different from phenomenon that is observed previous in the two-dimensional
+space Belousov-Zhabotinsky and FitzHugn-Nagumo oscillatory
+system {{cite:17775157-764a-459e-89e0-c861b7ce5d92}}, {{cite:4852e96a-3156-4284-b893-1d9681f4106a}}, {{cite:68eb5936-9981-416d-9aaf-c899732a9d52}}, {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:5024d853-e3fe-43f4-86a7-508b318a05bc}}, in which the breakup
+gradually invaded the stable region near the core center, and
+finally the spiral wave broke up in the whole medium.
+Figure REF (C) is the time sequences (arbitrary units) of
+the variables FORMULA  and FORMULA  at an arbitrary spatial point within the
+spiral wave region, from which we can see that the spiral waves are
+caused by the accepted as “phase waves" with substantially group
+velocity, phase velocity and sinusoidal oscillation rather than the
+relaxational oscillation with large amplitude. This breakup scenario
+is similar to the breakup of rotating spiral waves observed in
+numerical simulation in chemical
+systems {{cite:17775157-764a-459e-89e0-c861b7ce5d92}}, {{cite:4852e96a-3156-4284-b893-1d9681f4106a}}, {{cite:68eb5936-9981-416d-9aaf-c899732a9d52}}, {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:5024d853-e3fe-43f4-86a7-508b318a05bc}}, and experiments in BZ systems {{cite:a4c9a688-2923-4ef4-8408-f82f8c46a55c}}, {{cite:a476fcef-e3f5-424e-845d-4beb4253a44e}}, which shows that spiral wave breakup
+in these systems was related to the Eckhaus instability and more
+important, the absolute instability.
+FIGURE 
+The corresponding trajectories of the spiral core and the spiral arm
+(far away from the core center) at FORMULA  are shown in
+Fig. REF , respectively. From Fig. REF ,
+we can see that the spiral core is not completely fixed, but
+oscillates with a large amplitude. However, as FORMULA  decreases to a
+critical value, an unstable modulation develops in regions which is
+far away from the spiral core (cf. the middle column of the
+Fig. REF ). These oscillations eventually grow large
+enough to cause the spiral arm far away from the core to breakup
+into complex multiple spiral waves, while the core region remains
+stable (the corresponding movie can be viewed in the online
+supplemental in Ref. {{cite:79140b4d-fdb7-4a7e-a2e8-e204131ed7aa}} [partly FORMULA  and
+FORMULA , and for FORMULA ]). Figures REF (B) and
+REF (B) show the dynamic behavior for FORMULA ,
+i.e., FORMULA . The regular trajectories far away from the core are
+now the same as the region of the spatial chaos (cf. the middle
+column of the Fig. REF ). It is shown that an decrease in the
+diffusion ratio FORMULA  which leads to population oscillations of increasing amplitude (cf. the left column of the
+Fig. REF ). In the tradition explain that the minimum value of the population density decreases and population extinction becomes more probable due to stochastic environmental perturbations. However, from the spatial evolution of system () (see Fig. REF ), the temporal variations of the density of different sub-population can become asynchronous and the events of local extinction can be compensated due to re-colonization (or diffusion) from other sites.
+FIGURE 
+Furthermore, it is well known that the basic arguments in spiral
+stability analysis can be carried out by reducing the system to one dimensional
+space {{cite:17775157-764a-459e-89e0-c861b7ce5d92}}, {{cite:4852e96a-3156-4284-b893-1d9681f4106a}}, {{cite:68eb5936-9981-416d-9aaf-c899732a9d52}}, {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:5024d853-e3fe-43f4-86a7-508b318a05bc}}. Here we show some essential
+properties of the spiral breakup resulting from the numerical
+simulation. In the next section we will give the theoretical
+computation by using the eigenvalue spectra. In this model, it is worth noting that we do not neglect the oscillation of the dynamics in the core as shown in
+Fig. REF  due to the system exhibiting spatial periodic wave trains when the model is simulated in one-dimensional
+space. Breakup occurs first far away from the core (the source of
+waves). The spiral wave breaks towards the core until it gets to
+some constant distance and then the surviving part of the spiral
+wave stays stable. These minimal stable wavelengths are called
+FORMULA . So the one-parameter family may be described by a
+dispersion curve FORMULA  (see Fig. REF ). The minimal
+stable wavelength FORMULA  of the spiral wave are shown in
+Fig. REF  coming from the simulation in two dimensional space.
+The results of Fig. REF  can be interpreted as follows: the
+minimal stable wavelengths decrease with respect to the decrease of
+FORMULA  but eventually stay at a relative constant value, which is
+that the stable spiral waves are always existing for a larger region
+values of FORMULA . Space-time plots at different times are shown in
+Fig. REF  for two different FORMULA , i.e., different
+FORMULA , which display the time evolution of the spiral wave along the
+cross section in the two-dimensional images of Fig. REF (A)
+and (B). As shown in Fig. REF (A) and (B) for FORMULA 
+and FORMULA  respectively, the waves far away from the core
+display unstable modulated perturbation due to convective
+instability {{cite:17775157-764a-459e-89e0-c861b7ce5d92}}, {{cite:4852e96a-3156-4284-b893-1d9681f4106a}}, {{cite:68eb5936-9981-416d-9aaf-c899732a9d52}}, {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:5024d853-e3fe-43f4-86a7-508b318a05bc}}, but this perturbation is
+gradually advected to the left and right sides, and finally
+disappears. The instability manifests itself to produce the wave
+train breakup several waves from the far-field, as shown in
+Figs. REF (B).
+FIGURE 
+FIGURE 
+
+Spectra and Nonlinear bifurcation of the spiral wave
+In this section, we concentrate on the linear stability analysis of spiral wave by using the spectrum theory {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:378a4416-51f0-4ac6-b81a-b071efc06ba0}}, {{cite:5e384ca4-a69a-482c-87a4-e92a599ca421}}, {{cite:0b8647a7-0ee5-4060-963a-40999236f54c}}, {{cite:9c7ccc16-8f3d-4752-b59f-5265e94684df}}.
+From the results in Refs. {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:0b8647a7-0ee5-4060-963a-40999236f54c}} we know that the absolute spectrum must be computed numerically for any given reaction-diffusion systems. In practice, such computations only require discretization in one-dimensional space and compare with computing eigenvalues of the full stability problem on a large domain due to the spiral wave exhibitting traveling waves in the plane (see Fig. REF  about the space-time graphes). For spiral waves on the unbounded plane, the essential spectrum is also required to compute, since it determined only by the far-field wave trains of the spiral. The linear stability spectrum consists of point eigenvalues and the essential spectrum that is a continuous spectrum for spiral waves.
+For sake of simplicity, the Eqs. (REF ) and (REF ) can been written as following
+FORMULA 
+FORMULA 
+Suppose that FORMULA  are a solutions and refer to them as steady spirals of Eq. () that rotate rigidly with a constant angular velocity FORMULA , and that are asymptotically periodic along rays in the plane. In a coratating coordinate frame, using the standardized analysis method for the spiral waves {{cite:9c7ccc16-8f3d-4752-b59f-5265e94684df}}, {{cite:0b8647a7-0ee5-4060-963a-40999236f54c}}, the Eq. () is given by
+FORMULA 
+FORMULA 
+
+where FORMULA  denote polar coordinates, spirals waves are relative equilibria, then the statianry solutions FORMULA  and FORMULA  both are FORMULA -periodic functions with FORMULA . In Eqs. (REF ) and (REF ) the operator FORMULA  denotes FORMULA .
+Computation of spiral spectra
+Next, we commpute the leading part of its linear stability spectrum for the system (). Consider the linearized evolution equation in the rotating frame, the eigenvalue problem of Eqs. (REF ) and (REF ) associated with the planar spiral solutions FORMULA  and FORMULA  are given by
+FORMULA 
+FORMULA 
+
+where FORMULA , FORMULA , FORMULA  denote the derivatives of
+the nonlinear functions and FORMULA , FORMULA , FORMULA , and FORMULA . We shall ignore isolated eigenvalues that belong to the point spectrum, instabilities caused by point eigenvalues lead to meanderingor drifting waves, or to an unstable tip motionin in excitable media and oscillation media {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:4ba714e6-1b1e-4f36-86a2-2f6f44cdc14a}}, {{cite:7a1504e9-1b8e-475a-b3d7-96313ed79d48}}, {{cite:5c0a8348-19d0-4f78-b7cd-f79a67550d1f}}. This phenomenon is not shown in the present paper.
+Instead, we focus on the continuous spectrum that is responsible for the spiral wave breakup in the far field (see Fig. REF (b)). By the results in Ref. {{cite:0b8647a7-0ee5-4060-963a-40999236f54c}}, it turns out that the boundary of the continuous spectrum depends only on the limiting equation for FORMULA . Thus, we have that FORMULA  is the boundary of the continuous spectrum if, and only if the limiting equation
+FORMULA 
+FORMULA 
+
+have solutions FORMULA  and FORMULA  for FORMULA , which are bounded but does not
+decay as FORMULA . Since spiral waves are rotating waves in the plane, the wave train solutions have the form as FORMULA  for an appropriate wave numbers FORMULA  and temporal frequency FORMULA , where we assume that FORMULA  is FORMULA -periodic in its argument so that FORMULA  for all FORMULA  and FORMULA . Spiral waves converge to wave trains
+FORMULA  for FORMULA , which are corresponding to asymptotically Archimedean in the two-dimensional space. Assume that FORMULA  and FORMULA , and in this case, we can pass from the theoretical frame FORMULA  to the comoving frame FORMULA  (FORMULA ) in which the eigenvalue equation (REF ) becomes
+FORMULA 
+FORMULA 
+
+Indeed, any nontrivial solution FORMULA  corresponding to the linearization eigenvalue problem (REF ) give a solution FORMULA  of the eigenvalue problem for the temporal period map of () in the corotating frame via
+FORMULA 
+We write the equations (REF ) as the first-order systems
+FORMULA 
+in the radial variable FORMULA . Then the spatial
+eigenvalues or spatial Floquet exponents are deternined as the roots of the Wronskian
+FORMULA 
+where FORMULA . The function FORMULA  satisfies the equation () when the spatial and temporal exponents FORMULA  and FORMULA  satisfy the complex dispersion relation FORMULA  for FORMULA . We call the FORMULA  in spectrum of FORMULA  as spatial
+eigenvalues or spatial Floquet exponents.
+The stability of the spiral waves state FORMULA  on the plane is determined by the essential spectrum given by
+FORMULA 
+Now, we compute the continuous spectrum with the equation (REF ) that are parameterized by the wave number FORMULA . For each FORMULA , there are infinitely many stable and unstable spatial eigenvalues. We plot FORMULA  in the complex plane associated spatial spectrum, see Fig. REF .
+By the explaination of Sandstede et al {{cite:378a4416-51f0-4ac6-b81a-b071efc06ba0}}, one would know that if the real part of the essentail spectra is positive, then the associated eigenmodes grow exponentially toward the boundary, i.e., they correspond to a far-field instability. Note that we find the essentail spectra are not sensitive to temporal frequency, FORMULA .
+FIGURE 
+
+Existence and properties of wave trains
+Suppose that a reaction-diffusion system on the one-dimensional space such that the variables equal to a homogeneous stationary solution. If the homogeneous steady-state destabilizes, then its linearization accommodates waves of the form FORMULA  for certain values FORMULA  and FORMULA . Typically, near the transition to instability, small spatially periodic travelling waves arise for any wave number close to FORMULA , which is the critical wavenumber. Their wave speed is approximately equal to FORMULA , where FORMULA  is corresponding to FORMULA . In present paper, we focus exclusively on the situation where FORMULA  and FORMULA . The bifurcation with FORMULA  and FORMULA  is known as the Turing bifurcation, and the bifurcating spatially periodic steady patterns are often referred to as Turing patterns. Another class of moved patterns will appear when the instabilities modulated by Hopf-Turing bifurcation, which is resemble a travelling waves. Moreover, the common feature of the spiral waves in one-dimensional space mentioned above is the presence of wave trains which are spatially periodic travelling waves of the form FORMULA  and FORMULA , where FORMULA  and FORMULA  are FORMULA -periodic about FORMULA . Typically, the spatial wavenumber FORMULA  and the temporal frequency FORMULA  are related via the nonlinear dispersion relation FORMULA  so that the phase velocity is given by
+FORMULA 
+A second quantity related to the nonlinear dispersion relation is the group velocity, FORMULA , of the wave train which also play a central role in the spiral waves. The group velocity FORMULA  gives the speed of propagation of small localized wave-package perturbations of the wave train {{cite:2324f6c9-2eb0-4baf-861a-4d63dabadf58}}. Here, we are only concerned the existence of travelling wave solution. In fact, the spiral waves move at a constant speed outward from the core (see Fig. REF ), so that they have the mathematical form FORMULA , and FORMULA  where FORMULA . Substituting these solution forms into Eq. () gives the ODEs
+FORMULA 
+FORMULA 
+Here, we investigate numerically the existence, speed and wavelength of travelling wave patterns. Our approach is to use the bifurcation package Matcont 2.4 {{cite:5cbf8cf1-c65d-40d0-b48d-74596f866fe7}} to study the pattern ODEs (REF ). To do this, the most natural bifurcation parameters are the wave speed FORMULA  and FORMULA , but they give no information about the stability of travelling wave as solutions of the model PDEs ().
+Our starting point is the homogeneous steady state of Eq. (REF ) with in the domain III of Fig. REF . The typical bifurcation diagrams are illustrated in Fig. REF , which shows that steady spatially peroidic travelling waves exist for the larger values of the speed FORMULA , but it is unstable for small values of FORMULA . The changes in stability occur via Hopf bifurcation, from which a branch of periodic orbits emanate. Note that here we use the terms “stable” and “unstable” as referring to the ODEs system (REF ) rather than the model PDEs. Fig. REF (B) illustrates the maximun stable wavelength against the bifucation parameter, speed FORMULA , and the small amplitudes have very long wavelength. It is known that FORMULA , hence the tavelling wave solution exist when the FORMULA , i.e., FORMULA . Using Matcont 2.4 package, it is possible to track the locus of the Hopf bifurcation points and the Limit point (fold) bifurcation in a parameter plane, and a typical example of this for the FORMULA -FORMULA  and FORMULA -FORMULA  plane are illustrated in Fig. REF . The travelling wave solutions exist for values of FORMULA  and FORMULA  lying in left of Hopf bifurcation locus (see Fig. REF (A)). The same structure about the FORMULA -FORMULA  plane is shown in Fig. REF (B). These reuslts confirm our previous analysis coming from the algebra computation (see Fig. REF ) and the numerical results (see Fig. REF ).
+FIGURE 
+FIGURE 
+
+conclusions and discussion
+We have investigated a spatially extended plankton ecological system within
+two-dimensional space and found that its spatial
+patterns exhibit spiral waves dynamics and spatial chaos patterns.
+Specially, the scenario of the spatiotemporal chaos patterns arising from the
+far-field breakup is observed. Our research is based on numerical
+analysis of a kinematic mimicking the diffusion in the dynamics of
+marine organisms, coupled to a two component plankton model on the
+level of the community. By
+increasing (decreasing) the diffusion ratio of the two variables, the spiral arm first broke up into a
+turbulence-like state far away from the core center, but which do not
+invade the whole space. From the previous studies in the Belousov-Zhabotinsky reaction, we know the reason causing this phenomenon can be
+illuminated theoretically by the M. Bär and L. Brusch {{cite:17775157-764a-459e-89e0-c861b7ce5d92}}, {{cite:4852e96a-3156-4284-b893-1d9681f4106a}}, as well as by using the spectrum theory that poses by B. Sandstede, A. Scheel et al {{cite:55ad4a6a-f908-4ba2-ab30-cc5d1b505da1}}, {{cite:378a4416-51f0-4ac6-b81a-b071efc06ba0}}, {{cite:5e384ca4-a69a-482c-87a4-e92a599ca421}}, {{cite:082de670-dbd7-4baf-8797-e21d03bbef1f}}. The far-field breakup
+can be verified in field observation and is useful to understand
+the population dynamics of oceanic ecological systems. Such as that
+under certain conditions the interplay between wake (or ocean)
+structures and biological growth leads to plankton blooms inside
+mesoscale hydrodynamic vortices that act as incubators of primary
+production. From Fig. REF  and corresponding the movies, we see that spatial peridic bloom appear in the phytoplankton populations, and the details of spatial evolution of the distribution of the phytoplankton population during one bloom cycle, respectively.
+In Ref. {{cite:c7e9c150-c9bc-4a5d-824c-aee3787c6aa6}}, the authors study the optimal control of the model () from the spatiotemporal chaos to spiral waves by the parameters for fish predation treated as a multiplicative control variable. Spatial order emerges in a range of spatial models of multispecies
+interactions. Unsurprisingly, spatial models of multispecies systems often
+manifests very different behaviors from their mean-field counterparts.
+Two important general features of spatial models of multispecies systems are
+that they allow the possibility of global persistence in spite of local extinctions and
+so are usually more stable than their mean-field equivalents, and have a tendency to self-organzie spatially or regular spatiotemporal patterns {{cite:fd0be7d3-aaba-4be8-8d6b-44bfb0b21824}}, {{cite:c7e9c150-c9bc-4a5d-824c-aee3787c6aa6}}. The spatial structures
+produces nonrandom spatial patterns such as spiral waves and spatiotemporal chaos at scales much larger than the scale of interaction among individuals level. These structures are not explicitly coded but emerge from local interaction among individuals and local diffusion.
+As we know
+that plankton plays an important role in the marine ecosystem and
+the climate, because of their participation in the global carbon and
+nitrogen cycle at the base of the food chain {{cite:e43292f4-61a4-49f1-9b0d-b64842ff3110}}.
+From the review {{cite:2fee50a3-f99d-44ef-8bb1-fd03de255ac9}}, a recently developed ecosystem
+model incorporates different phytoplankton functional groups and
+their competition for light and multiple nutrients. Simulations of
+these models at specific sites to explore future scenarios suggest
+that global environmental change, including global-warming-induced
+changes, will alter phytoplankton community structure and hence
+alter global biogeochemical cycles {{cite:67a28308-ef19-47b4-aabd-4554ff125388}}. The coupling of
+spatial ecosystem model to global climate raises again a series of
+open questions on the complexity of model and relevant spatial
+scales. So the study of spatial model with large-scale is more
+important in the ecological system. Basing on numerical simulation
+on the spatial model, we can draft that the oceanic ecological
+systems show permanent spiral waves and spatiotemporal chaos in large-scale
+over a range of parameter values FORMULA , which indicates that
+periodically sustained plankton blooms in the local area. As with all areas of evolutionary biology, theoretical development advances more quickly than does empiraical evidence. The most powerful empirical approach is to conduct experiments in which the spatial pattern can be measured directly, but this is difficulties in the design. However, we can indirectly measured these phenomenona by the simulation and compared with the satellite pictures. For example, the
+spatiotemporal chaos patterns agree with the perspective observation of
+the Fig. 3 in Ref. {{cite:2fee50a3-f99d-44ef-8bb1-fd03de255ac9}}. Also, some satellite imageries [http://oceancolor.gsfc.nasa.gov]
+have displayed spiral patterns that
+represent the phytoplankton [the chlorophyll] biomass and thus
+demonstrated that plankton patterns in the ocean occur on much
+broader scales and therefore mechanisms thought diffusion should be
+considered.
+This work is supported by the National
+Natural Science Foundation of China under Grant No. 10471040 and the
+Natural Science Foundation of Shan'xi Province Grant No. 2006011009.

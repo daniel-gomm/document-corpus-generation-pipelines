@@ -1,0 +1,1649 @@
+
+ FORMULA
+String Theory with Eight Supercharges M. Guica
+and A. Strominger
+These lectures give an introduction
+to the interrelated topics of Calabi-Yau compactification of the
+type II string, black hole attractors, the all-orders entropy
+formula, the dual FORMULA  CFT, topological strings and the OSV
+conjecture. Based on notes by MG of lectures by AS at the 2006
+Cargèse summer school.
+
+Cargèse Lectures on String Theory with Eight SuperchargesMonica Guica and Andrew Strominger Jefferson Physical
+LaboratoryHarvard University Cambridge, MA 021382020/09/07 18:38:19
+Introduction
+One of the best understood quantum systems is IIB string theory on
+FORMULA  with its dual presentation as FORMULA  Yang Mills
+gauge theory. The tractability of this system is in large part due
+to the large supersymmetry group which has the maximal 32
+supercharges. But a large symmetry group is both a blessing and a
+curse. It is a blessing because many features of the theory can be
+deduced using symmetry arguments alone. It is a curse because these
+same symmetries limit the possible dynamics and questions we can
+ask. For example, true tests of the various dualities which are not
+already implied by the symmetries of the 32-supercharge theory are
+relatively hard to find.
+As the number of supersymmetries is decreased, more dynamical
+possibilities are unleashed, often with no counterparts in their
+more symmetric cousins. Ultimately the most interesting and most
+physically relevant case is no supersymmetry at all. But at the
+moment analytic control in this case is quite limited.
+FIGURE 
+At the current juncture, the intermediate case of eight
+supercharges has proven to be especially fertile ground for progress.
+Eight supercharges is where black holes are first encounteredOf course, black holes
+exist in compactifications with more supersymmetry, but the near-horizon geometry
+has at most eight supersymmetries in all known examples., as well as Calabi-Yau spaces
+and
+topological strings. Despite several decades of work in this area,
+qualitative new surprises are still appearing
+(e.g.{{cite:aea11133-db40-43c2-bb83-cfa0aceefb98}}, {{cite:69e62e00-5ee7-410f-a37c-9035c75d7ef8}}, {{cite:d7d64b34-5987-46a5-a1a3-59c4c840320c}}, {{cite:c56394e0-a6f3-4261-a044-89fe22e4e40d}}). It
+is likely that a few more will still appear before the eight-supercharge
+jigsaw puzzle, illustrated in figure
+1, is pieced together. For example it has been suggested {{cite:3ce84b25-caf6-4174-b614-06125dbeb825}}, {{cite:43eca82b-1323-4a17-b5e4-ce686ccae2d5}} that
+number theory, which has yet to be fully wed to string theory,
+will play a prominent role. Another likely suspect, as yet to fully appear in
+the story,
+is the enigmatic FORMULA  duality.
+Among the fascinating connections illustrated in figure REF ,
+these lectures will focus on those directly relevant to
+understanding the so-called OSV conjecture {{cite:d7d64b34-5987-46a5-a1a3-59c4c840320c}}. The agreement
+between the Bekenstein-Hawking area law and the microscopic
+state counting for certain stringy black holes with eight near-horizon
+supercharges has been the source of many deep insights into string theory and quantum gravity.
+But this area law is just the first term in an infinite series approximating
+the exact expression for black hole entropy. OSV
+conjecturally relates every term in this series to expansion
+coefficients of the topological string, thereby potentially allowing for
+“precision tests” of holographic duality. We are likely to have
+much to learn by precisely formulating, proving or disproving OSV.
+In these lectures we will present some introductory material on
+string theory with eight supercharges, aimed at the student
+preparing for research in this area, and building up to a discussion of the
+OSV conjecture
+in the last section. For excellent and recent reviews at a
+more advanced level see {{cite:1adedbcf-07c2-463c-b89d-ba0bd46a35f1}}, {{cite:8ec12505-2e6c-47a2-b0a8-3f6812bcd784}}. We begin
+in lecture 2 with the basics of Type II Calabi-Yau
+compactification, BPS black holes, attractors, and their CFT
+duals. In lecture 3 we give a brief introduction to the
+topological string. In lecture 4 we describe the OSV conjecture
+which relates lectures 2 and 3. In lecture 5 we conclude by summarizing the
+various partition functions we have encountered along the way,
+the extent to which they are well defined, and the relations
+between them.
+
+BPS Calabi-Yau black holes 
+In this lecture we will briefly review the field content of type
+IIA/IIB string theory compactified on a Calabi-Yau manifold, and the
+resulting FORMULA  FORMULA  supergravity action. We will show that the
+FORMULA  theory admits supersymmetric black hole solutions of the
+extremal Reissner-Nordstrøm type, which exhibit an interesting
+attractor mechanism for the vector moduli as one approaches the
+horizon of the black hole. The macroscopic entropy of these black
+holes is computed and it is shown how to include higher order
+corrections. We briefly discuss the proposed microscopic dual, known
+as the MSW CFT, for the special case of no FORMULA  charge. (Finding the
+dual for the general case is an important unsolved problem). We also
+describe the index - the modified elliptic genus - which counts the
+weighted number of BPS states in this CFT.
+Throughout these lectures, we will use whichever of the type IIA/IIB
+languages makes the exposition simplest. Thus the FORMULA  FORMULA  action
+will be discussed mostly in the context of IIB compactifications,
+while in order to talk about black holes we will switch to the IIA
+description, which is also the one appropriate for understanding the
+OSV conjecture.
+IIB Calabi-Yau compactification
+The bosonic FORMULA  field content of type IIB string theory is as
+follows: from the NS-NS sector we get the graviton FORMULA , the
+antisymmetric tensor field FORMULA  with field strength FORMULA , and the dilaton FORMULA . From the R-R sector we have a
+scalar FORMULA  (the axion), a two-form with FORMULA  and a
+self-dual four-form obeying (at the linearized level) FORMULA .
+Compactifying six of the ten dimensions on a Calabi-Yau manifold FORMULA 
+breaks three quarters of the original 32 component supersymmetries
+of type IIB supergravity. Since in four dimensions the minimal
+spinors have four components, the eight supersymmetries we are left
+with give FORMULA  supergravity in four dimensions. This
+theory - described in great detail in the fundamental paper
+{{cite:caa2eb57-4ce0-4a1a-8e29-29e11c936010}} - has an FORMULA  FORMULA -symmetry under which the
+two supercharges transform as doublets. The massless fields fall
+into FORMULA  representations labeled by their highest spins.
+Three kinds of multiplets appear:
+
+gravity multiplet: contains the graviton
+(2), two gravitini (FORMULA ) in an FORMULA  doublet and the
+graviphoton (1),
+
+vector multiplets: contain one photon (1), two fermions (FORMULA ) in an FORMULA  doublet
+and two real scalars (0),
+
+hypermultiplets: contain two hyperfermions (FORMULA )
+and four hyperscalars (0) in two FORMULA  doublets,
+
+where in
+parentheses we have written the spins of the corresponding
+particles.
+Now let us figure out how many multiplets of each kind we get from
+the compactificationHere we will only follow what happens
+to the massless bosons that arise from the compactification; the
+fermions complete the supermultiplets.. Upon dimensional reduction
+from FORMULA  to FORMULA , the massless wave equation splits into two
+pieces, schematically FORMULA . Harmonic
+forms FORMULA  satisfy FORMULA  and they are in
+one-to-one correspondence with cohomology classes on FORMULA , whose
+numbers are counted by the Hodge numbers of FORMULA ,
+ FORMULAFORMULA  is the number of harmonic forms of
+antiholomorphic rank FORMULA  and holomorphic rank FORMULA . A Calabi-Yau
+manifold has FORMULA , FORMULA  for FORMULA , one harmonic
+(0,3) form FORMULA  and its (3,0) conjugate FORMULA , and
+FORMULA , FORMULA . All other Hodge numbers are
+given by Poincaré duality FORMULA . There is a
+total of FORMULA  harmonic three-forms on FORMULA .. Thus
+harmonic forms on FORMULA  lead to massless fields in FORMULA .
+There are two multiplets that we obtain in FORMULA  compactification of
+type IIB on a Calabi-Yau: the gravity multiplet and the so-called
+universal hypermultiplet. The universal hypermultiplet
+consists of the FORMULA  dilaton FORMULA , the FORMULA  axion FORMULA , plus two
+more massless scalars FORMULA  and FORMULA  defined by writing  FORMULAThe Bianchi identity FORMULA 
+becomes FORMULA , which is the equation of
+motion for a massless FORMULA  scalar. and FORMULA .
+The bosonic content of the universal hypermultiplet is then FORMULA  and it will obviously be the same no matter which
+Calabi-Yau we choose to compactify on. Importantly, the string
+coupling constant FORMULA  always belongs to this
+hypermultiplet.
+To figure out the remaining multiplets, choose an integral basis of
+harmonic three-forms on the Calabi-Yau,
+(FORMULA ), with FORMULA , which satisfy
+FORMULA 
+define the periods as integrals of the holomorphic three-form over
+the 3-cycles dual to FORMULA  as
+FORMULA 
+and let FORMULA  denote an integral basis of harmonic
+two-forms, FORMULA . Using Greek letters for
+FORMULA  space-time indices and Latin letters for Calabi-Yau indices,
+and FORMULA  for a FORMULA  spacetime coordinate, the decomposition of the
+various fields is then
+
+FORMULA  FORMULA  - the FORMULA  graviton; FORMULA  - FORMULA  real FORMULA  scalars
+corresponding to Kähler deformations of the metric on FORMULA ;
+FORMULA  complex scalars FORMULA , FORMULA  corresponding to
+deformations of the complex structure of MA complex
+structure deformation mixes the holomorphic and antiholomorphic
+coordinates as FORMULA . If
+we lower the index on FORMULA  by contracting with the
+holomorphic three-form FORMULA  the resulting FORMULA  are in one-to-one
+correspondence with the harmonic (2,1) forms on the Calabi-Yau..
+The periods FORMULA  provide projective coordinates on the moduli
+space of complex structure deformations.
+
+FORMULA  -scalar in the universal hypermultiplet, as discussed;
+FORMULA  - FORMULA  real scalars.
+
+FORMULA  Similar to the FORMULA 
+case, we get one scalar field FORMULA  from the space-time part of FORMULA  and another
+FORMULA  real scalars
+FORMULA  from the two forms on FORMULA .
+
+FORMULA Decomposing FORMULA  as FORMULA 
+and imposing the self-duality condition FORMULA  we
+get FORMULA  FORMULA  massless FORMULA  gauge bosons. We also get
+FORMULA  scalars from decomposing FORMULA , where FORMULA  are harmonic (2,2) forms on FORMULA .
+
+The
+supersymmetry transformations (which we don't reproduce here) tell
+us how these bosonic fields group into multiplets. Out of the total
+of FORMULA  gauge fields, one linear combination -determined from
+the supersymmetry transformations - has to end up in the gravity
+multiplet and hence is called the graviphoton. We denote the
+graviphoton by FORMULA  and the remaining gauge bosons by
+FORMULA , where FORMULA  takes only FORMULA  values. The groupings
+of the bosonic fields are then
+
+the gravity multiplet (FORMULA , FORMULA )
+
+FORMULA  vector multiplets (FORMULA ; FORMULA )
+
+FORMULA  hypermultiplets (FORMULA )
+
+the IIB universal hypermultiplet (FORMULA )
+
+As shown in {{cite:caa2eb57-4ce0-4a1a-8e29-29e11c936010}}, supersymmetry does not allow
+couplings between vector and hypermultiplets in the leading FORMULA 
+effective action, if the hypermultiplets are neutral. Since FORMULA  is in a neutral hypermultiplet, supersymmetry then tells
+us that there are no string loop corrections to the tree-level
+results. In particular, the metric on the moduli space FORMULA  of the
+vector multiplets (the complex structure moduli for type IIB
+compactifications) is exact at tree level, and is read off from the
+kinetic terms in the FORMULA  Lagrangian.
+
+IIA Calabi-Yau compactification
+We now repeat the analysis of the previous section for type IIA on
+a Calabi-Yau FORMULA . The FORMULA  field content is now given by the
+graviton FORMULA , the NS-NS two form FORMULA , the dilaton FORMULA ,
+an RR two-form field strength FORMULA  and a four-form FORMULA . The dimensional reduction of the metric gives us, as
+usual, the FORMULA  graviton, FORMULA  real Kähler moduli FORMULA 
+and FORMULA  (complex) complex structure moduli FORMULA . The
+reduction of the FORMULA -field gives FORMULA  scalars FORMULA  and
+FORMULA . FORMULA  will just give one vector field and FORMULA  will
+give rise to FORMULA  vectors FORMULA  and FORMULA  real
+scalars via the decomposition FORMULA . One linear combination of the vector fields will
+be again the graviphoton. The multiplets we obtain are then
+
+the gravity multiplet (FORMULA , FORMULA )
+
+FORMULA  vector multiplets (FORMULA , FORMULA , FORMULA )
+
+FORMULA  hypermultiplets (FORMULA , FORMULA )
+
+IIA universal hypermultiplet (FORMULA )
+
+While FORMULA  (the Calabi-Yau must have a (1,1)
+Kähler form), FORMULA  can be zero (that is a Calabi-Yau with
+no complex structure deformations). In that case there is only one
+hypermultiplet - the universal one. Note that the numbers of vector
+and hypermultiplets we get in type IIA/IIB compactifications are
+consistent with mirror symmetry, which exchanges complex structure
+and Kähler moduli.
+The dilaton is again in a hypermultiplet, so once more the moduli
+space of the vector multiplets does not get corrected by string
+loopsSince in type IIA compactifications the vector
+multiplet scalars correspond to Kähler moduli, the metric on the
+moduli space can receive worldsheet FORMULA  corrections from
+string instantons wrapping the two-cycles in the Calabi-Yau (see
+also section 3.2). This is to be contrasted with type IIB, where the
+tree-level metric is exact..
+
+FORMULA  FORMULA  supergravity and special geometry 
+FORMULA  supersymmetry highly constrains the form of the Lagrangian.
+As far as the scalars are concerned, we already mentioned that the
+moduli space of the theory factorizes into a target space FORMULA 
+parameterized by the vevs of the vector moduli, and FORMULA ,
+parameterized by the hypermultiplet scalar vevs. Supersymmetry
+requires that FORMULA  be a special Kähler manifold
+{{cite:caa2eb57-4ce0-4a1a-8e29-29e11c936010}}, {{cite:cd62c416-e325-446b-b41b-4d0eb8a1c95d}}, {{cite:2df29f5e-e485-476a-8715-776085b482e8}}, while FORMULA 
+is restricted to be a quaternionic Kähler manifold
+{{cite:4dfd01ab-5bf9-4538-9129-2c92a0f0fe89}}. In these lectures we will only be concerned
+with the action for the vector multiplets. The kinetic terms are determined entirely from the holomorphic prepotential
+FORMULA  of the FORMULA  theory, which in our context is determined by the
+Calabi-Yau geometry and computed from tree level string theory. A
+more detailed recent review can be found in {{cite:553eb29b-b137-458d-931a-270e3c2612f3}},
+whose conventions we follow.
+Let us now collect a few soon-to-be-needed facts about the leading terms in the
+FORMULA 
+Lagrangian{{cite:caa2eb57-4ce0-4a1a-8e29-29e11c936010}}, {{cite:553eb29b-b137-458d-931a-270e3c2612f3}}, {{cite:fa513773-13e9-4457-8a24-effbe99c5fe5}}, which correspond to
+considering just the tree level term in the Calabi-Yau prepotential (FORMULA  in (REF ); see de
+Wit's lectures for more details). To
+be specific, we assume here that our FORMULA 
+action was
+obtained by compactification of type IIB. In the basis introduced in the previous section,
+the holomorphic three-form can be written as
+FORMULA 
+FORMULA  (or
+FORMULA ) turn out to be projective coordinates on the vector
+multiplet moduli space (parameterized by FORMULA , FORMULA ), whose geometry is completely determined by the
+choice of holomorphic three-form FORMULA . The Kähler
+potential on FORMULA  is given by
+FORMULA 
+which can be rewritten
+as
+FORMULA 
+The periods FORMULA  can be obtained from the
+prepotential as
+FORMULA 
+One
+choice of (non-projective) holomorphic coordinates on FORMULA  are
+special coordinates
+FORMULA 
+While using these coordinates is useful
+for a large number of purposes, please note that the symplectic
+invariance of the action is no longer manifest, which may sometimes
+not be very convenient. Note also that while FORMULA  and FORMULA 
+are holomorphic, sometimes (especially in the supergravity
+literature) people find it useful to define the rescaled periods
+FORMULA , which are
+no longer holomorphic.
+Another piece of information we need from the FORMULA  Lagrangian are
+the gauge kinetic terms. They read
+FORMULA 
+where FORMULA  are the the self-dual and anti-self-dual
+parts of the gauge fieldsIn four Lorentzian dimensions,
+(anti)self-duality reads FORMULA .. The expression for FORMULA  in terms of the prepotential
+and its derivatives is
+FORMULA 
+where FORMULA 
+denote the second derivatives of the prepotential with respect to
+FORMULA  and FORMULA  and FORMULA .
+One can easily show that
+FORMULA 
+a relation that will be useful later.
+The integral of FORMULA  over a sphere at infinity gives the
+magnetic charge of the field configuration we are studying.
+FORMULA 
+The total electric charge is usually
+given by the integral of the dual field strength over the sphere at
+infinity, which follows from the Maxwell equation FORMULA .
+Note that our action () gives rise to different
+equations of motion, which imply that the electric charge is given
+by
+FORMULA 
+where
+FORMULA 
+or
+equivalently
+FORMULA 
+One last thing we would like to
+explain is how to recognise which linear combination of the gauge
+fields is the graviphoton. We know that the particular combination
+has to be symplectically invariant, since which field is in the
+gravity multiplet should not depend on the choice of symplectic
+basis.
+From the field strengths FORMULA  and the periods one
+can construct a naturally symplectically-invariant field strength,
+given by
+FORMULA 
+which corresponds to the graviphoton. The graviphoton
+is also special in that its charge
+FORMULA 
+is proportional to the central charge of the FORMULA 
+supersymmetry algebraNote that the Q so defined rescales
+under projective transformations.. If we restrict our attention to
+just supersymmetric solutions (preserving 4 or 8 supercharges), then
+FORMULA 
+when evaluated on
+these solutions, so the graviphoton charge becomes
+FORMULA 
+which generally is
+complex.
+Having talked at length about electric and magnetic charges in the
+FORMULA  theory, we might as well mention how to obtain charged
+particles in string theory compactified on a Calabi-Yau FORMULA . The
+answer is simple: just wrap D-branes on the various cycles in FORMULA .
+The string theory D-branes source the FORMULA  RR fields, which from the FORMULA 
+point of view look like pointlike charges that source the
+different gauge fields which come from the dimensional reduction of
+the FORMULA  RR fields. In type IIB, D3-branes can wrap any of the FORMULA  different 3-cycles, giving a total of FORMULA 
+different electric and magnetic charges in FORMULA . The number of units
+of FORMULA  charge is determined by how many times we wrap the
+FORMULA -branes around the particular cycle.
+In type IIA the stable D-branes are even-dimensional. One can again
+produce any electric and magnetic charges by wrapping D6, D4, D2 and
+D0 branes on the various cycles in the Calabi-Yau. If FORMULA  labels the 2 (and also the dual 4)-cycles, then
+the most general set of charges we can get is FORMULA , which stands for D6, D4 (magnetic) and D2, D0 (electric)
+charges respectively.
+If we wrap a large number of branes at the same point in noncompact
+FORMULA  space, we will have to consider the backreaction of the metric
+and the other supergravity fields. It turns out that for large
+charges one can obtain macroscopic black holes
+{{cite:cad2b0c2-7dcc-445d-805f-3422081d15cd}}, {{cite:70b99be1-1b2f-457b-92bb-a68646faa826}}, which we will now turn to study.
+
+Black hole solutions
+In a classic paper {{cite:47c897bc-07bb-4a4b-9439-cecd4fff9df0}}, Gibbons and Hull have
+shown that minimal FORMULA  FORMULA  supergravity (whose bosonic sector is
+just Einstein - Maxwell gravity) has charged black hole solutions of
+the Reissner-Nordstrøm type. These solutions are parametrised by
+their mass FORMULA  and charge FORMULA . Since FORMULA 
+happens to equal the central charge of the FORMULA  supersymmetric
+theory, then the BPS bound requires that these black holes have FORMULA . If FORMULA  their Hawking temperature is nonzero, which
+means
+they can radiate and thus are not stable objects. Since we are
+looking for supersymmetric solutions, which have to be stable, the
+remaining candidate is the extremal solution with FORMULA . The
+Hawking temperature of these black holes is zero and the solution
+indeed turns out to be supersymmetric. These extremal objects have
+been the focus of many interesting investigations over the years.
+The easiest way to see whether a particular solution is
+supersymmetric is to look at the fermion variations for that
+particular background and require that they vanish. The only
+fermions present in minimal supergravity are the gravitini, whose
+variation is
+FORMULA 
+The solution will
+be supersymmetric if there exists a spinor FORMULA  such that
+FORMULA . It turns out that there exist four such
+spinors, so the solution preserves half of the original eight
+supersymmetries.
+FIGURE 
+The expression for the metric is
+FORMULA 
+where
+FORMULA 
+The solution carries charge FORMULA , as
+the expression we get for the graviphoton indicates
+FORMULA 
+As FORMULA , FORMULA  and the
+metric becomes just the flat metric on FORMULA . As FORMULA  the metric takes the form
+FORMULA 
+The near-horizon
+geometry is thus FORMULA , and the area of the horizon is
+FORMULA . The near horizon bosonic isometry group
+is FORMULA , which is part of the FORMULA 
+superisometry group containing the maximal eight supersymmetries.
+This means that FORMULA  is a maximal FORMULA  vacuum, and
+hence the Reissner-Nordstrøm solution we obtained can be thought
+of as a soliton radially interpolating between two maximally
+supersymmetric vacua {{cite:9020e226-8ab7-4c05-8f2d-c1de5365b1cf}}.
+FIGURE 
+
+The attractor equations
+Next, we add in vector multiplets
+{{cite:dd511a22-81c9-4c1b-bd00-3b8fb3044da7}}, {{cite:c2d68bcd-189c-4308-849f-fbc9d4009d87}}. The gravitini variations
+now acquire extra terms, which contain derivatives of the vector moduli
+FORMULA 
+where
+FORMULA 
+where in the above two and the following equations we have fixed the
+gauge FORMULA .
+The supersymmetry variations of the fermions in the vector multiplets
+(the gaugini) are
+FORMULA 
+We would like to
+see if a maximally supersymmetric near-horizon FORMULA 
+region with an FORMULA  superisometry group can still exist. This
+requires that the moduli FORMULA  be constant throughout the
+near-horizon spacetime. Then the gravitini variations vanish as
+before and the gaugino equations require that
+FORMULA 
+Integrating
+our previous solution for the graviphoton FORMULA  (where FORMULA  is a self-dual two-form) over the
+horizon FORMULA  we find
+FORMULA 
+for some complex
+constant FORMULA , which in general will depend on our choice of
+projective gaugeFor FORMULA ,
+we have FORMULA .. Similarly,
+FORMULA 
+We thus see that the moduli FORMULA , FORMULA  must take very
+specific values in terms of the black hole charges in order to
+recover the FORMULA  part of the solution in the
+near-horizon region. For reasons which will become clear shortly
+these equations are known as the attractor equations.
+The attractor equations, together with knowledge of the
+prepotential FORMULA , generically let
+us determine in principle (up to possible discrete choices) the real
+and imaginary parts of all FORMULA  in terms of the
+charges of the black hole. This can be easily checked by counting the
+number of equations and unknowns.
+The Bekenstein-Hawking entropy depends only on the near-horizon data
+and is simply given by the horizon value of
+FORMULA 
+After solving the attractor equations, the entropy
+becomes just a function of the charges of the black hole, and does
+not depend on any asymptotic data, such as the asymptotic values of
+the moduli (as long as we do not leave the basin of attraction).
+In general one might want to find the full black hole solution,
+including the asymptotic region. This is a harder problem, and one
+we will not need to solve for now because the full solution has the
+form of a radially interpolating soliton, with the moduli in the
+maximally-symmetric near horizon region determined by the charges of
+the black hole via the attractor equations. So, given the charges
+and the value FORMULA  of the moduli at infinity, the
+variation through space of FORMULA  will be such that it always goes
+to the horizon value FORMULA  determined by the attractor
+equations {{cite:0d88be0d-2b86-49bf-97c0-b1e7a424eb16}}. The path traced in moduli space by
+FORMULA  We here only consider spherically-symmetric
+solutions. It turns out there also exist multicenter solutions
+{{cite:aea11133-db40-43c2-bb83-cfa0aceefb98}}. is called an attractor flow.
+FIGURE 
+While at first this behavior of the vector moduli might seem a bit
+surprising, it is actually required for the existence of sensible
+counting of microstates of the black hole: the area of the horizon
+depends on FORMULA , but at the same time it is the logarithm
+of the number of microstates of the black hole - that is - the log
+of an integer. Therefore one does not expect it to smoothly depend
+on continuous parameters such as the asymptotic values of the
+moduli.However a more refined analysis shows that it can
+depend FORMULA  on the asymptotic
+moduli{{cite:aea11133-db40-43c2-bb83-cfa0aceefb98}}. This leads to very interesting
+modifications of the simplified picture presented here.
+See
+{{cite:61f048b8-7ec8-44b5-ac03-d360ce0867de}} for a recent discussion. Additionally, the
+entropy is not expected to depend on parameters that we may choose
+to tune at infinity, since it is an intrinsic property of the black
+hole. Note that there is no attractor mechanism for the
+hypermultiplet moduli, but this does not affect the above reasoning,
+since the horizon hyperscalar vevs drop out of the entropy
+formulaIn recent work by Sen {{cite:978750b9-6be6-407b-bf35-369a98610d50}}, it was
+shown that all fields that the entropy depends on at the horizon
+must be subject to an attractor mechanism. His reasoning works not
+only for supersymmetric black holes, but any black hole whose
+near-horizon symmetry group contains FORMULA 
+{{cite:c2670dd1-e342-477d-bb4c-38378b019f76}}, {{cite:022e6f7f-7dad-41df-ad3d-2bed990ad948}}, {{cite:050fba6c-8f75-41da-8412-40d1baf33ee8}}, {{cite:0a14645a-cb55-4ff3-be42-668b6ac39a90}}, {{cite:6984ac23-b578-4813-a838-6a18eee963dc}}, {{cite:1524113e-a558-4c14-bc1a-f1b5e2e2b83f}}..
+ A simple example
+Maybe the simplest example {{cite:082122c3-40db-4d74-b571-611a304a8074}} is to consider IIA
+compactified on a Calabi-Yau with moduli FORMULA . In the
+large-volume limit we can take the Calabi-Yau prepotential to be
+FORMULA 
+where FORMULA  are the intersection numbers of the Calabi-Yau. In that
+case we have
+FORMULA 
+We will
+consider a FORMULA -FORMULA  black hole, with charges FORMULA  and FORMULA . The attractor equations read
+FORMULA 
+It is easy to
+see that the solution to the above equations is
+FORMULA 
+where we have defined FORMULA . From (REF ) we can compute the
+macroscopic entropy associated with this black hole
+FORMULA 
+
+The general asymptotically flat solution
+Somewhat surprisingly, given a solution of the near-horizon
+attractor equations for the vector moduli as a function of the
+charges, it is possible to actually construct the full
+asymptotically flat solution with generic values for the moduli at
+infinity. Here we will concentrate only on the spherically symmetric
+case, although generic exact multi-center solutions are also known
+{{cite:aea11133-db40-43c2-bb83-cfa0aceefb98}}.
+Due to spherical symmetry, the metric must take the form
+(REF ). The insight of
+{{cite:856f1c33-6546-49c4-955c-4d0e67e564a7}}, {{cite:3af7fcde-239e-4bc4-b360-693aa46debac}}, {{cite:547a5ff8-1543-4fe9-9b75-1ca6a5be9b38}}, was to notice that
+the moduli fields that satisfy the BPS equations of motion
+{{cite:7628ffd6-7958-4fc7-bbfe-f6b155b3c869}} must obey equations that are very similar to
+the attractor equations (REF ) and (REF ), just that
+they hold throughout spacetime, and not only at the horizon of the black
+hole
+FORMULA 
+Here FORMULA  are harmonic functions on flat
+FORMULA  sourced by the charges FORMULA . It follows
+that whenever one can solve the attractor equations (which is
+generally a difficult task), one can also get the solution for the
+moduli everywhereWhen the attractor equations are not
+analytically soluble, spacetime solutions can still be explicitly
+written in terms of the implicit attractor solutions.. This is done
+with the aid of the entropy function, FORMULA , defined as
+FORMULA 
+By comparison with (REF ), we see that near the horizon FORMULA . Away
+from the horizon, FORMULA  is simply given by making the replacement
+FORMULA 
+in the
+entropy formula FORMULA . The
+constants FORMULA  can be determined from the asymptotic
+values of the moduli. Finally, the solution for the metric and the
+moduli is
+FORMULA 
+This is a very powerful result,
+since it allows us to reconstruct the solution for the metric and
+moduli throughout spacetime from just knowledge of the entropy
+as a function of the charges and the asymptotic values of the
+moduli.
+There is a catch though, in that even if the entropy itself is real,
+the entropy function is not guaranteed to be so. FORMULA  is a
+quartic polynomial in FORMULA , which is positive as FORMULA , but there is nothing to prevent it from becoming negative
+for an intermediate range of FORMULA , if we tune the moduli at infinity
+appropriately. Since FORMULA  is a metric component, the solution
+becomes unphysical if it becomes imaginary. Therefore one must
+always check whether our formal solution is actually physical by
+making sure that FORMULA  is real and the moduli FORMULA  belong
+to the physical moduli space for all values of the radius.
+Even if the asymptotic moduli are outside the regions for which the single-centred solution exists, the respective BPS
+state might still be realized as a black hole (or point particle)
+bound state {{cite:217b7bc3-26b8-42ef-a565-8c4e2441d4d8}}. The entropy function can be adapted {{cite:aea11133-db40-43c2-bb83-cfa0aceefb98}} to describe these
+multicenter supersymmetric black holes. One
+simply allows the harmonic functions to have poles at the location
+of each black hole carrying the corresponding charge. These
+solutions have many interesting properties and applications
+{{cite:c56394e0-a6f3-4261-a044-89fe22e4e40d}}, {{cite:217b7bc3-26b8-42ef-a565-8c4e2441d4d8}}, {{cite:c1d61850-7dc0-4bb2-802d-89bf90954fe2}}, {{cite:03cf369c-1848-401b-bdba-012ba2570baa}}, {{cite:03ac89a9-988c-4444-be61-e30f7d713fc0}}, {{cite:23193c04-16fd-4908-b3dc-43057dd6d8ff}}, {{cite:61f048b8-7ec8-44b5-ac03-d360ce0867de}},
+but are outside the scope of these lectures.
+Note that checking the reality of FORMULA  in the case of
+multicenter solutions is an extremely difficult task even for simple
+Calabi-Yaus, which could only be tackled numerically.
+Simple example redux
+As an example, let us again take the D4-D0 black
+hole, but now in a Calabi-Yau compactification that has only one complex Kähler modulus FORMULA , where FORMULA  denotes position in FORMULA , and the triple self-intersection number of the Calabi-Yau is FORMULA .
+The entropy is then FORMULA . The entropy function is
+FORMULA 
+where the harmonic functions
+are
+FORMULA 
+The solution for the modulus in this case is purely imaginary
+FORMULA 
+so now we only need to
+determine the constants FORMULA  in terms of the asymptotic value of
+the modulus FORMULA  (here the physical
+moduli space is the lower half plane). We choose a gauge so that as
+FORMULA  the scale factor FORMULA , which imposes the
+constraint FORMULA . We then get FORMULA , FORMULA .
+Note that the asymptotic Kähler class FORMULA  has to be
+positive for the solution to exist.
+The attractor equations only require that the B-field
+(proportional to FORMULA ) at the horizon be zero, but its value at infinity does not have to vanish,
+as our solution seems to indicate. Nonzero FORMULA  can be obtained by considering the entropy
+function associated to a black hole with additional FORMULA  charges, but in which we take the
+corresponding FORMULA .
+
+Generic entropy for cubic prepotential
+We now give the formula {{cite:082122c3-40db-4d74-b571-611a304a8074}} for the entropy of
+the generic D6-D4-D2-D0 black hole when the prepotential is simply
+FORMULA 
+Then the entropy of the
+black hole with charges FORMULA  is
+FORMULA 
+where FORMULA  is
+determined by solving the following equations for a set of variables
+ FORMULA
+FORMULA 
+which for general charges and intersection numbers
+are not analytically soluble. In any case, we have
+FORMULA 
+and
+FORMULA 
+Please note that our analysis is only valid when the Calabi-Yau is large both at
+infinity and at the horizon, since the entropy formula was derived using the
+large volume
+prepotential (REF ). One has to pay special attention if the attractor flow in question passes
+through a region in moduli space where the Calabi-Yau (or some cycle in the Calabi-Yau) is becoming
+small, since then instanton corrections to the prepotential become important {{cite:61f048b8-7ec8-44b5-ac03-d360ce0867de}}.
+In order for our supergravity analysis to be valid, we also need the FORMULA  curvature to be small
+everywhere, which translates into the requirement of large black hole charges.
+
+
+Higher orders 
+
+Corrections to the FORMULA  action
+In this subsection we briefly sketch how the FORMULA  invariant
+Lagrangian, including higher curvature corrections, is constructed
+using the so-called superconformal tensor calculus
+{{cite:caa2eb57-4ce0-4a1a-8e29-29e11c936010}}. The idea is to begin by constructing an action
+for FORMULA  conformal supergravity coupled to FORMULA  conformal
+vector multiplets and then gauge-fix it down to Poincaré
+supergravity coupled to FORMULA  vector multiplets. The advantage of
+this approach relies on the fact that more symmetries are realized
+in a linear and simple way in conformal supergravity, and also the
+off-shell multiplets are smallerIndeed the simplifications
+are so striking one suspects there may be some deeper physical
+significance underlying this "mathematical trick".. The basic
+ingredients are two types of superconformal multiplets
+
+the Weyl multiplet, which contains the vierbein FORMULA  and the
+two gravitini, among many other auxiliary fields. To incorporate it
+into the action, one actually has to construct an FORMULA  chiral
+multiplet FORMULA , which contains the gauge-invariant field
+strengthsVery roughly, the highest component of FORMULA  is
+the antiselfdual part of the Weyl tensor squared, while the lowest
+component is the square of the antiselfdual part FORMULA  of an
+auxiliary tensor field FORMULA  that gets identified with the graviphoton
+upon gauge-fixing.
+
+FORMULA  vector multiplets, each containing a scalar FORMULA , a gaugino FORMULA  and a gauge field FORMULA , among other stuff. One of these vector multiplets will provide the graviphoton for the Poincaré gravity multiplet, since the Weyl multiplet does not contain an independent gauge field.
+
+The action for the vector multiplets FORMULA  (where
+boldface type denotes a superfield) is constructed by taking a
+holomorphic function FORMULA  and integrating it over
+FORMULA  superspace. Dilation invariance requires that FORMULA  be
+homogenous of degree two in the FORMULA . To recover minimal
+supergravity we should only consider one vector multiplet FORMULA ,
+for which the prepotential is FORMULA . Integrating
+over superspace we obtain
+FORMULA 
+Upon conformal
+gauge-fixing FORMULA =const this gives rise to the Einstein-Hilbert term.
+The Maxwell term comes about in the usual way
+{{cite:05e3a0bc-39a8-4b7f-ace8-88daa74ebd38}}. A similar mechanism will give rise to
+the Einstein-Hilbert, Maxwell and scalar terms in the non-minimal
+action. Note that we will get only FORMULA  scalars out of the initial
+FORMULA , since one combination gets gauge-fixed to a constant.
+In order to include higher curvature terms in the Lagrangian, one
+has to add couplings to the chiral multiplet FORMULA . This is achieved
+by simply extending the holomorphic prepotential to also be a
+function of FORMULA , FORMULA , which can be expanded as
+FORMULA 
+The FORMULA  are now required to be homogenous of
+degree FORMULA . Quite interestingly, they are related to topological
+string genus FORMULA  amplitudes, as we will explore later in these
+notes.
+
+Wald's formula
+The Bekenstein-Hawking area law for the macroscopic entropy of a
+black hole was derived in Einstein gravity. It cannot possibly
+remain exactly valid when higher
+curvature
+corrections to the action are included, as the area is not invariant under field redefinitions (e.g. which mix
+FORMULA  and FORMULA ), while the entropy must be. It was
+shown in {{cite:c44783e1-085c-48e8-b113-40872cab621c}}, {{cite:5f1f7519-a29f-48cb-bf2f-25cfe3371f08}} how the area law has to
+be modified in the presence of FORMULA  or higher derivative terms in
+the Einstein action in order that the first law of black hole
+mechanics - the spacetime manifestation of the first law of
+thermodynamics - remain valid. The first law of black hole mechanics
+can be put in the usual form
+FORMULA 
+where FORMULA  is the surface gravity
+on the horizon, if FORMULA  is given byThis is the correct
+formula in the case in which the effective action contains powers of
+the Riemann tensor, but no derivatives thereof.
+FORMULA 
+Here FORMULA  is the binormal to the horizon FORMULA  and
+FORMULA  is the volume element on FORMULA . Note that if the
+Lagrangian only consists of the Einstein-Hilbert term, then FORMULA 
+equals the area of the horizon, but FORMULA  and higher curvature
+corrections to the action do generically modify the area law.
+Thus, upon adding higher curvature terms to the FORMULA  supergravity action,
+the entropy of the black hole solutions gets modified in two ways: first, the metric on
+the horizon changes as a consequence of the modified equations of motion. Second, the entropy
+formula itself receives corrections according to (REF ).
+The case that concerns us - of BPS black holes in FORMULA  supergravity
+coupled to vector multiplets - was considered
+in {{cite:b1155b8b-1510-432d-a180-451904da46ea}}, {{cite:101473f5-7969-4462-8d3e-243e592cde16}}, {{cite:4215a600-2a64-4900-a3ba-efae92d110f4}}, {{cite:487e4463-4cd5-438f-83bd-dfad47877324}}, {{cite:a4a41483-0e7b-48a7-a935-49ab54b06fb8}}. The authors
+argued that after adding the terms (REF ) to the FORMULA  supergravity action, the near horizon geometry was still FORMULA , and that the moduli were still subject to an attractor
+mechanism. Their horizon values were fixed by the following
+generalisation of the attractor equations
+FORMULA 
+FORMULA 
+where now FORMULA  is the derivative of the full
+corrected prepotential FORMULA . Taking into account the combined effect of the metric backreaction and
+Wald's corrections to the area
+law, the expression for the entropy becomes
+FORMULA 
+evaluated on the horizon. In lecture 3 we will
+use this result to match the perturbative expansion of the black
+hole partition function to the perturbative expansion of the
+topological string.
+
+The MSW CFT
+In this subsection we discuss the CFT duals known for a large class
+of Calabi-Yau black holes. Finding the dual for the most general
+case is a very interesting unsolved problem. A dual
+CFT description {{cite:58c216f6-ce39-4b29-9914-bb0451c68c37}} (often known as the MSW CFT) has been proposed in the still fairly general case
+in which the D6 charge is zero, but the D4-D2-D0 charges and the Calabi-Yau itself
+are (almost)
+arbitrary. We will denote the charges by FORMULA  and the intersection numbers of the Calabi-Yau FORMULA 
+by FORMULA . As before, we define FORMULA .
+Upon lifting to M-theory, the D4-D2-D0 brane configuration
+becomes an M5-brane wrapped on FORMULA , where the surface  FORMULAThe charges must be such that FORMULA  is very ample
+{{cite:58c216f6-ce39-4b29-9914-bb0451c68c37}},
+which is the case if the Kähler class is large. is holomorphically embedded in FORMULA  (as a consequence of supersymmetry)
+and FORMULA  stands for the M-theory circle all throughout this lecture. FORMULA  decomposes as FORMULA  where FORMULA  is an integral basis of
+4-cycles on FORMULA . The M5 carries worldvolume fluxes that give rise to
+induced M2-brane charges (FORMULA ), as well as FORMULA  units of momentum along the FORMULA .
+From the supergravity point of
+view, under the M-theory lift the D4-D2-D0 black hole becomes an FORMULA -wrapped
+black string, whose near
+horizon geometry is locally FORMULA . Note that the
+M-theory lift of a D6-brane is Taub-Nut space,
+so if we considered black holes with D6 charge the eleven-dimensional geometry would no longer be FORMULA ,
+which is partly the reason that a microscopic description is not known in that caseQuite surprisingly,
+the MSW string remakes its appearance for certain black holes with nonzero D6 charge {{cite:f5e4d9f0-cb58-4eaa-b523-1a3862b5e22d}}, which may
+imply that all IIA black holes are described by some deformation of the MSW CFT. This makes it all the
+more worth studying, of course..
+The low energy dynamics on the M5 worldvolume is captured by an effective FORMULA  CFT living on
+FORMULA  (time). This FORMULA  CFT has FORMULA  supersymmetry, inherited via dimensional
+reduction from the FORMULA  supersymmetry of the FORMULA  theory living on the M5 worldvolume.
+Its low-energy excitations arise as zero-modes of the fluctuations of the M5 worldvolume
+fields (embedding, self-dual 3-form FORMULA  and the right-moving (RM) FORMULA  fermions FORMULA ) on FORMULA , as follows
+
+zero-mode fluctuations of the embedding correspond to cohomology classes on FORMULA .
+
+zero-modes of the FORMULA -field correspond to self-and anti-self-dual forms on FORMULA , as can be seen from the decomposition
+FORMULA 
+If the 2-form FORMULA  is self-dual, then the self-duality of FORMULA 
+implies that the scalar modulus FORMULA  has to be right-moving,
+while if FORMULA  is anti-self-dual, then FORMULA  is left-moving.
+Thus we obtain FORMULA  LM and FORMULA  RM scalars in the CFT from the
+dimensional reduction of the FORMULA -field, where FORMULA  are the
+numbers of self-dual and respectively anti-self-dual two-forms on FORMULA .
+
+fermions in the CFT arise from FORMULA  forms on FORMULA  and they are RM. This can be easily seen
+by decomposing the FORMULA  RM fermions as
+FORMULA 
+where FORMULA  are fermionic zero-modes on FORMULA , which are known to
+be in one-to-one correspondence with harmonic FORMULA 
+forms.There are no left-moving fermions because they would
+be in one-to-one correspondence with FORMULA  forms on FORMULA , of which
+there are none since FORMULA . The number of RM fermions
+is FORMULA  and it can be shown to equal the number of RM
+bosons, as required by supersymmetry on the right.
+
+there is one distinguished FORMULA  multiplet in the FORMULA  CFT,
+called the centre of mass multiplet. Its bosonic content is
+given by the three massless scalars FORMULA  that parameterize the
+motion of the black hole as a whole in the three noncompact
+directions and one right-moving mode FORMULA  of the FORMULA  field,
+which corresponds to the unique self-dual form on FORMULA  which is
+extendible to a 2-form on FORMULA . This is of course the pullback of the
+Kähler form on FORMULA  - FORMULA  - which has to be proportional to FORMULA 
+at the horizon, as a consequence of the attractor equations. In
+terms of the scalars  FORMULA
+FORMULA 
+The fermionic parteners of these four bosons are
+the goldstinoes FORMULA 
+that arise from the four supersymmetries
+broken by the brane configuration.
+
+The resulting central charges, including a
+subleading correction proportional to the second Chern class of FORMULA ,
+are {{cite:58c216f6-ce39-4b29-9914-bb0451c68c37}}
+FORMULA 
+The MSW CFT reproduces the area-entropy law. If one is only
+interested in the D4-D0 system, then the left-moving oscillator
+momentum is FORMULA , while the right-moving oscillator momentum has to
+be zero by supersymmetry. Using Cardy's formula, the entropy reads
+FORMULA 
+in
+agreement with the macroscopic formula (REF ).
+What happens if we add D2/M2 charges? This corresponds to turning on
+M2 brane fluxes (that is, nonzero FORMULA  flux on cycles of the
+form FORMULA , with FORMULA  a two-cycle on FORMULA ) on the M5
+worldvolume. In the effective FORMULA  theory, membrane charge is the
+zero-mode momentum FORMULA  carried by the massless
+scalars that arise from the dimensional reduction of the three-form
+FORMULA , and thus it is a vector in the Narain lattice of massless
+scalars. FORMULA  contributes to the FORMULA  momentum along the string.
+The effect is to shift the momentum available to be distributed
+among the LM oscillators by
+FORMULA 
+FORMULA  is the inverse of the matrix of charges FORMULA . The entropy gets modified to FORMULA , and it is straightforward to check that this agrees with the
+supergravity formula (REF ) for FORMULA =0.
+
+ The (modified) elliptic genus
+So far we have been loosely speaking about the “entropy” of the
+black hole and its CFT dual. In fact, what we are really looking for
+is a BPS protected quantity which does not change as one
+extrapolates between the supergravity and CFT regimes. Such an
+object is the (modified) elliptic genus, which is an index that
+counts a weighted number of ground states. At leading order (given
+by the area law), which quantity we use seems not to matter
+muchPresumably what happens is that one or both of FORMULA 
+and FORMULA  are proportional to FORMULA , but with different
+proportionality constants, so that the difference between the log of
+the total number of states and the log of the index is subleading.,
+but at subleading orders we will definitely need to be more
+precise.Actually, the first subleading correction to the
+entropy is included in (REF ) expression and matches
+{{cite:58c216f6-ce39-4b29-9914-bb0451c68c37}}: on the microscopic side it involved the
+FORMULA  correction to the central charge, and on the
+macroscopic side it came from the Gauss-Bonnet term in the FORMULA 
+effective action.
+Let us give a very simple example of what an index is
+{{cite:871d3f2c-2c0b-4f88-9c38-d1b1167f9a74}}. Take supersymmetric quantum mechanics with one
+supercharge FORMULA  (FORMULA ), and define the Witten index as
+FORMULA 
+where FORMULA  is the
+fermion number operator. Since for states of nonzero energy FORMULA , FORMULA  is a state with the same energy but
+opposite fermion number (mod 2), FORMULA  only gets contributions from
+the ground states, since they are annihilated by FORMULA  and thus are
+not paired. If we denote by FORMULA  and FORMULA  the number of bosonic
+and respectively fermionic ground states, then FORMULA .
+The index is rigid under small deformations of the parameters in the
+Hamiltonian.
+This simple index actually vanishes for the MSW CFT
+{{cite:e1b1e534-b3a2-40a8-af69-b466865e4503}}, {{cite:4b9e91fb-7afa-400c-a53a-d2a97648d0ef}}, whose symmetry algebra on the right is a
+Wigner contraction of the large FORMULA  superconformal algebra. This
+consists of a small FORMULA  superconformal algebra plus four bosonic
+and four fermionic generators, which are nothing but the fields in
+the center-of-mass multiplet FORMULA . This
+multiplet has equal numbers of bosonic and fermionic excitations and
+hence gives a prefactor of zero for the Witten index.
+The generators of the small FORMULA  are four supercurrents FORMULA , three bosonic currents FORMULA  that
+generate a level FORMULA  FORMULA  Kač-Moody algebra, and the usual Virasoro generators with central charge FORMULA . We
+have as usual two choices of boundary conditions for the fermionic operators, periodic (R) or antiperiodic (NS).
+The small FORMULA  generators have certain commutation relations
+{{cite:4b9e91fb-7afa-400c-a53a-d2a97648d0ef}} with the
+fermionic operators FORMULA  and FORMULA .
+We will only need the R-sector commutators
+FORMULA 
+We wish to define an index which is nonvanishing for MSW. Consider
+the following table of the R sector ground states for the center of
+mass multipletHere we have chosen the ground state to satisfy FORMULA .
+TABLE 
+From this we see that a modified index that will not vanish due to
+the trivial contribution of the center of mass multiplet can be
+achieved by evaluating instead the trace of FORMULA , as shown in the third line of the table. It is an
+easy exercise to check that for states FORMULA  for which all
+FORMULA  the contributions from the
+various members of the supermultiplet cancel, so the modified trace
+defines a new index.
+Interesting subtleties arise for the case in which only some of the
+supercharges annihilate the state. Consider for example a state that
+carries charges  FORMULA
+FORMULA 
+Acting with FORMULA  on FORMULA  will produce states proportional to FORMULA , as can be checked using the commutation relations
+(REF )
+FORMULA 
+This is simply the statement that FORMULA 
+preserves the supersymmetries nonlinearily, as we discussed before.
+As far as the index is concerned, the arithmetics is the same as for
+the Ramond ground states; in particular, FORMULA  (in our random convention), and the contribution to the
+modified index is again 1.
+Finally, we can refine our index by introducing potentials FORMULA  for
+the FORMULA  conserved FORMULA  charges. The resulting index is
+called the modified elliptic genus of the MSW CFT
+FORMULA 
+Here FORMULA  and the fermion number
+is
+FORMULA 
+If only RM
+ground states contributed to the index, then FORMULA  would be a
+holomorphic function of FORMULA , but due to the contribution of the
+states of the form (REF ), some dependence on FORMULA  is
+also introduced, since
+FORMULA 
+Nevertheless, this
+dependence is entirely due to the RM boson in the center-of-mass
+multiplet, so it is under control. In fact, it can be shown
+{{cite:9364bed5-f59d-4329-be04-718e3015f655}} that the FORMULA  dependence of the
+elliptic genus is entirely of the form
+FORMULA 
+where
+FORMULA  are
+lattice theta-functions and the sum has a finite number of
+terms.
+To see how (REF ) comes about, recall that the FORMULA - dimensional lattice
+lattice FORMULA  is a sublattice of the larger FORMULA -dimensional lattice FORMULA  of
+FORMULA  zero modes on the FORMULA . Consider the unit
+cell FORMULA  of FORMULA  in FORMULA , drawn in figure 6.
+Let FORMULA  be a shift of the lattice FORMULA  by a lattice
+vector FORMULA , and let FORMULA  be the lattice of vectors
+in FORMULA  normal to vectors in FORMULA  (this corresponds to directions
+in FORMULA  perpendicular to the plane of the figure). It is clear that one can
+rewrite the partition sum in FORMULA  as a sum over
+FORMULA , where FORMULA  runs over the points in
+FORMULA , a total of FORMULA  of them. The sum over FORMULA 
+gives a FORMULA -function that encodes the FORMULA  and FORMULA  dependence,
+while the contribution from FORMULA  is clearly holomorphic.
+We note that (REF ) was used to derive an exact expression
+for the elliptic genus in some special cases {{cite:4b9e91fb-7afa-400c-a53a-d2a97648d0ef}}.
+FIGURE 
+At last, let us mention the existence of a spectral flow
+automorphism of the FORMULA  algebra, which acts the following way on
+the bosonic generators:
+FORMULA 
+If the flow parameter
+FORMULA  is integer the spectral flow acts on the NS and R sectors
+separately, while if FORMULA  is half-integer, the NS and R sectors
+get interchanged. Hence the elliptic genus (REF ) can also be
+computed as a trace over the NS sector of the appropriately shifted
+variables
+FORMULA 
+Now
+the contributions will come from the NS states that are related by
+spectral flow to the Ramond ground states. These are the chiral
+primaries and have FORMULA . Supergravity in
+FORMULA  (or a quotient thereof) oftentimes produces NS boundary
+conditions for the fermions in the CFT living on the boundary torus.
+The trace over chiral primaries is then a more natural thing to
+compute from the supergravity perspective.
+
+
+The topological string 
+In this lecture we briefly review what the A-model topological
+string is and computes, and describe the Gromov-Witten (GW)
+invariants. The many details omitted here
+can be found for example
+in
+{{cite:1adedbcf-07c2-463c-b89d-ba0bd46a35f1}}, {{cite:106006b4-95eb-44b3-8102-5ea854c21037}}, {{cite:4606f09e-b8cf-4422-8cfe-85102a2058f5}}, {{cite:bd36286d-da79-4c3c-bc8e-4f25acad864e}}, {{cite:79b2150e-8dcf-46b0-89c4-17c18f6f1981}}, {{cite:45b941a6-b40e-44b7-9efa-3aec4ab6beae}}.
+Twisting the string
+The topological string is obtained by twisting an FORMULA 
+superconformal FORMULA  sigma-model and coupling to FORMULA  gravity. We
+will start with just an untwisted FORMULA  FORMULA -model and build
+our way up to the A-model topological string. Due to the high amount
+of supersymmetry, the target space FORMULA  of the FORMULA -model is
+required to be Kähler. The action is then
+FORMULA 
+where the coupling constant
+FORMULA  sitting in front of the action can be thought of as
+FORMULA .
+The FORMULA  algebra has four worldsheet currents FORMULA , with spins
+FORMULA  (and their antiholomorphic counterparts, denoted by tilde).
+FORMULA  is the energy-momentum tensor, FORMULA  is the FORMULA  FORMULA -symmetry current of the FORMULA 
+algebra, and FORMULA  are the conserved supercurrents for the two worldsheet supersymmetries; the FORMULA  superscript denotes their FORMULA -charge. From the FORMULA  algebra, the relations that are relevant to our discussion are the R-sector anticommutators
+FORMULA 
+One can combine the two possible FORMULA -symmetries into a vector
+and an axial current FORMULA , FORMULA .
+After quantising the theory, the quantum measure is invariant under
+the axial FORMULA -symmetry only if FORMULA  is a Calabi-Yau manifold (of any
+dimension, so far), as it must satisfy
+FORMULA 
+Next, we would like to make our FORMULA -model topological, which
+means that the observables in the theory should only depend on the
+topological data of the target space FORMULA . A way to accomplish this
+is by constructing a fermionic symmetry - generated by a
+(scalarThe reason that we need a scalar supercharge is
+that we would like our model to be defined for a worldsheet FORMULA  of
+arbitrary curvature and genus. If FORMULA  is fermionic, then the
+supersymmetry parameter FORMULA  has to be a Killing spinor on FORMULA ,
+which in general does not exist. If FORMULA  is scalar though, then FORMULA 
+is a Grassmann scalar, which exists for any worldsheet.) BRST
+charge FORMULA , which is nilpotent - so that FORMULA . The physical
+operators in the topological theory are then defined to be FORMULA 
+cohomology classes. Ultimately we will identify FORMULA  with a
+cohomology operator on FORMULA , such that the theory becomes
+topological. We further require the energy-momentum tensor to be
+FORMULA -exact in order to ensure the independence of topological
+correlation functions of the FORMULA  worldsheet metric. All this is
+accomplished by twisting according to
+FORMULA 
+and taking FORMULA . This shifts the spin of the various
+operators by an amount proportional to their FORMULA -charge
+FORMULA 
+In particular, now FORMULA  and FORMULA  have spin 1,
+while FORMULA  and FORMULA  have spin 2. Thus FORMULA  can act
+as our BRST charge, and FORMULA . Next we need to
+couple the FORMULA -model to a worldsheet metric FORMULA  and then
+perform the path integral over FORMULA  too. In order to define
+string amplitudes, it is quite useful to note that the structure of
+the twisted FORMULA  algebra is isomorphic to the structure we obtain
+by applying the BRST procedure to the usual bosonic string. The
+correspondence between the various operators is
+FORMULA 
+Remember that if we want to compute genus FORMULA  amplitudes in the
+bosonic string we need to integrate over the moduli space FORMULA  of
+genus FORMULA  Riemann surfaces, with FORMULA  insertions of the FORMULA  ghost
+(for FORMULA ), which provide the measure. In view of the
+correspondence between FORMULA  and the FORMULA  ghost, we define the genus
+FORMULA  topological string amplitude asFor FORMULA  see
+e.g.{{cite:4606f09e-b8cf-4422-8cfe-85102a2058f5}}, {{cite:a6b0fcae-1ce3-41b8-941a-29ca8bebf993}}, {{cite:1adedbcf-07c2-463c-b89d-ba0bd46a35f1}}. Note
+that the counterpart of the FORMULA  ghost could be either
+FORMULA  or FORMULA , depending on the twist we perform
+for the RM. Here we have made the choice corresponding to the
+A-model topological string.
+FORMULA 
+where FORMULA 
+are Beltrami differentials, parametrising complex structure
+deformations of the moduli space of genus FORMULA  Riemann surfaces in
+FORMULA . It turns out that “ghost” charge conservation makes almost
+all FORMULA  vanish, unless we take the complex dimension of FORMULA  to be
+three. Therefore the case in which FORMULA  is a Calabi-Yau three-fold
+provides the richest examples, which we will assume from now on.
+The topological string “free energy” is defined as a perturbative
+expansion in the topological string coupling constant,  FORMULA
+FORMULA 
+The topological string partition function is
+FORMULA 
+Note that one could have equally considered a twist of the form FORMULA . In that case FORMULA  would become the BRST
+operator. Since we can do independent twists for the LM and for the
+RM, we end up with two inequivalent possible topological string
+theories, depending on which supercurrent becomes the BRST charge
+FORMULA 
+As advertised, in these notes we will only concentrate on
+the A-model topological string.
+
+The A-model topological string
+The A-model twist is
+FORMULA 
+which shifts the spins as
+FORMULA 
+The local observables in the
+theory are in one-to-one correspondence with the de Rham cohomology
+classes on FORMULA . Correlation functions only receive contributions
+from configurations that satisfy the classical equations of motion,
+which in the A-model are holomorphic maps from the string worldsheet to the target
+space. The action can be written as a FORMULA -exact term (which does
+not contribute) plus
+FORMULA 
+where FORMULA 
+are the wrapping numbers of the image of the string worldsheet
+FORMULA  around the various 2-cycles dual to FORMULA  and
+FORMULA  are the
+complexified Kähler moduli of the Calabi-Yau . We also set FORMULA . To compute the topological string partition function,
+we need to integrate over the moduli space FORMULA  of maps
+from a genus FORMULA  Riemann surface to the Calabi-Yau FORMULA  - where the
+image belongs to the homology class FORMULA  of FORMULA , weigh it by
+the exponential of minus the euclidean action (REF ), and
+then sum over genera. From (REF ) it is clear that the
+A-model topological string only depends on half the information of
+the Calabi-Yau - that is - only on the Kähler structure.
+The Gromov-Witten invariants FORMULA  are
+defined as the expansion coefficients in
+FORMULA 
+which
+encode the contributions which are nonperturbative in FORMULA .
+FORMULA  is roughly the euler character of FORMULA .
+There are also perturbative contributions to FORMULA , that are not
+encoded in FORMULA . These contributions can be computed in just
+low-energy field theory, and are only present at genus 0 and 1
+FORMULA 
+ FORMULAWhat the topological string computes
+Recall from our discussion in section (2.7) that higher curvature
+corrections to the FORMULA  supergravity action in FORMULA  are encoded in
+a holomorphic function of the vector moduli and the Weyl multiplet
+FORMULA 
+where FORMULA  and
+FORMULA  are the self-dual and anti-self-dual parts of the
+graviphoton and Weyl tensor respectively. In usual string theory,
+such a contribution to the effective action can be computed by
+evaluating the correlation function of two graviton and FORMULA 
+graviphoton vertex operators on a genus FORMULA  string worldsheet. This
+computation has been performed in {{cite:a374cfed-3bd7-4596-919c-f87b4fbdac63}} and it
+was found that the amplitude for this scattering process is
+precisely given by the genus FORMULA  topological string amplitude FORMULA .
+FIGURE 
+
+The OSV conjecture
+In lecture 2 we discussed black hole attractors in the context of
+type IIA string theory compactified on a Calabi-Yau FORMULA . We found
+that the entropy of these black holes only depended on the
+Kähler moduli of the compactification, which in turn are fixed
+to their attractor values at the horizon of the black hole. Also,
+remember that hypermultiplet scalars - which in type IIA correspond
+to the complex structure deformations of FORMULA  - completely dropped
+out of the story. Interestingly, in the A-model topological string
+half of the information on the Calabi-Yau data also drops out due to
+the twist.
+This is a first clue towards a connection between
+attractor black holes and topological strings: they are both
+functions on half of the Calabi-Yau moduli space. It would be
+strange if in string theory we had two natural functions of the same
+variables that were not related in some simple way. Indeed we shall
+see that, when the comparison between the two quantities is properly
+formulated, the relation between the indexed black hole entropy and
+topological string partition functions appears to take the simplest
+imaginable form.
+Mixed partition functions
+If we want to make an exact or all orders comparison between the
+partition functions of two systems, we must first be precise about
+exactly which ensemble we are using. A statistical system or
+ensemble can be characterized either by conserved quantities such as
+the energy FORMULA  or by conjugate potentials such as the inverse
+temperature FORMULA . There are associated microcanonical and
+canonical partition functions FORMULA  and FORMULA , , which for the case
+of energy and temperature are related by
+FORMULA 
+More generally, if there are many
+conserved charges/potentials, partition functions can be defined in
+which some variables are treated canonically and others
+microcanonically. We refer to these as mixed partition
+functions associated to mixed ensembles.
+For every type of (mixed) ensemble there is an associated definition
+of entropy. For example, in the microcanonical ensemble the entropy
+is defined as
+FORMULA 
+while in the
+canonical ensemble it is defined by
+FORMULA 
+To leading order in the saddle point
+approximation one has
+FORMULA 
+with FORMULA . However in general, for a
+finite system and beyond leading order, FORMULA  and FORMULA  are not
+related as simply as in (REF ) - by just a change of variables.
+Rather, an integral transform is needed. Hence if we want to discuss
+subleading corrections to the entropy we must specify exactly which
+ensemble we are using to define the entropy. It is meaningless to
+give an all-orders formula for the entropy without this
+specification.
+So the question arises: exactly which entropy does Wald's formula,
+discussed in section 2.7.2, compute? Wald's derivation is
+ultimately based on a quantum field theory analysis. The answer then
+follows from the fact that in quantum field theory the boundary
+conditions amount to an implicit choice of ensemble. For example, if
+we sum over geometries with asymptotic periodicity FORMULA , we are
+working in the canonical fixed-temperature ensemble. There is no
+field theory path integral formulation for the microcanonical
+ensemble. The best we can do is a Laplace transform
+FORMULA 
+which requires knowledge of FORMULA 
+for all FORMULA . So for a finite-temperature black hole Wald's formula
+computes FORMULA  rather than FORMULA .
+What about charges? For electromagnetic charges, instead of fixing
+the radius of the circle at infinity, in the field theory path
+integral one fixes the boundary value of the field FORMULA  (the
+electric Wilson line) at infinity, as well as the topological class
+of the gauge field. This corresponds to fixing the magnetic charge
+FORMULA  while summing over all electric charges with weights FORMULA . Hence field theory gives a mixed ensemble which treats
+electric charges canonically and magnetic charges microcanonically.
+This then is the ensemble in which the entropy computed by Wald's
+formula is definedSee also {{cite:d31dbe7f-a469-4cc6-8e51-57b3db4b9e19}} for
+a discussion of thermoodynamic ensembles.. We will see this is
+crucial for comparison of Wald's formula for the entropy to the
+topological string partition function.
+We note that an independent but similar issue is whether or not the
+the ensemble is weighted with minus signs for fermions. This is
+again related to path integral boundary conditions and is discussed
+below.
+
+Brute force derivation of OSV
+Now we would like to get to work and compute the corrections to the
+entropy, using Wald's formula. The first question is, which terms
+from the corrected FORMULA  action do actually contribute. The working
+assumption has been {{cite:101473f5-7969-4462-8d3e-243e592cde16}}Reference
+{{cite:101473f5-7969-4462-8d3e-243e592cde16}} does not address all the issued involved
+and this point remains in need of further clarification. Some
+relevant, but still incomplete, observations are made section 4.3.1
+below. that if we compute the indexed entropy - defined in the
+usual way as a Legendre transform of the supersymmetry-protected
+indexed partition function (more precisely, the modified elliptic
+genus (REF )) that there is a (perturbative)
+nonrenormalization theorem implying that it receives contributions
+only from supersymmetry-protected terms in the effective action.
+These are the terms which involve integrals over only a chiral half
+of superspace and so cannot involve hypermultiplets. Hence we expect
+that only terms in the action that are built exclusively out of
+vector multiplets can correct the entropy. These are given of course
+by (REF ), and their contribution to the entropy has been
+quoted in section 2.7
+FORMULA 
+Naively, one might evaluate the FORMULA 
+at their attractor values (REF ) and (REF ) and view
+this as an expression for the entropy as a function of the magnetric
+and electic charges FORMULA  and FORMULA . However, according to the
+discussion of the previous section, this is not correct:
+(REF ) comes from a mixed ensemble and should be viewed as a
+function of the magnetic charges FORMULA  and the electric
+potentials, which shall be identified shortly as FORMULA .
+The above expression for the entropy
+can be rewritten in a nicer form by using the homogeneity property of the prepotentialFORMULA . and the attractor equations
+FORMULA 
+which let us eliminate FORMULA  and
+FORMULA  in favor of FORMULA  and FORMULA . In terms of FORMULA  and
+the imaginary part of FORMULA  this is
+FORMULA 
+where
+FORMULA 
+The second half of the attractor
+equations then reads
+FORMULA 
+which implies that FORMULA  is obtained from FORMULA  in
+exactly the same way that the entropy is obtained from the logarithm of
+the mixed partition function. Namely, FORMULA  can be thought of as the Legendre transform with
+respect to the canonical variables only
+FORMULA 
+provided that the
+FORMULA  are indeed identified as the conjugate potentials to the
+electric charges FORMULA .
+In conclusion, FORMULA  is the logarithm of the partition function computed in a mixed
+ensemble, in which one fixes the magnetic charges and electric
+potentials at infinity. We will loosely refer to FORMULA  as the free
+energy though strictly speaking it differs by a factor of FORMULA 
+from the usual definition.
+One relatively illuminating way to write the mixed free energy is by
+picking a gauge in which FORMULA , where FORMULA  is the graviphoton
+charge. Then, using the homogeneity properties of FORMULA , we have
+FORMULA 
+which shows very clearly the perturbative nature of FORMULA  as
+an expansion around large graviphoton charge. Now, the topological
+string partition function is also defined by a perturbative
+expansion in FORMULA  (REF ) and, as mentioned in section
+2.7, it is proportional to the supergravity prepotential FORMULA . By comparing the first two terms (REF ) in the
+expansions of the two prepotentials, one can fix all normalizations
+and finds
+FORMULA 
+with the following correspondence between the
+arguments on the two sides of the equation For a D4-D2-D0
+black hole, in the large-charge, large Calabi-Yau volume
+approximation, FORMULA  if we uniformly scale up the charges of
+the black hole. This is consistent with the fact that we are
+performing a perturbative expansion in the topological string
+coupling constant.
+FORMULA 
+From (REF ) one finds
+FORMULA 
+which can be
+written in the more expressive form
+FORMULA 
+with the variables
+identified as in (REF ). As there are several assumptions
+that went in to the derivation of (REF ) it is known as the
+OSV conjecture. It is important to note that the conjecture is a
+statement about the equality of two perturbation expansions. Indeed
+at the nonperturbative level it is not clear how either side of
+(REF ) is even defined.
+Note that the factor of `2' in the exponent of (REF ) was
+obtained by the brute force method – just carefully keeping track
+of all normalizations. So far there is no hint as to why it should
+not equal 1 or 17 or any other real number. Such a simple relation
+demands a simple physical explanation, which we will provide in the
+next section.
+
+Why  FORMULA
+In this section we will give a heuristic explanation of why the two
+complex conjugate factors FORMULA  and FORMULA  appear in the
+black hole partition function. The goal here is not to give a
+perturbative proof of the OSV conjecture – many points would have
+to be filled in and clarified – but rather to provide a compelling
+physical pictureWe follow here {{cite:096c29cb-35df-4168-b1d9-fc0331a86b3a}},
+which in turn built on earlier discussions in
+{{cite:c42b1792-6ef0-4103-887f-7e6d5c98b195}}, {{cite:ee9a77bf-3d3c-4855-9edf-89451a6b0756}}, {{cite:7360a9f9-667e-4cd3-9a70-d4b4fef871a9}}, {{cite:61f048b8-7ec8-44b5-ac03-d360ce0867de}}..
+The basic idea is simply to evaluate the black hole partition
+function in a string perturbation expansion around a euclidean
+saddle point, which is a euclideanized attractor geometry (and then
+compare it to the perturbation expansion for the topological
+string). It is then argued that at FORMULA  loops, string perturbation
+theory is saturated by genus FORMULA  worldsheet (anti)instantons which
+wrap (anti)holomorphic cycles in the Calabi-Yau and localize to the
+(south) north pole of the horizon FORMULA . This is possible due to the
+peculiarities of the FORMULA  supersymmetries, which are
+broken in exactly the same way for an instanton at the north pole
+and an anti-instatnon at the south pole. The two factors in FORMULA 
+then come form the instanton sum at the north pole and and the
+anti-instanton sum at the south pole.
+FORMULA -theory lift
+Our starting point will be the IIA string partition function
+-denoted FORMULA  - on the euclidean attractor geometry. As will be
+seen explicitly below, the sum over worldsheets gives a finite
+non-zero answer. Furthermore, there must be many supersymmetric
+cancellations, as in the limit in which the FORMULA 
+radius goes to infinity the term which scales as volume is the
+cosmological constant and must vanish.
+So the question arises - what is FORMULA  computing? Since the
+computation involves a choice of attractor geometry, it should be
+related to the associated black hole. Since it is supersymmetry
+protected, it should be some supersymmetry-protected invariant
+associated with the black hole. We know of only one such object–the
+modified elliptic genus. So the obvious guess is
+FORMULA 
+Note
+that since the left hand side is defined only in string perturbation
+theory, this is at best a perturbative relation (at large charges).
+If one further assumes FORMULA 
+one has FORMULA .
+There are a number of ways one might go about demonstrating
+(REF ). The most straightforward approach would be to refine
+and adapt the methods of {{cite:df242968-4f4b-422d-b267-c716f3726b5a}}, {{cite:1cf30a15-0d1b-465e-a0f2-4c911b161d78}}. The
+subtleties would be to carefully understand the euclideanization,
+especially of the RR fields which become complex, and the fermion
+boundary conditions. Instead of this more direct method,
+{{cite:096c29cb-35df-4168-b1d9-fc0331a86b3a}} adopted a shortcut involving a lift to
+M-theory. This had the disadvantage of using a nonperturbative
+relation to demonstrate a perturbative one, but on the other hand
+the construction, which we now review, is illuminating in its own
+right.
+To keep the equations uncluttered, we just consider the
+euclideanised near-horizon geometry of a D4-D0 black hole.
+The metric on the FORMULA  part is
+FORMULA 
+the radii of the FORMULA  and
+FORMULA  are equal to
+FORMULA 
+There is also a graviphoton field
+FORMULA 
+Note that this potential is
+purely imaginary - as expected when we continue electric fields to
+euclidean space. Noting that the graviphoton is just the connection
+on the M-theory circle (parametrized here by FORMULA ), we simply
+end up with the M-theory metric
+FORMULA 
+We immediately recognise an
+FORMULA  factor in the first line of the above equation. Note that
+some of the metric components are imaginary, so this is a complexified FORMULA  quotient. The interpretation of this
+complexified geometry can be gleaned from looking at the torus that
+is located at the boundary FORMULA . Keeping the leading terms in the
+metric as we take FORMULA , we find the conformal metric on
+the boundary
+FORMULA 
+This can be put in the
+standard form
+FORMULA 
+if we
+take the modulus of the torus parametrised by FORMULA  to
+satisfy
+FORMULA 
+Now, according to
+FORMULA , the partition function on this euclidean M-geometry
+is a partition function of the MSW CFT on the boundary torus
+(REF )
+FORMULA 
+The
+main point we wish to stress here is that FORMULA  appears as a
+weighting factor for the left movers only. This result might have
+been anticipated from the fact that the lorentzian D4-D0 black hole
+is dual to a state in the MSW CFT in which the left movers are
+thermally excited but the right movers are in their ground state.
+Consideration of the fermion boundary conditions
+{{cite:096c29cb-35df-4168-b1d9-fc0331a86b3a}} indicates that, after a spectral flow one
+obtains (REF ) with the trace in the R sector and an insertion
+of FORMULA . An FORMULA  insertion is needed when the degrees of
+freedom corresponding to the center-of-mass multiplet (ignored so
+far) are included: without the insertion this multiplet gives a zero
+prefactor. In the bulk FORMULA  description these appear as boundary
+“singleton” modes. Exactly how this all works out has not been
+carefully analyzed and the FORMULA  insertion is accordingly suppressed
+in the following.
+Of course, the index is defined for fixed electric potentials on the
+boundaries, so we need to add D2-brane charges, and then sum over
+them. Upon reinstating the D2 potentials FORMULA , the partition function
+we are computing becomes
+FORMULA 
+where here and elsewhere FORMULA  corrections are
+implicit.
+In order to make the connection with the topological string, it is
+useful to rewrite (REF ) in terms of topological string
+variables. Using (REF ) for the D4-D2-D0 black hole, we can
+rewrite (REF ) as
+FORMULA 
+where
+FORMULA  is just the modified RM fermion number (REF )
+needed for modular invariance and FORMULA  is the correct string
+instanton action.
+In conclusion, string theory on the euclidean attractor geometry is
+expected to give a perturbative expansion of the supersymmetric
+partition function of the associated black hole.
+
+Computing FORMULA  
+Now we must evaluate the perturbative string loop expansion of the
+type IIA partition function on the attractor geometry. This
+computation could be set up in the NS-R, Green-Schwarz or hybrid
+formalism, each of which has its own complementary set of advantages
+and disadvantages. In the NS-R formalism the connection to the
+topological string is clearest, but RR fluxes are hard to deal with.
+In the Green-Schwarz formalism the action in RR backgrounds is
+known, but the reduction to the topological string is only partially
+worked out {{cite:4420ff77-8317-49dc-9ea4-4bf47ee1b64b}}. The hybrid formalism, as it more
+or less treats the FORMULA  spacetime part in the Green-Schwarz language
+and the Calabi-Yau part in the NS-R language is perhaps ultimately
+the most suitable, but unfortunately it is less developed at
+present.
+In {{cite:096c29cb-35df-4168-b1d9-fc0331a86b3a}} we have used the Green-Schwarz formalism.
+The worldsheet action effectively splits into an internal FORMULA 
+term and an external FORMULA  piece, and the computation
+factorizes. The details of exactly how the internal piece reproduces
+the topological string have not all been completed, but the presumed
+equivalence of the Green-Schwarz and NS-R strings imply they must
+work out, as shall be assumed herein. Although of interest in their
+own right these details are essentially the same in FORMULA  and in an attractor geometry and are not the focus of
+our current investigation. Here we focus on the FORMULA 
+factor where interesting new features arise.
+FIGURE 
+Let us now summarize the key steps in the somewhat technical
+computation {{cite:096c29cb-35df-4168-b1d9-fc0331a86b3a}}. The classically supersymmetric
+genus FORMULA  worldsheets FORMULA  wrap holomorphic cycles (instantons) or
+antiholomorphic cycles (anti-instantons) in FORMULA  and sit at any point
+in FORMULA . However, as will be important momentarily,
+which supersymmetry is preserved depends on the point chosen in
+FORMULA . The worldsheet sum is organized as an expansion
+about these configurations. The internal part (presumably) gives a
+factor of FORMULA , as we will try to sketch below. Afterwards,
+we are just left with the ordinary integral of a (-1)-brane
+zero-mode action in FORMULA .
+The “fields”
+consist of the four spacetime coordinates FORMULA , their four
+chiral goldstino superpartners FORMULA , FORMULA  fermionic
+fields FORMULA  coming from the FORMULA  zero modes of the
+canonically conjugate momenta to the FORMULA  on FORMULA , and
+possibly some antichiral fields FORMULA , FORMULA . The latter correspond to zero modes of the fermionic
+superpartners of the normal fluctuations of the worldsheet FORMULA 
+inside the Calabi-Yau, which occur whenever FORMULA  is not an
+isolated curve in FORMULA .
+There is no action for
+FORMULA  or FORMULA . The action for FORMULA  is simply
+{{cite:4420ff77-8317-49dc-9ea4-4bf47ee1b64b}}
+FORMULA 
+FORMULA  is the anti-self-dual part of the
+graviphoton field strength, with attractor value FORMULA . Thus the
+FORMULA  contribution to the path integral is
+FORMULA 
+The fermionic zero-modes FORMULA  and their bosonic
+superpartners are described by supersymmetric quantum mechanics on
+the moduli space FORMULA  of holomorphic deformations of the curve inside
+FORMULA . The supersymmetric index we are computing is
+independent of the details of this quantum mechanics and is known to
+equal the euler characterA typical four-supercharge action
+contains a coupling FORMULA , and one can bring down powers of this interaction
+to make the path integral over the FORMULA  zero modes not vanish.
+One can easily check that this procedure yields the euler character
+of moduli space. of FORMULA , which is roughly the
+Gromov-Witten invariant FORMULA . Combining it with the factor
+that comes from the instanton action, FORMULA , we finally
+obtain FORMULA .
+It remains to consider the integral over the position zero-mode
+FORMULA  and the goldstinos FORMULA . The former is
+proportional to the volume of FORMULA  while the latter
+vanishes because there is no action. Hence
+FORMULA 
+This integral
+can be defined by use of localization. One adds an exact term
+FORMULA  to the action with an arbitrary real
+coefficient  FORMULA
+FORMULA 
+FORMULA  here is a nilpotent combination of the kappa-symmetries
+and supersymmetries and FORMULA  is a judiciously chosen operator.
+Exactness and nilpotency imply that the integral is independent of
+FORMULA . It is most easily evaluated at FORMULA . The
+contributions will then be localized to FORMULA -invariant
+configurations, which are instantons and anti-instantons sitting at
+the center of FORMULA  and the north pole and respectively south pole
+of the sphere. The answer we get is some nonzero constant FORMULA , whose
+value is most easily determined by comparison to supergravity.
+Now let us put everything together. Concentrating for now just on
+the contribution of the instanton at the north pole, we have the
+following
+
+- a genus-independent constant factor C coming from the integral over the bosonic and goldstino zero-modes
+
+- a factor of FORMULA  coming from the internal worldsheet partition function.
+
+- a factor of FORMULA  from the zero-mode integrals for FORMULA .
+
+Summing these over genera we obtain
+FORMULA 
+The anti-instanton sitting
+at the south pole of the sphere similarly gives a factor of
+FORMULA . Exponentiating the sum of the two
+contributions we almost have the OSV relation, except we still need
+to find the value of FORMULA . This can be fixed by comparing any term in
+the expansion of FORMULA  with the corresponding term in the
+topological string expansion, as was done in section 3.6, and is FORMULA . In conclusion this indicates that in perturbation
+theory
+ZBH = ZIIA= |Ztop|2
+which is the relation we set out to explain.
+
+FORMULA  and all that
+In these lectures several closely related partition functions, all
+denoted with the letter FORMULA , have appeared. We will close by
+summarizing what we mean by these objects, how they are computed
+(or not) and how they are related.
+Definitions
+FORMULA  This partition function is deduced
+from a perturbative spacetime analysis of the thermodynamic
+properties of black holes, which at leading order are governed by
+the famous Bekenstein-Hawking area-entropy law. Subleading
+corrections are computed using Wald's formula. We are not using this
+symbol herein to denote an object defined nonperturbatively by
+counting BPS states.
+In our case, we are interested in extremal black holes, and the
+corrections to the area law are computed in a power series in the
+inverse graviphoton charge FORMULA , which governs the size of the
+black hole. Moreover we are interested in a supersymmetric partition function
+with (among other things) a FORMULA  insertion for fermions.
+In principle the effect of this on the spacetime analysis and
+Wald's formula should be derivable from first principles, but in
+practice no one has done so. The arguably well-motivated
+assumption has been that the insertions are accounted for by including only
+FORMULA  term corrections to Wald's formula.
+Any definition of FORMULA  along these lines will necessarily entail some
+dependence on the moduli of the Calabi-Yau compactification in which the
+black hole sits. This dependence has a beautiful and intricate mathematical
+structure following from the “split attractor” phenomena, the unraveling of which has been the subject of recent
+progress {{cite:61f048b8-7ec8-44b5-ac03-d360ce0867de}}.
+This definition of FORMULA  is essentially perturbative in
+FORMULA , and
+does not have any obvious non-perturbative completion.
+FORMULA  This is defined as the modified
+elliptic genus, with appropriate potentials, of the MSW CFT. In
+principle this has a chance of being defined nonperturbatively.
+However there are a number of complicating issues which have not
+been understood (see e.g. {{cite:9364bed5-f59d-4329-be04-718e3015f655}}). An important one is that
+one must regulate IR divergences associated with noncompact Coulomb
+branches - where the M5-branes can separate. Related issues are the
+holomorphic anomaly, background dependence and singularities in the
+moduli space of divisors. This is the only potentially
+nonperturbatively defined object on our list.
+FORMULA  This is the IIA partition function
+computed in the string genus expansion around a euclidean attractor
+geometry. This expansion is formally equivalent to an expansion in
+the RR graviphoton field, so the problems of dealing with background
+RR fields are not so severe here. There are the usual issues
+associated with euclidean quantum gravity and complex saddle points
+that must be dealt with.
+FORMULA  This is the topological string
+partition function, and is defined in the worldsheet genus
+expansion. The expansion coefficients have a precise mathematical
+definition in terms of the Gromov-Witten invariants associated to
+maps of a genus FORMULA  Riemann surface in to a Calabi-Yau space. So
+FORMULA , unlike FORMULA  and FORMULA , is fully defined in
+perturbation theory. No nonperturbative definition of the full
+function FORMULA  is known.
+FORMULA  Another
+interesting object, not directly discussed in these lectures but
+ultimately very relevant is FORMULA . This is
+the (weighted) number of BPS states with charges FORMULA  which
+depends (due to jumping phenomena) on the asymptotic value
+FORMULA  of the Calabi-Yau moduli, and should be
+nonperturbatively well defined. A recent and mathematically precise
+definiton of FORMULA , a derivation of some of its properties and a
+corresponding precise version of the strong FORMULA  conjecture can be
+found in {{cite:61f048b8-7ec8-44b5-ac03-d360ce0867de}}. In our list of objects above, only
+FORMULA  is non-perturbatively defined and so potentially related
+to FORMULA .
+
+Relations
+At a very formal level, FORMULA , in the
+appropriate perturbation expansions and with the appropriate
+identifications of parameters. Beyond perturbation theory, these
+relations are not even formally true. In practice, none of these
+equalities have been proven or even stated herein with total
+precision. Let us now comment on the various equalities.
+ FORMULA
+This is a deep statement about the holographic nature of string
+theory, and was the early form of FORMULA  duality {{cite:4e1d4259-5505-44b3-9590-4f16f7b9166c}}. At
+leading order it has been tested in many examples. Some tests of
+subleading terms are discussed in {{cite:487e4463-4cd5-438f-83bd-dfad47877324}}, {{cite:58c216f6-ce39-4b29-9914-bb0451c68c37}}. Beyond
+subleading order a better understanding of the definition of the
+left hand side is needed.
+ FORMULA
+This is the weak form of the OSV conjecture. It equates terms in two
+differently defined perturbation expansions
+{{cite:4b9e91fb-7afa-400c-a53a-d2a97648d0ef}}, {{cite:7360a9f9-667e-4cd3-9a70-d4b4fef871a9}}, {{cite:f9d4da08-2277-4536-9839-f5e293f34281}}, {{cite:a15e3899-c9d5-4e14-9bf2-bb8c03abc7e7}}, {{cite:1feaed99-b5bd-4678-9034-dd5595d8667b}}, {{cite:3f3c9697-fd39-4d28-ae8c-20c2afaf9c9f}}, {{cite:bfe99ee1-3b22-4374-ad70-67951353807e}}, {{cite:0b8b4140-1e00-445a-b494-3853af2b6bfc}}, {{cite:c06e5acf-921a-4087-9058-6b3a8cbc8057}}.
+One of the main issues here is understanding how the background
+dependence works out. In essence however it is a statement about
+string perturbation theory and does not have the dynamical depth of
+the preceding equality. It could in principle be precisely stated
+and proved without any understanding of non-perturbative string
+theory.
+ FORMULA
+This asserts that the black hole partition function can be
+perturbatively repackaged as a euclidean calculation on the
+attractor geometry. It is a stringy version of the black hole
+methods of semiclassical euclidean quantum gravity, adapted to deal
+with an index. Arguments for this equality were given in
+{{cite:096c29cb-35df-4168-b1d9-fc0331a86b3a}}. Assuming that this and the preceding equality
+is valid for the same definition of FORMULA  leads to
+FORMULA , along with a physical explanation of the two
+complex conjugate factors on the RHS of the OSV relation.
+ FORMULA
+This is the strong form of the OSV conjecture, and comes from
+combining holographic duality with the perturbative observations of
+{{cite:d7d64b34-5987-46a5-a1a3-59c4c840320c}}. Since the right hand side is defined only
+perturbatively, it is at most a perturbative statement. Still, it is
+extremely interesting in part because both sides are potentially
+rigorously defined mathematically. From the mathematical point of
+view, it is a totally unexpected relationship between moduli spaces
+of divisors and maps of curves into a Calabi-Yau space.
+In this paper we have argued from the stringy perspective that a
+relation of this form is to be expected. It would be a daunting
+task to turn these arguments in to a rigorous mathematical
+derivation. While these arguments are informative, in the end
+this relation should be regarded as a conjecture to be tested by
+direct computation.
+In conclusion, the conjectured OSV relationship between the
+all-orders expression for the entropy of large BPS black holes and
+the all-orders expression for the topological string partition
+function potentially allows for precision tests of non-perturbative
+string theory. We hope to have provided the reader with a flavor of
+this exciting subject that melts together black holes, attractors,
+and topological strings, ans at the same time raises interesting new
+challenges and puzzles.
+FORMULA  Acknowledgements
+We are grateful to F. Denef, D. Gaiotto, G. Moore and Xi Yin for
+very helpful conversations. Special thanks to C. García for help
+with the figures. Finally we wish to thank Laurent Baulieu, Pierre
+Vanhove, Paul Windey, Mike Douglas, Jan de Boer and Eliezer
+Rabinovici for a really stimulating and fun school. This work has
+been partially supported by DOE grant DE-FG02-91ER40654.

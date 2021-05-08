@@ -1,0 +1,1057 @@
+
+Optimal pointwise approximation of stochastic differential equations driven by fractional
+Brownian motion 
+Andreas Neuenkirch
+[cor1]neuenkirch@math.uni-frankfurt.de
+Johann Wolfgang Goethe-Universität Frankfurt,
+Institut für Mathematik,
+Robert-Mayer-Str. 10,
+D-60325 Frankfurt am Main,
+Germany
+The author is supported by the DFG-project “Pathwise numerical analysis of stochastic evolution equations”.
+We study the approximation of stochastic differential equations driven by a fractional
+Brownian motion with Hurst parameter FORMULA . For the
+mean-square error at a single point we derive the optimal
+rate of convergence that can be achieved by any approximation method using an equidistant discretization of the
+driving fractional Brownian motion.
+We find that there are mainly two cases: either the solution can be approximated perfectly or the
+best possible rate of convergence is FORMULA  where FORMULA  denotes the number of evaluations of the fractional Brownian
+motion.
+In addition, we present an implementable approximation scheme that obtains the optimal rate of convergence in
+the latter case.
+Fractional Brownian motion,
+stochastic differential equation, Lamperti transformation, conditional expectation, exact rate
+of convergence, chaos decomposition, McShane's scheme
+Introduction
+In this article, we study the pathwise approximation of the equation
+FORMULA 
+
+where FORMULA  and FORMULA  is a fractional Brownian motion with Hurst parameter FORMULA .
+Equation (REF ) is understood as a pathwise Riemann-Stieltjes integral equation, see e.g. {{cite:94b54d76-a329-4a79-a9fe-40711bcc6b5a}}, {{cite:6ff0314d-4a3c-442d-979c-6da017aded94}} and {{cite:0aaa2c81-1772-406b-92ab-ae8154b0b9a0}}.
+Recent applications of stochastic differential equations driven by fractional Brownian motion include e.g. the noise simulation in electronic circuits ({{cite:550e57ea-20ec-4eb6-856b-c4d64e62eed3}}), the modelling of the subdiffusion
+of a protein molecule ({{cite:604a6cd3-3edd-456c-9f7e-d5c5a3bbd2c8}}) and the pricing of weather derivatives ({{cite:09728da8-c64a-4130-933c-54e8ee0d5af6}}, {{cite:53990aff-6db7-4c40-add2-a9f75f30eba5}}).
+The type of approximation methods we are concerned with produce an approximation to FORMULA  using an equidistant discretization of the driving fractional Brownian motion, that is
+FORMULA 
+The error of such an approximation method will be measured by the mean square norm FORMULA .
+Thus, the best possible approximation method of the above type is clearly the conditional expectation
+FORMULA 
+For stochastic differential equations driven by Brownian motion, the optimal pointwise approximation (in the mean-square sense) of the solution
+is a well studied problem, also for non-equidistant and adaptive discretizations. See, e.g., {{cite:71a77b33-cd13-49d9-9659-be67c49bcc0b}}, {{cite:927ebd9c-8362-4378-83e5-9e94e874ab2a}}, {{cite:6dbf682e-afb0-488c-b05d-b657ed8891d9}}, {{cite:4569906c-cbdf-45e1-8415-6b6e99cd465c}}, {{cite:3c85019c-6e94-4387-b6f4-5d781eb2a42d}} and {{cite:1cd50e29-1950-4ddc-b06b-74179d022b25}}.
+However, for stochastic differential equations driven by fractional Brownian motion there are only a few known results for
+mean-square approximation, mainly for equations with additive noise ({{cite:302d7126-bf8f-4c39-a1f0-57b56b497ce8}}, {{cite:2bac6302-03ff-48c7-83f8-ede7fc3947a8}}) or with a linear diffusion coefficient ({{cite:bf82bcf3-1d4a-4d8c-82f9-e88499bca44d}}).
+In {{cite:302d7126-bf8f-4c39-a1f0-57b56b497ce8}} and {{cite:2bac6302-03ff-48c7-83f8-ede7fc3947a8}} the Euler and a Wagner-Platen-type method for equations with additive noise are studied and their exact rates of convergence are given, while
+in {{cite:bf82bcf3-1d4a-4d8c-82f9-e88499bca44d}} the convergence order of an Euler-type method for a quasi-linear Skorohod-type equation is determined.
+Moreover, the asymptotic error distribution of several approximation schemes for equation (REF ) is derived in {{cite:3b157b22-81b7-41ff-97a2-ed9b3729dd6c}} and {{cite:a88650d1-354d-4717-8637-6f0f14589463}}.
+Throughout this article, we will impose rather strong assumptions on the drift- and diffusion coefficients, which has technical reasons. See Remark (i) in Section REF  for a detailed discussion.
+In particular FORMULA  and FORMULA  are supposed to be bounded and FORMULA  is also strictly positive.
+Nevertheless, we think that this article will give a lot of structural insight in the approximation of stochastic differential equations driven by fractional Brownian motion.
+If the drift and diffusion coefficient commute, i.e. FORMULA , then it is easy
+to show that FORMULA  does not depend on the whole process FORMULA  but only on FORMULA .
+This implies that
+FORMULA 
+
+More generally, we can show the following relation:
+There exists a mapping FORMULA  such that
+FORMULA  holds
+for all FORMULA  almost surely, if and only if FORMULA  for all FORMULA .
+This extends a particular case of a well known result for stochastic differential equations driven by Brownian motion. See e.g. {{cite:63f5b608-f29e-44b3-a601-409bd802ea9e}}.
+Otherwise, if FORMULA  and FORMULA  do not commute, we have the following upper and lower error bound for the error of the conditional expectation
+FORMULA 
+
+and
+FORMULA 
+
+where FORMULA  and FORMULA  are two constants, depending only on FORMULA  and the random weight function
+FORMULA  is given by
+FORMULA 
+If the constant on the right hand side of equation (REF ) does not vanish, then
+the conditional expectation has exact rate of convergence FORMULA . This is satisfied for example,
+if FORMULA . Consequently, in this case
+there is no approximation method using an equidistant discretization of the driving fractional
+Brownian motion that can obtain a better rate of convergence than FORMULA .
+The conditional expectation is clearly in general not an implementable method for the approximation of stochastic differential equations driven by fractional Brownian motion.
+Therefore, we also consider here an extension of McShane's method for
+Stratonovich SDEs, see {{cite:c3ec3ce7-5635-4ef5-9704-ecf633ec3133}} and {{cite:1cd50e29-1950-4ddc-b06b-74179d022b25}} for a related scheme for Itô SDEs. Our extension of the McShane method is defined by
+FORMULA  and
+FORMULA 
+ for FORMULA , where FORMULA  and FORMULA .
+We show that
+FORMULA 
+
+Hence this implementable approximation method has
+exact rate of convergence FORMULA , if FORMULA  and
+FORMULA  do not commute, and thus obtains the same convergence rate as the conditional expectation in this case.
+The article is structured as follows. In the next section we recall some facts about fractional Brownian
+motion and stochastic differential equations driven by fractional Brownian motion.
+In the Sections 3 and 4, we state and prove our results for the error of
+the conditional expectation, while McShane's method is considered in
+section 5. A technical proof of an auxiliary result is postponed to the Appendix.
+
+Preliminaries
+Fractional Brownian motion
+Let FORMULA  be a fractional Brownian motion with Hurst parameter FORMULA  defined on a complete probability space FORMULA , i.e., FORMULA  is a continuous centered Gaussian process with covariance function
+FORMULA 
+For FORMULA , FORMULA  is a standard Brownian motion, while for FORMULA , it is neither a semimartingale nor a Markov process. Moreover, it holds
+FORMULA 
+and almost all sample paths of FORMULA  are Hölder continuous of any order FORMULA .
+Let us give a few facts about the Gaussian structure of fBm for FORMULA  and its Malliavin derivative process, following {{cite:8393c35d-7c6e-40ed-ba52-dca8e8a9756d}} and Chapters 1.2 and 5.2 in {{cite:e768c5e4-89d6-4a38-ab9b-7405343df4a1}}.
+Let FORMULA  be the set of step functions on FORMULA  and consider the Hilbert space FORMULA  defined as the closure of FORMULA  with respect to the scalar product
+FORMULA 
+The mapping FORMULA  can be extended to an isometry between FORMULA  and its associated Gaussian space. This isometry will be denoted by
+FORMULA .
+Note that
+FORMULA 
+where
+FORMULA 
+
+with
+FORMULA 
+and
+FORMULA 
+Here FORMULA  denotes the Beta function.
+Moreover, we have FORMULA  and in particular
+FORMULA 
+
+for FORMULA  with FORMULA . (For a characterization of the space FORMULA  in terms of distributions see {{cite:e718498e-3574-4404-a2d8-57df13663e48}}.)
+
+Let FORMULA  be a smooth function with compact support and consider the random variable
+FORMULA  with FORMULA  for FORMULA . The derivative process of FORMULA  is the
+element of FORMULA  defined by
+FORMULA 
+In particular FORMULA . As usual, FORMULA  is
+the closure of the set of smooth random variables with respect to the norm
+FORMULA 
+If FORMULA  such that FORMULA  and FORMULA  are bounded, then FORMULA  and
+FORMULA 
+ Moreover, recall also the following chain rule: For FORMULA  and FORMULA  with bounded derivative we have FORMULA  and
+FORMULA 
+The divergence operator FORMULA  is the adjoint of the derivative operator. If a random variable FORMULA 
+belongs to the domain FORMULA  of the divergence operator denoted, then FORMULA  is defined by the duality relationship
+FORMULA 
+ for every FORMULA .
+If FORMULA  is a stochastic process with Hölder continuous sample paths of order FORMULA ,
+then the Riemann-Stieltjes integral with respect to FORMULA  is well defined. If FORMULA 
+moreover satisfies
+FORMULA  for all FORMULA  and
+FORMULA 
+
+then we have FORMULA  and the relation
+FORMULA 
+
+holds.
+For the Skorohod integral of the process FORMULA  we have the isometry
+FORMULA 
+
+In what follows, we will also the require the Wiener-Chaos decomposition of a random variable FORMULA :
+Let FORMULA  the FORMULA -th Hermite polynomial, FORMULA , and denote by FORMULA  the closed linear subspace of FORMULA  generated by the random variables FORMULA . FORMULA  will be the set of constants. Furthermore, denote by FORMULA  the FORMULA -algebra generated by the random variables FORMULA . Then the space FORMULA  can be decomposed into the infinite orthogonal sum of the subspaces FORMULA :
+FORMULA 
+Moreover, denote by FORMULA  the projection to the first chaos.
+If FORMULA  such that FORMULA , then we have
+FORMULA 
+
+almost surely, which is a straightforward consequence of the transfer principle for fractional Brownian
+motion, see e.g. Chapter 5.2 in {{cite:e768c5e4-89d6-4a38-ab9b-7405343df4a1}} and Stroock's formula, see, e.g., Chapter 6 in {{cite:e1948dc1-5788-4f43-9fec-37d7b1f9d205}}.
+
+Stochastic differential equations driven by fractional Brownian motion
+Throughout this article, we will impose the following assumptions:
+(A1)
+ FORMULA
+(A2)
+FORMULA , FORMULA  with bounded derivatives,
+(A3)
+FORMULA , FORMULA  bounded, FORMULA .
+
+The assumption (A3) is - a priori - required only for technical reasons. See Section REF  for a discussion.
+Under the assumptions (A1) and (A2) it is well known that
+FORMULA 
+which is the integral equation corresponding to equation (REF ), has a unique solution
+FORMULA 
+with
+FORMULA 
+for all FORMULA . See e.g.  {{cite:2816aac9-f090-44a2-a82d-d662c469b26f}}, {{cite:94b54d76-a329-4a79-a9fe-40711bcc6b5a}}. Here, the integral with respect to fractional Brownian
+motion is defined as a Riemann-Stieltjes integral.
+Moreover, we have FORMULA  for all FORMULA  and
+FORMULA 
+
+See {{cite:6fed6e3d-088d-4518-b614-46e4f4582835}}, {{cite:6ff0314d-4a3c-442d-979c-6da017aded94}}.
+Since the diffusion coefficient is strictly positive due to the assumption (A3) we can use
+the Lamperti transformation, which will be an important tool throughout this article.
+Define
+FORMULA 
+ Then FORMULA  is well defined, since FORMULA  is strictly positive. Moreover, we have
+FORMULA 
+Note that FORMULA  is strictly monotone, thus the inverse function FORMULA  exists
+and satisfies
+FORMULA 
+A straightforward application of the change of variable formula for Riemann-Stieltjes integrals,
+see e.g. {{cite:0aaa2c81-1772-406b-92ab-ae8154b0b9a0}}, yields that
+FORMULA 
+
+is the unique solution of the stochastic differential equation
+FORMULA 
+
+with
+FORMULA 
+
+Clearly, we also have
+FORMULA 
+Note that the mapping FORMULA  is twice continuously differentiable with bounded derivatives.
+Using (REF ) we can also give a different representation
+of the Malliavin derivative of FORMULA , FORMULA , which will be more appropriate for our purposes. See {{cite:88938193-073c-47c8-afb9-b4b44582c785}} for a similar representation in the case of Itô stochastic differential equations driven by Brownian motion.
+We have
+FORMULA 
+Proof. Using the chain rule (REF ) we have
+FORMULA 
+Since FORMULA  is the solution of equation (REF ), applying (REF ) yields that
+FORMULA 
+Moreover, it holds
+FORMULA 
+Thus, the assertion now follows by (REF ).
+ FORMULA
+In particular, the representation (REF ) implies that FORMULA  is a bounded stochastic field.
+
+The degenerated case
+In this section we study under which conditions the solution of equation (REF ) is “degenerated” in the following sense: The solution FORMULA  at time FORMULA  does not depend on the whole sample path FORMULA  of the driving fractional Brownian motion up to time FORMULA , but only on FORMULA . As for Stratonovich stochastic differential equations driven by Brownian motion, see {{cite:63f5b608-f29e-44b3-a601-409bd802ea9e}}, this property can be completely characterized in terms of the drift- and diffusion coefficient.
+There exists a mapping FORMULA  such
+that
+FORMULA 
+almost surely, if and only if FORMULA  for all FORMULA .
+Proof. (i) Suppose that FORMULA .
+Using the Lamperti transformation, we have
+FORMULA , FORMULA , with
+FORMULA 
+
+and
+FORMULA 
+Since
+FORMULA 
+the assumption FORMULA  implies that
+FORMULA 
+Consequently, we have
+FORMULA 
+Thus, we obtain the representation
+FORMULA 
+with
+FORMULA 
+Due to the assumptions on FORMULA , we also have that FORMULA .
+(ii) Now assume that
+FORMULA 
+
+with FORMULA .
+From (REF ) and the chain rule for Riemann-Stieltjes integrals, see e.g. {{cite:0aaa2c81-1772-406b-92ab-ae8154b0b9a0}}, we obtain
+FORMULA 
+
+almost surely. This yields
+FORMULA 
+
+almost surely. Now set
+FORMULA 
+and
+FORMULA 
+Moreover, define the FORMULA -variation FORMULA  with stepsize FORMULA  of a stochastic process FORMULA  by
+FORMULA 
+Clearly, we have by (REF ) that
+FORMULA 
+almost surely for all FORMULA  and FORMULA . Since the process FORMULA  is pathwise continuously differentiable,
+we have that
+FORMULA 
+as FORMULA .
+Moreover, Theorem 1 in {{cite:41004877-1ac4-48a8-af95-f52ae2abc810}} yields that
+FORMULA 
+as FORMULA .
+Thus, we have that
+FORMULA 
+almost surely and it follows
+FORMULA 
+almost surely. This yields in turn that
+FORMULA 
+almost surely.
+Since FORMULA , we can write the above two equations also as
+FORMULA 
+and
+FORMULA 
+Since FORMULA  is a centered Gaussian random variable with variance FORMULA , we obtain
+FORMULA 
+which implies that
+FORMULA 
+However, since FORMULA  does not vanish due to our assumptions, the distribution of FORMULA  is absolutely continuous with respect to the Lebesgue measure with a strictly positive density for every FORMULA . See e.g {{cite:6fed6e3d-088d-4518-b614-46e4f4582835}}. This implies that the image of the mapping FORMULA  is the whole real line FORMULA . Now, we have finally that
+FORMULA 
+ FORMULA
+Thus, the solution of equation (REF ) is “degenerated” if and only if FORMULA  and FORMULA  commute in the usual sense of differential geometry.
+Since
+FORMULA 
+the following corollary is a straightforward consequence of Theorem 1.
+Let FORMULA  for all FORMULA . Then we have
+FORMULA 
+for all FORMULA .
+Hence the above Corollary implies that FORMULA  can be simulated perfectly - at least theoretically. The mapping FORMULA  in Theorem  is given by
+FORMULA 
+with FORMULA , FORMULA . The solution of this partial differential equation will be explicitly known only in some particular cases.
+
+The non-degenerate case.
+In this section, we determine the following lower and upper bound for the error of the conditional expectation FORMULA  in the non-commutative case:
+It holds
+FORMULA 
+
+and
+FORMULA 
+
+where
+FORMULA 
+and
+FORMULA  and FORMULA  are two numerical constants depending only on FORMULA .
+Clearly, the random weight function FORMULA  vanishes, if FORMULA  for all FORMULA . However, if equation (REF ) satisfies
+FORMULA 
+then the exact rate of convergence of the conditional expectation
+is FORMULA , which is summarized in the following Corollary. Note that condition (ND) is satisfied, if e.g. FORMULA .
+If (ND) holds, then there exist constants FORMULA  and FORMULA  such that
+FORMULA 
+for all FORMULA .
+Consequently, the maximum rate of convergence, which can be obtained by an equidistant discretization of the driving fractional Brownian motion, is FORMULA  in this case.
+Moreover, we can now characterize the difficulty of equation (REF ) in terms of its coefficients:
+If the drift- and diffusion coefficient commute, then FORMULA  can be approximated perfectly, see Corollary . Otherwise, if FORMULA  and FORMULA  do not commute, then there are initial values FORMULA 
+such that the exact convergence rate of the conditional expectation is FORMULA .
+Theorem  fits in the known results for the case FORMULA .
+In the case of a one-dimensional Stratonovich SDE driven by a Brownian motion FORMULA , i.e.
+FORMULA 
+it is well known that
+FORMULA 
+
+where in this case
+FORMULA 
+and
+FORMULA 
+See, e.g. {{cite:71a77b33-cd13-49d9-9659-be67c49bcc0b}}, {{cite:927ebd9c-8362-4378-83e5-9e94e874ab2a}} and {{cite:3c85019c-6e94-4387-b6f4-5d781eb2a42d}}. In these articles, the key for the proof of (REF ) is to derive the asymptotic error distribution of FORMULA , which is a conditional normal
+distribution with zero mean and variance given in terms of a stochastic differential equation. Since this method essentially relies on the properties of Brownian motion,
+we could not imitate it and have to rely on indirect methods.
+Remarks
+(i) If the diffusion coefficient is constant, the boundedness of the drift coefficient is not required in Theorem  and , since we do not have to apply the Lamperti transformation in this case. See also {{cite:2bac6302-03ff-48c7-83f8-ede7fc3947a8}}.
+In particular, we obtain for the Langevin equation
+FORMULA 
+that
+FORMULA 
+
+and
+FORMULA 
+
+with
+FORMULA 
+(ii) Condition (ND) is a non-degeneracy condition for the first term of the chaos expansion of FORMULA . Since FORMULA  is bounded, we have by (REF ) that
+FORMULA 
+If (ND) is not satisfied, then we have
+FORMULA 
+for a constant FORMULA , which means that the first chaos of FORMULA  is just a multiple of FORMULA .
+Compare with Theorem , which yields, if FORMULA  and FORMULA  commute, the chaos expansion
+FORMULA 
+where FORMULA  and FORMULA  is the FORMULA -th Hermite polynomial.
+We strongly suppose that the conditions FORMULA  and (ND) are equivalent, i.e. either the error of the conditional expectation is zero or otherwise its exact rate of convergence is FORMULA .
+(iii) At first view, it may seem restrictive to consider only equidistant discretizations of the driving fractional Brownian motion. However, for FORMULA  the increments of fractional Brownian motion are correlated and therefore the exact simulation of FORMULA  is in general computationally very expensive.
+Given FORMULA  iid standard normal random numbers, the Cholesky decomposition method, which is to our best knowledge the only known exact method for the non-equidistant simulation of fractional Brownian motion, requires still FORMULA  arithmetic operations after precomputation of the factorization of the covariance matrix.
+However, if the discretization is equidistant, i.e., FORMULA , FORMULA ,
+the computational cost can be lowered considerably, making use of the stationarity of the increments of fractional Brownian motion. For example, the Davies-Harte algorithm for the equidistant simulation of fractional Brownian motion has
+computational cost FORMULA , see e.g. {{cite:70103d5b-78c0-41eb-b649-8e43735a2411}}.
+For a comprehensive survey of simulation methods for fractional Brownian motion we refer to {{cite:eedf2584-aad7-4a95-b300-72e5dbb22b69}}.
+(iv) For multi-dimensional Stratonovich SDE, i.e.,
+FORMULA 
+with FORMULA , FORMULA  and FORMULA  independent Brownian motions FORMULA , FORMULA ,
+the optimal rate of convergence, which can be obtained by point evaluation of the driving Brownian motions, depends on whether the diffusion coefficients FORMULA  commute or not.
+If they commute, that is, if we have
+FORMULA 
+
+then the optimal rate of convergence is FORMULA  as in the one-dimensional case, where FORMULA  is the number of evaluations of the driving multi-dimensional Brownian motion.
+(Here FORMULA  denotes the FORMULA -th component of FORMULA .)
+However, if (REF ) is not satisfied, then the optimal rate of convergence is FORMULA . See e.g. {{cite:71a77b33-cd13-49d9-9659-be67c49bcc0b}}.
+The prototype example for the latter case is the two-dimensional Stratonovich SDE
+FORMULA 
+
+Clearly, we have FORMULA  and it is well known that
+FORMULA 
+see e.g. {{cite:71a77b33-cd13-49d9-9659-be67c49bcc0b}}
+In a forthcoming paper we will study, whether this phenomenon also appears for SDEs driven by fractional Brownian motion.
+
+Proof of the lower error bound in Theorem 
+The Wiener chaos decomposition described in Subsection REF  will be the key for the proof of the lower error bound, since
+it provides a linearization of the problem, which we have to analyse.
+We have
+FORMULA 
+Proof. Clearly, we have that
+FORMULA 
+see equation (REF ) in Subsection REF .
+Recall that
+FORMULA 
+by Proposition REF  and define the mapping FORMULA  by
+FORMULA 
+Since FORMULA  and FORMULA  are bounded due to our assumptions, it follows by dominated convergence
+that the mapping FORMULA  is continuously differentiable with
+FORMULA 
+Using (REF ) we obtain
+FORMULA 
+Since the Skorohod integral and the Riemann-Stieltjes integral coincide for smooth deterministic integrands, see (REF ), we finally have that
+FORMULA 
+The projection of FORMULA  to the first chaos is given by the second term of
+the Hermite series expansion of the conditional expectation:
+FORMULA 
+with FORMULA  for FORMULA . See e.g. {{cite:e1948dc1-5788-4f43-9fec-37d7b1f9d205}}. Hence we have
+FORMULA 
+and it follows
+FORMULA 
+by linearity of the projection to the first chaos. The term on the right hand side is the
+error of the quadrature formula
+FORMULA 
+for the approximation of the integral
+FORMULA 
+Clearly, by definition of the conditional expectation the best quadrature formula, which uses FORMULA , is given
+by
+FORMULA 
+Thus, we finally obtain
+FORMULA 
+ FORMULA
+To finish the proof of the lower error bound in Theorem , we now have to analyse the quantity
+FORMULA 
+For this, we recall some well known facts about reproducing Kernel Hilbert spaces and weighted integration problems for Gaussian processes. See e.g.  {{cite:e49fcc94-be8e-4502-93c7-215b28e13ad9}} and the references therein.
+Let FORMULA  be a continuous stochastic process with covariance function FORMULA . Then the reproducing Kernel Hilbert space FORMULA  corresponding to the process FORMULA  is the uniquely determined Hilbert space of real valued functions on FORMULA  such that
+FORMULA 
+and
+FORMULA 
+holds for all FORMULA .
+Now consider the linear functional
+FORMULA 
+where the function FORMULA  is non-negative and has compact support. Then the error of a quadrature formula
+FORMULA 
+with FORMULA  for FORMULA , can be characterized in terms of the reproducing Kernel Hilbert space as follows:
+FORMULA 
+In addition, if the process FORMULA  is Gaussian and if we use the conditional expectation of the functional given the evaluations of the random process, i.e.
+FORMULA 
+as quadrature formula, then we have
+FORMULA 
+
+See e.g. section III.2 in {{cite:e49fcc94-be8e-4502-93c7-215b28e13ad9}}. Now we can finish the proof of (REF ):
+Proof of the lower bound in Theorem : By the above considerations it remains to analyse the quantity
+FORMULA 
+with FORMULA , FORMULA . Here
+FORMULA  is the reproducing kernel Hilbert space of FORMULA , which is the fractional Brownian motion defined on the whole real line.
+It is well known that
+FORMULA 
+is dense in FORMULA  and that
+FORMULA 
+for FORMULA , where the constant FORMULA  is known explicitly, see e.g.  section 6.1 in {{cite:e49fcc94-be8e-4502-93c7-215b28e13ad9}} and {{cite:c016df1e-cea6-4aab-acca-1bebd3b520db}}. Here FORMULA  denotes the Fourier transform of FORMULA , defined by
+FORMULA 
+Now consider the stationary Gaussian process FORMULA  with covariance kernel
+FORMULA 
+where the spectral density FORMULA  is given by
+FORMULA 
+Then the reproducing Kernel Hilbert space corresponding to FORMULA  is the Bessel potential space
+FORMULA 
+with
+FORMULA 
+We have
+FORMULA 
+and
+FORMULA 
+for FORMULA , see e.g.  section 6.1 in {{cite:e49fcc94-be8e-4502-93c7-215b28e13ad9}}.
+Hence it follows
+FORMULA 
+and moreover
+FORMULA 
+However, the quantity on the right hand side of the above equation corresponds to
+FORMULA 
+where FORMULA  is the stationary Gaussian process with covariance kernel given by (REF ).
+From {{cite:5dfb18d5-cc28-40be-82cb-8e9302def198}}, Proposition 2.1, we now obtain that
+FORMULA 
+with
+FORMULA 
+We have
+FORMULA 
+with FORMULA . Note that by symmetry of the spectral density it holds
+FORMULA 
+Since FORMULA  is strictly decreasing, it follows
+FORMULA 
+Now consider the quantity FORMULA . Clearly, we have
+FORMULA 
+Fatou's Lemma and Parseval's equality yield
+FORMULA 
+Since
+FORMULA 
+it follows
+FORMULA 
+with
+FORMULA 
+Since FORMULA , FORMULA , and
+FORMULA 
+by Proposition REF , we finally have shown the lower bound in Theorem .
+ FORMULA
+
+Proof of the upper bound in Theorem  
+For the proof of (REF ) we will again use an indirect method.
+Denote by FORMULA  the piecewise
+linear interpolation of FORMULA  based on an equidistant discretization with stepsize FORMULA , that is
+FORMULA 
+and consider the following stochastic differential equation
+FORMULA 
+
+This equation has a pathwise unique solution, since FORMULA  has finite total variation for every FORMULA .
+In particular, we can again apply the Lamperti transformation given in Subsection REF 
+and obtain that
+FORMULA 
+where FORMULA  is the unique solution of
+FORMULA 
+Clearly, we have
+FORMULA 
+for every FORMULA . The next Proposition characterizes the leading term of the error of the approximation FORMULA :
+We have
+FORMULA 
+Proof. We will denote constants, which depend only on FORMULA , FORMULA , FORMULA , FORMULA  and their derivatives by FORMULA , regardless of their value.
+(i) We first we establish the following estimate:
+FORMULA 
+For this note that
+FORMULA 
+Since FORMULA  is continuously differentiable with bounded derivative, it satisfies a linear growth condition
+and we obtain
+FORMULA 
+Thus, Gronwall's Lemma yields that
+FORMULA 
+Similar, we obtain
+FORMULA 
+since
+FORMULA 
+(ii) Using the Lamperti transformation, we can write
+FORMULA 
+Since we have
+FORMULA 
+
+we obtain
+FORMULA 
+for FORMULA  with a random FORMULA .
+So we only need to consider the difference between FORMULA  and FORMULA .
+For
+FORMULA 
+we obtain
+FORMULA 
+The Lipschitz continuity of FORMULA  implies that
+FORMULA 
+and Gronwall's Lemma yields
+FORMULA 
+Thus, it follows
+FORMULA 
+
+since clearly
+FORMULA 
+Using the boundedness of FORMULA  and FORMULA  we obtain
+FORMULA 
+
+with
+FORMULA 
+(iii) Now, we analyse the process FORMULA  in more detail. We can write
+FORMULA 
+where
+FORMULA 
+with FORMULA .
+Since FORMULA  is Lipschitz continuous, it follows
+FORMULA 
+and consequently
+FORMULA 
+which in turn yields together with (REF ) that
+FORMULA 
+Now consider the equation
+FORMULA 
+Its unique solution is given by
+FORMULA 
+
+Since
+FORMULA 
+again an application of Gronwall's Lemma and (REF ) yield that
+FORMULA 
+
+Therefore, we obtain from (REF ) and (REF ) that
+FORMULA 
+with
+FORMULA 
+(iv) Using (REF ) we finally have that
+FORMULA 
+with
+FORMULA 
+Since
+FORMULA 
+we obtain
+FORMULA 
+
+for FORMULA ,
+and the assertion follows, since
+FORMULA 
+
+by (REF ).
+ FORMULA
+Now, it remains to analyse the quantity
+FORMULA 
+Note that this is the mean square error of the trapezoidal-type quadrature formula
+FORMULA 
+
+where FORMULA , FORMULA ,
+for the approximation of the weighted integral
+FORMULA 
+with
+random weight function FORMULA .
+Combining the next Proposition and Proposition REF  we obtain the upper bound of Theorem .
+We have
+FORMULA 
+where FORMULA  denotes the Riemann Zeta function.
+The proof of this Proposition is rather technical. Therefore we postpone it to the Appendix.
+Note that for the constant FORMULA  in Theorem  we have
+FORMULA 
+
+McShane's scheme method
+Theorem  states in particular that the rate of convergence of the
+conditional expectation FORMULA  is at least FORMULA .
+Clearly, the conditional expectation is explicitly known only in some exceptional
+cases and thus is not an implementable approximation scheme in general .
+In this section, we present a feasible approximation scheme, which is almost
+as good as the conditional expectation in the sense that its convergence rate is also at least FORMULA .
+The McShane's scheme for stochastic differential equation driven by fractional Brownian motion is defined by
+FORMULA  and
+FORMULA 
+ for FORMULA , where FORMULA  and FORMULA .
+For Stratonovich SDEs driven by Brownian motion, this scheme was studied e.g. 
+in {{cite:c3ec3ce7-5635-4ef5-9704-ecf633ec3133}}, {{cite:927ebd9c-8362-4378-83e5-9e94e874ab2a}} and shown to be asymptotically efficient, i.e.
+FORMULA 
+The following Theorem gives in the non-degenerated case the exact convergence rate for McShane's method for
+SDEs driven by fractional Brownian motion:
+For the approximation scheme given by (REF )
+we have
+FORMULA 
+Note that the asymptotic constant on the right hand side of (REF ) vanishes, if and only if FORMULA  for all FORMULA . See Remark (iii) in Section REF .
+Hence, if condition (ND) holds, then both McShane's method and the conditional expectation have exact rate of convergence FORMULA  and thus McShane's method is optimal in this case.
+In the degenerated case, we obtain the following upper bound for the
+error of McShane's scheme.
+If FORMULA  for all FORMULA , then there exists a constant FORMULA  such that
+FORMULA 
+for all FORMULA .
+Proof. This is a straightforward consequence of Proposition REF .
+ FORMULA
+Thus, in this case McShane's scheme has a convergence rate of at least FORMULA . For the case of a zero drift coefficient, i.e. FORMULA , it is shown in {{cite:1cd50e29-1950-4ddc-b06b-74179d022b25}} that
+FORMULA 
+for FORMULA .
+So we strongly suppose that the exact convergence rate of McShane's scheme in the degenerated case is FORMULA .
+Remarks
+(i) In this article, we use indirect methods to determine
+the mean-square error of the considered approximation schemes. The main reason for this is that moment estimates for Riemann-Stieltjes integrals driven by fractional Brownian motion are much more involved than for Itô integrals with respect to Brownian motion.
+Recall that, if the process FORMULA  satisfies appropriate smoothness conditions, the relation between the Riemann-Stieltjes integral and the Skorohod integral is given by
+FORMULA 
+
+and moreover
+FORMULA 
+Since in both expressions the Malliavin derivative appears, it is not possible to use them for a direct error analysis. To illustrate this, consider e.g. the continuous Euler method
+for equation (REF ),
+which is given by FORMULA  and
+FORMULA 
+for FORMULA . Here we have
+FORMULA 
+Applying (REF ) and (REF ) would yield an equation, which
+involves the first Malliavin derivative of FORMULA  for FORMULA . Thus, for analyzing the Euler method in this way, we would need to control the difference between the Malliavin derivative of the solution and the Malliavin derivative of the Euler method. But this involves the
+second Malliavin derivative etc.  and we cannot have closable formulas.
+In this article. we apply the Lamperti transformation to avoid this problem. Essentially the Lamperti transformation reduces the error analysis of the considered equation to the error analysis of a
+related
+equation with constant diffusion coefficient, for which the above problem does not appear. The price we have to pay for this procedure is the quite strong assumption (A3) on the drift- and diffusion coefficient, which ensures the integrability of the remainder terms in the error analysis.
+If the pathwise error is considered instead of the mean square error, then assumption (A3) can be avoided.
+Under the assumptions (A1) and (A2) and using the Doss-Sussmann transformation as reduction method to analyse the Euler scheme, it is shown in {{cite:3b157b22-81b7-41ff-97a2-ed9b3729dd6c}} that
+FORMULA 
+for FORMULA .
+(ii) For the proof of Theorem  we will use Proposition REF ,
+i.e.
+FORMULA 
+where
+FORMULA 
+
+and FORMULA  is the piecewise linear interpolation of FORMULA  with stepsize FORMULA .
+Therefore, it remains to compare FORMULA  and FORMULA  to show Theorem .
+Note that equation (REF ) actually corresponds to a system of piecewise random ordinary differential equations: If we define
+FORMULA 
+
+for FORMULA  with FORMULA , then we have
+FORMULA 
+Hence Theorem  will also hold for any method, which approximates the above system of piecewise ordinary differential equations with convergence rate FORMULA  for FORMULA . Compare with {{cite:4569906c-cbdf-45e1-8415-6b6e99cd465c}} for the case FORMULA .
+(iii) Since
+FORMULA 
+the condition FORMULA  for all FORMULA  clearly implies FORMULA .
+On the other hand, assume that FORMULA . However, Proposition REF  now yields that
+FORMULA 
+Since FORMULA  is strictly positive, the distribution of FORMULA  is absolutely continuous with respect to the Lebesgue measure with a strictly positive density for every FORMULA . See e.g {{cite:6fed6e3d-088d-4518-b614-46e4f4582835}}. Hence it follows FORMULA  for all FORMULA .
+Consequently, we have FORMULA  if and only if
+FORMULA  for all FORMULA .
+
+Proof of the convergence rate of McShane's method in the non-degenerated case
+To show (REF ), we require the following Lemmata, which
+both can be shown by straightforward calculations.
+The first one gives a
+Taylor expansion of the Lamperti transformation, while the second considers
+the regularity of the drift coefficient of the reduced equation:
+For the mapping FORMULA  given by
+FORMULA 
+we have FORMULA  with bounded derivatives. In particular,
+it holds
+FORMULA 
+ for FORMULA .
+Define FORMULA  by
+FORMULA 
+Then FORMULA  is bounded and we have FORMULA  with bounded derivatives. Moreover, it holds
+FORMULA 
+Proof of Theorem . We will denote constants, which depend only on FORMULA , FORMULA , FORMULA , FORMULA  and their derivatives by FORMULA , regardless of their value.
+Using Proposition REF , the assertion of Theorem  follows, if we show that
+FORMULA 
+(i) For this, define
+FORMULA 
+which turns out to be an approximation scheme for FORMULA : A Taylor
+expansion yields
+FORMULA 
+ for FORMULA 
+with a random FORMULA  .
+Since FORMULA  and FORMULA  are bounded together with their derivatives, we moreover
+have that
+FORMULA 
+
+Hence we obtain that
+FORMULA 
+
+for FORMULA  with
+FORMULA 
+by the boundedness of FORMULA  and the estimate (REF ).
+Now we have to analyse the different terms of the above recursion scheme.
+For the first term we have
+FORMULA 
+
+while for the second term we obtain
+FORMULA 
+
+with
+FORMULA 
+Finally, for the third term we have
+FORMULA 
+
+where
+FORMULA 
+Combining (REF ), (REF ) and (REF ), it follows
+FORMULA 
+
+with
+FORMULA 
+Using Lemma REF  we can write the above recursion as
+FORMULA 
+
+with FORMULA .
+(ii) Now it remains to analyse the difference between FORMULA  and FORMULA .
+For this set FORMULA  for FORMULA . Moreover,
+recall that FORMULA  is given by
+FORMULA 
+and that FORMULA  satisfies the integral equation
+FORMULA 
+with FORMULA .
+A Taylor expansion yields
+FORMULA 
+
+for FORMULA  with
+FORMULA 
+
+Straightforward computations and the boundedness of FORMULA , FORMULA  and FORMULA  yield
+FORMULA 
+(3) Now set FORMULA  for FORMULA .
+Using (REF ) and (REF )
+we have
+FORMULA 
+
+with FORMULA  and
+FORMULA 
+
+Since FORMULA , FORMULA  and FORMULA  are Lipschitz continuous due to Lemma REF , it follows that
+FORMULA 
+
+for FORMULA .
+The discrete version of Gronwall's Lemma yields
+FORMULA 
+
+and (REF ) implies that
+FORMULA 
+Now (REF ) follows from
+FORMULA 
+ FORMULA
+
+Appendix
+In this section, we show Proposition REF  following section 3.5.3 in
+{{cite:2bac6302-03ff-48c7-83f8-ede7fc3947a8}}, where the case FORMULA  is studied.
+Recall that we have to show
+FORMULA 
+For this, we will need the Malliavin derivative of FORMULA  and some technical Lemmata.
+Note that the weight function FORMULA  can be written as
+FORMULA 
+
+see Proposition REF ,
+and that
+FORMULA 
+Moreover, denote
+FORMULA 
+for notational simplicity.
+The next Lemma follows by straightforward computations and the assumptions on FORMULA  and FORMULA .
+For all FORMULA  there exists a constant FORMULA  such that
+FORMULA 
+for all
+FORMULA .
+The following Lemma
+can be shown by using the product
+rule (REF ) and
+the chain rule (REF ) in Section REF  for the Malliavin derivative.
+We have FORMULA  for all
+FORMULA 
+with
+FORMULA 
+
+for FORMULA .
+In particular, there exists a constant FORMULA  such that
+FORMULA 
+Denote in the following FORMULA  and
+FORMULA 
+
+We will also use the notation FORMULA  instead of FORMULA 
+and FORMULA  instead of FORMULA  in what follows.
+Moreover, set
+FORMULA 
+Finally, we will again denote constants, which depend only on FORMULA , FORMULA  and FORMULA , FORMULA  and their derivatives by FORMULA , regardless of their value.
+We have
+FORMULA 
+Proof.
+ We have
+FORMULA 
+ with the convention that FORMULA  and FORMULA .
+(i) We start by considering the second integral. Here we obtain
+FORMULA 
+
+using Lemma .
+Since moreover
+FORMULA 
+by straightforward calculations, it follows
+FORMULA 
+(ii) Now we study the first integral of the right hand side of (REF ). This integral clearly vanishes, if FORMULA  or FORMULA . Now consider FORMULA . In this case
+FORMULA  and thus we
+have
+FORMULA 
+
+for all FORMULA . The mean value theorem now implies that
+FORMULA 
+ where
+FORMULA  is random and satisfies
+FORMULA 
+By partial integration we obtain
+FORMULA 
+
+Integrating with respect to the variable FORMULA  now yields
+FORMULA 
+
+Note that the above expression is the error of the trapezoidal approximation for
+the integral
+FORMULA 
+with
+FORMULA 
+Since FORMULA , it clearly holds
+FORMULA 
+
+with FORMULA . Since
+FORMULA 
+we obtain
+FORMULA 
+So finally, it follows
+FORMULA 
+(iii) It remains to consider the third integral, which vanishes for FORMULA  and FORMULA . Here we have FORMULA  and thus
+FORMULA 
+
+for all FORMULA .
+Hence we get by the mean value theorem for integration
+FORMULA 
+ with
+FORMULA 
+Now, the term
+FORMULA 
+can be treated analogous to (ii).
+ FORMULA
+Define
+FORMULA 
+for FORMULA .
+In the next Lemma, we precompute the error of the weighted integration problem.
+
+We have
+FORMULA 
+Proof. First note that
+FORMULA 
+ by Lemma . Moreover, applying partial integration we get
+FORMULA 
+ for FORMULA .
+By relation (REF ) in Subsection REF  and
+Lemma 
+it follows
+FORMULA 
+
+By Lemma  we have
+FORMULA 
+Hence, it follows
+FORMULA 
+
+Using the isometry (REF ) for Skorohod integrals with respect to fractional Brownian motion, we obtain
+FORMULA 
+ for FORMULA .
+Since fortunately
+FORMULA 
+
+we have by Lemma  that
+FORMULA 
+
+which shows the assertion.
+ FORMULA
+Now we finally determine the strong asymptotic behaviour of
+FORMULA 
+For similar calculations in the case that the weight function FORMULA  is deterministic and the process FORMULA  is stationary and behaves locally like a fractional Brownian motion, see e.g. {{cite:5dfb18d5-cc28-40be-82cb-8e9302def198}} and {{cite:af7822eb-0402-4701-bcb6-f93c0525f925}}.
+Proof of Proposition REF .
+By Lemma
+
+we have
+FORMULA 
+
+Thus, it remains to study the behaviour of
+FORMULA 
+Note that
+FORMULA 
+ by (REF ) in Section REF , and recall that
+FORMULA 
+
+Define
+FORMULA 
+
+for FORMULA , FORMULA , FORMULA 
+Thus we can write
+FORMULA 
+
+By straightforward calculations we obtain
+FORMULA 
+
+which simplifies in the case FORMULA  to
+FORMULA 
+(i) We first show that asymptotically the contribution of the off-diagonal terms to the error is negligible, i.e.,
+FORMULA 
+
+Note that by symmetry
+FORMULA 
+
+To show (REF ) we will use fourth order Taylor expansions
+of suitable parts of FORMULA .
+For this, the following will be very helpful:
+Let FORMULA  and FORMULA . Then for FORMULA  such that FORMULA , the function
+FORMULA 
+is well defined and we have
+FORMULA 
+
+with
+FORMULA 
+In what follows, set
+FORMULA 
+and recall that
+FORMULA 
+The first part of FORMULA  we study is
+FORMULA 
+
+Since FORMULA , we obtain by applying (REF ) with FORMULA , FORMULA  and FORMULA  the expansion
+FORMULA 
+with
+FORMULA 
+Since FORMULA , we have
+FORMULA 
+Now consider the second part of FORMULA  given by
+FORMULA 
+
+Here we obtain by applying (REF ) with FORMULA , FORMULA  and  FORMULA
+FORMULA 
+
+Note that clearly
+FORMULA 
+so the third, fourth and fifth term of the above expansion vanish after integration over FORMULA .
+For
+FORMULA 
+
+we obtain analogously
+FORMULA 
+
+where FORMULA  denotes the terms of the Taylor expansion, which contain odd powers of FORMULA  resp. FORMULA  and vanish after integration over FORMULA .
+Finally, we have to study
+FORMULA 
+Here we obtain
+FORMULA 
+
+where FORMULA  denotes again the terms, which vanish after integration.
+Summing up the above expansions for the parts of FORMULA  yields
+FORMULA 
+Therefore we obtain after integrating over FORMULA  the estimate
+FORMULA 
+Since FORMULA  is bounded, it finally follows
+FORMULA 
+ and hence we have shown (REF ).
+(ii) Now it remains to consider the summands with FORMULA , i.e. the diagonal resp. near diagonal parts. For this, we need to compute the integrals over
+FORMULA  of the four parts of FORMULA .
+Note that by symmetry
+FORMULA 
+
+For FORMULA  we obtain
+FORMULA 
+
+Moreover, we have
+FORMULA 
+
+and
+FORMULA 
+
+Moreover, for FORMULA  we have
+FORMULA 
+
+Hence, combining (REF ), (REF ), () and (REF ) we obtain for FORMULA  that
+FORMULA 
+
+with
+FORMULA 
+
+In the case FORMULA  we have by (REF ) that
+FORMULA 
+
+with
+FORMULA 
+Hence it follows
+FORMULA 
+Since by Lemma  it holds
+FORMULA 
+for FORMULA ,
+we have
+FORMULA 
+Rearranging the terms on the right hand side of the above equation yields
+FORMULA 
+
+where
+FORMULA 
+
+for FORMULA , FORMULA .
+Note that
+FORMULA 
+ for FORMULA .
+Thus we have
+FORMULA 
+for FORMULA  and
+FORMULA 
+
+In the next step we show that
+FORMULA 
+ For this, we again apply Taylor expansions of suitable parts of FORMULA . We have
+FORMULA 
+
+Hence it follows
+FORMULA 
+
+Since
+FORMULA 
+see e.g. {{cite:3d1b47e3-e5d5-4b3e-b7e3-07bab7ed47a7}}, we obtain
+(REF ).
+This yields
+FORMULA 
+
+which together with (REF ) shows finally Proposition REF .
+ FORMULA

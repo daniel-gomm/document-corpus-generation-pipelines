@@ -1,0 +1,196 @@
+
+
+Heavy Quark Mass Effects in PQCD and Heavy Flavor Parton
+Distributions 
+Wu-Ki TungFORMULA , H.L. LaiFORMULA , J. PumplinFORMULA , P. NadolskyFORMULA , and C.-P. YuanFORMULA .
+
+FORMULA  Michigan State University, East Lansing, MI - USA
+
+FORMULA  University of Washington, Seattle, Washington - USA
+
+FORMULA  Taipei Municipal University of Education, Taipei, Taiwan
+
+FORMULA  Argonne National Laboratory, Argonne, IL, USA
+The systematic treatment of heavy quark mass effects in DIS in current CTEQ
+global analysis is summarized. Applications of this treatment to the
+comparison between theory and experimental data on DIS charm production are
+described. The possibility of intrinsic charm in the nucleon is studied. The
+issue of determining the charm mass in global analysis is discussed.
+Introduction
+Contemporary global QCD analyses of high precision Deep Inelastic Scattering
+(DIS) data, along with other hard processes, require a consistent treatment
+of heavy quark mass effects in the perturbative QCD (PQCD) framework. This
+review {{cite:b23693fd-4562-4f5c-acde-e8dd560ce722}} summarizes key features of the formalism implemented in
+the current CTEQ global analysis project {{cite:2592e850-9610-49c4-8813-7444572d0e1d}} and results on
+its application to heavy flavor physics in global analysis {{cite:e2ae2aa6-210f-4292-9f05-737084bcc115}}.
+Sec.  presents the results of the new global fits compared to
+heavy flavor production data in DIS {{cite:2592e850-9610-49c4-8813-7444572d0e1d}}. Sec. 
+addresses issues related to possible intrinsic charm in the nucleon {{cite:17730d40-702d-47ac-a605-efa3910256d2}}. Sec.  discusses the topical question: can the
+charm mass be reliably determined in global QCD analysis?
+Due to space limitation, it is impossible to include in this short written
+report the figures that illustrate the results discussed in the corresponding
+talk, as summarized above. However, since the slides for the talk have been
+made available at the official conference URL {{cite:b23693fd-4562-4f5c-acde-e8dd560ce722}}, we shall make use
+of these, and refer the reader to the actual figures by the slide numbers where
+they appear in the posted talk {{cite:b23693fd-4562-4f5c-acde-e8dd560ce722}}. The same space limitation
+restricts citations to only the papers and talks on which this report is
+directly based.
+
+General PQCD framework including heavy quark masses
+The key features of the general-mass PQCD framework of {{cite:2592e850-9610-49c4-8813-7444572d0e1d}} is
+illustrated in slide 3 of {{cite:b23693fd-4562-4f5c-acde-e8dd560ce722}}.
+Factorization Formula and (scheme-dependent) summation over
+parton flavors:  Collins has established that the PQCD factorization theorem
+for the structure functions takes the general form FORMULA  even when the
+heavy quark mass effects are kept. Here, the summation is over the active
+parton flavor label FORMULA , FORMULA  are the parton distributions at the
+factorization scale FORMULA , and FORMULA  are the infrared safe Wilson coefficients (or hard-scattering
+amplitudes) that can be calculated order-by-order in perturbation theory. The
+summation over “parton flavor” label FORMULA  in
+the factorization formula is determined by the factorization scheme
+chosen to define the parton distributions FORMULA . In general, we use
+the variable flavor number scheme.
+The summation over (physical) final-state flavors: For
+total inclusive structure functions, the factorization formula contains an
+implicit summation over all possible quark flavors in the final state: FORMULA , where “FORMULA ” denotes final state flavors, and FORMULA 
+is the perturbatively calculable hard cross section for an incoming parton
+“FORMULA ” to produce a final state containing
+flavor “FORMULA  ”. It is important to
+emphasize that “FORMULA ” labels quark flavors
+that can be produced physically in the final state; it is not
+a parton label in the sense of initial-state parton flavors described in the
+previous subsection. In a proper implementation of the general-mass (GM)
+formalism, the distinction between the initial-state and final-state
+summations must be unambiguously and correctly observed.
+Kinematic constraints and rescaling: Kinematic
+constraints from the phase space treatment have a significant impact on the
+numerical results of the calculation. In DIS, with heavy flavor produced in
+the final state, the most natural way to ensure the correct kinematics for
+both NC and CC processes is to use the rescaling variable FORMULA  in place of the usual Bjorken FORMULA  in the
+convolution integral of the factorization formula. Here FORMULA 
+is the sum of all heavy flavor masses in the final state. This is the ACOTFORMULA  prescription used in most recent literature.
+Hard Scattering Amplitudes and the SACOT Scheme: The hard
+scattering amplitude FORMULA  is by definition infrared safe, meaning it is free
+from logarithmic “mass-singularities" in the limit FORMULA . Within the PQCD formalism, there is some freedom to
+choose how the finite mass effects are treated. The choice that makes the
+calculation simplest while retaining full accuracy (the SACOT scheme) can be
+stated as: keep the heavy quark mass dependence in the Wilson coefficients for
+partonic subprocesses with only light initial state partons (FORMULA ); but
+use the zero-mass Wilson coefficients for subprocesses that have an initial
+state heavy quark (FORMULA ). For the 4-flavor scheme to order FORMULA 
+(NLO), we do the following: (a) keep the full FORMULA  dependence of the gluon
+fusion subprocess; (b) for NC scattering (FORMULA  exchanges), set all quark
+masses to zero in the quark-initiated subprocesses; and (c) for CC scattering
+(FORMULA  exchange), set the initial-state quark masses to zero, but keep the
+final-state quark masses on shell.
+Choice of Factorization Scale: The total inclusive
+structure function FORMULA  is infrared safe. Consider the simple case
+of just one effective heavy flavor charm, FORMULA  for any given flavor-number scheme. Since
+the right-hand side of this equation is dominated by the light-flavor term
+FORMULA , and the natural choice of scale for this term is FORMULA , it
+is reasonable to use this choice for both terms to ensure infrared safety. On
+the other hand, in the case of experimentally measured semi-inclusive DIS
+structure functions for producing a charm particle in the final state,
+FORMULA  is theoretically infrared unsafe beyond NLO. One may
+nonetheless perform comparison of NLO theory with experiment with the
+understanding that the results are intrinsically less reliable, and they can be
+sensitive to the choice of parameters. The
+most natural choice of factorization scale in this case is FORMULA .
+
+Results and Comparison with heavy flavor production data 
+Slides 4 and 5 of {{cite:b23693fd-4562-4f5c-acde-e8dd560ce722}} show the size of heavy quark mass effects on
+the calculation of FORMULA  and FORMULA . The color coded areas (with
+complementary contours) indicate the fractional differences between GM and
+zero-mass (ZM) calculations. Understandably, the largest differences occur at
+low FORMULA  and low FORMULA ; and the significance is much more for FORMULA  than
+for FORMULA , since the former vanishes at LO for the ZM case. As indicated
+in slide 6, the GM calculation is stable and robust. It has been used as the
+basis for a new round of global analysis of PDFs, using the full set of HERA
+Run I neutral current (NC) and charged current (CC) total cross section and
+heavy flavor production data, along with the usual DY and jet data
+cf. {{cite:e2ae2aa6-210f-4292-9f05-737084bcc115}}. Here we shall only present the comparison of the new fits to
+the heavy flavor production data measured at HERA.
+Slide 10 shows the comparison of the ZEUS 1996-97 and 1998-2000 charm
+production data to the theory values obtained with the new PDF sets CTEQ6.5M
+(same shape for strange and non-strange seas, {{cite:2592e850-9610-49c4-8813-7444572d0e1d}}), CTEQ6.5S0
+(independent shapes for strange and non-strange seas, {{cite:9c7b842c-a3fe-474b-8768-d19f93cf3209}}) as
+well as for the older CTEQ6HQ. Plotted are ratios of FORMULA  to
+that of a best fit to the respective data set.  The fits to data are all
+reasonable. The new PDFs give slightly better fits than the previous one.  Slide 11 shows the comparison of the H1 charm and bottom production data to
+the theory values from the same PDF sets. The FORMULA  data points
+have more scatter around the (smooth) theory values. The overall FORMULA 
+of these fits is however acceptable.
+It is worth noting that correlated systematical errors are always taken into
+account in our global analysis. The data points shown on these plots have
+been shifted by the fitted systematic errors; hence the differences between
+the data points and the theory values as they appear on these plots give a
+faithful indication of the quality of the fits.
+
+Is there intrinsic charm in the nucleon?
+Many nonperturbative models of nucleon structure suggest the existence of
+intrinsic charm (IC)—a non-vanishing component of nucleon parton
+structure at the scale of FORMULA . On the other hand, practically all global
+analysis of the parton structure of the nucleon so far ignore this possibility
+and make the simplifying assumption that all heavy quark partons are
+radiatively generated: they only arise from perturbative QCD evolution,
+starting from zero at FORMULA . Where does the truth lie? The resolution
+of this dichotomy is of inherent physics interest because it concerns the
+fundamental structure of matter, as well as of practical interest because the
+cross sections for many beyond-the-standard-model (BSM) processes at hadron
+colliders depend on the charm parton content of the nucleon. We have addressed
+this problem phenomenologically by a careful global analysis based on the GM
+PQCD formalism that, for the first time, allows for an independent charm sector
+{{cite:17730d40-702d-47ac-a605-efa3910256d2}}.
+As indicated in slide 14 of {{cite:b23693fd-4562-4f5c-acde-e8dd560ce722}}, the following specific scenarios for
+the charm sea, FORMULA , are explored within our GM global analysis
+framework: (i) the conventional radiatively generated charm; (ii) non-vanishing
+IC FORMULA  that is sea-like (i.e. shaped as the light
+sea quarks); and (iii) IC of the kind suggested by light-cone wave
+function models of the nucleon (peaked at moderately large FORMULA ). Within
+scenario (iii), we further distinguish two models: the one studied by Brodsky
+et al. (the BHPS model), and a meson cloud model.
+Slide 15 summarizes the main results. The figure shows the goodness-of-fit
+for the global analysis, FORMULA , as a function of the magnitude
+of the IC component, measured by the momentum fraction carried FORMULA , under the various scenarios. In the range FORMULA  (outlined by the horizontal oval), FORMULA  is largely insensitive to FORMULA , indicating that there is no strong evidence for or against IC
+of a magnitude in this range.  However, outside this range, for FORMULA  (outlined by the vertical oval), we see a
+precipitous rise of FORMULA  as FORMULA 
+increases. Thus our global analysis sets a useful upper bound on the amount
+of intrinsic charm that is consistent with existing data. Using a 90%
+confidence level (C.L.) criterion, this bound is FORMULA .
+Although models of IC generally do not predict FORMULA ,
+typical guesstimates place it around FORMULA . This is consistent with the bound
+we determined from the above global analysis. The presence of IC of such a
+magnitude can have an impact on certain BSM processes, such as charged Higgs
+production in hadron collider phenomenology. Cf. slide 7 of {{cite:e2ae2aa6-210f-4292-9f05-737084bcc115}}, and
+{{cite:0c7e2646-1f4d-41a0-a570-2b2fa023b1fc}}, {{cite:9c7b842c-a3fe-474b-8768-d19f93cf3209}}.
+Slide 16 shows the charm distribution FORMULA  at three energy scales FORMULA  GeV in the BHPS scenario, for various magnitudes of the
+initial distribution. We see the radiatively generated component (peaked at
+small FORMULA ) catching up with the IC component (peaked at moderate FORMULA )
+as FORMULA  increases. However, the latter clearly still dominates in the FORMULA 
+region FORMULA  even at the W/Z mass scale.
+
+Can the charm mass be determined in global analysis?
+In principle, heavy quark masses FORMULA  at some renormalization scale
+FORMULA  are basic parameters of QCD, similar to the coupling FORMULA . Thus, just like for FORMULA , there has been recent interest in
+determining FORMULA , e.g. the charm mass FORMULA , from global QCD analysis. In
+particular, is it possible to perform a conventional global QCD analysis using
+FORMULA  as one of the fitting parameters, and thereby determine the charm mass
+to be the one that gives the best fit? If so, one may further ask, is this mass
+the FORMULA -mass or the pole-mass?
+Slides 18-20 show results of a study, following the above procedure literally:
+one finds that the global analysis favors a relatively small values of
+FORMULA  GeV, and the goodness-of-fit FORMULA  increases
+with FORMULA . But, a closer examination of the problem immediately raises the
+question: what is the physical meaning of this favored value of FORMULA ? The
+problem is, a chosen value of FORMULA  affects the global QCD analysis in two
+distinct ways: (i) through the mass-dependent Wilson coefficients in the
+theoretical calculation (the pole-mass); and (ii) through the initial condition
+FORMULA —the implicit assumption of radiatively generated
+charm that is used in all existing global analyses. It turns out, the global
+fit is influenced much more by the latter than by the former. Since radiatively
+generated charm is only an assumption, not an integral part of the QCD theory,
+the value of FORMULA  favored by global analysis is not
+directly related to the basic QCD charm mass parameter—it is neither the FORMULA -mass nor the pole-mass! In order to answer the original question
+“can the charm mass be determined in global
+analysis?”, one needs to clearly differentiate between the
+two sources of dependence on FORMULA  mentioned above. This is currently under study.

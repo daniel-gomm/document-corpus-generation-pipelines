@@ -1,0 +1,403 @@
+
+Reduced Complexity Sphere Decoding for Square QAM via a New Lattice Representation
+Luay Azzam and Ender Ayanoglu
+Department of Electrical Engineering and Computer Science
+University of California, Irvine
+Irvine, California 92697-2625
+Sphere decoding (SD) is a low complexity maximum likelihood (ML)
+detection algorithm, which has been adapted for different linear
+channels in digital communications. The complexity of the SD has
+been shown to be exponential in some cases, and polynomial in others
+and under certain assumptions. The sphere radius and the number of
+nodes visited throughout the tree traversal search are the decisive
+factors for the complexity of the algorithm. The radius problem has
+been addressed and treated widely in the literature. In this paper,
+we propose a new structure for SD, which drastically reduces the
+overall complexity. The complexity is measured in terms of the
+floating point operations per second (FLOPS) and the number of nodes
+visited throughout the algorithm's tree search. This reduction in
+the complexity is due to the ability of decoding the real and
+imaginary parts of each jointly detected symbol independently of
+each other, making use of the new lattice representation. We further
+show by simulations that the new approach achieves 80% reduction in
+the overall complexity compared to the conventional SD for a 2x2
+system, and almost 50% reduction for the 4x4 and 6x6 cases, thus
+relaxing the requirements for hardware implementation.
+Maximum-likelihood detection (ML), multiple-input multiple-output
+(MIMO) channels, sphere decoding.
+Introduction
+Minimizing the bit error rate (BER) and thus improving the
+performance is the main challenge of receiver design for multiple-
+input multiple-output (MIMO) systems. However, the performance
+improvements usually come at the cost of increased complexity in the
+receiver design. Assuming that the receiver has perfect knowledge of
+the channel H, different algorithms have been implemented
+to separate the data streams corresponding to N transmit
+antennas {{cite:1e9368e6-75a7-40c3-9ac0-2e378092b941}}. Among these algorithms, Maximum Likelihood
+detection (ML) is the optimum one. However, in MIMO systems, the ML
+problem becomes exponential in the number of possible constellation
+points making the algorithm unsuitable for practical purposes
+{{cite:acf0c371-f9a0-4fc4-b7d9-664af226481b}}. Sphere decoding, on the other hand, or the
+Fincke-Pohst algorithm {{cite:f592cd8f-00f1-420a-9da0-dcf6f9faeb5d}}, reduces the
+computational complexity for the class of computationally hard
+combinatorial problems that arise in ML detection problems
+{{cite:97fd0d2c-8df6-4948-b9cb-8bb1c35e439f}}-{{cite:e2eff98a-f4b4-4036-907b-cc3b573b07a3}}.
+Complexity reduction techniques for SD have been proposed in the
+literature. Among these techniques, the increased radius search
+(IRS) {{cite:22c82433-c384-43ef-99f0-959a10410033}} and the improved increasing radius
+search (IIRS) {{cite:1a7bee2f-3c32-48c1-8c24-e266922e12c7}} suggested improving SD
+complexity efficiency by making a good choice of the sphere radius,
+trying to reduce the number of candidates in the search space. The
+former suggested a set of sphere radii FORMULA 
+such that SD starts with FORMULA  trying to find a candidate. If no
+candidates were found, SD executes again using the increased radius
+FORMULA . The algorithm continues until either a candidate is found
+or the radius is increased to FORMULA  which should be large enough
+to guarantee obtaining at least one candidate. Whereas, the latter
+provided a mechanism to avoid the waste of computations taking place
+in the former method when a certain radius FORMULA  does not lead
+to a candidate solution. Obviously, these two techniques studied the
+complexity problem from the radius choice perspective.
+In this paper we improve the SD complexity efficiency by reducing
+the number of FLOPS required by the SD algorithm keeping in mind the
+importance of choosing a radius. The radius should not be too small
+to result in an empty sphere and thus restarting the search, and at
+the same time, it should not be too large to increase the number of
+lattice points to be searched. We use the formula presented in
+{{cite:9d59374b-42f0-4bde-8524-4908b4680153}} for the radius, which is FORMULA , where N is the problem dimension
+and FORMULA  is the noise variance. The reduction of the
+number of FLOPS is accomplished by introducing a new and proper
+lattice representation, as well as incorporating quantization at a
+certain level of the SD search. It is also important to mention that
+searching the lattice points using this new formulation can be
+performed in parallel, since the new proposed structure in this
+paper enables decoding the real and imaginary parts of each symbol
+independently and at the same time.
+The remainder of this paper is organized as follows: In Section
+, a problem definition is introduced and
+a brief review of the conventional SD algorithm is presented. In
+Section , we propose the new lattice representation
+and perform the mathematical derivations for complexity reduction.
+Performance and complexity comparisons for different number of
+antennas or modulation schemes are included in Section
+. Finally, we conclude the paper in Section
+.
+
+Problem Definition and the Conventional Sphere Decoder
+Consider a MIMO system with N transmit and M
+receive antennas. The received signal at each instant of time is
+given by
+FORMULA 
+where FORMULA , FORMULA  is the channel
+matrix, FORMULA  is an N dimensional
+transmitted complex vector whose entries have real and imaginary
+parts that are integers, FORMULA  is the
+i.i.d complex additive white Gaussian noise (AWGN) vector with
+zero-mean and covariance matrix FORMULA . Usually, the
+elements of the vector FORMULA  are constrained to a finite set FORMULA 
+where FORMULA , e.g., FORMULA  for 16-QAM (quadrature amplitude modulation) where
+FORMULA  and FORMULA  denote the sets of integers and
+complex numbers respectively.
+Assuming FORMULA  is known at the receiver, the ML detection is given by
+FORMULA 
+Solving (REF ) becomes impractical and exhaustive
+for high transmission rates, and the complexity grows exponentially.
+Therefore, instead of searching the whole space defined by all
+combinations drawn by the set FORMULA , SD solves this problem by
+searching only over those lattice points or combinations that lie
+inside a sphere centered around the received vector FORMULA  and of
+radius FORMULA . Introducing this constraint on (REF )
+will change the problem to
+FORMULA 
+A frequently used solution for the QAM-modulated complex signal
+model given in (REF ) is to decompose the
+FORMULA -dimensional problem into a 2FORMULA -dimensional real-valued problem,
+which then can be written as
+FORMULA 
+where FORMULA  and FORMULA  denote the real and imaginary parts
+of FORMULA , respectively {{cite:1e9368e6-75a7-40c3-9ac0-2e378092b941}}, {{cite:97fd0d2c-8df6-4948-b9cb-8bb1c35e439f}},
+{{cite:9d59374b-42f0-4bde-8524-4908b4680153}}-{{cite:ccb90451-48d4-4a64-88d9-b5d34cb84808}}. Assuming FORMULA  in the
+sequel, and introducing the QR decomposition of FORMULA , where
+R is an upper triangular matrix, and the matrix Q
+is unitary, (REF ) can be written as
+FORMULA 
+where FORMULA . Let
+R=FORMULA 
+and note that R is upper triangular. Now to solve
+(REF ), the SD algorithm constructs a tree, where
+the branches coming out of each node correspond to the elements
+drawn by the set FORMULA . It then executes the decoding process
+starting with the last layer (FORMULA ) which matches the first level
+in the tree, calculating the partial metric
+FORMULA , and working its
+way up in a similar way to the successive interference cancelation
+technique, until decoding the first layer by calculating the
+corresponding partial metric
+FORMULA . The summation of all
+partial metrics along the path of a node starting from the root
+constitutes the weight of that node. If that weight exceeds the
+square of the sphere radius FORMULA , the algorithm prunes
+the corresponding branch, declaring it as an improbable way to a
+candidate solution. In other words, all nodes that lead to a
+solution that is outside the sphere are pruned at some level of the
+tree. Whenever a valid lattice point at the bottom level of the tree
+is found within the sphere, the square of the sphere radius
+FORMULA  is set to the newly found point weight, thus
+reducing the search space for finding other candidate solutions.
+Finally, the leaf with the lowest weight will be the survivor one,
+and the path along the tree from the root to that leaf represents
+the estimated solution FORMULA .
+To this end, it is important to emphasize the fact that the
+complexity of this algorithm, although it is much lower than the ML
+detection, is still exponential at low SNR, and is directly related
+to the choice of the radius FORMULA , as well as the number of floating
+point operations taking place at every tree node inside the sphere.
+
+New Lattice Representation
+The lattice representation given in (REF ) imposes a
+major restriction on the tree search algorithm. Specifically, the
+search has to be executed serially from one level to another on the
+tree. This can be made clearer by writing the partial metric weight
+formula as
+FORMULA 
+with FORMULA , FORMULA  and where
+FORMULA , FORMULA  are
+the real and imaginary parts of FORMULA 
+respectively.
+Obviously, the SD algorithm starts from the upper level in the tree
+(FORMULA ), traversing down one level at a time, and computing the
+weight for one or more nodes (depending on the search strategy
+adopted, i.e., depth-first, breadth-first, or other reported
+techniques in the literature) until finding a candidate solution at
+the bottom level of the tree (FORMULA ). According to this
+representation, it is impossible, for instance, to calculate
+FORMULA  for a node in level (FORMULA ) without
+assigning an estimate for FORMULA . This approach results
+in two related drawbacks. First, the decoding of any
+FORMULA  requires an estimate value for all preceding
+FORMULA  for FORMULA . Secondly, there is no room for parallel
+computations since the structure of the tree search is sequential.
+The main contribution in this paper is that we relax the tree search
+structure making it more flexible for parallelism, and at the same
+time reducing the number of computations required at each node by
+making the decoding of every two adjacent levels in the tree totally
+independent of each other.
+We start by reshaping the channel matrix representation given in
+(REF ) in the following form:
+FORMULA 
+where FORMULA  is the i.i.d. complex path gain from transmit
+antenna FORMULA  to receive antenna FORMULA . By looking attentively at the
+columns of FORMULA  starting from the left hand side, and
+defining each pair of columns as one set, we observe that the
+columns in each set are orthogonal, a property that has a
+substantial effect on the structure of the problem. Using this
+channel representation changes the order of detection of the
+received symbols to the following form
+FORMULA 
+This means that the first and second levels of the search tree
+correspond to the real and imaginary parts of FORMULA , unlike the
+conventional SD, where those levels correspond to the imaginary part
+of FORMULA  and FORMULA  respectively. The new structure becomes
+advantageous after applying the QR decomposition to FORMULA . By
+doing so, and due to that special form of orthogonality among the
+columns of each set, all the elements FORMULA  for
+FORMULA  in the upper triangular matrix R become
+zero. The locations of these zeros are very important since they
+introduce orthogonality between the real and imaginary parts of
+every detected symbol.
+In the following, we will prove that the QR decomposition of
+FORMULA  introduces the aforementioned zeros. There are several
+methods for computing the QR decomposition, we will do so by means
+of the Gram-Schmidt algorithm.
+ Let
+FORMULA 
+where FORMULA  is the FORMULA th column
+of FORMULA . Recalling the Gram-Schmidt algorithm, we
+define
+ FORMULA
+and then,
+
+ FORMULA
+ for
+FORMULA .
+where
+FORMULA 
+is the projection of vector FORMULA  onto
+FORMULA  defined by
+FORMULA 
+and FORMULA 
+for FORMULA . Rearranging the equations
+ FORMULA
+ FORMULA
+ FORMULA
+ FORMULA
+FORMULA .
+Now, writing these equations in the matrix
+form, we get:
+FORMULA 
+
+Obviously, the matrix to the left is the orthogonal unitary
+Q matrix, and the one to the right is the upper triangular
+R matrix.
+Now our task is to show that the terms FORMULA 
+are zero for FORMULA . Three observations
+conclude the proof.
+First, since FORMULA  and
+FORMULA  are orthogonal for
+FORMULA , then
+FORMULA 
+=
+FORMULA 
+= 0 for the same FORMULA .
+
+Second, the projection of FORMULA 
+for FORMULA  on the columns
+FORMULA  and
+FORMULA  respectively is equal to the
+projection of FORMULA  on the columns
+FORMULA  and
+-FORMULA  respectively. To formalize this:
+FORMULA 
+for FORMULA  and FORMULA . This
+property becomes obvious by using the first observation and
+revisiting the special structure of
+(REF ).
+
+Third, making use of the first two observations, and
+noting that
+FORMULA =FORMULA 
+for FORMULA , it can be easily shown that
+FORMULA =FORMULA 
+for the same FORMULA .
+Then,
+FORMULA 
+Now, applying the above observations to
+(REF ), we get
+FORMULA 
+
+This concludes the proof.
+In this context, the SD algorithm executes in the following way.
+First, the partial metric weight
+FORMULA  for the FORMULA  nodes in the
+first level of the tree is computed, where FORMULA  is the number of
+elements in FORMULA . This metric is then checked against the
+specified sphere radius FORMULA . If the weight at any node is greater
+than the sphere radius then the corresponding branch is pruned.
+Otherwise, the metric value is saved for the next step. At the same
+time, another set of FORMULA  partial metric computations of the form
+FORMULA  take place at the
+second level, since these two levels are independent as proved
+above. These metrics are checked against FORMULA  in a similar way to
+that done in the above level. The weights of the survivor nodes from
+both levels are summed up and the summation is checked against the
+sphere constraint, ending up with a set of survivor FORMULA 
+symbols. Secondly, the estimation of the remaining FORMULA 
+or FORMULA  symbols is done by quantization to the nearest
+constellation element in FORMULA . In other words, the values of
+FORMULA  are calculated recursively for
+each combination of survived FORMULA , and the
+total weight given by FORMULA  is determined at the
+bottom level of the tree for those leaves that obey the radius
+constraint. Finally, the leaf with the minimum weight is chosen to
+be the
+decoded message FORMULA . This can be formalized as
+Step1:
+for FORMULA  to  FORMULA
+ FORMULA
+ FORMULA
+if FORMULA  FORMULA  add to survivor set 1
+else FORMULA  prune branch
+if FORMULA  FORMULA  add to survivor
+set 2
+else FORMULA  prune branch
+next  FORMULA
+save all combinations of FORMULA 
+whose weight summations comply to the radius constraint. Denote the
+number of survivors at the end of this step by {FORMULA }.
+Step2: (for every combination in FORMULA , calculate FORMULA  recursively as shown below)
+for FORMULA  to 1, step  FORMULA
+set FORMULA =FORMULA , and calculate
+FORMULA 
+FORMULA 
+next  FORMULA
+where FORMULA (.) quantizes the value (.) to the closest
+element in the set FORMULA . The output of the above two steps is a
+set of candidate solutions FORMULA  with
+corresponding weights.
+Step3:
+choose that set of FORMULA  which
+has the lowest weight to be the detected message.
+Finally, the above algorithm's complexity is linear with the number
+of antennas, and the performance is optimal for MIMO systems having
+two antennas at both ends. However, this performance becomes
+suboptimal for systems with FORMULA  (e.g., there is a 4 dB loss
+compared to the conventional SD at a BER of FORMULA  for a 4x4
+system ). This is mainly due to the use of quantization which takes
+place at all tree levels except the first two, and makes the
+estimation of FORMULA s loose as we further traverse down in the
+tree. Thus, we introduce minor heuristic rules in the middle levels
+of the tree when FORMULA , while still using the above steps at the
+very first and very last two levels in the tree, in order to obtain
+near optimal performance (less than 1 dB loss), sticking with a
+complexity that is very much small compared to the conventional SD.
+A brief discussion on how to specify these rules are proposed in
+Section .
+
+Simulation Results
+We have considered 2x2, 4x4, and 6x6 cases using 16-QAM and 64-QAM
+modulation schemes. As mentioned in the previous section, we
+introduce heuristic rules in the middle levels of the tree when
+FORMULA . Therefore, in our simulations for the 4x4 and 6x6 cases,
+we executed the algorithm in the following way:
+For the 4x4 system, the first two levels of the tree which
+correspond to the imaginary and real parts of the symbol
+FORMULA  are treated the same way as explained in Step 1 of the
+algorithm. For each survivor FORMULA , the weight for all
+different FORMULA  possibilities of FORMULA  is calculated, and
+those weights that violate the radius constraint are dismissed
+(FORMULA  {{cite:9d59374b-42f0-4bde-8524-4908b4680153}}). The best 8
+survivors, or in other words, those 8 FORMULA 's that have
+lowest weights are kept for next steps while for the others the
+corresponding paths are pruned. In the third two levels, the same
+procedure performed in the previous step is applied and the best 8
+FORMULA 's are kept. Finally, a quantization process followed
+by an estimation of the transmitted message is carried out exactly
+the same way as in step 2 and 3 explained in the previous section.
+On the other hand, the 6x6 case has similar approach but with
+different parameters. The first two levels are treated similarly as
+explained in step 1. For the 16-QAM (64-QAM) case, the best 16, 8,
+and 4 (32,32, and 16) survivors of FORMULA , FORMULA , and
+FORMULA  respectively are kept in the middle levels until
+reaching the last four levels which are then processed by
+quantization, in order to obtain FORMULA  and FORMULA .
+Figure REF  reports the performance of the proposed
+algorithm versus the conventional SD, for 2x2, 4x4, and 6x6 cases
+using 16-QAM modulation. We observe that the proposed algorithm
+achieves exactly the same performance as the conventional SD, but
+with much smaller complexity as shown in Figure
+REF . However, there is almost FORMULA  dB
+performance loss in the proposed 4x4 and 6x6 compared to the
+conventional. This loss is due to the FORMULA -best criteria adoption at
+a certain level of the tree as well as applying the quantization
+process at the low levels of the tree as mentioned above. From
+Figure REF , it is clear that the proposed
+algorithm reduces the complexity by 80% for the 2x2 case, and 50%
+for both the 4x4 and 6x6 systems.
+FIGURE 
+Figures REF  and REF  show the
+performance and complexity curves for the 2x2, 4x4, and 6x6 cases,
+for the 64-QAM modulation. Again, the performance is shown to be
+close to the conventional for the 2x2 case, and has almost FORMULA 
+dB degradation loss for the 4x4 and 6x6 cases. The difference in the
+complexity for the proposed and conventional SD are within the same
+range as in the 16-QAM modulation case.
+FIGURE 
+
+Conclusions
+A simple and general lattice representation in the context of sphere
+decoding was proposed in this paper. The performance of the proposed
+structure was shown to be optimal for 2x2 systems while close to
+optimal (FORMULA  dB loss) in the 4x4 and 6x6 cases. A complexity
+reduction of 80% was attainable for the 2x2 case, and 50% for the
+4x4 and 6x6 cases, compared to their correspondence for the
+conventional SD.

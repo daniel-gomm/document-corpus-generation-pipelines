@@ -1,0 +1,506 @@
+
+Phenomenological constraints on low-scale gravity
+Veniamin Berezinsky
+INFN, Laboratori Nazionali del Gran Sasso, I-67010
+Assergi (AQ), Italy
+and Institute for Nuclear Research of the RAS, Moscow, Russia
+Mohan Narayan
+Mumbai University, Institute of Chemical Technology,
+Mumbai 400076, India
+and INFN, Laboratori Nazionali del Gran Sasso, I-67010, Asergi (AQ),
+Italy
+We study the constraints on gravity scale FORMULA  in extra-dimension
+gravitational theory, obtained from gravity-induced processes.
+The obtained constraints are subdivided into strong (though not robust)
+and reliable (though less strong). The strong constraints can be
+in principle relaxed due to some broken gauge symmetries, e.g.
+family symmetry. The strongest constraint is given by neutrino
+oscillations. For different assumptions the lower bound on FORMULA 
+is FORMULA  GeV. However, it can be, in principle,
+reduced by broken family symmetry. More reliable bounds
+are due to flavor-conserved operators or those which change the
+flavors within one family. These bounds, obtained using the electron
+mass and width of FORMULA  decay, are FORMULA  GeV
+and FORMULA  GeV, for these two cases, respectively.
+
+low-scale gravity, hierarchical problem, neutrino masses
+and oscillations
+11.10.Kk, 14.60.Pq, 13.20.Cz, 23.40.Bw, 95.85.Ry, 97.60.-s
+ Introduction
+Starting from works {{cite:1e77eaf7-0787-4b79-bc86-2bc2dd3ecdad}},
+there has been intense activity in the recent past in constructing
+theories, in which the fundamental gravity scale FORMULA 
+is much less than the usual Planck scale
+FORMULA  GeV.
+These theories necessarily involve more than four
+space-time dimensions, where the extra dimensions are
+compactified. Gravitation propagates in all the dimensions, while the standard
+model fields are usually restricted to four dimensions or can
+propagate in the extra dimensions in more complicated versions
+of this scenario.
+One of the main motivations of these models is to provide an
+alternative solution to
+the hierarchy problem, which is usually taken care of by invoking
+supersymmetry.
+The fundamental scale of gravity FORMULA  is related to
+the Planck scale FORMULA  via the number of extra dimensions
+involved and their
+radii of compactification.
+There is an extensive literature on this subject.
+We indicate recent reviews {{cite:3722880a-da87-44fc-a5f9-87247bf9b43a}}, {{cite:9e96a457-9f9f-43a1-b7da-9806c2c2f26a}}, {{cite:5eee62f5-c77f-4bef-8b49-a85f661016aa}}, {{cite:35d89e8e-da8c-485b-a7a4-1b27b1029970}}, in which the reader can
+find references to most of the relevant papers in this area.
+Many phenomenological restrictions on the fundamental scale FORMULA 
+have been studied in the references cited above and it was demonstrated that
+low-scale gravity with FORMULA  TeV survives. In this paper we shall
+study restrictions imposed by quantum gravity operators, which have
+been already discussed in {{cite:c4387e42-1251-4939-ab52-de59c74cf978}}.
+The general approach to description of gravity-induced processes consists in
+following.
+The unknown quantum gravity Lagrangian is assumed to be expanded at
+low energies in series of unrenormalizable operators, each being
+inversely proportional to the powers of the fundamental scale FORMULA 
+{{cite:002c1b17-6b58-4fd9-a146-38182286efc9}}:
+FORMULA 
+where FORMULA  and FORMULA  are fermion and boson fields, respectively.
+The inverse
+proportionality to FORMULA  is a natural condition of vanishing of
+these operators when FORMULA , i.e. when gravity is
+switched off. Assuming the coefficients FORMULA  in expansion
+(REF ) we follow argumentation of Hawking {{cite:fa6ebdb5-9b1f-44e8-a8b8-b3c37478ff7b}}.
+The Lagrangian FORMULA  and the operators of its expansion (REF )
+are expected to break the global symmetries {{cite:fa6ebdb5-9b1f-44e8-a8b8-b3c37478ff7b}}, {{cite:002c1b17-6b58-4fd9-a146-38182286efc9}}, {{cite:cdbe02e6-70ae-4dc4-b85c-a49397d5ef24}}.
+It could be understood, for
+example, as absorbing a global charge by virtual black hole with its
+consequent evaporation. The topological fluctuations (wormhole effects)
+break conservation of global charges, too {{cite:d13fac4e-9ec6-4056-bd36-1e3eb84e102d}}.
+It could be understood as transition of global charges to baby universes.
+On the other hand the discussed
+operators should respect the gauge symmetries and gauge discrete
+symmetries. In particular, the Lagrangian (REF ) must have
+SU(2)FORMULA U(1) symmetry for the Standard Model (SM) fields, before this
+symmetry is spontaneously broken.
+The exact or spontaneously broken gauge symmetries can in principle suppress
+some gravity operators. Berezhiani and Dvali {{cite:c4387e42-1251-4939-ab52-de59c74cf978}} considered the
+family symmetry as mechanism of such
+suppression. An example can be given by the flavor-changing
+neutral currents (FCNC). If flavors are considered as global charges,
+FCNC, e.g. FORMULA , appear as gravity induced
+operators being suppressed by powers of FORMULA . FCNC effects
+should be small, restricted by FORMULA  mixing and FORMULA 
+decay. Treating this problem straightforwardly, one obtains the strong
+lower bound on FORMULA . As was demonstrated by Berezhiani and
+Dvali {{cite:c4387e42-1251-4939-ab52-de59c74cf978}} the broken
+family symmetry may suppress additionally FCNC gravity operators. This
+interesting possibility reduces, however, the beauty of the original
+theory: the gauge family bosons have to propagate in the bulk, what
+was prerogative of graviton only. In addition, it also seems somewhat
+artificial that the gauge family bosons have this property, while the
+other standard model gauge fields do not.
+There could be some other broken gauge symmetries which can suppress
+additionally the gravity operators. In this paper we shall consider
+the broken chiral symmetry as a mechanism of such suppression.
+The plan of the paper is as follows.
+We begin discussion with the family-flavor violating processes
+which in principle can be suppressed by family symmetry. Some of these
+processes have been already discussed, nevertheless we discuss them
+again, performing more
+accurate calculations. Not surprisingly, for this class of processes
+we obtain the strongest restrictions. Then we perform the
+calculations for processes which cannot be suppressed by family
+symmetry. In the section  we discuss how these
+operators can be suppressed.
+
+Processes with flavor violation 
+Quantum gravity interactions are supposed to violate the global
+symmetries, and thus the flavors of particles. However, they must
+respect gauge symmetries, and the broken gauge symmetries can suppress
+the flavor-changing process. In this section we
+shall obtain the bounds to the fundamental gravity scale
+FORMULA  from flavor-changing processes neglecting possible symmetry
+suppression, and keeping in mind that these bounds are not robust.
+Constraint from FORMULA  mixing 
+FORMULA  mixing is the consequence of an FORMULA 
+interaction, which is very well accounted for within the framework
+of the Standard Model. This mixing results in two mass eigenstates
+FORMULA  and FORMULA  with masses FORMULA  and FORMULA  .
+The mass difference between FORMULA  and FORMULA  is measured very precisely and
+is known to be FORMULA  {{cite:3f60c2ba-e82c-4595-b112-02888ec5a70f}}.
+It has been realised since a
+long time that such a small value of this mass difference will be very sensitive
+to any new FORMULA  contributions coming from beyond the standard model
+and hence will be able to strongly constrain such new contributions.
+If one has an effective FORMULA  four-fermion interaction, then
+the usual calculation for this mass difference is done using the "vacuum
+dominance approximation" for the hadronic matrix element,
+FORMULA ,
+(see for example {{cite:3ad3b6ee-3949-4a03-9dff-08f60f5aa48f}}). This gives,
+FORMULA ,
+where FORMULA  {{cite:3f60c2ba-e82c-4595-b112-02888ec5a70f}} is the constant appearing
+in the decay amplitude of FORMULA  and
+FORMULA  MeV, is the FORMULA  mass.
+FORMULA  parametrizes the strength of the new interaction and the approximation
+sign can be interpreted to imply that, there could
+be some dimensionless FORMULA  coefficients in front of FORMULA ,
+where FORMULA  and FORMULA  are the quark flavors involved in the interaction.
+In our case, since low scale gravity is responsible for this contribution, the
+interaction is flavor blind and we set FORMULA .
+We calculate effect of the hadronization using a scalar current in
+exact analogy with FORMULA  decay (see below):
+FORMULA 
+Hence we obtain
+FORMULA 
+resulting in
+FORMULA 
+
+ FORMULA
+The lepton number violating process FORMULA 
+gives another bound on the fundamental gravity scale FORMULA .
+The decay rate of FORMULA 
+in the Standard Model, extended with massive neutrinos
+is given by
+FORMULA , where formfactor
+FORMULA  calculated {{cite:bad1a25c-9caa-4488-8de0-d51cd2097a92}} from the loop diagrams with exchange by
+neutrino, is very small
+FORMULA 
+with FORMULA .
+The lowest order quantum gravity operator (REF ) which induces
+FORMULA  decay is given by
+FORMULA 
+where FORMULA  is the SM scalar field and FORMULA  is e-m tensor
+field.
+The width of FORMULA  decay calculated using
+operator (REF ) after EW symmetry breaking is
+FORMULA 
+where vacuum expectation value is FORMULA  GeV {{cite:3f60c2ba-e82c-4595-b112-02888ec5a70f}}.
+The branching ratio FORMULA  for this decay with respect to the dominant
+muon decay FORMULA  ,
+FORMULA 
+results in FORMULA  GeV, if to use the present upper bound
+FORMULA  for FORMULA  decay.
+
+Neutrino oscillations
+Here we consider the gravitational interaction among the neutrinos as
+responsible for generating an additional term in the neutrino mass matrix,
+which is usually taken to be generated by some GUT dynamics.
+This additional term is taken as an perturbation to the GUT mass matrix.
+We follow the same approach and formalism developed
+in the work {{cite:4983cf9c-330c-464f-912c-8c5d0d3fd290}} (where the main aim was to consider
+the effect of this perturbation on the neutrino mixing angles).
+We refer the reader to it for further details.
+Because of this perturbation, the mass
+splittings generated by the GUT mass matrix get an additional contribution
+due to the gravitational interaction.
+From Eq.(11) of {{cite:4983cf9c-330c-464f-912c-8c5d0d3fd290}}, we get an expression for the modified
+mass splittings
+(FORMULA  are the neutrino masses and
+FORMULA  are the mass splittings produced as a result
+of some GUT texture which is able to reproduce the observed
+masses and mixings).
+FORMULA 
+where FORMULA , with FORMULA  being the usual neutrino mixing matrix for
+three flavors, FORMULA  is a FORMULA  matrix with all elements
+equal to 1 and FORMULA .
+The KamLAND {{cite:21ccef8e-d357-4adb-b959-68dad101c9bd}} measurement of the lower mass splitting
+is a very robust result in neutrino physics confirming the earlier
+conclusions drawn from the solar and the atmospheric neutrino data.
+In the following analysis, we use this result.
+KamLAND gives the central value of FORMULA  as
+FORMULA . Let us estimate the correction to
+this scale coming from the second term in Eq.(REF ).
+Consider the case where the neutrino spectrum
+is hierarchial with
+FORMULA , where FORMULA  and
+FORMULA .
+Also, unless the phases in the mixing matrix take very special values,
+the term FORMULA  has a value FORMULA .
+Therefore the correction term can be written as
+FORMULA .
+The maximal correction due to the considered term
+can be parametrised with help of
+FORMULA .
+For instance FORMULA 
+implies a 100 % correction. This can be translated into
+a bound on the scale FORMULA :
+FORMULA 
+The allowed values of FORMULA  may be obtained from analysis of the
+KamLAND data, respecting the general restriction  FORMULA
+So the new scale must be even higher than a typical GUT scale.
+For a quasi degenerate neutrino spectrum with neutrino
+masses at FORMULA  eV, the constraint becomes stronger:
+FORMULA 
+This result, however, comes with some caveats:
+(1) For the degenerate spectrum, for specific
+choices of the Majorana phases it is
+possible to arrange for
+FORMULA 
+and hence to relax the constraint on FORMULA .
+(2) For very specific choices of the FORMULA  coefficients,
+it is possible to use low scale gravity as the only
+contribution to the neutrino masses {{cite:6b661a0f-bc72-4776-8cbf-69305dffe19c}}.
+
+Bound from proton decay
+Now we discuss the bound on the gravity scale FORMULA  coming from proton decay.
+Even restricting our interest to FORMULA 
+operators, there are still many possible contributions:
+FORMULA 
+In the above equation, the 6 operators
+of the scalar and of the tensorial type, FORMULA  and FORMULA 
+are
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA  and
+FORMULA .
+The 3 operators, FORMULA 
+of the vectorial type are
+FORMULA ,
+FORMULA  and
+FORMULA .
+These operators were first written down explicitly in {{cite:ca83f846-8dc8-46f8-bddb-83c05327345c}}.
+It is simple to see that the weak hypercharge
+is conserved in all these. Regarding weak isospin,
+the first operator is built
+in the FORMULA  channel, the last 3 in FORMULA  and
+the remaining ones in FORMULA . Finally the color of the
+three quark fields is contracted with FORMULA .
+The flavor indices have been suppressed.
+If we restrict our attention solely
+to proton decay, i.e to FORMULA  process, then the operators
+FORMULA  and FORMULA  do not contribute. To
+estimate the resulting bound on FORMULA ,
+let us consider as an example the channel FORMULA ,
+that has a strong bound of FORMULA  years
+from the Super-Kamiokande experiment.
+The typical hadronic matrix element e.g.,
+FORMULA  can be
+presented as FORMULA , where FORMULA  is an quark overlap
+function with value at origin FORMULA  and
+FORMULA  is the spinor describing the proton.
+In this way, we obtain the bound:
+FORMULA 
+where FORMULA  is a renormalization factor from FORMULA 
+to the scale of proton decay.
+This bound is expected to
+be correct within a factor of the order of unity, however it is
+remarkably insensitive to the details of the
+hadronization.
+
+Bound from the Majorana neutrino mass
+The quantum gravity dimension 5 operator can be constructed as SU(2)
+singlet from lepton and Higgs fields:
+FORMULA 
+where FORMULA  is lepton SU(2) doublet, index FORMULA  denotes the charge
+conjugation and FORMULA  the Pauli spin matrices.
+This operator generates the Majorana neutrino mass and as it was first
+suggested in Ref. {{cite:09d86518-1977-442e-8782-ae08eec7602f}}.
+After EW symmetry breaking, Eq.(REF ) gives the following
+Majorana neutrino mass term:
+FORMULA 
+From the cosmological limit on the neutrino masses,
+FORMULA  eV {{cite:c3b4abed-7f79-4f2f-8d15-2ce8b491cc1c}}, {{cite:fdbb1435-7b36-4787-980b-4737529bd091}},
+valid for any flavor, we obtain using Eq.(REF ):
+FORMULA 
+Note that though Eqs. (REF ) and (REF ) violate lepton
+number, they do not allow transitions between flavors (lepton numbers)
+of different families, and therefore the bound (REF )
+cannot be suppressed by family symmetry. For further discussion
+see section .
+
+Processes without family-flavor violation
+In this section we shall study more reliable bounds on the
+gravity scale FORMULA . We restrict our consideration by flavor transitions
+within one family and by flavor-conserving
+operators.
+Fermion masses
+The Standard Model includes the Yukawa interaction
+FORMULA 
+where FORMULA  is fermion FORMULA  doublet, FORMULA  is the Higgs doublet and
+FORMULA  is FORMULA  singlet. The corresponding gravitational operator
+can be written, including FORMULA  singlet FORMULA :
+FORMULA 
+After EW symmetry breaking, the Eq.(REF ) gives the fermion mass term
+FORMULA 
+Using FORMULA , we obtain the lower bound
+FORMULA 
+However, the Higgs sector of the Standard Model is most questionable
+part of the model. In particular, the differences of fermion masses
+in the first and third families requires the physics beyond SM.
+The Lagrangian (REF ) may be forbidden
+imposing the chiral symmetry, and the lower bound on FORMULA  may
+expected to become smaller. We shall demonstrate here that this is not
+the case.
+Consider the chiral
+gauge symmetry within most natural FORMULA 
+model {{cite:707ad0ba-91f9-47e6-840b-6e2f49ecaeee}}. In this model for the first family
+FORMULA , FORMULA  and FORMULA 
+are transforming as FORMULA  and FORMULA ,
+FORMULA  and FORMULA 
+as FORMULA . For the other families FORMULA  and FORMULA  are defined in the
+identical way. The operator (REF ) is not
+FORMULA  singlet, and it does not conserve chiral
+charges. One
+can see it explicitly introducing the gauge interactions in the usual way:
+FORMULA 
+Now we can write the gravity operator as FORMULA  singlet
+which conserves the chiral charges FORMULA 
+and FORMULA :
+FORMULA 
+After spontaneous symmetry breaking we obtain for the fermion mass
+FORMULA 
+which should be less than FORMULA . The value of FORMULA  is unknown, but it
+cannot be less than FORMULA .
+Then one obtains
+FORMULA 
+Thus, submerging SU(2)FORMULA  into SU(2)FORMULA  which respects chiral symmetry, we further increase the
+lower bound on FORMULA . Further on we shall use only
+limit (REF ) as being more conservative.
+
+Bound from  FORMULA
+Let us consider the operator
+FORMULA 
+where FORMULA  and FORMULA  are FORMULA  doublets and FORMULA  and FORMULA  are
+FORMULA  singlets. The operator (REF )
+is allowed also by FORMULA  chiral symmetry, if
+this symmetry is universal for all right/left fermions.
+See section  for further discussion of chiral-symmetry
+restrictions.
+Therefore, all known symmetries and
+conservation laws are satisfied with (REF ),
+and we apply it to one family to avoid possible
+family-symmetry restrictions.
+In terms of the first generation fields it gives
+FORMULA 
+Performing the Fierz transformation {{cite:3ad3b6ee-3949-4a03-9dff-08f60f5aa48f}} for operator (REF )
+we obtain
+FORMULA 
+This operator results in two observational consequences: (i) it gives
+the matrix element for FORMULA -decay unsuppressed by factor
+FORMULA , as it occurs in weak interaction, and (ii) it produces
+right-handed electrons in beta decays with the opposite helicity in
+comparison with weak interaction.
+We shall concentrate here on much stronger effect (i).
+For practical calculations it is enough to use the operator
+FORMULA 
+where we omitted the scalar contribution in the FORMULA 
+current since it vanishes between hadronic states FORMULA  and FORMULA .
+The standard calculations can be performed using the matrix element
+for pion decay FORMULA , where FORMULA  is pion momentum and
+FORMULA  MeV {{cite:3f60c2ba-e82c-4595-b112-02888ec5a70f}}. Multiplying this equation to FORMULA  and using
+the Dirac equations for FORMULA  and FORMULA  quark fields, one obtains
+FORMULA 
+where the quark masses FORMULA  and FORMULA  are taken to
+be 4.5 and 8.5 MeV, respectively {{cite:3f60c2ba-e82c-4595-b112-02888ec5a70f}}.
+Using Eq.(REF ), we evaluate
+the width of FORMULA  decay, from the contribution coming from weak
+interaction and and from Eq.(REF ):
+FORMULA 
+However, the Standard Model prediction for the decay width FORMULA  agrees
+with the experimental width within the error
+FORMULA  {{cite:3f60c2ba-e82c-4595-b112-02888ec5a70f}}, and this limits
+the new contribution. Thus:
+FORMULA 
+
+Summary and discussion
+The status of the restrictions obtained for scale FORMULA  varies when different
+processes are used.
+The constraints from FORMULA  transition and
+FORMULA  decay can be straightforwardly suppressed by the
+Berezhiani-Dvali mechanism {{cite:c4387e42-1251-4939-ab52-de59c74cf978}}. Gravity-induced neutrino
+oscillations in principle is also suppressed by family symmetry,
+but this suppression would appear as well in the standard mechanism
+for neutrino oscillations, destroying its agreement with observational
+data. This problem can be probably solved in a model-dependent way
+(see section REF ). In particular, FORMULA  bound decreases when
+neutrino masses are produced due to gravitational effects only.
+The bound due to Majorana neutrino mass is more robust than one due to
+oscillations. It is not suppressed by family symmetry and occurs if
+quantum gravity violates lepton numbers.
+The case of (almost) Dirac neutrino is given by smallness of this
+term, which implies even stronger bound on FORMULA . A possible
+relaxation of this bound can be imposed in theory where lepton number
+is a gauge charge. Violation of lepton number is provided by breaking
+of this symmetry, and then operator (REF ) can include
+additional small factor, which reduces the bound (REF ).
+Notice, however, that if such mechanism allows transition between
+lepton numbers in different families, it affects the standard
+oscillation models, like in the case discussed above.
+Since the proton decay is not discovered, the existence of some symmetry
+protecting the proton and
+respected by gravitational interaction cannot be excluded (see
+Antoniadis et al. in Ref. {{cite:1e77eaf7-0787-4b79-bc86-2bc2dd3ecdad}}).
+Note that the family symmetry {{cite:c4387e42-1251-4939-ab52-de59c74cf978}}
+does not work in this case. Moreover, it is always possible to find
+some ad hoc mechanism of suppression which makes proton “practically
+stable”(e.g. see {{cite:e88c79af-54a3-4cb3-a9bb-3aa0dac5194a}}). Using all these arguments one may probably
+exclude bound due to proton decay from the list of robust restrictions.
+The bounds from fermion masses and FORMULA  are practically robust.
+The former does not include even global symmetry violation and
+flavor-changing currents. The operator (REF ) is one-family
+operator, it respects chiral symmetry FORMULA , being a
+singlet of this group.
+If no FORMULA  sector exists, and the symmetry is reduced to
+FORMULA  of the SM, the electron mass is given by
+operator (REF ).
+The operator (REF ) for FORMULA  is one-family operator,
+conserving
+hypercharge, lepton and baryon numbers. Being FORMULA 
+singlet it respects the chiral symmetry. This decay is described by
+the flavor-changing current allowed in CC weak interaction,
+and it must be allowed in quantum gravity. No global symmetry is violated
+by this operator.
+Therefore, all theoretically known symmetries allow the operators
+(REF ) and (REF ). In principle, these operators can be
+suppressed by a new chiral symmetry, given for example by the
+following chiral transformations:
+FORMULA 
+where the rotation angles FORMULA ,  FORMULA , and
+FORMULA  are not equal. It results in the different
+coupling constants FORMULA ,  FORMULA  and FORMULA  in interaction of
+fermions with gauge bosons FORMULA ,  FORMULA ,
+and FORMULA .
+Operator (REF ) is explicitly forbidden by this “ad hoc chiral
+symmetry” (AHCS) , and the modified AHCS-conserving operators are
+suppressed when this symmetry is broken. Operator (REF ) can be
+suppressed also, but transformation of the Higgs fields must be
+specified.
+This particular chiral symmetry meets two problems:
+the model is not anomaly-free because FORMULA , and for the
+simplest Higgs sector the EW symmetry breaking occurs at the AHCS scale.
+Indeed, for the massless fields one should introduce two scalars
+FORMULA  and FORMULA  to provide masses for FORMULA  and FORMULA 
+after spontaneous symmetry breaking. However, vev's
+FORMULA  and FORMULA  break also EW symmetry
+giving too large masses to W- and Z-bosons.
+Finally, AHCS symmetry does not fit the GUT models, while
+FORMULA  symmetry is typical for most GUT models, most
+notably for SO(10).
+Probably one can construct more complicated AHCS model
+with the problems indicated above being solved. However, in absence of any
+motivation for symmetry (REF ) we qualify this possibility as
+exotic.
+Obtained bounds are summarised in Table REF .
+TABLE 
+In conclusion, the supergravity operators (REF ) impose the
+lower limits on the fundamental gravity scale FORMULA  TeV. These
+limits are valid even if supergravity operators (REF ) break only
+fermion flavors, like in case of FORMULA  decay, or conserves
+all flavors like in case of a fermion mass. The obtained lower limits
+must be considered as a problem for TeV-scale gravity, though we do
+not interpret these results as exclusion of TeV-scale gravity. The
+simplest possibility is given by some symmetry which forbids or
+suppresses the dangerous operators like the AHCS considered
+above. However, TeV-scale gravity is only a possibility,
+and the lower limits
+obtained above, could be an argument in favor of extra-dimension
+gravitational theory with the larger scale, like e.g. FORMULA  GeV
+in the Horava-Witten scenario {{cite:d2388db9-5439-48c1-b478-2808b9328262}}. These models have the interesting
+phenomenological applications, like for example the gravity-induced
+neutrino masses ( see section  and {{cite:6b661a0f-bc72-4776-8cbf-69305dffe19c}}).
+
+Acknowledgements
+We are grateful to Francesco Vissani for the collaboration and
+detailed discussions of all items of this paper.
+We thank Valery Rubakov, Goran Senjanovic, Alex Vilenkin,
+and Valentine Zakharov for valuable discussions. The anonymous
+referee is thanked for useful remarks and criticism.

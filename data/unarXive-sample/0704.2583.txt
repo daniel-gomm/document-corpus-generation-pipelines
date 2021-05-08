@@ -1,0 +1,411 @@
+
+FORMULA  GeV CLIC FORMULA  Collider Based on it's Drive Beam FEL
+[label1,label2]Hüsnü Aksakallabel1,label2
+[label1,label2]Corresponding author
+aksakal@science.ankara.edu.tr
+[label1]Department of Physics, Faculty of Science, Ankara University, 06100 Tandogan, Ankara, Turkey
+[label2]Department of Physics, Faculty of Art and Science, Nigde University, 51200 Nigde, Turkey
+
+CLIC is a linear FORMULA  (FORMULA ) collider project which
+uses a drive beam to accelerate the main beam. The drive beam
+provides RF power for each corresponding unit of the main linac
+through energy extracting RF structures. CLIC has a wide range of
+center-of-mass energy options from 150 GeV to 3 TeV. The present
+paper contains optimization of Free Electron Laser (FEL) using one
+bunch of CLIC drive beam in order to provide polarized light
+amplification using appropriate wiggler and luminosity spectrum of
+FORMULA  collider for FORMULA =0.5 TeV. Then amplified laser
+can be converted to a polarized high-energy FORMULA  beam at the
+Conversion point (CP-prior to electron positron interaction point)
+in the process of Compton backscattering. At the CP a powerful laser
+pulse (FEL) focused to main linac electrons (positrons). Here this
+scheme described and it is show that CLIC drive beam parameters
+satisfy the requirement of FEL additionally essential undulator
+parameters has been defined. Achievable FORMULA  luminosity is
+above FORMULA .
+
+Compton backscattering, FEL based FORMULA 
+collider.
+41.60-r;41.75.-i
+Introduction
+The idea of a FORMULA  collider was proposed in the early
+1980 {{cite:d615fc7f-de8e-4da9-aeb7-ff3a9bfc848f}}. It is well known that due to severe
+synchrotron radiation in storage rings, FORMULA  colliders in
+the TeV energy region will be linear. Unlike the situation in
+storage rings, in linear colliders each bunch is used only once.
+This makes possible the use of electrons for production of
+high-energy photons to obtain colliding FORMULA  and
+FORMULA  beams. The high energy gamma beam is produced by Compton
+backscattering of laser light off the electron beam. At about the
+same time, it was suggested that a free-electron laser could be used
+as the photon source of the FORMULA 
+collider {{cite:7433b3f8-f73f-452d-95fc-b35bee496bfb}}. In 1994, the use of single drive-beam
+bunches in a free-electron laser for a FORMULA  collider based
+on an erlier version of CLIC, which accelerated single main bunches
+per pulse, was proposed by R. Corsini and
+A. Mikhailichenko {{cite:d0db6942-878b-458a-b1f1-8d73d1777da0}}. The present paper describes to
+use a MOPA (Master Oscillator Power Amplifier) FEL instead of a
+conventional laser for Compton backscattering. MOPA FEL is studied
+for the case in which of radiation from a master oscillator is
+amplified in the FEL amplifier with tapered wiggler. But here we
+offer to use a solid state laser as a master laser instead of master
+oscillator radiation. FEL has many advantages compare to a
+conventional laser i.e: tunability, minimum divergence
+etc {{cite:d0db6942-878b-458a-b1f1-8d73d1777da0}}, {{cite:8d26679f-5cbd-40a8-b1c6-d835e6be198d}}. The FEL produces the radiation to
+Terawatt level which is the required power for a laser with
+wavelength of 1 FORMULA m at a photon linear collider. Several physics
+opportunities for FORMULA  and FORMULA  collisions at the
+CLIC are described below. Some examples are also described
+in {{cite:4d6ba667-0fe3-4c6f-865c-020998054b55}}, {{cite:89a08bc7-1512-444d-af8e-cd2a1c237068}}.
+
+A FORMULA  collider offers a unique opportunity for measuring
+the two-photon decay width of the Higgs boson, providing a glimpse
+of the mass scale beyond the TeV range. Even in the case when the
+Higgs boson will be found at FORMULA  linear colliders, its
+properties may be studied in detail only with CLIC photon collider.
+
+A FORMULA  collider is well suited for searching new
+charged particles, such as SUSY particles, leptoquarks, excited
+state of electrons, etc. because photons generally couple more
+effectively to these particles than do electrons or positrons.
+
+A FORMULA  or FORMULA  collider serving as a W-factory,
+producing FORMULA  Ws/year, allows for a precision study of
+gauge boson interactions and a search for their possible anomalies.
+
+At FORMULA  collider charged supersymetric particles
+with masses higher than the beam energy could be produced as well as
+the structure of photon could be measured.
+
+A proposed scheme of CLIC FORMULA  collider based on it's
+drive beam FEL is shown in Fig REF .
+
+Kinematic Background
+Conversion of FEL to high energy FORMULA  beam at the conversion
+point can be scaled with dimensionless FORMULA 
+parameter {{cite:d615fc7f-de8e-4da9-aeb7-ff3a9bfc848f}}.
+FORMULA 
+where FORMULA , FORMULA  are electron rest mass and beam energy
+respectively, FORMULA  laser photon energy. The maximum energy
+of the backscattered photons FORMULA  depends on
+the parameter FORMULA  but the backscattered photons can be lost for
+FORMULA  due to FORMULA  pair creation at the collisions of
+produced photons with un-scattered FEL photons (Breit-Wheeler
+process). Thus, the optimum value is FORMULA , giving the maximum
+photon energy FORMULA . Neglecting multiple
+scattering, and assuming that the laser profile seen by each
+electron is the same, the conversion probability of generating high
+energy gamma photons per individual electron can be written
+as {{cite:4d6ba667-0fe3-4c6f-865c-020998054b55}}
+FORMULA 
+If the laser intensity along the axis is uniform the exponent q is
+FORMULA 
+where A/FORMULA  denotes total number of laser photons, FORMULA 
+is the total Compton cross section is equal to 1.75 FORMULA 
+for FORMULA , FORMULA  is the laser beam intensity and FORMULA 
+(FORMULA ) is the laser pulse duration,
+FORMULA  the laser beam cross section
+at the focal point and FORMULA  is the laser pulse energy
+(FORMULA ). The optimum conversion efficiency
+corresponds to q=1 which is reached for a laser pulse energy of
+FORMULA . In this case one has
+p=0.65. Required laser-beam parameters are listed in
+Table REF . It should be kept in mind that last laser spot
+size must be bigger than electron beam transverse size, therefore
+last laser beam spot size is defined by final optical system of
+laser system (before CP). After the conversion, energy spectrum of
+high-energy photons are given as {{cite:01788ffd-3af0-459e-b4a0-035b63561148}}, {{cite:729dc274-1b98-42d4-815d-31de4ea52bff}}:
+FORMULA 
+where FORMULA , FORMULA , FORMULA ,
+FORMULA  electron and laser beam helicities respectively
+and FORMULA  is the Compton cross section of the laser and the
+e-beam, given as:
+FORMULA 
+By varying the polarization of electron and FEL, the polarization of
+the high-energy gamma beam can be tailored to fit the needs of the
+gamma-gamma collision experiments. Controlling the polarization is
+also important for sharpening the spectral peak in the
+FORMULA  luminosity. Due to dependence of Compton scattering,
+the peak in the luminosity spectrum is significantly enhanced by
+choosing the helicity of laser photons to be of the opposite sign to
+helicity of the electrons {{cite:d615fc7f-de8e-4da9-aeb7-ff3a9bfc848f}}, {{cite:4d6ba667-0fe3-4c6f-865c-020998054b55}}, {{cite:729dc274-1b98-42d4-815d-31de4ea52bff}}, {{cite:01788ffd-3af0-459e-b4a0-035b63561148}}.
+Required laser parameters for FORMULA =0.65 can be define using
+equation REF . The FEL output radiation is totally
+polarized: circularly or linearly for the case of helical or planar
+undulator, respectively {{cite:8d26679f-5cbd-40a8-b1c6-d835e6be198d}}, {{cite:705c94e7-ddd6-4c00-9a98-5d0c04651323}}, {{cite:b09e3b31-6679-4281-b88a-df01844120bd}}. To
+reduce the cost of the laser system only free electron laser can be
+used {{cite:ee14ad66-15ab-4aae-a693-0a3f1d9e5873}}, {{cite:8d26679f-5cbd-40a8-b1c6-d835e6be198d}}, {{cite:705c94e7-ddd6-4c00-9a98-5d0c04651323}}.
+
+Luminosity Calculation
+The FORMULA  luminosity is approximately proportional to
+FORMULA  geometric luminosity. Luminosity of colliding beams is
+related with beam size, number of particle per bunch and repetition
+frequency. The transverse beam size of both laser and electron
+(positron) beams can be expressed as {{cite:5d24ea58-f145-443c-b133-c8ad9aac4609}}:
+FORMULA 
+where FORMULA  represent the beam kind (FORMULA , FORMULA , FORMULA ) and
+FORMULA (FORMULA ,FORMULA ) the transverse coordinate, FORMULA  is the
+betatron function at the waist and FORMULA  the waist position. The
+beam size at the waist is
+FORMULA =FORMULA  where
+FORMULA  is normalized beam emittance and FORMULA  is betatron
+function. For laser beam the beta function is equal to Rayleigh
+range (FORMULA ) and the diffraction limited emittance is
+FORMULA . After laser optical system the Rayleigh range is
+FORMULA  where FORMULA  is defined
+roughly as the ratio of focal length to the diameter of focusing
+mirror {{cite:4d6ba667-0fe3-4c6f-865c-020998054b55}}. For high reflective mirrors, the average power
+density damage threshold is 10 FORMULA  and peak power density
+damage threshold is 10 FORMULA   {{cite:9ccbc6fa-70d4-4a20-894f-bdbb8b53a912}}. The problem in
+both cases is discharge (breakdown of hydrocarbons on the mirror
+surface) on mirror surface. Average power of required FEL is 33 kW.
+Therefore FEL easily transport to CP with mirrors. In our case,
+desired value of Rayleigh length (0.263 mm) can be obtained by
+taking FORMULA  equal to 14 for change the FEL Rayleigh range (1.7
+cm) at 1 J pulse energy. For calculation of spectral luminosity CAIN
+2.35 simulation program used {{cite:592f13a6-83aa-4fe2-9407-e8dafe8423ee}}. Nonlinear effect at the
+conversion point scaled with dimensionless FORMULA  parameter,
+which is related with photon density in the laser pulse, wavelength,
+pulse length, pulse energy. This FORMULA  parameter is of the
+form {{cite:1097510a-bdb6-4f54-9593-d2fc2c815f00}}
+FORMULA 
+In the case of  FORMULAFORMULA 1 multiphoton process occur at
+conversion point, for  FORMULAFORMULA 1 Compton scattering occur. In
+our case FORMULA =0.3 and there is no problem with multiphoton
+process. The differential luminosity equation as a function of laser
+energy in a FORMULA  collision is given below {{cite:01788ffd-3af0-459e-b4a0-035b63561148}}:
+FORMULA 
+where FORMULA  is invariant mass, FORMULA 
+Bessel function of the order of zero,
+FORMULA 
+is FORMULA  rapidity, FORMULA  and FORMULA  where FORMULA  is scattering
+angle of backscattered photons with respect to the direction of the
+incoming electron varies with photon energy
+as {{cite:01788ffd-3af0-459e-b4a0-035b63561148}}, {{cite:729dc274-1b98-42d4-815d-31de4ea52bff}}, {{cite:e19e95fc-3bf1-4352-9931-410e048c9311}}:
+FORMULA 
+The luminosity spectrum of CLIC FORMULA  collider can be seen
+in Fig REF .
+FIGURE 
+
+FEL System for FORMULA  Collider
+CLIC main linac, drive linac and master laser
+The time structure of the FEL pulses must follow the time structure
+of the electron (positron) bunches of the CLIC main linac at the
+conversion point. Using backscattered FEL, synchronization of
+FORMULA  beam and main linac electron (positron) beam can be solved.
+The CLIC drive beam complex consist of 2 combiner rings and a delay
+loop. Each combiner ring compress to drive beam 4 times and the
+delay loop another factor of 2. In order to get the same time
+structure in the FEL and the main beam it is necessary to use
+additional drive beam bunches after the 1st combiner ring.
+Drive beam bunch structure and it's complex can be seen in
+Fig REF . In this case both drive beam and main beam
+have the same bunch separation (0.267 ns). The number of main beam
+bunches per pulse is 220 and the number of drive beam bunches per
+train after 1st combiner ring is 262. When we take 2 more drive
+beam pulse from the drive linac gun, we would have 524 more bunches
+after the 1st combiner ring to be used wigglers for both
+electron main linac and positron main linac. Before the wiggler it
+should be dumped 42 e-bunches for each drive linac section so the
+bunch number of taken drive beam after 1st combiner ring would
+be decreased to 220. The example of scheme under consideration and
+the overall CLIC layout with updated beam parameters can be seen in
+Fig REF . The power of master laser must be higher than
+FEL amplifier noise at entrance of the
+wiggler {{cite:b09e3b31-6679-4281-b88a-df01844120bd}}. Furthermore the master laser has to be synchronize with drive linac electron bunches after 1st combiner ring.
+FIGURE 
+Luminosity increment method: CLIC at FORMULA =3 TeV
+containment 21 drive beam decelerator units for each main linac
+section, but the FORMULA =0.5 TeV option it has only 3 decelerator
+units. In this case the drive beam pulse length reduced by a factor
+of 7. To increase the luminosity, FORMULA  main beam bunches can
+be accelerated by using full drive beam pulse length (93.7 FORMULA ).
+Consequently the repetition frequency of main linac increases by
+factor 7. CLIC main linac beam parameters are given in
+Table REF , where proposed modification of repetition rate
+and Luminosity are given in parenthesis. In this case we need a
+kicker which is faster than FORMULA =3 TeV option after the second
+combiner ring. The drive beam pulse structure can be seen in
+Fig REF . Master laser and electron interaction in the
+wiggler will be explained in next subsection. The required
+parameters for the master laser are given in
+Table REF  and related drive beam parameters are given
+in Table REF .
+
+FEL amplifier
+Proposed scheme is a high-gain single pass FEL amplifier. The
+interaction between electrons and master laser leads to an
+exponential growth of the FEL while the electron beam expenses its
+kinetic energy. First of all the helical wiggler must satisfy
+resonant condition {{cite:8d26679f-5cbd-40a8-b1c6-d835e6be198d}}:
+FORMULA 
+where FORMULA =FORMULA  is dimensionless wiggler
+parameter, FORMULA  is the wiggler period, FORMULA  peak
+magnetic field inside wiggler and FORMULA  the drive beam
+relativistic factor. The choose of the optimum FORMULA ,
+FORMULA  couple can be made by minimizing the gain length FORMULA 
+(e-folding length for the radiation growth). The fundamental FEL
+parameter, FORMULA  corresponds roughly to the
+maximum efficiency that can be obtained in a non-tapered FEL; when
+this level of efficiency is reached, the loss in kinetic energy of
+the electron beam is no longer satisfied, and the output power
+saturates. Optimum value of both untapered efficiency and wiggler
+length is obtained by minimizing FORMULA  and maximizing
+FORMULA . After saturation, further extraction of energy from the
+electron beam is possible by varying the FORMULA  parameter by changing
+wiggler peak field, wiggler period or both. While changing K and the
+electrons losses their energy it is possible to keep the electrons
+and FEL in resonant. In this case the radiation growth is anyway no
+more exponential. Different type of tapering techniques are
+possible. In the following we will refer to self-consistent tapering
+obtained by varying quadratically the peak wiggler field while
+keeping constant the wiggler period. This self-consistent tapering
+should be more efficient than the constant FORMULA . In order to provide
+high efficiency it is necessary to use tapered wiggler. FEL has
+always tunable and capable to generate powerful coherent radiation
+which always has minimal difraction (dispersion). To obtain a
+reasonable luminosity of the FORMULA  collider at CLIC, the
+peak power in the radiation pulse for FORMULA  at the FEL amplifier
+exit should be FORMULA 0.5 TW. In the case of axisymmetric electron beam
+the eigenvalue equation of the FORMULA  mode is of the
+form {{cite:8d26679f-5cbd-40a8-b1c6-d835e6be198d}}:
+FORMULA 
+where FORMULA  is the bessel function of the firs kind of order n,
+FORMULA  is modified Bessel function, n the azimuthal index of the
+mode, FORMULA  and FORMULA  dimensionless parameter as given
+FORMULA =-FORMULA  and
+FORMULA =FORMULA ,
+where FORMULA  is reduced eigenvalue. For
+Gaussian energy spread, the function FORMULA  and reduced detuning
+FORMULA  are defined with formulae
+FORMULA 
+where FORMULA  is frequency of radiation field.
+During the amplification physical effects are connected with the
+corresponding dimensionless parameters defining the power of the
+effects. These parameters are the diffraction parameter B, space
+charge parameter FORMULA , the energy spread parameter
+FORMULA , and the efficiency parameter FORMULA  as given
+respectively below {{cite:4478d6ac-ccd1-4733-b3ed-1abead024e74}}:
+FORMULA 
+where FORMULA  frequency of radiation field, FORMULA  is Alfven
+current which is FORMULA  17 kA and FORMULA  electron
+rotation angle. Amplification occur at real part of eigenvalue of
+the eigenvalue equation. Energy spread in the electron beam is
+assumed to be Gaussian with the rms deviation FORMULA . RMS
+angle spread given by
+FORMULA . The gain
+parameter FORMULA  defines the scale of the field gain and it is
+defined as {{cite:4478d6ac-ccd1-4733-b3ed-1abead024e74}}:
+FORMULA 
+The required laser parameter are given in table REF .
+Possible effects during the amplification are:
+1)Electron beam energy spread:
+If electron beam has an energy spread, the FEL gain can be
+depressed, essentially because not all the electrons are exactly
+resonant with radiation. If the energy spread is substantially
+smaller than the fundamental FEL parameter FORMULA , its effect
+negligible. By detuning initially the beam with respect to the
+exact resonance, one can minimize the effect of
+the energy spread on the FEL gain {{cite:ee14ad66-15ab-4aae-a693-0a3f1d9e5873}}, {{cite:d0db6942-878b-458a-b1f1-8d73d1777da0}}.
+2) Emittance effect: There are different ways in which the
+electron beam emittance can effect the FEL gain. First of all
+transverse motion of the electron in a finite emittance beam induces
+a spread in the longitudinal velocities that affects the coupling,
+exactly as does the energy spread. FEL gain loss as a function of
+energy spread, taking into emittance effects and for optimum
+detuning. FORMULA 
+Values of energy spread as big as 1FORMULA  can be still tolerated
+ {{cite:d0db6942-878b-458a-b1f1-8d73d1777da0}}. The FEL efficiency parameter FORMULA  and wiggler
+length given in table REF  are all calculated
+consistently
+taking into account the values of emittance and energy spread reported therein.
+3) Diffraction losses: The electron beam emittance determines
+the electron beam size in the wiggler, once fixed FORMULA  and
+FORMULA . The wiggler provides a focusing force in both planes, with
+a betatron wavelength
+FORMULA . A matched electron
+beam has therefore a constant radius along the wiggler:
+FORMULA . In order to
+obtain the maximum gain, the transverse section of the electron beam
+and the input radiation pulse should exactly overlap, but
+diffraction limits the distance over which the light beam have the
+same transverse section as the electron beam. This distance is
+roughly given by the Rayleigh range FORMULA  of a Gaussian light beam
+with a waist of the same section of the electron beam : FORMULA . Fortunately it is not necessary for the Rayleigh
+range be equal or greater than wiggler length in order to preserve
+the gain. If FORMULA  is lower or of the order of gain length, the
+loses in the effective radiation power seen by electron beam are
+compensated by gain (gain guiding effect). Furthermore, the
+refractive guiding effect, due to light phase shift in an FEL
+high-gain amplifier is dominant when the gain length is shorter than
+Rayleigh range, and compensate diffraction losses by confining the
+light in the proximity of the electron beam that act essentially
+like an optical fiber. The ratio between Rayleigh range and gain
+length should be so close to one to avoid gain deterioration by
+diffraction losses. Anyway, optical guiding (gain+diffraction
+guiding) effects depends on the electron beam radial density
+distribution and on the initial conditions for the light
+beam {{cite:d0db6942-878b-458a-b1f1-8d73d1777da0}}. An exact evaluation of these phenomena done by GINGER 3D simulation code {{cite:88bc3099-8044-4034-aecd-119385b21382}}.
+4) Slippage effect: The difference in longitudinal velocity
+between light pulse and electron beam pulse (slippage effect) can
+also effect the FEL instability in ways that may be undesirable,
+including lengthening of the amplified light pulse. Other means that
+group velocity of radiation in the electron beam is less than the
+velocity of light. For a FEL operating in the optical region, the
+difference in path length between the light an electron pulses at
+the end of wiggler is simply given by the relation FORMULA , where FORMULA  is number of wiggler period. The
+main condition FORMULA  is satisfy, where FORMULA 
+is drive beam electron pulse length. As mentioned before, to obtain
+the needed efficiency the use of a tapered wiggler section
+unavoidable. An
+evaluation have been made based on 3D calculations.
+Parameters of the FEL amplifier with included all effects to obtain
+0.51 TeV power with tapered wiggler are presented in
+table REF . In Fig REF  shows
+wiggler peak field variation along the wiggler length, it plotted
+for self-consistent tapering wiggler. The firs part of wiggler up to
+18 m (slightly before saturation) has a constant magnetic field then
+the peak field start to decrease. In Fig REF  FEL
+pulse power is plotted as a function of wiggler length, it can be
+seen from this figure 60 m wiggler is enough to get required 0.51 TW
+peak power of FEL. The initial exponential growth of radiation
+energy is evident until tapering is introduced. In this case the
+final value of the magnetic field is FORMULA 1.67 T. Higher input power
+help to decrease wiggler length.
+FIGURE 
+FIGURE 
+
+Conclusion
+Present paper indicate that CLIC project can solve laser
+requirements for FORMULA  collider itself. For FORMULA =4.8
+required laser power is FORMULA 0.51 TW and it can be obtained using 60 m
+wiggler. Required FEL can be obtain one extra drive beam pulse from
+the drive gun after last bunch of CLIC drive beam is deflected into
+a helical wiggler after 1st combiner ring, which does not loose
+any energy at the end of drive linac. A master laser pulse (FORMULA ) from a solid state laser, synchronized with the drive
+beam, is also injected in the helical wiggler. Here the
+amplification of the radiation pulse by FEL interaction occurs. The
+amplified light (FEL) is directed with the help of proper mirros to
+the conversion point, where it interact with the incoming main
+electron beam. In this point high-energy gammas are obtained by
+Compton backscattering. The high energy gammas interact with the the
+gammas obtained in the same way in the other half of the linear
+collider. Circular polarize gamma can be obtain using by helical
+wiggler. Even including some effect on obtaining required peak power
+FEL, it is possible to construct FORMULA  or FORMULA 
+collider based on CLIC drive beam FEL. Reachable luminosity of
+FORMULA  collision is 1.44 FORMULA  FORMULA  and in
+the case of using increment method it is value 1.0 FORMULA 
+FORMULA .
+
+Acknowlengment
+The author would like to thank Dr. Roberto Corsini, Dr. Frank
+Zimmermann, Dr. Daniel Schulte, Prof. Dr. Saleh Sultansoy, Prof. Dr.
+A Kenan Ciftci, CLIC working group and Assoc. Prof. Dr. Gokhan Unel
+for useful discussions.
+This work supported in part by Turkish Atomic Energy Authority.
+
+Tables
+TABLE 
+TABLE 
+TABLE 

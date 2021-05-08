@@ -1,0 +1,790 @@
+
+Singular Energy Distributions in Granular Media
+E. Ben-Naim
+ebn@lanl.gov
+Theoretical Division and Center for Nonlinear Studies,
+Los Alamos National Laboratory, Los Alamos, New Mexico 87545 USA
+A. Zippelius
+annette@theorie.physik.uni-goettingen.de
+Institut für Theoretische Physik,
+Georg-August-Universität, 37077 Göttingen, Germany
+
+We study the kinetic theory of driven granular gases, taking into
+account both translational and rotational degrees of freedom. We
+obtain the high-energy tail of the stationary bivariate energy
+distribution, depending on the total energy FORMULA  and the ratio
+FORMULA  of rotational energy FORMULA  to total energy.
+Extremely energetic particles have a unique and well-defined
+distribution FORMULA  which has several remarkable features: FORMULA  is
+not uniformly distributed as in molecular gases; FORMULA  is not
+smooth but has multiple singularities. The latter behavior is
+sensitive to material properties such as the collision parameters,
+the moment of inertia and the collision rate. Interestingly, there
+are preferred ratios of rotational-to-total energy. In general,
+FORMULA  is strongly correlated with energy and the deviations from a
+uniform distribution grow with energy. We also solve for the energy
+distribution of freely cooling Maxwell Molecules and find
+qualitatively similar behavior.
+
+45.70.Mg, 47.70.Nd, 05.40.-a, 81.05.Rm
+Introduction
+Energy dissipation has profound consequences in granular materials,
+especially in dilute gases, where the dynamics are controlled by
+collisions {{cite:92ef800c-a3db-46f1-a515-d96b343a3afc}}, {{cite:18658fa5-1451-43ae-b5f6-12c8afccec9c}}, {{cite:c7841387-5a95-4063-8b9a-bd48bbb261ce}}. Dissipation is responsible for many
+interesting collective phenomena including clustering
+{{cite:fa9242b2-a9a2-4858-9cce-2101e745d1ad}}, {{cite:47546112-d38a-461b-bcf7-0eadc35448e8}}, {{cite:77909804-d283-4ce7-aa5a-ebd8f7985fa9}}, {{cite:1babf64a-931e-4165-b1be-e94b6efc059a}}, {{cite:c1bc1654-b18d-4fa0-afcd-dfe9ee2e9a39}}, formation of shocks
+{{cite:5e67a637-97c7-4650-a005-0f7e88f59e5b}}, {{cite:4fb09596-d589-4c60-9a82-919321c57bea}}, {{cite:006f94d2-b2d6-4234-a5a6-f4ec17a4466f}}, {{cite:f638e86c-324f-48d0-b810-0ea49f5809be}}, {{cite:d56f204b-3368-4159-bd7f-acd2b2ad2972}}, and hydrodynamic instabilities
+{{cite:3948fc21-437c-4a70-84e7-4c2c1bb0c91d}}, {{cite:03527f6d-8868-48c6-b078-34e764ccc583}}. Another consequence is the anomalous statistical physics
+that includes the non-Maxwellian velocity distributions
+{{cite:bb1c199e-ed51-4422-b5b7-5cc2b60c39be}}, {{cite:c5e87e79-158e-4619-80a9-7871b6397f2f}}, {{cite:db933ade-b75c-4187-bdbc-a2c66b055540}}, {{cite:8c3a823a-c240-4c12-bbdd-078a89a8dcca}}, {{cite:dd1ce047-f78d-4147-a459-72c9323c661b}}, {{cite:7367e2a2-9523-48a7-b383-09d25db0091e}} and the breakdown of energy
+equipartition in mixtures {{cite:849d7f30-02c1-42c6-a23c-4bcf5d43f7e9}}, {{cite:d0d05fc5-41b3-4ee7-b49b-95750f164368}}.
+For an elastic gas in equilibrium, the temperature, defined as the
+average kinetic energy, characterizes the entire distribution function
+including all of the moments, the bulk of the distribution, as well as
+the tail of the distribution. Outside of equilibrium, the temperature
+is not sufficient to characterize the energy distribution. Granular
+gases are inherently out of equilibrium and a complete
+characterization must therefore include the behavior of typical
+particles, the behavior of energetic particles, as well as the moments
+of the distribution. For example, the energy distribution may have
+power-law tails with divergent high-order moments {{cite:1fa45d06-d1ec-4f59-a887-514116a6152d}}, {{cite:fca8637c-2305-433c-8f0d-2c7cad492568}}, {{cite:c3fc1cfc-553f-439a-97ac-6a84ac911add}} and
+consequently, the moments exhibit multiscaling {{cite:c67ffd6f-616b-4300-a598-dce8c12983ce}}. Generally,
+nonequilibrium effects are pronounced in the absence of energy input
+to balance the dissipation but can be suppressed by injection of
+energy where the deviation from a Maxwellian distribution affects only
+extremely energetic particles {{cite:c5e87e79-158e-4619-80a9-7871b6397f2f}}, {{cite:00402a11-6c41-4648-bac8-816d85b639ce}}, {{cite:46a9c5ff-be5c-4e57-a914-9a9f5b41f29e}}, {{cite:deb4a8d6-0101-45a2-9f44-af95415842f6}}.
+While there is substantial understanding of the energy distribution of
+frictionless granular gases, much less is known theoretically
+{{cite:2b962a56-5c82-4879-a2f7-3187df51605d}}, {{cite:f677d166-e933-4457-83d1-dad8cf509d97}}, {{cite:84e6c42c-3e39-4f3d-8aec-275901a0d6d5}}, {{cite:3ea2b52d-7eb2-44db-9fd1-d851aa3d35d1}}, {{cite:d3f3eff9-a190-450d-b0da-acf2d8a6dcef}}, {{cite:ae3054e7-683f-46bb-8223-a56641a76b03}}, {{cite:2237bded-b97f-4c4f-bab6-3a2cfc759d2e}}, {{cite:9399e835-ce51-4f76-92fa-e6a960a1835e}} and experimentally
+{{cite:f5e55ace-c4b3-430a-a411-22954d9ecbcb}}, {{cite:dec3986c-bd59-42ef-80a0-e744c6b71352}}, {{cite:834443d7-4669-49e1-a2dd-4c00ddeac082}} when the rotational degrees of freedom are taken
+into account. It is difficult to measure the rotational motion
+experimentally, and the few available measurements are restricted to
+two-dimensions. Surface roughness and friction have important
+consequences and the hydrodynamic theory {{cite:587a0df4-297e-4fd3-8a21-40b98930ae4f}}, {{cite:c0907f3b-322a-4640-b570-c7214ddafdf7}}, {{cite:348696bd-ca78-4ae1-8347-4223887e3edf}}, {{cite:7236f1f8-d369-4602-a643-8c28767129cc}} must be
+modified, if the particles have spin {{cite:9377e294-ff62-4e67-b938-1ad83ee98fa3}}. Equipartition does
+not hold for the average rotational and translational temperature –
+neither in the free cooling case {{cite:84e6c42c-3e39-4f3d-8aec-275901a0d6d5}}, {{cite:3ea2b52d-7eb2-44db-9fd1-d851aa3d35d1}}, {{cite:d3f3eff9-a190-450d-b0da-acf2d8a6dcef}}, {{cite:ae3054e7-683f-46bb-8223-a56641a76b03}} nor for a
+driven system {{cite:2237bded-b97f-4c4f-bab6-3a2cfc759d2e}}. In general, rotational and linear degrees
+of freedom are correlated in direction {{cite:4d199989-beaa-467f-99de-61d5f9c98ffb}}.
+In this paper, we investigate the nature of the full energy
+distribution, that is, the bivariate distribution of rotational and
+translational energy. Motivated by the fact that on average the total
+energy is not partitioned equally between rotational and translational
+degrees of freedom, we focus on the bivariate distribution FORMULA  of
+total energy FORMULA  and the modified ratio FORMULA  of rotational
+to total energy. We thereby generalize the understanding of
+frictionless granular matter in terms of the energy distribution to
+rough grains.
+Our starting point is the nonlinear Boltzmann equation with a
+collision rule that accounts for the coupling of translational and
+rotational motion due to tangential restitution. We study stationary
+solutions of the inelastic Boltzmann equation that describe steady
+states achieved through a balance between energy injections that are
+powerful but rare and energy dissipation through inelastic
+collisions. For high-energy particles we derive a linear equation for
+the bivariate energy distribution. The latter can be shown to
+factorize – FORMULA  – into a product of the distribution
+of the total energy, FORMULA , and the distribution of the fraction of
+energy stored in the rotational degrees of freedom, FORMULA . The former
+distribution decays algebraically with energy: FORMULA . The fraction of energy stored in rotational motion is
+universal for energetic particles in the sense that FORMULA  approaches
+a limiting distribution independent of energy. Furthermore, this
+quantity has a number of interesting features. First, the
+distribution is not uniform, as it would be, if equipartition were to
+hold. Second, the distribution is not analytic but has singularities
+at special energy ratios. Third, the distribution and in particular
+its singularities depend sensitively on the moment of inertia and the
+collision parameters. Only for energetic particles is this
+distribution well defined. In general, the partition of energy into
+rotational and translational motion depends on the magnitude of the
+energy. This paper specifically addresses two-dimensions, although
+the theoretical approach and the reported qualitative behavior are
+generic.
+We also develop a general framework for describing high-energy
+collisions and we use this framework to study freely cooling Maxwell
+Molecules where the moments of the energy distribution can be found in
+a closed form. For example, the two granular temperatures
+corresponding to the rotational and translational motions are coupled
+and generally, they are not equal. The high-energy behavior found for
+driven steady-states extends to freely cooling gases.
+The rest of this paper is organized as follows. We review the
+collision rules and introduce the nonlinear kinetic theory in section
+II. We then derive the linear kinetic theory for high-energy particles
+in section III. Next, in section IV, we study driven steady states and
+solve for the stationary energy distribution. Freely cooling Maxwell
+molecules are discussed in section V and we conclude in section
+VI. The Appendices detail technical derivations.
+
+The Nonlinear Kinetic Theory
+Our system consists of an infinite number of identical particles with
+mass FORMULA , radius FORMULA , and moment of inertia FORMULA  where FORMULA  is a dimensionless quantity. Each particle has a linear
+velocity FORMULA  and an angular velocity FORMULA . Its total energy
+is shared by the linear and the rotational motion, FORMULA , or explicitly,
+FORMULA 
+where FORMULA  and FORMULA .
+In a collision between two particles, their velocities FORMULA  with the labels FORMULA , change according to
+FORMULA 
+where the postcollision velocities are denoted by primes. In a binary
+collision, rotational and translational energy are exchanged, while
+the total energy decreases. In this study, we consider tangential
+restitution in addition to the standard normal restitution. Let FORMULA  be the position of particle FORMULA , then the directed unit vector
+connecting the centers of the colliding particles is FORMULA . We term this vector
+the impact direction. The collision rules are most transparent in
+terms of FORMULA  the particle velocity at the contact point
+FORMULA 
+
+
+The inelastic collision laws state that the normal component of the
+relative velocity FORMULA  is reversed and
+reduced by the normal restitution coefficient FORMULA . The
+tangential component is either reversed (rough particles) or not
+(smooth particles) and in any case reduced by the tangential
+restitution coefficient FORMULA , according to the following
+collision rules:
+FORMULA 
+Inelastic collisions conserve linear and angular momentum.
+Conservation of linear momentum implies that the total linear
+velocity does not change, and conservation of angular momentum
+enforces that the angular momentum of each particle with respect to the
+point of contact remains the same, because there is no torque acting at
+the point of contact. The collision laws () combined with these
+conservation laws specify the postcollision velocities as linear
+combinations of the precollision velocities {{cite:84e6c42c-3e39-4f3d-8aec-275901a0d6d5}}
+FORMULA 
+
+
+where the shorthand notations FORMULA  and
+FORMULA  were introduced. These collision
+rules involve the normal and tangential collision parameters, defined
+as
+FORMULA 
+Their range of values is bounded by FORMULA 
+and FORMULA . Details of the derivation of
+the collision rules are given in Appendix A, as they are relevant
+for our discussion. The energy dissipation, FORMULA , is given by
+FORMULA 
+The energy dissipation is always positive, except when the collisions
+are elastic, FORMULA  and FORMULA  (perfectly smooth spheres) or
+FORMULA  (perfectly rough spheres).
+The collision rate FORMULA  is the rate by which the
+two particles approach each other. For hard spheres, this rate is
+simply the normal component of the relative velocity, but we study the
+general case
+FORMULA 
+with FORMULA . Of course, the collision rate vanishes,
+FORMULA , when the particles are moving away from each other, FORMULA . When particles interact via the
+central potential FORMULA  then FORMULA 
+{{cite:1b5f4f7f-b646-440c-b1d2-34e29251c9dc}}. The two limiting cases are hard spheres (FORMULA ) and
+Maxwell molecules (FORMULA ) where the collision rate is
+independent of the velocity {{cite:d6a5d676-4b02-401c-95f0-fe73e6e3a851}}, {{cite:29d0d0a6-e700-4c71-a4d2-f1f1ac759d10}}, {{cite:d743c393-fb29-42b8-bbff-558a87c678ae}}, {{cite:267e7a9a-5339-4cba-bd65-acacbb151afd}}.
+The central quantity in kinetic theory is the probability FORMULA  that a particle has the velocities FORMULA  at
+time FORMULA . We study spatially homogeneous situations where this
+velocity distribution function is independent of position. Under
+the strong assumption that the velocities of the two colliding
+particles are completely uncorrelated, the velocity distribution
+obeys the Boltzmann equation
+FORMULA 
+We integrate over all impact directions with FORMULA 
+{{cite:a7133d25-8f1c-44bf-9dd9-989e616a02d6}} and over the precollision velocities weighted by
+the respective probability distributions. There are two gain terms
+and two loss terms, because the velocities of interest FORMULA  can be identified with any one of the four velocities
+in the collision rule (REF ) and the kernel is simply the
+collision rate (REF ).
+
+The Linear Kinetic Theory
+The focus of this study is the energy distribution that generally
+depends only on two variables: FORMULA  and FORMULA . It is our aim to
+compute the distribution FORMULA  for asymptotically large
+energies. This will be done for a system which is driven at very high
+energies as well as for an undriven system.
+As a first step to this goal, we simplify the Boltzmann equation in
+the limit of large energies. Extremely energetic particles are rare
+and as a result it is unlikely that such particles will encounter each
+other. Hence, energetic particles typically collide with much slower
+particles. Since the collision rules are linear, the velocity of the
+slower particle barely affects the outcome of the collision. We can
+therefore neglect the slower velocity. Substituting FORMULA  and FORMULA  or FORMULA  and FORMULA 
+into () gives the cascade process {{cite:a1d806ac-8016-4c36-b336-675df2f57192}}, {{cite:04f5ea81-0525-4423-8acf-f75b995820f2}}
+FORMULA 
+where FORMULA  is the precollision velocity of the
+energetic particle and FORMULA  with FORMULA  are the
+consequent postcollision velocities. With these definitions, the
+collision rules for extremely energetic particles are
+FORMULA 
+
+
+where we have set FORMULA , so that the moment of inertia, FORMULA , is
+dimensionless. A collision between a high-energy particle and a
+typical-energy particle produces two energetic particles with an
+energy total that is smaller than the initial energy. This cascade
+process transfers energy from large scales to small scales.
+Since the cascade process (REF ) involves only one
+particle, the tail of the probability distribution FORMULA  obeys the linear equation
+FORMULA 
+There are two gain terms and one loss term according to the cascade
+process (REF ). Formally, this linear rate equation can be
+obtained from the full nonlinear equation (REF ) by
+treating either one of the precollision velocities as negligible and
+then integrating over this small velocity. This procedure leads to
+four gain terms and two loss terms and thus, the factor FORMULA  in
+(REF ) drops out. We stress that the linear equation
+(REF ) is valid only in the high-energy limit.
+We also comment that the linear equation (REF ) for the
+high-energy tail of the velocity distribution may be valid in cases
+where the full nonlinear equation is not. Whereas the nonlinear
+equation requires that all possible velocities are uncorrelated, the
+linear equation merely requires that energetic particles are
+uncorrelated with typical particles. This is a much weaker condition.
+In this paper, we restrict ourselves to two space dimensions, i.e.
+rotating disks. In that case the rotational velocities are always
+perpendicular to the linear velocities. Thus, we conveniently denote
+the unit vector in the tangential direction by FORMULA  and the
+unit vector coming out of the plane by FORMULA , such that
+FORMULA  and FORMULA . The precollision velocities of the energetic particle
+FORMULA  and FORMULA  are compactly written as FORMULA . With
+this notation, the postcollision velocities specified in
+(REF ) are
+FORMULA 
+respectively. We now treat the three velocity components, namely the
+normal component of the velocity FORMULA , the tangential component of
+the velocity FORMULA , and the scaled angular velocity FORMULA  as a
+three dimensional vector with magnitude FORMULA , polar angle
+FORMULA , and azimuthal angle FORMULA :
+FORMULA 
+The magnitude FORMULA  gives the energy
+FORMULA  while the polar
+angle characterizes the fraction of energy stored in the rotational
+degree of freedom, FORMULA . In this
+representation, the postcollision velocities are three-dimensional
+vectors with magnitude FORMULA , polar angle FORMULA ,
+and azimuthal angle FORMULA . The collision rules
+() allow us to express these quantities in terms of
+FORMULA :
+FORMULA 
+where FORMULA . The magnitudes of the postcollision velocities are
+proportional to the magnitude of the precollision velocity. The
+three velocity components are scaled by three dimensionless constants
+FORMULA , FORMULA  and FORMULA , that depend on the angles FORMULA  and
+FORMULA  of the energetic particle, the collision parameters FORMULA 
+and FORMULA , and the moment of inertia FORMULA ,
+FORMULA 
+The new energies are proportional to the precollision energies
+FORMULA 
+We term the parameters FORMULA  the contraction parameters.
+Since the collisions are dissipative, these parameters
+satisfy the inequality FORMULA . The equality
+FORMULA  holds only for elastic collisions
+(FORMULA ). The energy dissipation is FORMULA  with FORMULA  or
+explicitly,
+FORMULA 
+The polar and azimuthal angles are given by
+FORMULA 
+respectively.
+Let us represent solid angles by FORMULA . With
+this definition, the cascade process () is
+FORMULA 
+with FORMULA  and FORMULA  given by (REF ) and
+(REF ). Energetic particles have an important property:
+the solid angle is not coupled to the energy! Indeed, the
+postcollision angles depend only on the precollision angle. The
+cascade process has the following geometric interpretation: a three
+dimensional vector is duplicated into two vectors. Subsequently,
+these two vectors are scaled down by the contraction parameters
+(REF ), and rotated according to the angular transformation
+(REF ).
+We can now write the linear Boltzmann equation for FORMULA , the
+distribution of energy and solid angle, in a closed form
+FORMULA 
+Time was rescaled, FORMULA , to absorb the constant which
+arises from replacing velocity by energy in the collision rate
+(REF ). Henceforth, we implicitly assume that the distribution
+FORMULA  is independent of FORMULA  because the distribution of
+linear velocities must be isotropic. The integration over the
+energy is performed using the collision rule (REF ), leading
+to the linear rate equation for the tail of the energy distribution
+FORMULA 
+ This is a non-local equation as the density of particles with energy
+FORMULA  is coupled to the density of particles with the higher energies
+FORMULA  and FORMULA . We stress that this equation is a
+straightforward consequence of the cascade process (REF )
+and that it can also be derived from the full nonlinear Boltzmann
+equation. Yet, there may be situations where the linear equation
+(REF ) is valid, while the nonlinear equation
+(REF ) is not valid. The bivariate energy distributions
+FORMULA  and FORMULA  are completely equivalent but we
+analyze the former because the cascade process (REF ) is
+transparent in terms of the total energy and the solid angle.
+
+Driven Steady-states
+The inelastic Boltzmann equation admits stationary solutions for
+frictionless particles. These stationary solutions describe
+driven steady-states with rare but powerful injection of energy. The
+injected energy cascades from high-energies down to small energies,
+thereby balancing the energy lost in collisions. At energies below
+the injection scale, Eqs. (REF ), (REF ) and
+(REF ) are not altered by the energy source and
+consequently, the stationary solution of the inelastic Boltzmann
+equation holds up to this large energy scale {{cite:a1d806ac-8016-4c36-b336-675df2f57192}}, {{cite:04f5ea81-0525-4423-8acf-f75b995820f2}}. Here,
+we seek a corresponding stationary solution for particles with rotational degrees of freedom in the high energy limit.
+The stationary solution has to fulfill Eq. (REF ) with the left
+hand side set to zero
+FORMULA 
+At high-energies, the solid angle is not coupled to the energy, as
+follows from Eq. (REF ). This fact has a major
+consequence: the bivariate energy distribution FORMULA  takes the
+form of a product of the energy distribution FORMULA  and the distribution of solid angle,
+FORMULA ,
+FORMULA 
+as FORMULA . The angle distribution is normalized, FORMULA . It does not depend on the
+azimuthal angle, because on average the two components of the linear
+velocity are equivalent. Due to the equi-dimensional (in FORMULA )
+structure of the steady-state equation (REF ), the
+product ansatz (REF ) is a solution when the distribution
+FORMULA  decays algebraically
+FORMULA 
+as FORMULA  {{cite:a1d806ac-8016-4c36-b336-675df2f57192}}, {{cite:04f5ea81-0525-4423-8acf-f75b995820f2}}. We obtain a closed equation for the
+distribution FORMULA  by substituting the product ansatz
+(REF ) with the power-law form (REF ) into the
+steady-state equation (REF )
+FORMULA 
+This equation is linear in FORMULA . However, it is nonlinear in
+FORMULA  and moreover, the solid angles
+FORMULA  in (REF ) and the
+contraction parameters FORMULA  in
+(REF ) are complicated functions of the solid angle
+FORMULA .
+Equation (REF ) involves two unknowns quantities, the exponent
+FORMULA  and the distribution function FORMULA . A solution does not
+exist for arbitrary values of FORMULA . In fact, there is one and only
+one value of FORMULA  for which there is a solution for FORMULA . This
+is the value selected by the cascade dynamics! In other words,
+(REF ) is an eigenvalue equation: FORMULA  is the eigenvalue and
+FORMULA  is the eigenfunction. This eigenvalue equation circumvents
+the full nonlinear equation (REF ) and thus, represents a
+significant simplification.
+The physical interpretation of (REF ) involves a cascade
+process in which the solid angle undergoes a creation-annihilation
+process
+FORMULA 
+Here, FORMULA  for
+FORMULA  and FORMULA . There is one annihilation process and two
+creation processes. These processes have relative weights that reflect
+the powerlaw decay of FORMULA . At the steady-state, the creation and
+the annihilation terms balance (see Appendix ), as
+reflected in the integrated form of (REF )
+FORMULA 
+To achieve a steady-state, FORMULA  for FORMULA  and therefore
+FORMULA . Since FORMULA , we have the lower
+bound FORMULA .
+We can immediately check that for elastic collisions,
+FORMULA  {{cite:694b6a2b-56af-431f-ad5b-902019944294}}, {{cite:5957a221-24df-4230-b486-d0806802badb}} because FORMULA , and
+therefore, we conclude the bounds FORMULA . The exponent FORMULA  varies continuously with the
+restitution coefficients FORMULA  and FORMULA  and the normalized moment
+of inertia FORMULA . This quantity must coincide with the value found
+for frictionless particles where tangential restitution is
+irrelevant (FORMULA ) {{cite:a1d806ac-8016-4c36-b336-675df2f57192}}, {{cite:04f5ea81-0525-4423-8acf-f75b995820f2}}, {{cite:eb5aff46-0b20-4112-a8bf-094217b65e77}}, but otherwise the
+exponent is distinct, as shown in Fig. REF . Also, the
+exponent FORMULA  increases monotonically with FORMULA  and FORMULA . We
+conclude that the rotational degrees of motion do affect the
+power-law behavior (REF ).
+FIGURE 
+The azimuthal angle FORMULA  characterizes the fraction of energy
+stored in the rotational mode, FORMULA  with
+FORMULA . The angle distribution
+FORMULA  therefore captures the
+partition of energy into rotational and translational energies. We
+introduce the natural variable FORMULA  defined by
+FORMULA  so that
+FORMULA 
+and present results for the angle distribution FORMULA . In equilibrium, energy is partitioned equally into
+all degrees of freedom and therefore FORMULA 
+or equivalently,
+FORMULA 
+for FORMULA . In particular, FORMULA .
+Simulation Methods
+We numerically studied the angle distribution FORMULA  by solving the
+linear eigenvalue equation (REF ) for the “angular” process
+(REF ) and by solving the full nonlinear Boltzmann equation
+(REF ) for the collision process (REF ). Both of
+these equations are solved using Monte Carlo simulations.
+The eigenvalue equation is solved by mimicking the angular process.
+Throughout the simulation, the value FORMULA  is fixed. There are FORMULA 
+particles, each with a given polar angle. A particle with polar angle
+FORMULA  is picked at random and then, a random azimuthal angle
+FORMULA  is drawn. The polar angles FORMULA  and FORMULA  are then
+calculated according to (REF ). The original particle is
+annihilated with probability FORMULA  and simultaneously, a new
+particle with angle FORMULA  is created with probability FORMULA 
+and similarly, a second particle with angle FORMULA  is created with
+probability FORMULA . Therefore, the number of particles may increase
+by one, remain unchanged, or decrease by one. The exponent FORMULA  is
+the value that keeps the total number of particles constant in the
+long time limit. The eigenvalue FORMULA  is calculated by repeating this
+simulation for various values of FORMULA  and then using the bisection
+method {{cite:a51c23ce-967b-43de-bf01-ee90ac652285}}. We present Monte Carlo simulations of 100
+independent realizations with FORMULA  particles.
+Driven steady-states are obtained by simulating the two competing
+processes of inelastic collisions and energy injection. In an
+inelastic collision, two particles are picked at random and also,
+the impact direction is chosen at random. The particle velocities
+are updated according to the collision law (). Collisions
+are executed with probability proportional to the collision rate.
+Throughout this process, we keep track of the total energy loss.
+With a small rate, we augment the energy of a randomly selected
+particle by an amount equal to the loss total and subsequently,
+reset the total energy loss to zero. A fraction of the injected
+energy is rotational and the complementary fraction is
+translational. We draw this fraction according to the equilibrium
+distribution (REF ). We experimented with different angle
+distributions and found that the resulting stationary state did not
+change.
+Obtaining the distribution FORMULA  is generally challenging as it
+requires excellent statistics. The simulations are most efficient for
+Maxwell molecules because all possible collisions are equally likely.
+Therefore, for the full nonlinear Boltzmann equation
+(REF ), we present the angle distribution of the energetic
+particles only for the case FORMULA .
+For Maxwell molecules, the injection rate is FORMULA  and the system
+size is FORMULA . The corresponding values for hard spheres are
+FORMULA  and FORMULA . In all cases, the simulation results represent
+an average over FORMULA  independent realizations. Unless noted
+otherwise, the simulation results are for maximally dissipative
+(FORMULA ) disks (FORMULA ).
+
+The Distribution of Total Energy
+The numerical simulations confirm several of our theoretical
+predictions. First, the energy distribution approaches a
+steady-state with a power-law high-energy tail. Second, the
+distribution of the total energy FORMULA  decays algebraically as in
+(REF ). Third, the exponent FORMULA  is in excellent
+agreement with the predictions of the eigenvalue equation. For
+Maxwell molecules, Monte Carlo simulation of the full nonlinear
+equation yields FORMULA  whereas numerical solution of
+the eigenvalue equation (REF ) gives FORMULA 
+(Fig. REF ). For hard-spheres, where the simulation
+results are slightly less accurate, the corresponding values are
+FORMULA  and FORMULA  (Fig. REF ).
+The behavior of the distribution of total
+energy is therefore qualitatively similar to the behavior in the
+no-rotation case {{cite:a1d806ac-8016-4c36-b336-675df2f57192}}, {{cite:04f5ea81-0525-4423-8acf-f75b995820f2}}. However, the quantitative behavior
+is different because the exponent FORMULA  does depend on the
+tangential restitution coefficient and the moment of inertia
+(Fig. REF ).
+FIGURE 
+
+The Angle distribution
+The numerical simulations also confirm several of our theoretical
+predictions concerning the angle distribution. Extremely energetic
+particles have a universal distribution FORMULA . This
+distribution is independent of the energy, provided that the energy is
+sufficiently large. We had to probe only the most energetic particle
+out of roughly FORMULA  particles to measure this distribution. For
+this reason, the linear analysis and the resulting eigenvalue equation
+are valuable because they allow for an accurate and efficient
+determination of the angle distribution of the energetic particles.
+We also verified that the distribution FORMULA  obeys the eigenvalue
+equation (REF ), as demonstrated in Fig. REF ,
+where the simulations are compared to the solution of the angular
+process.
+FIGURE 
+The distribution FORMULA  has several noteworthy features. First, it
+is not uniform, implying the breakdown of energy equipartition in a
+granular gas. Furthermore, this distribution is nonanalytic.
+It contains singularities and discontinuous derivatives. There are
+notable peaks in the distribution so that special values FORMULA  and
+special ratios FORMULA  are strongly preferred. The reason for these
+peaks is the fact that the polar angle is limited. For example,
+FORMULA  as seen by substituting FORMULA 
+into () and (REF ). Consequently, there is a
+special ratio
+FORMULA 
+with the corresponding special energy ratio FORMULA . This is
+the most pronounced peak in Fig. REF ,
+FORMULA . Numerically, we observe that the
+peak becomes more pronounced as the distribution is measured at a
+finer scale, indicating that the distribution function diverges at
+this point.
+Similarly, there is another special ratio that corresponds to
+FORMULA  when FORMULA , and unlike (REF ), this
+location depends on the tangential restitution,
+FORMULA 
+Indeed, there is a barely noticeable cusp at
+FORMULA . Singularities may induce less pronounced
+“echo”-singularities. For example, using FORMULA  and
+FORMULA  yields the special ratio
+FORMULA 
+There is a noticeable peak at the corresponding value
+FORMULA  in Fig. REF . We anticipate
+that as the transformation (REF ) is iterated, the
+strength of the singularities weakens and as a result there are
+discontinuous derivatives of increasing order, a subtle behavior that
+is difficult to measure.
+FIGURE 
+The location of the singularities varies with the collision parameters
+FORMULA  and FORMULA  and the moment of inertia FORMULA . In fact, the angle
+distribution is extremely sensitive to material properties as its
+shape changes dramatically with these parameters, see
+Fig. REF . The angle distribution also depends on the
+collision rate and it is much smoother for hard spheres, see
+Fig. REF . Since the collision rate vanishes for grazing
+collisions, FORMULA , the associated singularities including in
+particular (REF ) are suppressed. Nevertheless, there is a
+pronounced jump at the special ratio given by (REF ) and
+there are also noticeable cusps.
+The angle distribution of all particles FORMULA  is shown in Fig. REF . It is
+substantially different from FORMULA . Therefore, the energy
+distribution FORMULA  does not factorize in general and there
+are correlations between the solid angle and the total energy. Only
+for energetic particles does (REF ) hold. Moreover, FORMULA  is much smoother in comparison with FORMULA  although there
+is a jump in the first derivative at the special ratio
+(REF ) showing that the angle distribution of all
+particles is also non-analytic, see Fig. REF . Generally,
+the angle distribution depends on energy and the deviation from a
+uniform distribution grows with energy.
+We also comment that lone measurement of the moment FORMULA  can be misleading. The angle distribution may very well
+have a value close to the equipartition value FORMULA  but still, be very far from the equilibrium
+distribution. Indeed, in Fig. REF , FORMULA , a value that barely differs from the
+equilibrium value, even though the corresponding distribution is far
+from uniform. The second moment may also differ substantially from the
+equipartition value and for example, FORMULA  when
+FORMULA  and FORMULA  (Fig. REF ).
+We argue that the qualitative features of the angle distribution
+should be generic in granular materials. Collisions involving
+energetic particles must follow the linear cascade rules
+(REF ) with the angular transformations
+(REF ). The singularities are a direct consequence of
+these transformations and therefore should be generic. Measuring the
+parameter-sensitive distribution FORMULA  experimentally is
+challenging because a huge number of particles must be probed and
+the measurement has to be accurate. The distribution FORMULA  provides a detailed probe of the partition of energy into
+rotational and translation motion.
+
+Free Cooling
+We now consider freely cooling granular gases that evolve via purely
+collisional dynamics. Without energy input, all energy is eventually
+dissipated and the particles come to rest. This system has been
+studied extensively {{cite:92ef800c-a3db-46f1-a515-d96b343a3afc}} for hard spheres with {{cite:84e6c42c-3e39-4f3d-8aec-275901a0d6d5}}, {{cite:4d199989-beaa-467f-99de-61d5f9c98ffb}}
+and without rotation {{cite:6e694802-e42a-4390-b255-198979fa4d8f}}.
+We consider Maxwell molecules where in the absence of rotation an
+exact treatment is possible {{cite:1fa45d06-d1ec-4f59-a887-514116a6152d}}, {{cite:fca8637c-2305-433c-8f0d-2c7cad492568}}, {{cite:c67ffd6f-616b-4300-a598-dce8c12983ce}}, {{cite:c56cadc4-420b-4655-9178-6f514618a9cf}}, {{cite:cbd3e6af-efc9-4e6d-a8a4-8e91bb5cf8b2}}. When
+FORMULA  the Boltzmann equation (REF ) simplifies
+FORMULA 
+Consequently, the equations for the moments FORMULA  close.
+The Temperatures
+Here, we consider only the translational temperature defined as the
+average translational energy, FORMULA , and the
+rotational temperature, defined as the average rotational energy
+FORMULA . These two temperatures are coupled through
+the linear equation
+FORMULA 
+Appendix  details the derivation of the matrix of
+coefficients
+FORMULA 
+
+
+The two temperatures are coupled as long as FORMULA  or
+alternatively, FORMULA .
+The solution of (REF ) is a linear combination of the two
+eigenvectors
+FORMULA 
+with the constants FORMULA  and FORMULA  set by the initial conditions,
+and FORMULA . The
+eigenvalues are
+FORMULA 
+The larger eigenvalue is irrelevant in the long time limit and
+therefore,
+FORMULA 
+such that both temperatures decay with the same rate
+FORMULA . Of course, the total temperature also
+follows the same exponential decay, FORMULA . In this regime, the fraction of rotational energy is on
+average
+FORMULA 
+The approach toward this value is exponentially fast and the
+relaxation time is inversely proportional to the difference in
+eigenvalues FORMULA .
+In equilibrium, FORMULA  but for nonequilibrium granular gases the
+ratio varies. In Fig. 8 we plot the ratio of the average rotational
+energy to the total energy as a function of the coefficients of
+restitution. In accordance with our findings for driven steady-states,
+energy is not partitioned equally between all the degrees of freedom.
+
+The Energy Distribution
+To study the full energy distribution, it is again convenient to
+make a transformation of variables from the velocity pair FORMULA  to the total energy and the solid angle FORMULA .
+The energy distribution is now time dependent and assuming that the
+temperature – FORMULA  – is the characteristic
+energy scale we postulate the self-similar form
+FORMULA 
+with the prefactor ensuring proper normalization, FORMULA . We focus on the high-energy behavior where the
+linear equation (REF ) holds. By substituting the scaling form
+(REF ) into this linear equation and setting FORMULA , we
+find the integro-differential equation governing the scaling function
+FORMULA 
+We again write the multivariate energy distribution as a product
+FORMULA  of the distribution of the total
+energy FORMULA  and the distribution of
+the solid angle FORMULA . This form is a solution of the
+equi-dimensional equation (REF ) when the distribution of the
+total energy decays as a power-law
+FORMULA 
+at large energies, FORMULA . The angle distribution satisfies
+the eigenvalue equation
+FORMULA 
+Of course, setting FORMULA , one recovers the steady-state equation
+(REF ) reflecting that the similarity solution is stationary.
+The factor 1 is replaced by the smaller factor FORMULA 
+that accounts for the constant decrease in the number of particles at
+any given energy because of dissipation. Again, we have a nonlinear
+eigenvalue equation with the eigenvalue FORMULA  and the eigenfunction
+FORMULA .
+FIGURE 
+We solve this eigenvalue equation by performing a Monte Carlo
+simulation of the same angular process as described by
+(REF ) but with a different annihilation rate
+FORMULA . We compare the angle distribution
+predicted by (REF ) with the behavior of the energetic
+particles in the freely cooling gas.
+The numerical simulations of the inelastic collision process confirm
+the theoretical predictions. First, the energy distribution is
+self-similar as in (REF ) and the characteristic scale is
+proportional to the temperature. Second, the distribution of the
+total energy has a power-law tail, as displayed in
+Fig. REF  and the exponent FORMULA  is very close to the
+theoretical prediction (numerical simulations of the collision
+process gives FORMULA  while the eigenvalue equation
+yields FORMULA ).
+The angle distribution deviates even more strongly from the uniform
+distribution with a very pronounced peak (see Fig. REF )
+because the dynamics are purely collisional. The singularities are
+weaker although the one at FORMULA  given by (REF ) is clear.
+The agreement between the solution of the angular process and the
+Monte Carlo simulations is slightly worse than for driven systems
+because the statistics become prohibitive: now it is necessary to
+probe the most energetic out of roughly FORMULA  particles to obtain
+the asymptotic angle distribution! The sharper power-law decay is
+responsible for this three order of magnitude increase: the
+cumulative distribution of total energy decays according to FORMULA  with FORMULA  about three times larger
+than before. Finally, the angle distribution of all particles
+deviates only slightly from a uniform distribution (see
+Fig. REF ). We conclude that the behavior of the
+freely cooling gas is qualitatively similar to that found in driven
+steady-states.
+FIGURE 
+
+Conclusions and Outlook
+The complete description of granular media with translational and
+rotational degrees of freedom requires the full bivariate distribution
+of energies. It is not sufficient to consider only the average kinetic
+energy of translations and rotations. Instead the full bivariate
+distribution is highly nontrivial. We have shown that in the limit of
+large particle energy, this distribution obeys a linear equation. Its
+solution can be written as a product of two distributions, one for the
+total energy, FORMULA , and one for the variable FORMULA ,
+which captures the partition of the total energy between rotational
+and translational motion. The distribution of the total energy decays
+algebraically and the characteristic exponent depends on the collision
+parameters and the moment of inertia. The variable FORMULA  is not
+uniformly distributed as in equilibrium. Instead the distribution
+FORMULA  is not analytic and displays a series of singularities of
+varying strengths. Remarkably, there are special preferred ratios of
+rotational-to-total energy. This violation of energy equipartition
+among different degrees of freedom is a direct consequence of the
+energy dissipation. The total energy and the variable FORMULA  are
+correlated in general with the deviations from equilibrium increasing
+with energy. These two variable become uncorrelated only at extremely
+high-energies.
+We have studied both, the system which is driven at extremely high
+energies and displays a stationary energy cascade on energy scales
+below the driving one, and a freely cooling gas. In the latter gas the
+bivariate energy distribution is time dependent, reflecting the
+overall decrease of energy. Nevertheless, scaling the total energy
+with temperature, one finds a self-similar form for the distribution,
+which again factorizes in the high-energy limit. As in the driven
+system, the distribution of the total energy decays as a power law
+with, however, different exponents for the driven and the free cooling
+system. The angular distribution deviates even more from the uniform
+(equipartition) one in the cooling system.
+It should be straightforward to extend these results to three
+dimensions where the angular process takes place in three
+dimensions. In the limit of high energies one would again expect a
+limiting distribution for the partition angle FORMULA .
+Another possible extension refers to a more realistic law of friction,
+including Coulomb friction {{cite:f5e55ace-c4b3-430a-a411-22954d9ecbcb}}, {{cite:dec3986c-bd59-42ef-80a0-e744c6b71352}}. Finally, it would be of
+interest to extend the analysis to other systems, where equipartition
+is violated. An example is a binary mixture, where the energy is
+shared unequally between the two components.
+We thank the Kavli Institute for Theoretical Physics
+in University of California, Santa Barbara where this work was
+initiated. We acknowledge financial support from DOE grant
+DE-AC52-06NA25396.
+
+The Collision rules
+The total linear momentum FORMULA  is conserved in the collision. The angular momenta of the two
+particles with respect to the point of contact, FORMULA ,
+are given by
+FORMULA 
+
+
+These are conserved, FORMULA  with FORMULA ,
+because there is no torque at the point of contact. In inelastic
+collisions, the normal and tangential components of the relative
+velocity at the point of contact obey the collision law ()
+where FORMULA .
+It is convenient to introduce the momentum transfer FORMULA ,
+defined as follows: FORMULA  and FORMULA . Conservation of the angular velocity
+with respect to the point of contact and Eq. () gives
+FORMULA .
+In terms of FORMULA , the difference in velocity at the point of
+contact is FORMULA . Substituting this expression
+into the collision laws (), the normal and the tangential
+components of FORMULA  are simply
+FORMULA 
+
+
+Consequently, the momentum transfer is FORMULA  or explicitly,
+FORMULA 
+We now have the explicit collision rules ().
+
+Particle Number Conservation
+In this appendix, we verify that the stationary solution is consistent
+with particle number conservation. Maxwell Molecules are considered
+for simplicity. It is straightforward to generalize this calculation to
+all FORMULA  and to free cooling.
+Our starting point is Eq. (REF ), specialized to Maxwell
+molecules, i.e. FORMULA ,
+FORMULA 
+As a first step we integrate this equation over the solid angle
+FORMULA 
+The power-law behavior (REF ) typically holds in a
+restricted energy range, FORMULA , where FORMULA  and
+FORMULA  are upper and lower cutoffs. In the driven case, the upper
+cutoff is set by the energy injection scale. Let
+FORMULA  be the total number of particles
+in this range. With the powerlaw decay (REF ), then
+FORMULA 
+To evaluate this time evolution of FORMULA , we substitute the product form
+(REF ) into (REF ) and integrate over the energies
+in the aforementioned power-law range,
+FORMULA 
+Using Eq. (REF ), we confirm that the total number of
+particles is conserved, FORMULA .
+
+The matrix coefficients
+In an inelastic collision, the translational
+energy loss is FORMULA  with
+FORMULA  and similarly, the rotational energy
+loss is FORMULA  with FORMULA .
+We can conveniently calculate these quantities by using FORMULA , FORMULA ,
+and FORMULA , and
+by expressing the momentum transfer FORMULA  using the natural
+coordinate system, FORMULA ,
+FORMULA 
+
+
+The rate of change of the respective temperatures equals FORMULA  the
+average of this quantities, FORMULA  and FORMULA . This is seen by multiplying (REF ) by
+FORMULA  and by integrating over the velocity. The averaging
+is with respect to the probability distribution functions of the two
+colliding particles. The cross-term vanishes, FORMULA ,
+by symmetry. Using FORMULA  and FORMULA  we obtain the matrix elements
+(REF ).

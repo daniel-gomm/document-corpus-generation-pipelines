@@ -1,0 +1,316 @@
+
+The Entropy Bound for Local Quantum Field Theory
+Yi-Xin Chen
+yxchen@zimp.zju.edu.cn
+Yong Xiao
+yongxiao2008@live.cn
+Zhejiang Institute of Modern Physics
+Zhejiang University, Hangzhou 310027, China
+We investigate the entropy bound for local quantum field theory in
+this paper. Both the bosonic and fermionic fields confined to an
+asymptotically flat spacetime are examined. By imposing the
+non-gravitational collapse condition, we find both of them are
+limited by the same entropy bound FORMULA , where FORMULA  is the
+boundary area of the region where the quantum fields are contained
+in. The gap between this entropy bound and the holographic entropy
+has been verified.
+
+04.70.Dy, 03.70.+k, 11.10.Kk
+The counting of degrees of freedom of local quantum field theory
+(LQFT) is a question of persistent interest. For example,
+statistical mechanics tells that a thermal photon gas which is
+described by LQFT has the entropy FORMULA , when it is
+confined to a box of size FORMULA . If the temperature FORMULA  could be an
+arbitrarily chosen parameter, one finds the system has an entropy
+proportional to the volume FORMULA . However, we know that this
+temperature has to be limited by FORMULA , or else the system will undergo collapse to form a
+black hole. Substituting this physical limitation into the entropy
+formula, one easily finds the entropy bound FORMULA , where FORMULA  is the boundary area of the
+system. The derivation above is firstly given by 't Hooft in
+{{cite:4726f722-686b-4457-bcad-7ff4c5065198}}. The entropy bound FORMULA  for LQFT in the absence
+of black holes is also exemplified by other authors
+{{cite:52177a2b-a8ce-4923-b88c-7635ad8618ff}}, {{cite:0cdbbc3d-145d-4b1a-ad7f-739263256705}}, {{cite:84268abd-0499-4b31-aef9-210ebd2a9a58}}, {{cite:367ec4ac-687d-4da2-bc46-d68526838e0d}}, {{cite:d8a99fb9-7f34-47d8-95aa-6ff077464d05}}.
+On the other hand, there are still controversies around this
+topic. Starting from a bosonic field model and imposing the
+gravitational stability condition, a holographic entropy bound
+which is proportional to the boundary area FORMULA  of the system is
+derived in {{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}}. This is a physically unaccepted outcome, for
+that the holographic entropy bound FORMULA  is laid by the
+entropy of black hole {{cite:735e3efd-252d-49a7-b6a4-4a64a5996034}}, {{cite:7cfb7863-8d4b-423d-a7d1-b9b6641034b6}} the successful
+counting of which in the context of string theory
+{{cite:2e57a17b-1e5d-408d-9925-990e5777e2c6}}, {{cite:87b5bcbc-ff23-4c92-b39c-b3b08a03a368}} contains many states which are not describable
+in conventional quantum field theory. It is conceivable that LQFT
+should conform to a more stricter entropy bound rather than the
+holographic entropy bound. Then it is worthy to note that Aste
+{{cite:95a33438-8d5e-4b76-ae51-1361be54c581}} has found a subtle mistake which is vital in the
+derivation of {{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}}, making the results there controversial
+{{cite:9f00a611-bc9c-4443-af4e-6fba74d01d2e}}.
+In this paper we should devote ourselves to further verifying that
+the entropy bound for LQFT is FORMULA  rather than FORMULA , since at
+present there are seldom formal and general proofs of this fact
+independent of the simple qualitative analysis above given by 't
+Hooft. To do this, we shall revisit the model presented in
+{{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}} and developed by {{cite:f71404a3-5a7a-437c-aed3-ac3b56c2a8d3}}. This model originated by
+Yurtsever {{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}} is valuable in that it gives a very direct way
+of counting degree of freedoms or the dimension of the Fock space
+of a LQFT system. But notice that the imperfect considerations and
+results in {{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}}, {{cite:f71404a3-5a7a-437c-aed3-ac3b56c2a8d3}} have been rectified here. The entropy
+bound for both bosonic and fermionic fields are examined and found
+to be FORMULA . We find that when the systems are far from
+forming a black hole, surely a fermionic system has a much lower
+entropy bound scaling than a bosonic system, as one may expect. We
+shall also discuss the physical implications of the entropy gap
+between LQFT and holographic theories, from FORMULA  to FORMULA . For
+simplicity, we have set FORMULA  in this paper. By
+adding Planck length FORMULA  and Planck mass FORMULA  to the
+expressions, one can readily get the right magnitudes. To make the
+scaling behavior clear, the trivial constant coefficients will be
+omitted in the calculations also.
+We consider a system with massless scalar fields confined to a
+3-dimensional spacelike cube of size FORMULA . Imposing periodic
+boundary conditions, the particle's momentum will be quantized.
+The elementary energy unit is equal to FORMULA , the
+infrared (IR) energy cutoff of the system. Then any quantized wave
+vector FORMULA  can be labelled by three non-negative integers
+FORMULA , FORMULA , FORMULA , that is FORMULA .
+The total number of these quantized modes is
+FORMULA 
+
+where FORMULA  is defined to be the ultraviolet (UV) energy
+cutoff of LQFT. A sufficiently large volume is implied, thus the
+summation over the discrete modes above can be replaced by the
+corresponding integral. Due to Eq.(REF ), the quantized wave
+vector FORMULA  can be one-to-one labelled by a character FORMULA 
+with FORMULA . The corresponding energy of the mode
+is FORMULA .
+When the massless scalar fields obey the Bose-Einstein statistics,
+we can construct the Fock states by assigning occupying number
+FORMULA  to these FORMULA  different modes, which is
+FORMULA 
+
+Each different set of occupancy FORMULA  determines an
+independent basis of the Hilbert space of the system. Now we
+impose the non-gravitational collapse requirement which states
+that the quantum states with energy more than the mass of a black
+hole of the same size is unstable and thus should be excluded from
+the physically permitted Hilbert space. It implies that
+FORMULA 
+
+where FORMULA  is the energy of the black hole with Schwarzschild
+radius FORMULA . The number of solutions or occupancies
+FORMULA  satisfying the requirement Eq.(REF )
+gives the dimension of the physically permitted Hilbert space
+FORMULA .
+The entropy associated with the system is
+FORMULA  {{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}}, {{cite:735e3efd-252d-49a7-b6a4-4a64a5996034}},
+where FORMULA  is the possibility distribution on the Hilbert
+state basis. Obviously the maximum value of the expression can be
+realized by a uniform distribution FORMULA . The
+corresponding entropy is
+FORMULA 
+
+To determine the maximum entropy of the system, we have to count
+out the dimension the Hilbert space, that is the number of
+admissible solutions FORMULA  of Eq.(REF ). This corresponds
+to the knapsack or counting lattice points problem in mathematics
+{{cite:ec57228f-a507-4316-bead-245b712ccadc}}, {{cite:dc593c6e-244c-4d72-9ec0-5fca4e22d627}}, {{cite:88e4f236-1403-48e6-9ac6-693a651ff54b}}. That is, when adhering FORMULA  to a
+Cartesian coordinate system FORMULA , the question refers to
+the counting of lattice points (points with integer coordinates)
+contained within the convex polytopes determined by
+FORMULA , FORMULA ,
+with right-angle side lengths
+FORMULA 
+
+It is interesting but difficult to find an exact solution to this
+question. However, the cases we refer to have FORMULA . Thus we
+could use the volume of the corresponding polytopes to
+approximately evaluate the number of lattice points within them
+{{cite:ec57228f-a507-4316-bead-245b712ccadc}}, {{cite:423cde52-4106-4c4c-859b-4db5d1e5379d}}.
+To make the analysis explicit, we start from the counting of
+quantum states with two different modes simultaneous excitated,
+namely we require FORMULA , FORMULA  where
+FORMULA . Thus Eq.(REF ) reduces to
+FORMULA 
+
+Consider a 2-dimensional polytope FORMULA  with
+right-angle size lengths FORMULA  and
+FORMULA . There is an one-to-one correspondence
+of the solutions FORMULA  of Eq.(REF ) with
+the lattice points in FORMULA . Since each integer cell
+occupies one unit volume in the polytope, we can approximately
+evaluate the number of lattice points within FORMULA  by
+its 2-dimensional volume FORMULA . Summing over the choices of
+FORMULA , FORMULA , the total number of states with two modes
+simultaneously excitated is
+FORMULA .
+Similarly, we estimate the number of quantum states with FORMULA  modes
+simultaneously excitated by virtue of the volume of the related
+polytopes FORMULA  as
+FORMULA , where
+FORMULA 
+
+In belief, this entire procedure corresponds to evaluating the
+solutions of Eq.(REF ) by counting the lattice points contained
+within FORMULA  and its lower dimensional surfaces
+FORMULA . In this way we get the dimension of the Hilbert
+space
+FORMULA 
+
+The summation in Eq.(REF ) is up to FORMULA . It means that the
+states with FORMULA  modes simultaneously excitated could contribute to
+the counting of the physical Hilbert space. To insure this, we
+consider a FORMULA  particle state with one particle occupying one
+mode. This state is the lowest energy state with FORMULA  modes
+simultaneously excitated and at least should satisfy the
+gravitational stability condition Eq.(REF ). It gives
+FORMULA 
+
+It is not other but the well-known UV-IR relation for LQFT first
+established by Cohen et al {{cite:52177a2b-a8ce-4923-b88c-7635ad8618ff}} to exclude all
+non-gravitational stability states that lie within their
+Schwarzschild radius. For convenience, it is usually written as
+FORMULA .
+Combining the above results with the asymptotic form of the Bessel
+function, we have
+FORMULA 
+
+Notice that the second inequality can be saturated at FORMULA . The reason is as below. Since both
+FORMULA  and FORMULA  are functions of FORMULA , we find FORMULA  when FORMULA . In this case there is
+FORMULA  (FORMULA , FORMULA ) which makes the use of
+FORMULA  reasonable.
+From Eq.(REF ) and Eq.(REF ), the maximum entropy is
+evaluated as {{cite:22c2350b-fbc8-4ab9-bf18-4f83003cfe70}}
+FORMULA 
+
+If the UV cutoff FORMULA  is taken as an arbitrary constant, one
+will find a holographic entropy bound proportional to the area
+FORMULA  of the system. But actually taking FORMULA  always
+as constant will cause troubles, such as the problem presented in
+{{cite:95a33438-8d5e-4b76-ae51-1361be54c581}} aiming to invalid the results of {{cite:1aab5748-38cf-4af7-957f-5329b47d6df0}}. By
+contrast, we have pointed out that FORMULA  should limited by the
+UV-IR relation FORMULA  for LQFT.
+Substituting it into Eq.(REF ), we get the right entropy bound
+FORMULA .
+Notice that the UV-IR relation FORMULA 
+plays an essential role in the evaluation of the entropy bound for
+LQFT. The validity of it for LQFT has been argued in the
+literature for various applications. In {{cite:52177a2b-a8ce-4923-b88c-7635ad8618ff}}, it has been
+pointed out that this UV-IR relation is necessary in order to make
+sure LQFT could be a good effective description of the nature.
+Furthermore, it was also illustrated in {{cite:367ec4ac-687d-4da2-bc46-d68526838e0d}}, {{cite:35f00055-7dbd-4211-8dbc-fd854b19fb01}} that when
+FORMULA , the gravitational corrections to the
+energy of the system will be too large and lead to gravitational
+collapse, which makes a LQFT description invalid. This UV-IR
+relation even has found applications in cosmology to establish
+dark energy models {{cite:367ec4ac-687d-4da2-bc46-d68526838e0d}}, {{cite:35f00055-7dbd-4211-8dbc-fd854b19fb01}}, {{cite:227fee63-fa80-47b2-96be-a3c49764580d}}. As far as the present
+model is concerned, one can check the self-consistency of the use
+of the UV-IR relation in our calculation. When Eq.(REF ) is
+saturated, it implies that only one state with FORMULA  modes
+simultaneously excitated could exist. At the same time, the volume
+counting method gives FORMULA  with FORMULA , which indicates that
+no states will be counted in the evaluation Eq.(REF ) when
+FORMULA . This consistency is more than could be expected.
+The analysis of entropy bound for fermionic fields is
+straightforward and will coincides with that given by Cohen et al
+{{cite:52177a2b-a8ce-4923-b88c-7635ad8618ff}} for fermionic and compact bosonic fields. From the
+Fermi-Dirac statistics, occupancy number for any mode is simply
+0 or 1. The UV-IR relation Eq.(REF ) insures that the
+state with all the FORMULA  modes being occupied
+satisfies the gravitational stability requirement. It has been the
+maximum energy state in the fermionic system. Thus all the
+fermionic states can really contribute to the dimension of the
+Hilbert space, which gives FORMULA . So the
+maximum entropy is FORMULA . When
+FORMULA , which means the energy of the
+system comes close to the critical energy to form a black hole,
+the fermionic system gives the same entropy bound FORMULA  as
+that of bosonic systems. However, when FORMULA ,
+there is FORMULA . It implies that when
+the energy of the system is far from the formation of a black
+hole, surely fermionic fields will have a much lower entropy bound
+scaling than that of bosonic fields.
+The generalizations to FORMULA -dimensional space-time and quantized
+fields with polarization or higher spins are straightforward.
+Following the steps above, one can readily find the entropy bound
+scaling as FORMULA  for
+bosonic fields and FORMULA  for fermionic
+fields, along with the UV-IR relation FORMULA . Remembering that FORMULA  and FORMULA , the entropy bound FORMULA  is retrieved
+for all bosonic and fermionic fields in FORMULA  dimensions.
+We have imposed an energy cutoff FORMULA  in our derivation. The
+modes with energy more than the UV cutoff have been excluded in
+our consideration. But one may still argue that this cutoff can
+only be justified in an average sense, and worry about the states
+where some modes with momentum FORMULA  are populated but the
+total energy is less than the size of the system FORMULA . Actually,
+the introduction of UV cutoff is a useful technique in the
+regularization of QFT. It doesn't deny minor fluctuations
+deviating from the introduced macroscopic parameter. The point is
+that these fluctuations will not cause considerable contributions
+to the final results. Here we write a rough calculation to clarify
+this issue. We start directly from Eq.(REF ) to evaluate the
+number of physically permitted states, without an additional
+assumption about the cutoff. We use FORMULA  as the highest
+reachable energy with FORMULA  modes simultaneously excitated, which
+can be approximated taken as FORMULA . (Or else the
+energy of the corresponding states will exceed the mass of a black
+hole of the same size.) Similar steps to these from Eq.(REF )
+to Eq.(REF ) lead to
+FORMULA 
+
+From Stirling's formula, the dominant contribution to FORMULA  comes
+from FORMULA . With
+FORMULA , the induced entropy bound is still FORMULA .
+The states with more modes excitated are not permitted, since
+FORMULA  when FORMULA .  Here
+FORMULA . Thus the
+UV-IR is still effective with a slightly different interpretation.
+It is meaningful to note that the above estimation can also be
+generalized to higher dimensions and lead to the entropy bound
+FORMULA .
+Now we turn to discuss the implications of our results. There is
+surely an entropy gap between LQFT and some unknown holographic
+theories, from FORMULA  to FORMULA  {{cite:35f00055-7dbd-4211-8dbc-fd854b19fb01}}. Actually, it has been
+pointed out in {{cite:52177a2b-a8ce-4923-b88c-7635ad8618ff}} that the holographic theories should
+have an UV-IR relation FORMULA ,
+compared to FORMULA  for the LQFT. The
+higher cutoff energy implies that one could detect more finer
+structures of the spacetime in holographic theories, since the UV
+cutoff determines the minimal detectable lengths. Thus the
+holographic theories would involve more degrees of freedom than
+that in the LQFT, which will fill the entropy gap between them.
+Nevertheless, the statistical principles of the holographic
+theories and the microscopic origin of the holographic UV-IR
+relation are still obscure. It inevitably involves the evaluation
+of quantum-gravitational degrees of freedom. The efforts in this
+direction will shed light on the understanding of the holographic
+principle {{cite:4726f722-686b-4457-bcad-7ff4c5065198}}, {{cite:5b5911a3-7b94-4865-a696-c81cb1d62c64}}, {{cite:7e5627dc-4c65-42e6-8f48-ea15e895fedc}}. It will also be
+interesting if one can explicitly count out all the holographic
+degrees of freedom similar to these we did for LQFT.
+To support our arguments on the entropy gap, a definite example is
+useful. (For details, see our recent paper {{cite:35f00055-7dbd-4211-8dbc-fd854b19fb01}}.) For a
+homogeneous and isotropic universe with FRW metric, the energy
+contained within the apparent horizon is FORMULA  where
+FORMULA  is the radius of the apparent horizon of the universe.
+This energy is formally identical to the mass of a black hole of
+the same size. Respecting the thermodynamics law FORMULA , for
+universes with FORMULA  like the de Sitter universe, one
+gets the holographic entropy FORMULA  where FORMULA  is the
+area of the apparent horizon. By contrast, for universes dominated
+by conventional fields, such as radiation, we have FORMULA . This different temperature behavior requires the
+entropy scaling is FORMULA  to make sure that
+FORMULA  is comparable to FORMULA .
+We have given a consistent derivation to the entropy bound for
+LQFT in this paper. The right entropy bound FORMULA  is
+obtained for both bosonic and fermionic systems. The necessity of
+introducing the UV-IR relation is explained. The role and
+implications of the UV-IR relation for LQFT and cosmology have
+been partly investigated in previous works
+{{cite:52177a2b-a8ce-4923-b88c-7635ad8618ff}}, {{cite:35f00055-7dbd-4211-8dbc-fd854b19fb01}}, {{cite:227fee63-fa80-47b2-96be-a3c49764580d}}, {{cite:61302a28-94b2-4ab6-8af0-8b89c40acced}} and are still worthy of further
+study. The entropy gap between LQFT and holographic theories has
+been verified. The implications of it should be clarified in
+further studies {{cite:84268abd-0499-4b31-aef9-210ebd2a9a58}}, {{cite:35f00055-7dbd-4211-8dbc-fd854b19fb01}}.
+Acknowledgements
+We would like to thank C. Cao for useful
+discussions. The work is supported in part by the NNSF of China
+Grant No. 90503009, No. 10775116, and 973 Program Grant No.
+2005CB724508.

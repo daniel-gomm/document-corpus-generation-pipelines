@@ -1,0 +1,469 @@
+
+Theory of Macroscopic Quantum Tunneling in High-FORMULA  FORMULA -Axis Josephson Junctions
+Takehito Yokoyama,FORMULA  Shiro Kawabata,FORMULA  Takeo Kato,FORMULA  and Yukio TanakaFORMULA 
+FORMULA Department of Applied Physics, Nagoya University, Nagoya, Aichi, 464-8603, Japan
+and CREST, Japan Science and Technology Corporation (JST), Kawaguchi, Saitama 332-0012,
+Japan
+FORMULA Nanotechnology Research Institute (NRI), National Institute of Advanced Industrial Science and Technology (AIST), Tsukuba, Ibaraki, 305-8568, Japan and CREST, JST, Kawaguchi, Saitama 332-0012, Japan
+FORMULA The Institute for Solid State Physics (ISSP), University of Tokyo,
+Kashiwa, Chiba, 277-8581, Japan
+2020/09/07 17:59:04
+We study macroscopic quantum tunneling (MQT) in FORMULA -axis twist Josephson junctions made of high-FORMULA  superconductors in order to clarify the influence of the anisotropic order parameter symmetry (OPS) on MQT.
+The dependence of the MQT rate on the twist angle FORMULA  about the FORMULA -axis is calculated by using the functional integral and the bounce method.
+Due to the FORMULA -wave OPS, the FORMULA  dependence of standard deviation of the switching current distribution and the crossover temperature from thermal activation to MQT are found to be given by FORMULA  and FORMULA , respectively.
+We also show that a dissipative effect resulting from the nodal quasiparticle excitation on MQT is negligibly small, which is consistent with recent MQT experiments using BiFORMULA SrFORMULA CaCuFORMULA OFORMULA  intrinsic junctions.
+These results indicate that MQT in FORMULA -axis twist junctions becomes a useful experimental tool for testing the OPS of high-FORMULA  materials at low temperature, and suggest high potential of such junctions for qubit applications.
+74.50.+r, 03.65.Yz, 05.30.-d
+Introduction
+The phenomenon of macroscopic quantum tunneling (MQT) has attracted much attention of experimentalists and theorists for many years. {{cite:3590c0a6-bb90-4db7-8a16-a26816106e36}}, {{cite:a7b53f3b-2029-4e5f-8732-b9fa0fe1ae46}}, {{cite:e3d3d067-e6ef-4393-8028-4eac9c1773d1}}
+Among several works on MQT, Josephson junctions have been intensively studied.
+In the current biased Josephson junctions, the states of non-zero supercurrent can move to lower-lying minima of the potential through the potential barrier by MQT.
+Ivanchenko and Zi'lberman showed the possibility of observing MQT in such systems. {{cite:e0c5fce1-de16-4832-99c4-60d019e3e4d6}}
+As was predicted by Caldeira and Leggett, MQT is suppressed by the dissipation effect. {{cite:3487ac63-a04f-4171-9dea-65eb9cd80a16}}, {{cite:69c849ed-f68b-4d48-9ead-ed4f9e6408f3}}
+Later, MQT and the dissipative effects on MQT were experimentally observed in FORMULA -wave Josephson junctions. {{cite:11839b4a-b5e5-46bc-b29a-26a5161ee65b}}, {{cite:f26f1d84-c3ce-46db-9c3e-0e1630c86d77}}, {{cite:975c5678-60a2-477a-bf5f-d25e776ed3fe}}, {{cite:9f1daed7-accb-468d-9b09-d6d00d5a7cb8}}
+Recently, the MQT theories for FORMULA -wave Josephson junctions {{cite:3487ac63-a04f-4171-9dea-65eb9cd80a16}}, {{cite:69c849ed-f68b-4d48-9ead-ed4f9e6408f3}}, {{cite:68d25fab-5d35-4469-9cc5-febb6b459627}}, {{cite:37948e3d-b65a-407b-b1ed-63097942723c}}, {{cite:691d3489-bab5-4dfa-82ba-5d71a2b14ad8}}, {{cite:ea2927fc-2701-4cd0-8979-3f201197d572}} have been extended to FORMULA -wave systems. {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:a58afbdc-bb46-4fce-b73c-88f4a43b08c5}}, {{cite:a65aedc9-941f-407b-a660-a13ddec6b07e}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}}, {{cite:187d20a5-cbaa-4885-a116-a21db572f76e}}, {{cite:94da41e9-8c00-40f3-95ea-7cf51f2c4592}}, {{cite:d19bbd3c-cd2e-4466-af4c-39412a29afce}}
+It was claimed that the influence of the quasiparticle excitation on MQT is negligible despite of the existence of the line nodes which result from the FORMULA -wave order parameter symmetry (OPS). {{cite:b5f640f7-fa20-4a36-b9df-e4d10b646c89}}, {{cite:49a0ee4d-4de3-438e-a2ac-ee6699e0e92b}}
+Therefore, in FORMULA -axis Josephson junctions, e.g., intrinsic junctions {{cite:ef20205e-62a3-4e1f-8690-e87369e637b1}} or cross-whisker junctions, {{cite:10b124ab-252e-4812-a448-9005c0aa1766}}, {{cite:5e64159c-aa3d-45ad-aa16-1a8932bb48d9}}, {{cite:6bf11e91-49ec-4c18-8117-3e9c382fd214}} the crossover temperature FORMULA  from thermal activation (TA) to MQT was predicted to be quite high.
+This can be ascribed not only to the weak dissipative nature {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:a65aedc9-941f-407b-a660-a13ddec6b07e}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}} but also the large Josephson plasma frequency FORMULA  of FORMULA -wave junctions, i.e., FORMULA . {{cite:3590c0a6-bb90-4db7-8a16-a26816106e36}}, {{cite:a7b53f3b-2029-4e5f-8732-b9fa0fe1ae46}}
+On the other hand, in the case of in-plane FORMULA -wave junctions which are parallel to the CuOFORMULA  plane, e.g., grain boundary junctions {{cite:e44db285-8b78-46ce-96e4-56c8a0662b8b}}, {{cite:5f83c968-d83c-43c6-9848-6d2acd480d8c}} or ramp-edge junctions, {{cite:144996e4-99b6-4c4e-904f-a256708e696b}} it was found that the zero energy Andreev bound states (ZES) {{cite:24350fe0-94e9-4e45-b0df-0fb1ece99a9c}}, {{cite:ce9bf192-cadd-48fa-977f-e74310fdbdb9}}, {{cite:46d3adf9-d66f-403c-9086-4310ec1cbace}}, {{cite:696bc3f8-53d8-4672-ad10-1c54ed128cb8}} give the Ohmic dissipative effect on MQT. {{cite:a58afbdc-bb46-4fce-b73c-88f4a43b08c5}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}}, {{cite:187d20a5-cbaa-4885-a116-a21db572f76e}}
+Later, the above MQT theories have been extended to explore macroscopic quantum coherence {{cite:75b21532-0109-4840-a896-907c7ea00e2a}}, {{cite:82b5f749-4374-44cb-9536-0399c309c6bb}}, {{cite:9042656c-fbe8-4d1f-b639-285fe5d06545}} and propose a FORMULA -wave phase qubits. {{cite:0c146103-7b81-411f-a58d-dd7b3877efaf}}
+The TA-related phenomena in FORMULA -wave junctions were already observed experimentally by many groups. {{cite:e0906033-07bf-4571-949e-c377957ad1eb}}, {{cite:74d41b55-10d4-481f-a674-0b9e4b495040}}, {{cite:16438354-03d0-4ec1-bb51-8d0f5b8914b3}}, {{cite:bb066fbc-3dc5-4b52-b70a-b0096af801cf}}, {{cite:58196f60-75e0-400e-87c4-c6ac00b8fd2b}}, {{cite:4d61b3f6-47bc-4c9f-8ba2-a71402bba0f7}}, {{cite:e3284592-d1f3-4826-8b12-805a2b8b6750}}, {{cite:ff9b105f-96ab-4b11-9c4c-f8143e3f0cfa}}, {{cite:72b72f09-db05-4fba-b7db-35d297d17149}}, {{cite:4a28fce9-2d36-4871-9dcf-575b7ec93292}}
+Until recently, however, no experiments of MQT have been reported.
+First successful observations of MQT in FORMULA -wave junctions were performed by Bauch FORMULA  FORMULA  {{cite:332176d9-e97e-4962-823e-e63186d12cf9}} and Inomata FORMULA  FORMULA , {{cite:8604d089-365a-4c3d-8a6e-ec3ae181c63d}} using YBCO bi-epitaxial grain boundary junctions, {{cite:5f83c968-d83c-43c6-9848-6d2acd480d8c}}, {{cite:6a01496d-27b9-45a8-b04d-816dc025cfb2}}, {{cite:074241c0-a8a0-4549-a4de-b869cd525127}}, {{cite:53fc575b-9757-48b4-93db-ea8d9c635fb9}}, {{cite:6e974ea1-26ef-427e-86fb-98d96805a3a9}} and high-quality BiFORMULA SrFORMULA CaCuFORMULA OFORMULA  (Bi2212) intrinsic junctions, respectively.
+Subsequently, several groups have observed MQT{{cite:f5d00171-31fc-4119-8398-6da33d1deaae}}, {{cite:1e13dbaf-5fc9-4fee-a4d2-c299cb123d8c}}, {{cite:a048a72f-8a75-4186-b029-d611e3e52735}}, {{cite:0363f009-fdaf-4923-86c2-272ca946bb35}}, {{cite:c6a61738-440c-43be-9ba2-11f44377c51b}} and micro-wave assisted MQT {{cite:66e6e350-806a-43bf-935a-c6edfcdad2cc}}, {{cite:f5d00171-31fc-4119-8398-6da33d1deaae}}, {{cite:53ec8326-466f-4fb8-b8eb-31bd7d6acf73}}, {{cite:0607e38f-0caa-4dda-ad91-34cdbcc89b86}} in such systems.
+They reported that FORMULA  of FORMULA -axis (Bi2212 intrinsic) junctions is high (0.5FORMULA 1K) {{cite:8604d089-365a-4c3d-8a6e-ec3ae181c63d}}, {{cite:f5d00171-31fc-4119-8398-6da33d1deaae}}, {{cite:1e13dbaf-5fc9-4fee-a4d2-c299cb123d8c}}, {{cite:a048a72f-8a75-4186-b029-d611e3e52735}} compared with the high-quality FORMULA -wave junction in which FORMULA  is at most 0.3K. {{cite:1694cb11-c51e-4c70-b43f-78af308fcc68}}
+This result is consistent with theoretical predictions. {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:a65aedc9-941f-407b-a660-a13ddec6b07e}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}}
+In the previous MQT studies for FORMULA -wave junctions, the advantage of a large gap value of FORMULA -wave superconductors has been mainly emphasized.
+On the other hand, in FORMULA -wave junctions, there appears a new degree of freedom, i.e., a directional dependence of the anisotropic order parameter.
+This directional dependence produces many intriguing phenomena.{{cite:b5f640f7-fa20-4a36-b9df-e4d10b646c89}}, {{cite:49a0ee4d-4de3-438e-a2ac-ee6699e0e92b}}, {{cite:46d3adf9-d66f-403c-9086-4310ec1cbace}}, {{cite:696bc3f8-53d8-4672-ad10-1c54ed128cb8}}
+Additionally, angular dependence of the Josephson current in FORMULA -wave junctions explicitly reflects the FORMULA -wave OPS. {{cite:7d1d6198-10f8-4c77-92d2-425f10dc0559}}, {{cite:705e3013-975a-48dc-9386-dd3ed9c430c6}}, {{cite:5e64159c-aa3d-45ad-aa16-1a8932bb48d9}}
+Therefore, how MQT depends on the relative angle of the lobe directions between two order parameters is an interesting problem.
+In the present paper, we study the dependence of the MQT rate (the inverse lifetime of the metastable state) on the twist angle FORMULA  for the FORMULA -axis twist Josephson junction (see Fig. 1) by use of the functional integral and the bounce method.
+We also investigate favorable conditions for the realization of MQT at high crossover temperature FORMULA .
+Recently, it was found that intrinsic junction stacks exhibit a gigantic enhancement of the MQT rate. {{cite:f5d00171-31fc-4119-8398-6da33d1deaae}}, {{cite:6e565bef-9f92-4773-b14f-08f1e5b5962f}}, {{cite:f40b44eb-ddd9-4f83-83d9-66d1fb20e7f8}}, {{cite:3c42d328-a89b-44df-87a9-9b7a7a764391}}, {{cite:1e0a2547-2629-4cd8-9fb5-e39c42377f32}}, {{cite:7f79c40a-026c-4c3e-a43c-074a97b84abd}}
+In the present paper, however, we treat a single junction in order to clarify the effect of the anisotropic OPS which is peculiar to high-FORMULA  superconductors.
+Note that such single intrinsic junctions made of Bi2212 single crystals have been recently fabricated by use of the Ar-ion etching method. {{cite:3eddd31e-6e7c-43f1-857e-78c27d9fa441}}, {{cite:53e8f575-a344-435e-96e6-240a084854ff}}
+We will also present supplementary explanations and results of the previous papers {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:a65aedc9-941f-407b-a660-a13ddec6b07e}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}} in which the quasiparticle dissipation effect on MQT is mainly discussed.
+The organization of the present paper is as follows.
+In section II, we derive the effective action for FORMULA -wave junctions and formulate the theory for the calculation of FORMULA .
+In section III, we present calculated results of FORMULA .
+The advantages of FORMULA -axis twist Josephson junctions for qubits applications are briefly discussed in section IV.
+In section V, a summary of the results in the present paper is given.
+FIGURE 
+
+Formulations
+Effective action for FORMULA -wave junctions
+Let us start from a microscopic model of the FORMULA -wave superconductor/insulator/FORMULA -wave superconductor Josephson junction, described by the grand canonical Hamiltonian,
+FORMULA 
+where FORMULA  and FORMULA  are Hamiltonians for the FORMULA -wave superconductors 1 and 2:
+FORMULA 
+where FORMULA  is the electron mass, FORMULA  is the chemical potential and FORMULA  (FORMULA ) is the fermion field operator.
+In order to obtain the anisotropic order parameter, the anisotropic attractive interaction FORMULA  has to be taken into account.
+The third term in Hamiltonian (REF ), i.e.,
+FORMULA 
+describes the tunneling of electrons between the two sides of the junctions,
+and
+FORMULA 
+is the charging Hamiltonian
+where FORMULA  is the capacitance of the junction and FORMULA  is the operator for the charge on the superconductor 1 (2), which can be written as
+FORMULA 
+The procedure to derive the effective action is the same as FORMULA -wave junctions. {{cite:37948e3d-b65a-407b-b1ed-63097942723c}}, {{cite:68d25fab-5d35-4469-9cc5-febb6b459627}}, {{cite:ea2927fc-2701-4cd0-8979-3f201197d572}}, {{cite:9d7e9c10-6ede-4d5f-84c0-4f8db49230b2}}
+By using the functional integral method, {{cite:4d9bbe63-4567-4d10-95cb-d24f7f3b757d}}, {{cite:99613eda-3056-46a4-8a42-f9f874f4400f}} the ground partition function FORMULA  for the system can be written as
+FORMULA 
+where FORMULA , FORMULA  is the Grassmann field which corresponds to the fermionic field operator FORMULA , and the Lagrangian FORMULA  is given by
+FORMULA 
+We use the Hubbard-Stratonovich transformation {{cite:30e57e6a-45c0-4f10-b529-e963556ceddb}}, {{cite:802e57d9-4ef1-4ebe-bd14-12caf4272763}}
+FORMULA 
+in order to remove the term FORMULA  in the Hamiltonian FORMULA .
+This introduces a complex order parameter field FORMULA .
+The resulting action is only quadratic in the Grassmann field, so that the functional integral over this number can readily be performed explicitly.
+Next, we perform the variable transformation (or gauge transformation){{cite:68d25fab-5d35-4469-9cc5-febb6b459627}}, {{cite:37948e3d-b65a-407b-b1ed-63097942723c}}, {{cite:ea2927fc-2701-4cd0-8979-3f201197d572}}
+FORMULA 
+Here, FORMULA  is a real field, and FORMULA  and FORMULA  are center of mass and relative coordinates, respectively. We assume a slow variation of the order parameter in space and time, and hence
+FORMULA  and FORMULA  are satisfied. We also introduce auxiliary voltage field FORMULA  which coules to the charge operator.
+Then, the partition function FORMULA  becomes
+FORMULA 
+
+Here, FORMULA  is a FORMULA  matrix Green's function
+FORMULA 
+where,
+FORMULA 
+FORMULA 
+In the last equation, we introduced the Pauli matrix FORMULA , the identity matrix FORMULA ,
+the pair potential
+FORMULA 
+the superfluid velocity FORMULA , and
+FORMULA .
+In the following, we assume that the phase varies slowly in space, namely FORMULA .
+The functional integrals over the modulus of the order parameter field FORMULA  and the voltage field FORMULA  are performed by the saddle-point method, which lead to the gap equation and the Josephson equation, respectively.{{cite:37948e3d-b65a-407b-b1ed-63097942723c}}, {{cite:68d25fab-5d35-4469-9cc5-febb6b459627}}, {{cite:ea2927fc-2701-4cd0-8979-3f201197d572}} We also assume that the tunneling matrix element FORMULA  is finite only in the vicinity of the insulating barrier.
+Then, the partition function FORMULA  is reduced to a single functional integral over the phase difference FORMULA ,
+FORMULA 
+Next, we expand FORMULA  up to the second order in the tunneling matrix element FORMULA , i.e.,
+FORMULA 
+with
+FORMULA 
+After some calculations, we obtain
+FORMULA 
+where the effective action FORMULA  is given by {{cite:10abd334-191f-4985-9188-690f13fabdcc}}, {{cite:057b9cce-ad0d-4832-b8dd-3f548751e9de}}, {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}
+FORMULA 
+The second term in eq. (REF ) describes the dissipation due to the quasiparticle tunneling.
+The third term describes the tunneling of Cooper pairs (the Josephson tunneling).
+The only difference of the effective action between FORMULA -wave and FORMULA -wave junctions is the dependence of FORMULA  on the relative coordinate FORMULA , and is included in the two kernels.
+The dissipation kernel FORMULA  and the Josephson kernel FORMULA  are given in terms of the diagonal and off-diagonal components of the Matsubara Green functions in Nambu space, denoted by FORMULA  and FORMULA ,
+FORMULA 
+The Green functions are given by
+FORMULA 
+where FORMULA  and FORMULA  is the fermionic Matsubara frequency (FORMULA  is an integer).
+Information about the anisotropy of the order parameter is included in FORMULA .
+In the case of the cuprate high-FORMULA  superconductors (the FORMULA  OPS), FORMULA  is given by
+FORMULA 
+. Here, FORMULA  is an angle between FORMULA  and FORMULA -axis.
+
+Effective action for current-biased FORMULA -axis twist junctions
+Let us turn to the calculation of the effective action for the FORMULA -axis twist Josephson junctions (see Fig. 1).
+We define FORMULA  as the twist angle about the FORMULA -axis (FORMULA ). {{cite:10b124ab-252e-4812-a448-9005c0aa1766}}
+Such junctions can be fabricated by using the single crystal whisker of Bi2212. {{cite:5e64159c-aa3d-45ad-aa16-1a8932bb48d9}}, {{cite:a1e48bbc-77cc-4a92-ab43-e86f0ed1897f}}, {{cite:6bf11e91-49ec-4c18-8117-3e9c382fd214}}, {{cite:dea39858-0773-4eeb-97e5-fc6ebf621053}}
+Takano et al. measured the FORMULA  dependence of the FORMULA -axis Josephson critical current and showed a clear evidence of the FORMULA  OPS of Bi2212. {{cite:5e64159c-aa3d-45ad-aa16-1a8932bb48d9}}, {{cite:a1e48bbc-77cc-4a92-ab43-e86f0ed1897f}}, {{cite:f7db7fd7-8a96-41bb-a01f-7e46e3bba47f}}
+In what follows, we assume that the tunneling between the two superconductors is described in terms of the coherent tunneling, i.e.,
+FORMULA 
+where FORMULA  is the momentum parallel to the FORMULA -plane.
+For simplicity, we also assume that each superconductor consists of single CuOFORMULA  layer, FORMULA , and FORMULA  (see Fig. REF ).
+Moreover, we consider the low temperature limit (FORMULA ).
+In the case where the Josephson junction is biased by an externally applied current FORMULA , we have to add an additional potential contribution linear in FORMULA . {{cite:68d25fab-5d35-4469-9cc5-febb6b459627}}, {{cite:37948e3d-b65a-407b-b1ed-63097942723c}}
+At this level of approximation, the effective action FORMULA  of the current biased FORMULA -axis twist Josephson junction has the form
+FORMULA 
+where FORMULA  is the mass and FORMULA  is the tilted washboard potential
+FORMULA 
+In this equation, FORMULA  is given by FORMULA , and FORMULA  is the Josephson coupling energy, where
+FORMULA 
+is the Josephson critical current.
+In the derivation of the Josephson term, we adopted the local approximation.{{cite:3590c0a6-bb90-4db7-8a16-a26816106e36}}, {{cite:bb1e7f02-3c1c-4c34-88ad-67a662ed0dc4}} Details of this
+approximation and its justification are given in Appendix  .
+By substituting Eq. (REF ) into Eq. (REF ), we can obtain the FORMULA  dependence of FORMULA , i.e.,
+FORMULA 
+where FORMULA  is the density of states at the Fermi energy.
+Especially at FORMULA , we get a well-known result {{cite:46d3adf9-d66f-403c-9086-4310ec1cbace}}
+FORMULA 
+Figure REF  shows the twist angle FORMULA  dependence of the critical current FORMULA .
+It is approximately proportional to FORMULA .
+Note that for FORMULA , the sign of the current changes.
+Thus, in this case, the FORMULA -junction is formed.
+These behaviors are attributed to the FORMULA -wave OPS of high-FORMULA  superconductors.
+FIGURE 
+Next, we will calculate the dissipation kernel FORMULA  for the FORMULA -axis twist junctions.
+In the case of the FORMULA -axis junction with FORMULA  (e.g., single intrinsic junctions), {{cite:3eddd31e-6e7c-43f1-857e-78c27d9fa441}}, {{cite:53e8f575-a344-435e-96e6-240a084854ff}} the node-to-node quasiparticle tunneling is always possible.
+Then, the explicit and asymptotic form of FORMULA  at low temperature are obtained as
+FORMULA 
+where FORMULA  is the modified Bessel function,
+FORMULA  is the resistance quantum and
+FORMULA 
+is the inverse of the normal state resistance FORMULA .
+Equation () gives the superohmic dissipation which agrees with the previous results {{cite:10abd334-191f-4985-9188-690f13fabdcc}}, {{cite:057b9cce-ad0d-4832-b8dd-3f548751e9de}}, {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}} based on the coherent tunneling approximation (Eq. (REF )).
+The present model shows stronger dissipation effect than the incoherent tunneling model (FORMULA ) {{cite:bb1e7f02-3c1c-4c34-88ad-67a662ed0dc4}} and a more realistic tunneling model based on the first-principle band-calculation{{cite:2f51b098-7785-4bdd-9268-0d8310e5d751}} (FORMULA ). {{cite:06f52f40-bbeb-450b-aaef-fbed6511f7de}}
+Despite this fact, the quasiparticle dissipation effect on MQT in the present coherent tunneling model is still quite weak as will be shown in Sec. III.
+See Appendix B for the derivation of these asymptotic forms of the kernel FORMULA .
+In the case of nonzero FORMULA , we get
+FORMULA 
+The asymptotic behavior of FORMULA  for nonzero FORMULA  is numerically estimated as an exponential function, i.e.,
+FORMULA 
+for FORMULA .
+This exponential behavior is ascribed to the suppression of the node-to-node quasiparticle tunneling by the finite value of FORMULA  {{cite:10abd334-191f-4985-9188-690f13fabdcc}}, {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}} and is similar to that of the conventional FORMULA -wave junctions with the constant order parameter FORMULA :
+FORMULA  {{cite:68d25fab-5d35-4469-9cc5-febb6b459627}}, {{cite:37948e3d-b65a-407b-b1ed-63097942723c}}
+For nonzero FORMULA , if the phase FORMULA  varies slowly with time on the scale given by FORMULA , we can expand FORMULA  in Eq.(REF ) with respect to FORMULA , which results in
+FORMULA 
+where
+FORMULA 
+
+for FORMULA 
+with FORMULA .
+Here, FORMULA  and FORMULA  are complete elliptic integral of the second and the first kinds, respectively.
+Hence, under the above condition, the dissipation action FORMULA  acts as a kinetic term so that the effect of the quasiparticle dissipation results in an increase of the mass, i.e., FORMULA  (the mass renormalization).
+This result indicates that the influence of the quasiparticle dissipation for nonzero FORMULA  is quite weaker than that for FORMULA , and hence it also gives negligible contribution to MQT as will be shown in the next section.
+It should be remarked that the increase of the mass FORMULA  is inversely proportional to FORMULA .
+
+MQT rate
+We will calculate the FORMULA  dependence of the MQT rate at low temperatures.
+Note that, in the previous studies of MQT in FORMULA -wave FORMULA -axis junctions, {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:a65aedc9-941f-407b-a660-a13ddec6b07e}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}} only the limiting cases of FORMULA , i.e., FORMULA  and FORMULA , have been considered.
+The MQT rate is defined by the formula {{cite:3590c0a6-bb90-4db7-8a16-a26816106e36}}, {{cite:a7b53f3b-2029-4e5f-8732-b9fa0fe1ae46}}, {{cite:0fa9de2b-e900-4129-a92b-d2f7a7854fca}}
+FORMULA 
+In order to determine FORMULA , we employ the bounce approximation. {{cite:3590c0a6-bb90-4db7-8a16-a26816106e36}}, {{cite:a7b53f3b-2029-4e5f-8732-b9fa0fe1ae46}}, {{cite:0fa9de2b-e900-4129-a92b-d2f7a7854fca}}
+When the barrier is low enough for the MQT to occur but still so high that the bounce approximation can be valid, FORMULA  is given by
+FORMULA 
+where FORMULA  is the bounce exponent, which is the value of the the action FORMULA  evaluated along the bounce trajectory FORMULA .
+Assuming that FORMULA  is close to FORMULA , we can approximate the washboard potential FORMULA  as a quadratic-puls-cubic one.
+Then, we obtain for  FORMULA{{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:a65aedc9-941f-407b-a660-a13ddec6b07e}}, {{cite:c4c6cb3e-721e-4e8f-bcfc-a67684f5a1aa}}
+FORMULA 
+and
+for  FORMULA
+FORMULA 
+In Eqs. (REF ) and (REF ), FORMULA , FORMULA  FORMULA ,
+FORMULA 
+and FORMULA  is the decay rate without the quasiparticle dissipation, i.e.,
+FORMULA 
+where barrier height FORMULA  and the Josephson plasma frequency FORMULA  are given by
+FORMULA 
+For FORMULA , FORMULA  is the mass increment due to the high-frequency components (FORMULA ) of the dissipation kernel (Eq. (REF )) and is given by
+FORMULA 
+The second term in the exponent of Eq. (REF ) results from the low-frequency components (FORMULA ) of the dissipation kernel FORMULA  (Eq. (REF )).
+
+Switching current distribution and crossover temperature
+The switching current distribution FORMULA  is related to the MQT rate FORMULA  as {{cite:11839b4a-b5e5-46bc-b29a-26a5161ee65b}}, {{cite:984ebd98-c968-4c82-b262-24b4f346c25a}}
+FORMULA 
+where FORMULA  is the sweep rate of the external bias current.
+The mean value FORMULA  and the square mean value FORMULA  of the switching current are respectively expressed by
+FORMULA 
+Then, the standard deviation FORMULA  of the switching current distribution FORMULA  is defined by
+FORMULA 
+In actual MQT experiments, the temperature FORMULA  dependence of FORMULA  is measured.
+At high temperature, the TA decay dominates the escape process.
+Then, the escape rate FORMULA  is given by the Kramers formula {{cite:3590c0a6-bb90-4db7-8a16-a26816106e36}}, {{cite:a7b53f3b-2029-4e5f-8732-b9fa0fe1ae46}}, {{cite:f86f0421-5541-4531-b0da-a02a5fff0d1f}}
+FORMULA 
+Below FORMULA , the escape process is dominated by MQT.
+The crossover temperature FORMULA  is determined from an intersection point of FORMULA  between FORMULA -independent MQT and FORMULA -dependent TA process.
+In the low-dissipation (underdamping) cases, FORMULA  is approximately given by {{cite:b79f3310-5ce4-4fbd-9109-2541e424367e}}, {{cite:f4e8ded5-95ca-4671-85aa-8564b1fc8ade}}, {{cite:e1627a43-16f1-4df1-936f-a9c66d986b0d}}
+FORMULA 
+
+Results
+In this section, we will numerically calculate the MQT rate FORMULA  and the crossover temperature FORMULA  for the FORMULA -axis twist junctions.
+In the following we choose FORMULA mA/s/FORMULA , FORMULA A, FORMULA fF and FORMULA meV unless explicitly mentioned.
+These parameters were used in a MQT experiment of Bi2212 intrinsic junctions. {{cite:8604d089-365a-4c3d-8a6e-ec3ae181c63d}}
+Figure REF  (a) and Figure REF  (b) exhibit the FORMULA  dependences of the switching current distribution FORMULA  and the mass increment FORMULA  due to the quasiparticle dissipation, respectively. As FORMULA  increases, FORMULA  becomes smeared, and the peak position shifts to the smaller values of FORMULA .
+This is because FORMULA  decreases with increasing FORMULA , which makes the switching process more likely to occur even for small FORMULA .
+As shown in Fig. REF  (b), the ratio FORMULA  is of the order of FORMULA  for all FORMULA .
+Therefore, the mass renormalization effect in twist junctions is quite weak, especially for large FORMULA .
+This FORMULA  dependence can be explained as follows.
+As FORMULA  increases, the node-to-node quasiparticle tunneling becomes more suppressed.
+Therefore, the effect of the quasiparticle dissipation, namely the mass increment FORMULA , is decreasing with increasing FORMULA .
+FIGURE 
+In Fig. REF , the standard deviation FORMULA  of the switching current distribution FORMULA  is depicted for various FORMULA .
+The crossover temperature FORMULA  decreases with increasing FORMULA .
+In the TA regime, the switching current is proportional to FORMULA . {{cite:984ebd98-c968-4c82-b262-24b4f346c25a}}, {{cite:f86f0421-5541-4531-b0da-a02a5fff0d1f}}
+In Fig. REF , we show FORMULA  dependences of (a) FORMULA  and (b) FORMULA .
+They decrease monotonically with the increase of FORMULA . Their FORMULA  dependences are approximately given by FORMULA  and FORMULA , respectively.
+FIGURE 
+FIGURE 
+The FORMULA  dependence of FORMULA  can be explained as follows.
+Due to the FORMULA -wave OPS, FORMULA  is nearly proportional to FORMULA  as shown in Fig. REF .
+Thus, we obtain
+FORMULA 
+if we neglect the FORMULA  dependence of FORMULA .
+Hence, FORMULA  is almost proportional to FORMULA .
+FIGURE 
+For applications to, e.g., FORMULA -wave phase qubit, {{cite:0c146103-7b81-411f-a58d-dd7b3877efaf}} higher FORMULA  is desirable for high temperature qubit operation.
+Thus, we will study the dependences of FORMULA  on other parameters (FORMULA , FORMULA  and FORMULA ) by changing these parameters, and clarify the condition for realizing high FORMULA  in the case of FORMULA .
+Figure REF  (a) shows the sweep rate FORMULA  dependence of FORMULA .
+Note that FORMULA  has to be much smaller than the plasma frequency FORMULA  in order to apply our theory.
+The crossover temperature FORMULA  is an decreasing function of FORMULA .
+However, it quite weakly depends on FORMULA .
+More sensitive parameters are the critical current FORMULA  and capacitance FORMULA .
+Figure REF  (b) displays the FORMULA  dependence of FORMULA , where FORMULA  (see Eq. (REF )).
+As FORMULA  increases, FORMULA  increases.
+On the other hand, FORMULA  decreases with increasing FORMULA  as shown in Fig. REF  (c).
+The obtained parameter dependences of FORMULA  are consistent with the simple formula, FORMULA .
+In Fig. REF  (b), we also show the result without the quasiparticle dissipation effect.
+Since the ratio FORMULA  is inversely proportional to FORMULA , the influence of the quasiparticle dissipation becomes stronger for smaller FORMULA .
+However, the effect of dissipation is still weak even for FORMULA  1 nA, which is consistent with the recent experiment with a low FORMULA  Bi2212
+surface intrinsic Josephson junction.{{cite:c6a61738-440c-43be-9ba2-11f44377c51b}}
+Note that, for large FORMULA , the Josephson penetration depth FORMULA  of the junction becomes small.
+In the case of FORMULA  A, FORMULA  is typically of the order of 1 FORMULA m.
+In order to apply our MQT theory, the size of the junction should be smaller than FORMULA .
+It should be also noted that FORMULA  can approximately expressed by
+FORMULA 
+where FORMULA  and FORMULA  are the relative permittivity and the normal-state resistivity of the junctions, respectively.
+Therefore, FORMULA  is almost independent of the size of the junction.
+Thus, in order to obtain high FORMULA , large magnitude of the gap FORMULA  and small magnitudes of the relative permittivity FORMULA  and the resistivity FORMULA  are desirable.
+Finally, let us comment on the effect of the quasiparticle dissipation on MQT.
+As was mentioned above, this effect is quite weak even at FORMULA , in which the node-to-node quasiparticle tunneling is possible.
+In fact, we have confirmed that even when the dissipation term is neglected, the obtained results are almost the same.
+Note that, in order to see the quasiparticle dissipation effect on MQT more clearly, we have to choose at least three orders smaller magnitude of the gap FORMULA  as seen from Eq. (REF ) and Fig. REF  (b).
+
+Application to qubits
+In this section, we briefly discuss the advantage of FORMULA -axis twist junctions for the qubit application.
+As was shown in the previous section, the quasiparticle dissipation on MQT is negligibly small.
+This result strongly indicates the high potentiality of FORMULA -axis twist junctions for FORMULA -wave qubit. {{cite:0c146103-7b81-411f-a58d-dd7b3877efaf}}, {{cite:eadda87e-8d9e-4891-a2bf-42a0fdf9abe1}}, {{cite:9d2252e9-053b-479b-88f8-1a2e284cefd1}}, {{cite:a577cfe8-7394-44c7-89de-b4ee8777271e}}, {{cite:2ab2ae56-590e-4816-aff1-f464092cce6b}}, {{cite:d8b16fe1-8bd6-4139-98c9-1335f285a3e9}}, {{cite:8a22242c-6ec3-454d-9195-b2840360a7d6}}, {{cite:d8e9259f-5763-4830-a0c7-9f8f2ba4b580}}, {{cite:beda16bf-5d52-4b00-83e7-cbda71fbfccb}}, {{cite:110bb4f0-eec2-4157-a01a-7bc2b92f6144}}, {{cite:3d6637a7-38fe-4412-99b5-dee5d4ed0e0e}}
+Moreover, in the case of the twist junction with FORMULA , the FORMULA -junction is formed (see Sec. II.B).
+A superconducting ring with the FORMULA -junction exhibits a spontaneous current without an external magnetic field and the corresponding magnetic flux is half a flux quantum FORMULA  in the ground state. {{cite:5d31633d-e343-40ba-9488-726b233a3545}}
+Thus, the high-FORMULA  superconductor ring {{cite:a4a7f8dc-17df-4127-aa2c-6ea8b47de70e}}, {{cite:17bd84ae-fa95-4ffd-a8bd-cf86acce565f}} including the FORMULA -axis twist junction with FORMULA  becomes a quiet qubit {{cite:eadda87e-8d9e-4891-a2bf-42a0fdf9abe1}}, {{cite:a577cfe8-7394-44c7-89de-b4ee8777271e}}, {{cite:2cd68b21-f99c-4683-a3d7-5a86d8797bca}}, {{cite:4bd30b04-7055-4fa0-9f7d-44553e1a912e}} that can be efficiently decoupled from the fluctuation of the external field.
+In order to realize the FORMULA -wave quantum computer with large number of qubits, we have to tune the circuit parameter (FORMULA ) of each qubit independently.
+In actual FORMULA -wave junctions, however, precise control of FORMULA , e.g., by changing the thickness of the insulating barrier or by the oxygen doping, is very difficult.
+Our results in Sec. III clearly show that we can artificially and precisely control the qubit parameter FORMULA  only by varying FORMULA  of FORMULA -axis twist junctions.
+Therefore, high-controllability of qubit parameters is another advantage of FORMULA -axis twist junctions for realizing scalable quantum computers.
+
+Summary
+In this paper, we have investigated the influence of the FORMULA -wave OPS on MQT in FORMULA -axis twist Josephson junctions by use of the functional integral method and the bounce approximation.
+Due to the FORMULA -wave OPS, the twist angle FORMULA  dependences of standard deviation FORMULA  of the switching current distribution and the crossover temperature FORMULA  are approximately given by FORMULA  and FORMULA , respectively.
+Therefore, MQT in FORMULA -axis twist junction becomes a useful experimental tool for testing OPS of high-FORMULA  superconductors at low temperature regimes.
+Moreover, the influence of the quasiparticle dissipation is found to be very weak.
+This result indicates the high potential of FORMULA -axis twist junctions for qubit applications.
+Throughout this paper, we have considered MQT in the single junctions where the quasiparticle dissipation effect is found to be negligibly small.
+On the other hand, in multiple stack intrinsic junctions, the long-range capacitive coupling between junctions {{cite:8cba3ba4-569c-48df-96f8-71d2b3b909a0}}, {{cite:3d04703c-ab36-4625-a67f-01f3637bd4ad}} gives rise to the FORMULA  enhancement of the MQT rate, {{cite:f5d00171-31fc-4119-8398-6da33d1deaae}}, {{cite:6e565bef-9f92-4773-b14f-08f1e5b5962f}}, {{cite:f40b44eb-ddd9-4f83-83d9-66d1fb20e7f8}}, {{cite:3c42d328-a89b-44df-87a9-9b7a7a764391}}, {{cite:1e0a2547-2629-4cd8-9fb5-e39c42377f32}}, {{cite:7f79c40a-026c-4c3e-a43c-074a97b84abd}} where FORMULA  is the number of the stack.
+Therefore, the effect of the long-range capacitive coupling on the quasiparticle dissipation in multiple stack junctions will be an interesting subject of future studies.
+We acknowledge valuable discussions with Y. Asano, A. A. Golubov, and S. Kashiwaya.
+S. K. would like to thank T. Claeson, P. Delsing, K. Inomata, X. Y. Jin, H. Kashiwaya, T. Koyama, M. Machida, T. Matsumoto, P. Müller, F. Nori, S. Savel'ev, H. Shibata, V. S. Shumeiko, A. Y. Smirnov, F. Tafuri, Y. Takano, A. Tanaka, A. V. Ustinov, L. X. You, D. Winkler and A. M. Zagoskin for useful discussions.
+T. Y. acknowledges support by the JSPS.
+This work was supported by a Grant-in-Aid for Scientific Research from the Ministry of Education, Science,
+Sports and Culture of Japan (grant No. 17071007 and 17710081).
+This work was also supported by NAREGI Nanoscience Project, the Ministry of Education, Culture,
+Sports, Science and Technology, Japan, the Core Research for Evolutional
+Science and Technology (CREST) of the Japan Science and Technology
+Corporation (JST) and a Grant-in-Aid for the 21st Century COE "Frontiers of
+Computational Science". The computational aspect of this work has been
+performed at the Research Center for Computational Science, Okazaki National
+Research Institutes and the facilities of the Supercomputer Center,
+Institute for Solid State Physics, University of Tokyo.
+
+Nonlocality of the FORMULA  term
+The effective action in eq. (REF ) includes two terms, which are
+nonlocal in the imaginary time. In this paper, we have studied dissipation effects
+caused by the second term (the FORMULA  term) of eq. (REF ), while the third term (the FORMULA  term) has been treated by the local approximation:
+The Josephson coupling is calculated by assuming that the local component at
+FORMULA  is dominant in the double integral of the FORMULA  term.
+In this approximation, we can separate the integral by changing variables as FORMULA  and
+FORMULA . Then, the Josephson energy is defined as
+FORMULA 
+As a result, the Josephson term in the effective action takes the usual form
+FORMULA 
+This approximation is justified in the FORMULA -wave superconducting junction
+where the FORMULA -term has an exponential form (FORMULA ).
+In the high-FORMULA  junctions, however, the FORMULA  term shows a power-law decay,
+and the local approximation is not justified in general. For example, it has been
+discussed in ref. Khveshchenko1 that the ohmic
+power-law decay of the FORMULA  term may affect the phase transition of the Josephson
+junctions made of FORMULA -wave superconductors. In this appendix,
+we study the nonlocal effect of the FORMULA -term, and show that
+the local approximation is actually justified in the calculation of the MQT rate.
+Let us start with the effective action within the local approximation, which is given as
+FORMULA 
+Here, we neglected the dissipative term.
+After changing the phase variable as FORMULA , the action is written as
+FORMULA 
+where FORMULA .
+Here, the potential term is approximated by a cubic polynomial. We further rescale the
+variables as FORMULA  and FORMULA ,
+where FORMULA . Then,
+the action is obtained as
+FORMULA 
+The same variable change can be done for the general action (REF )
+by using the expansion around the metastable state. The result is given by
+FORMULA 
+where FORMULA  and
+FORMULA .
+The normalized action FORMULA  only depends on the properties of the FORMULA -term, and
+is independent of other parameters such as the current, Josephson energy and charging energy.
+The value FORMULA  for the bounce solution determines the prefactor in the exponent of
+the tunneling rate, and is given by FORMULA  in the local approximation.
+In order to deal with the nonlocal FORMULA -term, we need the short-time cutoff FORMULA .
+This cutoff is of order of FORMULA  in the FORMULA -wave junction considered in this paper,
+and is much shorter than the plasma frequency FORMULA  in actual junctions.
+In the following discussion, we focus on the limit FORMULA .
+For the purpose of this appendix, it is sufficient to consider the following simplified kernel (FORMULA ) (see also Appendix B)
+FORMULA 
+which decays in the power-law form FORMULA  in the long-time limit (FORMULA ), by noting the sum rule FORMULA .
+First, we calculate the bounce solution of the action including non-local FORMULA  term
+for the ohmic case (FORMULA ) numerically. We discretize the integral in the action (REF ) as
+FORMULA 
+where FORMULA  is a time slice and FORMULA .
+The stationary condition FORMULA  is expressed by FORMULA ,
+and the bounce solution is obtained by the equation
+FORMULA 
+Here, we apply the Newton method to solve these nonlinear equations.
+For the actual calculation, we introduce a long-time cutoff FORMULA , and
+discretize the range FORMULA  with FORMULA  time slices.
+We consider the open boundary condition (FORMULA ), and
+choose FORMULA  and FORMULA  (FORMULA ).
+FIGURE 
+We show the bounce solution for FORMULA  by the solid line
+in Fig. REF . The calculated bounce solution does not deviate so much from the usual
+bounce solution (FORMULA ) for the local approximation,
+which is drawn by the broken line in this figure. This result indicates that the nonlocality
+of the FORMULA  term is not crucial for the shape of the bounce solution.
+FIGURE 
+We show the action of the bounce solution, FORMULA 
+as a function of the short-time cutoff FORMULA 
+by the solid line in Fig. REF .
+We observe that the value of the action
+does not change so much from FORMULA , which corresponds to the local approximation.
+Moreover, in the limit FORMULA ,
+the calculated action approaches FORMULA .
+Similar results are obtained also for the general exponent FORMULA .
+We can also discuss analytically the irrelevance of the nonlocality of the FORMULA  term by the perturbative
+method. We introduce a parameter FORMULA , which expresses the nonlocality of the FORMULA 
+term, and write the action as
+FORMULA 
+The local approximation corresponds to FORMULA , while the action including the full non-local FORMULA  term is obtained for FORMULA . Here, we develop the perturbation
+theory with respect to FORMULA . Up to the first order of FORMULA , the action is
+evaluated as
+FORMULA 
+where FORMULA  is the non-perturbed bounce solution and
+FORMULA .
+We show this approximate action with FORMULA  for the ohmic damping by the dotted line in Fig. REF .
+As seen in this figure, the perturbation method gives a reliable result especially
+in the limit FORMULA .
+In the following, we show results by the perturbation method, which indicates
+the irrelevance of the nonlocality of the FORMULA  term
+for a general exponent FORMULA  by focusing on the limit FORMULA .
+We can continue calculation from (REF ) as follows,
+FORMULA 
+where FORMULA  and FORMULA . We can calculate
+the leading correction with respect to small FORMULA . For FORMULA , we obtain
+FORMULA 
+where FORMULA  is a numerical factor, which only depends on FORMULA :
+FORMULA 
+For ohmic damping (FORMULA ), we obtain FORMULA .
+For FORMULA , we have
+FORMULA 
+We note that, for any FORMULA , the correction by the nonlocality of the FORMULA -term
+disappears in the limit of FORMULA . Therefore,
+we conclude that the nonlocal effect can be neglected at least in the calculation of the MQT rate.
+Finally, we comment on nonlocal effects of the FORMULA  term in macroscopic
+quantum coherence. In this case, we have to treat the path with many instantons.
+The interaction between instantons governs the coherence of the superposition
+between distinct macroscopic states. In this calculation, there is a possibility that
+the nonlocal effects of the FORMULA  term become important. Detailed discussion
+along this line is an interesting future problem.
+
+Derivation of the asymptotic forms of FORMULA  and  FORMULA
+Here, we derive the asymptotic forms of FORMULA  and FORMULA  for FORMULA -axis junctions at FORMULA .{{cite:e3d3d067-e6ef-4393-8028-4eac9c1773d1}}, {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:bb1e7f02-3c1c-4c34-88ad-67a662ed0dc4}}, {{cite:06f52f40-bbeb-450b-aaef-fbed6511f7de}}
+We define the order parameters as
+FORMULA .
+The dissipation kernel FORMULA  and the Josephson kernel FORMULA  are defined as
+FORMULA 
+Here, Matsubara Green's functions at the zero temperature are given by
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  is the step function.
+Therefore, we have
+FORMULA 
+First, we consider the coherent tunneling model where the momentum FORMULA  dependence of the
+tunneling matrix element is given by
+FORMULA  This approximation is applicable to cross-whisker junctions with a clean insulating barrier.
+Then, the dissipation kernel FORMULA  and the Josephson kernel FORMULA  can be calculated as
+FORMULA 
+By applying a formula for the modified Bessel functions FORMULA  and FORMULA , i.e.,
+FORMULA 
+we get Eqs. (REF ) and () {{cite:41d50b5f-e53b-4415-b87a-f6ad10796060}}, {{cite:10abd334-191f-4985-9188-690f13fabdcc}}, {{cite:057b9cce-ad0d-4832-b8dd-3f548751e9de}}:
+FORMULA 
+and the following expression of FORMULA :
+FORMULA 
+Next, we consider the incoherent tunneling model with a constant tunneling matrix:
+FORMULA , which is applicable to cross-whisker junctions with an imperfect dirty insulating barrier.
+After some calculations similar to the coherent tunneling model, we obtain {{cite:bb1e7f02-3c1c-4c34-88ad-67a662ed0dc4}}
+FORMULA 
+where normal resistance FORMULA  is defined by
+FORMULA 
+Note that the Josephson kernel FORMULA  disappears due to the angular averaging in the incoherent tunneling model.
+For intrinsic Josephson junctions (FORMULA -axis junction with FORMULA ),
+tunneling matrix element can be modeled as
+FORMULA 
+from the first-principle band-calculations,{{cite:2f51b098-7785-4bdd-9268-0d8310e5d751}} where the node-to-node quasiparticle tunneling is inhibited.
+Within this model, we obtain {{cite:06f52f40-bbeb-450b-aaef-fbed6511f7de}}
+FORMULA 
+and
+FORMULA 
+with normal resistance FORMULA  which is defined as
+FORMULA 
+Finally, let us summarize the results of the dissipation kernel FORMULA  in this Appendix in Table REF , including the results of FORMULA -wave{{cite:37948e3d-b65a-407b-b1ed-63097942723c}} and in-plane FORMULA -wave junctions. {{cite:a58afbdc-bb46-4fce-b73c-88f4a43b08c5}}, {{cite:8a22242c-6ec3-454d-9195-b2840360a7d6}}, {{cite:d8e9259f-5763-4830-a0c7-9f8f2ba4b580}}
+A remarkable feature of in-plane junctions is the emergence of ZES, which stem from the sign change of the order parameter. {{cite:24350fe0-94e9-4e45-b0df-0fb1ece99a9c}}, {{cite:ce9bf192-cadd-48fa-977f-e74310fdbdb9}}, {{cite:46d3adf9-d66f-403c-9086-4310ec1cbace}}, {{cite:696bc3f8-53d8-4672-ad10-1c54ed128cb8}}
+In this table, we also show the spectral density FORMULA  which is defined by the Fourier transformation of FORMULA  {{cite:37948e3d-b65a-407b-b1ed-63097942723c}}, {{cite:322b5985-596c-4db1-a551-6403bdaba65e}}
+FORMULA 
+This table indicates that a wide variety of quantum dissipations can be realized in FORMULA -wave junction only by changing the junction configuration and the barrier property.
+TABLE 

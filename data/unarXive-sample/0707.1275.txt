@@ -1,0 +1,337 @@
+
+2020/09/07 15:49:04
+
+ Radiative return physics program within EURIDICE network
+Presented by H. Czyż
+at The Final EURIDICE Meeting "Effective theories of colours
+and flavours: from EURODAPHNE to EURIDICE", Kazimierz, Poland,
+24-27 August, 2006.
+Work supported in part by EC 5th Framework Program under contract
+HPRN-CT-2002-00311 (EURIDICE network),
+EC 6-th Framework Program under contract
+MRTN-CT-2006-035482 (FLAVIAnet), TARI project RII3-CT-2004-506078
+and
+Polish State Committee for Scientific Research
+(KBN) under contract 1 P03B 003 28.
+
+Henryk CzyżFORMULA  and Agnieszka GrzelińskaFORMULA 
+ a:  Institute of Physics, University of Silesia,
+PL-40007 Katowice, Poland
+b:  Institut für Theoretische Teilchenphysik,
+Universität Karlsruhe,
+D-76128 Karlsruhe, Germany
+A short review of both theoretical and experimental aspects
+of the radiative return method is presented with the emphasize
+on the results obtained within the EURIDICE network. It is shown
+that the method gives not only possibility of an independent,
+from the scan method, measurement of the hadronic cross section,
+but also can provide information concerning details of the hadronic
+interactions.
+
+13.40.Ks,13.66.Bc
+Introduction
+Four years of a very active physics program of the EURIDICE network was
+also very fruitful for the group developing the radiative return method
+{{cite:47c21ad7-cb93-49b3-82ee-0e5686d7acf6}}
+and tools necessary for the physical analysis. Major part of all theoretical
+investigations in that topic was done within this network, thus the review
+of the theoretical investigations is in fact the review of the results
+obtained within the EURIDICE network. Software developed and/or
+upgraded within the network:
+PHOKHARA{{cite:61517065-35cd-43ff-93e6-8a06efcfae9d}}, {{cite:23e899f3-0623-4239-91a0-edff4ebd24e7}}, {{cite:0b9e1577-cf43-4f22-8f9b-55776e4a2d50}}, {{cite:6fd97c8c-ba58-4513-b706-d80f4d24f42d}}, {{cite:ba581891-401a-4592-a328-75c12ed46c9e}}, {{cite:c9f75632-4800-4a8d-8225-fcf34bab6c88}}
+and EKHARA {{cite:947afd87-022d-40e6-9e94-f6e55b86b818}}
+generators together with the event generators
+developed by the same group (EVA {{cite:35900104-46f8-4aea-8986-ea35f7a65bde}}, EVA4pi {{cite:5056436d-9826-4ce3-a994-3d52b90301df}})
+prior to the starting date of
+the EURIDICE is successfully used by experimental groups working at meson
+factories BaBar and KLOE and soon will be used also at BELLE.
+The method originally developed for the hadronic cross section
+measurement was successfully used by KLOE {{cite:b9ad2490-bccd-4197-ae7e-1f7caba156a6}}
+to obtain FORMULA ) with the precision competitive
+to the one obtained by means of the scan method. It was also used by BaBar to
+obtain cross sections of many hadronic channels which were measured
+with poor accuracy or were not measured previously. Let us mention only
+few of them: narrow resonances studies {{cite:9daa2f57-eece-494a-b8f7-a26777783287}},
+big improvement in the accuracy of the three pion {{cite:50e85cae-f7ab-4f19-9cd8-cc2039167881}}
+and four charged mesons (pions and kaons) {{cite:36ca3327-62f0-4201-880b-4499aa8e58dc}} cross sections
+measurements and proton form factors extraction {{cite:3691d6e7-44b0-4797-88a6-c0a2b39ded32}}.
+The paper starts with a description of the radiative return method in
+Section  and the ingredients necessary for the precision
+physics in Section . The final state photon emission (FSR), is
+discussed in Section , together with methods how to handle it
+and to be able to perform precision measurements.
+Selected topics beyond the hadronic cross section measurements
+are described in Section .
+
+The basics of the radiative return method 
+Simple and innovative observation made some years ago {{cite:47c21ad7-cb93-49b3-82ee-0e5686d7acf6}}
+lead, with series of papers which started with {{cite:35900104-46f8-4aea-8986-ea35f7a65bde}} and {{cite:5056436d-9826-4ce3-a994-3d52b90301df}},
+to a development of a radiative return method giving
+today many valuable physical results. The method gives an access to
+information contained in the hadronic cross section
+FORMULA  through a measurement of the hadronic
+invariant mass distribution in the reaction
+FORMULA .
+Historically the process of FORMULA  annihilation to a pair
+(or arbitrary number) of particles
+plus one photon was investigated earlier
+{{cite:75888fc4-c959-496f-8fc2-6aa69e4393ec}}, {{cite:94239879-d17a-4eb7-9170-c3a2d3778dc7}}, {{cite:e7f03269-f02a-481b-bb3d-8b62650f1240}}, but the scope of
+that papers was not to provide with a method to measure the hadronic
+cross section.
+To illustrate in detail how the method works let us consider the lowest order
+contribution to the radiative return cross section. The contributing
+diagrams are shown in Fig. REF , where only initial state radiation
+(ISR) is taken into account. The complications caused by final state radiation
+(FSR), as well as the methods to overcome them, are discussed in
+Section .
+FIGURE 
+The corresponding ISR matrix element has the following form
+FORMULA 
+where FORMULA  is the electromagnetic hadronic current present
+also in the matrix element describing the process FORMULA .
+From Eq.(REF ) it is clear that a factorization, allowing separation
+of the hadronic part, will take place even for the
+squared matrix element. Indeed, integrating the cross section
+over the hadrons phase space FORMULA  ('bar' indicates that all
+statistical factors are included in its definition) one gets
+FORMULA 
+where
+FORMULA 
+That leads to the relation between cross sections with and without
+photon emission
+FORMULA 
+where FORMULA  is the invariant mass of the hadronic system.
+As it is clear from Eq. (REF ) and Eq. (REF )
+the factorization of the Eq. (REF ) remains valid
+at any order provided that only ISR is considered. The function
+FORMULA  at relatively low energies of meson factories
+is given with high accuracy by QED only and thus it is well
+known. That means that by measurement of the
+differential in FORMULA  cross section of the reaction
+FORMULA 
+one can extract the cross
+section FORMULA  for the energies from the
+production threshold to almost the nominal energy of a given experiment,
+provided that one is able to overcome complications
+described in Section . The cross section
+of the reaction with photon emission is lower then the one without
+photon emission, thus its measurements require higher luminosity then the ones
+necessary for scan experiments for similar statistical accuracy.
+However, it does not require to build a dedicated experiments
+and it can use data collected at any of the meson factories, where
+luminosity is not a problem.
+
+Ingredients necessary for a precise analysis 
+An extraction of the hadronic cross section via the radiative return
+requires a few basic ingredients:
+
+ an accurate calculation of the ISR
+including appropriate radiative corrections
+
+an adequate, tested experimentally, model of the FSR
+
+a Monte Carlo event generator to be able to use the theoretical
+information in a realistic experimental set up
+
+FORMULA  scattering experiment with a high luminosity
+and a good detector
+
+The virtual radiative corrections to ISR were calculated in {{cite:cb0a6144-5ddb-47c9-b13d-80a2a3f06fce}}
+while the real emission was included in the developed Monte Carlo generator
+PHOKHARA in {{cite:61517065-35cd-43ff-93e6-8a06efcfae9d}} and {{cite:23e899f3-0623-4239-91a0-edff4ebd24e7}}. The estimated
+physical accuracy of the ISR contributions, 0.5%, was adequate at the
+time of the release of the generator even for the precise KLOE
+pion form factor extraction {{cite:b9ad2490-bccd-4197-ae7e-1f7caba156a6}}.
+The new data collected at DAPHNE by KLOE collaboration
+{{cite:d3fb89ed-0541-4035-85e9-0d50276d634e}}, {{cite:698c203a-821d-4389-ace4-2c6ea8356b07}},
+together with an improvement in the theoretical description of the
+Monte Carlo event generator BABAYAGA {{cite:acc5a80e-d0da-4818-ad79-d456e3aa9348}}, requires however
+further work and an inclusion of the NNLO contributions.
+From the estimates that were performed, taking into account the
+leading logarithmic corrections coming from the second loop
+together with one loop leading logarithmic
+corrections to the cross section with two photon emission
+and three ISR photon emission,
+will be enough to reach the precision of 0.1-0.2%.
+That is a necessary condition to be able
+to fully profit from the new very accurate data.
+The FSR modeling requires close collaboration between experimental
+and theory groups to reach required precision in a short time and
+will be discussed in the next Section.
+A development of a reliable Monte Carlo generator requires not only
+the precise knowledge of both ISR and FSR, but a continuous work on
+efficiency of the generator and its tests for each added hadronic
+channel. Only this way one can assure reliability of the developed
+product used afterwords by demanding experimental groups.
+
+Final state photon emission: the problems and how to overcome them
+
+The final state emission (FSR) forms a potential problem for the application
+of the radiative return method and it has to be studied carefully
+to assure adequate accuracy of the description.
+At
+B- factories the region of
+hadronic masses of physical interests,
+below 4 GeV, lays far from the nominal energy of the
+experiments and an emission of a hard photon is required to
+reach it. It means that the typical kinematic configuration of an
+event consists of a photon emitted in one direction and hadrons
+going opposite to it. That suppresses
+the FSR contributions, which are large for photons emitted parallel
+to the direction of a charged hadron in the final state, and makes
+the measurement of the hadronic cross section easier. For the FORMULA - factory
+DAPHNE,
+where the region of interest is not far from the nominal
+energy of the experiment, that natural separation between the emitted
+photon and the hadrons does not take place and one has to suppress FSR
+by an appropriate event selection. As a result one has to control
+the uncertainty due to the model dependence of the final state emission.
+That forms a challenge, as the existing models were not tested
+with the adequate
+precision prior to the DAPHNE results. Let's discuss that problem
+on the basis of the FORMULA  reaction,
+where the accuracy is the most demanding.
+The solution was first proposed in {{cite:35900104-46f8-4aea-8986-ea35f7a65bde}}
+and further elaborated in {{cite:0b9e1577-cf43-4f22-8f9b-55776e4a2d50}}.
+A similar
+investigations is possible for other hadronic final states,
+however till now it
+was not performed.
+The main tool in the tests of the model(s) of the photon
+emission from the final pions is the charge asymmetry.
+For ISR emission of any
+number of photons the two-pion state is produced in C=-1 state and
+with an
+odd orbital angular momentum.
+For one real photon emitted from the final pions
+the two-pion state is produced
+in C=1 state and with an even orbital angular momentum.
+As a result, the initial-final
+state interference for one photon emission
+is odd under FORMULA  interchange
+and the integrals for charge blind event selections are equal to zero.
+In the same time the interference
+is the only source of the charge asymmetry and allows for
+tests of the models of the final state emission. The charge asymmetry
+depends on the invariant mass of the two-pion system and that
+allows for detailed tests of the model(s) of the FSR emission.
+In short, the tests should be done in the following way: First
+one compares the experimental data for the asymmetry with the Monte Carlo
+where the tested model was implemented. That has to be performed
+for an event selection which enhance the FSR as compared to the ISR.
+Once the implemented model agrees with the data one chooses an
+event selection, which suppresses the FSR and one measures the
+radiative cross section for that event selection. The described procedure
+guaranties that the
+ISR and the FSR contributions are separately well under control.
+For the case of untagged photons a specific background,
+FORMULA , has to be also taken into account
+{{cite:a0010fe6-c6ef-4932-acec-d690f6e993f4}}, {{cite:947afd87-022d-40e6-9e94-f6e55b86b818}} as the final leptons are not vetoed and
+even if they are, the major part of them escapes detection being emitted
+at small angles.
+The reaction
+FORMULA ,
+with the photon emitted from the pions, does contribute also to
+dispersion integrals for evaluation of FORMULA  and FORMULA .
+In the former case its theoretically estimated value {{cite:0b9e1577-cf43-4f22-8f9b-55776e4a2d50}}
+is about 1.5 times higher then
+the size of the present
+theoretical uncertainty {{cite:c5bdd5de-bd20-4a6d-8a7e-19d1246e3131}}, {{cite:bfa66672-da5f-40a9-851d-b8ed91495296}}
+and thus numerically
+important. The sketched program was successfully undertaken
+by KLOE and resulted in a sound extraction of the
+FORMULA  {{cite:b9ad2490-bccd-4197-ae7e-1f7caba156a6}} together
+with the mentioned photon corrections. The most general form
+of the photon emission from scalar particles produced in FORMULA 
+annihilation, with three form factors was investigated already
+in {{cite:75888fc4-c959-496f-8fc2-6aa69e4393ec}}, where it was shown also that only one
+form factor is relevant in the limit of soft photon emission.
+Physical program initiated there was undertaken in
+{{cite:09efe546-f9ca-4d87-a80f-63b3a766ba49}}, {{cite:0226bfbb-4fee-4772-a0fe-7a6917f5ef5e}}
+with a special emphasize on the FSR tests at KLOE.
+Another source of complications for using of
+the radiative return method
+at DAPHNE are the radiative FORMULA  decays. That problem
+was considered for the first
+time in {{cite:1a8ec394-4332-44ca-8967-af8ed3496ac5}} and it is discussed in more details
+in the next section.
+
+Not only the hadronic cross section 
+FIGURE 
+The study of the FORMULA  decays at DAPHNE is a subject, where
+the problem of FSR emission in the pion form factor extraction is interlinked
+with the possibility of using of the radiative return method to study
+hadronic models of the FORMULA  decays.
+In {{cite:ba581891-401a-4592-a328-75c12ed46c9e}} charge asymmetries were proposed to test both
+topics. The sensitivity to the model parameters, which can be reached
+this way is definitely better then the one obtained by the fit to the FORMULA 
+spectra. An example is shown in Fig.REF , where
+charge asymmetries predicted within a number of models of the radiative
+FORMULA  decays is shown for models with and without FORMULA  contribution.
+Very distinct asymmetries promise deep insight in the details of
+the constructed models.
+The asymmetry was partially used by KLOE {{cite:e971d4a0-89e5-4d9c-920f-96bdc17bacb6}}
+to cross check the fit of the model parameters to the FORMULA  spectrum
+of the pion pair invariant masses. More detailed tests are expected
+at KLOE, when both data taken at the FORMULA  resonance and below it
+will be analyzed.
+FIGURE 
+Another example of using of the radiative return method to study
+hadron properties is the baryon form factors extraction.
+It was shown in {{cite:6fd97c8c-ba58-4513-b706-d80f4d24f42d}} that at B-factories it is possible
+to extract the nucleon form factors up to their phases for a wide range
+of the invariant masses of the nucleon-antinucleon pairs. That is
+possible through studies of the nucleon angular distributions. In a
+properly chosen reference frame in which they are studied, a rest frame of the
+nucleon-antinucleon system with z-axis along the emitted photon, that
+studies are particularly simple as the angular distributions resemble
+there the nucleon angular distributions
+of the process without a photon emission. That measurement
+was successfully performed by BaBar collaboration {{cite:3691d6e7-44b0-4797-88a6-c0a2b39ded32}}.
+For the production of unstable baryon pairs,
+the decay products carry information about their
+spins and serve as spin analyzers providing with complete information
+about the production process. In {{cite:42873da9-432e-4574-8189-e204f6573479}} it was studied in details
+for the process
+FORMULA .
+The feasibility of such measurement at B-factories is obvious from
+Fig.REF  as one expects about one hundred events per 100 fbFORMULA 
+in the range of BaBar detector.
+The direction of pions coming from lambda decays is strictly correlated
+with the spin of the decaying lambdas and by observing them one can measure
+both spin asymmetries and spin correlations in the process of production
+of the lambda-antilambda pairs.
+The spin asymmetry,
+which is proportional to the sine of the phase difference of the
+magnetic and electric lambda form factors, is shown, for
+FORMULA , in Fig.REF  (left).
+The xz-spin correlation (please see {{cite:42873da9-432e-4574-8189-e204f6573479}} for the reference
+frames definition),
+which is proportional to cosine of the phase difference of the
+magnetic and electric lambda form factors, is shown, for
+FORMULA , in Fig.REF  (right).
+It is enough to measure one of them to determine
+the phase difference of the lambda form factors up to a twofold sign
+ambiguity and the other serves to determine that sign.
+The analysis can be applied also to other members of the baryon octet.
+As almost nothing is known about their form factors, B-factories
+can provide valuable physical information allowing to test symmetries
+of the underlying models.
+FIGURE 
+
+Summary
+The radiative return research program carried within the EURIDICE network
+was outlined. It was shown that just by theoretical and experimental analysis
+of the data of the existing
+meson factories one can get rich information concerning
+hadronic physics, which is not limited to the hadronic cross section
+measurement.
+***
+The publication is based in a big part on results obtained in collaboration
+with
+J. H. Kühn, E. Nowak-Kubat and G. Rodrigo. The authors are grateful for
+many
+useful discussions concerning experimental aspects of the radiative
+return method to members of the KLOE and BaBar collaborations, mainly
+Cesare Bini, Achim Denig, Wolfgang Kluge, Debora Leone, Stefan Müller,
+Federico Nguyen, Evgeni Solodov and Graziano Venanzoni.

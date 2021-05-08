@@ -1,0 +1,255 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Instanton representation of Plebanski gravity. Application to gravitons about DeSitter spacetimeEyo Eyo Ita III2020/09/07 17:58:11
+Physics Department
+United States Naval Academy
+572c Holloway Road. Annapolis, Maryland 21402
+ita@usna.edu
+Using the instanton representation method, we re-construct graviton solutions about DeSitter spacetime. We have used this example as a testing arena to expose the internal structure of the method and to establish that it works for known solutions. This paper is a precursor for its application to the construction of new General Relativity solutions in future work.
+Introduction and background
+In {{cite:2d5f2e29-240b-47cb-8bb0-b2b92b63afbe}} a new formulation of gravity has been presented referred to as the instanton representation of Plebanski gravity. It was shown that the instanton representation is related to the Ashtekar formalism {{cite:d7c62e3f-1c9a-4dad-a21b-0a9e96ed88ed}} by the exchange of a certain variable. The Instanton representation and the Ashtekar formulations of gravity are both complementary, in that they can be seen as two daughter theories arising from the same mother theory, namely the Plebanski theory of gravity (See e.g. {{cite:2d5f2e29-240b-47cb-8bb0-b2b92b63afbe}}). The associated action for the instanton representation FORMULA  can be written in 3+1 form as
+FORMULA 
+where FORMULA  is a 3-dimensional spatial hypersurface embedded in a 4-dimensional spacetime of topology FORMULA . The basic variables are a gauge connection FORMULA  and a 3 by 3 matrix FORMULA , which take their values in the special orthogonal group in three dimensions FORMULA ,For index conventions we use lower case symbols from the beginning of the Latin alphabet FORMULA  to denote internal FORMULA  indices, and from the middle FORMULA  for spatial indices. Spacetime indices are denoted by Greek symbols FORMULA . the set of complex 3-by-3 matrices FORMULA  such that FORMULA  and FORMULA . Whereas in the Plebanski formulation FORMULA  is regarded as an auxiliary field, in the instanton representation FORMULA  is a full dynamical variable on equal footing with FORMULA .
+The FORMULA  field strength of FORMULA  is given by
+FORMULA 
+of which FORMULA  and FORMULA  are respectively its temporal component and magnetic field. The auxiliary fields FORMULA  are the temporal connection component, shift vector and lapse function whose variations yield the Gauss' law, vector and Hamiltonian constraints respectivelyThe constraints have also appeared in this form in {{cite:5aec0502-f470-44bc-811b-8ace2f29b1ce}} within the context of the initial value problem of General Relativity in the CDJ formalism.
+FORMULA 
+and FORMULA  is the cosmological constant. Note that we must have FORMULA  and FORMULA , a set of nondegeneracy conditions which limits the regime of equivalence between the instanton representation of Plebanski gravity and General Relativity to spacetimes of Petrov Types I, D, and O. Given that the basic variables in general are complex for Lorentzian signature spacetimes, the action (REF ) must additionally be supplemented by reality conditions which guarantee that the spacetime metric is real. For the Euclidean signature case the reality conditions are automatically implemented by performing a Wick rotation FORMULA , and requiring all variables FORMULA  to be real.
+The main result of this paper will be the construction of gravitons propagating on a Euclidean DeSitter background, using the instanton representation method based on (REF ). This solution is already known in the literature via conventional methods, and so the purpose of this paper will be to reproduce it using the instanton representation method in order to provide further evidence that the method works for known solutions. As with any new method, it is important to establish first that it is capable of producing the standard solutions as a kind of test arena, which also lends some intuition and insight into the structure of the method. Then with this insight, one can apply the method within a new context in the construction of solutions which may be new, an area of future research. The instanton representation method has so far been tested in the time-independent case in {{cite:f6d31593-5f1b-40b1-9f17-9d6bc9f4831b}}, leading to Schwarzschild-like solutions and a corroboration of Birkhoff's theorem.
+Thus far we have provided some preliminaries on the group structure and dynamical variables. In this section we will continue with the mathematical structure of the method. This will provide the setting for the construction of solutions to the Einstein field equations. A main problem in dealing with the Einstein equations in standard metric General Relativity for general spacetimes where no symmetry reductions are present, is the separation of physical from gauge effects (due to the coordinate system). We will show that the instanton representation method enables one to have a clean separation of these degrees of freedom, and provides an interpretation of coordinate-induced effects of gravity within a Yang–Mills setting.
+Instanton representation equations of motion
+In addition to the intial value constraints, the instanton representation provides two equations of motion for the dynamical variables. The initial value constraints (REF ) can always be imposed at the level after the dynamical equations have been written down, but not at the level of the action (REF ). The Lagrange's equation for FORMULA  is given by {{cite:2d5f2e29-240b-47cb-8bb0-b2b92b63afbe}}
+FORMULA 
+It can be shown that the Lagrange's equation for FORMULA , once the vector and Hamiltonian constraints have been implemented, simplifies to {{cite:2d5f2e29-240b-47cb-8bb0-b2b92b63afbe}}
+FORMULA 
+In (REF ), FORMULA  is the FORMULA  gauge covariant derivative with FORMULA  structure
+constants FORMULA  acting on FORMULA , seen as a second rank FORMULA  tensor
+FORMULA 
+Applying the Leibniz rule and the Bianchi identity to (REF ), we have
+FORMULA 
+The FORMULA  component of (REF ) yields FORMULA  which is the Gauss' law constraint, the first equation
+of (REF ).
+Since FORMULA , then we can multiply (REF ) by FORMULA  to get
+FORMULA 
+Equation (REF ) states that the gauge curvature of FORMULA  is Hodge self-dual with respect to a certain spacetime metric FORMULA , and (REF ) implies that this FORMULA  solves the Einstein equations when the initial value constraints (REF ) hold {{cite:2d5f2e29-240b-47cb-8bb0-b2b92b63afbe}}. To construct FORMULA  one defines a quantity FORMULA , given by
+FORMULA 
+Then spliting (REF ) into its symmetric and antisymmetric parts defines a spatial 3-metric FORMULA  and a shift vector FORMULA  given by
+FORMULA 
+with the lapse function FORMULA  freely specifiable. A spatial 3-metric can also be constructed directly from solutions to the initial value constraints (REF ), according to the formula
+FORMULA 
+Equation (REF ) uses only the spatial connection FORMULA  and contains no reference to a shift vector FORMULA  or to time evolution, whereas (REF ) involves velocities FORMULA  through the FORMULA  terms of (REF ). Equations (REF ) and (REF ) feature spatial metrics FORMULA  constructed according to two separate criteria, and as a consistency condition we demand that they be equal to each other
+FORMULA 
+Equation (REF ) is the cornerstone of what we will refer to as the instanton representation method for constructing solutions to the Einstein equations.
+The constraint solutions can be classified according to the Petrov type of spacetime, which depends on the multiplicity of eigenvalues of FORMULA  (See e.g. {{cite:23683770-ae65-4abf-a6f4-aca67b285da5}} and {{cite:981efcf3-2724-4af8-9b56-f5983d617234}}). The condition (REF ) places stringent constraints on the form of the metric, which appears to lead almost uniquely to the desired solution for the corresponding Petrov Type.
+
+Organization of this paper
+The organization of this paper is as follows. The background solution will be denoted by FORMULA  and FORMULA , and their respective perturbations by FORMULA  and FORMULA . In section 2 we write the initial value constraints for a Petrov Type O background and in section 3 we linearize the contraints about this background using a homogeneous and isotropic connection. We solve the constraints, obtaining the spin 2 configurations for the FORMULA , and impose by hand an associated gauge-fixing condition on FORMULA . This provides the ingredients for FORMULA , which we explicitly construct. In section 4 we construct FORMULA  and impose the consistency condition (REF ). This fixes the background solution as DeSitter space, and provides an evolution equation for FORMULA  in terms of FORMULA . In section 5 we find the explicit time dependence of FORMULA  using (REF ), which in turn fixes FORMULA  and the
+3-metric FORMULA  in section 6. In section 7 we provide a summary of our results and a conclusion.
+There is a final note regarding indices in this paper. We will often not distinguish between raised and lowered index positions, both for spatial and internal indices, since due to linearization these indices will be raised and lowered by Euclidean metrics FORMULA  and FORMULA . For the same reason, these two types of indices will sometimes be interchangeable since they appear on equal footing at the linearized level. Additionally, we will use the Einstein summation convention throughout this paper. So for example, we have FORMULA  and so on and so forth.
+
+Initial value constraints about Petrov Type O
+For spacetimes of Petrov Type O we have FORMULA  with three equal eigenvalues and three linearly independent eigenvectors. It is straightforward to see that this solves the constraints (REF ) for all connections FORMULA . Indeed, replacing FORMULA  with FORMULA  in the Gauss' law constraint yieldsThe Gauss' law constraint is simply the contraction of the spatial part of (REF ) with a magnetic field FORMULA , yielding a covariant divergence on the internal index FORMULA .
+FORMULA 
+due to antisymmetry of the structure constants, and FORMULA  being a numerical constant. Replacing FORMULA 
+with FORMULA  in the diffeomorphism constraint yields
+FORMULA 
+due to the antisymmetry of the epsilon symbol. Also, the Hamiltonian constraint
+FORMULA 
+is identically satisfied for this choice. In this paper we will use the instanton representation method to construct gravitational wave solutions by linearization about a particular Type O spacetime. The graviton solution then will be defined by the Ansatz
+FORMULA 
+where FORMULA  parametrizes the fluctuations about FORMULA . We will now expand the constraints (REF ) using equation (REF ). Note that the FORMULA  part of (REF ) becomes annihilated for the constraints linear
+in FORMULA . So for more general FORMULA  for the Gauss' law constraint we have
+FORMULA 
+and for the diffeomorphism constraint we have
+FORMULA 
+For the Hamiltonian constraint we need the trace of the inverse of (REF ), whose inverse is given by
+FORMULA 
+where the dots represent all terms of second order in FORMULA  and higher. Taking the trace of (REF ), then we can write the constraints as the following system of seven equations in nine unknowns
+FORMULA 
+Note that the Gauss' law and diffeomorphism constraints are independent of FORMULA , since these constraints are
+linear in FORMULA . For the Hamiltonian constraint, an imprint of FORMULA  remains upon expansion due to the nonlinearity of the constraint. This can be seen as the imprint of the Petrov Type O background, which interacts with the fluctuations.
+
+Spatial 3-metric from the linearized constraints
+Having expanded FORMULA  in (REF ) about a Type O solution, we will now linearize the constraints about this solution by taking FORMULA  to be small. First we will neglect all terms of second order and higher in FORMULA , which reduces (REF ) to
+FORMULA 
+Next, we will linearize the connection FORMULA  about a reference background connection  FORMULA
+FORMULA 
+where FORMULA . The linearized magnetic field for (REF ) is given by
+FORMULA 
+where FORMULA  is the magnetic field of FORMULA . While any background connection FORMULA  will suffice, a straightforward choice which as we will see clearly elucidates the physical content of the theory is a reference
+connection FORMULA , where FORMULA  is spatially homogeneous and depends only on time. Then we have
+FORMULA 
+where the dots signify all higher order terms. Since the constraints (REF ) are already of linear
+order in FORMULA , then it suffices to retain only the zeroth order terms involving FORMULA  in order to complete the linearization. Hence the linearized diffeomorphism constraint is given by
+FORMULA 
+which implies that FORMULA  must be symmetric. The Hamiltonian constraint to linearized order is given by
+FORMULA 
+which states that FORMULA  is traceless to this order. For the Gauss' law constraint we have
+FORMULA 
+The second term on the right hand side of (REF ) vanishes since FORMULA  is symmetric from (REF ), and the Gauss' law constraint reduces to
+FORMULA 
+which states that FORMULA  is transverse. So upon implementation of the linearized constraints FORMULA  is symmetric, traceless and transverse, which means that it is a spin two field.
+
+Spatial 3-metric from the constraints
+The next step in the instanton representation method is now to compute the spatial 3-metric from the solution to the initial value constraints
+FORMULA 
+to linear order in FORMULA  and FORMULA . To keep organized let us first compute the ingredients of (REF ). The matrix FORMULA  is already of linear order as evident from (REF ), repeated here for completeness
+FORMULA 
+where FORMULA  satisfies the conditions for a spin 2 field
+FORMULA 
+The square of the inverse (REF ) and the determinant to linear order in FORMULA  are given by
+FORMULA 
+where we have used the tracelessness of FORMULA  from (REF ). The linearized determinant of the magnetic
+field from (REF ) is given by
+FORMULA 
+and the linearized inverse is given by
+FORMULA 
+Given that FORMULA  is symmetric, transverse and traceless on account of (REF ), it seems natural that the connection perturbation FORMULA  should also exhibit these properties. Let us impose the conditionsThe linearized initial value constraints (REF ) constrain FORMULA  and not FORMULA , therefore (REF ) can be regarded as a gauge-fixing choice of the connection FORMULA . We will see later in this paper that (REF ) is self-consistent and consistent with (REF ) and with the equations of motion, which provides justification for this choice.
+FORMULA 
+Then the spatial and the internal indices of FORMULA  are now on the same footing. Equations (REF ) and
+(REF ) simplify to
+FORMULA 
+Substituting (REF ) and (REF ) into (REF ), we get the spatial 3-metric to linearized order based on the constraint solutions
+FORMULA 
+We have shown that the initial value constraints at the linearized level confer the massless spin 2
+polarizations on FORMULA , and we have imposed associated gauge-fixing condition (REF ) by hand on the connection perturbation FORMULA .
+
+Spatial 3-metric from Hodge duality condition
+Equation (REF ) depends both on FORMULA  and FORMULA  restricted to a particular spatial
+hypersurface FORMULA , and the linearized constraints (REF ) are insufficient to prescribe their time evolution. To make progress we must next determine 3-metric based on the Hodge duality condition, given by
+FORMULA 
+To keep organized we will first compute the ingredients of (REF ). The temporal component of the curvature is given by
+FORMULA 
+In the initial value constraints we have used only a spatial 3-dimensional connection FORMULA . For the Hodge duality condition we will use a linearized Ansatz for the 4-dimensional connection FORMULA  given by
+FORMULA 
+where we have defined FORMULA  and FORMULA . Let us now compute FORMULA  to linearized order, using FORMULA  from (REF ). Equation (REF ) to first order is
+FORMULA 
+where we have defined FORMULA  as the temporal component of FORMULA  and we have treated FORMULA  as small similarly to FORMULA . Making use of (REF ) and the inverse magnetic field (REF ), then the following relation ensues to linearized order
+FORMULA 
+The symmetric and antisymmetric parts of (REF ) are given by
+FORMULA 
+where it is understood that FORMULA  is already symmetric on account of (REF ). The determinant of the symmetric part if FORMULA  is given by
+FORMULA 
+where we have used the tracelessness and symmetry of FORMULA  from (REF ). Substituting (REF ) into (REF ), we get the 3-metric from the Hodge duality condition
+FORMULA 
+
+Consistency condition on the background solution
+We have computed the 3-metric FORMULA  based upon two separate criteria. As a consistency condition we must require that
+FORMULA 
+which leads to the equation
+FORMULA 
+Equation (REF ) will put strong constraints on the form of the metric solution. To start with, we can set the pre-factors in (REF ) equal to each other
+FORMULA 
+which will fix the background solution. Recall that FORMULA  by supposition is spatially homogeneous and depends only on time. In order for (REF ) to be consistent, then the lapse function FORMULA  must be chosen such that its spatial dependence cancels out any spatial dependence due to FORMULA . We will choose FORMULA  for simplicity,In due course we will show that this choice is not arbitrary, but is actually a consistency condition which follows from the equations of motion. and choose FORMULA  to depend only on time. Given these conditions, then equation (REF ) is a first order linear differential equation for FORMULA , which integrates directly to
+FORMULA 
+The background 3-metric is given by (REF ) with
+FORMULA  and FORMULA , which is
+FORMULA 
+Reality conditions on the background solution dictate that for FORMULA , FORMULA  is a suitable choice of lapse function. Therefore for FORMULA , then FORMULA  is suitable. For FORMULA  real we have a Euclidean signature metric, whereas for FORMULA  pure imaginary we have Lorentizian signature.Observe that it is the initial
+data FORMULA  and not the lapse function FORMULA  which determines the signature of background spacetime. Nevertheless, we will restrict ourselves to real FORMULA  in order that the metric perturbations be real. This will limit our result to gravitons propagating on Euclidean DeSitter spacetime. Choosing FORMULA , the solution for the background metric is this gauge is given by
+FORMULA 
+which is the metric for an inflating de Sitter background. This provides the physical interpretation that the length scale associated with FORMULA , the initial value of the background connection, is the DeSitter radius FORMULA .
+
+Consistency condition on the perturbation
+Having determined the background solution from consistency of (REF ), we will now follow suit for the linearized perturbation of FORMULA . Equality of the terms of (REF ) in large round brackets leads to the following first order differential equation for the connection perturbation
+FORMULA 
+Prior to proceeding we must check that (REF ) is consistent with (REF ) and (REF ). First, note that the antisymmetric part of (REF ) is zero since the equation is already symmetric in FORMULA . The trace of (REF ) implies that
+FORMULA 
+where we have used that FORMULA  are symmetric and traceless.Equation (REF ) is the aforementioned consistency condition
+on (REF ) which requires that the background 3-metric be spatially homogeneous for spatially homogeneous lapse FORMULA . Lastly, we must show that (REF ) is transverse. Acting on (REF ) with FORMULA  and using FORMULA , we have
+FORMULA 
+The terms in square brackets in (REF ) vanish due to antisymmetry of FORMULA  and the transversality of FORMULA . Using FORMULA  from (REF ), then this implies
+FORMULA 
+The resulting consistency condition on (REF ) is that the temporal connection component of FORMULA  must satisfy the Laplace equation.
+We can now compute the shift vector from the antisymmetric part of FORMULA  from (REF ). The shift vector FORMULA  is given by
+FORMULA 
+Applying epsilon tensor identities to the terms in round brackets in (REF )
+FORMULA 
+we see that these terms vanish on account of the transversality and tracelessness of FORMULA . Therefore (REF ) reduces to
+FORMULA 
+There is a one-to-one correlation between temporal connection components FORMULA  and the shift vector FORMULA , which are gauge degrees of freedom respectively in the Yang–Mills and the metric formulations of gravity.
+Having verified the consistency of (REF ) and (REF ) with the Hodge duality condition, we can write (REF ) as the differential equation
+FORMULA 
+where we have defined
+FORMULA 
+Note that FORMULA  is a differential operator. Equation (REF ) is a linear first order differential equation for the connection perturbation FORMULA  totally consistent with (REF ), but also
+involves FORMULA . To integrate this equation, we need to know the explicit time dependence of FORMULA .
+
+Time evolution of the deviation matrix  FORMULA
+Equation (REF ) is a linear first order evolution equation for the connection perturbation FORMULA , which arose from (REF ). To integrate (REF ) we need to know the time
+dependence of FORMULA , which cannot be determined from (REF ) and (REF ). This is where equation (REF ) comes into play. The temporal part
+of (REF ) has already been used via Gauss' law to conclude that FORMULA  is transverse, leaving remaining the spatial parts. Using FORMULA , as well as the
+definition FORMULA , then the FORMULA  components of (REF ) yield the equations
+FORMULA 
+As a consistency condition we will first verify that the linearization of (REF ) is consistent with (REF ). To perform the linearization, it will be convenient to transfer the magnetic field to the right hand side of (REF ), yielding
+FORMULA 
+We will now substitute (REF ) and (REF ) into (REF ). First note that
+the FORMULA  part is annihilated by the gauge covariant derivatives (REF ), since FORMULA  and due to antisymmetry of the structure constants. Then since (REF ) is already linear
+in FORMULA , then it suffices to expand (REF ) to zeroth order in FORMULA  in order to carry out the linearization, which yields
+FORMULA 
+Since FORMULA  is symmetric, then this yields implies the equation
+FORMULA 
+with FORMULA  as in (REF ). To linearized order, there is no information from FORMULA  contained in (REF ), which is the same situation as for the linearized initial value constraints (REF ). Before proceeding with the solution, let us check the consistency of (REF ) with (REF ). The trace of (REF ) implies
+FORMULA 
+since FORMULA  is symmetric. Acting on (REF ) with FORMULA  yields
+FORMULA 
+which demonstrates transversality on the second index. Acting on (REF ) with FORMULA  yields
+FORMULA 
+which is consistent with transversality on the first index. Lastly, we must prove consistency with the
+symmetry of FORMULA . The antisymmetric part of (REF ) is given by
+FORMULA 
+where we have used the Einstein summation convention and the tracelessness and transversality of FORMULA . The result is that (REF ) is consistent with the initial value constraints.
+Equation (REF ) can be written as
+FORMULA 
+with solution (see Appendix A for the derivation)
+FORMULA 
+where we have defined the time-ordered exponential FORMULA  by
+FORMULA 
+where FORMULA  is the time-ordering operator and FORMULA  is the operator matrix FORMULA . So we have determined the time evolution of FORMULA  from its initial value as a spin two field in accordance with the initial value constraints. Note that the solution to the constraints is preserved for all time. For restrictions on the initial data we must
+have FORMULA  so that all spatial derivatives coming down from the exponential exist and are well-defined.
+
+The connection and the spatial 3-metric
+Having determined the time evolution for FORMULA  from an initial spatial hypersurface FORMULA , we can now find the metric as follows. First substitute (REF ) into (REF ), which then leads to an explicit differential equation for FORMULA . Using similar time-ordered exponential techniques, we can find
+FORMULA 
+where we have defined the time-ordered exponential operator (in analogy with (REF ))
+FORMULA 
+with the differential operator FORMULA  defined as
+FORMULA 
+The main point is that (REF ) consists of evolution operators acting on some linear combination of the initial data of the basic variables capturing the physical degrees of freedom, as well as the unphysical ones encoded in FORMULA . Substituting (REF ) and (REF ) into (REF ), we can now construct the 3-metric in the general form
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  consist of time-ordered evolution operators containing derivative operators, whose specific form we will not display here. The point is that FORMULA  has been reduced explicitly to a time evolution of the initial data FORMULA  and FORMULA  satisfying the initial value constraints and gauge conditions. The quantity FORMULA  can be seen as the Lie derivative of FORMULA  along the vector FORMULA , which takes the interpretation of a spatial coordinate transformation encoding the gauge degrees of freedom. The spin 2 nature of the metric is preserved for all
+time and is cleanly separated from the gauge degrees of freedom, namely the temporal connection components FORMULA  in the form of the shift vector FORMULA . Combining (REF ) with the shift vector (REF ), this provides the spacetime metric for the gravitons about DeSitter spacetime. One should expect to be able to apply a similar algorithm for expansion in gravitons about other exact General Relativity solutions.
+
+Summary
+The main result of this paper has been the application of the instanton representation method to the construction of graviton solutions for General Relativity, linearized about a Euclidean DeSitter spacetime background. We have used this solution, which is well-known in the literature, as a testing ground for the method. Starting from the initial value constraints combined with gauge-fixing conditions, we have obtained the spin 2 polarization for the basic fields. This prescribed the physical degrees of freedom for gravity on an initial spatial hypersurface FORMULA . Using the instanton representation equations of motion, we determined the evolution of these physical degrees of freedom in time. The significance of this is that the spin 2 polarizations remain preserved as a consequence of the constraints' being consistent with the evolution equations, a feature which is explicit. From these solutions we constructed the spatial 3-metric explicitly, depicting a neat separation of the physical from unphysical degrees of freedom. The unphysical degrees of freedom are due to the temporal component of the FORMULA  connection FORMULA , which correlate directly to the shift vector FORMULA . This provides a physical basis and interpretation for the role of the gauge connection and its relation to metric General Relativity. Our next work will be to reconstruct minisuperspace solutions as a further testing arena, and then subsequently to generate new solutions to the Einstein equations which are not known in the literature.
+
+Appendix A
+We would like to solve the differential equation
+FORMULA 
+Integration of (REF ) from 0 to FORMULA  yields
+FORMULA 
+We have brought FORMULA  outside the integral, since it contains spatial derivative operators which commute with the time integration. Equation (REF ) can be iterated to
+FORMULA 
+Continuing the iteration, this yields
+FORMULA 
+Analogy with the time-ordered Wick expansion in field theory signifies that we can make the upper limits of all time integrations the same and introduce a compensating factor, which yields
+FORMULA 

@@ -1,0 +1,117 @@
+
+theDOIsuffix
+
+
+
+2007
+1
+22 May 2007
+graphene, graphite, hydrocarbon, sputtering, Molecular dynamics, Brenner potential, injection, hydrogen, deuterium, tritium.
+[pacs]52.40.Hf, 52.65.Yy, 81.05.Uw
+[MD simulation of hydrogen isotope injection into graphene]Molecular dynamics simulation of hydrogen isotope injection into graphene
+[Hiroaki Nakamura]Hiroaki NakamuraCorresponding
+author: e-mail: hnakamura@nifs.ac.jp, Phone: +81-572-58-2356,
+Fax: +81-572-58-2626,1 [1]National Institute for Fusion Science, 322-6 Oroshi-cho, Toki 509-5292, Japan
+[Arimichi Takayama]Arimichi Takayamatakayama@nifs.ac.jp1
+[Atsushi Ito]Atsushi Itoito.atsushi@nifs.ac.jp1,2
+[2]Department of Physics, Graduate School of Science, Nagoya University, Nagoya 464-8602, Japan
+We reveal the hydrogen isotope effect of three chemical reactions, i.e, the reflection, the absorption and the penetration ratios, by classical molecular dynamics simulation with a modified Brenner's reactive empirical bond order (REBO) potential potential.
+We find that the reflection by FORMULA electron does not depend on the mass of the incident isotope, but the peak of the reflection by nuclear moves to higher side of incident energy.
+In addition to the reflection, we also find that the absorption ratio in the positive FORMULA  side of the graphene becomes larger, as the mass of the incident isotope becomes larger.
+On the other hand, the absorption ratio in the negative FORMULA  side of the graphene becomes smaller.
+Last, it is found that the penetration ratio does not depend on the mass of the incident isotope because the graphene potential is not affected by the mass.
+Introduction
+Plasma-carbon interaction yields small hydrocarbon molecules on divertor region of a nuclear fusion device{{cite:c8ef66c8-b348-41e3-b7df-6e4c6f8945fb}}, {{cite:1a2d52ff-ab98-471c-8b79-6cafeb8a410a}}, {{cite:fb2b276f-e4a0-4029-8058-a086dbd47106}}, {{cite:efdb0e05-b902-42ec-91ab-2ccfee0776ef}}, {{cite:578042ea-5d34-43f7-8cd0-61fd88bba238}}.
+Diffusing from divertor region to core plasma region of fusion device, generated hydrocarbon takes energy from the core plasma.
+Reduction of hydrocarbon diffusing from divertor is the main aim of studies in plasma-carbon research.
+To achieve the aim, researches with computer simulation have been being done{{cite:a7b932fd-22f3-4026-b737-e26601c91b94}}, {{cite:4bc07155-a101-4b75-bdc9-91af66909135}}, {{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}, {{cite:840ec96c-14b6-45d1-8385-840ddb0fea66}}.
+However, the creation mechanism of the hydrocarbons has not been elucidated yet.
+We, therefore, as the first step to clarify the creation mechanism, investigated, by computer simulation, collision process of hydrogen atoms and one graphene sheet, which is regarded as one of basic processes of complex plasma-carbon interaction in the previous works{{cite:4bc07155-a101-4b75-bdc9-91af66909135}}, {{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}.
+From the previous works in which an incident hydrogen kinetic energy FORMULA  is less than 100 eV to compare with experiments, it was found that an hydrogen-absorption ratio of one graphene sheet depends on the incident hydrogen energy, and that the collision mechanism between a graphene and a hydrogen can be classified into three types of processes: absorption process, reflection process, and penetration process (see Fig. REF (a)).
+Moreover, it was also found that when hydrogen atom is absorbed by graphene, the nearest carbon atom overhangs from the graphene which we called “overhang structure".
+Based on the above results, as the second step, simulation model were extended{{cite:840ec96c-14b6-45d1-8385-840ddb0fea66}} from a single graphene sheet to multilayer graphene sheets, which is a more realistic sputtering process of graphene sheets and hydrogen atoms than the previous work{{cite:4bc07155-a101-4b75-bdc9-91af66909135}}.
+From the second work{{cite:840ec96c-14b6-45d1-8385-840ddb0fea66}}, we found the following fact:
+breaking the covalent bonds between carbon atoms by hydrogen does not play an important role during destruction process of graphene structure, but momentum transfer from incident hydrogen to graphene causes to destroy graphene structure.
+Moreover, it was found{{cite:840ec96c-14b6-45d1-8385-840ddb0fea66}}, that almost all fragments of graphene sheets form chain-shaped molecules, and that yielded hydrocarbon molecules are composed of carbon chain and single hydrogen-atom.
+In the present paper, we investigate hydrogen isotope effect for collision process of a single hydrogen isotope and one graphene sheet.
+Information of dependence of the chemical reaction on a type of isotope is necessary to realize plasma confinement nuclear fusion system.
+In the present simulation, we change only the mass of the injected isotope, without changing the interaction potential.
+We used `classical' molecular dynamics (CMD) algorithm with modified Brenner's reactive empirical bond order (REBO) potential which we proposed to deal with chemical reaction between hydrogen and graphene in the previous simulations{{cite:4bc07155-a101-4b75-bdc9-91af66909135}}, {{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}, {{cite:840ec96c-14b6-45d1-8385-840ddb0fea66}}, {{cite:2d37b069-2da9-4895-babf-144be8f1226d}}.
+FIGURE 
+
+Simulation Method and Model
+We adapt CMD simulation with the NVE condition, in which the number of particles, volume and total energy are conserved.
+The second order symplectic integration{{cite:910d9d58-bb5b-4551-8bb5-6cd11363041b}} is used to solve the time evolution of the equation of motion.
+The time step is FORMULA .
+The modified Brenner's reactive empirical bond order (REBO) potential{{cite:2d37b069-2da9-4895-babf-144be8f1226d}} has the following form:
+FORMULA 
+where FORMULA  is the distance between the FORMULA -th and the FORMULA -th atoms.
+The functions FORMULA  and FORMULA  represent repulsion and attraction, respectively.
+The function FORMULA  generates multi–body force. (See details of the modified Brenner's REBO potential in Ref.{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}.)
+In order to investigate the difference of the isotopes, i.e., hydrogen (H), deuterium (D) or tritium (T), we clarify the mass dependence of the injected isotope.
+The value of the mass for H, D, or T is shown in Table REF .
+The potential function is not changed for each isotope.
+Simulation model is shown in Fig. REF .
+We inject the hydrogen isotope into the graphene composed of 160 carbon atoms.
+The center of mass of the graphene is set to the origin of coordinates.
+The surface of the graphene is parallel to the FORMULA –FORMULA  plane.
+The size of the graphene is 2.13 nm FORMULA  1.97 nm.
+The graphene has no lattice defects and no crystal edges due to periodic boundary condition toward FORMULA  and FORMULA  directions.
+The structure of the graphene is used to the ideal lattice of graphene.
+Each velocity of carbon atoms of the graphene is zero in the initial state, that is, the initial temperature of the graphene is set to zero Kelvin.
+The hydrogen isotope is injected parallel to the FORMULA  axis from FORMULA  Å.
+We repeat 200 simulations where the FORMULA  and FORMULA  coordinates of injection points are set at random.
+As a result, we obtain three chemical reaction ratios for H, D, or T by counting each a reaction.
+
+Results and Discussions
+We observed three kinds of reactions between the single hydrogen isotope atom and the graphene by CMD simulation, which are absorption reaction, reflection reaction and penetration reaction (see Fig. REF ).
+We found the following differences of the reflection and the absorption ratios among three isotopes.
+On the other hand, the penetration ratio has almost the same FORMULA  dependence.
+Reflection ratio
+From the previous work{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}, it was found that two kinds of repulsive force work between the incident atom and the graphene.
+One is derived by the FORMULA electron over the graphene and the other is done by nuclear of carbon.
+As the result of the present simulation, the FORMULA  dependence has the following properties.
+In the case of FORMULA , the reflection ratio is almost one for all isotopes.
+This behavior is explained by the fact that the reflection in this energy region is derived by the repulsive force of FORMULA electrons over graphene surface{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}, which does not depend on the mass of the incident isotope.
+As FORMULA  is getting larger than 0.5 eV, the reflection ratios are decreasing, and then it is increasing by the nuclear repulsive force of the carbon atom.
+Around FORMULA  eV, they have the peak (see Figs. REF  and REF ).
+Then, without the mass dependence, they decrease again and approach to zero (Fig. REF ), because the penetration reaction appears in the energy region that FORMULA 
+The details of the penetration reaction will appear in §REF .
+By comparison with three isotopes, it is found that the peak energy of the reflection ratio becomes larger as the mass is getting larger, but the peak height becomes smaller (see Fig. REF ).
+This behavior can be explained by the reflection mechanism in the previous work{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}, where the incident energy FORMULA  has the following necessary condition for the reflection reaction by the nuclear of carbon:
+FORMULA 
+where the isotope mass FORMULA  dependence is modified from the previous equation{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}} in order to cover three isotopes.
+The hydrogen mass FORMULA  is 1.00794 u, and the carbon mass FORMULA  is 12.00000 u.
+The value of FORMULA  is given in Table REF  and Fig. REF  for all isotopes.
+From Eq. (REF ) or Table REF , it is found that, as the mass of the incident atom becomes larger, it needs higher incident energy for the isotope to be reflected by the graphene.
+The reflection reaction by the nuclear repulsion occurs at FORMULA , and then it increases monotonically until the penetration reaction becomes dominant among three reactions, as shown in Fig. REF 
+Therefore, in the case that the starting energy of the reflection reaction by the nuclear FORMULA  is smaller, the reflection ratio can reach a higher value at the peak energy.
+According to the above mechanism, the peak energy of the reflection ratio becomes larger and the peak height becomes smaller, as the mass of the isotopes is getting heavier, as shown in Fig. REF .
+
+Absorption ratio
+The absorption ratio has two peaks at FORMULA eV and 24 eV.
+One peak denotes the overhang state in the positive FORMULA  side of the graphite, and the other peak is the overhang state in the negative FORMULA  side{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}.
+From Fig. REF , the height of the second peak, which is near 24 eV, becomes smaller, as the mass of the incident isotope is increasing.
+On the other hand, the first peak of the absorption ratio, which is around 5 eV, becomes large.
+The origin of the mass dependence of the absorption ratio is the same one as that of the reflection ratio in §REF .
+The velocity becomes slower as the mass becomes large.
+Therefore, it becomes easier for the graphene to trap the isotope in the positive FORMULA  side.
+
+Penetration ratio
+From Fig. REF , it is found that the penetration ratio does not depend on the mass of the incident isotope, i.e., H, D and T.
+The incident atom must overcome the graphene potential to penetrate the graphene sheet.
+The graphene potential does not depend on the mass of the incident atom.
+Therefore, the penetration ratio does not depend on the mass of the isotope.
+
+Summary
+We reveal the hydrogen isotope effect of three chemical reactions, i.e, the reflection, the absorption and the penetration reactions, by CMD simulation with the modified Brenner's REBO potential.
+From the previous work{{cite:19a51ecd-3ffd-40f1-a7bf-7c92dff823d0}}, the reflection process is divided into two processes, that is, reflection by FORMULA electron and by nuclear.
+In the present work, we find that the reflection by FORMULA electron does not depend on the mass of the incident isotope, but the peak of the reflection by nuclear moves to higher side of FORMULA .
+In addition to the reflection, we also find that the absorption ratio in the positive FORMULA  side of the graphene becomes larger, as the mass of the incident isotope becomes larger.
+On the other hand, the absorption ratio in the negative FORMULA  side of the graphene becomes smaller.
+Last, it is found that the penetration ratio does not depend on the mass of the incident isotope because the graphene potential is not affected by the mass.
+FIGURE 
+TABLE 
+The authors acknowledge Dr. Noriyasu Ohno for helpful comments.
+Numerical simulations are carried out by use of the Plasma Simulator at National Institute for Fusion Science.
+The work is supported partly by Grand-in Aid for Exploratory Research (C), 2006, No. 17540384 from the Ministry of Education, Culture, Sports, Science and Technology and partly by the National Institutes of Natural Sciences undertaking for Forming Bases for Interdisciplinary and International Research through Cooperation Across Fields of Study, and Collaborative Research Programs (No. NIFS06KDAT012, No. NIFS06KTAT029, No. NIFS07USNN002 and No. NIFS07KEIN0091).

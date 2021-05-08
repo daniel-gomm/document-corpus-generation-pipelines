@@ -1,0 +1,167 @@
+
+1.15
+Helicity-type integral invariants for Hamiltonian systemsMikhail V. Deryabin Mads Clausen Instituttet,
+Syddansk Universitet, Sønderborg 6400, Denmark. Email:
+mikhail@mci.sdu.dkIn this note, we consider generalizations of the
+asymptotic Hopf invariant, or helicity, for Hamiltonian systems
+with one-and-a-half degrees of freedom and symplectic
+diffeomorphisms of a two-disk to itself.
+Helicity integral for Hamiltonian systems
+Consider a Hamiltonian system on the extended phase space
+FORMULA  with symplectic coordinates FORMULA  and time FORMULA , given by a
+Hamiltonian FORMULA :
+FORMULA 
+Let FORMULA  be an invariant disk for this system (which
+always exists for integrable systems with bounded energy levels and
+near-integrable systems, close to them). An integral over a solid
+torus FORMULA :
+FORMULA 
+where the function FORMULA  equals zero on the
+boundary FORMULA , will be called helicity for the Hamiltonian system (REF ). It is easy to see
+that this definition is consistent – the value FORMULA  does
+not depend on the choice of the symplectic coordinates. The term
+”helicity” is chosen, as the integral (REF ) equals (up
+to a multiplier 2) to the helicity of the Hamiltonian vector field
+FORMULA  (with invariant measure on the extended phase
+space being FORMULA ):
+FORMULA 
+provided the 1-form FORMULA  is chosen such that
+FORMULA 
+Indeed, as FORMULA , then, due to
+(REF ), FORMULA .
+Relation (REF ) is now obtained by the integration by
+parts, cf. {{cite:62d10a31-f2fd-4e79-8485-6f673b6b546e}}. Notice that, as we have assumed that the
+disk FORMULA  is invariant, from Condition (REF ) follows that
+FORMULA  on its boundary FORMULA .
+The helicity invariant has the following ergodic interpretation: it
+measures asymptotic linking of the trajectories of the Hamiltonian
+vector field FORMULA  in the solid torus FORMULA ,
+which in turn is itself unlinked (and untwisted), see {{cite:62d10a31-f2fd-4e79-8485-6f673b6b546e}}
+for details. In particular, the invariant (REF ) does not
+change after rescaling FORMULA , FORMULA  – the
+average linking of the trajectories remain the same.
+Remark. Expression (REF ) is still well defined if
+the Hamiltonian FORMULA  is discontinuous at some FORMULA . One can show that
+the ergodic interpretation of (REF ) remains the same.
+Expression (REF ) is exactly the same as the expression
+for the Calabi invariant, see {{cite:2efc4ea3-1c59-47eb-9e3e-a37dda031f89}}. The difference is that
+above we have not assumed that the gradient of the Hamiltonian FORMULA 
+is zero on the boundary torus FORMULA  (which is an assumption
+in the Calabi invariant definition). Of course if we have assumed
+that, then (REF ) would be the Calabi invariant.
+
+Hamiltonian diffeomorphisms
+Consider a symplectic mapping FORMULA . There exists a
+Hamiltonian system (with the Hamiltonian FORMULA  depending
+FORMULA -periodically on time), which Poincaré map FORMULA 
+coincides with FORMULA  (actually, there are infinitely many such
+systems, and one can show that they have the same smoothness as the
+mapping itself, see, e.g., {{cite:d82e5443-5c10-4f09-b898-097be39d35c9}}). Notice that for the
+calculations below, it does not matter which period to take (due to
+the ergodic interpretation of the helicity integral).
+The Calabi invariant is an invariant of the symplectic mapping,
+identical at the boundary, and it does not depend on a paricular
+choice of the underlying Hamiltonian system, see, e.g., {{cite:0358b366-c2d8-4bb5-b02e-fa8ec3711277}}.
+On the contrary, if we only demand that the mapping FORMULA  sends the
+boundary FORMULA  to itself, then the value of the integral
+(REF ) may depend on a particular choice of the
+Hamiltonian flow. However, the values of FORMULA  will be
+”quantized” by the square of the sympectic area FORMULA  of the disk
+FORMULA :
+Theorem 2.1 
+Let a symplectic mapping FORMULA  be given, which sends a
+boundary FORMULA  to itself. Let FORMULA  and FORMULA  be
+two Hamiltonian flows, given by FORMULA -periodic Hamiltonians FORMULA 
+and FORMULA , such that FORMULA . Then,
+FORMULA  for some FORMULA .
+
+Proof. We first prove the following
+Lemma 2.2 
+Let FORMULA . Then for any FORMULA , such that FORMULA ,
+FORMULA , FORMULA .
+
+Proof of Lemma REF . The mapping FORMULA  turns the
+boundary circle by the angle FORMULA , FORMULA  (because
+of continuity, no other transformation of the circle than the pure
+rotation is allowed). Take a bigger disk FORMULA , which contains
+FORMULA , and define a mapping FORMULA ,
+stationary at the boundary FORMULA , and coinciding with
+FORMULA  in FORMULA . The Calabi invariant for the mapping FORMULA  does
+not depend on an underlying Hamiltonian flow. If we take the flow
+that coincides with FORMULA  inside FORMULA , and that is stationary at
+the outer boundary FORMULA , then, as we tend FORMULA , its Calabi invariant will tend to FORMULA , as
+FORMULA  will tend to zero as FORMULA .
+Now, we take the Hamiltonian FORMULA  in FORMULA , such that in
+FORMULA , FORMULA , where FORMULA , FORMULA  are the
+”action-angle” variables, such that the disk FORMULA  is given by
+inequality FORMULA , and the disk FORMULA  is given by FORMULA , FORMULA . We define the constant FORMULA  later. Let FORMULA . The function FORMULA  in FORMULA  can
+be taken as
+FORMULA 
+Indeed, FORMULA , FORMULA  and
+FORMULA 
+As FORMULA , the constant FORMULA .
+The Calabi invariant equals
+FORMULA 
+As we turn FORMULA , we get
+FORMULA 
+where FORMULA  is the symplectic area of the disk FORMULA .  FORMULA
+Now, to prove the theorem, consider a mapping FORMULA . This mapping is identical. Its asymptotic Hopf
+invariant equals sum of asymptotic Hopf invariants for systems with
+Hamiltonians FORMULA  and FORMULA , which, by Lemma REF , equals FORMULA .  FORMULA
+Remark. The group of Hamiltonian diffeomorphisms of a 2-disk,
+identical at the boundary, is known to be contractible, see
+{{cite:f366a220-e475-40df-8c9b-64e7a9af3356}}. In particular, the Calabi 1-form, defined as the
+right-invariant differential form, coinciding with the Calabi
+integral
+FORMULA 
+on the Lie algebra of Hamiltonian diffeomorphisms of disk FORMULA , is
+exact, see {{cite:0358b366-c2d8-4bb5-b02e-fa8ec3711277}}. If we drop the condition that a Hamiltonian
+diffeomorphism is identical at the boundary, then from Theorem
+REF  follows that this form (which is still correctly defined
+and closed) is no longer exact, and thus the topology of the group
+of Hamiltonian diffeomorphisms becomes more complicated.
+The statement converse to Theorem REF  is also true. Let a
+smooth symplectic mapping FORMULA  and a number FORMULA  be given.
+Theorem 2.3 
+There are two smooth Hamiltonian systems, given by Hamiltonians
+FORMULA  and FORMULA , FORMULA -periodic in FORMULA , such that FORMULA , and
+FORMULA 
+
+Proof. It is well-known that a symplectic mapping can be
+inserted into a Hamiltonian flow, see, e.g., {{cite:d82e5443-5c10-4f09-b898-097be39d35c9}}. Let this
+flow be given by a Hamiltonian FORMULA  (which is zero on the boundary
+FORMULA ). Let FORMULA  be the ”action-angle” variables, such
+that the disk FORMULA  is given by FORMULA . Take now the following
+function:
+FORMULA 
+Obviously, FORMULA . Now, we have to construct a smooth Hamiltonian
+FORMULA  with the same helicity as FORMULA . We show that this can
+be done by time transformation.
+Suppose that we want to make FORMULA  differentiable (once, in time).
+Consider the following time transformation: FORMULA . The helicity integral becomes:
+FORMULA 
+where we denoted FORMULA . Obviously, FORMULA  (being a
+FORMULA -periodic function of FORMULA ).
+To obtain smoothness of order FORMULA , one can construct
+time transformation, which is given by FORMULA , such that at FORMULA  and FORMULA , FORMULA  and FORMULA 
+correspondingly for small FORMULA . For example, for FORMULA , take
+FORMULA 
+Remark. Theorem REF  is also true in the analytic case.
+The proof is simple modulus results in {{cite:d82e5443-5c10-4f09-b898-097be39d35c9}}: one should for
+example use the smoothing technique from {{cite:d82e5443-5c10-4f09-b898-097be39d35c9}} to get an
+analytic system from the smooth one, obtained during the proof of
+Theorem REF . Notice also that if two Hamiltonian functions are
+close to each other (in an appropriate topology) and they define the
+same mapping, then the helicity will also be the same – by
+continuity of the helicity functional and by Theorem REF .
+From Theorem REF  follows that a symplectic mapping can be
+inserted into a Hamiltonian flow with any given helicity level. In
+particular, there exists the flow with smallest (in the absolute
+value) helicity, which is a functional of the mapping only. This
+smallest helicity will be called the generalized Calabi
+invariant.
+We do not write down explicitly the generalized Calabi invariant as
+the functional of a symplectomorphism here. We only note that it can
+be written as a sum of two parts: an integral over the disk, and an
+integral over the boundary circle. One way to see that is to take
+the limiting procedure, as we did in the proof of Lemma REF .

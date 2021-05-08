@@ -1,0 +1,130 @@
+
+Theoretical study of even denominator fractions in graphene: Fermi sea versus paired states of composite fermions
+Csaba TőkeFORMULA  and J. K. JainFORMULA 
+FORMULA Department of Physics, 104 Davey Lab, Pennsylvania State University, University Park PA, 16802
+FORMULA Institut für Theoretische Physik, Johann Wolfgang Goethe-Universität, 60438 Frankfurt/Main, Germany
+2020/09/07 15:49:36
+The physics of the state at even denominator fractional fillings of Landau levels depends on the Coulomb pseudopotentials,
+and produces, in different GaAs Landau levels, a composite fermion Fermi sea, a stripe phase, or, possibly, a paired composite fermion state. We consider here even denominator fractions in graphene, which has different pseudopotentials as well as a possible four fold degeneracy of each Landau level. We test various composite fermion Fermi sea wave functions (fully polarized, SU(2) singlet, SU(4) singlet) as well as the paired composite fermion states in the FORMULA  and FORMULA  Landau levels and predict that
+(i) the paired states are not favorable, (ii) CF Fermi seas occur in both Landau levels, and (iii) an SU(4) singlet composite fermion Fermi sea is stabilized in the appropriate limit. The results from detailed microscopic calculations are generally consistent with the predictions of the mean field model of composite fermions.
+Introduction
+Although the fractional quantum Hall effect{{cite:562437d6-1d84-4b17-babf-d7c97e77bb4e}} (FQHE) has not yet been observed in graphene, several papers have
+studied this possibility theoretically both in the SU(2) limit{{cite:dd2ca7c2-d2fd-4932-b21c-301bdb9386a4}} (when the Zeeman splitting is not small but the
+valleys are degenerate) and in the SU(4) limit{{cite:5f75bcb8-8549-459d-a29c-00b2ab7a38eb}} (when both spins and valleys are degenerate).
+These studies show that, as for GaAs, the FQHE states are well described by the composite fermion (CF) theory{{cite:f8323ab4-269b-463d-af77-6bf5c89047df}} and occur at the filling factors
+FORMULA 
+where FORMULA  is the partial filling of electrons (corresponding to total filling of FORMULA ) or holes{{cite:d3a18204-ba2b-462f-9743-11929e1aa271}} (at FORMULA ) in the graphene Landau level with index FORMULA , FORMULA  is the CF vorticity, and FORMULA  is the number of filled FORMULA  levels (also known as CF Landau levels). There are differences, however. While FQHE in GaAs is much stronger in the lowest Landau level (LL), the FQHE in graphene is expected to be as strong in the FORMULA  Landau level as in the FORMULA  LL{{cite:dd2ca7c2-d2fd-4932-b21c-301bdb9386a4}}. More interestingly, many new incompressible CF states become possible because of the SU(4) symmetry{{cite:5f75bcb8-8549-459d-a29c-00b2ab7a38eb}}.
+This work addresses the nature of the state at FORMULA . If the model of weakly interacting composite fermions remains valid in the limit of FORMULA , then we expect a Fermi sea of composite fermions. In GaAs, the fully spin polarized Fermi sea of composite fermions has been extensively studied{{cite:654e0ce4-fa6e-4afa-9a10-223b48ecc451}} and confirmed{{cite:75cc410c-267b-40df-a86e-57068316f27a}} at FORMULA ,
+and good evidence exists for a spin-singlet CF Fermi sea (CFFS) in the limit of vanishing Zeeman energy{{cite:195e507d-be34-45df-b109-2730e9f608b6}}, {{cite:1a233cd5-3352-4c67-83b6-b175ba840230}}. At FORMULA  in the second (FORMULA ) Landau level, it is currently believed, although not confirmed, that the residual interactions between composite fermions produce a p-wave paired state of composite fermions, described by a Pfaffian wave function{{cite:dc4cb405-71b3-45dc-8a78-c1b3db5189ef}}. In still higher Landau levels an anisotropic stripe phase is believed to occur.
+CF Fermi sea is an obvious candidate at half fillings in graphene, although it will have a richer structure associated with it. In the SU(4) symmetric limit, the mean field model of composite fermions predicts an SU(4) singlet CF Fermi sea, which has no analog in GaAs. The p-wave paired state of composite fermions is also a promising candidate, especially at FORMULA  in the FORMULA  LL, and it is interesting to ask if the graphene Coulomb matrix elements can make it more stable than the standard GaAs Coulomb matrix elements. For completeness, we also consider a so-called hollow-core state{{cite:d57463b3-fe0a-4a8a-9a43-c7dae03f9da1}} describing the spin-singlet pairing of composite fermions, and, as in GaAs{{cite:195e507d-be34-45df-b109-2730e9f608b6}}, find it not to be relevant. We note that our FORMULA  Landau level results below, as well as in Ref. graphenesu4, also apply to the CF physics in valley degenerate semiconductor systems {{cite:a8cc2e1c-62de-4a43-bfa0-f73aeb89cc09}}.
+
+Model
+The low-energy states of graphene are described in the continuum approximation by a massless Dirac Hamiltonian{{cite:4ef1e361-e197-406c-bcf9-9bd2e87e919e}}
+FORMULA 
+that acts on a 4-spinor Hilbert space.
+Here FORMULA  denotes the spin and FORMULA  the pseudospin associated with the valley degree of freedom,
+FORMULA  m/s is the Fermi velocity, FORMULA ,
+and FORMULA  is the on-site energy difference between the two sublattices.
+The single particle spectrum of FORMULA  is
+FORMULA 
+where FORMULA  are the eigenvalues of FORMULA  and FORMULA , respectively,
+and FORMULA  is the Landau level index.
+In the limit FORMULA  each Landau level is 4-fold degenerate, giving rise to an SU(4) internal symmetry.
+We consider below only the SU(4) symmetric part of the Hamiltonian explicitly; from these results,
+the energy of any given wave function in the presence of certain kinds of symmetry
+breaking terms (for example, the Zeeman coupling) can be obtained straightforwardly, and level crossing transitions
+as a function of FORMULA  and FORMULA  can be obtained.
+The conditions for SU(4) symmetry have been discussed in Refs. graphenesu4
+and Goerbig.
+Because we are interested in bulk properties, we will use the spherical geometry, in which electrons move on the
+surface of a sphere and a radial magnetic field is produced by
+a magnetic monopole of strength FORMULA  at the center.{{cite:40df0e7b-044a-4a3e-b9e1-1d0425d7f55d}}, {{cite:da93582c-4d68-4960-9a92-012f396b42b1}}
+Here FORMULA  is the magnetic flux through the surface of the sphere; FORMULA , and
+FORMULA  is an integer according to Dirac's quantization condition.
+The interelectron interaction is conveniently parametrized in terms of pseudopotentials{{cite:40df0e7b-044a-4a3e-b9e1-1d0425d7f55d}} FORMULA , where FORMULA  is the energy of two electrons in relative angular momentum state FORMULA .
+The problem of interacting electrons in the FORMULA -th LL of graphene can be mapped
+into a problem of electrons in the FORMULA  LL with an effective interaction that has pseudopotentials{{cite:dd2ca7c2-d2fd-4932-b21c-301bdb9386a4}}, {{cite:8d67eddf-2e02-47fc-a666-e896816802dd}}
+FORMULA 
+where the form factor FORMULA  is
+FORMULA 
+For an evaluation of the energies of various variational wave functions by the Monte Carlo method, we need the real-space interaction. In the FORMULA  LL this interaction is simply FORMULA , where FORMULA  is taken as the chord distance in the spherical geometry.
+In other Landau levels we use an effective real-space interaction in the lowest Landau level that reproduces
+the higher Landau level pseudopotentials in Eq. (REF ).
+We determine such an effective real space interaction in the planar geometry, and use it on the sphere. This procedure is exact in the thermodynamic limit, and it is usually reasonable also for finite systems. Following Ref. graphenesu4, in the FORMULA  LL we use the form
+FORMULA 
+The coefficients FORMULA  are given in Ref. graphenesu4.
+We will assume parameters such that the finite thickness of the 2DEG and Landau level mixing have negligible effect.
+To build composite fermion trial wave functions, we will use the following consequence of Fock's cyclic condition{{cite:5f75bcb8-8549-459d-a29c-00b2ab7a38eb}}. The orbital part of one member of the SU(FORMULA ), namely the highest weight state, can be constructed as
+FORMULA 
+where FORMULA 's are Slater determinants such that any state FORMULA  in FORMULA  is also filled in FORMULA 
+(conversely, if FORMULA  is empty in FORMULA , then it is also empty in FORMULA );
+FORMULA  is the projection into the lowest (FORMULA ) Landau level{{cite:62cd19e4-e571-470c-a99b-2321907fddf7}};
+and the last factor, the Jastrow factor, attaches FORMULA  vortices to each fermion.
+Here FORMULA , and FORMULA .
+The complete wave function is
+FORMULA 
+where FORMULA  is a basis of the (FORMULA -dimensional) fundamental representation of SU(FORMULA ),
+FORMULA  is the number of particles in the FORMULA  state,
+FORMULA , and FORMULA  is the antisymmetrizer.
+We define the CF Fermi sea as the thermodynamic limit of an integral number of filled Landau
+levels at an effective monopole strength FORMULA  for composite fermions. Clearly, if FORMULA  are identical, then Eq. (REF ) yields a legitimate trial wave function. We will label this state “CFFS FORMULA ." As the effective monopole strength of composite fermions FORMULA  is related to the real monopole strength FORMULA  as
+FORMULA 
+the filling factor is, assuming FORMULA ,
+FORMULA 
+The Pfaffian wave function {{cite:dc4cb405-71b3-45dc-8a78-c1b3db5189ef}}, which is
+one of the candidates for the FQHE state at FORMULA  in GaAs samples{{cite:3d2d6086-e64a-4fcd-80c5-11994cabf371}}, has the form
+FORMULA 
+on the sphere. By assumption, the Pfaffian wave function uses one spin band only.
+We also consider the hollow-core state {{cite:d57463b3-fe0a-4a8a-9a43-c7dae03f9da1}}
+FORMULA 
+where FORMULA  is an FORMULA  matrix.
+This state is a spin singlet in the system with SU(2) symmetry; its symmetry becomes SU(2)FORMULA SU(2) in the SU(4) symmetric limit.
+Because of the last factor in Eqs. (REF ) and (REF ), which converts electrons into composite fermions, these wave functions describe paired states of composite fermions.
+
+Results and conclusions
+We have studied CF Fermi sea states containing as many as 256 composite fermions (64 particles per Landau band),
+and our principal results{{cite:bcc86dbe-b41c-444d-b153-237e627702c2}} are given in Fig. REF  and Table REF .
+These pertain to fillings FORMULA  (FORMULA ); FORMULA  (FORMULA ); FORMULA  (FORMULA );
+FORMULA  (FORMULA ).
+(In relating FORMULA  to FORMULA , we have included the possibility of forming the state from either electrons or holes in a given Landau level.)
+When the spin or valley degeneracy is broken, the above study applies to many other half integral states also.
+To obtain the energy of the CF Fermi sea, we consider finite systems at FORMULA  and extrapolate the energy to the thermodynamic limit.
+The energies at FORMULA  have a complicated dependence on FORMULA , which makes extrapolation to the thermodynamic limit difficult.
+The following conclusions can be drawn.
+(i) For all fractions shown in Fig. REF , the hollow-core state has a very high energy and is therefore not relevant.
+(ii) The Pfaffian wave function also has higher energy than all of the CF Fermi sea states for all filling factors studied.
+In particular, it has higher energy than the fully polarized CF Fermi sea (FORMULA ) in the FORMULA  LL,
+in contrast to GaAs where the fully polarized CF Fermi sea has higher energy{{cite:195e507d-be34-45df-b109-2730e9f608b6}}.
+We therefore conclude that the Pfaffian state is not stabilized in either FORMULA  or FORMULA  Landau level in graphene.
+Interestingly, for the fully polarized state, the overlaps given in Table REF  indicate the Pfaffian wave function is
+actually a better representation of the exact Coulomb ground state at FORMULA  in the FORMULA  LL of graphene than it is
+of the 5/2 state in GaAs (for the latter, the overlaps are 0.87 and 0.84 for 8 and 10 particles, respectively{{cite:88d82b93-0187-4983-b64a-23ea603237c6}});
+nonetheless, energetic considerations rule out the Pfaffian state at FORMULA  in graphene.
+(iii) The overlaps given in Table REF  show that the Pfaffian is significantly worse at FORMULA , indicating that it is not stabilized in the FORMULA  LL of graphene either.
+(iv) We have considered CF Fermi sea wave functions of four distinct symmetries, ranging from SU(4) singlet to fully polarized.
+All of these have lower energies than either the Pfaffian or the hollow-core state.
+Without any symmetry breaking term, the SU(4) singlet CF Fermi sea has the lowest energy at FORMULA ,
+as expected from the model of non-interacting composite fermions. When the Zeeman and the pseudo-Zeeman energies are turned on, we expect a “partially-polarized" CF Fermi sea, and eventually a fully polarized CF Fermi sea.
+(v) The CF Fermi sea is also favored for FORMULA  and FORMULA , but the energy differences between the various CF Fermi sea states are very small, less than the statistical error in our Monte Carlo evaluations.
+FIGURE 
+TABLE 
+TABLE 
+Other authors{{cite:7b944fa8-02fc-44f6-bc14-d10103832dab}} have considered a CF Fermi sea state at
+FORMULA , where the fourfold degenerate FORMULA  LL is half full.
+Here, the electron (or hole) density in the FORMULA  Landau level is
+FORMULA , which, upon composite fermionization of all
+electrons, gives an effective field of FORMULA 
+for composite fermions, which should be contrasted with FORMULA  at
+FORMULA . Khveschenko{{cite:7b944fa8-02fc-44f6-bc14-d10103832dab}} considers a state in which each
+of the
+four degenerate Landau bands is half filled forming a CF Fermi sea; the
+flux attachment does not introduce correlations between different
+bands in this approach.
+Finally, we comment on some of the approximations made in the model
+considered above. We have neglected LL mixing in our calculation;
+given that the energy difference between the CFFS and the Pfaffian states is fairly large ( 3-5%), we believe that LL mixing will not cause a phase transition into a Pfaffian ground state, which is known to become worse with LL mixing{{cite:341c0354-ce9e-49bd-a9f3-c25e125f8217}}.
+
+Acknowledgements
+We thank the High Performance Computing (HPC) group at Penn State University ASET (Academic Services and Emerging Technologies)
+for assistance and computing time on the Lion-XO cluster,
+and the Center for Scientic Computing at J. W. Goethe-Universität for computing time on Cluster III.

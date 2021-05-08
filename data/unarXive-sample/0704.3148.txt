@@ -1,0 +1,908 @@
+
+The causal boundary of product spacetimesV. ALAÑA, J.L. FLORESThe second
+author has been supported by MEC Grants RyC-2004-382 and
+MTM-2004-06262.
+Departamento de Álgebra, Geometría y TopologíaFacultad de Ciencias, Universidad de MálagaCampus Teatinos, 29071 Málaga, SpainE-mail: floresj@agt.cie.uma.esPhone/Fax:
+(+34)952132387/2008
+
+Abstract.
+The new formulation of the causal completion of spacetimes
+suggested in {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}, and modified later in {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}}, is tested by
+computing the causal boundary for product spacetimes of a Lorentz
+interval and a Riemannian manifold. This is particularized for two
+important families of spacetimes, conformal to the previous ones:
+(standard) static spacetimes and Generalized Robertson-Walker
+spacetimes. As consequence, it is shown that this new approach
+essentially reproduces the structure of the conformal boundary for
+multiple classical spacetimes: Reissner-Nordstrom (including
+Schwarzschild), Anti-de Sitter, Taub and standard cosmological
+models as de Sitter and Einstein Universe.
+Keywords: boundary on spacetime, causal boundary, Busemann function, (standard) static spacetimes, Generalized Robertson-Walker spacetimes.
+2000 MSC: 53C50, 83C75
+
+Introduction
+In the last decades, relativists have shown great interest in
+certain remarkable properties related to the asymptotic behavior of
+spacetimes, as singularities. In order to get a better understanding
+of these phenomenons, sometimes it is very useful to attach a sort
+of ideal boundary to the spacetime. However, the construction of the
+`optimal' boundary has shown to be a very elusive problem up to
+date.
+A well-known boundary in Relativity is the conformal boundary
+{{cite:48576be8-a1f3-48c9-b7da-dd235f2604da}}, which consists of conformally embedding the original
+spacetime into a larger one, and then, taking the boundary of the
+image. However, this method is neither systematic nor intrinsic, and
+sometimes it results very restrictive. In order to overcome these
+handicaps, Geroch, Kronheimer and Penrose introduced a new
+construction called causal boundary {{cite:8fda79ac-ad4b-4e84-8d4b-dc23997f649e}}. In this new
+approach they attach a future (past) ideal point for every
+inextensible, physically admissible future (past) trajectory, in
+such a way that the ideal point only depends on the past (future) of
+the trajectory. In fact, this method is systematic, intrinsic and
+very general. However, it suffers from an important technical
+difficulty: in general, some future and past ideal points must be
+identified in order to avoid pathologies derived from having `too
+big' boundaries.
+Many authors have tried different methods to establish these
+identifications {{cite:8fda79ac-ad4b-4e84-8d4b-dc23997f649e}}, {{cite:92e6df1f-4d66-4b96-a145-6eac0e36e21b}}, {{cite:9e372a84-399c-4ea6-9054-eb86bc713ca0}}, {{cite:884fb11d-ad6b-4e60-842b-1e83eef8fbc1}}; indeed, this question is related
+to the introduction of a satisfactory topology for the completion.
+However, they have not obtained totally satisfactory results up to
+date (see {{cite:48f25c2d-64c1-42cf-b821-6e4efebcb386}}, {{cite:5bc6775f-2597-4d5e-aa29-4f75bc56bacc}}, {{cite:0b7fb6a5-781a-415c-b527-56fa2b7f841c}}, {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}). See also {{cite:cad3ad61-2440-4e0a-8fd2-b8f1c1f3868e}}, {{cite:6e676f19-8492-4b68-af4e-6f15e784308c}} for
+interesting reviews on the subject.
+Based on a new formulation by Marolf and Ross {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}, which
+replace the identifications by pairs representing the ideal points,
+recently the second author has developed a new approach to the
+causal boundary with promising results {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}}. This approach lies
+on a `minimality principle' which allows to establish the desired
+pairs, in addition to a reasonable topology for the completion. As
+consequence, it is obtained a construction with many satisfactory
+mathematical properties. However, this construction has not been
+checked in many spacetimes of physical interest.
+In this paper we are going to test this new formulation by computing
+the causal boundary for some physically relevant spacetimes. After a
+preliminary section devoted to recall some basic notions on causal
+structure and causal completions, in Section  we construct
+the causal boundary for product spacetimes of a Lorentz interval and
+a Riemannian manifold. In Section  we use the conformal
+invariance of the causal boundary to directly deduce the boundary
+for two important families in the conformal class: (standard) static
+spacetimes and Generalized Robertson-Walker spacetimes. As
+consequence, we describe the boundary for multiple classical
+spacetimes in these families: Reissner-Nordstrom (including
+Schwarzschild), Anti-de Sitter, Taub and standard cosmological
+models as de Sitter and Einstein Universe. Finally, in Section
+ we summarize the main conclusions, putting special emphasis
+in the fact that this approach essentially reproduces the structure
+of the conformal boundary for these examples.
+
+Preliminaries
+Let FORMULA  be a spacetime, i.e. a connected smooth manifold FORMULA 
+endowed with metric tensor FORMULA  of index 1. A tangent vector FORMULA , FORMULA  is named timelike (resp. lightlike;
+spacelike; causal) if FORMULA  (resp. FORMULA  and
+FORMULA ; FORMULA  or FORMULA ; FORMULA  is either timelike or
+lightlike). Accordingly, a smooth curve FORMULA  (FORMULA 
+real interval) is called timelike (resp. lightlike; spacelike; causal) if FORMULA  is timelike (resp.
+lightlike; spacelike; causal) for all FORMULA . Spacetimes are assumed to
+be time-orientable, i.e. they must admit a time-orientation, which is a continuous, globally defined, timelike
+vector field FORMULA . Fixed a time-orientation FORMULA , a causal curve
+FORMULA  is said future-directed (resp. past-directed) if FORMULA  (resp.
+FORMULA ) for all FORMULA . Future-directed causal
+curves represent all the physically admissible trajectories for
+material particles and light rays in the universe.
+Two events FORMULA  are chronologically related FORMULA 
+(resp. causally related FORMULA ) if there exists some
+future-directed timelike (resp. causal) curve from FORMULA  to FORMULA . If
+FORMULA  but FORMULA , they are said horismotically
+related FORMULA . The chronological past of FORMULA ,
+FORMULA , (resp. causal past of FORMULA , FORMULA ) is defined
+as:
+FORMULA 
+Of course, the chronological future of FORMULA , FORMULA  (resp.
+causal future of FORMULA , FORMULA ) is defined by replacing
+FORMULA  (resp. FORMULA ) by FORMULA  (resp. FORMULA ) in
+previous definition.
+The main purpose of the causal completion of spacetimes is to avoid
+the existence of inextensible timelike curves. This is overcome by
+adding ideal points to the spacetime in such a way that any
+timelike curve presents some endpoint in the new space. In order to
+rigorously describe this completion, applicable to strongly
+causal spacetimes (i.e. spacetimes without closed or `nearly
+closed' timelike curves), previously we need to introduce some
+terminology:
+A subset FORMULA  is called past set if it
+coincides with its past, which is always open; i.e.
+FORMULA . Given a
+subset FORMULA , the common past of FORMULA  is defined by
+FORMULA . A
+past set that cannot be written as the union of two proper subsets,
+both of which are also past sets, is called indecomposable
+past set, IP. An IP which does not coincide with the past of any
+point in FORMULA  is called terminal indecomposable past set, TIP.
+Otherwise, it is called proper indecomposable past set, PIP.
+By interchanging the roles of past and future, we obtain the
+corresponding notions for future set, common future, IF,
+TIF and PIF.
+In order to construct the future causal completion, first identify
+every event FORMULA  with its PIP, FORMULA . Then, the future causal boundary FORMULA  of FORMULA  is defined as
+the set of all TIPs in FORMULA . Therefore, the future causal
+completion FORMULA  becomes the set of all IPs:
+FORMULA 
+Analogously, every event FORMULA  can be identified with its PIF,
+FORMULA . Then, the past causal boundary
+FORMULA  of FORMULA  is defined as the set of all TIFs in
+FORMULA , and thus, the past causal completion FORMULA  is the
+set of all IFs:
+FORMULA 
+For the (total) causal completion, one immediately thinks of the
+space FORMULA . However, it becomes evident that by
+only imposing the obvious identifications FORMULA  on
+FORMULA  for all FORMULA , the resulting space
+FORMULA  does not provide a satisfactory description for the
+boundary of FORMULA : in fact, this procedure often attaches two ideal
+points where we would expect only one.
+The first attempt to establish identifications in
+FORMULA  was proposed in
+{{cite:8fda79ac-ad4b-4e84-8d4b-dc23997f649e}}. The authors introduced a generalized Alexandrov topology
+on FORMULA : the topology generated by the sub-basis
+FORMULA 
+FORMULA 
+Then, they suggested the minimum set of identifications necessary to
+obtain a Hausdorff space. However, this method fails to produce the
+`expected' structure and topology for the completion in some
+examples {{cite:48f25c2d-64c1-42cf-b821-6e4efebcb386}}, {{cite:5bc6775f-2597-4d5e-aa29-4f75bc56bacc}}, {{cite:62270553-73b8-4e35-a696-57cba6482f0c}}, {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}. As
+commented before, other more accurate attempts have been suggested
+since then, but without totally satisfactory results.
+An alternative procedure to making identifications consists of
+forming pairs composed by past and future indecomposable sets of
+FORMULA . This approach, firstly introduced in {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}} and developed
+later in {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}}, has exhibited satisfactory results for those
+spacetimes analyzed up to date (see {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}, {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}}, {{cite:4867dc69-22c1-4d7f-a510-9c80cc677085}}). In this paper
+we are going to test this approach for product spacetimes.
+Even if the criteria proposed in {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}} and {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}} for pairing
+terminal sets are different in general, they coincide in many cases.
+In particular, they coincide for those spacetimes such that every
+terminal set is not S-related (Szabados related) with more than one
+terminal set: we say that FORMULA  are S-related, FORMULA ,
+if FORMULA  is maximal IP into FORMULA  and FORMULA  is maximal IF into
+FORMULA . For these spacetimes, the construction in {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}} reduces to the following definition coming from {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}:
+Definition 2.1  The (total) causal boundary FORMULA  is formed by all
+the pairs FORMULA  formed by a TIP FORMULA  and a TIF FORMULA  such that:
+either FORMULA ; or FORMULA  and there is no FORMULA  such that FORMULA ; or FORMULA  and there is no
+FORMULA  such that FORMULA .
+
+This will be the definition adopted in this paper, since product
+spacetimes always satisfy the property above (Remark REF ).
+With this definition, the causal structure of the spacetime can be
+easily extended to the completion. Concretely, we say that FORMULA  are chronologically related,
+FORMULA , if FORMULA . Here, FORMULA ,
+FORMULA  will be said causally related, FORMULA ,
+if FORMULA  and FORMULA . Finally, FORMULA , FORMULA  are
+horismotically related, FORMULA , if they
+are causally, but not chronologically, related.
+The topology of the spacetime can be also extended to the
+completion. Here we adopt the so called chronological
+topology, firstly introduced in {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}}. This topology is defined
+in terms of the following limit operator FORMULA : given a sequence
+FORMULA , we say that FORMULA  ifBy LI and LS we must understand the usual
+inferior and superior limits of sets: i.e. LIFORMULA  and
+LSFORMULA .
+FORMULA 
+Then, the closed sets for the chronological topology are those
+subsets FORMULA  such that FORMULA  for
+any sequence FORMULA .
+Finally, we remark that the causal boundary is conformally
+invariant, i.e. it remains unaltered under conformal transformations
+of the spacetime.
+
+Causal boundary for product spacetimes
+We consider product spacetimes FORMULA  of a Lorentz interval
+FORMULA , FORMULA  and a Riemannian manifold
+FORMULA :
+FORMULA 
+Here, the time orientation is determined by FORMULA . Of
+course, these spacetimes are always strongly causal, and thus, the
+causal completion applies. In order to construct the causal boundary
+of these spacetimes, we have followed several steps. By
+completeness, we have included here some arguments and results
+coming from {{cite:93dfacaf-d867-4095-b2bb-3d5a9b83f245}}.
+
+FORMULA 1. Computation of PIPs and PIFs:
+
+We begin by computing the PIPs and PIFs. If FORMULA  then there exists a timelike curve
+FORMULA  such that FORMULA ,
+FORMULA . Since FORMULA  is timelike, necessarily
+FORMULA  for all FORMULA . In
+particular,
+FORMULA 
+being FORMULA  the distance in FORMULA  associated to FORMULA . Reciprocally, if
+FORMULA  then there exists a curve FORMULA  in FORMULA 
+with FORMULA , FORMULA  such that FORMULA 
+for all FORMULA . Therefore, the curve FORMULA , with
+FORMULA , is timelike and satisfies
+FORMULA , FORMULA , proving that
+FORMULA . Summarizing:
+FORMULA 
+This property directly provides the following result:
+Proposition 3.1 The PIPs and PIFs of product spacetime (REF ) are:
+FORMULA 
+being FORMULA .
+
+
+FORMULA 2. Computation of TIPs and TIFs:
+
+To this aim, we only need to compute the past and future of
+inextensible timelike curves (see, for example, {{cite:7c1cc3a7-94db-43ec-8193-36c87b27a871}}). So, let FORMULA  be an inextensible
+future-directed timelike curve. In particular, FORMULA  for
+all FORMULA , and thus, we can reparametrize FORMULA  by FORMULA  in order to
+obtain FORMULA , where now the spatial projection FORMULA  is
+a curve with domain some interval FORMULA , FORMULA  and
+velocity FORMULA . The following definition will be useful:
+Definition 3.2 We define the Busemann function of such a curve FORMULA  as the function:
+FORMULA 
+
+Recall that the past of FORMULA  coincides with the union of the
+pasts FORMULA  FORMULA . Therefore,
+FORMULA  if and only if FORMULA  for some FORMULA  close enough to FORMULA  (observe
+that FORMULA  if
+FORMULA ). Taking into account (REF ), this condition
+translates into the following inequality:
+FORMULA 
+If FORMULA  is an inextensible past-directed timelike
+curve, analogous arguments can be applied (just interchange the
+roles of future and past) in order to obtain: FORMULA  if and only if
+FORMULA 
+Summarizing, we can establish the following result:
+Proposition 3.3  The TIPs (TIFs) of product
+spacetime (REF ) are:
+FORMULA 
+for any inextensible future (past) timelike curve FORMULA .
+
+
+FORMULA 3. Partial boundaries:
+
+The structure of the partial boundaries can be analyzed in terms of
+the extremes of the interval:
+
+Case FORMULA . Any inextensible curve FORMULA  with
+component FORMULA  approaching to some FORMULA  satisfy
+FORMULA . Moreover, in this case FORMULA .
+Therefore, from Proposition REF  these curves satisfy
+FORMULA 
+This TIP corresponds to the future timelike infinity, and is
+labeled by FORMULA . The rest of TIPs are univocally determined by
+all the finite Busemann functions FORMULA  in FORMULA 
+associated to inextensible components FORMULA  of curves FORMULA .
+Therefore, if FORMULA  denotes the set of all these finite
+Busemann functions, then we have:
+FORMULA 
+The set FORMULA  is invariant under the additive action: if
+FORMULA  then FORMULA  for all FORMULA  (in fact, FORMULA  if FORMULA ).
+Therefore, if we define the Busemann boundary as the quotient
+FORMULA 
+then it is
+FORMULA 
+It should be remarked that FORMULA  includes two types of
+elements. Those points associated to inextensible curves FORMULA  with
+FORMULA , which can be interpreted as `infinity directions'
+of the manifold FORMULA ; and those points associated to inextensible
+curves FORMULA  with FORMULA , which define points of the Cauchy boundary FORMULA  of the manifold. In this last
+case we have FORMULA , FORMULA .
+
+Case FORMULA . Now FORMULA , and thus, FORMULA 
+for any FORMULA . In particular, FORMULA  does not belong to the future
+boundary of the spacetime. Indeed, every inextensible curve FORMULA 
+with FORMULA  approaching to some FORMULA , and thus, FORMULA , has
+Busemann function FORMULA . As consequence, the
+future boundary contains a copy of FORMULA . The rest of TIPs are
+univocally determined by all the finite Busemann functions
+FORMULA  associated to inextensible components FORMULA  of curves
+FORMULA . We denoted this set by FORMULA . Arguing as before,
+FORMULA  is invariant by the additive action: if FORMULA  then FORMULA  for all FORMULA . Therefore:
+FORMULA 
+
+If we repeat the arguments above, but now interchanging the roles
+of future and past, we obtain the corresponding results for the
+past boundaries in terms of the extreme FORMULA . That is:
+
+Case FORMULA . Now FORMULA , where FORMULA  labels the TIF FORMULA  corresponding to the
+past timelike infinity.
+ Case FORMULA . Now FORMULA .
+
+FORMULA 4. The (total) causal boundary:
+
+In order to construct the (total) causal boundary from the partial
+boundaries, we need to know which TIPs FORMULA  and TIFs FORMULA  are
+S-related. The following lemma solves this question:
+Lemma 3.4  Two terminal sets
+FORMULA  of FORMULA  satisfy FORMULA  iff for some
+ FORMULA
+FORMULA 
+
+Proof. Suppose that FORMULA , with FORMULA .
+Let FORMULA ,
+FORMULA  be an inextensible future-directed
+timelike curve such that FORMULA . Since FORMULA  and coordinate FORMULA  strictly increases
+along future-directed timelike curves, necessarily FORMULA .
+Moreover, since FORMULA  is inextensible, necessarily
+FORMULA . Analogously,
+FORMULA , where FORMULA , FORMULA , is an inextensible
+past-directed timelike curve such that FORMULA  and FORMULA . Summarizing:
+FORMULA 
+being FORMULA  and FORMULA .
+Moreover, it is FORMULA , since,
+otherwise, we can take FORMULA  and
+FORMULA  such that
+FORMULA , which
+implies FORMULA ,
+FORMULA  but
+FORMULA , in
+contradiction with FORMULA . Finally, notice also that
+FORMULA , and thus, FORMULA . In fact, take any
+FORMULA  and FORMULA 
+such that FORMULA  and
+FORMULA . Then,
+FORMULA  satisfies
+FORMULA , which contradicts
+the maximality of FORMULA  into FORMULA .
+Assume now that (REF ) holds for some FORMULA .
+If FORMULA  then FORMULA , which implies FORMULA . Therefore, FORMULA . Moreover, FORMULA  is
+maximal into FORMULA , since, otherwise, there would exist
+FORMULA  satisfying FORMULA  and
+FORMULA , a contradiction. Analogously, we can
+prove that FORMULA  is maximal into FORMULA . Whence, FORMULA .
+ FORMULA
+Remark 3.5  In particular, this shows that every terminal set is not S-related with more
+than one terminal set.
+
+
+From Definition REF , Lemma REF  and Remark
+REF , we deduce the following result:
+Proposition 3.6 The causal boundary FORMULA  of
+FORMULA  can be written as the union of the corresponding partial
+boundaries FORMULA , FORMULA , with each
+pair of lines in FORMULA , FORMULA  based on
+the same point of FORMULA  identified.
+
+
+FORMULA 5. Causal structure and topology for the
+boundary:
+
+The causal relations between ideal points are given by this
+proposition:
+Proposition 3.7  Let FORMULA ,
+FORMULA  be a product spacetime. Then:
+(i)
+The lines of the boundary based on points in
+FORMULA  are null (i.e. any two
+points on the line are horismotically related).
+(ii)
+The lines of the boundary based on points in
+FORMULA  are timelike (i.e. any two points on the line are
+chronologically related).
+(iii)
+The copies of FORMULA  in the boundary are spacelike (i.e. any two points on the copy are not causally related).
+
+
+Proof. (i) Let FORMULA , FORMULA  be two
+elements of the boundary lying on some line based on some point in
+FORMULA . Then, it is not a
+restriction to assume
+FORMULA 
+Therefore, FORMULA ,
+which proves that FORMULA  and FORMULA  are causally
+related. On the other hand, the equality FORMULA  implies that they are not chronologically related.
+Whence FORMULA  and FORMULA  are horismotically
+related.
+(ii) Let FORMULA , FORMULA  be two elements of the boundary
+lying on some line based on some point FORMULA . We
+can assume that
+FORMULA 
+As consequence, if FORMULA  and
+FORMULA  is such that FORMULA , then
+FORMULA ,
+FORMULA , and thus,
+FORMULA . Whence, FORMULA 
+and FORMULA  are chronologically related.
+(iii) For example, let FORMULA  be
+two elements of some copy of FORMULA  in the boundary. Then
+FORMULA  for some inextensible timelike curve
+FORMULA , FORMULA ,
+FORMULA , and FORMULA  for
+some inextensible timelike curve FORMULA ,
+FORMULA , FORMULA ,
+FORMULA . In particular, FORMULA ,
+FORMULA  for all FORMULA  close enough to FORMULA .
+Whence, FORMULA , FORMULA , which implies that
+FORMULA , FORMULA  are not causally related.  FORMULA
+
+Finally, the topology for the causal completion is directly deduced
+from the definition of limit operator FORMULA  in terms of FORMULA  and
+FORMULA  (formulae (REF )):
+Proposition 3.8 The chronological topology on FORMULA  coincides with the quotient topology under FORMULA  of the topology generated
+by the limit operators FORMULA  and FORMULA  on FORMULA .
+
+
+FORMULA 6. Main result:
+
+All these propositions, joined to the following result from
+{{cite:35ae9248-caec-4081-9034-bf9e34f7c2d4}}, yield our main statement, Theorem
+REF .
+Proposition 3.9  Let FORMULA  be a Riemannian manifold with FORMULA , FORMULA 
+a positive function, FORMULA  a compact manifold, and metric given by
+FORMULA  (being FORMULA  the metric on FORMULA ).
+For some FORMULA  in FORMULA , assume that
+FORMULA  is decreasing in FORMULA  and
+increasing in FORMULA , or increasing in the
+whole FORMULA  with FORMULA , FORMULA . Then
+FORMULA  is formed by two spaces FORMULA  and
+FORMULA , attached at FORMULA  and
+FORMULA , resp., with each FORMULA 
+(FORMULA ) being FORMULA  or an unique point FORMULA :
+concretely, FORMULA  if
+FORMULA , and
+FORMULA  if
+FORMULA . Moreover,
+FORMULA  belongs to FORMULA  if and only if the
+extreme FORMULA  is finite.
+
+
+Theorem 3.10  Let FORMULA , FORMULA  be
+a product spacetime whose spatial part FORMULA  falls under the
+hypotheses of Proposition REF . Then, the causal boundary of
+FORMULA  admits the following structure (with the chronological
+topology):
+(i)
+If FORMULA  then it is formed by two
+infinity null cones, one for the future and another for the past,
+with base FORMULA  and apexes
+FORMULA  and FORMULA , resp., and timelike lines of future and past
+extremes FORMULA  and FORMULA , resp., on each point of
+FORMULA  (Figure 1).
+(ii)
+If FORMULA 
+then it is formed by two copies, one for the future and another for
+the past, of the Cauchy completion FORMULA  of FORMULA ,
+and timelike lines based on each point of FORMULA  which
+connect both copies (Figure 2).
+(iii)
+If FORMULA  then it is formed by an
+infinity null cone for the future with base
+FORMULA  and apex FORMULA , a copy
+of FORMULA  for the past, and timelike lines based on each
+point of FORMULA  which connect FORMULA  with
+FORMULA  (Figure 3).
+(iv)
+If FORMULA  then it is
+formed by an infinity null cone for the past with base
+FORMULA  and apex FORMULA , a copy
+of FORMULA  for the future, and timelike lines based on
+each point of FORMULA  which connect FORMULA  with
+FORMULA  (Figure 4).
+
+Moreover, FORMULA  is formed by two spaces FORMULA 
+and FORMULA , attached at FORMULA  and
+FORMULA , resp., with each FORMULA 
+(FORMULA ) being FORMULA  or an unique point FORMULA :
+concretely, FORMULA  if
+FORMULA , and
+FORMULA  if
+FORMULA . Finally,
+FORMULA  belongs to the Cauchy boundary FORMULA  if
+and only if the extreme FORMULA  is finite.
+
+In particular, Theorem REF  shows that the causal boundary
+of a product spacetime is exclusively determined by the Busemann
+boundary FORMULA  (and the Cauchy boundary
+FORMULA ) of the spatial part FORMULA  and the extremes of
+the temporal interval FORMULA .
+Remark 3.11  If the spatial part FORMULA  does not fall under the hypotheses of Proposition REF , the structure statements of the first part of Theorem REF  are still true.
+
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+
+Applications
+Even though product spacetimes present a relatively simple
+structure, the conformal class is very general, including families
+of spacetimes of great interest in Relativity. Concretely, we have
+(standard) static spacetimes and Generalized
+Robertson-Walker spacetimes.
+Static spacetimes
+(Standard) static spacetimes can be written as
+FORMULA 
+where FORMULA  is a Riemannian manifold and FORMULA  a positive
+function defined on FORMULA . A systematic study of the partial
+boundaries for these spacetimes was initiated by Harris in
+{{cite:93dfacaf-d867-4095-b2bb-3d5a9b83f245}}, and then continued in collaboration with the second
+author in {{cite:35ae9248-caec-4081-9034-bf9e34f7c2d4}}. However, these papers do not deal with the
+question of how to attach the partial boundaries together in order
+to form the (total) causal boundary. In this section we are going to
+apply Theorem REF  to cover this deficiency.
+First, apply a conformal transformation to (REF ), with
+conformal factor FORMULA . We obtain the new metric
+FORMULA 
+So, the conformal invariance of the causal boundary reduces the
+problem to study the product spacetime:
+FORMULA 
+where we have renamed FORMULA  by FORMULA . This spacetime falls
+under the hypothesis (i) of Theorem REF . Therefore:
+Theorem 4.1  Let FORMULA  be a static spacetime as in (REF ). Assume that the spatial part
+FORMULA  endowed with metric FORMULA  falls under the hypotheses
+of Proposition REF . Then, the causal boundary (with the
+chronological topology) is formed by two null cones, one for the
+future and another for the past, with base
+FORMULA  and apexes FORMULA  and
+FORMULA , resp., and timelike lines on each element of
+FORMULA , with future and past extremes FORMULA  and
+FORMULA , resp. (Figure 1). Moreover, FORMULA  is formed by
+two spaces FORMULA  and FORMULA , attached at
+FORMULA  and FORMULA , resp., with each
+FORMULA  (FORMULA ) being FORMULA  or an unique point
+FORMULA : FORMULA  if
+FORMULA , and
+FORMULA  if
+FORMULA . Finally,
+FORMULA  belongs to the Cauchy boundary FORMULA  if and
+only if the extreme FORMULA  is finite.
+
+
+Next, we are going to apply this result to some
+classical static spacetimes:
+
+FORMULA  Reissner-Nordstrom spacetime:
+
+In local coordinates, this spacetime can be written as:
+FORMULA 
+where
+FORMULA 
+It models the gravitational field outside an electrically charged
+massive object which is spherically symmetric. The constants FORMULA 
+and FORMULA  can be identified with the gravitational mass and the
+electric charge of the object. The static regions of this spacetime
+are determined by condition FORMULA . So, we distinguish two cases:
+
+-Case weakly or critically charged, FORMULA : Here, FORMULA 
+is positive for FORMULA , where
+FORMULA . First, consider the exterior
+region FORMULA . We have
+FORMULA 
+Observe that FORMULA  endowed with metric FORMULA  falls under
+the hypotheses of Proposition REF , being
+FORMULA 
+and
+FORMULA 
+Moreover,
+FORMULA 
+Therefore: the causal boundary of the exterior region of weakly
+or critically charged Reissner-Nordstrom (with the chronological
+topology) is formed by two null cones at FORMULA  with base
+FORMULA  and apexes FORMULA , FORMULA , and two null cones at infinity
+with base FORMULA  and the same apexes FORMULA , FORMULA  (Figure 5).
+In particular, this is also the causal boundary for the exterior
+region of Schwarzschild spacetime (FORMULA ).
+This is in agreement with the conformal approach. The double cone at
+FORMULA  is due to the fact that only the region FORMULA  is
+considered. On the other hand, the double cone at infinity is due to
+the similarity between Reissner-Nordstrom and Minkowski far away
+from the source.
+
+Consider now the interior region FORMULA . We have
+FORMULA 
+The spatial part FORMULA  endowed with metric FORMULA  falls
+again under the hypotheses of Proposition REF , with
+FORMULA  and FORMULA  as before, but now
+FORMULA 
+Moreover,
+FORMULA 
+Therefore: the causal boundary of the interior region of weakly
+or critically charged Reissner-Nordstrom (with the chronological
+topology) is formed by two null cones at FORMULA , with base
+FORMULA  and apexes FORMULA  and FORMULA , joined by both extremes to
+an unique timelike line at FORMULA , the central singularity (Figure
+5).
+This result justifies rigourously the identifications between the
+future and past timelike lines at FORMULA  suggested in {{cite:35ae9248-caec-4081-9034-bf9e34f7c2d4}} `without proof'. Notice also that the Reissner-Nordstrom
+singularity becomes 1-dimensional, in contraposition to the
+well-known FORMULA  structure of the Schwarzschild
+singularity.
+FIGURE 
+
+-Case strongly charged, FORMULA : Now, FORMULA  for all FORMULA ,
+and so, the static region coincides with the whole spacetime
+FORMULA . Therefore, FORMULA , and FORMULA , FORMULA  maintain the same expression as
+before. The spatial part FORMULA  endowed with metric FORMULA 
+falls under the hypotheses of Proposition REF , being
+FORMULA  and FORMULA  as in previous cases, and
+FORMULA 
+Moreover,
+FORMULA 
+Therefore: the causal boundary of strongly charged
+Reissner-Nordstrom (with the chronological topology) is formed by
+two null cones at FORMULA  with base FORMULA  and apexes FORMULA ,
+FORMULA , and a timelike line at FORMULA  with the same extremes
+FORMULA , FORMULA . (In this case, the diagram corresponds to the
+right picture in Figure 5 with FORMULA  and FORMULA 
+replaced by FORMULA .)
+
+FORMULA  Anti-de Sitter spacetime:
+
+This spacetime of constant sectional curvature FORMULA  and topology
+FORMULA  does contain closed timelike curves. In
+particular, it is not strongly causal, and thus, the causal boundary
+approach cannot apply. However, this spacetime is not 1-connected,
+being its universal cover strongly causal and static. Consequently,
+in this section by Anti-de Sitter spacetime we will understand
+its universal cover.
+In local coordinates, Anti-de Sitter spacetime can be written as
+FORMULA 
+According to the notation previously introduced, we have
+FORMULA 
+The spatial part FORMULA  endowed with metric FORMULA  falls
+under the hypotheses of Proposition REF , being
+FORMULA 
+and
+FORMULA 
+Moreover,
+FORMULA 
+Therefore, if we ignore the boundary region associated to FORMULA ,
+which is not representative because it corresponds to a coordinate
+singularity, we obtain the following structure: the causal
+boundary of Anti-de Sitter spacetime (with the chronological
+topology) is formed just by a timelike surface at FORMULA  of
+section FORMULA , which connects the points FORMULA  and FORMULA 
+(Figure 6).
+
+In particular, this structure coincides with the conformal boundary.
+Notice however that points FORMULA , FORMULA  are isolated in the
+conformal approach {{cite:d4042383-d9ab-41dd-9d5a-77b7f0bbc11d}}.
+FIGURE 
+
+FORMULA  Taub spacetime:
+
+This spacetime, firstly introduced by A. H. Taub in {{cite:ec6f4083-1558-4ef9-8077-0a97de697b84}}, can
+be written as:
+FORMULA 
+It is the unique solution of empty Einstein equations without
+cosmological term, which is plane symmetric and static. The causal
+boundary of Taub spacetime was studied by Kuang, Li and Liang in
+{{cite:48f25c2d-64c1-42cf-b821-6e4efebcb386}}. Surprisingly, they found that the singular region of the
+boundary reduces to one point when the GKP construction is applied,
+in contraposition to the 1-dimensional structure physically
+expected. Since then, this result has been claimed as an important
+evidence that GKP approach is not totally satisfactory. Next, we are
+going to apply Theorem REF  in order to show that this defect
+is not present in the approach followed in this paper.
+According to the notation previously introduced, now we have:
+FORMULA 
+Therefore,
+FORMULA 
+In this case, the spatial part FORMULA  endowed with metric
+FORMULA  does not fall under the hypotheses of Proposition
+REF , since FORMULA  is not compact. However, from the
+analysis and classification of the pasts and futures of inextensible
+causal curves developed in {{cite:48f25c2d-64c1-42cf-b821-6e4efebcb386}}, it implicitly
+follows
+FORMULA 
+Therefore, from the first part of Theorem REF  (recall Remark
+REF ), we obtain: the causal boundary of Taub spacetime is
+formed by a timelike line at FORMULA  of future and past extremes
+FORMULA , FORMULA , resp., and two null cones at FORMULA , one
+for the future and another for the past, with base FORMULA  and
+apexes FORMULA , FORMULA , resp. (Figure 7).
+
+In conclusion, this result does reproduce the 1-dimensional
+character of the Taub singularity, represented by the region of the
+boundary at FORMULA .
+FIGURE 
+
+Generalized Robertson-Walker spacetimes
+By Generalized Robertson-Walker (GRW) spacetimes we understand the
+family of spacetimes given by:
+FORMULA 
+where FORMULA  is an open interval of FORMULA  called base, FORMULA  is an arbitrary Riemannian manifold called fiber and FORMULA  is a positive function defined on FORMULA 
+called warping function or scale factor. This family is
+quite important in Relativity, since it provides a first approach to
+the global structure of the universe: not for nothing it arises as a
+natural generalization of the standard cosmological models (studied
+in a moment). See {{cite:b3ff6693-1cc0-432f-9590-eaddd59b2d5d}}, {{cite:d6a04281-a16f-4132-a3ce-45fe793c0b53}} for local and global geometrical
+characterizations of GRW spacetimes.
+The causal boundary of these spacetimes can be obtained by applying
+the result {{cite:62270553-73b8-4e35-a696-57cba6482f0c}}, which describes the partial
+boundaries for the more general family of multiwarped
+spacetimes (i.e., multiple fibers and multiple warping functions
+considered). However, this result does not work when the resulting
+boundary has non-spacelike regions. In this section we are going to
+use Theorem REF  to extend this result to cover any causal
+character for the boundary, at least in the smaller class of GRW
+spacetimes.
+To this aim, first apply a conformal transformation to
+(REF ), with conformal factor FORMULA . We
+obtain the new metric
+FORMULA 
+where the variable FORMULA  is defined by the relation
+FORMULA . Taking into account the conformal
+invariance of the causal boundary, we only need to study the product
+spacetime
+FORMULA 
+where FORMULA  is the domain for the new variable FORMULA , and thus, it
+may be different from the initial interval FORMULA . From the
+relation between FORMULA  and FORMULA  it directly follows:
+FORMULA 
+Therefore, we conclude that the causal boundary of GRW spacetime
+(REF ) coincides with that of the spacetime
+FORMULA 
+where we have renamed FORMULA  and FORMULA  by FORMULA  and FORMULA , resp.
+Theorem REF  applied to (REF ) then provides the
+following result:
+Theorem 4.2  Let FORMULA , FORMULA  be a GRW spacetime with spatial part
+FORMULA  under the hypotheses of Proposition REF . Then, the
+causal boundary (with the chronological topology) has the following
+structure:
+(i)
+If
+FORMULA 
+then it is formed by two infinity null cones, one for the future and
+another for the past, with base
+FORMULA  and apexes FORMULA  and
+FORMULA , resp., and timelike lines of future and past extremes
+FORMULA  and FORMULA , resp., on each point of FORMULA 
+(Figure 1).
+(ii)
+If FORMULA  then it is formed by
+two copies, one for the future and another for the past, of the
+Cauchy completion FORMULA  of FORMULA , and timelike lines
+based on each point of FORMULA  which connect both copies
+(Figure 2).
+(iii)
+If
+FORMULA ,
+FORMULA  then it is formed by
+an infinity null cone for the future with base
+FORMULA  and apex FORMULA , a copy
+of FORMULA  for the past, and timelike lines based on each
+point of FORMULA  which connect FORMULA  with
+FORMULA  (Figure 3).
+(iv)
+If
+FORMULA ,
+FORMULA  then it is formed by
+an infinity null cone for the past with base
+FORMULA  and apex FORMULA , a copy
+of FORMULA  for the future, and timelike lines based on
+each point of FORMULA  which connect FORMULA  with
+FORMULA  (Figure 4).
+
+Moreover, FORMULA  is formed by two spaces FORMULA 
+and FORMULA , attached at FORMULA  and
+FORMULA , resp., with each FORMULA 
+(FORMULA ) being FORMULA  or an unique point FORMULA :
+concretely, FORMULA  if
+FORMULA , and
+FORMULA  if
+FORMULA . Finally,
+FORMULA  belongs to the Cauchy boundary FORMULA  if
+and only if the extreme FORMULA  is finite.
+
+In particular, the structure of the causal boundary for GRW
+spacetimes depends on both, the spatial part FORMULA  and the scale
+factor FORMULA . If the spatial part FORMULA  is complete
+(FORMULA ), the boundary presents at each extreme
+of the temporal interval FORMULA , either a spacelike cover
+structure FORMULA  or a null cone with base FORMULA , depending
+on the growth of the scale factor at each extreme. However, if the
+spatial part FORMULA  is incomplete (FORMULA ),
+the boundary will also contain timelike lines on each point of
+FORMULA , reachable by observers of the universe in finite
+proper time. Hence, the boundary is not necessarily time symmetric
+and may contain regions of any causal character (null, timelike or
+spacelike).
+
+FORMULA  FLRW spacetimes:
+
+By completeness, we are going to particularize previous result to
+Friedman-Lemaitre-Robertson-Walker (FLRW) spacetimes, i.e. the
+spatial part is now a geometric model. In this case, the spacetime
+manifold FORMULA  is either FORMULA  if FORMULA  or
+FORMULA  if FORMULA . In local coordinates, the line
+element reads
+FORMULA 
+where FORMULA  is the scale factor and
+FORMULA 
+Therefore, Theorem REF  gives:
+Theorem 4.3 
+The causal boundary of a FLRW spacetime, FORMULA ,
+FORMULA  with FORMULA  or FORMULA ,
+has the following structure:
+(i)
+If
+FORMULA 
+then it is formed by two infinity null cones, one for the future and
+another for the past, with base FORMULA  and apex FORMULA  and
+FORMULA , resp., if FORMULA , or it is formed just by
+FORMULA , FORMULA  if FORMULA .
+(ii)
+If
+FORMULA  then it is formed by
+two spacelike copies, one for the future and another for the past,
+of FORMULA  if FORMULA , or FORMULA  if FORMULA .
+(iii)
+If
+FORMULA ,
+FORMULA  then it is formed by
+an infinity null cone for the future with base FORMULA  and apex
+FORMULA  and a copy of FORMULA  for the past if FORMULA , or
+it is formed by FORMULA  for the future and a copy of FORMULA  for
+the past if FORMULA .
+(iv)
+If
+FORMULA ,
+FORMULA  then it is formed by
+an infinity null cone with base FORMULA  and apex FORMULA  and a copy
+of FORMULA  for the future if FORMULA , or it is formed by
+FORMULA  for the past and a copy of FORMULA  for the future if
+FORMULA .
+
+
+Proof. If FORMULA , the spatial part is
+FORMULA 
+In particular, FORMULA  falls under the hypotheses of Proposition
+REF . Therefore, the conclusion directly follows from Theorem
+REF  and the integrals
+FORMULA 
+(Obviously, we have ignored the boundary region at FORMULA .)
+Assume now that FORMULA . In this case, FORMULA , and thus,
+the spatial part does not fall under the hypotheses of Proposition
+REF . However, from Remark REF  the first part of Theorem
+REF  still holds. Whence, the conclusion directly
+follows from FORMULA 
+and FORMULA .  FORMULA
+
+An immediate application of this result gives the causal boundary
+for Einstein Static Universe. This spacetime is a FLRW model
+with base FORMULA , fiber FORMULA  and scale factor
+FORMULA . Therefore, taking into account that
+FORMULA : the causal
+boundary of ESU is formed by the points, FORMULA , FORMULA . In this
+case, the weak (indeed, null) asymptotic growth of the scale factor
+implies degeneration of the boundary in two unique points. On the
+opposite side we have de Sitter spacetime. This is a FLRW
+model with base FORMULA , fiber FORMULA  and scale factor
+FORMULA . Therefore, taking into account that
+FORMULA :
+the causal boundary of de Sitter spacetime is formed by two
+spacelike copies of FORMULA , one for the past and another for the
+future. So, it is the strong asymptotic growth of the scale factor
+FORMULA  which produces this big boundary.
+
+Conclusions
+The main result in this paper is Theorem REF , which
+describes the causal boundary for product spacetimes of a Lorentz
+interval and a Riemannian manifold. The huge conformal class of
+these spacetimes, which includes both, (standard) static spacetimes
+and Generalized Robertson-Walker spacetimes, makes this result
+specially useful to deduce the boundary of multiple classical
+spacetimes. In particular, we have explicitly described the causal
+boundary for Reissner-Nordstrom (including Schwarzschild), Anti-de
+Sitter, Taub and standard cosmological models as de Sitter spacetime
+and Einstein Static Universe.
+In this paper we have used the formulation of the causal boundary
+introduced in {{cite:fe643458-a465-49bc-84f6-5b5288174e3d}}, and modified later in {{cite:cbab7c27-cf84-4947-ab34-c38380362dfd}}. As
+consequence, we have tested this new formulation for the classical
+spacetimes previously cited. In particular, we have found that the
+causal boundary essentially reproduces the structure of the
+conformal boundary in these cases: right identifications between the
+temporal lines of the boundary, expected dimensionality for the
+singular regions, satisfactory topology for the completion...
+This paper can be considered a very initial step in the ambitious
+project of describing the causal boundary of spacetimes FORMULA  with metric FORMULA , where FORMULA  may depend on time.
+As an indication of the importance and generality of this problem,
+just recall that any globally hyperbolic spacetime admits this
+decomposition, see {{cite:63e376d2-b9ff-4407-b506-e38cb6277fd7}}. Another step within this program may
+consist of completing the results about the boundary of multiwarped
+spacetimes in {{cite:62270553-73b8-4e35-a696-57cba6482f0c}}. These spacetimes are very interesting
+because, apart from including certain regions of Schwarzschild and
+Reissner-Nordstrom uncovered in this paper, they also include
+Bianchi type IX spacetimes (as Kasner), spacetimes with internal
+degrees of freedom attached at every point and multidimensional
+inflationary models.

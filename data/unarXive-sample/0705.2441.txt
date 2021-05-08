@@ -1,0 +1,1711 @@
+
+
+Lifting Points
+A. Jensen, H. Markwig, T. Markwig
+An algorithm for lifting points in a tropical variety
+Anders Nedergaard Jensen, Hannah Markwig and Thomas Markwig
+Anders Nedergaard Jensen, Institut für Mathematik, MA 4-5, Technische Universität Berlin, 10623 Berlin, Germany jensen@math.tu-berlin.deThomas Markwig, Fachbereich Mathematik, Technische Universität
+Kaiserslautern, Postfach 3049, 67653 Kaiserslautern, Germany keilen@mathematik.uni-kl.dehttp://www.mathematik.uni-kl.de/~keilenHannah Markwig, Institute for Mathematics and its
+Applications, University of Minnesota, 400 Lind Hall
+207 Church Street S.E., Minneapolis, MN 55455-0436 markwig@ima.umn.edu
+The first and third author would like to thank the
+Institute for Mathematics and its Applications (IMA) in Minneapolis for hospitalityPrimary 13P10, 51M20, 16W60, 12J25; Secondary 14Q99, 14R99
+Tropical geometry, Puiseux series, Puiseux parametrisation.
+
+The aim of this paper is to give a constructive proof of one of
+the basic theorems of tropical geometry: given a point on a
+tropical variety (defined using initial ideals), there exists a
+Puiseux-valued “lift” of this point in the algebraic
+variety. This theorem is so
+fundamental because it justifies why a tropical variety (defined
+combinatorially using initial ideals) carries information about
+algebraic varieties: it is the image of an algebraic
+variety over the Puiseux series under the valuation map.
+We have implemented the “lifting algorithm” using Singular
+and Gfan if the base field is FORMULA . As a byproduct we
+get an algorithm to compute
+the Puiseux expansion of a space curve singularity in
+FORMULA .
+
+Introduction
+In tropical geometry, algebraic varieties are replaced by certain
+piecewise linear objects called tropical varieties. Many algebraic
+geometry theorems have been “translated” to the tropical world
+(see for example {{cite:e79a9c74-d01c-4835-84de-f38f6488ca18}}, {{cite:6454b2e9-6e59-4590-8286-911aebd06612}}, {{cite:930c3a0b-22f1-4e12-9a4d-eebe47975b77}},
+{{cite:714b8989-145b-479e-95c8-a3cafc71a657}} and many more).
+Because new methods can be used in the tropical world — for
+example, combinatorial methods — and because the objects seem
+easier to deal with due to their piecewise linearity, tropical
+geometry is a promising tool for deriving new results in algebraic
+geometry. (For example, the Welschinger invariant can be computed tropically,
+see {{cite:e79a9c74-d01c-4835-84de-f38f6488ca18}}).
+There are two ways to define the tropical variety FORMULA  for an
+ideal FORMULA  in the polynomial ring FORMULA  over the field of
+Puiseux series (see Definition
+). One way is to define the tropical variety
+combinatorially using FORMULA -initial ideals (see
+Definition 
+and Definition , resp. {{cite:930c3a0b-22f1-4e12-9a4d-eebe47975b77}}) — this
+definition is more helpful when computing and it is the definition
+we use in this paper.
+The other way to define tropical varieties is as the closure of
+the image of the algebraic variety FORMULA  of FORMULA  in FORMULA 
+under the negative of
+the valuation map (see Remark , resp. {{cite:650793e7-efe2-432a-be4a-ab31273b0e77}}, Definition 2.1) — this gives more insight why
+tropical varieties carry information about algebraic varieties.
+It is our main aim in this paper to give a constructive proof that
+these two concepts coincide (see Theorem ), and
+to derive that way an
+algorithm which allows to lift a given point FORMULA  to
+a point in FORMULA  up to given order (see Algorithms 
+and ). The algorithm has been implemented
+using the commutative algebra system Singular (see
+{{cite:d397214f-6e0e-4333-9aae-6f84241ec326}}) and the programme Gfan (see {{cite:e192c502-a45a-4004-81b9-db4437f35969}}), which
+computes Gröbner fans and tropical varieties.
+Theorem  has been proved in the case of a
+principal ideal by {{cite:1bfdb34a-46aa-44be-9105-ba27992afbc5}}, Theorem 2.1.1.
+There is also a constructive proof for a principal ideal in
+{{cite:467087bd-c7c4-408a-938a-697fe49ae5a6}}, Theorem 2.4.
+For the general case, there is a proof in {{cite:5825ac02-6cb6-4b88-ba31-01ee0bf2fdf8}}, Theorem 2.1,
+which has a gap however. Furthermore, there is a proof in
+{{cite:a4ba6e78-8120-4313-b71b-f1c1def28b0c}}, Theorem 4.2, using affinoid algebras, and in
+{{cite:8353dc3c-ed4d-4d94-9e6b-68c7d6a119e9}}, Lemma 5.2.2, using flat schemes.
+A more general statement is proved in {{cite:57d7e898-9274-43bf-9e81-329da7f0b379}},
+Theorem 4.2.
+Our proof has the
+advantage that it is constructive and works for an arbitrary ideal
+FORMULA .
+We describe our algorithm first in the case where the ideal is
+0-dimensional. This algorithm can be viewed as a variant of an algorithm
+presented by Joseph Maurer in {{cite:df7c4965-9b56-4a62-bfe4-31a108d0d149}}, a paper from 1980. In
+fact, he uses the term “critical tropism” for a point in the tropical
+variety, even though tropical varieties were not defined by
+that time. Apparently, the notion goes back to Monique
+Lejeune-Jalabert and Bernard TeissierAsked about this coincidence in the two
+notions Bernard Teissier sent us the following kind and interesting explanation:
+As far as I know the term did not exist before.
+We tried to convey the idea that giving different weights to some
+variables made the space ”anisotropic”, and we were intrigued by the
+structure, for example, of anisotropic projective spaces (which are
+nowadays called weighted projective spaces).
+From there to ”tropismes critiques” was a quite natural linguistic
+movement.
+Of course there was no ”tropical” idea around, but as you say, it is
+an amusing coincidence.
+The Greek ”Tropos” usually designates change, so that ”tropisme
+critique” is well adapted to denote the values where the change of
+weights becomes critical for the
+computation of the initial ideal. The term ”Isotropic”, apparently due to
+Cauchy, refers to the property of presenting the same (physical)
+characters in all directions. Anisotropic is, of course, its negation.
+The name of Tropical geometry originates, as you probably know, from
+tropical algebra which honours the Brazilian computer scientist
+Imre Simon living
+close to the tropics, where the course of the sun changes back to the
+equator. In a way the tropics of Capricorn and Cancer represent, for
+the sun, critical tropisms. (see
+{{cite:d5414e79-8e7c-4c83-83db-bd51c3e72365}}).
+This paper is organised as follows: In Section  we recall
+basic definitions and state the main result. In Section
+ we give a constructive proof
+of the main result in the 0-dimensional case and deduce an
+algorithm. In Section  we reduce the
+arbitrary case algorithmically to the 0-dimensional case, and
+in Section  we gather
+some simple results from commutative algebra for the lack of a
+better reference. The
+proofs of both cases heavily rely on a good understanding of the
+relation of the dimension of an ideal FORMULA  over the Puiseux series with
+its FORMULA -initial ideal, respectively with its restriction to the
+rings FORMULA  introduced below (see Definition
+). This will be studied in Section
+. Some of the theoretical as well as the
+computational results use Theorem  which was
+proved in {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} using standard bases in the mixed power
+series polynomial ring FORMULA . We give an alternative proof
+in Section .
+We would like to thank Bernd Sturmfels for suggesting the project and
+for many helpful discussions, and Michael Brickenstein, Gerhard Pfister and Hans
+Schönemann for answering many questions concerning
+Singular. Also we would like to thank Sam Payne for
+helpful remarks and for pointing out a mistake in an earlier
+version of this paper.
+Our programme can be downloaded from the web page
+www.mathematik.uni-kl.de/~keilen/en/tropical.html.
+
+Basic Notations and the Main Theorem
+In this section we will introduce the basic notations used
+throughout the paper.
+Let FORMULA  be an arbitrary field. We consider for FORMULA  the discrete valuation ring
+FORMULA 
+of formal power series in the unknown FORMULA 
+with discrete valuation
+FORMULA 
+and we denote by
+FORMULA  its quotient field. If FORMULA  then
+in an obvious way we can think of FORMULA  as a subring of FORMULA , and
+thus of FORMULA  as a subfield of FORMULA .
+We call the direct limit of the corresponding direct system
+FORMULA 
+the field of (formal) Puiseux series over FORMULA .
+
+Recall that if FORMULA  is algebraically closed of characteristic 0, then FORMULA  is algebraically closed.
+
+If FORMULA  then
+FORMULA  is a multiplicatively closed subset of FORMULA , and obviously
+FORMULA 
+The valuation of FORMULA  extends to FORMULA , and thus FORMULA , by
+FORMULA  for FORMULA  with FORMULA . In particular, FORMULA .
+Since an ideal FORMULA  is generated by finitely many
+elements, the set
+FORMULA 
+is non-empty, and if FORMULA  then
+FORMULA . We also
+introduce the notation FORMULA .
+Let FORMULA , FORMULA , and FORMULA .
+We may consider the direct product
+FORMULA 
+of FORMULA -vector spaces and its subspace
+FORMULA 
+As a FORMULA -vector space the formal power series ring FORMULA  is just
+FORMULA 
+and we can thus write any power series FORMULA  in a
+unique way as
+FORMULA 
+Note that this representation is independent of FORMULA  in the sense
+that if FORMULA  for some other
+FORMULA  then we get the same non-vanishing FORMULA  if
+we decompose FORMULA  with respect to FORMULA .
+Moreover, if FORMULA , then there is
+a maximal FORMULA  such that FORMULA  and
+FORMULA  since the FORMULA -degree of the monomials involved in FORMULA  is
+bounded. We call the elements FORMULA 
+FORMULA -quasihomogeneous of FORMULA -degree FORMULA ,
+FORMULA 
+the FORMULA -initial form of FORMULA , and
+FORMULA 
+the FORMULA -order of FORMULA . Set FORMULA . If FORMULA  are both monomials of
+FORMULA , then FORMULA .
+For FORMULA  we call
+FORMULA 
+the FORMULA -initial ideal of FORMULA . Note that its definition
+depends on FORMULA .
+Moreover, we call for  FORMULA
+FORMULA 
+the FORMULA -initial form of FORMULA  w.r.t.  FORMULA, and if
+FORMULA  with FORMULA  we set
+FORMULA 
+This definition does not depend on the particular representation of
+FORMULA .
+If FORMULA  is a subset of FORMULA , then
+FORMULA 
+is the FORMULA -initial ideal of FORMULA , which does not depend on
+any FORMULA .
+For two FORMULA -quasihomogeneous elements FORMULA  and
+FORMULA  we have FORMULA .
+In particular,
+FORMULA  for FORMULA , and
+FORMULA  for FORMULA .
+Let FORMULA  and
+FORMULA 
+Then FORMULA , FORMULA , and
+FORMULA .
+Throughout this paper we will mostly use the weight FORMULA  for the
+variable FORMULA , and in order to simplify the notation
+we will then usually write for  FORMULA
+FORMULA 
+and
+FORMULA 
+The case that FORMULA  is of particular interest,
+and we will simply write
+FORMULA 
+This should not lead to any ambiguity.
+In general, the FORMULA -initial ideal of an ideal FORMULA  is not generated
+by the FORMULA -initial forms of the given generators of FORMULA .
+Let FORMULA  and
+FORMULA . Then FORMULA , but
+FORMULA 
+We can compute the FORMULA -initial ideal using standard bases by
+{{cite:76563531-70d3-47c8-93e2-db37917df7bd}}, Corollary 6.11.
+Let FORMULA 
+with FORMULA ,
+FORMULA  and FORMULA  be a standard basis of
+FORMULA  with respect to FORMULA  (see Remark 
+for the definition of FORMULA ).
+Then
+ FORMULA
+The proof of this theorem uses standard basis techniques in the
+ring FORMULA . We give an alternative proof in Section
+.
+In Example , FORMULA  is a suitable
+standard basis and thus FORMULA .
+Let FORMULA  be an ideal then the tropical variety
+of FORMULA  is defined as
+FORMULA 
+It is possible that FORMULA .
+Let FORMULA . As FORMULA  is
+generated by one polynomial FORMULA  which then automatically is a
+standard basis, the FORMULA -initial ideal
+FORMULA  will be generated by FORMULA  for any
+FORMULA . Hence
+FORMULA  contains no monomial if and only if FORMULA  is not
+a monomial. This is the case for all FORMULA  such that FORMULA , or FORMULA , or FORMULA . Hence the tropical
+variety FORMULA  looks as follows:
+ FIGURE
+We need the following basic results about tropical varieties.
+Let FORMULA  be ideals. Then:
+
+FORMULA ,
+
+FORMULA ,
+
+FORMULA , and
+
+FORMULA .
+
+Suppose that FORMULA  and
+FORMULA . Then FORMULA 
+contains a monomial, but since FORMULA  this contradicts FORMULA . Thus
+FORMULA . This shows (a).
+Since FORMULA  for each FORMULA  the first assertion implies that
+FORMULA 
+Conversely, if FORMULA  for FORMULA 
+then there exist polynomials FORMULA  such that FORMULA  is
+a monomial. But then FORMULA  is a monomial and
+FORMULA . Thus
+FORMULA , which shows (b).
+For (c) it suffices to show that
+FORMULA , since FORMULA . If FORMULA 
+then there is an FORMULA  such that FORMULA  is a
+monomial and such that FORMULA  for some FORMULA . But then
+FORMULA  is a monomial and thus
+FORMULA .
+Finally (d) is obvious from the definition.
+We are now able to state our main theorem.
+If FORMULA  is algebraically closed of characteristic zero and FORMULA  is
+an ideal then
+FORMULA 
+where FORMULA  is the coordinate-wise valuation.
+The proof of one direction is straight forward and it does not
+require that FORMULA  is algebraically closed.
+If FORMULA  is an ideal and FORMULA , then FORMULA .
+Let FORMULA , and let FORMULA . If FORMULA , we have to show that FORMULA  is not a
+monomial, but since this property is preserved when multiplying
+with some FORMULA  we may as well assume that FORMULA . As FORMULA , we know that FORMULA . In particular
+the terms of lowest FORMULA -order in FORMULA  have to cancel. But
+the terms of lowest order in FORMULA  are
+FORMULA  where FORMULA .
+Hence FORMULA ,
+which is only possible if FORMULA , and thus
+FORMULA , is not a monomial.
+Essentially, this was shown by Newton in {{cite:aa725549-9cda-4b18-828d-ec0abf365672}}.
+
+If the base field FORMULA  in Theorem  is not
+algebraically closed or not of characteristic zero, then the
+Puiseux series field is not algebraically closed (see e.g. {{cite:f7ed865d-ec1d-415a-aa4e-65f2125af554}}). We therefore cannot expect to be able to lift each
+point in the tropical variety of an ideal FORMULA 
+to a point in FORMULA . However, if we
+replace FORMULA  by the vanishing set, say FORMULA , of FORMULA  over the algebraic
+closure FORMULA  of FORMULA  then it is still true that each point FORMULA  in
+the tropical variety of FORMULA  can be lifted to a point FORMULA 
+such that FORMULA . For this we note first that if
+FORMULA  then the non-constructive proof of Theorem
+ works by passing from FORMULA  to FORMULA , taking into account that the
+non-archimedian valuation of a field in a natural way extends to
+its algebraic closure. And if FORMULA  then we can add
+generators to FORMULA  by Proposition  and Remark
+ so as to
+reduce to the zero dimensional case before passing to the
+algebraic closure of FORMULA .
+Note, it is even possible
+to apply Algorithm  in the case of positive
+characteristic. However, due to the weird nature of the algebraic
+closure of the Puiseux series field in that case we cannot
+guarantee that the result will coincide with a
+solution of FORMULA  up to the order up to which it is computed. It
+may very well be the case that some intermediate terms are
+missing (see {{cite:f7ed865d-ec1d-415a-aa4e-65f2125af554}} Section 5).
+
+Zero-Dimensional Lifting Lemma
+In this section we want to give a constructive proof of the
+Lifting Lemma .
+[Lifting Lemma]
+Let FORMULA  be an algebraically closed field of
+characteristic zero and FORMULA .
+If FORMULA  is a zero dimensional ideal and
+FORMULA , then there is a point FORMULA 
+such that FORMULA .
+If FORMULA  then by Lemma  there is an associated prime
+FORMULA  such that FORMULA . But since
+FORMULA  the ideal FORMULA  is necessarily a maximal ideal, and
+since FORMULA  is algebraically closed it is of the form
+FORMULA 
+with FORMULA . Since FORMULA  the ideal
+FORMULA  does not contain any monomial, and therefore
+necessarily
+FORMULA  for all FORMULA . This shows that FORMULA  and FORMULA .
+The drawback of this proof is that in order to find FORMULA  one would
+have to be able to find the associated primes of FORMULA  which would
+amount to something close to primary decomposition over FORMULA . This
+is of course not feasible. We will instead adapt
+the constructive proof that FORMULA  is algebraically closed, i.e. the
+Newton-Puiseux Algorithm for plane curves, which has already been
+generalised to space curves (see {{cite:df7c4965-9b56-4a62-bfe4-31a108d0d149}}, {{cite:1f2b485e-47a1-43b0-ac94-1ee1e5fc992e}}) to our
+situation in order to compute the point FORMULA  up to any given order.
+The idea behind this is very simple and the first recursion step
+was basically already explained in the proof of Proposition
+. Suppose we have a polynomial FORMULA 
+and a point
+FORMULA 
+Then, a priori, the term of lowest FORMULA -order in FORMULA  will be
+FORMULA  Thus, in order for FORMULA  to be zero it is necessary that
+FORMULA  Let FORMULA  denote the tail of FORMULA , that is FORMULA .
+Then FORMULA  is a zero of
+FORMULA 
+The same arguments then show that
+FORMULA  and assuming now that none of the FORMULA  is zero we find
+FORMULA  must be monomial free, that is
+FORMULA  is a point in the tropical variety and all its
+components are strictly negative.
+The basic idea for the algorithm which computes a suitable FORMULA  is
+thus straight forward. Given FORMULA  in the tropical variety of
+an ideal FORMULA , compute a point FORMULA  apply the
+above transformation to FORMULA  and compute a negative-valued point in the tropical
+variety of the transformed ideal. Then go on recursively.
+It
+may happen that the solution that we are about to construct this
+way has some component with only finitely many terms. Then after
+a finite number of steps there might be no suitable FORMULA  in the
+tropical variety. However, in that situation we can simply
+eliminate the corresponding variable for the further
+computations.
+Consider the ideal FORMULA  with
+FORMULA 
+The FORMULA -initial ideal of FORMULA  with respect to FORMULA  is
+FORMULA 
+so that FORMULA  and FORMULA  is a suitable choice. Applying the
+transformation FORMULA  to FORMULA  we get FORMULA 
+with
+FORMULA 
+This shows that the FORMULA -coordinate of a solution of FORMULA 
+necessarily is FORMULA , and we could substitute
+this for FORMULA  in the other equations in order to reduce by one
+variable. We will instead see
+what happens when we go on with our algorithm.
+The FORMULA -initial ideal of FORMULA  with respect to
+FORMULA  is
+FORMULA 
+so that FORMULA  and FORMULA  is our only choice. Applying the
+transformation FORMULA  to FORMULA  we get the ideal FORMULA  with
+FORMULA 
+If we are to find an FORMULA , then FORMULA  implies
+that necessarily FORMULA . But we are looking for an
+FORMULA  all of whose entries are strictly negative. The reason
+why this does not exist is that there is a solution of FORMULA  with
+FORMULA . We thus have to eliminate the variable FORMULA , and replace
+FORMULA  by the ideal FORMULA  with
+FORMULA 
+Then FORMULA  and
+FORMULA . Thus FORMULA  is our only choice,
+and since FORMULA  we are done.
+Backwards substitution gives
+FORMULA 
+
+as a point in FORMULA  with
+FORMULA . Note that in general
+the procedure will not terminate.
+For the proof that this algorithm works we need two types of
+transformations which we are now going to introduce and study.
+For FORMULA  let us consider the FORMULA -algebra
+isomorphism
+FORMULA 
+and the isomorphism which it induces on  FORMULA
+FORMULA 
+Suppose we have found a FORMULA ,
+then FORMULA  and
+FORMULA .
+Thus choosing FORMULA 
+appropriately we may in Theorem 
+assume that FORMULA , which due to Corollary
+ implies that the dimension of FORMULA  behaves
+well when contracting to the power series ring FORMULA  for a
+suitable FORMULA .
+Note also the following properties of FORMULA , which we
+will refer to quite frequently.
+If FORMULA  is an ideal, then
+FORMULA 
+where the latter is due to the fact that
+FORMULA 
+with FORMULA  and FORMULA .
+For FORMULA , FORMULA  and FORMULA  we consider
+the FORMULA -algebra isomorphism
+FORMULA 
+and its effect on a FORMULA -quasihomogeneous element
+FORMULA 
+If we set
+FORMULA 
+then
+FORMULA 
+
+with
+FORMULA 
+In particular, if FORMULA  and
+FORMULA  with FORMULA  then
+FORMULA 
+where
+FORMULA 
+ FORMULA
+The following lemma shows that if we consider the transformed ideal
+FORMULA  in the power series ring
+FORMULA  then it defines the germ
+of a space curve through the origin. This allows us then in
+Corollary  to apply normalisation to find a negative-valued
+point in the tropical variety of FORMULA .
+Let FORMULA , let FORMULA , and
+FORMULA . Then
+FORMULA 
+Let FORMULA  and
+FORMULA  with FORMULA . Since FORMULA  is a polynomial in FORMULA  we have
+FORMULA 
+for some FORMULA . We can thus decompose FORMULA  into its FORMULA -quasihomogeneous parts, say
+FORMULA 
+where FORMULA  and thus
+FORMULA  is the FORMULA -initial form of FORMULA . As
+we have seen in Remark  there are polynomials
+FORMULA  such that
+FORMULA 
+But then
+FORMULA 
+
+However, since FORMULA  and FORMULA  we have
+FORMULA 
+and thus using (REF ) we get
+FORMULA 
+since FORMULA  and FORMULA  is an
+isomorphism. We see in particular, that FORMULA  since
+FORMULA  and FORMULA , and hence
+FORMULA 
+The following corollary assures the existence of a negative-valued point in the
+tropical variety of the transformed ideal – after possibly eliminating those variables
+for which the components of the solution will be zero.
+Suppose that FORMULA  is an algebraically closed field of characteristic zero.
+Let FORMULA  be a zero-dimensional ideal, let FORMULA , and
+FORMULA . Then
+FORMULA 
+In particular, if FORMULA  and
+FORMULA , then
+FORMULA 
+We may choose an FORMULA  and such that FORMULA . Let FORMULA .
+Since FORMULA  is an isomorphism we know that
+FORMULA 
+and by Proposition  we know that
+FORMULA 
+Since the maximal ideal
+FORMULA 
+contains the element FORMULA , which is a unit in FORMULA ,
+it cannot be the contraction of a prime ideal in FORMULA . In
+particular, FORMULA . Thus there must be a
+FORMULA  such that
+FORMULA  since by Lemma  FORMULA  and since
+otherwise FORMULA  would be minimal over FORMULA  and hence associated to
+FORMULA .
+The strict inclusion implies that
+FORMULA  while Theorem  shows that
+FORMULA 
+Hence the ideal FORMULA  is a 1-dimensional prime ideal in
+FORMULA  where the latter is the completion of the former with respect to
+FORMULA . Since FORMULA , the completion FORMULA  of
+FORMULA  with respect to FORMULA  is also 1-dimensional and  the
+normalisation
+FORMULA 
+gives a parametrisation where we may assume that
+FORMULA  for some FORMULA  since FORMULA  is algebraically
+closed and of characteristic zero (see e.g. {{cite:bdea7ca2-3ca3-4052-854e-4362a02ac8de}} Cor. 4.4.10 for FORMULA si=(xi)K[[s]] FORMULAFORMULA KFORMULA fPFORMULA IPPFORMULA ,u(J)=IFORMULA sFORMULA t1NMFORMULA f,u(J)L[xp]FORMULA p'=(pi|pi=0) FORMULA
+Recall that by Remark  we may assume that
+FORMULA .
+It is our first aim to construct recursively sequences of the
+following objects for FORMULA :
+
+natural numbers FORMULA ,
+
+natural numbers FORMULA ,
+
+subsets of variables FORMULA ,
+
+ideals FORMULA ,
+
+ideals FORMULA ,
+
+vectors
+FORMULA , and
+
+vectors FORMULA .
+
+We set FORMULA , FORMULA , FORMULA , and FORMULA , and since FORMULA 
+is monomial free by assumption and FORMULA  is algebraically closed we
+may choose a FORMULA . We then define
+recursively for  FORMULA
+FORMULA 
+By Corollary  we may choose a
+point FORMULA  such that
+FORMULA  for all FORMULA . As in Corollary
+ we set
+FORMULA 
+and we denote by
+FORMULA 
+the indexes FORMULA  such that FORMULA .
+If FORMULA  we simply stop the process, while if FORMULA  we set
+FORMULA 
+We then set
+FORMULA 
+and by Corollary  we can choose
+FORMULA 
+Then FORMULA  is monomial free, so that we
+can choose a
+FORMULA 
+Next we define
+FORMULA 
+FORMULA 
+for FORMULA . All FORMULA  are strictly
+negative, which is necessary to see that the FORMULA  converge
+to a Puiseux series.
+Note that in the case FORMULA  the described procedure is just the classical
+Puiseux expansion (see e.g. {{cite:bdea7ca2-3ca3-4052-854e-4362a02ac8de}} Thm. 5.1.1 for the case
+FORMULA p,iFORMULA N FORMULAFORMULA n=1 FORMULA
+It is also easy to see that at FORMULA  all
+polynomials in FORMULA  vanish, where
+FORMULA 
+The proof is basically an algorithm which allows to compute a point
+FORMULA  such that FORMULA . However, if we want to use
+a computer algebra system like Singular for the
+computations, then we have to restrict to generators of FORMULA  which are
+polynomials in FORMULA  as well as in FORMULA . Moreover, we
+should pass from FORMULA  to FORMULA , which can be easily
+done by the FORMULA -algebra isomorphism
+FORMULA 
+Whenever we do a transformation which involves rational exponents
+we will clear the denominators using this map with an
+appropriate FORMULA .
+We will in the course of the algorithm have to compute the
+FORMULA -initial ideal of FORMULA  with respect to some FORMULA ,
+and we will do so by a standard basis computation using the
+monomial ordering FORMULA , given by
+FORMULA 
+
+where FORMULA  is some fixed global monomial ordering on the monomials
+in FORMULA .
+[ZDL – Zero Dimensional Lifting Algorithm]
+Input:
+FORMULA  such that FORMULA  and
+FORMULA  for FORMULA .
+
+Output:
+FORMULA  such that FORMULA 
+coincides with the first FORMULA  terms of a solution of FORMULA  and such
+that FORMULA .
+
+Instructions:
+
+Choose FORMULA  such that FORMULA .
+
+FOR FORMULA  DO FORMULA .
+
+ FORMULA
+
+IF some FORMULA  THEN
+
+FOR FORMULA  DO FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+
+Compute a standard basis FORMULA  of FORMULA  with
+respect to the ordering FORMULA .
+
+Compute a zero FORMULA  of FORMULA .
+
+IF FORMULA  THEN FORMULA .
+
+ELSE
+
+Set FORMULA .
+
+FOR FORMULA  DO
+
+Compute a generating set FORMULA  of
+FORMULA .
+
+IF FORMULA 
+THEN
+
+ FORMULA
+
+Replace FORMULA  by a generating set of FORMULA .
+
+
+
+IF FORMULA  THEN FORMULA .
+
+ELSE
+
+Compute a point FORMULA  in the negative orthant of the tropical variety of
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FOR FORMULA  DO
+
+IF FORMULA  THEN
+FORMULA .
+
+ELSE FORMULA .
+
+
+
+
+IF some FORMULA  THEN
+FORMULA .
+
+The algorithm which we describe here is basically one recursion
+step in the constructive proof of Theorem 
+given above, and thus the correctness follows once we have
+justified why our computations do what is required by the
+recursion step.
+Notice that step 4 and the last step make an adjusting change of variables to make all FORMULA  non-positive in the body of the algorithm. This together with step 3 guarantees that FORMULA  is a polynomial.
+If we compute a standard basis FORMULA 
+of FORMULA  with respect to FORMULA , then by
+Theorem 
+the FORMULA -initial forms of the FORMULA 
+generate the FORMULA -initial ideal of FORMULA .
+We thus compute a zero FORMULA  of the FORMULA -initial ideal as required.
+Next the recursion in the proof of Theorem 
+requires to find an FORMULA ,
+which is FORMULA  for some FORMULA , and we have to eliminate those components which are zero.
+Note that the solutions with first component zero are the
+solutions of FORMULA . Checking if there is a
+solution with strictly positive valuation amounts by the proof of
+Corollary  to checking if FORMULA ,
+and the latter is equivalent to FORMULA  by Lemma .
+If so, we eliminate the variable FORMULA 
+from FORMULA , which amounts to projecting all
+solutions with first component zero to FORMULA . We then
+continue with the remaining variables. That way we find a set of
+variables FORMULA  such that there is a
+solution of FORMULA  with strictly positive valuation where
+precisely the other components are zero.
+The rest follows from the constructive proof of Theorem
+.
+Let FORMULA , FORMULA , FORMULA , and
+let FORMULA  be a generating set of FORMULA .
+Then:
+FORMULA 
+The last equivalence is clear since FORMULA  is generated by FORMULA , and
+for the first equivalence it suffices to show that FORMULA .
+For this let us consider the following two ideals
+FORMULA  and
+FORMULA  By Lemma  we know that FORMULA 
+and by {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} Prop. 6.20 we know that FORMULA . It thus suffice to show that
+FORMULA . Obviously
+FORMULA , which proves one inclusion. Conversely, if FORMULA  then FORMULA  satisfies a relation of the form
+FORMULA 
+with FORMULA , FORMULA , FORMULA  and FORMULA . Thus FORMULA  and FORMULA .
+In order to compute the point FORMULA  we may want to compute
+the tropical variety of FORMULA . The tropical
+variety can be computed as a subcomplex of a Gröbner fan or
+more efficiently by applying Algorithm 5 in {{cite:2c274a33-8fc9-4dc1-9245-55d8456ed836}} for
+computing tropical bases of tropical curves.
+We have implemented the above algorithm in the computer algebra
+system Singular (see {{cite:d397214f-6e0e-4333-9aae-6f84241ec326}}) since nearly all of the
+necessary computations are reduced to standard basis computations
+over FORMULA  with respect to certain monomial orderings. In
+Singular however we do not have
+an algebraically closed field FORMULA  over which we
+can compute the zero FORMULA  of an ideal. We get around this
+by first computing the absolute minimal associated primes of FORMULA 
+all of which are maximal by Corollary ,
+using the absolute primary decomposition in
+Singular. Choosing one of these maximal ideals we only
+have to adjoin one new variable, say FORMULA , to realise the field extension
+over which the zero lives, and the minimal polynomial, say FORMULA , for this
+field extension is provided by the absolute primary
+decomposition. In subsequent steps we might have to enlarge the
+minimal polynomial, but we can always get away with only one new
+variable.
+The field extension should be
+the coefficient field of our polynomial ring in subsequent
+computations.
+Unfortunately, the program gfan which we
+use in order to compute tropical varieties does not handle field
+extensions. (It would not be a problem to actually implement
+field extensions — we would not have to come up with new
+algorithms.) But we will see in Lemma  that we
+can get away with computing tropical varieties of ideals in the
+polynomial ring over the extension field of FORMULA  by computing
+just over FORMULA .
+More precisely, we want to compute a negative-valued point FORMULA 
+in the tropical variety of a transformed ideal FORMULA .
+Instead, we compute a point
+FORMULA  in the tropical variety of the ideal
+FORMULA . So to justify this
+it is enough to show that FORMULA  is in the tropical variety of an
+ideal FORMULA  if and only if
+FORMULA  is in the tropical variety of the ideal
+FORMULA . Recall
+that FORMULA  if and
+only if FORMULA  contains no monomial, and by Theorem
+, FORMULA  is equal to FORMULA ,
+where FORMULA .
+Let FORMULA  be an irreducible polynomial,
+let FORMULA  take elements to their classes,
+and let FORMULA . Then
+FORMULA  contains no monomial if and only if
+FORMULA  contains no monomial. In
+particular, the same holds for FORMULA  and
+FORMULA .
+Suppose FORMULA  contains a
+monomial. Then there exists an FORMULA  such that
+FORMULA  is a monomial. The polynomial FORMULA 
+is in FORMULA . When applying FORMULA  the monomial
+FORMULA  maps to a monomial whose coefficient in
+FORMULA  has a representative FORMULA  with just one term. The
+representative FORMULA  cannot be 0 modulo FORMULA  since
+FORMULA  does not
+contain a monomial. Thus
+FORMULA  is a
+monomial.
+For the other direction, suppose FORMULA  contains a
+monomial. We must show that
+FORMULA  contains a monomial. This is
+equivalent to showing that
+FORMULA  contains a
+monomial.
+By assumption there exists an FORMULA  such that FORMULA 
+is a monomial. Let FORMULA  be in FORMULA  such that FORMULA  maps
+to FORMULA  under the surjection FORMULA  and with the further
+condition that the support of FORMULA  projected to the
+FORMULA -coordinates equals the support of FORMULA .
+The initial form FORMULA  is a polynomial with all
+exponent vectors having the same FORMULA  parts as
+FORMULA  does.
+Let FORMULA  be FORMULA  with the common
+FORMULA -part removed from the monomials, that is
+FORMULA . Notice that FORMULA . We now have
+FORMULA  and hence FORMULA  since FORMULA  is
+maximal. Now FORMULA  and FORMULA  are contained in
+FORMULA ,
+implying that
+FORMULA .
+This shows that FORMULA  contains a monomial.
+In Algorithm  we choose zeros of the FORMULA -initial ideal
+and we choose points in the negative quadrant of the tropical
+variety. If we instead do the same computations for all zeros and
+points of the negative quadrant of the tropical variety, then we
+get Puiseux expansions of all branches of the space curve germ defined
+by the ideal FORMULA  in
+FORMULA .
+Reduction to the Zero Dimensional Case
+In this section, we want to give a proof of the Lifting Lemma
+(Theorem ) for any ideal FORMULA  of dimension FORMULA , using
+our algorithm for the zero-dimensional case.
+Given FORMULA  we would like to
+intersect FORMULA  with another tropical variety FORMULA 
+containing FORMULA , such
+that FORMULA  and apply the zero-dimensional algorithm to
+FORMULA . However, we cannot conclude that FORMULA  — we
+have FORMULA  but equality does
+not need to hold. For example, two plane tropical lines (given by
+two linear forms) which are not equal can intersect in a ray, even
+though the ideal generated by the two linear forms defines just a
+point.
+So we have to find an
+ideal FORMULA  such that FORMULA  is zero-dimensional and still
+FORMULA  (see Proposition
+). We will use some ideas of {{cite:8353dc3c-ed4d-4d94-9e6b-68c7d6a119e9}}
+Lemma 4.4.3 — the ideal FORMULA  will be generated by FORMULA  sufficiently general
+linear forms. The proof of the proposition needs some technical preparations.
+We denote by
+FORMULA 
+the FORMULA -dimensional FORMULA -vector space of linear polynomials over
+FORMULA , which in a sense are scaled by FORMULA . Of
+most interest will be the case where FORMULA .
+The following lemma geometrically says that an affine variety of
+dimension at least one will intersect a generic hyperplane.
+Let FORMULA  be an infinite field and FORMULA  an equidimensional
+ideal of dimension FORMULA . Then there is a Zariski open dense subset
+FORMULA  of FORMULA  such
+that FORMULA  for all FORMULA  and FORMULA .
+If FORMULA  is an affine
+variety which meets FORMULA  in dimension at least 1, then a
+generic hyperplane section of FORMULA  meets FORMULA  as well. The
+algebraic formulation of this geometric fact is the following
+lemma:
+Let FORMULA  be an infinite field and FORMULA  be an equidimensional ideal
+with FORMULA  and such that FORMULA ,
+then there is a Zariski open subset
+FORMULA  of FORMULA  such
+that FORMULA  for FORMULA .
+The following lemma is an algebraic formulation of the geometric fact that given any
+affine variety none of its components will be contained in a generic hyperplane.
+Let FORMULA  be an infinite field, let FORMULA  be a ring containing FORMULA ,
+and let FORMULA  be an ideal.
+Then there is
+a Zariski open dense subset
+FORMULA  of FORMULA  such
+that FORMULA  satisfies FORMULA  for FORMULA .
+If FORMULA  we can still find a suitable FORMULA  which
+satisfies the conditions in Lemma ,
+Lemma  and Lemma 
+due to Prime Avoidance. However, it may not be possible to choose a
+linear one.
+With these preparations we can show that we can reduce to the zero
+dimensional case by cutting with generic hyperplanes.
+Suppose that FORMULA  is an infinite field, and let FORMULA  be
+an equidimensional ideal of dimension FORMULA  and
+FORMULA .
+Then there exist Zariski open dense subsets FORMULA  of
+FORMULA  such that FORMULA  and FORMULA  satisfy:
+
+FORMULA ,
+
+FORMULA ,
+
+FORMULA , and
+
+FORMULA .
+
+In particular, FORMULA .
+Applying FORMULA  to FORMULA  first and then applying
+FORMULA  to FORMULA  later we may assume that
+FORMULA . Moreover, we may choose an FORMULA  such that FORMULA  and FORMULA  for all
+FORMULA . By Lemma  then also
+FORMULA  and FORMULA  for FORMULA .
+By Lemma 
+FORMULA 
+In particular, all minimal associated primes
+FORMULA  of FORMULA  have codimension FORMULA  by Corollary .
+Since FORMULA  there exists a FORMULA  with
+FORMULA  by Lemma . Hence FORMULA  and we conclude by
+Corollary 
+that
+FORMULA 
+for all FORMULA . In particular, all
+minimal associated prime ideals of FORMULA  have codimension
+FORMULA .
+Moreover, since FORMULA  we know that FORMULA 
+is monomial free, and in particular
+FORMULA 
+If FORMULA  then
+FORMULA  works due to
+(REF ) and (REF ). We may thus assume that
+FORMULA .
+Since FORMULA  is infinite we can apply Lemma  to FORMULA ,
+Lemma  to FORMULA , to FORMULA  and to
+FORMULA  and Lemma  to
+FORMULA  (take (REF ) into account),
+and thus there exist Zariski open dense
+subsets FORMULA , FORMULA , FORMULA , FORMULA  and FORMULA  in FORMULA  such
+that no FORMULA  is contained in any minimal associated
+prime of either FORMULA , FORMULA  or FORMULA , such that
+FORMULA  and such that
+FORMULA . Since the intersection
+of four Zariski open and dense subsets is non-empty, there is such an
+FORMULA  and by Lemma  the minimal associated primes
+of the ideals FORMULA , FORMULA ,
+and FORMULA  all have the same codimension
+FORMULA .
+We claim that FORMULA  for any FORMULA . Suppose the contrary, then
+by Lemma  (b), (f) and (g)
+FORMULA 
+Consider now the residue class map
+FORMULA 
+Then FORMULA , and we
+have
+FORMULA 
+Since FORMULA  the latter is again a prime ideal
+of dimension FORMULA . However, due to the choice of FORMULA  we know
+that every minimal associated prime of FORMULA  has codimension FORMULA  and hence the ideal
+itself has dimension FORMULA . But then it cannot be contained in an
+ideal of dimension FORMULA .
+Applying the same arguments another FORMULA  times we find Zariski
+open dense subsets FORMULA  of FORMULA  such
+that for all FORMULA 
+the minimal associated primes of the ideals
+FORMULA 
+respectively
+FORMULA 
+respectively
+FORMULA 
+all have codimension FORMULA  for each FORMULA , such that
+FORMULA , and such
+that
+FORMULA 
+Moreover, none of the minimal associated primes of FORMULA  contains FORMULA .
+In particular, since FORMULA  we have (see
+Theorem )
+FORMULA 
+and FORMULA  obviously satisfies the first three requirements of the
+proposition.
+For the fourth requirement it suffices to show
+FORMULA 
+For this consider the ring extension
+FORMULA 
+given by localisation and denote by FORMULA  the contraction of an
+ideal FORMULA  in FORMULA  and by FORMULA  the extension of an ideal FORMULA  in
+FORMULA . Moreover, we set FORMULA  and
+FORMULA , so that FORMULA 
+and FORMULA .
+Note then first that
+FORMULA 
+and therefore by the correspondence of primary decomposition
+under localisation (see {{cite:db8ee3de-baf0-4c23-a084-2bca4b3036b9}} Prop. 4.9)
+FORMULA 
+This then shows that
+FORMULA 
+and since FORMULA ,
+FORMULA 
+and FORMULA 
+we get
+FORMULA 
+It remains to show the “in particular” part. However,
+since
+FORMULA 
+the ideal FORMULA  is monomial free, or equivalently FORMULA .
+Proposition  shows that
+the ideal FORMULA  can be found by choosing FORMULA 
+linear forms FORMULA  with random FORMULA , and we only need that FORMULA 
+is infinite.
+We are now in the position to finish the proof of Theorem
+.
+If FORMULA  then there is a minimal
+associated prime ideal FORMULA  such that
+FORMULA  by Lemma .
+By assumption the field FORMULA  is algebraically
+closed and therefore infinite, so that Proposition
+ applied to FORMULA  shows that we can choose an
+ideal FORMULA  such that FORMULA  and
+FORMULA . By Theorem  there exists a
+point FORMULA  such that
+FORMULA . This finishes the proof in view of Proposition
+.
+[RDZ - Reduction to Dimension Zero]
+Input:
+a prime ideal FORMULA  and FORMULA .
+
+Output:
+an ideal FORMULA  such that FORMULA , FORMULA  and FORMULA .
+
+Instructions:
+
+ FORMULA
+
+ FORMULA
+
+WHILE FORMULA  OR FORMULA  not monomial-free
+DO
+
+FOR FORMULA  TO FORMULA  pick random values
+FORMULA , and define FORMULA .
+
+ FORMULA
+
+
+We only have to show that the random choices will lead to a suitable ideal FORMULA  with probability 1.
+To see this, we want to apply Proposition
+. For this we only have to see that
+FORMULA  is equidimensional of dimension
+FORMULA .
+By {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} Corollary 6.13 the intersection of FORMULA  with
+FORMULA , FORMULA , is equal to FORMULA .
+Using Proposition  we see that
+FORMULA 
+By Lemma
+ we have FORMULA  for every FORMULA , hence
+FORMULA  is equidimensional of dimension FORMULA .
+Note that we cannot perform primary decomposition over FORMULA 
+computationally. Given a FORMULA -dimensional ideal FORMULA  and FORMULA  in our implementation of the lifting algorithm, we
+perform primary decomposition over FORMULA . By Lemma
+, there must be a minimal associated
+prime FORMULA  of FORMULA  such that FORMULA . Its
+restriction to FORMULA  is one of the minimal associated primes that
+we computed, and this prime is our input for algorithm .
+Assume FORMULA , and
+FORMULA . Choose coefficients randomly and add for
+example the linear form
+FORMULA . Then FORMULA  has
+dimension 0 and FORMULA  is contained in FORMULA .
+Note that the intersection of FORMULA  with FORMULA  is not
+transversal, as the vertex of the tropical line FORMULA  is at
+FORMULA .
+
+Some Commutative Algebra
+In this section we gather some simple results from commutative
+algebra for the lack of a better reference. They are primarily
+concerned with the dimension of an ideal under contraction
+respectively extension for certain ring extensions. The results in
+this section are independent of the previous sections
+In this section we denote by FORMULA  the
+extension of FORMULA  and
+by FORMULA  the contraction of FORMULA , where
+FORMULA  is a ring extension. If no ambiguity
+can arise we will not explicitly state the ring extension.
+We first want to understand how primary decomposition behaves under
+restriction. The following lemma is an easy consequence of the definitions.
+If FORMULA  is any ring extension and
+FORMULA  a FORMULA -primary ideal, then FORMULA  is FORMULA -primary.
+Let FORMULA  be any ring extension,
+let FORMULA  be an ideal such that
+FORMULA , and let FORMULA  be a minimal
+primary decomposition. Then
+FORMULA 
+and
+FORMULA  is a minimal primary decomposition, where
+FORMULA 
+Moreover, we have
+ FORMULA
+Note that the FORMULA  are not necessarily pairwise
+different, and thus the cardinality of FORMULA  may be
+strictly smaller than FORMULA .
+Let
+FORMULA  and
+let FORMULA  be defined as above for FORMULA .
+Since contraction commutes with intersection we have
+FORMULA 
+By Lemma 
+the FORMULA  with FORMULA  are FORMULA -primary, and thus so is
+their intersection, so that (REF ) is a primary
+decomposition. Moreover, by construction the radicals of the
+FORMULA  are pairwise different. It thus remains to show that none
+of the FORMULA  is superfluous. Suppose that there is a
+FORMULA  such that
+FORMULA 
+then
+FORMULA 
+in contradiction to the minimality of the given primary
+decomposition of FORMULA . This shows that (REF ) is a
+minimal primary decomposition and that FORMULA .
+Finally, if FORMULA  such that FORMULA  is minimal over FORMULA 
+then necessarily there is a FORMULA  such that
+FORMULA .
+We will use this result to show that dimension behaves well under
+extension for polynomial rings over a field extension.
+If FORMULA  is a field extension, FORMULA  is an ideal and
+FORMULA  then
+FORMULA 
+Moreover, if FORMULA  is prime then FORMULA  for all
+FORMULA .
+Choose any global degree ordering FORMULA  on the monomials in FORMULA 
+and compute a standard basis FORMULA  of FORMULA  with respect to FORMULA . Then
+FORMULA  is also a standard basis of FORMULA  by Buchberger's Criterion. If
+FORMULA  is the set of leading monomials of elements of FORMULA  with
+respect to FORMULA , then the dimension of the ideal generated by FORMULA 
+does not depend on the base field but only on FORMULA  (see e.g. {{cite:2455bf18-05b2-458d-b337-d3a52ef83017}} Prop. 3.5.8). Thus we have (see e.g. {{cite:2455bf18-05b2-458d-b337-d3a52ef83017}}
+Cor. 5.3.14)
+FORMULA 
+Let now FORMULA  be prime. It remains to
+show that FORMULA  is equidimensional.
+If we choose a maximal independent set FORMULA  of
+FORMULA  then by definition
+(see {{cite:2455bf18-05b2-458d-b337-d3a52ef83017}} Def. 3.5.3) FORMULA , so that necessarily FORMULA . This shows that FORMULA  is
+an independent set of FORMULA , and it
+is maximal since its size is FORMULA  by
+(REF ). Moreover, by {{cite:2455bf18-05b2-458d-b337-d3a52ef83017}} Ex. 3.5.1 FORMULA 
+is a maximal independent set of both FORMULA  and FORMULA . Choose now a
+global monomial ordering FORMULA  on the monomials in
+FORMULA .
+We claim that if FORMULA  is a standard basis of
+FORMULA  with respect to FORMULA  and if
+FORMULA  then FORMULA . For this we consider a
+minimal primary decomposition FORMULA  of
+FORMULA . Since FORMULA  we may apply Proposition 
+to get
+FORMULA 
+where the latter equality is due to FORMULA  (see
+e.g. {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} Cor. 6.13) and to FORMULA  being prime. Since
+FORMULA  is an independent set of FORMULA  we know that FORMULA  and
+thus (REF ) shows that FORMULA  for any
+FORMULA  and any FORMULA . Let now FORMULA , then there is an FORMULA  such that FORMULA  and since FORMULA  is primary and FORMULA  this forces FORMULA . But then FORMULA , which proves the claim.
+With the same argument as at the beginning of the proof we see
+that FORMULA  is a standard basis of FORMULA , and we may thus apply {{cite:2455bf18-05b2-458d-b337-d3a52ef83017}}
+Prop. 4.3.1 to the ideal FORMULA  which shows that FORMULA  is equidimensional. We are thus done by the
+claim.
+If the field extension is algebraic then dimension also behaves
+well under restriction.
+Let FORMULA  be an algebraic field extension and let
+FORMULA  be an ideal, then
+ FORMULA
+Since the field extension is algebraic the ring extension
+FORMULA  is integral again. But then the ring extension
+FORMULA  is integral again (see {{cite:db8ee3de-baf0-4c23-a084-2bca4b3036b9}} Prop. 5.6), and in particular
+they have the same dimension (see {{cite:b82889e4-6b4e-4b38-90d7-5b29fe61db7e}} Prop. 9.2).
+For Section  — where we want to
+intersect an ideal of arbitrary dimension to get a zero-dimensional
+ideal — we need to understand how dimension behaves when we
+intersect. The following result is
+concerned with that question. Geometrically it just means that intersecting an equidimensional
+variety with a hypersurface which does not contain any irreducible
+component leads again to an equidimensional variety of dimension
+one less. We need this result over FORMULA  instead of a
+field FORMULA .
+Let FORMULA  be a catenary integral domain, let FORMULA  with FORMULA  for
+all FORMULA , and let
+FORMULA  such that FORMULA  for all FORMULA .
+Then
+FORMULA 
+In particular, FORMULA  for all FORMULA .
+If FORMULA  then FORMULA  is
+minimal among the prime ideals containing FORMULA . Moreover, since FORMULA  there is a minimal
+associated prime FORMULA  of FORMULA  which is contained in
+FORMULA . And, since FORMULA  we have FORMULA  and FORMULA  must be minimal with this
+property since it is minimal over FORMULA . Hence
+FORMULA .
+Conversely, if FORMULA  where
+FORMULA , then FORMULA . Thus there exists a FORMULA 
+such that FORMULA . Then FORMULA  and
+therefore there exists a FORMULA  such that
+FORMULA . Moreover, since FORMULA 
+but FORMULA  this inclusion is strict which implies
+FORMULA 
+where the first inequality comes from FORMULA  and
+the last equality is due to our assumption on FORMULA .
+But by Krull's Principal Ideal Theorem (see {{cite:db8ee3de-baf0-4c23-a084-2bca4b3036b9}} Cor. 11.17) we have
+FORMULA 
+since FORMULA  by assumption is minimal over FORMULA  in FORMULA 
+where FORMULA  is neither a unit (otherwise FORMULA  and
+no FORMULA  exists) nor a zero divisor. Finally, since
+FORMULA  is catenary and thus all maximal chains of prime
+ideals from FORMULA  to FORMULA  have the same length
+ this implies
+FORMULA 
+This forces that FORMULA  and thus
+FORMULA .
+The “in particular” part follows from (REF ).
+
+Good Behaviour of the Dimension
+In this section we want to show (see Theorem )
+that for an ideal FORMULA , FORMULA  and
+a point
+FORMULA  in the non-positive quadrant of the tropical variety of an
+associated prime FORMULA  of maximal dimension we have
+FORMULA 
+The results in this section are independent of Sections
+,  and
+.
+Let us first give examples which show that the hypotheses on
+FORMULA  are necessary.
+Let FORMULA  and consider
+FORMULA . Then FORMULA  has dimension zero in FORMULA , and
+FORMULA 
+has dimension zero as well by Lemma  (d).
+Let FORMULA  and
+FORMULA ,
+then FORMULA  has dimension FORMULA , while
+FORMULA  has dimension 1.
+Let FORMULA  with FORMULA 
+and FORMULA , and let FORMULA . Then FORMULA  has dimension zero, while
+FORMULA 
+has dimension two by Lemma  (d).
+Before now starting with studying the behaviour of dimension we
+have to collect some technical results used throughout the proofs.
+Let FORMULA  be an ideal and
+FORMULA , then
+FORMULA .
+Let FORMULA  and
+suppose that FORMULA  with FORMULA . If
+FORMULA  is a monomial of
+FORMULA  with FORMULA , then FORMULA 
+implies FORMULA ,
+and hence
+FORMULA ,
+since FORMULA  and
+FORMULA . But this shows that
+FORMULA , and therefore FORMULA , in
+contradiction to our assumption that FORMULA  is monomial
+free.
+Let FORMULA  be an ideal such that FORMULA  and let FORMULA , then FORMULA  and FORMULA .
+Since FORMULA  is noetherian and FORMULA  is an associated prime
+there is an FORMULA  such that FORMULA 
+(see {{cite:db8ee3de-baf0-4c23-a084-2bca4b3036b9}} Prop. 7.17).
+Suppose that FORMULA  for some FORMULA  and FORMULA . Then FORMULA , and
+since FORMULA  is saturated with respect to FORMULA  it follows
+that FORMULA . This, however, implies that FORMULA . Thus
+FORMULA  is saturated with respect to FORMULA . If
+FORMULA  then FORMULA , which contradicts
+the fact that FORMULA  is a prime ideal.
+Contractions of ideals in FORMULA  to FORMULA  are always
+FORMULA -saturated.
+Let FORMULA  be an ideal in FORMULA  and FORMULA ,
+then
+ FORMULA
+Since FORMULA  is a field extension {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} Corollary 6.13
+implies
+FORMULA  and it suffices to see that
+FORMULA  If FORMULA  then both sides of the equation
+coincide with FORMULA , so that we may assume that FORMULA  is
+empty. Recall that FORMULA , so that if FORMULA 
+with FORMULA  for some FORMULA , then
+FORMULA 
+Conversely, if
+FORMULA 
+with FORMULA , then FORMULA  and thus FORMULA  is
+in the right hand side.
+Let FORMULA  and FORMULA . Then
+FORMULA  and
+FORMULA 
+Suppose that FORMULA  then FORMULA , and if in addition FORMULA , then by definition
+FORMULA .
+Let now FORMULA , then by assumption there are FORMULA  for some FORMULA , FORMULA  and some FORMULA  such that
+FORMULA 
+By {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} Corollary 6.17 we thus get
+FORMULA 
+Moreover, if we assume that
+FORMULA 
+then there is an FORMULA  such that
+FORMULA 
+This necessarily implies that each monomial in
+FORMULA  is divisible by
+FORMULA , or by Lemma  equivalently that
+FORMULA  But then
+FORMULA 
+and thus by {{cite:76563531-70d3-47c8-93e2-db37917df7bd}} Corollary 6.19 also
+ FORMULA
+In the following lemma we gather the basic information on the ring
+FORMULA  which is necessary to understand how the dimension of an ideal
+in FORMULA  behaves when restricting to FORMULA .
+Consider the ring extension FORMULA . Then:
+
+FORMULA  is universally catenary, and thus FORMULA  is
+catenary.
+
+ If FORMULA , then the following are equivalent:
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA  maximal such that FORMULA  and FORMULA .
+
+FORMULA  maximal such that FORMULA  and FORMULA .
+
+In particular, if FORMULA  is a maximal ideal, then
+FORMULA 
+
+ If FORMULA  is a maximal ideal such that FORMULA ,
+then every maximal chain of prime ideals
+contained in FORMULA  has length FORMULA .
+
+ If FORMULA  is any ideal with FORMULA , then
+FORMULA , and FORMULA  unless
+FORMULA . In particular, FORMULA .
+
+ If FORMULA  is a maximal ideal such that FORMULA ,
+then every maximal chain of prime ideals
+contained in FORMULA  has length FORMULA .
+
+ FORMULA .
+
+ If FORMULA  is a prime ideal such that FORMULA , then
+FORMULA 
+
+ If FORMULA  is a prime ideal such that FORMULA , then
+FORMULA 
+
+For (a), see {{cite:974af874-eedf-4633-9af5-b4978c32d03c}} Thm. 29.4.
+In (b), the equivalence of (1) and (2) is obvious from the
+definitions. Let us now use this to show that for a maximal
+ideal  FORMULA
+FORMULA 
+If FORMULA  then FORMULA  is a unit
+in the field FORMULA 
+and thus there is a FORMULA  such that FORMULA , or equivalently that FORMULA .
+If on the other hand FORMULA  then FORMULA 
+would imply that FORMULA .
+This proves the claim and shows at the same time the
+equivalence of (4) and (5).
+If there is a maximal ideal FORMULA  containing FORMULA  and such
+that FORMULA , then of course also
+FORMULA . Therefore (5) implies (1).
+Let now FORMULA  be an ideal such that FORMULA .
+Suppose that FORMULA . Then
+FORMULA  with FORMULA  and FORMULA , and thus
+FORMULA ,
+which contradicts our assumption. Thus FORMULA , and (1) implies (3).
+Finally, if FORMULA , then there exists a maximal ideal FORMULA 
+such that FORMULA . This
+shows that (3) implies (4), and we are done.
+To see (c), note that if FORMULA , then FORMULA  by (b), and we may
+consider the surjection
+FORMULA .
+The prime ideals of FORMULA  are in FORMULA -correspondence
+with those prime ideals of FORMULA  which contain FORMULA . In
+particular,
+FORMULA 
+is a maximal ideal of FORMULA  and thus any maximal chain of
+prime ideals in FORMULA  which starts with FORMULA , say
+FORMULA 
+has
+precisely FORMULA  terms since every maximal chain of prime ideals
+in FORMULA  has that many terms. Moreover, by
+Krull's Principal Ideal Theorem (see e.g. {{cite:db8ee3de-baf0-4c23-a084-2bca4b3036b9}}
+Cor. 11.17) the prime ideal FORMULA  has codimension 1, so that the chain of prime
+ideals
+FORMULA 
+is maximal. Since by (a) the ring FORMULA  is catenary every
+maximal chain of prime ideals in between FORMULA  and
+FORMULA  has the same length FORMULA .
+For (d), we assume that there exists an element FORMULA  due to (b). But then
+FORMULA .
+Thus the elements of FORMULA  are invertible
+modulo FORMULA . Therefore
+FORMULA 
+In particular, if FORMULA  then FORMULA  and thus
+FORMULA .
+To show (e), note that by assumption there is an element FORMULA  due to (b), and
+since FORMULA  is maximal FORMULA . Choose a prime ideal FORMULA 
+contained in FORMULA  which is minimal w.r.t. the property that it
+contains FORMULA . Since FORMULA  is neither a unit nor a zero
+divisor Krull's Principal Ideal Theorem  implies that FORMULA . Moreover, since FORMULA  by Part (d) the ideal FORMULA  is a prime ideal which
+is minimal over FORMULA  by the one-to-one correspondence of
+prime ideals under localisation. Since every maximal
+chain of primes in FORMULA  has length FORMULA  ,
+and by Part (d) we have
+FORMULA .
+Hence there is a maximal chain of prime ideals of length FORMULA 
+from FORMULA  to FORMULA .
+Since FORMULA  it follows that there is a chain of
+prime ideals of length FORMULA  starting at FORMULA  and
+ending at FORMULA  which cannot be prolonged. But by (a) the ring
+FORMULA  is catenary, and thus every maximal chain of prime
+ideals in FORMULA  has length FORMULA .
+Claim (f) follows from (c) and (e).
+To see (g), note that by (b) there exists a maximal ideal FORMULA  containing
+FORMULA  and FORMULA . If
+FORMULA  then we may choose a maximal chain of prime
+ideals of length FORMULA  in FORMULA , and we may prolong it by at most
+FORMULA  prime ideal to a
+maximal chain of prime ideals in FORMULA , which by (b) and (c) has length
+FORMULA . Taking (f) into account this shows that
+FORMULA 
+However, the converse inequality always holds, which finishes
+the proof.
+For (h) note that by (b) there is no maximal ideal which contains
+FORMULA  so that every maximal ideal containing FORMULA  has
+codimension FORMULA . The result then follows as in (g).
+Let FORMULA  be a prime ideal and FORMULA , then
+FORMULA 
+
+In any case
+FORMULA 
+Since the field extension FORMULA  is algebraic by Lemma
+ we have
+FORMULA 
+in any case. If FORMULA , then Lemma
+(d) implies
+FORMULA 
+since FORMULA  is a localisation of FORMULA .
+It thus suffices to show
+that FORMULA  if
+FORMULA .
+Since FORMULA  we know that FORMULA . The
+FORMULA -correspondence of prime ideals under localisation thus
+shows that
+FORMULA 
+Hence there exists a maximal chain of prime ideals
+FORMULA 
+of length FORMULA  in FORMULA . Note also that by (REF )
+FORMULA 
+since FORMULA  is a polynomial ring over a field.
+Moreover, since FORMULA  by Lemma (b), there
+exists a maximal ideal FORMULA  containing FORMULA  such that
+FORMULA . Choose a maximal chain of prime ideals
+FORMULA 
+in FORMULA  from FORMULA  to FORMULA , so that taking (REF )
+into account
+FORMULA 
+Finally, since the sequence
+FORMULA 
+cannot be prolonged and since FORMULA , Lemma
+(c) implies that FORMULA . But since we always
+have
+FORMULA 
+it follows from (REF ) and (REF )
+FORMULA 
+The claim for the codimensions then follows from Lemma
+ (g) and (h).
+As an immediate corollary we get one of the main results of this section.
+Let FORMULA  and FORMULA .
+Then
+FORMULA  if and only if
+FORMULA  Otherwise FORMULA .
+If there is such a FORMULA  then
+Corollary  implies
+FORMULA 
+
+for any other FORMULA . This shows that
+FORMULA 
+due to Proposition .
+If on the other hand FORMULA  for all
+FORMULA  with FORMULA , then again by Corollary
+ FORMULA  for all
+associated primes with equality for some, and we are done with
+Proposition .
+It remains to show that also the dimension of the FORMULA -initial ideal
+behaves well.
+Let FORMULA  be an ideal such that
+FORMULA  and such that
+FORMULA  for some FORMULA  with FORMULA .
+Then
+FORMULA 
+More precisely, FORMULA  for all FORMULA .
+We first want to show that
+FORMULA 
+Any element FORMULA  can be written
+as FORMULA  with FORMULA  and FORMULA 
+such that FORMULA , and if in addition FORMULA  then
+obviously FORMULA . If, on the other
+hand, FORMULA  for some FORMULA , then
+FORMULA  for some
+FORMULA , and every monomial in FORMULA  is necessarily
+divisible by FORMULA . Thus
+FORMULA  for some FORMULA  and
+FORMULA .
+But since
+FORMULA  is saturated with respect to FORMULA  it follows that
+FORMULA , and thus FORMULA  is in the right hand side. This proves the
+claim.
+Therefore, the inclusion FORMULA  induces an
+isomorphism
+FORMULA 
+which shows that
+FORMULA 
+Next, we want to show that
+FORMULA 
+For this we consider an arbitrary FORMULA . By Lemma  (b), FORMULA .
+Applying Lemma  (g) to FORMULA  and FORMULA  we get
+FORMULA 
+Moreover, since FORMULA  is saturated with respect to
+FORMULA  by Lemma  FORMULA  does not contain
+FORMULA . Thus FORMULA 
+is neither a zero divisor nor a unit in FORMULA , and by Krull's Principal Ideal
+Theorem (see {{cite:db8ee3de-baf0-4c23-a084-2bca4b3036b9}} Cor. 11.17) we thus get
+FORMULA  since by assumption FORMULA  is minimal over FORMULA  in FORMULA .
+Plugging the two previous equations in we get
+FORMULA 
+This proves (REF ), since FORMULA  was an arbitrary
+minimal associated prime of
+FORMULA .
+We now claim that
+FORMULA 
+Suppose this is not the case, then there is a
+FORMULA 
+such that
+FORMULA 
+and since FORMULA  it follows that
+FORMULA 
+But then FORMULA  is necessarily a minimal associated prime of FORMULA 
+in contradiction to Lemma , since FORMULA 
+contains FORMULA . This proves (REF ).
+Equations (REF ), (REF ) and
+(REF ) finish the proof of the first claim. For
+the “more precisely” part notice that replacing FORMULA  by FORMULA 
+in (REF ) we see that there is a dimension
+preserving FORMULA -correspondence between FORMULA  and FORMULA . The
+result then follows from (REF ).
+The condition that FORMULA  is saturated with respect to
+FORMULA  in Proposition  is equivalent
+to the fact that FORMULA  is the contraction of the ideal FORMULA . Moreover, it implies that FORMULA  is a
+flat FORMULA -module, or alternatively that the family
+FORMULA 
+is flat, where the generic fibre is just
+FORMULA  and the special fibre
+is FORMULA . The condition FORMULA  implies that the component of
+FORMULA  defined by FORMULA  surjects onto
+FORMULA . With this interpretation the proof of Proposition
+ is basically exploiting the dimension
+formula for local flat extensions.
+Let FORMULA  and FORMULA , then
+FORMULA 
+Moreover, if FORMULA  is prime, FORMULA  and
+FORMULA  then
+FORMULA 
+Let
+FORMULA  be a minimal primary decomposition of FORMULA , and
+FORMULA 
+the corresponding minimal primary decomposition of FORMULA .
+If we define a new ideal
+FORMULA 
+then this representation is already a minimal primary
+decomposition of FORMULA .
+Choose an FORMULA  such that FORMULA ,
+FORMULA  and FORMULA  for all FORMULA .
+By Lemma  we have
+FORMULA 
+Proposition
+ implies
+FORMULA 
+where the FORMULA  are not necessarily pairwise
+different, and
+FORMULA 
+for which we have to take (REF ) into account.
+Moreover, by Lemma  FORMULA  is saturated with
+respect to FORMULA . Thus we can apply
+Proposition  to FORMULA  to deduce
+ FORMULA
+Taking (REF ) into account we can apply
+Theorem  to FORMULA  and deduce that then
+FORMULA  but
+FORMULA 
+It remains to show that
+FORMULA  By Lemma  and Definition  we have
+FORMULA  and
+FORMULA 
+since FORMULA . By assumption for any
+FORMULA  there is an FORMULA  such
+that FORMULA  and there is some FORMULA  such that
+FORMULA . If FORMULA  is any element, then for
+FORMULA 
+we have
+FORMULA 
+This finishes the proof of the first claim.
+For the “moreover” part note that by Lemma 
+FORMULA 
+and FORMULA  is saturated and
+prime. Applying Proposition 
+to
+FORMULA 
+we get
+FORMULA 
+where the latter equality is due to Corollary
+.
+Let FORMULA , FORMULA  and
+FORMULA .
+If there is a
+FORMULA  with FORMULA  and
+FORMULA , then
+FORMULA 
+By Lemma  the condition
+FORMULA 
+implies that FORMULA . The result then follows from
+Theorem  and Corollary .
+If FORMULA  is zero
+dimensional and
+FORMULA , then
+FORMULA  If in addition FORMULA  and FORMULA 
+ FORMULA
+Since FORMULA  also FORMULA  for every associated prime
+FORMULA . By  there exists a FORMULA  with
+FORMULA .
+The first assertion thus
+follows from Corollary . The second assertion follows
+from Theorem .
+When cutting down the dimension we need to understand how the
+minimal associated primes of FORMULA  and FORMULA  relate to each other.
+Let FORMULA  be equidimensional and FORMULA . Then
+FORMULA 
+The left hand side is contained in the right hand side by default
+(see Proposition ). Let therefore FORMULA 
+be given. By Proposition  FORMULA , and it
+suffices to show that it is minimal among the associated primes.
+Suppose therefore we have
+FORMULA  such that FORMULA . By Corollary
+ and the assumption we have
+FORMULA 
+so that indeed FORMULA .
+Another consequence is that the FORMULA -initial ideal of an
+equidimensional ideal is again equidimensional.
+Let FORMULA  be an equidimensional ideal and
+FORMULA , then
+FORMULA 
+In particular, if there is a FORMULA  such that
+FORMULA  then FORMULA  is equidimensional of dimension
+FORMULA .
+Applying FORMULA  we may assume that FORMULA , and we then
+may choose an FORMULA  and FORMULA  for all
+FORMULA .
+Denoting by
+FORMULA 
+the residue class map we get
+FORMULA 
+
+for all FORMULA , where the first equality in both cases
+is due to Lemma  and where the last equality uses
+Lemma . Since there is a one-to-one
+correspondence between prime ideals in FORMULA  and prime ideals
+in FORMULA  which contain FORMULA , it suffices to show that
+FORMULA 
+However, since the FORMULA  are saturated with respect to
+FORMULA  by Lemma  they do not
+contain FORMULA . By Corollary 
+all FORMULA  have the same codimension, since the FORMULA  do by
+assumption. By Lemma ,
+FORMULA 
+Hence the result follows by Lemma .
+The “in particular” part follows from Corollary .
+
+Computing FORMULA -Initial Ideals
+This section is devoted to an alternative proof of Theorem
+ which does not need standard basis in the mixed
+power series polynomial ring FORMULA .
+The following lemma is easy to show.
+Let FORMULA , FORMULA  with FORMULA  and
+FORMULA  for all FORMULA . Then
+FORMULA 
+Let FORMULA ,
+FORMULA  and FORMULA  be a standard basis of
+FORMULA  with respect to the monomial ordering FORMULA  introduced in Remark
+.
+Then
+FORMULA 
+It suffices to show that
+FORMULA  for every FORMULA . Since FORMULA  and FORMULA  is a standard basis of
+FORMULA  there exists a weak standard representation
+FORMULA 
+of FORMULA  where the leading term of FORMULA  with
+respect to FORMULA  is FORMULA . But then the
+definition of FORMULA  implies that automatically
+FORMULA . Since (REF ) is a standard
+representation we have FORMULA  for all FORMULA . But this necessarily
+implies that FORMULA  where
+FORMULA . Since FORMULA  we can use Lemma  to show
+FORMULA 
+Let FORMULA  be an ideal, FORMULA 
+and FORMULA . Then
+FORMULA .
+We need to prove the inclusion
+FORMULA . The other
+inclusion is clear since FORMULA . The right hand side is
+generated by elements of the form FORMULA  where
+FORMULA . Consider such FORMULA  and FORMULA . The polynomial FORMULA  must be of the
+form FORMULA  where FORMULA  and
+FORMULA . Let FORMULA  be the FORMULA -degree of
+FORMULA . The degrees of terms in FORMULA  are
+bounded. Terms FORMULA  in FORMULA  of large enough FORMULA -degree
+will make the FORMULA -degree of FORMULA  drop below
+FORMULA  since the degree of FORMULA  is negative. Consequently, these terms can
+simply be ignored since they cannot affect the initial form of
+FORMULA . Renaming and possibly repeating some
+FORMULA 's we may write FORMULA  as a finite sum FORMULA 
+where
+FORMULA  and FORMULA  with FORMULA  and
+FORMULA . We will split the sum into subsums grouping together
+the FORMULA 's that have the same FORMULA -exponent modulo FORMULA . For suitable
+index sets FORMULA  we let FORMULA  where FORMULA . Notice that all FORMULA -exponents in a FORMULA  are congruent modulo
+FORMULA  while FORMULA -exponents from different FORMULA 's are not. In particular
+there is no cancellation in the sum FORMULA . As a consequence
+FORMULA  for a
+suitable subset FORMULA . We also have
+FORMULA . We
+wish to show that each FORMULA  is in
+FORMULA . We can write FORMULA  for suitable FORMULA  such that
+FORMULA  for all FORMULA . Observe that
+FORMULA 
+Applying
+FORMULA  we
+see that FORMULA .
+By substituting FORMULA  and scaling FORMULA  we get
+Theorem  as a corollary.

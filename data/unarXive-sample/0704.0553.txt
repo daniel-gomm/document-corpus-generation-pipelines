@@ -1,0 +1,477 @@
+
+Non-Abelian Gauge Fields as Pseudo-Goldstone Vector
+Bosons
+J.L. Chkareuli and  J.G. Jejelava
+E. Andronikashvili Institute of Physics and 
+I. Chavchavadze State University, 0177 Tbilisi, Georgia
+
+
+Abstract
+
+We argue that non-Abelian gauge fields can be treated as the
+pseudo-Goldstone vector bosons caused by spontaneous Lorentz invariance
+violation (SLIV). To this end, the SLIV which evolves in a general
+Yang-Mills type theory with the nonlinear vector field constraint FORMULA  (FORMULA  is a proposed
+SLIV scale) imposed is considered in detail. With an internal symmetry group
+FORMULA  having FORMULA  generators not only the pure Lorentz symmetry FORMULA , but
+the larger accidental symmetry FORMULA  of the SLIV constraint in itself
+appears to be spontaneously broken as well. As a result, while the pure
+Lorentz violation still generates only one genuine Goldstone vector boson,
+the accompanying pseudo-Goldstone vector bosons related to the FORMULA 
+breaking also come into play in the final arrangement of the entire
+Goldstone vector field multiplet. Remarkably, they remain strictly massless,
+being protected by gauge invariance of the Yang-Mills theory involved. We
+show that, although this theory contains a plethora of Lorentz and FORMULA 
+violating couplings, they do not lead to physical SLIV effects which turn
+out to be strictly cancelled in all the lowest order processes considered.
+However, the physical Lorentz violation could appear if  the internal gauge
+invariance were slightly broken at very small distances influenced by
+gravity. For the SLIV scale comparable with the Planck one the Lorentz
+violation could become directly observable at low energies.
+
+
+Introduction
+The old idea{{cite:3a71a3bc-7036-4617-8a75-303f9b8c7b0b}} that spontaneous Lorentz invariance violation
+(SLIV) may lead to an alternative theory of quantum electrodynamics still
+remains extremely attractive in numerous theoretical contexts{{cite:156e259b-e433-4123-81a8-60ea38f4eea9}}
+(for some later developments, see the papers{{cite:d48c2984-87e8-464e-913e-53f2f0356ec0}}). The SLIV could
+generally cause the appearance of massless vector Nambu-Goldstone modes
+which are identified with photons and other gauge fields underlying the
+modern particle physics framework like as Standard Model and Grand Unified
+Theory. At the same time, the Lorentz violation by itself has attracted a
+considerable attention in recent years as an interesting phenomenological
+possibility appearing in various quantum field and string theories[4-9].
+Early models realizing the SLIV conjecture were based on the four fermion
+(current-current) interaction, where the proposed gauge field may appear as
+a fermion-antifermion pair composite state{{cite:3a71a3bc-7036-4617-8a75-303f9b8c7b0b}}, in a complete
+analogy with a massless composite scalar field in the original
+Nambu-Jona-Lazinio model{{cite:a8dad925-242c-4645-8880-dd82da4a3bef}}. Unfortunately, owing to the lack of a
+starting gauge invariance in such models and composite nature of Goldstone
+modes appeared it is hard to explicitly demonstrate that these modes really
+form together a massless vector boson being a gauge field candidate.
+Actually, one must make a precise tuning of parameters, including a
+cancellation between terms of different orders in the FORMULA  expansion (where
+FORMULA  is the number of fermion species involved), in order to achieve the
+massless photon case{{cite:eef918f4-1614-4a63-a6cb-f65bcce8f409}}. Rather, there are in general three separate
+massless Goldstone modes, two of which may mimic the transverse photons
+polarizations, while the third one must properly be suppressed.
+In this connection, the more instructive laboratory for SLIV consideration
+proves to be some simple class of the QED type models having from the outset
+a gauge invariant form, whereas the Lorentz violation is realized through
+the nonlinear dynamical constraint imposed on the starting vector field  FORMULA
+FORMULA 
+where FORMULA  is an properly oriented unit Lorentz vector, while FORMULA  is a
+proposed SLIV scale. This constraint means in essence that the vector field FORMULA  develops the vacuum expectation value FORMULA  FORMULA  and Lorentz symmetry FORMULA  breaks down
+to FORMULA  or FORMULA  depending on the time-like (FORMULA ) or
+space-like (FORMULA ) SLIV. Such QED model was first studied by
+Nambu a long time ago{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}}, but only for the time-like SLIV case and
+in the tree approximation. For this purpose he applied the technique of
+nonlinear symmetry realizations which appeared successful in the handling of
+the spontaneous breakdown of chiral symmetry in the nonlinear FORMULA  model{{cite:b6a868c6-25b7-4753-b4f3-9e27d72335fa}} and beyondActually, the simplest possible way to obtain the above supplementary
+condition (REF ) could be an inclusion the “standard” quartic vector field potential FORMULA  into the
+QED type Lagrangian, as can be motivated to some extent{{cite:b96cb7a0-7522-4319-aadd-56db55bd30b2}} from the
+superstring theory. This potential inevitably causes the spontaneous
+violation of Lorentz symmetry in a standard way, much as an internal
+symmetry violation is caused in a linear FORMULA  model for pions{{cite:b6a868c6-25b7-4753-b4f3-9e27d72335fa}}.
+As a result, one has a massive Higgs mode (with mass FORMULA )
+together with a massless Goldstone mode associated with photon. Furthermore,
+just as in the pion model one can go from the linear model for the SLIV to
+the non-linear one taking a limit FORMULA  FORMULA  (while keeping the ratio FORMULA  to be finite). This immediately leads to the constraint (REF )
+for vector potential FORMULA  with FORMULA , as it appears from a validity of its equation of motion. Another
+motivation for the nonlinear vector field constraint (REF ) might be
+an attempt to avoid the infinite self-energy of the electron in a classical
+electrodynamics, as was originally indicated by Dirac{{cite:34e89c1d-d9a0-4c68-acc8-f9a4779a81e6}} and extended
+later to various vector field theory cases{{cite:ed39c81e-7838-42b4-8417-ec47bdd43eb0}}..
+In the present paper, we mainly address ourselves to the Yang-Mills gauge
+fields as the possible vector Goldstone modes (Sec.3) once some basic
+ingredients of the Goldstonic QED model are established in a general SLIV case (Sec.2). This problem has been discussed many times in the literature
+within quite different contexts, such as the Yang-Mills gauge fields as the
+Goldstone modes for the spontaneous breaking of general covariance in a
+higher-dimensional space{{cite:4516a42b-7f29-4a58-a81c-cc98e6186708}} or for the nonlinear realization of
+some special infinite parameter gauge group{{cite:f588df6b-0abe-4b15-8ac7-02e1d4bd1e1c}}. However, all these
+considerations look rather speculative and optional. Specifically, they do
+not give a correlation between the SLIV induced photon case, from the one
+hand, and the Yang-Mills gauge field case, from the other. In contrast, our
+approach is solely based on the spontaneous Lorentz violation thus properly
+generalizing the Nambu's QED model{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}} to the non-Abelian internal
+symmetry case. Just in this approach evolved the interrelation between both
+of cases appears most transparent. We will see that in the Yang-Mills theory
+case with an internal symmetry group FORMULA  having FORMULA  generators not only the
+pure Lorentz symmetry part FORMULA  in the symmetry FORMULA  of
+the Lagrangian, but the larger accidental symmetry FORMULA  of the SLIV
+constraint FORMULA  in
+itself is spontaneously broken as well. Because the starting non-Abelian
+theory proves to be expanded about the vacuum which violates the much higher
+accidental symmetry appeared, many extra massless modes, the
+pseudo-Goldstone vector bosons (PGB), have to arise. Actually, while the
+spontaneous Lorentz violation on its own still generates only one genuine
+Goldstone vector boson, the accompanying vector PGBs related to the FORMULA  breaking also come into play in the final arrangement of the
+entire Goldstone vector field multiplet. Remarkably, in contrast to the
+familiar scalar PGB case{{cite:b6a868c6-25b7-4753-b4f3-9e27d72335fa}} the vector PGBs remain strictly massless
+being protected by the non-Abelian gauge invariance of the Yang-Mills theory
+involved. Then in Sec.4 we show by some examples of the lowest order SLIV
+processes that, while the Goldstonic non-Abelian theory evolved contains a
+rich variety of Lorentz and FORMULA  violating couplings, it proves to be
+physically indistinguishable from a conventional Yang-Mills theory.
+Actually, one of the goals of the present work is to explicitly demonstrate
+that a conventional Yang-Mills theory (as well as QED) is in fact the
+spontaneously broken theory. The Lorentz violation, due to the quadratic
+field constraint of the type (REF ), renders this theory highly
+nonlinear in the Goldstone vector modes, while physically equivalent to the
+usual one. So, as well as in the pure QED case, the SLIV only means the
+noncovariant gauge choice in the otherwise gauge invariant and Lorentz
+invariant Yang-Mills theory. However, even a tiny breaking of the starting
+gauge invariance at very small distances influenced by gravity would render
+the SLIV physically significant. For the SLIV scale comparable with the
+Planck one the spontaneous Lorentz violation could become directly
+observable at low energies. We summarize the results obtained in the final
+Sec.5.
+
+Goldstonic quantum electrodynamics
+The simplest SLIV model is given by a conventional QED Lagrangian for the
+charged fermion field  FORMULA
+FORMULA 
+where the nonlinear vector field constraint (REF ) is imposed{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}}. For the resulting Lorentz violation, one can rewrite the Lagrangian
+FORMULA  in terms of  the standard parametrization for the vector
+potential  FORMULA
+FORMULA 
+where the FORMULA  is pure Goldstonic mode
+FORMULA 
+while the effective Higgs mode (or the FORMULA  component in the vacuum
+direction) is given according to the above nonlinear constraint (REF ) by
+FORMULA 
+where, for definiteness, the positive sign for the above square root was
+taken when expanding it in powers of FORMULA . Putting the
+parametrization (REF ) with the SLIV constraint (REF , REF ) into our basic gauge invariant Lagrangian (REF ) one comes
+to the truly Goldstonic model for QED. This model might look unacceptable
+due to the inappropriately large Lorentz violating fermion bilinear FORMULA  stemming from the vector-fermion
+current interaction FORMULA  in the
+Lagrangian FORMULA  (REF ) when the expansion (REF ) is taken.
+However, thanks to a local invariance of the Lagrangian FORMULA  this term can be
+gauged away by a suitable redefinition of the fermion field
+FORMULA 
+after which the above fermion bilinear is exactly cancelled by an analogous
+term stemming from the fermion kinetic term. So, one eventually comes to the
+essentially nonlinear SLIV Lagrangian for the Goldstonic FORMULA  field of
+the type (taken in the first approximation in FORMULA )
+FORMULA 
+We denoted its strength tensor by FORMULA , while FORMULA  is a new SLIV oriented differential tensor. This
+tensor FORMULA  acts on the infinite series in FORMULA  coming
+from the expansion of the effective Higgs mode (REF ) from which
+the first order term FORMULA  was only taken in this
+expansion throughout the Lagrangian FORMULA . Also, we explicitly
+included the orthogonality condition FORMULA  into Lagrangian through
+the term which can be treated as the gauge fixing term (taking the limit FORMULA ) and retained the former notation for the
+fermion FORMULA .
+The Lagrangian (REF ) completes the Goldstonic QED construction for the
+charged fermion field FORMULA . The model, as one can see, contains the
+massless Goldstone modes given by the tree broken generators of the Lorentz
+group, while keeping the massive Higgs mode frozen. These modes, lumped
+together, constitute a single Goldstone vector boson associated with photonStrictly speaking one can no longer use the standard definition of photon as
+a state being the spin-1 representation of the (now spontaneously broken)
+Poincare group. However, due to gauge symmetry of  the starting QED
+Lagrangian (REF ) the separate SLIV Goldstone modes appear combined
+in such a way that a standard photon (taken in an axial gauge (4)) emerges.. In the limit FORMULA  the model is indistinguishable from a
+conventional QED taken in the general axial (temporal or pure axial) gauge.
+So, for this part of the Lagrangian FORMULA  given by the zero-order
+terms in FORMULA  the spontaneous Lorentz violation only means the noncovariant
+gauge choice in otherwise the gauge invariant (and Lorentz invariant)
+theory. Remarkably, furthermore, also all the other (first and higher order
+in FORMULA ) terms in the FORMULA   (REF ), though being by themselves
+the Lorentz and FORMULA  violating ones, do not lead to the physical SLIV
+effects which turn out to be strictly cancelled in all the physical
+processes involved. So, the nonlinear constraint (REF ) imposed on
+the standard QED Lagrangian (REF ) appears, in fact, as a possible
+gauge choice, while the FORMULA -matrix remains unaltered under such a gauge
+convention. This conclusion was first reached at tree level{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}} and
+recently extended to the one-loop approximation{{cite:5b8fd207-07de-4c67-8fd9-7197eba0d81f}}. All the one-loop
+contributions to the photon-photon, photon-fermion and fermion-fermion
+interactions violating the physical Lorentz invariance were shown to be
+exactly cancelled as well. This means that the vector field constraint FORMULA  which has been treated as the nonlinear
+gauge choice at a tree (classical) level, remains just as a pure gauge
+condition when quantum effects are also taken into account. Remarkably, this
+conclusion appears to work also for a general Abelian theory case{{cite:c9d63307-805d-476f-bc8c-0755f797e44e}},
+particularly, when the internal FORMULA  charge symmetry is spontaneously
+broken hand in hand with the Lorentz one. As a result, the massless photon
+being first generated by the Lorentz violation become then massive due to
+the standard Higgs mechanism, while the SLIV condition in itself remains to
+be a gauge choiceNote in this connection that there was discussed{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}} a possibility
+of an explicit construction of the gauge function corresponding to the
+nonlinear gauge constraint (1) that would eliminate the need for all the
+kinds of checks of gauge invariance mentioned above. Remarkably, the
+equation for this gauge function appears to be mathematically equivalent to
+the classical Hamilton-Jacobi equation of motion for a charged particle.
+Thus, this gauge function should in principle exist because there is a
+solution to the classical problem. However, this formal analogy only works
+for the time-like SLIV (FORMULA ) in the pure QED leaving aside a
+general Abelian theory when the gauge invariance can spontaneously be
+broken. Apart from that, it does not generally extend to the non-Abelian
+case (see next Section)..
+
+Goldstonic Yang-Mills theory
+In this section, we extend our discussion to the non-Abelian internal
+symmetry case given by a general group FORMULA  with generators FORMULA (FORMULA  and FORMULA  where FORMULA  are structure constants and FORMULA ). The
+corresponding vector fields which transform according to its adjoint
+representation are given in the proper matrix form FORMULA , while the matter fields (fermions, for definiteness)
+are presented in the fundamental representation column FORMULA 
+(FORMULA ) of FORMULA . By analogy with the above Goldstonic QED case we
+take for them a conventional Yang-Mills type Lagrangian
+FORMULA 
+(where FORMULA  and FORMULA  stands for the universal coupling constant
+in the theory) with the nonlinear SLIV constraint
+FORMULA 
+imposedAs in the Abelian case, the existence of such a constraint could be related
+with some nonlinear FORMULA  type SLIV model proposed for the vector field
+multiplet FORMULA  in the Yang-Mills theory (REF ). Note in this
+connection that, due to its generic antisymmetry, the familiar quadrilinear
+terms FORMULA  in the Lagrangian (REF ) do not contribute into the SLIV
+since they identically vanish for any single-valued vacuum configuration FORMULA ..  One can easily see that,
+although we propose only the FORMULA  invariance in the theory, the
+SLIV constraint taken (REF ) possesses, in fact, the much higher
+accidental symmetry FORMULA  determined by the dimensionality FORMULA  of the FORMULA  group adjoint representation to which the vector fields FORMULA 
+are belonged. This symmetry is indeed spontaneously broken at a scale  FORMULA
+FORMULA 
+with the vacuum direction given now by the `unit' rectangular matrix FORMULA  which describes both of the generalized SLIV cases
+at once, time-like (FORMULA  FORMULA ) or space-like (FORMULA  FORMULA ), respectively, depending on the sign of
+the FORMULA . This matrix has only one non-zero element for both of cases
+determined by the proper FORMULA  rotation. They are, particularly, FORMULA  or FORMULA  provided that the vacuum
+expectation value (REF ) is developed along the FORMULA  direction in the
+internal space and along the FORMULA  or FORMULA  direction, respectively,
+in the Minkowskian space-time. In response to each of these two breakings,
+side by side with one true vector Goldstone boson and the FORMULA  scalar
+Goldstone bosons corresponding to the spontaneous violation of actual FORMULA  symmetry of the total Lagrangian FORMULA ,  the FORMULA  vector pseudo-Goldstone bosons related to breaking of the accidental FORMULA  symmetry of the SLIV constraint taken (REF ) are also
+produced. Remarkably, in contrast to the familiar scalar PGB case{{cite:b6a868c6-25b7-4753-b4f3-9e27d72335fa}}
+the vector PGBs remain strictly massless being protected by the non-Abelian
+gauge invariance of the starting Lagrangian (REF ). Together with the
+aforementioned true vector Goldstone boson they complete the entire
+Goldstonic vector field multiplet of the internal symmetry group FORMULA .
+As in the Abelian case, upon an explicit use of the corresponding SLIV
+constraint (REF ) being so far the only supplementary condition for
+vector field multiplet FORMULA , one comes to the pure Goldstone field
+modes FORMULA  identified in a similar way
+FORMULA 
+At the same time, an effective Higgs mode (i.e., the FORMULA 
+component in the vacuum direction FORMULA ) is given by the
+product FORMULA 
+determined by the SLIV constraint
+FORMULA 
+where, as earlier in the Abelian case, we took the positive sign for the
+square root when expanding it in powers of FORMULA . Note
+that the general Goldstonic modes FORMULA , apart from pure vector
+fields, contain the FORMULA  scalar ones, FORMULA  and FORMULA  (FORMULA ), for the time-like (FORMULA ) and space-like (FORMULA ) SLIV,
+respectively. They can be eliminated from the theory if one puts the proper
+supplementary conditions on the FORMULA  fields which were still the
+constraint free. Using their overall orthogonality (REF ) to the
+physical vacuum direction FORMULA  one can formulate these
+supplementary conditions in terms of a general axial gauge for the entire FORMULA  multiplet
+FORMULA 
+where FORMULA  is the unit Lorentz vector introduced in the Abelian case
+which is now oriented in Minkowskian space-time so as to be parallel to the
+vacuum matrix FORMULA . For such a choice the simple
+equation holds
+FORMULA 
+which shows that the rectangular vacuum matrix FORMULA  has
+the factorized "two-vector" form. As a result, apart from the Higgs mode
+excluded earlier by the orthogonality condition (REF ), all the scalar
+fields also appear eliminated, and only pure vector fields, FORMULA  (FORMULA ) or FORMULA  (FORMULA ) for time-like or space-like SLIV, respectively,
+are only left in the theory.
+We now show that the such constrained Goldstone vector fields FORMULA 
+(with the supplementary conditions (REF ) taken) appear truly
+massless when the starting non-Abelian Lagrangian FORMULA  (REF )
+is rewritten in the form determined by the SLIV. Actually, putting the
+parametrization (REF ) with the SLIV constraint (REF ) into
+the Lagrangian (REF ) one is led to the highly nonlinear Yang-Mills
+theory in terms of the pure Goldstonic gauge field modes FORMULA .
+However, as in the above Abelian case, one should first gauge away (using
+the local invariance of the Lagrangian FORMULA ) the enormously large,
+while false, Lorentz violating terms appearing in the theory in the form of
+the fermion and vector field bilinears. As one can readily see, they stem
+from the couplings FORMULA   and FORMULA , respectively, when the effective Higgs mode
+expansion (REF ) is taken in the Lagrangian (REF ). Making
+the appropriate redefinitions of the fermion (FORMULA  ) and
+vector (FORMULA ) field multiplets
+FORMULA 
+and using the evident equalities for the linear (in coordinate)
+transformations FORMULA  with the single-valued vacuum matrix FORMULA  (FORMULA  or FORMULA  for the
+particular SLIV cases)
+FORMULA 
+one can confirm that the abovementioned Lorentz violating terms are exactly
+cancelled with the analogous bilinears stemming from their kinetic terms.
+So, the final Lagrangian for the Goldstonic Yang-Mills theory takes the form
+(in the first approximation in FORMULA )
+FORMULA 
+where the tensor FORMULA  is, as usual, FORMULA , while FORMULA  is a new SLIV oriented tensor of the
+type
+FORMULA 
+This tensor FORMULA  acts on the infinite series in FORMULA  coming from the expansion of the effective Higgs mode (REF ) from which only the first order term FORMULA  was taken throughout the Lagrangian FORMULA . We also retained the former notations
+for the fermion and vector field multiplets after transformations (REF ),  and explicitly included the (axial) gauge fixing term into Lagrangian
+according to the supplementary conditions taken (REF ).
+The theory derived gives a proper generalization of the nonlinear QED model{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}} for the non-Abelian case. It contains the massless vector boson
+multiplet FORMULA  (consisting of one Goldstone and FORMULA 
+pseudo-Goldstone vector states) which gauges the starting internal symmetry FORMULA . In the limit FORMULA   it is indistinguishable from a
+conventional Yang-Mills theory taken in the general axial gauge. So, for
+this part of the Lagrangian FORMULA 
+given by the zero-order in FORMULA  terms the spontaneous Lorentz violation
+only means the noncovariant gauge choice in the otherwise gauge invariant
+(and Lorentz invariant) theory. However, one may expect that, just as it
+appears in the nonlinear QED model, also all the first and higher order in FORMULA  terms in the FORMULA  (REF ), though being by themselves
+the Lorentz and FORMULA  violating ones, do not lead to the physical SLIV
+effects due to the mutual cancellation of their contributions into all the
+physical processes appeared.
+
+The lowest order SLIV processes
+Let us now show that the simple tree level calculations related to the
+Lagrangian FORMULA  confirms in
+essence this proposition. As an illustration, we consider SLIV processes in
+the lowest order in FORMULA  and FORMULA   being the fundamental parameters of the
+Lagrangian (REF ). They are, as one can readily see, the
+vector-fermion and vector-vector elastic scattering going in the order FORMULA , which we turn to once the Feynman rules in the Goldstonic Yang-Mills
+theory are established.
+Feynman rules
+The corresponding Feynman rules, apart from the ordinary Yang-Mills theory
+rules for
+(i) the vector-fermion vertex  FORMULA
+FORMULA 
+(ii) the vector field propagator (taken in a general axial gauge FORMULA )
+FORMULA 
+which automatically satisfies the orthogonality condition FORMULA  and on-shell transversality FORMULA 
+FORMULA  (FORMULA ); the latter means that free vector fields with polarization
+vector FORMULA  are always appeared transverse FORMULA ;
+(iii) the 3-vector vertex (with vector field 4-momenta FORMULA  FORMULA  and FORMULA ; all 4-momenta in vertexes are taken ingoing throughout)  FORMULA
+FORMULA 
+ include the new ones, violating Lorentz and FORMULA  invariance, for
+(iv) the contact 2-vector-fermion vertex  FORMULA
+FORMULA 
+(v) another 3-vector vertex
+FORMULA 
+where the second index in the vector field 4-momenta FORMULA  FORMULA  and FORMULA  denotes their Lorentz components;
+(vi) the extra 4-vector vertex (with the vector field 4-momenta FORMULA 
+and their proper differences FORMULA   etc.)
+FORMULA 
+where only the terms which can not lead to contractions of the rectangular
+vacuum matrix FORMULA  with vector field polarization
+vectors FORMULA  are presented. These contractions are in
+fact vanished due to the gauge taken (REF ), FORMULA  FORMULA  (with a factorized
+two-vector form for the matrix FORMULA  (REF ) used).
+Just the rules (i-vi) are needed to calculate the lowest order amplitudes of
+the processes we have mentioned in the above.
+
+Vector boson scattering on fermion
+This process is directly related to two SLIV diagrams one of which is given
+by the contact FORMULA -fermion vertex (REF ), while another
+corresponds to the pole diagram with the longitudinal FORMULA -boson exchange
+between Lorentz violatingFORMULA  vertex (REF ) and ordinary FORMULA -boson-fermion one (REF ). Since ingoing and outgoing FORMULA -bosons
+appear transverse (FORMULA , FORMULA ) only the third term in this FORMULA  coupling (REF )
+contributes to the pole diagram so that one comes to a simple matrix element
+FORMULA  for both of diagrams
+FORMULA 
+where the spinors FORMULA  and polarization vectors FORMULA  and FORMULA  stand for the ingoing and
+outgoing fermions and FORMULA -bosons, respectively, while FORMULA  is the 4-momentum
+transfer FORMULA . Upon the further simplifications in
+the square bracket related to the explicit form of the FORMULA  boson propagator FORMULA  (REF ) and matrix FORMULA  (REF ), and using the fermion current conservation FORMULA , one is finally led to the total cancellation of
+the Lorentz violating contributions to the FORMULA -boson-fermion scattering in
+the FORMULA  approximation.
+Note, however, that such a result may be in some sense expected since from
+the SLIV point of view the lowest order FORMULA -boson-fermion scattering
+discussed here is hardly distinct from the photon-fermion scattering
+considered in the nonlinear QED case{{cite:93d3ea4b-e9b5-4cdb-9aa9-33fcd4f16a2a}}. Actually, the fermion
+current conservation which happens to be crucial for the above cancellation
+works in both of cases, whereas the couplings being peculiar to the
+Yang-Mills theory have not yet touched on. In this connection the next
+example seems to be more instructive.
+
+Vector-vector scattering
+The matrix element for this process in the lowest order FORMULA  is given by
+the contact SLIV FORMULA  vertex (REF ) and the pole diagrams with the
+longitudinal FORMULA -boson exchange between the ordinaryFORMULA  vertex (REF ) and Lorentz violating FORMULA  one (REF ), and vice versa.
+There are six pole diagrams in total describing the elastic FORMULA  scattering
+in the FORMULA - and FORMULA -channels, respectively, including also those with an
+interchange of identical FORMULA -bosons. Remarkably, the contribution of each of
+them is exactly canceled with one of six terms appeared in the contact
+vertex (REF ). Actually, writing down the matrix element for one of
+the pole diagrams with ingoing FORMULA -bosons (with momenta FORMULA  and FORMULA )
+interacting through the vertex (REF ) and outgoing FORMULA -bosons (with
+momenta FORMULA  and FORMULA ) interacting through the vertex (REF ) one
+has
+FORMULA 
+where polarization vectors FORMULA , FORMULA , FORMULA  and FORMULA  belong, respectively, to ingoing and outgoing FORMULA -bosons, while FORMULA  according to the momentum running in the
+diagrams taken above. Again, as in the previous case of vector-fermion
+scattering, due to the fact that outgoing FORMULA -bosons appear transverse (FORMULA  and FORMULA ),
+only the third term in the Lorentz violating FORMULA  coupling (REF )
+contributes to this pole diagram. Upon evident simplifications related to
+the FORMULA -boson propagator FORMULA  (REF ) and matrix FORMULA  (REF ) one comes to the expression which is
+exactly cancelled with the first term in the contact SLIV vertex (REF ) when it is properly contracted with FORMULA -boson polarization vectors.
+Likewise, other terms in this vertex provide the further one-to-one
+cancellation with the remaining pole matrix elements FORMULA . So, again, the Lorentz violating contribution to the
+vector-vector scattering is absent in Goldstonic Yang-Mills theory in the
+lowest FORMULA  approximation.
+
+Other processes
+Other tree level Lorentz violating processes, related to FORMULA  bosons and
+fermions, appear in higher orders in the basic SLIV parameter FORMULA . They
+come from the subsequent expansion of the effective Higgs mode (REF ) in the Lagrangian (REF ). Again, their amplitudes are
+essentially determined by an interrelation between the longitudinal FORMULA -boson exchange diagrams and the corresponding contact FORMULA -boson interaction
+diagrams which appear to cancel each other thus eliminating physical Lorentz
+violation in theory.
+Most likely, the same conclusion can be derived for SLIV loop contributions
+as well. Actually, as in the massless QED case considered earlier {{cite:5b8fd207-07de-4c67-8fd9-7197eba0d81f}},
+the corresponding one-loop matrix elements in Goldstonic Yang-Mills theory
+either vanish by themselves or amount to the differences between pairs of
+the similar integrals whose integration variables are shifted relative to
+each other by some constants (being in general arbitrary functions of
+external four-momenta of the particles involved) that in the framework of
+dimensional regularization leads to their total cancellation.
+So, the Goldstonic vector field theory (REF ) for a non-Abelian
+charge-carrying matter is likely to be physically indistinguishable from a
+conventional Yang-Mills theory.
+
+Conclusion
+The spontaneous Lorentz violation in 4-dimensonal flat Minkowskian
+space-time was shown to generate vector Goldstone bosons both in Abelian and
+non-Abelian theories with the corresponding nonlinear vector field
+constraint (REF ) or (REF ) imposed. In the Abelian case such a
+massless vector boson is naturally associated with photon. In non-Abelian  case, although the pure  Lorentz violation still generates only one genuine
+Goldstone vector boson, the accompanying vector PGBs related to a violation
+of the larger accidental symmetry FORMULA  of the SLIV constraint (REF ) in itself come also into play in the final arrangement of the entire
+Goldstone vector field multiplet of the internal symmetry group FORMULA .
+Remarkably, they remain strictly massless being protected by the gauge
+invariance of the Yang-Mills theory involved. These theories, both Abelian
+and non-Abelian, while being essentially nonlinear in the Goldstone vector
+modes, are physically indistinguishable from conventional QED and Yang-Mills
+theory. One could actually see that just the gauge invariance not only
+provides these theories to be free from the unreasonably large Lorentz
+violation stemming from the fermion and vector field bilinears (see Sections
+2 and 3), but also render all the other physical SLIV effects (including
+those which are suppressed by the Lorentz violation scale FORMULA )
+non-observable (Section 4). As a result, Abelian and non-Abelian SLIV theory
+appear, respectively, as standard QED and Yang-Mills theory taken in the
+nonlinear gauge (to which the vector field constraints (REF ) and (REF ) are virtually reduced), while the FORMULA -matrix remains unaltered
+under such a gauge convention.
+So, while at present the Goldstonic nature of gauge fields, both Abelian and
+non-Abelian, seems to be highly plausible, the most fundamental question of
+physical Lorentz violation in itself, that only could uniquely point toward
+such a possibility, is still an open question. Note, that here we are not
+dealing with direct (and quite arbitrary in essence) Lorentz non-invariant
+extensions of QED or Standard Model which were intensively discussed on
+their own in recent years [6-8]. Rather, the case in point is a construction
+of genuine SLIV models which would generate gauge fields as the proper
+vector Goldstone bosons, from one hand, and could lead to observed Lorentz
+violating effects, from the other. In this connection, somewhat natural
+framework for physical Lorentz violation to occur would be a model where  the internal gauge invariance were slightly broken at very small distances
+through some high-order operators stemming from the gravity-influenced area.
+Such physical SLIV effects would be seen in terms of powers of ratio FORMULA  (where FORMULA  is the Planck mass). So, for the SLIV scale
+comparable with the Planck one they would become directly observable.
+Remarkably enough, if one has such internal gauge symmetry breaking in an
+ordinary Lorentz invariant theory this breaking appears vanishingly small at
+laboratory being properly suppressed by the Planck scale. However, the
+spontaneous Lorentz violation would render it physically significant: the
+higher Lorentz scale, the greater SLIV effects observed. If true, it would
+be of particular interest to have a better understanding of the internal
+gauge symmetry breaking mechanism that brings out the spontaneous Lorentz
+violation at low energies. We return to this basic question elsewhere.
+
+Acknowledgments
+We would like to thank Colin Froggatt, Rabi Mohapatra and Holger Nielsen for
+useful discussions and comments. One of us (J.L.C.) is grateful for the warm
+hospitality shown to him during a visit to Center for Particle and String
+Theory at University of Maryland where part of this work was carried out.

@@ -1,0 +1,767 @@
+
+ 1.0
+Some Blow-Up Problems For A Semilinear Parabolic Equation With A
+Potential Ting Cheng and Gao-Feng Zheng
+The corresponding author. 
+Department of Mathematics,
+Huazhong Normal UniversityWuhan, 430079, P.R. China.tcheng@mail.ccnu.edu.cn,   gfzheng@mail.ccnu.edu.cnThe blow-up rate estimate for the solution to a semilinear parabolic
+equation FORMULA  in FORMULA 
+with 0-Dirichlet boundary condition is obtained. As an
+application, it is shown that the asymptotic behavior of blow-up
+time and blow-up set of the problem with nonnegative initial data
+FORMULA  as FORMULA  goes to infinity, which have been found in
+{{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}, are improved under some reasonable and weaker conditions
+compared with {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}.
+Key words: Blow-Up rate, Blow-Up time, Blow-Up set, Semilinear
+parabolic equations, Potential.
+Introduction
+In this paper, we are concerned with the following semilinear
+parabolic problem
+FORMULA 
+where FORMULA  is a bounded,
+convex, smooth domain, FORMULA , FORMULA ,
+and the potential FORMULA  satisfies FORMULA 
+for some positive constant FORMULA  and all FORMULA . It is well-known
+that for any FORMULA  problem (REF ) has a unique
+local in time solution. Specially, if the FORMULA -norm of the
+initial datum is small enough, then (REF ) has global,
+classical solution, while the solution to (REF ) ceases to
+exist after some time FORMULA  and FORMULA  provided that the initial datum FORMULA  is
+large in some suitable sense. In the latter case we call the
+solution FORMULA  to (REF ) blows up in finite time and FORMULA  the
+blow-up time. As usual, the blow-up set of the solution FORMULA  is
+defined by
+FORMULA 
+Much effort has been devoted to blow-up problems for semilinear
+parabolic equations since the pioneering works in 1960s due in
+particular to interest in understanding the mechanism of thermal
+runaway in combustion theory and as a model for reaction-diffusion.
+See for example, {{cite:5d168438-822e-47eb-b1f5-8b85f9aaf770}}, {{cite:41a0ca16-0e8c-47ff-9589-1f53e8ce5f10}}, {{cite:c4a802b3-35ed-48e0-b54a-5f397bfb22dc}}, {{cite:2733ca9e-f3dc-4393-add6-9a4b464ba43b}}, {{cite:731262c9-e0f7-41b4-b06b-bd94cc3aafa0}}, {{cite:e05d2a89-0dad-4dcd-bf78-b858553f5f05}}, {{cite:003d97ad-39e3-4cd1-9a2c-043f302dfd0b}}, {{cite:cc3d197b-7392-44ef-a1c8-6d707d033744}}. The seminal works to
+problem (REF ) with FORMULA  were done by Giga-Kohn
+{{cite:fdff9bfa-116b-4c58-9701-bbbe387d7d67}}, {{cite:5f979802-356f-4f13-8102-6362e5dbb686}}, {{cite:a8fd8a5a-e2cf-4423-93fa-d4aeb55f9ede}}. In their paper {{cite:5f979802-356f-4f13-8102-6362e5dbb686}}, among other things,
+they have obtained a blow-up rate estimate, which is crucial to
+obtain the asymptotic behavior of the blow-up solution near the
+blow-up time. More precisely, under the assumptions that the domain
+FORMULA  is the entire space or convex and the solution is nonnegative
+or FORMULA  or FORMULA , they
+proved that
+FORMULA 
+where FORMULA  is a constant and FORMULA  is the blow-up time. More
+recently, the same estimate has been obtained by
+Giga-Matsui-Sasayama {{cite:09bdae62-e824-4667-8960-752814b212cf}}, {{cite:66e27e69-3d88-4452-b3ce-74152f417cfa}} for any subcritical FORMULA 
+(i.e., FORMULA  when FORMULA , FORMULA  when
+FORMULA ).
+Whether the similar blow-up rate estimate holds for the problem
+(REF ) for general potential FORMULA , to our best knowledge, is not
+well-understood up to now. Our first goal in this paper is to give
+an affirmative answer to this question. We have the following
+Theorem 1.1 
+Let FORMULA  be a blow-up solution to (REF ) with a blow-up time
+FORMULA . There exists a positive constant FORMULA  depending only on
+FORMULA , a bound for FORMULA  and the
+positive lower bound FORMULA  for FORMULA  and FORMULA , such
+that
+FORMULA 
+
+As in {{cite:5f979802-356f-4f13-8102-6362e5dbb686}}, we convert our problem to a uniform bound for a
+global in time solution FORMULA  of the rescaled equation
+FORMULA 
+with
+FORMULA 
+where FORMULA  is the center of the rescaling.
+The proof of Theorem REF  depends heavily on the methods
+developed by Giga-Kohn in {{cite:5f979802-356f-4f13-8102-6362e5dbb686}} and Giga-Matsui-Sasayama in
+{{cite:09bdae62-e824-4667-8960-752814b212cf}}, {{cite:66e27e69-3d88-4452-b3ce-74152f417cfa}}. However our result is definitely not a direct
+consequence of their works. Due to the appearance of the potential
+FORMULA , some extra works should be done. It turns out that the key
+point and the main difference is to establish an upper bound for the
+global energy of FORMULA  given by
+FORMULA 
+where FORMULA . A lower bound for the energy
+can be obtained without much effort. When FORMULA , these bounds
+come easily from the Liapunov structure of the equation, i.e., the
+energy FORMULA  is non-increasing in time. In our case this does not
+hold anymore. There is a “bad" term
+FORMULA 
+involved in the derivative of the energy FORMULA . The main idea of
+proving Theorem REF  is as follows: First, using the fact that
+FORMULA  is uniformly bounded in FORMULA 
+for all FORMULA , we get a rough control of the growth of the global
+energy FORMULA . Since the term FORMULA 
+can be written as FORMULA , we can use the
+information of the decay term FORMULA . However, it has
+disadvantage that the unbounded thing FORMULA  involves. Therefore we
+need some information from higher level energies
+FORMULA 
+So our second step is to establish the control of the higher level
+energies. An upper bound for FORMULA  is obtained by an integral
+involving lower level energy. A lower bound for FORMULA  is
+obtained by two inequalities involving FORMULA  and FORMULA . Finally we obtain an
+upper bound for the energy FORMULA . To this end, the growth of lower
+level energies is improved by applying the growth of the higher
+level energies. An upper bound of the global energy FORMULA  is
+obtained by a similar trick to bootstrap argument. Once these bounds
+are in hands, similar arguments to {{cite:09bdae62-e824-4667-8960-752814b212cf}}, {{cite:66e27e69-3d88-4452-b3ce-74152f417cfa}} can be applied
+to show the boundedness of the global in time solution FORMULA , which in
+turn implies the blow-up rate estimate (REF ).
+Another aim of this paper is to establish the asymptotic behavior of
+blow-up time and blow-up set of the blow-up solution to the problem
+(REF ) with nonnegative initial data FORMULA  as FORMULA .
+In this case, the problem we focused on can be rewritten as
+FORMULA 
+where FORMULA  satisfies FORMULA  and FORMULA  satisfies the same
+conditions as before. For these issues of blow-up problems to
+(REF ), we improve the results which have been obtained by
+Cortazar-Elgueta-Rossi {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}} recently.
+In {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}, they have made some more technical condition on
+FORMULA :
+FORMULA 
+The assumptions on FORMULA  and FORMULA  are the same as ours (although
+their assumption that FORMULA  is Lipschitz is replaced by FORMULA  in our case, our results still hold when FORMULA  is Lipschitz).
+Under these assumptions, they proved that there exists FORMULA 
+such that if FORMULA , then blow-up occurs and the blow-up time
+FORMULA  and the blow-up set FORMULA  of the blow-up solution to
+(REF ) satisfy
+FORMULA 
+FORMULA 
+where FORMULA  and FORMULA  are two
+positive constants.
+For the upper bound estimate on blow-up time, we have the following
+Theorem 1.2 
+Let FORMULA  be a smooth bounded
+domain, FORMULA , FORMULA  be continuous functions on FORMULA  with
+FORMULA  for some FORMULA . Then for any FORMULA  there exists a constant
+FORMULA  and FORMULA  such that for every FORMULA , the solution
+to (REF ) blows up in finite time that verifies
+FORMULA 
+where FORMULA .
+
+Remark 1.1 Our assumptions are weaker than ones in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}. In {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}},
+they required FORMULA  and FORMULA  are Lipschitz continuous. Furthermore,
+our result tells that the decay of the upper bound of
+FORMULA  can be faster than which has been
+obtained in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}.
+
+Notice that the proof of the upper bound of blow-up time in
+{{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}} depends on an argument of so-called “projection method"
+(see e.g. {{cite:003d97ad-39e3-4cd1-9a2c-043f302dfd0b}}) and the essential assumption that FORMULA  are
+Lipschitz continuous. Our proof of Theorem REF  requires a
+FORMULA -method (see e.g. {{cite:5d168438-822e-47eb-b1f5-8b85f9aaf770}}). The advantage of this method
+compared with one in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}} is that we do not need to control
+the first eigenvalue of Laplacian with Dirichlet boundary condition.
+For the lower bound estimate for the blow-up time and the asymptotic
+behavior of blow-up set, we have
+Theorem 1.3 
+Let FORMULA  be a convex, bounded,
+smooth domain, FORMULA , FORMULA  be a continuous function
+on FORMULA  with FORMULA , and FORMULA  with FORMULA  for some FORMULA . Then there exist two positive constants FORMULA  such that
+FORMULA 
+FORMULA 
+where FORMULA .
+
+Applying Theorem REF  and the method in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}, we get
+Theorem REF  immediately. The only difference is that the role
+of Lemma 2.1 in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}} is replaced by that of our Theorem
+REF  now.
+Remark 1.2 In our case, we do not need the assumption (REF ) anymore.
+
+Remark 1.3 As described in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}, the asymptotics depend on a combination
+of the shape of both FORMULA  and FORMULA . To see this, if we drop the
+Laplacian, we get the ODE FORMULA  with initial condition
+FORMULA . This gives FORMULA  with
+FORMULA 
+It turns out that blow-up occurs at point FORMULA  such that
+FORMULA . So
+the quantity FORMULA  plays a
+crucial role in the problem.
+
+Remark 1.4 Also as in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}, (REF ) shows that the blow-up set
+concentrates when FORMULA  near the set where FORMULA  attains
+its maximum. Notice that FORMULA  for any
+maximizer FORMULA . If FORMULA  is a non-degenerate maximizer, we
+conclude that there exist constants FORMULA  such that
+FORMULA 
+So (REF ) implies
+FORMULA 
+
+Throughout the paper we will denote by FORMULA  a constant that does not
+depends on the solution itself. And it may change from line to line.
+And FORMULA , FORMULA , FORMULA ,
+FORMULA , FORMULA  are positive constants depending
+on FORMULA , a lower bound of FORMULA , FORMULA  and
+the initial energy
+FORMULA . Here and hereafter FORMULA .
+Acknowledgment. This work is partially supported by
+NSFC No.10571069.
+
+Blow-Up Rate Estimates
+In this section, we will prove Theorem REF .
+We introduce the rescaled function
+FORMULA 
+with FORMULA  We shall denote FORMULA  by
+FORMULA . If FORMULA  solves (REF ), then FORMULA  satisfies
+FORMULA 
+where  FORMULA
+We may assume FORMULA  as in {{cite:09bdae62-e824-4667-8960-752814b212cf}} so that we assume FORMULA 
+Here and hereafter we may denote FORMULA  by  FORMULA
+By introducing a weight function
+FORMULA , we can rewrite
+(REF ) as the divergence form:
+FORMULA 
+As stated in {{cite:09bdae62-e824-4667-8960-752814b212cf}}, we may assume
+FORMULA 
+Global energy estimates
+We introduce the energy of FORMULA  of the form (we call it the “global
+energy")
+FORMULA 
+We shall show that this global energy satisfies the following
+estimates.
+Proposition 2.1 
+Let FORMULA  be a global solution of (REF ), then
+FORMULA 
+
+Proposition 2.2 
+Let FORMULA  be a global solution of (REF ), then
+FORMULA 
+
+We will prove these two properties in the following subsections.
+Lower bound for  FORMULA
+Lemma 2.3 
+ FORMULA
+
+We see from (REF ) that
+FORMULA 
+Calculating the derivative of FORMULA  and noting that FORMULA  we have
+FORMULA 
+or
+FORMULA 
+Notice that FORMULA  is bounded. By (REF ), using Young's
+inequality, we have
+FORMULA 
+Taking FORMULA  small enough we get
+FORMULA 
+Since FORMULA 
+is bounded and FORMULA  is convex, it follows from (REF ) and
+(REF ) that
+FORMULA 
+Take FORMULA  small then we have
+FORMULA 
+From this inequality, we claim that FORMULA  If not, then there exists FORMULA  such that
+FORMULA . By (REF ), we have
+FORMULA  This implies that
+FORMULA 
+Hence by (REF ) and Jensen's inequality, for FORMULA 
+we have
+FORMULA 
+This fact shows that FORMULA  will blow up in
+finite time, which is impossible.
+
+Upper bound for  FORMULA
+To find an upper bound for FORMULA , we introduce
+FORMULA 
+For this energy functional, we shall prove the following properties.
+Proposition 2.4
+FORMULA 
+
+Proposition 2.5
+FORMULA 
+
+Proof of Proposition REF . Similar to that of
+{{cite:5f979802-356f-4f13-8102-6362e5dbb686}} Proposition 4.1.
+Proof of Proposition REF .
+FORMULA 
+Estimating the first term of the right hand side, we get
+FORMULA 
+Hence we have
+FORMULA 
+For FORMULA , similar to Proposition 4.2 of {{cite:5f979802-356f-4f13-8102-6362e5dbb686}} we now state an
+parabolic type Pohozaev identity.
+Proposition 2.6
+FORMULA 
+
+We now define
+FORMULA 
+Lemma 2.7
+FORMULA 
+where FORMULA  and FORMULA  depends on FORMULA  FORMULA  and FORMULA 
+are constants such that FORMULA  and
+FORMULA  and FORMULA  is a small constant.
+
+Proof. By (REF ) and (REF ) we obtain that
+FORMULA 
+Since FORMULA  is convex, the third term on the right is always negative.
+We control the second term by applying the Cauchy-Schwarz inequality:
+for any FORMULA ,
+FORMULA 
+Choosing FORMULA  small enough that
+FORMULA 
+we conclude that
+FORMULA 
+Now choose FORMULA , and apply (REF ) to get
+FORMULA 
+Let FORMULA , we derive that
+FORMULA 
+Note that FORMULA 
+From (REF ) we get
+FORMULA 
+In the following we will denote FORMULA  by FORMULA .
+Making use of the inequality
+FORMULA 
+we obtain that
+FORMULA 
+Here and hereafter FORMULA  denotes a constant depending on
+FORMULA  and may be different at each occurrence. Take FORMULA 
+and we hence have
+FORMULA 
+From (REF ) we obtain that
+FORMULA 
+Thanks to (REF ), we hence get
+FORMULA 
+Therefore we have
+FORMULA 
+Combining (REF ) with (REF ) and (REF ) we obtain that
+FORMULA 
+where FORMULA  is a constant such that
+FORMULA .
+Take FORMULA  small enough such that
+FORMULA , then
+FORMULA 
+Denote
+FORMULA , then we get
+FORMULA 
+where FORMULA  depends on FORMULA .
+Lemma 2.8 
+FORMULA 
+where FORMULA  depends on FORMULA .
+
+Proof.
+From (REF ), using Jensen's inequality, we have
+FORMULA 
+This inequality plus FORMULA  (REF ) leads to
+FORMULA 
+Denote
+FORMULA . Then
+FORMULA 
+We claim that
+FORMULA 
+If not, there exists FORMULA  such that FORMULA , then
+(REF ) tells us that
+FORMULA 
+which shows that
+FORMULA 
+Therefore from (REF ) we get
+FORMULA 
+From this inequality, we easily conclude that FORMULA  will blow up in
+finite time, which is impossible.
+Hence our lemma holds.
+To obtain rough estimates for the higher level energies, the
+following two inequalities, i.e. (REF ) and (REF ), play an
+important role. By Proposition REF  and Young's inequality, we
+have
+FORMULA 
+Similar to (REF ), we have
+FORMULA 
+Taking FORMULA  small enough, we obtain that
+FORMULA 
+for all FORMULA .
+On the other hand, by Proposition REF , Hölder inequality,
+Young's inequality and Jensen's inequality we have
+FORMULA 
+Now we get following rough estimates
+Lemma 2.9 
+For any FORMULA , there exist positive constants FORMULA  and FORMULA , such that the following estimates hold:
+FORMULA 
+FORMULA 
+FORMULA 
+for all FORMULA  and FORMULA .
+
+Proof.  Let FORMULA  be a strictly increasing sequence. It suffices to show
+the following estimates:
+FORMULA 
+FORMULA 
+FORMULA 
+We prove these estimates by induction.
+Step 1. These estimates holds for FORMULA .
+Note that (REF ) gives us
+FORMULA 
+which imply that FORMULA . Therefore we now
+have FORMULA  by Lemma
+REF .
+Using the similar trick of getting (REF ), we can write
+(REF ) as a more refinement form:
+FORMULA 
+then FORMULA  and therefore FORMULA  It follows
+that
+FORMULA 
+From (REF ), we have
+FORMULA 
+Multiplying FORMULA  on both sides and integrating from 0
+to FORMULA , we obtain that
+FORMULA 
+In particular, (REF ) holds for FORMULA .
+Denote FORMULA . Notice that
+FORMULA 
+If there exists FORMULA  such that FORMULA , then at FORMULA ,
+FORMULA 
+since FORMULA  can be large enough. It follows that FORMULA  for all FORMULA . So FORMULA 
+and then FORMULA  for all FORMULA , which implies that FORMULA  will
+blow up in finite time. This contradicts the fact that FORMULA  is
+globally defined. So we have
+FORMULA 
+In other words, (REF ) holds for FORMULA .
+By (REF ),
+FORMULA 
+It follows from (REF ) that
+FORMULA 
+On the other hand, by (REF ) and the definition of FORMULA , we
+have
+FORMULA 
+where the last inequality follows from (REF ) for FORMULA .
+Therefore (REF ) also holds for FORMULA .
+Step 2. (REF )-(REF ) holds for all FORMULA .
+Suppose (REF )-(REF ) holds for FORMULA . Since
+(REF ) holds for FORMULA , by (REF ) and a similar argument to
+derive (REF ) we conclude that (REF ) holds for FORMULA . By
+(REF ), we have
+FORMULA 
+Since (REF ) holds for FORMULA , we have
+FORMULA 
+Now we need to obtain the lower bound for FORMULA . Denote
+FORMULA 
+Then it follows from (REF ) and (REF ) that
+FORMULA 
+The last inequality implies that
+FORMULA 
+where FORMULA . By induction
+hypothesis, we have
+FORMULA 
+We claim that
+FORMULA 
+where FORMULA .
+Otherwise, there exists FORMULA  such that FORMULA . By (REF ), we have
+FORMULA 
+for all FORMULA . So FORMULA , i.e., FORMULA  for all FORMULA . Now from (REF )
+we conclude that FORMULA  for all
+FORMULA , which implies FORMULA  blows up in finite time. This
+is a contradiction. Therefore FORMULA 
+and then FORMULA . In particular,
+(REF ) holds for FORMULA .
+Finally, by (REF ), we have
+FORMULA 
+Combining this with the fact that FORMULA  and (REF ) we have
+FORMULA 
+By (REF ), we obtain
+FORMULA 
+Therefore, by FORMULA , we get
+FORMULA 
+Hence (REF ) holds for FORMULA . The Lemma is proved.
+Remark 2.1 
+We have seen in the proof of this Lemma that
+FORMULA 
+and
+FORMULA 
+
+Next, we need the following
+Lemma 2.10 
+Suppose FORMULA  and for some FORMULA , there exist positive constants FORMULA  and FORMULA , such that
+FORMULA 
+FORMULA 
+hold for all FORMULA  and FORMULA . Then
+there exist positive constants FORMULA  and FORMULA , such that
+FORMULA 
+FORMULA 
+hold for all FORMULA  and FORMULA . Here we
+set FORMULA .
+
+Proof.  Let FORMULA  be a strictly decreasing sequence. It suffices to show
+the following estimates:
+FORMULA 
+FORMULA 
+We prove these estimates by induction.
+Step 1. These estimates hold for FORMULA .
+Recalling (REF ) we have
+FORMULA 
+Also we get
+FORMULA 
+By (REF ) and the assumptions of this Lemma, then we get
+FORMULA 
+So
+FORMULA 
+We claim that
+FORMULA 
+Indeed, if we denote the left hand side of (REF ) by FORMULA ,
+then FORMULA  by
+the assumption. It follows that
+FORMULA 
+by integration by parts. So (REF ) holds and
+FORMULA 
+Notice that we have proved that FORMULA . Therefore
+(REF ) holds for FORMULA .
+By (REF ), (REF ) and FORMULA , we deduce that
+FORMULA 
+As usual, we have
+FORMULA 
+Then
+FORMULA 
+Let FORMULA . Then for any FORMULA ,
+FORMULA 
+due to (REF ). So
+FORMULA 
+i.e., (REF ) holds for FORMULA .
+Step 2. (REF ) and (REF ) hold for all FORMULA .
+Suppose (REF ) and (REF ) hold for all FORMULA . Taking FORMULA  in (REF ), we get
+FORMULA 
+Notice that we have used that FORMULA  and the assumptions of the
+Lemma. Hence we get
+FORMULA 
+Since FORMULA , we get
+FORMULA 
+as before. Let FORMULA . Then by induction
+hypothesis, we have
+FORMULA 
+So
+FORMULA 
+i.e., FORMULA .
+Therefore
+FORMULA 
+Now let FORMULA . Then
+by (REF ) and (REF ), we have
+FORMULA 
+Since FORMULA ,
+where FORMULA  and FORMULA . It follows from (REF ) and induction hypothesis
+that
+FORMULA 
+A similar argument to obtain (REF ) gives us
+FORMULA 
+From (REF ) and (REF ), we know that (REF ) holds for
+FORMULA .
+From the fact that
+FORMULA 
+and above estimates, we have
+FORMULA 
+As before, we have
+FORMULA 
+Multiplying FORMULA  on both sides and integrating
+over FORMULA , we obtain
+FORMULA 
+i.e., (REF ) holds for FORMULA . So the proof of this Lemma is
+complete.
+To obtain the upper bound of FORMULA , we also need the following
+Lemma 2.11 
+Suppose that there exist two positive constants FORMULA  and some
+FORMULA  such that
+FORMULA 
+FORMULA 
+Then we have
+FORMULA 
+
+Proof.  Recall from (REF ) that
+FORMULA 
+By the lower bound of FORMULA  and Young's inequality, we get
+FORMULA 
+Using (REF ), we have
+FORMULA 
+By Lemma REF , we may assume FORMULA . So
+FORMULA 
+Noticing that FORMULA , we obtain that FORMULA  from the assumptions.
+Proof of Proposition  REF Combining Lemma REF 
+with Lemma REF , Lemma REF  and Remark REF , we get
+the upper bound of FORMULA  immediately. Notice that the lower bound
+of FORMULA  has been obtained in Lemma REF . So the proof is
+complete.
+
+Proof of Proposition  REF
+Proof of (REF ). From (REF ) we have
+FORMULA 
+Then (REF ) tells us that
+FORMULA 
+where FORMULA , which
+is an integrable function. Integrating this inequality from FORMULA  to
+FORMULA , we get
+FORMULA 
+It follows that
+FORMULA 
+Proof of (). Making use of Jensen's inequality,
+from (REF ), we get
+FORMULA 
+We assert that
+FORMULA 
+where FORMULA  is
+the zero of FORMULA .
+If not, there exists FORMULA  such that
+FORMULA 
+Then
+FORMULA 
+which implies that
+FORMULA 
+Then there exists some FORMULA  such that for FORMULA ,
+FORMULA 
+so that FORMULA  blows up in finite time,
+which is impossible.
+Proof of (). Recall that FORMULA  and
+FORMULA . Then from (REF ) we see that
+FORMULA 
+Therefore by (REF ) and () we have
+FORMULA 
+
+Proof of Theorem  REF
+Let FORMULA  be a bounded function with
+FORMULA  Then FORMULA 
+satisfies
+FORMULA 
+We introduce two types of local energy.
+FORMULA 
+By the similar trick of {{cite:09bdae62-e824-4667-8960-752814b212cf}}, we could establish a lower and
+an upper bound for FORMULA . We just list some
+important results and ignore the proof.
+Upper bound for  FORMULA
+Using (REF ) and () we obtain that
+FORMULA 
+where  FORMULA
+Proposition 2.12 (Quasi-monotonicity of FORMULA )
+FORMULA 
+
+for all  FORMULA
+Proposition 2.13 There exists a positive constant FORMULA , such that
+FORMULA 
+where FORMULA  depends on FORMULA , upper bound for
+FORMULA  and upper bound for FORMULA .
+
+Note that
+FORMULA 
+Thanks to (REF ), (REF ) and (REF ) we can derive an
+upper bound for  FORMULA
+Theorem 2.14
+FORMULA 
+
+
+Lower bound for  FORMULA
+Notice that
+FORMULA 
+By estimating FORMULA  and using () we
+obtain
+Proposition 2.15 There exists a positive constant FORMULA  such that
+FORMULA 
+
+By (REF ), (REF ) and (REF ) we obtain that
+Theorem 2.16 There exists a positive constant FORMULA  such that
+FORMULA 
+
+Once we have these bounds for the local energies, the proof of
+Theorem REF  follows from bootstrap arguments, an
+interpolation theorem in {{cite:170b7551-368f-4031-9d56-53c7ae7052d9}} and the interior regular theorem
+in {{cite:c6e62793-8207-4764-8f1d-e9ce859ad1a5}} as in {{cite:09bdae62-e824-4667-8960-752814b212cf}}, {{cite:66e27e69-3d88-4452-b3ce-74152f417cfa}}. We omit the details since
+there is no anything new.
+Remark 2.2 If we only treat nonnegative solution to (REF ), then Theorem
+REF  can be proved through the bounds we have obtained in
+Section 2.1. We can combine the methods in {{cite:5f979802-356f-4f13-8102-6362e5dbb686}} and {{cite:9c58616e-ccc8-4b13-b407-01fbfd3287a2}}
+to get the blow-up rate estimate.
+
+
+Asymptotic behavior of the Blow-Up Time and Blow-Up set
+In this section, we are interested in the following problem
+FORMULA 
+where FORMULA  satisfies FORMULA  and FORMULA  satisfies the conditions
+described as in Section 1.
+The main goal of this section is to prove Theorem REF  and
+REF .
+Proof of Theorem REF .  That blow-up occurs for
+large FORMULA  is standard fact. Let FORMULA  such that
+ FORMULA
+Since FORMULA  and FORMULA  are continuous, it follows that FORMULA  such that
+FORMULA 
+Let FORMULA  be the solution of
+FORMULA 
+and FORMULA  its corresponding blow up time.
+A comparison argument shows that FORMULA  in FORMULA  and hence  FORMULA
+Our goal is to estimate FORMULA  for large values of FORMULA . Define
+FORMULA 
+then
+FORMULA 
+Set FORMULA  then we
+obtain that
+FORMULA 
+where  FORMULA
+In particular,  FORMULA
+On the other hand,
+FORMULA 
+which tells us that FORMULA 
+Therefore from (REF ) we get
+FORMULA 
+Set
+FORMULA 
+and
+ FORMULA
+Note that
+FORMULA 
+It follows that FORMULA  Hence
+FORMULA 
+Then FORMULA  such that  FORMULA
+Define FORMULA 
+where FORMULA  is the blow-up time of FORMULA  Then FORMULA  is closed. On
+the other hand, FORMULA  is open. In fact, FORMULA 
+since
+FORMULA 
+it follows that FORMULA  for  FORMULA
+Recall that FORMULA  We conclude that
+FORMULA 
+In particular,  FORMULA
+Thus, there exists FORMULA  such that for all FORMULA  or
+FORMULA 
+which means FORMULA  Therefore FORMULA  In other words,
+FORMULA 
+Integrating this inequality from 0 to FORMULA , we get
+FORMULA 
+Since FORMULA  is arbitrarily small, the Theorem follows readily
+from the above estimate.
+Proof of Theorem REF .  The proof is almost the same
+as in {{cite:61ac0d6a-a26c-4849-9345-31a4c1a65000}}. The only different thing is that we improve their
+Lemma 2.2. For the reader's convenience, we outline the proof here.
+Let FORMULA  be large such that the solution FORMULA  blows up in finite time
+FORMULA  and let FORMULA  be a blow-up point. To involve the
+information of FORMULA , we modify the definition of FORMULA  to be
+FORMULA 
+Then FORMULA  satisfies
+FORMULA 
+where FORMULA .
+Consider the frozen energy
+FORMULA 
+Then
+FORMULA 
+We have used Theorem REF  and Hölder inequality in the
+last inequality. So FORMULA  and then
+FORMULA 
+Since FORMULA  is bounded, by the argument of {{cite:5f979802-356f-4f13-8102-6362e5dbb686}} and {{cite:a8fd8a5a-e2cf-4423-93fa-d4aeb55f9ede}},
+we conclude that
+FORMULA 
+uniformly in any compact set, and
+FORMULA 
+So
+FORMULA 
+By Theorem REF , we estimate FORMULA  to get FORMULA . So
+FORMULA 
+Observe that FORMULA  for any constant FORMULA , where FORMULA  and
+FORMULA . It follows that
+FORMULA  attains a unique maximum at FORMULA  and there exist FORMULA  such that if FORMULA  then FORMULA  and if
+FORMULA  then FORMULA . From (REF ), we
+have FORMULA . By the properties of FORMULA  we have
+FORMULA 
+By Theorem REF , for any FORMULA  there exists FORMULA  such that
+if FORMULA , we have
+FORMULA 
+where
+FORMULA 
+Therefore, we get
+FORMULA 
+if we choose FORMULA . Then
+FORMULA 
+This implies
+FORMULA 
+We can deduce from this inequality that FORMULA  for
+large FORMULA . So
+FORMULA 
+Therefore
+FORMULA 
+i.e.,
+FORMULA 
+The Theorem is proved.

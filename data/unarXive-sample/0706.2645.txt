@@ -1,0 +1,334 @@
+
+
+
+Compactness of the complex green operator
+Andrew S. Raich Emil J. Straube
+Compactness of the complex Green operator
+Andrew S. Raich Emil J. Straube
+
+Department of Mathematics, Texas A&M University, Mailstop 3368, College Station, TX
+77845-3368araich@math.tamu.edu, straube@math.tamu.edu
+Research supported in part by NSF grant DMS 050084232W10, 32W05, 35N15
+
+Let FORMULA  be a bounded smooth pseudoconvex domain. We show that compactness of the complex Green operator FORMULA  on
+FORMULA -forms on FORMULA  implies compactness of the FORMULA -Neumann operator FORMULA  on FORMULA . We prove that if FORMULA  and FORMULA  satisfies FORMULA  and FORMULA , then FORMULA  is a compact operator (and so is FORMULA ). Our method relies on a jump type formula to represent forms on the boundary, and we prove an auxiliary compactness result for an `annulus' between two pseudoconvex domains. Our results, combined with the known characterization of compactness in the FORMULA -Neumann problem on locally convexifiable domains, yield the corresponding characterization of compactness of the complex Green operator(s) on these domains.
+
+Introduction and Results
+Let FORMULA  be a bounded, smooth pseudoconvex domain. The Cauchy-Riemann operator FORMULA  is a closed,
+densely defined operator mapping FORMULA  and satisfying FORMULA . The associated complex is the FORMULA , or Dolbeault, complex.
+Let FORMULA  be the FORMULA -adjoint of FORMULA , and FORMULA , the FORMULA -Neumann Laplacian. When FORMULA  is pseudoconvex, and FORMULA , FORMULA  acting on FORMULA  is invertible with a bounded inverse
+FORMULA . This inverse is called the FORMULA -Neumann operator. We refer the reader to {{cite:caef091d-1af3-4fc9-84da-8cd662f37d7e}}, {{cite:526456fb-35fa-4f56-9c60-b3969b094bf3}}, {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, {{cite:06a5fff2-8359-4bea-8fe9-10924009ab86}}, {{cite:b9973e76-a975-460f-bd78-83008394b233}} for background on the FORMULA -Neumann problem and its FORMULA -Sobolev theory.
+On FORMULA , FORMULA  induces the tangential Cauchy-Riemann operator FORMULA . Kohn and Rossi introduced
+the FORMULA  complex in an effort to understand the holomorphic extension of FORMULA -functions from the boundaries of complex manifolds {{cite:5dfe5a68-8024-499f-88ed-0745e99a2f77}}. Let FORMULA  be the FORMULA -adjoint of FORMULA , and FORMULA , the Kohn Laplacian. When FORMULA , FORMULA  is invertible (on FORMULA  when FORMULA , and on FORMULA  in the case FORMULA ) with inverse FORMULA . FORMULA  is the complex Green operator. In particular, FORMULA , FORMULA , and FORMULA  have closed range. Details may be found in {{cite:8df5f895-cde2-41f3-a3e1-fe5be9be38c1}}, {{cite:2563b7f2-c642-4715-aa7d-616673bc81ac}}, {{cite:4c679d30-bb00-4fab-b560-3b0aa60a512f}}, {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}. The regularity and mapping properties of FORMULA  are well understood when FORMULA  is of finite type and satisfies the condition that all eigenvalues of the Levi form are comparable. In this case, optimal subelliptic estimates (so called maximal estimates) were shown in {{cite:b59d38de-421c-4480-af77-88b5028423b8}}. This work unifies earlier work for strictly pseudoconvex domains and for domains of finite type in FORMULA . We refer the reader to {{cite:b59d38de-421c-4480-af77-88b5028423b8}} for references to this earlier work and further discussion. For general domains, it is known that subellipticity of FORMULA  implies finite type {{cite:26057539-888a-4a91-a963-5f1d0dc3f3af}}, {{cite:bf77b499-74c0-4576-97e7-2fe9542a1e84}}. Global regularity, in the sense of preservation of Sobolev spaces, holds when FORMULA  admits a defining function that is plurisubharmonic at points of the boundary ({{cite:3496378a-3569-423e-ac5d-0e418bd391b6}}). A defining function is called plurisubharmonic at the boundary when its complex Hessian at points of the boundary is positive semidefinite in all directions. For example, all convex domains admit such defining functions.
+The question we address in this article is that of compactness of the complex Green operator, and, to some extent, its relationship to compactness of the FORMULA -Neumann operator. The results discussed above notwithstanding, the regularity results for FORMULA  do not always parallel those for FORMULA . The reason is that there is a symmetry in the form levels for FORMULA  with respect to compactness and subellipticity that is absent for FORMULA . This phenomenon was pointed out by Koenig ({{cite:bf77b499-74c0-4576-97e7-2fe9542a1e84}}, p.289). He associates to a FORMULA -form FORMULA  on FORMULA  an FORMULA -form FORMULA  (through a modified Hodge-FORMULA  construction) such that FORMULA , FORMULA , and FORMULA , modulo terms that are FORMULA . Consequently, a subelliptic estimate or a compactness estimate holds for FORMULA -forms if and only if the corresponding estimate holds for FORMULA -forms. In view of the characterization of subellipticity in terms of finite type {{cite:e9c902cf-9d8a-451c-b837-60c32899e95a}}, {{cite:b09dbe1f-118a-4902-ac42-7a76211dce65}}, and of compactness of FORMULA  on convex domains by the absence of FORMULA -dimensional varieties from the boundary ({{cite:3b3ab83f-9f27-4922-a697-4183eed1ea62}}), such a symmetry between form levels is manifestly absent in the FORMULA -Neumann problem. (The analogous construction performed for forms on FORMULA  yields a FORMULA  that in general is not in the domain of FORMULA .) At one point, we will actually need a version of the tilde operators that intertwines FORMULA  and FORMULA  without 0-th order error terms; we discuss such a construction in an appendix (section ).
+Our results are as follows. First, we prove the analogue for compactness of the fact that subellipticity of FORMULA  implies subellipticity of FORMULA  ({{cite:26057539-888a-4a91-a963-5f1d0dc3f3af}}, {{cite:bf77b499-74c0-4576-97e7-2fe9542a1e84}}). It is worthwhile to note that our method provides, in the case of boundaries of smooth pseudoconvex domains in FORMULA , a new proof of this result as well, compare Remark REF  below.
+Theorem 1.1 
+Let FORMULA  be a bounded pseudoconvex domain with
+smooth boundary. Let FORMULA . If the complex Green operator FORMULA  is a compact operator on FORMULA ,
+then the FORMULA -Neumann operator FORMULA  is a compact operator on FORMULA .
+
+Theorem REF  is proved in Section . Our strategy is simple. Because FORMULA  acts componentwise as (a constant multiple of) the real Laplacian, the FORMULA -norm of a form FORMULA  is controlled by FORMULA  plus the FORMULA -norm of the trace on the boundary. To the tangential part of this trace, one applies the compactness estimate from the assumption in the theorem, estimating the norms of FORMULA  and of FORMULA  via trace theorems (here FORMULA  denotes the tangential part of FORMULA ; taking the tangential part `loses' the normal component of the form, but this component is benign). In order to avoid various issues related to trace theorems, we actually work in FORMULA , rather than in FORMULA . Our arguments involve (as usual) absorbing terms, and since FORMULA  is not a priori known to preserve FORMULA , we use elliptic regularization to ensure finiteness of the terms to be absorbed. We thus obtain compactness of FORMULA  (`only') on FORMULA . However, as pointed out in {{cite:06a5fff2-8359-4bea-8fe9-10924009ab86}}, because FORMULA  is self-adjoint in FORMULA , compactness in FORMULA  implies compactness in FORMULA , by a general principle from functional analysis.
+Remark 1.2 
+In view of the symmetry for FORMULA  and its absence for FORMULA , discussed above, Theorem REF  implies in particular that compactness or subellipticity of FORMULA  need not imply the corresponding property for FORMULA  when FORMULA . Of course, the appropriate question becomes whether such an implication holds when compactness or subellipticity is assumed for the FORMULA -Neumann operator at levels FORMULA  and FORMULA . As far as the authors know, this is open for both compactness and subellipticity.
+
+Next, we show that Catlin's classical sufficient condition for compactness in the FORMULA -Neumann problem ({{cite:dfffa548-5613-4bd8-a56c-eaf215e1ccf8}}), imposed on symmetric form levels (this is essentially dictated by the discussion above), is also sufficient for compactness of the complex Green operator. Let FORMULA  and
+FORMULA  be the space of FORMULA -forms at FORMULA  equipped with
+the standard Hermitian metric FORMULA . When the FORMULA -tuple FORMULA , FORMULA  is defined in the usual manner by antisymmetry. For a FORMULA -function FORMULA  defined in a neighborhood of FORMULA , define
+FORMULA 
+Definition 1.3 
+FORMULA  satisfies FORMULA  if for all FORMULA , there exists
+FORMULA , FORMULA  so that for all
+FORMULA  and  FORMULA
+
+FORMULA ,
+
+FORMULA .
+
+
+FORMULA  can be reformulated in two equivalent ways (by standard facts from (multi)linear algebra): FORMULA  the sum of any FORMULA  (equivalently: the smallest FORMULA ) eigenvalues of FORMULA  is at least FORMULA ; FORMULA  on any affine subspace of complex dimension FORMULA  (provided with the inner product from FORMULA , the (real) Laplacian of FORMULA  is at least FORMULA . For FORMULA  this can be seen most easily by working in an orthonormal basis that consists of eigenvectors of FORMULA . This also gives that FORMULA  implies FORMULA . That FORMULA  implies FORMULA  is an application of the Schur majorization theorem ({{cite:755ebc2e-2463-4662-a028-d8902122f5cf}}, Theorem 4.3.26), to the effect that the sum of any FORMULA  diagonal elements of a Hermitian matrix is at least equal to the sum of the FORMULA  smallest eigenvalues. Note that if the sum of the smallest FORMULA  eigenvalues is at least FORMULA , then so is the sum of the smallest FORMULA  (since the additional eigenvalue is necessarily nonnegative). That is, FORMULA  implies FORMULA  (but not vice versa). Sibony ({{cite:19b0099c-edfe-478c-ad0d-3059a8a901c9}}) studied FORMULA  from the point of view of Choquet theory for the cone of functions FORMULA  with FORMULA  (actually only for FORMULA , but his arguments work essentially verbatim for FORMULA , see {{cite:06a5fff2-8359-4bea-8fe9-10924009ab86}}). This work provides in particular examples of domains with `big' (say of positive measure) sets of points of infinite type in the boundary, whose FORMULA -Neumann and complex Green operators are nevertheless compact.
+Theorem 1.4 
+Let FORMULA  be a pseudoconvex domain with FORMULA  boundary
+and FORMULA .
+If FORMULA  satisfies FORMULA  and FORMULA  (equivalently: FORMULA , where FORMULA ),
+then FORMULA  and FORMULA  are compact operators on
+FORMULA  and FORMULA , respectively.
+
+We prove Theorem REF  in Section . It suffices to produce compact solution operators for FORMULA . To do so, we follow Shaw ({{cite:8df5f895-cde2-41f3-a3e1-fe5be9be38c1}}) in representing a FORMULA –closed form FORMULA  on the boundary as the difference of two FORMULA –closed forms, FORMULA  on FORMULA  and FORMULA  on the complement: FORMULA . Then, roughly speaking, FORMULA  lets us solve the equation FORMULA  on FORMULA , with suitable compactness estimates, while FORMULA  lets us do the same for FORMULA  on an appropriate `annular' region surrounding FORMULA . That the latter can be done follows essentially from work of Shaw in {{cite:07afd708-f430-4567-873f-a6418fd30cf0}}. The details are given in Section  (Proposition REF ). We mention that in {{cite:7df87e2d-bbd2-4379-a298-77067c1b43bc}}, McNeal has introduced a condition called FORMULA  which is implied by FORMULA  and which is sufficient for compactness of FORMULA . Whether FORMULA  can take the place of FORMULA  in Theorem REF  is open. This has to do with the fact that the exact relationship between FORMULA , FORMULA , and compactness is not understood. However, FORMULA  and FORMULA  are known to be equivalent on locally convexifiable domains (see the discussion in {{cite:b9973e76-a975-460f-bd78-83008394b233}}), so that in our next result, FORMULA  can take the place of FORMULA .
+Theorem REF , Theorem REF , and work of Fu and Straube {{cite:3b3ab83f-9f27-4922-a697-4183eed1ea62}}, {{cite:06a5fff2-8359-4bea-8fe9-10924009ab86}} immediately allow us to characterize compactness of the complex Green operator on smooth bounded locally convexifiable domains. We say that a domain is locally convexifiable if for every boundary point there is a neighborhood, and a biholomorphic map defined on this neighborhood, that takes the intersection of the domain with the neighborhood onto a convex domain.
+Theorem 1.5 
+Let FORMULA  be a smooth bounded locally convexifiable domain, and let FORMULA . Then the following are equivalent:
+FORMULA  The complex Green operator FORMULA  is compact.
+FORMULA  Both FORMULA  and FORMULA  are compact.
+FORMULA  The FORMULA -Neumann operators FORMULA  and FORMULA  are compact.
+FORMULA  FORMULA  satisfies both FORMULA  and FORMULA .
+FORMULA  FORMULA  does not contain (germs of) complex varieties of dimension FORMULA  nor of dimension FORMULA .
+
+On a locally convexifiable domain, compactness of FORMULA  is equivalent to each of FORMULA  and FORMULA , at level  FORMULA ({{cite:3b3ab83f-9f27-4922-a697-4183eed1ea62}}, {{cite:06a5fff2-8359-4bea-8fe9-10924009ab86}}). In particular, FORMULA , FORMULA , and FORMULA  are equivalent on these domains, and by Theorem REF , they imply FORMULA . FORMULA  and FORMULA  are equivalent by the symmetry in the form levels for FORMULA . By Theorem REF ., FORMULA  implies FORMULA .
+In Theorems REF  and REF  we assume FORMULA , thus excluding the endpoints FORMULA  and FORMULA . Formally, this restriction arises because if FORMULA  or FORMULA , then FORMULA , and it is not clear what an appropriate interpretation of FORMULA  should be. This is analogous to the situation in the interior. However, FORMULA  ({{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Theorem 4.4.3.), and compactness of FORMULA  implies that of FORMULA . FORMULA  therefore is a sufficient condition for compactness of FORMULA . This situation persists on the boundary. Let FORMULA  and assume FORMULA  satisfies FORMULA , and hence FORMULA . Then FORMULA  and FORMULA  are compact, by Theorem REF . In turn, this implies that both FORMULA  and FORMULA  are compact, by formulas analogous to the one quoted above for FORMULA . That is, FORMULA  is a sufficient condition for compactness of FORMULA  and FORMULA .
+Acknowledgment: We are indebted to Ken Koenig for pointing out the observation in his paper {{cite:bf77b499-74c0-4576-97e7-2fe9542a1e84}} of the symmetry in form levels for FORMULA  with regard to compactness and subellipticity. He also found some oversights and inaccuracies in an earlier version of this manuscript.
+
+Proof of Theorem  REF
+Let FORMULA  be the usual Sobolev space of order FORMULA  on FORMULA  (FORMULA  may be an open subset of FORMULA  or of FORMULA ) and let FORMULA  be space of FORMULA -forms with coefficients in FORMULA . We first express compactness of FORMULA  in the usual way in terms of a family of estimates. Let FORMULA . Then for any FORMULA , there exists FORMULA  so that
+FORMULA 
+for all FORMULA  when FORMULA . When FORMULA , we assume that FORMULA  (equivalently FORMULA ). When FORMULA , (REF ) is the standard compactness estimate that is equivalent to compactness of FORMULA ; the proof is the same as that for the corresponding statement concerning the FORMULA -Neumann operator (see for example {{cite:06a5fff2-8359-4bea-8fe9-10924009ab86}}, Lemma 1.1). This remark applies likewise to lifting the estimate to higher Sobolev norms.
+The main a priori estimate to be proved is as follows: for all FORMULA , there exists FORMULA  so that if FORMULA , FORMULA , then
+FORMULA 
+Fix a defining function FORMULA  for FORMULA , so that FORMULA  near FORMULA  (i.e. take FORMULA  to agree with the signed boundary distance near FORMULA ). We first estimate the normal component of FORMULA . This component is given by FORMULA , and its trace on FORMULA  vanishes. Because FORMULA  acts coefficientwise as a constant multiple of the (real) Laplacian, we obtain
+FORMULA 
+it is assumed that FORMULA  is as in Theorem REF . The last inequality in (REF ) comes from interpolating Sobolev norms (FORMULA ).
+Similarly, we have that FORMULA  and
+FORMULA 
+(REF ) is important because it implies that FORMULA  and FORMULA  are also dominated by the right hand side of (REF ). (Note that FORMULA  has vanishing trace on the boundary, so it is in FORMULA .) Then so are FORMULA  and FORMULA , where FORMULA  is the tangential part of FORMULA . As a result, it now only remains to establish (REF ) for FORMULA .
+Let FORMULA . As in (REF ), we have
+FORMULA 
+We are going to apply (REF ) to the last term on the right hand side of (REF ). Note that by definition, FORMULA  is the trace of FORMULA , projected onto the tangential FORMULA -forms. Because FORMULA  is tangential near the boundary, FORMULA  equals the trace of FORMULA  on the boundary, modulo a term of order zero (i.e. involving no derivatives of FORMULA ). Therefore, with FORMULA  in (REF ),
+FORMULA 
+Putting (REF ) into the right hand side of (REF ) (for FORMULA ) and absorbing FORMULA  gives (REF ) for FORMULA . With this, by what was said above, (REF ) is established for FORMULA .
+Because (REF ) is only an a priori estimate, and FORMULA  is not (yet) known to be in FORMULA  for FORMULA , we work first with the regularized operators FORMULA , FORMULA , arising from elliptic regularization ({{cite:caef091d-1af3-4fc9-84da-8cd662f37d7e}}, 2.3, {{cite:642a6f26-4607-4942-bf45-e1aad9e4dcb3}}, 12.5). FORMULA  inverts (in FORMULA ) the operator FORMULA , the unique self-adjoint operator associated to the quadratic form FORMULA , with form domain FORMULA . Equivalently: for FORMULA , FORMULA , FORMULA . Note that for FORMULA ,
+FORMULA 
+where FORMULA  acts coefficientwise. (Nonetheless, FORMULA  is not a multiple of FORMULA ; the domain has changed.) FORMULA  is coercive (it dominates FORMULA ), and consequently FORMULA  gains two derivatives in Sobolev norms (see e.g. {{cite:642a6f26-4607-4942-bf45-e1aad9e4dcb3}}, 12.5). In particular, when FORMULA , then so is FORMULA .
+We now claim that the FORMULA  are compact on FORMULA , `uniformly' in FORMULA . That is, we claim the following uniform compactness estimate: for every FORMULA , there exists a constant FORMULA  such that for FORMULA  and FORMULA ,
+FORMULA 
+(This type of estimate is equivalent to compactness, compare {{cite:7df87e2d-bbd2-4379-a298-77067c1b43bc}}, Lemma 2.1; {{cite:b888f798-4c09-4265-8bf2-8ecb70df1ad4}}, Proposition V.2.3FORMULA .) Because FORMULA  is dense in FORMULA  (and FORMULA  is continuous in FORMULA ), it suffices to establish (REF ) for FORMULA . So let FORMULA . In the following estimates, all constants will be uniform in FORMULA . We first apply (REF ) to FORMULA :
+FORMULA 
+Interpolating Sobolev norms, using that FORMULA  is bounded in FORMULA  with a bound that is uniform in FORMULA , and absorbing FORMULA , (REF ) gives
+FORMULA 
+The estimate FORMULA  is standard; we next show that it remains valid for the regularized operators FORMULA , with constants uniform in FORMULA . This is known, but somewhat hard to pinpoint in the literature.
+By interior elliptic regularity (uniform in FORMULA , in view of (REF )) (and interpolation of Sobolev norms), we can estimate FORMULA  by the right hand side of (REF ) for any relatively compact subdomain FORMULA  of FORMULA . As a result, it suffices to estimate FORMULA  and
+FORMULA  for a smooth cutoff function compactly supported in a special boundary chart. We will also let differential operators act coefficientwise in the associated special boundary frame. Then, a tangential derivative will preserve the domain of FORMULA . (For information on special boundary charts and frames, the reader may consult {{cite:caef091d-1af3-4fc9-84da-8cd662f37d7e}} or {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}.) We denote by FORMULA  the gradient with respect to the tangential variables
+and by FORMULA  the normal derivative.
+For the tangential derivatives, we have
+FORMULA 
+Here, constants are allowed to depend on FORMULA  (but not on FORMULA ). We have used the estimate FORMULA , which follows from {{cite:8d4c4b6a-de3a-404b-b4b1-79ea843347d2}}, Lemma 3.1, {{cite:caef091d-1af3-4fc9-84da-8cd662f37d7e}}, Lemma 2.4.2FORMULA . In the case at hand, it can be established by the usual procedure: repeated integration by parts and commuting operators as necessary to make terms of the form FORMULA  appear.
+We now come to the normal derivatives. Expressing the real Laplacian in the coordinates of the special boundary chart gives
+FORMULA 
+Note that FORMULA , in view of (REF ). There is a similar estimate for the Laplacian of FORMULA . Applying (REF ) to FORMULA  and FORMULA  respectively, and using (REF ) for the FORMULA  terms now shows that
+FORMULA 
+Concerning the FORMULA -norms of the mixed derivatives, we note that they are dominated by the FORMULA -norms of the pure derivatives ({{cite:f1567264-415b-4421-b435-91c0de615616}}, Theorem 7.4), and therefore by the right hand sides of (REF ) and (REF ). (We remark that using this fact is merely a convenience, not a necessity; normal derivatives can be expressed in terms of tangential ones, FORMULA , FORMULA , and terms of order zero.) Together with (REF ), (REF ), and (REF ), this gives (via a partition of unity subordinate to a cover of the boundary by special boundary charts, and summing over the charts plus a compactly supported term)
+FORMULA 
+where the family FORMULA  has been rescaled. After absorbing FORMULA , (REF ) gives (REF ) (first for FORMULA  less than FORMULA , say; but that is sufficient).
+Because the constant FORMULA  in (REF ) is independent of FORMULA , we can let FORMULA  tend to zero and obtain (REF ) with FORMULA . Indeed, if FORMULA , then FORMULA  is a bounded set in FORMULA . So there exists a sequence FORMULA  and FORMULA 
+so that FORMULA  weakly in FORMULA .
+One easily checks that FORMULA . Also, if FORMULA , then FORMULA . However, FORMULA . Thus, FORMULA  for all FORMULA , whence FORMULA  (since FORMULA  is dense in FORMULA  with respect to the graph norm induced by FORMULA ). Consequently, FORMULA  is in FORMULA  and satisfies (REF ), and so is a compact operator on FORMULA .
+It remains to be seen that FORMULA  is compact on FORMULA . This turns out to be a consequence of its compactness on FORMULA  and a general fact from functional analysis which we now state. Suppose FORMULA  is a Hilbert space and FORMULA  is a dense subspace. Assume that FORMULA  is provided with a norm under which it is complete, and under which it embeds continuously into FORMULA  (i.e. FORMULA  for FORMULA ). Suppose FORMULA  is a bounded linear operator on FORMULA  which is symmetric with respect to the inner product induced from FORMULA : FORMULA  for all FORMULA . If FORMULA  is compact on FORMULA , then it (has a unique extension to FORMULA  which) is compact on FORMULA . This is Corollary II from {{cite:d13f89c0-4cf1-4946-8b40-5539c7dbe4ec}}. In our situation, it suffices to take FORMULA , FORMULA , and FORMULA , to conclude that FORMULA  is compact on FORMULA ).
+This concludes the proof of Theorem REF .
+Remark 2.1 
+Our proof above,combined with {{cite:8fe93897-ab9b-45ae-9239-02c3aad10738}}, yields a new proof that subellipticity of FORMULA  implies subellipticity of FORMULA , FORMULA . We give an outline. Assume FORMULA  is subelliptic of order FORMULA . Equivalently: FORMULA  for FORMULA . First, our arguments above can be followed almost verbatim to obtain that FORMULA  maps FORMULA  to FORMULA . One change needed is in (the analogue of) (REF ): the inner product FORMULA  has to be estimated by FORMULA . Note that a simplification occurs in that we no longer have to work with the regularized operators: FORMULA  is already known to be compact (by Theorem REF ), hence to be globally regular. That this translates into honest subellipticity of FORMULA  follows from arguments used in {{cite:8fe93897-ab9b-45ae-9239-02c3aad10738}} in a closely related context. These arguments are also based on {{cite:d13f89c0-4cf1-4946-8b40-5539c7dbe4ec}}. (Very) roughly speaking, they are as follows. Denote by FORMULA  the standard tangential Bessel potential operators of order FORMULA  (alternatively: the FORMULA -th power of the tangential Laplace-Beltrami operator may be used). Then FORMULA  mapping FORMULA  (continuously) to FORMULA  is equivalent to FORMULA  (we are omitting cutoff functions) being continuous on FORMULA . But FORMULA  is symmetric with respect to the FORMULA  inner product, and so is then also continuous in FORMULA , by {{cite:d13f89c0-4cf1-4946-8b40-5539c7dbe4ec}}, Theorem I. (Theorem I is considerably more elementary than Corollary II used above for compactness.) As a result, FORMULA  maps FORMULA  continuously to FORMULA . By interpolation with the continuity from FORMULA  to FORMULA , FORMULA  maps FORMULA  continuously to FORMULA  (see e.g. {{cite:f1567264-415b-4421-b435-91c0de615616}}, Theorem 12.4, for the interpolation between FORMULA  and FORMULA , negative indices require some care).
+
+
+Compactness of the FORMULA -Neumann operator on an `annulus'
+In this section we prove an auxiliary result that will be used in the proof of Theorem REF , but which is of independent interest. If FORMULA  and FORMULA  are two bounded pseudoconvex domains with FORMULA , we call FORMULA  an `annulus'. The FORMULA -Neumann problem on FORMULA  has been studied in {{cite:07afd708-f430-4567-873f-a6418fd30cf0}}. Since FORMULA  is not pseudoconvex, FORMULA  need not be trivial, and we let
+FORMULA 
+the harmonic FORMULA -forms. Let FORMULA  be the orthogonal projection of FORMULA  onto FORMULA .
+Proposition 3.1 
+Let FORMULA  be an `annulus' as above, with smooth boundary, let FORMULA . Assume the outer boundary of FORMULA  satisfies FORMULA , and the inner boundary satisfies FORMULA . Then FORMULA  is finite dimensional and FORMULA  is compact.
+
+We comment on the assumptions. FORMULA  arises as follows. When establishing compactness of FORMULA  assuming a condition like FORMULA  (on a pseudoconvex domain), one uses the Kohn-Morrey-Hörmander formula, or a twisted version of it ({{cite:7df87e2d-bbd2-4379-a298-77067c1b43bc}}, {{cite:b9973e76-a975-460f-bd78-83008394b233}}). In the case of an `annulus' between two pseudoconvex domains, the part of the boundary integral from the inner boundary has the wrong sign (it is nonpositive instead of nonnegative), and a modification is needed. From the work in {{cite:07afd708-f430-4567-873f-a6418fd30cf0}}, when applied to our situation, it turns out that the condition needed on the Hessian of a suitable function is precisely that the sum of any FORMULA  eigenvalues be at least FORMULA . The details are as follows.
+In order to state Shaw's result, we work temporarily in a special boundary chart. Let FORMULA  be a (local) orthonormal basis of FORMULA , FORMULA  the complex (unit) normal, and FORMULA  the FORMULA -form dual to FORMULA . For a function FORMULA , let
+FORMULA  be defined by FORMULA . Let FORMULA , real valued, and let FORMULA , supported in a special boundary chart for the inner boundary. Here, FORMULA  is the adjoint of FORMULA  with respect to the weighted FORMULA  inner product with weight FORMULA . The computations that lead to FORMULA  in {{cite:07afd708-f430-4567-873f-a6418fd30cf0}} are valid for general weight functions, and there is the following analogue of FORMULA  (this is made explicit in {{cite:ec7a99e7-8454-453f-9690-0e5b73284ea0}}, Proposition 2.1):
+FORMULA 
+where FORMULA , FORMULA  is a defining function for FORMULA , and FORMULA  is independent of FORMULA . Denote by FORMULA  the set of strictly increasing FORMULA -tuples that do not contain FORMULA . In the second line of (REF ), the sums are effectively only over FORMULA , FORMULA , and FORMULA , respectively (FORMULA  on FORMULA ; FORMULA ). The integrand in this line (without the weight factor) is therefore
+FORMULA 
+This is because every FORMULA  can be written in precisely FORMULA  ways as FORMULA . Note that the Hessian of FORMULA  is negative semidefinite on the complex tangent space at points of FORMULA . As a result, the second line in (REF ) is nonnegative: the right hand side equals at least FORMULA  times the sum of the smallest FORMULA  eigenvalues of the Hermitian matrix
+FORMULA 
+(this is analogous to the discussion of property FORMULA  in section 1). Such a sum equals minus the trace FORMULA  plus a sum of FORMULA  eigenvalues of FORMULA , hence is at least equal to the negative of the sum of the largest FORMULA  eigenvalues of FORMULA , and so is nonnegative. Letting the sums in the first line of (REF ) run only over FORMULA , FORMULA , and FORMULA , respectively, makes a mistake that involves (coefficients of) the normal component of FORMULA . These terms can be estimated by the right hand side of (REF ) plus FORMULA . This follows from an argument similar to that in (REF ), starting with the FORMULA  to FORMULA  version of the first inequality in (REF ), and using interpolation of Sobolev norms to get rid of the dependence on FORMULA  of the (first) constant. Therefore, estimate (REF ) remains valid when the sums in the first line are restricted so that no normal components of FORMULA  appear, and the right hand side is augmented by FORMULA . Observe that as in (REF ), the integrand (without the weight factor FORMULA ) in the first line in (REF ) is then
+FORMULA 
+where FORMULA  denotes the Kronecker FORMULA . Omitting the nonnegative second and third lines from (REF ) (in its modified form), we obtain for FORMULA  supported in a special boundary chart:
+FORMULA 
+We are now ready to prove Proposition REF .
+Fix FORMULA  (sufficiently large) and choose a function FORMULA , FORMULA , that agrees near the inner boundary (say, in FORMULA ) with FORMULA , where FORMULA  is a function given by the definition of FORMULA , and near the outer boundary (say, on FORMULA ) with a function given by the definition of FORMULA . We claim that we have the following estimate (for FORMULA ):
+FORMULA 
+with a constant FORMULA  that does not depend on FORMULA . Note that saying that FORMULA  is the same as saying that FORMULA . Also, the unweighted norms and the weighted norms are equivalent, with bounds that are uniform in FORMULA  (because FORMULA ).
+It suffices to establish (REF ) for forms that are smooth up to the boundary; the density of these forms in FORMULA  does not require pseudoconvexity ({{cite:36fdbc04-03d6-4445-a181-ae7b197de8f1}}, Proposition 2.1.1; {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Lemma 4.3.2).
+Assume first that FORMULA  is supported near the outer boundary, on FORMULA . Then (REF ) follows immediately from the Kohn-Morrey-Hörmander formula ({{cite:36fdbc04-03d6-4445-a181-ae7b197de8f1}}, Proposition 2.1.2; {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Proposition 4.3.1) and from FORMULA  in the definition of FORMULA .
+Now assume that FORMULA  is similarly supported near the inner boundary, on FORMULA . Via a partition of unity, we may assume that FORMULA  is supported in a special boundary chart. We use (REF ) with FORMULA . Note that FORMULA  near the support of FORMULA , where FORMULA  satisfies FORMULA  and FORMULA  in the definition of FORMULA . At a point, the integrand on the left hand side of (REF ) (without the exponential factor) is at least as big as FORMULA  times the sum of the smallest FORMULA  eigenvalues of the Hermitian matrix
+FORMULA 
+(see again the discussion of property FORMULA  in section 1). Such a sum equals the trace FORMULA  minus a sum of FORMULA  eigenvalues of FORMULA , hence is at least equal to the sum of the smallest FORMULA  eigenvalues of FORMULA , which in turn is at least equal to the sum of the smallest FORMULA  eigenvalues of FORMULA  (by the equivalence of FORMULA  and (b), or directly by the Schur majorization theorem ({{cite:755ebc2e-2463-4662-a028-d8902122f5cf}}, Theorem 4.3.26). That is, the sum is at least equal to the sum of the smallest FORMULA  eigenvalues of FORMULA , so is at least equal to FORMULA . This gives (REF ) (after absorbing the term FORMULA  and rescaling FORMULA ), but with FORMULA  on the left hand side replaced by the tangential part of FORMULA . Again, the normal component is under control, and as in (REF ), the square of its norm is estimated by the right hand side of (REF ). This proves estimate (REF ) when FORMULA  is supported near the inner boundary.
+When FORMULA  has compact support in FORMULA ,
+(REF ) follows by interior elliptic regularity of FORMULA , with a constant FORMULA  that is independent of the support (FORMULA  depends on the support). The reason that FORMULA  may be taken to be independent of the support is that FORMULA  controls the FORMULA -norm on a relatively compact subset. Since we only need to bound the FORMULA -norm, we can interpolate between the FORMULA -norm and the FORMULA -norm to get the desired estimate.
+Finally, when FORMULA  is general, choose a partition of unity on FORMULA , FORMULA , and FORMULA , such that FORMULA  is compactly supported in FORMULA , and FORMULA  and FORMULA  are supported in FORMULA  and FORMULA , respectively. We then have (REF ) for FORMULA , FORMULA , and FORMULA . The right hand sides of these estimates contain terms where FORMULA  or FORMULA  produce derivatives of the cutoff functions. However, these terms contain no derivatives of FORMULA , and they are compactly supported. Consequently, they can be estimated as in the previous paragraph. Collecting the resulting estimates establishes (REF ), with FORMULA  independent of FORMULA .
+(REF ) implies that from every sequence FORMULA  in FORMULA  (which equals FORMULA ) with FORMULA  bounded and FORMULA , FORMULA , one can extract a subsequence which converges in (weighted) FORMULA . It suffices to find a subsequence which converges in FORMULA  (using that FORMULA  is compact); (REF ) implies that such a subsequence is Cauchy (hence convergent) in FORMULA . General Hilbert space theory (see {{cite:36fdbc04-03d6-4445-a181-ae7b197de8f1}}, Theorems 1.1.3 and 1.1.2) now gives that FORMULA  is finite dimensional and that FORMULA  and FORMULA  have closed range. But then FORMULA  also has closed range (its adjoint in the weighted space has closed range), and consequently, so does FORMULA  (acting on FORMULA -forms; this also follows from the formula FORMULA ). Therefore, we have the estimate
+FORMULA 
+for FORMULA . This estimate implies the existence of FORMULA  as a bounded operator on FORMULA  that inverts FORMULA  on FORMULA  (see for example {{cite:07afd708-f430-4567-873f-a6418fd30cf0}}, Lemma 3.2 and its proof). Moreover, the range of FORMULA  has finite codimension in FORMULA , because FORMULA  is finite dimensional). But the (unweighted) orthogonal complement of this range in FORMULA  equals FORMULA , which is therefore finite dimensional as well.
+To see that FORMULA  is compact, it suffices to show compactness on FORMULA  (since FORMULA  is zero on FORMULA ). When FORMULA , we have from (REF ) (since FORMULA )
+FORMULA 
+Therefore, we only need to show that both FORMULA  and FORMULA  are compact. Now FORMULA  gives the norm minimizing solution to FORMULA  when FORMULA , while FORMULA  gives a different solution (the one that minimizes the weighted norm). For such FORMULA , (REF ) therefore implies (with constants independent of FORMULA )
+FORMULA 
+Because FORMULA  is independent of FORMULA  and FORMULA  is compact (FORMULA  imbed compactly into FORMULA ), (REF ) implies that FORMULA  is compact on FORMULA  ({{cite:7df87e2d-bbd2-4379-a298-77067c1b43bc}}, Lemma 2.1, {{cite:b888f798-4c09-4265-8bf2-8ecb70df1ad4}}, Proposition V.2.3). But on the orthogonal complement of FORMULA , FORMULA , and so FORMULA  is compact from FORMULA . To estimate FORMULA , we cannot invoke (REF ) directly (because FORMULA  is a FORMULA -form), and an additional step is needed. We have (again for FORMULA )
+FORMULA 
+Here we have used that FORMULA  and that FORMULA  (since FORMULA ) in the equality in the second line, the inequality FORMULA , and (REF ) for the last estimate. The middle term in the last line can now be absorbed, and combining the resulting estimate with FORMULA  gives an analogue of (REF ). The rest of the argument is the same as above. This completes the proof of Proposition REF .
+
+Property FORMULA  and compactness of the complex Green operator
+In this section, we prove Theorem REF . We may assume that FORMULA , and we must show that FORMULA  is compact (by the symmetry between form levels discussed in section 1, FORMULA  is then compact as well). For FORMULA , we have the Hodge decomposition FORMULA  ({{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Theorem 9.4.2). In particular, when FORMULA , FORMULA  gives the solution of minimal FORMULA -norm (the canonical solution) to the equation FORMULA . FORMULA  can be expressed in terms of these canonical solution operators at levels FORMULA  and FORMULA  and their adjoints ({{cite:3496378a-3569-423e-ac5d-0e418bd391b6}}, p. 1577):
+FORMULA 
+This formula (including the proof) is analogous to the corresponding formula for the FORMULA -Neumann operator ({{cite:caef091d-1af3-4fc9-84da-8cd662f37d7e}}, {{cite:5c43fb23-b83b-475c-bb79-b87d30f20dad}}). Therefore, compactness of FORMULA  is equivalent to compactness of both FORMULA  and FORMULA , and we shall prove the latter. Since projection onto the orthogonal complement of FORMULA  preserves compactness, we only have to produce some solution with suitable estimates.
+We first consider FORMULA . Choose a ball FORMULA  so that FORMULA . Set FORMULA . Let FORMULA . By {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Lemma 9.3.5., there exist FORMULA -closed forms FORMULA  and FORMULA  such that
+FORMULA 
+(in the sense of traces of the coefficients, but also in the sense of restrictions of forms; i.e. the normal components of FORMULA  and FORMULA  cancel each other out at points of FORMULA ). Moreover
+FORMULA 
+and
+FORMULA 
+Estimates (REF ) and (REF ) are from {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Lemma 9.3.6. However, a comment is in order, as only (REF ) is explicit there, while the estimate for FORMULA  is given in terms of a FORMULA -closed continuation of FORMULA  to all of FORMULA . On FORMULA , only the FORMULA -norm of this continuation can be estimated. But this loss occurs across FORMULA , and so does not affect the estimate on FORMULA . (REF ) is implicit in {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}; we sketch the argument (which is the same as for FORMULA ).
+FORMULA  is of the form FORMULA , where the notation is the same as in {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}. FORMULA  is an extension of FORMULA , based on an extension operator FORMULA  for functions (i.e. the coefficients), modified so that FORMULA  vanishes to order FORMULA  on FORMULA  ({{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, (9.3.12a) and (9.3.12b)). From the definition of FORMULA  ({{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, (9.3.8)), it is easily checked that FORMULA . FORMULA  is obtained as the solution of a FORMULA  problem on FORMULA . It has the form FORMULA , where FORMULA  is a FORMULA -form supported in the intersection FORMULA  of a thin tubular neighborhood FORMULA  of FORMULA  with FORMULA  (FORMULA  is thin enough so that the usual tangential Sobolev norms make sense). FORMULA  satisfies the estimate FORMULA ; the first inequality is dual to FORMULA , the second is (9.3.15) in {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}. Because FORMULA  locally gains a full derivative, we obtain that FORMULA  is in FORMULA  away from the outer boundary of FORMULA  (i.e. the boundary of FORMULA ). Near the outer boundary, FORMULA -estimates follow from the pseudo-local estimates for FORMULA  near the boundary of FORMULA  (taking FORMULA  as the weak global term). Putting these estimates together gives that FORMULA , and (REF ) follows.
+FORMULA  is not pseudoconvex, so FORMULA  does not automatically imply that FORMULA  is in the range of FORMULA . That it is follows from {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}: FORMULA  has a FORMULA -closed extension to FORMULA , which is in the range of FORMULA  on FORMULA . By restriction, FORMULA  is in the range of FORMULA  on FORMULA . Therefore, we have on FORMULA :
+FORMULA 
+Similarly, on FORMULA ,
+FORMULA 
+Note that both FORMULA  and FORMULA  have vanishing normal component on FORMULA  (as elements of FORMULA ). We also use here that compactness of FORMULA  (from Proposition REF ) and of FORMULA  (because FORMULA  satisfies FORMULA ) lift to higher Sobolev norms (see {{cite:8d4c4b6a-de3a-404b-b4b1-79ea843347d2}}, Theorems 2 and 2FORMULA , in particular the remark at the end of the proof of Theorem 2 (page 466)). In particular, FORMULA  and FORMULA  are in FORMULA  of the respective domains (since FORMULA , FORMULA ), and so have traces on FORMULA . We obtain that on  FORMULA
+FORMULA 
+where we also use FORMULA  and FORMULA  to denote the traces on the boundary. The elliptic theory for the (real) Laplacian ( see for example {{cite:f1567264-415b-4421-b435-91c0de615616}}) gives
+FORMULA 
+Here FORMULA  acts coefficientwise on forms. In the last estimate, we have used that FORMULA  also acts as FORMULA  coefficientwise on forms (up to a constant factor). The corresponding estimate for FORMULA  is
+FORMULA 
+Combining (REF ) with estimates (REF ) and (REF ), we obtain for the canonical solution operator FORMULA :
+FORMULA 
+Both FORMULA  and FORMULA  are compact (FORMULA  satisfies the assumptions in Proposition REF ).
+Therefore, FORMULA  and FORMULA  are compact in FORMULA  and FORMULA , respectively (again from {{cite:8d4c4b6a-de3a-404b-b4b1-79ea843347d2}}).The embeddings FORMULA  and FORMULA  are also compact. (REF ) was derived for FORMULA . But FORMULA  is dense in FORMULA  ({{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Lemma 9.3.8). In view of (REF ) and (REF ), (REF ) therefore implies that FORMULA  maps bounded sets in FORMULA  into relatively compact sets in FORMULA . In other words, FORMULA  is compact on FORMULA , hence on FORMULA .
+We now consider FORMULA . FORMULA  also satisfies FORMULA  (because FORMULA ). Assume first that FORMULA . Then FORMULA  also satisfies FORMULA  (since FORMULA ). Consequently, the previous case applies (with FORMULA  replaced by FORMULA ), and FORMULA  is compact. Since we may assume without loss of generality that FORMULA , i.e. FORMULA , in proving Theorem REF , the only case left to consider is FORMULA . We argue as follows. FORMULA , the canonical solution operator to FORMULA  (as an operator from FORMULA -forms to FORMULA -forms), is compact because FORMULA  is. Because FORMULA , the symmetry discussed in section  yields a compact solution operator for FORMULA  (as an operator from FORMULA -forms to FORMULA -forms). Therefore, the canonical solution operator FORMULA  is compact.
+The proof of Theorem REF  is complete.
+
+Appendix
+In the last step above, we need a version of Koenig's tilde operators that intertwines FORMULA  and FORMULA  without the 0-th order error term that occurs in {{cite:bf77b499-74c0-4576-97e7-2fe9542a1e84}}. A reference for precisely the statement we need seems to be hard to pinpoint in the literature, and we give a brief discussion of a suitable construction. No originality is claimed. Let FORMULA  be a smooth bounded pseudoconvex domain in FORMULA . For FORMULA , define FORMULA : FORMULA  via
+FORMULA 
+for all FORMULA . FORMULA  is conjugate linear and continuous.
+For FORMULA , FORMULA , and FORMULA , we have
+FORMULA 
+In the integral on the right hand side of (REF ), we can replace FORMULA  by FORMULA  (the extra terms, when wedged with FORMULA , vanish on FORMULA ). Now integrate by parts to obtain
+FORMULA 
+Because FORMULA  is dense in FORMULA  in the graph norm (by Friedrichs' Lemma, see e.g. {{cite:cae07257-c335-4637-9ad7-043e8fe5947d}}, Lemma D.1),
+(REF ) holds for FORMULA  and FORMULA  in FORMULA  of the respective form levels.
+It then follows that FORMULA , and that
+FORMULA 
+We next compute FORMULA  in a special boundary chart. Let FORMULA , FORMULA . Then (from (REF ))
+FORMULA 
+Define the function FORMULA  by FORMULA  on FORMULA . Then (REF ) gives
+FORMULA 
+i.e.
+FORMULA 
+where FORMULA  are the usual generalized Kronecker symbols. Then
+FORMULA 
+Note that FORMULA  is a (nonzero) constant that is globally defined: FORMULA  (when pulled back to FORMULA ), with FORMULA  and FORMULA  the usual Hodge FORMULA -operator, see for example Lemma 3.3 and Corollary 3.5 in chapter III of {{cite:5de81a13-0899-4bd8-ab06-9ce8d82c8874}}. Thus (REF ) provides FORMULA  with FORMULA . In particular, FORMULA  is an isomorphism between the respective spaces. Moreover, (REF ) gives FORMULA  and, when combined with the fact that FORMULA , also FORMULA .
+Now let FORMULA . Then, by (REF ), FORMULA , i.e.
+FORMULA 
+Set FORMULA . Then (from (REF ))
+FORMULA 
+that is, FORMULA . So if the canonical solution operator to FORMULA , FORMULA , is compact, we have produced a compact solution operator for FORMULA  at the symmetric level. Consequently, the canonical solution operator at this level, FORMULA , is compact.
+
+
+References
+
+
+H. Ahn.
+Global boundary regularity for the FORMULA -equation on FORMULA -pseudoconvex domains.
+¦Math. Nachr.¦, 280:343–350, 2007.
+H.P. Boas and M.-C. Shaw.
+Sobolev estimates for the Lewy operator on weakly pseudoconvex
+boundaries.
+¦Math. Ann.¦, 274:221–231, 1986.
+H.P. Boas and E.J. Straube.
+Sobolev estimates for the complex Green operator on a class of
+weakly pseudoconvex boundaries.
+¦Comm. Partial Differential Equations¦, 16:1573–1582, 1991.
+ .
+Global regularity of the FORMULA -Neumann problem: a survey of the FORMULA -Sobolev theory.
+In ¦Several Complex Variables (Berkeley, CA,
+1995–1996)¦, Mat. Sci. Res. Inst. Publ., 37, pages 79–111. Cambridge Univ. Press, Cambridge, 1999.
+D. Catlin.
+Necessary conditions for subellipticity of the
+FORMULA -Neumann problem.
+¦Ann. of Math.¦, 117:147–171, 1983.
+ .
+Global regularity of the FORMULA -Neumann problem.
+In ¦Complex Analysis of Several Variables (Madison, Wis., 1982)¦, Proc. Sympos. Pure Math., 41, pages 39–49. Amer. Math. Soc., Providence, RI, 1984.
+ .
+Subelliptic estimates for the FORMULA -Neumann problem
+on pseudoconvex domains.
+¦Ann. of Math.¦, 126:131–191, 1987.
+So-Chin Chen and Mei-Chi Shaw.
+¦Partial Differential Equations in Several Complex Variables¦,
+¦Studies in Advanced Mathematics¦, volume 19.
+American Mathematical Society, 2001.
+John P. D'Angelo.
+¦Inequalities from Complex Analysis¦.
+Number 28 in The Carus Mathematical Monographs. The
+Mathematical Association of America, Washington, D.C., 2002.
+R. Diaz.
+Necessary conditions for subellipticity of FORMULA  on pseudoconvex
+domains.
+¦Comm. in Partial Differential Equations¦, 11(1):1–61, 1986.
+G.B. Folland and J.J. Kohn.
+¦The Neumann Problem for the Cauchy-Riemann Complex¦, volume 75
+of ¦Ann. of Math. Stud.¦
+Princeton University Press, Princeton, New Jersey, 1972.
+S. Fu and E.J. Straube.
+Compactness of the FORMULA -Neumann problem on convex
+domains.
+¦J. Funct. Anal.¦, 159(2):629–641, 1998.
+ .
+Compactness in the FORMULA -Neumann problem.
+In ¦Complex Analysis and Geometry (Columbus, OH, 1999)¦, Ohio State Univ. Math. Res. Inst. Publ., 9, pages 141–160. de Gruyter, Berlin, 2001.
+L. Hörmander.
+FORMULA  estimates and existence theorems for the FORMULA 
+operator.
+¦Acta Math.¦, 113:89–152, 1965.
+Roger A. Horn and Charles A. Johnson.
+¦Matrix Analysis¦.
+Cambridge University Press, Cambridge, 1985.
+K. Koenig.
+On maximal Sobolev and Hölder estimates for the tangential
+Cauchy-Riemann operator and boundary Laplacian.
+¦Am. J. Math¦, 124:129–197, 2002.
+ .
+A parametrix for the FORMULA -Neumann problem on
+pseudoconvex domains of finite type.
+¦J. Funct. Anal.¦, 216(1):243–302, 2004.
+J.J. Kohn.
+The range of the tangential Cauchy-Riemann operator.
+¦Duke Math. J.¦, 53:525–545, 1986.
+J.J. Kohn and L. Nirenberg.
+Non-coercive boundary value problems.
+¦Commun. Pure Appl. Math¦, 18:443–492, 1965.
+J.J. Kohn and H. Rossi.
+On the extension of holomorphic functions from the boundary of a
+complex manifold.
+¦Ann. Math.¦, 81:451–472, 1965.
+Peter D. Lax.
+Symmetrizable linear transformations.
+¦Comm. Pure Appl. Math.¦, 7:633–647, 1954.
+J.-L. Lions and E. Magenes.
+¦Non-Homogeneous Boundary Value Problems and Applications. ¦Vol. I. Translated from the French by P. Kenneth.
+Die Grundlehren der mathematischen Wissenschaften, Band 181.
+Springer-Verlag, New York-Heidelberg, 1972.
+J.D. McNeal.
+A sufficient condition for compactness of the
+FORMULA -Neumann operator.
+¦J. Funct. Anal.¦, 195(1):190–205, 2002.
+R. Michael Range.
+The FORMULA -Neumann operator on the unit ball in
+FORMULA .
+¦Math. Ann.¦, 266:449–456, 1984.
+ .
+¦Holomorphic Functions and Integral Representations in Several Complex Variables¦. Graduate Texts in Mathematics, volume 108. Springer-Verlag, New York-Heidelberg, 1986.
+Mei-Chi Shaw.
+Global solvability and regularity for FORMULA  on an annulus between two weakly pseudo-convex domains.
+¦Trans. Amer. Math. Soc.¦, 291:255–267, 1985.
+ .
+FORMULA -estimates and existence theorems for the tangential
+Cauchy-Riemann complex.
+¦Invent. Math.¦, 82:133–150, 1985.
+N. Sibony.
+Une classe de domaines pseudoconvexes.
+¦Duke. Math. J.¦, 55:299–319, 1987.
+E.J. Straube.
+A remark on Hölder smoothing and subellipticity of the
+FORMULA -Neumann operator.
+¦Commun. in Partial Diff. Equ.¦, 20:267–275, 1995.
+ .
+Aspects of the FORMULA -Sobolev theory of the FORMULA -Neumann
+problem.
+In ¦Proceedings of the International Congress of
+Mathematicians, Madrid 2006, vol. II¦, pages 1453–1478. Eur. Math.
+Soc., 2006.
+Michael E. Taylor.
+¦Partial Differential Equations II: Qualitative Studies of Linear Equations¦, volume 116 of ¦Applied Mathematical Sciences¦.
+Springer, New York, 1996.

@@ -1,0 +1,1035 @@
+
+[twocolumn,prc,aps,epsfig]revtex
+[
+Electric Flux Tube in Magnetic Plasma
+Jinfeng Liao and Edward Shuryak
+Department of Physics and Astronomy, State University of New York,
+Stony Brook, NY 11794
+2020/09/07 05:36:00
+
+In this paper we study a methodical problem related to the
+magnetic scenario recently suggested and initiated by the authors
+{{cite:d512a845-51ee-4d07-88d3-2af287c302d9}} to understand the strongly coupled quark-gluon
+plasma (sQGP): the electric flux tube in monopole plasma. A
+macroscopic approach, interpolating between Bose condensed (dual
+superconductor) and classical gas medium is developed first. Then
+we work out a microscopic approach based on detailed quantum
+mechanical calculation of the monopole scattering on electric flux
+tube, evaluating induced currents for all partial waves. As
+expected, the flux tube looses its stability when particles can
+penetrate it: we make this condition precise by calculating the
+critical value for the product of the flux tube size times the
+particle momentum, above which the flux tube dissolves. Lattice
+static potentials indicate that flux tubes seem to dissolve at
+FORMULA . Using our criterion one gets
+an estimate of the magnetic density FORMULA  at this temperature.
+ ]
+
+Introduction
+Electric-magnetic duality and monopoles
+Studies of magnetically charged objects resurface in theoretical
+literature regularly since Maxwell's time, as soon as some new
+developments call for their application in different fields. Three
+of these are especially important: (i) the celebrated Dirac
+quantization condition
+{{cite:02fca44c-82f6-449f-a1e2-b96c28c30ae1}}, (ii) the idea put forward by 't Hooft and Mandelstam
+{{cite:5a021bd5-e7b1-4179-bf5a-ffaee797ae12}} to view
+the QCD confining vacuum as a “dual
+superconductor”, and (iii) Seiberg and Witten {{cite:4bb00fdc-59db-4fed-95dc-924074553af9}}
+studies of FORMULA  SUSY gauge theories, identifying
+magnetically charged degrees of freedom and the usefulness as well
+as necessity of jumping from “electric” to “magnetic” language
+whenever appropriate. There are excellent reviews covering
+historic development of these ideas, see
+{{cite:7c69b88e-3a6a-4b65-8775-5379ff1775b5}}, {{cite:5a0354b9-5225-4200-9f7a-dd0c732b7334}}, {{cite:fcdfc6c5-cffe-43bb-b6ca-0916611943bd}}, and (for more recent
+progress) {{cite:bbbdb771-25cb-415e-9181-f2f429fc8bdb}}, {{cite:64c16d8a-23d4-4b15-bf58-b46c20dad5ec}}, and also the
+excellent book {{cite:c54758c0-068a-4d4f-a8a2-781bcb8c2d90}} by Shnir.
+In the context of QCD phase diagram (finite temperature FORMULA  -
+baryonic chemical potential FORMULA ) the issue of electric-magnetic
+duality were discussed in our previous paper {{cite:d512a845-51ee-4d07-88d3-2af287c302d9}}
+(to be referred below as LS1). Brief summary can be made by noticing
+that since electric and magnetic objects generally repel each
+other, their simultaneous presence results in dominance of one
+over the other. In particular: (i) at high-T the
+Quark-Gluon Plasma (QGP) is
+dominated by electric objects (gluons
+and quarks); (ii) at high-FORMULA  and low FORMULA 
+QCD is in a color superconductor phase,
+dominated by electrically charged diquarks and confining magnetic
+objects; while (iii) the vacuum is presumably
+a dual (magnetic) superconductor
+confining electric objects.
+The most important point made in
+LS1 is an
+introduction of new “electric-magnetic equilibrium line”,
+on which both couplings (electric and magnetic), densities, screening
+lengths etc are about equal, and thus the volume is somehow shared
+equally.
+The Dirac condition then demands that at the equilibrium
+line both electric and magnetic “fine structure
+constants”Note in this work we change units from LS1
+and use couplings normalized as standardly done in gauge theories,
+with FORMULA  in the Coulomb law, i.e. Heaviside-Lorentz
+units. are
+FORMULA 
+Furthermore, as pointed out by 't Hooft, in nearly all phenomena
+the relevant effective coupling is not FORMULA  themselves
+but FORMULA 
+or FORMULA , further increasing with
+the number of colors FORMULA . Thus one naturally is lead to the
+conclusion that the
+QCD plasma at e/m equilibrium conditions must be strongly
+coupled. In LS1 this was proposed to be a possible explanation of
+why experiments at RHIC have indeed found a strongly coupled QGP,
+see {{cite:579038ab-aecd-4b4c-bbdc-f3fbae53e11b}}, {{cite:68238d13-b34b-464a-9035-4f1efa67fad3}}, {{cite:ca88597e-f37a-41b9-a172-96d93bce1fb0}}, {{cite:c549d78f-7ddc-4f55-923e-e7dc8bfd6f76}} for
+discussion of data and other theoretical ideas.
+The QCD vacuum and deconfining transition was attempted to be
+described by an ensemble of self-dual dyons in
+{{cite:12437622-6994-42e5-a618-0cacc1e74792}}{{cite:7f011437-1601-42e5-aa6a-534f9ee09634}}. The presence of
+magnetic monopoles, both below and above the deconfinement phase
+transition was studied in vast literature on lattice gauge
+theories, see e.g. {{cite:1211002d-00e9-45f9-9cb7-8e1969b01e34}}. Our previous paper LS1 has
+also studied interrelation of electric and
+magnetic quasiparticles numerically, but using much simpler
+classical tool – the Molecular Dynamics (MD). While lattice study
+uses Euclidean time formalism and thus is restricted to
+thermodynamical observables only: we on the other hand were able
+to do real-time simulation and calculate such kinetic properties
+as viscosity and diffusion constant, see {{cite:d512a845-51ee-4d07-88d3-2af287c302d9}} for
+more details.
+
+Electric Flux Tube Formation in Magnetic Plasma
+After this brief introduction, let us turn to the subject of the
+present paper, the flux tubes. In the usual electric
+superconductor the corresponding solution of Ginzburg-Landau
+equations was first found by Abrikosov {{cite:68c1257d-8d39-49ba-9247-2b521669f325}}, which was
+later revived in field theory {{cite:113bcf83-6957-46e1-8d79-9f669432d55a}} and became
+known as Abrikosov-Nielsen-Olesen (ANO) vertex. In the “dual
+superconductor” picture of the QCD vacuum properties of the QCD
+confining string and the resulting heavy quark potentials have
+been discussed extensively: see e.g. reviews by M. Baker
+{{cite:ed3671a0-d1f7-451b-8ec6-8f44dcf0d123}}, and more recetnly by G. Ripka{{cite:06ddcdc4-3e86-4859-b590-57525d47b125}}
+(with exhaustive list for further references).
+Lattice studies (e.g. {{cite:9732747a-aa1a-4fcc-b889-04f782423787}})
+provided substantial support to these works. Flux tube behavior at
+finite FORMULA  was also extensively discussed: in particular Polyakov
+{{cite:2f4ddbc2-545c-49ea-9a0e-b4903aff63c8}} has shown how exponential growth of flux tube
+entropy leads to vanishing of the effective tension in free energy
+FORMULA  and Hagedorn-like phase transition.
+This scenario would predict gradual deconfinement with the string
+tension vanishing at FORMULA : in fact for FORMULA  it jumps to
+zero.
+Deconfinement
+transition for various number of colors FORMULA  was studies in detail:
+see e.g. {{cite:2835ad09-4e49-4f6d-904a-d29c0dca4b1d}} where FORMULA  up to 12 was studied.
+Working with metastable “overheated” confined phase it
+was found that the Hagedorn-like transition (at which the string tension of the free energy
+vanishes
+FORMULA ) can be approximately
+located
+at a universal (FORMULA  independent)
+FORMULA .
+Heating usual superconductors above the critical temperature
+destroys not only the condensate but also
+Cooper pairs themselves. Although normal (metallic) phase is
+a plasma of electric objects (electrons), but their characteristic
+momenta FORMULA  are orders of magnitude larger than
+momenta of Cooper pairs, thus there is no analog
+of Abrikosov vortexes in the normal phase.
+This does not happen because presence of
+a quantum condensate is that necessary for flux tube's existence:
+a counterexample can be provided e.g. by quite spectacular
+magnetic flux tubes in solar plasmaThey have very large
+fluxes and sizes, and thus a macroscopic theory –
+magnetohydrodynamics – can be
+used for their description, which
+unfortunately it is not applicable in our case, for
+microscopically small tubes.. Whether charges are Bose-condensed
+or not, their scattering on a
+flux tube may provide a pressure which may lead to its
+stabilization. It is just a matter of certain quantitative condition
+for tube stabilization being met.
+The questions to be addressed in this work
+is whether QGP is like an electric plasma in a metal, without
+magnetic flux tubes, or like other plasmas which have them? What
+exactly are the necessary conditions for a flux tube formation?
+Below we will ignore electric quasiparticles which would induce
+screening/termination of electric flux lines{{cite:d7b86e7a-5be6-4a6d-85d6-be2f2575af5c}}
+and consider purely magnetic plasma. We will perform
+quantum-mechanical study of monopole scattering on the tube and
+examine their back-reaction to the tube field through the
+associated magnetic current. This will answer these questions.
+But before we do so, let us explain few important issues classically, related to the very essence of the electric-magnetic
+competition, i.e. “expulsion” of sub-dominant component into
+flux tubes and their stabilization. A full quantum mechanical
+calculation will be presented in Sections III-V.
+We first start with an electric charge FORMULA  being placed within a
+free gas of monopoles with mass FORMULA  and charge FORMULA . The
+monopole gas should be neutral, i.e. with equal number of positive
+and negative charges. We emphasize in advance that monopoles with
+either signs have the same effect: this will be seen in the
+appearance of FORMULA  rather than FORMULA  in the final results.
+At a distance FORMULA  from the charge (see
+Fig.REF  left), the (unmodified) electric field
+FORMULA  will stir the magnetic
+monopoles into Larmor motion with radius FORMULA . As Poincare has
+shown{{cite:7c69b88e-3a6a-4b65-8775-5379ff1775b5}}, {{cite:5a0354b9-5225-4200-9f7a-dd0c732b7334}}, {{cite:c54758c0-068a-4d4f-a8a2-781bcb8c2d90}} a century ago, the radius
+shrinks near the charge, restricting the motion to a cone — a
+small patch of the whole space solid angle. The cone angle is
+determined by (with FORMULA  the monopole velocity transverse to
+FORMULA )
+FORMULA 
+The numerator is precisely the field angular momentum of a
+charge-monopole pair FORMULA  as first computed by J.
+J. Thompson in 1896{{cite:7c69b88e-3a6a-4b65-8775-5379ff1775b5}}, {{cite:5a0354b9-5225-4200-9f7a-dd0c732b7334}}, {{cite:c54758c0-068a-4d4f-a8a2-781bcb8c2d90}}, while the
+denominator is the monopole's kinetic angular momentum FORMULA  with respect to the origin. The above formula, rewritten as
+FORMULA , reflects the interplay between angular
+momenta of the electromagnetic field and of the particle motion.
+Though superficially FORMULA  is defined through FORMULA  and FORMULA , it is
+actually a conserved quantity uniquely related to the cone angle
+FORMULA , see {{cite:c54758c0-068a-4d4f-a8a2-781bcb8c2d90}} for detailed discussion.
+In turn, these monopoles form loops of magnetic current FORMULA  (FORMULA  their density) on the cone. The direction of the
+current explains the sign of induced electric dipoleNote
+that although monopoles with FORMULA  rotate in opposite
+directions, they produce currents of the same sign, so it is not
+necessary to distinguish them.. Using dual Maxwell's equation
+FORMULA , one
+finds that such electric dipole is opposite to induced dipoles in
+dielectric, so in this sense it is an anti-screening effect.
+The charge repels such a dipole: thus monopole will fly away from
+the charge.
+To make this statement quantitative, let's calculate the curl of
+magnetic current around FORMULA . To do that we need to require
+that the Larmor circle to be fairly small, for two important
+reasons: (i) if it is not small then one has to take into account
+the variation of electric field strength which will warp the
+circle; (ii) a small Larmor radius enables one to approximate the
+FORMULA  by integrating FORMULA  along
+the circumference and dividing it by the area of the circle. Small
+Larmor radius FORMULA  means small angle FORMULA , i.e. FORMULA . Density of monopoles FORMULA  with angular momentum FORMULA  at
+FORMULA , is related to total monopole density FORMULA  by FORMULA , with
+FORMULA  some function of FORMULA  and FORMULA . In such case, the result
+comes out as:
+FORMULA 
+Here FORMULA  is the London
+penetration length. Interestingly enough one arrives at the second
+London equation with an modification coefficient
+FORMULA 
+FIGURE 
+To end this discussion, we emphasize again its main point: motion
+of plasma monopoles can function similarly to condensed monopoles,
+under the important condition that the field is strong enough,
+which specifically means that monopoles' bombarding angular
+momentum FORMULA  is much less than the field angular momentum
+FORMULA . The effect discussed here and the well-known Meissner
+effect of (dual) superconductor share the same mechanism, namely
+magnetic particles are scattered by the Lorentz force, inducing
+currents which anti-screen the field. On the other hand, there is
+a big difference between the two. Meissner effect is only present
+in superconductors, which expel arbitrary weak magnetic field.
+Plasmas do not have it, and thus distributed weak fields can be
+present in the bulk. However, strong enough fields can be expelled
+by the plasma into flux tubes, which are in principle metastable.
+Solar plasma (for example) has both weak distributed magnetic
+fields as well as magnetic flux tubes (visible in telescopes as
+substructure of famous solar “dark spots").
+Let us now further simplify the problem, by removing
+the electric charges to infinity
+and leaving only a flux of electric field,
+confined in a flux tube (see Fig.REF  right).
+Again, monopoles from outside which move into it are turned away
+by Lorentz force and leave. Although their energy remains
+unchanged, the momentum is changed, which means that there is a
+constant pressure acting from the monopole ensemble on the tube.
+In essence, it is just dual to the Meissner effect of electric
+superconductor, in which the magnetic field gets pushed away.
+The situation however is only simple if the strength of the field
+in the tube is such that particles penetrate only small part of
+its radius. (One can then further simplify the problem into flat
+surface, with effective current floating in wall separating
+field-free and field regions, as is the case for magnetic flux
+tube in solar plasma.) As seen from the
+Fig.REF  above, if particles can penetrate into
+the flux tube beyond its center, they start generating a
+counter-rotating current which eventually destroys the tubes. To
+further shed light on how the microscopic flux tube may or may not
+exist, more careful analysis of the induced current during
+scattering of these bombarding monopoles will help.
+The lower right picture (transverse projection of the upper) shows
+a few trajectories (with different ending points FORMULA ) in
+the constant field FORMULA  region (within tube radius FORMULA ), starting
+from the same initial point FORMULA  (at the bottom) with same velocity
+FORMULA  (thus curled with same Larmor radius FORMULA ), yet with
+different impact parameter FORMULA  as they are aiming at different
+angles. The impact parameter is related to the monopole's incoming
+angular momentum by FORMULA  depending on whether the
+velocity orients toward left or right at the initial point (noting
+the positive FORMULA  is pointing into the page in the figure).
+For example, the red curve(FORMULA ) is for FORMULA  and FORMULA , the
+blue solid/dashed curves is for certain nonzero FORMULA  and same
+FORMULA  yet opposite signs (with FORMULA  positive and FORMULA 
+negative), and the green solid/dashed curves for even larger FORMULA 
+and FORMULA  (with FORMULA  positive and FORMULA  negative).
+We now consider the currents FORMULA  produced by various
+trajectories. In particular let's examine how the combined current
+FORMULA  of two trajectories with same FORMULA  and FORMULA  changes
+with FORMULA . The important observation is the following: trajectories
+with small FORMULA  or small  FORMULA, like FORMULA , contribute
+counterclockwise currents, while trajectories with large FORMULA  or large  FORMULA, like FORMULA , contribute clockwise currents, and there is a critical FORMULA  or FORMULA 
+(which is precisely the solid blue curve FORMULA  going right
+through the center of tube) beyond which the current inversion
+happens. Some simple algebra leads to the following critical
+angular momentum of the current inversion:
+FORMULA 
+with FORMULA  the electric flux. By interpreting the
+right-hand-side as the electric-magnetic field angular momentum in
+this cylindrical setting, we simply have critical momentum
+FORMULA  which coincides with the analysis in the previous
+example. Very importantly, strong electric field means large
+FORMULA  and stable flux tube, while weak field (with small
+FORMULA ) prefers becoming diffusive in the bulk rather than
+expelled into flux tube.
+As we will show later in the paper, this current inversion
+phenomenon is very important. The counterclockwise currents (from
+small FORMULA ) strengthen the original fieldNote again
+that in the (dual) superconductor case {{cite:06ddcdc4-3e86-4859-b590-57525d47b125}}, the Abrikosov
+vortex is exactly supported by supercurrent of scattered
+condensate in lowest possible angular momentum, namely FORMULA 
+channel., while the clockwise currents (from large FORMULA ) weaken
+them. Thus the current inversion is like a "para/dia-electric"
+inversion, in macroscopic language, and it kills the flux tubes.
+To summarize the lesson from this classical example, the value of
+the angular momentum plays essential role in the monopole
+scattering by the flux tube. If particles have typical momentum
+FORMULA  and the radius of the tube is FORMULA  the angular momentum
+is FORMULA . When FORMULA  is small or equivalently
+the electric field is strong, the motion is still basically radial
+and the pressure argument works. In the opposite limit of large
+FORMULA  or weak field, the induced
+currents have both signs and cancel each other, and there is no
+reason for flux tube to exist. Thus there must be some FORMULA 
+value of FORMULA  above which there is no flux tube solution,
+depending on exact magnitude of currents induced in channels with
+different angular momentum, to be evaluated quantum mechanically
+below.
+The rest of the paper is structured as following: by devising and
+solving a generalized London's equation, we first show in
+Section.II how electric flux tube solution could follow from
+"macroscopic" electrodynamics in medium beyond superconductor; in
+Section.III we outline our self-consistent treatment of flux tube
+starting from "microscopic" level; the quantum mechanic scattering
+of single monopole in flux tube field will be exactly solved with
+analytic wave functions presented in Section.IV for both
+non-relativistic and relativistic cases; we then proceed in
+Section.V to impose self-consistent condition and find flux tube
+size in a thermal medium; application of our results to sQGP
+problem is discussed in Section.VI; and finally Section.VII is for
+conclusions.
+
+Electric Flux Tube: Macroscopic approach
+Borrowing wisdom from electrodynamics of a superconductor and
+being motivated by the “modified London” relation
+(REF ) we discussed above, we find in this section
+solutions to macroscopic electrodynamics equations of London's
+type.
+Our generalized (dual) version of the second London equation
+reads:
+FORMULA 
+Any constant coefficient could be absorbed in a re-definition of
+FORMULA . When combined with one of the (dual) Maxwell's
+equations FORMULA , it yields the equation for the electric field
+FORMULA 
+Macroscopic parameter FORMULA  characterizes how the electric
+field gets modified by the magnetic medium. FORMULA  is the
+London limit (appropriate for the medium being a dual
+superconductor in extremely type-I regime), while FORMULA 
+corresponds to the classical monopole gas (as discussed in
+preceding section). Intermediate values of FORMULA  are suggested
+as an interpolation between the two limits, say to describe a
+medium having both Bose condensed and non-condensed components.
+Our setup corresponds to cylindrical flux tube (see
+Fig.REF  right), with FORMULA  in
+coordinates FORMULA . The total electric flux is FORMULA .
+The solution for any FORMULA  is given byFor
+FORMULA  the boundary condition couldn't be satisfied.
+FORMULA 
+with FORMULA  being the Bessel and Euler Gamma
+functions. If a function FORMULA  is a solution to London
+eq.(REF ) with FORMULA , then the function FORMULA  is a solution to the modified eq.(REF ) with
+any FORMULA . The normalization constant follows from the total
+flux value.
+At large distance, FORMULA , the electric field
+FORMULA 
+vanishes quicker than exponential, leaving most of the flux within
+FORMULA . The smaller is FORMULA , the thinner
+is the flux tube.
+For this flux tube solutions the "string tension" – the energy
+per unit length along FORMULA  is
+FORMULA 
+FORMULA 
+is a rapidly decreasing function of FORMULA , and in particular
+FORMULA  which means that
+(for fixed FORMULA ) a quantum condensate expels the electric
+flux into a flux tube with the tension three times larger than a
+classical monopole gas does.
+Let's summarize the physical picture as well as limitations of the
+established solution. Any magnetic medium generically expels the
+electric field, as monopoles are back-scattered off it, so there
+is possibility for flux tube formation. But different media do
+this job with distinct efficiencies, leading to flux tube (if
+there is any) with different tensions. The electric flux tube
+solutions are rather simple: they describe the problem in terms of
+two macroscopic properties of magnetic medium, namely FORMULA  and
+FORMULA . There is however an important limitation. The
+macroscopic approach is suitable only if the electric field
+strength (or the electric flux here) is large, as the detailed
+analysis in the introductory examples has shown: we repeat that
+strong field makes small Larmor radius of monopoles, thus the flux
+tube is a "macroscopic" object and scattering of monopoles happens
+basically on the surface. If it is not so, the validity of
+eqn.(REF ,REF ) upon which the solution is
+based is no longer justified. The intermediate case between
+diffusive weak field and macroscopically strong flux tube requires
+a microscopic approach, to be discussed in the following sections.
+
+The Microscopic Approach
+Starting here and following in subsequent sections, we will pursue
+a fully quantum mechanical microscopic approach. Let us first
+describe our strategy and approximations made in this section. The
+main one is that mutual interaction among monopoles will be
+neglected, as it has been argued that magnetic sector of sQGP at
+just above FORMULA  is very weakly coupled, see {{cite:d512a845-51ee-4d07-88d3-2af287c302d9}}
+for more details. What's more, if one assumes the monopoles are of
+'t Hooft-Polyakov type{{cite:8aa855ca-1bc8-43bc-87cb-32fe3f75d0c6}}, the Coulomb
+interaction between monopoles may be largely cancelled (and
+exactly cancelled in the BPS limit{{cite:c6f70502-b6a0-4785-9e54-30cdf5b1655f}}, {{cite:da15eb4e-b592-49b2-a46e-60ea0a2007a2}} for static
+monopoles) by scalar/Higgs exchange. But the Lorentz force from
+electric fieldAlthough the monopoles in sQGP are built
+out of non-Abelian fields FORMULA , each type of monopoles only
+interacts with electric field projected into their corresponding
+U(1) (see e.g.{{cite:c54758c0-068a-4d4f-a8a2-781bcb8c2d90}}, {{cite:06ddcdc4-3e86-4859-b590-57525d47b125}}), so the Maxwellian field
+description still holds. cannot be cancelled and this is the only
+interaction of monopoles relevant to our approach. The single
+monopole scattering on a flux tube will be treated quantum
+mechanically. Both non-relativistic and relativistic cases will be
+analyzed: there are evidences that monopoles in sQGP are
+semi-relativistic, e.g. with FORMULA 
+{{cite:90f725bf-978e-4d6b-a173-5ad778511ef9}}, {{cite:04332cb5-977b-4c7b-9fd8-6259905b5f49}}.
+In the following sections we will go through the three steps
+below: i) first assume existing flux tube of certain size FORMULA , ii)
+then figure out in great details how individual monopole from
+medium will be scattered off it and generate some magnetic
+current, and iii) finally use the dual Maxwell's equation relating
+the electric field and magnetic current to obtain a
+self-consistent equation determining the value of FORMULA  (and thus
+string tension FORMULA ) as a function of medium parameters
+FORMULA . Below we extend the description of strategy a bit more
+step by step.
+i) For our purpose the electric flux tube with
+flux FORMULA  and size FORMULA  is described in cylindrical coordinate
+FORMULA  by the following field:
+FORMULA 
+The corresponding dual vector potential reads:
+FORMULA 
+The string tension is given by
+FORMULA 
+According to Dirac quantization, the flux can be normalized via
+FORMULA . While the results obtained
+below can be used for general FORMULA , we are particularly interested
+in FORMULA  as is true for adjoint monopoles in sQGPThere
+are strong evidences from lattice study of high-FORMULA  magnetic QCD
+which supports the idea that monopoles in QGP have such charges that FORMULA  and
+their total numbers scale as FORMULA , see e.g.{{cite:05263ba7-1549-42ac-8d0b-92d6ece7b11f}}.
+ii) A monopole moving in such a field is governed by the following
+Hamiltonian:
+in the non-relativistic case
+FORMULA 
+while in relativistic case it is
+FORMULA 
+The conserved quantities are
+1) total energy FORMULA ;
+2) longitudinal momentum FORMULA ;
+3) hence one can use longitudinal energy FORMULA  and
+transverse energy FORMULA  to be conserved
+separately;
+4) the angular momentum FORMULA .
+The conservation of both FORMULA  and FORMULA  implies that the
+monopole is rejected back (unless FORMULA ) when it approaches the
+center of the tube, due to generic centrifugal barrier FORMULA  which dominates at small FORMULA .
+iii) The dual Maxwell equation, FORMULA , in cylindrical setup being
+FORMULA 
+can be integrated in  FORMULA
+FORMULA 
+The flux tube may presumably be approximated by a constant FORMULA 
+inside certain radius FORMULA  and zero outside FORMULA , with
+smooth interpolation in between. As an approximation in step(i) we
+have used step-like electric field, neglecting the difference
+between FORMULA . The advantage is that monopole motion in such
+field can be calculated (step (ii)). This shouldn't be a serious
+issue as we expect FORMULA . Thus we take FORMULA  as the
+constant field strength FORMULA  within tube and
+send FORMULA  to zero, obtaining the equation to be used in later
+section:
+FORMULA 
+
+Quantum Mechanical Motion of a single Monopole 
+Quantum mechanical motion of single monopole is described by wave
+function FORMULA  which is a scattering solution to FORMULA  with FORMULA  from eq.(REF ). Making
+use of conserved quantities, we may decompose the wave function
+into FORMULA , with energyHere
+we first deal with non-relativistic case, while in the last
+subsection the treatment will be generalized to relativistic case
+which turns out to be rather straightforward.
+FORMULA 
+and angular momentum FORMULA . Let's first introduce several
+parameters involved later in the solution, including:
+FORMULA 
+We repeat that FORMULA  tells how much flux is going through the tube. The
+meaning of FORMULA  can be explained as follows: it is quantized
+(integer-valued) form of a relation between velocity, canonical
+momentum and dual field FORMULA  projected (via
+their cross-product to FORMULA ) to angular momenta. Classical
+path FORMULA  in Fig.1 which has velocity at large distances
+directed to the tube center corresponds to FORMULA . The FORMULA 
+channel is the one corresponding to FORMULA  path: it goes through
+the center because it experiences no centrifugal barrier FORMULA . As we will see below, this correspondence will explain
+the signs of the currents, generated in each partial waves.
+The Schrodinger equation can then be reduced to the following
+cylindrical radial equation
+FORMULA 
+The effective potential takes the form:
+FORMULA 
+FIGURE 
+The equation could be exactly solved both inside and outside the
+tube, as shown separately below:
+i) FORMULA  (inside), the
+solution is given by confluent hypergeometric function FORMULA :
+FORMULA 
+ii) FORMULA  (outside), the solution is expressed by two Hankel
+functions FORMULA  with proper phase shift
+FORMULA :
+FORMULA 
+Finally the two functions should be connected smoothly at FORMULA ,
+which
+determines:
+the normalization constants FORMULA  satisfying (with
+FORMULA  Bessel functions)
+FORMULA 
+and the phase shift FORMULA  being
+FORMULA 
+However exceptions to eq.(REF ,REF )
+can occur when it so happens that
+FORMULA . In such situation the
+alternative equations are the following:
+FORMULA 
+FORMULA 
+The coefficient FORMULA  should be determined by calculating
+the current at FORMULA  and matching the physical boundary
+current, see more discussions in subsection A. below.
+To this point, our problem of finding quantum mechanic solutions
+(with arbitrary FORMULA ) for monopole scattering off flux tube
+have been all set. With these analytical solutions at hand, a few
+discussions are in order below.
+
+Scattering Amplitude
+Now we discuss the boundary condition and determine the scattering
+amplitude. As a scattering problem, we expect an incident current
+described by transverse plane wave, say FORMULA , in the
+cylindrical setup. Thus we write down the asymptotic wave function
+asHere we temporarily normalize the incoming current as
+just FORMULA  while in later section additional factor from
+density FORMULA  will be included.
+FORMULA 
+Expanding FORMULA  also in terms of FORMULA  and comparing the above to the large FORMULA  limit of
+FORMULA  from eq.(REF ), we obtain the
+normalization constant FORMULA  as
+FORMULA 
+with the feature FORMULA  independent of FORMULA 
+valuesOne should keep open mind in that different
+boundary conditions lead to different weights FORMULA  among
+partial waves. It is not clear if there could be choices other
+than the ones used here which can best describe the thermal
+monopole scattering by flux tube field. An extreme example is
+superconductor which picks only FORMULA  with all others
+vanishing..
+The partial-wave scattering amplitude is determined via phase
+shift as
+FORMULA 
+This gives the partial-wave scattering cross section, or more
+precisely transverse cross "length", as
+FORMULA 
+The total cross section is a sum of the above over all FORMULA .
+Examples of FORMULA  and FORMULA  as functions of FORMULA 
+for several values of FORMULA  are plotted in
+Fig.REF .
+Before closing this subsection,we'd like to point out that the
+phase of coefficient given in (REF ) is related to the
+choice of FORMULA  as asymptotic incident state (while its unity
+amplitude is general). Physically an incident particle can come in
+from any direction besides FORMULA  axis, with equal probability,
+so an average over all possible orientation of initial FORMULA  is
+called for. This can be achieved by first doing calculation using
+(REF ) and averaging over the FORMULA  dependence at the end,
+and the effect of this procedure is simply the entire suppression
+of interference terms among different partial waves.
+FIGURE 
+
+Magnetic Current
+The magnetic current generated by single monopole during
+scattering process can be calculated by
+FORMULA 
+The nontrivial part is the FORMULA  component:
+FORMULA  component is zero and FORMULA  component is
+totally irrelevant and can also be set to zero by replacing
+FORMULA  with real FORMULA  functions.
+FORMULA 
+with FORMULA  the unit step function. We may further combine
+FORMULA  terms and rewrite it as
+FORMULA 
+This expression implies two important points: first, significant
+contribution to magnetic current comes from small FORMULA  part as is
+evident from FORMULA  dependence, so partial waves with large
+amplitude at small FORMULA  (namely small FORMULA  channels) are
+important; second, according to FORMULA  at FORMULA ,
+partial waves with FORMULA  symmetric to FORMULA , namely a pair of FORMULA  channels, tend to produce opposite currents which
+substantially cancel each other. It is worth emphasizing that only
+FORMULA  partial wave (the one picked by the whole condensate in
+ANO vertex case, see e.g. {{cite:06ddcdc4-3e86-4859-b590-57525d47b125}}) will benefit from the
+first point and at the same time NOT suffer from the second point.
+Clearly for each given FORMULA  the total current FORMULA  to be
+integrated in eq.(REF ) should be built up from
+summing currents of all partial waves , namely summing FORMULA  over quantum numbers FORMULA . One is naturally concerned
+with the convergence of such infinite summation, which is
+basically determined by the large FORMULA  behavior. We can expect
+that large FORMULA  partial waves contribute very little to the
+total current, which bears two simple physical arguments: from
+energy point of view, states with FORMULA  experience centrifugal
+potential FORMULA  while the kinetic
+energy being FORMULA , so if FORMULA  then FORMULA  which means it is very hard for the particle to "climb"
+up the potential barrier all the way into the tube; from the
+impact parameter perspective, states with FORMULA  and FORMULA  have
+semiclassical impact parameter FORMULA , so if
+FORMULA  then FORMULA  which means the incident particle will be
+largely missing the central part and thus very little scattered,
+leading to negligible induced currents. This conclusion has been
+confirmed by extensive numerical calculation and practically for
+given FORMULA  all partial waves with FORMULA  are vanishingly
+small, as is evident from Fig.REF  to be explained in
+next subsection.
+
+The Total Current
+Now we perform the radial integration
+needed in eq.(REF ):
+FORMULA 
+In Fig.REF  we plot FORMULA  versus FORMULA  for
+various FORMULA . The interesting observation is that the integrated
+current is negative for FORMULA , positive for FORMULA , while for
+FORMULA  partially positive (at small FORMULA ) and negative (at large
+FORMULA ). This result from quantum mechanics perfectly agrees with
+our conclusion from classical treatment in the Introduction part,
+not only qualitatively but even quantitatively: the critical
+angular momentum for current inversion observed here FORMULA  with FORMULA  coincides with that predicted by
+eq.(REF ) once our flux FORMULA 
+with FORMULA  is plugged in.
+FIGURE 
+Now we perform the final step: namely summing FORMULA  over
+FORMULA  to obtain the integrated total current FORMULA . This is
+done numerically, with summation cut FORMULA  applied,
+see Fig.REF  for results for various FORMULA . As
+can be seen, for the displayed regime FORMULA  the summation is
+converged enough as soon as FORMULA , as the curves with
+FORMULA  and FORMULA  coincide on top of each other
+and are hardly distinguishable. It is this numerically evaluated
+function FORMULA (with our highest cut FORMULA ) that
+will be used in subsequent sections.
+The behavior of this function FORMULA  has rather nontrivial
+wiggle structure: the general trend is oscillatory, with a modest
+negative part at small FORMULA  (basically from negative
+contribution from FORMULA ) followed by a rather high positive
+peak (dominantly from FORMULA ) between FORMULA . These
+first two structures, first negative then positive, basically
+cover the interesting region of FORMULA (see discussion in next
+paragraph). Suppose there is a flux tube with certain FORMULA , then at
+low temperature the typical FORMULA  is small and FORMULA 
+falls within negative region which supports the flux tube, while
+at high temperature the larger FORMULA  brings FORMULA  beyond
+the negative region into the tremendous positive region which will
+kill the flux tube. So there is a transition with the border at
+FORMULA : beyond this point higher partial waves with FORMULA  (which is also close to the classical
+critical value FORMULA ) will become dominant. By Comparison of
+this curve with the red dashed one (only FORMULA ), which
+corresponds to what superconductor can do, one understands why a
+condensate does much better in confining a flux tube than a normal
+thermal ensemble can do. The first negative peak, actually the
+best pointOne might argue that there will be an even
+larger negative peak at FORMULA , however to reach that
+point one requires much larger FORMULA  which usually means
+broader distribution over FORMULA  around FORMULA , and that will
+easily make the total contribution rather small after cancellation
+with the adjacent large positive peak. for flux tube formation,
+locates at
+FORMULA 
+FIGURE 
+Finally let's discuss interesting range of FORMULA . Remember
+ultimately we'd like to discuss the flux tube inside an ensemble
+of monopoles with temperature FORMULA . So first, the tube radius
+shouldn't be much larger than FORMULA , otherwise the
+tube's transverse vibrational modes (FORMULA ) get too
+easily thermally excited, making it unstable. Second, large FORMULA 
+should be suppressed by thermal distribution, and typical
+FORMULA  should be few times FORMULA . Thus it follows
+that typical values of FORMULA  should be of the order unity.
+The evaluated FORMULA  up to FORMULA  here should be
+sufficient for later application.
+
+Partial Wave with FORMULA  and Possible Resonance
+FIGURE 
+The effective potential FORMULA  with FORMULA  or equivalently
+FORMULA  is special in that it vanishes at the center FORMULA , while
+for all other FORMULA  states there will be diverging term
+FORMULA . The shape of it (see
+Fig.REF ) actually indicates possibility for resonance
+to occur. Whether there could be resonance solution or not depends
+on the competition of the localization energy and the potential
+barrier whose peak value is FORMULA  at FORMULA .
+To settle this one can look at the condition for the wave function
+(REF ) to be zero right upon FORMULA  (which is very
+close to the resonance situation and gives estimate of kinetic
+energy). This yields the series of particular values of FORMULA : FORMULA , FORMULA , FORMULA , FORMULA , ... Thus
+clearly to have one resonance level, one needs at least
+FORMULA  namely FORMULA . Indeed by fine search
+for resonance structure in scattering phase shift we identified
+one resonance in the case of FORMULA , see Fig.REF ,
+with FORMULA  very close to the above FORMULA  and
+narrow width FORMULA . Nothing similar was found in
+FORMULA . With large enough FORMULA  the occurrence of resonance should be
+a general phenomenon and the induced current produced by these
+resonance states actually will spoil the original flux tube field
+as monopole in such state stays in the center of tube and "pushes"
+field outward rather than inward: remember the large positive peak
+in FORMULA  (black curve in Fig.REF ) is
+precisely due to the contribution from FORMULA  partial waves.
+
+Quantum Mechanical Motion of Single Relativistic
+Monopole 
+In this subsection we generalize the obtained solutions to
+relativistic case. Now one has to solve Klein-Gordon equation
+(since monopoles are scalar particles) instead of Schrodinger
+equation:
+FORMULA 
+Fortunately it turns out that by again writing eigenstate of
+energy FORMULA  as FORMULA 
+one recovers exactly the same radial equation as
+eq.(REF ) except for changing
+FORMULA  to the following
+FORMULA 
+So all the exact wave functions obtained in non-relativistic case
+are still solutions to the Klein-Gordon equation after the above
+replacement of FORMULA  in eq.(REF )(REF ).
+This change of FORMULA  should be done for all the relevant formulae
+above.
+Another important change is for the current equation
+(REF ): due to relativistic effect the mass FORMULA 
+should be replaced by FORMULA  , namely
+FORMULA 
+The same replacement should also be applied to integration over
+current in eq.(REF ).
+All other aspects remain pretty much the same as in
+non-relativistic case and we skip further discussion.
+
+Self-Consistent Electric Flux Tube Solution
+In this section we will self-consistently determine the size FORMULA 
+of the electric flux tube carrying flux FORMULA  in an ensemble of monopoles with temperature FORMULA  and
+density FORMULA , by using the  FORMULASince we are not
+interested in details of the flux tube shape,
+we refrain from doing more complicated local matching of the
+current and the FORMULA , as local
+form of Maxwell equation demands. magnetic current obtained in
+previous section.
+At this stage the issue is to average the integrated total current
+FORMULA  over proper thermal distribution FORMULA 
+(through which the medium property comes into play) satisfying
+FORMULA . We have
+FORMULA 
+Note in relativistic case we have to replace the mass FORMULA  by
+FORMULA  and move it inside the integration over k. Below
+we deal with non-relativistic gas, relativistic gas, and optimally
+correlated ensemble separately.
+Non-Relativistic Gas
+In non-relativistic(NR) gas with FORMULA  large, the kinetics
+are simplified, yet in principle one still needs to take into
+account the quantum statistics, namely using the Bose-Einstein(BE)
+distributions. Only in the non-degenerate limit (with monopole gas
+being not dense) one recovers the Boltzmann limit. So we use the
+BE distribution FORMULA  normalized to density
+FORMULA  by
+FORMULA 
+In the above FORMULA  is the degeneracy due to internal degrees of
+freedom, fugacity FORMULA  is related to chemical
+potential and valued as FORMULA  in NR case, and
+FORMULA  is the polylogarithm function. We then have the
+FORMULA  given by (after integrating out the FORMULA  momentum)
+FORMULA 
+with the variable FORMULA .
+Now by combining
+eq.(REF )(REF )(REF ) we
+obtain the self-consistent equation for flux tube size FORMULA :
+FORMULA 
+with the last term FORMULA  from integration over  FORMULA
+FORMULA 
+The self-consistent equation can be further rewritten in an
+elegant way:
+FORMULA 
+with FORMULA  and FORMULA . So for given parameters one uniquely determines
+the flux tube size FORMULA  from the above equation.
+The NR Boltzmann limit, satisfying scale hierarchy FORMULA , can be achieved by simply replace FORMULA  in the integration of FORMULA 
+by FORMULA . Mathematically this follows from taking
+the FORMULA  limit (with only linear terms left) of both
+polylogarithm functions.
+The results from solving eq.(REF ) are plotted in
+Fig.REF . Numerically we didn't see much difference
+between FORMULA (blue curve) and FORMULA (red curve) limits. As
+FORMULA , the right end of the
+horizontal axis corresponds to high-density/low-temperature regime
+while the left end represents low-density/high-temperature
+regime.
+FIGURE 
+The distinguished feature is the existence of critical point for
+FORMULA  beyond which there will be no
+self-consistent solution: this occurs at roughly the same value
+for both displayed curves and we obtain the following condition
+for the existence of flux tube
+FORMULA 
+Physically the above result is very appealing: it demonstrates the
+mechanism of how a flux tube which exists in the medium at low FORMULA 
+is eventually gone as the medium is heated up; on the other hand,
+for a medium with given FORMULA  it sets up a lower bound of monopole
+density that is required to support the existence of flux tube.
+Another feature is that for each given FORMULA 
+smaller than the critical value, there are actually two solutions,
+one with small FORMULA  (typically smaller than 1, see
+solid curves) and the other with large FORMULA  (typically
+greater than 1, see dashed curves). This is understandable
+according to the complicated wiggle structure of FORMULA .
+The solution with smaller radius is the stable one: it is much
+thinner and thus has stronger electric field (FORMULA ), which reflects monopoles more sharply near the boundary.
+The other solution with larger FORMULA  is unstable and
+should be discarded.
+
+Relativistic Gas
+In relativistic gas the important scale is set by temperature, so
+let's introduce the following dimensionless variables:
+FORMULA 
+The fugacity FORMULA , now in range FORMULA , is related to density
+by
+FORMULA 
+with the number FORMULA  the degeneracy due to internal degrees
+of freedom. FORMULA  serves as normalization constant to
+momentum distribution (after scaling momenta by FORMULA ).
+The distribution over FORMULA  is given by
+FORMULA 
+with FORMULA . Similarly combining the above with
+eq.(REF )(REF ) one obtains the
+relativistic version of the self-consistent equation
+FORMULA 
+with FORMULA  given by the following integral
+FORMULA 
+We can further rewrite the self-consistent equation as
+FORMULA 
+with the newly introduced relativistic parameters
+FORMULA  and
+FORMULA .
+For given sets of parameters FORMULA  (or equivalently FORMULA ) one
+can easily find the flux tube size FORMULA  from the above equations by
+direct numerics. The situation is quite similar to the
+non-relativistic gas which we skip further discussion.
+
+Optimally Correlated Ensemble
+Finally let's discuss ensemble beyond an ideal gas. Clearly with
+significant interparticle correlations the ensemble may even not
+be easily describable by any distribution, however a typical
+momentum FORMULA  can still be invoked. A special situation
+which we call optimally correlated ensemble is that monopoles from
+such ensemble are largely carrying momenta within very narrow
+region around FORMULA . On the contrary if the ensemble
+particles' momenta are very diffusive in momentum space, it can
+hardly support flux tube.
+In the optimally correlated ensemble, we approximate
+eq.(REF ) as (assuming NR formulae)
+FORMULA 
+and the self-consistent equation is then given by
+FORMULA 
+We limit the value of FORMULA  within FORMULA  beyond which
+there won't be flux tube solution, as discussed in Section.IV C.
+The above can be re-organized into
+FORMULA 
+The best situation occurs (roughly) around the negative peak in
+FORMULA  given by (REF ). From this we set a bound
+similar to eq.(REF )
+FORMULA 
+
+Disappearance of Flux Tubes in Quark-Gluon Plasma
+Results from previous sections are general in nature and
+applicable to a variety of plasma physics problems. The present
+section, on the other hand, is dedicated to our main application,
+the physics of sQGP. From now on we switch to natural units and
+systematically put FORMULA .
+The existence of string/flux tubes in the QCD confined phase
+FORMULA  is rather thoroughly investigated on lattice, via
+measurements of static heavy quark potentials. Static free energy
+potentials FORMULA  as a function of FORMULA  are only studied for
+FORMULA  but for number of quark flavors FORMULA  as well as
+physical QCD, see {{cite:90a22603-9514-49a7-a75f-a15067d464d1}}. Those can be used to
+extract the entropy and potential energy separately: the peaks of
+these quantities (see e.g. Fig.2 of {{cite:01d74ad6-c1e4-4ff7-83e3-b86eca45c9f9}})
+happen to be exactly at FORMULA  and then decrease toward larger
+FORMULA . The presence of the quasi-linear part of the energy and
+entropy at intermediate FORMULA  leads to a conclusion that flux tubes
+still exist at FORMULA . Fig.REF  from
+{{cite:01d74ad6-c1e4-4ff7-83e3-b86eca45c9f9}} shows how both the internal energy and
+entropy look like at FORMULA . Unlike in the free energy (open
+squares in the upper plot, in which cancellation takes place), the
+internal energy (closed circles) still show at intermediate
+FORMULA  a part linearly dependent on FORMULA , while at
+FORMULA  it very quickly disappears.
+FIGURE 
+Why are flux tubes disappearing at large FORMULA ? It can in principle
+be due to two different changes in QGP happening as T grows above
+FORMULA , to be called (i) electric screening and (ii) magnetic
+penetration. The simplest mechanism (i) is that as FORMULA  grows
+beyond FORMULA , the density of electrically charged quasiparticles
+– gluons and quarks – is growing and eventually it becomes large
+enough to screen heavy quarks. The reason for this density growth
+is the decrease in effective masses of electric excitations, which
+are lattice observables by themselvesSee a related
+discussion of various color-electric objects' effective masses in
+{{cite:9b299bb5-2517-40b2-bd8a-4b8d934f5faf}}. There we showed the masses are
+still rather large and their densities rather small at 1-1.5FORMULA ,
+limiting the screening.. At very large FORMULA , in weak
+(electric) coupling domain, the screening of the potential is
+expected to be described by the Debye theory. However Debye theory
+does not describe entropy and internal energy associated with
+static quarks at FORMULA , even at large distances, as can
+be seen e.g. from calculations of Antonov et al
+{{cite:3ac44462-3629-406b-b3b6-74057da443ee}}.
+Another effect (ii), discussed for the first time in this work,
+is the penetration of
+magnetically charged quasiparticles (MQPs) inside the flux tubes,
+which destroys them. Indeed, the key parameter FORMULA 
+increases with FORMULA  and reaches the critical value
+eq.(REF ) for whether flux tube can exist or
+not. This imposes the following condition
+FORMULA 
+Changing FORMULA  from FORMULA  upward the monopoles gets heavier and
+their dimensionless magnetic density FORMULA  keeps decreasing:
+eventually this will violate the flux tube condition.
+We thus identify the equality in (REF ) with the
+temperature FORMULA  at which local dissolution of the
+flux tubes takes place.
+Furthermore, at FORMULA  we expect FORMULA 
+{{cite:d512a845-51ee-4d07-88d3-2af287c302d9}}. An independent consideration fixes conditions
+for monopole Bose condensation {{cite:90f725bf-978e-4d6b-a173-5ad778511ef9}} which demands that
+around FORMULA  the monopole mass over temperature FORMULA .
+Combining these estimates with our critical condition for tube
+dissolution we obtain the density of magnetic quasiparticles at
+FORMULA  to be
+FORMULA 
+which is within FORMULA  in absolute units.
+Can the density of magnetic objects really be of that magnitude
+(which superficially looks rather high)? This estimated density
+includes in principle contributions from all types of magnetically
+charged objects in sQGP, i.e. not only pure adjoint monopoles but
+also self-dual dyons and also dyons containing quarksWe
+recall that monopoles have fermionic zero modes and states made of
+fermions travelling on top of a monopole have to be included as
+well. In supersymmetric theories those form spin-1/2 and even 1
+magnetic objects, which are needed by supersymmetry to produced
+appropriate supermultiplets including the usual scalar
+monopoles..
+Let us compare the numbers with whatever is mentioned in
+literature. We don't know any studies of fermionic objects
+mentioned above.
+Ilgenfritz et al {{cite:12437622-6994-42e5-a618-0cacc1e74792}} determined their dyon
+estimate by the caloron density, which is reliably calculated from
+the topological susceptibility. After multiplying by 3/2 their
+result for SU(2) we obtain density of self-dual dyons to be
+FORMULA . Chernodub and Zakharov
+{{cite:25feb318-3763-49cf-a146-4f4c11687934}} mentioned the monopole density which is
+directly estimated from lattice configurations by following
+gauge-fixed monopoles along their trajectories. Their estimate is
+about FORMULA . The sum of the two is
+consistent with the upper end of our estimate of what is needed
+for formation/dissolution of the flux tube.
+Independent comparison can also be made with the vacuum (FORMULA )
+monopole density. Bali {{cite:9732747a-aa1a-4fcc-b889-04f782423787}} has measured London
+penetration length by fitting lattice result with Abelian Higgs
+model. From that one can infer the monopole density to be as large
+as FORMULA . Bornyakov et al {{cite:61d6ad78-3900-49f3-86aa-789364da97b1}} gave the vacuum
+monopole density to be about FORMULA . All these results are
+well above our estimates for the density at FORMULA 
+“dissolution point”.
+We believe all these numbers are consistent and suggest a coherent
+picture, of very dense monopole condensate in vacuum, tightly
+confining electric flux into very narrow tubes. When heated
+slightly above FORMULA  the monopole condensate changes into a
+non-condensed ensemble of monopoles, which is roughly twice less
+dense. Yet it is still capable of supporting flux tubes survived
+from vacuum, and only around FORMULA  the density of monopoles
+drops so low that there won't be flux tube any more. At higher FORMULA 
+the electric sector becomes more and more dominant till eventually
+small number of heavy monopoles become embedded in the
+perturbative electric plasma.
+
+Summary and outlook
+In this paper we have studied stability of the electric flux
+tube in a monopole plasma. Quantum scattering of a single monopole on
+electric flux tube is analyzed in great details. Already classical
+analysis hints on the existence of a critical angular
+momentum dividing the scattered magnetic currents which
+support/dissolve the flux tube. This finding is quantitatively
+confirmed by quantum mechanic calculation, in which we have found
+exact scattering solutions to Schrodinger/Klein-Gordon equation in
+non-relativisitic/relativistic situations. These solutions allowed us
+to calculate the magnetic current produced, which is
+then averaged over the monopole ensemble and used in
+self-consistent determination of the flux
+tube size. The exact critical condition has been established, and
+applied to electric flux tube dissolution in sQGP system which
+interests us most. This leads to an estimate of total density of
+magnetic quasiparticles
+FORMULA  at FORMULA , where
+lattice potentials indicate flux tube dissolution. These numbers
+are consistent with
+other studies using alternative ways to estimate magnetic density.
+As mentioned in the introduction, this work is partly methodical
+in nature, ignoring electric quasiparticles which would lead to
+screening and termination of flux tubes. The next step
+we plan to do is obviously inclusion of both components
+and calculation of the static potentials.
+Hopefully, when one would consider an appropriate mixture of electric and magnetic quasiparticles, the
+lattice data on static potentials between electric and
+magneticThose are given by the expectation value of the
+so called 't Hooft loop: we have not discussed them in this work.
+charges would be explained.
+In principle, one should go beyond that and calculate field
+distributions around static charges as well. Lattice studies can
+be extended to measure directly electric/magnetic fields at FORMULA : in fact the field profiles have been measured for flux
+tubes in vacuum before (see e.g. {{cite:9732747a-aa1a-4fcc-b889-04f782423787}}).
+Let us end with the following intriguing question. We focused
+above on electric flux in magnetic media, ignoring electric
+quasiparticles and possible dual phenomenon –
+a magnetic flux tube in an electric plasma. (We only
+mentioned their existence at low FORMULA  high density regime, in a
+color superconductor.) Now, may somewhere along the
+electric-magnetic equilibrium line there be conditions supporting
+stable flux tubes of FORMULA  types at the same time? It is known
+that confinement of both is impossible, but in a uncondensed
+plasma regime it may still be the case. A natural place to look
+for a QGP with intertwined electric and magnetic flux tubes is at
+FORMULA  less or of the order of FORMULA , close to the place where three
+major phases – hadronic, color superconductor and QGP – meet.
+Although it is quite challenging task to get into this region
+using lattice gauge methods, the task is not hopeless.
+Acknowledgments.
+This work was supported in parts by the US-DOE grant
+DE-FG-88ER40388.

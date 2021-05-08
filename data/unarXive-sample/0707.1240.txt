@@ -1,0 +1,383 @@
+
+Partial restoration of factorization and universality
+in presence
+of factorization breaking interactions in
+hadronic hard scattering processes.
+A. Bianconi
+andrea.bianconi@bs.infn.it
+Dipartimento di Chimica e Fisica per l'Ingegneria e per i
+Materiali, Università di Brescia, I-25123 Brescia, Italy, and
+Istituto Nazionale di Fisica Nucleare, Sezione di Pavia, I-27100 Pavia, Italy
+Recent works have discussed the violation of factorization and universality
+in hadronic hard scattering processes aimed at measurements of
+T-odd distributions. We use simple arguments
+to show that it is possible
+to restore an approximate factorization involving T-odd
+contributions, if the factorization
+breaking interactions present a frequency spectrum
+dominated by a narrow and regular peak whose maximum value
+corresponds to a respected factorization.
+13.85.Qk,13.88.+e,13.90.+i
+Introduction
+Recent works{{cite:7ffb1e69-dbd8-4f32-870e-4442f82f66ab}}, {{cite:cdfc4f89-c37a-4440-aabf-5e5345fb6e33}}
+have seriously re-discussed the ideas of factorization
+and universality in hard processes aimed at
+the detection of T-odd distributions.
+In the last fifteen years the study
+of these distributions
+has often made it necessary to reconsider the basic properties
+of the QCD-improved parton
+model, in particular
+factorization{{cite:750a14cf-c581-4fc4-9e69-d245e5bed4b0}}, {{cite:bcd33383-3bf8-4b29-a1e4-5fc355a01d60}}.
+In quark/parton physics the first T-odd
+distribution function was probably
+the Sivers function{{cite:edbb1683-d002-4c78-82f4-1ab2e992d514}} in 1990, followed by the
+Boer-Mulders-Tangerman
+function{{cite:afaf7ea2-ba84-4ee0-82fa-adf2dab66a70}}, {{cite:47811db2-743c-47e8-b4e2-2f7abaa38d05}}, {{cite:d277bfda-cee3-42e0-ac7c-376747e489c1}}.
+The former was used to explain single spin
+asymmetries{{cite:6368d98c-628b-421c-a168-8e7ef2f71f96}}, the latter to explain
+unpolarized Drell-Yan azimuthal
+asymmetries{{cite:d277bfda-cee3-42e0-ac7c-376747e489c1}}.
+Recently, it has been demonstrated{{cite:e4fd10fd-6fd9-490c-a4c8-b09e226cb460}} that the T-odd
+mechanism introduced in{{cite:ea692609-c70f-4071-b98b-874c12806e95}} and {{cite:b8daaec1-3f17-4d04-9e14-36568ccde838}}
+produces a Sivers asymmetry when its effect is extrapolated into the
+small transverse momentum region.
+Also, in high energy nuclear physics a T-odd
+structure function, the so-called “fifth structure function”,
+was introduced{{cite:f21e9737-ec58-46c9-80f5-b946e72ce43d}}
+and modeled{{cite:ce1622e7-75c2-4814-83a7-5e5273a73402}}, {{cite:b3428657-ffba-4fc4-b2fa-39ccc4686dc1}} to describe normal asymmetries
+in FORMULA  quasi-elastic scattering.
+For justifying the same existence of leading twist
+T-odd functions, the central object is the gauge restoring
+operator entering the definition of parton
+distribution{{cite:750a14cf-c581-4fc4-9e69-d245e5bed4b0}}. In an approach
+where factorization is assumed from the very beginning, this gauge
+field is assumed to be negligible at leading twist, but in its
+absence T-odd distributions
+are forbidden{{cite:c6b12958-3867-45c9-a8db-5487a823941c}} by general
+invariance principles.
+A chain of arguments and
+examples{{cite:4bcd1517-5d1d-4096-b75d-55bb7c7b8f7a}}, {{cite:1145cccb-dfd3-4fe6-b54a-9bbefe1c801a}}, {{cite:3e133d52-001d-4321-807b-26c101075790}}, {{cite:9c843b7c-75a7-42e9-8fcb-a67048e97d3a}}, {{cite:7f6a29cf-573b-427c-bde6-b1e43b9a5c4c}}, {{cite:f946f77b-f5c8-4350-b9ff-45d13fcba6a0}}
+has shown that
+proper taking into account the gauge factor permits the existence of
+leading
+twist T-odd distributions in a QCD framework, associated with
+formal factorization breaking by interactions in the
+initial or final state. In the same works it has been shown that
+in some cases it is possible to recover factorization from a
+practical point of view.
+Systematic efforts
+have been undertaken{{cite:8da93fb8-3e13-4e24-ba4c-824dd7ff22a2}}, {{cite:e4fd10fd-6fd9-490c-a4c8-b09e226cb460}}
+for rewriting factorization rules for processes where partonic
+distributions depend on moderate values of the transverse momentum and
+the gauge factor is assumed to play a role.
+Several models and studies
+have been published on T-odd
+distributions{{cite:2e2cff91-793e-4512-b359-199b86c3877f}}, {{cite:8b3c9528-ed69-4548-ba4d-96847423d06e}}, {{cite:7dd2130f-40c3-4a6b-b1b6-85aad2be609c}}, {{cite:e7f54f9f-cebb-46fb-a838-75dfe53b930c}}, {{cite:14648f8c-1eb6-42ed-9218-914a9315bf27}}, {{cite:9088cb35-1576-4f5c-b178-0f640a0bcad1}}, {{cite:b7253f55-8d35-45b0-9a50-5d35cd38646d}}, {{cite:0d1a5c69-80b2-4d60-bffe-a6fff7bed7e3}}, {{cite:9b65588e-055b-41d7-84ed-72275542bf5b}}, {{cite:90a405db-f4c2-4194-9c50-fcfd890d39c8}}, {{cite:c48f5e45-d71e-4602-8a9e-6de60b6438ea}},
+together with phenomenological
+parameterizations of the Sivers
+function{{cite:52babf2c-9fce-469a-8190-f34fea8ae7d0}}, {{cite:7c2c6e0e-a294-45b7-a0f7-d2447e895d67}}, {{cite:72820aed-6789-44bf-8b3b-cd1bf697df31}}, {{cite:7d994cae-4ebd-4b1a-8928-ec5c22143792}}
+and of the Boer-Mulders-Tangerman function{{cite:d277bfda-cee3-42e0-ac7c-376747e489c1}}, {{cite:ea10930e-c266-4457-9742-b1a225c3636e}}.
+So, we may say that T-odd distributions are an accepted reality,
+although we have no data yet about their behavior at asymptotic energies.
+This creates the problem of the coexistence of factorization breaking
+and factorization, i.e. at which
+extent it is possible to reconcile the interpretation of observable effects
+in terms of factorization breaking interactions with
+the safety of the extremely simple and useful
+factorization/universality scheme for classifying phenomenology.
+Also, it raises questions{{cite:4bcd1517-5d1d-4096-b75d-55bb7c7b8f7a}}, {{cite:3e133d52-001d-4321-807b-26c101075790}}
+on the probabilistic interpretation
+of the measured distributions.
+Most of the above quoted models assume, more or less
+explicitly, that
+the factorization breaking effects are there but small
+enough not to overthrow the underlying parton model picture.
+The analysis of {{cite:7ffb1e69-dbd8-4f32-870e-4442f82f66ab}}
+and the observations by {{cite:cdfc4f89-c37a-4440-aabf-5e5345fb6e33}}
+suggest that this point is still to be clarified,
+especially in hadron-hadron single spin asymmetries.
+Without considering a model in detail, we show here that
+it is possible to restore an approximate factorization scheme
+involving
+the presence of nonzero T-odd distribution functions,
+if factorization breaking interactions satisfy certain
+restrictive conditions.
+The central object of any distribution function calculation
+is the imaginary part of an amplitude FORMULA  that
+describes the formation of a quark/hole pair at a spacetime
+point 1, and the propagation of the hole up to the point
+2 where the hole is filled by the quark again.
+A value of the longitudinal fraction FORMULA  is associated with
+this quark hole. By definition FORMULA  FORMULA  FORMULA .
+In absence of factorization breaking interactions,
+this is true also in local sense: the quark hole conserves
+its initial longitudinal fraction along all the path from 1 to 2.
+Factorization breaking interactions spoil this property.
+In any precise model treatment of rescattering,
+one includes explicitly degrees of freedom that
+exchange FORMULA  amounts of momentum/energy with the quark
+hole (see e.g. the calculations in ref.{{cite:e4fd10fd-6fd9-490c-a4c8-b09e226cb460}}), and
+consequently the wavefunction describing the quark hole
+contains plane wave components associated to values FORMULA 
+FORMULA  FORMULA . A way to quantify the effectiveness of rescattering
+is to look at the size of the difference FORMULA .
+Our starting point is the idea that a rescattering mechanism
+produces a finite but FORMULA  violation of FORMULA conservation.
+To formalize this, in section IV we introduce
+the FORMULA frequency spectrum
+FORMULA  of the rescattering operator
+and require a set of properties for it. Qualitatively, we may
+write since now that we require FORMULA  to
+consist of a regular and narrow peak at FORMULA  FORMULA  FORMULA ,
+with finite width FORMULA  FORMULA  1.
+In addition, we require FORMULA  to respect
+causality (see section IV for details).
+The FORMULA  parameter is supposed to depend slowly
+on FORMULA  and on FORMULA 
+(FORMULA  is the quark transverse momentum), and it expresses
+the magnitude of FORMULA nonconservation in
+rescattering: FORMULA  FORMULA  FORMULA .
+In the limit where FORMULA  FORMULA  0, rescattering
+does not affect the quark longitudinal fraction, and factorization
+is fully respected.
+That the frequency spectrum is large for FORMULA  FORMULA  FORMULA , and small
+when FORMULA  and FORMULA  are very different, is suggested
+by the fact that at a certain extent factorization
+works empirically.
+The assumption that the peak of FORMULA  at FORMULA  FORMULA  FORMULA 
+is regular is possibly not justified for
+individual perturbative diagrams, but becomes more reasonable when
+we consider resummed sets of diagrams,
+or approximations where
+some degrees of freedom have been integrated over,
+or diagrams that are regularized
+via cutoffs, form factors, and so on.
+Clearly, the chosen values for model parameters may critically
+influence the size of the relevant region of the frequency
+spectrum. As above written, here we suppose that this
+size FORMULA  is small.
+If the rescattering operator frequency spectrum satisfies the
+requested properties,
+on the ground of simple arguments
+we show that
+it is possible to write a transverse momentum dependent
+quark distribution in the form
+FORMULA  FORMULA  FORMULA  FORMULA  FORMULA , where FORMULA  may be
+calculated
+in complete absence of factorization breaking terms, and FORMULA 
+is a T-odd correction.
+This restores approximate universality for the T-even term: for
+values of FORMULA  up to 0.3 it may be rather difficult to
+detect deviations from the FORMULA  behavior. This also agrees
+with the
+known complete absence of screening effects in hadron-nucleus
+Drell-Yan (see {{cite:9fbcf109-80fa-4926-87c5-08d261c7d9b5}} for a review of the related experiments).
+On the
+contrary, the T-odd correction term is potentially
+process-dependent unless one is able to demonstrate that
+FORMULA  has universal features. An effort in this
+direction has been undertaken
+elsewhere{{cite:c48f5e45-d71e-4602-8a9e-6de60b6438ea}} by the author of the present work,
+but the arguments presented here are
+independent from the analysis in {{cite:c48f5e45-d71e-4602-8a9e-6de60b6438ea}} and so we do not put
+constraints on FORMULA  in the following.
+As a last remark, the enlarged-delta approximation{{cite:b3428657-ffba-4fc4-b2fa-39ccc4686dc1}}
+used in the following was developed to quickly approximate interactions
+between a pointlike particle and a composite system coexisting at
+the same time.
+Although it is probably possible to
+re-examine it, and to extend its validity to the case where the interacting
+particles exist at different times (the case of lepton-hadron SIDIS,
+and interactions between initial and final hadronic systems in
+hadron-hadron SIDIS), the present analysis is
+limited to the case of Drell-Yan and hadron-hadron initial state
+interactions.
+
+Some general definitions and notations
+We work, as far as possible, in the traditional
+picture of a distribution
+function, where a quark/hole pair is formed in a proton state
+FORMULA  at a spacetime point “1” FORMULA  FORMULA ,
+and the hole propagates up to a point “2” FORMULA 
+FORMULA , where
+the quark is restored with the same momentum FORMULA 
+it had in the origin.
+The imaginary part of this amplitude gives, by suitable Dirac
+projections,
+all the distribution functions we need.
+The quark/hole longitudinal fraction FORMULA  is defined by FORMULA  FORMULA  FORMULA ,
+where FORMULA  and FORMULA  are the large light-cone momentum components
+of the parent proton and of the quark.
+The infinite momentum limit FORMULA  FORMULA  FORMULA  selects
+leading twist contributions.
+Not to work with
+singularities, we introduce the scaled longitudinal variable FORMULA :
+FORMULA 
+and a distribution function may be written as
+FORMULA 
+The range of useful values of FORMULA  remains
+finite FORMULA  FORMULA  when FORMULA  FORMULA  FORMULA .
+So in this limit
+the function FORMULA  does
+not need to be singular in the origin to produce a nonzero FORMULA .
+The coordinate FORMULA  plays no role in the following and
+is not explicitly reported anymore.
+
+Enlarged FORMULA  function
+We adapt here a technique from refs. {{cite:b3428657-ffba-4fc4-b2fa-39ccc4686dc1}} and {{cite:32f2e62e-44bb-4f6e-b99d-6a8f030b73a0}}
+to roughly but quickly approximate the resummed effect of rescattering.
+Rescattering obliges us
+to include nonlocality with respect to FORMULA , involving
+integrals of the kind FORMULA  where
+the kernel FORMULA  becomes FORMULA  in the limit of
+respected factorization. In this work we consider kernels that
+allow for a FORMULA  FORMULA nonlocality: FORMULA  FORMULA 
+FORMULA  FORMULA  1.
+Given a small nonzero parameter FORMULA  FORMULA  1,
+we define an “FORMULA -enlarged FORMULA function”
+FORMULA  such as to satisfy:
+(i) FORMULA  FORMULA  FORMULA  within uncertainty
+FORMULA ,
+(ii) FORMULA  FORMULA  1.
+To define FORMULA 
+in the limited FORMULA range FORMULA , (ii) is better modified
+into:
+(ii b) FORMULA  FORMULA 
+FORMULA 
+FORMULA  1, with FORMULA  FORMULA  1. This property is valid only
+for FORMULA  FORMULA  FORMULA  and FORMULA  FORMULA  FORMULA , so values
+of FORMULA  near 0 and 1 will not be considered in this work.
+Such functions are
+normally used to define the ordinary FORMULA 
+function in the
+FORMULA  FORMULA  0 limit.
+Several functional choices for FORMULA 
+are possible, the most useful for us is (for FORMULA  FORMULA  0, else
+FORMULA  FORMULA  FORMULA ):
+FORMULA 
+FORMULA 
+Causality implies the substitution
+FORMULA 
+that corresponds, in its Fourier transform, to
+FORMULA 
+Since all the relations interesting us contain a function
+FORMULA  related with causality,
+FORMULA  actually means FORMULA ,
+i.e. one pole only is encircled in the complex plane integrations.
+We are especially interested in the calculation of integrals
+of the form FORMULA .
+For FORMULA  FORMULA  1, and FORMULA  far from its kinematic
+limits 0 and 1 (FORMULA  FORMULA  FORMULA  and FORMULA  FORMULA  FORMULA )
+such integrals
+may be assumed to be dominated by the FORMULA  pole
+FORMULA  FORMULA  FORMULA .
+More precisely, we map
+the FORMULA  FORMULA range onto the FORMULA  FORMULA range
+by the transformation
+FORMULA 
+Since FORMULA  FORMULA  FORMULA , and
+for FORMULA  near the complex point FORMULA  we have
+FORMULA  FORMULA 
+FORMULA 
+(where FORMULA  FORMULA  FORMULA )
+we have
+FORMULA 
+If the integral
+FORMULA  is dominated by the
+FORMULA  FORMULA  FORMULA  singularity we have:
+FORMULA 
+
+Insertion of factorization breaking interactions
+Let us define
+FORMULA 
+FORMULA 
+Of the previous two equations, the former defines a parton-model
+leading twist quark distribution, the latter includes the effect of
+a rescattering operator FORMULA , where a parameter
+FORMULA  quantifying the strength of FORMULA  is explicitly
+reported. For FORMULA  FORMULA  0,
+FORMULA  reduces to unity, and FORMULA  to the parton
+model definition.
+We assume that FORMULA  is scalar, only to simplify the following
+relations (else, a double sum is present, see the end of this
+section). We introduce the frequency spectrum FORMULA :
+FORMULA 
+For FORMULA 
+we assume the following properties:
+1) Although FORMULA  is not a delta function,
+it consists of a peak at FORMULA  FORMULA  0.
+2) This peak is regular on the real axis.
+3) The width FORMULA  of the peak is small:
+FORMULA  FORMULA  1.
+4) FORMULA  is negligible for FORMULA  FORMULA  FORMULA .
+5) For FORMULA  FORMULA  0, FORMULA  FORMULA 
+FORMULA .
+6) The shape of this frequency spectrum is causality-modified,
+so that FORMULA  contains the factor FORMULA . In other words,
+FORMULA  is not an ordinary function but a distribution,
+associated with given integration rules.
+The previous hypotheses allow one to approximate FORMULA 
+the following way:
+FORMULA 
+Now we may write
+FORMULA 
+Applying the approximation eq.REF  we get
+FORMULA 
+If one wants to be more precise and consider the non-scalar
+operator nature of FORMULA , one may introduce explicitly
+the matrix sum
+FORMULA ,
+and apply the previous
+considerations to each of the terms of the sum.
+
+Detection of the finite imaginary part of the amplitude pole
+as a T-odd distribution
+For making the above imaginary shift observable in the form of
+a T-odd FORMULA dependent distribution function,
+factorization breaking interactions
+must also produce nonzero interference between orbital states differing
+by one unit.
+So, we apply the considerations of the previous subsection to
+the impact parameter dependent distribution FORMULA .
+As a reference example, we consider the Sivers distribution.
+A Sivers contribution in agreement with the Trento definition{{cite:57e14e97-164e-455c-86fd-c5092432d1ff}}
+may be introduced in the unpolarized quark distribution of a
+transversely polarized proton as
+FORMULA 
+where we have assumed that the proton is fully polarized along the
+FORMULA  axis.
+We may Fourier-transform this equation with respect
+to FORMULA , for FORMULA  FORMULA  0, and write the result in the form
+FORMULA 
+where FORMULA  is the Fourier transform of FORMULA  with respect to
+FORMULA , and all Q-functions are real and
+FORMULA even.
+If we apply the above eq.REF  to the impact parameter
+dependent distribution, and explicitly separate the FORMULA even and
+FORMULA odd parts of FORMULA :
+FORMULA 
+FORMULA 
+it is evident that a part of the frequency spectrum of the
+interaction operator contributes to the
+Sivers term in eq.REF .
+
+Conclusions
+In this work, we have considered the action of a set of
+factorization breaking interactions, whose frequency spectrum
+is regular and peaked near the condition of conserved FORMULA .
+We required the width of this peak to be small:
+FORMULA  FORMULA  FORMULA  FORMULA  1.
+We have shown that for such interactions it is possible
+to retain the factorization scheme, and
+write the result of the calculation of a distribution function
+as a series expansion with
+respect to FORMULA .
+The zeroth-order term is the T-even and universal distribution
+function FORMULA  corresponding to the
+complete absence of initial state
+interactions. T-even corrections to FORMULA  appear
+at second order in FORMULA .
+The first order correction is a T-odd distribution
+function, detectable in angular even-odd interference terms.
+It cannot be stated to be universal, at this level of analysis.

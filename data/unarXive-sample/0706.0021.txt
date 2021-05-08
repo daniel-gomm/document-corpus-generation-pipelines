@@ -1,0 +1,339 @@
+
+Quantum Fields with Noncommutative Target Spaces
+A. P. BalachandranFORMULA , A. R. QueirozFORMULA , A. M. MarquesFORMULA  and P. Teotonio-Sobrinho FORMULA
+FORMULA Department of Physics, Syracuse University,
+Syracuse, NY, 13244-1130, USA.
+FORMULA Centro Internacional de Física da Matéria Condensada,
+Universidade de Brasília,
+C.P. 04667, Brasília, DF, Brazil.
+FORMULA Instituto de Física, Universidade de São Paulo, C.P. 66318, 05315-970,
+São Paulo, SP, Brazil.
+E-mail: bal@physics.syr.edu, amilcar@fma.if.usp.br, amarques@fma.if.usp.br, teotonio@fma.if.usp.br
+SU-4252-851
+Quantum field theories (QFT's) on noncommutative spacetimes are currently under intensive study. Usually such theories have world sheet noncommutativity. In the present work, instead, we study QFT's with commutative world sheet and noncommutative target space. Such noncommutativity can be interpreted in terms of twisted statistics and is related to earlier work of Oeckl {{cite:3ea84b85-816b-45f4-90b3-657a0971b58e}}, and others {{cite:b7f81069-c2a3-4f7c-ae9f-fd03d7af0646}}, {{cite:26564ba2-bef8-4d87-8b10-8d41622dded2}}, {{cite:cb9c58a0-f558-49fe-9a10-f9484caf0940}}, {{cite:cd39c94a-3c8a-4d3c-b167-e5d73db5a113}}, {{cite:2f772700-1b7c-4919-8c6e-fa0e75b8e5f3}}, {{cite:dd13d70a-a2b8-475b-a36d-7064c0f188c1}}, {{cite:48bb81c9-629e-49d3-aa80-93d2bcc8f32a}}. The twisted spectra of their free Hamiltonians has been found earlier by Carmona et al {{cite:b9226e81-040d-43f2-a904-0e5cd211bc9a}}, {{cite:d3ff596c-ca22-499a-83a2-060aeb726aab}}. We review their derivation and then compute the partition function of one such typical theory. It leads to a deformed black body spectrum, which is analysed in detail. The difference between the usual and the deformed black body spectrum appears in the region of high frequencies. Therefore we expect that the deformed black body radiation may potentially be used to compute a GZK cut-off which will depend on the noncommutative parameter FORMULA .
+Noncommutative geometry, Conformal Field Theory, Noncommutative Target Space, GZK Cut-off
+Introduction
+Spacetime noncommutativity is suggested by considerations based on quantum gravity {{cite:3a3302a1-5c22-475c-8d11-c35f9746592f}} and developments in string theory {{cite:db4fd0e4-06cb-4b22-ace6-4e8e58b1047e}}, {{cite:a5a65db7-26c0-46be-a0d3-43120469fda1}}, {{cite:0f9f5734-4b68-4c8d-9ed9-28ce8d53d1d5}}, {{cite:b92d1e63-4251-4587-b41a-1be82d136f8a}}, {{cite:a2f53058-a465-489e-838c-4d4dad6b3277}}. Quantum field theories (qft's) on such spacetimes have been developed first Doplicher et al. {{cite:f69e6510-df4a-4895-8c1d-ece47333215e}}, and Oeckl {{cite:3ea84b85-816b-45f4-90b3-657a0971b58e}}. Studies of spacetime symmetries of such models {{cite:a52e48b0-aae2-4cc9-bd5f-6e943553501f}}, {{cite:6522f115-9344-4fcd-a712-ff25ac6a541e}} have also led to some insight into their properties, such as Pauli principle violation {{cite:b7f81069-c2a3-4f7c-ae9f-fd03d7af0646}} and the absence of UV-IR mixing {{cite:26564ba2-bef8-4d87-8b10-8d41622dded2}}. The earlier work of Oeckl {{cite:60496edb-ef35-4bc8-85b9-bf49669d34f8}} using the technology of Hopf algebras have much bearing on such topics and anticipated crucial results. But it is only recently that general attention has focused on the ideas underlying these results.
+In order to fully explore the consequences of these results, phenomenological models based on such noncommutative framework are useful. In this regard it would be highly desirable to measure at least a definitive signature of the fact that physics at a scale close to the Planck scale takes place in a noncommutative geometry. One usually expects that signatures of noncommutativity will appear in experiments involving cosmic microwave background (CMB), ultra-high-energy cosmic rays, or other high-energy sources such as those of neutrinos. It is well-known that the CMB radiation shows a black body spectrum with great accuracy, at least for low to medium frequencies. Still we may conjecture that as the measurements become more accurate, deviations from the black body spectrum may be found, particularly in high frequency regions, where data are still not so accurate. Furthermore, the distribution of photons play a key role on the derivation of the GZK cut-off {{cite:6f193afc-ce52-43e4-81a4-3fa7745f7c9e}}. Upto now estimates of the GZK cut-off are obtained by considering a black body distribution. Deviations from this cut-off may thus provide us signals of noncommutativity.
+These facts convince us that any deviation from the usual free massless boson theory may have some influence on the modeling of these experimental facts. One possible source of such deviation is the deformation of the target space of a free massless boson theory. For instance, we may consider a theory with a noncommutative plane as target space. Then a natural question one may raise is how the radiation spectrum is modified by this deformation of the target-space of the free massless boson theory.
+We present here a free massless boson theory with commutative base-space and noncommutative target-space. The first results with bearing on such models can be found in the work of Oeckl {{cite:3ea84b85-816b-45f4-90b3-657a0971b58e}}, and can be interpreted in terms of twisted statistics. The idea of deformation of the target space has also been extensively developed in the workWe thank Prof. J. Gamboa and Prof. J. Cortes for calling our attention to their interesting earlier work. of Carmona et al {{cite:b9226e81-040d-43f2-a904-0e5cd211bc9a}}, {{cite:d3ff596c-ca22-499a-83a2-060aeb726aab}}. These works use the earlier work on quantum mechanics with noncommutative target spaces by Nair and Polychronakos {{cite:a94a0219-d628-46ac-9d7c-4855d578b79e}}. Their physical consequences have also been explored by the same group in {{cite:71d27535-7255-4826-9324-55d8806ebeac}}, {{cite:2ba1163d-e3ad-4015-9c9f-0b4bb484e73e}}, {{cite:13675bb6-f0ef-47e3-9aec-9b8c433a8804}}, {{cite:33b84137-75cc-4121-8f76-b8b42337b780}}, {{cite:d2d18c38-d02d-4db2-906c-1eb02a4e9460}}, {{cite:6395b117-4d55-4974-99b3-d64436d313a4}}. They call the fields with noncommutative target spaces as noncommutative fields. Subsequently Balachandran et al {{cite:b7f81069-c2a3-4f7c-ae9f-fd03d7af0646}}, {{cite:26564ba2-bef8-4d87-8b10-8d41622dded2}}, {{cite:cb9c58a0-f558-49fe-9a10-f9484caf0940}}, {{cite:cd39c94a-3c8a-4d3c-b167-e5d73db5a113}}, {{cite:f550487e-4a70-4c88-8509-38cef1835cdf}} developed and extended the ideas of Oeckl, with emphasis on the link between twisted Poincaré invariance and twisted statistics. Note that it can be argued that spacetime and target space noncommutativity are linked to each other by symmetry principles.
+Our treatment of deformed conformal symmetry in section 2.3 is new. Also unlike Carmona et al, we consider nonconstant deformation parameters and discuss the deformed black body radiation spectrum in detail. This study can acquire significance from the point of view of of phenomenology.
+Sections 2 and 3 contain many results already obtained by {{cite:b9226e81-040d-43f2-a904-0e5cd211bc9a}}, {{cite:d3ff596c-ca22-499a-83a2-060aeb726aab}}, although perhaps our derivation of their results is slighty different. They are included here for completeness.
+The present work is organised as follows. In section 2, we construct a free massless boson theory with noncommutative FORMULA , hereafter referred to as the deformed theory, for the case where the base space is a FORMULA -d space given by the cylinder FORMULA . After constructing the Hamiltonian formulation of this theory and quantizing it, we calculate 2-point correlation functions and also see how the conformal generators are modified by the introduction of noncommutativity. The results obtained in this section are, then, generalised to a more realistic scenario in section 3. In this section, we show the same theory, but now with the FORMULA -d base space given by FORMULA . Then, using this FORMULA -d theory, we study the radiation law for the deformed theory and compare it with the usual commutative theory, i.e., the black body radiation. Concluding remarks are section 5.
+
+Deformed FORMULA -d Theory
+In this section we construct a deformed version of a FORMULA -d theory. For that we start with a target space FORMULA  as
+a group manifold. Then we use a twisting procedure on the group FORMULA , so that it becomes the
+noncommutative plane.
+The phase space FORMULA  of a single particle in FORMULA  has a natural group structure. It is the semi-direct product of FORMULA  with FORMULA . The generators of its Lie algebra can be taken to be coordinates FORMULA , and momenta FORMULA . The algebra generated by FORMULA  and FORMULA  are given by
+FORMULA 
+Functions on FORMULA  are thus commutative and FORMULA  acts as derivative on these functions.
+We now twist (or deform) the generators of the above algebra into FORMULA  and thus obtain a new algebra.
+The algebra of derivatives are not deformed, but the function algebra is.
+The twisted algebra reads {{cite:89882a8b-c629-485f-b1c4-af1106b0ac7a}}, {{cite:a94a0219-d628-46ac-9d7c-4855d578b79e}}
+FORMULA 
+The so-called non-commutativity parameter FORMULA  is as usual taken
+as a constant for the present.
+We can relate the hatted generators (noncommutative ones) to the usual generators by the deformation mapThe analogue of the map FORMULA  first appeared in the works of Grosse {{cite:c8fb4bc2-b69f-44e1-99dc-0dda80368133}}, Zamolodchikov and Zamolodchikov {{cite:4bea9f7e-4313-42c1-b6b4-4671de12537e}} and Faddeev {{cite:c850a968-31fd-43f9-a182-72725c41473d}}. It is sometimes called a dressing transformation.
+FORMULA 
+In what follows, we will generalize the above deformation map to the case of a scalar field theory.
+We start with a free real massless bosonic field. Its base space is a cylinder with
+circumference FORMULA  and its target space is FORMULA , i.e.,
+FORMULA 
+The field components will be denoted
+FORMULA  where FORMULA . The compactification of the space
+coordinate makes each field component periodic in the variable FORMULA , i.e.,
+FORMULA 
+The field components FORMULA  may be written as a Fourier expansion
+FORMULA 
+where the Fourier components are
+FORMULA 
+The Lagrangian for the free field is
+FORMULA 
+where there is an implicit sum over the target space coordinate index FORMULA .
+In terms of Fourier modes, the above Lagrangian is
+FORMULA 
+It is a standard exercise to check that the theory defined by the Lagrangian
+(REF ) possesses conformal invariance. This is
+verified by showing that the energy-momentum tensor is traceless.
+We can define the momenta conjugate to FORMULA  as
+FORMULA 
+We then have the following commutation relations:
+FORMULA 
+The Hamiltonian for (REF ) is
+FORMULA 
+For FORMULA , it is equivalent to an infinite set of decoupled harmonic
+oscillators with frequencies
+FORMULA 
+The first term in the l.h.s. of equation
+(REF ) is known as the zero mode. We will mostly ignore it in the rest of these notes. It will not affect our conclusions.
+The hermiticity of FORMULA  implies that
+FORMULA 
+and
+FORMULA 
+We now generalize the deformation map (REF ) to the above scalar field theory. We take
+ordinary field theory with target FORMULA  described by canonical
+pairs FORMULA , FORMULA , and then use the map (REF ) so that
+FORMULA 
+In the case where
+FORMULA , with FORMULA  chosen as a constant, the corresponding equal time commutation relations are
+FORMULA 
+These are the relations of {{cite:b9226e81-040d-43f2-a904-0e5cd211bc9a}}, {{cite:d3ff596c-ca22-499a-83a2-060aeb726aab}} in the limit of their FORMULA  becoming zero.
+In what follows, we are going to redefine FORMULA  such that
+FORMULA 
+which is the previous constant FORMULA  times a function of a new
+parameter FORMULA . This new parameter FORMULA  introduces a new distance scale
+in the equal time commutation relations for the fields:
+FORMULA 
+It is important to note that these new commutation relations reduces to
+those in (REF ) in the limit FORMULA .
+We note further the fact that while the new FORMULA  is
+dimensionless, because FORMULA  substitutes the previous FORMULA ,
+the FORMULA  in FORMULA  still has the dimension of FORMULA .
+In more than two dimensions, it is not easy to introduce spacetime dependence in the noncommutative parameter (called also FORMULA ) of the Moyal plane {{cite:704744fb-9318-4538-bec9-7cb4b4b4f32e}}, because of constraints from Jacobi identity. But here we twist the target of fields, so that this problem does not arise.
+The above deformed algebra describes a field with noncommutative plane as target. The degree
+of non-commutativity is regulated by a new parameter FORMULA .
+We can describe the deformed algebra in terms of the Fourier modes
+FORMULA 
+Then the “dressing transformation”
+FORMULA 
+where FORMULA  is the circumference of the base space cylinder FORMULA  and
+FORMULA 
+reproduces the Fourier components of (REF ), () and ():
+FORMULA 
+(Notice that FORMULA .)
+We can write the Hamiltonian in terms of the deformed fields and momenta,
+using equations (REF ), (REF ) and (). Then, the Hamiltonian, without the zero mode term, reads
+FORMULA 
+The Schwinger Representation and the Construction of the Fock Space
+We can construct a Fock space, since the Hamiltonian
+(REF ) can be
+diagonalised using the Schwinger representation of FORMULA .
+It is remarkable that the last term of the Hamiltonian
+in equation (REF ) is proportional to the FORMULA -component of the angular momentum FORMULA . This fact motivates the
+use of the Schwinger representation.
+First, let us rewrite the full Hamiltonian (REF ) as
+FORMULA 
+where
+FORMULA 
+It is important to note that in the limit FORMULA , we have
+FORMULA  and FORMULA . This limit takes the
+Hamiltonian (REF ) to the usual Hamiltonian for the free massless bosons upon a commutative target space.
+Separating the zero mode contribution FORMULA , we have
+FORMULA 
+Therefore, the Hamiltonian may be written as
+FORMULA 
+where
+FORMULA 
+FORMULA 
+and
+FORMULA 
+FORMULA  alone is the Hamiltonian of a harmonic oscillator with frequency
+FORMULA , which can be easily diagonalised if we note that it can be
+rewritten as
+FORMULA 
+This is the traditional form of the harmonic oscillator Hamiltonian, where
+FORMULA 
+We may now define annihilation and creation
+operators. For FORMULA :
+FORMULA 
+where
+FORMULA 
+and, as usual,
+FORMULA 
+It is now easy to check that
+FORMULA 
+and that if we make FORMULA , we have FORMULA 
+and FORMULA  and in this limit FORMULA  and
+FORMULA  reduce to their usual (commutative space-time)
+version.
+Now, in terms of these annihilation and creation
+operators the Hamiltonian becomes
+FORMULA 
+which, using some algebra, can be written as (the FORMULA  symbols stand for the usual normal ordering of operators)
+FORMULA 
+Accordingly, for the angular momentum term we get
+FORMULA 
+so that we can finally write the complete Hamiltonian as
+FORMULA 
+The appearance of the angular momentum term may be seen as a signature of the well-known relation between noncommutative plane and a plane embedded in a magnetic field perpendicular to it.
+Now we define new annihilation and creation operators
+FORMULA 
+such that
+FORMULA 
+Using equations (REF ) and (REF ), we can check that the field
+components can be written as
+FORMULA 
+In terms of these FORMULA 's and FORMULA 's the Hamiltonian reads
+FORMULA 
+where
+FORMULA 
+Notice that an important effect of introducing noncommutativity is the
+splitting of the energy levels of each individual mode that
+constitutes the whole system. One should recall the resemblance of this effect to the well-known Zeeman effect in a quantum system in the presence of a magnetic field.
+Time evolution of the FORMULA 's and FORMULA 's is given by
+FORMULA 
+FORMULA 
+which together with equation (REF ) and () gives, (omitting zero modes),
+FORMULA 
+and
+FORMULA 
+
+Correlation Functions
+Given the new fields (REF ) and (REF )
+we can evaluate the two-point correlation functions, e.g., for
+FORMULA :
+FORMULA 
+Taking the limit FORMULA  of this expression we get
+FORMULA 
+which is exactly what we would get for the two-point correlation function on the commutative plane.
+The same calculation can be performed for FORMULA  with a similar
+result. Furthermore:
+FORMULA 
+
+The Deformed Conformal Generators
+We study in the sequel how the conformal generators are deformed by the deformations introduced by the noncommutativity of the target space.
+The deformed Hamiltonian is written in terms of the hatted operators as
+FORMULA 
+It can be diagonalised if we define the deformed creation and annihilation operators as
+FORMULA 
+Using the commutation relations (REF ), () and (), we obtain the commutation relations
+FORMULA 
+The Hamiltonian in terms of the deformed creation and annihilation operators is given by
+FORMULA 
+where FORMULA . Note that FORMULA  and FORMULA  are not standard oscillators, as one sees from (REF ) and (), and hence nor is FORMULA 
+the frequency of oscillation of the FORMULA  mode.
+The generators of the modified FORMULA  Kac-Moody algebra are
+FORMULA 
+so that
+FORMULA 
+Observe that new terms depending on FORMULA  have appeared in the commutation relations of the FORMULA  Kac-Moody algebra.
+Focusing on the non-zero mode terms of the Hamiltonian (REF ), for the time being, i.e., on
+FORMULA 
+we may rewrite it using the new FORMULA 's and FORMULA 's, so that
+FORMULA 
+The commutation relations () lead to the
+relation
+FORMULA 
+Now we can write the “conformal generators”
+FORMULA 
+where
+FORMULA 
+It should be noted that the generators FORMULA  defined above do not close on a Virasoro-type algebra, i.e., FORMULA  is not proportional to FORMULA  (plus a central term for FORMULA ), because of the FORMULA  term appearing in the RHS of equation ().
+The Hamiltonian (REF ) may finally be written as
+FORMULA 
+
+Deforming the FORMULA -d Theory
+In this section we use the same procedure presented in the previous section for the case when we consider a different base space, say a FORMULA -d base space, while we still consider the same noncommutative target space as the case before, i.e., the noncommutative plane. This case will play a role in the next section, where we will use it to analyse how noncommutative target spaces may influence the black body radiation.
+We start with a massless bosonic scalar field on the target space FORMULA , but now with FORMULA -d base space, such that
+FORMULA 
+Observe that we are still considering compactified spatial coordinates, i.e., FORMULA , all of them with the same radius FORMULA .
+The field components FORMULA  can be written in a Fourier series:
+FORMULA 
+Here we have FORMULA , FORMULA , and the Fourier components are written as
+FORMULA 
+The Lagrangian is given by
+FORMULA 
+The Lagrangian in terms of the Fourier modes of FORMULA  is
+FORMULA 
+The canonical momenta associated with the Fourier modes
+FORMULA  are
+FORMULA 
+Now we consider the noncommutative FORMULA  as target space and follow the same procedure as the one we used in the previous section. Thus, the deformed fields are now
+FORMULA 
+where the FORMULA  parameter has dimension of length square.
+The commutation relation at equal time for the fields introduced above are
+FORMULA 
+We now replace the constant parameter FORMULA  by
+FORMULA 
+where we make the simplifying assumptions FORMULA  in the more general expression FORMULA  for the argument of the exponential, and FORMULA  has dimension FORMULA . The commutation relations (REF ) become now
+FORMULA 
+The Fourier decomposition of the hatted fields FORMULA  are similar to those of the undeformed fields FORMULA  in
+(REF ), i.e.,
+FORMULA 
+Using now
+FORMULA 
+we can write the deformation map for the Fourier modes of the fields as
+FORMULA 
+For the Fourier modes the commutation relations are
+FORMULA 
+and the Hamiltonian reads
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+We can again apply the Schwinger procedure. We use the operators FORMULA 's and
+FORMULA 's with FORMULA , defined similarly to (REF ), so that the Hamiltonian may be written as
+FORMULA 
+with
+FORMULA 
+We observe that the splitting of the energy levels of the oscillators are still present in this case.
+
+Deformed Black Body Radiation
+In this section we analyse the black body radiation related with the quantum field theory presented in the last section. We have shown that there is a splitting of the energy levels, equations (REF ) and (), which necessarily implies a modification of the dispersion relations of the theory. Here we show how these deformed dispersion relations affect the black body radiation.
+Using the Hamiltonian (REF ), we can write the partition function asWe ignore the zero mode. It is not relevant, since it is associated with the overall translation of the system.
+FORMULA 
+(We ignore the zero mode. It is not relevant, being associated with the overall translation of the system.) From this partition function we may consider the energy in a finite volume FORMULA  of the system defined by
+FORMULA 
+Noting that
+FORMULA 
+we obtain
+FORMULA 
+Each of the terms FORMULA  and FORMULA  corresponds to the energy of the oscillators.
+The limit to infinite volume for the system is obtained by considering
+FORMULA 
+with FORMULA , where nowWe adopt the choice FORMULA .
+FORMULA 
+where
+FORMULA 
+In units FORMULA , we have FORMULA  (this FORMULA  is the wave number,
+not an integer), so that we can automatically rewrite the energy density as an integral
+in FORMULA , i.e.,
+FORMULA 
+In the limit FORMULA , FORMULA  and the
+energy density reduces to
+FORMULA 
+with FORMULA  being the Planck distribution, which is such that after integration it
+gives FORMULA .
+We may calculate the expansion of equation (REF ) in powers of
+FORMULA , using the usual normalization:
+FORMULA 
+The first term FORMULA  of the expansion is given by equation
+(REF ). The term of order FORMULA  is zero and the term of order
+FORMULA  is
+FORMULA 
+where
+FORMULA 
+The correction, due to noncommutativity, for the black body
+radiation is not a polynomial in FORMULA .
+So that we may obtain some intuition to help us to better understand the behaviour of the corrections, we present
+some graphs in what follows. These are graphs that are to be compared with the well-known black body radiation graph.
+It is remarkable that the behaviour of the radiation obtained after
+introducing noncommutativity is similar to that of a
+regularisation by the parameters FORMULA  and FORMULA . For
+phenomenological reasons FORMULA  cannot
+be too big, nor can FORMULA  be too small as that would make frequencies increase too fast with FORMULA  (see below).
+FIGURE 
+In the graph of figure REF , we see the radiation curves for a temperature of FORMULA K, both for the usual black body distribution and for its deformed distribution. In the case of the deformed theory, but with FORMULA , we clearly see a divergence in the energy density when the frequency of the radiation is increased. This is because when FORMULA , the oscillator frequencies FORMULA  increase too fast, that is, like FORMULA  as FORMULA . For the (arbitrary) choice FORMULA m, in the figures, we see a deviation of the radiation energy density curve for the deformed theory from the usual black body radiation.
+FIGURE 
+The effects described above are inferred from low frequencies. The effective deviation with respect to the black body radiation is regulated by FORMULA  and FORMULA . One can see the behaviour of such deviations either in low frequencies or in high frequencies in Figure REF . In these figures the temperature is FORMULA K with fixed FORMULA m.
+One can notice that for low frequencies, the effects can made very small by choosing values for the FORMULA  parameter. The solid and dashed curves correspond to the values FORMULA  and FORMULA  respectively.
+On the other hand, for high frequencies one can notice that a modification appears in the radiation. Such a modification is given by a peak in the radiation curve, which we refer to as the secondary peak. We observe in Figure REF  how distinct values of FORMULA  lead to different values for the highest amplitude of the secondary peak.
+The frequency and the highest amplitude of the secondary peak are functions of the parameters. This can be seen in Figure REF . The growth of FORMULA  leads to the decrease of the highest amplitude of the modification, as well as the translation of the secondary peak to low frequencies. This agrees with the fact that when FORMULA  goes to zero, the highest amplitude grows, and the divergence appears.
+One can note also in Figure REF  that as FORMULA  grows, the highest amplitude of the modification grows as well. The value of FORMULA  is also given by the position of the peak of the modification, however such dependence is stronger on FORMULA  than on FORMULA .
+FIGURE 
+
+Conclusion
+This work is based on the deformation of the target space of a field in a quantum field theory by considering the noncommutative plane FORMULA  as target space. It is based on the earlier work of {{cite:d3ff596c-ca22-499a-83a2-060aeb726aab}}, {{cite:b9226e81-040d-43f2-a904-0e5cd211bc9a}}. One of the simplest of the quantum field theories, i.e., the free massless boson field theory was considered in two different cases. In the first case we recalled this theory when the base space is a cylinder FORMULA . In the second case the base space is FORMULA .
+A first consequence of such a deformation is the appearance of a term proportional to a component of angular momentum in the Hamiltonian of the theory. It affects the split of the energy levels. This split deforms the dispersion relations of the theory, which have consequences for the radiation spectrum of this theory. A new feature in our treatment is that besides the noncommutativity parameter FORMULA , we also introduce another parameter, FORMULA , in the model, resulting in the commutation relation (REF ). The radiation
+spectrum depends on both these parameters. In order to understand its
+dependence on these parameters, we expanded the energy density upto second
+order in theta and graphically studied its dependence on the
+parameters. The analysis of these graphs reveals that the deviation of the new radiation spectrum with respect to the black body radiation is stronger in FORMULA  than in FORMULA .
+As an application of the deformed black body spectrum, one may calculate the GZK cut-off. In {{cite:6f193afc-ce52-43e4-81a4-3fa7745f7c9e}}, the GZK cut-off is calculated using the distribution of black body radiation. A follow up of the present work is to evaluate a new GZK cut-off using the deformed black body distribution obtained in this work.
+
+Acknowledgments
+The authors thank Prof. R. Abramo for pointing out that the deformed black body radiation may be relevant for the GZK cut-off. The authors also thank Prof. Y. Albuquerque for pointing out the work {{cite:6f193afc-ce52-43e4-81a4-3fa7745f7c9e}}. We also thank Prof. J. Gamboa and Prof. J. Cortez for calling our attention to {{cite:b9226e81-040d-43f2-a904-0e5cd211bc9a}}, {{cite:d3ff596c-ca22-499a-83a2-060aeb726aab}}, {{cite:71d27535-7255-4826-9324-55d8806ebeac}}, {{cite:2ba1163d-e3ad-4015-9c9f-0b4bb484e73e}}, {{cite:13675bb6-f0ef-47e3-9aec-9b8c433a8804}}, {{cite:33b84137-75cc-4121-8f76-b8b42337b780}}, {{cite:d2d18c38-d02d-4db2-906c-1eb02a4e9460}}, {{cite:6395b117-4d55-4974-99b3-d64436d313a4}}, which already contain
+many of our ideas. We have tried to acknowledge their contributions
+properly in the text. The work of A.P.B. is supported in part by US Department of Energy under grant number DE-FG02-85ER40231.

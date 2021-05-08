@@ -1,0 +1,550 @@
+
+TRANSIENT NN RANDOM WALK ON
+THE LINE
+Endre CsákiResearch supported by the
+Hungarian National Foundation for Scientific Research, Grant No.
+K 61052 and K 67961.
+Alfréd Rényi Institute of
+Mathematics, Hungarian Academy of Sciences, Budapest, P.O.B. 127,
+H-1364, Hungary. E-mail address: csaki@renyi.hu
+Antónia
+FöldesResearch supported by a PSC CUNY Grant, No.
+68030-0037.
+Department of Mathematics, College of Staten
+Island, CUNY, 2800 Victory Blvd., Staten Island, New York 10314,
+U.S.A. E-mail address: foldes@mail.csi.cuny.edu
+Pál Révész FORMULA
+Institut für
+Statistik und Wahrscheinlichkeitstheorie, Technische Universität
+Wien, Wiedner Hauptstrasse 8-10/107 A-1040 Vienna, Austria. E-mail
+address: reveszp@renyi.hu
+Abstract: We prove strong theorems for the
+local time at infinity of a nearest neighbor transient random
+walk. First, laws of the iterated logarithm are given for the
+large values of the local time. Then we investigate the length of
+intervals over which the walk runs through (always from left to
+right) without ever returning.
+AMS 2000 Subject Classification: Primary 60G50;
+Secondary 60F15, 60J55.
+Keywords: transient random walk, local time, strong
+theorems.
+
+Running head: Transient NN random walk.
+
+Introduction
+Let FORMULA  be a Markov chain with
+FORMULA 
+where FORMULA . This sequence
+FORMULA  describes the motion of a particle which starts at zero,
+moves over the nonnegative integers and going away from 0 with a
+larger probability than to the direction of 0. We will be
+interested in the case when FORMULA  goes to zero.
+That is to say 0 has a repelling power which becomes small if the
+particle is far away from 0. We intend to characterize the local
+time of this motion.
+A slightly different but symmetric variation of the same motion
+can be defined as follows.
+Let FORMULA  be a Markov chain
+with
+FORMULA 
+Our results can be rephrased with the obvious modification for
+this walk as well. However to be in line with the existing
+literature we will use the definition in (REF ).
+The properties of this model, often called birth and death chain,
+connections with orthogonal polynomials in particular, has been treated
+extensively in the literature. See e.g. the classical paper by Karlin and
+McGregor {{cite:1d58be9e-4cab-4dcd-a19e-2a4d1928c2cd}}, or more recent papers by Coolen-Schrijner and Van
+Doorn {{cite:14e5a7f1-2f71-404c-b819-2ae0378c0381}} and Dette {{cite:7d403ca0-e032-43f3-ba62-2928ea1aac22}}.
+As it will turn out in this paper, the properties of the
+walk and its local time is very sensitive even for small changes
+in FORMULA -s.
+There is a well-known result in the literature (cf. e.g. Chung
+{{cite:5015607a-ea53-406d-9ecd-9d809ee1e074}}) characterizing those sequences FORMULA  for which FORMULA 
+is transient (resp. recurrent).
+Theorem A: ({{cite:5015607a-ea53-406d-9ecd-9d809ee1e074}}, page 74) Let FORMULA  be a Markov chain
+with transition probabilities given in (REF ).
+Define
+FORMULA 
+Then FORMULA  is transient if and only if
+FORMULA 
+This criteria however does not reveal explicitly what are the
+transient/reccurent type of FORMULA  sequences.
+Lamperti
+{{cite:d936a847-819f-4253-9c69-60e8b453047f}}, {{cite:fcc94587-d2b4-4c9b-b07f-14e4346ffe63}} proved a more general theorem about
+recurrence and transience of real nonnegative processes (not
+necessarily Markov chains). Here we spell out his result in our
+setup only, which easily follows from Theorem A as well.
+Corollary: If for all
+FORMULA  large enough,
+FORMULA 
+then FORMULA  is recurrent. If instead, for some  FORMULA
+FORMULA 
+for FORMULA  large enough, then FORMULA  is transient.
+As we proceed to find the necessary tools for getting results
+about the local time, as a byproduct,
+we will get a much sharper version of this Corollary.
+In this paper we concentrate only on the transient case.
+There are many results in the literature about the limiting behavior of
+FORMULA , depending on the sequence FORMULA  Lamperti {{cite:dbcd127b-49f5-41ce-85b1-0663c0ba71ac}}
+determined the limiting distribution of FORMULA .
+Theorem B: ({{cite:dbcd127b-49f5-41ce-85b1-0663c0ba71ac}})
+If FORMULA , then
+FORMULA 
+In fact, Lamperti {{cite:dbcd127b-49f5-41ce-85b1-0663c0ba71ac}} (see also Rosenkrantz {{cite:73d9f13d-3849-4113-a286-34f39f7a016d}}) proved
+weak convergence of FORMULA  to a Bessel process as well. We
+intend to give further connections (strong invariance, etc.) between FORMULA 
+and Bessel process in a subsequent paper.
+The law of the iterated logarithm for FORMULA  was given by Brézis
+et al. {{cite:3b86bbab-25b4-4d1d-b7bf-31b28ce3ded9}}, Székely {{cite:84b336bb-fffb-4b24-8694-a2d47ebe5e94}}, Gallardo {{cite:0070d751-6ada-4924-95bd-2e40639ce353}}, Voit
+{{cite:333764bd-9dc9-4b7b-8148-ad879b5c8240}}. Their somewhat more general results specialized in
+our setup, reads as follows.
+Theorem C: ({{cite:3b86bbab-25b4-4d1d-b7bf-31b28ce3ded9}}, {{cite:84b336bb-fffb-4b24-8694-a2d47ebe5e94}}, {{cite:0070d751-6ada-4924-95bd-2e40639ce353}},
+{{cite:333764bd-9dc9-4b7b-8148-ad879b5c8240}})
+If FORMULA , then
+FORMULA 
+Voit {{cite:35e8b9e5-bf76-423b-b837-1df4ec514be4}} has proved a law of large numbers for certain
+Markov chains, which we quote in our setup only.
+Theorem D: ({{cite:35e8b9e5-bf76-423b-b837-1df4ec514be4}})
+If FORMULA  for some FORMULA ,
+then
+FORMULA 
+Our main concern in this paper is to study the local time of
+FORMULA , defined by
+FORMULA 
+and
+FORMULA 
+
+Lemmas and Notations
+For FORMULA  defined in (REF ) we get by elementary calculation
+that
+Fact 1.
+FORMULA 
+Introduce the notation
+FORMULA 
+Denote
+FORMULA 
+Lemma 2.1. If FORMULA  then for FORMULA  large enough
+FORMULA 
+where FORMULA  is an absolute constant. Consequently,
+FORMULA 
+
+Proof: Let FORMULA  then from (REF ) for FORMULA  big enough we have
+FORMULA 
+Consequently
+FORMULA 
+and
+FORMULA 
+ FORMULA
+For FORMULA  define
+FORMULA 
+i.e. FORMULA  is the probability that a particle
+starting from FORMULA  hits FORMULA  before FORMULA .
+Lemma 2.2. For  FORMULA
+FORMULA 
+Especially
+FORMULA 
+
+Proof: The proof of this lemma is fairly standard, we
+give it for completeness. Clearly we have
+FORMULA 
+Consequently
+FORMULA 
+and
+FORMULA 
+By iteration we get
+FORMULA 
+Starting with the trivial identity
+FORMULA 
+and adding to it the above equations for FORMULA  we get
+FORMULA 
+i.e.
+FORMULA 
+Hence (REF ) and (REF ) imply
+FORMULA 
+Adding these equations we obtain
+FORMULA 
+Hence we have the lemma.  FORMULA
+Introduce the following notations:
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+Note that
+FORMULA 
+For some FORMULA  fixed, define
+FORMULA 
+and let
+FORMULA 
+Now
+we are interested in the case FORMULA  above. In fact, in the
+future for convenience, when we say that
+FORMULA 
+we actually mean that FORMULA  is defined by (REF ).
+Lemma 2.3.
+Let FORMULA .
+Then
+FORMULA 
+FORMULA 
+For FORMULA  FORMULA  and FORMULA  big enough
+FORMULA 
+If FORMULA ,
+FORMULA 
+FORMULA 
+
+Proof: To prove (REF ), observe that from (REF )
+we have for  FORMULA
+FORMULA 
+Now we give a lower bound for  FORMULA
+FORMULA 
+It is easy to see that the proof of the upper bound goes the same way,
+resulting the same expression as in (REF ) with FORMULA 
+replaced by FORMULA  which combined with (REF ) proves (REF ).
+The proof of (REF ) is similar, and the rest of the lemma
+follows from these two.  FORMULA
+Consequence: If for any  FORMULA
+FORMULA 
+then the Markov chain is recurrent if FORMULA  and transient if
+ FORMULA
+Now we would like to consider the case when FORMULA  is essentially
+FORMULA , which should be understood
+in the same way as it was defined in (REF ). Namely, let
+FORMULA 
+and let
+FORMULA 
+
+Lemma 2.4. In case FORMULA 
+we have
+FORMULA 
+FORMULA 
+
+Proof: Consider the case FORMULA  first. By
+(REF )
+FORMULA 
+Consequently,
+FORMULA 
+where
+FORMULA 
+In the calculation above FORMULA  is a positive constant the value of
+which is not important. In the future we will use FORMULA  or
+FORMULA  for which this remark applies, and their values
+might change from line to line. Using substitution and the
+asymptotic representation of the incomplete Gamma function (see
+e.g. Gradsteyn and Ryzhik {{cite:4b53571b-282f-4b38-a467-88d2ddacbd81}} page 942, formula (8.357))
+FORMULA 
+we
+conclude that as  FORMULA
+FORMULA 
+A similar calculation (which we omit) gives the same lower bound.
+The case of FORMULA  goes along the same lines with obvious
+modifications. On the other hand, the case FORMULA  can be
+worked out similarly, but it is obvious with less precise
+calculations as well.  FORMULA
+Lemma 2.5. In case FORMULA  with
+FORMULA  there exist FORMULA  such that
+FORMULA 
+FORMULA 
+
+Proof: First we give the upper bound. For  FORMULA
+FORMULA 
+Then for
+FORMULA 
+we have
+FORMULA 
+It is easy to see now, that if FORMULA 
+then for an appropriate  FORMULA
+FORMULA 
+On the other hand, if FORMULA  then for an
+appropriate  FORMULA
+FORMULA 
+Then with  FORMULA
+FORMULA 
+The lower bound follows from Lemma 2.1.  FORMULA
+
+Local time
+We intend to study the limit properties of the local
+time FORMULA  in case of transient random walks. To this
+end we also define the number of upcrossings by
+FORMULA 
+FORMULA 
+Lemma 3.1. For  FORMULA
+FORMULA 
+Moreover, the sequence
+FORMULA 
+is a Markov chain and
+FORMULA 
+
+Proof: Clearly we have for  FORMULA
+FORMULA 
+implying (REF ) by (REF ).
+The other statements of the Lemma are obvious.  FORMULA
+Theorem 3.1. If FORMULA , as FORMULA , then
+FORMULA 
+that is to say, FORMULA  and FORMULA 
+have exponential limiting distributions.
+
+The proof is a trivial consequence of Lemma 3.1.
+Theorem 3.2.
+Assume that FORMULA  as FORMULA . Then with probability 1 we
+have
+FORMULA 
+for any FORMULA  if FORMULA  is large enough.
+Moreover,
+FORMULA 
+for any  FORMULA
+
+In case FORMULA  with
+FORMULA  instead of (REF ) and (REF ) we have the much
+sharper
+Theorem 3.3. For FORMULA , FORMULA , we have
+FORMULA 
+and
+FORMULA 
+Especially in case
+FORMULA  FORMULA ,
+being FORMULA , we have
+FORMULA 
+
+Consequences:
+
+If FORMULA 
+then for any  FORMULA
+FORMULA 
+if FORMULA  is large enough
+FORMULA 
+and
+FORMULA 
+
+If  FORMULA
+then
+FORMULA 
+for any FORMULA  and
+FORMULA 
+
+If FORMULA  then
+FORMULA 
+for any FORMULA .
+
+Proof of Theorem 3.2:
+(REF ) follows from Lemma 3.1.
+On the other hand,
+(REF ) also implies that for any  FORMULA
+FORMULA 
+Now to finish our proof we need to apply the zero-one law (in a
+non-independent setup) exactly in the same way as in Doob
+{{cite:8b3070e2-bafd-4258-ba54-7f6ab374a408}} page 103, observing that the conditional probability
+of our tail event given the first FORMULA  steps of our walk is the
+same as its unconditional probability, that is for any  FORMULA
+FORMULA 
+which, in turn, implies (REF ).
+Proof of Theorem 3.3:
+To prove (REF ), we need a few lemmas. Recall the
+definition of the upcrossing in (REF ). For large values of
+the local time and upcrossing we have the following invariance
+principle.
+Lemma 3.2. As  FORMULA
+FORMULA 
+
+Proof: Under the condition FORMULA ,
+FORMULA  has binomial distribution with
+parameters FORMULA . According to Hoeffding inequality,
+FORMULA 
+with some FORMULA , from which as FORMULA ,
+FORMULA 
+Putting FORMULA , we get (REF ) from (REF ).
+Lemma 3.3. Let
+FORMULA 
+and
+FORMULA 
+Then
+FORMULA 
+is a submartingale.
+
+Proof:
+Let FORMULA  be the first hitting time of FORMULA  by FORMULA 
+e.g. FORMULA  Then we have
+FORMULA 
+FORMULA 
+Observe that
+FORMULA 
+where FORMULA  has distribution (REF ) and
+FORMULA  has distribution (REF ). Then
+FORMULA 
+FORMULA 
+hence
+FORMULA 
+from which
+FORMULA 
+which easily implies the lemma.  FORMULA
+Now we prove the upper bound, i.e.
+FORMULA 
+which also implies (REF ) by Lemma 3.2.
+With an easy calculation we get from (REF ) that
+FORMULA 
+Using that FORMULA  is submartingale, from (REF ) we have with
+FORMULA , FORMULA ,
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+It can be seen that the optimal choice for FORMULA  is given by
+FORMULA 
+and we get finally
+FORMULA 
+Hence by Borel-Cantelli lemma for large FORMULA  and FORMULA 
+we have
+FORMULA 
+i.e.
+FORMULA 
+If FORMULA , then (cf. (REF ))
+FORMULA 
+and
+FORMULA 
+If FORMULA , then
+FORMULA 
+and
+FORMULA 
+and if FORMULA , then
+FORMULA 
+Hence for large FORMULA  and FORMULA  we have
+FORMULA 
+with some constant FORMULA  if FORMULA  or FORMULA  and FORMULA  if
+FORMULA . In view of FORMULA ,
+for any FORMULA , one can choose FORMULA  large enough such that
+FORMULA 
+i.e.
+FORMULA 
+Since FORMULA  is arbitrary, (REF ) follows.
+To prove the lower bound (), consider an
+increasing sequence of sites FORMULA  to be determined later.
+Let
+FORMULA 
+the time of the first visit at the site FORMULA  and define
+FORMULA 
+Observe that FORMULA  are independent.
+Following the proof of Lemma 3.1 we can conclude that
+FORMULA 
+Based on (REF ) it is easy to calculate that
+FORMULA 
+Define the sequence FORMULA  by
+FORMULA 
+with some FORMULA  (we intentionally forget about the technicalities
+arising from the fact that
+the sites should be integers).
+It is easy to see that with this choice of  FORMULA
+FORMULA 
+Let
+FORMULA 
+From (REF ) we get that
+FORMULA 
+Applying Borel-Cantelli lemma and then
+letting FORMULA , we get ().  FORMULA
+Our next issue was to investigate how small could be the local
+time of our process. More precisely we wanted to know whether it
+is true that in the transient case there are always infinitely
+many sites with local time equal to 1. In fact we managed to
+prove in some sense much more, and in some sense much less.
+Namely, we prove the following two theorems. Define for  FORMULA
+FORMULA 
+and
+FORMULA 
+Theorem 3.4. Let FORMULA  with FORMULA  and
+FORMULA . Then
+
+with probability 1 there exist infinitely many FORMULA  for which
+FORMULA 
+for each FORMULA .
+
+with probability 1 for any FORMULA  and FORMULA  large enough
+there exists an  FORMULA
+FORMULA 
+such that
+FORMULA 
+
+
+Let
+FORMULA 
+Theorem 3.5. Let FORMULA .
+Then
+
+with probability 1 there exists infinitely many FORMULA  for which
+FORMULA 
+for each FORMULA .
+
+with probability 1
+for each FORMULA  large enough and FORMULA  there exists an FORMULA ,
+FORMULA 
+such that
+FORMULA 
+
+
+Furthermore, we conjecture that for FORMULA , where FORMULA 
+with probability 1 there are always infinitely many sites with
+local time FORMULA  On the other hand, recently James et al.
+{{cite:4b7e9bd8-d2ff-4cab-be87-a779c398e82b}} proved that for FORMULA  with FORMULA 
+with probability 1 there are only finitely many cutpoints, hence
+finitely many points with local time FORMULA  We note that it can be
+seen with a similar argument that this is the case for FORMULA  for all FORMULA  as well.
+Proof of Theorem 3.4: At first we prove the second
+statement. Recall the notation of FORMULA  and observe
+that
+FORMULA 
+Now the proof of the second statement is a trivial consequence of
+Lemma 3.4. For every FORMULA  integer as  FORMULA
+FORMULA 
+
+Proof: Obvious by (REF ).  FORMULA
+The proof of the first statement of the theorem is based on the
+following
+Lemma 3.5. For every FORMULA  integer as  FORMULA
+FORMULA 
+FORMULA 
+
+Proof: (REF ) follows from Lemma
+3.1 and (REF ). In case FORMULA  we have
+FORMULA 
+In case FORMULA  we have
+FORMULA 
+Hence we have the second statement of the lemma.  FORMULA
+Now we turn to the proof of the first
+statement of the theorem. Let
+FORMULA 
+Then by (REF )
+FORMULA 
+and
+FORMULA 
+By (REF ) we have
+FORMULA 
+and
+FORMULA 
+By (REF ) and (REF )
+FORMULA 
+(REF ), (REF ) and the Kochen-Stone Borel–Cantelli lemma
+(see e.g. Spitzer {{cite:ba23c98d-ae16-4308-bc56-17ea6394ad53}}, page 317) imply the first statement
+with positive probability. Now to finish our proof we need to
+apply the zero-one law (again in a non-independent set up) as in
+the proof of Theorem 3.2, observing that for any  FORMULA
+FORMULA 
+ FORMULA
+Proof of Theorem 3.5: The proof goes
+along the same line as the proof of Theorem 3.4. The only point
+which needs a little different approach is the the proof the
+counterpart of Lemma 3.5. Namely, in the proof of this lemma we
+need an upper bound for FORMULA , which is equivalent of
+getting a lower bound for D(R,S). Observe that in Lemma 2.4 we
+have an asymptotic formula for FORMULA  Now to get a lower
+bound for FORMULA  we need a less precise calculation (the
+statement of Theorem 3.5 does not depend on FORMULA  which was
+important in Lemma 2.4). It is enough to observe that
+FORMULA 
+with an
+appropriate choice of FORMULA  and FORMULA  After this observation,
+with some tedious calculation somewhat similar to Lemma 2.4, we
+get that
+FORMULA 
+It is easy to see
+FORMULA 
+if FORMULA  On the other hand, if FORMULA  then it can be seen that
+FORMULA 
+and this is enough to carry through the argument in Lemma 3.5. We
+omit the details.  FORMULA

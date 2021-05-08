@@ -1,0 +1,165 @@
+
+Higher-order Threshold Corrections for Single Top Quark Production
+
+Nikolaos KidonakisPresented at DIS 2007, Munich, Germany,
+April 16-20, 2007
+
+Kennesaw State University, Physics #1202
+1000 Chastain Rd., Kennesaw, GA 30144-5591
+
+I discuss single top quark production at the Tevatron and the LHC.
+The cross section, including soft-gluon threshold corrections through
+NNNLO, is presented for each partonic channel. The higher-order corrections
+provide significant contributions to the single top cross sections at
+both colliders.
+Introduction
+Single top quark production at hadron colliders can proceed through
+three distinct partonic processes: the FORMULA  channel
+(FORMULA  and FORMULA )
+which involves the exchange of a spacelike FORMULA  boson,
+the FORMULA  channel (FORMULA ) which proceeds
+via a timelike FORMULA  boson, and
+associated FORMULA  production (FORMULA ) {{cite:cd45c535-a1da-43d8-b985-f522be922ca7}}.
+The FORMULA  channel processes are numerically the largest at both the
+Tevatron and the LHC. At the Tevatron the FORMULA  channel is second in
+magnitude and FORMULA  production has the smallest cross section. At the
+LHC, FORMULA  production has a much bigger cross section than the FORMULA  channel.
+The cross sections for all these processes receive contributions
+from soft-gluon emission which can be dominant near
+threshold {{cite:5c9d8a3f-1473-46ab-ab28-cef11bf55c62}}, {{cite:5f502769-93f5-4039-90eb-7fc0c75ef3a8}}.
+Threshold resummation organizes these contributions and can be used
+to compute higher-order corrections for many
+processes {{cite:f53cf0f6-2b55-40ec-a1b9-13d1c23106ab}}, {{cite:31ac2183-be75-4b42-b712-9807e534cc7d}}, {{cite:492e23f6-8381-4aa5-91cf-968c9667e1f4}}.
+For the partonic process with momenta FORMULA 
+we define FORMULA , FORMULA , FORMULA 
+and FORMULA . Near threshold, FORMULA  approaches zero
+and the soft-gluon corrections take the form
+FORMULA , where FORMULA  is the top quark mass and
+FORMULA  for the FORMULA -th order corrections.
+We calculate these corrections through next-to-next-to-next-to-leading order
+(NNNLO) in the strong coupling FORMULA  at next-to-leading logarithmic
+(NLL) accuracy at the
+Tevatron {{cite:5c9d8a3f-1473-46ab-ab28-cef11bf55c62}} and the LHC {{cite:5f502769-93f5-4039-90eb-7fc0c75ef3a8}}. This
+requires one-loop calculations in the eikonal approximation.
+The NLO soft-gluon corrections can be written in the form
+FORMULA 
+where FORMULA  is the Born term for each channel and FORMULA  is the
+renormalization scale.
+For the FORMULA  and FORMULA  channels the leading logarithm coefficient is
+FORMULA  while for the FORMULA  channel it is FORMULA ,
+where FORMULA  and FORMULA  with FORMULA  the number of colors.
+The NLL coefficient is
+FORMULA 
+for the FORMULA  channel, where FORMULA  is the
+factorization scale, and similar expressions can be given for the other
+channels. The complete virtual corrections (FORMULA  terms)
+cannot be derived from threshold resummation but one can derive the
+factorization and renormalization scale terms denoted by FORMULA 
+in the above equation {{cite:5c9d8a3f-1473-46ab-ab28-cef11bf55c62}}.
+The NNLO soft-gluon corrections for the FORMULA  and FORMULA  channels are
+FORMULA 
+plus subleading terms {{cite:5c9d8a3f-1473-46ab-ab28-cef11bf55c62}}, where the appropriate expression
+for FORMULA  and FORMULA , FORMULA  for each channel must be used, and where
+FORMULA  is the lowest-order FORMULA  function, with FORMULA 
+the number of light quark flavors.
+A similar expression holds for the FORMULA  channel (by deleting
+FORMULA  above).
+Since this is a NLL calculation, only the leading and NLL terms shown above are
+complete. However we can also calculate exactly terms involving FORMULA  and
+FORMULA  as well as terms with FORMULA  constants in the subleading logarithms.
+Complete expressions and further details are provided in Ref. {{cite:5c9d8a3f-1473-46ab-ab28-cef11bf55c62}}.
+The NNNLO soft-gluon corrections for each channel can be written as
+FORMULA 
+plus subleading terms {{cite:5c9d8a3f-1473-46ab-ab28-cef11bf55c62}}, again with the appropriate expression
+for FORMULA  and FORMULA , FORMULA .
+
+Single top quark production at the Tevatron
+FIGURE 
+We now calculate the contribution of these corrections to the single top
+cross section at the Fermilab Tevatron. The MRST 2004 NNLO parton
+densities {{cite:f476cdeb-c43c-4fae-b969-3893892b4bb1}} are used for the numerical results. We find that the
+threshold corrections are dominant in all partonic channels.
+Figure 1 shows the results for the cross section in the FORMULA  channel.
+In the left-hand plot we show the leading-order (LO) cross section as well
+as the cross sections with the NLO, NNLO, and NNNLO soft-gluon corrections
+included versus the top quark mass FORMULA , with the factorization and
+renormalization scales set equal to FORMULA . On the right-hand plot we
+show the FORMULA  factors, which are the ratios of the higher-order cross sections
+to LO. We see that the corrections in this channel are relatively small.
+Our best estimate for the cross section is calculated after matching to the
+exact NLO cross section {{cite:1243f94f-b478-4280-a592-7f4fe195f4c4}}, i.e. by adding the soft-gluon corrections
+through NNNLO to the exact NLO cross section. Below we give results for
+two choices of the top quark mass, FORMULA  GeV and FORMULA  GeV. We find
+FORMULA  pb
+and
+FORMULA  pb.
+The uncertainty indicated includes the scale dependence and the pdf
+uncertainties.
+Figure 2 shows the results for the cross section and FORMULA  factors
+in the FORMULA  channel. In this channel the corrections are large, providing
+up to 65% enhancement of the leading-order cross section.
+After matching, we find
+FORMULA  pb
+and
+FORMULA  pb.
+The single top cross section at the Tevatron in the FORMULA  channel is
+rather small, even though the FORMULA  factors are large (up to 85% enhancement).
+Our estimate for the cross section is
+FORMULA  pb
+and
+FORMULA  pb.
+For all three channels at the Tevatron the cross section for single anti-top
+production is identical to that shown above for single top production.
+FIGURE 
+Finally, we note that there has been recent evidence for single top quark
+production at the Tevatron {{cite:cc72f93b-d8ed-4be1-a2ea-bdede67bd91e}} with a cross section consistent with
+the above results.
+
+Single top quark production at the LHC
+Next we calculate the threshold corrections for the single top
+cross section at the CERN LHC.
+It turns out that in the FORMULA  channel the threshold corrections are
+not a good approximation of full QCD corrections, hence we only update
+the exact NLO result {{cite:1243f94f-b478-4280-a592-7f4fe195f4c4}}, while in the FORMULA  and FORMULA  channels the
+threshold approximation holds and we provide results including the NNNLO
+soft-gluon corrections. Also at the LHC the cross section for single top
+is different from that for single antitop production in the FORMULA  and
+FORMULA  channels.
+The exact NLO cross section for single top production in the FORMULA  channel
+at the LHC is
+FORMULA  pb
+and
+FORMULA  pb.
+For single antitop production in the FORMULA  channel
+the exact NLO cross section is
+FORMULA  pb
+and
+FORMULA  pb.
+Figure 3 (left) shows results for single top production in the FORMULA  channel
+at the LHC. The contribution from soft gluons is significant (up to
+55% enhancement).
+After matching to the exact NLO cross section {{cite:1243f94f-b478-4280-a592-7f4fe195f4c4}}, we find
+FORMULA  pb
+and
+FORMULA  pb.
+The corresponding results for single antitop production at the LHC in the
+FORMULA  channel are
+FORMULA  pb
+and
+FORMULA  pb.
+Here the soft-gluon corrections are somewhat smaller (less than 20%).
+Figure 3 (right) shows results for single top production at the LHC in
+the FORMULA  channel. This channel has a significant cross section at the LHC.
+Also the soft-gluon corrections are quite large, providing around 60%
+enhancement.
+After matching to the exact NLO cross section {{cite:86f22b7a-8f77-4f1a-9c25-9aadc2586083}}, we find
+FORMULA  pb
+and
+FORMULA  pb.
+The cross section for associated antitop production is identical to
+that for a top quark.
+FIGURE 
+
+Acknowledgements
+This work has been supported by the National Science Foundation under
+Grant No. PHY 0555372.

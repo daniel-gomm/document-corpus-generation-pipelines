@@ -1,0 +1,1294 @@
+
+Multiple Parton Scattering in Nuclei: Quark-quark Scattering
+[label1]Andreas Schäfer,
+[label2]Xin-Nian Wang
+[label3,label4,label1]and Ben-Wei Zhang
+[label1]Institut für Theoretische Physik, Universität
+Regensburg
+D-93040 Regensburg, Germany
+[label2]Nuclear Science Division, MS 70R0319
+Lawrence Berkeley National Laboratory, Berkeley, CA 94720
+[label3]Cyclotron Institute and Physics Department, Texas AFORMULA M
+University
+College Station, Texas 77843-3366
+[label4]Institute of Particle Physics,
+Central China Normal University
+Wuhan 430079, China
+Modifications to quark and antiquark fragmentation functions due to
+quark-quark (antiquark) double scattering in nuclear medium are
+studied systematically up to order  FORMULAFORMULA  in
+deeply inelastic scattering (DIS) off nuclear targets. At the order
+ FORMULAFORMULA , twist-four contributions from quark-quark
+(antiquark) rescattering also exhibit the Landau-Pomeranchuck-Midgal
+(LPM) interference feature similar to gluon bremsstrahlung induced
+by multiple parton scattering. Compared to quark-gluon scattering,
+the modification, which is dominated by FORMULA -channel quark-quark
+(antiquark) scattering, is only smaller by a factor of FORMULA 
+times the ratio of quark and gluon distributions in the medium.
+Such a modification is not negligible for realistic kinematics and finite
+medium size. The
+modifications to quark (antiquark) fragmentation functions from
+quark-antiquark annihilation processes are shown to be determined by
+the antiquark (quark) distribution density in the medium. The
+asymmetry in quark and antiquark distributions in nuclei will
+lead to different modifications of quark and antiquark
+fragmentation functions inside a nucleus, which qualitatively explains
+the experimentally observed flavor dependence of the leading hadron
+suppression in semi-inclusive DIS off nuclear targets. The
+quark-antiquark annihilation processes also mix quark and gluon
+fragmentation functions in the large fractional momentum region,
+leading to a flavor dependence of jet quenching in heavy-ion
+collisions.
+Jet quenching, modified fragmentation, parton energy loss.
+24.85.+p, 12.38.Bx, 13.87.Ce, 13.60.-r
+Introduction
+Multiple parton scattering in a dense medium can be used as a useful
+tool to study properties of both hot and cold nuclear
+matter. The success of such an approach has been demonstrated by the
+discovery of strong jet quenching phenomena in central FORMULA  collisions
+at the Relativistic Heavy-ion Collider
+(RHIC) {{cite:24b9b854-0b6b-491e-99b6-9edc187b0bf8}}, {{cite:1bf1b89d-9eb5-439b-89f2-b4d5e32fab74}}, {{cite:e2e851da-d46f-4077-94e2-5a4b6b206461}} and their
+implications on the formation of a strongly coupled quark-gluon
+plasma at RHIC {{cite:ab8ab20e-df03-4a7e-a37d-e6a34aae37bb}}, {{cite:3e55970f-f56f-4c49-8427-7166f35d80dc}}. However,
+for a convincing phenomenological study of the existing and future
+experimental data, a unified description of all medium effects
+in hard processes involving nuclei, such as electron-nucleus (FORMULA ),
+hadron-nucleus (FORMULA ) and nucleus-nucleus collisions (FORMULA )
+has to be developed {{cite:6ee43082-ad51-401a-819e-6840d896ec14}}, {{cite:6545a6cd-f1c3-4198-93e7-85ea5b62d770}}. This must include the
+physics of transverse momentum broadening {{cite:9ccbb898-2d25-4cbc-8bb2-f432ac726280}}, strong
+nuclear enhancement in DIS {{cite:dc4386b4-10bb-4328-a6ef-80cabf0cf4a2}} and Drell-Yan
+production {{cite:65506db1-8cb5-49c9-ae6f-cfb2b60f1179}}, {{cite:8be30f0c-7bf5-4cb7-b7e7-28e33255c585}}, nuclear
+shadowing {{cite:5686892b-fe2f-4a20-b08a-568340c64672}}, and parton energy loss due to gluon
+radiation induced by multiple scattering {{cite:c1433b97-7018-4c6b-a5d1-6d816de3478c}}, {{cite:2e62857b-66a7-42d6-a1ab-bfaef4bba793}}, {{cite:008036a7-3d54-4548-9583-23343708c0dc}}, {{cite:211b559b-cf66-47a4-b9b2-01d1af97cfbf}}, {{cite:5ab3029f-ca7a-4346-8363-cb27d8b2fefe}}, {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}.
+There exist many different frameworks in the literature to describe
+multiple scattering in a nuclear medium {{cite:61c40e7d-6826-421c-8785-fdba0d13cb38}}, {{cite:16ccc484-6197-41fa-b02e-ccd9ef5e71e7}}, {{cite:513a2410-b205-4165-80e2-a908c2338fcf}}.
+Among them the twist expansion approach is based on the generalized
+factorization in perturbative QCD as initially developed by
+Luo, Qiu and Sterman (LQS) {{cite:6e2ab4e5-14db-4fc5-9c95-35ecbbf93084}}. In the LQS formalism,
+multiple scattering processes generally involve high-twist
+multiple-parton correlations in analogy to the parton distribution
+operators in leading twist processes. Though the corresponding
+higher twist corrections are suppressed by powers of FORMULA , they
+are enhanced at least by a factor of FORMULA  due to multiple
+scattering in a large nucleus. This framework has been applied recently
+to study medium modification of the fragmentation functions as the
+leading parton propagates through the medium {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}.
+Because of the non-Abelian
+Landau-Pomeranchuck-Midgal interference in the gluon bremsstrahlung
+induced by multiple parton scattering in nuclei, the higher-twist
+nuclear modifications to the fragmentation functions are in fact
+enhanced by FORMULA , quadratic in the nuclear size {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}.
+Phenomenological study of parton energy loss and nuclear modification
+of the fragmentation functions in cold nuclear matter {{cite:e17a7ef8-f565-47f9-a60b-6820345136b1}}
+gives a good description of the nuclear modification of the leading
+hadron spectra in semi-inclusive deeply inelastic lepton-nucleus
+scattering observed by the HERMES experiment {{cite:738c5dd4-cb26-4a94-9a97-96a276588dd2}}, {{cite:87d73b9c-a9fb-4244-bdd5-c64fa233d5ec}}.
+The same framework also gives a compelling explanation for the suppression
+of large transverse momentum hadrons discovered at RHIC {{cite:ce0f412a-84d4-4275-aac8-5920f497701e}}.
+The emphasis of recent studies of medium modification of
+fragmentation functions has been on radiative parton energy loss
+induced by multiple scattering with gluons. Such processes indeed
+are dominant relative to multiple scattering with quarks because of
+the abundance of soft gluons in either cold nuclei or hot dense
+matter produced in heavy-ion collisions. Since gluon bremsstrahlung
+induced by scattering with medium gluons is the same for quarks and
+anti-quarks, one also expects the energy loss and fragmentation
+modification to be identical for quarks and anti-quarks. However, in
+a medium with finite baryon density such as cold nuclei and the forward
+region of heavy-ion collisions, the difference between quark and
+anti-quark distributions in the medium should lead to different
+energy loss and modified fragmentation functions for quarks and
+antiquarks through quark-antiquark annihilation processes. To
+study such an asymmetry, one must consider systematically all
+possible quark-quark and quark-antiquark scattering processes, which
+will be the focus of this paper.
+In this study we will calculate the modifications of quark and
+antiquark fragmentation functions (FF) due to quark-quark
+(antiquark) double scattering in a nuclear medium, working within
+the LQS framework for generalized factorization in perturbative QCD.
+For a complete description of nuclear modification of the single
+inclusive hadron spectra, one still have to consider medium
+modification of gluon fragmentation functions in addition to
+modified quark fragmentation function due to quark-gluon scattering
+[18]. The theoretical results presented in this paper will be a
+second step toward a complete description of medium modified
+fragmentation functions. However, one can already find that
+quark-quark (antiquark) double scattering will give different
+corrections to quark and antiquark FF, depending on antiquark and
+quark density of the medium, respectively. This difference between
+modified quark and antiquark FF may shed light on the interesting
+observation by the HERMES experiment {{cite:738c5dd4-cb26-4a94-9a97-96a276588dd2}}, {{cite:87d73b9c-a9fb-4244-bdd5-c64fa233d5ec}}
+of a large difference between nuclear suppression of the leading
+proton and antiproton spectra in semi-inclusive DIS off large
+nuclei. Such a picture of quark-quark (antiquark) scattering can
+provide a competing mechanism for the experimentally observed
+phenomenon in addition to possible absorption of final state hadrons
+inside nuclear matter {{cite:140032a9-7852-4dbb-9965-b331216ec7f7}}, {{cite:c9976c85-d9dc-4106-a2b3-a8997d52bc50}}.
+The paper is organized as follows. In the next section we will
+present the general formalism of our calculation including the
+generalized factorization of twist-4 processes. In Section III we
+will illustrate the procedure of calculating the hard partonic parts of
+quark-quark double scattering in nuclei. In Section IV we will
+discuss the modifications to quark and antiquark fragmentation
+functions due to quark-quark (antiquark) double scattering in nuclei.
+In Section V, we will focus on the flavor dependent part of the
+medium modification to the quark FF's due to quark-antiquark
+annihilation and we will discuss the implications for the flavor
+dependence of the leading hadron spectra in both DIS off a nucleus
+and heavy-ion collisions. We will summarize our work in Section VI.
+In the Appendix , we collect the complete results for the
+hard partonic parts for different cut diagrams of quark-quark (antiquark)
+double rescattering in nuclei. We also provide an alternative
+calculation of the hard parts of the central-cut diagrams
+in Appendix  through elastic quark-quark scattering or
+quark-antiquark annihilation as a cross check.
+
+General formalism
+In order to study quark and antiquark FF's in semi-inclusive
+deeply inelastic lepton-nucleus scattering, we consider the
+following processes,
+FORMULA 
+where FORMULA  and FORMULA  are the four momenta of the incoming and
+outgoing leptons, and FORMULA  is the observed hadron momentum. The
+differential cross section for the semi-inclusive process can be
+expressed as
+FORMULA 
+where FORMULA 
+is the momentum per nucleon in the nucleus,
+FORMULA  the momentum transfer
+carried by the virtual photon,
+FORMULA  the lepton-nucleon center-of-mass energy
+and FORMULA  is the electromagnetic (EM)
+coupling constant. The leptonic tensor is given by
+FORMULA 
+while the semi-inclusive hadronic tensor is defined as,
+FORMULA 
+where FORMULA  runs over all possible final states and
+FORMULA  is the
+hadronic EM current.
+FIGURE 
+Assuming collinear factorization in the parton model, the
+leading-twist contribution to the semi-inclusive cross section can
+be factorized into a product of parton distributions, parton
+fragmentation functions and the partonic cross section. Including
+all leading log radiative corrections, the lowest order contribution
+[FORMULA ] from a single hard FORMULA  scattering,
+as illustrated in Fig. REF , can be written as
+FORMULA 
+where the momentum fraction carried by the hadron is defined as
+FORMULA , FORMULA  is the Bjorken scaling variable,
+FORMULA  and FORMULA  are the factorization scales for the initial
+quark distributions FORMULA  in a nucleus and the
+fragmentation functions in vacuum FORMULA , respectively. The
+renormalized quark fragmentation function FORMULA 
+satisfies the DGLAP QCD evolution equations {{cite:a3e0b91a-0354-47fb-894f-cb6b6a472cd5}}:
+FORMULA 
+where FORMULA  denotes the splitting functions
+of the corresponding radiative processes {{cite:e68ed65e-e4f2-4b2e-9367-025d726a5216}}, {{cite:96c65fea-f775-41f5-acdd-ddb4d4177015}}.
+In DIS off a nuclear target, the propagating quark will experience
+additional scatterings with other partons from the nucleus. The
+rescatterings may induce additional parton (quark or gluon) radiation
+and cause the leading quark to lose energy. Such induced radiation
+will effectively give rise to additional terms in the DGLAP
+evolution equation leading to a modification of the fragmentation
+functions in a medium. These are power-suppressed higher-twist
+corrections and they involve higher-twist parton matrix elements.
+We will only consider those contributions that involve two-parton
+correlations from two different nucleons inside the nucleus. They
+are proportional to the thickness of the nucleus {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:6e2ab4e5-14db-4fc5-9c95-35ecbbf93084}}, {{cite:853e6295-7088-4b7d-93e6-621f02240451}} and
+thus are enhanced by a nuclear factor FORMULA  as compared to
+two-parton correlations in a nucleon. As in previous studies
+{{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}, we will limit our study to such double scattering
+processes in a nuclear medium. These are twist-four processes
+and give leading contributions to the nuclear effects.
+The contributions of higher twist processes or contributions not
+enhanced by the nuclear medium will be neglected for the time being.
+FIGURE 
+When considering double scattering with nuclear enhancement, a very
+important process is quark-gluon double scattering as
+illustrated in Fig. REF . Such processes give the dominant
+contribution to the leading quark energy loss and have been studied
+in detailed in Refs. {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}. The modification to the vacuum
+quark fragmentation function from quark-gluon scattering is,
+FORMULA 
+where the FORMULA function is defined as
+FORMULA 
+for any FORMULA  that is sufficiently smooth at FORMULA  and the twist-four
+quark-gluon correlation function,
+FORMULA 
+has explicit interference included. The matrix element in the virtual
+correction [the term with FORMULA ] is defined as
+FORMULA 
+Since FORMULA  is proportional to gluon distribution
+and independent of the flavor of the leading quark, the suppression of
+the hadron spectrum caused by quark-gluon or antiquark-gluon
+scattering should be proportional to the gluon density of the medium and
+is identical for quark and antiquark fragmentation.
+It was shown in Ref. {{cite:e17a7ef8-f565-47f9-a60b-6820345136b1}}
+that such modification of parton fragmentation functions by quark-gluon
+double scattering and gluon bremsstrahlung in a nuclear medium describes
+very well the recent HERMES data {{cite:738c5dd4-cb26-4a94-9a97-96a276588dd2}} on semi-inclusive
+DIS off nuclear targets.
+FIGURE 
+In this paper, we will consider quark-quark (antiquark) double
+scattering such as the process shown in Fig. REF  and
+its radiative corrections at order
+ FORMULAFORMULA  in Fig. REF .
+The contributions of quark-quark double scattering is proportional to
+the quark density in a nucleon, while the contribution
+of quark-gluon double scattering is proportional to the gluon density in
+a nucleon; and the gluon density is generally larger than the quark
+density in a nucleon at small momentum fraction.
+However, as pointed out in earlier works {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, quark-quark double
+scattering mixes quark and gluon fragmentation functions and therefore
+gives rise to new nuclear effects. The annihilation processes as
+shown in Figs. REF  and REF  will lead to different
+modifications of quark and antiquark fragmentation functions
+in a medium with finite baryon
+density (or valence quarks). Such differences will in turn lead to
+flavor dependence of the nuclear modification of leading
+hadron spectra as observed in HERMES experiment
+{{cite:738c5dd4-cb26-4a94-9a97-96a276588dd2}}, {{cite:87d73b9c-a9fb-4244-bdd5-c64fa233d5ec}}.
+FIGURE 
+Quark-quark double scattering as well as quark-gluon double
+scattering are twist-4 processes. We will apply the same
+generalized factorization procedure for twist-4 processes as developed
+by LQS {{cite:6e2ab4e5-14db-4fc5-9c95-35ecbbf93084}} for semi-inclusive processes in DIS. In general, the
+twist-four contributions can be expressed as the convolution of
+partonic hard parts and two-parton correlation matrix elements. In
+this framework, contributions from double quark-quark scattering
+in any order of FORMULA , e.g., the quark-antiquark annihilation
+process as illustrated in Fig. REF , can be written in the
+following form,
+FORMULA 
+Here we have neglected transverse momenta of all quarks in the hard
+partonic part. Transverse momentum dependent contributions are higher twist
+and are suppressed by FORMULA , Therefore, all
+quarks' momenta are assumed collinear, FORMULA  and FORMULA .
+FORMULA  is the Fourier
+transform of the partonic hard part
+FORMULA  in momentum space,
+FORMULA 
+where, in collinear approximation, the hard partonic
+part FORMULA  [Eq. ()] in the leading
+twist without multiple parton scattering can be factorized
+out of the high-twist hard part FORMULA .
+The momentum fractions FORMULA  and FORMULA  are fixed by FORMULA -functions
+of the on-shell conditions of the final state partons and poles of parton
+propagators in the partonic hard part. The phase factors
+in FORMULA 
+can then be factored out, which
+in turn will be combined with the partonic fields in Eq. (REF )
+to give twist-four partonic matrix elements or two-parton correlations.
+The quark-quark double scattering corrections in Eq. (REF )
+can then be factorized as the convolution of fragmentation functions,
+twist-four partonic matrix elements and the partonic hard scattering
+cross sections. For scatterings (versus the annihilation) with
+quarks (antiquarks), a summation over the flavor of the secondary
+quarks (antiquarks) should be included in two-quark correlation
+matrix elements and both FORMULA , FORMULA  channels and their interferences
+should be considered for scattering of identical quarks in the hard
+partonic parts.
+After factorization, we then define the twist-four correction to the
+leading twist quark fragmentation function in the same form [Eq. (REF )],
+FORMULA 
+
+Quark-quark double scattering processes
+In this section we will discuss the calculation of the hard part of
+quark-quark double scattering in detail.
+The lowest order process of quark-quark (antiquark)
+double scattering in nuclei is
+quark-antiquark annihilation (or quark-gluon conversion) as shown in
+Fig. REF . The hard partonic parts from the three cut
+diagrams in this figure are {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}:
+FORMULA 
+The main focus of this paper is about contributions from the
+next-leading order corrections to the above lowest order process.
+There is a total of 12 diagrams for real corrections at one-loop level as
+illustrated in Fig. REF  to Fig. REF  in the Appendix ,
+each having up to three different cuts. In this section, we
+demonstrate the calculation of the hard parts from the quark-antiquark
+annihilation in Fig. REF  in detail as an example. We will
+list the complete results of all diagrams in Appendix A.
+One can write down the hard partonic part of the central-cut diagram
+of Fig. REF  (Fig. REF  in Appendix )
+according to the conventional Feynman rule,
+FORMULA 
+where FORMULA  is a Dirac FORMULA -function with only the
+positive solution in its functional variable,
+FORMULA 
+is the polarization tensor of a gluon propagator in an axial gauge
+(FORMULA ) with FORMULA , FORMULA  and
+FORMULA  are the 4-momenta carried by the two final
+gluons respectively. The fragmenting gluon carries a fraction,
+FORMULA , of the initial quark's longitudinal momentum
+(the large minus component).
+To simplify the calculation in the case of small transverse
+momentum FORMULA , we can apply the collinear
+approximation to complete the trace of the product of
+FORMULA -matrices,
+FORMULA 
+According to the convention in Eqs. (REF ) and (REF ),
+contributions from quark-quark double scattering in the nuclear medium
+to the semi-inclusive hadronic tensor in DIS off a nucleus can be expressed
+in the general factorized form:
+FORMULA 
+After carrying out the momentum integration in FORMULA , FORMULA , FORMULA  and
+FORMULA  in Eq. (REF )
+with the help of contour integration and FORMULA -functions,
+one obtains the hard partonic part, FORMULA , of the rescattering
+for the central-cut diagram in Fig. REF  (Fig. REF ) as
+FORMULA 
+where the momentum fractions FORMULA  is defined as
+FORMULA 
+Note that the function FORMULA 
+contains only phase factors. One can combine these phase factors
+with the matrix elements of the quark fields to define a special
+two-quark correlation function
+FORMULA 
+The contribution from quark-antiquark annihilation in
+the central-cut diagram in Fig. REF  to the hadronic tensor
+can then be expressed as
+FORMULA 
+Contributions from all quark-quark (antiquark) double scattering
+processes can be cast in the above factorized form.
+The structure of the phase factors
+in FORMULA  is exactly the same
+as for gluon bremsstrahlung induced by quark-gluon scattering as
+studied in Ref. {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}. It resembles the cross section of dipole
+scattering and represents contributions from two different processes
+and their interferences. It contains essentially four terms,
+FORMULA 
+The first term corresponds to the so-called hard-soft processes
+where the gluon emission is induced by the hard scattering
+between the virtual photon FORMULA  and the initial quark
+with momentum FORMULA . The quark then becomes on-shell before
+it annihilates with a soft antiquark from the nucleus that carries
+zero momentum and converts into a real gluon in the final state.
+The second term corresponds to a process in which the initial
+quark with momentum FORMULA  is on-shell after the first
+hard FORMULA -quark scattering. It then annihilates with another
+antiquark and produces two final gluons in the final state. In this
+process, the antiquark carries finite (hard) momentum FORMULA .
+Therefore one often refers to this process as double-hard scattering
+as compared to the first process in which the antiquark carries zero
+momentum. Set aside the change of flavors in the initial and final
+states, the double-hard scattering corresponds essentially to
+two-parton elastic scattering with finite momentum and energy
+transfer. This is in contrast to the hard-soft scattering
+which is essentially the final state radiation of the FORMULA -quark
+scattering and the total energy and momentum of the two final state
+gluons all come from the initial quark. The corresponding
+matrix elements of the two-quark correlation functions from these
+first two terms are called `diagonal' elements.
+The third and fourth terms with negative signs in
+FORMULA 
+are interferences between hard-soft and double hard processes.
+The corresponding matrix elements are called `off-diagonal'.
+The cancellation between the two diagonal and off-diagonal terms
+essentially gives rise to the destructive interference which
+is very similar to the Landau-Pomeranchuk-Migdal (LPM)
+interference in gluon bremsstrahlung induced by quark-gluon
+double scattering {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}. One can similarly define the
+formation time of the parton (quark or gluon) emission as
+FORMULA 
+In the limit of collinear emission (FORMULA ) or when the
+formation time of the parton emission, FORMULA , is much larger than
+the nuclear size, the effective matrix element vanishes because
+FORMULA 
+when the hard-soft and double hard processes have complete destructive
+interference.
+We should note that in the central-cut diagram of Fig. REF ,
+the final state partons are two gluons. Therefore, in Eq. (REF )
+the gluon fragmentation function in vacuum FORMULA  enters.
+If the other gluon (close to the FORMULA -quark interaction)
+fragments, the contribution to the semi-inclusive
+hadronic tensor is similar except that the corresponding
+effective “splitting function” should be replaced by
+FORMULA 
+As we will show in Appendix , the two gluons in the
+quark-antiquark annihilation processes (central-cut diagrams)
+are symmetric when
+contributions from all possible annihilation processes and their
+interferences are summed. Therefore, one can
+simply multiply the final results by a factor of 2 to take into
+account the hadronization of the second final-state gluon.
+In addition to the central-cut diagram, one should also take into
+account the asymmetrical-cut diagrams in Fig. REF , which
+represent interference between gluon emission from single and triple
+scattering. The hard partonic parts are mainly the same as for the
+central-cut diagram. The only differences are in the phase factors
+and the fragmentation functions since the fragmenting parton can be
+the final-state quark or gluon. These hard parts can be calculated
+following a similar procedure and one gets,
+FORMULA 
+In the asymmetrical cut diagrams, the above contributions come
+from the fragmentation of the final-state quark. Therefore,
+quark fragmentation function FORMULA  enters this
+contribution. For gluon fragmentation into the observed hadron in
+this asymmetrical-cut diagrams, the contribution
+can be obtained by simply replacing the quark fragmentation function
+by the gluon fragmentation function FORMULA 
+and replacing FORMULA  by FORMULA . Summing the contributions from
+three different cut diagrams of
+Fig. REF , we can observe further examples of
+mixing (or conversion) of quark and gluon fragmentation
+functions. This medium-induced mixing was first observed by Wang and
+Guo {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}} and is a unique feature of quark-quark (antiquark)
+double scattering among all multiple parton scattering processes.
+With the same procedure we can calculate contributions from all other
+cut diagrams of quark-quark (antiquark)
+double scattering at order  FORMULAFORMULA ,
+which are listed in Appendix . There are three types of
+processes: two annihilation processes, FORMULA 
+(central-cut diagrams in Figs. REF , REF , REF , REF 
+and REF ), FORMULA  (central-cut
+diagram in Fig. REF ) and quark-quark (antiquark)
+scattering, FORMULA  (central-cut
+diagram in Fig. REF ). One
+also has to consider the interference of FORMULA  and FORMULA -channel
+amplitude for annihilation into an identical quark pair,
+FORMULA  (central-cut diagrams in Figs. REF 
+and REF ) and the
+interference between FORMULA  and FORMULA  channels of identical quark
+scattering FORMULA  (central-cut diagram in Fig. REF ).
+Contributions from left and right-cut diagrams correspond to interference
+between the amplitude of gluon radiation from single FORMULA -quark
+scattering and triple quark scattering. The amplitudes of
+gluon radiation via triple quark scattering essentially come from
+radiative corrections to the left and right-cut diagrams of the
+lowest-order quark-antiquark annihilation in Fig. REF 
+(as shown in left and right-cut diagrams in Figs. REF , REF ,
+REF , REF , REF , REF , REF 
+and REF ). Two other
+triple quark scatterings with gluon radiation, shown as the left
+and right-cut diagrams in Figs. REF  and REF , correspond
+to the case where one of the final state quarks, after quark-quark scattering,
+annihilates with another antiquark and converts into a final state gluon.
+
+Modified Fragmentation Functions
+In order to simplify the contributions from quark-quark (antiquark)
+scattering (annihilation), one can first organize the results of the hard
+parts in terms of contributions from central, left or right-cut diagrams,
+which are associated by contour integrals with specific products of
+FORMULA -functions,
+FORMULA 
+These FORMULA -functions provide a space-time ordering of
+the parton correlation and will restrict the
+integration range along the light-cone. For contributions from central,
+left and right-cut diagrams that have identical hard partonic parts,
+FORMULA ,
+they will have a common combination of FORMULA -functions
+that produces a path-ordered integral,
+FORMULA 
+that is limited only by the spatial-spread FORMULA  of the first parton along
+the light-cone coordinate. For a high-energy parton that carries
+momentum fraction FORMULA , FORMULA  should be very small.
+Those contributions that are proportional to the above path-ordered
+integral are referred to as contact contributions
+(or contact interactions).
+Similarly, FORMULA  is the spatial spread of the second
+parton and can only be limited by the spatial size of its host
+nucleon even for small value of momentum fraction. The spatial
+position of its host nucleon, FORMULA , however, can be
+anywhere within the nucleus. Therefore, any contributions from
+double parton scattering that have unrestricted integration
+over FORMULA  and FORMULA  should be proportional to the nuclear
+size of the target FORMULA  and therefore are nuclear enhanced.
+In this paper, we will only keep the nuclear enhanced contributions
+and neglect the contact contributions. This will greatly simplify
+the final results for double parton scattering.
+ FORMULA  annihilation
+For the lowest order of quark-antiquark annihilation in
+Eqs. (REF )-(), the hard parts from
+the three cut diagrams are almost the same except for the parton
+fragmentation functions. The central-cut diagram is proportional
+to the gluon fragmentation function while the left and right-cut diagrams
+are proportional to quark fragmentation functions. Rearranging the
+contributions from the three cut diagrams and neglecting the contact term
+that is proportional to the path-ordered integral as in
+Eq. (REF ), the total contribution can be written as
+FORMULA 
+According to our definition in
+Eq. (REF ) of the twist-four correction to the quark
+fragmentation functions, the modification
+to the quark fragmentation function from the lowest order quark-antiquark
+annihilation is then,
+FORMULA 
+Here the effective quark-antiquark correlation function
+FORMULA  is defined as,
+FORMULA 
+with the antiquark FORMULA  carrying momentum fraction FORMULA .
+This two-parton correlation function is
+always associated with double-hard rescattering
+processes. Similarly, we define three other quark-antiquark
+correlation matrix elements
+FORMULA 
+that are associated with hard-soft rescattering and interference
+between double hard and hard-soft rescattering.
+In the first parton correlation
+FORMULA , the antiquark FORMULA 
+carries momentum fraction FORMULA  while the initial quark
+has the momentum fraction FORMULA . The
+two-parton correlation FORMULA 
+corresponds to the case when the leading quark has FORMULA 
+but the antiquark carries zero momentum.
+The two interference matrix elements are approximately
+the same for small value of FORMULA  and will be denoted as
+FORMULA .
+
+FORMULA  annihilation
+Contributions from the next-to-leading order quark-antiquark
+annihilation or quark-quark (antiquark) scattering are more
+complicated since they involve many real and virtual corrections.
+The simplest real correction comes from FORMULA  annihilation (FORMULA ) [Fig. REF  and
+Eqs. (REF ) and ()] which has
+only a central-cut diagram,
+FORMULA 
+This kind of FORMULA  annihilation is truly a hard processes
+and thus requires the second antiquark to carry finite initial momentum
+fraction FORMULA . Furthermore, there are no other interfering
+processes.
+
+FORMULA  scattering
+Contributions from non-identical quark-quark scattering
+FORMULA  (FORMULA ) are a little complicated
+because they involve all three cut diagrams (central, left and right)
+[Eqs. (REF )-()]. One can factor out
+the FORMULA -functions in the hard parts according
+to Eq. (REF ) and re-organize the phase factors
+in each cut diagram,
+FORMULA 
+such that the first three terms in each amplitude are the same. These three
+common phase factors will give rise to a contact contribution for
+all similar hard parts from the three cut diagrams, which we
+will neglect since they are not nuclear enhanced. The remaining
+part will have the following phase factors,
+FORMULA 
+Note that the phase factors of the last two terms in the above
+equation give identical contributions to the matrix elements
+when intergated over FORMULA  and FORMULA  as they differ
+only by the substitution FORMULA .
+One therefore can combine them with
+FORMULA 
+to form another contact contribution (path-ordered) which can be
+neglected. The final effective phase factor is then
+FORMULA 
+Using the above effective phase factor, one can obtain the effective
+modification to the quark fragmentation function due to
+quark-antiquark scattering, FORMULA ,
+FORMULA 
+where three types of two-parton correlations are defined:
+FORMULA 
+One can similarly obtain the modification of quark fragmentation
+from non-identical quark-quark scattering by
+replacing FORMULA  in Eq. (REF ),
+FORMULA 
+The two-quark correlations, FORMULA  and
+FORMULA  can be obtained from FORMULA 
+and FORMULA , respectively, by making
+the replacements
+FORMULA  and
+FORMULA  in
+Eqs. (REF ) and (),
+FORMULA 
+and FORMULA .
+Note that the contribution from fragmentation of quark FORMULA  or
+antiquark FORMULA  only comes from the central-cut diagram. This
+contribution is positive and is proportional to
+FORMULA ,
+containing all four terms: hard-soft,
+double-hard and both interference terms . The
+gluon fragmentation comes only from the single-triple interferences
+(left and right-cut diagrams). Its contribution is therefore
+negative and partially cancels the production of FORMULA 
+from the hard-soft rescattering. The cancellation is not complete
+since the gluon and quark fragmentation functions are different. The
+structure of this hard-soft rescattering (quark plus gluon) is very
+similar to the lowest order result of FORMULA  in
+Eq. (REF ). It contributes to the modification of the
+effective fragmentation function but does not contribute to the
+energy loss. The energy loss of the leading quark comes only from
+double-hard rescattering, since the leading quark fragmentation
+comes both from the central-cut and single-triple interferences,
+and the single-triple interference terms cancel the effect of hard-soft
+scattering for the leading fragmentation. Its net contribution is
+therefore proportional to FORMULA .
+Since the double-hard rescattering amounts to elastic FORMULA  scattering, the effective energy loss is essentially elastic
+energy loss as shown in Ref. {{cite:3d0199a0-1633-4c7d-912b-f02f0bd6d3dd}}. There is, however,
+LPM suppression due to partial cancellation by single-triple interference
+contributions. For long formation time, FORMULA , the
+cancellation is complete. Therefore, LPM interference effectively
+imposes the lower limit FORMULA  on the fractional momentum
+carried by the second quark (antiquark).
+
+FORMULA  scattering
+For identical quark-quark scattering, FORMULA , one has to
+include both FORMULA  and FORMULA -channels, their
+interferences, and the related single-triple interference contributions.
+Using the same technique to identify and neglect the contact contributions,
+one can find the corresponding modification to the quark fragmentation
+function from Eqs. (REF ) and (REF )-(),
+FORMULA 
+where the effective splitting functions are defined as
+FORMULA 
+
+FORMULA , FORMULA  annihilation
+The most complicated twist-four processes involving four quark
+field operators
+are quark-antiquark annihilation into two gluons or an identical
+quark-antiquark pair. We have to consider them together since they
+have similar single-triple interference processes and they involve the
+same kind of quark-antiquark correlation matrix elements,
+FORMULA , FORMULA .
+For notation purpose, we first factor out the common factor
+FORMULA  and the integration over
+FORMULA  and FORMULA  and define
+FORMULA 
+After rearranging the
+phase factors and identifying (by combining central, left and right
+cut diagrams) and neglecting contact contributions
+we can list in the following the twist-four corrections to the
+quark fragmentation from the hard partonic parts of each cut
+diagram (see Appendix A):
+Fig. REF  (FORMULA -channel FORMULA ),
+FORMULA 
+Fig. REF 
+(interference between FORMULA  and FORMULA -channel of FORMULA ),
+FORMULA 
+Fig. REF  (FORMULA -channel of FORMULA ),
+FORMULA 
+Figs. REF  and REF  (interference of FORMULA  and FORMULA -channel
+FORMULA ),
+FORMULA 
+Fig. REF  (FORMULA -channel of FORMULA ),
+FORMULA 
+Fig. REF  (FORMULA -channel of FORMULA ), similar
+to Eq. (REF ),
+FORMULA 
+Figs. REF  and REF  (interference between
+FORMULA  and FORMULA -channel FORMULA ),
+FORMULA 
+Figs. REF  and REF  (two additional single-triple
+interference diagrams),
+FORMULA 
+Most processes involve
+both FORMULA  for double-hard rescattering with interference
+and FORMULA  for hard-soft rescattering with interference.
+All the FORMULA -channel (Figs. REF  and REF ) processes
+involve double-hard scattering only. Therefore, they depend only on
+the FORMULA . For
+interference between single and triple scattering (left
+and right-cut diagrams in Figs. REF , REF , REF 
+REF , REF  and REF ), where a hard
+rescattering with the second quark (antiquark) follows a soft
+rescattering with the third antiquark (quark), only
+interference matrix elements, FORMULA 
+and FORMULA , are involved. Here,
+FORMULA 
+is a new type of interference matrix elements that is only
+associated with this type of single-triple interference
+processes. One can categorize the above contributions according
+to the associated two-quark correlation matrix elements
+and rewrite the above contributions as,
+FORMULA 
+where FORMULA  is given in Eq. (REF )
+and the effective splitting functions for FORMULA 
+and FORMULA  are defined as
+FORMULA 
+which come from the complete matrix elements of FORMULA  and FORMULA  scattering (see Appendix ).
+Again, double-hard rescattering corresponds to the elastic scattering
+of the leading quark with another antiquark in the medium
+and the interference contributions. The structure of the hard-soft
+rescattering contribution we identify above shows the same kind of
+gluon-quark (or quark-antiquark) mixing in the fragmentation
+functions and does not
+contribute to the energy loss of the leading quark. The unique
+contributions in the FORMULA  processes are
+the interference-only contributions. They mainly come
+from single-triple interference processes in the multiple parton
+scattering.
+
+Modification due to quark-gluon mixing
+We have so far cast the modification of the quark fragmentation
+function due to quark-quark (antiquark) scattering (or annihilation)
+in a form similar to the DGLAP evolution equation in vacuum. In fact,
+one can also view the evolution of fragmentation functions in vacuum
+as modification due to final-state gluon radiation. In both cases,
+the modification
+at large FORMULA  is mainly determined by the singular behavior of
+the splitting functions for FORMULA , whereas the
+modifications at mall FORMULA  is dominated by the singular behavior of the
+splitting function for FORMULA .
+Let us first focus on the modification at large FORMULA . A
+careful examination of the contributions from all possible
+processes shows that the dominant modification to the
+effective quark fragmentation function comes from the FORMULA -channel of
+double hard quark-quark scattering processes,
+FORMULA 
+where the summation is over all possible quark and antiquark
+flavors including FORMULA  and FORMULA  represents
+the contribution from virtual corrections. We have expressed
+the modification in a form that it is proportional to the matrix
+elements FORMULA 
+as compared to the modification from quark-gluon scattering
+where the corresponding matrix element [Eq. (REF )]
+is FORMULA .
+Here, FORMULA  and FORMULA  are quark and gluon distributions,
+respectively, in a nucleon. This leading contribution to the
+modification from quark-quark scattering is very similar in form
+to that from quark-gluon scattering [see Eq. (REF )].
+However, it is smaller due to the different color factors FORMULA 
+and the different quark and gluon distributions,
+FORMULA  and FORMULA  in a nucleon. Because of LPM
+intereference, small angle scattering with long formation
+time FORMULA  is suppressed, leading to a
+minimum value of FORMULA  for a FORMULA  target.
+For this value of FORMULA , the ratio
+FORMULA 
+at FORMULA  GeVFORMULA  according the CTEG4HJ
+parameterization {{cite:c54b6f3c-e298-413d-bee1-b5dc24746227}}.
+Therefore, one has to include the effect of quark-quark
+scattering for a complete calculation of the total quark energy loss
+and medium modification of quark fragmentation functions.
+In a weakly coupled and fully equilibrated quark-gluon
+plasma, quark to gluon number density ratio is
+FORMULA . An
+asymptotically energetic jet in an infinitely large medium
+actually probes the small FORMULA  regime,
+where quark-antiquark pairs and gluons are predominantly generated
+by thermal gluons through pQCD evolution. In this ideal scenario
+one expects FORMULA  and therefore can neglect
+quark-quark scattering. The
+modification of quark fragmentation function will be dominated
+by quark-gluon rescattering. However, for moderate jet
+energy FORMULA  GeV and a finite medium FORMULA  fm,
+parton distributions in a quark-gluon plamsa are close to
+the thermal distribution. In particular, if quark and gluon
+production is dominated by non-perturbative pair production
+from strong color fields in the initial stage of heavy-ion
+collisions {{cite:3afc9594-e0a3-454a-aff7-7a56e124e3fd}}, the quark to gluon ratio is comparable
+to the equilibrium value. In this case, we should take into
+account the medium modification of the quark fragmentation
+functions by quark-quark scattering.
+An important double hard process in quark-quark (antiquark)
+scattering is FORMULA  [Eq. (REF )].
+In this process, the annihilation converts the initial quark into
+two final gluons that subsequently fragment into hadrons.
+This will lead to suppression of the leading hadrons not only
+because of energy loss (energy carried away by the other
+gluon) but also due to the softer behavior of gluon fragmentation
+functions at large FORMULA . Even though the leading behavior
+of the effective splitting function [Eq. (REF )]
+FORMULA 
+is not as dominating as that of FORMULA -channel quark-quark
+scattering, it is enhanced by a color factor FORMULA .
+One expects this to make a significant contribution to the
+medium modification at intermediate FORMULA .
+In high-energy heavy-ion collisions, the ratios of
+initial production rates for valence quarks, gluons and
+antiquarks vary with the transverse momentum FORMULA .
+Gluon production rate dominates at low FORMULA  while the
+fraction of valence quark jets increases at large FORMULA .
+Quarks are more likely to fragment into protons than
+antiprotons, while gluons fragment into protons and antiprotons
+with equal probabilities. Therefore, the ratio of
+large FORMULA  antiproton and proton yields in FORMULA  collisions
+is smaller than 1 and decreases with FORMULA  as the fraction of
+valence quark jets
+increases. Since gluons are expected to lose more energy than
+quark jets, one would naively expect to see the antiproton
+to proton ratio FORMULA  becomes smaller due to jet quenching.
+However, if the quark-gluon conversion due to FORMULA 
+becomes important, one would expect that the fractions of quark and gluon
+jets are modified toward their equilibrium values. The final
+FORMULA  ratio could be larger than or comparable to
+that in FORMULA  collisions.
+Such a scenario of quark-gluon conversion was recently considered
+in Ref. {{cite:ea7536b4-ba58-4c5c-91f8-c00ad8b3c54a}} via a master rate equation.
+The mixing between quark and gluon jets also happens at the lowest
+order of quark-antiquark annihilation as shown in Fig. REF .
+At NLO, all hard-soft quark-quark (antiquark) scattering processes
+have this kind of mixing between quark and gluon fragmentation functions.
+Their contributions generally have the form,
+FORMULA 
+where again the summation over the quark flavor
+includes FORMULA .
+This mixing does not occur on the probability but rather on
+on the amplitude level since it involves interferences
+between single and triple scattering. Therefore, this
+contribution depends on the difference between gluon and quark
+fragmentation functions [Eq. (REF )] and can be
+positive or negative in different region of FORMULA . Nevertheless,
+they contribute to the modification of the effective quark
+fragmentation function and the flavor dependence of the final
+hadron spectra.
+
+Flavor dependence of the medium modified fragmentation
+Summing all contributions to quark-quark (antiquark) double scattering
+as listed in Section ,
+we can express the total twist-four correction up to
+ FORMULAFORMULA  to the quark fragmentation function as
+FORMULA 
+where the summation is over all possible FORMULA 
+processes and all different matrix elements
+FORMULA  (FORMULA ), which will be four
+basic matrix elements we will use. The effective splitting
+functions FORMULA  are listed in Appendix .
+One should also include virtual corrections which can be
+constructed from the real corrections through unitarity
+constraints {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}.
+Similarly, we can also write down the twist-four corrections
+to antiquark fragmentation in a nuclear medium,
+FORMULA 
+where the matrix elements FORMULA  and the
+effective splitting functions FORMULA 
+can be obtained from the corresponding ones for quarks.
+Given a model for the two-quark correlation functions, one will
+be able to use the above expressions to numerically evaluate
+twist-four corrections to the quark (antiquark) fragmentation
+functions.
+In this paper, we will instead give a qualitative
+estimate of the flavor dependence of the correction in DIS
+off a large nucleus.
+For the purpose of a qualitative estimate, one can assume that all the
+twist-four two-quark correlation functions can be factorized, as has
+been done in Refs. {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}}, {{cite:57ce5727-b6ef-4736-bdd9-6c09d3aa0037}}, {{cite:6e2ab4e5-14db-4fc5-9c95-35ecbbf93084}}, {{cite:853e6295-7088-4b7d-93e6-621f02240451}},
+FORMULA 
+where FORMULA , FORMULA  is the nucleon mass, FORMULA  the
+nucleus size, FORMULA  is the antiquark distribution
+in a nucleon and FORMULA  is assumed to be a constant, parameterizing
+the strength of two-parton correlations inside a nucleus. The
+integration over the position of the antiquark FORMULA 
+in the twist-four two-quark correlation matrix elements gives
+rise to the nuclear enhancement factor FORMULA .
+We should note that we set FORMULA  for the collinear expansion.
+As a consequence, the secondary quark
+field in the twist-four parton matrix elements will carry zero
+momentum in the soft-hard process. Finite intrinsic
+transverse momentum leads to higher-twist corrections.
+If a subset of the higher-twist terms in the collinear
+expansion can be resummed to restore the phase factors such
+as FORMULA , where FORMULA ,
+the soft quark fields in the parton matrix elements will carry a
+finite fractional momentum FORMULA .
+Under such an assumption of factorization, one can
+obtain all the two-quark correlation matrix elements:
+FORMULA 
+In the last approximation, we have assumed FORMULA .
+Similarly, one can obtain FORMULA ,
+FORMULA  and FORMULA .
+With these forms of two-quark correlation matrix elements, we
+can estimate the flavor dependence of the nuclear
+modification to the quark (antiquark) fragmentation functions.
+The lowest order corrections [ FORMULAFORMULA ] are very
+simple
+FORMULA 
+We consider the dominant contribution from the
+fragmentation of a quark (antiquark)
+which is one of the valence quarks (antiquarks) of the final
+particle FORMULA  (antiparticle FORMULA ). The gluon fragmentation
+functions into FORMULA  and FORMULA  are the same. For large FORMULA ,
+the gluon fragmentation function is always softer than the
+valence quark (antiquark) fragmentation {{cite:be5700ce-0ad4-4c79-b77f-73ee1fe58596}}.
+Therefore, the lowest order twist-four corrections are always
+negative for large FORMULA ,
+leading to a suppression of the valence quark (antiquark)
+fragmentation function, FORMULA 
+[FORMULA ]. Consider those quarks that
+are also valence quarks of a nucleon:
+FORMULA 
+One can find the following flavor dependence of the lowest
+order twist-four corrections to the quark (antiquark)
+fragmentation functions,
+FORMULA 
+or
+FORMULA 
+where FORMULA  is the corresponding leading
+order suppression of the fragmentation function at large FORMULA 
+for proton (anti-proton) and FORMULA  (FORMULA ). Since pions contain
+both valence quark and antiquark, the suppression factors should
+be similar for all pions. For FORMULA , FORMULA 
+and FORMULA  {{cite:c54b6f3c-e298-413d-bee1-b5dc24746227}}. Therefore, the modification of
+antiquark fragmentation functions due to quark-antiquark
+annihilation is significantly larger than that of a quark.
+The flavor dependence of the NLO results are more complicated
+since they involve scattering with both quarks and antiquarks
+in the medium. One can observe first that effective splitting
+functions (or quark-quark scattering cross section) are the same
+for the FORMULA -channel FORMULA  and
+FORMULA  (FORMULA )
+scatterings,
+FORMULA 
+For identical quark-quark scattering or quark-antiquark annihilation,
+one can separate the FORMULA  annihilation splitting functions
+(or cross sections) into singlet and non-singlet contributions by
+singling out the FORMULA -channel contributions,
+FORMULA 
+These singlet contributions to the modified fragmentation
+functions are,
+FORMULA 
+where the summation over FORMULA  now includes FORMULA =FORMULA 
+and FORMULA  are flavor-independent functions determined
+from Eqs. (REF )-(),
+FORMULA 
+and FORMULA  is a common coefficient that is a function
+of FORMULA . Using FORMULA 
+, one can conclude that the singlet
+contributions to the modified quark and antiquark fragmentation
+functions are the same, FORMULA .
+The non-singlet contributions, mainly from FORMULA -channel and FORMULA -FORMULA 
+interferences, are,
+FORMULA 
+where again
+FORMULA 
+due to crossing symmetry. We have listed all non-vanishing
+nonsinglet splitting functions FORMULA  in
+Appendix .
+We again consider the limit FORMULA . In this region
+the convolution in the modified fragmentation function is dominated
+by the large FORMULA  behavior of the effective splitting
+functions. From the listed FORMULA 
+in Appendix , we can obtain the leading contributions,
+FORMULA 
+where we have also neglected terms proportional to FORMULA . All
+FORMULA  are non-leading in
+the limit FORMULA  and therefore can be neglected.
+With these leading contributions, the non-singlet modification
+to the quark and antiquark fragmentation functions can be
+estimated as
+FORMULA 
+where FORMULA  and FORMULA  are from virtual corrections,
+FORMULA 
+Because of momentum conservation, FORMULA  when
+FORMULA  for FORMULA . Therefore, the above
+virtual corrections are always negative. At large FORMULA ,
+these virtual corrections dominate over the real ones.
+There are two kinds of non-singlet contributions in the
+expressions given above. One that is proportional to
+gluon fragmentation functions is
+due to quark-antiquark annihilation into gluons which then fragment.
+The fragmenting gluon not only carries less energy than the initial
+quark but also has a softer fragmentation function, leading
+to suppression of the final leading hadrons. The second type
+of contributions is proportional to FORMULA 
+and therefore
+mixes quark and gluon fragmentation functions, similarly as
+the lowest order quark-antiquark annihilation processes
+[see Eqs. (REF ) and ()]. Since a gluon
+fragmentation function is softer than a quark one, the real corrections
+from this type of processes are positive for small FORMULA  and
+negative for large FORMULA . The virtual corrections
+have just the opposite behavior. Therefore, the second type of contributions
+will reduce the total net modification. For intermediate
+values of FORMULA 
+where FORMULA , the net effect
+is still the suppression of the effective fragmentation functions
+for leading hadrons.
+Since FORMULA , we can conclude that
+the LO and NLO combined non-singlet suppression for antiquark
+fragmentation into valence hadrons is larger than that for
+quark fragmentation into valence hadrons.
+This qualitatively explains the flavor dependence of nuclear
+suppression of leading hadrons in DIS off heavy nuclear targets
+as measured by the
+HERMES experiment {{cite:738c5dd4-cb26-4a94-9a97-96a276588dd2}}, {{cite:87d73b9c-a9fb-4244-bdd5-c64fa233d5ec}}. The ratio of
+differential semi-inclusive cross sections for nucleus and
+deuteron targets were used to study the nuclear suppression of the
+fragmentation functions. It was observed that suppression of leading
+anti-proton is stronger than for leading proton and FORMULA  suppression is
+stronger than FORMULA . In the valence quark fragmentation picture,
+the leading proton (FORMULA ) is produced mainly from FORMULA , FORMULA  (FORMULA ) quark
+fragmentation while anti-protons come primarily
+from FORMULA , FORMULA  (FORMULA )
+fragmentation. Therefore, HERMES data are consistent
+with stronger suppression of antiquark fragmentation.
+Since gluon bremsstrahlung and the singlet FORMULA 
+scattering also suppress quark and antiquark fragmentation, but
+independently of quark flavor, one has to include all the processes
+in order to have a complete and quantitative numerical evaluation of
+the flavor dependence of the nuclear modification of the quark
+fragmentation functions. Furthermore, the NLO contributions are
+proportional to FORMULA . They are as important as
+the lowest order correction for large values of FORMULA . In principle,
+one should resum these higher order corrections via solving a set of
+coupled DGLAP evolution equations, including medium modification for
+gluon fragmentation functions. The contributions from quark-quark
+(antiquark) scattering derived in this paper will be an important
+part of the complete dscription. Detailed numerical study of the
+effect of quark-quark (antiquark) scattering will be possible only
+after the completion of this complete description in the future.
+
+Summary
+Utilizing the generalized factorization framework for twist-four
+processes we have studied the nuclear modification of quark and
+antiquark fragmentation functions (FF) due to quark-quark
+(antiquark) double
+scattering in dense nuclear matter up to order  FORMULAFORMULA .
+We calculated and analyzed the complete set of all possible cut diagrams.
+The results can be categorized into contributions from double-hard,
+hard-soft processes and their interferences. The double-hard rescatterings
+correspond to elastic scattering of the leading quark with
+another medium quark. It requires the second quark to carry
+a finite fractional momentum FORMULA . Therefore, the energy loss
+of the leading quark through such processes can be identified
+as elastic energy loss at order  FORMULAFORMULA .
+The quark energy loss and modification of quark fragmentation
+functions are dominated by the FORMULA -channel of quark-quark (antiquark)
+scattering and are shown to be similar to that caused by quark-gluon
+scattering. The contribution from quark-quark scattering is
+smaller than that from quark-gluon scattering by a factor
+of FORMULA  times the ratio of quark and gluon distribution functions
+in the medium. We have shown that such contributions are not negligible
+for realistic kinematics and finite medium size.
+The soft-hard rescatterings mix
+gluon and quark scattering, in the same way as the lowest
+order FORMULA  processes. Such processes modifies
+the final hadron spectra or effective fragmentation functions but
+do not contribute to energy loss of the leading quark.
+For FORMULA  processes, there also exist
+pure interference contributions mainly coming from
+single-triple-scattering interference.
+With a simple model of a factorized two-quark correlation functions,
+we further investigated the flavor dependence of the medium
+modified quark fragmentation functions in a large nucleus. We
+identified the flavor dependent part of the modification
+and find that the nuclear modification for an antiquark
+fragmentation into a valence hadron is larger than that of
+a quark. This offers an qualitative
+explanation for the flavor dependence of the leading hadron
+suppression in semi-inclusive DIS off nuclear targets as
+observed by the HERMES experiment {{cite:738c5dd4-cb26-4a94-9a97-96a276588dd2}}, {{cite:87d73b9c-a9fb-4244-bdd5-c64fa233d5ec}}.
+
+Acknowledgements
+The authors thank Jian-Wei Qiu and Enke Wang for helpful discussion.
+This work was supported by NSFC under project No. 10405011, by MOE
+of China under project IRT0624, by Alexander von Humboldt
+Foundation, by BMBF, by the Director, Office of Energy Research,
+Office of High Energy and Nuclear Physics, Divisions of Nuclear
+Physics, of the U.S. Department of Energy under Contract No.
+DE-AC02-05CH11231, and by the US NSF under Grant No. PHY-0457265,
+the Welch Foundation under Grant No. A-1358.
+
+Hard partonic parts for quark-quark double scattering
+In Section  we have discussed the calculation of the hard part
+of one example cut-diagram (Fig. REF ) in detail.
+In this appendix we list the results for all possible
+real corrections to quark-quark (antiquark) double scattering
+in the next-to-leading order  FORMULAFORMULA .
+There are a total of 12 diagrams as
+illustrated in Figs. REF -REF .
+For the purpose of abbreviation, we will suppress the
+variables in the notations of partonic hard parts
+FORMULA 
+and phase factor functions
+FORMULA 
+FIGURE 
+We first consider all FORMULA  annihilation
+diagrams with different possible cuts. The contributions of
+Fig. REF  are:
+FORMULA 
+FORMULA 
+Here we have included the fragmentation of both
+final-state partons.
+FIGURE 
+The contributions from Fig. REF  are:
+FORMULA 
+Note that the central-cut diagram in Fig. REF  corresponds
+to the interference between FORMULA  and FORMULA -channel of the FORMULA 
+annihilation processes in Fig. REF . Since the splitting function is
+symmetric in FORMULA  and FORMULA , a factor of 2 comes from the fragmentation
+of both gluons in the central-cut diagram.
+FIGURE 
+The FORMULA -channel of FORMULA  is shown in Fig. REF 
+which has only one central-cut. Its contribution to the partonic
+hard part is,
+FORMULA 
+Note that the splitting function FORMULA 
+is symmetric in FORMULA  and FORMULA . Therefore, fragmentation of the two
+final gluons gives rise to the factor of 2 in front of the gluon
+fragmentation function.
+FIGURE 
+The interferences between FORMULA  and FORMULA -channel of FORMULA 
+processes are shown in Figs. REF  and REF . There
+are only two possible cuts in these diagrams. The contributions
+from Fig. REF  are:
+FORMULA 
+FIGURE 
+Contributions from Fig. REF , which are just the complex
+conjugate of Fig. REF , are:
+FORMULA 
+One can collect all contributions of the double hard
+FORMULA  processes from the central-cut
+diagrams, which should have the common phase factor
+FORMULA 
+and obtain the total effective splitting function in the
+hard partonic part,
+FORMULA 
+We will find later in Appendix  that the above result can also be
+obtained from the total matrix elements squared for
+FORMULA  annihilation.
+FIGURE 
+We now consider the annihilation processes FORMULA 
+with FORMULA . There is only the FORMULA -channel process with one
+central-cut diagram as shown in Fig. REF . Its contribution
+to the hard part is
+FORMULA 
+Here we define the effective splitting function for
+FORMULA  annihilation as,
+FORMULA 
+FIGURE 
+Similarly, for FORMULA 
+scattering with FORMULA , there is only the FORMULA -channel
+as shown in Fig. REF . There are, however, three cut
+diagrams. Their contributions to the partonic hard part are:
+FORMULA 
+The twist-four two-parton correlation
+matrix element associated with the above quark-antiquark
+scattering is the quark-antiquark correlator,
+FORMULA 
+and one should sum over all possible FORMULA  flavors. Note that
+in the above matrix element, the momentum flow for the antiquark (FORMULA )
+is opposite to that of the quark (FORMULA ) fields.
+For quark-quark scattering, FORMULA , the hard part
+is essentially the same. The only difference is the associated
+matrix element for the quark-quark correlator which is obtained
+from that of the quark-antiquark correlator via the exchange
+FORMULA  and
+FORMULA ,
+FORMULA 
+Note that the momentum flows of the two quarks (FORMULA  and FORMULA ) point
+in the same direction.
+The effective splitting function of this scattering process is defined
+through the fragmentation of the quark in the central-cut diagram,
+FORMULA 
+FIGURE 
+FIGURE 
+For annihilation FORMULA  into identical quark
+and antiquark pairs, in addition to the FORMULA -channel
+(Fig. REF  for FORMULA ) and FORMULA -channel (Fig. REF 
+for FORMULA ), one has also to consider the interference
+between FORMULA  and FORMULA -channel amplitudes as shown in Figs. REF 
+and REF , each having two cuts. Their contributions to
+the hard partonic parts are, respectively:
+FORMULA 
+FORMULA 
+One can again collect contributions from the central-cut diagrams
+of the double scattering processes in Figs. REF , REF 
+REF  and REF  and obtain the total effective splitting
+function for FORMULA ,
+FORMULA 
+Here we have used FORMULA . For antiquark fragmentation,
+FORMULA .
+One can also obtain the above result from FORMULA 
+scattering matrix squared as shown in Appendix .
+FIGURE 
+Similarly, for scattering of identical quarks FORMULA ,
+one should set FORMULA  in Fig. REF [in Eq. (REF )].
+In addition, one should also also include interference
+between FORMULA  and FORMULA -channel of the scattering as shown in Fig. REF .
+The contributions from such interference diagram are,
+FORMULA 
+Note again that the fragmentation of both quarks contributes to
+the factor 2 in Eq. (REF ) since the splitting function
+is symmetric in FORMULA  and FORMULA . The twist-four two-quark correlation
+matrix element associated with FORMULA  scattering is
+FORMULA  as compared to FORMULA  for
+quark-antiquark annihilation processes.
+We can sum contributions from the double hard scattering
+in all the central-cut diagrams in Figs. REF  and REF 
+and obtain the total effective splitting function for
+FORMULA  processes,
+FORMULA 
+FIGURE 
+There are two remaining cut diagrams that contribute to the
+quark-antiquark annihilation at the order of  FORMULAFORMULA 
+as shown in Figs. REF  and REF . Their contributions
+are:
+FORMULA 
+FIGURE 
+FORMULA 
+
+Effective splitting functions
+In this Appendix, we list the effective splitting functions
+associated with each process FORMULA  and the
+double-hard (FORMULA ), hard-soft (FORMULA ) or their
+interferences (FORMULA ) according to Eq. (REF ).
+FORMULA 
+The non-singlet splitting functions for FORMULA ,
+defined as
+FORMULA 
+are listed as below:
+FORMULA 
+
+Alternative calculations of central-cut diagrams
+As a cross-check of the hard partonic parts calculated from
+different cut diagrams in Appendix , we provide an
+alternative calculation of all the central-cut diagrams, which
+correspond to quark-quark (antiquark) scattering.
+Considering a parton (FORMULA ) with momentum FORMULA  scattering with another
+parton (FORMULA  that carries a fractional momentum FORMULA ,
+FORMULA , the cross section
+can be written as
+FORMULA 
+where FORMULA  and FORMULA  are momenta of the initial partons
+and
+FORMULA 
+is the momentum of one of the final partons. With the given kinematics,
+the on-shell condition in the cross section can be recast as
+FORMULA 
+The Mandelstam variables of the collision are,
+FORMULA 
+where we have used the on-shell condition FORMULA .
+With Eq. (REF ) and parton distribution functions
+FORMULA , one can obtain the parton-nucleon cross section,
+FORMULA 
+where FORMULA  is the center-of-mass energy for FORMULA  collision,
+FORMULA  is some common color factor in the scattering matrix elements
+and
+FORMULA 
+is what we have defined as the effective splitting function for the
+corresponding processes. One can therefore easily obtain these
+effective splitting functions from the corresponding matrix
+elements for elementary parton-parton scattering {{cite:46779755-7b4a-4466-89ba-b065eb8131fe}}.
+We will list them in the following. A common color factor for all
+quark-quark(antiquark) scattering is FORMULA .
+FORMULA  annihilation:
+FORMULA 
+FORMULA  annihilation:
+FORMULA 
+FORMULA  annihilation:
+FORMULA 
+FORMULA  scattering:
+FORMULA 
+FORMULA  scattering:
+FORMULA 
+For quark-gluon Compton scattering, the relevant gluon distribution
+function is FORMULA . One can therefore rewrite contribution
+from FORMULA  to Eq. (REF ) as,
+FORMULA 
+We have then for FORMULA  scattering,
+FORMULA 
+Comparing this result with that in Ref. {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}} for the
+quark-gluon rescattering, we can see that they agree in the limit
+FORMULA . This is a consequence of the collinear
+approximation employed in Ref. {{cite:e046deb2-b521-4e6c-a621-646db88ec6a3}} in the calculation of
+the hard partonic part in quark-gluon rescattering.
+We can also extend this calculation to the case of gluon-nucleon
+scattering. One can use Eq. (REF ) to define the splitting
+function for FORMULA  scattering,
+FORMULA 
+Here for gluon-parton scattering, there is no common color factor.
+FORMULA  annihilation,
+FORMULA 
+FORMULA  scattering
+FORMULA 
+One can use this technique to extend the study of modified fragmentation
+functions to propagating gluons. Since the modification is dominated by
+quark-gluon and gluon-gluon scattering, comparing the effective
+splitting functions,
+FORMULA 
+in the limit FORMULA , one can conclude that a gluon's
+radiative energy loss is larger than a quark by a factor of
+FORMULA . We will leave the complete derivation of medium
+modification of gluon fragmentations to a future publication.

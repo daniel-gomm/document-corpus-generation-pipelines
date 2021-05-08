@@ -1,0 +1,454 @@
+
+Constraints on gamma-ray burst and supernova progenitors through circumstellar absorption
+lines. (II): Post-LBV Wolf-Rayet stars
+A. J. van Marle 1,2
+N. Langer 1
+G. García-Segura 3
+A. J. van Marle, marle@udel.edu
+Astronomical Institute, Utrecht University,
+P.O,Box 80 000, 3508 TA Utrecht, The Netherlands
+Bartol Research Institute, University of Delaware,
+102 Sharp Laboratory, Newark, 19716, Delaware, USA
+Instituto de Astronomía-UNAM,
+APDO Postal 877, Ensenada, 22800 Baja California, Mexico
+Received / Accepted 
+Wolf-Rayet stars are thought to be the progenitors of Type Ib/c supernovae and
+of long gamma-ray bursts.
+As shown by van Marle et al. (2005), circumstellar absorption lines
+in early Type Ib/c supernova and gamma-ray burst afterglow spectra may reveal
+the progenitor evolution of the exploding Wolf-Rayet star. While the quoted paper deals with
+Wolf-Rayet stars which evolved through a red supergiant stage, we investigate here the
+initially more massive Wolf-Rayet stars which are thought to evolve
+through a Luminous Blue Variable (LBV) stage.
+We perform hydrodynamic simulations
+of the evolution of the circumstellar medium around a 60FORMULA  star, from the main
+sequence through the LBV and Wolf-Rayet stages, up to core collapse.
+We then compute
+the column density of the circumstellar matter along rays from the central light source
+to an observer at infinity,
+as a function of radial velocity, time and angle.
+This allows a comparison with the number and velocities, or blue-shifts, of absorption
+components in the spectra of LBVs, Wolf-Rayet stars, Type Ib/c supernovae and gamma-ray burst afterglows.
+Our simulation for the post-LBV stage shows the formation of various absorption components.
+In particular, shells with velocities in the range of 100  km  sFORMULA  to 1200  km  sFORMULA 
+are formed at the beginning of
+the Wolf-Rayet stage, which are, however, rather short lived; they dissipate
+on time scales shorter than FORMULA yr. As the LBV stage is thought to occur
+at the beginning of core helium burning, the remaining Wolf-Rayet life time
+is expected to be one order of magnitude larger. 
+When interpreting the absorption components in the afterglow spectrum
+of GRB 021004 as circumstellar, it can be concluded that the progenitor
+of this source did most likely not evolve through an LBV stage,
+as no intermediate velocity absorption
+components are predicted to prevail until core collapse.
+However, a close binary with a late common-envelope phase (Case C) may produce a circumstellar medium that
+closely resembles the LBV to Wolf-Rayet evolution, but with a much shorter Wolf-Rayet period.
+This scenario can not be ruled out.
+–
+Stars: winds, outflows –
+Stars: Wolf-Rayet –
+Stars: Supernovae –
+Gamma rays: bursts –
+Line: profiles –
+ISM: bubbles –
+Absorption lines in GRB and SN spectra (II)
+van Marle et al.
+Introduction
+Circumstellar nebulae are created by the interactions of stellar winds with the surrounding
+medium.
+Typically, a fast wind sweeps up the interstellar gas or a preceding slower wind and forms a
+shell that travels outward.
+This is the case for planetary nebulae, where the fast post-AGB wind sweeps up the slow AGB
+wind (Kwok {{cite:794626e7-9f62-43f5-ad8d-0884ef1ce0f3}}).
+Stars massive enough to form a Wolf-Rayet star
+(FORMULA 25  MFORMULA  M FORMULAFORMULA 10-3    M yr-1FORMULA   km  s-1FORMULA Wolf-Rayet stars end their evolution by the collapse of the massive iron core which
+forms in their center,
+which is thought to — at least in a fraction of the events — produce a violent
+stellar explosion which becomes visible as Type Ib/c supernovae and (in some cases) long gamma-ray bursts (GRBs).
+These events are a bright source of radiation in the UV to visible spectral range,
+with photons being produced either in the
+supernova photosphere (e.g., Doggett & Branch {{cite:4eaba38e-0272-458a-83fd-fb1ba5cd628b}}),
+or through the interaction between a relativistic jet and the surrounding medium
+as GRB afterglow (Ramirez-Ruiz et al. {{cite:09495f11-2af4-4136-95a3-06dc23368858}}, Eldridge et al. {{cite:39fdb9a8-4415-4e5b-8af2-9d1b066666cf}}, Nakar & Granot {{cite:9c50c3f1-8be3-4058-9e40-53aaf61bd481}}).
+To reach us, this radiation has to pass through the circumstellar medium, which was shaped by the stellar wind during the evolution of the star.
+Thereby, a part of the radiation is absorbed, creating absorption lines in the spectrum, which can be used to analyze the content of the circumstellar bubble as to density, composition and velocity structure.
+Blue-shifted absorption lines caused by the circumstellar medium should be visible in the spectrum of Type Ib/c and Type II supernovae.
+Dopita et al. ({{cite:4e76fb42-1db9-4cc7-bd79-93cbaecb7660}}) found narrow P Cygni profiles seen in HFORMULA  and HFORMULA  in the spectrum of the Type IIL SN 1984E indicating a Wolf-Rayet wind with a velocity of about 3000 km sFORMULA .
+A 350 FORMULA  absorption line in the spectrum of Type IIL SN 1998S can be attributed
+to a moving shell (Bowen et al. {{cite:ab1e0338-b743-4564-bcba-9744412c36b2}}; Fassia et al. {{cite:bbc0b1cd-0b52-46f2-a570-4b700adc53bf}}).
+However, supernova spectra often contain a large number of photospheric absorption or P Cygni lines
+from the supernova
+itself, which makes the spectral analysis more difficult. Furthermore, supernovae are observed
+only at low redshift, which means that many of the most useful absorption lines are only observable in UV.
+One may hope that dedicated searches for circumstellar absorption lines in early
+supernova spectra may reveal many more cases.
+So far the best absorption spectrum in a GRB has been found in the afterglow of gamma-ray burst GRB 021004.
+It was proposed that the large number of absorption lines for CIV and SiIV visible in this spectrum can be explained as the result of circumstellar wind and shells (Schaefer
+et al. {{cite:8100d434-f169-4972-ac11-f0675797ebf6}}; Mirabal et al. {{cite:6f0b0dff-7a49-42fb-8075-883be263836f}}; Fiore et al. {{cite:6ecfc19e-0876-417d-b819-11e7db2e5fd7}}, Starling et al.
+{{cite:9ab44d49-a206-486e-a96e-20bca3475896}}, Lazzati et al. {{cite:e01888a1-7c7b-47a8-aa60-9262774b3db9}}).
+Van Marle et al. ({{cite:b1240efb-06ca-4de3-ae69-3a85b1ee80ee}} and {{cite:9d028abd-0442-40b7-b34f-ea90c9bd3861}}, from here on referred to as Paper I) described the evolution of the circumstellar medium around a 40 FORMULA  star (see also García-Segura et al. {{cite:5b58eab0-39f6-4dbf-9f16-db35c72893d4}}), and a method to quantify the number, blueshifts and relative strengths of absorption components as function of time produced by this circumstellar medium, and compared this to the observations of GRB 021004.
+Here, we compute the circumstellar medium around a 60FORMULA  star, similar to García-Segura et al. ({{cite:643bd34d-be8e-4ca7-8a6c-e506d0219966}}).
+While the 40FORMULA  star passed through the red supergiant phase before becoming a Wolf-Rayet star, the 60FORMULA  star evolves from the main sequence to the LBV stage and then moves on to become a Wolf-Rayet star.
+Therefore, a different circumstellar absorption pattern is expected.
+TABLE 
+
+Simulating the circumstellar bubble
+The evolution of the circumstellar medium around a massive star can be divided into three stages, as the result of the evolutionary track of the star.
+A 60 FORMULA  star begins as a main sequence star, develops into an LBV and finally becomes a Wolf-Rayet star.
+This means that in the circumstellar medium the following interactions take place (cf. García-Segura et al. {{cite:643bd34d-be8e-4ca7-8a6c-e506d0219966}}):
+
+First: an interaction between the fast, low density main-sequence wind and the interstellar medium.
+This interaction creates a moving shell, driven outward by the high thermal pressure of the shocked wind material.
+Such an interaction can be described analytically (Weaver et al. {{cite:c11e5842-ba36-4280-99dd-d256d62713fe}}).
+
+In the next phase the slow, dense LBV wind hits the bubble created by the main-sequence wind, creating a new shell (the LBV shell), which moves into the main sequence bubble.
+
+Finally, the massive, high velocity Wolf-Rayet wind sweeps up the remnants of its predecessors.
+The Wolf-Rayet wind drives a third shell outward, which overtakes the LBV shell.
+Both shells are destroyed by the collision.
+The remnants continue to move outward.
+
+In order to model the evolution of the circumstellar medium we use the same method as described in Paper I and van Marle et al. ({{cite:09e44645-3269-4eac-bb4f-e377b307c768}}, {{cite:6275a664-b930-4463-a591-3fe32563bd6f}}).
+We have divided the evolution of the star into three stages (main sequence, LBV and
+Wolf-Rayet), each with constant wind velocity, mass loss rate and number of ionizing photons per second.
+The average mass loss rate follows from the evolution of the total mass of the star for each of
+these periods.
+The average wind velocity is chosen so that the total kinetic energy output of the star
+remains the same as for a fully time dependent model.
+The number of ionizing photons is calculated from the surface temperature of the star, using a
+Planck emission curve.
+As input model we used the 60 FORMULA  model with a metallicity of Z=0.02 that was calculated by
+Schaller et al. ({{cite:f58215ad-0c56-445d-adfd-5081e76a5b63}}).
+The resulting parameters for the stellar wind and photon count are given in Table REF .
+The density of the interstellar medium is set at FORMULA  FORMULA .
+The effect of photo-ionization was included in the simulation by calculating the Strömgren
+radius along each radial grid line and correcting the temperature and mean particle weight within
+this radius as described by García-Segura & Franco ({{cite:c0aaa418-2d0f-4d78-b6ad-2eeda8344a1d}}) and García-Segura et
+al. ({{cite:6dc10d50-95a9-43f1-835f-34e774edd2b7}}).
+The hydrodynamical simulations were done with the ZEUS 3D hydrodynamics code by Stone and
+Norman ({{cite:a7bb4a2e-60a2-4dd6-9de9-7a8faf11467c}}).
+We simulate the main sequence only in 1D.
+Because they are highly unstable, the LBV and Wolf-Rayet wind interactions have to be computed in
+2D, so we have taken the end result of the 1D simulation and mapped this onto a 2D grid, as was
+described in García-Segura et al. ({{cite:643bd34d-be8e-4ca7-8a6c-e506d0219966}}, {{cite:5b58eab0-39f6-4dbf-9f16-db35c72893d4}}).
+The transition from 1D to 2D has to be made before the start of the LBV phase in order to
+include the instabilities in the LBV shell.
+This is different from the 40 FORMULA  case described in Paper I, where we could simulate most of
+the red supergiant phase in 1D.
+Since we want to follow the evolution of the circumstellar medium to the moment of supernova,
+we have calculated the whole circumstellar bubble in 2D, instead of using only the inner part as
+was done by García-Segura et al. ({{cite:5b58eab0-39f6-4dbf-9f16-db35c72893d4}}).
+This method is similar to the one used in van Marle et al. ({{cite:251d61e4-16e0-4856-8d92-969eeefd1e48}}) and was also
+described in Paper I.
+A similar calculation for a 60 FORMULA  star was done completely in 2D by Freyer et al.
+({{cite:a330bd9a-a97c-471f-b1b4-f19bf9dd0b96}}).
+Models of the circumstellar medium of stars in a large interval of masses and metallicities
+where produced by Eldridge et al. ({{cite:39fdb9a8-4415-4e5b-8af2-9d1b066666cf}}).
+FIGURE 
+FIGURE 
+
+The circumstellar bubble during main sequence and LBV phase
+Main sequence phase
+At the beginning of the main sequence phase the HII region created by the radiation from a
+massive star pushes a shell into the interstellar gas.
+At the same time the kinetic energy of the wind is converted into thermal energy by collision
+with the surrounding matter.
+This creates a hot bubble which pushes a shell into the HII region.
+Unlike the case for the 40 FORMULA  star in Paper I we have set the main sequence wind velocity at three
+time the escape velocity.
+This, combined with the higher mass loss rate of the 60 MFORMULA  star raises the thermal
+pressure in the bubble to the point where the shell driven into the HII region moves
+supersonically.
+Therefore, no pressure equilibrium between wind bubble and HII region can be reached
+and the wind driven shell sweeps up the entire HII region.
+(In the case of the 40 FORMULA  model an HII region can exist outside the wind bubble,
+even if the wind velocity is set at three times the escape velocity.)
+The end result is a hot bubble with nearly constant density, which drives a shell into the
+cold interstellar medium (Fig. REF ).
+Close to the star is the free streaming wind, where the density and internal energy decrease
+with the square of the radius.
+At at radius of ca. 6 pc the wind hits the termination shock where it slows down abruptly.
+Its kinetic energy is converted into heat, causing a sudden increase in internal energy.
+At 45 pc this hot bubble ends.
+Here the internal energy is converted back into kinetic energy as the thermal pressure drives a
+shell outward.
+The small density jump just before the shell is caused by the radiation from the star, which
+ionizes a small HII region beyond the wind bubble.
+This HII region is very small, especially compared to a similar region found around 25...40
+FORMULA  stars (van Marle et al. {{cite:251d61e4-16e0-4856-8d92-969eeefd1e48}}, {{cite:b1240efb-06ca-4de3-ae69-3a85b1ee80ee}} and Paper I).
+If the main sequence phase is modeled in two dimensions, the ionizing radiation will break through
+the wind driven shell, creating local 'fingers' of photo-ionized gas, which reach out from the wind
+driven bubble (Freyer et al. {{cite:a330bd9a-a97c-471f-b1b4-f19bf9dd0b96}}).
+
+LBV phase
+During the LBV phase the mass loss rate increases dramatically while the wind velocity
+decreases
+As a result, a new shell is created once the LBV wind reaches the termination shock.
+This shell, driven by the LBV wind, moves outward into the main sequence bubble.
+At the end of the LBV phase, the circumstellar medium is built up as follows (see also
+Fig. REF ).
+Closest to the star is the freely expanding LBV wind.
+This area extends to ca. 12 pc.
+The wind termination shock itself is marked by a thin shell of shocked LBV wind material, which is driven
+outward by the wind.
+Unlike the corresponding shell during the red supergiant phase of a 40 FORMULA  star
+(García-Segura et al. {{cite:5b58eab0-39f6-4dbf-9f16-db35c72893d4}}; van Marle et al. {{cite:251d61e4-16e0-4856-8d92-969eeefd1e48}}, {{cite:b1240efb-06ca-4de3-ae69-3a85b1ee80ee}},
+Paper I), the LBV wind driven shell has a significant radial velocity.
+This is the result of the ram pressure of the LBV wind, which is several orders of magnitude
+higher than the ram pressure of the red supergiant wind.
+Next comes the hot isotropic bubble, which in turn pushes a shell (r FORMULA  45 pc in
+Fig. REF ) into the interstellar medium.
+FIGURE 
+FIGURE 
+
+The circumstellar bubble during the Wolf-Rayet phase
+The Wolf-Rayet phase can be divided into three separate parts (based on the evolution of the
+circumstellar medium, not the evolution of the star).
+During the first phase (WR1), starting at t FORMULA  3.48 Myr, the fast, high density WR wind
+drives a shell into the surrounding medium (the LBV wind remnant).
+This shell moves rapidly outward, much faster than the shell driven by the LBV wind.
+The second phase (WR2) starts as the two shells collide (t FORMULA  3.5 Myr).
+Both shells are highly unstable already and break up during the collision.
+This process can be seen in Fig. REF , where we see the Wolf-Rayet wind driven
+shell overtake the LBV shell.
+Unlike the collision between red supergiant and Wolf-Rayet shells as described in Paper I, the remnants of the two shells are not completely fragmented, and there is less independent turbulent movement of the individual fragments.
+They remain more or less together while they travel into the main sequence bubble.
+This is the result of both the relative densities and velocities of the two shells
+upon collision.
+The Wolf-Rayet shell is approximately ten time as dense as the LBV shell.
+In contrast, the red supergiant shell has about the same density as the Wolf-Rayet shell
+(Paper I).
+The velocity difference is also much greater here,
+as the Wolf-Rayet shell overtakes the LBV shell with a relative velocity of ca. 400 FORMULA , twice
+as much as the relative velocity of the Wolf-Rayet shell vs. the red supergiant shell in Paper I.
+As a result, the Wolf-Rayet shell is not completely destroyed and absorbs most of the LBV shell.
+This phase lasts only for a short while, until the shell fragments hit the edge of the bubble.
+The final part of the Wolf-Rayet phase (WR3) comprises the time after t FORMULA  3.53 Myr, which is when
+the shell fragments collide with the edge of the main sequence bubble (Fig. REF ).
+This phase last much longer than WR1 and WR2.
+During this phase their is only one isotropic bubble, which is heated by the kinetic energy of
+the Wolf-Rayet wind and drives a shell into the interstellar medium.
+The kinetic energy of the wind is high, which causes an increase in the temperature of the wind
+bubble, which in turn accelerates the movement of the shell.
+Also, during the Wolf-Rayet phase the number of high energy photons increases, which results in
+a photo-ionized HII region outside the wind bubble.
+This means, that the hot bubble starts to show a more pronounced density discontinuity than
+during the main sequence, similar to the one we found for the 40 FORMULA  star (van Marle et al.
+{{cite:251d61e4-16e0-4856-8d92-969eeefd1e48}}, {{cite:b1240efb-06ca-4de3-ae69-3a85b1ee80ee}} and Paper I).
+However, for the 60 FORMULA  star the width of the HII region is very small (FORMULA  5 pc)
+compared to the total size of the hot bubble (Fig. REF ).
+FIGURE 
+FIGURE 
+
+Calculating the column density
+From our simulation of the circumstellar medium we calculate the column density as a function
+of radial velocity and angle for fixed times, as described in Paper I.
+We move outward from the star along each radial grid line and take at each grid point the local
+column density (density multiplied with the radial length of the grid cell), the radial velocity
+(rounded to 1 FORMULA  intervals) and the temperature.
+This procedure gives us the column density as a function of radial velocity.
+We take thermal broadening into account by spreading the column density of each grid cell over
+a velocity interval that is calculated from the Maxwell-Boltzmann distribution for particle
+velocities at a given temperature.
+This gives us the following quantity:
+FORMULA 
+with: vFORMULA  the radial velocity, FORMULA  the mass density and P the probability
+function for a particle to have a velocity in a given velocity interval along a single axis.
+For the interval FORMULA vFORMULA  we use 1 FORMULA .
+The outer limit of the integral, FORMULA , is the outer boundary of the hydrodynamical grid.
+The quantity dFORMULA  is the column density
+per velocity interval.
+As we do not compute the chemical structure of our gas distribution,
+true column densities of individual ion species can not be predicted accurately.
+
+Chemical composition of the circumstellar bubble
+In our simulation we do not regard the chemical composition of the gas.
+In order to get a quantitative analyzes of blue-shifted absorption features, one would
+need to know both the metallicity of the gas and the ionization states.
+While we do not simulate these quantities we can say a few things about them.
+The metallicity of the circumstellar bubble is of course a direct result of the composition of
+the stellar wind, which in turn depends on the evolutionary state of the star.
+During the main sequence phase, the wind will be almost purely hydrogen.
+The composition of the Wolf-Rayet wind changes over time, from mostly helium with some
+hydrogen during the early Wolf-Rayet phase, to helium and carbon during the later stages.
+The shell driven by the main sequence wind consists solely of interstellar matter.
+The shell driven by the LBV wind into this bubble will be composed mostly of helium enriched LBV wind material
+and some matter of the hot bubble itself.
+The third shell, driven by the Wolf-Rayet wind into the LBV wind, will at first consist only
+of LBV wind material that has been swept up.
+After the collision with the LBV shell, the Wolf-Rayet shell will have direct contact with the
+hot bubble and sweep up some of the material in this bubble.
+The composition of the material in the bubble varies over time, depending on which winds have
+fed material into the bubble up to that moment but is dominated by hydrogen at all times.
+The ionization of the material depends on both the temperature and the number of ionizing
+photons.
+Other than in the 40 FORMULA  case (see Paper I), the 60 FORMULA  star always produces a large
+number of highly energetic photons, which means that photo-ionization will always be important.
+The hot bubble has a very high temperature (T FORMULA  10FORMULA  K).
+The shells are less hot, since their high density causes them to cool down efficiently through
+radiative energy loss.
+After a supernova and especially after a gamma-ray burst, the degree of ionization will be
+even higher, since such events produce a massive amount of high energy radiation, which will pass
+through the circumstellar bubble.
+(Prochaska et al. {{cite:cf251089-72a2-46d6-b7ec-aa5ab9315d3b}}, Chen et al. {{cite:2eeb9016-b578-4934-b2e4-25aa99331bee}} and
+Lazzati et al. {{cite:e01888a1-7c7b-47a8-aa60-9262774b3db9}})
+
+The absorption features during the LBV and Wolf-Rayet phase
+The result of the column density calculations described in Section  can be seen in Fig.
+REF .
+Compared to the 40 FORMULA  case (Paper I) it is clear that a 60 FORMULA  star
+produces more time dependent features.
+Number of visible absorption features
+How many absorption features could be visible changes with time.
+For the moment we shall ignore any angle dependence and
+look only at the evolution of the angle averaged features (Figs. REF  and REF ).
+During the main sequence phase, only the zero velocity component and the main sequence wind are visible.
+While the main sequence shell has a certain radial velocity, this is too small to be observed
+independently.
+Once the LBV phase starts, two new features are created.
+The LBV wind itself, which moves outward at a velocity of 490 FORMULA , and the shell driven by
+the LBV wind, moving at ca. 400 FORMULA .
+It takes about FORMULA  years to create this shell, since the LBV wind has to travel out to the wind
+termination shock at FORMULA  pc.
+As the star enters the Wolf-Rayet phase, another two features are added:
+The Wolf-Rayet wind, moving at 2250 FORMULA  and the Wolf-Rayet wind driven shell, which moves
+at ca. 900 FORMULA .
+The wind creates a thin feature (FORMULA ), whereas the shell feature is about 200 FORMULA  wide.
+This means, that during the phase WR1 (see Sect. ), a total number of five independent
+absorption features is visible (Wolf-Rayet wind, the remnant of the LBV wind, two shells and the
+zero velocity component).
+As the Wolf-Rayet shell expands outward, the area of free streaming LBV wind decreases, so the
+LBV wind absorption component starts to disappear.
+Once the Wolf-Rayet shell reaches the LBV shell, the two shells collide and both disappear as
+independent features.
+The remnants of the shell are fragmented and create a new shell, with a velocity of ca. 600 FORMULA .
+This feature has a width of about 400 FORMULA .
+This shell exists throughout phase WR2, which therefore shows three absorption components: The
+Wolf-Rayet wind, the combined shell and the zero velocity component.
+The period from the beginning of the LBV phase to the end of phase WR2, which shows the greatest
+time dependence, can be seen in more detail in Fig. REF .
+Once the shell fragments collide with the edge of the bubble, they dissipate and disappear as
+absorption feature.
+the circumstellar medium now enters the final phase, WR3.
+Only two absorption features remain, the Wolf-Rayet wind and the zero velocity component.
+
+Line of sight dependence
+Which and how many independent absorption features may be visible for a given line of sight
+depends on angle as well as on time.
+The narrow lines resulting from free-streaming winds are visible at any angle.
+The broader lines that result from the shells and shell fragments are angle dependent since
+the density of the shell is not constant.
+In Figs. REF , REF  and REF  we show the
+angle dependence of the absorption features during the LBV and Wolf-Rayet phase.
+The segments shown correspond to the segments in Figs. REF , REF 
+and REF .
+During the very early stages of the LBV phase, only the LBV wind itself is visible.
+Once the LBV wind reaches the wind termination shock, it forms the LBV shell, which then
+becomes visible as an absorption feature (Fig. REF ).
+The LBV shell (FORMULA ), though unstable, is not fragmented too severely and can
+be observed at any angle.
+The start of the Wolf-Rayet phase can be seen in Fig. REF , which shows the
+column density during the transition from phase WR1 to phase WR2 (Section ).
+The Wolf-Rayet shell (FORMULA ) becomes visible as an absorption feature as soon as the
+Wolf-Rayet wind (FORMULA ) starts.
+The WR shell is somewhat more fragmented, so the likelihood of observing this shell is not one, but still quite large.
+After the collision the fragments of the two shells form a new shell at ca. 600 FORMULA .
+The angle dependence increases considerably after the collision of the two shells, as the
+fragments tend to shrink.
+(The higher the local density, the more effective the radiative cooling.
+Therefore, the high density fragments will have a low thermal pressure, which causes them to
+shrink even further.)
+As we saw in Paper I, fragmentation of a shell can both decrease and increase the number of
+independent velocity features seen in a single line of sight.
+If no shell fragment is present along that line, no absorption line is visible.
+However, it is also possible, that several fragments, with different individual velocities are
+present along the same line, causing multiple absorption features to appear.
+The angle dependence plays a smaller role in the case of our 60 FORMULA  star than
+in the case of the 40 FORMULA  star of Paper I, since the shells around the more massive star are less fragmented.
+Once the shell fragments collide with the edge of the hot bubble, they cannot travel further
+outward and will instead spread out in the angular direction, as can be seen in
+Fig. REF .
+Since their radial velocity decreases, they will no longer show up as independent lines.
+During the final stages of the Wolf-Rayet phase (WR3) only the Wolf-Rayet wind itself and the
+zero velocity component remain visible.
+FIGURE 
+FIGURE 
+FIGURE 
+
+Conclusions
+Our results show that the absorption spectrum created by the circumstellar medium around
+a post-LBV Wolf-Rayet star is expected to be highly time-dependent.
+As in the case of a post-RSG Wolf-Rayet star (Paper I), a fragmented intermediate velocity component
+is formed by the snowplow effect of the Wolf-Rayet wind.
+Here however, the velocity of this component (FORMULA ) is somewhat higher
+than in the post-RSG case (FORMULA ) since the swept-up LBV shell itself
+has already an appreciable velocity (FORMULA ).
+In practice, the two cases may be difficult to distinguish, however, as
+shell fragments may have a considerably larger or smaller velocity than the
+bulk of the shell (cf. Figs. 9 and 10 in Paper I), and — even though it is likely —
+due to the clumpy structure
+of the shell there is no guarantee that a given line of sight strikes a clump
+which moves with the bulk velocity (cf. Figs. 8 and 9).
+In comparison with the absorption lines observed in the afterglow spectrum of
+GRB 021004, the velocities of the absorption features predicted by
+our 60FORMULA  model seem rather large.
+However, there is an uncertainty due to the fact that the velocity of the LBV wind is
+difficult to predict.
+We have adopted the escape velocity at the surface of the star as terminal wind velocity of the LBV wind,
+which is reasonable for a line driven wind.
+However, the mechanism that drives LBV winds is not entirely clear and it is quite possible
+that the wind velocity is considerably lower.
+(García-Segura et al. {{cite:643bd34d-be8e-4ca7-8a6c-e506d0219966}} found velocities as low as 200 FORMULA  for the LBV
+wind.)
+If the LBV wind has a lower velocity, so does the LBV shell which is driven by this wind.
+The Wolf-Rayet shell, which has to sweep up the LBV wind, will be similarly affected.
+The intermediate velocity (300...1000 FORMULA ) absorption features only appear during the early
+Wolf-Rayet period and disappear approximately 50 000 years after the start of the Wolf-Rayet
+phase, similar to the post-RSG case described in Paper I.
+Since absorption lines appear at these velocities in the afterglow of GRB 021004, this
+would seem to indicate that the explosion took place during the early Wolf-Rayet stage.
+However, this seems not possible for a post-LBV single star, as such stars
+have a Wolf-Rayet phase of at least 300 000 years (Meynet & Maeder {{cite:df670959-8fd3-4a30-92bc-f9f8db3fe0be}}).
+A lower mass (FORMULA ) star, as described in Paper I would seem to be a more likely
+candidate.
+The large number of absorption features at intermediate velocities would then be explained by
+the presence of several shell fragments in the line of sight rather than as large scale evolutionary features.
+A second possibility is that the progenitor of GRB 021004 was in fact part of a close
+binary, which went through a late mass-transfer phase.
+During mass transfer, which last approximately 10 000 years, the stellar wind parameters
+resemble those of the wind of an LBV star.
+The mass donor star is stripped of its outer layers, so that only a Wolf-Rayet star remains
+(Petrovic et al. {{cite:1df7e3e4-a112-406c-9c29-62c0e4136bb2}}). For so called Case C mass transfer,
+this star will only have a short Wolf-Rayet phase left.
+It may even be so short, that the wind and shell that were generated during the mass-transfer
+phase are still visible when the supernova occurs, which could account for the presence of a large
+number of intermediate velocity absorption lines without the need of multiple fragments of the same
+shell within the line of sight.
+The assumption that stars of 40 FORMULA  or less can be gamma-ray burst progenitors is confirmed
+by observations of those gamma-ray bursts that can be linked to supernova explosions.
+For SN 1998bw, which is identified as the supernova corresponding to GRB
+980425, the initial mass of the star is considered to be FORMULA  40 FORMULA  (Iwamoto et al.
+{{cite:eedab9f5-0955-4441-9a75-a666ffa8e088}}; Woosley et al. {{cite:197bf9eb-3aad-4bb1-928f-1de224e14ba7}} and Nakamura et al. {{cite:c54a76c2-2144-4b58-a130-c4ecaf88b9e1}}).
+Since GRB 980425 is not a typical gamma-ray burst, this can not serve as a general
+indication, but Mazzali et al. ({{cite:2873986b-cbc6-494a-bfe4-29eb0e53e368}}) give a similar result (30...40 FORMULA ) for
+SN 2003dh, which corresponds to GRB 030329.
+Finally, SN 2003lw, which is linked to to GRB 031203, is thought to have a
+progenitor mass on the main sequence of 40...50 FORMULA  (Mazzali et al. {{cite:6b9ba9fe-b8ff-416b-8033-3290831fb9f1}}).
+This would make the star somewhat more massive than we expect, but it could still follow an
+evolutionary path similar to our 40 FORMULA  star model, rather than becoming an LBV star,
+in particular if the metallicity of the star was sub-solar (cf. Langer & Norman {{cite:769e996e-7f79-4c30-9e96-58b2b94e90b6}}).
+In other words, all gamma-ray bursts that have been linked to supernova explosions so far
+seem to have a progenitor mass on the main sequence of less than 50 FORMULA  (see also della Valle
+{{cite:b65e0a5d-ed05-4d0b-9c5d-d4fb6cad4fde}}).
+If the progenitor mass of GRB 021004 is larger, the presence of the intermediate
+velocity lines in the afterglow spectrum can only be explained as the result of binary evolution.
+Of course, all of the above only pertains to a situation where the observed absorption features in the afterglow spectrum of GRB 021004 are circumstellar in origin.
+If their origin is interstellar (Prochaska et al. {{cite:cf251089-72a2-46d6-b7ec-aa5ab9315d3b}}, Chen et al. {{cite:2eeb9016-b578-4934-b2e4-25aa99331bee}}) it is not possible to deduce the evolution of the progenitor star from the absorption features.
+We would like to thank Ralph Wijers, Rhaana Starling, Klaas Wiersema and Alexander van der
+Horst of the Astronomical Institute Anton Pannekoek of the University of Amsterdam for their
+information on the spectrum of the afterglow of GRB 021004.
+This work was sponsored by the Stichting Nationale Computerfaciliteiten (National Computing
+Facilities Foundation, NCF), with financial support from the Nederlandse Organisatie voor
+Wetenschappelijk Onderzoek (Netherlands Organization for Scientific research, NWO).
+This research was done as part of the AstroHydro3D project:
+(http://www.strw.leidenuniv.nl/AstroHydro3D/)

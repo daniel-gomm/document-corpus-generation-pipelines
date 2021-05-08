@@ -1,0 +1,311 @@
+
+Self-induced spectral splits in supernova neutrino fluxes
+Georg G. Raffelt
+Max-Planck-Institut für Physik
+(Werner-Heisenberg-Institut), Föhringer Ring 6, 80805 München,
+Germany
+Alexei Yu. Smirnov
+Max-Planck-Institut für Physik
+(Werner-Heisenberg-Institut), Föhringer Ring 6, 80805 München,
+Germany Abdus Salam International Centre for
+Theoretical Physics, Strada Costiera 11, 34014 Trieste, Italy
+Institute for Nuclear Research, Russian Academy of
+Sciences, 117 312 Moskva, Russia
+12 May 2007, revised 17 July 2007, corrected 7 Dec 2007
+MPP-2007-53
+In the dense-neutrino region above the neutrino sphere of a supernova
+(FORMULA  km), neutrino-neutrino refraction causes collective
+flavor transformations. They can lead to “spectral splits” where an
+energy FORMULA  splits the transformed spectrum sharply into
+parts of almost pure but different flavors. Unless there is an
+ordinary MSW resonance in the dense-neutrino region, FORMULA 
+is determined by flavor-lepton number conservation alone. Spectral
+splits are created by an adiabatic transition between regions of large
+and small neutrino density. We solve the equations of motion in the
+adiabatic limit explicitly and provide analytic expressions for a
+generic example.
+14.60.Pq, 97.60.Bw
+Introduction
+At large densities, neutrino-neutrino refraction
+causes nonlinear flavor oscillation phenomena with sometimes
+perplexing results {{cite:814e42f4-c9e7-4017-99b1-969352802c34}}, {{cite:886f9098-5100-426a-b87d-cbb083bf5ae1}}, {{cite:01989a6f-7990-463d-9d13-1d4df74027af}}, {{cite:94d6be55-af7f-4371-84c9-c6b96561d0d6}}, {{cite:e7423384-b462-459c-83b9-5d15711e2b98}}, {{cite:129b7b11-3d13-4ae2-841b-1071f8fb16b4}}, {{cite:d2bf3cb9-c7aa-4c55-a3a7-1a003d6d2d03}}, {{cite:5ffcc702-f01c-4325-b096-cf7f42e407da}}, {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:e191c0f7-5182-4fd8-b1a3-3f954aaa74d8}}, {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}, {{cite:0f6e3997-e08f-4210-8a32-ddcf00c80fc8}}, {{cite:ccd8404e-8354-4815-aa87-5cfbee8f6975}}, {{cite:66e812f7-e9b8-4a2a-9a73-bb4670a600f4}}. In the region between the neutrino sphere and
+a radius of about 400 km in core-collapse supernovae (SNe), the
+neutrino flavor content evolves dramatically {{cite:d2bf3cb9-c7aa-4c55-a3a7-1a003d6d2d03}}, {{cite:5ffcc702-f01c-4325-b096-cf7f42e407da}}, {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:e191c0f7-5182-4fd8-b1a3-3f954aaa74d8}}, {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}, {{cite:0f6e3997-e08f-4210-8a32-ddcf00c80fc8}}. The global features of this self-induced
+transformation are equivalent to the motion of a gyroscopic pendulum
+in flavor space {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}. However, this
+picture does not explain the “spectral splits” that have been
+numerically observed in the transformed fluxes {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:e191c0f7-5182-4fd8-b1a3-3f954aaa74d8}}, {{cite:0f6e3997-e08f-4210-8a32-ddcf00c80fc8}}. In a typical case, the primary FORMULA 
+flux below a split energy FORMULA  emerges from the
+dense-neutrino region in its original flavor, whereas above FORMULA , it is completely transformed to FORMULA  (some mixture of
+FORMULA  and FORMULA ), the step at FORMULA  being very
+sharp. (To be specific we explore the FORMULA –FORMULA  system with the
+atmospheric FORMULA  and the small 13-mixing angle.)
+It has been suggested that an adiabatic transition from high to
+low neutrino density is the primary cause for the
+split {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}. Dense neutrinos perform
+synchronized oscillations: all modes oscillate with a common
+frequency FORMULA , even though their individual
+frequencies vary as FORMULA . Flavor oscillations
+can be visualized as the precession of polarization vectors FORMULA  in a “flavor FORMULA  field.” The FORMULA 
+“stick together” by the FORMULA –FORMULA –interaction, thus forming a
+collective object that precesses around FORMULA . The collectivity
+is lost when the neutrino density decreases. However, if the
+decrease is slow, all FORMULA  align themselves with or
+against FORMULA  in the process of decoupling from each other.
+Eventually they all precess with their individual FORMULA  around
+FORMULA , but without visible consequences because of their
+(anti-)alignment with FORMULA .
+We extend this interpretation of the split phenomenon in several
+ways. We (i) show that flavor-lepton number conservation determines
+FORMULA , (ii) solve the equations of motion explicitly in the
+adiabatic limit, and (iii) provide an analytic result for a generic
+case.
+
+Equations of motion
+We represent the flavor content of an
+isotropic FORMULA –FORMULA  gas by flavor polarization vectors FORMULA  and FORMULA , where overbarred quantities
+correspond to FORMULA . We define their global counterparts as
+FORMULA  and FORMULA  and introduce FORMULA , representing the net lepton number. The
+equations of motion (EOMs) are {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}, {{cite:5ea07075-f319-4d0d-a198-6010496e4022}}
+FORMULA 
+and the same for FORMULA  with FORMULA . Here
+FORMULA  represents the usual matter potential
+and FORMULA  the FORMULA –FORMULA  interaction
+strength, where FORMULA  and FORMULA  are the electron and neutrino
+densities. We work in the mass basis where FORMULA 
+corresponds to the normal and FORMULA  to the inverted mass
+hierarchies. The interaction direction FORMULA  is a unit vector such
+that FORMULA  with FORMULA  being the vacuum
+mixing angle. Unless there is an MSW resonance in the dense-neutrino
+region, one can eliminate FORMULA  from Eq. (REF ) by
+going into a rotating frame, at the expense of a small effective
+mixing angle {{cite:5ffcc702-f01c-4325-b096-cf7f42e407da}}, {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}. The only difference
+for antineutrinos is that in vacuum they oscillate “the other way
+round.” Therefore, instead of using FORMULA  we may
+extend FORMULA  to negative frequencies such that FORMULA  (FORMULA ) and use only FORMULA  with FORMULA . In these terms, FORMULA , where
+FORMULA .
+After elimination of FORMULA , the EOM for FORMULA  can be
+obtained by integrating Eq. (REF ) with FORMULA :
+FORMULA 
+It shows that FORMULA  so that FORMULA  is conserved {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}. The
+in-medium mixing angle above a SN core is small and therefore the
+mass and interaction basis almost coincide. Collective effects then
+only induce pair transformations of the form
+FORMULA , whereas the excess FORMULA  flux
+from deleptonization is conserved.
+
+Adiabatic solution
+We rewrite the EOMs in terms of an
+“effective Hamiltonian” for the individual modes as
+FORMULA 
+In the adiabatic limit each FORMULA  moves slowly compared
+to the precession of FORMULA  so that the latter follows the
+former. We assume that initially all FORMULA  represent the
+same flavor and thus are aligned. If initially FORMULA  is large, every
+FORMULA  is practically aligned with FORMULA .
+Therefore, in the adiabatic limit it stays aligned with FORMULA  for the entire evolution:
+FORMULA 
+which solves the EOMs. Here FORMULA  and
+FORMULA  is a unit
+vector. Here and henceforth we assume an excess flux of neutrinos over
+antineutrinos, implying that initially FORMULA  and FORMULA 
+are collinear and FORMULA .
+According to Eq. (REF ) all FORMULA  lie in the
+plane spanned by FORMULA  and FORMULA  which we call the
+“co-rotating plane.” In the adiabatic limit all FORMULA ,
+and consequently FORMULA , also stay in that plane.
+Therefore we can decompose
+FORMULA 
+and rewrite the EOM of Eq. (REF ) as
+FORMULA 
+Therefore FORMULA  and the co-rotating plane precess around FORMULA  with the common or “co-rotation frequency” FORMULA .
+We conclude that the system evolves simultaneously in two ways: a
+fast precession around FORMULA  determined by FORMULA  and a drift in the co-rotating plane caused by
+the explicit FORMULA  variation. To isolate the latter from the
+former, we go (following Ref. {{cite:5ffcc702-f01c-4325-b096-cf7f42e407da}}) into the
+co-rotating frame where the individual Hamiltonians become
+FORMULA 
+We use the same notation because the relevant components FORMULA , FORMULA , FORMULA , and FORMULA  remain invariant.
+Initially (FORMULA ) the oscillations are synchronized,
+FORMULA , and all FORMULA 
+form a collective FORMULA . As FORMULA  decreases, the FORMULA 
+zenith angles spread out while remaining in a single co-rotating
+plane. In the end (FORMULA ) the co-rotation frequency is
+FORMULA  and Eqs. (REF ) and (REF )
+imply that all final FORMULA  and therefore all FORMULA  with FORMULA  are aligned with FORMULA , the others anti-aligned: a spectral split is inevitable with
+FORMULA  being the split
+frequency. The lengths FORMULA  are conserved and
+eventually all FORMULA  point in the FORMULA 
+directions. Therefore the conservation of flavor-lepton number gives
+us FORMULA , for FORMULA , by virtue of
+FORMULA 
+In general, FORMULA .
+For individual modes the EOMs given by FORMULA  are
+completely solved if we find FORMULA  and
+FORMULA , the component transverse to FORMULA , since FORMULA 
+is conserved and given by the initial condition. From
+Eq. (REF ) we infer FORMULA , from Eq. (REF )
+FORMULA  and FORMULA  so that
+FORMULA 
+Integration of the second equation over FORMULA  gives us
+FORMULA 
+Projecting Eq. (REF ) on the FORMULA –FORMULA –plane we find
+FORMULA  or explicitly
+FORMULA 
+For large FORMULA  when the oscillations are synchronized, this agrees
+with the usual expression for FORMULA 
+{{cite:129b7b11-3d13-4ae2-841b-1071f8fb16b4}}, but it changes when the FORMULA 
+spread out in the zenith direction. Inserting Eq. ()
+into Eq. (REF ) we find
+FORMULA 
+Given FORMULA  and a spectrum FORMULA , we can determine FORMULA  and FORMULA  from Eqs. (REF ) and
+(REF ) for any FORMULA . These equations solve the EOMs
+explicitly in the adiabatic limit.
+We have assumed that all FORMULA  are initially aligned.
+One can relax this restriction and allow some FORMULA  to
+have opposite orientation. If different species are emitted from a
+SN core with equal luminosities but different average energies, the
+spectra will cross over so that some range of modes is prepared,
+say, as FORMULA  and another as FORMULA .
+FIGURE 
+FIGURE 
+
+Neutrinos only
+We illustrate the power of our new results
+with a generic neutrino-only example (FORMULA ). The
+spectrum is taken box like with FORMULA  for
+FORMULA  and 0 otherwise. With FORMULA  being
+conserved we find from Eq. (REF )
+FORMULA 
+In Fig. REF  we show FORMULA  for
+51 individual modes. They start with the common value FORMULA . Later they spread and eventually split,
+some of them approaching FORMULA  and the others FORMULA . Some modes first
+move down and then turn around as FORMULA  changes. A few
+modes do not reach FORMULA  because of imperfect adiabaticity.
+For the box spectrum the integrals Eqs. (REF )
+and (REF ) are easily performed and one can extract
+FORMULA 
+where FORMULA . For FORMULA  and FORMULA 
+the limits of FORMULA  agree with Eq. (REF ) from
+lepton-number conservation. For FORMULA  we obtain
+FORMULA , representing the initial condition FORMULA ,
+and for FORMULA  we find FORMULA .
+With Eq. (REF ) these results provide analytic solutions for
+the adiabatic FORMULA . We show examples in
+Fig. REF  (bottom left) for comparison with
+the numerical solution of the EOMs. The agreement is striking and
+confirms the picture of adiabatic evolution in the co-rotating
+plane. The agreement is poor for modes close to the split (FORMULA ) at low neutrino densities (FORMULA ) where the evolution becomes nonadiabatic.
+
+Adiabaticity condition
+The speed for the FORMULA 
+evolution in the co-rotating plane is FORMULA , where
+FORMULA , while FORMULA  precesses with speed FORMULA . The evolution is
+adiabatic if the adiabaticity parameter FORMULA . With Eqs. (REF )
+and () we find
+FORMULA 
+where FORMULA .
+For our neutrino-only (FORMULA ) box
+spectrum Eqs. (REF ) give
+FORMULA  and
+FORMULA .
+For FORMULA  we obtain FORMULA  and FORMULA 
+so that the last term in the numerator of Eq. (REF )
+dominates: FORMULA . With FORMULA  decreasing, FORMULA 
+increases and at FORMULA  when FORMULA ,
+adiabaticity violation begins. For FORMULA  the denominator
+of Eq. (REF ) gives the dependence FORMULA , and therefore the closer FORMULA 
+to FORMULA  the stronger the adiabaticity violation.
+
+Including antineutrinos.
+As a second generic case we now add
+antineutrinos. One important difference is that even a very small
+initial misalignment between FORMULA  and FORMULA  is enough to
+cause a strong effect. Consider a single energy mode for FORMULA  with
+FORMULA  and one for FORMULA  with FORMULA  that are
+initially aligned in the flavor direction, now taken very close to
+the mass direction, and assume an inverted hierarchy. From the
+dynamics of the flavor pendulum {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}
+we know that in the end FORMULA  is antialigned with FORMULA , whereas FORMULA  retains a large transverse component because
+FORMULA  is conserved: The system prepares itself for a
+spectral split.
+Assuming box spectra for both FORMULA  and FORMULA , we show the
+initial and final FORMULA  in Fig. REF 
+(right), for the inverted hierarchy, FORMULA , and
+FORMULA . From Eq. (REF ) one infers FORMULA .
+For FORMULA  this is FORMULA . Therefore, all modes have
+negative frequencies in the co-rotating frame and tilt away from
+FORMULA  (see also the numerical FORMULA  in
+Fig. REF ). The final split frequency is
+found from flavor lepton number conservation to be FORMULA , using
+FORMULA  for FORMULA . With
+FORMULA  we find FORMULA  in agreement with
+Fig. REF . For FORMULA  we have FORMULA  so that the final split always occurs among the
+neutrinos. According to Fig. REF  the split
+starts when the vector D develops a significant transverse
+component, and it proceeds efficiently in a region FORMULA .
+The “wiggles” in the curves in the right panels of
+Fig. REF  stem from the nutation of the flavor
+pendulum {{cite:6696631f-fa10-485e-82c4-3a6c76c7b0ed}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}. We have chosen a
+relatively fast FORMULA  evolution (FORMULA ),
+implying poor adiabaticity, to avoid too many nutation periods on the
+plot. For a very slow FORMULA  the nutations disappear and the
+co-rotating frame removes the full global evolution of the system.
+
+Discussion
+We have studied the phenomenon of spectral
+splits that is caused by neutrino-neutrino refraction in the SN
+dense-neutrino region. We have carried previous explanations of this
+novel effect {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}} to the point of
+explicit solutions in the adiabatic limit.
+A spectral split occurs when a neutrino ensemble is prepared such
+that the common direction of the flavor polarization vectors
+deviates from the mass direction. An adiabatic density decrease
+turns all modes below a split energy FORMULA  into the mass direction, and the others in
+the opposite direction. Remarkably, during this phase all modes
+remain in a single rotating plane, even after losing full
+synchronization. FORMULA  is determined by lepton number
+conservation in the mass basis.
+The spectral split is a generic feature of the adiabatic evolution
+when the density changes from large to small values. It can appear
+even in the absense of neutrino-neutrino interactions. Indeed, in the
+usual MSW case the evolution to zero density transforms FORMULA  to
+FORMULA  and FORMULA  to FORMULA  for all
+energies. This corresponds to FORMULA . The
+neutrino-neutrino interactions shift FORMULA  to non-zero
+values.
+A spectral split is caused in the SN neutrino (but not antineutrino)
+flux by neutrino-neutrino interactions alone, especially during the
+accretion phase when ordinary MSW resonances occur far outside the
+dense-neutrino region. Later the matter profile may become so shallow
+that the H-resonance moves into this region {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:e191c0f7-5182-4fd8-b1a3-3f954aaa74d8}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}. The simultaneous action of collective
+effects and an ordinary MSW resonance may then cause spectral splits
+for both neutrinos and antineutrinos, leading to a rich phenomenology,
+perhaps modifying r-process nucleosynthesis {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}}. Of course, the fluxes will be further processed by
+ordinary conversion in the SN envelope {{cite:251292aa-b0e7-4da2-9f62-ea70b3d5f823}}, {{cite:a7814efa-f41b-4c44-9e07-79024942c7dc}}, thus modifying observable signatures. Still,
+observing spectral splits would provide a smoking gun signature both
+for the relevant neutrino properties and, if it occurs among
+antineutrinos at late times, for the occurrence of a shallow density
+profile above the neutrino sphere.
+The neutrino flux emitted by a SN is anisotropic so that
+neutrinos on different trajectories experience different
+neutrino-neutrino interaction histories {{cite:99403161-8e3e-41d2-b040-30096db714b8}}, {{cite:9a42529f-f346-47d7-bd45-8a112e3faad8}} that would be expected to cause kinematical flavor
+decoherence of different angular modes {{cite:ccd8404e-8354-4815-aa87-5cfbee8f6975}}. A
+numerical exploration reveals, however, that in a typical SN scenario
+the deleptonization flux suppresses decoherence and the evolution is
+almost identical to that of an isotropic
+ensemble {{cite:66e812f7-e9b8-4a2a-9a73-bb4670a600f4}}. Our treatment of the spectral
+evolution is apparently applicable in a realistic SN context.
+Collective neutrino oscillation phenomena in a SN may well be
+important for the explosion mechanism, r-process nucleosynthesis and
+may provide detectable signatures in a high-statistics signal from the
+next galactic SN. Building on previous ideas, our formalism gives a
+simple, elegant and quantitative explanation of seemingly impenetrable
+numerical results. Our approach provides the basis for developing a
+quantitative understanding of realistic consequences of collective
+neutrino oscillations for SN physics and observational signatures.
+We acknowledge support by the Deutsche Forschungsgemeinschaft (TR 27
+“Neutrinos and beyond”), the European Union (ILIAS project,
+contract RII3-CT-2004-506222), the Alexander von Humboldt
+Foundation, and The Cluster of Excellence “Origin and Structure of
+the Universe” (Munich and Garching).

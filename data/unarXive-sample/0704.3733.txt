@@ -1,0 +1,344 @@
+
+
+Torsion units
+V.A. Bovdi, A.B. Konovalov and S. Linton
+Torsion units in integral group ring of the  Mathieu simple group  FORMULA
+V.A. Bovdi, A.B. Konovalov and S. Linton
+V.A. Bovdi
+Institute of Mathematics, University of Debrecen,
+P.O. Box 12, H-4010 Debrecen, Hungary
+Institute of Mathematics and Informatics, College of Nyíregyháza,
+Sóstói út 31/b, H-4410 Nyíregyháza, Hungaryvbovdi@math.klte.huA.B. Konovalov
+School of Computer Science,
+University of St Andrews,
+North Haugh, St Andrews, Fife, KY16 9SX, Scotlandkonovalov@member.ams.orgS. Linton
+School of Computer Science,
+University of St Andrews,
+North Haugh, St Andrews, Fife, KY16 9SX, Scotlandsal@cs.st-and.ac.uk
+The research was supported by OTKA grants No.T 43034,
+No.K61007 and Francqui Stichting (Belgium) grant ADSI107
+Primary 16S34, 20C05, secondary 20D08
+Zassenhaus conjecture, Kimmerle conjecture,
+torsion unit, partial augmentation, integral group ring
+
+We investigate the possible character values of
+torsion units of the normalized unit group of the
+integral group ring of Mathieu sporadic group
+FORMULA . We confirm the Kimmerle conjecture on prime graphs for this
+group and specify the partial augmentations for possible
+counterexamples to the stronger Zassenhaus conjecture.
+
+Introduction, conjectures and main results
+Let FORMULA  be the normalized unit group of the
+integral group ring FORMULA  of a finite group FORMULA .   A long-standing
+conjecture of H. Zassenhaus   (ZC)   says that every torsion unit
+FORMULA  is conjugate within the rational group algebra
+FORMULA  to an element in FORMULA  (see {{cite:6c21c651-d95e-4d08-9932-4ac11b21367e}}).
+For finite simple groups the main tool for the investigation of the
+Zassenhaus conjecture is the Luthar–Passi method, introduced in
+{{cite:6cb1edc7-0c68-4c4d-8207-c9b923860893}} for the case of FORMULA  and then applied in
+{{cite:3acbf338-e793-47c1-887b-dbf3a329253d}} for the case of FORMULA .
+Later M. Hertweck in {{cite:24aae0c8-355e-4324-b5d7-0a404f649117}} extended
+the method and applied it to FORMULA .
+The same method has also proved to be useful for some groups containing
+non-trivial normal subgroups. For some recent results we refer to
+{{cite:cba77769-4831-4570-8903-d803f6679bc7}}, {{cite:ff40e2ea-a4d0-480b-b0bb-8098b823677a}}, {{cite:8f21ec9c-925b-42cb-8403-0dc20f2b3cd7}}, {{cite:a0a7fb55-3857-413a-8ad2-d9afd864cb26}}, {{cite:24aae0c8-355e-4324-b5d7-0a404f649117}}, {{cite:8a70861f-eabc-40d3-9cd0-a2d120e367c1}}.
+Some related properties and weakened variations of the
+Zassenhaus conjecture can be found in
+{{cite:a5a45545-458f-457e-bbac-7a511e47e46d}}, {{cite:d25f28cb-7daa-4802-b91a-2d0b6de17a2a}}, {{cite:58e99250-4292-4338-b2e1-f3ef4a93852b}}.
+To define the conjectures we will investigate, and describe the
+methods we will use, we introduce some notation. By FORMULA  we
+denote the set of all primes dividing the order of FORMULA . The
+Gruenberg–Kegel graph (or the prime graph) of FORMULA  is the graph
+FORMULA  with vertices labeled by FORMULA  and
+an edge from FORMULA  to FORMULA  if there is an element of order FORMULA  in
+FORMULA . In {{cite:58e99250-4292-4338-b2e1-f3ef4a93852b}} W. Kimmerle proposed the
+following weakened variation of the Zassenhaus conjecture:
+
+(KC)       If FORMULA  is a finite group then FORMULA .
+
+It is easy to see that (ZC) implies KC since it implies
+that the set of orders of torsion units of FORMULA  is the
+same the set of orders of elements of FORMULA .
+In the same paper W. Kimmerle verified that (KC) holds for
+finite Frobenius and solvable groups.
+We remark that with respect to the
+so-called FORMULA -version of the Zassenhaus conjecture the investigation
+of Frobenius groups was completed by M. Hertweck and the first author
+in {{cite:bd69df9a-244e-496f-b2b4-3c33ca7d2399}}.
+In {{cite:d46d7a28-5973-4d85-a3c7-1d8b84a6b809}}, {{cite:ff40e2ea-a4d0-480b-b0bb-8098b823677a}}, {{cite:51e7a09a-0bad-4c63-8829-599e2e21acfa}}, {{cite:fbe7d68c-059d-44c4-9874-3eb9d5ee994e}}
+(KC) was confirmed for the sporadic simple groups FORMULA ,
+FORMULA , FORMULA  and some Janko simple groups.
+Here we continue these investigations for the Mathieu simple group
+FORMULA . Although we cannot prove the rational conjugacy of torsion
+units of FORMULA  with elements of FORMULA , our main
+result gives a lot of information on the orders and partial
+augmentations of these units. In particular, we confirm Kimmerle's
+conjecture for this group.
+Let FORMULA . It is well known
+(see {{cite:654c978b-446f-407b-b5ad-877e83064881}}, {{cite:656ddc63-4731-4ee0-8cb2-8aa1be25cb37}}) that
+FORMULA 
+and
+FORMULA .
+The group FORMULA  has 12 irreducible characters of the
+following degrees:
+1, 21, 45, 45, 55, 99, 154, 210,
+231, 280, 280 and 385.
+Let
+FORMULA 
+be the collection of all conjugacy classes of FORMULA , where the first
+index denotes the order of the elements of this conjugacy class
+and FORMULA . Suppose FORMULA 
+has finite order FORMULA . Denote by
+FORMULA  the partial augmentation of FORMULA  with respect to
+FORMULA . From the Berman–Higman Theorem (see {{cite:e0feab63-68e7-420a-9bc0-3456914c9b97}} and {{cite:162ded68-e07b-4a2c-90a7-08346604ce8f}}, Ch.5, p.102) one knows that
+FORMULA  and
+FORMULA 
+Hence, for any character FORMULA  of FORMULA , we get that FORMULA , where FORMULA  is a representative of the
+conjugacy class FORMULA .
+Our main result is the following
+Theorem 1 
+Let FORMULA  denote the Mathieu simple group FORMULA . Let FORMULA  be
+a torsion unit of FORMULA  of order FORMULA . Denote by
+FORMULA  the tuple
+FORMULA 
+of partial augmentations of FORMULA  in FORMULA .
+The following properties hold.
+(i)
+There are no elements of order
+10, 14, 15, 21, 22, 33, 35,
+55 or 77 in FORMULA . Equivalently,
+if FORMULA , then FORMULA  is the
+order of some element FORMULA .
+(ii)
+If FORMULA , then FORMULA  is rationally conjugate to
+some FORMULA .
+(iii)
+If FORMULA , then all components of FORMULA  are zero
+except possibly FORMULA ,FORMULA  and FORMULA , and the triple
+FORMULA  is one of
+FORMULA 
+(iv)
+If FORMULA , then all components of FORMULA  are zero
+except possibly FORMULA ,FORMULA  and FORMULA , and the triple
+FORMULA  is one of
+FORMULA 
+(v)
+If FORMULA , then all components of FORMULA  are zero
+except possibly FORMULA  and FORMULA  and the pair FORMULA 
+is one of
+FORMULA 
+(vi)
+If FORMULA , then all components of FORMULA  are zero
+except possibly FORMULA  and FORMULA  and the pair FORMULA 
+is one of
+FORMULA 
+
+
+Note that using our implementation of the Luthar–Passi method,
+which we intend to make available in the GAP package LAGUNA {{cite:433b0aa7-6d00-4283-b7dc-2eb4868b6351}},
+we are able to compute the set of 76 tuples containing (likely as a proper
+subset) possible tuples of partial augmentations for units of order 8,
+listed in the Appendix 1. For the case of order 12 in the Appendix 2 we
+listed 1166 tuples which can not be eliminated using the Luthar–Passi method.
+As an immediate consequence of part (i) of the Theorem we obtain
+Corollary 1 If FORMULA  then FORMULA .
+
+
+Preliminaries
+The following result allows a reformulation of
+the Zassenhaus conjecture in terms of vanishing of
+partial augmentations of torsion units.
+Proposition 1 
+(see {{cite:6cb1edc7-0c68-4c4d-8207-c9b923860893}} and
+Theorem 2.5 in {{cite:057e8651-b81d-4237-9ccc-d76b4eeabc64}})
+Let FORMULA 
+be of order FORMULA . Then FORMULA  is conjugate in FORMULA  to an element FORMULA  if and only if for
+each FORMULA  dividing FORMULA  there is precisely one
+conjugacy class FORMULA  with partial augmentation
+FORMULA .
+
+The next results now serve to restrict the possible values of the partial augmentations
+of torsion units.
+Proposition 2 
+(see {{cite:8f21ec9c-925b-42cb-8403-0dc20f2b3cd7}}, Proposition 3.1;
+{{cite:24aae0c8-355e-4324-b5d7-0a404f649117}}, Proposition 2.2)
+Let FORMULA  be a finite
+group and let FORMULA  be a torsion unit in FORMULA . If FORMULA  is an element of FORMULA  whose FORMULA -part,
+for some prime FORMULA , has order strictly greater
+than the order of the FORMULA -part of FORMULA , then
+FORMULA .
+
+The next result is explained in detail in {{cite:6cb1edc7-0c68-4c4d-8207-c9b923860893}} and
+{{cite:bd69df9a-244e-496f-b2b4-3c33ca7d2399}}, {{cite:24aae0c8-355e-4324-b5d7-0a404f649117}}.
+Proposition 3 
+(see {{cite:24aae0c8-355e-4324-b5d7-0a404f649117}}, {{cite:6cb1edc7-0c68-4c4d-8207-c9b923860893}}) Let either FORMULA  or FORMULA  a prime
+divisor of FORMULA . Suppose
+that FORMULA  has finite order FORMULA  and assume FORMULA  and
+FORMULA  are coprime in case FORMULA . If FORMULA  is a complex primitive FORMULA -th root
+of unity and FORMULA  is either a classical character or a FORMULA -Brauer
+character of FORMULA , then for every integer FORMULA  the number
+FORMULA 
+is a non-negative integer.
+
+Note that if FORMULA , we will use the notation FORMULA 
+for FORMULA .
+Finally, we shall use the well-known bound for
+orders of torsion units.
+Proposition 4  (see {{cite:b69c31ce-7541-4dd5-893e-d0c81f26ca46}})
+The order of a torsion element FORMULA 
+is a divisor of the exponent of FORMULA .
+
+In case of units of prime power order, the following Proposition
+may also be useful to eliminate some tuples of partial augmentations.
+Proposition 5  (see {{cite:b69c31ce-7541-4dd5-893e-d0c81f26ca46}})
+Let FORMULA  be a prime, and let FORMULA  be a torsion unit of FORMULA  of order FORMULA .
+Then for FORMULA  the sum of all partial augmentations of FORMULA  with respect to
+conjugacy classes of elements of order FORMULA  is divisible by FORMULA .
+
+
+Proof of the Theorem
+Throughout this section we denote FORMULA  by FORMULA .
+The ordinary and FORMULA -Brauer character tables of FORMULA , which will be denoted by
+FORMULA  where FORMULA , can be found using
+the computational algebra system GAP {{cite:654c978b-446f-407b-b5ad-877e83064881}}, which derives its
+data from {{cite:f2957dd9-0c82-458d-92ee-32b404875311}}, {{cite:a2225d9d-b6ae-414b-9465-c3b99fcad2be}}. For the characters
+and conjugacy classes we will use throughout the paper the same
+notation, including indexation, as used in the GAP Character
+Table Library.
+Since the group FORMULA  possesses elements of
+orders 2, 3, 4, 5, 6, 7, 8 and 11, we first
+investigate units of all of these orders except 8.
+After this, since by Proposition REF , the
+order of each torsion unit divides the exponent of FORMULA , it
+remains to consider units of orders 10, 12, 14, 15, 21,
+22, 33, 35, 55 and 77. We prove that FORMULA 
+contains no units of any of these
+orders, except possibly for orders 12 and 24.
+Now we consider each case separately.
+FORMULA  Let FORMULA  be a unit of order 2, 3 or 5. Using
+Proposition REF  we immediately obtain that all partial
+augmentations except one are zero. Thus by Proposition REF  part
+(ii) of Theorem REF  is proved.
+FORMULA  Let FORMULA  be a unit of order 4.
+By (REF ) and Proposition REF  we get
+FORMULA . Now using Proposition REF 
+we obtain the following system of inequalities:
+FORMULA 
+Put FORMULA  and FORMULA ,
+then FORMULA  and
+FORMULA . Thus, we obtain the system of linear equations
+FORMULA 
+Solving such systems for all possible combinations of values of FORMULA  and FORMULA ,
+and considering additional inequalities
+FORMULA 
+and also restrictions given by Proposition REF , we get only
+the 34 integer solutions FORMULA  listed in part (iii) of the Theorem REF .
+FORMULA  Let FORMULA  be a unit of order 6.
+By (REF ) and Proposition REF  we get
+FORMULA . By Proposition REF 
+we obtain the following system of inequalities:
+FORMULA 
+Using calculations similar to the previous case,
+we get only the 15 integer solutions FORMULA  listed in part (iv)
+of the Theorem REF .
+FORMULA  Let FORMULA  be a unit of order 7.
+By (REF ) and Proposition REF  we get
+FORMULA . Using Proposition REF 
+we obtain the following system of inequalities:
+FORMULA 
+Using that FORMULA , we get that FORMULA , and after this it is
+easy to check that we have only the four integer solutions FORMULA  listed in part (v)
+of the Theorem REF .
+FORMULA  Let FORMULA  be a unit of order 11.
+By (REF ) and Proposition REF  we get
+FORMULA . Using Proposition REF 
+we obtain the following system of inequalities:
+FORMULA 
+Using calculations similar to the previous case, we get
+only the ten integer solutions for FORMULA  listed in part (vi)
+of the Theorem REF .
+It remains to prove part (i) of the Theorem REF ,
+considering units of FORMULA  of orders
+10, 14, 15, 21, 22, 33, 35, 55 and 77.
+FORMULA  Let FORMULA  be a unit of order 10.
+By (REF ) and Proposition REF  we get
+FORMULA . Using Proposition REF 
+we obtain the following system of inequalities:
+FORMULA 
+that has no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 14.
+Then by (REF ) and Proposition REF  we get
+FORMULA .
+We need to consider four cases
+defined by part (v) of Theorem REF , but in all of them
+using Proposition REF  we obtain the same system of inequalities:
+FORMULA 
+which has no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 15.
+By (REF ) and Proposition REF  we get
+FORMULA . Using Proposition REF 
+we obtain the following system of inequalities:
+FORMULA 
+From this follows that FORMULA ,
+and all conditions together leave us no integer solutions.
+FORMULA  Let FORMULA  be a unit of order 21. Then
+by (REF ) and Proposition REF  we have
+FORMULA 
+We need to consider four cases determined by part (v) of Theorem REF .
+Using Proposition REF  we obtain the following systems of inequalities:
+FORMULA 
+FORMULA 
+which have no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 22.
+Then by (REF ) and Proposition REF  we get
+FORMULA 
+We need to consider ten cases determined by part (vi) of the Theorem REF .
+In each case using Proposition REF  we obtain the following system of inequalities:
+FORMULA 
+that has no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 33.
+Then by (REF ) and Proposition REF  we get
+FORMULA 
+As in the previous case, we need to consider ten cases determined by part (vi) of the Theorem REF .
+In each case using Proposition REF  we obtain the same system:
+FORMULA 
+that has no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 35.
+Then by (REF ) and Proposition REF  we get
+FORMULA .
+We need to consider four cases
+defined by part (v) of the Theorem REF , but in all of them
+using Proposition REF  we obtain the same system of inequalities:
+FORMULA 
+which has no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 55.
+Then by (REF ) and Proposition REF  we get
+FORMULA 
+We need to consider ten cases determined by part (vi) of the Theorem REF .
+In each case using Proposition REF  we obtain the following system of inequalities:
+FORMULA 
+FORMULA 
+that has no solutions such that all FORMULA  are non-negative integers.
+FORMULA  Let FORMULA  be a unit of order 77.
+Then by (REF ) and Proposition REF  we have
+FORMULA 
+We must consider 40 cases determined by parts (v) and (vi) of the Theorem REF ,
+but luckily in all of them using Proposition REF  we obtain the same system of inequalities:
+FORMULA 
+which has no solutions such that all FORMULA  are non-negative integers.
+This finishes the proof of Theorem REF .
+
+Appendix 1.
+
+Possible partial augmentations FORMULA  for units of order 8:
+FORMULA 
+
+Appendix 2.
+
+Possible partial augmentations FORMULA  for units of order 12:
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 

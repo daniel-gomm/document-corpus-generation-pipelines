@@ -1,0 +1,151 @@
+
+Phonon effect on two coupled quantum dots at finite temperature
+Cheng-Ran Du
+Ka-Di Zhu
+Department of Physics, Shanghai Jiao Tong University,
+Shanghai 200240, People's Republic of China
+The quantum oscillations of population in an asymmetric double
+quantum dots system coupled to a phonon bath are investigated
+theoretically. It is shown how the environmental temperature has
+effect on the system.
+
+68.65.Hb
+The asymmetric double semiconductor quantum dots system
+(DQD) is referred as quantum dot molecule due to its similar
+properties to natural molecule. By using self-assembled dot growth
+technology{{cite:95f98f5e-42f5-4157-8fcb-bb81deefeeeb}} we can fabricate these molecule
+-like dots, in which the confined electrons can transfer between
+each quantum dot through tunneling effect. Up to now, such system
+has been studied extensively. Under the influence of an external
+oscillatory (optical pulse or voltage) driving field, one electron
+can be excited from the valence to the conduction band in one dot,
+which can in turn tunnel to the second
+dot{{cite:b0b120a2-d13a-4be4-aa74-da1d8d044486}}{{cite:14456cae-1c54-41ea-ac90-155b9fe923fc}}. Recent progress in semiconductor
+nanotechnology indicate that these features have advantages for the
+application in many quantum devices, such as QD
+lasers{{cite:93476502-a463-4a28-96e1-0eb59da76d86}}{{cite:54675fce-ea04-4355-add8-dcd8cc0f6fc3}}, QD diodes{{cite:ae027fa9-4155-4b5a-9486-4d1f3a42bf11}} as well as
+quantum computing processes{{cite:f9d5ddb4-31db-4273-9579-fcbffdbc5b10}}{{cite:81a10f17-86a0-487d-ad01-75c375de9f51}}. However, QDs are
+embedded in the surrounding solid matrix, thus the effect of
+electron-phonon interaction during the tunneling is not
+negligible{{cite:02261096-6f4a-4a7f-973d-c4a9030bc6e4}}. Therefore, the environmental temperature will
+have significant influence on the desired QD devices. In this
+letter, we analyze how the optically driven asymmetrical DQD device
+depends on the environmental temperature.
+FIGURE 
+The asymmetrical DQD consists of two dots (the left and the right
+one) with different geometries and has the ground state FORMULA 
+( the system without excitation), first excited state FORMULA  (
+a pair of electron and hole bound in the left dot) and second
+excited state FORMULA  (one hole in the left dot and one electron
+in the right dot). Any other states are effectively decoupled from
+these three states because the valence band levels of two dots
+become far off-resonance and the hole cannot tunnel to the right dot
+consequently. Such model can be shown in Fig..
+Considering that the single electron is unavoidably scattered by
+phonons while tunneling between two dots, the Hamiltonian is given
+by (FORMULA ){{cite:b0b120a2-d13a-4be4-aa74-da1d8d044486}}{{cite:02261096-6f4a-4a7f-973d-c4a9030bc6e4}}
+FORMULA 
+where FORMULA  is the energy of stateFORMULA , FORMULA 
+is the electron-tunneling matrix element, FORMULA  is the
+frequency of the applied field,
+FORMULA , where FORMULA is the electric
+dipole moment, describes the coupling to the radiation field of the
+excitonic transition, FORMULA  is the optical pulse amplitude.
+FORMULA  and FORMULA  are the creation (annihilation)
+operator and energy for FORMULA th phonon mode, respectively, FORMULA is
+the coupling constant determined by the crystal material.
+Applying a canonical transformation with the
+generator{{cite:02261096-6f4a-4a7f-973d-c4a9030bc6e4}}{{cite:bfa86f47-2587-43b7-b029-318c683f9130}}{{cite:e539cf5f-e78c-4a4e-8a94-4dde6c315e1d}}
+FORMULA 
+we have
+FORMULA 
+where
+FORMULA 
+FORMULA 
+where
+FORMULA 
+The Hamiltonian in the interaction picture is given by
+FORMULA 
+where FORMULA ,
+FORMULA  is the detuning of the applied
+field to the the left dot, and
+FORMULA 
+FORMULA 
+In what follows, we assume that relaxing time of the environment
+(phonon fields) is so short that the excitons do not have time to
+exchange the energy and information with the environment before the
+environment returns to its equilibrium state. The excitons interact
+weakly with the environment so that the equilibrium thermal
+properties of the environment are preserved. Therefore it is
+reasonable to replace the operators FORMULA , FORMULA , FORMULA 
+and FORMULA  with their expectation values over the phonon
+number states which are determined by a thermal average and write
+the Hamiltonian as
+FORMULA 
+where FORMULA  is the Huang-Rhys
+factor which corresponds to the electron-phonon
+interactions{{cite:385350ab-2c4d-46e6-9a62-67eb93ee5c19}}. As a result of quantum lattice
+fluctuations, the exciton-phonon interaction affects our quantum
+system even at zero temperature. Here we have made an assumption
+that all the phonons have the same frequency, i.e.,
+FORMULA , and write the phonon populations as
+ FORMULA{{cite:e539cf5f-e78c-4a4e-8a94-4dde6c315e1d}}{{cite:ef74dd51-b854-429d-9b1c-fa04ffe5a35e}}{{cite:9d784cf8-4a9a-490e-badb-358fe0f1a152}}.
+Now we proceed to solve the equation of motion for the single
+electron state vectorFORMULA , i.e.,
+FORMULA 
+In general, FORMULA  is a linear combination of
+FORMULA , FORMULA  and FORMULA ,
+FORMULA 
+Suppose the initial state of the system is in its ground state
+FORMULA , i.e., FORMULA  and FORMULA . We
+have
+FORMULA 
+FORMULA 
+FORMULA 
+
+Assuming the optical pulse has a broad square shape, the case
+FORMULA  (the applied optical field is in resonance with the
+zero-phonon line) and FORMULA  (state FORMULA  and
+FORMULA  are in exactly resonance) yields.
+FORMULA 
+FORMULA 
+FORMULA 
+
+where FORMULA  stands for the possibility of state
+FORMULA , FORMULA , and
+FORMULA , with
+FORMULA  and
+FORMULA . This analytical
+result indicates that, in this simplest case, the coherent
+population oscillation are similar to those at zero temperature. But
+the Rabi oscillation frequency FORMULA  and the electron-tunneling
+matrix element FORMULA  are renormalized by the factor of
+FORMULA  and
+FORMULA  in stead of
+FORMULA  and FORMULA , respectively, as
+shown in Fig.REF . We note that with the increase of
+temperature, the Rabi frequency drops with the decline of the
+amplitude. Hence we plot in Fig.REF  the average occupation
+of state FORMULA  FORMULA 
+FORMULA  as function of the temperature, which is obviously show
+that it is less possible to create the state with one electron in
+the second dot (state FORMULA ) when the temperature is high.
+FIGURE 
+FIGURE 
+On the other hand, the environment temperature will also affect the
+beat pattern, which is caused by the electron-phonon coupling. with
+the rise of the temperature, the beat pattern will decay and the
+population of the state FORMULA  will decrease as well. As the
+temperature reachs about FORMULA , the beat pattern almost
+disappears. So the environment temperature should be considered in
+the practical applications.
+In conclusion, we have investigated the effect of the environment
+temperature on an asymmetrical double quantum dot driven by an
+optical pulse. The Rabi oscillation frequency FORMULA  and the
+electron-tunneling matrix element FORMULA  are renormalized by the
+factor of FORMULA  and
+FORMULA . With the rise of the
+environment temperature, the population of state FORMULA 
+declines dramatically and the beat pattern, which is caused by the
+phonon effect, decays.
+FIGURE 

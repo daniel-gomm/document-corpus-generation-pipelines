@@ -1,0 +1,1442 @@
+
+
+        
+ 
+On Colorings of Squares of Outerplanar GraphsAn earlier
+version of this current paper appeared in SODA 2004 {{cite:90a34ba0-9c6e-43cf-a3d8-48d0f03adf44}}.
+
+Geir Agnarsson
+Department of Mathematical Sciences,
+George Mason University,
+MS 3F2,
+4400 University Drive,
+Fairfax, VA 22030,
+geir@math.gmu.edu
+Magnús M. Halldórsson
+
+Department of Computer Science, University of Iceland, Reykjavík, Iceland.
+mmh@hi.isWe study vertex colorings of the square FORMULA  of
+an outerplanar graph FORMULA . We find the optimal bound
+of the inductiveness, chromatic number and the clique
+number of FORMULA  as a function of the maximum degree
+FORMULA  of FORMULA  for all FORMULA .
+As a bonus, we obtain the optimal bound of the
+choosability (or the list-chromatic number) of FORMULA 
+when FORMULA . In the case of chordal
+outerplanar graphs, we classify exactly which graphs have
+parameters exceeding the absolute minimum.
+
+2000 MSC: 05C05, 05C12, 05C15.
+
+Keywords:
+outerplanar,
+chordal,
+weak dual,
+power of a graph,
+greedy coloring,
+chromatic number,
+clique number,
+inductiveness.
+Introduction
+The square of a graph FORMULA  is the graph FORMULA  on the same vertex set
+with edges between pair of vertices of distance one or two in FORMULA .
+Coloring squares of graphs has been studied, e.g., in relation to frequency
+allocation. This models the case when nodes represent both senders and
+receivers, and two senders with a common neighbor will interfere if
+using the same frequency.
+The problem of coloring squares of graphs has particularly seen much
+attention on planar graphs.
+A conjecture of Wegner {{cite:c48051af-5fb2-474a-bc8d-40d97505e714}} dating from 1977 (see
+{{cite:c9c75145-ce00-496f-980d-db1fc3e00a10}}), states that the square of every planar graph FORMULA  of
+maximum degree FORMULA  has a chromatic number which does not
+exceed FORMULA . The conjecture matches the maximum clique
+number of these graphs. Currently the best upper bound known is
+FORMULA  by Molloy and Salavatipour {{cite:82a5c3e9-66b1-4e3c-9f6f-3c45e6cca194}}.
+An earlier paper of the current authors {{cite:f6757b89-e12c-47ea-be8f-2ff189df960f}} gave a bound
+of FORMULA  for the chromatic number of squares of
+planar graph with large maximum degree FORMULA . This is based
+on bounding the inductiveness of the graph, which is the maximum
+over all subgraphs FORMULA  of the minimum degree of FORMULA . It was also shown
+there that this was the best possible bound on the inductiveness. Borodin et
+al {{cite:1882f809-04d1-4b87-8c8f-fd37677e2919}} showed that this bound holds for all FORMULA .
+Inductiveness has the additional advantage of also bounding the
+list-chromatic number.
+Inductiveness leads to a natural greedy algorithm (henceforth called Greedy):
+Select vertex FORMULA  of minimum degree, sometimes called
+a simplicial vertex of FORMULA , recursively color FORMULA ,
+and finally color FORMULA  with the smallest available color.
+Alternatively, FORMULA -inductiveness leads to an inductive ordering
+FORMULA  of the vertices such that any vertex FORMULA  has at most FORMULA 
+neighbors among FORMULA . Then, if we color the
+vertices first-fit in the
+reverse order FORMULA  (i.e. assigning each vertex
+the smallest color not used among its previously colored neighbors),
+the number of colors used is at most FORMULA . Implemented efficiently,
+the algorithm runs in time linear in the size of the graph {{cite:d3d4b534-b031-4dae-909e-25bbdf60f2d8}}.
+The algorithm has also the special advantage
+that it requires only the square graph
+FORMULA  and does not require information about the underlying graph FORMULA .
+The purpose of this article is to further contribute to the study of
+various vertex colorings of squares of planar graphs, by examining an
+important subclass of them, the class of outerplanar graphs.
+Observe that the neighborhood of a vertex with FORMULA  neighbors induces
+a clique in the square graph. Thus, the chromatic number, and in fact
+the clique number, of any graph of maximum degree FORMULA  is
+necessarily a function of FORMULA  and always at least FORMULA .
+Our results.
+We derive tight bounds on chromatic number, as well as the
+inductiveness and the clique number of the square of an outerplanar graph
+FORMULA  as a function of the maximum degree FORMULA  of FORMULA .
+One of the main results, given in Section , is that when FORMULA , the
+inductiveness of FORMULA  is exactly FORMULA . It follows that the clique
+and chromatic numbers are exactly FORMULA  and that Greedy yields
+an optimal coloring. As a bonus we obtain in this case that the
+choosability (see Definition REF ) is
+the optimal FORMULA . We can then treat the low-degree cases
+separately to derive a linear-time algorithm independent of FORMULA .
+We examine in detail the low-degree cases, FORMULA , and
+derive best possible upper bounds on the maximum clique and chromatic numbers,
+as well as inductiveness of squares of outerplanar graphs.
+These bounds are illustrated in Table REF .
+We treat the special case of chordal outerplanar graphs separately,
+and further classify all chordal outerplanar graphs FORMULA  for
+which the inductiveness of FORMULA  exceeds FORMULA  or the clique or
+chromatic number of FORMULA  exceed FORMULA .
+TABLE 
+
+Related results.
+It is straightforward to show that the inductiveness of a square graph
+of an outerplanar graph of degree FORMULA  is at most FORMULA  (see
+{{cite:f6757b89-e12c-47ea-be8f-2ff189df960f}}), and this is attained by an inductive ordering of FORMULA .
+Calamoneri and Petreschi {{cite:c037dda9-45ed-44a0-8963-9c9d7051facc}} gave a linear time
+algorithm to distance-2 color outerplanar graphs, as well as for
+related problems.
+They showed that it uses an optimal FORMULA  colors whenever FORMULA , and at most FORMULA  colors for FORMULA .
+In comparison, we give tight upper and lower bounds for all values of
+FORMULA , give a thorough treatment of the subclass of chordal graphs,
+and analyze a generic parameter, inductiveness, that gives as a bonus similar bounds
+for the list chromatic number.
+Zhou, Kanari and Nishizeki {{cite:51f96823-7e7b-4e14-aa9a-f0d85a271f31}} gave a polynomial time
+algorithm to find an optimal coloring of any power of a partial
+FORMULA -tree FORMULA , given FORMULA . Since outerplanar graphs are partial 2-trees,
+this solves the coloring problem we consider. For squares of
+outerplanar graphs, their algorithm has complexity
+FORMULA ,
+which is impractical for any values of FORMULA  and FORMULA .
+When FORMULA  is constant, one can use the observation of
+Krumke, Marathe and Ravi {{cite:6b80829b-c33c-4ec3-babe-dbbaf2701f70}} that squares of outerplanar
+graphs have treewidth at most FORMULA .
+Thus, one can use efficient (FORMULA  time) algorithms for coloring
+partial FORMULA -trees, obtaining a linear-time algorithm when FORMULA  is constant.
+
+Organization.
+The rest of the paper is organized as follows:
+In Section  we introduce our notation and definitions, and
+show how the problems regarding the clique number and chromatic number
+reduce to the case of biconnected outerplanar graphs.
+Inductiveness is treated in Section . We then
+treat the chordal case in Section . Many examples
+here show that the lower bounds derived in other sections
+(i.e. Sections  and ) are
+optimal. The clique number is derived in Section .
+The last Section  derives optimal bounds on chromatic number
+in each of the smaller cases of FORMULA . The main
+result there is the optimal bound for the
+chromatic number of FORMULA  in the hardest case when FORMULA .
+
+Definitions
+In this section we give some basic definitions and prove results that will
+be used later for our results in the following sections.
+Graph notation.
+The set FORMULA  of natural numbers will be denoted
+by FORMULA . Unless otherwise stated, a graph FORMULA  will always be
+a simple graph FORMULA  where FORMULA  is the set of vertices
+or nodes, and FORMULA  the set of edges of FORMULA . The edge between the vertices
+FORMULA  and FORMULA  will be denoted by FORMULA  (here FORMULA  and FORMULA  will mean the
+same undirected edge).
+By coloring we will always mean vertex coloring.
+We denote by FORMULA  the chromatic number of FORMULA  and
+by FORMULA  the clique number of FORMULA .
+The degree of a vertex FORMULA  in graph FORMULA  is denoted by FORMULA .
+We let FORMULA  and FORMULA  denote
+the minimum and maximum
+degree of a vertex in FORMULA  respectively.
+When there is no danger of ambiguity, we simply write FORMULA  instead of FORMULA .
+We denote by FORMULA  the open neighborhood of FORMULA  in FORMULA , that is the set
+of all neighbors of FORMULA  in FORMULA , and by FORMULA  the closed neighborhood
+of FORMULA  in FORMULA , that additionally includes FORMULA .
+The square graph FORMULA  of a graph FORMULA  is a graph on the same vertex set
+as FORMULA  in which additionally to the edges of FORMULA ,
+every two vertices with a common neighbor in FORMULA  are
+also connected with an edge. Clearly this is the same as the graph
+on FORMULA  in which each pair of vertices of distance 2 or less in FORMULA 
+are connected by an edge in FORMULA .
+By a FORMULA -vertex we will mean a vertex of degree at most 2 in FORMULA 
+and distance-2 degree at most FORMULA .
+`
+
+Tree terminology.
+The diameter of FORMULA  is the number of edges in the longest simple path in
+FORMULA  and will be denoted by FORMULA .
+For a tree FORMULA  with FORMULA  we can form the pruned tree
+FORMULA  by removing all the leaves of FORMULA .
+A center of FORMULA  is a vertex of distance
+at most FORMULA  from all other vertices of FORMULA .
+A center of FORMULA  is either unique or one of two unique adjacent vertices.
+When FORMULA  is rooted at FORMULA , the FORMULA -th ancestor, if it exists,
+of a vertex FORMULA  is the vertex on the unique path
+from FORMULA  to FORMULA  of distance FORMULA  from FORMULA .
+An ancestor of FORMULA  is a FORMULA -th ancestor of FORMULA  for some FORMULA .
+Note that FORMULA  is viewed as an ancestor of itself.
+The parent (grandparent) of a vertex is then the
+1-st (2-nd) ancestor of the vertex. The sibling of a vertex is
+another child of its parent, and a cousin is child of a sibling
+of its parent.
+The height of a rooted tree is
+the length of the longest path from the root to a leaf.
+The height of a vertex FORMULA  in a rooted tree FORMULA  is the height of the
+rooted subtree of FORMULA  induced by all vertices with FORMULA  as an ancestor.
+A tree is said to be full if it contains no degree-two vertices.
+Note that in a rooted tree FORMULA , vertices of height zero are the leaves
+(provided that the root is not a leaf). Vertices of height one are
+the parents of leaves, that is, the leaves of the pruned
+tree FORMULA  and so on. In general, for FORMULA  let FORMULA  be
+given recursively by FORMULA  and FORMULA .
+Clearly FORMULA 
+is a strict inclusion. With this in mind we have an alternative
+“root-free” description of the height of vertices in a tree.
+Observation 2.1 
+Let FORMULA  be a tree and FORMULA .
+The vertices of height FORMULA  in FORMULA  are precisely the leaves
+of FORMULA .
+
+
+Inductiveness.
+The inductiveness or the degeneracy of a graph FORMULA , denoted
+by FORMULA , is the natural number defined by
+FORMULA 
+where FORMULA  runs through all the induced subgraphs of FORMULA .
+If FORMULA  then we say that FORMULA  is FORMULA -inductive.
+In a graph FORMULA  of maximum degree at most FORMULA , note that for any FORMULA ,
+the vertex set FORMULA  will induce a
+clique in FORMULA , and hence FORMULA .
+Since FORMULA , the upper bound of FORMULA  is
+necessarily an increasing function FORMULA  of FORMULA .
+In general, the inductiveness of a graph FORMULA  yields an ordering FORMULA  of the vertex set FORMULA  of FORMULA , such that each vertex FORMULA 
+has at most FORMULA  neighbors among the previous vertices
+FORMULA  that is to say FORMULA . This gives us an efficient way to color
+every graph FORMULA  by at most FORMULA  colors in a greedy fashion.
+
+Biconnectivity.
+The blocks of a graph FORMULA  are the maximal biconnected subgraphs of FORMULA .
+A cutvertex is a vertex shared by two or more blocks.
+A leaf block is a block with only one cutvertex (or none, if the
+graph is already biconnected).
+We show here that we can assume, without loss of generality, that FORMULA 
+is biconnected when considering the chromatic number or the clique number
+of FORMULA : Let FORMULA  be a graph and FORMULA  the set of its biconnected blocks.
+In the same way that FORMULA  and
+FORMULA ,
+we have the following.
+Lemma 2.2 
+For a graph FORMULA  with a maximum degree FORMULA  and
+set FORMULA  of biconnected blocks we have
+FORMULA 
+Further, optimal FORMULA -colorings of the squares of all the blocks
+FORMULA  can be modified to a FORMULA -coloring of FORMULA 
+in a greedy fashion.
+
+Proof. 
+First note that a clique of FORMULA  with vertices contained in more
+than one block of FORMULA  must contain the cutvertex of two blocks. Therefore
+the clique must be induced by the closed neighborhood of this cutvertex,
+and hence of size at most FORMULA . This proves the first
+formula for FORMULA .
+For the chromatic number of FORMULA , we proceed by induction on FORMULA .
+The case FORMULA  is a tautology, so assume FORMULA  has FORMULA 
+blocks and that the lemma is true for
+FORMULA . Let FORMULA  be a leaf block and let
+FORMULA ,
+with FORMULA  as a cutvertex.
+If FORMULA  is the maximum degree of FORMULA , then by induction hypothesis
+FORMULA .
+Assume we have a FORMULA -coloring of FORMULA  and a FORMULA -coloring of
+FORMULA , the latter given by a map FORMULA .
+Since FORMULA  is a cutvertex we have a partition FORMULA ,
+where FORMULA  and FORMULA . In the given
+coloring FORMULA  all the vertices in FORMULA  have received distinct colors,
+since they all have FORMULA  as a common neighbor in FORMULA . Since
+FORMULA  there is a permutation
+FORMULA  of FORMULA  such that
+FORMULA  yields a new FORMULA -coloring of FORMULA 
+such that all vertices in
+FORMULA  receive distinct colors (here FORMULA  is the inclusion map
+of FORMULA  in
+FORMULA .)
+This together with the given
+FORMULA -coloring of FORMULA  provides a vertex coloring of FORMULA 
+using at most
+FORMULA ,
+which completes our proof.    FORMULA FORMULA
+Note that Lemma REF  provides a way to extend
+distance-2 colorings of the blocks of FORMULA  to a distance-2 coloring of
+the whole of FORMULA . Thus,
+by Lemma REF  we can assume our graphs are biconnected,
+both when considering clique and chromatic numbers of FORMULA .
+For the inductiveness of FORMULA , such an extension property
+as Lemma REF , to express FORMULA  directly
+in terms of FORMULA  and the inductiveness of the blocks of FORMULA ,
+is not as straightforward although it can be done.
+This is mainly because the simplicial vertex of a biconnected block
+could be a cut-vertex of the graph.
+We will consider this better in Section .
+Duals of outerplanar graphs.
+For our arguments to come we need a few properties about outerplanar
+graphs, the first of which is an easy exercise (See {{cite:d33152d2-0d7e-4adb-997f-0d1e410cd72a}}).
+Claim 2.3 
+Every biconnected outerplanar graph has at least two vertices of degree 2.
+
+To analyze the inductiveness of an outerplanar graph FORMULA ,
+it is useful to consider the weak dual of FORMULA , denoted
+by FORMULA  and defined in the following:
+Lemma 2.4 
+Let FORMULA  be an outerplanar graph with an embedding in the plane.
+Let FORMULA  be its geometrical dual, and let
+FORMULA  be the vertex corresponding
+to the infinite face of FORMULA . Then the weak dual graph
+FORMULA  is a forest
+which satisfies the following:
+
+FORMULA  is tree iff FORMULA  is biconnected.
+
+FORMULA  has maximum degree at most three, if FORMULA  is chordal.
+
+
+Note that for a biconnected chordal graph FORMULA ,
+there is a one-to-one correspondence FORMULA 
+between the degree-2 vertices FORMULA  of FORMULA , and the leaves FORMULA 
+of FORMULA .
+Proof. 
+(Lemma REF )
+This follows easily by Claim REF  and induction on FORMULA .    FORMULA FORMULA
+Note that any biconnected chordal outerplanar graph on FORMULA  vertices can be
+constructed in the following way: Start with two
+vertices FORMULA  and FORMULA  and connect them with an
+edge. For FORMULA  to FORMULA , inductively connect
+a vertex FORMULA  to two endvertices of an
+edge which bounds the infinite face. Hence,
+after the FORMULA -th step, the vertex FORMULA  is of degree 2.
+Simultaneously we construct the weak dual
+tree FORMULA  on the vertices FORMULA ,
+by adding FORMULA  as a leaf to the vertex in FORMULA 
+corresponding to the face containing the two neighbors of FORMULA  after
+the FORMULA -th step. Hence, we have the following.
+Observation 2.5 
+For a biconnected chordal outerplanar graph FORMULA , there
+are two vertices FORMULA  such that
+there is a bijection
+FORMULA , given
+by FORMULA , such that degree-2 vertices of FORMULA 
+correspond to leaves of FORMULA . Further, successfully
+removing degree-2 vertices from FORMULA  will result in removing
+leaves from FORMULA  in such a way that the mentioned
+correspondence will still hold between degree-2 vertices of
+the altered graph FORMULA  and the leaves of the altered tree.
+
+By Lemma REF , FORMULA  for a chordal graph FORMULA 
+is a tree of maximum degree 3, and hence each of its leaves has
+at most one sibling.
+Note, however, that if FORMULA  is not chordal then the assignment
+FORMULA  is only surjective and not bijective.
+Both in the chordal and non-chordal case we will call the vertex
+FORMULA  the dual vertex of FORMULA . For the non-chordal case,
+such a construction can be done in a similar fashion,
+except that we inductively add a path of length
+FORMULA  instead of length exactly 2
+Faces and dual leafs.
+For an outerplanar plane graph FORMULA  two faces of FORMULA  are said to
+be adjoint (shortened as adj.) if they share a common vertex.
+A FORMULA -face is a face FORMULA  with FORMULA  vertices and FORMULA  edges. This
+will be denoted by FORMULA .
+For a bounded face FORMULA  of FORMULA  the corresponding dual vertex of FORMULA 
+will be denoted by FORMULA . Note for a chordal FORMULA  and if FORMULA  has two
+bounding edges bounding the infinite face then FORMULA ,
+the dual vertex of FORMULA  from above. We will, however,
+speak interchangeably of a face FORMULA  and its corresponding
+dual vertex FORMULA  (or FORMULA  from above in the chordal case) from FORMULA ,
+when there is no danger of ambiguity, and we will apply standard
+forest/tree vocabulary to faces from
+the tree terminology given previously when each component
+from FORMULA  is rooted at a center.
+A sib of a face FORMULA  is a sibling in FORMULA  that
+is adjoint to FORMULA .
+A face FORMULA  is FORMULA -strongly simplicial, or FORMULA -ss for short, if
+either FORMULA  is isolated (that is FORMULA  consists of FORMULA  alone),
+or FORMULA  is a leaf in FORMULA  satisfying one of the
+following: (i) FORMULA , or (ii) the parent face of FORMULA  in FORMULA  is
+FORMULA -ss in FORMULA . Thus, e.g. all leafs are 0-ss, while
+those leafs whose siblings have no children are also 1-ss.
+
+Inductiveness
+In this section we will derive optimal bounds on inductiveness.
+The following is the main result of this section.
+Theorem 3.1 
+For an outerplanar graph FORMULA  of maximum degree FORMULA ,
+we have FORMULA .
+If further, FORMULA , then FORMULA .
+
+To bound the inductiveness, it is sufficient to show that there always
+exists a vertex that has both small degree and small distance-2 degree.
+Recall that a FORMULA -vertex is a vertex of degree at most 2 in FORMULA 
+and distance-2 degree at most FORMULA .
+Lemma 3.2 
+Suppose any outerplanar graph of maximum degree FORMULA  contains a
+FORMULA -vertex. Then, any outerplanar graph FORMULA  of maximum degree FORMULA  satisfies
+FORMULA .
+
+Proof. 
+We show this by induction on FORMULA . Let FORMULA  be an outerplanar graph
+with a FORMULA -vertex FORMULA .
+We choose one incident edge FORMULA  and
+form the contraction FORMULA ; this
+is the simple graph obtained from FORMULA  by contracting the edge FORMULA  into a single
+vertex FORMULA  and keeping all edges that were incident on either
+FORMULA  or FORMULA  (deleting multiple copies). Formally, FORMULA  has the vertex set
+FORMULA  and edge set
+FORMULA .
+The set of distance-2 neighbors
+of FORMULA  in FORMULA  properly contains the
+set of distance-2 neighbors of FORMULA  in FORMULA . Hence, a
+FORMULA -inductive ordering of FORMULA  also gives a FORMULA -inductive ordering of
+FORMULA  excluding FORMULA  and where FORMULA  is replaced with FORMULA .
+Further, since FORMULA  was of degree at most 2,
+the degree of FORMULA  is at most that of FORMULA , and hence the
+maximum degree of FORMULA  is at most that of FORMULA .
+By induction, there is such a FORMULA -inductive ordering of FORMULA .
+By prepending FORMULA  to that ordering, replacing FORMULA  by FORMULA , we
+obtain a FORMULA -inductive ordering of FORMULA .    FORMULA FORMULA
+Recall that a leaf block FORMULA  of FORMULA  contains just one cutvertex.
+Call a block FORMULA  simple if FORMULA ,
+that is, FORMULA  is empty, a single vertex, a single edge,
+or a star on three or more vertices.
+Lemma 3.3 
+Any simple leaf block contains a FORMULA -vertex of FORMULA 
+if FORMULA  and a FORMULA -vertex if FORMULA .
+
+Proof. 
+If FORMULA  is a single edge, then the leaf node is a FORMULA -vertex.
+If FORMULA  is a 3-cycle, then either of the non-cut-vertices are FORMULA -vertices.
+When FORMULA  is a FORMULA -cycle, for FORMULA , then any node on the
+cycle that is not adjacent to the cut vertex is a 4-vertex.
+Assume now that FORMULA  is a single edge or a star on FORMULA  vertices.
+Clearly we have FORMULA . If FORMULA  contains a degree-2 vertex FORMULA 
+of distance 2 or more from the cutvertex, then FORMULA  is a 6-vertex.
+So FORMULA  is a FORMULA -vertex if FORMULA  and FORMULA -vertex
+if FORMULA . If all the degree-2 vertices of FORMULA  are adjacent
+to the cutvertex of FORMULA , then FORMULA  is a diagonalized FORMULA  where FORMULA .
+In this case both the degree-2 vertices of FORMULA  are FORMULA -vertices of
+FORMULA . Hence we have the lemma.    FORMULA FORMULA
+By Lemma REF  we will focus on non-simple
+leaf blocks for the rest of this section.
+We start our search for a FORMULA -vertex at a face that has some nice properties.
+Recall the definition of a FORMULA -ss face. Notice that a face is 1-ss
+iff its parent in FORMULA  has no grandchildren, while it is 2-ss if
+it either has no grandparent in FORMULA , or if its grandparent is not the 3-rd
+ancestor of another face. Note that if FORMULA  is not simple, then for any rooting
+of FORMULA  there are always faces with parents and grandparents.
+Lemma 3.4 
+Let FORMULA  be a non-simple leaf block of FORMULA  and let FORMULA  be a
+non-negative integer.
+Then, FORMULA  contains an FORMULA -ss face FORMULA , its parent FORMULA , its
+grandparent FORMULA  and an edge FORMULA  on the boundary of FORMULA , such that
+FORMULA  separates FORMULA  and all its descendants (its children and
+grandchildren) from the rest of FORMULA .
+
+Proof. 
+If FORMULA  is biconnected let FORMULA  be any face. Otherwise, if FORMULA ,
+let FORMULA  be any face that contains the cutvertex on its boundary and an
+edge bounding the infinite face.
+Let FORMULA  be rooted at FORMULA  and let FORMULA  be a face of maximum
+distance from FORMULA  in FORMULA . It is not hard to see that
+the center(s) of FORMULA  is(are) on the path from FORMULA  to FORMULA ,
+and hence FORMULA  is an endvertex of a maximum length path of FORMULA .
+By definition of FORMULA -ss, FORMULA  is therefore FORMULA -ss for any FORMULA .
+Also, FORMULA  has a parent FORMULA  and a grandparent FORMULA .
+If FORMULA  has a great-grandparent FORMULA , then we let FORMULA  be the edge
+that separates FORMULA  from FORMULA  in FORMULA . This edge separates
+FORMULA  and all its descendants from the rest of FORMULA , including FORMULA 
+and thus necessarily also from the rest of FORMULA .
+If FORMULA  has no great-grandparent, then FORMULA  and we let FORMULA  be
+an edge incident on the cutvertex and the infinite face.    FORMULA FORMULA
+Claim 3.5 
+Assume that we have faces FORMULA , FORMULA  and FORMULA  in a block FORMULA  of FORMULA 
+as promised by Lemma REF .
+
+If FORMULA  is the edge separating FORMULA  from FORMULA , then either
+FORMULA  or FORMULA  has degree at most 6 in FORMULA .
+
+If FORMULA  is the edge separating FORMULA  from FORMULA , then either
+FORMULA  or FORMULA  has degree at most 4 in FORMULA .
+
+
+Proof. 
+Note that the cutvertex is either neither of the endvertices
+of the edge FORMULA  that separates FORMULA  and all its descendants
+from the rest of FORMULA , or one of them.
+The first statement is true since FORMULA  is 2-ss in the block FORMULA ,
+and the second statement is true since FORMULA  is 1-ss in FORMULA .    FORMULA FORMULA
+Reducible configurations.
+A configuration is an induced plane subgraph with certain
+vertices specially marked as having no neighbors outside the subgraph.
+A configuration is FORMULA -reducible for an
+integer FORMULA , if there exists a FORMULA -vertex for it. When FORMULA  is
+understood, we shall simply speak of a reducible configuration.
+We will give an exhaustive decision
+tree, or a flowchart, that leads to a reducible configuration:
+A FORMULA -reducible one when FORMULA  in
+Figure REF ,
+and FORMULA -reducible when FORMULA  in
+Figure REF .
+Each of the boxes of the branches
+corresponds to one of the reducible configurations
+of Figures REF -REF , to be described shortly.
+We shall assume that we are given FORMULA , FORMULA , and FORMULA  as promised by
+Lemma REF . In the flowchart we use the following
+notation: Recall that the cardinality of a face FORMULA , denoted FORMULA , is its number
+of vertices. FORMULA  is incident on FORMULA  if it contains one of its
+vertices. We shall assume that if FORMULA  is incident on one of the
+vertices of FORMULA , then that vertex will be named FORMULA .
+When traversing the flowchart (either one in Figure REF ), we
+shall assume that all sibs of a face
+are tested for a Y branch before proceeding to the corresponding N branch.
+FIGURE 
+Each of the subfigures (A)-(J) in Figures REF -REF 
+gives a configuration with a FORMULA -vertex marked as FORMULA .
+Each of them expresses more generally a collection of configurations,
+allowing for optional vertices as well as symmetric translations.
+Edges that lie on the infinite face are shown in bold, while internal
+edges are thin. Optional vertices and edges are shown with dotted edges.
+Vertices shown in white have possible additional edges, while
+all neighbors of dark vertices (in blue) are shown in the figure.
+We mark an FORMULA -ss face FORMULA  in the figure, along with its
+parent FORMULA .
+= 10pt
+FIGURE 
+FIGURE 
+FIGURE 
+A set of configurations is unavoidable for a class of graphs if
+every graph in the class contains at least one configuration from the set.
+Our main technique, that bears a slight resemblance to the four color
+theorem {{cite:f8881c3a-ef7f-475a-94f5-415166eeefeb}}, is to give an unavoidable set of reducible configurations.
+For reductions (B), (C), (D), (G), (H), and (I) to apply, FORMULA  must be 1-ss,
+while for (E), (F), or (J) to apply, FORMULA  must be 2-ss.
+Lemma 3.6 
+FORMULA  from Figures REF -REF 
+is an unavoidable set of FORMULA -configurations,
+for the class of outerplanar graphs of maximum degree FORMULA 
+with no simple leaf blocks.
+
+Proof. 
+We basically go through the flowchart in Figure REF .
+Assume FORMULA , FORMULA , and FORMULA  as promised by Lemma REF .
+If FORMULA , then we have either case (REF ) or (REF ).
+Assume then that FORMULA  and consider its parent face FORMULA .
+If FORMULA , then we have case (REF ); otherwise, assume FORMULA .
+If FORMULA  (or one of its sibs) is not incident on FORMULA ,
+then case (REF ) holds. Otherwise, FORMULA  is missing a sib on at
+least one side, so some edge of FORMULA  borders the infinite face, in which case
+(REF ) holds. In each case we obtain a FORMULA -vertex
+and hence we have the lemma.    FORMULA FORMULA
+From the above proof and Figure REF  we obtain
+the following.
+Corollary 3.7 
+In each of the configurations from the unavoidable set FORMULA 
+in Lemma REF , our FORMULA -vertex
+is on the boundary of the 1-ss face FORMULA .
+
+We have similarly the following for FORMULA .
+Lemma 3.8 
+FORMULA  from Figures REF -REF 
+is an unavoidable set of FORMULA -configurations,
+for the class of outerplanar graphs of maximum degree FORMULA 
+with no simple leaf blocks.
+
+Proof. 
+We traverse the flowchart in Figure REF .
+Assume FORMULA , FORMULA , and FORMULA  as promised by Lemma REF .
+If FORMULA , then we have either of cases (REF )
+and (REF ). Hence, we assume from now that FORMULA .
+Consider the case FORMULA . If FORMULA  has no sibling,
+then the case (REF ) applies and we have a FORMULA -vertex.
+Otherwise, FORMULA  has a sibling, which we can (by the above) assume
+is also a 3-face. Since both FORMULA  and its sibling are 2-ss, then
+one of them is bounded by three vertices of degree 2, 4 and at most 6 in FORMULA .
+W.l.o.g. we may assume FORMULA  to be this very face, in which case
+(REF ) applies and we have a 7-vertex.
+Consider now the case FORMULA . If FORMULA  is not incident on FORMULA ,
+then the case (REF ) applies and we have a 6-vertex.
+Otherwise, assume FORMULA  (and all of its possible sibs) is incident on FORMULA ,
+in particular on FORMULA .
+If FORMULA , then FORMULA  has a 6-vertex
+as indicated in case (REF ); otherwise, assume FORMULA .
+Note that we are under the assumption that FORMULA  has no adjoint sibling
+(since in that case we would have (REF )).
+By Claim REF  we have that since FORMULA  is a 2-ss face, then
+FORMULA  and FORMULA  cannot both be of degree FORMULA .
+Namely, only one of them can be incident on faces that descend from
+FORMULA  or its parent FORMULA  (if it exists).
+The other has 3 edges incident on FORMULA  and FORMULA  together, and at
+most 3 edges incident on a sib of FORMULA  and its possible child.
+If FORMULA  (which is incident on FORMULA ) has degree 6 or less, then
+we have case (REF ), so FORMULA  contains a 7-vertex. Otherwise,
+FORMULA  has degree 6 or less.
+We may for symmetric reasons assume that FORMULA  is the only child of FORMULA 
+(as otherwise, the other child would work in the
+case (REF ) instead of FORMULA ).
+Then, in fact, FORMULA  must have degree 5 or less, because it has only 2
+edges incident on FORMULA  and its children.
+Then, the parent FORMULA  contains a 7-vertex as indicated
+in case (REF ), since the neighbors of the
+unique degree-2 vertex on FORMULA  have degree 3 and 5.
+This shows that in each case there is a
+FORMULA -vertex in FORMULA  and we have the lemma.    FORMULA FORMULA
+Unlike the previous case of FORMULA , it is not always the case
+that the face FORMULA  contains
+a FORMULA -vertex when FORMULA . By
+Lemmas REF  and REF  we have
+proved Theorem REF  in the cases when
+FORMULA .
+We complete the proof by finishing the low-degree cases.
+Cases with FORMULA .
+For FORMULA  we have FORMULA .
+In fact we have
+FORMULA 
+For FORMULA  we have the following.
+Lemma 3.9 
+For a outerplanar graph FORMULA  with FORMULA ,
+we have FORMULA .
+
+Proof. 
+By Lemma REF , it suffices to show
+that FORMULA  contains a FORMULA -vertex.
+If FORMULA  contains a degree-1 vertex, then it is a FORMULA -vertex.
+Otherwise, let FORMULA  be a leaf face in the dual tree FORMULA .
+If FORMULA , then FORMULA  has a 4-vertex,
+while if FORMULA  then either of the degree-2 vertices of FORMULA  are FORMULA -vertices.
+Finally, if FORMULA , then the two neighbors of the degree-2 vertex
+FORMULA  have at most FORMULA  additional neighbors each.
+Hence, FORMULA  is a FORMULA  vertex.    FORMULA FORMULA
+Choosability and algorithmic concerns.
+As mentioned in Section , the bound on the inductiveness
+of Theorem REF  implies that Greedy finds
+an optimal coloring of squares of outerplanar graphs of degree FORMULA .
+When FORMULA , we can also obtain an efficient time
+algorithm from the observation of Krumke, Marathe and Ravi {{cite:6b80829b-c33c-4ec3-babe-dbbaf2701f70}}
+that squares of outerplanar graphs have treewidth at most FORMULA .
+This allows for the use of FORMULA -time algorithm for coloring
+graphs of treewidth FORMULA .
+Theorem 3.10 
+There is a linear time algorithm to color squares of outerplanar graphs.
+
+List coloring.
+Our approach for coloring FORMULA  for an outerplanar graph FORMULA  also
+yields results regarding
+the list coloring, a. k. a. choosability, of FORMULA  as well.
+Definition 3.11 
+A graph FORMULA  is FORMULA -choosable
+if for every collection of lists
+FORMULA  of colors where FORMULA  for
+each FORMULA , there is a coloring
+FORMULA ,
+such that FORMULA  for each FORMULA .
+The minimum such FORMULA  is called the choosability or
+the list-chromatic number of FORMULA ,
+and is denoted by FORMULA .
+
+Note that if a graph is FORMULA -choosable, then it is FORMULA -colorable.
+Also, by an easy induction,
+we see that if a graph is FORMULA -inductive then it is FORMULA -choosable.
+For any graph FORMULA  we therefore have FORMULA .
+We thus obtain the following bound on choosability.
+Corollary 3.12 
+For any outerplanar graph FORMULA  with maximum degree FORMULA ,
+we have FORMULA  and this is optimal.
+
+
+Chordal outerplanar graphs
+Before we consider in detail the clique number and the chromatic
+number for FORMULA  for an outerplanar graph in general, we will deal
+with the chordal case first. This is because many chordal examples will
+provide the matching lower bounds for the inductiveness, clique number
+and the chromatic number as well. Here in the chordal case
+we are able to present some structural results of FORMULA  in addition
+to tight bounds of the three coloring parameters.
+Conventions: (i) Let FORMULA  be a given biconnected outerplanar
+on FORMULA  vertices of maximum degree FORMULA ,
+with a fixed planar embedding. The graph obtain from FORMULA  by
+connecting an additional vertex to each pair of endvertices
+of an edge bounding the infinite face, will be denoted
+by FORMULA . Clearly FORMULA  will be an outerplanar graph on
+FORMULA  vertices of maximum degree FORMULA .
+(ii) By the rigid FORMULA -ladder or just the rigid ladder
+FORMULA  on FORMULA  vertices we will mean the graph given by
+FORMULA 
+For odd FORMULA , the graph FORMULA  will mean FORMULA .
+(iii) Let FORMULA , FORMULA ,
+and FORMULA , see Figure REF .
+FIGURE 
+Recall that when discussing the clique number or the chromatic number,
+we can by Lemma REF  assume FORMULA  to be biconnected.
+One of the main results of this section is the following theorem.
+Theorem 4.1 
+For a chordal outerplanar graph FORMULA ,
+FORMULA 
+
+We also derive a similar characterization of their inductiveness.
+First note that the case FORMULA  is trivial, since there is only
+one biconnected chordal outerplanar graph, namely FORMULA .
+The case FORMULA  is easy, since there are only
+three biconnected chordal outerplanar graphs
+with FORMULA : FORMULA  the 2-path,
+FORMULA  the 3-cycle, and FORMULA  is the 4-cycle with one diagonal.
+From this we deduce the following tree-like structure of FORMULA  in this case.
+Lemma 4.2 
+Let FORMULA  be a chordal outerplanar graph of maximum degree
+FORMULA . Then the blocks of FORMULA  are among
+FORMULA , where any two blocks from
+FORMULA  are separated by at least one FORMULA  block.
+
+Considering the leaf blocks of FORMULA , we obtain from the structure
+given in Lemma REF  the following.
+Theorem 4.3 
+For a chordal outerplanar graph FORMULA  with FORMULA ,
+we have
+FORMULA 
+
+The case FORMULA  is more interesting, since it is the first
+case involving a “forbidden subgraph” condition for both
+the clique and the chromatic number of FORMULA .
+By considering the removal of a degree-2 vertex from FORMULA , we obtain
+the following by induction on FORMULA .
+Lemma 4.4 
+A graph FORMULA  is a biconnected chordal outerplanar graph with FORMULA  if,
+and only if, FORMULA .
+
+Proof. 
+Clearly each graph in FORMULA  is biconnected
+and outerplanar. Conversely, let FORMULA  be a biconnected outerplanar graph
+on FORMULA  vertices with maximum degree four.
+By removing a vertex FORMULA  of degree 2 from FORMULA , we obtain
+a biconnected outerplanar graph FORMULA  with FORMULA ,
+and hence equal to FORMULA  or, by induction, from
+the set FORMULA .
+Since FORMULA  is of maximum degree FORMULA  it is impossible that
+FORMULA . For the same reason if FORMULA , then FORMULA .
+Also, FORMULA  only when FORMULA , and lastly if FORMULA 
+for some FORMULA , then FORMULA  must hold,
+thereby proving the lemma.    FORMULA FORMULA
+Note that for FORMULA  we have FORMULA . Hence, in this case
+FORMULA , while FORMULA .
+Observe that FORMULA , for any FORMULA , since removing the
+last vertex in the square graph leaves the graph FORMULA .
+Thus, FORMULA .
+By Lemmas REF  and REF  we have the following.
+Theorem 4.5 
+For a chordal outerplanar graph FORMULA  with FORMULA , we
+have
+FORMULA 
+
+So far we have characterized chordal outerplanar graphs in terms
+of the clique number, chromatic number and inductiveness of their squares
+when FORMULA .
+Before we continue with the analysis of the chordal cases
+of FORMULA , we need the following definition and a lemma.
+Definition 4.6 
+Let FORMULA  be a graph.
+Call a subgraph FORMULA  on FORMULA  vertices
+an FORMULA -separator, or just a separator if
+it induces a clique in FORMULA  whose removal breaks FORMULA  into
+disconnected components.
+
+The following lemma shows that it suffices to bound the clique number and
+chromatic number for graphs without separators.
+Lemma 4.7 
+Let FORMULA  be a graph and FORMULA  a separator of FORMULA 
+with FORMULA  and FORMULA . Then we have
+FORMULA 
+
+Proof. 
+Since FORMULA  and FORMULA , which
+is a clique, we have the stated clique number for FORMULA .
+Further, any optimal coloring of either FORMULA  or FORMULA 
+can be extended to an optimal coloring of FORMULA  by a suitable permutation
+of the colors. Hence we have the lemma.    FORMULA FORMULA
+Recall that a tree is full if there are no vertices of
+degree 2.
+Lemma 4.8 
+Let FORMULA  be a biconnected chordal outerplanar graph with a
+full weak dual FORMULA .
+
+If FORMULA , then FORMULA .
+
+If FORMULA , then FORMULA .
+
+
+Proof. 
+Since FORMULA  is chordal it is uniquely determined by a plane
+embedding of its full weak dual FORMULA .
+If FORMULA , then FORMULA  contains
+a path of length FORMULA  and since FORMULA  is full
+each internal vertex of this path must have degree of three.
+Therefore FORMULA  has at least FORMULA  vertices
+and so FORMULA  has FORMULA  vertices.
+The unique full tree on FORMULA  vertices is the weak dual of
+FORMULA  on FORMULA 
+vertices and with maximum degree FORMULA .
+Proceeding by induction, assume FORMULA  has FORMULA  vertices
+has a full weak dual FORMULA  on FORMULA  vertices.
+Removing two siblings from FORMULA 
+whose parent is a leaf in the pruned tree FORMULA  corresponds
+to removing two degree-2 vertices FORMULA  and FORMULA  from FORMULA  of distance 2 from each
+other in FORMULA , and obtaining FORMULA .
+Now FORMULA  is full and has FORMULA 
+vertices, since its maximum degree is three.
+If FORMULA  has four vertices, then it is the unique 4-star
+and FORMULA . Hence FORMULA  and FORMULA  here.
+Note that the number of vertices in any full tree with maximum
+degree of three is always even. Hence, there are no full trees
+on five or seven vertices.
+If FORMULA  has six vertices, then FORMULA  is unique and
+FORMULA . Hence FORMULA  in this case and FORMULA .
+Otherwise FORMULA  must have at least eight vertices and
+hence FORMULA  has at least ten vertices. By induction hypothesis we
+have FORMULA . To have
+FORMULA  is impossible, since that would create FORMULA  with FORMULA .
+So FORMULA  for some FORMULA .
+If FORMULA  then either FORMULA  or FORMULA .
+Otherwise FORMULA , which completes the proof.    FORMULA FORMULA
+Theorem 4.9 
+Let FORMULA  be a biconnected chordal outerplanar graph with FORMULA .
+If FORMULA  is not full, then either FORMULA  is a clique or FORMULA 
+has an FORMULA -separator where FORMULA .
+
+Proof. 
+Note that since FORMULA  is chordal, then every face corresponding to a vertex in
+FORMULA  is bounded by a triangle. So for a given FORMULA ,
+the structure of FORMULA  is determined except for the degree-2 vertices of FORMULA .
+By assumption FORMULA  has a degree-2 vertex. We consider the
+following three cases.
+If FORMULA  has no vertex of degree 3, then FORMULA  is a simple path.
+In this case it is easy to see that FORMULA  has a path decomposition consisting
+of cliques, where each clique is induced by a closed neighborhood of a vertex
+of FORMULA , necessarily of of size 5, 6 or 7. In particular, FORMULA  is
+by {{cite:815246cd-c0ef-4445-9a54-4880427a3bb3}} a chordal graph and is therefore a clique
+or has a 4-separator.
+Consider next the case where FORMULA  has a degree-2 vertex FORMULA  that lies on
+a path connecting two degree-3 vertices of FORMULA . If FORMULA  is the unique edge
+in FORMULA  bounding the triangular face FORMULA  corresponding to FORMULA  and the infinite face, then
+let FORMULA  be the vertex opposite the edge FORMULA  in the triangle FORMULA . Since FORMULA  and two
+other edges FORMULA  and FORMULA  incident to FORMULA  in FORMULA  all bound the infinite face of FORMULA ,
+we see that the closed neighborhood of FORMULA  is an FORMULA -separator of FORMULA ,
+where FORMULA .
+Lastly, consider the case where every degree-2 vertex of FORMULA  lies
+on a path connecting a degree-3 vertex and a leaf of FORMULA .
+In this case FORMULA  must contain a degree-2 vertex FORMULA  that has
+a leaf FORMULA  as a neighbor. Let FORMULA  be the vertices
+bounding the triangular face FORMULA  corresponding to the leaf FORMULA , where FORMULA 
+has degree 2 in FORMULA  and FORMULA  has degree 2 in FORMULA . Note that
+FORMULA  is a leaf in FORMULA . In this case FORMULA 
+induces a clique in FORMULA  which separates FORMULA  from the rest of the graph
+FORMULA . Since FORMULA  has a vertex of degree 3, then FORMULA  has at least
+two components where one component consists of the singleton FORMULA .
+Hence, FORMULA  induces an FORMULA -separator of size FORMULA .
+This completes our proof.    FORMULA FORMULA
+Note that FORMULA  is FORMULA  with
+two perpendicular diagonals removed when the vertices are located
+on a regular 8-gon. Therefore these two pairs of opposite nonadjacent
+vertices can be colored by the same color in FORMULA , and hence
+FORMULA .
+We note further that FORMULA  is biconnected chordal outerplanar graph with
+FORMULA . Also, the subgraph FORMULA  in FORMULA  induces a
+clique in FORMULA , and hence
+each vertex there must have a unique color, say cyclically with colors
+FORMULA  starting with a degree-2 vertex of FORMULA .
+Of the remaining six vertices of FORMULA , color three of them with a new
+color 7, all of distance three apart, and the remaining three with the
+colors 1, 3 and 5. Hence FORMULA .
+To color FORMULA  we can start by coloring the degree-2 vertices of
+FORMULA  alternatively with colors 1 and 2 cyclically. The rest of
+the vertices, that constitute FORMULA , we can then color with the remaining five
+available colors, since we have already that FORMULA .
+Hence we have FORMULA .
+With the above in mind together with
+Lemmas REF , REF , and REF 
+and Theorems REF  and REF 
+we obtain in particular the following.
+Corollary 4.10 
+For a chordal outerplanar graph FORMULA  with FORMULA  we
+have
+FORMULA 
+
+Corollary REF  together with Theorems REF 
+and REF  complete the proof of Theorem REF  as
+well as the entries in Table REF  in the
+chordal case for FORMULA .
+Observation 4.11 
+For each FORMULA , there are infinitely
+many biconnected chordal outerplanar
+graphs FORMULA  of maximum degree FORMULA 
+with FORMULA .
+
+Proof. 
+It suffices to show that for each FORMULA  there are
+infinitely many biconnected outerplanar graphs FORMULA 
+whose squares are of minimum degree FORMULA .
+Refer to Figure REF  for the appearance of the graphs.
+For FORMULA , consider FORMULA ,
+whose square is FORMULA  and hence has a minimum degree FORMULA .
+By fusing together edges whose endvertices have degrees
+two and four, in two or more copies of FORMULA , we can
+construct an infinite family of such biconnected outerplanar
+graphs FORMULA  with FORMULA  with FORMULA .
+For FORMULA , consider FORMULA ,
+whose square is FORMULA  with two perpendicular diagonals
+removed when the vertices are located on a regular 8-gon.
+Also in this case we can fuse together two edges
+with endvertices of degree 2 and 5, of two or more
+copies of FORMULA , and obtain
+an infinite family of such biconnected outerplanar
+graphs FORMULA  with FORMULA  with FORMULA .
+Finally, for FORMULA , consider FORMULA .
+In this case we have FORMULA , and also
+here we can fuse edges with endvertices of degree
+2 and 4, of two or more copies of FORMULA ,
+to form an infinite family of biconnected
+outerplanar graphs FORMULA  of maximum degree FORMULA 
+and with FORMULA .
+This completes the proof.    FORMULA FORMULA
+Remark: We note that FORMULA 
+is chordal, but neither FORMULA  nor FORMULA 
+are chordal, showing that the square of a chordal
+graph does not need to be chordal.
+This is consistent with the characterization of those chordal graphs
+whose squares are chordal given
+in {{cite:39bf0393-3fc4-41aa-b7a3-30f39073d627}}.
+Theorem 4.12 
+For a chordal outerplanar graph FORMULA , we have
+FORMULA  or FORMULA .
+Necessary and sufficient conditions that FORMULA , are
+one of the following:
+
+FORMULA  and FORMULA ,
+
+FORMULA  and FORMULA , or
+
+FORMULA  and one of FORMULA , FORMULA , is a
+subgraph of FORMULA .
+
+
+Clique number
+In this section we deal with the clique number of FORMULA . This parameter
+is the easiest to deal with. Nonetheless the exact computation of
+the clique number will rely on some results in previous
+Sections  and . Recall that
+by Lemma REF  we can assume FORMULA  to be biconnected.
+Further, FORMULA  is here not necessarily chordal.
+Lemma 5.1 
+For an outerplanar graph FORMULA  we have FORMULA , unless FORMULA .
+If FORMULA , then FORMULA .
+For FORMULA  we further have that any clique with
+FORMULA  vertices is the closed neighborhood of some vertex.
+
+Proof. 
+Consider an induced subgraph FORMULA  of FORMULA  with FORMULA  vertices:
+a vertex FORMULA  and its neighbors FORMULA  in a clockwise order in the
+plane embedding of FORMULA . Then only adjacent pairs FORMULA  and FORMULA ,
+for FORMULA , may be connected by an edge. Consider now a
+vertex FORMULA  that is not a neighbor of FORMULA . Then,
+FORMULA  can be adjacent to at most two neighbors of FORMULA  and only
+consecutive ones, by the outerplanarity property.
+If FORMULA , then FORMULA  cannot be adjacent to both one of FORMULA  and FORMULA 
+and to one of FORMULA  and FORMULA . Thus, it must be of distance at
+least 3 from either FORMULA  or FORMULA . Hence, FORMULA  is not a
+clique in FORMULA . This shows that if a clique in FORMULA  contains
+a closed neighborhood of a vertex of degree FORMULA , then
+the clique consists precisely of those FORMULA  vertices.
+Consider now the case FORMULA  and we have two vertices FORMULA  and FORMULA 
+that are non-neighbors of FORMULA . In order to be of distance at most 2
+from both FORMULA  and FORMULA , a vertex must be adjacent to FORMULA  and
+FORMULA . But, in an outerplanar graph, not both FORMULA  and FORMULA  can be
+so. Hence, FORMULA  does not form a clique.
+This shows that if a clique in FORMULA  contains a closed neighborhood
+of a vertex of degree FORMULA , then the clique consists of at most
+FORMULA  vertices, the vertices of the closed neighborhood plus
+a possibly additional vertex.
+Suppose now an induced subgraph FORMULA  of maximum degree 3
+induces a 6-clique in FORMULA .
+Recall that by Lemma REF  we assume FORMULA  to be biconnected
+and therefore induced by a cycle. There can be at most two chords in FORMULA  and
+they must be disjoint since
+FORMULA . Then there are two vertices in FORMULA  of degree 2 that
+are of distance 3 in FORMULA . Further, since all vertices of FORMULA  lie on the
+outer face, there can be no vertex outside FORMULA  connecting them.
+From the above paragraphs we conclude that if a clique of FORMULA 
+contains FORMULA  vertices, it must be a closed neighborhood
+of a vertex of degree FORMULA .
+Hence, the lemma.    FORMULA FORMULA
+We conclude this section by quickly discussing matching
+lower bounds for FORMULA .
+Note, that we are here still under the assumption that FORMULA  is biconnected.
+If FORMULA , then FORMULA  is a cycle on FORMULA  vertices
+and we clearly have
+FORMULA 
+For FORMULA  the upper bound of FORMULA  is matched if FORMULA 
+is the graph obtained by adding one chord to the 5-cycle FORMULA .
+For FORMULA  the matching upper bound of both FORMULA 
+when FORMULA  and FORMULA  when FORMULA  is obtain
+when FORMULA  shown in Figure REF .
+If FORMULA , then by the above Lemma REF ,
+the matching upper bound of FORMULA  is obtained
+by a closed neighborhood of any vertex of degree FORMULA .
+Together with what was obtained in the previous
+Section , we therefore have all the
+entries for FORMULA  for an outerplanar graph FORMULA  (chordal or not)
+displayed in Table REF .
+The chromatic number
+Recall that for an outerplanar graph FORMULA  with FORMULA 
+we have by Theorem REF  that FORMULA 
+and hence FORMULA  which is optimal.
+(In fact, Lemmas REF  and REF 
+also imply this.) Hence, we will assume throughout this
+section that FORMULA .
+Cases with  FORMULA
+If FORMULA , then we have an upper bound
+FORMULA 
+and a matching lower bound is obtained when
+FORMULA . In fact, if FORMULA  is FORMULA  (resp. FORMULA ) the path (resp. cycle)
+on FORMULA  vertices, then FORMULA  and
+it can be verified that for FORMULA  we have that
+FORMULA 
+Further, Greedy obtains an optimal coloring even when inductiveness
+is not a tight bound on the chromatic number, that is on FORMULA  for FORMULA .
+For FORMULA  and FORMULA , we have an upper bound of
+FORMULA .
+If FORMULA  is the graph obtained by adding a chord to the
+5-cycle FORMULA , then FORMULA  is a clique and hence
+the lower bound for FORMULA  is obtained
+for FORMULA .
+Consider now the case FORMULA . Let FORMULA  be the graph
+on ten vertices given in (REF ) in Figure REF .
+FIGURE 
+To see that FORMULA  requires 7 colors, it is easiest to try to
+cover with cliques the complement graph FORMULA , shown in
+(REF ) in Figure REF .
+Each of the vertices FORMULA , FORMULA  and FORMULA  require their own clique,
+while for the remaining 7 vertices, there is no 3-clique. Hence, 7 cliques are
+required to cover FORMULA . That is, 7 colors are required
+to color FORMULA . We note that FORMULA  has four edges with
+endvertices of degree 2 and 3 respectively. By fusing together
+two copies of FORMULA  along
+these edges in such a way that a degree-2 vertex in one copy is
+identified with a degree-3 vertex in another copy, we can make an
+infinite family of outerplanar graphs with FORMULA , such that their
+square has chromatic number of 7. We summarize in the following.
+Theorem 6.1 
+There are infinitely many biconnected outerplanar graphs FORMULA  with
+maximum degree FORMULA  such that FORMULA .
+
+
+Cases with  FORMULA
+Although it is impossible to obtain the tight
+bound of FORMULA  in the case when FORMULA 
+via the inductiveness of FORMULA , our approach here
+will in similar fashion be inductive: We show how we
+can extend an optimal coloring of the square of
+a subgraph FORMULA  of FORMULA  to that of FORMULA .
+Lemma 6.2 
+If FORMULA  is an outerplanar graph with maximum degree FORMULA ,
+then FORMULA .
+
+Proof. 
+By Lemma REF  we may assume FORMULA  to be biconnected.
+Since FORMULA , then FORMULA  is a proper tree and
+hence each 0-ss face FORMULA  has a parent FORMULA .
+If we can find a FORMULA -vertex in FORMULA , for FORMULA , then a 6-coloring of
+FORMULA  follows by induction on FORMULA .
+Observe that if FORMULA ,
+then each degree-2 vertex of FORMULA  is a 5-vertex. If FORMULA  and FORMULA ,
+then the unique degree-2 vertex on FORMULA  is a 5-vertex.
+Additionally, if FORMULA  and FORMULA  has a face bounding the infinite
+face, then one 0-ss child of FORMULA  has a 5-vertex.
+Hence, we can assume that each 0-ss face is a 3-face
+whose parent FORMULA  satisfies FORMULA  and has no edge bounding the
+infinite face.
+This implies one of the following two possibilities: (i)
+FORMULA  has a grandparent FORMULA , or (ii) every edge of FORMULA 
+also bounds a child of FORMULA . In this case we can simply
+choose one designated child to play the role of the grandparent FORMULA .
+Let FORMULA  be the vertices of FORMULA  where FORMULA ,
+and FORMULA  be the edge bordering FORMULA . Let FORMULA  be the vertices such that
+FORMULA  is a 0-ss child of FORMULA , for FORMULA .
+Finally, since FORMULA , FORMULA  and FORMULA  have at most one additional
+neighbor each; denote them by FORMULA  and FORMULA , respectively, which are not
+necessarily distinct.
+Let FORMULA  be the graph obtained after eliminating the face FORMULA  and its
+children (i.e., removing vertices
+FORMULA , FORMULA  and incident edges from FORMULA .)
+We show that a 6-coloring of FORMULA  can be extended to a 6-coloring of FORMULA .
+Since, this is the lone remaining case for FORMULA , this
+yields the lemma.
+First case  FORMULA:
+For FORMULA  we first color FORMULA  and FORMULA  with a same color
+that is unused at FORMULA . Then color the vertices FORMULA 
+in a greedy fashion in this order, using at most 6 colors.
+For FORMULA  we first color FORMULA  and FORMULA  with a same color
+that is unused at FORMULA . Then color FORMULA  and FORMULA  with a same
+color that is unused at FORMULA  and FORMULA  (at most five colors used on these
+six vertices). Finally color FORMULA  in a greedy fashion in this order,
+using at most 6 colors.
+Second case FORMULA :
+Note that in a coloring of FORMULA  in the previous case, FORMULA 
+all receive distinct colors since they
+induce a clique in FORMULA . Assume these colors are FORMULA 
+in this order respectively.
+Such a coloring can now be extended to a case of FORMULA 
+by coloring FORMULA 
+using the colors FORMULA  in this order respectively.
+Since each case of FORMULA  can be obtained by repeated use of such an
+extension, we have the lemma.    FORMULA FORMULA
+Cases with  FORMULA
+We now delve into the case where FORMULA  is an outerplanar graph with FORMULA ,
+and we will show that
+FORMULA  always holds here. By
+Lemma REF  we shall assume FORMULA  to be biconnected and hence,
+by Lemma REF , its weak dual FORMULA  to be a connected tree.
+As in Section , we will reduce our considerations to
+some key cases regarding the weak dual FORMULA  of FORMULA . We will assume,
+unless otherwise stated, that FORMULA  is a biconnected outerplanar plane graph
+with FORMULA  with FORMULA  as a connected tree.
+Assuming FORMULA , and that FORMULA  is minimal with this property
+(that is, any other graph with FORMULA  has its square 7-colorable),
+we note that we can assume that we do not have configurations (A) and (B)
+shown in Figure REF  nor configuration (C) in Figure REF ,
+(since in those cases we would have a 6-vertex, contradicting
+our assumption on FORMULA .). In other words, we may assume that
+(i) each face FORMULA  with FORMULA  a leaf in FORMULA  is bounded by three or four edges,
+(ii) each 1-ss face FORMULA  is bounded by exactly three vertices, and
+(iii) each 1-ss face FORMULA  has at most on sibling in FORMULA .
+We say that FORMULA  is 3-restricted if it
+satisfies all these assumptions (i), (ii) and (iii).
+In addition we have the following for the parent FORMULA  of FORMULA  in FORMULA .
+Lemma 6.3 
+If FORMULA  is 3-restricted, FORMULA  a 1-ss face and FORMULA ,
+then either FORMULA  or FORMULA  contains a 6-vertex.
+
+Proof. 
+Note that FORMULA  (that is to say FORMULA ) is a leaf in the pruned tree
+FORMULA . Let
+FORMULA  be bounded by the vertices FORMULA  with FORMULA 
+and where FORMULA  it the edge in FORMULA  that boarders the grandparent
+FORMULA  (that is to say, is dual to
+the edge in FORMULA  incident to FORMULA ).
+If FORMULA  and FORMULA  are on the boundary of either FORMULA  or its unique sibling
+FORMULA  (in the case that FORMULA  has a sibling FORMULA ) for some FORMULA ,
+then the degree-two vertex on either FORMULA  or FORMULA  has degree at most five in FORMULA .
+Otherwise, all the FORMULA  edges
+FORMULA  bound the infinite face of FORMULA ,
+in which case the FORMULA  vertices, FORMULA ,
+all are degree-two vertices with at most six neighbors in FORMULA .
+This completes the proof.    FORMULA FORMULA
+Consider further the case for a 3-restricted FORMULA  where FORMULA  is a 1-ss
+face of FORMULA , the face FORMULA  is bounded by four vertices
+FORMULA  and FORMULA  is bounded by FORMULA  in such a way
+that the edges FORMULA , FORMULA  and FORMULA  all bound the
+infinite face of FORMULA . In this
+case both FORMULA  and FORMULA  have degree three in FORMULA  and hence the degree-two vertex
+FORMULA  has four neighbors in FORMULA . To avoid any vertices of degree FORMULA  in FORMULA ,
+we can therefore assume that if, for any 1-ss face FORMULA 
+with FORMULA  bounded by the four vertices FORMULA , then the edge
+FORMULA  must bound the infinite face of FORMULA .
+To make further restrictions, assume that FORMULA  is a biconnected outerplanar
+graph that is induced by the cycle FORMULA  on the vertices FORMULA 
+in clockwise order. If FORMULA  and FORMULA  is adjacent to both FORMULA  and FORMULA  in FORMULA ,
+then for any coloring of the square FORMULA  the vertices FORMULA 
+must all receive distinct
+colors, say FORMULA  respectively, since FORMULA 
+induces a clique in FORMULA . Consider the outerplanar graph FORMULA  obtained by
+first removing both the edges FORMULA  and FORMULA  and then connecting
+a new vertex FORMULA  to each of the vertices FORMULA  and FORMULA . In this way
+FORMULA  becomes the contraction of FORMULA , namely FORMULA . Note that
+if FORMULA  has a maximum degree of FORMULA , then so does FORMULA . In addition, given
+the mentioned coloring of FORMULA  where FORMULA  has color FORMULA  for FORMULA ,
+then we can obtain a coloring
+of FORMULA  by retaining the colors of FORMULA  from FORMULA  for all FORMULA ,
+and then assigning colors FORMULA  to
+the vertices FORMULA  respectively.
+Definition 6.4 
+A biconnected outerplanar graph FORMULA  with maximum degree FORMULA 
+and a minimum number of vertices satisfying FORMULA  is called
+a minimal criminal.
+
+Clearly each minimal criminal must be 3-restricted.
+What our discussion preceding the above definition means, in particular,
+is the following additional property of a potential minimal criminal FORMULA .
+Theorem 6.5 
+If FORMULA  is a minimal criminal, then FORMULA  has no degree-two vertices
+with FORMULA  neighbors in FORMULA . Further, let FORMULA  be a
+1-ss face of FORMULA .
+
+If FORMULA  has no sibling, then FORMULA  is bounded by four vertices. Further,
+all the faces FORMULA , FORMULA  and FORMULA  have exactly on vertex in common on their boundaries.
+
+If FORMULA  has one sibling FORMULA , then FORMULA  is bounded by three vertices.
+Hence, all the faces FORMULA , FORMULA  and FORMULA  are bounded by exactly three vertices and edges.
+
+
+Proof. 
+If FORMULA  has no sibling and FORMULA  is bounded by three vertices and edges,
+then the degree-two vertex FORMULA  bounding FORMULA  has FORMULA  neighbors in FORMULA .
+Then by minimality of FORMULA , the square of FORMULA  can be colored by at most seven
+colors, and hence so can FORMULA , since there is at least on color left for FORMULA 
+among the seven colors available. If further FORMULA  is bounded by four vertices
+and the faces FORMULA , FORMULA  and FORMULA  have no common vertex on their boundaries,
+then as previously noted, FORMULA  has exactly four neighbors in FORMULA 
+since both neighbors of FORMULA  have degree three in FORMULA .
+If FORMULA  has one sibling FORMULA , and FORMULA  is bounded by four vertices
+FORMULA , then the edge FORMULA  bounds neither FORMULA  nor
+FORMULA  (since otherwise either FORMULA  or FORMULA  has a degree-two vertex on its
+boundary with at most five neighbors in FORMULA ) and therefore (assuming FORMULA  is
+to the left of FORMULA  in the plane embedding of FORMULA ) we have that
+FORMULA  bounds FORMULA , the edge FORMULA  bounds FORMULA  and FORMULA  bounds
+the infinite face of FORMULA . Again, by minimality of FORMULA  we have that
+the the square of the contracted graph FORMULA  has a legitimate
+7-coloring. By our above discussion preceding Definition REF ,
+this coloring can then be extended to a 7-coloring of FORMULA , thereby
+contradicting the criminality of FORMULA . This complete the proof.    FORMULA FORMULA
+What Theorem REF  implies, in particular, is that
+in a 3-restricted minimal criminal FORMULA ,
+each configuration FORMULA  of FORMULA  and its parent FORMULA , where FORMULA  is
+1-ss, is itself induced by a
+5-cycle on the vertices FORMULA  in a clockwise order,
+and is of one of the following
+three types (note that if FORMULA  has a sibling FORMULA , then it is unique and we assume
+FORMULA  to be the right of FORMULA  in the planar embedding of FORMULA  when viewed from FORMULA ):
+(a)
+FORMULA  is the 5-cycle on FORMULA 
+in which FORMULA  is connected to FORMULA . Here FORMULA  is bounded by FORMULA 
+and FORMULA  is bounded by FORMULA .
+(b)
+FORMULA  is the 5-cycle on FORMULA 
+in which FORMULA  is connected to FORMULA . Here FORMULA  is bounded by FORMULA 
+and FORMULA  is bounded by FORMULA .
+(c)
+FORMULA  is the 5-cycle on FORMULA 
+in which FORMULA  is connected to both FORMULA  and FORMULA . Here FORMULA  is bounded by FORMULA ,
+the face FORMULA  is bounded by FORMULA  and FORMULA  is bounded by FORMULA .
+
+Here, for all the three types of configurations, it is assumed that
+the edge FORMULA  bounds the face FORMULA  as well as FORMULA .
+Remarks:
+Note that as plane configurations (a) and (b) are mirror images of each other.
+Also, note that in all configurations, all the edges FORMULA  where FORMULA 
+of the 5-cycle that induces FORMULA , except one edge FORMULA ,
+bound the infinite face of FORMULA .
+
+Convention:
+Let FORMULA  be a 3-restricted biconnected outerplanar graph with FORMULA 
+such that for each 1-ss face FORMULA  of FORMULA  the
+configuration of FORMULA  and its parent FORMULA  is of type (a), (b) or (c) from
+above. Call such a FORMULA  fully restricted.
+Hence, a minimal criminal is always fully restricted.
+Let FORMULA  be a biconnected outerplanar graph induced by the cycle FORMULA  on
+the vertices FORMULA  in clockwise order. Assume that
+FORMULA  and that FORMULA  is adjacent to FORMULA  and FORMULA .
+From FORMULA  we construct four other outerplanar graphs FORMULA , FORMULA , FORMULA  and FORMULA  in the
+following way:
+
+Let FORMULA  be obtained by replacing the edge FORMULA 
+by the 2-path FORMULA .
+
+Let FORMULA  be obtained from FORMULA  by replacing the edges FORMULA 
+and FORMULA  by the 2-paths FORMULA  and FORMULA 
+respectively.
+
+Let FORMULA  be obtained from FORMULA  by replacing the edge FORMULA 
+by the 2-path FORMULA  and connecting the additional vertex FORMULA 
+to both FORMULA  and FORMULA .
+
+Let FORMULA  be obtained from FORMULA  by connecting the additional
+vertex FORMULA  to both FORMULA  and FORMULA  and the additional vertex FORMULA  to FORMULA  and FORMULA .
+
+Note that FORMULA  is a contraction of each of the graphs FORMULA , FORMULA , FORMULA  and FORMULA ,
+namely
+FORMULA 
+Lemma 6.6 
+A 7-coloring of FORMULA  can be extended to a 7-coloring of FORMULA .
+
+Proof. 
+Since FORMULA  induces
+a clique in FORMULA , we may assume FORMULA  to have color FORMULA  for
+FORMULA  in the 7-coloring of FORMULA . To obtain a 7-coloring of FORMULA 
+we retain the colors of FORMULA  from FORMULA  for all FORMULA  and
+then assign colors FORMULA  to vertices FORMULA  respectively
+(note that we do not need to know the colors
+of all the neighbors of neither FORMULA  nor FORMULA  in the given 7-coloring of FORMULA ).    FORMULA FORMULA
+Convention:
+Let FORMULA  be a biconnected outerplanar graph FORMULA  with FORMULA .
+Let FORMULA  be a degree-two vertex of FORMULA  that bounds a leaf-face FORMULA 
+of FORMULA . If FORMULA  is provided with a 7-coloring,
+call FORMULA  c-simplicial if all the neighbors of FORMULA  in FORMULA 
+have collectively FORMULA  colors.
+Note that FORMULA  from above cannot be a minimal criminal, since FORMULA 
+is c-simplicial; if we have a 7-coloring of FORMULA  then we
+can extend it to a 7-coloring of FORMULA .
+Our next theorem will provide our main tool for this section.
+Theorem 6.7 
+If FORMULA  and the constructed graphs FORMULA , FORMULA  and FORMULA  are as defined above,
+then none of the graphs FORMULA , FORMULA  or FORMULA  are minimal criminals.
+
+Proof. 
+If FORMULA  is a minimal criminal, then by definition FORMULA  has a legitimate 7-coloring.
+Again, we may assume FORMULA  to have color FORMULA  for FORMULA .
+By retaining the colors of FORMULA  from FORMULA  for FORMULA 
+and then assigning colors FORMULA  to the vertices FORMULA 
+respectively, we obtain a legitimate 7-coloring of FORMULA .
+Hence, FORMULA  cannot be a minimal criminal.
+If FORMULA  is a minimal criminal, then FORMULA  has a legitimate 7-coloring.
+We can assume FORMULA  to have color FORMULA  for FORMULA .
+By Lemma REF  we obtain a 7 coloring of FORMULA ,
+as given in its proof. If FORMULA  is c-simplicial (w.r.t. this mentioned 7-coloring of FORMULA )
+then we can obtain a 7-coloring of FORMULA . Therefore FORMULA  cannot be c-simplicial
+in this case. This means the neighbors of FORMULA  among FORMULA 
+have the colors FORMULA  and 5 precisely, since FORMULA  and FORMULA .
+In this case assign the colors FORMULA  to the vertices FORMULA .
+This is a legitimate 7-coloring of FORMULA 
+and hence FORMULA  cannot be a minimal criminal.
+If FORMULA  is a minimal criminal, then then FORMULA  has a legitimate 7-coloring.
+We can assume FORMULA  to have color FORMULA  for FORMULA . If both FORMULA  and FORMULA 
+are c-simplicial, then we can extend the given coloring of FORMULA  to that of FORMULA ,
+since FORMULA  and FORMULA  are of distance 3 or more from each other in FORMULA . If neither
+FORMULA  nor FORMULA  are c-simplicial, then we must have that the neighbors of FORMULA  among
+FORMULA  have the colors FORMULA  and 7 precisely,
+and the neighbors of FORMULA  among FORMULA 
+have the colors FORMULA  and 3 precisely. In this case we assign the colors
+colors FORMULA  to the vertices FORMULA 
+respectively (as in the case with FORMULA ) and obtain a legitimate 7-coloring of FORMULA .
+We consider lastly the case where one of FORMULA  and FORMULA  is c-simplicial and the other is not.
+By symmetry, it suffices to consider the case where FORMULA  is c-simplicial and FORMULA  is not.
+The fact that FORMULA  is c-simplicial means that it can be assigned a color that must be from
+FORMULA  and thereby obtain a 7-coloring of FORMULA . Since FORMULA  is not
+c-simplicial means that the neighbors of FORMULA  among FORMULA 
+have the colors FORMULA  and 3 precisely. We now consider the following three
+cases:
+FORMULA  has color 5: In this case assign the colors
+FORMULA  to the vertices FORMULA , thereby obtaining a legitimate
+7-coloring of FORMULA .
+FORMULA  has color 6: In this case assign the colors
+FORMULA  to the vertices FORMULA , thereby obtaining a legitimate
+7-coloring of FORMULA .
+FORMULA  has color 7: Here FORMULA  and FORMULA  cannot be connected since
+both FORMULA  and FORMULA  have color 7. In this case assign the colors
+FORMULA  to the vertices FORMULA , thereby obtaining a legitimate
+7-coloring of FORMULA .
+This shows that FORMULA  cannot be a minimal criminal. This completes our proof.    FORMULA FORMULA
+Remark: To test the legitimacy of the extended colorings we note
+first of all that the vertices FORMULA , FORMULA  and FORMULA  always keep their
+color from the one provided by FORMULA . In addition, the colors of the
+neighbors of FORMULA  among FORMULA  are the same, unless FORMULA 
+is not c-simplicial, which gives concrete information about the colors
+of the other neighbors of FORMULA . Similarly the colors of the neighbors of FORMULA 
+among FORMULA  are the same, unless (as for FORMULA )
+FORMULA  is not c-simplicial, which again gives concrete information about the
+colors of the remaining neighbors of FORMULA .
+
+We are now ready for the proof of the following main result of this section.
+Theorem 6.8 
+There is no minimal criminal; every biconnected outerplanar graph FORMULA  with
+FORMULA  has FORMULA .
+
+Proof. 
+We will show that a minimal criminal must have the form of one of the
+graphs FORMULA , FORMULA  or FORMULA , thereby obtaining a contradiction by
+Theorem REF .
+Assume FORMULA  is a minimal criminal, which must therefore be fully restricted.
+Since FORMULA , each 1-ss face FORMULA  of FORMULA  has a
+parent FORMULA  and a grandparent FORMULA  in FORMULA . Hence, FORMULA  (that is FORMULA )
+is a leaf in FORMULA  (or a single vertex). Since FORMULA  is fully
+restricted, the configuration FORMULA  in FORMULA  is induced by a 5-cycle
+on vertices FORMULA  in clockwise order and is of type (a), (b) or (c)
+mentioned earlier. Assume FORMULA  is bounded by FORMULA 
+where FORMULA . If FORMULA  (that is FORMULA ) is not a single vertex but a leaf in
+FORMULA , then let the edge FORMULA  of FORMULA  be the dual edge
+of the unique edge with FORMULA  as and endvertex in FORMULA .
+In any case (whether FORMULA  is a leaf or a single vertex in FORMULA )
+at least one of the edges FORMULA  must be
+identified with an edge FORMULA  of a configuration FORMULA 
+of type (a), (b) or (c).
+If there is an edge FORMULA  bounding FORMULA  and a configuration
+FORMULA  in such a way that the edge FORMULA  is identified with
+FORMULA  (i.e. FORMULA  and FORMULA ) and such
+that either FORMULA  or FORMULA , then either the degree-two
+vertices FORMULA  or FORMULA  has FORMULA  neighbors in FORMULA  respectively.
+this means that a 7-coloring of either FORMULA  or FORMULA  can
+be used to extend to a 7-coloring of FORMULA . Therefore FORMULA  cannot be a minimal
+criminal in this case.
+We note that in order for FORMULA  for all configurations
+FORMULA , then every edge FORMULA  for FORMULA  must
+be identified with an edge FORMULA  of a configuration FORMULA .
+That is to say, none of the edges FORMULA  can bound the infinite
+face of FORMULA . Since FORMULA  we must, in particular, have that
+the edges FORMULA  and FORMULA  must be identified
+with edges FORMULA  of configurations FORMULA  each of type
+(a), (b) or (c). If FORMULA , then (as mentioned in previous
+paragraph) both configurations, to the left and right of FORMULA  in the
+plane embedding of FORMULA , contain a degree-two vertex with FORMULA 
+neighbors in FORMULA . In order for FORMULA  then the FORMULA 
+configuration to the left of FORMULA  in FORMULA , must be of type (b) or (c)
+and the configuration FORMULA  to the right of FORMULA  must be of
+type (a) or (c). We now finally discuss these cases separately.
+Here “Case (x,y)” will mean that configuration FORMULA  of type
+(x) is to the left of FORMULA  and configuration FORMULA  of type (y)
+is to the right of FORMULA .
+Case (b,a): Here FORMULA  is of type FORMULA  as stated in
+Theorem REF  (with FORMULA  in the role of FORMULA  mentioned
+there), and therefore cannot be a minimal criminal.
+Case (b,c): Here FORMULA  is of type FORMULA  as stated in
+Theorem REF , and therefore cannot be a minimal criminal.
+Case (c,a): Here FORMULA  is a mirror image of a type FORMULA  (previous case)
+as stated in Theorem REF ,
+and therefore cannot be a minimal criminal.
+Case (c,c): Here FORMULA  is of type FORMULA  as stated in
+Theorem REF , and therefore cannot be a minimal criminal.
+This concludes the proof, that there is no minimal criminal, and hence
+the square of each biconnected outerplanar graph with FORMULA  is 7-colorable.    FORMULA FORMULA
+By Theorem REF  and Lemma REF  we have the following corollary.
+Corollary 6.9 
+For every outerplanar graph FORMULA  with FORMULA  we have FORMULA .
+
+Greedy is not exact
+We have observed that Greedy yields an optimal for coloring squares of
+outerplanar graphs whenever FORMULA  or FORMULA .
+On many of the examples that we have constructed it also gives optimal
+colorings. It is therefore a natural question to ask whether it always
+obtains an optimal coloring. If not, one may ask for the case of
+chordal graphs, where we have seen that Greedy is also optimal for FORMULA  and FORMULA .
+Further evidence may be gathered by observing that it yields optimal
+colorings of FORMULA , FORMULA  and FORMULA , since their squares are chordal.
+We answer these questions in the negative by showing that the chordal
+graph FORMULA  is a counterexample.
+Theorem 6.10 Greedy does not always output an optimal coloring of FORMULA .
+
+Proof. 
+Suppose that the vertices of (REF ) in Figure REF 
+are ordered
+so that first come the white vertices in the order shown on the figure
+(either from left-to-right or in a circular order). Then, Greedy will
+first color the white vertices with the first two colors. Now, the
+remaining six vertices must receive different colors, and none of them
+can use the first two colors, resulting in an 8-coloring.    FORMULA FORMULA
+Acknowledgments
+The authors are grateful to Steve Hedetniemi
+for his interest in this problem and for suggesting
+the writing of this article.

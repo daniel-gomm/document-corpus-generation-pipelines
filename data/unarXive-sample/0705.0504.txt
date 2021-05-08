@@ -1,0 +1,434 @@
+
+
+Rothberger's property in all finite powers
+Key words and phrases: Ellentuck topology, Ramsey theory, Rothberger property, forcing, selection principle. Subject Classification: Primary 03E02, 05C55, 05D10, 54D20.
+
+by Marion Scheepers
+Rothberger's property in all finite powers
+Key words and phrases: Ellentuck topology, Ramsey theory, Rothberger property, forcing, selection principle. Subject Classification: Primary 03E02, 05C55, 05D10, 54D20.
+
+by Marion Scheepers
+
+For FORMULA  and for FORMULA  use FORMULA  to denote that FORMULA  or FORMULA . For FORMULA  define
+FORMULA 
+The family FORMULA  forms a basis for a topology on FORMULA . This is the Ellentuck topology on FORMULA  and was introduced in {{cite:59214a5a-f1a2-48d4-ab96-0b89ec424526}}.
+Recall that a subset FORMULA  of a topological space is nowhere dense if there is for each nonempty open set FORMULA  of the space a nonempty open subset FORMULA  such that FORMULA . And FORMULA  is said to be meager if it is a union of countably many nowhere dense sets. A subset of a topological space is said to have the Baire property if it is of the form FORMULA  for some
+open set FORMULA  and some meager set FORMULA .
+Theorem 1 (Ellentuck)  For a set FORMULA  the following are equivalent:
+
+FORMULA  has the Baire property in the Ellentuck topology.
+
+For each finite set FORMULA  and for each infinite set FORMULA  with FORMULA  there is an infinite set FORMULA  such that
+either FORMULA , or else FORMULA .
+
+
+The proof of FORMULA  is nontrivial but uses only the techniques of Galvin and Prikry {{cite:8a6133d5-6abc-4fee-9f53-d3a2ed3e361f}}. Galvin and Prikry proved a precursor of Theorem REF : If FORMULA  is a Borel set in the topology inherited from FORMULA  via representing sets by their characteristic functions, then FORMULA  has property (2) in Theorem REF . Silver and Mathias subsequently gave metamathematical proofs that analytic sets (in the FORMULA -topology) have this property. Theorem REF  at once yields all these prior results. The original papers {{cite:59214a5a-f1a2-48d4-ab96-0b89ec424526}} and {{cite:8a6133d5-6abc-4fee-9f53-d3a2ed3e361f}} give a nice overview of these facts, and more.
+When a subset FORMULA  of FORMULA  inherits the Ellentuck topology from FORMULA , we shall speak of “FORMULA  with the Ellentuck topology". For FORMULA  an abstract countably infinite set define the Ellentuck topology on FORMULA  by fixing a bijective enumeration FORMULA  of FORMULA  and by defining for FORMULA  and FORMULA  nonempty subsets of FORMULA :
+FORMULA 
+With the relation FORMULA  defined, define the Ellentuck topology on FORMULA  as above. For FORMULA  and for finite set FORMULA  we write FORMULA  for FORMULA .
+For families FORMULA  and FORMULA  we now define a sequence of statements:
+FORMULA : For each countably infinite FORMULA  and for each set FORMULA  the implication (1)FORMULA (2) holds, where:
+
+FORMULA  has the Baire property in the Ellentuck topology on FORMULA .
+
+For each FORMULA  with FORMULA  and each finite subset FORMULA  of FORMULA , there is an infinite FORMULA  with FORMULA  such that FORMULA  or FORMULA .
+
+Thus, FORMULA  is Ellentuck's theorem.
+FORMULA : For each countably infinite FORMULA  and each FORMULA  the implication FORMULA  holds:
+
+FORMULA  is open in the FORMULA  topology on FORMULA .
+
+For each FORMULA  there is a set FORMULA  such that either FORMULA , or else FORMULA .
+
+Thus, FORMULA  is part of the Galvin-Prikry theorem.
+Definition 1 A subset FORMULA  of FORMULA  is:
+
+dense if for each FORMULA , FORMULA .
+
+thin if no element of FORMULA  is an initial segment of another element of FORMULA .
+
+
+The following is an abstract formulation of Galvin's generalization of Ramsey's Theorem, announced in {{cite:a800c742-b480-409c-8159-14ff3e9a3657}} and in {{cite:8a6133d5-6abc-4fee-9f53-d3a2ed3e361f}} derived from Theorem 1 there:
+FORMULA :
+For each countably infinite FORMULA  and for each dense set FORMULA  there is a FORMULA  such that each FORMULA  has an initial segment in FORMULA .
+In this notation Galvin's generalization of Ramsey's theorem reads that FORMULA .
+Similarly, the following is an abstract formulation of Nash-Williams' theorem:
+FORMULA :
+For each countably infinite FORMULA  and for each thin family FORMULA  and for each FORMULA , and each partition FORMULA  there is a FORMULA  and an FORMULA  such that FORMULA .
+In this notation Nash-Williams' theorem reads that FORMULA .
+FORMULA : For positive integers FORMULA  and FORMULA  and for each countable FORMULA  and for each function
+FORMULA  there is a FORMULA  and an FORMULA  such that FORMULA  has value FORMULA  on FORMULA .
+In this notation Ramsey's theorem reads: For each FORMULA  and FORMULA , FORMULA .
+An open cover FORMULA  of a topological space FORMULA  is said to be an FORMULA -cover if FORMULA , but there is for each finite set FORMULA  a FORMULA  with FORMULA . The symbol FORMULA  denotes the collection of FORMULA -covers of FORMULA . The symbol FORMULA  denotes the collection of open covers of FORMULA . In {{cite:f1c99be9-7aad-4054-a905-a851756bd2e8}} Rothberger introduced the following covering property: For each sequence FORMULA  of open covers of FORMULA  there is a sequence FORMULA  such that each FORMULA , and FORMULA  is a cover of FORMULA . The symbol FORMULA  denotes this statement. The corresponding statement for FORMULA -covers of FORMULA , FORMULA , was introduced in {{cite:ac328cd3-cea4-4a3f-a8d5-43f8a2ecb179}} by Sakai. It states: For each sequence FORMULA  of FORMULA -covers of FORMULA  there is a sequence FORMULA  such that each FORMULA , and FORMULA  is an FORMULA  cover for FORMULA . Sakai proved that FORMULA  has FORMULA  if, and only if, all finite powers of FORMULA  have FORMULA . According to Gerlits and Nagy {{cite:158226c9-b96d-45e8-888d-6030f20fcae9}} a space is said to be an FORMULA -space if each FORMULA -cover contains a countable subset which still is an FORMULA -cover. A space is an FORMULA -space if and only if it has the Lindelöf property in all finite powers - see {{cite:158226c9-b96d-45e8-888d-6030f20fcae9}} for details. In this paper we prove:
+Theorem 2  For an FORMULA -space FORMULA , the following are equivalent:
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+For all FORMULA  and FORMULA , FORMULA .
+
+FORMULA .
+
+
+The proof of FORMULA :
+Assume that FORMULA  has property FORMULA . Fix a countable FORMULA  and fix a set FORMULA . For the remainder of the argument, fix a bijective enumeration of FORMULA , say FORMULA .
+Sets of the form FORMULA  constitute a basis for the Ellentuck topology on FORMULA .
+Definition 2 For a finite set FORMULA  and for FORMULA :
+
+FORMULA  accepts FORMULA  if FORMULA .
+
+FORMULA  rejects FORMULA  if no FORMULA  accepts FORMULA .
+
+
+Lemma REF  will be used without special reference:
+Lemma 3  Let a finite set FORMULA  and a set FORMULA  be given:
+
+FORMULA  accepts FORMULA  if, and only if, each FORMULA  accepts FORMULA .
+
+FORMULA  rejects FORMULA  if, and only if, each FORMULA  rejects FORMULA .
+
+
+Lemma 4  For each finite set FORMULA , there is a FORMULA  such that FORMULA  accepts FORMULA  or FORMULA  rejects FORMULA .
+
+FORMULA  If FORMULA  does not reject FORMULA , choose a FORMULA  accepting FORMULA .  FORMULA
+Lemma 5  Let FORMULA  be a finite set. Let FORMULA  be such that for each finite set FORMULA , FORMULA  accepts FORMULA  or FORMULA  rejects FORMULA . If FORMULA  rejects FORMULA  then FORMULA  is a member of FORMULA .
+
+FORMULA 
+Suppose not. Then FORMULA , and for each FORMULA , FORMULA  accepts FORMULA . Thus for each FORMULA , FORMULA  accepts FORMULA . This means that FORMULA , and so FORMULA  accepts FORMULA . This contradicts Lemma REF  (2) since FORMULA  and FORMULA  rejects FORMULA .
+ FORMULA
+
+FORMULA -covers accepting or rejecting all finite subsets.
+The game FORMULA  is played as follows: Players ONE and TWO play an inning per positive integer. In the FORMULA -th inning ONE first chooses an FORMULA ; TWO responds with a FORMULA . A play FORMULA  is won by TWO if FORMULA ; else, ONE wins. It was shown in {{cite:70ee9d76-2768-4a82-99a1-41028a7c67dc}} that
+Theorem 6  For a topological space FORMULA  the following are equivalent:
+
+FORMULA  has property FORMULA .
+
+ONE has no winning strategy in FORMULA .
+
+
+Theorem 7  If FORMULA  has property FORMULA , then for each finite set FORMULA  and for each FORMULA  there is a FORMULA  such that for each finite set FORMULA , FORMULA  accepts FORMULA  or FORMULA  rejects FORMULA .
+
+FORMULA  Let FORMULA  and FORMULA  be given. Define a strategy FORMULA  for ONE of FORMULA  as follows:
+Enumerate the set of all subsets of FORMULA  as FORMULA . Using Lemma REF  recursively choose FORMULA  in FORMULA  such that for each FORMULA , FORMULA  accepts FORMULA  or FORMULA  rejects FORMULA . Then define:
+FORMULA 
+If TWO now chooses FORMULA  then use Lemma REF  in the same way to choose
+FORMULA 
+such that for each set FORMULA , FORMULA  accepts FORMULA , or rejects FORMULA .
+When TWO responds with FORMULA , enumerate the subsets of FORMULA  as FORMULA  say, and choose by Lemma REF  sets FORMULA  such that FORMULA  accepts FORMULA  or FORMULA  rejects FORMULA  for FORMULA  and FORMULA . Finally put
+FORMULA 
+Note that for each finite subset FORMULA  of FORMULA , FORMULA  accepts FORMULA  or rejects it.
+It is clear how player ONE's strategy is defined. By Theorem REF  FORMULA  is not a winning strategy for ONE. Consider a FORMULA -play lost by ONE, say
+FORMULA 
+Then FORMULA  is an element of FORMULA .
+We claim that for each finite subset FORMULA  of FORMULA , FORMULA  accepts FORMULA  or FORMULA  rejects FORMULA . For consider such a FORMULA . If FORMULA , then as FORMULA  and FORMULA  accepts or rejects FORMULA , also FORMULA  does. If FORMULA , then put FORMULA . Then FORMULA  is a subset of FORMULA , so that FORMULA  is accepted or rejected by FORMULA . But FORMULA , and so FORMULA  accepts or rejects FORMULA .
+ FORMULA
+
+Completely Ramsey sets
+The subset FORMULA  of FORMULA  is said to be completely Ramsey if there is for each finite set FORMULA  and for each FORMULA  a set FORMULA  such that
+
+either FORMULA ,
+
+or else FORMULA .
+
+Lemma 8  If FORMULA  and FORMULA  are completely Ramsey subsets of FORMULA , then so is FORMULA .
+
+FORMULA  Let a finite set FORMULA  and FORMULA  be given. Since FORMULA  is completely Ramsey, choose FORMULA  such that FORMULA , or FORMULA . If the former hold we are done. In the latter case, since FORMULA  is completely Ramsey, choose FORMULA  such that FORMULA , or FORMULA . In either case the proof is complete.  FORMULA
+The following Lemma is obviously true.
+Lemma 9  If FORMULA  is completely Ramsey, then so is FORMULA .
+
+Corollary 10  If FORMULA  and FORMULA  are completely Ramsey subsets of FORMULA , then so is FORMULA .
+
+FORMULA  Lemmas REF  and REF , and De Morgan's laws. FORMULA
+
+Open sets in the Ellentuck topology
+We are still subject to the hypothesis that FORMULA  satisfies FORMULA .
+Lemma 11  For each finite set FORMULA  and for each FORMULA  such that for each finite subset FORMULA  of FORMULA , FORMULA  accepts, or rejects FORMULA  the following holds: For each finite set FORMULA  such that FORMULA  rejects FORMULA , there is a FORMULA  such that for each finite set FORMULA , FORMULA  rejects FORMULA .
+
+FORMULA  Fix FORMULA  and FORMULA  as in the hypotheses. Define a strategy FORMULA  for ONE in FORMULA  as follows:
+By Lemma  REF
+FORMULA 
+Notice that FORMULA  accepts or rejects each of its finite subsets, it rejects FORMULA , and for each FORMULA , FORMULA  rejects FORMULA .
+If TWO now chooses FORMULA , then by Lemma  REF
+FORMULA 
+is in FORMULA . As before, FORMULA  accepts or rejects each of its finite subsets, and for any FORMULA , for each finite subset FORMULA  of FORMULA , FORMULA  rejects FORMULA .
+If next TWO chooses FORMULA , then by Lemma  REF
+FORMULA 
+is an element of FORMULA .
+Continuing in this way we define a strategy FORMULA  for ONE in FORMULA . Since FORMULA  satisfies FORMULA , FORMULA  is not a winning strategy for ONE. Consider a FORMULA -play lost by ONE, say:
+FORMULA 
+Put FORMULA . Then FORMULA . We claim that for each finite set FORMULA , FORMULA  rejects FORMULA .
+For choose a finite set FORMULA . Then FORMULA . Fix FORMULA . Then FORMULA , and the latter rejects FORMULA  for all finite subsets FORMULA  of FORMULA . Thus FORMULA  rejects FORMULA . FORMULA
+Theorem 12  If FORMULA  has property FORMULA , then every open subset of FORMULA  is completely Ramsey.
+
+FORMULA  Let FORMULA  be open in this subspace. Consider a finite set FORMULA  and a FORMULA . Since FORMULA , choose by Theorem REF  a FORMULA  such that for each finite set FORMULA , FORMULA  accepts or rejects FORMULA .
+If FORMULA  accepts FORMULA  then we have FORMULA , and we are done. Thus, assume that FORMULA  does not accept FORMULA . Then FORMULA  rejects FORMULA , and we choose by Lemma REF  a FORMULA  such that for each finite subset FORMULA  of FORMULA , FORMULA  rejects FORMULA .
+We claim that FORMULA . For suppose not. Choose FORMULA . Since FORMULA  is open, choose an Ellentuck neighborhood of FORMULA  contained in FORMULA , say FORMULA . Then we have FORMULA  and FORMULA . But then FORMULA  and FORMULA , whence also FORMULA . But then FORMULA  accepts FORMULA  where FORMULA  is a finite subset of FORMULA , and FORMULA , and FORMULA  rejects FORMULA , a contradiction.  FORMULA
+
+Meager subsets in the Ellentuck topology
+If the subset FORMULA  of FORMULA  is nowhere dense in the topology, then for each FORMULA  and for each finite set FORMULA , FORMULA  rejects FORMULA . We now examine the meager subsets of FORMULA .
+Lemma 13  If FORMULA  is nowhere dense, then there is for each FORMULA  and each finite set FORMULA  a set FORMULA  such that for each finite set FORMULA , FORMULA  rejects FORMULA .
+
+FORMULA  Since FORMULA  is nowhere dense, no FORMULA -cover contained in FORMULA  can accept a finite set. Thus each FORMULA -cover contained in FORMULA  rejects each finite subset of FORMULA .  FORMULA
+Lemma 14  Assume FORMULA .
+If FORMULA  is a closed nowhere dense subset of FORMULA  then there is for each finite subset FORMULA  and for each FORMULA  a FORMULA  such that FORMULA .
+
+FORMULA  First, note that closed nowhere dense subsets are complements of open dense sets. By Theorem REF , each open set is completely Ramsey. By Lemma REF  each closed, nowhere dense set is completely Ramsey. By Lemma REF  the rest of the statement follows.
+ FORMULA
+By taking closures, the preceding lemma implies:
+Corollary 15  Assume FORMULA . If FORMULA  is a nowhere dense subset of FORMULA  then there is for each finite subset FORMULA  and for each FORMULA  a FORMULA  such that FORMULA .
+
+And now we prove:
+Theorem 16  Assume FORMULA . For a subset FORMULA  of FORMULA  the following are equivalent:
+
+FORMULA  is nowhere dense.
+
+FORMULA  is meager.
+
+
+FORMULA  We must show that (2)FORMULA (1). Thus, assume that FORMULA  is meager and write FORMULA , where for each FORMULA  we have FORMULA , and FORMULA  is nowhere dense in FORMULA . Consider any basic open set FORMULA  of FORMULA .
+Define a strategy FORMULA  for ONE in the game FORMULA  as follows:
+Since FORMULA  is nowhere dense, choose by Corollary REF  an FORMULA  with FORMULA . Define FORMULA .
+When TWO chooses FORMULA  choose by Corollary REF  an FORMULA  with FORMULA , and define FORMULA .
+Now when TWO chooses FORMULA , find by Corollary REF  an FORMULA  with FORMULA , and define FORMULA .
+It is clear how to define ONE's strategy FORMULA . By Theorem REF  FORMULA  is not a winning strategy for ONE. Consider a play
+FORMULA 
+lost by ONE. Put FORMULA . Then FORMULA . Observe that by the definition of FORMULA  we have for each FORMULA  and each finite set FORMULA  that FORMULA .
+Claim: FORMULA .
+For suppose that instead FORMULA . Choose FORMULA , and then choose FORMULA  so that FORMULA . Choose the least FORMULA  with FORMULA . This is possible because FORMULA  is finite. Observe also that FORMULA . Put FORMULA . Thus we have that FORMULA , which contradicts the fact that FORMULA , and FORMULA . This completes the proof of the claim.
+ FORMULA
+Using Lemmas REF  and REF  and Corollary REF  we have:
+Theorem 17  Suppose FORMULA  satisfies FORMULA . Then for each FORMULA , every subset of FORMULA  which has the Baire property is completely Ramsey.
+
+
+The proof of FORMULA :
+Note that a set open in the FORMULA  topology is also open in the Ellentuck topology. The implication FORMULA  of Theorem REF  follows from this remark. Now we start with FORMULA .
+Lemma 18  Assume FORMULA . Then FORMULA  holds.
+
+FORMULA  Let FORMULA  be dense and define FORMULA  to be the set FORMULA . Then we have:
+FORMULA 
+is a FORMULA -open subset of FORMULA . Choose a FORMULA  such that FORMULA , or FORMULA . But the second alternative implies the contradiction that FORMULA . It follows that the first alternative holds. FORMULA
+Theorem 19  Assume FORMULA . Then FORMULA  holds.
+
+FORMULA  Fix a thin family FORMULA  and positive integer FORMULA , and a partition FORMULA .
+We may assume FORMULA . If FORMULA  is not dense, we can choose FORMULA  such that FORMULA . Thus, assume FORMULA  is dense. Choose, by the hypothesis,
+a FORMULA  such that for each FORMULA , some initial segment of FORMULA  is in FORMULA .
+Consider any FORMULA , and put FORMULA . Then FORMULA  is an initial segment of FORMULA , and FORMULA , and so some initial segment of FORMULA , say FORMULA , is in FORMULA . Since both FORMULA  and FORMULA  are initial segments of FORMULA  and are both in FORMULA , and since FORMULA  is thin, we have FORMULA , and so FORMULA . Consequently we have FORMULA .
+ FORMULA
+Theorem 20  Assume that FORMULA  holds.
+Then: For each FORMULA  and FORMULA  we have FORMULA .
+
+FORMULA  Let FORMULA  be countable. Let positive integers FORMULA  and FORMULA  be given. Put FORMULA . Then FORMULA  is thin. Apply the hypothesis.
+ FORMULA
+The following theorem was proven in {{cite:bf5fd489-d812-4b1d-87b9-c43d71de4eb3}} (Theorem 6.1) and {{cite:da5b5573-42f3-498c-a704-95bf30b3fe0e}} (Theorem 24)See Appendix A. It, together with the above sequence of implications, completes the proof of Theorem REF .
+Theorem 21  The following are equivalent:
+
+For each FORMULA  and FORMULA ,  FORMULA
+
+FORMULA .
+
+
+
+Remarks
+The results above are given for FORMULA , but a study of the proofs will reveal that these equivalences hold for several other families FORMULA . The main requirements on FORMULA  are that each element of FORMULA  has a countable subset in FORMULA , that for each FORMULA  FORMULA  holds, and that FORMULA  is equivalent to ONE not having a winning strategy in FORMULA , and that this is equivalent to FORMULA . Though this general treatment can be given without much additional effort, I preferred to illustrate the equivalences using a well-known concrete example, because of the connections of this example with forcing (pointed out below) and with the famous Borel Conjecture. Here are a few examples of such families FORMULA :
+For a topological space FORMULA  and an element FORMULA , define FORMULA . According to {{cite:ac328cd3-cea4-4a3f-a8d5-43f8a2ecb179}} FORMULA  has
+strong countable fan tightness at FORMULA  if the selection principle FORMULA  holds. Consider for a Tychonoff space FORMULA  the subspace of the Tychonoff product FORMULA  consisting of the continuous functions from FORMULA  to FORMULA . The symbol FORMULA  denotes this subspace with the inherited topology. Since FORMULA  is homogeneous, the truth of FORMULA  at some point FORMULA  implies the truth of FORMULA  at any point FORMULA . Thus we may confine attention to FORMULA , where FORMULA  is the function which is zero on FORMULA . Using the techniques above one can prove:
+Theorem 22  For a Tychonoff space FORMULA  the following are equivalent for FORMULA :
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+For all FORMULA  and FORMULA , FORMULA .
+
+
+For a topological space FORMULA  let FORMULA  denote the collection whose members are of the form FORMULA , a family of open subsets of FORMULA , such that no element of FORMULA  is dense in FORMULA , but FORMULA  is dense in FORMULA . And let FORMULA  be the set of FORMULA  such that for each finite family FORMULA  of nonempty open subsets of FORMULA  there is a FORMULA  with FORMULA  for each FORMULA . The families FORMULA  and FORMULA  were considered in {{cite:ec794c60-8019-4b07-8f30-57e9ae5f3b01}} where it was proved that for FORMULA  a set of real numbers, and FORMULA  the Pixley-Roy space over FORMULA , the following holds:
+Theorem 23  If FORMULA  is a set of real numbers, the following are equivalent for FORMULA :
+
+FORMULA .
+
+ONE has no winning strategy in the game FORMULA .
+
+For each FORMULA  and FORMULA  FORMULA .
+
+Each of these statements is equivalent to FORMULA  having FORMULA .
+
+Using the techniques above one can prove:
+Theorem 24  For a set FORMULA  of reals the following are equivalent for FORMULA :
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+For all FORMULA  and FORMULA , FORMULA .
+
+
+For a non-compact topological space FORMULA  call an open cover FORMULA  a k-cover if there is for each compact FORMULA  a FORMULA  such that FORMULA , and if FORMULA . Let FORMULA  denote the collection of k-covers of such an FORMULA . If FORMULA  is a separable metric space then each member of FORMULA  has a countable subset which still is a member of FORMULA . Using the techniques above one can prove:
+Theorem 25  For separable metric spaces FORMULA  the following are equivalent:
+
+ONE has no winning strategy in FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+For all FORMULA  and FORMULA , FORMULA .
+
+
+The equivalence of (2) and (7) for n=2 and k=2 is Theorem 8 of {{cite:10bbc63c-f829-4a85-bcd4-a68b8dd89df5}}. The equivalence of (1) and (2) is a result of {{cite:ce8518ed-f764-4af9-9fa3-198fa6b1c4c6}}. The remaining equivalences are then derived as was done above for FORMULA .
+A collection FORMULA  of subsets of a set FORMULA  is said to be a combinatorial FORMULA -cover of FORMULA  if FORMULA , but for each finite subset FORMULA  of FORMULA  there is a FORMULA  with FORMULA . For an infinite cardinal number FORMULA  let FORMULA  be the set of countable combinatorial FORMULA -covers of FORMULA . Let FORMULA  be the least infinite cardinal number FORMULA  such that the real line is a union of FORMULA  first category sets. By the Baire Category Theorem FORMULA  is uncountable.
+Using the techniques of this paper one can prove:
+Theorem 26  For an infinite cardinal number FORMULA  the following are equivalent:
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+FORMULA .
+
+For all positive integers FORMULA  and FORMULA , FORMULA .
+
+
+
+Rothberger's property and forcing
+Now we explore the connections between forcing and Rothberger's property. Much of this part of the paper is inspired by Theorem 9.3 of {{cite:a60c11be-196a-436a-b64b-84c4c1b59b15}}.
+We begin by defining the following version of the well-known Mathias reals partially ordered set. Fix as before a countable FORMULA -cover FORMULA  of FORMULA , and enumerate it bijectively as FORMULA . For FORMULA  finite, and FORMULA  with FORMULA , define:
+FORMULA 
+For FORMULA  and FORMULA  elements of FORMULA , we define FORMULA  if: FORMULA  and FORMULA  and FORMULA .
+Now FORMULA  is a partially ordered set. Its combinatorial and forcing properties are related to the combinatorial properties of FORMULA -covers of FORMULA . In this section we will show (see Theorem 9.3 of {{cite:a60c11be-196a-436a-b64b-84c4c1b59b15}}):
+Theorem 27  The following are equivalent:
+
+FORMULA  holds.
+
+For each countable FORMULA , for each sentence FORMULA  in the FORMULA -forcing language, and for each FORMULA , there is a FORMULA  with FORMULA  such that FORMULA , or  FORMULA
+
+
+Proof of FORMULA :
+Fix a sentence FORMULA  of the FORMULA -forcing language and fix FORMULA . Define the subsets
+FORMULA 
+and
+FORMULA 
+Then FORMULA  and FORMULA  are open sets in the Ellentuck topology on FORMULA . Moreover, by Corollary VII.3.7(a) of {{cite:48d8bbaa-65ce-4f95-86f0-0fc0bb28c608}}, FORMULA  is dense. By Theorem REF , FORMULA , FORMULA  and FORMULA  are completely Ramsey. Thus, for the given FORMULA  there is a FORMULA  such that FORMULA , or FORMULA ; since FORMULA  is dense and FORMULA  is nonempty and open we have FORMULA . But now FORMULA  is completely Ramsey and so there is a FORMULA  with FORMULA , or FORMULA . Since FORMULA , we have that FORMULA  or FORMULA . In either case we have FORMULA , or FORMULA .
+
+Proof of FORMULA :
+This proof takes more work. We show that in fact FORMULA  implies that FORMULA  holds. To see this, assume on the contrary that FORMULA  fails. Choose a countable FORMULA  and a function FORMULA  which witness this failure. Enumerate FORMULA  bijectively as FORMULA  and build the following corresponding partition tree:
+FORMULA . FORMULA . For FORMULA  of length FORMULA  for which FORMULA , FORMULA .
+Observe that for each FORMULA  with FORMULA  we have FORMULA  or FORMULA . For each FORMULA , define FORMULA . Then we have from the definitions that:
+
+For each FORMULA  and for each FORMULA  there is a FORMULA  with FORMULA .
+
+For each FORMULA , for each FORMULA  there is a unique FORMULA  with FORMULA .
+
+For each FORMULA  and FORMULA , if FORMULA , then FORMULA .
+
+Claim 1: If there is a FORMULA  such that for each FORMULA  there is a FORMULA  with FORMULA , then there is a FORMULA  such that FORMULA  is constant on FORMULA .
+For let such a FORMULA  be given. Since the elements of FORMULA  are pairwise disjoint, choose the unique FORMULA  with FORMULA . Letting FORMULA  be the unique element of FORMULA  with FORMULA , we see that FORMULA , and so for a unique FORMULA , FORMULA . Arguing like this we find an infinite sequence FORMULA  in FORMULA  such that for each FORMULA , FORMULA .
+Write FORMULA  where FORMULA  whenever FORMULA . Put FORMULA  and FORMULA . Then FORMULA , or FORMULA . In the former case FORMULA  is constant of value 0 on FORMULA , and in the latter case FORMULA  is constant of value 1 on FORMULA . This completes the proof of Claim 1.
+Note that the conclusion of Claim 1 holds also if instead we hypothesize that FORMULA  is such that for each FORMULA  with FORMULA  there is a FORMULA  with FORMULA .
+Since we are assuming that there is no FORMULA  with FORMULA  constant on FORMULA , we get: There is no FORMULA  such that for each FORMULA  with FORMULA  there is a FORMULA  with FORMULA . Indeed, this is equivalent to:
+For each FORMULA  there is an FORMULA  with FORMULA  but for each FORMULA  we have FORMULA .
+In what follows we will use FORMULA  to denote the canonical name of the ground model object FORMULA  in the forcing language.
+Define the FORMULA -name
+FORMULA 
+Then for each FORMULA -generic filter FORMULA  we have
+FORMULA 
+Claim 2: FORMULA .
+For suppose that on the contrary FORMULA . Since we have FORMULA , choose an FORMULA  so that FORMULA  is not a subset of any FORMULA . Then choose a FORMULA  so that FORMULA . Also choose FORMULA . Put FORMULA  and put FORMULA . Then as FORMULA  and
+FORMULA .
+FORMULA 
+But evidently we also have
+FORMULA 
+Thus we have a condition forcing contradictory statements, a contradiction. It follows that Claim 2 holds.
+Now we construct a sentence FORMULA  in the forcing language:
+FORMULA 
+By hypothesis 2 of the theorem, choose a FORMULA  such that FORMULA  decides FORMULA .
+Choose FORMULA  minimal so that FORMULA  and for each FORMULA  we have FORMULA .
+Put FORMULA  and choose FORMULA  so that FORMULA . Choose FORMULA  so that FORMULA . Then FORMULA  and so also FORMULA  decides FORMULA .
+By the construction of FORMULA  we see that for FORMULA ,
+also FORMULA .
+And since FORMULA  we also have
+FORMULA .
+Moreover, FORMULA .
+Since FORMULA  was chosen minimal and FORMULA , the least FORMULA  having the properties of FORMULA  is FORMULA .
+It follows that FORMULA , and as FORMULA  already decides FORMULA , we have
+FORMULA 
+Now repeat the previous construction starting with FORMULA  in place of FORMULA . Choose FORMULA  minimal so that FORMULA  and for each FORMULA  we have FORMULA . Since FORMULA , we have FORMULA . Put FORMULA  and choose FORMULA  so that FORMULA . Choose FORMULA  so that FORMULA . Then FORMULA  and so also FORMULA  decides FORMULA .
+By the construction of FORMULA  we see that for FORMULA ,
+also FORMULA .
+And since FORMULA  we also have
+FORMULA .
+By minimality of FORMULA  and the fact that FORMULA , we get that the minimal FORMULA  with these properties of FORMULA  is FORMULA :
+However, FORMULA . This means that FORMULA . Since FORMULA  and FORMULA  already decides FORMULA , we find that
+FORMULA 
+Since (REF ) and (REF ) yield a contradiction, the hypothesis that FORMULA  fails is false. This completes the proof of FORMULA  of Theorem REF .  FORMULA
+Remarks: The above result is again given for FORMULA , but a study of the proofs will reveal that these equivalences hold for several other families FORMULA , including the examples mentioned earlier. Theorem REF  has several consequences that will be explored elsewhere. One of the mentionable consequences is that forcing with FORMULA  preserves cardinals, and in the generic extension the only groundmodel sets of reals having FORMULA  are the countable sets. And a countable support iteration of length FORMULA  over a ground model satisfying the Continuum Hypothesis gives a model of Borel's Conjecture, just like the usual Mathias reals iteration does - {{cite:a60c11be-196a-436a-b64b-84c4c1b59b15}}.
+In closing: Analogous results can be proved for the selection principle FORMULA  and its relatives. These will be reported elsewhere.
+Appendix A: Regarding Theorem REF :
+Strictly speaking, the only equivalence that has been explicitly proved in the literature is the equivalence of FORMULA  with FORMULA , with the remark that the techniques used to prove this case yield by an induction the full version that for all finite FORMULA  and FORMULA  we have FORMULA . It is perhaps worth putting down the main elements of such an argument explicitly for future reference. The only implication we need to prove is the implication that FORMULA  implies that for all FORMULA  and FORMULA  FORMULA .
+Claim 1: FORMULA  implies that for each FORMULA , FORMULA .
+This can be done by induction on FORMULA . For FORMULA  this is the hypothesis. Assuming we have proven the implication for FORMULA , consider a countable FORMULA -cover FORMULA  of FORMULA  and a coloring FORMULA . Define a new coloring FORMULA  so that
+FORMULA 
+Applying the induction hypothesis we find an FORMULA -cover FORMULA  and an FORMULA  such that FORMULA  for all FORMULA . If FORMULA  then indeed FORMULA  works for FORMULA . Else, FORMULA  is an FORMULA -cover on whose pairs FORMULA  takes values FORMULA  or FORMULA , and now apply FORMULA .
+Claim 2: For FORMULA  and FORMULA , FORMULA  implies FORMULA .
+This can be done by starting with a countable FORMULA -cover FORMULA  and a coloring FORMULA . Enumerate FORMULA  bijectively as FORMULA . Define FORMULA  by
+FORMULA 
+where we list the FORMULA -tuples according to increasing index in the chosen enumeration. Apply FORMULA .
+Claim 3: For FORMULA  and FORMULA , FORMULA  implies FORMULA .
+To prove this we use the fact that For FORMULA  and FORMULA , FORMULA  implies FORMULA , which in turn implies that ONE has no winning strategy in the game FORMULA .
+Let a countable FORMULA -cover FORMULA  be given, as well as FORMULA . Enumerate FORMULA  bijectively as FORMULA . Define a strategy FORMULA  for ONE in the game FORMULA  as follows:
+Fix FORMULA  and define
+FORMULA 
+by FORMULA . Using FORMULA , fix an FORMULA  and an FORMULA -cover FORMULA  such that FORMULA  for each FORMULA . Declare ONE's move to be FORMULA .
+When TWO responds with FORMULA , ONE first defines
+FORMULA 
+by FORMULA . Then, using FORMULA , fix an FORMULA  and an FORMULA -cover FORMULA  such that FORMULA  for each FORMULA . Declare ONE's move to be FORMULA .
+When TWO responds with FORMULA , ONE first defines
+FORMULA 
+by FORMULA . Then, using FORMULA , fix an FORMULA  and an FORMULA -cover FORMULA  such that FORMULA  for each FORMULA . Declare ONE's move to be FORMULA .
+This describes ONE's strategy in this game. Since it is not winning for ONE, we find a play FORMULA  which is lost by ONE. Associated with this play we have an increasing infinite sequence FORMULA  for which FORMULA , all FORMULA , and a sequence FORMULA  of elements of FORMULA , and a sequence FORMULA , of FORMULA -covers such that:
+
+For each FORMULA , FORMULA .
+
+For each FORMULA , FORMULA  whenever FORMULA .
+
+FORMULA  is an FORMULA -cover.
+
+Fix an FORMULA  such that FORMULA  is an FORMULA -cover. Then for each FORMULA  we have FORMULA .
+Acknowledgements
+I thank the referee for a careful reading of the paper, and for very useful suggestions. I also thank the Boise Set Theory seminar for useful suggestions and remarks during a series of lectures on these results. And finally, I thank the organizing committee of the third Workshop on Coverings, Selections and Games in Topology, hosted in April 2007 in Vrnjacka Banja, Serbia, for the opportunity to present some of these results at the workshop.
+Address:
+Department of Mathematics
+Boise State University
+Boise, ID 83725.
+e-mail: marion@math.boisestate.edu
+

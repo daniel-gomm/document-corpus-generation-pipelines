@@ -1,0 +1,984 @@
+
+
+Pseudodifferential operators and weighted normed symbol spacesJ.
+SjöstrandCMLSEcole PolytechniqueFR 91120
+Palaiseau cédex, Francejohannes@math.polytechnique.fr UMR7640–CNRSIn this work we study some general classes of pseudodifferential operators
+where the classes of symbols are defined in terms of phase space
+estimates.
+Résumé
+On étudie des classes générales d'opérateurs
+pseudodifférentiels
+dont les classes de symboles sont définis en termes d'éstimations dans
+l'espace de phase.
+Keywords and Phrases: Pseudodifferential operator, symbol,
+modulation space.
+Mathematics Subject Classification 2000: 35S05
+
+Introduction
+This paper is devoted to
+pseudodifferential operators with symbols of limited regularity. The
+author
+{{cite:92292ed2-47ee-4be0-86d3-fabe879ec59b}} introduced the space of
+symbols FORMULA  on the phase space FORMULA 
+with the property that
+FORMULA 
+for some FORMULA  function FORMULA  on FORMULA . Here the hat
+indicates that we take the Fourier transform, FORMULA  is a
+lattice and FORMULA  form a partition of
+unity, FORMULA , FORMULA . A. Boulkhemair {{cite:11c746b0-96a5-49e0-a6d8-30bafaa8c605}} noticed that this space is identical
+to a space that he had defined differently in {{cite:a1c54d4e-17a5-4caf-bc57-be0f553a16ef}}.
+It was shown among other things that this space of symbols is an
+algebra for the ordinary multiplication and that this fact persists
+after quantization, namely the corresponding pseudodifferential
+operators (say under Weyl quantization) form a non-commutative
+algebra: If FORMULA  belong to the class above with corresponding
+FORMULA  functions FORMULA  and FORMULA  then FORMULA  where
+FORMULA  belongs to the same class and as a correponding function we may
+take FORMULA  for any FORMULA . Here FORMULA  indicates
+convolution and FORMULA  is
+the Weyl quantization of the symbol FORMULA , given by
+FORMULA 
+The definition (REF ) is
+independent of the choice of lattice and the corresponding function
+FORMULA . When passing to a different choice, we may have to change
+the function FORMULA  to
+FORMULA  for any fixed FORMULA . We
+then gain the fact that the weight FORMULA  is an order function in the
+sense that
+FORMULA 
+(See {{cite:a2c33833-27af-45f9-a183-1d0b3353adf2}} where this notion is used for developing a fairly
+simple calculus of semi-classical pseudodifferential operators,
+basically a special case of Hörmander's Weyl calculus {{cite:87197aa9-12b2-48ed-bf6c-28729b4e364b}}.)
+The space of functions in (REF ) is a special case of the
+modulation spaces of H.G. Feichtinger (see {{cite:a7824016-cfff-4584-8d3a-478d7104ff96}}, {{cite:1f0ed471-2cd8-40e4-9feb-0f4560648bef}}), and the
+relations between these spaces and pseudodifferential operators have
+been developed by many authors; K. Gröchenig {{cite:6c2936b3-abe4-44a1-adbd-ec72a4f677e6}}, {{cite:11caaeb8-8f0c-4d38-9658-8035cc9d12ce}}, Gröchenig, T. Strohmer {{cite:81c02c75-fa50-44a2-91d2-44d9cf36369b}}, K. Tachigawa {{cite:0cad7040-3053-4b92-b968-1bb729d5749f}},
+J. Toft {{cite:c5300102-5d39-4026-b12f-80624efbe61d}}, A. Holst, J. Toft, P. Wahlberg {{cite:0a9e52fa-c8d4-4103-859f-681b2131212c}}.
+Here we could mention that
+Boulkhemair {{cite:796cd9d5-ab6a-4541-bbd6-d60ec782f52f}} proved FORMULA -continuity for Fourier integral
+operators with symbols and phases in the original spaces of the type
+(REF ), that T. Strohmer {{cite:7c5c8b76-bab6-423c-9c06-2371d05838f7}} has applied the theory to
+problems in mobile communications and that Y. Morimoto and N. Lerner
+{{cite:3951f4b9-64b2-4044-936f-a5f643a088cd}} have used the original space to prove a version of the
+Fefferman-Phong inequality for pseudodifferential operators with
+symbols of low regularity. This result was recently improved by
+Boulkhemair {{cite:116d8f95-1127-479d-b058-c5b91a36c2aa}}.
+Closely related works on pseudodifferential - and Fourier - integral
+operators with symbols of limited regularity include the works
+of Boulkhemair
+{{cite:e9437bf4-940d-4f27-9763-9193760a75e5}}, {{cite:64830204-c07a-4d78-83f4-56643bad5a65}}, and many others also contain a study of when such
+operators or related Gabor localization operators belong to to
+Schatten-von Neumann classes: E. Cordero, Gröchenig {{cite:113321b2-0b77-4f85-a26f-a2dfa9897191}}, {{cite:48c04e1f-2731-4a61-8c0f-983302e176d5}}, C. Heil, J. Ramanathan, P. Topiwala
+{{cite:525a86db-352b-4e5d-85c3-95fde137be15}}, Heil {{cite:de79b80a-491c-4bfa-b734-7b556c1f75ab}}, J. Toft {{cite:65eea714-14d7-4a77-a97d-b2ebc92655e1}}, and M.W. Wong {{cite:c2979305-beb6-4ce5-83df-1e8bc7d7f820}}.
+The present work has been stimulated by these developments and the
+prospect of using “modulation type weights” to get more flexibility
+in the calculus of pseudodifferential operators with limited
+regularity. In the back of our head there were also some very
+stimulating discussions with J.M. Bony and N. Lerner from the time of
+the writing of {{cite:92292ed2-47ee-4be0-86d3-fabe879ec59b}}, {{cite:9bd2d350-92bb-43d6-9862-f737de16786e}} and at that time Bony explained to the
+author a
+nice very general point of view of A. Unterberger {{cite:eb23a92c-cd50-4487-b7ee-73a7a7704840}}
+for a direct microlocal analysis of very general
+classes of operators. Bony used it in his
+work {{cite:3a23a9eb-ccc5-4765-9473-106b2d1648e1}} and showed how his approach could be
+applied to recover and generalize the space
+in {{cite:92292ed2-47ee-4be0-86d3-fabe879ec59b}}. However, the aim of the work {{cite:3a23a9eb-ccc5-4765-9473-106b2d1648e1}} was to develop
+a very general theory of Fourier integral operators related to
+symplectic metrics of Hörmander's Weyl calculus of
+pseudodifferential operators, and the relation with {{cite:92292ed2-47ee-4be0-86d3-fabe879ec59b}} was
+explained very briefly. See {{cite:abe64d66-5ff9-4bd1-b823-ad69aced7de9}} for even more
+general classes of Fourier integral operators.
+In the present paper we make a direct generalization of the spaces of {{cite:92292ed2-47ee-4be0-86d3-fabe879ec59b}}.
+Instead of using order functions only depending on FORMULA  we can now allow arbitrary order
+functions FORMULA . See Definition REF  below. In Proposition
+REF  we show that this definition gives back the spaces above
+when the weight FORMULA  is an order function of FORMULA  only.
+In Section  we consider the quantization of our symbols
+and show how to define
+an associated effective kernel on FORMULA , FORMULA , which is
+FORMULA  where FORMULA 
+and FORMULA  is the natural Hamilton map induced by the symplectic
+structure.
+We show that if the effective kernel is the kernel of a bounded operator
+: FORMULA  then our pseudodifferential operator is bounded in
+FORMULA . In particular if FORMULA  only depends on FORMULA , we recover
+the FORMULA -boundedness when FORMULA  is integrable. This result was obtained previously by
+Bony {{cite:3a23a9eb-ccc5-4765-9473-106b2d1648e1}}, but our approach is rather different.
+In Section  we study the composition of pseudodifferential
+operators in our classes. If FORMULA  are symbols associated
+to the order functions FORMULA , FORMULA , then the Weyl composition is a
+well defined symbol associated to the order function FORMULA  given
+in (), provided that the integral there converges for at least
+one value of FORMULA  (and then automatically for all other values by
+Proposition ). This statement is equivalent to the corresponding
+natural one for the effective kernels, namely the composition is well
+defined if the composition of the majorant kernels
+FORMULA 
+and FORMULA  is well-defined, see (REF ),
+(REF ).
+In Section  we simplify the results further (for those readers
+who are familiar with Bargmann transforms from the FBI - complex Fourier
+integral operator point of view).
+In Section  we use the same point
+of view to give a simple sufficient condition on the order function FORMULA 
+and the index FORMULA , for the quantization FORMULA  to
+belong to the Schatten–von Neumann class FORMULA 
+for every symbol
+FORMULA  belonging to the symbol class with weight FORMULA . See {{cite:65eea714-14d7-4a77-a97d-b2ebc92655e1}}, {{cite:3f84a2ee-97a3-469f-a425-d9fc945b9d0c}}, {{cite:0a9e52fa-c8d4-4103-859f-681b2131212c}}, {{cite:608c50f0-d8a0-4f0b-b422-9f026bb427c0}}, {{cite:3b7b72ba-d11b-4038-9c8e-1b50f2fe58c7}} for related results and ideas.
+In Section  we finally generalize our results by replacing
+the underlying space FORMULA  on certain lattices by more general
+translation invariant Banach spaces. We believe that this generalization
+allows to
+include modulation spaces, but we have contented ourselves by establishing
+results allowing to go from properties on the level of lattices to the
+level of
+pseudodifferential operators. The results could undoubtedly be even further
+generalized. In this section and the preceding one, we have been inspired by
+the use of lattices and amalgan spaces in time frequency analysis,
+in particular by the work of Gröchenig and Strohmer {{cite:81c02c75-fa50-44a2-91d2-44d9cf36369b}} that
+uses previous results by Fournier–Stewart {{cite:31c6282d-f256-4d62-892d-e6f970c281e3}} and Feichtinger
+{{cite:d2e654d7-a578-40b3-9191-7847b5c07cf1}}.
+We have chosen to work with the Weyl quantization, but it is clear
+that the results
+carry over with the obvious modifications to other quantizations like the
+Kohn-Nirenberg one, actually for the general symbol-spaces under consideration
+the results could also have been formulatated directly for classes of integral
+operators.
+Similar ideas and results have been obtained in many other
+works,
+out of
+which some are cited above and later in the text.
+Acknowledgements. We thank J.M. Bony for a very
+stimulating
+and helpful recent discussion. The author also thanks K. Gröchenig,
+T. Strohmer, A. Boulkhemair and J. Toft for several helpful
+comments and references.
+
+Symbol spaces
+Let FORMULA  be a FORMULA -dimensional real vector space. We say that
+FORMULA  is an order function on FORMULA  if there exist
+constants FORMULA , FORMULA , such that
+FORMULA 
+Here FORMULA 
+and FORMULA  is a norm on FORMULA .
+Let FORMULA  be as above, let FORMULA  be the dual space and let FORMULA  be a
+lattice in FORMULA , so that FORMULA  where FORMULA  is a basis in FORMULA .
+Let FORMULA  have the property that
+FORMULA 
+Let FORMULA  be an order function on FORMULA , FORMULA .
+Definition 2.1 We say that FORMULA 
+if there is a constant FORMULA  such that
+FORMULA 
+where FORMULA  and FORMULA  denotes the Weyl quantization of FORMULA . The norm will always be the the one in
+FORMULA  if nothing else is indicated.
+
+To define the FORMULA -norm we need to choose a Lebesgue measure on FORMULA , but
+clearly that can only affect the choice of the constant in (REF ).
+Proposition 2.2  FORMULA  is a Banach space with
+FORMULA  equal to the smallest possible
+constant in
+(REF ). Changing FORMULA , FORMULA  and replacing the FORMULA  norm by
+the FORMULA -norm
+for any FORMULA  in the above definition, gives rise to the same
+space with an equivalent norm.
+
+Proof  The Banach space property will follow from the other arguments
+so we do not treat it explicitly. Let FORMULA  be as in Definition
+REF .
+Let FORMULA  be another lattice and let FORMULA 
+be another function with the same properties as FORMULA . We have to show that
+FORMULA 
+Lemma 2.3 
+FORMULA  such that FORMULA , where FORMULA .
+
+Proof 
+Let FORMULA  be equal to 1 near FORMULA ,
+and put FORMULA . Then FORMULA  in FORMULA , when FORMULA , so for FORMULA  small enough,
+FORMULA 
+has a bounded inverse in FORMULA . Here FORMULA  is the space of
+all FORMULA  that are bounded with all their
+derivatives. By a version of the Beals lemma
+(see for instance {{cite:a2c33833-27af-45f9-a183-1d0b3353adf2}}), we then know that the inverse is of the form
+FORMULA  where FORMULA .
+Also FORMULA , FORMULA . Put FORMULA  for FORMULA  small
+enough and fixed, so that FORMULA ,
+FORMULA  (using for instance the simple pseudodifferential
+calculus in {{cite:a2c33833-27af-45f9-a183-1d0b3353adf2}}). Then FORMULA .
+ FORMULA
+
+Now, write
+FORMULA 
+Here (using for instance {{cite:a2c33833-27af-45f9-a183-1d0b3353adf2}})
+FORMULA 
+Hence, if FORMULA  is large enough,
+FORMULA 
+Conversely, if FORMULA , FORMULA , we see that by the same arguments that FORMULA , FORMULA .
+ FORMULA
+
+Next, we check that this is essentially a generalization of a space introduced
+by Sjöstrand {{cite:92292ed2-47ee-4be0-86d3-fabe879ec59b}} and independently and in a different way by
+Boukhemair {{cite:a1c54d4e-17a5-4caf-bc57-be0f553a16ef}}. It is a
+special case of more general modulation spaces (see {{cite:a7824016-cfff-4584-8d3a-478d7104ff96}}, {{cite:1f0ed471-2cd8-40e4-9feb-0f4560648bef}}).
+That follows from the next result if we take an order function FORMULA 
+independent of
+FORMULA .
+Proposition 2.4 
+Let FORMULA  be an order function on FORMULA 
+and let FORMULA , FORMULA ,
+where FORMULA  is a lattice and
+FORMULA . Then
+FORMULA 
+
+Proof 
+Let FORMULA  be a lattice and choose FORMULA ,
+such that
+FORMULA , where FORMULA . If FORMULA  belongs to
+the set in the right hand side of (REF ), then by Parseval's relation,
+FORMULA 
+Now FORMULA , where
+FORMULA ,
+FORMULA , FORMULA ,
+so FORMULA . Conversely, if FORMULA ,
+we get (REF ). According to Proposition REF , we can replace
+the FORMULA  norm by any FORMULA  norm, and the proof shows that we can
+equally well replace the FORMULA  norm that of
+FORMULA . Taking FORMULA , we get
+FORMULA 
+and since FORMULA  is an order function, we deduce that FORMULA  belongs to
+the set in the right hand side of (REF ).
+ FORMULA
+
+
+Effective kernels and FORMULA -boundedness
+A closely related notion for effective kernels in terms of short time Fourier
+transforms has been introduced by Gröchenig and Heil {{cite:608c50f0-d8a0-4f0b-b422-9f026bb427c0}}.
+We now take FORMULA . If FORMULA , we let
+FORMULA 
+denote the Weyl composition so that FORMULA . Here
+FORMULA  where
+we write FORMULA , FORMULA  instead of FORMULA , FORMULA  whenever convenient.
+We know that the Weyl composition is still well-defined when FORMULA  belong to
+various symbol spaces like
+FORMULA 
+when FORMULA  is an order function on FORMULA . (See Example REF  below for a
+straight forward generalization.)
+Let FORMULA  be a linear form on FORMULA  and let FORMULA  be a symbol. Then,
+FORMULA 
+where FORMULA  (with “FORMULA ”) is the Hamilton field of FORMULA . Similarly,
+FORMULA 
+From (REF ), (REF ), we get
+FORMULA 
+where we notice that FORMULA , and
+FORMULA 
+if FORMULA  is a second linear form on FORMULA .
+If FORMULA  is fixed, we may consider that FORMULA  is concentrated near
+FORMULA . Then we say that FORMULA  is concentrated
+near FORMULA . Conversely, if FORMULA  is concentrated near a
+point FORMULA , we let FORMULA  be the unique
+vector with FORMULA  and write
+FORMULA 
+where FORMULA  is concentrated near FORMULA .
+To make this more precise, let (as in {{cite:4588ce05-42ec-44bf-8e3f-f30ad6d9e4a8}})
+FORMULA 
+be a generalized Bargmann transform where FORMULA  is a quadratic form on
+FORMULA  with FORMULA , FORMULA ,
+and with FORMULA  suitably chosen, so
+that FORMULA  is unitary FORMULA , where FORMULA  denotes the Lebesgue
+measure on FORMULA  and FORMULA  is the strictly plurisubharmonic quadratic form given by
+FORMULA 
+We know ({{cite:4588ce05-42ec-44bf-8e3f-f30ad6d9e4a8}}) that if FORMULA , then
+FORMULA 
+where
+FORMULA 
+is the linear canonical transformation associated to FORMULA . Here FORMULA , following standard conventions in
+complex analysis.
+If FORMULA  we have an exact version of Egorov's theorem, saying
+that
+FORMULA 
+where FORMULA  is given by
+FORMULA . In {{cite:4588ce05-42ec-44bf-8e3f-f30ad6d9e4a8}} it is dicussed how to define
+and estimate the Weyl quantization of symbols on the Bargmann transform side,
+by means of almost holomorphic extensions and contour deformations. We retain from
+the proof of Proposition 1.2 in that paper that
+FORMULA 
+where the kernel is non-unique but can be chosen to satisfy
+FORMULA 
+for every FORMULA . (This immediately implies the Calderón-Vaillancourt
+theorem for the class FORMULA .)
+If FORMULA , then for every  FORMULA
+FORMULA 
+where FORMULA  are seminorms in FORMULA .
+Identifying FORMULA  with FORMULA , we can view FORMULA  as a function
+FORMULA  on FORMULA  and (REF ) becomes
+FORMULA 
+Now, let FORMULA  in (REF ) be concentrated near
+FORMULA  with FORMULA , where we let
+FORMULA  be the map FORMULA  (and we shall prefer to write
+FORMULA  when we do not think of this quantity as a constant coefficient vector
+field). Then by (REF )–(REF ), we have
+FORMULA 
+FORMULA 
+Now it is wellknown that if FORMULA  then
+FORMULA  is a unitary operator that can be viewed
+as a quantization of the phase space
+translation FORMULA . On the Bargmann transform side
+these quantizations can be explicitly represented as magnetic translations,
+i.e. translations made unitary by multiplication by certain weights. In fact,
+let FORMULA  be a linear form on
+FORMULA  which is real on FORMULA , so that
+FORMULA 
+By essentially the same calculation as in the real setting, we see that
+FORMULA 
+and here we recall from the unitary and metaplectic equivalence with
+FORMULA  (via FORMULA ) that FORMULA  is unitary, or equivalently that
+FORMULA 
+(A simple calculation shows more directly the equivalence of (REF ) and
+(REF ).) Notice also that if we identify FORMULA  with a function
+FORMULA  on
+FORMULA  via the natural projection FORMULA , then
+FORMULA  is identified with FORMULA , where the
+Hamilton field FORMULA  is viewed as a real constant vector field
+on FORMULA .
+It follows that FORMULA  has a kernel satisfying
+FORMULA 
+and from (REF ) we get
+FORMULA 
+so the kernel of FORMULA  is concentrated near FORMULA .
+Now, let FORMULA  be an order function on FORMULA  and let FORMULA . Choose a lattice FORMULA  and a
+partition of unity as in (REF ) as well as a function
+FORMULA  as in Lemma REF . Write
+FORMULA 
+where FORMULA . Then, using that
+FORMULA  is continuous: FORMULA , we see that
+FORMULA  is
+concentrated near FORMULA  in the above sense and more precisely,
+FORMULA 
+where we write FORMULA .
+Let FORMULA ,
+so that
+FORMULA 
+and hence
+FORMULA 
+so (REF ) implies
+FORMULA 
+where we used that FORMULA  is an order function in the last inequality. Choose FORMULA 
+with FORMULA , sum over FORMULA  and use (REF ) to get
+FORMULA 
+We get
+Theorem 3.1 
+Let FORMULA , where FORMULA  is an order function on FORMULA , FORMULA . Then FORMULA  has an effective kernel (rigorously defined
+after applying a Bargmann transform as above) satisfying (REF ), where
+FORMULA  is a FORMULA  norm of FORMULA . In particular, if FORMULA  is the kernel of an FORMULA -bounded operator,
+then FORMULA  is bounded: FORMULA .
+
+As mentioned in the introduction, the statement on FORMULA -boundedness
+here is due to
+Bony {{cite:3a23a9eb-ccc5-4765-9473-106b2d1648e1}}, who obtained it in a rather different way. A
+calculation, similar to the one leading to (REF ), has been given by
+Gröchenig {{cite:6c2936b3-abe4-44a1-adbd-ec72a4f677e6}}.
+Corollary 3.2 
+If FORMULA  is the kernel of a Shur class operator i.e. if
+FORMULA 
+then FORMULA  is bounded: FORMULA .
+
+Corollary 3.3 
+Assume FORMULA  is independent of FORMULA , for FORMULA  and FORMULA , then
+FORMULA  is bounded: FORMULA .
+
+
+Composition
+Let FORMULA , FORMULA , FORMULA  and consider the Weyl composition of the two symbols
+FORMULA , FORMULA  , concentrated near
+FORMULA  and
+FORMULA  respectively:
+FORMULA 
+We work in canonical coordinates FORMULA  and identify FORMULA  and FORMULA .
+Then
+FORMULA 
+and FORMULA  is convolution with FORMULA , given by
+FORMULA 
+The phase FORMULA  has a unique nondegenerate critical point FORMULA  and the corresponding critical value is equal to FORMULA . Hence
+FORMULA  for some (known) constant FORMULA .
+The composition (REF ) becomes
+FORMULA 
+The exponent in the last integral can be rewritten as
+FORMULA 
+and the composition (REF ) takes the form
+FORMULA , where
+FORMULA 
+Since FORMULA  is a nondegenerate quadratic form, we have for every FORMULA 
+by integration by parts,
+FORMULA 
+Hence for every FORMULA ,
+FORMULA 
+Using the triangle inequality, we get
+FORMULA 
+so
+FORMULA 
+and hence for every FORMULA ,
+FORMULA 
+Clearly, we have the same estimates for the derivatives of FORMULA . It follows that the composition (REF ) is equal to FORMULA , where
+FORMULA 
+and where FORMULA  and for every seminorm FORMULA  on FORMULA  and every
+FORMULA , there is a seminorm FORMULA  on FORMULA  such that
+FORMULA 
+It follows that :
+FORMULA 
+with corresponding norm bounded by
+FORMULA 
+for all FORMULA  where FORMULA  are suitable seminorms on FORMULA .
+If FORMULA , FORMULA  then
+FORMULA  is
+well-defined and belongs to FORMULA  provided that the
+integrals defining FORMULA  and FORMULA  below converge. Here (replacing
+summation over lattices by integration)
+FORMULA 
+In order to understand the integral (REF ), we put
+FORMULA , FORMULA ,
+FORMULA , and study the set FORMULA  where the
+arguments inside the three brackets vanish simultaneously:
+FORMULA 
+From the above discussion, we get
+Theorem 4.1 
+Let FORMULA , FORMULA  be order functions on FORMULA  and define FORMULA  by (). Assume that FORMULA  is finite for at least one FORMULA  so that
+FORMULA  is a well-defined order function by Proposition . Then the
+composition map
+FORMULA 
+has a bilinear extension
+FORMULA 
+Moreover,
+FORMULA 
+
+We end this section by establishing a connection with the effective
+kernels of Section . Let FORMULA  be as in the theorem with
+FORMULA . According to Theorem REF , we then know that FORMULA 
+has an effective kernel FORMULA  satisfying
+FORMULA 
+Since the composition of the effective kernels of FORMULA  and FORMULA  is an
+effective kernel for FORMULA  we expect that
+FORMULA 
+or more explicitly,
+FORMULA 
+Writing
+FORMULA 
+we check that the integral in (REF ) coincides with the one in ()
+up to a constant Jacobian factor, so the results of this section fit
+with the ones of Section .
+Example 4.2 Let FORMULA , FORMULA , where FORMULA  are order functions on FORMULA  of the form
+FORMULA 
+Then, the effective kernels FORMULA  of FORMULA  satisfy
+FORMULA 
+Then FORMULA  is well-defined and belongs to FORMULA , where
+FORMULA 
+provided that the last integral converges for at least one (and then all)
+value(s) of FORMULA . If we use that
+FORMULA 
+we get
+FORMULA 
+Thus FORMULA  and FORMULA  are well-defined if
+FORMULA 
+The integral FORMULA  in (REF ) is FORMULA  in any region where
+FORMULA . For FORMULA , we write
+FORMULA , where
+
+FORMULA  is the integral over FORMULA . Here FORMULA .
+
+FORMULA  is the integral over FORMULA . Here FORMULA .
+
+FORMULA  is the integral over FORMULA . Here FORMULA .
+
+We get
+FORMULA 
+with the convention that we tacitly add a factor FORMULA 
+when the expression inside FORMULA  is equal to 0. Similarly (with the
+same convention),
+FORMULA 
+In view of (REF ), we have
+FORMULA 
+it follows that
+FORMULA 
+so with the same convention, we have
+FORMULA 
+This simplifies to
+FORMULA 
+if we strengthen the assumption (REF ) to:
+FORMULA 
+
+
+More direct approach using Bargmann transforms
+By using Bargmann transforms more systematically (from the point of
+view of Fourier integral operators with complex
+phase) the results of Section ,  can be obtained more directly.
+The price to pay however, is the loss of some aspects that might be
+helpful in other situations like the ones with variable metrics.
+Let FORMULA  be real FORMULA -dimensional space as in Section  and
+define FORMULA  as in (REF )–(REF ). Then
+we have
+Proposition 5.1 
+If FORMULA  is an order function on FORMULA , then
+FORMULA 
+where the best constant FORMULA  is a norm on FORMULA .
+
+Proof 
+Assume first that FORMULA  belongs to FORMULA  and write
+FORMULA  as in Lemma REF .
+The effective kernel of FORMULA  satisfies
+FORMULA 
+for every FORMULA , where throughout the proof we identify FORMULA  with
+FORMULA  by means of FORMULA  and work on the latter space.
+Here FORMULA  is the natural projection.
+Then we see that
+FORMULA 
+Conversely, if FORMULA , then since the effective
+kernel of FORMULA  also satisfies (REF ), we see that
+FORMULA ,
+implying FORMULA , and
+hence FORMULA 
+ FORMULA
+
+With this in mind, we now take FORMULA  and look for an explicit choice of effective kernel for
+FORMULA .
+Let FORMULA  be a Bargmann transform as above. Consider first the map FORMULA  from FORMULA  to the distribution kernel of FORMULA , given by
+FORMULA 
+We view this as a Fourier integral operator FORMULA  with
+quadratic phase. The associated linear canonical transformation is given by:
+FORMULA 
+which we can write as
+FORMULA 
+From the unitarity of FORMULA , we know that FORMULA , where
+FORMULA 
+We can therefore define the effective kernel of FORMULA  to be
+FORMULA 
+where
+FORMULA 
+We write this as
+FORMULA 
+with FORMULA , so
+FORMULA 
+where
+FORMULA 
+We see that FORMULA  is
+a unitary Bargmann transform, where
+FORMULA 
+The canonical transformation associated to FORMULA  is
+FORMULA 
+If
+FORMULA 
+we check that
+FORMULA 
+Clearly FORMULA  is a Bargmann transform
+with associated canonical transformation FORMULA ,
+so in view of (REF ) the map FORMULA  is also a Bargmann
+transform with associated canonical
+transformation
+FORMULA 
+where FORMULA .
+The restriction to the real phase space is
+FORMULA 
+and this restriction determines our complex linear canonical
+transformation uniquely.
+As in Section  we may view the effective kernel
+FORMULA 
+in (REF ) as a function on FORMULA , by identifying FORMULA 
+with FORMULA  respectively. With this
+identification and using also the general characterization in (REF ) (with
+FORMULA  replaced by FORMULA ),
+we see that if FORMULA , then FORMULA  iff
+FORMULA 
+where we shortened the notation by writing FORMULA  instead of FORMULA  and FORMULA 
+instead of FORMULA .
+Theorem REF  now follows from (REF ), (REF ), (REF ).
+Theorem REF  also follows from (REF ), (REF ), (REF )
+together with
+the remark that the kernel FORMULA  is the unique kernel which is
+holomorphic on FORMULA ,
+such that the corresponding FORMULA  given in (REF ) is of
+temperate growth at infinity and (REF )
+is fulfilled. Indeed, then it is clear that
+FORMULA 
+and the bound (REF ) for FORMULA  with FORMULA  follows directly from the corresponding bounds for FORMULA  with FORMULA .
+
+FORMULA  classes
+In this section we give a simple condition on an order function FORMULA 
+on FORMULA  (FORMULA ) and
+a number FORMULA  that implies the property:
+FORMULA 
+Here FORMULA  is the Schatten–von Neumann class of operators: FORMULA , see for instance {{cite:4516d229-2d53-4bb7-8190-303dfd280afb}}.
+Let FORMULA  be an order function on FORMULA  and let FORMULA .
+Consider the following property, where FORMULA  is given in (REF ) and
+FORMULA  is a lattice,
+FORMULA 
+Notice that if (REF ) holds and if we fix some number
+FORMULA , then
+if FORMULA 
+is a block matrix where every FORMULA  is an FORMULA 
+matrix then
+FORMULA 
+Proposition 6.1 
+The property (REF ) only depends on FORMULA  but not on the choice of FORMULA .
+
+Proof 
+Let FORMULA  satisfy (REF ) and let FORMULA  be a
+second lattice in FORMULA . Let FORMULA 
+be a FORMULA  matrix satisfying
+FORMULA .
+Let FORMULA  be a point that realizes the
+distance from FORMULA  to FORMULA , so that
+FORMULA  for
+some constant FORMULA . Let FORMULA  and choose an
+enumeration FORMULA , FORMULA , for
+every FORMULA .
+Then we can identify FORMULA  with the matrix
+FORMULA  where
+FORMULA  is the FORMULA  matrix with the entries
+FORMULA 
+S(m)FORMULA K(x,y)FORMULA CpFORMULA A:L2(e-2L(dx))L2(e-2L(dx)) FORMULA FORMULAFORMULA Aeff:L2(Cn)L2(Cn)FORMULA KeffFORMULA Keff(x,y)=O(1)m(q (x,y)) FORMULACnFORMULA T*RnFORMULA xTFORMULA K(x,y)=O(1)m(q (x,y))e(x)+(y) FORMULA
+For FORMULA  we have (identifying FORMULA  with a lattice in FORMULA )
+FORMULA 
+where
+FORMULA 
+is holomorphic with
+FORMULA 
+and
+FORMULA 
+Here we identify FORMULA  with their images
+FORMULA  respectively. In fact, the case FORMULA  is clear and we get the extension to
+arbitrary FORMULA  from the Cauchy inequalities, since
+FORMULA 
+is holomorphic.
+We can also write
+FORMULA 
+where
+FORMULA 
+so
+FORMULA 
+Consider a partition of unity
+FORMULA 
+where FORMULA  is open with smooth boundary. Let FORMULA , so that (REF ) holds for FORMULA .
+Let FORMULA  be defined by
+FORMULA 
+so that the adjoint of FORMULA  is given by
+FORMULA 
+Then FORMULA  and its adjoint are bounded operators and
+FORMULA 
+where FORMULA  and
+FORMULA , FORMULA  are given by the kernels
+FORMULA  and FORMULA  respectively. It now suffices to show that
+FORMULA 
+belongs to FORMULA  with a norm
+that is bounded by a constant times the FORMULA -norm of FORMULA .
+Let FORMULA  be an orthonormal basis of
+eigenfunctions of minus the Dirichlet Laplacian in FORMULA , arranged
+so that the corresponding eigenvalues form an increasing sequence. Then
+FORMULA , FORMULA  form an orthonormal basis of
+eigenfunctions of the corresponding operator in FORMULA .
+From (REF ) it follows that the matrix elements FORMULA 
+of FORMULA  with respect to the bases FORMULA 
+and FORMULA  satisfy
+FORMULA 
+for every FORMULA . We notice that FORMULA  is the matrix of
+FORMULA  with respect to the orthonormal basis
+FORMULA . We can represent this matrix as a block matrix
+FORMULA , where FORMULA 
+has the matrix FORMULA . Since (REF ) holds and FORMULA , we
+deduce from (REF ) that
+FORMULA 
+Choosing FORMULA , we get
+FORMULA 
+Hence FORMULA  and the uniform bound FORMULA  also follows from the proof.
+Example 6.2 Assume that
+FORMULA 
+
+Then
+FORMULA 
+is a matrix where each translated diagonal FORMULA  has an FORMULA  norm which is summable with
+respect to FORMULA . Now a matrix with non-vanishing elements
+in only one translated diagonal has a FORMULA  norm equal to the FORMULA 
+norm of that diagonal, so we conclude that the FORMULA  norm of the matrix
+in (REF ) is bounded by
+FORMULA 
+We clearly have the same conclusion for every matrix
+FORMULA  satisfying
+FORMULA , so
+(REF ) holds and hence by Theorem REF  we have the
+property (REF ).
+
+Further generalizations
+Let FORMULA  be a FORMULA -dimensional real vector space and let
+FORMULA  be a lattice. We shall extend the preceding results
+by replacing the FORMULA -norm in the definition of
+the symbol spaces by a more general Banach space norm. Let
+FORMULA  be a Banach space of functions FORMULA  with the
+following properties:
+FORMULA 
+FORMULA 
+where FORMULA ,
+FORMULA ,
+FORMULA . (The last assumption will soon be replaced by a stronger one.)
+If FORMULA , we get
+FORMULA 
+where FORMULA  (is independent of FORMULA ). Thus
+FORMULA 
+We need to strengthen (REF ) to the following assumption:
+FORMULA 
+It follows that FORMULA ,
+for all FORMULA , FORMULA , or equivalently that
+FORMULA 
+so
+FORMULA 
+If FORMULA  then using only the translation invariance
+(REF ), we get
+FORMULA 
+Using also (REF ) we get the following partial strengthening: Let
+FORMULA  satisfy FORMULA  where FORMULA . Then
+FORMULA 
+where FORMULA  is independent of FORMULA . In fact,
+FORMULA 
+and FORMULA  in (REF ) satisfies FORMULA  pointwise.
+Let FORMULA  be a second lattice and let
+FORMULA  satisfy (REF ), (REF ).
+We say that FORMULA  if the following property holds for some
+FORMULA :
+FORMULA 
+If (REF ) holds for one FORMULA  and FORMULA  then it also holds with FORMULA 
+replaced by FORMULA . This is obvious when FORMULA  and if FORMULA , it follows from the observation that
+FORMULA 
+(cf. (REF ), where FORMULA  is the integral in (REF ), FORMULA  is
+replaced by FORMULA , and we take FORMULA ), which allows us to write
+FORMULA 
+where FORMULA  and FORMULA  belongs to
+FORMULA  since (REF ) holds.
+Definition 7.1 Let FORMULA  be two lattices in FORMULA  and let
+FORMULA  be Banach spaces of functions on FORMULA  and
+FORMULA  respectively, satisfying (REF ), (REF ).
+Then we say that FORMULA , if FORMULA  and
+FORMULA . Notice that this is an equivalence relation.
+
+We can now introduce our generalized symbol spaces. With
+FORMULA  as above, let FORMULA  be a lattice
+and FORMULA  a Banach space satisfying (REF ), (REF ).
+Let FORMULA .
+Definition 7.2 We say that FORMULA  if the function
+FORMULA 
+belongs to FORMULA . Here FORMULA  is the partiction of unity (REF ).
+
+Proposition REF  extends to
+Proposition 7.3 
+FORMULA  is a Banach space with the natural norm. If we replace
+FORMULA  by FORMULA ,
+having the same properties, and with FORMULA  equivalent to FORMULA , and if we further replace
+the FORMULA  norm by the FORMULA 
+norm for any FORMULA , we get the same space, equipped with an
+equivalent norm.
+
+Proof 
+It suffices to follow the proof of Proposition REF : From the estimate
+(REF ) we get for any FORMULA ,
+FORMULA 
+where we also used that FORMULA  is an order function. Hence, since FORMULA ,
+FORMULA  are equivalent,
+FORMULA 
+The reverse estimate is obtained the same way.
+ FORMULA
+
+As a preparation for the use of Bargmann transforms, we next develop a
+“continuous” version of FORMULA -spaces; a kind of amalgam spaces
+in the sense of {{cite:81c02c75-fa50-44a2-91d2-44d9cf36369b}}, {{cite:d2e654d7-a578-40b3-9191-7847b5c07cf1}}, {{cite:31c6282d-f256-4d62-892d-e6f970c281e3}}.
+Let FORMULA  be a lattice in a
+FORMULA -dimensional real vector space FORMULA  and let FORMULA 
+satisfy (REF ), (REF ). Let FORMULA  satisfy
+FORMULA .
+Definition 7.4 We say that the locally bounded measurable function FORMULA  is
+of class FORMULA , if there exists FORMULA  such that
+FORMULA 
+
+The space of such functions is a Banach space that we shall denote by
+FORMULA , equipped with the norm
+FORMULA 
+This space does not depend on the choice of FORMULA  and we may actually
+characterize it as the space of all locally bounded measurable functions FORMULA 
+on FORMULA  such that
+FORMULA 
+where FORMULA  is any fixed number. Clearly (REF ) implies (REF ).
+Conversely, if FORMULA  satisfies (REF ) and FORMULA  is as in Definition
+REF , then
+FORMULA 
+so if (REF ) holds, we have,
+FORMULA 
+and FORMULA .
+Similarly, the definition does not
+change if we replace FORMULA  by an equivalent space
+FORMULA .
+Let FORMULA  be order functions on FORMULA , FORMULA ,
+FORMULA  respectively, where FORMULA  is a real vectorspace of
+dimension FORMULA .
+Let FORMULA  be lattices and let
+FORMULA 
+be Banach spaces satisfying (REF ), (REF ). Introduce the
+Assumption 7.5 If FORMULA , FORMULA , then
+FORMULA 
+converges absolutely for every FORMULA . Moreover, FORMULA  and
+FORMULA 
+where FORMULA  is independent of FORMULA .
+
+Again, it is an easy exercise to check that the assumption is invariant
+under changes of the lattices FORMULA  and the passage to corresponding
+equivalent FORMULA -spaces.
+Proposition 7.6 
+We make the Assumption REF , where FORMULA  satisfy (REF ), (REF ).
+Let
+FORMULA  for FORMULA  in the sense that FORMULA .
+Then the integral
+FORMULA 
+converges absolutely and defines a function FORMULA . Moreover,
+FORMULA 
+where FORMULA  is independent of FORMULA , FORMULA .
+
+Proof 
+Write
+FORMULA 
+with FORMULA ,
+FORMULA  as in Definition REF  and
+with FORMULA . Then
+FORMULA 
+where
+FORMULA 
+We notice that FORMULA  and that FORMULA  only for finitely many FORMULA . Hence
+for some FORMULA ,
+FORMULA 
+Since
+FORMULA 
+for every fixed FORMULA , and
+FORMULA 
+the assumption REF  implies that
+FORMULA 
+for every FORMULA .
+The proposition follows.
+ FORMULA
+
+We next generalize (REF ). Let FORMULA  and define FORMULA  as in (REF )–(REF ). Let FORMULA  be an order function
+on FORMULA , let FORMULA  be a lattice and let
+FORMULA  satisfy (REF ), (REF ). Then we get
+Proposition 7.7  we have
+FORMULA 
+where FORMULA  is the
+natural projection.
+
+Proof 
+This will be a simple extension of the proof of (REF ). As there, we
+identify
+FORMULA  with FORMULA  by means of FORMULA 
+and work on the latter space. Assume first that FORMULA 
+and write
+FORMULA  as in Lemma
+REF , so that FORMULA .
+Using (REF ), we see that
+FORMULA 
+and hence FORMULA , i.e. FORMULA  belongs to the right hand side
+of (REF ) (with the identification FORMULA ).
+Conversely, if FORMULA , then since the effective kernel of
+FORMULA  satisfies (REF ), we see that
+FORMULA 
+where FORMULA . It follows that
+FORMULA 
+where FORMULA , and hence
+FORMULA ,
+so FORMULA .
+ FORMULA
+
+From this, we deduce as in (REF ) that if FORMULA ,
+FORMULA , then FORMULA  iff
+FORMULA 
+where FORMULA  is the effective kernel of FORMULA  in
+(REF ), (REF ) after identification of FORMULA  with FORMULA 
+via the map FORMULA . We recall the identity
+(REF ) for the composition of two symbols.
+(REF ) can also be written
+FORMULA 
+where FORMULA  is given in (REF ).
+The following generalization of Theorem REF  now follows from
+Proposition REF .
+Theorem 7.8 
+For FORMULA , let FORMULA  be an order function FORMULA , where
+FORMULA , let FORMULA  be a lattice and let
+FORMULA  satisfy (REF ), (REF ). Let FORMULA , FORMULA ,
+FORMULA . Assuming
+(as we may without loss of generality) that FORMULA  where FORMULA  is a lattice, we make the
+Assumption REF  for FORMULA .
+Then if FORMULA , FORMULA , the composition FORMULA  is well defined and belongs to FORMULA , in the sense that the corresponding composition of effective kernels in (REF ) is given by an absolutely convergent integral and FORMULA .
+
+We next consider the action of pseudodifferential operators on generalized
+symbol spaces. Our result will be essentially a special case of the preceding
+theorem. We start by “contracting” Assumption REF  to the case when FORMULA .
+Let FORMULA  be order functions on FORMULA , FORMULA ,
+FORMULA  respectively. Let FORMULA , FORMULA  be lattices and let
+FORMULA 
+be Banach spaces satisfying (REF ), (REF ). Assumption REF  becomes
+Assumption 7.9 If FORMULA , FORMULA , then
+FORMULA 
+converges absolutely for every FORMULA , and we have
+FORMULA . Moreover,
+FORMULA 
+where FORMULA  is independent of FORMULA .
+
+The corresponding “contraction” of Proposition REF  becomes
+Proposition 7.10 
+Let Assumption REF  hold, where FORMULA  satisfy (REF ), (REF ). Let
+FORMULA  for FORMULA . Then the integral
+FORMULA 
+converges absolutely and defines a function FORMULA . Moreover,
+FORMULA 
+where FORMULA  is independent of FORMULA , FORMULA .
+
+We get the following result for the action of pseudodifferential operators
+on generalized symbol spaces.
+Theorem 7.11 
+Let FORMULA  be order functions on FORMULA  and let
+FORMULA  be an order function on FORMULA . Let FORMULA  be a lattice such that FORMULA  where FORMULA 
+is a lattice. Let FORMULA ,
+FORMULA 
+satisfy (REF ), (REF ). We make
+the Assumption REF  with FORMULA  and with
+FORMULA , FORMULA  replaced with FORMULA ,
+FORMULA , where FORMULA  is given in (REF ).
+Then, if FORMULA , FORMULA ,
+the distribution FORMULA  is well-defined in FORMULA  in the sense that
+FORMULA 
+with FORMULA  as in (REF ),
+converges absolutely for every FORMULA  and
+FORMULA 
+as in (REF ).
+
+We shall finally generalize Theorem REF .
+Theorem 7.12 
+Let FORMULA  and let FORMULA  be an order function on FORMULA  where
+FORMULA . Let FORMULA  be a lattice and
+FORMULA  a Banach space
+satisfying (REF ),
+(REF ). Assume that
+FORMULA 
+where FORMULA  is given in (REF ) and FORMULA  is independent of FORMULA . Then there is a (new) constant FORMULA  such that
+FORMULA 
+
+The proof of Proposition REF  shows that the property (REF )
+is invariant under changes FORMULA  with FORMULA 
+equivalent to FORMULA .
+Proof 
+We follow the proof of Theorem REF . Assume that (REF ) holds and let
+FORMULA  be of norm FORMULA . It suffices to show that
+FORMULA  is in FORMULA  with norm FORMULA ,
+where FORMULA  is given in () and FORMULA  there belongs
+to FORMULA , provided that we identify FORMULA  with
+FORMULA  via FORMULA .
+We see that we still have
+(REF ) where (REF ) should be replaced by
+FORMULA 
+Write FORMULA  as in (REF ),
+FORMULA 
+The matrix elements FORMULA  of FORMULA  now
+obey the estimate (cf. (REF )):
+FORMULA 
+with FORMULA  as in (REF ). Using (REF ), this leads to (REF ) and from that point on the proof is identical to that of Theorem
+REF .
+ FORMULA
+

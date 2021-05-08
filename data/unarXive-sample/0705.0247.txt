@@ -1,0 +1,408 @@
+
+Martin Weimann
+Université J. Fourier
+100 rue des Maths BP 74
+38402 St Martin d'Heres.
+weimann23@gmail.com
+[Concavity, Abel-transform and the Abel-inverse theorem in toric...]Concavity, Abel-transform and the Abel-inverse theorem in smooth complete toric varieties
+We extend the usual projective Abel-Radon transform to the larger context of a smooth complete toric variety FORMULA . We define and study toric FORMULA -concavity attached to a split vector bundle on FORMULA . Then we obtain a multidimensional residual representation of the toric Abel-transform and we prove a toric version of the classical Abel-inverse theorem.
+Nous étendons la transformée d'Abel-Radon projective au cadre plus large d'une variété torique lisse complète FORMULA . Pour ce faire, nous définissons et étudions dans un premier temps la notion de FORMULA -concavité torique attachée à un fibré vectoriel scindé FORMULA  sur FORMULA . Finalement, nous définissons la transformée d'Abel torique et nous prouvons une version torique du théorème d'Abel-inverse à l'aide du calcul résiduel multivarié.
+
+
+Introduction
+Abel-tranform's philosophy was introduced by Abel in its pionneer article on integrals of rational forms on algebraic curves. He considered sums of such integrals depending on 0-cycles given by the intersection of the given curve FORMULA  with a rational family of algebraic curves FORMULA  and made the fundamental discovery that such sums can be expressed in terms of rational and logarithmic functions of the parameter FORMULA .
+If we suppose that FORMULA  is a curve in FORMULA  and FORMULA  are lines of FORMULA  (so that FORMULA ), then Abel's theorem can be rephrased as follow. Consider the incidence variety FORMULA  over FORMULA  and its associated diagram
+FORMULA 
+where FORMULA  and FORMULA  are the natural projections.
+Abel's Theorem For any rational 1-form FORMULA  on FORMULA , the current FORMULA  coincides with a rational 1-form on FORMULA .
+The original proof of Abel deals with more general curves than lines. We state it for lines for simplicity, since the proof is immediate in both cases with the modern language of currents.
+The map FORMULA  on currents is well-defined since FORMULA  is a submersion and FORMULA  is proper. This is the so called Abel-transform. On the Zariski open set of FORMULA  consisting of elements FORMULA  for which the intersection FORMULA  is transversal and does not meet the polar locus of FORMULA , the current FORMULA  is holomorphic, equal to the trace form
+FORMULA 
+Abel's theorem gave new perspectives as well in complex analysis as in algebraic geometry and number theory. In particular, studying analytic sets in the complex projective space FORMULA  using scanning by linear subspaces of complementary dimension gave rise to an intense activity around inversion problems by several mathematiciens, as Lie, St-Donnat {{cite:c009d734-4c66-4a7a-a2e3-0bf598762508}}, Wirtinger, Darboux, Griffiths {{cite:6e413fef-0c89-494e-9b0d-482cce68c190}}, Henkin {{cite:677522f8-04ca-40ca-9df7-a28de27642b7}}, {{cite:905b1ba0-c4b6-462a-86a6-787ff78d89b2}}, Passare {{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}}. Let us explain the so-called Abel-inverse Theorem obtained by Saint-Donat ({{cite:c009d734-4c66-4a7a-a2e3-0bf598762508}}, 1975) and Henkin ({{cite:677522f8-04ca-40ca-9df7-a28de27642b7}}, 1992) for FORMULA .
+We consider FORMULA  an open neighborhood of a line FORMULA  and FORMULA  an analytic curve transversal to FORMULA . For FORMULA  small enough, we can define as before the trace of any holomorphic 1-form FORMULA  on FORMULA , which is a holomorphic 1-form FORMULA  on the open set FORMULA  of lines included in FORMULA .
+Abel-inverse Theorem Let FORMULA  be the cardinality of FORMULA . The analytic curve FORMULA  is contained in an algebraic curve FORMULA  of degree FORMULA  and FORMULA  extends to a rational (resp. regular) form FORMULA  on FORMULA  if and only if the form FORMULA  is rational (resp. vanishes) on FORMULA .
+Let us insist on the important contributions of Griffiths ({{cite:6e413fef-0c89-494e-9b0d-482cce68c190}}, 1976) who introduced Grothendieck residues in the picture and of Henkin ({{cite:905b1ba0-c4b6-462a-86a6-787ff78d89b2}}, 1995) who introduced the notion of Abel-Radon transform. Latter on, Henkin and Passare ({{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}}, 1999) established the link with multidimensional residue theory, in particular the modern formalism of residue currents, and proved in {{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}} a stronger local version of the Abel-inverse theorem which holds for any dimension and for analytic subset FORMULA  of any pure dimension FORMULA  in an open neighborhood FORMULA  of a FORMULA -linear subspace, and for FORMULA  a meromorphic FORMULA -form on FORMULA . Finally, Fabre generalized in his thesis {{cite:06bfdf8f-0629-4ea9-9374-13d0e89973a0}} the Abel-inverse theorem to the more general situation of complete intersections with fixed multi-degree replacing linear subspaces.
+Our main goal here is to give a toric version of the Abel-inverse theorem, where a smooth complete toric variety FORMULA  replaces FORMULA , and zero locus of sections of a globally generated split vector bundle FORMULA  on FORMULA  replaces linear subspaces. This article has been motivated by the previously mentionned result of Fabre and by results of {{cite:39b923c7-0a49-4483-8912-402d5979f854}}, where the author relates the inversion mechanisms to a rigidity propriety of a certain system of PDE's to give finally a stronger form of the classical Abel-inverse theorem.
+When FORMULA , most of complete toric varieties are not projective, so that we can not a priori deduce the toric Abel-inverse theorem (theorem ) from the classical one {{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}} when FORMULA . Thus, our proof does not rely on a projective embedding of FORMULA  and follows the one given in {{cite:39b923c7-0a49-4483-8912-402d5979f854}}. Moreover, recent results of {{cite:07bab8bf-4116-4a51-9d10-9284e9c19ddd}}, {{cite:ac531a6e-8d92-4788-bc81-e807c21c6e4b}}, {{cite:366a7586-560f-43f7-9a26-12b053a63d76}} suggest that there are canonical kernels for residue currents in complete toric varieties FORMULA  who replaces the classical Cauchy or Bochner-Martinelli kernels. This is an other important motivation for an intrinsec approach of Abel-tranform in toric varieties (even projective ones), especially in view of effectivity aspects in Abel-inverse problems.
+Let us describe the content of the article.
+Section . We define and study the notion of toric concavity attached to the bundle FORMULA  on the toric variety FORMULA . In analogy with the projective case, an open set FORMULA  of FORMULA  (for the usual topology) is said to be FORMULA -concave if any FORMULA  in FORMULA  belongs to a subscheme FORMULA , FORMULA  included in FORMULA . Contrarly to the projective case, the toric context brings us to study which bundles FORMULA  give rise to families of subvarieties which can move “sufficiently” in FORMULA , that his bundles FORMULA  for which there exist non trivial FORMULA -concave open sets in FORMULA .
+The main theorem of that section concerns the set theoretical orbital decomposition of such subschemes, called FORMULA -subscheme.
+Theorem 2.2 A generical FORMULA -subscheme can be uniquely decomposed as the cycle
+FORMULA 
+where FORMULA  runs over the cones of the fan FORMULA  of FORMULA , FORMULA  runs over the subsets of FORMULA  and the FORMULA  are smooth FORMULA -codimensional subvarieties of the toric subvariety FORMULA  attached to FORMULA , with transversal or empty intersection with all orbits closures included in FORMULA .
+The integers FORMULA  are explicitly determined from geometry of polytopes. If FORMULA  is globally generated, they are all zero except possibly for FORMULA  and FORMULA  (so that FORMULA ). We state precisely and prove theorem REF  in section REF , after some reminders on toric geometry in section REF .
+We introduce FORMULA -concavity in section REF . Let
+FORMULA 
+be the parameter space corresponding to FORMULA . Any FORMULA  naturaly defines a closed FORMULA -subscheme FORMULA . We deduce from theorem REF  that the FORMULA -dual set
+FORMULA 
+of an FORMULA -concave open set FORMULA  is open in FORMULA  if and only if the bundle FORMULA  is globally generated, and the family FORMULA  satisfies an additional combinatorial condition on the involved polytopes, called condition of essentiality. We show that these conditions are equivalent to that the projections FORMULA  and FORMULA  of the incidence variety
+FORMULA 
+on FORMULA  and FORMULA  are respectively a submersion and a submersion over a Zariski open set FORMULA . This is the reasonnable situation to generalize the usual Abel-transform, as explained in {{cite:06bfdf8f-0629-4ea9-9374-13d0e89973a0}}.
+We study in section REF  the FORMULA -dual set
+FORMULA 
+of an analytic subset FORMULA  of an open FORMULA -concave subset FORMULA  of FORMULA . Contrarly to the projective space where we profit that the Picard group is simply FORMULA , there are in the toric context pathologic situations of analytic subsets whose intersection with FORMULA -subschemes is never proper. We characterize those degenerated subsets in the algebraic case FORMULA . Finally, we extend FORMULA -duality to the case of cycles and, using resultant theory, we compute the multidegree (in the product of projective space FORMULA ) of the divisor FORMULA -dual to a FORMULA -cycle of FORMULA .
+Linear concavity and convexity play an important role in complex analysis when studying varying transforms as Abel, Radon, Abel-Radon or Fantappié-Martineau transforms (see {{cite:86bc58a5-e66e-4ad5-809e-63a755de3507}}, {{cite:905b1ba0-c4b6-462a-86a6-787ff78d89b2}} for instance). In that spirit, recent results {{cite:ac531a6e-8d92-4788-bc81-e807c21c6e4b}}, {{cite:366a7586-560f-43f7-9a26-12b053a63d76}} suggest that concavity in smooth complete toric varieties as developed here should simplify the description of various transforms, using some global intrinsec integral representation for residue currents {{cite:07bab8bf-4116-4a51-9d10-9284e9c19ddd}}, whose kernel is canonically associated to FORMULA  and FORMULA .
+Section . We generalize the Abel-transform to the toric context and we prove the toric version of the Abel-inverse theorem, using the Cauchy residual representation of the Abel-transform.
+After reminders in section REF  about meromorphic and regular forms on analytic sets, we define in section REF  the toric Abel-transform attached to an essential globally generated vector bundle FORMULA . For any closed analytic subset FORMULA  of an FORMULA -concave set FORMULA , we can multiply the current of integration FORMULA  with any meromorphic FORMULA -form FORMULA  on FORMULA . The Abel-transform of the resulting current FORMULA  is the current on FORMULA  defined by
+FORMULA 
+where FORMULA . If FORMULA  is smooth and FORMULA -dimensional with transversal intersection
+FORMULA 
+for FORMULA  in FORMULA , and if FORMULA  is a global section of the sheaf FORMULA  of holomorphic FORMULA -forms on FORMULA , the current FORMULA  is a FORMULA -closed FORMULA -current on FORMULA  which coincides with the FORMULA -holomorphic form
+FORMULA 
+called the trace of FORMULA  on FORMULA  according to FORMULA . If FORMULA  is singular and FORMULA  is meromorphic, the current representation of the trace implies easily, as in the projective case {{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}}, that the FORMULA -form FORMULA  originally defined and holomorphic on a dense open subset of FORMULA  extends to a FORMULA -meromorphic form on FORMULA . Moreover, the map FORMULA  commutes with the operators FORMULA , FORMULA  and FORMULA  and thus induces a morphism on the corresponding graded complex vector spaces.
+In section REF , we give, as in {{cite:39b923c7-0a49-4483-8912-402d5979f854}}, a residual representation of the form FORMULA , using Grothendieck residues and Cauchy integrals depending meromorphically of the parameter FORMULA . As mentioned before, it should be interesting to obtain an intrinsec integral representation of the current FORMULA  using a global kernel constructed from the toric variety FORMULA  and the bundle FORMULA  (see {{cite:07bab8bf-4116-4a51-9d10-9284e9c19ddd}}, {{cite:ac531a6e-8d92-4788-bc81-e807c21c6e4b}} for such motivations).
+Finally, we show in section  the toric version of the Abel-inverse theorem in the hypersurface case, under its algebraic strongest form stated in {{cite:39b923c7-0a49-4483-8912-402d5979f854}}. We assume that FORMULA  is an essential globally generated bundle which satisfies the following additional condition : there exists an affine chart FORMULA  of FORMULA  associated to a maximal cone FORMULA  of the fan FORMULA , such that for any FORMULA -dimensional cone FORMULA , one has FORMULA  for FORMULA , where FORMULA  is the one dimensional toric subvariety of FORMULA  associated to FORMULA . There always exists such a bundle FORMULA  on FORMULA , even if FORMULA  is not projective.
+Theorem 4.1 Let FORMULA  be a codimension 1 analytic subset of a connected FORMULA -concave open set FORMULA  with no components in the hypersurface at infinity FORMULA . Let FORMULA  be a meromorphic FORMULA -form on FORMULA  not identically zero on any component of FORMULA . Then there exists an hypersurface FORMULA  such that FORMULA  and a rational form FORMULA  on FORMULA  such that FORMULA  if and only if the meromorphic form FORMULA  is rational in the constant coefficients FORMULA  of the FORMULA  polynomial equations of FORMULA  in the affine chart FORMULA .
+Let us mention that this theorem is intimely linked to the toric interpolation result in {{cite:fb3bd72b-373d-4f3d-a7df-28cdef6d7dcf}}, where FORMULA  is replaced by some rational function on FORMULA .
+Toric concavity
+Preleminaries on toric geometry
+We refer to {{cite:bb042f66-5ffe-48fe-a02a-6a2d11176654}}, {{cite:fcb90e72-ef8f-4b98-97ad-7b7f05fd0cc8}} and {{cite:04f88d3a-b70b-44ee-ac7f-05058c4ea625}} for basic references on toric geometry.
+Basic notions
+Let FORMULA  be an FORMULA -dimensional smooth complete toric variety associated to a complete regular fan FORMULA  in FORMULA . We note FORMULA  the algebraic torus contained in FORMULA  equipped with its canonical coordinates FORMULA . For FORMULA , we denote by FORMULA  the Laurent monomial FORMULA . We note FORMULA  the structure sheaf and FORMULA  the field of rational functions on FORMULA .
+The set of irreducible FORMULA -codimensional subvarieties of FORMULA  invariant under the torus action (called FORMULA -subvarieties) is in one-to-one correspondence with the set FORMULA  of cones of dimension FORMULA  in FORMULA . For a cone FORMULA  in FORMULA , we note FORMULA  the corresponding subvariety, FORMULA  the set of FORMULA -dimensional cones of FORMULA  included in FORMULA  and
+FORMULA 
+the dual cone of FORMULA , where FORMULA  is the unique primitive vector of the monoid FORMULA  and FORMULA  denotes the usual scalar product in FORMULA . If FORMULA  is a cone of maximal dimension FORMULA , the corresponding affine toric variety FORMULA  is isomorphic to FORMULA . The compact toric variety FORMULA  is obtained by gluing together the affine charts FORMULA  and FORMULA  along their common open set FORMULA . The associated transition maps are given by monomial applications induced by the change of basis from FORMULA  to FORMULA . If the monoid FORMULA  admits FORMULA  as a FORMULA -basis, we note
+FORMULA 
+the associated canonical system of affine coordinates in the chart FORMULA  corresponding bijectively to the one-dimensional cones FORMULA  included in FORMULA . We note
+FORMULA 
+the isomorphism which sends FORMULA  on the FORMULA -th vector FORMULA  of the canonical basis of FORMULA  such that FORMULA  corresponds to FORMULA .
+If FORMULA  is generated by FORMULA , the toric variety FORMULA  intersected with the affine chart FORMULA  corresponds to the coordinate linear subspace
+FORMULA 
+The variety FORMULA  has the set theoretical representation
+FORMULA 
+where the FORMULA 's are the irreducible FORMULA -divisors attached to the one-dimensional cones (the rays) of FORMULA . Any FORMULA -divisor FORMULA  on FORMULA ,
+FORMULA 
+is a Cartier divisor with local data FORMULA  where the vectors FORMULA  are uniquely determined by the FORMULA  equalities
+FORMULA 
+It is well known {{cite:04f88d3a-b70b-44ee-ac7f-05058c4ea625}} that the vector space FORMULA  of global sections of the line bundle FORMULA  attached to FORMULA  is isomorphic to the vector space of Laurent polynomials supported in the convex integer polytope
+FORMULA 
+Such a Laurent polynomial FORMULA  defines a global section of FORMULA  given in the affine chart FORMULA  by the polynomial
+FORMULA 
+expressing the Laurent polynomial FORMULA  (which belongs to FORMULA  by assumption) in the affine coordinates FORMULA . The polynomial FORMULA  is supported in the polytope FORMULA  (contained in FORMULA ), image of the translated polytope FORMULA  under the isomorphism FORMULA  defined before.
+The complete linear system FORMULA  of effective divisors rationally equivalent to FORMULA  is isomorphic to the projective space FORMULA  where FORMULA  is the cardinality of FORMULA .
+
+Globally generated line bundles
+We refer to {{cite:698b47d9-a1b9-4f98-a393-6352ce41d29e}} for this part. Any effective FORMULA -divisor FORMULA  on FORMULA  can be uniquely decomposed in a sum FORMULA  of a “mobile” divisor FORMULA  corresponding to a globally generated line bundle and a “fixed” effective divisor FORMULA . That means that the zero divisor of any section FORMULA  satisfies
+FORMULA 
+where FORMULA . The mobile divisor FORMULA  is equal to
+FORMULA 
+where FORMULA . Note that FORMULA  so that FORMULA  is effective.
+For any cone FORMULA , we consider the two convex polytopes
+FORMULA 
+We call FORMULA  the face of FORMULA  associated to FORMULA  and FORMULA  the virtual face of FORMULA  associated to FORMULA , since it can be empty {{cite:fcb90e72-ef8f-4b98-97ad-7b7f05fd0cc8}}. The FORMULA -subvariety FORMULA  is included in the base locus
+FORMULA 
+of the linear system FORMULA  if and only if the associated virtual face FORMULA  is empty. In particular, considering FORMULA  (for which FORMULA  is the fixed point corresponding to the origin of the chart FORMULA ), we remark that the line bundle FORMULA  is globally generated if and only if the vectors FORMULA  belong to FORMULA  (that is FORMULA ) for all FORMULA . That means that in any affine chart, the polynomial equation of a generic divisor FORMULA  has a non zero constant term.
+If the line bundle FORMULA  is globally generated, it restricts for any FORMULA  to a globally generated line bundle FORMULA  on FORMULA , whose polytope can be naturally identified with the polytope FORMULA , equal to FORMULA  in that case.
+
+The orbital decomposition theorem
+Let FORMULA  be a family of line bundles on FORMULA  attached to a collection of effective FORMULA -divisors FORMULA , with polytopes FORMULA  defined as before. We note FORMULA  the associated rank FORMULA  vector bundle. We say that a subscheme FORMULA  is an FORMULA -subscheme if it is the zero set of a global section of FORMULA .
+This section deals with the generic structure of an FORMULA -subschemes, where generically means for FORMULA  in a Zariski open set of the vector space FORMULA .
+We use the following definition introduced in {{cite:cf5dde48-c012-41c6-b33e-6144f3952790}} for FORMULA :
+
+A family FORMULA  of polytopes in FORMULA  is called essential if for any subset FORMULA  of FORMULA , the dimension of the Minkowski sum FORMULA  is at least the cardinality FORMULA  of FORMULA . The bundle FORMULA  (or the family FORMULA ) is called essential if the associated family of polytopes is.
+Let us state the orbital decomposition theorem, using notations from section REF .
+A generic FORMULA -subscheme can be uniquely decomposed as the cycle
+FORMULA 
+where the FORMULA  are smooth subvarieties, complete intersection of codimension FORMULA  in FORMULA , with transversal or empty intersection with orbits included in FORMULA , and the integers FORMULA 
+are defined by:
+FORMULA 
+The main ingredient of the proof is the following proposition and its corollary, consequence of Sard's theorem:
+If FORMULA  is globally generated, a generic FORMULA -subscheme is a smooth complete intersection if and only if FORMULA  is essential, and is empty otherwise.
+For FORMULA , and FORMULA , we have
+FORMULA 
+where the polynomials FORMULA  are supported by the convex polytopes FORMULA  associated to the divisor FORMULA . Clearly, the family FORMULA  is essential if and only if the family FORMULA  is.
+This is equivalent to that each polytope FORMULA  contains a vector FORMULA  of the canonical basis of FORMULA  such that the family FORMULA  is free. This implies that the differential form FORMULA  is generically non zero, since it contains a non zero summand of the form FORMULA , FORMULA . Since the FORMULA  are globally generated, the polytopes FORMULA  contain the origin. Thus, the Zariski closure in FORMULA  of the affine set define by the polynomials FORMULA  remains an FORMULA -subscheme which is, by Sard's theorem, a smooth complete intersection in FORMULA  for generic FORMULA , FORMULA . If FORMULA  is not essential, there is a subset FORMULA  of FORMULA  for which the family FORMULA  of FORMULA  polynomials depends on strictly less than FORMULA  variables in any chart FORMULA , so that FORMULA  is generically empty.
+In the essential globally generated case, FORMULA -subschemes are not necessary generically irreducible, but are disjoint union of irreducible components. For example, if FORMULA , a generic FORMULA -subscheme consists of two disjoint lines FORMULA  and FORMULA .
+Suppose that FORMULA  is globally generated. For any FORMULA  and any generic FORMULA -subscheme FORMULA , the intersection FORMULA  is transversal and define
+a smooth subvariety FORMULA  of FORMULA  of codimension FORMULA  if and only if the family FORMULA  is essential, and FORMULA  is empty otherwise.
+The line bundles FORMULA  restricted to FORMULA  define FORMULA  line bundles FORMULA , globally generated on the toric variety FORMULA , with associated polytopes FORMULA . We then apply proposition REF .
+[Proof of Theorem REF ] Any FORMULA -subscheme FORMULA , FORMULA , FORMULA  can be written as
+FORMULA 
+where, as in section REF , FORMULA  is the mobile part of the divisor FORMULA . A FORMULA -subvariety FORMULA  is included in the intersection of base locis FORMULA  if and only if the virtual faces FORMULA  are empty for all FORMULA . Moreover, there are no bigger FORMULA -subvarieties containing such a FORMULA  and included in FORMULA  if and only if for all FORMULA , there exists FORMULA  such that the virtual face FORMULA  is not empty.
+Since the FORMULA  are global sections of a globally generated line bundle FORMULA  (FORMULA  is the mobile part of the divisor FORMULA ), corollary REF  implies that
+FORMULA 
+is generically a smooth complete intersection of codimension FORMULA  in FORMULA  if the family FORMULA  is essential, empty otherwise. Again by corollary REF , FORMULA  has a transversal or empty intersection with all orbits included in FORMULA .
+Let us introduce Bernstein's theorem {{cite:397da53f-7fbc-4367-b5a4-763942309654}} in the picture:
+If FORMULA  is globally generated and FORMULA , the intersection number FORMULA  for a generic FORMULA -subvariety FORMULA  is positive, equal to the FORMULA -dimensional mixed volume
+FORMULA 
+Choose FORMULA  containing FORMULA , such that
+FORMULA 
+and let FORMULA  be affine equations of FORMULA . Since the line bundles FORMULA  are globally generated on the toric variety FORMULA , corollary REF  implies that the intersection FORMULA  is generically finite, transversal to the orbits included in FORMULA . It is thus included in FORMULA  and globally given by polynomials equations
+FORMULA 
+where FORMULA . The support FORMULA  of a generic polynomial FORMULA  is the subset of FORMULA , image of the polytope FORMULA  under the isomorphism FORMULA  and has the same normalized volume. From Bernstein's theorem, we have
+FORMULA 
+Since the intersection FORMULA  is supposed to be transversal, the intersection number FORMULA  is equal to FORMULA .
+Since the classes of FORMULA -dimensional FORMULA -subvarieties generate the FORMULA -Chow group FORMULA  of algebraic FORMULA -cycles of FORMULA  modulo rational equivalence {{cite:04f88d3a-b70b-44ee-ac7f-05058c4ea625}}, the previous proposition permits to compute the intersection number FORMULA  of any FORMULA -dimensional closed subvariety FORMULA  of FORMULA  with a generic FORMULA -subscheme FORMULA .
+The stricly positivity conditions FORMULA  are satisfied for any FORMULA  if and only if the bundle FORMULA  is globally generated, essential, and if the line bundle FORMULA  is very ample.
+The FORMULA -dimensional mixed volume of a family of FORMULA  polytopes in FORMULA  is strictly positive if and only if the family is essential (see {{cite:fcb90e72-ef8f-4b98-97ad-7b7f05fd0cc8}}). Essentiality of the families FORMULA  for all FORMULA  is equivalent to that any face FORMULA  of the Minkowski sum FORMULA  has maximal dimension FORMULA . In the globally generated case, the polytope FORMULA  corresponds to the divisor FORMULA . It satisfies the previous condition if and only if the translated polytope FORMULA  contains the basis of the FORMULA -free module FORMULA  for all FORMULA . This holds if and only if the associated line bundle FORMULA  is very ample, see {{cite:04f88d3a-b70b-44ee-ac7f-05058c4ea625}}.
+A vector bundle FORMULA  which satisfies hypothesis of corollary REF  is called very ample. For instance, the bundle
+FORMULA  is very ample on FORMULA .
+We now use theorem REF  and proposition REF  to extend the classical notion of FORMULA -concavity in the projective space to an intrinsic notion of FORMULA -concavity in the smooth, complete toric variety FORMULA .
+
+FORMULA -concavity
+We call the parameter space for FORMULA -subvarieties the product of projective spaces
+FORMULA 
+equipped with the multi-homogeneous coordinates FORMULA , where
+FORMULA 
+are the natural homogeneous coordinates for divisors in FORMULA . Thus any FORMULA  in FORMULA  determines the FORMULA -subvariety FORMULA  whose restriction to the torus FORMULA  has Laurent polynomial equations
+FORMULA 
+where FORMULA , for FORMULA .
+An open set FORMULA  of FORMULA  is called FORMULA -concave if any point of FORMULA  belongs to an FORMULA -subvariety included in FORMULA . The FORMULA -dual space of an FORMULA -concave set FORMULA  is the subset
+FORMULA 
+The FORMULA -incidence variety over FORMULA  is the analytic subset of  FORMULA
+FORMULA 
+equipped with its natural projections FORMULA  and FORMULA  on respectively FORMULA  and FORMULA . We note FORMULA  the set of regular points FORMULA , for which the subvariety FORMULA  is a smooth complete intersection.
+Certainly, FORMULA -concave open sets need not exist without any restrictive hypothesis on the algebraic vector bundle FORMULA . However, we know from section REF  that FORMULA  is an open Zariski subset in FORMULA  if FORMULA  is globally generated and essential. Next proposition shows that this condition is necessary and sufficient to be in the general situation described in {{cite:06bfdf8f-0629-4ea9-9374-13d0e89973a0}} to generalize the Abel-transform.
+A. These three assertions are equivalents:
+
+FORMULA  is globally generated;
+
+FORMULA  is a bundle on FORMULA  in a product of projective spaces FORMULA , where FORMULA , FORMULA ;
+
+FORMULA  is a smooth irreducible complete intersection in FORMULA  and the morphism FORMULA  is a holomorphic submersion.
+
+B. If FORMULA  is globally generated, then FORMULA  is a non empty Zariski open set of FORMULA  if and only if FORMULA  is essential. In that case, the map FORMULA  is holomorphic, proper, surjective and defines a submersion over FORMULA . Moreover, the FORMULA -dual set FORMULA  of an FORMULA -concave open set FORMULA  is open, non empty, and connected if FORMULA  is.
+We show part A. For FORMULA , let FORMULA  and FORMULA  its dual. We can define the tautological projective bundle “points-hyperplanes” over the projectivised space FORMULA  of  FORMULA
+FORMULA 
+where FORMULA . The product bundle FORMULA  over FORMULA  is a bundle in a product of projectives spaces isomorphic to FORMULA . If assertion FORMULA  is true, the morphism
+FORMULA 
+is well-defined, where, for FORMULA , FORMULA  is the Kodaira map which sends FORMULA  to the point in FORMULA  representing the hyperplane in FORMULA  of sections of FORMULA  vanishing at FORMULA . The triple FORMULA  is the pull-back bundle FORMULA  on FORMULA  which shows FORMULA . A projective bundle on a smooth irreducible variety FORMULA  is smooth irreducible and the projection on FORMULA  is a submersion. The variety FORMULA  is locally given by FORMULA  affine equations and is thus a complete intersection for dimension reasons which shows FORMULA .
+If a line bundle FORMULA  is not globally generated, the fiber FORMULA  over any FORMULA  in the base locus FORMULA  has codimension strictly less than FORMULA  in FORMULA , contradicting FORMULA . So FORMULA , which completes the proof of FORMULA .
+Let us show part B. The map FORMULA  is holomorphic, proper (since FORMULA  is compact) and surjective by construction. Proposition REF  implies that FORMULA  is a non empty Zariski open set of FORMULA  if and only if FORMULA  is essential. In that case, the fiber FORMULA  over FORMULA  is smooth and the implicit function theorem implies that in a neighborhood of FORMULA , the triple FORMULA  is diffeomorphic to the triple FORMULA  where FORMULA  is an open subset of FORMULA , FORMULA  is an open neighborood of FORMULA  and FORMULA  is the second projection.
+It remains to show that FORMULA  is open in FORMULA . Since FORMULA  is a submersion, FORMULA  is open in FORMULA  if and only if for all FORMULA  in FORMULA , the fiber FORMULA  is open in FORMULA . Let FORMULA  be the closed subset FORMULA . We define for FORMULA  the set
+FORMULA 
+The set FORMULA , isomorphic to a product of projectives spaces, is closed in FORMULA ;
+the condition FORMULA  is closed and the set FORMULA  is therefore closed in
+FORMULA ; each fiber FORMULA 
+is hence open in FORMULA  and FORMULA  is open in FORMULA , so in FORMULA . Since FORMULA  is holomorphic, it is open and the set FORMULA  is open in FORMULA . If FORMULA  is connected, so is FORMULA  (because of its bundle structure), and so is FORMULA  since FORMULA  is continuous.
+
+FORMULA -duality
+From now on, we assume that FORMULA  is an essential and globally generated vector bundle over FORMULA .
+FORMULA -dual sets
+To any analytic subset FORMULA  in an FORMULA -concave open set FORMULA  of FORMULA , we associate (set theoretically) its FORMULA -dual set
+FORMULA 
+We define the incidence set over  FORMULA
+FORMULA 
+and note FORMULA  and FORMULA  the natural projections onto FORMULA  and FORMULA .
+If FORMULA  is open FORMULA -concave, then
+
+The dual FORMULA  of a closed analytic set FORMULA  is closed analytic
+in FORMULA . Moreover, for any FORMULA , we have
+FORMULA 
+where FORMULA  is the maximum of the dimensions of the irreducible components of FORMULA  meeting FORMULA .
+
+If FORMULA  is irreducible and if there exists FORMULA  such that the intersection
+FORMULA  is proper, its dual FORMULA  is irreducible of pure codimension
+FORMULA 
+
+1. Since FORMULA  is a submersion, FORMULA  is analytic closed in FORMULA  of codimension FORMULA , irreducible if and only if FORMULA  is. The projection FORMULA  is holomorphic, proper and the proper mapping theorem {{cite:94247f8d-2655-45d0-82c1-1b06466335d0}} implies that FORMULA  is analytic closed in FORMULA , irreducible if FORMULA  is. Moreover, for any FORMULA :
+FORMULA 
+where FORMULA  is the codimension at
+FORMULA  in FORMULA  of the fiber FORMULA . On the other hand, since FORMULA  is a submersion, we have FORMULA  for any FORMULA  in FORMULA , so that
+FORMULA 
+The maximum of the dimensions FORMULA  for FORMULA  when FORMULA  runs an arbitrary small open neighborhood FORMULA  of FORMULA  is the maximum of the dimensions of the irreducible components of FORMULA  meeting FORMULA , which only depends of FORMULA . Consequently, if FORMULA  is small enough, the chosen definition of FORMULA  implies the equality
+FORMULA 
+which ends the proof of the first point.
+2. If FORMULA  and FORMULA  intersect properly for FORMULA , then
+FORMULA 
+From the first point, we then have
+FORMULA 
+Since FORMULA  is assumed irreducible, FORMULA  is irreducible, and FORMULA  which ends the proof.
+We remark that FORMULA -dual sets have a particular structure: if FORMULA  is closed analytic in an FORMULA -concave open set FORMULA , its dual FORMULA  is a union of products of projectives hyperplanes FORMULA  restricted to FORMULA .
+The following example illustrates proposition REF :
+
+Let FORMULA , with natural multi-homogeneous coordinates FORMULA . Consider the essential globally generated bundle FORMULA . Then FORMULA  is isomorphic to FORMULA  equipped with its natural homogeneous coordinates FORMULA , with the representation FORMULA . For FORMULA , the intersection FORMULA  is empty if FORMULA 
+and FORMULA  otherwise. Thus, FORMULA  and the minimum of the dimension of FORMULA  for FORMULA  near any points FORMULA  is two and FORMULA  as predicted by proposition REF .
+In this example, while FORMULA , the intersection FORMULA  is generically empty (which traduces the inequality FORMULA ). This is an example of a set for which the intersection with an FORMULA -subscheme is never proper, situation excluded in the projective case FORMULA . Let us study those degenerate sets.
+
+Degenerate analytic sets
+Let FORMULA  be an FORMULA -concave open subset of FORMULA .
+An analytic subset FORMULA  in FORMULA  is called FORMULA -degenerate if it contains an irreducible branch FORMULA  such that
+FORMULA 
+Suppose that FORMULA  is an irreducible analytic subset of dimension FORMULA  in FORMULA .
+The following assertions are equivalent:
+
+The set FORMULA  is not FORMULA -degenerate;
+
+The equality FORMULA  holds;
+
+The analytic subset FORMULA 
+is of codimension at least two in FORMULA .
+
+There exists FORMULA  in FORMULA  such that FORMULA .
+
+FORMULA . The equality FORMULA  and the inequality FORMULA  ensure that FORMULA  is not FORMULA -degenerate if and only if FORMULA , that is FORMULA .
+FORMULA . If FORMULA , then FORMULA . If FORMULA  is not FORMULA -degenerate, FORMULA  so that FORMULA  and FORMULA  by a dimension argument since FORMULA  and FORMULA  are irreducible. Thus FORMULA  for any FORMULA  in FORMULA , contradicting 2 by assertion FORMULA  of proposition REF .
+FORMULA . For all FORMULA , a generic FORMULA -subscheme containing FORMULA  is a smooth complete intersection. Thus, the open subset FORMULA  is dense in FORMULA  and meets FORMULA  under hypothesis 3.
+FORMULA  is a consequence of the second point in proposition REF .
+For FORMULA , we obtain a similar caracterisation of FORMULA -degenerate set using the set FORMULA . In particular, FORMULA  is not FORMULA -degenerate and the set FORMULA  has codimension at least two.
+If FORMULA , we note FORMULA  the set of parameters FORMULA  for which FORMULA  intersects FORMULA  transversaly outside its singular locus FORMULA .
+Let FORMULA  be irreducible of dimension FORMULA . The following assertions are equivalent:
+
+The set FORMULA  is not FORMULA -degenerate;
+
+The set FORMULA  is nonempty;
+
+The set FORMULA  is dense in FORMULA .
+
+FORMULA  is trivial. If FORMULA , then FORMULA  and FORMULA  follows from proposition REF . Let us show FORMULA .
+Since FORMULA , then FORMULA  from proposition REF . But FORMULA  is irreducible of codimension 0 in the connected open set FORMULA , so FORMULA . For FORMULA  in FORMULA  generic, the intersection FORMULA  is finite (FORMULA  is compact) and does not meet FORMULA . As in proposition  REF , Sard's theorem implies that transversality FORMULA  is then generically satisfied.
+We can interpret corollary REF  in the algebraic case FORMULA .
+An irreducible subvariety FORMULA  of FORMULA  of dimension FORMULA  is FORMULA -degenerate if and only if its class FORMULA  is orthogonal to FORMULA , that is if the intersection number FORMULA  is zero. In particular, there are no FORMULA -degenerate algebraic subvarieties if and only if FORMULA  is very ample.
+This is immediate from proposition REF  and corollaries REF  and REF .
+Thus, strict inequality FORMULA  is equivalent to that for any FORMULA -concave open set FORMULA  in FORMULA , there exists FORMULA  for which the intersection FORMULA  is transversal, consisting in FORMULA  distinct points in FORMULA . In particular, any FORMULA -dimensional closed subvariety which is not FORMULA -degenerate meets any FORMULA -concave open set.
+If FORMULA  is not FORMULA -degenerate and has pure dimension FORMULA , the morphism FORMULA  is a ramified covering over the open subset FORMULA  of degree FORMULA .
+Clearly, the morphism FORMULA  restricts to a finite ramified covering of degree FORMULA  over FORMULA . By Proposition 5, the codimension of FORMULA  in FORMULA  is at least two and FORMULA  by Hartog's extension theorem. Since FORMULA  is a proper submersion over the dense open set FORMULA , the codimension in FORMULA  of the analytic subset FORMULA  is at least two, and so is its analytic closure FORMULA  in FORMULA . Consequently FORMULA , which ends the proof.
+If FORMULA , a generic FORMULA -subscheme does not meet FORMULA  and one is tempted to think that the intersection FORMULA  consists in one point for a generic FORMULA  in FORMULA  (meaning that the subvarieties FORMULA  and FORMULA  are bimeromorphically equivalent). This is generally not true, as the following simple example shows :
+Suppose FORMULA  and let FORMULA  be the essential globally generated bundle FORMULA . A generic FORMULA -subscheme FORMULA  is the disjoint union FORMULA 
+where the points FORMULA  and FORMULA  are distinct and belong to the first factor FORMULA  while the point FORMULA  belongs to the second factor FORMULA . For FORMULA  the set FORMULA  is generically empty. However, for FORMULA  in FORMULA  generic, the intersection FORMULA  consists of two distincts points.
+To understand the behaviour of FORMULA -duality with rational equivalence, we need to consider the case of cycles, taking now account of multiplicities.
+
+FORMULA -duality for cycles
+Let FORMULA  be an open FORMULA -concave subset and let FORMULA  be an irreducible analytic subset of FORMULA .
+We define the FORMULA -dual cycle FORMULA  of FORMULA  as follow. If FORMULA  is FORMULA -degenerate or FORMULA , then FORMULA . Otherwise, the field FORMULA  is a finite extension on FORMULA  and we set
+FORMULA 
+We extend by linearity this definition to the case of cycles. FORMULA -duality agrees with rational equivalence:
+A. Let FORMULA . The map FORMULA  induces a morphism of graded FORMULA -free modules on the Chow groups of FORMULA  and  FORMULA
+FORMULA 
+for all FORMULA .
+B. Suppose that the line bundles FORMULA  are very ample and let FORMULA  be an effective FORMULA -cycle on FORMULA  of class FORMULA  in FORMULA .
+Then FORMULA  is an effective divisor in the product of projective spaces FORMULA  of multidegree FORMULA , where
+FORMULA 
+for all FORMULA  (we omit the FORMULA -th polytope).
+A. We have FORMULA  by proposition REF . The map FORMULA  is the composed map of the usual pull-back map of cycles under the submersion FORMULA  with the direct total image of cycles under the proper morphism FORMULA . Thus, it is compatible with rational equivalence (Appendix A of {{cite:51de3a8a-cea0-4a6e-8e15-9bacf5c5a31a}}).
+B. Let FORMULA  be the multihomogeneous equation of the effective divisor FORMULA  in the product of projective spaces FORMULA , with the convention that FORMULA  for irreducible FORMULA -degenerate components FORMULA  of FORMULA . We call this polynomial the FORMULA -resultant of  FORMULA. For FORMULA , the FORMULA -resultant FORMULA  corresponds to the classical FORMULA -resultant of the FORMULA  very ample line bundles FORMULA  on the FORMULA -dimensional toric variety FORMULA , as defined in {{cite:f0ad1c58-7edb-4a48-9fab-6beb1b3d02a3}}. If FORMULA  is rationally equivalent to the cycle FORMULA , part A implies by linearity that
+FORMULA 
+From {{cite:f0ad1c58-7edb-4a48-9fab-6beb1b3d02a3}}, the partial degree in FORMULA  of the polynomial FORMULA  is equal to the intersection number of FORMULA  with a generic FORMULA -subvariety where FORMULA . We conclude with proposition REF .
+
+The toric Abel-transform
+Meromorphic forms and residue currents
+Let FORMULA  be an analytic manifold of dimension FORMULA . Any FORMULA -dimensional analytic subset FORMULA  gives rise to a positive FORMULA -closed FORMULA -current FORMULA  on FORMULA , acting by integration on the regular part of FORMULA .
+We define the sheaf of FORMULA -modules FORMULA  on FORMULA  of germs of meromorphic FORMULA -forms on FORMULA  as the restriction to FORMULA  of the sheaf of germs of meromorphic FORMULA -forms in the ambient space FORMULA  whose polar sets intersect properly FORMULA . We note FORMULA  the corresponding vector space of global sections. Note that the restriction map FORMULA  is in general not surjective.
+As shown in {{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}}, any FORMULA -meromorphic form FORMULA  gives rise to a current FORMULA  on FORMULA , supported on FORMULA  and acting on any FORMULA -test-forms FORMULA  using the principal value criterion:
+FORMULA 
+where FORMULA  is any holomorphic function on FORMULA  not identically zero on FORMULA  but vanishing on the singular locus of FORMULA  and on the polar set of FORMULA  (the limit does not depend on the choice of FORMULA ). The polar locus of FORMULA  is the analytic subset
+FORMULA 
+By Hartog's theorem, FORMULA  is either a codimension 1 analytic subset of FORMULA , either the empty set.
+A meromorphic form FORMULA  is called abelian or regular at FORMULA  if the current FORMULA  is FORMULA -closed at FORMULA . We note FORMULA  the corresponding sheaf of FORMULA -modules. When FORMULA  is smooth, FORMULA  is the usual sheaf FORMULA  of germs of holomorphic FORMULA -forms on the manifold FORMULA .
+
+The Abel-transform
+Let FORMULA  be a globally generated essential rank FORMULA  split vector bundle on a smooth complete toric variety FORMULA . We keep the notations of section .
+Let FORMULA  be an open FORMULA -concave set. We suppose FORMULA  connected for simplicity.
+For any FORMULA -dimensional analytic subset FORMULA  and any FORMULA -form FORMULA , the Toric Abel-transform (relatively to FORMULA ) of the locally residual current FORMULA  is the current on  FORMULA
+FORMULA 
+where FORMULA  is the push-forward map for currents associated to the proper morphism FORMULA  and
+FORMULA 
+This current is well defined since FORMULA  is a holomorphic submersion by proposition REF , so that FORMULA  is meromorphic on FORMULA .
+If FORMULA  is not FORMULA -degenerate, the intersection FORMULA  is generically transversal by corollary REF  and consists in FORMULA  points FORMULA  outside the polar locus of FORMULA , whose coordinates vary holomorphically with FORMULA  by the implicit function theorem. For such generic FORMULA , the Abel-transform FORMULA  coincides with the holomorphic FORMULA -form
+FORMULA 
+We call it the Trace of FORMULA  on  FORMULA (relatively to FORMULA ).
+Let us introduce residue calculus in the picture.
+
+Residual representation of the Abel-transform
+For simplicity, we suppose that FORMULA  is an analytic hypersurface meeting properly the codimension one orbits of FORMULA . The more general case of a locally complete intersection can be treated in the same way. So FORMULA  is an essential globally generated bundle of rank FORMULA , where the line bundles FORMULA  are attached to Cartier divisors FORMULA , with polytopes FORMULA , for FORMULA .
+Using the principle of unicity of analytic continuation, we can compute the trace in a sufficiently small open set of FORMULA  (always noted FORMULA ) such that for every FORMULA , the intersection FORMULA  is contained in the torus (this is possible by proposition REF ). We can thus use the torus variables FORMULA . We recall that
+FORMULA 
+where the Laurent polynomials FORMULA  are supported by the polytopes FORMULA , for FORMULA .
+The coefficients of the meromorphic FORMULA -form FORMULA  are Grothendieck residues of meromorphic FORMULA -forms (in FORMULA ) depending meromorphically of the parameters FORMULA . If FORMULA  is the analytic equation of FORMULA  near FORMULA , FORMULA , then
+FORMULA 
+where FORMULA , FORMULA , FORMULA  and
+FORMULA 
+denotes the action in FORMULA  of the Grothendieck residues defined by the polynomials FORMULA  on the meromorphic FORMULA -form FORMULA  (the residues are zero except eventually on the finite set FORMULA ).
+The meromorphic form FORMULA  is a FORMULA -current on FORMULA  which acts on test-forms FORMULA  by
+FORMULA 
+For any complete intersection FORMULA  in a complex manifold, the FORMULA -current of integration FORMULA  is attached to the FORMULA -residue current
+FORMULA 
+by the Poincaré-Lelong equation
+FORMULA 
+In our situation, this formula gives a local expression for the FORMULA -current FORMULA  on  FORMULA
+FORMULA 
+Since the current FORMULA  acts on test-forms of bidegree FORMULA  in  FORMULA, where FORMULA , we have FORMULA , where
+FORMULA 
+Since
+FORMULA 
+for any meromorphic FORMULA -form FORMULA , this gives the desired residual expression for the trace using linearity of Grothendieck residues and expanding the form FORMULA  .
+In the algebraic case FORMULA , the previous residual representation allows to compute explicitly the polar divisor for the toric Abel-transform using results in {{cite:024d1c24-54f6-4276-8b1b-75c2ac0a03a7}} and {{cite:6387cc67-c644-4ba7-9da4-e91f1455768d}} who give denominators formulae for toric residues depending on parameters (see {{cite:698b47d9-a1b9-4f98-a393-6352ce41d29e}} for the very ample case).
+We are now in position to prove the Abel-inverse theorem in smooth complete toric varieties.
+
+A toric version of the Abel-inverse theorem
+Let FORMULA  be an essential globally generated vector bundle on FORMULA  with polytopes FORMULA  defined as before. We suppose that FORMULA  satisfies the following additional condition :
+There exists a chart FORMULA , FORMULA  such that each polytope FORMULA  FORMULA  defined in section REF  contains the elementary simplex of FORMULA .  FORMULA
+Condition FORMULA  means that FORMULA , FORMULA  for any FORMULA -dimensional cone FORMULA . There always exist bundles FORMULA  who satisy FORMULA . Geometrically, it means that a generic hypersurface FORMULA  meets any one dimensional orbit closure FORMULA  meeting FORMULA . Let FORMULA  be such a chart. We prove the following toric version of the classical Abel-inverse theorem:
+Let FORMULA  be an analytic hypersurface of an FORMULA -concave open set FORMULA  with no components included in FORMULA , and let FORMULA  be a meromorphic FORMULA -form on FORMULA  which does not vanish identically on any component of FORMULA . Then, there exists an algebraic hypersurface FORMULA  and a rational form FORMULA  on FORMULA  such that
+FORMULA 
+if and only if the meromorphic form FORMULA  is rational in the constant coefficients FORMULA  of the FORMULA  polynomial equations of FORMULA  in FORMULA .
+The condition FORMULA  is equivalent to that the intersection number FORMULA  is equal to the cardinality FORMULA  of the finite set FORMULA  for a generic FORMULA . From proposition REF , this is equivalent to that the intersection of the hypersurface FORMULA  with the torus FORMULA  is given by a Laurent polynomial whose Newton polytope FORMULA  satisfies FORMULA . For the complete characterization of the class of FORMULA  in the Picard group FORMULA  (or, equivalently the polytope FORMULA  of FORMULA ), we need supplementary degree conditions in terms of traces of appropriate rational functions on FORMULA  (see {{cite:698b47d9-a1b9-4f98-a393-6352ce41d29e}}).
+Direct implication. Since FORMULA , then FORMULA  for any FORMULA  and the form FORMULA  coincides on FORMULA  with the Abel-transform FORMULA . This FORMULA -current is defined on the product of projective spaces FORMULA , and FORMULA -closed outside an hypersurface dual to the polar locus of FORMULA  on FORMULA . This current thus corresponds to a meromorphic form on FORMULA , which, by the GAGA principle, is rational in FORMULA  (so in FORMULA ).
+Converse implication. Under a monomial change of coordinates on the torus, we can suppose that the affine coordinates FORMULA  of FORMULA  coincide with the torus coordinates FORMULA  so that the polytopes FORMULA  coincide with the polytopes FORMULA  attached to the line bundle FORMULA . Thus, every FORMULA -subvariety FORMULA  has affine equations
+FORMULA 
+where the polynomials FORMULA  are supported by the polytopes FORMULA  containing the elementary simplex of FORMULA  with a constant term FORMULA  for FORMULA .
+By assumption, the sets FORMULA  and FORMULA  have codimension at least 2 in FORMULA . Thus, we can suppose that FORMULA  is a neighborhood of a point FORMULA  such that the intersection
+FORMULA 
+is transversal, does not meet the polar locus of FORMULA  and is contained in FORMULA  for all FORMULA . So we suppose FORMULA  smooth, included in FORMULA , and FORMULA  holomorphic on FORMULA . In particular, we can use affine coordinates FORMULA  of the chart FORMULA  to compute traces.
+We now extend to the toric situation a lemma of “propagation”, crucial in the original proof in {{cite:cdb4f645-b37e-4c8e-ad5a-9f429ebef73d}}.
+The propagation principle
+We show here the following lemma.
+If FORMULA  is rational in FORMULA , then so is the form FORMULA  for every polynomial FORMULA  supported in the convex cone generated by FORMULA .
+We note FORMULA  the equation of FORMULA  in FORMULA  (so that FORMULA  is holomorphic near the finite set FORMULA ) and we define
+FORMULA 
+for every FORMULA . Proposition REF  applied with FORMULA  implies the equality
+FORMULA 
+for all FORMULA . Thus we need to show that the meromorphic functions FORMULA  on FORMULA  are rational in FORMULA  for all FORMULA  in FORMULA  and all FORMULA . For FORMULA , this is our hypothesis since the meromorphic functions FORMULA  are coefficients of the trace FORMULA . We suppose FORMULA  rational in FORMULA  for FORMULA  and we show that FORMULA  is rational in FORMULA  for every FORMULA .
+Using Cauchy integral representation for Grothendieck residues and Stokes theorem, we see that for all FORMULA  and all FORMULA , we have
+FORMULA 
+This is also equivalent to that the form FORMULA  is closed on FORMULA , since the form FORMULA  is of maximal degree on FORMULA  and the FORMULA -operator commutes with FORMULA  and FORMULA .
+So, if FORMULA , our hypothesis implies that FORMULA  is rational in FORMULA , and we want to show that it has no simple pole in FORMULA  in its decomposition into simple elements in FORMULA . If FORMULA , it's trivially true. Otherwise, there exists FORMULA  such that the functions FORMULA  and FORMULA  are FORMULA -linearly independent. Then:
+FORMULA 
+so that the function FORMULA  (rational in FORMULA ) admits the two linearly independents primitives FORMULA  and FORMULA  in the two linearly independent directions
+FORMULA  and FORMULA . Thus it can not have simple poles in its decomposition in simple elements in FORMULA  and the function FORMULA  is rational in FORMULA . Since FORMULA  is assumed to be rational in FORMULA , so is FORMULA .
+Let us come back to the proof of theorem .
+
+The inversion process
+We devide it in two steps.
+Step 1. Extension of FORMULA . The finite degree-FORMULA  field extension FORMULA  is generated by the meromorphic functions FORMULA  considered as elements of FORMULA . Thus, for FORMULA  generic, the meromorphic function defined by FORMULA  on FORMULA  is a primitive element for this extension. We note FORMULA  the analytic functions FORMULA  for FORMULA . The unitary polynomial of  FORMULA
+FORMULA 
+has degree FORMULA  and satisfies FORMULA . It is thus the minimal (and the characteristic) polynomial of FORMULA . Let us define the meromorphic function on  FORMULA
+FORMULA 
+and let us show that the matrix of traces
+FORMULA 
+is invertible in FORMULA . Since FORMULA  vanishes identically on the reduced set FORMULA , then
+FORMULA 
+for any FORMULA . Expanding this condition by linearity for FORMULA , we obtain
+FORMULA 
+Similary, any vector FORMULA  such that FORMULA  represents the coefficients of a polynomial FORMULA  of degree FORMULA  such that
+FORMULA 
+Let FORMULA . Since FORMULA  defines a primitive element for the degree FORMULA  extension FORMULA , there exists a polynomial FORMULA  of degree at most FORMULA  such that FORMULA . By linearity, this implies that the relation FORMULA  still holds when replacing the polynomial FORMULA  by any monomial FORMULA . Thus, if FORMULA , then
+FORMULA 
+by the duality theorem. By assumption on FORMULA , the holomorphic function FORMULA  is not identically zero on any components of FORMULA , so that FORMULA  must vanish identically on the incidence variety FORMULA . By a degree argument, this forces FORMULA , so that FORMULA  is invertible in FORMULA .
+Since the line bundles FORMULA  satisfy FORMULA , we have FORMULA  for every FORMULA  and lemma REF  implies that the meromorphic functions FORMULA  are rational in FORMULA  for every FORMULA . Since FORMULA  is invertible, the coefficients of FORMULA  are thus rational in FORMULA . Trivially,
+FORMULA 
+where FORMULA . The function
+FORMULA 
+is thus rational in FORMULA  and defines an algebraic hypersurface
+FORMULA 
+which contains FORMULA  for every FORMULA  in a neighborhood of FORMULA . For generic FORMULA  the sum FORMULA  remains a primitive element for the extension FORMULA , and previous construction gives a set
+FORMULA 
+which is algebraic and contains FORMULA . By construction, if FORMULA  for FORMULA , there exists FORMULA  such that
+FORMULA 
+for FORMULA  generic. This implies that FORMULA  so that
+FORMULA 
+Let FORMULA  be the Zariski closure of FORMULA  to FORMULA . If FORMULA  meets FORMULA  outside FORMULA  for FORMULA , then it would remain true in a neighborhood of FORMULA , contradicting proposition REF  since FORMULA  meets properly the hypersurface at infinity FORMULA . Thus
+FORMULA 
+This shows that FORMULA  where FORMULA  for all FORMULA . Since FORMULA  is FORMULA -concave, this forces FORMULA  to be empty and FORMULA .
+Step 2. Extension of FORMULA . By assumption on FORMULA , FORMULA  is holomorphic on the smooth analytic set FORMULA  and can be identified with a holomorphic form in the ambient space. Thus, there exists a holomorphic function FORMULA  in a neighborhood of the finite set FORMULA  such that
+FORMULA 
+Let FORMULA  be as before and consider the Lagrange interpolation polynomial
+FORMULA 
+The polynomial FORMULA  satisfies FORMULA  for all FORMULA  and all FORMULA , that is
+FORMULA 
+Thus we have equality
+FORMULA 
+for all FORMULA . That means that the FORMULA -uple FORMULA  satisfies
+FORMULA 
+where
+FORMULA 
+As before, the duality theorem implies that system FORMULA  is Cramer. From Point 1, FORMULA  can be replaced by a polynomial FORMULA  for which FORMULA . Thus, the functions FORMULA  are rational in FORMULA  (so in FORMULA ) for every FORMULA  while the functions FORMULA  are rational by hypothesis. So FORMULA  depends rationally on FORMULA  and for any FORMULA , the function
+FORMULA 
+is rational in FORMULA . From FORMULA  it satisfies FORMULA , so that the rational function FORMULA  coincides with FORMULA  on FORMULA  independently of FORMULA . The inner product of the rational FORMULA -form FORMULA  with FORMULA  defines a rational form FORMULA  on FORMULA  which satisfies FORMULA . If the polar locus of FORMULA  does not meet properly the algebraic hypersurface FORMULA , this also holds in the FORMULA -concave set FORMULA , contradicting that FORMULA . Thus FORMULA  defines a rational form FORMULA  on FORMULA  which is equal to FORMULA  on FORMULA . Theorem  is proved.
+

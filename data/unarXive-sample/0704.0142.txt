@@ -1,0 +1,505 @@
+
+
+Some aspects of the nonperturbative renormalization of the
+FORMULA  model
+J. Kaupužs
+E–mail: kaupuzs@latnet.lv Institute of Mathematics and Computer Science, University of LatviaRaiņa bulvāris 29, LV–1459 Riga, Latvia2020/09/07 07:32:18A nonperturbative renormalization of the FORMULA  model is considered.
+First we integrate out only a single pair of conjugated modes
+with wave vectors FORMULA . Then we are looking for the RG
+equation which would describe the transformation of the Hamiltonian
+under the integration over a shell
+FORMULA , where FORMULA .
+We show that the known Wegner–Houghton equation is consistent with the assumption of
+a simple superposition of the integration results for FORMULA .
+The renormalized action can be expanded in powers of
+the FORMULA  coupling constant FORMULA  in the high temperature phase
+at FORMULA . We compare the expansion coefficients with those
+exactly calculated by the diagrammatic perturbative method, and find
+some inconsistency. It causes a question in which sense the Wegner–Houghton
+equation is really exact.
+Introduction
+The renormalization group (RG) approach, perhaps, is the most extensively used one in numerous
+studies of critical phenomena {{cite:fc6e47f5-4670-407b-94a7-955ca13823cd}}, {{cite:15aa1ccd-fd89-4f8f-9758-612fc3d2ac5e}}. Particularly, the perturbative RG approach
+to the FORMULA  or Ginzburg–Landau model is widely known {{cite:f28bd870-36be-470d-b7c9-a9143426a33f}}, {{cite:5c9aaa2f-a68a-4cdd-b396-fab53664b9c6}}, {{cite:1d8e1984-bef7-475e-930f-354c53601a2f}}, {{cite:a1a2780e-1913-4445-add0-8a3ff5855347}}.
+However, the perturbative approach suffers from some problems {{cite:1e32ded5-327e-452f-b522-c061a3805adf}}. Therefore it is interesting to look
+for a nonperturbative approach. Historically, nonperturbative RG equations have been developed in parallel
+to the perturbative ones. These are so called exact RG equations (ERGE).
+The method of deriving such RG equations is close in spirit to the famous Wilson's approach,
+where the basic idea is to integrate out the short–wave fluctuations
+corresponding to the wave vectors within FORMULA  with the
+upper (or ultraviolet) cutoff parameter FORMULA  and the renormalization scale FORMULA .
+The oldest nonperturbative equation of this kind, originally presented by
+Wegner and Houghton {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}, uses the sharp momentum cutoff. Later,
+a similar equation with smooth momentum cutoff has been proposed by Polchinski {{cite:6367955b-a419-43e4-9b9f-966e6ece491f}}.
+The RG equations of this class are reviewed in {{cite:476cc5aa-eb2c-4479-9335-0d6278f8d882}}.
+According to the known classification {{cite:476cc5aa-eb2c-4479-9335-0d6278f8d882}}, {{cite:19726350-df35-43cd-bd67-5d8179f1450e}},
+there is another class of nonperturbative RG equations proposed
+by {{cite:3daf7b3c-089e-4925-b75f-44afb950e4e7}} and reviewed in {{cite:19726350-df35-43cd-bd67-5d8179f1450e}}.
+Some relevant discussion can be found in {{cite:476cc5aa-eb2c-4479-9335-0d6278f8d882}}, as well.
+Such equations describe the variation of an average effective action
+FORMULA  depending on the running cutoff scale FORMULA . Here
+FORMULA 
+is the averaged order–parameter field (for simplicity, we refer to the case of scalar field).
+According to {{cite:3daf7b3c-089e-4925-b75f-44afb950e4e7}}, the averaging is performed over volume FORMULA 
+such that the fluctuation degrees of freedom with momenta FORMULA  are effectively integrated
+out. In fact, the averaging over volume FORMULA 
+is the usual block–spin–averaging procedure of the real–space
+renormalization. At the same time, the fluctuations with
+FORMULA  are suppressed by a smooth infrared cutoff.
+As one can judge from {{cite:19726350-df35-43cd-bd67-5d8179f1450e}}, the existence of a deterministic relation
+between the configuration of external source FORMULA  and
+that of the averaged order parameter FORMULA 
+is (implicitly) assumed in the nonperturbative derivation of the RG flow equation.
+Namely, it is stated
+(see the text between (2.28) and (2.29) in {{cite:19726350-df35-43cd-bd67-5d8179f1450e}}) that
+FORMULA  is the inverse of
+FORMULA ,
+which has certain meaning as a matrix identity.
+To make this point clearer, let us consider a toy example FORMULA , where
+FORMULA  and
+FORMULA  are FORMULA –component
+vectors and FORMULA  is a matrix of size FORMULA . In this case
+FORMULA  is the element FORMULA  of matrix FORMULA ,
+whereas FORMULA  is the element
+FORMULA  of the inverse matrix FORMULA .
+In the continuum limit FORMULA , this toy example corresponds to a linear
+dependence between FORMULA  and FORMULA . The calculation of derivative always
+implies the linearisation around some point, so that the matrix identity
+used in {{cite:19726350-df35-43cd-bd67-5d8179f1450e}} (as a continuum limit in the above example)
+has a general meaning. However, it makes sense only if there exists
+a deterministic relation between the configurations of FORMULA 
+and FORMULA  or, in a mathematical notation, if there exist
+mappings FORMULA 
+and FORMULA .
+On the other hand, according to the block–averaging, the values of FORMULA  should be
+understood as the block–averages. These, of course, are not uniquely
+determined by the external sources, but are fluctuating quantities.
+So, we are quite sceptical about the exactness of such an approach of averaged effective action.
+The integration over fluctuation degrees with momenta FORMULA  does not alter the
+behavior of the infrared modes, directly related to the critical exponents.
+From this point of view, the approach based on the equations of Wegner–Houghton
+and Polchinski type seems to be more natural.
+These are widely believed to be the exact
+RG equations, although, in view of our currently presented results, it turns out to be
+questionable in which sense they are really exact. In any case, the
+nonperturbative RG equations
+cannot be solved exactly, therefore a suitable truncation is used. The convergence
+of several truncation schemes and of the derivative expansion
+has been widely studied in {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}}, {{cite:e5895290-727d-4c39-8aaa-72bd28e4cefe}}, {{cite:45b6ad30-e705-4d1b-b61e-52cc7a38d0af}}, {{cite:12e9ea15-38bb-4db5-9b1b-2f3a7dc50aef}}, {{cite:4c3bfced-81b2-4e27-9a94-e2ebd7566b2c}}. Here {{cite:4c3bfced-81b2-4e27-9a94-e2ebd7566b2c}}
+refers to the specific approach of {{cite:3daf7b3c-089e-4925-b75f-44afb950e4e7}}.
+A review about all the methods of approximate solution can be found in {{cite:0066b367-e870-4a1a-a069-c70824ff83a3}}.
+Another problem is to test and verify the nonperturbative RG equations,
+comparing the results with the known exact and rigorous solutions,
+as well as with the results of the perturbation theory.
+In {{cite:45b6ad30-e705-4d1b-b61e-52cc7a38d0af}}, the derivative expansion of the RG FORMULA –function has been considered,
+showing the agreement up to the second order between the perturbative results and those
+obtained from the Legendre flow equation, which also belongs to the same class of RG equations
+as the Wegner–Houghton and Polchinski equations.
+It has been stated in {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}} that the critical exponent FORMULA , extracted from the Wegner–Houghton
+equation in the local potential approximation, agrees with the FORMULA –expansion
+up to the FORMULA  order, as well as with the FORMULA 
+(FORMULA  in the notations of {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}})
+expansion in the leading order.
+However, looking carefully on the results of {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}}, one should make clear
+that “the leading order of the FORMULA  expansion" in this case is no more than
+the zeroth order, whereas the expansion coefficient at FORMULA 
+is inconsistent with that proposed by the perturbative RG calculation at
+any fixed dimension FORMULA  except only FORMULA .
+The inconsistency
+could be understood from the point of view that the Wegner–Houghton equation
+has been solved approximately. Therefore it would be interesting to verify
+whether the problem is eliminated beyond the local potential approximation.
+One should also take into account that the perturbative
+RG theory is not rigorous and, therefore, we think that a possible
+inconsistency still would not prove that something is really wrong
+with the nonperturbative RG equation.
+In any case, it is a remarkable fact that correct RG eigenvalue spectrum and critical
+exponents are obtained in the local potential approximation at FORMULA 
+from the Wegner–Houghton equation {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}}, as well as from similar RG
+equations {{cite:d647e49d-187d-446f-aad8-e25ae009d6da}},
+in agreement with the known exact and rigorous results for the spherical model.
+It shows that some solutions, being not exact, nevertheless can lead to exact critical exponents.
+From this point of view, it seems also possible that some kind of approximations,
+made in the derivation of an RG equation, are not harmful for the critical exponents.
+We propose a simple test of the Wegner–Houghton
+equation: to verify the expansion of the renormalized action FORMULA  of the FORMULA 
+model in powers of the coupling constant FORMULA  at FORMULA  in the high–temperature phase.
+Such a test is rigorous, in the sense that the natural domain of validity of the perturbation theory
+is considered.
+We think that it would be quite natural to start with such a relatively simple and straightforward
+test before passing to more complicated ones, considered in {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}}, {{cite:45b6ad30-e705-4d1b-b61e-52cc7a38d0af}}, {{cite:d647e49d-187d-446f-aad8-e25ae009d6da}}.
+We have made this simplest test in our paper and have found that the
+Wegner–Houghton equation fails to give all correct expansion coefficients.
+We have also proposed another derivation
+of the Wegner–Houghton equation (Secs. , ).
+It is helpful to clarify the origin of the mentioned inconsistency.
+It is also less obscure from the point of view that the
+used assumptions and approximations are clearly stated. As regards the derivation in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}},
+at least one essential step is obscure and apparently contains an implicit
+approximation which, in very essence, is analogous to that pointed out in our derivation.
+We will discuss this point in Sec. .
+
+An elementary step of renormalization
+To derive a nonperturbative RG equation for the FORMULA  model, we should start with
+some elementary steps, as explained in this section.
+Consider the action FORMULA  which depends on the configuration of the
+order parameter field FORMULA  depending on coordinate FORMULA .
+By definition, it is related to the Hamiltonian FORMULA  of the model via FORMULA ,
+where FORMULA  is the temperature measured in energy units. In general, FORMULA 
+is an FORMULA –component vector with components FORMULA  given in the Fourier
+representation as FORMULA ,
+where FORMULA  is the volume of the system, FORMULA  is the spatial dimensionality,
+and FORMULA  is the upper cutoff of the wave vectors. We consider the action of the
+Ginzburg–Landau form. For simplicity, we include only the FORMULA  and FORMULA 
+terms. The action of such FORMULA  model is given by
+FORMULA 
+where FORMULA  is some function of wave vector FORMULA , e. g.,
+FORMULA  like in theories of critical phenomena {{cite:5c9aaa2f-a68a-4cdd-b396-fab53664b9c6}}, {{cite:1d8e1984-bef7-475e-930f-354c53601a2f}}, {{cite:a1a2780e-1913-4445-add0-8a3ff5855347}}, {{cite:1e32ded5-327e-452f-b522-c061a3805adf}}.
+In the sums we set FORMULA  for FORMULA .
+The renormalization group (RG) transformation implies the integration over FORMULA 
+for some set of wave vectors with FORMULA , i. e.,
+the Kadanoff's transformation, followed by certain rescaling procedure {{cite:5c9aaa2f-a68a-4cdd-b396-fab53664b9c6}}.
+The action under the Kadanoff's transformation is changed from FORMULA  to
+FORMULA  according to the equation
+FORMULA 
+Alternatively, one often writes FORMULA  instead of
+FORMULA  to separate the constant
+part of the action FORMULA . This, however, is merely a redefinition of FORMULA , and for our
+purposes it is suitable to use (REF ).
+Note that FORMULA 
+is a complex number and FORMULA 
+holds (since FORMULA  is always real), so that the integration over
+FORMULA  means in fact the integration over real and imaginary parts of FORMULA 
+for each pair of conjugated wave vectors FORMULA  and FORMULA .
+The Kadanoff's transformation (REF ) can be split in a sequence of elementary steps
+FORMULA  of the repeated integration given by
+FORMULA 
+for each FORMULA  and FORMULA , where FORMULA  is the subset of independent wave vectors
+(FORMULA  represent one independent mode) within FORMULA .
+Thus, in the first elementary step of renormalization we have to insert the original
+action (REF ) into (REF ) and perform the integration for one
+chosen FORMULA  and FORMULA . In an exact treatment we must take into account
+that the action is already changed in the following elementary steps.
+For FORMULA ,
+we can use the following exact decomposition of (REF )
+FORMULA 
+where
+FORMULA 
+Here the sums are marked by a prime to indicate that terms containing FORMULA  are omitted.
+This is simply a splitting of (REF ) into parts with all possible powers of FORMULA .
+The condition FORMULA , as well as the existence of the upper
+cutoff for the wave vectors,
+ensures that terms of the third power are absent in (REF ).
+Besides, the derivation is performed formally considering all FORMULA 
+as independent variables.
+Taking into account (REF ), as well as the fact that FORMULA 
+and FORMULA  are complex numbers, the transformed action after the first elementary
+renormalization step reads
+FORMULA 
+Considering only the field configurations which are relevant in the thermodynamic limit FORMULA ,
+Eq. (REF ) can be simplified, omitting the terms with FORMULA  and FORMULA . Really, using the coordinate
+representation FORMULA , we can write
+FORMULA 
+The quantity FORMULA  is an average
+of FORMULA  over the volume with oscillating weight factor FORMULA .
+This quantity vanishes for relevant configurations in the thermodynamic limit: due to
+the oscillations, positive and negative contributions are similar in magnitude and cancel at FORMULA .
+Since FORMULA  is the Fourier transform of the two–point correlation
+function, it is bounded at FORMULA  and, hence, FORMULA  also is bounded for
+relevant configurations giving nonvanishing contribution to the statistical averages FORMULA 
+in the thermodynamic limit. Consequently, for these configurations, FORMULA  is a quantity of order FORMULA ,
+whereas FORMULA  and FORMULA  vanish at FORMULA . Note, however,
+that the term with FORMULA  in (REF )
+cannot be neglected unless FORMULA  is positive. One can judge that the latter condition is satisfied for
+the relevant field configurations due to existence of the thermodynamic limit for the RG flow.
+Omitting the terms with FORMULA  and FORMULA , the integrals in (REF ) can be easily calculated. It yields
+FORMULA 
+where FORMULA  is the original action, where only the FORMULA  modes of the FORMULA -th field component
+are omitted, whereas FORMULA  represents the elementary variation of
+the action given by
+FORMULA 
+According to the arguments provided above, this equation is exact for the relevant
+field configurations with FORMULA  in the thermodynamic limit.
+The contributions to (REF ) and () provided by modes with wave vectors FORMULA , obeying two
+relations FORMULA  and FORMULA ,
+are irrelevant in the thermodynamic limit at FORMULA .
+It can be verified by the method of analysis introduced in Sec. .
+Hence, Eq. (REF ) can be written as
+FORMULA 
+where
+FORMULA 
+and FORMULA  is a vanishingly small correction
+in the considered limit.
+Here the operators FORMULA  set to zero all FORMULA 
+within the shell FORMULA  (i. e., the derivatives are
+evaluated at zero FORMULA  for FORMULA  within the shell),
+and the upper border FORMULA  for sums implies that we set FORMULA 
+for FORMULA .
+The above replacements are meaningful, since they allow to obtain easily the
+Wegner–Houghton equation, as discussed in the following section.
+
+Superposition hypothesis and the  Wegner–Houghton equation
+Intuitively, it could seem very reasonable that the result of integration over Fourier modes
+within the shell FORMULA  at FORMULA  can be represented as a
+superposition of elementary contributions given by (REF ), neglecting the
+irrelevant corrections FORMULA .
+We will call this idea the superposition hypothesis.
+We remind, however, that strictly exact treatment requires a sequential integration
+of FORMULA  over a set of FORMULA .
+The renormalized action changes after each such integration, and these changes influence
+the following steps.
+A problem is to estimate the discrepancy between the results of two methods:
+(1) the exact integration and (2) the superposition approximation.
+Since it is necessary to perform infinitely many integration steps
+in the thermodynamic limit, the problem is nontrivial and the
+superposition hypothesis cannot be rigorously justified.
+Nevertheless, the summation of elementary contributions in accordance with the superposition
+hypothesis leads to the known Wegner–Houghton equation {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}. In this case the variation
+of the action due to the integration over shell reads
+FORMULA 
+It is exactly consistent with Eq. (2.13) in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}.
+The factor FORMULA  appears, since only half of the wave vectors represent independent modes.
+Here we have indicated that the quantities FORMULA  and FORMULA  depend on the current
+FORMULA  and FORMULA . They depend also on the considered field configuration
+FORMULA . If FORMULA  and FORMULA  are represented by the derivatives of FORMULA 
+(see (REF ) and ()), then the equation is written exactly as in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}.
+To avoid possible confusion, one has to make clear that the operators
+FORMULA  in (REF ) and () influence
+the result, as discussed further on. It means that the equation
+where these operators are simply omitted, referred
+in the review paper {{cite:476cc5aa-eb2c-4479-9335-0d6278f8d882}} as the Wegner–Houghton
+equation, is not really the Wegner–Houghton equation.
+The derivation in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}} is somewhat different. Instead of performing only one
+elementary step of integration first, the expansion of Hamiltonian in terms of all shell variables
+is made there. The basic method of {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}} is to show that, in the thermodynamic
+limit at FORMULA , the expansion consists of terms containing no more than
+two derivatives with respect to the field components. Moreover, it is assumed
+implicitly that only the diagonal terms
+with FORMULA  are important finally, when performing the
+summation over the wave vectors FORMULA . It leads to Eq. (2.12) in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}. The omitting
+of nondiagonal terms is equivalent to the superposition assumption we
+discussed already. Indeed, in this and only in this case the integration
+over the shell variables can be performed independently, as if the superposition
+principle were hold. Hence, essentially the same approximation is used in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}
+as in our derivation, although it is not stated explicitly.
+Our derivation refers to the FORMULA  model, whereas in the form with derivatives
+the equation may have a more general validity, as supposed in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}. Indeed, (REF )
+remains correct for a generalized model provided that higher than second order derivatives of FORMULA 
+vanish for relevant field configurations in the thermodynamic limit. It, in fact, has
+been assumed and shown in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}.
+Based on similar arguments we have used already, the latter assumption can be justified
+for certain class of models, for which the action is represented by a linear combination
+of FORMULA –kind terms with wave–vector dependent weights and vanishing sum of
+the wave vectors FORMULA  related to the FORMULA  factors.
+In this case we have
+FORMULA 
+for the relevant configurations at FORMULA  and FORMULA .
+The second term in (REF ) appears because the derivative FORMULA 
+contains relevant terms with FORMULA , which have to be removed.
+The influence of the operators FORMULA  is seen from (REF ) and (REF ).
+Here we do not include the second, i. e., the rescaling
+step of the RG transformation. It, however, can be easily calculated for any given action,
+as described, e. g., in {{cite:5c9aaa2f-a68a-4cdd-b396-fab53664b9c6}}. It is not relevant four our further considerations.
+
+The weak coupling limit
+Here we consider
+the weak coupling limit FORMULA  of the model with FORMULA  at
+a given positive FORMULA , i. e., in the high temperature phase.
+In this case FORMULA  can be expanded in powers
+of FORMULA . It is the natural domain of validity of the perturbation
+theory, and the expansion coefficients can be calculated exactly by the known
+methods applying the Feynman diagram technique and the
+Wick's theorem {{cite:5c9aaa2f-a68a-4cdd-b396-fab53664b9c6}}, {{cite:1d8e1984-bef7-475e-930f-354c53601a2f}}, {{cite:19726350-df35-43cd-bd67-5d8179f1450e}}.
+On the other hand, the expansion can be performed in (REF ).
+Our aim is to compare the results of both methods to check the correctness of (REF ),
+since the latter equation is based on assumptions.
+Let us denote by FORMULA  the variation of FORMULA  omitting
+the constant (independent of the field configuration) part. Then the expansion in powers of FORMULA  reads
+FORMULA 
+where the expansion coefficient at FORMULA  is split in three parts FORMULA ,
+FORMULA , and FORMULA  corresponding to the FORMULA ,
+FORMULA , and FORMULA  contributions, respectively.
+The contribution of order FORMULA  is related to the diagram 
+ , whereas the three second–order
+contributions — to the diagrams 
+ , 
+
+100(15,3)(25,11)(35,3)
+100(15,3)(25,-5)(35,3)
+ , and 
+ .
+The diagram technique represents the expansion of FORMULA  in terms
+of connected Feynman diagrams, where the coupled lines are associated with the
+Gaussian averages. In particular, the Fourier transformed two–point correlation function in
+the Gaussian approximation
+FORMULA 
+appears due to the integration over FORMULA  and FORMULA .
+It is represented as the coupling of lines, in such a way that each line related to the wave vector
+FORMULA  and vector–component FORMULA  is coupled with another line having the
+wave vector FORMULA  and the same component FORMULA . Thus, if we integrate
+over FORMULA  within FORMULA 
+in (REF ), then it corresponds to the coupling of lines in the same
+range of wave vectors in the diagram technique. According
+to the Wick's theorem, one has to sum over all possible couplings,
+which finally yields the summation (integration) over the wave vectors
+obeying the constraint FORMULA 
+for each of the coupled lines associated with the factors
+FORMULA . In the FORMULA –component case, it is suitable to represent the FORMULA  vertex
+as 
+ , where the same index FORMULA  is associated with two solid lines
+connected to one node. The above diagrams are given by the sum of all possible couplings of the
+vertices 
+ , yielding the corresponding topological pictures when the dashed lines
+shrink to points. In this case factor FORMULA  corresponds to each closed loop of solid lines,
+which comes from the summation over FORMULA . For a complete definition of the diagram technique,
+one has to mention that factors FORMULA  are related to the dashed lines,
+FORMULA  – to the coupled solid lines, and the
+fields FORMULA  – to the outer uncoupled solid lines. Besides, each diagram
+contains a combinatorial factor. For a diagram consisting of FORMULA  vertices
+
+ , it is the number of all possible couplings of (numbered) lines, divided by FORMULA .
+At FORMULA , the diagrammatic calculation for the FORMULA –component case yields
+FORMULA 
+where FORMULA , FORMULA  is the area of unit sphere in FORMULA  dimensions,
+FORMULA  is the value of FORMULA  at FORMULA ,
+whereas FORMULA  is a cutoff function which has the value
+1 within FORMULA  and zero otherwise. The quantity FORMULA  is given by
+FORMULA 
+Below we will give some details of calculation of (), which is the
+most important term in our further discussion.
+To obtain this result, we have dechipered the 
+
+100(15,3)(25,11)(35,3)
+100(15,3)(25,-5)(35,3)
+ diagram as
+a sum of three diagrams of different topologies made of vertices
+
+ , i. e., 
+ , 
+ , and 
+ ,
+providing the same topological picture 
+
+100(15,3)(25,11)(35,3)
+100(15,3)(25,-5)(35,3)
+ when shrinking the dashed lines
+to points. Recall that any loop made of solid lines of 
+ gives a factor FORMULA ,
+and one needs also to compute the combinatorial factors.
+For the above three diagrams, the resulting factors are FORMULA , 16, and
+16, which enter the prefactors of FORMULA  in ().
+To obtain the correct sign, we recall that the diagram expansion is for
+FORMULA . The other diagrams are calculated in a similar way.
+The expansion of (REF ) gives no contribution FORMULA ,
+and we have skipped it in the diagrammatic calculation as an irrelevant
+term, which vanishes faster than FORMULA  at FORMULA 
+in the thermodynamic limit FORMULA .
+The expansion of the logarithm term in (REF ) yields FORMULA 
+exactly consistent with (REF ). Similarly,
+FORMULA  is exactly consistent with ().
+One has to remark that two propogators are involved in (REF ) and, therefore,
+the volume of summation region with nonvanishing cut function FORMULA 
+shrinks as FORMULA  for a given nonzero wave vector FORMULA  at FORMULA .
+However, there is a contribution linear in FORMULA 
+for FORMULA . As a result, a contribution
+proportional to FORMULA  appears in ().
+Note that the contributions (REF ) and () come
+from diagrams with only one coupled line. The term () is related to the diagram
+with two coupled lines. The expansion of (REF )
+provides a different result for the corresponding part of FORMULA :
+FORMULA 
+Note that (REF ) comes from the FORMULA  term in (REF ),
+and the calculation is particularly simple
+in this case, since the related sum in () is independent of FORMULA .
+Eq. (REF ) is obtained if we set
+FORMULA 
+in () (in this case only the diagonal terms FORMULA  are
+relevant when summing up the contributions with
+FORMULA , as it can be shown by
+an analysis of relevant real–space configurations, since
+FORMULA  holds for FORMULA ).
+It means that a subset of terms is missing in (REF ), as compared to ().
+The following analysis will show that this discrepancy between () and (REF )
+is important.
+It is interesting to mention that (REF ) is obtained also by the diagrammatic perturbation
+method if we first integrate out only the mode with FORMULA  and then formally
+apply the superposition hypothesis, as in the derivation of the Wegner–Houghton equation.
+It shows that the discrepancy between (REF ) and () arises because in one
+case the superposition hypothesis is applied, whereas in the other
+case it is not used.
+The difference between () and (REF ) can be better seen in the coordinate
+representation. In this case () reads
+FORMULA 
+where
+FORMULA 
+is the Fourier transform of FORMULA , and FORMULA .
+In three dimensions we have
+FORMULA 
+for any given FORMULA  at FORMULA  and FORMULA , where FORMULA  is the linear system size.
+The continuum approximation (REF ), however, is not correct for FORMULA  and therefore,
+probably, should not be used for the evaluation of (REF ).
+The coordinate representation of (REF ) is
+FORMULA 
+Eq. (REF ) represents a relevant contribution at FORMULA ,
+as it is proportional to FORMULA . It is obviously not consistent with (REF ).
+In fact, the term (REF ) represents
+a mean-field interaction, which is proportional to FORMULA  and independent of the distance,
+whereas (REF ) corresponds to another non-local interaction given by FORMULA .
+Hence, the Wegner–Houghton equation (REF ) does not yield all correct expansion coefficients
+at FORMULA .
+
+Discussion
+The results of our test, stated at the end of Sec. ,
+reveal some inconsistency between the Wegner–Houghton equation
+and the diagrammatic perturbation theory in the high temperature phase at FORMULA .
+Since this is the natural domain of validity of the perturbation
+theory, there should be no doubts that it produces correct results here, which
+agree with (REF ).
+So, the results of our test point to some inconsistency between the
+Wegner–Houghton equation and (REF ), which
+causes a question in which sense the Wegner–Houghton equation is really exact.
+The same can be asked about the equations of Polchinski type, since these
+(as it is believed) are generalizations of the Wegner–Houghton equation to
+the case of smooth momentum cutoff.
+There is no contradiction with the tests of consistency made in {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}}, {{cite:45b6ad30-e705-4d1b-b61e-52cc7a38d0af}},
+since our test is independent and quite different.
+According to our derivation of the Wegner–Houghton equation and the related discussion,
+it turns out that the reason of the inconsistency, likely, is the superposition
+approximation (defined at the beginning of Sec. )
+used in our paper and analogous approximation implicitly used in {{cite:71a7a629-f1a4-450b-81cc-43d906f5a40e}}.
+Despite of this problem, the Wegner–Houghton equation is able to reproduce
+the exact RG eigenvalue spectrum and critical exponents of the spherical model
+at FORMULA  {{cite:7268d521-e561-4845-bf97-9cc6a8ed52df}}. This fact can be interpreted in such a way
+that the superposition approximation (or an analogous approximation) is valid
+to derive such nonperturbative RG equations, which can produce correct
+(exact) critical exponents in some limit cases, at least.
+From a general point of view, it concerns the fundamental question
+about the relation between the form of RG equation and the universal quantities.
+It has been verified in several known studies that the universal quantities are
+invariant with respect to some kind of variations in the RG equation, like
+changes in the shape of the momentum cutoff function. This property is known as
+the reparametrisation invariance {{cite:476cc5aa-eb2c-4479-9335-0d6278f8d882}}. Probably, the universal
+quantities are invariant also with respect to such a variation
+of the Wegner–Houghton equation, which makes it exactly consistent with (REF ).
+However, this is only a hypothesis.
+
+Conclusions
+
+The nonperturbative Wegner–Houghton RG equation has been rederived
+(Secs.  and ), discussing explicitly
+some assumptions which are used here. In particular, our derivation assumes the
+superposition of small contributions provided by elementary integration steps over
+the short–wave fluctuation modes. We consider it as an approximation.
+As discussed in Sec. , the original derivation by Wegner and Houghton
+includes essentially the same approximation, although not stated explicitly.
+
+According to our calculation in Sec. , the Wegner–Houghton
+equation is not completely consistent with the diagrammatic
+perturbation theory in the limit of small FORMULA  coupling constant FORMULA  in the
+high temperature phase.
+This fact, together with some other important results known from literature,
+is discussed in Sec. .
+Apart from critical remarks, a hypothesis has been proposed that
+the equations of Wegner–Houghton type, perhaps, can give exact
+universal quantities.
+

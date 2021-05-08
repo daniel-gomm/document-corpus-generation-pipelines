@@ -1,0 +1,282 @@
+
+Monte Carlo simulation of pressure-induced phase transitions in spin-crossover materials
+Yusuké Konishi
+Department of Physics, The University of Tokyo,
+Hongo 7-3-1, Bunkyo-ku, Tokyo 113-8656, Japan
+Hiroko Tokoro
+Department of Physics, The University of Tokyo,
+Hongo 7-3-1, Bunkyo-ku, Tokyo 113-8656, Japan
+JSPS, 5-3-1 Koji-machi, Chiyoda-ku, Tokyo 102-0083, Japan
+Masamichi Nishino
+Computational Materials Science Center, National Institute
+for Materials Science, Tsukuba 305-0047, Japan
+CREST, JST, 4-1-8 Honcho Kawaguchi, Saitama 332-0012, Japan
+Seiji Miyashita
+Department of Physics, The University of Tokyo,
+Hongo 7-3-1, Bunkyo-ku, Tokyo 113-8656, Japan
+CREST, JST, 4-1-8 Honcho Kawaguchi, Saitama 332-0012, Japan
+2020/09/07 15:50:08
+Pressure-induced phase transitions of spin-crossover materials were
+simulated by a Monte Carlo simulation in the constant pressure
+ensemble for the first time.
+Here, as the origin of the cooperative interaction, we adopt
+elastic interaction among the distortions of the lattice due to the
+difference of the molecular sizes in different spin states, i.e., the high
+spin (HS) state and the low spin (LS) state.
+We studied how the temperature dependence of the ordering process
+changes with the pressure, and we obtained a standard sequence of
+temperature dependences that has been found in changing other parameters
+such as strength of the ligand field
+(S. Miyashita et al., Prog. Theor. Phys. 114, 719 (2005)).
+Various effects of pressure on the spin-crossover ordering process are
+examined from a unified point of view.
+75.30.Wx, 74.62.Fj, 64.60.-i, 75.60.-d
+Several spin-crossover (SC) compounds have been extensively investigated
+{{cite:b5ba4df0-f04a-4766-a169-4b2cc36a9c10}}, {{cite:2ee253aa-d5b7-41c3-b7a0-f5711325c4db}}, {{cite:46304c10-574f-4ed6-9623-a0c00b4a149e}}, {{cite:145b8625-94ba-433d-8feb-2ff4695f9075}}, {{cite:6dcaf096-16a7-4542-a49c-e939c8dacdbb}}, {{cite:8456cb64-20f8-41ae-8efd-18bb5445ac54}}, {{cite:e4f47950-86bc-4b38-b56a-3db20d066e88}}, {{cite:b0ea9274-039b-48e0-9745-8f1ec76804b5}}, {{cite:80bada4f-af4e-43a4-95cf-99ddeee5f57e}}, {{cite:cb79531a-811c-4ad9-aad5-72624532ae2a}},
+and various theoretical analyses of the
+SC transitions have been reported {{cite:a8eee734-a2d3-4911-bbcd-0aef4bf4d9ae}}, {{cite:6b19a42c-a33f-4b1b-8aac-e7bd28d76bba}}, {{cite:fb76b350-8f63-4558-9cd6-596ff8753a2a}}, {{cite:f389a47b-6eac-402c-96b5-84d48ada9760}}, {{cite:f713a4e2-b5a7-4305-a82e-e21cb8329187}}, {{cite:dfe3eea1-edd0-4a66-84bd-079e42c569b5}}, {{cite:e3ff5b69-8a77-4d7c-a80f-cc82fb8aea64}}, {{cite:19350b28-6f2a-496a-9fce-1e0dce88358f}}, {{cite:e0cb2d18-651e-4f9e-b979-85b831449576}}, {{cite:929b4ef2-6200-459a-bc3d-87d560250f81}}.
+In the SC compounds, a metal ion can be in either a low-spin (LS) or
+high-spin (HS) state, depending on the strength of the ligand field.
+Control of the spin state of SC compounds has been realized by applying
+external stimuli such as temperature, light-irradiation {{cite:b5ba4df0-f04a-4766-a169-4b2cc36a9c10}}, {{cite:2ee253aa-d5b7-41c3-b7a0-f5711325c4db}}, {{cite:46304c10-574f-4ed6-9623-a0c00b4a149e}}, {{cite:145b8625-94ba-433d-8feb-2ff4695f9075}}, {{cite:b0ea9274-039b-48e0-9745-8f1ec76804b5}}, {{cite:80bada4f-af4e-43a4-95cf-99ddeee5f57e}}, {{cite:e4f47950-86bc-4b38-b56a-3db20d066e88}}, {{cite:6dcaf096-16a7-4542-a49c-e939c8dacdbb}}, {{cite:f389a47b-6eac-402c-96b5-84d48ada9760}}, {{cite:dfe3eea1-edd0-4a66-84bd-079e42c569b5}}, {{cite:8456cb64-20f8-41ae-8efd-18bb5445ac54}},
+magnetic field {{cite:7e9cf61c-034f-4fc6-8cf2-5881a9df094c}}, {{cite:b8e4ca0f-d1ae-4819-8907-216958ab958f}}, {{cite:064cbc0c-5b17-4278-afaf-36aa41a1bac4}}, {{cite:92c71928-5913-4aed-a073-645ea5979edd}}, and pressure {{cite:0cbd48db-5999-4692-a25d-7a713f3af8ac}}, {{cite:4dc7a0f7-e077-48d3-9aa4-71b6180a6b84}}, {{cite:4ba09df8-78af-4203-99ba-a8d26f6bd88b}}, {{cite:3294f60e-8a4f-4353-ba76-f06584e68367}}, {{cite:73156378-4a5e-44f5-b8b7-24df7cbcd724}}, {{cite:15842673-8659-49c5-9f3d-38394cdc888d}}.
+It has been pointed out that cooperative interactions play an important role
+for the SC transitions.
+With such interactions, various types of SC transition
+are realized, e.g., a smooth crossover or a discontinuous first-order phase
+transition.
+For modeling of the interaction mechanism,
+a model with an Ising-type short-range interaction, e.g.,
+the Wajnflasz-Pick (WP) model,
+has been proposed, and various aspects of cooperative behavior have been
+successfully explained {{cite:e3ff5b69-8a77-4d7c-a80f-cc82fb8aea64}}, {{cite:19350b28-6f2a-496a-9fce-1e0dce88358f}}, {{cite:f389a47b-6eac-402c-96b5-84d48ada9760}}, {{cite:a8eee734-a2d3-4911-bbcd-0aef4bf4d9ae}}.
+As the ligand field is changed, SC transitions show a sequence
+of temperature dependences of HS fraction FORMULA ;
+(I) a smooth transition, (II) hysteresis,
+(III) hysteresis with a low-temperature metastable HS phase, and (IV)
+a HS phase stable at all temperatures.
+We found that this sequence also appears with changing degeneracy
+or strength of the interaction {{cite:e3ff5b69-8a77-4d7c-a80f-cc82fb8aea64}}, {{cite:19350b28-6f2a-496a-9fce-1e0dce88358f}}.
+Thus we call this the generic sequence.
+However, the origin of the interaction was not clear.
+Recently, it has been pointed out that the elastic interaction between
+distortions of the lattice due to the molecular size difference between
+the HS and LS states can induce phase transitions of the spin state
+{{cite:e0cb2d18-651e-4f9e-b979-85b831449576}}.
+In order to study the elastic interaction, besides the spin state,
+the positions of the molecules must be treated as dynamical variables
+to be equilibrated.
+This degree of freedom causes a change of the system volume.
+Therefore, the pressure FORMULA  becomes an important parameter for
+describing the system.
+Thus, we are now at a stage where
+we can study the pressure effect by direct numerical study.
+In a previous study {{cite:e0cb2d18-651e-4f9e-b979-85b831449576}}, we demonstrated that the
+elastic interaction can cause a spin transition in a 2D system with
+an open boundary condition.
+In this study, we adopt a similar elastic model in 3D.
+Although intramolecular potentials were taken into account besides
+intermolecular potentials in Ref. {{cite:e0cb2d18-651e-4f9e-b979-85b831449576}}, in the present study we
+take into account two levels (LS and HS) with two different molecular
+sizes as the molecular state for simplicity.
+Here we adopt a method for the constant pressure ensemble in
+a periodic boundary condition.
+Moreover, we adopt a Monte Carlo (MC) method where we can easily control the
+degeneracy of the spin state.
+By this method, we succeeded for the first time in demonstrating
+pressure-induced phase transitions in a spin-crossover system.
+The pressure effect has been one of the most important
+characteristics observed in SC compounds, and various interesting properties
+have been observed, e.g., a
+shift of the transition temperature, increase or decrease of hysteresis,
+stabilization of the LS state for the whole temperature region,
+and so on {{cite:0cbd48db-5999-4692-a25d-7a713f3af8ac}}, {{cite:4dc7a0f7-e077-48d3-9aa4-71b6180a6b84}}, {{cite:4ba09df8-78af-4203-99ba-a8d26f6bd88b}}, {{cite:3294f60e-8a4f-4353-ba76-f06584e68367}}, {{cite:73156378-4a5e-44f5-b8b7-24df7cbcd724}}, {{cite:15842673-8659-49c5-9f3d-38394cdc888d}}.
+To understand the pressure effects, a theoretical analysis based on
+each experimental phenomenon and the comprehensive theory of the
+free energy of the mean-field model has been reported {{cite:6b19a42c-a33f-4b1b-8aac-e7bd28d76bba}}, {{cite:fb76b350-8f63-4558-9cd6-596ff8753a2a}}, {{cite:f713a4e2-b5a7-4305-a82e-e21cb8329187}}.
+In the present work, we study these effects by a direct numerical
+method, adopting a microscopic Hamiltonian and demonstrating
+the fundamental aspects in a unified
+microscopic picture.
+We performed MC simulation on the simple cubic lattice.
+In the spin-crossover materials, the molecule at a lattice point
+may be in the HS or LS state.
+We express the spin state at the FORMULA -th site by FORMULA ,
+which equals 0 for the LS state and 1 for the HS state.
+As important ingredients of the spin-crossover material,
+we set the energy difference of the state FORMULA ,
+and the degeneracies of the states: FORMULA  and
+FORMULA  for the HS and LS states, respectively.
+These properties are represented by the on-site Hamiltonian
+FORMULA 
+In order to introduce interaction between spins, an Ising-like interaction
+FORMULA  was adopted in the WP model.
+Instead, we have attributed the interaction to
+the elastic interaction between lattice distortions caused by the difference of
+the molecular size between the HS or LS states.
+Therefore, we introduce the elastic interaction between the molecules:
+FORMULA 
+where FORMULA  is the distance between the molecule on the
+FORMULA -th and FORMULA -th sites,
+and FORMULA  is the corresponding spring constant (Fig. REF ).
+FORMULA  expresses elastic interaction between
+nearest-neighbor pairs (FORMULA ).
+The interaction is a function of the molecular radius
+FORMULA  of the FORMULA -th site, where FORMULA 
+and FORMULA  are the molecular radius of HS and LS states, respectively.
+We set the ratio of the radii to be FORMULA .
+FORMULA 
+expresses elastic interaction
+for next-nearest neighbor pairs (FORMULA ).
+In this study, we set the ratio of the spring constants, FORMULA ,
+to be 10 {{cite:39e1deaa-12f3-47a1-b44a-87fa4a9eb6b7}}.
+FIGURE 
+For the simulation, we adopt the FORMULA -MC method
+{{cite:8107b200-29b8-47d4-91df-eade647c360b}} for the
+isothermal-isobaric ensemble with the number of molecules FORMULA , the pressure of
+the system FORMULA , and the temperature FORMULA .
+The thermodynamic potential for the isothermal-isobaric ensemble is the enthalpy,
+FORMULA 
+where FORMULA  is the energy given by Eq. (1) and FORMULA  is the volume of the system.
+The states of the system are specified by FORMULA  variables
+FORMULA .
+In the FORMULA -MC method, we have the following balance condition for
+the transition probabilities FORMULA :
+FORMULA 
+where
+FORMULA 
+The scheme of the simulation is as follows:
+(i) Choose a molecule randomly.
+(ii) Choose a candidate spin state FORMULA  or 1 by the probability
+FORMULA  or FORMULA ,
+respectively.
+(iii) Choose a candidate position of the molecule (FORMULA ).
+Here, we use the scaled coordination length FORMULA  (FORMULA ).
+We choose the candidate position as
+FORMULA 
+where FORMULA  and FORMULA  are random numbers between FORMULA  and 1,
+and FORMULA  0.005.
+(iv) Update the state by the Metropolis method.
+(v) Repeat the above update FORMULA  times
+(vi) Choose a candidate for a new size of the system with a random number  FORMULA
+FORMULA 
+(vii) Update the size FORMULA .
+Here, FORMULA  is taken equal to FORMULA .
+In this study, we performed 10000 MCSs for transient steps and 10000 MCSs
+to measure the physical quantities.
+The system size is FORMULA , which is enough to study
+thermal properties.
+FIGURE 
+FIGURE 
+First, we study how the types of temperature dependence
+of the HS fraction FORMULA  change with the spring constant FORMULA .
+In Fig. REF  we depict FORMULA  for various values of FORMULA 
+with FORMULA  and FORMULA  and 50.
+When FORMULA  is small, e.g., FORMULA , the transition is gradual and
+hysteresis is not observed.
+As FORMULA  becomes large, the transition becomes sharp.
+For FORMULA , hysteresis is observed between cooling and warming processes.
+Here, the transition temperature is 0.28 for the cooling process
+and 0.36 for the warming process. Snapshots of the spin configuration
+(a two-dimensional section of the lattice) are shown in Fig. REF .
+When FORMULA  becomes larger, i.e., FORMULA , the transition
+does not take place in the cooling process and the HS phase is maintained
+down to FORMULA .
+This observation indicates the existence of a HS metastable phase
+at low temperatures {{cite:e3ff5b69-8a77-4d7c-a80f-cc82fb8aea64}}, {{cite:19350b28-6f2a-496a-9fce-1e0dce88358f}}.
+In the warming process from FORMULA , the LS phase is transformed to the HS phase
+at FORMULA .
+We find that the change of FORMULA  causes a sequence of FORMULA 
+that agrees with the generic sequence proposed in our previous papers.
+Thus, we expect that there is a case where
+a low-temperature HS metastable phase and thermal hysteresis are observed,
+which was found characteristic of this type of ordering processes and
+also was experimentally confirmed {{cite:e3ff5b69-8a77-4d7c-a80f-cc82fb8aea64}}, {{cite:19350b28-6f2a-496a-9fce-1e0dce88358f}}, {{cite:a4855c3a-6d43-4568-95a0-fb0c64ba3c7d}}.
+In order to check the existence of the low-temperature HS metastable phase,
+we studied the warming-up process from HS from FORMULA 
+for the system with FORMULA .
+The temperature dependence is depicted in Fig. REF , where
+the HS metastable phase exists and relaxes to the LS phase at FORMULA .
+The LS phase changes to the HS phase at FORMULA  as we saw in Fig. REF .
+Therefore, we find that the HS metastable phase and hysteresis are
+both observed.
+Now, we confirm that the present model realizes the generic sequence of
+FORMULA  of the SC transitions.
+FIGURE 
+Next, we study the pressure effect on the SC transitions.
+We study how FORMULA  for FORMULA  changes
+when the pressure increases.
+In Fig. REF ,
+we depict FORMULA  during the warming process from the HS state.
+In the case of low pressure, FORMULA , the transition is not observed,
+as shown in Fig. REF .
+When the pressure becomes FORMULA , the initial HS state
+relaxes to the LS phase at FORMULA ,
+which indicates a low-temperature metastable HS state.
+Then, we find hysteresis with a jump at FORMULA  in the cooling process
+and at FORMULA  in the warming process.
+For FORMULA , the initial HS state immediately relaxes to the LS phase,
+which indicates no low-temperature metastable HS state.
+Here, the hysteresis disappears and FORMULA  is shifted to
+the high-temperature side.
+When the pressure increases further high, FORMULA ,
+the transition becomes gradual, and
+FORMULA  is shifted to the high-temperature side.
+We define FORMULA  at which FORMULA .
+In the hysteresis region we define it as FORMULA  in the
+warming process is equal the FORMULA  in the cooling process.
+The pressure dependence of FORMULA 
+is depicted in the inset of Fig. REF , which
+indicates that FORMULA  increases linearly with the pressure.
+FIGURE 
+We also study the pressure dependences of FORMULA 
+at various temperatures.
+In Fig. REF , FORMULA  at FORMULA , and 0.7
+for FORMULA 
+are depicted as functions of the pressure.
+Here, the HS phase is set as the initial phase.
+At FORMULA , a small pressure FORMULA  induces the transition
+from the HS to the LS phases (red (i) arrow).
+The pressure-induced LS phase does not return to the HS phase in the process of
+reducing pressure (red (ii) arrow).
+This irreversible pressure effect indicates that the pressure stabilizes
+the LS phase and destabilizes the HS phase.
+At FORMULA , the transition from the HS to the LS phase is observed at
+FORMULA  during the pressure-increasing process (green (i) arrow).
+During the pressure-reducing process, the transition from the LS to the
+HS phases is observed at FORMULA  (green (ii) arrow).
+That is, in this case
+we observe pressure-induced hysteresis.
+At FORMULA , the transition between the HS and LS phases is smooth, and
+the hysteresis disappears.
+The present observations indicate that the pressure plays a similar role to
+that of the temperature for the SC transition.
+FIGURE 
+The FORMULA -MC method for a three-dimensional system was
+established, and the effect of the pressure on the SC transition was studied.
+To our knowledge, this is the first attempt to study the pressure effect
+by direct numerical simulation,
+considering the local lattice distortions cased by the molecular
+size difference between HS and LS states in SC complex.
+In particular,
+we succeeded in observing a sequence of FORMULA  as a function of the
+pressure which agrees with that proposed as a general sequence the SC transitions.
+In the present study, we kept the parameters FORMULA  and FORMULA  constant.
+If we take into account this pressure dependence,
+we can have a great variety of pressure dependences, which correspond to
+complicated dependences observed in experiments.
+For the next stage, we will study various pressure
+effects from the viewpoint of the present model and
+attempt to obtain a systematic understanding of the variety of
+pressure effects on the SC transitions.
+The authors thank Professors Kamel Boukheddaden and
+Per Arne Rikvold for their valuable discussions.
+This work was partially supported by Grant-in-Aid for Scientific
+Research on Priority Areas
+"Physics of new quantum phases in superclean materials" (Grant No.
+17071011) from MEXT,
+and also by the Next Generation Super Computer Project, Nanoscience
+Program from MEXT.
+This work was also partially supported by the MST Foundation.
+The authors thank the Supercomputer Center, Institute for Solid State
+Physics, University of Tokyo for the use of the facilities.

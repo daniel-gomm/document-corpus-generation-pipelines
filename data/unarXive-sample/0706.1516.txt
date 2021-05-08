@@ -1,0 +1,281 @@
+
+APS/123-QED
+Creating pseudo Kondo-resonances by field-induced diffusion of atomic
+hydrogen
+Werner A. Hofer
+Surface Science Research Centre, the University of
+Liverpool, Liverpoool L69 3BX, UK
+Gilberto Teobaldi
+Surface Science Research
+Centre, the University of Liverpool, Liverpoool L69 3BX, UK
+Nicolas Lorente
+Institut de Ciencia de Materials Barcelona, ICMAB-CSIC,
+Campus UAB, Bellaterra, Barcelona 08913, Spain
+2020/09/07 10:23:09
+
+In low temperature scanning tunneling microscopy (STM) experiments a
+cerium adatom on Ag(100) possesses two discrete states with
+significantly different apparent heights. These atomic switches also
+exhibit a Kondo-like feature in spectroscopy experiments. By
+extensive theoretical simulations we find that this behavior is due
+to diffusion of hydrogen from the surface onto the Ce adatom in
+the presence of the STM tip field. The cerium adatom possesses vibrational
+modes of very low energy (3–4meV) and very high efficiency (FORMULA 
+20%), which are due to the large changes of Ce-states in the
+presence of hydrogen. The atomic vibrations lead to a Kondo-like
+feature at very low bias voltages. We predict that the same
+low-frequency/high-efficiency modes can also be observed at
+lanthanum adatoms.
+68.37.Ef, 73.20.Mf, 73.22.-f Scanning tunneling microscopy and spectroscopy (STM/STS) are at
+present the main tools to analyse the behavior of single atoms and
+molecules at conducting surfaces. Experiments at very low
+temperatures - typically around 4–5K - have contributed
+considerably to our understanding of single atom contacts
+{{cite:e6c64d32-7b93-4119-aa31-2a499af1dadc}}, Kondo-resonances and their signature in the
+near-contact regime {{cite:e51e1b4e-9a42-4dd9-9b08-a289372090d1}}, spin-flip excitations of single
+atoms and atomic chains {{cite:33df49f4-7485-4fde-b6eb-c8cff9f45981}}, {{cite:a923b9ab-a91e-4f80-b52a-e72c81e4d4ae}}, and
+vibrational excitations of single molecules {{cite:17fe99b5-46ff-4acc-ba46-135fda29299d}}.
+Recently, the changes of electronic properties or atomic
+configurations due to field excitations were thoroughly investigated
+in STM experiments {{cite:a7de2a4f-dc95-483b-a2dd-66ef4ce38111}}, {{cite:014b345a-62c3-4000-b9dd-f42622d67d58}}, {{cite:c8bd02e9-3d2a-41b3-88c6-0999c7c27b88}}. The
+salient feature in these experiments is the ability to modify the
+systems by varying the position and the field-intensity of the STM
+tip. However, the electronic properties of atoms can also be
+modified by the presence of hydrogen, as e.g. the
+measurements of Gupta et al. showed for nominally clean
+Cu(111) surfaces {{cite:255818f0-ac82-4bb6-a4d2-460fbbf47664}}. They obtained spectroscopic data
+with negative differential resistance, characteristic of vibrational
+excitations of a molecule {{cite:074ba1b2-c2ae-4979-aa10-fd2d1a272a65}}. Hydrogen itself, which
+is quite ubiquitous in a low-temperature ultra-high vacuum (UHV)
+environment, can only rarely be resolved in STM experiments
+{{cite:d20f0b02-38c6-4bc2-8110-77d8c7cc4c6a}}. Its effect on experimental scans has so far not been
+studied in great detail.
+The aim of this Report is to demonstrate the ability of manipulating
+the position of atomic hydrogen at the nanometer scale by the field
+of an STM tip and to determine its effect in spectroscopy
+experiments at very low bias voltages. In this range, one typically
+detects a Kondo resonance for magnetic adatoms
+{{cite:a4dbf0b0-3546-470e-8ba1-831342c15ede}}, {{cite:e51e1b4e-9a42-4dd9-9b08-a289372090d1}}, which is due to the interaction of a
+spin-state at a magnetic impurity with the conducting electrons of
+the underlying metal. Kondo resonances have a very characteristic
+signature, described by a Fano function
+{{cite:75181ff9-9b14-42cd-b2e2-7d535b306fba}}, {{cite:29b94e12-4171-403e-9ebc-ec7f9b72e978}}, {{cite:e487c183-2725-4df4-a9c3-f97749ddc95c}}:
+FORMULA 
+with FORMULA . In this equation, FORMULA  is
+the amplitude coefficient, FORMULA  is the background FORMULA  signal, FORMULA 
+is the Fano line shape parameter, FORMULA  is the energy shift
+of the resonance from the Fermi level due to level repulsion between
+the FORMULA -level and the Kondo resonance, and FORMULA  is the half
+width of the resonance.
+FIGURE 
+In recent low-temperature experiments M. Ternes {{cite:985ede9e-96df-4360-9915-7f9557901af5}}
+found that adsorption of cerium atoms at Ag(100) surfaces leads to
+two different atomic species at the silver surface in
+low-temperature (4K) experiments. While most of the Ce adatoms
+remained stable and showed an apparent height of about 200pm in all
+STM scans, 5–50% of the adatoms were highly unstable depending on
+the applied bias voltage. For these objects it was found that a bias
+of FORMULA 90mV changes the apparent height from about 200pm to 100pm
+(see Fig REF (a) and (b)). In this case the
+structure remained stable as long as the STM tip remained at this
+location, even if the bias voltage was subsequently reduced to zero
+bias. The cause of this behavior could not be determined. In
+addition, STS experiments at very low bias at the bistable objects
+in its low-apparent-height state yielded a Fano function, which is
+characteristic for Kondo resonances of magnetic impurities. The
+FORMULA -value in the Fano fits was typically very low and in some cases
+even negative (see Fig. REF (c)). However, the
+change of conductance occurs at very low bias voltages, it is
+therefore well below the range where inelastic effects due to atomic
+vibrations are commonly observed.
+To determine the cause of both effects, the change of apparent
+height of the Ce adatom under certain tunneling conditions, and the
+Fano-like behavior of the tunneling conductance at very low bias
+voltages, we performed extensive electronic structure simulations
+using density functional theory (DFT) and transport simulations for
+elastic and inelastic tunneling processes. It will be seen that both
+features have one common origin: the diffusion of hydrogen to the
+and coadsorption at the
+Ce adatom and the change of electronic properties as well as
+vibrational efficiencies due to the coadsorption. Finally, we tested
+the model for La adatoms, where a Kondo resonance is
+certainly impossible. In this case we predict a similar behavior as
+for Ce adatoms; a prediction which can be tested experimentally.
+FIGURE 
+In Figure REF  (a) - (e) we show the groundstate
+configurations of the calculated systems {{cite:338d540d-1a38-40e9-b3a0-6fe940f84d91}}. All single
+adatoms adsorb at the fourfold hollow site. Coadsorbed hydrogen at
+Ce and La is close to a bridge position of the silver surface. The
+adsorption energy of hydrogen at Ag(100) is -2.84 eV (Configuration
+(b)), coadsorbed at Ce it is smaller and only -2.43 eV
+(Configuration (c)). From these results it can be concluded that the
+groundstate of the system is given by Ce and H, adsorbed at fourfold
+hollow sites. This result seems surprising at first view, because Ce
+is routinely used in ultrahigh-vacuum chambers to remove hydrogen.
+One would thus expect that the coadsorption of Ce and H should be
+more favorable. To clarify this important point we also simulated
+HFORMULA , CeH, and CeHFORMULA  in a vacuum, using the B3LYP functional.
+Here, we obtained a binding energy of -4.10 eV for HFORMULA , in good
+agreement with experiments (-4.51 eV{{cite:62eaafc7-46d2-4e50-b13a-6618fce4d5bc}}), of -1.68 eV
+for CeH, and of -3.50 eV for CeHFORMULA . For CeH, the corresponding
+value with standard functionals is -1.65 eV. From the difference in
+the binding energies of CeH and H/CeAg(100) it is clear that a
+significant proportion of the adsorption energy of coadsorbed
+hydrogen is due to bonding to the Ag(100) surface and not to Ce.
+This analysis leads to the unambiguous conclusion that coadsorbed
+hydrogen at Ce/Ag(100) is not the groundstate of the system by
+0.41 eV. Calculating the total energy of H and CeAg(100) for
+hydrogen at an adjacent bridge site we find an energy barrier of
++0.29 eV. The relative energies for hydrogen diffusion from its
+groundstate at the Ag(100) surface to Ce/Ag(100) are shown in Fig.
+REF (k). Given the position of coadsorbed hydrogen and the
+symmetry of the Ag(100) surface it is clear that four equivalent
+pathways exist for the diffusion of hydrogen from its groundstate
+position at the Ag(100) surface to Ce. However, it is not yet clear,
+under which conditions hydrogen will coadsorb at Ce at all. There
+have been a number of experiments, where diffusion of atomic
+hydrogen due to the field of the STM tip has been
+observed{{cite:0556c460-1be5-4d73-bed9-6bc264c8e109}}, {{cite:d20f0b02-38c6-4bc2-8110-77d8c7cc4c6a}}. A straightforward calculation of
+total energies under an applied dipole field could in principle
+elucidate the change of adsorption energy due to an applied bias.
+However, in case of CeH/Ag(100) DFT simulations did not arrive at a
+converged solution, presumably due to the large size and complexity
+of the system. To understand the effect of an external field on
+CeH/Ag(100) we simulated the charge transfer by substracting the
+charge density of the system components from the charge density of
+the coupled system. We find that CeH leads to the occurrence of a
+dipole moment in vertical direction since charge is removed from the
+Ag(100) surface and accumulated at the position of CeH (Fig.
+REF (f) and (g), the value of the contour is +0.001e/ÅFORMULA ,
+and -0.006e/ÅFORMULA , respectively). The change of total energy due
+to a tip field FORMULA  is given by {{cite:614f6f9a-7d34-44cb-9984-ba49d1f1242a}}:
+FORMULA 
+Here, FORMULA  is the residual dipole moment of CeH, FORMULA  is
+a constant, and FORMULA  is the electric susceptibility. Due to the
+much higher number of valence electrons in Ce it can be expected
+that FORMULA  is much larger for CeH/Ag(100) than for H/Ag(100).
+From the charge difference contours we may conclude that the total
+charge accumulated in the surface dipole is less than 0.05
+electrons; the residual dipole, and consequently the asymmetric
+changes of total energy with an applied tip field will be rather
+small. The dominating term in the energy change should thus be due
+to induced dipoles (the second term in Eq. REF ), which is
+symmetric with the applied field intensity. In this case we expect
+that a certain threshold intensity in both polarizations will lower
+the total energy of CeH/Ag(100) enough, so that it becomes more
+favorable than the groundstate Ce+H/Ag(100). In this case hydrogen
+will diffuse across the surface and coadsorb on Ce. Given that the
+field for an atomically sharp tip is confined to a radius of less
+than 1nm {{cite:21c4f5d0-de32-47ac-8112-5843d35bafea}}, diffusion will occur only in the
+immediate vicinty of the STM tip and thus the position of the Ce
+adatom. We may thus conclude that the higher susceptibility of Ce
+compared to H leads to diffusion of hydrogen along the Ag(100)
+surface. However, once CeH is formed, the diffusion barrier of
+0.29eV will retain H at Ce, even if the bias voltage is decreased.
+This conclusion is also in line with experimental data. From the
+diffusion barrier of 0.29eV we may finally conclude, that a voltage
+pulse of 0.3V should be sufficient for H to overcome the barrier and
+diffuse along the surface. Given the high mobility of H even at low
+temperature, we can thus predict that the observed object will
+change again at higher positive bias voltages.
+FIGURE 
+To determine the changes of the contours upon coadsorption of
+hydrogen we performed STM simulations as described in the methods
+section. The adatom appears as a bright protrusion with an apparent
+height of about 2.5Å(Fig. REF (b)), and a diameter of
+about 7Å, in accordance with experimental images of the (i) large
+stable, and (ii) large unstable atom. Subsequently, we simulated
+coadsorbed hydrogen at the Ce adatom and determined the ensuing
+constant density contours. Using the contour value for the bare
+adatoms, we find that the density contours on top of Ce are now
+1.2Å  closer to the surface, in line with experimental findings
+(Fig. REF (c) and (d)){{cite:985ede9e-96df-4360-9915-7f9557901af5}}. The reason for the
+lower contour is the decrease of density at the position of the Ce
+adatom, as can be seen in the charge difference contours of CeH in
+Fig. REF (h) and (i). From the simulations we may thus
+conclude that the switching behavior of Ce adatoms is due to
+reversible diffusion and coadsorption of hydrogen. We also simulated
+the shift of a contour maximum, which should in principle be
+detectable in STM scans, from an isolated Ce adatom to a system
+where H is adsorbed at a neighboring hollow site (Fig.
+REF (d)). Here, we find that the contour is displaced by
+about 1Å. Given the symmetry of the system, we expect four
+equivalent shifts to occur in the experiments.
+FIGURE 
+An analysis of the FORMULA -states of Ce reveals that due to
+their position at the Fermi level the Kondo temperature should be
+well below the temperature in the experiments
+(4K){{cite:e51e1b4e-9a42-4dd9-9b08-a289372090d1}}: Kondo-resonances in this system are therefore not measurable.
+This initial finding suggested to search for
+a different origin. The only potential origin in this case are atomic vibrations.
+In order to model low-energy vibrational excitations, we solved the
+dynamical matrix for ionic motion of the Ce adatom, the hydrogen
+adatom, and the silver surface layer keeping the other ionic
+positions fixed. We find low-energy vibrational modes between 3–4 meV
+for both systems, Ce/Ag(100) and CeH/Ag(100). The reason for the
+very low excitation energy is the very high mass of cerium. The
+coupling to a vibrational mode of molecules depends on a
+superposition of elastic and inelastic contributions to the
+tunneling current, which yield a reduction and an increase in
+current, respectively {{cite:9bb59d22-7193-472a-9165-ea2d4d97cd56}}, {{cite:0994fa1e-3cde-40f2-b172-3fe08d6d97c1}}. The total efficiency of
+a vibrational mode thus depends significantly on the superposition
+of these two contributions {{cite:3ea37df9-bdd2-40cd-9b57-922c887e01a0}}. Due to this effect, the
+total efficiencies for the Ce/Ag(100) system in the low energy range
+are close to zero for all calculated vibrational modes. However,
+this changes drastically for systems with coadsorbed hydrogen. In
+Fig. REF  (a-b) we show the total efficiencies of two
+low-energy vibrational modes as a function of position for
+CeH/Ag(100). At the position of the Ce atom the efficiency in this
+case is higher than 20% (Fig. REF  (b)), or even 40%
+(Fig. REF  (a)). Given that the efficiency determined from
+constant density contours is generally overestimated by a factor of
+about two, the results for vibrational efficiencies under the
+condition of hydrogen coadsorption agree very well with the
+experiments (about 20% in {{cite:985ede9e-96df-4360-9915-7f9557901af5}}). At T=0 K the signature
+of a vibration in the FORMULA  spectrum is a step in the conductance
+at 3–4 mV in both polarizations; due to thermal broadening it will
+be measured as an asymmetric feature: onset from 0 mV, reaching
+its maximum of 20% increase at 6–8 mV,
+and nearly flat with a gradual decrease above 8 mV {{cite:255818f0-ac82-4bb6-a4d2-460fbbf47664}}
+(see Fig. REF (c)); a signature which is very
+similar to a Kondo-resonance (dip at the Fermi level). The
+coadsorption of hydrogen on La/Ag(100) leads to a vibrational
+efficiency in the same range of 20–30% at 3.5 meV
+(Fig. REF  (c)). Pending the verification by STM experiments,
+we may conclude on the basis of simulations that
+(i) the Kondo-like resonance is actually due to inelastic
+excitations, and (ii) that these excitations will also be observed
+for other adatoms in the presence of coadsorbed hydrogen. While for
+bare Ce, the elastic components are nearly equal or even larger than
+the inelastic ones, the coadsorption of hydrogen leads to a decrease
+of the elastic efficiency, and, consequently to an increase of the
+overall efficiency. An analysis of the high-efficiency phonon mode
+at 3.7 meV reveals that it is due to a constrained vibration of
+cerium. The mode is shown in Fig. REF  (d), the inelastic
+and elastic efficiencies in Fig. REF  (e), and (f),
+respectively. In the higher energy range above 5meV we found several
+vibrational modes, both for Ce/Ag(100) and CeH/Ag(100). However, the
+amplitude of the coupling for vibrational excitations is inversely
+proportional to the excitation energy {{cite:a01a17a1-45cc-4ef4-81ec-31d46b4ebefc}}. While a low
+frequency excitation with an efficiency of about 20% can therefore
+easily be detected at 3–4 meV, the ensuing increase in the FORMULA 
+spectrum will be less than 10% for 8 meV, and below 5% for 16 meV,
+which corresponds roughly to the detection limit in the experiments.
+Considering, in addition, that the superposition of elastic and
+inelastic contributions in most cases makes these vibrations
+invisible by scanning tunneling spectroscopy, it is reasonable to
+assume that the higher energy modes will not leave a measurable
+signature in the experimental scans.
+To summarize, we found that dynamic processes of hydrogen adsorption
+and diffusion, manipulated by the field of the STM tip, play a
+pivotal role in low temperature experiments. These processes lead to
+a bistable switching behavior of single adatoms. Here, vibrational
+modes of unusually low energies and unusually high efficiencies
+have the same appearance as a typical Kondo-resonance. What seems
+most interesting in this study is the possibility of engineering
+subtle physical properties reversibly at the single-atom level
+by field-induced diffusion processes.
+Acknowledgements: Helpful discussions with Wolf-Dieter
+Schneider (EPFL Lausanne) and Markus Ternes (IBM Almaden) are
+gratefully acknowledged. WAH is supported by the Royal Society, GT
+is funded by EPSRC grant EP/C541898/1.

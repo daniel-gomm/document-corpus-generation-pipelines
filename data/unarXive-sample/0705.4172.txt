@@ -1,0 +1,1274 @@
+
+Spectral Evolution of Scorpius X-1
+A. D' Aí et al.
+Broad-band Spectral Evolution of Scorpius X-1 along its Color-Color Diagram
+A. D'Aí1, P. FORMULA ycki2,
+T. Di Salvo1,R. Iaria1,
+G. Lavagetto1, N.R. Robba1
+1Dipartimento di Scienze Fisiche ed Astronomiche,
+Universitá di Palermo, Archirafi 36, 90123 Palermo, Italy; email: dai@fisica.unipa.it
+2Nicolaus Copernicus Astronomical Center, Bartycka 18, 00-716 Warsaw, Poland
+We analyze a large collection of RXTE archive data from April 1997
+to August 2003 of the bright X-ray source Scorpius X-1 in order to
+study the broadband spectral evolution of the source for different
+values of the inferred mass accretion rate by studying energy
+spectra from selected regions in the Z-track of its Color-Color
+Diagram. A two-component model, consisting of a soft thermal
+component interpreted as thermal emission from an accretion disk and
+a thermal Comptonization component, is unable to fit the whole
+3–200 keV energy spectrum at low accretion rates. Strong residuals
+in the highest energy band of the spectrum require the addition of a
+third component that can be fitted with a power-law component, that
+could represent a second thermal Comptonization from a much hotter
+plasma, or a hybrid thermal/non-thermal Comptonization, where the
+electrons in the Comptonizing cloud have a Maxwellian distribution
+of velocities with a power-law hard tail. The presence of this hard
+emission in Scorpius X-1  has been previously reported, however, without a
+clear relation with the accretion rate. We show, for the first
+time, that there exists a common trend in the spectral evolution of
+the source, where the spectral parameters change in correlation with
+the position of the source in the CD. In particular, using a hybrid
+thermal/non-thermal Comptonization model (EQPAIR code), we show that
+the power supplied to the non-thermal distribution can be as high as
+half of the total hard power injected in heating the electron
+distribution. We also found that a small sample of spectra, when
+the source resides at the top of the FB can also show intense hard
+X-ray emission. We discuss the physical implications derived from
+the results of our analysis, with a particular emphasis on the
+hardest part of the X-ray emission and its possible origins.
+
+accretion discs – stars: individual: Scorpius X-1 — stars: neutron
+stars — X-ray: stars — X-ray: general — X-ray: binaries
+Introduction
+Scorpius X-1
+Scorpius X-1  is the brightest persistent X-ray source in the sky and the
+first identified X-ray extra-solar source {{cite:f2965588-aa82-4d94-85f0-2cbaa434ad74}}. The
+X-ray source is an old, low magnetized neutron star (NS), accreting
+matter transferred through Roche-lobe overflow from a low-mass
+companion {{cite:8b492531-d6a5-4c77-bb45-c19331e43f8e}}. Scorpius X-1  is a prototype of the class of the
+Low-Mass X-ray Binaries (LMXBs), and assuming a distance of FORMULA  kpc {{cite:25201e27-564e-4856-be1d-6f4fc31fd975}}, the source emits close to the theoretical
+Eddington limit for a 1.4 FORMULA   NS (FORMULA 
+erg sFORMULA ).
+Based on the timing behavior of LMXBs in correlation with the position
+of a given source in the X-ray color-color diagram (CD),
+{{cite:afb58ebe-bb08-4624-b378-62f87fba2d1f}} grouped these sources into two categories: the Z
+sources and the Atoll sources. The former are brighter, radiating
+close to FORMULA , the latter are less bright, emitting at 0.01–0.1
+FORMULA . Z sources exhibit the classical three-shaped branches
+describing a Z pattern in the CD: the Horizontal Branch (HB) at the
+top of the Z track, followed by the Normal Branch (NB) and the Flaring
+Branch (FB) at the bottom of the pattern. There are strong
+indications {{cite:86fc6971-2133-46a5-8e69-ff526712413e}} suggesting that what drives the
+changing in the spectral and temporal properties of LMXBs is the
+instantaneous accretion rate (FORMULA ), which, for Z sources, is
+believed to increase monotonically from the HB to the FB. Similarly,
+Atoll sources, display two different spectral/timing states: the soft
+and luminous banana state, associated to higher accretion rates, and
+the hard and less luminous island state, associated to lower FORMULA .
+This early and straightforward classification has now moved to a more
+complex picture, as the patterns that Atoll and Z sources describe in
+their CDs, when displayed on long timescales, appear to be more and
+more similar to each other {{cite:2c541bfb-6f9f-4e4b-b155-4c0da55291d3}}, {{cite:e710c658-82a4-4562-a7af-f4f173141d63}}, although some
+observational facts still hold: Z sources move on the CDs on
+shorter timescales, have higher luminosities and present a timing
+phenomenology different from that of the Atoll sources.
+Scorpius X-1, as all the sources of its class, shows several quasi-periodic
+oscillations (QPOs) along all the branches of its CD: the horizontal
+branch oscillations (HBOs), the normal branch oscillations (NBOs) and
+the flaring branch oscillations (FBOs). In Scorpius X-1  NBOs, with peak
+frequencies in the range 4.5–7 Hz, and FBOs, in the frequency range
+6–25 Hz, seem to be physically related to each other since the NBO
+peak frequency smoothly joins the FBO peak frequency as the source
+moves from the NB to the FB {{cite:55aebf73-d395-4240-bcc3-4d0c0965812c}}. Van der Klis et al.
+(1996) reported the first observation of HBOs in Scorpius X-1  at 45 Hz, with
+an inferred harmonic near 90 Hz; the power spectrum can also show a
+pair of QPOs, whose frequencies are in the range 800-1100 Hz, denoted
+kHzQPOs, that shift simultaneously in frequency, with an almost
+constant or weakly frequency-dependent peak separation {{cite:dbef3660-9081-49ca-b2a5-6cc635332582}}. The physical interpretation of these timing
+features is not unique and the related scientific debate is still open
+{{cite:51c6c9c7-35d5-4a13-8a56-459f0af81295}}.
+Spectral studies of Scorpius X-1  have been so far not so extensive and
+detailed as timing studies. This is in part due to the strong
+brightness of the source that actually prevents its observation with
+the most sophisticated and high-resolution X-ray satellites like
+BeppoSAX and ASCA in the recent past and Chandra and XMM-Newton at
+present. Three articles have investigated so far the broad-band
+spectral behavior of the source, using data from the Rossi X-ray
+Timing Explorer (RXTE). {{cite:7980ccd6-bc8b-46c8-ab18-b53f48ce1e4c}} used data from both the
+Proportional Counter Array (PCA) and the High Energy X-ray Timing
+Experiment (HEXTE), showing that the spectrum, in the energy range
+2.5–50 keV, can be fitted by a simple two-component model, a
+black-body soft component and a cutoff power-law, plus a broad
+Gaussian line, and interpreted these results in the framework of the
+so called Birmingham model {{cite:a5685936-976a-498c-8ae1-d5ea4ca386b3}}. In this interpretation
+the spectral emission consists of black-body emission from the NS plus
+Comptonized emission from an extended accretion disk corona.
+{{cite:c4cf7501-f37d-4f4d-bd10-3ca3e8c8ceee}} used only PCA data (in the 2.5–18.2 keV range),
+adopting a model consisting of a black body emission plus a bulk
+motion Comptonization component and a reflection component in the form
+of a broad Gaussian line. {{cite:2cca9d85-750b-4b61-af7d-49480e30b800}} studied HEXTE data above
+20 keV, in order to test the presence of high energy X-ray emission in
+the spectra of the source. Data were fitted, using a bremsstrahlung
+component, to mimic the effects of the thermal component, and a
+power-law component, whenever the statistics and clear residuals in
+the fit required it. In this way no apparent correlation was found
+between the presence of the hard tail and position of the source in
+the CD, contrarily to what had been reported for other Z sources.
+More recently, {{cite:2abb1588-548d-47f4-b2b1-4eb52dc279b9}}, using INTEGRAL data in the 20–200
+keV energy band, detected a hard X-ray tail, with photon index values
+between 2 and 3.4, whose intensity decreased as the source moved
+towards higher accretion rates. Data did not show evidence of a
+high-energy cutoff up to FORMULA  200 keV, suggesting a non-thermal
+origin for the hard tail.
+Scorpius X-1  is also an interesting source of radio emission.
+{{cite:85dab153-2047-49b4-930a-c62dec1e3b34}}, through an extensive VLBA monitoring campaign,
+have shown that the radio emission is composed of a point-like radio
+core emission at the position of the X-ray source and of two opposite
+radio lobes, moving through the ISM with relativistic speeds FORMULA , and with an angle of 46FORMULA 6FORMULA  with
+respect to our line of sight. It is also evident a connection between
+the phenomenon of radio flare at the core of the source and the
+following flaring of the lobes, so that it is argued that the energy
+production of the radio emission is confined near the NS and only
+afterward transported to the lobes via the working surface of a jet
+{{cite:96d0486a-fcb0-4c32-b581-a7b7a70ab90c}}.
+These results stimulated the search for the possible connection
+between inflow and outflow mechanisms working in the violent regimes
+of accretion onto a NS or a black hole (BH). Energetic mass outflows,
+collimated sometimes in a typical jet pattern, can be produced not
+only in extragalactic X-ray sources, such as quasars and active
+galactic nuclei (AGN), but also in galactic X-ray binary systems
+{{cite:94eec693-01fb-43c8-a208-7b2de2d6c8c1}}. It has been observed that
+galactic BH binary systems are able to produce strong jet emission
+(sources for which a jet has been already spatially resolved are
+usually denoted microquasars), with radio-loud states
+associated to hard/low X-ray states, alternated to periods of
+radio-quenching during soft/high X-ray states. For NS systems
+radio-loud episodes are generally interpreted as a jet signature. In
+this context, all the Z sources seem to owe, under certain conditions,
+a radio-jet nature. Detections of radio-loud states are usually
+associated with spectral states of low FORMULA , i.e. on the HB of the
+Z-track {{cite:2bfa8f04-a003-4229-afd1-f77197efc46b}}, while the few radio detections in atoll
+systems found the sources residing in the island state of their CDs
+{{cite:8123736b-cfb9-4183-9407-d39aa0ebd25c}}.
+
+Spectral properties of Z sources class
+We rapidly review in this section the spectral properties of the Z
+sources. The class of the Z sources display a homogeneous pattern of
+spectral properties; their energy spectra can be usually decomposed as
+follows:
+
+a soft thermal component, with characteristic temperatures in
+the 0.5–1 keV range, interpreted as thermal emission from the NS
+surface or an optically thick, geometrically thin accretion disk;
+
+a thermal Comptonized component, where the electron cloud
+distribution has a temperature in the 2.5–3 keV range, the soft
+seed photon temperature is around 1 keV and the optical depth can
+have rather large values (FORMULA  3); this relatively cold
+thermal Comptonization is thought to take place close to the NS
+surface; the soft seed photon temperature generally exceeds the
+highest temperature reached in the accretion disk, so that the
+source of the soft emission is probably confined in the boundary
+layer between the inner edge of the accretion disk and the NS
+surface. The high optical depth values associated to the cloud
+saturates the seed photon spectrum close to the electron
+temperature, so that a quasi Wien spectrum results. A theoretical
+interpretation of this spectral decomposition has been given by
+{{cite:86218613-d8dd-4e71-b0fb-9be6f3eb4a79}}, where the boundary layer emission is expected to
+be radiation pressure supported and its emission is locally at the
+Eddington rate. Change in luminosity is attributed to a change in
+the emitting area rather than in its emissivity. Phase resolved
+spectroscopy of bright LMXBs {{cite:f63a7831-3e6b-4168-b9e8-0672a75f603f}} further supports
+this interpretation, establishing in all the analyzed Z sources a
+common cut-off, due to the boundary layer thermal emission, at
+FORMULA  2.4 keV.
+
+a reflection component, often simply modelled with a broad
+Gaussian line, in the 6.4-6.9 keV range. In all the Z sources this
+line has been always observed; spectra from BeppoSAX or RXTE
+observations were not able to constraint the shape of the line,
+while the relative width was in the range 0.1-1 keV. High
+resolution spectra in this energy range have been obtained so far
+only with the BBRXT {{cite:e633b1a5-6bdb-43a6-8944-fbdbef9c7ac9}} and the XMM-Newton satellites
+{{cite:3b28abe0-bdba-4194-b15f-953b572b2d75}} for Cygnus X-2; in both observations the line
+was associated to highly ionized iron (centroid energy FORMULA  6.7
+keV), while the line appears to be intrinsically broad (FWHM FORMULA 
+1 keV). {{cite:00d5bf50-436b-4507-ad3b-06be010b82a1}} pointed out that the determination of the
+line profile can be a primary diagnostic tool, but, at the same
+time, kinematic and relativistic effects can greatly distort the
+line from the simple Gaussian profile. Moreover, if reflection is
+caused by hard X-rays reflected by a cold accretion disk, the
+contribution of the Compton reflected continuum should be taken into
+account, when the iron line emission is a considerable contribution
+to the total energy flux;
+
+a power-law hard tail, which can contribute up to few percent to
+the total energy flux, whose strenght usually varies in correlation
+with the position of the source in the CD, namely being the
+strongest on the HB, gradually decreasing as the source moves to
+higher accretion rates and totally fading in the FB {{cite:244369d7-e9a4-449b-9af8-4aa9c6ca86cc}}. The photon index of the power-law was
+generally found in the range 1.5–3 with no evident high energy
+cutoff up to energies of about 200 keV.
+
+In this article we report a complete investigation of the spectral
+properties of Scorpius X-1  through an extensive analysis of RXTE archive
+data, indicating a clear connection between position of the source on
+the CD and spectral behavior.
+
+Data reduction and analysis
+The scientific payload of RXTE consists of three instruments, the PCA,
+the HEXTE, and the All Sky Monitor (ASM). The PCA consists of five
+co-aligned Xenon proportional counter units (PCUs) with a total
+effective area of about 6500 cmFORMULA . The instrument is sensitive in
+the energy range from 2 keV up to 60 keV {{cite:82d3122e-8216-4052-8e6c-2591d460a974}}, although the
+response matrix is best calibrated in the energy range 3-22 keV. Data
+can be processed using several different configuration modes; for our
+analysis we exclusively use the Standard2 mode, with 16 s
+time resolution and 128 energy channels in the 2–60 keV energy range.
+The HEXTE consists of two cluster of four NaI/CsI-phoswich
+scintillation counters that are sensitive from 15 keV up to 220 keV
+{{cite:b16e1f79-69c6-4a50-a4e3-51758b007217}}. We use the Standard Mode, with 64 energy
+channels, for the reduction and analysis of the HEXTE data. Background
+subtraction is done by using the source-background rocking of the
+collimators. We use HEXTE response matrices of 1999 August.
+We collected a large amount of RXTE archive data, discarding only
+minor shorter observations, from April 1997 up to August 2003. We
+present in Table  the datasets we used for our analysis,
+indicating the associated proposal number, the starting and ending
+times of each observation in Terrestrial Time, and the corresponding
+exposure times.
+Data have been processed using the standard selection criteria,
+discarding data taken during Earth occultations and passages through
+the South Atlantic Anomaly. We only used data from PCU2 for the PCA
+and data from Cluster A for the HEXTE instrument. We constructed
+color-color diagrams (CDs) of the source by extracting
+energy-dependent lightcurves using PCA energy channels 5–10,
+11–16,17–22 and 23–44, with a 64 s bintime. These channel ranges
+correspond to the energy ranges 1.94–4.05 keV, 4.05–6.18 keV,
+6.18–8.32 keV, 8.32–16.26 keV respectively. We define the Soft
+Color (hereafter SC) as the ratio of count rates in the 4.05–6.18 keV
+and 1.94–4.05 energy bands, while the Hard Color (hereafter HC) as
+the ratio of count rates in the 8.32–16.26 keV and 6.18–8.32 keV
+energy ranges. However, the channel to energy conversion depend on
+the period of activity of the satellite (there are 5 different
+instrumental Epochs), most of our data belong to Epoch 3 for which the
+given energy bands are appropriate; for the Epoch 5 datasets the
+energy ranges are slightly shifted, so that this results in a
+consequent shift on the HC and on the SC axes. Because we are not
+interested in the secular shifts of the track in the CD, nor we want
+to accumulate spectra taken at different Epochs, but to perform a
+statistical study of the broad-band spectral behavior of the source
+for different CD positions in different datasets, we did not perform
+the energy dependent corrections to the colors.
+We selected regions in the CDs for each observation dataset, in order
+to cover a homogeneous part of the Z-track and to have at the same
+time a suitable statistics. From these selections we derived the good
+time intervals (GTI) which we used for extracting the corresponding
+spectra for the PCA and HEXTE data.
+Given the high luminosity of the source all the PCA spectra have been
+dead-time corrected. Some observations were performed with the use of
+an offset pointing; in these cases we extracted the responses matrixes
+of both the HEXTE and the PCA instruments, following the indications
+given in the on-line Data Analysis documentation pages. We processed
+and analyzed data using version 6.0 of the FTOOLS package suite and
+version 11.3.1 of Xspec.
+
+The Data
+l l l r
+0pt
+4
+LOG OF THE RXTE OBSERVATIONS USED IN THE ANALYSIS 
+4
+
+Proposal  Starting time (TT)  Ending time (TT)
+ Effective Time
+Number (CD)  
+ ks
+
+20035A  1997-04-18 15:20:32  1997-04-24 19:02:40  75.6
+20035B  1998-01-03 21:17:52  1998-01-08 13:19:44  60.0
+30036  1998-01-07 13:29:52  1998-01-08 22:16:48  30.4
+30035A  1998-05-30 00:28:00  1998-06-02 07:01:36  47.8
+30035B  1998-07-02 06:26:40  1998-07-05 10:32:00  32.2
+40020  1999-01-06 05:25:20  1999-01-16 23:34:40  122.1
+70014  2002-03-15 01:02:56  2002-05-16 23:20:32  139.0
+70015  2002-05-19 21:55:44  2002-05-19 23:54:40  2.24
+80021  2003-07-30 03:00:48  2003-08-13 16:43:44  146.9
+
+Observation log of the RXTE datasets used for our analysis. Some
+datasets, although having the same proposal number contain pointed
+observation separated by long time intervals. In these cases we
+collected all the pointing observations close in time in just one
+CD, and distinguish the relative CDs by a letter, following the
+proposal number. Starting and ending times are expressed in
+Terrestrial Time. Effective exposures times are filtered by our GTI
+screening criteria.
+
+ Hereafter we shall refer to a collection of close in time pointed
+observations used to extract one CD by using its proposal number.
+From datasets 20035 (and 30035) we have obtained two different CDs; we
+will label them, respectively, 20035A and 20035B (30035A and 30035B,
+see the Spectrum column in Table ). Datasets
+20035A, 20035B, 30036, 30035A, 30035B and 40020 belong to Epoch 3,
+while datasets 70014, 70015 and 80021 belong to Epoch 5. Datasets
+70014 and 70015 have been merged in one CD, because these observations
+were close in time and the source pointing was the same.
+The eight CDs that we have extracted present the source mostly on the
+NB/FB, as these are the states where the source spends most of the
+time. In Scorpius X-1  the HB is not horizontal but rather a
+vertical continuation of the NB (a characteristic shared also by GX
+17+2 and GX 349+2, the so-called Sco-like sources). For visual
+clarity we will refer to the Scorpius X-1  CD pattern, mainly making the
+distinction between the left (or FB) track and the right (NB and HB)
+track, and between the top (harder) parts and the bottom (softer)
+parts of the tracks.
+The count rates associated with the extracted spectra show a
+significant trend, generally correlated with the HC; HEXTE and PCA
+count rates are the highest at the top of the FB and monotonically
+decrease towards the FB/NB apex; following the direction bottom NB
+FORMULA  HB, the trend is inverted. This behavior is mostly
+stressed in the HEXTE data (compare the countrate in spectrum 07 in
+the top FB with spectrum 10 in the transition region FB/NB, for which
+the rate is reduced by two thirds in the HEXTE, but only by one third
+in the PCA).
+FIGURE 
+In four datasets (20035A, 20035B, 40020 and 30036) the satellite
+pointed the source on axis; in three datasets (30035A, 30035B, 80021)
+an offset pointing has been used. This influenced the high energy
+statistics, where in the same position on the CD, an offset pointing
+produced an HEXTE count rate lowered by almost one order of magnitude.
+Spectra extracted from datasets 70014 and 70015 have also low
+statistics in the HEXTE band, as the integration time is shorter
+compared with the other spectra.
+We generally used a 3.0–22 keV energy band for the PCA spectra and a
+20–200 keV energy band for the HEXTE spectra. HEXTE channels from 28
+to 63 have been rebinned, grouping four channels into one. In some of
+the spectra that we extracted we found, however, model-independent
+mismatches in the overlapping energy region between the HEXTE and the
+PCA; because these mismatches are of instrumental origin we
+occasionally restrict these energy bands until these features did no
+longer impact on our fit results. In Table  we report the
+exact energy bands used for the PCA and the HEXTE datasets for the
+selected spectra.
+The choose to assign an appropriated systematic error for the PCA data
+is an essential step in the analysis of the spectra. This operation is
+not straightforward, as the commonly used standard candle, the Crab,
+provides in this case only a partial calibration tool. The Crab
+countrate for every energy channel below FORMULA  20 keV is about one
+order of magnitude less than the Scorpius X-1  countrate, thus making the
+extrapolation of the Crab based systematic error to the Scorpius X-1 
+spectra riskful. The mostly adopted view to assign a 1% systematic
+error for all the energy channels has a strong impact on the softer
+part of the spectrum, where there are the mostly weighted channels; we
+found that in this case the fit is strongly driven by residuals in
+the 3-6 keV range, leading to a modelization of the spectrum that does
+not seem physically plausible. The overall effect is a shift of any
+soft component outside the RXTE energy band, and unrealistic high
+values for the extrapolated flux.
+The only way to avoid the strong driving effect of the first channels
+is to arbitrarily raise the systematics in this range; we found that
+assigning a 3% systematic error for channels between 3 and 3.9 keV
+(namely the first two PCA channels available in our spectra), while
+leaving a 1 % systematic error for all the other channels, allows to
+derive a physically plausible scenario for the spectral evolution of
+the source, does not result in extreme lower/higher values of reduced
+FORMULA  for every fit performed, allows us to exploit all the
+available energy band and to generally constrain all the spectral
+components of the adopted models. We occasionally still found in some
+fits systematical residuals in the soft part of the spectrum, that are
+more stressed in the softer spectra, whose origin can be presumedly
+instrumental and related to the xenon L-edge near 5 keV. We choose to
+ignore these effects, in order to not overparameterize the fit, as
+they do not influence the determination of the spectral parameters and
+do not impact the FORMULA  values of the fits.
+No systematic error has been associated to the HEXTE data. A
+normalization constant is left free to vary between the PCU2 and HEXTE
+spectra to take into account residual flux calibration uncertainties.
+
+Spectral models
+As pointed out in
+Section 1, spectra of LMXBs are usually described as the sum of at
+least two spectral components. Because the PCA energy band starts
+from 3 keV, it is not possible to constrain the effect of the
+photoelectric interstellar absorption on the source flux. Following
+{{cite:ba05f5bf-8375-4c4b-9393-ed136ea53ec6}}, we fixed its value to 3 FORMULA  10FORMULA 
+cmFORMULA , for each fit performed. To fit the CDs selected spectra,
+we tried at first a series of models given by the combination of a
+soft thermal component, such as a blackbody or multicolor disk
+blackbody {{cite:009af860-f0a1-49f8-ae9e-5963ac6621a9}}, and a thermal
+Comptonized component. For the latter we, alternatively, tried the
+COMPPS {{cite:2683bc36-c2b2-42d0-bbf2-69d96ae66faa}}, COMPTT
+{{cite:307249be-f91f-4002-82f6-32526fa21836}} and THCOMP  {{cite:40a0a837-edbd-49c7-91d6-ffc9c650a0fd}} Comptonization models.
+For any model adopted, large residuals in the 6–10 keV energy range
+indicated the presence of iron features, that we simply modelled
+with a broad Gaussian line in the 6–7 keV energy range. We noted a
+general tendency for any adopted model to have a very broad Gaussian
+line (with FORMULA  keV) and, generally, with centroids at
+energies FORMULA  keV. In order to avoid unrealistically large
+Gaussian lines, absorbing the underneath continuum, we constrained
+the line to have centroid energies only in the 6.4–7.0 keV energy
+range, with a line width less than 0.8 keV, while the normalization
+of the line was a completely free to vary parameter.
+We found an adequate description of the data, for energies below 30
+keV, using a two-component model given by the combination of the
+DISKBB  and the COMPTTcomponents, a modelization that was
+firstly introduced by {{cite:009af860-f0a1-49f8-ae9e-5963ac6621a9}}, and that is known as the
+Eastern model. Other Comptonization models can also
+statistically equally well represent the spectral sample, but we
+preferred to illustrate our results using this Compton model as it
+is one of the mostly used in the LMXBs spectral analysis and allows
+an easy way to compare our results with results obtained for other
+sources.
+Using the other often used modelization, the Western model
+{{cite:4b7ac21c-b09f-4182-a501-a5b00f8c6963}} that predicts a FORMULA  1–2 keV blackbody thermal
+emission and a Comptonization component with disk soft seed-photon in
+the 0.4–0.8 keV energy range {{cite:7980ccd6-bc8b-46c8-ab18-b53f48ce1e4c}}, we found
+higher FORMULA  values for each spectrum and an extrapolated
+super-Eddington luminosity along each part of the Z-track, that would
+be dramatic for some FB spectra which would overcome by more that an
+order of magnitude the Eddington limit, thus making this assumption
+not realistic. Moreover, the power dissipated in the Comptonizing
+disk corona would be constantly much greater than the power dissipated
+as thermal emission on the NS-surface and this breaks our expectations
+that the power dissipated near the compact object should be at least
+of the same order of the power dissipated along the disk, if the disk
+is very close to the NS {{cite:d9c073ca-10fc-493d-9a45-85210469ffc8}}.
+The DISKBB  has two free parameters, the temperature expressed in keV
+at the inner disk radius (kTFORMULA ) and a normalization factor that
+depends on the inner radius of the accretion disk, the distance from
+the source and the inclination angle between the line of sight and the
+normal to the disk; the COMPTT  has four free parameters: the soft
+seed photon temperature, kTFORMULA , the electron temperature of the
+Comptonizing cloud, kTFORMULA , the optical depth, FORMULA , and a
+normalization constant. We assumed that the Comptonizing geometry is
+spherical. We will refer to this two-component model as the DBBTT 
+model.
+As it is evident from Table   the DBBTT  model is, however,
+gradually unable to satisfactorily fit the whole energy spectrum as
+the source resides in zones of low inferred accretion rate. The
+residuals, with respect to this model, clearly indicated an excess of
+flux at energies greater than 30 keV. There is also a second group of
+spectra (namely spectra 7,8,12,13 and 26) that gave for the same
+reason an unsatisfactory high FORMULA  value. These spectra lie at the
+top of the FB in the datasets that have the higher HEXTE statistics.
+We will refer to this particular set as the top-FB spectra.
+Because the mechanisms producing this hard excess in the Z sources are
+not clear yet, in the following we will adopt two working hypothesises
+to fit the broadband continuum of the source: a) as in the case of the
+quasi saturated boundary layer Comptonization, this component is also
+the result of a thermal Comptonization process, but from a much hotter
+plasma; b) a broad band spectrum is the result of a hybrid electron
+velocity distribution, i.e. a thermal electron distribution, which
+produces the optically thick Comptonization, with a power-law
+non-thermal tail which is responsible for the high-energy excess.
+Because, for case a), the hot plasma can only reside in regions close
+to the central compact object, where magnetic and gravitational
+effects are the strongest, we assume that the boundary layer radiation
+field is the primary source of soft-seed photons also for this second
+thermal Comptonization. We note that this assumption is also needed
+in order to avoid an overestimation of the contribution of steep hard
+tail at low energies. The use of an unbroken power-law at steep
+photon indeces can give a major contribution in the lowest energy band
+of the spectrum so that the fit is driven by low-energy residuals,
+possibly resulting in an erroneous continuum modelization.
+Thereafter, a low-energy cutoff at the seed-photon temperature must be
+taken into account as the expected photon field spectrum is within the
+instrumental range.
+We added, thereafter, to our basic two-component model, a power-law in
+order to mimic this second Comptonization, multiplied by a low-energy
+cut-off. We set the value of the low-energy cut-off anchored to the
+kTFORMULA  value of the COMPTT  component, while we choose the power-law
+to have a pegged normalization expressed as flux of this component in
+the 20.0–200.0 keV energy range (PEGPWRLW, in XSPEC). We checked
+for each spectrum the FORMULA  improvement by adding a high energy
+cutoff, noting that we could obtain only lower limits on the cutoff
+energy, generally in the 30–100 keV range without any significant
+improvement in the FORMULA . Thereafter we did not use a high energy
+cutoff. We will refer at this model simply as DBBTTPEG  or
+two Comptonizations model.
+To model the possibility given in case b) we also fitted the spectra
+showing a strong hard excess (namely spectra for which the DBBTT 
+model gave a null hypotesis probability less than 0.05 (it generally
+corresponded to a reduced FORMULA  value of 1.4) with a model given by
+the sum of a thermal disk component plus the recently developed
+thermal/nonthermal hybrid Comptonization model named EQPAIR 
+{{cite:b8039c86-bfc0-4ff4-80d7-6b44ee414b3a}}, {{cite:2b7a2696-4ca0-4f45-867e-328bf9c5b9f9}}.
+It embodies Compton scattering, FORMULA  pair production and
+annihilation, FORMULA  and FORMULA  thermal and non-thermal
+bremsstrahlung, and energy exchange between thermal and non-thermal
+parts of the FORMULA  distribution via Coulomb scattering. Selected
+electrons are accelerated to suprathermal energies and the thermal
+part of the FORMULA  distribution can be additionally heated. This
+model assumes a spherical plasma cloud with isotropic and homogeneous
+distribution of photons and FORMULA , and soft seed photons produced
+uniformly within the plasma, with a thermal temperature of FORMULA .
+The properties of the plasma depend on its compactness, FORMULA  where
+FORMULA  is the total power in the source, FORMULA  is the
+radius of the sphere and FORMULA  is the Thomson cross section. The
+compactness is divided in a hard compactness, FORMULA , which
+corresponds to the power supplied to the electrons, and a soft
+compactness, FORMULA , corresponding to the power supplied in the
+form of soft photons. The compactnesses corresponding to the electron
+acceleration and to the additional heating of the thermal part of the
+FORMULA  distribution are denoted as FORMULA  and FORMULA , respectively, and FORMULA . The non-thermal energy distribution of the electrons in
+the plasma is assumed to be a power law replacing the Maxwellian
+exponential tail from a gamma Lorentz factor FORMULA  up
+to a FORMULA  with an energy index FORMULA . The total
+Thomson optical depth and the electron temperature of the plasma are
+computed self-consistently from the assumed optical depth FORMULA  of
+the background electron-proton plasma.
+We choose to model the thermal disk emission using as in the hot
+Comptonization model the DISKBB  component for spectra in HB/NB,
+while we adopted the post-Newtonian model DISKPN 
+{{cite:a8dce823-1c9c-4bd9-b030-8546b3850e9a}} in the case of the topFB spectra, as, in this
+accretion state, we expect the disk to reach its minimum inner disk
+radius, close to the NS; the DISKPN  model takes into account the
+effective gravitational potential in the neighborhood of the compact
+object by computing the emergent disk spectrum using a more
+appropriate post-Newtonian potential. We assumed that the disk
+reaches the last stable orbit at 6 RFORMULA  and fixed this parameter for
+the fits performed, while we left free to vary the maximum disk
+temperature (TFORMULA ) and a normalization factor (K = FORMULA , where FORMULA  is the central mass expressed in solar units,
+FORMULA  is the inclination of the disk, FORMULA  is the distance to the source
+in kpc, FORMULA  the color/effective temperature). We have left free
+to vary for the EQPAIR  component the following parameters:
+FORMULA , FORMULA , FORMULA , FORMULA  and the normalization
+factor. The FORMULA  was not very sensible to variations in the
+range between 1.5 and 3 for spectra in the HB/NB, while for the topFB
+spectra had to be left as a free to vary parameter, as this gave a
+significant decrease in the FORMULA  when left as a free to vary
+parameter. The value of the soft compactness FORMULA  was
+unconstrained by the fit (it is mainly driven by the pair production
+rate, which manifests itself with the annihilation line at energies
+FORMULA  500 keV, obviously far beyond our energy limits), and we kept
+it frozen at the value of 10 {{cite:a8dce823-1c9c-4bd9-b030-8546b3850e9a}}. All
+the other parameters of the model were frozen at the default values.
+We will refer to this modelization as the DBBEQPAIR  model, or simply,
+the hybrid Comptonization model.
+
+Results and discussion
+l r r r c c c c c
+9
+0pt
+COLOR-DIAGRAM RESOLVED SPECTRA AND FITS RESULTS 
+9
+
+Spectrum 
+Exposure 
+2cCountrates (cts/s)
+ 2cEnergy range (keV)
+ DBBTT
+ DBBTTPEG
+ DBBEQPAIR
+ s  PCA  HEXTE  PCA  HEXTE
+ FORMULA  (d.o.f.)  FORMULA  (d.o.f.)  FORMULA  (d.o.f.)
+
+01 20053A  5728  20920  621  3–22  20–200  0.63 (62)  0.59 (61)
+02 20053A  22400  18600  521  3–22  20–200  1.46 (62)  0.80 (60)  0.85 (61)
+03 20053A  9163  19760  651  3–22  20–200  1.07 (62)  0.62 (61)
+04 20053A  11040  20550  736  3–22  20–200  2.53 (62)  0.55 (60)  0.55 (61)
+05 20053A  8576  21060  848  3–22  20–200  2.84 (62)  1.14 (60)  1.14 (61)
+06 20053A  13472  21740  1015  3–22  20–200  5.62 (62)  0.64 (60)  0.63 (61)
+07 20053B  5698  27960  1675  3–22  24–200  2.12 (59)  1.21 (58)  1.27 (57)
+08 20053B  9680  25820  1054  3–22  20–200  1.89 (62)  0.99 (60)  1.04 (60)
+09 20053B  11472  21870  642  3–22  20–200  1.03 (62)  0.93 (60)
+10 20053B  13920  19320  512  3–22  20–200  1.35 (62)  0.54 (60)
+11 20053B  18720  19930  613  3–22  20–200  1.65 (62)  0.68 (60)  0.55 (61)
+12 30036  4208  28590  1840  3–22  24–200  2.39 (59)  1.41 (58)  1.40 (57)
+13 30036  4336  26930  1271  3–22  22–200  1.91 (61)  1.32 (60)  1.42 (60)
+14 30036  7072  23480  799  3–22  20–200  0.85 (62)  0.86 (61)
+15 30036  4736  19130  492  3–22  20–200  0.60 (62)  0.59 (61)
+16 30036  10320  20000  633  3–22  20–200  2.36 (62)  0.65 (60)  0.67 (61)
+17 30035A  6880  23680  84  3–22  24–200  1.11 (59)  1.07 (58)
+18 30035A  6608  19260  43  3–22  24–200  0.69 (59)  0.68 (58)
+19 30035A  8704  17380  39  3–22  24–200  1.17 (59)  0.87 (58)
+20 30035A  15456  18020  50  3–22  24–200  2.62 (59)  0.71 (57)  0.72 (58)
+21 30035A  10064  20040  92  3–22  24–200  2.84 (59)  0.50 (57)  0.53 (58)
+22 30035B  3344  24310  100  3–22  24–200  1.03 (59)  1.04 (58)
+23 30035B  7344  16770  39  3–22  22–200  1.06 (61)  1.08 (60)
+24 30035B  4976  16520  43  3–22  22–200  1.12 (61)  0.99 (60)
+25 30035B  16144  18900  76  3–22  24–200  2.56 (59)  0.49 (57)  0.44 (58)
+26 40020  3401  23380  708  3–22  24–200  1.86 (59)  0.83 (57)  0.86 (58)
+27 40020  3642  20360  544  3–22  20–200  1.26 (62)  0.81 (60)
+28 40020  18493  15810  300  3–22  20–200  1.14 (62)  0.69 (60)
+29 40020  11967  14920  286  3–22  20–200  1.29 (62)  1.18 (61)
+30 40020  5735  16100  383  3–22  20–200  0.85 (62)  0.67 (61)
+31 40020  7537  17100  470  3–22  20–200  3.59 (62)  0.70 (60)  0.66 (61)
+32 70014  822  24440  948  3–22  22–200  1.16 (58)  0.91 (56)
+33 70014  5668  18740  368  3–22  20–200  1.24 (58)  0.72 (56)
+34 70015  976  15250  280  3–22  20–200  0.63 (58)  0.63 (57)
+35 70015  1248  16300  363  3–22  20–200  0.75 (58)  0.69 (57)
+36 70014  3804  17570  447  3–22  22–200  1.42 (58)  0.73 (56)  0.72 (57)
+37 80021  5344  13030  12.8  3–22  28–200  0.73 (53)  0.59 (52)
+38 80021  6752  9900  2.0  3–22  28–200  0.60 (53)  0.46 (52)
+39 80021  17312  8828  7.6  3–22  28–200  0.54 (53)  0.51 (52)
+40 80021  14624  9071  27.0  3–22  28–200  0.64 (53)  0.57 (52)
+41 80021  29504  8990  11.7  3–22  28–200  1.27 (53)  0.78 (52)
+42 80021  30384  10320  6.6  3–22  28–200  1.37 (53)  0.67 (53)  0.70 (52)
+43 80021  18656  10730  11.0  3–22  28–200  1.57 (53)  0.74 (53)  0.69 (52)
+ We report in this table, from the left to the right
+column, the chosen identifying number of the CDs selected spectra
+(as shown in Figure REF ) together with the associated
+observational dataset, its exposure times, the relative background
+subtracted countrates for the PCA and HEXTE, the energy band
+considered in the fits and the reduced FORMULA  values obtained from
+the fits, adopting the DBBTT, the DBBTTPEG  and the DBBEQPAIR 
+model; the degrees of freedom (dof) for each fit are shown in
+parenthesis.
+
+We have examined 43 energy spectra of Scorpius X-1  in the 3.0–200 keV energy
+band using RXTE pointed observations from April 1997 to August 2003;
+the spectra have been extracted from selected regions chosen in the
+X-ray CD. We produced a CD for each close in time dataset in order to
+avoid shifts of instrumental origin, and repeated our analysis for
+each CD obtained in this way, thus having at hand a robust
+representation of the spectral evolution of the source in all its
+accretion states.
+To fit the spectra we firstly adopted a two-component model given by
+the sum of a soft thermal disk emission and a hard Comptonized
+emission. We checked for the presence of harder X-ray emission by
+adding a high-energy power-law to our basic model, while for a subset
+of spectra we adopted a hybrid thermal/non-thermal Comptonization as
+described in the previous section.
+We find that the basic two-component model DBBTT  can fit the 3-200
+keV energy band spectrum (fits for which we obtained a FORMULA ) in 25 out of a total 43 spectra; these spectra mostly
+belong to the FB and to the NB. Hard tails, in this group of spectra,
+are not significantly detected in 14 spectra (these are spectra 1, 9,
+14, 15, 17, 18, 22, 23, 24, 29, 34, 35, 39, 40, see Table )
+when the source lies in the FB/NB apex of its CD. For the other 11
+spectra, although the addition of a new component is not strictly
+required by the fit, we found a general improvement in the FORMULA 
+value.
+On the contrary, we find that this model fails to describe the spectra
+in 18 of the 43 selected spectra (fits for which we obtained a
+FORMULA ); the fits generally getting worse and worse
+from the bottom of the FB to the upper NB. From the residuals with
+respect to this model, it is clearly seen an excess of hard emission
+at energies above 30 keV. We report in Figure REF  four
+representative deconvolved spectra for the case in which the DBBTT 
+model does not give an adequate description to the broad-band spectral
+behavior, choosing three spectra from the HB/NB zone and one for the
+topFB zone: spectrum 06 (at the top of the left track of dataset
+20035A), spectrum 16 (at the top of the left track of dataset 30036),
+spectrum 31 (at the top of the left track of dataset 40020) and
+spectrum 07 (at the top of the right track of dataset 20035B).
+In the following we will group the spectra according to the relative
+position in their CDs, in: topFB spectra (spectra 7, 8, 12, 13, 17,
+22, 26, 32, 37), FB spectra (1, 9, 14, 18, 27, 28, 33, 38), NB spectra
+(2, 3, 10, 15, 19, 20, 23, 24, 29, 30, 34, 35, 39, 40) and HB spectra
+(4, 5, 6, 11, 16, 21, 25, 31, 36, 41, 42, 43). We caution the reader
+that this distinction is based only on the results of our spectral
+analysis for spectra taken in particular zones of the Z-track, without
+any reference to the temporal behavior of the source. Although it is
+clear, looking just at the lightcurves, to distinguish within one
+dataset the FB from the NB, the distinction between the NB and the HB
+is rather subtle, as the two track mostly overlap. For this reason a
+HB spectrum, for this analysis, is to be considered only as a
+simple label for a spectrum extracted from the top part of left
+track of each CD.
+
+The hot Comptonization model
+Energetics
+In the following we will discuss the fit results based on the adopted
+model DBBTTPEG. Although in some spectra this model over-parameterizes
+the fit, the spectral behavior of the source and our conclusions would
+not change, if we used the best-fitting values of the DBBTT 
+modelization (we show in Table  and  the best-fit values of the
+spectral parameter, together with associated errors quoted at 90%
+confidence level). In some cases we had to freeze some parameters in
+order to make the fit physically consistent and avoid solutions
+without physical meaning. In spectra 7, 8, 12, 13, 17, 37, 38 the
+electron temperature had to be fixed to 10 keV (a value consistent
+with what we found in other CDs for the same CD zone; if free the fit
+would give a best-fit with kTFORMULA  kTFORMULA  which is clearly wrong),
+the photon index of the PEGPWRLW  component in spectra where this
+component is not significantly detected, or when its value is
+unconstrained by the fit, is frozen to a reference value of 2; the
+DISKBB  parameters of spectra 42 and 43 had to be fixed to the
+best-values as obtained by the best-fit model DBBTT  (if free, this
+component vanishes, while the COMPTT  and PEGPWRLW  have comparable
+flux values).
+In this spectral decomposition we calculated
+the total luminosity as follows:
+FORMULA 
+where FORMULA  is the COMPTT  flux and FORMULA  is the PEGPWRLW 
+flux extrapolated in the 0.1–200 keV energy range; FORMULA , where FORMULA  is the spectral hardening factor
+{{cite:ffa7c0a3-2774-412c-aa37-d29b587277e7}}, is assumed equal to 1.7, and FORMULA 
+corrects for the fact that the radius at which is reached the maximum
+temperature is greater than the inner disk distance
+{{cite:d6e44b9c-ab9d-4c5e-a785-932b7e15c1a0}}. FORMULA  is a constant dependent on the distance of
+the source, which we assumed to be 2.8 kpc, and the inclination of the
+disk, which we assumed 45FORMULA . In Figure REF  we show the
+contribution of the disk and of the Comptonized component to the total
+flux. The luminosities on both axis are in Eddington units for a 1.4
+FORMULA .
+The source span a luminosity range between 0.9 LFORMULA  and 2.4
+LFORMULA , thus being in a super-Eddington state almost independently
+of the position of the source on the CD. We note that the only way to
+drastically reduce this range is to suppose a much massive compact
+object (the possibility of a massive NS hosted in the Scorpius X-1  system is
+also discussed in {{cite:7c3500ef-20b8-42cc-85e8-9dfa6a72fa4b}} in the framework of the
+relativistic precession model used to explain the frequencies of
+quasi-periodic oscillations in NSs and BH systems) given that both the
+distance and the inclination angle are known with good accuracy (10%
+and 13% relative error, respectively).
+The disk flux and the hard flux correlate as expected with the total
+flux, although the disk emission presents a more pronounced linear
+relation, while the hard flux seems to saturate as the total flux
+reaches the highest values. If we assume a linear dependency of the
+two contributions versus the total emission we derive a constant of
+proportionality equals to 0.56 for the disk flux and 0.44 for the
+Comptonized flux. When we look at the ratio of the two contributions
+along the Z-track (see Figure REF , a 5% error on this ratio
+is assumed, after having tested the corresponding hard and soft flux
+values for different parameter values of the spectral components
+inside the uncertainties errorbars as derived from the fits), there is
+a general trend to have a higher hard/soft ratio as the source moves
+from higher to lower accretion states; this is in agreement with our
+expectation that, at lower accretion rate the disk could be truncated
+and the fraction of the power dissipated in the boundary layer should
+correspondently increase. Spectra 7, 12, 13 and 32 do not follow this
+trend; these spectra belong to the topFB spectra, and in these cases,
+we are possibly, underestimating the disk contribution, or
+overestimating the hard flux.
+FIGURE 
+FIGURE 
+
+Disk emission and thermal Comptonization
+We present in Figure REF  the dependency of the inner disk
+radius and of the inner disk temperature, plotted against the
+hard/soft luminosity ratio. It is shown, both in Table
+ ,  and in Figure  REF , the apparent
+radius, derived without considering important correction factors, due
+to the color/effective temperature ratio, relativistic effects, and
+the non-zero torque boundary conditions; moreover, it should be noted
+that these corrective factors can also vary, depending on the
+accretion state. The sum of all these effects could be a drastical
+rescale of the measured inner radii up to almost an order of magnitude
+higher {{cite:7a6b956d-9522-4d50-8014-b4279472f463}}, but the general trend that correlates this
+parameter with the accretion state of the source should be
+qualitatively preserved.
+The apparent inner disk radius, for spectra in the topFB has the
+lowest values, FORMULA  10 km, while the average value for NB spectra
+and HB spectra is considerably higher (average value: FORMULA  18 km for
+the HB and NB, FORMULA  13.5 km for the FB and FORMULA  10.2 km for the
+topFB). The inner disk temperature, on the other hand, presents the
+highest values, as one could expect, on the FB, while the temperature
+diminishes with the accretion rate. A small subset of FB spectra falls
+out of the trend, but as pointed out earlier, in this case, the exact
+determination of the relative contributions of the two components
+could suffer of systematic uncertainties linked to the particularly
+luminous state of the source. On the FB the disk temperature has an
+average value of 2.12 keV, while on the lower part of the FB sinks to
+1.73 keV. There is not any appreciable difference on temperature for
+spectra taken on the NB and on the HB with an average value of 1.43
+keV.
+FIGURE 
+For the hard, thermal Comptonized, component the accurate
+determination of all the spectral parameters was not always possible.
+The soft-seed photon temperature presents, for each spectra analyzed,
+a substantially higher value with respect to the disk temperature at
+the inner radius. We hence propose that the soft photons are
+originated from the boundary layer/NS surface, partially thermalized
+with the softer photons of inner part of the accretion disk around the
+NS. Moreover, calculating the radius of the soft-seed photons emitting
+region FORMULA  from:
+FORMULA 
+where FORMULA  is the distance to the source in kpc, FORMULA  is the
+COMPTT  bolometric flux and FORMULA  (see Eq. REF ), the Compton
+parameter, we derived for our sample values in the 3–6 km range, that
+clearly indicate a rather small emitting region, thus supporting our
+identification.
+FIGURE 
+The CD correlated changing of the thermal temperatures is compatible
+with a scenario in which the position of the source on the CD is
+determined by the instantaneous FORMULA , and higher accretion rates
+correspond to higher seed-photons temperatures, resulting in a hotter
+radiation field. The soft seed-photon temperature has a 2.2 keV,
+2.4 keV, 2.9 keV average values for spectra on the HB/NB, FB and topFB
+respectfully. When plotted against each other, the disk temperature
+and the soft seed-photon temperature (see Figure REF , left panel)
+follow each other quite closely, being these two parameters the main
+driving physical quantities related to the accretion state of the
+source. The correlation between the CD resolved spectra and the two
+temperatures shows, although in a qualitative representation, that the
+link between the spectral evolution of the source and its accretion
+state is well motivated.
+FIGURE 
+The other two spectral parameters, that describe the high-energy
+curvature of the Comptonized component, the electron temperature of
+the Comptonizing plasma (kTFORMULA ) and the optical depth of the cloud
+FORMULA , are not always well constrained by the fit. As it is evident
+from Figure REF , for spectra at high accretion rate we obtained
+high values for the electron temperature (kTFORMULA  10 keV) and low
+values for the optical depth (FORMULA  1). As the sources resides
+on zones of lower FORMULA , the Comptonizing cloud substantially
+thickens, while the electron temperature correspondently diminishes.
+Plotting the subset of the spectra in the NB and HB helps to better
+visualize this tendency (Figure  REF , right panel). It is to
+be noted that the determination of these two parameters is partially
+related with the hard power-law component; although there are spectra
+where the PEGPWRLW  component is not strictly necessary for a good
+fit, its introduction slightly shifts the the thermal Comptonized
+component to lower energies, thus giving a noticeable reduction in the
+uncertainties of the Compton curvature.
+In all the spectra it is required a Gaussian line at energies FORMULA 
+6.4 keV. It mostly appear rather broad, with a line width that often
+reaches our constraint of 0.8 keV. The equivalent widths associated
+with the line are in 80-200 eV range, and are to be taken as rather
+indicative given the low energy resolution of the PCA and the presence
+of systematic residuals in this energy range.
+
+The hard tail behavior
+The presence of a hard X-ray excess in the extracted spectra of Scorpius X-1 
+is mostly evident in 18 spectra from a total of 43 CD selected spectra.
+There is little evidence of the presence of hard X-ray excess for
+spectra lying in the bottom part of the FB and of the NB, namely for
+spectra taken near the apex that connects the left and right track
+that compose the V pattern.
+In all the examined CD patterns we always detect a power-law
+high-energy excess, dominant above FORMULA  40 keV, as the source
+resides at the top of the left track, i.e.  a portion of the diagram
+that we tentatively identified with the HB, and which should
+correspond to the lowest mass accretion rate. This group of spectra
+are characterized by the lowest values of inner disk temperature and
+soft seed-photon temperature; the derived inner disk radii correspond
+to a disk truncated at about 10-15 RFORMULA , while the Comptonizing
+optical cloud is substantially thicker with respect to any other
+spectrum in other zones of the CD; the fraction of the total power
+dissipated in the Comptonizing corona has the highest values, with a
+ratio hard/soft luminosity well above unity.
+FIGURE 
+Apart from this consistent group of HB/NB spectra, we also found a
+minor group of spectra (namely 5 spectra: 7, 8, 12, 13 and 26), for
+which the fit required a third high-energy component. These spectra
+belong to 3 CDs (20035B, 30036 and 40020) and are spectra taken at the
+top of the FB. Although these spectra are located in the same CD
+region, not all the CD that display a topFB clearly show this excess.
+This could be due to a statistical reason, as in all the other CDs the
+HEXTE countrate (see Table  ) drops of about one order of
+magnitude with respect to these 3 CDs; because the countrate is
+essentially concentrated in the 20–35 keV energy band, that is the
+range that constrains the curvature of the thermal Comptonized
+component, the energy channels in this energy band with a high
+statistic will drive the fit, and any small excess above the
+exponential tail of the Comptonized component will statistically be
+more accentuated. However, we cannot exclude that an opposite
+reasoning is true, i.e. that we are underestimating instrumental
+effects that appear only for higher count-rates as dead-time
+corrections or poor background estimate, so that these particular hard
+tails are artifacts of an incorrect modelization of the thermal
+Comptonization curvature. As we have no apparent way to better
+calibrate our spectra, we discuss also the appearance of this
+component for this group of spectra. Future observations with other
+high-energy satellites, such as INTEGRAL or SUZAKU, will test if this
+particular topFB state of the source is also accompanied by a high
+energy excess or it is an HEXTE faked detection.
+The hard excess has no evident relation with the total luminosity of
+the source, but this could be expected since the different zones of
+the CD track are not related with the total X-ray luminosity. Using
+the pegged power-law, we directly derived from the normalization value
+of this component, the flux in the 20.0-200.0 keV energy band. We
+show in Figure REF , left panel, the hard tails luminosity in the
+20–200 keV range vs. the hard/soft ratio. From the plot it can be
+clearly seen that the hardening of the spectrum is reflected in the
+increasing luminosity of the hard-tail component; the CD resolved
+spectra are, correspondently, disposed on this plot: the FB spectra
+reside on the bottom left of the diagram with hard fluxes FORMULA  erg sFORMULA , NB spectra are harder and half of them
+show significant fluxes (FORMULA  erg sFORMULA ), while
+the HB spectra, in the right part of the plot, show the strongest hard
+X-ray emission (in the range 6–12 FORMULA  erg sFORMULA ).
+As pointed out in the previous section, we found for the topFB sample,
+spectra with no detectable hard X-ray emission, that occupy the left
+bottom part of this figure and that smoothly join the correlation
+between hard/soft ratio and hard flux and spectra that do not follow
+this trend and for which there is both in the COMPTT  and in the
+PEGPWRLW  component a hard flux higher than we expected. From the
+figure is also evident that one of the most luminous hard tail is
+found in a particular spectrum on the topFB (namely spectrum 26 of CD
+40020); the luminosity of this component is related to the total
+broad-band high luminous state of the source, that reaches in this
+case the highest value of total luminosity (2.6 LFORMULA ) observed in
+our sample.
+On the other hand, the values of the photon index present a well
+defined bimodal distribution according to the position of the source
+on the CD. We find quite flat power-laws, with index values less that
+unity for all the FB and topFB spectra, while for the other group of
+spectra, values generally range between 1.5 and 2 (Figure REF ,
+right panel).
+
+The hybrid Comptonization model
+Models of hybrid Comptonization have so far been mostly adopted to
+explain state transitions both in black-hole candidate systems (as in
+Cyg X-1, {{cite:a8dce823-1c9c-4bd9-b030-8546b3850e9a}}; GRS 1915+105, {{cite:df943a55-f38d-4e1d-87c6-321fbbf80d3f}};
+or GX 339+4, {{cite:a0be91e0-4db2-4dec-995c-944292740020}}) and in NS system {{cite:39903f8f-cc8e-4f47-90c6-90b78630b3a2}}.
+We tried to model the spectra for which we detected a hard tail,
+making the hypothesis that both the hard tail and the thermal
+Comptonized component were related to each other. In this way, all the
+broad-band evolution of the source is covered in a self-consistent way
+by only two spectral components: the thermal soft disk emission and
+the hard hybrid Comptonized component. In table  we present
+the results of our fits for the group of 18 spectra, distinguishing
+between the HB/NB group (top part of the table), for which we used the
+DISKBB  component as in the case of DBBTTPEG  modelization, and the
+topFB spectra, for which we used the DISKPN  component, under the
+assumption that for this state the disk is not truncated, and reaches
+the surface of the NS (we assumed that this happens at a distance of 6
+RFORMULA ).
+FIGURE 
+As in the case of the previously adopted modelization, the thermal
+disk temperature and the soft-seed photon temperature are the main
+driving physical parameters that determine the changing of the
+spectral state of the source. We show in Figure REF  (left panel),
+the correlation between the two temperatures: the topFB spectra occupy
+the top right part of the plot, with an average FORMULA  value of
+2.73 keV and inner disk temperature FORMULA  of 1.97 keV, while the
+set of the HB-NB spectra are disposed along a linear trend in the
+1.2-1.8 keV energy range for the disk temperature and 1.9-2.5 keV
+range for the soft seed-photon temperature. The plot closely follows
+the plot of Figure REF , right panel.
+The hard compactness FORMULA  results for all the examined spectra
+only a small fraction of the soft compactness FORMULA , with values
+of hard/soft ratio FORMULA  below 0.2. The HB/NB spectra span
+almost an order of magnitude in the FORMULA  range, while the topFB
+spectra are all grouped in a more narrow range of values, around FORMULA  = 0.6–0.8 (see Figure REF , right panel).
+The two groups of spectra significantly differ both in the FORMULA  and
+FORMULA  values (it is to be noted, however, that the
+optical depth reported from the fits has not the same physical meaning
+of the classical Thomson optical depth of the Comptonizing cloud, as
+it more properly refers to the optical depth associated with the
+background photon radiation field): HB spectra present generally
+higher values of optical depth (with an average value of FORMULA 
+2.2) and a hybrid electron distribution (with 0.3 FORMULA  0.8, and an average value of 0.55), while the
+topFB spectra have considerably lower values of FORMULA  and
+essentially non-thermal spectra, with FORMULA . The
+slope of the high-energy power-law of the hybrid electron
+distribution, FORMULA  is consistent with a value of 2, for the
+HB-NB spectra, while for the topFB spectra its value is considerably
+lower (between 0 and 1).
+FIGURE 
+
+Conclusions
+We outline our main conclusions from an extensive analysis of Scorpius X-1 
+RXTE observations in the 3–200 keV energy range: we observe a
+spectral evolution of the source that is clearly dependent on the
+position of the source along its CD track; the spectral decomposition
+consists of four different spectral components that we interpret, from
+the softest to the highest X-rays respectively, as follows: a soft
+thermal component from an optically thick accretion disk, a thermal
+Comptonization from the boundary layer, a reflection component which
+mainly manifests in a broad Gaussian line at 6.4 keV and a variable
+hard excess above 30 keV, mostly present at low FORMULA .
+We have shown that the CD correlated variations of the two thermal
+temperatures (disk temperature and soft seed-photon temperature), the
+trend in the hard/soft ratio, the Compton thickening of the
+Comptonizing cloud and the apparency of significant hard X-ray
+emission on the HB/NB are the main spectral characteristics of the
+source.
+We paid particular attention to the modelization of the hardest X-ray
+component, which is of primary importance for the understanding of all
+the continuum emission, as it has a major impact on the determination
+of all the other spectral parameters. To fit this hard excess we
+modelled our spectra using a phenomenological component, i.e. a
+power-law with a low energy exponential cut-off at the seed-photon
+temperature and a self-consistent physical model, a hybrid
+thermal/non-thermal Comptonization code. In both cases we found an
+adequate description of the spectra for each source state, and the two
+modelizations are statistically equivalent.
+The use of simple power-laws to fit the hard tails in the Z-class
+sources, but also in some atolls {{cite:c4a1011b-84a3-4b6a-8a38-b2c5a278bae3}}, {{cite:70368be5-1a6b-4a58-9047-ee16749264b2}}, has been
+largely used in the past, given the lack of broad-band coverage up to
+the MeV energies, and a poor understanding of the physical origins of
+this component. Contrary to what previously reported {{cite:2cca9d85-750b-4b61-af7d-49480e30b800}},
+the presence of the hard tail FORMULA  related to the broad-band spectral
+evolution of the source as inferred from the source position on the Z
+track of its CD: the presence and the values of the photon indexes in
+Scorpius X-1  are consistent with the results from fits to spectra on the same
+zone of the CD for the other Z sources {{cite:658f8184-3f0c-4db5-a5fb-60c02a4f75c3}}, {{cite:244369d7-e9a4-449b-9af8-4aa9c6ca86cc}}, {{cite:1f099581-94b6-49b0-a9ae-85aa8974c9a8}}, {{cite:2abb1588-548d-47f4-b2b1-4eb52dc279b9}}; at the same time, the flux contribution to
+the total energy output of the sources is of the same order and is
+anticorrelated to the inferred mass accretion rate. This is clearly
+shown in the case of the CD 20035A, where the hard tail flux
+monotonically increases as the source moves from the bottom to the top
+of its NB/HB.
+The only difference, between Scorpius X-1  and the other similar sources, is
+constituted by rather flat hard tails that we found when the source is
+at the top of the FB and which has never been observed in other NSs
+sources; however, while for every CD that we obtained, we
+systematically found a hard tail as the source was at the top of left
+V track, the detection on the FB is presumedly dependent on the HEXTE
+statistics. Past surveys with the use of scintillation counters
+on-board on balloons reported the unusual flattening of the spectrum
+of Scorpius X-1  above 40 keV {{cite:aae7968c-698b-49fb-85a7-aa3407e73862}}, as well as more recent
+surveys {{cite:9117455f-3fec-4a9f-aedd-ccfd64a77015}}; it would be interesting to definitively
+assess the existence of such component; from our analysis, we can only
+conjecture that this component, could be a signature, on the FB, of
+the trespassing of the Eddington limit on the interface between the
+accretion disk and the board of the boundary layer, followed by a
+violent expulsion of part of the accreting matter.
+Hard tails on the HB could have a thermal origin, as in the case of
+the thermal Comptonized component that dominates the spectrum at lower
+energies (less than 20 keV); in this case the power-law, as long as
+the optical depth is low and the electron temperature is not too high,
+is a good approximation of the Comptonized spectrum, whose FORMULA 
+parameter
+FORMULA 
+is related to the photon index of the power-law by the following relation:
+FORMULA 
+In the case of Scorpius X-1  spectra on the HB/NB, we derived photon indexes
+in the 1.8–2.2 range, that imply a FORMULA  Compton parameter in the
+0.6–1.1 range; a FORMULA  thick plasma would then require a FORMULA 
+50 keV thermal plasma, while a FORMULA , on the contrary, a FORMULA 
+15 keV electron temperature. We did not find any evidence of
+high-energy cut-off, obtaining only lower limits in the 50–100 keV
+energy range, and this constraints the optical depth to be less than
+one while the electron temperature would be greater than 50 keV. The
+formation of hot zones, or blobs, of very hot plasma, possibly powered
+by episodes of magnetic reconnection above the disk, constitutes a
+plausible scenario {{cite:a4f175c5-521d-4dc8-b844-1de13e3a9a10}}; this model has been also proposed
+in the case of the hard/low states of BH candidates {{cite:d410fa66-4b5a-446e-aa27-9fac36ae85ec}},
+which share with the bright Z-sources systems, from a spectral point
+of view, similar values of the hard photon indexes and the low
+accretion state, while they naturally differ from the strong boundary
+layer emission present in the NSs sources and absent in the BH case.
+A thermal origin, on the other hand, for the topFB hard tails seems to
+be excluded, as it would require unrealistic large values of the
+electron temperature.
+Our analysis has shown that this scenario is statistically equivalent
+to a hybrid Comptonization model, where the non-thermal fraction of
+the power injected in the electron heating counts up to half of
+the total injected power. The non-thermal fraction is significantly
+higher with respect to the value found by {{cite:39903f8f-cc8e-4f47-90c6-90b78630b3a2}} in the
+case of GX 17+2. The non-thermal fraction for the topFB spectra must
+be distinguished from the non-thermal spectra of the BH sources, as in
+the case of Scorpius X-1, the hard luminosity is a small fraction of the soft
+luminosity, that dominates the 10–30 keV energy spectrum. Most of the
+soft photons do not Compton interact with the electron cloud, because
+of the low optical depth values.
+Another possible physical mechanism to explain the hard X-ray
+variability is the bulk motion Comptonization
+{{cite:36706efa-30a5-45dd-93c0-a360fb408dc3}}, present in systems with a high velocity
+radial accretion flows. This radiation mechanism, used to explain the
+hard power-law component in BH systems spectra in their soft/high
+states, is, however, not able to account for the the absence of any
+cut-off up to energies of 0.5 MeV and for the hard photon indexes
+observed (FORMULA  2.0) {{cite:76edb2ab-d2b6-4fa8-a68c-ac567138708c}}. In the case of
+bright NS systems, the high radiation pressure of the inner boundary
+layer constitutes a strong barrier for any incoming convergent bulk
+motion flow. On the other side, because jets have been observed in
+the radio from Scorpius X-1, bulk motion Comptonization inside the jet can be
+an important production mechanisms also of hard X-ray radiation.
+Theoretical spectra and energetic contribution according to the
+relevant physical parameters involved in the case of a strict coupling
+with inflow (i.e. accretion to the compact object through the
+formation of an accretion disk) and outflow (i.e. jets), are a
+promising way to cover in a self-consistent way all the phases of
+accretion. Details about the geometry of the scattering media, amount
+of reflection on the cold disk and dependence from the accretion state
+of the source are yet to be fully explored. Moreover, in this case
+synchrotron emission of soft photons by a beamed population of
+relativistic electrons becomes a competitive source of photons with
+respect to the thermal soft photon emission of the boundary layer and
+accretion disk. An attempt to explicitly compute a jet spectrum, from
+radio to hard X-rays, has been recently proposed by {{cite:1561ae32-34c7-45a3-b306-04497eb6a2a6}},
+where the jet base subsumes the role of the static Comptonizing
+corona; spectral fits in the case of BH systems (namely Cyg X-1 and GX
+339-4) in hard states are consistent with this scenario, but BH soft
+states and NS systems spectra need yet to be tested in order to
+understand the limits of validity of the jet model.
+Questions to be further addressed in future observations are: the exact
+shape and contribution of the soft component below the 3 keV range,
+the investigation with good spectral resolution in the 6–10 keV range
+of the reflection features, the extension up to 0.5 MeV of the
+spectral coverage in order to constrain the physical parameters
+characterizing the non-thermal electron distribution of the
+Comptonizing plasma. The latter point is well within the capabilities
+of the recently launched SUZAKU satellite, so that future observations
+in this direction can be a stringent test to our conclusions.
+
+lrrrrrrrrrrrr
+0pt
+13
+FIT RESULTS: THERMAL COMPTONIZATION MODEL 
+
+Parameter
+ kTFORMULA 
+ RFORMULA 
+ FORMULA 
+ FORMULA 
+ NFORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ Index
+ FORMULA 
+  FORMULA
+Units
+ keV
+ km
+ keV
+ keV
+ ph cmFORMULA  sFORMULA 
+ keV
+ keV
+
+
+ erg cmFORMULA  sFORMULA 
+ erg cmFORMULA  s FORMULA
+
+1  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   7.90
+2  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   7.28
+3  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   8.76
+4  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.1
+5  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.4
+6  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   11.2
+7  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.8
+8  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   7.76
+9  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   7.53
+10  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   8.3
+11  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   11.4
+12 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   12.1
+13 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.1
+14 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   7.59
+15 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   7.15
+16 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA  FORMULA   8.54
+17 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   11.1
+18 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   10.4
+19 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   10.5
+20 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   13.8
+21 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   21.8
+
+lrrrrrrrrrrrr
+0pt
+13
+FIT RESULTS: THERMAL COMPTONIZATION MODEL 
+
+Parameter
+ kTFORMULA 
+ RFORMULA 
+ FORMULA 
+ FORMULA 
+ NFORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ Index
+ FORMULA 
+  FORMULA
+Units
+ keV
+ km
+ keV
+ keV
+ ph cmFORMULA  sFORMULA 
+ keV
+ keV
+
+
+ erg cmFORMULA  sFORMULA 
+ erg cmFORMULA  s FORMULA
+
+22 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   14.0
+23 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   9.8
+24 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   13.2
+25 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   16.5
+26 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   16.3
+27 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.7
+28 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   8.2
+29 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   8.5
+30 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   9.6
+31 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA  FORMULA   FORMULA   13.6
+32 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10  FORMULA   FORMULA   FORMULA   16.1
+33 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   8.7
+34 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   8.3
+35 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   10.3
+36 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.1
+37 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10  FORMULA   2  FORMULA   6.7
+38 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10  FORMULA   2  FORMULA   7.4
+39 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   8.6
+40 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   9.7
+41 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  FORMULA   9.6
+42 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   11.8
+43 FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   14.6
+Parameters values and associated errors for all the CDs
+resolved spectra adopting the DBBTT  or the DBBTTPEG  model.
+The column FORMULA  gives the power-law flux in units of 10FORMULA 
+erg cmFORMULA  sFORMULA  calculated in the 20-200 keV energy range.
+The last column FORMULA  gives the flux of the thermal Comptonization
+component in units of 10FORMULA  erg cmFORMULA  sFORMULA  in the 0.1–200 keV energy range.
+See Section  for an
+explanation of the parameters involved in the fits. All the
+uncertainties are calculated at 90% confidence level.
+
+lrrrrrrrrrrr
+0pt
+11
+FIT RESULTS: THE HYBRID COMPTONIZATION MODEL  
+
+Parameter
+ kTFORMULA 
+ FORMULA  (K)
+ FORMULA 
+ FORMULA 
+ NFORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ Flux FORMULA
+Units
+ keV
+ km
+ keV
+ keV
+ ph cmFORMULA  sFORMULA 
+
+ keV
+
+02
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ FORMULA 
+ 2
+ 8.59
+04  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  11.52
+05  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  12.33
+06  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  12.46
+11  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA  FORMULA   2  13.25
+16  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA  FORMULA   FORMULA   2  11.39
+20  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  14.99
+21  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  12.31
+25  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  11.14
+31  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  16.52
+36  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA  FORMULA   2  2.47
+42  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  12.1
+43  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   2  1.4.3
+07  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   12.62
+08  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   8.62
+12  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   13.08
+13  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   10.68
+26  FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   FORMULA   3.023
+ Parameters values and associated errors, adopting the
+model DBBEQPAIR  for the selected spectra on the HB/NB (first part
+of the table) and for spectra on the top of the FB (second part of
+the table). The model for the five FB spectra differs from the one
+adopted for the HB/NB spectra, as it uses a more appropriate disk
+emission model (DISKPN, in XSPEC) instead of the DISKBB 
+component. For the DISKBB  component we list the derived apparent
+inner disk radii in km, while for the spectra fitted with the
+DISKPN  component, the inner disk radius has been fixed to 6 RFORMULA 
+and the second column shows the value of the normalizion of the
+component in units of  FORMULAFORMULA  cos(i)/(DFORMULA ),
+where the distance is given in kpc, FORMULA  is the color/effective
+temperature and FORMULA  is the inclination angle of the disk. The
+unabsorbed flux of the EQPAIR  component has been calculated in the
+0.1–200 keV energy range and it is in units of FORMULA  erg
+cmFORMULA  sFORMULA . See Section   for an
+explanation of all the other parameters involved in the fits. All
+the uncertainties are calculated at 90% confidence level.

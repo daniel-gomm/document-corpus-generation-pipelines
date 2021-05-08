@@ -1,0 +1,692 @@
+
+LCHO-CI method for the voltage control of exchange interaction
+in gated lateral quantum dot networks
+Irene Puerto Gimenez
+Quantum Theory Group,
+Institute for Microstructural Sciences,
+National Research Council, Ottawa, Canada K1A 0R6
+
+Department of Fundamental Physics,
+University of La Laguna,
+Tenerife, Spain
+Marek Korkusinski
+Quantum Theory Group,
+Institute for Microstructural Sciences,
+National Research Council, Ottawa, Canada K1A 0R6
+Pawel Hawrylak
+Quantum Theory Group,
+Institute for Microstructural Sciences,
+National Research Council, Ottawa, Canada K1A 0R6
+We present a computational LCHO-CI approach allowing for the
+simulation of exchange interactions in gated lateral quantum
+dot networks.
+The approach is based on single-particle states calculated using a
+linear combination of harmonic orbitals (LCHO) of each of the dots,
+and a configuration interaction (CI) approach to the interacting
+electron problem.
+The LCHO-CI method is applied to a network of three quantum dots with one
+electron spin per dot, and a Heisenberg spin Hamiltonian is
+derived.
+The manipulation of spin states of a three-spin molecule by applying
+bias to one of the dots is demonstrated and related to the bias
+dependence of effective exchange interaction parameters.
+73.21.La,73.23.Hk
+Introduction
+The electron spin is a quantum two level system, a natural candidate
+for a qubit.{{cite:2255d69d-3e13-40f6-84ab-e070d776b938}}, {{cite:a7e9064d-d283-4b50-8d72-a27baaa302d3}}, {{cite:cd46bbc8-21e8-4ab6-b08a-3527200115c9}}
+For this reason there is currently significant interest in coupling of
+individual electron spins localized at different spatial locations to
+realize quantum
+gates.{{cite:a7e9064d-d283-4b50-8d72-a27baaa302d3}}, {{cite:cd46bbc8-21e8-4ab6-b08a-3527200115c9}}, {{cite:5141cb87-53df-4514-a93e-7d4b5aa87ea0}}
+The coupling of the spins of localized interacting electrons is
+investigated using the Heisenberg
+Hamiltonian.{{cite:5141cb87-53df-4514-a93e-7d4b5aa87ea0}}
+In this approach, the Coulomb interactions between electrons are
+reduced to the exchange coupling of their spins.
+The exchange interaction is parametrized by the exchange constants FORMULA 
+dependent upon the specific implementation of the system.
+In lateral gated quantum dot devices the spatial localization of individual
+electrons can be achieved by electrostatic coupling to their charge.
+To date, controlled confinement of one, two, and three spatially
+separated electrons has been demonstrated using the
+single,{{cite:42daf54f-6f7b-4715-88a4-64c0c541fc20}}, {{cite:920ebf98-9a9f-41b4-b10f-18578c962d57}}
+double,{{cite:1e745504-6319-4aa3-8546-db98d5a12bbe}}, {{cite:8c871d45-b9d6-4663-9dbf-2d775e6c5bee}}, {{cite:1b5238ed-170e-4acc-b968-17479b8701b4}}, {{cite:cb9ed626-ff2f-4c7d-a365-52ce2ff4ab98}}, {{cite:6a03f96f-5bb1-4f74-be1c-b7a629bfc2d1}}
+and triple{{cite:caed0fc9-542a-42e7-9893-e3a15fde2ca3}}, {{cite:02352f7e-1f73-4a65-85ac-51223aad0506}}
+quantum dots, respectively.
+In these devices the electronic orbital degrees of freedom are
+manipulated directly by tuning the gate voltages, which, only through
+topology and statistics, translates into the control over the total
+spin of the
+system.
+{{cite:11b16fe3-b936-43f2-8680-bd47e89d409d}}, {{cite:377953b5-0c98-4aa4-b8f4-e4fee9633759}}, {{cite:7b3e7869-cdaf-4aef-9f43-127fea0afdd1}}, {{cite:d3f8267d-1c80-46e2-b19f-db3b91eaa276}}, {{cite:b8a0bf21-9eb7-4213-9c2c-8f2ad8b1d26e}}, {{cite:df81537c-c6e8-4ff6-bd64-1c8d11bf2688}}
+The voltage control of exchange coupling of two electrons in a single
+dot {{cite:b79dd7d7-7898-4402-ae33-186ad9acf576}} and
+coherent control of spin states of a two-electron double-dot molecule
+{{cite:cb9ed626-ff2f-4c7d-a365-52ce2ff4ab98}} was recently demonstrated.
+The Heisenberg Hamiltonian appropriate for this two-spin system
+is parametrized by a single exchange constant FORMULA , whose magnitude
+defines the energy gap between the spin singlet and triplet eigenstates.
+By measuring this gap one can establish the dependence of FORMULA 
+on the gate voltages. In a more complex network of FORMULA  quantum dots
+with one spin per dot the number of exchange couplings needed is equal
+to the number FORMULA  of pairs.
+Even the simplest network of quantum dots, a triple quantum dot
+with one electron per dot,
+is described by a Heisenberg Hamiltonian with three exchange
+constants, depending nontrivially on the geometry of the system and
+the gate layout.
+This dependence was studied, e.g., by Scarola and Das
+Sarma,{{cite:17467f7f-2816-45d1-96cb-aa0c4ad740c8}} who used the Hubbard,
+variational, and exact diagonalization approaches to demonstrate that
+the three-spin model is valid only for a limited range of triple-dot
+parameters.
+Mizel and
+Lidar{{cite:11b16fe3-b936-43f2-8680-bd47e89d409d}}, {{cite:377953b5-0c98-4aa4-b8f4-e4fee9633759}}, {{cite:7b3e7869-cdaf-4aef-9f43-127fea0afdd1}}
+arrived at similar conclusions using the Heitler-London and
+Hund-Mülliken schemes to calculate the energy levels
+of three coupled dots with one electron per dot.
+In both cases the many-body effects were responsible for the
+appearance of higher-order terms in the effective spin Hamiltonian.
+The above studies were performed on triple-dot systems consisting of
+three dots on resonance, and did not account for tuning of individual
+dots. In Ref. korkusinskigimenezprb2007
+we used the Hubbard model, and in
+Ref. hawrylakkorkusinskissc2005 - the real-space wave
+functions coupled with the configuration-interaction technique (RSP-CI) to
+analyze the voltage-tunable three-electron gated lateral triple-dot
+device, however without mapping the resulting electronic properties
+onto the three-spin model.
+The Hubbard model is simple but requires parametrization
+of the Hamiltonian and cannot be directly linked to gates and applied
+voltages.
+The RSP-CI technique is very accurate but is difficult to implement
+for the future simulation of the time evolution of the quantum system.
+The purpose of this work is to present a different computational
+approach, where linear combination of harmonic orbitals (LCHO) of each
+of the dots is used to describe tunneling of electrons, and the
+configuration interaction (CI) approach is used for the treatment of
+exchange and correlation in the interacting electron problem.
+The LCHO-CI method can then be directly used for the derivation of the
+effective Heisenberg Hamiltonian consistent with gate voltages, and
+for the simulation of the quantum operations.
+We illustrate our method by analyzing the tunability of the exchange
+interaction and manipulation of the three spin system with voltage in
+a triangular quantum dot molecule.
+The triangular quantum dot molecule, realized recently by Gaudreau et
+al., {{cite:caed0fc9-542a-42e7-9893-e3a15fde2ca3}} is needed both for
+implementation of the quantum teleportation and creation of
+three-particle maximally entangled GHZ state.
+
+LCHO-CI method for the electronic structure of quantum dot
+networks
+Single electron states in a quantum dot network
+We describe here the LCHO method for the calculation of single
+electron states in a network of two-dimensional quantum dots.
+The method is illustrated on the example of a triple quantum dot.
+We consider a triple quantum dot molecule created electrostatically by
+lateral gates{{cite:caed0fc9-542a-42e7-9893-e3a15fde2ca3}} and approximate its
+lateral confinement potential by a sum of three two-dimensional
+Gaussians,
+FORMULA 
+with FORMULA  and FORMULA  being the coordinates of the center of
+FORMULA th Gaussian (FORMULA =1,2,3), FORMULA  being its depth, and FORMULA 
+being its characteristic width.
+The depth and width of each Gaussian are functions of the gate
+voltages.
+The centers (FORMULA , FORMULA ) of each dot are arbitrary but in
+the rest of the paper they are chosen to lie in the
+corners of an equilateral triangle.
+In the following we express all distances in effective Bohr radii
+FORMULA 
+and all energies in units of effective Rydberg
+FORMULA ,
+where FORMULA  and FORMULA  are the electron charge and effective mass,
+respectively, and FORMULA  is the dielectric constant of the material.
+GaAs parameters FORMULA  FORMULA  and FORMULA  give
+FORMULA  meV and FORMULA  FORMULA .
+Figure REF  shows the triple-dot confining potential for
+FORMULA  FORMULA  and FORMULA  FORMULA .
+The dimensionless Hamiltonian for one electron in the potential
+of the triple quantum dot network is written in the following form:
+FORMULA 
+Since an exact analytical solution of the eigenvalue problem of the
+Hamiltonian (REF ) is not known, an approximate method is
+needed to calculate the energies and eigenvectors of one electron in
+the quantum dot network.
+Here we employ a quantum dot analog of the Linear Combination of
+Atomic Orbitals (LCAO) method.
+Expanding the Gaussian potential of dot FORMULA  to second order in FORMULA ,
+FORMULA 
+results in the harmonic oscillator (HO) potential
+FORMULA , with
+FORMULA .
+The eigenfunctions of this HO potential,
+FORMULA 
+are products of the 1D HO eigenfunctions
+FORMULA 
+where FORMULA .
+The first three states have the explicit form
+FORMULA 
+FORMULA 
+ FORMULA
+Hence, the molecular eigenfunctions of Eq. (REF ), FORMULA , are written as linear combinations of the HO orbitals (LCHO)
+centered on each dot:
+FORMULA 
+where FORMULA  are the expansion coefficients and FORMULA  is the number of
+HO orbitals per dot.
+To simplify notation, the three indices FORMULA , FORMULA , and FORMULA  of the
+HO eigenfunctions FORMULA  have been replaced by
+the composite index FORMULA .
+Substituting this expression into the eigenvalue problem of Eq. (REF )
+and multiplying on the left by FORMULA  gives
+FORMULA 
+Defining FORMULA  as the Hamiltonian matrix in LCHO basis with
+elements
+FORMULA 
+and FORMULA  as the overlap matrix with elements
+FORMULA 
+allows us to write the generalized eigenvalue problem as
+FORMULA 
+Now, defining a new vector
+FORMULA 
+and multiplying Eq. (REF ) by FORMULA  on the left
+gives the standard eigenvalue problem
+FORMULA 
+In order to calculate FORMULA  the eigenvalue problem of
+the overlap matrix
+FORMULA 
+is solved.
+Here FORMULA  is the matrix with the eigenvectors and FORMULA  is the
+diagonal matrix with the eigenvalues.
+Once the values of these two matrices are calculated,
+FORMULA  is obtained from
+FORMULA 
+Then the energies FORMULA  (REF ) and eigenvectors
+(REF ) of the electron in the quantum dot network can be
+calculated using Eqs. (REF ) and (REF ).
+The accuracy of the solution depends on the number FORMULA  of HO
+orbitals included in the basis.
+Increasing the number of basis states increases the accuracy
+of results.
+We now analyze the matrix elements of the Hamiltonian FORMULA  in the
+basis FORMULA 
+showing explicitly the various contributions to the diagonal onsite
+energies and off-diagonal tunneling matrix elements:
+FORMULA 
+If we label each of the three dots with indices FORMULA , we can
+express the diagonal matrix elements as
+FORMULA 
+where we denote
+FORMULA ,
+with FORMULA  being the 2D harmonic oscillator potential associated
+with dot FORMULA :
+FORMULA .
+The first term in (REF ), FORMULA , is the
+dominant term.
+It is the energy of the ground state of the harmonic oscillator
+potential FORMULA .
+The second term, FORMULA , gives the correction due to non-harmonicity of the confining
+potential.
+The third and fourth terms,
+FORMULA 
+and FORMULA ,
+give the correction to the energy level of an isolated quantum dot FORMULA 
+due to the presence of the other two quantum dot potentials.
+The off-diagonal matrix elements describe electron tunneling from dot
+FORMULA  to dot FORMULA .
+The tunneling matrix elements are determined by several contributions :
+FORMULA 
+The first term is directly proportional to the overlap between HO
+wave functions centered on different dots,
+FORMULA , and is therefore small
+for dots which are far apart.
+The second term, FORMULA ,
+is the correction due to non-harmonicity of the confining potential.
+The third term, FORMULA ,
+is a “two-centered” integral, as it involves a product of three
+functions centered at two different dots.
+The fourth term, FORMULA ,
+is a “three-centered” integral being thus the smallest term.
+This analysis of FORMULA  matrix elements can also be applied to a
+larger HO basis including more shells (FORMULA , FORMULA , FORMULA ).
+
+Many-electron states in a quantum dot network
+The many-electron Hamiltonian of the quantum dot network written in
+second quantization is
+FORMULA 
+where FORMULA  and FORMULA  are, respectively, the creation and
+annihilation operators of a particle on the spin-orbital itinerant
+(molecular) state FORMULA ,
+FORMULA ,
+where FORMULA  is the electronic spinor corresponding to the spin
+FORMULA .
+Indices FORMULA  and FORMULA  run over spin-orbitals,
+FORMULA  is the single-particle energy of an electron in the
+molecular state FORMULA 
+and FORMULA  is the dimensionless Coulomb potential, FORMULA .
+The Coulomb matrix elements (CMEs) in the itinerant basis
+are computed as linear combinations of CMEs in the localized HO basis
+FORMULA 
+where
+FORMULA 
+Using the identity
+FORMULA  we have
+FORMULA 
+with
+FORMULA 
+and
+FORMULA .
+These four integrals were obtained analytically and
+the double integral (REF ) over FORMULA  and FORMULA  was
+carried out numerically.
+In order to obtain the energy levels and coherent eigenfunctions of
+FORMULA  electrons in the quantum dot network we combine the LCHO method
+with the configuration interaction (CI) approach.
+In the CI method we build the FORMULA -electron basis out of all possible
+configurations of the FORMULA  electrons on the molecular single-particle
+states.
+The many-electron eigenvalues and eigenfunctions are obtained by
+diagonalizing the Hamiltonian (REF ) in this
+FORMULA -electron basis of configurations.
+The number of these configurations FORMULA  (and hence the dimension of
+FORMULA ) depends on the number of electrons FORMULA  and the number FORMULA  of
+molecular spin-orbital states through
+FORMULA  .
+In the case of as few as FORMULA  electrons, LCHO-CI calculations using
+only FORMULA -type HO orbital per dot gives 6 spin-orbitals, leading to
+FORMULA .
+If for LCHO calculation we also include FORMULA -type HO orbitals, there
+are 18 molecular spin-orbitals, giving FORMULA , while
+including also FORMULA  HO orbitals gives FORMULA .
+The number of configurations in the 3-electron basis increases very
+rapidly with increasing number of HO orbitals in the one-electron
+calculations thus increasing the computational requirements.
+One is primarily interested in quantum networks with one electron (one
+spin) per quantum dot.
+If one retains only one orbital per dot, the number of spin-orbitals
+is FORMULA , and number of possible configurations is reduced to
+FORMULA 
+For FORMULA  spins we already have 184756 configurations.
+Further reduction in the number of configurations is possible.
+Since the Hamiltonian (REF ) is rotationally invariant,
+the Hamiltonian needs to be diagonalized only in one of the subspaces
+of lowest FORMULA .
+In what follows we present numerical results for the three-electron
+FORMULA  and FORMULA  states obtained with the LCHO-CI method.
+
+Effective Heisenberg model
+In order to establish a connection with quantum computation, it is
+convenient to approximate the Hamiltonian (REF ) of the
+system of singly-occupied dots in a quantum dot network by an
+effective Heisenberg spin Hamiltonian.
+For three electrons in three quantum dots this Hamiltonian takes the
+form
+FORMULA 
+where FORMULA  are the dimensionless exchange coupling constants,
+and FORMULA  are the Pauli matrices.
+From this Hamiltonian the quantum gate FORMULA  can be obtained by
+turning on one FORMULA  for an appropriate amount of
+time.{{cite:cd46bbc8-21e8-4ab6-b08a-3527200115c9}}
+Combining this gate with single qubit gates we can obtain the FORMULA 
+gate, and FORMULA  together with one-qubit gates form the universal
+basis for quantum computing.{{cite:2255d69d-3e13-40f6-84ab-e070d776b938}}
+Since FORMULA  commutes with FORMULA , FORMULA  matrix is
+block diagonal in the basis of eigenvectors of FORMULA .
+Here we will treat the subspace FORMULA .
+Taking the basis vectors
+FORMULA 
+we obtain
+FORMULA 
+Let us introduce a Jacobi basis of spin states:
+FORMULA ,
+FORMULA ,
+and
+FORMULA  .
+The Heisenberg Hamiltonian (REF ) in the Jacobi basis
+has the following form:
+FORMULA 
+where FORMULA  is the average exchange constant.
+We see that if all exchange constants are equal the two states
+FORMULA  and FORMULA  are degenerate eigenstates
+with energy FORMULA  and total spin FORMULA ,
+while the state FORMULA , corresponding to total spin
+FORMULA , has energy FORMULA .
+The Hamiltonian of the two degenerate states FORMULA  and
+FORMULA  is analogous to the Hamiltonian of a single spin
+in a magnetic field, where the magnetic field in the FORMULA  direction is
+proportional to FORMULA  and the magnetic
+field in the FORMULA  direction is proportional to FORMULA .
+This is why our system of three electrons in three dots can be thought
+of as a single coded qubit, whose logical states can be manipulated by
+varying the exchange constants.{{cite:d3f8267d-1c80-46e2-b19f-db3b91eaa276}}
+
+Results for a triple quantum dot network
+We illustrate our theoretical approach on an example of a triple dot molecule with parameters given in Fig. REF .
+In section REF  we present the energies and eigenfunctions of one
+electron in the triple dot molecule calculated with LCHO method.
+In section REF  the energies of three electrons in the triple dot
+molecule obtained with LCHO-CI method are analyzed and compared with
+results obtained with Hubbard model.{{cite:02352f7e-1f73-4a65-85ac-51223aad0506}}
+In section REF  we analyze the triple dot molecule
+with one and three electrons when one of the dots is being biased.
+Finally, in section REF  we use the Heisenberg model to study
+the effects of biasing of one dot in a triple dot molecule with three
+electrons and compare the results with those obtained using LCHO-CI
+method.
+One electron in a triple quantum dot 
+Figure REF  shows the set of one-electron energy
+levels in the triple quantum dot potential of Fig. REF 
+obtained by solving Eq. (REF ) for different LCHO basis sets:
+FORMULA ,
+FORMULA ,
+FORMULA , and FORMULA .
+The number of orbitals per shell in the spectra of a triple quantum
+dot is three times the number of orbitals per shell in the spectra of
+one quantum dot.
+Thus, we have three FORMULA  orbitals, six FORMULA  orbitals,
+nine FORMULA  orbitals and so on.
+The spectrum of one electron in the HO potential associated with one of
+the dots has electronic shells
+with level spacing FORMULA  FORMULA .
+For the electron in an isolated Gaussian dot and assuming LCHO
+basis sets composed of FORMULA , FORMULA  and FORMULA  HO shells one obtains FORMULA -FORMULA 
+level spacings of FORMULA , FORMULA  and FORMULA  FORMULA  respectively.
+When the electron moves in the potential of the triple dot, the
+tunneling hybridizes shells from different dots and leads to molecular
+levels.
+Comparing the spectra of one electron in the triple-dot molecule for
+increasing number of HO shells
+in the LCHO basis we find that as the number of shells increases the
+low energy molecular levels decrease their energy and converge to a
+definite value.
+The ground state of one electron in the symmetric triple-dot molecule is
+nondegenerate, and the first excited state is doubly degenerate.
+Figure REF  shows the eigenfunctions of these three levels
+(FORMULA  orbitals FORMULA  and FORMULA )
+calculated using HO basis sets with different number of orbitals.
+Results obtained from calculations with only FORMULA -type HO orbitals in
+the LCHO basis are qualitatively the same as those obtained when more
+HO orbitals (FORMULA , FORMULA , FORMULA ) are included.
+Based on this conclusion, and anticipating a larger number of
+electrons in a quantum dot network, we will build the configurations
+for the three electron problem including one-electron energies and
+eigenfunctions obtained from calculations with the FORMULA -LCHO basis.
+Here we show typical numerical values for this FORMULA -LCHO calculation.
+The off-diagonal overlap matrix elements appearing in
+Eq. (REF ) are FORMULA .
+The diagonal on-site energies defined in Eq. (REF ) are
+FORMULA  FORMULA 
+and have the contributions (FORMULA ):
+FORMULA  FORMULA ,
+FORMULA  FORMULA ,
+FORMULA  FORMULA , and
+FORMULA  FORMULA .
+On the other hand, the tunneling matrix elements hybridizing the
+atomic orbitals of adjacent dots, defined in Eq. (REF ),
+are FORMULA  FORMULA  and are composed of (FORMULA ):
+FORMULA  FORMULA ,
+FORMULA  FORMULA ,
+FORMULA  FORMULA  and
+FORMULA  FORMULA .
+After solving Eq. (REF ), three energy levels
+corresponding to hybridized FORMULA  shell and their eigenfunctions are
+obtained.
+The FORMULA -shell energy gap obtained between the ground state, FORMULA , and the degenerate excited state,
+FORMULA  and FORMULA ,
+is FORMULA  FORMULA .
+We plot these energies in Fig. REF  (first
+spectrum on the left).
+The eigenfunctions of these three levels, plotted in the left-hand
+part of Fig. REF , are:
+FORMULA 
+where FORMULA  is the off-diagonal overlap matrix element.
+This number appears because the basis eigenfunctions are not orthogonal.
+
+Three electrons in a triple quantum dot network 
+Once the one-electron problem has been solved, we proceed to solve the
+three-electron Hamiltonian (REF ) using the configuration
+interaction method (CI).
+The first step is to build the basis of three-electron configurations
+in which FORMULA  is to be diagonalized.
+This is done for the subspaces FORMULA  and FORMULA .
+There are nine three-electron configurations with FORMULA  obtained
+by distributing the three electrons among the six molecular
+spin-orbitals FORMULA  (for illustration see Fig. REF  (a)).
+These configurations can be grouped into six doubly-occupied
+configurations:
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA , and
+FORMULA ,
+and three singly-occupied configurations:
+FORMULA ,
+FORMULA , and
+FORMULA .
+For the spin-polarized system with FORMULA  there is only one
+possible configuration,
+FORMULA .
+The construction of the Hamiltonian matrix (REF ) in
+these bases of configurations requires the knowledge of Coulomb matrix
+elements.
+The Coulomb matrix elements in the itinerant basis are computed from
+Coulomb matrix elements in the localized basis as defined in
+Eq. (REF ), using the coefficients of the one-electron molecular
+eigenfunctions written in HO basis.
+The localized CMEs, Eq. (REF ), for the triple quantum dot
+potential of Fig. REF  consist of the onsite repulsion
+FORMULA  FORMULA ,
+interdot repulsion FORMULA  FORMULA ,
+and a number of small electron-electron scattering terms:
+FORMULA  FORMULA ,
+FORMULA  FORMULA ,
+FORMULA  FORMULA ,
+and FORMULA  FORMULA .
+Upon rotation into the itinerant basis we find that the largest
+Coulomb matrix elements include direct repulsion on the lowest kinetic
+energy level
+FORMULA  FORMULA 
+and on the degenerate excited state FORMULA  FORMULA .
+The direct and exchange interaction terms between the ground and
+excited states are FORMULA  FORMULA  and
+FORMULA  FORMULA , respectively,
+while the scattering term
+FORMULA  FORMULA .
+Similar matrix elements are obtained for
+the degenerate shell of excited states:
+FORMULA  FORMULA ,
+FORMULA  FORMULA , and
+FORMULA  FORMULA .
+These Coulomb matrix elements are used in the construction of the
+three-electron Hamiltonian (REF ).
+After diagonalizing this Hamiltonian in the basis
+of configurations with FORMULA : FORMULA ,
+we obtain a spectrum of nine levels, shown in Fig. REF 
+(left).
+The nine eigenfunctions FORMULA  are linear combinations of the
+basis configurations FORMULA .
+In the spectrum we can clearly distinguish two groups of levels
+separated by a large gap.
+The group in the upper part of the spectrum is composed of six energy
+levels and the group with lowest energy has three levels.
+We focus on this low-energy group.
+It is composed of a doubly degenerate ground state and a
+non-degenerate first excited state, as shown in
+Fig. REF  (b), separated by the energy gap
+FORMULA  FORMULA .
+The doubly degenerate ground state has total spin FORMULA  and
+its two eigenfunctions FORMULA  and FORMULA  have their
+biggest contribution from the three electron configurations FORMULA  and FORMULA , respectively.
+However, these states are highly correlated, with large contributions
+from other configurations.
+The eigenfunction FORMULA , with biggest contribution from the
+state FORMULA , has also contributions from
+configurations FORMULA ,FORMULA  and FORMULA :
+FORMULA ,
+while the eigenfunction FORMULA  with biggest contribution from
+state FORMULA , has also contributions from states FORMULA , FORMULA  and FORMULA :
+FORMULA , as shown in
+Fig. REF  (c).
+The first excited state of this FORMULA  three-electron spectrum,
+state FORMULA , has total FORMULA .
+Its eigenfunction FORMULA  has approximately equal
+contribution from the three singly occupied molecular configurations:
+FORMULA , FORMULA  and FORMULA .
+Taking into account all four FORMULA  subspaces, the ground state is four
+times degenerate (two levels with FORMULA  and two levels with
+FORMULA ) and the first excited state is also four times degenerate
+(one level belonging to each FORMULA  subspace).
+In order to compare the microscopic model with the Hubbard
+model{{cite:02352f7e-1f73-4a65-85ac-51223aad0506}} we propose a modified LCHO-CI
+method.
+First, we carry out the FORMULA -LCHO one-electron calculations neglecting
+the overlap matrix.
+The resulting one-electron spectrum also shows a non-degenerate ground
+state and a doubly degenerate first excited state but with a bigger
+energy gap FORMULA  FORMULA .
+Next, we apply the CI method to the FORMULA  subspace of Hamiltonian
+(REF ) but neglect all localized CME terms different
+than FORMULA  and FORMULA .
+As in the itinerant electron basis, the three-electron spectrum
+obtained in this calculation shows two groups of levels, shown in the
+right-hand part of Fig. REF .
+The lower group conserves the structure of levels (a non-degenerate
+ground state and doubly-degenerate first excited state),
+although the energy gap is bigger FORMULA .
+On the other hand the upper group of levels not only shows bigger
+energy gaps, but the fifth and sixth excited states, nondegenerate in
+the full LCHO-CI calculation, become degenerate.
+
+Triple dot under bias
+In this section we study the evolution of the energy spectrum of a
+three-electron molecule as a function of FORMULA , i.e., the depth of dot
+1.
+The applied bias is kept smaller than the FORMULA -FORMULA  energy gap of one
+electron in one quantum dot in order to prevent population of the
+biased dot with two electrons.
+This is done so that we can attempt to map the three electron spectra
+onto the three spin spectra obtained in the Heisenberg model.
+We carry out our calculations for the case of FORMULA -HO orbitals as LCHO
+basis.
+Figure REF  (a) shows the resulting one-electron
+spectra as a function of bias of dot 1.
+The bias is measured in the units of the one-electron energy gap
+FORMULA  FORMULA .
+When the dot is biased, the degenerate excited levels split due to the
+breaking of symmetry.
+This energy splitting increases with increasing bias .
+It is also observed that all energies decrease, but each of the three
+energies at a different rate.
+This can be understood by analyzing the evolution of orbitals
+associated with these energies.
+When the three dots are on resonance, the two excited levels are
+degenerate, and any linear combination of the two eigenfunctions
+FORMULA  and FORMULA , defined in
+Eq. (REF ), is also an eigenfunction of the
+system corresponding to the same energy.
+This leads to equal probability of finding of the electron in each of
+the dots.
+However, if one of the dots is different, the excited level splits into
+two, and the wave functions FORMULA  and FORMULA 
+reflect this symmetry breaking.
+The first excited state FORMULA  has a contribution from the
+HO orbital corresponding to the first dot that decreases
+with increasing bias FORMULA  (at the same time the contribution of this
+orbital increases in the ground state).
+On the other hand, the second excited state FORMULA  does
+not have any contribution from this orbital.
+Figure REF (b) shows the spectra of three electrons
+with FORMULA  in the triple dot molecule for different values of
+FORMULA .
+We are interested in the three lowest levels as these are the ones
+relevant for quantum information processing and thus the ones that
+will be mapped onto Heisenberg spectra.
+Figure REF (a) shows the energies of these
+levels measured from the ground state energy.
+The degenerate ground state splits with bias.
+When bias is increased, the energy gap between the ground state and
+the first excited state increases, while the energy gap between the
+first and second excited states decreases.
+
+Heisenberg model for three electrons
+We now attempt to map the three-electron spectrum for the case in
+which dot 1 is biased onto the spectrum of the three-spin
+Heisenberg Hamiltonian (REF ) in the Jacobi basis.
+The mapping relies on the assumption that biasing dot 1 can be
+modeled by bias-dependent but equal parameters FORMULA ,
+while FORMULA  is different, but it may also be a function of bias.
+With FORMULA  equal FORMULA , the two Jacobi states FORMULA 
+and FORMULA  are eigenstates, with energies
+FORMULA 
+and FORMULA ,
+respectively, and FORMULA  is an eigenstate with energy FORMULA .
+The three eigenstates can be written in a way which emphasizes the
+role of the electron in the dot under bias (dot 1):
+FORMULA  and
+FORMULA .
+Here the singlet and triplet states involving the second and third
+dot were written as
+FORMULA ,
+FORMULA  and
+FORMULA .
+Figure REF (b) shows a plot of the energy
+spectrum of the Heisenberg Hamiltonian
+as a function of FORMULA  from FORMULA  to FORMULA  with
+FORMULA  (antiferromagnetic ground state).
+By changing FORMULA  from FORMULA  to FORMULA  we drive the system from three
+equal dots to dot 1 totally decoupled.
+We compare this spectrum to that obtained in the full electronic
+calculation, shown in Fig. REF (a).
+As we can see, the two spectra behave in a similar manner as a
+function of bias of one of the dots ranging from three
+equal dots (zero bias) to a bias of FORMULA  times the one-electron energy
+gap.
+We can now propose a procedure of finding the parameters FORMULA  by
+fitting the energy gaps in the Heisenberg spectrum,
+FORMULA  and
+FORMULA , to those in the
+LCHO-CI calculation.
+The value of FORMULA  can be extracted at zero bias from the gap
+between the doubly-degenerate ground and the excited states.
+Assuming FORMULA  to be independent of the bias of dot 1,
+two values of FORMULA  - one from each gap of the spectrum -
+can be obtained and averaged for each step of bias.
+The numerical results show a decreasing value of the coupling constant
+FORMULA  as the bias is being increased.
+This is the expected behavior because as we bias dot 1 the exchange
+of the electron in dot 1 with electrons in dots 2 and 3 decreases.
+
+Conclusions
+We presented a computational LCHO-CI approach allowing for the
+simulation of exchange interactions in gated lateral quantum
+dot networks.
+The method was illustrated by analyzing the electronic properties of a
+lateral triple quantum dot network with one electron per dot.
+The LCHO-CI calculations show a low-energy spectrum composed of an
+antiferromagnetic (FORMULA ) ground state separated by a small gap from
+the spin polarized (FORMULA ) excited state, and separated by a large
+gap from the remaining excited levels involving double occupancy
+of quantum dots.
+We have shown that the behavior of these eight low-energy levels with
+bias of one quantum dot can be effectively reproduced by a Heisenberg
+spin model for a certain range of bias applied to quantum dots.
+For each value of bias, exchange coupling constants can be calculated
+from energy gaps in LCHO-CI model.
+We have thus established a connection between physical ”external”
+parameters such as voltages, and exchange interaction among spins in
+the Heisenberg model.
+
+Acknowledgment
+We wish to thank A. Sachrajda, L. Gaudreau, A. Kam, and S. Studenikin
+for helpful discussions.
+The authors are grateful to the Canadian Institute for Advanced Research,
+and IPG to Spanish Ministerio de Educación y Ciencia grant
+No. AP-2004-0143 for financial support.
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 

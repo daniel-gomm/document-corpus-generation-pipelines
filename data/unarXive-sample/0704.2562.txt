@@ -1,0 +1,626 @@
+
+
+Boundary triplets and FORMULA -functions
+Malcolm BrownMarco MarlettaSerguei NabokoIan Wood
+Boundary triplets and FORMULA -functions for non-selfadjoint
+operators, with applications to elliptic PDEs and block operator
+matrices
+Malcolm Brown
+Marco Marletta
+Serguei Naboko
+Ian Wood
+School of Computer Science, Cardiff University, Queen's Buildings, 5 The Parade, Cardiff CF24 3AA, UKMalcolm.Brown@cs.cardiff.ac.uk
+School of Mathematics, Cardiff University, Senghennydd Road, Cardiff CF24 4AG, UKMarlettaM@cardiff.ac.uk
+Department of Math. Physics, Institute of Physics, St. Petersburg State University, 1 Ulianovskaia, St. Petergoff, St. Petersburg, 198504, Russianaboko@snoopy.phys.spbu.ru
+Institute of Mathematical and Physical Sciences, University of Wales Aberystwyth, Penglais, Aberystwyth, Ceredigion SY 23 3BZ, UKian.wood@aber.ac.uk
+Serguei Naboko wishes to thank British EPSRC for supporting his visit to Cardiff under the grant EP/C008324/1 "Spectral Problems on Families of Domains and Operator M-functions". He also wishes to thank C
+ardiff University for hospitality during the visit. Ian Wood wishes to thank British EPSRC for support under the same grant. The authors are grateful to Professors Yury Arlinskii, Fritz Gesztesy, Gerd Grubb, Mark Malamud, Andrea Posilicano and Vladimir Ryzhov for useful comments on an earlier version of this paper.35J25, 35P05, 47A10, 47A11
+
+Starting with an adjoint pair of operators, under suitable abstract versions of standard PDE hypotheses, we consider the Weyl FORMULA -function of extensions of the operators. The extensions are determined by abstract boundary conditions and we establish results on the relationship between the FORMULA -function as an analytic function of a spectral parameter and the spectrum of the extension. We also give an example where the FORMULA -function does not contain the whole spectral information of the resolvent, and show that the results can be applied to elliptic PDEs where the FORMULA -function corresponds to the Dirichlet to Neumann map.
+
+Introduction
+The theory of boundary value spaces associated with symmetric operators
+has its origins in the work of Kočubeĭ {{cite:2c2192ff-18ae-4e74-b6f5-a044f42f40fc}} and Gorbachuk and Gorbachuk
+{{cite:e32ba93d-32e7-4944-a730-940cb35444b1}} and has been the subject of intense activity in the former
+Soviet Union, with major contributions from many authors. While we cannot
+undertake a comprehensive survey of the literature here, we recommend that the
+reader consult the works of Derkach and Malamud who developed the theory of the Weyl-FORMULA -function in the context of boundary value spaces (e.g. {{cite:76066574-4a1d-4bc4-8136-e5d13b2ddf41}}, {{cite:e9415f3c-08de-4c90-be1c-32335e6c9e9a}}); the work of V.A. Mikhailets (e.g. the very elegant application of the theory of boundary value
+spaces by Mikhailets and Sobolev {{cite:d820edd8-9305-4c94-9a63-423273ef1242}} to the common eigenvalue
+problem for periodic Schrödinger operators); the work of Kuzhel and Kuzhel
+(e.g. {{cite:0c7bcd58-431a-4727-8776-15baacec9d3d}}, {{cite:a8641504-be29-43b4-8272-8653c1267e60}}); the work of Brasche, Malamud and Neidhardt
+(e.g. {{cite:a24e131e-03ee-46ad-9f91-e70071a449ec}}); the work of Storozh (in particular, {{cite:7d56a2db-cf1f-432d-8074-8a90f8596eb5}}) and the recent work of Kopachevskiĭ and Kreĭn {{cite:fc243f00-bfb0-4748-b12f-833b47208642}} and Ryzhov {{cite:a1431c88-bba2-4057-82e6-e99f6d20fc17}} on abstract Green's formulae, again Ryzhov {{cite:b920068d-483c-4e3d-9623-053d632565aa}} on functional models and Posilicano {{cite:f62bb376-3a81-4a20-a83b-a16dba58d0bf}} characterising extensions and giving some applications to PDEs.
+Adjoint pairs of second order elliptic operators, their extensions and boundary value problems were studied in the paper of Vishik {{cite:65a97c1d-4cf4-485f-9dd9-9c6c3b766459}}. For adjoint pairs of abstract operators, boundary triplets were introduced by Vainerman {{cite:fe6c1eb1-31be-4857-b930-ff97cdbfd787}}
+and Lyantze and Storozh {{cite:69a85033-7d57-4580-8907-48bb8624d422}}. Many of the results proved for the symmetric case, such
+as characterising extensions of the operators and investigating spectral properties via the
+Weyl-FORMULA -function, have subsequently been extended for this situation: see, for instance,
+Malamud and Mogilevski {{cite:07bb1826-feee-421e-94bf-2a67f16f993f}} for adjoint pairs of operators, Langer and Textorius
+{{cite:f9626f38-935a-468b-8a36-c0f79dae4036}} and Malamud {{cite:53af094d-6708-4da7-988b-28cfbd1a32b1}} for adjoint pairs of contractions, and Malamud and Mogilevski
+{{cite:8c6a1330-9ec1-4718-b0e0-f1d6e19f56e8}}, {{cite:6271b5d5-733b-4ec1-9997-6128e4860a07}} for adjoint pairs of linear relations.
+For the case of sectorial operators and their FORMULA -functions we should mention
+especially the work of Arlinskii {{cite:6bc99233-561a-4c67-8f54-081afdd1797c}}, {{cite:a0d24f13-fbf9-4459-b423-ab3f71bbf941}}, {{cite:32112cfa-6364-4ee5-a9fe-b99010d8c410}}
+who uses sesquilinear form methods.
+The approach using adjoint pairs of operators does not
+require any assumption that the operators be sectorial. The price which must be paid
+for this is that there are other hypotheses (e.g. non-emptiness of the resolvent set of
+certain operators or, in our approach, an abstract unique continuation assumption)
+which must be verified before this approach can be applied.
+In the context of PDEs there has also been extensive work on Dirichlet to Neumann maps, also
+sometimes known as Poincaré-Steklov operators, especially in the inverse problems
+literature. These operators have physical meaning, associating, for instance, a surface
+current to an applied voltage. For some applications of them to quantum networks we refer
+to recent papers by Pavlov et al. {{cite:7af80e0d-e134-440a-a015-04a084dca82c}} and {{cite:38214c96-3d08-4ab4-8615-fae627f877c0}}. These maps
+are, in some sense, the natural PDE realization of the abstract FORMULA -function
+which appears in the theory of boundary value spaces. Amrein and Pearson {{cite:8c216df8-f327-45e4-8d3e-1db10f294137}} generalised several results from the classical Weyl-FORMULA -function for the one-dimensional Sturm-Liouville problem to the case of Schrödinger operators, calling them FORMULA -functions, in particular they were able to show nesting results for families of FORMULA -functions on exterior domains.
+However there have been relatively few applications of the theory of boundary value spaces to PDEs. A chapter in Gorbachuck and Gorbachuk {{cite:e32ba93d-32e7-4944-a730-940cb35444b1}} deals with
+a PDE on a tubular domain by reduction to a system of ODEs with operator
+coefficients, and there are some papers which deal with special perturbations of
+PDE problems which result in symmetric operators with (crucially) finite
+deficiency indices, e.g. the very recent paper of Brüning,
+Geyler and Pankrashkin {{cite:88c7bbbb-4108-4ec9-b84e-10dac400d6bf}}. The case of symmetric operators with infinite deficiency indices is studied by Behrndt and Langer in {{cite:b1457fe5-882a-4c25-aa6a-1debcedc4572}}. However for symmetric elliptic PDEs a
+concrete realization of the boundary value operators whose existence is
+guaranteed by the abstract theory, and a precise description of the relationship
+between the abstract FORMULA -function and the classical Dirichlet to Neumann map,
+requires a technique due to Vishik {{cite:65a97c1d-4cf4-485f-9dd9-9c6c3b766459}} and Grubb {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}} in the choice of the
+boundary value operators which we describe in this paper.
+In this paper we consider the non-symmetric case. Using the setting of boundary triplets from Lyantze and Storozh
+{{cite:69a85033-7d57-4580-8907-48bb8624d422}}, we introduce an FORMULA -function and prove
+the following results:
+i.
+the relationship between poles of the FORMULA -function as an analytic
+function of a spectral parameter and eigenvalues of a corresponding operator
+determined by abstract boundary conditions, under a new abstract unique
+continuation hypothesis which is natural in the context of PDEs;
+ii.
+results concerning behaviour of the FORMULA -function near the
+essential spectrum;
+iii.
+a proof that the FORMULA -function does not contain the whole spectral information of the resolvent, by consideration of a
+Hain-Lüst problem;
+iv.
+results concerning the analytic behaviour of Dirichlet to Neumann
+maps for elliptic PDEs, though these have also been obtained recently in a
+concrete way by F. Gesztesy et al. {{cite:62189b7b-dd02-4f04-a1be-dcb797882f07}}.
+
+
+Basic concepts and notation
+Throughout, we will make the following assumptions:
+
+FORMULA  and FORMULA  are closed densely defined operators on a Hilbert space FORMULA .
+
+FORMULA  and FORMULA  are an adjoint pair, i.e. FORMULA  and FORMULA .
+
+Whenever considering FORMULA  as a linear space it will be equipped with the graph norm. Since FORMULA  is closed, this
+makes FORMULA  a Hilbert space.
+
+Proposition 2.1 (Lyantze, Storozh '83). For each adjoint pair of closed densely defined operators on FORMULA ,
+there exist “boundary spaces” FORMULA , FORMULA  and “boundary operators”
+FORMULA 
+such that for FORMULA  and FORMULA  we have an abstract Green formula
+FORMULA 
+The boundary operators FORMULA , FORMULA , FORMULA  and FORMULA  are bounded with respect to the graph norm and surjective. Moreover, we have
+FORMULA 
+The collection FORMULA  is called a boundary triplet for the adjoint pair FORMULA .
+
+The proof in Russian is in {{cite:69a85033-7d57-4580-8907-48bb8624d422}}. For the more general situation of linear relations a proof in English can be found in {{cite:6271b5d5-733b-4ec1-9997-6128e4860a07}}.
+Remark 2.2 Using this setting, in {{cite:6271b5d5-733b-4ec1-9997-6128e4860a07}} Malamud and Mogilevskii go on to define Weyl FORMULA -functions and FORMULA -fields associated with boundary triplets and to obtain Kreĭn formulae for the resolvents. In the same spirit we introduce FORMULA -functions and what we call the solution operator. In our setting, these will depend on a parameter given by an operator FORMULA . To take account of this technical difference and to keep this paper as self-contained as possible we will develop the full theory in Sections 2 and 3 here, noting that similar definitions and results can be found in {{cite:6271b5d5-733b-4ec1-9997-6128e4860a07}}.
+
+Definition 2.3 
+We consider the following extensions of FORMULA  and FORMULA : Let FORMULA  and FORMULA  and define
+FORMULA 
+In the following, we will always assume FORMULA , in particular FORMULA  will be a closed operator.
+For FORMULA , we define the FORMULA -function via
+FORMULA 
+and for FORMULA , we define
+FORMULA 
+
+Lemma 2.4 FORMULA  and FORMULA  are well-defined.
+
+We prove the statement for FORMULA . Suppose FORMULA , then there exists FORMULA  such that FORMULA . To see this, choose any FORMULA  such that FORMULA . Let FORMULA . Then FORMULA  and FORMULA .
+Now assume FORMULA  for some FORMULA .
+Then FORMULA . As FORMULA , there exists FORMULA  such that FORMULA .
+Then FORMULA , so FORMULA , in particular, FORMULA .
+
+ The solution operator  FORMULA
+Definition 3.1 For FORMULA , we define the operator FORMULA  by
+FORMULA 
+i.e. FORMULA .
+
+Lemma 3.2 
+FORMULA  is well-defined for FORMULA .
+
+For FORMULA , choose any FORMULA  such that FORMULA . Let
+FORMULA . Then FORMULA  and FORMULA ,
+so a solution to (REF ) exists and is given by
+FORMULA 
+for any FORMULA  such that FORMULA .
+Moreover, the solution to (REF ) is unique: Suppose FORMULA  and FORMULA  are two solutions. Then
+FORMULA , so FORMULA  and FORMULA .
+As FORMULA , FORMULA .
+Proposition 3.3 
+Let FORMULA . The map from FORMULA  given by FORMULA  is analytic.
+
+Fix FORMULA . Now choose FORMULA  in the proof of Lemma REF . Then
+FORMULA 
+which is analytic in FORMULA .
+Lemma 3.4 
+Let FORMULA , FORMULA  and
+FORMULA 
+Then FORMULA  and FORMULA  are Hilbert spaces and the operator FORMULA  with FORMULA  is closed as an operator from
+FORMULA  to FORMULA .
+
+Obviously, FORMULA  and FORMULA  are norms induced by scalar products. It remains to prove completeness.
+Since FORMULA  is continuous, FORMULA  is a closed subspace of FORMULA , hence complete.
+Assume FORMULA  is a Cauchy sequence in FORMULA . Then FORMULA  is Cauchy in FORMULA  and converges to FORMULA  and
+FORMULA  is Cauchy in FORMULA  and converges to FORMULA . As FORMULA  is continuous in the graph norm and
+FORMULA  is given by FORMULA , we have
+FORMULA 
+so FORMULA , i.e. FORMULA  and FORMULA .
+Therefore, FORMULA  is complete and the calculation also proves closedness of FORMULA .
+Remark 3.5 As FORMULA , we have FORMULA , so
+FORMULA 
+gives an equivalent norm on FORMULA .
+
+Corollary 3.6 If FORMULA , then FORMULA  is continuous. In particular, FORMULA  is continuous.
+
+This follows from the Closed Graph Theorem. See for example {{cite:da96a103-bf1e-4201-a9bc-fa0019426ac5}}.
+For the case FORMULA , we now want to give a representation of the adjoint of FORMULA .
+We start with an abstract result:
+Lemma 3.7 
+Let FORMULA  be a closed subspace of the Hilbert space FORMULA  and let FORMULA  be another Hilbert space.
+Suppose FORMULA  is invertible and FORMULA  is such that
+FORMULA 
+Then FORMULA .
+
+Let FORMULA  and FORMULA  the orthogonal projection. Then we have FORMULA  or FORMULA  on FORMULA .
+Therefore, FORMULA  on FORMULA .
+Theorem 3.8 Assume FORMULA .
+Then FORMULA .
+
+Let FORMULA , FORMULA . Then (REF ) implies
+FORMULA 
+so FORMULA . On the other hand, let FORMULA .
+We need to show FORMULA . Let FORMULA  and FORMULA 
+for FORMULA . Then
+FORMULA 
+so FORMULA . Since the adjoint of the
+resolvent is the resolvent of the adjoint,
+FORMULA .
+Surjectivity of FORMULA  then gives the result.
+Proposition 3.9 Assume FORMULA  and let FORMULA . Then the adjoint of
+FORMULA  is given by FORMULA ,
+FORMULA 
+
+Choose FORMULA , FORMULA . Then by (REF ),
+FORMULA 
+As FORMULA  is continuous and continuously invertible, both FORMULA  and FORMULA 
+exist and FORMULA .
+Let FORMULA . Since FORMULA , FORMULA  is arbitrary.
+Now, by the above calculation,
+FORMULA 
+Therefore, by Lemma REF , we have
+FORMULA .
+Remark 3.10
+
+The factor FORMULA  is somewhat artificial and comes from the choice of the norm in FORMULA .
+
+Note that since (REF ) only holds for FORMULA , FORMULA  is not defined on the whole of
+FORMULA . Obviously the operator
+FORMULA 
+is a continuous extension of FORMULA  to FORMULA  and FORMULA . Here, FORMULA  denotes the orthogonal projection from FORMULA  onto FORMULA .
+
+
+
+Isolated eigenvalues and poles of the FORMULA -function
+For a number of results in what follows we will require an abstract unique continuation hypothesis. We say that the operator FORMULA  satisfies the unique continuation hypothesis if
+FORMULA 
+Similarly, FORMULA  satisfies the unique continuation hypothesis if
+FORMULA 
+Whenever either of these conditions is required, it will be stated explicitly.
+Remark 4.1 Note that these assumptions are satisfied in the PDE case under fairly general conditions on the operator and the domain (c.f. for example {{cite:2e5657bf-d5fc-434f-90e6-fa84e2b357b9}}).
+
+Lemma 4.2 
+Assume the unique continuation hypothesis holds for FORMULA . Then the range of FORMULA  is dense in FORMULA .
+
+Suppose there exists FORMULA  such that FORMULA 
+for all FORMULA . This implies FORMULA  and
+FORMULA . The unique continuation hypothesis together with (REF ) implies FORMULA .
+The following definition and Laurent series expansion of the resolvent are standard and can be found in {{cite:feb544cc-d882-4f04-a80f-a1422323ae79}}. They will be required in a later proof.
+Proposition 4.3 
+Let FORMULA  be a closed operator on a Banach space FORMULA , FORMULA  an isolated point in the spectrum of FORMULA  and FORMULA  be a closed path in the resolvent set of FORMULA  separating FORMULA  from the rest of the spectrum.
+The spectral projection associated with FORMULA  is defined by
+FORMULA 
+We also define the eigennilpotent associated with  FORMULA
+FORMULA 
+and
+FORMULA 
+For FORMULA  in a neighbourhood of FORMULA  the Laurent series expansion of the resolvent is given by
+FORMULA 
+
+Our aim is now to determine the relationship between the behaviour of the FORMULA -function FORMULA  as an analytic function and isolated eigenvalues of the operator FORMULA .
+Theorem 4.4 
+Let FORMULA  be an isolated eigenvalue of finite algebraic multiplicity of the operator FORMULA . Assume the unique continuation hypothesis holds for FORMULA  and FORMULA .
+Then FORMULA  is a pole of finite multiplicity of FORMULA 
+and the order of the pole of FORMULA  at FORMULA  is the same as the order of the pole of FORMULA  at FORMULA .
+
+We use the following representation of the FORMULA -function using the resolvent:
+FORMULA 
+where FORMULA  is any element in FORMULA  such that FORMULA . Obviously,
+any pole of the FORMULA -function has to be a pole of at least the same order of the resolvent.
+It remains to show that the order of the singularity of the pole of the resolvent is preserved despite the presence of the other operators on the right hand side. To do this, we look at the Laurent series expansion.
+Let FORMULA  be an isolated eigenvalue of finite algebraic multiplicity of the operator FORMULA . In this case, there exists FORMULA  such that the resolvent has a pole of order FORMULA  at FORMULA  and, using the notation from Proposition REF , for FORMULA  in a neighbourhood of FORMULA  the singular part in the representation of the resolvent (REF ) is given by
+FORMULA 
+In particular, FORMULA  and FORMULA . Therefore, there exists FORMULA  such that FORMULA  and FORMULA  solves
+FORMULA 
+i.e. FORMULA  is an eigenfunction of FORMULA  with eigenvalue FORMULA .
+We want to show that after substituting the expansion of the resolvent (REF ) into FORMULA , the most singular term is non-trivial, i.e. FORMULA  for some FORMULA .
+First, we show that there exists FORMULA  satisfying FORMULA  such that the problem FORMULA  is solvable and FORMULA .
+To see this, choose FORMULA  such that FORMULA  and approximate it by FORMULA  which is possible by Lemma REF . Since FORMULA  is continuous, FORMULA  and for FORMULA  sufficiently large, FORMULA . Simply choose FORMULA .
+Now assume FORMULA  solves FORMULA  and FORMULA . Then FORMULA  and
+FORMULA 
+giving a contradiction.
+Now we can choose FORMULA  in (REF ) as the solution FORMULA  we have just found. Then FORMULA  contains the term
+FORMULA 
+so the most singular term in is of order FORMULA  and given by
+FORMULA 
+Now FORMULA  is a (non-trivial) eigenfunction of FORMULA  so by the unique continuation hypothesis, FORMULA .
+Under slightly stronger hypotheses, we will show next that
+isolated eigenvalues of FORMULA  correspond precisely to isolated poles of the FORMULA -function.
+We start by proving some identities involving the FORMULA -function.
+For the FORMULA -functions associated with two different boundary conditions we have the following identity:
+Proposition 4.5 For FORMULA , we have on  FORMULA
+FORMULA 
+Correspondingly, we have
+FORMULA 
+
+We prove (REF ). Then (REF ) follows by applying FORMULA  to both sides. Let FORMULA , then
+FORMULA , so
+FORMULA 
+since FORMULA .
+The next proposition gives a representation of the FORMULA -function in terms of the resolvent.
+Proposition 4.6 Let FORMULA . Then on  FORMULA
+FORMULA 
+
+Given FORMULA , choose FORMULA  such that FORMULA .
+Set
+FORMULA 
+Then FORMULA , FORMULA  and FORMULA 
+is the unique function with these properties, as FORMULA . Moreover, FORMULA . Choose FORMULA .
+Then
+FORMULA 
+We now give a representation of the resolvent in terms of the FORMULA -function. This type of formulae are usually called Kreĭn's formulae.
+Theorem 4.7 Let FORMULA , FORMULA . Then
+FORMULA 
+
+Let FORMULA . Set FORMULA . Since FORMULA , we have
+FORMULA . Then
+FORMULA 
+Set FORMULA . Then, by (REF ), FORMULA 
+and FORMULA . Therefore,
+FORMULA 
+Remark 4.8 If FORMULA , then we have
+FORMULA 
+
+The case FORMULA  is particularly simple:
+Corollary 4.9 Let FORMULA , FORMULA . Then
+FORMULA 
+
+We our now ready to prove our main result.
+Theorem 4.10 Let FORMULA . We assume that FORMULA  and that
+there exist operators FORMULA  such that FORMULA  or FORMULA .
+Then FORMULA  is an isolated eigenvalue of finite algebraic multiplicity of the operator FORMULA  if and only if
+FORMULA  is a pole of finite multiplicity of FORMULA .
+In this case, the order of the pole of FORMULA  at FORMULA  is the same as the order of the pole of FORMULA  at FORMULA .
+
+Let FORMULA  be an isolated eigenvalue of finite algebraic multiplicity FORMULA  of the operator FORMULA .
+Then, since FORMULA , and FORMULA  is analytic in FORMULA  by Proposition REF ,
+(REF ) implies that FORMULA  must
+have a pole of at least order FORMULA  at FORMULA , while (REF ) implies that the pole is at most of order FORMULA .
+Similarly, if FORMULA  has a pole of order FORMULA  at FORMULA , (REF ) implies that the resolvent of FORMULA  must have a pole of order
+at least FORMULA  at FORMULA , while (REF ) implies that the pole is at most of order FORMULA . Therefore, FORMULA  is an eigenvalue of FORMULA 
+(c.f. for example {{cite:feb544cc-d882-4f04-a80f-a1422323ae79}}).
+Remark 4.11 Note that the assumption that FORMULA  can be chosen such that FORMULA  implies the unique continuation property for FORMULA .
+To see this, let FORMULA .
+Then FORMULA , so FORMULA  and FORMULA , so FORMULA .
+
+
+Behaviour of the FORMULA -function near the essential spectrum
+By the essential spectrum of an operator FORMULA , we denote all points in the spectrum that are not isolated eigenvalues of finite multiplicity. In this section we will investigate what can be said about the essential spectrum from the behaviour of the FORMULA -function. In the case of symmetric operators, these questions have been addressed by Brasche, Malamud and Neidhardt in {{cite:a24e131e-03ee-46ad-9f91-e70071a449ec}}.
+Theorem 5.1 
+Let FORMULA  such that there exists FORMULA , with FORMULA  for all FORMULA .
+Suppose there is a linear subspace FORMULA  such that FORMULA  is dense
+in FORMULA  and
+
+for every FORMULA  we can find FORMULA  satisfying
+
+FORMULA ,
+
+FORMULA ;
+
+
+FORMULA  is surjective;
+
+for all FORMULA , FORMULA ;
+
+ FORMULA
+
+Then for all FORMULA  the weak limits FORMULA  exist.
+Moreover,
+FORMULA 
+Here, the left hand equality is to be interpreted as
+FORMULA 
+
+Remark 5.2 In the case of an elliptic PDE in an unbounded domain with finite boundary, the subspace FORMULA  could consist of all finitely
+supported functions.
+Condition (4) is our main assumption, while (1) is a kind of inverse trace theorem and (2) and (3) are technical assumptions.
+
+Given FORMULA , choose FORMULA  such that FORMULA . Set
+FORMULA 
+Then FORMULA , FORMULA  and FORMULA .
+Green's identity (REF ) for any FORMULA  gives
+FORMULA 
+Setting FORMULA  and inserting our expression for FORMULA  on the left hand side, the equation becomes
+FORMULA 
+Now assume FORMULA . Since FORMULA , we can take limits on the left hand side. The assumption that
+FORMULA  is surjective then gives weak convergence
+of FORMULA  in FORMULA  and we get
+FORMULA 
+Furthermore,
+FORMULA 
+Since
+FORMULA  is surjective, equality of the weak limits of the resolvent implies equality of the weak limits of the FORMULA -function.
+We would like to prove a converse of Theorem REF , i.e. determine the behaviour of the resolvent from that of the FORMULA -function. However, we only get the following partial results:
+Proposition 5.3 Assume the unique continuation hypothesis holds for FORMULA  and FORMULA  and that the weak limits
+FORMULA 
+exist for every FORMULA  and that there exists some FORMULA  such that
+FORMULA 
+Then FORMULA .
+
+Remark 5.4 Note that in {{cite:a24e131e-03ee-46ad-9f91-e70071a449ec}} it is shown that for symmetric operators FORMULA  implies FORMULA .
+
+As in the proof of Theorem REF , we arrive at equation (REF ). By assumption, the limit on the right hand side exists.
+Assume that FORMULA . Then we can take limits on the left hand side and get equation (REF ) with the l.h.s. equal to 0
+contradicting FORMULA . Thus FORMULA  and FORMULA  is not in the isolated point spectrum, as the weak limits of the FORMULA -function exist which would contradict Theorem REF .
+Remark 5.5 The problem in getting a stronger statement lies in the fact that the
+FORMULA -function does not contain all the singularities of the resolvent, but
+only those that are contained on a certain subspace. We plan to
+discuss this
+topic and other properties related to the continuous spectrum and
+behaviour of the FORMULA -function in a forthcoming paper.
+
+In what follows, we will show that for a block operator matrix it is possible
+to have a dense proper subspace FORMULA  for which the weak limit of the FORMULA -functions exists,
+but the weak limit for the resolvents does not exist. We also hope that this example,
+demonstrating the calculation of the FORMULA -function in a non-trivial block
+operators matrix setting, is of independent interest.
+A block matrix-differential operator related to the Hain-Lüst operator
+Let
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  are FORMULA -functions, and the domain of
+the operator is given by
+FORMULA 
+Also let
+FORMULA 
+It is then easy to see that
+FORMULA 
+where
+FORMULA 
+Consider the operator
+FORMULA 
+where FORMULA .
+It is known (see, e.g., {{cite:d74419cd-f4b0-4014-83e9-e6c1c2c889c0}}) that
+FORMULA . This result is independent
+of the choice of boundary conditions.
+We now calculate the function FORMULA  such that
+FORMULA 
+for FORMULA . In our calculation we assume
+that FORMULA . The condition
+FORMULA  yields the equations
+FORMULA 
+which, in particular, give
+FORMULA 
+The linear space FORMULA  is therefore
+spanned by the functions
+FORMULA 
+and
+FORMULA 
+where FORMULA  and FORMULA  are solutions of the initial value problems
+consisting of the differential equation (REF ) equipped
+with initial conditions
+FORMULA 
+FORMULA 
+A straightforward calculation shows that
+FORMULA 
+Note that the FORMULA  depend on FORMULA  and FORMULA  but that the
+FORMULA -dependence is suppressed in the notation, except when necessary.
+Another elementary calculation now shows that
+FORMULA 
+FORMULA 
+FORMULA 
+As an aside, notice that all these expressions contain a denominator
+FORMULA  and that
+FORMULA  is an eigenvalue precisely when
+this denominator is zero.
+We now fix FORMULA , let FORMULA ,
+and consider the limits FORMULA .
+For simplicity we consider the case in which FORMULA  is injective and
+FORMULA  for some FORMULA  and we suppose that FORMULA  for
+FORMULA  for some small FORMULA . In
+this case the coefficient
+FORMULA 
+is well defined as a function of FORMULA  for all FORMULA  in a
+punctured neighbourhood in FORMULA  of the point FORMULA : in particular,
+FORMULA  is identically zero for all FORMULA ,
+for all FORMULA . Consequently the solutions
+FORMULA  and FORMULA  are well defined for all
+FORMULA , for all FORMULA  in a neighbourhood of FORMULA .
+The FORMULA -function may have an isolated pole at some point
+FORMULA  near FORMULA  if FORMULA 
+happens to be zero; such a pole will be an eigenvalue of the operator
+FORMULA  embedded in the essential spectrum and therefore
+a more complicated singularity of FORMULA .
+Embedded eigenvalues may occur even without the hypothesis that FORMULA 
+vanishes on some subinterval FORMULA : see {{cite:8ce2b5a3-94ba-43a4-a22a-7182a43b6181}}.
+However embedded eigenvalues are atypical and are generally destroyed by
+an arbitrarily small perturbation to the problem. In the absence of any
+embedded eigenvalues, FORMULA  will be analytic in the neighbourhood
+FORMULA  of the point FORMULA  and we shall have,
+in the sense of norm limits,
+FORMULA 
+For the resolvent, suppose that
+FORMULA 
+Then FORMULA  must satisfy
+FORMULA 
+together with the boundary conditions, which is a uniquely solvable problem
+in the absence of embedded eigenvalues (recall that FORMULA  is
+well defined as a function of FORMULA  for all FORMULA  in a neighbourhood of
+FORMULA ). In particular, FORMULA  does not have a singularity of
+any type at FORMULA .
+Now FORMULA  is given by
+FORMULA 
+We examine the question of existence of weak limits of the type described
+in Theorem REF :
+FORMULA 
+where FORMULA  and FORMULA  lie in some space FORMULA 
+and FORMULA . Evidently the first component FORMULA 
+of the vector FORMULA  will cause
+no problems whatever FORMULA  we choose:
+FORMULA 
+will be analytic in a neighbourhood of FORMULA . Thus we turn to
+the second component FORMULA . Take FORMULA  to be the space of
+two-component smooth functions. Suppose that FORMULA  is differentiable at
+FORMULA  with FORMULA . If FORMULA  is given by (REF )
+then the inner product
+FORMULA 
+with FORMULA  has a limit as FORMULA  tends to
+zero from above; similarly as it has a (generally different) limit as
+FORMULA  tends to zero from below. The difference of the limits is
+FORMULA 
+However the FORMULA -function has no singularity at all. We have therefore
+constructed an example in which the resolvent has non-equal weak limits
+but the FORMULA -function has equal norm limits.
+It is worth emphasizing that for this example,
+FORMULA 
+This is not enough to avoid the phenomenon that some singularities of the
+resolvent are `canceled' in the FORMULA -function.
+
+Relatively bounded perturbations
+Let FORMULA  be a symmetric operator in FORMULA  and FORMULA  be a boundary value space for FORMULA  (c.f. {{cite:e32ba93d-32e7-4944-a730-940cb35444b1}}).
+Assume that FORMULA  is symmetric with the following properties:
+
+FORMULA  is relatively FORMULA -bounded with relative bound less than 1
+
+FORMULA  is relatively FORMULA -bounded with relative bound less than 1
+
+We will show that in this case it is sufficient to consider boundary operators only associated with the symmetric part FORMULA  of the operator FORMULA .
+Example 6.1 Let FORMULA  be a symmetric second order elliptic differential operator on a smooth domain FORMULA  with FORMULA .
+If FORMULA , only operators of the form FORMULA , FORMULA  satisfy these conditions. If FORMULA , FORMULA  can also involve
+first order terms.
+
+Let FORMULA  and FORMULA . By the assumptions on FORMULA , FORMULA 
+and FORMULA , FORMULA . with FORMULA .
+Moreover, FORMULA  and FORMULA . For FORMULA , let FORMULA  and define
+FORMULA  and FORMULA  as before with the boundary operators FORMULA  now only associated with the symmetric part of FORMULA .
+Then all the results of Section  hold in this situation as well and the
+proofs are identical as the specific form of the Green formula plays no role in their derivation. Therefore, we have
+Theorem 6.2 Let FORMULA  be an isolated eigenvalue of finite algebraic multiplicity of the operator FORMULA . Assume the unique continuation hypothesis holds for FORMULA  and FORMULA .
+Then FORMULA  is a pole of finite multiplicity of FORMULA 
+and the order of the pole of FORMULA  at FORMULA  is the same as the order of the pole of FORMULA  at FORMULA .
+
+Proposition 6.3 For FORMULA , we have
+FORMULA 
+Correspondingly, we have
+FORMULA 
+
+Proposition 6.4 Let FORMULA . Then
+FORMULA 
+
+Proposition 6.5 Let FORMULA , FORMULA . Then
+FORMULA 
+
+Theorem 6.6 Let FORMULA  and assume there exist operators FORMULA  such that FORMULA  or
+FORMULA .
+Then FORMULA  is an isolated eigenvalue of finite algebraic multiplicity of the operator FORMULA  if and only if
+FORMULA  is a pole of finite multiplicity of FORMULA .
+In this case, the order of the pole of FORMULA  at FORMULA  is the same as the order of the pole of FORMULA  at FORMULA .
+
+
+Application to PDEs
+The theory previously developed is not immediately applicable to the usual boundary value problems arising in PDEs. The reason is the following:
+Consider the case of the Laplacian FORMULA  with FORMULA  where FORMULA  is a smooth bounded domain. The usual Green's identity is given by
+FORMULA 
+However, we want identity (REF ) to hold for all FORMULA  which in general is not even a subset of FORMULA . Therefore, the integral FORMULA  is not well-defined for all these functions.
+The aim of this section is to show that by suitably modifying the boundary operators, our previous results hold for elliptic differential operators of order FORMULA . This idea was first used by Vishik {{cite:65a97c1d-4cf4-485f-9dd9-9c6c3b766459}}. So as not to obscure the ideas with technicalities and notation we will only consider a first order perturbation of the Laplacian. The same method is applicable to any elliptic operator satisfying the conditions given in {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}} by Grubb. In fact, all the results required in the following are taken from that paper.
+Let
+FORMULA 
+FORMULA 
+where FORMULA  is a smooth bounded domain.
+Let
+FORMULA 
+FORMULA 
+Then for FORMULA  we have
+FORMULA 
+It is easy to check that
+FORMULA 
+FORMULA 
+Let FORMULA  be the restriction of FORMULA  satisfying Dirichlet boundary conditions.
+Similarly, let FORMULA . Then by elliptic regularity, FORMULA .
+Without loss of generality, assume that FORMULA  (if not, this can be achieved by a translation). By {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}},
+FORMULA  and FORMULA .
+Definition 7.1 For FORMULA  define FORMULA  by
+FORMULA 
+and let FORMULA  satisfy
+FORMULA 
+
+Definition 7.2 For FORMULA , let
+FORMULA 
+and for FORMULA , let
+FORMULA 
+
+Remark 7.3
+
+The operators FORMULA  and FORMULA  are well-defined (c.f. {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}}).
+
+FORMULA  and FORMULA  are the Dirichlet to Neumann maps associated with FORMULA  and FORMULA  (with FORMULA ).
+
+The operator FORMULA  regularizes FORMULA  in the following sense: FORMULA  for FORMULA , therefore
+FORMULA  is determined only by the regular part of FORMULA  lying in FORMULA . In fact we have:
+
+
+Theorem 7.4 (Grubb 1968) 
+Equip FORMULA  and FORMULA  with the graph norm. Then FORMULA  is continuous and surjective. The same is true for
+FORMULA . Moreover, for all FORMULA , FORMULA  we have
+FORMULA 
+where FORMULA  denotes the duality pairing between FORMULA  and FORMULA .
+
+See {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}}.
+To obtain an abstract Green formula of the form (REF ), we now need to rewrite the duality pairings as scalar products in FORMULA . Since FORMULA  and FORMULA  are both infinite dimensional Hilbert spaces, there exists a unitary isomorphism FORMULA . Then FORMULA  is also a unitary isomorphism and
+FORMULA 
+Theorem 7.5 For FORMULA  let
+FORMULA 
+and for FORMULA  let
+FORMULA 
+Then
+FORMULA 
+Moreover,
+
+FORMULA  and FORMULA  are surjective for  FORMULA
+
+FORMULA  and FORMULA  are continuous with respect to the graph norm for  FORMULA
+
+given FORMULA , there exist FORMULA  such that FORMULA  and FORMULA  and FORMULA  such that FORMULA  and FORMULA  (inverse trace theorem).
+
+
+The Green identity follows from the previous theorem and the definition of FORMULA .
+Properties FORMULA  and FORMULA  are consequences of FORMULA  and FORMULA  being continuous and surjective onto FORMULA  and FORMULA  and FORMULA  being continuous and surjective onto FORMULA  (c.f. {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}}).
+The inverse trace property FORMULA  follows from the corresponding property for FORMULA  and FORMULA  and FORMULA  and FORMULA , respectively (c.f. {{cite:d3c18027-e0a7-488b-8b21-306fbbee6d57}}).
+Remark 7.6
+
+All conditions we required in the previous sections on the boundary operators are satisfied by FORMULA , FORMULA , FORMULA  and FORMULA . So all the results on the corresponding FORMULA -functions hold.
+
+Note that FORMULA  is the operator with Dirichlet boundary conditions - the Friedrichs extension of FORMULA , while FORMULA  is the Kreĭn extension of FORMULA .
+
+By exchanging the roles of FORMULA  and FORMULA  it is possible to express the Neumann boundary condition in the form FORMULA  for bounded FORMULA .
+
+An abstract form of this procedure for regularizing the boundary operators has been introduced by Ryzhov {{cite:a1431c88-bba2-4057-82e6-e99f6d20fc17}}.
+
+

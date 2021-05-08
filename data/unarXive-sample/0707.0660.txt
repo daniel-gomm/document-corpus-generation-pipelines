@@ -1,0 +1,221 @@
+
+[4]
+Strong confidence intervals for autoregressionVladimir Vovkvovk@cs.rhul.ac.ukhttp://vovk.net2020/09/07 15:50:29In this short preliminary note
+I apply the methodology of game-theoretic probability
+to calculating non-asymptotic confidence intervals
+for the coefficient of a simple first order scalar autoregressive model.
+The most distinctive feature of the proposed procedure
+is that with high probability it produces confidence intervals
+that always cover the true parameter value
+when applied sequentially.
+Introduction
+Game-theoretic probability
+(see, e.g., {{cite:36c920b1-5e37-4268-acaf-45c7c4fa4451}},
+with the basic idea going back to Ville {{cite:406c73e4-d158-4009-8cb1-c9f465118481}})
+provides a means of testing probabilistic models.
+In this note the game-theoretic methodology
+is extended to statistical models;
+it will be demonstrated on the first-order scalar autoregressive model
+FORMULA 
+without the intercept term,
+with constant FORMULA ,
+and with independent FORMULA  innovations FORMULA .
+We will be interested in procedures for computing,
+for each FORMULA ,
+a confidence interval FORMULA  for FORMULA 
+given FORMULA .
+Let us fix a confidence level FORMULA ,
+and let FORMULA  be the true parameter value.
+The usual procedures are “batch”,
+in that they only guarantee
+that FORMULA  with high probability
+for a fixed FORMULA .
+It is usually true that,
+when they are applied sequentially,
+the intersection FORMULA  is empty with probability one.
+Our goal is to guarantee that
+FORMULA 
+with probability at least FORMULA .
+Analogously to the usual classification of the limit theorems of probability theory
+into “strong” (involving the conjunction over all FORMULA )
+and “weak” (applicable to individual FORMULA ),
+let us call such confidence intervals strong.
+In particular,
+confidence intervals satisfying (REF )
+with probability at least FORMULA 
+will be called strong FORMULA -confidence intervals.
+Accordingly, confidence intervals produced by the standard procedures
+will be referred to as weak;
+weak FORMULA -confidence intervals
+satisfy FORMULA  with probability at least FORMULA 
+for each individual FORMULA .
+(This probability is sometimes required to be precisely FORMULA ,
+but we will only consider the “conservative” definitions.)
+To achieve the goal (REF ),
+for each possible value of the parameter FORMULA 
+we construct random variables FORMULA ,
+FORMULA ,
+that form a nonnegative martingale
+under the probability measure FORMULA 
+corresponding to the probabilistic model (REF )
+with the given FORMULA .
+It will also be true that FORMULA ;
+such sequences (nonnegative martingales starting from 1)
+will be called martingale tests.
+We can then set
+FORMULA 
+(assuming that the set on the right-hand side is an interval,
+which it will be in our case).
+The special case
+FORMULA 
+(due to Ville; see, e.g., {{cite:406c73e4-d158-4009-8cb1-c9f465118481}}, p. 100, or {{cite:36c920b1-5e37-4268-acaf-45c7c4fa4451}}, (2.12))
+of Doob's inequality
+shows that (REF ) will indeed be true with probability
+at least FORMULA .
+
+Derivation of strong confidence intervals
+If the true probability density of FORMULA 
+(conditional on the past) is
+FORMULA 
+and we want to reject the hypothesis
+FORMULA 
+the best, in many respectsCf., e.g., the nonnegativity of the Kullback–Leibler divergence,
+Neyman–Pearson lemma,
+and the optimality property of the probability ratio test in sequential analysis.,
+martingale test
+is the likelihood ratio sequence with the relative increments
+FORMULA 
+The product over FORMULA  is the martingale test itself:
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+To get rid of the parameter FORMULA ,
+let us integrate (REF )
+over the probability distribution FORMULA  on the FORMULA s:
+FORMULA 
+(where I made the substitution FORMULA ).
+Now the formula
+FORMULA 
+gives
+FORMULA 
+To find the confidence intervals corresponding to (REF ),
+fix a confidence level FORMULA .
+The FORMULA -confidence interval corresponding to (REF )
+is defined as the set of FORMULA s satisfying
+FORMULA 
+Solving this in FORMULA  gives the confidence interval
+FORMULA 
+Notice that,
+in the stationary case FORMULA ,
+where FORMULA  has the order of magnitude FORMULA ,
+the size of the confidence interval (REF )
+is FORMULA  as FORMULA .
+This is worse that the usual iterated-logarithm behaviour
+(FORMULA )
+but agrees with {{cite:ae86fe68-54a8-418b-b1b2-c03e4efb638f}}, Theorem 2.5
+(although the latter result is just an upper bound).
+One can speculate that,
+in the stationary case,
+the FORMULA  behaviour
+will be recovered if the FORMULA  is replaced
+by a probability distribution that is more concentrated around FORMULA ,
+as in Ville's {{cite:406c73e4-d158-4009-8cb1-c9f465118481}} proof of the law of the iterated logarithm
+(see also {{cite:36c920b1-5e37-4268-acaf-45c7c4fa4451}}, Chapter 5).
+Most of the terms
+in the confidence interval (REF )
+are familiar from the literature
+(which, however, mainly covers the case of weak confidence intervals).
+The centre FORMULA  of the interval
+is just the least-squares estimate of FORMULA  from the given sample.
+The statistic
+FORMULA 
+(for a fixed sample size FORMULA )
+has been studied extensively.
+In describing the known results I will follow {{cite:1140a27f-dfa1-484d-8c3e-ecf2f85d7f9d}}.
+Mann and Wald {{cite:54b9a9ac-ec89-4696-9f05-5b37f7b7786e}} showed that FORMULA 
+is FORMULA  asymptotically when FORMULA .
+Anderson {{cite:6ffb2800-1724-4910-aa23-0fbc9f6f4b49}} extended this to the case FORMULA .
+White {{cite:86b2e077-bcb2-49d5-9b76-bd5831246361}} and Rao {{cite:175bb625-7467-4343-814e-e9df490b124c}} showed that,
+in the case FORMULA ,
+FORMULA  converges in distribution to
+FORMULA 
+where FORMULA  is a standard Brownian motion.
+Suppose, for concreteness,
+that (REF ) is asymptotically FORMULA .
+The central asymptotic weak confidence interval for FORMULA 
+based on the statistic given after the “FORMULA ” in (REF )
+will be different from (REF )
+in that
+FORMULA 
+will be replaced by the upper FORMULA -quantile of FORMULA ,
+essentially by
+FORMULA 
+for a small FORMULA .
+This is close to the first addend on the right-hand side of (REF ),
+and so the second addend represents
+the price that we are paying
+for our confidence intervals being strong.
+
+Empirical results
+To test the test martingales (REF ) empirically,
+I generated FORMULA  from the model (REF )
+with FORMULA  and FORMULA .
+The case FORMULA  illustrates the stationary behaviour (FORMULA ),
+and the “unit-root” case FORMULA  is intermediate
+between the stationary and “explosive” (FORMULA ) behaviour.
+Tables REF  and REF 
+give the approximate weak central FORMULA -confidence intervals
+based on the above approximations for FORMULA 
+(normal for FORMULA  and (REF ) for FORMULA )
+and the strong FORMULA -confidence intervals
+computed from (REF ).
+TABLE 
+TABLE 
+The intuition behind the value of FORMULA  in (REF )
+is that it should be of the same order of magnitude
+as the expected width of the confidence interval
+(since FORMULA  represents the order of magnitude
+of the distance to the bulk of FORMULA  that we are competing with).
+It is taken as FORMULA  in the tables,
+but the results will not be drastically different
+if FORMULA , which is intuitively more “neutral”,
+is chosen: e.g.,
+the width FORMULA  in Table REF 
+would go up to FORMULA ,
+and the width FORMULA  in Table REF 
+would go up to FORMULA .
+Figures REF  and REF 
+give the final values FORMULA  for the same data set
+and the same value of FORMULA ,
+FORMULA .
+FIGURE 
+FIGURE 
+
+Directions of further research
+These are some possible areas
+in which the methods of martingale testing could be applied:
+Online testing of statistical models.
+When the strong confidence interval FORMULA  becomes empty,
+the statistical model can be rejected.
+Of course, efficient testing of statistical models
+will require different martingale tests:
+it will not be sufficient to consider, as in this note, different values of parameters
+as alternatives.
+Prediction.
+In the simplest case,
+the prediction interval at step FORMULA 
+might be computed as the union of the prediction intervals
+corresponding to all FORMULA .
+Alternative assumptions about innovations.
+For example, the assumption that FORMULA  have zero medians
+(conditional on the past)
+might lead to feasible statistical procedures.
+
+Acknowledgments
+I am grateful to Bent Nielsen, Clive Bowsher, David Hendry, and Jennifer Castle
+for useful discussions.
+This work was partially supported by EPSRC (grant EP/F002998/1),
+MRC (grant G0301107),
+and the Cyprus Research Promotion Foundation.

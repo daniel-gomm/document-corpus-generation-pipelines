@@ -1,0 +1,423 @@
+
+Evidence for short-lived SN Ia progenitors
+Evidence for short-lived SN Ia progenitors
+Aubourg et al.
+Éric
+Aubourg1,2,3, Rita Tojeiro4,
+Raul Jimenez5, Alan Heavens4,
+Michael A. Strauss3 David N. Spergel3
+Astroparticule et Cosmologie APC, UMR 7164, Université Paris Diderot,
+10 rue Alice Domon et Léonie Duquet,
+75205 Paris cedex 13, France
+CEA, Irfu, SPP, Centre de Saclay, 91191 Gif sur Yvette cedex, France
+Department of Astrophysical Sciences, Peyton Hall, Princeton University, Princeton, NJ 08544, USA
+SUPA, Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill, Edinburgh EH9-3HJ, UK
+Institute of Space Sciences (CSIC-IEEC)/ICREA, Campus UAB, Barcelona 08193, Spain
+We use the VESPA algorithm and spectra from the Sloan Digital Sky
+Survey to investigate the star formation history of the host galaxies
+of 257 Type Ia supernovae. We find 5FORMULA  evidence for a
+short-lived population of progenitors with lifetimes of less than 180 Myr, indicating a Type Ia supernova channel arising from stars in the
+mass range FORMULA 3.5-8 FORMULA . As standardizeable candles,
+Type Ia supernovae play an important
+role in determining the expansion history of the Universe, but to be
+useful for future cosmological surveys, the peak luminosity needs to
+be free of uncorrected systematic effects at the level of 1-2%. If the different progenitor routes lead to supernovae with even moderately small differences in properties, then these need to be corrected for separately, or they could lead to a systematic bias in future supernovae surveys, as the prompt route is likely to increase in importance at high redshift. VESPA analysis of hosts could be a valuable tool in this, by identifying which progenitor route is most likely.
+supernovae: general — galaxies: stellar content — distance scale
+Introduction
+The relationship between apparent peak brightness and redshift of Type Ia supernovae
+(SNe Ia) depends on the cosmological model; this has provided the most
+direct evidence for the accelerated expansion of the Universe {{cite:33bb52d8-5519-43aa-ac8b-2dd05777a0cd}}, {{cite:853d2653-a41b-4403-9f10-8280c0f3cb0f}}. Current SN Ia surveys such as SNLS {{cite:52d7e7d5-021b-428f-8b45-7df1aa19bbd3}}, ESSENCE {{cite:324e2b46-752d-4e78-b85f-fdff0ec4dd62}}, and GOODS-SN {{cite:cae6f028-d74b-4276-bbc4-52d15ad5af6a}} are contributing to current constraints on
+cosmological parameters, and SNe Ia will continue to be important for cosmological
+constraints in the next generation of surveys such as the JDEM candidates
+ADEPT, DESTINY {{cite:c2c552c6-d79f-4d0d-b710-750c7f9e874e}} and SNAP {{cite:f50fa494-9515-4c35-943e-155086155f3b}}.
+Type Ia supernovae are interpreted as the thermonuclear explosion of a white
+dwarf that has reached the Chandrasekhar mass and thus has become
+unstable, probably through accretion from a companion star
+(the single-degenerate scenario) or merging with another
+white dwarf (the double-degenerate scenario). However, no fully consistent
+model of a SN Ia explosion has yet been built.
+The natural scatter in SNe Ia peak luminosities covers roughly one
+magnitude; the rms peak luminosity is 0.45 mag after excluding
+outliers.
+Empirical correlations based on light curve shape {{cite:3b4c523f-424e-460a-af07-08e08418b943}} or
+intrinsic color {{cite:3a9c1e0b-89dd-4a3d-9f26-4b6fc4d567fe}}, {{cite:33baeef7-b75b-4d33-a650-d76cbe2d1e9e}}
+allow reduction of the intrinsic scatter to about 0.13 mag {{cite:52d7e7d5-021b-428f-8b45-7df1aa19bbd3}}, making them
+usable for cosmological measurements.
+However, it is not yet known how much of the residual scatter is
+correlated with physical parameters that could evolve with redshift,
+and thus bias the measurement of cosmological parameters.
+In order for SNe to be useful for
+constraining dark energy at the level expected in future SN satellite
+experiments, the evolution of
+luminosity at a given light-curve shape over the probed redshift range
+must be less than 1-2% {{cite:494aee96-2060-4469-9727-bca22e4785dc}}, {{cite:b075ec9c-2e0e-49c7-b9ef-5500374a8329}}.
+There are several observational indications for a range of delay times
+between the birth of the progenitor system and the explosion of
+the SN Ia, leading some authors to envision the existence of at least
+two different populations of SN Ia populating slightly different regions of
+stretch-brightness parameter space (Sullivan et al. 2006). It is not yet known if they
+are described (at the percent level) by the same Phillips relation; if they correspond
+to different production channels there is no reason for the Phillips relations to be identical.
+In any case, the SN population may not be a one-dimensional family,
+but may depend on other parameters (at an as-yet unknown level) such
+as metallicity and delay time.
+This would result in a source of scatter in the SN Ia Hubble diagram that could be reduced
+with measurements of those additional parameters.
+Moreover, if the Phillips relations are different and the
+relative numbers of SNe in the two putative
+populations evolve with redshift, the values of
+cosmological parameters derived from the Hubble relation will be
+biased if we do not determine population-dependent corrections.
+More generally, any extra parameter (age, metallicity, production channel...) in the Phillips relations
+that is correlated with redshift will bias cosmological measurements. It is therefore essential
+to assess the size of such effects. Measuring them by looking for
+correlations between Hubble diagram residuals and intrinsic properties
+such as delay time, progenitor metallicity, etc. could help correct for them
+(at least statistically if not event-by-event) in future surveys.
+The brightest supernova events only occur in actively star-forming
+galaxies (Hamuy et al. 1995, 1996a,b), suggesting prompt explosions, while under-luminous events
+are most often found in spirals and E/S0 galaxies, whose old stellar populations
+would suggest delayed explosions {{cite:0a36e58a-1451-4523-8972-61535f65c4b6}}. Mannucci et al. (2006) and {{cite:74a17f1c-9f6d-4d60-9d6a-cbaed9a06bc2}} have
+proposed a two-component model for SNe Ia, and several authors {{cite:49b8db59-58cd-4cda-b7fd-1fc81bd0d3db}}, {{cite:4a842dcb-77d8-4fb0-b416-eff1429814ad}} have
+shown that the supernova rate can be expressed as a sum of a term
+proportional to the total mass of the galaxy and a term proportional
+to the recent star formation rate. In the Mannucci et al. model, some of the supernovae would
+explode several Gyr after the birth of the progenitor system, while
+others would after a fraction of a
+Gyr. Moreover, those two
+populations have different luminosities, the “prompt” component
+being brighter with broader light-curves (Sullivan et al. 2006).
+The prompt component will dominate at higher
+redshifts when the Universe's age (or the time since star formation
+began) was less than the lifetime of the longer-lived progenitors.
+Determining
+the relative numbers of supernovae in the two populations is the first
+step in understanding any possible bias these populations might
+cause.
+Given the 13% scatter in the calibrated peak luminosities of
+supernovae, measuring systematic effects in the Phillips relation at
+the percent level will take samples of a few hundred supernovae {{cite:b075ec9c-2e0e-49c7-b9ef-5500374a8329}}.
+Hamuy et al. (2000) used 62 SN Ia host galaxies to study the impact of
+host morphology, magnitude and colors on the decline rate FORMULA , which allows one to estimate the SN peak luminosity.
+They found a correlation with age but not with metallicity (see also the erratum to their paper).
+However, their sample was very small and most of their estimates
+of age and metallicity were based on photometry only,
+without spectra
+of the host galaxies, and therefore their accuracy was limited. Moreover, although they
+investigated various environmental effects, their
+methodology was not sensitive to a second parameter in the
+Phillips relation, since they used the decline rate as a “reddening-free
+and distance-free estimate of the SN peak brightness”, and thus
+assumed a priori the universality of the relation.
+Gallagher et al. (2005) carried out a similar analysis with spectra of
+57 SN Ia hosts, and put tentative constraints
+on the SN progenitor lifetime using an estimate of current-to-average star
+formation rate. They claimed to see hints of both a bimodal behavior
+and a lower limit of the progenitor lifetime. They admitted that their findings were rather inconclusive.
+{{cite:49b8db59-58cd-4cda-b7fd-1fc81bd0d3db}} used 100 SNe from the SNLS and broadband spectral energy
+distributions of the host galaxies to estimate stellar masses and star formation rates. They found a component proportional to the stellar mass, and a component proportional to the recent star formation rate, averaged over the last 0.5 Gyr.
+Our study improves on these earlier papers by using a larger sample of
+SNe, with spectra of their host galaxies from the Sloan Digital Sky
+Survey (SDSS; York et al. 2000). We use a sophisticated stellar
+population code called VESPA {{cite:275007cf-9067-4c06-bb1d-5cef02427dbc}} which allows us to
+determine the stellar formation history of the hosts. We also determine
+the star formation history of a large sample of normal galaxies from
+the SDSS as a control. Differences in those star formation histories will yield
+information on SN progenitor lifetime: short lifetimes for instance should
+statistically enrich the host sample in galaxies with recent star formation.
+
+Host galaxies and reference sample
+We gathered a sample of about 1300 confirmed SNe Ia from IAU
+circularshttp://www.cfa.harvard.edu/iau/cbat.html, the CfA
+supernovae
+listhttp://cfa-www.harvard.edu/iau/lists/Supernovae.html
+and the SDSS-SN public list of
+supernovaehttp://sdssdp47.fnal.gov/sdsssn/sdsssn.html. We
+cross-referenced this list with the SDSS DR5 {{cite:07b2106b-fa1d-4459-9db2-ea45611d7097}}
+spectroscopic survey of galaxies: 256 galaxies with spectra were
+identified as SN Ia hosts, corresponding to 257 supernovae (one galaxy
+hosted two supernovae). The list of hosts used in this paper is
+available onlinehttp://sn.aubourg.net/hosts/. A large fraction of
+our sample comes from surveys like SDSS (104 SNe), LOSS and LOTOSS (49
+SNe for the two surveys). The rest have various origins (Pucketthttp://www.cometwatch.com : 17
+SNe, Pollas (1994) : 12 SNe, etc.).
+The detection efficiency of this sample is unknown, as it depends in
+detail on the way in which the SNe were found.
+To account for the selection function of SN Ia discovery, we also
+process a control sample of FORMULA  DR5 galaxy spectra, chosen randomly
+in the survey release, and weighted to
+reproduce the redshift distribution of the host sample — this is the
+parameter which could most significantly bias delay time measurements. We plan to handle these effects more accurately with a full Monte Carlo treatment in a future paper.
+As a cross check, we did the same analysis, keeping only supernovae at FORMULA . The reduction in the sample size (from 257 to 190) increases the error, but does not change the result (see table 2 below).
+Other effects will be discussed in section 4.
+FIGURE 
+
+Reconstructing the star formation and metallicity history of SN host galaxies
+The spectrum of a galaxy is a superposition of spectra of single
+stellar populations which formed
+at a given age with a given metallicity. Since it is not possible to
+recover the star formation and metallicity history with infinite
+precision {{cite:cf5302b1-b044-40c0-89f8-5b623840bfb4}}, it is only sensible to attempt
+to recover the star formation and metallicity history with a certain
+time resolution. The VESPA algorithm {{cite:275007cf-9067-4c06-bb1d-5cef02427dbc}} does this, providing a
+detailed history only where the data warrant it. Note that broad-band colors are not
+sufficient to determine the star formation histories of galaxies, as
+they suffer from significant age-metallicity degeneracies
+{{cite:cf5302b1-b044-40c0-89f8-5b623840bfb4}}.
+FIGURE 
+In brief, VESPA uses singular value decomposition to calculate the
+number of significant components in the spectrum of a given galaxy. VESPA
+then uses an algorithm to determine the best-fitting
+non-negative values of the star formation fractions. Extensive
+tests of the performance of VESPA on synthetic spectra as a function
+of wavelength coverage and signal-to-noise ratio can be found in
+{{cite:275007cf-9067-4c06-bb1d-5cef02427dbc}}, along with a study of age-metallicity degeneracy.
+To limit the search to a
+manageable amount of parameters, and because currently available
+spectra never have the quality or spectral range to justify going
+beyond this choice, VESPA's finest resolution consists of 16 age bins,
+logarithmically spaced in lookback time between 0.002 and 14 Gyrs.
+Specifically, the lower limit in age of
+the 16 bins are: 0.002, 0.02, 0.03, 0.0462, 0.074, 0.115, 0.177,
+0.275, 0.425, 0.6347, 1.02, 1.57, 2.44, 3.78, 5.84, and 9.04 Gyr.
+VESPA chooses the number of stellar populations to model depending on
+the quality of the data. The SDSS galaxy spectra typically allow
+between 7 and 10 age bins in both the SN host
+sample and the control sample, showing there are no significant differences in the two samples
+(Fig. REF ; see also
+Tojeiro et al. 2007), although
+there is non-zero star formation in only 3-5 of those bins.
+The relatively large number of bins implied by Fig. REF  is an indication that in most cases the star formation which is recovered is localised to narrow time intervals.
+The metallicity for each population is a free parameter, so
+there are as many metallicity values recovered as there are star
+formation fractions.
+Following Sullivan et al. (2006), we parametrize the total supernova
+rate with a two-component model, FORMULA , where FORMULA  is the total stellar mass and FORMULA  is the
+mass formed in some time range that we can vary. FORMULA  and FORMULA  reflect,
+respectively, the SNR per unit stellar mass of an old population of
+progenitors (roughly proportional to the total stellar mass), and the SNR per
+unit stellar mass of a young population of progenitors (proportional to
+the mass in recently formed stars). Because we do
+not have a calibration of the selection function of the supernova
+surveys we have used, we normalize with our control sample, representative of the whole SDSS spectroscopic catalog (our reference sample), and can
+determine FORMULA  only up to a proportionality constant. That is, we
+fit the data to a model
+FORMULA 
+where FORMULA  is an unnormalized proportionality constant.
+Thus the quantity FORMULA  quantifies the fraction of the
+supernova rate with progenitor stars that formed in the chosen time range.
+The constant FORMULA  is the product of the “slow” rate FORMULA  introduced in
+the Mannucci et al. two-component model, and an unknown global
+SN detection efficiency factor averaged over all SN surveys which
+contribute to our reference sample.
+We estimate the SNR per unit stellar mass, FORMULA  as a function
+of FORMULA  as follows. For any unbiased sample of
+galaxies, the observed SNR per unit stellar mass is equal to the
+number of supernovae divided by the total stellar mass in the sample,
+multiplied by an efficiency factor FORMULA : FORMULA . We can divide them
+into bins of their star formation fraction in the recent time range,
+FORMULA , as determined by the VESPA analysis. Within
+each bin we can therefore calculate FORMULA , by simply
+counting the number of SNe in each subset and dividing it by the total
+stellar mass in galaxies with this value of
+FORMULA . The latter is calculated from the much larger
+control sample.
+We repeated this exercise for a variety of ages for the young component, and
+also varying the dust model details in VESPA and the bin boundaries.
+We find a significant contribution to the SN rate from recent stellar
+populations (in the sense that FORMULA  is significantly
+positive), where we vary the definition of “recent” between 74 and
+180 Myr.
+The contribution of stars in the 180-250 Myr range is
+lower by at least a factor of five.
+The value of FORMULA  is robust to setting the boundary anywhere
+between 74 and 180 Myr, and thus here we quote the most conservative
+value of 180 Myr, since starburst duration and internal degeneracies in VESPA could
+make age bins “leak” one into another.
+We illustrate this in Figure REF . We have divided our 16
+time bins into four broader bins, and asked for the correlation of the
+supernova rate with the fraction of star formation that occurred in each bin. The
+four panels show the un-normalized Type Ia supernova rate per stellar
+mass as a function of the fraction of stellar mass formed each of
+these broad time bins [0-180] Myr (top-left panel), [180-660]Myr
+(bottom-left panel), [0.66-2.44] Gyr (top-right panel), and [2.44-13]
+Gyr (bottom-right panel). The resulting best-fit value of
+FORMULA  and the corresponding correlations are given in Table
+1.
+For the youngest range, 0-180 Myr, we measure FORMULA , which is five-sigma evidence for a short
+duration component.
+Since FORMULA  in older bins is significantly lower, the
+positive signal we find in the most recent age range cannot be due to
+correlation (“leakage”) from older bins.
+TABLE 
+TABLE 
+Our results should be robust against possible spectroscopic calibration
+errors: because we compare
+the host population to a control sample of spectra taken with the same
+telescope and instrument, and processed with the same
+spectroscopic pipeline and the same star formation history recovery
+algorithm (VESPA), systematic errors anywhere in the chain would be shared by the
+two samples.
+The selection function of our SN sample is also irrelevant as long as it
+is not strongly dependent on host properties which are correlated with SFR;
+the effect of possible efficiency biases in the SN host sample will be
+discussed in more detail in §4 below.
+We do not consider supernovae without a SDSS host but this
+is fully consistent with our approach of comparing to a SDSS
+reference population : our reference sample is, by definition, complete, and we compare, among that sample, hosts without SN to hosts with SN.
+A bias will be introduced in our results if there is a correlation
+between galaxy mass and specific star formation rate. Indeed, most
+massive galaxies in the present-day universe have little star
+formation; most of the star formation in the present-day universe is
+in low-mass galaxies (Heavens et al. 2004). We have tested this bias with
+a Monte-Carlo simulation, as follows.
+We generated an artificial SN sample in our control sample following
+the rule
+FORMULA . In the absence of correlations
+between recent star formation and mass in this reference sample, applying our method
+recovers the input FORMULA  values. However, our reference sample has
+an anti-correlation between mass and recent star formation.
+With the
+input FORMULA  set equal to zero, we recover FORMULA ,
+compatible with zero (dashed line in
+Fig. REF ). Using FORMULA  (dotted line in Fig. REF ), we
+recover FORMULA , FORMULA  of the simulated value (and close
+to our observed value).
+Therefore we conclude that the anti-correlation between galaxy mass and star
+formation rate causes us to underestimate the contribution
+of a prompt component to the supernova rate.
+FIGURE 
+The ratio FORMULA  is compatible with previous estimates, for
+which the “recent” SFR is estimated in general from colors,
+broadband SED fitting, core-collapse SN rate or cosmic SFR. These
+results represent an
+average over half a gigayear, and are thus only a rough match to our
+results.
+We can roughly convert our mass estimate FORMULA  (FORMULA  for the last 180 Myr)
+to recent SFR through FORMULA . With this, the Neill et
+al. (2006) values (a “slow” rate FORMULA  SN
+FORMULA  FORMULA  and a “prompt” rate FORMULA  SN FORMULA ) yield
+FORMULA , the Sullivan et al. (2006) values
+(FORMULA  SN
+FORMULA  FORMULA  and FORMULA  SN FORMULA ) yield
+FORMULA , and the two values quoted by Scannapieco &
+Bildsten (2005) yield FORMULA  and 150,
+respectively. However since “recent” star formation is estimated differently in each case, and on an difference recent time range, the figures are not expected to match closely.
+
+Discussion and conclusion
+Our result would be sensitive to any systematic effect enriching the
+SN host sample in blue galaxies (i.e., those with large FORMULA ),
+for reasons unrelated to SN physics (bias in efficiency, or bias in
+the monitored galaxy sample for targeted searches).
+Some targeted supernova searches have focused on star-forming galaxies (e.g.,
+Richmond, Filippenko, & Galisky 1998).
+In our sample, the main targeted search is the Lick
+Observatory Supernova Search (LOSS, Filippenko et al. 2001). There is no indication this
+search is biased in this way, and our results change insignificantly if we remove those hosts.
+Blue galaxies are fainter, and one could naively expect to detect SNe more
+easily in those faint hosts, but with modern image differencing
+techniques, the effect should be minor. One also expects such a bias to occur in
+surveys that rely on spectroscopic typing of SNe, since the fainter, low-stretch SN, that occur preferencially in bright galaxies, will be more difficult to characterize spectroscopically.
+Star-forming galaxies tend to produce brighter events. On the other
+hand, star-forming hosts tend to be dustier, making supernovae harder
+to detect or characterize. If such an efficiency effect had an impact on our
+analysis, in the sense of enhancing or simulating what we observe, we
+would expect the host galaxy sample to exhibit lower typical masses
+than the reference sample, or lower dust content. VESPA yields an
+estimate of dust content and luminosity of the hosts. We see no
+significant difference in luminosity and dust distributions between
+the host and control samples. Rather, the host stellar mass
+distribution is shifted towards slightly higher masses, as we
+would expect given that the SN rate should increase with the mass. We
+are thus confident this effect does not significantly bias our
+results.
+Such an efficiency effect would also be more important at high redshift. As we noted above,
+restricting our sample to SNe occurring at FORMULA  does not change our findings. In our next
+paper, we plan to use the lightcurve characteristics in our analyses
+for those objects for which they are available.
+Following Mannucci et al. (2005, 2006) and Sullivan et al. (2006), we have shown
+that SNe Ia can occur through short-lived progenitors, hinting at a
+variety of stellar evolution paths with different lifetimes. We have
+given the first estimate of the lifetime of the “fast”
+component, by reconstructing the star formation history of SN host
+galaxies and finding an increased contribution to the SN Ia rate from
+stars evolving in less than 180 Myr.
+Such a short time delay strongly constrains the nature of possible
+progenitors. They must be stars that evolve fast enough, i.e. with a
+mass above FORMULA , but must be below the super-AGB mass threshold (about 8
+FORMULA ) above which one gets electron-capture supernovae
+{{cite:c0e96c78-058b-4e32-8c09-9b6bff205bf3}}. {{cite:930b8b5c-a778-4e7a-8f1e-d7e37bb9023f}} have
+also suggested that a significant fraction of
+binaries are twins (i.e., pairs of stars with essentially identical
+masses), and that such twin binaries could produce a short
+(FORMULA  Gyr) path to SN Ia. Considering
+common envelope evolution phenomena, {{cite:930b8b5c-a778-4e7a-8f1e-d7e37bb9023f}} argue that such twin systems
+could yield double degenerate SNe Ia in a way that would be both fast
+and efficient (see also {{cite:51869644-2071-443c-90d6-a1f87df187ea}}).
+Are there enough high-mass progenitors to account for
+the observed SN Ia rate? These progenitors have to have
+masses between FORMULA  (in order to explode within 180 Myr)
+and FORMULA . Only
+a fraction of these stars FORMULA  will actually
+explode as a SN Ia progenitor. We take into account five factors: the fraction of stars in binaries (FORMULA ), the fraction
+of the binaries both of whose components lie in the range 3.5 to 8
+FORMULA  (FORMULA ), the fraction
+of stars at a suitable separation for mass transfer (FORMULA ), the
+fact that every binary yields
+a single explosion, (FORMULA ), and an overall efficiency (FORMULA ,
+as not all possible progenitors may explode). Maoz (2007) has estimated
+the first four factors, and finds FORMULA  and FORMULA . Crudely multiplying these factors together
+gives the fraction of objects in the appropriate mass range that
+explode as prompt SNe Ia: FORMULA .
+The fraction of stars which will explode as a SN Ia progenitor,
+FORMULA  is then given by FORMULA  where FORMULA  is
+the total number of SNe Ia from the fast route, and FORMULA  is the
+total number of stars in the correct mass range. Our result only
+allows us to estimate the ratio of the two components. We can however
+use published values of FORMULA  in order to infer an absolute value of FORMULA 
+from our ratio—we call this value FORMULA . Using FORMULA  as published by Neill et al. (2006) gives FORMULA . We can now
+estimate FORMULA  and FORMULA , assuming a Salpeter IMF of the form FORMULA . This gives FORMULA , within the values
+given by Maoz (2007). Using a value of FORMULA  from
+Sullivan et al. (2006) gives a value of FORMULA 
+and FORMULA . Similarly, FORMULA  as published
+by Scannapieco & Bildsten (2005) results in roughly FORMULA  and FORMULA .
+With the slow FORMULA  rate of Neill et al (2006) there is complete
+consistency with the theoretical expectations of SN Ia rates from Maoz
+(2007). However, with the
+higher FORMULA  rates of Sullivan et al (2006) or Scannapieco & Bildsten (2005), there is some
+tension with our results, which would require high efficiency. It is
+hard to know how worried one should be about this: firstly we are
+relying on external measurements of the delayed rate, and secondly an
+excess of SNIa explosions with respect to the predicted number of
+progenitors is observed in a large number of SNIa studies (Maoz 2007).
+This tension can be alleviated in a number of ways—some of which
+discussed in the above paper—but generally indicates that the
+efficiency of the mechanism which produces SNIa explosions must be
+high.
+A crucial question for the use of SNe Ia as standard candles
+in cosmology is whether these different routes yield objects which are
+standardizeable to high accuracy via the same empirical corrections.
+Current data find
+no evidence for a difference {{cite:25da7cd0-0b4d-45f5-9272-d83af95bf682}}, {{cite:e8b1ba8e-9f40-4b52-b705-2561413f4450}}, {{cite:d91d205c-be03-4c31-b0d2-97072d4ccb3e}},
+but the requirements for using SNe Ia as
+a Dark Energy probe are stringent, and it will be important to
+establish this point accurately. VESPA should be able to assist
+directly with the correction, first by determining
+the standardization for each route at the required
+percent level accuracy, and then allowing to apply the correct
+standardization at least statistically if not
+for individual supernovae.
+Furthermore, VESPA provides metallicity estimates for the hosts,
+which may correlate with peak luminosity, and thus allow us to
+reduce the scatter in the distance indicator. This will be the
+subject of a future study.
+We plan to expand our sample by obtaining spectra of a larger number
+of SN hosts, allowing us to deconvolve the delay time
+function. Future papers will address more quantitatively the long
+duration component, the downsizing bias, the metallicity effects (see also Prieto et
+al. 2007), and stellar evolution models compatible with our
+findings.
+EA acknowledges the importance of numerous discussions with the late
+Bohdan Paczyński, to whom we dedicate this paper. RT is funded by the Fundação para a Ciência e a Tecnologia under the reference PRAXIS SFRH/BD/16973/04. RJ and DNS
+acknowledge support from the NSF PIRE-0530095. This work was supported
+in part by DOE grant DE-FG02-07ER41514.

@@ -1,0 +1,649 @@
+
+A study of the FORMULA  reaction
+N.J.Upadhyay
+neelam@physbu.mu.ac.in
+Department of Physics, University of Mumbai, Vidyanagari,
+Mumbai - 400 098, India
+K.P.Khemchandani
+kanchan@ific.uv.es
+Department of Physics, University of Mumbai, Vidyanagari,
+Mumbai - 400 098, India
+Departamento de Física Teórica and IFIC,
+Centro Mixto Universidad de
+Valencia-CSIC Institutos de Investigación de Paterna,
+Aptd. 22085, 46071 Valencia, Spain
+B.K.Jain
+brajeshk@gmail.com
+Department of Physics, University of Mumbai, Vidyanagari,
+Mumbai - 400 098, India
+N.G.Kelkar
+nkelkar@uniandes.edu.co
+Departamento de Fisica, Universidad de los Andes, Cra.1E No.
+18A-10, Santafe de Bogota, Colombia
+2020/09/07 07:30:48
+
+A study of the FORMULA  reaction
+in the energy range where the recent data from Uppsala are available,
+is done in the two-step model of FORMULA  production including the final
+state interaction. The FORMULA  final state interaction is incorporated
+through the solution of the Lippmann Schwinger equation using an
+elastic scattering matrix element, FORMULA ,
+which is required to be half off-shell. It is written in a factorized
+form, with an off-shell form factor multiplying an on-shell part given
+by an effective range expansion up to the fourth power in momentum. The
+parameters of this expansion have been taken from an existing
+recent relativistic Faddeev equation solution for the FORMULA 
+system corresponding to different FORMULA  scattering amplitudes.
+Calculations have also been done using few body equations
+within a finite rank approximation (FRA) to generate
+FORMULA . The FORMULA  final state interaction
+is included in the spirit of the Watson-Migdal prescription by
+multiplying the matrix element by the inverse of the Jost function.
+The FORMULA  interaction is found to be dominant in the region
+of small invariant FORMULA  mass, FORMULA .
+The FORMULA  interaction enhances the cross section in the whole region
+of FORMULA , but is larger for large FORMULA . We find nearly
+isotropic angular distributions of the proton and the deuteron in the
+final state. All the above observations are in agreement with data.
+The production mechanism for the entire range of the existing data on
+the FORMULA  reaction seems to be dominated
+by the two-step model of FORMULA  production.
+25.10.+s, 25.40.Ve, 24.10.Eq
+Introduction
+The current great interest in the FORMULA -nucleus interaction exists
+because of the attractive nature of the FORMULA  interaction
+in the s-wave {{cite:998bac82-00e0-4c87-9105-0c34a7702298}}, and the consequent possibility of the
+existence of quasi-bound, virtual or resonant FORMULA -nucleus states
+{{cite:fc5a0cee-da82-4ca4-9f4c-2082f7b865ce}}. The exact nature of these states, of course, depends
+upon the precise knowledge of the FORMULA  scattering matrix at low
+energies. As the FORMULA  is a highly unstable meson (lifetime
+FORMULA ), this precise information is
+difficult to obtain directly. It can only be obtained from the eta
+producing reactions through the final state interaction. With this
+motivation, starting with the early experiments near threshold at Saclay
+on the FORMULA  and the FORMULA  reactions, measurements have been carried out near threshold
+and beyond at Jülich and Uppsala using the COSY and Celsius rings
+respectively. In this series of experiments, the recent
+data on the FORMULA  reaction
+using the Wasa/Promice setup at the Celsius storage
+ring of the Svedberg laboratory, Uppsala are
+thematically complete and cover the excess energy, Q,
+(FORMULA ) ranging
+from around threshold to 107 MeV. The data {{cite:71d596c6-5bf3-4f0d-8c40-4d64abdd890b}}
+(integrated over other variables) include the
+invariant mass distribution over the whole excess energy range
+for the FORMULA , FORMULA  and FORMULA  systems and angular
+distributions for the proton, deuteron and the eta meson.
+Like the FORMULA  reaction,
+the (inclusive) FORMULA  invariant mass distribution exhibits a large
+enhancement near threshold and hence appears promising to
+study the FORMULA  interaction. The FORMULA  and FORMULA  invariant mass
+distributions do not show any such enhancement.
+All observed angular distributions are nearly isotropic.
+Like in our earlier studies on the FORMULA 
+reaction our primary aim in this paper is to investigate the above
+mentioned data on the FORMULA  invariant mass distribution to obtain a
+better understanding of the FORMULA  as well as the FORMULA  interaction.
+We speculate, from our experience on the study of the FORMULA  reaction {{cite:3e31d146-5a3b-4448-9d7b-1d204bbec948}}, that in the region of low FORMULA 
+relative energy this set of data will be mainly determined by the
+FORMULA  interaction, though the three-body nature of the final state
+may introduce some uncertainty in this conclusion.
+We present a study of the FORMULA  reaction which
+includes the effect of the final state interaction.
+We have investigated two possible diagrams for the production mechanism:
+the direct mechanism and the two step process of FORMULA  production.
+The direct mechanism proceeds via an intermediate FORMULA 
+reaction with one of the nucleons in the deuteron as a spectator.
+The FORMULA  meson in the two step model is produced in two steps, namely,
+FORMULA  and FORMULA , hence
+involving the participation and sharing of the transferred momentum by three
+nucleons. The two step model for FORMULA  production was first used in
+{{cite:af7a2102-3dee-4ace-a673-ac3e3626c5b6}} and the data on the FORMULA  reaction was
+well explained. The vertices at the two steps have been described by the
+corresponding off-shell FORMULA -matrices. The FORMULA -matrix for
+FORMULA  is taken from a coupled channel calculation
+{{cite:998bac82-00e0-4c87-9105-0c34a7702298}}, and that for FORMULA  is obtained
+from the SAID program provided by the authors of Ref. {{cite:f632d2ba-297b-49d3-b466-3b83719dc89c}}.
+The final state interaction between the FORMULA  and the deuteron is
+explicitly incorporated through an FORMULA  FORMULA -matrix, FORMULA .
+This FORMULA -matrix, which is required to be half-off-shell,
+is described in two ways. One choice involves taking a “factorized form"
+which is given by an off-shell form factor
+multiplied by an on-shell part given by an effective range expansion up
+to the fourth power in momentum. The parameters of this expansion have been
+taken from an existing recent relativistic Faddeev
+equation solution for the FORMULA  system {{cite:6f35e00d-adb8-4e25-a697-8f1c37ac7fe5}} corresponding to
+different FORMULA  scattering amplitudes.
+The off-shell form factor will be described in the next sections and is
+chosen to have a form without any adjustable parameters.
+The second prescription involves solving few body equations within the finite
+rank approximation (FRA) to obtain FORMULA .
+This approach has been used in literature for the FORMULA ,
+FORMULA He and FORMULA He systems {{cite:3544746e-7373-4894-96bf-99c7665b4c37}}.
+We perform calculations for both the prescriptions using different models of
+the elementary coupled channel FORMULA -nucleon FORMULA -matrix which characterize
+them.
+The interaction between the FORMULA  meson and the proton in the
+final state, to a certain extent is contained implicitly in our
+calculations. This is due to the fact that we describe the
+FORMULA  vertex by a FORMULA -matrix, which has been
+modeled to include the FORMULA  interaction.
+This off-shell FORMULA -matrix treats the FORMULA , FORMULA 
+and FORMULA  channels in a coupled channel formalism
+{{cite:998bac82-00e0-4c87-9105-0c34a7702298}} and reproduces the experimental data on this
+reaction very well.
+The effect of FORMULA  final state interaction (FSI) is incorporated in
+the spirit of the Watson-Migdal FSI prescription {{cite:807a30ce-4f7a-4210-b415-b3d050f89f0d}}, in which
+our model FORMULA 
+production amplitude is multiplied by a factor which incorporates the
+FSI between the proton and the deuteron. This factor is taken to be
+the frequently used {{cite:964db363-781a-409e-a71b-ba765c91ff89}}, {{cite:6f42e8c7-8ff3-4fc1-afa9-fa1049113197}}, {{cite:3bf126b4-4a94-40bd-8eb2-66bb131bdbba}}, {{cite:6a3370b5-3f7f-4a70-8e98-5ca43bf5be85}} inverse
+Jost function, FORMULA , where FORMULA  is the relative
+FORMULA  momentum. The assumption implicit in this
+approximation that the mechanism for the primary reaction be short
+ranged is very well fulfilled in the FORMULA -production reactions.
+The momentum transfer in these reactions near threshold is around
+700 MeV/c. We include FSI for both doublet (FORMULA ) and quadruplet
+(FORMULA ) FORMULA  states.
+The FORMULA -nucleon FORMULA -matrix, which characterizes our calculations,
+is not precisely known. Recent theoretical works on the
+FORMULA  reaction
+{{cite:91c9d123-0a87-4842-97b8-8fac0bdd3a41}} conclude that
+the data on this reaction can be reproduced with the strength of the real
+part of the FORMULA -nucleon
+scattering length ranging between 0.42 and 0.72 fm.
+In our earlier work on the FORMULA  reaction
+{{cite:3e31d146-5a3b-4448-9d7b-1d204bbec948}}, we found a good agreement with data, with the real part of the
+scattering length taken to be around 0.75 fm. This value was also found
+to be in agreement
+with the FORMULA  data in a FORMULA -matrix calculation of the
+final state FORMULA  interaction in {{cite:c7e5a436-f01e-4270-bec4-04536701f7a7}}.
+The same authors as in {{cite:c7e5a436-f01e-4270-bec4-04536701f7a7}}, recently performed a fit
+to a wide variety of data which includes the
+FORMULA , FORMULA , FORMULA  and
+FORMULA  reactions and gave their best fit
+value of the FORMULA -nucleon scattering length, FORMULA  to be
+FORMULA  fm {{cite:d6c7445a-a04f-4df6-9347-e00f3414747f}}. The FORMULA  effective range
+parameters are given in {{cite:6f35e00d-adb8-4e25-a697-8f1c37ac7fe5}} for FORMULA  up to FORMULA  fm.
+Hence, in the present work we perform calculations with different models
+of the FORMULA  interaction, which correspond to three different values of
+the FORMULA  scattering length, ranging from FORMULA 
+fm to FORMULA  fm.
+We find that the cross sections calculated using the two-step model
+and the above inputs for the final state interaction
+reproduce most of the features of the experimental data reasonably well.
+A theoretical effort to understand the Uppsala data
+{{cite:71d596c6-5bf3-4f0d-8c40-4d64abdd890b}} was made earlier by Tengblad et. al. {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}}.
+In {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}} the contribution of three different diagrams, namely, the
+pick-up (a direct one-step mechanism of FORMULA  production), the impulse
+approximation and the two-step mechanism (here the FORMULA  meson is produced in
+two steps via the FORMULA  and
+FORMULA  reactions) to the cross section for the
+FORMULA  reaction is determined. The authors in
+{{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}} conclude that the impulse approximation is in general
+negligible as compared to the other two diagrams,
+the two-step mechanism is dominant in the near threshold region and the
+contribution of the pick-up diagram (referred to as the direct mechanism in
+the present work) increases with energy and matches the two-step contribution
+at an excess energy of FORMULA  MeV. The latter conclusions regarding the
+contributions of the two step and pick up diagrams are in contrast to the
+findings of the present work as well as to existing literature on
+similar kind of reactions. We note here that the authors in {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}}
+do not include the final state interaction in their calculations in any way.
+They treat the kinematics and the dependence of the pion propagator
+(appearing in the two step model) on the Fermi
+momenta in an approximate way. The FORMULA -matrices which enter as an
+input to the two step model are simply extracted from experimental
+cross sections and are hence not proper off-shell FORMULA -matrices.
+As a result of the above approximations, the authors in {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}} do not
+reproduce the observed enhancement in the FORMULA  invariant mass
+distribution near threshold, and unlike the observed isotropic distributions,
+find anisotropy in their calculated angular distributions.
+The contribution from the direct mechanism (or the so-called pick-up diagram of
+{{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}}) to the total cross sections is found to be
+about four orders of magnitude smaller than the two-step contribution
+at threshold in the present work.
+The one-step contribution does increase with energy
+(as also found in {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}}), however, even at the highest energy
+for which data is available (FORMULA  MeV) it remains two orders
+of magnitude smaller than that due to the two-step model. This is in
+contrast to the observations in {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}}, where the two processes give
+comparable contributions at high energies.
+The difference of orders of magnitude between the two processes can be
+understood as a result of the large
+momentum transfer, FORMULA , in the one-step process. This FORMULA , which
+is very large in the threshold region (FORMULA  MeV/c) continues
+to be large even at high energies. For example, it is FORMULA  MeV/c
+even at the highest beam energy of 1096 MeV.
+This finding of ours is very similar to the previous studies of the
+reactions involving high momentum transfer.
+For example, as mentioned above too, in {{cite:af7a2102-3dee-4ace-a673-ac3e3626c5b6}}, for the
+FORMULA  reaction
+up to 2.5 GeV beam energy, the authors
+comment that the one-step cross
+sections underestimate the data by more than two orders of magnitude. In yet
+another calculation {{cite:5a0de7de-77bb-4478-b73c-af6b524831d5}} of the cross section for the
+FORMULA He FORMULA  reaction (where FORMULA ) the two-step model was found to describe
+the data on these reactions up to 3 GeV quite well.
+In {{cite:bfc99d37-1d92-49a1-ab49-e15bd8a99656}}, in connection with the FORMULA  reaction,
+the authors claim that for a beam energy of
+1 - 3 GeV, the one-step mechanism predicts 2 to 3 orders of magnitude smaller
+cross sections as compared to the two-step mechanism. The cross sections
+obtained from the one-step model, in Ref. {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}} are, however, reported
+to be only one order of magnitude less than those due to the two-step model
+at threshold and comparable to the two-step ones at high energies.
+In the next section, we describe the details of the formalism.
+In the subsequent sections we present and discuss the results and finally
+the conclusions.
+
+The Formalism
+The differential cross section for the FORMULA 
+reaction, in the center of mass, can be written as,
+FORMULA 
+where FORMULA  is the total energy in the center of mass and FORMULA 
+and FORMULA  are the proton momenta in the
+initial and final states respectively. FORMULA  denotes the invariant
+mass of the FORMULA  system and FORMULA  and FORMULA 
+denote, in the FORMULA  center of mass, the FORMULA  momentum and its solid
+angle, respectively. FORMULA  represents the solid angle of the
+outgoing proton. Angular brackets around FORMULA  in Eq. (REF ) represent
+the sum over the final and initial spins.
+The FORMULA -matrix, which includes the interaction between the FORMULA  and
+the deuteron is given by
+FORMULA 
+where the spin projections for the proton and
+the deuteron in the
+initial and final states have been labeled as FORMULA 
+and FORMULA  respectively. FORMULA  is the
+production operator.
+The wave function of the interacting FORMULA  in the final state has been
+represented as FORMULA .
+In terms of the elastic FORMULA  scattering
+FORMULA -matrix, FORMULA , it is written as
+FORMULA 
+The second term here represents the scattered wave. It has
+two parts originating from the
+principal-value and the delta-function part of the propagator in the
+intermediate state. Physically they represent the off-shell and the on-shell
+scattering between the FORMULA  and the deuteron. The on-shell part can be
+shown to be roughly proportional to the FORMULA  momentum and hence
+dominant at higher energies. The relative contribution of these terms in
+our case would be determined after we
+substitute the above expression for FORMULA 
+in Eq. (REF ).
+We then get
+FORMULA 
+FORMULA 
+It can be seen that the FORMULA  here appears as a half-off-shell
+FORMULA -matrix.
+FIGURE 
+The production mechanism
+For evaluating the FORMULA  production FORMULA -matrix,
+FORMULA , we assume a two-step
+mechanism as shown in Fig. 1. In this model, the incident proton produces
+a pion in the first step on interacting with one of the nucleons of the
+target deuteron. In the second step this pion produces an FORMULA  meson on
+interacting with the other nucleon. Both these nucleons are off-shell and
+have a momentum distribution given by the deuteron bound state wave function.
+To write the production matrix, we resort to certain standard approximations
+used in literature {{cite:6626b223-bbce-41ab-b4f3-5384f188a312}}
+(in particular for the triangle diagram appearing in
+Fig. 1). The amplitude for the FORMULA  process, which in principal is off-shell, is taken at an on-shell
+energy. Considering the high proton beam energy, off-shell effects are not
+expected to be significant. The FORMULA  process
+is included via an off-shell FORMULA -matrix.
+The production matrix is written as {{cite:af7a2102-3dee-4ace-a673-ac3e3626c5b6}}, {{cite:3e31d146-5a3b-4448-9d7b-1d204bbec948}},
+FORMULA 
+where, the squared four momentum of the intermediate pion,
+FORMULA , with the energy,
+FORMULA , calculated at zero fermi momentum and
+FORMULA .
+The summation is over internal spin projections
+and the matrix element FORMULA 
+represents the deuteron wave function in momentum space, which has been
+written using the Paris parametrization {{cite:3daef122-b14a-4ee6-bdfd-881dcbc81d1f}}. The factor FORMULA 
+is a result of summing the diagrams with an intermediate FORMULA  and FORMULA .
+The integral over the pion momentum in above includes the contribution from
+the pole as well as the principal value term. For the pion
+propagator itself, as we see, we have taken the plane wave propagator. This
+thus excludes any effect in our results due to medium modification of this
+propagator due to other nucleons. This aspect may be worth investigating
+in future.
+The FORMULA -matrix for the intermediate FORMULA  process has
+been taken from an energy dependent partial wave analysis of the FORMULA  reaction from threshold to 500 MeV {{cite:f632d2ba-297b-49d3-b466-3b83719dc89c}}. The
+various observables in {{cite:f632d2ba-297b-49d3-b466-3b83719dc89c}} are given in terms of amplitudes which
+are parametrized to fit the existing database. We refer the reader
+to {{cite:f632d2ba-297b-49d3-b466-3b83719dc89c}} and the references therein for the relevant expressions
+of the helicity and partial wave amplitudes and the notation
+followed by the authors in {{cite:f632d2ba-297b-49d3-b466-3b83719dc89c}}.
+For the FORMULA  sub-process,
+different forms of FORMULA -matrices are available. We use the FORMULA -matrix from
+{{cite:998bac82-00e0-4c87-9105-0c34a7702298}} which treats the FORMULA , and FORMULA  channels
+in a coupled channel formalism. This FORMULA -matrix consists of
+the meson - NFORMULA  vertices and the NFORMULA  propagator as given below:
+FORMULA 
+with,
+FORMULA 
+where FORMULA  (FORMULA ) are the self energies
+from the FORMULA  and FORMULA  loops. The parameters of this model are,
+FORMULA  = 0.616, FORMULA  = 2.36 fmFORMULA  and FORMULA  = 1608.1 MeV.
+This FORMULA -matrix reproduces the data on the
+FORMULA  reaction very well.
+FIGURE 
+Although the contribution of the direct mechanism (Fig. 2)
+is known to be small (owing to the large momentum transfer
+involved in the process) {{cite:af7a2102-3dee-4ace-a673-ac3e3626c5b6}}, {{cite:5a0de7de-77bb-4478-b73c-af6b524831d5}}, {{cite:bfc99d37-1d92-49a1-ab49-e15bd8a99656}},
+for completeness, we calculate its contribution to the total
+cross section.
+The FORMULA -matrix for this mechanism can be written as
+FORMULA 
+where FORMULA  represents the deuteron wave function in the initial state.
+The spin summed FORMULA 
+is given in terms of the total cross section for the FORMULA  reaction by
+FORMULA 
+where FORMULA  and FORMULA  are the initial and final momenta c.m.
+system. The momentum transfer FORMULA , as shown in Fig. 2, is defined as,
+FORMULA 
+The total cross section, FORMULA , for FORMULA  reaction
+is taken from the experiments {{cite:8d52cbb9-a7c5-476d-8282-ae57d930397c}}.
+
+Final state interaction
+FORMULA  interaction
+This is incorporated through a half-off-shell FORMULA  FORMULA -matrix.
+We construct this FORMULA -matrix using the following two prescriptions:
+
+Factorized form of  FORMULA
+In one ansatz we obtain it by multiplying the on-shell FORMULA 
+FORMULA -matrix by an off-shell extrapolation factor FORMULA .
+Requiring that this FORMULA -matrix goes to its on-shell value in the case
+of on-shell momenta, we write
+FORMULA 
+with FORMULA  as FORMULA . For a half-off-shell
+case, this obviously is the ratio of the half-off-shell to the on-shell
+scattering amplitude.
+For the on-shell FORMULA  FORMULA -matrix we use the effective range expansion
+of the scattering amplitude up to the fourth power in momentum,
+FORMULA 
+where F is related to T by
+FORMULA 
+The effective range expansion parameters (A,R,S) are taken from a recent
+relativistic Faddeev equation (RFE) calculation of {{cite:6f35e00d-adb8-4e25-a697-8f1c37ac7fe5}}.
+This calculation uses the relativistic version of the Faddeev equations
+for a three particle FORMULA  system, where m is a meson and it can be an
+FORMULA  or a FORMULA  meson.
+These particles interact pairwise, and these interactions are represented
+with separable potentials. The parameters of the
+FORMULA  potentials are fitted to the FORMULA  resonant
+amplitude and the FORMULA  cross sections.
+The FORMULA  effective range parameters obtained from these calculations
+are listed in {{cite:6f35e00d-adb8-4e25-a697-8f1c37ac7fe5}} for different sets of the meson-nucleon potentials.
+Each of these sets gives a specific value of the FORMULA  scattering length,
+which is also listed in {{cite:6f35e00d-adb8-4e25-a697-8f1c37ac7fe5}}.
+Since the half-off-shell extrapolation factor FORMULA 
+is not known with any certainty, we choose the following two forms for it.
+(i) Following the method in {{cite:c7e5a436-f01e-4270-bec4-04536701f7a7}} for the
+final state interaction in the FORMULA  system, we express the off-shell
+form factor in terms of the deuteron form factor,
+FORMULA 
+where for the deuteron wave function, FORMULA , we take the Paris
+parametrization.
+(ii) As a second choice, the form factor is taken to be the ratio of the
+off-shell FORMULA  FORMULA -matrix to its on-shell value, where both of them are
+calculated using the three body equations within FRA. The input to
+these calculations is the elementary FORMULA  scattering matrix,
+the details of which are given in the next Section.
+
+Few body equations within the finite rank approximation
+The other prescription of FORMULA  FSI involves the use of the half-off-shell
+FORMULA  FORMULA -matrix obtained by solving few body equations within the finite
+rank approximation (FRA). For the details of this formalism and the
+expression for the FORMULA -nucleus FORMULA -matrix, we refer the reader to our
+earlier works {{cite:3e31d146-5a3b-4448-9d7b-1d204bbec948}}. To mention briefly, the FRA involves restricting
+the spectral decomposition of
+the nuclear Hamiltonian in the intermediate state to the ground state,
+neglecting thereby all excited and break-up channels of the nucleus.
+This is justified in the FORMULA He and possibly in the
+FORMULA He case, but in FORMULA deuteron collisions,
+where the break-up energy is just 2.225 MeV, the
+applicability of the FRA may be limited. However, it should be noted that
+a comparative study {{cite:ada8f487-72b8-40c1-8371-9a0b0dd95c59}} of the FORMULA  scattering lengths
+calculated using the FRA and the exact Alt-Grassberger-Sandhas
+(AGS) {{cite:22fac4ad-c3a7-4358-bb68-7df9ec0290a5}} equations (which include these intermediate excitations)
+shows that they are not very different if the real part of the
+FORMULA  scattering length is restricted up to about 0.5 fm.
+
+
+FORMULA  interaction
+We incorporate the FORMULA  FSI in our calculations
+by multiplying our model FORMULA -matrix by the inverse Jost function,
+FORMULA . We include the FSI in both the 1/2 and 3/2 spin states
+of FORMULA  and restrict it to the s-wave.
+Since the FORMULA  and FORMULA  are charged we
+also include the Coulomb effects. Following standard
+procedure, we write the Jost function in terms of phase shifts and
+use the effective range expansion for the later.
+The complete expression for the s-wave inverse Jost function squared
+is written as,
+FORMULA 
+Here, to include the effect of the existence of one bound state, namely,
+the spin 1/2 state (FORMULA ), the doublet Jost function is multiplied by a
+factor FORMULA , where FORMULA  is the separation energy
+of FORMULA  into FORMULA . Its value is taken to be 5.48 MeV.
+The expressions for spin quadruplet
+(Q) and doublet (D) FORMULA  are given by
+FORMULA 
+FORMULA 
+where,
+FORMULA 
+and FORMULA  and FORMULA  are defined as
+FORMULA 
+where FORMULA  stands for either Q or D.
+The factor FORMULA  in above has its origin in the Coulomb interaction.
+The phase shifts FORMULA  are obtained from an effective-range
+expansion {{cite:43c5dab1-65c0-42c6-8ab7-70d78c3c0c63}}, {{cite:21c17d19-41f5-493b-ac26-dfb7bdf39765}},
+FORMULA 
+FORMULA 
+Here FORMULA  is the reduced mass in the FORMULA  system, FORMULA  the
+Coulomb parameter and FORMULA  is the usual
+electromagnetic coupling constant. The values of the expansion
+coefficients FORMULA , FORMULA  in Eq. (REF ) are taken as
+FORMULA  = 11.88 fm, FORMULA  = 2.63 fm, FORMULA  = 2.73 fm, and FORMULA  = 2.27 fm.
+They have been determined from a fit to the FORMULA  elastic-scattering
+phase shifts in the relative FORMULA  momentum range up to around 200 MeV/c
+{{cite:42e1e572-454d-4530-a2d9-b4ec114cf2b5}}.
+The above expression for the Jost function has the required property that
+for large FORMULA , FORMULA .
+
+Results and Discussion
+Before we discuss the results of the present work, in order to highlight
+the FSI effects in the experimental FORMULA  invariant mass distribution
+we remove the phase space from the experimental FORMULA  and
+plot in Fig. 3 the FORMULA , which is then given by,
+FORMULA 
+where,
+FORMULA 
+as a function of the excess energy, FORMULA , where FORMULA  is the invariant mass of the FORMULA  system.
+In this figure we also show the plane wave result (i.e. FORMULA  does not include any FSI). The cross section,
+FORMULA  in Eq. (REF ), is evaluated for each
+FORMULA  by performing an integral over the FORMULA  centre of mass
+momenta, FORMULA . The range of the allowed values of FORMULA  at
+each FORMULA  is shown by the hashed region. One clearly sees a
+large enhancement in the experimental FORMULA  near small values of
+FORMULA , which, most likely is due to the FORMULA  FSI.
+We also observe a rise at large
+values of FORMULA . Examining the range of FORMULA  relative momenta which
+contribute to FORMULA  at each FORMULA , one can see that this rise occurs
+at small values of FORMULA , indicating thereby the possibility of a large
+effect of FORMULA  FSI in this region.
+FIGURE 
+In Fig. 4, we show two sets of the calculated FORMULA  along with the
+experimental results for a beam energy of 1032 MeV. These results include
+only FORMULA  FSI. We limit the range of FORMULA  up to about 10 MeV,
+where, this effect is large. In Fig. 4(a) we show results for the factorized
+prescription with the off-shell factor generated from the deuteron form
+factor and the on-shell part arising from the relativistic Faddeev
+equation (RFE) calculation of {{cite:6f35e00d-adb8-4e25-a697-8f1c37ac7fe5}}. The results are shown for
+three different sets of interaction parameters in the RFE.
+Since these sets give uniquely different values of the FORMULA  scattering
+lengths FORMULA , we identify them by their corresponding
+FORMULA  values. For the results presented here, these values are
+0.42 + i0.34 fm, 0.75 + i0.27 fm and 1.07 + i0.26 fm. We see that
+our results reproduce the enhancement seen in the experimental FORMULA 
+at small values of FORMULA . The absolute magnitude depends upon the
+choice of the RFE parameters. It increases with FORMULA , which
+designate these parameter sets. The set corresponding to
+FORMULA  fm, gives results closest to the experimental
+values.
+FIGURE 
+In Fig. 4(b) we show FORMULA  calculated using few body equations within
+the FRA, for FORMULA  FSI. These results are shown for
+three different inputs of the FORMULA  FORMULA -matrix taken from {{cite:d6c7445a-a04f-4df6-9347-e00f3414747f}}.
+The choice of these FORMULA -matrices is such that their scattering
+length values are close to those used in Fig. 4(a). Though this model has
+the limitation of retaining the intermediate
+nucleus in its ground state in the FORMULA  nucleus elastic scattering,
+the off-shell re-scattering effects have been properly included. If we
+compare Fig. 4(a) and 4(b), the two sets of results are similar.
+FIGURE 
+In order to check the sensitivity of the results to the off-shell form factor
+used in the factorized FORMULA  FORMULA -matrix,
+in Fig. 5(a), we show the FORMULA  calculated using two different off-shell
+form factors. The on-shell FORMULA  is obtained from RFE and the
+off-shell part is
+either treated with a deuteron form factor (solid line) or a few body FRA
+form factor (dash dotted line) as explained in section II B.
+The elementary FORMULA  FORMULA -matrix parameters required for the calculation
+of the FRA form factor are taken from the
+parametrization of Green and Wycech {{cite:d6c7445a-a04f-4df6-9347-e00f3414747f}}. Even though the results
+(as shown in Fig. 4(a)) corresponding to the aFORMULA  = 1.07 + i0.26 fm
+seem to be the closest to the data, to compare the effect of using different
+off-shell form factor, we choose the results corresponding to
+aFORMULA  = 0.75 + i0.27 fm. We make this choice such that we can compare
+the two calculations for the inputs corresponding to a similar FORMULA 
+scattering length. It should be expected then, that the off-shell form factors
+obtained from two different methods should not differ much.
+This is seen explicitly in Fig. 5(b) where the two form factors are shown
+as a function of off-shell momentum (FORMULA ) for an on-shell value, FORMULA 
+near the low energy peak in the
+FORMULA  invariant mass distribution (to be discussed in Fig. 9 later).
+Next, we include in our calculations the effect of the FORMULA  FSI. This is
+done by multiplying the FORMULA  squared FORMULA -matrix
+(Eq. (REF )) used above by the inverse Jost function squared in
+Eq. (REF ) and Eq. (REF ), and integrating it over the allowed
+range (as shown in Fig. 3) of FORMULA  momenta, FORMULA  for each FORMULA .
+We show these results in Fig. 6 for the RFE (with deuteron form factor)
+model of FORMULA  FSI, for the parameter set corresponding to
+aFORMULA  = 1.07 + i0.26 fm. We find, that the FORMULA  FSI affects the
+results in the whole region of FORMULA , while the effect of FORMULA 
+FSI is confined to small value of FORMULA . The large effect of FORMULA 
+FSI in the region of small FORMULA , however, may not be taken with
+confidence as the value of FORMULA  in this region is large (as shown in
+Fig. 3), where the s-wave effective range expansion (Eq. (REF )) for
+the calculation of Jost function might not be sufficient. In any case,
+it appears that the effects of both the FORMULA  and the FORMULA  FSI on the
+FORMULA  invariant mass distribution are significant. If we disregard the
+calculated FORMULA  effect for small FORMULA , the FORMULA  and FORMULA  FSI
+dominate in regions well separated from each other.
+FIGURE 
+FIGURE 
+Apart from the FSI, another important ingredient of our calculations is
+the two-step
+description of the production vertex. Because of the large momentum
+transfer, we believe, as has also been stressed in Ref. {{cite:ead932b8-d0bb-4201-b2d5-125cda9cd38e}}, that
+the angular distribution of the outgoing particles is
+probably more sensitive to the description of the production vertex.
+Inclusive angular distributions have been
+measured for all the three outgoing particles in the
+FORMULA  reaction. In Fig. 7, we show the
+calculated angular distributions for all the
+three outgoing particles along with the measured distributions.
+We show results without any FSI, with FORMULA  FSI and with FORMULA  and
+FORMULA  FSI both included.
+As each angle has contribution from a range of FORMULA  as well as
+FORMULA , the calculated results include integration of the cross section
+over these variables.
+We find that the observed nearly isotropic nature of the experimental
+angular distributions for the proton, deuteron and eta already gets
+reproduced by the plane wave calculations. The effect of both
+FORMULA  and FORMULA  FSI is large and persists over all the angles. Their
+inclusion brings the magnitudes of the proton and deuteron angular
+distributions near to experiments. The magnitude of the eta distribution,
+however, does not seem to be affected much with the FSI.
+FIGURE 
+Experimental data also exist on the total cross section. In Fig. 8,
+we compare the total cross sections calculated including both
+the FORMULA  and FORMULA  FSI with the measured
+cross sections. The results are shown with the factorized form of FORMULA  FSI
+with deuteron form factor for the set corresponding to FORMULA  scattering
+length equal to
+FORMULA  fm. As we see, the calculated cross sections are
+in good agreement with the experimental data.
+In Fig. 8 we also give the cross sections calculated for
+the one-step direct mechanism (Fig. 2) mentioned in the previous
+section. Near threshold, these cross sections are about four
+orders of magnitude below those obtained from the
+two-step model and two orders of magnitude smaller in the high energy range.
+As mentioned in the Introduction,
+this observation is similar to that in other works involving
+large momentum transfer reactions {{cite:af7a2102-3dee-4ace-a673-ac3e3626c5b6}}, {{cite:5a0de7de-77bb-4478-b73c-af6b524831d5}}, {{cite:bfc99d37-1d92-49a1-ab49-e15bd8a99656}}, and is
+understandable because the momentum
+transfer continues to be large (FORMULA  MeV/c) in the FORMULA  reaction even at an excess energy as large as 100 MeV.
+FIGURE 
+Now we make an observation about the importance of off-shell scattering
+in treating FORMULA  FSI near threshold. The scattering part of the FORMULA 
+wave function (Eq. (REF )), gets contributions from the off-shell as
+well as the on-shell scattering in the nucleus. To see quantitatively
+the relative importance of these two contributions to the cross section for
+the FORMULA  reaction, in Fig. 9 we show their
+contributions separately in the FORMULA  invariant mass distribution.
+These results include only the FORMULA  FSI generated from the factorized
+prescription using RFE and the deuteron form factor for the FORMULA 
+FORMULA -matrix. We find that near threshold the off-shell scattering completely
+dominates the threshold enhancement. At higher excess energy, as expected,
+the on-shell contribution takes over.
+FIGURE 
+Finally we show the nature of agreement of our calculated results with the
+invariant FORMULA  mass distribution. In Fig. 10, we compare the calculated
+results including both the FORMULA  and FORMULA  FSI with the experimental
+results. The results are for aFORMULA  = 1.07 + i0.26 fm calculated with
+the factorized prescription using RFE and the off-shell factor generated from
+the deuteron form factor. As we see the overall agreement is reasonably good.
+
+Summary
+The invariant FORMULA  mass distribution in the FORMULA  reaction has been studied
+by describing the production mechanism in terms of
+a two step model with a pion
+being produced in the intermediate state.
+The FORMULA  final state interaction (FSI) has been included in (a) a
+factorized form involving an on-shell FORMULA  and two types of
+off-shell form factors and (b) by solving few body equations within the FRA.
+The FORMULA  FSI is included through a Jost function.
+The conclusions of this investigation can be summarized as:
+
+Experimentally observed large enhancement in the cross section
+near small FORMULA  excess energy, FORMULA  is reproduced by the
+FORMULA  FSI. The rise in the cross section at large FORMULA 
+(which corresponds to a range of small momenta, FORMULA ) can be
+accounted for by the FORMULA  FSI.
+
+Quantitative reproduction of the large enhancement requires FORMULA 
+FSI corresponding to large values of FORMULA . In the present
+calculation it is around 1.07 + i0.26 fm.
+
+The calculations successfully reproduce the observed
+isotropic angular distribution of the proton and the
+deuteron in the final state. The total cross sections for the
+FORMULA  reaction are also well reproduced.
+
+The off-shell part of the FORMULA  scattering dominates near threshold.
+
+The results for two different choices of the off-shell extrapolation
+factor in the factorized form of the FORMULA  FSI are similar.
+
+
+Acknowledgments
+The authors wish to thank R. A. Arndt for providing the computer codes
+for evaluating the FORMULA  FORMULA -matrix.
+This work is done under a research grant by the
+Department of Science and Technology, Government of India. The
+authors (NJU, KPK and BKJ) gratefully acknowledge the same.

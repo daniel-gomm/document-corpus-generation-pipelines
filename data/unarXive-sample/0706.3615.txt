@@ -1,0 +1,852 @@
+
+CO adsorption on metal surfaces:
+a hybrid functional study with plane wave basis set.
+Alessandro Stroppa
+alessandro.stroppa@univie.ac.at
+Faculty of Physics, University of Vienna, and Center for Computational Materials Science,
+Universität Wien, Sensengasse 8/12, A-1090 Wien, Austria
+Konstantinos Termentzidis
+Faculty of Physics, University of Vienna, and Center for Computational Materials Science,
+Universität Wien, Sensengasse 8/12, A-1090 Wien, Austria
+Joachim Paier
+Faculty of Physics, University of Vienna, and Center for Computational Materials Science,
+Universität Wien, Sensengasse 8/12, A-1090 Wien, Austria
+Georg Kresse
+Faculty of Physics, University of Vienna, and Center for Computational Materials Science,
+Universität Wien, Sensengasse 8/12, A-1090 Wien, Austria
+Jürgen Hafner
+Faculty of Physics, University of Vienna, and Center for Computational Materials Science,
+Universität Wien, Sensengasse 8/12, A-1090 Wien, Austria
+2020/09/07 05:36:54
+We present a detailed study of the adsorption of CO on Cu, Rh, and Pt (111) surfaces in top and
+hollow sites. The study
+has been performed using the local density approximation, the gradient corrected functional PBE, and the
+hybrid
+Hartree-Fock density functionals PBE0 and HSE03 within
+the framework of generalized Kohn-Sham density functional theory using a plane-wave basis set.
+As expected, the LDA and GGA functionals show a tendency to favor the hollow sites,
+at variance with experimental findings that give the top site as the most stable adsorption site.
+The PBE0 and HSE03 functionals reduce this tendency. In fact, they predict
+the correct adsorption site for Cu and Rh but fail for Pt.
+But even in this case, the hybrid functional destabilizes
+the hollow site by 50 meV compared to the PBE functional.
+The results of the total energy calculations are presented
+along with an analysis of the projected density of states.
+PACS:68.43.Bc, 68.43.-h, 68.47.De, 71.15.Mb
+Introduction
+The adsorption of carbon monoxide on metal surfaces is an important
+case study in surface
+science
+for two reasons. On one hand, the interaction of CO with
+metal surfaces plays a major role in understanding phenomena related to
+e.g. catalysis, adhesion and coating as well as in many industrial
+processes, such as automotive catalysis, corrosion, tribology, and
+gas sensing.{{cite:984556a2-1045-4867-a33d-2b92db53db93}} Catalysts containing transition metals, such as
+rhodium, palladium and platinum have been widely used to lower the
+emissions of CO in automobile exhausts.{{cite:984556a2-1045-4867-a33d-2b92db53db93}} For all
+the mentioned applications, it is clear that understanding
+adsorption on both bare and adsorbate-covered surfaces is an important
+issue.
+On the other hand, the failure of Density Functional Theory (DFT)
+based on local and semilocal density functionals in predicting the
+correct adsorption site for CO on metal surfaces is well known. The
+most notable example in literature is the CO/Pt(111) system, often referred to
+as CO adsorption puzzle. No "stone was left
+unturned"{{cite:c61cb0a1-7ccb-4f93-aa8c-5607ec4e56a4}}
+in order to determine
+the reason for the discrepancy between theory and experiment, but neither defect structures
+and contaminations, nor
+relativistic or spin effects, nor zero-point energies can account for the difference:
+there is strong
+evidence that current approximations to DFT underestimate the CO
+preference for low-coordination sites.{{cite:48562f15-d024-4f89-9c9d-c8213c191645}}, {{cite:c61cb0a1-7ccb-4f93-aa8c-5607ec4e56a4}} Most
+plane wave codes
+predict that the hollow site is preferred
+for CO on Cu, Rh and Pt (with the exception of Ref. dacapo for CO on Rh),
+whereas experimentally it is found that CO adsorbs
+at the top site with the carbon end down at low coverage on all three
+substrates.{{cite:baf7ec87-ee02-4cc1-b242-a6d8c5c0083d}}, {{cite:e47cf0ae-1b63-4f0e-bfbe-77c7307496c3}}, {{cite:65a61850-e2d9-412d-a114-ba560fe46b81}}, {{cite:0a9187db-1a9c-4a29-b0a0-c62580e46543}} In all fairness,
+it must be emphasized that some local basis set
+codes (specifically DMOL and ADF) seem to give the proper site order for
+Pt.{{cite:923d76d3-0ede-4704-8b5e-6b62bdd35cc5}}, {{cite:ff5ddee0-239a-4ef1-968d-de8c6e0237a2}}
+The reason for the discrepancy between local basis set codes and plane
+wave codes is not yet entirely understood, but it is likely to be related
+to the different treatment of relativistic effects or basis sets. For Pt, the DMOL
+code for instance applies effective core potentials to take into
+account relativistic effects, and the site preference
+depends critically on the used effective core potential, with the most
+accurate effective core potential giving the same site preference as plane wave codes.{{cite:7a91e82d-12c5-4137-b583-eee338b9b0dc}}
+The Amsterdam Density Functional code (ADF) also yields the correct site order
+for Pt.{{cite:ff5ddee0-239a-4ef1-968d-de8c6e0237a2}} Basis set convergence, k-point sampling as well as relativistic effects
+have been carefully checked for CO on Pt, and it is at this point unclear why results differ
+from those reported using plane waves.
+Very recently, Q.-M. Hu et al.{{cite:35d67f1b-7f46-476b-9435-fa6bf4468c1b}} have shown
+that errors of present-day exchange-correlation (xc) functionals are
+rather localized and spatially limited
+to few nearest neighbors. For extended systems the correction can
+be estimated by analyzing properly chosen clusters
+and employing wavefunction based methods for an improved xc treatment. According to their study, this
+procedure applied to CO/Cu(111) and CO/Ag(111) gives the top site as the most stable adsorption site, in agreement with
+the experiments.{{cite:35d67f1b-7f46-476b-9435-fa6bf4468c1b}}
+Returning to the discrepancy between theory and experiment obtained using DFT and plane waves, the
+current suggestion is that the main reason for the failure is due to the
+incorrect description of the relative position
+of the highest occupied molecular orbital (HOMO) and lowest unoccupied molecular orbital (LUMO) of CO
+with respect to the Fermi energy of the metal.{{cite:012e89f0-eee6-43e5-9a0d-73d69f5ed2a0}}
+To overcome this problem several possibilities have been considered so far.
+One is to apply an a posteriori correction, based on the singlet-triplet CO excitation
+energy obtained by GGA and configuration
+interaction calculations.{{cite:313a7b34-2369-4521-ae92-02e4822e237f}}
+A second option is
+using a DFT+U approach, where an additional U is added to the
+DFT Hamiltonian to shift the CO LUMO to higher energies.
+{{cite:48562f15-d024-4f89-9c9d-c8213c191645}}, {{cite:345b7718-2baf-4da6-9fd2-cc14f08f06d8}} A third self contained and less ad-hoc approach
+is the use of hybrid functionals.{{cite:012e89f0-eee6-43e5-9a0d-73d69f5ed2a0}}
+Hybrid functionals are a combination of exact non-local
+orbital-dependent Hartree-Fock (HF) exchange and a standard local
+exchange-correlation functional, and they
+provide a significant improvement
+over the LDA-GGA description for molecular as well as extended insulating and semiconducting solid
+state systems.{{cite:33177f32-95fa-4cc6-9b06-4ae016a10f96}} For these systems, hybrid functionals are among the most accurate
+functionals available as far as energetics and structural properties are
+concerned.{{cite:750e992b-eeda-4ada-87d7-54150f87d661}}, {{cite:5f048845-98fe-4cb4-846f-bd2be8bcd511}}, {{cite:3fc96eeb-9598-4c51-a22f-f5053e7e41ae}}
+Currently, the most popular ones are PBE0 (or PBE1PBE)
+{{cite:265c5972-2bc9-4657-b827-4a39b976443c}}, {{cite:acac7512-24fa-4b55-8d53-d8d25633313b}} and B3LYP{{cite:46f10abf-fa31-452a-96f0-845f7e28541b}}, {{cite:7e9dbc3d-c14a-4cda-ac6a-496dfffc3519}}. The
+former has been proposed by Perdew, Burke, Ernzerhof, Adamo and
+Barone {{cite:e00a3824-6762-49d3-a8b8-b14f334167dd}}, {{cite:5942cecd-a70e-48b0-bf58-9279d93d15df}} as a ”parameter-free” functional based
+on the PBE exchange-correlation functional. It has promising
+performance for all important properties, being competitive with the
+most reliable, empirically parametrized functionals.{{cite:acac7512-24fa-4b55-8d53-d8d25633313b}}
+The latter was suggested by Becke{{cite:46f10abf-fa31-452a-96f0-845f7e28541b}} and soon developed
+into the most popular and most widely used functional for quantum
+chemical calculations.
+This functional
+reproduces the thermochemical properties of atoms and
+molecules rather well.{{cite:b3d7701d-33a7-42b9-82a7-5517614dff3a}}
+For periodic systems, in particular metals, however, the long-range
+nature of the Fock exchange interaction and the resultant large
+computational requirements present a major drawback. Recently, a new
+hybrid functional, called HSE03, has been introduced by J. Heyd
+et al.{{cite:2cabd22d-bc66-4040-9f1e-7bf0088e6038}} This functional addresses this problem by
+separating the description of the exchange interaction into a short-
+and a long-range part, where the long-range part is treated by
+semilocal gradient corrected functionals. The new functional yields
+a description of molecular properties comparable to the results
+obtained using the PBE0 functional, and, in some cases, it even
+gives a slight improvement over the latter.{{cite:2cabd22d-bc66-4040-9f1e-7bf0088e6038}}
+To the best of our knowledge, very few ab initio calculations based on
+hybrid functionals have been concerned
+with the problem of CO
+adsorption on
+metal surfaces. Gil et al.{{cite:012e89f0-eee6-43e5-9a0d-73d69f5ed2a0}} reported on the CO
+adsorption on the Pt(111) surface using both slabs and cluster
+models with local, semilocal and hybrid functionals (B3LYP). But the
+B3LYP calculations were restricted to clusters and extrapolation to
+large clusters seems to indicate that convergence with respect to
+the cluster size was not obtained. The B3LYP functional renders the
+on top and fcc sites almost degenerate, whereas LDA and GGA show a
+pronounced tendency to favour fcc adsorption. This was confirmed in
+the work of Doll {{cite:56d345e8-b33b-4e73-823c-223571a95777}} on the same system,
+where a careful
+comparison between gradient corrected functionals and the B3LYP
+functional has been reported. It was shown that the B3LYP functional
+gives the top site as the preferred site. Finally, in the work of
+Neef and Doll,{{cite:4b0ea7ee-05ec-403f-be7a-fec34a5aec44}} the adsorption of CO on the Cu(111) surface has
+been studied using the local density approximation, the gradient
+corrected functional of Perdew and Wang and the B3LYP functional. The
+LDA and GGA yield the fcc site as favorable adsorption site, whereas
+the B3LYP functional results in the preference of the top
+site, in agreement with the experiment. The recent study for CO on Cu and Ag(111) come to similar conclusions.{{cite:35d67f1b-7f46-476b-9435-fa6bf4468c1b}}
+All these hybrid functional studies applied only B3LYP and they made
+use of localized basis sets, which are possibly affected by basis set superposition errors (BSSE).
+The aim of the present report is to present an extensive density functional
+study of the adsorption of CO
+on close-packed (111) metallic surfaces using the PBE0 and HSE03 functionals, which have not been
+considered yet for this specific problem. We also include, for comparison,
+the local density approximation and the standard
+gradient corrected PBE functional,
+which is widely accepted as the best parameter-free density functional available.
+We discuss in detail the application of these functionals to bulk, bare Cu, Rh and Pt surfaces and the corresponding
+CO adsorption problem.
+The study is pursued within the framework of the
+plane-wave projector-augmented-wave (PAW) formalism. Based on the approach of Chawla and Voth{{cite:2d35ac80-dbc5-4889-aaf8-a5755c950e07}}
+for the evaluation
+of the exact exchange, PBE0 and HSE03 functionals have been recently implemented in the Vienna ab–initio Simulation
+Package (VASP).{{cite:fb5f2a33-77d3-4160-b0a6-5c1a274aae82}}
+We remark that the use of a plane-wave basis set for the evaluation
+of the exact exchange energy
+allows for calculations that are free of basis-set superposition errors and benefit from the computational
+efficiency of fast Fourier transforms. Details of the implementation are given elsewhere.{{cite:33177f32-95fa-4cc6-9b06-4ae016a10f96}}, {{cite:9dbb5e33-dfb4-4f14-b038-fdae24ad63fb}}
+We will focus on three
+reference metal systems, Cu, Rh, and Pt, which are among
+the best studied metallic surfaces concerning CO
+adsorption.{{cite:984556a2-1045-4867-a33d-2b92db53db93}} We note that the adsorption of CO on Rh(111) has not been investigated
+using hybrid functionals.
+The paper is organized as follows. In the next Section we describe the computational approach and the
+model systems used;
+in Sect.  we briefly review the calculated properties for the bulk and corresponding bare (111) surfaces as well
+as for the CO molecule; in Sect.  we discuss the results concerning the structural properties
+and energetics of the adsorbed CO molecule on the surface; Sect. 
+is devoted to the electronic properties in terms of density of states; in
+Sect.  we discuss the main results of this work and
+in Sect.  we draw our conclusions.
+
+Theoretical and computational method
+The first principles density functional theory calculations have been
+performed within the local and generalized gradient density approximation to
+DFT in the Ceperley-Alder and Perdew-Burke-Ernzerhof parametrization, respectively.{{cite:0f90da97-0184-49a7-8bc4-bd3640d98288}}, {{cite:8f84c28b-4191-427b-8f64-f8c8b30116d9}}
+In the present calculations, the interaction between the ions and valence electrons is described by the projector
+augmented wave (PAW){{cite:bf75f97c-a31c-4c99-aaa4-06d814745ef3}} method in the implementation of Kresse and Joubert.{{cite:531d2271-1f84-40b6-a06a-61a54d4ee4d3}}
+The cutoff energy has been fixed to 400 eV, which is sufficient to give well converged
+results for the systems considered in this work.{{cite:9dbb5e33-dfb4-4f14-b038-fdae24ad63fb}}
+The surfaces have been modelled by a periodic four layer metal slab
+with a CO molecule adsorbed on one side of the slab,
+vertical to the (111) surface plane (asymmetric setup).
+For CO on Pt(111), tests with a six layer metal slab using the HSE03 functional have also been performed in order to
+check the convergence with respect to the slab thickness: the relative stability of the different sites
+does not change. Each slab is separated from its periodic image in the FORMULA direction
+by a vacuum space of FORMULA  10 Å.
+The two uppermost surface layers and the CO molecule are allowed to relax (substrate
+buckling up to the second layer below the surface). For the
+electronic relaxation, we fix the energy threshold to 10FORMULA  eV whereas, the ionic relaxation is stopped
+when all forces are smaller than 0.1 eV/Å.
+We use a FORMULA  in-plane periodicity, which is equivalent to a coverage of FORMULA  ML.
+With this choice,
+the separation between the molecule and its in-plane periodic images is large enough
+to neglect spurious adsorbate-adsorbate interactions with a reasonable computational effort.{{cite:1cb4f0a4-99f0-4c3d-8081-f28e79d8e838}}
+For the HSE03 calculations, the range separation parameter FORMULA  was set to FORMULA ÅFORMULA 
+in both the density
+functional part as well as the non-local Fock exchange.{{cite:57e36d9b-528b-4c07-ad68-d9d185195b9a}}
+The Brillouin zone integrations are performed
+on symmetry reduced grids using the Monkhorst-Pack scheme.{{cite:0108be21-dc24-4ab0-a2e6-a53a2f459f7c}}
+To accelerate k-point convergence,
+we set the Methfessel-Paxton{{cite:395803bb-feaa-400c-917f-fc42eabfb338}} smearing
+width to 0.1 eV. We have carefully checked the k-point convergence by performing
+calculations using 4FORMULA 4FORMULA 1, 6FORMULA 6FORMULA 1
+and 8FORMULA 8FORMULA 1 points (see discussion in Sect. ).
+The numerical accuracy of the adsorption
+energies is estimated
+to be FORMULA  20 meV.
+We have also investigated the effect of downsampling the reciprocal space representation
+of the Fock exchange operator
+for the HSE03 functional as outlined in Ref. Paier2. In particular, the Fock exchange
+operator has been evaluated on the ”full”  FORMULA FORMULA FORMULAFORMULA 1 k-point mesh, as well as, on the
+corresponding ”downsampled”  FORMULA FORMULA FORMULAFORMULA  grid, with FORMULA =4, 6, 8
+(for details see Ref. Paier2). Results are discussed in Sect. . Finally,
+we have also tested, for a reference case (HSE03),
+the effect of the parameter that controls the fast Fourier transformation (FFT) grid for the HF routines (keyword ENCUTFOCK in the
+VASP code). By considering the smallest possible FFT grid that just encloses the cutoff sphere corresponding to the
+plane wave cutoff (ENCUTFOCK=0) or simply removing this constraint (without the flag ENCUTFOCK), total energies
+change by less than 5 meV.{{cite:cb676460-ffff-4df5-a2d0-1fd027763025}}
+We considered three adsorption sites:
+top site, where CO is sitting vertically
+above a metal atom in the top layer, and
+the hcp (fcc) hollow site, where CO is sitting vertically above a
+metal atom in the second (third) topmost layer.
+
+Bulk, bare surface and CO molecule
+Before studying the effect of CO adsorption on the (111) metal
+surfaces, we first consider the bulk and bare surfaces. In
+Table REF  we summarize the results for the bulk systems
+reporting the lattice constant (FORMULA ) and the bulk modulus (FORMULA )
+obtained using the Murnaghan equation of state.
+The cohesive energy (FORMULA ) is
+calculated considering unconstrained, i.e. spin polarized and nonspherical,
+ground states of the atoms.{{cite:33177f32-95fa-4cc6-9b06-4ae016a10f96}} The numbers between
+round brackets give the relative errors with respect to experiment.
+As usual,
+the LDA (GGA) lattice constants are slightly underestimated (overestimated) with respect to
+the experiment. Note that the
+experimental lattice constants reported in
+Tab. REF  have not been extrapolated to 0 K and
+the zero-point quantum fluctuations have not been included in the
+DFT calculations. However, the inclusion of these contributions
+should change the values by only approximately FORMULA 
+0.1 %, which we can neglect for the purpose of the present
+study.{{cite:97dd287f-631c-4b0d-8018-5d5397d4588d}}
+Using hybrid functionals,
+the lattice constant is almost unchanged for Cu
+(only a slight expansion is found using PBE0 and HSE03) and
+the overestimation is generally reduced in the other two cases.
+For Rh, the hybrid functionals overcorrect
+the lattice constant giving a theoretical value smaller than the
+experimental one; for Pt, it remains slightly larger than
+experiments.
+Except for Cu, the agreement with experiment improves using hybrid functionals (the PBE0 and HSE03
+relative errors are smaller than the PBE ones).
+The overestimation (underestimation) of the lattice constants goes
+in hand with an underestimation (overestimation) of the
+bulk-moduli.
+The PBE functional predicts
+FORMULA  slightly more accurately than hybrid functionals
+for the systems under study.
+The cohesive energies are overestimated at the LDA level, they are very well
+reproduced for the
+three bulk metals at the PBE level, but they are underestimated
+using
+hybrid functionals. The underbinding has been attributed
+to the admixture of Fock exchange, and
+to the fact that Hartree-Fock usually underbinds, especially for metals.{{cite:56d345e8-b33b-4e73-823c-223571a95777}}, {{cite:ebb572e2-4697-4100-84c0-4741a4bf15ae}}
+We believe that this is not generally true for hybrid functionals. In fact,
+as shown in Ref. Paier2,
+the atomization energies for systems without FORMULA  electrons, like Li, Na and Al are quite comparable for
+the PBE, PBE0 and HSE03
+functionals (and very close to experimental results within 0.05-0.15 eV). Most probably,
+the reason for the reduction of the
+atomization energies of FORMULA  metals is related to the increased stability of the
+spin polarized atom compared with an artificial
+non-spin-polarized atom. The hybrid functional overestimates the exchange splitting
+in FORMULA  elements, with a consequent increase of
+the spin-polarization energy. This however does not explain the discrepancy for Cu.
+Here we believe that the
+neglect of dynamical correlation effects between closed FORMULA  shells is a major source of errors accounting for
+roughly 210 meV of the discrepancy.{{cite:829bf58a-b0e1-4eb8-a460-0e1000f0bd3c}} Proper inclusion of these Van der Waals-like forces
+would also decrease the theoretical lattice constant of Cu.
+For Cu and Pt, we can compare our hybrid functional results with Ref. Doll and
+Ref. Neef,
+respectively. From Tab. REF , it is evident
+that our results are significantly closer to the experiment
+than those of Ref. Doll and Ref. Neef at the bulk level.
+This is most likely related to the B3LYP
+functional being specifically designed for small molecules,
+limiting or reducing its precision for heavy elements.{{cite:6de6a1d5-28bd-4c85-b411-6db46367ab8a}}
+In Tab. REF  we show the relevant properties of the bare surfaces:
+FORMULA  is the interlayer distance between the first and
+second topmost surface layer
+(and the corresponding relative variation with respect to the theoretical bulk value in round
+brackets)
+and the surface energies (FORMULA ).
+For all functionals,
+the Cu and Rh surface layer relaxes inwards.
+For Pt, the top layer relaxes outward. This "anomalous" relaxation is already documented
+in literature.{{cite:2f4b3f8e-0233-4f37-930c-9f3df08eb8ee}}, {{cite:118c04f4-08c5-47ad-b33f-4b27839d5df6}} The change of FORMULA  relative to the theoretical interlayer bulk
+distance (FORMULA ) for Cu is FORMULA 0.9 % using PBE,
+in agreement
+with calculations of Neef (PW91);
+the same quantity calculated using PBE0 (HSE03) is FORMULA 1.8 %
+(FORMULA 0.9 %) which is again close to the one obtained using B3LYP in
+the same work (FORMULA 1.2 %).
+For Rh, FORMULA  is FORMULA 1.6% (PBE),
+FORMULA 0.6 % (PBE0), FORMULA 1.0 % (HSE03) and for Pt it is
+FORMULA 0.7 % (PBE), FORMULA 1.3 % (PBE0) and FORMULA 1.3 % (HSE03).
+Our values obtained both using standard GGA and hybrid functionals
+are slightly smaller than those obtained by Doll.
+The comparison with experiment is not simple due to the
+large uncertainties of the experimental
+values: for Cu FORMULA  is
+FORMULA 1.0FORMULA 0.4 %,{{cite:ab714e1a-1c10-4a1b-a6c7-f2f034965303}}
+for Rh it is FORMULA 1.3FORMULA 0.9 %,{{cite:be98c531-9520-492d-a242-bdc0efc27253}} and for Pt it is FORMULA 1.1FORMULA 0.4 % .{{cite:118c04f4-08c5-47ad-b33f-4b27839d5df6}}
+Agreement between our calculations and experimental results is certainly reasonable.
+The calculated LDA surface energies compare well with previous calculations.{{cite:81362b33-28a5-459b-bb23-4198c0f1352a}}
+The GGA surface energy is 0.45, 0.81 and 0.62
+eV, for Cu, Rh and Pt,
+respectively, also in agreement with the values reported in
+the literature (0.50 eV, 0.81, 0.65).{{cite:b65be903-6d99-4edc-963a-42d8cc90b52b}}, {{cite:7a8cb3a3-7207-46e5-8aba-42337d51c458}}, {{cite:56d345e8-b33b-4e73-823c-223571a95777}}
+The PBE0 and HSE03 functionals give a slightly increased surface energy
+compared to the PBE functional. Such an increase of the surface
+energies
+is pointing towards an improved description using
+the hybrid functionals, but they are still underestimated compared to experiments:
+the experimental surface energies
+are FORMULA  0.65 eV for Cu(111), FORMULA  1.08 eV for
+Rh(111), FORMULA  1.08 for Pt.{{cite:71804c19-73d2-4a7a-a3a4-46930317c82e}}
+The B3LYP results{{cite:4b0ea7ee-05ec-403f-be7a-fec34a5aec44}}, {{cite:56d345e8-b33b-4e73-823c-223571a95777}} do not follow a
+consistent trend, with an increased surface energy for Cu and a decreased one for Pt.
+We have also calculated the PBE and HSE03 work function for the three (111) metal
+surfaces (not shown in Tab. REF ).
+For Cu, we have 6.34 (6.10) eV; for Rh, 5.38 (5.05) eV; for Pt, 5.69 (5.64) eV using the PBE (HSE03) functional.
+The experimental values are 4.98, 4.98, 5.65 eV for Cu, Rh and Pt.{{cite:0f9513e1-dac3-47ec-a2a3-a78734fe057a}}
+We note that PBE values are overestimated compared to
+experimental values; the HSE03 functional reduces the
+overestimation and gives better agreement with experiments especially for Rh, and
+Pt.
+Finally for the CO molecule, the calculated bond-length
+(FORMULA ) is 1.135, 1.143, 1.133, 1.131 Å for LDA, GGA (PBE), PBE0, HSE03,
+close to the values reported by Neef (1.150 and 1.140 Å using PW91 and B3LYP{{cite:4b0ea7ee-05ec-403f-be7a-fec34a5aec44}}).
+The experimental bond length is 1.128 Å.{{cite:71e5c196-f6f0-4ee1-82db-8455a6fba465}}
+As far as the HOMO-LUMO gap is concerned we find 6.80, 6.90, 10.60, 8.80 eV
+using LDA, GGA (PBE), PBE0, and HSE03 respectively. The hybrid
+functionals give an energy gap increased by FORMULA  2-3 eV due to
+the downshift of the HOMO and a simultaneous upshift of the LUMO.
+The negative of the calculated HOMO energy is 9.0, 8.6, 10.6, 10.0 eV using LDA, GGA (PBE), PBE0 and HSE03 respectively,
+compared to the experimental
+ionization potential of 14.10 eV.{{cite:74fe6070-f264-4880-9af1-218450148160}}
+
+CO adsorption: energetics and structural properties
+In Table REF , REF  and REF 
+we show the results for the adsorption of a CO molecule on Cu, Rh and Pt surfaces, respectively.
+As expected, using the standard LDA and GGA functionals
+the wrong site is preferred (shown in boldface),
+namely fcc, hcp and fcc for Cu, Rh and Pt in agreement with previous
+calculations.{{cite:56d345e8-b33b-4e73-823c-223571a95777}}, {{cite:a72be3f4-b9bb-413c-bb99-e3779c431ef3}}, {{cite:4b0ea7ee-05ec-403f-be7a-fec34a5aec44}}
+The order of the sites with respect to the energy (starting from the most stable one)
+is fcc, hcp, top for Cu; hcp, fcc, top for Rh; fcc, hcp and top for Pt.
+These site orders generally agree with those reported in
+Refs. Doll, Neef and Lukas, although different
+surface reconstructions and computational methods were used.
+It should be noted that, for the Cu case, our calculated adsorption energy for
+the most stable site is lower
+by more than 400 meV
+compared to that given in Ref. Neef.
+Also the surface energy
+(bare surface) differs (see previous Section).
+These discrepancies can be possibly related to the
+different computational method used in Ref. Neef, where a
+local basis set has been applied.
+Using PBE0 or HSE03, the top site is preferred for Cu and Rh,
+in agreement with experiment.
+For Cu and PBE0 and HSE03, the site order is top, fcc, hcp (the same as found
+in Ref. Neef using B3LYP). The calculated adsorption energy (top site) is about
+FORMULA 0.60 eV.
+This value is also close to that reported in Ref. Neef (FORMULA 0.57 eV).
+The relative energy splitting (FORMULA ) between hcp and top is FORMULA  40 meV using PBE0 and FORMULA  30 meV
+using HSE03. A larger energy splitting (150 meV) was found by Neef,{{cite:4b0ea7ee-05ec-403f-be7a-fec34a5aec44}} and an even larger one (FORMULA  200 meV)
+in Ref. Scheffler using B3LYP.
+Furthermore, we find an almost degeneracy between the top and fcc sites using HSE03
+(FORMULA =FORMULA 6 meV).
+For Rh, the site order is top, hcp and fcc using both hybrid functionals. The calculated
+adsorption energy is FORMULA 2.109 and FORMULA 2.012 eV using PBE0 and HSE03. The splitting top-fcc is only
+FORMULA  5 meV
+using PBE0 and FORMULA  16 meV using HSE03, hence certainly within the error bars of the present calculations.
+Therefore, even though the calculated adsorption energies predict the correct site order for Cu and Rh,
+we can only safely conclude that the applied hybrid functionals
+reduce the tendency of LDA and GGA functionals to favor the hollow site
+with respect to the top sites.
+Finally, for Pt, neither PBE0 nor HSE03 recover the correct site preference:
+the top site remains unfavoured with respect to the fcc site,
+and the top and hcp sites are almost degenerate within the numerical
+accuracy. We, however, note that the top-fcc energy difference is FORMULA  350 meV (LDA), FORMULA 
+160 meV (GGA), FORMULA  56 meV (PBE0) and FORMULA  70 meV (HSE03). Therefore,
+the tendency to favour the hollow sites is again reduced using hybrid functionals, but not sufficiently
+so for Pt.
+In order to rule out possible errors due to the k-point mesh,
+we performed additional calculations for the HSE03 case and CO on Pt using
+a 12FORMULA 12FORMULA 1 k-point grid and downsampling the HF
+exchange part to 6FORMULA 6FORMULA 1 k-points.
+We found that the relative stability
+of the top and fcc sites changed by only FORMULA  20 meV. Also increasing
+the number of layers to 6 did not change the site order. The presented numbers are thus essentially converged.
+Finally we compare the calculated adsorption energies of Cu, Rh and Pt with experimental values.
+For Cu(111), the experimental values are in the range of FORMULA 0.52 to FORMULA 0.46 eV,
+{{cite:71f78f96-c89c-4d94-ad99-7a7339edfd08}}, {{cite:a9c53c5d-39bf-4fda-beec-42a7ced01c3e}} close to our calculated value (FORMULA 0.60 eV).
+For Rh(111), they are between FORMULA 1.65 and FORMULA 1.43 eV
+{{cite:8183636d-cf73-4652-9013-21392b0a2e6c}}, {{cite:04ecf1c0-6029-4b6a-ba4e-df6965933c51}}. In this case, the theoretical values are too large by FORMULA  0.40-0.60 eV
+and, worse, the hybrid functionals give a slight increase of the adsorption energy compared to the gradient
+corrected functional.
+This result
+is certainly disappointing, and we will return to it in the conclusions.
+For Pt(111), experimental values are in the range
+of FORMULA 1.71 to FORMULA 1.43 eV,{{cite:ece68da5-a434-40fe-9805-1c0a1571587c}}, {{cite:9e5691f7-f9dd-4634-a866-f250a1539a9d}}, {{cite:ff24a481-aa6d-47b9-ae17-cf8a4621c4a4}} which compare
+reasonably well with the PBE value. Again the hybrid
+functionals clearly worsen the
+agreement with experiment.
+Concerning the geometry relaxations, we summarize the trend common to all the three functionals:
+i) the CO bond length is slightly elongated with respect to the theoretical value for the isolated
+molecule (FORMULA =1.14  Å)
+in the top site, and
+even more so in the hollow sites. This holds for all three metal
+surfaces. ii) The elongation of FORMULA  correlates
+with a corresponding contraction of FORMULA  from low coordination (top)
+to high coordination sites (fcc, hcp).
+iii)
+The buckling FORMULA  is larger for the top site.
+iv) FORMULA  varies significantly from top to hcp sites, especially for Cu,
+where an inward relaxation for atop adsorption and an outward relaxation for the hollow sites
+is observed, whereas an outward relaxation is found in all three sites for Rh and Pt.
+We conclude this section with a brief discussion of the k-point convergence
+presented in Tab.REF .
+Concentrating first on the PBE functional, we note that k-point convergence
+is slowest for the Cu surface, but fairly fast for the other two systems.
+A relative precision of 10 meV can be attained using 6FORMULA 6FORMULA 1
+k-points for all three systems [sampling specified for FORMULA  supercell].
+The 4FORMULA 4FORMULA 1 k-point set results in errors between
+80 meV (Cu), 30 meV (Rh)  and 10 meV (Pt).
+The HSE03 functional shows a similar convergence rate, with  errors
+being only slightly larger. Now 6FORMULA 6FORMULA 1 k-points are sufficient
+to yield energies to within a precision of 15 meV, whereas
+the 4FORMULA 4FORMULA 1 k-point grid causes errors between
+120 meV (Cu) and 30 meV (Rh and Pt).
+Reducing the k-point sampling for the presentation of the non-local Fock
+exchange part has only a very small effect on the relative energies (10 meV), which
+is more than acceptable, in particular, in view of a speed up by a factor four if
+the sampling for the non-local part of the Hamiltonian
+is reduced in FORMULA  and FORMULA  direction by a factor 2.
+The PBE0 functional, however, converges exceedingly slowly, with discrepancies
+between 6FORMULA 6FORMULA 1 and 8FORMULA 8FORMULA 1 k-points being up to 50 meV.
+We were unable to increase the k-point grid beyond 8FORMULA 8FORMULA 1 points with our
+available computational resources, but the relative energies using 8FORMULA 8FORMULA 1
+k-points are typically within 10-20 meV of those obtained using the HSE03 functional,
+and we expect them to come even closer to the HSE03 results, if the k-point set
+were further improved.
+This clearly demonstrates that the HSE03 functional is vastly superior
+in terms of computational requirements, in particular, for metallic systems.
+The calculations using the HSE03 functional and 6FORMULA 6FORMULA 1 k-points with the
+Hartree-Fock part presented on a 3FORMULA 3FORMULA 1 k-point grid are typically a factor 12 faster
+than the PBE0 calculations using 8FORMULA 8FORMULA 1 k-points, although both yield
+practically the same results.
+
+Electronic properties
+According to the Blyholder model{{cite:106ea145-f3b3-4078-9ab5-698546e91444}}
+the interaction of the CO molecule with a
+transition metal surface
+is usually described as the sum of two contributions. The first is
+due to the overlap of the highest occupied molecular orbital (HOMO)
+FORMULA  with metal states.
+Since this interaction is
+accompanied by donation of electrons from the FORMULA  orbital
+into empty metal surface orbitals, this term is called donating
+term. The second term is due to the interaction of the surface-electron
+bands with the lowest unoccupied molecular orbitals (LUMO) FORMULA .
+This is a back-donating term, since now electrons are transferred
+from the metal surface orbitals into the FORMULA 
+orbitals. This
+simplistic model has been refined by A.
+Föhlisch,{{cite:1a368fa8-ba6d-4d52-8ab2-5b3e4f7f8c53}}, {{cite:71f4f202-3f32-4533-8b0d-3ee620e2eda3}} using x-ray emission spectroscopy
+and ab initio cluster calculations. They showed that
+the FORMULA  bonding is manifested through the creation of a FORMULA  complex
+related to a hybridization of 1FORMULA  and
+2FORMULA  orbitals with metal states. The 4FORMULA  and 5FORMULA  orbitals and the metal states
+form a hybrid FORMULA  band. The work of Föhlisch
+concentrates mainly on the interaction of the frontier orbitals with metal FORMULA  states,
+however, another often overlooked issue is that CO chemisorption to a
+transition-metal surface also involves interactions between the
+broad metal FORMULA  valence electron band (which contains approximately one electron per atom for Cu, Rh, Pt)
+and the CO orbitals. Due to symmetry, the FORMULA  orbital can not interact with
+the FORMULA  or FORMULA  orbitals for top site adsorption, but the FORMULA -FORMULA  interaction is
+strong at high coordination sites, since antisymmetric
+combinations of surface FORMULA  orbitals are available at these sites.{{cite:9beaba68-9fcc-4828-8d8b-11c3e1106c36}}
+In order to gain insight on the effect of hybrid functionals on the electronic properties,
+we show the orbital resolved
+electronic density of states (DOS) for the Cu, Rh and Pt
+surfaces in Fig. REF , Fig. REF , and Fig. REF  respectively.
+For each Figure, we show the DOS for
+the bare surface layer [(a), panels d, sp], for CO adsorbed
+on the top [(b), panels d, sp, CO], and hollow site
+[(c), panels d, sp, CO] as obtained
+using PBE (left column) and HSE03 (right column). Here d, sp, CO indicate the projection onto FORMULA , FORMULA  metal states,
+and CO molecular orbitals respectively. In panel (a)-d, we show the one-electron energies of the FORMULA , FORMULA ,
+FORMULA 
+molecular levels aligned with the Fermi level using bold tick marks.{{cite:dbcbe127-0576-445f-9b5c-1dfd1269e60e}}
+Since there are no principal differences between the PBE0 and HSE03 DOS, only
+results for the latter are shown. We caution the reader that the following analysis based on the atom-projected DOS
+can only give qualitative insight on variations of the
+chemisorption energies upon changing the adsorption sites,
+the metal surface and the exchange-correlation functional.
+A more powerful and quantitative analysis can be
+done by using the concept of surface group orbitals introduced
+by R.A. van Santen,{{cite:6827a9e4-6978-4c91-a735-4a2326d40c62}}, {{cite:0bd99c40-3984-4c76-af9d-db8857ce763d}}, {{cite:817ced97-1ff1-41f0-879a-adf4d1de1684}} but this is
+beyond the purpose of this paper.
+We recall the basic features of the interaction of the CO molecule with the metal
+surface,{{cite:48562f15-d024-4f89-9c9d-c8213c191645}}, {{cite:8235fd57-fb5f-4bcd-9cd0-41894cdeed68}}, {{cite:b5eca503-fe09-4d2a-ae49-aba4142d3552}}, {{cite:9beaba68-9fcc-4828-8d8b-11c3e1106c36}} and we first focus on the
+PBE DOS for the Cu case (Fig. REF ,
+left column). From panel (a)-d and (a)-sp, we note that the
+Cu FORMULA  band is almost completely filled,
+it is centered around FORMULA 2.4
+eV (FORMULA  band center of gravity) with FORMULA =1.52 eV
+(FORMULA  band width);{{cite:49923590-64f0-4f59-b506-33effc349ed4}}
+the FORMULA  band extends over a larger energy
+range below the Fermi energy, but it is strongly peaked around FORMULA 5
+eV;
+the FORMULA  level is located at FORMULA 2.70 eV,
+and the FORMULA  level is positioned at FORMULA  4.20 eV above the Fermi energy.
+Let us now consider the interaction of the metal states
+with the CO FORMULA  orbitals in the top configuration [Fig. REF  (b)].
+The metal FORMULA  bands broaden and shift down to lower energies due to the
+interaction with the CO molecule [compare panels (b)-d with (a)-d]. In particular, the
+FORMULA  DOS is strongly modified.
+From panel (b)-CO we see that the FORMULA  and FORMULA  orbitals are
+shifted to lower energy (two main peaks at FORMULA 10 and FORMULA 7 eV with
+continuous line).
+Comparing panels in (b), it is clear that a
+strong interaction between FORMULA  and FORMULA  metal states and the FORMULA  molecular
+states takes place giving
+rise to a bonding contribution
+below the Fermi level (below FORMULA  6 eV) and non-bonding and
+antibonding contributions partly even above the Fermi
+level (dFORMULA  band).{{cite:1a368fa8-ba6d-4d52-8ab2-5b3e4f7f8c53}}, {{cite:9beaba68-9fcc-4828-8d8b-11c3e1106c36}}
+We recall that, since almost fully occupied states are interacting, the
+interaction would be only a Pauli-like repulsion, if the
+antibonding FORMULA  hybrid states were not pushed
+above the Fermi level (relief of Pauli repulsion).{{cite:b967f3a0-7bff-48c5-a731-0b72ff55696f}}
+The corresponding depletion of FORMULA  states
+(donation from CO to the metal) is in accordance with the Blyholder model.
+Let us now consider the FORMULA  orbitals.
+From panel (b)-CO, we note that they are
+shifted to lower energy due to the interaction with FORMULA ,
+FORMULA  and FORMULA  metal states (bonding contribution).
+The FORMULA  states are found at FORMULA 7 eV (dotted line), and a small peak of FORMULA 
+symmetry at the position of the FORMULA  orbital is visible and related to the FORMULA 
+hybridization.{{cite:1a368fa8-ba6d-4d52-8ab2-5b3e4f7f8c53}} Above FORMULA 6 eV, a non-bonding and antibonding FORMULA derived
+band develops (dFORMULA  band){{cite:1a368fa8-ba6d-4d52-8ab2-5b3e4f7f8c53}} which, however, remains below the Fermi energy
+(Pauli-like repulsion). The bonding states due to the interaction between the
+FORMULA  orbital and the FORMULA  band are found around FORMULA 4 eV
+(again FORMULA  complex){{cite:1a368fa8-ba6d-4d52-8ab2-5b3e4f7f8c53}} and antibonding
+interactions well above the Fermi energy (not shown in the Figure). The partial occupation of
+the 2FORMULA  molecular orbital corresponds
+to a back-donation of electrons from the substrate to the originally empty 2FORMULA  molecular
+orbital, in accordance with the Blyholder model.
+For the hcp site, there are some differences. The FORMULA  orbital is only
+marginally affected upon adsorption, whereas the FORMULA 
+(FORMULA ) and FORMULA  (FORMULA ) bands are broadened
+and shifted to lower energy [compare panel (c)-d with (a)-d].
+The interaction is mainly with the FORMULA  orbitals:
+the peaks with
+dashed and dotted lines above FORMULA 6 eV in panel (c)-CO have increased compared to
+the corresponding ones in panel (b)-CO.
+In accordance with the arguments of Ref. Santen4,
+the interaction between the metal FORMULA  and FORMULA  states and the CO FORMULA  states
+is also enhanced, as reflected by a downshift of the metal FORMULA  states. Note that
+three metal atoms are affected by adsorption in the hollow site as compared to one
+metal atom for the top site.
+In summary, the FORMULA  and FORMULA  interaction is larger for the hcp site than for atop adsorption.
+At this point, before considering the HSE03 DOS,
+we stress again that CO chemisorption to a
+transition-metal surface involves interaction of the molecular frontier orbitals
+and the broad FORMULA  and narrow FORMULA  band.
+The question whether the single-atom or high
+coordination site is favoured is clearly the result of a subtle
+balance between single-atom favouring interactions with the
+FORMULA  molecular states and high-coordination favouring
+interactions with the FORMULA  molecular states.
+For CO on Cu(111) the balance between single-atom and high-coordination directing interactions
+is such that the hollow site adsorption is favoured for the PBE functional.
+We now turn our attention to Fig. REF  right column.
+For the bare surface [(a)-d],
+we see that the FORMULA  states are shifted to lower energy by FORMULA  1 eV with respect to
+the Fermi level compared to the PBE DOS (FORMULA =FORMULA 3.6
+eV), but
+the overall spectral shape and the bandwidth remain
+almost unchanged. The downward shift of
+the HSE03 FORMULA  bands can be understood as a result of the
+reduction of the self-interaction (SIC) within the FORMULA  shell in the
+hybrid-functional formalism. It is also
+clearly seen that the occupied (unoccupied) molecular levels are shifted downwards (upwards)
+with respect to the Fermi energy: the FORMULA  level is now located at
+FORMULA 4.30 eV and the FORMULA  level is at 4.50 eV. The
+change of the energy positions of the non-interacting
+molecular levels with respect to the Fermi energy is mainly related
+to the increased HOMO-LUMO gap in the free molecule, but also partly caused by the reduced
+work function for the HSE03 functional (6.10 eV compared to 6.30 eV for PBE).
+The effect of the inclusion of part of the exact exchange on the broad FORMULA  band is different.
+As a matter of fact, the FORMULA  band is restrained to be located at the Fermi level (it is partially occupied),
+and the main effect of the non-local exchange is
+to increase the total bandwidth by 0.70 eV [compare left and right panel (a)-sp].
+The above analysis immediately leads to a
+first conclusion. The down-shift of the FORMULA  band and
+simultaneous up-shift of the FORMULA  levels suggest a
+reduced FORMULA  interaction: according to second order
+perturbation theory, the larger energy distance between the
+unperturbed energy levels weakens the interaction.
+Inspection of the calculated DOS confirms this conjecture for HSE03:
+i) the FORMULA  peaks are much weaker,
+ii) hybridization between FORMULA  and FORMULA  molecular orbitals decreases
+corresponding to a
+decrease of the bonding interaction between the CO FORMULA states and the metal FORMULA  states
+according to Föhlisch.{{cite:1a368fa8-ba6d-4d52-8ab2-5b3e4f7f8c53}}
+We now summarize our analysis concerning the differences between the PBE and HSE03 functional.
+For the non-interacting fragments (bare surface and CO molecule) the HSE03 functional
+i) pushes the occupied molecular levels
+down in energy, whereas
+the unoccupied molecular orbitals are moved up
+in energy, and ii) the fully occupied FORMULA  band is shifted down in energy.
+We have seen that these two combined effects generally disfavour the FORMULA 
+interaction. It decreases for both the atop and the hollow site,
+but the destabilization is stronger in the hollow sites,
+in accordance with the observation that the FORMULA  interaction is dominant at the hollow sites.
+This is confirmed by the observation that the adsorption energies in Tab. REF 
+decrease for both atop and hollow sites, but the effect is twice as strong
+for the hollow sites (compare the relative variation of the
+adsorption energies from PBE to HSE03, in Tab. REF ).
+A quantitative confirmation of this picture stems from the occupation of the
+FORMULA  orbital in the hollow site. We recall that the larger the FORMULA  occupation is,
+the stronger is the interaction of FORMULA  with the metal states.{{cite:9beaba68-9fcc-4828-8d8b-11c3e1106c36}}
+The FORMULA occupation is
+0.80 and 0.66 electrons using PBE and HSE03
+respectively, hence the occupation decreases by FORMULA  17% from PBE
+to HSE03.
+Let us now consider the CO adsorbed on the Rh(111) surface
+in Fig. REF . In the following, we mainly concentrate on the differences between
+the PBE and HSE03 description (left and right panels).
+For the bare surface and HSE03 [panel (a)-d], there is a general downshift
+(upshift) of the occupied (unoccupied) part of the FORMULA  bands with respect to the
+Fermi energy. This leads to a small downshift of the center of
+gravity (FORMULA =FORMULA 1.86 and FORMULA 2.23 eV using PBE and HSE03)
+and
+a sizeable larger bandwidth (FORMULA =7.40 and 8.90 eV
+using the PBE and HSE03 functional).
+For atop adsorption [panel
+(b)-d], we see a
+small decrease of the intensity of the corresponding FORMULA  band
+[dotted line in panel (b)-CO]. There is also a small reduction of the
+FORMULA  and FORMULA  hybridization and of the FORMULA 
+interaction (reduction of the intensity of the corresponding broad
+bands with dashed line). As far as the FORMULA  interaction is
+concerned, one can see from panel (b)-CO that the FORMULA  band is
+slightly less intense at the HSE03 level (reduction of the
+interaction strength). For the hcp site, we observe the same trends
+as for the top site.
+Let us summarize again the differences between PBE and HSE03. As
+opposed to Cu, the FORMULA  band is only slightly shifted downwards, but
+posses a much larger bandwidth (1.50 eV). As a result, the strength
+of the FORMULA  interaction is only slightly reduced using HSE03:
+the
+reduction of the FORMULA  interaction caused by the up-shift of the
+FORMULA  orbital is counteracted by the larger FORMULA  bandwidth of the
+metal using HSE03. This is corroborated by the
+FORMULA  occupation for the hollow site, which changes only from 1.05 to 1.01 electrons
+( i.e. FORMULA  4 %) going from PBE to
+HSE03. We recall that for Copper, the variation was about 17 %,
+i.e. much larger than for Rh.
+Secondly, the FORMULA  electrons are largely affected by the
+introduction of the non-local exchange. For the bare surface,
+HSE03 reduces the self-interaction within the FORMULA  shell
+and moves them to lower energies.
+This
+suggest an enhancement of the back-donation due to the interaction of the 2FORMULA  states
+with antisymmetric linear combinations
+of metal FORMULA  orbitals, which, we recall, is active only for the hollow site.{{cite:9beaba68-9fcc-4828-8d8b-11c3e1106c36}}
+For Rh, the balance between atop- and hollow-directing interactions
+gives still a slight preference for atop adsorption using HSE03 (cfr. Tab. REF ).
+Finally we turn our attention to Pt(111).
+Basically we observe the same trends as for Rh using HSE03, a
+down-shift
+of the FORMULA  band center of gravity and a larger bandwidth is observed (FORMULA =FORMULA 2.13 and FORMULA 2.53 eV,
+FORMULA =8.29 and 9.32 eV using PBE and HSE03, respectively).
+The work-function changes only a little
+(5.69 and 5.64 using PBE and HSE03).
+For both adsorption sites, there are only small changes in the DOS due to the introduction of exact
+exchange. In particular, for the hollow site, we note that the peak corresponding to the
+FORMULA  and FORMULA  hybridization has the same intensity for HSE03 and PBE [panel (c)-CO].
+Also the FORMULA  intensity is almost the same as in the PBE case [panel (c)-CO, dashed line]
+as confirmed by the FORMULA 
+occupation: it is 1.03 and 0.97 electrons using PBE and HSE03. i.e. it decreases by only 6 % using HSE03.
+Probably, the most pronounced difference between the FORMULA  Rh and FORMULA  Pt metal is the enhanced FORMULA  occupation,
+related to the stronger
+binding of the FORMULA  electrons (the shell structure requires that the orbitals are filled in the
+order FORMULA , FORMULA , FORMULA , FORMULA  placing the FORMULA  electrons at
+significantly larger binding energies than FORMULA  electrons). This effect is further enhanced by the HSE03 functional.
+As before, this should stabilizes the CO in the hollow site due to
+the increased FORMULA  interaction. Indeed now
+the destabilization of the FORMULA  interaction in the hollow site is
+not sufficient to yield the top site as preferred adsorption site.
+
+Discussion
+Let us start with a brief discussion of the computational aspects of
+the current work. We have shown that periodic slab calculations
+using hybrid Hartree-Fock density functionals are perfectly feasible
+for metallic systems using a plane wave basis set. We have also
+shown that the HSE03 functional, suggested by Heyd, Scuseria and
+Ernzerhof, yields practically identical results as the more
+conventional PBE0 functional, albeit, at a computational cost that
+is reduced by almost a factor ten. This is achieved by replacing the
+long range part of the Fock-exchange by its density functional
+approximation, leading to a rapid k-point convergence of the
+non-local exchange and total energies. Thus the HSE03 functional
+presents a promising functional for large scale studies of molecules
+on surfaces.
+Our study concentrated on the chemisorption of the CO molecule on
+FORMULA -metal surfaces, specifically Cu(111), Rh(111) and Pt(111). The
+study has been pursued using local and generalized gradient density functionals, and
+PBE0 and HSE03 hybrid
+Hartree-Fock density functionals. As expected, the LDA and GGA functionals give the
+wrong site preference for Cu, Rh and Pt. In contrast, the PBE0 and HSE03 functionals reduce this tendency,
+predicting the correct site order for CO on Cu(111) and Rh(111). In
+both cases, the fcc and hcp sites are destabilized by roughly 150
+meV compared to the top site. Unfortunately the HSE03 and PBE0 functionals
+do not work so well for Pt(111), where the destabilization is only 50
+meV for the fcc site and 80 meV for the hcp site, which is not
+sufficient to yield the correct site preference. In
+both Rh and Pt, we have made significant efforts applying for
+instance different PAW sets and parameters (not all have been
+discussed in detail) to make certain that the present numbers are
+essentially converged within the theoretical framework.
+The wrong site order for Pt is not the only unsatisfactory aspect of
+our study; results for the energetics are also largely
+disappointing. It is well accepted that gradient corrected
+functionals have a tendency to overestimate adsorption energies on
+metal surfaces.{{cite:c61cb0a1-7ccb-4f93-aa8c-5607ec4e56a4}}, {{cite:16c5fb4d-17ce-44ef-8ab1-6caa77fbdeb4}} One would have hoped that admixing
+a certain fraction of the exact non-local exchange lifts this
+deficiency, but this hope is not fulfilled by the PBE0 and HSE03
+functionals. In fact, Cu is the only case where the hybrid
+functionals improve the overall energetics. This is related to the
+upshift of the empty CO FORMULA  orbital and a simultaneous
+downshift of the filled Cu 3FORMULA  states, with both effects reducing,
+in concert, the FORMULA  interaction; thus the top site becomes
+preferred.
+For Rh and Pt, the FORMULA  band is restrained to stay at the Fermi-level,
+and for the transition metals the main effect of the inclusion of
+non-local exchange is an increase of the FORMULA  bandwidth. This
+increase of the FORMULA  bandwidth counteracts the reduced interaction
+caused by the upshift of the CO FORMULA  orbital. One therefore
+observes that the interaction energies generally increase from PBE,
+over HSE03 to PBE0, with the last one yielding the largest FORMULA  band
+width and the largest CO-metal interaction energies. In a ball-pack,
+the increased metal bandwidth caused by the non-local exchange is the
+main origin of problems: it partially restores the CO FORMULA 
+interaction that we had aimed to reduce by means of the hybrid
+functional. This counterbalance works efficiently for Pt, which has the largest FORMULA  bandwidth
+and the largest interaction matrix
+elements between molecule and metal states.{{cite:cfdbf746-d7ea-4d3e-a653-a13da01462b1}}
+We also qualitatively argued that further contributions in favor of restoring the back-donative interaction
+may come from an enhanced interaction of FORMULA  states at the hollow site with antisymmetric combination
+of FORMULA  metal states,{{cite:9beaba68-9fcc-4828-8d8b-11c3e1106c36}} but our analysis is not able to quantify and separate FORMULA  and FORMULA  contributions.
+Unfortunately, there are reasons to believe that
+the inclusion of a significant fraction of the non-local exchange
+and the concomitant increase of the FORMULA  bandwidth in transition metals
+is the wrong physics. We have already commented on this issue in our
+recent work:{{cite:9dbb5e33-dfb4-4f14-b038-fdae24ad63fb}} the analogy between FORMULA  and hybrid
+functionals suggests that the amount of non-local exchange should
+be chosen system dependent, applying more Hartree-Fock like exchange
+in exchange dominated systems such as molecules and large gap insulators.
+In metals, on the other hand, the non-local exchange term in
+FORMULA  is almost entirely screened by the other electrons, so that the
+Coulomb hole term— corresponding to a local potential —becomes
+dominant. In metals, the proper description thus involves only a
+very weak screened-exchange interaction and the semi-local density
+functionals approximation should do a perfectly adequate job. The same
+conclusion is reached using the adiabatic connection fluctuation
+dissipation theorem (AC-FD).{{cite:e00a3824-6762-49d3-a8b8-b14f334167dd}} In a forthcoming
+paper,{{cite:0846544a-d1dd-428f-81d6-c32e3962b5da}} we will present results of hybrid-funtional
+calculations of CO adsorption extended to other systems
+representative of FORMULA  and FORMULA  metal surfaces, including the B3LYP
+functional. Unfortunately, also in this case, the results are
+generally discomforting, suggesting that previous reports on the
+successful prediction of adsorption energies using B3LYP have to be
+considered with suspicion.
+We are thus left with the intriguing problem, how to treat two
+disparate systems using the same unified theoretical footing. It is difficult to imagine that a hybrid
+functional with a fixed amount of non-local exchange is going
+to do the job. On passing, we also reiterate
+another result for hybrid functionals from Ref. Paier2: the
+exchange splitting in transition metals is significantly
+overestimated, resulting in too small atomization energies (found
+here as well for Pt) and a large overestimation of the magnetic
+moment in itinerant magnetic transition metals.
+
+Conclusions
+We conclude that, although hybrid functional calculations for metals
+and metal surfaces are perfectly feasible, the results are by no
+means entirely satisfactory. The agreement with experiment is
+improved for CO on Cu(111), but the results are only marginally
+improved for CO on Rh(111) (correct site order but much too large
+adsorption energies) and hardly improved for CO on Pt(111) (wrong
+site order and too large adsorption energies). We have argued that
+this failure is related to the inclusion of non-local exchange in
+the metal slab which results in an incorrect description of the
+metal band width.
+
+Acknowledgments
+This work was supported by the Austrian Fonds zur Förderung
+der wissenschaftlichen Forschung.
+TABLE 
+TABLE 
+TABLE 
+TABLE 
+TABLE 
+TABLE 
+FIGURE 
+
+FIGURE 
+
+FIGURE 
+

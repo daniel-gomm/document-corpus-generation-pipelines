@@ -1,0 +1,914 @@
+
+Hickson Compact Groups
+Johnson et al.
+The Infrared Properties of Hickson Compact Groups
+Kelsey E. Johnson 1
+Dept. of Astronomy, University of Virginia, P.O. Box 400325,
+Charlottesville, VA 22904
+kej7a@virginia.edu
+John E. Hibbard
+National Radio Astronomy Observatory, 520 Edgemont Road,
+Charlottesville, VA 22903
+Sarah C. Gallagher
+Dept. of Physics and Astronomy, University of California, 430
+Portola Plaza, Box 951547, Los Angeles CA, 90095-1547
+Jane C. Charlton
+Dept. of Astronomy and Astrophysics, Pennsylvania State
+University, University Park, PA 16802
+Ann E. Hornschemeier
+Laboratory for X-Ray Astrophysics, NASA Goddard Space Flight Center,
+Code 662.0, Greenbelt, MD 20771
+Thomas H. Jarrett
+Spitzer Science Center, California Institute of Technology, Pasadena, CA 91125
+Amy E. Reines
+Dept. of Astronomy, University of Virginia, P.O. Box 400325,
+Charlottesville, VA 22904
+1Adjunct at National Radio Astronomy Observatory, 520
+Edgemont Road, Charlottesville, VA 22903
+Compact groups of galaxies provide a unique environment to study the
+mechanisms by which star formation occurs amid continuous
+gravitational encounters. We present 2MASS (JHK), Spitzer IRAC
+(3.5-8FORMULA m) and MIPS (24FORMULA m) observations of a sample of twelve
+Hickson Compact Groups (HCGs 2, 7, 16, 19, 22, 31, 42, 48, 59, 61, 62,
+and 90) that includes a total of 45 galaxies. The infrared colors of
+the galaxies in this sample span a range of parameter space, and some
+trends are apparent in the data. The near-infrared colors of the
+sample galaxies are largely consistent with being dominated by
+slightly reddened normal stellar populations. There is also some
+evidence for a K-band excess in a few cases, which likely indicates
+the presence of hot dust at or near the sublimation temperature
+associated with AGN or star formation activity. Galaxies that have
+the most significant PAH and/or hot dust emission (as inferred from
+excess 8FORMULA m flux) also tend to have larger amounts of extinction
+and/or K-band excess and stronger 24FORMULA m emission, all of which
+suggest ongoing star formation activity. We separate the twelve HCGs
+in our sample into three types based on the ratio of the group HI mass
+to dynamical mass. We find evidence that galaxies in the most
+gas-rich groups tend to be the most actively star forming. Galaxies
+in the most gas-poor groups tend to be tightly clustered around a
+narrow range in colors consistent with the integrated light from a
+normal stellar population. We interpret these trends as indicating
+that galaxies in gas-rich groups experience star formation and/or
+nuclear actively until their neutral gas consumed, stripped, or
+ionized. The galaxies in this sample exhibit a “gap” between
+gas-rich and gas-poor groups in infrared color space that is sparsely
+populated and not seen in the Spitzer First Look Survey sample.
+This gap may suggest a rapid evolution of galaxy properties in
+response to dynamical effects. These results suggest that the global
+properties of the groups and the local properties of the galaxies are
+connected.
+galaxies:clusters — galaxies:interactions — galaxies:evolution
+— infrared:galaxies
+Introduction
+Compact groups of galaxies provide a rich environment in which to
+study the effect of galaxy interactions and mergers on galaxy
+formation and evolution. Compact groups are among the densest
+concentrations of galaxies known, comparable to the centers of rich
+clusters {{cite:0be28a40-5dad-488a-8fd6-c6521333ba12}}. However, they also have relatively low
+velocity dispersions, increasing the duration of gravitational
+interactions between the galaxies in these groups {{cite:64df9160-17bb-4232-9f94-76d81cec175a}}.
+In fact, a large fraction of galaxies within Hickson Compact Groups
+(HCGs) have morphological peculiarities of some kind {{cite:6dee2916-54cd-4412-bd35-dde02ea0fa26}}
+or abnormal rotation curves {{cite:dc9813e6-c2a2-4bb6-8ebf-66825dde88be}}. Because of their galaxy
+densities and velocity dispersions, compact groups may provide local
+analogs to hierarchical galaxy formation in the earlier universe.
+Moreover, these groups provide laboratories to study a variety of
+physical processes, including the formation of active galactic nuclei
+(AGN), super star clusters, and dwarf galaxies.
+It is currently unclear how the frequent tidal encounters that occur
+in compact groups induce or inhibit activity and transformation of the
+member galaxies. Studies of elliptical galaxies in HCGs indicate that
+interactions have modified their isophotes and/or that some
+ellipticals in these groups are bluer than normal {{cite:c2faaa7f-2e51-4950-bb23-fcb33d6ba6f5}}.
+Surveys of subsets of HCGs have yielded apparently contradictory
+results relating the role of interactions and star formation. For
+example, based on a sample of 95 galaxies within 31 HCGs, HFORMULA 
+emission seems to be anti-correlated with the velocity dispersion of
+HCGs {{cite:b70f3271-5c7e-4067-99e4-28baa5eecf7c}}, suggesting that higher levels of star
+formation activity are associated with slower interactions between
+group members. However, based on a sample of 30 galaxies in 20 HCGs,
+{{cite:90402ef6-d6ee-42cd-8a54-4f3b78e5ae0d}} do not find any significant correlation between the
+dynamical properties of a group and the presence of disturbed
+morphology or nuclear activity of group members.
+The compact group environment may lead to exhaustion or stripping of
+molecular gas, or perhaps concentration of molecular gas into the
+nuclei of the member galaxies. Individual galaxies in HCGs as a class
+may be relatively deficient in both atomic and molecular gas compared
+to isolated spirals {{cite:c3916403-59d5-467b-8938-9d8b94edbb0e}}, {{cite:bc7820cc-5c4a-44f1-bcbf-e7c01423c27a}}, {{cite:9ff8a301-3176-40c0-886f-218afacc67e6}}, {{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}}, although {{cite:ad90604c-eb15-4b69-8c47-8c76bc6b7bba}} find the molecular gas
+content in HCGs to be similar to that in pairs and starburst samples.
+Leon et al. (1998) also find enhanced HFORMULA  for the most compact
+groups, which suggests that the galaxy interactions drive the gas
+inwards. Groups that are more deficient in HI also have a higher
+detection rate in X-ray observations {{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}}, {{cite:be182dd3-2233-4136-918c-d12af7ec176e}}, possibly indicating that ionization via shocks, heating, or
+the intergalactic radiation field contributes to the lack of neutral
+gas observed in these systems. An example of strong large-scale
+shocks due to encounters between galaxies and the IGM is seen in
+Stephan's Quintet (HCG92) {{cite:a04860e0-1132-4deb-b5cc-da4d2c790f85}}. There is also evidence
+for the formation of tidal dwarf galaxies in HCGs
+{{cite:608ff88c-2fe9-47f6-b68f-1198e8107dc6}}, supporting the idea that significant
+amounts of matter may be stripped from member galaxies during their
+interactions.
+Based on HI observations of 72 HCGs, Verdes-Montenegro et al. (2001)
+propose an evolutionary scenario that is somewhat analogous to the
+famous “Toomre sequence” for merging galaxy pairs. First a loose
+group gradually contracts into a compact group {{cite:b94aa6f6-8d91-45ec-afbe-c508f8b63591}}. This
+stage is followed by a “transformation” period in which galaxy
+morphologies tend to evolve to earlier types, during which HI gas is
+extracted and dispersed, and X-ray gas is created. Throughout this
+scenario, the gas is actively redistributed from the relatively
+quiescent interstellar medium (ISM), to fuel star formation, power AGN
+activity, and contribute to the intercluster medium (ICM) — giving
+rise to a variety of observable processes.
+Many of the processes that could be taking place within compact groups
+will have a signature in the infrared emission of the galaxies — AGN
+activity, star formation, and the presence of warm/cold dust should
+all be readily observable in the thermal infrared. Based on IRAS
+observations, {{cite:28d9d9fd-554b-4406-b730-282c5b0c8855}} and {{cite:9ff8a301-3176-40c0-886f-218afacc67e6}} find
+that compact group galaxies exhibit a normal level of infrared
+emission compared to control samples of isolated galaxies, which
+suggests that the tidal activity in these groups does not generally
+enhance star formation. Thermal infrared observations with the Infrared Space Observatory (ISO) were carried out on HCG 31 and
+HCG 92 {{cite:d123fdfe-44c1-45e7-aa10-f5d3759a4644}}, {{cite:cd3d4c4a-4e78-4da9-a50a-7755e7f50dd0}}, {{cite:60f2d952-8d4a-4d26-8164-c82018c468dd}}, {{cite:6bcdb2ec-b7cd-44e8-959f-b397e96202d7}}. These
+observations indicate that several modes of star formation related to
+the compact group environment are simultaneously present in these
+groups (including intense star formation at collision interfaces, star
+formation in the tidal debris, and star formation due to galaxy
+interactions with the ICM), which demonstrates that in at least some
+HCGs the interaction of group members has affected star formation.
+These observations also potentially provide insight into the nature of
+gas deficiency in HCGs; the far-IR 60FORMULA m and 100FORMULA m observations
+of HCG 92 indicate diffuse emission from dust outside of the galaxies
+{{cite:d123fdfe-44c1-45e7-aa10-f5d3759a4644}}, plausibly powered by stripped or tidally formed
+stars.
+These case studies have been valuable for gaining insight into
+specific groups. However, compact groups present very complex
+environments, and studies of individual groups cannot probe the range
+of processes and environments that may contribute to an “evolutionary
+sequence”. As part of a multi-wavelength effort to study compact
+groups, and the variety of physical processes that take place within
+them, we have obtained Spitzer Space Telescope observations of a
+sample of twelve nearby (FORMULA  km sFORMULA ) compact groups chosen
+to span a range in evolutionary properties. In addition to the Spitzer data, we also present the 2MASS {{cite:b7ea4914-69f7-42c5-88ff-c90f8b1cdf48}} fluxes of the galaxies in our sample. The
+goal of this initial paper is to present an overview of the main infrared
+properties of the sample.
+
+Observations 
+ccccccccc
+
+Sample of Hickson Compact Groups used in this study 
+0pt
+FORMULA   R.A.  Dec. 
+3cGalaxy Membership   Group
+ID  (km/s)  (J2000)  (J2000) 
+E/SO  Sp  Other 
+FORMULA  a
+ type b
+
+HCG 02  4309  00:31:30.0  +08:25:52  0  2  1  0.96FORMULA 0.07  I
+HCG 07  4233  00:39:23.9  +00:52:41  0  4  0  0.85FORMULA 0.06  II
+HCG 16  3957  02:09:31.3  -10:09:31  0  2  2  0.90FORMULA 0.05  I
+HCG 19  4245  02:42:45.1  -12:24:43  1  1  1  0.81FORMULA 0.10  II
+HCG 22  2686  03:03:31.3  -15:40:32  1  2  0  0.84FORMULA 0.05  II
+HCG 31  4094  05:01:38.3  -04:15:25  0  2  5  1.01FORMULA 0.07  I
+HCG 42  3976  10:00:21.8  -19:38:57  3  1  0  0.75FORMULA 0.06  III
+HCG 48  3162  10:37:45.6  -27:04:50  2  2(0)
+c  0  0.71FORMULA 0.06  III
+HCG 59  4058  11:48:26.6  +12:42:40  1  2  1  0.81FORMULA 0.05  II
+HCG 61  3907  12:12:24.9  +29:11:21  2  1  0  0.89FORMULA 0.08  I
+HCG 62  4122  12:53:08.1  -09:13:27  4  0  0  0.70FORMULA 0.07  III
+HCG 90  2644  22:02:06.0  -31:55:48  2  1  1  0.74FORMULA 0.06  III
+aDynamical masses calculated from velocity
+dispersions and median galaxy separations in
+{{cite:64df9160-17bb-4232-9f94-76d81cec175a}}, {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}}, {{cite:7ea3d727-0519-4590-9940-580bc4ed0f82}}. HI masses are from
+{{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}}.
+bGroup type based on FORMULA  as discussed in § REF .
+cGalaxies HCG 48b and HCG 48c have slightly
+discordant velocities and may not be proper group members.
+We selected a sample of twelve HCGs from the Hickson Compact Group
+catalog {{cite:64df9160-17bb-4232-9f94-76d81cec175a}} based on distance (FORMULA  km sFORMULA ),
+angular extent (FORMULA ), and membership (at least three concordant
+members). The resulting sample is shown in Table . We
+include several compact groups in each of the three stages of the
+proposed evolutionary sequence {{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}}:
+pre-interaction, shocked intergroup medium, and smooth intergroup
+medium (see § REF  for explanation of evolutionary states).
+Nevertheless, within each of these broad categories, there is a large
+variety of group properties.
+Spitzer observations of the twelve HCGs were obtained with the
+IRAC {{cite:755e768e-35be-4a6c-99ad-e1e892b77764}} and MIPS {{cite:ac807faf-bc16-41ba-9c7a-5b550183b0a4}} cameras as part of a GO-1
+program. The IRAC observations were taken in high dynamic range mode,
+with one 12 sec exposure and three 30 sec exposures for each dithered
+position. The total number of exposures taken for each group was
+either 24 (HCGs 19, 31, 59, 61, and 62) or 48 (HCGs 2, 7, 16, 22, 42,
+48, 90) for each set of cameras (3.6FORMULA m and 5.8FORMULA m together,
+then 4.5FORMULA m and 8.0FORMULA m together), depending on the spatial
+extent of the group. After the basic calibrated data (BCD) were
+obtained, they were run through both artifact mitigation and stray
+light correction routines as part of the Spitzer MOPEX package
+{{cite:9552a598-240e-472e-9dea-feaf2905dcbc}}. The 30 sec exposures were then
+combined onto a finer grid scale using the Spitzer mosaic
+software, in order to better sample the point spread functions (PSFs).
+The resulting grids have a pixel scale of FORMULA . The 12 sec exposures were used only in the case of
+saturation in the 30 sec exposures. MIPS 24FORMULA m images were
+obtained with three cycles of 3 sec duration with the number of
+exposures ranging from two to four. The post-BCD observations were
+downloaded and mosaiced onto the same grid with a pixel scale of
+FORMULA . The sensitivity limits vary slightly for each
+of the compact groups: for 3.6FORMULA m, 4.5FORMULA m, 5.8FORMULA m, 8.0FORMULA m,
+and 24FORMULA m respectively, typical 3-FORMULA  limits are FORMULA Jy, 5FORMULA Jy, 30FORMULA Jy, 40FORMULA Jy, and 250FORMULA Jy and 3-FORMULA 
+extended source sensitivity limits are FORMULA  MJy sterFORMULA ,
+0.05 MJy sterFORMULA , 0.2 MJy sterFORMULA , 0.2 MJy sterFORMULA , and
+0.3 MJy sterFORMULA .
+For the purposes of comparing photometry from IRAC and 24FORMULA m
+observations, the 2MASS and IRAC images were first convolved to the
+24FORMULA m PSF. Photometry was then performed with a specialized IDL
+routine developed by A. Reines and R. Indebetouw (see description of
+code in Reines et al. in prep) that detects a specified contour level
+in a reference image, assigns a background annulus that has the same
+shape as the aperture contour (but is expanded out by a specified
+factor), and then carries out the photometry using identical apertures
+and annuli at each wavelength for a given galaxy. For the photometry
+in this paper, apertures were determined by combining all four IRAC
+bands (weighted by FORMULA ), and determining a contour level of
+1.5-2FORMULA . A background annulus was used that had inner and outer
+scales 2FORMULA  and 2.5FORMULA  the scale of the aperture. Extended
+source aperture corrections are necessary due to the significant
+contribution from scattered light, particularly in the 5.8FORMULA m and
+8.0FORMULA m bands; these were determined following the prescription of
+T. Jarrett using the “average” radii of the irregular apertures used
+Further information can be found on Jarrett's IRAC website:
+http://spider.ipac.caltech.edu/staff/jarrett/irac/calibration/.
+Typical corrections were 7%, 3%, 33%, and 24% at 3.6FORMULA m,
+4.5FORMULA m, 5.8FORMULA m, and 8.0FORMULA m, respectively, which are close to
+the values for an “infinite” aperture determined by T. Jarrett.
+Uncertainties in the flux densities greater than 10 mJy are dominated
+by calibration issues and are estimated to be FORMULA %. Flux
+densities of the fainter sources are more strongly subject to
+statistical variations that cause the exact contour shape to change,
+and we estimate the total uncertainties empirically to be FORMULA %
+for flux densities of 5-10 mJy, FORMULA % for flux densities
+1-5 mJy, and FORMULA % for flux densities FORMULA  mJy (which are only
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+marginally detected). The uncertainties for faint objects
+are largely driven by surface brightness issues, where small
+variations in the local background can dramatically affect the
+measured flux densities.
+Evolutionary Stages of Compact Groups in this Sample 
+Compact groups are complex environments with heterogeneous properties
+and present a challenge to any kind of morphological or evolutionary
+classification; placing compact groups into evolutionary stages is
+more complex than for the two-galaxy interactions found in the
+analogous Toomre Sequence. As evidence of the difficulties in
+classifying HCGs, Verdes-Montenegro et al. note the lack of one-to-one
+correspondence between the presence of tidal features and the atomic
+gas content of Hickson Compact Groups. {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}} classify
+compact groups in three separate families including (1) “real”
+compact groups, (2) core FORMULA  halo systems, and (3) parts of loose
+groups; this classification only reflects the galaxy populations and
+space densities. {{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}} proposed an evolutionary
+sequence based on the content and distribution of HI gas for Hickson
+Compact Groups: pre-interaction, shocked intergroup medium, and smooth
+intergroup medium. In this scenario, the evolutionary stage of a
+group is postulated to be associated with the HI deficiency of the
+group members and the group as a whole. HI deficiency is defined as
+FORMULA , where the “predicted” HI mass of a galaxy is
+determined from the typical HI mass of a field galaxy of similar
+Hubble type and luminosity {{cite:b29eed7e-9612-4741-80b9-0cea279f1a00}}.
+We wish to classify Hickson Compact Groups in a quantifiable way while
+also mitigating the effects of possible morphological
+misclassification of galaxies in determining a group's evolutionary
+state. Here we adopt a variation of the Verdes-Montenegro et
+al. method for classification of the Hickson Compact Groups; as a
+proxy for evolutionary state, we use FORMULA . Using dynamical masses calculated from velocity
+dispersions and median galaxy separations in {{cite:64df9160-17bb-4232-9f94-76d81cec175a}},
+{{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}}, and/or {{cite:7ea3d727-0519-4590-9940-580bc4ed0f82}} and HI masses from
+{{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}} (with the exception of HCG 90, for which
+the HI mass was provided by J. Hibbard, private communication), each
+group was placed in one of three categories: (I) relatively HI-rich,
+FORMULA , (II)
+intermediate HI, FORMULA , and (III) relatively HI poor, FORMULA . The boundaries of these
+categories are somewhat arbitrary and were chosen to divide our sample
+of groups roughly in equal thirds. The resulting classifications are
+listed in Table . Only two of the groups in our sample,
+HCG 16 and HCG 31, were explicitly classified by Verdes-Montenegro et
+al.; both of these groups were identified as “phase 2” in that
+paper. In the classification scheme used in this paper HCG 16 and
+HCG 31 are both type I (relatively HI rich).
+FIGURE 
+The distributions of the Hubble types {{cite:b29eed7e-9612-4741-80b9-0cea279f1a00}} of the constituent galaxies with respect to group type
+are shown in Figure REF . The histogram resulting from the
+total sample of galaxies in the twelve HCGs studied in this program
+shows a clear bimodal structure, with peaks in the relative number of
+galaxies around Hubble type 0 and Hubble types 6-8. Given that only
+twelve groups are included in this sample, this histogram is
+remarkably consistent with the distribution of morphological types
+found in all HCGs {{cite:84d68dc0-966c-4db7-abbf-2d976af4d76f}}. However, it is interesting to
+note that this distribution is distinctly different from general
+samples of galaxies such as the Third Reference Catalog
+{{cite:cf83a3c2-a9a3-4423-859d-5626b8eda634}}, which has a uni-modal distribution
+that peaks around type Sbc galaxies.
+In Figure REF  it is
+clear that early Hubble types tend to be found in groups of type III,
+while late Hubble types are preferentially found in groups of type I.
+Galaxies in type II groups are relatively evenly distributed among
+Hubble types. These trends suggest that the degree to which a group
+is relatively gas rich or gas poor may simply reflect the Hubble types
+of a group's constituent galaxies. However, the physical scenario may
+be more subtle than this, especially given that HCGs as a class appear
+to be gas deficient, and the causal relationship between a group's
+galaxy content and gas properties is not straight forward.
+We note that of the type I and type II groups in this sample, only one
+of them was detected in the X-ray survey of {{cite:be182dd3-2233-4136-918c-d12af7ec176e}} (HCG 16,
+which is known to contain active galaxies), while all four of the
+type III groups were detected (HCG 42, HCG 48, HCG 62, and HCG 90).
+The relative contribution to a group's total X-ray flux from the
+individual galaxies from the IGM is important to distinguish in this
+context. For example, HCG 42 and HCG 62 have bright emission from the
+IGM, while the X-ray emission HCG 90 is dominated by the contribution
+from individual galaxies. HCG 16 also has evidence for a faint IGM in
+addition to the contribution from AGN activity {{cite:7d44c622-d43c-44a0-bc3b-c196c34f3154}}. In
+fact, while all of the type III groups have X-ray detections, none of
+the galaxies in type III groups have strong infrared emission as seen
+in their SEDs shown in Figures REF -REF . This
+result is consistent with what is seen in brightest cluster galaxies
+in clusters without strong cooling flows by {{cite:3b24e32d-2d63-44e9-a9b7-fc783f628ce2}}. Those
+clusters frequently have evidence for AGN activity that apparently
+injects energy into the intracluster medium and prevents cooling; the
+large X-ray bubbles in HCG 62 indicate similar activity
+{{cite:ffc0b75d-6173-4976-8ad0-01987d755e27}}.
+In the case of type III groups in this sample, they could be observed
+as “gas deficient” in HI simply because their intra-group gas has
+largely been heated and ionized. There have been several interesting
+suggestions that a hot cluster ICM plays an important role in the
+truncation of star formation activity in clusters (e.g., Poggianti et
+al. 2004, Moran et al. 2006).
+
+Results
+The Infrared Colors of Galaxies in Hickson Compact Groups
+The infrared colors of galaxies in the Hickson Compact Groups in this
+sample span a wide range of parameter space. Here we discuss trends
+and correlations that are apparent in this data set. Spitzer
+IRAC three-color (3.6FORMULA m, 4.5FORMULA m, and 8FORMULA m) images are shown
+in Figures REF -REF . The infrared colors of the
+galaxies in this sample are shown in
+Figures REF -REF .
+The near- to mid-IR colors of a source will largely be dependent on
+the temperature of the dust, the relative strength of the underlying
+stellar blackbody emission, and polycyclic aromatic hydrocarbon (PAH)
+emission, which can contribute significantly to three of the four IRAC
+bands {{cite:c34aa880-a19c-48e2-ac26-d9521daaa4b1}}. The near-IR 2MASS observations at the J, H,
+and K-bands will largely be dominated by stellar blackbody emission
+with a possible contribution from very hot dust near the sublimation
+temperature (FORMULA  K). Of the four IRAC bands, the only band
+that is not subject to a possible strong contribution by PAH emission
+is the 4.5FORMULA m band. The strongest PAH contribution is expected in
+the 8.0FORMULA m band. Emission in the 24FORMULA m band is dominated by
+thermal emission from dust.
+These three dominant components of emission in the infrared can, to
+some extent, be disentangled by examining the spectral energy
+distributions of galaxies. A source with emission dominated by hot
+dust will result in a K-band “excess”, and a rising continuum from
+3.6FORMULA m to 24FORMULA m. A source with strong PAH emission will exhibit
+a falling spectral energy distribution from 3.6FORMULA m to 4.5FORMULA m and
+a rising spectral energy distribution from 4.5FORMULA m to 8.0FORMULA m. A
+source that is dominated by stellar light will have a spectral energy
+distribution that falls continuously from the near-IR to 24FORMULA m with
+the Rayleigh-Jeans tail of the stellar blackbody emission.
+IRAC colors 
+FIGURE 
+Figure REF  shows the IRAC colors of the galaxies, which we
+have separated into four quadrants that are divided by lines
+delineating whether the spectral energy distribution of a source is
+rising or falling with increasing wavelength for a given flux density
+ratio. Galaxies with emission dominated by stellar light with little
+dust or PAH emission are expected to be located in the lower left
+quadrant. For reference, we show an ellipse that indicates the region
+in this color space that would be occupied by unreddened main-sequence
+and giant stars along with a reddening vector that corresponds to
+FORMULA .
+Galaxies with active star formation and/or AGN activity are largely
+expected to be located on the top portion of this plot
+{{cite:188a677f-be14-4fc8-9517-a0288d152953}}; contributions to their SEDs from PAH emission
+or hot dust will result in stronger emission at 8FORMULA m than at
+4.5FORMULA m. In order to differentiate the galaxies that fall in the
+top or bottom of this plot (reflecting the ratio of flux densities in
+the 8.0FORMULA m and 4.5FORMULA m bands) in Figures REF  and
+REF , we consistently use FORMULA  and FORMULA  symbols,
+respectively, to represent them. For comparison, we plot the galaxies
+from the KISS survey of star-forming galaxies as diamonds
+{{cite:51b01df5-164d-41bf-9cae-578546dc77c1}}, and the Spitzer First Look Survey (FLS) as
+dots {{cite:188a677f-be14-4fc8-9517-a0288d152953}}. The color selection criteria for AGN defined by
+{{cite:188a677f-be14-4fc8-9517-a0288d152953}} are indicated by a shaded area; while a significant
+fraction of the galaxies in the KISS sample are in this region of
+color space, only a handful of the galaxies in this sample fall in
+that area, including HCG 7A, HCG 7D, HCG 22C, HCG 31G, HCG 59A, and
+HCG 90A. However, the integrated colors of galaxies can obscure
+low-level AGN activity, and several of the galaxies in this sample are
+consistent with hosting AGN based on their nuclear colors (Gallagher
+et al., in prep).
+The galaxies that fall in the lower left quadrant (e.g. dominated by
+stellar emission) are tightly clustered near the stellar ellipse. By
+contrast, the galaxies that fall in the upper right quadrant exhibit a
+significant spread in their colors, which is consistent with variable
+contributions from hot dust and PAH emission, plausibly reflecting
+different levels of star formation and/or AGN activity in the
+galaxies. As expected, the KISS sample is almost exclusively located
+in the upper portion of this plot.
+A major difference between the IRAC colors of galaxies in this sample
+in and the FLS sample of {{cite:188a677f-be14-4fc8-9517-a0288d152953}} is the lack of a vertical
+plume in our data (as seen in Fig. REF ). Lacy et
+al. attribute the galaxies in this plume to occupy this area of color
+space because they are at redshifts where the 6.2FORMULA m PAH feature
+has shifted out of the 5.8FORMULA m band and into the 8.0FORMULA m band.
+The galaxies in the sample of HCGs presented here do not have
+redshifts sufficient to cause this effect (by definition, the sample
+was selected to have velocities FORMULA  km sFORMULA ).
+There are a few curious features in the HCG galaxy distribution shown
+in Fig. REF , which are anomalous when compared to the FLS
+galaxy sample of {{cite:188a677f-be14-4fc8-9517-a0288d152953}}. First, the HCG galaxies follow a
+relatively narrow finger along the upper edge of the AGN-starburst
+range of FLS galaxies. The narrowness of this trend suggests a
+reasonably tight relationship between PAH emission and dust emission
+in the HCG sample. Our comparison between the HCG galaxies and the
+FLS galaxies indicates an interesting FORMULA  dex offset
+between this finger and the one in the FLS plot. The vertical offset
+suggests that the HCG galaxies have stronger PAH emission in the
+8.0FORMULA m band than typical galaxies in the FLS. This could be due to
+generally elevated star formation and/or dust content. However,
+another very plausible explanation is simply that the bulk of the
+8FORMULA m PAH feature has red-shifted out of the 8FORMULA m band for a
+significant fraction of the galaxies in the FLS, which would only
+require a moderate redshift of FORMULA .
+We also note that the gap that we see in our colors in
+Fig. REF  is not present in the FLS sample
+{{cite:188a677f-be14-4fc8-9517-a0288d152953}}. This sample of HCGs has a relative lack
+of galaxies that fall in the color space between systems dominated by
+stellar light and systems with significant hot dust and/or PAH
+contributions. This “gap” is not apparent in the FLS sample, which
+could be masked by the shifting of the 6.2FORMULA m PAH feature between
+bands, as discussed above. However, this gap is also not seen in the
+galaxies of the SINGS sample, which are not at significant redshifts.
+The nature of this gap will be discussed further in the context of
+evolutionary stages in § REF .
+
+Pan-Infrared colors
+FIGURE 
+Figure REF  shows a color combination spanning the K-band to
+24FORMULA m. As in Figure REF , we have separated this color
+space into four quadrants with lines delineating whether the spectral
+energy distribution of a source is rising or falling with increasing
+wavelength for a given flux density ratio. All of the galaxies fall
+in the lower two quadrants. There is a clear trend in this color
+space for the sources identified in Figure REF  as having
+significant PAH emission and/or hot dust at 8FORMULA m (indicated with
+the FORMULA  symbols) to also have relatively strong 24FORMULA m emission in
+this plot. There is also a slight trend in the data for galaxies that
+have relatively strong thermal dust emission, as manifest in a higher
+logFORMULA  ratio, to also have relatively high ratios of
+logFORMULA , which provides further evidence for a hot dust
+contribution.
+
+2MASS colors 
+FIGURE 
+Figure REF  shows the near-IR colors of the galaxies in this
+sample of HCGs. As in Figures REF  and REF , the
+ellipse indicates the region of color space occupied by unreddened
+main-sequence and giant stars, and a reddening vector for FORMULA  is
+shown. The J-H and H-K colors of nearly all of the galaxies in the
+sample are consistent with being dominated by normal stellar
+populations that are either slightly reddened or alternatively
+affected by RGB and AGB star contributions to the integrated near-IR
+colors. The marginally outlying points may reflect an infrared excess
+due to a hot dust contribution. There is a trend in the near-IR
+colors for the sources identified in Figure REF  as having
+significant PAH emission at 8FORMULA m (indicated with the FORMULA  symbols)
+to also have larger amounts of reddening and/or hot dust
+contributions. In addition these sources exhibit a much larger
+scatter in their near-IR colors than the sources identified in
+Figure REF  as having relatively weak PAH and/or hot dust
+emission (indicated with the FORMULA  symbols).
+
+The Relationship Between Infrared Properties and Evolutionary State 
+FIGURE 
+FIGURE 
+FIGURE 
+In order to assess whether there are any trends in the infrared
+properties of HCG galaxies with evolutionary state, we have divided
+our sample into three types as discussed in § REF :
+(I) FORMULA ,
+(II) FORMULA ,
+(III)FORMULA .
+In other
+words, type I groups are relatively the most gas-rich by mass, and
+type III groups are relatively the most gas-poor by mass. In
+Figures REF -REF  these types are respectively
+shown as stars, triangles, and squares. It is important to note that
+these types are based on the properties of the group, whereas
+the data points are individual galaxies within a group of a
+given type. In other words, we are attempting to probe whether the
+local properties of a member galaxy are related to the global
+properties of the group in which it resides.
+The infrared colors of the constituent galaxies appear to be related
+to the type of group in which they reside, and Figure REF 
+reveals a few striking trends. First, the HI gas-deficient group
+galaxies (type III) are relatively tightly clustered near the nexus of
+stellar colors, which is expected if there is little star formation,
+reddening, or AGN activity. The only outliers are known AGN galaxies
+in HCG 90 (galaxies A and D). The galaxies in more gas-rich groups
+span a much larger range in colors, with type I groups extending
+toward much redder colors, indicating higher levels of star formation
+and AGN activity overall. It is particularly noteworthy that the
+galaxies in this sample appear to follow a sequence in the infrared
+color-color space, with a relative gap in the galaxy population found
+at moderate colors (FORMULA , and FORMULA ).
+This “sequence” and “gap” are more significant in comparison to
+the FLS galaxies and SINGS galaxies, which do not appear to exhibit
+such a gap. We note that this gap is reminiscent of the so-called
+“green-valley” that is apparent in color-magnitude diagrams of
+galaxy samples such as that presented by {{cite:e7506cda-11b7-4528-ad80-b4beff873eef}}. This gap may
+also reflect the bimodal structure of the distribution of Hubble types
+seen in Fig. REF . If this gap in the HCG galaxies
+distribution is dynamical in nature, it suggests that star formation
+and AGN activity in HCG galaxies responds to the dynamical processes
+taking place on rapid timescales.
+Trends similar to those in Fig. REF  are seen in
+Figure REF , with the median color of galaxies in type I,
+type II, and type III groups slightly offset. The near-IR colors
+alone, as shown in Figure REF , do not reveal any strong
+trends with group type. However, it is interesting to note that the
+outlying sources are either from groups of type I or type II, or
+known AGN galaxies (HCG 90A and HCG 90D).
+The 24FORMULA m luminosity of the member galaxies also exhibits a slight
+trend with group type, as shown in Figure REF . Galaxies in
+gas-rich groups of type I have the highest average 24FORMULA m
+luminosity, while galaxies in gas-poor groups of type III have the
+lowest average 24FORMULA m luminosity. This trend is in accord with
+type I groups hosting the most actively star-forming galaxies.
+{{cite:002471f8-c6d1-408e-afc8-d528299e947a}} examined 24FORMULA m emission of the Arp interactive and
+field spiral samples of galaxies, but see little statistical evidence
+for a difference between those two populations. This is not
+necessarily inconsistent with the trends seen here, as our sample of
+compact groups contains many early type galaxies, which the
+{{cite:002471f8-c6d1-408e-afc8-d528299e947a}} sample was not designed to investigate.
+FIGURE 
+
+Summary
+We present new Spitzer observations of a sample of twelve
+Hickson Compact Groups comprising 45 galaxies and combine these with
+existing 2MASS survey observations. The goal of this project is to
+examine the relationship between the compact group environments and
+various physical processes. The main results of this paper are
+summarized below.
+The amount of PAH emission, reddening, and 24FORMULA m emission in each
+galaxy appear to be related; these observables tend to be similarly
+strong or weak for a given galaxy, reflecting the amount of recent
+star formation activity. Galaxies that strongly exhibit these
+features, also have much greater scatter in their colors, plausibly
+reflecting variable contributions to the integrated light from AGN and
+starburst activity; galaxies dominated by stellar light with little
+evidence for recent starburst and/or AGN activity have a much smaller
+range of infrared colors. The near-infrared (J,H,K) colors of the
+member galaxies are largely consistent with being dominated by
+slightly reddened normal stellar populations.
+We separate the compact groups into three types based on the ratio of
+their dynamical and HI masses, with type I being the most gas-rich and
+type III being the most gas-poor. An analysis of morphological types
+indicates that late-type galaxies are preferentially found in type I
+groups, and early-type galaxies are preferentially found in type III
+groups. However, the causal relationship that underlies these trends
+is not clear. The near-IR colors do not show any strong trends with
+group type, although the outlying points with a K-band excess tend to
+be galaxies in type I and type II groups. Galaxies in type I groups
+tend to be the most actively star forming as manifest in their
+thermal-IR colors, with type II also showing a moderate level of
+activity, and type III groups are relatively quiescent. This result
+could be interpreted as type I groups actively consuming their gas
+(and forming stars), while type II groups may be generally somewhat
+further along in this process. Galaxies in type III groups tend to be
+relatively tightly clustered around the locus of colors for normal
+stellar populations, with the few outliers known to be active
+galaxies. The sensitivity of thermal infrared colors to neutral gas
+content suggests that the gas content of a Hickson compact group
+is at least as important as the neutral gas distribution in
+promoting or inhibiting star formation. Clearly both gas content and
+gas distribution are important to a group's evolutionary state,
+although it is not yet clear how independent or related these
+parameters are.
+The group type also appears to be reflected in the 24FORMULA m luminosity
+of the member galaxies. Galaxies in groups of type I have the highest
+average 24FORMULA m luminosity, while galaxies in groups of type III have
+the lowest average 24FORMULA m luminosity. This trend is in accord with
+the most gas-rich groups hosting the most actively star-forming
+galaxies. Of the type I and type II groups in this sample, only one
+of them has an X-ray detection {{cite:7d44c622-d43c-44a0-bc3b-c196c34f3154}}, while all four of the gas-poor groups have been
+detected in the X-ray {{cite:be182dd3-2233-4136-918c-d12af7ec176e}}. These results are consistent with the hypothesis
+that the missing HI gas in the most “deficient” groups may have been
+converted to X-ray emitting hot gas.
+There are striking trends seen in this study between the FORMULA  ratio for an entire
+Hickson Compact Group and the infrared colors of the individual member
+galaxies, which suggest that the constituent galaxies in Hickson
+Compact Groups are related to the type of group in which they reside.
+However it is not clear from these observations whether the
+“gas-richness” of a group simply reflects its fraction of late-type
+galaxies, or whether the gas-richness of a group affects the
+constituent galaxy types. Clearly the morphology of the gas within a
+group must have a role, as pointed out by
+{{cite:1e9512e4-1cbb-489c-9e77-8a5bef432a29}}.
+The galaxy sample here has characteristics that are distinctly
+different from the sample of galaxies in the Spitzer First Look
+Survey. Most notably, Hickson Compact Group galaxies exhibit a
+“gap” in infrared color space that is sparsely populated. This gap
+may suggest a rapid evolution of galaxy properties in response to
+dynamical effects in HCGs.
+We are grateful to Remy Indebetouw for his help developing the IDL
+program used in this project. We also thank Amanda Heiderman for
+helpful discussions on compact groups. The referee, Phil Appleton,
+provided insightful feedback that significantly enhanced this paper.
+This work was supported in part by the Spitzer Space Telescope
+grant for project #3596. K. E. J. gratefully acknowledges partial
+support for this research provided by NSF/CAREER grant AST-0548103.
+Support for S. C. G. was provided by NASA through the Spitzer
+Fellowship Program, under award 1256317. This publication makes use
+of data products from the Two Micron All Sky Survey, which is a joint
+project of the University of Massachusetts and the Infrared Processing
+and Analysis Center/California Institute of Technology, funded by the
+National Aeronautics and Space Administration and the NSF. This
+research has made use of the NASA/IPAC Extragalactic Database (NED)
+which is operated by the Jet Propulsion Laboratory, California
+Institute of Technology, under contract with the National Aeronautics
+and Space Administration.
+Facilities: Spitzer, VLA.
+llllllllllllllllll
+
+2MASS and Spitzer flux densities of the galaxies in the sample
+
+0pt
+HCG
+  J  H  K  3.6FORMULA m  4.5FORMULA m
+ 5.8FORMULA m  8.0FORMULA m  24FORMULA m
+Galaxy Morph  (mJy) 
+(mJy)  (mJy)  (mJy)  (mJy) 
+(mJy)  (mJy)  (mJy)
+2a  SBd  27.9  37.0  24.7  15.1  10.7  21.3  54.1  115
+2b  cI  21.9  23.2  20.9  14.5  10.6  29.0  88.0  351
+2c  SBc  12.6  13.7  12.7  6.7  4.6  6.8  16.9  21.5
+7a  Sb  124  155  13.  70.3  46.3  76.1  161  303
+7bd  SB0  67.4  81.8  68.8  31.9  20.1  16.7  10.7  12.7
+7c  SBc  58.9  67.1  54.9  29.0  18.9  26.1  76.3  76.0
+7dd  SBc  31.5  34.1  29.7  11.1  7.5  13.1  19.6  12.0
+16ad  SBa  151  186  159  85.6  57.1  100  279  409
+16bd  Sab  90.4  109  91.8  43.0  26.8  22.4  24.8  22.5
+16c  Im  73.7  90.9  82.9  65.9  48.1  177  576  1412
+16d  Im  63.3  81.7  72.0  47.7  40.3  105  338  1785
+19a  E2  43.2  53.2  40.6  19.9  12.1  7.8  5.6  3.3
+19b  Scd  10.3  11.2  11.8  5.8  3.8  6.7  19.7  24.1
+19c  Sdm  5.8  8.3  5.1  2.7  1.8  2.1  5.1  6.4
+22a  E2  305  371  297  142  84.5  53.8  38.2  13.9
+22b  Sa  20.6  26.4  20.5  9.3  5.8  3.3  2.5  1.1
+22c  SBc  24.0  25.2  20.5  11.6  7.8  12.2  18.7  29.4
+31aced  (pec)  20.1  22.5  17.9  13.4  10.1  24.3  72.5  463
+31bd  Sm  3.9  4.1  3.5  1.8  1.4  1.5  4.3  16.6
+31f (Im)  0.4  0.4  FORMULA   0.1  0.1  0.1  0.2  2.8
+31g  Im  7.9  8.8  7.9  3.7  2.4  4.7  8.1  38.9
+31q (Im)  1.2  1.5  0.9  0.5  0.3  0.3  0.5  0.7
+42ad  E3  373  451  372  177  108  76.8  40.1  33.6
+42b SB0  46.1  56.0  46.6  22.5  13.8  7.6  6.1  4.5
+42cd E2  58.0  70.9  55.4  27.2  17.0  10.8  6.6  2.8
+42d E2  8.0  9.1  8.1  3.4  2.1  1.1  0.8  0.4
+48a d E2  306  367  297  142  88.3  75.4  44.0  16.1
+48b d,e Sc  42.1  47.0  37.7  19.5  14.6  23.5  69.1  81.9
+48c e S0a  16.2  21.3  18.6  7.9  4.9  3.3  2.1  0.8
+48d  E1  8.8  10.4  8.1  3.9  2.6  1.4  1.0  0.4
+59ad Sa  22.5  23.4  19.4  12.1  10.2  14.6  38.9  453
+59b E0  10.5  12.1  10.2  4.3  2.8  1.7  1.1  0.6
+59c Sc  3.6  4.2  3.0  1.7  1.1  1.4  3.3  3.6
+59dd Im  2.6  4.4  3.4  1.8  1.2  1.8  4.4  12.7
+61a S0a  141  188  145  68.2  42.1  26.8  26.0  20.5
+61c Sbc  70.5  105  90.4  52.7  37.1  77.8  226  357
+61d S0  33.7  43.9  33.3  15.8  10.0  5.8  4.9  2.5
+62ad E3  157  184  155  73.7  45.4  31.4  21.9  9.4
+62bd S0  64.0  76.9  63.5  29.3  17.7  11.5  8.4  3.6
+62cd S0  32.6  37.1  27.9  13.0  7.4  3.9  3.1  2.1
+62d  E2  8.0  9.2  7.9  3.7  2.3  1.6  1.0  1.9
+90a Sa  243  318  288  176  147  190  328   FORMULA
+90bd E0  182  220  179  78.8  46.6  31.0  25.8  18.3
+90cd E0  164.  198  155  74.0  44.5  27.6  21.7  9.1
+90dd  Im  152.  271  218  96.7  61.8  54.5  121  209
+aMorphological types from {{cite:3f68f8ba-ee38-4e73-b01b-9c0cca7fc5c9}}, {{cite:6dee2916-54cd-4412-bd35-dde02ea0fa26}} except where noted by parenthesis.
+bNear-IR flux densities in the J-, H-, and K-bands were
+directly measured from the 2MASS Atlas images in the same manner as
+described in §  for the Spitzer images.
+cUncertainties are estimated to be FORMULA  for
+flux densities greater than 10 mJy, FORMULA  for flux densities of
+5-10 mJy, and FORMULA  for flux densities of 1-5 mJy, and FORMULA  for marginal detections less than 1 mJy.
+dThese galaxies were not cleanly seperated at the
+1FORMULA  contour level, and photometry was carried out using
+apertures defined by higher contour levels.
+eGalaxies HCG 48b and HCG 48c may not be proper group
+members {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}}.
+
+NOTES ON INDIVIDUAL HICKSON COMPACT GROUPS
+HCG 2 
+The spectral energy distributions for the galaxies in HCG 2 are shown
+in Figure REF . This group is classified as type I according to
+FORMULA , indicating it is
+relatively gas-rich. Galaxy A hosts a number of bright star forming
+knots as evident by their 4.5FORMULA m, 8.0FORMULA m, and 24FORMULA m emission.
+Galaxy B (MRK 552) is compact, but luminous in the infrared and the dominant
+source of 24FORMULA m emission in the group. Galaxy C has a hint of
+low-level star formation to the west of its nuclear region. Galaxy D
+is a background source. All three have similar infrared SED's that are
+typical of star-forming galaxies.
+
+HCG 7
+The spectral energy distributions for the galaxies in HCG 7 are shown
+in Figure REF . This group is classified as type II according
+to FORMULA , indicating a
+moderate amount of gas is present in the group. Galaxy A (NGC 192)
+has a disturbed morphology with substantial infrared emission
+throughout. The nuclear region of galaxy A is a luminous 24FORMULA m
+source. Galaxy B (NGC 196) is dominated by stellar light with little
+evidence of recent star formation. Galaxy C (NGC 201) has elevated
+4.5FORMULA m and 8.0FORMULA m emission throughout the spiral arms, and the
+nuclear region stands out at 24FORMULA m, possibly indicating low level
+AGN activity. Galaxy D (NGC 197) is slightly disturbed and appears to
+have a modest level of star formation.
+
+HCG 16
+The spectral energy distributions for the galaxies in HCG 16 are shown
+in Figure REF . This group is classified as type I according
+to FORMULA , indicating it
+is relatively gas-rich. {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}} observe this group to be a
+coreFORMULA halo system, suggesting the compact group is part of a larger
+collapsing structure. Galaxies A (NGC 835, MRK 1021) and B
+(NGC 833) have extended tidal features visible in the 3.6FORMULA m and
+4.5FORMULA m images without associated longer wavelength emission,
+suggesting very little star formation has been triggered in the tidal
+tails. Galaxy A does have a moderate level of star formation
+activity, but galaxy B is dominated by stellar light. Galaxies C
+(NGC 838, MRK 1022) and D (NGC 839) are quite luminous in the
+infrared, causing saturation and artifacts in the long exposure IRAC
+images; both have significant levels of 24FORMULA m emission consistent
+with originating from nuclear point sources. Galaxies A, B, and D
+have previously been identified as active galaxies in this group
+{{cite:5d41b131-24b6-4c41-a51c-f61e91fd42de}}, {{cite:49972503-6481-4263-a559-2b6d18e11f99}}, {{cite:3300afbf-7063-46ce-8ccf-d59eae40c0bd}}. {{cite:35345950-edd6-44a0-8e37-a8e79471d6b6}} conclude that
+both galaxies C and D have recently undergone major merger events based on
+their kinematics, double nuclei, and high infrared luminosities, which
+is consistent with these Spitzer results.
+
+HCG 19
+The spectral energy distributions for the galaxies in HCG 19 are shown
+in Figure REF . This group is classified as type II according
+to FORMULA , indicating a
+moderate amount of gas present in the group. Galaxy A is dominated by
+stellar light. Galaxy B has moderate star formation activity
+throughout, and hosts a number of compact star forming knots in the
+distorted spiral arms. Galaxy C is quite diffuse, with a hint of
+elevated star formation on its south-west edge (facing the group).
+Galaxy D is a background object.
+
+HCG 22
+The spectral energy distributions for the galaxies in HCG 22 are shown
+in Figure REF . This group is classified as type II according
+to FORMULA , indicating a
+moderate amount of gas present in the group. HCG 22 may be associated
+with a larger structure {{cite:fddaa42f-b755-48ee-8d18-4e28c9a12d68}}, although {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}}
+identify it as a “real” compact group. Galaxies A (NGC 1199) and B
+(NGC 1190) are dominated by stellar light with little long wavelength
+emission. Galaxy C (NGC 1189) has extended clumpy star formation
+throughout its spiral arms with remarkably little associated stellar
+light, which is striking in the color images. Galaxies D (NGC 1191)
+and E (NGC 1192) are background objects.
+
+HCG 31
+The spectral energy distributions for the galaxies in HCG 31 are shown
+in Figure REF . This group is classified as type I according
+to FORMULA , indicating it
+is relatively gas-rich. HCG 31 is a highly disturbed with elevated
+levels of infrared emission throughout most the group. Due to the
+close interaction between galaxies A, C, and E, they were not
+separable at low contour levels and their photometry was combined into
+a single data point. Galaxy F was not detected in the 2MASS images
+at J,H, and K-bands, and galaxy Q was not detected at K-band.
+Galaxies A and C (collectively NGC 1741, MRK 1089) are undergoing the
+strongest interaction, and the location of their collision is a strong
+24FORMULA m source. Galaxy B has moderate infrared emission clumped in
+on the edges of its disk and nuclear region. Galaxy D is a background
+source. Galaxies E and F are possible tidal dwarfs, and have moderate
+levels of star formation. Galaxy F, in particular, is relatively
+luminous at 24FORMULA m given its small size and faint near-IR and
+optical emission. Galaxy G (MRK 1090) has several star forming knots
+with moderate infrared emission on its north-west edge (facing the
+group). These results are generally consistent with conclusions based
+on optical observations of this group {{cite:6964a08c-26a8-416e-845b-606d875e46d8}}, {{cite:47633a97-824a-4b93-b151-bad1f413a344}}. Galaxy Q has been recently classified as a group member
+{{cite:1268d8d7-3de8-4e67-9d08-a7fae4b458c5}}, but appears to be dominated by stellar
+light and is not particularly disturbed in these infrared images.
+
+HCG 42
+The spectral energy distributions for the galaxies in HCG 42 are shown
+in Figure REF . This group is classified as type III according
+to FORMULA , indicating that
+the group is relatively gas-poor. {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}} identify HCG 42
+as being part of a loose group. Galaxy A is also known as NGC 3091,
+and galaxy B is also known as NGC 3096. The galaxies in HCG 42 are
+all dominated by stellar light with little evidence for recent star
+formation activity. The lack of 24FORMULA m emission from any of the
+group members suggests little AGN activity as well. A number of
+luminous infrared sources are apparent in the background of this
+group.
+
+HCG 48
+The spectral energy distributions for the galaxies in HCG 48 are shown
+in Figure REF . This group is classified as type III according
+to FORMULA , indicating that
+the group is relatively gas-poor. HCG 48 is embedded in the larger
+galaxy group Abell 1060, and the kinematical analysis of
+{{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}} indicates that this group is divided into three sets
+of objects at slightly different velocities; galaxies A and D are
+associated, but galaxies B and C appear to be in different subgroups,
+in which case the reality of HCG 48 as a compact group is in
+question. We include these photometric measurements of galaxies A, B,
+C, and D in Table  for completeness, but exclude the data
+points from galaxies B and C in Figures REF -REF .
+Galaxies A, C, and D are dominated by stellar light with little sign
+of recent star formation or AGN activity. Galaxy B has infrared
+emission from throughout the galaxy and moderate 24FORMULA m emission
+associated with the nuclear region.
+
+HCG 59
+The spectral energy distributions for the galaxies in HCG 59 are shown
+in Figure REF . This group is classified as type II according
+to FORMULA , indicating a
+moderate amount of gas present in the group. Galaxy A (IC 737) is
+point-like and quite luminous in the thermal infrared.
+Galaxy B (IC 736) is dominated by stellar light. Galaxy C has
+moderate infrared emission and appears to be slightly disturbed.
+Galaxy D is diffuse and highly disturbed, with clumps of infrared
+emission on its southern and northern edges. Galaxy E is a background
+object.
+
+HCG 61
+The spectral energy distributions for the galaxies in HCG 61 are shown
+in Figure REF . This group is classified as type I according
+to FORMULA , indicating it
+is relatively gas-rich. Galaxies A (NGC 4169) and D (NGC 4174) are
+dominated by stellar light. Galaxy B (NGC 4173) is a foreground
+object. Galaxy C (NGC 4175) has a disturbed morphology near the
+nuclear region and has moderately strong nuclear 24FORMULA m emission.
+Galaxies A and C have been identified as active galaxies {{cite:a5fd5ff1-791d-4754-8cc3-b809cd02a727}}.
+
+HCG 62
+The spectral energy distributions for the galaxies in HCG 62 are shown
+in Figure REF . This group is classified as type III according
+to FORMULA , indicating that
+the group is relatively gas-poor. {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}} identify HCG 62
+as being part of a loose group. Galaxies A (NGC 4778) and B
+(NGC 4776) are strongly interacting, but are dominated by stellar
+light with little recent star formation activity, although galaxy B
+has a modest amount of 24FORMULA m emission associated with its nuclear
+region. The kinematical properties of galaxy A (NGC 4778), including
+nuclear counter-rotation suggest that it may have undergone a minor
+merger {{cite:6e7f82e9-45de-48c4-9cc6-b914f715544d}}, although based on the relative lack of
+infrared luminosity, these Spitzer observations imply any such
+merger had little effect on star formation, perhaps indicating that
+the gas in these galaxies was already depleted. Galaxies C (NGC 4761)
+and D (NGC 4764) are also dominated by stellar light, with little
+evidence for recent activity.
+
+HCG 90 
+The spectral energy distributions for the galaxies in HCG 90 are shown
+in Figure REF . This group is classified as type III according
+to FORMULA , indicating that
+the group is relatively gas-poor. {{cite:9c66ef1e-3a2c-46d9-aa31-84135d911659}} identify HCG 90
+as being part of a loose group. Due to the close interaction between
+galaxies B and D, they were not separable at low contour levels and
+their photometry was combined into a single data point. Galaxy D fell
+off the detector in the 24FORMULA m observations, and is therefore
+lacking this data point. Galaxy A (NGC 7172) is somewhat disturbed and
+has clumpy infrared emission throughout the galaxy. Galaxies B
+(NGC 7176) and C (NGC 7173) are dominated by stellar light, with
+little evidence for recent activity. Galaxy D (NGC 7174) is fairly
+disturbed, with a spur of infrared emission originating from its
+western edge. The nuclear region of galaxy D is also a luminous
+24FORMULA m source. These results are consistent with the kinematic
+HFORMULA  observations of {{cite:dd1ea647-feb6-4134-a3af-0027c6d6af0c}}, who conclude that galaxy D
+is a warm-gas reservoir in the group. Galaxies A and D have been
+identified as active galaxies by {{cite:49972503-6481-4263-a559-2b6d18e11f99}}, and these are the
+outlying type III galaxies in Figs. REF -REF .
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 

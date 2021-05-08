@@ -1,0 +1,747 @@
+
+
+Universal derived equivalences of posets
+Sefi Ladkani
+Universal derived equivalences of posets
+Sefi Ladkani
+Einstein Institute of Mathematics, The Hebrew University of Jerusalem, Jerusalem 91904, Israelsefil@math.huji.ac.il
+
+By using only combinatorial data on two posets FORMULA  and FORMULA , we
+construct a set of so-called formulas. A formula produces
+simultaneously, for any abelian category FORMULA , a functor between the
+categories of complexes of diagrams over FORMULA  and FORMULA  with values in
+FORMULA . This functor induces a triangulated functor between the
+corresponding derived categories.
+This allows us to prove, for pairs FORMULA  of posets sharing certain
+common underlying combinatorial structure, that for any abelian
+category FORMULA , regardless of its nature, the categories of diagrams
+over FORMULA  and FORMULA  with values in FORMULA  are derived equivalent.
+
+Introduction
+In previous work {{cite:b2c5a0b5-5875-43d5-9914-6c869d5e4d70}} we considered the question when the
+categories FORMULA  and FORMULA  of diagrams over finite posets FORMULA  and
+FORMULA  with values in the abelian category FORMULA  of finite dimensional
+vector spaces over a fixed field FORMULA , are derived equivalent.
+Since in that case the category of diagrams FORMULA  is equivalent to
+the category of finitely generated modules over the incidence algebra
+FORMULA , methods from the theory of derived equivalence of algebras, in
+particular tilting theory, could be
+used {{cite:fe895448-bd74-47f4-89b2-1d031cb10ff0}}, {{cite:14e08a0c-f82a-4e06-a362-50b67ac66ec6}}, {{cite:9219d436-0c39-4869-9ddd-6626254a5dfc}}.
+Interestingly, in all cases considered, the derived equivalence of two
+categories of diagrams does not depend on the field FORMULA . A natural
+question arises whether there is a general principle which explains
+this fact and extends to any arbitrary abelian category FORMULA .
+In this paper we provide a positive answer in the following sense; we
+exhibit several constructions of pairs of posets FORMULA  and FORMULA  such that
+the derived categories FORMULA  and FORMULA  are equivalent for any
+abelian category FORMULA , regardless of its nature. Such pairs of posets
+are called universally derived equivalent, since the derived
+equivalence is universal and originates from the combinatorial and
+topological properties of the posets, rather than the specific abelian
+categories involved.
+Our main tools are the so-called formulas. A formula consists of
+combinatorial data that produces simultaneously, for any abelian
+category FORMULA , a functor between the categories of complexes of
+diagrams over FORMULA  and FORMULA  with values in FORMULA , which induces a
+triangulated functor between the corresponding derived categories.
+The main construction
+Let FORMULA  and FORMULA  be two finite partially ordered sets (posets).
+For FORMULA , write FORMULA  and
+FORMULA . Let FORMULA 
+be a collection of subsets of FORMULA  indexed by the elements of FORMULA , such
+that
+FORMULA 
+for any FORMULA  and FORMULA  in FORMULA . Assume in addition that for
+any FORMULA , there exists an isomorphism FORMULA  such that
+FORMULA 
+
+By (REF ), it follows that
+FORMULA 
+Define two partial orders FORMULA  and FORMULA  on the disjoint
+union FORMULA  as follows. Inside FORMULA  and FORMULA , the orders
+FORMULA  and FORMULA  agree with the original ones, and for FORMULA  and FORMULA  we set
+FORMULA 
+
+with no other relations (note that the element FORMULA  is unique
+by (REF ), and that FORMULA , FORMULA  are partial
+orders by (REF )).
+Theorem 1.1 
+The two posets FORMULA  and FORMULA 
+are universally derived equivalent.
+
+The assumption (REF ) of the Theorem cannot be dropped,
+as demonstrated by the following example.
+Example 1.2 Consider the two posets whose Hasse diagrams are given by
+FORMULA 
+They can be represented as FORMULA  and FORMULA  where FORMULA , FORMULA  and FORMULA . The categories of diagrams over these two posets are in
+general not derived equivalent, even for diagrams of vector spaces.
+
+The construction of Theorem REF  has many interesting
+consequences, some of them related to ordinal sums and others to
+generalized BGP reflections {{cite:6a3c3d08-160a-4d04-9974-01a848fd852e}}. First, consider the case
+where all the subsets FORMULA  are single points, that is, there exists a
+function FORMULA  with FORMULA  for all FORMULA .
+Then (REF ) and (REF ) are automatically
+satisfied and the condition (REF ) is equivalent to FORMULA  being
+order preserving, i.e. FORMULA  for FORMULA . Let
+FORMULA  and FORMULA  denote the corresponding orders on FORMULA , and note that (REF ) takes the simplified form
+FORMULA 
+Corollary 1.3 
+Let FORMULA  be order preserving. Then the two posets FORMULA  and FORMULA  are universally derived
+equivalent.
+
+FIGURE 
+Example 1.4 Consider the four posets FORMULA , FORMULA , FORMULA , FORMULA  whose Hasse
+diagrams are drawn in Figure REF . For any of the pairs
+FORMULA  where FORMULA , FORMULA  or FORMULA  we find posets FORMULA 
+and FORMULA  and an order-preserving function FORMULA  such that
+FORMULA 
+
+hence FORMULA  and FORMULA  are universally derived equivalent. Indeed, let
+FORMULA 
+
+and define FORMULA , FORMULA 
+and FORMULA  by
+FORMULA 
+
+
+Applications to ordinal sums
+Recall that the ordinal sum of two posets FORMULA  and
+FORMULA , denoted FORMULA , is the poset FORMULA 
+where FORMULA  if FORMULA  and FORMULA  or FORMULA  and FORMULA  or FORMULA  and FORMULA . Similarly, the direct sum
+FORMULA  is the poset FORMULA  where FORMULA  if FORMULA  and FORMULA  or FORMULA  and FORMULA . Note that the
+direct sum is commutative (up to isomorphism) but the ordinal sum is
+not. Denote by FORMULA  the poset consisting of one element. Taking FORMULA  in Corollary REF , we get the following
+Corollary 1.5 For any poset FORMULA , the posets FORMULA  and FORMULA  are
+universally derived equivalent.
+
+Note that for arbitrary two posets FORMULA  and FORMULA , it is true that for any
+field FORMULA , the categories of diagrams of finite dimensional FORMULA -vector
+spaces over FORMULA  and FORMULA  are derived
+equivalent {{cite:b2c5a0b5-5875-43d5-9914-6c869d5e4d70}}. However the proof relies
+on the notion of tilting complexes and cannot be directly extended to
+arbitrary abelian categories.
+In Section REF  we prove the following additional consequence
+of Corollary REF  for ordinal and direct sums.
+Corollary 1.6 
+For any two posets FORMULA  and FORMULA , the posets FORMULA  and
+FORMULA  are universally derived equivalent. Hence the
+posets FORMULA  and FORMULA  are
+universally derived equivalent.
+
+The result of Corollary REF  is no longer true when FORMULA  is
+replaced by an arbitrary poset, even for diagrams of vector spaces,
+see {{cite:b2c5a0b5-5875-43d5-9914-6c869d5e4d70}}.
+
+Generalized BGP reflections
+More consequences of Theorem REF  are obtained by
+considering the case where FORMULA  is a single point, that is,
+there exists a subset FORMULA  such that (REF )
+holds for any FORMULA  in FORMULA . Observe that
+conditions (REF ) and (REF ) automatically hold in
+this case, and the two partial orders on FORMULA  corresponding
+to (REF ), denoted FORMULA  and FORMULA ,
+are obtained by extending the order on FORMULA  according to
+FORMULA 
+Corollary 1.7 
+Let FORMULA  be a subset satisfying (REF ). Then
+the posets FORMULA  and FORMULA  are universally derived equivalent.
+
+Note that in the Hasse diagram of FORMULA , the vertex FORMULA  is a
+source which is connected to the vertices of FORMULA , and the Hasse
+diagram of FORMULA  is obtained by reverting the orientations
+of the arrows from FORMULA , making it into a sink. Thus
+Corollary REF  can be considered as a generalized BGP reflection
+principle.
+Viewing orientations on (finite) trees as posets by setting FORMULA 
+for two vertices FORMULA  if there exists an oriented path from FORMULA  to
+FORMULA , and applying a standard combinatorial argument {{cite:6a3c3d08-160a-4d04-9974-01a848fd852e}}, we
+recover the following corollary, already known for categories of vector
+spaces over a field.
+Corollary 1.8 Any two orientations of a tree are universally derived equivalent.
+
+
+Formulas
+By using only combinatorial data on two posets FORMULA  and FORMULA , we
+construct a set of formulas FORMULA . A formula FORMULA  produces
+simultaneously, for any abelian category FORMULA , a functor
+FORMULA  between the categories FORMULA  and FORMULA  of
+complexes of diagrams over FORMULA  and FORMULA  with values in FORMULA . This
+functor induces a triangulated functor FORMULA 
+between the corresponding derived categories FORMULA  and FORMULA 
+such that the following diagram is commutative
+FORMULA 
+where the vertical arrows are the canonical localizations.
+We prove Theorem REF  by exhibiting a pair of formulas
+FORMULA , FORMULA  and showing that for any abelian category
+FORMULA , the compositions FORMULA  and
+FORMULA 
+of the corresponding triangulated functors on the derived categories
+are auto-equivalences, as they are isomorphic to the translations.
+Hence FORMULA  and FORMULA  are universally derived equivalent.
+
+Complexes of diagrams
+Diagrams and sheaves
+Let FORMULA  be a poset and let FORMULA  be a category.
+Definition 2.1 A diagram FORMULA  over FORMULA  with values in FORMULA  consists of the
+following data:
+
+For any FORMULA , an object FORMULA  of  FORMULA
+
+For any pair FORMULA , a morphism FORMULA 
+(restriction map)
+
+subject to the conditions FORMULA  and
+FORMULA  for all FORMULA  in FORMULA .
+A morphism FORMULA  of diagrams consists of
+morphisms FORMULA  for all FORMULA , such that for any FORMULA , the diagram
+FORMULA 
+commutes.
+
+Using these definitions, we can speak of the category of diagrams over
+FORMULA  with values in FORMULA , which will be denoted by FORMULA .
+We can view FORMULA  as a small category as follows. Its objects are the
+points FORMULA , while FORMULA  is a one-element set if FORMULA  and empty otherwise. Under this viewpoint, a diagram over FORMULA  with
+values in FORMULA  becomes a functor FORMULA  and a morphism of
+diagrams corresponds to a natural transformation, so that FORMULA  is
+naturally identified with the category of functors FORMULA . Observe
+that any functor FORMULA  induces a functor FORMULA  by the composition FORMULA . In terms of diagrams
+and morphisms, FORMULA  where FORMULA ,
+FORMULA  and FORMULA .
+If FORMULA  is additive, then FORMULA  is additive. Assume now that FORMULA 
+is abelian. In this case, FORMULA  is also abelian, and kernels, images,
+and quotients can be computed pointwise, that is, if FORMULA  is a morphism of diagrams then FORMULA , FORMULA , with the restriction maps induced from FORMULA , FORMULA . In
+particular, for any FORMULA  the evaluation functor FORMULA  taking a diagram FORMULA  to FORMULA  and a morphism FORMULA  to
+FORMULA , is exact.
+The poset FORMULA  admits a natural topology, whose open sets are the
+subsets FORMULA  with the property that if FORMULA  and FORMULA  then FORMULA . The category of diagrams over FORMULA  with values in
+FORMULA  can then be naturally identified with the category of sheaves
+over the topological space FORMULA  with values in FORMULA  {{cite:b2c5a0b5-5875-43d5-9914-6c869d5e4d70}}.
+
+Complexes and cones
+Let FORMULA  be an additive category. A complex FORMULA  over FORMULA  consists of objects FORMULA  for FORMULA 
+with morphisms FORMULA  such that FORMULA  for all FORMULA . If FORMULA , the shift of
+FORMULA  by FORMULA , denoted FORMULA , is the complex defined
+by FORMULA , FORMULA .
+Let FORMULA , FORMULA  be
+two complexes and FORMULA  a collection of morphisms FORMULA . If FORMULA , let FORMULA  with
+FORMULA . Using this notation, the condition that FORMULA  is a
+morphism of complexes is expressed as FORMULA .
+The FORMULA  of a morphism FORMULA ,
+denoted FORMULA , is the
+complex whose FORMULA -th entry equals FORMULA , with the
+differential
+FORMULA 
+In a more compact form, FORMULA  with the differential acting as
+the matrix
+FORMULA 
+by viewing the entries as column vectors.
+When FORMULA  is abelian, the FORMULA -th cohomology of FORMULA  is defined by FORMULA , and FORMULA  is acyclic if
+FORMULA  for all FORMULA . A morphism FORMULA  induces morphisms FORMULA . FORMULA  is called a quasi-isomorphism if
+FORMULA  are isomorphisms for all FORMULA .
+The following lemma is standard.
+Lemma 2.2 
+FORMULA  is a quasi-isomorphism if and only if
+the cone FORMULA  is acyclic.
+
+Let FORMULA  denote the category of complexes over FORMULA . Denote by
+FORMULA  the shift functor taking a complex
+FORMULA  to FORMULA  and a morphism FORMULA  to FORMULA . Any additive functor
+FORMULA  induces an additive functor FORMULA  by sending a complex FORMULA  to FORMULA  and a morphism FORMULA  to FORMULA .
+Lemma 2.3 
+For any additive category FORMULA  and a poset FORMULA , there exists an
+equivalence of categories FORMULA 
+such that for any additive category FORMULA  and an additive functor FORMULA , the diagram
+FORMULA 
+commutes. In other words, we can identify a complex of diagrams with a
+diagram of complexes.
+
+Let FORMULA  be additive and let FORMULA  be a complex
+in FORMULA . Denote by FORMULA  the morphisms in
+FORMULA  and by FORMULA  the morphisms on the
+stalks. Let FORMULA  denote the restriction maps in
+the diagram FORMULA .
+For a morphism FORMULA  in FORMULA , denote by FORMULA  the
+corresponding morphisms in FORMULA  and by FORMULA  the
+morphisms on stalks. Define a functor FORMULA  by
+FORMULA 
+
+where FORMULA  with differential FORMULA , FORMULA 
+are the restriction maps, and FORMULA .
+The commutativity of all squares in the diagram in Figure REF 
+implies that FORMULA  is well-defined, induces the required
+equivalence and that (REF ) commutes.
+FIGURE 
+In the sequel, FORMULA  is a poset, FORMULA  is an abelian category and all
+complexes are in FORMULA .
+Lemma 2.4 
+ FORMULA
+
+Kernels and images can be computed pointwise.
+Lemma 2.5 
+ FORMULA
+
+Corollary 2.6 
+Let FORMULA  be a morphism of complexes of
+diagrams. Then FORMULA  is a quasi-isomorphism if and only if for every FORMULA , FORMULA  is a quasi-isomorphism.
+
+Let FORMULA  and FORMULA . Then by Lemmas REF 
+and REF ,
+FORMULA 
+hence FORMULA  is acyclic if
+and only if FORMULA  are
+acyclic for every FORMULA . Using Lemma REF , we see that
+FORMULA  is a quasi-isomorphism if and only if all the FORMULA  are
+quasi-isomorphisms.
+
+Universal derived equivalence
+Recall that the derived category FORMULA  of an abelian category FORMULA 
+is obtained by formally inverting all the quasi-isomorphisms in
+FORMULA . It admits a structure of a triangulated category where the
+distinguished triangles in FORMULA  are those isomorphic to FORMULA  where FORMULA  is a short
+exact sequence in FORMULA .
+Definition 2.7 Two posets FORMULA  and FORMULA  are universally derived equivalent if for
+any abelian category FORMULA , the derived categories FORMULA  and
+FORMULA  are equivalent as triangulated categories.
+
+Lemma 2.8 Let FORMULA  and FORMULA  be universally derived equivalent. Then FORMULA  and
+FORMULA  are universally derived equivalent.
+
+Lemma 2.9 Let FORMULA , FORMULA  and FORMULA , FORMULA  be two pairs of universally derived
+equivalent posets. Then FORMULA  and FORMULA  are
+universally derived equivalent.
+
+
+Formulas
+Throughout this section, the poset FORMULA  is fixed.
+The category  FORMULA
+Viewing FORMULA  as a small category with a unique map FORMULA  if FORMULA  and FORMULA  and no maps otherwise, we can
+consider the additive category FORMULA  whose objects are
+finite sequences FORMULA  with morphisms
+FORMULA  specified by
+FORMULA  integer matrices FORMULA  satisfying FORMULA 
+unless FORMULA . That is, a morphism is a formal
+FORMULA -linear combination of arrows FORMULA .
+Addition and composition of morphisms correspond to the usual addition
+and multiplication of matrices.
+To encode the fact that squares of differentials are zero, we consider
+a certain quotient of FORMULA . Namely, let
+FORMULA  be the ideal in FORMULA  generated by
+all the morphisms FORMULA  for FORMULA  and
+let FORMULA  be the quotient.
+The objects of FORMULA  are still sequences FORMULA  and the
+morphisms can again be written as integer matrices, albeit not uniquely
+as we ignore the entries FORMULA  whenever FORMULA .
+Define a translation functor FORMULA  as follows. For an
+object FORMULA , let FORMULA . For a morphism FORMULA , let FORMULA  be the morphism
+FORMULA  specified by the same matrix
+FORMULA .
+Let FORMULA  be an abelian category. From now on we shall denote a complex
+in FORMULA  by FORMULA  instead of FORMULA , and use
+Lemma REF  to identify FORMULA  with FORMULA . Therefore we
+may think of FORMULA  as a diagram of complexes in FORMULA  and use the
+notations FORMULA , FORMULA , FORMULA  as in the proof of that lemma.
+For two additive categories FORMULA  and FORMULA , let FORMULA 
+denote the category of additive functors FORMULA , with natural
+transformations as morphisms.
+Proposition 3.1 
+There exists a functor FORMULA 
+commuting with the translations.
+
+An object FORMULA  defines an additive functor
+FORMULA  from FORMULA  to FORMULA  by sending FORMULA  and a
+morphism FORMULA  to
+FORMULA 
+
+where the right term is the FORMULA  diagonal matrix whose FORMULA 
+entry is FORMULA .
+To define FORMULA  on morphisms FORMULA , consider first the case
+that FORMULA  and FORMULA . A morphism FORMULA  in FORMULA  is specified by an integer FORMULA , with FORMULA 
+unless FORMULA . Given FORMULA , define a morphism
+FORMULA  by
+FORMULA 
+Then FORMULA  is a natural transformation since
+the diagrams
+FORMULA 
+
+commute.
+Let FORMULA  be another morphism in
+FORMULA . Then (REF ) and the three relations FORMULA , FORMULA  and FORMULA , imply that
+FORMULA 
+for every FORMULA .
+Now for a general morphism FORMULA , define morphisms FORMULA  by
+FORMULA 
+where FORMULA  is defined by (REF ) for FORMULA .
+It follows from (REF ) by linearity that for FORMULA ,
+FORMULA 
+so that FORMULA  is a natural
+transformation. Linearity also shows that (REF ) holds for
+general morphisms FORMULA , FORMULA .
+Finally, note that by (REF ) and (REF ),
+FORMULA 
+
+for any object FORMULA  and morphism FORMULA .
+
+Formula to a point
+So far the differentials on the complexes FORMULA  were just the
+direct sums FORMULA . For the applications,
+more general differentials are needed.
+Let FORMULA  be a morphism. Define
+FORMULA  by FORMULA 
+where FORMULA .
+Lemma 3.2 
+Let FORMULA  be a morphism and assume that FORMULA  in FORMULA . Then for any FORMULA , FORMULA  is
+a differential on FORMULA .
+
+Since FORMULA , the morphism FORMULA  induces a map
+FORMULA . Thinking of FORMULA  as
+a potential differential, observe that
+FORMULA 
+Indeed, each component FORMULA  of FORMULA  is
+obtained from FORMULA  by a change of sign. When FORMULA ,
+changing the sign of a map FORMULA  leads to the map
+FORMULA . When FORMULA , changing the sign of
+FORMULA  leads to FORMULA , as the sign
+change is already carried out in the shift of the differential
+FORMULA . Therefore in both cases a the coefficient FORMULA  of FORMULA  changes to FORMULA .
+Now the claim follows from
+FORMULA 
+Definition 3.3 A morphism FORMULA  is a differential
+if FORMULA , FORMULA  and FORMULA . FORMULA  is a restriction if
+FORMULA  and FORMULA .
+A morphism FORMULA  is a restriction if all its
+nonzero components are restrictions.
+
+Definition 3.4 A formula to a point is a pair FORMULA  where
+FORMULA  is an object of FORMULA  and FORMULA  is morphism satisfying:
+
+FORMULA .
+
+FORMULA  for all FORMULA .
+
+FORMULA  are differentials for all FORMULA .
+
+A morphism of formulas to a point FORMULA  is a morphism FORMULA  in FORMULA  which is a
+restriction and satisfies FORMULA .
+
+Denote by FORMULA  the category of formulas to a point and their
+morphisms. The translation FORMULA  of FORMULA  induces a translation FORMULA 
+on FORMULA  by FORMULA  with the same action on
+morphisms.
+Proposition 3.5 
+There exists a functor FORMULA .
+
+We actually show that the required functor is induced from the functor
+FORMULA  of Proposition REF .
+An object FORMULA  defines an additive functor FORMULA  by sending FORMULA  and FORMULA  to
+FORMULA 
+
+as in (REF ). By Lemma REF , FORMULA  is a
+differential on FORMULA .
+Now observe that FORMULA 
+since FORMULA  is a natural transformation.
+Therefore FORMULA  is a morphism of complexes and FORMULA  is a
+functor.
+Let FORMULA  be a morphism in FORMULA . Since
+FORMULA  in FORMULA , we have a natural transformation
+FORMULA . It remains to show that
+FORMULA  is a morphism of complexes. But the commutativity
+with the differentials FORMULA  and FORMULA  follows from
+FORMULA  and the functoriality of FORMULA .
+Example 3.6 (Zero dimensional chain)  
+Let FORMULA  and consider FORMULA  with FORMULA . The functor
+FORMULA  sends FORMULA  to the stalk FORMULA  and FORMULA  to
+FORMULA .
+
+Example 3.7 (One dimensional chain)  
+Let FORMULA  in FORMULA  and consider FORMULA  with the map FORMULA . Then for FORMULA 
+and FORMULA ,
+FORMULA 
+
+with the differential
+FORMULA 
+Since for any object FORMULA , FORMULA  as complexes, we see that for any FORMULA ,
+the cone FORMULA  defines a functor
+FORMULA .
+
+Lemma 3.8 
+There exists a natural isomorphism FORMULA .
+
+We first remark that for an object FORMULA , a morphism
+FORMULA  and FORMULA , FORMULA 
+and FORMULA  so that FORMULA  can be viewed as first applying the shift on FORMULA 
+and then applying FORMULA .
+We will construct natural isomorphisms of functors FORMULA  such that the
+diagrams
+FORMULA 
+commute for all FORMULA .
+By (REF ), FORMULA . Write FORMULA ,
+FORMULA , and let FORMULA  be the morphism
+defined by the diagonal matrix whose FORMULA  entry is FORMULA . By
+definition, FORMULA , or equivalently
+FORMULA  for all FORMULA , hence
+FORMULA . Therefore FORMULA  is an isomorphism in FORMULA , so we
+define FORMULA .
+For the commutativity of (REF ), first observe that FORMULA . Now use
+the fact that FORMULA  for any restriction
+FORMULA .
+In the next few lemmas, we fix a formula to a point FORMULA .
+Lemma 3.9 
+FORMULA  maps short exact sequences to short exact sequences.
+
+Write FORMULA  and let FORMULA  be a short exact sequence. Then FORMULA  is exact
+for any FORMULA , hence
+FORMULA 
+is exact.
+By composing with the equivalence FORMULA , we
+may view FORMULA  as a functor FORMULA  between two
+categories of complexes.
+Lemma 3.10 
+FORMULA  maps quasi-isomorphisms to quasi-isomorphisms.
+
+Write FORMULA . We prove the claim by induction on
+FORMULA . When FORMULA , we have FORMULA , FORMULA  and
+FORMULA , so that the claim follows from
+Corollary REF .
+Assume now that FORMULA , and let FORMULA  and
+FORMULA  be the corresponding restricted matrix. By
+the assumption that FORMULA  is lower triangular with ones on the
+main diagonal, we have that the canonical embedding FORMULA  and the projection
+FORMULA  commute with the differentials, hence there exists a
+functorial short exact sequence
+FORMULA 
+Let FORMULA  be a morphism. The functoriality of (REF )
+gives rise to the following diagram of long exact sequences in
+cohomology,
+FORMULA 
+Now assume that FORMULA  is a quasi-isomorphism. By the induction
+hypothesis, FORMULA  and
+FORMULA  are
+quasi-isomorphisms, hence by the Five Lemma, FORMULA  is also a
+quasi-isomorphism.
+Corollary 3.11 Let FORMULA  be a formula to a point. Then FORMULA  induces a
+triangulated functor FORMULA .
+
+
+General formulas
+Definition 3.12 Let FORMULA  be a poset. A formula from FORMULA  to  FORMULA is a diagram over
+FORMULA  with values in FORMULA .
+
+Proposition 3.13 There exists a functor FORMULA .
+
+Let FORMULA  be the functor of
+Proposition REF . Then
+FORMULA 
+is the required functor.
+Let FORMULA  be a formula.
+Lemma 3.14 FORMULA  maps short exact sequences to short exact sequences.
+
+It is enough to consider each component of FORMULA  separately.
+The claim now follows from Lemma REF .
+By composing from the left with the equivalence FORMULA  and from the right with FORMULA 
+we may view FORMULA  as a functor FORMULA 
+between two categories of complexes.
+Lemma 3.15 FORMULA  maps quasi-isomorphisms to quasi-isomorphisms.
+
+Let FORMULA  be a quasi-isomorphism. By Corollary REF , it
+is enough to show that each component of FORMULA  is a
+quasi-isomorphism in FORMULA . But this follows from
+Lemma REF .
+Corollary 3.16 Let FORMULA  be a formula. Then FORMULA  induces a
+triangulated functor FORMULA .
+
+
+Applications of formulas
+The chain with two elements
+As a first application we consider the case where the poset FORMULA  is a
+chain of two elements
+FORMULA 
+We focus on this simple case as the fundamental underlying principle of
+Theorem REF  can already be effectively demonstrated in that
+case.
+Let FORMULA , FORMULA  and FORMULA  be the
+following three formulas to a point in FORMULA .
+FORMULA 
+Let FORMULA  be an abelian category and FORMULA 
+be an object of FORMULA . In the more
+familiar notation,
+FORMULA 
+
+see Examples REF  and REF .
+The morphisms
+FORMULA 
+
+are restrictions that satisfy FORMULA  and
+FORMULA , hence
+FORMULA 
+
+are diagrams over FORMULA  with values in FORMULA , thus they
+define functors FORMULA 
+inducing triangulated functors FORMULA . Their values on objects FORMULA  are
+FORMULA 
+Proposition 4.1 
+There are natural transformations
+FORMULA 
+such that FORMULA , FORMULA  are quasi-isomorphisms for all
+FORMULA .
+
+The functors FORMULA  and FORMULA  correspond to
+the compositions FORMULA  and FORMULA , given by
+FORMULA 
+
+where
+FORMULA 
+
+and the translation FORMULA  corresponds to the diagram
+FORMULA 
+Let FORMULA  be the morphisms
+FORMULA 
+
+The following diagram in  FORMULA
+FORMULA 
+is commutative, hence the horizontal arrows induce morphisms of
+formulas FORMULA  and FORMULA , inducing natural transformations FORMULA  and FORMULA .
+We prove that FORMULA  and FORMULA  are quasi-isomorphisms
+for all FORMULA  by showing that each component is a quasi-isomorphism (see
+Corollary REF ). Indeed, let FORMULA  and FORMULA  be the maps
+FORMULA 
+Then
+FORMULA 
+
+where FORMULA  is the FORMULA  identity matrix, hence FORMULA  and FORMULA  induce the identities and FORMULA , FORMULA  induce morphisms FORMULA  and FORMULA  homotopic to the
+identities. Therefore FORMULA , FORMULA ,
+FORMULA  and FORMULA  are quasi-isomorphisms.
+Proposition 4.2 There are natural transformations
+FORMULA 
+
+such that FORMULA , FORMULA  are quasi-isomorphisms for all
+FORMULA .
+
+The functors FORMULA  and FORMULA  correspond to
+the compositions FORMULA  and FORMULA , given by
+FORMULA 
+
+where FORMULA  and FORMULA  are as
+in (REF ). The commutative diagrams
+FORMULA 
+
+where FORMULA  are as in (REF ), define
+morphisms of formulas FORMULA  and
+FORMULA , hence natural transformations
+FORMULA  and FORMULA . Using the homotopies (REF ), one proves that
+FORMULA  and FORMULA  are quasi-isomorphisms for all FORMULA  in
+the same way as before.
+Corollary 4.3 For any abelian category FORMULA , the functors FORMULA  and
+FORMULA  are auto-equivalences of FORMULA 
+satisfying
+FORMULA 
+
+hence FORMULA .
+
+
+Proof of Theorem  REF
+Let FORMULA  and FORMULA  be two posets satisfying the
+assumptions (REF ) and (REF ), and let
+FORMULA , FORMULA  be the partial orders on FORMULA  as defined
+by (REF ). We will prove the universal derived equivalence
+of FORMULA  and FORMULA  by defining two formulas FORMULA ,
+FORMULA  that will induce, for any abelian category FORMULA ,
+functors
+FORMULA 
+
+such that FORMULA  and
+FORMULA .
+Definition of the formulas to points
+For FORMULA  and FORMULA , let
+FORMULA 
+
+where FORMULA  is the identity matrix. We consider FORMULA , FORMULA  and
+FORMULA  as formulas either in FORMULA  or in
+FORMULA , as appropriate. If FORMULA , define
+FORMULA 
+
+as in Example REF . If FORMULA , let
+FORMULA 
+
+be formulas to FORMULA  and define
+FORMULA 
+
+as compositions with the formula FORMULA  defined in (REF ).
+In explicit terms, let FORMULA , FORMULA , and denote by FORMULA  the restriction maps in
+FORMULA  and by FORMULA  the restriction maps in FORMULA . For FORMULA  and
+FORMULA , let FORMULA 
+and FORMULA  be the canonical
+inclusions and projections. Then
+FORMULA 
+
+for FORMULA , FORMULA .
+
+Definition of the restriction maps
+We shall denote by FORMULA  the restriction maps between the formulas
+in FORMULA  and by FORMULA  the maps between those in FORMULA . We
+consider several cases, and use the explicit notation.
+For FORMULA , define
+FORMULA 
+For FORMULA , we use the isomorphism FORMULA 
+and the property that FORMULA  for all FORMULA  to
+define the diagonal maps
+FORMULA 
+If FORMULA , then by (REF ), FORMULA , FORMULA , and we define
+FORMULA 
+Finally, if FORMULA , by (REF ) there exists a
+unique FORMULA  such that FORMULA  and we set
+FORMULA .
+Similarly, if FORMULA , there exists a unique FORMULA  with
+FORMULA , and we set FORMULA .
+
+Verification of commutativity
+Again there are several cases to consider. First, when FORMULA , FORMULA  follows from
+the commutativity of the restrictions FORMULA ,
+and similarly for FORMULA .
+Let FORMULA . Since FORMULA  is an
+isomorphism and FORMULA , we can
+write
+FORMULA 
+
+Now FORMULA  follows from
+the commutativity of the restrictions FORMULA 
+and FORMULA . The proof for FORMULA  is similar.
+If FORMULA , let FORMULA  be the elements
+satisfying FORMULA , FORMULA . Then FORMULA  by
+uniqueness, since FORMULA . Hence
+FORMULA 
+The proof for FORMULA  in the case FORMULA  is similar.
+If FORMULA  where FORMULA , then FORMULA  is the unique element FORMULA  with FORMULA , and
+FORMULA 
+by the commutativity of the diagram
+FORMULA 
+Now if FORMULA , let FORMULA  be the element with FORMULA . Then FORMULA  and commutativity
+follows from the previous two cases:
+FORMULA 
+The proof for FORMULA  in the cases FORMULA  and FORMULA  is similar. Here we also use fact that FORMULA 
+is an isomorphism to pick FORMULA  as the
+unique element FORMULA  with FORMULA .
+
+Construction of the natural transformations
+ FORMULA
+Observe that
+FORMULA 
+
+where FORMULA  and FORMULA  are the formulas defined
+in (REF ).
+Let FORMULA  be the formula inducing the translation and define
+FORMULA , FORMULA  by
+FORMULA 
+
+where FORMULA  and FORMULA  are as in (REF ) and FORMULA  and
+FORMULA  are as in Proposition REF . The proof of that
+proposition also shows that FORMULA  and FORMULA  are morphisms
+of formulas and induce natural transformations between functors, which
+are quasi-isomorphisms.
+
+Proof of Corollary  REF
+Let FORMULA  and FORMULA  be posets, and let FORMULA . Denote by FORMULA  the unique minimal element and consider the map FORMULA 
+defined by FORMULA  for all FORMULA . Then
+FORMULA 
+
+hence by Corollary REF , FORMULA  and FORMULA  are universally derived equivalent.

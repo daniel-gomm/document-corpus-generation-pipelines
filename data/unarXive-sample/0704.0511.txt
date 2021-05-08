@@ -1,0 +1,359 @@
+
+A UNIFIED APPROACH TO SIC-POVMs AND MUBs
+Olivier Albouy and Maurice R. Kibler
+Université de Lyon, Institut de Physique Nucléaire,
+Université Lyon 1 and CNRS/IN2P3, 43 bd du 11 novembre 1918,
+F–69622 Villeurbanne, France
+Electronic mail: o.albouy@ipnl.in2p3.fr, m.kibler@ipnl.in2p3.fr
+Abstract
+A unified approach to (symmetric informationally complete) positive operator
+valued measures and mutually unbiased bases is developed in this article.
+The approach is based on the use of Racah unit tensors for the Wigner-Racah
+algebra of FORMULA . Emphasis is put on
+similarities and differences between SIC-POVMs and MUBs.
+Keywords: finite–dimensional Hilbert spaces; mutually unbiased bases;
+positive operator valued measures;
+FORMULA  Wigner–Racah algebra
+INTRODUCTION
+The importance of finite–dimensional spaces for quantum mechanics is well
+recognized (see for instance {{cite:537c0b18-5e78-4070-ac58-5608ee44c688}}-{{cite:db880d2d-3e74-49df-b80e-b910467e4595}}). In
+particular, such spaces play a major role in quantum information theory,
+especially for quantum cryptography and quantum state tomography
+{{cite:c321c600-138f-4ce3-bbb0-1fdbeb8ece8f}}-{{cite:ca3ef2ae-f843-40ed-9069-b35301172b2b}}. Along this vein,
+a symmetric informationally complete (SIC)
+positive operator valued measure (POVM) is a set of operators acting on a
+finite Hilbert space {{cite:c321c600-138f-4ce3-bbb0-1fdbeb8ece8f}}-{{cite:253f9a32-cc60-45b9-a514-e638fb1e11a2}} (see also
+{{cite:db880d2d-3e74-49df-b80e-b910467e4595}} for an infinite Hilbert space) and mutually
+unbiased bases (MUBs) are specific bases for such a space
+{{cite:a4010bc0-210b-4f44-879d-c50ae2b0568c}}-{{cite:ca3ef2ae-f843-40ed-9069-b35301172b2b}}.
+The introduction of POVMs goes back to the seventies
+{{cite:c321c600-138f-4ce3-bbb0-1fdbeb8ece8f}}-{{cite:29cf5fa1-a115-4fa9-b345-b525da0c8a7e}}. The most general
+quantum measurement is represented by a POVM.
+In the present work, we will be interested in SIC-POVMs, for which the
+statistics of the measurement allows the reconstruction of the quantum
+state. Moreover, those POVMs are endowed with an extra symmetry condition
+(see definition in Sec. 2). The notion of MUBs (see definition in Sec. 3),
+implicit or explicit in the seminal
+works of {{cite:a4010bc0-210b-4f44-879d-c50ae2b0568c}}-{{cite:6cf8ef7a-3d94-46dd-ab10-42b6146a49f6}}, has been the object of
+numerous mathematical and physical
+investigations during the last two decades in connection with the so-called
+complementary observables. Unfortunately, the question to know, for a given
+Hilbert space of finite dimension FORMULA , whether there exist SIC-POVMs and how
+many MUBs there exist has remained an open one.
+The aim of this note is to develop a unified approach to SIC-POVMs and MUBs
+based on a complex vector space of higher dimension, viz. FORMULA  instead
+of FORMULA . We then give a specific example of this approach grounded on the
+Wigner-Racah algebra of the chain FORMULA 
+recently used for a study of entanglement of rotationally invariant spin
+systems {{cite:b2e5d5b3-5542-4f3b-a98a-1d06dd173dfe}} and for an angular momentum study of MUBs
+{{cite:e8f13e2e-459c-4055-a422-62ec28ae719d}}, {{cite:ca3ef2ae-f843-40ed-9069-b35301172b2b}}.
+Most of the notations in this work are standard. Let us simply mention that
+FORMULA  is the identity operator, the bar indicates complex
+conjugation, FORMULA  denotes the adjoint of the operator FORMULA ,
+FORMULA  stands for the Kronecker symbol for FORMULA  and
+FORMULA , and FORMULA  is 1 or 0 according as FORMULA , FORMULA  and FORMULA  satisfy
+or not the triangular inequality.
+
+SIC-POVMs
+Let FORMULA  be the standard Hilbert space of dimension FORMULA  endowed with its usual inner product denoted by FORMULA . As
+is usual, we will identify a POVM with a nonorthogonal decomposition of the
+identity. Thus, a discrete SIC-POVM is a set
+FORMULA  of FORMULA  nonnegative operators FORMULA 
+acting on FORMULA , such that:
+
+they satisfy the trace or symmetry condition
+FORMULA 
+moreover, we will assume the operators FORMULA  are
+normalized, thus completing this condition with
+FORMULA 
+
+they form a decomposition of the identity
+FORMULA 
+
+they satisfy a completeness condition: the knowledge of the
+probabilities
+FORMULA  defined by FORMULA  is sufficient to
+reconstruct the density matrix FORMULA .
+
+Now, let us develop each of the operators FORMULA  on an orthonormal
+(with respect to the Hilbert–Schmidt product) basis
+FORMULA  of the space of linear operators on
+ FORMULA
+FORMULA 
+where the operators FORMULA  satisfy
+FORMULA . The
+operators FORMULA  are thus considered as vectors
+FORMULA 
+in the Hilbert space FORMULA  of dimension FORMULA  and the
+determination of the operators FORMULA  is equivalent to the determination of
+the components FORMULA  of FORMULA . In this language, the trace property
+(REF ) together with the normalization condition
+(REF ) give
+FORMULA 
+where FORMULA  is the usual Hermitian product in FORMULA .
+In order to compare Eq. (REF ) with what usually happens in the
+search for SIC-POVMs, we suppose from now on that the operators FORMULA  are
+rank-one operators. Therefore, by putting
+FORMULA 
+with FORMULA , the trace property
+(REF , REF )
+reads
+FORMULA 
+From this point of view, to find FORMULA  operators FORMULA  is equivalent to
+finding FORMULA  vectors FORMULA  in FORMULA  satisfying
+Eq. (REF ). At the price of an increase in the number
+of components from FORMULA  (for FORMULA  vectors in FORMULA )
+to FORMULA  (for FORMULA  vectors in FORMULA ), we
+have got rid of the square
+modulus to result in a single scalar product (compare Eqs. (REF )
+and (REF )), what may prove to be suitable for
+another way to search for SIC-POVMs. Moreover, our relation (REF )
+is independent of any hypothesis on the rank of the operators FORMULA . In
+fact, there exists a lot of relations among these FORMULA  coefficients that
+decrease the effective number of coefficients to be found and give structural
+constraints on them. Those relations are highly sensitive to the choice of
+the basis FORMULA  and we are going to exhibit an
+example of such a set of relations by choosing the basis to consist of Racah
+unit tensors.
+The cornerstone of this approach is to identify FORMULA  with a
+subspace FORMULA  of constant angular momentum FORMULA . Such a
+subspace is spanned by the set FORMULA , where
+FORMULA  is an eigenvector of the square and the FORMULA -component of a
+generalized angular momentum operator. Let FORMULA  be the Racah
+unit tensor {{cite:5e688525-d607-47e7-aa85-ada8c933898a}} of order FORMULA  (with FORMULA ) defined by
+its FORMULA  components FORMULA  (where FORMULA ) through
+FORMULA 
+where FORMULA  denotes a 3–FORMULA  Wigner symbol. For fixed FORMULA , the FORMULA  operators FORMULA  (with FORMULA  and
+FORMULA ) act on FORMULA  and form
+a basis of the Hilbert space FORMULA  of dimension FORMULA , the
+inner product in FORMULA  being the Hilbert–Schmidt product. The
+formulas (involving unit tensors, 3–FORMULA  and 6–FORMULA  symbols) relevant for
+this work are given in Appendix (see also {{cite:5e688525-d607-47e7-aa85-ada8c933898a}} to
+{{cite:c6f0eb04-355c-4ed9-9fb8-18288ecb7032}}). We must remember that those Racah operators are not
+normalized to unity (see relation (REF )). So this will generate
+an extra factor when defining FORMULA .
+Each operator FORMULA  can be developed as a linear combination of the
+operators FORMULA . Hence, we have
+FORMULA 
+where the unknown expansion coefficients FORMULA  are a priori
+complex numbers. The determination of the operators FORMULA  is thus
+equivalent to the determination of the coefficients FORMULA , which are
+formally given by
+FORMULA 
+as can be seen by multiplying each member of Eq. (REF ) by the
+adjoint of FORMULA  and then using Eq. (REF ) of Appendix.
+By defining the vector
+FORMULA 
+via
+FORMULA 
+the following properties and relations are obtained.
+
+The first component  FORMULA of  FORMULA does not depend on FORMULA  since
+FORMULA 
+for all FORMULA .
+Proof: Take the trace of Eq. (REF ) and use Eq. (REF ) of
+Appendix.
+
+The components FORMULA  of FORMULA  satisfy the complex
+conjugation property described by
+FORMULA 
+for all FORMULA , FORMULA  and FORMULA .
+Proof: Use the Hermitian property of FORMULA  and Eq. (REF ) of
+Appendix.
+
+In terms of FORMULA , Eq. (REF ) reads
+FORMULA 
+for all FORMULA ,
+where the sum over FORMULA  is FORMULA  rotationally invariant.
+Proof: The proof is trivial.
+
+The coefficients FORMULA  are solutions of the
+nonlinear system given by
+FORMULA 
+for all FORMULA  FORMULA  FORMULA ,
+FORMULA  FORMULA  FORMULA  and
+FORMULA  FORMULA  FORMULA .
+Proof: Consider FORMULA  and use the coupling relation (REF )
+of Appendix involving a 3–FORMULA  and a 6–FORMULA  Wigner symbols.
+As a corollary of the latter property, by taking FORMULA  and using Eqs. (REF )
+and (REF ) of Appendix, we get again the normalization relation
+FORMULA .
+
+All coefficients FORMULA  are connected through the sum rule
+FORMULA 
+which turns out to be useful for global checking purposes.
+Proof: Take the FORMULA –FORMULA  matrix element of the resolution of the
+identity in terms of the operators FORMULA .
+
+
+MUBs
+A complete set of MUBs in the Hilbert space FORMULA  is a set of
+FORMULA  vectors FORMULA  such that
+FORMULA 
+where FORMULA  and FORMULA . The indices of type
+FORMULA  refer to the bases and, for fixed FORMULA , the index FORMULA  refers to one
+of the FORMULA  vectors of the basis corresponding to FORMULA . We know that such a
+complete set exists if FORMULA  is a prime or the power of a prime (e.g.,
+see {{cite:06a4c119-e99f-4200-be86-fe28bffb7e60}}-{{cite:feab4135-018f-46bb-9b1a-69e1252514e0}}).
+The approach developed in Sec. 2 for SIC-POVMs can be applied to MUBs too.
+Let us suppose that it is possible to find FORMULA  sets FORMULA  (with
+FORMULA ) of vectors in FORMULA , each set FORMULA  containing FORMULA  vectors FORMULA  such that Eq. (REF ) be satisfied. This amounts to finding
+FORMULA  projection operators
+FORMULA 
+satisfying the trace condition
+FORMULA 
+where the trace is taken on FORMULA . Therefore, they also form a
+nonorthogonal decomposition of the identity
+FORMULA 
+As in Sec. 2, we develop each operator FORMULA  on an orthonormal
+basis with expansion coefficients FORMULA . Thus we get vectors FORMULA  in  FORMULA
+FORMULA 
+such that
+FORMULA 
+for all FORMULA  and FORMULA .
+Now we draw the same relations as for POVMs by choosing the Racah operators
+to be our basis in FORMULA . We assume once again that the
+Hilbert space FORMULA  is realized by FORMULA  with FORMULA . Then, each operator FORMULA  can be developed on the
+basis of the FORMULA  operators FORMULA  as
+FORMULA 
+to be compared with Eq. (REF ). The expansion coefficients are
+FORMULA 
+for all
+FORMULA  FORMULA  FORMULA ,
+FORMULA  FORMULA  FORMULA ,
+FORMULA  FORMULA  FORMULA  and
+FORMULA  FORMULA  FORMULA . For FORMULA  and FORMULA  fixed, the
+complex coefficients FORMULA  define a vector
+FORMULA 
+in the Hilbert space FORMULA , the components of which are given by
+FORMULA 
+We are thus led to the following properties and relations. The proofs are
+similar to those in Sec. 2.
+
+First component  FORMULA of FORMULA :
+FORMULA 
+for all FORMULA  and FORMULA .
+
+Complex conjugation property:
+FORMULA 
+for all FORMULA , FORMULA , FORMULA  and FORMULA .
+
+Rotational invariance:
+FORMULA 
+for all FORMULA  and
+FORMULA .
+
+Tensor product formula:
+FORMULA 
+for all FORMULA , FORMULA , FORMULA  and FORMULA .
+
+Sum rule:
+FORMULA 
+which involves all coefficients FORMULA .
+
+
+CONCLUSIONS
+Although the structure of the relations in Sec. 1 on the one hand and Sec. 2
+on the other hand is very similar, there are deep differences between the
+two sets of results. The similarities are reminiscent of the fact that both
+MUBs and SIC-POVMs can be linked to finite affine planes
+{{cite:22004b52-7e5a-46b3-9b36-9bf37cb517ee}}, {{cite:de139c52-e98d-41e8-b235-4044b4be2072}}, {{cite:9b18fb5d-7107-4421-bddb-98aa4e828a17}}, {{cite:5a5dc77e-b0c9-4e2c-bde8-d1f177c796d2}}, {{cite:dfc87244-4786-4893-b7e8-f742bcd4a780}}
+and to complex projective 2–designs
+{{cite:eda59f6b-182b-4f3f-aea3-b178f9c20f58}}, {{cite:9018efa7-3fd8-4cc8-b99d-9519b0ae2b4b}}, {{cite:63e07ac9-f0ab-4633-b07a-c4f00f16daa0}}, {{cite:feab4135-018f-46bb-9b1a-69e1252514e0}}. On the other side, there are two
+arguments in favor of the differences between relations (REF ) and
+(REF ). First, the problem of constructing SIC-POVMs in dimension
+FORMULA  is not equivalent to the existence of an affine plane of order FORMULA 
+{{cite:22004b52-7e5a-46b3-9b36-9bf37cb517ee}}, {{cite:de139c52-e98d-41e8-b235-4044b4be2072}}. Second, there is a consensus around the conjecture
+according to which there exists a complete set of MUBs in dimension FORMULA  if
+and only if there exists an affine plane of order FORMULA  {{cite:9b18fb5d-7107-4421-bddb-98aa4e828a17}}.
+In dimension FORMULA , to find FORMULA  operators FORMULA  of a SIC-POVM acting on
+the Hilbert space FORMULA  amounts to find FORMULA  vectors FORMULA  in
+the Hilbert space FORMULA  with FORMULA  satisfying
+FORMULA 
+(the norm FORMULA  of each vector FORMULA  is 1 and the
+angle FORMULA  of any pair of vectors FORMULA  and FORMULA  is
+FORMULA  for FORMULA ).
+In a similar way, to find FORMULA  MUBs of FORMULA  is equivalent to
+find FORMULA  sets FORMULA  (with FORMULA ) of FORMULA  vectors,
+i.e., FORMULA  vectors in all, FORMULA  in
+FORMULA  with FORMULA  satisfying
+FORMULA 
+(each set FORMULA  consists of FORMULA  orthonormalized vectors and the angle
+FORMULA  of any vector FORMULA  of a set FORMULA  with
+any vector FORMULA  of a set FORMULA  is FORMULA  for FORMULA ).
+According to a well accepted conjecture {{cite:eda59f6b-182b-4f3f-aea3-b178f9c20f58}}, {{cite:9018efa7-3fd8-4cc8-b99d-9519b0ae2b4b}}, SIC-POVMs
+should exist in any dimension. The present study shows that in order to
+prove this conjecture it is sufficient to prove that Eq. (REF )
+admits solutions for any value of FORMULA .
+The situation is different for MUBs. In dimension FORMULA , it is known that
+there exist FORMULA  sets of FORMULA  vectors of type FORMULA  in FORMULA  satisfying Eq. (REF ) when FORMULA  is a prime or the
+power of a prime. This shows that Eq. (REF ) can be solved
+for FORMULA  prime or power of a prime. For FORMULA  prime, it is possible to find an
+explicit solution of Eq. (REF ). In fact, we have
+{{cite:e8f13e2e-459c-4055-a422-62ec28ae719d}}, {{cite:ca3ef2ae-f843-40ed-9069-b35301172b2b}}
+FORMULA 
+for FORMULA  while
+FORMULA 
+for FORMULA  and FORMULA . Then, Eq. (REF ) yields
+FORMULA 
+for FORMULA  while
+FORMULA 
+for FORMULA  and FORMULA . It can be shown that
+Eqs. (REF ) and (REF ) are in agreement with the results
+of Sec. 3. We thus have a solution of the equations for the results of
+Sec. 3 when FORMULA  is prime. As an open problem, it would be worthwhile to find
+an explicit solution for the coefficients FORMULA  when FORMULA 
+is any positive power of a prime. Finally, note that to prove (or disprove)
+the conjecture according to which a complete set of MUBs in dimension FORMULA 
+exists only if FORMULA  is a prime or the power of a prime is equivalent to prove
+(or disprove) that Eq. (REF ) has a solution only if FORMULA  is a
+prime or the power of a prime.
+
+APPENDIX: WIGNER-RACAH ALGEBRA OF  FORMULA
+We limit ourselves to those basic formulas for the Wigner-Racah algebra of
+the chain FORMULA  which are necessary to
+derive the results of this paper. The summations in this appendix have to be
+extended to the allowed values for the involved magnetic and angular
+momentum quantum numbers.
+The definition (REF ) of the components FORMULA  of the
+Racah unit tensor FORMULA  yields
+FORMULA 
+from which we easily obtain the Hermitian conjugation property
+FORMULA 
+The 3–FORMULA  Wigner symbol in Eq. (REF ) satisfies the
+orthogonality relations
+FORMULA 
+and
+FORMULA 
+The trace relation on the space  FORMULA
+FORMULA 
+easily follows by combining Eqs. (REF ) and (REF ). Furthermore, by introducing
+FORMULA 
+in Eq. (REF ), we obtain the sum rule
+FORMULA 
+known in spectroscopy as the barycenter theorem.
+There are several relations involving 3–FORMULA  and 6–FORMULA  symbols.
+In particular, we have
+FORMULA 
+where FORMULA  denotes a 6–FORMULA  Wigner symbol (or FORMULA  Racah coefficient). Note that the introduction of
+FORMULA 
+in Eq. (REF ) gives back Eq. (REF ). Equation (REF ) is central in the derivation of the coupling relation
+FORMULA 
+Equation (REF ) makes it possible to calculate the commutator FORMULA  which shows that the set
+FORMULA 
+can be used to
+span the Lie algebra of the unitary group U(FORMULA ). The latter result is at
+the root of the expansions (REF ) and (REF ).
+Note added in version 3
+After the submission of the present paper for publication in
+Journal of Russian Laser Research,
+a pre-print dealing with the existence of SIC-POVMs was posted
+on arXiv {{cite:355721bf-990f-47b2-a5d3-1cc7b4862bff}}. The main result in {{cite:355721bf-990f-47b2-a5d3-1cc7b4862bff}} is that
+SIC-POVMs exist in all dimensions. As a corollary of this
+result, Eq. (34) admits solutions in any dimension.
+Acknowledgements
+This work was presented at the International Conference on
+Squeezed States and Uncertainty Relations, University of Bradford, England
+(ICSSUR'07). The authors wish to thank the organizer A. Vourdas
+and are grateful to D. M. Appleby, V. I. Man'ko and M. Planat for interesting
+comments.

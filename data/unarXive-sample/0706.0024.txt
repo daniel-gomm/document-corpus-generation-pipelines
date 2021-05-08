@@ -1,0 +1,449 @@
+
+Socioeconomic Networks with Long-Range Interactions
+Rui Carvalho
+rui.carvalho@ucl.ac.uk
+Centre for Advanced Spatial Analysis, 1-19 Torrington Place, University
+College London, WC1E 6BT United Kingdom
+Giulia Iori
+g.iori@city.ac.uk
+Department of Economics, School of Social Science City University, Northampton
+Square, London EC1V 0HB United Kingdom
+We study a modified version of a model previously proposed by Jackson and
+Wolinsky to account for communicating information and allocating goods in
+socioeconomic networks. In the model, the utility function of each node is
+given by a weighted sum of contributions from all accessible nodes. The
+weights, parametrized by the variable FORMULA , decrease with distance. We
+introduce a growth mechanism where new nodes attach to the existing network
+preferentially by utility. By increasing FORMULA , the network structure
+evolves from a power-law to an exponential degree distribution,
+passing through a regime characterised by shorter average path length, lower
+degree assortativity and higher central point dominance. In the second part of
+the paper we compare different network structures in terms of the average
+utility received by each node. We show that power-law networks provide higher
+average utility than Poisson random networks. This provides a possible
+justification for the ubiquitousness of scale-free networks in the real world.
+89.65.Gh, 89.65.-s, 89.75.-k, 87.23.Ge
+Introduction
+The study of socioeconomic networks is a burgeoning field in the physics and
+economics literature, with major progress having been attained over the last
+decade {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}, {{cite:5ab5f97a-9829-48be-bcdc-13e283e10132}}, {{cite:68a8731e-092a-4980-99b1-1449ca263b1b}}, {{cite:38004582-34ca-4b16-8375-15459761458b}}, {{cite:9a1f159e-62b1-4926-b753-2d79876906f9}}, {{cite:257e8b23-27dd-40e4-8ba5-f6e0945e6ae6}}. Individuals and firms interact through networks to share
+information and resources, exchange goods and credit, make new friendships or
+partnerships etc. The structure of the network through which interactions take
+place may thus have an important effect on the success of the individual or
+the productivity of the firm {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}. Furthermore, the network of
+interactions among socioeconomic agents plays an important role for the
+stability and efficiency of socioeconomic systems {{cite:45beb2a4-824b-4a2e-bc8f-061099e696ae}}. Theories
+about how interaction networks form are thus essential for a deeper
+understanding of the development and organization of society as a whole.
+The economics literature focuses mainly on equilibrium networks and the
+network formation mechanisms are based on utility maximization and costs
+minimization. The aim of most economic papers is to identify, among the set of
+equilibrium networks, the geometry that optimizes efficiency A
+network FORMULA  is efficient with respect to an aggregate utility measure FORMULA  if
+FORMULA  FORMULA  {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}. in the sense of social
+benefit. Likewise, economists are interested in the stability A
+network is pairwise stable when no node would benefit from severing an
+existing link, and no two nodes would benefit from forming a new link
+{{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}. Pairwise stability is stronger than Nash equilibrium and is
+aimed at sequential updating. of equilibrium networks under link deletion,
+addition or rewiring {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}, {{cite:5ab5f97a-9829-48be-bcdc-13e283e10132}}. A shortcoming of these models
+is that the equilibrium networks are often too simple in their geometry
+(stars, complete networks, interlinked stars, etc.), typically as a
+consequence of the symmetries that need to be assumed in the payoff functions
+in order to make the models analytically tractable {{cite:6299e22c-66f8-4bc3-8699-af3d6e0b3b4e}}.
+The physics literature, instead, has mainly focused on the characterization of
+the structure of real networks and proposed dynamic models, mostly based on
+probabilistic rules, capable of reproducing the observed geometrical
+structures (Poisson, stretched exponential and scale-free networks)
+{{cite:88caf555-68f3-4b19-a14e-bad1031cf87c}}, {{cite:0aa377ce-ebed-4276-92b2-4877af268062}}, {{cite:1408ba62-5822-4339-b3d4-59bd118ad9f4}}.
+In this paper we try to combine the physics and economic approaches, by
+introducing a stochastic network formation mechanism inspired by economists'
+utility maximization models, which naturally extends the well known
+physicists' preferential attachment rule {{cite:3f6a8df1-22ee-4b65-9641-02d47e44a55d}}.
+One of the most interesting models of socioeconomic network formation was
+introduced by Jackson and Wolinsky in 1996 {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}. In their
+model, the formation and evolution of links is driven by a utility
+maximization mechanism. The model is based on the assumption that agents may
+derive benefit not only from the nodes to which they are directly connected
+(their nearest neighbours), but also from the ones they are connected to
+indirectly (possibly via long paths). Less distant connections are more
+valuable than more distant ones, but connections to the nearest neighbours are
+costly. The utility of node FORMULA  is defined as:
+FORMULA 
+where the contribution to the utility of FORMULA  from FORMULA  may depend on the weight
+FORMULA  of the edge between FORMULA  and FORMULA  (or, alternatively, on the fitness of
+node FORMULA ); FORMULA  captures the idea that the utility gain from
+indirect connections decreases with distance; FORMULA  is the number of links
+in the shortest path between FORMULA  and FORMULA  (FORMULA  if there is no path
+between FORMULA  and FORMULA ); FORMULA  is the set of nearest neighbours of
+FORMULA ; and FORMULA  are the (node specific) costs to establish a directed
+connection between FORMULA  and FORMULA  In {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}} costs are assumed
+to be equally, or cooperatively, shared by FORMULA  and FORMULA , but extensions to the
+non cooperative case have also been explored.. Costs can also be
+differentiated in costs of initially creating or maintaining an edge
+{{cite:5ab5f97a-9829-48be-bcdc-13e283e10132}}.
+The papers by Jackson and Wolinsky {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}, as well as the one by
+Bala and Goyal {{cite:5ab5f97a-9829-48be-bcdc-13e283e10132}}, are mainly concerned with stability and
+efficiency of the network resulting from different dynamic updating rules. In
+particular, Jackson and Wolinsky study pairwise stability when agents can only
+update a link at a time (either delete it or create it), while Bala and Goyal
+allow agents to rearrange all their connections at once. The updating is
+deterministic in both models, and a new configuration is accepted only if it
+increases the utility of the agent. These two papers show that the star
+network is both efficient and stable for a wide range of the parameters when
+FORMULA . Nonetheless, a multiplicity of network architectures exist in
+{{cite:5ab5f97a-9829-48be-bcdc-13e283e10132}} for FORMULA  which could be a strict Nash equilibria, and to
+which the system may converge depending of the initial conditions. Feri
+{{cite:68370243-6856-4c74-93af-cf90246dd38c}} has shown that for sufficiently large networks the star network
+is stochastically stable for almost all the range of parameters, even for
+FORMULA .
+Here we focus on the connections model of Jackson and Wolinsky, i.e. the case
+FORMULA , FORMULA  and FORMULA . In this case, the utility can be
+written as
+FORMULA 
+where the sum in FORMULA  is over all shortest paths of length FORMULA  from node FORMULA ,
+the sum in FORMULA  is over all nodes whose shortest path from FORMULA  is FORMULA ,
+FORMULA  is the path length of the node the furthest away from node
+FORMULA , and FORMULA  is the number of FORMULA th-nearest neighbours of node FORMULA .
+The utility of a node is expressed in (REF ) as a weighted sum of
+the number of nodes accessible from FORMULA  on outward "layers" of increasing
+distance from FORMULA . Thus, we start at node FORMULA  and multiply FORMULA  by the
+number of nodes that are joined by an edge to FORMULA –this being the first layer.
+We then add FORMULA  times the number of nodes that are joined by an edge
+to a node in the first layer–this is the second layer. We continue in this
+way until no new nodes are found. Hence, expression (REF )
+incorporates implicitly the well known breath-first search algorithm
+{{cite:bf265a1c-7e64-4e72-bb85-70fe1c4668b6}}. In this paper, we will consider only networks
+with zero costs. Therefore, equation (REF ) becomes:
+FORMULA 
+In the first part of the paper we focus on a specific network growth mechanism
+and examine the resulting network topology. If each new node attached
+deterministically to the existing node with maximal utility, the resulting
+network would be a star. The randomness generated by a probabilistic attaching
+rule can be interpreted as costs and barriers to gather information, or
+bounded rationality, all of which limit the ability to establish links in an
+optimal way, thus possibly generating more realistic geometries than the star
+network. It is thus, worthwhile to ask which network topologies are to be
+found when new nodes arrive steadily and create links with existing nodes in a
+probabilistic way, proportionally to the utility of existing nodes. In this
+way, we build on the preferential attachment growth rule of Barabási and
+Albert {{cite:3f6a8df1-22ee-4b65-9641-02d47e44a55d}}, {{cite:88caf555-68f3-4b19-a14e-bad1031cf87c}} which can be recovered from equation
+(REF ) when FORMULA . Furthermore, preferential attachment
+is, arguably, the most extensively studied mechanism of network formation and
+one that has revealed insights into properties observed in real networks.
+Therefore, it is important to understand the robustness of the specific rule
+of linear preferential attachment by node degree, which is one of the aims of
+this paper.
+Often, the specific network growth mechanisms are unknown
+and only the topology of the equilibrium network can be extracted from data.
+One obvious question is then how the observed equilibrium networks rank in
+terms of their efficiency, e.g. Erdős–Rényi versus scale–free
+networks. We address this question in the second part of the paper and derive analytical results by using the generating
+function approach {{cite:bf5fa9a0-2375-400e-9a1f-f0c26fc98308}}. We show that power-law networks are more
+efficient than Poisson random network when individual utility is defined by
+(REF ) thus providing a possible explanation for why scale-free
+networks are so ubiquitous.
+
+Growing Networks
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+In the classic Barabási and Albert model {{cite:3f6a8df1-22ee-4b65-9641-02d47e44a55d}}, a network is
+grown by adding, at every time step, a new node that attaches to FORMULA  existing
+nodes with a probability proportional to their degree, FORMULA . At time FORMULA , the resulting network has size
+FORMULA , where FORMULA  is the size of the (fully connected)
+network at time FORMULA .
+Preferential attachment models were in fact introduced in the literature already by Yule {{cite:59203163-440b-4257-856a-97f302684c9b}} and Simon {{cite:c8c4c8ec-a6f2-4b5e-9b54-c0c6a1cc1a02}}.
+The preferential attachment mechanism generates a scale-free
+probability density of incoming links that leads to the stationary result
+FORMULA , with FORMULA  independently of FORMULA .
+The model is also characterized by a clustering coefficient larger than the one found for the Erdős Rényi networks (for FORMULA ) and no clear
+assortative/disassortative behaviour {{cite:88caf555-68f3-4b19-a14e-bad1031cf87c}}.
+Several models have been proposed lately to investigate extensions of the
+preferential attachment mechanism through edge removal and rewiring,
+inheritance, redirection or copying; node competition, aging and capacity
+constraints; and accelerated growth of networks to name just a few (see
+{{cite:88caf555-68f3-4b19-a14e-bad1031cf87c}}, {{cite:1affcdf1-d279-494a-8066-d1cb715cd971}}, {{cite:0aa377ce-ebed-4276-92b2-4877af268062}}, {{cite:0d8632fc-ebe3-4c29-a8b2-efa4f12b66a0}} for reviews).
+Of particular
+relevance to our approach are fitness models {{cite:70701fe6-25a5-493d-be1d-d312c33bf23b}}, {{cite:57891a2a-d338-40f4-aa75-afe182b5d9e5}}, {{cite:024fe393-331d-4a59-bc7d-ce039a54aa7f}}, {{cite:ac1f9d14-ea96-42ab-8b64-2b480e07ebbf}}, where the probability of attaching to a node is
+proportional to node fitness
+FORMULA 
+Here we extend the preferential attachment rule by introducing a growing
+mechanism inspired on the work of Jackson and Wolinsky {{cite:bf3baeb6-bb9a-48db-a817-514d7673a6aa}}. Our
+contribution is to propose preferential attachment by node utility. Thus, the
+probability that a new node FORMULA  will be connected to an existing node FORMULA 
+depends on the utility of FORMULA , such that
+FORMULA 
+where the utility of node FORMULA , FORMULA , is given by (REF ).
+Attachment happens with uniform distribution for FORMULA  generating an exponential
+distribution of node degree This is Model A in {{cite:3f6a8df1-22ee-4b65-9641-02d47e44a55d}}..
+While the model is not defined for FORMULA , the preferential attachment rule (REF ) is invariant up to
+multiplicative factors in (REF ), so for FORMULA  the
+qualitative behaviour of the model remains unchanged if we define utility as
+FORMULA 
+where FORMULA  is the degree of node FORMULA . Thus, as FORMULA  our
+model converges to the Barabási-Albert model and generates a scale-free network.
+Our model has resemblances with the fitness models discussed above. However,
+there is a fundamental discrepancy: we regard utility as a time-dependent
+measure of node fitness, whereas existing models assume that node fitness does
+not change with time.
+At each time step, a new node FORMULA  joins the network and the utility of
+existing nodes changes. When FORMULA , the utility increment to an existing node
+FORMULA  at distance FORMULA  from FORMULA  is given by FORMULA  and
+therefore, at each time step, the computation of utility for the network can
+be completed in FORMULA  time. Figure REF  is a diagram of
+a possible network configuration with FORMULA  after FORMULA  time steps,
+showing the change in utility of existing nodes, FORMULA .
+When FORMULA , the increment in the utility of node FORMULA  depends on the existing
+network geometry and FORMULA . Therefore, when FORMULA , we need
+to re-compute the utility of all existing nodes at every time step,
+and the computation runs in FORMULA  time as it involves running a
+breadth-first-search algorithm from every node. This is the reason
+why we have ran simulations for FORMULA  when FORMULA , but only up to
+FORMULA  when FORMULA .
+Existing nodes FORMULA  at a higher distance than a certain FORMULA  from new
+node FORMULA  receive a contribution FORMULA 
+which is less than the number of significant digits that the computer can
+store (typically FORMULA  in double precision), and do not need to have
+their utility updated in the simulations. This maximal distance FORMULA  is
+defined as
+FORMULA 
+Our implementation of the algorithm updates the utility of all nodes
+accessible from the new node FORMULA  up to distance FORMULA . The code was implemented in C++ and ran on a Condor framework (high
+throughput computing) {{cite:f2e5c088-dc0d-4992-a3d5-3f6986bfee53}} for several values of FORMULA . Ensemble
+averages were taken over 30 runs.
+Expressions (REF ) and (REF ) predict the
+existence of two distinct regimes: a scale-free regime as FORMULA 
+(FORMULA ) and a random growth regime for which degree distribution is exponential at FORMULA . We are
+interested in exploring how the network evolves from one limit regime to the
+other as we increase FORMULA .
+Figure REF a-c) shows the distribution of degree for FORMULA  and 5.
+We also plot the corresponding distribution for the BA model (solid curves
+shifted vertically). For very small FORMULA , preferential attachment
+by degree is indistinguishable from preferential attachment by utility and the
+probability distribution of both quantities decay like FORMULA  with FORMULA . The power-law decay in the BA model is
+known to be a peculiarity of the linear preferential attachment mechanism and
+is destroyed by small perturbations like, for example, a non-linear attachment
+rule FORMULA  {{cite:3f6a8df1-22ee-4b65-9641-02d47e44a55d}}. Here we also observe a
+depart from the scale-free regime as we increase FORMULA . Furthermore, in the
+Barabási-Albert model the degree distribution decays as a power-law with
+exponent FORMULA  independently of FORMULA . In our model, increasing FORMULA  has the
+effect of homogenizing the utility of the nodes (the distance between pairs of
+nodes decreases with increasing connectivity in the networks). Consequently,
+deviations from the power-law decay are observed at lower and lower values of
+FORMULA  as we increase FORMULA .
+Betweenness centrality is plot in Figure REF g-i) as FORMULA  is varied.
+Recent results have shown that the distribution of loads (or betweenness)
+scales with a power law {{cite:5172d61c-5853-42eb-b99b-7082383ec5a1}}, {{cite:f892627f-54eb-4a11-90f3-ab0377713187}} FORMULA 
+where FORMULA  for a tree (and hence for FORMULA ). This justifies the collapse
+of the curves of the distribution of betweenness in Figure REF g). As can be observed in Figure REF h) and i), the
+distribution of betweenness deviates from the power-law behaviour as FORMULA  is increased.
+For intermediate values of FORMULA  and FORMULA  a number of interesting features
+appear. First of all, we observe that the utility distribution becomes
+step-like (Figure REF d) suggesting the presence of subsets of nodes
+that share similar utilities.
+This phenomenon can also be inferred from the network layouts in Figure
+REF  (for networks of FORMULA  nodes with FORMULA ), which are produced using the Kamada-Kawai spring layout {{cite:cc194283-0bda-4836-90de-3c2c52ab65df}}. Essentially, the Kamada-Kawai layout assigns stronger springs to vertices that are closer in the graph-theoretic sense (i.e., by following edges) and therefore places them closer together. In the case FORMULA  (a tree), nodes close to the hubs on the graph layout will also be close
+in graph terms and therefore we can interpret the layout heuristically: these nodes have similar utility. When FORMULA  (close to the BA scale-free regime), the layout shows a few utility hubs (the dark
+vertices) surrounded by clouds of nodes that disperse as we move further away
+from the hubs; for FORMULA  denser clouds of nodes cluster around a
+smaller number of hubs, and can still be observed farther away from the hub;
+for higher FORMULA  the clouds start dispersing; eventually for FORMULA  all nodes have the same utility.
+FIGURE 
+The rearrangement of the network as FORMULA  increases from zero gives rise to non monotonous behaviour of the average path length
+FORMULA , degree assortativity FORMULA  {{cite:aed4ea6b-7bb1-4ef9-ab2b-cd36bcf34c41}}, and central
+point dominance FORMULA  {{cite:0c344b16-3238-4dcf-8cc4-5914b98c606b}}. Both FORMULA  and FORMULA  show a minimum for
+FORMULA  (FORMULA  and FORMULA ) and FORMULA 
+has a maximum around the same value. This behaviour can be observed in
+Figure REF a-c). The average path length
+FORMULA  is measured relative to the path length of a random
+growing network (i.e. relative to FORMULA ). The scale-free regime is characterised by a shorter path length than the
+random growth regime. Here we observe an even further contraction of the network for
+values of FORMULA  up to FORMULA . Note that the average path length of a star
+network is FORMULA  for FORMULA  large. When normalizing with
+FORMULA  we get a value of FORMULA . While this value is
+still much smaller than FORMULA , the network contraction seems to
+indicate a move toward a more star-like configuration. To further investigate
+this point, we compute the the central point dominance measure introduced by
+Freeman {{cite:0c344b16-3238-4dcf-8cc4-5914b98c606b}} and plot it in Figure REF b). This measure is defined as the average
+difference in node centrality (measured by node total betweenness) between the
+most central point and all the others. The central point dominance takes a value
+between zero (for a graph where all points have the same centrality) and one
+(for the wheel or star graph). The maximum of FORMULA  for FORMULA  in Figure REF b) confirms that the network
+is becoming more star like around these values of FORMULA .
+Next, we plot
+the assortativity of the network in Figure REF c). We
+implement as measure of assortativity the degree assortativity FORMULA  {{cite:aed4ea6b-7bb1-4ef9-ab2b-cd36bcf34c41}} which takes values from FORMULA  to FORMULA : negative values for disassortative networks, 0 if the networks are neither dissasortative or assortative, and FORMULA 
+for fully assortative networks. This value approaches zero
+for large FORMULA  in the BA model {{cite:4520c6af-44b6-4903-a7d6-05bf852f4a04}} and is negative for a star. Our model
+shows a lower assortative mixing than the BA model for values of FORMULA  up to
+FORMULA . The decrease in FORMULA  is also consistent with our hypothesis that the network is becoming more star like at FORMULA . While the network goes through this rearrangement the degree of the most connected node (as a fraction of the total number of links) is nonetheless monotonously decreasing with FORMULA , as shown in Figure REF d). The same behaviour is observed for the utility of the most connected node (not shown here). This reveals that as new nodes are added to the network, they do attach on average closer to the hubs as FORMULA  increases, generating a more compact network, but not directly to them.
+To gain further insights into the structural changes that take place as FORMULA  increases from zero, we analyze the role of entry time on node connectivity by
+computing the ratios FORMULA  and FORMULA  for the first 100 nodes as a function of the time at which they entered the network. The ratios plotted in
+Figure REF  are averaged over 30 different simulations, for
+networks with FORMULA  and FORMULA . The plot shows that for any FORMULA  the
+initial node is likely to acquire the highest fraction of links and utility. Moreover, for
+FORMULA  both the degree and utility ratios decay faster than in the
+scale-free regime. This reveals that, for
+FORMULA , the earlier nodes receive both a higher relative degree and utility than in the scale-free case. In other words, the earlier nodes are stronger hubs than in the scale-free case and thus the network arranges
+in a more star like configuration around FORMULA . As FORMULA  increases further, the slope of the utility ratio becomes lower than in the scale-free regime. In this
+range, the utility differences between old and new nodes are not large enough
+to create well defined utility or degree hubs.
+Figure REF  also highlights the fundamental mechanism of structure formation in our model: the fine relation between degree and utility as FORMULA  is varied. In the scale-free regime, preferential attachment by utility is equivalent to preferential attachment by degree and node degree and utility assume the same value as the network grows. At FORMULA , we observe a gap between the two scaled quantities, suggesting a discrepancy between degree and utility for the higher order neighbours of the utility hubs. This gap is larger for FORMULA  than FORMULA , indicating that
+around FORMULA  the growth mechanism is generated by a variable (node utility) which is considerably independent of node degree and thus revealing why this is the region where the network displays more interesting structure. As FORMULA  increases towards 1, the influence of random network growth becomes more important and this structure generating mechanism disappears.
+Finally, we investigate how average node utility compares in networks generated with our preferential utility attachment, the scale-free regime (here generated via the BA preferential attachment
+mechanism) and a star network. The average utility of a star network is given by:
+FORMULA 
+where FORMULA . For FORMULA  large, FORMULA  and FORMULA .
+In Figure REF  we plot the average utility
+for networks in our model at different FORMULA  when FORMULA  and
+FORMULA , 4 and 10 and compare that to the corresponding average utility in the BA model and a star with the same FORMULA . The plot shows that the BA scale-free network has a higher utility than
+the network generated via our preferential utility mechanism at all values of delta and FORMULA . Networks in our model become more star-like for FORMULA , but this implies an increase in the utility of only a small number of nodes (the early nodes). Therefore, the average utility of nodes in the network is still higher in the BA model than in our model for the same values of FORMULA  due to the scale-free structure of the former. Comparisons with the
+star network can only be made when FORMULA  as
+this is the average degree of the star network when FORMULA  is large. Figure REF  confirms that the star network has the highest utility for this value of FORMULA  among all the networks we study. Nevertheless, the star network can only be achieved if agents are perfectly rational and have access to full information (in which case the attachment mechanism would be deterministic). This is rarely the case in real word situation, thus the comparison with the star is of little practical relevance.
+
+Analytical Results for Random Networks
+An interesting question to ask (for example, from the point of view of the
+social planner) is how network topologies rank against each other and which
+network structure maximizes the total, or the average utility (networks that
+satisfy this condition are said to be efficient in economics).
+We show that it
+is possible to derive analytical results for the average utility in Poisson and power-law networks. By comparing average utility in different
+network topologies with the same size and the same average degree, we show
+that power-law networks are more efficient than Poisson random networks (even
+though less efficient than the star). The effect of costs on
+FORMULA  is a constant term for all networks with
+the same FORMULA  and FORMULA . Therefore, without loss of generality, we choose
+FORMULA  in the analysis below.
+FIGURE 
+FIGURE 
+If the sum in (REF ) was to be evaluated up to distance
+FORMULA  for every node, expression (REF ) would simplify
+to FORMULA , i.e. average
+utility would be independent of the specific network topology and all networks
+with the same number of nodes and links would be equally efficient. Thus we
+need to introduce long range interactions (FORMULA ) to be able to
+rank networks in terms of their efficiency.
+To derive an expression for average utility in generic random networks with FORMULA  large, we
+average both sides of (REF ):
+FORMULA 
+where FORMULA  is the average number of FORMULA th neighbours of a node. Newman et al. {{cite:156ef3c8-a50b-4737-bf6e-6b44f6f6acc8}}, {{cite:88699930-d778-4e0e-8415-3e7db1df6d87}} define FORMULA  via the expression
+FORMULA 
+Now that we have expressed average utility in terms of the breadth-first
+search algorithm, we can derive a closed form of expression (REF )
+if we have access to analytical expressions for FORMULA  and FORMULA . This can be accomplished by generating
+functions, which are particularly useful when determining means, standard
+deviations and moments of distributions {{cite:bf5fa9a0-2375-400e-9a1f-f0c26fc98308}}.
+The average number of neighbours (average degree) and the average number of
+second neighbours of a node can be derived from the probability generating
+function of node degree, FORMULA , as long as the degree distribution, FORMULA , is specified. The
+beauty of the generating function formalism is that one can derive FORMULA  as
+a function of FORMULA  and FORMULA  only {{cite:76dce627-6aea-42db-9331-3e8531c50991}}, {{cite:156ef3c8-a50b-4737-bf6e-6b44f6f6acc8}}, {{cite:88699930-d778-4e0e-8415-3e7db1df6d87}}:
+FORMULA 
+Replacing equation (REF ) in equation (REF ) yields
+FORMULA 
+where FORMULA . For FORMULA  and FORMULA , which are conditions satisfied by most networks,
+FORMULA  can be calculated as a function of FORMULA , FORMULA  and FORMULA 
+from (REF ) and (REF ) as {{cite:156ef3c8-a50b-4737-bf6e-6b44f6f6acc8}}:
+FORMULA 
+In what follows, we investigate the behaviour of (REF ) for
+Poisson and power-law random networks.
+Poisson random networks are characterized by FORMULA  and FORMULA 
+{{cite:156ef3c8-a50b-4737-bf6e-6b44f6f6acc8}}, thus (REF ) yields FORMULA . In this case,
+(REF ) becomes:
+FORMULA 
+for FORMULA , FORMULA  and FORMULA .
+Next, we consider power-law networks with degree distribution of the form:
+FORMULA 
+where the normalizing factor FORMULA  is the Hurwitz zeta function (FORMULA ). The
+generating function for the probability distribution is given by
+FORMULA 
+where FORMULA  is
+the Lerch transcendent. For our purposes, only the first two derivatives of
+FORMULA  with respect to FORMULA  are relevant as the average number of
+first and second-neighbours are given, respectively, by FORMULA  and FORMULA . Hence
+FORMULA 
+
+Thus
+FORMULA 
+Substituting (REF ) and (REF ) into
+(REF ), we find
+FORMULA 
+and thus average utility is given by
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  are given by
+(REF ), (REF ) and
+(REF ), respectively.
+When FORMULA , the distribution of degree, (REF ), becomes a
+pure power-law FORMULA . In this case, we have FORMULA  and
+FORMULA , therefore (REF ) becomes
+FORMULA 
+This generating function is also obtained for the power-law distribution with
+exponential cut-off, proposed in {{cite:d434eddc-1421-4e33-88a1-b4e4b04f9817}}, {{cite:0d265119-8e2b-49c2-8122-62269ce4bc9b}}, FORMULA , in the limit FORMULA .
+Expression (REF ) implies
+FORMULA 
+FORMULA 
+Therefore, in pure power-law networks, when FORMULA , the average
+number of second-neighbours, FORMULA , is finite only
+for FORMULA . However, the Riemann zeta function, FORMULA , is a decreasing function of FORMULA  (for FORMULA ) and
+FORMULA . In other
+words, the existence of FORMULA  implies FORMULA , which is a
+non-realistically low value for average degree in real networks. This explains
+why we have chosen the modified power-law distribution (REF ).
+The generating function (REF ) encapsulates all the
+moments of the degree distribution {{cite:156ef3c8-a50b-4737-bf6e-6b44f6f6acc8}}. Hence, the expressions for
+FORMULA  and FORMULA ,
+(REF ) and (), are only exact in the limit
+FORMULA . Further, FORMULA 
+and FORMULA , both of which
+depend on FORMULA , are only defined where
+FORMULA  is finite, i.e. for FORMULA .
+Therefore, it is essential to understand the behaviour of FORMULA  and FORMULA  in power-law networks.
+Figure REF  shows FORMULA  (full curves) and FORMULA  (dashed curves)
+within the range FORMULA  (where FORMULA  is defined) for, from left to right, FORMULA  and 3.
+Having deduced closed-form expressions for average utility in Poisson and
+power-law networks, we can now compare both networks under the condition that
+FORMULA  is the same. Figure REF  is a plot of average
+utility versus FORMULA  when FORMULA  and FORMULA 
+for Poisson and power-law networks. The average utility of Poisson networks is
+completely specified by FORMULA  and FORMULA , but power-law networks defined
+by (REF ) have one extra degree of freedom in FORMULA . In this case, we compute FORMULA  numerically by solving
+(REF ) for FORMULA  when FORMULA .
+For all cases studied power-law networks are more efficient than Poisson networks.
+
+Discussion
+The growth mechanism we have proposed is a natural extension of the
+Barabási-Albert preferential attachment by degree to preferential
+attachment by node utility. Our analysis shows that for small values of
+FORMULA , the utility decay parameter, the network retains a scale-free
+structure that is nonetheless destroyed when FORMULA  increases. We have
+identified a regime in FORMULA  where the network is
+characterized by a lower average path length and assortativity coefficient and
+a higher central point dominance than the scale-free network. In this regime,
+the distribution of utility is a step-like function and the network has a more star-like structure.
+The derivation of analytical expressions for average utility in Poisson and
+power-law networks reveals that the latter have higher FORMULA  for the
+range of parameters that is of significance in real-world networks (FORMULA ). This suggests a novel mechanism which may explain the ubiquitous
+presence of power-law networks, in particular in situations where
+collaboration, interaction and information sharing among the nodes are of
+paramount relevance.
+Social networks are highly volatile. Friendships can be stable for a long time but occasional encounters may lead to creation of links that are never used again in the future. A dynamical model of network formation, where links not only can be heterogenous, but whose weights can change continuously over time, would be a more appropriate way to describe
+social interactions. Our assumption that FORMULA  for all links is obviously a first order approximation and preferential growth, with no link rearrangements,
+is a crude description of social network formation. Nonetheless even this simple mechanism can highlight surprising features of the models (like in our case a smaller network diameter for intermediate values of FORMULA ) and as such it is worth to investigate in more general contests than the original BA model.
+We have also assumed that the
+connection costs in our model are zero. This assumption is justified by the
+fact that if costs are node independent they do not play any role in the
+growing model. Similarly, costs do not play a significative role if we
+restrict the comparison of average utility in section 
+to networks with the same size and the same average degree. Nonetheless in a more realistic model, where links can be rearranged over time, costs would also play an important role in determining the shape of the network.
+Further analysis taking into account both these effects is currently under development.
+We wish to thank Ginestra Bianconi, Anirban Chakraborti, Francesco Feri,
+Sanjeev Goyal, Matthew Jackson, Jukka-Pekka Onnela, and Marco Patriarca
+for stimulating discussions. We are grateful to the organizers and
+participants of the EXYSTENCE Thematic Institute "From Many-Particle Physics
+to Multi-Agent Systems" held at the Max Planck Institute for the Physics of
+Complex Systems (MPIPKS) in Dresden, where the collaboration leading to this
+work was started. RC would like to acknowledge support from the EPSRC
+Spatially Embedded Complex Systems Engineering Consortium grant EP/C513703/1.

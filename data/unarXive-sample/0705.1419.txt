@@ -1,0 +1,457 @@
+
+Effect of the tensor force in the exchange channel
+on the spin-orbit splitting in FORMULA F in the Hartree-Fock framework
+Satoru Sugimoto
+[email: ]satoru@ruby.scphys.kyoto-u.ac.jp Kyoto
+University, Kitashirakawa, Kyoto 606-8502, Japan
+Hiroshi Toki
+[email: ]toki@rcnp.osaka-u.ac.jp Research
+Center for Nuclear Physics (RCNP), Osaka University, Ibaraki, Osaka
+567-0047, Japan
+Kiyomi Ikeda
+[email: ]k-ikeda@riken.jp
+The Institute of Physical and Chemical Research
+(RIKEN), Wako, Saitama 351-0198, Japan
+2020/09/07 17:58:10
+We study the spin-orbit splitting (FORMULA -splitting) for the proton FORMULA -orbits
+in FORMULA F in the Hartree-Fock framework with the tensor force
+in the exchange channel.
+FORMULA F has one more proton around the neutron-rich nucleus FORMULA O. A
+recent experiment indicates that the FORMULA -splitting for the proton FORMULA -orbits in FORMULA F is
+reduced
+from that in FORMULA F. Our calculation
+shows that the FORMULA -splitting in FORMULA F becomes smaller by about a
+few MeV
+due to the tensor force. This
+effect comes from the interaction between the valence proton and the
+occupied neutrons in the FORMULA  orbit through the tensor force
+and makes
+the FORMULA -splitting in FORMULA F close to the experimental data.
+21.10.Pc,21.60.Jz
+Introduction
+The spin-orbit splitting (FORMULA -splitting) is important for the structure of
+nuclei. A large FORMULA -splitting between single-particle orbits with
+the same orbital angular momentum is responsible for the shell
+structure of nuclei {{cite:8c559f25-3b00-41fb-b098-ed2a2f2bc2de}}. Recently we have been obtaining much
+information about unstable nuclei from various experiments. There are
+experimental evidences, which indicate that the shell structure in
+neutron-rich nuclei changes from that in stable nuclei. To confirm
+the change of the shell structure, the information about
+single-particle orbits around closed-shell or sub-closed-shell
+nuclei is important. Michimasa and his collaborators studied the
+proton single-particle orbits in FORMULA F experimentally through the
+proton transfer reaction {{cite:bc41123d-586d-482f-aad7-2f5dbbc059cc}}. FORMULA F has one more
+proton
+around FORMULA O. They reported that the FORMULA -splitting for the
+proton FORMULA -orbits (FORMULA -FORMULA ) is 4.06MeV, while the FORMULA -splitting
+for the proton FORMULA -orbits in FORMULA F is 5.00MeV {{cite:89007331-c76a-4294-9237-df7455c980cc}}, {{cite:e7b44b3a-7c4e-4cd3-b811-7c2515c96d60}},
+which is similar to the neutron FORMULA -orbits in FORMULA O (5.08MeV) {{cite:89007331-c76a-4294-9237-df7455c980cc}}, {{cite:e7b44b3a-7c4e-4cd3-b811-7c2515c96d60}} due to the isospin symmetry.
+It indicates that there is a possibility that the FORMULA -splitting is
+changed by the excess neutrons around FORMULA O. The shell model
+calculations reproduce the change of the FORMULA -splitting from FORMULA F
+to FORMULA F nicely
+{{cite:bc41123d-586d-482f-aad7-2f5dbbc059cc}}. In the shell model calculation the
+FORMULA -splitting in FORMULA F (FORMULA O) is an input parameter. Hence, it is
+interesting to study the FORMULA -splitting with a mean-field-type model,
+where the FORMULA -splitting is obtained self-consistently.
+Hartree-Fock and Hartree-Fock-Bogoliubov calculations can now be
+performed in the whole mass region over the nuclear chart. Such
+mean-field
+calculations can reproduce binding energies and radii of
+nuclei including unstable ones using effective forces with
+relatively simple forms like the Skyrme or Gogny force
+{{cite:9c50a273-fc53-42ec-b714-8fa1059d8173}}, {{cite:135608ad-1766-43eb-9bc0-7d8fd4d5f01d}}. In the mean field calculations the
+FORMULA -splitting of single-particle orbits is produced mainly by the
+LS force. The FORMULA -splitting of single-particle orbits and the magic
+number for binding energies can be explained with the LS force
+having the same strength in almost the whole mass region at least
+near the stability line. Some studies show that the FORMULA -splitting
+in neutron-rich nuclei becomes small because the diffuseness of
+the neutron density becomes large and the spin-orbit potential is
+weakened {{cite:276c731a-2bde-465f-bc4c-996508bb0ef0}}, {{cite:9cb25dbf-727a-427f-a9a4-f0ad43b02704}}.
+The tensor force acts on the spin of nucleon directly and should
+affect the FORMULA -splitting. Although the tensor force is not usually
+included in the mean field calculations, some Hartree-Fock
+calculations explicitly including the tensor force or the pion in
+the relativistic model showed that the tensor force affects the
+FORMULA -splitting in spin-unsaturated nuclei
+{{cite:12403696-c909-4fca-9e99-c2bcec968a07}}, {{cite:43501609-5d04-449e-a620-6dd2e5010c2e}}, {{cite:7b854aa9-5ca8-489a-90a5-1b9c5eef73dc}}, {{cite:186ac4f6-e24e-47d7-b356-e198de13cf12}}, {{cite:2fd69b71-541c-43f3-855e-097df6354021}}, {{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}, {{cite:46cc99cc-0ec1-48c9-a47b-657120f001df}}, {{cite:fd5a4149-b69f-4b00-a5ee-ae904a0b0f97}}.
+Only one orbit of the spin-orbit partners is occupied in a
+spin-unsaturated nucleus, while both the spin-orbit partners are
+fully occupied in a spin-saturated nucleus. For example, FORMULA Ca
+is a spin-unsaturated nucleus, where the neutron FORMULA  orbit is a
+spin-unsaturated orbit and FORMULA Ca is a spin-saturated nucleus.
+Because the total spin coming from the intrinsic spin of nucleon is
+zero in a spin-saturated nucleus if the wave functions of spin-orbit partners have
+the same radial forms, the tensor force does not act between the
+spin-saturated core and a particle or a hole around the core. In a
+spin-unsaturated nucleus, the total intrinsic spin coming from the
+spin-unsaturated orbit has a finite value and the tensor force
+becomes active. In fact, the sizes of the FORMULA -splitting for hole
+orbits change from FORMULA Ca to FORMULA Ca and FORMULA O to FORMULA O
+in the results of the Hartree-Fock calculations with the tensor force
+or the pion {{cite:43501609-5d04-449e-a620-6dd2e5010c2e}}, {{cite:7b854aa9-5ca8-489a-90a5-1b9c5eef73dc}}, {{cite:186ac4f6-e24e-47d7-b356-e198de13cf12}}, {{cite:2fd69b71-541c-43f3-855e-097df6354021}}, {{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}.
+For the calcium isotopes, there is an experimental
+evidence {{cite:2dc3443c-c272-46d3-8e7a-dcf3397e0998}} that the FORMULA -splitting becomes smaller from
+FORMULA Ca to FORMULA Ca and the order of the change is comparable to
+that induced by the tensor force or the pion
+{{cite:7b854aa9-5ca8-489a-90a5-1b9c5eef73dc}}, {{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}. It should be noted that
+in the Hartee-Fock approximation the energy contribution from the tensor force or the pion from the direct channel
+becomes zero and only that from the exchange channel has a finite value in closed-shell nuclei.
+Otsuka and his collaborators discussed the effect of the tensor
+force on single-particle energy in other mass regions. They nicely
+reproduced the change of the splitting between FORMULA  and
+FORMULA  in the Sb isotopes with neutron number
+{{cite:ff794592-fd23-44a3-996e-1364f37ccf85}} by the monopole shift induced by the tensor force
+{{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}. They also suggested the effect of the tensor force
+on the shell evolution in the neutron-rich FORMULA - and FORMULA -shell region
+{{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}, {{cite:46cc99cc-0ec1-48c9-a47b-657120f001df}}. They discussed that the neutron shell
+structure changes with proton number due to the monopole interaction
+between proton and neutron orbits and explained the appearance of
+the magic number 16 and the disappearance of the magic number 20 in the
+neutron-rich FORMULA -shell region {{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}, {{cite:57f6cdc2-8bbd-4904-92a2-ad399b428304}}, {{cite:5a7b72d2-35ff-4949-a68d-8f9dbac1f089}}.
+They claimed that the monopole interaction is caused by the tensor
+force {{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}}, {{cite:46cc99cc-0ec1-48c9-a47b-657120f001df}}. To confirm such a discussion, the
+direct information about a single-particle state is essential.
+In this paper we perform the Hartree-Fock calculation for FORMULA O
+and FORMULA F.
+We include the tensor force and study its effect on the FORMULA -splitting.
+We also calculate FORMULA O to see the effect of valence
+neutrons on the FORMULA -splitting and its relation to the tensor force
+by comparing with FORMULA O and FORMULA F.
+The formulation is given in
+Section  and the results are given in
+Section . Section  is devoted to
+the summary of the paper.
+
+Formulation
+In the preset paper we adopt two types of Hamiltonian. One includes
+the 3-body force in addition to the kinetic term and the two-body
+force. The other includes the density-dependent force instead of the
+3-body force. The Hamiltonian with the 3-body force FORMULA 
+and that with the density dependent force FORMULA  have the
+following forms,
+
+H3B=i=1A pi22 M +
+i<jA v(ri,rj) +i<j<kA
+v(3)(ri,rj,rk)-ECM
+,
+HDD=i=1A pi22 M +
+i<jA v(ri,rj) +i<jA v(DD)(;
+ri,rj)-ECM.
+
+In the above expression, FORMULA , FORMULA , and FORMULA  are the momentum,
+coordinate including spin and isospin, and mass of nucleon
+respectively. FORMULA  is a mass number. FORMULA  and FORMULA  are the 2-body
+and 3-body potentials respectively. FORMULA  is the
+density-dependent potential with the one-body density FORMULA . We
+subtract the energy of the center of mass motion
+FORMULA .
+In the Hartree-Fock calculation we assume the wave function of the
+nucleus has the following form,
+
+= A  (r)
+
+with the antisymmetrization operator FORMULA  for nucleon
+coordinates. FORMULA  labels each single-particle state and runs
+over all occupied state. With the wave function the total energies
+become
+
+E3B=|
+p22M|+
+< | v
+| +
+<< | v(3) | 
+for FORMULA  and
+
+EDD=|
+p22M|+
+< | v
+| + <
+| v(DD)()
+| 
+for FORMULA , where the tildes represent the antisymmetrization.
+In the above equations, FORMULA  is dropped for simplicity. By
+taking a variation of the total energy with respect to a
+single-particle wave function FORMULA , we obtain the
+Hartree-Fock equation for each case:
+
+p22 M (x) + dy (y)
+v(x,y) [ (y) (x) - (y)
+(x) ]
++12, dy dz 
+(y) (z)
+v(3)(x,y,z) [
+{ (y) (z) - (y)
+(z) } (x)
++ {(y) (z) - (y)
+(z) }(x)
++ { (y) (z)- (y)
+(z) }(x)]
+=(x)
+
+for the three-body force case and
+
+p22 M (x) + dy (y)
+v(x,y) [ (y) (x) - (y)
+(x) ]
++dy (y)
+v(DD)(;x,y) [ (y) (x) -
+(y) (x)]
++< dy dz (y)
+(z)
+ v(DD)(;y,z)   (x) [ (y) 
+(z) - (y) (z) ]
+=(x)
+
+for the density-dependent force case. In the above expression the
+integrations over FORMULA  and FORMULA  include the summation over the spin and
+isospin index.
+In the present study we assume each single-particle state as an
+eigenfunction of total spin
+FORMULA . With the assumption
+a single-particle wave function can be expressed as
+
+(r) = R (r) Yljm () (),
+
+where FORMULA  is a radial wave function, FORMULA  is an
+eigenfunction of FORMULA , and FORMULA  is an isospin wave
+function. FORMULA  stands for node FORMULA , total spin
+FORMULA , its projection on the FORMULA  axis FORMULA , and isospin
+FORMULA . We do not assume the degeneracy for the orbits with the
+same FORMULA , FORMULA , and FORMULA  because the spherical
+symmetry of a mean field is broken in odd nuclei. It means that the
+states with the same FORMULA , FORMULA , and FORMULA  but different FORMULA 's are
+allowed to have different radial wave functions. In such a case we
+need to perform an angular momentum projection to obtain a wave
+function with a good angular momentum. The expectation value for the
+total angular momentum FORMULA  with the wave function obtained in the
+Hartree-Fock calculation for a one-particle or one-hole state does not
+deviate from FORMULA  largely (less than 1%), where FORMULA 
+is the total spin of the particle or hole orbit. It indicates the
+obtained wave function is almost an eigenstate of angular momentum.
+Hence, we do not perform the angular momentum projection.
+We approximate the density in a density-dependent force as
+
+(r) 14R(r) R(r)
+
+for calculational convenience. This expression is exact for a closed-shell nucleus with the
+spherical symmetry and should be a good approximation for
+a one-particle or one-hole nucleus with almost a spherical core.
+We expand a radial wave function FORMULA  by Gaussian functions
+with widths of a geometric series {{cite:3ea0bc06-286f-472b-a401-816b5545f47f}}. We take 11 Gaussian
+functions with the minimum width 0.5fm and the maximum width 7fm for
+each single-particle state. The Hartree-Fock equation is solved by
+the gradient or damped-gradient method {{cite:c81a885a-327d-42d7-af10-e20459e4719a}}.
+
+Result
+In this section we apply the Hartree-Fock method to
+FORMULA O and FORMULA F. We assume FORMULA O as a closed-shell
+nucleus up to the FORMULA -shell and FORMULA O as a sub-closed-shell
+nucleus where the neutron FORMULA  orbit is fully occupied in
+addition to the occupied orbits in FORMULA O. For FORMULA O there is
+the experimental evidence which suggests it has the sub-closed-shell
+structure of the neutron FORMULA  orbit {{cite:26c91cf9-09da-428d-a72b-45e06271bb07}}. In the FORMULA O case, one neutron is
+subtracted from the neutron FORMULA  orbit or the neutron
+FORMULA  orbit in FORMULA O. In the FORMULA O case we add one
+neutron in the FORMULA  orbit around FORMULA O. We do not put a
+neutron in the FORMULA  orbit in FORMULA O because there are no
+bound states in this configuration. In the FORMULA F case we add a proton
+in the FORMULA  or FORMULA  orbit around FORMULA O.
+As for the effective interaction, we adopt the modified Volkov force
+No. 1 (MV1){{cite:7eb8aa82-1c87-417b-bc7f-0baf88601384}} for the central part and the G3RS force
+{{cite:a7da6061-3376-4c9d-9348-bdd0299fdd3f}} for the tensor part. We also include the Coulomb
+force. The G3RS force is determined
+to reproduce the nucleon-nucleon scattering data and, therefore, the
+tensor
+force in the G3RS force is the one in the free space. For the strength of the
+tensor force in the nuclear medium we do not have a definite
+guideline at present. The
+effective interaction obtained from the FORMULA -matrix theory has a
+tensor part with a strength comparable to the tensor force in the free
+space {{cite:964094ba-7bd2-4359-b02c-c94ffc197626}}, {{cite:e26dcf54-f9b3-4ac0-990d-43021a089c3f}}, {{cite:1d488f30-1003-4e4a-812d-3ee810385129}}, {{cite:648e5e69-0e2e-4ce9-8b41-e04af031b4a8}} at least in the region
+where the relative distance is greater than about 0.8fm. We use the
+tensor force in the free space in the present calculation but we need a further investigation to determine the
+strength of the tensor force to be used in a mean field calculation.
+It should be noted that the difference in the short range (FORMULA fm)
+does not influence the tensor force matrix elements significantly
+{{cite:1d488f30-1003-4e4a-812d-3ee810385129}}. As
+for the LS force we take the FORMULA -type LS force
+{{cite:9c50a273-fc53-42ec-b714-8fa1059d8173}}, {{cite:135608ad-1766-43eb-9bc0-7d8fd4d5f01d}}:
+
+i W0 (1+2)k (r1-r2)
+k.
+
+The Majorana parameter in the MV1 force is fixed to 0.59, which
+is determined to reproduce the binding energy of FORMULA O. FORMULA  in
+the LS force is taken as 115MeVfmFORMULA , which is the same as in the
+Gogny D1 force and is determined to reproduce the FORMULA -splitting
+for the FORMULA  orbits in FORMULA O {{cite:135608ad-1766-43eb-9bc0-7d8fd4d5f01d}}.
+TABLE 
+In Table REF , the results for FORMULA O, FORMULA O, and
+FORMULA O are summarized. The experimental data are also given in the
+parentheses if available. The potential energy from the tensor force
+becomes quite small because FORMULA O is a LS-closed-shell nucleus.
+In the LS-closed-shell nucleus both the spin-orbit partners are
+completely occupied. Hence, the LS-closed-shell nucleus is a spin-saturated nucleus.
+The LS-closed-shell nucleus does not have
+a finite total orbital angular momentum
+and a finite total spin angular momentum. The tensor force
+consists of the rank 2 tensors of the orbital and spin angular
+momenta. Thus, the tensor force does not work between the
+LS-closed-shell nucleus and a particle or a hole around it, because a
+particle or hole has a spin angular momentum 1/2. In the last row
+the energy differences between FORMULA O (FORMULA ) and
+FORMULA O (FORMULA ) are shown. It corresponds to
+the FORMULA -splitting for the FORMULA  orbits. It is about 10% smaller than
+the experimental value. The contribution from the LS force is 5.8MeV
+and is almost the same as the total FORMULA -splitting. It indicates
+that the FORMULA -splitting is mainly produced by the LS force. The
+large contribution from the kinetic energy is almost canceled out with
+the contributions from the central and three-body forces. In
+FORMULA O the effect of the tensor force on the FORMULA -splitting is
+negligible.
+TABLE 
+In Table REF  the results for FORMULA O and FORMULA F are
+summarized. Although the binding energy of FORMULA F (FORMULA )
+(the ground state) is about 5MeV smaller than the experimental value,
+it probably does not affect our discussion on the FORMULA -splitting. In
+FORMULA O the neutron FORMULA  orbit around the
+FORMULA O core is fully occupied. Because the spin-orbit partner, the
+neutron FORMULA  orbit, is empty, FORMULA O is a spin-unsaturated
+nucleus. Hence, FORMULA O has a finite total orbital angular momentum
+and a finite total spin angular momentum, and the expectation value for the
+tensor potential energy in FORMULA F becomes finite. In FORMULA O, the energy
+contributions from the LS force and the tensor force are FORMULA MeV and
+1.9MeV respectively. In FORMULA F a proton is added to FORMULA O. If
+the proton is put in the FORMULA  orbit the absolute value of the
+LS potential energy
+becomes small by 4.5MeV and if the proton is put in the FORMULA 
+orbit that of the LS potential energy becomes large by 3.3MeV. In
+contrast,
+the tensor potential energy becomes small by 1.8MeV when the proton
+is in the FORMULA  orbit and becomes large by 1.3MeV when the
+proton is in the FORMULA  orbit. As a result, the contribution to
+the FORMULA -splitting for the proton FORMULA  orbits in FORMULA F from the
+LS force is 7.8MeV and that from the tensor force is FORMULA MeV. The
+sum of them is 4.5MeV. The relatively small FORMULA -splitting 4.2MeV
+after adding the contributions from the kinetic and other potential energies,
+which is close to the experimental value, is realized by the
+cancelation between the contributions from the LS force and the tensor force.
+TABLE 
+The energy differences between one-particle states and their
+corresponding
+cores are shown in Table REF . The LS potential energies
+from the cores for the FORMULA  orbit are FORMULA MeV in FORMULA O and
+FORMULA MeV in FORMULA F.
+The LS potential energy for the FORMULA  orbit in FORMULA F is
+smaller as expected from that for the FORMULA  orbit
+(FORMULA MeV). It is probably due to a weak
+binding of the
+FORMULA  orbit compared to the FORMULA  one. The contribution
+from the tensor force to the splitting for the FORMULA  orbits in FORMULA F
+is about a half
+of that from the LS force with the opposite sign as discussed in the
+previous section. The results for FORMULA O and FORMULA F in
+Table REF  indicate that the contribution to the
+FORMULA -splitting from the LS force mainly comes from the FORMULA O core
+and that from the tensor force comes from the excess neutron orbit
+(the neutron FORMULA  orbit).
+TABLE 
+In Table REF , the contributions to the tensor potential
+energy from the triplet-even and triplet-odd parts are shown
+separately. In
+FORMULA O the tensor potential energy mainly comes from the
+triplet-odd part. It is natural because only the neutron FORMULA 
+orbit is occupied and there are no valence protons around the
+FORMULA O core. In FORMULA F the contribution from the triplet-even
+part is comparable to that from the triplet-odd part for the
+FORMULA  orbit and they have the opposite sign.
+For the FORMULA  orbit the contribution from the triplet-even
+part is smaller than that from the triplet-odd
+part and they have the same sign. To see the effect of the tensor force
+on the valence proton, the energy differences between FORMULA F and
+FORMULA O are shown in the table. The differences are dominated by
+the triplet-even part. It means that the contribution to the
+FORMULA -splitting from the tensor force mainly comes from the
+triplet-even tensor force.
+TABLE 
+Finally we compare the FORMULA -splitting calculated with other
+effective interactions with our result discussed above (MV1) in
+Table REF . We also show the result without the tensor
+force (MV1 without FORMULA ). The Gogny D1S
+force {{cite:16a82f8b-0a48-4f17-ba12-59419002b979}} does not have a tensor part and a stronger LS
+part (FORMULA =130MeVfmFORMULA ) than one we adopted above. The M3Y-P2
+force {{cite:8e17de76-2bae-4b9b-ad14-443787a75d1e}} has a weak tensor part and an LS part
+comparable to the Gogny D1S force. The GT2 {{cite:46cc99cc-0ec1-48c9-a47b-657120f001df}}, {{cite:d686c13a-ae75-4bec-ac37-da1af4d8b178}}
+force has a tensor part comparable to that in the free space and a
+strong LS part (FORMULA =160MeVfmFORMULA ). While the rather schematic
+form of the tensor force is adopted in Ref. otsuka06,
+we replace the tensor part of the GT2 force with the G3RS force we
+used above. The sizes
+of the FORMULA -splitting for the MV1 force without the tensor force,
+the Gogny force, and the M3Y-P2 force are large compared to the
+experimental value. It indicates that the relatively strong tensor
+force comparable to that in the free space is needed to reproduce the
+FORMULA -splitting in FORMULA F. Although the GT2 force has a strong
+tensor part, it gives quite large splitting. It is due to the
+strong LS part of the GT2 force. The contribution from the LS force
+to the FORMULA -splitting is much larger than those with other effective
+forces. In fact, the FORMULA -splitting for the FORMULA  orbits in FORMULA O
+with the GT2 force is 8.3MeV. It is much larger than the
+experimental value. It indicates that the proper strength of the LS
+force, which give the reasonable FORMULA -splitting in FORMULA O is
+needed to reproduce the FORMULA -splitting in FORMULA F.
+The tensor force also induces a 2-particle–2-hole (FORMULA )
+correlation, which cannot be treated in a usual mean field
+calculation. The FORMULA  correlation by the tensor force produces the
+large attractive energy in nuclei {{cite:ee4a4a2f-d9b2-415c-9485-3f00502c9ed7}}, {{cite:06a73216-b310-48d1-8c62-631568efb878}}. Recently
+we developed a mean field framework which can treat the FORMULA 
+tensor correlation by introducing single-particle states with charge
+and parity mixing {{cite:3bee9060-e341-4aff-9694-eceecd30deec}}, {{cite:6096663b-fcfb-423e-af12-2b3914c139a3}}, {{cite:33e10116-b3dc-4eee-b3d5-1a2a37d8866c}}, {{cite:28056453-8706-4ee8-975b-e596e70f485b}}. We
+applied the extended mean field model to sub-closed-shell oxygen
+isotopes {{cite:28056453-8706-4ee8-975b-e596e70f485b}} and found that the potential energy from
+the tensor force is comparable to that from the LS force. The
+importance of the FORMULA  tensor correlation for the FORMULA -splitting
+is indicated in other studies {{cite:e94fd315-7f66-4814-a38e-27799a7a1eb5}}, {{cite:47b429d9-25bb-4bad-971a-a2ae8a5e47a5}}, {{cite:eef1c74a-26d2-4347-969b-05c44c2395f8}}, {{cite:6096663b-fcfb-423e-af12-2b3914c139a3}}.
+It is interesting to study the effect of the FORMULA  tensor
+correlation on the FORMULA -splitting with our extended mean filed model. Because our
+calculation showed that the excess neutrons around FORMULA O do not
+contribute to the FORMULA  tensor correlation strongly {{cite:28056453-8706-4ee8-975b-e596e70f485b}},
+the Hartree-Fock calculation seems to be sufficient as the first step.
+
+Summary
+We have performed the Hartree-Fock calculation with the tensor force for
+FORMULA O, FORMULA O, FORMULA O, FORMULA O, and FORMULA F to study the
+effect of the tensor force on the FORMULA -splitting.
+The tensor force does not affect the FORMULA -splitting for the FORMULA 
+orbits in FORMULA O because FORMULA O is a LS-closed-shell nucleus.
+The FORMULA -splitting is almost produced by the LS force in FORMULA O.
+In FORMULA O, the neutron FORMULA  orbit is fully occupied. It
+gives the finite expectation value for the tensor force in FORMULA O.
+In FORMULA F a proton is added to FORMULA O. The LS force works to
+provide the FORMULA -splitting for the proton FORMULA -orbits in FORMULA F by
+7.8MeV. In contrast, the tensor force reduces the FORMULA -splitting by
+3.1MeV. The effect of the tensor force mainly comes from the
+occupied neutron FORMULA  orbit. The resulting FORMULA -splitting of
+4.2MeV
+close to the experimental data is realized by the cancelation
+between the effects of the LS force and the tensor force. The
+contribution from the tensor force to the FORMULA -splitting in FORMULA F mainly comes
+from the triplet-even part of the tensor force.
+We have compared the results with various effective interactions with
+and without
+the tensor force. The effective interaction without the tensor force
+or with the weak tensor force does not explain the experimental
+value for the FORMULA -splitting for the proton FORMULA -orbits in FORMULA F.
+Our study indicates that the LS and tensor forces with reasonable
+strengths are needed
+to reproduce the FORMULA -splitting in FORMULA O and FORMULA F,
+simultaneously.
+We acknowledge fruitful discussions with Prof. H. Horiuchi on the
+role of the tensor force in light nuclei. This work is supported by
+the Grant-in-Aid for the 21st Century COE “Center for Diversity and
+Universality in Physics” from the Ministry of Education, Culture,
+Sports, Science and Technology (MEXT) of Japan. A part of the
+calculation of the present study was performed on the RCNP computer
+system.

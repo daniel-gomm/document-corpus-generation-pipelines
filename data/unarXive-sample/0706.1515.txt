@@ -1,0 +1,1003 @@
+
+
+
+The generalized non-linear Schrödinger model
+on
+the interval
+
+Anastasia Doikou,doikou@bo.infn.itFORMULA  Davide
+Fioravantifioravanti@bo.infn.itFORMULA  and Francesco
+Ravaniniravanini@bo.infn.it FORMULA
+
+FORMULA  University of Bologna, Physics Department, INFN Section
+Via Irnerio 46, Bologna 40126, Italy
+The generalized FORMULA -D non-linear Schrödinger (NLS) theory
+with particular integrable boundary conditions is considered. More
+precisely, two distinct types of boundary conditions, known as
+soliton preserving (SP) and soliton non-preserving (SNP), are
+implemented into the classical FORMULA  NLS model. Based on this
+choice of boundaries the relevant conserved quantities are
+computed and the corresponding equations of motion are derived. A
+suitable quantum lattice version of the boundary generalized NLS
+model is also investigated. The first non-trivial local integral
+of motion is explicitly computed, and the spectrum and Bethe
+Ansatz equations are derived for the soliton non-preserving
+boundary conditions.
+
+Introduction
+After various investigations (cf. below for detailed references)
+it is now well established that any integrable system (with finite
+or infinite degrees of freedom) based on the higher rank algebras
+FORMULA  or FORMULA  may be endowed with two distinct
+types of integrable They are defined as those boundary
+conditions that preserve the integrability of the system.
+boundary conditions. These boundary conditions are known as
+soliton preserving (SP), traditionally recognized in the framework
+of integrable quantum spin chains (finite number of degrees of
+freedom) {{cite:bf471455-a5c7-4bac-9226-102f28b01dd2}}–{{cite:5dddd414-8a82-4392-8a15-04f7c01301cd}}, and soliton non-preserving
+(SNP) originally introduced in the context of classical integrable
+field theories (infinite number of degrees of freedom)
+{{cite:34bd4ed2-5ec2-459f-b0d8-a8b85888b4c6}}, and further investigated in {{cite:e142ce8b-d5d8-4e1d-b4dd-5ce0ce79fee0}}, {{cite:36e1bf2c-140e-4f21-8adb-bf68e3d57bda}}, {{cite:80bd3c78-5ad8-4f26-9376-c45fcd0c83fb}}. SNP boundary conditions have been also introduced and
+studied for integrable quantum lattice systems {{cite:0be752ce-60be-48ef-9c5a-0e2ccb8a2c7e}},
+{{cite:705459e8-ccfd-4513-8900-1037168d0de1}}–{{cite:ec160a97-9d8e-42d1-91fa-0b2f2c042066}}, and their quantum integrability was
+first shown in {{cite:705459e8-ccfd-4513-8900-1037168d0de1}}. From the physical point of view
+the SP boundary conditions oblige a particle-like excitation to
+reflect to itself: no multiplet changing occurs. The SNP boundary
+conditions, on the other hand, force an excitation to reflect to
+its `conjugate', namely to an excitation carrying the conjugate
+representation. From the algebraic perspective the two types of
+boundary conditions are associated with two distinct algebras,
+i.e. the reflection algebra {{cite:bf471455-a5c7-4bac-9226-102f28b01dd2}}, {{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}} and the
+twisted Yangian respectively {{cite:4ad22678-6c17-4ea8-9ac0-11beaf01eb50}}, {{cite:5cce6606-5e68-4b83-84be-be06a054ea2b}}.
+The study of the underlying algebraic structures defined by the
+Yang-Baxter and reflection equations is in general of great
+consequence, both at classical and quantum level, not only for
+integrable systems per se, but also for other relevant problems in
+theoretical physics. For instance, in the context of the AdS/CFT
+correspondence {{cite:390174b2-3ad2-463a-9345-7d1e64853c3d}} it is known that from the string
+theory side the relevant classical integrable model is a sigma
+model (see e.g. {{cite:80c1869f-8f4d-461f-b291-724665d4adbb}}, {{cite:e12b1efd-a1a0-4998-a7c0-19f1f773f10f}}), that is a field theory with
+infinite degrees of freedom. From the quantum gauge theory side on
+the other hand the loop contributions are apparently given by
+integrable quantum 1-D lattice models with a finite number of
+degrees of freedom {{cite:2fe84949-373b-4c9c-a146-4f551336cf4c}}, {{cite:58896a5f-2c4f-4105-a779-17a6d2eba49a}}. As a consequence, a crucial
+point would be the formulation of a discrete-quantum counterpart
+of the aforementioned classical sigma model. In this respect, the
+knowledge of the discrete-quantum Lax operator would facilitate
+the derivation of the relevant Hamiltonian, and of the other
+charges in involution, as well as of the exact nested Bethe Ansatz
+equations. In fact, up to date only the asymptotic forms of the
+would-be-exact Bethe Ansatz equations are known (see e.g.
+{{cite:58896a5f-2c4f-4105-a779-17a6d2eba49a}}). Thus a rigorous derivation of these equations would
+undoubtedly be of great physical significance, as proven when
+corrections to the asymptotic regime are available {{cite:7ae8dc8b-acac-4183-82da-02a4bf231bac}}, {{cite:9a4f37ef-e135-4ca9-ad69-604480568eff}}.
+In the frame of classical continuum theories the SNP boundary
+conditions have been primarily investigated up to now
+{{cite:34bd4ed2-5ec2-459f-b0d8-a8b85888b4c6}}–{{cite:80bd3c78-5ad8-4f26-9376-c45fcd0c83fb}}. Therefore it is of great importance
+to further analyze the other set of boundary conditions, i.e. the
+SP ones within this context. In the present study we examine both
+SP and SNP boundary conditions for the classical generalized NLS
+model, and by using Hamiltonian methods {{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}} we derive the
+relevant integrals of motion, and also specify the corresponding
+classical equations of motion. Note that in {{cite:65a6c491-9fc1-4f9a-9b40-07183a835862}} the
+quantum FORMULA  NLS model on the half line was studied, based on
+the reflection algebra (i.e. SP boundaries), primarily from the
+point of view of the underlying symmetry algebras. It should be
+stressed that although in most classical continuum theories the
+SNP boundary conditions have been analyzed (see e.g. {{cite:34bd4ed2-5ec2-459f-b0d8-a8b85888b4c6}}, {{cite:36e1bf2c-140e-4f21-8adb-bf68e3d57bda}}, {{cite:80bd3c78-5ad8-4f26-9376-c45fcd0c83fb}}) this is the first time that such boundary conditions
+are implemented within the generalized NLS model. Here we consider
+the classical NLS model as a simple example, however our main
+motivation is to search for all possible boundary conditions in
+other classical theories such as affine Toda field theories,
+principal chiral models and others. From the viewpoint of quantum
+lattice models on the other hand the extensively analyzed boundary
+conditions are the SP ones, thus we focus here mostly on the SNP
+case for a lattice version of NLS. In particular, we consider a
+suitable lattice version of the NLS model {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}}, {{cite:b5d1a94d-108f-4689-99ee-92a51cad4a77}}
+with SNP boundary conditions, and we derive the exact spectrum and
+the corresponding Bethe Ansatz equations.
+The outline of this article is as follows: in the next section we
+present the generic algebraic setting for classical models on the
+full line and on the interval. More precisely we introduce the
+classical Yang-Baxter equation and the underlying algebra for the
+system on the full line. In the case of a system on the interval
+we distinguish two types of boundary conditions based on the
+classical versions of reflection algebra (SP) and twisted Yangian
+(SNP). Next the NLS model on the full line is reviewed and an
+explicit derivation of the local integrals of motion by solving
+the auxiliary linear problem {{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}} is presented. In section 3
+being guided by the same logic and adopting Sklyanin's formulation
+{{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}} we derive the integrals of motion of the FORMULA 
+NLS system on the interval with SP and SNP boundary conditions.
+Moreover, the corresponding classical equations of motion are
+obtained for various boundary conditions. In addition the usual
+NLS model with a reflecting impurity is investigated in the same
+spirit. In section 4 a suitable lattice version of the NLS model
+is investigated. After a brief review on the model with periodic
+boundary conditions we deal with the model with open boundaries.
+First the spectrum and Bethe Ansatz equations are derived for the
+usual lattice NLS. Finally, the SNP boundary conditions are
+considered for the generalized NLS system. The first non-trivial
+local integral of motion is explicitly specified for particular
+choice of boundary conditions, and the spectrum and Bethe Ansatz
+equations are deduced for the simplest boundaries.
+
+The general setting
+The line of attack which will be adopted for the study of the
+FORMULA  NLS model with integrable boundaries is based on the
+solution of the so called auxiliary linear problem {{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}}. It
+is therefore necessary to recall at least the basics regarding
+this formulation. Let FORMULA  be a solution of the following set of
+equations
+FORMULA 
+with FORMULA  being in general
+FORMULA  matrices with entries functions of complex valued
+fields, their derivatives, and the spectral parameter FORMULA . The
+monodromy matrix from (REF ) may be then written as:
+FORMULA 
+The fact that FORMULA  is
+a solution of equation (REF ) will be extensively used
+subsequently for obtaining the relevant integrals of motion.
+Compatibility conditions of the two differential equation
+(REF ), () lead to the zero curvature condition
+FORMULA 
+giving rise to the corresponding
+classical equations of motion of the system under consideration.
+There exists an alternative description, known as the FORMULA  matrix
+approach (Hamiltonian formulation). In this picture the underlying
+classical algebra is manifest in analogy to the quantum case as
+will become quite transparent later. Let us first recall this
+method for a general classical integrable system on the full line.
+The existence of the classical r-matrix, satisfying the classical
+Yang-Baxter equation
+FORMULA 
+guarantees
+the integrability of the classical system. Indeed, consider the
+operator FORMULA  satisfying
+FORMULA 
+Making use of the latter equation one may readily show for a
+system in full line:
+FORMULA 
+i.e. the system is
+integrable, and the charges in involution –local integrals of
+motion– may be attained by the expansion of the object FORMULA , based essentially on the fact that FORMULA  also
+satisfies (REF ).
+Our main aim here is to consider the FORMULA  NLS model on the
+interval. For this purpose we follow the line of action described
+in {{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}}, but using Sklyanin's formulation for the system on
+the interval or on the half line (see also {{cite:76bd1fa1-cc36-490e-b6b5-be0060b2a1b5}} for the sine
+Gordon on the half line). We briefly describe this process below
+for any classical integrable system on the interval. In this case
+one has to derive a modified transition matrix FORMULA , based
+on Sklyanin's formulation and satisfying the following Poisson
+bracket algebras FORMULA , FORMULA , i.e. classical
+versions of the reflection algebra and twisted Yangian
+respectively. It will be convenient for our purposes here to
+introduce some useful notation. Let
+FORMULA 
+In general FORMULA  can be any matrix
+such that FORMULA , for instance FORMULA  is also
+a possible choice (see e.g. {{cite:34bd4ed2-5ec2-459f-b0d8-a8b85888b4c6}}). Then the defining
+relations describing the classical reflection algebra and the
+twisted Yangian respectively, may be written in the following
+compact formNote that the classical versions of the
+reflection equation and the twisted Yangian are provided in
+general by more involved expressions for generic FORMULA  matrices. In
+the present study we focus on FORMULA  matrices satisfying
+FORMULA  (FORMULA ), and in this case (REF ), are valid.:
+FORMULA 
+To construct the generating function of the integrals of
+motion one also needs FORMULA -number representations of the algebra
+FORMULA  (FORMULA ) satisfying (REF ) for SP and
+SNP respectively, and also
+FORMULA 
+The modified
+transition matrices, compatible with the corresponding algebras
+FORMULA  are given by the following expressions
+{{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}}:
+FORMULA 
+and the generating function of the involutive
+quantities is defined as
+FORMULA 
+Due to (REF )
+it can be shown that (REF )
+FORMULA 
+Technical details on the proof of
+classical integrability are provided in Appendix A.
+By expanding FORMULA  in powers of FORMULA  one
+recovers the local integrals of motion of the considered system,
+and this is achieved in the subsequent sections. Among the local
+integrals of motion there exist naturally the Hamiltonian, which
+also provides information regarding the corresponding equations of
+motion. This is in fact the formulation we are going to assume for
+the NLS system on the half line, although an alternative strategy
+would be to derive the modified Lax pair, compatible with the
+boundary conditions chosen, and hence the associated equations of
+motion (see e.g. {{cite:34bd4ed2-5ec2-459f-b0d8-a8b85888b4c6}}). Nonetheless, the rigorous
+derivation of the modified Lax pair is essentially based on the
+existence of local integrals of motion {{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}}, therefore the
+viewpoint adopted here is arguably the most natural.
+
+Classical local integrals of motion
+The main objective in this section is to solve the auxiliary
+linear problem for the generalized NLS model on the interval.
+Before however we proceed to the study of the model on the
+interval we shall briefly review the system on the full line. In
+any case, these results will be relevant for the boundary case as
+well.
+The generalized NLS on the full line
+We shall hereafter focus on the FORMULA  NLS model. Consider the
+classical FORMULA  matrix
+FORMULA 
+FORMULA  is the permutation operator,
+and FORMULA . The Lax pair for
+the generalized NLS model is given by the following expressions
+{{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}}:
+FORMULA 
+where (see also {{cite:1c9a30ab-9c43-400b-b817-edbdb660c30d}})
+FORMULA 
+and FORMULA  satisfyThe Poisson
+structure for the generalized NLS model is defined as:
+FORMULA 
+:
+FORMULA 
+From the zero curvature condition (REF ) the classical
+equations of motion for the generalized NLS model are entailed
+i.e.
+FORMULA 
+It is clear
+that for FORMULA  the equations of motion of the usual NLS model are
+recovered.
+As already mentioned to obtain the local integrals of motion of
+NLS one has to expand FORMULA  (REF ) in powers of
+FORMULA  {{cite:b3c2ad7e-12a6-41de-bc04-2963098f1451}}. Let us consider the following ansatz for
+FORMULA  as  FORMULA
+FORMULA 
+where FORMULA  is off diagonal
+matrix i.e. FORMULA , and FORMULA  is purely
+diagonal FORMULA . Also
+FORMULA 
+Inserting the latter expressions
+(REF ) in (REF ) one may identify the coefficients
+FORMULA  and FORMULA  (see Appendix B for a detailed
+analysis). Notice that as FORMULA  the only non
+negligible contribution from FORMULA  comes from the
+FORMULA  term, and is given by:
+FORMULA 
+It is thus sufficient
+to determine the coefficients FORMULA  in order to extract
+the relevant local integrals of motion (see also {{cite:1c9a30ab-9c43-400b-b817-edbdb660c30d}}).
+Indeed solving (REF ) one may easily obtain:
+FORMULA 
+From the latter formulae (REF )
+and taking into account (REF ), (REF ) the local
+integrals of motion of NLS may be readily extracted from FORMULA , i.e.
+FORMULA 
+The corresponding familiar
+quantities for the generalized NLS are given by:
+FORMULA 
+and apparently
+FORMULA 
+Again in the special case where FORMULA  the well
+known local integrals of motion for the usual NLS model on the
+full line are recovered.
+
+The generalized NLS on the interval
+After the review on the NLS on the full line we can come to our
+main concern, which is the evaluation of the integrals of motion
+after implementing integrable boundary conditions. We shall
+investigate subsequently both SP and SNP boundary conditions.
+SP boundary conditions
+Let us first consider the NLS model with SP boundary conditions.
+For this purpose FORMULA -number solutions of the classical reflection
+equation are needed. A general non-diagonal FORMULA  matrix satisfying
+the classical reflection equation is given by (see also
+{{cite:0be752ce-60be-48ef-9c5a-0e2ccb8a2c7e}})
+FORMULA 
+Apparently in the case where FORMULA  a diagonal solution is
+recovered
+FORMULA 
+The more general diagonal FORMULA 
+matrix is given by (see also e.g. {{cite:5ba85f99-cf9c-4b33-8f45-3c306967ab91}}, {{cite:7775ec26-1955-4493-b1af-656cb6490f18}})
+FORMULA 
+The solution (REF ) may be
+seen as a special case of (REF ) for FORMULA .
+Henceforth we set FORMULA , and we focus on the case with
+diagonal boundaries provided by (REF ), (REF ), and
+FORMULA . Also FORMULA . The quantity under expansion
+is
+FORMULA 
+where the objects with `hat' are simply
+the same as before but now FORMULA . The technical
+details of the relevant computations are presented in Appendix C.
+(I) Let us first consider the simple boundary conditions
+described by (REF ). Gathering all the information provided
+by equations (REF ), and by explicit computations concerning
+the FORMULA  expansion (see Appendix C, case (b) for
+fore details) we conclude that the integrals of motion for the NLS
+on the interval are given by:
+FORMULA 
+the quantity
+FORMULA  as expected is trivial, as in the case of sine-Gordon model
+on the half line. Recall that in the whole line the quantity FORMULA 
+corresponds essentially to the momentum, which is not a conserved
+quantity any more. To obtain the number of particles and the
+Hamiltonian we simply have to divide by  FORMULA
+FORMULA 
+It
+is clear that different choices of boundary conditions lead to
+distinct boundary contributions to the integrals of motion. A more
+detailed description of complicated diagonal and non diagonal
+boundaries is presented in Appendix C. Notice also that for FORMULA 
+the boundary Hamiltonian presented in {{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}} is
+recovered. Of course we could have considered Shcwartz boundary
+conditions at FORMULA  i.e. FORMULA  and
+trivial right boundary FORMULA  (that is the system is
+considered on the half line), then the boundary terms appearing at
+FORMULA  in the expressions of the integrals of motion would
+disappear.
+As already mentioned the equations of motion will be derived based
+on the existence of a boundary Hamiltonian rather than on the
+existence of a modified Lax pair. In general, among the integrals
+of motion there exists a Hamiltonian (REF ) such that the
+relations below
+FORMULA 
+give rise to the classical equations of motion. Indeed considering
+the Hamiltonian FORMULA  (REF ), (REF ), we end up
+with the following set of equations
+FORMULA 
+In general the boundary
+Hamiltonian for the generalized NLS model may be expressed as
+FORMULA 
+where FORMULA  is the boundary
+potential. One may write the equations of motion for a generic
+boundary potential FORMULA . It is clear that the bulk part
+remains intact as in (REF ), and what is only modified is
+the boundary conditions at FORMULA  depending naturally on
+FORMULA , i.e.
+FORMULA 
+Two more examples of diagonal
+boundaries are presented below:
+(II) Consider the boundary conditions described by
+(REF ). The corresponding contributions to the integrals of
+motion due to the presence of non trivial boundaries are computed
+in Appendix C, case (b). In this case the boundary potential (see
+(REF )) is given by
+FORMULA 
+and
+consequently the boundary conditions for the equations of motion
+at FORMULA  now read as:
+FORMULA 
+The previous case (I) may be seen as a special
+case of the more general diagonal boundary conditions by setting
+FORMULA . Ultimately, one would like to investigate the SP
+boundary conditions in the context of affine Toda field theories,
+something that has not been achieved up to date. In this case, it
+is naturally anticipated that the corresponding equations of
+motion should explicitly depend on the parameters FORMULA , contrary to the case analyzed in {{cite:34bd4ed2-5ec2-459f-b0d8-a8b85888b4c6}}, where no
+extra free parameters associated to the boundaries occur. It
+is also worth stressing that in the context of integrable spin
+chains the integers FORMULA  appear explicitly in the
+corresponding Hamiltonian as well as in the associated symmetry of
+the model. More precisely, it was shown in {{cite:7775ec26-1955-4493-b1af-656cb6490f18}} that the
+open spin chain with diagonal boundary conditions associated to
+integers FORMULA  is FORMULA  invariant (or
+FORMULA  invariant in the
+trigonometric case). The symmetry breaking for the quantum FORMULA 
+NLS model due to presence of non trivial integrable boundaries is
+also discussed in {{cite:65a6c491-9fc1-4f9a-9b40-07183a835862}}.
+(III) Finally we consider the case where FORMULA  (Appendix C, case (c)). The boundary potential in this case is
+FORMULA 
+and apparently we end up with simple Dirichlet boundary
+conditions
+FORMULA 
+Note that the FORMULA  case in particular was investigated
+classically on the half line in {{cite:babb0074-f359-4c24-8e87-0d138989d75f}}, whereas the NLS
+equation on the interval was studied in {{cite:b930e89f-bfc7-4d75-b7d6-d82c42e9539e}}.
+
+SNP boundary conditions
+Recall that in this case the object under consideration,
+compatible with the underlying algebra, that is the classical
+version of the twisted Yangian, is
+FORMULA 
+and we choose here for simplicity FORMULA . Note
+however that a generic solution of the classical twisted Yangian
+is given by any matrix FORMULA  (see {{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}}). We shall
+choose in what follows FORMULA . By
+expanding (REF ) in powers of FORMULA , along the
+lines described in Appendix C, explicit expressions for the
+integrals of motion are entailed (see (REF ), (REF )).
+It is worth pointing out, bearing in mind expressions
+(REF ), that non-local contributions to the integrals of
+motion arise. This is quite an intriguing fact and it definitely
+merits further investigation, which however will be undertaken in
+a forthcoming work. Nevertheless, based on the formulas
+(REF ), (REF ) we may explicitly express the first
+non-trivial conserved quantity, which is somehow a `modified'
+number of particles, i.e.
+FORMULA 
+Notice that the
+SNP boundary modify dramatically the number of particles (see
+(REF ), (REF )). Indeed, the variation due to the
+integrable boundary conditions is not limited to the addition of
+certain boundary terms to the bulk quantity, as is customary, but
+it gives rise to an alteration of the bulk expression itself. This
+is a very interesting and definitely non-conventional aspect that
+has not been encountered before, especially in the context of
+continuum integrable theories. Note finally that in the special
+case FORMULA  the `modified' number of particles reduces to the usual
+number of particles, which is a conserved quantity for the FORMULA 
+NLS model with diagonal boundary conditions (see (REF )).
+
+The NLS model with reflecting impurity
+A physically relevant example will be discussed in what follows.
+More precisely we shall restrict our attention to the usual NLS
+model, and within the framework described in the previous section
+we shall examine the problem of reflecting impurities attached to
+the ends of the system. According to {{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}} one may
+consider a more general solution of the reflection equation.
+Consider the classical Lax operator satisfying
+FORMULA 
+recall
+FORMULA  is given in (REF ). For example consider the
+FORMULA  operator associated to the classical Lie algebra
+FORMULA :
+FORMULA 
+where apparently FORMULA  obey
+FORMULA 
+FORMULA  being the usual
+antisymmetric tensor. One may easily express the later matrix in
+terms of canonical variables FORMULA , i.e.
+FORMULA 
+Degenerate cases of the matrix above are for
+instance the Toda chain and the DST model (see e.g.
+{{cite:22fd50e4-6589-4f35-85ae-169e3d1cefc3}} and references therein) with Lax operators
+given by
+FORMULA 
+Consider the following generating function of the integrals of motion
+FORMULA 
+FORMULA  is a generic `dynamical' type solution of the classical
+reflection equation {{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}}, i.e.
+FORMULA 
+FORMULA  can be any solution of (REF ), FORMULA  are any
+FORMULA -number solutions of classical reflection equation. Note that
+the Poisson brackets for FORMULA  in the classical reflection
+equation are considered with respect to the canonical variables
+FORMULA . Here we shall deal with a simple
+example, that is FORMULA  and FORMULA  and
+FORMULA  given by (REF ) (for simplicity set FORMULA )
+then it is clear that
+FORMULA 
+Finally the boundary contribution to the Hamiltonian
+is given by (see also Appendix B)
+FORMULA 
+FORMULA 
+where FORMULA . Analogous expressions to
+(REF ) are given for FORMULA , in particular FORMULA : FORMULA . Based on the latter expressions
+the boundary part of the Hamiltonian may be deduced. Indeed,
+bearing in mind that the boundary potential is given by FORMULA  and taking into account
+(REF ), (REF ) we conclude
+FORMULA 
+where we define
+FORMULA 
+and as
+expected the boundary contribution of the Hamiltonian is solely
+expressed in terms of the canonical variables FORMULA  as well as the boundary values of the fields
+and their derivatives (see also {{cite:8eda5727-5c03-4e98-bbbc-c570844f6798}} for a similar
+treatment of the classical sine–Gordon model).
+
+A quantum lattice version of NLS
+Review on periodic lattice NLS
+Let us first present the general algebraic framework associated to
+the discrete quantum version of the NLS model, introduced and
+studied for the periodic case in {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}}, {{cite:b5d1a94d-108f-4689-99ee-92a51cad4a77}}. In the
+quantum level the key object as is well known is the FORMULA 
+operator satisfying:
+FORMULA 
+where the FORMULA -matrix associated to the
+FORMULA  Yangian is
+FORMULA 
+and obeys of course the Yang–Baxter equation
+{{cite:b10d1ffe-823b-40c1-bc53-5ba39c0ba7a7}}, {{cite:29e40458-dc3c-49d3-8ef0-eca556ec2622}}, i.e.
+FORMULA 
+We
+shall focus in this and the subsequent section in the simplest
+FORMULA  Yangian. In this case a simple solution of equation
+(REF ) is given by (on a detailed description of the
+underlying algebra see e.g. {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}}, {{cite:b5d1a94d-108f-4689-99ee-92a51cad4a77}})
+FORMULA 
+where the FORMULA 
+satisfy canonical commutation relations
+FORMULA 
+In fact this solution may
+be thought of as the quantum version of the NLS. Indeed the
+classical limit of the FORMULA  operator (REF ) gives FORMULA 
+(REF ) (for further details see {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}}). Set FORMULA  then as  FORMULA
+FORMULA 
+note that FORMULA , and FORMULA  is
+equivalent to FORMULA  (REF ) of NLS up to a gauge
+transformation i.e.
+FORMULA 
+It is more
+convenient for our purposes here to use FORMULA  with a
+rescaled spectral parameter matrix. Let us multiply (REF ) by
+FORMULA  and also set FORMULA 
+then the rescaled FORMULA  matrix may be written as:
+FORMULA 
+FORMULA .
+For the special value FORMULA  the FORMULA  operator
+reduces to a projector
+FORMULA 
+Due to the fact that the algebra
+(REF ) is equipped with a coproduct one may build tensorial
+representations and construct a spin chain like system with
+periodic boundary conditions, by introducing the quantities
+FORMULA 
+with
+FORMULA  being essentially the quantum analogous of
+(REF ) and apparently by virtue of (REF )
+FORMULA 
+By expanding FORMULA  around FORMULA  we find the corresponding involutive
+quantities exactly as in the classical case {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}}. It is
+easy to see that due to (REF ) FORMULA , then one finds
+(for more details we refer the reader to {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}})
+FORMULA 
+with
+FORMULA 
+From the latter objects one may derive lattice
+versions of the classical quantities (REF ),
+FORMULA 
+Notice that the expressions above are symmetric to FORMULA 
+so one can set FORMULA  and obtain the familiar
+expressions for the NLS system (REF ). Note also that the
+existence of an obvious pseudo-vacuum allows the implementation of
+Bethe ansatz techniques {{cite:7b7bcaeb-0515-45c1-a337-9b03d16607ee}}, {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}}, however our aim here is
+to extend such computations in the case of the integrable open
+spin chain, which is discussed in the subsequent sections.
+
+Open lattice NLS
+We come now to the case with open boundary conditions, which is
+our main concern. The underlying algebra in this case is defined
+by the reflection equation {{cite:bf471455-a5c7-4bac-9226-102f28b01dd2}}
+FORMULA 
+The tensorial type solutions of the reflection
+equation as well known is given by {{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}}
+FORMULA 
+FORMULA 
+is FORMULA -number solution of the reflection equation with the most
+general form given by {{cite:4bede07c-c400-4793-981c-3533387dfa8b}}
+FORMULA 
+Note that the explicit expression of FORMULA  is given by:
+FORMULA 
+The corresponding generating function of the
+conserved quantities of the open system is
+FORMULA 
+FORMULA , FORMULA  is
+again a FORMULA  number solution of the reflection equation. And due to
+(REF ) it is clear that integrability of the quantum system is
+ensured i.e.
+FORMULA 
+In the remaining of this section we specify the spectrum of the
+lattice NLS model with diagonal boundary conditions by means of
+the Bethe ansatz technique {{cite:7b7bcaeb-0515-45c1-a337-9b03d16607ee}}. Focusing on diagonal
+boundaries should be sufficient given that in {{cite:0be752ce-60be-48ef-9c5a-0e2ccb8a2c7e}} the
+spectral equivalence between systems with diagonal and non
+diagonal boundaries was shown by means of appropriate gauge
+transformations, but only for spin chains associated to the
+fundamental representation of FORMULA . Presumably there exist
+suitable gauge transformations for the system under consideration,
+such that the spectral equivalence is guaranteed. We shall further
+comment on this point on a separate publication. When both
+boundaries are diagonal there exists an obvious reference state
+for the transfer state
+FORMULA 
+Based on this
+observation one may in a straightforward manner derive the
+spectrum and the corresponding Bethe ansatz equations. We provide
+directly the results avoiding the technical details (for a
+detailed description we refer the reader to {{cite:8e215a10-1fb8-4e9a-bc9e-3c7900eabe4b}}). The
+spectrum of the transfer matrix is given by
+FORMULA 
+where we define
+FORMULA 
+The corresponding Bethe ansatz equations arising as analyticity
+conditions on the spectrum are:
+FORMULA 
+Notice that although we deal with an
+open spin chain and one would expect a leading order of FORMULA , we
+see a leading order of FORMULA  exactly as in the periodic case. The
+same phenomenon occurs in the boundary lattice Liouville model
+{{cite:c2450023-dc02-4528-ba08-281019be8bf0}}, and is presumably associated to the degenerate
+nature of the FORMULA  matrix (see also similar comments in
+{{cite:22fd50e4-6589-4f35-85ae-169e3d1cefc3}}). It should be emphasized that the Bethe
+ansatz equations (REF ) are of particular significance given
+that their thermodynamic analysis yields for instance
+consequential information regarding the corresponding bulk as well
+as boundary exact FORMULA  matrices of the model.
+
+The generalized lattice NLS
+We shall deal in what follows with the lattice quantum version of
+the FORMULA  NLS model. Recall that the FORMULA  Yangian FORMULA  matrix,
+solution of the Yang–Baxter equation (REF ), is given in
+(REF ). The relevant FORMULA  operator in this case is
+given by (see also {{cite:4951eded-5d80-40fd-8ca5-ef4fe6d53387}})
+FORMULA 
+Notice
+that here we set implicitly FORMULA . It will
+be also useful for the following to define
+FORMULA 
+we choose here FORMULA , which gives rise to the following explicit form:
+FORMULA 
+where FORMULA . Recall that in general we
+could have chosen any FORMULA  such that FORMULA . We shall
+focus hereafter in the case of SNP boundary conditions, given that
+they are not so widely known compared to the SP ones, especially
+in the context of integrable lattice models. The main objective in
+this section is to derive the exact spectrum and the corresponding
+Bethe ansatz equations. Note that in the SNP case the underlying
+algebra is defined by the following relation, (twisted Yangian,
+see e.g. {{cite:4ad22678-6c17-4ea8-9ac0-11beaf01eb50}})
+FORMULA 
+and
+in analogy to the classical case we define
+FORMULA 
+The generating
+function of the quantum integrals of motion in this case is
+defined as:
+FORMULA 
+FORMULA  are FORMULA -number solutions of the twisted Yangian
+(REF ). In fact, it was shown in {{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}} that any matrix
+FORMULA  is a solution of the twisted Yangian. In Appendix D
+an explicit computation of local integrals of motion for
+particular boundary conditions is presented. Based on these
+findings we present the explicit form of the boundary momentum in
+the case where FORMULA , i.e.
+FORMULA 
+We could have of course considered FORMULA , which is the case will be examined
+subsequently, but for the sake of simplicity we considered the
+aforementioned boundary conditions, which from a technical point
+of view are much easier to deal with. By comparing the bulk
+momentum given in Appendix D (REF ) with (REF ) we
+conclude that the periodic terms in (REF ) are replaced
+essentially by the last two boundary terms in (REF ), whereas
+the bulk part remains intact. Following the logic of (REF ),
+it is expected that the expression (REF ) should be a
+regularization of the continuum generalized NLS model momentum
+with particular SNP boundary conditions, exactly as it happens for
+the periodic NLS model (indeed compare the bulk continuum
+expression (REF ) with the discrete periodic analogous
+(REF )). Comments on higher conserved charges may be also
+found in Appendix D.
+To deduce the spectrum and Bethe ansatz equations of the
+generalized NLS model with SNP boundary conditions we shall
+restrict our attention to another simple case i.e.
+FORMULA . Again the spectral equivalence between
+systems with diagonal and non-diagonal boundaries is discussed in
+{{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}}, {{cite:ec160a97-9d8e-42d1-91fa-0b2f2c042066}}, for spin chains associated to the fundamental
+representation of FORMULA . The first step toward the
+diagonalization of the transfer matrix (REF ) is the
+derivation of a reference state. Indeed, in this case there exists
+an obvious reference state, that is
+FORMULA 
+The corresponding eigenvalue may be easily derived using the fact
+that FORMULA  and consequently FORMULA  satisfy
+FORMULA 
+Taking into account the latter relation we
+conclude that the actions of the transfer matrix on the pseudo
+vacuum provides the following eigenvalue:
+FORMULA 
+where we define
+FORMULA 
+The
+functions FORMULA  are essentially `boundary' contributions to the
+spectrum.
+To determine the general eigenvalue form we shall adopt the
+analytical Bethe ansatz formulation {{cite:ca7856ed-dd33-4c0c-906f-91b97fd60b74}}. The basic
+assumption within this framework is that the structure of any
+eigenvalue is similar to the pseudo-vacuum eigenvalue i.e.
+FORMULA 
+The so called
+dressing functions FORMULA  may be explicitly determined by imposing
+certain physical and algebraic requirements, such as analyticity,
+crossing, etc. We do not give all the details of the formulation,
+(for a more detailed description of the process we refer the
+reader to {{cite:f5fba11e-47f8-42ac-8ec4-952e7d9dabbd}}, {{cite:0be752ce-60be-48ef-9c5a-0e2ccb8a2c7e}}, {{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}}), but the explicit expressions
+for the dressing functions are given by:
+FORMULA 
+and in particular for  FORMULA
+FORMULA 
+Finally Bethe ansatz equations follow as
+analyticity requirements upon the spectrum, and they are written
+explicitly as:
+(i) N=2n+1:
+FORMULA 
+with FORMULA ,
+FORMULA  and define FORMULA .
+(ii) N=2n: In this case the Bethe ansatz equations for FORMULA  are the same as in the previous case. What is only
+modified is the last set of equations, which takes the form:
+FORMULA 
+Such type of boundary conditions
+were first introduced in {{cite:705459e8-ccfd-4513-8900-1037168d0de1}} for the FORMULA  spin
+chain, whereas generalizations investigated in {{cite:0be752ce-60be-48ef-9c5a-0e2ccb8a2c7e}}, {{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}}
+from the physical (Bethe ansatz) as well as the algebraic point of
+view. The associated symmetries were studied in detail in
+{{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}}, {{cite:9019ed57-5889-4499-a2d6-2a0db710ef14}}, {{cite:ec160a97-9d8e-42d1-91fa-0b2f2c042066}}, while in {{cite:9019ed57-5889-4499-a2d6-2a0db710ef14}} both SP and
+SNP boundary conditions were examined in parallel. The interesting
+observation is that the RHS of the equations above in the case
+where FORMULA  coincide with the ones associated to the
+FORMULA  algebra. In any case the Bethe ansatz equations
+(REF ) are somehow `folded' compared to the usual FORMULA 
+ones. This is expected given that folding occurs at the algebraic
+level as well (Dynkin diagrams), and only the subalgebra invariant
+under charge conjugation survives after the implementation of
+these rather unconventional boundary conditions (see also relevant
+comments in {{cite:71d5f2fc-f72d-42c5-9f5c-dd876eddf95d}}). The case of SP boundaries can be also
+treated along the same lines, and the entailed spectrum and Bethe
+ansatz equations will have the usual FORMULA  structure (the
+expressions are omitted here for brevity). More precisely the LHS
+of the Bethe ansatz equations will have exactly the same form as
+the usual FORMULA  BAE for an open chain (see e.g. {{cite:5ba85f99-cf9c-4b33-8f45-3c306967ab91}}, {{cite:7775ec26-1955-4493-b1af-656cb6490f18}}, {{cite:0be752ce-60be-48ef-9c5a-0e2ccb8a2c7e}}), while the RHS will depend explicitly on the actions of the
+diagonal entries of the FORMULA  on the
+pseudo-vacuum.
+
+Discussion
+To summarize, SP and SNP boundary conditions were studied for the
+classical generalized NLS model, and the boundary integrals of
+motion as well as the relevant classical equations of motion were
+explicitly derived. This was the first time, to our knowledge,
+that SNP boundaries were implemented in the context of the
+generalized NLS model. Nevertheless, there are still several open
+questions especially regarding the locality of some of the
+integrals of motion for particular choices of left/right
+boundaries, which however will be left for future investigations.
+In the same spirit the usual (FORMULA ) NLS model with reflecting
+impurities was also analyzed. Moreover, a suitable lattice version
+of the generalized NLS model was considered and the SNP boundary
+conditions were implemented, given that in general they are much
+less studied in this context. For this choice of boundary
+conditions we were able to specify the first non-trivial local
+integral of motion i.e. the `boundary momentum'. We also derived
+the spectrum and Bethe Ansatz equations for the simplest
+left/right boundaries.
+Although SP boundary conditions are somehow the obvious ones in
+the framework of lattice integrable models, they have not been
+really considered up to now in classical continuum integrable
+theories. Therefore, it will be our next goal to impose the SP
+boundary conditions to other well known classical systems such as
+(massless) affine Toda field theories, principal chiral models,
+etc. In addition, the investigation of the generalized (m)KdV
+hierarchies {{cite:ed74e043-d555-406a-9d35-ce1c16cf6208}} with integrable boundaries is another very
+interesting direction to pursue together with their quantization
+into an appropriate lattice version (see e.g. {{cite:81724f5b-3c67-442f-aa43-5d654739e6f8}} and
+references therein). Once this point is clarified, the study of
+the underlying dynamical symmetries constrained by integrable
+boundary conditions could be discussed in full generality along
+the lines described in {{cite:a812d7b7-5fce-43d8-83f6-f9667d06bf3f}}, and this would definitively
+shed new light on the character of the different integrable
+boundary conditions. More precisely, it would be of great
+consequence to examine how the so called hidden symmetries
+constructed in {{cite:a812d7b7-5fce-43d8-83f6-f9667d06bf3f}} are modified in the presence of
+non-trivial integrable boundaries, and in particular in the case
+of (quantum) twisted Yangians. Finally, an interesting direction
+to pursue is the explicit derivation of the modified Lax pairs by
+means of the `boundary' integrals of motion. We hope to report on
+all these issues in forthcoming publications.
+Acknowledgments: This work was supported by
+national and local (Bologna section) INFN through grant TO12,
+Italian Ministry of University and Research through a PRIN grant,
+NATO Collaborative Linkage Grant PST.CLG.980424, and the European
+Network `EUCLID'; `Integrable models and applications: from
+strings to condensed matter', contract number
+HPRN–CT–2002–00325.
+
+Appendix
+In this appendix the classical integrability for models with both
+types of boundary conditions, SP and SNP, is reviewed. The first
+step in order to prove the classical integrability is to show that
+the quantities introduced in (REF ) are indeed
+representations of the algebras defined by (REF ). To
+achieve this we shall need in addition to (REF ) the
+following set of algebraic relations emerging essentially from
+(REF ), i.e.
+FORMULA 
+Our aim now is to show
+that (REF ) are satisfied by (REF ):
+FORMULA 
+and making use of (REF ), (REF ) and
+(REF ) we end up to (REF ). Recall also that
+FORMULA -number solutions of the above equations satisfy the following
+FORMULA 
+which is equivalent to (REF ).
+We may now show exploiting (REF ) and (REF ) the
+classical integrability (REF ). Indeed consider the
+following object
+FORMULA 
+then taking the trace in both spaces 1 and 2, and considering
+the defining relations (REF ), (REF ) we end up with
+FORMULA 
+Finally moving appropriately the factors of the products within
+the trace and using (REF ) it is straightforward to show
+FORMULA 
+and this concludes our proof.
+Similar arguments hold also in the case of dynamical boundaries
+discussed in section 3.3.
+
+Appendix
+We present here some technical details on the derivation of the
+conserved quantities for the generalized NLS model on the full
+line. The first step is to insert the ansatz (REF ) in
+equation (REF ). Then we separate the diagonal and off
+diagonal part and obtain the following expressions:
+FORMULA 
+where the superscripts FORMULA  denote the
+diagonal and off diagonal part of the product FORMULA .
+Recall that FORMULA  then it is straightforward to obtain:
+FORMULA 
+Substituting the latter expressions
+(REF ) in (REF ), we obtain
+FORMULA 
+And recalling that
+the leading contribution in the expansion of (FORMULA ), –FORMULA 
+is given in (REF )– as FORMULA  is coming
+from the FORMULA  term we conclude:
+FORMULA 
+Due to (REF ) it is obvious
+that in this case it is sufficient to derive the coefficients
+FORMULA  only. In any case one can show that the coefficients
+FORMULA  satisfy the following equations:
+FORMULA 
+Finally setting FORMULA  and using (REF ) we find
+expressions for FORMULA  reported in (REF ). In the
+case with integrable boundary conditions, we shall need in
+addition to (REF ) the following objects:
+FORMULA 
+
+Appendix
+In what follows we evaluate the boundary terms contributing to the
+Hamiltonian for right and left boundary described by the more
+general, diagonal and non-diagonal, solutions of the reflection
+equation (SP boundary conditions). Moreover, for the SNP boundary
+conditions we identify the corresponding integrals of motions, and
+we explicitly evaluate the first non-trivial charge.
+SP boundary conditions
+We shall expand the generic object (REF ) keeping of course
+only diagonal contributions. More precisely, as in the bulk case
+due to the fact that the leading order is FORMULA  as
+FORMULA  the only non negligible part is coming from
+the FORMULA  terms, hence we shall only consider such
+contributions:
+FORMULA 
+Again considering only the
+contribution of the term FORMULA  as FORMULA 
+we end up with the following expression
+FORMULA 
+Recall from (REF ) that the boundary
+contribution lies basically in the logarithmic function, hence one
+has to expand the log i.e.
+FORMULA 
+where FORMULA , provide essentially the boundary
+contribution to the integrals of motion (plus possible total
+derivatives from the bulk part) for the left right boundary
+respectively. The interesting observation is that the boundary
+contribution decouples nicely to terms associated to left and
+right boundary separately, i.e. no mixing occurs
+FORMULA 
+(a) We first consider generic non diagonal boundary
+conditions described by (REF ). One can explicitly evaluate
+FORMULA  for the generic case:
+FORMULA 
+In fact it is
+clear from the expansion of the left and right boundary
+contribution that FORMULA .
+Given that there is an overall derivative from the bulk part of
+FORMULA , giving rise to a boundary term (FORMULA ), we conclude that the boundary contribution to the
+conserved quantity FORMULA  (i.e. the Hamiltonian) is given by
+FORMULA 
+where FORMULA  is the boundary
+potential, and recall that FORMULA  is given by (REF ). For
+diagonal boundary, terms proportional to FORMULA  apparently
+disappear, and the Hamiltonian reduces to (REF ). For a
+purely antidiagonal boundary only terms proportional to FORMULA 
+survive, all the other terms disappear.
+(b) The more general diagonal boundary conditions are
+described by (REF ). We associate the integers FORMULA 
+and the free parameters FORMULA  to the right/left boundaries.
+In this case from the expansions (REF ) and taking into
+account (REF ), (REF ) we find:
+FORMULA 
+similar expressions of
+course hold for FORMULA , i.e. FORMULA : FORMULA . Taking into account
+(REF ), (REF ) and derivative contribution from the
+bulk (FORMULA ) we conclude
+that the boundary contribution to the Hamiltonian is given by:
+FORMULA 
+Note that
+when FORMULA  one recovers the diagonal limit of the more
+general case (a).
+(c) Finally the case where FORMULA  may be
+treated in the same spirit. In this case we find that
+FORMULA 
+and the corresponding boundary
+contribution to the Hamiltonian is given by
+FORMULA 
+
+SNP boundary conditions
+Recall that in this case the object under consideration is given
+in (REF ), also we consider for simplicity FORMULA  and we choose FORMULA . Before
+we proceed with the evaluation of the integrals of motion let us
+first introduce some useful notation
+FORMULA 
+recall FORMULA , and also one may easily compute that
+FORMULA 
+We shall need the following
+contributions in order to evaluate the corresponding integrals of
+motion:
+FORMULA 
+Also
+bearing in mind that the leading contributions in the considered
+expansion, as FORMULA , are coming from FORMULA  and
+FORMULA  for FORMULA  we may write:
+FORMULA 
+Gathering all the information
+given above we end up with the following expression
+FORMULA 
+Finally taking into
+account the information provided above
+(REF )–(REF ) we may express the first non-trivial
+integrals of motion as:
+FORMULA 
+Notice that in general due to the presence of FORMULA  in
+(REF ) non-local terms seem to arise in the higher
+integrals of motion, which is quite an unusual issue and shall be
+addressed elsewhere. Nevertheless, a straightforward computation
+of the higher charges, based on the explicit expression
+(REF ), may prove the locality or not of the higher
+integrals of motions. Moreover, the presence of FORMULA 
+alters the structure of the bulk part of the integrals as well.
+The latter integral of motion (REF ) gives rise to a
+`modified' number of particles, FORMULA .
+
+Appendix
+In this appendix we shall evaluate the first integrals of motion
+of the quantum discrete FORMULA  NLS model with SNP boundary
+conditions. This model may be also regarded as a higher rank
+algebraic extension of the FORMULA  DST model (see e.g.
+{{cite:22fd50e4-6589-4f35-85ae-169e3d1cefc3}}), holding a special place between the FORMULA 
+quantum spin chains –extensions of the Heisenberg model– and the
+FORMULA  generalization of the Toda chain. To explicitly specify the
+local integrals of motions of the model with open boundary
+conditions we shall, as usual, consider the asymptotic expansion
+of the generating function FORMULA . We shall focus
+here on the simple case where both left and right boundaries are
+given by FORMULA , and
+effectively we shall expand
+FORMULA 
+and recall FORMULA  is given by (REF ).
+Indeed after expanding in powers of FORMULA  we obtain
+FORMULA 
+where
+the quantities FORMULA  are defined below
+FORMULA 
+In the expressions above all the lower indices denote the site of
+the spin chain, while the upper indices denote the component of
+the FORMULA  dimensional vector fields.
+We may easily obtain first the bulk integrals of motion by
+considering the expansion FORMULA . Indeed for the bulk case after simply taking the
+trace of FORMULA  we obtain
+FORMULA 
+The quantities identified as the number of
+particles and the momentum in the NLS model are given by the
+following expressions
+FORMULA 
+and more precisely
+FORMULA 
+We come now to the open NLS model, and we
+consider the expansion of (REF ). The first charge of the
+open model is zero, that is the number of particles is not a
+conserved quantity anymore. The second charge is given by
+FORMULA 
+and corresponds to the momentum FORMULA , which is obviously modified due to the presence
+of the open boundaries. The third charge again is trivial,
+involving only boundary terms. We do not compute any higher
+conserved charges, but we may rather safely conjecture that the
+only non-trivial conserved charges are the even ones.

@@ -1,0 +1,480 @@
+
+
+
+ FORMULA FORMULA
+
+Studying possible CP-violating Higgs couplings through
+top-quark pair productions at muon colliders
+
+Zenrō HIOKI FORMULAE-mail address:
+hioki@ias.tokushima-u.ac.jp, Takuya KONISHI FORMULAPresent affiliation:
+NEC System Technologies, Ltd. and Kazumasa OHKUMA FORMULAE-mail address:
+ohkuma@fukui-ut.ac.jp
+
+FORMULA  Institute of Theoretical Physics, University of Tokushima
+Tokushima 770-8502, Japan
+FORMULA  Graduate School of Human and Natural Environment
+Sciences,
+University of Tokushima
+Tokushima 770-8502, Japan
+FORMULA  Department of Information Science, Fukui University of Technology
+Fukui 910-8505, Japan
+
+ABSTRACT
+
+We study possible anomalous FORMULA -violating Higgs couplings to
+FORMULA  and FORMULA  fully model-independent way
+through top-quark pair productions at muon colliders. Assuming
+additional non-standard neutral Higgs bosons, whose couplings
+with top-quark and muon are expressed in the most general
+covariant form, we carry out analyses of effects which they
+are expected to produce via FORMULA -violating asymmetries and also
+the optimal-observable (OO) procedure under longitudinal and
+transverse muon polarizations. We find the measurement of the
+asymmetry for longitudinal beam polarization could be useful to
+catch some signal of FORMULA  violation, and an OO analysis might
+also be useful if we could reduce the number of unknown parameters
+with a help of other experiments and if the size of the parameters
+is at least FORMULA .
+PACS: 12.60.Fr, 13.66.Lm, 14.65.Ha, 14.80.Cp
+Keywords:
+extra Higgs boson, top-quark, muon colliders
+
+
+1.FORMULA Introduction
+
+It is widely known that the standard model of the electroweak
+interaction (SM) has been so far quite successful in describing
+various phenomena below the electroweak scale with high precision.
+Its top-quark and Higgs-boson sectors are however still not
+fully-tested part of the model. If there exists any new physics
+beyond the SM within our reach, its effects will be likely to
+appear in those sectors. Therefore it is worth to look for
+experiments which allow for a comprehensive investigation of
+top-quark and Higgs-boson properties.
+Anomalous top-quark interactions could be tested, for instance,
+at the FORMULA  colliders in the International Linear Collider
+(ILC) project {{cite:7a943773-adf2-4ac2-afc7-2f63401ac11e}}. However it is not easy to study Higgs
+sector thereby. Muon colliders were proposed as an ideal machine
+to explore Higgs properties {{cite:0599c6ff-c037-4f39-b1a8-2c84d917a919}}. From a purely theoretical
+point of view, muon colliders are quite similar to FORMULA 
+colliders, but the fact that a muon is much heavier than an
+electron could provide with a non-negligible difference in
+phenomenological studies of Higgs sector.
+Indeed many authors have studied how to analyze Higgs-top
+interactions at muon colliders. Most of them focused
+on the resonance region, i.e., direct Higgs productions, and/or
+FORMULA  in the framework of some
+specific models with multi Higgs doublets, like MSSM,
+and pointed out that a muon collider will be a useful tool to
+identify FORMULA  properties of Higgs scalars {{cite:0599c6ff-c037-4f39-b1a8-2c84d917a919}}–{{cite:b4d96845-c927-4d3d-8794-6bdf82b93850}}.
+As a complementary work to them, we study in this article possible
+anomalous Higgs interactions with FORMULA  and FORMULA  in a
+fully model-independent way through FORMULA 
+processes. Our main purpose is to clarify to what extent we would
+be able to draw a general conclusion on those interactions without
+assuming any particular models at muon colliders in off-resonance
+region. In other words, we aim to study the possibility and limit
+of muon colliders for model-independent analyses of possible new
+physics in the top-quark and Higgs-boson sectors.
+After describing our calculational framework in section 2, we compute
+FORMULA -violating asymmetries for both longitudinal and transverse beam
+polarizations in section 3, where based on the results we also discuss
+a detectability of the anomalous-coupling parameters. In section 4,
+we study whether the optimal-observable procedure is effective when
+we try to determine the anomalous parameters separately. Finally, a
+summary is given in section 5.
+
+
+2.FORMULA Framework
+
+As mentioned in Introduction, we perform a model-independent analysis
+of possible non-standard Higgs interactions with top-quark/muon for
+longitudinal and transverse beam polarizations. Let us summarize our
+framework first which is the basis of our calculations. Throughout
+this paper, we express the standard-model Higgs as FORMULA  and the
+non-standard neutral Higgs as FORMULA .
+Effective amplitude
+The invariant amplitude of FORMULA 
+corresponding to Figure REF  is given as follows:
+FIGURE 
+FORMULA 
+where FORMULA  are the standard FORMULA  and FORMULA  exchange terms
+FORMULA 
+with
+FORMULA 
+FORMULA  being the propagators multiplied by the coupling constants
+FORMULA 
+FORMULA , FORMULA , FORMULA  being the elementary charge, the FORMULA  gauge
+coupling, the Weinberg angle respectively, and
+FORMULA ,
+FORMULA  is the standard Higgs-boson exchange term
+FORMULA 
+while FORMULA  is the non-standard Higgs exchange contribution, for
+which we assume the most general covariant form:
+FORMULA 
+with
+FORMULA 
+(FORMULA ), FORMULA  and FORMULA  being the total decay width and
+the vacuum expectation value of the SM Higgs field. We treat
+FORMULA  and FORMULA  as complex numbers to take into account
+the possibility that they are form factors.
+Readers may claim that we assume only one additional Higgs-boson in spite
+of our statement that we perform a fully model-independent analysis.
+In fact, our frame can incorporate any number of Higgs exchange terms.
+It will be clear by re-expressing such an amplitude as
+FORMULA 
+Thus, all the contributions can be packed into our parameters as
+follows:
+FORMULA 
+Beam polarization
+The beam polarization, FORMULA , along one axis (polarization axis) whose direction
+is defined by a unit vector FORMULA  is given by
+FORMULA 
+where FORMULA  is the number density of the particle
+in each beam whose spin component on this axis is FORMULA .
+We can take into account this polarization by multiplying
+the spin vector FORMULA  in the projection operator
+FORMULA  and FORMULA 
+by FORMULA . That is,
+we are to use FORMULA  as the spin vector in its rest frame.
+In the following, we choose the direction of FORMULA  as the FORMULA  axis
+and express the azimuthal angle of FORMULA  as FORMULA . Then the degree of
+the longitudinal polarization is given by FORMULA , that of the
+transverse polarization by FORMULA , and consequently
+FORMULA 
+The FORMULA  and FORMULA  spin vectors in the FORMULA  CM frame are
+obtained from (REF ) via appropriate Lorentz transformations as
+FORMULA 
+where
+FORMULA 
+and the momenta of FORMULA  and FORMULA  in this frame are
+FORMULA 
+
+
+3. FORMULAFORMULA -violating asymmetries
+
+It is straightforward to calculate the cross section
+FORMULA  starting from amplitude
+(REF ) as
+FORMULA 
+We perform this via FORM {{cite:01257757-f098-4a8f-bf89-0ea85d5042e5}}, but the analytical result is a
+bit too long to give here explicitly. Therefore we show in the following
+our results numerically. Throughout our analysis in this article,
+we take FORMULA  or FORMULA . It may seem to be an extreme and
+unrealistic assumption, but we chose the polarization this way
+because our aim here is to know “to what extent" we could know
+about the anomalous interaction (REF ), i.e., we would
+like to study the possibility and limit of muon colliders for
+model-independent analyses of new physics beyond the standard
+model.
+Numerical results
+We study two FORMULA -violating asymmetries FORMULA  and FORMULA , the
+former of which is the one for longitudinal beam polarization
+FORMULA 
+and the latter is the one for transverse polarization
+FORMULA 
+where FORMULA  express the cross sections for
+FORMULA , while FORMULA  are
+the ones for FORMULA  with FORMULA . We here chose FORMULA  to be FORMULA  since it maximizes
+the FORMULA -violation effects (see, e.g., {{cite:b4d96845-c927-4d3d-8794-6bdf82b93850}}).
+Concerning the decay widths of FORMULA  and FORMULA , FORMULA , they
+are of course different quantities, but we use the same formula for
+FORMULA  as FORMULA  within the standard model
+{{cite:ae3a7902-2a40-452a-822a-b32dec310329}} (see the later discussions). The other SM
+parameters are taken as follows:
+FORMULA 
+
+FORMULA 
+In Figures REF  and REF  are presented FORMULA  as functions of
+FORMULA  and FORMULA , while in Figures REF  and REF  are given
+FORMULA  in the same way for FORMULA  as an example to sketch a
+rough feature of these quantities. We find that the absolute value of
+FORMULA  could be sizable, but that of FORMULA  is very small.
+FIGURE 
+FIGURE 
+It may seem strange that there appears such big difference between
+FORMULA  and FORMULA  though they are both FORMULA -violating asymmetries computed
+with the same anomalous parameters. The reason is in their denominators.
+In the case of FORMULA , not only the numerator FORMULA  but
+also the denominator receives little contribution from FORMULA  exchange
+terms, while they can contribute to FORMULA  without being
+suppressed except in the difference FORMULA .
+Indeed if we focus on the numerators alone, there is only small difference
+between FORMULA  and FORMULA . For FORMULA  GeV and FORMULA  GeV with the same
+anomalous couplings as in the figures, e.g.,
+FORMULA 
+It is obvious that the peaks in FORMULA  are all due to the FORMULA  propagator,
+but readers might wonder why FORMULA  changes its sign while FORMULA  not in the
+vicinity of FORMULA . Therefore, it would also be helpful to give a brief
+explanation here about those different behaviors of them. As mentioned above,
+FORMULA  receive sizable contributions from FORMULA 
+exchange terms. This means the interference between the FORMULA -exchange
+and FORMULA -exchange terms, which is proportional the FORMULA  propagator, is
+important in FORMULA , and its sign changes thereby depending on whether
+FORMULA  or FORMULA . On the other hand, this is no longer the case
+for FORMULA  since the FORMULA -exchange terms are suppressed in both
+FORMULA  and FORMULA . Therefore the sign of FORMULA  is determined by
+the difference of FORMULA , where the size of the amplitude
+FORMULA  itself is much more crucial. Here we chose FORMULA  as
+an illustration, which makes FORMULA  larger than FORMULA  and leads to
+positive FORMULA  as will be understood from eq.(REF ) on FORMULA 
+and a similar calculation for FORMULA . This also tells us that
+different parameters, e.g., FORMULA  could make FORMULA  negative.
+Detectability of the asymmetry
+Let us study the detectability of FORMULA , that is, the expected
+statistical precision in its measurement, which tells us how precisely
+we would be able to determine FORMULA . For instance if we take
+FORMULA 500 GeV with FORMULA , FORMULA 
+becomes 0.73, while the cross sections are
+FORMULA  fb and FORMULA  fb,
+leading to FORMULA  events for an integrated luminosity
+FORMULA  500 fbFORMULA , where we expressed the detection efficiency of FORMULA 
+productions as FORMULA . They are combined to give the following statistical
+uncertainty:
+FORMULA 
+Consequently, the expected statistical significance FORMULA  is
+FORMULA 
+That is, we can confirm FORMULA  at FORMULA  level.
+For example, FORMULA  for FORMULA . Here, assuming
+FORMULA  500 fbFORMULA  may be a bit too optimistic, but we used this value
+considering that we aim to find the possibility and limit of the muon
+colliders as mentioned in the beginning of this section. It is easy to
+transform our numerical results for any other FORMULA .
+We have given an example of FORMULA  for FORMULA 500 GeV, but
+it is not general, so let us show the results for some other
+FORMULA  in Table REF , changing also the parameters as FORMULA .
+There we find that we would be able to observe some signal of FORMULA  violation
+as long as we are not too far from the FORMULA  pole.
+
+TABLE 
+We used the SM formula for FORMULA  as an appropriate
+approximation (FORMULA 67.5 GeV for FORMULA 500 GeV {{cite:ae3a7902-2a40-452a-822a-b32dec310329}}), since we
+did not introduce any new light particles that can appear in the final
+state of FORMULA  and FORMULA  decays. Strictly speaking, however, a new mode like
+FORMULA  might be possible for FORMULA  150 GeV and FORMULA  500 GeV.
+Instead of re-computing FORMULA  including such new modes, which
+demands us to assume a concrete form of those couplings, we give FORMULA 
+for FORMULA  80 and 100 GeV with FORMULA  in Table REF , which tells us that
+our conclusion would not be affected so much, especially in the off-resonance region.
+
+TABLE 
+Parameter dependence of the asymmetry
+Measuring FORMULA  would be quite interesting, but what FORMULA  receives is
+of course one single combination of contributions from all the anomalous
+parameters. We are performing a model-independent analysis of possible
+new-physics effects, but once we get actual experimental data, our results
+are going to be applied for a realistic model building. If FORMULA  does not
+depend on some parameters so much, it will be hard to test any models in
+which those parameters play a significant role. Therefore it must be
+important to see how FORMULA  depends on each parameter.
+TABLE 
+Let us study how FORMULA  changes when we vary one parameter
+from 0.0 to 0.3. The results are given in Tables REF  and REF ,
+where FORMULA  are presented for one of the parameters = 0.0, 0.1, 0.2 and
+0.3 with the others being fixed to be 0.2. There we observe that FORMULA 
+receives a contribution from every parameter though there are some differences
+among them, which indicates that any model will be testable through measuring
+FORMULA .
+TABLE 
+
+
+4.FORMULA Optimal-observable analysis
+
+The optimal-observable technique {{cite:ad7066a7-659f-47db-8ecd-40cd475e84b3}} is a useful tool
+for estimating expected statistical uncertainties in various
+coupling measurements. Suppose we have a cross section
+FORMULA 
+where FORMULA  are known functions of the final-state
+variables FORMULA  and FORMULA 's are model-dependent coefficients.
+The goal is to determine the FORMULA 's. This can be done by using
+appropriate weighting functions FORMULA  such that FORMULA . In general different choices for
+FORMULA  are possible, but there is a unique choice for which the
+resultant statistical error is minimized. Such functions are given by
+FORMULA 
+where FORMULA  is the inverse matrix of FORMULA  which
+is defined as
+FORMULA 
+When we use these weighting functions, the statistical uncertainty
+of FORMULA  is obtained as
+FORMULA 
+where FORMULA  and FORMULA  is the total
+number of events.
+We study whether we could get more information of the anomalous parameters
+via this procedure. Here we focus on the longitudinal beam polarization,
+since we found that it is practically impossible to catch any new-physics
+signal for the transverse beam polarization even when we could fully use
+the total cross sections.
+In oder to apply this technique to our analysis, we need to express
+the angular distribution of the produced top quark in terms of the
+anomalous-coupling parameters like eq.(REF ). We have
+altogether eight independent
+parameters since we assumed the all couplings FORMULA  and FORMULA 
+to be complex. Although our aim is to perform an analysis as
+model-independently as possible, it will be too complicated to treat
+them all equally. Therefore we here assume that the size of the imaginary
+part of each parameter is much smaller than that of its real part. Since
+the imaginary part of parameters (form factors) is often produced
+through higher order loop corrections in an underlying theory, this
+assumption is not unreasonable. We also drop the terms quartic in
+the anomalous parameters.
+With this reduced parameter set and assumption, the top-quark angular
+distribution should be represented as
+FORMULA 
+where FORMULA  expresses the SM contribution,
+FORMULA 
+and FORMULA  are all independent of each other.
+If we reverse the signs of FORMULA  and FORMULA , we get
+FORMULA .
+Practically, however, FORMULA  and FORMULA  become
+equivalent in the limit of FORMULA . We can see this as follows:
+In calculating FORMULA , the muon-spinor part
+becomes
+FORMULA 
+in the limit. That is, FORMULA  and FORMULA  contribute almost equally
+to FORMULA , which leads to
+FORMULA 
+Since we keep FORMULA  finite, it is in principle possible to perform
+an analysis treating all FORMULA  as independent functions, but
+it is clear that we end up having very poor precision thereby
+{{cite:7f663977-d8a4-4617-8ba9-4177a3c1b2ca}}.
+Therefore we neglect their differences from the beginning and start from
+FORMULA 
+where FORMULA , FORMULA ,
+FORMULA , FORMULA  and FORMULA .
+Using these functions we obtain the following results as the matrix
+(REF ) for FORMULA  GeV and FORMULA  GeV:
+FORMULA 
+where we used FORMULA  for FORMULA  in eq.(REF ).
+We then compute the FORMULA  and FORMULA  elements of the inverse matrix of
+FORMULA :
+FORMULA 
+This means the expected statistical uncertainty in FORMULA 
+measurements are
+FORMULA 
+This tells us that we need FORMULA  fbFORMULA  for achieving
+FORMULA  and FORMULA  fbFORMULA  for FORMULA ,
+which are both far beyond our reach!
+We then assume one of the parameters is determined in some other
+experiments in order to look for realistic solutions. First, if FORMULA 
+was unknown (i.e., if FORMULA  was measured elsewhere), the corresponding
+precision becomes FORMULA , i.e., FORMULA 
+for FORMULA  fbFORMULA . We give also results for some other FORMULA 
+in Table REF . Conversely, if FORMULA  is undetermined (i.e.,
+only FORMULA  is known), we have
+FORMULA , i.e., FORMULA  for FORMULA  fbFORMULA .
+Some other results are in Table REF .
+TABLE 
+
+TABLE 
+Therefore, if the size of FORMULA  is FORMULA , there is some hope to
+catch new-physics signal thereby. On the other hand, FORMULA 
+is required to be at least FORMULA . Note that it is never unrealistic
+to assume FORMULA  to be FORMULA  as is known in various
+models with two (or multi) Higgs-doublets (see, e.g., {{cite:d3537820-ef16-406c-a247-b69f0fafe1d7}}
+and the references therein).
+What we could know via FORMULA  measurements is only on FORMULA  violation,
+while FORMULA  are both combinations of FORMULA -conserving and
+FORMULA -violating parameters. Therefore those two approaches could work
+complementarily to each other.
+
+
+5.FORMULA Summary
+
+We have carried out a model-independent analysis of possible
+non-standard Higgs interactions with FORMULA  and FORMULA 
+through top-quark pair productions at future muon colliders. As
+was pointed out in Refs.{{cite:0599c6ff-c037-4f39-b1a8-2c84d917a919}}–{{cite:b4d96845-c927-4d3d-8794-6bdf82b93850}}, the muon colliders are
+quite useful for studying the Higgs sector around the resonance.
+Considering those preceding studies, our main purpose here was to
+see if we could also draw any useful information in the off-resonance
+region without depending on any specific models.
+Starting from
+the most general covariant amplitude, we computed two FORMULA -violating
+asymmetries for longitudinal and transverse beam polarizations in
+order to see if we could get any signal of new-physics which breaks
+FORMULA  symmetry, and also studied whether we could determine the
+non-standard-coupling parameters separately through the
+optimal-observable (OO) procedure as a more detailed analysis.
+We found that the longitudinal FORMULA -violating asymmetry FORMULA  would be
+sizable, while the transverse asymmetry FORMULA  is too small to be a
+meaningful observable. We then estimated the detectability of FORMULA 
+and showed that we would be able to observe some signal of FORMULA  violation
+as long as we are not too far from the FORMULA  pole. We also studied there
+in some detail how FORMULA  depends on each parameter, and found that we
+have no parameter that contribute little, although there are some
+differences among the parameters.
+On the other hand, more detailed
+analyses via the OO procedure seem challenging. However, if we could
+reduce the number of unknown parameters with a help of other experiments,
+and if the size of the parameters is at least FORMULA , we
+might be able to get some meaningful information thereby. Readers may
+claim that the use of the asymmetry FORMULA  is enough when we have only
+one unknown parameter, but this is not necessarily true. What we could
+draw from FORMULA  is information on pure FORMULA  violation, while we could
+also know something about FORMULA -conserving part through an OO analysis.
+In our approach, we need the total cross section of FORMULA  and the angular distribution of the final top quark, for
+which we only have to reconstruct the top-quark jet axis. If we further
+try to study, e.g., the final lepton distributions in the
+top-quark decays, we could get additional information on possible
+anomalous FORMULA  coupling, however in that case we would suffer from
+another suppression factor, i.e., the branching ratio of the top-quark
+semileptonic decay. Therefore it will be more advantageous to use
+the top-quark distribution as a whole when performing off-resonance
+analyses at muon colliders.
+
+ACKNOWLEDGMENTS
+
+We are grateful to Federico von der Pahlen for giving us a valuable
+comment about the integrated luminosity we used in the text and also
+pointing out some typos in the manuscript.
+This work is supported in part by the Grant-in-Aid for Scientific
+Research No.13135219 and No.16540258 from the Japan
+Society for the Promotion of Science, and the Grant-in-Aid
+for Young Scientists No. 17740157 from the Ministry of
+Education, Culture, Sports, Science and Technology of Japan.
+The algebraic calculations using FORM were carried out
+on the computer system at Yukawa Institute for Theoretical
+Physics (YITP), Kyoto University.
+
+REFERENCES
+[99]
+See ILC web site
+¦http://www.linearcollider.org/cms/¦.
+V.D. Barger, M.S. Berger, J.F. Gunion and T. Han,
+¦Phys. Rev. Lett.¦ ¦75¦ (1995), 1462 (hep-ph/9504330);
+V.D. Barger, M.S. Berger, J.F. Gunion and T. Han,
+Phys. Rept. 286 (1997), 1 (hep-ph/9602415).
+B. Grzadkowski and J.F. Gunion,
+¦Phys. Lett.¦ ¦B350¦ (1995), 218 (hep-ph/9501339);
+D. Atwood and A. Soni,
+Phys. Rev. D52 (1995), 6271 (hep-ph/9505233);
+S.Y. Choi and J.S. Lee,
+Phys. Rev. D61 (2000), 111702 (hep-ph/9909315);
+E. Asakawa, A. Sugamoto and I. Watanabe,
+Eur. Phys. J. C17 (2000), 279 ;
+E. Asakawa, S.Y. Choi and J.S. Lee,
+Phys. Rev. D63 (2001), 015012 (hep-ph/0005118).
+See also: A. Pilaftsis,
+Phys. Rev. Lett. 77 (1996), 4996 (hep-ph/9603328).
+B. Grzadkowski, J.F. Gunion and J. Pliszka,
+¦Nucl. Phys.¦ ¦B583¦ (2000), 49 (hep-ph/0003091).
+J.A.M. Vermaseren, “¦Symbolic Manipulation with FORM¦FORMULA ", version 2,
+Tutorial and Reference Manual, CAN, Amsterdam 1991, ISBN 90-74116-01-9.
+A. Djouadi, J. Kalinowski and M. Spira,
+¦Comput. Phys. Commun¦. ¦108¦ (1998), 56 (hep-ph/9704448).
+D. Atwood and A. Soni,
+¦Phys. Rev.¦ ¦D45¦ (1992), 2405;
+M. Davier, L. Duflot, F. Le Diberder and A. Rouge,
+Phys. Lett. B306 (1993), 411;
+M. Diehl and O. Nachtmann,
+Z. Phys. C62 (1994), 397;
+J.F. Gunion, B. Grzadkowski and X.G. He,
+Phys. Rev. Lett. 77 (1996), 5172 (hep-ph/9605326).
+B. Grzadkowski, Z. Hioki, K. Ohkuma and J. Wudka,
+¦Nucl. Phys.¦ ¦B689¦ (2004), 108 (hep-ph/0310159);
+¦Phys. Lett.¦ ¦B593¦ (2004), 189 (hep-ph/0403174);
+¦JHEP¦ ¦0511¦ (2005), 029 (hep-ph/0508183).
+J.F. Gunion, H.E. Haber, G. Kane and S. Dawson,
+“¦The Higgs Hunter's Guide¦", Perseus Publishing, Cambridge, Massachusetts.
+

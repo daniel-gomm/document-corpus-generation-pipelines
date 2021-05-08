@@ -1,0 +1,462 @@
+
+
+IPM/P-2007/033 arXiv:0705.3131 [hep-th]  
+
+Dual Spikes
+
+New Spiky String Solutions
+
+
+A. E. MosaffaFORMULA , B. Safarzadeh FORMULA
+
+FORMULA Institute for Studies in Theoretical Physics and Mathematics (IPM)
+P.O.Box 19395-5531, Tehran, Iran
+
+FORMULA Department of physics, School of Science Tarbiat Modares
+University, P.O. Box 14155-4838, Tehran, Iran 
+
+mosaffa, safarzadeh@theory.ipm.ac.ir 
+
+Abstract
+We find a new class of spiky solutions for closed strings in flat, FORMULA 
+and FORMULA 
+backgrounds. In the flat case the new solutions turn out to be T-dual configurations of spiky strings
+found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}. In the case of solutions living in FORMULA , we make a semi classical analysis by
+taking the large angular momentum limit. The anomalous dimension for these dual spikes is similar to that
+for rotating and pulsating circular strings in AdS with angular momentum playing the role of the level number.
+This replaces the well known logarithmic dependence for spinning
+strings. For the dual spikes living on sphere we find that no large
+angular momentum limit exists.
+Introduction
+The AdS/CFT dictionary is far from complete, the main obstacle being the strong/weak nature of
+Maldacena's conjecture{{cite:0213790f-2b74-43db-abd7-1905359f6ecb}},{{cite:faf73b0d-b5dc-4353-8039-d2093bd1b656}},{{cite:1c5ef827-bfae-4979-9cd3-7b68b0544383}}.
+In an important line of research in this context, which has been widely studied,
+certain regimes and limits have been considered where one can study both sides
+of the duality perturbatively. The main idea for this has been focusing on
+states/operators with large charges {{cite:5936a61d-e647-4f9e-90b0-fe5b25bc2a6a}},{{cite:113e92a3-dcda-4562-8f17-d10b737d1043}}.
+A large charge, FORMULA , introduces a free parameter, besides the 't Hooft coupling FORMULA ,
+into the game that can give way for some control
+over the problem. One can then define an effective 't Hooft coupling, FORMULA ,
+built from FORMULA  and FORMULA , which is held fixed in the large charge limit.
+The idea is that the world sheet loop expansions around certain classical
+string solutions with a properly chosen FORMULA , are generically suppressed by inverse powers of FORMULA 
+For this to happen one actually needs at least one large charge on FORMULA . For charges
+only inside AdS, the semi classical expressions are only reliable when FORMULA  but it is expected,
+verified by some tests, that for large charges these expressions
+can be extrapolated to perturbative field theory results
+for anomalous dimensions of the conjectured corresponding operators..
+In SYM this translates into the distinction of a class of SYM operators,
+determined by the charges, whose couplings to the rest of the operators are
+suppressed by inverse powers of FORMULA .
+The best known example in this context is the BMN case {{cite:5936a61d-e647-4f9e-90b0-fe5b25bc2a6a}}
+(see e.g. {{cite:1acfab78-d6f0-4a2e-aa8c-f96dceba6485}} for reviews). In the strict BMN limit,
+the world sheet expansion around
+a certain point-like string solution in FORMULA  terminates
+at one loop and the corresponding class of SYM operators consists only of the BMN operators,
+decoupled from the rest. Moreover, the one loop action can be solved exactly {{cite:d55ef890-a590-4c2c-95af-06e9a2b6c9d8}}
+with a closed expression for the spectrum of fluctuations around the
+classical configuration. This can be matched order by order with a perturbative
+calculation for the anomalous dimension of BMN operators which can be done when
+FORMULA .
+In some other interesting cases, adding more large charges
+can even make the one loop world sheet expansion
+sub leading and one is left with only the classical expression for the energy of
+the string configuration. That is, the classical expression gives an all loop quantum
+prediction for the field theory operators in a certain class.
+This is the case for string solutions with spin and angular
+momentum.
+In another significant development, perturbative planar calculations for
+anomalous dimensions of SYM operators led to the discovery of an integrable structure
+in the system {{cite:bd82a022-a546-4ff7-914c-17c0f683ffed}}. This came through the identification
+of the dilatation operator (see {{cite:1c5861b0-16bd-4a77-9d70-66d43ecd3dd3}}), whose eigenvalues are the scaling dimensions of
+SYM operators, with the Hamiltonian of an equivalent spin chain. The problem then
+boils down to diagonalizing the Hamiltonian by solving
+a set of Bethe equations for the spin chain. This method has had some successes even beyond
+semi classical limit and large charges, which define infinitely long chains.
+The integrability
+structure in the string theory side has also been discovered {{cite:458db47d-a8e6-46ec-a7d8-09386ff8f24a}} and further studied
+in the semi classical limit {{cite:571b9420-10e1-4c5c-98e4-40b63054676a}}. For semi classical analysis of strings
+and spin chain developments see e.g. {{cite:7872936f-e1f2-4fe1-b4ad-439e7e13b4ab}}, {{cite:9ca788e3-9b1a-4507-9a1f-e1caa7317fd5}}.
+For reviews and references on these subjects see e.g. {{cite:205f37be-e890-4db1-bef1-35de5ade52b6}}.
+In {{cite:5895f746-7f83-44c1-be28-6877150917b3}}
+a new class of string solutions in AdS space
+was found with a number of spikes on the stringSpiky strings in flat space
+as cosmic strings were studied in {{cite:8e59e1cb-6048-40a0-925f-37c6e6c636ca}}.. These
+spiky strings were identified with higher twist operators in SYM with
+each spike representing a particle in the field theory. Large angular
+momentum is provided by a large number of covariant derivatives acting on the fields which
+produce the mentioned particles. The total number of derivatives is
+distributed equally amongst the fields for these solutions. Spiky strings
+were further generalized to configurations on sphere {{cite:c7dc46b1-1591-4913-b8b8-3486e7a7b740}}. Certain limits of these
+solutions were shown {{cite:cc2ac737-fd56-4abd-aa85-a916d6bcfc39}} to correspond to giant magnons {{cite:3077bc5e-87a9-4e33-8dbb-7245eddba245}} which
+represent spin waves with a short wave length in the spin chain language. Solutions
+corresponding to multi spin giant magnons {{cite:1465e311-cacc-4235-921c-0cc77cefe202}} and those
+with a magnon like dispersion relation in M-theory {{cite:7dfb0518-ca22-4dde-b505-bf85986fcd00}} were also
+studied.
+In this paper we generalize the spiky string solutions in both AdS and sphere spaces.
+These solutions, which we will call “dual spikes", represent spiky strings with
+the direction of spikes reversed. In flat space, these dual spikes are shown to be T-dual to
+the usual ones. In AdS we will study the large angular momentum limit of the solution
+and derive its energy, FORMULA , in terms of angular momentum, FORMULA . We find that these dual spikes
+represent higher twist operators whose anomalous dimensions are similar to those of
+rotating and pulsating circular strings. That is, the anomalous dimension in
+the large FORMULA  limit is proportional to FORMULA . This replaces
+the usual logarithm dependence for folded and spiky spinning strings in AdS.
+We will argue that this is an expected behavior, as for fast spinning dual spikes
+and near the boundary, we are effectively dealing with portions of almost circular
+strings with a pulsation-like motion which is induced by a profile of string
+in the AdS radius and angular momentum. One might then conclude that the
+corresponding operators for such configurations, in addition to a large
+number of covariant derivatives, FORMULA , which induce spin in FORMULA ,
+also contain the combination FORMULA  which induce an effective pulsation.
+This last combination which contributes to the scaling dimension but not
+to spin could be responsible for a change from logarithm dependence
+to square root in the anomalous part.
+In FORMULA  however, we will
+show that unlike the usual spikes, the dual spikes have no large angular momentum limit.
+We will find the FORMULA  of nearly circular strings for the cases that the
+string lives near the pole or near the equator.
+Note Added: 
+While this work was being prepared we learned of a related work on dual spikes which
+appeared very recently {{cite:4f88474e-c910-4834-988e-197a45dbbfbf}}.
+
+Spiky strings and their T-duals in flat space-time
+In this section we find a two parameter family of solutions describing closed strings with spikes in flat space. These
+solutions fall into two distinct classes depending on whether the ratio of the two parameters is greater or
+smaller than one. One of the two classes describes the spiky string solutions found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}} and the the other one,
+as we will see in what follows, can be obtained from the first one by a T-duality transformation.
+Let us start with the Nambu-Gotto action and the following
+ansatz for the string
+FORMULA 
+where FORMULA  and FORMULA  are the world sheet and target space coordinates respectively
+and FORMULA  is a constant. For the flat target space
+FORMULA 
+and the ansatz (REF ), the NG action is found as
+FORMULA 
+where prime denotes FORMULA . The constant of motion, FORMULA , associated with the
+FORMULA  isometry is
+FORMULA 
+Plugging this constant in the equations of motion gives
+FORMULA 
+where FORMULA . One can show that FORMULA  found from (REF ) satisfies the equations of motion.
+The two constants FORMULA  and FORMULA  parameterize the solutions and, as can be seen from (REF ), they correspond to the
+radius of the lobe and cusp of the string respectively. Defining
+FORMULA 
+we can write the expressions for the energy, FORMULA , and angular momentum, FORMULA , of a segment of string
+stretched between FORMULA  and  FORMULA
+FORMULA 
+where we have defined the constant FORMULA  by
+FORMULA 
+The angle covered by the segment, FORMULA , can also be found as
+FORMULA 
+We now demand that FORMULA  number of segments make up a closed string and hence we have FORMULA  number of spikes
+on the string. This will give
+FORMULA 
+As a result, the total energy and angular momentum of the string will be found as
+FORMULA 
+with the obvious relation
+FORMULA 
+Therefore to each pair, FORMULA , corresponds a unique string configuration provided that the periodicity condition
+(REF ) is satisfied for some integer FORMULA .
+We can now identify two distinct cases; FORMULA  and FORMULA . It is readily seen that the first case
+describes the spiky solutions found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}} with the following
+relations
+FORMULA 
+and the dispersion relation
+FORMULA 
+For the second case we have the following new relations
+FORMULA 
+and the charges are related as
+FORMULA 
+One can easily check that the energy determined by the pair FORMULA  remains invariant if we switch
+to the pair FORMULA . Equivalently this amounts to interchanging FORMULA  and FORMULA .
+Under such a transformation FORMULA  goes over to FORMULA  such
+that the dispersion relation (REF ) also remains invariant.
+As can be seen from (REF ), this transformation takes an FORMULA  spike configuration in the first class
+to an FORMULA  spike configuration in the second with the same energy and vice versa.
+The whole set of transformations is thus as follows
+FORMULA 
+FIGURE 
+For a finite FORMULA , we have a closed string with FORMULA  spikes pointing outwards, FORMULA  determined by (REF ).
+As FORMULA  decreases,
+the number of spikes on the string increases until it approaches a circle which is the limiting
+string configuration for this class of solutions. This happens when FORMULA  and FORMULA .
+The complementary range of values for FORMULA , FORMULA , produces
+configurations for the string which can be obtained from the first class by the transformations in (REF ).
+This time, however, the spikes point inwards and as we decrease FORMULA , the number of spikes on the string also decreases from FORMULA 
+(a circular string) to FORMULA .
+The limiting value of FORMULA  corresponds to
+a folded string with FORMULA  which rotates in a circle of radius FORMULA  with angular momentum FORMULA .
+This configuration does not have a corresponding dual in the second class as the string segment
+for FORMULA  describes a spiral stretching from FORMULA  to FORMULA  which covers an infinite FORMULA  and
+has an infinite energyIn a recent paper {{cite:4f88474e-c910-4834-988e-197a45dbbfbf}}, such configurations
+have been studied on sphere with the name “single spikes".. So we demand that in the second family FORMULA  is at least
+equal to FORMULA  which is the minimum value that can produce a closed string with only one spike.
+In short, one can have spiky configurations with FORMULA  for FORMULA  and
+FORMULA  for FORMULA . The FORMULA  case describes a circle and is self dual.
+FIGURE 
+One can show that (REF ) is in fact a T-duality
+transformation in the FORMULA  plane.
+To see this, we find the above spiky solutions using the Polyakov action for the string.
+The following configuration is by construction a solution to the wave equations resulting from this action
+FORMULA 
+where FORMULA , FORMULA ,
+and the target space coordinates FORMULA  parameterize
+a Minkowski space. Note that there are two free parameters in this solution, FORMULA  and FORMULA .
+We further demand that the relation (REF ) holds for some FORMULA .
+This guarantees, as can be easily checked, that (REF ) satisfies periodic boundary condition
+as well as the level matching and Virasoro constraints. Therefore we find a two
+parameter family of closed string solutions determined by FORMULA .
+Each pair FORMULA , together with (REF ), describes a spiky closed string with
+FORMULA  spikes in conformal gauge.
+The condition FORMULA , where FORMULA , determines the position of cusps. This
+gives the radius of spikes at FORMULA . The condition FORMULA , on the other hand,
+gives the position of lobes which results in FORMULA  for the radius of lobes.
+For FORMULA , the solutions (REF ) are those found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}. For FORMULA 
+we recover the second class of spiky solutions discussed above. Applying the
+transformations (REF ) to a given solution, i.e. FORMULA , amounts to
+changing the sign of the left mover part of FORMULA , FORMULA . This transformation, FORMULA ,
+is of course T-duality in FORMULA  direction. We hence conclude that, as mentioned above, (REF )
+is a T-duality transformation on solutions.
+
+Dual spikes in  FORMULA
+In this section we find spiky solutions in the FORMULA  background whose spikes
+point inward, like the T-dual spikes found in the previous section. This is a
+generalization of spiky strings in FORMULA  with outward spikes found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}.
+Our main interest is the FORMULA  background, in the global coordinates, but the closed string we are
+interested in lives in the FORMULA  subspace specified by the following metric
+FORMULA 
+Our ansatz for the string configuration is the following
+FORMULA 
+The radius of FORMULA  is chosen to be one and the dimensionless worldsheet
+coupling constant is denoted by FORMULA  where it is understood that
+FORMULA  is the 't Hooft coupling in the dual field theory, FORMULA  SYM. The
+Nambu-Gotto action for the above ansatz is
+FORMULA 
+where
+FORMULA 
+The isometry direction, FORMULA , results in a constant of motion, which as
+we see below, determines the position of lobes in the string configuration and hence we denote
+it by  FORMULA
+FORMULA 
+The other free parameter of the problem, FORMULA , on the other hand, determines
+the position of cusps, FORMULA , which we define by
+FORMULA 
+From (REF ) it follows that
+FORMULA 
+One can check that if the above relation holds, the equations of motion are also satisfied.
+It is readily seen that FORMULA  and FORMULA  indeed determine the position of lobes and cusps
+on the string respectively.
+All the above relations were found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}. What we do in the following is to change the assumption
+made in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}, namely FORMULA , to FORMULA  and find a whole new family
+of solutions which, unlike their counterparts in the mentioned reference, describe strings with
+spikes pointing towards the origin of FORMULA .
+To proceed, we make the useful change of variables mentioned in {{cite:5895f746-7f83-44c1-be28-6877150917b3}} from
+FORMULA  to FORMULA  defined by FORMULA . In terms of this new variable we can write
+the following relations
+FORMULA 
+FIGURE 
+In the above relations, each integration is performed on a segment of string stretching between
+a cusp and a lobe. When we add up FORMULA  number of such segments we make a closed string with FORMULA  cusps
+provided that the angle covered by a segment satisfies FORMULA .
+The integrals written above can be computed using integral tables (see e.g. {{cite:1b77222f-d347-4a54-ae7f-8f6fd0a684ae}}). The result is
+FORMULA 
+where
+FORMULA 
+and FORMULA , FORMULA  and FORMULA  are the complete elliptic integrals of first, second and third kind
+respectively (the argument FORMULA  in FORMULA  need not be an integer and shouldn't be confused with the number of spikes)(see Appendix A).
+FIGURE 
+The argument FORMULA  appearing in the elliptic integrals varies between zero and FORMULA  and hence
+FORMULA  and FORMULA  are always of order unity. The elliptic integrals of the third kind we are dealing with, FORMULA ,
+are “circular" ones because of the relation FORMULA . These functions increase as FORMULA  and/or FORMULA  increase and
+blow up as FORMULA  approaches 1.
+Due to the complicated form of the relations, and unlike the analysis made for the flat space,
+we did not manage to make a direct and general comparison
+between the two families of spiky solutions in FORMULA , i.e. the ones we have found here with inward spikes and
+the ones found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}.
+Therefore we study some limits where the solutions simplify and/or where
+we may have a dual field theory description.
+The first limit we consider is when FORMULA . This limit corresponds to
+a small angular momentum spiky string close to the origin and reproduces the dual spikes found
+in the previous section and all the relations there apply here.
+The other limit, which for comparison with the dual field theory is of more interest, is when
+the angular momentum is large. This happens when FORMULA  which we will study in the following in some detail.
+So the limit we are interested in is when FORMULA  is fixed and FORMULA .
+The FORMULA  in this limit behave as
+FORMULA 
+In evaluating these limits we have made use of a relation which holds between the
+circular elliptic integrals and the Heuman's Lambda function, FORMULA , (see Appendix A).
+Using (REF ) it is straightforward to find the following approximate expressions
+FORMULA 
+Recalling that the number of spikes is given by FORMULA , it is evident that the limit we are
+considering describes strings with large angular momentum and fixed number of spikes. This number decreases as
+FORMULA  approaches zero FORMULA . As FORMULA  gets smaller, the angle covered by a single string segment increases
+and in the limiting case it blows up resulting in a spiral with infinite energy, like the one
+we encountered in the flat space, and is not a physically allowed configuration (See the footnote (REF )).
+FIGURE 
+We may thus assume that FORMULA  is much larger than one, to avoid the above mentioned situation.
+In this limit FORMULA  and we find the following
+expressions, which this time we write in terms of FORMULA  instead of  FORMULA
+FORMULA 
+Looking at (REF ), we require FORMULA  such that FORMULA  remains large
+and a semi classical approximation for each spike remains valid. This means that although we
+require FORMULA  to be large enough to produce a finite number of spikes, we don't want
+it to be so large to make each spike infinitesimal in size and energy.
+Gathering all the relations above we can write the dispersion relation for spiky strings in
+the limit of large angular momentum
+FORMULA 
+where in the last line we have plugged the approximate values of the elliptic integrals.
+This is to be compared with the relation obtained for the spiky strings found in {{cite:5895f746-7f83-44c1-be28-6877150917b3}}
+FORMULA 
+As can be seen, apart from a numerical factor of order of unity,
+the dispersion relation for dual spiky strings differs from
+the one for the usual spikes. This is because the dual spikes near the boundary
+look like portions of almost circular strings rather than folded ones. This changes
+the anomalous dimension from the usual logarithm dependence to square root
+which is the known behavior for rotating and pulsating circular strings in AdS.
+In the discussion section we will comment more on this point.
+
+Dual spikes on sphere
+In this section we find spiky string solutions on FORMULA  which live
+in the origin of FORMULA  and which are point-like in FORMULA  i.e. they live
+on a hemisphere with the following metric
+FORMULA 
+where FORMULA  and FORMULA .
+In {{cite:c7dc46b1-1591-4913-b8b8-3486e7a7b740}}, such solutions with spikes pointing towards the equator, FORMULA , were found.
+In the following we find solutions with spikes pointing towards the pole FORMULA . The ansatz we consider is
+FORMULA 
+The Nambu-Gotto Lagrangian for this ansatz will read
+FORMULA 
+with
+FORMULA 
+the isometry direction FORMULA  results in a constant of motion,
+which we denote by FORMULA  and is given by
+FORMULA 
+As we will see below, this constant determines the position of lobes in the string configuration.
+The other free parameter of the problem, FORMULA , determines the position of cusps by FORMULA .
+From (REF ) we find
+FORMULA 
+Here again one can check that if the above relation holds the equations of motion
+are also satisfied. In {{cite:c7dc46b1-1591-4913-b8b8-3486e7a7b740}} it was assumed that FORMULA . Here we make the assumption
+FORMULA  which will lead to a second class of spiky solutions which we call
+dual spiky strings. These strings are formed by attaching FORMULA  number of string segments
+which stretch between FORMULA  and FORMULA . The angle covered by each segment, FORMULA , and
+also the energy, FORMULA , and angular momentum, FORMULA , of the closed string are given by the following integrals
+FORMULA 
+The integrals can be computed with the following results
+FORMULA 
+where
+FORMULA 
+One can see that for this class of spiky strings the angular momentum can never be large.
+Therefore there is no limit where the world sheet corrections to the classical
+configuration become sub dominant and a semi classical analysis becomes valid.
+Despite this, and in order to simplify the expressions,
+we consider some limits of the parameters in what follows.
+First consider the case when FORMULA  and FORMULA  is fixed. In this limit FORMULA  and
+FORMULA 
+Using the above approximate expressions we can find that
+the limit FORMULA  corresponds to fixed angular momentum and large energy for each half spike.
+A string segment stretching between FORMULA  and FORMULA  looks like a spiral which covers
+a large angle. The limit therefore does not correspond to a physically valid configuration
+This configuration
+is not physical in the sense that it is not compatible with our original ansatz for the string where we
+assumed a winding number FORMULA  for the string. Including a general winding number in the ansatz
+might give rise to interesting new configurations including ones made up of spirals. In fact the
+“single spikes" of {{cite:4f88474e-c910-4834-988e-197a45dbbfbf}} which live on sphere are of this kind. For these solutions
+the infinite winding number is replacing FORMULA  in the dispersion relation to give a finite
+anomalous part. The interchange of angular momentum and winding number is reminiscent of T-duality
+relations. The dual spikes were shown to be T-duals of the usual ones in flat space.
+Such a relation in AdS and sphere between spikes and dual spikes might be an interesting
+subject to investigate..
+Next consider a nearly circular configuration with FORMULA  or FORMULA .
+For this case we have
+FORMULA 
+We therefore find
+FORMULA 
+This limit thus describes a large number of half spikes, each with a small energy and angular momentum,
+resulting in a closed string with a finite FORMULA  and FORMULA .
+If we further assume that the string is close to the equator, FORMULA  and hence
+FORMULA , we find
+FORMULA 
+This coincides with the expression found in {{cite:c7dc46b1-1591-4913-b8b8-3486e7a7b740}}
+for nearly circular spiky strings near the equator but of course, and unlike our case,
+with spikes pointing towards the equator.
+Now consider the string to be near the pole, FORMULA  and hence FORMULA .
+To find the dispersion relation we should first express FORMULA  in terms of the charges which, to
+the leading order, turns out to be
+FORMULA 
+As a result we find
+FORMULA 
+This differs from the result FORMULA  found in {{cite:c7dc46b1-1591-4913-b8b8-3486e7a7b740}} for
+nearly circular spiky strings close to the pole and with spikes pointing towards the equator.
+
+Discussion
+Here we are mainly interested in the field theory interpretation of dual spikes
+in AdS, namely the result (REF ) (remember that we did not have a large FORMULA  limit
+for dual spikes on sphere which makes the semi classical limit difficult to interpret in
+field theory). As was mentioned earlier, the result (REF ) looks like that of
+circular rotating and pulsating strings {{cite:1fc5e860-74a6-47ed-be43-aa8def09ac9d}}. This is in fact understandable
+as we will discuss below.
+Semi classical string configurations in AdS have led to the picture that spikes on
+string represent fields in SYM whereas a profile in the radius of AdS, which
+should generically be accompanied by rotation to give a string solution, are
+represented by covariant derivatives FORMULA  which also carry spin.
+The logarithm behavior of anomalous dimension for spinning strings is believed
+to be caused by the large number of derivatives as compared to fields.
+Circular rotating and pulsating stringsFor circular rotating and/or pulsating strings see for example{{cite:35098519-4be2-4954-af11-1ed5fe958a62}},{{cite:1fc5e860-74a6-47ed-be43-aa8def09ac9d}}.,
+on the other hand, have been proposed to be represented
+by self dual gauge field strengths FORMULA  (see {{cite:1fc5e860-74a6-47ed-be43-aa8def09ac9d}}). These configurations have equal rotations
+FORMULA  in the orthogonal planes of FORMULA  to stabilize and thus carry FORMULA  representation of
+FORMULA  as FORMULA . The anomalous dimension for mostly spinning strings, in these solutions,
+is like FORMULA  and is like FORMULA  for mostly pulsating ones
+where FORMULA  is the oscillation number for pulsation.
+The dual spikes we have studies in this paper, in the large FORMULA  limit and near
+the boundary, look like portions of circular rotating strings. Moreover,
+the profile in FORMULA  in addition to rotation induce a pulsating motion
+for the string as seen by an observer in fixed angle. In fact
+in the large FORMULA  limit of the dual spikes, letting FORMULA  and
+keeping FORMULA  small (with FORMULA  fixed) to keep the number of spikes finite, we get
+FORMULA 
+Here FORMULA  is replacing the oscillator number for pulsation. For smaller FORMULA 
+the portion of string near the boundary becomes more circular which reduces the
+pulsation-like movement of the string and gives a smaller oscillation number.
+One might then guess that the dual spiky strings in AdS in the large angular
+momentum limit are schematically represented by operators of the form
+FORMULA 
+The FORMULA  operators are responsible for the profile in FORMULA  as well as the rotation. The FORMULA , on the
+other hand, contribute to the dimension but not to the angular momentum. The fields FORMULA  as before
+represent the spikes on the string.
+It is clear that a better understanding of the field theory interpretation for
+these solutions needs a more careful study which we postpone to a future work.
+It might also be very interesting, though seemingly difficult,
+to find spiky solutions with a real pulsation, perhaps interpolating
+between spikes and dual spikes.
+
+Acknowledgements
+AEM would like to thank H. Arfaei for discussions and M.M. Sheikh-Jabbari
+for discussions and comments on the draft and also M.R. Maktabdaran
+for helping with the figures. We would especially like to thank M. Kruczenski for useful
+discussions and comments on the draft.
+
+Appendix A: Some useful relations for Elliptic integrals
+Here we gather some relations regarding Elliptic integrals. For a complete account see {{cite:1b77222f-d347-4a54-ae7f-8f6fd0a684ae}},{{cite:d4e12dc1-48e3-4a06-8494-0fd365c15975}}.
+The Elliptical integrals of first, second and third kind, FORMULA , FORMULA  and FORMULA  are defined as
+FORMULA 
+Complete Elliptic integrals are those with FORMULA . A usual notation is
+FORMULA 
+For the limiting case FORMULA  we have
+FORMULA 
+In the other
+limiting case  FORMULA
+FORMULA 
+For the complete Elliptic integrals of the third kind, FORMULA , the cases FORMULA  and FORMULA  are known
+as “hyperbolic" whereas those with FORMULA  and FORMULA  are known as“circular" cases. For FORMULA  we have
+the following relation
+FORMULA 
+where
+FORMULA 
+and FORMULA  is Heuman's lambda function defined as
+FORMULA 
+For FORMULA  we have
+FORMULA 
+where FORMULA .

@@ -1,0 +1,222 @@
+
+2006/xxx
+16 May 2006
+Top Quark Physics at the LHC
+J. D'Hondta
+Vrije Universiteit BrusselVrije Universiteit Brussel (IIHE-VUB), Pleinlaan 2, B-1050 Brussels, Belgium
+aSupported by FWO-Vlaanderen.
+The Large Hadron Collider is a proton collider operating at 14 TeV around which the ATLAS and CMS detectors will collect millions of top quark events.
+According to the state-of-art simulation of both the physics and the detectors the potential of the physics analyses performance in the
+domain of top quark physics is determined. An overview is given of the most important results with emphasize on the expected improvements in our
+understanding of physics connected to the top quark.
+
+Proceedings for the Hadron Collider Physics Symposium 2006, Durham, US
+
+Proton Collisions at the LHC
+The Large Hadron Collider or LHC is to become operational after the summer of 2007. The proton-proton accelerator will
+provide collisions at 14 TeV with a luminosity starting at FORMULA  up to FORMULA  in a later stage.
+This will result in an integrated luminosity of about 10fbFORMULA  per year.
+Two general purpose detectors, ATLAS and CMS, will collect the final state events of the proton bunch crossings each 25ns.
+This defines challenging constraints on the trigger systems of the experiments. In this dense particle environment both detector designs are optimized
+with respect to the performance of for example vertex reconstruction, track momentum measurement up to high energies and
+calorimetry segmentation for jet reconstruction. Therefore the LHC experiment and its detectors offer perfect settings to study the
+top quarks produced in the proton collisions.
+The following sections describe the physics results in the domain of top quark physics one can potentially achieve with this experiment.
+It provides both a data set to pin down the Standard Model measurements connected to this interesting fermion and complementary a unique window to new physics.
+The increase in collision energy with respect to the Tevatron accelerator provides a natural decrease of background processes relative to
+top quark signal processes.
+The potential of the LHC data is been determined via simulated events reflecting the state-of-art knowledge of our detector performance.
+Usually the leading-order PYTHIA generator has been used, while for some specific studies dedicated generators like AlpGen or CompHEP have been applied.
+Next-to-leading order corrections have been accounted for where needed. Because the detector responds has been simulated with GEANT-4, major
+data-challenge efforts have been made to produce dedicated simulation. A number of pile-up collisions are added as minimum bias events with a Poissonian
+expected value reflecting the low luminosity settings of the accelerator, namely FORMULA .
+The information concerning the reconstruction of the general physics objects can be found on the respective webpages of the experiments:
+http://atlas.web.cern.ch and http://cms.cern.ch/iCMS.
+
+Cross Section measurements
+According to the Standard Model the dominant top quark production is either in pairs or single in proton collisions. The top quark pair production has
+already been observed and measured at a collision energy of 1.8-1.96 TeV at the Tevatron, while the single top quark production is yet to be
+discovered. The top quark has a branching ratio of about 100% to decay as FORMULA . Therefore its decay channels are defined by the decay
+channels of the W boson, neglecting QCD corrections this is BR(FORMULA )=FORMULA  and BR(FORMULA )=FORMULA .
+Top Quark Pair production
+The next-to-leading order cross section for top quark pair production in proton collisions at 14 TeV is calculated to be 833pb
+of which some references are given in {{cite:957cdfa6-4819-406f-b77c-71a826f67cad}}. This would result in more than 8 million FORMULA  events per year in the low luminosity
+settings of the experiment or about 1 such event per second to be compared with about 10 per day at the Tevatron.
+Contrary to the Tevatron proton-antiproton collisions at 1.96 TeV at the LHC the production mechanism
+is with 87% dominated by gluon fusion.
+The selection of the events in the three categories of FORMULA  decay channels is based on the reconstruction and calibration of jets, b-tagging algorithms and
+for the leptonic decays on the isolation of the lepton. Each channel has different trigger requirements and different dominating backgrounds. Applying both
+kinematic cuts on the reconstructed objects and topological cuts, the following efficiencies FORMULA  and signal-to-noise ratios (S/N) are reaches:
+
+Fully hadronic channel (FORMULA , 3.7M events per 10 fbFORMULA ): the dominating background
+are the QCD multi-jet events from general FORMULA  processes with radiation, for a S/N ratio of FORMULA  and value FORMULA  2.7% was reached from the
+fast simulation of ATLAS {{cite:9a2c3aad-bd7a-4707-af04-5620a6a9b2b9}}.
+
+Semi-leptonic channel (FORMULA , 2.5M events (l=e,FORMULA ) per 10 fbFORMULA ): the dominating background are the
+W+FORMULA jet events, for a S/N ratio of about 27 a value of FORMULA  6.3% was reached from the full simulation of CMS {{cite:7da8e76b-cf45-40e1-9058-593d066cbe65}}, {{cite:9ddee59f-5f4d-4a0e-9081-8d1eca6d5149}}.
+
+Fully leptonic channel (FORMULA , 0.4M events (l=e,FORMULA ) per 10 fbFORMULA ): the Drell-Yan process and the Z+FORMULA jet events
+are the dominating backgrounds which can be reduced to a S/N ratio of about 5 for an efficiency of FORMULA  5% {{cite:9a2c3aad-bd7a-4707-af04-5620a6a9b2b9}}, {{cite:4c1f806a-379d-4113-9994-c7dd57c5c6b1}}.
+
+From the selected signal and background events in the simulation an estimate was made of the precision which can be obtained on the cross section
+with an integrated luminosity of 10 fbFORMULA . Several
+systematic uncertainties are taken into account, amongst other they are related to the pile-up, the jet energy scale calibration, the radiation effects,
+the b-tagging (in)efficiencies, the parton density functions and the uncertainty on the integrated luminosity {{cite:7da8e76b-cf45-40e1-9058-593d066cbe65}}, {{cite:4c1f806a-379d-4113-9994-c7dd57c5c6b1}}:
+
+Fully hadronic: 3 (stat) FORMULA  18 (syst) FORMULA  3 (lumi) %
+
+Semi leptonic (e/FORMULA ): 0.4 (stat) FORMULA  9.2 (syst) FORMULA  3 (lumi) %
+
+Fully leptonic (e/FORMULA ): 0.9 (stat) FORMULA  11 (syst) FORMULA  3 (lumi) %
+
+Fully leptonic (FORMULA ): 1.3 (stat) FORMULA  16 (syst) FORMULA  3 (lumi) %
+
+The dominating uncertainty is related to the knowledge of the b-tagging performance which can be extracted from the FORMULA  data itself, as shown
+in a novel CMS method {{cite:62ded0b3-02ef-4275-8c35-ba2dab3f44ae}}. These total uncertainties on the FORMULA  cross section reveal that an indirect top quark mass measurement is possible via
+the cross section to a precision of about 2-3 GeV/cFORMULA , which is already in the same precision range compared to the current Tevatron combined measurement.
+It was shown in {{cite:9a2c3aad-bd7a-4707-af04-5620a6a9b2b9}}, {{cite:7da8e76b-cf45-40e1-9058-593d066cbe65}} that shape analyses like those performed at the Tevatron {{cite:96c6727a-554f-4fc1-9063-adf0f2a6d484}} which combine topological information
+of several observables, are not directly useful at the LHC for the determination of the FORMULA  production cross section. They can however be applied in
+detailed studies of the radiation processes when measuring exclusive cross sections.
+
+Single Top Quark production
+The total next-to-leading order cross section for single top and anti-top production is 373 pb at the LHC of which some references are given in {{cite:c3add595-cf24-4a70-9b67-c38ae77e89d4}}.
+In this total cross section the fraction from top and anti-top is not equal. The events can be produced in three channels:
+
+s-channel: FORMULA  = 6.6 pb and FORMULA  = 4.1 pb;
+
+t-channel: FORMULA  = 153 pb and FORMULA  = 90 pb;
+
+associated tW-channel: FORMULA  = 60 pb and FORMULA  = 60 pb.
+
+This is a significant increase compared to the cross section of the same processes at the Tevatron, while the backgrounds like FORMULA  do not increase much
+from Tevatron to LHC settings. Each channel is sensitive to different signals of new physics: the s-channel to heavy W' bosons, the t-channel to Flavour-Changing
+Neutral Currents (FCNC) and the tW-channel to charged Higgs bosons.
+The event selections depend on the channel, but are based on missing transverse momentum, b-tagging and topological cuts reflecting the expected kinematical topology
+of the reconstructed event. In many cases control regions for the background level estimation are developed reducing the overall systematic uncertainty due to the
+uncertainty on the background cross section. The following potential results are obtained in the cross sections {{cite:0ef6b089-334b-4689-8961-4f7c69cc36df}}, {{cite:d6ba547a-f8ab-412b-be33-49502a208696}}:
+
+t-channel: FORMULA  (CMS for 10 fbFORMULA );
+
+s-channel: FORMULA  (CMS for 10 fbFORMULA );
+
+s-channel: FORMULA  (ATLAS for 30 fbFORMULA ).
+
+For the tW-channel CMS obtains in the di-lepton and single-lepton decay channel a combined sensitivity of 6.4FORMULA  at 10 fbFORMULA 
+for observing the process. The limiting factor
+being the systematic uncertainties due to the jet energy scale and the b-tagging knowledge, both can be improved when a better understanding of the true
+detector performance is reached.
+The measurement of the cross sections are directly related to the FORMULA  matrix element in the CKM matrix. In this measurement the s-channel is preferred because
+the t-channel is dominated by uncertainties from the parton density functions.
+
+Top Quark mass
+One of the most important measurements to be performed at the LHC amongst all Standard Model measurements {{cite:4fa21838-4408-4726-9ef1-e3d347ca7148}}
+is a precision measurement of the mass of the top quark. This will happen from the top quark pair
+events in which after the event selection several challenges remain: the different jet combinations, the influence of the background and the missing neutrino's.
+The selection of the correct jet pairing can be enhanced by examining on an event-by-event basis the kinematic topology of the selected event. Several
+topological observables which characterize a jet combination can be combined {{cite:9ddee59f-5f4d-4a0e-9081-8d1eca6d5149}}, for example the angle between the b jet in the 3-jet system reflecting the
+top quark and the lepton {{cite:9a2c3aad-bd7a-4707-af04-5620a6a9b2b9}}. Kinematic fits can be applied forcing the W boson mass to the 2-jet system from its decay {{cite:6dfc5a41-8e89-44f2-96ac-737b75f0052b}}. This reduces
+the influence of the jet energy scale calibration {{cite:9a2c3aad-bd7a-4707-af04-5620a6a9b2b9}}, {{cite:9ddee59f-5f4d-4a0e-9081-8d1eca6d5149}} and increases the statistical power of the event, see Figure REF .
+FIGURE 
+In {{cite:9ddee59f-5f4d-4a0e-9081-8d1eca6d5149}} advanced statistical inference techniques are applied to extract the top quark mass from the selected events. Following the LEP and Tevatron
+expertise {{cite:22922dae-8dc4-4626-9aeb-b84731a3ff72}}, {{cite:671bf9c1-cf41-489a-85f5-d09a75c93324}} convolution methods are introduced which weight the reconstructed ideogram reflecting all kinematic
+information in the event with the expected theoretical
+probability density function which are basically Breit-Wigner functions. This results in a likelihood per event which can be weighted according to the observed
+topology in the event enhancing for example signal rather than background events or correct jet combinations rather than wrong ones.
+It is shown in {{cite:9ddee59f-5f4d-4a0e-9081-8d1eca6d5149}} that in the so-called golden channel (FORMULA ) a total uncertainty
+of 1 GeV/cFORMULA  could be reached with 10 fbFORMULA  of data. The uncertainty is totally dominated by systematic uncertainties due to the jet energy
+scale calibration. To reach the benchmark precision of 1 GeV/cFORMULA  on the top quark mass, a 1.5% uncertainy is to be reached on the b jet energy scale
+calibration. The light quark jets can be calibrated directly from the W boson mass constraint in FORMULA  events as shown in {{cite:716b751d-1b4d-4911-b84c-81e54a0bc8e1}}.
+A promising alternative for a direct measurement of the top quark mass is introduced in {{cite:0704ec93-85ad-4a91-8381-9d014b1a97c3}} and explored with either full or fast detector
+simulation in {{cite:9a2c3aad-bd7a-4707-af04-5620a6a9b2b9}}, {{cite:88b432d6-dc28-46ca-aaa4-b44d1d7b1beb}}. From the semi-leptonic FORMULA  decay followed with the decay FORMULA  (where FORMULA )
+the invariant mass of the 3-lepton system is due to the large mass of the FORMULA  correlated with the top quark mass. Although one can extract a very clean
+sample of this signal, due to the small branching ratios involved this study has to be performed with at least 10 fbFORMULA  of data. The expected statistical uncertainty
+on the top quark mass drops below 1 GeV/cFORMULA  from an integrated luminosity of 20 fbFORMULA  onwards. This method is in first order not polluted from uncertainties related
+to the definition of the reconstructed jets. Most of the systematic uncertainties are however related to the theoretical modeling of the events. They add up to about
+1.5 GeV/cFORMULA , triggering that more work is needed to understand these phenomena.
+Work is also needed to determine the correlation between the divers range of methods and the different channels explored at the LHC to extract the top quark mass.
+With a proper understanding of the detector performance a precision on the top quark mass of 1 GeV/cFORMULA  is however feasible.
+
+Spin correlations
+The top quark does not loose its spin information before it is decaying. Therefore measurements can be performed to understand the spin correlations between
+both top quarks in the pair produced events. They have been implemented in TopRex for example {{cite:884a32be-ffdd-4c59-993e-b3ba5a2867e8}}.
+The measurement of possible asymmetries FORMULA  is performed from the double differential distribution of the decay angle FORMULA :
+FORMULA 
+where the two observables are the angle FORMULA  (FORMULA ) between the top (anti-top) direction in the FORMULA  center-of-mass frame and the lepton (quark)
+direction of flight in the top (anti-top) rest frame. Several combinations of spin analyzers are studies, but the spin analyzing power FORMULA  is
+strongest for the lepton and least energetic quark couple {{cite:d24f6be0-8a82-4f0f-8bbb-b4a630ededf9}}: FORMULA  = 0.158 according to the Standard Model prediction
+in next-to-leading order.
+The potential for spin correlations measurements is studied both in ATLAS {{cite:8295d889-01d8-4a19-b914-da6a451bff0e}} and CMS {{cite:c68d7cef-680a-4b19-a964-e465c8c692f3}}.
+For 10 fbFORMULA  CMS developed an measurement which results in:
+
+ FORMULA
+
+ FORMULA
+
+with central values in good agreement with the prediction as implemented in TopRex. In ATLAS a analysis has been performed using single differential
+distributions of the opening angle between two spin analyzers. For 10 fbFORMULA  a sensitivity of around 5FORMULA  was obtained to observe the correlations
+according to the Standard Model predictions. The main systematic uncertainties are related to the parton generation (parton density functions and the
+FORMULA  scale dependency), the radiation and the jet energy scale uncertainties.
+
+W helicity in Top Quark decays
+The large top quark mass allows the W boson in the top quark decay to be longitudinaly polarized. This could be confirmed by
+a measurement of the angular distribution FORMULA  which is the angle
+between the lepton in the W boson rest frame and the W boson in the top quark rest frame.
+The differential distribution is defined as:
+FORMULA 
+where the Standard Model prediction of FORMULA  and FORMULA  (when FORMULA ).
+The potential for measuring FORMULA , FORMULA  and FORMULA  has been determined by ATLAS {{cite:8295d889-01d8-4a19-b914-da6a451bff0e}} for a dataset of 10 fbFORMULA . They are transformed
+into measurements of angular asymmetries, FORMULA , FORMULA  and FORMULA 
+with FORMULA . The results are deconvoluted for detector effects via simulation:
+
+ FORMULA
+
+ FORMULA
+
+ FORMULA
+
+where the systematic uncertainties dominate the statistical precision. Potential confidence intervals at the 2FORMULA  level are obtained on the
+general Wtb vertex which reach significant better limits compared to the Tevatron: FORMULA , FORMULA  and FORMULA .
+
+Searches for New Physics
+In many directions one can search for deviations of the Standard Model predictions in the selected top quark events. The appearance of FCNC phenomena is suppressed in the
+Standard Model with a factor 10FORMULA , while in extensions of the Standard Model (like in supersymmetric models) they could be less suppressed to the level
+of only 10FORMULA . Three couplings are studied in {{cite:24b37e71-aef4-4b68-b85a-fb546b5a5d20}}: FORMULA , FORMULA  and FORMULA . For each of the channels a
+topological likelihood variable is constructed to identify the signal above the Standard Model background. The results are interpreted as potential limits on the
+branching ratios of the decays. Already at 10 fbFORMULA  they reach a level which is two orders of magnitude better (lower) than the current Tevatron
+extrapolated predictions for 2 fbFORMULA .
+Also in the domain of flavour physics the potential of a search for like-sign top quark pairs and other FCNC signals have been explored by CMS {{cite:97fcd8b1-efef-4176-8529-b3cf43cefc49}}.
+From top- and technipions in topcolor assisted Technicolor models or gluino pair production in the MSSM, a signal could be created which results in top quark pairs
+with the same electric charge. Hence in the di-lepton decay channel this would be visible by measuring the charge of the reconstructed leptons. When using a
+ratio R of selected events with the same versus different lepton charges, most of the systematic uncertainties cancel and the new physics models can be probed.
+With an integrated luminosity of 30 fbFORMULA  a cross section of like-sign FORMULA  events of 1 pb becomes visible as a 5FORMULA  effect
+on this ratio R.
+The reconstructed invariant mass distribution of the FORMULA  system is an important window to new physics. Technicolor and supersymmetry based models
+can introduce a resonance in this distribution. For example MSSM one-loop electro-weak corrections give a significant distortion in the shape
+of this distribution. For heavy Higgs FORMULA  masses from the FORMULA  production threshold of about 350 GeV/cFORMULA  up to about 500 GeV/cFORMULA  this
+distortion could be visible as it is much larger than the Standard Model corrections {{cite:ad93fccc-4cf1-4c17-94fe-2cd735885d6a}}.
+
+Commissioning with Top Quarks
+Top quark events at the LHC are very complex and their reconstruction is based on almost each crucial aspect of the detector. Therefore
+top quark events are already from the start-up of the experiment perfect for the commissioning of the detector and the physics performance of the new detectors.
+The measurement of the b-tagging efficiency {{cite:62ded0b3-02ef-4275-8c35-ba2dab3f44ae}} and the measurement of the jet energy scale calibration factors {{cite:716b751d-1b4d-4911-b84c-81e54a0bc8e1}}
+can be performed on the events from the first weeks of data taking. It is shown that with an integrated luminosity of about 300 pbFORMULA  the jet energy scale
+can be extracted using the W boson mass constraint in the event to a precision of better than 1%. The main challenge being the control of the pile-up
+collisions, for which vertex counting methods can be envisaged.
+In general, a rediscovery of the top quark peak at the LHC would be one of the first milestones in the physics commissioning of the detector performance {{cite:c1c40800-5b19-4f6e-9bec-143f88fd7650}}.
+The top quark pair production cross section will be one of the first relevant measurements to be performed. It is shown that in a few hours of data taking and without
+b-tagging the W boson and the top quark mass peaks are visible above the background. With the first day of running (30pbFORMULA ) the top quark mass could be
+measured to a precision of 3 GeV/cFORMULA  and the W boson mass to 1 GeV/cFORMULA . This will allow for a first estimation of the jet energy scale calibration corrections and
+a first performance test of the b-tagging algorithms. The main challenge is to select a pure top quark sample without the application of b-tagging identification
+algorithms.
+
+Conclusion and Outlook
+It is demonstrated with the use of state-of-art physics and detector simulation that the LHC proton collision data opens
+a new area of top quark physics. Already from the data collected in the first weeks of the LHC experiment the top quark measurements
+are of interest in the physics commissioning of the individual experiments.
+With the huge amount of statistics the production mechanisms of top quark processes,
+the particles properties and its decay can be studied for the first time in great detail. For most of the measurement
+analyses the challenge will be in the domain of the systematic uncertainties related to the detector and the soft-QCD involved in the
+collisions. For the analyses searching for deviations from the Standard Model predictions in the above one becomes sensitive
+to a wide range of physics models beyond the Standard Model, an area to be further explored in the high luminosity settings of the LHC experiment.
+The author has presented this overview on behalf of the LHC Collaborations and wishes to thanks those who have
+contributed to this excellent research.

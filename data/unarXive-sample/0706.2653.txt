@@ -1,0 +1,420 @@
+
+UDF05: Faint End of the LBG LF at FORMULA 
+Oesch et al.
+The UDF05 Follow-up of the HUDF: I. The Faint-End Slope of the Lyman-Break Galaxy Population at FORMULA 
+1
+1Based on data obtained with the Hubble Space Telescope operated by AURA, Inc. for NASA under contract NAS5-26555
+P. A. Oesch2,
+M. Stiavelli3,4,
+C. M. Carollo2,
+L. E. Bergeron3,
+A. M. Koekemoer3,
+R. A. Lucas3,
+C. M. Pavlovsky3,
+M. Trenti3,
+S. J. Lilly2,
+S. V. W. Beckwith3,
+T. Dahlen3,
+H. C. Ferguson3,
+Jonathan P. Gardner5,
+C. Lacey6,
+B. Mobasher3,
+N. Panagia3,7,8,
+H.-W. Rix9
+2Institute of Astrophysics, ETH Zurich, CH - 8093 Zurich, Switzerland; poesch@phys.ethz.ch
+3Space Telescope Science Institute, Baltimore, MD 21218, United States
+4Department of Physics and Astronomy, Johns Hopkins University, Baltimore, MD 21218, United States
+5Laboratory for Observational Cosmology, Code 665, NASA's Goddard Space
+Flight Center, Greenbelt MD 20771
+6Institute for Computational Cosmology, Department of Physics, University of Durham, South Road, Durham, DH1 3LE, UK
+7INAF- Osservatorio Astrofisico di Catania, Via S. Sofia 78, I-95123 Catania, Italy
+8Supernova Ltd., OYV 131, Northsound Road, Virgin Gorda, British Virgin Islands
+9Max-Planck-Institute for Astronomy, D - 69117 Heidelberg, Germany
+We present the UDF05 project, a HST Large Program of deep ACS (F606W, F775W, F850LP) and NICMOS (F110W, F160W) imaging of three fields, two of which coincide with the NICP1-4 NICMOS parallel observations of the Hubble Ultra Deep Field (HUDF). In this first paper we use the ACS data for the NICP12 field, as well as the original HUDF ACS data, to measure the UV Luminosity Function (LF) of FORMULA  Lyman Break Galaxies (LBGs) down to very faint levels. Specifically, based on a FORMULA , FORMULA  selection criterion, we identify a sample of 101 and 133 candidate FORMULA  galaxies down to FORMULA  and 29.25 magnitudes in the NICP12 and in the HUDF fields, respectively. Using an extensive set of Monte Carlo simulations we derive corrections for observational biases and selection effects, and construct the rest-frame 1400 Å LBG LF over the range FORMULA , i.e. down to FORMULA  at FORMULA , and complement it with data from the Subaru Deep Field (SDF) from {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}} to extend it to the brighter end (FORMULA ). We show that: (i) Different assumptions regarding the SED distribution of the LBG population, dust properties and intergalactic absorption result in a 25% variation in the number density of LBGs at FORMULA ; (ii) Under consistent assumptions for dust properties and intergalactic absorption, the HUDF is about 30% under-dense in FORMULA  LBGs relative to the NICP12 field, a variation which is well explained by cosmic variance; (iii) The faint-end slope of the LF is independent of the specific assumptions for the input physical parameters, and has a value of FORMULA , similar to the faint-end slope of the LF that has been measured for LBGs at FORMULA  and FORMULA . Our study therefore supports no variation in the faint-end of the LBG LF over the whole redshift range FORMULA  to FORMULA .
+Based on a comparison with semi-analytical models, we speculate that the FORMULA  LBGs might have a top-heavy IMF.
+galaxies: evolution — galaxies: formation — galaxies: high-redshift — galaxies: luminosity function — dark matter
+Introduction
+Deep imaging with the Advanced Camera for Surveys (ACS) and the NICMOS camera onboard the Hubble Space Telescope (HST) has been instrumental in pushing the study of galaxy populations out to the reionization frontier of FORMULA  and beyond. The development of the Lyman Break technique has been a milestone for the study of high redshift galaxies, as it allows to identify, from broad-band photometry alone, large numbers of star-forming, but otherwise normal, galaxies at early epochs: star forming galaxies at a given high redshift are identified from the drop in flux by, typically, 1-2 magnitudes, blueward of the detection passband, caused by the Lyman continuum break and the Lyman series blanketing induced by intergalactic neutral hydrogen clouds. While the conceptual idea was worked out already 30 years ago {{cite:26f6593c-393a-429b-bcdd-ff19791480cb}}, it was only in the 1990's that progress in instrumentation made it possible to identify high-FORMULA  galaxies using this technique {{cite:b817f34b-3b8e-47aa-9379-ed2919f4ec26}}, {{cite:0146f8ee-dc8c-45f7-8031-45328ad3b3c3}}. Several spectroscopic follow-on studies of LBG candidates have proven the high efficiency and reliability of the Lyman Break technique in identifying galaxies at early epochs {{cite:99be8e2f-7932-46d2-8e96-6aa1f0e68dd3}}, {{cite:92ba3a9d-cbad-4bc0-823e-dbb30833f37c}}, {{cite:9585a568-50d5-49a1-a0cc-efdfb3ca6390}}.
+Despite the availability of large samples of high redshift galaxies with low contamination from interlopers, the derivation of a Luminosity Function (LF), and particularly of its faint-end slope, remains difficult on account of the small volume probed by currently available ultra deep surveys such as the Hubble Ultra Deep Field {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}}, and because of the many corrections which are often not well constrained. This is illustrated by the large scatter in the published LF parameters that have been derived from the same data sets {{cite:e6e603d5-9a55-42e3-8e00-7f173b7b37b3}}, {{cite:83d65bf7-b5fe-4bd6-a196-c44536df98fb}}, {{cite:e8d823ed-ebb4-4b94-a9b9-57f6dd37e95a}}, {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}}. Mapping the evolution of the faint-end slope of the LF at high redshifts remains a major goal of observational cosmology, as the faint-end slope is expected to be dramatically affected by reionization {{cite:e2734153-b289-4525-8e09-ebfe18084d8b}}, and a solid detection of a change in slope would be strong evidence for the transition between a partially and a fully reionized universe. As also highlighted by e.g., {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}}, one important step to improve the sensitivity to changes in the faint end slope is to derive LFs at different redshifts in the most homogeneous way, applying similar techniques to similar data sets.
+This paper presents the UDF05 project, a 204-orbit HST Large Program of ultradeep ACS and NICMOS observations of multiple fields to study the evolution of the faint-end of the LF throughout the FORMULA  redshift regime. The UDF05 was originally constructed to observe with ACS/WFC the two NICMOS parallel fields that were acquired while the HUDF was imaged with the ACS. These HUDF-NICMOS parallel fields (hereafter NICP12 and NICP34, see Fig. REF ), have a total exposure of FORMULA  s both in the F110W (broad J) and F160W (H) filters, providing the deepest near-IR data available. Only relatively shallow ACS data were available at their locations, and our additional UDF05 data for these fields was aimed at reaching a depth in the visible, comparable to that of the NICMOS observations (see Table 1). Furthermore, the planned UDF05 pointings should have had an orientation such that, while acquiring the ACS data for the NICP12 and NICP34 fields, parallel NICMOS observations should have been taken for the original HUDF, so as to obtain a total of three fields with ultradeep imaging both in the visible and in the near-IR. Unfortunately, the transition of HST to the two-gyro mode and the first failure of ACS in June 2006 severely limited the number of available orbits at the required orientation, so that the NICMOS observations of the original ACS HUDF field ended up with only one third of the exposure time originally planned.
+FIGURE 
+In our first utilization of the UDF05 dataset we study the faint-end of the LF of FORMULA  FORMULA -dropout galaxies; specifically, we compare the FORMULA  LF obtained from the ACS NICP12 field with that derived from the original ACS HUDF, in order to assess the effects of cosmic variance on the FORMULA  LF parameters. In Oesch et al. (2007, in preparation) and Stiavelli et al. (2007, in preparation) we will extend our
+exploration of the realistic uncertainties in the faint-end slope of the LF of Lyman Break Galaxies to the FORMULA  and FORMULA  regimes, respectively, probing well into the expected reionization epoch and thus constraining its impact on galaxy formation.
+This paper is structured as follows. After the description of the data, corrections for noise correlation and source detection (§), we describe our selection criteria (§), and the simulations that were performed to estimate the completeness of our source catalogs (§). The observed surface densities are derived by including the effects of photometric errors (§) and the LF is computed under different assumptions about the underlying SED distribution of the LBG population as well as different prescriptions for intergalactic hydrogen absorption (§). In section § we present a theoretical estimate for the effects of cosmic variance on our results. In section § we discuss the evolution of the faint-end of the LF of star forming galaxies in the FORMULA  redshift regime, and compare our observed FORMULA  LF with theoretical predictions based on a standardThroughout this paper we adopt the concordance cosmology: FORMULA  kmsFORMULA MpcFORMULA , i.e. FORMULA . Magnitudes are given in the AB system {{cite:eb6672ce-a18c-4573-8b0b-baf137b27fb3}}. FORMULA  Cold Dark Matter (FORMULA -CDM) universe. Section § summarizes our main results and conclusions. A comparison of our LF measurements with published observational estimates is shown in Appendix .
+
+Data
+The HUDF ACS WFC data are the same as described by {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}} and include exposures in the F435W (hereafter FORMULA  ), F606W (hereafter FORMULA ), F775W (hereafter FORMULA ), and F850LP (hereafter FORMULA ) filters for a total of 400 orbits. We used the publicly released HUDF images without further processing.
+As a part of the UDF05 project, ACS WFC data were obtained for the NICP12 field in the F606W, F775W, and F850LP filters amounted to a total of 101 HST orbits; Table  lists the specifics of these observations. The center of the NICP12 field is located at RA(2000)=03:33:03.60, Dec(2000)=FORMULA 27:41:01.80; Figure REF  shows all UDF05 pointings relative to those of HUDF ACS and NICMOS-parallels. The UDF05 ACS observations of the NICP12 field employ a larger dithering step than those adopted for the original HUDF; this choice was made in order to obtain an improved sub-pixel sampling for the NICMOS parallel data that were acquired simultaneously, relative to the original HUDF NICMOS-parallel observations.
+ccccc
+Properties of the UDF05 and HUDF Observations 
+0 pt
+5
+Field  Filter  HST Orbits  Exposure Time [s]  FORMULA -magnitudea [AB]
+NICP12  FORMULA   9  21'600  28.49
+NICP12  FORMULA   23  54'000  28.44
+NICP12 FORMULA   69b  168'000  28.47
+HUDF  FORMULA   56  134'900  29.38
+HUDF  FORMULA   56  135'300  29.81
+HUDF  FORMULA   144  347'100  29.43
+HUDF  FORMULA   144  346'600  28.73
+awithin an aperture of 015 radius
+b70 planned; one lost due to loss of lock
+The exposure times for the UDF05 observations were designed so as to achieve a constant AB-magnitude depth in all filters for all fields. The individual FORMULA 1200s exposures (two in each orbit) were combined and re-pixeled to a scale of 30 mas using the task "multidrizzle"; the task "tweakshifts" was used to optimize the shifts between different images. Superdarks and superbiases were obtained combining several hundred single frames to increase the S/N. Finally, a herringbone artifact was removed from the data by processing the images with a Fourier filter, and the electronic ghost present in the ACS images was eliminated by means of an empirical model. The model is built upon the fact that the electronic ghost of a source is located in quadrants different from the one containing the source and on the fact that ACS/WFC is read out from each corner so that if one dithers a source closer to its readout corner the ghost will move in the opposite direction closer to its own corner. Thus, when we drizzle together a dithered pair of images, we align the sources, and smooth out the ghosts. Our algorithm (conceived by L.E. Bergeron) is based on the idea of flipping each quadrant before drizzling. This simple step coadds the ghosts and smooths out the sources and, when applied iteratively with proper masking, can be used to obtain clean images of the ghosts which are then subtracted from the images. These last two steps were developed after the first public release of the UDF05 data (version 1, "v1"). The newly processed images of the UDF05 that we use in our analysis represent an improved "version 2" (v2) of the final products.
+The PSF FWHM of the UDF05 final ACS images are about 01 in all passbands.
+In the UDF05 NICP12 images, the 10 FORMULA  limiting magnitudes in apertures of 015 radius are 28.49, 28.44, and 28.47 respectively in FORMULA , FORMULA , and FORMULA  (see Table ), i.e. the planned uniform sensitivity in all passbands is achieved. For the HUDF the FORMULA , FORMULA , FORMULA , and FORMULA  10 FORMULA  limiting magnitudes in apertures of 015 radius are 29.38, 29.81, 29.43, 28.73 respectively.
+Noise Correlation
+A point kernel was used for all passbands when drizzling the data, with the exception of the NICP12 FORMULA  image, for which the pixels were not shrunken to a point before drizzling to the output frame (pixfrac FORMULA ), as the dithering pattern was inadequate to properly sample the pixels. As a result, this image is expected to show significant noise correlation.
+However, the noise level measured by computing the rms of cleaned, block averaged areas of the FORMULA  images, or by computing the total flux in the auto-correlation peak shows a higher degree of correlation than the one due to dithering which is well characterized by the model published by {{cite:09ce2f6c-9090-4cfa-acb8-294ade67185c}}. Moreover, some noise correlation is also measured in the FORMULA  and FORMULA  images which were not expected to have any. The unexpected correlated noise seen in these images is of the same amplitude as the additional component seen in the FORMULA  image and we believe that this residual noise correlation is introduced by the reference files (flat fields, biases, darks) and, possibly, by unresolved background sources. Any feature present in a given pixel in the reference files is propagated to a larger area on the final science images by the adopted dithering pattern. Neglecting this noise component would lead to overestimating the depth achieved by the observations; for example, in the NICP12 field, the noise would be underestimated by 30% for galaxies with an area of 0.3 FORMULA  0.3 arcsecFORMULA .
+Relative to our final ACS UDF05 images, the released ACS HUDF images, used in this paper, are more severely affected by correlated noise, due to presence of the uncorrected herringbone noise and electronic ghost in ACS (as these effects had not been characterized at the time). This explains why, despite the factor of about two in exposure time, the HUDF FORMULA  image is only 0.26 mag deeper than our NICP12 FORMULA  image.
+The rms maps produced by multidrizzle were rescaled in order to match the expected flux errors of galaxies with a measured area of 80 pixels, which corresponds to the median size of our dropout galaxies. No simple renormalization is optimal for all source sizes. The adopted choice underestimates the S/N for point sources and overestimates it for sources that are more extended than the area considered; however, it provides on average, an optimal renormalization for the typical galaxies we study in this paper. Simulations are used to assess proper errors as a function of the sources' physical parameters.
+
+Source Detection
+Source detection and photometry measurements were done with the software tool SExtractor {{cite:aede1730-341c-44b0-9529-61ca309a0461}}, which was run in double image mode with FORMULA  as the "detection band". Despite the fact that the FORMULA  images for both the HUDF and the NICP12 data reached a similar, if not deeper, magnitude limit than the FORMULA  band, the latter was preferred for the source detection because of the larger uncertainties in an FORMULA -selected LF, which are driven by redshifting of the LyFORMULA  forest into the FORMULA  passband at FORMULA , significantly decreasing the observed fluxes.
+The SExtractor parameters were optimized so as to maximize the number of detected galaxies while minimizing the number of spurious sources. For NICP12, the detection threshold was set to be a minimum of 10 connected pixels 0.55 FORMULA  above the background. This led to 5,734 objects within the central, highest S/N 11.9 arcminFORMULA  of the FORMULA  NICP12 image. Similar SExtractor configurations returned 6,336 objects in the central 11.2 arcminFORMULA  of the HUDF FORMULA  image.
+In order to estimate the contamination of spurious detections in the source catalogs, we cleaned the images from the detected sources, and reran SExtractor using the same configuration parameters on the "inverted" (i.e., multiplied by -1) images. This contamination was found to be FORMULA .
+A final visual inspection was performed to clean the catalogs of residual spurious sources and stellar diffraction spikes. The source magnitudes were corrected for the small amount of Galactic extinction expected in the field, FORMULA  and 0.008 in NICP12 and HUDF, respectively {{cite:778a84e2-8953-42f5-85ae-7bec43cd019c}}.
+Colour measurements were derived from the galaxy ISO magnitudes (apertures matched to the detection isophotes), since these are closely matched to the higher S/N parts of the objects and, as shown by our simulations (Section ), include much less noise than the SExtractor AUTO magnitudes which we use for the total magnitude of a source in the detection band. This is especially important for the very compact and faint sources that we study in this paper.
+
+The Selection of FORMULA  Lyman-Break Galaxies
+The Color-Color Selection Criterion
+The redshift evolution of synthetic galaxy models, properly attenuated by intergalactic hydrogen absorption, can be used to identify regions in a color-color diagram which efficiently disentangle galaxies in a specific high redshift window from lower-redshift interlopers.
+FIGURE 
+For the identification of a FORMULA -dropout sample (see Figure REF ), this selection window has been optimized to be {{cite:95e2808a-9933-4c72-bbc5-c7e8fedf1b73}}, {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}}:
+FORMULA 
+Galaxies in the range FORMULA  are well identified by this color-color criterion; the reliability of the method has been shown to be very efficient (FORMULA ) by spectroscopic follow-up surveys {{cite:9585a568-50d5-49a1-a0cc-efdfb3ca6390}}.
+The elimination of low redshift interlopers is facilitated by the availability of the FORMULA  passband for the HUDF sample. This is however not available for the NICP12 data. We therefore used the HUDF data to check the impact of including or excluding the additional S/N(FORMULA )FORMULA  criterion that was adopted by {{cite:95e2808a-9933-4c72-bbc5-c7e8fedf1b73}} and {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}} in order to minimize the contamination from low-FORMULA  interlopers. Only one object was rejected from our HUDF dropouts catalog on the basis of this FORMULA -band constraint. Therefore, for uniformity with the analysis of the NICP12 field, for which the FORMULA  is not available, we did not include any FORMULA -band constraint in our selection of the HUDF FORMULA  -dropouts sample.
+FIGURE 
+The stellar library of {{cite:88727cee-f24b-4031-8f63-b318652f8373}} shows that stars are expected to lie within a very well defined region on the FORMULA , FORMULA  diagram. Indeed, the few obvious stars in our field lie within this area. To further optimize the removal of stars from our catalogs, the SExtractor stellarity parameter was also considered. This parameter is determined by application of a neural network approach to estimate the likelihood that an object is a point source. However, this method is not very reliable at faint magnitudes, and therefore cannot be used to identify stars close to the magnitude limits.
+Inspection of the FORMULA  vs. FORMULA  diagram and of the half-light radius (FORMULA ) vs. FORMULA  diagram showed that sources with stellarity FORMULA , FORMULA  FORMULA  and FORMULA  are most likely stars in the NICP12; hence all such objects were excluded from our analysis. A similar criterion was applied to the HUDF for FORMULA  FORMULA . Only two and one of such sources were within our FORMULA -dropout selection window for the NICP12 and HUDF samplesAll other sources in the HUDF stellar catalog of {{cite:700d8d47-6816-46c4-8720-7d5a320795d4}} that we do not identify as stars lie outside and very far from the border of our color-color selection window., respectively; these objects however had already been visually identified as stars. Although unlikely, stars fainter than FORMULA  FORMULA  and 28 may remain a (small) source of contamination in our NICP12 and HUDF catalogs, respectively.
+In Fig. REF  the evolutionary tracks of different galaxy types are shown in the FORMULA  versus FORMULA  color-color diagram. The tracks are built using the population synthesis models of Bruzual & Charlot (2003). The attenuation by intergalactic hydrogen causes essentially all the galaxy types at redshifts above FORMULA 4.5 to enter the selection window. Elliptical galaxies at FORMULA  are a source of contamination in the selection criterion due to their red colors; this contamination is however expected to be small in our FORMULA -dropout samples, given the expected low surface densities of these galaxies. In fact, none of the seven spectroscopically identified passively evolving galaxies at FORMULA  in the HUDF from {{cite:73386363-bb80-4417-bff9-006a0e3d58f4}} were selected as FORMULA -dropouts.
+
+Contamination from Low-Redshift Interlopers
+We have estimated the possible fraction of interlopers by applying our selection criterion of Eqs. (1)-(3) to a library of FORMULA  synthetic SEDs built upon Bruzual-Charlot (2003) models, adopting the LF derived by {{cite:99be8e2f-7932-46d2-8e96-6aa1f0e68dd3}} at FORMULA  and no evolution. The models include the effects of intergalactic absorption {{cite:b4fb6f61-b57e-47e1-b7b8-9e94dbdde75a}}, and span a wide range of metallicities (FORMULA ), dust reddening, emission lines, and different star formation histories. These included simple stellar populations, models with continuous star formation at constant metallicity, models with self-consistent enrichment during the continuous star formation (estimated with a closed box model and with a model with infall of zero-metallicity gas), and two-burst models combining with five different mass ratios an old (FORMULA  Myr) stellar population with a young (FORMULA  Myr) star forming population that includes self-consistent nebular line and continuum emission. For each model, versions with and without dust reddening were computed; eight values of reddening were implemented assuming a galactic dust screen with FORMULA  logarithmically spaced between 0.05 and 6.4. Emission lines and nebular continuum were computed in the approximation of case-B recombination for Hydrogen and Helium, based on the ionizing flux from the stellar SED; Oxygen and Carbon line intensities were derived from an analytical interpolation of a grid of calculations performed with the code CLOUDY {{cite:85060934-d008-4c5f-9672-c8e92e4feba2}}. Gas temperatures were derived as a function of metallicity.
+The resulting redshift distribution is shown in Fig. REF .
+The non-uniform distribution of the histogram is due to SEDs that satisfy the selection criterion only for portions of the redshift interval. For instance a 1 Gyr old solar metallicity model with modest extinction satisfies the criterion only for FORMULA . We identify three possible classes of low redshift interlopers at FORMULA , FORMULA , and FORMULA . They are generally very reddened SEDs with either emission lines or an underlying old population. The total interloper fraction from these objects is found to be 23% (17% if one considered only FORMULA  as interlopers). This is only a rough estimate, as it does not account for the different galaxy populations having different and possibly evolving LFs.
+However, previous works show that the utilization of this library overpredicts the number of interlopers {{cite:92ba3a9d-cbad-4bc0-823e-dbb30833f37c}}; also, in the spectroscopic follow-up survey of the FORMULA -dropout galaxies in the Great Observatories Origin Deep Survey {{cite:f9da8788-2807-4342-9f1e-d46fc6ba27c3}}, only FORMULA  of stars and low-FORMULA  galaxy interlopers were found {{cite:9585a568-50d5-49a1-a0cc-efdfb3ca6390}}. Therefore, the real fraction of interlopers is possibly smaller than our conservative estimate. Note however, that we do not account for this source of systematic error in the rest of our analysis.
+FIGURE 
+
+Catalogs Completeness and Simulations
+The catalogs produced by SExtractor are subject to certain biases, which depend strongly on the chosen parameters. In addition to the detection settings, i.e., number of connected pixels and sigma-threshold above the background, the parameters that control the deblending and cleaning of sources are of particular importance. The correct interpretation of the LF that is obtained from the SExtractor-based catalogs requires a quantitative assessment of these biases. To this end, we performed two independent sets of simulations, the first based on idealized galaxy profiles and the second on the observed galaxies themselves. The simulations are described in detail in Appendix . Briefly:
+
+In the first set of simulations (which we refer to as the "idealized-galaxies" simulations), we constructed an extensive set of exponential- and deVaucouleurs-profile galaxies, that were appropriately PSF-convolved and inserted at random positions into the NICP12 and HUDF images. SExtractor was then re-run with identical parameters as for the compilation of the original data catalogs, and the resulting object catalogs were used to identify detected, undetected or blended sources. This approach is similar in spirit to what was done by the GOODS team {{cite:f9da8788-2807-4342-9f1e-d46fc6ba27c3}}.
+
+In the second set of simulations (which we refer to as the "dimmed-galaxies" simulations), we generated a set of test images by co-adding to each original image a copy of itself, shifted by a few pixels and dimmed by a given amount. The composite images were rescaled to have the S/N vs. magnitude relation as the original image, and SExtractor was run on these final test images using the same parameters as for the extraction of the original data catalogs. This second set of simulations provides a complementary analysis to the above, as it offers the advantage of working with real rather than idealized galaxies, and does not depend on uncertainties in the adopted PSF.
+
+Input versus Output Properties
+A problem in establishing the completeness of the source catalogs is that the true magnitudes of the sources are expected to be typically brighter than the measured ones, due to losses of flux from the wings of the galaxy light distribution. {{cite:abc5a5f8-46ed-42af-ab42-8aa9ce69e7ed}} measured the flux losses for point-sources in the ACS camera filterbands and found that they strongly depend on the SED of the source, due to a stronger scattering halo of the PSF at longer wavelengths. Those authors find offsets of FORMULA  mag for FORMULA  and FORMULA , respectively, and FORMULA  mag for FORMULA  in apertures of radius FORMULA . To take into account the extended nature of our catalog objects, we used our two sets of simulations to characterize the relation between input (true) parameters and output (measured) quantities.
+Idealized deVaucouleurs- and exponential-profile galaxies were generated with random FORMULA  magnitudes between 24 to 31. Two separate sets of tests were performed, the first using sizesIn all our analysis size always refers to half-light radius. uniformly distributed in the range 0.05 to 0.5 arcseconds, and the second using sizes distributed according to a lognormal distribution centered at 0.25 arcseconds with FORMULA . The results were essentially independent of the adopted input size distribution. In the following, we only use the simulations with uniformly distributed input sizes. Measuring the source magnitudes within an elliptical aperture of 2.5 Kron radii (SExtractor AUTO mag), compact sources were detected with 50% probability down to 28.75 and 29 magnitudes in the NICP12 and in the HUDF images, respectively. As expected, the detected fluxes were typically smaller than the input ones. By integrating the theoretical deVaucouleurs and exponential profiles out to 2.5 times their Kron radii, the theoretically expected flux losses are found to be 9.6% and 4.0%, respectively, corresponding to 0.11 and 0.04 magnitude offsets. However, since the Kron radii measured by SExtractor are also underestimated, the offsets are expected to be even larger than those above. Indeed, in our simulations we found a magnitude-dependence for the amount of dimming, from FORMULA  mag and FORMULA  mag at FORMULA  to FORMULA  and FORMULA  mag at FORMULA  for the two kinds of profiles respectively.
+We also used the dimmed-galaxies simulations to obtain an independent estimate. In this case, the differences between dimmed and original magnitudes are expected to be smaller than in the case of idealized galaxies. The offset was indeed marginally smaller than for the exponential-profile idealized galaxies, i.e., in the range FORMULA .
+For very compact galaxies (FORMULA ), the measured sizes were generally overpredicted due to PSF blurring, while the opposite was true for larger objects. These biases showed a strong dependence on magnitude. The faintest idealized deVaucouleurs galaxies were typically measured to have FORMULA  (i.e. to be unresolved at the resolution of the HST), independent of their original size. This offers a challenge for studying the size evolution of LBGs with redshift.
+Furthermore, since we measure the colors by relying on the SExtractor dual-image mode, i.e. using the FORMULA  detection apertures, it is not adequate to apply a constant offset to the FORMULA  and FORMULA  magnitudes. The color measurements depend in fact on the FORMULA  flux as well as on the intrinsic color. Both the FORMULA  and the FORMULA  colors are affected in such a way that red sources have even redder, and blue sources even bluer, measured colors. This is not including the dependence of the PSF halo on the color.
+In the light of these complex and uncertain corrections for dimming effects, we chose not to implement any correction to the measured catalog magnitudes. Thus, we note that our magnitude measurements might be underestimated by an amount, as estimated from our tests, of up to about 0.2 magnitudes. We found, however, that these light losses had only a marginal effect on our final LF when extending it with the SDF (see section REF ); the resulting slope is steepened by about FORMULA .
+
+Detection Completeness
+There are two possible reasons why galaxies could be missing from our catalogs. First, a galaxy might not be detected due to its too low surface brightness; second, it could get blended together with another source and produce a false catalog entry. These two effects are strongly dependent on the SExtractor parameters.
+We used both the idealized-galaxies and dimmed-galaxies simulations to estimate the strength of these effects in our catalogs and final samples of FORMULA -dropout galaxies. Specifically: (a) We associated idealized-galaxies with similar output (SExtractor) magnitudes and sizes to real galaxies randomly selected from our original catalog. We then estimated the completeness corrections for each magnitude bin by comparing the number of sources in each bin of SExtractor magnitude with the total number of idealized-galaxies of different input (i.e., theoretical) magnitudes and sizes that contributed to that specific bin of output magnitude. (b) Using the dimmed-galaxies simulations, we computed the magnitude-dependent completeness corrections by re-scaling the number of galaxies in each bin of output magnitude (i.e., recovered for the dimmed galaxies by SExtractor) to the number of sources of different input magnitudes (i.e., the theoretical values of the dimmed magnitudes) that contributed to that specific bin of output magnitude. Figure REF  shows the results of our tests. For both fields, the two independent estimates for the completeness in our samples, derived from the idealized- and dimmed-galaxies simulations, are in good agreement. At the magnitude limits of our selections, the NICP12 and HUDF catalogs are expected to be about 65% and 50% complete, respectively.
+The probability that a given source is blended by SExtractor with another object depends on the magnitude of the source.
+In our simulation tests, when the SExtractor detection blended a simulated source with a real galaxy, we considered the simulated object as a detection when this was brighter than the original galaxy. Figure REF  also includes the incompleteness due to source blending; this is the reason why even our brightest sources are only complete at the 95% level.
+FIGURE 
+
+The FORMULA -dropout Candidates
+The application of the selection color window discussed above to our NICP12 and HUDF catalogs down to 28.5 and 29.25 magnitudes (with a FORMULA  cut) produces a total of 101 and 133 candidate FORMULA  LBGs, respectively. Note that for sources whose FORMULA  ISO fluxes were fainter than their 2FORMULA -errors, we replaced the measured FORMULA  fluxes with the corresponding 2FORMULA  values in order to get a reliable lower limit on their FORMULA  color.
+To correct our catalog for both random and systematic photometric errors we adopted a Monte-Carlo technique. The amplitudes of the errors were estimated from both sets of simulations described in section . The simulations show that systematic color shifts (i.e. input versus recovered color) are independent of the galaxy profile, unlike offsets in individual passband magnitudes. Therefore, before the application of random errors, the FORMULA and FORMULA colors of each catalog source were corrected for systematic errors; only a random error was instead applied to the FORMULA  magnitude (see also section REF ). The selection of FORMULA -dropouts was iteratively repeated and, after of order several hundred iterations, the mean number of FORMULA -dropout sources was computed in bins of FORMULA  magnitude. Table  lists the mean number of FORMULA -dropout sources FORMULA  per magnitude bin for both our fields which we use in the remainder of the analysis.
+Tests were performed to ensure that the final LBG LF was independent of the adoption of the FORMULA  flux limits for faint FORMULA  sources. In particular, the calculations were repeated adopting FORMULA  and FORMULA  limits for the flux substitutions; no significant differences were found in the final LFs, as the probability of selecting a galaxy at any given redshift changed accordingly (see next section).
+cccccc
+Number of detected LBGs and corrections in the two fields
+
+0 pt
+5
+FORMULA a  FORMULA b  FORMULA c  FORMULA d  FORMULA e
+NICP12
+25.25  6  4.0  0.95  0.95
+25.75  4  5.3  0.93  0.93
+26.25  12  10.8  0.92  0.92
+26.75  14  12.9  0.91  0.90
+27.25  12  17.8  0.88  0.85
+27.75  29  21.3  0.76  0.79
+28.25  24  23.0  0.64  0.68
+HUDF
+25.5  3  3.0  0.92 0.92
+26  2  4.0  0.91 0.91
+26.5  6  8.6  0.90 0.89
+27  23  17.3  0.87 0.88
+27.5  18  18.3  0.84 0.86
+28  24  23.0  0.78 0.81
+28.5  34  31.5  0.68 0.70
+29  23  24.8  0.47 0.53
+a central bin magnitude
+b uncorrected number of color-selected LBG sources
+c corrected number of FORMULA -dropout sources after Monte-Carlo resampling
+d completeness derived from the idealized galaxies simulations
+e completeness derived from the dimming simulations
+
+The Luminosity Function of Lyman-Break Galaxies at  FORMULA
+The rest-frame UV-continuum LF was derived from a maximum likelihood fit of a {{cite:ba06e86f-3b0a-4e4b-8c82-e6de96f60dff}} function to the observed number of FORMULA -dropout galaxies apparent magnitude bins, FORMULA :
+FORMULA 
+FORMULA 
+Here FORMULA  and FORMULA  are the lower and upper bounds of the FORMULA -th magnitude bin, centred around FORMULA . The factor FORMULA  is the probability that a galaxy with magnitude FORMULA  at redshift FORMULA  is detected and selected to be a FORMULA  LBG.
+An "effective volume" (FORMULA ) technique was also used to compute the stepwise LF in bins of absolute magnitude under the assumption that FORMULA  is slowly-varying with redshift, i.e.:
+FORMULA 
+Over the redshift range of interest, FORMULA , the absolute magnitude at any given apparent brightness changes by about FORMULA  magnitudes, i.e., an amount comparable with the size of our magnitude bins. The resulting LF is thus generally less robustNote that the situation would be exacerbated for an FORMULA -selected (rather than FORMULA  -selected) FORMULA -dropout sample, since the differences in absolute magnitude over the same redshift range could be up to FORMULA 2 magnitudes, i.e., much larger than the size of the bins, due to intergalactic LyFORMULA  absorption. than the one computed using Eq. REF .
+In order to properly constrain the value of FORMULA  in our best fit Schechter function, we adopt this version of our LF for matching it to the {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}} data which constrained the FORMULA  LF at bright magnitudes in the Subaru Deep Field (SDF) (see Section REF ).
+The K-corrections required to transform the observed magnitudes into rest-frame 1400 Å absolute magnitudes, FORMULA , were computed assuming a 200 Myr old, continuously starforming galaxy template, reddened by FORMULA  with a {{cite:b068392b-a1dc-490b-9c4b-26300f10aaef}} dust extinction relation (hereafter referred to as "starburst" dust extinction). The differences in the K-corrections for alternative reasonable assumptions on the stellar population properties, including significantly younger stellar populations, were checked and found to be negligible (FORMULA  mag).
+The probability that a galaxy with magnitude FORMULA  at redshift FORMULA  is detected and selected to be a LBG at FORMULA  can be decomposed into the product of two components, i.e., the completeness-probability FORMULA  and the selection-probability FORMULA , i.e. FORMULA . We discuss this below.
+The Selection Probability  FORMULA
+The selection-probability as a function of magnitude and redshift was computed including the scatter in the photometry, which was derived from our simulations, and replacing with the FORMULA  flux value the FORMULA  magnitudes fainter than this limit. The input assumptions for the distribution of SEDs in the FORMULA -dropout population were based on the findings of {{cite:99be8e2f-7932-46d2-8e96-6aa1f0e68dd3}}. These authors inferred a distribution of spectral slopes from their sample of spectroscopically-confirmed FORMULA  LBGs by assuming a 1 Gyr old, continuously starforming galaxy SED with varying dust content according to the starburst dust extinction relation {{cite:6e10f4b4-0fc8-4782-8029-60c957b13723}}. The FORMULA  distribution was found to be roughly approximated by a Gaussian with a median of 0.13 and a FORMULA . Note that this results in a small fraction of the galaxy population which is fitted by non-physical, negative values of FORMULA ; this might indicate the presence of strong LyFORMULA  emission for some galaxies. Nevertheless, this "effective" distribution of FORMULA  is in good agreement with the typical dust attenuation values found by {{cite:7cfa7b7b-b9d1-40e0-b267-577d9dbfd1f3}}, who used synthetic SED fitting to FORMULA  LBGs to infer the properties of these galaxies. Since an age of 1 Gyr might be too old for FORMULA  galaxies, we used similar models with a 200 Myr old, constantly starforming SED {{cite:5dd7c5cc-3ae3-4a48-b498-99864cd4de82}}. The selection probability was found to be virtually independent of the assumed stellar age; this is understandable in the light of the dominant contribution from the youngest stellar populations to the UV emission.
+FIGURE 
+To explore the effects of different assumptions for the intergalactic hydrogen absorption, the SEDs were attenuated according to the calculations of both {{cite:b4fb6f61-b57e-47e1-b7b8-9e94dbdde75a}} and {{cite:be9f2ace-42a4-4b6b-9dc8-03a06cc15999}}. In the latter case, the selection probabilities are slightly reduced, as a consequence of the smaller attenuation and thus smaller reddening of the SEDs.
+We estimated the impact on the selection probability of assuming that there are no Lyman-Limit systems along the line of sight attenuating the observed FORMULA  flux, a situation which is expected to happen with a probability of only FORMULA  up to FORMULA  {{cite:be9f2ace-42a4-4b6b-9dc8-03a06cc15999}}. This effect was found to be negligible, i.e., the selection probability was reduced by less than FORMULA  around FORMULA . In the remainder of our analysis we therefore assume the estimated mean values for the intergalactic absorption.
+We also tested alternative distributions for the UV slopes. {{cite:ccc993d1-237e-4cda-8887-453fa3e253a7}} used stellar population synthesis models to derive ages, masses, and dust attenuation properties of FORMULA  LBGs. Using the Small Magellanic Cloud (SMC) dust extinction law, both {{cite:7cfa7b7b-b9d1-40e0-b267-577d9dbfd1f3}} and {{cite:ccc993d1-237e-4cda-8887-453fa3e253a7}} find that the typical UV attenuation is smaller than in the case of the starburst extinction law. The exact values somewhat depend on the metallicities and Initial Mass Functions (IMFs). To estimate the selection probability, we adopted a 100 Myr old, continuously starforming template reddened by a Gaussian distribution of FORMULA  with meanFORMULA  and FORMULA , which is approximately in agreement with the distributions found by Papovich et al. and Verma and et al. Also in this case we explored the effects of changing the prescriptions for the hydrogen intergalactic absorption. Differences of order FORMULA  or less were found with respect to the previous estimates.
+The selection probabilities for the NICP12 field, as derived under the various different assumptions, are shown in Fig. REF  for a bright and a faint magnitude bin. In general, since the intergalactic absorption relation derived by {{cite:be9f2ace-42a4-4b6b-9dc8-03a06cc15999}} is smaller than the corresponding calculation of Madau (1995), galaxies are less reddened assuming the former prescription; consequently, at any redshift of interest, they lie closer to the boundaries of our color selection. This leads to a reduced probability that they are selected as LBG candidates. The effect is exacerbated when the SMC extinction law is assumed: a considerable drop in the redshift distribution is expected around FORMULA , and the lower limit for the selection-redshift is slightly increased. Note that the adoption of the FORMULA  lower limit for the FORMULA  fluxes leads to a considerably different redshift window for the fainter magnitude bin: the reddest, highest-redshift objects are not detected. Furthermore, due to the larger photometric scatter at fainter magnitudes, the redshift selection smears out to substantially lower redshifts, down to FORMULA . Note that we have not applied any correction for incompleteness in these plots; therefore, the drop in selection probability at fainter magnitudes that is observable in the Figure is exclusively due to the errors in the color measurements. Similar results hold for the HUDF, for which however the selection probabilities are somewhat larger, due to the smaller uncertainties in the color measurements (see bottom panel of Fig. REF ).
+
+The Impact of Different Physical Assumptions on the LF
+As we discuss below, different assumptions for physical input parameters such as the dust extinction law and the hydrogen intergalactic absorption relation have a non-negligible impact on key quantities such as the effective volume and thus the average luminosity density. It is thus of paramount importance that LFs derived from different data sets are first rescaled to identical assumptions for SED distributions, dust properties and intergalactic extinction, before they can be compared to study any possible evolutionary effect in the galaxy populations. In our analysis we adopt the Madau (1995) and starburst relations as our "fiducial" assumptions for the hydrogen absorption and dust extinction, respectively, as these are widely used in most previous works and allow for a direct comparison with the published results. We explore however below the effects on the LF parameters of varying this assumptions.
+Our pencil-beam observations do not properly constrain the value of FORMULA  in the LF: given the rarity of very bright objects, the small volumes probed by the NICP12 field and the HUDF are not sufficient to adequately sample the knee of the Schechter function. We therefore rely on the SDF FORMULA  LF of Yoshida et al. (2006; see also Appendix REF ) to constrain the bright-end of our FORMULA  LF. These authors used similar fiducial assumptions for the intergalactic absorption and dust extinction relations, and similar techniques to correct for the observational biases, to those adopted in this paper.
+The SDF LF is based on the FORMULA  SUBARU filters, and is sensitive to a redshift window that is only slightly narrower than that of our data. It reaches down to FORMULA  mag, i.e., FORMULA  magnitudes brighter than our measurements. In combining the SDF and NICP12/HUDF LFs, we neglected small K-corrections from 1500 Å to 1400 Å; the FORMULA  SDF LF nicely matches our FORMULA  NICP12 LF in the region of overlap. The total FORMULA  LF, that merges the SDF estimate with our NICP12 and HUDF LFs, spans over the 5-magnitudes range FORMULA  (Figure REF ).
+FIGURE 
+Adopting the completeness corrections derived from the idealized-galaxies simulations, the lowest FORMULA , best fit of a Schechter function to the total FORMULA  LF gives: FORMULA MpcFORMULA magFORMULA , FORMULA  mag, FORMULA  (see Figure REF  and Table REF ). As expected, the value of FORMULA  is largely influenced by the SDF LF, while the slope FORMULA  is constrained by our fainter data. The adoption of the completeness corrections derived from the dimmed-galaxies simulations, and of different SED distributions, dust extinction laws and intergalactic absorption prescriptions, has no significant impact on this result.
+In particular, all tests performed by varying these quantities, independent of whether they include one or both of our two deep fields, return a value of FORMULA  that, within the errors, is consistent with FORMULA . We therefore fixed FORMULA  to this value in order to highlight the effects of varying the input physical parameters on the LF computed according to Eq. (REF ) for the HUDF and NICP12 only.
+ccccccc
+FORMULA  Luminosity Functions 
+0 pt
+7
+Authors  Field  Area  FORMULA   FORMULA   FORMULA    FORMULA
+  [arcminFORMULA ] [mag]  [MpcFORMULA magFORMULA ][mag]
+{{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}}  HUDF  11  FORMULA   FORMULA   FORMULA   FORMULA  (fixed)
+{{cite:2519cbbf-735e-472e-860b-36e79cba45fe}}  SDF  875  FORMULA   FORMULA   FORMULA    FORMULA
+{{cite:2519cbbf-735e-472e-860b-36e79cba45fe}}  SDF  875  FORMULA  FORMULA   FORMULA   FORMULA  (fixed)
+This worka + Yoshida  HUDF+NICP12+SDF    FORMULA   FORMULA    FORMULA
+This workb + Yoshida  HUDF+NICP12+SDF    FORMULA   FORMULA    FORMULA
+aAdopting the completeness correction derived from the idealized-galaxies simulations, the starburst dust extinction relation, and Madau (1995) intergalactic absorption prescription.
+bAdopting the completeness correction derived from the idealized-galaxies simulations, the SMC dust extinction law, and the Meiksin (2006) intergalactic absorption prescription.
+The results obtained with fixing the value of FORMULA  and excluding the SDF from the fits are listed in Table REF . Only marginal differences are generally observed. Within the errors, the derived parameters are consistent with each other. Note however that the average luminosity density increases by about 20-30% when the FORMULA -dropout population is described by the SMC dust extinction law and the Meiksin intergalactic absorption relation, relative to the more widely used combination of prescriptions which we have adopted as our fiducial model. This is due to a change of a similar order of magnitude in the resulting effective volumes. We note that the uncertainties in the completeness, estimated from our two complementary sets of simulations, have a comparably small effect on the faint-end slope of the LF as the different physical assumptions.
+ccc|cc|cc
+Impact of Physical Parameters on the LF (Eq. REF ; Constant FORMULA )† 
+0 pt
+6
+Completeness  Dust Extinction  Intergalactic Absorption  FORMULA  NICP12  FORMULA  NICP12 FORMULA  HUDF  FORMULA  HUDF
+Idealized  Starburst  Madau  FORMULA   FORMULA   FORMULA    FORMULA
+Idealized  Starburst  Meiksin  FORMULA   FORMULA  FORMULA    FORMULA
+Idealized  SMC  Madau  FORMULA  FORMULA   FORMULA    FORMULA
+Idealized  SMC  Meiksin  FORMULA   FORMULA  FORMULA    FORMULA
+Dimmed  Starburst  Madau  FORMULA   FORMULA   FORMULA    FORMULA
+Dimmed  Starburst Meiksin  FORMULA   FORMULA   FORMULA    FORMULA
+Dimmed  SMC  Madau  FORMULA   FORMULA   FORMULA    FORMULA
+Dimmed  SMC  Meiksin  FORMULA   FORMULA   FORMULA    FORMULA
+FORMULA Typical errorbars for FORMULA  and FORMULA  are FORMULA  and FORMULA , respectively. The starburst dust model assumes FORMULA ; the SMC dust model assumes FORMULA .
+
+The Role of Cosmic Variance
+The Underdensity of the HUDF
+On average, independent of the assumed input parameters, the LF derived from the HUDF results in a lower average luminosity density: The HUDF appears to be "under-dense" with respect to the NICP12 field (see also Fig. REF ). By integrating the LF from Table REF  over the magnitude range of overlap between the HUDF and the NICP12 field, i.e., FORMULA , the amount of this underdensity is about 30%, independent of the specific input physical assumptions. Although a larger number of low-redshift interlopers in the NICP12 sample cannot be ruled out, (a) the homogeneity in the procedures with which both data sets have been handled and analyzed, and (b) theoretical expectations concerning the amount of scatter amongst volumes of order of those sampled with the HUDF and NICP12 field, both support the interpretation that the under-density in FORMULA  LBG of the HUDF has a physical origin. Note that, in their analysis of the FORMULA -dropouts population, {{cite:e8d823ed-ebb4-4b94-a9b9-57f6dd37e95a}} find the HUDF under-dense at the bright end, also by about FORMULA , relative to the GOODS field. Thus, it appears that the FORMULA  under-density of the HUDF extends at least over the volume encompassing the entire FORMULA  epoch.
+
+Quantification of Cosmic Variance Effects in Our Study
+In order to estimate the impact of cosmic variance on our measurements, we use a FORMULA -particles, dark-matter-only cosmological simulation in a box of FORMULA  side, that results in a particle mass of FORMULA . Simple prescriptions to populate the dark matter halos with luminous galaxies, and a realistic beam-tracing algorithm were used to study the field-to-field variations in the number counts of star forming galaxies at the epoch of interest.
+The numerical simulation was carried out with the public
+PM-Tree code Gadget-2 {{cite:41069d8e-ac0b-47c4-a377-e46766ea1af1}} adopting a
+FORMULA  value. The initial conditions were generated using a code based on the Grafic algorithm
+{{cite:374a5093-7055-4129-af9e-15d71c210d3d}} with a FORMULA  transfer function
+computed according to the fit of {{cite:8a9a2734-1e93-4913-9521-2545db3f9dc1}}, and assuming a spectral index FORMULA .
+Dark matter halos were identified in the simulation snapshots using the HOP halo finder {{cite:bea00769-aae8-4c6e-bdc1-ff0631bff6d9}}; the redshift interval FORMULA  was sampled in steps of FORMULA .
+The simulation reproduces a volume about 73 times larger than the effective
+volume probed by each of our two fields for the FORMULA -dropout population (FORMULA ).
+Source catalogs were constructed for each snapshot, and analyzed with our beam-tracer algorithm, which is similar to the
+one described in {{cite:43c8a3b8-6bd4-4146-b67f-c40cc63f7323}}. We present details of the beam-tracer algorithm in
+{{cite:8962c43d-210d-4b5c-8451-024a983e2ebd}}. In brief, the pencil beam associated with the ACS field
+of view is traced through the simulation box across different snapshots
+of increasing redshift. As the uncertainty in the
+FORMULA -dropout redshifts is larger than the size of the simulation box,
+the simulation box needs to be beam-traced several times. We carried out 4000 Monte
+Carlo realizations of the beam-tracing procedure by varying the initial
+position of the beam; the beam was always angled so as to guarantee
+no overlap between different beam-tracing runs.
+With our choice of angles we got a separation between different beam regions of at least FORMULA 15 Mpc/h, which corresponds to FORMULA 540 arcsec at FORMULA . We verified that fields with such separations are essentially statistically independent. Note also that our 100Mpc/h box is different from an ideal simulation of a 420Mpc/h box as in the power spectrum we are missing contributions from wavelengths greater than 100Mpc/h. For the scales we are interested in at FORMULA , the missing power is however negligible in the two-point correlation function and hence in the cosmic variance.
+Dark matter halos within a beam were flagged, and a simple
+model was used to determine the number of FORMULA -dropouts within a flagged
+halo. In particular, the intrinsic number of galaxies was computed using the halo
+occupation model description. This gives an average occupation number
+{{cite:071da843-9969-4aac-9c53-efbc0bbac9bc}}:
+FORMULA 
+where FORMULA  is the Heaviside step function, FORMULA  is a
+minimum halo mass threshold, FORMULA  is the typical scale where multiple
+galaxies are present within the same halo, and FORMULA  is of
+order unity. If FORMULA , in addition to the one galaxy at the center of a
+halo, a suitable number of companion galaxies is extracted from a Poisson
+distribution with mean FORMULA . A
+fraction FORMULA  of the total galaxies in each halo is finally identified as FORMULA -dropouts , so as to take
+into account that FORMULA -dropouts may be detected for only a limited period during
+their evolution.
+In addition to this, we tossed 50% of the selected galaxies due to detection and selection incompleteness present in our survey.
+The results for different choices of the model parameters are reported
+in Fig. REF . We consider: (i) FORMULA , FORMULA  (i.e., one galaxy per halo); (ii) FORMULA , FORMULA  (i.e., 50% probability that a DM halo hosts a LBG galaxy);
+(iii) FORMULA , FORMULA  and FORMULA . The
+value of FORMULA  is kept as a free parameter and it is adjusted to
+have the same average number of counts in all three cases. Variations
+of FORMULA  are limited in the range FORMULA .
+FIGURE 
+The distribution of the number counts probability is very
+similar in the three cases, and the field-to-field standard deviation
+is FORMULA . This is significantly larger than the Poisson
+uncertainty of FORMULA  for a value of FORMULA  counts per field, which is about the number of FORMULA -dropout counts/field that we have detected.
+Depending on the specific model, there are minor differences in the
+computed standard deviation (FORMULA ): for
+FORMULA , a smaller FORMULA  is required; therefore, the variance
+decreases, as lower-mass halos become less clustered. As expected, the
+largest variance results in the case of multiple galaxy occupancy of the halos.
+We also computed the relative variations in expected counts for two fields which
+are separated by about FORMULA  arcmin, as is the case for the HUDF and the NICP12 field.
+We find that the two fields have essentially independent counts, i.e., the
+variance of the average number of detected FORMULA -dropouts decreases by a
+factor FORMULA .
+Finally it is interesting to highlight that the
+narrow-beam geometry of our data significantly reduces the cosmic
+scatter with respect to a similarly-sized, spherical volume for a single field, which has a variance in the number counts of FORMULA  (see also {{cite:712233f0-f101-41f1-af5f-55cafda9d8dd}}). This is due to the stretched redshift
+space of the pencil beam, that probes a variety of environments by minimizing the probability of enclosing only a large void or a rich cluster.
+
+Discussion
+We discuss below the implications of our measurement of the faint-end of the FORMULA  LF of star forming galaxies for the evolution of galaxies, in the context of current models of galaxy formation.
+Evolution of the Faint-End of the LBGs Luminosity Function between FORMULA  to 6
+There have been several other studies of the LBG LF from FORMULA . While for FORMULA  the different LFs and number counts seem to be in reasonable agreement with each other {{cite:99be8e2f-7932-46d2-8e96-6aa1f0e68dd3}}, {{cite:e5b96f9c-ca2a-4ae7-a716-037eb17073d6}}, {{cite:ef25cf6b-bfc1-4156-a2aa-9a8aa793461e}}, at FORMULA  largely different LFs were reported in the literature {{cite:e6e603d5-9a55-42e3-8e00-7f173b7b37b3}}, {{cite:fb48fa72-f126-4914-a22a-0d55c5bbdf3a}}, {{cite:83d65bf7-b5fe-4bd6-a196-c44536df98fb}}, {{cite:92ba3a9d-cbad-4bc0-823e-dbb30833f37c}}. This might be mainly due to the highly model dependent corrections needed for the computation of the FORMULA -dropout LF. In order to investigate the evolution of the LBG LF over cosmic time, we use the analyses of {{cite:99be8e2f-7932-46d2-8e96-6aa1f0e68dd3}} and {{cite:e8d823ed-ebb4-4b94-a9b9-57f6dd37e95a}} at redshift FORMULA  and FORMULA , respectively, since these are widely used for comparisons in other works, and represent an ideal compromise between area coverage and depth. These are plotted in Figure REF . The FORMULA  LF is K-corrected to 1400 Å and adapted to our cosmology (FORMULA ); it is based on identical assumptions as in our fiducial LF, with which it can thus be directly compared. The FORMULA  LF is based on a "cloning" algorithm, which is well bracketed by our two different assumptions for the dust extinction and the hydrogen intergalactic absorption.
+The possible underdensity of the HUDF, and the associated uncertainty in the faint-end slope of the FORMULA  LF, is relevant in establishing the evolution of such faint-end through the comparison with the FORMULA  estimates. In particular, the upper panel of Figure REF  shows that the inclusion of the HUDF in the computation of the FORMULA  LBGs LF leads to a shallower faint-end slope than at FORMULA ; in contrast, the faint-end slope that we derive using the NICP12 field alone for the FORMULA  LBGs is very similar to the one measured at that later epoch. A similar result is found when the SMC extinction law and the Meiksin intergalactic extinction relation are assumed, as shown in the lower panel of the figure. This result is thus robust also towards possible variations of the dust extinction properties through cosmic time. The possibility remains that the HUDF is, as we discuss above, FORMULA  under-dense relative to the NICP12 (and the mean); a renormalization of the HUDF by such an amount would actually lead to a slightly steeper faint-end slope at FORMULA  than at FORMULA .
+FIGURE 
+Rather similar conclusions are drawn for the redshift evolution of the faint-end of the LF in the FORMULA  to FORMULA  redshift window. Inspecting both panels of Figure REF , our fiducial FORMULA  faint-end slope is consistently shallower than the FORMULA  estimate, for both the HUDF and the NICP12 field; the NICP12 field provides however, at FORMULA , a similar faint-end slope to the one measured at FORMULA  when the SMC dust extinction law and the Meiksin intergalactic absorption correction are adopted. A similar agreement between the FORMULA  and FORMULA  faint-end slopes would also be obtained if the HUDF were renormalized to account for a FORMULA  underdensity caused by cosmic variance. Note that {{cite:e8d823ed-ebb4-4b94-a9b9-57f6dd37e95a}} did renormalize the FORMULA  HUDF number density, increasing it by about 32%, based on the comparison with the GOODS data.
+
+Comparison with Theoretical Predictions
+We compare our observed FORMULA  LBG LF with theoretical predictions from
+the GALFORM semi-analytical model {{cite:af917e28-1ec7-42e0-bcc2-f29fcf9472da}}, which calculates
+galaxy formation in the framework of the CDM model of structure
+formation. It includes the assembly of dark matter halos by mergers,
+heating and cooling of gas in halos, star formation from cold gas,
+feedback from supernovae and photoionization, galaxy mergers, and
+chemical evolution of stars and gas. Star formation occurs in two
+modes: quiescent in disks, and starbursts triggered by galaxy
+mergers. Galaxy luminosities are calculated based on stellar
+population synthesis, and include obscuration by dust, which is
+calculated self-consistently by radiative transfer using the GRASIL
+model {{cite:b5936f58-7a4e-4558-8cfc-e4d55779a855}}, {{cite:6cd68220-3631-4503-8751-3197ee08362e}}. The version of the model which we
+use is that described in {{cite:708d3cc2-edf5-4469-a7a5-a10ad7bf3671}} {{cite:d2642de9-e055-44ce-9cde-228023168b1b}},
+and is based on the FORMULA -CDM cosmology, with FORMULA ,
+FORMULA , and FORMULA . An important
+difference of this model from the earlier {{cite:af917e28-1ec7-42e0-bcc2-f29fcf9472da}} model is the
+much larger role of star formation bursts at high redshift. In the
+{{cite:708d3cc2-edf5-4469-a7a5-a10ad7bf3671}} model, bursts are responsible for 30% of the total
+star formation when integrated over all redshifts, compared with
+around 5% in the {{cite:af917e28-1ec7-42e0-bcc2-f29fcf9472da}} model, and bursts dominate the
+total star formation rate density at FORMULA . This difference in
+behaviour results from (i) modifying the quiescent star formation
+time-scale in galactic discs, in order to make mergers at high
+redshift more gas-rich; and (ii) allowing triggering of bursts by both
+minor and major mergers. The predictions of this model for LBGs at
+different redshifts will be presented in full in {{cite:682cc3c6-73a3-4bd2-a7bd-3ce14838e7e1}},
+here we give only the results for FORMULA . The predictions of this same
+model for LyFORMULA -emitting galaxies at similar redshifts have
+already been given by {{cite:6cbad864-816c-41e9-ae1d-e9f6f355f141}}.
+The Initial Mass Function (IMF) has a large impact on the predicted
+FORMULA  LF. We therefore computed the results for two different
+assumptions, namely (1) a model where all stars are produced
+with a {{cite:1174b157-25c2-4e99-9747-1587e6b2f9ce}} IMF, and (2) a model where quiescent star
+formation is described by a Kennicutt IMF, but star formation in the
+merger-induced starbursts occurs with a "Top-Heavy" (FORMULA ) IMF. The
+Kennicutt IMF has FORMULA  for FORMULA  and FORMULA  above this
+threshold; it is therefore quite similar to a {{cite:ce08fca0-a773-466b-80f5-b169f1fc4d2c}} IMF for
+FORMULA . An IMF similar to the Kennicutt IMF has been argued to better fit the
+observational data from our Galaxy and other spiral galaxies than a
+Salpeter IMF {{cite:b1d26487-3e97-4f55-8417-9081a8aa90a9}}. At constant stellar mass, the
+far-UV (1000-3000Å) luminosity for a Kennicutt IMF is within 10-20%
+of that for a Salpeter IMF. The primary motivation in {{cite:708d3cc2-edf5-4469-a7a5-a10ad7bf3671}}
+for introducing a top-heavy IMF in starbursts was in order to explain
+the number of sub-mm galaxies seen at high redshift - with a normal
+IMF, the predicted number counts of faint sub-mm galaxies were too low
+by more than an order of magnitude. However, a top-heavy IMF in
+starbursts is also motivated by theoretical calculations
+{{cite:4fde63a5-a190-4887-b1f4-6f508bb5acb7}}, which suggest that, under the conditions
+that exist in starbursts, the IMF could be biased towards more massive
+stars relative to quiescent star formation.
+Figure REF  shows the rest-frame 1500Å LF at FORMULA  predicted
+by the semi-analytical models {{cite:682cc3c6-73a3-4bd2-a7bd-3ce14838e7e1}}, compared to our
+measurements.
+The error bars on the theoretical curves show bootstrap estimates of
+the uncertainty due to the finite number of galaxies in the simulated
+samples; the numerical runs are very CPU intensive, and it is thus
+currently impractical to greatly reduce these error bars by increasing
+the sample size. The dotted black and blue lines in the figure show,
+for the simple-Kennicutt and Kennicutt+Top-Heavy IMFs, respectively,
+the predicted LFs without dust obscuration. These substantially
+overpredict the number density of FORMULA  LBGs over the whole luminosity
+range sampled by the data, but this is not surprising, since the
+average dust extinctions of star-forming galaxies in the far-UV at
+high redshift are thought to be quite large.
+FIGURE 
+The solid black and blue lines are the simple-Kennicutt and
+Kennicutt+Top-Heavy IMFs models including the effects of dust extinction.
+At the bright-end of the FORMULA  LF, the simple-Kennicutt
+model with dust extinction substantially underestimate the number
+density of bright (FORMULA ) FORMULA  LBGs. The Kennicutt+Top-Heavy
+IMF model is much closer to the observational data. Although this
+latter model still appears somewhat low compared to the observations,
+this could be explained by relatively small changes in the dust
+extinction, to which the model predictions are quite
+sensitive. Resolving this issue may require better observational
+estimates of the dust extinctions in LBGs.
+Another possibility would be that either the fraction of mass produced
+in bursts or the fraction of high mass
+stars in the bursts is even higher than in our Top-Heavy IMF model.
+The Kennicutt+Top-Heavy IMF model also appears to give a somewhat better
+fit to the faint end of the observed FORMULA  LF than the
+simple-Kennicutt model, although the difference between the two models
+at the faint end is only slightly larger than the scatter in our
+estimate due to completeness corrections, input physical parameters,
+and possibly cosmic variance.
+
+Summary and Concluding Remarks
+We have presented the UDF05 project, a follow-up of the HUDF aimed at increasing the area of the HUDF and securing two more fields with ultra deep ACS and NICMOS imaging.
+In this first paper we use the UDF05 to estimate the FORMULA  Luminosity Function of Lyman-Break Galaxies down to very faint absolute magnitudes. Specifically, we use the NICP12 ACS field of the UDF05, and the ACS HUDF for a comparison, to extend the measurement of the LF of star forming galaxies at FORMULA  down to FORMULA . This allows us to constrain the faint-end slope of the FORMULA  LF very accurately to FORMULA , which is in good agreement with the results of Giavalisco et al. (private communication) based on the GOODS data to a similar depth as in our work. After this paper was submitted, {{cite:d23e9e2e-db0b-4442-a21b-5dc48e519163}} published LBG LFs from FORMULA  based on all the available deep ACS fields and also their results are in very good agreement with our FORMULA  LF.
+Attention was paid to correct the raw number counts for selection biases and photometric errors, and to estimate the impact on the LF of different assumptions for the properties of the FORMULA  LBG population.
+We find that different assumptions about the LBG galaxy population and intergalactic absorption result in an uncertainty in the density of LBGs at FORMULA  of about 25%.
+Under similar physical assumptions, the HUDF is underdense in FORMULA  LBGs by about 30% with respect to the NICP12 field, a variation which can be accounted for by the expected amount of cosmic variance in the pencil-beam volumes we have probed.
+A substantial steepening of the faint-end slope is observed from the local Universe out to FORMULA  {{cite:23f444e9-7337-4603-9e67-5de32a715c70}}, in agreement with semi-analytical predictions within a hierarchical galaxy formation scenario {{cite:c98bb518-e303-42a5-8585-b6e17159f6d9}}. Further steepening of the faint-end slope above FORMULA  has been reported by {{cite:4c9083a1-c3bc-4737-b9cf-789db41934ef}}. As discussed by {{cite:13b226e6-f93b-4b3a-a520-6bee12c1ac41}}, however, the selection window of {{cite:4c9083a1-c3bc-4737-b9cf-789db41934ef}} is rather broad, and it is thus likely that their sample contains a large number of low-redshift interlopers (see also Appendix REF ). This would lead to an overestimation of the bright-end of the LF and thus to a spurious evolution of the LF. Our much deeper data, extending about 3 magnitudes fainter than the {{cite:4c9083a1-c3bc-4737-b9cf-789db41934ef}} sample, show in contrast no evolution of the LF faint-end of LBGs in the FORMULA  to 6 redshift window, and substantiate a picture in which, once cosmic variance is taken into account, the faint-end of the LF of LBGs remains constant throughout this cosmic period. This is particularly interesting in comparison with the significant evolution shown, over the same redshift range, by the bright Lyman-break galaxy population {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}}, {{cite:d23e9e2e-db0b-4442-a21b-5dc48e519163}}.
+A comparison with our semi-analytical models, specifically aimed at investigating the effect of the IMF, suggests the possibility that the IMF of FORMULA  LBGs is more top-heavy than a Salpeter IMF. Other factors could, however, be relevant, such as variations in the dust extinction corrections.
+Acknowledgements: We wish to thank the referee for helpful comments that have improved the presentation of our results. This work has been partially supported by NASA HST grant 01168.
+Facilities: HST(ACS).
+
+Comparison with Published FORMULA  LBGs Luminosity Functions
+The Subaru Deep Field
+Ground-based Subaru observations have been used to derive the FORMULA  LF of LBGs {{cite:c6f05259-b862-48da-b200-20a215066fb2}}, {{cite:13b226e6-f93b-4b3a-a520-6bee12c1ac41}}, {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}}. In particular, {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}} extended the analysis of {{cite:13b226e6-f93b-4b3a-a520-6bee12c1ac41}} on the SDF with observations that reached 0.5 mag fainter and were wider in area by a factor of 1.5. As both authors adopted very similar techniques and their number counts of FORMULA  galaxies are in very good agreement, we focus on the results by {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}} only. Using the combination of Subaru FORMULA  filters, these authors defined two samples of FORMULA  LBGs, whose reliability was tested with spectroscopic data. We can directly compare with their FORMULA  analysis, as this filter combination is sensitive to a very similar redshift window (FORMULA ) as our data.
+Following a procedure similar to the one adopted in this paper, {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}} estimated the selection probability and completeness by adding artificial galaxies to the original images; they did not correct their samples for photometric errors as we do, but estimated the number of expected low-FORMULA  interlopers by simulating galaxies with colors according to a photo-FORMULA  catalog from the Hubble Deep Field North {{cite:4199c74c-12c4-45ab-8e1e-11045adfbad8}}.
+The best-fitting LF derived by {{cite:2519cbbf-735e-472e-860b-36e79cba45fe}} is listed in Table REF  (only FORMULA  sample, for the cases of keeping all LF parameters free and of fixing the faint-end slope to their FORMULA  result). In both cases the faint-end slopes are very steep, i.e., significantly steeper than the one that we measure from our 3-magnitudes deeper data. This highlights the need for very deep imaging surveys to study the contribution to galaxy assembly at high redshifts by galactic systems well below the few bright percent of the star forming population at those epochs.
+Note that we did not use the LF of {{cite:c6f05259-b862-48da-b200-20a215066fb2}} which has a larger amplitude due to a possibly significant contamination by low redshift interlopers {{cite:13b226e6-f93b-4b3a-a520-6bee12c1ac41}}, {{cite:62c1c7df-e08c-4872-9da1-74168a3f37e0}}.
+
+A Previous Analysis of the Hubble Ultra Deep Field
+{{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}} present the first attempt to derive the FORMULA - to FORMULA -dropout LFs in the HUDF. Their approach is very different from ours, as they did not correct for observational biases on the selection of dropout sources. Instead, they assumed that these biases affect all dropout samples equally, and base on this assumption their study of the evolution of the LBGs LF in the FORMULA  redshift window. They extract an FORMULA -selected sample from the GOODS v1 data to constrain the bright-end of the LF, and derive the following best fit parameters: FORMULA  MpcFORMULA magFORMULA  ÅFORMULA  (fixed).
+Figure REF  shows our fiducial FORMULA  LF in comparison with the estimate of Beckwith et al. The two LFs are in good agreement, except for one datapoint at FORMULA . This is a very interesting result, as it suggests that the several effects, which we have corrected for in our analysis, likely cancel out, thereby validating the {{cite:fcabd2e7-ae50-46d4-8222-5a1bff7e0ded}} assumption, at least for the FORMULA  LBG population. In a future paper (Oesch et al. 2007, in preparation) we discuss whether a similar conclusion can be drawn at FORMULA .
+FIGURE 
+
+Simulations: Details
+Idealized-Galaxies Simulations
+Two different types of light profiles were considered for the ideal-galaxies simulations,
+namely an exponential and a deVaucouleurs profile. These distributions are expected to more or less bracket the whole range of galactic light profiles. Specifically, the surface brightness distribution of disk galaxies was approximated by:
+FORMULA 
+where FORMULA  and FORMULA  are the major and minor axes lengths, the inclination angle FORMULA  is given by FORMULA , and FORMULA  is the extrapolated total galaxy light. The coordinates FORMULA  and FORMULA  are measured from the centre of the galaxy. The disk was assumed to be infinitely thin, which would lead to unrealistic shapes for edge-on systems. To avoid this unphysical situation, galaxy shapes were simulated with inclinations up to a maximum of FORMULA . To retain a flat distribution of inclinations in the entire 0FORMULA  to 90FORMULA  range, inclinations FORMULA , drawn from an assumed flat distribution, were set equal to 80FORMULA .
+The deVaucouleurs profile adopted to simulate spheroidal-type galaxies reads:
+FORMULA 
+with FORMULA  the radial distance as measured from the centre of the galaxy, and FORMULA  the extrapolated total galaxy light. Spherical symmetry was assumed for the deVaucoleurs galaxies. The FORMULA -profile is very steep at small radii, and thus these types of galaxies are detected down to a fainter limiting magnitude with respect to disk galaxies. The total light is however distributed over a more extended region– and therefore, the amount of flux lost in the low-surface brightness wings is larger – than for an exponential profile.
+The idealized galaxies were convolved with the ACS PSF before being added to the NICP12 and HUDF images. The PSF was derived from a relatively bright but unsaturated star in the field. Tests with a PSF produced with TinyTim {{cite:1d07ec23-47bd-4c8b-919a-29bddf417cd1}}, downgraded to the measured FWHM of the observed PSF, were also performed, and produced similar results. Poisson noise from the galaxy counts was not added to the simulated galaxies, since at the faint magnitudes of this study the sky background is the dominant source of Poisson noise. Tests were nonetheless performed, which confirmed that the galaxy shot noise had no impact on the results.
+
+Dimmed-Galaxies Simulations
+The idealized-galaxies simulations allow us to relate the intrinsic properties of galaxies to how these would be observed with our instrumental setup. They suffer however from the limitation of assuming perfectly smooth light distributions, as described by the adopted analytical descriptions. This is clearly not the case for real galaxies at any epoch, and certainly not for the FORMULA  light emerging from the star forming FORMULA  galaxy population.
+In order to have a benchmark to gauge the incompleteness in our samples on the basis of more realistic assumptions concerning the galaxy light distributions, we performed an additional set of simulations, entirely based on the galaxies that were detected in the NICP12 and HUDF fields. Specifically, we dimmed the ACS images by specific amounts, and added these dimmed images to the corresponding original frames. Offsets of a few pixels were introduced before co-adding the dimmed and original images. These offsets were chosen large enough to ensure that a given original galaxy was not 'self-blended' to its dimmed version in the subsequent SExtractor run. Since this procedure adds additional noise to the images, the co-added images were appropriately rescaled in order that galaxies of any given magnitude will have the same S/N values in the original and the final image. More specifically:
+
+A copy of the original image was divided by a factor FORMULA ;
+
+This FORMULA -scaled version of the data was shifted by a few pixels relative to the original parent frame and added to the latter;
+
+The resulting composite image was divided by FORMULA , to retain the S/N vs. magnitude relation of the original image;
+
+The rms map of this final "dimmed image" was obtained from the rms map of the original image (FORMULA ) and the shifted image (FORMULA ) by computing:
+FORMULA 
+
+The procedure leads to an effective dimming factor for the galaxies' fluxes of FORMULA .
+We performed four separate experiments with four different shifts and dimming factors FORMULA . For each experiment we shifted and dimmed the FORMULA , FORMULA , and FORMULA  images by the same amount and reran SExtractor with the same parameters as for the compilation of the original catalogues.
+We used these "dimmed-galaxies" simulations to quantify, in an independent and complementary way relative to the "idealized-galaxies" simulations discussed above, the completeness of our catalogs, as well as the scatter in measured magnitudes and colors, as a function of galaxy luminosity.
+Note that these simulations differ conceptually from the 'cloning technique' adopted by {{cite:e8d823ed-ebb4-4b94-a9b9-57f6dd37e95a}} as we add dimmed versions of the whole ACS images to the original tiles rather than inserting modified cut-outs of a subset of galaxies.

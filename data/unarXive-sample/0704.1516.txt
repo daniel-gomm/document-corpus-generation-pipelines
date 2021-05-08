@@ -1,0 +1,600 @@
+
+[Compton Scattering of Fe KFORMULA  Lines in mCVs]Compton Scattering of
+Fe KFORMULA  Lines in Magnetic Cataclysmic Variables
+[McNamara et al.]
+A. L. McNamara FORMULAE-mail:aimee, kuncic@physics.usyd.edu.au,
+Z. KuncicFORMULA [1],
+K. WuFORMULA , D. K. Galloway FORMULACentenary Fellow and J. G. Cullen FORMULA
+FORMULA School of Physics, University of Sydney, NSW 2006, Australia
+FORMULA Mullard Space Science Laboratory, University College London, Holmbury St
+Mary, Surrey, RH5 6NT, UK
+FORMULA School of Physics, University of Melbourne, Victoria 3010, Australia
+FORMULA Thales, Garden Island, Cowper Wharf Rd, Potts Point, NSW 2011, Australia
+Accepted ... . Received ...; in original form ... 
+REF – 2006
+Compton scattering of X-rays in the bulk flow of the accretion column in
+magnetic cataclysmic variables (mCVs) can significantly shift photon energies.
+We present Monte Carlo simulations based on a nonlinear algorithm
+demonstrating the effects of Compton scattering on the H-like, He-like and
+neutral Fe KFORMULA  lines produced in the post-shock region of the accretion
+column. The peak line emissivities of the photons in the post-shock flow are
+taken into consideration and frequency shifts due to Doppler effects are also
+included. We find that line profiles are most distorted by Compton scattering
+effects in strongly magnetized mCVs with a low white dwarf mass and high mass
+accretion rate and which are viewed at an oblique angle with respect to the
+accretion column. The resulting line profiles are most sensitive to the
+inclination angle. We have also explored the effects of modifying the
+accretion column width and using a realistic emissivity profile. We find that
+these do not have a significant overall effect on the resulting line profiles.
+A comparison of our simulated line spectra with high resolution
+Chandra/HETGS observations of the mCV GK Per indicates that a wing
+feature redward of the 6.4 keV line may result from Compton recoil near the
+base of the accretion column.
+accretion – line: profiles – scattering – binaries: close – white dwarfs –
+X-rays
+Introduction
+Magnetic cataclysmic variables (mCVs) are close interacting binaries consisting
+of a magnetic white dwarf (WD) and a low mass red dwarf {{cite:62256dc0-b801-4b8e-b396-d976fd11ef83}}. Near
+the white dwarf surface the accretion flow in mCVs is confined by the magnetic
+field of the WD and is channelled to the magnetic pole region(s) of the WD,
+forming an accretion column {{cite:62256dc0-b801-4b8e-b396-d976fd11ef83}}, {{cite:7c313ad0-a36e-4f8d-8b5c-45f9d73abf9a}}, {{cite:a838ebfb-366b-4356-94aa-496295cbc6b3}}, {{cite:c9124f9f-a5ee-4c84-998e-ef4654046f8b}}.
+Near the base of the accretion column, material in supersonic free-fall is
+brought to rest on the WD surface, forming a standing shock which heats and
+ionizes the accreting plasma. The shock temperature FORMULA  depends mainly
+on the mass FORMULA  and radius FORMULA  of the WD and is given by
+{{cite:a838ebfb-366b-4356-94aa-496295cbc6b3}}
+FORMULA 
+where FORMULA  is the mean molecular weight and FORMULA  is the shock height.
+For WD masses FORMULA  and typical mCV parameters,
+the shock temperature is FORMULA  K. The plasma in the post-shock region of the column cools by
+emitting bremsstrahlung X-rays and optical/IR cyclotron radiation
+{{cite:fb6a42eb-cebc-478a-802e-486ab5b0f3e6}}, {{cite:d2101cb1-0021-4dd7-96f5-c70214181670}}. Since cooling occurs along the flow, the post-shock region
+is stratified in density and temperature. The height of the post-shock region
+is determined by the cooling length. For a flow with only bremsstrahlung
+cooling, the shock height is given by {{cite:a30d6447-0918-414d-a7a6-4a09d9f7a653}}
+FORMULA 
+where FORMULA  is the specific mass accretion rate.
+A plasma temperature of FORMULA  keV is sufficient to fully ionize
+elements such as argon, silicon, sulphur, aluminium or calcium. Heavier
+elements such as iron can be highly ionized, resulting in H-like Fe
+XXVI and He-like Fe XXV ions. K-shell transitions
+in Fe XXVI and Fe XXV ions give rise to
+KFORMULA  lines at 6.97 keV and 6.675 keV, respectively {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. The irradiation of low ionized and neutral iron by X-rays above the Fe
+K edge produces fluorescent KFORMULA  emission at approximately 6.4 keV inside
+the WD atmosphere, beneath the accretion column and in surrounding areas. The
+natural widths of the Fe KFORMULA  lines are small, but the lines can be
+Doppler broadened by the bulk and thermal motions of the emitters in the
+post-shock flow. The bulk velocity immediately downstream of the shock is
+FORMULA  for
+typical mCV parameters. Lines can also be broadened by scattering processes.
+Compton (electron) scattering is expected to be more important than resonance
+(ion) scattering for the KFORMULA  transitions {{cite:1b7301c7-e47c-49dd-8c5d-fdbb225bdf82}}. For an mCV with
+specific accretion rate FORMULA  the electron number density is
+FORMULA  for a shock heated region of thickness
+FORMULA , giving a Thompson optical depth of FORMULA . Thus, one in every ten photons would encounter an electron before
+leaving the post-shock region. The relative importance of Doppler shifts,
+thermal Doppler broadening and Compton scattering depends on the ionization
+structure in the post-shock flow.
+X-ray observations by Chandra/HETGS and ASCA/SIS have
+revealed significant broadening of some Fe KFORMULA  lines in mCVs
+{{cite:a74d1a8a-336d-4128-8c0a-08a234fe92ea}}, {{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}}. It was suggested that Compton scattering in the
+accretion column is largely responsible for the broadening in the observed
+lines. Doppler broadening should only be significant in lines emitted close to
+the shock. The absence of Doppler shifts in the observed H-like and He-like
+lines suggests that these photons may be emitted predominantly from regions of
+lower velocity near the base of the accretion column {{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}}. The
+observed line profiles have yet to be fully interpreted with a quantitative
+model that takes into account Compton scattering effects in a complex
+ionization structure.
+In this paper, we study the effects of Compton scattering in the accretion
+column of mCVs using a nonlinear Monte Carlo algorithm
+{{cite:916f0b51-0be1-464d-a943-e9041ebe39a2}}, {{cite:87262cea-c145-4da2-ad30-046577083bd0}} that self-consistently takes into account the
+density, velocity and temperature structure in the column {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. The
+effects of dynamical Compton scattering are also included. In a preliminary
+investigation {{cite:52cb74f8-9d0d-4903-8320-efa02cb78756}}, it was found that Fe KFORMULA  line photons
+emitted from the dense base of the accretion column undergo multiple Compton
+scatterings and as a result, the base of the line profile is substantially
+broadened. Photons emitted near the shock can also undergo scatterings with
+hot electrons immediately downstream of the shock, as well as cold electrons in
+the pre-shock flow before escaping the column. The resulting line profiles
+display a shoulder-like feature redward of the line centre. More significant
+broadening is observed when cyclotron cooling is sufficiently strong to produce
+a dense, compact post-shock region {{cite:a838ebfb-366b-4356-94aa-496295cbc6b3}}. Here, we
+make three substantial improvements to the previous study: (i) we include
+Doppler effects; (ii) the photon source regions in the post-shock column are
+determined from the ionization structure, rather than specified arbitrarily;
+and (iii) the effects of different viewing angles are fully explored. The paper
+is organized as follows: the theoretical outline and geometry of the model are
+described in Section 2. Numerical results for cases where cyclotron cooling is
+negligible and when it dominates are presented and discussed in Section 3. A
+summary and conclusions are presented in Section 4.
+
+Theoretical Model
+Physical Processes
+Line photons can undergo energy changes when scattering with electrons,
+resulting in distortions in the line profile. The energy change of a photon
+per scattering is given by {{cite:1b7301c7-e47c-49dd-8c5d-fdbb225bdf82}},
+FORMULA 
+where E is the initial photon energy, FORMULA  is the electron
+energy, with FORMULA  and where FORMULA  includes
+both thermal and bulk motion, FORMULA  is the incident photon
+propagation angle measured relative to the electron's direction of motion, and
+the scattering angle is FORMULA . The prime superscript denotes quantities
+after a scattering event. Although the energy change per scattering is
+typically small, the line profile can be broadened considerably as a result of
+multiple scatterings if the optical depth is large.
+Photons scattering with hot electrons (i.e. FORMULA  where
+FORMULA  is the electron temperature and FORMULA  is the line centre
+energy) will gain energy, while photons scattering with cold electrons
+(FORMULA ) will lose energy due to recoils. In the mCV
+context, Compton recoil can be important for photons scattering with electrons
+in the cold pre-shock flow and also near the base of the column, where
+FORMULA  rapidly decreases and where the optical depth is high. From
+equation (REF ), the fractional energy change due to Compton recoil
+FORMULA  is
+FORMULA 
+In the post-shock accretion column in mCVs, line photons undergo thermal
+Doppler broadening as well as Doppler shifts. The bulk velocity of the
+accreting material immediately downstream of the shock is FORMULA . For all inclination angles FORMULA  (see Figure REF ),
+the bulk flow is moving away from our line of sight, so the line centre energy
+is redshifted by an amount FORMULA . However, since the
+bulk velocity in the post-shock flow in mCVs is always less than a few
+FORMULA , giving FORMULA , Doppler shifts
+are expected to be negligible. Thermal Doppler broadening, on the other hand,
+is expected to be of order FORMULA  for lines emitted in the hottest regions of the post-shock flow
+(i.e. immediately downstream of the shock), where FORMULA  is the mass of
+the ion.
+In strongly magnetized mCVs, cyclotron emission is the dominant cooling
+process. The effect of this additional electron cooling process in the
+post-shock region is to reduce the shock height and modify the density and
+temperature structure of the region {{cite:a30d6447-0918-414d-a7a6-4a09d9f7a653}}. This can enhance Compton
+scattering features in line profiles {{cite:52cb74f8-9d0d-4903-8320-efa02cb78756}}.
+
+Geometry of the Accretion Column
+FIGURE 
+The geometry of an mCV accretion column is shown in figure REF .
+The column is modelled as a cylinder and is divided into a shock heated
+region and a cool pre-shock region. In the pre-shock region, the density and
+velocity of the accreting material are constant. The velocity of the pre-shock
+flow is approximated by the free-fall velocity at the shock height,
+FORMULA , and the plasma is
+assumed to be cold (FORMULA ). The electron number density
+in the pre-shock flow is FORMULA , where
+FORMULA  is the specific mass accretion rate. In the post-shock region, the
+density, velocity and temperature profiles are calculated using the
+hydrodynamic solution described in {{cite:a30d6447-0918-414d-a7a6-4a09d9f7a653}}, for bremsstrahlung and
+cyclotron cooling. The parameters that determine the structure of the
+post-shock region are the WD mass FORMULA , the WD radius FORMULA , the specific
+mass accretion rate FORMULA  and the ratio of the efficiencies of cyclotron
+cooling to bremsstrahlung cooling FORMULA .
+The accretion column is viewed from an inclination angle FORMULA , measured relative
+to the column axis (see Fig. REF ). An inclination angle FORMULA 
+corresponds to viewing the column along its axis, towards the WD, while viewing
+the column from an inclination angle FORMULA  is equivalent to viewing
+the column from the side.
+The line photons are injected into the post-shock region at a specific
+dimensionless height FORMULA  at or above the WD surface,
+where FORMULA  and FORMULA  correspond to the WD surface and shock
+surface, respectively (see Fig. REF ). For each set of mCV
+parameters, the injection point of the line corresponds to the location in the
+post-shock region where the emissivity of the specific line peaks, according to
+the ionization structure determined by {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. The bulk and thermal
+velocities at the line injection height FORMULA  are used to calculate the
+Doppler shift and broadening of the lines.
+The Monte Carlo technique is used to model Compton scattering effects on
+photon propagation in the column. The distance to a tentative scattering point
+is determined using an algorithm based on a nonlinear transport
+technique {{cite:ea7a3053-c73e-4959-8cb1-fc8c391c224f}} which integrates the mean free path over the spatially
+varying electron density {{cite:916f0b51-0be1-464d-a943-e9041ebe39a2}}, {{cite:87262cea-c145-4da2-ad30-046577083bd0}}. The scattering cross-section
+is determined from the Klein-Nishina formula and the momentum vector at the
+scattering point is drawn from an isotropic Maxwellian distribution at the
+local temperature. A rejection algorithm is used to decide whether the
+scattering is accepted {{cite:87262cea-c145-4da2-ad30-046577083bd0}}. For an accepted event the energy and
+momentum changes of the photon are calculated as described in {{cite:1b7301c7-e47c-49dd-8c5d-fdbb225bdf82}}.
+In each simulation photons are followed until they leave the column and binned
+to form a spectrum. A full description of the numerical algorithm can be found
+in {{cite:916f0b51-0be1-464d-a943-e9041ebe39a2}}.
+In the simulations described below, we make the following simplifying
+assumptions: a fixed number of FORMULA  photons are used to simulate each line;
+a single energy is used for each line (whereas in reality, the neutral and
+Lymann FORMULA  transitions are doublets, with energies 6.391/6.404 keV and
+6.952/6.973 keV, and the He-like transition has both resonant,
+inter-combination and forbidden components); a fixed accretion column width
+is used and a single line injection site is used.
+
+Results and Discussion
+FIGURE 
+We present simulations of Compton scattering of Fe KFORMULA  lines in an mCV
+accretion column for two different WD mass-radius values:
+FORMULA  and
+FORMULA  {{cite:ded1c1de-3429-4e32-94d0-e5977f7d9798}}.
+For each mass, we consider two different specific mass accretion rates,
+FORMULA  and FORMULA , and inclination angles
+FORMULA , FORMULA  and FORMULA  with FORMULA  range. The
+cross-sectional radius of the accretion column is fixed at FORMULA . We
+investigate the effect of varying the column width in section 3.3.
+Figure FORMULA  shows the temperature, velocity and density profiles
+of an accretion column for an mCV with WD mass FORMULA  and
+FORMULA , for cases where the ratio of cyclotron to bremsstrahlung
+cooling at the shock is FORMULA  0, 10, and 100. The temperature
+decreases monotonically from a shock temperature FORMULA  (FORMULA ), to a small finite value at the base of the column
+(FORMULA ).The mass density in the post-shock region is determined by
+FORMULA  and is a minimum at the shock and
+reaches a maximum at the base of the column. The bulk velocity of the
+accreting material at the shock is FORMULA  and decreases to zero at the base
+of the column, where the plasma settles on the WD surface.
+Figures REF  and REF  show the simulated line spectra for the case
+where cyclotron cooling is negligible and bremsstrahlung cooling dominates
+(FORMULA ). Figure REF  shows the simulated profiles
+for FORMULA  and FORMULA  when cyclotron cooling
+dominates bremsstrahlung (FORMULA ). In these cases, the
+neutral Fe KFORMULA  line is emitted at the WD surface (FORMULA ), where
+the bulk velocity is approximately zero and the thermal velocity of the plasma
+is small. The 6.675 keV Fe KFORMULA  line is emitted from the lowest few
+percent of the column (FORMULA ) where the velocity of the infalling
+material and the thermal electron velocity are still relatively small. These
+lines thus show very little Doppler broadening. The 6.97 keV line, however,
+is emitted much closer to the shock (FORMULA ), in regions where the
+temperature of the accreting material is considerably higher and thus suffers
+more substantial Doppler broadening {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}.
+The simulated line spectra for the case where the accretion column radius is
+fixed at FORMULA  is shown in Figure REF .
+Figure REF  shows the simulated profiles for the case where the
+line photon injection along the flow is specified according to the emissivity
+profile model of {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. In figure REF  we compare our
+simulated line spectra with an observation of the mCV GK Per detected by
+Chandra/HETGS.
+Table REF  shows a comparison of the FWHM of the Fe KFORMULA  lines for
+FORMULA  and FORMULA  with low and high FORMULA  and
+for FORMULA  and FORMULA .
+No Cyclotron Cooling
+FIGURE 
+FIGURE 
+TABLE 
+When cyclotron cooling is negligible (FORMULA ), the 6.4, 6.675
+and 6.97 keV lines are mostly emitted at heights above the WD surface of
+FORMULA , 0 and FORMULA  for FORMULA  and
+FORMULA , FORMULA , and FORMULA  for
+FORMULA , respectively {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. Note that Doppler broadening
+is most significant for the 6.97 keV line which is emitted further up in
+warmer regions of the post-shock column. Figures FORMULA  and FORMULA 
+show that in all cases, there is substantial Compton broadening near the base
+of the line profiles due to scatterings in the post-shock region where photons
+may lose and gain energy. For example, for the 6.4 keV line emerging at
+FORMULA  in Fig. REF a, the Compton broadened wings contain
+FORMULA  of the total line photons. The blue wing extends up to
+FORMULA  0.09 keV above the line centroid, while the red wing extends
+down to FORMULA  0.16 keV (see Appendix). Compton features are
+generally more prominent at higher accretion rates since this gives higher
+optical depths in the column and hence, a higher scattering probability. For
+comparison, the average number of scatterings per photon in the FORMULA  case is 0.5 but this increases to 2 in the FORMULA  case.
+For FORMULA  (Fig. REF ), a recoil tail redward of the line
+centroid can be seen in the cases FORMULA  and FORMULA  specifically
+for high FORMULA  (Fig. REF b) The shock temperature for these cases is
+FORMULA  keV, while for the FORMULA  case, the
+shock temperature is much higher (FORMULA  for low
+FORMULA  and FORMULA  keV for high FORMULA ). The plasma
+temperature in the 1.0 FORMULA  case is too high to produce any downscattering
+features and a large FORMULA  (small FORMULA ) has an accretion column with a lower
+optical depth, hence the absence of these features in Fig. REF . Again the
+downscattering features are more enhanced in the high FORMULA  cases since the
+optical depth is higher (c.f. Figs. REF a and REF b for
+FORMULA ). Note also that the 6.97 keV line centre is Doppler shifted
+slightly redward which is most noticeable for the 0.5 FORMULA  case.
+In addition to the recoil signatures, upscattering features are also seen in
+the line spectra for the high FORMULA  cases (Figs. REF b and REF b)
+when FORMULA . For these inclination angles, photons emerge from the
+column with a final scattering angle cosine FORMULA .
+Equation REF  then gives
+FORMULA 
+Since head on collisions (FORMULA ) have a higher probability,
+FORMULA . The upscattering features are more prominent in
+Fig. REF b than in Fig. REF b because the shock temperature, and
+hence FORMULA , is higher. The sharpness of the upscattering features seen in
+the 6.4 keV profiles in particular can be attributed to the maximum possible
+energy gain when FORMULA  and to very few hot electrons with energies
+beyond a few standard deviations of the mean thermal (Maxwellian) energy.
+Scattering features are less prominent in the low FORMULA  cases
+(Figs. REF a and REF a), since the overall optical depth is smaller.
+For FORMULA  and FORMULA  for instance, the optical
+depth across the column at the shock is FORMULA , which is a factor
+10 smaller than that for the FORMULA  case (since FORMULA ). For higher WD masses (i.e. smaller FORMULA ), the
+optical depth across the column is smaller, so fewer photons are scattered,
+especially for low FORMULA  cases. This explains the difference in scattering
+features in the profiles shown in Figs. REF  and REF  (in particular,
+the high FORMULA , FORMULA  cases).
+Photons observed at an inclination angle of FORMULA  propagate through the
+entire length of the column before escaping. These photons propagate through a
+thick section of cold pre-shock flow and can thus downscatter, resulting in
+broadening redward of the line centre. However, the electron number density,
+and hence, optical depth, in the pre-shock flow is small so recoil effects
+are correspondingly small. Furthermore, fewer photons are detected at
+FORMULA  because the solid angle centered around FORMULA  is
+considerably smaller than that centered around larger inclination angles.
+
+Cyclotron Cooling Dominated Flows
+FIGURE 
+Figure FORMULA  shows the profiles of Fe KFORMULA  lines emitted from
+mCVs with FORMULA  and FORMULA  where FORMULA ,
+FORMULA  and the ratio of cyclotron to bremsstrahlung cooling at the
+shock is FORMULA . Also plotted is the thermal Doppler
+broadened line profile before scattering (dotted curve). The additional cooling
+of the plasma in the post-shock flow enhances the density and results in larger
+scattering optical depths. Because the electron temperature of the shock-heated
+region decreases as FORMULA  increases, the peak emissivities of the
+6.675 keV and 6.97 keV Fe lines are found at larger
+values of FORMULA , as can be seen in Fig. REF , which shows the
+temperature, density and velocity profiles for different cases of
+FORMULA . The additional cyclotron cooling results in a decrease in
+the electron temperature and bulk velocity in the post-shock column at a fixed
+FORMULA .
+For FORMULA , the 6.4, 6.675 and 6.97 keV lines are emitted
+from heights above the WD surface of FORMULA  0, FORMULA  and
+FORMULA  cm for FORMULA , and FORMULA  0, 0 and
+FORMULA  cm for FORMULA , respectively {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. The
+emission height of the 6.97 keV line is significantly higher than in the
+FORMULA  case and consequently, thermal Doppler broadening is
+more prominent. The additional cooling in the accretion column also results in
+a lower plasma temperature at the base of the column, FORMULA 
+(see Fig. REF ), near where irradiation of neutral iron occurs and
+the fluorescent 6.4 keV line is emitted. This line thus undergoes less thermal
+Doppler broadening than in the FORMULA  case. As a result of
+Compton scattering, the line profiles show additional broadening and recoil
+tails redward of the line centre (Fig. REF b). Upscattering features
+are also evident in the 6.4 and 6.675 keV lines especially for FORMULA  (Fig. REF a).
+Overall, Compton scattering features are more prominent for cyclotron cooling
+dominated accretion columns, especially for high accretion rates. For photons
+viewed at FORMULA , upscattering and recoil features that are only
+marginally seen in the FORMULA  case are considerably more
+pronounced in the FORMULA  case. Thus, we expect Compton scattering
+features to be most conspicuous in Fe KFORMULA  lines emitted in strongly
+magnetized mCVs accreting at a high rate.
+
+Effect of Accretion Column Radius
+FIGURE 
+The width of the accretion column in mCVs is poorly known and may vary
+significantly from system to system. In the results presented so far, we have
+fixed the accretion column radius to be FORMULA . Here, we investigate the
+effect of relaxing this assumption. Figure REF  shows the
+resulting profiles of Fe KFORMULA  lines emitted from two mCVs of different
+masses (FORMULA  and FORMULA ) but with the same
+absolute accretion column radius of FORMULA . This
+corresponds to FORMULA  for the FORMULA  case
+(Fig. REF a) and FORMULA  for the FORMULA  case
+(Fig. REF b). The other parameters used to produce the profiles
+are the same as those used for Fig. REF , namely
+FORMULA , FORMULA  and FORMULA .
+Fig. REF  shows that the changes in the accretion column width
+generally result in changes near the base of the line profiles, which is
+broadened by multiple scatterings. The effect of increasing (decreasing) the
+width of the accretion column is to increase (decrease) the overall scattering
+optical depth.
+The Thompson optical depth across the base of the accretion column is
+FORMULA  for the FORMULA  case (Fig. REF a) and
+FORMULA  for the FORMULA  case (Fig. REF b). In
+comparison, the Thompson optical depth across the column base for the same
+lines when the column has a width of FORMULA  (dotted curves in
+Fig. REF ) are FORMULA  for FORMULA  and
+FORMULA  for FORMULA .
+Fig. REF  indicates that due to the nonlinear nature of multiple
+scatterings in the accretion column, particularly near the base, small changes
+in optical depth associated with the accretion column geometry can result in
+significant changes in line profiles. These changes mostly effect the base of
+the line profiles.
+
+Emissivity Profile Effects
+FIGURE 
+Realistically, the photon source regions are determined by an emissivity
+profile along the post-shock region of the accretion column. In the results
+presented so far, all the photons were injected at a single height in the
+accretion column corresponding to the location of the peak in the emissivity
+profile, as calculated by {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. Here, we investigate the effect of
+spreading the photon injection site over a finite range of heights in the
+post-shock region according to the calculated emissivity profiles.
+Only the 6.675 keV and the 6.97 keV line are studied in this manner since much
+of the fluorescence 6.4 keV yield derives from beneath the column, where X-ray
+irradiation is strongest so the injection site is always at the base of the
+column. Figure REF  shows an example of the emissivity profile
+effect for the 6.675 keV and 6.97 keV Fe KFORMULA  lines emitted in an mCV with
+FORMULA , FORMULA , FORMULA  and FORMULA . The dotted curves show the corresponding profiles for the case where
+photons are injected at a single height (where the emissivity peaks) for the
+same mCV parameters. These profiles are the same as those shown in
+Fig. REF a for the FORMULA  case (middle panel).
+The line profiles calculated using a realistic emissivity profile (solid curves
+in Fig. REF ) show some additional smearing, particularly redward
+of the line centre, compared to the single injection site case (dotted curves
+in Fig. REF ). This can be attributed to a small fraction of
+photons now being emitted from regions closer to the shock, where the
+temperature is FORMULA  and the flow speed is
+FORMULA . Thus, these photons are more affected by
+Doppler effects than other photons emitted from regions further away from the
+shock. The small smearing redward of the line centre is therefore due to a
+combination of Doppler shift and thermal broadening. The effect is not
+prominent because only a small fraction of photons are emitted close to the
+shock, as predicted by the emissivity profile {{cite:4b091113-6299-43e3-85ce-9915318cafe2}}. The FWHM for the
+6.675 keV and 6.97 keV line is FORMULA  8 eV and FORMULA  9 eV respectively.
+This corresponds to an additional broadening of approximately 25% for the
+6.675 keV line and 11% for the 6.97 keV line.
+
+Comparison with Observations
+FIGURE 
+Chandra/HETGS observations of a number of mCVs were reported by
+{{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}}. The highest signal-to-noise spectrum was obtained in two
+observations of the mCV GK Per during its 2002 outburst. This system is
+classified as an intermediate polar (IP); the WD accretor is thought to have a
+magnetic field of FORMULA  {{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}}, and a mass of
+FORMULA  {{cite:0ad70cef-669c-401f-a64a-8e36601701e6}}. Its typical X-ray
+luminosity in the FORMULA  keV bandpass is FORMULA  {{cite:5e25218d-88b2-490b-9752-1843d75b3a17}}, which places a lower limit on
+the specific mass accretion rate, FORMULA  (adopting
+FORMULA , inferred using the {{cite:ded1c1de-3429-4e32-94d0-e5977f7d9798}}
+mass-radius relation, and assuming that accretion proceeds onto a fraction
+FORMULA  of the WD surface area; see e.g. {{cite:44951882-925c-4148-a701-b72ca85e5dba}}).
+Here we present a pilot study of GK Per and produce a simple comparison
+between the profiles of the simulated and observed spectra. A more detailed
+analysis of the data is left for future study.
+The summed first-order HETGS spectrum from the 2002 Chandra
+observations of GK Per is shown in Figure REF . The He-like and
+fluorescence Fe KFORMULA  lines are detected, and there is a possible
+excess at the expected energy for the H-like line at 6.97 keV. Also shown in
+Fig. REF  are the upper and lower mass simulated HETGS spectra from a
+10 ks Chandra observation of an mCV with parameters appropriate for
+GK Per: an upper mass of FORMULA  with FORMULA , a lower mass of FORMULA  with FORMULA  and for both masses FORMULA  and FORMULA . We adopted inclination angles averaged
+over an orbital period of GK Per (FORMULA )
+{{cite:1795e75d-63f0-44eb-8884-3f67f1dfbb9c}}. We also added a normalized bremsstrahlung continuum with an
+electron temperature FORMULA  {{cite:5e25218d-88b2-490b-9752-1843d75b3a17}}.
+The measured equivalent widths of the 6.4, 6.675 and 6.97 keV lines in the
+Chandra/HETGS spectra of GK Per are 260, 117 and 80 eV, respectively.
+The relative strength of the lines in the simulated spectra is fixed by the
+number of photons used in each simulation and the assumed continuum flux level.
+We used FORMULA  photons for all three lines, so that their relative strengths
+are comparable. We intend to relax this condition in future work. There is a
+remarkable similarity between the observed and the simulated spectra for the
+6.4 keV line in particular. Realistically, the actual strengths of the 6.675
+and 6.97 keV lines depend on the ionisation structure of the flow
+{{cite:4b091113-6299-43e3-85ce-9915318cafe2}}, since this determines the emissivity of the lines. The H-like and
+He-like lines are thus potentially powerful diagnostic tools that can be used
+to deduce the physical properties of the post-shock accretion column in mCVs.
+The 6.4 keV line strength, on the other hand, depends on the flux of the
+illuminating X-rays, which is largest near the WD surface. Fluorescent lines
+may also be produced in the surface atmospheric region around the accretion
+column {{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}}, and this may contribute to the observed equivalent
+width of the 6.4 keV line.
+The observed fluorescent line in GK Per exhibits a red wing extending to
+6.33 keV which {{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}} attribute to Doppler shifts. In general we
+find that bulk Doppler shifts have a negligible effect on Fe KFORMULA  lines.
+Our simulated spectra show a weaker red wing arising from downscatterings near
+the base of the accretion column. The observed spectrum also exhibits a
+shoulder extending 170 eV redward of the 6.4 keV line centre, which
+{{cite:fdf1c78c-962b-4444-b0c6-f7331f43c1dc}} suggest may be due to Compton downscattering. Our
+simulations confirm that recoil can indeed affect the fluorescent line when it
+is emitted at the base of the accretion column, although in our spectra
+(Fig. REF ) there is no clear evidence that recoil extends down to
+170 eV redward of the 6.4 keV line.
+
+Summary and Conclusion
+We have investigated line distortion and broadening effects due to Compton
+scattering in the accretion column of mCVs using a nonlinear Monte Carlo
+technique that takes into account the nonuniform temperature, velocity and
+density profiles of the post-shock column. Scattered Fe KFORMULA  lines were
+simulated for a range of different physical parameters: white dwarf mass,
+accretion rate, magnetic field strength and inclination angle. The photon
+source regions in the post-shock flow were determined from the ionization
+structure and the effects due to the bulk velocity Doppler shift and thermal
+broadening are also considered.
+We find that line profiles are most affected by Compton scattering in the cases
+of low white dwarf mass, high specific mass accretion rate, strong cyclotron
+cooling and oblique inclination angles. Both a lower white dwarf mass (or
+equivalently a larger white dwarf radius) and a higher accretion rate result in
+a higher optical depth, hence more pronounced scattering effects. Strong
+cyclotron cooling associated with a high magnetic field strength results in a
+higher density in the post-shock flow and hence, a correspondingly larger
+optical depth. Recoil signatures are evident for oblique viewing angles
+when cyclotron cooling becomes important. These are due to scatterings near the
+base of the flow, where both the dynamical and thermal velocities are small.
+Sharp upscattering features are also seen in the line profiles for large
+viewing angles. These upscattering features are attributed to head-on
+collisions with hot electrons near the shock. Photons emitted close to the
+shock in the accretion column display more thermal Doppler broadening. This is
+generally the case for the Fe XXVI 6.97 keV line. The Fe
+6.4 keV and Fe XXV 6.675 keV lines are generally emitted at
+or near the base of the accretion column respectively, and show a relatively
+small amount of thermal Doppler broadening. Bulk velocity induced Doppler
+shifts are negligible compared with scattering.
+We also investigated the effects of dispersing the 6.675 and 6.97 keV line
+photons using an emissivity calculated self-consistently from the
+ionization structure of the post-shock column. We find that, compared to
+injecting the line photons at a single height where the emissivity peaks,
+using an emissivity profile does not significantly change the overall profiles
+of the 6.675 and 6.97 keV lines. The resulting line profiles show a small
+degree of smearing redward of the line center due to additional dynamical and
+thermal Doppler effects associated with a small fraction of line photons
+emitted close to the shock. The effect is most important for the 6.675 keV
+line. We estimate a fractional increase in the FWHM of no more than
+FORMULA  25%.
+In general, our simulations predict that recoil in scattering with cool
+electrons near the base of the column as well as upscattering by hot electrons
+near the shock can imprint signatures on the profile of lines emitted near the
+base of the flow. Such Compton signatures may thus be used to determine the
+primary source region of the fluorescent line. We predict that when 6.4 keV
+photons are emitted in the dense, cool plasma at the base of the accretion
+column, they can suffer strong downscattering when propagating through the
+electrons streaming downward in the flow. The scattering probability is
+governed by the effective scattering optical depth, which increases with the
+mass accretion rate of the system.
+We convolved simulations with the Chandra response function and
+compared them to Chandra/HETGS observations of GK Per. Our results
+indicate that the red wing seen in the 6.4 keV line in GK Per could be
+attributed to Compton recoil near the base of the flow.
+Finally we remark that tighter constraints on the dynamics and flow
+geometry in magnetized accreting compact objects can be obtained by considering
+the polarization properties of the lines {{cite:ef8964bb-776f-43f1-b97c-04068c984829}}, {{cite:3d69c324-ed8f-470d-b507-45d44a8e749b}}. There is
+currently considerable effort to develop X-ray polarimeters which can detect
+degrees of polarization of the order of one percent {{cite:247b2143-5db4-49e4-9a16-bfe0aa5c4b8f}}. The spectral
+resolution of these detectors should be adequate to search for different
+polarization degrees in emission iron lines. It is possible to include a
+polarization treatment in our calculations, but the computational algorithm in
+our Monte Carlo code will need to be revised, which we leave for a future
+study.
+
+Acknowledgments
+ALM thanks a University of Sydney Denison Scholarship. KW's visit to Sydney
+University was supported by a NSW State Expatriate Researcher Award. We thank
+an anonymous referee whose comments helped improve the paper considerably.
+
+The width of the Compton shoulder
+Here, we derive an estimate for the width of the prominent wings near the base
+of the line profiles. Let the accretion flow be along the FORMULA -axis and consider
+an observer on the FORMULA  plane. Let FORMULA  be the line-of-sight inclination angle
+of the accretion column, and let FORMULA  be the local velocity of the flow,
+normalized to the speed of light FORMULA , which can expressed as
+FORMULA 
+The normalized vector of a scattered photon of energy FORMULA  propagating in the
+direction to the observer is
+FORMULA 
+Suppose that the normalized vector of the incident photon, with energy FORMULA , is
+FORMULA 
+Then the change in energy of the photon, after scattering with an
+electron in the flow, due to bulk motion is given by
+FORMULA 
+where FORMULA , FORMULA , and FORMULA  .
+In terms of the viewing inclination angle and the photon propagation vectors,
+FORMULA 
+Then for FORMULA  and FORMULA ,
+FORMULA 
+It follows that
+FORMULA 
+where FORMULA  and FORMULA .
+The maximum energy downshift is caused by the recoil process when the photons
+are scattered by “cold” electrons (with FORMULA ). This occurs
+when FORMULA , FORMULA , which yields
+FORMULA 
+This result is practically independent of the WD mass and the viewing
+inclination angle.
+For the 6.4 keV line, FORMULA .
+The maximum energy upshift is caused by a Doppler shift when the photons are
+scattered by the fastest available downstream electrons (i.e. FORMULA  is no
+longer a negligible factor). The condition for its occurrence can be derived as
+follows. Set
+FORMULA 
+which gives two conditions for extrema with respect to the azimuthal
+coordinate: FORMULA  and FORMULA , corresponding respectively to
+FORMULA 
+Differentiating the above expression with respect to FORMULA  and setting the
+resulting expression to zero yields the following condition for the extrema:
+FORMULA 
+where
+FORMULA 
+The first case (FORMULA ) leads to a maximum energy upshift, which requires
+FORMULA 
+At the viewing inclination angle FORMULA ,
+FORMULA 
+Hence, the maximum energy upshift is given by
+FORMULA 
+If we assume that the maximum FORMULA  takes the free-fall velocity at the
+WD surface, then FORMULA  is simply the reciprocal of the square root of the
+WD radius in the Schwarzschild unit, i.e. FORMULA . For FORMULA , FORMULA , and for
+FORMULA , FORMULA  (assuming the Nauenberg
+mass-radius relation {{cite:ded1c1de-3429-4e32-94d0-e5977f7d9798}}), this gives FORMULA  and FORMULA  respectively for the 6.4 keV line.
+The Compton shoulder of an Fe line is due to a single scattering event.
+For the 6.4 keV line, the broadening extends over FORMULA  for a 1.0 FORMULA  WD and FORMULA  for a 0.5 FORMULA  WD (omitting thermal broadening and flow
+Doppler broadening), when viewed at FORMULA .

@@ -1,0 +1,187 @@
+
+[amssymb,12pt]article
+Some solutions of the Gauss-Bonnet Gravity with Scalar Field in Four Dimensions
+ Metin Gürses
+Department of Mathematics, Faculty of Sciences
+Bilkent University, 06800 Ankara - Turkey
+
+
+We give all exact solutions of the Einstein-Gauss-Bonnet Field
+Equations coupled with a scalar field in four dimensions under
+certain assumptions. The main assumption we make in this work is
+to take the second covariant derivative of the coupling function
+proportional to the spacetime metric tensor. Although this
+assumption simplifies the field equations considerably, to obtain
+exact solutions we assume also that the spacetime metric is
+conformally flat. Then we obtain a class of exact solutions.
+Recently there is an increasing interest in the Gauss-Bonnet
+theory with a scalar field to look for possible theoretical
+explanation to some cosmological problems such as acceleration of
+the universe {{cite:6263e527-c490-4c30-8842-5ddddf7d8c90}}. Accelerated cosmological solutions were
+first suggested in {{cite:21c115d4-96b3-4669-ac78-0c45f73eea21}}, {{cite:5d7d60ed-3183-46de-accb-f1f1823653f1}} and also discussed
+in {{cite:fa3ab783-0c8a-4b40-932a-7b81746b57c1}}, {{cite:5ce689b6-93f4-4233-b52e-39783f9ecf10}}. It is also expected that this
+theory or its modifications may have some contributions to some
+astrophysical phenomena. For this purpose, spherically symmetric
+solutions of this theory were first studied in {{cite:d288a322-1690-42b6-b41e-a3d0440e0856}},
+{{cite:5b8ff11b-42a3-4348-8a0c-184acad254e9}}. It has been observed that the Post-Newtonian
+approximation does not give any new contribution in addition to
+the post-Newtonian parameters of the general relativity
+{{cite:403f1159-6981-4dc4-8ecb-4a46a922fcc3}}. Black hole solutions in the framework of the GB
+gravity are investigated recently in {{cite:e85d636a-3520-4ac1-98b8-f08f97bac421}} (see also
+{{cite:1d040266-c35e-42a8-aee7-9e369e9aeb55}}, {{cite:0cede35d-2e3c-475f-b57d-ec3d6540c31c}}). There are also attempts to find exact
+solutions and to study the stability of the Gauss-Bonnet theory in
+various dimensions with actions containing higher derivative
+scalar field couplings {{cite:f90c9e68-9d44-476b-a81e-757c3e32b8a3}}, {{cite:1dedacc2-f318-4a4e-ac68-da886821532f}}, {{cite:4ef9b4bb-accd-4b93-86c4-56bcbd285941}}.
+Since the Gauss-Bonnet term is a topological invariant in four
+dimensions it does not contribute to the Einstein field
+equations. On the other hand it contributes to the field equations
+if it couples to a spin-0 zero field. In this work we consider a
+four dimensional action containing the Einstein-Hilbert part,
+massless scalar field and the Gauss-Bonnet term coupled with the
+scalar field. The corresponding action is given by {{cite:403f1159-6981-4dc4-8ecb-4a46a922fcc3}}
+FORMULA 
+where FORMULA  (FORMULA ) and
+FORMULA 
+and FORMULA  is an arbitrary function of the scalar filed FORMULA 
+(coupling function). Here FORMULA  is potential term for the scalar
+field. The field equations are given by
+FORMULA 
+FORMULA 
+Einstein field equations are usually solved under certain
+assumptions like spherical symmetry, plane symmetry and axial
+symmetry. In some cases we assume a form for the spacetime metric
+like conformally flat, Kerr-Schild and Gödel types. In each
+one we create a class of exact solutions of Einstein's field
+equations {{cite:0dabbded-32d6-4f1f-849c-6095c16b6873}}. In this work our intention is open such a
+direction in GB theory and obtain exact solutions of this theory
+and its modifications under certain assumptions. To this end we
+now assume the spacetime geometry FORMULA  is such that (assumption 1)
+FORMULA 
+where FORMULA  and FORMULA  are scalar functions and
+FORMULA  is a vector field. In the sequel we will assume that
+FORMULA  (assumption 2). Eq.(REF ) restricts
+the space-time FORMULA . Among these space-times admitting
+(REF ) we have conformally flat space-times (assumption
+3).
+FORMULA 
+where FORMULA  is a scalar function. In such space-times the
+conformal tensor vanishes identically. Hence
+FORMULA 
+Then the field equations (REF ) reduce to
+FORMULA 
+We have now the last assumption: All functions depend on
+FORMULA  where FORMULA  is a constant vector,
+FORMULA . Then from (REF ) we get
+FORMULA 
+where FORMULA  is an arbitrary constant and FORMULA . By using (REF ) and the Ricci tensor
+FORMULA 
+for the metric (REF ) we obtain the following equations
+FORMULA 
+where
+FORMULA 
+and a dot over a letter denotes derivative with respect to the
+scalar field FORMULA . Eqs(REF ) and () give
+coupled ODEs for the functions FORMULA  and FORMULA . Letting
+FORMULA  and FORMULA  then these equations
+become
+FORMULA 
+where FORMULA  is given by (from ())
+FORMULA 
+Inserting FORMULA  from (REF ) into Eq. () (and using
+(REF ) in ()) we obtain simply
+FORMULA 
+Hence we have the following solutions.
+
+(A)   FORMULA : This corresponds to pure Einstein field
+equations with a massless scalar field. The effect of the Gauss
+Bonnet term disappears. Solutions of these field equations have
+been given in {{cite:9926d3ba-c8e1-4d9e-9e35-bff6ce90c669}}
+
+(B)   FORMULA : The vector field FORMULA  is null. Then
+the only field equation is
+FORMULA 
+and FORMULA  becomes zero. There is a single equation for the two
+fields FORMULA  and FORMULA . This means that, if one of the fields FORMULA  or
+FORMULA  is given then the other one is determined directly. The metric
+takes the form
+FORMULA 
+where FORMULA  and FORMULA  are null coordinates and
+FORMULA  and the above equation (REF )
+becomes
+FORMULA 
+and the Einstein tensor represents a null fluid with zero
+pressure.
+FORMULA 
+Although the coupling function FORMULA  is nonzero the effect of the GB
+term is absent in this type. Such a class of solutions belongs to
+class (A).
+
+(C) FORMULA : The vector field FORMULA  is non-null.
+Then FORMULA  a real constant which leads to the following solution.
+FORMULA 
+where FORMULA  and FORMULA  are arbitrary constants and
+FORMULA 
+where FORMULA . The potential function FORMULA  takes the form
+FORMULA 
+where FORMULA  and coupling function FORMULA  takes
+the form
+FORMULA 
+The solution we obtained here is free of singularities but not
+asymptotically flat. On the other hand, by using this solution it
+is possible to obtain an asymptotically flat cosmological
+solution.
+
+This solution is well understood in a new coordinate chart
+FORMULA  where the line element takes the following form (after
+a scaling)
+FORMULA 
+where FORMULA  is a nonzero constant. If FORMULA  is a spacelike
+coordinate then FORMULA  and Latin indices take values
+FORMULA . If FORMULA  is a timelike coordinate then FORMULA  and
+Latin indices take values FORMULA . FORMULA  is the metric of
+the flat three dimensional geometry orthogonal to the
+FORMULA -direction. The Ricci tensor of the four dimensional metric
+FORMULA 
+Hence the solution takes the form
+FORMULA 
+where FORMULA ,  FORMULA  a constant, and
+FORMULA  , FORMULA  is an arbitrary
+constant. The curvature scalars are given by
+FORMULA 
+and the Gauss-Bonnet scalar density FORMULA . It clear that FORMULA  is
+the spacetime singularity. Letting
+FORMULA , the Einstein tensor becomes
+FORMULA 
+This tensor has a physical meaning when FORMULA  in which
+case the Gauss-Bonnet gravity produces a singular cosmological
+model. The Einstein tensor represents a perfect fluid with an
+energy density FORMULA  and a negative pressure FORMULA .
+Both of them are singular at FORMULA .
+
+We have found the most general solutions of the Gauss-Bonnet
+gravity coupled to a scalar field under the assumptions stated in
+the text. One solution (B) depends on a null coordinate whose
+Einstein tensor corresponds to the energy momentum tensor of a
+null fluid with zero pressure. The other solution (C) depends on
+variable FORMULA  whose curvature invariants are all singular at FORMULA .
+When FORMULA  represents the time coordinate then GB gravity gives a
+cosmological model with a negative pressure. The solution is
+singular on the 3-surface FORMULA .
+We would like to conclude with a remark. The field equations
+(REF ) and (REF ) of the GB theory with a scalar field
+resemble to the field equations of the modified Gauss-Bonnet
+theory {{cite:6263e527-c490-4c30-8842-5ddddf7d8c90}}, {{cite:030714b2-f8b0-4e53-ae49-85999418bce2}}. In the latter case the scalar
+field FORMULA  and the potential term FORMULA  are absent in the
+action and the function FORMULA  depends on the GB term
+(REF ). We remark that the flat metric is the only solution
+of the modified Gauss-Bonnet field equations under the assumptions
+made in the text. It seems that scalar field is crucial to obtain
+non-flat metrics. It is however interesting to search for the
+solutions of the modified GB field equations. For this purpose we
+are planning to relax our assumptions 2 and 3 in a forthcoming
+publication.
+
+I would like to thank the referees for their
+constructive comments. This work is partially supported by the
+Scientific and Technological Research Council of Turkey (TUBITAK)
+and Turkish Academy of Sciences (TUBA).

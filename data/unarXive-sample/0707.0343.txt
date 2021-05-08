@@ -1,0 +1,64 @@
+
+June 2007 
+Particle interference as a test of Lorentz-violating electrodynamics
+
+Archil Kobakhidze and Bruce H. J. McKellar
+
+School of Physics, Research Centre for High Energy Physics,
+The University of Melbourne, Victoria 3010, Australia
+
+
+Abstract
+
+In Lorentz-violating electrodynamics a steady current (and similarly a static charge) generates both static magnetic and electric fields. These induced fields, acting on interfering particles, change the interference pattern. We find that particle interference experiments are sensitive to small Lorentz violating effects, and thus they can be used to improve current bounds on some Lorentz-violating parameters.
+
+Lorentz-violating electrodynamics.
+Historically the theory of Special Relativity has been established by studying properties of light which are described by Maxwell's electrodynamics. Special Relativity identifies the Poincaré group as a spacetime symmetry group that underlies all fundamental physical laws of nature. Although no decisive departure from relativistic invariance has been observed so far, theoretical and experimental studies of possible small violations of this fundamental symmetry continue to attract considerable attention (see {{cite:b51b7b5f-e89f-4f5a-9380-39e46a58d202}} and references therein).
+Currently the best laboratory tests of relativistic invariance are modern versions of the Michelson-Morley and Kennedy-Thorndike experiments using resonant cavities {{cite:fee95f0c-c90b-4315-abf4-bdf883193c18}}. In this Letter we propose a new class of experiments to search for possible violation of Lorentz invariance in electrodynamics. Namely, we demonstrate that the standard quantum-mechanical particle interference can be significantly altered due to the effects which are entirely attributed to the Lorentz-violating interactions, and thus particle interference experiments can be used to improve current bounds on some Lorentz-violating parameters.
+Let us consider Lorentz-violating model of electrodynamics described by the Lagrangian {{cite:c2269f4b-c89d-480f-b5d7-f4f5ab276ea2}},
+FORMULA 
+The 23 constant parameters FORMULA  and FORMULA  define strength of the Lorentz-violating interactions in the photon sector. The matter sector is assumed to be Lorentz invariantActually some of the parameters can be moved from the photon sector to the matter sector by a suitable coordinate transformations {{cite:9387ebf9-e8ef-4755-a040-04bbf2336931}}
+. Since the theory is invariant under the coordinate (passive) Lorentz transformations the physical effects must be the same in both coordinate frames.. Consequently, the ordinary Lorentz-force law is intact. It is convenient to introduce the following notations:
+FORMULA 
+We further simplify the model by setting to zero those of the above parameters which are known to be strongly constrained from observations. Non-observation of birefringence effects in the light propagating from distant astrophysical sources is consistent with FORMULA  {{cite:58f3b556-5c5b-42fc-9589-210984f7406a}}
+and FORMULA , FORMULA  {{cite:c2269f4b-c89d-480f-b5d7-f4f5ab276ea2}}, {{cite:55e080c7-2916-4af3-b4bb-823b6ba57d50}}. We simply take FORMULA , and FORMULA . As FORMULA  is an antisymmetric FORMULA  matrix, we are left only with 3 parameters, FORMULA . These parameters are currently relatively less constrained. The bounds FORMULA  have been obtained in experiments with optical and microwave cavities {{cite:fee95f0c-c90b-4315-abf4-bdf883193c18}}.
+With the above simplifications the modified source dependent Maxwell's equations become:
+FORMULA 
+FORMULA 
+The remaining homogeneous equations stay the same: FORMULA , FORMULA . From the above equations we see that even in the static case the magnetic and electric fields do not decouple in Lorentz-violating electrodynamics. A steady current (and similarly a static charge) generates both static magnetic and electric fields. Thus if for example, an electron is moving near the static magnetic source it will experience a Lorentz force due to the induced static electric field. This effect can be detected in electron interference experiments. In what follows we estimate the sensitivity of such interference experiments to Lorentz-violating parameters.
+
+Lorentz-violating effects in particle interference experiments.
+Let us consider the typical interference set-up: a coherent beam of electrons is split into two parts, beam FORMULA  and beam FORMULA , each moving along FORMULA -direction (FORMULA  and FORMULA ) of FORMULA -plane.
+The beams produce a particle interference pattern on a screen located at a distance FORMULA  from the double slit. At the origin of FORMULA -plane we place a long solenoid of radius FORMULA  (FORMULA ) which carries a current density FORMULA , where FORMULA  is an unit vector of the orthonormal basis in the cylindrical coordinates FORMULA  (FORMULA ).
+In Maxwell's electrodynamics, the region where the beam propagates is force-free. In Lorentz-violating electrodynamics there is an induced classical electric field around solenoid which acts on a particle in a beam. In the leading order in Lorentz-violating parameters the induced static electric field satisfies the equation (see eqs (REF ) and (REF )),
+FORMULA 
+where FORMULA  and FORMULA . Although the magnetic field of the solenoid is also modified, the correction is of the second order in Lorentz-violating parameter, so we have taken FORMULA  in (REF ) (FORMULA ).
+We solve the equation (REF ) in terms of the scalar potential FORMULA  (FORMULA , since FORMULA  is static):
+FORMULA 
+Now, since the matter sector is undeformed, the effective Lagrangian for a non-relativistic point particle with the charge FORMULA  moving in the external electromagnetic field is unmodified as well,
+FORMULA 
+where FORMULA  the vector potential, FORMULA . The Hamiltonian then reads:
+FORMULA 
+The scalar potential FORMULA  (REF ) in equation (REF ) induces and extra path-dependent phase which (in the WKB approximation) can be calculated straightforwardly:
+FORMULA 
+In the above formulae FORMULA  is initial velocity of the electrons and, FORMULA , is the elementary charge in natural units. The distance between the double slit and solenoid is FORMULA , while FORMULA  is the distance between the solenoid and the screen, FORMULA . The last last step of eq. (REF ) we approximate using FORMULA .
+Let us consider first the usual Aharonov-Bohm set up {{cite:ee8330cf-7c16-4de7-b889-a9e27edd4a09}} where the solenoid is placed between the beams A and B (e.g, FORMULA , being positive for definiteness). The presence of the vector potential in the first term of eq. (REF ) generates the topological (path-independent) Aharonov-Bohm
+phase,
+FORMULA 
+The Lorentz-violating corrections to the standard Aharonov-Bohm phase are very small, FORMULA , and hence undetectable by means of the current experimental techniques.
+The non-topological phase of equation (REF ) then becomes:
+FORMULA 
+From eq. (REF ) it follows that the sensitivity to the Lorentz-violating parameter below the current upper bound FORMULA  can be achieved with a rather strong magnetic flux in the solenoid. For instance, taking FORMULA T, FORMULA cm, and FORMULA  (FORMULA  keV electrons), we find that the phase (REF ) will be detectable (FORMULA rad) if FORMULA . However, in actual Aharonov-Bohm
+experiments the magnetic flux and inter-beam separation is much smaller, so that the sensitivity of order FORMULA  can be achieved at best. This is related to the fact that the electron wavelength in typical interference experiments is very small (FORMULA cm) and thus the whole interferometer, and the size of the solenoid, has to be scaled down appropriately. Namely, the inter-beam distance must be of the order or less than the transverse coherence length of an electron wave packet in order to observe the interference fringes produced by one electron at a time.
+However, since the phase shift in eq. (REF ) is attributed to the local rather then topological interactions, there is no absolute necessity to follow the standard Aharonov-Bohm
+set-up. Instead we may place the solenoid outside the inter-beam region (e.g., above the beam A) and assume it to be macroscopic. Importantly, we also require now that the beam FORMULA  propagates inside a Faraday cage which shields that beam from the induced electrostatic field from the solenoid, so that only beam FORMULA  experience its action. The phase shift now reads:
+FORMULA 
+Taking FORMULA , or adjusting the position of the solenoid such that FORMULA ,
+we estimate a phase shift of 1 rad for FORMULA  for the same solenoid as before. Thus, with 10% (1%) accuracy in phase measurements one order (two orders) of magnitude improvement of the currently available bounds {{cite:fee95f0c-c90b-4315-abf4-bdf883193c18}} is expected. Similar sensitivity follows for the first contribution in (REF ), for e.g. FORMULA . One should point out here that both the sign and the magnitude of the phase shift depends on the position of the solenoid. This fact can be used in actual experiments to verify the Lorentz violating nature of the effect. Sensitivity to the Lorentz violating effects of the interference experiment described above can be further improved e.g. by increasing magnetic flux in the solenoid. Note also that the effect crucially depends on the geometry of the magnetic source which, perhaps, can be favorably adjusted.
+
+Conclusion.
+In this paper we have suggested the study of possible violation of Lorentz invariance by particle interference experiments. A magnetic solenoid produces a static electric field which extends in the region outside of solenoid. Thus the solenoid in Lorentz-violating electrodynamics interacts locally with moving charged particles. As a result an extra path-dependent phase (REF ) is generated.
+We have demonstrated that particle
+interference experiments are sensitive to very small Lorentz-violating effects and could provide important information on possible violation of Lorentz invariance in nature. Our estimates show that couple of orders of magnitude improvement of currently available bounds on FORMULA  will be available in such experiments. On the theoretical side, it will be interesting to consider more general (including Lorentz violation in matter sector) models of Lorentz-violating eletrodynamics in this context.
+Acknowledgments.
+We would like to thank Alan Kostelecky for important comments which lead to a major revision of the preliminary version of this manuscript. We are also indebted to Tony Klein for useful discussions on particle interference experiments and Akira Tonomura for email correspondence on the experimental precision in phase shift measurements. The work was supported by the Australian Research Council.

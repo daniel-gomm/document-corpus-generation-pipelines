@@ -1,0 +1,1655 @@
+
+[Gravitational Quenching by Clumpy Accretion]
+Gravitational Quenching in Massive Galaxies and Clusters by Clumpy Accretion
+[A. Dekel, Y. Birnboim]
+Avishai DekelFORMULA , Yuval Birnboim FORMULA
+FORMULA Racah Institute of Physics, The Hebrew University, Jerusalem 91904 Israel
+dekel@phys.huji.ac.il; yuval@phys.huji.ac.il
+REF –REF  2002
+We consider a simple gravitational-heating mechanism for the long-term
+quenching of cooling flows and star formation in massive dark-matter haloes
+hosting elliptical galaxies and clusters. The virial shock heating in haloes
+FORMULA  triggers
+natural quenching in FORMULA  haloes
+{{cite:71606811-9a15-4672-a7da-f357a5867a3e}}. Analytic estimates and simple simulations argue that
+the long-term quenching in haloes FORMULA 
+could be due to the gravitational energy of cosmological accretion delivered to
+the inner-halo hot gas by cold flows
+via ram-pressure drag and local shocks. FORMULA  is obtained by comparing the
+gravitational power of infall into the potential well with the overall
+radiative cooling rate. The heating wins if the gas inner density cusp is not
+steeper than FORMULA  and if the masses in the cold and hot phases
+are comparable.
+The effect is stronger at higher redshifts, making the maintenance easier
+also at later times.
+Particular energy carriers into the halo core are
+cold gas clumps of FORMULA .
+Clumps FORMULA  penetrate to the inner halo
+with sufficient kinetic energy
+before they
+disintegrate, but they have to be FORMULA 
+for the drag to do enough work
+in a Hubble time. Pressure confined FORMULA K
+clumps are stable against their own gravity and remain gaseous once
+below the Bonnor-Ebert mass FORMULA . Such clumps are also immune to
+tidal disruption. Clumps in the desired mass range could emerge by thermal
+instability in the outer halo or in the filaments that feed it if the
+conductivity is not too high. Alternatively, such clumps may be embedded in
+dark-matter subhaloes if the ionizing flux is ineffective, but they separate
+from their subhaloes by ram pressure before entering the inner halo.
+Heating by dynamical friction becomes dominant for massive satellites,
+which can contribute up to one third of the total gravitational heating.
+We conclude that
+gravitational heating by cosmological accretion
+is a viable alternative to AGN feedback as a
+long-term quenching mechanism.
+accretion —
+dark matter —
+cooling flows —
+galaxies: clusters —
+galaxies: ellipticals —
+galaxies: evolution —
+galaxies: formation —
+galaxies: haloes —
+Introduction
+The observed properties of red & dead elliptical galaxies indicate a
+robust quenching of star formation above a threshold corresponding to
+halo mass FORMULA ,
+effective especially
+after a characteristic redshift FORMULA 
+{{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}}.
+Similar quenching is required in order to suppress cooling flows in clusters,
+i.e., in halos FORMULA  {{cite:a2cad2de-faff-45b7-8d79-2e9432e9629a}}.
+In turn, semi-analytic simulations show that the introduction of quenching
+above a threshold halo mass
+(sometimes accompanied by a critical black-hole or bulge mass)
+is a crucial element in any model that tries to fit the data
+concerning the distribution of galaxy properties
+{{cite:cf63b9b7-40a3-4ad5-a6ef-5f0db2957481}}, {{cite:34891650-c96d-4ac3-a1c8-451e4a628f2d}}, {{cite:a20f5bc1-e235-4439-85af-9b42ce99ed0f}}.
+The desired quenching mechanism should provide the required energy over time
+and explain its coupling to the whole gas reservoir in the inner dark halo.
+It needs to address both the trigger  of quenching and its long-term
+maintenance  for many Hubble times,
+as well as the characteristic mass and redshift associated with it.
+There is an ongoing intensive effort to study “AGN feedback" as the potential
+source of quenching. At this point, the physics of AGN feedback, e.g.,
+how it couples to the extended halo gas and how it provides long-term
+maintenance, are still difficult open issues
+{{cite:b3ec2b0d-60f8-4f89-99ea-39751b539610}}.
+The bright quasars have been argued to be capable of providing long-term
+feedback via radiation despite their short lifetimes {{cite:ed140837-2d0f-4e3b-9113-08919f7bb7d3}},
+but perhaps more natural sources for self-regulated AGN feedback are
+the weaker radio-loud AGNs that radiate for a long time at low power
+{{cite:20ea1f3d-3f6d-4d4b-a134-cb59393640c0}}.
+In either case, the desired characteristic mass and redshift do not
+emerge in an obvious way from the black-hole physics.
+Gaseous major mergers, which were suggested as the trigger for quenching
+via starbursts or quasar activation {{cite:4a7b9e7f-1888-4d04-8a33-4a52ebb6193f}}, also have hard time
+providing a satisfactory explanation for the characteristic mass,
+and it is not clear that their frequency and the associated starburst
+efficiencies are sufficient for the purpose
+{{cite:f21288f8-8e7f-44fd-96de-305497e0d5a7}}, , {{cite:8a197270-b31c-4e4e-a705-74d79c37a324}}.
+Here we pursue a preliminary feasibility test of a very simple alternative,
+that the gravitational energy
+associated with the cosmological accretion
+of baryons into the dark-matter haloes
+is the dominant source of quenching, responsible both for its trigger
+and its maintenance.
+The trivial fact that the baryons tend to segregate from the dark matter
+and condense at the bottom of halo potential wells implies that they
+bring in energy that must dissipate and could keep the halo gas hot.
+Our earlier analysis {{cite:b218c686-f943-414a-b7b6-994f02fbed1c}}, {{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}}, based on either analytic calculations
+or simulations in the idealized case of spherical symmetry,
+explained the existence of a robust threshold halo mass for a stable shock at
+the virial radius, FORMULA .
+This is a refinement of the classical idea attributing galaxy formation to
+cooling on a dynamical time scale {{cite:976ea8bf-b0cf-47e7-a816-134146311497}}, {{cite:22c6ab6f-80d5-43c3-a8fe-13f8b3249e36}}, {{cite:3263617d-985b-43f0-a80a-b4b84dc9edd1}}, {{cite:cad2d76f-5572-4797-b752-b13565fbe980}}, {{cite:55cb3393-a017-474d-b36d-461d0609babe}}.
+{{cite:b218c686-f943-414a-b7b6-994f02fbed1c}} showed that in halos below the threshold mass, rapid cooling
+prevents the post-shock gas pressure from supporting the shock against
+gravitational collapse. In this case, the gas flows
+cold (FORMULA K) into the inner halo, where it may eventually shock,
+form a disk and possibly generate an efficient mode of star formation.
+When the halo grows above FORMULA , a stable shock propagates
+toward the virial radius, halting the infalling gas and creating a hot
+medium in quasi-static equilibrium at the halo virial temperature.
+The transition to shock stability occurs when the standard radiative cooling
+time equals the time for compression behind the shock,
+FORMULA ,
+where FORMULA  is the gas density behind the shock,
+FORMULA  is the shock radius and FORMULA  is the infall velocity into the shock.
+Early indications for cold accretion versus shock virialization
+as a function of redshift originated from three-dimensional cosmological
+simulations {{cite:92dc81d0-9c75-4e9e-b0b2-06196f60a0a2}}, {{cite:6a4e964c-fe96-42d1-9012-aed1a0b72837}}, {{cite:b17e6635-8545-4d26-9856-911007d46994}}.
+Advanced cosmological simulations solidified the transition to a hot
+medium at a critical halo mass in parallel with the theoretical understanding
+of the effect
+{{cite:01484d0e-ceda-48cb-9745-23fea408df37}}, {{cite:690548af-87ed-48d3-ac9b-e82f03cb0709}}, {{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}}, {{cite:71606811-9a15-4672-a7da-f357a5867a3e}}.
+This has become the standard lore used in modeling of galaxy formation
+{{cite:cf63b9b7-40a3-4ad5-a6ef-5f0db2957481}}, {{cite:34891650-c96d-4ac3-a1c8-451e4a628f2d}}, {{cite:a20f5bc1-e235-4439-85af-9b42ce99ed0f}}.
+The introduction of a hot medium filling the halo
+is a natural trigger for quenching of
+cold gas supply. This is either directly, by shock heating of all the gas,
+or indirectly, by providing a hot dilute medium that is vulnerable to heating
+by sources such as AGN feedback. This very naturally
+explains the origin of the characteristic threshold halo mass
+responsible for the galaxy bimodality {{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}}.
+While the role of virial shock heating as the trigger for quenching
+and as a necessary condition for maintenance
+are becoming widely appreciated, we address here the novel idea that the
+accretion itself may also be the dominant source of energy
+for long-term maintenance, without appealing to AGN feedback
+or in parallel to it.
+Using spherical hydro simulations, {{cite:71606811-9a15-4672-a7da-f357a5867a3e}} have found that
+a uniform  virial accretion at the average cosmological rate
+leads by itself to effective long-term quenching starting at FORMULA 
+in halos of masses FORMULA  today,
+namely in groups of galaxies.
+This is a generic sequence of events, termed SAMBA (for Shocked-Accretion
+Massive Burst and Shutdown), due to a moderate
+accretion rate through a rapidly
+expanding virial shock. The long-term quenching
+follows an earlier tentative quenching phase, when the halo is FORMULA , and a subsequent, rapid, massive accretion
+of FORMULA  of gas into the inner halo.
+Cosmological simulations by {{cite:c4fd2ee8-b82f-45ab-b244-4a85da3f8339}} and {{cite:efa13a6d-f9cc-48de-8960-4f8f2b87d795}}
+provide first clues that such a mechanism may actually work once the
+numerical resolution is sufficient for resolving small clumps
+{{cite:50aca558-900e-4144-8ef6-0cb6af83d178}}, {{cite:05fc356e-846e-4de1-9805-3f5f59210c53}}, {{cite:fdee063e-3a9f-4991-a56f-8730d5c69ae2}}.
+However, {{cite:71606811-9a15-4672-a7da-f357a5867a3e}} found that uniform spherical accretion does not
+provide long-term quenching in halos more massive than FORMULA .
+This is because the accretion rate was too high at the early time
+when the halo was FORMULA .
+We address here a more robust phenomenon that is also valid in more massive
+haloes and in realistic cosmological geometries, where the gravitational
+energy of accretion is the potential source of long-term quenching
+maintenance.
+Both {{cite:71606811-9a15-4672-a7da-f357a5867a3e}} and {{cite:d22a997a-2427-4f98-86a0-44d51eab7506}} have made preliminary attempts
+at addressing the potential of a scenario along these lines,
+assuming that the energy is transferred to the inner-halo gas via clumps.
+It is important to note that heating by dynamical friction acting on
+subhaloes, which is a non-negligible energy source, is insufficient
+for balancing the cooling rate {{cite:89b46f03-2998-4303-a4cf-cd34895c921c}}, {{cite:9c1568d8-d52d-4cc5-9bb0-5bc8a9ea5a26}}, {{cite:43625509-06a4-4e97-9af2-0799296d7933}}, {{cite:d22a997a-2427-4f98-86a0-44d51eab7506}}.
+We rather focus here on the effect of ram-pressure drag (or shocks)
+exerted by a hot ambient gas  on cold gas  clumps.We
+refer in this paper to FORMULA K clumps as “cold", to distinguish them from
+“warm" gas at FORMULA K and “hot", X-ray emitting gas of FORMULA K.
+Similar clumps are sometimes referred to as “warm", reserving the term
+“cold" to gas that has cooled by molecular cooling to FORMULA K.
+In § we find analytically that the overall gravitational
+accretion power is adequate for keeping the halo gas hot in halos above a
+threshold mass FORMULA , provided that the energy
+is deposited in the inner halo. We evaluate the scaling with redshift,
+density profiles, gas fractions and metallicity.
+In § we work out constraints on the clump masses,
+FORMULA , necessary
+for effective heating by drag of the hot gas in the inner halo.
+In § we present simple simulations that confirm the analytic estimates
+and demonstrate the potential of keeping the halo gas hot by clumpy accretion.
+After sketching the method of simulation,
+we analyze the time evolution of individual clumps,
+and use the results for the heating-to-cooling ratio inside the halo
+to obtain the constraints on halo and clump masses.
+In § we discuss the possible role of dynamical friction,
+the physics of dissipation via turbulence, and the possible origin of clumps
+by thermal instability of inside subhaloes.
+In § we conclude our findings.
+
+Global Heating versus Cooling: Minimum Halo Mass
+The gravitational energy associated with infall into massive haloes is
+clearly a viable source for quenching because, by virtue of the virial theorem
+itself, it is comparable to the overall thermal energy
+{{cite:aa73b176-5b14-4911-9d52-9a3716dd543c}}.
+As argued by {{cite:d22a997a-2427-4f98-86a0-44d51eab7506}}, this gravitational energy can compete
+with the popular energy source of feedback from a central AGN.
+For a total stellar mass FORMULA , the gravitational energy
+is FORMULA , while the AGN feedback
+can be expressed as FORMULA , so the ratio of the two is
+FORMULA . This is of order unity for typical escape velocities in big ellipticals
+and clusters and for typical AGN efficiencies.
+Unlike the AGN energy which is likely to heat the densest gas and largely
+get radiated away, the gravitational heating can be deposited much more
+uniformly so less energy is wasted as radiation.
+A necessary condition for the accretion to provide an effective quenching
+mechanism is that there is enough gravitational power in the accretion to
+overcome the overall rate of energy loss by radiative cooling.
+By considering first this global  requirement
+we will obtain here a robust lower limit
+for the halo mass in which gravitational quenching is possible.
+In the following sections we will obtain limits on the clump masses by
+considering the energy balance in the inner  halo, with the
+heating provided specifically by ram-pressure drag on cold clumps.
+Halo Equilibrium Profiles
+In order to evaluate the rates of heating versus cooling
+we use a simple model for
+gas in hydrostatic equilibrium within the potential well of a
+spherical dark-matter halo.
+The halo virial mass FORMULA  and radius FORMULA  are defined in the standard way
+such that the mean
+mass over-density within FORMULA  relative to the cosmological background
+is FORMULA . Recall that the cosmological density is FORMULA ,
+with FORMULA  the universal expansion factor,
+and in a flat universe FORMULA  varies from FORMULA 
+at FORMULA  to FORMULA  at FORMULA 
+{{cite:71ba39d6-3d73-4f2d-b5f2-15c78dd831d1}}, {{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}}.
+The mean mass density within the virial radius is then expressed conveniently
+as
+FORMULA 
+
+FORMULA 
+With the virial velocity FORMULA , writing
+FORMULA , FORMULA 
+and FORMULA ,
+the standard virial relations can be written as
+FORMULA 
+We assume that the total and the hot-gas density profiles are
+both of a generalized  NFW functional form,
+FORMULA 
+They can be parameterized by the inner slope FORMULA , the
+mass FORMULA  within the virial radius, and the concentration
+parameter FORMULA . We denote the total
+hot-gas mass within the virial radius by FORMULA .
+The concentration, for each of the two components,
+is assumed to follow the cosmological average for dark-matter haloes
+{{cite:5b34f4f1-d2cd-41bb-b48b-94624eb32d60}},
+FORMULA 
+Hydrostatic equilibrium requires at every radius  FORMULA
+FORMULA 
+where FORMULA  is the total mass within FORMULA ,
+FORMULA  and FORMULA  are the gas density and temperature profiles,
+FORMULA  is the Boltzmann constant and FORMULA 
+with FORMULA  the proton mass.
+Thus, for given density profiles, we can evaluate the temperature profile via
+FORMULA 
+with the external boundary condition set by the virial temperature
+at  FORMULA
+FORMULA 
+or in the cosmological context
+FORMULA 
+The entropy profile is then proportional to
+FORMULA 
+FIGURE 
+In our fiducial model we assume an NFW cusp for the total mass,
+FORMULA , and a constant-density core for the gas,
+FORMULA , with FORMULA .
+The resultant profiles are shown in Fig. REF .
+The gas temperature is only weakly varying about the virial temperature.
+The entropy is rising at large radii and is approaching a constant entropy floor
+at small radii, in qualitative agreement with the typical profiles indicated
+by X-ray observations {{cite:ae524895-3c47-4ff9-baad-20e161f55443}}, {{cite:b09dc8e8-07cd-4959-ab49-b29849a56f15}}
+and with those obtained in hydrodynamical simulations of clusters
+{{cite:58b2ca53-1243-429b-ad34-b487b8d557cf}}.
+Shown for comparison is a case with a gas cusp,
+FORMULA , for which the temperature is still roughly constant,
+but the entropy is improperly rising even at small radii.
+For the purpose of analytic estimates,
+we note that the generalized NFW mass profile of eq. (REF )
+can be written as
+FORMULA 
+where for an FORMULA  cusp
+FORMULA 
+and for an FORMULA  core
+FORMULA 
+
+Heating Rate by Gravitational Accretion
+We write the available gravitational accretion power as
+FORMULA 
+The first term represents the gain in potential energy by infall of clumpy
+gas from the
+virial radius to an inner radius FORMULA , given an accretion rate
+FORMULA .
+The second term is the contribution of kinetic energy associated with the
+typical velocities FORMULA  of the clumps at the virial radius.
+The third term represents the energy wasted for unbinding infalling cold
+clumps and heating them to the halo virial temperature.
+Given the density profiles, the potential gain is
+FORMULA 
+with FORMULA .
+For our fiducial NFW potential well, FORMULA ,
+FORMULA 
+With FORMULA , we have FORMULA , so FORMULA  and
+FORMULA .
+In comparison, a singular isothermal sphere has FORMULA ,
+namely FORMULA .
+The average virial accretion rate onto haloes of mass FORMULA  at
+redshift FORMULA  can be estimated using the EPS formalism,
+following {{cite:c62c50a5-2478-4bb2-aced-966fda613092}} and as described in Appendix A of {{cite:71606811-9a15-4672-a7da-f357a5867a3e}}.
+We use the practical approximation for haloes near FORMULA 
+in FORMULA CDM,
+FORMULA 
+This is consistent with the estimates from cosmological N-body simulations
+{{cite:18a8caf9-aa5a-4668-a321-873a31c01c86}}, {{cite:3f583c08-d56d-476b-a53e-abcc83537aa4}}.
+The accretion rate of clumps is assumed to be FORMULA .
+Thus, for an NFW potential,
+the heating rate from eq. (REF ), in terms of the total thermal energy, is
+FORMULA 
+The strong redshift dependence is due to the higher specific accretion rate
+at higher redshifts, and note the relative insensitivity to FORMULA .
+
+Radiative Cooling Rate
+The radiative cooling rate per unit mass,
+at a position where the gas density, temperature
+and metallicity are FORMULA , FORMULA  and FORMULA , is
+FORMULA 
+where FORMULA  and FORMULA  is the atomic cooling function.
+We use the standard cooling function computed by {{cite:bfbf81e6-2815-402a-996f-c4fe4f2ef9b9}},
+which is consistent with the equilibrium state computed by {{cite:4eac1c2b-de89-4714-bfe4-f9eb8c1b7ffe}}.
+At a radius FORMULA  within the halo, the cooling rate becomes
+FORMULA 
+where
+FORMULA  and the gas density profile is expressed in a
+dimensionless way by
+FORMULA 
+with FORMULA  from eq. (REF ).
+We define
+FORMULA ,
+and note that for FORMULA , the value of FORMULA  is
+between FORMULA  and 6 for metallicities ranging from zero to solar abundance.
+For our fiducial gas profile, FORMULA , we have
+FORMULA 
+With FORMULA , it is FORMULA , FORMULA 
+and FORMULA .
+The overall cooling rate of the hot gas is
+FORMULA 
+Because of the proportionality to FORMULA , the integral is
+dominated by the cooling near the inner radius FORMULA .
+For our fiducial gas profile,
+with FORMULA , and approximating FORMULA  based on Fig. REF 
+such that FORMULA  is independent of FORMULA , we obtain
+[to an accuracy of FORMULA ]
+FORMULA 
+with FORMULA  the cooling rate of eq. (REF ) where FORMULA .
+This gives a total cooling rate relative to the thermal energy
+FORMULA 
+where FORMULA  and FORMULA  is given in eq. (REF ),
+e.g., FORMULA .
+Note the strong decrease of this specific cooling rate with increasing
+FORMULA  and increasing redshift, the latter being dominated by FORMULA .
+For comparison with X-ray observations, we note that
+the total cooling rate from our fiducial halo model is
+FORMULA 
+For FORMULA  at FORMULA  the virial temperature is
+FORMULA K. Then with FORMULA  we have FORMULA 
+so FORMULA .
+This is indeed comparable to the observed X-ray output of
+FORMULA 
+from giant ellipticals and groups of virial halo mass in the ball-park
+of FORMULA  {{cite:cb96524e-9db9-48d0-8a73-ac4f9e613278}}, {{cite:6a486551-da2c-42bb-8eec-464c4225f1fb}}, {{cite:9238b919-6a6f-4172-b80c-4d5d76076ec6}}, {{cite:8e8ce789-c272-427e-8564-45ea38f7e8a0}}.
+In particular, the observed scaling with dispersion velocity {{cite:de6e4feb-b154-48de-9b82-f4629e37c52a}}
+can be translated to
+FORMULA ,
+quite similar to the mass dependence inferred from eq. (REF ).
+This indicates that our fiducial halo model is roughly compatible with
+X-ray observations, and that in fact we have no much freedom in choosing
+a hot gas fraction that is very different from the 5% assumed.
+For an analytic estimate of the cooling rate
+one could use the practical approximation by
+{{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}} to the cooling function,
+FORMULA 
+where FORMULA  is related to the virial mass in eq. (REF ),
+and FORMULA .
+We also adopt in our fiducial case the redshift evolution of the mean
+metallicity as crudely estimated by {{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}},
+FORMULA 
+
+Global H/Q: Minimum Halo Mass
+The ratio of global heating to cooling rate, FORMULA , is computed numerically
+for any given choice of FORMULA  and FORMULA .
+The heating rate FORMULA , as computed from eq. (REF ) and
+eq. (REF ) with FORMULA ,
+is divided by FORMULA , as evaluated from eq. (REF ) with eq. (REF ).
+Figure REF  shows the resultant global FORMULA  as a function of halo mass.
+In the fiducial case we obtain
+FORMULA  for
+FORMULA 
+This is the lower limit for haloes that permit gravitational quenching.
+We see that at FORMULA , where the natural quenching by
+shocked accretion is no longer effective {{cite:71606811-9a15-4672-a7da-f357a5867a3e}},
+the quenching can in principle be provided by gravitational heating,
+once the energy is deposited in the inner halo.
+At FORMULA , FORMULA , while in
+cluster haloes of FORMULA , the energy available
+for gravitational heating overwhelms the cooling rate, FORMULA .
+The almost linear dependence of FORMULA  on FORMULA  is driven by the dependence of
+the heating rate per unit mass on the potential well,
+FORMULA , while the cooling rate per unit mass is a
+weaker function of halo mass.
+FIGURE 
+FIGURE 
+For the fiducial profiles with FORMULA  and FORMULA ,
+we obtain an analytic expression for FORMULA  by dividing eq. (REF )
+and eq. (REF ),
+FORMULA 
+We can express FORMULA  in terms of the parameters FORMULA , FORMULA , FORMULA , and
+FORMULA , by inserting
+FORMULA  from eq. (REF ),
+FORMULA  from eq. (REF ),
+FORMULA ,
+FORMULA  from eq. (REF ) with FORMULA  from eq. (REF )
+and FORMULA  from eq. (REF ).
+Using these approximations,
+we recover the fiducial critical value of FORMULA ,
+and obtain its crude scaling with the parameters:
+FORMULA 
+Some of these scalings are
+reflected in the two additional curves of Fig. REF , referring to
+variations of FORMULA  and FORMULA  about the fiducial case.
+At FORMULA , the heating is more efficient and we learn that FORMULA  is reduced to
+FORMULA .
+With a higher fraction of hot gas and a lower fraction of mass
+in clumps, FORMULA  and FORMULA ,
+we see that FORMULA ,
+such that gravitational heating can barely do the job.
+Figure REF  shows the redshift dependence of FORMULA ,
+defined by FORMULA , for otherwise the fiducial choice of parameters.
+By FORMULA , the minimum mass drops to FORMULA , allowing
+gravitational quenching over the whole mass range where a shock-heated
+medium is present.
+The increase in heating rate due to the higher accretion rate
+(FORMULA ) and higher FORMULA  (FORMULA ) at higher FORMULA 
+is almost balanced by the increase in cooling rate due to the higher density
+(FORMULA ),
+leading to the apparent weak explicit dependence of FORMULA  on redshift in
+eq. (REF ).
+The residual FORMULA  dependence of FORMULA  at a given FORMULA 
+is dominated by the decrease of FORMULA  (FORMULA ) with redshift,
+aided by the corresponding decrease of FORMULA  via FORMULA  and FORMULA .
+In a more realistic dynamical calculation, one can expect
+the over-heating at high FORMULA  to induce an expansion of the gas core,
+reducing FORMULA  and FORMULA  there. This is expected to improve the quenching
+efficiency at later times and thus reduce FORMULA  there (work in progress).
+Figure REF  displays the dependence of FORMULA 
+on the inner density profiles of gas and dark matter in equilibrium.
+The dependence on the total density slope FORMULA  is rather weak.
+For a constant-density gas core, FORMULA , any reasonable value for the
+total density slope
+in the range FORMULA  would provide enough gravitational potential
+gain for balancing the cooling rate in FORMULA  haloes.
+Naturally, an isothermal density cusp (FORMULA ) provides a higher
+potential gain than a flat density core (FORMULA ).
+We also find (not plotted) that the sensitivity to how deep in the potential
+well the energy deposit occurs is also rather weak, less than a factor of
+FORMULA  in FORMULA  as long as the energy deposit occurs inside FORMULA .
+The sensitivity to the gas profile is stronger, through the cooling rate.
+For an NFW potential well, the gas core has to be FORMULA  for
+FORMULA  in FORMULA  haloes.
+Once the gas profile is too cuspy, FORMULA ,
+only haloes above FORMULA  can be quenched.
+If FORMULA  is as steep as FORMULA , the cooling rate becomes so high that
+it cannot be balanced by gravitational heating even in cluster haloes of FORMULA .
+FIGURE 
+Figure REF  shows the dependence of FORMULA 
+on the mass fractions in hot gas versus cold clumps, FORMULA  and FORMULA .
+The total gas fraction imposes a constraint on the way these parameters
+can vary, FORMULA 
+This could be at most the universal baryonic fraction, FORMULA .
+A more realistic estimate would be FORMULA , after
+subtracting the mass fraction of baryons in stars and those removed by
+feedback processes.
+With a total gas fraction of FORMULA , one needs FORMULA  for quenching
+FORMULA  haloes. A ratio of FORMULA 
+would be enough for quenching FORMULA  haloes.
+We also find (not plotted) that the effect of increasing today's metallicity
+from FORMULA  to FORMULA  is only a FORMULA  increase in FORMULA .
+FIGURE 
+The robust result is that for a broad and sensible range of values
+of the model parameters, once today's halo is of FORMULA 
+or higher, there is in principle enough total power in the accretion
+available for keeping the halo gas hot.
+We conclude that the clumpy accretion scenario passes the first
+feasibility test: it carries enough gravitational power to overcome
+the overall cooling rate in haloes that host groups and big elliptical
+galaxies, and more power than necessary in clusters of galaxies.
+The key is of course to have enough of this energy deposited in the inner halo,
+where most of the cooling tends to occur. This is addressed next, leading
+to constraints on the range of masses for the clumps that can serve as heating
+agents.
+
+Heating by Gas Clumps
+The actual accretion is aspherical and clumpy.
+The interaction of the infalling cold, dense gas  clumps with the
+hot medium present in FORMULA  haloes,
+via ram-pressure drag and weak shocks, transfers energy into the
+gas and keeps it hot.
+The effect of dynamical friction, which is dominant for the most
+massive subhaloes, will be discussed in §.
+Ram-Pressure Drag on a Clump
+In our analytic estimates,
+we consider a population of dense, cold gas clumps of mass FORMULA  each,
+falling radially at the virial velocity FORMULA  through
+a halo of mass FORMULA  containing hot-gas mass FORMULA .
+We assume that the clumps keep an internal temperature of FORMULA K,
+where the atomic cooling function drops sharply and where the suppression
+of further cooling may be assisted by photoionization due to an
+external UV flux.
+The clumps are assumed to be in pressure equilibrium with a hot
+medium at the virial temperature, FORMULA .
+Since the pressure in each of the gas components is FORMULA ,
+the pressure confinement implies that at any position within the halo
+the densities of the cold and hot phases are related by
+FORMULA 
+The implied clump radius is
+FORMULA 
+describing the clump shrinkage as it moves into the higher density regions
+of the inner halo.
+The amplitude of the drag force acting by the hot medium on a cloud is
+FORMULA 
+where FORMULA , independent of whether the motion is sonic or supersonic
+{{cite:2093ca7c-2f61-4eb5-b79e-4ea5a276a1bf}}The value of FORMULA 
+for a spherical clump varies from
+0.4 to unity and back to 0.8 in the sub-sonic, trans-sonic and super-sonic
+regimes respectively.
+Thus, the deceleration of a cloud due to drag in terms of
+the characteristic gravitational acceleration FORMULA  is
+FORMULA 
+This implies that
+less massive clumps suffer a stronger deceleration, which naturally
+gets stronger with increasing ambient gas density. In turn, the rate
+of drag work done by the whole clump population of a given total mass
+is also FORMULA .
+For a numerical estimate in the cosmological context,
+we use the top-hat virial relation, eq. (REF ), to obtain
+FORMULA 
+where
+FORMULA 
+In our fiducial case, FORMULA  at FORMULA , we have
+FORMULA .
+The deceleration can then be written as
+FORMULA 
+The work done per unit clump mass as it falls from radius FORMULA  to FORMULA 
+is then
+FORMULA 
+where FORMULA  is a dimensionless integral
+FORMULA 
+For our fiducial gas profile this is
+FORMULA 
+With FORMULA , we have FORMULA  and FORMULA  at FORMULA .
+Then for infall from FORMULA  to FORMULA  the integral is FORMULA 
+and FORMULA .
+Hydrodynamical simulations indicate that most of the work done by the
+ram-pressure drag is
+indeed deposited in the ambient gas rather than in the dense clumps
+{{cite:2813895e-165d-4c65-8320-ee6ae3be55bb}}, {{cite:e8b98a74-749b-4861-b9bf-bc50be86eef3}}. This implies that the clumps can serve as
+efficient heating agents, partly through the generation of turbulence (see
+§).
+The challenge is to have the clumps heat the gas in the inner halo,
+where its density peaks and the cooling rate is high.
+The clumps have to penetrate  to the inner halo before they are
+stopped by the drag or destroyed by fragmentation due to hydrodynamical
+instabilities. This imposes a lower bound on the clump mass.
+On the other hand, the drag work has to be effective such that it overcomes
+the radiative energy losses. This imposes an upper bound on the clump mass
+for a given halo mass.
+
+Penetration: Minimum Clump Mass
+A necessary condition for a clump to be effective in heating the gas
+at the halo core is that it penetrates into the core with a velocity higher
+than the virial velocity, accelerated by gravity despite the drag.
+Then it brings in more energy than is needed for heating the clump itself
+to the virial temperature when it melts into the hot medium.
+Such a penetration is possible only if the drag work done on the clump
+while it falls from FORMULA  to FORMULA  at a velocity FORMULA  does not
+exceed the corresponding potential gain,
+FORMULA 
+If this inequality is not obeyed, the clump rapid infall velocity must
+be slowed down by the drag before it reaches the inner core.
+Substituting FORMULA  from eq. (REF ), the constraint for penetration in a Hubble
+time becomes
+FORMULA 
+The second equality, here and below, refers to
+our fiducial case of FORMULA  at FORMULA .In
+order to reach the core in a Hubble time rather than in a crossing time
+FORMULA , the average infall velocity should be FORMULA ,
+reducing the drag by a factor FORMULA  and thus
+reducing the minimum clump mass by a factor of FORMULA .
+This estimate assumes that the clump retains its initial mass as it
+moves through the halo. A higher lower bound may be obtained when
+clump fragmentation is taken into account.
+The clump ploughing through the hot medium suffers
+Kelvin-Helmholtz and Rayleigh-Taylor instabilities,
+which eventually make it break into smaller fragments.
+Simulations show that this happens roughly once the clump has ploughed
+through a distance FORMULA  corresponding to a gas column of mass
+comparable to the clump mass {{cite:2813895e-165d-4c65-8320-ee6ae3be55bb}}.
+This is equivalent to the intuitive requirement that the impulse exerted by
+the drag, FORMULA , is comparable to the momentum of the clump, FORMULA ,
+making it capable of breaking the clump up. We note that the
+corresponding timescale for breakup can actually be
+larger than the timescale associated with the fastest linear growing mode
+of the Kelvin-Helmholtz instability {{cite:48aed91e-382e-4982-868b-0c1a07303746}}. The fragmentation
+is slowed down by the confining pressure, similarly to the slow-down that
+occurs when the clump is self-gravitating.
+Thus, a clump of initial mass FORMULA  on an inward radial orbit from radius
+FORMULA  would fragment at radius FORMULA  which obeys
+FORMULA 
+Using the expression for the drag work, eq. (REF ), this translates to
+fragmentation at an FORMULA  that obeys
+FORMULA 
+A comparison of eq. (REF ) with eq. (REF ) implies that clumps that
+could have made it to the halo core [by obeying eq. (REF )]
+may fragment before they have reached the core.
+For our fiducial gas profile, eq. (REF ) becomes
+FORMULA 
+We now assume that at FORMULA  the clump fragments into FORMULA  new clumps
+of mass FORMULA  each, and allow them to penetrate further till they fragment
+again by the same rule.
+If FORMULA , the fragments do not penetrate much beyond
+the first FORMULA . In order to penetrate from FORMULA  to FORMULA  before fragmentation
+occurs, the clump has to be as massive as
+FORMULA 
+If, on the other hand, FORMULA  is of order a few,
+the penetration following each fragmentation
+could be substantial. For example, Fig. REF  shows the penetration of
+clumps of different initial masses at the halo virial radius,
+under the assumptions of fragmentation into two pieces at a time, FORMULA ,
+at radii that are obtained by a repetitive use of eq. (REF ),
+in our fiducial halo.
+We see that in this case clumps of initial mass significantly smaller than
+FORMULA  can never make it to the inner halo.
+Clumps of FORMULA  make it into the inner halo
+once, while clumps that are significantly larger penetrate through and
+orbit about the center more than once before they are completely destroyed.
+Thus, as long as the clump does not completely disintegrate in its first
+fragmentation event, our estimate of the lower limit imposed by
+penetration with fragmentation is roughly
+FORMULA 
+FIGURE 
+It is worth noting that the effectiveness of clumps that lie significantly
+above the minimum mass and thus safely make it into the core is not affected by
+the fragmentation, as it is determined by the depth of the potential well.
+For small clumps, however, the fragmentation enhances the drag deceleration
+and can therefore prevent a clump that would have otherwise reached the core
+from actually doing so. This tightens the lower bound that were
+obtained before considering the fragmentation.
+The lower limit on FORMULA  scales strongly with FORMULA , mostly through FORMULA  and
+partly through FORMULA  (via FORMULA ). At FORMULA , for FORMULA ,
+the minimum FORMULA  drops by a factor of FORMULA  compared to its value at
+FORMULA .
+The scaling with halo mass is such that the minimum FORMULA  at FORMULA 
+drops by a factor of FORMULA  when the mass grows to FORMULA .
+The decrease of FORMULA  with increasing FORMULA  or FORMULA  originates from the
+corresponding increase in FORMULA . This increases the confining pressure,
+which makes the clump shrink (at a given mass), thus reducing
+the drag force (eq. REF ), and allowing better penetration with later
+fragmentation.
+
+Effective Heating: Maximum Clump Mass
+Clumps that are massive enough to make it into the halo core
+should not be too massive; otherwise they fail to dissipate enough of their
+energy in a Hubble time.
+We can now address the heating-to-cooling balance with the heating
+computed from the actual drag work rather than the available potential well.
+Assuming that each clump is performing its act for a Hubble time as it orbits
+back and forth in the halo, and noting that the Hubble time is always
+about 5.5 times longer than the virial crossing time FORMULA ,
+we can estimate the drag work per unit mass as
+FORMULA  and thus require for effective drag that
+FORMULA 
+This translates to
+FORMULA 
+where FORMULA  is the global heating-to-cooling ratio as evaluated in
+eq. (REF ) and plotted in Fig. REF .
+The implied upper bound is a straightforward modification of eq. (REF ),
+FORMULA 
+where the last equality is for our fiducial case where FORMULA .
+The upper limit of eq. (REF ) is likely to be too tight.
+First, massive clumps are expected to speed up beyond FORMULA  due to the
+gravitational pull to the halo center, causing a significant enhancement
+in the drag force. If the velocity becomes twice as high along parts of
+the orbit, say, the instantaneous drag force is four times larger,
+so the upper limit on FORMULA  may increase by an order of magnitude.
+Second, the successive fragmentation can increase the drag work by clumps
+that start more massive than this limit. According to the condition for
+fragmentation, eq. (REF ), the number of crossings FORMULA 
+of a distance FORMULA 
+before the first fragmentation can be estimated by
+FORMULA , namely
+FORMULA 
+This implies that even a clump as massive as FORMULA  in a fiducial halo
+of FORMULA  would fragment before crossing the distance FORMULA  three
+times, and the consequent enhanced deceleration by drag would give it a
+chance to deposit enough energy by drag work in a Hubble time.
+The actual, more relaxed upper limit on FORMULA  will be evaluated more accurately
+using simulations below.
+Note that the condition for effective drag in eq. (REF )
+does not guarantee that
+the apocenter of the clump's orbit decays into the core in a Hubble
+time. The condition for this is rather FORMULA ,
+so the corresponding upper limit is lower by FORMULA .
+This implies that clumps near the upper limit can deposit enough energy
+during their passages through the core without being fully confined to
+the core.
+The scaling of the upper limit on FORMULA  in eq. (REF ) with FORMULA  and FORMULA 
+is dominated by the dependence of FORMULA  on these parameters (Fig. REF )
+which is partly balanced by the opposite trends of FORMULA  discussed
+in §REF .
+Changing the mass to FORMULA  at FORMULA , the maximum FORMULA 
+is increased by a factor of FORMULA . This change is driven by
+the dependence of the heating rate per unit mass on FORMULA .
+Moving to FORMULA  at a fixed halo mass, the maximum FORMULA  is increased
+by a factor of FORMULA .
+
+Bonnor-Ebert Stability: Maximum Clumps
+For the clumps to be effective in heating the inner halo gas they have
+to remain gaseous as they travel through the halo. This means that their
+inner pressure should support them against collapse due to their own self
+gravity.
+A self-gravitating pressure-confined isothermal sphere,
+with an equation of state FORMULA  (FORMULA ), is stable
+once it is less massive than the Bonnor-Ebert (BE) mass
+{{cite:57257e7a-ce28-4499-9cf8-e9df01c1f370}}, {{cite:a63f45dc-46f8-4148-9a7f-9952c8d2535f}},
+FORMULA 
+Writing the speed of sound within the clump as FORMULA ,
+and the pressure confinement by the ambient ideal gas (FORMULA ) as
+FORMULA , we obtain
+FORMULA 
+where FORMULA .
+In the cosmological context, using FORMULA  from eq. (REF ) and eq. (REF ),
+we obtain
+FORMULA 
+Using eq. (REF ) for FORMULA , and FORMULA  from eq. (REF ),
+we obtain that the upper limit for BE stability is
+FORMULA 
+For our fiducial profiles, with FORMULA , we have FORMULA  at FORMULA ,
+FORMULA  at FORMULA  and FORMULA  at FORMULA .
+Thus, FORMULA  in the outer halo and FORMULA  < FORMULA 108MFORMULA We thus find that the maximum mass for Bonnor-Ebert stability is comparable to
+the maximum mass for drag efficiency as (under-) estimated in eq. (REF ).
+This is an interesting coincidence, which allows a broad mass range
+for the clumps that are capable of serving as heating agents.
+
+Tidal Disruption: Maximum Clump Mass
+The clumps moving through the inner halo experience tidal forces
+that may disrupt them before they manage to heat the ambient gas.
+We assume that
+disruption happens when the tidal force acting on the surface of the clump
+becomes comparable to the force associated with the confining pressure.
+The tidal force inside a host halo can be estimated by {{cite:7da28d81-877a-4dc0-becc-b7100f923ee7}}
+FORMULA 
+where FORMULA .
+For an NFW profile it is FORMULA  < FORMULA 2FORMULA = 1FORMULA rsFORMULA 0FORMULA r 0FORMULA rcFORMULA P= kT/mFORMULA ft < fPFORMULA rcFORMULA C=9FORMULA rFORMULA 0.03FORMULA rsFORMULA g30FORMULA V VvFORMULA 1FORMULA 2.3108MFORMULA 1013MFORMULA z=0FORMULA gFORMULA V FORMULAFORMULA r3FORMULA We note that tidal disruption imposes an upper limit comparable to those
+imposed by Bonnor-Ebert instability and by drag inefficiency,
+all roughly demanding for FORMULA  at  FORMULA
+FORMULA 
+
+Local Heating versus Cooling Rates
+Given an accretion rate of appropriate clumps into the halo,
+we can crudely estimate the heating rate by drag in a single passage through
+a given point within the halo, in comparison with the local cooling rate.
+This will provide a lower limit to the actual heating rate, which can be higher
+due to repeating passages of the orbiting clumps in a given position.
+Consider a radial accretion of clumps in a rate FORMULA .
+The work done by drag per unit time and unit mass of ambient gas
+of density FORMULA  in a shell of radius FORMULA  is
+FORMULA 
+The clump velocity FORMULA  drops out, and using eq. (REF ) we obtain
+FORMULA 
+Inserting the average cosmological accretion rate from eq. (REF ),
+the heating rate becomes
+FORMULA 
+Dividing FORMULA  from eq. (REF ) by the cooling rate from eq. (REF ), we obtain
+FORMULA 
+The local heating rate balances the cooling rate, FORMULA , for
+FORMULA 
+If each clump passes 5.5 times in each radius over a Hubble time,
+the balance condition becomes FORMULA , and the corresponding
+FORMULA  becomes FORMULA  times higher.
+These values of FORMULA  are plotted in Fig. REF  for our fiducial case.
+We learn that the drag heating by clumps less massive than FORMULA 
+can overcome the cooling in the inner halo in a single passage,
+while more massive clumps require multiple passages in the same location.
+The actual heating rate by such clumps will be evaluated by simulations below.
+
+Gas clumps in Dark-Matter Subhaloes
+Effect on the Clump Mass Estimates
+So far we have considered self-gravitating gas clumps of gas mass FORMULA .
+As will be discussed below,
+these clumps may initially be embedded in dark-matter subhaloes,
+such that the total effective initial clump mass is FORMULA .
+As long as the dark subhalo is attached to the gas clump, we can crudely
+evaluate its qualitative effects on our clump mass estimates.
+In terms of the overall energetics considered in §,
+the total gravitational energy associated with
+the accretion of the clumps into the center of the potential well could
+become larger by a factor that may be a significant fraction of FORMULA .
+The potential for overcoming the overall cooling is therefore higher,
+namely the threshold mass for quenching could become as small as
+FORMULA .
+The clump fragmentation as estimated in §REF 
+is driven by the hydrodynamical instabilities at the boundaries of
+the dense gas component with the ambient hot gas, which may
+or may not be affected by the presence of dark-matter subhaloes.
+The subhalo potential well is likely to slow down the fragmentation
+process, which may allow even smaller clumps to penetrate to the inner halo.
+The estimated minimum clump mass of FORMULA  may therefore
+remain the same or become somewhat smaller.
+On the other hand, once the drag force remains the same while the clumps
+carry larger inertia, their orbital decay (§REF ) should be less
+efficient,
+and the associated maximum mass for effective heating of the inner halo
+gas by drag would possibly decrease by a significant fraction of FORMULA .
+The potential for overcoming the cooling by drag at the first passage
+would be weakened. Thus, an effective heating by relatively massive gas
+clumps in subhaloes would rely on a quick separation between the gas and
+dark-matter components.
+
+Separation of Gas and Dark-Matter Subhalo
+The ram-pressure drag is acting on the gas component only. Once the drag is
+stronger than the gravitational force tying the gas clump
+to its dark-matter subhalo, the two components detach from each other
+and the treatment of the gas clump as isolated is justified.
+Assuming an NFW density profile inside the subhalo,
+the maximum restoring gravitational force per unit mass, FORMULA ,
+is obtained somewhat below its inner radius,
+FORMULA ,
+where FORMULA  is the subhalo virial radius and FORMULA  is its effective
+concentration parameter. The condition for separation then becomes
+FORMULA 
+where FORMULA  is on the order of the virial velocity of the subhalo.
+Expressing FORMULA  in terms of FORMULA  of the host halo, eq. (REF ),
+and using the standard relation between virial quantities,
+FORMULA , we obtain separation for
+FORMULA 
+where FORMULA  and FORMULA .
+The second equality is for our fiducial case at FORMULA , where FORMULA ,
+and assuming FORMULA .
+This means that all clumps of gas mass
+FORMULA  are expected to get separated from their
+subhaloes before or during their first passage through the inner halo.
+In more massive haloes, the separation is even more effective.
+
+Simulations of Gas Clumps
+Simulations: Method
+The analytic estimates of § are based on several
+crude approximations.
+In particular, the clumps were assumed to move inward radially and in
+a constant velocity. On the other hand, we learned that the orbital
+decay of the FORMULA  clumps into the halo core is important
+for their ability to effectively heat the ambient gas.
+We therefore perform simulations of heating by clumps as they move
+on general orbits that properly respond to the gravitational potential
+well and to the gaseous drag and dynamical friction. The simulations include
+clump fragmentation and possible re-merging, and they allow imposing
+Bonnor-Ebert stability when desired.
+Halo
+The spherical halo profiles,
+including dark matter and gas in hydrostatic equilibrium,
+are adopted from §REF .
+In our current simulations, these profiles
+are assumed to remain static as the cold clumps fall through the halo,
+ignoring for now the structural response of the ambient gas to the
+heating by clumps.
+Our fiducial halo has FORMULA  and FORMULA .
+The total density profile is NFW (FORMULA )
+and the gas has a flat density core (FORMULA ).
+
+Initial Clumps
+Each clump of initial mass FORMULA  starts at the virial radius of the host halo
+with an initial velocity of amplitude FORMULA  and a direction set such
+that each of the two tangential components equals FORMULA  times
+the radial component (i.e., FORMULA  and FORMULA  for radial and
+circular orbits respectively).
+In our fiducial case for the simulations,
+we start with FORMULA  and FORMULA ,
+corresponding to a typical
+subhalo orbit in dissipationless N-body simulations,
+where the ratio of pericenter to apocenter is 1:6 {{cite:986462fa-1859-40b4-b5b0-e515fccbb09b}}.
+The clump temperature is assumed to be fixed at FORMULA K until it disintegrates.
+In order to avoid artifacts that may be associated with a specific choice
+of the initial conditions, we simulate 4000 clumps with slightly different
+initial conditions and average the results.
+The initial values of FORMULA , FORMULA  and FORMULA  are drawn at random from
+normal distributions about the chosen mean values,
+with standard deviations FORMULA ,
+FORMULA  and FORMULA  respectively,
+with the additional constraint that the parameters are all non-negative.
+The accretion rate is assumed to be given by eq. (REF ),
+with a fraction of mass in clumps in the fiducial case FORMULA ,
+such that the total gas fraction is FORMULA .
+
+Forces
+Each clump is moved as a test particle by integrating its
+equation of motion in time through three-dimensional space.
+The forces that act on
+each clump are the gravitational force exerted by the host-halo potential
+well, the drag force due to the ambient gas, eq. (REF ),
+and the dynamical friction acting on the
+clump by the dark-matter
+and gas of the host halo {{cite:dffa17e3-ffcc-4260-8842-b0821d497381}}.
+The clump radius entering the drag force is varied according to
+the pressure balance with the ambient gas, eq. (REF ), assuming that the
+temperature and density are uniform within the clump.
+
+Fragmentation and Mergers
+Fragmentation is assumed to occur once the clump has ploughed through
+ambient gas mass equal to its own mass. This is computed by performing
+an integral similar to eq. (REF ) but along the actual orbit of the clump.
+At this point the clump breaks into FORMULA  equal fragments,
+which are assumed to conserve energy and momentum and continue on the
+same orbit side by side.
+In some test runs, the clumps are assumed to merge when they collide
+with each other. These mergers could make some difference in the dense
+inner halo, where the collision rate could be high and the mergers
+may bring the fragmentation process to saturation.
+The mean time between collisions is estimated by FORMULA ,
+where FORMULA  is the number density of clumps at that radius,
+FORMULA , and FORMULA  is the clump velocity,
+all averages over many clumps on different orbits.
+Since the density of clumps is affected by the mergers themselves,
+it is determined by a numerically stable iterative procedure, where
+the clump number density profile is the average of the final profiles
+from the previous two iterations.
+The actual time for a collision event of a clump, FORMULA , is drawn at random from
+an exponential probability distribution FORMULA .
+Once a clump goes through a collision,
+the clump mass is increased by an amount equivalent
+to the average clump mass at that radius.
+The collision is assumed to be totally inelastic,
+where momentum is conserved
+and kinetic energy is lost. A certain fraction of it, FORMULA , is assumed to
+be deposited in the ambient gas, and the rest is lost to radiation.
+
+End of Clumps
+We stop simulating the evolution of a clump once it either becomes
+bound within the innermost FORMULA  of the host halo or
+it has been disintegrated to fragments smaller than FORMULA 
+of its initial mass. The remaining kinetic energy of the clump, minus the
+energy necessary to heat its gas to FORMULA , is added to the ambient gas at that
+radius. When the clump survives for a period longer than FORMULA ,
+or when the clump exceeds the Bonnor-Ebert mass (if this feature is turned on),
+the clump is removed from the simulation without adding any further energy
+to the medium.
+
+Gas in Subhaloes
+When testing the case of gas clumps embedded in dark-matter subhaloes,
+we assume complete separation between the two components
+once eq. (REF ) is satisfied.
+
+Fiducial Case
+The fiducial case in the results presented below consists of
+gas clumps with masses about FORMULA  in a halo of FORMULA .
+The gas fractions in the hot medium and in the cold clumps are
+FORMULA , with metallicity FORMULA .
+Clumps start at the virial radius with a mean velocity of
+FORMULA  and FORMULA .
+The fragmentation is into FORMULA  fragments, mergers are ignored,
+and BE stability is not imposed.
+
+Simulations: Individual Clumps
+We start by studying the evolution of a single clump along its orbit.
+Figures REF  to REF 
+show the time evolution of the following clump properties:
+its radius within the halo, its velocity, its mass,
+the fractional energy lost by the clump (and deposited in the ambient gas),
+and the clump mass relative to the Bonnor-Ebert mass for stability.
+Figure REF  shows the fiducial case, and in the following figures
+we vary one parameter at a time about the fiducial case.
+Although the different cases may show different behaviors,
+we will see in the next section that in many cases they are
+as effective as cooling agents.
+FIGURE 
+In the fiducial case,
+the FORMULA  clump and its fragments move along an orbit through a
+sequence of pericenters and apocenters. The orbit decays because of
+the ram-pressure drag, and it enters the FORMULA  core by FORMULA  Gyr.
+The clump fragments for the first time at the vicinity of the first pericenter,
+near FORMULA  at FORMULA  Gyr, and it practically disintegrates
+while it is well inside the inner core by FORMULA  Gyr.
+The drag is at maximum when the velocity and density are at maximum,
+near pericenter, and this is where the energy loss rate is maximal.
+By the time the orbit has decayed to FORMULA , the clump has deposited
+in the gas about one half of the total energy that it has potentially
+available, while the other half is deposited inside FORMULA  by FORMULA  Gyr.
+Note that the velocity remains for many orbits on the order of FORMULA ,
+to within a factor of 2, justifying the crude approximation made in
+§. However, the factor of 2 increase in velocity during the first
+infall, corresponding to a factor of 4 in drag force, makes the FORMULA 
+clump more effective than estimated from Fig. REF . Eq. (REF )
+is therefore an underestimate of the actual maximum clump mass for
+effective heating in a Hubble time, as suspected.
+We also see in Fig. REF  that
+the clump mass is significantly below FORMULA  at all radii,
+meaning that it remains gaseous and stable against collapse and star
+formation under its own gravity.
+Figure REF  explores the dependence on the fragmentation recipe.
+In the top panel the fragmentation is turned off, FORMULA ,
+namely the clump mass remains constant as it moves along its orbit
+through a sequence of pericenters and apocenters.
+The orbital decay into FORMULA  is only slightly slower than for FORMULA ,
+but it does become less efficient well inside the core, reaching FORMULA 
+at twice the time.
+Correspondingly, the total energies used for heating the core in the FORMULA 
+and FORMULA  cases are comparable.
+The bottom panel presents a case with more efficient fragmentation, FORMULA .
+The decay into the inner core is faster, but the clump completely
+disintegrates before it manages to make it into the very center.
+By simulating cases in which the clumps are assumed to merge when they collide,
+we find (not plotted) that the effect is negligible when the fraction of the
+energy deposited in the hot medium is FORMULA .
+Even in the extreme case where the colliding clumps are assumed
+to disappear without depositing any energy into the hot medium,
+the effect of mergers is rather small.
+Figure REF  shows that
+the clump mass is significantly below FORMULA  at all radii
+for any fragmentation scenario, with the BE stability increasing with increasing
+FORMULA . We also find that the stability is slightly decreasing with more
+efficient merging.
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+Figure REF  explores the effect of orbit eccentricity.
+As a function of decreasing FORMULA , from circular (FORMULA ) to radial
+(FORMULA ) orbits,
+the orbital decay rate and the fragmentation rate are both faster.
+This results in a higher heating rate in the core, but only by a factor
+less than three from circular to radial orbits.
+While for any eccentricity the clump mass is below FORMULA ,
+it is getting close, FORMULA , in the case of a radial
+orbit near the first passage through the center.
+When starting in a radial orbit at rest, instead of with
+an infall velocity FORMULA , the first entry to the core happens later,
+but it has no significant effect on the evolution once inside the core
+(not plotted).
+Figure REF  shows the dependence on clump mass for FORMULA .
+At FORMULA , the clump disintegrates well outside the core
+and deposits all its energy there. Such clumps cannot serve as heating agents
+for the core.
+Clumps in the range FORMULA  are all properly fragmenting,
+penetrating to the core and depositing their energy there.
+The time it takes for the orbit to decay is longer with increasing clump mass,
+but all the clumps in this mass range deposit most of the available
+gravitational energy in time, and they are BE stable at all times.
+At FORMULA , the orbit decay is slow so the clump barely makes
+it into the core in a Hubble time. Thus, only a fraction of the energy
+available in the potential well is deposited in the core during the multiple
+passages of the clump there. The total energy deposited, and its balance with
+the cooling rate, will be clarified in the next section
+when we consider a whole population of clumps given an accretion rate.
+For an initial clump of FORMULA , the clump mass is only slightly
+below FORMULA  when it enters the core.
+The orbit of an FORMULA  clump does not decay significantly
+in a Hubble time, so only about 10% of the energy available in the
+potential well is deposited. This may lead to insufficient total energy
+deposit for balancing the cooling. For an initial clump of FORMULA ,
+the clump mass is always above FORMULA .
+Figure REF  shows the dependence on halo virial mass for FORMULA .
+The times for fragmentation and orbital decay are increasing with halo mass.
+Still, the orbit does decay to inside the core in a Hubble time even for
+FORMULA , and the vast majority of the available gravitational
+energy is deposited in time.
+Figure REF  shows the average properties of the clump distribution as a
+function of radius in steady state from a simulation of our fiducial case.
+The mass density in clumps is comparable to that of the ambient gas near
+FORMULA . It is FORMULA  times lower at the virial radius,
+and it becomes an order of magnitude higher at the inner core.
+FIGURE 
+FIGURE 
+
+Simulations: Heating/Cooling Rate
+Our main results from the current simulations are expressed in terms of the
+gravitational heating rate versus the radiative cooling rate at every radius
+within the halo.
+The accretion rate of clumps is assumed to
+be a fraction FORMULA  of the total average cosmological accretion rate
+as approximated by eq. (REF ), with a fraction FORMULA  in hot gas.
+Figure REF  shows the actual heating and cooling rates for the
+fiducial case, clumps about FORMULA  in a halo of FORMULA .
+We see that the heating overwhelms the cooling by a factor
+of three or more at all radii.
+FIGURE 
+FIGURE 
+Figure REF  tests the sensitivity of the heating-to-cooling (H/Q) ratio
+to the fragmentation recipe, the orbits, and the presence of a dark-matter
+subhalo.
+With no fragmentation, or fragmentation to only a few fragments at a time,
+the H/Q ratio is 3 or more everywhere. With more efficient fragmentation,
+FORMULA , the heating is almost the same outside FORMULA , it is
+still winning outside FORMULA , but is barely sufficient inside
+FORMULA  (short dash, blue).
+When including the effect of mergers between clumps in a way that is
+most unfavorable to the cause of heating, namely when they are assumed
+to disappear with no additional energy deposited in the medium,
+FORMULA  is still of order unity even inside the core (dot-dash, magenta).
+The orbit dependence is weak — only a factor of two between radial
+and circular orbits. Even clumps that start on circular orbits end up beating
+the cooling by a factor of order two or more everywhere.
+The inclusion of dark-matter subhaloes
+makes only a negligible change for FORMULA .
+The effect is weak because of the
+separation of the gas and dark-matter components by ram-pressure
+near the first pericenter.
+We conclude that the results from the adopted fiducial case
+could be interpreted as fairly representative, with no great need to worry
+about the actual recipes adopted for the fragmentation and mergers,
+the orbits, or being embedded in dark-matter subhaloes.
+FIGURE 
+Figure REF  explores the H/Q ratio at the different radii
+as a function of clump mass, halo mass, or clump and hot gas mass fraction.
+The top panel confirms our estimate from §
+that in a halo of FORMULA 
+the effective clumps are limited to the range FORMULA -FORMULA .
+While clumps of FORMULA  do it in a single passage,
+clumps in the range FORMULA -FORMULA  provide the necessary heating
+via repeating passages at a given radius within the core.
+Nevertheless, the H/Q ratio for clumps in the effective range are very similar,
+rather insensitive to the actual clump mass.
+Note that FORMULA  clumps deposit enough energy in the core
+even though their orbits do not manage to decay into well inside
+the core in a Hubble time. Despite the fact that each of these clumps
+deposits only a fraction of the energy available in the potential well,
+the drag they exert collectively while passing repeatedly through the
+core transfers enough energy to balance the cooling rate, as argued in
+§REF .
+Clumps of FORMULA  fail to overcome the cooling in the inner halo;
+their weak deceleration by drag is not enough for a significant orbital
+decay, and the energy deposited during the transient passages through
+the core is below the cooling rate.
+Clumps of FORMULA 
+also fail; they cannot penetrate to the core
+because the drag they suffer in the outer halo and the associated
+fragmentation are too effective.
+The middle panel of Fig. REF  shows the dependence on halo mass for
+FORMULA  clumps.
+Recall that once the halo is less massive than
+the threshold for virial shock heating, FORMULA ,
+there is no two-phase medium,
+and the heating mechanism addressed here cannot work.
+The H/Q ratio is above unity at all radii for haloes of
+FORMULA  and above, as estimated in §.
+As seen before, FORMULA  everywhere for FORMULA ,
+relevant to big ellipticals or small groups.
+It rises to FORMULA  for cluster masses, FORMULA .
+Note that the heating efficiency in the inner core becomes roughly the same
+for FORMULA  and FORMULA  haloes. This is because of
+the weaker deceleration by drag and the slower fragmentation of the
+FORMULA  clumps in the former, where FORMULA  is higher.
+The bottom panel of Fig. REF  explores the dependence on the fractions
+of clump mass and hot gas mass, FORMULA  and FORMULA , assuming that the total
+gas fraction is FORMULA .
+We see that the H/Q ratio is above unity everywhere as long as
+FORMULA , or crudely FORMULA .
+FIGURE 
+FIGURE 
+Figure REF 
+summarizes our results by displaying the total heating to cooling
+ratio in the inner halo, FORMULA , as a function of halo mass
+and for different clump masses. Here, unlike in previous figures,
+we also show cases that deviate
+from the fiducial case by the values of the two  mass parameters.
+As seen before,
+gravitational heating by clumps with initial masses in the range
+FORMULA 
+overcomes the
+cooling in the cores of haloes of FORMULA  and above.
+We now learn, for example, that clumps of FORMULA  could in
+principle be effective in heating FORMULA  haloes.
+This is true, however, only when ignoring the upper limit imposed
+on FORMULA  by Bonnor-Ebert instability.
+We see that these massive clumps do deposit some energy in the cores of haloes
+below FORMULA , during their few quick passages through the core,
+but this is not enough for balancing the cooling rate there.
+At the small-mass end,
+it is interesting to see that clumps of FORMULA , which fail to
+heat the cores in haloes below FORMULA , do manage to heat
+the cores of rich cluster haloes FORMULA .
+This is because the strong confining pressure due to the high virial
+temperature compresses the clumps into smaller sizes with reduced
+surface area. This weakens the deceleration by drag and
+the corresponding fragmentation efficiency, and thus permits better
+penetration of these small clumps into the massive-halo cores.
+We also find that no clumps can overcome the cooling in the cores
+of FORMULA  haloes, despite the presence of
+shock-heated gas in halos above FORMULA .
+This is because the accretion rate into such haloes does not carry enough
+total power for overcoming the cooling rate, §.
+Figure REF  summarizes the constraints from the simulations
+in the FORMULA -FORMULA  plane,
+otherwise adopting the parameters of the fiducial case.
+The contours mark equal FORMULA  values as integrated inside the FORMULA  core.
+The lower limit on the halo mass for FORMULA  is robust near
+FORMULA , consistent with the estimates
+of § based on the global energy balance, and rather insensitive
+to the clump mass. This is because, in the range FORMULA ,
+the clumps manage to share with the ambient gas most of the energy available
+to them when falling deep into the potential well.
+In FORMULA  haloes, the requirement FORMULA  puts the
+lower limit for effective clumps at FORMULA ,
+decreasing to FORMULA  in haloes of
+FORMULA .
+The upper limit for effective drag is FORMULA  at
+FORMULA , rising steeply with halo mass.
+The lower, red contours at the top refer to equal FORMULA  values in simulations
+where clumps are eliminated once larger than the Bonnor-Ebert mass,
+eq. (REF ). The BE FORMULA  contour provides the practical constraint,
+requiring an upper limit of FORMULA  at
+FORMULA , which is rising slowly to FORMULA 
+at FORMULA .
+This is slightly different from the crude estimate
+of eq. (REF ), shown as a line with a small negative slope,
+because the simulations involve a distribution of masses
+and the Bonnor-Ebert instability does not necessarily occur exactly at FORMULA .
+As expected, the upper limit imposed by tidal disruption is somewhat
+weaker than the constraints imposed by FORMULA .
+Figure REF  summarizes the constraints in the FORMULA -FORMULA  plane
+at FORMULA . The minimum halo mass for gravitational quenching is now lower,
+FORMULA , similar to the estimate in §.
+The minimum clump mass for penetration is now smaller than it was at FORMULA 
+by an order of magnitude,
+as expected from the scaling with FORMULA  in eq. (REF ).
+The maximum clump mass for Bonnor-Ebert stability is only slightly smaller than
+its value at FORMULA , consistent with the scaling in eq. (REF ), where the FORMULA 
+dependence of FORMULA  via FORMULA  almost balances the
+FORMULA  dependence via FORMULA .
+The maximum mass for effective drag is now higher by an order of magnitude,
+as expected from the scaling with FORMULA  in eq. (REF ), and the
+strong dependence of FORMULA  on FORMULA  in eq. (REF ).
+The simulations thus confirm the estimates that the gravitational heating is
+more effective at higher redshifts, with the mass range broader both for
+the halo mass and the clump mass.
+
+Heating by Dynamical Friction
+Dynamical friction (DF) is another important channel of energy transfer
+between the accreting clumps and the host halo.
+Here, the whole bound subhalo mass, dominated by its dark-matter component,
+contributes to the heating. However, this is roughly balanced
+by the fact that only a small part of the energy is deposited in the
+ambient gas, the rest being spent on “heating" the host-halo dark matter.
+Being proportional to the square of the total satellite mass, the dynamical
+friction is significant only for subhaloes more massive than
+a few percents of their host halo mass, say FORMULA .
+Assuming as an upper limit on the DF effect
+that the whole potential gain of infall from the virial radius
+is deposited in the inner halo,
+as in §, the maximum possible effect of heating by DF
+can be estimated as in eq. (REF ), but with the gas-clump accretion
+rate FORMULA  replaced by FORMULA , where FORMULA  is the
+fraction of the total accreting mass in the form of haloes more massive
+than FORMULA . (We tentatively assume here that the energy is divided between
+the ambient gas and the dark matter in proportion to their masses, but in
+the simulation below we do take into account the different response of the
+gas to DF.) The maximum effect of DF heating can thus be
+crudely estimated by FORMULA  times the maximum effect of ram-pressure or
+shock heating by gas clumps.
+The factor FORMULA  can be estimated using the expressions derived by
+{{cite:c62c50a5-2478-4bb2-aced-966fda613092}} for the cosmological accretion rate
+based on the EPS formalism.
+The average total accretion rate onto a halo of mass FORMULA  at time FORMULA  is
+well approximated by
+FORMULA 
+with FORMULA . Here FORMULA  is the rms linear density fluctuation
+encompassing mass FORMULA  normalized by FORMULA ,
+and FORMULA  with FORMULA  the growth rate of linear
+density fluctuations in the assumed cosmology.
+In the relevant halo mass range, FORMULA , this approximation
+is slightly higher than the explicit estimate in eq. (REF ), but only by
+less than 15%.
+The part of this accretion that comes in haloes of mass below some mass
+FORMULA  is approximated by
+FORMULA 
+For a standard FORMULA CDM cosmology, halo masses FORMULA  in the range relevant
+for galaxies and clusters, and FORMULA  between 1% and 10% of FORMULA ,
+we obtain quite robustly FORMULA . This implies that the heating by
+DF can contribute a significant fraction of the total gravitational heating.
+The maximum effect of DF in terms of heating versus cooling
+can therefore be described in Fig. REF  by a curve similar to the curve
+shown for the total heating but a factor of two lower, implying
+that a most effective DF heating may by itself balance the overall
+cooling at FORMULA  in haloes of FORMULA .
+Based on such simple considerations and simplified simulations,
+the DF has indeed been argued to have an important overall effect on
+slowing down the cooling in clusters, though perhaps not enough for
+properly balancing the cooling rate in the cluster cores
+{{cite:89b46f03-2998-4303-a4cf-cd34895c921c}}, {{cite:9c1568d8-d52d-4cc5-9bb0-5bc8a9ea5a26}}, {{cite:d22a997a-2427-4f98-86a0-44d51eab7506}}.
+A similar conclusion can be obtained from the apparent failure of
+certain hydrodynamical simulations of massive haloes to prevent cooling flows
+in all cases {{cite:50aca558-900e-4144-8ef6-0cb6af83d178}}, {{cite:05fc356e-846e-4de1-9805-3f5f59210c53}}, {{cite:58b2ca53-1243-429b-ad34-b487b8d557cf}}. This is
+as long as they do not incorporate another heating source such as
+AGN feedback that is practically put by hand
+{{cite:43625509-06a4-4e97-9af2-0799296d7933}}.
+On the other hand, most of the cluster simulations by {{cite:fdee063e-3a9f-4991-a56f-8730d5c69ae2}}
+seem not to show substantial cooling flows (private communication with A.
+Kravtsov), which are somehow prevented by gravitational heating alone,
+without any additional energy source.
+Despite the fact that all these hydrodynamical simulations are expected
+to resolve the massive subhaloes that provide most of the DF work,
+the apparently conflicting results indicate that the dust has not settled
+yet on the actual role of DF heating. As far as heating by gas clumps,
+the current simulations clearly fail to resolve small
+enough gas clumps for the ram-pressure heating to play a major role.
+In order to complete our crude estimate for the possible role of heating
+by DF, we use simplified simulations similar to those described in
+§REF , where the response of the ambient gas to dynamical-friction
+is properly computed following {{cite:dffa17e3-ffcc-4260-8842-b0821d497381}}.
+Since our simulations do not incorporate tidal mass loss from the clumps
+or the subhaloes that may be attached to them, they tend to overestimate
+the effect of DF, and should therefore be interpreted only as upper limits
+on the role of DF, much like the energetics estimates discussed above.
+We perform simulations similar to those described in §,
+but with the accreting subhalo masses drawn at random from the mass function
+derived from the accretion rates in eq. (REF ) and eq. (REF ).
+Figure REF  shows the resulting FORMULA  ratio in the 10% halo core
+as a function of halo mass, compared to the FORMULA  shown earlier in
+Fig. REF  for our fiducial gas-clump model.
+We see that the DF heating can be as large as one third of the ram-pressure
+heating. Nevertheless, recall that the subhaloes providing the DF heating
+are automatically available in a standard cosmological accretion, while the
+origin of the population of gas clumps required for efficient ram-pressure
+heating is more speculative (§REF ).
+Figure REF  compares the maximum DF heating by a single subhalo of mass
+FORMULA  (with the tidal striping ignored) to the ram-pressure heating by
+a gas clump of mass FORMULA .
+We see that DF heating is negligible for the clumps that are relevant
+for ram-pressure heating, FORMULA ,
+but it becomes the dominant effect for massive subhaloes that are
+on the order of 1% of their host halo mass or larger.
+FIGURE 
+FIGURE 
+
+Discussion
+On the Physics of Dissipation
+The actual process of energy deposition by ram pressure should
+be investigated in more detail. This study can build upon the key results of
+{{cite:2813895e-165d-4c65-8320-ee6ae3be55bb}} and {{cite:e8b98a74-749b-4861-b9bf-bc50be86eef3}} that most of the ram-pressure
+drag work is deposited in the ambient gas rather than in the dense clumps.
+When a cold clump moves subsonically through the hot gas,
+the energy is deposited as kinetic energy.
+The population of clumps moving on different orbits create turbulence 
+on a scale comparable to the mean distance between clumps, which
+cascades down to the scale where viscous heating becomes efficient.
+If a non-negligible fraction of the energy is temporarily
+stored in the turbulence reservoir it can have interesting consequences
+on the efficiency of clumps as quenching agents.
+The turbulence increases the effective pressure on scales larger
+than the mean separation between clumps, helping the halo gas expand
+in response to the clumpy accretion and hence slowing down its cooling rate.
+The turbulent component does not cool like the thermal component,
+and, since the clumps are smaller than the smallest eddies,
+the turbulence does not add to the pressure confining the clumps.
+Following {{cite:77a4cf0f-6398-48cb-8cff-9eb6bb956fab}}, in a steady state, with energy input
+rate per unit mass FORMULA  into eddies of scale FORMULA ,
+the energy stored in the turbulence per unit mass can be written as
+FORMULA , with FORMULA 
+[{{cite:2093ca7c-2f61-4eb5-b79e-4ea5a276a1bf}} and {{cite:01d72081-b1bc-4674-ba52-6cb6ca502274}}].
+The corresponding pressure is FORMULA .
+Using our simulations, we obtain at every radius the energy deposit rate
+FORMULA  and the mean clump separation FORMULA , and compute the ratio of
+FORMULA  to the thermal energy. This is plotted in Fig. REF .
+We find that this ratio, at FORMULA  say, ranges from FORMULA  to
+FORMULA  when the halo mass ranges from FORMULA  to FORMULA ,
+respectively.
+This crude estimate is on the same order of magnitude as
+results of hydrodynamical simulations {{cite:56412c13-f198-4029-896c-63d8dcc3b32f}}, {{cite:58b2ca53-1243-429b-ad34-b487b8d557cf}},
+perhaps indicating that clumpy accretion may play a non-negligible role
+in driving turbulence in these simulations.
+The non-negligible energy stored in turbulence at FORMULA 
+may reduce the lower limit for effective quenching to below the
+FORMULA  obtained without the turbulence reservoir.
+The fragmentation  of the gravitating clumps due to hydrodynamical
+instabilities should also be studied in more detail, following up on the
+pioneering work of {{cite:2813895e-165d-4c65-8320-ee6ae3be55bb}}. Simulating a single clump
+falling under gravity through ambient hot gas may be feasible immediately.
+Another challenge would be to investigate how the system of clumps
+may develop a steady-state mass function above a minimum mass due to the
+competing effects of fragmentation and coalescence
+{{cite:a2413156-9cf5-4867-9b18-b85f407292ca}}.
+Our estimates of the cooling rate were limited so far to the radiative losses
+from the smooth hot medium, but in a following study one should also evaluate
+the possible enhancements to the cooling rate associated with the clumps
+themselves and with the two-phase medium.
+One such cooling source is the gas stripped from the surface of the clump
+by ram pressure
+{{cite:4ed0e631-b5e9-4796-a9d8-46f44dbd6b83}}.
+This gas is expected to be at lower entropy than the ambient gas and
+therefore to radiate more efficiently.
+On the other hand, this energy loss may be limited by the coalescence of
+the stripped gas and small clumps back into bigger clumps {{cite:a2413156-9cf5-4867-9b18-b85f407292ca}}.
+Another potential source of energy loss from the hot medium is
+thermal conduction into the cold clumps, which strongly depends
+on the uncertain strength of the conductivity
+{{cite:8bf84cb7-619a-43d2-969f-b6e5a7a9d5f4}}.
+The Bonnor-Ebert analysis for the stability of the gas clumps against their
+own self gravity should be expanded to include thermal stability against
+the formation of a two-phase medium inside the clumps themselves,
+which is possible for particular values of metallicity
+{{cite:5e1a4e16-13b2-4705-8fa1-0cffb3efa2c4}}.
+This is potentially another route to star formation, which may weaken the
+effectiveness of the clumps as heating agents.
+
+On the Origin of Gas Clumps
+The origin of gas clumps in the desired mass range, containing a large
+enough fraction of the accreting gas, remains a key open issue
+for the feasibility of the model. At this point we only attempt a preliminary
+discussion of certain options.
+One possibility is that the gas clumps form embedded in the
+cosmological population of small dark-matter haloes that become subhaloes
+through a sequence of minor mergers building up the larger halo.
+For the gas clumps to be in the proper mass range for effective ram-pressure,
+FORMULA , the halo masses have to be in the range FORMULA .
+As long as an external ionizing flux is effective in keeping the gas at
+FORMULA K, even in the vicinity of big haloes where the density is
+FORMULA  above the universal mean, gas cannot accumulate in haloes
+less massive than FORMULA  {{cite:5c2eaec7-9565-40bc-b4ae-5f7bb153b61f}} and cannot
+survive evaporation from smaller haloes {{cite:dc44bbfc-5239-4eec-9754-d0e4804a781f}}, {{cite:00c8fed0-97f5-4cdd-8fd2-d8cdca4c0242}}, {{cite:fd16e147-8545-447c-9e13-6c891d70d84c}}.
+Thus, proper clumps can exist inside subhaloes only if the ionization
+is ineffective. This may be the case before the universe becomes reionized at
+FORMULA , by which most FORMULA  haloes are already in place
+{{cite:2a11fbd2-a17e-4e31-a243-05d3f4d78564}}.
+The photoionization may become ineffective again after FORMULA 
+{{cite:df64f135-313f-4849-89cb-972fcd469206}},
+or in the likely event that
+the dense clumps become shielded from the ionizing flux.
+If the clumps are not ionized and the environment is still
+partly expanding, the gas can cool adiabatically, which may allow it to
+remain bound even in small haloes.
+We estimated (§REF ) that
+even if the clumps come in as part of subhaloes, the dark
+component should not have a substantial effect on the role of the clumps
+as heating agents, since clumps in the relevant mass range would separate
+from their subhaloes by ram pressure before they enter the inner halo.
+Another, perhaps more relevant possibility is that the cold gas clumps
+fragment from the hot gas by thermal instability
+and establish a two-phase medium in pressure equilibrium.
+With the peak cooling rate at FORMULA  > FORMULA 104FORMULA >105FORMULA 1012MFORMULA Clumps can form by thermal instability as long as the cooling function
+FORMULA  is a decreasing function of FORMULA .
+This is valid for haloes with FORMULA K
+(for FORMULA solar metallicity), namely FORMULA  at FORMULA .
+This mechanism cannot provide the clumps necessary
+for heating rich clusters of galaxies, unless the clumps form in the cooler
+filaments outside the halo and then fall into the virial radius.
+{{cite:8bf84cb7-619a-43d2-969f-b6e5a7a9d5f4}} provide a detailed discussion of the formation and
+survival of such clumps, in the context of the formation of big disk galaxies
+in dark-matter haloes. They specifically address a lower limit to the
+clump mass due to thermal conduction, whose strength is parameterized
+by FORMULA , the fraction of the classical Spitzer conductivity {{cite:8154f79b-631a-41b1-a349-b1e030b49165}}.
+They estimate that conductivity would suppress the formation of small
+clumps and impose a lower limit of
+FORMULA 
+(MB04, eq. 31).
+This implies that if the conductivity is as high as
+FORMULA  {{cite:44f01535-13ad-4bb9-bbc3-c23c15533d0c}}, it would
+limit the mass range of effective clumps that could form by thermal
+instability inside virialized haloes of FORMULA 
+to FORMULA .
+On the other hand, if FORMULA  is significantly smaller, as expected in the
+presence of a uniform magnetic field {{cite:88c76d2e-a27c-416d-8828-d2addf71a1ad}},
+the minimum mass imposed by conductivity would have a weaker effect on
+the allowed mass range for effective clumps.
+The lower limit for clumps that could form inside the virial halo,
+with FORMULA  in eq. (REF ), is marked in Fig. REF .
+The minimum mass imposed by conductive evaporation 
+is smaller by an order of magnitude (MB04, eq. 36).
+Note that the limit of eq. (REF ) is not valid for the formation
+of clumps in the pancakes and filaments at the vicinity of haloes.
+One might expect that limits imposed by formation and survival arguments
+on the masses of cold gas clumps can lead to an enhancement of the gas fraction
+in clumps that lie in the mass range that allows effective heating by drag.
+For instance, a fraction of the cold gas that has been prevented by
+conductivity or coalescence from
+being in clumps much smaller than FORMULA  may find itself instead
+in more massive clumps, which can more effectively penetrate into the inner
+halo and heat it (§REF ).
+The gas in clumps above the stability threshold of FORMULA ,
+where stars can form, is likely to be removed by supernova feedback
+after the first starburst {{cite:8fefa808-b687-4fdc-8db5-d5d0058efde1}}, {{cite:e7261df0-c2f0-4cc2-aa7f-edf11f1fec0c}}, and thus be added to the
+reservoir of gas available for condensing into smaller, stable gas clumps
+that are more effective in drag-heating the gas.
+
+Where are the Clump Remnants?
+If FORMULA  cold gas clumps are responsible for
+quenching in haloes of FORMULA , one expects a total mass
+in clumps of FORMULA 
+acting over a Hubble time in each halo, and a small fraction of this mass
+in today's remnants of these clumps that are potentially detectable.
+This fraction should be significantly smaller than FORMULA , given that
+(a) the crossing time from the virial radius to the halo center is
+FORMULA  < FORMULA 0.2 tHubbleFORMULA 1013MFORMULA fc 0.2FORMULA Mc 10 M  yr-1 FORMULA{{cite:8bf84cb7-619a-43d2-969f-b6e5a7a9d5f4}} have argued that the observed population of
+High Velocity Clouds (HVCs) in the halo of the Milky Way {{cite:62f534c8-c892-44ce-8963-0531d568a38a}}
+or the Local Group {{cite:59794f4b-3ae6-42a4-b41b-17de106f00f0}}, {{cite:e4525521-fc57-45c9-bbce-282f777a395c}}
+is consistent in many ways with the required population of clumps.
+This includes the gas temperature
+of FORMULA K indicated by a median FWHM line width of FORMULA ,
+the estimated typical cloud size and mass of FORMULA ,
+the kinematics of the HVC population within the halo,
+and the estimated total number of a few thousands HVCs, implying a total
+mass of FORMULA  in a FORMULA  halo,
+in the ballpark of our model predictions.
+MB04 (§8) have also argued that the desired clumps may be detected at high
+redshift as the high column density absorption systems in quasar spectra,
+such as Lyman limit and CIV systems {{cite:3aa430d1-591e-4246-9fc3-274426647054}},
+which are observed to reside within the extended virial haloes of
+bright galaxies {{cite:11ccab8f-d250-48e0-b0b7-96f95e9f7f12}}.
+The remnants of the desired clumps may be detected as a minor component
+of cold gas in otherwise quenched ellipticals, groups and clusters.
+A large fraction of today's ellipticals contain non-negligible amounts
+of cold gas, detected by radio observations as HI or CO, at the level of
+FORMULA -FORMULA  per galaxy {{cite:63b18ae1-7fa1-47d2-b2a3-9619de5488a6}}.
+A significant amount of HI seems to be present in the inter-galactic medium
+inside groups of galaxies (L. Blitz, private communication).
+Ionized, warm gas detected in ellipticals {{cite:e7b6d420-3eec-44c1-968e-19bbb2d1efca}}, {{cite:666a12ab-ac4e-4945-8d56-f63bf28db6d3}}, {{cite:04864302-9ac7-4eda-9900-a960230878ba}},
+sometimes as LINERs, may be “the tip of the iceberg" indicating a
+significant component of neutral gas (S. Faber, private communication).
+Finally, the clump remnants may be associated with the “cold cores"
+detected in about half of the X-ray clusters, in which the temperature is
+slightly cooler than the virial temperature {{cite:332d4f51-ac86-4d9c-8763-67d47a371ea0}}.
+
+Conclusion
+We performed a preliminary feasibility study of a simple mechanism —
+gravitational heating by accretion — for long-term quenching
+in dark-matter haloes above a threshold mass FORMULA .
+Such quenching is desired for explaining the existence of
+red & dead elliptical galaxies
+and the lack of cooling flows in clusters of galaxies.
+It is now common wisdom that the halo gas is first heated to the
+virial temperature by a global shock once the halo grows above this threshold
+mass
+{{cite:b218c686-f943-414a-b7b6-994f02fbed1c}}, {{cite:690548af-87ed-48d3-ac9b-e82f03cb0709}}, {{cite:5aa48529-943a-4a92-99b3-80fee7a23f60}}.
+While the interaction of the accreting gas with the rapidly
+expanding shock is enough for long-term quenching in halos of
+FORMULA  {{cite:71606811-9a15-4672-a7da-f357a5867a3e}}, we addressed here the possibility
+that the long-term quenching maintenance in more massive haloes is due to the
+gravitational energy of cosmological accretion, being delivered to the
+inner-halo hot gas by cold
+flows, partly clumpy, via ram-pressure drag and local shocks
+as well as dynamical friction. A robust estimate reveals that
+with the average cosmological accretion rate onto haloes of
+FORMULA , the gravitational energy power available by gas infall
+into the bottom of the potential well can balance the overall radiative
+cooling losses.
+This is a necessary condition for effective heating, independent of
+the actual mechanism by which the energy is deposited in the inner hot gas.
+This estimate makes gravitational heating a viable competitor to the
+fashionable alternative of AGN feedback,
+and motivates a further study.
+We then addressed specifically the case of clumpy accretion,
+in which cold gaseous clumps are pressure confined by a hot medium.
+We found that this is a feasible quenching mechanism in haloes of
+a few times FORMULA  and above provided that the
+gas clumps are in the mass range FORMULA .
+Smaller clumps are slowed down by the ram-pressure drag and they
+disintegrate due to hydrodynamical
+instabilities before reaching the inner halo.
+They do not reach the core with a sufficient excess of kinetic energy.
+In addition, their formation could be suppressed by heat conductivity.
+On the other hand, gas clumps that are too massive do not transfer
+enough energy by ram-pressure drag in a Hubble time.
+Independently, they may stop being gaseous because they
+are unstable to collapse and star formation
+under their own self-gravity, and they are more susceptible to tidal
+disruption in the inner halo.
+By simulating the process with gas clumps of a proper mass,
+we confirmed that the heating rate can indeed
+balance the cooling rate throughout the whole halo,
+as long as FORMULA ,
+the gas inner density cusp
+is not steeper than FORMULA , and the mass fractions in cold
+clumps and in the hot ambient gas are of the same order of magnitude.
+The effect is stronger at higher redshifts, thus possibly affecting the
+core structure in a way that makes the maintenance easier also at later times.
+The cold flux into the center is expected not to introduce a cooling-flow
+problem by itself because the accelerated clumps carry into the center more
+energy per unit mass than the thermal energy of the hot medium and because they
+dissolve into the hot medium.
+We conclude that the gravitational quenching scenario has passed
+successfully several non-trivial preliminary feasibility tests.
+This refers in particular to the version where the energy is dissipated
+via rather low-mass cold gas clumps.
+The more massive dark-matter satellites can have a substantial
+additional contribution via dynamical friction.
+Many of the elements of the proposed scenario should be investigated
+in more detail via hydrodynamical simulations, where
+the challenge of properly resolving
+FORMULA  gas clumps in FORMULA  haloes is not trivial.
+While there have been preliminary attempts to resolve small clumps using SPH
+simulations {{cite:ac718eaf-c5e6-4ea6-8d71-67413c9e39de}},
+a proper treatment of the hydrodynamical instabilities associated with the
+clumps will probably require the use of an adaptive Eulerian-grid
+simulation technique {{cite:c19cd6be-ace3-42fc-84c4-dcbaf2fbfdb8}}.
+An immediate next step could be performed using hydrodynamical
+simulations, starting with the spherical code of {{cite:71606811-9a15-4672-a7da-f357a5867a3e}}.
+While the current study has been restricted to clumps falling into a
+static halo, it would be desirable to incorporate the dynamical
+response  of the halo gas to the over-heating in excess of the cooling rate.
+We expect the subsequent expansion of the gas
+to slow down the cooling and make the heating even more effective.
+In order to match the observed X-ray gas in massive haloes, the system
+will have to relax into a steady-state configuration with a constant-entropy
+core. It is possible that turbulence and convection may be the key
+stabilizing processes.
+In parallel, cosmological simulations that zoom in on massive haloes
+will allow an analysis of heating by the smoother, massive cold flows.
+These studies should reveal whether the observed entropy floor
+in cluster cores can indeed be reproduced by gravitational heating.
+If so, it may alleviate the need for special scenarios based on
+either smooth accretion after pre-collapse
+heating {{cite:a8495aef-c243-41b8-9ff5-a48cd47373cd}}, {{cite:16f559f0-0cb3-4e58-b4d8-9493a5c63cac}} or AGN feedback as mechanisms
+for enhanced entropy production.
+Based on our preliminary feasibility tests we conclude that gravitational
+heating, e.g., by clumpy accretion,
+is a viable scenario, complementary to AGN feedback as a long-term quenching
+mechanism. They are both triggered by the shock heating of the halo
+gas once above the threshold mass of FORMULA .
+While the energy transfer from the small black-hole scales to the
+extended halo gas requires a non-trivial and yet unknown physical mechanism,
+the appeal of the gravitational heating scenario is in its simplicity
+and availability. In particular,
+this mechanism provides a natural explanation for the characteristic
+halo mass above which quenching is effective,
+and for the uniform heating over the whole halo.
+The indicated dual role of cold flows in galaxy formation is fascinating.
+In haloes below FORMULA , where the cooling time is shorter than
+the relevant dynamical time, they seem to serve as the main source for
+disc buildup and star formation. In the massive haloes, where the cooling
+rate is slow, a stable virial shock can be sustained and the potential
+well (FORMULA ) is sufficiently deep,
+the cold flows, clumpy or smooth, can become the destructive quenching agents.
+They keep the halo gas hot and thus allow the suppression of gas supply to the
+central galaxy and the removal of gas from satellite galaxies.
+The potentially important role played by cold flows, both in the buildup of
+galaxies and in their subsequent quenching, deserves further detailed
+investigations.
+
+Acknowledgments
+We acknowledge stimulating discussions with and helpful comments by
+James Binney, Sandy Faber, Andrey Kravtsov, Doug Lin,
+Ari Maller, Gary Mamon, Chris McKee, Eyal Neistein, Jerry Ostriker,
+Nir Shaviv, Volker Springel and David Weinberg.
+This research has been supported by ISF 213/02, by GIF I-895-207.7/2005,
+by the Einstein Center at HU, and by NASA ATP NAG5-8218.

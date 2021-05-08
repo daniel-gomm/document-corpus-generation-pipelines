@@ -1,0 +1,264 @@
+
+Water Vapor and Hydrogen in the Terrestrial Planet Forming
+Region of a Protoplanetary Disk
+J.A. Eisner
+Department of Astronomy, 601 Campbell Hall,
+University of California, Berkeley, CA 94720
+Planetary systems, ours included, are formed in disks of dust and
+gas around young stars. Disks are an integral part of the star
+and planet formation process{{cite:dac14848-815e-4998-bef6-08648e216bad}}, {{cite:0fa29dfa-22d3-4c58-957a-25478e97d710}}, and knowledge of the
+distribution and temperature of inner disk material is
+crucial for understanding terrestrial
+planet formation{{cite:bb848f48-5385-4b02-bbec-2cb33d62fbd8}}, giant planet migration{{cite:c085e095-6b32-4a40-a8ee-517b84ed4749}},
+and accretion onto the central star{{cite:2adf426d-d61a-4895-b36b-bf181f679faf}}.
+While the inner regions of protoplanetary disks in nearby star forming regions
+subtend only a few nano-radians, near-IR interferometry
+has recently enabled the spatial resolution of these terrestrial
+zones. Most observations have probed only dust{{cite:8cbad1bf-9a44-42da-ac16-e61264f96353}},
+which typically dominates the near-IR emission.
+Here I report spectrally dispersed near-IR interferometric observations
+that probe gas (which dominates the mass and dynamics of the inner disk),
+in addition to dust, within one astronomical unit of the young star MWC 480.
+I resolve gas, including water vapor and atomic hydrogen, interior to the edge
+of the dust disk; this contrasts with results of previous spectrally dispersed
+interferometry observations{{cite:23989007-9790-4b35-9347-3790b7b4540d}}, {{cite:1173600b-09e3-4b8c-84f7-f471c6783bc9}}.
+Interactions of this accreting gas with migrating planets may lead to
+short-period exoplanets like those detected around main-sequence
+stars{{cite:c085e095-6b32-4a40-a8ee-517b84ed4749}}. The observed water vapor is likely produced by the
+sublimation of migrating icy bodies{{cite:ac713dd6-4330-48aa-8046-17731e1f3908}}, and provides a potential
+reservoir of water for terrestrial planets{{cite:95227938-d9fb-442b-8f99-0d96d1f02c30}}.
+I obtained observations with a new grism{{cite:a781c5e8-8dd2-4721-9199-816c2cb05772}}
+(a dispersive element consisting of a diffraction grating
+on the vertex of a prism)
+at the Keck Interferometer{{cite:37049ceb-b789-437a-8ae3-5385ff7ec975}}, {{cite:f998e0fb-18b1-4c87-94e1-311c7c609bd6}}
+that show, for the first time, evidence of spatially resolved gaseous
+spectral-line emission interior to the edge of the dusty disk around a young
+star, MWC 480. My observations provide a
+spectral dispersion of FORMULA  from 2.0 to 2.4 FORMULA m wavelength,
+and an angular resolution of approximately 1 milli-arcsecond
+(mas; 1 mas FORMULA  5 nano-radians), which is FORMULA  astronomical units
+(AU) at the 140 parsec distance to the target (the source is located in the
+Taurus-Auriga star forming complex).
+MWC 480 has a stellar mass of FORMULA  MFORMULA , an age of
+FORMULA  Myr, and a circumstellar
+disk of dust and gas in Keplerian rotation{{cite:d3774612-6612-404e-b28e-3f989e30e16c}}. Previous
+observations found that the dusty component of the disk extended to within
+FORMULA  AU of the central star{{cite:1536d1b4-1f8d-49c6-87a8-d9c8753a115e}}, {{cite:504990d1-4868-4d3b-b3ec-fa380f847023}}, and suggested
+the presence of hot gaseous emission at even smaller stellocentric
+radii{{cite:1c2e8454-a5e9-44a5-82fb-0c4741067036}}. My observations confirm these suggestions, and
+resolve hydrogen gas and water vapor in the inner disk.
+My interferometry data provide a measurement of the angular size of the
+circumstellar emission from MWC 480 as a function of wavelength (Figure 1).
+The spectral dependence of the angular size indicates a radial temperature
+gradient. Since cooler material emits relatively more radiation
+at longer wavelengths, an outwardly decreasing temperature gradient yields
+an increasing fraction of emission from larger radii, and hence a larger
+angular size, at longer wavelengths.
+The temperature gradient probably arises from multiple components at different
+stellocentric radii{{cite:1c2e8454-a5e9-44a5-82fb-0c4741067036}}: warm dust at radii where temperatures
+approach the dust sublimation temperature, and hotter gas at smaller radii.
+Figure 1 also shows more compact emission at 2.165 FORMULA m relative
+to the surrounding continuum. This dip corresponds to the wavelength of the
+BrFORMULA  electronic transition (FORMULA ) of hydrogen.
+The BrFORMULA  emission observed from MWC 480 traces very hot
+gas (FORMULA  K) that has recently recombined from
+ionized hydrogen{{cite:c9a9af22-361e-4384-8747-bd18534f88a5}}, presumably in the inner
+reaches of an accretion column.
+To match the features of Figure 1, I constructed a simple physical model and
+fitted it directly to the measured FORMULA  and fluxes. The model
+accounts for emission of the unresolved central star, circumstellar
+continuum emission from hot gas, spectral-line emission from hydrogen
+(BrFORMULA ), and continuum emission from warm dust.
+I take each emission component to be a uniform ring whose
+width is 20% of its radius. This multiple-ring model approximates a
+continuous disk where dust, gas, and individual gaseous atoms or molecules
+contribute emission at different size scales. It has been shown previously
+that ring models provide reasonable approximations to more complex
+models of inner disk regions{{cite:1536d1b4-1f8d-49c6-87a8-d9c8753a115e}}, {{cite:8ff17b3b-a3f9-4a7d-b442-64f8e245bc88}}.
+I also assume that the gaseous continuum and BrFORMULA  emission originate
+from stellocentric radii smaller than 0.1 AU; given the FORMULA  mas angular
+resolution of my observations, I can not accurately distinguish
+between smaller radii, although I can rule out larger radii.
+As indicated in Figure 2,
+the model fits the data well over most of the spectral bandpass.
+However, there are substantial deviations between the model predictions
+and the data in the region between 2.0 and 2.1 FORMULA m (particularly for the
+fluxes). These deviations suggest the presence of hot water vapor, which has
+substantial opacity from 2.0 to 2.1 FORMULA m, in the inner disk
+of MWC 480. I include water vapor in the model by adding a ring of
+material with the opacity of water vapor{{cite:4eed64bc-70a9-48d1-b8e8-02b38ea9a7c8}}. The superior quality
+of the fit when water is included clearly demonstrates the presence of HFORMULA O
+in the inner disk of MWC 480 (for further arguments why the model
+must include water vapor emission in order to match the data, see the
+Supplementary Information section).
+The best-fit model includes
+compact gaseous continuum emission with a temperature of
+FORMULA  K and BrFORMULA  emission
+that adds FORMULA  to this gaseous continuum flux at 2.165 FORMULA m; these
+components are situated at stellocentric radii FORMULA  AU. Water vapor
+emission is located at a radius of FORMULA  AU. The temperature of
+this material is FORMULA  K and the column density is
+FORMULA  cmFORMULA . Dust emission
+originates from a radius of FORMULA  AU and has a temperature of
+FORMULA  K. Quoted 1FORMULA 
+uncertainties are quadrature sums of statistical
+uncertainties in the fits and assumed 5% systematic errors.
+I illustrate the basic geometry of the innermost regions of MWC 480 in
+Figure 3. As inferred from the data, gaseous emission is found at
+substantially smaller stellocentric radii than the dust. The inner edge of the
+dust disk lies at FORMULA  AU, where the disk temperature approaches the
+sublimation temperature of silicate dust{{cite:39b6dd0e-e1cc-4620-a0eb-4da9353886bb}}.
+Because I also include contributions from gas in my analysis, the inferred
+dust size is larger, and the temperature lower, than in previous work where
+only dust emission was considered{{cite:1536d1b4-1f8d-49c6-87a8-d9c8753a115e}}, {{cite:504990d1-4868-4d3b-b3ec-fa380f847023}}.
+Emission from HFORMULA O is
+found at FORMULA  AU, and hot gaseous continuum and BrFORMULA  emission
+at still smaller radii (FORMULA  AU).
+The observed BrFORMULA  emission probably originates in an accretion column,
+near the shock formed when infalling material
+impacts high latitude regions of the star{{cite:2adf426d-d61a-4895-b36b-bf181f679faf}}, {{cite:e7bd18cb-fa45-42ad-9394-dcee2ff3a9d8}}, {{cite:fe5f46a2-abea-4083-a3be-e35b6afc56fb}}.
+My results substantiate models of inner disk structure
+proposed previously for similar star+disk systems{{cite:e13bf011-38cf-44ae-88c8-5b2e4f7af62e}}.
+Comparison with these models suggests that
+in order to reproduce the ratio of flux in the gas and dust components
+determined here (FORMULA ), a mass accretion rate FORMULA 10-7 FORMULAFORMULA -1 FORMULAFORMULA The finding that gaseous emission, and BrFORMULA  emission in particular,
+lies within the edge of the dusty component in protoplanetary disks contrasts
+with previous interferometric studies of young stars.
+Previous work found the BrFORMULA  emission to
+lie at radii equal to or larger than the dust, implying an origin of the
+emission in an outflowing wind{{cite:23989007-9790-4b35-9347-3790b7b4540d}}, {{cite:1173600b-09e3-4b8c-84f7-f471c6783bc9}}.
+The differing results
+for MWC 480 and the two previously observed sources may stem from
+different luminosities of the objects. MWC 480 is orders of magnitude
+less luminous than MWC 297{{cite:1536d1b4-1f8d-49c6-87a8-d9c8753a115e}}, for which the BrFORMULA  emission
+is more extended than the dust emission{{cite:23989007-9790-4b35-9347-3790b7b4540d}}, and approximately half
+as luminous at HD 104237{{cite:e3d5fb22-8e78-4f25-b0d9-8f5b3425e844}}, for which the BrFORMULA  and dust
+emission have comparable size scales{{cite:1173600b-09e3-4b8c-84f7-f471c6783bc9}}. BrFORMULA  emission
+probably traces both accreting and outflowing components in all of these
+sources to some extent, but the accretion appears to increasingly dominate the
+emission for lower-luminosity stars.
+The distribution of gas at stellocentric radii FORMULA  AU in the inner disk of
+MWC 480 shows that material is present in this protoplanetary disk at radii
+comparable to the semi-major axes of short-period exoplanets{{cite:e521276e-a456-4671-9fc4-c76634c83c68}}.
+This finding supports the
+hypothesis that giant planet migration is halted in resonances with the
+inner edge of the gaseous disk{{cite:c085e095-6b32-4a40-a8ee-517b84ed4749}}, {{cite:dc971614-41ff-44be-b82c-78faa859c91c}}. Future observations of
+gaseous disk truncation radii in solar-type T Tauri stars will enable
+direct comparison with exoplanets, which are predominantly found around
+solar-type stars.
+The presence of water vapor in the inner regions of the
+protoplanetary disk surrounding MWC 480 constrains how water
+(and other material) is transported in the disk terrestrial zone.
+Because water beyond the ice-line is in solid form, a concentration gradient
+tends to push water vapor out of the inner disk; the fact that I observe
+this inner disk vapor suggests continual replenishment through the sublimation
+of inwardly migrating icy bodies{{cite:ac713dd6-4330-48aa-8046-17731e1f3908}}. Water vapor in disk
+terrestrial regions may also enable the in situ formation of
+water-rich planets via adsorption of water onto dust grains and subsequent
+growth of these water-laden grains into planetesimals{{cite:95227938-d9fb-442b-8f99-0d96d1f02c30}}.
+Finally, as one of the dominant gaseous opacity sources in the near-IR,
+water vapor can provide an excellent tracer of the temperature and
+velocity structure of inner disk gas{{cite:0430e315-3fff-4cba-abab-dc61f21bc05d}}.
+
+Data presented herein were obtained at the W.M. Keck Observatory from
+telescope time allocated to the National Aeronautics and Space Administration
+through the agency's scientific partnership with the California Institute of
+Technology and the University of California. The Observatory was made possible
+by the generous financial support of the W.M. Keck Foundation. I thank the
+entire Keck Interferometer team for their invaluable contributions to these
+observations. I also acknowledge input into this work (and this manuscript)
+from R. Akeson, E. Chiang, A. Glassgold, J. Graham, J. Najita, and R. White.
+The author is supported by a Miller Research Fellowship.
+Competing Interests
+The author declares that he has no
+competing financial interests.
+Correspondence
+Correspondence and requests for materials
+should be addressed to J.A.E.
+(email: jae@astro.berkeley.edu).
+ FIGURE
+Fig. 1.
+Angular size of the near-IR emission from MWC 480 as a function of
+wavelength. Sizes are calculated from squared visibility measurements
+(FORMULA ) made with the Keck Interferometer grism on 12 Nov 2006.
+The FORMULA  (and fluxes; see Fig. 2), were calibrated using
+observations of unresolved stars of known spectral type and
+parallax{{cite:a781c5e8-8dd2-4721-9199-816c2cb05772}}. I applied these calibrations to unresolved
+“check stars” to test the calibration, and thereby estimated
+channel-to-channel uncertainties (FORMULA  standard deviation) in my flux and
+FORMULA  measurements of 3%.
+The shortest-wavelength data point has a larger uncertainty, because
+atmospheric water vapor absorption
+leads to lower photon counts in this channel; I estimate the uncertainty
+in this channel at FORMULA .
+There is also a systematic uncertainty of approximately 5% in the overall
+normalization of the data, due to errors in
+the absolute calibration{{cite:a781c5e8-8dd2-4721-9199-816c2cb05772}}.
+I assume that the emission morphology is a uniform disk,
+for which the measured FORMULA  are
+related to the angular diameter of the source, FORMULA , by
+FORMULA 
+where FORMULA  is the projected baseline separation of the two telescopes
+as seen by the source, FORMULA  is the wavelength, and FORMULA  is a first-order
+Bessel function. I remove the stellar contribution to the
+visibilities{{cite:1536d1b4-1f8d-49c6-87a8-d9c8753a115e}}, and the plotted sizes thus represent only
+the circumstellar emission. The angular size increases from
+2.0 to 2.4 FORMULA m, indicating multiple emission components: hot gas
+at small stellocentric radii and warm dust at larger radii{{cite:1c2e8454-a5e9-44a5-82fb-0c4741067036}}.
+In addition, the angular size
+is smaller at 2.165 FORMULA m, the wavelength where hot hydrogen gas emits in the
+BrFORMULA  line, than at adjacent continuum wavelengths.
+ FIGURE
+Fig. 2.
+Measured FORMULA  and fluxes, compared to the
+predictions of simple physical models. Plotted error bars indicate
+estimated 1FORMULA  (standard deviation) uncertainties of 3%; as noted
+above, the uncertainty in the shortest wavelength FORMULA  measurement is
+larger, approximately 10%.
+The dotted line shows the values computed for a model including continuum
+emission from warm dust and hot gas, and BrFORMULA  emission from hydrogen.
+This model reproduces the overall slopes seen in the data as well as the
+feature at 2.165 FORMULA m, but deviates from the data between 2.0 and 2.1
+FORMULA m. Hot water vapor contributes significant emission at these
+wavelengths{{cite:4eed64bc-70a9-48d1-b8e8-02b38ea9a7c8}}, and the solid line shows the predictions of a
+model that includes HFORMULA O. Because the HFORMULA O emission lies at a radius only
+slightly larger than that of the hot gaseous continuum, its effect on the
+visibilities is more subtle than its effect on the measured fluxes.
+Absorption due to terrestrial atmospheric
+water vapor affects the data in the shortest-wavelength channel, but not
+substantially in longer-wavelength channels since, in contrast to the
+hot water vapor in our model, water vapor at atmospheric temperature and
+pressure conditions lacks substantial opacity at these
+wavelengths{{cite:4eed64bc-70a9-48d1-b8e8-02b38ea9a7c8}}. The model including HFORMULA O fits the data well
+over the entire observed wavelength range, and yields substantially smaller
+residuals between model and data than the model without water vapor.
+We note that the inferred sizes of the emission components in our model
+are smaller than the uniform disk sizes plotted in Figure 1; this is
+due primarily to the different characteristic sizes for uniform disk and
+relatively narrower ring models{{cite:1536d1b4-1f8d-49c6-87a8-d9c8753a115e}}.
+Additional details of the modeling and fitting
+procedure can be found in previous work{{cite:1c2e8454-a5e9-44a5-82fb-0c4741067036}}.
+ FIGURE
+Fig. 3.
+The environment within 1 AU of the young star MWC 480.
+Dust in the inner disk around MWC 480 extends inward to
+approximately 0.3 AU (D), where the disk temperature becomes
+high enough to sublimate the dust. The ring-like appearance of the
+dust sublimation front is compatible with my data, and with physical models
+predicting a puffed-up and curved inner edge{{cite:89d287cc-c6f7-429b-8e6a-bbababff3c44}}, {{cite:8ff17b3b-a3f9-4a7d-b442-64f8e245bc88}}. Interior to
+the dust sublimation radius, gaseous material continues to accrete onto the
+young star (and may also be blown away in a tenuous
+wind{{cite:a835b79b-3011-472a-b0a4-b6ead99e9de0}}, which is not depicted).
+Based on a sketch for a similar young star{{cite:e13bf011-38cf-44ae-88c8-5b2e4f7af62e}},
+I have portrayed a continuous gaseous disk whose optical depth
+increases at smaller radii. I observe hot continuum
+emission from the hottest, densest gaseous material at stellocentric radii
+smaller than 0.1 AU
+(B) and spectral-line emission from hot water vapor at slightly larger
+radii (C). Finally, I observe BrFORMULA  emission at radii smaller
+than 0.1 AU, which traces hydrogen gas at high temperatures
+(FORMULA  K). I speculate that
+this emission arises in the hot accretion shock where infalling gas impacts
+the stellar surface (A). The FORMULA  mas angular resolution of
+my observations translates into a spatial resolution of approximately 0.1 AU
+at the distance to MWC 480.

@@ -1,0 +1,3015 @@
+
+
+
+
+Decomposition numbers for finite Coxeter groups
+C. Krattenthaler and T. W. Müller
+Decomposition numbers for finite Coxeter groups
+and generalised non-crossing partitions
+C. KrattenthalerFORMULA  and T. W. Müller
+Fakultät für Mathematik, Universität Wien,
+Nordbergstraße 15, A-1090 Vienna, Austria.
+WWW: http://www.mat.univie.ac.at/kratt.School of Mathematical Sciences, Queen Mary
+& Westfield College, University of London,
+Mile End Road, London E1 4NS, United Kingdom.WWW: http://www.maths.qmw.ac.uk/twm/.
+FORMULA Research partially supported
+by the Austrian Science Foundation FWF, grant S9607-N13,
+in the framework of the National Research Network
+“Analytic Combinatorics and Probabilistic Number Theory"
+Primary 05E15;
+Secondary 05A05 05A10 05A15 05A18 06A07 20F55 33C05
+root systems, reflection groups, Coxeter groups,
+generalised non-crossing partitions, annular non-crossing partitions,
+chain enumeration, Möbius function,
+FORMULA -triangle,
+generalised cluster complex, face numbers, FORMULA -triangle,
+Chu–Vandermonde summation
+
+Given a finite irreducible Coxeter group FORMULA , a positive integer FORMULA ,
+and types
+FORMULA  (in the sense of the classification of finite
+Coxeter groups), we compute the number of
+decompositions FORMULA  of a Coxeter element FORMULA  of
+FORMULA , such that FORMULA  is a Coxeter element in a subgroup of type
+FORMULA  in FORMULA , FORMULA , and such that the factorisation is
+“minimal" in the sense that the sum of the ranks of the FORMULA 's,
+FORMULA , equals the rank of FORMULA . For the exceptional types,
+these decomposition numbers have been computed by the first author in
+[“Topics in Discrete Mathematics,” M. Klazar et al. (eds.),
+Springer–Verlag, Berlin, New York, 2006, pp. 93–126]
+and [Séminaire Lotharingien Combin. 54 (2006),
+Article B54l]. The type FORMULA  decomposition
+numbers have been computed by Goulden and Jackson in [Europ. J.
+Combin. 13 (1992), 357–365], albeit using a somewhat different
+language. We explain how to extract the type FORMULA 
+decomposition numbers from results of
+Bóna, Bousquet, Labelle and Leroux [Adv. Appl. Math. 24
+(2000), 22–56] on map enumeration. Our formula for the type FORMULA 
+decomposition numbers is new. These results are then used to
+determine, for a fixed positive integer FORMULA  and fixed integers
+FORMULA , the number of multi-chains
+FORMULA  in Armstrong's generalised non-crossing
+partitions poset, where the poset rank of FORMULA  equals
+FORMULA , and where the “block structure" of FORMULA  is prescribed.
+We demonstrate that this result implies all known enumerative results on
+ordinary and generalised non-crossing partitions via appropriate
+summations. Surprisingly, this result on multi-chain enumeration
+is new even for the original
+non-crossing partitions of Kreweras. Moreover, the result allows one
+to solve the problem of rank-selected chain enumeration
+in the type FORMULA  generalised non-crossing partitions poset, which, in
+turn, leads to a proof of Armstrong's FORMULA  Conjecture in type
+FORMULA , thus completing a computational proof of the FORMULA  Conjecture
+for all types. It also allows to address another conjecture of Armstrong
+on maximal intervals containing a random multichain in the
+generalised non-crossing partitions poset.
+
+Introduction
+The introduction of non-crossing partitions for finite reflection
+groups (finite Coxeter groups) by Bessis {{cite:6f15fe92-d5df-414a-b725-13f394707709}} and
+Brady and Watt {{cite:3bb97b6c-7b3d-4614-bdd4-472ec8f239d2}}
+marks the creation of a new, exciting subject of combinatorial
+theory, namely the study of these new combinatorial objects which
+possess numerous beautiful properties, and seem to relate to
+several other objects of combinatorics and algebra, most notably to the
+cluster complex of Fomin and Zelevinsky {{cite:837b89dd-1d00-49c5-bd90-07d7ca4cad55}} (cf. {{cite:843f8b7e-75ec-48cf-8fa2-1d4032511f91}}, {{cite:ff848c33-35f9-4ecf-962f-701c6481aa9a}}, {{cite:41d14a83-1ebb-4c5b-a6a7-e352f9845fe1}}, {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}, {{cite:6f15fe92-d5df-414a-b725-13f394707709}}, {{cite:d8a82328-3364-422b-aec8-d2b8ea369dff}}, {{cite:6b90aee3-a649-4279-a57a-cfe633817769}}, {{cite:3bb97b6c-7b3d-4614-bdd4-472ec8f239d2}}, {{cite:323747f0-9d5a-4b68-ae70-5dbd93805722}}, {{cite:12912cd9-692c-4607-af9f-21ebfedaf4de}}, {{cite:09635bcb-c529-40ac-9b80-6451d597fe91}}).
+They reduce to
+the classical non-crossing partitions of Kreweras {{cite:f8c839c5-7e7f-4536-a31e-49643650ac71}} for
+the irreducible reflection groups of type FORMULA  (i.e., the
+symmetric groups), and to Reiner's {{cite:e87d7c96-35ad-44d8-9f8f-52f7ce2d21ab}} type FORMULA 
+non-crossing partitions for the irreducible reflections groups of
+type FORMULA . (They differ, however, from the type FORMULA  non-crossing
+partitions of {{cite:e87d7c96-35ad-44d8-9f8f-52f7ce2d21ab}}.) The subject
+has been enriched by Armstrong through introduction of his
+generalised non-crossing partitions for reflection groups in
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}. In the symmetric group case, these
+reduce to the FORMULA -divisible non-crossing partitions of
+Edelman {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}}, while they produce new combinatorial objects
+already for the reflection groups of type FORMULA . Again, these
+generalised non-crossing partitions
+possess numerous beautiful properties, and seem to relate to
+several other objects of combinatorics and algebra, most
+notably to the generalised cluster complex of Fomin and Reading
+{{cite:49e9b834-93b7-4e61-aaf4-1309587e05b8}} (cf. {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}, {{cite:35dfd141-77bd-4865-81bb-120666450673}}, {{cite:99cbb3b7-f45b-4447-a4c5-dcd8ff2f367a}}, {{cite:09635bcb-c529-40ac-9b80-6451d597fe91}}, {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}, {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}}, {{cite:bf79cbe5-6e65-44fa-bcdf-ec11eca84e0c}}, {{cite:204585d9-954d-486e-a1ef-f170be4e2f6f}}, {{cite:60109252-98ac-40bf-b996-0b24d8da6412}}).
+From a technical point of view, the main subject matter of the present paper is the
+computation of the number of certain factorisations of the Coxeter
+element of a reflection group. These decomposition numbers, as
+we shall call them from now on (see Section  for the
+precise definition),
+arose in {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}, where it was shown that they
+play a crucial role in the computation of enumerative invariants of
+(generalised) non-crossing partitions. Moreover, in these two papers
+the decomposition numbers for the exceptional reflection groups have
+been computed, and it was pointed out that the decomposition numbers
+in type FORMULA  (i.e., the decomposition numbers for the symmetric
+groups) had been earlier computed by Goulden and Jackson in
+{{cite:6911218b-0907-4345-bee6-2655dc510ffd}}. Here, we explain how the decomposition numbers in
+type FORMULA  can be extracted from results of Bóna, Bousquet, Labelle
+and Leroux {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}} on the enumeration of certain planar maps,
+and we find formulae for the decomposition numbers in type FORMULA ,
+thus completing the project of computing the decomposition numbers
+for all the irreducible reflection groups.
+The main goal of the present paper, however, is to access the
+enumerative theory of the generalised non-crossing
+partitions of Armstrong via these decomposition numbers.
+Indeed, one finds numerous enumerative results on ordinary and
+generalised non-crossing
+partitions in the literature (cf. {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}, {{cite:843f8b7e-75ec-48cf-8fa2-1d4032511f91}}, {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}, {{cite:6f15fe92-d5df-414a-b725-13f394707709}}, {{cite:d8a82328-3364-422b-aec8-d2b8ea369dff}}, {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}}, {{cite:f8c839c5-7e7f-4536-a31e-49643650ac71}}, {{cite:e87d7c96-35ad-44d8-9f8f-52f7ce2d21ab}}, {{cite:204585d9-954d-486e-a1ef-f170be4e2f6f}}):
+results on the total number of (generalised) non-crossing partitions of a given size,
+of those with a fixed number of blocks, of those with a given block
+structure, results on the number of (multi-)chains of a given length in a given poset
+of (generalised) non-crossing partitions, results on rank-selected
+chain enumeration (that is, results on the number of chains in
+which the ranks of the elements of the chains have been fixed), etc.
+We show that not only can all these results be rederived from
+our decomposition numbers, we are also able to find several new enumerative
+results. In this regard, the most general type of result that we find is
+formulae for the number of (multi-)chains FORMULA  in the poset of non-crossing partitions of type FORMULA ,
+FORMULA , respectively FORMULA , in which the block structure of FORMULA  is
+fixed as well as the ranks of FORMULA . Even the corresponding
+result in type FORMULA , for the non-crossing partitions of
+Kreweras, is new. Furthermore, from the result in type FORMULA ,
+by a suitable summation, we are able to find
+a formula for the rank-selected chain enumeration in the poset of
+generalised non-crossing partitions of type FORMULA , thus generalising
+the earlier formula of Athanasiadis and Reiner {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}} for the
+rank-selected chain enumeration of “ordinary"
+non-crossing partitions of type FORMULA . In conjunction with the
+results from {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}, this generalisation in turn
+allows us to complete a
+computational case-by-case proof of Armstrong's “FORMULA  Conjecture"
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} predicting
+a surprising relationship between a certain face count in the
+generalised cluster complex of Fomin and Reading and the Möbius
+function in the poset of generalised non-crossing partitions of
+Armstrong. (A case-free proof had been found earlier by Tzanaki in
+{{cite:60109252-98ac-40bf-b996-0b24d8da6412}}.)
+Our results allow us also to address another conjecture of Armstrong
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} on maximal intervals containing a random
+multichain in the poset of generalised
+non-crossing partitions. We show that the conjecture is indeed true
+for types FORMULA  and FORMULA , but that it fails for type FORMULA  (and
+we suspect that it will also fail for most of the exceptional types).
+We remark that a
+totally different approach to the enumerative theory of (generalised)
+non-crossing partitions is proposed in {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}}. This approach
+is, however, completely combinatorial and avoids, in particular,
+reflection groups. It is, therefore, not capable of
+computing our decomposition numbers nor anything else which is
+intrinsic to the combinatorics of reflection groups.
+A similar remark applies to {{cite:ce21bdfa-260b-4bd9-875e-fbb0caf1281f}},
+where a remarkable
+uniform recurrence is found for rank-selected chain enumeration
+in the generalised non-crossing partitions of any type.
+It could be used, for example, for verifying our result
+in Corollary REF  on the
+rank-selected chain enumeration in the generalised non-crossing
+partitions of type FORMULA , but it is not capable of
+computing our decomposition numbers nor of verifying results with restrictions
+on block structure.
+Our paper is organised as follows. In the next section we define the
+decomposition numbers for finite reflection groups from {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}},
+the central objects in our paper, together with a combinatorial
+variant, which depends on combinatorial realisations of non-crossing
+partitions, which we also explain in the same section.
+This is followed by an intermediate
+section in which we collect together some auxiliary results that will be needed
+later on. In Section , we recall Goulden and Jackson's
+formula {{cite:6911218b-0907-4345-bee6-2655dc510ffd}} for the full rank decomposition numbers of type
+FORMULA , together with the formula from {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}} that
+it implies for the decomposition numbers of type FORMULA  of arbitrary rank.
+The purpose of Section  is to explain how formulae for
+the decomposition numbers of type FORMULA  can be extracted from results
+of Bóna, Bousquet, Labelle and Leroux in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}. The type
+FORMULA  decomposition numbers are computed in Section . The
+approach that we follow is, essentially, the approach of Goulden and
+Jackson in {{cite:6911218b-0907-4345-bee6-2655dc510ffd}}: we translate the counting problem into the
+problem of enumerating certain maps. This problem is then solved by a
+combinatorial decomposition of these maps, translating the
+decomposition into a system of equations for corresponding generating
+functions, and finally solving this system with the help of the
+multidimensional Lagrange inversion formula of Good.
+Sections – form the “applications part" of the paper.
+In the preparatory Section ,
+we recall the definition of the generalised non-crossing
+partitions of Armstrong, and we explain the combinatorial
+realisations of the generalised non-crossing partitions for the
+types FORMULA , FORMULA , and FORMULA  from {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} and
+{{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}}. The bulk of the applications is contained in
+Section , where we present three theorems,
+Theorems REF , REF , and REF , on the
+number of factorisations of a Coxeter element of type
+FORMULA , FORMULA , respectively FORMULA , with less stringent restrictions on
+the factors than for the decomposition numbers. These theorems result
+from our formulae for the (combinatorial) decomposition numbers upon
+appropriate summations. Subsequently, it is shown that the corresponding
+formulae imply all known enumeration results on non-crossing
+partitions and generalised non-crossing partitions, plus several new
+ones, see Corollaries REF , REF , REF –REF 
+and the accompanying remarks. Section  presents the
+announced computational proof of the FORMULA  (ex-)Conjecture for type
+FORMULA , based on our formula in Corollary REF  for the
+rank-selected chain enumeration in the poset of generalised
+non-crossing partitions of type FORMULA , while Section 
+addresses Conjecture 3.5.13 from {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}, showing that it does
+not hold in general since it fails in type FORMULA .
+In the final
+Section  we point out that the decomposition numbers do
+not only allow one to derive enumerative results for the generalised
+non-crossing partitions of the classical types, they also provide all the
+means for doing this for the exceptional types. For the convenience
+of the reader, we list the values of the decomposition numbers for
+the exceptional types that have been computed in {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}
+in an appendix.
+In concluding the introduction, we want to attract the reader's
+attention to the fact that many of the formulae presented here are
+very combinatorial in nature (see Sections , ,
+). This raises the natural question as to whether it is
+possible to find combinatorial proofs for them. Indeed, a
+combinatorial (and, in fact, almost bijective) proof of the formula
+of Goulden and Jackson, presented here in Theorem REF , has
+been given by Bousquet, Chauve and Schaeffer in {{cite:07d0d4a7-1a17-4583-97e3-5d86d4062b2d}}.
+Moreover, most of the proofs for the known enumeration results on
+(generalised) non-crossing partitions presented in
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}, {{cite:843f8b7e-75ec-48cf-8fa2-1d4032511f91}}, {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}, {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}}, {{cite:e87d7c96-35ad-44d8-9f8f-52f7ce2d21ab}} are combinatorial. On the other
+hand, to our knowledge so far nobody has given a combinatorial proof
+for Theorem REF , the formula for the decomposition numbers of
+type FORMULA , essentially due to Bóna, Bousquet, Labelle and Leroux
+{{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}, although we believe that this should be possible by
+modifying the ideas from {{cite:07d0d4a7-1a17-4583-97e3-5d86d4062b2d}}. There are also other formulae
+in our paper (see e.g. Corollaries REF  and REF ,
+Eqs. (REF ) and (REF )) which seem amenable to
+combinatorial proofs.
+However, to find combinatorial proofs
+for our type FORMULA  results (cf. in particular Theorem REF .(ii)
+and Corollaries REF –REF )
+seems rather hopeless to us.
+
+Decomposition numbers for finite Coxeter groups
+In this section, we introduce the decomposition numbers from
+{{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}, which are (Coxeter) group-theoretical in nature,
+plus combinatorial variants for Coxeter groups of types FORMULA  and
+FORMULA , which will be important in combinatorial applications.
+These variants depend on the combinatorial realisation of
+these Coxeter groups, which we also explain here.
+Let FORMULA  be a finite root system of rank FORMULA . (We refer the reader to
+{{cite:01120073-0283-489d-8f50-30c2fe2a2950}} for all terminology on root systems.)
+For an element FORMULA , let FORMULA 
+denote the corresponding reflection in the central hyperplane perpendicular to
+FORMULA . Let FORMULA  be the group generated by these reflections.
+As is well-known (cf. e.g. {{cite:01120073-0283-489d-8f50-30c2fe2a2950}}),
+any such reflection group is at the same time a
+finite Coxeter group, and all finite Coxeter groups can be realised
+in this way. By
+definition, any element FORMULA  of FORMULA  can be represented as a product
+FORMULA , where the FORMULA 's are reflections. We call
+the minimal number of reflections which is needed for such a
+product representation the absolute length of FORMULA , and we
+denote it by FORMULA . We then define the absolute order on
+FORMULA , denoted by FORMULA , via
+FORMULA 
+As is well-known and easy to see,
+this is equivalent to the statement that every
+shortest representation of FORMULA  by reflections
+occurs as an initial segment in some shortest product representation
+of FORMULA  by reflections.
+Now, for a finite root system FORMULA  of rank FORMULA , types
+FORMULA  (in the sense of the classification of finite
+Coxeter groups), and a Coxeter element FORMULA ,
+the decomposition number FORMULA  is defined
+as the number of “minimal" products FORMULA 
+less than or equal to FORMULA  in absolute order,
+“minimal" meaning that
+FORMULA ,
+such that, for FORMULA , the
+type of FORMULA  as a parabolic Coxeter element is FORMULA .
+(Here, the term “parabolic Coxeter element" means a Coxeter element
+in some parabolic subgroup.
+The reader should recall that it follows from {{cite:6f15fe92-d5df-414a-b725-13f394707709}}
+that any element FORMULA  is indeed a Coxeter element in a parabolic subgroup
+of FORMULA . By definition, the type of FORMULA  is the type of this
+parabolic subgroup. The reader should also note that, because of the
+rewriting
+FORMULA 
+any FORMULA  in such a minimal product FORMULA  is
+itself FORMULA .) It is easy to see that
+the decomposition numbers are independent
+of the choice of the Coxeter element FORMULA .
+(This follows from the well-known fact that any two Coxeter elements
+are conjugate to each other; cf. {{cite:01120073-0283-489d-8f50-30c2fe2a2950}}.)
+The decomposition numbers satisfy several linear relations between
+themselves. First of all,
+the number FORMULA  is independent
+of the order of the types FORMULA ; that is, we have
+FORMULA 
+for every permutation FORMULA  of FORMULA . This is, in fact, a
+consequence of the rewriting (REF ).
+Furthermore, by the definition of these numbers, those of “lower rank" can be
+computed from those of “full rank." To be precise, we have
+FORMULA 
+where the sum is taken over all types FORMULA  of rank FORMULA  (with FORMULA  denoting the rank of the root
+system FORMULA  of type FORMULA , and FORMULA  still denoting the rank of the
+fixed root system FORMULA ; for later use we record that
+FORMULA 
+for any parabolic Coxeter element FORMULA  of type FORMULA ).
+The decomposition numbers for the exceptional types have been
+computed in {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}. For the benefit of the reader,
+we reproduce these numbers in the appendix. The
+decomposition numbers
+for type FORMULA  are given in Section , the ones for type
+FORMULA  are computed in Section , while the ones for type
+FORMULA  are computed in Section .
+Next we introduce variants of the above decomposition numbers for
+the types FORMULA  and FORMULA , which depend on the combinatorial
+realisation of the Coxeter groups of these types.
+As is well-known,
+the reflection group FORMULA  can be realised as the
+symmetric group FORMULA  on FORMULA .
+The reflection groups FORMULA 
+and FORMULA , on the other hand, can be realised as
+subgroups of the symmetric group on FORMULA  elements. (See e.g. {{cite:9ebf9b4d-7a4f-4064-ab3a-1b4b25165ced}}.)
+Namely, the reflection group FORMULA  can be realised as the subgroup
+of the group of all permutations FORMULA  of
+FORMULA 
+satisfying the property
+FORMULA 
+(Here, and in what follows, FORMULA 
+is identified with FORMULA  for all FORMULA .) In this realisation, there is an
+analogue of the disjoint cycle decomposition of permutations. Namely,
+every FORMULA  can be decomposed as
+FORMULA 
+where, for FORMULA ,
+FORMULA  is of one of two possible types of “cycles":
+a type FORMULA  cycle,
+by which we mean a permutation of the form
+FORMULA 
+or a type FORMULA  cycle, by which we mean a permutation of the form
+FORMULA 
+FORMULA .
+(Here we adopt notation from {{cite:3bb97b6c-7b3d-4614-bdd4-472ec8f239d2}}.)
+In both cases, we call FORMULA  the length of the “cycle."
+The decomposition (REF ) is unique up to a reordering of the
+FORMULA 's.
+We call a type FORMULA  cycle of length FORMULA  of
+combinatorial type FORMULA , while we call a type FORMULA  cycle of length
+FORMULA  of combinatorial type FORMULA , FORMULA .
+The reader should observe that,
+when regarded as a parabolic Coxeter element, for FORMULA  a type FORMULA  cycle
+of length FORMULA  has type
+FORMULA , while a type FORMULA  cycle of length FORMULA  has type
+FORMULA . However, a type FORMULA  cycle of length 1, that
+is, a permutation of the form FORMULA , has type FORMULA  when
+regarded as a parabolic Coxeter element, while we say that it has
+combinatorial type FORMULA . (The reader should recall that, in the
+classification of finite Coxeter groups, the type FORMULA  does not
+occur, respectively, that sometimes FORMULA  is identified with FORMULA .
+Here, when we speak of “combinatorial type," then we do distinguish
+between FORMULA  and FORMULA . For example, the “cycles"
+FORMULA  or
+FORMULA  have combinatorial type FORMULA ,
+whereas the cycles FORMULA  or FORMULA  have
+combinatorial type FORMULA .)
+As Coxeter element for FORMULA ,
+we choose
+FORMULA 
+Now, given combinatorial types
+FORMULA , each of which being a product of FORMULA 's and
+FORMULA 's, FORMULA ,
+the combinatorial decomposition number
+FORMULA  is defined
+as the number of minimal products FORMULA 
+less than or equal to FORMULA  in absolute order, where
+“minimal" has the same meaning as above,
+such that for FORMULA  the combinatorial type of FORMULA  is FORMULA .
+Because of (REF ), the combinatorial decomposition numbers
+FORMULA  satisfy also (REF )
+and (REF ).
+The reflection group FORMULA  can be realised as the subgroup
+of the group of all permutations FORMULA  of FORMULA 
+satisfying (REF ) and the property that an even number of
+elements from FORMULA  is mapped to an element of negative
+sign. (Here, the elements FORMULA  are considered to have sign
+FORMULA , while the elements FORMULA  are considered to have
+sign FORMULA .) Since FORMULA  is a subgroup of FORMULA , and since the
+above realisation of FORMULA 
+is contained as a subset in the realisation of FORMULA 
+that we just described,
+any FORMULA  can be decomposed as in (REF ),
+where, for FORMULA ,
+FORMULA  is either a type FORMULA  or a type FORMULA  cycle.
+Requiring that FORMULA  is in the subgroup FORMULA  of FORMULA  is equivalent
+to requiring that there is an even number of type FORMULA  cycles in the
+decomposition (REF ).
+Again, the decomposition (REF ) for FORMULA 
+is unique up to a reordering of the
+FORMULA 's.
+As Coxeter element, we choose
+FORMULA 
+We shall be entirely concerned with elements FORMULA  of FORMULA  which
+are less than or equal to FORMULA . It is not difficult to see (and it is
+shown in {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}) that the unique factorisation of
+any such element FORMULA  has either 0 or 2 type FORMULA  cycles, and in
+the latter case one of the type FORMULA  cycles is FORMULA .
+In this latter case, in abuse of terminology, we call the product of
+these two type FORMULA  cycles,
+FORMULA 
+say, a “cycle" of combinatorial type FORMULA . More generally, we
+shall say for any product of two disjoint type FORMULA  cycles of the form
+FORMULA 
+that it is a “cycle" of combinatorial type FORMULA .
+The reader should observe that,
+when regarded as parabolic Coxeter element, for FORMULA  an element
+of the form (REF ) has type
+FORMULA . However, if FORMULA , it has type FORMULA  when
+regarded as parabolic Coxeter element, while we say that it has
+combinatorial type FORMULA , and, if FORMULA , it has type FORMULA  when
+regarded as parabolic Coxeter element, while we say that it has
+combinatorial type FORMULA . (The reader should recall that, in the
+classification of finite Coxeter groups, the types FORMULA  and FORMULA  do not
+occur, respectively, that sometimes FORMULA  is identified with FORMULA ,
+FORMULA  being identified with FORMULA .
+Here, when we speak of “combinatorial type," then we do distinguish
+between FORMULA  and FORMULA , and between FORMULA  and FORMULA .)
+Now, given combinatorial types
+FORMULA , each of which being a product of FORMULA 's and
+FORMULA 's, FORMULA ,
+the combinatorial decomposition number
+FORMULA  is defined
+as the number of minimal products FORMULA 
+less than or equal to FORMULA  in absolute order, where
+“minimal" has the same meaning as above,
+such that for FORMULA  the combinatorial type of FORMULA  is FORMULA .
+Because of (REF ), the combinatorial decomposition numbers
+FORMULA  satisfy also (REF )
+and (REF ).
+
+Auxiliary results
+In our computations in the proof of Theorem REF , leading to the determination
+of the decomposition numbers of type FORMULA ,
+we need to apply
+the Lagrange–Good inversion formula {{cite:e8c92cad-0e61-4639-b5cb-e4bacfe0e8fb}}
+(see also {{cite:c5634761-ab47-47a9-a127-384655bd8a34}} and the references cited therein).
+We recall it here for the convenience of the reader. In doing
+so, we use standard multi-index notation. Namely, given a positive
+integer FORMULA , and vectors FORMULA  and
+FORMULA , we write
+FORMULA  for FORMULA .
+Furthermore, in abuse of notation, given a formal power series FORMULA  in FORMULA 
+variables, FORMULA  stands for
+FORMULA . Moreover, given FORMULA  formal power series
+FORMULA  in FORMULA  variables, FORMULA  is short for
+FORMULA 
+Finally, if FORMULA  is another vector, then FORMULA 
+is short for FORMULA . Notation such as FORMULA  has to be interpreted in a similar way.
+Theorem 1 (Lagrange–Good inversion)  
+Let FORMULA  be a positive integer, and let FORMULA  be formal
+power series in FORMULA  with the property
+that, for all FORMULA ,
+FORMULA  is of the form FORMULA  for some formal
+power series FORMULA  with FORMULA . Then, if we
+expand a formal power series FORMULA  in terms of powers of the
+ FORMULA
+FORMULA 
+the coefficients FORMULA  are given by
+FORMULA 
+where FORMULA 
+where the sum in (REF )
+runs over all FORMULA -tuples FORMULA  of non-negative
+integers, and where FORMULA 
+denotes the coefficient of FORMULA  in the formal
+Laurent series FORMULA .
+
+Next, we prove a determinant lemma and a corollary,
+both of which will also be used in the proof of
+Theorem REF .
+Lemma 2 
+Let FORMULA  be a positive integer, and let
+FORMULA  be indeterminates.
+Then
+FORMULA 
+where FORMULA  if FORMULA  is
+true and FORMULA  otherwise.
+
+By using multilinearity in the rows, we rewrite the
+determinant on the left-hand side of (REF ) as
+FORMULA 
+Next, we subtract the first column from all other columns.
+As a result, we obtain the determinant
+FORMULA 
+Now we add rows FORMULA  to the first row.
+After that, our determinant becomes lower triangular, with the entry in the
+first row and column equal to FORMULA , and
+the diagonal entry in row FORMULA , FORMULA , equal to FORMULA .
+Hence, we obtain the claimed result.
+Corollary 3 
+Let FORMULA  and FORMULA  be positive integers, FORMULA  and let
+FORMULA  FORMULA  and FORMULA  be indeterminates.
+Then, with notation as in Lemma REF ,
+FORMULA 
+
+We write the diagonal entry in the FORMULA -th row
+of the determinant in (REF ) as
+FORMULA 
+and then use linearity of the determinant in the FORMULA -th row to
+decompose the determinant as
+FORMULA 
+where FORMULA  is the determinant in (REF ) with
+FORMULA  replaced by FORMULA , and with FORMULA  for all
+FORMULA , and where FORMULA  is the determinant in (REF ) with FORMULA 
+replaced by FORMULA , with FORMULA  for all FORMULA , and with FORMULA  replaced
+by FORMULA  for FORMULA . Hence, using Lemma REF ,
+we deduce that the determinant in (REF ) is equal to
+FORMULA 
+Little simplification then leads to (REF ).
+We end this section with a summation lemma, which we shall
+need in Sections  and  in order to compute the
+FORMULA , respectively FORMULA , decomposition numbers of arbitrary rank
+from those of full rank, and in Section  to derive
+enumerative results for (generalised) non-crossing partitions
+from our formulae for the decomposition numbers.
+Lemma 4 
+Let FORMULA  and FORMULA  be non-negative integers. Then
+FORMULA 
+where the multinomial coefficient
+is defined by
+FORMULA 
+
+The identity results directly by comparing coefficients of
+FORMULA  on both sides of the identity
+FORMULA 
+
+Decomposition numbers for type  FORMULA
+As was already pointed out in {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}},
+the decomposition numbers for type FORMULA  have already been computed
+by Goulden and Jackson in {{cite:6911218b-0907-4345-bee6-2655dc510ffd}},
+albeit using a somewhat different language. (The condition on the sum
+FORMULA  is misstated throughout the latter
+paper. It should be replaced by
+FORMULA .) In our terminology,
+their result reads as follows.
+Theorem 5 
+Let FORMULA  be types
+with FORMULA 
+where
+FORMULA 
+Then
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+
+Here we have used Stembridge's {{cite:a73848fa-2cdb-42db-b1d2-f7b5ee047eca}} notation for the
+decomposition of types into a product of irreducibles; for example,
+the equation FORMULA  means that the root system of type FORMULA 
+decomposes into the orthogonal product of 3 copies of root systems
+of type FORMULA  and one copy of the root system of type FORMULA .
+It was shown in {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}} that, upon applying the
+summation formula in Lemma REF  to the result in
+Theorem REF  in a suitable manner, one obtains a compact formula
+for all type FORMULA  decomposition numbers.
+Theorem 6 
+Let the types FORMULA  be given,
+where
+FORMULA 
+Then
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+All other decomposition numbers FORMULA 
+are zero.
+
+
+Decomposition numbers for type  FORMULA
+In this section we compute the decomposition numbers in type FORMULA .
+We show that one can extract the corresponding formulae
+from results of Bóna, Bousquet, Labelle and Leroux {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}} on
+the enumeration of certain planar maps, which they call FORMULA -ary cacti.
+While reading the statement of the theorem, the reader should
+recall from Section  the distinction between group-theoretic and
+combinatorial decomposition numbers.
+Theorem 7 
+(i) If FORMULA  are types
+with FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+for some FORMULA 
+then
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+For FORMULA  the number
+FORMULA  is given by the same formula.
+(ii) If FORMULA  are types
+with FORMULA 
+where
+FORMULA 
+then
+FORMULA 
+where FORMULA .
+(iii) All other decomposition numbers FORMULA 
+and FORMULA  with
+FORMULA  are zero.
+
+Determining the decomposition numbers
+FORMULA 
+(recall (REF )), respectively
+FORMULA 
+amounts to counting all possible factorisations
+FORMULA 
+where FORMULA  has type FORMULA  as a parabolic Coxeter element,
+respectively has combinatorial type FORMULA .
+The reader should observe that
+the factorisation (REF ) is minimal, in the
+sense that
+FORMULA 
+since FORMULA , and since, by
+our assumption, the sum of the ranks of the FORMULA 's equals FORMULA .
+A further observation is that, in a factorisation (REF ),
+there must be at least one factor FORMULA  which contains a type FORMULA 
+cycle in its
+(type FORMULA ) disjoint cycle decomposition, because the
+sign of FORMULA  as an element of the group FORMULA  of all
+permutations of FORMULA  is
+FORMULA , while the sign of any type FORMULA  cycle is FORMULA .
+We first prove Claim (iii). Let us assume, by contradiction, that
+there is a minimal decomposition (REF )
+in which, altogether, we find at least two type FORMULA  cycles in the
+(type FORMULA ) disjoint cycle decompositions of the FORMULA 's. In that case,
+(REF ) has the form
+FORMULA 
+where FORMULA  and FORMULA  are two type FORMULA  cycles, and
+FORMULA  are the factors in between. Moreover, the factorisation
+(REF ) is minimal, meaning that
+FORMULA 
+We may rewrite (REF ) as
+FORMULA 
+or, setting FORMULA 
+and FORMULA , as
+FORMULA 
+This factorisation is still minimal since FORMULA  is conjugate to FORMULA 
+and FORMULA  is conjugate to FORMULA . At this point, we observe that
+FORMULA  must be a cycle of the form (REF )
+with FORMULA  in the order
+FORMULA , because
+otherwise FORMULA , which would contradict
+(REF ). A similar argument applies to FORMULA .
+Now, if FORMULA  and FORMULA  are not
+disjoint, then it is easy to see that
+FORMULA , whence
+FORMULA 
+
+a contradiction to (REF ). If, on the other hand, FORMULA 
+and FORMULA  are disjoint, then we can find
+FORMULA , such that
+FORMULA  (in the above order of
+FORMULA ).
+In other words, if we represent FORMULA  and
+FORMULA  in the obvious way in a cyclic diagram
+(cf. {{cite:e87d7c96-35ad-44d8-9f8f-52f7ce2d21ab}}), then they cross each
+other. However, in that case we have
+FORMULA 
+contradicting the fact that (REF ) is a minimal
+factorisation. (This is one of the consequences of Biane's
+group-theoretic characterisation {{cite:f38327a4-f33e-4463-96c8-2aa238d3956d}} of
+non-crossing partitions.)
+FIGURE 
+We turn now to Claims (i) and (ii). In what follows, we shall show
+that the formulae (REF ) and (REF ) follow from results
+of Bóna, Bousquet, Labelle and Leroux {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}} on the
+enumeration of FORMULA -ary cacti with a rotational symmetry. In order to
+explain this, we must first define a bijection between minimal factorisations
+(REF ) and certain planar maps.
+By a map, we mean a connected
+graph embedded in the plane
+such that edges do not intersect except in vertices. The maps which
+are of relevance here are maps in which faces different from the
+outer face intersect only in vertices, and
+are coloured with colours from FORMULA .
+Such maps will be referred to
+as FORMULA -cacti from now on.We warn the reader that our
+terminology deviates from the one in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}, {{cite:6911218b-0907-4345-bee6-2655dc510ffd}}. We follow
+loosely the conventions in {{cite:76d63d84-337d-417e-b312-a260a1f097c0}}. To be precise, our
+FORMULA -cacti in which the rotator around every vertex is
+FORMULA 
+are dual to the coloured FORMULA -cacti in {{cite:6911218b-0907-4345-bee6-2655dc510ffd}}, respectively
+FORMULA -ary cacti in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}, in
+the following sense: one is obtained from the other by “interchanging" the
+roles of vertices and faces, that is, given a FORMULA -cactus in our
+sense, one obtains a FORMULA -cactus in the sense of Goulden and Jackson
+by shrinking faces to vertices and blowing up vertices of degree FORMULA 
+to faces with FORMULA  vertices, keeping the incidence relations between
+faces and vertices. Another minor difference is that colours are
+arranged in counter-clockwise order in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}, {{cite:6911218b-0907-4345-bee6-2655dc510ffd}},
+while we arrange colours in clockwise order.
+Examples of 3-cacti
+can be found in Figures REF  and REF .
+In the figures, the faces different from the outer face are the shaded
+ones. Their colours are indicated by the numbers 1, 2,
+respectively 3, placed in the centre of the faces. Figure REF 
+shows a 3-cactus in which the vertices are labelled, while
+Figure REF  shows one in which the vertices are not labelled.
+(That one of the vertices in Figure REF 
+is marked by a bold dot should be ignored
+for the moment.)
+In what follows, we need the concept of the rotator around a
+vertex FORMULA  in a FORMULA -cactus, which, by definition, is the cyclic list of
+colours of faces encountered in a clockwise journey around FORMULA .
+If, while travelling around FORMULA , we encounter the colours
+FORMULA , in this order, then we will write
+FORMULA  for the rotator, meaning that
+FORMULA , etc.
+For example, the rotator of all the vertices in the map
+in Figure REF  is FORMULA .
+We illustrate the bijection between minimal factorisations
+(REF ) and FORMULA -cacti
+with an example. Take FORMULA  and FORMULA ,
+and consider the factorisation
+FORMULA 
+where FORMULA ,
+FORMULA ,
+and FORMULA .
+For each cycle FORMULA  (sic!) of FORMULA , we create a FORMULA -gon
+coloured FORMULA , and label its vertices FORMULA  in clockwise
+order. (The warning “sic!" is there to avoid misunderstandings:
+for each type FORMULA  “cycle" FORMULA  we create two
+FORMULA -gons, the vertices of one being labelled FORMULA , and
+the vertices of the other being labelled
+FORMULA , while
+for each type FORMULA  “cycle" FORMULA  we create one
+FORMULA -gon with vertices labelled FORMULA .)
+We glue these polygons
+into a FORMULA -cactus, the faces of which are these
+polygons plus the outer face, by identifying equally labelled vertices such that
+the rotator of each vertex is FORMULA .
+Figure REF  shows the outcome of this procedure for the
+factorisation (REF ).
+The fact that the result of the procedure can be realised as
+a FORMULA -cactus follows from Euler's
+formula. Namely, the number of faces corresponding to the polygons is
+FORMULA  (the 1
+coming from the polygon corresponding to the type FORMULA  cycle),
+the number of edges
+is FORMULA , and the number
+of vertices is FORMULA . Hence, if we include the outer face, the number
+of vertices minus the number of edges plus the number of faces is
+FORMULA 
+
+according to our assumption concerning the sum of the ranks of the
+types FORMULA .
+FIGURE 
+We may further simplify this geometric representation of
+a minimal factorisation (REF ) by deleting all vertex labels and
+marking the vertex which had label 1. If this simplification is
+applied to the 3-cactus in Figure REF , we obtain the
+3-cactus in Figure REF .
+Indeed, the knowledge of which vertex carries label 1 allows us
+to reconstruct all other vertex labels as follows: starting from the
+vertex labelled 1, we travel clockwise along the boundary of the face
+coloured 1 until we reach the next vertex (that is, we traverse
+only a single edge); from there,
+we travel clockwise along the boundary of the face
+coloured 2 until we reach the next vertex; etc., until we have
+travelled along an edge bounding a face of colour FORMULA . The vertex
+that we have reached must carry label 2. Etc.
+Clearly, if drawn appropriately into the plane,
+a FORMULA -cactus resulting from an application of the above
+procedure to a minimal factorisation (REF ) is
+symmetric with respect to a rotation by FORMULA , the centre of
+the rotation being the centre of the regular FORMULA -gon corresponding
+to the unique type FORMULA  cycle of FORMULA ; cf. Figure REF .
+In what follows, we shall abbreviate this property as rotation-symmetric.
+In summary, under the assumptions of Claim (i),
+the decomposition numberFORMULA , respectively, if
+FORMULA , the decomposition number FORMULA  also,
+equals the number of all rotation-symmetric
+FORMULA -cacti on FORMULA  vertices in which one
+vertex is marked and all vertices have rotator FORMULA , with exactly FORMULA  pairs of faces of colour
+FORMULA  having FORMULA  vertices, arranged symmetrically
+around a central face of colour FORMULA  with FORMULA  vertices.
+Aside from the marking of one vertex, equivalent objects are counted
+in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}. In our language,
+modulo the “dualisation" described
+in Footnote REF , and upon replacing FORMULA  by FORMULA ,
+the objects which are counted in the cited theorem are FORMULA -cacti
+in which all vertices have rotator FORMULA , and which are invariant under a rotation (not necessarily by
+FORMULA ). To be precise, from the proof of {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}
+(not given in full detail in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}})
+it can be extracted that the number of
+FORMULA -cacti on FORMULA  vertices, in which
+all vertices have rotator FORMULA , which are invariant under a rotation by FORMULA , FORMULA 
+being maximal with this property,
+and which have exactly FORMULA  faces of colour
+FORMULA  having FORMULA  vertices arranged
+around a central face of colour FORMULA  with FORMULA  vertices, equals
+FORMULA 
+where the sum extends over all FORMULA  with FORMULA , FORMULA ,
+and FORMULA  for all FORMULA  and
+FORMULA . Here,
+FORMULA  is the Möbius function from number
+theory.Formula (81) in {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}} does not distinguish
+the colour or the size of the central face (that is,
+in the language of {{cite:3b6d8498-cc1b-447d-8bc8-55c971afb1f3}}:
+the colour or the degree of the central vertex),
+therefore it is in fact a sum over all possible colours and
+sizes, represented there by the summations over FORMULA  and FORMULA ,
+respectively.
+In presenting the formula in the above form, we have also used the
+observation that, for all FORMULA  (including FORMULA  !), the number of type
+FORMULA  cycles of FORMULA  is FORMULA .
+As we said above, the FORMULA -cacti that we want to enumerate have one
+marked vertex, whereas the FORMULA -cacti counted by (REF )
+have no marked vertex. However, given a FORMULA -cactus counted by
+(REF ), we have exactly FORMULA  inequivalent ways of
+marking a vertex. Hence, recalling that the FORMULA -cacti that we want to
+count are invariant under a rotation by FORMULA , we must multiply
+the expression (REF ) by FORMULA , and then sum the result
+over all even FORMULA . Since, by definition of the Möbius
+function, we have
+FORMULA 
+the result of this summation is exactly the right-hand side of (REF ).
+Finally, we prove Claim (ii). From what we already know,
+in a minimal factorisation (REF ) exactly one of the
+factors on the right-hand side must contain a type FORMULA  cycle of length
+1 in its (type FORMULA ) disjoint cycle decomposition,
+FORMULA  say. As a parabolic
+Coxeter element, a type FORMULA  cycle of length 1 has type FORMULA .
+Since all considerations in the proof of Claim (i) are also valid for
+FORMULA , we may use Formula (REF ) with FORMULA , and with
+FORMULA  replaced by FORMULA , to count the number of
+these factorisations, to obtain
+FORMULA 
+This has to be summed over FORMULA . The result is exactly
+(REF ).
+The proof of the theorem is now complete.
+Combining the previous theorem with the summation formula of
+Lemma REF , we can now derive compact formulae
+for all type FORMULA  decomposition numbers.
+Theorem 8 
+(i)
+Let the types FORMULA  be given,
+where
+FORMULA 
+and
+FORMULA 
+for some FORMULA .
+Then
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+For FORMULA  the number
+FORMULA  is given by the same formula.
+(ii)
+Let the types FORMULA  be given,
+where
+FORMULA 
+Then
+FORMULA 
+whereas
+FORMULA 
+with FORMULA .
+(iii) All other decomposition numbers FORMULA 
+and FORMULA  are zero.
+
+If we write FORMULA  for FORMULA ,
+then for FORMULA  the relation (REF ) becomes
+FORMULA 
+with the same relation holding for FORMULA  in place
+of FORMULA .
+In order to prove (REF ), we
+let FORMULA  and use
+(REF ) in (REF ), to obtain
+FORMULA 
+If we use (REF ) with FORMULA , we arrive at our claim after
+little simplification.
+In order to prove (REF ), we
+let FORMULA  in (REF ).
+The important point to be observed here is that, in contrast to the
+previous argument, in the present case
+FORMULA  must have a factor
+FORMULA . Subsequently, use of (REF ) in (REF )
+yields
+FORMULA 
+Now we use (REF ) with FORMULA  replaced by FORMULA  and FORMULA ,
+and subsequently the elementary summation formula
+FORMULA 
+Then, after little rewriting, we arrive at our claim.
+To establish (REF ), we must recall that the group-theoretic type FORMULA  does not distinguish between a type FORMULA 
+cycle FORMULA  and a type FORMULA  cycle
+FORMULA . Hence, to obtain FORMULA  in
+the case that no FORMULA  contains a FORMULA  for FORMULA , we
+must add the expression (REF ) and the expressions
+(REF ) with FORMULA  replaced by FORMULA 
+over FORMULA . As is not difficult to see, this
+sum is indeed equal to (REF ).
+
+Decomposition numbers for type  FORMULA
+In this section we compute the decomposition numbers for the type FORMULA .
+Theorem REF  gives the formulae for the full rank
+decomposition numbers, while Theorem REF  presents the
+implied formulae for the decomposition numbers of arbitrary rank.
+To our knowledge, these are new results, which did not appear earlier
+in the literature on map enumeration or on the connection coefficients
+in the symmetric group or other Coxeter groups.
+Nevertheless, the proof of Theorem REF  is entirely in the
+spirit of the fundamental paper {{cite:6911218b-0907-4345-bee6-2655dc510ffd}}, in that the problem of
+counting factorisations is translated into a problem of map
+enumeration, which is then solved by a generating function approach
+that requires the use of the Lagrange–Good formula for coefficient
+extraction.
+We begin with the result concerning the full rank decomposition
+numbers in type FORMULA .
+While reading the statement of the theorem below, the reader should again
+recall from Section  the distinction between group-theoretic and
+combinatorial decomposition numbers.
+Theorem 9 
+(i) If FORMULA  are types
+with FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+for some FORMULA 
+then
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+For FORMULA  the number
+FORMULA  is given by the same formula.
+(ii) If FORMULA  are types
+with FORMULA 
+where
+FORMULA 
+then
+FORMULA 
+while
+FORMULA 
+(iii) All other decomposition numbers FORMULA 
+and FORMULA  with
+FORMULA  are zero.
+
+Remark These formulae must be correctly interpreted when FORMULA  contains
+no FORMULA  and FORMULA .
+In that case, because of FORMULA , there must be an FORMULA ,
+FORMULA , with FORMULA .
+We then interpret the term
+FORMULA 
+as
+FORMULA 
+where the multinomial coefficient is zero whenever
+FORMULA 
+except when all of
+FORMULA  are zero.
+Explicitly, one must read
+FORMULA 
+if FORMULA  but FORMULA , and
+FORMULA 
+if FORMULA .
+
+Determining the decomposition number
+FORMULA 
+(recall (REF )), respectively
+FORMULA 
+amounts to counting all possible factorisations
+FORMULA 
+where FORMULA  has type FORMULA  as a parabolic Coxeter element,
+respectively has combinatorial type FORMULA .
+Here also, the factorisation (REF ) is minimal in the
+sense that
+FORMULA 
+since FORMULA , and since, by
+our assumption, the sum of the ranks of the FORMULA 's equals FORMULA .
+We first prove Claim (iii). Let us assume, for contradiction, that
+there is a minimal factorisation (REF ),
+in which, altogether, we find at least two type FORMULA  cycles
+of length FORMULA  in the
+(type FORMULA ) disjoint cycle decompositions of the FORMULA 's.
+It can then be shown by arguments similar to those in the proof of
+Claim (iii) in Theorem REF  that this leads to a contradiction.
+Hence, “at worst," we may find a type FORMULA  cycle of length 1,
+FORMULA  say, and
+another type FORMULA  cycle, FORMULA  say.
+Both of them must be contained in the
+disjoint cycle decomposition of one of the FORMULA 's since all the
+FORMULA 's are elements of FORMULA . Given that
+FORMULA  has length FORMULA , the product of both, FORMULA , is of combinatorial type FORMULA , FORMULA , whereas, as
+a parabolic Coxeter element, it is of type FORMULA  only if FORMULA .
+If FORMULA , then it is a
+parabolic Coxeter element of type FORMULA , and if FORMULA  it is of type
+FORMULA . Thus, we are actually
+in the cases to which Claims (i) and (ii) apply.
+To prove Claim (i), we continue this line of argument. By a
+variation of the conjugation argument
+(REF )–(REF ), we may assume that these two type FORMULA 
+cycles are contained in FORMULA , FORMULA  say,
+where, as above, FORMULA  is the type FORMULA 
+cycle of length 1 and FORMULA  is the other type FORMULA  cycle, and where
+FORMULA  is free of type FORMULA  cycles.
+In that case,
+(REF ) takes the form
+FORMULA 
+If FORMULA , FORMULA , and if FORMULA  does not fix FORMULA ,
+then FORMULA , a contradiction. Likewise,
+if FORMULA , FORMULA  with
+FORMULA , then
+FORMULA ,
+again a contradiction. Hence, we may assume that
+FORMULA , whence FORMULA  forms a parabolic Coxeter
+element of type FORMULA , given that FORMULA  has length FORMULA .
+We are
+then in the position to determine all possible factorisations of the
+form (REF ), which reduces to
+FORMULA 
+This is now a minimal type FORMULA  factorisation of the form (REF ) with
+FORMULA  replaced by FORMULA . We may therefore use Formula (REF ) with
+FORMULA  replaced by FORMULA , and with FORMULA  replaced by FORMULA .
+These substitutions lead exactly to (REF ).
+Finally, we turn to Claim (ii).
+First we discuss two degenerate cases which come from the
+identifications FORMULA , respectively FORMULA , and
+which only occur for FORMULA  (but not for the
+combinatorial decomposition numbers
+FORMULA ).
+It may happen that one of the factors in (REF ),
+let us say, without loss of generality, FORMULA ,
+contains a type FORMULA  cycle of length 1 and one of length 2
+in its disjoint cycle decomposition;
+that is, FORMULA  may contain
+FORMULA 
+As a parabolic Coxeter element, this is of type FORMULA .
+By the reduction (REF )–(REF ), we may count the
+number of these possibilities by Formula (REF ) with FORMULA  replaced
+by FORMULA , FORMULA  replaced by FORMULA , and FORMULA  replaced
+by FORMULA . This explains the second term in the factor
+in big parentheses on
+the right-hand side of (REF ).
+On the other hand, it may happen that one of the factors in (REF ),
+let us say again, without loss of generality, FORMULA ,
+contains two type FORMULA  cycles of length 1
+in its disjoint cycle decomposition;
+that is, FORMULA  may contain
+FORMULA 
+As a parabolic Coxeter element, this is of type FORMULA .
+By the reduction (REF )–(REF ), we may count the
+number of these possibilities by Formula (REF ) with FORMULA  replaced
+by FORMULA , FORMULA  replaced by FORMULA , and FORMULA  replaced
+by FORMULA . This explains the third term in the factor
+in big parentheses on
+the right-hand side of (REF ).
+FIGURE 
+From now on we may assume that none of the FORMULA 's contains a type
+FORMULA  cycle in its (type FORMULA ) disjoint cycle decomposition.
+To determine the number of minimal factorisations (REF ) in
+this case,
+we construct again a bijection between these factorisations and
+certain maps. In what follows, we will still use the concept
+of a rotator, introduced in the proof of Theorem REF .
+We apply again the procedure described in that proof.
+That is, for each (ordinary)
+cycle FORMULA  of FORMULA , we create a FORMULA -gon
+coloured FORMULA , label its vertices FORMULA  in clockwise
+order, and glue these polygons
+into a map by identifying equally labelled vertices such that
+the rotator of each vertex is FORMULA .
+However, this map can be embedded in the plane only if we allow
+the creation of an inner face corresponding to the cycle FORMULA 
+on the left-hand side of (REF ) (the outer face
+corresponding to the large cycle FORMULA ). Moreover, this inner face must be bounded by FORMULA 
+edges. We call such a map, in which all faces except the
+outer face and an inner face intersect only in vertices,
+and are coloured with colours from FORMULA ,
+and in which the inner face is bounded by FORMULA  edges, a FORMULA -atoll.
+For example, if we take FORMULA  and FORMULA ,
+and consider the factorisation
+FORMULA 
+where FORMULA ,
+FORMULA ,
+and FORMULA , and apply this procedure, we obtain
+the 3-atoll in Figure REF .
+In the figure, the faces corresponding to cycles are shaded.
+As in Figures REF  and REF , the outer face is not
+shaded. Here, there is in addition an inner face which is not shaded,
+the face formed by the vertices FORMULA .
+Again, the colours of the shaded faces are indicated by the numbers 1, 2,
+respectively 3, placed in the centre of the faces.
+Unsurprisingly,
+the fact that the result of the procedure can be realised as
+a FORMULA -atoll follows again from Euler's
+formula. More precisely, the number of faces corresponding to the polygons is
+FORMULA ,
+the number of edges
+is FORMULA , and the number
+of vertices is FORMULA . Hence, if we include the outer face and the inner
+face, the number
+of vertices minus the number of edges plus the number of faces is
+FORMULA 
+
+according to our assumption concerning the sum of the ranks of the
+types FORMULA .
+FIGURE 
+Again, we may further simplify this geometric representation of
+a minimal factorisation (REF ) by deleting all vertex
+labels,
+marking the vertex which had label 1 with
+ FORMULA FORMULAFORMULA , and
+marking the vertex that had label FORMULA  with FORMULA .
+If this simplification is
+applied to the 3-atoll in Figure REF , we obtain the
+3-atoll in Figure REF .
+Clearly, if drawn appropriately into the plane,
+a FORMULA -atoll resulting from an application of the above
+procedure to a minimal factorisation (REF ) is
+symmetric with respect to a rotation by FORMULA , the centre of
+the rotation being the centre of the inner face; cf. Figure REF .
+As earlier, we shall abbreviate this property as rotation-symmetric. In fact, there is not much freedom for the
+choice of the vertex marked by FORMULA  once a vertex has
+been marked
+by  FORMULA FORMULAFORMULA . Clearly, if we run through
+the vertex labelling process described in the proof of
+Theorem REF , labelling 1 the vertex which is marked by
+ FORMULA FORMULAFORMULA , we shall reconstruct the labels
+FORMULA . This leaves only
+2 vertices incident to the inner face unlabelled, one of which
+will have to carry the mark FORMULA .
+In summary, under the assumptions of Claim (ii),
+the number of minimal factorisations (REF ), in which none of
+the FORMULA 's contains a type FORMULA  cycle in its disjoint cycle decomposition,
+equals twice the number of all rotation-symmetric
+FORMULA -atolls on FORMULA  vertices, in which one
+vertex is marked by  FORMULA FORMULAFORMULA ,
+all vertices have rotator FORMULA , and with exactly FORMULA  pairs of faces of colour
+FORMULA  having FORMULA  vertices, arranged symmetrically
+around the inner face (which is not coloured).
+Let us denote the number of these FORMULA -atolls by FORMULA .
+We must now enumerate these FORMULA -atolls.
+First of all, introducing a figure of speech,
+we shall refer to coloured faces of a FORMULA -atoll
+which share an edge with the inner face but not with the
+outer face as faces “inside the FORMULA -atoll," and all others as
+faces “outside the FORMULA -atoll."
+For example, in Figure REF  we find two faces inside the
+3-atoll, namely the two loop faces attached to the vertices
+labelled 10, respectively FORMULA , in Figure REF .
+Since, in a FORMULA -atoll,
+the inner face is bounded by exactly FORMULA  edges,
+inside the FORMULA -atoll, we find only coloured faces
+containing exactly one vertex. Next, we travel counter-clockwise around the
+inner face and record the coloured faces sharing an edge with both
+the inner and outer faces.
+Thus we obtain a list of the form
+FORMULA 
+where, except possibly for the marking,
+FORMULA  is an identical copy of FORMULA , FORMULA .
+In Figure REF , this list contains four faces,
+FORMULA , where FORMULA  and
+FORMULA  are the two quadrangles of colour 3, and where
+FORMULA  and FORMULA  are the two triangles of colour 2
+connecting the two quadrangles.
+Continuing the general argument,
+let the colour of FORMULA  be FORMULA . Inside the FORMULA -atoll,
+because of the rotator condition, there must be
+FORMULA  faces (containing just one vertex)
+incident to the common vertex of FORMULA  and
+FORMULA  coloured FORMULA , where, by definition,
+FORMULA 
+and where FORMULA , FORMULA . Here, if
+FORMULA , the sequence of colours
+FORMULA  must be interpreted “cyclically,"
+that is, as
+FORMULA .
+As we observed above, the number of edges bounding the inner face is
+FORMULA . On the other hand, using the notation just introduced, this
+number also equals
+FORMULA 
+Hence, there is precisely one FORMULA  for which FORMULA . Without
+loss of generality, we may assume that FORMULA , so that
+FORMULA .
+The ascending colouring of the faces FORMULA  breaks
+the (rotation) symmetry of the FORMULA -atoll. Therefore, we may
+first enumerate FORMULA -atolls without any marking, and multiply the result
+by the number of all possible markings, which is FORMULA .
+More precisely, let FORMULA  denote the
+number of all rotation-symmetric
+FORMULA -atolls on FORMULA  vertices, in which
+all vertices have rotator FORMULA , and with exactly FORMULA  pairs of faces of colour
+FORMULA  having FORMULA  vertices, arranged symmetrically
+around the inner face (which is not coloured). Then,
+FORMULA 
+
+We use a generating function approach
+to determine FORMULA ,
+which requires a combinatorial decomposition of our objects.
+Let FORMULA  be the generating function
+FORMULA 
+where FORMULA  is the set of all rotation-symmetric FORMULA -atolls,
+in which all vertices have rotator FORMULA , and where
+FORMULA 
+Here, FORMULA , with the FORMULA 's,
+FORMULA , and
+the FORMULA , FORMULA , FORMULA , being indeterminates.
+Clearly, in view of the bijection
+between minimal factorisations (REF ) and FORMULA -atolls
+described earlier, and by (REF ), we have
+FORMULA 
+where FORMULA , with FORMULA  equal to the number
+of type FORMULA  cycles of FORMULA ; that is, FORMULA ,
+FORMULA . Here, and in the sequel, we use the multi-index
+notation introduced at the beginning of Section .
+For later use, we observe that, for all FORMULA ,
+FORMULA  is related to FORMULA  via
+FORMULA 
+FIGURE 
+Now, let FORMULA  be a FORMULA -atoll in FORMULA  such that the faces which
+share an edge with both the inner and outer faces are
+FORMULA 
+where FORMULA  is an identical copy of FORMULA ,
+where the colour of FORMULA  is FORMULA , FORMULA , and with
+FORMULA . We decompose FORMULA  by
+separating from each other the polygons which touch in vertices
+of the inner face. The decomposition in the case of our example in
+Figure REF  is shown in Figure REF .
+Ignoring identical copies which are there due
+to the rotation symmetry, we obtain a list
+FORMULA 
+where FORMULA  is the FORMULA -cactus containing the face FORMULA , and, hence,
+a FORMULA -cactus in which all but two neighbouring vertices
+have rotator FORMULA , the latter two
+vertices being incident to just one face, which is of colour FORMULA ,
+where FORMULA  is a face of colour FORMULA  with just one vertex,
+and where FORMULA  is a FORMULA -cactus in which all but
+one vertex have rotator FORMULA , the
+distinguished
+vertex being incident to just one face, which is of colour FORMULA ,
+FORMULA  and FORMULA .
+With this notation,
+our example in Figure REF  is one in which FORMULA , FORMULA ,
+FORMULA .
+FIGURE 
+The FORMULA -cacti FORMULA  can be further decomposed. Namely, assuming that
+the face FORMULA  is a FORMULA -gon (of colour FORMULA ), let
+FORMULA 
+be the FORMULA -cacti incident to this FORMULA -gon, read in clockwise order,
+starting with the FORMULA -cactus to the left of the two distinguished
+vertices. Figure REF  illustrates this further decomposition
+of the FORMULA -cactus FORMULA  from Figure REF .
+After removal of FORMULA , we are left with the
+ordered collection
+FORMULA  of FORMULA -cacti, each of which having
+the property that the
+rotator of all but one vertex is FORMULA , the
+exceptional vertex having rotator FORMULA . By separating from each other
+the polygons of colours FORMULA 
+which touch in the exceptional vertex,
+each FORMULA -cactus FORMULA  in turn can be decomposed into
+FORMULA -cacti FORMULA  with
+FORMULA  for all FORMULA ,
+where FORMULA  denotes the set of all FORMULA -cacti in which all but
+one vertex have rotator
+FORMULA , the distinguished
+vertex being incident to just one face, which is of colour FORMULA .
+Let FORMULA  denote the generating function for the
+FORMULA -cacti in FORMULA , that is,
+FORMULA 
+Furthermore,
+for FORMULA , define the formal power series FORMULA  in one variable
+FORMULA  via
+FORMULA 
+Then, by the decomposition (REF ) and the further
+decomposition of the FORMULA 's that we just described,
+the contribution of the above
+FORMULA -atolls to the generating function (REF ) is
+FORMULA 
+
+the term in the first line corresponding to the contribution of
+the FORMULA 's, the first term in the second line
+corresponding to the contribution of
+the FORMULA 's, and the second term in the second line
+corresponding to the contribution of
+the FORMULA 's. These expressions must be summed over
+FORMULA  and all possible choices of FORMULA  to obtain the desired generating function
+FORMULA , that is,
+FORMULA 
+
+Here we have used the elementary identity
+FORMULA 
+Before we are able to proceed, we must
+find functional equations for the generating functions FORMULA , FORMULA .
+Given a FORMULA -cactus FORMULA  in FORMULA  such that the
+distinguished vertex
+is incident to a FORMULA -gon (of colour FORMULA ), we decompose it in a
+manner analogous to the decomposition of FORMULA  above. To be more
+precise, let FORMULA 
+be the FORMULA -cacti incident to this FORMULA -gon, read in clockwise order,
+starting with the FORMULA -cactus to the left of the distinguished vertex.
+After removal of the FORMULA -gon, we are left with the
+ordered collection
+FORMULA  of FORMULA -cacti, each of which having
+the property that the
+rotator of all but one vertex is FORMULA , the
+exceptional vertex having rotator FORMULA . By separating from each other
+the polygons of colours FORMULA 
+which touch in the exceptional vertex,
+each FORMULA -cactus FORMULA  in turn can be decomposed into
+FORMULA -cacti FORMULA  with
+FORMULA  for all FORMULA . The upshot of these
+combinatorial considerations is that
+FORMULA 
+or, equivalently,
+FORMULA 
+Using this relation, the expression (REF ) for FORMULA  may
+now be further simplified, and we obtain
+FORMULA 
+This is substituted in (REF ), to obtain
+FORMULA 
+Now the problem is set up for application of the Lagrange–Good
+inversion formula. Let FORMULA ,
+FORMULA . If we substitute FORMULA  in place of FORMULA ,
+FORMULA , in (REF ), and apply Theorem REF 
+with
+FORMULA 
+respectively
+FORMULA 
+we obtain that
+FORMULA 
+where 0 stands for the vector FORMULA .
+We treat the two terms on the right-hand side of (REF )
+separately. We begin with the second term:
+FORMULA 
+
+Reading coefficients, we obtain
+FORMULA 
+the second line being due to (REF ).
+Now we can apply Lemma REF  with FORMULA  and FORMULA ,
+FORMULA . The term
+FORMULA 
+
+on the right-hand side of (REF ) simplifies to FORMULA  due to our
+assumption concerning the sum of the ranks of the
+types FORMULA . Hence,
+if we use the relation (REF ) once more,
+the second term on the right-hand side of (REF )
+is seen to equal
+FORMULA 
+This explains the second term in the factor in big parentheses in
+(REF ) and
+the fourth term in the factor in big parentheses on
+the right-hand side of (REF ).
+Finally, we come to the first term on the right-hand side of
+(REF ). We have
+FORMULA 
+
+Reading coefficients, we obtain
+FORMULA 
+the second line being due to (REF ).
+Now we can apply Corollary REF  with FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA , and FORMULA . The term
+FORMULA 
+
+on the right-hand side of (REF ) simplifies to FORMULA  due to our
+assumption concerning the sum of the ranks of the
+types FORMULA . Hence,
+if we use the relation (REF ) once more,
+the second term on the right-hand side of (REF )
+is seen to equal the sum over FORMULA  of
+FORMULA 
+This explains the first terms in the factors in big parentheses on
+the right-hand sides of (REF ) and (REF ).
+The proof of the theorem is complete.
+Combining the previous theorem with the summation formula of
+Lemma REF , we can now derive compact formulae
+for all type FORMULA  decomposition numbers.
+Theorem 10 
+(i)
+Let the types FORMULA  be given,
+where
+FORMULA 
+and
+FORMULA 
+for some FORMULA .
+Then
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+For FORMULA  the number
+FORMULA  is given by the same formula.
+(ii)
+Let the types FORMULA  be given,
+where
+FORMULA 
+Then
+FORMULA 
+whereas
+FORMULA 
+(iii) All other decomposition numbers FORMULA 
+and FORMULA  are zero.
+
+Remark The caveats on interpretations of the formulae in Theorem REF 
+for critical choices of the parameters (cf. the Remark after the statement of that theorem) apply also to the
+formulae of Theorem REF .
+
+We proceed in a manner similar to the proof of Theorem REF .
+If we write FORMULA  for FORMULA  and set
+FORMULA , then the relation (REF ) becomes
+FORMULA 
+with the same relation holding for FORMULA  in place
+of FORMULA .
+In order to prove (REF ), we
+let FORMULA  and use
+(REF ) in (REF ), to obtain
+FORMULA 
+If we use (REF ) with FORMULA , we arrive at our claim after
+little simplification.
+Next we prove (REF ). In contrast to the previous argument,
+here the summation on the
+right-hand side of (REF ) must be taken over all types FORMULA 
+of the form
+FORMULA , FORMULA ,
+as well as of the form
+FORMULA .
+For the sum over the former types, we have to
+substitute (REF ) in (REF ), to get
+FORMULA 
+On the other hand, for the sum over the latter types, we have to
+substitute (REF ) in (REF ), to get
+FORMULA 
+We simplify (REF ) by
+using (REF ) with FORMULA  replaced by FORMULA  and FORMULA ,
+and by subsequently applying the elementary summation formula
+FORMULA 
+The expression which we obtain in this way
+explains the fraction in the third line of
+(REF ) multiplied by the expression in the last line.
+On the other hand, we simplify the sums in (REF ) by
+using (REF ) with FORMULA , respectively FORMULA .
+Thus, the expression (REF ) becomes
+FORMULA 
+which explains the expression in the second line of (REF )
+and the second expression in the third line of
+(REF ) multiplied by the expression in the last line.
+The proof of (REF ) is analogous, using (REF ) instead
+of (REF ). We leave the details to the reader.
+
+Generalised non-crossing partitions
+In this section we recall the definition of Armstrong's {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}
+generalised non-crossing partitions poset, and its combinatorial
+realisation from {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}
+and {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}} for the types FORMULA , FORMULA , and FORMULA .
+Let again FORMULA  be a finite root system of rank FORMULA , and let FORMULA 
+be the corresponding reflection group.
+We define first the non-crossing partition lattice
+ FORMULA (cf. {{cite:6f15fe92-d5df-414a-b725-13f394707709}}, {{cite:3bb97b6c-7b3d-4614-bdd4-472ec8f239d2}}).
+Let FORMULA  be a Coxeter element in FORMULA .
+Then FORMULA  is defined to be
+the restriction of the partial order FORMULA  from Section 
+to the set
+of all elements which are less than or equal to FORMULA  in this partial order.
+This definition makes sense since any two Coxeter elements in FORMULA 
+are conjugate to each other; the induced inner
+automorphism then restricts to an isomorphism of the posets
+corresponding to the two Coxeter elements.
+It can be shown that FORMULA  is in fact a lattice (see
+{{cite:323747f0-9d5a-4b68-ae70-5dbd93805722}} for a uniform proof), and moreover self-dual
+(this is obvious from the definition). Clearly, the minimal element
+in FORMULA  is the identity element in FORMULA , which we denote by
+FORMULA , and the maximal element
+in FORMULA  is the chosen Coxeter element FORMULA .
+The term “non-crossing partition lattice" is used because
+FORMULA  is isomorphic to the lattice of non-crossing partitions
+of FORMULA ,
+originally introduced by Kreweras {{cite:f8c839c5-7e7f-4536-a31e-49643650ac71}}
+(see also {{cite:09635bcb-c529-40ac-9b80-6451d597fe91}} and below), and since also
+FORMULA  and FORMULA  can be realised as lattices of
+non-crossing partitions (see {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}, {{cite:e87d7c96-35ad-44d8-9f8f-52f7ce2d21ab}} and below).
+In addition to a fixed root system, the definition of
+Armstrong's generalised
+non-crossing partitions requires a fixed positive integer FORMULA .
+The poset of FORMULA -divisible non-crossing partitions associated to
+the root system  FORMULA has as
+ground-set the following subset of FORMULA :
+FORMULA 
+The order relation is defined by
+FORMULA 
+(According to this definition, FORMULA  and FORMULA  need
+not be related in any way. However, it follows from
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} that, in fact, FORMULA .)
+The poset FORMULA  is graded by
+the rank function
+FORMULA 
+Thus, there is a unique maximal element, namely FORMULA ,
+where FORMULA  stands for the identity element in FORMULA , but, for FORMULA , there
+are many
+different minimal elements. In particular, FORMULA  has no least element
+if FORMULA ; hence, FORMULA  is not a lattice
+for FORMULA . (It is, however, a graded join-semilattice, see
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}.)
+In what follows, we shall use the notions “generalised
+non-crossing partitions" and “FORMULA -divisible non-crossing partitions"
+interchangeably, where the latter notion will be employed particularly
+in contexts in which we want to underline the presence of the
+parameter FORMULA .
+In the remainder of this section, we explain combinatorial
+realisations of the FORMULA -divisible non-crossing partitions of types
+FORMULA , FORMULA , and FORMULA . In order to be able to do so, we need to
+recall the definition of Kreweras' non-crossing partitions of
+FORMULA , his
+“partitions non croisées d'un cycle" of {{cite:f8c839c5-7e7f-4536-a31e-49643650ac71}}.
+We place FORMULA  vertices around
+a cycle, and label them FORMULA  in clockwise order. The
+circular representation of a partition of the set FORMULA 
+is the geometric object which arises by representing each block
+FORMULA  of the partition, where FORMULA , by the
+polygon consisting of the vertices labelled FORMULA  and
+edges which connect these vertices in clockwise order. A partition of
+FORMULA  is called non-crossing if any two edges
+in its circular representation are disjoint.
+Figure REF  shows the non-crossing partition
+FORMULA 
+of FORMULA . There is a natural partial order on Kreweras'
+non-crossing partitions defined by refinement: a partition FORMULA  is
+less than or equal to the partition FORMULA  if every block of
+FORMULA  is contained in some block of FORMULA .
+If FORMULA , the FORMULA -divisible non-crossing partitions are in
+bijection with Kreweras-type non-crossing partitions of the set
+FORMULA , in which all the block sizes are divisible by
+FORMULA . We denote the latter set of non-crossing partitions by
+FORMULA . It has been first considered by
+Edelman in {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}}.
+In fact, Figure REF  shows an example of a 3-divisible
+non-crossing partition of type FORMULA .
+FIGURE 
+Given an element FORMULA ,
+the bijection, FORMULA  say,
+from {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}
+works by “blowing up"
+FORMULA , thereby “interleaving" them,
+and then “gluing" them together by an operation which is called Kreweras complement in {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}. More precisely, for
+FORMULA , let FORMULA  be
+the transformation which maps a permutation FORMULA  to a
+permutation FORMULA  by letting
+FORMULA 
+and
+FORMULA  for all FORMULA  (mod FORMULA ).
+At this point, the reader should recall from Section  that
+FORMULA  is the symmetric group FORMULA , and that the standard
+choice of a Coxeter element in FORMULA  is FORMULA .
+With this choice of Coxeter element, the announced bijection maps
+FORMULA  to
+FORMULA 
+We refer the reader to {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} for the details.
+For example, let FORMULA , FORMULA , FORMULA ,
+FORMULA ,
+FORMULA , and
+FORMULA . Then FORMULA  is mapped to
+FORMULA 
+
+Figure REF  shows the graphical representation of
+(REF ) on the circle, in which we represent a cycle
+FORMULA  as a
+polygon consisting of the vertices labelled FORMULA  and
+edges which connect these vertices in clockwise order.
+It is shown in {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} that FORMULA 
+is in fact an isomorphism between the posets FORMULA  and
+FORMULA . Furthermore,
+it is proved in {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} that
+FORMULA 
+where FORMULA  denotes the number of cycles of length FORMULA  of FORMULA 
+and FORMULA  denotes the number of blocks of size FORMULA  in
+the non-crossing partition FORMULA .
+If FORMULA , the FORMULA -divisible non-crossing partitions are in
+bijection with Kreweras-type
+non-crossing partitions FORMULA  of the set
+FORMULA ,
+in which all the block sizes are divisible by
+FORMULA , and which have the property that if FORMULA  is a block of FORMULA  then
+also FORMULA  is a block of FORMULA . (Here, as
+earlier, we adopt the convention that FORMULA  for all FORMULA .)
+We denote the latter set of non-crossing partitions by
+FORMULA .
+A block FORMULA  with FORMULA  is called a zero block.
+A non-crossing partition in FORMULA  can only have
+at most one zero block.
+Figures REF  and REF  give examples of 3-divisible
+non-crossing partitions of type FORMULA . Figure REF  shows
+one without a zero block, while Figure REF  shows one with a
+zero block. Clearly, the condition that FORMULA  is a block of the
+partition if and only if
+FORMULA  is a block translates into the condition that the
+geometric realisation of the partition is invariant under rotation by
+FORMULA .
+FIGURE 
+FIGURE 
+Given an element FORMULA ,
+the bijection, FORMULA  say,
+from {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} works in the same way as for
+FORMULA .
+That is, recalling from Section  that FORMULA  can be
+combinatorially realised as a subgroup of the group of permutations
+of FORMULA , and that, in this
+realisation, the standard choice of a Coxeter element is
+FORMULA ,
+the announced bijection maps
+FORMULA  to
+FORMULA 
+where FORMULA  is the obvious extension of the above
+transformations FORMULA : namely we let
+FORMULA 
+and
+FORMULA  and
+FORMULA  for all FORMULA  (mod FORMULA ),
+where FORMULA  is identified with FORMULA  for all FORMULA 
+and FORMULA . We refer the reader to {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} for the details.
+For example, let FORMULA , FORMULA , FORMULA ,
+FORMULA ,
+FORMULA , and
+FORMULA . Then FORMULA  is mapped to
+FORMULA 
+
+Figure REF  shows the graphical representation of (REF ).
+It is shown in {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} that FORMULA  is in fact an
+isomorphism between the posets FORMULA  and
+FORMULA . Furthermore,
+it is proved in {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} that
+FORMULA 
+where FORMULA  denotes the number of type FORMULA 
+cycles (recall the corresponding terminology from Section )
+of length FORMULA  of FORMULA 
+and FORMULA  denotes one half of
+the number of non-zero blocks of size FORMULA  in the non-crossing
+partition FORMULA . (Recall that non-zero blocks come in
+“symmetric" pairs.)
+Consequently, under the bijection
+FORMULA , the element FORMULA  contains a type FORMULA  cycle of length
+FORMULA  if and only if FORMULA  contains a zero
+block of size FORMULA .
+The FORMULA -divisible non-crossing partitions of type FORMULA  cannot be
+realised as certain “partitions non croisées d'un cycle," but as
+non-crossing partitions on an annulus with FORMULA  vertices
+on the outer cycle and FORMULA  vertices on the inner cycle, the vertices
+on the outer cycle being labelled by FORMULA  in clockwise order, and the
+vertices of the inner cycle being labelled by
+FORMULA  in counter-clockwise order. Given a partition
+FORMULA  of
+FORMULA , we represent it
+on this annulus in a manner analogous to Kreweras' graphical
+representation of his partitions; namely, we represent each block of
+FORMULA  by connecting the vertices labelled by the elements of
+the block by curves in clockwise order, the important additional
+requirement being here that the curves must be drawn in the interior
+of the annulus. If it is possible to draw the curves in such a way
+that no two curves intersect, then the partition is called a non-crossing partition on the FORMULA -annulus.
+Figure REF  shows a non-crossing partition on the
+FORMULA -annulus.
+FIGURE 
+FIGURE 
+With this definition,
+the FORMULA -divisible non-crossing partitions of type FORMULA  are in
+bijection with non-crossing partitions FORMULA  on the FORMULA -annulus,
+in which successive elements of a block (successive in the circular
+order in the graphical representation of the block) are in successive
+congruence classes modulo FORMULA ,
+which have the property that if FORMULA  is a block of FORMULA  then
+also FORMULA  is a block of FORMULA , and which
+satisfy an additional restriction concerning their zero block.
+Here again, a zero block is a block FORMULA  with FORMULA .
+The announced additional restriction says that
+a zero block can only occur if it contains all the vertices of
+the inner cycle, that is,
+FORMULA ,
+and at least two further elements from the outer cycle.
+We denote this set of non-crossing partitions on the
+FORMULA -annulus by FORMULA .
+A non-crossing partition in FORMULA  can only have
+at most one zero block.
+Figures REF  and REF  give examples of 3-divisible
+non-crossing partitions of type FORMULA , Figure REF 
+one without a zero block, while Figure REF  one with a
+zero block. Again, it is clear that
+the condition that FORMULA  is a block of the partition if and only if
+FORMULA  is a block translates into the condition that the
+geometric realisation of the partition is invariant under rotation by
+FORMULA .
+In order to clearly sort out the differences to the earlier combinatorial
+realisations of FORMULA -divisible non-crossing partitions of types
+FORMULA  and FORMULA , we stress that for type FORMULA  there are three major features which are not present for the former types:
+(1) here we consider non-crossing partitions on
+an annulus; (2) it is not sufficient to impose the condition
+that the size of every block is divisible by FORMULA : the condition on
+successive elements of a block is stronger;
+(3) there is the above additional restriction
+on the zero block (which is not present in type FORMULA ).
+Given an element FORMULA ,
+the bijection, FORMULA  say,
+from {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}} works as follows.
+Recalling from Section  that FORMULA  can be
+combinatorially realised as a subgroup of the group of permutations
+of FORMULA , and that, in this
+realisation, the standard choice of a Coxeter element is
+FORMULA ,
+the announced bijection maps
+FORMULA  to
+FORMULA 
+where FORMULA  is defined as above.
+We refer the reader to {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}} for the details.
+For example, let FORMULA , FORMULA , FORMULA ,
+FORMULA ,
+FORMULA , and
+FORMULA . Then FORMULA  is mapped to
+FORMULA 
+
+Figure REF  shows the graphical representation of (REF ).
+It is shown in {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}} that FORMULA  is in fact an
+isomorphism between the posets FORMULA  and
+FORMULA . Furthermore,
+it is proved in {{cite:149b8827-4b71-4d4d-a33b-5a0d44a7310f}} that
+FORMULA 
+where FORMULA  denotes the number of type FORMULA 
+cycles of length FORMULA  of FORMULA 
+and FORMULA  denotes one half of the number of non-zero blocks of size FORMULA 
+in the non-crossing partition FORMULA . (Recall that non-zero blocks come in
+“symmetric" pairs.) Consequently, under the bijection
+FORMULA , the element FORMULA  contains a type FORMULA  cycle of length
+FORMULA  if and only if FORMULA  contains a zero
+block of size FORMULA .
+
+Decomposition numbers with free factors, and
+enumeration in the poset of generalised non-crossing partitions
+This section is devoted to applying our formulae from
+Sections – for the
+decomposition numbers of the types FORMULA , FORMULA , and FORMULA  to the
+enumerative theory of generalised non-crossing partitions for these
+types. Theorems REF –REF  present formulae for the
+number of minimal factorisations of Coxeter elements in types FORMULA ,
+FORMULA , and FORMULA , respectively, where we do not prescribe the types
+of all the factors as for the decomposition numbers,
+but just for some of them, while we
+impose rank sum conditions on other factors. Immediate corollaries
+are formulae for the number of multi-chains
+FORMULA , FORMULA  being given,
+in the posets FORMULA ,
+FORMULA , and FORMULA ,
+where the poset rank of FORMULA  equals
+FORMULA , and where the block structure of FORMULA  is prescribed, see
+Corollaries REF , REF , and REF .
+These results in turn imply
+all known enumerative results on
+ordinary and generalised non-crossing partitions via appropriate
+summations, see the remarks accompanying the corollaries. They also
+imply two further new results on chain enumeration in
+FORMULA , see Corollaries REF  and
+REF . We want to stress that, since FORMULA 
+and FORMULA  are isomorphic as posets for FORMULA ,
+Corollaries REF , REF , REF , REF , REF 
+imply obvious results for FORMULA  in place of
+FORMULA , FORMULA , via (REF ),
+(REF ), respectively (REF ).
+We begin with our results for type FORMULA . The next theorem
+generalises Theorem REF , which can be obtained from the
+former as the special case in which FORMULA  and FORMULA .
+Theorem 11 
+For a positive integer FORMULA  let the types FORMULA  be given,
+where
+FORMULA 
+and let FORMULA  be given non-negative integers
+with
+FORMULA 
+Then the number of factorisations
+FORMULA 
+where FORMULA  is a Coxeter element in FORMULA 
+such that the type of FORMULA  is FORMULA  FORMULA  and such
+that
+FORMULA 
+is given by
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+
+In the factorisation (REF ),
+we first fix also the types of the FORMULA 's. For
+FORMULA  and FORMULA , let the type of FORMULA  be
+FORMULA 
+We know that the number of these factorisations is given by
+(REF ) with FORMULA  replaced by FORMULA  and the
+appropriate interpretations of the FORMULA 's. Next we fix
+non-negative integers FORMULA  and sum the
+expression (REF ) over all possible types FORMULA  of
+rank FORMULA , FORMULA , FORMULA .
+The corresponding summations are completely analogous to the
+summation in the proof of Theorem REF . As a result, we obtain
+FORMULA 
+for the number of factorisations under consideration.
+In view of (REF ) and (REF ),
+to obtain the final result, we must sum these expressions
+over all non-negative integers FORMULA 
+satisfying the equations
+FORMULA 
+This is easily done by means of the multivariate version of the Chu–Vandermonde
+summation. The formula in (REF ) follows.
+In view of the combinatorial realisation of
+FORMULA -divisible non-crossing partitions of type FORMULA  which we
+described in Section ,
+the special case FORMULA  of the above theorem has the following
+enumerative consequence.
+Corollary 12 
+Let FORMULA  be a positive integer, and let FORMULA  be
+non-negative integers with FORMULA .
+The number of multi-chains
+FORMULA  in the poset
+FORMULA 
+with the property that FORMULA 
+FORMULA  and that the
+number of blocks of size FORMULA  of FORMULA  is FORMULA  FORMULA 
+is given by
+FORMULA 
+provided that FORMULA  and is 0 otherwise.
+
+Remark The conditions in the statement of the corollary imply that
+FORMULA 
+
+
+Let
+FORMULA 
+be a multi-chain in
+FORMULA . Suppose that, under the bijection
+FORMULA , the element FORMULA  corresponds to the tuple
+FORMULA , FORMULA .
+The inequalities in (REF ) imply that
+FORMULA  can be factored in the form
+FORMULA 
+where FORMULA  and, more generally,
+FORMULA 
+For later use, we record that
+FORMULA 
+
+Now, by (REF ), the block structure conditions on FORMULA 
+in the statement of the corollary translate into the condition that the
+type of FORMULA  is
+FORMULA 
+On the other hand,
+using (REF ), we see that the rank conditions in the
+statement of the corollary mean that
+FORMULA 
+In combination with (REF ), this yields the conditions
+FORMULA 
+Thus, we want to count the number of factorisations
+FORMULA 
+where the type of FORMULA  is given in (REF ), and where
+the “rank conditions" (REF ) are satisfied. So, in view of
+(REF ), we are in the situation of Theorem REF  with
+FORMULA  replaced by FORMULA ,
+FORMULA , FORMULA  replaced by FORMULA , FORMULA  replaced by FORMULA , FORMULA ,
+FORMULA  the type in (REF ),
+FORMULA , except that the factors are not exactly in the
+order as in (REF ). However, by (REF )
+we know that the order of
+factors is without relevance. Therefore we
+just have to apply Theorem REF  with the above
+specialisations. If we also take into account (REF ), then we
+arrive immediately at (REF ).
+This result is new even for FORMULA , that is, for the poset of
+Kreweras' non-crossing partitions of FORMULA . It implies
+all known results on Kreweras' non-crossing partitions and the
+FORMULA -divisible non-crossing partitions of Edelman. Namely, for FORMULA 
+it reduces to Armstrong's result {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}
+on the number of FORMULA -divisible non-crossing partitions
+in FORMULA  with a given
+block structure, which itself contains Kreweras' result
+{{cite:f8c839c5-7e7f-4536-a31e-49643650ac71}}
+on his non-crossing partitions with a given block structure as a
+special case. If we sum the expression (REF ) over all
+FORMULA  with FORMULA , then we obtain
+that the number of all multi-chains
+FORMULA  in Edelman's poset
+FORMULA  of
+FORMULA -divisible non-crossing partitions of FORMULA  in which
+FORMULA  has FORMULA  blocks of size FORMULA  equals
+FORMULA 
+provided that FORMULA ,
+a result originally due to Armstrong {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}.
+On the other hand, if we sum the expression (REF ) over all
+possible FORMULA , that is, FORMULA ,
+use of Lemma REF  with FORMULA  and FORMULA  yields that
+the number of all multi-chains
+FORMULA  in Edelman's poset
+FORMULA 
+where FORMULA  is of rank FORMULA , FORMULA , equals
+FORMULA 
+a result originally due to Edelman {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}}.
+Clearly, this formula contains at the same time a formula for the
+number of all FORMULA -divisible non-crossing partitions of
+FORMULA  with a given number of blocks upon setting FORMULA 
+(cf. {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}}),
+as well as that it implies that the total number of multi-chains
+FORMULA  in
+the poset of these partitions is
+FORMULA 
+upon summing (REF ) over all
+non-negative integers FORMULA  with FORMULA  by means
+of the multivariate Chu–Vandermonde summation, thus recovering the
+formula {{cite:2a7b6722-9c8f-4f37-ade8-620fa5a9a176}} for the zeta polynomial of the poset of
+FORMULA -divisible non-crossing partitions of type FORMULA .
+As special case FORMULA , we recover the well-known fact that the
+total number of FORMULA -divisible non-crossing partitions of
+FORMULA  is FORMULA .
+We continue with our results for type FORMULA . We formulate the theorem
+below on factorisations in FORMULA  only with restrictions on the
+combinatorial type of some factors. An analogous result with
+group-theoretical type instead could be easily derived as
+well. We omit this here because, for the combinatorial applications
+that we have in mind, combinatorial type suffices.
+We remark that the theorem
+generalises Theorem REF , which can be obtained from the
+former as the special case in which FORMULA  and FORMULA .
+Theorem 13 
+(i) For a positive integer FORMULA ,
+let the types FORMULA  be given,
+where
+FORMULA 
+and
+FORMULA 
+for some FORMULA 
+and let FORMULA  be given non-negative integers
+with
+FORMULA 
+Then the number of factorisations
+FORMULA 
+where FORMULA  is a Coxeter element in FORMULA 
+such that the combinatorial
+type of FORMULA  is FORMULA  FORMULA  and such
+that
+FORMULA 
+is given by
+FORMULA 
+where the multinomial coefficient is defined as in
+Lemma  REF.
+(ii) For a positive integer FORMULA 
+let the types FORMULA  be given,
+where
+FORMULA 
+and let FORMULA  be given non-negative integers.
+Then the number of factorisations (REF ) which satisfy
+(REF ) plus the condition
+that the combinatorial type of FORMULA  is FORMULA  FORMULA 
+is given by
+FORMULA 
+
+
+We start with the proof of item (i).
+In the factorisation (REF ),
+we first fix also the types of the FORMULA 's. For
+FORMULA  and FORMULA  let the type of FORMULA  be
+FORMULA 
+We know that the number of these factorisations is given by
+(REF ) with FORMULA  replaced by FORMULA  and the
+appropriate interpretations of the FORMULA 's. Next we fix
+non-negative integers FORMULA  and sum the
+expression (REF ) over all possible types FORMULA  of
+rank FORMULA , FORMULA , FORMULA .
+The corresponding summations are completely analogous to the first
+summation in the proof of Theorem REF . As a result, we obtain
+FORMULA 
+for the number of factorisations under consideration.
+In view of (REF ) and (REF ),
+to obtain the final result, we must sum these expressions
+over all non-negative integers FORMULA 
+satisfying the equations
+FORMULA 
+This is easily done by means of the multivariate version of the Chu–Vandermonde
+summation. The formula in (REF ) follows.
+The proof of item (ii) is completely analogous, we must, however, cope
+with the complication that the type FORMULA  cycle, which,
+according to Theorem REF , must occur in the disjoint
+cycle decomposition of exactly one of
+the factors on the right-hand side of (REF ), can occur in
+any of the FORMULA 's. So, let us fix the types of the
+FORMULA 's to
+FORMULA 
+FORMULA , FORMULA , except for
+FORMULA , where we require that the type of FORMULA  is
+FORMULA 
+Again, we know that the number of these factorisations is given by
+(REF ) with FORMULA  replaced by FORMULA  and the
+appropriate interpretations of the FORMULA 's.
+Now we fix
+non-negative integers FORMULA  and sum the
+expression (REF ) over all possible types FORMULA  of
+rank FORMULA , FORMULA , FORMULA . Again,
+the corresponding summations are completely analogous to the
+summations in the proof of Theorem REF . In particular,
+the summation over all possible types FORMULA  of
+rank FORMULA  is essentially the summation on the
+right-hand side of (REF ) with FORMULA  replaced by
+FORMULA  and FORMULA  replaced by
+FORMULA . If we use what we know from the proof of
+Theorem REF , then the result of the summations is found to be
+FORMULA 
+The reader should note that the term FORMULA  in this expression results from the summation over all
+types FORMULA  of rank FORMULA  (compare (REF ) with
+FORMULA  replaced by FORMULA ; we have FORMULA ).
+Using (REF ), (REF ) and (REF ),
+we see that the sum of all
+FORMULA  over FORMULA  and FORMULA  must be
+FORMULA .
+Hence, the sum of the expressions (REF ) over all FORMULA 
+equals
+FORMULA 
+Finally, we must sum these expressions
+over all non-negative integers FORMULA 
+satisfying the equations
+FORMULA 
+Once again,
+this is easily done by means of the multivariate version of the Chu–Vandermonde
+summation. As a result, we obtain the formula in (REF ).
+In view of the combinatorial realisation of
+FORMULA -divisible non-crossing partitions of type FORMULA  which we
+described in Section ,
+the special case FORMULA  of the above theorem has the following
+enumerative consequence.
+Corollary 14 
+Let FORMULA  be a positive integer, and let FORMULA  be
+non-negative integers with FORMULA .
+The number of multi-chains
+FORMULA  in the poset
+FORMULA 
+with the property that FORMULA 
+FORMULA  and that the
+number of non-zero blocks of FORMULA  of size FORMULA  is FORMULA  FORMULA 
+is given by
+FORMULA 
+provided that FORMULA  and is 0 otherwise.
+
+Remark The conditions in the statement of the corollary imply that
+FORMULA 
+The reader should recall from Section , that non-zero
+blocks of elements FORMULA  of FORMULA  occur in pairs
+since, with a block FORMULA  of FORMULA , also FORMULA  is a block of
+FORMULA .
+
+The arguments are completely analogous to those of the proof of
+Corollary REF . The conclusion here is that we need
+Theorem REF  with
+FORMULA , FORMULA  replaced by FORMULA , FORMULA  replaced by FORMULA ,
+FORMULA , FORMULA , and FORMULA  of the type
+FORMULA 
+in the case that FORMULA  (which enforces the
+existence of a zero block of size FORMULA  in
+FORMULA ), respectively
+FORMULA 
+if not. So, depending on the case in which we are, we have to apply
+(REF ), respectively (REF ). However, for FORMULA  these
+two formulae become identical. More precisely, under the above
+specialisations, they reduce to
+FORMULA 
+If we also take into account (REF ), then we
+arrive immediately at (REF ).
+This result is new even for FORMULA , that is, for the poset of
+Reiner's type FORMULA  non-crossing partitions. It implies
+all known results on these non-crossing partitions and their
+extension to FORMULA -divisible type FORMULA  non-crossing partitions due to
+Armstrong. Namely, for FORMULA 
+it reduces to Armstrong's result {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}
+on the number of elements of FORMULA 
+with a given block structure, which itself contains Athanasiadis' result
+{{cite:843f8b7e-75ec-48cf-8fa2-1d4032511f91}}
+on Reiner's type FORMULA  non-crossing partitions with a given block structure as a
+special case. If we sum the expression (REF ) over all
+FORMULA  with FORMULA , then we obtain
+that the number of all multi-chains
+FORMULA  in
+FORMULA  in which
+FORMULA  has FORMULA  non-zero blocks of size FORMULA  equals
+FORMULA 
+provided that FORMULA ,
+a result originally due to Armstrong {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}.
+On the other hand, if we sum the expression (REF ) over all
+possible FORMULA , that is, over FORMULA ,
+use of Lemma REF  with FORMULA  and FORMULA 
+(where FORMULA  stands for the difference between FORMULA  and
+FORMULA ) yields that
+the number of all multi-chains
+FORMULA  in
+FORMULA 
+where FORMULA  is of rank FORMULA , FORMULA , equals
+FORMULA 
+another result due to Armstrong {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}.
+Clearly, this formula contains at the same time a formula for the
+number of all elements of
+FORMULA 
+with a given number of blocks (equivalently, a given rank) upon setting FORMULA 
+(cf. {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}),
+as well as that it implies that the total number of multi-chains
+FORMULA  in
+FORMULA  is
+FORMULA 
+upon summing (REF ) over all
+non-negative integers FORMULA  with FORMULA  by means
+of the multivariate Chu–Vandermonde summation, thus recovering the
+formula {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} for the zeta polynomial of the poset of
+generalised non-crossing partitions in the case of type FORMULA .
+As special case FORMULA , we recover the fact that the
+cardinality of FORMULA 
+is FORMULA  (cf. {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}).
+The final set of results in this section concerns the type FORMULA .
+We start with Theorem REF ,
+the result on factorisations in FORMULA  which is
+analogous to Theorems REF  and REF . Similar to
+Theorem REF , we formulate the theorem
+only with restrictions on the
+combinatorial type of some factors. An analogous result with
+group-theoretical type instead could be easily derived as
+well. We refrain from doing this here because, again,
+for the combinatorial applications
+that we have in mind, combinatorial type suffices.
+We remark that the theorem
+generalises Theorem REF , which can be obtained from the
+former as the special case in which FORMULA  and FORMULA .
+Theorem 15 
+(i) For a positive integer FORMULA 
+let the types FORMULA  be given,
+where
+FORMULA 
+and
+FORMULA 
+for some FORMULA 
+and let FORMULA  be given non-negative integers
+with
+FORMULA 
+Then the number of factorisations
+FORMULA 
+where FORMULA  is a Coxeter element in FORMULA 
+such that the combinatorial
+type of FORMULA  is FORMULA  FORMULA  and such
+that
+FORMULA 
+is given by
+FORMULA 
+the multinomial coefficient being defined as in
+Lemma  REF.
+(ii) For a positive integer FORMULA 
+let the types FORMULA  be given,
+where
+FORMULA 
+and let FORMULA  be given non-negative integers.
+Then the number of factorisations (REF ) which satisfy
+(REF ) as well as the condition
+that the combinatorial type of FORMULA  is FORMULA  FORMULA 
+is given by
+FORMULA 
+
+
+The proof of item (i) is completely analogous to the proof of item (i)
+in Theorem REF . Making reference to that proof,
+the only difference is that, instead of the
+expression (REF ), we must use (REF )
+with FORMULA  replaced by FORMULA  and the
+appropriate interpretations of the FORMULA 's.
+The summations over types FORMULA  with fixed rank FORMULA 
+are carried out by using (REF ) with FORMULA .
+Subsequently, the summations over the FORMULA 's satisfying
+(REF ) are done by the multivariate version of the Chu–Vandermonde
+summation. We leave it to the reader to fill in the details to
+finally arrive at (REF ).
+Similarly, the proof of item (ii) is analogous to the proof of item (ii) in
+Theorem REF . However, we must cope
+with the complication that there may or may not be a
+type FORMULA  cycle in the disjoint cycle decomposition of one of the
+FORMULA 's on the right-hand side of (REF ).
+In the case that there is no type FORMULA  cycle,
+we fix the types of the FORMULA 's to
+FORMULA 
+FORMULA , FORMULA , and sum the expression
+(REF ) with FORMULA  replaced by FORMULA  and the
+appropriate interpretations of the FORMULA 's over all possible
+types FORMULA  with rank FORMULA , FORMULA , FORMULA .
+This yields the expression
+FORMULA 
+In the case that there appears, however, a type FORMULA  cycle in FORMULA ,
+say, we adopt the same set-up as above, except that
+we restrict FORMULA  to types of the form
+FORMULA 
+Subsequently, we sum the expression (REF )
+with FORMULA  replaced by FORMULA  and the
+appropriate interpretations of the FORMULA 's over all possible
+types FORMULA  of rank FORMULA . This time, we obtain
+FORMULA 
+The sum over FORMULA  can be evaluated by means of the elementary
+summation formula
+FORMULA 
+Finally, we must sum the expressions (REF ) and
+(REF ) over all non-negative integers FORMULA 
+satisfying the equations
+FORMULA 
+Once again,
+this is easily done by means of the multivariate version of the Chu–Vandermonde
+summation. After some simplification, we obtain the formula in (REF ).
+In view of the combinatorial realisation of
+FORMULA -divisible non-crossing partitions of type FORMULA  which we
+described in Section ,
+the special case FORMULA  of the above theorem has the following
+enumerative consequence.
+Corollary 16 
+Let FORMULA  be a positive integer, and let FORMULA  be
+non-negative integers with FORMULA .
+The number of multi-chains
+FORMULA  in the poset
+FORMULA 
+with the property that FORMULA 
+FORMULA  and that the
+number of non-zero blocks of FORMULA  of size FORMULA  is FORMULA  FORMULA 
+is given by
+FORMULA 
+if FORMULA  and
+FORMULA 
+if FORMULA .
+
+Remark The conditions in the statement of the corollary imply that
+FORMULA 
+The reader should recall from Section , that non-zero
+blocks of elements FORMULA  of FORMULA  occur in pairs
+since, with a block FORMULA  of FORMULA , also FORMULA  is a block of
+FORMULA . The condition FORMULA , which is required for
+Formula (REF ) to hold, implies that FORMULA  must contain a zero block
+of size FORMULA , while the equality
+FORMULA , which is required for Formula (REF )
+to hold, implies that FORMULA  contains no zero block. The extra
+condition on zero blocks that are imposed on elements of
+FORMULA  implies that FORMULA  cannot
+be equal to FORMULA .
+
+Again, the arguments are completely analogous to those of the proof of
+Corollary REF . Here we need
+Theorem REF  with
+FORMULA , FORMULA  replaced by FORMULA , FORMULA  replaced by FORMULA ,
+FORMULA , FORMULA ,
+and FORMULA  of the type
+FORMULA 
+in the case that FORMULA , respectively
+FORMULA 
+if not. So, depending on the case in which we are, we have to apply
+(REF ), respectively (REF ).
+If we also take into account (REF ), then we
+arrive at the claimed result after little manipulation. Since we have
+done similar calculations already several times, the details are left
+to the reader.
+This result is new even for FORMULA , that is, for the poset of
+type FORMULA  non-crossing partitions of
+Athanasiadis and Reiner {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}, and of Bessis and Corran
+{{cite:d8a82328-3364-422b-aec8-d2b8ea369dff}}.
+Not only does it imply all known results on these non-crossing partitions
+and their extension to FORMULA -divisible type FORMULA  non-crossing partitions
+due to Armstrong, it allows us as well to solve several open
+enumeration problems on the FORMULA -divisible type FORMULA  non-crossing
+partitions. We state these new results separately in the corollaries
+below.
+To begin with, if we set FORMULA  in Corollary REF , then we obtain
+the following extension to FORMULA 
+of Athanasiadis and Reiner's result {{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}}
+on the number of type FORMULA  non-crossing partitions with a given block
+structure.
+Corollary 17 
+The number of all elements of
+FORMULA  which have
+FORMULA  non-zero blocks of size FORMULA  equals
+FORMULA 
+if FORMULA  and
+FORMULA 
+if FORMULA .
+
+On the other hand, if we sum the expression (REF ),
+respectively (REF ), over all
+FORMULA  with FORMULA , then we obtain
+the following generalisation.
+Corollary 18 
+The number of all multi-chains
+FORMULA  in
+FORMULA  in which
+FORMULA  has FORMULA  non-zero blocks of size FORMULA  equals
+FORMULA 
+if FORMULA  and
+FORMULA 
+if FORMULA .
+
+Next we sum the expressions (REF ) and (REF ) over all
+possible FORMULA , that is,
+we sum (REF ) over FORMULA ,
+and we sum the expression (REF ) over
+FORMULA .
+With the help of Lemma REF  and the simple binomial
+summation (REF ), these sums can indeed be evaluated.
+In this manner, we obtain the following result on rank-selected chain
+enumeration in FORMULA .
+Corollary 19 
+The number of all multi-chains
+FORMULA  in
+FORMULA 
+where FORMULA  is of rank FORMULA  FORMULA  equals
+FORMULA 
+
+
+This formula extends Athanasiadis and Reiner's formula
+{{cite:a682a21d-719e-46aa-9187-d2661c9c10b0}} from FORMULA  to
+FORMULA .
+Setting FORMULA , we obtain a formula for the
+number of all elements in
+FORMULA 
+with a given number of blocks (equivalently, of given rank);
+cf. {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}.
+Next, summing (REF ) over all
+non-negative integers FORMULA  with FORMULA  by means
+of the multivariate Chu–Vandermonde summation, we find
+that the total number of multi-chains
+FORMULA  in
+FORMULA  is given by
+FORMULA 
+thus recovering the
+formula {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} for the zeta polynomial of the poset of
+generalised non-crossing partitions for the type FORMULA .
+The special case FORMULA  of (REF ) gives the well-known fact that the
+cardinality of FORMULA 
+is FORMULA  (cf. {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}).
+In the following section,
+Corollary REF  will enable us to provide a new proof of Armstrong's FORMULA 
+(Ex-)Conjecture in type FORMULA .
+
+Proof of the FORMULA  Conjecture for type  FORMULA
+Armstrong's FORMULA  (Ex-)Conjecture {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}},
+which extends an earlier
+conjecture of Chapoton {{cite:12912cd9-692c-4607-af9f-21ebfedaf4de}}, relates the “FORMULA -triangle" of
+the generalised cluster complex of Fomin and Reading {{cite:49e9b834-93b7-4e61-aaf4-1309587e05b8}} to
+the “FORMULA -triangle" of Armstrong's generalised non-crossing
+partitions. The FORMULA -triangle is a certain refined face count in the
+generalised cluster complex. We do not give the definition here and,
+instead, refer the reader to {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}}, {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, because it will
+not be important in what follows. It suffices to know that, again
+fixing a finite root system FORMULA  of rank FORMULA  and a positive integer
+FORMULA , the FORMULA -triangle
+FORMULA  for the generalised cluster complex FORMULA  is a
+polynomial in FORMULA  and FORMULA , and that it was computed in
+{{cite:35af1c07-0525-4aaa-9520-c50dc939f071}} for all types. What we need here is that it was
+shown in {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}} that
+FORMULA 
+The “FORMULA -triangle" of FORMULA  is the polynomial defined by
+FORMULA 
+where FORMULA  is the Möbius function in FORMULA .
+It is called “triangle" because the Möbius function
+FORMULA  vanishes unless FORMULA , and, thus, the only coefficients
+in the polynomial which may be non-zero are the coefficients of FORMULA 
+with FORMULA .
+An equivalent object is the dual FORMULA -triangle, which
+is defined by
+FORMULA 
+where FORMULA  denotes the poset dual to FORMULA 
+(i.e., the poset which arises from FORMULA  by reversing all
+order relations), where FORMULA  denotes the Möbius
+function in FORMULA , and where FORMULA  denotes the rank
+function in FORMULA . It is equivalent since, obviously, we
+have
+FORMULA 
+Given this notation, Armstrong's FORMULA  (Ex-)Conjecture
+{{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} reads as
+follows.
+Conjecture FM For any finite root system FORMULA  of rank FORMULA  we have
+FORMULA 
+Equivalently,
+FORMULA 
+
+
+So, Equation (REF ) provides an expression for the left-hand
+side of (REF ) for FORMULA .
+With our result on rank-selected chain enumeration in FORMULA 
+given in Corollary REF , we are now able to calculate the
+right-hand side of (REF ) directly.
+As we mentioned already in the Introduction, together with the
+results from {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}, {{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}},
+this completes a computational case-by-case proof of
+Conjecture FM. A case-free proof had been found earlier by Tzanaki in
+{{cite:60109252-98ac-40bf-b996-0b24d8da6412}}.
+The only ingredient that we need for the proof is the well-known
+link between chain enumeration and the Möbius function.
+(The reader should consult {{cite:6c94ca80-da39-48df-b1d3-8983910c58ea}} for
+more information on this topic.)
+Given a poset FORMULA  and two elements FORMULA  and FORMULA , FORMULA ,
+in the poset, the zeta polynomial of the interval FORMULA ,
+denoted by FORMULA , is the number of (multi)chains from FORMULA  to
+FORMULA  of length FORMULA . (It can be shown that this is indeed a
+polynomial in FORMULA .) Then the Möbius function of FORMULA  and FORMULA  is equal
+to FORMULA .
+We now compute the right-hand side of (REF ), that is,
+FORMULA 
+In order to compute the coefficient of FORMULA  in this expression,
+FORMULA 
+we compute the sum of all corresponding zeta polynomials (in the
+variable FORMULA ), multiplied by FORMULA ,
+FORMULA 
+and then put FORMULA .
+For computing this sum of zeta polynomials,
+we must set
+FORMULA , FORMULA , FORMULA , FORMULA  in
+(REF ), and
+then sum the resulting expression over all possible
+FORMULA . (The reader should keep in mind that
+the roles of FORMULA  in Corollary REF  have to be reversed,
+since we are aiming at computing zeta polynomials in the poset dual to FORMULA .)
+By using the Chu–Vandermonde summation,
+one obtains
+FORMULA 
+If we put FORMULA  in this expression and multiply it by FORMULA ,
+then we obtain exactly the coefficient of FORMULA  in (REF ).
+
+A conjecture of Armstrong on maximal intervals containing a
+random multichain
+Given a finite root system of rank FORMULA ,
+Conjecture 3.5.13 in {{cite:e775482f-053e-45e8-9b6e-0fd57a4ec64a}} says the following:
+If we choose an FORMULA -multichain uniformly at random from the set
+FORMULA 
+then the expected number of maximal intervals in FORMULA 
+containing this multichain is
+FORMULA 
+where FORMULA  is the FORMULA -th Fuß–Narayana number associated
+to FORMULA , that is, the number of elements of FORMULA  of
+rank FORMULA . In particular, this expected value is independent of FORMULA .
+We show in this section that, for types FORMULA  and
+FORMULA , the conjecture follows easily from Edelman's (REF )
+respectively Armstrong's (REF ) (presumably, this fact constituted
+the evidence for setting up the conjecture), while
+an analogous computation using our new result (REF )
+demonstrates that
+it fails for type FORMULA . At the end of this section,
+we comment on what we think happens for the exceptional types.
+The computation of the expected value in the above conjecture can be
+approached in the following way. One first observes that a maximal
+interval in FORMULA  is an interval between an element FORMULA  of
+rank 0 and the global maximum FORMULA . Therefore, to
+compute the proposed expected value, we may count the number of chains
+FORMULA 
+and divide this number by the total number of all chains in
+(REF ). Clearly, in types FORMULA , FORMULA , and FORMULA , this kind of
+chain enumeration can be easily accessed by (REF ),
+(REF ), and (REF ), respectively.
+We begin with type FORMULA . By (REF ), the number of chains
+(REF ) equals
+FORMULA 
+while the number of chains in (REF ) equals
+FORMULA 
+In both cases, we used the multivariate Chu–Vandermonde summation to
+evaluate the sums over FORMULA .
+The quotient of the two numbers is
+FORMULA 
+which by (REF ) with FORMULA  replaced by FORMULA , FORMULA , FORMULA , and
+FORMULA  agrees indeed with (REF ) for FORMULA .
+For type FORMULA , there is an analogous computation using (REF ),
+the details of which we leave to the reader. The result is that the
+desired expected value equals
+FORMULA 
+which by (REF ) with FORMULA , FORMULA , and
+FORMULA  agrees indeed with (REF ) for FORMULA .
+The analogous computation for type FORMULA  uses (REF ).
+The number of chains (REF ) equals
+FORMULA 
+
+while the number of chains in (REF ) equals
+FORMULA 
+
+The quotient of (REF ) and (REF ) gives the
+desired expected value. It is, however, not independent of FORMULA , and
+therefore Armstrong's conjecture does not hold for FORMULA .
+In the case that FORMULA  is of exceptional type, then, as we outline in
+the next section, the knowledge of the corresponding decomposition
+numbers (see the Appendix) allows one to access the rank selected
+chain enumeration. Using this, the approach for computing the expected
+value proposed by Armstrong that we used above for the classical
+types can be carried through as well for the exceptional types. We
+have not done this, but we expect that, similarly to the case of FORMULA ,
+for most exceptional types
+the expected value will depend on FORMULA , so that
+Armstrong's conjecture will probably also fail in these cases.
+
+Chain enumeration in the poset of generalised non-crossing
+partitions for the exceptional types
+Although it is not the main topic of our paper, we want to briefly demonstrate in this
+section that the knowledge of the decomposition numbers
+also enables one to do refined enumeration in the generalised
+non-crossing partition posets FORMULA  for exceptional root
+systems FORMULA  (of rank FORMULA ).
+We restrict the following considerations to the
+rank-selected chain enumeration. This means that we want to count the
+number of all multi-chains FORMULA  in
+FORMULA , where FORMULA  is of rank FORMULA ,
+FORMULA . Let us denote this number by
+FORMULA , with FORMULA .
+Now, the considerations at the beginning of the
+proof of Corollary REF , leading to the factorisation
+(REF ) with rank constraints on the factors, are
+also valid for FORMULA  instead of FORMULA , that is, they
+are independent of the underlying root system. Hence, to determine
+the number FORMULA , we have to count all possible
+factorisations
+FORMULA 
+under the rank constraints
+(REF ) and FORMULA ,
+where FORMULA  is a Coxeter element in FORMULA . As we remarked in the
+proof of Corollary REF , equivalently we may count all
+factorisations
+FORMULA 
+which satisfy (REF ) and FORMULA .
+We can now obtain an explicit expression by fixing first the types of
+FORMULA  and all the FORMULA 's. Under these constraints, the
+number of factorisations (REF ) is just the
+corresponding decomposition number. Subsequently, we sum the
+resulting expressions over all possible types.
+Before we are able to state the formula which we obtain in this way,
+we need to recall some standard integer partition notation
+(cf. e.g. {{cite:d9d82c37-077e-41a0-8c82-fe81f1164da9}}).
+An integer partition FORMULA  (with FORMULA  parts) is an FORMULA -tuple
+FORMULA  of integers satisfying
+FORMULA . It is called an integer partition
+of  FORMULA, written in symbolic notation as FORMULA , if
+FORMULA . The number of parts (components) of FORMULA 
+of size FORMULA  is denoted by FORMULA .
+Then, making again use of the notation for the
+multinomial coefficient introduced in Lemma REF ,
+the expression for
+FORMULA  which we obtain in the way described
+above is
+FORMULA 
+where FORMULA  is taken over all integer
+partitions FORMULA  satisfying
+FORMULA , FORMULA ,
+..., FORMULA ,
+over all types FORMULA  with FORMULA ,
+and over all types FORMULA  with FORMULA ,
+FORMULA , FORMULA .
+By way of example, using this formula and the values of the
+decomposition numbers FORMULA  given in Appendix REF 
+(and a computer), we obtain that the number
+FORMULA  of all chains FORMULA  in FORMULA ,
+where FORMULA  is of rank 4, FORMULA  is of rank 6,
+and FORMULA  is of rank 7, is given by
+FORMULA 
+(which, by the independence (REF ) of decomposition numbers from
+the order of the types, is also equal to
+FORMULA  and FORMULA ),
+while the number FORMULA 
+of all chains FORMULA  in FORMULA ,
+where FORMULA  is of rank 2, FORMULA  is of rank 6,
+and FORMULA  is of rank 7, is given by
+FORMULA 
+(which is also equal to FORMULA  and FORMULA ).
+
+Acknowledgements
+The authors thank the anonymous referee for a very careful
+reading of the original manuscript.
+
+appendix
+
+The decomposition numbers for the exceptional types
+The decomposition numbers for type FORMULA  {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}
+We haveFORMULA , FORMULA ,
+FORMULA , FORMULA ,
+all other numbers FORMULA  being zero.
+
+The decomposition numbers for type FORMULA  {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}
+We have FORMULA , FORMULA ,
+FORMULA , FORMULA ,
+FORMULA , plus the assignments implied by
+(REF ) and (REF ),
+all other numbers FORMULA  being zero.
+
+The decomposition numbers for type FORMULA  {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}
+We have FORMULA , FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+plus the assignments implied by
+(REF ) and (REF ),
+all other numbers FORMULA  being zero.
+
+The decomposition numbers for type FORMULA  {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}
+We have FORMULA , FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+plus the assignments implied by
+(REF ) and (REF ),
+all other numbers FORMULA  being zero.
+
+The decomposition numbers for type FORMULA  {{cite:35af1c07-0525-4aaa-9520-c50dc939f071}}
+We have FORMULA ,
+FORMULA ,
+FORMULA , FORMULA ,
+FORMULA ,
+FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA ,
+FORMULA ,
+FORMULA , FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA ,
+FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA ,
+FORMULA , FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA , FORMULA ,
+FORMULA , FORMULA ,
+FORMULA , FORMULA ,
+FORMULA ,
+FORMULA ,FORMULA ,
+FORMULA , FORMULA ,
+FORMULA ,
+FORMULA , FORMULA ,
+FORMULA ,
+plus the assignments implied by
+(REF ) and (REF ),
+all other numbers FORMULA  being zero.
+
+The decomposition numbers for type FORMULA 
+{{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}
+We have FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+plus the assignments implied by
+(REF ) and (REF ),
+all other numbers FORMULA  being zero.
+
+The decomposition numbers for type FORMULA 
+{{cite:ad12a620-38ff-47ba-9bfb-7b5e161a40a0}}
+We have FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+FORMULA ,
+plus the assignments implied by
+(REF ) and (REF ),
+all other numbers FORMULA  being zero.

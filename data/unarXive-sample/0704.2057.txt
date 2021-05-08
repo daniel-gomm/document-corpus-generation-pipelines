@@ -1,0 +1,1741 @@
+
+M31 globulars and the fundamental plane
+Barmby et al.
+Structural parameters for globular clusters in M31 and generalizations
+for the fundamental planeBased on observations made with the NASA/ESA Hubble Space Telescope, obtained at the Space
+Telescope Science Institute, which is operated by the Association of Universities for Research
+in Astronomy, Inc., under NASA contract NAS 5-26555. These observations are associated with
+programs #8664, #9719, # 9767 and #10260.
+Pauline Barmby
+Harvard-Smithsonian Center for Astrophysics, 60 Garden St., Mailstop 65, Cambridge, MA 02138
+Dean E. McLaughlin
+Department of Physics and Astronomy, University of Leicester, University Road, Leicester LE1 7RH, UK
+William E. Harris
+Department of Physics and Astronomy, McMaster University, Hamilton, ON L8S 4M1, Canada
+Gretchen L.H. Harris
+Department of Physics and Astronomy, University of Waterloo, Waterloo, ON N2L 3G1, Canada
+Duncan A. Forbes
+Centre for Astrophysics and Supercomputing, Swinburne University, Hawthorn, VIC 3122, Australia
+The structures of globular clusters (GCs) reflect their dynamical
+states and past histories. High-resolution imaging allows the exploration of
+morphologies of clusters in other galaxies.
+Surface brightness profiles from new Hubble Space Telescope observations
+of 34 globular clusters in M31 are presented, together with fits of several different
+structural models to each cluster.
+M31 clusters appear to be adequately fit by standard King models, and do not
+obviously require alternate descriptions with relatively stronger halos, such
+as are needed to fit many GCs in other nearby galaxies.
+The derived structural parameters are combined with corrected versions of
+those measured in an earlier survey to construct a comprehensive catalog of
+structural and dynamical parameters for M31 GCs with a sample size similar
+to that for the Milky Way.
+Clusters in M31, the Milky Way, Magellanic Clouds, Fornax dwarf
+spheroidal and NGC 5128 define a very tight fundamental plane with
+identical slopes.
+The combined evidence for these widely different galaxies strongly reinforces the view that
+old globular clusters have near-universal structural properties regardless of host
+environment.
+galaxies: star clusters — galaxies: individual (M31) — globular clusters: general
+Introduction
+Globular clusters (GCs) have long been recognized as unique dynamical laboratories
+and unique markers of galaxy history. The integrated properties of GCs,
+such as age and metallicity, are believed to reflect conditions in the early
+stages of galaxy formation {{cite:1bb76fbb-a2b1-4fc8-a9dd-026a8bb0b092}}. The spatial structure and kinematics
+of GCs reflect both their formation conditions and dynamical evolution within
+the tidal fields of their host galaxies.
+Structures of GCs as described by surface brightness or velocity profiles
+can be fit by a number of different models. These models can be used to
+compute numerous parameters describing various aspects of cluster structure,
+but four independent parameters suffice to completely define a single-mass model. It is helpful
+to think of cluster structures as being defined by spatial scale, spatial concentration,
+total luminosity, and a relation between luminosity and mass, but
+many different parameter choices are possible. {{cite:9a6fa58e-ac86-4278-bb68-5d1ea81d39f7}} and {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}} used formally
+different, but entirely equivalent, sets of structural parameters to show that
+globular clusters in the Milky Way do not occupy the full four-dimensional
+parameter space but instead define a remarkably narrow `fundamental plane'.
+The same appears to be true for clusters in M31 {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}, {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}, {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}, in NGC 5128 {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}},
+and in M33 {{cite:fc154f50-c9c6-427f-8aaa-990189efaec4}}. This evidence indicates that the formation and evolution
+processes for normal globular clusters were similar in a wide variety of environments {{cite:5a6d3f52-3512-42ee-8ec0-a6faf21c6bbc}}.
+The globular cluster fundamental plane is similar in character, but different
+in detail, to that of elliptical galaxies {{cite:321661fe-45a1-4fbe-8b9a-33739f932707}}.
+There have been several suggestions that at least some of the most massive GCs in the Milky Way
+and M31 are in fact the nuclei of destroyed dwarf galaxies {{cite:0ae99c55-ebe2-495a-bf3c-8a2db4e2baa4}}, {{cite:fb3dec07-f4f8-4bfe-b8e2-29600e7eeb2d}},
+or that they are related to ultra-compact dwarf galaxies {{cite:b92e588c-14c6-457c-82d5-deda97acbab1}}. Both dwarf galaxy
+nuclei and UCDs occupy somewhat different regions of the fundamental plane than do GCs,
+but structural properties have been measured for only a few objects
+in this transition mass region between globulars and galaxies.
+Combining samples of clusters from a number of nearby galaxies—
+where structures can be accurately measured with high-resolution imaging from the
+Hubble Space Telescope (HST)— is a way to improve the sample statistics
+particularly for the upper end of the GC mass range.
+To further understand the globular cluster fundamental plane, we have carried out
+a survey of massive globulars in M31 and
+NGC 5128 using the HST Advanced Camera for Surveys {{cite:8160dca5-ad2e-41e6-9362-d3cfd0891ffe}}.
+Other papers from this program discuss the NGC 5128 cluster sample {{cite:ab95b589-59d4-4a6a-8c08-d435b5c24bb0}},
+the techniques for measurement of those clusters' structural parameters {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}},
+and the comparison between massive globulars, nuclear star clusters, and `dwarf-globular
+transition objects' {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}}.
+This paper presents the new M31 observations and structural parameters,
+compiles a publicly-available catalog of measurements of structural parameters for
+the largest-ever sample of M31 clusters, and compares the resulting `fundamental
+planes' of globular cluster parameters in different galaxies.
+Throughout this paper we assume a distance to M31 of 780 kpc (1 pc
+subtends 026)
+and use the cluster nomenclature of the Revised Bologna Catalogue {{cite:fd15bce7-318d-447b-a422-4b3e2d97f112}}.
+
+Observational material
+We have used material from several different HST programs.
+Program GO-10260 (PI W. Harris) obtained ACS Wide Field Channel (WFC) images
+centered on six clusters in M31
+and twelve clusters in NGC 5128, selected to be those having FORMULA  and (for M31) no
+previous HST observations. Exposure times were 2370 s (one orbit split into three dither positions)
+in both the F606W and F814W filters.
+Most of the GO-10260 M31 observations were made in the period 2004 September 29–2004 October 01.
+Program GO-9719 (PI T. Bridges) obtained ACS High Resolution Channel (HRC) images of
+three M31 clusters using
+exposure times of 2020 s in F606W and 2680 s in F814W in 2003 August and September.
+Program GO-8664 (PI W. Harris) targeted 24 M31 clusters with a range of properties
+{{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}}
+for imaging with STIS in snapshot mode; exposure times were 480 s in the unfiltered
+50CCD/CL imaging mode. These data were obtained in fall 2000 and winter 2001.
+Of the 24 STIS targets, one (B329) is clearly a galaxy,
+and two more (B391 and B340) had faulty coordinates and were not on the images.
+Cluster B396 was bisected by the edge of the STIS image but the data
+were still usable.
+The cluster G001 (Mayall II) is one of the most massive in M31 and has been
+the subject of numerous recent investigations. It is often likened to the Milky Way's
+own massive cluster FORMULA  Cen; both clusters have been suggested as possible
+remnant dwarf galaxy cores {{cite:0aec54ac-db4f-4420-aa9c-69bfe6f1b7de}}. There has been some discussion about
+whether G001 contains a central black hole {{cite:5529fd87-4b4f-4117-b63f-284c9ddfd891}}, {{cite:297d03a5-012b-474f-89bd-166ac362cfc2}}, {{cite:22b3e1a5-882a-41a1-82fd-affc5a6bf109}} and
+also some widely differing measurements of its structural parameters
+{{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}. {{cite:22b3e1a5-882a-41a1-82fd-affc5a6bf109}} used new HST/ACS observations
+of G001 (obtained as part of GO-9767) to produce a surface brightness profile
+as part of an effort to constrain the mass of any putative central black hole,
+but those authors did not give values for the cluster's structural parameters.
+{{cite:73a8ede5-90a0-4873-a836-e0c4744d6338}} fit {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models to the ACS data. Because of the importance
+of G001, we decided to re-analyze
+the {{cite:22b3e1a5-882a-41a1-82fd-affc5a6bf109}} observations, which consist of six exposures totaling 41 minutes of integration
+time with the ACS HRC in the F555W filter.
+The HST images offered the possibility of detecting new clusters or confirming
+additional cluster candidates other than the targets.
+All the M31 images were searched for additional clusters and inspected at the positions of cataloged cluster
+candidates. A number of additional cluster candidates appeared in the
+ACS images: B041, B056D, B061, B081D, B088D, B090, B102, B147, B162 and M027.
+We also (independently) re-discovered the new cluster B515 reported by {{cite:fd15bce7-318d-447b-a422-4b3e2d97f112}}.
+All of these candidates appear to be clusters except for B102, which
+is apparently a star.{{cite:fd15bce7-318d-447b-a422-4b3e2d97f112}} independently came to the same conclusions about the
+nature of B056D, B102, and B162.
+Interestingly, B147, which had been classified as a star based on velocity
+dispersion measurements by {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}, is clearly a resolved cluster
+(see Figure REF ). This object is also associated with an X–ray source
+{{cite:848f4e9d-77bf-4bb6-a2f8-8358f99540b5}}.
+Figure REF  shows images of B147 and the highly elliptical cluster B088
+demonstrating the power of HST imaging for resolving M31 globular clusters.
+To generate the largest possible sample of M31 globulars for fundamental plane
+analysis, we also include most of the clusters with structural parameters measured
+from images taken with HST's Wide Field and Planetary Camera 2 (WPFC2), reported
+in {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}. The clusters from {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}} included in
+the present sample include 59 objects with HST/WFPC2 photometry in the
+FORMULA -band and good measurements of FORMULA  and FORMULA .
+The central surface brightness values for these clusters have had an important error corrected.
+As also discussed in {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}, the software used to
+fit structural models in {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}} and also {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}} did not return
+a model central surface brightness value; instead both papers reported
+FORMULA  as the surface brightness of the central pixel of
+the PSF-convolved model image. As such, the values reported in
+{{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}} are systematically too faint. We re-computed
+FORMULA  from the {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} FORMULA  and FORMULA  values reported in
+{{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}} and the integrated FORMULA  magnitudes reported in {{cite:2e212299-2607-48c5-a197-bafd12b1f5b5}} or {{cite:ff64dcf0-da15-4d82-b2eb-ffa1309a59ba}}.
+The median surface brightness change is FORMULA  mag,
+with a large scatter. The maximum change is about 1.5 mag, and
+there were several clusters, both bright and faint, whose central
+surface brightnesses were nearly unchanged in the re-calculation.
+Using the model-fitting software of both {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} and {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}
+on a small number of M31 clusters showed that both recovered the
+the same FORMULA  and FORMULA  values to within the uncertainties, so the two sets of
+measurements should be consistent.
+To summarize, the new observations include 15 clusters observed using the ACS in either
+the Wide Field or High-Resolution Channel, in both F606W and F814W filters;
+and 19 clusters observed in the unfiltered mode using STIS.
+The observations of cluster G001 with ACS/HRC in the F555W filter are not new
+but are re-analyzed here.
+There are therefore 50 surface-brightness profiles for 34 distinct objects
+(one of the STIS clusters, B023, is also in the ACS
+sample and has thus been observed three times).
+Adding the 59 objects from {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}, the sample of M31 clusters
+totals 93 objects, with some later omitted from the fundamental plane
+analyses (see § REF ). Estimates of the total size of
+the M31 GCS vary: one recent value is FORMULA  {{cite:ff64dcf0-da15-4d82-b2eb-ffa1309a59ba}}.
+Thus the HST sample comprises only a fraction of the total M31 population, but
+it is comparable in size to the full sample of non-core-collapsed
+Milky Way clusters considered by {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}, and about 10% larger than
+the sample of 85 Milky Way clusters analyzed by {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}}.
+We have not attempted to generate a complete sample of clusters observed
+with HST by searching the Archive for clusters serendipitously
+observed in data taken after the {{cite:ff64dcf0-da15-4d82-b2eb-ffa1309a59ba}} sample was compiled;
+however we expect that the present sample should be representative of M31 GCs
+particularly at the high-luminosity end. The exception is low-surface-brightness
+clusters for which our present analysis method is unsuitable: these include
+both faint clusters, some discussed in the following section, and also the
+`extended luminous' clusters discovered by {{cite:04c1882a-2033-4fac-862d-3249a76b852a}}
+(see also §REF ).
+
+Data analysis
+The data analysis procedures used for these data are described in detail by
+{{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}. Here the procedures are briefly summarized, and
+some details specific to the M31 observations noted.
+Surface Brightness Profiles
+The STScI-pipeline output drizzled images were used to
+measure cluster shapes with ELLIPSE in IRAF.
+Cluster center positions were fixed at values derived by centroiding and elliptical
+isophotes were fit to the data, with no sigma-clipping.
+A first pass of ELLIPSE was run in the usual way, with
+ellipticity and position angle allowed to vary with the isophote semi-major axis.
+Luminosity-weighted averages of ellipticity and position angle were
+determined from the results. In the second pass of ELLIPSE,
+surface brightness profiles on fixed, zero-ellipticity isophotes
+were measured (this was required because we chose to fit circular models
+for both the intrinsic cluster structure and the PSF).
+For several low-density clusters (B290 and B423 observed with STIS;
+B081D, B088D, B515, and M027 observed with ACS),
+a sensible, monotonically-decreasing profile could not be obtained:
+no models were fit to these clusters.
+Table  reports the average ellipticities, position angles,
+and aperture magnitudes measured from the ACS and STIS images, and tabulates some additional
+reference data (metallicity, reddening, galactocentric distance) for all of the M31 clusters.
+For 11 of the clusters, there are no metallicity estimates in
+the literature, so we have simply assigned FORMULA  to all of
+them (the mean and standard deviation of the metallicity
+distribution of the M31 GC system; {{cite:2e212299-2607-48c5-a197-bafd12b1f5b5}}).
+The raw output from ELLIPSE is in units of FORMULA  per pixel,
+which is converted to FORMULA  per square arcsecond by multiplying by
+FORMULA  for WFC, FORMULA  for HRC,
+or FORMULA  for STIS.
+To transform the ACS counts to surface brightness calibrated on the
+VEGAMAG system (from the ACS Handbook)
+FORMULA 
+where the zeropoints are FORMULA  for HRC/F555W, WFC/F606W,
+HRC/F606W, WFC/F814W, and HRC/F814W respectively.
+The STIS data were taken in unfiltered (“clear” or CL)
+mode, for which {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}} derive
+FORMULA 
+in the standard FORMULA  bandpass.
+We allow for the occasional over-subtraction of sky in the
+automatic reduction pipeline, and hence “negative” counts in some pixels, by
+working in terms of linear intensity instead of surface brightness in
+magnitudes. Givenhttp://www.ucolick.org/~cnaw/sun.html
+FORMULA , FORMULA ,
+and FORMULA , the calibration above yields
+FORMULA 
+Converting from luminosity density in
+FORMULA  to surface brightness is done according to
+FORMULA 
+for F814W;
+FORMULA 
+for F606W;
+FORMULA 
+for standard FORMULA  and F555W.
+The ELLIPSE profiles extended to FORMULA  pc
+from all images of the sample clusters, and thus in the model
+fitting a constant-background term is included to allow for any errors in
+sky subtraction in the automatic pipeline. Each profile was inspected, and
+one or two very discrepant points in each of a handful of clusters were
+excluded by hand.
+Inspection of the data quality images for the WFC images showed that, due to
+an unfortunate choice of CCD gain, the cores of several bright clusters
+(B042, B063, B082, B147, and B151) were saturated, with raw intensities
+above a nominal limit of 70 cts sFORMULA  pixFORMULA  (28,000 cts sFORMULA  arcsecFORMULA ,
+or FORMULA )
+all the way out to FORMULA  pc (or FORMULA  pix) in most cases.
+This is well beyond the
+FWHM of the WFC PSF in either F606W or F814W; see below. Intensities as high
+as this were not included in the model fitting, and thus the core
+parameters of these five clusters are constrained only very indirectly.
+None of the HRC or STIS images is saturated.
+Table  gives the final, calibrated intensity profiles for all clusters.
+These are not corrected for extinction, which is discussed below.
+The reported F606W-
+and F814W-band intensities are calibrated on the VEGAMAG scale, while the
+STIS data are on the standard FORMULA  system.
+The final column gives a flag for every point, which can
+take one of four values.
+“BAD” indicates that the intensity value is deemed dubious because
+it strongly deviates from its neighbors or is obviously affected by nearby
+bright stars or image artifacts.
+“SAT” indicates that the isophotal intensity is above
+the imposed saturation limit of 70 cts sFORMULA  pixFORMULA 
+“DEP” indicates that the radius is inside FORMULA  and the isophotal
+intensity is dependent on its neighbors. The ELLIPSE output
+includes brightnesses for 15 radii inside 2 pixels, but these are all measured
+from the same 13 central pixels and are clearly not statistically independent.
+To avoid excessive weighting of the central regions of the
+cluster in the fits, only intensities at radii
+FORMULA , were used.
+“OK” indicates that none of the above apply and the point is used in model fitting.
+
+Point-Spread Functions
+M31 clusters are clearly resolved with HST, but their observed core
+structures are still affected by the PSF. We chose not to deconvolve
+the data, instead convolving the structural models with a simple analytic
+description of the PSF before fitting.
+To estimate the PSF for the WFC, ELLIPSE was used (again with circular symmetry
+enforced) to produce intensity profiles out to radii of about 2
+(40 pixels) for a number of isolated stars on a number of images, and combined
+them to produce a single, average PSF. This was done separately for
+the F606W and F814W filters.
+We originally tried to fit these with simple Moffat profiles (with backgrounds
+added), but found that a better description was given by a function of the form
+FORMULA 
+The derived FORMULA  and FORMULA  values, and the implied FWHMs, are listed in Table
+.
+Although the WFC PSF is known to vary over the instrument's field of view,
+{{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} show that the model-fitting results are insensitive to this effect.
+For HRC data, the same functional form (eq.REF ) was fitted to the
+PSF images in F555W, F606W and F814W given by {{cite:9412e628-ca89-4985-9721-9c00c2457a40}} with
+the results also listed in Table .
+In the case of STIS, a similar procedure was followed {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}}
+and it was found that a standard Moffat function,
+FORMULA ,
+gives an adequate fit to
+the PSF, with parameters also listed in Table
+. These are the functions convolved with the structural
+models before fitting to the observed intensity profiles.
+
+Extinction and Color Corrections
+The effective wavelengths of the ACS F606W and F814W filters are
+FORMULA  Å and FORMULA  Å {{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}},
+so that from {{cite:174a0949-1c3e-482a-995c-865d2266f0d1}} FORMULA  and
+FORMULA —both of which are also found by
+{{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}}. This implies, rather conveniently, that
+FORMULA . Individual reddening estimates—the sum of
+foreground and M31-internal reddening—are available for most
+of the clusters in the sample, derived using the procedure described by
+{{cite:2e212299-2607-48c5-a197-bafd12b1f5b5}}. The {{cite:f016ea50-bbbd-4529-bea9-7a6866a54db5}} foreground value of
+FORMULA  mag is adopted for clusters without individual measurements.
+{{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}} give transformations from ACS F606W and F814W magnitudes to
+standard FORMULA  and FORMULA  for both WFC and HRC measurements, including linear and
+quadratic dependences on de-reddened FORMULA  color (their Tables 22 and
+23). However, measured FORMULA  is not available
+for 5 of the 15 clusters in the present ACS sample, and thus
+we chose instead to measure aperture FORMULA  colors from the current
+data, and manipulate the {{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}} relations to find FORMULA  and
+FORMULA  indices.
+Comparing the various “observed” and “synthetic” transformations from
+intrinsic FORMULA  magnitudes and FORMULA  colors to FORMULA  mags in
+{{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}}, it quickly becomes clear that there are systematic differences
+between them, at the level of FORMULA  mag in the color range
+FORMULA  appropriate for old clusters with sub-solar
+metallicities. However, a simple linear relation,
+FORMULA 
+both gives a good estimate of the average
+of the {{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}} relations (for VEGAMAG F606W magnitudes) and
+agrees very well with the predictions for old clusters in the
+population-synthesis models of {{cite:7375ac23-faad-4d25-b8da-78360452d00a}}, {{cite:f58824e1-ce62-4938-a722-1a5dbc6626b3}}. [VEGAMAG FORMULA 
+and FORMULA  indices were kindly computed for us, as functions of cluster
+age and metallicity, by C. Maraston.]
+To go further, VEGAMAG FORMULA  magnitudes must be related to FORMULA .
+All of the WFC and HRC transformations in {{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}} imply that
+FORMULA  to within FORMULA  mag or so, while the
+population-synthesis models of {{cite:f58824e1-ce62-4938-a722-1a5dbc6626b3}} have a roughly constant
+FORMULA  for FORMULA . Substituting
+FORMULA  for FORMULA  in equation (REF ) yields
+FORMULA 
+and then trivially,
+FORMULA 
+both with estimated rms scatter of about FORMULA  mag. These
+conversions were applied to both WFC and HRC data, after correcting the
+calibrated FORMULA  and FORMULA  magnitudes/intensities for extinction.
+Calibrating the other observations onto the standard FORMULA  scale
+was more straightforward. The ACS/HRC F555W filter is similar to
+the standard FORMULA  filter, and the data for G001 were calibrated using
+the extinction ratio and transformation given by
+{{cite:4354820f-34f6-4c55-9b07-1cb224859e6d}} (their Tables 15 and 23).
+The data for the 19 STIS clusters are already calibrated on the
+standard FORMULA  scale {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}}, as are the WFPC2 data from {{cite:ff64dcf0-da15-4d82-b2eb-ffa1309a59ba}}.
+The reddening values used to correct for
+extinction are recorded in Table .
+Given the color transformations above, the measured ACS aperture colors
+plus the assumed reddening values allow us to predict a reddened FORMULA  color
+to be compared with ground-based aperture colors.
+For the 10 of 15 ACS-observed clusters with FORMULA  colors
+{{cite:2e212299-2607-48c5-a197-bafd12b1f5b5}},
+the agreement between predicted and observed FORMULA 
+colors is very good: the mean offset is FORMULA  mag, with a
+median absolute deviation of 0.06 mag.
+The cluster B023 has been observed in all three bandpasses discussed here: F606W
+and F814W with ACS/HRC, and FORMULA  with STIS. The fits of {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models
+to these three independent profiles in § yield
+extinction-corrected total magnitudes of FORMULA , FORMULA , and
+FORMULA , with uncertainties of about FORMULA  mag in each. The implied
+global FORMULA  is essentially identical to the
+aperture color computed from the measurements in Table , and the
+fitted global FORMULA  and FORMULA  are within 0.1 mag of the
+predicted values—suggesting a level of agreement similar
+to that between FORMULA  and FORMULA  more generally.
+The cluster B041 is somewhat unusual. Its integrated colors
+suggest that it is perfectly average, compared to the rest of the M31 cluster
+system. However, the ACS image shows that a very bright, red star about
+05 from the cluster center is responsible for the redness of its
+FORMULA  and FORMULA  aperture colors.
+Both the innermost intensities from the ELLIPSE profiles and the total cluster FORMULA  and
+FORMULA  magnitudes from model fitting (in which the star is “smoothed
+over” in some sense), imply a de-reddened
+FORMULA  —much bluer than any other cluster in the sample.
+In fact, the population-synthesis model predictions of
+C. Maraston suggest that the oldest possible age for such a blue cluster is
+FORMULA  Gyr. Because of its red integrated color, this cluster is not
+included in any of the `massive young M31 cluster' samples of {{cite:86261dcb-e406-4fa3-9926-63a950d7bda0}} —
+showing that integrated properties are not always
+reliable guides to the true nature of extragalactic globular clusters.
+There are eight clusters in the WFPC2 sample which are members of
+`blue luminous compact cluster' samples `A' or `B' in {{cite:86261dcb-e406-4fa3-9926-63a950d7bda0}}.
+These are suspected of being young clusters by virtue of very blue colors
+[FORMULA ] or strong HFORMULA  absorption. These clusters and B041
+are not included in any of the fundamental plane correlations in §REF ;
+a total of 84 M31 clusters are considered there.
+
+Models
+Converting luminosity-based parameters from the model fits
+into mass-based quantities requires knowledge of mass-to-light ratios.
+Velocity-dispersion measurements do exist for a fraction of the sample (see §REF )
+but the measurements are far from complete or uniform.
+Instead, as in {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}, we use population-synthesis
+models to predict mass-to-light ratios for the full sample,
+using the code of {{cite:3cc597c6-3705-4c06-8dda-6ff25e218a19}} and assuming the (disk) stellar IMF of {{cite:290a10b5-02b9-4175-bc06-13b884ff72c9}}.
+These can then be used to produce (for example) predicted velocity dispersions that can be
+compared to current and future spectroscopic data.
+The values of FORMULA  for an assumed age of 13 Gyr
+are discussed further and tabulated in §REF 
+and shown as a histogram in Figure REF .
+For comparison, also shown is the (re-normalized to the same sample size)
+distribution of mass-to-light ratios for 85
+Galactic globulars with parameters cataloged by {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}}, calculated using the same population-synthesis
+model code with the same assumed stellar IMF and for the same assumed age of
+13 Gyr as in the present analysis. The distribution peaks at a
+slightly higher value of FORMULA  in M31 vs. the Milky Way,
+which simply reflects a slightly higher average GC metallicity in the sample
+of M31 clusters.
+The cluster structural models used in the fits are described in detail
+by {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}. The three models considered here are the often-used
+{{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} single-mass, isotropic, modified isothermal sphere;
+an alternate modification of a single-mass, isotropic isothermal
+sphere, based on a model originally introduced by {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} for elliptical
+galaxies; and the {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} or FORMULA  model.
+{{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models are similar to the standard {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models,
+in that their cores are nearly isothermal, but their envelope structures are
+relatively more extended—a feature that has been found to better describe the
+density profiles of old globulars and young massive clusters in the Local
+Group and in NGC 5128. See {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}} and {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} for more detailed
+discussion and for general comparisons between the two types of models.
+Two additional models, `power-law' profiles and the analytic {{cite:4a695301-0723-4fde-a21d-bf6619075086}} model, are
+found by {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} to provide little or no information beyond that contained in
+the first three models, and are not discussed here.
+Fitting the structural models to the data involves first
+selecting a value for FORMULA , the scale radius,The definition of FORMULA  varies between models: for {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models,
+FORMULA , while for {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} and {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}}
+this relation is only approximate. See {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} for details.
+and computing the
+dimensionless model profile FORMULA .
+The model is then convolved with the appropriate PSF
+having parameters taken from Table  to yield
+the product FORMULA . The fitting procedure allows
+for a varying scale radius FORMULA  and non-zero background FORMULA , and so minimizes
+FORMULA 
+for the measured intensity profile FORMULA  and uncertainties FORMULA  of each cluster in
+Table .
+Uncertainties on the fitted and derived model parameters are estimated in
+the usual way, from the range of their values in all
+models for which FORMULA  is within some specified distance of the absolute
+minimum (e.g., FORMULA  for 68% confidence intervals).
+Because the formal error bars estimated by ELLIPSE for the isophotal intensities are
+artificially small, the best-fit FORMULA  can be exceedingly
+high (FORMULA ) even when a model fit is actually very good.
+This would result in unrealistically small estimates of parameter uncertainties.
+We chose to re-scale the FORMULA  for all fitted models by a common factor chosen to make
+the global minimum FORMULA , where FORMULA 
+is the number of points used in the model fitting. Under this re-scaling, the global
+minimum reduced FORMULA  per degree of freedom is exactly one.
+This prescription for deciding fit uncertainties does not affect the identification
+of the best-fitting model itself, since the relative sizes of the uncertainties on
+individual data points are not changed.
+
+Results
+Model-fitting
+Figure REF  shows example surface brightness profiles and model fits
+for four M31 clusters chosen to span the observed luminosity range.
+The observed data plotted have had the fitted FORMULA  subtracted
+and then been converted to (extinction-corrected) surface brightnesses.
+Points with intensities below the subtracted background in the upper panel are
+represented here as solid points placed on the lower FORMULA -axis, with error bars
+extending upwards. The Figure shows that the M31 GCs are well-resolved by
+the HST imaging, and also demonstrates the core saturation for the brightest
+clusters exemplified by B151. For these particular clusters there is relatively little
+difference in the goodness-of-fit of the three different models. As expected,
+the {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models, with their extended halos, favor somewhat lower background
+levels, and the `cuspier' {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models favor higher central surface brightnesses.
+The clusters have projected half-light radii FORMULA  pc and King-model
+concentrations in the range 1–1.5, quite typical values for GCs in both M31 {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}
+and the Milky Way {{cite:a1acc265-01a8-475f-89b1-fd8a1c5e4b16}}.
+Table  summarizes the basic ingredients of all model fits to the
+full sample. The first column
+in this table gives the cluster name; the second, the detector/filter
+combination from which the density profile was derived;
+the third, the extinction in the F606W band;
+the fourth, the color term to transform photometry from the native bandpass of
+the data to the standard FORMULA  scale (see §REF ),
+and the fifth column lists the number of points in the intensity profile
+that are flagged as OK in Table  above, and thus were
+used to constrain our model fits.
+Subsequent columns in Table  cover three lines for each
+cluster, one line for each type of model fit. Column (6) identifies the model.
+Column (7) gives the minimum unreduced FORMULA  obtained for that class
+of model (without the re-scaling applied for uncertainty estimation).
+Column (8) gives the best-fit background intensity.
+Column (9) gives the dimensionless central potential FORMULA  of the best-fitting
+model (for {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} and {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models only).
+Column (10) gives the concentration FORMULA , or
+the {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} index FORMULA  of the best fit.
+Column (11) gives the calibrated and extinction-corrected central surface
+brightness in the native bandpass of the data.
+Column (12) gives the logarithm of the best-fit scale radius FORMULA  in
+arcsec (see §), and Column (13) gives the logarithm of FORMULA 
+in units of pc (obtained from the angular scale assuming FORMULA  kpc for M31).
+Error bars on all these parameters were defined in the same way as {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}.
+
+Derived quantities
+Table  contains a number of other structural cluster
+properties derived from the basic fit parameters. The details of their
+calculation are given in {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}; the contents are:
+
+FORMULA , the model tidal radius in pc (always
+infinite for {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models)
+
+FORMULA , the projected core radius of the model
+fitting a cluster, in units of pc
+
+FORMULA , the projected half-light, or effective, radius of a model:
+that radius containing half the total luminosity in projection, in units of pcCalculations show that the three-dimensional half-light radius FORMULA .
+
+FORMULA , a measure of cluster concentration
+
+FORMULA , the logarithm of the best-fit central (FORMULA ) luminosity surface
+density in the FORMULA  band, in units of  FORMULA
+
+FORMULA , the logarithmic central (FORMULA ) luminosity volume density in the FORMULA  band
+(for {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models the density at the 3-D radius FORMULA ),
+in units of  FORMULA
+
+FORMULA , the logarithm of the total integrated model
+luminosity in the FORMULA  band
+
+FORMULA 
+is the total, extinction-corrected apparent FORMULA -band magnitude of a
+model cluster
+
+FORMULA  is the FORMULA -band
+luminosity surface density averaged over the half-light/effective radius, in
+units of FORMULA .
+
+The uncertainties on all of these derived parameters have been
+estimated (separately for each given model family) following the FORMULA 
+re-scaling procedure described above.
+The re-computed values for the 59 clusters from {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}, for {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}}
+models only, are reported at the end of this Table.
+Table  next lists a number of “dynamical” cluster
+properties derived from
+the structural parameters already given plus a mass-to-light ratio.
+The first two columns of this table contain the name of each cluster and the
+combination of detector/filter for the observations. Column
+(3) lists the mass-to-light ratio, in solar units, adopted for
+each object from the analysis in §.
+The values of FORMULA  assume an age of 13 Gyr for all clusters.
+The error bars on FORMULA  in Table  include
+a FORMULA -Gyr uncertainty in age, as well as the previously tabulated
+uncertainties in [Fe/H]. The remaining entries in Table 
+are, for the best fit of every model type to every cluster:
+
+FORMULA , the
+integrated model mass in solar units, with FORMULA  taken from Column (10)
+of Table 
+
+FORMULA , the integrated binding energy in ergs, defined through
+ FORMULA
+
+FORMULA , the central surface mass density in units of  FORMULA
+
+FORMULA , the central volume density in units of FORMULA 
+(for {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models the density at the 3-D radius FORMULA )
+
+FORMULA , the surface mass density averaged over the effective radius FORMULA ,
+in units of  FORMULA
+
+FORMULA , the predicted line-of-sight velocity
+dispersion at the cluster center (or at FORMULA  for {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models), in km s FORMULA
+
+FORMULA , the predicted central “escape” velocity in
+km s FORMULA
+
+FORMULA , the two-body relaxation time at the model
+projected half-mass radius, in years
+
+FORMULA ,
+a measure of the model's central (at FORMULA  for {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models)
+phase-space density or relaxation time, in units of
+FORMULA .
+For FORMULA  in these units, and FORMULA  in years, FORMULA 
+{{cite:adb9445d-e9e9-48be-822b-94d4f636012e}}.
+
+The uncertainties in these derived dynamical quantities are estimated from
+their variations around the minimum of FORMULA  on the model grids,
+as above, combined in quadrature with the uncertainties in the
+population-synthesis model FORMULA .
+Finally, Table  provides the last few parameters
+required to construct the fundamental plane of globular clusters in M31
+under any of the equivalent formulations of it in the literature (see
+§REF  below). The last three columns of Table 
+are modified versions of the “FORMULA ” parameters of {{cite:544f9c83-3574-4ff0-a526-71e707fe0907}},
+who found that early-type galaxies and (separately) globular clusters
+defined the edges of planes in FORMULA  space. We define the parameters
+using mass rather than luminosity surface density, as this is more useful
+for comparing globulars to younger clusters and galaxies {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}},
+and emphasize this by using the notation FORMULA .
+FORMULA 
+In calculating FORMULA , FORMULA , and FORMULA  for Table
+, the FORMULA  predicted
+in Table  (Column 7) by adoption of
+population-synthesis mass-to-light ratios has been used, and FORMULA  evaluated
+by adding FORMULA  to FORMULA  from Column
+(12) of Table . (This means FORMULA  is therefore
+independent of the assumed mass-to-light ratio.) FORMULA  is also taken
+from Table  but put in units of kpc rather than pc, for
+compatibility with the galaxy-oriented definitions of {{cite:544f9c83-3574-4ff0-a526-71e707fe0907}}.
+
+Predicted Velocity Dispersions
+One use for the material presented in the previous subsections is to predict
+observable, line-of-sight velocity dispersions averaged over circular
+apertures of any radius, which can then be compared directly to extant and
+forthcoming spectroscopic data on the clusters in the
+sample. Ultimately such comparisons will be useful not only for independent
+assessments of the self-consistency of the structural model fits, but
+also to evaluate how close the dynamical mass-to-light ratios in these old
+globulars come to the expectations of population-synthesis models with no dark
+matter.
+Given any of the models with a fitted FORMULA  and FORMULA  or FORMULA  for any
+cluster, solving Poisson's and Jeans' equations and projecting along
+the line of sight yields a dimensionless velocity-dispersion
+profile, FORMULA  as a function of projected clustercentric radius FORMULA . The
+density-weighted average of FORMULA  within a
+circular region of radius FORMULA  then gives a dimensionless
+aperture dispersion for the cluster. Finally, normalizing with the
+predicted FORMULA  from the fits in Table , we can
+predict an observable FORMULA  for every model
+for every cluster, and for any specified FORMULA . Table  gives
+the results of these calculations for each of 5 apertures: FORMULA , and FORMULA . For a
+distance of 780 kpc to M31, a typical GC FORMULA –4 pc translates
+to roughly 08–11, so the range of apertures over which
+FORMULA  is calculated should be a good match to reasonable
+observations. The velocity dispersion inside other apertures
+can be obtained by interpolation.
+These predicted velocity dispersions can already be compared
+in a limited way to observations.
+Measured velocity dispersions for 29 M31 GCs, of which 22 are included in
+the current HST sample,
+are available from from {{cite:a6d0d495-649a-4c9d-88e2-a1f065fcd525}}, {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}, {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}, and {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}.
+These are summarized in Table .
+Figure REF  compares observed and model-predicted
+velocity dispersions, where the model predictions are derived from
+interpolation on the values in Table  to the aperture
+size reported for the observations.
+Aperture sizes were computed as FORMULA 
+where FORMULA  and FORMULA  are the reported spectrograph slit dimensions.
+Figure REF  shows that, except for a constant ratio, there is
+generally good agreement between observed and predicted velocity dispersions
+(the exception, cluster B037, is discussed further in §REF ).
+This justifies our use of population synthesis model
+mass-to-light ratios to derive masses and other properties such as binding energy.
+This procedure gives us a much larger sample
+of clusters to work with for a wider variety of analyses than would be possible
+using only direct velocity dispersion measurements. The median ratio
+between observed and predicted velocity dispersions is
+FORMULA , with an inter-quartile range
+FORMULA .
+This corresponds to an ratio between dynamical and population-synthesis-derived
+mass-to-light ratios of FORMULA ,
+consistent with the value for this ratio of FORMULA  found by {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}}
+for Milky Way and old Magellanic Cloud clusters.
+The lower dynamical mass-to-light ratios compared to those derived from
+population-synthesis models is consistent with with theoretical expectations
+that old Milky Way and M31 GCs have lost low-mass stars through evaporation,
+an effect not included in the models.
+
+Comparison of Fits in F606W and F814W
+Comparing model fits to the same cluster observed in different filters allows
+assessment of the systematic errors and color dependencies in the fits.
+Figure REF  compares the
+parameters derived from fits to the 15 ACS clusters observed in both F606W and F814W.
+In general the agreement is quite good, with somewhat higher scatter for the
+{{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} and {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} model fits than for the {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} fits.
+There are a few unsuccessful fits with very high concentrations, small sizes
+and extremely bright central surface brightnesses: the {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} model fit to B082 in F606W;
+{{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} model fit to B042 in F606W and B063 in F814W; and the {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} model
+fit to B147 in F814W. These are all clusters in which the central core data are
+not used due to saturation; fortunately the data in the other filter produce
+a more reasonable-looking fit. For all three models, the central FORMULA -band surface brightnesses
+as fit to the F814W data are slightly fainter than those from the
+F606W data, while the total model luminosities are essentially the same.
+The latter implies that our estimated FORMULA  and FORMULA  colors in
+§REF  are correct, while the former implies that the cluster
+centers are slightly bluer than the average cluster color. This could indicate
+the presence of blue stragglers or blue horizontal branch stars
+in these massive clusters, but it could also
+be due to the differing levels of saturation.
+A broader range of data will be needed
+to investigate the issue of color gradients in M31 GCs more thoroughly
+{{cite:57457a5e-c287-427f-8547-73ae90b68632}}.
+Because the model fit results in the two ACS bands are quite similar, and also
+because for the STIS and WFPC2 data we have only FORMULA -band data, we do
+not consider the F814W model fits in the following analyses.
+Parameters derived from the model fits given in Tables –
+refer to the F606W band observations only. The exception
+is B082, where we substitute the F814W fit results for the {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} fit.
+
+Comparison to previous results for individual clusters
+The famous M31 cluster G001 has discrepant published values of its half-light
+radius {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}, {{cite:3b34e06d-7cda-41c9-8a14-02106a93be04}}, which was a major motivation for re-analyzing
+it in this paper.
+{{cite:0aec54ac-db4f-4420-aa9c-69bfe6f1b7de}} reported a three-dimensional FORMULA , which converts to a projected
+FORMULA , while {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}} measured FORMULA  and {{cite:d1d05c62-fc3f-44bb-b3c8-dd11a6988df4}}
+FORMULA .{{cite:77e63577-d26a-4c47-8fc0-a6582e866ef6}} pointed out that the integrated photometry given by {{cite:0aec54ac-db4f-4420-aa9c-69bfe6f1b7de}}
+implies a half-light radius of about 118, much closer to
+other values.
+Our {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} model fits to the ACS/HRC F555W data resulted in a
+half-light radius FORMULA , and our {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} fit to the same data
+yielded FORMULA . The {{cite:0aec54ac-db4f-4420-aa9c-69bfe6f1b7de}} value is clearly the outlier,
+likely because it is for the half-mass, rather than the half-light radius,
+and because the {{cite:0aec54ac-db4f-4420-aa9c-69bfe6f1b7de}} analysis used multi-mass {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models.
+The surface brightness profile from the HRC observations is almost identical
+to that presented in {{cite:0aec54ac-db4f-4420-aa9c-69bfe6f1b7de}}, which combined data from WFPC2 observations
+including those used by {{cite:d1d05c62-fc3f-44bb-b3c8-dd11a6988df4}}, so we conclude that the physical model
+assumptions used are responsible for the differences between authors.
+Recently, {{cite:73a8ede5-90a0-4873-a836-e0c4744d6338}} also analyzed the ACS/HRC data used here: these authors derived
+a higher concentration FORMULA  compared to our {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} model value of 1.77,
+and a value of FORMULA  about twice as large as ours.
+This appears to be the result of weighting
+the outermost points in the surface brightness profile more heavily,
+yielding a larger tidal radius and higher concentration.
+The dashed line in {{cite:73a8ede5-90a0-4873-a836-e0c4744d6338}}'s Figure 3, which represents their
+model fit with the outermost surface brightness points excluded, is
+quite similar to our model fit, and we believe this to be more robust
+particularly in the better-defined inner part of the cluster.
+The heavily-reddened M31 cluster B037 has also been the subject of
+intensive study. {{cite:3b34e06d-7cda-41c9-8a14-02106a93be04}} analyzed the same F606W image of B037 discussed
+here, fitting a {{cite:4a695301-0723-4fde-a21d-bf6619075086}} model to a surface brightness profile made
+from a PSF-deconvolved image. They derived a core radius FORMULA , half-light
+radius FORMULA , concentration FORMULA ,
+and central surface brightness FORMULA  mag arcsecFORMULA  in F606W
+[using our values for extinction and FORMULA  color, this becomes FORMULA .]
+Our model fits generally result in a somewhat higher concentration
+and smaller core radius [FORMULA , FORMULA , FORMULA  for the {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} model].
+This relatively small change would not likely have affected {{cite:3b34e06d-7cda-41c9-8a14-02106a93be04}}'s
+conclusions about the nature of this cluster.
+{{cite:0f058d48-87ed-4aa9-a13e-0994e95390a5}} predict a velocity dispersion of 72 km sFORMULA 
+for B037, on the basis of a mass estimate of FORMULA .
+However, these FORMULA  and FORMULA 
+values are based on a population-synthesis FORMULA  ratio applied to an
+intrinsic cluster luminosity obtained by assuming a distance of FORMULA  kpc
+to M31, instead of our adopted 780 kpc (and a large FORMULA  close to
+the one we have used). Thus, comparison of their numbers with
+ours requires first multiplying their derived mass by FORMULA .
+In addition, the {{cite:0f058d48-87ed-4aa9-a13e-0994e95390a5}} mass and velocity dispersion are actually
+calculated for what the cluster would have been at an age of 10 Myr.
+However, the same population-synthesis models that they (like us)
+used—i.e., {{cite:3cc597c6-3705-4c06-8dda-6ff25e218a19}}—show that the cumulative effects
+of supernova explosions, massive-star winds, and AGB mass loss over 12–13 Gyr
+lead to a reduction of the 10-Myr total cluster mass by another factor
+of FORMULA  at its current, old age {{cite:8c81a036-85cc-4ad3-84d2-bd5ea2053fb1}}.
+Therefore, the present-day mass of B037
+implied by the work of {{cite:0f058d48-87ed-4aa9-a13e-0994e95390a5}} is in fact FORMULA ,
+in good agreement with our results here (Table ).
+The high velocity dispersion predicted for B037 by {{cite:0f058d48-87ed-4aa9-a13e-0994e95390a5}} is a `global'
+(not central) value following from the virial theorem assuming both their
+high mass and a rough estimate of the cluster half-light radius (FORMULA  pc in their analysis), which is significantly smaller than that in our
+more accurate profile fitting (FORMULA  pc; e.g., Table , column 5).
+Scaling to a 3-times smaller present-day mass, as above, and to a
+FORMULA -times larger FORMULA , the expected global velocity dispersion following
+self-consistently from Ma et al. is 72 km sFORMULA  km sFORMULA ,
+which is then entirely consistent with our predicted FORMULA 
+inside the largest apertures in Table .
+{{cite:a6d0d495-649a-4c9d-88e2-a1f065fcd525}} has measured a velocity dispersion of FORMULA  km sFORMULA 
+for B037 within an aperture of FORMULA  arcsec. Our predicted
+dispersion within this aperture follows from interpolation on Table :
+FORMULA  km sFORMULA . This factor-of-two discrepancy (which
+implies a factor-of-four discrepancy between the true cluster mass and
+that estimated from our de-reddened total luminosity and 13-Gyr old
+population-synthesis FORMULA  ratio) could be resolved by
+lowering the mass-to-light ratio, but reducing FORMULA  by a factor
+of 4 would require imply an age for B037 of only a few Gyr, in conflict with the SED-fitting
+results. Reducing the reddening of B037 to FORMULA  would yield a total
+luminosity in better agreement with the measured FORMULA , but this
+would also conflict with the {{cite:0f058d48-87ed-4aa9-a13e-0994e95390a5}} SED-fitting. The only viable
+resolution appears to be the suggestion by {{cite:a6d0d495-649a-4c9d-88e2-a1f065fcd525}} that the dust
+lane projected across the face of the cluster {{cite:3b34e06d-7cda-41c9-8a14-02106a93be04}}
+distorts measurements of extinction from integrated photometry.
+This should be testable with color profiles and star-count analysis from
+the ACS images. Such analysis is beyond the scope of the present paper,
+and the properties of B037 computed using FORMULA  are used in our
+subsequent analysis.
+
+Quality of Fit for Different Models
+{{cite:adb9445d-e9e9-48be-822b-94d4f636012e}} and {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} give detailed discussions of the differences between various
+cluster models and their applicability to GCs in galaxies other than M31.
+Which structural model best represents the M31 clusters? Figure REF 
+compares the FORMULA  values for the model fits as a function of cluster size
+FORMULA  and total (model) luminosity FORMULA . The difference between models is parameterized
+as
+FORMULA 
+which is independent of the FORMULA  re-scaling; significantly better fits
+of one model over another are signaled by FORMULA .
+In general, {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models
+fit the M31 cluster data better than {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} or {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models.
+Cluster size does not strongly affect FORMULA , but luminosity does:
+{{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models are more strongly preferred for more luminous M31 clusters.
+The preference for {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models for M31 clusters differs
+from results using the same profile-fitting software for
+for clusters in the Milky Way, Magellanic Clouds, and Fornax dSph
+{{cite:adb9445d-e9e9-48be-822b-94d4f636012e}} and NGC 5128 clusters {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}}, where
+{{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models fit as well as or better than than {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models.
+The results for M31 clusters do not appear to depend on
+the image saturation for some clusters — the clusters observed with ACS/HRC,
+where saturation was not a problem, were also better-fit with {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models.
+The fitting procedure returned higher background levels for M31 clusters than those in NGC 5128, but
+the background value does not correlate with FORMULA .
+Figure REF  compares the values of cluster
+parameters derived from {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} and {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} model fits.
+The parameters do not clearly vary with goodness-of-fit,
+and even the major outliers are not always much better fit with one model or the other.
+The mean offsets between parameters derived
+for the same cluster from {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} and {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models are
+comparable to the rms scatter, and only slightly larger than the typical
+parameter uncertainties:
+FORMULA , FORMULA ,
+FORMULA , and FORMULA .
+Small-scale systematic differences between the models (for example,
+{{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models, which have more extended halos, always return fainter central
+surface brightnesses FORMULA  than {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models) do not affect
+the global cluster parameters, such as the binding energy FORMULA  and
+total luminosity FORMULA . These are very similar in all three of {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}}, {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}}
+and {{cite:f86c0ebf-8843-475d-93da-c6b86fcf23a7}} models.
+We suspect that the preference for {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} over {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models is
+due to some more subtle feature of the observational data that we have not yet been able to isolate,
+rather than an intrinsic difference
+between M31 clusters and those in other galaxies. However, since a majority of the M31
+clusters have parameters derived only with {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} model fits, we use these
+models as the basis for the fundamental plane analysis presented in §REF .
+We do not expect the following discussion to depend on the model choice.
+
+Discussion
+We now combine the M31 GC parameters newly derived in the previous section
+with those for clusters in the Milky Way and Magellanic Clouds {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}}
+and NGC 5128 {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}} to form a large sample of GCs that have been
+analyzed in a nearly homogeneous way. The sample comprises
+291 clusters in six galaxies, an unprecedentedly large sample for defining
+the GC fundamental plane.
+In the following analysis, cluster luminosities are derived from the model fits
+to the surface photometry rather than integrated or aperture measurements.
+For the M31 and NGC 5128 clusters, model and measured luminosities are found to have excellent
+correspondence, while for Milky Way and Magellanic Cloud clusters, discrepancies
+between model and measured luminosities are often attributable to the measurement
+aperture being smaller than the clusters' full size {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}}.
+Where M31 clusters are compared with NGC 5128 clusters from {{cite:4f1c8f8a-5adf-422d-bc4c-3e0b1936fab5}},
+the 27 clusters omitted from that analysis are also omitted here.
+As discussed above, {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} model parameters are adopted for clusters
+in all galaxies.
+Ellipticity distribution
+There are several possible explanations for the elongation of globular clusters:
+{{cite:77e63577-d26a-4c47-8fc0-a6582e866ef6}} lists elongation as possibly resulting from galaxy tides,
+internal rotation, cluster mergers {{cite:93ec48a0-e7ec-4a90-92b7-aa8538ea9484}}
+and `remnant elongation' (due to accretion?) from some clusters' former lives as
+dwarf galaxy nuclei.
+The latter two mechanisms would seem to be applicable to only a small
+fraction of clusters, probably the more massive one. They could be related to the
+observations that the most luminous young and old
+LMC clusters tend to be more flattened, and that
+the brightest globular clusters in both the Milky Way and M31 are also the most
+flattened {{cite:06a78532-ceca-4e24-bed5-9490c5915265}}, {{cite:ab7495f7-e85f-415f-83f3-cf5afffc7504}}.As discussed in §REF , there is some controversy about whether
+G001 or B037 is the most luminous M31 GC, but both are quite elliptical.
+Measurement of GC ellipticities is an uncertain business particularly
+for faint clusters: the shape of
+outer isophotes is affected by the galaxy background light and low
+signal-to-noise. For the extragalactic clusters measured with ELLIPSE,
+very low values of ellipticity are disfavored because the ELLIPSE algorithm
+diverges at FORMULA . With these caveats in mind, it is still
+worthwhile to explore ellipticity distributions and correlations with other
+parameters for clues to the origin of GC flattening.
+Testing the idea that GC elongation is due to galaxy tides can be done to some
+extent by comparing the ellipticities of clusters in different galaxies, and
+thus different dynamical environments. Figure REF  shows the
+distribution of ellipticities for clusters in the Milky Way {{cite:a1acc265-01a8-475f-89b1-fd8a1c5e4b16}}, M31 (this work),
+and NGC 5128 {{cite:ab95b589-59d4-4a6a-8c08-d435b5c24bb0}}.
+Compared to Figure 7 of {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}}, the number of M31 clusters is about 10%
+larger (although the sample is somewhat different and includes more very luminous clusters);
+the number of NGC 5128 clusters is about 3 times larger and the distribution
+of their ellipticities somewhat more skewed to lower values.
+The distributions of ellipticities for M31 and NGC 5128 are not statistically
+different; both differ from the Milky Way distribution in having few very round clusters
+(likely an artifact of the measurement technique).
+The bottom panel of the Figure shows the distribution of ellipticity with
+galactocentric position: no correlation is evident.
+From this comparison there is no clear evidence for major differences in ellipticity
+distribution between the three different galaxies' GCs, and thus no evidence that the overall
+galaxy environment is a major factor.
+If cluster ellipticities are caused by internal processes such as rotation
+or velocity anisotropy, then relaxation through dynamical evolution should act
+to reduce any initial flattening {{cite:28d9f9e7-b823-4f33-93e6-253ba2467f32}}. More dynamically-evolved clusters might be
+expected to be rounder (although the relaxation time is long in the outer
+regions of clusters which heavily influence measured ellipticity).
+Figure REF  shows
+ellipticity as a function of luminosity and half-mass relaxation time for clusters
+in the three galaxies.
+A mild systematic decrease in FORMULA  with increased FORMULA  is visible, though with considerable
+scatter; measurements of very large ellipticities for clusters with
+low luminosities are more likely to be spurious.
+While the observation of {{cite:ab7495f7-e85f-415f-83f3-cf5afffc7504}} that the most luminous clusters in M31 and the Milky Way
+are highly elliptical remains true, it is clear that all three galaxies also have very luminous clusters
+which are quite round: did these bright, round clusters simply have less angular momentum at formation?
+Or are they the `true' globular clusters while the more flattened luminous clusters
+are remnant dwarf galaxy nuclei somehow flattened while being removed from their original
+galaxies? Further modeling of the dwarf galaxy stripping process might help to answer this question.
+No correlation of FORMULA  with the more important dynamical quantity FORMULA  is evident:
+the data do not appear to favor the contention that more evolved clusters are rounder.
+While primordial angular momentum still seems to be the most straightforward
+explanation for GC ellipticity, the observed distribution appears to be due to
+a number of factors.
+
+Correlations with position and metallicity
+Structures of GCs in the Milky Way have been shown to be largely independent of
+galactocentric distance and metallicity {{cite:2ed68725-9edd-47a6-9b5d-9c6be70813e0}}, {{cite:9a6fa58e-ac86-4278-bb68-5d1ea81d39f7}}, {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}, except for
+the correlation of half-light radius with FORMULA  first noted by {{cite:8f506f06-64a7-40ac-be92-c438824f39e8}}.
+Studies of cluster
+structures in nearby galaxies {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}, {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}} have found similar results, with the
+exception of a mild correlation between cluster half-light radius and metallicity:
+more metal-rich clusters tend to be smaller. The same effect is seen in more distant galaxies
+where the clusters' structures are barely resolved.
+{{cite:1bb76fbb-a2b1-4fc8-a9dd-026a8bb0b092}} discuss several possible explanations and conclude that the FORMULA 
+correlation is most likely a consequence of the correlation between FORMULA  and FORMULA 
+and the tendency of metal-rich GCs to be located at smaller FORMULA .
+Figure REF  plots structural parameters and [Fe/H] for our sample as
+a function of galactocentric distance FORMULA . For the Milky Way clusters
+the true three-dimensional distance is used, while for external galaxies only
+projected distances are available. For the M31 clusters, no correlation of
+concentration FORMULA  with FORMULA  is seen. Central surface brightness FORMULA 
+becomes fainter with increasing FORMULA  but this is likely to be a selection
+effect: fainter clusters are difficult to see against the bright background of
+the M31 bulge ({{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}} discuss the same effect in detail for NGC 5128).
+As expected, FORMULA  increases with FORMULA , although the
+trend is largely driven by the innermost clusters in M31. In the Milky Way
+the FORMULA  trend is driven both by small inner clusters and the large
+clusters at very large distances from the Galactic center. Such distant, low-surface
+brightness clusters will be difficult to detect in external galaxies, and their
+absence from the present sample may well be due to selection effects.
+For the clusters in NGC 5128, which cover a more restricted range in FORMULA ,
+{{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}} conclude that the FORMULA  trend is weak and only
+marginally significant. For the M31 and Milky Way clusters, a weak correlation
+of [Fe/H] with FORMULA  is present, but again is driven mainly by
+clusters at the extremes of FORMULA .
+The Magellanic Cloud and Fornax dSph clusters are offset from the larger
+galaxies in all of these plots, as might be expected from the parent galaxies' smaller sizes.
+Scaling cluster properties by galactocentric distance as in {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}
+is therefore expected to be useful in computing the `fundamental plane'
+for these clusters.
+There are half a dozen very small (FORMULA  pc) M31 clusters visible in the
+upper right panel of Figure REF . Such clusters are not found in
+the other galaxies studied, which makes their presence in M31 slightly suspicious.
+Of the six clusters, only the largest, B155, has a confirmatory radial velocity
+{{cite:fd15bce7-318d-447b-a422-4b3e2d97f112}} while the remainder are classified by those authors as “cluster candidates”.
+The compactness of these objects makes assessing their nature problematic, even
+with the use of HST imaging. They are a reminder that the structural analysis of
+star clusters in distant galaxies will always be problematic: existing catalogs are
+neither fully complete nor entirely reliable.
+Figure REF  plots cluster
+structural parameters as a function of [Fe/H]; only clusters with measured values of
+[Fe/H] (not assumed average values) are shown.
+No correlation of concentration FORMULA  with [Fe/H] is seen.
+A weak correlation of FORMULA  with [Fe/H] is present in the expected sense:
+FORMULA  decreases with increased metallicity.
+The exception is NGC 5128, for which the best-fit slope of
+FORMULA  against [Fe/H] is zero; the present sample of clusters in this galaxy also has
+a lower metallicity gradient ([Fe/H] vs. FORMULA ) than in other galaxies.
+The FORMULA [Fe/H] corrlation weakens if only clusters with FORMULA  kpc are considered,
+suggesting that a different mix of bulge and halo clusters in M31
+and the Milky Way compared to NGC 5128 may be responsible.
+For central surface brightness FORMULA  there is a slight
+systematic increase with [Fe/H], likely because of the weak correlation of [Fe/H]
+and FORMULA . Finally, the lower-right panel shows that there is
+a weak mass-metallicity correlation: this is due entirely to our use of population
+synthesis model mass-to-light ratios, which increase rapidly above
+FORMULA  {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}}.
+All of these trends,
+however, are mild compared with the correlations with cluster luminosity
+to be presented below.
+Figure REF  shows some of the correlations between cluster parameters
+and luminosity, for GCs in M31, the Milky Way, NGC 5128, the Magellanic Clouds (MCs), and
+the Fornax dSph. The properties of clusters in all six galaxies fall in the same
+regions of parameter space. The selection effects discussed above are apparent
+in that there are fewer faint and low-surface-brightness clusters in the extragalactic samples.
+The new M31 ACS/STIS observations in particular
+do not contain any faint, low-concentration clusters, partly because the ACS
+observations targeted luminous M31 clusters and also because very low-concentration
+M31 clusters are too well-resolved to be analyzed with the ellipse-fitting method used
+(see § REF ). There are few very large (FORMULA  pc) extragalactic
+clusters, probably because these are difficult to recognize and more easily confused
+with background galaxies. The right-hand panels of the Figure show the lack of
+correlation between FORMULA  and FORMULA  and the strong correlation of FORMULA  with FORMULA  which
+are both hallmarks of the globular cluster fundamental plane. The fundamental plane
+correlations evidently hold over nearly 4 decades in luminosity and in a variety
+of environments.
+
+The Fundamental Plane
+Correlations between globular cluster structural parameters are
+often summarized as describing a “fundamental plane” analogous to (but different from)
+that for elliptical galaxies. There are several equivalent formulations of the globular cluster
+fundamental plane in the literature {{cite:321661fe-45a1-4fbe-8b9a-33739f932707}}, {{cite:9a6fa58e-ac86-4278-bb68-5d1ea81d39f7}}, {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}, {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}}.
+Here we concentrate on the relationships between half-light radius, mass, and binding energy
+to search for differences between the fundamental planes of clusters
+in different galaxies. An important caveat to this analysis is that the GC masses used are
+derived from population synthesis model-predicted mass-to-light
+ratios, not from directly observed velocity dispersions (see § REF ).
+One of the many ways of looking at the globular cluster fundamental plane
+is a plot of projected cluster half-light radii as a function of mass.
+Modulo some stretching, this plot is equivalent to one of projected half-light
+surface density FORMULA  versus FORMULA , which in turn is the largest part of
+the FORMULA  and FORMULA  parameter space. A different reformulation
+makes FORMULA  vs. FORMULA  equivalent to binding energy FORMULA  vs. FORMULA :
+FORMULA  where FORMULA  is a weak function of the cluster concentration
+{{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}.
+Figure REF  shows FORMULA  versus FORMULA  for GCs in all of our galaxies. As
+is well known from previous investigations of the Galactic GC system
+{{cite:8f506f06-64a7-40ac-be92-c438824f39e8}}, {{cite:2ed68725-9edd-47a6-9b5d-9c6be70813e0}}, there is no clear, monotonic mass-radius relation for globular
+clusters. However, at masses FORMULA  there is an
+apparent upturn in the lower envelope of FORMULA  versus FORMULA . {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}}
+interpret this increasing lower bound on FORMULA  for
+clusters as an extension of a very similar relation for early-type
+galaxies. The latter relation follows from the existence of a “zone of
+exclusion” in the (luminosity-based) FORMULA  space of {{cite:321661fe-45a1-4fbe-8b9a-33739f932707}},
+which can be interpreted as a mass-dependent upper limit
+on the average surface density FORMULA . The bound FORMULA  for galaxies, simply extrapolated
+down into the GC mass range, is drawn as the dash-dot line in Figure REF ;
+see {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}} for further details.
+The two dashed lines in the lower-left corner of the Figure
+represent a different bound on GC size: evaporation by two-body relaxation,
+which is expected to occur within 20–40 initial half-mass relaxation times
+{{cite:b38782e0-932d-4a06-8f7b-dd61c6393e57}}. The two lines correspond to FORMULA  Gyr (upper)
+and FORMULA  Gyr (lower); clusters which formed with masses and sizes
+to the lower-left of these lines are expected to have evaporated by the present day.
+Several of the M31 clusters are below the `evaporation' lines, indicating that they
+must have evolved into this region of the diagram and may in fact be dissolving.
+The most extreme of these are the very compact M31 clusters discussed in
+§ REF . The identfication of these objects as M31 GCs is
+somewhat suspect: high-resolution spectroscopic observations would be of interest
+to confirm their status and measure velocity dispersions.
+None of the galaxies' clusters show evidence for correlation of half-light radius
+with mass, but there are differences between galaxies in both position and scatter
+of their clusters in Figure REF .
+The larger scatter for Milky Way clusters compared to those in M31 and NGC 5128
+can be attributed to the presence of more very diffuse clusters in the MW sample
+{{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}}
+and greater distance uncertainties for individual Galactic GCs.
+The M31 sample has very few diffuse clusters due to the selection effects described above,
+and so is offset to smaller average FORMULA  than the Milky Way or NGC 5128 samples
+The Magellanic Cloud and Fornax cluster samples are complete, however, and
+have larger average FORMULA  than the large-galaxy GCs.
+Is the difference between cluster sizes in different galaxies due to local environment?
+The structure of tidally-limited clusters should depend on the local galaxy density,
+and cluster sizes are known to be correlated with galactocentric position (see the
+upper right panel of Figure REF ). A better indicator of galactic
+potential than galactocentric distance alone is:
+FORMULA 
+where FORMULA  is the galaxy circular velocity.The normalization of FORMULA  ensures that quantities derived from it are
+equivalent to those plotted for Milky Way clusters in {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}.
+It should properly be computed with the three-dimensional galactocentric
+distance, but only the projected distance is available for the extragalactic clusters.
+We use values FORMULA  in km sFORMULA  of: Milky Way, 220;
+M31, 230 {{cite:a0ae2083-ec2a-4339-b684-3fa9391592f7}}; NGC 5128, 190 {{cite:a1399aab-52f0-41ee-8b72-4de84dc42143}}, {{cite:8f03cba1-e5fb-4eb9-b020-3f521d9e30a7}}, {{cite:d487e896-0451-4c90-af82-330cde98eb10}}, {{cite:6e9c748a-8cca-4dd4-a7a7-01770bf3ad4d}};
+LMC, 65 {{cite:169303a1-21c5-41f3-a7ff-8d70eba179c1}}; SMC, 60 {{cite:9e0c2879-ad58-46af-88fe-2406b3b5291a}}, and Fornax dSph, 18 {{cite:6109d789-7066-4154-b73f-4da5c3472436}}.
+For a galaxy whose total mass distribution
+is an isothermal sphere, mass density FORMULA , so
+FORMULA  is a guide to the local galaxy density.
+Figure REF  shows FORMULA  as a function of re-normalized galactocentric
+distance FORMULA , with the four galaxies plotted separately.
+The normalization has removed the FORMULA  offset between the Magellanic Cloud/Fornax clusters
+and those in the large galaxies, indicating that the larger cluster sizes
+in the small galaxies can be understood as due to the lower galactic densities.
+The least-squares fit of FORMULA  is shown
+for each galaxy, and given in Table . As might be expected,
+there is less dependence of FORMULA  on FORMULA  for the extragalactic clusters
+compared to the Milky Way GCs, due to the use of projected galactocentric distances in
+computing FORMULA .
+The normalization by galactic potential should allow us to fairly
+compare the fundamental planes of clusters in the different galaxies.
+In analogy with {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}} and {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}} we define the re-normalized quantities
+FORMULA 
+and
+FORMULA 
+where FORMULA  is derived from the fits given above.
+Figure REF  shows that there is no correlation of FORMULA  with [Fe/H],
+so any differences between galaxies are not due to residual effects of metallicity
+on the fundamental plane.
+The top panel of Figure REF  shows FORMULA  versus FORMULA , with the
+the corresponding least-squares fits for each galaxy given in Table .
+The basic proportionality FORMULA  is built into the definition of
+FORMULA , and clusters in all galaxies follow this relation very tightly.
+In particular, the fits for
+NGC 5128 and Milky Way clusters are identical within their errors, confirming
+the {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}} result with a sample three times
+larger and extending to much lower luminosities.
+At the high end of the mass range, the clusters in both M31 and NGC 5128 fall below
+the best-fit lines, indicative of the `break' in
+cluster properties at FORMULA  MFORMULA  noted by {{cite:c29a35ef-b6bb-4f9f-8a4c-c961b1b96d9a}}.
+Below this break, the fits for all galaxies are similar, with the largest
+differences at the low-mass end where the number of clusters is small
+and measurement errors are large.
+The bottom panel of Figure REF  shows the difference between
+FORMULA  predicted from the Milky Way fit and the measured values.
+Table  gives the mean offsets for each galaxy.
+The NGC 5128 and Magellanic Cloud clusters (and the Milky Way clusters, by
+construction) have offsets consistent with zero, while the M31 clusters have
+a slight offset which can be attributed to sampling issues: the lack
+of diffuse clusters and the presence of the low-FORMULA  objects at FORMULA  M FORMULA
+Globular clusters have a strikingly similar nature
+in the widely different environments we have sampled, including a dwarf
+spheroidal, irregulars, large disk galaxies, and a giant elliptical.
+The homogeneous and internally precise data we can now work with,
+in addition to the much larger sample sizes of clusters, have
+established the trend of the fundamental plane securely, showing
+that globular clusters in all these environments follow the first-order
+trend FORMULA  quite accurately. The scatter around this
+basic relation is surprisingly small, showing that the structural
+properties of these star clusters are far simpler than we could
+have expected from theoretical arguments alone. Even the
+most massive GCs seem to show a fairly smooth transition between
+the properties of clusters and those of dwarf galaxies.
+
+Summary
+New Hubble Space Telescope observations are used to construct surface brightness profiles for
+34 M31 globular clusters, including the most massive clusters in the galaxy. Structural
+models are fit to the surface brightness profiles: for reasons not yet understood,
+M31 clusters are unlike those in other nearby galaxies in slightly preferring {{cite:180bd449-b0aa-4918-aa6a-a9400081904b}} models
+over the more extended {{cite:c04595a7-3d20-40d2-8ffc-66f8258a6030}} models. When combined with previously-published data,
+we now have a comprehensive and publicly available compilation of a complete
+suite of structural and dynamical parameters for as many GCs in M31 as in the Milky Way.
+The structural parameters of
+clusters in M31 and other local galaxies define a very tight fundamental plane with similar slopes
+FORMULA ,
+showing the essential similarity of clusters in different environments over a range
+of almost 4 decades in luminosity or mass.
+M31 clusters are slightly offset from the FORMULA  relation
+defined by the Milky Way and NGC 5128, likely because of sampling effects.
+In both M31 and NGC 5128 clusters, the most massive GCs trend towards
+dwarf galaxies in the binding-energy/mass relation at about FORMULA  MFORMULA .
+The detailed modeling made possible by high-resolution imaging shows that
+the overall properties of globular clusters in different galaxies are
+remarkably similar; the subtle differences noted here may point to differences
+in the histories or environments of their parent galaxies.
+The present dataset pushes our assessment of the fundamental plane
+beyond the previous state of the field {{cite:61c4ed7e-9b09-4a39-905d-1f94c8e7fa45}}, {{cite:ec66d18a-a660-4ba7-9aa0-134eccdeb714}}, {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}, {{cite:adb9445d-e9e9-48be-822b-94d4f636012e}},
+making it possible to search for second-order trends in the FP line
+and probe the transition between the structures of globular clusters and galaxies.
+We thank the referee for a rapid and thoughtful report.
+Support to P.B. and D.E.M. for program GO-10260 was provided by NASA through a grant from the Space
+Telescope Science Institute, which is operated by the Association of Universities
+for Research in Astronomy, Inc., under NASA contract NAS 5-26555.
+W.E.H. and G.L.H.H. thank the Natural Sciences and Engineering Research Council of Canada for
+financial support. D.A.F. thanks the Australian Research Council for financial support.
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+lrrrrrrrl
+
+Integrated measurements for M31 clusters
+9
+0pt
+
+Cluster  FORMULA   FORMULA  
+FORMULA  or alt.a  FORMULA  
+FORMULA  FORMULA   [Fe/H]  sourceb
+    [E of N] 
+[VEGAMAG]  [VEGAMAG] 
+  [kpc]    
+
+9lACS/WFC targets from program 10260
+B037 0.27 54  16.06  14.07  1.38  2.97  FORMULA   P02
+B042 0.10 134  15.71  14.29  0.77  3.31  FORMULA   P02
+B063 0.10 28  15.31  14.13  0.44  3.47  FORMULA   HBK
+B082 0.05 161  15.02  13.63  0.72  3.61  FORMULA   P02
+B088 0.28 178  15.04  13.90  0.48  3.79  FORMULA   P02
+B151 0.07 8  13.26  13.26  0.38  1.61  FORMULA   HBK
+9lSerendipitous clusters observed in program 10260
+B056D 0.22 117  18.81  17.72  0.08  4.20  FORMULA   AVE
+B041  0.05 30  18.95  18.13  0.13  2.72  FORMULA   P02
+B061  0.14 2  16.83  15.62  0.37  3.58  FORMULA   P02
+B090  0.14 124  18.49  17.52  0.08  3.15  FORMULA   AVE
+B147  0.10 172  16.03  15.04  0.08  1.29  FORMULA   HBK
+B162c
+ 0.30 47  17.62  16.54  0.31  2.27  FORMULA   B00
+9lACS/HRC targets from programs 9719 and 9767
+B023  0.13 60  13.88  12.72  0.36  4.45 FORMULA   HBK
+B158  0.05 13  14.36  13.44  0.12  2.38  FORMULA   P02
+B225  0.05 3  13.87  12.89  0.15  4.65  FORMULA   P02
+G001  0.20 162  13.79  0.08  34.55 FORMULA   MEY
+9lSTIS targets from program 8640
+B020  0.05  40  14.97   0.08  7.37 FORMULA   HBK
+B023  0.12  81  14.12   0.36  4.45 FORMULA   HBK
+B196  0.05  60  17.36   0.24  8.10  FORMULA   B00
+B236  0.16  149  17.44   0.08  8.49  FORMULA   AVE
+B289  0.13  39  16.27   0.08  16.88 FORMULA   AVE
+B336  0.00  17.91   0.08  12.91 FORMULA   AVE
+B351  0.05  110  17.61   0.11  12.57 FORMULA   B00
+B361  0.16  0  17.08   0.08  14.43 FORMULA   AVE
+B363  0.15  173  17.91   0.08  10.44 FORMULA   B00
+B373  0.09  22  15.63   0.10  10.07 FORMULA   HBK
+B396c
+ 0.18  152  17.45   0.08  17.27 FORMULA   AVE
+B405  0.09  133  15.25   0.12  18.20 FORMULA   HBK
+B407  0.06  173  16.11   0.16  19.76 FORMULA   HBK
+B422  0.41  149  17.98   0.08  16.34 FORMULA   AVE
+B461  0.16  105  17.44   0.47  10.87 FORMULA   B00
+B462  0.09  70  18.03   0.08  3.74 FORMULA   AVE
+G002  0.09  106  15.93   0.08  33.62 FORMULA   HBK
+G339  0.10  174  17.35   0.08  28.68 FORMULA   AVE
+G353  0.16  121  17.31   0.08  26.32 FORMULA   AVE
+9lWFPC2-observed clusters from {{cite:89200cb4-8d55-437a-802a-67e397dbf7fe}}
+B006  0.08  74  15.46   0.13  6.39  FORMULA   HBK
+B011  0.09  76  16.58   0.08  7.68  FORMULA   HBK
+B012  0.08  46  15.04   0.11  5.74  FORMULA   P02
+B018  0.15  4  17.53   0.08  9.27  FORMULA   P02
+B027  0.07  97  15.56   0.16  5.99  FORMULA   HBK
+B030  0.10  118  17.38   0.66  5.64  FORMULA   P02
+B045  0.08  40  15.78   0.18  4.87  FORMULA   P02
+B058  0.10  138  14.93   0.12  6.94  FORMULA   HBK
+B068  0.22  42  16.41   0.45  4.31  FORMULA   HBK
+B076  0.09  69  16.93   0.21  2.85  FORMULA   P02
+B109  0.10  72  16.20   0.08  1.39  FORMULA   P02
+B110  0.05  49  15.36   0.16  2.92  FORMULA   P02
+B114  0.06  132  17.44   0.16  0.88  FORMULA   AVE
+B115  0.08  63  16.00   0.08  0.64  FORMULA   HBK
+B123  0.14  62  17.42   0.08  1.28  FORMULA   AVE
+B124  0.07  164  14.78   0.08  0.21  FORMULA   AVE
+B127  0.08  64  14.47   0.15  0.32  FORMULA   P02
+B143  0.05  158  15.95   0.13  0.97  FORMULA   HBK
+B155  0.12  80  18.01   0.16  3.14  FORMULA   AVE
+B156  0.05  67  16.97   0.08  3.60  FORMULA   P02
+B160  0.18  2  18.08   0.08  3.56  FORMULA   P02
+B231  0.17  136  17.25   0.08  5.54  FORMULA   P02
+B232  0.18  42  15.65   0.07  4.96  FORMULA   P02
+B233  0.11  74  15.72   0.12  8.05  FORMULA   HBK
+B234  0.07  71  16.78   0.08  6.00  FORMULA   P02
+B240  0.16  98  15.18   0.08  7.22  FORMULA   HBK
+B264  0.26  142  17.58   0.08  0.38  FORMULA   AVE
+B268  0.12  103  18.31   0.08  1.39  FORMULA   AVE
+B279  0.20  79  18.55   0.08  7.74  FORMULA   AVE
+B311  0.09  54  15.45   0.23  13.06  FORMULA   P02
+B315  0.13  159  16.47   0.08  12.62  FORMULA   HBK
+B317  0.11  66  16.57   0.13  10.14  FORMULA   HBK
+B319  0.0  0  17.61   0.08  11.80  FORMULA   B00
+B324  0.0  0  18.45   0.08  8.29  FORMULA   AVE
+B328  0.27  159  17.86   0.08  8.09  FORMULA   HBK
+B330  0.14  102  17.72   0.08  8.46  FORMULA   AVE
+B331  0.24  70  18.19   0.08  8.31  FORMULA   B00
+B333  0.23  26  18.84   0.08  7.95  FORMULA   AVE
+B338  0.06  102  14.20   0.12  10.21  FORMULA   HBK
+B343  0.09  70  16.31   0.07  14.71  FORMULA   HBK
+B358  0.12  63  15.22   0.08  19.78  FORMULA   HBK
+B368  0.0  0  17.92   0.08  9.52  FORMULA   AVE
+B374  0.21  106  18.31   0.08  9.64  FORMULA   P02
+B379  0.09  55  16.18   0.10  11.30  FORMULA   HBK
+B384  0.20  121  15.75   0.12  16.36  FORMULA   HBK
+B386  0.08  140  15.55   0.08  14.02  FORMULA   P02
+B468  0.0  0  17.79   0.08  20.05  FORMULA   AVE
+BH04  0.32  128  19.69   0.08  8.33  FORMULA   AVE
+BH05  0.19  123  16.06   0.08  9.01  FORMULA   AVE
+BH11  0  0  19.86   0.08  9.41  FORMULA   AVE
+BH18  0.10  116  18.18   0.08  12.35  FORMULA   AVE
+BH20  0.18  175  18.07   0.08  4.44  FORMULA   AVE
+BH21  0.15  30  18.61   0.08  5.01  FORMULA   AVE
+BH23  0.09  75  18.83   0.08  1.28  FORMULA   AVE
+BH24  0.38  44  20.67   0.08  5.37  FORMULA   AVE
+BH29  0  0  19.65   0.08  8.71  FORMULA   AVE
+DAO38 0.34  108  19.25   0.08  9.43  FORMULA   AVE
+M091  0  0  19.14   0.08  9.31  FORMULA   AVE
+NB39  0.13  28  17.94   0.08  0.19  FORMULA   AVE
+aF606W for ACS-observed clusters, except G001 (F555W).
+bHBK={{cite:ace0acdc-b5d6-45f9-b657-117a5fcf424f}}; P02={{cite:b64732fa-b7b6-45b5-853c-1992357d5f95}};
+B00={{cite:2e212299-2607-48c5-a197-bafd12b1f5b5}}; AVE=no measurement; FORMULA  assigned.
+cThese clusters appear close to the image edge; their measurements
+do not cover the full range of radial distance.
+ccccccl
+0pt
+49 F606W, F814W, or V Intensity Profiles for 33 GCs in M31
+
+7
+
+Name  Detector  Filter 
+FORMULA   FORMULA   uncertainty 
+Flag
+     
+[arcsec]  [FORMULA ] 
+[FORMULA ]
+(1)  (2)  (3)  (4) 
+(5)  (6)  (7)
+
+B056D  WFC  F814W  0.0260  2233.332  101.584  OK
+B056D  WFC  F814W  0.0287  2232.822  107.622  DEP
+B056D  WFC  F814W  0.0315  2233.302  112.895  DEP
+B056D  WFC  F814W  0.0347  2236.559  117.452  DEP
+B056D  WFC  F814W  0.0381  2241.757  122.118  DEP
+B056D  WFC  F814W  0.0420  2245.391  127.393  DEP
+B056D  WFC  F814W  0.0461  2245.646  133.215  DEP
+B056D  WFC  F814W  0.0508  2239.541  138.504  DEP
+B056D  WFC  F814W  0.0558  2234.688  143.454  OK
+B056D  WFC  F814W  0.0614  2229.836  148.906  DEP
+B056D  WFC  F814W  0.0676  2227.591  154.365  DEP
+Table  is published in its entirety
+in the electronic edition of the Journal. Only a small portion is shown here,
+for guidance regarding its form and content. See text for description
+of the FLAG column.
+lllcclr
+0pt
+PSF Models:
+FORMULA 
+
+7
+
+Detector  Filter
+ FORMULA   FORMULA   FORMULA   2cFWHM
+    [arcsec]     
+[arcsec]  [px]
+
+WFC  F606W  0.0686  3  3.69  FORMULA  2.5
+WFC  F814W  0.0783  3  3.56  FORMULA   2.9
+HRC  F555W  0.0267  3  3.09  FORMULA  2.1
+HRC  F606W  0.0294  3  2.95  FORMULA  2.4
+HRC  F814W  0.0351  3  2.96  FORMULA  2.8
+STIS  CL  0.074 2  4.2 FORMULA  1.8
+lccccrrrrrrrr
+
+0pt
+Basic Parameters of Fits to 49 Profiles of 33 GCs in M31
+
+13
+
+Name  Detector  Ext.  FORMULA  color 
+FORMULA   Model  FORMULA  
+FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA    FORMULA
+    [mag]  [mag]   
+    [FORMULA ]   
+  [mag arcsecFORMULA ]  [arcsec] 
+[pc]
+(1)  (2)  (3)  (4) 
+(5)  (6)  (7)  (8) 
+(9)  (10)  (11)  (12) 
+(13)
+
+B056D  WFC/F606  FORMULA   FORMULA   52 
+K66  FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+                   
+W  FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+                   
+S  FORMULA   FORMULA   — 
+FORMULA   FORMULA  
+FORMULA    FORMULA
+B056D  WFC/F814  FORMULA   FORMULA   52 
+K66  FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+                   
+W  FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+                   
+S  FORMULA   FORMULA   — 
+FORMULA   FORMULA  
+FORMULA    FORMULA
+B090  WFC/F814  FORMULA   FORMULA   50 
+K66  FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+                   
+W  FORMULA   FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+                   
+S  FORMULA   FORMULA   — 
+FORMULA   FORMULA  
+FORMULA    FORMULA
+See text for column descriptions.
+Table  is available in its entirety in the
+electronic
+edition of the Journal. A short extract from it is shown here, for guidance
+regarding its form and content.
+lcrrrrrrrrrr
+
+0pt
+Derived Structural and Photometric Parameters of GCs in M31
+
+12
+
+Name  Detector  Model 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA   FORMULA  
+FORMULA    FORMULA
+      [pc]  [pc] 
+[pc]   
+[FORMULA ] 
+[FORMULA ] 
+[FORMULA ]  [mag] 
+[FORMULA ]
+(1)  (2)  (3)  (4) 
+(5)  (6)  (7)  (8) 
+(9)  (10)  (11)  (12)
+
+B056D  WFC/F606  K66  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+        W  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+        S  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+B056D  WFC/F814  K66  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+        W  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+        S  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+B090  WFC/F814  K66  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+        W  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+        S  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA    FORMULA
+See text for column descriptions.
+Table  is available in its entirety in the
+electronic
+edition of the Journal. A short extract from it is shown here, for guidance
+regarding its form and content.
+lccrrrrrrrrrr
+
+0pt
+Derived Dynamical Parameters of GCs in M31
+
+13
+
+Name  Detector  FORMULA  
+Model  FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+    [FORMULA ] 
+  [FORMULA ]  [erg] 
+[FORMULA  pcFORMULA ]  [FORMULA  pcFORMULA ] 
+[FORMULA  pcFORMULA ]  [km sFORMULA ]  [km sFORMULA ] 
+[yr]  [FORMULA  (pc km sFORMULA )FORMULA ]
+(1)  (2)  (3)  (4) 
+(5)  (6)  (7)  (8) 
+(9)  (10)  (11)  (12)  (13)
+
+B056D  WFC/F606  FORMULA   K66 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            W 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            S 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+B056D  WFC/F814  FORMULA   K66 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            W 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            S 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+B090  WFC/F814  FORMULA   K66 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            W 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            S 
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+See text for column descriptions.
+Table  is available in its entirety in the
+electronic
+edition of the Journal. A short extract from it is shown here, for guidance
+regarding its form and content.
+lcrrrrr
+
+0pt
+Galactocentric Radii and FORMULA -Space Parameters for GCs in M31
+
+7
+
+Name  Detector  FORMULA  
+Model 
+FORMULA   FORMULA    FORMULA
+    [kpc]
+(1)  (2)  (3)  (4) 
+(5)  (6)  (7)
+
+B056D  WFC/F606  4.20  K66 
+FORMULA   FORMULA  
+ FORMULA
+            W 
+FORMULA   FORMULA  
+ FORMULA
+            S 
+FORMULA   FORMULA  
+ FORMULA
+B056D  WFC/F814  4.20  K66 
+FORMULA   FORMULA  
+ FORMULA
+            W 
+FORMULA   FORMULA  
+ FORMULA
+            S 
+FORMULA   FORMULA  
+ FORMULA
+B090  WFC/F814  3.15  K66 
+FORMULA   FORMULA  
+ FORMULA
+            W 
+FORMULA   FORMULA  
+ FORMULA
+            S 
+FORMULA   FORMULA  
+ FORMULA
+See text for column descriptions, particularly difference
+between FORMULA  definitions used here and those of {{cite:544f9c83-3574-4ff0-a526-71e707fe0907}}.
+Table  is available in its entirety in the
+electronic edition of the Journal. A short extract from it is shown here,
+for guidance regarding its form and content.
+lcrrrrrrrrr
+
+0pt
+Predicted Aperture Velocity Dispersions for GCs in M31
+
+11
+
+Name  Detector  FORMULA  
+Model  FORMULA   FORMULA  
+FORMULA  
+FORMULA  
+FORMULA  
+FORMULA  
+ FORMULA
+    [FORMULA ] 
+  [pc]  [arcsec] 
+[km sFORMULA ] 
+[km sFORMULA ]  [km sFORMULA ] 
+[km sFORMULA ]  [km sFORMULA ]
+(1)  (2)  (3)  (4) 
+(5)  (6)  (7)  (8) 
+(9)  (10)  (11)
+
+B056D  WFC/F606  FORMULA   K66 
+0.343  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            W 
+0.383  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            S 
+0.313  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+B056D  WFC/F814  FORMULA   K66 
+0.288  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            W 
+0.309  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            S 
+0.266  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+B090  WFC/F814  FORMULA   K66 
+0.259  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            W 
+0.445  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+            S 
+0.259  FORMULA  
+FORMULA   FORMULA  
+FORMULA   FORMULA  
+ FORMULA
+See text for column descriptions. Table  is
+available in its entirety in the
+electronic edition of the Journal. A short extract from it is shown here,
+for guidance regarding its form and content.
+lrrl
+
+0pt
+Measured Aperture Velocity Dispersions for GCs in M31
+
+4
+
+Name  FORMULA  
+Aperture  Source
+  [km sFORMULA ] 
+[arcsec]  
+
+Clusters in the present sample
+B006  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B006  FORMULA  1.80  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B012  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B020  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B020  FORMULA  1.55  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B020  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B023  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B023  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B037  FORMULA  2.77  {{cite:a6d0d495-649a-4c9d-88e2-a1f065fcd525}}
+B045  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B045  FORMULA  1.80  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B082  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B147  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B158  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B158  FORMULA  1.55  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B158  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B225  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B225  FORMULA  1.80  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B225  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B240  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B289  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B343  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B343  FORMULA  1.55  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B358  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B358  FORMULA  1.55  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B373  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B379  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B384  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B384  FORMULA  1.55  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B386  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B405  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B407  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+G001  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+G001  FORMULA  2.77  {{cite:a6d0d495-649a-4c9d-88e2-a1f065fcd525}}
+G002  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+Clusters not in the present sample B019  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B163  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B171  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B193  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B193  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B218  FORMULA  1.60  {{cite:eab5a78a-ebdf-485a-9313-8551d7af8a1c}}
+B218  FORMULA  1.55  {{cite:10f9cee3-2b8c-4116-b2af-c11fa84eea7f}}
+B224  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+B381  FORMULA  1.2  {{cite:52138fe6-f1c4-41b4-8391-f32bfbd237e3}}
+lllrlllrl
+0pt
+Fundamental plane fits
+
+9
+
+Galaxy 
+3cFORMULA  
+3c FORMULA
+  FORMULA   FORMULA   RMS 
+FORMULA   FORMULA   RMS  FORMULA   FORMULA 
+
+Milky Way FORMULA   FORMULA   0.21  FORMULA   FORMULA   0.21 FORMULA  85
+NGC 5128 FORMULA   FORMULA   0.19  FORMULA   FORMULA   0.19 FORMULA  104
+M31 FORMULA   FORMULA   0.17  FORMULA   FORMULA   0.17 FORMULA  84
+M31(ACS/STIS) FORMULA   FORMULA   0.09  FORMULA   FORMULA   0.10 FORMULA  33
+MCs+Fornax FORMULA   FORMULA   0.17  FORMULA   FORMULA   0.15 FORMULA  18

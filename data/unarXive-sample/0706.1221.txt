@@ -1,0 +1,555 @@
+
+Radial Velocities of Six OB Stars
+Boyajian et al.
+Radial Velocities of Six OB Stars
+T. S. Boyajian1, D. R. Gies1,
+E. K. Baines, P. Barai2, E. D. Grundstrom1, M. V. McSwain1,3,4,
+J. R. Parks, R. L. Riddle1,5, W. T. Ryle, and D. W. Wingert1
+Center for High Angular Resolution Astronomy and
+Department of Physics and Astronomy,
+Georgia State University, P.O. Box 4106, Atlanta, GA 30302-4106;
+tabetha@chara.gsu.edu, gies@chara.gsu.edu,
+baines@chara.gsu.edu, pabar56@phy.ulaval.ca, erika@chara.gsu.edu, mcswain@astro.yale.edu,
+parksj@physics.emory.edu, riddle@astro.caltech.edu, ryle@chara.gsu.edu, wingert@chara.gsu.edu
+1Visiting Astronomer, Kitt Peak National Observatory,
+National Optical Astronomy Observatory, operated by the Association
+of Universities for Research in Astronomy, Inc., under contract with
+the National Science Foundation.
+2Current Address: Departement de physique, de genie physique et d'optique,
+Universite Laval, Pavillon Alexandre-Vachon, Quebec, QC G1K 7P4, Canada
+3Current Address: Astronomy Department,
+Yale University, New Haven, CT 06520-8101
+4NSF Astronomy and Astrophysics Postdoctoral Fellow
+5Current Address: Thirty Meter Telescope,
+2632 E. Washington Blvd., Pasadena, CA 91107
+We present new results from a radial velocity study of
+six bright OB stars with little or no prior measurements.
+One of these, HD 45314, may be a long-period binary, but the
+velocity variations of this Be star may be related to changes
+in its circumstellar disk. Significant velocity variations
+were also found for HD 60848 (possibly related to nonradial
+pulsations) and HD 61827 (related to wind variations). The
+other three targets, HD 46150, HD 54879, and HD 206183, are
+constant velocity objects, but we note that HD 54879 has HFORMULA 
+emission that may originate from a binary companion.
+We illustrate the average red spectrum of each target.
+Binaries: spectroscopic —
+stars: early-type — stars: emission-line, Be —
+stars: individual (HD 45314, HD 46150, HD 54879, HD 60848, HD 61827, HD 206183)
+Introduction
+Radial velocity measurements exist for many of the bright
+OB stars because of their usefulness for binary mass determination
+and cluster dynamics. However, in a survey of the multiplicity
+of bright O-stars, {{cite:cd21519e-b762-4da0-b45b-173a8a7cbe81}} listed some 17 of 227 stars
+without sufficient radial velocity data to determine whether or
+not the stars were members of spectroscopic binaries.
+We observed six of these targets with unknown spectroscopic
+duplicity in two extended observing runs of high dispersion
+and high S/N spectroscopy at the Kitt Peak National Observatory
+(KPNO) coudé feed telescope in 2000. We have already
+reported on discoveries made during these runs of new
+single-lined spectroscopic binaries (HD 14633, HD 15137;
+{{cite:ec318de6-2bd8-4bac-b552-2a700c5fa78c}}) and double-lined spectroscopic binaries
+(HD 37366, HD 54662; {{cite:39d1d103-d5e3-47b3-8bf4-be5200ebf91c}}). Here we present our results
+on the six of the stars with mainly “unknown” spectroscopic binary status
+from the list of {{cite:cd21519e-b762-4da0-b45b-173a8a7cbe81}}. We describe the observations,
+measurements, and analysis in §2 and then discuss the
+individual targets in detail in §3. Our results are summarized
+in Table 2 of §2.
+
+Observations and Radial Velocities
+Red spectra were collected with the KPNO 0.9 m coudé feed
+telescope during two observing runs in 2000 October and 2000 December.
+The spectra were made using the long collimator,
+grating B (in second order with order sorting filter OG 550),
+camera 5, and the F3KB CCD, a Ford Aerospace
+FORMULA  device. The setup yielded a resolving
+power of FORMULA ,
+with a spectral coverage of FORMULA  Å. The
+exposure times were less than 30 minutes yielding a FORMULA  per pixel.
+We obtained between 22 and 62 spectra of each star.
+The spectra were extracted and calibrated using standard routines
+in IRAFIRAF is distributed by the National Optical Astronomy
+Observatory, which is operated by the Association of Universities
+for Research in Astronomy, Inc., under cooperative agreement
+with the National Science Foundation., and then each continuum
+rectified spectrum was transformed onto a uniform heliocentric
+wavelength grid for analysis. We removed atmospheric lines by
+creating a library of spectra from each run of the rapidly rotating
+A-star FORMULA  Aql, removing the broad stellar features from these,
+and then dividing each target spectrum by the modified atmospheric
+spectrum that most closely matched the target spectrum in a selected
+region dominated by atmospheric absorptions.
+We measured radial velocities in two ways.
+For targets with absorption lines, we formed
+a cross-correlation function (ccf) between a given
+spectrum and a single reference spectrum of the star
+(usually the first observation).
+These relative velocities were then transformed to an
+absolute velocity scale by adding a mean
+velocity measured by parabolic fits to the lower halves
+of the absorption lines in the reference spectrum.
+Two of the targets have spectra dominated by emission
+lines and in these cases we measured bisector velocities
+for the extreme line wings using the method of {{cite:25e8f06c-6462-4e2e-9fb0-82b9b3bd0721}}.
+All these velocities are shown in Table 1Available
+in full in the electronic version of the paper., which lists the star name,
+heliocentric Julian date of mid-exposure, radial velocity, and
+the line-to-line standard deviation FORMULA  (where
+multiple lines were measured). In §3, we give a more
+detailed description of the radial velocity analysis
+performed on the individual stars.
+tab1
+We checked for evidence of temporal variations in the
+velocity data by comparing the external scatter between
+observations FORMULA  (equal to the standard deviation of the
+individual velocities in Table 1) with an estimate of the
+internal error FORMULA . The internal error is the average of
+the line-to-line standard deviation FORMULA  for all but the
+cases of HD 45314 and HD 60848 where only one spectral feature was
+measured. For these two cases, we estimated FORMULA  by the
+average of FORMULA  for observations closely
+spaced in time. We then computed the FORMULA -statistic
+to determine the probability that
+the observed scatter is due to random noise {{cite:614fd101-20fc-4358-824b-41833043fde2}}.
+We assume that the variations are significant if this
+probability is below FORMULA  {{cite:614fd101-20fc-4358-824b-41833043fde2}}. The results
+are summarized in Table 2 that lists the star name,
+number of observations, the mean velocity, FORMULA , FORMULA ,
+the derived probability, and a short description of the
+probable source of the variations if present.
+Details for each target follow in the next section.
+tab2
+
+Notes on Individual Stars
+HD 45314
+The star HD 45314 (O9 pe, {{cite:02af5429-0f93-47b9-9b58-b1bdc3d51571}}; B0 IVe, {{cite:7b41ef0d-5d63-4ab6-9932-ca51ab882f12}}) has
+a speckle interferometric companion at a separation of 50 mas
+(corresponding to a period of FORMULA  y; {{cite:cd21519e-b762-4da0-b45b-173a8a7cbe81}}).
+The average red spectrum illustrated in Figure 1 shows that HFORMULA  and
+He1FORMULA  are double-peaked emission lines.
+This suggests that the emission forms in a disk and that the
+line wings form in the gas closest to the star. Thus, we can
+use measurements of the HFORMULA  wings as a proxy for the
+motion of the underlying star. We measured radial velocities
+using the wing bisector method of {{cite:25e8f06c-6462-4e2e-9fb0-82b9b3bd0721}}.
+fig1
+Our results indicate that there was a significant change in velocity
+from FORMULA  km sFORMULA  to FORMULA  km sFORMULA 
+between the runs. This may indicate that the Be star is a
+spectroscopic binary with a period of months. However, the
+emission profiles changed in shape between the runs (see Fig. 2
+for the HFORMULA  averages from each run), so it is also
+possible that the changes in bisector velocity result from
+physical changes in the gas distribution in the disk rather
+than orbital motion. We recommend a program of blue
+spectroscopy of this star to distinguish between the binary
+and disk variation explanations.
+fig2
+
+HD 46150
+The spectroscopic binary status of HD 46150 (O5 V((f)); {{cite:7999d312-75f9-4c8a-961d-d5f6586004ec}})
+remains inconclusive even though it has a history of radial velocity
+measurements spanning eight decades {{cite:5d816b99-0194-443b-9210-8d3cbc0912ce}}, {{cite:c5196b0e-93d8-4975-b250-80062896d076}}, {{cite:257cd4eb-202e-4222-b8cc-dd35f7c0c8e7}}, {{cite:b46c1cd7-234a-45ad-a7bf-948be38699fe}}, {{cite:e57c5a38-1490-4945-a1c1-1d049587d238}}, {{cite:c70453b2-a3d0-4ff9-a375-9ae26a9bbb0a}}, {{cite:7999d312-75f9-4c8a-961d-d5f6586004ec}}, {{cite:f98f4061-2ccf-4562-ac11-804a6f28ed39}}, {{cite:01187c30-5be8-4184-a580-1b8e22d1d62b}}.
+The measured radial velocities fall in the range of FORMULA  km sFORMULA .
+{{cite:01187c30-5be8-4184-a580-1b8e22d1d62b}} suggest that this range is significantly
+larger than expected for diverse measurements of a single star.
+The most extensive analysis of this star
+by {{cite:b46c1cd7-234a-45ad-a7bf-948be38699fe}} covered four observing
+seasons, with a mean FORMULA  km sFORMULA  and a range of 26 km sFORMULA .
+They conclude that the scatter results from
+atmospheric rather than orbital variations (see also {{cite:7999d312-75f9-4c8a-961d-d5f6586004ec}}).
+The mean red spectrum in Figure 3 shows a strong He2
+spectrum associated with a very early-type star. We measured
+ccf velocities of the HFORMULA , He1
+FORMULA , and He2
+FORMULA  features.
+The error in the mean velocity from closely spaced pairs
+is FORMULA  km sFORMULA  while the standard deviation
+among the mean velocities is FORMULA  km sFORMULA .
+A standard FORMULA -test {{cite:614fd101-20fc-4358-824b-41833043fde2}} indicates that a temporal
+variation this large is expected by random variations with a
+probability of FORMULA , i.e., the observed variation is probably
+significant. However, most of the variance comes
+from the first run where there appear to be relatively
+large night-to-night variations that are absent in the
+second run. This may indicate that the observational
+errors were larger in the first run compared to our estimate of
+FORMULA  from the scatter in measurements from the second run
+(also consistent with the larger line-to-line scatter in
+FORMULA  for the first run). Thus, the velocity variations are
+probably not significant and are consistent with
+constant radial velocity over the interval of our observations.
+fig3
+
+HD 54879
+The target HD 54879 (B3 V, {{cite:4ae4d818-d77d-42e7-b40c-cb18025894d0}};
+O9.5 V, {{cite:0db1bdd2-ef65-476c-8600-d9b8f11f7777}}; B0 V, {{cite:06e99652-bde7-4cc6-8e05-5456f5dcd9fc}})
+has only a few spectroscopic measurements over
+the past century. The mean spectrum shown in Figure 4
+indicates that it has HFORMULA  emission and is thus a Be star,
+which has historically never been observed in emission
+until now. We made ccf velocity measurements using the lines
+He1 FORMULA ,
+C2 FORMULA , and
+Si4 FORMULA .
+fig4
+Our FORMULA  measurements show no evidence of Doppler
+shifts in the absorption lines over both short and long timescales.
+The external error FORMULA  km sFORMULA  is somewhat larger than the internal error
+FORMULA  km sFORMULA . The FORMULA -test indicates that a scatter between
+observations of this size is expected with a probability of FORMULA ,
+so this star is radial velocity constant over the duration of the runs.
+The only other radial velocity measurement on record from
+{{cite:4ae4d818-d77d-42e7-b40c-cb18025894d0}}, FORMULA  km sFORMULA , is smaller than our
+mean of FORMULA  km sFORMULA . We caution that this
+discrepancy may be caused by measuring different lines in the
+blue part of the spectrum or by long term changes in the spectrum.
+The mean spectrum has very narrow lines of He1,
+C2, N2, O2, and Si4.
+These apparently sharp absorption lines are unexpected in
+Be stars that are normally rapid rotators with broad lines.
+One possibility is that HD 54879 is a rare Be star that
+is seen almost pole-on, so that the rotation is tangential
+to the line of sight and the lines do not suffer rotational broadening.
+Another possibility is that HD 54879 is a Be shell star in which
+the narrow absorptions form in a circumstellar disk that is projected against
+the star. The star might have a strong magnetic field that
+controls the gas outflow and that has spun down the star.
+Finally, the spectrum may be that of a long period binary
+consisting of a bright, narrow-lined B-star and a fainter Be star
+(although no companion was found in the speckle survey by
+{{cite:cd21519e-b762-4da0-b45b-173a8a7cbe81}}). This explanation is supported by the fact that
+the HFORMULA  emission does vary in strength and shape
+on short and long timescales in our observations while the
+absorption lines are constant.
+
+HD 60848
+The star HD 60848 is another Be-type object (O9.5 IVe, {{cite:7b41ef0d-5d63-4ab6-9932-ca51ab882f12}})
+that may be a runaway star because of its position well out of the
+Galactic plane {{cite:6e250853-4917-4df3-9dfe-b740652aee9f}}. It was recently observed with
+moderate dispersion blue spectra by {{cite:1442c6b9-c2d8-408f-8e27-13154eec97e2}} who found no evidence
+of velocity variability. We observed this star only during the
+second run, but with a higher sampling rate (as frequent as
+fifteen minute intervals during some nights). The mean red
+spectrum (Fig. 5) shows that HFORMULA  and He1
+FORMULA  all display double-peaked emission.
+fig5
+We measured relative radial velocities by determining ccf
+offsets from the first spectrum for the He1 FORMULA  region,
+and then these were placed on an absolute scale by finding the
+bisector velocity of the profile in the first spectrum using the method
+from {{cite:25e8f06c-6462-4e2e-9fb0-82b9b3bd0721}}. The external error of FORMULA  km sFORMULA  is larger
+than the internal error of FORMULA  km sFORMULA ,
+and the FORMULA -test indicates that this scatter has a probability
+of FORMULA  for an origin in random variations. Furthermore,
+there is clear evidence of systematic trends within some nights.
+We used the CLEAN algorithm from {{cite:56249db3-34d7-411a-a59c-23baeb9a95b2}} to find evidence
+of two periodic signals with periods of FORMULA  and FORMULA  hours
+(both with peak power far above the FORMULA  false alarm probability defined
+by {{cite:9130a8bc-4bd4-438c-bf15-ed935a04f984}}). These periods are much too small to be
+related to binary motion. They may be due to changes in disk
+density or illumination caused by nonradial pulsations in
+the underlying star {{cite:bff4c3a3-e2a3-46dd-bbac-7ebee6c04b23}}.
+
+HD 61827
+The star HD 61827 (OFORMULA  Ib, {{cite:38480047-eabf-4c24-8f59-a16c403575f2}};
+B3 Iab, {{cite:30527e1d-612b-4add-a888-78fd64819b3b}}; B3 Ia, {{cite:d1c42095-bc94-4662-8bb5-c0e5b6a9f108}})
+is a luminous object in an association surrounding the cluster
+NGC 2439 {{cite:d1c42095-bc94-4662-8bb5-c0e5b6a9f108}}. We found no evidence of a prior radial
+velocity measurement in the literature. The star's red spectrum (Fig. 6)
+shows HFORMULA  in emission as is often the case for B-supergiants.
+The lack of He2 FORMULA  and the relative strength
+of C2 FORMULA  support the later subtype
+adopted by {{cite:30527e1d-612b-4add-a888-78fd64819b3b}} and {{cite:d1c42095-bc94-4662-8bb5-c0e5b6a9f108}}.
+We used the C2 FORMULA  and
+He1 FORMULA  absorption lines in the
+ccf to determine radial velocities for this star.
+The ratio of the external to the internal error indicates
+that the star is a velocity variable.
+fig6
+Our spectra show dynamic HFORMULA  emission changes
+with variable red and blue peaks appearing to vary
+on a timescale of 5 – 10 d. We suspect that these
+variations are related to structures in the stellar wind
+that are modulated by rotation and temporal changes in
+the outflow. These emission variations in HFORMULA  appear to affect
+the velocities measured for the absorption lines of
+C2 and He1 through
+subtle effects of emission filling that are not
+apparent to the eye. For example, during the
+first run we observed the emergence of a strong redshifted
+HFORMULA  peak during the time when the absorption velocities
+attained their minimum value, and the appearance of a strongly
+blueshifted HFORMULA  peak occurred at the time when the
+absorption velocities reached a maximum. This correlation
+indicates that the absorption lines we measured
+(C2 and He1) are probably also
+partially filled in by weak emission that shifts the line
+center away from the location of the emission. Thus,
+we suggest that the apparent velocity variations in HD 61827
+are due to the effects of variations in the star's wind.
+
+HD 206183
+HD 206183 (O9.5 V, {{cite:046cc49d-d12f-4ba9-b254-b871144e24f7}}) resides in the Tr 37 cluster
+in the Cep OB2 association. {{cite:cd21519e-b762-4da0-b45b-173a8a7cbe81}} list two visual companions,
+but assign the star to the “unknown” status as a spectroscopic binary
+since only one other velocity measurement exists {{cite:b8afdb91-7051-4ec0-8dac-e8934c6662ad}}.
+The average red spectrum (Fig. 7) shows that the lines
+are narrow (FORMULA  km sFORMULA ; {{cite:046cc49d-d12f-4ba9-b254-b871144e24f7}}).
+We measured ccf radial velocities for HD 206183
+using HFORMULA  and He1 FORMULA .
+The mean velocities show no evidence for
+velocity variability over the two runs.
+fig7
+We thank Daryl Willmarth and the staff of KPNO for their assistance
+in making these observations possible.
+This work was supported by the National Science
+Foundation under grants AST-0205297, AST-0506573, and AST-0606861.
+Institutional support has been provided from the GSU College
+of Arts and Sciences and from the Research Program Enhancement
+fund of the Board of Regents of the University System of Georgia,
+administered through the GSU Office of the Vice President
+for Research.
+lccc
+0pt
+1
+Radial Velocity Measurements
+
+Star 
+Date 
+FORMULA  
+ FORMULA
+Name 
+(HJDFORMULA 2,450,000) 
+(km sFORMULA ) 
+(km sFORMULA ) 
+HD 45314  1817.942  FORMULA 31.3
+HD 45314  1818.945  FORMULA 32.2
+HD 45314  1819.936  FORMULA 31.2
+HD 45314  1820.931  FORMULA 32.0
+HD 45314  1821.931  FORMULA 32.2
+HD 45314  1822.926  FORMULA 31.9
+HD 45314  1823.866  FORMULA 32.0
+HD 45314  1823.987  FORMULA 32.5
+HD 45314  1824.888  FORMULA 31.4
+HD 45314  1825.004  FORMULA 30.6
+HD 45314  1830.956  FORMULA 34.2
+HD 45314  1888.841  FORMULA 24.2
+HD 45314  1888.849  FORMULA 23.2
+HD 45314  1889.906  FORMULA 23.8
+HD 45314  1890.883  FORMULA 24.1
+HD 45314  1892.849  FORMULA 25.7
+HD 45314  1893.897  FORMULA 23.5
+HD 45314  1894.867  FORMULA 23.2
+HD 45314  1894.940  FORMULA 22.7
+HD 45314  1895.892  FORMULA 19.7
+HD 45314  1896.815  FORMULA 21.1
+HD 45314  1896.927  FORMULA 20.3
+HD 45314  1897.814  FORMULA 20.2
+HD 45314  1897.921  FORMULA 19.5
+HD 45314  1898.823  FORMULA 21.2
+HD 45314  1898.933  FORMULA 21.4
+HD 45314  1899.820  FORMULA 21.5
+HD 45314  1899.927  FORMULA 21.4
+HD 45314  1900.813  FORMULA 19.4
+HD 45314  1900.920  FORMULA 19.0
+HD 45314  1901.800  FORMULA 19.7
+HD 45314  1901.929  FORMULA 19.6
+HD 46150  1817.950  34.4  18.4
+HD 46150  1818.954  25.5  11.6
+HD 46150  1819.945  27.0  10.5
+HD 46150  1820.982  27.5  10.7
+HD 46150  1821.939  27.6  1.6
+HD 46150  1822.933  32.6  10.2
+HD 46150  1823.874  32.2  6.8
+HD 46150  1824.895  41.2  14.8
+HD 46150  1825.010  43.2  14.9
+HD 46150  1830.962  39.3  17.0
+HD 46150  1889.918  34.4  6.4
+HD 46150  1890.892  33.5  6.9
+HD 46150  1892.887  34.2  7.4
+HD 46150  1893.918  31.9  9.3
+HD 46150  1894.875  37.5  5.4
+HD 46150  1894.947  35.9  6.2
+HD 46150  1895.900  35.3  4.6
+HD 46150  1895.962  34.6  11.1
+HD 46150  1896.823  35.2  5.5
+HD 46150  1896.934  33.7  3.4
+HD 46150  1897.821  32.8  8.7
+HD 46150  1897.929  34.4  3.0
+HD 46150  1898.831  32.7  5.6
+HD 46150  1898.941  35.8  5.1
+HD 46150  1899.828  34.9  5.5
+HD 46150  1899.934  32.8  6.5
+HD 46150  1900.821  31.4  5.4
+HD 46150  1900.928  35.0  5.5
+HD 46150  1901.807  33.3  6.0
+HD 46150  1901.936  33.3  15.3
+HD 54879  1817.976  35.1  1.3
+HD 54879  1818.969  37.4  2.7
+HD 54879  1819.971  36.6  2.9
+HD 54879  1821.978  33.2  2.4
+HD 54879  1822.974  33.1  5.2
+HD 54879  1823.964  35.4  1.0
+HD 54879  1824.910  39.4  2.7
+HD 54879  1889.953  33.4  0.3
+HD 54879  1890.931  35.5  2.1
+HD 54879  1892.911  33.7  2.1
+HD 54879  1894.890  34.0  3.1
+HD 54879  1894.964  36.5  0.6
+HD 54879  1895.940  34.9  1.6
+HD 54879  1896.040  35.7  4.1
+HD 54879  1896.889  36.3  3.7
+HD 54879  1896.958  36.5  2.3
+HD 54879  1897.885  35.7  1.8
+HD 54879  1897.949  34.8  1.5
+HD 54879  1898.897  35.2  1.7
+HD 54879  1898.960  35.4  1.4
+HD 54879  1899.891  34.8  2.3
+HD 54879  1899.953  34.2  4.1
+HD 54879  1900.884  36.4  1.8
+HD 54879  1900.947  35.4  2.1
+HD 54879  1901.892  36.7  1.8
+HD 54879  1901.955  35.7  3.8
+HD 60848  1890.035 5.4
+HD 60848  1890.049 4.7
+HD 60848  1890.918 9.0
+HD 60848  1891.985 3.9
+HD 60848  1891.999 3.0
+HD 60848  1892.934 5.6
+HD 60848  1892.952 3.2
+HD 60848  1892.970 0.2
+HD 60848  1893.953 7.1
+HD 60848  1893.978 9.6
+HD 60848  1893.982 11.1
+HD 60848  1894.006 8.2
+HD 60848  1895.997 7.8
+HD 60848  1896.006 11.5
+HD 60848  1896.004 11.2
+HD 60848  1896.013 9.1
+HD 60848  1896.021 10.6
+HD 60848  1896.982 0.5
+HD 60848  1896.990 1.5
+HD 60848  1897.009 2.1
+HD 60848  1897.017 6.4
+HD 60848  1897.026 7.2
+HD 60848  1897.986 FORMULA 0.2
+HD 60848  1897.995 0.5
+HD 60848  1897.994 2.2
+HD 60848  1898.002 3.1
+HD 60848  1898.011 4.8
+HD 60848  1898.020 4.2
+HD 60848  1898.099 5.9
+HD 60848  1898.047 6.1
+HD 60848  1898.056 7.1
+HD 60848  1898.983 5.0
+HD 60848  1898.992 3.9
+HD 60848  1899.000 2.7
+HD 60848  1899.019 3.7
+HD 60848  1899.027 2.0
+HD 60848  1899.037 3.2
+HD 60848  1899.046 2.8
+HD 60848  1899.044 4.1
+HD 60848  1899.053 4.5
+HD 60848  1899.987 4.9
+HD 60848  1899.995 3.4
+HD 60848  1899.994 3.4
+HD 60848  1900.003 3.7
+HD 60848  1900.011 3.0
+HD 60848  1900.022 2.2
+HD 60848  1900.030 5.0
+HD 60848  1900.049 8.1
+HD 60848  1900.970 11.0
+HD 60848  1900.988 11.0
+HD 60848  1900.997 12.8
+HD 60848  1901.005 10.8
+HD 60848  1901.004 8.8
+HD 60848  1901.014 7.5
+HD 60848  1901.022 5.2
+HD 60848  1901.031 2.7
+HD 60848  1901.040 1.4
+HD 60848  1901.989 4.6
+HD 60848  1901.997 5.4
+HD 60848  1902.006 4.6
+HD 60848  1902.004 6.5
+HD 60848  1902.013 8.6
+HD 61827  1817.992  71.8  4.6
+HD 61827  1818.983  71.7  1.5
+HD 61827  1819.985  67.6  1.2
+HD 61827  1821.987  66.8  1.5
+HD 61827  1822.985  69.4  1.1
+HD 61827  1823.992  75.2  0.9
+HD 61827  1824.986  86.2  1.7
+HD 61827  1831.002  77.1  1.1
+HD 61827  1889.927  60.5  3.8
+HD 61827  1890.949  67.2  2.8
+HD 61827  1893.930  66.7  0.6
+HD 61827  1894.905  68.1  1.2
+HD 61827  1895.973  68.9  2.1
+HD 61827  1896.899  73.4  0.2
+HD 61827  1896.968  72.7  0.9
+HD 61827  1897.895  68.4  0.3
+HD 61827  1897.962  68.1  0.4
+HD 61827  1898.907  67.1  2.1
+HD 61827  1898.969  68.3  1.5
+HD 61827  1899.901  65.2  1.5
+HD 61827  1899.963  64.0  1.3
+HD 61827  1900.894  67.8  2.0
+HD 61827  1900.956  67.4  2.2
+HD 61827  1901.902  78.0  1.8
+HD 61827  1901.965  77.6  0.7
+HD 206183  1817.670  FORMULA 9.4  2.6
+HD 206183  1818.708  FORMULA 9.2  1.2
+HD 206183  1819.864  FORMULA 6.9  1.5
+HD 206183  1820.703  FORMULA 7.9  1.6
+HD 206183  1821.687  FORMULA 9.3  1.6
+HD 206183  1822.691  FORMULA 7.7  1.6
+HD 206183  1823.682  FORMULA 8.3  0.9
+HD 206183  1823.888  FORMULA 7.2  1.4
+HD 206183  1824.664  FORMULA 4.4  1.2
+HD 206183  1824.834  FORMULA 4.0  1.5
+HD 206183  1830.704  FORMULA 8.1  1.1
+HD 206183  1830.879  FORMULA 7.0  0.8
+HD 206183  1890.603  FORMULA 8.8  1.5
+HD 206183  1893.570  FORMULA 8.7  1.1
+HD 206183  1894.566  FORMULA 8.5  0.4
+HD 206183  1895.601  FORMULA 7.9  1.0
+HD 206183  1896.600  FORMULA 8.5  0.9
+HD 206183  1897.596  FORMULA 8.9  0.6
+HD 206183  1898.606  FORMULA 8.0  0.8
+HD 206183  1899.607  FORMULA 7.4  0.3
+HD 206183  1900.603  FORMULA 7.2  1.7
+HD 206183  1901.587  FORMULA 7.8  1.0
+lcccccl
+0pt
+2
+Radial Velocity Summary
+
+Star 
+ 
+FORMULA  
+FORMULA  
+FORMULA  
+Prob.
+Name 
+FORMULA  
+(km sFORMULA ) 
+(km sFORMULA ) 
+(km sFORMULA ) 
+(FORMULA ) 
+Status
+
+HD 45314  33  FORMULA   5.2  0.4  0  Long-period SB or disk var.
+HD 46150  30  33.8  3.8  1.3  0.6  Constant
+HD 54879  26  35.4  1.4  0.6  3.1  Constant
+HD 60848  62  5.5  3.2  1.0  0.3  Short-period var.
+HD 61827  25  70.2  5.4  0.5  0  Wind-related var.
+HD 206183 22  FORMULA   1.4  0.6  3.4  Constant
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 

@@ -1,0 +1,430 @@
+
+Evolutionary games on minimally
+structured populations
+Gergely J. Szöllősi
+[]ssolo@angel.elte.hu
+[]angel.elte.hu/ ssolo
+Imre Derényi
+[]derenyi@angel.elte.hu
+[]angel.elte.hu/ derenyi
+Biological Physics Department Eötvös University, Budapest
+ 87.10.+e 87.23.-n
+Population structure induced by both spatial embedding and more general networks of interaction,
+such as model social networks, have been shown to have a fundamental effect on the dynamics and outcome of
+evolutionary games. These effects have, however, proved to be sensitive to the details of the underlying topology
+and dynamics. Here we introduce a minimal
+population structure that is described by two distinct hierarchical levels of interaction,
+similar to the structured metapopulation concept of ecology and island models in population genetics.
+We believe this model is able to identify
+effects of spatial structure that do not depend on the details of the topology.
+While effects depending on such details clearly lie outside the scope of our approach, we expect that
+those we are able to reproduce should be generally applicable to a wide range of models.
+We derive the dynamics governing the evolution of a
+system starting from fundamental individual level
+stochastic processes through two successive meanfield approximations.
+In our model of population structure the topology of interactions
+is described by only two parameters: the effective population
+size at the local scale and the relative strength of
+local dynamics to global mixing. We demonstrate, for example, the existence of a continuous transition leading to the dominance of cooperation in populations with hierarchical levels of unstructured mixing as the benefit to cost ratio becomes smaller then the local population size. Applying our model of spatial structure to
+the repeated prisoner's dilemma we uncover a novel and counterintuitive mechanism by which the constant influx of defectors sustains cooperation.
+Further exploring the phase space of the repeated prisoner's dilemma
+and also of
+the “rock-paper-scissor” game we find indications of rich structure and are able to reproduce
+several effects observed in other models with explicit spatial embedding, such as the maintenance of biodiversity and
+the emergence of global oscillations.
+Introduction
+The dynamics of Darwinian evolution is intrinsically
+frequency dependent, the fitness of individuals is tightly coupled to
+the type and number of competitors. Evolutionary dynamics acts, however,
+on populations, not individuals and as a consequence depends on not only
+population composition, but also population size and structure.
+Evolutionary game theory came about as the result of the realization that frequency dependent fitness
+introduces strategic aspects to
+evolution {{cite:d7c7dfcc-dc2a-4c96-bf07-8b0027993a14}}, {{cite:77deb71e-4c94-40fb-8e31-df36447be9d2}}, {{cite:7a8cf377-be2e-41fc-ac3d-f94209abea4f}}. More recently the
+investigation of the evolutionary dynamics of structured populations, where
+individuals only compete with some subset of the population, e.g. their neighbors in space or more generally in some
+graph {{cite:3f0a6e4e-95e7-4c24-abf2-b635dd358feb}}, {{cite:7504180c-2a09-405c-bab6-8d6cacf9f508}},
+has lead to the recognition that the success of different strategies
+can be greatly influenced by the topology of interactions within the
+population.
+Fundamental differences were found – compared to well-mixed populations, where individuals interact with
+randomly chosen partners – in models that describe the evolution of cooperation
+(variants of the prisoner's dilemma
+game {{cite:3f0a6e4e-95e7-4c24-abf2-b635dd358feb}}, {{cite:15e433d3-2fa9-4eac-a7b9-a0bcb0d14fcb}}, {{cite:047516ce-be25-4286-ab40-f1d1a303f746}}, {{cite:d17118ba-dbb3-479b-a420-5cf55558133c}}, {{cite:5df16539-5660-4052-8437-82700ad4ef2c}}) or
+deal with the maintenance of biodiversity in the context of
+competitive cycles (variants of the rock-paper-scissors
+game {{cite:7a8cf377-be2e-41fc-ac3d-f94209abea4f}}, {{cite:9b7edaa4-b79f-4931-8849-a81886f88b45}}, {{cite:7889f2f1-532d-47b3-baec-d446e5da6f59}}, {{cite:777a7164-c178-4f44-8aa4-b2f75b2f51c0}}, {{cite:7d44ea02-60cf-4ef4-8bea-d606d1561234}}, {{cite:92c36fe7-ca57-4c16-913b-d45495768ae9}}).
+In order to investigate the coevolutionary dynamics of games on structured populations
+the full set of connections between a
+potentially very large number of individuals must be specified. This is only possible by
+reducing the number of degrees of freedom considered, either through
+postulating a highly symmetrical (such as lattices {{cite:3f0a6e4e-95e7-4c24-abf2-b635dd358feb}}, {{cite:d17118ba-dbb3-479b-a420-5cf55558133c}}, {{cite:0bd5183e-2be2-4071-bb10-dd2854f842e0}}, {{cite:b6926db6-7d60-4653-bdd1-068a7c3b55bd}}, {{cite:786abbba-3633-4d2b-9517-9fdb0f45a9f4}}, {{cite:8d3c5f7f-afda-4768-bbbf-023c780853a7}}, {{cite:4973a9b3-3fa6-478f-b5c7-3c5a4f596e0d}}) or fundamentally
+random connection structure (such as some random graph ensemble {{cite:21a1b0eb-49ff-41b5-9cd6-f2bc95d9956a}}, {{cite:a0d569bd-d24c-480a-a0dd-d4f88e1ddc23}}). The
+question of how one goes about the task of reducing the number of
+degrees of freedom – of choosing the relevant parameters to describe
+the population structure constrained to which individuals undergo
+evolution – is not trivial. Both the explicit spatial as well as the
+random graph ensemble approach have clear precedents in condensed
+matter physics and network theory, respectively. It is not, however,
+clear which – if either – approach best describes natural
+populations of cyclically competing species or societies composed of
+individuals playing the prisoner's dilemma game.
+As an example let us consider colicin producing bacteria, that play the so called
+"rock-paper-scissors" (RPS) game (for details see below). This system has
+recently been the subject of two experimental studies aimed at
+demonstrating the role of structured populations in the maintenance of
+diversity. In the first study {{cite:9b7edaa4-b79f-4931-8849-a81886f88b45}}, {{cite:7889f2f1-532d-47b3-baec-d446e5da6f59}} bacteria were cultured in
+vitro in Petri dishes, effectively restricting competition between
+bacteria to neighbors on the (2D) Petri dish surface (Fig.1 top left),
+while in
+the second experiment {{cite:777a7164-c178-4f44-8aa4-b2f75b2f51c0}} in vivo bacterial
+colonies were established in co-caged mice and their development was
+subsequently followed. In the case of the first experiment the analogy
+with explicit 2D spatial embedding (present by construction) is clear
+(Fig.1 bottom left). The population structure of the second experiment
+is, however, clearly different. The bacteria in individual mice can be
+readily considered as locally well-mixed populations, the
+coevolutionary dynamics of which reduces in the standard meanfield
+limit to a system of non-linear differential equations (the
+adjusted replicator equations {{cite:2f0276d6-e144-4889-8204-2187318b3b14}}). As the experiments
+show, however, migration of bacteria between mice may also occur –
+resulting in the observed cyclic presence of the three strains in
+individuals. There are two distinct scales of mixing present in
+the system. Bacteria within each mice compete with each other forming
+local populations – an unstructured neighborhood composed of individual
+bacteria, while also being exposed to migrants from mice with whom
+they share the cage, together forming a global population – an unstructured
+neighborhood composed of individual local populations
+(Fig.1 top and bottom right). This setup is referred to in the ecology literature
+– albeit in significantly different contexts – as a ”structured metapopulation”
+{{cite:c5aac201-3266-4ea5-97ee-71d85460380f}}, {{cite:942ef964-27cf-40f8-97c2-911810240073}} where structured here refers to the
+detailed consideration of the population dynamics of the individual
+populations (often called ”patches”) comprising the metapopulation and is also related to the finite island models of population genetics {{cite:29e8b219-6bfd-4171-be31-eb22f27e35df}}.
+The above example of co-caged mice is not unique, we may readily think of other
+ecological or sociological examples where an approximation with
+hierarchical scales of mixing with no internal structure can be
+relevant (such as human societies with two
+distinct scales of mixing present, the first within individual nations
+the between them at an international level). We have, also,
+recently used a similar approach to construct a model of genetic exchange among
+bacteria of the same species (the bacterial equivalent of sex) with
+which we were able to take into account the effects of spatial and
+temporal fluctuations in a manner that can explain the benefit of such
+genetic exchange at the level of the individual {{cite:96dd5696-e717-491c-a892-da3221add4fc}}.
+In this paper we construct a hierarchical meanfield theory where the
+two distinct (i.e. local and global) scales of mixing are each taken into account in terms of two
+separate meanfield approximations and fluctuations
+resulting from finite population size on the local scale of mixing are
+also considered.
+We subsequently explore the similarities and differences between this
+and other models of structured populations in the case of the
+”rock-paper-scissors” and prisoner's dilemma games. Through
+these examples we
+suggest that our
+approach allows the separation of the effects of
+structured populations on coevolutionary dynamics into effects which
+are highly sensitive to and dependent on the details of the topology
+and those which only require the minimal structure present in our
+approximation and can consequently (in terms of sensitivity to the
+details of the topology) be considered more robust.
+FIGURE 
+
+ Hierarchical Meanfield Theory for Two Distinct Scales
+Let us consider an evolutionary game between FORMULA  types (strategies) described by the
+FORMULA  payoff matrix FORMULA  with elements FORMULA .
+Assuming finite and constant population size, natural
+selection can be described at the level of the individual by the so called the Moran
+process {{cite:69d324d1-8660-4724-bacd-999454ec8cc2}}, during which at each time step an individual is selected
+randomly from the population to be replaced (death) by the offspring of an individual that is chosen proportional to its fitness to reproduce (birth). This models a population in equilibrium, where the time scale of the population dynamics is set by the rate at which ”vacancies” become available in the population. The fitness of each individual
+depends on the payoff received from playing the game described
+by FORMULA  with competitors (an individual of type FORMULA  receiving a payoff FORMULA  when playing with an individual of type FORMULA ). In well-mixed populations, individuals can be
+considered to come into contact (compete) with equal probability with any member of the
+population excluding themselves – this allows one to calculate the
+fitness of an individual of type FORMULA  in a meanfield manner, yielding
+FORMULA 
+where FORMULA  is the number of individuals of type FORMULA  in the
+population, FORMULA  is the size of the population, FORMULA  is some baseline
+fitness and the Kronecker delta symbol FORMULA  is equal to unity if FORMULA  and is zero otherwise. From this we may calculate the transition probabilities of
+our stochastic process, i.e., the probability of an individual of
+type FORMULA  being replaced by an offspring of an individual of type FORMULA  is given by
+FORMULA 
+where FORMULA .
+The state of any population is completely described by the frequency of the different strategies FORMULA . Due to the normalization FORMULA , the values of FORMULA  are restricted to the unit simplex FORMULA  {{cite:7a8cf377-be2e-41fc-ac3d-f94209abea4f}}. For FORMULA  this is the interval FORMULA , FORMULA  is the triangle with vertices FORMULA  while FORMULA  is a tetrahedron etc.
+As Traulsen et al. have recently shown {{cite:2f0276d6-e144-4889-8204-2187318b3b14}}, {{cite:95bb42a4-08b6-4486-8731-62540236c4c2}} for sufficiently
+large, but finite populations the above stochastic process can be well approximated by a set of stochastic differential equations combining deterministic dynamics and diffusion (population drift) referred to as Langevin dynamics:
+FORMULA 
+where the effective deterministic terms FORMULA  are given by
+FORMULA 
+FORMULA  are effective
+diffusion terms, that can also be expressed in terms of the transition
+probabilities as described in {{cite:95bb42a4-08b6-4486-8731-62540236c4c2}}, and FORMULA  are delta correlated
+FORMULA  Gaussian
+white noise terms. As FORMULA  the diffusion term
+tends to zero as FORMULA  and we are left with the modified replicator equation.
+In the context of our hierarchical mixing model the topology of
+connections can be
+described by two parameters, the populations size at the local scale of mixing FORMULA ,
+and a second parameter FORMULA , which tunes the strength of global mixing relative to
+the local dynamics.
+We take into account the second (global) scale
+of mixing – mixing among local populations – by introducing a modified
+version of the
+Moran process.
+In the modified process a random individual is replaced at each time
+step either with the offspring of
+an individual from the same population (local reproduction) or with an individual from the
+global population (global mixing).
+This is equivalent to considering the global
+population to be well-mixed at the scale of local populations.
+Let us consider a global population that is composed of FORMULA  local populations of size FORMULA .
+In each local population vacancies become available that local reproduction and global mixing compete to fill.
+In any local population FORMULA  the probability of an individual of some type FORMULA  filling a new vacancy due to local reproduction must be proportional to the number of individuals of type FORMULA  multiplied by their fitness i.e. FORMULA , where we consider FORMULA  to be determined only by interactions with individuals in the same local population according to equation (REF ). To describe the tendency of individuals of some type FORMULA  in local population FORMULA  to contribute to global mixing we introduce the parameters FORMULA . The choice of appropriate FORMULA  depends on the details of the global mixing mechanism, for systems where only the offspring of individuals mix globally it is proportional to the fitness of a given type, while for mechanisms such as physical mixing, by e.g. wind or ocean currents, it may be identical for each type. Irrespective of the details, however, the probability of an individual of some type FORMULA  filling in a new vacancy due to global mixing should be proportional to the global average of the number of individuals of type FORMULA  multiplied by their mixing tendency, which we
+denoted as FORMULA , and the strength of global mixing FORMULA . These consideration lead to the new transition probabilities:
+FORMULA 
+where FORMULA  and FORMULA .
+We have found that the results presented below are qualitatively the same for both the fitness dependent choice of FORMULA  and the fitness independent choice of FORMULA . Therefore, in the following we restrict ourselves to the somewhat simpler fitness independent choice of FORMULA , which can be considered to correspond to some form of physical mixing mechanism. The transition probabilities (REF ) then reduce to:
+FORMULA 
+We can see that after a vacancy appears either local reproduction occurs, with probability FORMULA , or global mixing, with probability FORMULA .
+From (REF ) we may derive the Langevin equation describing the
+coevolutionary dynamics of population FORMULA  from the
+FORMULA 
+with the modified deterministic terms given by
+FORMULA 
+where the vector FORMULA  with components FORMULA  describes the frequencies of the
+individual types in the global population and the diffusion terms FORMULA  can be expressed in terms of the modified transition probabilities FORMULA  as above.
+Equations (REF )
+describe the coevolutionary dynamics of the
+global population through the coupled evolution of the FORMULA  local populations.
+In the limit of a large number of local populations (FORMULA ) the distribution of the local populations over the space of
+population states (the simplex FORMULA ) is described by a density function FORMULA  that is normalized over FORMULA , i.e., FORMULA .
+The time evolution of FORMULA  follows a FORMULA  dimensional
+advection-diffusion equation – the Fokker-Planck equation
+corresponding to eq. (REF ):
+FORMULA 
+with the global averages FORMULA  coupled back
+in a self-consistent manner
+into the deterministic terms FORMULA  and the diffusion matrix FORMULA .
+For large local populations (FORMULA ) the diffusion term vanishes as FORMULA .
+The above advection-diffusion equation (REF ) presents an
+intuitive picture of the coevolutionary dynamics of the population at a
+global scale. We can see that local populations each attempt to follow
+the trajectories corresponding to the deterministic replicator
+dynamics, while under the influence of two additional opposing
+forces: (i) global mixing, which attempts to synchronize local
+dynamics and (ii) diffusion resulting from finite population size
+effects, which attempts to smear them out over the simplex. The
+strength of these forces are tuned by two parameters FORMULA  and FORMULA ,
+respectively.
+If, further, the effects of synchronization are irrelevant, as for example in the case
+of populations where selection is externally driven by independent environmental
+fluctuations, we may replace the global population average
+with the time average of any single population. This is the approach we used in our
+study of genetic mixing in bacteria {{cite:96dd5696-e717-491c-a892-da3221add4fc}}.
+During our numerical investigations we found solving the advection-diffusion equation (REF ) numerically challenging, particularly in the FORMULA  limit. We resorted instead to solving the coupled Langevin equations (REF ) for large FORMULA  to simulate the time evolution of FORMULA .
+FIGURE 
+
+Cooperation in populations with hierarchical levels of mixing
+The evolution of cooperation is a fundamental problem in biology, as
+natural selection under most conditions favors individuals who defect. Despite of this, cooperation is widespread in nature.
+A cooperator is an individual who pays a cost FORMULA  to provide another individual with some benefit FORMULA .
+A defector pays no cost and does not distribute any benefits.
+This implies the payoff matrix
+FORMULA 
+where FORMULA  is the benefit derived from playing with a cooperator while FORMULA  is the cost for cooperation.
+From the perspective of evolutionary game theory, which equates payoff with fitness, the apparent dominance of defection is simply the expression of the fact that natural selection a priori selects for fitness of individuals and not the fitness of groups.
+Defection dominates cooperation in any well-mixed
+population {{cite:7a8cf377-be2e-41fc-ac3d-f94209abea4f}}. Population structure induced by spatial structure {{cite:3f0a6e4e-95e7-4c24-abf2-b635dd358feb}}, {{cite:786abbba-3633-4d2b-9517-9fdb0f45a9f4}} and more general networks of interactions {{cite:21a1b0eb-49ff-41b5-9cd6-f2bc95d9956a}}, {{cite:a0d569bd-d24c-480a-a0dd-d4f88e1ddc23}}, {{cite:628b9550-2f5e-48a9-abde-153c3e74a476}}) has, however, been found to facilitate the emergence and maintenance of cooperation. The mechanism responsible, termed spatial, or more generally, network reciprocity{{cite:23d0d7e1-a467-472a-b747-9e757b5e5871}} depends strongly on the details of local topology. In particular, it seems that lattice like connectivity structures where three-site clique percolation occurs {{cite:b6926db6-7d60-4653-bdd1-068a7c3b55bd}} and more general interaction graphs where the degree of nodes FORMULA  does not exceed the ratio of benefit to cost (i.e. FORMULA ) {{cite:a0d569bd-d24c-480a-a0dd-d4f88e1ddc23}} are required for cooperation to be favored.
+Examining the effects of hierarchical mixing on the evolutionary dynamics of cooperation we found that a sharp, but continuous transition leads to the dominance of cooperation as the benefit to cost ratio becomes smaller then the local population size, i.e. FORMULA . If the benefit to cost ratio is larger then the local population size the global population is dominated by defectors.
+The mechanism leading to the dominance of cooperation arises
+due to the competition between local reproduction and global mixing. In local populations with lower average fitness – larger number of defectors – the influx of individuals from the
+global scale will be larger than in local populations with higher average fitness (cf. eq. (6) where the relative strength of the two terms on the left hand side depends on the sum of the average fitness of population FORMULA  and FORMULA ). The crucial ingredient for cooperation to be successful is population drift
+introduced by finite local population size. It is biased influx coupled with
+drift that can result in cooperation being favored in the global population (Fig REF .).
+FIGURE 
+
+The RPS Game
+To explore the effects of hierarchical mixing in the context of games with three strategies we first turn to the
+case of the so called ”rock-paper-scissors” (RPS) game.
+In the original popular version of the game two players are afforded the chance to
+simultaneously display either rock (fist), paper (flat hand) or
+scissors (two fingers). If player one displays a flat hand while player two
+displays a fist, player one wins as paper wraps rock. Similarly
+scissors cut paper, and rocks smashes scissors. Several examples of
+this game have been found in nature (e.g. among lizards {{cite:e8b4320a-1ee2-498e-ab29-206779a6fba6}}
+), but it is bacteria that have
+received the most experimental and theoretical attention.
+In ecology the often high diversity among microbial organisms in
+seemingly uniform environments, referred to as the ”paradox of the
+plankton”, has been difficult to understand. Several models based on
+spatially explicit game theoretical models have been proposed to
+explain this diversity {{cite:7d44ea02-60cf-4ef4-8bea-d606d1561234}}, {{cite:92c36fe7-ca57-4c16-913b-d45495768ae9}}, {{cite:9b7edaa4-b79f-4931-8849-a81886f88b45}}, {{cite:7889f2f1-532d-47b3-baec-d446e5da6f59}}. These models are all variants of the RPS game
+played by colicin producing bacteria.
+Colicins are antibiotics produced by some strains of
+Echerichia coli. In experiments (see Fig.1) typically three
+strains are used: colicin producing (C), sensitive (S) and resistant
+(R). The coevolutionary
+dynamics of the three strains can be cast in terms of an RPS game,
+C strains kill S strains, but are
+outcompeted, by R strains, because toxin production
+involves the suicide of bacteria. The cycle is closed by S strains that
+outcompete R strains, because resistance requires mutant versions of
+certain membrane protein, which are less efficient than the wild type {{cite:9b7edaa4-b79f-4931-8849-a81886f88b45}}.
+Despite the cyclic dynamics colicin-producing
+strains cannot coexist with
+sensitive or resistant strains in a well-mixed culture, yet all three
+phenotypes are recovered in natural populations. Local dispersal
+(modeled as explicit spatial embedding) has widely been credited with
+promoting the maintenance of diversity in this system {{cite:9b7edaa4-b79f-4931-8849-a81886f88b45}}, {{cite:7889f2f1-532d-47b3-baec-d446e5da6f59}}, {{cite:7d44ea02-60cf-4ef4-8bea-d606d1561234}}, {{cite:92c36fe7-ca57-4c16-913b-d45495768ae9}}.
+In its most symmetric form the RPS game is described by
+the payoff matrix
+FORMULA 
+and some FORMULA .
+The dynamics of this game in an infinitely large well mixed population consists of neutral orbits along which
+the product FORMULA  is conserved. For any finite FORMULA , however, fluctuations
+lead to the inevitable extinction of all but one of the strategies {{cite:f4db6a0c-7b24-4d29-b854-0f12d8707e24}}.
+Spatial population structure can avert this reduction in diversity {{cite:7d44ea02-60cf-4ef4-8bea-d606d1561234}}, {{cite:9b7edaa4-b79f-4931-8849-a81886f88b45}}
+through the emergence of a stable fixed point at the barycentre of the simplex .
+The effect of the gradual randomization of different lattice topologies
+(where a small number of edges are randomly rewired) on the dynamics of the
+game has also been investigated. A Hopf bifurcation leading
+to global oscillations was observed {{cite:a7bb5f47-2aaa-4559-bc3a-355cb766f292}}, {{cite:4ac3b896-cb1a-4a48-b395-ff6a1a79f51f}} as the fraction
+of rewired links was increased above some critical value.
+FIGURE 
+Examining the dynamics of the symmetric RPS game in terms of our hierarchical meanfield
+approximation we observed that an internal fixed point emerged for
+FORMULA  (Fig.3a).
+More importantly, diversity was also maintained for
+finite local population sizes if global mixing was present. Simulations of the
+time evolution of FORMULA  also revealed a Hopf bifurcation
+leading to the oscillation of the global average as FORMULA  was increased above a critical
+value FORMULA  depending on FORMULA  (Fig.4a). These results show that previous results obtained
+from simulations of populations constrained to different lattice topologies can be
+considered universal in the sense that not only lattices, but any population structure
+that can be approximated by two distinct internally unstructured scales of mixing are sufficient
+for their existence. In the context of the ”paradox of the plankton” these results imply that
+aside of local dispersal (modeled as explicit spatial embedding) a minimal metapopulation
+structure (with local competition and global migration) can also facilitate the maintenance
+of diversity in cyclic competition systems.
+
+The Repeated Prisoner's Dilemma Game
+In the general formulation of the prisoner's dilemma (PD) game, two players have the choice to cooperate or to
+defect. Both obtain some payoff FORMULA  for mutual cooperation and some
+lower payoff FORMULA  for mutual defection. If only one of the players
+defects, while the other cooperates, the defector receives the highest
+payoff FORMULA  and the cooperator receives the lowest payoff FORMULA . That is
+FORMULA  and defection dominates cooperation in any well-mixed
+population.
+New strategies become possible, however if the game is repeated, and
+players are allowed to chose whether to defect or cooperate based on
+the previous actions of the opponent. In the following we consider, similar
+to refs. {{cite:a5ee8c79-1453-4399-a28e-c2b34d1def0a}} and {{cite:7519bded-615e-4767-aa41-2998a3c6d763}} that recently examined the role of finite
+population size and mutation and finite population size, respectively in terms
+of the repeated PD game with three strategies:
+always defect (ALLD), always cooperate (ALLC), and tit-for-tat (TFT).
+TFT cooperates in the first move and then does whatever the opponent did in the previous move.
+TFT has been a world champion in the repeated
+prisoner's dilemma ever since Axelrod conducted his celebrated computer tournaments
+{{cite:047516ce-be25-4286-ab40-f1d1a303f746}}, although it does have weaknesses and may be defeated by
+other more complex strategies {{cite:22ffc159-3ea4-4345-8616-781518ee30f1}}.
+Previous results indicate that if only the two pure strategies are present
+(players who either always defect or ones who always cooperate) explicit spatial
+embedding {{cite:3f0a6e4e-95e7-4c24-abf2-b635dd358feb}} and some sufficiently sparse interaction graphs {{cite:a0d569bd-d24c-480a-a0dd-d4f88e1ddc23}}, {{cite:18158dd5-2c86-4eb5-a028-1df412f89ec0}}
+allow cooperation to survive and the behavior of populations is highly sensitive to the
+underlying topology of the embedding {{cite:b6926db6-7d60-4653-bdd1-068a7c3b55bd}}. We have found that introducing global mixing into the PD game with only
+the two pure strategies present also allows cooperation to survive. The
+mechanism responsible for favoring cooperation in this case, however,
+depends on the details of the competition between local reproduction
+and global mixing. For more than two strategies these details are much
+less relevant and do not qualitatively influence the dynamics. We will,
+therefore, consider the delicate issues concerning the PD game with
+only the two pure strategies in a separate publication,
+and concentrate here on the repeated PD game with three strategies.
+FIGURE 
+To investigate the effect of global mixing on the repeated PD game with three
+possible strategies: ALLD, ALLC and TFT following
+Imhof et al.  {{cite:7519bded-615e-4767-aa41-2998a3c6d763}} we considered the payoff matrix:
+FORMULA 
+where the strategies are considered in the order ALLC, ALLD, TFT,
+FORMULA  corresponds to the number of
+rounds played and FORMULA  to the complexity cost associated with conditional strategies (TFT).
+The dynamics of this game has a single unstable internal fixed point and the state where each
+member of the population plays ALLD is the only nontrivial stable equilibrium (Fig.3b).
+Introducing global mixing, between local well-mixed populations, however, causes new stationary states to emerge .
+Three phases can be identified: (i) ALLD wins (ii) large fraction of local populations in
+the ALLD corner maintains local cycles of cooperation defection and reciprocity through providing an influx of defectors that prevent TFT players from being outcompeted by ALLC playing individuals (iii)
+a self maintaining internal globally oscillating cycle
+emerges. The simplest scenario of two (FORMULA ) deterministic (FORMULA ) local populations coupled by global mixing (FORMULA ) already leads to the emergence of phase (ii) as demonstrated in Fig.REF b while phase (iii) only emerges for larger FORMULA .
+For larger FORMULA  simulations show that in the limit of
+large local populations all global configurations with less than some maximum ratio
+of the populations FORMULA  on the internal cycle are stable in phase (ii). A transition
+from phase (ii) to (i) happens as FORMULA  is decreased below a critical
+value FORMULA  and FORMULA  approaches zero as FORMULA  (data not shown). This
+can be understood if we considered that near the transition point a
+critical proportion FORMULA  of ALLD individuals needs to
+arrive to stabilize local cycles of cooperation defection and
+reciprocity. At the critical point FORMULA  and FORMULA  which implies FORMULA  giving  FORMULA
+Exploring the FORMULA  phase space (Fig.5) we see that the
+transition from phase (i) to (ii) becomes discontinuous for finite
+FORMULA  (Fig.4d,e). Further, for any given value of FORMULA  and FORMULA  the global configuration is described by a unique FORMULA  due to the presence of diffusion. For appropriate values of the parameters the
+global average converges to a stationary value in phase (ii)
+similarly to case of explicit spatial embedding (Fig.4c).
+For very small (FORMULA  for all FORMULA ) and very large (FORMULA ) values of FORMULA 
+the global dynamics can be reduced
+to that of some well-mixed population where only ALLD persists (Fig 5.). For small FORMULA  we again have an effective well-mixed population – the only limit were defectors do not dominate is FORMULA . In comparison with
+previous results of Imhof et al. we can see that evolutionary
+cycles of cooperation defection and reciprocity can be maintained not
+only by mutation, but also by population structures with hierarchical
+levels of mixing.
+
+Discussion
+While it is, of course, clear that the reduction of any realistic
+population structure to a manageable construction is always an
+approximation, it has not been clearly established what the relevant
+degrees of freedom are in terms of evolutionary dynamics.
+Meanfield approximations are a classic method of statistical and
+condensed matter physics and are routinely used to circumvent intractable
+combinatorial problems which arise in many-body systems.
+Cluster-meanfield approximations of
+sufficient precision {{cite:786abbba-3633-4d2b-9517-9fdb0f45a9f4}}, {{cite:8d3c5f7f-afda-4768-bbbf-023c780853a7}} have been developed that adequately
+describe the evolutionary dynamics of explicitly structured populations
+through systematically approximating the
+combinatorial complexity of the entire topology with that of small
+motif of appropriate symmetry. The effects of more minimal effective
+topologies have, however, not been investigated previously.
+In the above we have shown that straightforward
+hierarchical application of the meanfield approximation (the
+assumption of a well-mixed system) surprisingly unveils a new level of
+complexity.
+In the broader context of ecological and population genetics research on structured populations our model can be described as a metapopulation model. The term 'metapopulation' is, however, often used for any spatially structured population {{cite:942ef964-27cf-40f8-97c2-911810240073}}, and models thereof. More restrictive definitions of the term are often implied in the context of ecology and population genetics literature.
+The foundations of the classic metapopulation concept where laid down by Levin's vision of a ”metapopulation" as a population of ephemeral local populations prone to extinction. A classic metapopulation persists, like an ordinary population of mortal individuals, in a balance between 'deaths' (local extinctions) and 'births' (establishment of new populations at unoccupied sites) {{cite:942ef964-27cf-40f8-97c2-911810240073}}. This classic framework is most wide spread in the ecology literature, a less often employed extension is the concept of a structured metapopulation where the state of the individual populations is considered in more detail, this is more similar to our concept of hierarchical mixing, but differs in considering the possibility of local extinctions.
+The effects of finite population size and migration, which our model considers, has been of more central concern in the population genetics literature. The analog of Levin's classic metapopulation concept is often referred to as the 'finite-island' model {{cite:29e8b219-6bfd-4171-be31-eb22f27e35df}} the effective population genetic parameters describing which, have been explored in detail{{cite:a5d4efdc-5998-47e8-a6ab-3f99378b32bb}}. The study of the population genetics of spatially subdivided populations in fact predates Levin, Wright having emphasised the capacity of drift in small populations to bring about genetic differentiation in the face of selection and/or migration several decades prior{{cite:29e8b219-6bfd-4171-be31-eb22f27e35df}}.
+Our hierarchical mixing model treats the coevolutionary dynamics of evolutionary games on structured populations in a manner similar to the most simple population genetic models of spatially subdivided populations, focusing on the parallel effects of selection, drift and migration. It goes beyond these models both in considering the effects of frequency dependent selection (and the strategic aspects of the evolutionary dynamics this implies) and in using a self-consistent approach to describe the global state of the subdivided population. Also, in order to maintain a connection with previous work on the effects of spatial structure on evolutionary games, which rely on Nowak's concept of spatial games {{cite:3f0a6e4e-95e7-4c24-abf2-b635dd358feb}}, with individuals restricted to interact, and hence compete, only with neighbours as defined by some topology of interaction, we develop our model from the level of the individual by introducing a modified version of the Moran process – and not by extending the Wright-Fisher process (which considers discrete generations and binomial sampling to account for finite population size). The effective population structure described by our hierarchical mixing model can be thought of as a population of individuals, interactions among which are specified by the edges of a hierarchically organized random graph. The fundamental difference in our picture is that the edges of this graph of interactions are not considered to be fixed, but are instead in a constant state of change, being present with a different probability between pairs of individuals who share the same local population and between pairs of individuals who do not (Fig.1.). We consider annealed randomness, which in contrast to the usual quenched picture of fixed edges is insensitive to the details of topology. Our approach we believe best facilitates the exploration of the effects of changing the relative strengths of drift and migration in the context of evolutionary games on structured populations.
+Examining the effects of hierarchical mixing in the context of the evolution of robustness we demonstrated that biased influx coupled with drift can result in cooperation being favored, provided the ratio of benefit to cost exceeds the local population size. This result bears striking resemblance to that of Ohtsuki et al. {{cite:a0d569bd-d24c-480a-a0dd-d4f88e1ddc23}}, who were able to calculate the fixation probability of a randomly placed mutant for any two-person, two-strategy game on a regular graph and found that cooperation is favored provided the ratio of benefit to cost exceeds the degree of the graph. Our results demonstrate that this rule extends to the minimal spatial structure induced by hierarchical levels of mixing.
+Applying our model of spatial structure to the repeated prisoners dilemma revealed that a constant influx of defectors can help to stabilize cycles of cooperation, defection, and reciprocity through preventing the emergence of an intermittent period of ALLC domination in the population, which would present a situation that ”leaves the door wide open” to domination by defectors. While previous work has been done on the effects of ”forcing” cooperation {{cite:e9d595ad-fd5a-4e66-b56f-1596f04235c8}} the idea that an influx of defectors can in fact stabilize the role of reciprocity in promoting cooperation has not been proposed previously.
+It seems highly unlikely that this mechanism can be explained in terms of kin or multilevel (group) selection, the similarities between which in structured populations have recently been the subject of intensive debate (see e.g. {{cite:8f540ddc-9de7-44ff-af58-f73858fb0078}} and {{cite:982e959e-9a38-432a-b786-e8d410389f8f}} or {{cite:143ad878-d27a-45bd-8f98-3e253271b707}} and {{cite:20d89f37-a0d2-43d1-8367-4f1c989ae823}}). Kin selection can operate whenever interactions occurring among individuals who share a more recent common ancestor than individuals sampled randomly from the whole population {{cite:20d89f37-a0d2-43d1-8367-4f1c989ae823}} are relevant. In our case it is the interaction between defectors, arriving from the global scale, and TFT players present at the local scale that is important, and not the interaction between individuals in the local population, who may be thought of as sharing a recent common ancestor due to local dispersal. Also, while the concept of multilevel selection presents a promising framework for the study of evolution of cooperation, it must nonetheless be possible to derive it from ”first principles” – just as kin selection can be cast as an emergent effect of local dispersal.
+While there has been considerable work on studying the evolutionary games on graphs and highly symmetric spatial structures very little attention has been paid to the effects of more minimal effective population structures, despite their widespread application in ecology and population genetics, fields from which evolutionary game theory was born and must ultimately reconnect with.
+We believe that the minimal
+population structure that such a hierarchical meanfield theory describes is potentially more relevant in a wide range of
+natural systems, than more subtle setups with a delicate
+dependence on the details and symmetries of the topology. We showed through two examples
+that such structure is sufficient for the emergence
+of some phenomena previously only observed for explicit spatial
+embedding, demonstrating the potential of our model to identify robust effects of population
+structure on the dynamics of evolutionary games that do not depend on
+the details of the underlying topology.
+The practical advantage of our approach, lies in its ability to readily determine whether or not some feature of a structured population
+depends on the topological details of local interactions.
+Recent simulation result concerning the dynamics of public goods games on
+different population structures {{cite:217a4c53-2363-461c-8b17-b64cb3dd6130}}, {{cite:5df16539-5660-4052-8437-82700ad4ef2c}} and
+experiments where global mixing in an RPS like bacteria-phage system lead to
+the emergence of a ”Tragedy of the commons” scenario {{cite:e61af860-0b44-4d30-bea6-c9a34c236bfa}} should all be
+amicable to analysis in terms of our method.
+
+Acknowledgments
+This work was partially supported by the Hungarian Scientific Research
+Fund under grant No: OTKA 60665.
+
+Appendix
+Our approach readily generalizes for an arbitrary number of hierarchical mixing levels. For three levels of mixing we may consider the global population to be comprised of FORMULA  subpopulations each of which is in turn subdivided into FORMULA  local populations. With FORMULA  running over subpopulations and FORMULA  over local populations the transition probabilities can be written as:
+FORMULA 
+where primed indices indicate the scale of mixing over which the average is taken, FORMULA  describes the strength of mixing, and the FORMULA  the tendencies of mixing among local populations within a subpopulation, while FORMULA  describes the strength of mixing, and the FORMULA  the tendencies of mixing among subpopulations in the global population.

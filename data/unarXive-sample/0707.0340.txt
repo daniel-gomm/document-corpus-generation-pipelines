@@ -1,0 +1,974 @@
+
+Asymptotic enumeration of sparse nonnegativeinteger matrices with specified row and column sums
+Catherine GreenhillSchool of Mathematics and Statistics
+The University of New South Wales
+Sydney NSW 2052, Australia
+csg@unsw.edu.auBrendan D. McKayDepartment of Computer Science
+Australian National University
+Canberra, ACT 0200, Australiabdm@cs.anu.edu.au
+Keywords: asymptotic enumeration, non-negative integer matrices,
+contingency tables, switchingsMSC 2000: 05A16, 05C50, 62H17Let FORMULA  and FORMULA 
+be vectors of nonnegative integer-valued functions of FORMULA  with
+equal sum FORMULA .
+Let FORMULA  be the number of FORMULA  matrices
+with nonnegative integer entries such that the
+FORMULA th row has row sum FORMULA  and the FORMULA th column has
+column sum FORMULA  for all FORMULA .
+Such matrices occur in many different settings, an important example
+being the contingency tables (also called frequency
+tables) important in statistics.
+Define FORMULA  and FORMULA .
+Previous work has established the asymptotic value of
+FORMULA  as FORMULA  with
+FORMULA  and FORMULA  bounded (various authors independently,
+1971–1974), and when
+all entries of FORMULA  equal FORMULA , all entries of FORMULA 
+equal FORMULA , and
+FORMULA  for sufficiently large FORMULA  (Canfield
+and McKay, 2007). In this paper we extend the sparse range to
+the case FORMULA . The proof in part follows a previous
+asymptotic enumeration of 0-1 matrices under the same conditions
+(Greenhill, McKay and Wang, 2006).
+We also generalise the enumeration
+to matrices over any subset of
+the nonnegative integers that includes 0 and 1.
+Introduction
+Let FORMULA 
+and FORMULA 
+be vectors of nonnegative integers with
+equal sum FORMULA .
+Let FORMULA  be the set of all FORMULA  matrices
+with nonnegative integer entries such that the
+FORMULA th row has row sum FORMULA  and the FORMULA th column has
+column sum FORMULA  for each FORMULA .
+Then define FORMULA  to be the number of
+such matrices.
+Our task in this paper is to determine the asymptotic value of
+FORMULA  as FORMULA  under suitable conditions
+on FORMULA  and FORMULA .
+The matrices FORMULA  appear in many combinatorial contexts;
+see Stanley {{cite:63f6f8e2-72b3-445d-9079-baa76406b982}} for a brief history.
+A large body of statistical literature is devoted to them
+under the name of contingency tables or
+frequency tables; see {{cite:a7a82a67-2303-4376-876a-ff3a13e530a5}}, {{cite:392e9537-1835-40af-8d8c-0d4c36b5c1c6}} for
+a partial survey.
+In theoretical computer science there has been interest in
+efficient algorithms for the problem of generating
+contingency tables with prescribed margins at random,
+and for approximately counting these tables.
+See for example {{cite:65269f0e-24c2-4d03-b0e4-2bfadbf57d41}}, {{cite:e4a56750-458b-4450-b150-7e9a79780a1a}}, {{cite:b1e89fb4-b3e4-498d-83cb-b436fbe650c4}}.
+The history of the enumeration problem
+for nonnegative integer matrices is surveyed in {{cite:0a5689f9-8915-4427-8dc5-69c87396d6f8}},
+while a history for the corresponding problem
+for 0-1 matrices is given in {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}.
+Here we recall only the few previous exact results on
+asymptotic enumeration for nonnegative integer
+matrices.
+Define FORMULA  and FORMULA .
+The first non-trivial case FORMULA 
+was solved by Read {{cite:bc2efb83-69bf-465f-9f23-dcb08552af00}} in 1958.
+During the period 1971–74,
+this was generalised to bounded FORMULA  by three independent groups:
+Békéssy, Békéssy and Komlós {{cite:11ddbba4-cc7d-4d6e-9a0c-c6d2da393503}},
+Bender {{cite:5b9b80c1-8c4a-4569-a0bd-3ee787e71547}}, and Everett and Stein {{cite:ba6910b1-2b9e-498c-bf7d-36f6f25a8010}},
+under slightly different conditions.
+In the case of denser matrices, the only precise asymptotics were
+found by Canfield and McKay {{cite:0a5689f9-8915-4427-8dc5-69c87396d6f8}} in the case that
+the row sums are all the same and the column sums are all the same.
+Let FORMULA , where the
+vectors have length FORMULA , FORMULA , respectively, and FORMULA .
+Theorem 1.1 ({{cite:0a5689f9-8915-4427-8dc5-69c87396d6f8}}) 
+Let FORMULA , FORMULA  be positive integers satisfying FORMULA .
+Define FORMULA . Let FORMULA  be constants
+such that FORMULA . Suppose that FORMULA 
+in such a way that
+FORMULA 
+Define FORMULA  by
+
+FORMULA 
++ (m,s;n,t)m+n).
+
+Then FORMULA  as FORMULA .   
+
+Canfield and McKay conjectured that in fact FORMULA 
+for all FORMULA . The results in the present paper establish
+that conjecture for sufficiently large FORMULA  in the case
+FORMULA . (See Corollary REF .)
+The main result in this paper is the asymptotic value of
+FORMULA  for FORMULA .
+Our proof uses the method of switchings in a number of different ways.
+In several aspects our approach is parallel to that
+which provided our previous asymptotic
+estimate of FORMULA , the number of 0-1 matrices in the class
+FORMULA . We now restate that result for convenience.
+For any FORMULA , define FORMULA  and for a positive integer FORMULA ,
+FORMULA . Also define
+FORMULA 
+for FORMULA . Note that FORMULA .
+Theorem 1.2 ({{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}) 
+ Let FORMULA 
+and FORMULA 
+be vectors of nonnegative integers with
+equal sum FORMULA .
+Suppose that FORMULA , FORMULA 
+and FORMULA . Then
+FORMULA 
+
+We now state our main result, which is the asymptotic value
+of FORMULA  for sufficiently sparse matrices. Note
+that the answer is obtained by multiplying the expression
+for FORMULA  from Theorem REF  by a simple
+adjustment factor.
+Theorem 1.3 
+ Let FORMULA 
+and FORMULA 
+be vectors of nonnegative integers with
+equal sum FORMULA .
+Suppose that FORMULA , FORMULA 
+and FORMULA . Then
+FORMULA 
+
+The proof of this theorem is presented in Sections 
+and .
+First we show that the set of matrices in FORMULA 
+with an entry greater than 3 forms a vanishingly small proportion
+of FORMULA . We also show that it is very unusual
+for an element of FORMULA  to have a “large”
+number of entries equal to 2 or a “large” number of entries equal
+to 3, where “largeness” is defined in Section .
+We establish these facts using switchings
+on the matrix entries. This allows us to
+concentrate on matrices in FORMULA  with no entries
+greater than 3 and not very many entries equal to 2 or 3.
+We then proceed in Section 
+to compare the number of these matrices with
+the number FORMULA  of FORMULA -matrices with row sums
+FORMULA  and column sums FORMULA .
+We do this by adapting
+the results from {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} used to prove Theorem REF .
+These calculations are carried out
+in the pairing model, which is described in
+Section . Our theorem follows
+on combining Lemmas REF , REF  and
+Corollary REF .
+In the semiregular case where FORMULA  for FORMULA 
+and FORMULA  for FORMULA , Theorem REF  says
+the following.
+Corollary 1.4 Suppose that FORMULA  and that FORMULA  for
+nonnegative integer functions FORMULA , FORMULA 
+and FORMULA .
+If FORMULA  then
+FORMULA 
+
+For some applications the statement of Theorem REF 
+is not very convenient. In Section 
+we will derive an alternative formulation,
+very similar to one given for FORMULA  in {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}.
+For FORMULA , define
+FORMULA 
+
+To motivate the definitions, recall that FORMULA  is the mean value of FORMULA 
+and FORMULA  is the mean value of FORMULA , so these are scaled central moments.
+We will prove Corollary REF , stated in Section ,
+which has the following special case.
+Corollary 1.5 
+Under the conditions of Theorem REF ,
+if FORMULA  then
+
+FORMULA 
+12FORMULA 
+(1-2)(1-2)
++O(stS2/3)).
+   
+FORMULA 
+Corollary REF  has an instructive interpretation.
+Following {{cite:0a5689f9-8915-4427-8dc5-69c87396d6f8}},
+we write FORMULA , where
+
+FORMULA 
+(1-2)(1-2)
++O(stS2/3)).
+
+Clearly, FORMULA  is the number of FORMULA  nonnegative
+matrices whose entries sum to FORMULA . In the uniform
+probability space on these FORMULA  matrices, FORMULA  is the
+probability of the event that the row sums are given by FORMULA 
+and FORMULA  is the probability of the event that the column sums
+are given by FORMULA .
+The final quantity FORMULA  is thus a correction to account for
+the non-independence of these two events.
+Finally, in
+Section  we show how to generalise
+Theorem REF  to matrices whose entries are restricted
+to any subset of the natural numbers that includes 0 and 1.
+A note on our usage of the FORMULA  notation in the following is in order.
+Given a fixed
+function FORMULA , and any quantity FORMULA  that depends on
+any of our variables, FORMULA  denotes any quantity whose absolute
+value is bounded above by FORMULA  for some constant FORMULA  that
+depends on FORMULA 
+and nothing else, provided that FORMULA .
+Switchings on matrices
+In this section we will show
+that the condition FORMULA  implies that most matrices
+have no entries greater than 3. We also find bounds on the
+number of entries equal to 2 or 3.
+Our tool will be the method of switchings, which we will
+analyse using results of
+Fack and McKay {{cite:9bd34550-d8b0-4abd-9da1-ad7ab794895a}} from which we
+will distill the following special case.
+Theorem 2.1 
+Let FORMULA  be a finite simple acyclic directed graph, with
+each FORMULA  being associated with a finite set FORMULA ,
+these sets being disjoint.
+Suppose that FORMULA  is a multiset of ordered pairs
+such that for each FORMULA  there is an edge
+FORMULA  with FORMULA  and FORMULA .
+Further suppose that
+FORMULA  are positive functions such
+that, for each FORMULA ,
+FORMULA 
+
+where the left hand sides are multiset cardinalities.
+Let FORMULA . Then there is a directed
+path FORMULA  in FORMULA , where FORMULA  and
+FORMULA  is a sink, such that
+FORMULA 
+where FORMULA  is defined by
+FORMULA 
+
+This follows from Theorems 1 and 2 of {{cite:9bd34550-d8b0-4abd-9da1-ad7ab794895a}}.
+For FORMULA , a FORMULA -switching is described by the sequence
+FORMULA 
+where FORMULA  is a matrix in FORMULA 
+and FORMULA  is a FORMULA -tuple
+of positions such that
+
+the rows FORMULA  are all distinct and the columns
+FORMULA  are all distinct;
+
+there is a FORMULA  in position FORMULA  of FORMULA ;
+
+the entries in positions FORMULA  of FORMULA  are
+not equal to 0 or FORMULA , for FORMULA ;
+
+there is a 0 in position FORMULA  and position
+FORMULA  of FORMULA  for FORMULA .
+
+This FORMULA -switching transforms FORMULA  into a matrix
+FORMULA  by acting on the FORMULA 
+submatrix consisting of rows FORMULA 
+and columns FORMULA  as follows:
+FORMULA 
+Matrix entries not shown can have any values and are unchanged by
+the switching operation.
+Notice that the FORMULA -switching preserves all row and column sums and
+reduces the number of entries equal to FORMULA  by at least 1 and
+at most FORMULA . The number of entries greater than FORMULA  is unchanged.
+A reverse FORMULA -switching, which undoes a
+FORMULA -switching (and vice-versa),
+is described by a sequence
+FORMULA 
+where FORMULA  and FORMULA  is a
+FORMULA -tuple of positions such that
+
+the rows FORMULA  are all distinct and the columns
+FORMULA  are all distinct;
+
+there is a zero in position FORMULA  of FORMULA ;
+
+the entries in positions FORMULA  of FORMULA  are
+not equal to FORMULA , for FORMULA ;
+
+there is a 1 in position FORMULA  and position
+FORMULA  of FORMULA  for FORMULA .
+
+
+Lemma 2.2 
+Let FORMULA  and let FORMULA  have at least FORMULA 
+non-zero entries that are not greater than FORMULA , and at least
+FORMULA  entries equal to FORMULA .
+Then there are at least FORMULA  FORMULA -switchings
+and at most FORMULA  reverse FORMULA -switchings that apply to FORMULA .
+
+First consider FORMULA -switchings.
+We want a lower bound on the number of
+FORMULA -tuples FORMULA 
+of indices where a FORMULA -switching may be performed.
+There are at least FORMULA  ways to choose the position FORMULA .
+Then we can choose the remaining positions one at a time, avoiding
+choices which violate the rules. The choice of the last position
+FORMULA  is the most restricted, so we bound that.
+By assumption, there are at least FORMULA  nonzero entries in FORMULA 
+that are not greater than FORMULA .
+Of these we must exclude the entry in position FORMULA 
+as well as entries in the same column as a nonzero entry in row
+FORMULA  other than column FORMULA  (at most FORMULA  positions),
+entries in the same row as a nonzero
+entry in column FORMULA  other than row FORMULA  (at most FORMULA  positions), and entries
+in row FORMULA  or column FORMULA  for FORMULA  (at most
+FORMULA  positions).
+Overall, we can choose position FORMULA  in at least
+FORMULA 
+ways, and as we noted this also applies to
+each of the less restricted positions FORMULA , where
+FORMULA . Hence at most FORMULA 
+FORMULA -switchings involve FORMULA .
+Next consider reverse FORMULA -switchings.
+An ordered sequence of FORMULA  entries in the same row which
+equal 1 may be chosen in at most FORMULA  ways, and an ordered sequence
+of FORMULA  entries in the same column which equal 1 may be chosen in at
+most FORMULA  ways. Some of these choices will not give a legal position
+for a reverse FORMULA -switching, but FORMULA  is certainly an
+upper bound.
+Our first application of switchings will be to show that only
+a vanishing fraction of our matrices have any entries greater
+than 3.
+For FORMULA  and FORMULA , let FORMULA  be the set of all
+matrices in FORMULA  with exactly FORMULA  entries equal to FORMULA  and none
+greater than FORMULA . Define FORMULA ,
+and note that FORMULA .
+Lemma 2.3 
+Suppose that FORMULA .
+Let FORMULA  be the set of all matrices in FORMULA 
+which contain an entry greater than 3. Then
+FORMULA 
+
+The largest possible entry of a matrix in FORMULA 
+is FORMULA . We will apply
+Theorem REF  to successively bound the possibility that the
+maximum entry is FORMULA , for FORMULA .
+Fix FORMULA  with FORMULA .
+Define a directed graph FORMULA  with vertex set
+FORMULA 
+and edge set FORMULA .
+Associate each FORMULA  with the set FORMULA .
+Define FORMULA  to be the set of pairs FORMULA  related by a
+FORMULA -switching, where FORMULA  for some FORMULA .
+Define FORMULA .
+Note that FORMULA  since FORMULA .
+We can now use Theorem REF  to bound
+FORMULA 
+once we have found
+positive functions FORMULA  satisfying (REF ).
+These are provided by Lemma REF  with FORMULA  and
+FORMULA , the latter being clear since there are no entries
+greater than FORMULA  and the total of all the entries is FORMULA .
+We have FORMULA  since
+FORMULA .
+Thus we can take FORMULA  and
+FORMULA .
+Theorem REF  tells us that, unless FORMULA ,
+there is a directed path FORMULA ,
+where FORMULA  and FORMULA  (since FORMULA  is
+the only sink) such that (REF ) holds.
+Hence, using the values of FORMULA  as given in Theorem REF 
+we have
+FORMULA 
+
+Let FORMULA  denote this upper bound: that is,
+FORMULA  for FORMULA .
+Note that FORMULA . For
+FORMULA , we have FORMULA  and
+FORMULA 
+
+uniformly over FORMULA , where the last step uses the observation
+that
+FORMULA .
+Since FORMULA 
+and FORMULA  for FORMULA ,
+we have FORMULA 
+as required.
+We may therefore restrict our attention to matrices with no
+entry greater than 3.
+Next we find upper bounds on the numbers of entries equal
+to 2 or 3 which hold with high probability.
+Define
+FORMULA 
+
+(Here and throughout the paper we have not attempted to optimise constants.)
+We will use the following lemma.
+Lemma 2.4 
+Let FORMULA  be a positive integer and let FORMULA  and FORMULA 
+be positive real numbers such that FORMULA .
+Then
+FORMULA 
+
+Dividing the left side by FORMULA  gives, for FORMULA ,
+FORMULA 
+
+The second line holds because FORMULA  is a
+decreasing function for FORMULA .
+The case FORMULA  follows by continuity.
+Lemma 2.5 
+Let FORMULA .
+Then, with probability FORMULA , a random element
+of FORMULA  has no entry greater than 3, at most FORMULA 
+entries equal to 3, and at most FORMULA  entries equal to 2.
+
+In view of Lemma REF ,
+we may restrict our attention to the set FORMULA  of all matrices
+in FORMULA  with maximum entry at most 3.
+We will start by applying 3-switchings as in
+Lemma REF 
+but the analysis will be more delicate.
+In applying Theorem REF  we have FORMULA ,
+with FORMULA  associated with FORMULA , and FORMULA .
+For sufficiently large FORMULA , we have from Lemma REF  that
+we can take FORMULA  and FORMULA .
+If FORMULA  then entries equal to 3 are impossible, so
+we assume that FORMULA .
+Define FORMULA .
+According to Theorem REF , there is a sequence
+FORMULA 
+with FORMULA  and
+FORMULA  for all FORMULA ,
+such that
+FORMULA 
+
+where FORMULA  is the largest index such that FORMULA  and
+FORMULA  for all FORMULA .
+Define FORMULA .
+Since FORMULA , we have FORMULA .
+Also, for FORMULA ,
+FORMULA 
+Therefore,
+FORMULA 
+
+Since FORMULA  we can apply Lemma REF 
+to obtain the bound
+FORMULA 
+Now FORMULA ,
+and FORMULA ,
+so this upper bound is at most
+FORMULA 
+This shows that with probability
+FORMULA  there are at most FORMULA  entries equal to 3, as required.
+To bound the number of entries equal to 2, we proceed in
+the same manner using 2-switchings, working under the
+assumption that there are at most FORMULA  entries equal to 3
+and none greater than 3.
+In applying Lemma REF ,
+we can take FORMULA , so that
+FORMULA  for sufficiently large FORMULA .
+Define FORMULA .
+Arguing as above we find a sequence
+FORMULA 
+with the following properties: (i) FORMULA  and
+FORMULA 
+for all FORMULA , and
+(ii)
+if FORMULA  is the greatest integer such that FORMULA  then,
+for any FORMULA  with FORMULA ,
+the probability that there are
+more than FORMULA  entries equal to 2, subject to there being at
+most FORMULA  equal to 3, is bounded above by
+FORMULA 
+First suppose that FORMULA , so that FORMULA  and
+FORMULA .
+Since FORMULA , it follows that FORMULA .
+Taking FORMULA  in (REF ) gives
+FORMULA 
+Now suppose that FORMULA .
+Then FORMULA 
+so we can take FORMULA .
+Arguing as above by applying Lemma REF  to (REF ),
+we obtain the bound FORMULA  again.
+This completes the proof.
+From now on we proceed in two cases, as in {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}.
+Say that the pair FORMULA  is substantial if the
+following conditions hold:
+
+FORMULA ,
+
+FORMULA  and FORMULA ,
+
+FORMULA .
+
+Lemma 2.6 
+If FORMULA  and FORMULA  is insubstantial,
+then with probability FORMULA , a random element of
+FORMULA  has no entry greater than 3, at
+most one entry equal to 3 and at most two entries equal to 2.
+
+The absence of entries greater than 3 follows from Lemma REF .
+We can also, by Lemma REF , assume that the number
+of entries equal to 2 or 3 is FORMULA .
+Therefore, most of the matrix entries are 0 or 1.
+Let FORMULA  be the set of all matrices in FORMULA  with no entries
+greater than 3, at most FORMULA 
+entries equal to 2 and at most FORMULA  entries equal to 3.
+To bound the number of entries equal to 2 or 3 even more tightly,
+as this lemma requires, we employ FORMULA -switchings (FORMULA ) with
+the additional restriction that FORMULA .
+This ensures
+that these restricted FORMULA -switchings reduce the number
+of entries equal to FORMULA 
+by exactly one and do not create any new entries equal to 2 or 3.
+Let FORMULA  be the number of matrices in FORMULA  with FORMULA 
+entries equal to 3.
+If FORMULA  is such a matrix then the number of restricted
+3-switchings applicable to FORMULA  is FORMULA 
+and the number of reverse restricted 3-switchings is
+at most FORMULA .
+(This follows using arguments similar to those in Lemma REF ,
+since there are FORMULA  entries equal to 1.)
+Therefore, if the denominator is nonzero,
+FORMULA 
+We can now easily check that each of the three causes
+of insubstantiality (namely, FORMULA , FORMULA ,
+and
+FORMULA ) imply that
+FORMULA 
+Hence (REF ) implies that
+FORMULA 
+In precisely the same way, using restricted 2-switchings,
+we find that
+FORMULA 
+where FORMULA  is the number of matrices in FORMULA  with
+FORMULA  entries equal to 2 and at most one entry equal to 3.
+The lemma follows.
+
+From pairings to matrices
+The remainder of the paper will involve calculations in the
+pairing model, which we now describe.
+(This model is standard for working with random bipartite
+graphs of fixed degrees: see for example {{cite:0fd33fd5-586a-43db-9a01-d55df345b32d}}.)
+Consider a set of FORMULA  points arranged in cells
+FORMULA , where cell FORMULA  has size FORMULA  for FORMULA ,
+and another set of FORMULA  points
+arranged in cells FORMULA  where cell FORMULA  has size FORMULA 
+for FORMULA .
+Take a partition FORMULA  (called a pairing) of the FORMULA  points
+into FORMULA  pairs with each pair having the form FORMULA 
+where FORMULA  and FORMULA  for some FORMULA .
+The set of all such pairings, of which there are FORMULA ,
+will be denoted by FORMULA .
+We work in the uniform probability space on FORMULA .
+Two pairs are called parallel if they involve the same
+two cells.
+A parallel class is a maximal set of mutually
+parallel pairs.
+The multiplicity of a parallel class (and of the
+pairs in the class) is the cardinality of the class.
+As important special cases,
+a simple pair is a parallel class of multiplicity one,
+a double pair is a parallel class of multiplicity two,
+while a triple pair is a parallel class of multiplicity
+three.
+Each pairing FORMULA  gives rise to a matrix
+in FORMULA  by letting the FORMULA -th entry of the matrix equal
+the multiplicity of the parallel class from FORMULA  to FORMULA  in FORMULA .
+In {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} we noted that the number of pairings which gives
+rise to each 0-1 matrix in FORMULA 
+depends only on FORMULA  and FORMULA  and is independent of the
+structure of the matrix. Hence the task of counting such
+matrices reduces to finding the fraction of pairings that
+have no multiplicities greater than 1.
+More generally, matrices in FORMULA  correspond to different
+numbers of pairings.
+For a pairing FORMULA , define the multiplicity vector
+of FORMULA  to be FORMULA 
+where FORMULA  is the number of parallel classes of multiplicity FORMULA .
+Also define the weight of FORMULA  as
+FORMULA 
+For FORMULA , define FORMULA  and FORMULA  to be the common
+weight and multiplicity vectors of the pairings that yield FORMULA .
+By elementary counting, a matrix FORMULA  corresponds
+to exactly
+FORMULA 
+pairings in FORMULA .
+Therefore, if FORMULA  is a set of multiplicity vectors,
+FORMULA , and
+FORMULA , then
+FORMULA 
+This holds in particular if FORMULA  is the set of all nonnegative
+integer sequences, in which case FORMULA  and FORMULA .
+We first prove Theorem REF  in the case that FORMULA  is
+insubstantial.
+Lemma 3.1 
+If FORMULA  and FORMULA  is insubstantial
+then Theorem REF  holds.
+
+Similarly to {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}, define a doublet
+to be to be an unordered set of 2 parallel pairs.
+A double pair provides one doublet, while a triple pair
+provides 3 doublets.
+For the uniform probability space over FORMULA , let FORMULA  be
+the expectation of the number of sets of FORMULA  doublets,
+for FORMULA .
+In {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} it is shown that
+FORMULA 
+Let FORMULA  denote the probability that a randomly chosen pairing
+contains exactly FORMULA  doublets, for FORMULA .
+Then
+FORMULA 
+and the partial sums of
+this series alternate above and below FORMULA 
+(see for example {{cite:a3f373c5-7575-45a8-a1ef-f5bb46cbfb61}}).
+Applying this, we find that
+FORMULA 
+
+(The expression for FORMULA  was also derived in {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}.)
+The configurations defining these cases are, respectively,
+no parallel pairs, one double pair, two double pairs, and one
+triple pair.
+Applying Lemma REF  and (REF ),
+FORMULA 
+
+where we have used the fact that FORMULA  in
+the insubstantial case to get the second line.
+This expression is equal to the expression in Theorem REF 
+under our present assumptions. (Note that since FORMULA  is
+insubstantial, the term FORMULA  which appears in the
+statement of Theorem REF  is absorbed into the error term.)
+For nonnegative integers FORMULA , define FORMULA  to be the set of all pairings in FORMULA  with
+exactly FORMULA  double pairs and FORMULA  triple pairs, but no parallel
+classes of multiplicity greater than 3.
+Also define
+FORMULA 
+A special case of (REF ), used in {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}, is that the
+number of 0-1 matrices in FORMULA  is
+FORMULA 
+We will proceed by writing FORMULA  in terms of
+FORMULA , as follows.
+Lemma 3.2 
+If FORMULA  is substantial then
+FORMULA 
+
+By Lemma REF  and (REF ),
+FORMULA 
+We will evaluate the sum in Lemma REF 
+using two summation lemmas proved in {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} and restated below.
+Lemma 3.3 ({{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}) 
+Let FORMULA  and FORMULA  be real numbers.
+Suppose that there exist integers FORMULA , FORMULA  with
+FORMULA  and FORMULA , and a real number
+FORMULA  such that FORMULA  and FORMULA 
+for all FORMULA  and FORMULA .
+Further suppose that there are real numbers FORMULA , for FORMULA ,
+and FORMULA , for FORMULA , such that
+FORMULA 
+for FORMULA .
+Given FORMULA  and
+FORMULA ,
+define FORMULA  by FORMULA  and
+FORMULA 
+for FORMULA , with the following interpretation: if FORMULA 
+then FORMULA  for FORMULA .
+Then
+FORMULA 
+where
+FORMULA 
+
+Lemma 3.4 ({{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}) 
+Let FORMULA  be an integer and, for FORMULA , let real
+numbers FORMULA , FORMULA  be given such that FORMULA  and
+FORMULA .
+Define
+FORMULA , FORMULA ,
+FORMULA  and FORMULA .
+Suppose that there exists a real number FORMULA  with
+FORMULA  such that
+FORMULA 
+for all FORMULA , FORMULA .
+Define FORMULA  by FORMULA  and
+FORMULA 
+for FORMULA , with the following interpretation: if FORMULA 
+or FORMULA , then FORMULA  for FORMULA . Then
+FORMULA 
+where
+FORMULA 
+
+We obtain bounds on the ratios we require by applying
+results from {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}}. To begin with we focus
+on the effect of changing the number of triple pairs while
+keeping the number of double pairs fixed.
+Lemma 3.5 
+Suppose FORMULA  and FORMULA , with FORMULA .
+If FORMULA  is substantial then
+FORMULA 
+
+This follows from {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} since, for FORMULA ,
+FORMULA 
+Next, adapting the proof of {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} gives:
+Corollary 3.6 
+ Suppose FORMULA  with FORMULA .
+Further suppose that
+FORMULA  is substantial. Then
+FORMULA 
+
+We will apply Lemma REF .
+Let FORMULA  be the first value of FORMULA  for which FORMULA , or
+FORMULA  if there is no such value.
+Define FORMULA , FORMULA , by
+FORMULA 
+Lemma REF  says that FORMULA  is bounded independently
+of FORMULA , FORMULA  and FORMULA .
+For FORMULA , define
+FORMULA 
+If FORMULA  then by definition
+FORMULA , and FORMULA 
+since FORMULA . Therefore FORMULA  in this case.
+If FORMULA  then FORMULA , which implies that FORMULA  since the
+right side of (REF )
+has the same sign as FORMULA .
+Therefore FORMULA  whenever FORMULA .
+Define FORMULA  for FORMULA .
+Also define FORMULA  for FORMULA .
+Define
+FORMULA  by taking the minimum and maximum of the
+FORMULA  and FORMULA  over FORMULA , as in Lemma REF .
+Let FORMULA  and FORMULA , and set
+FORMULA .
+Since FORMULA  and FORMULA , we have that
+FORMULA 
+for FORMULA  sufficiently large, by the definition of FORMULA .
+Therefore Lemma REF  applies and says that
+FORMULA 
+Finally, FORMULA .
+Since the sum we are estimating is at least equal to one, this additive
+error term is covered by the error terms inside the exponential.
+This completes the proof.
+Now we must sum over pairings with no triple pairs.
+Lemma 3.7 
+ Suppose that FORMULA  is substantial and that FORMULA 
+with FORMULA . Then
+FORMULA 
+where
+FORMULA 
+
+This follows from {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} since, for FORMULA ,
+FORMULA 
+Adapting the proof of {{cite:a7b7e45b-8aa9-4aa3-a7b8-29e9f1740b7a}} gives the following:
+Corollary 3.8 
+If FORMULA  is substantial then
+FORMULA 
+
+We need to apply Lemma REF  to
+the result of Lemma REF , and take into account the terms coming
+from the triple pairs (as given by Corollary REF ).
+Let FORMULA  be the first value of FORMULA  for which FORMULA ,
+or FORMULA  if no such value of FORMULA  exists.
+Define FORMULA  by
+FORMULA 
+for FORMULA , and FORMULA  for FORMULA .
+Then clearly
+FORMULA 
+Corollary REF  tells us that for FORMULA  we have
+FORMULA 
+where FORMULA  and in general FORMULA . (Note that (REF )
+is also true for FORMULA , since both sides
+equal zero.)
+If FORMULA  is a constant
+such that FORMULA  for FORMULA , then
+FORMULA 
+where
+FORMULA 
+Next we note that, for FORMULA , FORMULA , and for
+FORMULA ,
+FORMULA 
+with FORMULA , FORMULA , and FORMULA  satisfying the expressions given in the
+statement of Lemma REF . This follows since the factor
+FORMULA  is covered by the error term on FORMULA .
+For FORMULA  define FORMULA .
+Now let FORMULA , FORMULA ,
+where the maximum and minimum are taken over FORMULA .
+Also let FORMULA , and FORMULA , and define FORMULA 
+if FORMULA  and FORMULA  otherwise.
+The conditions of Lemma REF  now hold as we will show.
+Let FORMULA  be arbitrary.
+Clearly FORMULA .
+If FORMULA  then FORMULA . Using the condition
+FORMULA  implied by the substantiality of
+FORMULA , we find that FORMULA .
+For FORMULA , FORMULA .
+It is also easy to check that FORMULA .
+Thus, in all cases we have that FORMULA  and
+FORMULA  for sufficiently large FORMULA .
+If FORMULA  then
+FORMULA 
+while if FORMULA  then
+FORMULA 
+Finally, for FORMULA , we have
+FORMULA 
+
+where
+FORMULA 
+Since FORMULA ,
+which is easily checked, it
+follows that FORMULA  for FORMULA ,
+when FORMULA  is large enough.
+Therefore the conditions of Lemma REF  hold,
+and we conclude that each of the bounds given by that
+lemma for FORMULA  has the form
+FORMULA 
+where FORMULA  is either FORMULA  or FORMULA .
+A somewhat tedious check shows that
+FORMULA 
+Next consider the error term FORMULA .
+If FORMULA  then FORMULA ,
+while in the other cases we have
+FORMULA .
+Since FORMULA ,
+this additive error term is covered by a relative error of the same form.
+Therefore, each of the bounds on FORMULA 
+has the form
+FORMULA 
+
+Modulo the given error terms, the final expression does not depend
+on FORMULA , nor on whether we are taking a lower bound or upper bound
+in Lemma REF .
+To complete the proof, just apply (REF ).
+Corollary REF  and Lemma REF  together prove
+Theorem REF  in the substantial case.
+The insubstantial case was already proved in Lemma REF .
+
+Alternative formulation
+We now derive an alternative formulation of Theorem REF .
+Recall the definition
+of FORMULA  and FORMULA  given in the Introduction.
+Corollary 4.1 
+Under the conditions of Theorem REF ,
+FORMULA 
+
+By Stirling's formula or otherwise,
+FORMULA 
+as FORMULA , provided that the error term is bounded.
+This gives us the approximations
+FORMULA 
+
+Substitute these expressions into Theorem REF 
+and replace FORMULA  by their equivalents in terms of
+FORMULA .
+The desired result is obtained.
+As noted in the Introduction, Theorem REF  establishes the
+conjecture recalled after Theorem REF  in some cases.
+Using Corollary REF , the following is easily seen.
+(Note that FORMULA 
+in the semiregular case.)
+Corollary 4.2 
+If FORMULA  and FORMULA  satisfy FORMULA  and
+FORMULA , then
+FORMULA 
+
+Most of the terms inside the exponential of Corollary REF 
+are tiny unless at least one of
+FORMULA , FORMULA 
+is quite large (that is, the graph is very far from
+semiregular). In particular we can now prove Corollary REF 
+which was stated in the Introduction.
+[Proof of Corollary REF ]
+It is only necessary to check that the additional terms in
+Corollary REF  have the required size.
+It helps to realise that FORMULA ,
+FORMULA , FORMULA 
+and FORMULA .
+A random nonnegative FORMULA  matrix with entries summing to FORMULA 
+is just a random composition of FORMULA  into FORMULA  parts. (A composition
+is an ordered sum of nonnegative numbers.)
+In particular, for FORMULA  the row sum FORMULA  satisfies
+FORMULA 
+From this we can
+compute the following expected values.
+FORMULA 
+
+The first two expectations suggest that the argument of the
+exponential in Corollary REF  is close to 0 with high
+probability for such a random matrix. We will prove this in a
+future paper, and note that the result gives a model for the
+row and column sums of random matrices.
+
+Restricted sets of allowed entries
+Given a subset FORMULA  of the nonnegative integers,
+let FORMULA  denote the set of
+matrices in FORMULA  with all entries in the
+set FORMULA .
+Let FORMULA .
+By generalising the techniques of the preceding sections, we
+can find an asymptotic expression for
+FORMULA  whenever FORMULA .
+Lemma 5.1 Let FORMULA  with FORMULA .
+Define FORMULA  if FORMULA , FORMULA  if FORMULA ,
+and similarly FORMULA .
+Then
+FORMULA 
+
+Our general approach will be similar to that we used for
+Theorem REF , but
+the methods of Section  will need significant
+modification. The source of the problem is that a FORMULA -switching
+may introduce an entry that is not in FORMULA .
+For FORMULA  and FORMULA , let FORMULA  be the number of entries
+of FORMULA  equal to FORMULA . Also let FORMULA .
+Define FORMULA  and FORMULA  as in Section  when
+FORMULA  is substantial, and FORMULA  and FORMULA  when
+FORMULA  is insubstantial.
+Consider the following subsets of FORMULA :
+FORMULA 
+
+Also define the cardinalities FORMULA , respectively.
+By monotonicity, we have FORMULA  and
+FORMULA .
+We now employ switchings to establish that FORMULA 
+and FORMULA , from which it follows that
+FORMULA .
+We start with the claim that FORMULA . This is
+accomplished with a succession of four types of switchings, illustrated by
+the following operations on submatrices.
+FORMULA 
+
+To be precise, given any FORMULA , we apply the
+first switching until FORMULA , then the second switching
+until FORMULA , then the third
+switching until FORMULA , then
+finally the fourth switching until FORMULA . Since none of the
+switchings can undo the work of a previous switching, the end
+result is a matrix in FORMULA .
+(Note that in the resulting matrix FORMULA , at least one of FORMULA ,
+FORMULA , FORMULA , FORMULA  has value FORMULA .
+This implies that FORMULA .)
+Quantitatively, in each of
+the four phases, we remove a part of FORMULA  which
+is small compared to FORMULA .
+As a representative example, take the second switching.
+By counting similarly to Lemma REF , the second switching can
+be applied to FORMULA  in at least FORMULA  ways, and the
+inverse can be applied in at most FORMULA  ways. For
+FORMULA , the condition FORMULA  implies that
+FORMULA , so the ratios that play the part
+denoted by FORMULA  in Theorem REF  are all FORMULA .
+The same type of argument applies in all four phases, which establishes
+the bound FORMULA .
+When FORMULA , we know that FORMULA .
+We can now continue precisely as in Lemmas REF , REF ,
+using FORMULA -switchings restricted to FORMULA .
+This restriction ensures that FORMULA -switchings only create entries
+with value equal to 0 or 1.
+The various switching counts can be
+taken as essentially the same as before, since
+all but a vanishing fraction
+of the non-zero entries are 1.
+We conclude that FORMULA  which, as noted above,
+implies that FORMULA .
+Having now reduced the task to evaluation of FORMULA , we can
+complete the proof following Lemma REF  in the
+insubstantial case, and Section 4 in the substantial case.
+In Lemma REF  the only modification is to replace
+the expression FORMULA  by
+FORMULA .
+Now suppose that FORMULA  is substantial.
+If FORMULA  then the result is given by either
+Theorem REF  or Theorem REF .
+If FORMULA  and FORMULA  then the result follows from applying
+Corollary REF  with FORMULA , since arguing as in Lemma REF 
+shows that
+FORMULA 
+in this case.
+Finally, if FORMULA  and FORMULA 
+then
+FORMULA 
+so in place of (REF ) we simply have
+FORMULA  for FORMULA .
+The remainder of the proof is identical except that there is
+no need to apply (REF ) at the end.

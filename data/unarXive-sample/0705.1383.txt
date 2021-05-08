@@ -1,0 +1,114 @@
+
+The effect of randomness on the quantum spin system TlFORMULA KFORMULA CuClFORMULA  with FORMULA  = 0.44 studied by the Zero-field Muon-Spin-Relaxation (ZF-FORMULA SR) method
+
+Takao Suzuki FORMULAE-mail address: suzuki_takao@riken.jp, Fumiko YamadaFORMULA , Isao WatanabeFORMULA , Takayuki GotoFORMULA , Akira OosawaFORMULA , and Hidekazu TanakaFORMULA 
+FORMULA  Advanced Meson Science Laboratory, RIKEN (The Institute of Physical and Chemical Research), 2-1 Hirosawa, Wako, Saitama 351-0198
+FORMULA  Department of Physics, Tokyo Institute of Technology, Oh-okayama, Meguro-ku, Tokyo 152-8551
+FORMULA  Department of Physics, Sophia University, 7-1 Kioi-cho, Chiyoda-ku, Tokyo 102-8554
+Zero-field muon-spin-relaxation (ZF- FORMULASR) measurements were carried out down to 80 mK on the randomness bond system TlFORMULA KFORMULA CuClFORMULA  with FORMULA  = 0.44.
+Time spectra are well fitted by the stretched exponential function FORMULA .
+The muon spin relaxation rate FORMULA  increases rapidly with decreasing temperature, and FORMULA  tends to 0.5 at 80 mK.
+The divergent increase of FORMULA  suggests the critical slowing down of the frequency of the Cu-3d spin fluctuations toward a spin frozen state below 80 mK, and the root-exponential-like behavior of the time spectrum indicates that the origin of the relaxation is possibly the spatially-fixed fluctuating dilute moments.
+TlFORMULA KFORMULA CuClFORMULA , spin gap, magnon, Bose-Einstein condensation, randomness, Bose glass phase, FORMULA SR
+Introduction
+The isostructural materials TlCuClFORMULA  and KCuClFORMULA  are three-dimensionally coupled Cu-3d S = 1/2 spin dimer systems, and their magnetic ground states are spin-singlets with excitation gaps of FORMULA  7.5 K and 31 K, which originate from strong intradimer antiferromagnetic interaction J {{cite:460904e9-b11a-4f7c-9d8e-a8ffc2494caa}}, {{cite:30c70e94-f40c-441f-bf0f-c586080b5ce3}}, {{cite:b93b2084-66d4-4253-a850-80acd9d9dc2a}}, {{cite:4407b76b-7148-4e8c-b02d-1c6c50174724}}, {{cite:a96be64b-ac83-4b11-af02-fa0ebb1a2818}}.
+The spin dimers couple with one another through interdimer exchange interactions.
+The excited spin triplets (magnons) in the singlet sea can hop to neigbouring dimers due to the transverse component of the interdimer interaction, and the system can be represented as an ensemble of bosonic particles {{cite:48148d37-5486-4d4b-9ab7-61f6af2e116a}}, {{cite:57cf13e8-3dae-4e70-bee8-ad328c5fba07}}, {{cite:7d33042a-c504-4d00-a796-635ae0eb80d1}}, {{cite:5cd1d161-9e54-401a-b74c-2563f1e865ad}}.
+Under strong magnetic fields higher than the gap field HFORMULA , a magnetically ordered state appears, and this field-induced magnetic ordering can be described as Bose-Einstein condensation (BEC) of the excited triplets, because the superfluid and Mott insulating phases of the system of bosonic-particles theoretically correspond to the field-induced ordered phase and the gapped phase in the present spin system {{cite:5cec2f31-47f2-4da3-b346-fb049db69019}}, {{cite:7882a31c-6b14-4f37-898f-aaa28fe881da}}, {{cite:2f0f3d60-1ccc-410d-a28c-bd3b11a8bc54}}, {{cite:e7b85d96-e50e-4327-93f9-7f4c4f4d274a}}, {{cite:86f066e5-8c31-4e62-9945-2539be446f23}}, {{cite:9e677d4e-0892-4f3c-a590-0325eb1c7d1c}}, {{cite:c7da408e-0b83-4c65-80ee-36cbd1d8b778}}, {{cite:f5f6cdfe-1c6d-4a6c-8597-34a674275af4}}, {{cite:28c0cb7b-6e9b-43a5-b709-7cf5e8865560}}, {{cite:7f31ea2b-4e63-4fa6-8a39-4e02d554e3c2}}, {{cite:d90c335d-4713-497e-b898-5729a6423d15}}, {{cite:086ea0e5-c06f-4c07-bd96-b79012a219bc}}.
+In low-dimensional spin gap systems, theoretical studies predict that the ground state can be affected by an exchange bond-randomness {{cite:39082336-57a1-4c33-aae7-728cb7cc9b1a}}, {{cite:aeee7cb8-d3cc-4d58-846d-2ed7a43b0a29}}, and the exchange bond-randomness effect on the quantum spin system has been studied experimentally in many materials.
+In the random bond one-dimensional Heisenberg chain system (CHFORMULA )FORMULA CHNHFORMULA Cu(ClFORMULA BrFORMULA )FORMULA , spin gap phases are observed for FORMULA 0.44 and FORMULA 0.87, whereas a magnetically ordered phase at zero-field is observed in the concentration region of 0.44 FORMULA  0.87 by the magnetic susceptibility and specific heat measurements {{cite:0afe79ad-9614-497e-87c4-78b5f13f4ffc}}, {{cite:fb8b9f65-d368-46bd-b1f4-b425705ba255}}.
+The long range ordered state was confirmed for FORMULA  0.85 by a muon-spin-rotation measurement {{cite:1fdabefc-7c6d-4f18-afe5-f57833fc1fbe}}.
+In the mixed system TlFORMULA KFORMULA CuClFORMULA , which is the subject of this study, the randomness of the local potential is introduced through the difference of the value of the dominant intradimer interaction J between TlCuClFORMULA  and KCuClFORMULA , because J corresponds to the local potential of magnons.
+Magnetization measurements suggest that the ground state is negative with no gap in the mixed system in zero field (ZF), although both the parent materials are non-magnetic having finite excitation gaps {{cite:50aee991-a517-4a59-b496-5376b927fc58}}.
+In other words, the randomness induces a finite magnetic density of states within the excitation gap.
+The appearance of a new phase, Bose-glass phase, in lower magnetic fields at T = 0 is predicted by theories. {{cite:cca4a871-2b56-42a3-a3b9-f2d637e3896c}}, {{cite:6cf5739c-60e0-45ce-a6e3-de9cda0dddb3}}, {{cite:666ab37c-b703-4788-a9f8-31561f15a046}}
+According to theoretical predictions, the Bose-glass phase is produced between gapped and ordered phases corresponding to Mott insulating and superfluid phases.
+By the correspondence between the spin system and the bosonic-particle system, the uniform magnetization M and the magnetic susceptibility FORMULA  correspond to the number of the bosons N and the compressibility FORMULA .
+In the BEC phase, i.e., the superfluid state of bosons, the system is characterized by a finite staggered magnetization perpendicular to the applied magnetic field, whereas the Bose-glass phase is distinguished by the disappearance of the staggered magnetization keeping the magnetic susceptibility finite.
+In other word, bosons are localized due to randomness, but there is no gap.
+Shindo et al. carried out specific heat measurements in magnetic fields, and observed field-induced phase transitions which are described by the Bose-Einstein condensation of triplets of Cu-3d spins in the mixed system TlFORMULA KFORMULA CuClFORMULA  {{cite:7d738f83-38af-412e-a49a-01beacfb5ff4}}, {{cite:3f66bdb2-4733-4dda-b56e-b407124d3915}}.
+They discussed the obtained phase diagram in connection with the appearance of the Bose-glass phase.
+Bose-glass phenomena have also been studied intensively in other disordered quantum systems, vortex lattices {{cite:c005e726-d20c-45de-bbb4-eb1867011385}}, {{cite:63f4f52e-66c1-4d90-90c2-75f6a33389db}} and trapped atoms {{cite:aa8a6a3e-8b6b-4bbb-b413-20ddf1613cf3}}.
+Recently, we reported the increase of the muon-spin-relaxation rate FORMULA  at low temperature as well as the NMR-FORMULA  in TlFORMULA KFORMULA CuClFORMULA  with FORMULA  0.20 single crystals, which is possibly a precursor to the Bose-glass phase at T = 0 {{cite:ebf9a4bf-0b3c-4b24-957b-00d4aba4424c}}, {{cite:be42ae34-58fe-4248-b906-22723e707e82}}.
+These results are consistent with the theoretical prediction that the Bose-glass phase is expected to appear for FORMULA  0.
+However, it is not yet known whether or not another ground state apart from the Bose-glass phase and the gapped state appears when the randomness is enhanced with increasing the concentration of FORMULA  in the system.
+In order to investigate microscopic magnetic properties and to obtain information about the ground state in highly random systems, we carried out the zero-field muon-spin-relaxation (ZF-FORMULA SR) measurements in TlFORMULA KFORMULA CuClFORMULA  with FORMULA  0.44 single crystals.
+In ionic crystals, the positive muon FORMULA  usually stops near minus ions.
+For example, the muon-site in the case of high-TFORMULA  cuprates is determined to be near the OFORMULA  ions {{cite:ebe1f716-2a00-4e8a-8659-b7be9cb419d8}}.
+In TlFORMULA KFORMULA CuClFORMULA , muon spins are expected to be implanted near the ClFORMULA  ions.
+We expect that muon spins probe information about the Cu-3d spins through a hyperfine interaction, because it is reported that muon spins successfully detect Cu-3d spin fluctuations in the other quantum spin systems (CHFORMULA )FORMULA CHNHFORMULA CuClFORMULA  and (CHFORMULA )FORMULA CHNHFORMULA Cu(ClFORMULA BrFORMULA )FORMULA  which are similar compounds to TlFORMULA KFORMULA CuClFORMULA  {{cite:1fdabefc-7c6d-4f18-afe5-f57833fc1fbe}}, {{cite:75727534-37c3-475f-b4eb-2ebb0adc1d6a}}.
+
+Experimental
+Single crystals used in this study were grown from a melt by the Bridgman method.
+The details of crystal growth are given elsewhere {{cite:50aee991-a517-4a59-b496-5376b927fc58}}.
+The magnetization was measured using a superconducting quantum interference magnetometer (Quantum Design MPMS XL) in the department of physics, Tokyo Institute of Technology.
+Zero-field muon-spin-relaxation (ZF - FORMULA SR) measurements were carried out at the RIKEN-RAL Muon Facility in the U.K. using a spin-polarized pulsed positive surface-muon beam with an incident muon momentum of 27 MeV/c.
+Forward and backward counters were located on the upstream and downstream sides of the beam direction, which was parallel to the initial muon-spin direction.
+The asymmetry parameter was defined as follows:
+FORMULA 
+FORMULA  and FORMULA  were total muon events counted by the forward and backward counters at a time FORMULA , respectively.
+The FORMULA  is a calibration factor reflecting relative counting efficiencies between the forward and backward counters.
+The initial asymmetry is defined as FORMULA .
+In this study, the calibration factor FORMULA  and the background subtraction were taken into account for the data analysis.
+The muon-spin-relaxation (FORMULA SR) time spectra were measured down to FORMULA  80 mK using a dilution refrigerator (Leiden cryogenics b. v.).
+The incident muon-spin direction was parallel to the b-axis of single crystals.
+Cleaved single crystals were attached densely by an Apiezon N grease on a five nines purity silver plate.
+The total size of crystals is 25 FORMULA  3 FORMULA  25 mmFORMULA .
+
+Results and Discussion
+Figure 1 shows the temperature dependence of the magnetic susceptibility FORMULA  in TlFORMULA KFORMULA CuClFORMULA  with FORMULA  = 0.44 at the magnetic field of 0.1 T.
+The reciprocal of the susceptibility FORMULA  is shown in the inset of Fig. 1.
+Above 60 K, FORMULA  has a linear temperature dependence, which means that the spins are weakly coupled in the higher temperature region.
+Below 60 K, however, the FORMULA -T curve deviates from the Curie-Weiss law, and the susceptibility FORMULA  begins to decrease rapidly with decreasing temperature toward a finite value after a broad peak at 30 K.
+FIGURE 
+The rapid decrease of the susceptibility indicates the development of the antiferromagnetic spin correlations at lower temperatures.
+Such temperature dependence of the susceptibility is the characteristic behavior in this system {{cite:50aee991-a517-4a59-b496-5376b927fc58}}, {{cite:7d738f83-38af-412e-a49a-01beacfb5ff4}}, {{cite:3f66bdb2-4733-4dda-b56e-b407124d3915}}.
+FIGURE 
+Figure 2 shows the temperature dependence of the magnetic susceptibility at high magnetic fields of 3, 5, and 7 T.
+No cusp like minimum is observed down to 1.8 K and up to 7 T, which suggests a shift of the field-induced magnetic phase transition point to lower temperatures and/or to higher magnetic fields region.
+This result is consistent with the tendency reported in TlFORMULA KFORMULA CuClFORMULA  with FORMULA 0.27 (ref.27).
+A possible origin of the shift of the transition point is the enhancement of the bond-randomness introduced in the system, because the concentration of FORMULA  is supposed to correspond to the degree of the randomness.
+Another possibility is the development of a uniform spin excitation gap of the system because the excitation gap in KCuClFORMULA  is quite large compared with that in TlCuClFORMULA .
+Figure 3 shows the field dependence of the magnetization (M-H curve) at 1.8 K.
+A finite value of the differential FORMULA  at the zero-field limit indicates that the ground state is paramagnetic.
+As seen in Fig.3, absolute values of the magnetization M and of the differential FORMULA  are larger compared to those reported in the samples with FORMULA  0.27.
+The increase of the magnetization with increasing FORMULA  means that the density of states for the spin excitations in the low-energy region is enhanced.
+FIGURE 
+It is suggested that the strong randomness is introduced intrinsically in the single crystals with the concentration of FORMULA  = 0.44, although it is not clear whether an excitation gap FORMULA  develops.
+From these magnetization results, the spin system is not in a magnetically ordered state but in a paramagnetic state with a finite susceptibility at the zero-field limit, at least down to 1.8 K.
+Figure 4 shows ZF-FORMULA SR time spectra of TlFORMULA KFORMULA CuClFORMULA  with FORMULA  0.44 at each temperature.
+The shape of the time spectrum is changed drastically with decreasing temperature.
+The spectrum shape at 10 K is a Gaussian-like function (opens downwards).
+At lower temperatures, the spectrum becomes exponential-like at 3 K, and finally, a rather fast relaxation is observed at 80 mK.
+FIGURE 
+In order to discuss the spectrum change by one formula in the whole temperature range in this study, the FORMULA SR time spectra are analyzed using the function of the stretched exponential FORMULA , where FORMULA  is the initial asymmetry and FORMULA  is the muon-spin-relaxation rate.
+All the time spectra are well fitted by the above function, as shown in Fig.4 with solid lines.
+Figure 5 shows the temperature dependence of the muon-spin-relaxation rate FORMULA  and of the power FORMULA .
+The relaxation rate FORMULA  increases rapidly with decreasing temperature in contrast to the case of FORMULA  0.20 (open triangles).
+The rapid increase of the relaxation rate FORMULA  reminds us of the critical divergence toward a phase transition, and it is suggested that there exists a critical slowing down of the fluctuation frequency of the Cu-3d spins to a spin frozen state below 80 mK in zero-field.
+The expected spin frozen state is not the Bose-glass phase, because the saturation of the relaxation rate FORMULA  is not observed in the case of FORMULA  0.44, as mentioned below.
+FIGURE 
+The power FORMULA  of the stretched exponential function decreases with decreasing temperature, and tends to saturate to the value of FORMULA  0.65.
+McHenry et al. discussed the nuclear spin-lattice relaxation by spatially localized impurity spins in intermetallic compounds {{cite:306c330c-bdd6-491d-b6b0-71f629b9fbb6}}.
+According to their results, if magnetic moments which contribute to the spin-lattice relaxation distribute densely, the spin relaxation curve is expressed by the exponential function of FORMULA  FORMULA  regardless of whether magnetic moments distribute homogeneously in space or not.
+For low impurity concentration, however, the spin relaxation curve is calculated to be proportional to FORMULA  FORMULA  when the nuclear-spin diffusion is absent and the localized spins are fluctuating.
+Since the muon-spin-relaxation is caused by fluctuating local magnetic fields at muon sites induced by surrounding magnetic moments, we can apply these results of the nuclear-spin-relaxation analysis to the case in the FORMULA SR measurement. {{cite:6a2d6604-9aed-4426-83fa-279cbe03a475}}, {{cite:169a7835-36e6-44ba-8300-f0a7c4bb525c}}
+Although it is difficult to distinguish whether or not spins are fluctuating without longitudinal-field muon-spin-relaxation measurements, it can be suggested from the root-exponential-like (FORMULA  0.65) behavior observed at 80 mK in this study that the fast muon-spin-relaxation originates from the spatially-fixed dilute moments fluctuating in time , and it is suggested that spatially separated islands, which have a finite magnetic moment large enough to cause the fast muon-spin-relaxation, appear in the singlet sea at lower temperatures.
+Figure 6 shows the time spectrum of the ZF-FORMULA SR in TlFORMULA KFORMULA CuClFORMULA  with FORMULA  = 0.20 at 0.3 K and with FORMULA  = 0.44 at 80 mK.
+FIGURE 
+In the case of FORMULA  0.20, the time spectrum is well fitted by a simple exponential function, and the muon-spin-relaxation rate FORMULA  tends to saturate at lower temperatures as shown in Fig.5 {{cite:ebf9a4bf-0b3c-4b24-957b-00d4aba4424c}}.
+The saturation of FORMULA  in the case of FORMULA  0.20 is consistent with the existence of the Bose-glass phase at T = 0 by analogy with the result on the frustrated system which has quantum spin fluctuations without static local magnetic fields at muon sites down to 100 mK {{cite:edd3b11d-3851-4394-b111-f2908c1ba1a6}}.
+In the case of FORMULA  0.44, however, the shape of the time spectrum is the root-exponential-like, and the relaxation rate FORMULA  shows the rapid increase with decreasing temperature as mentioned above.
+This result observed in FORMULA  0.44 is quite different from the case in FORMULA  0.2, and this difference indicates the ground state changes with increasing the concentration FORMULA  corresponding to the degree of the bond-randomness.
+The existence of a new ordered phase is expected in highly random regions.
+Finally, we emphasize that the result reported in this study is a new phenomenon which has not been predicted theoretically or observed previously in this system.
+
+Summary
+In summary, we carried out magnetization and zero-field muon-spin-relaxation (ZF-FORMULA SR) measurements in the bond-randomness introduced quantum spin system TlFORMULA KFORMULA CuClFORMULA  with FORMULA  0.44 single crystals.
+The muon-spin-relaxation rate FORMULA  increases rapidly with decreasing temperature, and the time spectrum at 80 mK shows a root-exponential like behavior.
+These results suggest that below 80 mK, in contrast to the predicted Bose-glass phase, there exists a critical slowing down of the frequency of the Cu-3d spin fluctuation toward a spin frozen state.
+The muon-spin-relaxation FORMULA  in this state originates from spatially-fixed fluctuating dilute moments.
+
+Acknowledgment
+The authors are grateful to Dr. F. Pratt for a critical reading of the manuscript.
+This research was partially supported by the Joint Research Projects of JSPS, and partially supported by the Torey Science Foundation.

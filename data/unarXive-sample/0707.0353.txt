@@ -1,0 +1,703 @@
+
+Intrinsic Zeeman Effect in Graphene
+Motohiko Ezawa
+Department of Physics, University of Tokyo, Hongo 7-3-1, 113-0033, Japan 
+April 14, 2007
+The intrinsic Zeeman energy is precisely one half of the
+cyclotron energy for electrons in graphene.
+As a result a Landau-level mixing occurs
+to create the energy spectrum comprised of the FORMULA -fold degenerated
+zero-energy level and 4-fold degenerated nonzero-energy levels
+in the FORMULA -layer graphene,
+where FORMULA  for monolayer, bilayer and trilayer, respectively.
+The degeneracy manifests itself in the quantum Hall (QH) effect.
+We study how the degeneracy is removed by the Coulomb interactions.
+With respect to the zero-energy level,
+an excitonic gap opens by making a BCS-type condensation of electron-hole pairs
+at the filling factor FORMULA .
+It gives birth to the Ising QH ferromagnet at FORMULA  for monolayer, FORMULA  for bilayer, and FORMULA  for trilayer graphene from the zero-energy degeneracy.
+With respect to the nonzero-energy level,
+a remarkable consequence is derived that the effective Coulomb potential
+depends on spins, since a single energy level contains up-spin and
+down-spin electrons belonging to different Landau levels.
+The spin-dependent Coulomb interaction leads to the valley polarization at FORMULA  for monolayer,
+FORMULA  for bilayer,
+and FORMULA  for trilayer graphene.
+Introduction
+Recent experiments has established that the charge carriers in graphene are
+massless Dirac electrons{{cite:c0ad5e7f-6680-41ac-ab3f-19ad188a8163}}, {{cite:a89c73a7-9eb9-4669-8642-8483f7333570}}, {{cite:53a3e520-c20d-4287-bce1-9891de4bf38e}}, {{cite:bc956f0c-c15a-4c85-b2b6-c6a4aa48996f}}, {{cite:928ca9bb-c06b-4c30-bd8d-868d90e8e884}}. Dirac
+electrons have a peculiar property that they have the intrinsic Zeeman
+energy precisely one half of the cyclotron energy in magnetic field.
+Consequently a Landau level mixing occurs so that one energy level contains
+up-spin and down-spin electrons coming from different Landau levels. It has
+two important consequences; the emergence of the zero-energy state{{cite:3fb623a5-3ed7-4e2a-91d1-f3a56e41609d}}, and the degeneracy of the up-spin and down-spin states for each
+nonzero-energy level [Fig.REF (a)]. The aim of this paper is
+to explore new phenomena due to this intrinsic Zeeman effect in graphene.
+The quantum Hall effect (QHE) in graphene{{cite:c0ad5e7f-6680-41ac-ab3f-19ad188a8163}}, {{cite:a89c73a7-9eb9-4669-8642-8483f7333570}}, {{cite:53a3e520-c20d-4287-bce1-9891de4bf38e}}, {{cite:bc956f0c-c15a-4c85-b2b6-c6a4aa48996f}}, {{cite:928ca9bb-c06b-4c30-bd8d-868d90e8e884}}
+is unconventional. The filling factors form a series [Fig.REF (b)],
+FORMULA 
+where the bold-face series had been predicted{{cite:db00a9b4-b9a1-4265-bef8-077f2a440f58}}, {{cite:e86c6ddd-cd86-4847-a7ff-5aa5f7086c8c}}, {{cite:ef834697-4703-4298-a3d2-293566268569}} before it was found experimentally{{cite:c0ad5e7f-6680-41ac-ab3f-19ad188a8163}}, {{cite:a89c73a7-9eb9-4669-8642-8483f7333570}}, {{cite:53a3e520-c20d-4287-bce1-9891de4bf38e}}, {{cite:bc956f0c-c15a-4c85-b2b6-c6a4aa48996f}}, while the full series was discovered later{{cite:928ca9bb-c06b-4c30-bd8d-868d90e8e884}} with larger magnetic field applied. Subsequently theoretical
+works{{cite:7093b5b6-c028-48f9-94f4-d6a03d333770}}, {{cite:5da76232-d78e-4ec4-a8ef-d3d36ac9d56a}}, {{cite:0792b923-5950-4ecc-8721-e4074a235b62}}, {{cite:8f4796d9-ad51-40cc-ab8a-b8ceefd09140}}, {{cite:f5c0fc8f-ce8e-4558-a381-92530658cca5}} have been made to
+interpret the series. Furthermore, the series reads
+FORMULA 
+in a bilayer graphene, where the bold-face series has been found
+experimentally{{cite:bc956f0c-c15a-4c85-b2b6-c6a4aa48996f}} and studied theoretically{{cite:2d621172-c9a5-4eea-ba02-4d3bf4b6a66d}}, while it
+reads
+FORMULA 
+in a trilayer graphene, where the bold-face series has been predicted
+theoretically{{cite:f69a7d06-4e57-4242-811d-47e1e0122477}}. In this paper we show that the full series
+emerge when Coulomb interactions become important. It is notable that the
+basic height in the Hall conductance is FORMULA  for the bold-face series
+for all these graphene systems, indicating the 4-fold degeneracy of the
+energy level except for the first step at the FORMULA  point within
+noninteracting theory.
+FIGURE 
+Conduction and valence bands in graphene form conically shaped valleys,
+touching at a point [Fig.REF ]. There are two inequivalent
+Brillouin zone corners, called the K and K' points, at which massless Dirac
+electrons emerge{{cite:5f9fa789-a16f-4eb1-b07a-19c110baf0db}}, {{cite:f138650d-b431-4f96-b8bb-2dd98a4491e8}}, {{cite:0ffab13d-8fc2-45a2-a8cb-1cd5fe2bec44}}. Let us refer to the
+valley as the Dirac valley, and assign the valley index to the electron so
+that the electron at the K (K') point carries the index FORMULA  (FORMULA ). As
+we have mentioned, the graphene QH system is characterized by the emergence
+of the zero-energy state and the degeneracy of the up-spin and down-spin
+states for each nonzero-energy level. Since this holds separately at the K
+and K' points, each energy level has a 4-fold degeneracy [Fig.REF (a)], and the noninteracting system has the SU(4) symmetry.
+Intriguing phenomena occur when we introduce Coulomb interactions. It is
+necessary to consider the Coulomb effect in the zero-energy state and
+nonzero-energy states separately.
+The zero-energy state is distinctive, since it contains both electrons and
+holes. Electron-hole pairs form an excitonic condensation due to attractive
+interaction, producing an excitonic gap. We obtain a BCS-type state of
+electron-hole pairs at FORMULA . As a consequence of excitonic condensation,
+the degeneracy of the zero-energy state is resolved into two subbands each
+of which contains either electrons or holes. The Coulomb Hamiltonian,
+projected to each of them, has the U(1) symmetry but is broken into the ZFORMULA  symmetry. We obtain the Ising QH ferromagnet at FORMULA .
+We next study nonzero-energy states of electrons, where a single energy
+level contains up-spin and down-spin electrons belonging to different Landau
+levels [Fig.REF (a)]. We derive a remarkable consequence that
+the effective Coulomb potential depends on the spin and the valley in each
+energy level. Namely, it depends on the spin of electrons as well as on
+which valley electrons belongs to. The Coulomb Hamiltonian, projected to a
+single energy level, possesses only the U(1)FORMULA U(1)FORMULA ZFORMULA 
+symmetry. Consequently, the Coulomb interaction resolves the 4-fold
+degeneracy into two 2-fold degeneracies, generating a new series at FORMULA . The ground state is a valley polarized state,
+by which we mean that more electrons are present in one valley than the
+other. This occurs because the Coulomb energy is lower in higher Landau
+levels.
+Our analysis can be generalized to the FORMULA -layer graphene system, where FORMULA , 2 and 3 correspond to monolayer, bilayer and trilayer, respectively.
+We show that the zero-energy states have the FORMULA -fold degeneracy. As a
+result the quantized values of the Hall conductivity become
+FORMULA 
+within noninteracting theory. We also discuss the effects due to Coulomb
+interactions.
+This paper is composed as follows. In Section  we investigate
+the energy spectrum in the presence of magnetic field. We show that two
+Landau levels mix to create one energy level. In Section 
+we construct the projected Coulomb Hamiltonian relevant to analyze physics
+in the FORMULA th energy level. The effective Coulomb potential is shown to
+depend on the spin and the valley through the form factors characterizing
+Landau levels. In Section  we treat the zero-energy level (FORMULA ), which contains both electrons and holes. We present a clear-cut
+description of an excitonic condensation, producing a gap to the electron
+and hole states, on the analogy of the BCS superconductor. In Section , studying how Coulomb interactions resolve the degeneracy of
+the nonzero-energy level, we derive the valley polarized ground state. In
+Section  our analysis is generalized to multilayer
+graphene systems. Finally, Section  is devoted to discussions.
+FIGURE 
+
+Dirac Electrons and Intrinsic Zeeman Effect
+Dirac Hamiltonian
+The low-energy band structure of graphene is described by conically shaped
+valleys, touching at a point. There exists two inequivalent Brillouin zone
+corners FORMULA  with FORMULA  the lattice
+constant. They are called the K and K' points [Fig.REF (b)]. The
+two-dimensional energy dispersion relation is linear in these Dirac valleys,
+FORMULA 
+where FORMULA  is the Fermi velocity, and FORMULA  is the valley
+index. This linear behavior has been confirmed experimentally{{cite:07a937f2-2e50-4456-b869-d95cb8efa338}} up
+to 3eV. It is convenient to make the change of variable, FORMULA , and rewrite the dispersion relation as
+FORMULA 
+We use the variable FORMULA  to show that FORMULA  is the relative momentum of electrons, FORMULA , measured from FORMULA  at the K or K' point.
+There exists one electron per one carbon and the band-filling factor is 1/2
+in graphene. Hence we have electron excitations in the conduction band and
+hole excitations in the valence band. Furthermore there exists the
+electron-hole symmetry.
+The dispersion relation (REF ) is that of `relativistic' Dirac
+fermions{{cite:5f9fa789-a16f-4eb1-b07a-19c110baf0db}}, {{cite:f138650d-b431-4f96-b8bb-2dd98a4491e8}}, {{cite:0ffab13d-8fc2-45a2-a8cb-1cd5fe2bec44}}. Hence the second-quantized
+Hamiltonian is given by
+FORMULA 
+where FORMULA  is the quantum mechanical Hamiltonian,
+FORMULA 
+with FORMULA , the Pauli matrix FORMULA  and
+the Dirac matrix FORMULA . The field FORMULA 
+consists of eight components, corresponding to the spin degree of freedom,
+the electron-hole degree of freedom and the valley degree of freedom. Being
+massless, the Hamiltonian describes Weyl fermions, and the spin index FORMULA  represents the helicity.
+The field operator FORMULA  is expanded in terms of the
+eigenfunctions of FORMULA  as
+FORMULA 
+with
+FORMULA 
+where FORMULA  and FORMULA  are the annihilation operator of an electron
+and the creation operator of a hole, respectively, while FORMULA  and FORMULA  are
+the corresponding eigenfunctions of the Dirac operator (REF )
+with the eigenvalue FORMULA .
+The field FORMULA  describes solely the dynamics of
+electrons localized in each Dirac valley at the K or K' point. In the
+dispersion relation (REF ), FORMULA  is the
+momentum fluctuation around FORMULA  at the K or K' point. The
+total momentum of the electron is not FORMULA  but FORMULA . Due to
+this fact, the eigenfunctions FORMULA 
+and FORMULA  are not wave functions but
+envelope functions{{cite:5b3e1d53-a443-430d-9d0b-b4f2935095d5}}. The wave functions are given by FORMULA  and FORMULA .
+Accordingly, the field operators of electrons and holes are
+FORMULA 
+Thus, to analyze the Coulomb interaction, it is necessary to use FORMULA  and FORMULA . In
+Appendix  we derive the Dirac Hamiltonian (REF ) based on the effective-mass description{{cite:5b3e1d53-a443-430d-9d0b-b4f2935095d5}}.
+We make a comment on the factor FORMULA  in front of FORMULA  in (REF ). It has the standard expression of the Dirac Hamiltonian for FORMULA , that is, at the K point. The K point is transformed into the K'
+point under the mirror reflection. Corresponding to this we have the
+mirror-reflected Dirac Hamiltonian (REF ) for FORMULA , that
+is, at the K' point. The total Hamiltonian (REF ) has the
+mirror symmetry.
+
+Landau Levels
+We apply the magnetic field to a graphene sheet taken on the FORMULA  plane. It
+is introduced to the Hamiltonian (REF ) by making the minimal
+substitution,
+FORMULA 
+where FORMULA  is the covariant momentum.
+We assume a homogeneous magnetic field FORMULA  with FORMULA  along the FORMULA  axis. The presence of the
+external magnetic field modifies the mirror symmetry as follows: The
+modified mirror reflection not only transforms the K point into the K' point
+but also reverses the direction of the magnetic field to maintain the
+symmetry. This is most clearly seen in (REF ), as we shall
+discuss later. Consequently, the K and K' points become physically
+distinguishable.
+Electrons make cyclotron motion in magnetic field. The helicity is no longer
+a good variable, since there exists a special direction for the spin, that
+is, the direction of magnetic field. In this case it is convenient to use
+the standard representation for the Dirac matrices, where
+FORMULA 
+In order to discuss the QHE, we solve the quantum mechanical problem with
+the Hamiltonian (REF ) in each Dirac valley,
+FORMULA 
+and we expand the field operator in terms of the new eigenfunctions.
+To solve the eigen equation (REF ) we express the Hamiltonian (REF ) as
+FORMULA 
+with the use of (REF ) for FORMULA , where
+FORMULA 
+It is diagonalized as
+FORMULA 
+We introduce a pair of operators
+FORMULA 
+satisfying FORMULA , where FORMULA  is the
+magnetic length. Since the operators (REF ) is rewritten as
+FORMULA 
+with FORMULA , the diagonalized
+Hamiltonian reads
+FORMULA 
+Since FORMULA  is the number operator, the eigenvalue of the Dirac
+Hamiltonian FORMULA  follows immediately,
+FORMULA 
+with the eigenstate
+FORMULA 
+where FORMULA .
+The operators FORMULA  and FORMULA  are the Landau-level ladder operators.
+Hence, FORMULA  in (REF ) represents the Landau-level index. We
+have found that the energy of an electron in the FORMULA th Landau level is
+either FORMULA  or FORMULA . It is
+curious that the energy of an electron in the lowest Landau level (FORMULA ) is
+zero though it performs cyclotron motion. This puzzle is solved in the
+succeeding subsection.
+
+Pauli Hamiltonian
+To reveal the intrinsic structure of the energy spectrum, we investigate the
+Hamiltonian{{cite:f5c0fc8f-ce8e-4558-a381-92530658cca5}}, {{cite:5256ee5c-57d3-41e0-8257-37f1a2a8993f}}, {{cite:6aaac83c-6b92-4975-88ad-88d5bd7fb6fc}}, {{cite:938137f4-4e33-46c0-b001-44171fc4cb08}}
+FORMULA 
+which is the building blocks of the Dirac Hamiltonian (REF ).
+Here, the direction of the magnetic field is found to be effectively
+opposite at the K and K' points. Since this has the same form as the Pauli
+Hamiltonian with the mass FORMULA  except for the
+dimension, we call it the Pauli Hamiltonian for brevity. The salient feature
+of the relativistic Dirac Hamiltonian is that its spectrum is
+mapped from that of the nonrelativistic Pauli Hamiltonian. Thus,
+the energy eigenvalue FORMULA  of the Dirac Hamiltonian FORMULA  is constructed as FORMULA  from the energy eigenvalue FORMULA  of the Pauli
+Hamiltonian FORMULA .
+In the Pauli Hamiltonian (REF ), the first term is the kinetic
+term while the second term is the Zeeman term. It is fixed uniquely as an
+intrinsic property of the Dirac theory: We call it the intrinsic Zeeman
+effect.
+The Landau level is created by electrons making cyclotron motion. In the
+conventional QHE, since the Zeeman energy can be considered much smaller
+than the Landau-level separation, we may treat it as a perturbation.
+However, this is not the case in graphene. According to the Pauli
+Hamiltonian (REF ), the intrinsic Zeeman energy is precisely one
+half of the cyclotron energy for Dirac electrons, and two Landau levels mix
+to create one energy level, as illustrated in Fig.REF (a).
+We consider the K point (FORMULA ). It is obvious that the up-spin and
+down-spin states are eigenstates of the Pauli Hamiltonian (REF )
+and hence eigenstates of the Dirac Hamiltonian (REF ), and that
+the up-spin state has a lower energy than the down-spin state when they
+belong to the same Landau level. On the other hand, the direction of the
+spin is opposite at the K and K' points. Hence, we can make the following
+identification of quantum numbers for electrons in the FORMULA th level (FORMULA ) of the energy spectrum [Fig.REF (a)],
+FORMULA 
+A similar identification can be made for holes in the FORMULA th energy level (FORMULA ) . The zeroth energy level (FORMULA ) consists of the up-spin electron
+and the down-spin hole at the K point, and the down-spin electron and the
+up-spin hole at the K' point [Fig.REF (a)], coming from the
+lowest Landau levels for electrons and holes.
+Counting the states at the K and K' points all together, one energy level
+has a 4-fold degeneracy. Each filled energy level contributes one
+conductance quantum FORMULA  to the Hall conductivity. Consequently
+the resulting series is FORMULA , which accounts
+for the bold-face series (REF ) in the monolayer graphene.
+
+Field Operators
+We focus on electrons in the FORMULA th energy level. (Essentially the same
+analysis is applicable to holes.) We start with the quantum-mechanical state
+in a single Landau level. We decompose the electron coordinate FORMULA  into the guiding center FORMULA  and the relative
+coordinate FORMULA , FORMULA ,
+where FORMULA  and FORMULA  with FORMULA 
+the covariant momentum. They satisfy the commutation relations FORMULA , FORMULA , FORMULA . We define a set of operators FORMULA , FORMULA  by
+FORMULA 
+obeying FORMULA , in addition to a set of operators FORMULA , FORMULA 
+by (REF ). The quantum-mechanical states are the Fock states,
+FORMULA 
+with FORMULA  the Fock vacuum, FORMULA .
+We have constructed the energy spectrum of the Dirac Hamiltonian (REF ) in each Dirac valley, as illustrated in Fig.REF (a). The FORMULA th energy level (FORMULA ) contains electrons
+coming from two Dirac valleys (FORMULA ), whose field operators are
+expanded in terms of the eigenfunctions. Corresponding to FORMULA , FORMULA , FORMULA  and FORMULA  in (REF ), we have
+FORMULA 
+where FORMULA  is the annihilation operator acting on the
+Fock state FORMULA  at the FORMULA  point. In what follows we suppress
+the Landau-level index FORMULA  in FORMULA  with the
+understanding that FORMULA , FORMULA , FORMULA , FORMULA . See (REF ) with respect to the factor FORMULA . The electron operators in the zeroth energy level are given by FORMULA  and FORMULA 
+with FORMULA .
+
+Coulomb Interactions
+We make the basic assumption that the cyclotron energy is much larger than
+the Coulomb energy as in the conventional QHE{{cite:d07e794d-b650-4759-8b37-3315322682f2}}, {{cite:57df128c-dca5-450e-a7eb-7df7594d5fda}}, {{cite:e1175dac-9745-49b8-95f8-c263fe58ffd6}}. We neglect the Landau-level mixing by
+the Coulomb interaction, and analyze it within one energy level [Fig.REF (a)]. There exists a consistent formalism, known as the
+Landau-level projection. The projected theory presents not only a good
+approximation but also an essential way to reveal a new physics inherent to
+the QH system{{cite:d07e794d-b650-4759-8b37-3315322682f2}}, {{cite:57df128c-dca5-450e-a7eb-7df7594d5fda}}, {{cite:e1175dac-9745-49b8-95f8-c263fe58ffd6}}. Then we may treat the
+electron system, the hole system and the zero-energy system independently of
+each other. The hole system has the same structure as the electron system
+due to the electron-hole symmetry. On the other hand, the zero-energy system
+contains both electrons and holes. We study the electron system in this
+section, and the zero-energy system of electrons and holes in Section .
+Assuming all lower levels are filled up, we study the Coulomb interaction
+between electrons confined within the FORMULA th energy level (FORMULA ). The
+Coulomb Hamiltonian reads
+FORMULA 
+where FORMULA  is the density operator
+FORMULA 
+The Landau-level projection of the Coulomb Hamiltonian (REF )
+is a simple generalization of the lowest-Landau-level projection{{cite:d740e25a-95bd-41e9-bad8-d3267dc3718c}} familiar in the conventional QHE. We require the density
+operator to be comprised solely of the electron fields belonging to the FORMULA th energy level. Thus, from (REF ) we construct the projected
+density operator FORMULA  by
+FORMULA 
+where FORMULA  is the field operator (REF ). As we show in Appendix , the projected
+density operator is rewritten in the momentum space as
+FORMULA 
+where FORMULA 
+is the bare density operator{{cite:c584ddd0-7e98-4772-acb7-f8a6983dbff0}},
+FORMULA 
+and FORMULA  is the
+form factor,
+FORMULA 
+with
+FORMULA 
+Here we have used the relation, FORMULA , due to
+the lattice structure. It should be remarked that the bare density operator FORMULA 
+involves only the guiding center coordinate FORMULA , while the form
+factor FORMULA 
+involves only the relative coordinate FORMULA .
+The form factors are explicitly given by using{{cite:067baa92-7279-4da5-b91e-af57abb115d7}}
+FORMULA 
+for FORMULA  in terms of associated Laguerre polynomials.
+A comment is in order on the form factors. It is easy to see that{{cite:0792b923-5950-4ecc-8721-e4074a235b62}}
+FORMULA 
+Thus, FORMULA  is exponentially smaller than FORMULA . For instance, FORMULA  represents the
+transfer of the up-spin electron (FORMULA ) from the K' point (FORMULA ) to the K point (FORMULA ). Hence, such a mixing between the K and
+K' points is actually negligible.
+FIGURE 
+The projected Coulomb Hamiltonian is constructed by substituting the
+projected density (REF ) into the Hamiltonian (REF ),
+FORMULA 
+where FORMULA  is the effective Coulomb potential in the FORMULA th
+energy level,
+FORMULA 
+with
+FORMULA 
+It is remarkable that the effective Coulomb potential depends on the spin
+and the valley through the form factors FORMULA  characterizing Landau levels.
+The typical effective Coulomb potentials in the FORMULA th energy level at the K
+point are
+FORMULA 
+The potential FORMULA  stands for
+the interaction between electrons with the same spin FORMULA , FORMULA  for the interaction
+between electrons with the different spin. The spin direction is reversed at
+the K' point. We have illustrated the effective Coulomb potentials in Figs.REF  and REF .
+FIGURE 
+We note that the effective potential FORMULA  for electrons with the same spin in the FORMULA th energy
+level has precisely the same form as in the standard QHE for electrons in
+the FORMULA th Landau level: Compare Fig.REF (a) with Fig.7 in Ref.{{cite:3d71a4c1-1b09-4af9-82dc-6eb4460582b6}}. On the other hand the effective potential FORMULA  for electrons with the different
+spins are entirely new.
+
+Excitonic Condensation
+It is necessary to pay a special attention to the zero-energy level (FORMULA ),
+since it contains both electrons and holes. Let us recapture the properties
+of the zero-energy level [Fig.REF ]. In the absence of the
+magnetic field the band structure is given by the Dirac valleys associated
+with the dispersion relation (REF ), as illustrated in Fig.REF (a). When the magnetic field is applied, the band structure
+is changed to generate Landau levels [Fig.REF (b)]. However,
+the Dirac electron is subject to the intrinsic Zeeman effect, which induces
+a Landau-level mixing, and the zero-energy state emerges for up-spin
+electrons as well as down-spin holes [Fig.REF (c)]. There
+exists an attractive Coulomb force between an electron and a hole. Hence we
+expect them to make an excitonic condensation, producing a gap to the
+electron and hole states [Fig.REF (d)].
+FIGURE 
+The excitonic condensation in graphene has been studied in various contexts{{cite:2aaf425f-3e5c-4e4f-9ea8-555c383bc28b}}, {{cite:7fcc1194-f0c7-4604-96f2-28f0ed8e9627}}, {{cite:c8b6cd87-fb6c-486d-a0b3-9024311c39a2}}, {{cite:8f4796d9-ad51-40cc-ab8a-b8ceefd09140}}. Here, we
+present a clear-cut approach to this problem on the analogy of the BCS
+theory. Our physical picture is summarized in Fig.REF . The
+remarkable point is that the kinetic term is quenched in each Landau level,
+and hence it is also absent in the zero-energy level. This simplifies
+considerably our analysis.
+The field operators present in the zero-energy level are FORMULA , FORMULA 
+for electrons and FORMULA , FORMULA  for holes coming from the FORMULA  Landau
+levels [Fig.REF (a)]. It is sufficient to investigate
+electron-hole pairs at the K and K' points separately. An exciton composed
+of an electron and a hole belonging to different valleys is fragile, because
+their effective Coulomb potential involves the factor FORMULA  compared with the one within the K point: See () and (REF ). For definiteness, we consider the
+K point [Fig.REF ].
+The effective Coulomb potential (REF ) is simple in the
+lowest Landau level,
+FORMULA 
+We consider the effective Hamiltonian together with this effective
+potential,
+FORMULA 
+where FORMULA  and FORMULA  are the up-spin electron field and the
+down-spin hole field, respectively. The Hamiltonian is rewritten as
+FORMULA 
+Here and here after, under the symbol FORMULA , the integration over momentum
+variables is understood.
+We derive the gap equation, following the analysis familiar in the BCS
+theory. We take the terms satisfying FORMULA  as the dominant ones, and approximate the Hamiltonian as
+FORMULA 
+We define the singlet excitonic gap function by
+FORMULA 
+which can be taken to be positive without loss of generality.
+The mean-field Hamiltonian reads
+FORMULA 
+By setting
+FORMULA 
+it is easy to diagonalize (REF ) as
+FORMULA 
+Since FORMULA  and FORMULA  are free fields, the ground state is given
+by solving
+FORMULA 
+or
+FORMULA 
+This is a BCS-type state representing the condensation of electron-hole
+pairs.
+Due to the Fermi statistics the thermodynamical average FORMULA  is given by
+FORMULA 
+where FORMULA  is the Boltzmann factor. Combining these with () we obtain
+FORMULA 
+Substituting this into (REF ) we derive the gap equation,
+FORMULA 
+In the limit FORMULA , the zero-momentum gap FORMULA  is given by the dispersionless relation
+FORMULA 
+For finite temperature, assuming the gap is dispersionless, we obtain the
+relation
+FORMULA 
+The critical temperature FORMULA  at which FORMULA  is solved
+as FORMULA .
+According to the diagonalized Hamiltonian (REF ), the excitonic
+condensation provides them with the mass FORMULA , resolving the
+electron-hole degeneracy in the zero-energy state. Combining the results at
+the K and K' points, the 4-fold degenerate levels split into two 2-fold
+degenerate levels [Fig.REF (d)] with the gap energy (REF ). This leads to a new plateau at FORMULA , as illustrated in Fig. REF
+
+Valley Polarization
+It is now possible to treat electrons and holes separately since the gap has
+opened between the electron and hole bands. Furthermore, it is enough to
+study only electrons due to the electron-hole symmetry. We show that the
+Coulomb effect modifies the energy spectrum of the noninteracting theory so
+that plateaux emerges at FORMULA  with FORMULA  [Fig.REF ].
+FIGURE 
+We express the Coulomb Hamiltonian (REF ) as
+FORMULA 
+where the summations over repeated indices, FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA  are understood, and
+FORMULA 
+We introduce
+FORMULA 
+They represent the direct and exchange Coulomb energies, respectively. It is
+easy to evaluate them numerically: See Fig.REF (a) for FORMULA . We analyze the lowest energy level and higher energy levels
+separately.
+Lowest Energy Level
+We first study the lowest energy level, which contain two degenerate states
+[Fig.REF (b)]. The degeneracy is resolved obviously by a strong
+extrinsic Zeeman effect if it exists. We consider the case where the
+extrinsic Zeeman energy is absent at temperature FORMULA , or is present but
+quite small compared with the thermal energy at FORMULA . We ask whether
+the degeneracy is resolved even in such cases.
+As a generic trial function we take
+FORMULA 
+with FORMULA . The state covers the entire SU(2) space of the
+lowest energy level for electrons, when the two parameters FORMULA  and FORMULA  are
+varied.
+FIGURE 
+We calculate the Coulomb energy FORMULA  with (REF ). Most terms are SU(2)
+invariant, but there exists a noninvariant term,
+FORMULA 
+Hence the SU(2) symmetry is broken explicitly into the U(1) symmetry by
+Coulomb interactions.
+The energy is minimized either FORMULA  or FORMULA  due to the term (REF ), corresponding to the state
+FORMULA 
+The ground state is either FORMULA  or FORMULA , though there exists still the ZFORMULA  symmetry.
+The energy barrier is of the order of the Coulomb energy, which is much
+larger than the thermal energy.
+We conclude as follows: The two levels split explicitly by an extrinsic
+Zeeman effect if exits. Then the first energy level is up-spin polarized,
+and the second energy level is down-spin polarized. Even without such an
+extrinsic Zeeman effect, driven by the Coulomb exchange interaction, the
+spontaneous breakdown of the ZFORMULA  symmetry turns the system into a QH
+ferromagnet{{cite:57df128c-dca5-450e-a7eb-7df7594d5fda}}, {{cite:e1175dac-9745-49b8-95f8-c263fe58ffd6}}. It is reasonable to call it the
+Ising QH ferromagnet due to the ZFORMULA  symmetry. In any case, a plateau
+emerges at FORMULA , where the activation energy is of the order of the
+typical Coulomb energy as in the conventional QHE{{cite:57df128c-dca5-450e-a7eb-7df7594d5fda}}, {{cite:e1175dac-9745-49b8-95f8-c263fe58ffd6}}.
+
+FORMULA th Energy Level
+We next study the FORMULA th energy level with FORMULA . It contains four
+degenerate states with the SU(4) symmetry in noninteracting theory. However,
+the projected density is invariant only under U(1)FORMULA U(1)FORMULA ZFORMULA . Hence we take a set of trial functions by requiring this symmetry,
+FORMULA 
+where the phase factors FORMULA  and FORMULA  assure the U(1)FORMULA U(1) symmetry. These two states are
+degenerate, FORMULA , due to the ZFORMULA  symmetry.
+It is easy to determine the angle FORMULA  by minimizing the Coulomb
+energy FORMULA .
+After some calculations we find
+FORMULA 
+where
+FORMULA 
+with (REF ). Here, FORMULA  since FORMULA . Furthermore, because of (REF ), FORMULA  and FORMULA  are exponentially smaller in FORMULA  than FORMULA  or FORMULA , and can
+be neglected. Hence
+FORMULA 
+Now it follows from () that FORMULA . We can also see [Fig.REF (a)]
+FORMULA 
+implying that the Coulomb energy of an electron in higher Landau level is
+lower. It follows that
+FORMULA 
+We have depicted FORMULA  as a function of FORMULA  in Fig.REF (b).
+We conclude that, if we take the state FORMULA ,
+more electrons are present in the Dirac valley at the K point than at the K'
+point since FORMULA . Namely, the valley
+polarization has occurred both in FORMULA  and FORMULA . This can be understood physically as
+follows [Fig.REF (a)]: Up-spin electrons in the K point
+belong to the (FORMULA -1)th Landau level but those in the K' point belong to
+the FORMULA th Landau level. It is easier to fill Landau sites at the K point
+because the Coulomb energy is lower in higher Landau levels. The valley
+polarization disappears as FORMULA , since FORMULA  in the limit [Fig.REF (b)].
+An extrinsic Zeeman effect open a gap between these two spin polarized
+states. Even without such an effect, driven by the Coulomb exchange
+interaction, the spontaneous breakdown of the ZFORMULA  symmetry turns the
+system into a QH ferromagnet. Note that it has still the 2-fold degeneracy.
+In any case, a plateau emerges at FORMULA  [Fig.REF (c)], where
+the activation energy is of the order of the typical Coulomb energy as in
+the conventional QHE{{cite:57df128c-dca5-450e-a7eb-7df7594d5fda}}, {{cite:e1175dac-9745-49b8-95f8-c263fe58ffd6}}.
+
+Multilayer Graphene Systems
+Bilayer Graphene (Bernal Stacking)
+We proceed to generalize the above analysis to a bilayer graphene, which is
+a system made of two coupled hexagonal lattices according to the Bernal
+stacking. In the absence of magnetic field, the low-energy spectrum of the
+bilayer graphene is known{{cite:bc956f0c-c15a-4c85-b2b6-c6a4aa48996f}}, {{cite:2d621172-c9a5-4eea-ba02-4d3bf4b6a66d}}, {{cite:f69a7d06-4e57-4242-811d-47e1e0122477}}, {{cite:9f7645f0-0062-41c2-9769-ee648dd8d059}} to be parabolic,
+FORMULA 
+near the K and K' points. In the presence of the magnetic field, we can
+reformulate the model Hamiltonian{{cite:2d621172-c9a5-4eea-ba02-4d3bf4b6a66d}}, {{cite:f69a7d06-4e57-4242-811d-47e1e0122477}}, {{cite:9f7645f0-0062-41c2-9769-ee648dd8d059}} as the
+generalized Dirac Hamiltonian defined by
+FORMULA 
+together with
+FORMULA 
+Here, FORMULA , with FORMULA  given by (REF ). We
+also consider the generalized Pauli Hamiltonian
+FORMULA 
+We may switch off the magnetic field in this formula, and reproduce the
+energy spectrum (REF ).
+The eigenvalue of the Hamiltonian FORMULA  is derived as
+FORMULA 
+with the eigenstate FORMULA ,
+where
+FORMULA 
+for FORMULA , as illustrated in Fig.REF . It is interesting
+that two Landau levels mix to create one nonzero-energy level, but that four
+Landau levels mix to create the zero-energy level. Thus there exists the
+4-fold degeneracy in the nonzero-energy level but the 8-fold degeneracy in
+the zero-energy state, as results in the bold-face series (REF ).
+This agrees with the previous result{{cite:bc956f0c-c15a-4c85-b2b6-c6a4aa48996f}}, {{cite:2d621172-c9a5-4eea-ba02-4d3bf4b6a66d}}, {{cite:f69a7d06-4e57-4242-811d-47e1e0122477}}.
+FIGURE 
+We include Coulomb interactions. The FORMULA th energy level (FORMULA ) has the
+same structure as in the monolayer graphene system. Coulomb interactions
+make each energy level split into two subbands.
+We discuss the zero-energy state in some details. There are electron-hole
+pairs coming from the FORMULA  Landau level and the FORMULA  Landau level for
+electrons and holes [Fig.REF (b)]. At the K point there are four
+gap functions FORMULA , FORMULA , FORMULA  and FORMULA ,
+FORMULA 
+where FORMULA  and FORMULA  are creation operators of electrons in the FORMULA th Landau
+level and holes in the FORMULA th Landau level, respectively. Repeating
+similar analysis we have made in Section , we solve the gap
+equations at FORMULA  as
+FORMULA 
+where FORMULA  is given by (REF ); FORMULA . Thus, the 8-fold degenerate
+zero-energy level splits into four 2-fold degenerated subbands, producing
+plateaux at FORMULA . Furthermore we have Ising QH ferromagnets at
+FORMULA . Consequently, we predict the full series (REF ).
+
+Trilayer Graphene (Rhombohedral Stacking)
+The above analysis is applicable also to a trilayer graphene with the ABC
+stacking (rhombohedral stacking). In the absence of the magnetic field, the
+low-energy spectrum of trilayer graphene has been argued{{cite:f69a7d06-4e57-4242-811d-47e1e0122477}} to be
+cubic,
+FORMULA 
+near the K and K' points. In the presence of the magnetic field, we can
+reformulate the model Hamiltonian{{cite:f69a7d06-4e57-4242-811d-47e1e0122477}} as the generalized Dirac
+Hamiltonian as
+FORMULA 
+together with
+FORMULA 
+Here, FORMULA , where FORMULA  given by (REF ).
+The eigenvalue of the Hamiltonian FORMULA  is derived as in (REF ) with
+FORMULA 
+for FORMULA , as illustrated in Fig.REF . There exists the
+4-fold degeneracy in the nonzero-energy level but the 12-fold degeneracy in
+the zero-energy state, as results in the bold-face series (REF ).
+This agrees with the previous result{{cite:f69a7d06-4e57-4242-811d-47e1e0122477}}.
+FIGURE 
+We briefly argue how the energy spectrum is modified by Coulomb
+interactions. The effective Coulomb potential depends on the spin and the
+valley degree of freedom precisely by the same mechanism. The FORMULA th energy
+level (FORMULA ) has the same structure as in the monolayer graphene
+system. Hence, each energy level splits into two subbands. The ground state
+is describe by a formula similar to (REF ), where the valley
+polarization is occurred. There are electron-hole pairs in the zero-energy
+state, which make excitonic condensation by the same mechanism as in the
+monolayer and bilayer cases. Thus, the 12-fold degenerate zero-energy level
+splits into six 2-fold degenerated subbands, producing plateaux at FORMULA . Furthermore we have Ising QH ferromagnets at FORMULA . Consequently, we predict the full series (REF ).
+
+Discussions
+The most intriguing property of the graphene system is that the intrinsic
+Zeeman energy is precisely one half of the cyclotron energy for electrons
+and holes. It leads to the symmetry group SU(4) in the noninteracting
+theory, where the Hall plateau emerges at FORMULA .
+This series is the first experimental result{{cite:a89c73a7-9eb9-4669-8642-8483f7333570}} of the QHE in
+graphene. When Coulomb interactions are included, the symmetry SU(4) is
+broken so that the Hall plateau emerges at FORMULA . This series has been found experimentally{{cite:928ca9bb-c06b-4c30-bd8d-868d90e8e884}} when larger
+magnetic field is applied. We have shown that the Ising QH ferromagnets
+appear at FORMULA  due to a BCS-type condensation of electron-hole pairs.
+We have emphasized that one energy level contains up-spin and down-spin
+electrons coming from two neighboring Landau levels. Since Coulomb
+interactions are different for electrons in different Landau levels, we have
+derived a remarkable consequence that the effective Coulomb potential
+depends on the spin and the valley degree of freedom [Figs.REF  and REF ]. As a result, the valley polarization is
+occurred on the ground state. We wish to explore new physics associated with
+this peculiar Coulomb interaction in forthcoming papers.
+
+Acknowledgement
+The work was in part supported by Grants-in-Aid for Scientific Research from
+Ministry of Education, Science, Sports and Culture (Nos.070500000466).
+
+Dirac Electrons in Graphene
+In this appendix, we derive the second-quantized Dirac Hamiltonian (REF ) together with (REF ) for electrons in graphene.
+We start with a study on the quantum-mechanical states of electrons based on
+the FORMULA  approximation{{cite:5f9fa789-a16f-4eb1-b07a-19c110baf0db}}, {{cite:0ffab13d-8fc2-45a2-a8cb-1cd5fe2bec44}}.
+First of all, the wave functions FORMULA  are given in
+terms of envelope functions FORMULA  as{{cite:5b3e1d53-a443-430d-9d0b-b4f2935095d5}}
+FORMULA 
+where FORMULA  is the site index (FORMULA AFORMULA B) and FORMULA  is the valley index (FORMULA K,K'). The envelope functions are normalized as FORMULA  for FORMULA AFORMULA B.
+They satisfy the Schrödinger equation{{cite:5b3e1d53-a443-430d-9d0b-b4f2935095d5}}
+FORMULA 
+where FORMULA  is the eigenvalue, and the Hamiltonian FORMULA  is the FORMULA  matrix operator,
+FORMULA 
+with FORMULA . Since this is block diagonal, it is
+convenient to set
+FORMULA 
+with FORMULA . Note that FORMULA , where FORMULA  is
+the generator of the mirror symmetry. The eigenfunctions of FORMULA  (FORMULA K,K') are given by{{cite:5b3e1d53-a443-430d-9d0b-b4f2935095d5}}
+FORMULA 
+with the eigenvalue FORMULA , where FORMULA  stands for the helicity, FORMULA . Note that FORMULA  is the momentum of electrons,
+FORMULA  measured from the K or K' point.
+Let us explain the notations we have used in () and (REF ). We
+recall that the FORMULA  is the helicity operator except
+for the positive normalization factor. Thus, FORMULA  has the positive helicity and a positive energy, while FORMULA  has the negative helicity and a negative
+energy. Since the energy and the helicity have the same sign for the
+envelope function FORMULA , it
+describes the right-handed Weyl fermion by definition. Hence we have put the
+index "R". Similarly we have assigned the right-handed Weyl fermion at the
+K' point.
+There are only four independent two-component envelope functions given by (REF ) with FORMULA K,K' and FORMULA . However, there are more
+quantum-mechanical states for electrons. They are the chiral symmetric
+copies; the left-handed Weyl fermions FORMULA  at the K point and FORMULA  at the K' point. The corresponding Hamiltonians and envelope functions
+are constructed by the chiral transformation generated by the Pauli matrix FORMULA  as FORMULA , FORMULA , and
+FORMULA 
+Note the the energy and the helicity have the opposite sign for the
+left-handed Weyl fermion.
+The energy spectrum is symmetric between the positive and negative energy
+states. There exists one electron per one carbon and the band-filling factor
+is 1/2 in graphene. Namely, all negative-energy states are filled up, as is
+a reminiscence of the Dirac sea. Hence, we have electrons and holes as
+physical excitations.
+In this way there are eight types of quantum-mechanical states for electrons
+in graphene, corresponding to the spin degree of freedom (FORMULA ),
+the electron-hole degree of freedom and the valley degree of freedom (FORMULA K,K'). To carry out the second quantization it is necessary to use all
+these quantum-mechanical states together with the four Hamiltonians. We
+arrange them as FORMULA , FORMULA  where we have introduced the Dirac FORMULA 
+matrix in the Weyl representation,
+FORMULA 
+They are summarized into the Dirac Hamiltonian (REF ) in text,
+or
+FORMULA 
+where FORMULA  (FORMULA ) for the K (K') point.
+According to the standard prescription the second-quantized Hamiltonian is
+constructed as in (REF ), or FORMULA , where FORMULA  is the quantum
+mechanical Hamiltonian. The field operator is expanded as FORMULA , with
+FORMULA 
+We have introduced the annihilation operator FORMULA  of an electron with the eigenfunction FORMULA , and the creation operator FORMULA  of a hole with the eigenfunction FORMULA , where we have set FORMULA , FORMULA , FORMULA  and FORMULA  in accord with the standard
+notation in the Dirac theory. In passing, the field operator FORMULA  for electrons in graphene is to be constructed with the use of
+the wavefuncion (REF ), and hence is given by (REF ) in
+text.
+
+Landau-Level Projection
+In this appendix we derive the formula (REF ) for the projected
+density operator FORMULA . We first review how the
+Landau-level projection is made in the conventional QHE, where the density
+operator is given by FORMULA  We consider electrons confined to the FORMULA th Landau level,
+where Fock states are given by (REF ). The field operator is
+expanded as
+FORMULA 
+with FORMULA  the annihilation operator of electrons acting on the state FORMULA , FORMULA . The projected
+density operator is
+FORMULA 
+Its Fourier transformation is
+FORMULA 
+Here, we decompose the coordinate into the guiding center and the relative
+coordinate, FORMULA , where FORMULA  and FORMULA  act on the Fock states FORMULA  and FORMULA ,
+respectively. Since they commute each other, we obtain
+FORMULA 
+or FORMULA , with
+FORMULA 
+We call FORMULA  the Landau-level form factor, and FORMULA  the bare density operator.
+In the graphene QHE one energy level contain four different types of
+electrons described by (REF ). For instance, the projected
+density operator for up-spin electrons is given by
+FORMULA 
+where the summation over the indices FORMULA  and FORMULA  is understood. By repeating
+the above process, this reads
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+A similarly formula is derived also for FORMULA . Adding FORMULA  and FORMULA  we obtain (REF ) in text.

@@ -1,0 +1,839 @@
+
+The initial conditions of star formation
+in the Ophiuchus main cloud:
+Kinematics of the protocluster condensationsBased on observations carried out with the
+IRAM 30-meter telescope. IRAM is supported by INSU/CNRS (France), MPG (Germany), and IGN (Spain).
+Ph. André1,2
+A. Belloche1,3
+F. Motte1,2
+N. Peretto1,4
+pandre@cea.fr
+CEA/DSM/DAPNIA, Service d'Astrophysique, C.E. Saclay,
+Orme des Merisiers, 91191 Gif-sur-Yvette, France
+Laboratoire AIM, Unité Mixte de Recherche CEA/DSM – CNRS
+– Université Paris Diderot, C.E. Saclay, France
+Max-Planck-Institut für Radioastronomie, Auf dem Hügel 69,
+53121 Bonn, Germany
+Physics & Astronomy Department, University of Manchester, P.O. Box 88,
+Manchester M60 1QD, UK
+Received 6 March 2007 / Accepted 7 June 2007 
+The earliest phases of clustered star formation and the origin of the stellar initial mass function (IMF)
+are currently much debated. In one school of thought the IMF of embedded clusters
+is entirely determined by turbulent fragmentation at the prestellar stage of star formation, while in a major
+alternative view it results from dynamical interactions and competitive accretion at the protostellar stage.
+In an effort to discriminate between these two pictures for the origin of the IMF, we investigated
+the internal and relative motions of starless condensations and protostars
+previously detected by us in the dust continuum at 1.2 mm
+in the L1688 protocluster of the Ophiuchus molecular cloud complex.
+The starless condensations have a mass spectrum
+resembling the IMF and are therefore likely representative of the initial stages of star formation in the protocluster.
+We carried out detailed molecular line observations, including some NFORMULA HFORMULA (1-0) mapping, of the
+Ophiuchus protocluster condensations using the IRAM 30m telescope.
+
+We measured subsonic or at most transonic levels of internal turbulence within the condensations, implying virial masses
+which generally agree within a factor of FORMULA  with the masses derived from the 1.2 mm dust continuum.
+This supports the notion that most
+of the L1688 starless condensations are gravitationally bound and prestellar in nature.
+We detected the classical spectroscopic signature of infall motions in CS(2–1), CS(3–2), HFORMULA CO(FORMULA ),
+and/or HCOFORMULA (3–2) toward six condensations, and obtained tentative infall signatures toward 10 other condensations.
+In addition, we measured a global one-dimensional velocity dispersion of less than FORMULA  km sFORMULA  (or twice
+the sound speed) between condensations. The small relative velocity dispersion implies that, in general, the
+condensations do not have time to interact with one another before evolving into pre-main sequence
+objects.
+Our observations support the view that the IMF is partly determined by cloud fragmentation at the
+prestellar stage. Competitive accretion is unlikely to be the dominant mechanism at the protostellar stage
+in the Ophiuchus protocluster, but it may possibly
+govern the growth of starless, self-gravitating
+condensations initially produced by gravoturbulent fragmentation toward an IMF, Salpeter-like mass spectrum.
+stars: formation – stars: circumstellar matter – ISM: clouds
+– ISM: structure – ISM : kinematics and dynamics – ISM: individual objects (L1688)
+Kinematics of the Ophiuchus protocluster condensations
+André et al.
+Introduction
+While most stars are believed to form in clusters {{cite:10f0ce26-011c-442f-b4dc-4f44c33d454e}}, {{cite:2204e432-a41f-462b-821b-4be6845f7ad3}},
+our present theoretical understanding of the star
+formation process is essentially limited to isolated dense cores and
+protostars {{cite:67decdd8-0be0-49fc-b82f-d51a5e747f38}}, {{cite:805d7f80-c9c6-4417-824e-438de11c0bc4}}.
+Studying the formation and detailed properties of prestellar condensations
+in cluster-forming clouds is thus of prime importance if we are to
+explain the origin of the stellar initial mass function (IMF).
+Some progress has recently been made in this area
+{{cite:7ecd1fee-fa19-44a1-8f58-f2afb6b49ea3}}, {{cite:2f9f3b03-c1da-4898-9bcc-c4c324ae73d1}}, {{cite:850f01d3-ce48-4e9c-9f3d-f269e44367d0}}.
+On the observational side, recent ground-based (sub)-millimeter continuum
+surveys of a few nearby cluster-forming clouds such as
+the L1688 clump in Ophiuchus (also known as the FORMULA  Ophiuchi main cloud; FORMULA  150 pc),
+the Serpens central clump (FORMULA  pc), or the NGC 2068/2071 clumps
+in Orion B (FORMULA  pc) have uncovered `complete'
+samples of prestellar condensations whose associated mass distributions
+resemble the stellar IMF
+{{cite:11ae1524-54d3-40d9-8d7c-b14f5eeeae24}}, {{cite:3764c0bf-d1ce-4135-b0f8-ca975bbc1590}}, {{cite:0e9513f5-4eb4-4df1-9d54-8c1b054c2ce8}}, {{cite:eb02664d-bcd7-4ac1-a404-edd679c12d10}}.
+In particular, this is the case for the population of 57 starless
+condensations identified by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} in their 1.2 mm continuum mosaic of L1688 with
+the MPIfR bolometer array (MAMBO) on the IRAM 30m telescope.
+These Ophiuchus condensations, which were identified using a multi-resolution
+analysis equivalent to a wavelet decomposition {{cite:4aaf2438-08f4-46de-b4ff-170189929982}}, {{cite:3fd8c07d-ff6f-4ce6-9e51-7bb936f2b298}}, are seen
+on the same spatial scales as protostellar envelopes (i.e., FORMULA  2300–4500 AU or
+FORMULA  in L1688).
+Their mass spectrum is consistent with the {{cite:a807f4cc-e14c-424b-9c2a-86ac59a81f8f}} power-law IMF
+at the high-mass end and shows a tentative break at FORMULA 
+(see Fig. REF ).
+This break is reminiscent of the flattening observed in the IMF of field
+stars below FORMULA  {{cite:0091c315-ada4-4f11-9c2b-48a6416309f1}}, {{cite:e9403d41-b4fa-4426-bdfb-70b992590ff6}},
+also present in the mass function of L1688 pre-main sequence objects
+{{cite:2c813015-be63-44d5-95e5-ee3961d2fb23}}, {{cite:eb02664d-bcd7-4ac1-a404-edd679c12d10}}.
+If real, the break occurs at a mass comparable to the typical Jeans mass
+in the dense (FORMULA ) DCOFORMULA  cores of the central Ophiuchus
+molecular cloud {{cite:cdcf46f4-7a0a-4c70-943f-5f59df87126f}}.
+The results of {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} in L1688 were essentially confirmed by
+independent (sub)-millimeter dust continuum surveys of the same region
+with SCUBA on JCMT {{cite:3764c0bf-d1ce-4135-b0f8-ca975bbc1590}} and SIMBA on SEST
+{{cite:85df8d63-1097-469b-bfe3-9eaad4303080}}.
+FIGURE 
+Such a close resemblance of their mass spectrum to the IMF,
+in both shape and mass scale, suggests that the starless
+condensations identified by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}
+are about to form stars on a one-to-one or perhaps one-to-two basis,
+with a high local efficiency, i.e., FORMULA  > FORMULA 50%FORMULA M < 0.3  MFORMULA On the theoretical side, two main scenarios have been proposed
+for clustered star formation in turbulent molecular clouds.
+In the first scenario, the distribution of stellar masses
+is primarily determined by gravoturbulent cloud fragmentation at the
+prestellar stage.
+Briefly, self-gravitating condensations
+form as turbulence-generated density fluctuations
+{{cite:aaa8bdc1-9b8a-4143-bd64-eefdfcd114e3}}, {{cite:ee713c0c-64b7-4633-9cdb-65228c1d828f}}, then decouple from
+their turbulent environment through the dissipation of MHD waves on small
+scales {{cite:86b002f8-1d6f-456d-935f-b9552ac6ee64}}, {{cite:73e5242c-76ca-44f4-af96-83cbe102b0c2}},
+and eventually collapse with little interaction with their
+surroundings. Such protocluster condensations
+are local minima of turbulence (traced by narrow linewidths) and have
+small relative motions with respect to one another and to the surrounding
+gas. A given star is entirely formed from (a fraction of) the gas that
+was initially present in the corresponding prestellar condensation.
+Thus, in this scenario, the IMF derives directly from the condensation mass
+distribution (CMD) {{cite:ee713c0c-64b7-4633-9cdb-65228c1d828f}},
+which provides a simple explanation for the observed similarity between the CMD and the IMF
+(e.g. {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} and Fig. REF ).
+By contrast, in the second scenario, the distribution of stellar masses
+results entirely from the dynamics of the parent protocluster
+{{cite:976fd19a-e425-426f-ba9e-097b4cdd5372}}, {{cite:bf83cad5-432f-4c4e-929b-77f71a1280b8}}.
+Here, a protocluster is initially made up of gas and protostellar seeds.
+These protostellar seeds result from turbulence-generated cloud structure
+like in the first scenario, but their initial masses are unrelated to final stellar masses.
+The seeds travel in the gravitational potential well of the system
+and are characterized by a large, essentially virial velocity dispersion.
+They accrete mass competitively as they execute several orbits through
+the protocluster.
+The seed trajectories within the protocluster are highly stochastic in nature
+and feature close encounters, merging and/or dynamical ejections.
+In this alternative scenario, competitive accretion and
+dynamical interactions between individual protocluster members play a
+dominant role in shaping the resulting IMF at the protostellar (Class 0/Class I)
+stage {{cite:a0532561-39c5-4c4b-901f-6c62dd26e6ca}}.
+Furthermore, most of the final mass of a given star comes from gas
+that was initially not gravitationally bound to the corresponding protostellar
+seed(s) {{cite:69bbaf9b-1bee-44ed-a15e-bba5963ab20d}}.
+In an effort to discriminate between these two broad pictures for the origin of
+the IMF and further constrain the nature of the starless condensations identified
+by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}, we carried out detailed molecular line observations of the
+central Ophiuchus protocluster with the IRAM 30m telescope.
+The present paper describes the results of these line observations and
+discusses them in the context of the above-mentioned theoretical scenarios
+for clustered star formation.
+The layout of the paper is as follows. Section  provides
+observational details. Section  presents the results of our
+line mapping observations. Section  analyzes the constraints
+set by these observations on the kinematics of the
+L1688 protocluster.
+We discuss the implications of our results for our understanding of cluster-forming
+clouds in Sect. . Our conclusions are summarized in Sect. .
+TABLE 
+FIGURE 
+FIGURE 
+
+Observations
+We used the IRAM 30m telescope at Pico Veleta, Spain, in June 1998, July 2000, and June 2005
+to carry out millimeter line observations of the DCOFORMULA  cores and
+1.2 mm continuum condensations of L1688
+in the following molecular transitions:
+NFORMULA HFORMULA (1-0), HFORMULA COFORMULA (1-0),
+CS(2-1), CFORMULA S(2-1) at 3 mm,
+CS(3-2), HFORMULA CO(2FORMULA -1FORMULA ), DCOFORMULA (2-1) at 2 mm, and HCOFORMULA (3-2)
+at 1.1 mm.
+Our adopted set of rest line frequencies is given in Table REF .
+The half-power beamwidth of the telescope was FORMULA , FORMULA ,
+and FORMULA  at 3 mm, 2 mm, and 1.1 mm, respectively.
+We used four SIS heterodyne receivers simultaneously and an autocorrelation
+spectrometer as backend, with a spectral resolution of 20–40 kHz at 3 mm and 2 mm,
+and 40 kHz at 1.1 mm. The corresponding velocity resolution ranged from
+0.04 to 0.07 km sFORMULA  per channel, depending on the observed transition.
+All our observations were performed in single sideband mode, with sideband rejections
+of 0.01, 0.1 and 0.05 at 3 mm, 2 mm and 1.1 mm, respectively.
+The resulting calibration uncertainty is FORMULA .
+The forward and beam efficiencies of the telescope
+used to convert antenna temperatures FORMULA  into
+main beam temperatures FORMULA  are listed in Table REF .
+The telescope pointing was checked every FORMULA  hours
+on NRAO 530 and/or 1514-241 and found to be accurate to
+FORMULA  (rms).
+The telescope focus was optimized on 3C273 and NRAO 530 every FORMULA  hours on average.
+Single-point line observations were performed in the position switching mode,
+while extensive mapping was performed in the “on-the-fly” (OTF) mode.
+All of the data were reduced with the CLASS software packagesee
+http://www.iram.fr/IRAMFR/GILDAS..
+
+Molecular line mapping results and analysis
+Detections of protocluster condensations in NFORMULA HFORMULA (1–0) and other tracers
+The NFORMULA HFORMULA (1-0) integrated intensity mapsOur NFORMULA HFORMULA (1-0) data cubes are available in FITS format at the CDS.
+we took toward the six main DCOFORMULA  cores of the Ophiuchus
+central cloud are shown in Fig. REF . The positions of the starless 1.2 mm continuum
+condensations found by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} are marked by crosses.
+NFORMULA HFORMULA (1-0) emission was found to be present toward most of these condensations.
+Altogether, we performed NFORMULA HFORMULA (1-0) observations toward 48
+of the 57 compact starless condensations{{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} counted 58 compact starless condensations but one
+of these – E-MM3 – was subsequently shown to be an edge-on T Tauri disk as opposed to a prestellar object {{cite:dd36d9a1-451f-40bf-bf20-370d360b3b5f}}.
+identified by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}
+and detected line emission for 41 of them, either through position-switch integrations (rms FORMULA  K in FORMULA  units)
+or in OTF maps (rms FORMULA  0.1–0.2 K, depending on core).
+However, the FORMULA  angular resolution of our NFORMULA HFORMULA 
+observations is not always sufficient to clearly distinguish between line emission from the condensations
+themselves and emission from the parent cloud/DCOFORMULA  core. In order to estimate the background NFORMULA HFORMULA 
+emission from the parent core, we used our OTF maps to produce a smoothed NFORMULA HFORMULA (1-0) image of the
+local background toward each object. In practice, we used the multi-resolution wavelet analysis software of
+{{cite:4aaf2438-08f4-46de-b4ff-170189929982}} to decompose our OTF NFORMULA HFORMULA (1-0) data cubes into two
+wavelet “views”, corresponding to small (FORMULA  20-40) and large (FORMULA  >  FORMULA FORMULA FORMULA FORMULAFORMULA 1FORMULA 2FORMULA +FORMULA +FORMULA Additional HFORMULA COFORMULA (1-0) and DCOFORMULA (2-1) OTF maps were obtained toward some of the cores
+(cf. Fig. REF ), which were background-subtracted and analyzed in a similar fashion.
+TABLE 
+At the position of each target condensation/protostar,
+the seven hyperfine components of the NFORMULA HFORMULA (1-0) multiplet were fitted simultaneously using the
+Gaussian HFS (HyperFine Structure) fitting routine of the CLASS software package.
+This routine derives the line optical depth by assuming the same excitation temperature
+for all hyperfine components, and therefore yields an estimate of the intrinsic linewidth (i.e., properly corrected
+for optical depth effects provided that the assumption is correct).
+The results of these HFS fits, both before and after background subtraction,
+are given in Table REF 
+for all the objects detected in NFORMULA HFORMULA (1-0).
+(Note that, in some cases, the signal-to-noise ratio was not good enough to perform a significant HFS fit after background
+subtraction.)
+The quoted error bars correspond to standard deviations (FORMULA ) as estimated by the HFS routine
+of CLASS.
+Examples of NFORMULA HFORMULA (1-0) spectra and HFS fits are shown in Fig. REF .
+A single-component HFS fit failed and a two-component HFS fit was required
+for three condensations in Oph B1, four condensations in Oph B2, one condensation in Oph F, as well as
+the protostar CRBR 85.
+TABLE 
+In addition, we also used the Gaussclumps fitting procedure of {{cite:6b1b878f-cc52-4a1a-ace2-d511d1e70730}}
+{{cite:84e0786a-3bea-4e4e-a027-06f3f9da57ad}} to decompose each of our background-subtracted OTF NFORMULA HFORMULA (101-012), HFORMULA COFORMULA (1-0),
+and DCOFORMULA (2-1) data cubes into a series of Gaussian-shaped “clumps”. The significant (FORMULA ) clumps identified with
+Gaussclumps in the various DCOFORMULA  cores of L1688 are shown as ellipses in
+Fig. REF  and Fig. REF .
+Their main characteristics are given in Table REF .
+In this way, a total of 17 starless 1.2 mm condensations and 3 Class 0/Class I protostars (VLA 1623, LFAM 26, GY 210)
+were found to have well-defined NFORMULA HFORMULA , HFORMULA COFORMULA , or DCOFORMULA  counterparts in position-velocity (FORMULA ) space.
+The relevance of such a Gaussclumps decomposition is that it further helped us discriminate between the line emission
+arising from the compact condensations themselves (with well-defined “positions” in FORMULA  space) and the line emission from
+the surrounding, more extended dense gas (with less-well-defined “positions” in FORMULA  space).
+In particular, for six of the above-mentioned eight condensations with double NFORMULA HFORMULA  HFS components, the Gaussclumps decomposition
+allowed us to reject one of the two components and to identify the component most likely associated with the compact 1.2 mm continuum
+object.
+In Oph B1, for instance, two HFS components were detected toward B1-MM2, B1-MM3, and B1-MM4 prior to background
+subtraction (cf. Table REF ), but only one of these two components was found to be associated with each condensation
+after running Gaussclumps on the background-subtracted NFORMULA HFORMULA (101-012) data cubes (cf. Table REF ).
+In the following, we will consider the multiple components detected toward the remaining two
+condensations with double HFS components (B2-MM2 and B2-MM4)
+as representative of independent objects when we discuss the statistics of linewidths (Sect.  REF )
+and relative motions (Sect.  REF ) between condensations.
+FIGURE 
+
+Linewidths and virial masses of the protocluster condensations
+TABLE 
+Based on the measured NFORMULA HFORMULA (1-0) linewidths (Table REF ),
+we can calculate the nonthermal component of the
+line-of-sight velocity dispersion {{cite:5713fee3-9d18-4965-956d-9a4ffceab55f}}
+and estimate a virial mass for each condensation.
+Table REF  gives the deconvolved (FWHM) diameter
+(col. [2], {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}})
+and gas FORMULA  dust mass derived from the 1.2 mm continuum (col. [4],
+{{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}), the assumed gas/dust temperature (col. [3], cf.
+{{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}), the thermal velocity dispersion FORMULA 
+for a particle of mean molecular weight FORMULA  (col. [5]),
+the one-dimensional nonthermal velocity dispersion FORMULA 
+obtained from the NFORMULA HFORMULA (1-0) linewidth (col. [6]), the nonthermal to
+thermal velocity dispersion ratio FORMULA  (col. [7]),
+the estimated virial mass FORMULA  (col. [8]), and the virial mass ratio
+FORMULA  (col. [9]) for each observed object.
+Columns [10] to [13] list the values of the same parameters when estimated from the
+background-subtracted spectra.
+For some condensations, the dust temperatures (col. [3]) adopted to estimate FORMULA 
+(col. [4]) from the measured 1.2mm flux differ slightly from those assumed by
+{{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}. Here, we used FORMULA  K for all condensations except SM1N, SM1,
+A-MM6, SM2, A-MM8 in Oph A, which are likely warmer (FORMULA  K)
+due to their proximity to the B3 star S1 {{cite:f5e6bbbf-d112-4d95-b9e2-222862e59317}}. Our adopted default
+FORMULA  K is consistent with the typical mass-averaged temperature found by
+dust radiative transfer models of starless cores {{cite:98a2a5be-7dd7-440d-8959-c6f5f3b09a61}}, {{cite:c5b4589b-093e-4dc1-953b-aa7b2c70c845}}.
+In agreement with the radial profiles measured by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}, the values quoted for FORMULA  and FORMULA 
+assume that the density structure of the sources approaches that of centrally-condensed
+spheres with outer profiles such as FORMULA , for which FORMULA .
+Here, FORMULA  is the total
+(thermal FORMULA  nonthermal) line-of-sight velocity dispersion and FORMULA  is the condensation outer radius,
+which we take to be twice the geometrical mean of the deconvolved major and minor HWHM radii
+measured in the 1.2 mm dust continuum
+(i.e., FORMULA  – cf. col. [2] of Table REF  and Table 2 of {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}).
+For unresolved condensations, the quoted FORMULA  and FORMULA  values are only upper limits
+obtained under the assumption that the deconvolved FWHM diameter is 400 AU (i.e., FORMULA  one fourth of
+the HPBW spatial resolution of the 1.2 mm continuum observations).
+Note also that our NFORMULA HFORMULA (1-0) observations provide the line-of-sight velocity dispersion
+averaged over a FORMULA  beam, while the FWHM angular size of the dust condensations
+ranges from FORMULA  to FORMULA .
+However, since both FORMULA  and FORMULA  are derived for a diameter FORMULA  twice the FWHM size,
+our method of estimating FORMULA  should be reasonably accurate.
+Some of the secondary components listed in
+Table REF  were ignored in Table REF ,
+based on the Gaussclumps identifications summarized in
+Table REF .
+The measured NFORMULA HFORMULA (1-0) linewidths are narrow, indicative of
+small internal velocity dispersions.
+Prior to background subtraction,
+the average one-dimensional nonthermal
+velocity dispersion, FORMULA , is estimated to be
+FORMULA  0.20 FORMULA  0.08 km sFORMULA 
+among the 43 components listed in Table REF .
+More precisely, the average one-dimensional nonthermal
+velocity dispersion of the condensations ranges from 0.12 FORMULA  0.02 km sFORMULA  in Oph E,
+0.13 FORMULA  0.02 km sFORMULA  in Oph C,
+0.15 FORMULA  0.04 km sFORMULA  in Oph B1/B1B2,
+0.17 FORMULA  0.04 km sFORMULA  in Oph F,
+to 0.20 FORMULA  0.08 km sFORMULA  in Oph A, and
+0.24 FORMULA  0.08 km sFORMULA  in Oph B2.
+For comparison, the isothermal sound speed or one-dimensional thermal velocity
+dispersion is FORMULA  0.21–0.27 km sFORMULA  for gas temperatures
+of 12–20 K. Therefore, the condensations of Oph A, Oph B1, Oph C, Oph E, and
+Oph F are characterized by only subsonic
+levels of internal turbulence with
+FORMULA  0.6–0.8 on average, while
+the condensations of Oph B2 have at most “transonic” internal turbulence
+with FORMULA  on average.
+This is especially true since the measured nonthermal component of the NFORMULA HFORMULA (1-0)
+linewidth may overestimate the intrinsic level of internal turbulence in the presence of
+infall motions and/or rotation (see Sect. REF  and
+REF ).
+In contrast, the line-of-sight velocity dispersions measured
+on the scale of the parent DCOFORMULA  cores are significantly larger
+{{cite:cdcf46f4-7a0a-4c70-943f-5f59df87126f}}, with corresponding values of FORMULA  ranging
+from FORMULA  km sFORMULA  in Oph E, 0.2–0.3 km sFORMULA  in Oph C and
+Oph F, to 0.35–0.5 km sFORMULA  in Oph A, Oph B1, and Oph B2.
+Furthermore, the values of FORMULA 
+derived from NHFORMULA  observations of the cores tend to be larger, by up to a factor of 2,
+than those inferred from DCOFORMULA  {{cite:cdcf46f4-7a0a-4c70-943f-5f59df87126f}}. For instance,
+FORMULA  km sFORMULA  is estimated in Oph B1 from NHFORMULA 
+{{cite:c8da6cd6-9250-4d42-b5db-998854425a7d}}, compared to FORMULA  km sFORMULA  from DCOFORMULA .
+Thus, the internal
+velocity dispersions derived here for the compact condensations
+are typically a factor of FORMULA  smaller than the nonthermal velocity dispersions
+of their parent dense cores.
+We conclude that the level of turbulence decreases from marginally supersonic on the
+scale of the DCOFORMULA  cores to transonic or marginally subsonic on the scale
+of the prestellar condensations.
+The above results are reminiscent of the transition to “coherence” observed by {{cite:4913357e-e669-4cda-83e3-db2abe4421f3}} in
+isolated starless cores. They suggest that, at least in nearby cluster-forming clouds,
+the initial conditions for individual protostellar collapse are “coherent” and largely free of turbulence.
+They are also consistent with scenarios, such as the “kernel” model of {{cite:73e5242c-76ca-44f4-af96-83cbe102b0c2}},
+according to which protocluster condensations form by dissipation of MHD turbulence on small
+scales within massive, turbulent cores {{cite:86b002f8-1d6f-456d-935f-b9552ac6ee64}}.
+
+Motions within the DCOFORMULA  cores of L1688
+Evidence of gravitational infall motions
+FIGURE 
+Our data show the classical spectroscopic signature of infall motions
+{{cite:91648ded-f7b0-42c1-bdfa-2d4f91da821e}}, {{cite:bc890be7-296e-4593-b34e-c99b0d3bb03e}} toward at least six 1.2 mm continuum condensations,
+where optically thick lines
+such as CS(2–1), CS(3–2), HFORMULA CO(FORMULA ),
+and/or HCOFORMULA (3–2) are double-peaked
+with a stronger blue peak, while low-optical-depth lines such as NFORMULA HFORMULA (101–012)
+and CFORMULA S(2–1)
+peak in the dip between the blue and red peaks of the optically thick tracers
+(cf. Fig. REF )The optically thick spectra observed toward C-MM5 and C-MM6
+show two fainter, additional peaks at velocities FORMULA  and
+FORMULA  km sFORMULA . These additional velocity components are also
+observed in CFORMULA O(2-1) but are not seen in NFORMULA HFORMULA (1-0).
+They likely arise from the ambient cloud rather than from
+C-MM5 et C-MM6 themselves..
+Such asymmetric line profiles skewed to the blue in optically thick tracers
+are produced when a gradient in excitation temperature toward source center
+is combined with inward motions {{cite:516e9fbd-8f43-4383-bb12-c8f891cbb3d0}}.
+Here, among a total of 25 starless condensations observed in at least one optically thick
+infall tracer and one optically thin transition, blue infall profiles are clearly
+observed in 6 condensations (A-SM2, B2-MM16, C-MM5, C-MM6, E-MM2d, and E-MM4,
+see Fig. REF ),
+tentatively observed in 10 other condensations
+(A-MM4, A-MM5, A-SM1, A-MM8, C-N, B2-MM12, B2-MM13, B2-MM14, B2-MM15, B2-MM17),
+and not seen in the remaining 9 sources
+(A-MM6, A-SM1N, F-MM1, F-MM2, B1-MM4, B2-MM2, B2-MM6, B2-MM8, B2-MM10).
+In the case of A-SM2 and C-MM6,
+the absorption dip observed in the optically thick line profiles is slightly
+redshifted with respect to the LSR velocity traced by the optically
+thin lines,
+by FORMULA  and FORMULA  0.1-0.2 km sFORMULA , respectively.
+This suggests that the outer gas layers responsible for the absorption dip in these
+two condensations are characterized by significant inward velocities FORMULA  km sFORMULA 
+{{cite:fb58051e-294c-44c1-b5d8-3b5c4ac3147d}}.
+By contrast, the absorption dip is not redshifted (nor blueshifted) toward
+E-MM2d, E-MM4, B2-MM16, and C-MM5, suggesting that only comparatively
+deeper layers undergo infall motions in the latter sources.
+
+Large-scale velocity structure
+FIGURE 
+In order to investigate the presence of systematic velocity gradients, such as rotational gradients,
+within the DCOFORMULA  cores of L1688, we plot maps of the NFORMULA HFORMULA (1-0) centroid velocity across
+Oph A, Oph B1, Oph B2, Oph C-S, Oph E, and Oph F in
+Fig. REF a–f.
+These centroid velocity maps were derived from the original NFORMULA HFORMULA (1-0) data cubes
+before background subtraction.
+No clear, large-scale velocity gradient can be seen in the velocity maps of
+Oph A, Oph B1, and Oph B2, and the underlying kinematic structure cannot be described as
+a simple superposition of a small number of velocity gradients.
+In Oph A, which resembles a curved filament in the integrated intensity map, the two ends
+of the filament are characterized by lower systemic velocities (FORMULA  and FORMULA  km sFORMULA )
+than the central region (FORMULA  km sFORMULA ), dominated by the objects A-SM1 and VLA 1623.
+In Oph B2, the two condensations B2-MM10 and B2-MM15 stand out with significantly higher
+systemic velocities (FORMULA  km sFORMULA ) than the bulk of the
+core (FORMULA  km sFORMULA ).
+In Oph B1, two velocity components are detected on the lines of sight
+to B1-MM2, B1-MM3, and B1-MM4. Based on the results of our
+Gaussclumps analysis (see Table REF ), we believe that
+only the FORMULA  km sFORMULA  component, connected to Oph B2,
+is physically associated with the compact condensations B1-MM2, B1-MM3, and B1-MM4.
+TABLE 
+Well-defined NFORMULA HFORMULA (1-0) velocity gradients were identified toward Oph C-S, Oph E, and Oph F,
+and their amplitudes estimated using the least-squares fitting method of {{cite:8dd1bc06-c084-4f96-aa66-2773a9af5599}}.
+In particular, Oph C-S is characterized by a systematic projected velocity gradient of mean
+value FORMULA  km sFORMULA  pcFORMULA ,
+with velocities increasing along the direction of position angle FORMULA  in
+the plane of the sky (see Table REF  and Fig. REF f).
+In Oph E, our NFORMULA HFORMULA (1-0) data suggest the presence of a velocity gradient
+FORMULA  km sFORMULA  pcFORMULA  at FORMULA 
+(cf. Fig. REF e). The signal-to-noise ratio in our NFORMULA HFORMULA (1-0) map is however
+insufficient to constrain the nature of the velocity field.
+Fortunately, we can also use our higher signal-to-noise maps taken in HFORMULA COFORMULA (1-0),
+DCOFORMULA (2-1), and DCOFORMULA (3-2) to further constrain the velocity structure.
+For Oph E as a whole,
+the three tracers indicate a mean velocity gradient FORMULA  km sFORMULA  pcFORMULA  at
+FORMULA , in fairly good agreement with the gradient suggested by the
+NFORMULA HFORMULA (1-0) data (cf. Fig. REF e).
+In Oph F, our NFORMULA HFORMULA (1-0) data indicate the presence of two distinct velocity components,
+overlapping near the position of F-MM2 in the plane of the sky (see Fig. REF d).
+Oph F may thus actually
+consist of two independent dense cores, Oph F1 and Oph F2,
+with differing line-of-sight velocities (FORMULA  and FORMULA  km sFORMULA ).
+Figure REF d shows the direction of the mean
+velocity gradient derived in each of these two cores (see Table REF  for derived
+parameters).
+The fact that the velocity gradient found in Oph F1
+(FORMULA  km sFORMULA  pcFORMULA  at FORMULA )
+is nearly opposite to the gradient in Oph F2
+(FORMULA  km sFORMULA  pcFORMULA  at FORMULA )
+The direction of the velocity gradient is however more uncertain in Oph F2
+since it was derived using only 5 independent points.
+supports the view that Oph F is made up of two independent cores,
+partly overlapping in projection, and not a single core
+with a mean velocity gradient FORMULA  km sFORMULA  pcFORMULA 
+at FORMULA  as suggested by {{cite:cdcf46f4-7a0a-4c70-943f-5f59df87126f}}
+based on lower-resolution DCOFORMULA (2-1) observations.
+For L1688 considered as a whole (cf. Fig. REF ),
+a global velocity gradient of FORMULA  km sFORMULA  pcFORMULA  is seen from North-West
+(Oph A) to South-East (Oph F) (see also Loren 1989 in FORMULA CO and Loren et al. 1990 in DCOFORMULA ).
+The direction of this large-scale gradient is FORMULA 
+(cf. note a of Table REF ),
+as determined by a least-squares fit to the observed distribution of the line-of-sight
+systemic velocities of the condensations detected in NFORMULA HFORMULA (1-0).
+The observed velocity pattern is however clearly more complex than that expected from simple large-scale
+rotation {{cite:a8ff2d60-811d-4110-8686-77271b721b22}}. For instance, the direction of the mean velocity gradient
+changes to FORMULA  if the condensations of Oph B1 and Oph B2
+are ignored.
+
+Relative motions of the protocluster condensations within the DCOFORMULA  cores
+Our estimates of the centroid line-of-sight velocities toward the
+prestellar condensations of L1688 (cf. col. 7 of Table REF )
+provide interesting constraints on the relative motions between condensations.
+Figure REF  shows the distribution of systemic velocities as derived from
+our NFORMULA HFORMULA (1-0) HFS fits, overlaid on the lowest contours of the 1.2 mm continuum map of
+{{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}.
+FIGURE 
+TABLE 
+Both the velocity differences between neighboring condensations and the overall
+velocity dispersion of the condensations within the
+L1688 protocluster are small.
+Table REF  gives the
+one-dimensional velocity dispersion,
+FORMULA , derived from our NFORMULA HFORMULA (1-0) observations for various samples of condensations (cf. col. [6] and col. [7]).
+This velocity dispersion was estimated in two ways, first around the mean LSR velocity of the condensations
+(estimate given in col. [6]), and second around the mean centroid NFORMULA HFORMULA (101-012) velocity measured in the maps of
+Fig. REF  (estimate given in col. [7]).
+For the ensemble of 41 compact
+prestellar condensations and 3 protostars detected in NFORMULA HFORMULA ,
+we estimate a global velocity dispersion FORMULA  0.36 km sFORMULA  about
+the mean systemic velocity  FORMULA FORMULAFORMULA  3.95 km sFORMULA .
+Assuming isotropic random motions, this corresponds to a three-dimensional velocity dispersion
+FORMULA  0.62 km sFORMULA 
+(cf. col. [8] and [9] of Table REF ).
+If the velocity distribution is Maxwellian, the mean condensation
+speed relative to the center of mass of the system
+is FORMULA  0.57 km sFORMULA 
+and the mean relative speed between condensations is
+FORMULA 
+0.81 km sFORMULA .
+Adopting a diameter FORMULA  pc {{cite:ff65f405-29d8-4382-aa42-1f1e21f4a470}} for the L1688 cloud,
+such a velocity dispersion implies a typical crossing time,
+FORMULA  1.8 FORMULA  yr
+(cf. col. [10] and col. [11] of Table REF ),
+for the condensations within the L1688 protocluster.
+After subtracting the global, systematic velocity gradient of FORMULA  km sFORMULA  pcFORMULA 
+seen across L1688 (cf. Sect. REF  above),
+the resulting 1D velocity dispersion of the condensations is even lower,
+FORMULA  km sFORMULA , suggesting that the crossing
+time associated with purely random condensation motions is larger,
+FORMULA  yr.
+The crossing times estimated separately within the individual DCOFORMULA  cores
+with a statistically significant number of condensations (i.e., Oph A, B2, C)
+are only a factor of FORMULA  shorter, FORMULA  0.6-1.0 FORMULA  yr.
+
+Discussion
+Dynamical state and fate of the L1688 condensations
+The starless condensations identified by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}
+in L1688 are highly
+centrally concentrated
+and feature large density contrasts over the local background medium, strongly suggesting
+they are self-gravitating. More specifically, the estimated mean densities of the condensations
+exceed the mean densities of the parent DCOFORMULA  cores by a typical factor FORMULA  5–20,
+while the mean column densities of the condensations exceed the background core
+column densities by a factor FORMULA  >  FORMULAFORMULA BE/ext 2.4FORMULA BE/ext 1.5FORMULA The line observations reported in this paper provide more direct evidence that most of the
+L1688 condensations are gravitationally bound.
+Indeed, the narrow linewidths measured in NFORMULA HFORMULA (1-0)
+(see Sect. REF ) imply virial masses
+which generally agree within a factor of FORMULA  with the mass estimates derived
+by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} from the 1.2 mm dust continuum.
+This can be considered a good agreement since both FORMULA 
+and FORMULA  are themselves uncertain by a factor of FORMULA . On the theoretical side,
+self-gravitating condensations are expected to have virial mass ratios
+FORMULA  < FORMULA 2FORMULA vir 1FORMULA 2FORMULA +FORMULA vir < 1FORMULA vir FORMULA 2.5FORMULA vir FORMULA 2.5FORMULA vir FORMULA 3FORMULA M1.2mm 0.35  MFORMULA vir < 2FORMULA 2FORMULA +FORMULA vir FORMULA 2.5FORMULA We conclude that a large majority (FORMULA  75-90FORMULA )
+of the L1688
+condensations detected in NFORMULA HFORMULA (1-0),
+including FORMULA  90FORMULA  of those more massive
+than FORMULA ,
+are likely gravitationally boundNote that the surface pressure term of
+the virial theorem, which we neglect here, tends to reduce the mass required for virial
+equilibrium, i.e., to increase the value of FORMULA  expected in virial equilibrium
+– see {{cite:69ed25c6-ed6f-4d63-bd77-935ad756455f}}..
+Coupled with the detection of signatures of infall motions toward some of them
+(see Sect. REF ), this supports the notion that
+FORMULA  of the starless condensations identified by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}
+at 1.2 mm are prestellar in nature and on the verge of forming protostars
+(cf. {{cite:7ecd1fee-fa19-44a1-8f58-f2afb6b49ea3}} 2000 and {{cite:850f01d3-ce48-4e9c-9f3d-f269e44367d0}} 2007 for a definition of the prestellar stage).
+A fraction (FORMULA ) of the condensations with
+FORMULA  < FORMULA 0.35  MFORMULA 0.1  MFORMULA 2FORMULA +FORMULA 0.35  M FORMULA
+
+Lifetime of the L1688 condensations
+The lifetime of the L1688 prestellar condensations is rather uncertain but
+several lines of reasoning suggest a typical value of FORMULA  yr.
+Table REF  provides estimates of some relevant evolutionary timescales.
+First, based on the measured mean densities FORMULA ,
+the free-fall dynamical timescales of the condensations, FORMULA ,
+range from FORMULA  yr to FORMULA  yr.
+While some of the condensations show evidence of infall motions, most of them are
+unlikely to be in free-fall collapse. We may conservatively estimate their evolutionary
+timescale to be FORMULA , which is appropriate for magnetically supercritical
+dense cores {{cite:64a09ac6-a619-43be-8ca2-60c80d510ec4}} and typical of isolated prestellar cores detected
+in the submillimeter continuum {{cite:5429d803-924c-479b-b81a-67539326c6e8}}.
+This leads to timescale values ranging from FORMULA  yr to FORMULA  yr
+(cf. col. [6] of Table REF ).
+Second, assuming that the L1688 condensations evolve into stellar systems at a constant
+rate, we may derive a rough statistical estimate of their lifetime (col. [7] of Table REF )
+by comparing the number of observed prestellar condensations (col. [3] of Table REF )
+to the number of pre-main sequence (PMS) systems found in the same region (col. [2] of Table REF ).
+The ISOCAM mid-IR survey of {{cite:eb02664d-bcd7-4ac1-a404-edd679c12d10}} revealed a total of 109 Class II PMS
+objects in L1688 with ages FORMULA  Myr. If all of the 45 starless condensations identified
+by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} above FORMULA  are truly prestellar in nature, this points
+to a prestellar lifetime FORMULA  yr.
+A third timescale estimate may be obtained by dividing the typical condensation outer radius
+FORMULA  AU by a typical infall speed FORMULA  km/s {{cite:ba0ee960-1ce7-404c-81cd-94c6c406d320}}.
+This approach yields a condensation lifetime FORMULA  yr.
+We conclude that the 1.2mm continuum condensations of L1688 are likely characterized
+by a range of lifetimes between FORMULA  yr and FORMULA  yr
+(see col. [6] and col. [7] of Table REF ).
+FIGURE 
+As pointed out by {{cite:a1f50999-3cec-48a8-8bf7-9406483a8727}},
+if the lifetime of the condensations depends
+on their mass, then the observed mass spectrum is not necessarily representative of the intrinsic
+condensation mass distribution (CMD) {{cite:53da9466-b31a-4391-8f58-20bf44f28679}}.
+This is due to the fact that an observer
+is more likely to detect long-lived condensations than short-lived condensations.
+Here, however, the mean densities of the L1688 condensations are essentially uncorrelated with
+their masses, so that there is no systematic dependence of the dynamical timescale on the mass.
+To quantify the importance of the potential timescale bias, we plot, in Fig. REF ,
+a weighted version of the central Ophiuchus CMD in which each condensation was assigned
+a weight equal to FORMULA  (instead of 1 as used for
+Fig. REF ), where FORMULA  is
+the average free-fall time of the condensations.
+Such a weighting should allow us to recover the intrinsic shape of the CMD assuming that the lifetime of
+each condensation is proportional to its free-fall time.
+As can be seen in Fig. REF , this weighting does not change the high-mass end of the CMD
+and only affects the low-mass end. We conclude that the steep, Salpeter-like slope of the CMD
+at the high-mass end is robust, but that the presence of a break at FORMULA  is
+less robust.
+TABLE 
+
+Likelihood of interactions between condensations
+Using the velocity dispersions derived for the condensations in Sect. REF  and
+the lifetime estimates of Sect. REF  above, we are now in a position to assess
+whether dynamical interactions between condensations are a frequent or rare phenomenon
+in the L1688 protocluster.
+Assuming an isotropic, Maxwellian velocity distribution,
+the time, FORMULA , required for a condensation to interact or collide with another
+condensation can be estimated from the following formula for the collision rate
+FORMULA  :
+FORMULA 
+where FORMULA  is the number density of condensations,
+FORMULA  is the condensation outer radius (which we take to be
+twice the measured HWHM radius at 1.2mm - cf. Sect. REF ),
+FORMULA  is the collisional cross section
+of the condensation, and FORMULA 
+is the gravitational focusing factor {{cite:1187ab0b-4664-4159-b8f4-deac5036c3d2}}.
+Further assuming that the condensations are homogeneously distributed in a spherical system
+of radius FORMULA , so that FORMULA , the ratio
+of FORMULA  to FORMULA  takes on the simple form:
+FORMULA 
+Using the above equation for the entire L1688 cluster-forming clump (FORMULA  pc, FORMULA , FORMULA  km sFORMULA )
+and adopting typical condensation properties (FORMULA  AU and FORMULA ), we find
+FORMULA  and thus FORMULA  yr.
+The latter is two orders
+of magnitude larger than the estimated lifetime of the condensations (Sect. REF )
+and about one order of magnitude longer than the age of the L1688 PMS cluster
+{{cite:eb02664d-bcd7-4ac1-a404-edd679c12d10}}.
+For simplicity, our analysis ignores the dynamical impact of the ambient protocluster environment.
+In such a dense environment, gas drag is likely to have an effect on the motions of individual condensations,
+which will make the associated velocity field depart from a true Maxwellian distribution. A detailed assessment
+of the effects of gas drag is beyond the scope of this paper, but qualitatively at least we expect the environment
+to make the interaction timescales even longer than the above estimates.
+We conclude that
+the interaction process is much too slow on the scale of the entire L1688
+system to play any significant role in the evolution of the protocluster condensations.
+Dynamical interactions are however more likely to occur on smaller scales than the whole L1688 cluster-forming clump.
+In their mid-IR census of the PMS cluster, {{cite:eb02664d-bcd7-4ac1-a404-edd679c12d10}} identified three main sub-clusters associated with
+the DCOFORMULA  cores Oph A, Oph B1/B2, and Oph C/E/F, respectively. The fact that sub-clustering is observed in the spatial
+distribution of PMS objects further supports our conclusion that significant interactions between individual objects
+have not yet occurred on the scale of the entire protocluster.
+Using Eq. (2) for the condensations associated with each of the three sub-cluster
+systems (FORMULA  pc, FORMULA ),
+we find shorter interaction timescales than for L1688 as a whole,
+FORMULA  yr (see col. [9] of Table REF ).
+The derived collision timescales nevertheless remain significantly longer than the
+typical condensation lifetime FORMULA  yr,
+indicating that dynamical interactions between condensations cannot be a dominant process even on the scale of the
+sub-clusters and DCOFORMULA  cloud cores.
+The collision timescales are even longer than the combined lifetime of the prestellar and protostellar (Class 0/Class I)
+phases, which we estimate to be at most FORMULA  yr {{cite:770afa9a-2404-4a11-ba8a-4ee75f78cc81}}.
+In general, therefore, the prestellar condensations do not have
+time to orbit through their parent DCOFORMULA  core and collide with one another before evolving into Class II PMS objects.
+We note that FORMULA  is only slightly larger than FORMULA  yr
+in the case of the Oph A
+cluster-forming core, suggesting that a few interactions may occur during the whole evolution of this sub-cluster.
+Interestingly, based on a recent detailed study of the NGC 2264-C cluster-forming clump in the Mon OB1 complex,
+{{cite:0bc0fdb5-2cd6-4679-9946-27eb0069224e}} found direct evidence of a strong dynamical interaction in the dense inner region of that
+protocluster. However, the interaction observed at the center of NGC 2264-C is purely gravitational in origin and
+results from large-scale, coherent collapse motions as opposed to random turbulent motions {{cite:759b5059-3230-440c-916d-f218bbf5621c}}.
+Our present results in L1688 seem inconsistent with models which resort to
+strong dynamical interactions
+to build up a mass spectrum comparable to the IMF {{cite:dd0cf869-5a41-4d1f-855c-fc80ab3c0616}}.
+TABLE 
+
+Comparison with the competitive accretion picture
+In a scenario of clustered star formation proposed by
+Bonnell, Bate and collaborators {{cite:76a2f7a4-3fc3-4e9e-8d52-81d62abb6481}}, {{cite:bf83cad5-432f-4c4e-929b-77f71a1280b8}},
+the IMF is primarily determined by competitive accretion and dynamical
+interactions/ejections during the protostellar phase, corresponding observationally to
+Class 0 and Class I objects. In this picture, turbulence generates density fluctuations
+within molecular clouds, some of which are gravitationally unstable and collapse to
+interacting protostars or protostellar seeds.
+The initial envelope/core masses of these protostars are essentially uncorrelated with the
+corresponding final stellar masses, especially at the high-mass end of the IMF
+{{cite:69bbaf9b-1bee-44ed-a15e-bba5963ab20d}}.
+The protostars acquire most of their mass by moving around in the
+gravitational potential well of the parent cluster-forming clump and accreting background gas
+that initially did not belong to the corresponding protostellar envelopes/cores.
+This process of competitive accretion of background gas is highly non-uniform and depends
+primarily on the initial stellar position FORMULA  within the protocluster.
+The few protostars initially located near the center of the
+cluster potential accrete rapidly from the start and
+become massive stars, while protostars in the low-density
+outer regions accrete much more slowly and become low-mass stars
+{{cite:bf83cad5-432f-4c4e-929b-77f71a1280b8}}.
+In the context of this scenario, it is difficult to explain why the Ophiuchus
+prestellar condensations have a mass distribution resembling the IMF.
+Our present results on the kinematics
+of the protocluster condensations allow us to further discuss the possible relevance of
+the competitive accretion picture in the case of the L1688 embedded cluster.
+The rate at which a protostar accretes mass competitively as it travels through
+the background protocluster gas is FORMULA 
+{{cite:76a2f7a4-3fc3-4e9e-8d52-81d62abb6481}}, which gives:
+FORMULA 
+where FORMULA  is the background gas density, FORMULA  is the relative
+velocity between the protostar and the local ambient gas, and FORMULA  is the accretion radius.
+{{cite:76a2f7a4-3fc3-4e9e-8d52-81d62abb6481}} have shown that a good analytic approximation for FORMULA 
+is provided by the smaller of the Bondi-Hoyle radius, FORMULA ,
+and the local tidal-lobe radius,
+FORMULA ,
+where FORMULA  is the gas sound speed and FORMULA  is the mass enclosed within the protocluster at the
+protostar's position FORMULA .
+The Bondi-Hoyle radius, FORMULA , is the radius where the gravitational potential due to the protostar
+exceeds the kinetic energy of the gas. Here, we estimate the relative gas–protostar velocity to be
+the derived mean condensation speed FORMULA  km sFORMULA  < FORMULA 2  csFORMULA RBH 9900  AU  (M/0.5  M) (vrel /0.3  km/s )-2FORMULA RtidalFORMULA Rtidal FORMULA RBH FORMULA Racc RtidalFORMULA RBH FORMULA RtidalFORMULA Racc RBHFORMULA To estimate the typical value of FORMULA  in the central Ophiuchus case, we assume that the overall gas distribution in
+the centrally-condensed L1688 protocluster and individual subclusters (e.g. Oph A)
+follows a FORMULA  density profile on average.
+This assumption is consistent with the density gradient derived by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}}
+for the outer parts of the DCOFORMULA  cores based on the circularly-averaged profiles observed
+at 1.2mm.
+Under this assumption, FORMULA  has a very simple
+expression, FORMULA ,
+and thus FORMULA ,
+where FORMULA  and FORMULA  are the total (gas FORMULA  stars) mass and outer radius of the
+protocluster, respectively.
+For the entire L1688 protocluster, we have FORMULA , FORMULA  pc,
+and thus FORMULA .
+For the Oph A subcluster, we adopt FORMULA , FORMULA  pc,
+and thus FORMULA .
+As expected, we see that FORMULA  and thus FORMULA .
+Based on these simple estimates, we find that the typical tidal-lobe radius of the
+L1688 condensations/protostars is comparable to the actual radius of the condensations
+and protostellar envelopes as measured by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} at 1.2 mm.
+This suggests that the overall gravitational potential of the L1688 protocluster
+does play an important role in limiting
+the condensation/envelope masses, in qualitative agreement with the competitive accretion
+picture {{cite:76a2f7a4-3fc3-4e9e-8d52-81d62abb6481}}, {{cite:69bbaf9b-1bee-44ed-a15e-bba5963ab20d}}. Note that the small value found here for
+the mean condensation velocity relative to the local gas (FORMULA  km sFORMULA )
+is also consistent with the predictions of the competitive accretion model during the gas-dominated
+phase of protocluster evolution {{cite:76a2f7a4-3fc3-4e9e-8d52-81d62abb6481}}.
+However, when we estimate the mass accretion rate resulting from competitive accretion
+in various typical situations, we find relatively low values (see Table REF ),
+which are smaller than the infall rate expected from the gravitational collapse
+of individual condensations, i.e., FORMULA 
+(see {{cite:4ea39c36-4545-40d4-af6b-479934c41edb}} 1977 and {{cite:a5ec6147-99d9-48d8-a6e9-37540b7bc242}} 1993 for model predictions,
+and {{cite:4b6e791e-4138-428b-a334-bf544a7b4ecf}} 2006 for an observed example).
+For a Class 0 protostar such as VLA 1623 embedded in the inner part of the Oph A DCOFORMULA  core, we estimate
+the background gas density to be relatively high, FORMULA ,
+and the tidal radius to be at most
+FORMULA , giving FORMULA .
+For comparison, the
+infall rate due to gravitational collapse is significantly higher at this early stage
+FORMULA  > FORMULA 10  cs3/G FORMULA 10-5-10-4  M  yr-1FORMULA +FORMULA nH2back 5 104  cm-3 FORMULA RtidalIRS43 3000  AUFORMULA  Macc 6 10-7  M  yr-1FORMULA Minf cs3/G 2 10-6  M  yr-1FORMULA  Macc < Minf/3FORMULA We also believe that competitive, Bondi-like accretion is more likely to operate at the prestellar stage and may
+possibly govern the growth of starless condensations within a cluster-forming
+cloud {{cite:bf83cad5-432f-4c4e-929b-77f71a1280b8}}, {{cite:0ace9f39-6f17-4f89-98bf-960dc6f3adb7}}, {{cite:b8b8117c-cda1-412d-bc79-1efbdd16bba3}}.
+The growth rate of a typical FORMULA  condensation embedded in the inner part of a DCOFORMULA  core such as Oph A
+should be similar to the competitive accretion rate estimated above for VLA 1623, i.e.,
+FORMULA . This is sufficient to approximately double the mass
+of the condensation in FORMULA  yr, a timescale comparable to the condensation lifetime.
+However, once fast, nearly free-fall collapse sets in, we expect the growth rate to be quickly overwhelmed by
+the infall rate, so that a collapsing prestellar condensation should not have time to grow significantly in mass before
+evolving into a PMS system.
+Another feature of the dynamics of a gas-dominated protocluster
+is that the entire system is expected to undergo global collapse/contraction,
+resulting in a centrally-condensed overall structure much like a self-gravitating
+isothermal sphere {{cite:ca1afc9f-301a-4d56-a655-080673c60297}}, {{cite:bf83cad5-432f-4c4e-929b-77f71a1280b8}}. In this view,
+both the gas accretion and the protocluster evolution occur on the global dynamical
+timescale {{cite:aaa8bdc1-9b8a-4143-bd64-eefdfcd114e3}}.
+Observationally, the velocity dispersion, FORMULA , estimated in Sect. REF 
+above for the L1688 condensations implies a binding virial mass
+FORMULA , which is much less than
+the total gas mass FORMULA  of the associated CFORMULA O cloud
+{{cite:ff65f405-29d8-4382-aa42-1f1e21f4a470}} and even less than the total stellar mass of
+the present infrared embedded cluster
+{{cite:eb02664d-bcd7-4ac1-a404-edd679c12d10}}.
+In other words, the observed condensation-to-condensation velocity dispersion is
+a factor of FORMULA  smaller than that expected in virial equilibrium {{cite:0bc0fdb5-2cd6-4679-9946-27eb0069224e}},
+Since the magnetic field does not seem to be strong enough to support the
+cloud {{cite:0bcedb03-3b94-4040-93b6-4ac7117833d3}}, this comparison suggests that the L1688 system is indeed
+gravitationally unstable and possibly in an early state of large-scale, magnetically supercritical
+contraction.
+Interestingly, the CO and FORMULA CO lines
+observed toward the L1688 cloud exhibit the classical spectroscopic
+signature of contraction motions (cf. Sect. REF  above) over most of the
+protocluster extent {{cite:6561d7af-8c84-4396-a756-a7c50493e69a}}.
+We also note that L1688 is not the only protocluster for which both subvirial relative speeds and evidence
+of large-scale contraction have been found. Two other examples are NGC 2264
+{{cite:0bc0fdb5-2cd6-4679-9946-27eb0069224e}}, {{cite:759b5059-3230-440c-916d-f218bbf5621c}} and NGC 1333 {{cite:bd47cae7-8f7c-4338-85a8-4c7f5837310c}}, {{cite:374c3841-c9ab-4f10-b98f-2218eca2d29f}}.
+This suggests that protoclusters often start their evolution from “cold”, out-of-equilibrium
+initial conditions {{cite:e2e6dfa2-99e8-40c8-b007-30682ef33add}}, possibly as a result of the influence of external triggers {{cite:b2b2dd5b-54a0-4936-828f-987555c1ce9f}}.
+
+Summary and conclusions
+We carried out a detailed observational study of the kinematics of the L1688 protocluster
+condensations in the central Ophiuchus molecular cloud
+using NFORMULA HFORMULA (1-0) as a tracer of dense gas. Additional observations
+were also taken in molecular lines such as HFORMULA COFORMULA (1-0), DCOFORMULA (2-1), HCOFORMULA (3-2),
+CS(2-1), and CFORMULA S(2-1).
+Our main results and conclusions are as follows:
+
+The NFORMULA HFORMULA (1-0) line was positively detected toward 41 of the 57 compact starless
+condensations identified by {{cite:66ab4ffe-19d2-449a-a753-482cc5c04ebb}} at 1.2 mm, as well as 3 Class 0/Class I protostars
+(VLA 1623, CRBR 85, YLW 15/IRS 43). The same objects were also detected in HFORMULA COFORMULA (1-0)
+and/or DCOFORMULA (2-1) when observed in these transitions. In addition, the Class I sources LFAM 26
+and GY210 were detected in HFORMULA COFORMULA (1-0).
+
+For 29 of the 44
+condensations/protostars detected in NFORMULA HFORMULA (1-0) we are confident that the line emission
+is at least partly associated with the compact 1.2 mm continuum object as opposed to the more extended
+parent cloud/DCOFORMULA  core, since the sources remained positively detected after subtraction of the local
+background line emission. Furthermore, at least 17 starless condensations and 3 protostars were found
+to have well-defined line counterparts in position-velocity space and could be identified in our
+background-subtracted NFORMULA HFORMULA (101-012), HFORMULA COFORMULA (1-0), or DCOFORMULA (2-1) data cubes
+using the Gaussclumps clump-finding algorithm of {{cite:6b1b878f-cc52-4a1a-ace2-d511d1e70730}}.
+
+The measured NFORMULA HFORMULA (1-0) linewidths are narrow, indicative of
+small nonthermal velocity dispersions. The condensations of Oph A, Oph B1, Oph C, Oph E, and Oph F
+are characterized by subsonic levels of internal turbulence (FORMULA ), while
+the condensations of Oph B2 have at most “transonic” internal turbulence (FORMULA ).
+
+We detected the classical spectroscopic signature of infall motions toward six 1.2 mm continuum
+condensations (A-SM2, B2-MM16, C-MM5, C-MM6, E-MM2d, and E-MM4). For these objects,
+the optically thick CS(2–1), CS(3–2), HFORMULA CO(FORMULA ), and/or HCOFORMULA (3–2) lines are double-peaked
+with a stronger blue peak, while the low-optical-depth NFORMULA HFORMULA (101–012) line peaks
+in the dip of the optically thick line. The same signature was tentatively observed in 10 other condensations.
+
+The virial masses derived from our NFORMULA HFORMULA (1-0) detections of the condensations
+generally agree within a factor of FORMULA  with the masses estimated from the 1.2 mm dust continuum.
+On this basis, most (FORMULA  75-90FORMULA ) of the L1688 condensations detected in NFORMULA HFORMULA (1-0),
+including essentially all (FORMULA ) of those more massive than FORMULA ,
+appear to be gravitationally bound and prestellar in nature.
+The status of the starless 1.2 mm condensations less massive than FORMULA  is less clear
+since these were often undetected in NFORMULA HFORMULA .
+
+We estimate that the prestellar condensations of L1688 are characterized by a range of lifetimes
+between FORMULA  yr and FORMULA  yr. There is however no systematic dependence
+of lifetime on mass, so that the observed mass spectrum is not severely affected by the timescale bias pointed out
+by {{cite:a1f50999-3cec-48a8-8bf7-9406483a8727}}. In particular, the steep, Salpeter-like slope of the condensation mass distribution at
+the high-mass end appears to be robust.
+
+Based on the observed distribution of NFORMULA HFORMULA (1-0) line centroid velocities, a global
+velocity dispersion FORMULA  km sFORMULA  was estimated for the condensations of L1688.
+This condensation-to-condensation velocity dispersion is subvirial.
+It implies a crossing time FORMULA  Myr for the condensations
+within the parent protocluster and a typical collision time FORMULA  Myr between condensations.
+Since these timescales are longer than the estimated condensation lifetime FORMULA  0.2-5 FORMULA  yr, we
+conclude that, in general, the L1688 prestellar condensations
+do not have time to orbit through their parent
+DCOFORMULA  core and interact with one another before evolving into PMS objects.
+
+Using an estimated mean relative velocity of FORMULA  km sFORMULA  between protostellar envelopes
+and the background ambient gas, the mass accretion rate expected from competitive accretion was found to be
+significantly smaller than that resulting from gravitational collapse at the Class 0 stage. On the other hand,
+the typical tidal-lobe radius of the L1688 condensations/protostars was estimated to be comparable to the
+actual radius of the condensations and protostellar envelopes as measured in the dust continuum at 1.2 mm.
+This suggests that the overall gravitational potential of the protocluster does play an important role
+in limiting the condensation/envelope masses, but that competitive accretion at the protostellar stage
+is not the dominant mechanism responsible for determining the final masses of stellar systems
+in the central Ophiuchus star-forming cloud.
+
+We find that competitive, Bondi-like accretion is more likely to operate at the prestellar stage and
+propose that it may partly govern the growth of starless, self-gravitating condensations initially produced
+by gravoturbulent fragmentation toward an IMF, Salpeter-like mass spectrum.
+
+We would like to thank Bruce Elmegreen and Ian Bonnell for enlightening discussions on
+protocluster dynamics. We are grateful to an anonymous referee for constructive comments
+that helped us improve the clarity of the paper.

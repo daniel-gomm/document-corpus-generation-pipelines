@@ -1,0 +1,290 @@
+
+Received 2007 May 14; accepted 2007 May 29; published 2007 June
+27
+MAGNETIC BUOYANCY AND COHERENT STRUCTURES
+KERSALÉ, HUGHES, & TOBIAS
+The nonlinear evolution of instabilities driven by magnetic buoyancy: A
+new mechanism for the formation of coherent magnetic structures
+Evy Kersalé, David W. Hughes, and Steven M. Tobias
+Department of Applied Mathematics, University of Leeds,
+Leeds LS2 9JT, U.K.
+kersale@maths.leeds.ac.uk
+Motivated by the problem of the formation of active regions from a
+deep-seated solar magnetic field, we consider the nonlinear
+three-dimensional evolution of magnetic buoyancy instabilities resulting
+from a smoothly stratified horizontal magnetic field. By exploring the case
+for which the instability is continuously driven we have identified a new
+mechanism for the formation of concentrations of magnetic flux.
+Sun: interior — Sun: magnetic fields — instabilities — MHD
+Introduction
+Solar active regions are the surface manifestations of a deep-seated,
+predominantly toroidal magnetic field. Although it is generally agreed that
+the solar magnetic field is maintained by some sort of hydromagnetic dynamo,
+the mechanism by which this is effected is far from understood. Consequently,
+the strength, structure, and location of the interior magnetic field are
+similarly unknown. However, most recent solar dynamo models, despite their
+significant differences in other respects, postulate that the tachocline, the
+thin layer of strong velocity shear located at the base of the convection
+zone, plays an important role in the generation of toroidal field by the
+shearing of a weaker poloidal component {{cite:b13bf939-ffe9-4aae-8e3c-bf378f568b2b}}. Given this premise, it is important to address the nature of
+the initial escape of the magnetic field from the tachocline, its subsequent
+ascent through the convection zone, and its eventual emergence at the
+photosphere.
+Owing to the vast range of scales across the convection zone, it is impossible
+to model realistically all of these stages in one calculation. Here we
+concentrate solely on the instability of a layer of magnetic field, with the
+aim of clarifying the physics of the formation of coherent magnetic structures
+from a much larger scale field.
+A vertically stratified, horizontal magnetic field can be unstable to magnetic
+buoyancy instability provided that the field decreases sufficiently rapidly
+with height. It is important to note the non-trivial distinction between
+instability to two-dimensional modes in which the field lines remain straight
+(interchange modes) and instability to fully three-dimensional modes. The
+former are essentially destabilized by a decrease with height of FORMULA 
+(where FORMULA  is the magnetic field strength and FORMULA  the density), the latter
+simply by a decrease with height of FORMULA . The physics underlying this
+difference is elucidated in {{cite:d621a071-df65-4ba6-8f3f-d8eadaed63a9}}.
+The linear theory of magnetic buoyancy instabilities has been intensively
+studied over a number of years {{cite:f1272188-8f3b-458e-b72e-175447f32215}}, {{cite:2c884c69-6b28-4549-a09b-ba8c6c2e2440}}, {{cite:362a83d9-eb59-49e6-b7d1-eddd2a026a3d}}, {{cite:51f5a035-45d8-40d7-8ebc-a2274a2531a7}}. The nonlinear development of the
+instability, particularly with respect to a deep-seated solar field, has,
+inevitably, received less attention. {{cite:8a12902d-06b5-401a-a2d0-0aac94799bcc}} investigated
+the nonlinear evolution of interchange modes resulting from a slab of uniform
+horizontal magnetic field embedded in a convectively stable and otherwise
+field-free atmosphere. Here the instability is driven by a density jump at the
+upper interface of the magnetic slab — an extreme form of magnetic buoyancy
+instability. This interfacial instability generates a strong shear flow that
+leads, by a secondary Kelvin-Helmholtz instability, to the formation of strong
+vortices. The subsequent nonlinear evolution is then governed by pairwise
+vortex interactions, which can even act so as to drag down pockets of strong
+magnetic field. The three-dimensional instability and nonlinear evolution of
+the same basic state was examined by {{cite:6364aba4-20e1-47f4-b635-9d7f15ca2f80}} and
+{{cite:bab57b17-7c67-455c-9535-66bde9792009}}. The initial evolution again takes the form of
+interchange modes, leading to the formation of vortex tubes. However,
+neighbouring vortex tubes of opposite sign are unstable to a longitudinal
+instability {{cite:5d25b456-2efd-4e24-9641-b54aeaaddba0}}; this in turn causes the magnetic field to adopt an
+arched structure. By contrast, {{cite:ddd2dbaf-c41b-4ae7-8485-359d4049fde7}} investigated the
+nonlinear evolution of a smoothly varying magnetic field, with a profile
+chosen such that the initial state is unstable to three-dimensional modes, but
+stable to interchange modes. She shows the formation of arched magnetic
+structures, which maintain a reasonable degree of coherence as they rise. A
+recent review of the implications of magnetic buoyancy instabilities for the
+solar tachocline is given by {{cite:b2297424-8538-4530-8956-2db550ebccf7}}. Related simulations of magnetic
+buoyancy in sub-surface regions have also been performed
+{{cite:96031254-d67c-4289-900a-b4177c6d805a}}, {{cite:8e8a32a3-3c84-4dec-88a2-24f0c9beec34}}.
+Inspection of active regions on the solar surface suggests the emergence
+through the photosphere of a buckled, toroidal magnetic field. However, very
+little is known about the structure, strength and orientation of the
+sub-surface field. For example, which properties of the observed surface field
+result from the initial instability and which result from later interactions
+in the convection zone? Our aim in this Letter is to seek further
+understanding of the instability by examining the nonlinear evolution from a
+very simple equilibrium state. We consider an atmosphere that is in both
+magnetohydrostatic and thermal equilibrium and that has a linear magnetic
+field profile. We concentrate on modes that are intrinsically
+three-dimensional; i.e. the field gradients considered are such that the
+basic state is unstable to three-dimensional modes but stable to interchanges.
+Furthermore, we impose boundary conditions such that the source of the
+instability is maintained for all times, thus allowing us to consider the
+long-term evolution. This is an important difference from the earlier works
+cited above, all of which consider “run-down” experiments, in which the
+potential energy stored in the initial field configuration is rapidly
+converted into kinetic energy and which is then slowly dissipated.
+We consider four cases, characterised by two different field strengths and two
+different choices of initial conditions. We have identified a completely new
+mechanism for the formation of flux concentrations; this is of potential
+significance in the solar context in which the formation of localised regions
+of strong field from a weaker larger scale field is a crucial component of the
+flux emergence process.
+0.9
+f01a
+f01b
+ Model with FORMULA  and eigenfunction
+perturbation. (a) Evolution of the kinetic energy density. (b)
+Horizontal average of the magnetic field FORMULA  vs. depth, initially
+(dotted line), at FORMULA  (dashed line), and in the
+final steady state (solid line).
+
+
+Mathematical formulation and parameters
+We consider a Cartesian layer of perfect gas governed by the equations of
+three-dimensional compressible MHD. The dimensionless representation of these
+equations is obtained by scaling lengths with the layer depth, time with the
+isothermal sound crossing time at the top surface (FORMULA ), and temperature,
+density, and magnetic field with their respective values at the top surface.
+The physical properties of the fluid are entirely determined by four
+dimensionless numbers: the Prandtl number FORMULA , the ratio of viscous to
+thermal diffusivity; FORMULA , the ratio of magnetic to thermal diffusivity;
+FORMULA , the ratio of specific heats; and FORMULA , the nondimensional thermal
+conductivity.
+The basic state that we consider is an exact equilibrium, dependent only on
+depth FORMULA , with a unidirectional horizontal magnetic field FORMULA . The density and temperature are determined from solution of the
+magnetohydrostatic equations. In the absence of a magnetic field, the
+atmosphere takes the form of a plane polytrope, with polytropic index FORMULA  and
+constant temperature gradient FORMULA . The strength of the magnetic field is
+changed by varying FORMULA , where the plasma-FORMULA 
+is the ratio of the thermal to the magnetic pressure. A more detailed
+description of the governing equations and parameters is contained in
+{{cite:9bcb6e4b-83c1-4576-a1c5-5b7c3f7ae5b3}}.
+We consider perturbations to this basic state, subject to the following
+boundary conditions: all variables are taken to be periodic in both horizontal
+directions; the top and bottom boundaries are stress-free, impermeable, and
+isothermal. For the magnetic field we choose to maintain a fixed gradient of
+FORMULA  (FORMULA ) at FORMULA , together with
+FORMULA  and FORMULA . Our aim in this Letter is to
+examine the nonlinear development of modes that are intrinsically
+three-dimensional. By an extensive linear analysis we have identified the
+regions in parameter space where three-dimensional modes (FORMULA , FORMULA ) are unstable but interchange modes (FORMULA ) are stable. In the next
+section we discuss the nonlinear evolution resulting from two choices of
+parameters and two different types of perturbation to the basic state.
+
+Nonlinear evolution of three-dimensional modes
+The nonlinear evolution of three-dimensional magnetic buoyancy instabilities
+is studied by solving numerically the equations of compressible MHD with a
+modified version of the hybrid finite-difference-pseudospectral parallel code
+used by {{cite:a7ae25d2-f276-4a88-a7d4-41bef421c445}} (hydrodynamic) and
+{{cite:9bcb6e4b-83c1-4576-a1c5-5b7c3f7ae5b3}} (MHD). We consider the evolution from two basic
+states, distinguished by the value of the field strength; the other parameters
+are held fixed at FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA , and FORMULA . Furthermore, we consider
+two different perturbations to each basic state: one consisting of the most
+unstable eigenfunction, the other of random noise. In each case, the
+horizontal dimensions of the Cartesian computational box are determined by the
+wavenumbers FORMULA  and FORMULA  of the most unstable mode such that one wavelength
+fits in the FORMULA -direction, along the initial magnetic field, and four
+wavelengths fit transverse to the initial field, in the FORMULA -direction.
+Evolution to a Steady State
+Here we consider a basic state with FORMULA  perturbed by the most
+unstable eigenfunction, namely, that with growth rate FORMULA  and with
+wavenumbers FORMULA  and FORMULA  (hence, the dimensions of the
+computational domain are FORMULA  and FORMULA ). The evolution is
+essentially linear up to time FORMULA . For FORMULA 
+the kinetic energy continues to grow (see Fig.  REFa). During
+this stage, broad upflows carry strong magnetic fields from the bottom of the
+layer, while narrow plumes pull down weaker field, leading to the formation of
+arched structures, as shown in Figure REF . Figure  REFb shows the mean result of this nonlinear evolution, with a significant
+reduction of the gradient of the horizontally averaged magnetic field FORMULA .
+Initially constant throughout the layer (dotted line), the vertical
+gradient of FORMULA  becomes nearly zero in a large fraction of the domain at FORMULA  (dashed line). The nonlinear reorganization has therefore
+acted to remove the driving mechanism of the instability. There is an obvious
+analogy with thermal convection, in which saturation is achieved by a
+nonlinear reorganization leading to an adiabatic core with thin thermal
+boundary layers.
+The arched configuration shown in Figure REF  is however transient;
+following this initial nonlinear reorganization the system relaxes to a state
+with weak flows and a magnetic field profile that is close to critical. As can
+be seen from Figure  REFb, the field gradient in the final
+state is reduced everywhere in the layer compared with its initial value. This
+subsequent evolution is permitted by the choice of boundary conditions, in
+which the gradient of FORMULA  (but not the field itself) is fixed at the
+boundaries.
+0.9
+f02
+ Isosurface of magnetic energy FORMULA  at
+FORMULA  for the same model as in Fig. REF .
+
+
+Evolution to Time-dependent Concentrated Flux States
+First we consider the evolution from the same basic state as in §REF 
+(i.e. with FORMULA ), but with the perturbation taking the form of
+small-amplitude random noise. As shown in Figure  REFa, the
+linear evolution (up to FORMULA ) and the initial nonlinear phase, as
+measured by the temporal evolution of gross properties such as kinetic energy,
+are similar to those portrayed in Figure  REFa . The first
+nonlinear reorganization again leads to the formation of arched structures, as
+shown in Figure REF , although, as a result of the initial
+conditions, these are less regular than those of Figure REF .
+Crucially, these irregularities play a significant role in modifying the
+subsequent behaviour. From FORMULA  the kinetic energy
+increases monotonically until the onset of a secondary oscillatory
+instability. From FORMULA  the system evolves on two disparate
+timescales: a short cycle with period FORMULA  modulated on larger
+timescales FORMULA .
+The underlying mechanism of the short period oscillations can be understood by
+inspection of Figure  REFb, which shows the temporal evolution
+for fixed values of FORMULA  and FORMULA  of the magnetic energy, the transverse
+horizontal velocity FORMULA , and the vertical velocity FORMULA . The left panel shows
+the periodic formation of a concentration of magnetic energy, which drifts
+slowly with velocity FORMULA . The central and right panels indicate that the
+concentrations of magnetic energy result from convergent downflows associated
+with rolls in the FORMULA -plane. The magnetic flux becomes concentrated between
+the two counter-rotating rolls; it thus becomes buoyant and rises rapidly.
+This drives a countercell, which diverges at the flux concentration and
+thereby destroys it. After some reorganization, the initial cellular flow is
+reestablished but displaced relative to its initial position. Reformed
+downflows again lead to a concentration of flux and the entire process is
+repeated.
+Next we examine the evolution from an equilibrium with a stronger field
+(FORMULA ). For this case the evolution is qualitatively similar regardless
+of the nature of the initial perturbation; here we shall describe the case in
+which the perturbation takes the form of random noise. The most unstable mode
+has wavenumbers FORMULA  and FORMULA , and growth rate FORMULA . Figure  REFa shows that the temporal evolution is
+broadly similar to that of the weaker field case portrayed in
+Figure  REFa. The secondary instability is evident, leading to
+a modulated periodic state. The increase in initial field strength leads, as
+expected, to a more vigorous instability (higher growth rate and increased
+saturation level) and to a shorter period oscillation of the nonlinear state.
+As in the example above, flux concentration occurs via converging downflows.
+The peak field in the flux concentrations is significantly stronger than the
+average initial field. In this case, as can be seen in Figure REF ,
+the flux concentrations are never completely dispersed, although their
+strength varies as they propagate. This (modulated) travelling wave behaviour
+for the field and flows can be clearly seen in Figure  REFb.
+0.99
+f03a
+f03b
+ Model with FORMULA  and random
+perturbation. (a) Evolution of the kinetic energy density. (b)
+Space-time plots, with FORMULA  horizontal and FORMULA  vertical, of magnetic energy
+FORMULA , FORMULA , and FORMULA ; FORMULA ; FORMULA .
+
+
+Discussion
+In this Letter we have identified a new, inherently nonlinear, mechanism for
+the formation of coherent magnetic structures from a layer of weaker magnetic
+field. The initial development of the magnetic buoyancy instability drives
+flows that act so as to form isolated concentrations of magnetic flux. This
+nonlinear state persists because the instability is continually driven from
+the boundaries and saturation of the instability occurs via the net
+redistribution of flux so as to remove average magnetic field gradients from
+the interior of the computational domain. An intriguing feature of the flux
+concentrations is that, once established, they travel — taking the form of a
+modulated wave.
+0.9
+f04
+ Isosurface of magnetic energy FORMULA  at
+FORMULA  for the same model as in Fig. REF .
+
+The processes in the deep interior of the Sun that lead to the formation of
+active regions are still poorly understood. Even the most optimistic estimates
+from dynamo theory suggest that an upper bound for the large-scale
+dynamo-generated field is of the order of FORMULA  G {{cite:e466d69f-aefa-4659-9d4f-5ce5ce8b5aac}}. The energy of such a field is small, however, in
+comparison with that of the strong downflows in the convection zone and, such
+a field might be expected to be pinned down by the convection {{cite:9bcb6e4b-83c1-4576-a1c5-5b7c3f7ae5b3}}. Clearly, therefore, some process must be acting
+so as to create strong localised field structures from the dynamo field that
+are capable of traversing the convection zone in order to form active regions.
+Our calculations, although idealized, suggest a new mechanism that may play a
+key role in this process.
+1.
+f05a
+f05b
+ Same as Fig. REF , but with FORMULA . In panel b FORMULA , FORMULA , FORMULA ; FORMULA ; and FORMULA .
+
+0.9
+f06
+ Slices in the FORMULA -plane of magnetic energy at
+times FORMULA , FORMULA , FORMULA . The peak magnetic energy
+FORMULA .
+
+We conclude by noting that the discovery of the mechanism arose from
+considering a system where the instability is continually driven, in contrast
+to nearly all previous studies in which the initial magnetic buoyancy
+instability was investigated by means of run-down calculations. Both types of
+experiment may be of importance for understanding the dynamics of the solar
+interior. The magnetic buoyancy instability is a fast process that might be
+captured by run-down calculations (which usually lead to the formation of
+arched structures). On the other hand, the replenishment of toroidal field by
+the dynamo should lead to a continual source of instability of field at the
+base of the solar convection zone.
+The authors acknowledge financial support from PPARC, under
+grant PPA/G/O/2002/00014, and the Leverhulme Trust. We are grateful to
+N.H. Brummell for helpful discussions and numerical advice.

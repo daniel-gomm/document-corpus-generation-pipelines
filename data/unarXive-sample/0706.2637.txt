@@ -1,0 +1,361 @@
+
+One-step replica symmetry breaking solution for a highly asymmetric two-sublattice fermionic Ising spin glass model in a transverse field
+F. M. Zimmer S.G. Magalhaesggarcia@ccne.ufsm.br Laboratório de Mecânica Estatística e Teoria da Matéria Condensada, Universidade Federal de Santa Maria, 97105-900 Santa Maria, RS, Brazil
+
+The one-step replica symmetry breaking (RSB) is used to study a two-sublattice fermionic
+infinite-range Ising spin glass (SG) model in a transverse field FORMULA .
+The problem is formulated in a Grassmann path integral formalism within the static approximation.
+In this model, a parallel magnetic field FORMULA  breaks the symmetry of the sublattices. It destroys the antiferromagnetic (AF) order, but it can favor the nonergodic mixed phase (SG+AF)
+characterizing an asymmetric RSB region.
+In this region, intra-sublattice disordered interactions FORMULA  increase the difference between the RSB solutions of each sublattice.
+The freezing temperature shows a higher increase with FORMULA  when FORMULA  enhances.
+A discontinue phase transition from the replica symmetry (RS) solution to the RSB solution can appear with the presence of an intra-sublattice
+ferromagnetic average coupling.
+The FORMULA  field introduces a quantum spin flip mechanism that suppresses the magnetic orders leading them to quantum critical points.
+Results suggest that the quantum effects are not able to restore the RS solution.
+However, in the asymmetric RSB region,
+FORMULA  can produce a stable RS solution at any finite temperature for a particular sublattice while the other sublattice still presents RSB solution
+for the special case in which
+only the intra-sublattice spins couple with disordered interactions.
+75.10.Nr, 75.10.Jm, 64.60.Cn
+Introduction
+The quantum spin glass (SG) theory{{cite:7c1d71e1-04b5-4d05-b0a1-2f2d8b662a95}} has been subject of extensive studies mainly by
+its conceptual difficulties to describe the ordered phase.
+This problem becomes even more interesting when the SG and a long range antiferromagnetic (AF) interaction are both considered.
+The glassy AF order can be source of complex physics processes. For instance,
+quantum fluctuations and the interplay among disorder, frustrated magnetism and other interactions have
+been an essential feature of some heavy fermion systems{{cite:9612998c-50fa-41c2-81cc-d6e9a393e7bd}} and high temperature superconductors.{{cite:0990ec5f-698a-4d3c-9865-64a17fcd64c2}}
+It can lead to a non-Fermi liquid behavior and to a quantum critical point (QCP).
+In this case, it is important to establish a theoretical framework to treat the SG/AF competition with other physical processes such as Kondo effect{{cite:61d02608-a888-4cf5-9f0b-7c976750df3a}} or superconductivity{{cite:6fa7a4c1-bda7-4b0c-8923-6fa370f9f28e}} in the same footing at low temperature in which quantum effects become significant. We do not intend discussing this specific problem, but we concentrate on the quantum magnetic properties of a fermionic formulation for a two-sublattice transverse field Ising SG model.
+The infinite range Sherrington-Kirkpatrick SK model{{cite:2379432f-c9b7-40eb-a92c-775950ef5d07}} in a transverse tunneling field FORMULA  has been extensively studied as a quantum SG model that presents a QCP
+and an experimental realization in the system LiHoFORMULA YFORMULA FFORMULA .{{cite:cb257c22-d921-4983-8bc8-d99b0af3be65}}
+However, even this simplest theoretical quantum SG model has recently been theme of controversial results concerning the local stability of replica symmetry (RS) solution (see Refs. thirumalai,trotter,eduardo,zimmerprb).
+For instance, the classical SK model is well described by Parisi's replica symmetry breaking (RSB) solution.{{cite:6ddd8a55-a1f1-4e18-b798-6a4af0778f97}} It considers the SG phase as a nonergodic situation in which the free energy landscape is characterized with many valleys separated by large barriers.
+This raises the question of whether or not the quantum tunneling through these barriers is able to restore the RS when quantum effects are included (FORMULA ).
+Concerning the SG/AF competition, a two-sublattice Ising spin model with SK-type interactions between classical spin variables of distinct sublattices has been introduced by Korenblit and Shender (KS) to discuss the SG/AF problem at mean field level.{{cite:859f6771-dfbf-45f6-93b1-766a8b8aa99b}}
+A generalization of the KS model (GKS model) allows inter- and intra-sublattice disordered interactions.{{cite:6de5ff49-0e14-49ca-a496-99520caf59a4}}, {{cite:3020869b-9d9e-4513-809e-7183b7119f27}}
+These two models (KS and GKS) have shown an interesting feature related to a parallel magnetic field FORMULA . It breaks the symmetry between the sublattices that can favor frustration increasing the RSB temperature range.{{cite:859f6771-dfbf-45f6-93b1-766a8b8aa99b}}, {{cite:6de5ff49-0e14-49ca-a496-99520caf59a4}}, {{cite:3020869b-9d9e-4513-809e-7183b7119f27}}
+The RSB with this asymmetry caused by the FORMULA  field is named here as asymmetric RSB region,
+in which the SG and the usual AF order coexist (mixed phase).
+However, a quantum version for the GKS model has received less consideration.
+In this case, the quantum effects on the asymmetric RSB region remain an open question.
+For instance, the RSB occurs at the same temperature in both sublattices for the classical GKS model.{{cite:6de5ff49-0e14-49ca-a496-99520caf59a4}}
+However, the degree of RSB can be distinct in each sublattice within the asymmetric RSB region. Regarding that difference, we can ask how the RSB behavior is when quantum fluctuations are present in the GKS model.
+On the other hand, there is a particular situation for the classical GKS model (PGKS) in which the inter-sublattice interactions are only antiferromagnetic without disorder and the intra-sublattice spins only couple with disordered interactions.{{cite:b3466630-0883-4029-aec3-483c9b2b5b5f}}
+In this case, the RSB can first occur for a specific sublattice (let us say FORMULA ), while the other sublattice (FORMULA ) still presents RS solution.
+The sublattice FORMULA  can also show a RSB solution, but at a lower temperature.
+Now, the quantum tunneling is more pronounced at lower temperature.
+In this context, the RSB solution of the sublattice FORMULA  can be more affected by the quantum fluctuations than the sublattice FORMULA . In this case, could the sublattice FORMULA  present a stable RS solution for any finite temperature at the same time that the sublattice FORMULA  still shows a RSB solution when FORMULA ?
+That is an important point for the SG/AF problem because the solution of a particular sublattice also depends on the order parameters of the other sublattice.{{cite:859f6771-dfbf-45f6-93b1-766a8b8aa99b}}, {{cite:6de5ff49-0e14-49ca-a496-99520caf59a4}}
+Moreover, the frustration in the asymmetric RSB region could be changed if only the spins of the sublattice FORMULA  present RSB solution.
+The aim of this paper is to investigate the effects of a transverse magnetic field FORMULA  on a fermionic formulation for the GKS model where inter- and intra-sublattice SK-type interactions are considered.
+In special, we investigate
+the effects produced by the FORMULA  field on the frustration in the asymmetric RSB region for the case in which only the intra-sublattice interactions are disordered (PGSK model).
+The Parisi's scheme {{cite:6ddd8a55-a1f1-4e18-b798-6a4af0778f97}} of one-step RSB (1S-RSB) is used to study the non-trivial ergodicity breaking region. In this case, we check
+if the quantum fluctuations are strong enough to cause tunneling between the free energy barriers of the many degenerated thermodynamic states.
+The FORMULA  field breaks the symmetry between the sublattices in the GKS model.{{cite:6de5ff49-0e14-49ca-a496-99520caf59a4}} As a consequence, FORMULA  can favor frustration at the same time that it destroys the AF order, so the freezing temperature FORMULA  can increase with FORMULA .
+On the other hand, the FORMULA  field introduces a quantum spin flipping mechanism, which can suppress the magnetic orders leading their critical temperatures to QCPs.{{cite:dd4ff5e7-ed21-4b12-af04-2fc9d8b0490f}}
+Therefore, both magnetic fields produce effects that can compete on FORMULA  in this two-sublattice SG/AF problem.
+For example, in a previous fermionic version for the KS model in a transverse field (without intra-sublattice interaction),{{cite:8d3a4f86-1dfa-45ca-a159-ebd944f960cd}} results within the RS solution have shown that the effects produced by FORMULA  are dominant at low FORMULA . However, when FORMULA  enhances, the asymmetry between the sublattices becomes important and FORMULA  increases.
+This scenario can be even more complex when the intra-sublattice disordered interactions are considered. They could affect the FORMULA  behavior in the asymmetric RSB region. Furthermore,
+a first-order phase transition from the AF to the paramagnetic phase can raise when FORMULA  increases.{{cite:6de5ff49-0e14-49ca-a496-99520caf59a4}}
+Therefore, in this paper, we also study the interplay between disorder and magnetic fields (FORMULA , FORMULA ) in the SG/AF competition for the fermionic formulation of the GKS model in a transverse field within 1S-RSB solution.
+In this work, the hierarchical tree-structure
+is adopted in each sublattice
+to obtain a RSB solution.{{cite:6ddd8a55-a1f1-4e18-b798-6a4af0778f97}}
+Thus, the elements of the replica matrices for the sublattices FORMULA  and FORMULA  are parameterized following the Parisi scheme of 1S-RSB.
+These replica matrices are independent of each other for the PGKS model in which
+the two sublattices present independent 1S-RSB solutions.
+However, the replica matrices for the sublattices FORMULA  and FORMULA  are coupled for the GKS model.
+In this case, we adopt the approximation FORMULA  in order to decouple them, where FORMULA  (FORMULA  or FORMULA ) is the Parisi block-size parameter{{cite:6ddd8a55-a1f1-4e18-b798-6a4af0778f97}} for the sublattice FORMULA .
+In this approximation, the situation FORMULA  never occurs.
+Nevertheless, it still allows sublattice dependence for the behavior of the other 1S-RSB order parameters.
+An alternative RSB method based on the Parisi's scheme and a wave-like structure has been proposed in Ref. oppermann for the KS model without intra-sublattice disorder.
+It is the modulated RSB scheme that considers a possible asymmetry between FORMULA  and FORMULA  which is controlled by a variational parameter in the replica limit.
+However, this RSB scheme increases the numerical efforts to obtain the 1S-RSB results and it can only provide a very small improvement in the free energy compared with the Parisi scheme. Therefore, we do not use the modulated RSB scheme in the present GSK model, in which the intra-sublattice SK-type interactions add some difficulties when this RSB scheme is implemented.
+The partition function of the present work is computed with the path integral formalism in which the spin operators are represented by bilinear combinations of Grassmann variables as in Ref. alba2002.
+The 1S-RSB free energy is calculated within the static approximation (SA) that is used to treat the spin-spin correlation functions.{{cite:7c1d71e1-04b5-4d05-b0a1-2f2d8b662a95}}
+The SA deserves some comments. It is reasonable to obtain phase boundaries even at low temperature.{{cite:8522a617-578a-410c-8b9f-33b05be63278}}, {{cite:d2918032-cf5b-4704-8606-3024d2e7933d}}
+However, it can yield inaccurate quantitative results
+for the dynamical behavior of the correlation functions
+at very low temperature when FORMULA .
+Nevertheless, there are several recent papers{{cite:dd4ff5e7-ed21-4b12-af04-2fc9d8b0490f}}, {{cite:8d3a4f86-1dfa-45ca-a159-ebd944f960cd}}, {{cite:b2055c81-9094-4eaa-98de-3776e89fd338}}, {{cite:2161854d-3a02-4d28-b0a8-855078b9bf02}} adopting this particular approximation because of a lack of a suitable
+analytical method to go beyond the SA in the whole SG phase in the femionic formalism, in which the SG phase
+has also a shortcoming related to the RSB solution. Furthermore, when temperature decreases for small and intermediary values of FORMULA  in the one-lattice SG problem,{{cite:2161854d-3a02-4d28-b0a8-855078b9bf02}} the results produced by SA with 1S-RSB are in good qualitative agreement with that obtained by Trotter-Suzuki formalism in which numerical methods are used to treat the dynamic of the spin-spin correlations.{{cite:8dd804e4-dbeb-4afc-9ce8-20689d4a67af}}
+Moreover, a Landau-Ginzburg formalism has been proposed in Ref. rotores to analyze the SG of quantum rotors near the QCP. In this formalism, the RSB occurs in the SG phase at finite temperature FORMULA  and it is suppressed when FORMULA  for the region close to the QCP. The results with SA agree qualitatively with this RSB behavior when FORMULA  increases towards the QCP, in which the RSB effects become less pronounced.{{cite:2161854d-3a02-4d28-b0a8-855078b9bf02}}
+This paper is structured in the following way.
+In the next section, the model is introduced, and the 1S-RSB free energy is obtained. In section , numerical results for the 1S-RSB order parameters, free energy and phase diagrams showing the SG/AF competition in temperature versus parallel magnetic field are reported for several values of disorder and transverse magnetic field.
+The last section is left for summary and conclusions.
+
+General Formulation
+Let us consider a set of localized Ising spins at sites of two identical sublattices FORMULA  and FORMULA . The spins of same and distinct sublattices can interact with infinite-range random couplings. Transverse (FORMULA ) and parallel (FORMULA ) magnetic fields are coupled with spins of both sublattices. The model is represented by the Hamiltonian
+FORMULA 
+where the sums run over the FORMULA  sites of each sublattice FORMULA  (FORMULA  or FORMULA ).
+The inter- and intra-sublattice exchange interactions FORMULA  and FORMULA  are random variables that follow Gaussian distributions with mean values FORMULA  and FORMULA  and variances FORMULA  and FORMULA , respectively.
+The spin operators in Eq. (REF ) are defined in terms of fermion operators {{cite:dd4ff5e7-ed21-4b12-af04-2fc9d8b0490f}}:
+FORMULA 
+where FORMULA  gives the number of fermions at site FORMULA  with spin projection FORMULA  or FORMULA .
+FORMULA  and FORMULA  are the fermions creation and annihilation operators, respectively. In this representation,
+the operator FORMULA  has two magnetic eigenvalues
+and two nonmagnetic eigenvalues (empty and double occupied site).
+Therefore, there are two states that do not belong
+to the usual spin space.
+The present fermionic SG/AF problem admits these four states. However, the chemical potential FORMULA  is chosen to ensure the average occupation of one fermion per site.{{cite:6ba507ac-2200-4e01-9d34-e042601d1433}}
+Lagrangian path integral formalism with spin operators represented as anticommuting Grassmann field (FORMULA ) is used to treat this fermionic problem. {{cite:dd4ff5e7-ed21-4b12-af04-2fc9d8b0490f}}, {{cite:8d3a4f86-1dfa-45ca-a159-ebd944f960cd}} Therefore, the partition function is written as:
+FORMULA 
+with the action
+FORMULA 
+FORMULA  (FORMULA  is the temperature) and FORMULA , which corresponds to the half-filling situation.
+In Eq. (REF ), the Fourier decomposition of the time-dependent quantities is employed.
+The average over the quenched disorders is performed by means of replica method (FORMULA )
+with the standard Hubbard-Stratonovich transformations used to decouple different sites. Within the static ansatz, this procedure results in an effective single-site problem that involves saddle-point conditions for each
+sublattice
+magnetization FORMULA , replica diagonal spin-spin correlation FORMULA , replica off-diagonal elements FORMULA  which are related to the SG order parameters, and also fields FORMULA  that couple the sublattices.
+Therefore, the replicated partition function is
+FORMULA 
+where FORMULA  and FORMULA  are the replica indices running from 1 to FORMULA ,
+FORMULA 
+with
+FORMULA 
+and FORMULA  or FORMULA . In Eq. (REF ),
+FORMULA 
+FORMULA 
+FORMULA  is a Grassmann spinor, FORMULA 
+and FORMULA  are the Pauli matrices, and FORMULA  denotes fermionic Matsubara
+frequencies.
+The Parisi's scheme of one-step replica symmetry breaking (1S-RSB) is used to parametrize FORMULA  as{{cite:6ddd8a55-a1f1-4e18-b798-6a4af0778f97}}
+FORMULA 
+where FORMULA  gives the smallest integer which is greater than or equal to FORMULA .
+For a general case, when FORMULA  and FORMULA  are non-zero (GKS model), the Parisi block-size parameter FORMULA  is assumed to be equal to FORMULA 
+for both sublattices.
+This approximation is used in order to follow the standard Parisi scheme of RSB.
+However, the situation with FORMULA  and FORMULA  (PGKS model) is analyzed by taken FORMULA  and FORMULA 
+as independent
+parameters (FORMULA )
+in the next section.
+The parametrization (REF ) with FORMULA  is used to sum over the replica index.
+It produces quadratic terms in Eq. (REF ) that are linearized introducing new auxiliary fields in Eq. (REF ).
+The functional Grassmann integral is now performed, and the sum over the Matsubara
+frequencies can be evaluated like Ref. alba2002.
+This procedure results in the following expression to the 1S-RSB free energy:
+FORMULA 
+with
+FORMULA 
+where FORMULA , FORMULA , FORMULA  (FORMULA ),
+FORMULA 
+FORMULA 
+and FORMULA  (FORMULA ).
+The parameters FORMULA ,
+FORMULA , FORMULA , FORMULA , and FORMULA  are given by the extreme condition
+of free energy (REF ).
+The 1S-RSB solution of free energy (REF ) recovers the RS one (FORMULA  and FORMULA ) at temperature FORMULA  above the freezing temperature FORMULA .
+In this case, the stability against transversal fluctuations of the RS solution follows from the Almeida-Thouless analysis,{{cite:e0aeb681-0269-4d74-b19d-c5443214e98c}} which is extended to the two-sublattice problem.{{cite:859f6771-dfbf-45f6-93b1-766a8b8aa99b}}
+The FORMULA 
+is given by the higher temperature that satisfies the expression:
+FORMULA 
+where
+FORMULA 
+with FORMULA  in FORMULA .
+FIGURE 
+
+Results
+Numerical calculations for the set of saddle-point equations show different types of solutions. These depend on the values of various parameters of the model. For instance, in the absence of parallel magnetic field FORMULA , the paramagnetic (PM: FORMULA , FORMULA ),
+the spin glass (SG: FORMULA , FORMULA ) and the antiferromagnetic (AF: FORMULA , FORMULA ) solutions can be found.
+A mixed phase (SG+AF) can also be obtained when FORMULA  with RSB (FORMULA ) solution, which is described by the order parameter FORMULA .
+The presence of FORMULA  always induces the parameters FORMULA  and FORMULA . In this context, the PM solution is characterized by FORMULA  and FORMULA . The AF solution is found when FORMULA  with FORMULA . Particularly, the AF order is given by the staggered magnetization FORMULA  and FORMULA . The SG phase occurs when FORMULA  with RSB solution. The mixed phase is found when FORMULA  with FORMULA .
+We first present results for FORMULA . In this case, the order parameters as a function of FORMULA  are exhibited in Fig. (REF ) for
+a given degree of frustration FORMULA . In this work, the quantities FORMULA , FORMULA , FORMULA , FORMULA  and FORMULA  are in units of FORMULA . For numerical purposes FORMULA  and FORMULA .
+The order parameter FORMULA  appears continuously at the Neel temperature FORMULA  when FORMULA  decreases. The RSB occurs at FORMULA , in which FORMULA  becomes greater than zero. At this point, the staggered magnetization is non zero, and this (with FORMULA ) characterizes the mixed phase.
+The magnetization of each sublattice becomes weakly dependent on FORMULA  below FORMULA .
+Furthermore, when FORMULA , the two sublattices exhibit symmetric results for the order parameters,
+which are identical for any set of FORMULA , FORMULA , FORMULA  and FORMULA  that satisfies the same value of FORMULA .
+The transverse field FORMULA  decreases the values of the order parameters as well as the critical temperatures (see dashed lines of Fig. (REF )). Its effects are more pronounced at low temperature. However, it is not able to restore the RS solution for FORMULA  that is in agreement with Refs. trotter and zimmerprb.
+The free energy of 1S-RSB solution can be compared with the one of the RS solution in Fig. (REF ).
+The difference between these two approaches increases when FORMULA  decreases from FORMULA , and the entropy (FORMULA ) of the 1S-RSB solution is positive for the range of temperature analyzed.
+FIGURE 
+The results for FORMULA  can depend on the set of parameters FORMULA , FORMULA , FORMULA  and FORMULA .
+However, it is not our intention to do an exhaustive study of all possible configuration of interactions for the model (REF ).
+Nevertheless, we have chosen a specific degree of frustration in which the role of each parameter is analyzed.
+In this case, the ratio FORMULA  remains the same for all results.
+For example, we analyze the behavior of the RSB solution and the phase diagrams when the intra-sublattice ferromagnetic average coupling FORMULA  is changed, or when the intra-sublattice disorder (FORMULA ) increases.
+Moreover, the main focus of the work is to study the effects of quantum fluctuations on the asymmetric RSB region.
+For this purpose, we consider two types of coupling: the first one (GKS model) admits SK-type interactions between spins of same and distinct sublattices (FORMULA ). The second one (PGKS model) considers only an antiferromagnetic coupling (FORMULA ) between the sublattices
+with intra-sublattice SK-type interactions (FORMULA ).
+Asymmetric RSB for FORMULA  and FORMULA  (GKS)
+Results of the 1S-RSB order parameters are discussed for the first type of coupling in the asymmetric RSB region.
+To do so, we study
+three distinct configurations of inter- and intra-sublattice interactions that satisfy the same FORMULA : (i) FORMULA  and FORMULA , (ii) FORMULA , FORMULA  and FORMULA , and (iii) FORMULA , FORMULA  and FORMULA .
+In these three cases, we can analyze the main effect cased by increasing FORMULA  (consider cases (i) and (ii)) and by increasing FORMULA  (consider cases (i) and (iii)).
+FIGURE 
+FIGURE 
+The FORMULA -dependence of the order parameters FORMULA , FORMULA , FORMULA  and FORMULA  is reported in Fig. (REF ) for FORMULA  and FORMULA . The sequence of panels (a), (b) and (c) in Fig. (REF ) represents the cases (i), (ii) and (iii), respectively.
+The FORMULA  field breaks the symmetry between the sublattices in the region where FORMULA .
+However, the results for both sublattices are symmetric at high values of FORMULA  (FORMULA ).
+An important point is the FORMULA -dependence of FORMULA .
+For instance, FORMULA  can increase with FORMULA  in the mixed phase, which characterizes an enhancing of the RSB.
+This FORMULA  odd behavior can be associated qualitatively with the FORMULA -dependence of the average internal field FORMULA  (FORMULA ) that acts on spins of sublattice FORMULA .
+For example, there is a region at small FORMULA  where the absolute value of magnetization FORMULA  decreases with FORMULA , while FORMULA  has a weaker dependence on FORMULA  than
+FORMULA  (see Fig. (REF )). As a consequence, FORMULA  decreases with FORMULA  and FORMULA  enhances.
+Now, FORMULA  is also related to FORMULA . When FORMULA  increases as in case (ii) (see Fig. (REF -b)), the region with solution FORMULA  decreases. The order parameters can show a discontinuity when FORMULA  crosses from the FORMULA  to the FORMULA  solution, where
+FORMULA  jumps to a higher value.
+On the other hand, the relations in FORMULA  are not directly affected by
+the intra-sublattice disorder FORMULA .
+However, FORMULA  is higher within the mixed phase when FORMULA  increases as it is shown by comparing cases (i) and (iii) in Figs. (REF -a) and (REF -c).
+For instance, the random internal field FORMULA , which acts on the sublattice FORMULA , also depends on the variance FORMULA  (see Eq. (REF )), which enhances (decreases) for the sublattice FORMULA  (FORMULA ) in the asymmetric RSB region when FORMULA  increases.
+Consequently, FORMULA  (FORMULA ) can increase (decrease) with FORMULA  (Fig. (REF -c)).
+Therefore, the behavior of the 1S-RSB solution
+is also affected by the relation FORMULA .
+In this case, the difference between the degree of RSB of the two sublattices is increased
+with FORMULA , but the RSB always occurs in both sublattices simultaneous for FORMULA .
+In the next section, this result can be compared with the limit case FORMULA .
+FIGURE 
+Figure (REF ) shows effects of quantum tunneling on the asymmetric RSB region.
+It exhibits the order parameters versus FORMULA  for the case (i) with FORMULA , FORMULA , FORMULA  and FORMULA .
+The FORMULA  field decreases the values of order parameters FORMULA  and FORMULA , but
+the RSB still occurs at the same critical temperature for both sublattices. It means that the quantum fluctuations act with the same intensity in the RSB solution of sublattices FORMULA  and FORMULA , which still remain asymmetric.
+Furthermore,
+the results suggest that the quantum tunneling is not able to restore the RS solution of neither of the sublattices, even in the asymmetric RSB region.
+The quantum effects on the order parameters for cases (ii) and (iii) are qualitatively the same as those obtained in case (i).
+
+Asymmetric RSB for FORMULA  and FORMULA  (PGKS)
+At this point, we restrict our study to the second type of coupling, in which the inter-sublattice exchange interactions are only antiferromagnetic without disorder and the intra-sublattice interactions are still disordered (FORMULA , FORMULA  and FORMULA ).
+In this case, the structures of the replica matrices FORMULA  and FORMULA  are independent of each other.
+The Parisi's scheme of RSB is applied in the two sublattices without any approximation on FORMULA . Therefore, the parameterization (REF ) is used to obtain the 1S-RSB free energy as in Eq. (REF ). However,
+the parameters FORMULA  and FORMULA  are now both taken as variational parameters
+of the free energy
+FORMULA 
+with FORMULA  defined in Eq. (REF ).
+In this approximation FORMULA  in the asymmetric RSB region.
+FIGURE 
+The RSB appears in both sublattices simultaneously with the same results as those obtained in Eq. (REF ) in the symmetric region (FORMULA  or FORMULA ).
+However, in the asymmetric region (FORMULA  and FORMULA ),
+the RSB occurs first at the sublattice FORMULA , while the sublattice FORMULA  can still present RS solution as it is shown in Fig. (REF ) for the particular interaction: FORMULA , FORMULA  and FORMULA  (case (iv)).
+Nevertheless, both sublattices present RSB solution at lower temperature when FORMULA .
+In Fig. (REF ),
+the mixed phase is characterized when
+the replica symmetry is broken in the sublattice FORMULA .
+However, the spin freezing effects are stronger when the two sublattices present RSB solution. For instance,
+the staggered magnetization becomes less dependent on FORMULA  for the region where the sublattices FORMULA  and FORMULA  have RSB solution (see Fig. (REF )).
+Therefore, we can identify two distinct asymmetric RSB regions: one with low number of frustrated spins where only the set of spins in the sublattice FORMULA  exhibits RSB solution; another with the RSB solution present in the two sublattices. It occurs because
+the internal fields that act on the sublattices FORMULA  and FORMULA  are different.
+In addition, the sublattices can exhibit frustration independently (FORMULA ).
+FIGURE 
+The free energies given by Eqs. (REF ) and (REF ) are compared in the insert of Fig. (REF ).
+The difference between them is very small if it is compared with the difference obtained by the RS and the RSB solution with FORMULA  (see Fig. (REF )).
+In this sense, we could use the approximation FORMULA  for the 1S-RSB solution with good results within the asymmetric RSB region for the case with FORMULA .
+Considering FORMULA , the FORMULA -dependence of the 1S-RSB order parameters is exhibited in Fig. (REF ) for two values of temperature: FORMULA  and FORMULA .
+The RSB occurs in both sublattices at FORMULA .
+When FORMULA  increases, FORMULA  enhances and FORMULA  decreases in the asymmetric RSB region.
+At FORMULA  (Fig. (REF -a)), FORMULA  becomes zero within an FORMULA  range where only the sublattice FORMULA  presents RSB solution. Therefore, the FORMULA  field can decrease the temperature in which the sublattice FORMULA  exhibits RSB.
+However, the effects of FORMULA  are not strong enough to produce a stable RS solution for a particular sublattice at lower temperatures,
+as it is shown in Fig. (REF -b) for FORMULA  where FORMULA  and FORMULA  are greater than zero in the mixed phase.
+FIGURE 
+The effects of FORMULA  on the order parameters are shown in Fig. (REF ) for FORMULA , FORMULA  and FORMULA .
+The RSB region of the sublattice FORMULA  decreases faster than that of the sublattice FORMULA  when FORMULA  is applied in the asymmetric RSB region. Hence,
+for FORMULA  sufficiently high (FORMULA ), the RSB solution appears only in sublattice FORMULA , while sublattice FORMULA  presents RS solution in all range of FORMULA  analyzed in Fig. (REF -b).
+Although these results (FORMULA ) are limited by the static approximation, which is expected to yield inaccurate quantitative results at very low temperature, they could provide some qualitative evidences about the RSB behavior at least for FORMULA .{{cite:2161854d-3a02-4d28-b0a8-855078b9bf02}}
+For example, when the strength of FORMULA  is enhanced, quantum fluctuations assume a relevant role inducing tunneling between the metastable valleys that characterize the SG free energy landscape.
+It could reduce the importance of the RSB, but it is not able to restore the RS solution in the sublattice FORMULA  for instance.
+The quantum fluctuations decrease the region where both sublattices present RSB solution.
+However, they can increase
+the region where only sublattice FORMULA  presents RSB. In this case, the quantum fluctuations can decrease the number of frustrated sites in the asymmetric RSB region.
+
+Phase Diagrams
+After a detailed study of the asymmetric RSB region (mixed phase),
+we analyze phase diagrams FORMULA  versus FORMULA  for the two types of coupling previously discussed.
+The main effects of the quantum fluctuations on the phase boundaries and the role of intra-sublattice disordered interactions on phase diagrams are presented.
+First, we consider the thermodynamic behavior of the phase boundaries within a region where the RS solution is stable (at FORMULA ).
+In this case, analytical expressions for the free energy and
+the order parameters are achieved by assuming FORMULA  with FORMULA  (FORMULA  in Eq. REF ).
+The transition from the PM to the AF order can be characterized by the onset of the staggered magnetization FORMULA .
+If this transition is continuous, we can expand the set of saddle-point equations in powers of FORMULA . After some lengthy calculations, we find a compact result:
+FORMULA 
+where the coefficients FORMULA  and FORMULA  are defined in Appendix .
+A second-order phase transition from the PM to the AF order is found when the condition FORMULA , FORMULA  and FORMULA  is obtained.
+Tricritical points can be found by the condition FORMULA  and FORMULA  with FORMULA .
+We do not calculate the coefficient FORMULA  and so we will not check the condition FORMULA .
+The phase diagrams for interactions as cases (i), (ii), (iii) and (iv) are shown in Figs. (REF -a), (REF -b), (REF -c) and (REF -d), respectively.
+They exhibit a general feature: the AF order is destroyed by FORMULA  at the same time that the mixed phase enhances when FORMULA  increases toward FORMULA .
+Here, FORMULA  is the value of the parallel magnetic field in which FORMULA  meets FORMULA .
+For FORMULA , the system behaves as in the one-lattice model, where
+FORMULA  decreases monotonically with FORMULA .{{cite:2379432f-c9b7-40eb-a92c-775950ef5d07}}
+Particularly, for the case (i), the phase boundaries are second-order and the phase diagram (Fig. (REF -a)) is similar to those one obtained in Ref. zimmer for the KS model.
+The role of the intra-sublattice parameters
+FORMULA  and FORMULA  on the phase diagrams can be analyzed by comparing the cases (i) and (ii) (Figs. (REF -a) and (REF -b)), and the cases (i), (iii) and (iv) (Figs. (REF -a), (REF -c) and (REF -d)), respectively.
+In case (ii), FORMULA  is increased at the same time that FORMULA  decreases in order to keep FORMULA  (FORMULA ) constant.
+As a consequence, the AF region reduces and a first-order phase transition appears (see Fig (REF -b)).
+A tricritical point is obtained by expansion (REF ). The first-order boundary is located choosing the solution which minimizes the free energy.
+The transition from the RS solution to the RSB solution has a discontinuity at FORMULA , where FORMULA  jumps when it crosses from the region FORMULA  to FORMULA .
+In this case, a discontinue transition from the AF order to the SG phase raises when FORMULA  increases.
+Particularly for FORMULA , the average internal field FORMULA  (FORMULA ) that acts on the sublattice FORMULA  is directly affected by the relation between FORMULA  and FORMULA .
+The FORMULA  in which the PM solution becomes stable is achieved with smaller FORMULA  when
+FORMULA  enhances.
+Furthermore, the FORMULA  for a stable PM solution can be obtained with an FORMULA  in which the AF solution is still energetically favorable (see inserts of Fig. (REF -b)),
+where the first-order transition occurs.
+There are numerical evidences within 1S-RSB ansatz which indicate that the mixed/SG phase transition can also be first-order (see Fig. (REF -b)).
+Therefore, a first-order transition can occur when FORMULA  is sufficiently large.
+The intra-sublattice disorder also affects the effective AF interaction between the two sublattices as we can see by comparing Fig. (REF -a) with Figs. (REF -c) and (REF -d).
+For instance, the AF region reduces when the FORMULA  increases at the same time that FORMULA  decreases to keep FORMULA  constant.
+Thus, a small value of FORMULA  is able to destroy the AF order.
+Besides,
+as shown in previous sections, the degree of RSB depends on the ration FORMULA .
+For example, FORMULA  increases with FORMULA  in the mixed phase when FORMULA .
+Consequently, the derivative FORMULA  is higher in the AF/mixed phase transition when FORMULA  increases (see Figs. (REF -c) and (REF -d)).
+Case (iii) shows a phase diagram similar to that one in case (iv). However, the RSB properties of these two cases are very distinct as it has been shown in sections (REF ) and (REF ).
+A first-order phase transition also appears for the cases (iii) and (iv).
+However, different from Fig. (REF -b), the FORMULA  in the asymmetric region (AF/mixed phase transition) is higher than in the symmetric region (PM/SG transition) for FORMULA  close to FORMULA . Consequently, a discontinue transition from the mixed phase to the PM phase can occur with the increase of FORMULA  (Figs. (REF -c) and (REF -d)).
+Therefore, the intra-sublattice ferromagnetic average interaction can introduce a first-order phase transition in this two-sublattice problem. On the other hand, the intra-sublattice SK-type of disorder changes the behavior of FORMULA  that presents a higher increment with FORMULA  in the AF order when this disorder enhances.
+The internal field is even more complex when FORMULA .
+The critical lines and the tricritical points are decreased when FORMULA  increases, as we can see in Fig. (REF ) for phase diagrams with FORMULA .
+The quantum effects are more pronounced at lower temperatures.
+Particularly, the behavior of FORMULA  is changed by the quantum fluctuations. In this case, the derivative FORMULA  is increased by FORMULA  when FORMULA  is close to FORMULA . The region of discontinue transition from the AF order to the SG phase (Fig. (REF -b)) and from the mixed phase to the PM phase (Figs. (REF -c) and (REF -d)) are also increased by FORMULA . This FORMULA  behavior occurs because of the competition between quantum fluctuations (dominant at lower FORMULA ) and the asymmetry caused by FORMULA  (important near the FORMULA ) that depends on the intra- and inter-sublattices disordered interactions as previously shown.
+
+Summary and Conclusions
+We studied a fermionic version for the two-sublattice
+Ising SG model in a transverse (FORMULA )
+and a parallel (FORMULA ) magnetic fields.
+This model allows SK-type interactions for spins of same sublattices and between spins of distinct sublattices. The problem is formulated in a Grassmann path integral formalism within the static approximation.
+The disorder is treated by the replica trick with Parisi's scheme of one-step replica symmetry breaking (1S-RSB).
+A given degree of frustration FORMULA  is used to analyze the main role of each parameter of the model.
+Particularly, we studied the effects of the quantum fluctuations on the asymmetric RSB region and on phase diagrams.
+For FORMULA , the two sublattices show symmetric results for the 1S-RSB order parameters, which are identical for all configuration of intra- and inter-sublattices interactions that satisfy the same FORMULA . However, the FORMULA  field introduces an asymmetric RSB region, in which the sublattices exhibit different 1S-RSB results that depend on the configuration of intra- and inter-sublattices disorders.
+For instance, the degree of RSB of sublattice FORMULA  (FORMULA ) is higher than FORMULA .
+This difference and the value of FORMULA  increase when the intra-sublattice disorder (FORMULA ) enhances.
+Nevertheless, for a general case, the RSB occurs at the same temperature for both sublattices when the inter-sublattice interactions are disordered (FORMULA ).
+In addition, the staggered magnetization has a weak dependence on FORMULA  in the mixed phase for 1S-RSB solution.
+Results with FORMULA  suggest that the quantum tunneling decreases the effects of the RSB for both sublattices, but it is not able to restore the RS solution at FORMULA .
+This result is in agreement with that one of fermionic one-lattice quantum SG problem.{{cite:2161854d-3a02-4d28-b0a8-855078b9bf02}}
+For a particular case with intra-sublattice disordered interactions and only antiferromagnetic coupling
+between the sublattices (FORMULA ), the RSB appears in each sublattices independently. The sublattice FORMULA  can present RSB solution while the sublattice FORMULA  still presents RS solution in the asymmetric RSB region. However, the ground state of both sublattices always occurs with RSB solution for FORMULA .
+Nevertheless, the results within 1S-RSB suggest that the frustration in the mixed phase is changed by the FORMULA  field. In this case, the quantum fluctuations affect with more intensity the RSB region of the sublattice FORMULA  than the sublattice FORMULA . The sublattice FORMULA  can exhibit a stable RS solution at any finite temperature with the RSB solution present in the sublattice FORMULA  for a strong enough FORMULA  within the asymmetric RSB region.
+The phase diagrams
+show a general feature in this work: a transition from the PM to the AF order then to a RSB region when temperature FORMULA  decreases for low FORMULA . The RSB occurs at the freezing temperature FORMULA  with a finite staggered magnetization FORMULA  that characterizes a mixed phase.
+A transition from the PM to the SG phase (RSB solution with FORMULA ) is observed for high FORMULA .
+The FORMULA  field destroys the AF phase, but it can favor the RSB region within a certain range.
+In this range, FORMULA  increases with FORMULA . The intra-sublattice interaction affects the FORMULA  behavior that presents a higher increase with FORMULA  when the intra-sublattice disorder enhances. The presence of an intra-sublattice ferromagnetic long range interaction can introduce a first-order phase transition from the RS to the RSB solution when FORMULA  increases.
+The FORMULA  field always suppresses the magnetic orders.
+However, its effects on FORMULA  are more evident at lower values of FORMULA , where the asymmetry between the sublattices is small.
+
+Expansion for the Neel Temperature
+The continuous phase transition from the PM phase (FORMULA )
+to the AF order (FORMULA ) can be obtained by expanding the saddle-point equations
+in powers of FORMULA .
+After some calculations, we find expansion (REF )
+where
+FORMULA 
+and
+FORMULA 
+with
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA , FORMULA , FORMULA , FORMULA  and FORMULA . In Eqs. (REF ), (REF ), (REF ) and (REF )
+FORMULA 
+where FORMULA  or 3, and
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+with FORMULA  and FORMULA  defined in Eq. (REF ) for FORMULA  in the RS solution (FORMULA ) and the PM phase (FORMULA , FORMULA  and FORMULA ).
+This work is supported by the Brazilian agency CNPq.

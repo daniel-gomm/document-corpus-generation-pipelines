@@ -1,0 +1,637 @@
+
+
+A note for Gromov's distance functions on the space of mm-spaces
+Kei Funano
+A note for Gromov's distance functions on the space of mm-spaces
+Kei Funano
+Mathematical Institute, Tohoku University, Sendai 980-8578, JAPANsa4m23@math.tohoku.ac.jp
+
+September 7, 2020
+mm-space, box distance function, observable distance function
+                            Comments and questions are welcome.
+The box distance function
+Definition 1.1 Let FORMULA  and FORMULA  be a measure
+space with FORMULA . For two maps FORMULA , we define a number FORMULA 
+as the infimum of FORMULA  such that there exists a
+measurable subset FORMULA  of measure
+at least FORMULA  satisfying
+FORMULA  for any FORMULA .
+
+It is easy to see that this is a distance function on the set of all
+functions on FORMULA , and the two distance functions FORMULA  and
+FORMULA  are equivalent to each other for any
+FORMULA .
+An mm-space is a triple FORMULA , where FORMULA  is a complete separable
+metric on a set FORMULA  and FORMULA  a finite Borel measure on FORMULA . Two mm-spaces are isomorphic to each other if
+there is a measure preserving isometry between the supports of their
+measures. We denote by FORMULA  the Lebesgue measure on FORMULA .
+Definition 1.2 (parameter) Let FORMULA  be an mm-space and
+FORMULA . Then, there exists a Borel measurable map
+FORMULA  with FORMULA , where
+FORMULA  stands for the push-forward
+measure of FORMULA  by FORMULA . We call FORMULA  a
+parameter of FORMULA .
+
+Note that if the support of FORMULA  is not a one-point, then its
+parameter is not unique.
+Definition 1.3 (Gromov's box distance function) If two mm-spaces FORMULA  satisfy FORMULA , we define
+FORMULA 
+where the infimum is taken over all parameters
+FORMULA , and
+FORMULA  is defined by FORMULA  for FORMULA .
+If FORMULA , putting FORMULA 
+, we define
+FORMULA 
+where FORMULA .
+
+We denote by FORMULA  the space of all isomorphic class
+of mm-spaces. FORMULA  is a distance function on FORMULA  for any FORMULA  (See Theorem REF ). Note that the distances FORMULA  and FORMULA  are
+equivalent to each other for distinct FORMULA .
+The following two lemmas are easy to prove, so we omit the proof.
+Lemma 1.4 Assume that two mm-spaces FORMULA  satisfy FORMULA  and a Borel measurable map FORMULA  satisfies
+FORMULA . Then, both FORMULA 
+and FORMULA  are parameters, and the inequality
+FORMULA 
+holds.
+
+Lemma 1.5 Assume that two mm-spaces FORMULA  satisfy FORMULA  and let FORMULA . Then, we have
+FORMULA 
+
+The following lemma is the key to prove the triangle inequality for FORMULA .
+Lemma 1.6 Let FORMULA  be a mm-space and FORMULA  be two parameters. Then, for any FORMULA ,
+there exist two Borel measurable maps FORMULA  such that FORMULA , and
+FORMULA 
+To prove the lemma, we shall approximate FORMULA  by a
+countable space. For any FORMULA , there exists a sequence FORMULA  of pairwise disjoint Borel subsets of FORMULA  such that
+FORMULA  and FORMULA  for each FORMULA . Fix a point FORMULA 
+for each
+FORMULA . We define
+a distance between FORMULA  and FORMULA  by FORMULA , and a Borel measure FORMULA  on FORMULA  by FORMULA .
+Define two maps FORMULA  and FORMULA  by FORMULA  for FORMULA  and FORMULA  for FORMULA . It is easy to see that FORMULA  and
+FORMULA . Put FORMULA  for FORMULA , and FORMULA  for FORMULA , FORMULA .
+We construct a Borel measurable map FORMULA  as follows: There is a sequence FORMULA  of compact subsets of FORMULA  such that
+FORMULA  and FORMULA . Take a Borel measurable map FORMULA  such that
+FORMULA . For each
+FORMULA , we find a sequence FORMULA  of pairwise disjoint open intervals such that
+FORMULA . Take Borel measurable
+maps FORMULA  and FORMULA , FORMULA , such that FORMULA 
+for FORMULA . By modifying each FORMULA , we may assume
+that FORMULA .
+Then we define a Borel measurable map FORMULA  by FORMULA  if FORMULA . Put FORMULA  for FORMULA  and FORMULA  for FORMULA . It is obvious that this map FORMULA  satisfies
+FORMULA . In this way,
+we find a sequence of Borel measurable maps FORMULA  such that FORMULA  for each FORMULA .
+Define a Borel measurable map FORMULA  by FORMULA  for FORMULA  and FORMULA  for FORMULA . From the above construction, it follows that FORMULA  and FORMULA . In the same way, we find a Borel
+measurable map FORMULA  such that FORMULA  and FORMULA . Therefore, by using Lemma REF , we have
+FORMULA 
+This completes the proof.
+
+Lemma 1.7 For any FORMULA , FORMULA  satisfies the triangle inequality.
+Let FORMULA  be mm-spaces and
+put FORMULA .
+Case 1 FORMULA .
+
+Let FORMULA  be any parameters. By virtue of Lemma REF , for any FORMULA , there exists two Borel measurable maps FORMULA 
+such that FORMULA , and
+FORMULA 
+Applying Lemma REF , we get
+FORMULA 
+which shows FORMULA .
+Case 2 FORMULA .
+
+If FORMULA , by Lemma
+REF , we have
+FORMULA 
+If FORMULA , we have
+FORMULA 
+Case 3 FORMULA .
+
+If FORMULA , we have
+FORMULA 
+If FORMULA , applying Lemma REF , we get
+FORMULA 
+
+FORMULA  directly implies that
+FORMULA 
+Thus, we obtain FORMULA .
+Case 4 FORMULA .
+
+If FORMULA , by using Lemma REF , we have
+FORMULA 
+If FORMULA , by Lemma REF , we get
+FORMULA 
+We prove the same way for the case of FORMULA . This completes the proof of Lemma REF .
+
+Let FORMULA  be a mm-space and FORMULA  be the set of all real FORMULA  matrices. Then we define a Borel measurable map
+FORMULA  by FORMULA , and a Borel measure on FORMULA  by
+FORMULA .
+Theorem 1.8 (mm-Reconstruction theorem, {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) If two
+mm-spaces FORMULA  have FORMULA  for all FORMULA ,
+then FORMULA  and FORMULA  are isomorphic to each other.
+
+A. M. Vershik gave the another proof of the reconstruction thereom in
+{{cite:45e2f4b5-559d-47f1-8d01-308d97a4ee17}}. We also refer to {{cite:bc1d4b34-6379-4800-8841-3c3131a1cd53}} for his proof. In {{cite:bc1d4b34-6379-4800-8841-3c3131a1cd53}}, T. Kondo generalized
+the reconstruction theorem to the space of Borel probability measures
+on FORMULA .
+Lemma 1.9 Let FORMULA  be a mm-space, and FORMULA  be a parameter of FORMULA . We set FORMULA . Then, we have FORMULA  for all FORMULA .
+Let FORMULA  be a Borel measurable map defined by FORMULA . Obviously, FORMULA . Therefore, for
+any Borel subset FORMULA , we obtain
+FORMULA 
+This completes the proof.
+
+Theorem 1.10 (Gromov, cf. {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) For any FORMULA , FORMULA  is a distance
+fuction on FORMULA .
+Since FORMULA  satisfies the triangle
+inequality, we only prove that FORMULA 
+implies FORMULA . Supposing that FORMULA ,
+we shall show FORMULA  for any FORMULA . Then, by Theorem REF , we get FORMULA .
+Since FORMULA , there exist a sequence FORMULA  of parameters of FORMULA 
+and a sequence FORMULA 
+of parameters of FORMULA  such that FORMULA  as FORMULA . Hence, there exist
+a sequence FORMULA  of
+positive numbers and a sequence FORMULA  of Borel subsets of FORMULA  such
+that FORMULA  as FORMULA ,
+FORMULA , and
+FORMULA  for any FORMULA . Let FORMULA  be an
+arbitrary open set and denote by FORMULA  the
+usual Euclidean distance on FORMULA , that is,
+FORMULA 
+
+Put
+FORMULA 
+
+We take FORMULA  such that
+FORMULA  for any FORMULA .
+Claim 1.11 For any FORMULA , we
+have FORMULA .
+Take any FORMULA . If FORMULA , then for any FORMULA  we have
+FORMULA 
+which implies that
+FORMULA . Hence, we obtain
+FORMULA . This completes the proof of the claim.
+
+Put
+FORMULA 
+and
+FORMULA 
+and let FORMULA .
+Combining Lemma REF  and Claim REF , for any FORMULA  we have
+FORMULA 
+
+In the above inequality, let first FORMULA  and next FORMULA . Then we get FORMULA . The same argument shows that
+FORMULA , which yields FORMULA . This completes the proof of Theorem REF .
+
+
+The observable distance function
+For a measure space FORMULA  with FORMULA , we denote by
+FORMULA  the space of all functions on FORMULA . Given
+FORMULA  and FORMULA , we put
+FORMULA 
+Note that this FORMULA  is a distance function on FORMULA  for any FORMULA  and its topology on
+FORMULA  coincides with the topology of the
+convergence in measure for any FORMULA . Also, the distance functions
+FORMULA  for all FORMULA  are mutually equivalent.
+We recall that the Hausdorff distance between two closed
+subsets FORMULA  and FORMULA  in a metric space FORMULA  is defined by
+FORMULA 
+where FORMULA  is a closed FORMULA -neighborhood of FORMULA .
+Let FORMULA  be a measure space with FORMULA . For a
+semi-distance function FORMULA  on FORMULA , we indicate by FORMULA  the space of
+all 1-Lipschitz functions on FORMULA  with respect to FORMULA . Note that
+FORMULA  is a closed subset in
+FORMULA  for any FORMULA .
+Definition 2.1 For FORMULA  and two semi-distance functions FORMULA  on FORMULA , we define
+FORMULA 
+where FORMULA  stands for the Hausdorff distance
+function in  FORMULA
+
+This FORMULA  is actually a distance function on the space of all
+semi-distance functions on
+FORMULA  for all FORMULA , and the two distance functions FORMULA  and
+FORMULA  are equivalent to each other for any
+FORMULA .
+Lemma 2.2 For any two semi-distance functions FORMULA  on FORMULA , we have
+FORMULA 
+For any FORMULA  with FORMULA , there exists a measurable subset FORMULA  such that FORMULA  and FORMULA  for any
+FORMULA . Given arbitrary FORMULA , we
+define FORMULA  by FORMULA . We see
+easily that FORMULA  and FORMULA  for any FORMULA . Taking any FORMULA , we have
+FORMULA 
+Therefore, we get FORMULA , which implies FORMULA . Similary, we also have
+FORMULA , which yields FORMULA . This completes the proof.
+
+Definition 2.3 (Observable distance function) If two mm-spaces FORMULA  satisfy FORMULA , we define
+FORMULA 
+where the infimum is taken over all parameters
+FORMULA . If FORMULA , putting FORMULA , we define
+FORMULA 
+
+FORMULA  is a distance function on FORMULA  for any FORMULA 
+(See Theorem REF ).
+Note that the distance functions FORMULA  and
+FORMULA  are equivalent to each
+other for any FORMULA .
+The proofs of following four lemmas are easy.
+Lemma 2.4 For any parameter FORMULA  of FORMULA , we have
+FORMULA 
+
+Lemma 2.5 Assume that two mm-spaces FORMULA  satisfy FORMULA  and a Borel measurable map
+FORMULA  satisfies FORMULA . Then, we have
+FORMULA 
+
+Lemma 2.6 Assume that two mm-spaces FORMULA  satisfy FORMULA  and let FORMULA . Then, we have
+FORMULA 
+
+Lemma 2.7 Let X be a mm-space and FORMULA  be two parameters. Then, for any FORMULA , there
+exist two Borel measurable maps FORMULA  such that FORMULA , FORMULA , and
+FORMULA 
+
+Theorem 2.8 (Gromov, cf. {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) For any FORMULA , FORMULA  is a distance function on
+FORMULA .
+Combining Lemma REF , REF , and
+REF , we see that FORMULA  satisfies the triangle inequality
+in the same way of the proof of Lemma REF .
+To prove “FORMULA ”, we shall approximate
+each FORMULA  and FORMULA  by finite spaces. Take an arbitrary FORMULA . Then, there exists sequences FORMULA , FORMULA  of pairwise disjoint Borel subsets of FORMULA , FORMULA  such that
+ FORMULA
+FORMULA  and FORMULA  for any FORMULA ,
+ FORMULA
+FORMULA  and FORMULA  for any FORMULA .
+
+Put FORMULA . Then, there exists FORMULA  such that
+FORMULA 
+Since FORMULA , there exist a sequence FORMULA  of positive numbers and sequences FORMULA , FORMULA  of parameters of FORMULA , FORMULA  such that
+FORMULA  and FORMULA  as FORMULA . For each FORMULA , we fix
+points FORMULA  and FORMULA . Define a function
+FORMULA  by
+FORMULA  for each FORMULA . From Lemma REF , we have
+FORMULA . Hence, there
+exists FORMULA  such that FORMULA . Putting
+FORMULA 
+we get FORMULA . For
+each FORMULA , we define a function
+FORMULA  by
+FORMULA . By the same
+argument as above, there exists FORMULA  such that FORMULA , where
+FORMULA 
+
+So, putting
+FORMULA 
+we obtain FORMULA .
+For any FORMULA , there exist FORMULA  such
+that
+FORMULA 
+Since FORMULA  and FORMULA , we have
+FORMULA 
+We also get FORMULA  by FORMULA . Therefore,
+we obtain
+FORMULA 
+Since FORMULA  and FORMULA ,
+we have FORMULA  and FORMULA , and thus FORMULA . Therefore, we obtain
+FORMULA 
+A similar argument shows that
+FORMULA 
+Hence, we get
+FORMULA 
+Therefore, we obtain
+FORMULA 
+So, we get FORMULA  and FORMULA . This
+completes the proof.
+
+Modifying the proof of Theorem REF , we get the following
+corollary:
+Corollary 2.9 For any two mm-spaces FORMULA  and FORMULA , we have
+FORMULA 
+
+We also refer to {{cite:af94f150-ac1b-4f79-8e39-4fa52f03ed66}}.
+
+Another natural method
+Let FORMULA  and FORMULA . A map from an mm-space to a metric space, say
+FORMULA  is called FORMULA -Lipschitz up to  FORMULA if
+FORMULA 
+for all FORMULA  in a Borel subset FORMULA  with
+FORMULA .
+Proposition 3.1 (cf. {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) Let FORMULA , FORMULA  be mm-spaces
+and FORMULA . Let FORMULA  and FORMULA 
+a FORMULA -Lipschitz up to FORMULA  Borel merasurable map and
+assume that FORMULA  as FORMULA  and the sequence FORMULA  converges weakly to
+FORMULA . Then, the sequence FORMULA  has a
+FORMULA -convergent subsequence.
+Without loss of generality, we may assume that FORMULA  and FORMULA .
+By choosing a subsequence, we have
+FORMULA . From the
+assumption, there exists a Borel subset FORMULA  such that
+FORMULA  and FORMULA  for any
+FORMULA . Put FORMULA . Since
+FORMULA 
+we have FORMULA . Take a countable dense subset FORMULA .
+Claim 3.2 The sequence FORMULA  has a
+convergent subsequence.
+The proof is by contradiction. If the sequence FORMULA  has no convergent subsequence, then the
+subset FORMULA  is a closed subset in
+FORMULA , especially, FORMULA  is
+complete. From the assumption, this set FORMULA  is not
+compact. Hence, FORMULA  is not totally bounded, that is, there exists
+FORMULA  such that FORMULA  has no finite 2FORMULA -net. Therefore, by
+choosing a subsequence, we get FORMULA  for any FORMULA  with FORMULA . Take
+FORMULA  such that FORMULA  and FORMULA  for any FORMULA . Since
+FORMULA 
+and FORMULA 
+converges weakly to FORMULA , we have
+FORMULA 
+and
+FORMULA 
+for any FORMULA . For any FORMULA , there exists
+FORMULA  such that
+FORMULA 
+Take FORMULA  such that
+FORMULA 
+and
+FORMULA 
+for any FORMULA . Hence, for any FORMULA  we
+have
+FORMULA 
+which implies that
+FORMULA 
+ Fix
+FORMULA  with FORMULA . Since FORMULA , we get FORMULA  for any FORMULA  and for any suffieciently large FORMULA . Therefore, we
+get
+FORMULA 
+for any suffieciently large FORMULA . Hence, we
+obtain
+FORMULA 
+which yields FORMULA . This is a contradition, since FORMULA . This completes the proof of the claim.
+
+By virtue of Claim REF  and the diagonal argument, we have
+that FORMULA  is convergent sequence in FORMULA 
+for each FORMULA . We put FORMULA  for any FORMULA . Extend the map FORMULA  to FORMULA , by using FORMULA  is a
+FORMULA -Lipschitz map.
+Claim 3.3 
+For any FORMULA , we have FORMULA  as FORMULA .
+Since FORMULA , for any
+FORMULA  there exists FORMULA  such that
+FORMULA 
+From the definition, there exists FORMULA 
+such that FORMULA  for any FORMULA  and FORMULA . Take any FORMULA . There exists FORMULA  such that FORMULA . Hence, for any FORMULA  we have
+FORMULA 
+Therefore, for any suffieciently large FORMULA , we obtain
+FORMULA 
+This completes the proof of the claim.
+
+According to Claim REF , we have
+FORMULA  as FORMULA . This completes the
+proof of the proposition.
+
+Gromov proved in {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}} the following
+proposition by using the distance function FORMULA  on the space
+of finite Borel measures. Although the distance function
+FORMULA  does not appare in the proof of the following
+proposition, the proof is essentially the same spirit of his proof.
+Proposition 3.4 (cf. {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) Let FORMULA  be a sequence of Borel
+measures on a metric space FORMULA  and assume that FORMULA  converges weakly to a Borel measure FORMULA . Then, we
+have
+FORMULA 
+Without loss of generality, we may assume that FORMULA 
+and FORMULA  for any FORMULA . For any FORMULA ,
+there exists a sequence FORMULA  of pairwise
+disjoint Borel
+subsets of FORMULA  satisfying the following properties FORMULA .
+ FORMULA
+FORMULA .
+ FORMULA
+For any FORMULA , FORMULA .
+ FORMULA
+For any FORMULA , FORMULA .
+
+From FORMULA  and FORMULA , there exists FORMULA  such that
+FORMULA . From the
+assumption, FORMULA  as FORMULA  for any FORMULA . Hence, putting
+FORMULA 
+
+there exists FORMULA  such that
+FORMULA 
+for any FORMULA  and FORMULA . Fix a parameter FORMULA  of the mm-space FORMULA  for each FORMULA .
+For any FORMULA , we indicate by FORMULA  its interior. Since
+FORMULA , we have
+FORMULA 
+Take a paramter FORMULA  of the
+mm-space FORMULA . Defining a Borel measurable map FORMULA  by
+FORMULA 
+we see that the map FORMULA  is a parameter of
+FORMULA . We take any FORMULA . Take parameters FORMULA  of FORMULA , of the mm-spaces
+FORMULA , and a parameter FORMULA  of the mm-space FORMULA . We define a Borel measurable map FORMULA  by
+FORMULA 
+
+The map FORMULA  is a parameter of the mm-space FORMULA 
+for each FORMULA . Putting FORMULA , we have
+FORMULA 
+For any FORMULA , there exist FORMULA  such
+that FORMULA , FORMULA , and FORMULA . Since FORMULA , FORMULA , and FORMULA , we have
+FORMULA 
+Therefore, we obtain
+FORMULA . This completes the proof.
+
+Theorem 3.5 (Gromov, cf. {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) FORMULA  as FORMULA  if and only if
+for any FORMULA  there exist a Borel measurable map FORMULA , a Borel subset FORMULA , and a
+positive number FORMULA  satisfying the
+following conditions FORMULA .
+ FORMULA
+FORMULA  as FORMULA .
+ FORMULA
+FORMULA  for
+FORMULA .
+ FORMULA
+FORMULA  for any FORMULA .
+ FORMULA
+The sequence FORMULA  converges weakly to
+FORMULA .
+
+Assume that FORMULA  holds. By virtue of Proposition
+REF , we have FORMULA  as FORMULA .
+Assume that FORMULA  as FORMULA . Without loss of
+generality, we may assume that FORMULA  for any
+FORMULA . From the assumption, there exist parameters
+FORMULA  of FORMULA  and FORMULA  of FORMULA ,
+FORMULA , such that FORMULA  as FORMULA . Hence, for each
+FORMULA , there exist FORMULA  and compact subset FORMULA  satisfying the following conditions FORMULA :
+ FORMULA
+FORMULA  as FORMULA .
+ FORMULA
+FORMULA .
+ FORMULA
+For any FORMULA ,
+FORMULA .
+ FORMULA
+The maps FORMULA  and FORMULA  are continuous.
+
+By FORMULA , each set FORMULA  is compact. For each
+FORMULA , there exist FORMULA  and a sequence FORMULA  of pairwise disijoint Borel subsets of FORMULA  such that
+FORMULA  for any FORMULA  and
+FORMULA . For each
+FORMULA , we fix a point FORMULA . Then there exist a point
+FORMULA  with FORMULA . Put
+FORMULA .
+Claim 3.6 FORMULA .
+Take any FORMULA  with FORMULA . Since FORMULA , there exists FORMULA  such that
+FORMULA . Hence, by FORMULA , we have
+FORMULA 
+This completes the proof of the claim.
+
+We denote by
+FORMULA 
+the mutually different elements of FORMULA . Put
+FORMULA 
+
+It is easy to see that FORMULA , FORMULA  for FORMULA , and FORMULA . Take points FORMULA  for any FORMULA  and FORMULA . We define a Borel measurable map
+FORMULA  by FORMULA  if FORMULA  and
+FORMULA  if FORMULA . For each
+FORMULA , we fix FORMULA  with FORMULA  and
+put FORMULA .
+Claim 3.7 The sequence FORMULA 
+converges weaky to the measure FORMULA .
+Let FORMULA  be any bounded
+uniformly continuous function and put FORMULA . We shall prove
+FORMULA 
+Since
+FORMULA 
+we get
+FORMULA 
+Similary, we have
+FORMULA 
+Since for any  FORMULA
+FORMULA 
+we obtain
+FORMULA 
+Since FORMULA  is uniformly continuous function on FORMULA , for any
+FORMULA  there exists FORMULA  such that
+FORMULA  for any
+FORMULA  with FORMULA . Hence for any FORMULA  with FORMULA , we have
+FORMULA , which implies that
+FORMULA 
+
+Therefore, we obtain
+FORMULA 
+This completes the proof of the claim.
+
+For any FORMULA , we obtain
+FORMULA 
+Therefore, we have complete the proof of Theorem REF .
+
+Modifying the proof of Theorem REF , we get the following
+corollary:
+Corollary 3.8 Let FORMULA  and FORMULA , FORMULA , be compact mm-spaces. Assume that
+FORMULA , FORMULA , and
+FORMULA  for any FORMULA .
+Then, the sequence FORMULA  converges to FORMULA  with
+respect to FORMULA  if and only if FORMULA  converges to FORMULA  in the sense of the measured
+Gromov-Hausdorff convergence.
+
+Combining Proposition REF  and Theorem REF , we get
+the following corollary:
+Corollary 3.9 Assume that FORMULA . Then, two mm-spaces FORMULA  and
+FORMULA  are isomorphic to each other.
+
+
+Stability of homogenuity
+We say that an mm-space FORMULA  Lipschitz dominates an mm-space FORMULA 
+and write FORMULA  if
+there exist 1-Lipschitz map FORMULA  and FORMULA  such that FORMULA .
+Theorem 4.1 (Gromov, cf. {{cite:d788b5a0-db63-4a06-8558-c12183c02f66}}) Assume that FORMULA , FORMULA  as
+FORMULA  and FORMULA  for any FORMULA . Then we
+have FORMULA .
+Without loss of generality, we may assume that
+FORMULA , FORMULA , FORMULA , FORMULA , and FORMULA  for any FORMULA . From the assumption, for any FORMULA  there exists
+a 1-Lipschitz map FORMULA  such that
+FORMULA . By using Theorem REF , for
+any FORMULA 
+there exists a Borel measurable map FORMULA , a compact subset
+FORMULA , and FORMULA  such that
+ FORMULA
+FORMULA  as FORMULA ,
+ FORMULA
+FORMULA  for
+FORMULA ,
+ FORMULA
+FORMULA  for any FORMULA ,
+ FORMULA
+The sequence FORMULA  converges weakly to
+FORMULA .
+
+From now on, we define a Borel measurable map FORMULA  as follows: Since FORMULA  as FORMULA , there
+exists a parameter FORMULA  and FORMULA  such that FORMULA  as FORMULA . Hence, there exists a
+compact subset FORMULA  and FORMULA  satisfying
+the following properties FORMULA :
+ FORMULA
+FORMULA  as FORMULA .
+ FORMULA
+FORMULA .
+ FORMULA
+For any FORMULA ,
+FORMULA .
+ FORMULA
+The maps FORMULA  and
+FORMULA  are continuous.
+
+By FORMULA , the sets FORMULA  and FORMULA  are compact. For each
+FORMULA , there exist FORMULA  and a sequence FORMULA  of pairwise disijoint Borel subsets of FORMULA  such that
+FORMULA  for any FORMULA  and
+FORMULA . For each
+FORMULA , we fix a point FORMULA . Then there exist a point
+FORMULA  with FORMULA . Put FORMULA . Then, we get FORMULA . We denote by
+FORMULA 
+the mutually different elements of FORMULA . Put
+FORMULA 
+
+It is easy to see that FORMULA , FORMULA  for FORMULA , and FORMULA . Take points FORMULA  for any FORMULA  and FORMULA . We put FORMULA  if FORMULA  and
+FORMULA  if FORMULA . The same proof in Theorem REF  implies the following: There
+exists a positive number FORMULA  such that FORMULA  as
+FORMULA , FORMULA , and FORMULA  for any FORMULA .
+Put FORMULA . For any FORMULA ,
+FORMULA 
+Hence, FORMULA  is a 1-Lipschitz up to FORMULA  Borel measurable map.
+Claim 4.2 The sequence FORMULA  converges weakly to the measure FORMULA .
+Let FORMULA  be any bounded uniformly continuous function on
+FORMULA . We will prove that
+FORMULA 
+Since
+FORMULA 
+it suffices to prove that
+FORMULA 
+Put FORMULA . Take any
+FORMULA . We have
+FORMULA 
+and
+FORMULA 
+for any suffieciently large FORMULA . For any FORMULA , we put
+FORMULA 
+Let FORMULA  with FORMULA . For any FORMULA , we get
+FORMULA  for suffieciently large
+FORMULA  by the same method of the proof in Theorem
+REF . Assume that FORMULA  and
+FORMULA . Then, for any suffieciently large
+FORMULA , we have
+FORMULA 
+Hence, we get
+FORMULA 
+
+This completes the proof of the claim.
+
+Combining Proposition REF  and Claim REF , we may
+assume that the sequence FORMULA  converges with
+respect to the distance function FORMULA . Let FORMULA  be its
+limit. Then this FORMULA  is obviously a 1-Lipschitz map.
+Claim 4.3 The sequence FORMULA  converges weakly to the measure FORMULA .
+Let FORMULA  be any open subset. Put FORMULA  for any
+FORMULA . For any FORMULA , there exists FORMULA  such
+that FORMULA . Therefore, we obtain
+FORMULA 
+This completes the proof of the claim.
+
+Combining Claim REF  and Claim REF ,
+we get FORMULA . This completes the proof of the theorem.
+
+Modifying the proof of Theorem REF , we get the following corollary:
+Corollary 4.4 Assume that a sequence FORMULA  of
+compact homogeneous Riemannian manifolds convergence to an mm-space FORMULA 
+with respect to the distance function FORMULA  and FORMULA . Then, the limit space FORMULA  is also homogeneous and every
+isometry FORMULA  satisfy FORMULA .
+

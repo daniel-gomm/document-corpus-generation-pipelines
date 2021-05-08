@@ -1,0 +1,565 @@
+
+
+The Cauchy Operator for
+Basic Hypergeometric Series
+Vincent Y. B. ChenFORMULA  and Nancy S. S. GuFORMULA 
+
+Center for Combinatorics, LPMC
+Nankai University, Tianjin 300071
+People's Republic of China
+Email: FORMULA ybchen@mail.nankai.edu.cn,
+FORMULA gu@nankai.edu.cn
+Abstract
+We introduce the Cauchy augmentation operator for basic hypergeometric
+series. Heine's FORMULA  transformation formula and Sears'
+FORMULA  transformation formula can be easily obtained by the
+symmetric property of some parameters in operator identities. The
+Cauchy operator involves two parameters, and it
+can be considered as a generalization of the operator FORMULA .
+Using this operator, we obtain extensions of the Askey-Wilson
+integral, the Askey-Roy integral, Sears' two-term summation formula,
+as well as the FORMULA -analogues of Barnes' lemmas. Finally, we find
+that the Cauchy operator is also suitable for the study of the
+bivariate Rogers-Szegö polynomials, or the continuous big
+FORMULA -Hermite polynomials.
+Keywords: FORMULA -difference operator, the Cauchy
+operator, the Askey-Wilson integral, the Askey-Roy
+integral, basic hypergeometric series, parameter augmentation.
+AMS Subject Classification: 05A30, 33D05,
+33D15
+Introduction
+In an attempt to find efficient FORMULA -shift operators to deal with
+basic hypergeometric series identities in the framework of the
+FORMULA -umbral calculus {{cite:7c97ec40-3461-4664-a2e0-5731ce301dd1}}, {{cite:18374130-1261-4aea-9a27-e2872bb19c2f}}, Chen and Liu
+{{cite:0020dcd3-6988-472a-823f-4e5dc89e063d}}, {{cite:12b8597b-38e5-460b-832d-0e24a5d76e6c}} introduced two FORMULA -exponential operators for
+deriving identities from their special cases. This method is called
+parameter augmentation. In this paper, we continue the study of
+parameter augmentation by defining a new operator called the Cauchy
+augmentation operator which is suitable for certain transformation
+and integral formulas.
+Recall that Chen and Liu {{cite:0020dcd3-6988-472a-823f-4e5dc89e063d}} introduced the augmentation
+operator
+FORMULA 
+as the basis of parameter augmentation which serves as a method for
+proving FORMULA -summation and integral formulas from special cases for
+which some parameters are set to zero.
+The main idea of this paper is to introduce the Cauchy augmentation
+operator, or simply the Cauchy operator,
+FORMULA 
+which is reminiscent of the Cauchy
+FORMULA -binomial
+theorem {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}
+FORMULA 
+For the same reason, the operator FORMULA  should be named the
+Euler operator in view of Euler's identity{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}
+FORMULA 
+Compared with FORMULA , the Cauchy
+operator (REF ) involves two parameters. Clearly,
+the operator FORMULA  can be considered as a special case of the
+Cauchy operator (REF ) for FORMULA . In order to utilize the
+Cauchy operator to basic hypergeometric series, several operator
+identities are deduced in Section . As to
+the applications of the Cauchy operator, we show that many classical
+results on basic hypergeometric series easily fall into this
+framework. Heine's FORMULA  transformation formula
+{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}} and Sears' FORMULA 
+transformation formula {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}} can be
+easily obtained by the symmetric property of some parameters in two
+operator identities for the Cauchy operator.
+In Section  and Section , we use the Cauchy operator to generalize the
+Askey-Wilson integral and the Askey-Roy integral. In
+{{cite:af65a861-7ed2-4941-88cf-9f3e1164d01f}}, Ismail, Stanton, and Viennot derived an
+integral named the Ismail-Stanton-Viennot integral which took the
+Askey-Wilson integral as a special case. It is easy to see that our
+extension of the Askey-Wilson integral is also an extension of the
+Ismail-Stanton-Viennot integral. In {{cite:c4b77d22-66ac-470f-bcfc-ee94be1e94a9}}, Gasper discovered
+an integral which was a generalization of the Askey-Roy integral. We
+observe that Gasper's formula is a special case of the formula
+obtained by applying the Cauchy operator directly to the Askey-Roy
+integral. Furthermore, we find that the Cauchy operator can be
+applied to Gasper's formula to derive a further extension of the
+Askey-Roy integral.
+In Section , we present
+that the Cauchy operator is suitable for the study of bivariate
+Rogers-Szegö polynomials. It can be used to derive the
+corresponding Mehler's and the Rogers formulas for the bivariate
+Rogers-Szegö polynomials, which can be stated in the equivalent
+forms in terms of the continuous big FORMULA -Hermite polynomials.
+Mehler's formula in this case turns out to be a special case of the
+nonsymmetric Poisson kernel formula for the continuous big
+FORMULA -Hermite polynomials due to Askey, Rahman, and Suslov
+{{cite:c92887bc-97fe-46e1-8d95-5308f1bc9eec}}. Finally, in Section  and Section , we employ the Cauchy
+operator to deduce extensions of Sears' two-term summation formula
+{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}} and the FORMULA -analogues of Barnes'
+lemmas {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}.
+As usual, we follow the notation and terminology in
+{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}. For FORMULA , the FORMULA -shifted factorial is
+defined by
+FORMULA 
+For convenience, we shall adopt the following notation for multiple
+FORMULA -shifted factorials:
+FORMULA 
+where FORMULA  is an integer or infinity.
+The FORMULA -binomial coefficients, or the Gauss coefficients, are given
+by
+FORMULA 
+The (unilateral) basic hypergeometric series FORMULA  is defined
+by
+FORMULA 
+
+Basic Properties
+In this section, we give some basic identities involving the Cauchy
+operator FORMULA  and demonstrate that Heine's FORMULA 
+transformation formula and Sears' FORMULA 
+transformation formula are implied in the symmetric property of some
+parameters in two operator identities.
+We recall that the FORMULA -difference operator, or Euler derivative, is
+defined by
+FORMULA 
+and the Leibniz rule for FORMULA  is referred to
+the following
+identity
+FORMULA 
+The following relations are easily verified.
+Proposition 2.1 Let FORMULA  be a nonnegative integer. Then we
+have
+FORMULA 
+
+Now, we are
+ready to give some basic identities for the Cauchy operator
+FORMULA . We assume that FORMULA  acts on the parameter FORMULA .
+The following identity is an easy consequence of the Cauchy
+FORMULA -binomial theorem (REF ).
+Theorem 2.2  We have
+FORMULA 
+provided FORMULA .
+
+Proof.  By Proposition REF , the left hand side of (REF ) equals
+FORMULA 
+which simplifies to the right hand side of (REF )
+by the Cauchy FORMULA -binomial theorem (REF ). FORMULA
+Theorem 2.3  We have
+FORMULA 
+provided FORMULA .
+
+Proof.  In view of the Leibniz formula for FORMULA , the left
+hand side of (REF ) can be expanded as follows
+FORMULA 
+as desired.  FORMULA
+Notice that when FORMULA , the FORMULA  series
+on the right hand
+side of (REF ) can be summed by employing the Cauchy
+FORMULA -binomial theorem (REF ). In this case (REF ) reduces
+to
+FORMULA 
+which was derived by Chen and Liu in {{cite:0020dcd3-6988-472a-823f-4e5dc89e063d}}.
+As an immediate consequence of the above theorem, we see that
+Heine's FORMULA  transformation formula {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}} is really about the symmetry in FORMULA  and FORMULA 
+while applying the operator FORMULA .
+Corollary 2.4 (Heine's transformation) We have
+FORMULA 
+where FORMULA .
+
+Proof.  The symmetry in FORMULA  and FORMULA  on the
+left hand side of (REF ) implies that
+FORMULA 
+where FORMULA .
+Replacing FORMULA  by FORMULA  in (REF ),
+respectively, we may easily express the above identity in the form
+of (REF ). FORMULA
+Remark 2.5 A closer look at the proof of Theorem REF  reveals that
+the essence of Heine's transformation lies in the symmetry of FORMULA 
+and FORMULA  in Leibniz's formula (REF ).
+
+We should note that we must be cautious about the convergence
+conditions while utilizing the Cauchy operator. In general, it
+would be safe to apply the Cauchy operator if the resulting series
+is convergent. However, it is possible that from a convergent series
+one may obtain a divergent series after employing the Cauchy
+operator. For example, let us consider Corollary
+REF . The resulting series (REF ) can be obtained by
+applying the Cauchy operator FORMULA  to FORMULA 
+which is convergent for all FORMULA . However, the resulting series on
+the left hand side of (REF ) is not convergent for FORMULA .
+Combining
+Theorem REF  and the Leibniz rule (REF ), we obtain
+the following identity which implies Theorem REF  by setting
+FORMULA . Sears' FORMULA  transformation formula {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}} is also a consequence of Theorem REF .
+Theorem 2.6 We have
+FORMULA 
+provided FORMULA .
+
+Proof.  In light of Leibniz's formula, the left hand side of
+(REF ) equals
+FORMULA 
+By Theorem REF , the above sum equals
+FORMULA 
+as desired.  FORMULA
+Corollary 2.7 (Sears' transformation) We have
+FORMULA 
+where FORMULA .
+
+Proof. 
+Based on the symmetric property of the parameters FORMULA  and FORMULA  on the
+left hand side of (REF ), we find that
+FORMULA 
+where FORMULA .
+Making the substitutions FORMULA , FORMULA , FORMULA , and FORMULA , we get
+the desired formula. FORMULA
+We see that the essence of Sears' transformation also lies
+in the symmetry of FORMULA  and FORMULA  in the application of Leibniz
+rule.
+
+An Extension of the Askey-Wilson Integral
+The Askey-Wilson integral {{cite:f8a89134-a32e-4bb3-afac-10d3c23d36b1}} is a significant
+extension of the beta integral. Chen and Liu {{cite:0020dcd3-6988-472a-823f-4e5dc89e063d}} presented
+a treatment of the Askey-Wilson integral via parameter augmentation.
+They first got the usual Askey-Wilson integral with one parameter by
+the orthogonality relation obtained from the Cauchy FORMULA -binomial
+theorem (REF ) and the Jacobi triple product identity
+{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}, and then they applied the
+operator FORMULA  three times to deduce the Askey-Wilson integral
+involving four parameters {{cite:3bf8e10a-2dea-48f3-b1fc-cf456c5c6e20}}, {{cite:af65a861-7ed2-4941-88cf-9f3e1164d01f}}, {{cite:c7aa1d86-e243-4a01-af8c-9192f4ceb62b}}, {{cite:52a0ba90-251b-490d-a479-5365eaf43d0d}}, {{cite:def6483d-80d0-4086-b558-1ede5d1966c1}}, {{cite:ad09aaaa-7459-40fa-b022-95ba8af8a2cf}}
+FORMULA 
+where FORMULA .
+In this section, we derive an extension of the Askey-Wilson integral
+(REF ) which contains the following
+Ismail-Stanton-Viennot's integral {{cite:af65a861-7ed2-4941-88cf-9f3e1164d01f}} as a
+special case:
+FORMULA 
+where FORMULA .
+Theorem 3.1 (Extension of the Askey-Wilson integral) We have
+FORMULA 
+where FORMULA .
+
+Proof. 
+The Askey-Wilson integral (REF ) can be written as
+FORMULA 
+Before applying the Cauchy operator to an integral, it is necessary
+to show that the Cauchy operator commutes with the integral. This
+fact is implicit in the literature. Since this commutation relation
+depends on some technical conditions in connection with the
+integrands, here we present a complete proof.
+First, it can be easily verified that the FORMULA -difference operator
+FORMULA  commutes with the integral. By the definition of FORMULA 
+(REF ), it is clear that
+FORMULA 
+Consequently, the operator FORMULA  commutes with the integral.
+Given a Cauchy operator
+FORMULA , we proceed to prove that it commutes with
+the integral. From the well-known fact
+that, for a sequence of continuous functions FORMULA  on a
+curve FORMULA , the sum commutes with the integral in
+FORMULA 
+provided that
+FORMULA  is uniformly convergent.
+It is
+sufficient to check the convergence condition for the continuity is
+obvious. This can be done with the aid of the Weierstrass M-Test
+{{cite:8444c3d2-6d5d-4e43-9a1d-c15707ecc249}}. Using the Cauchy operator
+FORMULA  to the left hand side of (REF ), we find that
+FORMULA 
+Let FORMULA  denote the integrand in the last line of the above
+equation. We make the assumption FORMULA  so that, for FORMULA ,
+FORMULA 
+and
+FORMULA 
+Now we rewrite the series FORMULA  into
+another form FORMULA  in order to prove its
+uniform convergence. In the proof of Theorem REF , one sees
+that the
+absolute convergence of the FORMULA  series under the condition
+FORMULA 
+implies the absolute convergence of the
+sum
+FORMULA 
+Therefore, under the condition FORMULA , it follows from Theorem
+REF  that
+FORMULA 
+Hence
+FORMULA 
+Now, let
+FORMULA 
+By the Weierstrass M-Test, it remains to find a
+convergent series FORMULA , where FORMULA  is
+independent of FORMULA , such that FORMULA . For
+FORMULA , we may choose
+FORMULA 
+It is easy to see that FORMULA  is convergent when
+FORMULA . It follows that the Cauchy operator commutes with the
+integral in (REF ), so (REF ) can be written as
+FORMULA 
+Finally, we may come to the general condition FORMULA  by the
+argument of analytic continuation. Hence, under the condition
+FORMULA , we have shown that it is valid to
+exchange the Cauchy operator and the integral when we apply the
+Cauchy operator to (REF ).
+Now, applying FORMULA  to (REF ) with respect to the
+parameter FORMULA  gives
+FORMULA 
+where FORMULA . This implies the desired
+formula. The proof is completed.  FORMULA
+In fact, the above proof also implies the convergence of the
+integral in Theorem REF . Once it has been shown
+that the sum commutes with the integral, one sees that the integral
+obtained from exchanging the sum and the integral is convergent.
+Setting FORMULA  in (REF ), by the FORMULA -Gauss sum
+{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}:
+FORMULA 
+we arrive at the Ismail-Stanton-Viennot integral
+(REF ).
+Setting FORMULA  in (REF ),
+by means of the FORMULA -Gauss sum (REF )
+we find the following formula which we have not seen in the
+literature.
+Corollary 3.2 We have
+FORMULA 
+where FORMULA .
+
+
+A Further Extension of the Askey-Roy Integral
+Askey and Roy {{cite:bfe5a35a-f77b-4932-a0b2-478b8a8f576d}} used Ramanujan's FORMULA 
+summation formula {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}} to derive the
+following integral formula:
+FORMULA 
+where FORMULA  and FORMULA , which is called
+the Askey-Roy integral.
+In {{cite:c4b77d22-66ac-470f-bcfc-ee94be1e94a9}}, Gasper discovered an integral formula
+FORMULA 
+provided FORMULA  and FORMULA , which
+is an extension of the Askey-Roy integral. Note that Rahman and
+Suslov {{cite:a7bd242e-3d89-4573-9069-d21a7f3f7953}} found a proof of Gasper's formula
+(REF ) based on the technique of iteration with respect to
+the parameters of FORMULA  in the integral
+FORMULA 
+where FORMULA  is the solution of a Pearson-type first-order
+difference equation.
+In this section, we first derive an extension of the Askey-Roy
+integral by applying the Cauchy operator. We see that Gasper's
+formula (REF ) is a special case of this extension
+(REF ). Moreover, a further extension of the Askey-Roy
+integral can be obtained by taking the action of the Cauchy
+operator on Gasper's formula.
+Theorem 4.1  We have
+FORMULA 
+where FORMULA  and FORMULA .
+
+Proof.  As in the proof of the extension of the Askey-Wilson
+integral, we can show that the Cauchy operator also commutes with
+the Aksey-Roy integral. So we may apply the Cauchy operator
+FORMULA  to both sides of the Askey-Roy integral
+(REF ) with respect to the parameter FORMULA . It follows
+that
+FORMULA 
+where FORMULA  and FORMULA .
+Putting FORMULA  and FORMULA  in (REF ), by the FORMULA -Gauss sum
+(REF ), we get the formula (REF ) due to Gasper.
+In order to apply the Cauchy operator to Gasper's formula
+(REF ), we rewrite it as
+FORMULA 
+The proof is thus completed by employing the operator FORMULA 
+with respect to the parameter FORMULA  to the above identity. FORMULA
+Replacing FORMULA , FORMULA  by FORMULA , FORMULA , respectively, and then taking
+FORMULA  in (REF ), we are led to the following identity due to
+Zhang and Wang {{cite:0090d4d1-b1b5-4567-8039-3f742040704a}}.
+Corollary 4.2 We have
+FORMULA 
+where FORMULA  and FORMULA .
+
+
+The Bivariate Rogers-Szegö
+Polynomials
+In this section, we show that Mehler's formula and the Rogers
+formula for the bivariate Rogers-Szegö polynomials can be easily
+derived from the application of the Cauchy operator.
+The bivariate Rogers-Szegö polynomials are closely
+related to the continuous big FORMULA -Hermite polynomials.
+However, it seems that the following form of the
+bivariate Rogers-Szegö polynomials are
+introduced by Chen, Fu and Zhang {{cite:32e8855c-cd98-422b-8c05-fe6e35db7eca}}, as defined by
+FORMULA 
+where the Cauchy polynomials are given by
+FORMULA 
+which naturally arise in the FORMULA -umbral calculus. Setting FORMULA , the
+polynomials FORMULA  reduce to the classical Rogers-Szegö
+polynomials FORMULA  defined by
+FORMULA 
+It should be noted that Mehler's formula for the bivariate
+Rogers-Szegö polynomials is due to Askey, Rahman, and Suslov
+{{cite:c92887bc-97fe-46e1-8d95-5308f1bc9eec}}. They obtained the
+nonsymmetric Poisson kernel formula for the continuous big
+FORMULA -Hermite polynomials, often denoted by FORMULA . The formula
+of Askey, Rahman, and Suslov can be easily formulated in terms of
+FORMULA . Recently, Chen, Saad, and Sun presented an approach to
+Mehler's formula and the Rogers formula for FORMULA  by using
+the homogeneous difference operator FORMULA  introduced by Chen, Fu,
+and Zhang. As will be seen, the Cauchy operator turns out to be more
+efficient
+compared with the techniques used in {{cite:1192a91e-42ed-4f91-9113-145650d4a2af}}.
+We recall that the generating function of the bivariate
+Rogers-Szegö polynomials
+FORMULA 
+where FORMULA , can be derived from the Euler identity
+(REF )
+using the Cauchy operator.
+A direct calculation shows that
+FORMULA 
+From the identity (REF ), we can
+easily establish the following lemma.
+Lemma 5.1 
+We have
+FORMULA 
+
+Applying FORMULA  to the Euler identity (REF ) with
+respect to the parameter FORMULA , we get
+FORMULA 
+which leads to (REF ) by suitable substitutions.
+The reason that we employ the Cauchy operator to deal with the
+bivariate Rogers-Szegö polynomials is based on the following fact
+FORMULA 
+We are ready to describe how one can employ the
+Cauchy operator to derive Mehler's formula and the Rogers
+formula for FORMULA .
+Theorem 5.2 (Mehler's formula for FORMULA )  We have
+FORMULA 
+where FORMULA .
+
+Proof. 
+By Lemma REF , the left hand side of (REF )
+can be written as
+FORMULA 
+In view of the generating function (REF ), the above sum
+equals
+FORMULA 
+where FORMULA . This completes the proof.
+ FORMULA
+We see that (REF ) is equivalent to {{cite:1192a91e-42ed-4f91-9113-145650d4a2af}} in terms of Sears' transformation formula
+(REF ). Setting FORMULA  and FORMULA  in (REF ) and
+employing the Cauchy FORMULA -binomial theorem (REF ), we obtain
+Mehler's formula {{cite:0020dcd3-6988-472a-823f-4e5dc89e063d}}, {{cite:c7aa1d86-e243-4a01-af8c-9192f4ceb62b}}, {{cite:9140d5c8-8e59-4965-85b5-74bb7661269b}}, {{cite:bb47f70a-8b00-40e1-99f1-52e08f2aa0e6}} for the Rogers-Szegö polynomials.
+Corollary 5.3 We have
+FORMULA 
+where FORMULA .
+
+Theorem 5.4 (The Rogers
+formula for FORMULA ) We have
+FORMULA 
+where FORMULA .
+
+Proof.  Using Lemma REF ,
+the left hand side of (REF ) equals
+FORMULA 
+FORMULA 
+where FORMULA . FORMULA
+Note that (REF ) is equivalent to {{cite:1192a91e-42ed-4f91-9113-145650d4a2af}} in terms of Heine's transformation formula
+{{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}. Setting FORMULA  in
+(REF ), by the Cauchy FORMULA -binomial theorem (REF ) we
+get the Rogers formula {{cite:0020dcd3-6988-472a-823f-4e5dc89e063d}}, {{cite:9140d5c8-8e59-4965-85b5-74bb7661269b}}, {{cite:1c76f5b7-40de-4f14-8f98-8dde69261ab5}} for the
+Rogers-Szegö polynomials.
+Corollary 5.5 We have
+FORMULA 
+where FORMULA .
+
+
+An Extension of Sears' Formula
+In this section, we give an extension of the Sears two-term
+summation formula {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}:
+FORMULA 
+where FORMULA .
+From the Cauchy operator, we deduce the following extension of
+(REF ).
+Theorem 6.1 We have
+FORMULA 
+where FORMULA .
+
+Proof. 
+We may rewrite (REF ) as
+FORMULA 
+Applying the operator FORMULA  with respect to the parameter
+FORMULA , we obtain (REF ). FORMULA
+As far as the convergence is concerned, the above integral is of
+the following form
+FORMULA 
+To ensure that the series (REF ) converges absolutely, we
+assume that the following two conditions are satisfied:
+
+FORMULA  converges to FORMULA , and FORMULA 
+has a nonzero limit as
+FORMULA .
+
+FORMULA .
+
+It is easy to see that under the above assumptions, (REF )
+converges absolutely, since
+FORMULA 
+It is easy to verify the double summations in (REF ) satisfy
+the two assumptions of (REF ), so the convergence is
+guaranteed.
+
+Extensions of FORMULA -Barnes' Lemmas
+In this section, we obtain extensions of the FORMULA -analogues of
+Barnes' lemmas. Barnes' first lemma {{cite:c54d534b-ee16-4729-9707-1c5795f807b9}} is an integral
+analogue of Gauss'
+FORMULA  summation formula.
+Askey and Roy {{cite:bfe5a35a-f77b-4932-a0b2-478b8a8f576d}} pointed out that Barnes' first
+lemma is also an extension of the beta integral. Meanwhile,
+Barnes'
+second lemma {{cite:9aa2ad10-005f-4c39-984b-02a32e4a2e3b}} is an integral analogue of
+Saalschütz's formula.
+The following
+FORMULA -analogue of Barnes' first lemma is due to Watson, see {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}:
+FORMULA 
+The FORMULA -analogue of Barnes' second lemma is due to Agarwal, see
+{{cite:e93c670f-812f-4296-ba9d-59e562a90cc3}} and {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}:
+FORMULA 
+where FORMULA  for large
+FORMULA . Throughout this section, the contour of integration always ranges from
+FORMULA  to FORMULA  so that the increasing sequences of poles of
+integrand lie to the right and the decreasing sequences of poles
+lie to the left of the contour, see {{cite:5486bc6d-d6df-4133-a6d6-d0e9f96c9a06}}. In order to ensure that the Cauchy
+operator commutes with the integral, we assume that
+FORMULA .
+We obtain the following extension of Watson's FORMULA -analogue of
+Barnes' first lemma.
+Theorem 7.1 We have
+FORMULA 
+where FORMULA .
+
+Proof. 
+Applying the operator FORMULA  to (REF ) with
+respect to the parameter FORMULA , we arrive at (REF ).  FORMULA
+Let us consider the special case when FORMULA .
+The FORMULA  sum on the right hand side of
+(REF ) turns out to be a FORMULA  sum and can be
+summed by the FORMULA -Gauss formula (REF ). Hence we get the
+following formula derived by Liu {{cite:7172072d-1e49-43f8-839f-da247665caa8}}, which is also an
+extension of FORMULA -Barnes' first Lemma.
+Corollary 7.2  We have
+FORMULA 
+where FORMULA .
+
+Clearly, (REF ) becomes FORMULA -Barnes' first Lemma
+(REF ) for FORMULA .
+Based on Corollary REF , employing the Cauchy
+operator again, we derive the following further
+extension of FORMULA -Barnes' first Lemma.
+Theorem 7.3 We have
+FORMULA 
+where
+FORMULA .
+
+We conclude this paper with the following extension of
+Agarwal's FORMULA -analogue of Barnes' second lemma. The proof
+is omitted.
+Theorem 7.4 We have
+FORMULA 
+where FORMULA  and
+FORMULA  for large
+FORMULA .
+
+
+Acknowledgments. We would like to
+thank the referee and Lisa H. Sun for helpful comments. This work
+was supported by the 973 Project, the PCSIRT Project of the Ministry
+of Education, the Ministry of Science and Technology and the
+National Science Foundation of China.

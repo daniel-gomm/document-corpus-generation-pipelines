@@ -1,0 +1,1148 @@
+
+Sur les reprÃ©sentations du groupe fondamental d'une variÃ©tÃ© privÃ©e d'un diviseur Ã  croisements normaux simples
+Niels Borne2020/09/07 07 :32 :14
+Introduction
+Une description alternative
+En l'absence de lacets, la recherche d'une description alternative du groupe fondamental Ã©tale (dÃ©fini dans {{cite:89d91234-e8ce-4e56-9076-c94c796798fe}} en termes de revÃªtements) est une question classique, motivÃ©e essentiellement par la volontÃ© de dÃ©terminer algÃ©briquement des groupes fondamentaux qui ne sont connus que par voie transcendante.
+L'Ã©tude systÃ©matique du lien entre revÃªtements de, disons, une variÃ©tÃ© algÃ©brique projective FORMULA , et certain fibrÃ©s sur FORMULA , commence avec Weil ({{cite:2c02fd3e-e9a5-48ef-b055-f71f0e868e31}}). Celui-ci montre qu'un revÃªtement galoisien non ramifiÃ© de surfaces de Riemann FORMULA  permet d'associer Ã  toute reprÃ©sentation FORMULA  complexe du groupe de Galois FORMULA  un fibrÃ© sur FORMULA  : on descend le fibrÃ© trivial FORMULA  sur FORMULA  en FORMULA . Weil remarque que cette opÃ©ration est compatible avec le produit tensoriel, ce qui confÃ¨re des propriÃ©tÃ©s remarquables aux fibrÃ©s associÃ©s : ils sont en particulier finis, au sens qu'il existe deux polynÃ´mes distincts FORMULA  Ã  coefficients entiers positifs tels que FORMULA . Il voit dans ces fibrÃ©s la gÃ©nÃ©ralisation des fibrÃ©s en droite de torsion, et commence Ã  les caractÃ©riser.
+Ce travail trouve son aboutissement dans la formulation de Nori ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}) : la catÃ©gorie des fibrÃ©s finis sur FORMULA  est tannakienne, et le groupe de Tannaka associÃ©e est le groupe fondamental (profini) de FORMULA . Ceci a l'avantage d'Ãªtre vÃ©rifiÃ© pour un schÃ©ma FORMULA  propre, rÃ©duit, connexe, sur un corps algÃ©briquement clos de caractÃ©ristique 0. En caractÃ©ristique FORMULA , le groupe de Tannaka de la catÃ©gorie des fibrÃ©s essentiellement finis (le schÃ©ma en groupe fondamental de Nori) se surjecte dans le groupe fondamental de FORMULA . Toutefois, comme le souligne Nori, cette description algÃ©brique (les fibrÃ©s finis ne dÃ©pendant, en fait, que de la topologie de Zariski de FORMULA ) du groupe fondamental n'a que peu d'utilitÃ©, puisque les fibrÃ©s finis de rang plus grand que 1 semblent trÃ¨s difficiles Ã  construire ex nihilo (i.e. sans utiliser de revÃªtement).
+Partant du problÃ¨me de la dÃ©termination algÃ©brique du groupe fondamental,
+l'Ã©tude des courbes ouvertes (par exemple la droite projective moins trois points) apparaÃ®t plus abordable que celle des courbes complÃ¨tes. En effet Nori montre dans {{cite:bf246e8f-ef80-4e32-8461-2d93ee5a6dd2}} qu'il existe une Ã©quivalence de catÃ©gories tannakiennes entre la catÃ©gorie des reprÃ©sentations du groupe fondamental de la courbe ouverte et celles des fibrÃ©s paraboliques (au sens de Seshadri, {{cite:a13ce129-6aae-4d83-8510-717ef290ec56}}) finis. Il semble ardu, mais peut-Ãªtre pas impossible, de construire algÃ©briquement de tels fibrÃ©s.
+Cependant, Nori ne fait qu'esquisser une preuve de cette Ã©quivalence. Cet article rÃ©pond au souci d'en donner une dÃ©monstration complÃ¨te et indÃ©pendante, suffisamment gÃ©nÃ©rale pour Ãªtre valable en toute dimension. Plus prÃ©cisÃ©ment, on dÃ©finit, donnÃ© un schÃ©ma FORMULA  propre, normal, connexe sur un corps FORMULA , et FORMULA  une famille de diviseurs irrÃ©ductibles Ã  croisements normaux simples sur FORMULA , la catÃ©gorie FORMULA  (resp. FORMULA ) des fibrÃ©s paraboliques (modÃ©rÃ©s) finis (resp. essentiellement finis), et notre rÃ©sultat principal (thÃ©orÃ¨me REF ) s'Ã©nonce :
+Théorème 1 
+Soit FORMULA , et FORMULA  un point rationnel, FORMULA .
+
+La paire FORMULA  est une catÃ©gorie tannakienne.
+
+Si FORMULA  est algÃ©briquement clos de caractÃ©ristique 0, tout fibrÃ© parabolique essentiellement fini est fini, et le groupe de Tannaka de
+FORMULA  est canoniquement isomorphe au groupe fondamental FORMULA .
+
+
+Le premier point permet de proposer, en caractÃ©ristique positive,
+une dÃ©finition du schÃ©ma en groupe fondamental modÃ©rÃ© FORMULA  comme groupe de Tannaka de la catÃ©gorie FORMULA . Ce schÃ©ma en groupe est un hybride du schÃ©ma en groupe fondamental de Nori ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}) et du groupe fondamental modÃ©rÃ© de Grothendieck-Murre ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}).
+Un fait marquant est l'omniprÃ©sence de certains champs de Deligne-Mumford, les champs des racines, tout au long de cet article. Ils sont construits Ã  partir de la paire FORMULA  en ajoutant une structure d'orbifold le long des diviseurs, et sont en ce sens des “schÃ©mas tordus”. Bien qu'il soient absents de l'Ã©noncÃ© de notre rÃ©sultat principal, ils en sont absolument au coeur, leur prÃ©sence Ã©clairant d'un jour nouveau d'anciens problÃ¨mes. Par exemple le curieux produit dans la catÃ©gorie galoisienne des revÃªtements modÃ©rÃ©s de {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} s'avÃ¨re Ãªtre un produit fibrÃ© usuel sur un tel champ des racinesvoir lemme REF  (ii).
+Pour conclure, on propose une mÃ©thode de construction des fibrÃ©s (paraboliques) finis, inspirÃ©e de la mÃ©thode des petits groupes de Wigner et Mackey en thÃ©orie des reprÃ©sentations.
+
+Organisation de l'article
+Dans la partie , on dÃ©finit les fibrÃ©s paraboliques sur un schÃ©ma FORMULA  le long d'une famille rÃ©guliÃ¨re de diviseurs FORMULA , Ã  poids rationnels Ã  dÃ©nominateurs dans une famille d'entiers fixÃ©e FORMULA . Ceci se fait en deux temps : on dÃ©finit d'abord (partie REF ) les faisceaux paraboliques, puis (partie REF ) la notion de libertÃ© locale pour un tel faisceau. On montre le caractÃ¨re rÃ©cursif de cette condition (proposition REF ), qui se simplifie considÃ©rablement lorsque la famille est Ã  croisements normaux simples (proposition REF ). On rappelle ensuite (partie REF ) la notion de champ des racines associÃ© Ã  la donnÃ©e de FORMULA , FORMULA , et FORMULA , et la partie se poursuit par le thÃ©orÃ¨me REF  qui identifie les fibrÃ©s paraboliques aux fibrÃ©s usuels sur le champ des racines.
+Les deux parties suivantes sont de nature plus technique.
+Le rÃ©sultat essentiel de la partie  est la proposition qui donne une interprÃ©tation du groupe fondamental modÃ©rÃ© comme limite projective de groupes fondamentaux de champs des racines. C'est une consÃ©quence Ã  peu prÃ¨s immÃ©diate du lemme d'Abhyankar.
+La partie  Ã©tudie le lien entre groupe fondamental d'un champ de Deligne-Mumford convenable et fibrÃ©s finis. Ce lien s'exprime par une Ã©quivalence de catÃ©gories tannakiennes entre systÃ¨mes locaux FORMULA -vectoriels de rang fini sur le champ et fibrÃ©s finis donnÃ© par un foncteur “Ã  la Riemann-Hilbert”, voir le corollaire REF . Le point crucial (thÃ©orÃ¨me REF ) est le fait que les fibrÃ©s essentiellement finis sur les champs des racines (et un peu plus gÃ©nÃ©ralement sur des schÃ©mas tordus) propres et rÃ©duits sur un corps forment une catÃ©gorie tannakienne.
+La partie suivante (partie ) est une partie de synthÃ¨se oÃ¹ l'on assemble les diffÃ©rents Ã©lÃ©ments pour aboutir au thÃ©orÃ¨me REF .
+Enfin la derniÃ¨re partie (partie ) est consacrÃ©e Ã  l'application du thÃ©orÃ¨me REF  au calcul explicite de fibrÃ©s paraboliques finis de groupe d'holonomie rÃ©soluble.
+
+Origines et liens avec des travaux existants
+La dÃ©finition des fibrÃ©s paraboliques par rapport Ã  une famille rÃ©guliÃ¨re de diviseurs FORMULA  dans la partie  est inspirÃ©e de celle de Maruyama-Yokogawa {{cite:3df4dfa9-c0f2-454f-89fe-a5f5cbcbc838}}. Une diffÃ©rence importante avec ces auteurs est l'emploi d'indices multiples (moralement, autant d'indices que de composantes irrÃ©ductibles rÃ©guliÃ¨res de FORMULA ) ce qui mÃ¨ne naturellement Ã  la dÃ©finition REF , essentiellement Ã©quivalente Ã  celle employÃ©e par Iyer et Simpson, voir {{cite:c973b0a4-9325-484a-bec0-a597c75cf41d}}. Ceci complique singuliÃ¨rement la condition de libertÃ© locale pour un faisceau parabolique : la dÃ©finition REF  en termes d'homologie de complexes associÃ©s Ã  des facettes est entiÃ¨rement originale et semble apporter un Ã©clairage nouveau sur la notion de fibrÃ© parabolique “localement abÃ©lien“ employÃ©e dans {{cite:c973b0a4-9325-484a-bec0-a597c75cf41d}} (voir la remarque REF ).
+Les champs des racines ont Ã©tÃ© introduits par Vistoli ({{cite:0f567c58-222d-4e72-953e-9c446e2b7664}}) et Cadman ({{cite:31a1d9f8-815b-4a07-8161-2a4c342cd0dd}}). L'identification des fibrÃ©s paraboliques avec les fibrÃ©s sur les champs des racines a Ã©tÃ© initiÃ©e dans {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}} dans la situation Ã  indice unique, sa gÃ©nÃ©ralisation Ã  la situation prÃ©sente ne pose pas de problÃ¨me particulier. On peut trouver certains prÃ©curseurs de ce rÃ©sultat, en particulier dans le travail de Biswas ({{cite:db05e83e-449f-411b-9bae-0701a7ef905d}}, {{cite:1dc8a8b6-6907-4096-b70c-3828ec28e60d}}), mais ces auteurs n'employant que des fibrÃ©s paraboliques Ã  indice unique, ces rÃ©sultats ne nous semblent corrects que dans le cas d'un diviseur rÃ©gulier.
+La preuve donnÃ©e du thÃ©orÃ¨me de Nori parabolique (thÃ©orÃ¨me REF ) est complÃ¨tement indÃ©pendante de la preuve de Nori en dimension 1 (Nori n'utilisant pas la dÃ©finition de Seshadri des fibrÃ©s paraboliques), mais, grÃ¢ce Ã  l'utilisation des champs des racines, suit d'assez prÃ¨s la dÃ©monstration de la version classique (non parabolique) du thÃ©orÃ¨me : en particulier la dÃ©monstration que les fibrÃ©s essentiellement finis sur un “schÃ©ma tordu“ forment une catÃ©gorie tannakienne (thÃ©orÃ¨me REF ) est une adaptation directe de la preuve que Nori donne pour un schÃ©ma usuel. Toutefois, l'emploi d'un foncteur de type Riemann-Hilbert (voir §REF ) pour faire le lien entre systÃ¨me locaux et fibrÃ©s finis, bien que naturelle, semble nouvelle dans ce contexte. Les travaux de Grothendieck-Murre ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}) sur le groupe fondamental modÃ©rÃ©, ainsi que ceux de Noohi ({{cite:4b022f63-fd7a-40fa-8903-c088d31e068a}}) et Zoonekynd ({{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}) sur le groupe fondamental des champs de Deligne-Mumford, sont d'autres ingrÃ©dients importants de la preuve.
+ÃlÃ©mentaire, mais Ã  priori un peu surprenante, l'idÃ©e de construire des fibrÃ©s finis par image directe (voir la proposition REF  et le lemme REF ) ne semble pas avoir Ã©tÃ© dÃ©jÃ  employÃ©e.
+Enfin, pour conclure sur les insuffisances de cet article, il serait naturellement souhaitable d'avoir une version du thÃ©orÃ¨me de Nori parabolique pour un diviseur Ã  croisements normaux gÃ©nÃ©raux, ou sur un corps quelconque.
+
+Remerciements
+Ce travail doit beaucoup Ã  Angelo Vistoli, ses contours n'Ã©tant apparus nettement qu'Ã  la suite d'une visite Ã  Bologne en janvier 2006. Je l'en remercie chaleureusement. Je tiens Ã©galement Ã  remercier Alessandro Chiodo, Michel Emsalem, Boas Erez, Madhav Nori, Martin Olsson et Gabriele Vezzosi pour d'intÃ©ressantes discussions sur le sujet.
+
+FibrÃ©s paraboliques le long d'une famille rÃ©guliÃ¨re de diviseurs
+Dans cette partie, on notera FORMULA  un champ de Deligne-Mumford localement noethÃ©rien, FORMULA  un ensemble fini, FORMULA  une famille de diviseurs de Cartier effectifs sur FORMULA , FORMULA  une famille d'entiers FORMULA .
+Faisceaux paraboliques
+DÃ©finition
+Soient d'abord FORMULA  deux catÃ©gories monoÃ¯dales, FORMULA  Ã©tant supposÃ©e stricte.
+Un foncteur monoÃ¯dal FORMULA  permet de voir FORMULA  comme un FORMULA -module (relÃ¢chÃ©) sur le monoÃ¯de FORMULA  via l'opÃ©ration
+@R=2pt
+IC [r] C
+(I,C) [r]  F(I)C
+On considÃ¨re Ã  prÃ©sent FORMULA ,
+FORMULA , oÃ¹ par dÃ©finition
+FORMULA ,
+et FORMULA , la catÃ©gorie des faisceaux de FORMULA -modules sur FORMULA . FORMULA  et FORMULA  sont vues comme catÃ©gories associÃ©es aux ensembles ordonnÃ©s correspondants, et munies du produit tensoriel induit par l'addition, quant Ã  FORMULA , elle est munie de sa structure monoÃ¯dale canonique. Enfin, on dispose du foncteur d'inclusion
+FORMULA  et du foncteur
+@R=2pt
+F2 : I [r] C2
+l=(li)iI[r]  OX(-lD)=OX(-iIliDi)
+qui permettent de voir FORMULA  et FORMULA  comme des
+FORMULA -monoÃ¯des.
+Définition 1 
+On dÃ©finit la catÃ©gorie des faisceaux paraboliques sur FORMULA  le long de FORMULA  Ã  poids multiples de FORMULA  comme la catÃ©gorie des morphismes de modules sur le monoÃ¯de FORMULA  :
+FORMULA 
+
+Plus en dÃ©tail, un objet de FORMULA  est un
+couple FORMULA , oÃ¹ FORMULA  est un foncteur (non nÃ©cessairement monoÃ¯dal !), et
+FORMULA  est un isomorphisme naturel (dit isomorphisme des pseudo-pÃ©riodes) :
+@R=12pt
+ (Z I)op (1rZI)op [rr]+ [dd](Z I)op E  (1rZI)op
+[dd]E
+ (Z I)op MODX [rr]OX(-D) @=>[uurr]j MODX
+On omettra souvent FORMULA  pour allÃ©ger les notations. Un morphisme FORMULA  est une transformation naturelle :
+(1rZI)op  @/1pc/[r]E*=<0.3pt>="HAUT"
+@/1pc/[r]E'*=<0.3pt>="BAS"
+@=> "HAUT" ;"BAS" 
+  MODX
+compatible avec FORMULA  et FORMULA , en un sens Ã©vident.
+
+OpÃ©rations Ã©lÃ©mentaires sur les faisceaux paraboliques
+Pour FORMULA  et FORMULA  on dispose du dÃ©calage dÃ©fini de la maniÃ¨re usuelle
+@R=2pt
+E[l] :(1rZI)op[r]+l(1rZI)op[r]EMODX
+l'isomorphisme des pseudo-pÃ©riodes Ã©tant induit par celui de FORMULA  de la maniÃ¨re Ã©vidente.
+Passons au produit tensoriel des faisceaux paraboliques :
+donnÃ©s FORMULA , on dispose, pour tout FORMULA , de l'objet FORMULA  de FORMULA  obtenu comme
+produit tensoriel externe de FORMULA  par
+FORMULA .
+Cette quantitÃ© Ã©tant dinaturelle en FORMULA , on peut dÃ©finir FORMULA  comme la cofinpour des
+dÃ©tails sur la notion de cofin (coend), voir {{cite:afbabd4b-67f6-4a0b-812f-5bb8190d4be9}}, ou bien
+{{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}, Appendice B du foncteur de
+variance mixte correspondant dans FORMULA  (qui est cocomplÃ¨te vu que FORMULA  l'est) :
+FORMULA 
+Ce produit tensoriel est l'adjoint Ã  gauche (enrichi) du foncteur FORMULA 
+interne naturel de FORMULA  (dont nous n'aurons pas usage).
+Passons au structures spÃ©ciales : l'inclusion
+FORMULA  admet pour adjoint Ã  gauche le foncteur
+@R=2pt 1rZI[r]ZI
+l[r] -[-l]
+oÃ¹ FORMULA , FORMULA  dÃ©signant la partie entiÃ¨re (on espÃ¨re que cela n'entraÃ®nera pas de confusion avec la notation du dÃ©calage).
+On en dÃ©duit que le foncteur d'oubli (ou d'Ã©valuation en zÃ©ro)
+ FORMULA
+admet un adjoint Ã  gauche, qu'on notera FORMULA , dÃ©fini par
+FORMULA 
+On appellera FORMULA  le faisceau parabolique Ã  structure spÃ©ciale induit par FORMULA .
+Lorsque FORMULA , on dispose d'un faisceau parabolique particulier, dÃ©fini comme foncteur par
+FORMULA 
+l'isomorphisme des pseudo-pÃ©riodes Ã©tant dÃ©fini de la maniÃ¨re Ã©vidente. On le
+notera simplement FORMULA .
+Enfin il est clair que si FORMULA  est un morphisme plat,
+la paire de foncteurs adjoints FORMULA  entre les catÃ©gories FORMULA  et FORMULA  induit une adjonction similaire entre les catÃ©gories FORMULA  et FORMULA .
+
+FibrÃ©s paraboliques
+Facette
+On va dÃ©finir certaines applications dont le but est FORMULA , vu comme ensemble ordonnÃ©.
+Définition 2 
+Soit FORMULA  un sous-ensemble, et FORMULA  la base canonique de FORMULA . On appelle facette toute application croissante
+FORMULA 
+qui est affine au sens suivant : il existe une famille d'entiers FORMULA  vÃ©rifiant FORMULA  telle que :
+FORMULA 
+
+Par la suite, on identifiera une facette entre deux ensembles ordonnÃ©s
+avec le foncteur entre les catÃ©gories correspondantes.
+La donnÃ©e d'une facette Ã©quivaut bien entendu Ã  celle de FORMULA , FORMULA , et
+de la famille FORMULA . Dans le cas particulier oÃ¹ FORMULA  et FORMULA , on parlera de la
+facette spÃ©ciale associÃ©e Ã  FORMULA , et on la notera FORMULA , il s'agit
+simplement de “l'inclusion” FORMULA . Plus gÃ©nÃ©ralement, lorsque FORMULA , on notera
+FORMULA  la facette correspondante.
+
+Complexe associÃ© Ã  un faisceau parabolique et une facette
+On commencer par prÃ©ciser les conventions utilisÃ©es concernant les complexes multiples (essentiellement empruntÃ©es Ã  {{cite:42f1bf92-8a5c-45c0-a6e6-4bba9d1c14e7}}). Soit FORMULA  un ensemble fini.
+Un complexe (de chaÃ®nes) multiple Ã  valeurs dans une catÃ©gorie abÃ©lienne FORMULA  est un foncteur FORMULA  tel que si on note FORMULA  la base canonique de FORMULA , alors pour tout multi-indice FORMULA , et pour tout FORMULA , les morphismes
+FORMULA 
+vÃ©rifient FORMULA .
+A un tel complexe, on associe de la maniÃ¨re son complexe total FORMULA  de la maniÃ¨re usuelle : on commence par transformer FORMULA  en complexe anti-commutatif en fixant un ordre total arbitraire sur l'ensemble FORMULA  et en modifiant les diffÃ©rentielles de la maniÃ¨re suivante : on pose pour tout multi-indice FORMULA  et pour tout FORMULA  :
+FORMULA 
+L'appellation complexe anti-commutatif est justifiÃ©e par le fait qu'alors
+FORMULA , lorsque ces expressions ont un sens,
+pour tout FORMULA , FORMULA  dans FORMULA . Le complexe total est alors dÃ©fini par, pour FORMULA  :
+FORMULA 
+oÃ¹ FORMULA ,
+et les diffÃ©rentielles Ã©tant dÃ©finies par
+FORMULA . Le fait qu'on parte d'un complexe
+anti-commutatif assure qu'on obtient bien ainsi un complexe (simple).
+Définition 3 Soient FORMULA  un faisceau parabolique et FORMULA  une facette.
+On appelle complexe multiple associÃ© le prolongement par zÃ©ro du foncteur composÃ© FORMULA  Ã  FORMULA , comme dans le diagramme ci-dessous :
+@R=2pt
+(NJ)op@.>[r]MODX
+({0<1}J)op @(->[uuu][uuur]EFop
+Par abus, on notera encore ce complexe multiple FORMULA .
+
+Le sens de ces dÃ©finitions apparaÃ®t dans le cas particulier oÃ¹ FORMULA , le faisceau structurel muni de la structure parabolique spÃ©ciale, et FORMULA , la facette spÃ©ciale associÃ©e Ã  FORMULA .
+Lemme 1 
+Pour FORMULA  on note FORMULA  le complexe de chaÃ®nes (simple) concentrÃ© en degrÃ©s 1 et 0. Pour tout FORMULA , il existe un isomorphisme naturel de complexes multiples :
+FORMULA 
+
+Cela rÃ©sulte simplement de l'expression de
+FORMULA  donnÃ©e par (REF ),§REF .
+Cet exemple est crucial pour dÃ©finir les fibrÃ©s paraboliques, puisque ceux-ci seront localement somme directe finie de faisceaux dÃ©calÃ©s du faisceau structurel, i.e. du type FORMULA , pour FORMULA  (voir remarque REF ), ce qui impose des contraintes fortes aux complexes associÃ©s Ã  chaque facette.
+De maniÃ¨re similaire, on a :
+Lemme 2 
+Supposons FORMULA .
+Pour tout FORMULA , et tout FORMULA 
+comme dans §REF , il existe un isomorphisme naturel de complexes multiples :
+FORMULA 
+
+ConsÃ©quence directe de la dÃ©finition REF .
+
+DÃ©finition des fibrÃ©s paraboliques
+Lemme 3 
+Soit FORMULA  un faisceau parabolique, et FORMULA  une facette.
+Il existe un morphisme naturel de complexes multiples
+FORMULA 
+qui est un isomorphisme en
+(multi-)degrÃ© 0. Supposons de plus FORMULA  localement libre de rang fini, alors si FORMULA  dÃ©signe l'immersion fermÃ©e canonique, il existe une surjection naturelle
+FORMULA .
+
+On repousse la preuve aprÃ¨s la dÃ©finition suivante. La deuxiÃ¨me assertion
+montre que, sous les hypothÃ¨ses du lemme REF , FORMULA  est Ã  support dans FORMULA , ce qui donne un
+senscette dÃ©finition dÃ©pend a priori du choix d'un ordre
+total sur FORMULA , mais la proposition REF  et la remarque
+REF  qui s'ensuit montrent qu'il n'en est rien, au moins pour une famille rÃ©guliÃ¨re de
+diviseurs (voir §REF ) qui est le seul cas que nous considÃ©rerons Ã  la :
+Définition 4 
+Soit FORMULA  un faisceau parabolique. On dit que c'est un faisceau parabolique localement libre ou encore un fibrÃ© parabolique si pour toute facette FORMULA , l'homologie FORMULA  du complexe multiple associÃ© est nulle pour FORMULA , et est un faisceau localement libre de rang fini sur FORMULA  pour FORMULA . On notera FORMULA  la catÃ©gorie des faisceaux paraboliques localement libres sur FORMULA  le long de FORMULA  Ã  poids multiples de FORMULA .
+
+[DÃ©monstration du lemme REF ]
+La deuxiÃ¨me assertion est une consÃ©quence de la premiÃ¨re, puisque celle-ci entraÃ®ne l'existence d'un morphisme de complexes simples
+FORMULA  qui est un isomorphisme en degrÃ© 0, d'oÃ¹ un Ã©pimorphisme
+FORMULA .
+L'hypothÃ¨se sur FORMULA  donne alors FORMULA .
+Le lemme REF  montre que FORMULA  est le complexe de Koszul associÃ© Ã  la famille FORMULA , ce qui permet de conclure.
+Reste Ã  montrer la premiÃ¨re assertion. L'hypothÃ¨se que FORMULA  est une facette
+montre qu'on a en particulier FORMULA . Cette inÃ©galitÃ© entre applications croissantes peut s'interprÃ©ter comme l'existence d'une transformation naturelle FORMULA  entre les foncteurs correspondants :
+{0<1}J  @/1pc/[r]F*=<0.3pt>="HAUT"
+@/1pc/[r]F(0)+FJ*=<0.3pt>="BAS"
+@=> "HAUT" ;"BAS" 
+  1rZI
+En passant aux catÃ©gories opposÃ©es et en composant avec  FORMULA
+({0<1}J)op  @/1pc/[r]Fop*=<0.3pt>="HAUT"
+@/1pc/[r](F(0)+FJ)op*=<0.3pt>="BAS"
+@=> "BAS" ;"HAUT" op
+  (1rZI)op[r]EMODX
+on obtient une transformation naturelle :
+FORMULA .
+Le diagramme suivant
+@R=12pt
+({0<1}J)op[dr]|-(FJop,F(0))@//[drrr](F(0)+FJ)op@//[dddr](FJop,EF(0))
+ (Z I)op (1rZI)op [rr]+ [dd]|-(Z I)op E  (1rZI)op
+[dd]E
+ (Z I)op MODX [rr]OX(-D) @=>[uurr]j MODX
+montre que l'isomorphisme de pseudo-pÃ©riodes FORMULA  de FORMULA  permet d'identifier FORMULA  avec FORMULA , ce qui conclut la dÃ©monstration du lemme.
+
+FibrÃ©s paraboliques et revÃªtements
+Pour montrer la pertinence de la dÃ©finition REF , on doit montrer l'existence de fibrÃ©s paraboliques non triviaux, i.e. autre que les sommes directes de dÃ©calÃ©s de fibrÃ©s Ã  structure spÃ©ciale (bien qu'ils soient tous localement de ce type). La maniÃ¨re la plus directe de produire de tels fibrÃ©s paraboliques est d'utiliser des revÃªtements de Kummer ramifiÃ©s le long d'une famille rÃ©guliÃ¨re de diviseurs. On commence par prÃ©ciser ces notions.
+Famille rÃ©guliÃ¨re de diviseurs
+On rappelle le lemme folklorique suivant, ainsi qu'une preuve, repoussÃ©e aprÃ¨s
+la dÃ©finition REF , Ã  laquelle il donne un sens.
+Lemme 4 
+Soit FORMULA  un schÃ©ma localement noethÃ©rien, FORMULA  un ensemble fini, FORMULA  un ensemble de diviseurs de Cartier effectifs sur FORMULA , et pour tout FORMULA , FORMULA  la section canonique. Les conditions suivantes sont Ã©quivalentes :
+
+En tout point FORMULA  de FORMULA , soit une des sections FORMULA  est
+inversible, soit FORMULA  est une suite dans un anneau
+local noethÃ©rien, la rÃ©gularitÃ© d'une suite ne dÃ©pend pas de l'ordre de ses Ã©lÃ©ments, ce qui permet de parler de famille rÃ©guliÃ¨re
+rÃ©guliÃ¨re (au sens de Serre),
+
+la section FORMULA  est rÃ©guliÃ¨re (i.e. le complexe de Koszul associÃ© au morphisme dual n'a pas d'homologie en degrÃ© supÃ©rieur ou Ã©gal Ã  1),
+
+FORMULA  est une immersion fermÃ©e rÃ©guliÃ¨re, et si FORMULA  est l'idÃ©al engendrÃ© par les FORMULA , alors en tout point FORMULA  de FORMULA , les FORMULA  forment un systÃ¨me minimal (pour le cardinal) de gÃ©nÃ©rateurs de FORMULA .
+
+
+Définition 5 
+On dira que FORMULA  est une famille rÃ©guliÃ¨re de diviseurs si pour tout sous-ensemble FORMULA , la sous-famille FORMULA  vÃ©rifie les conditions Ã©quivalentes du lemme REF .
+
+[DÃ©monstration du lemme REF ]
+FORMULA  : ceci rÃ©sulte du fait que le complexe de Koszul associÃ© soit Ã  un morphisme surjectif, soit Ã  une suite rÃ©guliÃ¨re, sont sans homologie en degrÃ© plus grand que 1.
+FORMULA  : le fait que FORMULA  soit rÃ©gulier rÃ©sulte directement de la dÃ©finition ({{cite:88a2ca15-61ed-4676-aec4-472ae1736f08}}, exposÃ© VII, DÃ©finition 1.4). De plus en notant FORMULA , et FORMULA  l'immersion fermÃ©e canonique, la rÃ©gularitÃ© de FORMULA  montre que FORMULA , donc en un point FORMULA  de FORMULA , FORMULA  est libre de rang FORMULA , par consÃ©quent FORMULA  ne saurait Ãªtre engendrÃ© par moins de FORMULA  Ã©lÃ©ments.
+FORMULA  FORMULA  est une immersion fermÃ©e rÃ©guliÃ¨re donc en particulier quasi-rÃ©guliÃ¨re ({{cite:88a2ca15-61ed-4676-aec4-472ae1736f08}}, exposÃ© VII, Proposition 1.3). Autrement dit FORMULA  est localement libre de rang fini sur FORMULA  et l'homomorphisme surjectif canonique
+FORMULA 
+est un isomorphisme. En un point FORMULA  de FORMULA , le lemme de
+Nakayama montre que le rang de FORMULA  sur
+FORMULA  est le nombre minimal de gÃ©nÃ©rateurs de
+FORMULA  sur FORMULA , Ã  savoir FORMULA . Donc FORMULA  est une base de FORMULA  et par consÃ©quent
+les FORMULA  dÃ©finissent un isomorphisme FORMULA , oÃ¹ les FORMULA  sont des indÃ©terminÃ©es. On en conclut que
+l'homomorphisme surjectif FORMULA  dÃ©fini par les FORMULA  est un isomorphisme, autrement dit la famille FORMULA  est quasi-rÃ©guliÃ¨re au sens de {{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, 0 DÃ©finition 15.1.7, donc rÃ©guliÃ¨re ({{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, 0 Corollaire 15.1.11).
+Lemme 5
+
+Toute sous-famille d'une famille rÃ©guliÃ¨re l'est Ã©galement.
+
+Si FORMULA  est un ensemble d'entiers FORMULA , alors la famille FORMULA  est rÃ©guliÃ¨re si et seulement si la famille FORMULA  l'est.
+
+
+FORMULA  est immÃ©diat.
+FORMULA  rÃ©sulte, par rÃ©currence, de la caractÃ©risation FORMULA  du lemme
+REF , puisque qu'un Ã©lÃ©ment est diviseur de zÃ©ro (resp. inversible) si et seulement une de ses puissances l'est.
+La notion de famille rÃ©guliÃ¨re de diviseurs s'Ã©tend aux champs de Deligne-Mumford localement noethÃ©riens, et le lemme REF  est encore valide. On a de plus le rÃ©sultat utile suivant.
+Proposition 1 
+Soit FORMULA  un champ de Deligne-Mumford localement noethÃ©rien, FORMULA  une famille rÃ©guliÃ¨re de diviseurs. Alors le faisceau parabolique FORMULA  est localement libre si et seulement si :
+
+FORMULA  le faisceau FORMULA  est localement libre sur FORMULA .
+
+FORMULA  FORMULA  FORMULA  est localement libre vu comme objet de FORMULA .
+
+
+Pour dÃ©montrer l'Ã©quivalence, on peut supposer que (i) est vrai.
+Soit FORMULA , et FORMULA .
+La donnÃ©e d'une facette FORMULA 
+Ã©quivaut Ã  celle d'un triplet FORMULA , oÃ¹
+FORMULA 
+est une facette, et FORMULA 
+dans FORMULA , tels que le diagramme suivant (bi)commute.
+@R=12pt
+{0<1}J [r]F 1rZI
+ {0<1}J-i @<1ex>[uu]0@<-1ex>[uu]1[r]F jJ-i 1rjZ@<1ex>[uu]li@<-1ex>[uu]l'i
+
+En notant FORMULA  et FORMULA  les deux foncteurs FORMULA  correspondants, on dispose d'un morphisme de complexes multiples
+FORMULA  et le fait qu'on suppose (i) vrai montre que ce morphisme
+est injectif. Il en est donc de mÃªme pour le morphisme induit
+FORMULA , et on vÃ©rifie que
+FORMULA  s'identifie canoniquement au cÃ´ne
+FORMULA  de celui-ci. On dispose donc d'un morphisme FORMULA 
+qui est un quasi-isomorphisme ({{cite:42f1bf92-8a5c-45c0-a6e6-4bba9d1c14e7}} 1.5.8), ce qui permet de conclure.
+Remarque 1 
+En particulier, le fait, pour un faisceau parabolique donnÃ©, d'Ãªtre
+localement libre, ne dÃ©pend pas de l'ordre choisi sur l'ensemble d'indices
+FORMULA .
+
+
+FibrÃ©s paraboliques relativement Ã  une famille de diviseurs Ã  croisements normaux simples
+Définition 6 
+Une famille FORMULA  de diviseurs de Cartier effectifs sur un schÃ©ma localement noethÃ©rien FORMULA  est dite Ã  croisements normaux simples si pour tout point FORMULA  de FORMULA  on a :
+
+l'anneau local FORMULA  est rÃ©gulier,
+
+si FORMULA , et FORMULA  est une Ã©quation locale de FORMULA  en FORMULA , alors FORMULA  est une partie d'un systÃ¨me rÃ©gulier de paramÃ¨tres.
+
+
+Remarque 2
+
+C'est une lÃ©gÃ¨re adaptation de {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}, Definition 1.8.2.
+
+Il revient au mÃªme ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}, Lemme 8.1.4)
+de dire que la famille est Ã  croisements normaux et que chacun des FORMULA  est rÃ©gulier.
+
+Comme un systÃ¨me rÃ©gulier de paramÃ¨tres est ({{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, DÃ©finition 17.1.6) une famille rÃ©guliÃ¨re, une famille de diviseurs Ã  croisements normaux simples est en particulier une famille rÃ©guliÃ¨re au sens de la dÃ©finition REF .
+
+
+Comme cette dÃ©finition est invariante par un changement de base Ã©tale, elle a Ã©galement un sens pour un champ de Deligne-Mumford. On a de plus :
+Proposition 2 
+Soit FORMULA  un champ de Deligne-Mumford localement noethÃ©rien, FORMULA  une famille de diviseurs Ã  croisements normaux simples. Alors le faisceau parabolique FORMULA  est localement libre si et seulement si FORMULA  le faisceau FORMULA  est localement libre sur FORMULA .
+
+Comme, pour tout FORMULA , la famille FORMULA  est Ã 
+croisements normaux simples sur FORMULA  (voir {{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, preuve de la
+Proposition 17.1.7), on peut raisonner par rÃ©currence sur FORMULA . On conclut
+Ã  l'aide de la proposition REF  et du lemme suivant (je remercie Angelo Vistoli pour m'avoir fourni le principe de la preuve) :
+Lemme 6 Soit FORMULA  un anneau local noethÃ©rien rÃ©gulier, d'idÃ©al maximal FORMULA , FORMULA , FORMULA . Soient de plus FORMULA  et FORMULA  deux modules libres de rang fini tel que FORMULA . Alors FORMULA  est libre comme FORMULA -module.
+
+De {{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, Corollaire 17.1.8, on dÃ©duit que l'anneau local FORMULA  est rÃ©gulier, et {{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, Proposition 16.3.7 montre qu'il est de dimension FORMULA . La formule d'Auslander-Buchsbaum ({{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, Proposition 17.3.4)
+montre que le rÃ©sultat Ã  dÃ©montrer Ã©quivaut Ã  FORMULA . Or
+{{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, proposition 16.4.8 montre que FORMULA . De
+plus, {{cite:6f31a4d8-0f90-43c3-a8c8-e4a80e1e11b4}}, Corollaire 16.4.4 donne pour tout FORMULA -module de type fini
+FORMULA  : si FORMULA  est le corps rÃ©siduel, FORMULA .
+La suite exacte longue de cohomologie associÃ©e au foncteur FORMULA  et Ã  la suite exacte courte de FORMULA -modules
+FORMULA , et une nouvelle application de la formule d'Auslander-Buchsbaum, permettent de conclure.
+
+RevÃªtements de Kummer
+La dÃ©finition des revÃªtements de Kummer adoptÃ©e ici est celle de {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}, §1 : donnÃ© un ensemble fini FORMULA , FORMULA  un ensemble d'entiers FORMULA , des schÃ©mas localement noethÃ©riens FORMULA  et FORMULA , FORMULA  un ensemble de sections rÃ©guliÃ¨res de FORMULA , un morphisme FORMULA  est dit revÃªtement de Kummer si FORMULA  est muni d'une action du schÃ©mas en groupes FORMULA  tel qu'il existe un FORMULA -isomorphisme FORMULA -Ã©quivariant de FORMULA  avec
+FORMULA 
+Alors FORMULA  est l'application naturelle vers le quotient schÃ©matique.
+Pour FORMULA , on notera FORMULA  (resp. FORMULA ) le diviseur de Cartier associÃ© Ã  FORMULA  (resp. FORMULA ), et FORMULA  (resp. FORMULA ) la famille correspondante.
+Lemme 7 
+On suppose que FORMULA  est une famille rÃ©guliÃ¨re de diviseurs sur FORMULA . Alors la famille FORMULA  est une famille rÃ©guliÃ¨re de diviseurs sur FORMULA .
+
+Comme FORMULA  est plat, la famille FORMULA  est rÃ©guliÃ¨re, par exemple d'aprÃ¨s le lemme REF  FORMULA . Or FORMULA , avec FORMULA , et on peut appliquer le lemme REF  FORMULA .
+
+FibrÃ©s paraboliques associÃ©s Ã  un revÃªtement de Kummer
+Soit FORMULA  un revÃªtement de Kummer. On conserve les notations de la partie REF . On appellera FORMULA -objet (ou objet FORMULA -Ã©quivariant) d'un certain type sur FORMULA  tout objet du mÃªme type sur le champ quotient FORMULA . On notera
+FORMULA  la catÃ©gorie des faisceaux FORMULA -Ã©quivariants sur FORMULA , FORMULA  l'image directe le long de FORMULA , et FORMULA  la catÃ©gorie des FORMULA -faisceaux paraboliques sur FORMULA  le long de FORMULA  Ã  poids multiples de FORMULA  (ici FORMULA  est considÃ©rÃ©e comme une famille de diviseurs de Cartier effectifs FORMULA -Ã©quivariants sur FORMULA  de la maniÃ¨re canonique).
+Vu la platitude de FORMULA  et la
+fonctorialitÃ© de FORMULA  en FORMULA  (§REF ), on dispose d'un foncteur canonique
+FORMULA 
+qu'on peut dÃ©tailler ainsi : donnÃ© un objet
+FORMULA  de FORMULA  (FORMULA  dÃ©signant l'isomorphisme des pseudo-pÃ©riodes),
+on lui associe FORMULA , oÃ¹ FORMULA  (encore notÃ© FORMULA ), et FORMULA  est donnÃ© par la 2-composition :
+@R=12pt
+ (Z I)op (1rZI)op [rr]+ [dd](Z I)op F  (1rZI)op
+[dd]F
+ (Z I)op rMODY [rr]OY(-p*D) [dd](Z I)op p*r @=>[uurr]k rMODY[dd]p*r
+ (Z I)op MODX [rr]OX(-D) @=>[uurr]proj MODX
+la 2-flÃ¨che FORMULA  Ã©tant donnÃ©e par la formule de projection le long de FORMULA .
+En composant ce foncteur avec le foncteur FORMULA  donnÃ© par
+FORMULA 
+(voir §REF ) on obtient :
+Définition 7 On notera FORMULA  le foncteur
+FORMULA 
+donnÃ© sur les objets par FORMULA .
+
+Proposition 3 
+On suppose que FORMULA  est une famille rÃ©guliÃ¨re de diviseurs sur FORMULA , et que FORMULA  est un FORMULA -faisceau localement libre de rang fini sur FORMULA . Alors le faisceau parabolique sur FORMULA  associÃ© FORMULA  est un fibrÃ© parabolique sur FORMULA  (au sens de la dÃ©finition REF ).
+
+Soit FORMULA  une facette
+correspondant Ã  la donnÃ©e de FORMULA , FORMULA , et de la famille
+FORMULA  (voir dÃ©finition REF ). Il s'agit de calculer l'homologie du complexe
+FORMULA 
+vu que le foncteur FORMULA  commute Ã  tout foncteur conservant les sommes
+directes. Or il est clair d'aprÃ¨s la dÃ©finition REF  que FORMULA  et donc :
+FORMULA 
+Le lemme REF  montre qu'on doit calculer l'homologie du complexe
+FORMULA 
+Le foncteur FORMULA  Ã©tant exact (en effet FORMULA  est
+affine donc FORMULA  est exact [{{cite:5da5afd7-b6bb-4c5c-aad9-f9166b4c6a72}} 1.3.2], et FORMULA  est diagonalisable), on trouve donc
+FORMULA 
+Comme FORMULA  est une famille rÃ©guliÃ¨re de diviseurs sur FORMULA , il en est de mÃªme, d'aprÃ¨s le lemme REF , pour FORMULA . La dÃ©finition REF  d'une facette impose que FORMULA , FORMULA , et le lemme REF  montre que la famille FORMULA  est Ã©galement une famille rÃ©guliÃ¨re de diviseurs.
+On dÃ©duit du lemme REF  (ii) que FORMULA  est nul pour FORMULA , et est isomorphe Ã  FORMULA  pour FORMULA . On peut conclure Ã  l'aide du lemme suivant :
+Lemme 8 Pour tout FORMULA -faisceau FORMULA  localement libre de rang fini sur FORMULA , le faisceau
+FORMULA  est localement libre comme FORMULA -module.
+
+Vu la commutativitÃ© du diagramme
+@R=12pt
+iJi Ei [d]q[r]jJ  Y[d]p
+iJ Di[r]iJ  X
+
+on a FORMULA , et il s'agit donc de vÃ©rifier que FORMULA  est localement libre. Comme FORMULA  est diagonalisable, c'est un facteur direct de
+FORMULA , et vu que FORMULA  localement libre de rang fini sur FORMULA , il suffit de prouver que FORMULA  est fini et plat. Il est clairement fini comme composÃ© de l'immersion fermÃ©e
+FORMULA  (on rappelle que pour tout FORMULA  on a FORMULA ) et de FORMULA  (fini car FORMULA  l'est). Pour la platitude on peut clairement supposer FORMULA  affine, soit FORMULA . Mais alors
+FORMULA . Or pour FORMULA  (resp. FORMULA ) FORMULA  (resp. FORMULA ) est unitaire,
+donc FORMULA  (resp. FORMULA ) est plat sur FORMULA  (resp. sur FORMULA ), donc FORMULA  est plat sur FORMULA , qui est l'anneau dÃ©finissant FORMULA .
+
+FibrÃ©s paraboliques et champ des racines
+Soit FORMULA  un schÃ©ma, et FORMULA  un champ de Deligne-Mumford, qu'on supposera toujours localement noethÃ©rien.
+Champ des racines
+Soit FORMULA  un entier supÃ©rieur ou Ã©gal Ã  1, inversible dans FORMULA .
+Définition 8 ({{cite:0f567c58-222d-4e72-953e-9c446e2b7664}},{{cite:31a1d9f8-815b-4a07-8161-2a4c342cd0dd}})
+
+Soit un couple FORMULA  constituÃ© d'un faisceau inversible sur FORMULA  et d'une section de ce faisceau. Soit FORMULA  le champ classifiant les faisceaux inversibles muni d'une section. On appelle champ des racines FORMULA -iÃ¨mes de FORMULA  le champ
+FORMULA 
+oÃ¹ le produit fibrÃ© est pris par rapport aux morphismes FORMULA , et l'Ã©lÃ©vation Ã  la puissance FORMULA  : FORMULA .
+
+Soit FORMULA  un diviseur de Cartier effectif sur FORMULA , FORMULA  la section canonique de FORMULA . On note FORMULA  le champ
+FORMULA .
+
+
+Soit FORMULA  un ensemble fini, FORMULA  un ensemble d'entiers FORMULA , inversibles dans FORMULA .
+Définition 9
+
+Soit FORMULA  un ensemble de faisceaux inversibles sur FORMULA  muni chacun d'une section. On note
+FORMULA  le champ
+FORMULA .
+
+Soit
+FORMULA  un ensemble de diviseurs de Cartier effectifs sur FORMULA . On note FORMULA  le champ FORMULA .
+
+
+Proposition 4 
+Soit FORMULA  un ensemble de faisceaux inversibles sur FORMULA  munis de sections.
+Supposons qu'on dispose sur FORMULA  de faisceaux inversibles FORMULA  et
+d'isomorphismes FORMULA .
+Il existe alors un isomorphisme naturel de champs sur FORMULA  :
+FORMULA 
+
+Le cas oÃ¹ FORMULA  est traitÃ© dans {{cite:31a1d9f8-815b-4a07-8161-2a4c342cd0dd}}, version 1, Proposition 3.2, (voir aussi {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}, thÃ©orÃ¨me 4), et le cas gÃ©nÃ©ral en rÃ©sulte immÃ©diatement.
+Corollaire 1 
+Soit FORMULA  un ensemble de sections rÃ©guliÃ¨res de FORMULA , FORMULA  les diviseurs de Cartier correspondants. Alors il existe un isomorphisme naturel de champs sur FORMULA  :
+FORMULA 
+
+DÃ©coule directement de la proposition REF .
+
+La correspondance : Ã©noncÃ©
+Soit FORMULA  un ensemble de faisceaux inversibles sur FORMULA  munis de sections.
+Sur FORMULA , on dispose d'une racine FORMULA -iÃ¨me canonique FORMULA  de FORMULA .
+On note FORMULA  le morphisme canonique.
+Dans le cas particulier oÃ¹ les couples FORMULA  sont associÃ©s Ã  des diviseurs effectifs FORMULA  sur FORMULA  (i.e. FORMULA  pour tout FORMULA ), les relations FORMULA , et le fait que FORMULA  est plat, montrent que les FORMULA  sont des monomorphismes (i.e. les FORMULA  sont des sections rÃ©guliÃ¨res), si bien que les couples FORMULA  sont associÃ©s Ã  des diviseurs de Cartier effectifs FORMULA  sur FORMULA .
+En imitant la construction du §REF  on obtient un foncteur :
+@R=2pt
+  :MOD([r]D/X)[r] PAR1r(X,D)
+F [r] F=*(FO [r]D/X (-rE))
+Théorème 2 
+On suppose que FORMULA  est une famille rÃ©guliÃ¨re de diviseurs sur le champ de Deligne-Mumford FORMULA . Alors le foncteur FORMULA  induit une Ã©quivalence de catÃ©gories tensorielles entre FORMULA  et FORMULA .
+
+
+Bonne dÃ©finition
+Il s'agit de voir que si FORMULA , alors le faisceau parabolique FORMULA  est localement libre. Comme il s'agit d'une question locale pour la topologie Ã©tale sur FORMULA , on peut, quitte Ã  prendre un atlas Ã©tale, supposer que FORMULA  est un schÃ©ma. Quitte Ã  localiser encore de faÃ§on Ã  trivialiser chacun des diviseurs de la famille FORMULA , le corollaire REF  montre qu'on peut supposer que
+FORMULA  est du type FORMULA , oÃ¹ FORMULA  est un revÃªtement de Kummer ramifiÃ© le long de FORMULA . Mais alors la proposition REF  permet de conclure.
+
+Ãquivalence rÃ©ciproque
+Soit FORMULA . On pose
+FORMULA 
+oÃ¹ FORMULA  dÃ©signe la cofin (coend), voir {{cite:afbabd4b-67f6-4a0b-812f-5bb8190d4be9}}.
+C'est Ã  priori un Ã©lÃ©ment de FORMULA , mais on va voir que c'est en fait un faisceau localement libre.
+Lemme 9 
+On fixe FORMULA .
+Soient les foncteurs
+@R=2pt
+PAR1r(X,D) PAR(1rj)ji(
+[ri]Di/X,(i*Dj)ji)
+Li :E[r] LiE=li1riZ i*(Eli)Nirili
+RiF :(lii*(FNi-liri)) F : Ri [l]
+oÃ¹ FORMULA  dÃ©signe la projection canonique, FORMULA  la racine FORMULA -Ã¨me canonique de FORMULA  sur
+FORMULA , et FORMULA  la restriction de FORMULA  via le foncteur FORMULA  induit par FORMULA .
+Ces foncteurs sont adjoints, FORMULA  Ã©tant adjoint Ã  gauche et FORMULA  adjoint Ã  droite.
+
+Cela rÃ©sulte de la dÃ©finition des cofins.
+Lemme 10 Le foncteur FORMULA  envoie FORMULA  sur FORMULA .
+
+On procÃ¨de par rÃ©currence sur FORMULA .
+On commence par le cas oÃ¹ FORMULA . Le cas oÃ¹ FORMULA  est un schÃ©ma est traitÃ© dans {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}. Le cas gÃ©nÃ©ral s'y ramÃ¨ne grÃ¢ce au lemme suivant :
+Lemme 11 Soit FORMULA  un champ de Deligne-Mumford, FORMULA  un diagramme, FORMULA  un atlas Ã©tale.
+Si FORMULA  existe dans
+FORMULA , alors FORMULA 
+existe dans FORMULA .
+
+C'est Ã  peu prÃ¨s direct Ã  partir de la description suivante des objets de
+FORMULA  : soit FORMULA , et FORMULA  le groupoÃ¯de correspondant. La catÃ©gorie FORMULA  est Ã©quivalente Ã  la catÃ©gorie des couples FORMULA , oÃ¹ FORMULA , et FORMULA  est une donnÃ©e de descente, i.e. vÃ©rifie la condition de descente : FORMULA , oÃ¹ FORMULA  dÃ©signent respectivement, les projections et la multiplication dans le groupoÃ¯de.
+On revient au cas gÃ©nÃ©ral (FORMULA  quelconque) :
+pour montrer que FORMULA  est un
+faisceau parabolique localement libre, le plus simple est d'appliquer la proposition REF . La partie FORMULA  du critÃ¨re rÃ©sulte du cas FORMULA . Pour vÃ©rifier la partie FORMULA  de ce critÃ¨re, on fixe FORMULA , et FORMULA . Il s'agit de voir que
+FORMULA 
+est un objet de FORMULA . Mais comme le foncteur
+FORMULA  est adjoint Ã  gauche (lemme REF ),
+donc exact Ã  droite, et FORMULA , cela rÃ©sulte de l'hypothÃ¨se de rÃ©currence.
+
+Preuve de l'Ã©quivalence
+Lemme 12 Le foncteur FORMULA  envoie FORMULA  sur FORMULA , et est une Ã©quivalence rÃ©ciproque de la restriction de FORMULA  Ã  FORMULA .
+
+On commence par remarquer que si la premiÃ¨re assertion est vÃ©rifiÃ©e, la seconde Ã  un sens, et est vraie : en effet on peut se contenter de vÃ©rifier que FORMULA  et FORMULA  sont des isomorphismes aprÃ¨s Ã©valuation des variables, et on se ramÃ¨ne donc au cas oÃ¹ FORMULA . C'est de nouveau un problÃ¨me local pour la topologie Ã©tale, et on peut donc se ramener au cas oÃ¹ FORMULA  est un schÃ©ma. Pour ce dernier cas, on renvoie Ã  {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}.
+On montre l'ensemble des deux assertions par rÃ©currence sur FORMULA .
+Pour le cas oÃ¹ FORMULA  : la premiÃ¨re assertion rÃ©sulte de la partie REF , la seconde s'ensuit.
+Pour FORMULA  quelconque on applique l'hypothÃ¨se de rÃ©currence qui permet de dire que FORMULA , et Ã  nouveau la partie REF  permet de conclure Ã  la validitÃ© de la premiÃ¨re assertion, et donc de la seconde.
+
+Preuve du caractÃ¨re tensoriel
+Vu l'expression du produit tensoriel donnÃ©e §REF , le fait que l'Ã©quivalence soit compatible au produit tensoriel rÃ©sulte de la formule de Fubini pour les cofins (voir {{cite:afbabd4b-67f6-4a0b-812f-5bb8190d4be9}}, et {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}} pour le dÃ©tail dans le cas oÃ¹ FORMULA ).
+
+Structure locale des fibrÃ©s paraboliques
+Corollaire 2 
+Avec les notations du thÃ©orÃ¨me REF , pour tout fibrÃ© parabolique FORMULA , et tout point FORMULA , il existe un voisinage Ã©tale FORMULA  de FORMULA  tel que FORMULA  soit une somme directe finie de fibrÃ©s paraboliques inversibles.
+
+Vu le thÃ©orÃ¨me REF , il suffit de montrer la propriÃ©tÃ© correspondante pour les fibrÃ©s champÃªtres, mais alors la preuve de {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}, Proposition 3.2, s'adapte immÃ©diatement.
+Remarque 3
+
+Si FORMULA  est de plus un schÃ©ma, on peut imposer Ã  FORMULA  d'Ãªtre un ouvert pour la topologie de Zariski.
+
+La preuve montre qu'on peut choisir les fibrÃ©s paraboliques de la forme FORMULA , pour FORMULA . En termes champÃªtres, si FORMULA , oÃ¹ FORMULA  est un anneau local, alors FORMULA , voir §REF .
+
+On suppose de plus que FORMULA  une famille de diviseurs Ã  croisements normaux simples. Alors la proposition REF  et le corollaire REF  montrent que si les composantes du faisceau parabolique FORMULA  sont localement libres, il est localement abÃ©lien au sens de {{cite:c973b0a4-9325-484a-bec0-a597c75cf41d}}, Definition 2.2.
+
+
+
+Groupe de Picard des champs des racines
+Le corollaire suivant est Ã©noncÃ©, dans le cas particulier des courbes tordues, dans {{cite:d7308c2c-397c-4995-b26b-413462d6dc68}}. Le thÃ©orÃ¨me REF  n'est pas indispensable pour le dÃ©montrer (on peut aussi utiliser {{cite:31a1d9f8-815b-4a07-8161-2a4c342cd0dd}}, Corollary 3.1.2), mais en fournit une preuve commode.
+Corollaire 3 
+Avec les notations du thÃ©orÃ¨me REF , on a une suite exacte naturelle
+FORMULA 
+
+On peut supposer les FORMULA  connexes (en effet si FORMULA  et FORMULA  sont deux diviseurs de Cartier effectifs Ã  supports disjoints, et FORMULA  est un entier, alors
+FORMULA ).
+On note FORMULA  la racine FORMULA -Ã¨me canonique de FORMULA  sur FORMULA , et FORMULA  le morphisme naturel. On va montrer plus prÃ©cisÃ©ment : il existe un unique morphisme surjectif FORMULA  envoyant FORMULA  sur le gÃ©nÃ©rateur canonique de la FORMULA -Ã¨me composante, et dont le noyau est FORMULA .
+Il suffit de le montrer pour FORMULA . En effet en supposant cette propriÃ©tÃ© vÃ©rifiÃ©e dans ce cas, le morphisme naturel
+FORMULA 
+envoie FORMULA  sur le gÃ©nÃ©rateur canonique de la FORMULA -Ã¨me composante, et est donc surjectif. Comme une rÃ©currence immÃ©diate donne l'Ã©galitÃ© des cardinaux, c'est un isomorphisme.
+Reste Ã  voir le cas oÃ¹ FORMULA . Cela rÃ©sulte immÃ©diatement de l'assertion : pour tout faisceau inversible FORMULA  sur FORMULA , il existe un unique entier FORMULA  dans FORMULA  tel qu'il existe FORMULA  faisceau inversible sur FORMULA  tel que FORMULA . En traduisant en termes de fibrÃ©s paraboliques grÃ¢ce au thÃ©orÃ¨me  REFen fait la version Ã  indice unique montrÃ©e dans {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}. on voit qu'il faut montrer : pour tout faisceau parabolique inversible FORMULA  Ã  poids dans FORMULA , il existe un unique entier FORMULA  dans FORMULA  tel qu'il existe FORMULA  faisceau inversible sur FORMULA  tel que FORMULA  (le faisceau parabolique Ã  structure spÃ©ciale associÃ© Ã  FORMULA , voir §REF ). La donnÃ©e de FORMULA  Ã©quivaut Ã  celle d'une filtration
+FORMULA 
+telle que pour FORMULA , le faisceau FORMULA  est localement libre sur FORMULA . Ceci implique l'Ã©galitÃ© des rangs :
+FORMULA 
+mais comme FORMULA  est inversible et FORMULA  est connexe, il existe un unique entier FORMULA  dans FORMULA  tel que FORMULA , et pour cet entier FORMULA .
+
+Image directe de fibrÃ©s paraboliques
+On se donne FORMULA  un schÃ©ma de base, FORMULA  (respectivement FORMULA ) un FORMULA -champ de Deligne-Mumford localement noethÃ©rien, FORMULA  (respectivement FORMULA ) une famille rÃ©guliÃ¨re de diviseurs sur FORMULA  (respectivement sur FORMULA ), et FORMULA  (respectivement FORMULA ) une famille d'entiers (supÃ©rieurs Ã  1, inversibles dans FORMULA ).
+On fixe de plus FORMULA  un FORMULA -morphisme reprÃ©sentable fini et plat, FORMULA  une application, vÃ©rifiant
+
+ FORMULA
+
+ FORMULA
+
+Enfin, on note FORMULA  le morphisme naturel.
+Définition 10 Sous les conditions ci-dessus, on dÃ©finit l'image directe d'un fibrÃ© parabolique par la formule :
+@R=2pt
+p* : Par1s(Y,E) [r] Par1r(X,D)
+E[r] (p*E)=(lrp*(Els))
+
+Proposition 5 Les foncteurs d'images directes champÃªtre et parabolique sont compatibles : on a un isomorphisme fonctoriel en FORMULA  : FORMULA .
+
+On note FORMULA  et FORMULA  les morphismes canoniques. On a un 2-isomorphisme naturel FORMULA .
+Pour tout FORMULA  dans FORMULA  (respectivement FORMULA  dans FORMULA ), soit FORMULA  (respectivement FORMULA  la racine FORMULA -Ã¨me (respectivement FORMULA -Ã¨me) canonique de FORMULA  (respectivement de FORMULA ) sur FORMULA  (respectivement sur FORMULA , elle est muni de sa section canonique. Le morphisme FORMULA  est dÃ©fini par la condition : pour tout FORMULA  dans FORMULA , FORMULA , et la condition correspondante Ã©vidente sur les sections.
+On fixe FORMULA  et FORMULA , et on calcule :
+FORMULA 
+d'oÃ¹ la conclusion.
+
+Groupe fondamental modÃ©rÃ© comme groupe fondamental champÃªtre
+Groupe fondamental champÃªtre
+Noohi ({{cite:4b022f63-fd7a-40fa-8903-c088d31e068a}}) et Zoonekynd ({{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}) ont Ã©tendu la thÃ©orie classique du groupe fondamental profini de {{cite:89d91234-e8ce-4e56-9076-c94c796798fe}} du cas d'un schÃ©ma Ã  celui d'un champ de Deligne-Mumford. On rappelle briÃ¨vement leur dÃ©finition.
+Définition 11 ({{cite:89d91234-e8ce-4e56-9076-c94c796798fe}},{{cite:4b022f63-fd7a-40fa-8903-c088d31e068a}},{{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}) 
+Soit FORMULA  un champ de Deligne-Mumford. On note FORMULA  la 2-sous-catÃ©gorie pleine de la 2-catÃ©gorie FORMULA  des champs sur FORMULA  dont les objets sont les morphismes FORMULA  reprÃ©sentables Ã©tales finis. On note FORMULA  la catÃ©gorie associÃ©e (i.e. la catÃ©gorie dont les morphismes sont les classes de 2-isomorphisme de 1-morphismes dans FORMULA ).
+
+Théorème 3 ({{cite:4b022f63-fd7a-40fa-8903-c088d31e068a}} Theorem 4.2, {{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}} §3) 
+Si FORMULA  est un champ de Deligne-Mumford connexe, et FORMULA  un point gÃ©omÃ©trique, la paire FORMULA  est une catÃ©gorie galoisienne au sens de {{cite:89d91234-e8ce-4e56-9076-c94c796798fe}}.
+
+Définition 12 
+Avec les notations du thÃ©orÃ¨me, on notera FORMULA  le groupe fondamental de la catÃ©gorie galoisienne FORMULA .
+
+
+Groupe fondamental modÃ©rÃ©
+On rappelle le rÃ©sultat suivant :
+Théorème 4 ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} Theorem 2.4.2) 
+
+Soit FORMULA  un schÃ©ma localement noethÃ©rien, normal, connexe, FORMULA  un diviseur Ã  croisements normaux, et FORMULA  un point gÃ©omÃ©trique, FORMULA .
+La catÃ©gorie FORMULA  des revÃªtements de FORMULA  modÃ©rÃ©ment ramifiÃ©s le long de FORMULA  est une catÃ©gorie galoisienne, dont on note FORMULA  le groupe fondamental.
+
+On va se restreindre Ã  Ã©tudier le cas d'une famille de diviseurs Ã  croisements normaux simples (dÃ©finition REF ). Le but de ce paragraphe est de dÃ©montrer :
+Proposition 6 
+Avec les hypothÃ¨ses du thÃ©orÃ¨me REF , si on suppose de plus FORMULA  dÃ©fini sur un corps FORMULA , et FORMULA  est la rÃ©union d'une famille FORMULA  de diviseurs irrÃ©ductibles Ã  croisements normaux simples, alors il existe un isomorphisme naturel :
+FORMULA 
+oÃ¹ la limite est prise sur les multi-indices FORMULA  d'entiers non divisibles par la caractÃ©ristique FORMULA  de FORMULA .
+
+Dans le reste de ce paragraphe , on conservera les hypothÃ¨ses de la proposition REF . On va montrer que l'on a une Ã©quivalence naturelle de catÃ©gories galoisiennesla notion de 2-limite filtrÃ©e de catÃ©gories utilisÃ©e ici et par la suite est prÃ©cisÃ©e dans l'appendice  :
+FORMULA 
+La compatibilitÃ© de cet isomorphisme aux foncteurs fibres induits par FORMULA  impliquera bien la proposition  REFComme FORMULA  admet FORMULA  pour espace des modules, FORMULA  dÃ©finit aussi un point gÃ©omÃ©trique de ce champ.
+
+Le foncteur  FORMULA
+Lemme 13 
+Soit FORMULA  dans FORMULA  galoisien de groupe FORMULA  (au sens de {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} 2.4.5), de multi-indice de ramification FORMULA . Alors le morphisme naturel de champs FORMULA  est un isomorphisme.
+
+Cela rÃ©sulte, essentiellement, de l'hypothÃ¨se que FORMULA  est Ã  croisements normaux simples, et du lemme d'Abhyankar.
+En dÃ©tail : on prÃ©cise d'abord la dÃ©finition du morphisme naturel FORMULA . Soit FORMULA  la famille de diviseurs sur FORMULA  dÃ©fini par FORMULA , si bien que FORMULA .
+Soit FORMULA  un schÃ©ma, et FORMULA  un objet de
+FORMULA , i.e. une paire constituÃ©e d'un FORMULA -torseur FORMULA  et d'un morphisme FORMULA -Ã©quivariant FORMULA . On a les quotients schÃ©matiques FORMULA  et FORMULA , si bien qu'il existe un unique morphisme FORMULA  tel que FORMULA . Pour tout FORMULA , le faisceau FORMULA  dÃ©finit une racine FORMULA -Ã¨me de FORMULA  sur FORMULA , comme ce faisceau est FORMULA -Ã©quivariant, on peut le descendre canoniquement le long du FORMULA -torseur FORMULA , et les racines FORMULA -iÃ¨mes FORMULA  de FORMULA  sur FORMULA  dÃ©finissent un objet de FORMULA .
+Pour montrer que ce morphisme FORMULA  est
+un isomorphisme, il suffit de le vÃ©rifier sur les fibres gÃ©omÃ©triques, et on
+peut donc supposer que FORMULA , oÃ¹ FORMULA  est un anneau local noethÃ©rien strictement hensÃ©lien. Comme c'est Ã©vident en dehors du support de FORMULA ,
+on peut supposer de plus FORMULA  rÃ©gulier.
+On choisit pour tout FORMULA  une Ã©quation locale FORMULA  de FORMULA .
+On pose FORMULA , oÃ¹ les
+FORMULA  sont des indÃ©terminÃ©es, et FORMULA . Le morphisme FORMULA  est modÃ©rÃ©ment ramifiÃ© ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} Example 2.2.4). Comme les FORMULA  sont tous dans l'idÃ©al maximal FORMULA  de FORMULA , FORMULA  est un anneau local. Vu que la famille FORMULA  est Ã  croisements normaux simples, FORMULA  est mÃªme rÃ©gulier ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}, Proposition 1.8.5).
+On a encore FORMULA , oÃ¹ FORMULA  est une FORMULA -algÃ¨bre finie, donc un produit fini d'anneaux locaux strictement hensÃ©liens (en effet l'hypothÃ¨se de modÃ©ration impose que les extensions rÃ©siduelles sont sÃ©parables [{{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} Definition 2.1.2], donc ici triviales). On rÃ©duit facilement le problÃ¨me au cas oÃ¹ FORMULA  est irrÃ©ductible. Vu que les FORMULA  sont non nuls rÃ©siduellement, on peut choisir des Ã©quations FORMULA  des FORMULA  telles que FORMULA  dans FORMULA . Celles-ci dÃ©finissent un FORMULA -morphisme FORMULA .
+Soit FORMULA  le produit fibrÃ© de FORMULA  et FORMULA  sur FORMULA  dans FORMULA , c'est Ã  dire la normalisation du produit fibrÃ© schÃ©matique FORMULA . On a donc FORMULA , oÃ¹ FORMULA  est la clÃ´ture intÃ©grale de FORMULA  dans l'extension des anneaux de fractions totaux FORMULA . Comme celle-ci est finie Ã©tale d'aprÃ¨s l'hypothÃ¨se de modÃ©ration, le morphisme FORMULA  est fini. Comme FORMULA  est modÃ©rÃ©, toute composante irrÃ©ductible de FORMULA  domine FORMULA , et donc toute composante irrÃ©ductible de FORMULA  domine FORMULA . On peut donc appliquer le thÃ©orÃ¨me de puretÃ© de Zariski-Nagata ({{cite:89d91234-e8ce-4e56-9076-c94c796798fe}}, X ThÃ©orÃ¨me 3.1) pour voir que le lieu oÃ¹ FORMULA  est ramifiÃ© est de pure codimension 1. Mais le lemme d'Abhyankar ({{cite:89d91234-e8ce-4e56-9076-c94c796798fe}}, X Lemme 3.6) montre que ce morphisme n'est pas non plus ramifiÃ© en codimension 1. Il est donc Ã©tale, et comme FORMULA  est strictement local, c'est un revÃªtement trivial de FORMULA .
+Comme FORMULA  est sÃ©parÃ© (car affine), la section dÃ©finie par le morphisme FORMULA  ci-dessus est une immersion fermÃ©e. L'Ã©galitÃ© des dimensions, et le fait que FORMULA  et FORMULA  sont rÃ©duits (car normaux), impliquent que cette section identifie FORMULA  Ã  une composante irrÃ©ductible de FORMULA . Donc le morphisme FORMULA  construit au dÃ©part est en fait un isomorphisme au dessus de FORMULA . Le groupe FORMULA  s'identifie canoniquement Ã  FORMULA , et on conclut grÃ¢ce au corollaire REF  (ou plutÃ´t, grÃ¢ce Ã  sa preuve, qui donne une version explicite de l'isomorphisme).
+Lemme 14 
+Soit FORMULA  dans un objet de FORMULA , FORMULA  un objet galoisien de FORMULA , de groupe FORMULA , dominant FORMULA , FORMULA  les indices de ramification de FORMULA , FORMULA  le groupe de Galois de FORMULA . Le morphisme de champs FORMULA  est Ã©tale, et composÃ© avec l'isomorphisme canonique FORMULA  dÃ©fini dans la proposition REF  il dÃ©finit un objet de FORMULA , qui est, Ã  isomorphisme prÃ¨s, indÃ©pendant du choix de FORMULA .
+
+Définition 13 On notera FORMULA  l'objet de FORMULA  dÃ©fini dans le lemme REF .
+
+Il est clair qu'on a en fait dÃ©fini un foncteur
+FORMULA 
+
+Le foncteur  FORMULA
+Lemme 15 
+Soit FORMULA  une famille
+d'entiers non divisibles par la caractÃ©ristique FORMULA  de FORMULA 
+et FORMULA  un revÃªtement Ã©tale.
+Soit FORMULA  la fermeture intÃ©grale de FORMULA  dans FORMULA .
+
+Il existe un unique morphisme de champs FORMULA  faisant commuter le diagramme
+@R=2pt
+ T@.>[r] [dd] N(T)[dd]
+ [r]D/X[r] X
+et ce morphisme est surjectif.
+
+Le morphisme canonique FORMULA  est un revÃªtement
+modÃ©rÃ©ment ramifiÃ© de FORMULA  le long de FORMULA , et le foncteur obtenu
+@R=2pt
+ Rev([r]D/X)[r]RevD (X)
+commute au produit fibrÃ©.
+
+Si de plus FORMULA  est galoisien de groupe FORMULA , FORMULA  l'est Ã©galement, de multi-indice de ramification FORMULA  divisant FORMULA , et le morphisme
+FORMULA  dÃ©fini dans le lemme REF  s'inscrit dans un diagramme cartÃ©sien :
+@R=2pt
+ T[r] [dd]@[rdd]| N(T)[dd]
+ [r]D/X[r] [r']D/X
+
+
+
+Pour l'existence et l'unicitÃ© du morphisme : soit FORMULA  un atlas Ã©tale, et FORMULA  le groupoÃ¯de correspondant. Il rÃ©sulte de {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} Proposition 1.8.5 et {{cite:89d91234-e8ce-4e56-9076-c94c796798fe}} ExposÃ© I, Corollaire 9.10, que FORMULA  et FORMULA  sont normaux. L'affirmation rÃ©sulte alors de la propriÃ©tÃ© universelle de la fermeture intÃ©grale ({{cite:9dc99bb7-a55e-448a-a35d-c58b32427f86}} 6.3.9).
+Pour montrer la surjectivitÃ©, on peut supposer FORMULA , oÃ¹ FORMULA  est un anneau. On pose FORMULA , oÃ¹ les FORMULA  sont des indÃ©terminÃ©es, et FORMULA  (quitte Ã  renommer FORMULA , on peut supposer qu'aucun des FORMULA  n'est inversible). D'aprÃ¨s le corollaire REF  il existe un isomorphisme naturel de champs sur FORMULA  : FORMULA .
+Posons FORMULA , c'est un atlas Ã©tale de FORMULA . De plus FORMULA  est fini (car FORMULA  et FORMULA  le sont) et FORMULA  est sÃ©parÃ© (car affine), et donc FORMULA  est fini, et en particulier entier. Comme ce morphisme est de plus dominant (car FORMULA  est surjectif, et FORMULA  est birationnel), il est surjectif, d'aprÃ¨s le thÃ©orÃ¨me de Cohen-Seidenberg.
+
+FORMULA  est modÃ©rÃ©ment ramifiÃ© le long de FORMULA  : il faut vÃ©rifier les cinq conditions de la DÃ©finition 2.2.2 de {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}.
+
+FORMULA  est fini : Ã§a rÃ©sulte de la finitude de la fermeture intÃ©grale d'un anneau noethÃ©rien normal dans une extension sÃ©parable finie ({{cite:ccc0dacb-bb57-4220-8a91-474719fc8a84}}, V, Proposition 18, Corollaire 1).
+
+FORMULA  est Ã©tale au dessus de FORMULA  : posons FORMULA , c'est un revÃªtement Ã©tale de FORMULA , et comme FORMULA  est normal, FORMULA  s'identifie d'aprÃ¨s {{cite:9c928930-3bde-405b-80db-d69780466b7a}}, Corollaire 18.10.12.Ã  la fermeture intÃ©grale de FORMULA  dans FORMULA , qui n'est autre que FORMULA .
+
+Toute composante irrÃ©ductible de FORMULA  domine FORMULA  :
+les composantes irrÃ©ductibles de FORMULA  sont les mÃªmes que celle de son ouvert dense FORMULA , or FORMULA  Ã©tant Ã©tale, toute composante irrÃ©ductible de FORMULA  domine FORMULA .
+
+FORMULA  est normal : clair d'aprÃ¨s {{cite:9dc99bb7-a55e-448a-a35d-c58b32427f86}} Proposition 6.3.7, ou simplement d'aprÃ¨s la propriÃ©tÃ© universelle dÃ©finissant FORMULA .
+
+Pour tout point gÃ©nÃ©rique FORMULA  de FORMULA , FORMULA  est modÃ©rÃ©ment ramifiÃ© au dessus de FORMULA  : c'est Ã©galement clair d'aprÃ¨s FORMULA , qui permet d'appliquer {{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} Lemma 2.2.5, vu qu'un revÃªtement de Kummer est modÃ©rÃ©ment ramifiÃ© ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}} Example 2.2.4).
+On en tire Ã©galement la propriÃ©tÃ© sur les indices de ramification du FORMULA .
+
+Le foncteur obtenu commute au produit fibrÃ© : donnÃ©s FORMULA , FORMULA  deux revÃªtements Ã©tales, on a un morphisme canonique FORMULA  (produit fibrÃ© schÃ©matique), comme ce morphisme est entier et birationnel, et FORMULA  est normal, il identifie FORMULA  Ã  la normalisation de FORMULA , qui par dÃ©finition est le produit fibrÃ© de FORMULA  et FORMULA  sur FORMULA  dans FORMULA .
+
+La premiÃ¨re assertion rÃ©sulte de la seconde affirmation de FORMULA .
+Pour la seconde assertion, il suffit de remarquer que le morphisme naturel
+FORMULA  est un morphisme birationnel de revÃªtements Ã©tales de FORMULA , c'est donc un isomorphisme d'aprÃ¨s {{cite:9c928930-3bde-405b-80db-d69780466b7a}}, Corollaire 18.10.12.
+
+Le lemme REF  permet de poser :
+Définition 14 On dÃ©finit un foncteur FORMULA  sur les objets en posant, pour une famille FORMULA  d'entiers non divisibles par la caractÃ©ristique FORMULA  de FORMULA  : FORMULA .
+
+
+Conclusion
+[Preuve de la proposition REF ]
+Il suffit de montrer que le foncteur FORMULA  est une Ã©quivalence.
+Le fait qu'un revÃªtement modÃ©rÃ© est par dÃ©finition normal permet de dÃ©finir une transformation naturelle FORMULA , et la propriÃ©tÃ© universelle de la normalisation montre que c'est un isomorphisme.
+Le lemme REF  (ii) permet Ã  son tour de dÃ©finir une transformation naturelle FORMULA  dans FORMULA , et le point (iii) montre que c'est un isomorphisme pour FORMULA  galoisien, et on en dÃ©duit que c'est vrai pour tout objet. Donc FORMULA  et FORMULA  sont des Ã©quivalences de catÃ©gories rÃ©ciproques.
+
+Faisceaux localement constants et fibrÃ©s finis sur un champ de Deligne-Mumford
+Dans cette partie, on fixe Ã  nouveau un champ de Deligne-Mumford localement noethÃ©rien FORMULA .
+Topologies
+La dÃ©finition suivante est une adaptationje remercie l'auteur pour avoir fourni le fichier source de son texte, me permettant ainsi de reproduire les diagrammes de {{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}, Lemme 1.2.
+Définition 15 On dÃ©finit le site Ã©tale FORMULA  (resp. le site Ã©tale fini FORMULA )
+du champ FORMULA  comme le site dont la catÃ©gorie sous-jacente a pour objets les morphismes reprÃ©sentables Ã©tales FORMULA  d'un champ de Deligne-Mumford vers FORMULA , a pour flÃ¨ches les classes d'isomorphismes de couples  FORMULA
+FORMULA 
+oÃ¹ FORMULA  est un morphisme reprÃ©sentable, FORMULA  un 2-isomorphisme,
+et dont les recouvrements sont les familles Ã©pimorphiques (resp. les familles Ã©pimorphiques FORMULA  constituÃ©e de morphismes finis).
+
+On parlera aussi de topologie Ã©tale pour FORMULA , et de topologie Ã©tale finie globale pour FORMULA .
+Remarque 4 ({{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}} Lemme 1.2) 
+
+On obtient une topologie Ã©quivalente Ã  FORMULA  si dans la dÃ©finition des objets, on impose Ã  FORMULA  d'Ãªtre un schÃ©ma.
+
+
+SystÃ¨mes locaux ensemblistes et groupe fondamental
+Zoonekynd ({{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}) a remarquÃ© que l'on pouvait interprÃ©ter la dÃ©finition
+REF  comme un cas particulier du groupe fondamental d'un topos donnÃ©e par Leroy ({{cite:54576dfc-0fcf-46c7-9569-102597a55b28}}).
+SystÃ¨mes locaux ensemblistes
+Définition 16 ({{cite:54576dfc-0fcf-46c7-9569-102597a55b28}},{{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}) 
+DonnÃ© un topos FORMULA , on dÃ©finit la sous-catÃ©gorie FORMULA 
+(resp. FORMULA ) comme celle des objets localement constants
+(resp. localement constants finis) et FORMULA 
+(resp. FORMULA ) comme celle des unions disjointes d'objets de
+FORMULA  (resp. de FORMULA ).
+
+FORMULA  (resp. FORMULA ) est un topos galoisien
+(resp. un topos galoisien fini).
+Si on suppose FORMULA  connexe, et que l'on fixe un point gÃ©omÃ©trique
+FORMULA  de FORMULA , on associe canoniquement Ã  cette catÃ©gorie un progroupe strict FORMULA  (resp. un groupe profini FORMULA ), vÃ©rifiant FORMULA 
+(resp. FORMULA ), les ensembles Ã©tant munis d'action continues des pro-groupes considÃ©rÃ©s. De plus FORMULA  est une catÃ©gorie galoisienne dont le groupe fondamental s'identifie Ã  FORMULA .
+
+SystÃ¨mes locaux ensemblistes et revÃªtements
+On dispose d'un foncteur naturel FORMULA  donnÃ© sur les objets par FORMULA , oÃ¹
+FORMULA  est donnÃ© comme foncteur sur les objets par FORMULA . Pour voir que cela dÃ©finit bien un prÃ©faisceau d'ensembles, on peut, en utilisant la remarque REF , supposer que FORMULA  est un schÃ©ma, mais Ã§a rÃ©sulte alors du fait que FORMULA  est reprÃ©sentable, donc que FORMULA  est Ã©galement un schÃ©ma. Le fait que FORMULA  est effectivement un faisceau sur FORMULA  dÃ©coule immÃ©diatement du fait que c'est vrai lorsque FORMULA  est un schÃ©ma ({{cite:8c697f1c-1a68-4455-92af-12475eadc4e6}}, VII.2, {{cite:4424b9ea-a7d2-4256-ba45-8e4a7c5c79cb}}).
+On dispose Ã©galement d'un foncteur naturel dans la direction opposÃ©e FORMULA . En effet, soit FORMULA  un atlas Ã©tale, FORMULA , et FORMULA  le groupoÃ¯de correspondant. Soit FORMULA , on peut l'interprÃ©ter ({{cite:4424b9ea-a7d2-4256-ba45-8e4a7c5c79cb}}, Example 4.11) comme un faisceau localement constant fini Ã©quivariant sur FORMULA , c'est Ã  dire un couple FORMULA , oÃ¹ FORMULA , et FORMULA  est un isomorphisme vÃ©rifiant la condition de cocycle habituelle. L'Ã©quivalence de catÃ©gories usuelle FORMULA  pour FORMULA , permet d'interprÃ©ter cette donnÃ©e comme un revÃªtement Ã©tale FORMULA , muni d'un isomorphisme FORMULA . En posant FORMULA , on obtient un nouveau groupoÃ¯de FORMULA  et l'on obtient ainsi un champ FORMULA  et mÃªme en fait un objet de FORMULA .
+Théorème 5 ({{cite:f2fc8058-9ed8-48f6-a29c-08c8b665c2f8}}, ThÃ©orÃ¨me 3.1) 
+
+Les foncteurs ci-dessus dÃ©finissent des Ã©quivalence de catÃ©gories rÃ©ciproques
+FORMULA .
+
+Corollaire 4 Si FORMULA  est un champ de Deligne-Mumford connexe, et FORMULA  un point gÃ©omÃ©trique, on a un isomorphisme naturel
+FORMULA 
+
+Remarque 5 FORMULA  porte le nom de groupe fondamental Ã©largi de FORMULA  (voir {{cite:a606b617-966b-4f30-bc03-9690f1c6e4cf}} X 7.6 pour le cas d'un schÃ©ma).
+
+
+InterprÃ©tation Ã  l'aide de la topologie Ã©tale finie globale
+Proposition 7 
+Soit FORMULA  champ de Deligne-Mumford connexe. Le foncteur
+FORMULA  induit un
+isomorphisme de FORMULA 
+sur FORMULA . En particulier, si FORMULA  est un point gÃ©omÃ©trique, on a un isomorphisme naturel
+FORMULA .
+
+Le morphisme de sites FORMULA  induit un morphisme de topos FORMULA  dont l'adjoint Ã  gauche FORMULA  induit un foncteur fidÃ¨lement plein FORMULA , et dont on va montrer que l'image essentielle est FORMULA . Via l'Ã©quivalence FORMULA , ce foncteur s'interprÃ¨te comme la restriction le long du morphisme FORMULA .
+Soit d'abord FORMULA . Il existe une famille couvrante FORMULA  constituÃ©e de morphismes reprÃ©sentables Ã©tales finis telle que pour tout FORMULA , FORMULA  soit constant.
+L'image de FORMULA  est ouverte car le morphisme est Ã©tale, et fermÃ© car il est fini, c'est donc FORMULA  ou FORMULA . On peut donc se ramener Ã  une famille couvrante Ã  un Ã©lÃ©ment FORMULA , revÃªtement qu'on peut supposer de plus galoisien. Soit FORMULA  son groupe de Galois. Alors FORMULA  correspond (via l'Ã©quivalence FORMULA ) Ã  un FORMULA -ensemble FORMULA , qui se dÃ©compose en FORMULA , ses orbites sous FORMULA . Chaque ensemble FORMULA  est fini car FORMULA  l'est, donc correspond (via l'Ã©quivalence FORMULA ) Ã  un FORMULA . Donc FORMULA  s'envoie sur un objet de FORMULA .
+RÃ©ciproquement si FORMULA , alors le thÃ©orÃ¨me REF  montre que FORMULA  dÃ©finit un revÃªtement FORMULA , dont une clÃ´ture galoisienne trivialise FORMULA , donc FORMULA  vient bien d'un objet de FORMULA .
+Corollaire 5 
+Si FORMULA  est un champ de Deligne-Mumford connexe, et FORMULA  un point gÃ©omÃ©trique, on a un isomorphisme naturel
+FORMULA 
+
+
+La catÃ©gorie tannakienne des systÃ¨mes locaux de FORMULA -vectoriels 
+Définition 17 ({{cite:1834fca8-9eb0-4b47-a0d0-8702053a81f0}}, chapitre VI, 1.1.2) 
+DonnÃ© un topos FORMULA  connexe localement connexe, et un corps FORMULA , on dÃ©finit la catÃ©gorie FORMULA  des systÃ¨mes locaux de FORMULA -vectoriels de rang fini.
+
+Si on choisit de plus un point gÃ©omÃ©trique FORMULA ,
+c'est une catÃ©gorie tannakienne. Son groupe de Tannaka est alors l'enveloppe FORMULA -algÃ©brique du progroupe strict FORMULA , au sens suivant.
+Proposition 8 ({{cite:1834fca8-9eb0-4b47-a0d0-8702053a81f0}}, chapitre VI, 1.1.2.1) 
+
+Si FORMULA  et FORMULA  est l'enveloppe FORMULA -algÃ©brique de FORMULA , alors le groupe de Tannaka de FORMULA  est canoniquement isomorphe Ã  FORMULA .
+
+On dÃ©duit du corollaire REF  et de la proposition REF  :
+Corollaire 6 
+Soit FORMULA  un champ de Deligne-Mumford connexe, et FORMULA  un
+point gÃ©omÃ©trique. Le groupe de Tannaka de FORMULA 
+est canoniquement isomorphe au groupe fondamental profini FORMULA .
+
+Remarque 6
+
+Il vaudrait mieux ici parler du FORMULA -groupe proconstant associÃ© Ã  FORMULA .
+
+Le groupe de Tannaka de FORMULA  est, d'aprÃ¨s ce qui prÃ©cÃ¨de, isomorphe l'enveloppe FORMULA -algÃ©brique du groupe fondamental Ã©largi de FORMULA .
+
+
+Lemme 16
+Soit FORMULA  champ de Deligne-Mumford connexe.
+Si FORMULA , alors il existe un revÃªtement FORMULA  de FORMULA  trivialisant FORMULA .
+
+C'est immÃ©diat Ã  partir du corollaire REF .
+
+Foncteur Ã  la Riemann-Hilbert
+DÃ©finition
+DonnÃ© un champ de Deligne-Mumford FORMULA , on peut dÃ©finir la catÃ©gorie FORMULA 
+des fibrÃ©s vectoriels sur FORMULA  comme la catÃ©gorie FORMULA  des morphismes de
+champs de FORMULA  vers le champ FORMULA  des fibrÃ©s vectoriels, parfois appelÃ©s
+reprÃ©sentations du champ FORMULA , c'est le point de vue que l'on a adoptÃ© jusqu'Ã  prÃ©sent.
+La thÃ©orie de la descente des fibrÃ©s vectoriels (et plus
+gÃ©nÃ©ralement des faisceaux quasi-cohÃ©rents {{cite:89d91234-e8ce-4e56-9076-c94c796798fe}}) fournit un point de vue
+alternatif, en effet les faisceaux de FORMULA -modules FORMULA  sur
+FORMULA , tels qu'il existe un atlas Ã©tale FORMULA , tel que FORMULA  est libre, forment une catÃ©gorie Ã©quivalente ({{cite:94f0525e-090a-4e03-af8b-6324da81bd53}}, chapitre 13). On utilisera librement cette Ã©quivalence par la suite.
+La dÃ©finition suivante est inspirÃ©e de {{cite:1834fca8-9eb0-4b47-a0d0-8702053a81f0}} VI 1.2.4.
+Définition 18 Soit FORMULA  un champ de Deligne-Mumford localement noethÃ©rien sur un corps FORMULA .
+On dÃ©finit le foncteur Ã  la Riemann-Hilbert
+FORMULA 
+comme le foncteur composÃ© du foncteur canonique FORMULA  et du foncteur FORMULA  donnÃ© sur les objets par FORMULA .
+
+
+PropriÃ©tÃ©s du foncteur  FORMULA
+Proposition 9 
+Soit FORMULA  un champ de Deligne-Mumford localement noethÃ©rien sur un corps FORMULA .
+
+Le foncteur FORMULA  est fidÃ¨le.
+
+Si FORMULA  est de plus complet, rÃ©duit, et FORMULA  est algÃ©briquement clos, il est fidÃ¨lement plein.
+
+
+Pour FORMULA , on note FORMULA  le morphisme de faisceaux sur FORMULA  dÃ©fini Ã  partir du morphisme canonique FORMULA .
+Quitte Ã  remplacer FORMULA  par FORMULA , il suffit de voir :
+
+FORMULA  est injectif.
+
+Si FORMULA  est complet et rÃ©duit sur FORMULA  algÃ©briquement clos, FORMULA  est bijectif.
+
+Le premier point est Ã©vident car FORMULA  est injectif, et les foncteurs FORMULA  et
+FORMULA  sont exacts Ã  gauche.
+Pour le second point, FORMULA  Ã©tant localement noethÃ©rien (ce qui assure que les composantes connexes sont ouvertes),
+on peut supposer FORMULA  connexe. Le lemme REF  donne l'existence d'un revÃªtement FORMULA  trivialisant FORMULA . On peut supposer FORMULA  galoisien de groupe FORMULA .
+On a alors un diagramme commutatif :
+@R=12pt
+0[r]H0(X,V)[r]-1[dd]H0(X,X,V) H0(Y,-1V)[dd]H0(Y,Y,-1V)@<1ex>[r]pr1-1@<-1ex>[r]pr2-1 H0(YX Y,p-1V)[dd]H0(YX Y,Y,p-1V)
+0[r]H0(X,OXk V)[r]* H0(Y,OYk -1V)@<1ex>[r]pr1*@<-1ex>[r]pr2*H0(YX Y,OYX Yk p-1V)
+oÃ¹ FORMULA  dÃ©signe le morphisme canonique FORMULA .
+FORMULA  Ã©tant encore propre (car fini sur FORMULA ) et rÃ©duit ({{cite:89d91234-e8ce-4e56-9076-c94c796798fe}} I Proposition 9.2) on s'est donc ramenÃ© au cas oÃ¹ FORMULA  est trivial.
+On peut Ã  nouveau supposer FORMULA  connexe, et donc FORMULA , oÃ¹ FORMULA  est le morphisme structurel, et FORMULA  un FORMULA -vectoriel de rang fini. On est alors immÃ©diatement ramenÃ© Ã  FORMULA , et il s'agit de voir que le morphisme naturel FORMULA  est un isomorphisme, mais Ã§a rÃ©sulte du fait que FORMULA  est propre, rÃ©duit, connexe, et FORMULA  algÃ©briquement clos.
+
+FibrÃ©s finis
+Définition 19 
+On appellera schÃ©ma tordu un champ de Deligne-Mumford FORMULA  admettant pour espace des modules un schÃ©ma FORMULA , tel qu'il existe un ouvert dense
+FORMULA  de FORMULA , tel que FORMULA  soit un isomorphisme en restriction Ã  FORMULA .
+
+On adapte les dÃ©finitions de {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, {{cite:bf246e8f-ef80-4e32-8461-2d93ee5a6dd2}} au cas d'un schÃ©ma
+tordu FORMULA  modÃ©rÃ© (au sens de {{cite:1b4c7595-1a6f-4a5f-b4b0-830a0e0b2786}}, dÃ©finition 2.3.2) rÃ©duit sur un corps FORMULA , dont l'espace des modules FORMULA  est propre et connexe sur FORMULA .
+Définition 20 ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, {{cite:bf246e8f-ef80-4e32-8461-2d93ee5a6dd2}}) 
+Un faisceau localement libre FORMULA  sur FORMULA  est dit fini
+s'il existe deux polynÃ´mes distincts FORMULA  Ã  coefficients entiers positifs
+tels que FORMULA .
+
+Pour identifier l'image essentielle du foncteur FORMULA , on va suivre la
+stratÃ©gie de Nori, qui consiste Ã  plonger la catÃ©gorie des fibrÃ©s finis dans
+la catÃ©gorie abÃ©lienne des fibrÃ©s semi-stables sur FORMULA .
+Définition 21 
+Une orbicourbe dans FORMULA  est un morphisme birationnel
+sur son image FORMULA , oÃ¹ FORMULA  est une
+courbe projective, connexe, et lisse sur FORMULA , FORMULA  un
+ensemble de diviseurs de Cartier effectifs rÃ©duits sur FORMULA .
+
+Définition 22 ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, {{cite:bf246e8f-ef80-4e32-8461-2d93ee5a6dd2}}) 
+
+Un faisceau localement libre FORMULA  sur FORMULA  est dit semi-stable
+s'il est semi-stable de degrÃ© 0 en restriction Ã  toute orbicourbe dans FORMULA .
+On notera FORMULA  la sous-catÃ©gorie pleine de FORMULA  des faisceaux localement libres semi-stables sur FORMULA .
+
+Proposition 10 
+La catÃ©gorie FORMULA  est une catÃ©gorie abÃ©lienne.
+
+La preuve est identique Ã  celle de {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, Lemma 3.6, (b) : Ã©tant
+donnÃ© un morphisme FORMULA  dans FORMULA , le
+point clÃ© est de voir que FORMULA  et FORMULA  sont localement
+libres. Il est aisÃ© de voir qu'ils sont sans torsion les arguments gÃ©nÃ©raux de {{cite:6e6ee1ba-3084-4b21-a243-85b72bffbaee}}, §3 s'appliquent ici, Ã  l'aide de {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}, §5 pour les adapter au cas des orbicourbes ; comme c'est par ailleurs bien connu dans le cadre -Ã©quivalent- des fibrÃ©s paraboliques sur les courbes (voir {{cite:a13ce129-6aae-4d83-8510-717ef290ec56}}), nous ne rentrons pas dans les dÃ©tails, et donc localement libres si FORMULA  est une orbicourbe. Dans le cas gÃ©nÃ©ral, FORMULA  Ã©tant rÃ©duit cela revient Ã  voir que la fonction qui Ã  un point gÃ©omÃ©trique FORMULA  associe le rang de FORMULA  est constant sur FORMULA . Or, le cas particulier envisagÃ© ci-dessus montre que cette fonction est constante sur toute orbicourbe dans FORMULA . On peut donc conclure Ã  l'aide du lemme suivant :
+Lemme 17 La relation d'Ã©quivalence sur les points FORMULA  engendrÃ©e par FORMULA  s'il existe une orbicourbe dans
+FORMULA  dont l'image contient FORMULA  et FORMULA  admet une unique orbite.
+
+Dans le cas oÃ¹ FORMULA  est un schÃ©ma, on se ramÃ¨ne au cas oÃ¹ FORMULA  est projectif
+sur FORMULA  grÃ¢ce au lemme de Chow ({{cite:9dc99bb7-a55e-448a-a35d-c58b32427f86}}, 5.6), oÃ¹ c'est un fait classique.
+Dans le cas gÃ©nÃ©ral, on note FORMULA  comme dans la dÃ©finition REF  un ouvert de l'espace de modules FORMULA  de FORMULA  tel que
+la flÃ¨che FORMULA  de FORMULA  vers son espace de
+modules FORMULA  soit un isomorphisme en restriction Ã  FORMULA . Soit FORMULA , FORMULA  les images respectives de FORMULA , FORMULA  dans FORMULA , on
+peut supposer que FORMULA . D'aprÃ¨s le cas particulier ci-dessus, il existe
+une courbe FORMULA  dans FORMULA  (au sens de {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, ou de la dÃ©finition REF ) contenant FORMULA  et FORMULA .
+Le champ de Deligne-Mumford FORMULA  admet FORMULA  pour espace des modules, et il en est de mÃªme de FORMULA  ({{cite:1b4c7595-1a6f-4a5f-b4b0-830a0e0b2786}} Lemma 2.3.3 ou {{cite:456b4f02-c5f3-471c-91fb-b0174f640f35}} Corollary 3.3). D'aprÃ¨s {{cite:31a1d9f8-815b-4a07-8161-2a4c342cd0dd}}, Theorem 4.1, on a un isomorphisme FORMULA  sur FORMULA  pour un choix convenable d'une famille FORMULA  de diviseurs effectifs et d'une famille d'entiers naturels FORMULA . Comme on dispose d'un morphisme birationnel surjectif FORMULA , comme de plus FORMULA  est birationnel sur son image dans FORMULA  et que celle-ci contient FORMULA  et FORMULA , on a terminÃ©.
+Proposition 11 Tout fibrÃ© fini sur FORMULA  est semi-stable.
+
+Comme la restriction d'un fibrÃ© fini l'est encore, il suffit de le vÃ©rifier
+sur les orbicourbes. Mais on peut alors adapter la preuve de {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}
+au cas des orbicourbes : voir {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}, Proposition 6.
+Définition 23 ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, {{cite:bf246e8f-ef80-4e32-8461-2d93ee5a6dd2}}) 
+Un faisceau localement libre FORMULA  sur FORMULA  est dit
+essentiellement fini si c'est un quotient de deux sous-fibrÃ©s semi-stables d'un fibrÃ© fini. On notera FORMULA  la sous-catÃ©gorie pleine de FORMULA  des
+faisceaux localement libres essentiellement finis sur FORMULA .
+
+Théorème 6 
+Soit FORMULA  un schÃ©ma tordu modÃ©rÃ© et rÃ©duit sur un corps FORMULA , dont l'espace des modules FORMULA  est propre et connexe sur FORMULA , et FORMULA  un point rationnel.
+La paire FORMULA  est une catÃ©gorie tannakienne.
+
+Compte tenu de la proposition REF , la preuve est la mÃªme que celle
+donnÃ©e dans {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}, §3.
+Corollaire 7 
+Si on suppose, en plus des hypothÃ¨ses du thÃ©orÃ¨me REF , que FORMULA  est
+algÃ©briquement clos de caractÃ©ristique 0, alors tout fibrÃ© essentiellement
+fini est fini, et le foncteur FORMULA  induit une Ã©quivalence de catÃ©gories
+tensorielles entre FORMULA  et FORMULA . En particulier FORMULA  est
+une catÃ©gorie tannakienne dont le groupe est canoniquement isomorphe Ã  FORMULA .
+
+Soit FORMULA . Le fait que FORMULA  soit fini rÃ©sulte du lemme REF  : si FORMULA  est un revÃªtement galoisien de groupe FORMULA  trivialisant FORMULA , il existe une reprÃ©sentation FORMULA  de FORMULA  sur le corps FORMULA  telle que FORMULA . On suit alors l'argument de {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}} Proposition 3.8 : cette reprÃ©sentation se plonge dans un FORMULA -module libre et est donc essentiellement finie, comme la caractÃ©ristique de FORMULA  est 0, elle en en fait finie. Or le morphisme naturel FORMULA  est un isomorphisme, et donc FORMULA  est lui-mÃªme fini.
+La proposition REF  montre que le foncteur FORMULA  est fidÃ¨lement plein.
+Soit Ã  prÃ©sent FORMULA  un fibrÃ© essentiellement fini. Soit FORMULA  la sous-catÃ©gorie tannakienne engendrÃ©e, et FORMULA  son groupe de Tannaka (i.e. le
+groupe d'holonomie de FORMULA ). Comme FORMULA  est essentiellement
+fini, FORMULA  est un schÃ©ma en groupe fini sur FORMULA  ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}} Theorem 1.2), comme ce corps est de caractÃ©ristique
+0, FORMULA  est rÃ©duit d'aprÃ¨s un thÃ©orÃ¨me de Cartier ({{cite:0cdfecae-4550-4373-b2e6-116af2dd3721}}, Chapter 11),
+donc Ã©tale, et FORMULA  Ã©tant de plus algÃ©briquement clos, FORMULA  est donc constant.
+Le foncteur tensoriel FORMULA  correspond d'aprÃ¨s
+{{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}} Proposition 2.9 qui, du fait de sa fonctorialitÃ©, vaut aussi pour les champs de Deligne-Mumford, voir sur le sujet {{cite:e6c71c86-1cd8-44b0-b28a-ce144e4ce12c}} Ã  un FORMULA -revÃªtement FORMULA , et FORMULA 
+s'identifie via l'Ã©quivalence FORMULA  Ã  une
+reprÃ©sentation FORMULA  de FORMULA . Si FORMULA  est le systÃ¨me local correspondant, on a vu ci-dessus que FORMULA  est isomorphe Ã  FORMULA , lui-mÃªme isomorphe Ã  FORMULA . D'oÃ¹ les deux premiÃ¨res assertions.
+La derniÃ¨re rÃ©sulte alors du corollaire REF .
+
+ThÃ©orÃ¨me de Weil-Nori
+FibrÃ©s paraboliques modÃ©rÃ©s
+Soit FORMULA  un schÃ©ma localement noethÃ©rien sur un corps FORMULA , FORMULA  une famille de diviseurs irrÃ©ductibles Ã  croisements normaux simples sur FORMULA .
+FibrÃ©s paraboliques finis
+Définition 24
+
+On dÃ©finit la catÃ©gorie FORMULA  des fibrÃ©s paraboliques modÃ©rÃ©s sur FORMULA  par :
+FORMULA 
+oÃ¹ les multi-indices varient parmi les familles FORMULA  d'entiers non divisibles par la caractÃ©ristique FORMULA  de FORMULA .
+
+FORMULA  est munie d'un produit tensoriel vÃ©rifiant, pour FORMULA , la formule de convolution suivante :
+FORMULA 
+oÃ¹ FORMULA  dÃ©signe la cofin (coend), voir §REF .
+
+Un fibrÃ© parabolique modÃ©rÃ© FORMULA 
+sur FORMULA  est dit fini s'il existe deux polynÃ´mes distincts FORMULA  Ã  coefficients entiers positifs tels que FORMULA . On notera FORMULA  la catÃ©gorie des fibrÃ©s paraboliques modÃ©rÃ©s sur FORMULA .
+
+
+Remarque 7 
+Ces notions sont compatibles, via l'Ã©quivalence FORMULA  du thÃ©orÃ¨me REF , avec les notions champÃªtres du §REF , voir {{cite:e54e2e14-01d9-4b0d-9083-6b0dfe6c8dd1}}.
+
+
+FibrÃ©s paraboliques essentiellement finis
+Définition 25
+
+Un fibrÃ© parabolique modÃ©rÃ© FORMULA  sur FORMULA  Ã  poids
+multiples de FORMULA  est dit
+semi-stable si le faisceau localement libre sur FORMULA 
+associÃ© par la correspondance du thÃ©orÃ¨me REF  est semi-stable
+au sens de la dÃ©finition REF . On notera FORMULA  la sous-catÃ©gorie pleine de FORMULA  dont les objets sont semi-stables.
+
+Un fibrÃ© parabolique modÃ©rÃ© semi-stable FORMULA  est dit
+essentiellement fini si c'est un quotient de deux sous-fibrÃ©s paraboliques modÃ©rÃ©s semi-stables d'un fibrÃ© parabolique modÃ©rÃ© fini. On notera FORMULA  la sous-catÃ©gorie pleine de FORMULA  dont les objets sont essentiellement finis.
+
+
+Remarque 8
+
+La dÃ©finition de semi-stabilitÃ© est indÃ©pendante du choix de FORMULA .
+
+Il serait intÃ©ressant de donner une dÃ©finition de la semi-stabilitÃ©
+ne faisant intervenir que la topologie de Zariski.
+
+
+
+Lien avec le groupe fondamental
+ÃnoncÃ©
+Théorème 7 
+Soit FORMULA  un schÃ©ma propre, normal, connexe sur un corps FORMULA , FORMULA  une famille de diviseurs irrÃ©ductibles Ã  croisements normaux simples sur FORMULA , FORMULA , FORMULA  un point rationnel, FORMULA .
+
+La paire FORMULA  est une catÃ©gorie tannakienne.
+
+Si FORMULA  est algÃ©briquement clos de caractÃ©ristique 0, tout fibrÃ© parabolique modÃ©rÃ© essentiellement fini est fini, et le groupe de Tannaka de
+FORMULA  est canoniquement isomorphe au groupe fondamental FORMULA .
+
+
+On commence par remarquer que FORMULA  est normal ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}, Proposition 1.8.5).
+
+Ceci rÃ©sulte alors des thÃ©orÃ¨mes REF  et REF .
+
+La premiÃ¨re assertion dÃ©coule du thÃ©orÃ¨me REF  et du corollaire REF .
+Pour la seconde, notons FORMULA  ce schÃ©ma en groupe. Alors FORMULA , oÃ¹ FORMULA  est le groupe de
+Tannaka de la catÃ©gorie FORMULA , avec des
+notations Ã©videntes. D'aprÃ¨s la proposition REF , il
+suffit de voir qu'on a des isomorphismes naturels FORMULA , compatibles avec les systÃ¨mes
+projectifs (vu qu'on est en caractÃ©ristique zÃ©ro, on a un isomorphisme naturel FORMULA  donnÃ©, au niveau des revÃªtements, par le foncteur de normalisation). On conclut donc en appliquant Ã  nouveau le thÃ©orÃ¨me
+REF  et le corollaire REF .
+
+
+SchÃ©ma en groupe fondamental modÃ©rÃ©
+On est naturellement conduit Ã  poser :
+Définition 26 Avec les notations du thÃ©orÃ¨me REF , on appellera schÃ©ma en groupe fondamental modÃ©rÃ© de FORMULA  le groupe fondamental FORMULA  de la catÃ©gorie tannakienne FORMULA .
+
+Remarque 9
+
+Ce schÃ©ma en groupe FORMULA  est une limite inverse de schÃ©mas en groupes finis, se spÃ©cialise sur le schÃ©ma en groupe fondamental de Nori ({{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}) lorsque FORMULA , et sur le groupe fondamental modÃ©rÃ© de Grothendieck-Murre ({{cite:656a7b1c-78d9-4768-a7eb-86aca4ce0a16}}) lorsque FORMULA  est algÃ©briquement clos de caractÃ©ristique 0, d'oÃ¹ son nom.
+
+Lorsque FORMULA  est quelconque, les arguments de corollaire REF  montrent qu'on a un morphisme FORMULA  qui est un Ã©pimorphisme lorsque FORMULA  est algÃ©briquement clos.
+
+Toutefois, il conviendrait de prÃ©ciser la nature des “torseurs modÃ©rÃ©ment ramifiÃ©s” que FORMULA  classifie.
+
+
+
+Application au calcul de fibrÃ©s paraboliques finis de groupe d'holonomie rÃ©soluble
+Introduction et notations
+On reprend les hypothÃ¨ses de la partie  : FORMULA  est un schÃ©ma propre, normal, connexe sur un corps FORMULA , qu'on suppose de plus algÃ©briquement clos de caractÃ©ristique 0, FORMULA  une famille de diviseurs irrÃ©ductibles Ã  croisements normaux simples sur FORMULA , FORMULA , FORMULA  un point rationnel, FORMULA . Le but de cette partie est d'utiliser le thÃ©orÃ¨me REF  pour construire explicitement certains objets de FORMULA .
+Puisqu'on est en fait intÃ©ressÃ© par le groupe fondamental modÃ©rÃ© de FORMULA , on Ã©vite bien sÃ »r de construire un tel fibrÃ© parabolique fini Ã  partir d'un revÃªtement de FORMULA  modÃ©rÃ©ment ramifiÃ© le long de FORMULA  le trivialisant. L'idÃ©e de la mÃ©thode prÃ©sentÃ©e est de n'utiliser que des sous-revÃªtements d'un tel FORMULA , et repose essentiellement sur la proposition REF . Cette observation est inspirÃ©e par une transcription directe de la mÃ©thode des petits groupes de Wigner et Mackey de la thÃ©orie des reprÃ©sentations Ã  la thÃ©orie des revÃªtements, rendue possible grÃ¢ce au thÃ©orÃ¨me REF .
+Par la suite, on note FORMULA  le champ des racines.
+
+ComplÃ©ments sur les fibrÃ©s finis
+On commence par quelques remarques gÃ©nÃ©rales concernant les fibrÃ©s finis. Comme la structure parabolique n'entre pas vraiment en jeu, ce qui va Ãªtre dit est aussi valable dans la situation classique oÃ¹ FORMULA  est un schÃ©ma, propre, rÃ©duit et connexe sur un corps FORMULA  algÃ©briquement clos de caractÃ©ristique 0. Dans cette situation, il suffit de remplacer l'utilisation du thÃ©orÃ¨me REF  par le thÃ©orÃ¨me de Nori originel {{cite:d8cf11d6-bae7-4dbb-87fa-f8dfc225e5c6}}.
+Image directe d'un fibrÃ© fini
+La base de la mÃ©thode pour construire des fibrÃ©s finis est la remarque Ã©lÃ©mentaire suivante :
+Proposition 12 
+Soit FORMULA  un revÃªtement Ã©tale. Si FORMULA , alors FORMULA .
+
+On peut choisir FORMULA  connexe, et aussi un point FORMULA  au dessus de FORMULA .
+Soit FORMULA  un groupe fini, FORMULA  le champ classifiant, FORMULA  un morphisme, FORMULA  le revÃªtement galoisien associÃ©, correspondant aussi Ã  un morphisme FORMULA . Alors le foncteur FORMULA  induit une Ã©quivalence entre la catÃ©gorie FORMULA  des reprÃ©sentations de FORMULA  et la catÃ©gorie FORMULA  des fibrÃ©s finis sur FORMULA  trivialisÃ©s par FORMULA . Si FORMULA  est une reprÃ©sentation de FORMULA , et FORMULA  est le systÃ¨me local sur FORMULA  associÃ©, alors cette correspondance associe Ã  FORMULA  le fibrÃ© FORMULA , qui est canoniquement isomorphe Ã  FORMULA .
+On choisit Ã  prÃ©sent un morphisme FORMULA , tel que le revÃªtement galoisien associÃ© FORMULA  trivialise FORMULA , et tel que le revÃªtement composÃ© FORMULA  soit galoisien, de groupe FORMULA . D'aprÃ¨s ce qui prÃ©cÃ¨de, il existe une reprÃ©sentation FORMULA  du groupe FORMULA  telle que FORMULA . La proposition rÃ©sulte alors du
+Lemme 18 FORMULA  oÃ¹ FORMULA .
+
+Il s'agit d'une formule de changement de base dans le diagramme cartÃ©sien :
+FORMULA 
+Dans la pratique, il est utile de savoir calculer le produit tensoriel de deux fibrÃ©s finis obtenus par la mÃ©thode de la proposition REF . Pour cela, il suffit d'adapter Ã  ce contexte les formules classiques, dues Ã  Mackey, donnant le produit tensoriel de deux reprÃ©sentations induites comme somme directe de reprÃ©sentations induites (voir par exemple {{cite:b70db7b7-f5e7-4866-9e64-4e3960581d8e}} §44). On obtient ainsi :
+Lemme 19 
+Soit FORMULA  un revÃªtement galoisien connexe, FORMULA  le groupe de Galois, FORMULA , FORMULA  deux sous-groupes. Pour FORMULA , on note FORMULA  le revÃªtement intermÃ©diaire correspondant au sous-groupe FORMULA , et FORMULA . De plus pour FORMULA , on note FORMULA  le revÃªtement correspondant au sous-groupe FORMULA  et FORMULA  le morphisme naturel. Alors
+FORMULA 
+
+On a un isomorphisme naturel de FORMULA -groupoÃ¯des FORMULA . En le tirant par le morphisme FORMULA  dÃ©finissant FORMULA , on obtient un FORMULA -isomorphisme FORMULA . De plus si FORMULA  est le morphisme canonique, la formule de changement de base donne
+FORMULA , d'oÃ¹ la formule annoncÃ©e.
+
+La mÃ©thode des petits groupes de Wigner et Mackey
+Comme application de la partie prÃ©cÃ©dente, on dÃ©crit les fibrÃ©s finis associÃ©s Ã  une extension triviale d'un revÃªtement galoisien par un groupe abÃ©lien.
+On se donne donc un revÃªtement galoisien connexe FORMULA  de groupe FORMULA , oÃ¹ FORMULA  est quelconque, et FORMULA  est abÃ©lien, d'exposant FORMULA  premier Ã  l'ordre de FORMULA . On note FORMULA  le revÃªtement intermÃ©diaire correspondant Ã  FORMULA , et on fixe un point FORMULA  au dessus de FORMULA , d'image FORMULA  dans FORMULA . D'aprÃ¨s la dualitÃ© de Tannaka, on a une Ã©quivalence naturelle FORMULA . En particulier le groupe FORMULA  des classes d'isomorphisme de fibrÃ©s inversibles sur FORMULA  trivialisÃ©s par FORMULA  est canoniquement isomorphe au groupe FORMULA  des caractÃ¨res de FORMULA , et dÃ©termine complÃ¨tement FORMULA .
+Le but est de dÃ©crire complÃ¨tement la catÃ©gorie tannakienne FORMULA  en fonction de FORMULA  (pour les extensions FORMULA  intermÃ©diaires entre FORMULA  et FORMULA ) et de FORMULA . On commence par dÃ©crire la structure additive.
+On remarque qu'on a une action naturelle de FORMULA  sur FORMULA . Alors l'inclusion FORMULA  est FORMULA -Ã©quivariante. Soit FORMULA  un fibrÃ© inversible sur FORMULA  trivialisÃ© par FORMULA  . On note FORMULA  le stabilisateur de sa classe dans FORMULA , et FORMULA  le morphisme quotient. Comme celui-ci est Ã©tale, on dispose de la suite spectrale de Hochschild-Serre, qui s'Ã©crit ici :
+FORMULA 
+L'hypothÃ¨se que FORMULA  est premier Ã  l'ordre de FORMULA  et la suite exacte des termes de bas degrÃ© associÃ©e Ã  la suite spectrale montrent que FORMULA , et donc il existe, Ã  isomorphisme prÃ¨s, un unique fibrÃ© inversible de FORMULA -torsion FORMULA  sur FORMULA  tel que FORMULA . On note de plus FORMULA  le morphisme canonique.
+Proposition 13
+
+Soit FORMULA  un fibrÃ© inversible sur FORMULA  trivialisÃ© par FORMULA  et FORMULA . Le fibrÃ© FORMULA  sur FORMULA  est fini.
+
+Lorsque FORMULA  varie dans un systÃ¨me de reprÃ©sentants de FORMULA  et FORMULA  varie dans une base de gÃ©nÃ©rateurs additifs de FORMULA , ces faisceaux forment une base de gÃ©nÃ©rateurs additifs de FORMULA .
+
+
+
+C'est une application directe de la proposition REF .
+
+C'est, en fait, via la correspondance de Tannaka entre fibrÃ©s finis et reprÃ©sentations du groupe fondamental (corollaire REF ), un problÃ¨me de thÃ©orie des groupes, pour lequel on renvoie Ã  {{cite:7c6e5992-34d6-4f7b-b81e-839067da13bb}}, 8.2, Proposition 25.
+
+La structure tensorielle de FORMULA  est alors complÃ¨tement dÃ©terminÃ©e par le lemme REF .
+
+FibrÃ©s finis de groupe d'holonomie rÃ©soluble
+En poursuivant la mÃªme idÃ©e, on voit que la mÃ©thode conduit au calcul des fibrÃ©s finis dont le groupe d'holonomie (i.e. le groupe de Tannaka de la catÃ©gorie tannakienne engendrÃ©e) est rÃ©soluble.
+En effet, soit FORMULA  un revÃªtement connexe, Ã©tale, galoisien de groupe d'automorphismes FORMULA , et FORMULA  un point au dessus de FORMULA . On note FORMULA  la sous-catÃ©gorie pleine de FORMULA  dont les objets sont les fibrÃ©s inversibles de FORMULA -torsion, oÃ¹ FORMULA  est un entier.
+DonnÃ© un groupe (abstrait, ou profini) FORMULA , on note FORMULA  le noyau du morphisme de groupe FORMULA , c'est un sous-groupe caractÃ©ristique.
+Lemme 20 
+Le groupe de Tannaka de la catÃ©gorie tannakienne engendrÃ©e par l'image du foncteur FORMULA  est canoniquement isomorphe Ã  FORMULA .
+
+Le morphisme canonique FORMULA  correspond Ã  un nouveau revÃªtement Ã©tale, galoisien, connexe FORMULA , muni d'un point gÃ©omÃ©trique FORMULA  au dessus de FORMULA , et dominant FORMULA . Par dualitÃ© de Tannaka, la catÃ©gorie FORMULA  est canoniquement isomorphe Ã  la catÃ©gorie FORMULA  des fibrÃ©s finis sur FORMULA  trivialisÃ©s par FORMULA . Or, soit FORMULA  un tel fibrÃ©, FORMULA  est un objet de FORMULA , dont le groupe de Tannaka est isomorphe Ã  FORMULA , donc est abÃ©lien et de FORMULA -torsion. On peut donc Ã©crire
+FORMULA , oÃ¹ les FORMULA  sont dans FORMULA . Mais comme FORMULA  est supposÃ© de caractÃ©ristique 0, FORMULA  est un facteur direct de FORMULA .
+On garde les notations de la preuve, en particulier FORMULA  est le plus grand revÃªtement abÃ©lien FORMULA -Ã©lÃ©mentaire de FORMULA . Soit de plus FORMULA  le dual de Cartier du groupe FORMULA . La thÃ©orie de Kummer usuelle affirme que FORMULA . L'avantage de la mÃ©thode utilisÃ©e ici, qui peut Ãªtre vue comme une version relative de la thÃ©orie de Kummer, est qu'elle donne une interprÃ©tation tannakienne du groupe FORMULA  : si l'on sait calculer la catÃ©gorie tannakienne engendrÃ©e par l'image du foncteur FORMULA , on sait dÃ©terminer FORMULA  comme extension de FORMULA  par FORMULA .
+On peut en particulier itÃ©rer le procÃ©dÃ©, en partant de FORMULA , et en choisissant une suite d'entiers FORMULA , ce qui conduit au calcul des quotients FORMULA . La limite naturelle de la mÃ©thode est bien le plus grand quotient pro-rÃ©soluble FORMULA  de FORMULA , vu qu'on obtient ainsi un sous-ensemble cofinal de l'ensemble de ses quotients finis.
+
+FibrÃ©s paraboliques finis de groupe d'holonomie rÃ©soluble
+FibrÃ©s paraboliques finis obtenus comme image directe le long d'un morphisme modÃ©rÃ©ment ramifiÃ©
+On conserve les notations de la partie REF .
+Soit FORMULA  dans FORMULA , avec FORMULA  connexe. On note FORMULA  la famille des composantes irrÃ©ductibles (munies de la structure rÃ©duite) de FORMULA . Soit FORMULA  une clÃ´ture galoisienne, FORMULA  (respectivement FORMULA ) la famille des indices de ramification de la famille FORMULA  (respectivement FORMULA ) dans FORMULA .
+Lemme 21 Le morphisme naturel FORMULA  est fini Ã©tale.
+
+Ceci rÃ©sulte du lemme d'Abhyankar. En effet si FORMULA  (respectivement FORMULA ) est le groupe de Galois de FORMULA  (respectivement FORMULA ) le lemme REF  montre que FORMULA  s'identifie au morphisme entre champs quotients FORMULA , qui est fini Ã©tale, car obtenu par changement de base Ã  partir du morphisme des champs classifiants FORMULA  par le morphisme FORMULA  correspondant au FORMULA -torseur FORMULA .
+On peut donc utiliser la proposition REF  pour construire des fibrÃ©s paraboliques finis. De plus, ces fibrÃ©s finis sont explicitement calculablesdans la mesure oÃ¹ l'on sait dÃ©terminer l'image directe d'un fibrÃ© vectoriel usuel par FORMULA , mais ce problÃ¨me peut-Ãªtre pris en charge par le thÃ©orÃ¨me de Grothendieck-Riemann-Roch. grÃ¢ce Ã  la proposition REF .
+Plus prÃ©cisÃ©ment, si on veut calculer des fibrÃ©s paraboliques finis de groupe d'holonomie rÃ©soluble, on peut appliquer le lemme REF  aux champs des racines. Ainsi, il est naturel d'essayer de dÃ©terminer la FORMULA -torsion FORMULA  du groupe de Picard des champ des racines, pour FORMULA  entier, ce qui est l'objet de la partie suivante.
+
+FibrÃ©s inversibles de torsion sur les champs des racines
+Le foncteur de Picard des champs algÃ©briques a Ã©tÃ© rÃ©cemment Ã©tudiÃ© par S.Brochard (voir {{cite:d7308c2c-397c-4995-b26b-413462d6dc68}}). Il a en particulier montrÃ© qu'on pouvait en Ã©tudier la composante neutre comme dans le cas classique des schÃ©mas. On rappelle briÃ¨vement les dÃ©finitions dont on aura besoin.
+Définition 27
+
+Deux faisceaux inversibles FORMULA  et FORMULA  sur le champ FORMULA  sont dits algÃ©briquement Ã©quivalents s'ils sont Ã©quivalents pour la relation d'Ã©quivalence engendrÃ©e par la relation : FORMULA  s'il existe un FORMULA -schÃ©ma connexe de type fini FORMULA , des points gÃ©omÃ©triques FORMULA , un faisceau inversible FORMULA  sur FORMULA , et des isomorphismes FORMULA , FORMULA .
+
+On note FORMULA  le sous-groupe des Ã©lÃ©ments FORMULA  de FORMULA  tels que FORMULA  est algÃ©briquement Ã©quivalent Ã  FORMULA .
+
+On appelle groupe de NÃ©ron-Severi le groupe FORMULA .
+
+Si FORMULA  dÃ©signe la torsion du groupe abÃ©lien FORMULA , on note
+FORMULA 
+
+
+Lemme 22
+
+ FORMULA
+
+ FORMULA
+
+
+
+On note comme d'habitude FORMULA  le morphisme vers l'espace des modules, et FORMULA .
+Soient FORMULA , FORMULA  deux faisceaux inversibles sur FORMULA  tels que FORMULA , FORMULA  un FORMULA -schÃ©ma connexe de type fini, FORMULA  des points gÃ©omÃ©triques, FORMULA  un faisceau inversible sur FORMULA , et des isomorphismes FORMULA , FORMULA . Alors FORMULA  est un faisceau inversible sur FORMULA  : en effet il est localement libre comme image directe d'un faisceau localement libre par un morphisme fini et plat, et comme FORMULA  est gÃ©nÃ©riquement un isomorphisme, son rang est 1. En appliquant les formules de changement de base pour un morphisme affine ou le long d'un morphisme plat on obtient des isomorphismes naturels FORMULA , FORMULA , ce qui montre que FORMULA .
+
+C'est une consÃ©quence claire du premier point et des dÃ©finitions.
+
+On a donc des monomorphismes canoniques
+FORMULA 
+On rappelle (corollaire REF ) qu'on a un isomorphisme canonique FORMULA .
+On note
+FORMULA 
+les sous-groupes associÃ©s aux images des monomorphismes ci-dessus.
+Comme FORMULA  est propre sur le corps algÃ©briquement clos FORMULA , le groupe FORMULA  est de type fini ({{cite:88a2ca15-61ed-4676-aec4-472ae1736f08}}, XIII, ThÃ©orÃ¨me 5.1), ce qui prouve qu'il en est de mÃªme pour FORMULA  et donne un sens Ã  l'Ã©noncÃ© suivant.
+Proposition 14 
+Soit FORMULA  premier Ã  FORMULA .
+Il y a une suite exacte naturelle :
+FORMULA 
+
+D'aprÃ¨s les dÃ©finitions, on a clairement FORMULA  et FORMULA .
+Pour conclure, on doit justifier que FORMULA . Or (voir par exemple {{cite:42f1bf92-8a5c-45c0-a6e6-4bba9d1c14e7}} 3.3.2)
+FORMULA , et on peut conclure en appliquant le foncteur FORMULA  Ã  la suite exacte :
+FORMULA 
+En effet FORMULA  est un groupe divisible : comme FORMULA  est complet le foncteur de Picard FORMULA  est reprÃ©sentable par un schÃ©ma ({{cite:b1fa505c-c8ba-4966-a567-7644e769d939}}), comme FORMULA  est de plus normal FORMULA  est une variÃ©tÃ© abÃ©lienne sur FORMULA  ({{cite:3d47b934-44a8-4793-81cc-f9a68a0a1a40}}, 236, Corollaire 3.2), et on peut appliquer {{cite:697fb235-ee14-4f23-bc41-9806b7190ae7}} II, §6, Application 2.
+Remarque 10 On a une interprÃ©tation assez directe en termes de revÃªtements : si FORMULA  est le revÃªtement Ã©tale galoisien de groupe abÃ©lien FORMULA -Ã©lÃ©mentaire maximal pour ces propriÃ©tÃ©s, et de mÃªme FORMULA  en remplaÃ§ant Ã©tale par modÃ©rÃ©ment ramifiÃ© de multi-indice divisant FORMULA , alors par dualitÃ© de Tannaka on voit que la suite exacte duale (pour la dualitÃ© de Cartier) de la suite exacte prÃ©cÃ©dente est isomorphe Ã  la suite exacte des groupes de Galois de la tour FORMULA .
+
+
+Un exemple explicite
+L'exemple le plus simple possible de construction de fibrÃ© parabolique fini indÃ©composable de rang plus grand que 1 est le suivant.
+On considÃ¨re le morphisme FORMULA  donnÃ© par l'Ã©quation FORMULA , il est modÃ©rÃ©ment ramifiÃ© le long du diviseur FORMULA , avec indices de ramification 2. FORMULA  induit un morphisme fini Ã©tale FORMULA , et par changement de base on en dÃ©duit un morphisme fini Ã©tale FORMULA .
+A prÃ©sent la proposition REF  montre que
+FORMULA ,
+et on voit facilement que
+FORMULA 
+oÃ¹ FORMULA  dÃ©signe la somme, donc FORMULA  est cyclique d'ordre 3. Pour FORMULA , soit FORMULA  une racine cubique de FORMULA  sur FORMULA , et soit FORMULA . Alors le fibrÃ© FORMULA  est un fibrÃ© fini indÃ©composable de rang 2 sur FORMULA .
+Le fibrÃ© parabolique correspondant a Ã©tÃ© considÃ©rÃ© par L.Weng, voir {{cite:107e91d9-0649-4b0c-883d-8a2dce4754b6}}, Appendix, §6, dans le langage du Ã  Seshadri. Il nous semble que la description fournie ici en termes de champs des racines permet de prÃ©ciser la description des drapeaux donnÃ©e par l'auteur, facilite le calcul de la structure tensorielle de la catÃ©gorie tannakienne engendrÃ©e (naturellement, dans ce cas prÃ©cis, le groupe fondamental est isomorphe au groupe symÃ©trique FORMULA ), et enfin, donne une mÃ©thode de construction des fibrÃ©s paraboliques finis de groupe d'holonomie rÃ©soluble.
+
+ProblÃ¨me ouvert
+Dans {{cite:26618c5c-3c79-4922-a52e-734e87a1fc94}} est donnÃ©e une preuve algÃ©brique du thÃ©orÃ¨me de structure du groupe fondamental pro-rÃ©soluble FORMULA  pour FORMULA  une courbe projective et lisse sur un corps FORMULA  algÃ©briquement clos de caractÃ©ristique 0 , et FORMULA  un diviseur (non vide) sur celle-ci. Peut on utiliser le lemme REF  pour donner une preuve alternative ?
+
+2-limite inductive filtrÃ©e de catÃ©gories
+2-limite
+On emprunte les dÃ©finitions de {{cite:49d08f72-562c-4883-addb-424cf917708b}}. On note FORMULA  la 2-catÃ©gorie dont les objets sont les catÃ©gories, les 1-flÃ¨ches les foncteurs, les 2-flÃ¨ches les transformations naturelles.
+Soit FORMULA  une 2-catÃ©gorie, FORMULA  une catÃ©gorie usuelle.
+Pour tout objet FORMULA  de FORMULA , on note FORMULA 
+le foncteur constant FORMULA  envoyant tout objet de FORMULA  sur FORMULA , et toute flÃ¨che de FORMULA  sur l'identitÃ©.
+On note de plus FORMULA  la 2-catÃ©gorie des pseudo-foncteurs de FORMULA  dans FORMULA .
+Si FORMULA  sont deux pseudo-foncteurs, on note FORMULA  la catÃ©gorie des transformations naturelles de pseudo-foncteurs entre FORMULA  et FORMULA .
+Définition 28 
+Soit FORMULA  un pseudo-foncteur. On appelle 2-limite inductive de FORMULA  le 2-foncteur :
+@R=2pt
+C [r]  Cat
+D [r]  (I,C)(F,cD)
+Si ce foncteur est 2-reprÃ©sentable, on appelle aussi 2-limite inductive et on note FORMULA  l'objet de FORMULA  le reprÃ©sentant.
+
+Plus prÃ©cisÃ©ment, un reprÃ©sentant est un couple FORMULA , oÃ¹ FORMULA  est un objet de FORMULA , et FORMULA  est une transformation naturelle entre pseudo-foncteurs, qui est 2-universelle au sens suivant : pour tout objet FORMULA  de FORMULA , et toute transformation naturelle FORMULA , il existe un couple FORMULA  formÃ© d'un 1-morphisme FORMULA  de FORMULA  et d'un 2-isomorphisme FORMULA  de FORMULA  :
+FORMULA 
+qui est unique Ã  2-isomorphisme unique prÃ¨s : si FORMULA  est un autre tel couple, il existe un unique 2-isomorphisme FORMULA  de FORMULA  :
+C  @/1pc/[r]f'*=<0.3pt>="HAUT"
+@/1pc/[r]f*=<0.3pt>="BAS"
+@=> "HAUT" ;"BAS" 
+  D
+tel que FORMULA .
+
+Cas des catÃ©gories
+On suppose dÃ©sormais que la catÃ©gorie FORMULA  est filtrante et que FORMULA . Dans ce cas, on dispose d'une description naturelle et probablement bien connue de la 2-limite d'un pseudo-foncteur FORMULA . Pour FORMULA , on note FORMULA , plutÃ´t que FORMULA .
+Soit FORMULA  la catÃ©gorie
+
+dont les objets sont les couples FORMULA , oÃ¹ FORMULA  est un objet de FORMULA , et FORMULA  est un objet de FORMULA ,
+
+dont les morphismes FORMULA  sont les classes d'Ã©quivalenceon ignore dÃ©libÃ©rÃ©ment les problÃ¨mes d'univers en omettant de vÃ©rifier qu'il s'agit d'un ensemble, pour Ãªtre correct, il faut probablement supposer la catÃ©gorie FORMULA  petite de triplets FORMULA  :
+@R=2pt
+ i [dr]f
+  k,  f*C [r]  g* D
+ j [ur]g
+pour la relation
+@R=2pt
+i [dr]f  i [dr]f'
+ k,  f*C [r]  g* D k',  f'*C [r]'  g'* D
+j [ur]g  j [ur]g'
+s'il existe
+@R=2pt
+ k [dr]h
+  l
+ k' [ur]h'
+tel que FORMULA , FORMULA  et FORMULA .
+
+Proposition 15 La catÃ©gorie FORMULA , munie de la transformation naturelle canonique FORMULA , est une 2-limite pour FORMULA .
+
+C'est une vÃ©rification longue mais directe de la dÃ©finition REF  dans ce cas prÃ©cis.

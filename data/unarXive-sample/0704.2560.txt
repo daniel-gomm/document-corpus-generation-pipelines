@@ -1,0 +1,670 @@
+
+
+ 
+
+VACANT SET OF RANDOM INTERLACEMENTS AND PERCOLATION
+Alain-Sol Sznitman
+
+We introduce a model of random interlacements made of a countable collection of doubly infinite paths on FORMULA , FORMULA . A non-negative parameter FORMULA  measures how many trajectories enter the picture. This model describes in the large FORMULA  limit the microscopic structure in the bulk, which arises when considering the disconnection time of a discrete cylinder FORMULA  by simple random walk, or the set of points visited by simple random walk on the discrete torus FORMULA  at times of order FORMULA . In particular we study the percolative properties of the vacant set left by the interlacement at level FORMULA , which is an infinite connected translation invariant random subset of FORMULA . We introduce a critical value FORMULA  such that the vacant set percolates for FORMULA  and does not percolate for FORMULA . Our main results show that FORMULA  is finite when FORMULA  and strictly positive when FORMULA .
+Departement Mathematik
+ETH Zürich
+CH-8092 Zürich
+Switzerland
+ 
+
+ 
+
+Introduction
+This article introduces a model of random interlacements consisting of a countable collection of doubly infinite trajectories on FORMULA , FORMULA . A certain non-negative parameter FORMULA  governs the amount of trajectories which enter the picture. The union of the supports of these trajectories defines the interlacement at level FORMULA . It is an infinite connected translation invariant random subset of FORMULA . Our main purpose is to study whether this random “fabric” is “rainproof” or not, i.e. whether its complement, the vacant set at level FORMULA , does not, or does contain an infinite connected component. This issue is related to the broad question “how can random walk paths create interfaces in high dimension?”. The model we construct has a special interest because in a heuristic sense it offers a microscopic description of the “texture in the bulk” for two problems related to this broad question. One problem pertains to the percolative properties in the large FORMULA  limit of the vacant set left on the discrete torus FORMULA , FORMULA , by the trajectory of simple random walk with uniformly distributed starting point, up to times that are proportional to the number of sites of the discrete torus, cf. {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. The other problem pertains to the large FORMULA  behavior of the disconnection time of a discrete cylinder FORMULA , FORMULA , by simple random walk, cf. {{cite:312500ef-9fda-4dd7-a720-a27d555fb21a}}, {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}, and also {{cite:8e921a66-53f7-43df-816c-9974f94427e7}}. In this work we establish a phase transition: for FORMULA , the vacant set at level FORMULA  does percolate, whereas for FORMULA , it does not. The critical value FORMULA  is shown to be non-degenerate (i.e. positive and finite), when FORMULA , and finite for all FORMULA . The results presented here have triggered some progress on the questions mentioned above, see in particular {{cite:0fd9c1b5-08c0-46bd-b6f1-a5a78abcc9d8}}, {{cite:096395dd-df77-4aaa-b796-bd77896653f9}}, {{cite:4cb4b7ad-dcc9-46aa-b4a5-cb12d1a56562}},{{cite:8c69d435-1e6c-4be2-8e1b-ef13215e0174}}, {{cite:6d56ca02-3e33-4dd0-bac9-5b00705ccc0f}}.
+We now describe the model. We consider the spaces FORMULA  and FORMULA  of infinite, respectively doubly infinite, nearest neighbor paths on FORMULA , FORMULA , that spend finite time in bounded subsets of FORMULA . We denote with FORMULA , FORMULA , the law on FORMULA  of simple random walk starting at FORMULA . This is meaningful since the walk is transient in view of the assumption FORMULA . We write FORMULA , or FORMULA , for the canonical coordinates on FORMULA , or on FORMULA . We also consider the set of doubly-infinite trajectories modulo time-shifts
+FORMULA 
+We denote with FORMULA , the canonical projection.
+The random interlacements are governed by a Poisson point process FORMULA  on FORMULA , with intensity measure FORMULA , where FORMULA  is a certain FORMULA -finite measure on FORMULA , which we now describe. For any finite subset FORMULA  of FORMULA , we denote with FORMULA  the equilibrium measure of FORMULA , see (REF ) for the definition, with FORMULA  the subset of FORMULA  of trajectories entering FORMULA  at time 0:
+FORMULA 
+and with FORMULA  the subset of FORMULA  of equivalence classes of trajectories entering FORMULA . We show in Theorem REF  that there is a unique FORMULA -finite measure FORMULA  on FORMULA  such that
+FORMULA 
+where FORMULA  is the finite measure supported on FORMULA  such that
+FORMULA 
+The motivation for such a requirement stems from Theorem 3.1 and (3.13) of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}, where the large FORMULA  limit of certain suitably defined excursions to a box of size FORMULA , by simple random walk on FORMULA  was investigated, and from the alternative characterization of FORMULA  given in (REF ), see also Remarks REF  2) and REF  3). Similar measures appear in {{cite:1318de98-b554-42ec-b0cf-65120cf903fc}} and {{cite:5ed0d90a-8479-4a71-bf39-087f206a7b7b}}, p. 61, following an outline in {{cite:ea4cd54c-8506-4265-8bc9-6a6f0eed387f}}. The construction we give here bypasses projective limit arguments: we instead glue together expressions for FORMULA  read in "local charts".
+We denote with FORMULA  the canonical space where FORMULA  varies, cf. (REF ), and with FORMULA  the law turning FORMULA  into a Poisson point process with intensity FORMULA . The law FORMULA  enjoys a number of remarkable properties. It is invariant under translation of trajectories by a constant vector, and under time-reversal of trajectories, cf. Proposition REF . Also when FORMULA  is a finite subset of FORMULA , we introduce the random point process on FORMULA :
+FORMULA 
+where for FORMULA , FORMULA  denotes the unique trajectory in FORMULA  starting at time 0, where FORMULA  enters FORMULA , and following from then on FORMULA  step by step, cf. (REF ) for the precise definition. We show in Proposition REF  that
+FORMULA 
+where FORMULA . Further the point processes FORMULA , as FORMULA  varies, satisfy a compatibility condition, cf. (REF ), ().
+It may be worth pointing out that much of the above constructs, except for the aspects related to translation invariance, can be performed in the more general set-up of a transient random walk attached to an infinite locally finite connected graph with positive weights along its edges, in place of simple random walk on FORMULA , FORMULA , cf. Remark REF .
+The interlacement at level  FORMULA is defined as
+FORMULA 
+where FORMULA  denotes the range of any FORMULA  with FORMULA . The vacant set at level  FORMULA is then
+FORMULA 
+Clearly FORMULA  increases with FORMULA , whereas FORMULA  decreases with FORMULA . Also one can see that the restriction of FORMULA  to FORMULA  is determined by FORMULA , when FORMULA  are finite subsets of FORMULA , cf. (REF ). Together with (REF ) one finds that the restriction of FORMULA  to FORMULA  can be visualized as the trace on FORMULA  of a Poisson cloud of finite trajectories. Its intensity measure is proportional to the law of simple random walk run up to the last visit to FORMULA , with initial distribution the harmonic measure of FORMULA  viewed from infinity, i.e. FORMULA  normalized by its total mass capFORMULA , the capacity of FORMULA , and the proportionality factor equals FORMULA , cf. Remark REF  3). We also show in Corollary REF  and Proposition REF  that:
+FORMULA 
+FORMULA 
+for FORMULA , and FORMULA , finite. Formula (REF ) characterizes the law of FORMULA , see Remark REF  2). As a special case, cf. (), (), one finds that for FORMULA ,
+FORMULA 
+where FORMULA  denotes the Green function, cf. (REF ). The identities in (REF ) are in essence formulas (2.26) and (3.6) of Brummelhuis-Hilhorst {{cite:e797fef6-92b9-4778-94b3-83f1e091c305}} in their theoretical physics article on the covering of a periodic lattice by a random walk, see also Remark REF  5). They display the presence of long range dependence in the random set FORMULA , with a correlation of the events FORMULA  and FORMULA  decaying as FORMULA , when FORMULA  tends to infinity.
+As mentioned above, the main object of this work is to investigate the presence or absence of an infinite connected component in FORMULA . We establish in Theorem REF  the ergodicity of the (properly defined) distribution of the random set FORMULA , from which easily follows a zero-one law for the probability of occurrence of an infinite connected component in FORMULA . It is then straightforward to see that this probability equals one precisely when
+FORMULA 
+The function FORMULA  is non-increasing and just as in the case of Bernoulli percolation, cf. {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}, we can introduce the critical value:
+FORMULA 
+The main results of this article concern the non-degeneracy of FORMULA . We show in Theorem REF  that FORMULA  does not percolate for large FORMULA , i.e.
+FORMULA 
+and in Theorem REF  that when FORMULA , FORMULA  percolates for small FORMULA , i.e.
+FORMULA 
+Subsequent developments initiated by the present article respectively relating random interlacements on FORMULA  and on FORMULA  to the local picture left by simple random walk on FORMULA  run up to times of order FORMULA , and random walk on FORMULA  run up to times of order FORMULA  can be found in {{cite:096395dd-df77-4aaa-b796-bd77896653f9}}, {{cite:6d56ca02-3e33-4dd0-bac9-5b00705ccc0f}}. In this light the results presented here with their proofs also have a bearing on the problems investigated in {{cite:312500ef-9fda-4dd7-a720-a27d555fb21a}}, {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}, {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. In particular (REF ) offers evidence that when FORMULA  the laws of FORMULA  are tight, if FORMULA  denotes the disconnection time of FORMULA  studied in {{cite:312500ef-9fda-4dd7-a720-a27d555fb21a}}, {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}. It signals that one should be able to remove the logarithmic terms present in the (very general) upper bound of {{cite:8e921a66-53f7-43df-816c-9974f94427e7}} and bypass the strategy based on the domination of FORMULA  by the cover time of FORMULA , by relying instead on the emergence of a non-percolative local picture of the vacant set left by random walk. These heuristic considerations can be made precise and lead to the above claimed tightness, see {{cite:4cb4b7ad-dcc9-46aa-b4a5-cb12d1a56562}}. Similarly (REF ) offers evidence that the lower bound on FORMULA  in {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}, which shows the tightness of FORMULA  when FORMULA , should hold as soon as FORMULA , (and in fact for all FORMULA , in view of the recent work {{cite:0fd9c1b5-08c0-46bd-b6f1-a5a78abcc9d8}}). Analogously in the context of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}, (REF ), (REF ), and {{cite:0fd9c1b5-08c0-46bd-b6f1-a5a78abcc9d8}} give support for the typical absence for large FORMULA  of a giant component in the vacant set left by simple random walk on FORMULA , FORMULA , run up to time FORMULA , if FORMULA  is large, and for its typical presence when FORMULA  is chosen small.
+There are many natural questions left untouched by the present article. Is there a unique infinite component when FORMULA  percolates, (see Remark REF  3))? The answer is affirmative, as shown in {{cite:8c69d435-1e6c-4be2-8e1b-ef13215e0174}}. Is FORMULA , when FORMULA , as suggested by simulations? This is indeed the case, see {{cite:0fd9c1b5-08c0-46bd-b6f1-a5a78abcc9d8}}. However it is presently unknown whether the vacant set percolates at criticality, i.e. when FORMULA , or what the large FORMULA  behavior of FORMULA  is. We refer to Remark REF  3) for further open problems.
+We will now comment on the proofs of (REF ) and (REF ). Most of the work goes into the proof of (REF ). This is due to the long range dependence in the model and the fact highlighted by (REF ) that FORMULA  does not decay exponentially with FORMULA . This feature creates a very serious obstruction to the Peierls-type argument commonly met in Bernoulli percolation, see {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}, p. 16, when one attempts to show that FORMULA  does not percolate for large FORMULA . We instead use a renormalization technique to prove (REF ) and consider a sequence of functions on FORMULA :
+FORMULA 
+(cf. (REF ) for the precise definition), where FORMULA  is a rapidly growing sequence of length scales, cf. (REF ), (REF ),
+FORMULA 
+The key control appears in Proposition REF , where we prove that for FORMULA , FORMULA , and an increasing but bounded sequence FORMULA  depending on FORMULA , cf. (REF ),
+FORMULA 
+This immediately implies that FORMULA , for FORMULA , and proves (REF ). The principal difficulty in proving (REF ) resides in the derivation of a suitable recurrence relation between FORMULA  and FORMULA , cf. (REF ), due to the long range dependence in the model. In a suitable sense we use a “sprinkling technique”, where more independent paths are thrown in, so as to dominate long range dependence. This is reflected in the fact that we evaluate FORMULA  at an increasing but convergent sequence FORMULA  in the key control (REF ), (a more quantitative version of (REF )). Incidentally the sequence of length scales appearing in (REF ) corresponds to the choice of a small FORMULA , so as to control the combinatorial complexity involved in selecting boxes of scale FORMULA  within a given box of scale FORMULA , see (REF ), but also to the choice of a fast enough growth, so as to discard paths making more than a certain finite number of excursions at distance of order FORMULA , see below (REF ), and (REF ), (REF ).
+The proof of (REF ) in Theorem REF  employs a similar albeit simpler renormalization strategy. One can instead employ a Peierls-type argument to show that FORMULA  percolates for small FORMULA , when FORMULA  is sufficiently large, very much in the spirit of Section 2 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}, or Section 1 of {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}. It is based on an exponential bound on FORMULA , for FORMULA  finite subset of FORMULA , (where FORMULA  is viewed as a subset of FORMULA ), cf. (REF ) in Theorem REF . This estimate mirrors the exponential controls derived in Theorem 2.1 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}} and Theorem 1.2 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. This strategy leads to a proof of (REF ) when:
+FORMULA 
+with FORMULA  the return probability to the origin of simple random walk on FORMULA . In practice this means FORMULA , cf. Remark REF  3). The technique we use works instead as soon as FORMULA . It also shows, just as the Peierls-type argument does when (REF ) holds, the existence of an infinite connected cluster in FORMULA , for small FORMULA .
+Let us now describe the organization of the article.
+In Section 1 we construct the model of random interlacements. The main task lies in the construction of the FORMULA -finite measure FORMULA  entering the intensity of the Poisson point process we are after. This is done in Theorem REF . Basic properties of the model appear in Proposition REF , whereas Proposition REF  shows (REF ), (REF ).
+Section 2 shows the ergodicity of the law of FORMULA , and the zero-one law for the probability that FORMULA  percolates in Theorem REF . We also prove (REF ) in Corollary REF . In Theorem REF  we derive exponential bounds that provide further link of the present model to {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}, {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}.
+Section 3 is devoted to the proof of (REF ) in Theorem REF . The main renormalization step is contained in Proposition REF .
+Section 4 shows (REF ) in Theorem REF . The principal step appears in Proposition REF .
+Finally let us state our convention regarding constants. Throughout the text FORMULA  or FORMULA  denote positive constants which solely depend on FORMULA , with values changing from place to place. The numbered constants FORMULA  are fixed and refer to the value at their first appearance in the text. Dependence of constants on additional parameters appears in the notation. For instance FORMULA  denotes a positive constant depending on FORMULA .
+Acknowledgements: We wish to thank Yves Le Jan for useful references.
+
+Basic model and some first properties
+The main object of this section is to introduce the basic model and present some of its properties. As explained in the Introduction the basic model comes as a Poisson point process on a suitable state space. The main task resides in the construction of the intensity measure of this point process. This is done in Theorem REF . We then derive some of its properties in Proposition REF  as well as some of the properties of the vacant set left by the interlacement at level FORMULA , cf. (0.9), in Proposition REF . We first begin with some notation.
+We write FORMULA  for the set of natural numbers. Given a non-negative real number FORMULA , we write FORMULA  for the integer part of FORMULA , and for real numbers FORMULA , we write FORMULA  and FORMULA  for the respective minimum and maximum of FORMULA  and FORMULA . We denote with FORMULA  and FORMULA  the Euclidean and FORMULA -distances on FORMULA . We write FORMULA  for the closed FORMULA -ball with center FORMULA  in FORMULA  and radius FORMULA , and FORMULA  for the corresponding FORMULA -sphere with center FORMULA  and radius FORMULA , (it is empty when FORMULA  is not an integer). We say that FORMULA  in FORMULA  are neighbors, respectively FORMULA -neighbors, when FORMULA , respectively FORMULA . The notions of connected and FORMULA -connected subsets are defined accordingly, and so are the notions of nearest neighbor or FORMULA -nearest neighbor paths in FORMULA . For FORMULA  subsets in FORMULA , we denote with FORMULA  the subset of elements of the form FORMULA , with FORMULA  and with FORMULA ; FORMULA , the FORMULA -distance from FORMULA  to FORMULA . When FORMULA  is a subset of FORMULA , we let FORMULA  stand for the cardinality of FORMULA , FORMULA  for the exterior boundary of FORMULA  and FORMULA  for the interior boundary of FORMULA :
+FORMULA 
+We write FORMULA  to express that FORMULA  is a finite subset of FORMULA . In what follows, unless otherwise explicitly mentioned, we tacitly assume that FORMULA .
+We consider FORMULA  and FORMULA  the spaces of trajectories:
+FORMULA 
+We denote with FORMULA , and FORMULA , FORMULA , the respective canonical coordinates on FORMULA  and FORMULA , and write FORMULA , FORMULA , and FORMULA , FORMULA , for the respective canonical shifts. We let FORMULA  and FORMULA  stand for the FORMULA -fields on FORMULA  and FORMULA  generated by the canonical coordinates.
+Given FORMULA , FORMULA , we denote with FORMULA , FORMULA , FORMULA , the entrance time in FORMULA , the exit time from FORMULA , and the hitting time of FORMULA  for the trajectory FORMULA :
+FORMULA 
+We often drop “FORMULA ” from the notation and write FORMULA , when FORMULA . Also when FORMULA , we define FORMULA  and FORMULA  in a similar fashion replacing “FORMULA ” with “FORMULA ” in (REF ), and FORMULA  just as in (REF ). For FORMULA  in FORMULA , FORMULA , we consider FORMULA , the successive returns to FORMULA  and departures from FORMULA  of the trajectory FORMULA :
+FORMULA 
+so that FORMULA .
+When FORMULA  is an integrable random variable and FORMULA  an event, we routinely write FORMULA  in place of FORMULA  in what follows, with FORMULA  referring here to the relevant expectation. Given FORMULA , we write FORMULA  for the restriction to FORMULA  of the canonical law of simple random walk on FORMULA  starting at FORMULA . Recall that FORMULA , and FORMULA  has full measure under the canonical law. When FORMULA  is a positive measure on FORMULA , we write FORMULA  for the measure FORMULA . We denote with FORMULA  the Green function of the walk:
+FORMULA 
+and FORMULA  so that FORMULA , thanks to translation invariance. Given FORMULA , we write FORMULA  for the equilibrium measure of FORMULA , capFORMULA  for the capacity of FORMULA , so that, cf. Chapter 2 §2 of {{cite:c552696e-fe90-4dfe-9f97-781627c7f95f}}:
+FORMULA 
+The following bounds on FORMULA , FORMULA , will be useful:
+FORMULA 
+They classically follow from the FORMULA -convergence of the bounded martingale FORMULA , FORMULA , towards FORMULA .
+The state space of the Poisson point process we wish to define involves the quotient space FORMULA  of equivalence classes of trajectories in FORMULA  modulo time shift, cf. (REF ). We recall that FORMULA  stands for the canonical projection on FORMULA . We endow FORMULA  with the canonical FORMULA -field
+FORMULA 
+which is the largest FORMULA -algebra such that FORMULA  is measurable. When FORMULA , we consider
+FORMULA 
+the subset of FORMULA  of trajectories entering FORMULA . We can write FORMULA  as a countable partition into measurable sets (see below (REF ) for the notation):
+FORMULA 
+We then introduce
+FORMULA 
+as well as the map
+FORMULA 
+Note that FORMULA  and FORMULA  is a section of FORMULA  over FORMULA , i.e. FORMULA  is the identity map on FORMULA . It is then straightforward to check that for any FORMULA ,
+FORMULA 
+There is no natural way to globally identify FORMULA  with FORMULA , but the maps FORMULA  enable us to identify FORMULA  with FORMULA  and FORMULA  with FORMULA . In a slightly pedantic way FORMULA  with the transformations FORMULA , FORMULA , on the fiber of FORMULA  could be viewed as a “principal fiber-bundle with group FORMULA ”, cf. {{cite:962ebdd6-c5a7-4b79-ac2f-1dba87464988}}, p. 346. The construction of the key FORMULA -finite measure FORMULA  in Theorem REF  will involve checking compatibility and patching up expressions for FORMULA  "read in the local chart FORMULA ", as FORMULA  varies over finite subsets of FORMULA .
+We further need to introduce several spaces of point measures that we will routinely use in what follows. In particular we consider FORMULA  and FORMULA  the spaces of point measures on FORMULA  and FORMULA :
+FORMULA 
+We endow FORMULA  with the FORMULA -algebra FORMULA  generated by the evaluation maps FORMULA , where FORMULA  runs over FORMULA , cf. (REF ). Likewise we endow FORMULA  with the FORMULA -algebra FORMULA  generated by the evaluation maps FORMULA , where FORMULA  runs over FORMULA , cf. below (REF ). Given FORMULA , we then define the measurable maps FORMULA  and FORMULA  via:
+FORMULA 
+where for FORMULA , FORMULA  denotes the restriction of FORMULA  to FORMULA , so that FORMULA  starts at time 0 where FORMULA  enters FORMULA , and follows from then on FORMULA  step by step, as well as
+FORMULA 
+in other words, FORMULA , when FORMULA . Given FORMULA , FORMULA , we will also consider the measurable function on FORMULA  with values in the set of finite point measures on FORMULA :
+FORMULA 
+We record for later use the straightforward identities valid for FORMULA :
+FORMULA 
+We are now going to construct the FORMULA -finite measure FORMULA  on FORMULA  which enters the intensity of the Poisson point process we wish to define. For FORMULA , we write FORMULA  for the countable set of finite nearest-neighbor trajectories starting and ending in the support of FORMULA :
+FORMULA 
+if FORMULA , we also denote with FORMULA  the probability on FORMULA  governing the walk conditioned not to hit FORMULA :
+FORMULA 
+We are now ready to state
+Theorem 1.1 
+For FORMULA , denote with FORMULA  the finite measure on FORMULA , supported on FORMULA , such that for any FORMULA , FORMULA :
+FORMULA 
+There is a unique FORMULA -finite measure FORMULA  on FORMULA  such that:
+FORMULA 
+Further letting FORMULA , stand for the time of the last visit to FORMULA  of FORMULA , the law under FORMULA  of FORMULA  is supported on FORMULA , and for FORMULA , FORMULA , one has:
+FORMULA 
+
+
+We begin with the proof of the existence and uniqueness of FORMULA . Since FORMULA , where FORMULA , with FORMULA  finite, for FORMULA , the uniqueness of FORMULA  satisfying (REF ) is immediate. As for the existence of FORMULA , denote for FORMULA  with FORMULA  the finite measure supported on FORMULA  in the right-hand side of (REF ):
+FORMULA 
+The existence of FORMULA  will follow once we show that for FORMULA :
+FORMULA 
+This in turn will follow once we prove that:
+FORMULA 
+where FORMULA  denotes the restriction of FORMULA  to FORMULA . Indeed it simply suffices to take the image of both sides under FORMULA . We now write FORMULA  as the at most countable partition into measurable sets:
+FORMULA 
+where FORMULA  denotes the set of finite nearest-neighbor trajectories FORMULA , with FORMULA , FORMULA  for FORMULA , and FORMULA , and
+FORMULA 
+One then has the identity:
+FORMULA 
+As a result denoting with FORMULA  the left-hand side of (REF ), we find that
+FORMULA 
+Thus given an arbitrary collection FORMULA , FORMULA , of subsets of FORMULA , we see that
+FORMULA 
+It follows from the reversibility of the walk that for FORMULA :
+FORMULA 
+Inserting this identity in the last line of (REF ) we find that:
+FORMULA 
+This proves that (REF ) holds and thus concludes the proof of the existence of FORMULA  satisfying (REF ), which is automatically FORMULA -finite.
+We now turn to the proof of (REF ). We consider FORMULA , some finite sequence in FORMULA . Observe that FORMULA  vanishes unless FORMULA  is nearest neighbor and FORMULA . Moreover when this is the case it follows from the use of the Markov property at time FORMULA  that:
+FORMULA 
+This shows that the law of FORMULA  under FORMULA  is supported by FORMULA . Also repeating the argument which yielded (REF ), we see that for FORMULA , FORMULA  the left hand side of (REF ) equals, (writing FORMULA  in place of FORMULA  for simplicity):
+FORMULA 
+and this proves (REF ).
+To prove (), observe that for FORMULA , FORMULA  leaves FORMULA  invariant and FORMULA , for FORMULA , FORMULA . Denoting FORMULA  the image under FORMULA  of a measure FORMULA  on FORMULA , we find for  FORMULA
+FORMULA 
+Hence with (REF ), FORMULA , FORMULA , and FORMULA  denoting the event in the probability in the first line of (REF ), and writing FORMULA  in place of FORMULA  for simplicity we find that
+FORMULA 
+It now readily follows that FORMULA  and hence FORMULA  for any FORMULA , whence FORMULA . This proves ().
+ Finally for the proof of (), we note that for FORMULA , FORMULA , FORMULA  maps FORMULA  one-to-one onto FORMULA , and FORMULA , for FORMULA . Denoting with FORMULA  the image under FORMULA  of a measure FORMULA  on FORMULA , we see that for FORMULA , we have
+FORMULA 
+Hence with FORMULA , FORMULA  and FORMULA  denoting the event in the left-hand side of (REF ), where FORMULA  is replaced by FORMULA , we find that:
+FORMULA 
+using (REF ) and translation invariance in the third equality. This readily implies that FORMULA  and concludes the proof of Theorem REF .
+Remark 1.2   
+1) Let us say a few words on why the quotient space FORMULA  is better suited for our purpose than FORMULA . One can of course use the sections FORMULA , with FORMULA  growing along an increasing sequence of finite sets exhausting FORMULA  to construct “by patching” a FORMULA -finite measure on FORMULA  projecting down to FORMULA  under FORMULA . However there is no measure on FORMULA  invariant under translation of trajectories by constant vectors projecting down to FORMULA . Indeed if such a measure FORMULA  existed then for any FORMULA  we would have
+FORMULA 
+using translation invariance in the last equality. However capacity grows slower than volume when FORMULA  is of
+the form FORMULA , with FORMULA  tending to infinity, cf. below (REF ). This would imply that FORMULA 
+and hence FORMULA , due to translation invariance, thus leading to a contradiction. More obstructions can
+be brought to light, which make measures on FORMULA  projecting down to FORMULA  definitely less natural than FORMULA .
+2) The expression in the right-hand member of (REF ) when FORMULA  coincides up to a normalization factor with the expression (3.13) of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}} governing the limit law of certain properly recentered excursions of simple random walk on FORMULA  to a box of side-length FORMULA , see Theorem 3.1 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. This limiting result played a key role in the control of fluctuations of certain averages, cf. (4.43) and Proposition 4.2. of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}.  FORMULA
+
+We will now endow the space FORMULA , cf. (REF ), with a probability measure and thereby complete the construction of the basic model of interlacements. To this end we note that the infinite measure FORMULA  on FORMULA  gives finite mass to the sets FORMULA , for FORMULA  and FORMULA . We can thus construct on FORMULA  the law FORMULA  of a Poisson point measure with intensity FORMULA . We denote with FORMULA  the corresponding expectation. The law FORMULA  is for instance characterized by the fact that, cf. {{cite:7daf7a60-0e7d-4f61-91ac-21eb6e02a5d1}}, p. 129,
+FORMULA 
+In a similar fashion we can also realize on FORMULA , cf. (), the law of the Poisson point measure on FORMULA  with intensity FORMULA , when FORMULA . We denote it with FORMULA  and write FORMULA  for the corresponding expectation. It is characterized by the fact that:
+FORMULA 
+We will now collect some straightforward properties of the laws FORMULA  and FORMULA . Given FORMULA , we write
+FORMULA 
+We also recall the notation from (REF ), (REF ).
+Proposition 1.3   FORMULA
+FORMULA 
+
+We begin with (REF ), and note that FORMULA  due to (REF ) is distributed as a Poisson point process on FORMULA  with intensity measure FORMULA  such that for FORMULA  as in (REF )
+FORMULA 
+This shows that the law of FORMULA  coincides with FORMULA . Then () immediately follows from (REF ) i) and (REF ), whereas (), () respectively follow from (), ().
+Remark 1.4 
+The constructions we have made here in the case of simple random walk on FORMULA , FORMULA , can be straightforwardly generalized to the case of an infinite locally finite connected graph FORMULA  with vertex set FORMULA  and (undirected) edge set FORMULA , endowed with positive weights
+FORMULA 
+so that the corresponding nearest neighbor walk on FORMULA  with transition probability
+FORMULA 
+is transient. This walk is reversible with respect to the measure
+FORMULA 
+In this set-up some of our definitions need to be modified. For instance if FORMULA  stands for the law of the walk starting from FORMULA , one divides the right-hand side of (REF ) by FORMULA , and multiplies the right-hand side of (REF ) by FORMULA , cf. {{cite:a5d0ff5b-d091-483e-9cf7-c7caa6f371c8}}.
+The results we stated in Theorem REF  and Proposition REF , except for (), (), which explicitly refer to the additive structure of FORMULA  can easily be extended to this set-up. We refrain from doing this here since the main results of this article will pertain to percolation properties of the vacant set, which we introduce below, and rely on the structure of FORMULA .  FORMULA
+
+We can now define for FORMULA , the interlacement at level  FORMULA, as the subset of FORMULA :
+FORMULA 
+where for FORMULA , rangeFORMULA , for any FORMULA  with FORMULA . Note that in view of (REF ), (REF ), the following identity holds:
+FORMULA 
+The vacant set at level  FORMULA is then defined as
+FORMULA 
+Obviously with (REF ), (REF ), FORMULA  increases with FORMULA , whereas FORMULA  decreases with FORMULA . In the next proposition we collect some simple properties of these random subsets. Given FORMULA , we say that FORMULA  separates FORMULA  from infinity when any nearest neighbor path starting in FORMULA  and tending to infinity enters FORMULA .
+Proposition 1.5   FORMULA
+FORMULA 
+If FORMULA  separates FORMULA  from infinity then the following inclusion holds
+FORMULA 
+
+
+The claim (REF ) immediately follows from (REF ) when FORMULA , and (REF ), (REF ). The measurability of the sets FORMULA , FORMULA  (understood as the measurability of the maps FORMULA  and FORMULA  for all FORMULA ) is a direct consequence of the above statement. With (REF ), we thus see that
+FORMULA 
+and this proves (). As a result of (REF ) or () one finds that
+FORMULA 
+and () follows from (). As for (), we can assume without loss of generality that FORMULA , and note that for suitable FORMULA , one has
+FORMULA 
+so that with () one finds:
+FORMULA 
+Solving this system of equations we see that FORMULA , and hence
+FORMULA 
+The claim () now follows from ().
+Finally note that when FORMULA  separates FORMULA  from infinity, FORMULA , and with (REF ) we see that FORMULA , whence (REF ).
+Remark 1.6   
+1) Using estimates on the capacity of a large cube, cf. for instance (2.4) in Lemma 2.2 of {{cite:511fa882-927e-440f-97ca-6327f96c8cb2}} and {{cite:df91fe8b-c7a8-477d-9fd7-961c889cdb4a}}, p. 341, one sees that for FORMULA ,
+FORMULA 
+In particular there is no general exponential decay with FORMULA  of FORMULA . This feature is drastically different from what happens for Bernoulli site percolation, see {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}. It creates very serious difficulties when trying to prove that for large FORMULA , FORMULA  does not percolate, see Section 3. Also (REF ) can be compared with (4.58), (4.62) of Benjamini-Sznitman {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}, in the case of the vacant set left by simple random walk on FORMULA  up to time FORMULA .
+Incidentally in spite of the fact that FORMULA  displays a tendency to contain bigger boxes than Bernoulli site percolation, no matter how small FORMULA , the law FORMULA  of FORMULA , FORMULA , on FORMULA , does not stochastically dominate Bernoulli site percolation with parameter close to 1. Indeed the complement FORMULA  of FORMULA  always percolates.
+2) As a direct consequence of (), and the inequality FORMULA , we see that
+FORMULA 
+i.e. the events FORMULA , FORMULA  are positively correlated. However we do not know whether the FKG inequality holds under the law FORMULA  mentioned in 1).
+3) As a direct consequence of (REF ) and (REF ), for FORMULA  we can visualize FORMULA  as the trace left on FORMULA  by a Poisson point process of finite trajectories belonging to the space FORMULA  of (REF ). More precisely for any FORMULA ,
+FORMULA 
+This has a very similar flavor to some of the results in Section 3 and 4 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}.
+4) With standard estimates on the behavior of FORMULA  at infinity, cf. {{cite:c552696e-fe90-4dfe-9f97-781627c7f95f}}, p. 31, one sees that for any FORMULA ,
+FORMULA 
+where FORMULA  denotes the covariance under FORMULA . This displays the presence of long range correlations in the random set FORMULA .
+5) Formulas (), () are in essence (2.26) and (3.6) in Brummelhuis-Hilhorst {{cite:e797fef6-92b9-4778-94b3-83f1e091c305}}, concerning the large FORMULA  behavior of the probability that one or two given points in FORMULA  are not visited by simple random walk up to time FORMULA . The prefactors present in formulas (2.26), (3.6) of {{cite:e797fef6-92b9-4778-94b3-83f1e091c305}} stem from the fact that the walk under consideration starts at the origin and not with the uniform distribution as in {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. For a similar interpretation of () see also Aldous-Fill {{cite:fbb31090-0bf8-4434-ae79-dfc910ec6528}} Chapter 3, Proposition 20, and Chapter 13, Proposition 8. One can also compare () with Propositions 20 and 37 in Chapter 3 of {{cite:fbb31090-0bf8-4434-ae79-dfc910ec6528}}.
+ FORMULA
+
+
+A zero-one law and an exponential bound
+In this section we exploit the translation invariance of the basic model in a more substantial way. We prove that the probability that FORMULA , the vacant set at level FORMULA , contains an infinite connected component is either zero or one. This zero-one law comes as a consequence of the ergodicity of the law of FORMULA , cf. Theorem REF . We also show in Corollary REF  that with probability one FORMULA  is connected. In Theorem REF  we prove an exponential bound on the probability that FORMULA  contains a given subset of an FORMULA -dimensional discrete subspace of FORMULA , with FORMULA . This result has a similar flavor to Theorem 2.1 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}, or Theorem 1.2 of {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}, but has a more algebraic proof due to the nature of our basic model. Combined with a Peierls-type argument, cf. Remark REF , it can be used to show that when FORMULA  is large enough, FORMULA  percolates when FORMULA  is chosen sufficiently small. In Section 4 we will present a more powerful method proving such a result as soon as FORMULA . We begin with some notation.
+We denote with FORMULA , the law on FORMULA  of FORMULA , for FORMULA . We write FORMULA , for the canonical coordinates on FORMULA , FORMULA  for the canonical FORMULA -algebra, and FORMULA , for the canonical shift. We also consider for FORMULA  the event
+FORMULA 
+as well as
+FORMULA 
+The first main result of this section is:
+Theorem 2.1   FORMULA
+FORMULA 
+
+We begin with the proof of (REF ). We denote with FORMULA , the map FORMULA , so that FORMULA . Note that with (REF ), (REF ), (REF ), one has
+FORMULA 
+Since FORMULA  is invariant under FORMULA , cf. (), it follows that FORMULA  is invariant under FORMULA . To prove the ergodicity of FORMULA , we argue as follows. We consider FORMULA , and note that the claim will follow once we show that for any FORMULA , and any FORMULA -valued FORMULA -measurable function FORMULA  on FORMULA , one has
+FORMULA 
+Indeed the indicator function of any FORMULA  invariant under FORMULA  can be approximated in FORMULA  by functions FORMULA  as above. With (REF ) one classically deduces that necessarily FORMULA , whence FORMULA . In view of (REF ), with FORMULA , and (REF ), the claim (REF ) will follow once we show that for any FORMULA :
+FORMULA 
+for any FORMULA -valued measurable function FORMULA  on the set of finite point-measures on FORMULA , endowed with its canonical FORMULA -field. With (REF ), (REF ), we can find FORMULA  (depending on FORMULA ), with similar properties as FORMULA , such that the expectation in the left-hand side of (REF ) equals FORMULA .
+From now on we assume FORMULA  large enough so that FORMULA . To control the above expectation we are going to express both FORMULA  and FORMULA  in terms of FORMULA , with the help of (REF ) i), and extract the desired asymptotic independence. We will recurrently use this type of decomposition in what follows. Namely with FORMULA  we write:
+FORMULA 
+and similar formulas for FORMULA  and FORMULA  with the role of FORMULA  and FORMULA  exchanged. It follows from (REF ), (REF ) that
+FORMULA 
+and their respective intensity measures are:
+FORMULA 
+As a consequence of (REF ), (REF ) i), we see that
+FORMULA 
+where given FORMULA , and FORMULA  a finite point measure on FORMULA , FORMULA , and we have used in (REF ) the fact that FORMULA , and FORMULA . Therefore introducing auxiliary independent Poisson point processes FORMULA , FORMULA , independent of FORMULA , FORMULA , with the same distribution as FORMULA  respectively, we find that
+FORMULA 
+are independent point processes respectively distributed as FORMULA  and FORMULA . With the same notation as in (REF ) we find that
+FORMULA 
+where in the last step we have used the inequality FORMULA , for FORMULA , in addition to (REF ). Observe now that
+FORMULA 
+with the notation introduced above (REF ), as well as standard bounds on the Green function, cf. {{cite:c552696e-fe90-4dfe-9f97-781627c7f95f}}, p. 31, and translation invariance. A similar bound holds for FORMULA , and with (REF ) we see that for FORMULA , FORMULA , FORMULA , FORMULA -measurable functions on the set of finite point measures on FORMULA  with values in FORMULA ,
+FORMULA 
+This implies (REF ) and thus concludes the proof of (REF ). As for (), note that PercFORMULA , where FORMULA  stands for the invariant event consisting of configurations in FORMULA  such that there is an infinite connected component in the subset of FORMULA  where the configuration takes the value 1. It now follows from (REF ) that FORMULA  is either 0 or 1. This proves ().
+Remark 2.2   
+1) Note that (REF ) has a similar flavor to (REF ), which mirrors the long range dependence built into the basic model. Taming this effect will bring some serious difficulties in Section 3.
+2) One can characterize FORMULA  as the unique probability on FORMULA  such that
+FORMULA 
+Indeed the collection of events which appear in (REF ) is stable under finite intersection and generates FORMULA . In a slightly more constructive fashion, we see with a classical inclusion exclusion argument that for any disjoint finite subsets FORMULA  of FORMULA , one has
+FORMULA 
+3) The present work does not address the question of whether there is a unique infinite connected component in FORMULA  when it percolates and FORMULA  is positive. The answer to this question is affirmative, as proved in {{cite:8c69d435-1e6c-4be2-8e1b-ef13215e0174}}. The classical results of Burton-Keane {{cite:c2ebaa41-534b-4bc8-a9c0-12859534fe3c}},
+see also {{cite:734b5965-08f6-4ea2-8cf5-368cdc42a922}}, p. 326, 332, implying such a uniqueness
+do not apply because, as one easily sees, FORMULA  fails to fulfill the so-called finite energy condition:
+FORMULA 
+Loosely speaking the problem stems from the fact that the set of sites FORMULA , where FORMULA  takes
+the value 0, has no bounded component, and on some configurations turning a value 0 into
+a value 1, say at the origin, can lead to a forbidden configuration,
+(see also (REF )). In Corollary REF  we are able to adapt the argument of Burton-Keane
+in the case of FORMULA , and prove that with probability one FORMULA  is connected. In the case of FORMULA 
+the construction of so-called trifurcations is more delicate, and can be found in {{cite:8c69d435-1e6c-4be2-8e1b-ef13215e0174}}.
+4) Denote with FORMULA  in FORMULA  with FORMULA , the collection of nearest neighbor edges on FORMULA . Given FORMULA  and FORMULA , one can consider the subset FORMULA  of FORMULA  consisting of the edges which are traversed by at least one of the trajectories at level FORMULA  entering FORMULA :
+FORMULA 
+and FORMULA  is any element of FORMULA  with FORMULA .
+Connected components of FORMULA  induced by FORMULA  are either singletons in FORMULA  or infinite components partitioning FORMULA . Denoting with FORMULA : FORMULA  the map FORMULA , one can consider the image FORMULA  on FORMULA  of FORMULA  under FORMULA , where FORMULA  stands for the canonical FORMULA -algebra on FORMULA . With FORMULA , FORMULA , the canonical shift on FORMULA , one finds exactly as in (REF ) that FORMULA , for FORMULA . The same proof as in (REF ), see in particular (REF ), now yields that
+FORMULA 
+ FORMULA
+
+The first statement below is an immediate consequence of Theorem REF  and (REF ).
+Corollary 2.3   FORMULA
+For FORMULA , one has the equivalences
+FORMULA 
+FORMULA 
+
+We begin with (REF ). One simply needs to observe that
+FORMULA 
+and in view of () all summands in the right-hand side equal FORMULA . The claim (REF ) now follows from the zero-one law ().
+We now turn to the proof of (REF ), which is an adaptation of the argument of Burton-Keane {{cite:c2ebaa41-534b-4bc8-a9c0-12859534fe3c}}. The consideration of FORMULA , cf. Remark REF  4) will be helpful, see in particular the observation below (REF ). With the ergodicity property (REF ), it follows that the total number FORMULA  of infinite connected components determined by FORMULA  is FORMULA -a.s. equal to a positive, possibly infinite, constant. With the observation below (REF ) our claim (REF ) will follow once we show that this constant equals 1. The first step, see also {{cite:1c745ff9-1cf6-4b47-8f07-7bd5f91e16ba}}, is to argue that
+FORMULA 
+Assume instead that for some FORMULA , FORMULA . Then we can find FORMULA  such that FORMULA , where FORMULA  denotes the event FORMULA  and FORMULA  intersects two distinct infinite components determined by FORMULA . Note that under  FORMULA
+FORMULA 
+For each FORMULA , the “surface of FORMULA ”, we now pick a nearest neighbor loop in FORMULA  starting and
+ending at FORMULA , and passing through 0. We then define a map FORMULA  from FORMULA  into itself such
+that for FORMULA , FORMULA  is the trajectory (modulo time-shift) obtained by “inserting
+in FORMULA ” just after the entrance in FORMULA , the loop attached to the entrance point of FORMULA  in FORMULA .
+The map FORMULA  is in fact injective and one checks with (REF ), (REF ) that the image
+measure FORMULA  is absolutely continuous with respect to FORMULA . We
+extend FORMULA  to FORMULA , by letting FORMULA  be the identity map on FORMULA . It now follows
+from the above observations that the measurable map FORMULA  from FORMULA  into itself defined by:
+FORMULA 
+is such that
+FORMULA 
+By construction FORMULA  links together all infinite connected components of FORMULA , which intersect FORMULA , and hence FORMULA , where FORMULA  appears below (REF ). We thus find that
+FORMULA 
+and due to (REF ) we see that FORMULA , a contradiction. This proves (REF ).
+The claim (REF ) will now follow once we show that
+FORMULA 
+The heart of the matter, cf. {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}, p. 199, or {{cite:734b5965-08f6-4ea2-8cf5-368cdc42a922}}, p. 297,
+is to show that with positive FORMULA -probability there is a trifurcation in FORMULA ,
+i.e. a site FORMULA  with exactly three FORMULA -neighbors and the removal of FORMULA  splits the infinite connected component of FORMULA  determined by FORMULA  in exactly three infinite components.
+Assume by contradiction that FORMULA , then for arbitrarily large FORMULA , one has with FORMULA ,
+FORMULA 
+We fix FORMULA  large enough, such that (REF ) holds and for any three couples of points FORMULA , FORMULA , FORMULA  on the FORMULA -sphere FORMULA , for which no point in a given pair may be within FORMULA -distance 100 from any other pair (but points within a pair may be arbitrarily close or even coincide), we can construct FORMULA  finite nearest neighbor trajectories in FORMULA  with respective starting points FORMULA  and end points FORMULA , so that any two trajectories only meet in 0, each trajectory visits 0 only once, and this occurs by crossing an edge touching 0 and immediately crossing the same edge in the reverse direction. With (REF ) and (REF ) we see that
+FORMULA 
+where FORMULA  and FORMULA , FORMULA , are the respective FORMULA - and FORMULA -valued coordinates on the product space, and we use the notation from (REF ) and (REF ). On the above event we can select three trajectories within the FORMULA  with supports lying in distinct infinite connected components and corresponding pairs of entrance and last exit points of FORMULA  with mutual FORMULA -distance bigger than 100. As a result we see that
+FORMULA 
+where FORMULA  stands for the event
+FORMULA 
+Observe now that without loss of generality we can assume FORMULA  in (REF ).
+We denote with FORMULA  the map from FORMULA  into itself such that
+FORMULA ,
+where FORMULA  simply coincides with the identity if the three pairs of entrance
+and last exit points for FORMULA  for FORMULA  do not fulfill the condition
+appearing below (REF ), and otherwise such that
+FORMULA  are obtained from FORMULA  by
+replacing the respective portions of trajectory between first entrance in FORMULA  and last
+exit from FORMULA  by FORMULA . With (REF ), (REF ) one checks that
+FORMULA 
+Note that on the event FORMULA , 0 is a trifurcation point for FORMULA , where the notation is the same as in the above paragraph. With a similar calculation as in (REF )
+we see that
+FORMULA 
+With (REF ) this readily implies that
+FORMULA 
+The proof of (REF ) now runs just as in {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}, p. 200-202. This concludes the proof of (REF ).
+Just as in the case of Bernoulli percolation, cf. {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}, p. 13, we can introduce the critical value
+FORMULA 
+Is this critical value non-degenerate? We will see in Section 3 that FORMULA , cf. Theorem REF , and in Section 4 that FORMULA , as soon as FORMULA , cf. Theorem REF .
+We are now going to discuss the exponential bound mentioned at the beginning of this section. For FORMULA , we write FORMULA  for the collection of FORMULA -dimensional affine subspaces of FORMULA  generated by FORMULA  distinct vectors of the canonical basis FORMULA  of FORMULA :
+FORMULA 
+and introduce
+FORMULA 
+We denote with FORMULA  the return probability to the origin of simple random walk in FORMULA , i.e. with hopefully obvious notation:
+FORMULA 
+The promised exponential estimate comes in the following
+Theorem 2.4  FORMULA ,  FORMULA
+Assume that FORMULA  satisfies
+FORMULA 
+then for FORMULA , FORMULA  and FORMULA , with the notation FORMULA , for FORMULA , one has
+FORMULA 
+and the left-hand side does not depend on FORMULA  as above.
+Moreover there exists FORMULA , such that:
+FORMULA 
+
+Consider FORMULA , FORMULA  containing FORMULA , then for FORMULA , we find that
+FORMULA 
+So the left-hand side of (REF ) does not depend on FORMULA  containing FORMULA . In particular picking FORMULA , we find that it equals
+FORMULA 
+Introducing the function
+FORMULA 
+and writing FORMULA , the return time to FORMULA , see (REF ) for notation, we find:
+FORMULA 
+With the strong Markov property at times FORMULA  and then FORMULA , we thus obtain:
+FORMULA 
+considering in the last step the motion of the walk in the components “transversal” to FORMULA . Note that when FORMULA , FORMULA , FORMULA -a.s., whereas when FORMULA , FORMULA  has geometric distribution with success probability FORMULA . Hence with FORMULA  satisfying (REF ) we find that:
+FORMULA 
+With a routine approximation argument of FORMULA  by a finite sum, to exclude the possibility that FORMULA  is infinite, and (REF ) we see that:
+FORMULA 
+and hence
+FORMULA 
+Coming back to (REF ), and using () we find (REF ). As for (REF ), note with (REF ), (REF ) that
+FORMULA 
+Further on the event FORMULA  we have FORMULA . So choosing FORMULA , such that FORMULA  we now see that for FORMULA :
+FORMULA 
+if FORMULA . This proves (REF ).
+Remark 2.5   
+1) The proof of Theorem REF  is very similar to the proofs of Theorem 2.1 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}} and Theorem 1.2 of {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}, however it has a somewhat more algebraic character due to the nature of the basic model we work with.
+2) There is no bound of type (REF ) valid uniformly for FORMULA  the collection of subsets of FORMULA . The argument is in essence the same as in Remark 2.4 2) of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. One can for instance consider FORMULA  and note that for large FORMULA , when the random walk starts in FORMULA , conditionally on not leaving FORMULA  up to time FORMULA  (with FORMULA  a large enough constant), it covers FORMULA  with probability at least FORMULA , cf. (2.33) of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}}. From this it follows that for large FORMULA ,
+FORMULA 
+As a result no matter how small FORMULA , one finds that
+FORMULA 
+3) One can combine (REF ) with a Peierls-type argument by considering the collection of FORMULA -nearest neighbor circuits separating 0 from infinity in some FORMULA  containing 0, cf. Corollary 2.5 of {{cite:5d8fc4b2-649d-4e8c-91c6-a81cc13c38ee}} or Corollary 1.5 of {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}, and see that when FORMULA  satisfies
+FORMULA 
+then for small FORMULA , FORMULA  percolates i.e.
+FORMULA 
+The factor 7 in (REF ) simply stems from the fact that there are at most FORMULA  FORMULA -nearest neighbor circuits with FORMULA  steps in FORMULA  that start at the origin. It is known that FORMULA , as FORMULA , cf. (5.4) of {{cite:320380e7-3d5f-45a9-96bc-1738268de145}}, and hence (REF ) holds for large FORMULA . Clearly (REF ) forces FORMULA , and with the help of tables of values for FORMULA , one can see that in effect (REF ) holds exactly when FORMULA , cf. Remark 2.1 of {{cite:488e6f94-37c2-4f6b-a553-6727355f6446}}. In section 4 we will show that (REF ) holds when FORMULA .  FORMULA
+
+
+Absence of percolation for large  FORMULA
+The principal object of this section is to show in Theorem REF  that when FORMULA , for large enough FORMULA , FORMULA -almost surely all connected components of FORMULA  are finite. We know from Remark REF  1) or () that in general FORMULA  does not decay exponentially with FORMULA . This creates an obstruction to the classical Peierls-type argument, which is used in the context of Bernoulli percolation. It substantially complicates the matter. The strategy of the proof we present here is instead based on a renormalization argument. We establish in Proposition REF  key estimates on the probability of existence of certain crossings at scale FORMULA  in FORMULA , cf. (REF ), (REF ), on an increasing sequence of length scales FORMULA  and an increasing but bounded sequence of values FORMULA . The proof of Proposition REF  uses a recurrence propagating certain controls, cf. (REF ), from one scale to the next along a sequence of level-values as in (REF ). Once Proposition REF  is established it is a simple matter to deduce Theorem REF . We will now introduce some notation.
+We consider the positive number FORMULA  and an integer FORMULA :
+FORMULA 
+We then define an increasing sequence of length scales via
+FORMULA 
+so that FORMULA , quickly grows to infinity:
+FORMULA 
+We organize FORMULA  in a hierarchical way with FORMULA  corresponding to the bottom scale and FORMULA  representing coarser and coarser scales. For this purpose, given FORMULA , we consider the set of labels at level FORMULA :
+FORMULA 
+To each label at level FORMULA , FORMULA , we associate the boxes:
+FORMULA 
+where we refer to the notation above (REF ). It is straightforward to see that FORMULA , is a partition of FORMULA  into boxes of side-length FORMULA , and FORMULA  simply stands for the union of FORMULA  and its “FORMULA -neighboring” boxes of level FORMULA . Also when FORMULA , then FORMULA  is the disjoint union of the FORMULA  boxes FORMULA  at level FORMULA  it contains. We denote with FORMULA  the interior boundary of FORMULA :
+FORMULA 
+In what follows we investigate the probability of the existence of certain vacant crossings defined for FORMULA , via:
+FORMULA 
+It follows from translation invariance, cf. Theorem REF  or () that
+FORMULA 
+is well-defined, i.e. does not depend on which FORMULA  enters the right-hand side. Clearly the functions FORMULA  are non-increasing on FORMULA . Our main task consists in the derivation of recurrence relations on the functions FORMULA . The key control is provided by the following
+Proposition 3.1  FORMULA )
+There exist positive constants FORMULA , cf. (REF ), (REF ), such that defining for FORMULA  and FORMULA  integer
+FORMULA 
+then for FORMULA , FORMULA , one has
+FORMULA 
+
+
+In the course of the proof of Proposition REF , we will use the expression “for large FORMULA ”, in place of “for FORMULA ”, with FORMULA  a positive constant as explained at the end of the Introduction. We first consider FORMULA , FORMULA , as well as FORMULA . We are first going to bound FORMULA  in terms of FORMULA , when FORMULA  is sufficiently away from 1, cf. (REF ), (REF ).
+We write FORMULA  for the collection of labels at level FORMULA  of boxes contained in FORMULA  touching FORMULA :
+FORMULA 
+as well as
+FORMULA 
+for the collection of labels of FORMULA -level boxes containing some point at FORMULA -distance FORMULA  from FORMULA  (with a similar notation as above (REF )).
+
+ FIGURE
+Fig. 1:  A schematic illustration of the event FORMULA . The path drawn lies in FORMULA .
+Observe that any nearest neighbor path in FORMULA  originating in FORMULA  and ending in FORMULA  must go through some FORMULA , reach FORMULA , and then go through some FORMULA , FORMULA , and reach FORMULA . Therefore we see that
+FORMULA 
+using a rough counting argument to bound FORMULA  and FORMULA  in the last step. We will now focus our attention on the probability which appears in the last member of (REF ). We write FORMULA  for given FORMULA , FORMULA , and just as in (REF ) introduce the decomposition
+FORMULA 
+where FORMULA , FORMULA  respectively play the role of FORMULA  and FORMULA  in (REF ). In particular FORMULA , FORMULA , are independent Poisson point processes on FORMULA  with intensity measures FORMULA , FORMULA , as in (REF ). The following notation will be convenient. When FORMULA  is a random point process on FORMULA  defined on FORMULA , i.e. a measurable map from FORMULA  into the space of pure point measures on FORMULA , we denote with FORMULA , for FORMULA , the event:
+FORMULA 
+For instance with (REF ) we see that for any FORMULA :
+FORMULA 
+We can apply this identity to FORMULA , FORMULA , with FORMULA . Noting that FORMULA  implies FORMULA , we find that
+FORMULA 
+With the help of the independence properties mentioned above we find that
+FORMULA 
+Our next task is to bound FORMULA  from above. For this purpose we decompose the FORMULA , FORMULA , in (REF ) into
+FORMULA 
+where the FORMULA , FORMULA , FORMULA , are independent Poisson point processes on FORMULA , with FORMULA  defined as FORMULA , with FORMULA  replacing FORMULA  in (REF ), and FORMULA  defined analogously as in (REF ), but with the role of FORMULA  replaced by FORMULA , cf. (REF ), (REF ), (REF ), which is also a Poisson point process on FORMULA . we write FORMULA  and FORMULA , FORMULA , for the intensity measures of these point processes, and note that
+FORMULA 
+Our aim is to bound from above FORMULA  in terms of quantities involving FORMULA . The rough idea is to try to dominate the influence on FORMULA  of FORMULA  by that of FORMULA . This is a kind of “sprinkling technique” where the discrepancy between FORMULA  and FORMULA  in the form of FORMULA  is used to dominate the long range interaction reflected by FORMULA .
+With this in mind we introduce an integer FORMULA , and further decompose FORMULA , FORMULA  and FORMULA  into:
+
+FORMULA 
+where denoting with FORMULA , the successive returns to FORMULA  and departures from FORMULA , cf. (REF ) and the notation above (REF ), we have set for FORMULA , FORMULA ,
+FORMULA 
+(note that FORMULA  has full measure under each of FORMULA , FORMULA  and FORMULA ).
+We then see that with the above definitions and the independence property mentioned below (REF ),
+FORMULA 
+Letting FORMULA  and FORMULA  stand for the respective intensity measures on FORMULA  of FORMULA  and FORMULA , we have
+FORMULA 
+where we used the strong Markov property at times FORMULA , in the last step. With the right-hand inequality of (REF ) as well as {{cite:c552696e-fe90-4dfe-9f97-781627c7f95f}}, p. 31, we thus find that:
+FORMULA 
+and hence
+FORMULA 
+where in the last step we used (REF ) as well as the right-hand inequality of the standard capacity estimate:
+FORMULA 
+(which for instance follows from (), (REF ) with FORMULA , letting FORMULA  tend to infinity in () and using (REF ) to bound FORMULA  capFORMULA , for FORMULA ). In a similar way we find that
+FORMULA 
+We will now seek to show that the trace left on FORMULA  by paths in the supports of FORMULA  and FORMULA  is dominated by the corresponding trace of paths in the support of FORMULA . The point processes FORMULA  and FORMULA  are then viewed as correction terms to be controlled with the help of (REF ), (REF ).
+With this perspective we consider the space FORMULA  of finite nearest neighbor paths on FORMULA , and for FORMULA , the measurable map FORMULA  from FORMULA  into the product space FORMULA  defined by:
+FORMULA 
+In other words FORMULA  for FORMULA  in the above event keeps track of the FORMULA  portions of the trajectory FORMULA  corresponding to times going from the successive returns to FORMULA  up to departure from FORMULA . We can view the various FORMULA , FORMULA  or FORMULA , with FORMULA  fixed as point processes on FORMULA . We then denote with FORMULA  their respective images under FORMULA , which are Poisson point processes on FORMULA . We write FORMULA  for their corresponding intensity measures. As a result of (REF ), we see that
+FORMULA 
+We will see that when FORMULA  are sufficiently far apart, cf. (REF ), FORMULA  has an intensity measure on FORMULA  which is bigger than the intensity measure of FORMULA , for FORMULA . The following lemma will be helpful, we refer to (REF ), (REF ) and below (REF ) for the notation.
+Lemma 3.2 
+For large FORMULA , for all FORMULA , we have:
+FORMULA 
+
+We begin with the proof of (REF ). We recall the notation introduced below (REF ). For FORMULA , FORMULA  we have
+FORMULA 
+where in the last step we used for FORMULA  the FORMULA - almost sure identity FORMULA  FORMULA , and the strong Markov property at time FORMULA . As a result we see that:
+FORMULA 
+with a similar bound as above (REF ) in the last step. Note that
+FORMULA 
+is a positive harmonic function, and using Harnack's inequality, cf. Theorem 1.7.2 of {{cite:c552696e-fe90-4dfe-9f97-781627c7f95f}}, together with a standard covering argument, we see that:
+FORMULA 
+Therefore coming back to (REF ) we see that
+FORMULA 
+For large FORMULA , we have FORMULA , for all FORMULA , with FORMULA  as in the last line of (REF ), and we hence see that for FORMULA ,
+FORMULA 
+This proves (REF ). We now turn to the proof of () which is more elementary. Indeed one has
+FORMULA 
+as follows from the invariance principle used to let the walk move at a distance from FORMULA , which is a multiple of FORMULA , as well as (REF ) and standard bounds on the Green function. On the other hand the left-hand side of () with a similar inequality as above (REF ) is bounded by FORMULA . Our claim follows.
+The main control on the intensity measure FORMULA  of FORMULA  in terms of the intensity measure FORMULA  of FORMULA  is provided by the next
+Lemma 3.3 
+For large FORMULA , one has
+FORMULA 
+
+The measure FORMULA  on FORMULA  is the image under FORMULA  of the intensity measure FORMULA  on FORMULA  (FORMULA ) of FORMULA , which in view of (REF ) equals
+FORMULA 
+As a result we find that with hopefully obvious notations
+FORMULA 
+The generic term of the above sum evaluated on FORMULA  equals:
+FORMULA 
+using the strong Markov property at time FORMULA  in the last step.
+If we denote with FORMULA  and FORMULA  the starting point and the end point of FORMULA , for FORMULA , the above expression vanishes unless FORMULA  and FORMULA  for each FORMULA . If these conditions are fulfilled, using the strong Markov property repeatedly at times FORMULA , we see that the last line of (REF ) equals:
+FORMULA 
+We can use Lemma REF  for all terms in the above expression where FORMULA , and repeatedly apply the Markov property to come back to an expression similar to (REF ). In this fashion we see that the above expression is at most:
+FORMULA 
+Summing over the various non-empty subsets FORMULA  of FORMULA , we see with (REF ) that
+FORMULA 
+where we recall that FORMULA  stands for the intensity measure of FORMULA .
+We can proceed in a similar fashion to bound FORMULA . The only difference stems from the fact that under FORMULA  paths start in FORMULA  and FORMULA , cf. last line of (REF ), can also be the empty set. In an analogous fashion to (REF ) we then obtain the following bound:
+FORMULA 
+with FORMULA  the measure
+FORMULA 
+We now see that for FORMULA  with a calculation of similar flavor as in (REF )
+FORMULA 
+summing over the time FORMULA  and location FORMULA  of the last visit of the path to FORMULA  in the last step. Using the strong Markov property at time FORMULA , (recall that FORMULA ), we thus find
+FORMULA 
+for FORMULA , using strong Markov property and (REF ) in the last step. Therefore summing (REF ) over FORMULA , we find that
+FORMULA 
+Summing (REF ) and (REF ) we obtain the claim (REF ).
+We now suppose FORMULA  large enough so that Lemma REF  holds, and also that
+FORMULA 
+We will now derive the promised upper bound on FORMULA  in terms of FORMULA . Observe that the restriction of the interlacement at level FORMULA  to FORMULA  satisfies:
+FORMULA 
+where we have set
+FORMULA 
+and we used (REF ) together with the fact that for any FORMULA , FORMULA , with FORMULA  due to (REF ):
+FORMULA 
+If we now define FORMULA  by replacing FORMULA  in the second line of (REF ) by FORMULA , we see from (REF ) that
+FORMULA 
+We also see from (REF ), (REF ) and the choice (REF ) that for each FORMULA , the Poisson point process FORMULA  is stochastically dominated by FORMULA  so that
+FORMULA 
+With (REF ), (REF ) we thus find in view of (REF ) that
+FORMULA 
+so that
+FORMULA 
+This is the promised upper bound on FORMULA . We can now come back to (REF ), (REF ) and obtain that when FORMULA  is large for FORMULA , FORMULA , FORMULA  satisfying (REF ) one has
+FORMULA 
+Given FORMULA , FORMULA , we thus define the increasing sequence
+FORMULA 
+as well as the sequence
+FORMULA 
+We will now prove a lemma that uses inequality (REF ) to set-up an induction scheme ensuring that FORMULA  is at most FORMULA  for all FORMULA . Note that (REF ) deteriorates when
+FORMULA  becomes large. This is compensated by picking FORMULA  sufficiently big and checking (REF )ii)
+at each step. In the end to be able to initiate the induction, we will need to pick FORMULA  large, then FORMULA  to check (REF )i) for FORMULA , and finally FORMULA , see (REF ), thus influencing the whole sequence FORMULA , so as to ensure that (REF )ii) holds for FORMULA .
+Lemma 3.4 
+If FORMULA , then for FORMULA  such that
+FORMULA 
+and any FORMULA , when for some FORMULA ,
+FORMULA 
+then (REF ) holds as well with FORMULA  in place of FORMULA .
+
+Since FORMULA  is a non-increasing function, we see from (REF ) that for FORMULA , FORMULA , one has for FORMULA ,
+FORMULA 
+and since one also has
+FORMULA 
+we find:
+FORMULA 
+We will now seek to propagate (REF ) i) from FORMULA  to FORMULA . For this purpose it suffices to show that the following two inequalities hold:
+FORMULA 
+To check (REF ) observe that:
+FORMULA 
+with FORMULA  and (REF ) in the next to last inequality.
+We now turn to () and observe that when FORMULA  satisfies (REF ) then
+FORMULA 
+As a result we see that the left-hand side of () is smaller than
+FORMULA 
+Recalling (REF ), we see that for large FORMULA  we can propagate (REF ) i) from FORMULA  to FORMULA . We now turn to (REF ) ii). We have with (REF ):
+FORMULA 
+Hence for FORMULA , we can propagate (REF ) ii) from FORMULA  to FORMULA  as well, and this concludes the proof of Lemma REF .
+We now choose FORMULA  large so that for any FORMULA  and FORMULA  satisfying (REF ), when (REF ) holds for FORMULA , then it holds for all FORMULA . If we now choose FORMULA , we see that for any FORMULA , (recall FORMULA  is the set of labels at level 0),
+FORMULA 
+using FORMULA  in the last step. Similarly given FORMULA  and FORMULA  as above, we can pick FORMULA  such that:
+FORMULA 
+With such choices, as noted above, it follows that FORMULA , for all FORMULA , and this completes the proof of Proposition REF .
+This now brings us to the main result of this section. We recall the definition of the critical value FORMULA  in (REF ).
+Theorem 3.5   FORMULA
+For large FORMULA  the vacant set FORMULA  does not percolate, i.e.
+FORMULA 
+and for FORMULA , FORMULA .
+
+With Corollary REF  we only need to prove (REF ). We choose FORMULA  as in Proposition REF , so that with FORMULA  as in (REF ) we find:
+FORMULA 
+With (REF ) we know that FORMULA , and hence FORMULA , and we thus see that
+FORMULA 
+Consequently for any FORMULA , and FORMULA  such that FORMULA , we find as a consequence of (REF ) and (REF ) that
+FORMULA 
+Letting FORMULA  tend to infinity we see that FORMULA , and (REF ) follows.
+Remark 3.6  Once we know that FORMULA  does not percolate for large FORMULA , it is a natural question to wonder how large the vacant cluster at the origin can be. An exponential tail bound on the number of sites of the vacant cluster at the origin of subcritical Bernoulli percolation is known to hold, cf. {{cite:b976a0dd-12eb-4016-a13b-1d4fd97ead59}}, p. 132 and 350. Such an estimate cannot be true in the case of FORMULA  due to (REF ). The exact nature of the tail of this random variable is an interesting problem.  FORMULA
+
+
+Percolation for small  FORMULA
+The main objective of this section is to show that when FORMULA , the vacant set FORMULA  percolates for small FORMULA , or equivalently that FORMULA , see Theorem REF . In spite of the fact that FORMULA  tends to contain bigger boxes than what is the case for Bernoulli percolation, cf. (REF ), it does not stochastically dominate Bernoulli percolation in the highly percolative regime as noted in Remark REF  1). This fact precludes a strategy based on a direct comparison argument. We develop here a similar but simpler renormalization procedure as in the previous section. It yields a sharper result than the strategy based on the combination of the exponential bound (REF ) and a Peierls-type argument, as outlined in Remark 3.5 3). Such a proof only works for FORMULA .
+We begin with some notation. We recall the definition of FORMULA  and FORMULA , in (REF ), (REF ). Throughout we identify FORMULA  with the subset of points FORMULA  in FORMULA , such that FORMULA . For FORMULA , we define the set FORMULA  of labels of level FORMULA  just as in (REF ), but with FORMULA  replaced by 2. For FORMULA  and FORMULA  we attach the boxes in FORMULA , FORMULA , with a similar definition as in (REF ), but with FORMULA  replaced by 2, and FORMULA  by FORMULA . We write FORMULA  for the relative interior boundary in FORMULA  of FORMULA , i.e. the set of points of FORMULA  neighboring FORMULA . In this section, parallel to (REF ), a crucial role is played by the “occupied crossing” events. Namely for FORMULA , we define:
+FORMULA 
+As a consequence of translation invariance, cf. Theorem REF  or (),
+FORMULA 
+is well defined. It is also a non-decreasing function of FORMULA . Our main tasks consists in showing that when FORMULA  is chosen small FORMULA  tends sufficiently rapidly to 0. Our key control stems from the
+Proposition 4.1   FORMULA
+There exists a positive constant FORMULA , cf. (REF ), such that for FORMULA , and FORMULA  one has
+FORMULA 
+
+In analogy with (REF ), (REF ), we define for FORMULA  and FORMULA  the collection of labels of boxes at level FORMULA  “at the boundary of FORMULA ”:
+FORMULA 
+We also consider the collection of labels of boxes at level FORMULA  containing some point at FORMULA -distance FORMULA  from FORMULA :
+FORMULA 
+The argument leading to (REF ) applies here as well and shows that
+FORMULA 
+From now on we assume that
+FORMULA 
+For FORMULA , FORMULA , we define FORMULA  and write
+FORMULA 
+with a similar definition as in (REF ) or (REF ), so that the FORMULA , FORMULA , are independent Poisson point processes on FORMULA  with respective intensity measures FORMULA , given by analogous formulas as in (REF ), except that FORMULA  and FORMULA  are now respectively replaced by FORMULA  and FORMULA . With a similar notation as in (REF ), when FORMULA  is a random point process on FORMULA , we write:
+FORMULA 
+For instance we now see with (REF ) that
+FORMULA 
+Specializing to FORMULA , and noting that
+FORMULA 
+we obtain the identities:
+FORMULA 
+Due to the independence of the FORMULA , FORMULA , it follows that for FORMULA , FORMULA , we have:
+FORMULA 
+where in the last step we used (REF ), () together with standard bounds on the Green function, cf. {{cite:c552696e-fe90-4dfe-9f97-781627c7f95f}}, p. 31. With (REF ), (REF ), we thus see that
+FORMULA 
+We thus define
+FORMULA 
+and see that
+FORMULA 
+With (REF ) we know that FORMULA , and with (REF ) we know that FORMULA . As a result we obtain:
+FORMULA 
+We will now use the following induction lemma.
+Lemma 4.2   FORMULA
+If FORMULA , then for any FORMULA , when for some FORMULA ,
+FORMULA 
+then (REF ) holds as well with FORMULA  in place of FORMULA .
+
+With (REF ) we see that
+FORMULA 
+when FORMULA . This proves our claim.
+We now choose FORMULA , so that for any FORMULA , when FORMULA  holds then FORMULA  for all FORMULA . Further picking FORMULA , we see that for FORMULA ,
+FORMULA 
+With this choice of FORMULA  and FORMULA  we thus find that FORMULA  for all FORMULA , and this concludes the proof of Proposition REF .
+Theorem 4.3   FORMULA
+For small FORMULA  the vacant set FORMULA  does percolate, i.e.
+FORMULA 
+and for FORMULA , FORMULA .
+
+We only need to prove (REF ) thanks to Corollary REF . We choose FORMULA  large and FORMULA  so that (REF ) holds for all FORMULA . Then for FORMULA  and FORMULA , we can write:
+FORMULA 
+where FORMULA  runs over the collection of labels at level FORMULA  of boxes FORMULA  intersecting the segment FORMULA , (FORMULA  stands for the canonical basis of FORMULA , and recall we identified FORMULA  with FORMULA ). With (REF ) this collection has cardinality at most FORMULA , and we thus find that
+FORMULA 
+Choosing FORMULA  large and then FORMULA , we find that FORMULA , and this proves (REF ).
+Remark 4.4   
+1) Combining Theorems REF  and REF  we find that when FORMULA ,
+FORMULA 
+i.e. FORMULA  is a non-degenerate critical value. This has been extended to all FORMULA  in {{cite:0fd9c1b5-08c0-46bd-b6f1-a5a78abcc9d8}}.
+2) As a matter of fact the above proof combined with an ergodicity argument, cf. (REF ), shows that when FORMULA , for small FORMULA , FORMULA  percolates in FORMULA . This feature remains true for all FORMULA , see Theorem 3.4 of {{cite:0fd9c1b5-08c0-46bd-b6f1-a5a78abcc9d8}}.
+3) Some other very natural questions remain open. When FORMULA , how large is the vacant cluster at the origin? When FORMULA , how large can a vacant cluster at the origin be, if it does not meet the infinite cluster, (which is known to be unique thanks to {{cite:8c69d435-1e6c-4be2-8e1b-ef13215e0174}})? Is there percolation at criticality (i.e. is FORMULA )? What is the asymptotic behavior of FORMULA  for large FORMULA ? These are just a few examples of many unresolved issues concerning percolative properties of the vacant set left by the random interlacements model described in this work.  FORMULA
+

@@ -1,0 +1,1252 @@
+
+Nonholonomic Ricci Flows:III. Curve Flows and Solitonic Hierarchies Sergiu I. VacarusergiuFORMULA vacaru@yahoo.com, svacaru@fields.utoronto.ca      The Fields Institute for Research in Mathematical Science 222 College Street, 2d Floor,  Toronto  M5T 3J1, Canada April 18, 2007The geometric constructions are elaborated on (semi) Riemannian manifolds
+and vector bundles provided with nonintegrable distributions defining
+nonlinear connection structures induced canonically by metric tensors. Such
+spaces are called nonholonomic manifolds and described by two equivalent
+linear connections also induced in unique forms by a metric tensor (the Levi
+Civita and the canonical distinguished connection, d–connection). The
+lifts of geometric objects on tangent bundles are performed for certain
+classes of d–connections and frame transforms when the Riemann tensor is
+parametrized by constant matrix coefficients. For such configurations, the
+flows of non–stretching curves and corresponding bi–Hamilton and solitonic
+hierarchies encode information about Ricci flow evolution, Einstein spaces
+and exact solutions in gravity and geometric mechanics. The applied methods
+were elaborated formally in Finsler geometry and allows us to develop the
+formalism for generalized Riemann–Finsler and Lagrange spaces.
+Nevertheless, all geometric constructions can be equivalently re–defined
+for the Levi Civita connections and holonomic frames on (semi) Riemannian
+manifolds.
+Keywords: Ricci flow, curve flow, (semi) Riemannian
+spaces, Finsler and Lagrange geometry, nonholonomic manifold, nonlinear
+connection, bi–Hamiltonian, solitonic equations.
+MSC: 37K10, 37K25, 53B40, 53C21, 53C44, 83E99
+ Introduction
+Both the theory of Ricci flows and the theory of integrable partial
+differential equations have deep links to the geometry of curves and
+surfaces, generalized Riemann–Finsler spaces and geometric analysis:
+Originally, the Ricci flow theory has addressed geometrical and topological
+issues, and certain applications in physics, for Riemannian manifolds {{cite:939a3dc5-65f6-41ec-8c74-c533b5666c8f}}, {{cite:e2c9318d-c689-458b-870b-6f5ac77ba0bb}}, {{cite:1893c7c2-0995-4562-aad5-8f879544f07d}}, {{cite:1735753d-162b-40b0-b181-9e67e0a2f9d2}}, {{cite:bd693ba3-8eda-4eb2-8366-28d5169e1428}} (we cite here some reviews on
+Hamilton–Perelman theory {{cite:1fa7b337-ad0e-4a2b-bb9a-b6a255a41bfc}}, {{cite:9e0a6355-fe78-4d67-b8f1-fe0af104036e}}, {{cite:0511851e-f928-4a78-9b7b-cf271720d2f3}}, {{cite:b8124a5d-fec4-4a0c-a1d9-cf78cef7d2c8}}). In parallel,
+it was found that various classes of solitonic equations (for instance, the
+sine–Gordon, SG, and modified Korteveg–de Vries, mKdV, equations) and
+along with their hierarchies of symmetries, conservation laws and associated
+recursion operators can be encoded into the geometry of flows of
+non–stretching curves in Riemannian symmetric spaces and related Lie
+algebras and Klein spaces {{cite:3401f941-6717-4a3a-80e2-15c98a597abb}}, {{cite:ce151d78-4368-4fff-af5c-2558487198b3}}, {{cite:f4016e48-eeea-434e-b6af-7b22b420ba23}}, {{cite:769cd7d7-c2dd-4142-b5b2-1a2367e64707}}, {{cite:e1743214-cfbe-491c-8740-00d15bedb5fc}}, {{cite:ef487ffe-622a-4fd0-b4b2-099f42e5615c}}, {{cite:107a017f-4fd6-477a-afa1-442671037c9d}}, {{cite:55195732-bfed-48bf-af0f-1379aeae1823}},
+see also reviews and new results in Refs. {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}, {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}.
+In {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, it was proven that a more general class of (pseudo)
+Riemannian spaces can be encoded into bi–Hamilton structures and related
+solitonic hierarchies. The key construction was to deform nonholonomically
+the frame and linear connection structures in order to get constant matrix
+curvature coefficients, with respect to certain classes of nonholonomic
+frames. Such frames are adapted to a nonlinear connection (N–connection)
+structure induced by some generic off–diagonal metric coefficients . We
+also concluded that having generated the corresponding solitonic hierarchies
+for the so–called canonical distinguished connection (d–connection), we
+can re–define equivalently the geometric objects, conservation laws and
+basic equations and solutions in terms of the usual Levi Civita connection.
+The formalism applied in {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, based on the geometry of moving
+nonholonomic frames with associated N–connection structure, was originally
+developed in Finsler–Lagrange geometry and generalizations {{cite:97660bbd-af2a-4f72-9fa0-84a162bed888}}, {{cite:80a8179e-a641-418a-9f4e-35710c1599f4}}, {{cite:7405b234-de60-483c-8e71-1ebd718784b5}}. Our idea {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}} was to apply it to usual (semi)
+Riemannian spaces, or to Riemann–Cartan ones (with nontrivial torsion),
+prescribing certain nonholonomic distributions arising naturally if we
+constrain partially some degrees of freedom. For such systems, there are
+defined certain classes of preferred frames and symmetries for the
+gravitational and matter field interactions. Following this approach, it was
+possible to construct various classes of exact solutions in Einstein and
+string gravity modelling Finsler like locally anisotropic structure,
+possessing noncommutative symmetries and defining generically off–diagonal
+metrics and nonlinear interactions of pp–waves, two and three dimensional
+gravitational solitons and spinor fields {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}, {{cite:4d54e505-a4bc-427a-a87e-b6339c0a3b5a}}, {{cite:6cd882ed-efd7-40a9-89c5-7c158e37938a}}.
+Nevertheless, if realistic theories of gravitational and gauge field
+interactions and/or generalized Finsler models of geometric mechanics are
+introduced into consideration, the solitonic encoding of metric, connection
+and frame structures is possible for certain effective generalized Lagrange
+spaces. In this case, we model the geometric constructions on couples of
+symmetric Riemannian spaces provided with nonholonomic distributions. The
+work {{cite:036ee834-ceda-4d97-aed6-c66506202b38}} concluded an approach when different theories of gravity
+and geometric mechanics are treated in a unified geometric way as
+nonholonomic (semi) Riemannian manifolds, or vector bundles. It was also
+proven that the data for geometric objects and fundamental physical
+equations (their symmetries and conservation laws) can be encoded into
+bi–Hamilton structures and correspondingly derived solitonic hierarchies.
+Integrable and nonintegrable (i.e. holonomic and nonholonomic / anholonomic)
+flows of geometric structures were also recently considered in a series of
+works on nonholonomic Ricci flows {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}}, {{cite:a00081af-b241-4deb-be65-ec99ac184c50}} and applications in
+physics {{cite:8c291982-ce0d-4401-9dff-2eb7a9b0d7cc}}, {{cite:fb66176a-9e82-4a86-ae15-144aff34ae6d}}, {{cite:29e789ff-d73c-4b53-aae3-e478eafdc226}}, {{cite:65879e11-0bad-41e6-9109-1698c999d777}}. Some important results of those
+works were the proofs that constrained Ricci flows of (semi) Riemannian
+metrics result in Finsler like metrics and generalizations and, inversely,
+Finsler–Lagrange type geometrical objects can be described equivalently by
+flows on Riemann (in general, Riemann–Cartan) spaces.
+The goal of this paper, the third one in a series defined together with {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}}, {{cite:a00081af-b241-4deb-be65-ec99ac184c50}}, is to prove that solitonic hierarchies can be generated by
+any (semi) Riemannian metric FORMULA  on a manifold FORMULA  of dimension FORMULA  if the the geometrical objects are lifted in the total space of
+the tangent bundle FORMULA  or of a vector bundle FORMULA  FORMULA  by defining such frame transforms when constant matrix
+curvatures are defined canonically with respect to certain classes of
+preferred systems of reference. We shall also define the criteria when
+families of bi–Hamilton structures and solitonic hierarchies encode (in
+general, nonholonomic) Ricci flow evolutions of geometric objects and/ or
+exact solutions of gravitational field equations.
+The paper is organized as follows:
+In section 2 we outline the geometry of nonholonomic manifolds and vector/
+tangent bundles provided with nonlinear connection structure. We emphasize
+the possibility to define fundamental geometric objects induced by a (semi)
+Riemannian metric on the base space when the Riemannian curvature tensor has
+constant coefficients with respect to a preferred nonholonomic basis. We
+also present some results on evolution equations of nonholonomic Ricci flows
+and exact solutions in gravity.
+In section 3 we consider Ricci flow families of curve flows on nonholonomic
+vector bundles. We sketch an approach to classification of such spaces
+defined by conventional horizontal and vertical symmetric (semi) Riemannian
+subspaces and provided with nonholonomic distributions defined by the
+nonlinear connection structure. It is constructed a corresponding family of
+nonholonomic Klein spaces for which the bi–Hamiltonian operators are
+defined by canonical distinguished connections, adapted to the nonlinear
+connection structure, for which the distinguished curvature coefficients are
+constant.
+Section 4 is devoted to the formalism of distinguished bi–Hamiltonian
+operators and vector soliton equations for arbitrary (semi) Riemannian
+spaces. Then we consider the properties of cosympletic and sympletic
+operators adapted to the nonlinear connection structure. We define the basic
+equations for nonholonomic curve flows and parametrize their possible Ricci
+flows.
+Section 5 is devoted to formulation of the Main Result: a proof that for any
+nonholonomic Ricci flow system, one can be defined a natural family of
+N–adapted bi–Hamiltonian flow hierarchies inducing anholonomic solitonic
+configurations. There are constructed in explicit form the solitonic
+hierarchies corresponding to the bi–Hamiltonian anholonomic curve flows.
+Finally, there are speculated the conditions when from solitonic hierarchies
+we can extract solutions of the Ricci flow and/or field equations.
+We summarize and discuss the results in section 6. For convenience, we
+outline the necessary definitions and formulas from the geometry of
+nonholonomic manifolds in Appendix A. Then, in Appendix B, we consider the
+geometry of N–anholonomic Klein spaces. A proof of the Main Theorem is
+sketched in Appendix C.
+Notation remarks:
+There are considered two types of flows of geometrical objects on manifolds
+of necessary smooth class, induced by 1) non–stretching curve flows FORMULA  defined by real parameters FORMULA  and FORMULA 
+and 2) Ricci flows of metrics FORMULA  parametrized by a real FORMULA  The non–stretching flows of a curve are constrained by the condition FORMULA  which under Ricci flows
+transforms into a family of such conditions, FORMULA  For Ricci flows, we get evolutions of families of
+non–stretching curves parametrized by hypersurfaces FORMULA  It is convenient to
+use in parallel two types of denotations for the geometric objects subjected
+to both curve and Ricci flows: by emphasized all dependencies on parameters FORMULA  and FORMULA  or by introducing ”up/low” labels like FORMULA  or  FORMULA
+We shall also write ”boldface” symbols for geometric objects and spaces
+adapted to a noholonomic/ nonlinear connection structure, like FORMULA  and write FORMULA  if the nonholonomic structure became trivial, i.e.
+integrable/ holonomic. In order to investigate the properties of curve and
+Ricci flow evolution equations it is convenient to use both abstract/global
+denotations and coefficient formulas with respect to coordinate or
+nonholonomic bases.
+A nonholonomic distribution with associated nonlinear connection structure
+splits the manifolds into conventional horizontal (h) and vertical (v)
+subspaces. The geometric objects, for instance, a vector FORMULA  can be
+written in abstract form as FORMULA  or in
+coefficient forms as FORMULA  where FORMULA  can be equivalently decomposed with
+respect to a general nonholonomic frame FORMULA 
+or coordinate frame FORMULA  for local h- and v–coordinates FORMULA 
+or FORMULA  when FORMULA  and FORMULA  when indices will be underlined if it is
+necessary to emphasize certain decompositions are defined for coordinate
+bases. The h–indices FORMULA  will be used for base/
+nonholonomic vector objects and the v–indices FORMULA 
+will be used for fiber/ holonomic vector objects. Greek indices of type FORMULA  will be used as cumulative ones.
+Finally, we note that we shall omit labels, indices and parametric/
+coordinate dependencies for some formulas if it does not result in
+ambiguities.
+
+Nonholonomic Lifts and Ricci Flows
+In this section, we prove that for any family of (semi) Riemannian metrics FORMULA  on a manifold FORMULA  parametrized by a real parameter FORMULA 
+it is possible to define lifts to the tangent bundle FORMULA  provided with
+canonical nonlinear connection (in brief, N–connection), Sasaki type
+metrics and (linear) canonical distinguished connection (d–connection)
+structures. We also outline some important formulas for nonholonomic Ricci
+flow evolution equations of geometric structures. The reader is recommended
+to consult Refs. {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}, {{cite:4d54e505-a4bc-427a-a87e-b6339c0a3b5a}}, {{cite:97660bbd-af2a-4f72-9fa0-84a162bed888}}, {{cite:80a8179e-a641-418a-9f4e-35710c1599f4}}, {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}}, {{cite:a00081af-b241-4deb-be65-ec99ac184c50}} and Appendix A on
+details on N–connection geometry and recent developments in modern gravity
+and Ricci flow theory.
+N–connections induced by families of Riemannian metrics
+Let FORMULA  be a (smooth) vector bundle over base
+manifold FORMULA  FORMULA  and FORMULA  for FORMULA  and FORMULA 
+being the dimension of the typical fiber FORMULA  It is defined a surjective
+submersion FORMULA  In any point FORMULA  the total space FORMULA 
+splits into ”horizontal”, FORMULA  and ”vertical”, FORMULA  subspaces.
+We denote the local coordinates in the form FORMULA  or FORMULA  with horizontal indices FORMULA  and vertical indices  FORMULAIn a particular case, we have a tangent bundle FORMULA  when FORMULA 
+for such bundles both type of indices run the same values but it is
+convenient to distinguish the horizontal and vertical ones by using
+different groups of small Latin indices. Here one should be noted that on FORMULA  we are able to contract the vertical indices with the corresponding
+horizontal ones, and inversely, but not on a general nonholonomic manifold FORMULA  or  FORMULA The summation rule on the same ”up” and
+”low” indices will be applied.
+The base manifold FORMULA  is provided with a family of (semi) Riemannian
+metrics, nondegenerate second rank tensors,in physical literature, one uses the term (pseudo) Riemannian/Euclidean space FORMULA 
+for FORMULA  We also introduce a family of
+vertical metrics FORMULA  by completing the matrices FORMULA  diagonally with FORMULA  till any nondegenerate second rank tensor FORMULA  if FORMULA  and then subjecting to any frame
+transforms. This way, we define certain families of metrics FORMULA  (we shall
+also use the notation FORMULA  on FORMULA  Considering
+frame (vielbein) transforms,
+FORMULA 
+where FORMULA  is written in equivalent form
+FORMULA  we can deform the
+metric structures, FORMULA  (we shall omit dependencies on coordinates and parameters
+if it does not result in ambiguities). The coefficients FORMULA  will be defined below (see formula (REF )) from the condition of generating curvature tensors with constant
+coefficients with respect to certain preferred systems of reference.
+For any FORMULA  from the set FORMULA  we can
+construct a family of effective generation functions
+FORMULA 
+inducing families of vertical metrics
+FORMULA 
+which is ”weakly” regular if  FORMULA
+By straightforward computations, we provesee Refs. {{cite:97660bbd-af2a-4f72-9fa0-84a162bed888}}, {{cite:80a8179e-a641-418a-9f4e-35710c1599f4}} for details of a similar proof; here we note that
+in our case, in general,   FORMULA:
+Theorem 2.1 The family of  Lagrangians FORMULA  where FORMULA  for paths FORMULA  on FORMULA 
+depending on parameter FORMULA  with weakly regular metrics induces a family
+of Euler–Lagrange equations on  FORMULA
+FORMULA 
+which are equivalent to a corresponding family of “nonlinear” geodesic
+equations
+FORMULA 
+defining paths of a canonical semispray FORMULA  where
+FORMULA 
+with FORMULA  being inverse to (REF ).
+
+The Theorem REF  states the possibility to geometrize the regular
+Lagrange mechanics by geometric objects on nonholonomic spaces and inversely:
+Conclusion 2.1 For any family of (semi) Riemannian metrics FORMULA  on
+FORMULA  we can associate canonically certain families of effective regular
+Lagrange mechanical systems on FORMULA  with the Euler–Lagrange equations
+transformed into corresponding families of nonlinear (semispray) geodesic
+equations.
+
+Theorem 2.2 Any family of (semi) Riemannian metrics FORMULA  on FORMULA 
+induces a corresponding family of canonical N–connection structures on  FORMULA
+
+Proof. We sketch a proof by defining the coefficients of N–connection, see (REF ),
+FORMULA 
+where
+FORMULA 
+with FORMULA  and FORMULA  defined respectively by
+formulas (REF ) and (REF ).  FORMULA
+The families of N–adapted partial derivative and differential operators,
+see Appendix for more general formulas (REF ) and (REF ), are
+defined by the N–connection coefficients (REF ) and may be denoted
+respectively FORMULA  and  FORMULA
+For any metric structure FORMULA  on a manifold, there is the unique
+metric compatible and torsionless Levi Civita connection FORMULA  for which
+FORMULA  and FORMULA  This
+connection is not a d–connection because it does not preserve under
+parallelism the N–connection splitting (REF ). One has to
+consider less constrained cases, admitting nonzero torsion coefficients,
+when a d–connection is constructed canonically for a d–metric structure. A
+simple minimal metric compatible extension of FORMULA  is that of canonical
+d–connection FORMULA  with FORMULA  and FORMULA  but, FORMULA in general, nonzero FORMULA  and FORMULA 
+see (REF ). The coefficient formulas for such connections are given
+in Appendix, see (REF ) and related discussion. It should be noted
+that on tangent bundle FORMULA  it is possible to define the torsionless
+canonical d–connection (REF ) which is completely similar to
+the Levi Civita connection. For families of metrics FORMULA  we
+get certain families of connections FORMULA  and  FORMULA
+Theorem 2.3 Any family of (semi) Riemannian metrics FORMULA  on FORMULA 
+ induces a parametrized by FORMULA  family of nonholonomic (semi) Riemannian
+structures on  FORMULA
+
+Proof. The family FORMULA  on FORMULA  induces a family of
+canonical d–metric structures on  FORMULA
+FORMULA 
+where FORMULA  are elongated as in (REF ), but
+with FORMULA  from (REF ). Then, we note that there are canonical d–connections on FORMULA  induced by FORMULA  we can construct them in explicit form by introducing FORMULA  and FORMULA  in formulas (REF ), in order to compute the coefficients  FORMULA
+The corresponding curvature curvature tensor
+FORMULA 
+can be computed by introducing respectively the values FORMULA  and FORMULA  into (REF ), defining FORMULA  and
+then into formulas (REF ). Here one should be noted that the
+constructions on FORMULA  depend on arbitrary vielbein coefficients FORMULA  in (REF ). We can restrict such
+sets of coefficients in order to generate various particular classes of
+(semi) Riemannian geometries on FORMULA  for instance, in order to generate
+symmetric Riemannian spaces with constant curvature, see Refs. {{cite:f28bb569-85d3-43f7-8c9b-9eebc0dc7b10}}, {{cite:30b710ac-9e53-43e0-9772-115a1f8ba401}}, {{cite:7c9330fc-49e4-4847-afbd-6832d59dd2da}}.
+Corollary 2.1 There are lifts of a family of (semi) Riemannian metric FORMULA  on FORMULA  FORMULA  generating a corresponding family
+Riemannian structures on FORMULA  with the curvature coefficients of the
+canonical d–connections coinciding (with respect to N–adapted bases) to
+those for the families of Riemannian space of constant curvature of
+dimension  FORMULA
+
+Proof. For a given set FORMULA  on FORMULA  in (REF ), we
+chose such coefficients FORMULA  that
+FORMULA 
+results in (REF ) of type
+FORMULA 
+where FORMULA  are metrics of symmetric Riemannian space
+(of constant curvature). Considering a prescribed set FORMULA  we have to integrate two times on FORMULA  in order to find
+any solution for FORMULA  defining a frame structure
+in the vertical subspace. The next step is to construct the d–metric FORMULA  of type (REF ), in our case, with respect to a
+nonholonomic base elongated by FORMULA 
+generated by FORMULA  and FORMULA  like in (REF ) and (REF ). This defines a
+constant curvature Riemannian space of dimension FORMULA  The coefficients of
+the canonical d–connection, which in this case coincide with those for the
+Levi Civita connection, and the coefficients of the Riemannian curvature can
+be computed respectively by introducing FORMULA  in formulas (REF ) and (REF ). Finally,
+we note that the induced symmetric Riemannian spaces contain additional
+geometric structures like the N–connection and anholonomy coefficients FORMULA  see (REF ). FORMULA
+There are various possibilities to generate on FORMULA  nonholonomic Riemannian
+structures from a given set FORMULA  on FORMULA  They
+result in different geometrical and physical models.
+Remark 2.1 We can simplify substantially the geometric constructions if
+instead of families of constant coefficients FORMULA 
+we consider only one set of constant coefficients FORMULA  This is possible even FORMULA  have quite general dependencies on FORMULA  but
+supposing that we can define such FORMULA  when (REF ) can be solved for a fixed right side. For simplicity, in our
+furhter considerations we shall fix any set FORMULA  and
+parametrize the dependencies on FORMULA  for FORMULA  and  FORMULA
+
+In this work, we emphasize the possibility of generating spaces with
+constant curvature because for such symmetric spaces it was elaborated a
+bi–Hamiltonian approach and corresponding solitonic hierarchies {{cite:ef487ffe-622a-4fd0-b4b2-099f42e5615c}}, {{cite:107a017f-4fd6-477a-afa1-442671037c9d}}, {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}, {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}. For general Riemannian and/or Finsler–Lagrange
+spaces it is not possible to get constant coefficient curvature coefficients
+for the Levi Civita connection but for the corresponding lifts to the
+canonical d–connection there are constructions generating constant
+curvature coefficients {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, {{cite:036ee834-ceda-4d97-aed6-c66506202b38}}. This will allow us to construct the
+corresponding solitonic hierarchies from which, by imposing the
+corresponding constraints, it will be possible to extract the information
+for very general classes of metrics.
+Example 2.1 The simplest example when a Riemannian structure with constant matrix
+curvature coefficients is generated on FORMULA  is given by a d–metric induced
+by FORMULA  i.e.
+FORMULA 
+with FORMULA  defined by FORMULA  in their turn
+induced by a given set FORMULA  on FORMULA  For families of
+geometric objects, we consider
+FORMULA 
+when FORMULA  are defined by a given set  FORMULA
+
+For more general nonholonomic configurations on FORMULA  we can consider
+families of metrics of type
+FORMULA 
+where
+FORMULA 
+and FORMULA  are elongated by FORMULA  We note that in the
+formulas defining the coefficients of the metrics (REF ) one does not
+consider summation on repeating indices which are not ”cross” one, i.e. FORMULA  FORMULA  means a simple product FORMULA  FORMULA  between deformation function FORMULA  and metric
+coefficient FORMULA  for any fixed values FORMULA  or FORMULA  It
+is possible to write down the metrics (REF ) in ”generic
+off–diagonal forms”, see (REF ) and (REF ), for any fixed
+value of  FORMULA
+
+Nonholonomic Ricci flows and Einstein spaces
+In the theory of Ricci flows, the families of metrics (REF ) must
+satisfy certain evolution equations on parameter FORMULA  For normalized
+(holonomic) Ricci flows {{cite:1893c7c2-0995-4562-aad5-8f879544f07d}}, {{cite:1fa7b337-ad0e-4a2b-bb9a-b6a255a41bfc}}, {{cite:0511851e-f928-4a78-9b7b-cf271720d2f3}}, {{cite:b8124a5d-fec4-4a0c-a1d9-cf78cef7d2c8}}, with respect
+to a coordinate base FORMULA  the evolution equations are postulated in the form
+FORMULA 
+where the normalizing factor FORMULA  is introduced in
+order to preserve the volume FORMULA  and the metric coefficients FORMULA  are parametrized in the form (REF ),
+and FORMULA  is the Ricci
+tensor for the the Levi Civita connection FORMULA  In Refs. {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}}, {{cite:a00081af-b241-4deb-be65-ec99ac184c50}}, {{cite:65879e11-0bad-41e6-9109-1698c999d777}} we discuss in details the N–anholonomic Ricci flows
+and prove that the nonholonomic version of (REF ) can be proven by a
+N–adapted calculus from the Perelman's functionals,
+FORMULA 
+where FORMULA  We note that the equations () constrain
+nonholonomic Ricci flows to result in symmetric metrics and that we wrote
+them with respect to N–adapted frames. A simple class of solutions can be
+constructed for the families of N–anholonomic Einstein spaces when
+FORMULA 
+and
+FORMULA 
+Such equations define some effective Einstein metrics subjected to Ricci
+flows under evolution of the N–anholonomic structure FORMULA  correlated
+with the evolutions of h–metric FORMULA  but FORMULA  stated for a fixed
+value of  FORMULA
+For our further considerations, we need the results of two Corollaries (see
+Refs. {{cite:1fa7b337-ad0e-4a2b-bb9a-b6a255a41bfc}}, {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}}, {{cite:a00081af-b241-4deb-be65-ec99ac184c50}} for detailed proofs and discussions both
+for holonomic and nonholonomic manifolds):
+Corollary 2.2 The evolution, for all FORMULA  of
+preferred frames on a N–anholonomic manifold
+FORMULA 
+is defined by the coefficients
+FORMULA 
+with
+FORMULA 
+where FORMULA  and FORMULA  establish the signature of
+FORMULA  is given by equations
+FORMULA 
+
+For simplicity, we omit formulas for h- and v–decomposition of (REF ).
+Corollary 2.3 The scalar curvature (REF )
+FORMULA 
+for the canonical d–connection on FORMULA  satisfies the evolution equations
+FORMULA 
+
+Proof. It is similar to that for the Levi Civita connection because on FORMULA  the
+coefficients of canonical d–connection with respect to N-adapted frames are
+the same as those for the Levi Civita but decomposed into h– and
+v–components. We note that on FORMULA  the Ricci d–tensor FORMULA  is symmetric which does not hold true for a general
+nonholonomic manifold or vector bundle, see formulas (REF ). The
+evolution equations (REF ) consist a particular case of more general
+formulas for Ricci flows on N–anholonomic manifolds proved in Theorem 4.1
+of Ref. {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}} (on FORMULA  the distorsion tensor transforming the FORMULA  into FORMULA  is zero). FORMULA
+Finally, in this section, we note that a number of geometric ideas and
+methods applied in this section were considered in the approaches to the
+geometry of nonholonomic spaces and generalized Finsler–Lagrange geometry
+elaborated by the schools of G. Vranceanu and R. Miron and by A. Bejancu in
+Romania {{cite:23c6e42a-f65c-460b-98c0-1f138b8c12e4}}, {{cite:952e2339-0df1-4bdf-bfcb-d603635639c1}}, {{cite:97660bbd-af2a-4f72-9fa0-84a162bed888}}, {{cite:80a8179e-a641-418a-9f4e-35710c1599f4}}, {{cite:7405b234-de60-483c-8e71-1ebd718784b5}}, {{cite:de2a088e-14c9-4c3c-a46e-688fc1b478c9}}. We emphasize that this way it
+is possible to construct geometric models with metric compatible linear
+connections which is important for elaborating standard approaches in modern
+(non)commutative gravity and string theory {{cite:4d54e505-a4bc-427a-a87e-b6339c0a3b5a}}, {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}. For Finsler
+spaces with nontrivial nonmetricity, for instance, for those defined by the
+the Berwald and Chern connections, see details in {{cite:f4824be8-96e7-4328-811c-e6504466f2eb}}, the physical
+theories with local anisotropy are not imbedded into the class of standard
+models. It is also a more cumbersome task to elaborate a theory of Ricci
+flows of noncompatible metrics and connection structures.
+
+N–Adapted Curve Flows in Vector Bundles
+We formulate the geometry of curve flows adapted to the nonlinear connection
+structures constructed by certain classes of canonical lifts from the base
+space and nonholonomic frame deformations resulting into constant curvature
+coefficients for the canonical d–connection. The case of tangent bundles
+will be emphasized as a special one when both FORMULA  and FORMULA  can be torsionless.
+Non–stretching and N–adapted curve flows
+Let us consider a vector bundle FORMULA  FORMULA  FORMULA 
+(in a particular case, FORMULA  when FORMULA  provided with a d–metric FORMULA  (REF ) and N–connection FORMULA  (REF )
+structures. A non–stretching curve FORMULA  on FORMULA  where FORMULA  is a parameter and FORMULA  is the arclength
+of the curve on FORMULA  is defined with such evolution
+d–vector FORMULA  and tangent d–vector FORMULA  that
+FORMULA 
+The curve FORMULA  swept out a two–dimensional surface
+in FORMULA  If the
+geometric objects evolve as Ricci flows on parameter FORMULA  we get an
+additional parameter for the geometric objects like connections and metrics
+and the non–stretching condition (REF ) transforms into FORMULA  for a family of d–metrics FORMULA 
+FORMULA  and FORMULA  which can be
+satisfied by certain families of curves, FORMULA  (briefly, we shall write only
+FORMULA  and related curve evolution and tangent
+vectors, FORMULA  and  FORMULA
+We work with families of N–adapted bases (REF ) and (REF )
+and the connection 1–forms FORMULA  (equivalently, FORMULA  with the coefficients FORMULA  FORMULA 
+for the canonical d–connection operator FORMULA  FORMULA  (REF ) acting in the form
+FORMULA 
+where ”FORMULA  denotes the interior product and the indices
+are lowered and raised respectively by the d–metric FORMULA  and its inverse FORMULA  For simplicity, we shall omit the Ricci flow parameter if it does not result
+in ambiguities. We note that FORMULA  is the covariant
+derivation operator along curve FORMULA  It is
+convenient to orient the N–adapted frames to be parallel respectively to
+curves  FORMULA
+FORMULA 
+for FORMULA  and FORMULA  For such
+frames, the covariant derivatives of each ”normal” d–vectors FORMULA  result into the d–vectors adapted to  FORMULA
+FORMULA 
+which holds for certain classes of functions FORMULA  and FORMULA  The formulas (REF ) and (REF ) are distinguished into h– and
+v–components for FORMULA 
+and FORMULA  for FORMULA  where
+FORMULA  and  FORMULA
+Along any curve FORMULA  we can move differential forms in a
+parallel N–adapted form. For instance, FORMULA 
+which for families of d–objects is to be written FORMULA  The algebraic
+characterization of such spaces, can be obtained if we perform a frame
+transform preserving the decomposition (REF ) to an
+orthonormalized basis FORMULA  when
+FORMULA 
+called orthonormal d–basis (family of d–bases). In this case, the
+coefficients of the d–metric (REF ) transform into the Euclidean ones,
+FORMULA  (we can define such frame transform (REF ) when
+the the same constant coefficients for d–metric are generated for all
+values of parameter FORMULA  for such configurations, we do not emphasize
+the labels/dependencies on Ricci flow parameter which are present in
+d–connection operators and N–connection coefficients). In distinguished
+form, we obtain families of two skew matrices
+FORMULA 
+and
+FORMULA 
+where
+FORMULA 
+we omitted the Ricci flow label performing the constructions according
+Remark REF , and
+FORMULA 
+with FORMULA  and FORMULA  being respectively FORMULA  and FORMULA  matrices. The above presented
+row–matrices and skew–matrices show that locally an total space of a
+vector bundle of dimension FORMULA  with respect to distinguished
+orthonormalized frames are characterized algebraically by couples of unit
+vectors in FORMULA  and FORMULA  preserved respectively by
+the FORMULA  and FORMULA  rotation subgroups of the local N–adapted frame
+structure group FORMULA  The connection matrices FORMULA  and FORMULA 
+belong to the orthogonal complements of the corresponding Lie subalgebras
+and algebras, FORMULA  and  FORMULA
+The torsion (REF ) and curvature (REF ) tensors can be in
+orthonormalized component form with respect to (REF ) mapped
+into a distinguished orthotnomalized dual frame (REF ),
+FORMULA 
+and
+FORMULA 
+where FORMULA  and FORMULA  define
+respectively the N–adapted orthonormalized frame row–matrix and the
+canonical d–connection skew–matrix in the flow directs, and FORMULA  FORMULA  is the curvature matrix. Both
+torsion and curvature components can be distinguished in h– and
+v–components like (REF ) and (REF ), by considering
+N–adapted decompositions of type
+FORMULA 
+Finally, we note that the matrices for torsion (REF ) and curvature (REF ) can be computed for any families, parametrized by FORMULA 
+metric compatible linear connection like the Levi Civita and the canonical
+d–connection. For our purposes, in this work, we are interested to define
+such a frame of reference with respect to which the curvature tensor has
+constant coefficients and the torsion tensor vanishes.
+
+N–anholonomic bundles with constant matrix curvature
+For vanishing N–connection torsion and constant matrix curvature of the
+canonical d–connection, we get couples of holonomic Riemannian manifolds
+and the equations (REF ) and (REF ) directly encode couples
+of bi–Hamiltonian structures, see details in Refs. {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, {{cite:036ee834-ceda-4d97-aed6-c66506202b38}}, {{cite:107a017f-4fd6-477a-afa1-442671037c9d}}, {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}, {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}. A well known class of Riemannian manifolds for
+which the frame curvature matrix constant consists of the symmetric spaces FORMULA  for compact semisimple Lie groups FORMULA  A complete
+classification and summary of main results on such spaces are given in Refs. {{cite:f28bb569-85d3-43f7-8c9b-9eebc0dc7b10}}, {{cite:30b710ac-9e53-43e0-9772-115a1f8ba401}}, {{cite:7c9330fc-49e4-4847-afbd-6832d59dd2da}}.
+We suppose that the base manifold is a symmetric space FORMULA  with the
+isotropy subgroup FORMULA  and the typical fiber space to be a
+symmetric space FORMULA  with the isotropy subgroup FORMULA  This means that FORMULA  and FORMULA  which is enough for a
+study of real holonomic and nonholonomic manifolds and geometric mechanics
+models.it is necessary to consider FORMULA  and FORMULA  for the geometric
+models with spinor and gauge fields
+Our aim is to solder in a canonic way (like in the N–connection geometry)
+the horizontal and vertical symmetric Riemannian spaces of dimension FORMULA  and
+FORMULA  with a (total) symmetric Riemannian space FORMULA  of dimension FORMULA  when FORMULA  with the isotropy group FORMULA  and FORMULA  We note that for the just mentioned horizontal, vertical and
+total symmetric Riemannian spaces one exists natural settings to Klein
+geometry. For instance, the metric tensor FORMULA  on a
+symmetric Riemannian space FORMULA  is defined by the Cartan–Killing inner
+product FORMULA  on FORMULA  restricted to
+the Lie algebra quotient spaces FORMULA 
+with FORMULA  where FORMULA  is stated such that there is an involutive automorphism of FORMULA  under FORMULA  is fixed, i.e. FORMULA  FORMULA  and FORMULA  In
+a similar form, we can define the group spaces and related inner products
+and Lie algebras,
+FORMULA 
+We parametrize the metric structure with constant coefficients on FORMULA  in the form
+FORMULA 
+where FORMULA  are local coordinates and
+FORMULA 
+when trivial, constant, N–connection coefficients are computed FORMULA  for any given sets FORMULA  and FORMULA  i.e. from the inverse metrics coefficients
+defined respectively on FORMULA  and by off–blocks FORMULA – and FORMULA –terms of the metric FORMULA  As a
+result, we define an equivalent d–metric structure of type (REF )
+FORMULA 
+defining a trivial FORMULA –splitting FORMULA because all
+nonholonomy coefficients FORMULA  and
+N–connection curvature coefficients FORMULA  are zero.
+In more general form, we can consider any covariant coordinate transforms of
+(REF ) preserving the FORMULA –splitting resulting in any FORMULA  (REF ) and FORMULA  (REF ). It should be noted that even such trivial parametrizations define
+algebraic classifications of  symmetric Riemannian spaces of dimension FORMULA 
+with constant matrix curvature admitting splitting (by certain algebraic
+constraints) into symmetric Riemannian subspaces of dimension FORMULA  and FORMULA 
+also both with constant matrix curvature and introducing the concept of
+N–anholonomic Riemannian space of type FORMULA 
+FORMULA  One can be considered that such
+trivially N–anholonomic group spaces have possess a Lie d–algebra symmetry
+ FORMULA
+The simplest generalization on a vector bundle FORMULA  is to
+consider nonhlonomic distributions on FORMULA  defined locally by
+families of N–connection coefficients FORMULA  with
+nonvanishing FORMULA  and FORMULA  but with constant d–metric coefficients when
+FORMULA 
+This family of metric is very similar to (REF ) but with the
+coefficients FORMULA  and FORMULA  induced by
+the corresponding Lie d–algebra structure FORMULA  Such spaces transform into families of N–anholonomic
+Riemann–Cartan manifolds FORMULA  FORMULA  with nontrivial N–connection curvature and induced
+d–torsion coefficients of the canonical d–connection (see formulas (REF ) computed for constant d–metric coefficients and the canonical
+d–connection coefficients in (REF )). One has zero curvature for
+the canonical d–connection (in general, such spaces are curved ones with
+generic off–diagonal metric (REF ) and nonzero curvature tensor for
+the Levi Civita connection).Introducing, constant values for the d–metric coefficients we get zero
+coefficients for the canonical d–connection which in its turn results in
+zero values of (REF ). This allows us to classify the
+N–anholonomic manifolds (and vector bundles) as having the same group and
+algebraic structures of couples of symmetric Riemannian spaces of dimension FORMULA  and FORMULA  but nonholonomically soldered to the symmetric Riemannian space
+of dimension FORMULA  With respect to N–adapted orthonormal bases (REF ), with distinguished h– and v–subspaces, we obtain the same
+inner products and group and Lie algebra spaces as in (REF ).
+The classification of N–anholonomic vector bundles is almost similar to
+that for symmetric Riemannian spaces if we consider that FORMULA  and try to
+model tangent bundles of such spaces, provided with N–connection structure.
+For instance, we can take a (semi) Riemannian structure with the
+N–connection induced by a absolute energy structure like in (REF )
+and with the canonical d–connection structure (REF ), for FORMULA  like in (REF ). A straightforward
+computation of the canonical d–connection coefficientson tangent bundles, such d–connections can be defined to be torsionless
+and of d–curvatures for FORMULA  and FORMULA  proves that the nonholonomic Riemanian manifold FORMULA  possess constant both zero
+canonical d–connection curvature and torsion but with induced
+nontrivial N–connection curvature FORMULA 
+Such spaces, being tangent to symmetric Riemannian spaces, are classified
+similarly to the Riemannian ones with constant matrix curvature, see (REF ) for FORMULA  but provided with a nonholonomic structure induced by
+generating function FORMULA  We can introduce Ricci flows
+on parameter FORMULA  when for certain systems of coordinates the metric
+coefficients are constant but satisfy the evolution equations (REF )
+and (REF ).
+
+Basic Equations for N–anholonomic Curve Flows
+Introducing N–adapted orthonormalized bases, for N–anholonomic spaces of
+dimension FORMULA  with constant curvatures of the canonical d–connection, we
+can derive bi–Hamiltonian and vector soliton structures similarly to {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}, {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}, {{cite:107a017f-4fd6-477a-afa1-442671037c9d}}. In symbolic, abstract index form, the constructions for
+nonholonomic vector bundles are similar to those for the Riemannian
+symmetric–spaces soldered to Klein geometry. We have to distinguish the
+horizontal and vertical components of geometric objects and related
+equations. The previous bi–Hamiltonian and solitonic constructions were for
+an extrinsic approach soldering the Riemannian symmetric–space geometry to
+the Klein geometry {{cite:7c9330fc-49e4-4847-afbd-6832d59dd2da}}. For the N–anhlonomic spaces of dimension
+FORMULA  with constant d–curvatures, similar constructions hold true but we
+have to adapt them to the N–connection structure, see Appendix .
+There is an isomorphism between the real space FORMULA  and the
+Lie algebra of FORMULA  skew–symmetric matrices. This allows us to
+establish an isomorphism between FORMULA  FORMULA  and
+the tangent spaces FORMULA  FORMULA  of the
+Riemannian manifold FORMULA  FORMULA  as described by the following
+canonical decomposition
+FORMULA 
+with FORMULA  being the
+h–component of the d–vector FORMULA  and FORMULA  mean the transposition of
+the row FORMULA  The Cartan–Killing inner product on FORMULA 
+is stated following the rule
+FORMULA 
+where FORMULA  denotes the trace of the corresponding product of matrices. This
+product identifies canonically FORMULA  FORMULA  with
+its dual FORMULA  FORMULA  In a similar form,
+we can consider
+FORMULA 
+with FORMULA  being the
+v–component of the d–vector FORMULA  and define the Cartan–Killing inner product FORMULA  In general, in
+the tangent bundle of a N–anholonomic manifold, we can consider the
+Cartan–Killing N–adapted inner product  FORMULA
+Following the introduced Cartan–Killing parametrizations, we analyze the
+flow FORMULA  of a non–stretching curve in FORMULA  FORMULA  Let us introduce a family of
+coframes FORMULA  which is a N–adapted FORMULA –parallel basis along FORMULA  and its
+associated canonical d–connection 1–form FORMULA  Such d–objects are respectively parametrized:
+FORMULA 
+for
+FORMULA 
+and
+FORMULA 
+where we write FORMULA  and  FORMULA
+FORMULA 
+for
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+where
+FORMULA 
+The above parametrizations are fixed in order to preserve the FORMULA  and FORMULA  rotation gauge freedoms on the N–adapted coframe and canonical
+d–connection 1–form, distinguished in h- and v–components.
+There are defined decompositions of horizontal FORMULA  FORMULA  matrices
+like
+FORMULA 
+into tangential and normal parts relative to FORMULA  via
+corresponding decompositions of h–vectors FORMULA  relative to FORMULA  when FORMULA  is identified with FORMULA  and FORMULA  is identified with FORMULA  In a similar form, it is
+possible to decompose vertical FORMULA  FORMULA  matrices,
+FORMULA 
+into tangential and normal parts relative to FORMULA  via
+corresponding decompositions of h–vectors FORMULA  relative to FORMULA  when FORMULA  is identified with FORMULA  and
+FORMULA  is identified with  FORMULA
+The canonical d–connection induces matrices decomposed with respect to the
+flow direction. In the h–direction, we parametrize
+FORMULA 
+when FORMULA  and FORMULA  and
+FORMULA 
+where
+FORMULA 
+In the v–direction, we parametrize
+FORMULA 
+when FORMULA 
+and FORMULA  and
+FORMULA 
+where
+FORMULA 
+The components FORMULA  and FORMULA  correspond to the decomposition
+FORMULA 
+into tangential and normal parts relative to FORMULA  In a similar form, one considers FORMULA  and FORMULA  corresponding to the
+decomposition
+FORMULA 
+Using the above stated matrix parametrizations, we get
+FORMULA 
+and
+FORMULA 
+We can use formulas (REF ) and (REF ) in order to write the
+structure equations (REF ) and (REF ) in terms of N–adapted
+curve flow operators soldered to the geometry Klein N–anholonomic spaces
+using the relations (REF ). One obtains respectively the FORMULA –invariant N–adapted torsion and curvature generated by the canonical
+d–connection,
+FORMULA 
+and
+FORMULA 
+where FORMULA  FORMULA  FORMULA  and FORMULA  The formulas (REF ) and (REF ) are equivalent, respectively, to (REF ) and (REF ). In general, FORMULA  and FORMULA  can not be defined to have constant matrix coefficients with
+respect to a N–adapted basis. For N–anholonomic spaces with dimensions FORMULA  we have FORMULA  and FORMULA  defined by constant, or vanishing, d–curvature coefficients
+(see discussions related to formulas (REF ) and (REF )). For such cases, we can consider the h– and v–components of (REF ) and (REF ) in a similar manner as for symmetric
+Riemannian spaces but with the canonical d–connection instead of the Levi
+Civita one. One obtains, respectively,
+FORMULA 
+and
+FORMULA 
+Following the N–adapted curve flow parametrizations (REF ) and (REF ), the equations (REF ) and (REF ) are written
+FORMULA 
+and
+FORMULA 
+The tensor and interior products, for instance, for the h–components, are
+defined in the form: FORMULA  denotes the outer product of pairs of
+vectors (FORMULA  row matrices), producing FORMULA  matrices FORMULA  and FORMULA  denotes multiplication of FORMULA 
+matrices on vectors (FORMULA  row matrices); one holds the properties FORMULA  which is the transpose of the standard matrix product on
+column vectors, and FORMULA  Here we note that similar formulas hold for the
+v–components but, for instance, we have to change, correspondingly, FORMULA  and  FORMULA
+The variables FORMULA  and FORMULA  written in
+h– and v–components, can be expressed corresponding in terms of variables FORMULA  and FORMULA  (see respectively the first two equations in (REF ) and the last two equations in (REF )),
+FORMULA 
+and
+FORMULA 
+Substituting these values, correspondingly, in the last two equations in (REF ) and in the first two equations in (REF ), we
+express
+FORMULA 
+contained in the h– and v–flow equations respectively on FORMULA  and FORMULA  considered as scalar components when FORMULA  and  FORMULA
+FORMULA 
+where the scalar curvatures of the canonical d–connection, FORMULA  and FORMULA  are defined by formulas (REF ). For
+symmetric Riemannian spaces like FORMULA  the value FORMULA  is just the scalar curvature FORMULA  see {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}. On tangent bundles, it is possible that FORMULA  and FORMULA  are certain zero or nonzero constants with the h–part
+equivalent to the base scalar curvature.
+For Ricci flows of geometric objects, the curve flow evolution equations (REF ) contain additional dependencies on parameter  FORMULA
+FORMULA 
+where the scalar curvatures evolve following formulas (REF ) for
+Ricci flows.
+The above presented considerations consist the proof of
+Lemma 4.1 There are canonical lifts of Ricci flows from a (semi)
+Riemannian manfiold FORMULA  to FORMULA  when certain families of constant constant
+curvature matrix coefficients for the canonical d–connections define
+families of N–adapted Hamiltonian sympletic operators,
+FORMULA 
+and cosympletic operators
+FORMULA 
+where, for instance, FORMULA   FORMULA
+
+For any fixed value FORMULA  the formulas for this Lemma transform
+into similar ones from Ref. {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}. The properties of operators (REF ) and (REF ) are defined by
+Theorem 4.1 The Ricci flows of d–operators FORMULA  and FORMULA  FORMULA are defined respectively by FORMULA –invariant
+Hamiltonian sympletic and cosympletic d–operators with respect to the
+corresponding Hamiltonian d–variables FORMULA  Such
+d–operators defines the Hamiltonian form for the curve and Ricci flows
+equations on N–anholonomic tangent bundles with constant d–connection
+curvature: the h–flows are given by
+FORMULA 
+the v–flows are given by
+FORMULA 
+where the so–called Ricci flows of heriditary recursion d–operator has the
+respective h– and v–components
+FORMULA 
+and FORMULA  and FORMULA  for lifts to constant
+curvature matrices.
+
+Proof. One follows from the Lemma REF , Corollaries REF  and REF  and (REF ). In a detailed form, for holonomic structures,
+it is given in Ref. {{cite:107a017f-4fd6-477a-afa1-442671037c9d}} and discussed in {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}.  FORMULA
+Finally, we note that for any fixed value FORMULA  we get a Theorem from {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, on curve flows in symmetric Riemannian spaces, which has
+generalizations for curve flows on generalized Lagrange and Finsler spaces {{cite:036ee834-ceda-4d97-aed6-c66506202b38}}.
+
+Curve Flows and Solitonic Hierarchies for Ricci Flows
+The final aim of this paper is to prove that for any nonholonomic Ricci flow
+system  we can define naturally a family of N–adapted bi–Hamiltonian flow
+hierarchies inducing anholonomic solitonic configurations.
+Formulation of the main theorem
+Following a usual solitonic techniques generalized for N–anholonomic
+spaces, see details in Ref. {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, {{cite:036ee834-ceda-4d97-aed6-c66506202b38}}, {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}, {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}, the recursion
+h–operators from (REF ),
+FORMULA 
+generate a  family of horizontal hierarchies of commuting Hamiltonian
+vector fields FORMULA  starting
+from FORMULA  given by the infinitesimal generator of FORMULA –translations in terms of arclength FORMULA  along the curve
+(we use a boldface FORMULA  in order to emphasized that the curve is on
+a N–anholonomic manifold when the geometric objects are subjected to Ricci
+flows). A family of vertical hierarchies of commuting vector fields FORMULA  starting from FORMULA  FORMULA  is generated by the recursion v–operators
+FORMULA 
+There are related hierarchies, generated by adjoint operators FORMULA  FORMULA  of involuntive
+Hamiltonian h–covector fields FORMULA  in terms of Hamiltonians FORMULA  starting from FORMULA  and
+of involutive Hamiltonian v–covector fields FORMULA  FORMULA  in terms
+of Hamiltonians FORMULA  starting from  FORMULA
+The relations between different type families of hierarchies are established
+correspondingly by formulas
+FORMULA 
+and
+FORMULA 
+where FORMULA  All hierarchies (horizontal, vertical and their adjoint
+ones) have a typical mKdV scaling symmetry, for instance, FORMULA  and FORMULA 
+under which the values FORMULA 
+and FORMULA  have scaling weight FORMULA  while FORMULA  has scaling weight FORMULA  Following the above
+presented considerations, we prove
+Corollary 5.1  There are Ricci flow families of N–adapted hierarchies of
+distinguished horizontal and vertical commuting bi–Hamiltonian flows,
+correspondingly, on FORMULA  and FORMULA  associated
+to the recursion d–operator (REF ) given by families of FORMULA  –invariant d–vector h–evolution equations,
+FORMULA 
+with families of horizontal Hamiltonians
+FORMULA 
+and v–evolution equations
+FORMULA 
+and with  families of vertical Hamiltonians
+FORMULA 
+for FORMULA  The Ricci flows of d–operators FORMULA  and
+FORMULA  FORMULA  are N–adapted and mutually compatible from which we
+can construct a family of alternative (explicit) Hamilton d–operators
+FORMULA 
+
+The Main Result of this work is formulated in the form:
+Theorem 5.1  For any vector/tangent bundle with Ricci flows of d–metric
+structures, one can be defined a family of hierarchies of bi-Hamiltonian
+N–adapted flows of curves FORMULA 
+described by families of geometric nonholonomic map equations:
+The 0 flows are defined as convective (travelling wave) maps
+FORMULA 
+There are families of +1 flows defined as Ricci flows of non–stretching
+mKdV maps
+FORMULA 
+and the families of +2,...flows as higher order analogs.
+There are also families of -1 flows defined by the kernels of recursion
+operators (REF ) and (REF ) inducing non–stretching maps
+FORMULA 
+
+Proof is outlined in Appendix .
+
+Nonholonomic mKdV and SG hierarchies
+Let us consider some explicit constructions when families of solitonic
+hierarchies are derived following the conditions of Theorem REF .
+The h–flow and v–flow equations resulting from (REF ) are
+FORMULA 
+when, respectively,
+FORMULA 
+and
+FORMULA 
+The d–flow equations possess horizontal and vertical conservation laws
+FORMULA 
+for FORMULA  and
+FORMULA 
+for FORMULA  This corresponds to
+FORMULA 
+In general, such laws are more sophisticate than those on (semi) Riemannian
+spaces because of nonholonomic constraints resulting in non–symmetric Ricci
+tensors and different types of identities. But for the geometries modelled
+for dimensions FORMULA  with canonical d–connections, we get similar h– and
+v–components of the conservation law equations as on symmetric Riemannian
+spaces.We note that the problem of formulating conservation laws on
+N–anholonomic spaces (in particular, on nonholonomic vector bundles) in
+analyzed in Ref. {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}.
+It is possible to rescale conformally the variable FORMULA  and obtain FORMULA  FORMULA  and (it can
+be for other rescale) FORMULA  i.e.
+FORMULA 
+We can express FORMULA  and FORMULA  in terms of FORMULA  and its derivatives and, similarly, we can express FORMULA  and FORMULA  in
+terms of FORMULA  and its derivatives, which
+follows from (REF ). The N–adapted wave map equations describing
+the -1 flows reduce to a system of two independent nonlocal evolution
+equations for the h– and v–components, parametrized by  FORMULA
+FORMULA 
+For N–anholonomic spaces of constant scalar d–curvatures, we can rescale
+the equations on FORMULA  to the case when the terms FORMULA  and FORMULA  are constant, and the
+evolution equations transform into a system of hyperbolic d–vector
+equations,
+FORMULA 
+where FORMULA  and FORMULA  are usual partial
+derivatives on direction FORMULA  with FORMULA  and FORMULA  considered as scalar functions for the covariant derivatives FORMULA  and FORMULA 
+defined by the canonical d–connection. It also follows that FORMULA  and FORMULA  obey corresponding vector sine–Gordon (SG) equations
+FORMULA 
+and
+FORMULA 
+The above presented formulas and Corollary REF  imply
+Conclusion 5.1 The Ricci flow families of recursion d–operators FORMULA  (REF ), see (REF ) and (REF ), generate two hierarchies
+of vector mKdV symmetries: the first one is horizontal,
+FORMULA 
+with all such terms commuting with the -1 flow
+FORMULA 
+associated to the vector SG equation (REF ); the second one is
+vertical,
+FORMULA 
+with all such terms commuting with the -1 flow
+FORMULA 
+associated to the vector SG equation (REF ).
+
+In its turn, using the above Conclusion, we derive that the family of
+adjoint d–operators FORMULA  generates corresponding families of horizontal hierarchies
+of Hamiltonians (for simplicity, here we omit labels/dependences on FORMULA ),
+FORMULA 
+and of vertical hierarchies of Hamiltonians
+FORMULA 
+all of which are conserved densities for respective horizontal and vertical
+-1 flows and determining higher conservation laws for the corresponding
+hyperbolic equations (REF ) and (REF ).
+The above presented horizontal equations (REF ), (REF ), (REF ) and (REF ) and of vertical equations (REF ), (REF ), (REF ) and (REF ) have similar mKdV scaling
+symmetries but on different parameters FORMULA  and FORMULA 
+because, in general, there are two independent values of scalar curvatures FORMULA  and FORMULA  see (REF ). The
+horizontal scaling symmetries are FORMULA  and FORMULA  for FORMULA  For the vertical scaling symmetries, one has
+FORMULA  and FORMULA  for  FORMULA
+Finally, we disucss how exact solutions for the Einstein equations
+FORMULA 
+can be extracted from Ricci flows of solitonic hierarchies (such spaces with
+nonhomogeneous effective constants FORMULA  were
+examined in details in Refs. {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}, {{cite:4d54e505-a4bc-427a-a87e-b6339c0a3b5a}}, for exact solutions in
+gravity, and {{cite:a00081af-b241-4deb-be65-ec99ac184c50}}, {{cite:8c291982-ce0d-4401-9dff-2eb7a9b0d7cc}}, {{cite:fb66176a-9e82-4a86-ae15-144aff34ae6d}}, {{cite:29e789ff-d73c-4b53-aae3-e478eafdc226}}, for exact solutions and
+applications in physics of the nonholonomic Ricci flow theory).
+Corollary 5.2 Ricci flows of nonhomogeneous Einstein spaces, of signature FORMULA  defined by (REF ) are can be extracted from
+solitonic hierarchies satisfying the conditions of Theorem REF  by
+certain classes of constraints for
+FORMULA 
+solving the equations
+FORMULA 
+and evolution of N–adapted frames stated by formulas
+FORMULA 
+
+Proof. The equations (REF ) folow from equations (REF ) and (REF ), see also (REF ), when hold true (REF ). The equation
+(REF ) is a consequence of (REF ). Similar proofs can be
+provided for different signatures of metrics.  FORMULA
+The vacuum equations in Einstein gravity can be parametrized as solitonic
+hierarchies with constant on FORMULA  N–anholonomic frames, see (REF ).
+The corresponding SG hierarchies are defined as solutions of the equations (REF ) and (REF ) and (REF ), with constant scalar
+curvature and frame coefficients.
+
+Conclusion
+In summary, we have considered a geometric formalism of encoding general
+(semi) Riemannian metrics and their lifts to tangent bundles into families
+of nonholonomic hierarchies of bi–Hamiltonian structures and related
+solitonic equations derived for curve flows on tangent spaces. Towards this
+ends, we have applied a programme of study that is based on prior works on
+nonholonomic Ricci {{cite:e09e6678-a643-4110-b533-4ea8d6d5aeac}}, {{cite:a00081af-b241-4deb-be65-ec99ac184c50}} and curve flows {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, {{cite:036ee834-ceda-4d97-aed6-c66506202b38}}. The
+premise of this methodology is that one can derive solitonic hierarchies
+for non–stretching curve flows on constant curvature Riemannian spaces {{cite:e1743214-cfbe-491c-8740-00d15bedb5fc}}, {{cite:ef487ffe-622a-4fd0-b4b2-099f42e5615c}}, {{cite:107a017f-4fd6-477a-afa1-442671037c9d}}, {{cite:08d49a84-2e92-419e-8a63-4f8fed3c0c54}}. The validity of this approach was
+substantiated by the encoding into solitonic hierarchies of arbitrary
+(semi) Riemannian and Finsler–Lagrange metrics {{cite:9bdd082b-47ac-402b-8491-026f8db7a3d6}}, {{cite:036ee834-ceda-4d97-aed6-c66506202b38}}.
+Our analysis was completed by explicit constructions related to solitonic
+encoding of Ricci flow equations {{cite:939a3dc5-65f6-41ec-8c74-c533b5666c8f}}, {{cite:e2c9318d-c689-458b-870b-6f5ac77ba0bb}}, {{cite:1893c7c2-0995-4562-aad5-8f879544f07d}}, {{cite:1735753d-162b-40b0-b181-9e67e0a2f9d2}}, {{cite:bd693ba3-8eda-4eb2-8366-28d5169e1428}}.
+First of all, we note that it was not possible to perform such
+constructions working only with the Levi Civita connection because, in
+general, the curvature tensor for this connection can not be parametrized
+by constant coefficients. The idea was to re–define equivalently the
+geometric objects and basic Ricci flow and field equations for other
+classes of linear connections generated on vector/ tangent bundles and/or
+(semi) Riemannian manifolds enabled with certain classes of preferred
+frames with associated nonlinear connection (N–connection) structure. In
+particular, we elaborated such lifts of (semi) Riemannian metrics to the
+tangent bundle when in a canonical form there are defined metric
+structures, a class of N–connections and distinguished (d) connections
+when with respect to certain classes of N–adapted frames it is possible to
+get constant curvature coefficients and zero torsion. Such geometric models
+and their lifts to different classes of fibred spaces are related to
+effective Lagrangians and, inversely, any regular geometric mechanics can
+be encoded into geometric objects on nonholonomic Riemannian manifolds/
+tangent bundles.
+Secondly, we considered Ricci flows of geometric objects and fundamental
+evolution/field equations. We found that a nonholonomically constrained
+flow of (semi) Riemannian metrics can result in generalized
+Finsler–Lagrange configurations which motivates both application of such
+Finsler geometry methods for usual Riemannian spaces if moving frames are
+introduced into consideration and a deep study of nonholonomic structures
+with associated N–connections soldering couples of Klein spaces and/or
+constant curvature Riemannian spaces.
+Third, we argued that the geometry Riemann and Finsler–Lagrange spaces
+can be encoded into bi–Hamilton structures and nonholonomic solitonic
+equations and anticipated that such curve flow – solitonic hierarchies can
+be constructed in a similar manner for exact solutions of
+Einstein–Yang–Mills–Dirac equations, derived following the anholonomic
+frame method, in noncommutative generalizations of gravity and geometry and
+possible quantum models based on nonholonomic Lagrange–Fedosov manifolds.
+In spite of the fact that there are a number of conceptual and technical
+difficulties (such as the physical meaning of the general N–connections,
+additionally to the preferred frame systems and nonlinear generalizations
+of the usual linear connections, explicit relations of the Ricci flows to
+renormalization group flows in quantum gravity models, cumbersome geometric
+analysis calculus...) the outcome of such approach is almost obvious that
+we can encode nonlinear fundamental field/evolution equations in terms of
+corresponding vector solitonic equations, their hierarchies and
+conservation laws.
+Finally, we tried not only to encode some geometric information about
+metrics, connections and frames into solitons but also formulated certain
+criteria when from such solitonic equations we can extract vacuum
+gravitational spaces or certain more general solutions for the Ricci flow
+equations and related Einstein spaces or Euler–Lagrange equations in
+geometric mechanics. For more general classes of solutions and extensions
+to quantum gravity, noncommutative geometry, these are desirable purposes
+for further investigations.
+Acknowledgement:  The author is grateful to Prof. Barbara
+Keyfitz for the possibility to communicate his work at the Fields Institute
+Colloquium/ Seminar.
+
+The Geometry of N–anholonomic Vector Bundles
+We denote by FORMULA  the differential of map FORMULA  defined by fiber preserving morphisms of the tangent
+bundles FORMULA  and FORMULA  The kernel of FORMULA  is just the vertical
+subspace FORMULA  with a related inclusion mapping  FORMULA
+Definition A.1 A nonlinear connection (N–connection) FORMULA  on a vector bundle FORMULA   is defined by the splitting on the left of an exact sequence
+FORMULA 
+i. e. by a morphism of submanifolds FORMULA  such
+that FORMULA  is the unity in  FORMULA
+
+In an equivalent form, we can say that a N–connection is defined by a
+Whitney sum of conventional horizontal (h) subspace, FORMULA 
+and vertical (v) subspace,  FORMULA
+FORMULA 
+This sum defines a nonholonomic (equivalently, anholonomic, or nonitegrable)
+distribution of horizontal and vertical subspaces on FORMULA  Locally,
+a N–connection is defined by its coefficients  FORMULA
+FORMULA 
+The well known class of linear connections consists on a particular subclass
+with the coefficients being linear on FORMULA  i.e.,  FORMULAWe use ”boldface” symbols if it is necessary to emphasize that any space
+and/or geometrical objects are provided/adapted to a N–connection
+structure, or with the coefficients computed with respect to N–adapted
+frames.
+Remark A.1 A bundle space, or a a manifold, is called nonholonomic if it provided with
+a nonholonomic distribution (see historical details and summary of results
+in {{cite:de2a088e-14c9-4c3c-a46e-688fc1b478c9}}). In particular case, when the nonholonomic distribution is
+of type (REF ), such spaces are called N–anholonomic {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}.
+
+Any N–connection FORMULA  may be
+characterized by a N–adapted frame (vielbein) structure FORMULA  where
+FORMULA 
+and the dual frame (coframe) structure FORMULA  where
+FORMULA 
+For any N–connection, we can introduce its N–connection curvature
+FORMULA 
+with the coefficients defined as the Neijenheuse tensor,
+FORMULA 
+The vielbeins (REF ) satisfy the nonholonomy (equivalently,
+anholonomy) relations
+FORMULA 
+with (antisymmetric) nontrivial anholonomy coefficients FORMULA  and  FORMULA
+The geometric objects can be defined in a form adapted to a N–connection
+structure, following decompositions being invariant under parallel
+transports preserving the splitting (REF ). In this case we call
+them to be distinguished (by the connection structure), i.e. d–objects. For
+instance, a vector field FORMULA   is expressed
+FORMULA 
+where FORMULA  and FORMULA  state, respectively, the
+adapted to the N–connection structure horizontal (h) and vertical (v)
+components of the vector (which following Refs. {{cite:97660bbd-af2a-4f72-9fa0-84a162bed888}}, {{cite:80a8179e-a641-418a-9f4e-35710c1599f4}} is called a
+distinguished vector, in brief, d–vector). In a similar fashion, the
+geometric objects on FORMULA  for instance, tensors, spinors,
+connections, ... are called respectively d–tensors, d–spinors,
+d–connections if they are adapted to the N–connection splitting (REF ).
+Definition A.2 A distinguished connection (in brief, d–connection) FORMULA  is a linear connection preserving under parallel transports
+the nonholonomic decomposition (REF ).
+
+The N–adapted components FORMULA  of
+a d–connection FORMULA  are defined by the equations
+FORMULA 
+The N–adapted splitting into h– and v–covariant derivatives is stated by
+FORMULA 
+where, by definition, FORMULA  FORMULA  FORMULA  FORMULA  The components FORMULA  completely
+define a d–connection FORMULA  on  FORMULA
+The simplest way to perform N–adapted computations is to use differential
+forms. For instance, starting with the d–connection 1–form,
+FORMULA 
+with the coefficients defined with respect to N–elongated frames (REF ) and (REF ), the torsion of a d–connection,
+FORMULA 
+is characterized by (N–adapted) d–torsion components,
+FORMULA 
+For d–connection structures on FORMULA  we have to identify indices in the
+form FORMULA  and the components of N–
+and d–connections, for instance, FORMULA  and  FORMULA
+Definition A.3 A distinguished metric (in brief, d–metric) on a vector bundle FORMULA 
+is a usual second rank metric tensor FORMULA 
+equivalently,
+FORMULA 
+adapted to the N–connection decomposition (REF ).
+
+With respect to a coordinate basis, the metric FORMULA  (REF ) can
+be written in the form
+FORMULA 
+where
+FORMULA 
+From the class of arbitrary d–connections FORMULA  on FORMULA  one
+distinguishes those which are metric compatible (metrical) satisfying the
+condition
+FORMULA 
+including all h- and v-projections FORMULA  FORMULA  FORMULA  FORMULA  For d–metric structures on FORMULA  with FORMULA  the conditions of vanishing
+”nonmetricity” (REF ) transform into
+FORMULA 
+i.e. FORMULA  and  FORMULA
+There are two types of preferred linear connections uniquely determined by a
+generic off–diagonal metric structure with FORMULA  splitting, see FORMULA :
+
+The Levi Civita connection FORMULA  is by definition torsionless, FORMULA  and
+satisfies the metric compatibility condition FORMULA
+
+The canonical d–connection FORMULA  is also metric compatible, i. e. FORMULA  but the torsion vanishes only on h– and
+v–subspaces, i.e. FORMULA  and FORMULA 
+for certain nontrivial values of FORMULA  For simplicity, we omit hats on symbols and write,
+for simplicity, FORMULA  instead of FORMULA  FORMULA 
+instead of FORMULA  and so on...but preserve the general
+symbols FORMULA  and  FORMULA
+
+With respect to N–adapted frames (REF ) and (REF ), we can
+verify that the requested properties for FORMULA  on FORMULA  are satisfied if
+FORMULA 
+For FORMULA  the canonical d–connection FORMULA  can be defined in torsionless formi.e. it has the same coefficients as the Levi Civita connection with respect
+to N–elongated bases (REF ) and (REF ) with the coefficients
+ FORMULA
+FORMULA 
+The curvature of a d–connection  FORMULA
+FORMULA 
+splits into six types of N–adapted components with respect to (REF )
+and (REF ),
+FORMULA 
+FORMULA 
+Contracting respectively the components, FORMULA  one computes the h-
+v–components of the Ricci d–tensor (there are four N–adapted components)
+FORMULA 
+The scalar curvature is defined by contracting the Ricci d–tensor with the
+inverse metric  FORMULA
+FORMULA 
+If FORMULA  there are only three classes of d–curvatures,
+FORMULA 
+where all indices FORMULA  run the same values and, for instance, FORMULA   FORMULA
+
+N–anholonomic Klein Spaces
+There are Ricci flow families of two Hamiltonian variables given by the
+principal normals FORMULA  and FORMULA  respectively, in the
+horizontal and vertical subspaces, defined by the canonical d–connections FORMULA  see
+formulas (REF ) and (REF ),
+FORMULA 
+This normal d–vectors FORMULA  FORMULA  with components of type
+FORMULA 
+are oriented in the tangent directions of curves FORMULA  There is also
+the principal normal d–vectors FORMULA  with components of type FORMULA  FORMULA  in the flow directions, with
+FORMULA 
+representing a Hamiltonian d–covector field. We can consider that the
+normal part of the flow d–vector
+FORMULA 
+represents a Hamiltonian d–vector field. For such configurations, we can
+consider parallel N–adapted frames FORMULA  when the
+h–variables FORMULA  FORMULA  are respectively
+encoded in the top row of the horizontal canonical d–connection matrices FORMULA 
+and FORMULA  and in the row matrix FORMULA  where FORMULA  is the tangential h–part of the flow d–vector. A similar
+encoding holds for v–variables FORMULA  in the top
+row of the vertical canonical d–connection matrices  FORMULA  and FORMULA  and in the
+row matrix FORMULA  where FORMULA  is the
+tangential v–part of the flow d–vector. In a compact form of notations, we
+shall write FORMULA  and FORMULA  where the primed small Greek indices FORMULA  will denote both N–adapted and then
+orthonormalized components of geometric objects (like d–vectors,
+d–covectors, d–tensors, d–groups, d–algebras, d–matrices) admitting
+further decompositions into h– and v–components defined as nonintegrable
+distributions of such objects.
+With respect to N–adapted orthonormalized frames, the geometry of
+N–anholonomic manifolds is defined algebraically, on their tangent bundles,
+by couples of horizontal and vertical Klein geometries considered in {{cite:7c9330fc-49e4-4847-afbd-6832d59dd2da}} and for bi–Hamiltonian soliton constructions in {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}. The
+N–connection structure induces a N–anholonomic Klein space stated by two
+left–invariant FORMULA – and FORMULA –valued Maurer–Cartan
+form on the Lie d–group FORMULA  is
+identified with the zero–curvature canonical d–connection 1–form FORMULA  where
+FORMULA 
+For trivial N–connection structure in vector bundles with the base and
+typical fiber spaces being symmetric Riemannian spaces, we can consider that
+FORMULA  and FORMULA  are the coefficients
+of the Cartan connections FORMULA  and FORMULA 
+respectively for the FORMULA  and FORMULA  both with vanishing
+curvatures, i.e. with
+FORMULA 
+and h– and v–components, FORMULA  and FORMULA  FORMULA 
+where FORMULA  denotes the total derivatives on the d–group manifold FORMULA  or their restrictions on FORMULA  or FORMULA  We can consider that FORMULA  defines
+the so–called Cartan d–connection for nonintegrable N–connection
+structures, see details and supersymmetric/ noncommutative developments in {{cite:4d54e505-a4bc-427a-a87e-b6339c0a3b5a}}, {{cite:3438d6f9-d64e-4409-a2da-77b241d06b44}}.
+Through the Lie d–algebra decompositions FORMULA  for the horizontal splitting: FORMULA  when FORMULA  and FORMULA  for the vertical splitting FORMULA  when FORMULA 
+and FORMULA  the Cartan
+d–connection determines an N–anholonomic Riemannian structure on the
+nonholonomic bundle FORMULA  FORMULA  For FORMULA  and canonical d–objects
+(N–connection, d–metric, d–connection, ...) derived from (REF ), or
+any N–anholonomic space with constant d–curvatures, the Cartan
+d–connection transform just in the canonical d–connection (REF ). It is possible to consider a quotient space with distinguished structure
+group FORMULA  FORMULA  regarding FORMULA  as a principal FORMULA –bundle over FORMULA  which is a N–anholonomic bundle. In this case, we
+can always fix a local section of this bundle and pull–back FORMULA  to give a FORMULA –valued 1–form FORMULA  in a point FORMULA  Any change of local sections define FORMULA  FORMULA 
+gauge transforms of the canonical d–connection FORMULA  all preserving the nonholonomic decomposition (REF ).
+There are involutive automorphisms FORMULA  and FORMULA 
+respectively, of FORMULA  and FORMULA  defined that FORMULA  (or FORMULA ) is eigenspace FORMULA  (or FORMULA  and FORMULA  (or FORMULA ) is eigenspace FORMULA  (or FORMULA  Taking into account the existing
+eigenspaces, when the symmetric parts FORMULA  with respective h- and v–splitting, FORMULA  and FORMULA  defines
+a FORMULA –valued
+d–connection 1–form, we can construct N–adapted decompositions.
+The antisymmetric part FORMULA  with h- and v–splitting, FORMULA  FORMULA  and FORMULA  defines a FORMULA –valued N–adapted coframe for the
+Cartan–Killing inner product FORMULA  on FORMULA  restricted to FORMULA  This inner product,
+distinguished into h- and v–components, provides a d–metric structure of
+type FORMULA  (REF ), where FORMULA  and FORMULA 
+on FORMULA   FORMULA
+We generate a FORMULA –invariant
+d–derivatives FORMULA  whose restriction to the tangent space FORMULA  for any N–anholonomic curve flow FORMULA  in FORMULA  FORMULA  is
+defined via
+FORMULA 
+admitting further h- and v–decompositions. The derivatives FORMULA  and FORMULA  in (REF ) are equivalent to those considered in (REF ) and obey the
+Cartan structure equations (REF ) and (REF ). For the
+canonical d–connections, a large class of N–anholonomic spaces of
+dimension FORMULA  the d–torsions are zero and the d–curvatures are with
+constant coefficients.
+Let FORMULA  be a family of N–adapted orthonormalized
+coframes identified with the FORMULA –valued coframe FORMULA  in a fixed orthonormal basis for FORMULA  Considering the kernel/ cokernel of Lie algebra
+multiplications in the h- and v–subspaces, respectively, FORMULA  and FORMULA  we can decompose the coframes
+into parallel and perpendicular parts with respect to FORMULA  We write
+FORMULA 
+for FORMULA –valued mutually
+orthogonal d–vectors FORMULA   and FORMULA  when
+there are satisfied the conditions FORMULA  but FORMULA  such conditions can be stated
+in h- and v–component form, respectively, FORMULA  FORMULA  and FORMULA  FORMULA  One
+holds also the algebraic decompositions
+FORMULA 
+with FORMULA  and FORMULA  where FORMULA  FORMULA  but FORMULA  (i.e. FORMULA  is the centralizer of FORMULA  in FORMULA  in h-  and v–components,
+one have FORMULA  and FORMULA  where FORMULA  FORMULA  but FORMULA  (i.e. FORMULA  is the
+centralizer of FORMULA  in FORMULA  and FORMULA 
+and FORMULA  where FORMULA  FORMULA  but FORMULA  (i.e. FORMULA  is the
+centralizer of FORMULA  in FORMULA  Using the canonical d–connection derivative FORMULA  of a d–covector perpendicular (or parallel) to FORMULA  we get a new d–vector which is parallel (or perpendicular) to
+FORMULA  i.e. FORMULA  (or FORMULA  in h-  and v–components such formulas are
+written FORMULA  (or FORMULA  and FORMULA  (or FORMULA  All such d–algebraic relations can be written in
+N–anholonomic manifolds and canonical d–connection settings, for instance,
+using certain relations of type
+FORMULA 
+for some antisymmetric d–tensors FORMULA 
+We get a N–adapted FORMULA –parallel frame
+defining a generalization of the concept of Riemannian parallel frame on
+N–adapted manifolds whenever FORMULA  is larger than FORMULA  Substituting FORMULA  into the last
+formulas and considering h- and v–components, we define FORMULA –parallel
+and FORMULA –parallel frames (for simplicity we omit these formulas when the
+Greek small letter indices are split into Latin small letter h- and
+v–indices).
+The final conclusion of this section is that the Cartan structure equations
+on hypersurfaces swept out by nonholonomic curve flows on N–anholonomic
+spaces with constant matrix curvature for the canonical d–connection
+geometrically encode  two FORMULA – and FORMULA –invariant, respectively,
+horizontal and vertical bi–Hamiltonian operators. This holds true if the
+distinguished by N–connection freedom of the d–group action FORMULA  on FORMULA  and FORMULA  is used to
+fix them to be a N–adapted parallel coframe and its associated canonical
+d–connection 1–form is related to the canonical covariant derivative on
+N–anholonomic manifolds.
+
+Proof of the Main Theorem
+We provide a proof of Theorem REF  for the horizontal
+Ricci and curve flows (similar results were published in {{cite:036ee834-ceda-4d97-aed6-c66506202b38}} and {{cite:1a7aaaf9-f592-4597-ad03-da2e5f53515d}}, respectively, for Lagrange–Finsler and symmetric Riemannian
+spaces). The vertical constructions are similar but with respective changing
+of h– variables / objects into v- variables/ objects.
+One obtains a vector mKdV equation up to a convective term, which can be
+absorbed by redefinition of coordinates, defining the +1 flow for  FORMULA
+FORMULA 
+when the FORMULA  flow gives a vector mKdV equation of higher order FORMULA 
+on FORMULA  and there is a 0 h–flow FORMULA  arising from FORMULA  and FORMULA  belonging
+outside the hierarchy generated by FORMULA  Such flows
+correspond to N–adapted horizontal motions of the curve FORMULA  given by
+FORMULA 
+subject to the non–stretching condition FORMULA  when the equation of motion is to be derived
+from the identifications
+FORMULA 
+and so on, which maps the constructions from the tangent space of the curve
+to the space FORMULA  For such identifications, we have
+FORMULA 
+and so on, see similar calculus in (REF ). At the next step, stating
+for the +1 h–flow
+FORMULA 
+we compute
+FORMULA 
+Following above presented identifications related to the first and second
+terms, when
+FORMULA 
+we can identify FORMULA  to FORMULA 
+and write
+FORMULA 
+which is just the first equation (REF ) in the Theorem REF 
+defining a family of non–stretching mKdV map h–equations induced by the
+h–part of the family of canonical d–connections.
+Using the adjoint representation FORMULA  acting in the Lie
+algebra FORMULA  with
+FORMULA 
+where
+FORMULA 
+and the derived (applying FORMULA  again )
+FORMULA 
+the equation (REF ) can be represented in alternative form
+FORMULA 
+which is more convenient for analysis of higher order flows on FORMULA  subjected to higher–order geometric partial
+differential equations. Here we note that the 0 flow one FORMULA  correspond to just convective (linear travelling h–wave but
+subjected to certain nonholonomic constraints) map equations (REF ).
+Now we consider -1 flows contained in the family of h–hierarchies derived
+from the property that FORMULA  is
+annihilated by the h–operator FORMULA  and mapped into FORMULA  This states
+that FORMULA  Such properties together with (REF )
+and equations (REF ) imply FORMULA  and
+hence FORMULA  for FORMULA 
+We obtain the equation of motion for the h–component of curve, FORMULA  following the correspondences FORMULA  and  FORMULA
+FORMULA 
+which is just the first equation in (REF ).
+Finally, we note that the formulas for the v–components, stated by Theorem REF  can be derived in a similar form by respective substitution in the
+the above proof of the h–operators and h–variables into v–ones, for
+instance, FORMULA  FORMULA  FORMULA  FORMULA  FORMULA ,...where, for simplicity, we omit
+parametric dependencies on  FORMULA

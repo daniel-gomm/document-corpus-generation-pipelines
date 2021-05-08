@@ -1,0 +1,285 @@
+
+Extended Cluster Model for Light, and Medium Nuclei
+M. TomaselliFORMULA , T. Kühl, D. Ursescu, and S.Fritzsche
+GSI, Gesellschaft für Schwerionenforschung, Darmstadt
+D24691 Germany
+FORMULA E-mail: m.tomaselli@gsi.de
+The structures, the electromagnetic transitions, and the beta decay strengths of exotic nuclei
+are investigated within an extended cluster model.
+We start by deriving an effective nuclear Hamiltonian within the FORMULA  correlation operator.
+Tensor forces are introduced in a perturbative expansion which includes up to the
+second order terms. Within this Hamiltonian we calculate the distributions and the
+radii of A=3, 4 nuclei.
+For exotic nuclei characterized by n valence protons/neutrons we excite
+the structure of the closed shell nuclei via mixed modes formed by
+considering correlations operators of higher order.
+Good results have been obtained for the calculated transitions and for the beta decay
+transition probabilities.
+Cluster model, exotic nuclei, electromagnetic transitions, beta decay.
+Introduction
+The data obtained at RIA, Riken and GSI have given new life to the old Nuclear Physics.
+Nuclear structures of proton and neutron rich nuclei are and will be investigated giving a new
+insight to the fundamental observable such as the nuclear forces in the proton-proton
+and neutron-neutron components, shell closure far from stability, magnetic properties of weakly
+excited nuclear states, and many others.
+The theoretical analysis of these data requires
+a reliable nuclear model which can reproduce the data of stable nuclei and be extrapolated to predict
+or at least reproduce the experimental results.
+The Cluster Correlation Model offers effective tools in this direction.
+We have to depart, however, from a perturbative scheme which is generally used to treat the two body correlation.
+Generalization to the perturbative method to include the many body correlation is in this paper realized
+within an extended, non-perturbative Cluster Correlation Model.
+One of the central challenges of theoretical nuclear physics is the attempt to
+describe unknown properties of the exotic systems in terms of a realistic
+nucleon-nucleon (NN) interaction.
+In order to calculate matrix elements with the singular interaction (hard core)
+we have to define effective correlated Hamiltonians.
+Correlation effects in nuclei have been first introduced in nuclei by Villars {{cite:758a078a-6232-45f9-a93f-fb2d4ebf93cb}},
+who proposed the unitary-model operator (UMO) to construct effective operators.
+The method was implemented by Shakin {{cite:6dd72edc-352e-47dc-9573-a558753eaa71}} for the calculation
+of the G-matrix from hard-core interactions.
+Non perturbative approximations of the UMO have been recently applied to odd nuclei
+in Ref. [3] and to even nuclei in Ref. [4].
+The basic formulas of the Dynamic Correlation Model and of the
+Boson Dynamic Correlation Model (BDCM) presented in the above
+quoted papers have been obtained by separating the n-body correlation
+operator in short- and long-range components.
+The short-range component is considered up to the two body correlation
+while for the long range component
+the three and four body correlation operators have been studied.
+The extension of the correlation operator to high order diagrams is especially important
+in the description of exotic nuclei (open shell).
+In the short range approximation
+the model space of two interacting particles is separated in two subspaces:
+one which includes the shell model states and the other (high momentum) which
+is used to compute the G-matrix of the model.
+The long range component of the correlation operator
+has the effect of generating a new correlated model space (effective space)
+which departs from the originally adopted one (shell model).
+The amplitudes of the model wave functions are calculated in terms of
+non linear equation of motions (EoM).
+The derived systems of commutator equations,
+which characterize the EoM, are finally linearized.
+Within these generalized linearization approximations (GLA)
+we include in the calculation presented in the paper up to the ((n+1)p1h) effective diagrams.
+The linearized terms provide, as explained later in the text, the
+additional matrix elements that convert the perturbative UMO expansion
+in an eigenvalue equation. The n-body matrix elements needed to diagonalize the
+resulting eigenvalue equations are calculated exactly
+via the Cluster Factorization Theory (CFT) {{cite:861a55bc-965e-4d03-a071-b7c84784f1c0}}.
+
+The FORMULA  correlated Hamiltonian
+In order to describe the structures and the distributions of nuclei
+we start from the following Hamiltonian:
+FORMULA 
+where FORMULA  is the singular nucleon-nucleon two body potential.
+Since the two body states FORMULA  are uncorrelated the matrix elements of
+FORMULA  are infinite. This problem can be avoided by taking matrix elements
+of the Hamiltonian between correlated states.
+In this paper the effect of correlation is introduced via the FORMULA  method.
+In dealing with very short range correlations only the FORMULA  part of the correlation
+operator needs to be considered.
+Following Ref. [2] we therefore calculate an “effective Hamiltonian” by using only the FORMULA 
+correlation operator obtaining:
+FORMULA 
+where FORMULA  refers to the long-range part of the nucleon-nucleon force
+diagonal in the relative orbital angular momentum,
+after the separation {{cite:7dd6b0bd-de88-415d-9302-28b4ad7887b8}}:
+FORMULA 
+The separation is made in such a way that the short range part produces no
+energy shift in the pair state {{cite:7dd6b0bd-de88-415d-9302-28b4ad7887b8}}.
+In doing shell model calculation with the Hamiltonian Eq. (REF ),
+we remark: a) only the long tail potential plays an essential role in the calculations
+of the nuclear structure i.e.: the separation method and the new
+proposed FORMULA  {{cite:8bc39f98-3bf3-463b-83db-c7224eceb0a4}} method show a strong analogy and
+b) the FORMULA  must be included as an additional re-normalization of the
+effective Hamiltonian Eq. (REF ).
+In Eq. (REF ) the FORMULA  is the two particle correlated wave function:
+FORMULA 
+In order to evaluate the effect of the tensor force on the FORMULA 
+we calculate:
+FORMULA 
+where Q is a momentum dependent projection operator, FORMULA 
+the energy denominator and FORMULA  the correlated two particle
+state in the relative coordinates.
+In Eq. (REF ) u(r) is generated as in Ref. {{cite:6dd72edc-352e-47dc-9573-a558753eaa71}} by a separation distance
+calculation for the central part of the force in the FORMULA  state.
+The wave function obtained in this way (full line) heals to the harmonic-oscillator
+wave function (dashed line) as shown in Fig. 1.
+The result obtained for Eq. (REF ) calculated with the tensor force
+of the Yale potential {{cite:131aa0ac-6862-4a11-a8d7-a322b48a1519}}
+is given also in Fig. 1 left where we plot
+for the harmonic oscillator size parameter b=1.41 fm:
+FORMULA 
+FIGURE 
+
+FIGURE 
+
+FIGURE 
+Being the admixture of the two components, circa FORMULA ,
+the wave function Eq. (REF ) can
+be associated to the deuteron wave function.
+Let us use then the Hamiltonian Eq. (REF ) to calculate the structure of
+the A=3 nuclei.
+Here we propose to calculate the ground state of FORMULA H, FORMULA He, and FORMULA He
+within the EoM
+method which derive the eigenvalue equations by working with the FORMULA 
+operator on the wave functions of the A=3, 4 nuclei Ref.
+From the diagonalization of the eigenvalue equation of the three particles,
+we obtain an energy difference
+FORMULA =0.78 MeV and the distributions and radii given in Fig. 1 Right.
+By extending the commutator to a four particle state
+we obtain for the ground state of FORMULA He the binding energy of E=28.39 Mev and the rms radius of 1.709 fm.
+In dealing with complex nuclei however the (FORMULA )
+correlations should also be considered.
+The evaluation of these diagrams is, due to the
+exponentially increasing number of terms, difficult in a perturbation theory.
+We note however that one way to overcome this problem is to work with
+FORMULA  operator on the Slater's determinant
+by keeping the n-body Hamiltonian uncorrelated.
+Via the long tail of the nuclear potential the Slater determinant of the
+“n” particle systems are interacting with the excited Slater's determinants
+formed by the (“n” particles+(mp-mh) mixed-mode excitations).
+The amplitudes of the different determinants are calculated via
+the EoM method.
+After having performed the diagonalization of the n-body Hamilton's operator we
+can calculate the form of the effective Hamiltonian which, by now, includes
+the complete set of the commutator equations.
+The method is here applied to FORMULA He, FORMULA Be, FORMULA C, FORMULA O, and FORMULA O.
+A detailed formulation of the model my be found in Ref. {{cite:f83977a9-2277-4a8a-b049-01c7ecf8aa5e}}.
+
+Results
+In order to perform structure calculations for complex nuclei, we have to define
+the CMWFs base, the “single-particle energies” and to choose the
+nuclear two-body interactions.
+The CMWFs are defined as in Ref. {{cite:f83977a9-2277-4a8a-b049-01c7ecf8aa5e}} by including mixed valence modes
+and core-excited states.
+The base is then orthonormalized and, since the single particle wave functions
+are harmonic oscillators, the center-of-mass (CM) is removed.
+The single-particle energies of these levels are taken from the known experimental
+level spectra of the neighboring nuclei.
+For the particle-particle interaction, we use the G-matrix obtained from
+Yale potential {{cite:36908a31-a75b-42a1-a053-0300f30b21bb}}.
+These matrix elements are evaluated by applying the
+FORMULA  correlation operator, truncated at the second order
+term of the expansion, to the harmonic oscillator
+base with size parameter b=1.76 fm.
+As elucidate in Refs. [3] and [4] the effective two-body
+potential used by the DCM and the BDCM models
+is separated in low and high momentum components.
+Therefore, the effective model matrix elements calculated within
+the present separation method
+and those calculated by Kuo {{cite:8bc39f98-3bf3-463b-83db-c7224eceb0a4}} in the FORMULA  approximation
+are pretty similar.
+The adopted separation method and the FORMULA  generate two-body
+matrix elements which are almost
+independent from the radial shape of the different potentials generally
+used in structure calculations.
+The particle-hole matrix elements could be calculated from the particle-particle
+matrix elements via a re-coupling transformation.
+In this contribution we present application of the FORMULA  correlated model to the
+charge distributions of FORMULA He, FORMULA Be, and to the electromagnetic transitions
+of neutron rich Carbon and Oxygen isotopes. The beta decay strengths from the ground state FORMULA N
+to the excited states of FORMULA C are also calculated.
+In Fig. 2) Left three distributions are given for FORMULA He:
+1) the correlated charge distribution
+calculated with the full FORMULA  operator,
+2) the correlated charge distribution
+calculated with the partial FORMULA  operator obtained by neglecting the folded diagrams,
+3) the charge distribution calculated
+for two correlated protons in the FORMULA  shell.
+The full FORMULA  correlation operator therefore increases the calculated radii.
+In Fig. 2) Right the charge distribution for FORMULA Be is given.
+A charge radius of 3.12 fm has been obtained.
+Calculations are performed in a mixed FORMULA  and FORMULA  system.
+The results obtained for the Carbon and Oxygen isotopes are in the
+following presented as function of the increasing valence neutrons.
+It is worthwhile to remark that
+the high order correlation operators generate the interaction of
+the valence particles with the closed shell nucleus.
+The correlation model treats therefore consistently the “A” particles of
+the isotopes.
+FIGURE 
+
+FIGURE 
+
+FIGURE 
+By using generalized linearization approximations and cluster factorization
+coefficients {{cite:861a55bc-965e-4d03-a071-b7c84784f1c0}} we can perform exact calculations.
+In following Tables an over all b=1.76 fm has been used.
+In Table 1, 3) we give the calculated magnetic moments and rms radii for one-hole and
+for one-particle in FORMULA O.
+The energy splitting between the ground- and the second (first)
+excited states and the electromagnetic transitions for the two isotopes are
+given in Tables 2, 4).
+ TABLE
+ TABLE
+ TABLE
+ TABLE
+ TABLE
+ TABLE
+ TABLE
+ TABLE
+In Table 5) we give the calculated results for the energy splitting between
+the ground- and the FORMULA  excited state and the
+corresponding electromagnetic transition for the FORMULA C.
+The commutator equations involve FORMULA  and FORMULA  diagrams.
+ TABLE
+ TABLE
+In Table 6) preliminary results for the calculated reduced transition probabilities from the ground state of FORMULA N
+to the FORMULA  excited states of FORMULA C are given. The calculated strengths reproduce reasonably
+well the experimental values {{cite:86f685d6-1a2a-4a2a-9742-117c8d080325}}.
+ TABLE
+ TABLE
+Good results have been overall obtained for the transitions with a neutron effective charge varying between
+0.1- to 0.12-FORMULA .
+
+Conclusion and Outlook
+In this contribution we have investigated the effect of the microscopic
+correlation operators on the exotic structure of the Carbon and
+Oxygen isotopes. The microscopic correlation has been separated in short-
+and long-range correlations according to the definition of Shakin.
+The short-range correlation has been used to define the effective Hamiltonian
+of the model while the long-range correlation is used to calculate the structures and the
+distributions of exotic nuclei. As given in the work of Shakin, only the
+two-body short-range correlation need to be considered in order to derive
+the effective Hamiltonian especially if the correlation is of very short
+range. For the long range correlation operator the three body
+component is important and should not be neglected. Within the three body
+correlation operator, one introduces in the theory a three body interaction
+which compensates for the use of the genuine three body interaction
+of the no-core shell model. Within the FORMULA  effective Hamiltonian, good results have been
+obtained for the ground state energies and the distributions of
+FORMULA H, FORMULA He, and FORMULA He.
+The higher order correlation operators FORMULA  have been used
+to calculate the structure and the electromagnetic transitions
+of ground and first excited states for the isotopes of Carbon and Oxygen.
+By using generalized linearization approximations and cluster factorization
+coefficients we can perform expedite and exact calculations.
+F. Villars, ¦Proc. Enrico Fermi Int. School of Physics XXII¦,
+Academic Press N.Y. (1961).
+C.M. Shakin and Y.R. Waghmare, ¦Phys. Rev. Lett.¦ ¦16¦ (1966) 403;
+C.M. Shakin, Y.R. Waghmare, and M.H. Hull, ¦Phys. Rev.¦ ¦161¦ (1967) 1006.
+M. Tomaselli, L.C. Liu, S. Fritzsche, T. Kühl, and D. Ursescu,
+¦Nucl. Phys.¦ ¦A738¦ (2004) 216;
+M. Tomaselli, Ann. Phys. ¦205¦ (1991) 362.
+M. Tomaselli, L.C. Liu, S. Fritzsche, T. Kühl,
+¦J. Phys. G: Nucl. Part. Phys.¦ ¦30¦ (2004) 999.
+M. Tomaselli, T. Kühl, D. Ursescu, and S. Fritzsche,
+Prog. Theor. Phys. ¦116¦ (2006) 699.
+S.A. Moszkowski and B.L. Scott, Ann. of Phys. (N.Y.) ¦11¦ (1960) 55.
+S. Bogner, T.T.S. Kuo, L. Coraggio, A. Covello, and N. Itaco,
+Phys. Rev. ¦C65¦ (2002) 051301(R).
+K.E. Lassila, M.H. Hull, H.M. Ruppel, F.A.McDonald, and G. Breit,
+Phys. Rev. ¦126¦ (1962) 881.
+M. Tomaselli, T. Kühl, and D. Ursescu, Prog. Part. Nucl. Phys. ¦59¦ (2007) 455;
+M. Tomaselli, T. Kühl, and D. Ursescu, Nucl. Phys. ¦A790¦ (2007) 246.
+C.M. Shakin, Y.R. Waghmare, M. Tomaselli, and, M.H. Hull,
+Phys. Rev. ¦161¦ (1967) 1015.
+http://www.tunl.duke.edu/nucldata, and references therein quoted.
+C.W. de Jager, H. de Vries, and C. de Vries, Atomic Data and Nuclear Data Tables
+¦14¦ (1974), 479.
+S. Fujii, T, Misuzaki, T. Otsuka, T. Sebe, A. Arima, arXiv:nucl-th/0602002, 2006.
+S. Raman ¦et al.¦ Atomic Data and Nuclear Data Tables ¦31¦ (1987) 1.
+A. Negret, et al., Phys. Rev. Lett. ¦97¦ (2006) 062502.
+

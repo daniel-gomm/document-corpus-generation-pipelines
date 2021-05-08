@@ -1,0 +1,272 @@
+
+HSA Observations of the FORMULA  QSO BRI 1335–0417
+Momjian et al.
+High Sensitivity Array Observations of the FORMULA  QSO BRI 1335–0417
+Emmanuel Momjian
+NAIC, Arecibo Observatory, HC 3, Box 53995, Arecibo, PR 00612, USA
+emomjian@naic.edu
+Christopher L. Carilli
+National Radio Astronomy Observatory, P. O. Box O, Socorro, NM, 87801, USA
+ccarilli@nrao.edu
+Dominik A. Riechers
+Max-Planck-Institut für Astronomie, Königstuhl 17, D-69117
+Heidelberg, Germany
+riechers@mpia.de
+Fabian Walter
+Max-Planck-Institut für Astronomie, Königstuhl 17, D-69117
+Heidelberg, Germany
+walter@mpia.de
+We present sensitive phase-referenced VLBI results on the radio continuum
+emission from the FORMULA  QSO BRI 1335–0417. The observations were carried
+out at 1.4 GHz using the High Sensitivity Array (HSA).
+Our sensitive VLBI image at FORMULA  mas (FORMULA  kpc)
+resolution shows continuum emission in BRI 1335–0417 with a total flux
+density of FORMULA Jy, consistent with the flux density measured
+with the VLA. The size of the source at FWHM is
+FORMULA  mas (FORMULA  kpc) and the derived intrinsic brightness temperature
+is FORMULA  K. No continuum emission is
+detected at the full VLBI resolution (FORMULA  mas, FORMULA  pc),
+with a 4FORMULA 
+point source upper limit of 34 FORMULA Jy beamFORMULA , or an upper limit to the
+intrinsic brightness temperature of FORMULA  K. The highest angular
+resolution with at least a 4.5FORMULA  detection of the radio
+continuum emission is FORMULA  mas (FORMULA  kpc). At this
+resolution, the image shows a continuum feature in BRI 1335–0417
+with a size of FORMULA  mas (FORMULA  kpc) at FWHM,
+and intrinsic brightness temperature of FORMULA  K.
+The extent of the observed continuum sources at 1.4 GHz and the derived
+brightness temperatures show that the radio emission (and thus presumably the far-infrared
+emission) in BRI 1335–0417 is powered by a major starburst, with a massive star formation
+rate of order a few thousand FORMULA . Moreover, the
+absence of any compact high-brightness temperature source suggests that there
+is no radio-loud AGN in this FORMULA  QSO.
+galaxies: individual (BRI 1335–0417) — galaxies: active —
+galaxies: high-redshift — radio continuum: galaxies — techniques: interferometric
+INTRODUCTION
+Optical surveys such as the Sloan Digital Sky Survey (SDSS; York et al. 2000)
+and the Digitized Palomar Sky Survey {{cite:75b712fb-7487-4fb4-9dec-00eac362a6cf}} have revealed large samples
+of quasi-stellar objects out to FORMULA . Studies by {{cite:5f53fc96-d9fd-4f46-995b-bd43539f00ea}} and {{cite:21a3ee59-55d4-4c41-a1e8-21b280fbd9ec}} have shown that at such a high redshift we are approaching the epoch of
+reionization, the edge of the “dark ages”, when the first stars and massive
+black holes were formed.
+Observations of high redshift QSOs at mm and sub-mm wavelengths have shown that
+a significant fraction (FORMULA ) of the sources are strong emitters of
+far-infrared (FIR) radiation, which is thermal emission from warm dust.
+These sources have luminosities FORMULA , and
+molecular gas masses greater than FORMULA  {{cite:4cc47daa-0306-4163-bcb4-e07b08d0ce04}}, {{cite:7b9ddb1c-2369-45c9-9c13-32bf2a311369}}.
+Moreover, the large reservoirs of warm gas and dust in these objects have led to the
+hypothesis that these are starburst galaxies with massive star formation rates
+on the order of 1000 FORMULA  {{cite:bfd4eac7-c14c-472d-b6cd-bdcc001a13e6}}, {{cite:6d7dfd9e-da78-4968-87d9-0c3df39f3d79}}, {{cite:47446079-7e73-4286-b4f2-fc74f0541f66}}, {{cite:c4ae926f-0a24-4ac3-8409-31463dbace5f}}.
+An important question regarding these high-FORMULA  QSOs is whether the dust
+heating mechanism is dominated by a central AGN, or starburst activity in
+the QSO host galaxies. The high resolution of Very Long
+Baseline Interferometry (VLBI) observations permits a detailed look at the
+physical structures in the most distant cosmic sources. Also, sensitive VLBI
+continuum observations can be used to determine the nature of the energy
+source(s) in these galaxies at radio frequencies.
+To date, several high redshift QSOs have been imaged at milliarcsecond
+resolution {{cite:b4c045e5-950c-406a-9630-189fd0016db2}}, {{cite:b8050953-009f-4a28-b06a-40816df23f14}}, {{cite:420a5d24-80fb-4664-bf0e-cb16889e003d}}, {{cite:a8e14176-9d81-4500-ae5e-befea0f8b4ac}}, {{cite:62815f00-e4bb-4fdf-bcdd-3ae129b14c9a}}. These are the highest resolution
+studies of such distant QSOs by far. In this paper, we present sensitive VLBI
+observations of the FORMULA  QSO BRI 1335–0417.
+The source BRI 1335–0417, which has an optical redshift of FORMULA ,
+was identified in the Automatic Plate Measuring (APM) survey {{cite:db1ff074-b844-4dc1-a6bd-032279e968c5}}, {{cite:a0c621d4-5929-467c-93dd-1b01e9e51f94}}.
+This QSO is the second brightest source at millimeter wavelengths with redshifts
+FORMULA , with the brightest being the FORMULA  QSO BRI 1202–0725 {{cite:8babd879-41bc-4717-b104-500ea2968c1c}}.
+The implied FIR luminosity of BRI 1335–0417 is
+FORMULA . Thus far, there is no evidence for
+multiple imaging in BRI 1335–0417 due to strong gravitational lensing {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}}.
+The optical spectrum of the QSO BRI 1335–0417 shows a strong absorption by LyFORMULA 
+and metal lines at the source redshift {{cite:a0c621d4-5929-467c-93dd-1b01e9e51f94}}. Its CO FORMULA  line emission was detected
+at FORMULA  {{cite:69b1ce60-449e-4b1c-b42c-255b560d6385}}.
+The CO FORMULA  emission studies on this source by {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}} suggested optically thick emission
+from warm (FORMULA  30 K) molecular gas. The derived total molecular gas mass is FORMULA , making BRI 1335–0417 one
+of the most massive molecular gas reservoirs known at high redshifts.
+The source BRI 1335–0417 is also detected in the radio continuum at 1.4 and 4.9 GHz with
+the Very Large Array (VLA) in C-configuration, with
+flux densities of FORMULA  and FORMULA Jy, respectively {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}}, {{cite:f3c2288a-2c05-4c2c-958a-14253ec617d9}}.
+The source appears unresolved at the resolution of these VLA observations, which is on the order of
+several arcseconds.
+Throughout this paper, we assume a flat cosmological model with
+FORMULA , FORMULA , and
+FORMULA  km sFORMULA  MpcFORMULA . In this model, at the distance of BRI
+1335–0417, 1 milliarcsecond (mas) corresponds to 6.6 pc.
+
+OBSERVATIONS AND DATA REDUCTION
+The VLBI observations of BRI 1335–0417 were carried out at 1.4 GHz on 2005 December 31 and
+2006 January 7, using the High Sensitivity Array (HSA), which included
+the Very Long Baseline Array (VLBA), the phased Very Large Array (VLA), and the
+Green Bank Telescope (GBT) of the NRAOThe National Radio Astronomy
+Observatory is a facility of the National Science Foundation operated under
+cooperative agreement by Associated Universities, Inc.. Four adjacent 8 MHz
+baseband channel pairs were used in the observations, both with right and
+left-hand circular polarizations, and sampled at two bits. The data were
+correlated at the VLBA correlator in Socorro, NM, with 2 s correlator
+integration time. The total observing time was
+14 hr.
+In these observations, the shortest baseline is between the phased VLA and the VLBA antenna in
+Pie Town, NM, which is 52 km. This short-spacing limit filters out all spatial structure
+larger than about FORMULA . Table 1 summarizes the parameters of these observations.
+The observations employed nodding-style phase referencing, using the calibrator
+J1335–0511 (FORMULA  Jy), with a cycle time of 4 min, 3 min on the
+target source and 1 min
+on the calibrator. A number of test cycles were also included to monitor the
+coherence of the phase referencing. These tests involved switching between two
+calibrators, the phase calibrator J1335–0511 and the phase-check calibrator
+J1332–0509 (FORMULA  Jy), using a similar cycle time to that used for
+the target source.
+The accuracy of the phase calibrator position is important in phase-referencing
+observations {{cite:abf69e29-28f6-43e5-9a03-7235455353c6}}, as this determines the accuracy of the absolute
+position of the target source and any associated components. Phase referencing,
+as used here, is known to preserve absolute astrometric positions to better
+than FORMULA  {{cite:c6e01a70-c7b0-436d-932e-be49c320f9f3}}.
+Data reduction and analysis were performed using the Astronomical Image
+Processing System (AIPS) and Astronomical Information Processing System
+(AIPSFORMULA ) of the NRAO. After applying a priori flagging, amplitude
+calibration was performed using measurements of the antenna gain and system
+temperature for each station. Ionospheric corrections were applied using the
+AIPS task “TECOR”. The phase calibrator J1335–0511 was self-calibrated in
+both phase and amplitude and imaged in an iterative cycle.
+Images of the phase-check calibrator, J1332–0509, were deconvolved using two
+different approaches: (a) by applying the phase and the amplitude
+self-calibration solutions of the phase reference source J1335–0511
+(Figure 1a), and (b) by self calibrating J1332–0509 itself, in both
+phase and amplitude (Figure 1b). The peak surface brightness ratio of
+the final images from the two approaches gives a measure of the effect of
+residual phase errors after phase referencing (i.e. `the coherence' due to
+phase referencing). At all times, the coherence was found to be better than
+98%.
+The self-calibration solutions of the phase calibrator, J1335–0511, were
+applied on the target source, BRI 1335–0417, which was then deconvolved and imaged at
+various spatial resolutions by tapering the visibility data.
+
+RESULTS & ANALYSIS
+Imaging the target source at the full resolution of the VLBI array, which is
+FORMULA  mas (FORMULA  pc, PA=FORMULA ), achieved an rms noise level of
+FORMULA Jy beamFORMULA , but did not reveal any continuum component
+in the field of BRI 1335–0417. This indicates the absence of any compact radio
+continuum emission with flux densities of FORMULA Jy beamFORMULA , which in turn implies an upper limit to the intrinsic brightness
+temperature (corresponding to a rest frequency of FORMULA 8 GHz)
+of FORMULA  K for any compact radio source in
+BRI 1335–0417. Our coherence tests during these
+observations using two VLBI calibrators show that the lack of a strong point
+source in BRI 1335–0417 at the full resolution of the array cannot be due to
+the phase referencing procedure. The 4FORMULA 
+flux limit reported above is almost an order of magnitude lower than the flux measured by
+the VLA (FORMULA Jy) at 1.4 GHz {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}}.
+This immediately implies that more than FORMULA 80%
+of the radio continuum emission in BRI 1335–0417 is extended and not
+confined to the central AGN.
+In the following, we will assess if our HSA observations can recover the flux
+seen by the VLA. To do so, we applied a two-dimensional Gaussian taper falling to
+30% at 1 MFORMULA  to the visibility data in both the u- and v-directions.
+This gives a beam size of FORMULA  mas
+(FORMULA  kpc, P. A.= FORMULA ), and the resulting image is shown in Figure 2.
+The rms noise level in this naturally weighted image is FORMULA Jy beamFORMULA . The
+peak flux density of the detected continuum source is FORMULA Jy beamFORMULA , and the total
+flux density is FORMULA Jy, which agrees
+well with the flux density measured with the VLA at 1.4 GHz {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}}.
+The size of the source at full width half maximum (FWHM) is FORMULA  mas
+(FORMULA  kpc), and the derived intrinsic brightness temperature is
+FORMULA  K.
+Figure 3 shows the continuum emission in BRI 1335–0417 at the highest angular
+resolutions for which there is at least 4.5FORMULA  detection (FORMULA Jy beamFORMULA ).
+This corresponds to a resolution of FORMULA  mas (FORMULA  kpc) in
+position angle FORMULA . This image was obtained by
+applying a two-dimensional Gaussian taper falling to 30% at 5 MFORMULA 
+in both the u- and v-directions of the visibility
+data. The peak flux density of the continuum source detected at this resolution is
+FORMULA Jy beamFORMULA , and the total flux density is FORMULA Jy.
+The size of the source is FORMULA  mas (FORMULA  kpc) at FWHM,
+and its intrinsic brightness temperature is
+FORMULA  K. The results obtained at this resolution imply that about
+two thirds of the total radio emission emerges from the central FORMULA 0.3 kpc of
+BRI 1335–0417, and, likewise, one third arises from more extended scales (FORMULA 1.3 kpc).
+
+DISCUSSION
+We have detected 1.4 GHz emission from BRI 1335–00417 (corresponding to a rest frame
+frequency of FORMULA 8 GHz) using the HSA. At a moderate resolution (FORMULA  mas; Figure 2)
+the intrinsic brightness temperature value of the detected continuum structure is
+FORMULA  K. The measured flux density at this resolution
+is consistent with the VLA flux density of this source {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}}.
+This implies that the radio continuum emission at
+1.4 GHz is confined to the extent of the structure seen in the VLBI
+image (Figure 2), which is FORMULA  kpc at FWHM. Furthermore, the highest
+resolution image
+with continuum detection (Figure 3) shows that almost two thirds of the total
+radio continuum emission at 1.4 GHz is arising from the central FORMULA 0.3 kpc.
+At the full resolution of our array (FORMULA  mas), the radio emission from
+BRI 1335–0417 is resolved out and does not show any single dominant source of
+very high brightness temperature (FORMULA  K).
+This is in contrast to
+the results obtained by {{cite:420a5d24-80fb-4664-bf0e-cb16889e003d}} on a sample of three high-FORMULA  radio-loud
+quasars which were imaged with the VLBA, namely J1053-0016 (FORMULA ), J1235-0003 (FORMULA ),
+and J0913+5919 (FORMULA ). In each of these FORMULA  quasars, a
+radio-loud AGN dominates the emission at 1.4 GHz on a few mas size scale, with
+intrinsic brightness temperatures in excess of FORMULA  K.
+{{cite:3953cafa-3818-4fab-88f9-33d2fe093d55}} have derived an empirical upper limit to the brightness
+temperature for nuclear starbursts of FORMULA  K at 8 GHz (our rest frequency),
+while typical
+radio-loud AGN have brightness temperatures exceeding this value by at least
+two orders of magnitude. These authors also present a possible physical model
+for this limit involving a mixed non-thermal and thermal radio emitting (and
+absorbing) plasma, constrained by the radio-to-FIR correlation for star-forming
+galaxies.
+For BRI 1335–0417, the derived intrinsic brightness
+temperatures from our VLBI observations are typical of starburst galaxies.
+Also, the linear extent of the radio continuum emission region in
+BRI 1335–0417 is typical of local starburst powered Ultra-Luminous IR galaxies
+(ULIRGs; Sanders & Mirabel 1996), such as Arp 220, Mrk 273, and
+IRAS 17208–0014 {{cite:9c7ca841-1589-483c-8016-e08b41ccc2e9}}, {{cite:378c9059-c4fe-4bba-be9f-a043337e7cff}}, {{cite:21875f4a-8884-47c3-a70c-5e2bc6558723}}.
+Another argument in favor of a massive starburst origin for the radio continuum
+emission from BRI 1335–0417 is that this source follows the radio-FIR correlation for
+star forming galaxies, although the massive star formation rate is extreme, of order a few
+thousand FORMULA  {{cite:eca1085b-cd4d-4f72-a513-e3db4a4495a9}}.
+The physical characteristics of the QSO BRI 1335–0417 are similar to two other
+high-FORMULA  luminous IR sources; the brightest mm source in the {{cite:36eaa467-aea5-4707-a4df-7e209d4d5259}} sample of QSOs with
+redshifts between FORMULA , namely J1409+5628 at FORMULA , and the brightest mm
+source in the {{cite:8babd879-41bc-4717-b104-500ea2968c1c}}
+sample of QSOs at redshifts FORMULA , namely BRI 1202–0725 at FORMULA .
+High angular resolution observations of J1409+5628 and BRI 1202–0725 at 1.4 GHz
+{{cite:a8e14176-9d81-4500-ae5e-befea0f8b4ac}}, {{cite:2dea5c35-67a3-455d-9a34-573a285a8236}} showed
+that the radio continuum emission in these optically very bright QSOs is dominated by
+extreme nuclear starbursts, with massive star formation rates on the order of
+FORMULA . Moreover, sensitive, tapered VLBI images of BRI 1202–0725
+at 1.4 GHz {{cite:62815f00-e4bb-4fdf-bcdd-3ae129b14c9a}} revealed the starburst regions in each of its two components that are separated by 4, with
+sizes and brightness temperatures comparable to that seen in BRI 1335–0417.
+The measured 1.4 GHz radio flux density in BRI 1335–0417 is consistent
+with extreme nuclear starburst activity, with the radio continuum being the sum of
+supernovae (SNe), supernova remnants, and residual relativistic electrons in the interstellar
+medium, as shown in the model presented by {{cite:3953cafa-3818-4fab-88f9-33d2fe093d55}}. However, detecting
+individual SNe at FORMULA  is unlikely.
+{{cite:9c7ca841-1589-483c-8016-e08b41ccc2e9}} reported the detection of several luminous radio SNe in the
+prototype ULIRG Arp 220 with flux densities between 0.2 and 1.17 mJy and
+angular sizes on the order of 0.25 mas. At the distance of BRI 1335–0417, the
+flux densities of such luminous radio SNe would be between FORMULA Jy. These values are three to four orders of magnitude lower that the
+rms noise levels achieved in our VLBI observations.
+
+ACKNOWLEDGMENTS
+This research has made use of the NASA/IPAC
+Extragalactic Database (NED) which is operated by the Jet Propulsion
+Laboratory, California Institute of Technology, under contract with the
+National Aeronautics and Space Administration. The Arecibo Observatory is part
+of the National Astronomy and Ionosphere Center, which is operated by Cornell
+University under a cooperative agreement with the National Science Foundation.
+C. L. C. acknowledges support from the Max-Planck Society
+and the Alexander von Humboldt Foundation through the Max-Planck
+Forshungspreise 2005.
+D. A. R. acknowledges support from the Deutsche Forschungsgemeinschaft (DFG)
+Priority Programme 1177.
+FIGURE 
+FIGURE 
+FIGURE 
+lc
+1
+60pc
+PARAMETERS OF THE VLBI
+OBSERVATIONS OF BRI 1335–0417
+Parameters  Values
+Observing Dates  2005 Dec. 31 & 2006 Jan. 7
+Total observing time (hr) 14
+Phase calibrator J1335–0511
+Phase-referencing cycle time (min) 4
+Frequency (GHz) 1.4
+Total bandwidth (MHz) 32

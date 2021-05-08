@@ -1,0 +1,448 @@
+
+Interference Alignment and Spatial Degrees of Freedom for the FORMULA  User Interference Channel
+Viveck R. Cadambe, Syed A. Jafar
+Electrical Engineering and Computer Science
+University of California Irvine,
+Irvine, California, 92697, USA
+Email: vcadambe@uci.edu, syed@uci.edu
+
+
+
+While the best known outerbound for the FORMULA  user interference channel states that there cannot be more than FORMULA  degrees of freedom, it has been conjectured that in general the constant interference channel with any number of users has only one degree of freedom. In this paper, we explore the spatial degrees of freedom per orthogonal time and frequency dimension for the FORMULA  user wireless interference channel where the channel coefficients take distinct values across frequency slots but are fixed in time. We answer five closely related questions. First, we show that FORMULA  degrees of freedom can be achieved by channel design, i.e. if the nodes are allowed to choose the best constant, finite and nonzero channel coefficient values. Second, we show that if channel coefficients can not be controlled by the nodes but are selected by nature, i.e., randomly drawn from a continuous distribution, the total number of spatial degrees of freedom for the FORMULA  user interference channel is almost surely FORMULA  per orthogonal time and frequency dimension. Thus, only half the spatial degrees of freedom are lost due to distributed processing of transmitted and received signals on the interference channel. Third, we show that interference alignment and zero forcing suffice to achieve all the degrees of freedom in all cases. Fourth, we show that the degrees of freedom FORMULA  directly lead to an FORMULA  capacity characterization of the form FORMULA  for the multiple access channel, the broadcast channel, the 2 user interference channel, the 2 user MIMO FORMULA  channel and the 3 user interference channel with FORMULA  antennas at each node. It is not known if this relationship is true for all networks in general, and the FORMULA  user interference channel with a single antenna at all nodes in particular. Fifth, we consider the degree of freedom benefits from cognitive sharing of messages on the 3 user interference channel. If only one of the three messages is made available non-causally to all the nodes except its intended receiver the degrees of freedom are not increased. However, if two messages are shared among all nodes (except their intended receivers) then there are two degrees of freedom. We find that unlike the 2 user interference channel, on the 3 user interference channel a cognitive transmitter is not equivalent to a cognitive receiver from a degrees of freedom perspective. If one receiver has cognitive knowledge of all the other users' messages the degrees of freedom are the same as without cognitive message sharing. However, if one transmitter has cognitive knowledge of all the other users' messages then the degrees of freedom are increased from FORMULA  to 2.
+
+Introduction
+The capacity of ad-hoc wireless networks is the much sought afer “holy-grail" of network information theory {{cite:510e6a65-fff0-4762-9429-a3ffec938e35}}. While capacity characterizations have been found for centralized networks (Gaussian multiple access and broadcast networks with multiple antennas), similar capacity characterizations for most distributed communication scenarios (e.g. interference networks) remain long standing open problems. In the absence of precise capacity characterizations, researchers have pursued asymptotic and/or approximate capacity characterizations. Recent work has found the asymptotic scaling laws of network capacity as the number of nodes increases in a large network {{cite:17308c6b-4710-4b86-a617-5d627cf93628}}, {{cite:faf10165-0f57-4c4d-883d-0321dc372a05}}. However, very little is known about the capacity region of smaller (finite) decentralized networks. An important step in this direction is the recent approximate characterization of the capacity region of the 2 user interference channel that is accurate within one bit of the true capacity region{{cite:db422c4c-5c5b-4be8-b421-20b956e25114}}. Approximate characterizations of capacity regions would also be invaluable for most open problems in network information theory and may be the key to improving our understanding of wireless networks.
+It can be argued that the most preliminary form of capacity characterization for a network is to characterize its degrees of freedom. The degrees of freedom represent the rate of growth of network capacity with the FORMULA  of the signal to noise ratio (SNR). In most cases, the spatial degrees of freedom turn out to be the number of non-intefering paths that can be created in a wireless network through signal processing at the transmitters and receivers. While time, frequency and space all offer degrees of freedom in the form of orthogonal dimensions over which communication can take place, spatial degrees of freedom are especially interesting in a distributed network. Potentially a wireless network may have as many spatial dimensions as the number of transmitting and receiving antennas. However, the ability to access and resolve spatial dimensions is limited by the distributed nature of the network. Therefore, characterizing the degrees of freedom for distributed wireless networks is by itself a non-trivial problem. For example, consider an interference network with FORMULA  single-antenna transmitters and FORMULA  single-antenna receivers where each transmitter has a message for its corresponding receiver. For FORMULA  it is known that this interference network has only 1 degree of freedom {{cite:751afd48-c669-4dcc-8c90-70ca06d5313e}}, {{cite:8f394f0a-e00f-4b66-97cc-f5978bc5a848}}. There are no known results to show that more than 1 degrees of freedom are achievable on the interference channel with any number of users. It is conjectured in {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}} that the FORMULA  user interference channel has only 1 degree of freedom. Yet, the best known outerbound for the number of degrees of freedom with FORMULA  interfering nodes is FORMULA , also presented in {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}}. The unresolved gap between the inner and outerbounds highlights our lack of understanding of the capacity of wireless networks because even the number of degrees of freedom, which is the most basic characterization of the network capacity, remains an open problem. It is this open problem that we pursue in this paper.
+To gain a better understanding of the interference channel, we first consider the possibility that the transmitters and receivers can place themselves optimally, i.e., the nodes can choose their channels. Thus, the first objective of this paper is to answer the question:
+Question 1: What is the maximum number of degrees of freedom for the FORMULA  user interference channel if we are allowed to choose the best (finite and non-zero) channel coefficient values ?
+While the scenario above offers new insights, in practice it is more common that the channel coefficients are chosen by nature. The nodes control their coding schemes, i.e. the transmitted symbols, but not the channel coefficients, which may be assumed to be randomly drawn from a continuous distribution and causally known to all the nodes. In this context we ask the main question of this paper:
+Question 2: What is the number of degrees of freedom for the FORMULA  user interference channel per orthogonal time and frequency dimension ?
+Note that the normalization by the number of orthogonal time and frequency dimensions is necessary because we wish to characterize the spatial degrees of freedom.
+Spatial degrees of freedom have been characterized for several multiuser communication scenarios with multiple antenna nodes. The FORMULA  point to point MIMO channel has FORMULA  degrees of freedom {{cite:3ffa54d7-20a1-44c7-9f74-3bdff40da20d}}, {{cite:df0c6452-bd18-423c-8557-9265f82d5830}}, the FORMULA  multiple access channel has FORMULA  degrees of freedom {{cite:b14e138d-3356-47f5-9ce7-aa90d32ddee2}}, the FORMULA  broadcast channel has FORMULA  degrees of freedom {{cite:d17c7cc3-e12e-4b1c-b278-6f2b236a082e}}, {{cite:c93bbedc-6e79-4cd8-8a79-f87de26852dc}}, {{cite:8f04998b-ac44-498d-a6f3-c7ba32a22a45}}, and the FORMULA  interference channel has FORMULA  degrees of freedom {{cite:8f394f0a-e00f-4b66-97cc-f5978bc5a848}}, where FORMULA  (or FORMULA  when only one transmitter is present) and FORMULA  (or FORMULA  when only one receiver is present) indicate the number of antennas at the FORMULA  transmitter and receiver, respectively.
+If one tries to extrapolate these results into an understanding of the degrees of freedom for fully connected (all channel coefficients are non-zero) wireless networks with a finite number of nodes, one could arrive at the following (incorrect) intuitive inferences:
+
+The number of degrees of freedom for a wireless network with perfect channel knowledge at all nodes is an integer.
+
+The degrees of freedom of a wireless network with a finite number of nodes is not higher than the maximum number of co-located antennas at any node.
+
+The degrees of freedom characterizations for the point to point, multiple access, broadcast and interference scenarios described above are all consistent with both these statements. Note that the results of {{cite:353315dc-e1f8-4dac-bc08-6beb2de68476}} indicate that even with single antenna sources, destinations and relay nodes the network can have more than one degree of freedom. However, for this distributed orthogonalization result it is assumed that the number of relay nodes approaches infinity. Thus it does not contradict the intuition above which is for finite networks. Multihop networks with half-duplex relay nodes may also lead to fractional degrees of freedom due to the normalization associated with the half-duplex constraint. This is typically because of the absence of a direct link across hops, i.e. some channel coefficients are zero. For multihop networks with orthogonal hops {{cite:53c31a0e-55c4-4f1a-a78f-ce8e216b6ad8}} has shown that the full FORMULA  degrees of freedom are achievable even if each intermediate hop consists of FORMULA  (distributed) single antenna relay nodes as long as the initial source node and the final destination nodes are equipped with FORMULA  antennas each. Note that the result of {{cite:53c31a0e-55c4-4f1a-a78f-ce8e216b6ad8}} is also consistent with the inferences described above. Also, we note that channels with specialized structures or cooperation among nodes may be able to achieve higher degrees of freedom than channels whose coefficients are randomly selected from continuous distributions {{cite:33703c84-1aaf-4de9-81e6-08b3b41c611e}}.
+Perhaps biased by these results, most work on degrees of freedom for wireless networks has focused on either networks where some nodes are equipped with multiple antennas {{cite:8f394f0a-e00f-4b66-97cc-f5978bc5a848}}, {{cite:53c31a0e-55c4-4f1a-a78f-ce8e216b6ad8}} or networks with single antenna nodes where some form of cooperation opens up the possibility that the single antenna nodes may be able to achieve MIMO behavior {{cite:751afd48-c669-4dcc-8c90-70ca06d5313e}}, {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}}, {{cite:c92e82bd-0d97-4fce-b5f8-2c18ecf7f041}}.
+Networks of single antenna nodes with no cooperation between the transmitters or receivers could be considered uninteresting from the degrees of freedom perspective as the above mentioned intuitive statements would suggest that these networks could only have 1 degree of freedom. In other words, one might argue that with a single antenna at each node it is impossible to avoid interference and therefore it is impossible to create multiple non-interfering paths necessary for degrees of freedom.
+The 2 user interference network with a single antenna at each node is a good example of a network which adheres to all the above intuitive inferences, where indeed it can be rigorously shown that there is only one degree of freedom. Studying a FORMULA  user interference channel where all channel coefficients are equal will also lead to only one degree of freedom, as will the FORMULA  user interference channel with i.i.d. channel coefficients and no knowledge of channel coefficients at the transmitters {{cite:353315dc-e1f8-4dac-bc08-6beb2de68476}}. Similarly, if all receivers observe signals that are degraded versions of, say, receiver 1's signal then it can again be argued that the MAC sum capacity when receiver 1 decodes all messages is an outerbound to the interference channel sum capacity (Carleial's outerbound {{cite:6ccfe2a9-f79d-4752-9706-54d3d4338d7a}}). Thus the degrees of freedom cannot be more than the number of antennas at receiver 1. Finally, the conjecture that the FORMULA  user interference channel has only 1 degree of freedom is also consistent with this intuition {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}}.
+Clear evidence that the intuitive conclusions mentioned above do not apply to all wireless networks is provided by the recent degree of freedom region characterization for the 2 user FORMULA  channel in {{cite:82e6fc65-64ca-45fd-a4e6-65c8bb7576ab}}, {{cite:ca1ca410-6fc4-4fab-9683-4b21fba29605}}, {{cite:d4894c09-dafb-4089-a14b-b68fc0628d93}}, {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}}. The 2-user FORMULA  channel is identical to the 2-user interference channel with the exception that each transmitter in the FORMULA  channel has an independent message for each receiver. Thus, unlike the interference channel which has only 2 messages, the FORMULA  channel has 4 messages to be communicated between two transmitters and two receivers. Surprisingly, it was shown in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} that the FORMULA  channel, with only a single antenna at all nodes has FORMULA  degrees of freedom per orthogonal time/frequency dimension if the channels are time/frequency selective. This is interesting for several reasons. First, it shows that the degrees of freedom can take non-integer values. Second, it shows that the degrees of freedom of a distributed wireless network can be higher than the maximum number of co-located antennas at any node in the network. Finally, the achievability proof for the non-integer degrees of freedom for the FORMULA  channel uses the novel concept of inteference-alignment {{cite:ca1ca410-6fc4-4fab-9683-4b21fba29605}}, {{cite:e66ffbb0-756f-4d78-a330-c2ca6418f4dc}}, {{cite:d4894c09-dafb-4089-a14b-b68fc0628d93}}, {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}}. Interference alignment refers to the simple idea that signal vectors can be aligned in such a manner that they cast overlapping shadows at the receivers where they constitute interference while they continue to be distinct at the receivers where they are desired. The possibility of implicit interference alignment was first observed by Maddah-Ali, Motahari and Khandani in {{cite:ca1ca410-6fc4-4fab-9683-4b21fba29605}}. The first explicit interference alignment scheme was presented in {{cite:e66ffbb0-756f-4d78-a330-c2ca6418f4dc}} where it was shown to be sufficient to achieve the full degrees of freedom for the MIMO FORMULA  channel. Interference alignment was subsequently used in {{cite:d4894c09-dafb-4089-a14b-b68fc0628d93}}, {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} to show achievability of all points within the degrees of freedom region of the MIMO FORMULA  channel. Interference alignment was also independently discovered in the context of the compound broadcast channel in {{cite:58ed07df-9355-4fb4-823e-924278ac4506}}.
+Since the distinction between the FORMULA  channel and the interference channel is quite significant, it is not immediately obvious whether the results found for the FORMULA  channel have any implications for the interference channel. For instance, the achievability schemes with inteference alignment proposed in {{cite:d4894c09-dafb-4089-a14b-b68fc0628d93}} utilize the broadcast and multiple access channels inherent in the FORMULA  channel. However, the interference channel does not have broadcast and multiple access components as each transmitter has a message for only one unique receiver. Therefore, in this paper we answer the following question.
+Question 3:  What are the degrees of freedom benefits from interference alignment on the FORMULA  user interference network?
+The degrees of freedom can be viewed as a capacity characterization that is accurate to within FORMULA  where FORMULA  represents the signal to noise ratio (SNR). In order to pursue increasingly accurate capacity characterizations, in this paper we explore the notion of FORMULA  capacity of a network. The FORMULA  capacity is an approximation accurate to within a bounded constant of the actual capacity region. The constant term can depend only on the channel gains and is independent of the transmit powers of the users. The FORMULA  capacity is a more accurate description of the network capacity than the degrees of freedom of a network. Interestingly, for the point to point MIMO channel the FORMULA  capacity FORMULA  is directly related to the degrees of freedom FORMULA  as FORMULA . This leads us to the third set of questions that we pursue in this paper.
+Question 4: Is the FORMULA  capacity FORMULA  of the multiple access and broadcast channels, as well as the 2 user interference and FORMULA  channels related to the degrees of freedom FORMULA  as FORMULA ? Does the same relationship hold for the FORMULA  user interference channel?
+Finally, we explore the benefits in terms of degrees of freedom, from the cognitive sharing of messages on the interference channel. Based on the cognitive radio model introduced in {{cite:863cbb56-14f1-404a-9634-76b03eabcfa1}}, {{cite:35be4302-bb6c-441d-b453-a8b868eb7d79}}, {{cite:686ee4c6-6d83-4874-b7dc-31b0cbc12bb6}} cognitive message sharing refers to the form of cooperation where a message is made available non-causally to some transmitters and/or receivers besides the intended source and destination of the message. It was shown in {{cite:c92e82bd-0d97-4fce-b5f8-2c18ecf7f041}} that for the 2 user interference channel with single antennas at each node, cognitive message sharing (from one transmitter to another) does not produce any gain in the degrees of freedom. The result was extended in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} to the 2 user interference channel with multiple antenna nodes and equal number of antennas at each node, to show that there is no gain in degrees of freedom whether a message is shared with the transmitter, receiver or both the transmitter and receiver of the other user. {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} also establishes an interesting duality relationship where it is shown that from the degrees of freedom perspective cognitive transmitters are equivalent to cognitive receivers, i.e. sharing a message with another user's transmitter is equivalent to sharing a message with the other user's receiver. It is not clear if similar results will hold for the 3 user interference channel, and it forms the last set of questions that we address in this paper.
+Question 5:  For the 3 user interference channel, what are the benefits of cognitive message sharing? Are cognitive transmitters equivalent to cognitive receivers in the manner shown for the 2 user interference channel? 
+Overview of Results
+The answer to the first question is provided in Section  and may be summarized in general terms as follows:
+“Regardless of how many speakers and listeners are located within earshot of each other, each speaker can speak half the time and be heard without any interference by its intended listener”
+This result may seem impossible at first. For example, how can a total duration of 1 hour be shared by 100 speakers such that each speaker speaks for 30 minutes and is heard interference free by its intended listener when all systems are located within earshot of each other? And yet, this seemingly impossible result is made possible by the concept of interference alignment. A simple scheme is explained in Section  where it is assumed the speakers and listeners can choose their locations.
+The answer to the second question is provided in Theorems REF  and REF . We show that the FORMULA  user interference channel with single antennas at all nodes has (almost surely) a total of FORMULA  degrees of freedom per orthgonal time and frequency dimension when the channels are drawn randomly from a continuous distribution. The implications of this result for our understanding of the capacity of wireless networks are quite profound. It shows that we have grossly underestimated the capacity of wireless networks. For example, at high SNR the true capacity is higher by 50%, 900%, and 4900% than anything previously shown to be achievable for networks with 3, 20, and 100 interfering users, respectively. Interference is one of the principal challenges faced by wireless networks. However, we have shown that with perfect channel knowledge the frequency selective interference channel is not interference limited. In fact, after the first two users, additional users do not compete for degrees of freedom and each additional user is able to achieve FORMULA  degree of freedom without hurting the previously existing users. What makes this result even more remarkable is that linear scaling of degrees of freedom with users is achieved without cooperation in the form of message sharing that may allow MIMO behavior. Note that it has been shown previously for the 2 user interference channel that unidirectional message sharing (e.g. from transmitter 1 to transmitter 2) does not allow higher degrees of freedom {{cite:c92e82bd-0d97-4fce-b5f8-2c18ecf7f041}}, {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} and even bi-directional message sharing (through full duplex noisy channels between the transmitters and full duplex noisy channels between the receivers) will not increase the degrees of freedom if the cost of message sharing is considered {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}}, {{cite:29605be5-5d82-41fa-ae16-49ffdaffbf41}}. Therefore it is quite surprising that the FORMULA  user interference channel has FORMULA  degrees of freedom even without any message sharing. To summarize, Theorem REF  shows that only half the degrees of freedom are lost due to distributed processing at the transmitters and receivers on the interference channel.
+The answer to question 3 is provided by the achievability proof for Theorem REF  where we find that, similar to the 2 user FORMULA  channel, interference alignment suffices to achieve all the degrees of freedom on the FORMULA  user interference channel as well. Thus, interference alignment is as relevant for the FORMULA  user interference channel where it achieves the full FORMULA  degrees of freedom, as it is for the 2 user FORMULA  channel where it achieves the full FORMULA  degrees of freedom. Interestingly, interference alignment does for wireless networks what MIMO technology has done for the point to point wireless channel. In both cases the capacity, originally limited to FORMULA , is shown to be capable of linearly increasing with the number of antennas. While MIMO technology requires nodes equipped with multiple antennas, interference alignment works with the distributed antennas naturally available in a network across the interfering transmitters and receivers.
+FIGURE 
+Figure REF  shows how interference alignment applies to the 3 user interference channel. In this figure we illustrate how 4 degrees of freedom are achieved over a 3 symbol extension of the channel with 3 single antenna users, so that a total of FORMULA  degrees of freedom are achieved per channel use. The achievability proof for FORMULA  degrees of freedom is more involved and is provided in Section REF . User 1 achieves 2 degrees of freedom by transmitting two independently coded streams along the beamforming vectors FORMULA  while users 2 and 3 achieve one degree of freedom by sending their independently encoded data streams along the beamforming vectors FORMULA , respectively. The beamforming vectors are chosen as follows.
+
+At receiver 1, the interference from transmitters 2 and 3 are perfectly aligned.
+
+At receiver 2, the interference from transmitter 3 aligns itself along one of the dimensions of the two-dimensional interference signal from transmitter 1.
+
+Similarly, at receiver 3, the interference from transmitter 2 aligns itself along one of the dimensions of interference from transmitter 1.
+
+For the answer to question 4, we show that for the multiple access, broadcast, and 2 user interference and FORMULA  channels, the total degrees of freedom FORMULA  and the FORMULA  capacity FORMULA  are indeed related as FORMULA . Thus, the two descriptions are equivalent. However, for the 3 user interference channel with single antenna nodes it appears unlikely that such a relationship exists. The evidence in this paper raises the interesting possibility that the sum capacity of the FORMULA  user interference channel with single antenna nodes may have a different form than the multiple access, broadcast, and 2 user interference and FORMULA  channels in that the difference between the true capacity FORMULA  and the degrees of freedom approximation FORMULA  may not be bounded.
+Finally, the answer to question 5 is provided in Theorem REF . We show that sharing one message with all other transmitters and/or receivers does not increase the degrees of freedom for the 3 user interference channel. Sharing two messages with all other transmitters and/or receivers on the other hand raises the degrees of freedom from FORMULA  to 2. Interestingly, we find that the equivalance established between the cognitive transmitters and cognitive receivers on the 2 user interference channel does not directly apply to the 3 user interference channel. Intuitively, this may be understood as follows. A cognitive transmitter on the 3 user interference channel can be more useful than a cognitive receiver. This is because a cognitive transmitter with no message of its own can still increase the degrees of freedom by canceling interference from its cognitively acquired message at other receivers. In other words a cognitive transmitter with no message of its own, still lends a transmit antenna to the transmitter whose message it shares. On the other hand, a cognitive receiver with no message of its own is useless.
+
+System Model
+Consider the FORMULA  user interference channel, comprised of FORMULA  transmitters and FORMULA  receivers. We assume coding may occur over multiple orthogonal frequency and time dimensions and the rates as well as the degrees of freedom are normalized by the number of orthogonal time and frequency dimensions. Each node is equipped with only one antenna (multiple antenna nodes are considered later in this paper). The channel output at the FORMULA  receiver over the FORMULA  frequency slot and the FORMULA  time slot is described as follows:
+FORMULA 
+where, FORMULA  is the user index, FORMULA  is the frequency slot index, FORMULA  is the time slot index, FORMULA  is the output signal of the FORMULA  receiver, FORMULA  is the input signal of the FORMULA  transmitter, FORMULA  is the channel fade coefficient from transmitter FORMULA  to receiver FORMULA  over the FORMULA  frequency slot and FORMULA  is the additive white Gaussian noise (AWGN) term at the FORMULA  receiver. The channel coefficients vary across frequency slots but are assumed constant in time. We assume all noise terms are i.i.d. (independent identically distributed) zero mean complex Gaussian with unit variance. We assume all channel coefficients FORMULA  are known a-priori to all transmitters and receivers. Note that since the channel coefficients do not vary in time, only causal channel knowledge is required. If we allow non-causal channel knowledge then the channel model above is equivalently represented as coding entirely in the time domain, i.e. over only one frequency slot. To avoid degenerate channel conditions (e.g. all channel coefficients are equal or channel coefficients are equal to either zero or infinity) we assume that the channel coefficient values are drawn i.i.d. from a continuous distribution and the absolute value of all the channel coefficients is bounded between a non-zero minimum value and a finite maximum value. Since the channel values are assumed constant in time, the time index FORMULA  is sometimes suppressed for compact notation.
+We assume that transmitters FORMULA  have independent messages FORMULA  intended for receivers FORMULA , respectively. The total power across all transmitters is assumed to be equal to FORMULA  per orthogonal time and frequency dimension. We indicate the size of the message set by FORMULA . For codewords spanning FORMULA  channel uses (i.e. using FORMULA  frequency slots and FORMULA  time slots), the rates FORMULA  are achievable if the probability of error for all messages can be simultaneously made arbitrarily small by choosing an appropriately large FORMULA .
+The capacity region FORMULA  of the three user interference channel is the set of all achievable rate tuples FORMULA .
+Degrees of Freedom
+Similar to the degrees of freedom region definition for the MIMO FORMULA  channel in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} we define the degrees of freedom region FORMULA  for the FORMULA  user interference channel as follows:
+FORMULA 
+
+Interference Alignment through Channel Design
+With the exception of this section, throughout this paper we assume that the channel coefficients are determined by nature, i.e. we do not control the channel values, and we only control the coding scheme, i.e. the transmitted symbols. However, in this section we take a different perspective to gain additional insights into the problem. We wish to know what is the best we can do if we are allowed to pick all the channel coefficient values subject to the only constraint that the coefficient values are finite, non-zero constants. It is important that we can only pick non-zero channel coefficient values because the FORMULA  outerbound applies if and only if all channel coefficients have non-zero values. For example, if we are allowed to set some channel coefficients to zero the problem becomes trivial because by setting all interfering links to zero we can easily achieve FORMULA  degrees of freedom over the FORMULA  non-interfering channels.
+Interference Alignment by Choice of Channel Coefficients
+As we show next, we can achieve FORMULA  degrees of freedom for the FORMULA  user interference channel with non-zero channel coefficients if we are allowed to pick the values of the channel coefficients. The proof is quite simple. We consider a two symbol extension of the channel, i.e. coding over two frequency slots, where the channel is defined by FORMULA  diagonal channel matrices that we choose as follows
+FORMULA 
+Each user transmits his coded symbols along the beamforming vector
+FORMULA 
+This ensures that all the interference terms at each receiver appear along the direction vector FORMULA  while the desired signal at each receiver appears along the direction FORMULA . Thus the desired signal and interference are orthogonal so that each user is able to achieve one degree of freedom for his message. Since FORMULA  degrees of freedom are achieved over the 2 symbol extension of the channel the degrees of freedom equal FORMULA . Thus, it is interesting to note that the FORMULA  outerbound is tight for some interference channels with non-zero channel coefficients. Since joint processing at all transmitters and at all receivers would result in FORMULA  degrees of freedom on the FORMULA  user interference channel, we observe that if we are allowed to pick the channel coefficients then the maximum penalty for distributed signal processing is the loss of half the degrees of freedom. It remains to be shown if this bound is tight when channel coefficients are chosen by nature, i.e. modeled as random variables drawn from a continuous distribution. As we show in the next section, the outerbound of FORMULA  is almost surely tight for the FORMULA  user interference channel.
+
+Interference alignment through choice of propagation delays - Can everyone speak half the time with no interference?
+We end this section with another interesting example of interference alignment.
+Consider the FORMULA  user interference channel where there is a propagation delay from each transmitter to each receiver. Let FORMULA  represent the signal propagation delay from transmitter FORMULA  to receiver FORMULA . Suppose the locations of the transmitters and receivers can be configured such that the delay FORMULA  from each transmitter to its intended receiver is an even multiple of a basic symbol duration FORMULA , while the signal propagation delays FORMULA  from each transmitter to all unintended receivers are odd multiples of the symbol duration. The communication strategy is the following. All transmissions occur simultaneously at even symbol durations. Note that with this policy, each receiver sees its own transmitter's signal interference-free over even time periods, while it sees all interfering signals simultaneously over odd time periods. Thus each user is able to achieve FORMULA  degrees of freedom and the total degrees of freedom achieved is equal to  FORMULA.
+
+ Degrees of Freedom for the FORMULA  User Interference Channel - Interference Alignment through Precoding 
+Henceforth, we assume that the channel coefficients are not controlled by the nodes but rather selected by nature. Thus, the channels do not automatically align the interference and any interference alignment can only be accomplished through code design. The following theorem presents the main result of this section.
+Theorem 1 
+The number of degrees of freedom for the FORMULA  user interference channel with single antennas at all nodes is FORMULA .
+FORMULA 
+
+The converse argument for the theorem follows directly from the outerbound for the FORMULA  user interference channel presented in {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}}. The achievability proof is presented next. Since the proof is rather involved, we present first the constructive proof for FORMULA . The proof for general FORMULA  is then provided in Appendix .
+Achievability Proof for Theorem REF  with  FORMULA
+We show that FORMULA  lies in the degrees of freedom region FORMULA . Since the degrees of freedom region is closed, this automatically implies that
+FORMULA 
+This result, in conjunction with the converse argument proves the theorem.
+To show that FORMULA  lies in FORMULA , we construct an interference alignment scheme using only FORMULA  frequency slots. We collectively denote the FORMULA  symbols transmitted over the first FORMULA  frequency slots at each time instant as a supersymbol. We call this the FORMULA  symbol extension of the channel. With the extended channel, the signal vector at the FORMULA  user's receiver can be expressed as
+FORMULA 
+where FORMULA  is a FORMULA  column vector representing the FORMULA  symbol extension of the transmitted symbol FORMULA , i.e
+FORMULA 
+Similarly FORMULA  and FORMULA  represent FORMULA  symbol extensions of the FORMULA  and FORMULA  respectively.
+FORMULA  is a diagonal FORMULA  matrix representing the FORMULA  symbol extension of the channel i.e
+FORMULA 
+Recall that we assume that the channel coefficient values for each frequency slot are chosen independently from a continuous distribution. Thus, all the diagonal channel matrices FORMULA  are comprised of all distinct diagonal elements with probability 1.
+We show that FORMULA  is achievable on this extended channel implying that FORMULA  lies in the degrees of freedom region of the original channel.
+In the extended channel, message FORMULA  is encoded at transmitter 1 into FORMULA  independent streams FORMULA  sent along vectors FORMULA  so that FORMULA  is
+FORMULA 
+where FORMULA  is a FORMULA  column vector and FORMULA  is a FORMULA  dimensional matrix.
+Similarly FORMULA  and FORMULA  are each encoded into FORMULA  independent streams by transmitters 2 and 3 as FORMULA  and FORMULA  respectively.
+FORMULA 
+FORMULA 
+The received signal at the FORMULA  receiver can then be written as
+FORMULA 
+In this achievable scheme, receiver FORMULA  eliminates interference by zero-forcing all FORMULA  to decode FORMULA . At receiver 1, FORMULA  desired streams are decoded after zero-forcing the interference to achieve FORMULA  degrees of freedom. To obtain FORMULA  interference free dimensions from a FORMULA  dimensional received signal vector FORMULA , the dimension of the interference should be not more than FORMULA . This can be ensured by perfectly aligning the interference from transmitters 2 and 3 as follows.
+FORMULA 
+At the same time, receiver 2 zero-forces the interference from FORMULA  and FORMULA . To extract FORMULA  interference-free dimensions from a FORMULA  dimensional vector, the dimension of the interference has to be not more than FORMULA .
+i.e.
+FORMULA 
+This can be achieved by choosing FORMULA  and FORMULA  so that
+FORMULA 
+where FORMULA , means that the set of column vectors of matrix FORMULA  is a subset of the set of column vectors of matrix FORMULA .
+Similarly, to decode FORMULA  at receiver 3, we wish to choose FORMULA  and FORMULA  so that
+FORMULA 
+Thus, we wish to pick vectors FORMULA , FORMULA  and FORMULA  so that equations (REF ), (REF ), (REF ) are satisfied.
+Note that the channel matrices FORMULA  have a full rank of FORMULA  almost surely. Since multiplying by a full rank matrix (or its inverse) does not affect the conditions represented by equations (REF ), (REF ) and (REF ), they can be equivalently expressed as
+FORMULA 
+where
+FORMULA 
+Note that FORMULA  is a FORMULA  matrix. FORMULA  and FORMULA  are FORMULA  matrices. Since all channel matrices are invertible, we can choose FORMULA , FORMULA  and FORMULA  so that they satisfy equations (REF )-() and then use equations (REF )-() to find FORMULA ,FORMULA  and FORMULA . FORMULA , FORMULA , FORMULA  are picked as follows. Let FORMULA  be the FORMULA  column vector
+FORMULA 
+We now choose FORMULA , FORMULA  and FORMULA  as:
+FORMULA 
+It can be easily verified that FORMULA , FORMULA  and FORMULA  satisfy the three equations (REF )-(). Therefore, FORMULA , FORMULA  and FORMULA  satisfy the interference alignment equations in (REF ), (REF ) and (REF ).
+Now, consider the received signal vectors at Receiver 1. The desired signal arrives along the FORMULA  vectors FORMULA  while the interference arrives along the FORMULA  vectors FORMULA  and the FORMULA  vectors FORMULA . As enforced by equation (REF ) the interference vectors are perfectly aligned. Therefore, in order to prove that there are FORMULA  interference free dimensions it suffices to show that the columns of the square, FORMULA  dimensional matrix
+FORMULA 
+are linearly independent almost surely. Multiplying by the full rank matrix FORMULA  and substituting the values of FORMULA , equivalently we need to show that almost surely
+FORMULA 
+has linearly independent column vectors where FORMULA  is a diagonal matrix. In other words, we need to show FORMULA  with probability 1. The proof is obtained by contradiction. If possible, let FORMULA  be singular with non-zero probability. i.e, FORMULA . Further, let the diagonal entries of FORMULA  be FORMULA  and the diagonal entries of FORMULA  be FORMULA . Then the following equation is true with non-zero probability.
+FORMULA 
+Let FORMULA  indicate the cofactor of the FORMULA th row and FORMULA th column of FORMULA .
+Expanding the determinant along the first row, we get
+FORMULA 
+None of `co-factor' terms FORMULA  in the above expansion depend FORMULA  and FORMULA . If all values other than FORMULA  are given, then the above is a linear equation in FORMULA . Now, FORMULA  implies one of the following two events
+
+FORMULA  is a root of the linear equation.
+
+All the coefficients forming the linear equation in FORMULA  are equal to 0, so that the singularity condition is trivially satisfied for all values of FORMULA .
+
+Since FORMULA  is a random variable drawn from a continuous distribution, the probability of FORMULA  taking a value which is equal to the root of this linear equation is zero. Therefore, the second event happens with probability greater than 0 and we can write,
+FORMULA 
+Consider the equation
+FORMULA 
+Since the terms FORMULA  do not depend on FORMULA , the above equation is a polynomial of degree FORMULA  in FORMULA . Again, as before, there are two possibilities. The first possibility is that FORMULA  takes a value equal to one of the FORMULA  roots of the above equation. Since FORMULA  is drawn from a continuous distribution, the probability of this event happening is zero.
+The second possibility is that all the coefficients of the above polynomial are zero with non-zero probability and we can write
+FORMULA 
+We have now shown that if the determinant of the FORMULA  matrix FORMULA  is equal to 0 with non-zero probability, then the determinant of following FORMULA  matrix (obtained by stripping off the first row and last column of FORMULA  is equal to 0 with non-zero probability.
+FORMULA 
+with probability greater than 0.
+Repeating the above argument and eliminating the first row and last column at each stage we get
+FORMULA 
+with probability greater than 0. But this is a Vandermonde matrix and its determinant
+FORMULA 
+is equal to 0 only if FORMULA  for some FORMULA . Since FORMULA  are drawn independently from a continuous distribution, they are all distinct almost surely. This implies that FORMULA .
+Thus, the FORMULA  vectors carrying the desired signal at receiver 1 are linearly independent of the FORMULA  interference vectors which allows the receiver to zero force interference and obtain FORMULA  interference free dimensions, and therefore FORMULA  degrees of freedom for its message.
+At receiver 2 the desired signal arrives along the FORMULA  vectors FORMULA  while the interference arrives along the FORMULA  vectors FORMULA  and the FORMULA  vectors FORMULA . As enforced by equation (REF ) the interference vectors FORMULA  are perfectly aligned within the interference vectors FORMULA . Therefore, in order to prove that there are FORMULA  interference free dimensions at receiver 2 it suffices to show that the columns of the square, FORMULA  dimensional matrix
+FORMULA 
+are linearly independent almost surely. This proof is quite similar to the proof presented above for receiver 1 and is therefore omitted to avoid repetition. Using the same arguments we can show that both receivers 2 and 3 are able to zero force the FORMULA  interference vectors and obtain FORMULA  interference free dimensions for their respective desired signals so that they each achieve FORMULA  degrees of freedom.
+Thus we established the achievability of FORMULA  for any FORMULA . This scheme, along with the converse automatically imply that
+FORMULA 
+
+The Degrees of Freedom Region for the 3 User Interference Channel
+Theorem 2 
+The degrees of freedom region of the 3 user interference channel is characterized as follows:
+FORMULA 
+
+FIGURE 
+     Proof: 
+The converse argument is identical to the converse argument for Theorem REF  and is therefore omitted. We show achievability as follows. Let FORMULA  be the degrees of freedom region of the 3 user interference channel. We need to prove that FORMULA . We show that FORMULA  which along with the converse proves the stated result.
+The points FORMULA , FORMULA , FORMULA  can be verified to lie in FORMULA  through trivial achievable schemes. Also, Theorem REF  implies that FORMULA  lies in FORMULA  (Note that this is the only point which achieves a total of FORMULA  degrees of freedom and satisfies the inequalities in ().
+Consider any point FORMULA  as defined by the statement of the theorem. The point FORMULA  can then be shown to lie in a convex region whose corner points are FORMULA , J, K, L and N. i.e FORMULA  can be expressed as a convex combination of the end points (see Fig. REF ).
+FORMULA 
+where the constants FORMULA  are defined as follows.
+FORMULA 
+It is easily verified that the values of FORMULA  are non-negative for all FORMULA  and that they add up to one. Thus, all points in FORMULA  are convex combinations of achievable points FORMULA  and FORMULA . Since convex combinations are achievable by time sharing between the end points, this implies that FORMULA . Together with the converse, we have FORMULA  and the proof is complete.
+Note that the proof presented above uses coding over multiple frequency slots where the channel coefficients take distinct values. We now examine the possible ramifications of this assumption both from a theoretical as well as a practical perspective.
+From a theoretical perspective the assumption of frequency selective channels is intriguing because it is not clear if FORMULA  degrees of freedom will be achieved with constant channels over only one frequency slot. Therefore the validity of the conjecture in {{cite:1eceddb6-c52e-406d-bf52-e8b838a3fb23}} that the interference channel with constant channel coefficients has only 1 degree of freedom for any number of users still remains undetermined. The issue is analogous to the 2 user FORMULA  channel with a single antenna at all nodes. It is shown in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} that the time/frequency varying MIMO FORMULA  channel has FORMULA  degrees of freedom per time/frequency dimension. However, it is not known whether the FORMULA  channel with single antenna nodes and constant channel coefficients can achieve more than 1 degree of freedom.
+From a practical perspective, we present several observations.
+
+The assumption that the channel coefficients vary over frequency is not restrictive as it holds true in practice for almost all wireless channels. Moreover, note that it is not necessary that the channel coefficients are independent across frequency slots. It suffices that they are chosen according to a continuous joint distribution.
+
+We have shown that by coding over FORMULA  frequency slots, we can achieve FORMULA  degrees of freedom on the 3 user interference channel. The fact that only a finite number of frequency slots suffice to achieve a certain number of degrees of freedom may be significant in practice. On the other hand if non-causal channel knowledge is not an issue and the channel is time varying then only one frequency slot suffices for this achievability proof.
+
+Recall that for the 2 user FORMULA  channel, time and frequency variations are not needed when more than 1 antenna is present at each node. Similarly, we will show in Section  that with FORMULA  antennas at each node the 3 user interference channel with constant channel matrices has FORMULA  degrees of freedom.
+
+Before considering the MIMO case with constant channel matrices we visit the issue of FORMULA  capacity.
+
+The FORMULA  Capacity of Wireless Networks
+Consider a multiuser wireless channel with transmit power FORMULA , noise power normalized to unity, and sum capacity FORMULA . The degrees of freedom FORMULA  provide a capacity approximation that is accurate within FORMULA , i.e.,
+FORMULA 
+where the little "o" notation is defined as follows:
+FORMULA 
+Similarly, one can define a capacity characterization FORMULA , that is accurate to within an FORMULA  term,
+FORMULA 
+so that we can write
+FORMULA 
+While the FORMULA  notation implies an asymptotic approximation as FORMULA , it is easy to see that for all communication networks, if the FORMULA  capacity characterization is known, then one can find a capacity characterization that is within a constant of the capacity for all FORMULA . This is because the capacity FORMULA  is a non-negative, monotonically increasing function of the transmit power FORMULA . This is seen as follows. Let FORMULA  be an FORMULA  capacity characterization. Mathematically, FORMULA , such that
+FORMULA 
+Then we can construct a capacity characterization FORMULA  that is accurate to within a constant for all FORMULA  as follows:
+FORMULA 
+such that the absolute value of the difference between the capacity FORMULA  and FORMULA  is bounded above by FORMULA .
+Clearly, the FORMULA  capacity provides in general a more accurate capacity characterization than the degrees of freedom definition. However, it turns out that in most cases the two are directly related. For example, it is well known that for the full rank MIMO channel with FORMULA  input antennas and FORMULA  output antennas, transmit power FORMULA  and i.i.d. zero mean unit variance additive white Gaussian noise (AWGN) at each receiver, the capacity FORMULA  may be expressed as:
+FORMULA 
+As formalized by the following theorem, a similar relationship between the degrees of freedom and the FORMULA  capacity characterization also holds for most multiuser communication channels.
+Theorem 3 For the MIMO multiple access channel, the MIMO broadcast channel, the two user MIMO interference channel and the 2 user MIMO FORMULA  channel, an FORMULA  characterization of the sum capacity can be obtained in terms of the total number of degrees of freedom as follows:
+FORMULA 
+
+     Proof: 
+Since the proof is quite simple, we only present a brief outline as follows. For the MIMO MAC and BC, the outerbound on sum capacity obtained from full cooperation among the distributed nodes is FORMULA . The innerbound obtained from zero forcing is also FORMULA  so that we can write FORMULA . For the two user MIMO interference channel and the 2 user MIMO FORMULA  channel the outerbound is obtained following an extension of Carlieal's outerbound which results in a MIMO MAC channel. The innerbound is obtained from zero forcing. Since both of these bounds are within FORMULA  of FORMULA  we can similarly write FORMULA .
+Finally, consider the FORMULA  user interference channel with single antennas at each node. In this case we have only shown:
+FORMULA 
+Consider a hypothetical capacity function FORMULA . Such a capacity function would also satisfy the inner and outerbounds provided above for the FORMULA  user interference channel and has FORMULA  degrees of freedom. However, this hypothetical capacity function does not have a FORMULA  capacity characterization equal to FORMULA  as the difference between FORMULA  and FORMULA  is unbounded. To claim that the FORMULA  capacity of the 3 user interference channel is FORMULA  we need to show an innerbound of FORMULA . Since our achievable schemes are based on interference alignment and zero forcing, the natural question to ask is whether an interference alignment and zero forcing based scheme can achieve exactly FORMULA  degrees of freedom. The following explanation uses the FORMULA  case to suggest that the answer is negative.
+Consider an achievable scheme that uses a FORMULA  symbol extension of the channel. Now, consider a point FORMULA  that can be achieved over this extended channel using interference alignment and zero-forcing alone.
+If possible, let the total degrees of freedom over this extended channel be FORMULA . i.e. FORMULA . It can be argued along the same lines as the converse part of Theorem REF  that FORMULA  is achievable in the 2 user interference channel for FORMULA .
+Therefore
+FORMULA 
+FORMULA 
+FORMULA 
+It can be easily seen that the only point FORMULA  that satisfies the above inequalities and achieves a total of FORMULA  degrees of freedom is FORMULA . Therefore, any scheme that achieves a total of FORMULA  degrees of freedom over the extended channel achieves the point FORMULA .
+We assume that the messages FORMULA  are encoded along FORMULA  independent streams similar to the coding scheme in the proof of Theorem REF  i.e.
+FORMULA 
+Now, at receiver 1, to decode an FORMULA  dimensional signal using zero-forcing, the dimension of the interference has to be at most FORMULA .
+i.e.,
+FORMULA 
+Note that since FORMULA  has FORMULA  linearly independent column vectors and FORMULA  is full rank with probability 1, FORMULA . Similarly the dimension of the interference from transmitter 3 is also equal to FORMULA . Therefore, the two vector spaces on the left hand side of equation (REF ) must have full intersection, i.e
+FORMULA 
+where FORMULA  represents the space spanned by the column vectors of matrix FORMULA 
+The above equations imply that
+FORMULA 
+FORMULA 
+where FORMULA . The above equation implies that there exists at least one eigenvector FORMULA  of FORMULA  in FORMULA . Note that since all channel matrices are diagonal, the set of eigenvectors of all channel matrices, their inverses and their products are all identical to the set of column vectors of the identity matrix. i.e vectors of the form FORMULA . Therefore FORMULA  is an eigenvector for all channel matrices. Since FORMULA  lies in FORMULA , equations (REF )-() imply that
+FORMULA 
+Therefore, at receiver 1, the desired signal FORMULA  is not linearly independent with the interference FORMULA . Therefore, receiver 1 cannot decode FORMULA  completely by merely zero-forcing the interference signal. Evidently, interference alignment in the manner described above cannot achieve exactly FORMULA  degrees of freedom on the 3 user interference channel with a single antenna at all nodes.
+Thus, the degrees of freedom for the 3 user interference channel with FORMULA  do not automatically lead us to the FORMULA  capacity. The possibility that the sum capacity of the 3 user interference channel with single antennas at all nodes may not be of the form FORMULA  is interesting because it suggests that the 3 user interference channel capacity may not be a straighforward extension of the 2 user interference channel capacity characterizations.
+We explore this interesting aspect of the 3 user interference channel further in the context of multiple antenna nodes. Our goal is to find out if exactly FORMULA  degrees of freedom may be achieved with FORMULA  antennas at each node. As shown by the following theorem, indeed we can achieve exactly FORMULA  degrees of freedom so that the FORMULA  capacity characterization for FORMULA  is indeed related to the degrees of freedom as FORMULA .
+
+Degrees of freedom of the 3 user interference channel with FORMULA  antennas at each node and constant channel coefficients
+The 3 user MIMO interference channel is interesting for two reasons. First we wish to show that with multiple antennas we can achieve FORMULA  degrees of freedom with constant channel matrices, i.e., multiple frequency slots are not required. Second, we wish to show that exactly FORMULA  degrees of freedom are achieved by zero forcing and interference alignment which gives us a lowerbound on sum capacity of FORMULA . Since the outerbound on sum capacity is also FORMULA  we have an FORMULA  approximation to the capacity of the 3 user MIMO interference channel with FORMULA  antennas at all nodes.
+Theorem 4 
+In a 3 user interference channel with FORMULA  antennas at each transmitter and each receiver and constant coefficients, the sum capacity FORMULA  may be characterized as:
+FORMULA 
+
+The proof is presented in Appendices  and .
+
+Cognitive Message Sharing on the 3 user Interference Channel
+Cognitive message sharing refers to a form of cooperation between transmitters and/or receivers where the message of one user is made available non-causally to the transmitter or receiver of another user. Degrees of freedom with cognitive cooperation are considered in {{cite:c92e82bd-0d97-4fce-b5f8-2c18ecf7f041}} and {{cite:e66ffbb0-756f-4d78-a330-c2ca6418f4dc}}. It is shown in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} that for the two user interference channel with equal number FORMULA  of antennas at all nodes there is no gain in degrees of freedom when one user has a cognitive transmitter, a cognitive receiver or both. In all these cases the total degrees of freedom equals FORMULA . However the full FORMULA  degrees of freedom are obtained if both users have a cognitive transmitter, or both users have a cognitive receiver, or one user has a cognitive transmitter and the other user has a cognitive receiver. In this section we generalize this result to the three user interference channel.
+To generalize the result we introduce some notation. Let FORMULA  be defined as the set of messages available non-causally at transmitter FORMULA  and receiver FORMULA . Let us also define FORMULA  as the set containing the message intended for receiver FORMULA  and also the messages non-causally available at receiver FORMULA . With no cognitive sharing of messages FORMULA . Further, let us define FORMULA .
+The following theorem presents the total number of degrees of freedom for some interesting cognitive message sharing scenarios.
+Theorem 5 
+The total number of degrees of freedom FORMULA  for the 3 user interference channel under various cognitive message sharing scenarios are determined as follows:
+
+If only one message (e.g. FORMULA ) is shared among all nodes the degrees of freedom are unchanged.
+FORMULA 
+Note that this includes all scenarios where message FORMULA  is made available to only the transmitter, only the receiver or both transmitter and receiver of users 2 and 3. In all these cases, there is no benefit in terms of degrees of freedom.
+
+If two messages (e.g. FORMULA ) are shared among all nodes then we have 2 degrees of freedom.
+FORMULA 
+Note that the messages FORMULA  may be shared through cognitive transmitters, receivers or both.
+
+If only one receiver (e.g. receiver 3) is fully cognitive then we have FORMULA  degrees of freedom.
+FORMULA 
+
+If only one transmitter (e.g. transmitter 3) is fully cognitive then we have 2 degrees of freedom.
+FORMULA 
+
+
+The last two cases are significant as they show the distinction between cognitive transmitters and cognitive receivers that was not visible in the two user interference channel studied in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}}. In {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}} it was shown that from a degree of freedom perspective, cognitive transmitters are equivalent to cognitive receivers for the two user interference channel. However, cases 3 and 4 above show that cognitive transmitters may be more powerful than cognitive receivers. Intuitively, a cognitive receiver with no message of its own is useless whereas a cognitive transmitter with no message of its own is still useful.
+     Proof: 
+
+Consider the case where FORMULA  is shared with either the transmitter or receiver (or both) of user 2 and user 3. Now, with FORMULA  we have a two user interference channel with no cognitive message sharing which gives us the outerbound FORMULA . For the next outerbound, set FORMULA  and let the transmitter of user 2 cooperate with the transmitter of user 1 as a two antenna transmitter. We now have a two user cognitive interference channel with user 1 as the primary user (with two transmit antennas and one receive antenna) and user 3 with the cognitive transmitter, cognitive receiver or both. Using the standard MAC outerbound argument it is easily seen that by reducing the noise at receiver 1 we must be able to decode both messages FORMULA  at receiver 1. This gives us the outerbound FORMULA . Similarly, we obtain the outerbound FORMULA . Adding up the three outerbound we have FORMULA . Since FORMULA  degrees of freedom are achievable even without any cognitive cooperation, we have FORMULA . Note that this result is easily extended to FORMULA  users, i.e. with only one message shared among all nodes the degrees of freedom are not increased.
+
+For achievability, set FORMULA  and let transmitter 3 stay silent. Then we have a cognitive two user interference channel with two shared messages which has 2 degrees of freedom as established in {{cite:173ea9d5-bef2-4044-8f1e-82574b76a56d}}. For the converse argument let transmitter 1 and 2 cooperate as a two antenna transmitter FORMULA  and receiver 1 and 2 cooperate as a two antenna receiver FORMULA . Then we have a two user cognitive interference channel where the primary user has two transmit and two receive antennas while the cognitive user has a single transmit antenna and a single receive antenna. Once again, the standard MAC outerbound argument is used to show that by reducing noise at the primary receiver, we must be able to decode all messages at the primary receiver. This gives us the outerbound FORMULA . Since the inner and outerbounds agree, FORMULA .
+
+Achievability of FORMULA  degrees of freedom is trivial as no cognitive message sharing is required. For the converse, setting FORMULA  to FORMULA  one at a time leads to the two user cognitive interference channel with one shared message for which the degrees of freedom are bounded above by 1. Adding the three outerbounds we conclude that FORMULA . This result is also easily extended to the FORMULA  user interference channel.
+
+For achievability, set FORMULA . Then we have a two user interference channel with a cognitive helper (transmitter 3) who knows both user's messages. Two degrees of freedom are achieved easily on this channel as transmitters 1 and 3 cooperate to zero force the transmission of FORMULA  at receiver 2, while transmitters 2 and 3 cooperate to zero force the transmission of FORMULA  at receiver 1. By eliminating interference at receivers 1 and 2, we have two degrees of freedom. The converse follows directly from the converse for part 2, so that we have FORMULA .
+
+
+Conclusion
+We have shown that with perfect channel knowledge the FORMULA  user interference channel has FORMULA  spatial degrees of freedom. Conventional wisdom has so far been consistent with the conjecture that distributed interfering systems cannot have more than 1 degree of freedom and therefore the best known outerbound FORMULA  has not been considered significant. This pessimistic outlook has for long invited researchers to try to prove that more than 1 degree of freedom is not possible while ignoring the FORMULA  outerbound. The present result shifts the focus onto the outerbound by proving that it is tight if perfect and global channel knowledge is available. Thus, the present result could guide future research along an optimistic path in the same manner that MIMO technology has shaped our view of the capacity of a wireless channel. There are several promising directions for future work. From a practical perspective it is important to explore to what extent interference alignment can be accomplished with limited channel knowledge. Simpler achievability schemes are another promising avenue of research. For example, the interference alignment scheme based on different propagation delays that we presented in this paper is an exciting possibility as it only requires a careful placing of interfering nodes to satisfy certain delay constraints.
+
+Achievability for Theorem REF  for arbitrary FORMULA  
+Let FORMULA . We show that FORMULA  lies in the degrees of freedom region of the FORMULA  user interference channel for any FORMULA  where
+FORMULA 
+This implies that
+FORMULA 
+We provide an achievable scheme to show that FORMULA  lies in the degrees of freedom region of an FORMULA  symbol extension of the original channel which automatically implies the desired result.
+In the extended channel, the signal vector at the FORMULA  user's receiver can be expressed as
+FORMULA 
+where FORMULA  is an FORMULA  column vector representing the FORMULA  symbol extension of the transmitted symbol FORMULA , i.e
+FORMULA 
+Similarly FORMULA  and FORMULA  represent FORMULA  symbol extensions of the FORMULA  and FORMULA  respectively.
+FORMULA  is a diagonal FORMULA  matrix representing the FORMULA  symbol extension of the channel i.e
+FORMULA 
+Recall that the diagonal elements of FORMULA  are drawn independently from a continuous distribution and are therefore distinct with probability 1.
+In a manner similar to the FORMULA  case, message FORMULA  is encoded at transmitter 1 into FORMULA  independent streams FORMULA  along vectors FORMULA  so that FORMULA  is
+FORMULA 
+where FORMULA  is a FORMULA  column vector and FORMULA  is a FORMULA  dimensional matrix.
+Similarly FORMULA  is encoded into FORMULA  independent streams by transmitter FORMULA  as
+FORMULA 
+The received signal at the FORMULA  receiver can then be written as
+FORMULA 
+All receivers decode the desired signal by zero-forcing the interference vectors. At receiver 1, to obtain FORMULA  interference free dimensions corresponding to the desired signal from an FORMULA  dimensional received signal vector FORMULA , the dimension of the interference should be not more than FORMULA . This can be ensured by perfectly aligning the interference from transmitters FORMULA  as follows
+FORMULA 
+At the same time, receiver 2 zero-forces the interference from FORMULA . To extract FORMULA  interference-free dimensions from a FORMULA  dimensional vector, the dimension of the interference has to be not more than FORMULA .
+This can be achieved by choosing FORMULA  so that
+FORMULA 
+Notice that the above relations align the interference from FORMULA  transmitters within the interference from transmitter 1 at receiver 2.
+Similarly, to decode FORMULA  at receiver FORMULA  when FORMULA  we wish to choose FORMULA  so that the following FORMULA  relations are satisfied.
+FORMULA 
+We now wish to pick vectors FORMULA  so that equations (REF ), (REF ) and (REF ) are satisfied.
+Since channel matrices FORMULA  have a full rank of FORMULA  almost surely, equations (REF ), (REF ) and (REF ) can be equivalently expressed as
+FORMULA 
+where
+FORMULA 
+Note that FORMULA , the FORMULA  identity matrix.
+We now choose FORMULA  and FORMULA  so that they satisfy the FORMULA  relations in ()-() and then use equations in (REF ) to determine FORMULA . Thus, our goal is to find matrices FORMULA  and FORMULA  so that
+FORMULA 
+for all FORMULA .
+Let FORMULA  be the FORMULA  column vector
+FORMULA 
+We need to choose FORMULA  column vectors for FORMULA . The sets of column vectors of FORMULA  and FORMULA  are chosen to be equal to the sets FORMULA  and FORMULA  where
+FORMULA 
+FORMULA 
+For example, if FORMULA  we get FORMULA . FORMULA  and FORMULA  are chosen as
+FORMULA 
+To clarify the notation further, consider the case where FORMULA . Assuming FORMULA , FORMULA  consists of exactly one element i.e FORMULA . The set FORMULA  consists of all FORMULA  column vectors of the form
+ FORMULA
+where all FORMULA  take values FORMULA . FORMULA  and FORMULA  can be verified to have FORMULA  and FORMULA  elements respectively.
+FORMULA  are chosen using equations (REF ).
+Clearly, for FORMULA ,
+FORMULA 
+Now, for  FORMULA
+FORMULA 
+Thus, the interference alignment equations (REF )-() are satisfied.
+Through interference alignment, we have now ensured that the dimension of the interference is small enough. We now need to verify that the components of the desired signal are linearly independent of the components of the interference so that the signal stream can be completely decoded by zero-forcing the interference.
+Consider the received signal vectors at Receiver 1. The desired signal arrives along the FORMULA  vectors FORMULA . As enforced by equations (REF ), the interference vectors from transmitters FORMULA  are perfectly aligned with the interference from transmitter 2 and therefore, all interference arrives along the FORMULA  vectors FORMULA . In order to prove that there are FORMULA  interference free dimensions it suffices to show that the columns of the square, FORMULA  dimensional matrix
+FORMULA 
+are linearly independent almost surely. Multiplying the above FORMULA  matrix with FORMULA  and substituting for FORMULA  and FORMULA , we get a matrix whose FORMULA th row has entries of the forms
+FORMULA 
+and
+FORMULA 
+where FORMULA  and FORMULA  and FORMULA  are drawn independently from a continuous distribution.
+The same iterative argument as in section REF  can be used. i.e. expanding the corresponding determinant along the first row, the linear independence condition boils down to one of the following occurring with non-zero probability
+
+FORMULA  being equal to one of the roots of a linear equation
+
+The coefficients of the above mentioned linear equation being equal to zero
+
+Thus the iterative argument can be extended here, stripping the last row and last column at each iteration and the linear independence condition can be shown to be equivalent to the linear independence of a FORMULA  matrix whose rows are of the form
+FORMULA 
+where FORMULA .
+Note that this matrix is a more general version of the Vandermonde matrix obtained in section REF . So the argument for the FORMULA  case does not extend here. However, the iterative procedure which eliminated the last row and the last column at each iteration, can be continued. For example, expanding the determinant along the first row, the singularity condition simplifies to one of
+
+FORMULA  being equal to one of the roots of a finite degree polynomial
+
+The coefficients of the above mentioned polynomial being equal to zero
+
+Since the probability of condition 1 occurring is 0, condition 2 must occur with non-zero probability. Condition 2 leads to a polynomial in another random variable FORMULA  and thus the iterative procedure can be continued until the linear independence condition is shown to be equivalent almost surely to a FORMULA  matrix being equal to 0. Assuming, without loss of generality, that we placed the FORMULA  in the first row (this corresponds to the term FORMULA ), the linear independence condition boils down to the condition that FORMULA  with non-zero probability - an obvious contradiction. Thus the matrix
+FORMULA 
+can be shown to be non-singular with probability 1.
+Similarly, the desired signal can be chosen to be linearly independent of the interference at all other receivers almost surely. Thus FORMULA  lies in the degrees of freedom region of the FORMULA  user interference channel and therefore, the FORMULA  user interference channel has FORMULA  degrees of freedom.
+
+Proof of Theorem REF  for FORMULA  even
+     Proof: 
+The outerbound is straightforward as before.
+To prove achievability we first consider the case when FORMULA  is even. Through an achievable scheme, we show that there are FORMULA  non-interfering paths between transmitter FORMULA  and receiver FORMULA  for each FORMULA  resulting in a total of FORMULA  paths in the network.
+Transmitter FORMULA  transmits message FORMULA  for receiver FORMULA  using FORMULA  independently encoded streams over vectors FORMULA  i.e
+FORMULA 
+The signal received at receiver FORMULA  can be written as
+FORMULA 
+All receivers cancel the interference by zero-forcing and then decode the desired message. To decode the FORMULA  streams along the column vectors of FORMULA  from the FORMULA  components of the received vector, the dimension of the interference has to be less than or equal to FORMULA .
+The following three interference alignment equations ensure that the dimension of the interference is equal to FORMULA  at all the receivers.
+FORMULA 
+where FORMULA  represents the vector space spanned by the column vectors of matrix FORMULA 
+We now wish to choose FORMULA  so that the above equations are satisfied. Since FORMULA  have a full rank of FORMULA  almost surely, the above equations can be equivalently represented as
+FORMULA 
+where
+FORMULA 
+Let FORMULA  be the FORMULA  eigenvectors of FORMULA . Then we set FORMULA  to be
+FORMULA 
+Then FORMULA  and FORMULA  are found using equations (REF )-(). Clearly, FORMULA  satisfy the desired interference alignment equations (REF )-().
+Now, to decode the message using zero-forcing, we need the desired signal to be linearly independent of the interference at the receivers. For example, at receiver 1, we need the columns of FORMULA  to be linearly independendent with the columns of FORMULA  almost surely. i.e we need the matrix below to be of full rank almost surely
+FORMULA 
+Substituting values for FORMULA  and FORMULA  in the above matrix, and multiplying by full rank matrix FORMULA , the linear independence condition is equivalent to the condition that the column vectors of
+FORMULA 
+are linearly independent almost surely, where FORMULA .
+This is easily seen to be true because FORMULA  is a random (full rank) linear transformation. To get an intuitive understanding of the linear independence condition, consider the case of FORMULA . Let FORMULA  represent the line along which lies the first eigenvector of the random FORMULA  matrix FORMULA . The probability of a random rotation (and scaling) FORMULA  of FORMULA  being collinear with FORMULA  is zero.
+Using a similar argument, we can show that matrices
+FORMULA 
+have a full rank of FORMULA  almost surely and therefore receivers 2 and 3 can decode the FORMULA  streams of FORMULA  and FORMULA  using zero-forcing. Thus, a total FORMULA  interference free transmissions per channel-use are achievable with probability 1 and the proof is complete.
+
+Proof of Theorem REF  for FORMULA  odd
+     Proof: 
+Consider a two time-slot symbol extension of the channel, with the same chanel coefficients over the two symbols. It can be expressed as
+FORMULA 
+where FORMULA  is a FORMULA  vector that represents the two symbol extension of the transmitted FORMULA  symbol symbol FORMULA , i.e
+FORMULA 
+where FORMULA  is an FORMULA  vector representing the vector transmitted at time slot FORMULA  by transmitter FORMULA . Similarly FORMULA  and FORMULA  represent the two symbol extensions of the the received symbol FORMULA  and the noise vector FORMULA  respectively at receiver FORMULA .
+FORMULA  is a FORMULA  block diagonal matrix representing the extension of the channel.
+FORMULA 
+We will now show FORMULA  lies in the degrees of freedom region of this extended channel channel with an achievable scheme, implying that that a total of FORMULA  degrees of freedom are achievable over the original channel.
+Transmitter FORMULA  transmits message FORMULA  for receiver FORMULA  using FORMULA  independently encoded streams over vectors FORMULA  i.e
+FORMULA 
+where FORMULA  is a FORMULA  matrix and FORMULA  is a FORMULA  vector representing FORMULA  independent streams.
+The following three interference alignment equations ensure that the dimension of the interference is equal to FORMULA  at receivers 1,2 and 3.
+FORMULA 
+The above equations imply that
+FORMULA 
+where
+FORMULA 
+and FORMULA , FORMULA  and FORMULA  are FORMULA  block-diagonal matrices representing the FORMULA  symbol extension of FORMULA , FORMULA  and FORMULA  respectively.
+Let FORMULA  be the eigen vectors of FORMULA . Then, we pick FORMULA  to be
+FORMULA 
+As in the even FORMULA  case, FORMULA  and FORMULA  are then determined by using equations (REF )-().
+Now, we need the desired signal to be linearly independent of the interference at all the receivers. At receiver 1, the desired linear independence condition boils down to
+FORMULA 
+where FORMULA  and FORMULA  is the two-symbol diagonal extension of FORMULA . Notice that FORMULA  is an FORMULA  matrix. The linear independence condition is equivalent to saying that all the columns of the following FORMULA  matrix are independent.
+FORMULA 
+We now argue that the probability of the columns of the above matrix being linearly dependent is zero. Let FORMULA  denote the columns of the above matrix. Suppose the columns FORMULA  are linearly dependent, then
+FORMULA 
+Let
+FORMULA 
+Now, there are two possibilities
+
+FORMULA . This implies that either one of the following sets of vectors is linearly dependent.
+Note that both sets are can be expressed as the union of
+
+A set of FORMULA  eigen vectors of  FORMULA
+
+A random transformation FORMULA  of this set.
+
+An argument along the same lines as the even FORMULA  case leads to the conclusion that the probability of the union of the two sets listed above being linearly dependent in a FORMULA  dimensional space is zero.
+
+FORMULA  or FORMULA 
+This implies that
+FORMULA 
+FORMULA 
+Also
+FORMULA 
+FORMULA 
+Note that FORMULA  and FORMULA  are FORMULA  dimensional spaces. (The case where their dimensions are less than FORMULA  is handled in the first part). Also, FORMULA  and FORMULA  are drawn from completely different set of vectors. Therefore, the union of FORMULA  has a rank of FORMULA  almost surely. Equivalently FORMULA  has a dimension of FORMULA  almost surely. Since the set FORMULA  is drawn from an eigen vector FORMULA  that does not exist in either FORMULA  or FORMULA , the probability of the 2 dimensional space FORMULA  intersecting with the FORMULA  dimensional space FORMULA  is zero.
+For example, if FORMULA , let FORMULA  indicate the line formed by the intersection of the the two planes FORMULA  and FORMULA . The probability that line FORMULA  lies in the plane formed by FORMULA .
+Thus, the probability that the desired signal lies in the span of the interference is zero at receiver 1. Similarly, it can be argued that the desired signal is independent of the interference at receivers 2 and 3 almost surely. Therefore FORMULA  is achievable over the two-symbol extended channel. Thus FORMULA  degrees of freedom are achievable over the 3 user interference channel with FORMULA  antenna at each transmitting and receiving node.
+

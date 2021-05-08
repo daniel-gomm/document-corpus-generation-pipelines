@@ -1,0 +1,578 @@
+
+
+CERN-TH/2007-037
+
+Towards Functional Flows for Hierarchical Models
+Daniel F. LitimD.Litim@sussex.ac.uk, Daniel.Litim@cern.ch
+Department of Physcis and Astronomy
+University of Sussex, Brighton, BN1 9QH, U.K.
+Theory Group, Physics Division
+CERN, CH-1211 Geneva 23.
+Abstract
+The recursion relations of hierarchical models are studied and contrasted
+with functional renormalisation group equations in corresponding
+approximations. The formalisms are compared quantitatively for the Ising
+universality class, where the spectrum of universal eigenvalues at
+criticality is studied. A significant correlation amongst scaling
+exponents is pointed out and analysed in view of an underlying
+optimisation. Continuous functional flows are provided which match with
+high accuracy all known scaling exponents from Dyson's hierarchical model
+for discrete block-spin transformations. Implications of the results are
+discussed.
+
+
+1. Introduction
+Renormalisation group methods {{cite:3ef1ef4a-48e9-4da7-89a6-7c68ac6f992f}}, and in particular
+Wilson's renormalisation group {{cite:f166da5c-d6b2-4800-bc41-3ec606f7a437}},
+play an important role in the study of physical systems at strong coupling
+and/or large correlations lengths. Differential
+implementations of Wilson's idea
+{{cite:bccef19b-8619-4f1a-ad5b-5766fb2d1486}}, {{cite:34c349f1-27ec-4795-bfb3-2c7dd2c6413c}}, {{cite:efc1e244-f08a-45fa-a538-10996a4afe35}}, {{cite:8f110e6e-55f4-4646-ad85-9bf78b678d0e}}, {{cite:c68c8e51-4a3c-4d45-9c96-fb029121ad46}}, {{cite:e6aea2e1-badd-4ac5-a201-88e292b63892}}, {{cite:3954ca91-9610-4ce2-afd0-84205a47bee2}}, {{cite:e9cae39e-c71e-4443-8a76-21b4c9fc3566}} rely on an
+appropriately-introduced momentum cutoff leading to flow equations for running
+couplings and FORMULA -point functions, which can be studied with a large variety
+of analytical and numerical methods. Numerical stability and reliability in
+the results is ensured through powerful control and optimisation techniques
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:aba92f2b-d360-482a-90d8-07973b2da6a8}}. A different
+implementation of Wilson's idea is realised in hierarchical models of lattice
+scalar theories {{cite:778c0a4b-7bd9-4530-a192-3fb39990f866}}, {{cite:b7985927-84d2-4178-8213-48b5de7e02b2}}, {{cite:4e505941-4922-4355-a834-6837734beaf5}}, {{cite:c047f898-fa4c-476c-b88c-31cb19e99238}}, {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}. Hierarchical renormalisation group
+transformations are often discrete rather than continuous. Here,
+sophisticated numerical methods have been developed to extract the relevant
+physics, most notably for high-accuracy studies of scaling exponents for
+scalar models at criticality {{cite:6b4b155a-cccc-46c5-8418-34b3b1ff1e57}}, {{cite:d1a17a8e-abdd-4277-a1ca-40fa1f760946}}, {{cite:32d9e3c6-fd78-4b60-8e84-ad3ec42ba1dd}}
+and related theories (see {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}} and references therein).
+Given the close similarity of the underlying principles, it is natural to ask
+whether Wilsonian (functional) flows can be linked explicitly, and on a
+fundamental level, to hierarchical models. If so, this link would provide a
+number of benefits. It will make powerful functional and numerical methods
+available to the study of hierarchical models. Vice versa, the numerical tools
+for hierarchical models could be employed for functional flows in specific
+approximations. Furthermore, an explicit link may lead to a path integral
+representation of hierarchical models, allowing for systematic improvements
+beyond a standard kinetic term. Finally, well-developed optimisation
+techniques for functional flows could be taken over for hierarchical models as
+well.
+In the limit of continuous hierarchical block-spin transformations, an
+explicit link between Dyson's hierarchical model
+{{cite:778c0a4b-7bd9-4530-a192-3fb39990f866}}, {{cite:c047f898-fa4c-476c-b88c-31cb19e99238}} and the Wilson-Polchinski flow
+{{cite:4fdc441a-1d5f-4c70-9ecf-9b1e2af4e1d4}} in the local potential approximation has been
+established long ago by Felder {{cite:99903a80-bb66-47db-b0b3-e5ceabbe36ab}}. Following a conjecture of
+{{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, this link has been extended
+{{cite:23037c08-0155-47a1-918b-2b2d7409c5bd}}, {{cite:00f5dece-cf18-410e-9749-9d1911354e0d}} to include optimised versions
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}} of Wetterich's flow for the effective average
+action {{cite:5bf61fe4-dc4b-444e-944a-d0706cf9b8ca}}. These interrelations have recently been backed-up by
+extensive numerical studies of critical potentials and scaling exponents to
+high accuracy from either formalism {{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}}.
+In this paper, we evaluate the more general case and ask whether hierarchical
+models for discrete block-spin transformations are linked to functional flows
+with continuous renormalisation group transformations. We first contrast the
+basic setups for functional flows (Sec. 2), background field flows (Sec. 3),
+and hierarchical models (Sec. 4). At a Wilson-Fisher fixed point, underlying
+similarities and differences are worked out and compared for the leading
+scaling exponent (Sec. 5). An extensive numerical study of the eigenvalue
+spectrum of the Ising universality class from functional flows is performed
+(Sec. 6). A strong correlation of scaling exponents is established and
+analysed (Sec. 7). It is shown that specific functional flows match the
+leading and subleading scaling exponent from Dyson's hierarchical models for
+discrete transformation parameter to high accuracy (Sec. 8). We close with a
+discussion of the results and further implications (Sec. 9).
+2. Functional Flows
+Wilsonian (functional) flows integrate-out quantum fluctuations within a path
+integral representation of quantum field theory. In their simplest form, they
+are generated through a cutoff term quadratic in the field added to the
+Schwinger functional, where the (classical) action is replaced by FORMULA  and FORMULA . The
+infrared momentum cutoff FORMULA  ensures that the propagation of small
+momentum modes FORMULA  is suppressed, while the large momentum modes
+FORMULA  remain unaffected. Under an infinitesimal change in the Wilsonian
+(infrared) cutoff scale FORMULA , the effective action FORMULA  changes according
+to its functional flow, which reads (FORMULA )
+FORMULA 
+in the form put forward by Wetterich {{cite:5bf61fe4-dc4b-444e-944a-d0706cf9b8ca}}. The trace denotes a
+momentum integration and a summation over fields. The factor FORMULA 
+in the integrand is peaked in the vicinity of FORMULA . The cutoff
+function FORMULA  obeys FORMULA  as FORMULA , FORMULA  as
+FORMULA , and FORMULA  as FORMULA , and can be chosen
+freely elsewise, FORMULA  {{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}. It ensures that the flow is
+well-defined, thereby interpolating between an initial action FORMULA  at
+FORMULA  in the ultraviolet (UV) and the full quantum effective action
+FORMULA  in the infrared FORMULA .
+In addition to providing a momentum cutoff, the function FORMULA  also
+controls the stability and convergence of subsequent expansions
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:f5aa7c54-9214-4e35-99c6-590e48a89401}}. Therefore, it is
+possible to identify optimised momentum cutoffs – within given systematic
+expansions – which improve the physical result
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}. The construction of optimised
+cutoffs {{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:aba92f2b-d360-482a-90d8-07973b2da6a8}} is
+central to extract reliable results also in more complex theories including
+FORMULA  QCD {{cite:7e35d4de-2638-4d77-917d-8444356a2a42}}, quantum gravity {{cite:f4cfdb30-9913-4fbf-a8b8-be125a31816d}},
+thermal physics {{cite:efc1e244-f08a-45fa-a538-10996a4afe35}}, {{cite:8f110e6e-55f4-4646-ad85-9bf78b678d0e}}, {{cite:7249d21c-758d-4d98-b337-6d1c981e24e3}}
+and critical phenomena
+{{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}, {{cite:dabd8618-84d5-452b-880c-7940f48ba778}}, {{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}}.
+Below, we are interested in FORMULA  scalar theories at criticality, where we can
+sent the ultraviolet scale FORMULA . To leading order in the
+derivative expansion, the effective action reads FORMULA  and
+FORMULA . Introducing FORMULA  with FORMULA , we
+find
+FORMULA 
+with FORMULA  and FORMULA . An irrelevant
+constant originating from the angular integration has been rescaled into the
+potential and the fields. For the optimal cutoff FORMULA  with FORMULA , the
+flow reads {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}
+FORMULA 
+after an additional rescaling. This flow is integrated analytically in the
+limit of a large number of scalar fields {{cite:f62d9447-0a5e-4f61-8525-af819de59f5b}}. We note that the
+universal content of the flow (REF ) is equivalent to the
+Wilson-Polchinski flow in the local potential approximation
+{{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:23037c08-0155-47a1-918b-2b2d7409c5bd}}, {{cite:00f5dece-cf18-410e-9749-9d1911354e0d}}.
+3. Background Field Flows
+A different form of the flow (REF ) is obtained for momentum cutoffs which
+depend additionally on a background field FORMULA . Background fields are
+most commonly used for the study of gauge theories {{cite:3aadcf24-e84a-4319-ad38-4c560915692c}}, see
+{{cite:117fb28f-5b95-4082-ada6-a93abe8b18ee}}, {{cite:954e5f11-91d7-4140-b24b-a8dcf5050ba9}}, {{cite:f4cfdb30-9913-4fbf-a8b8-be125a31816d}} for applications. They have
+also been employed for a path integral derivation of (generalised) proper-time
+flows {{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}}, {{cite:7458e023-6632-4ef6-9167-f73412370565}}.
+In the presence of background fields, the functional FORMULA  turns
+into a functional of both fields, FORMULA . In order to
+maintain the one-loop exactness of (REF ), the momentum cutoff can only
+depend on the background field, but not on the propagating field. Following
+{{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}}, we introduce FORMULA  and FORMULA , where FORMULA . We chose momentum cutoffs of
+the form FORMULA , which depend now on the background
+field. Here, the regulator cuts off both large momentum modes FORMULA 
+and large field amplitudes with FORMULA . The full advantage
+of background fields becomes visible once they are identified with the
+physical mean, leading to the functional
+FORMULA . The resulting flow is closed
+provided FORMULA . For scalars, this
+relation becomes exact in the infrared limit studied below (for gauge fields,
+see {{cite:954e5f11-91d7-4140-b24b-a8dcf5050ba9}}). Using the momentum cutoffs {{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}}
+FORMULA 
+we are lead to the background field flow
+FORMULA 
+If the term FORMULA  on the right hand side is dropped – meaning
+that additional flow terms originating from the implicit scale dependence in
+the momentum cutoff are neglected over the leading term – the flow (REF )
+reduces to the proper-time flow of Liao {{cite:461ba7bb-5a6e-436d-a08b-d00ac5325cdb}}. A general
+proper-time flow is a linear combination of the first term in (REF ) for
+various FORMULA  {{cite:7458e023-6632-4ef6-9167-f73412370565}}; see {{cite:c6040ae8-d404-4b27-8fa9-e2cd5709d38a}}, {{cite:c859047b-43dc-48bc-9a0c-34b5c80fe2d5}} for
+applications.
+Next, we specialise to the proper-time approximation to leading order in the
+derivative expansion. The flow equation for the effective potential takes the
+very simple form
+FORMULA 
+where FORMULA  parameterises the momentum cutoff, and an irrelevant constant factor
+has been rescaled into the potential and the fields. For FORMULA , the flow (REF ) is mapped onto the flow (REF )
+{{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}}. At FORMULA , the flow (REF ) is equivalent to
+(REF ), modulo a trivial rescaling. As a final remark, we note that this
+proper-time flow is also obtained from linear combinations of higher
+scale-derivatives of Callan-Szymanzik flows, without relying on background
+fields {{cite:7458e023-6632-4ef6-9167-f73412370565}}. In this representation, the approximation leading
+to (REF ) consists in the neglection of higher order flow terms
+FORMULA .
+4. Hierarchical Models
+Several hierarchical models for an effective potential FORMULA  of a
+lattice scalar field have been introduced in the literature
+{{cite:778c0a4b-7bd9-4530-a192-3fb39990f866}}, {{cite:b7985927-84d2-4178-8213-48b5de7e02b2}}, {{cite:c047f898-fa4c-476c-b88c-31cb19e99238}} (see also {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}).
+The hierarchical transformation laws relate the potential FORMULA  at
+momentum scale FORMULA  with an average in field space over FORMULA  at
+momentum scale FORMULA , where FORMULA  is the renormalisation group step
+parameter. We restrict ourselves to the three-dimensional case; the
+generalisation to arbitrary dimensions is straightforward.
+In Dyson's model {{cite:778c0a4b-7bd9-4530-a192-3fb39990f866}}, {{cite:c047f898-fa4c-476c-b88c-31cb19e99238}}, the renormalisation group
+step FORMULA  for the potential is expressed as
+FORMULA 
+The details of the averaging procedure are encoded in the measure factor
+FORMULA , in the FORMULA -dependence of the potential on the right-hand
+side of (REF ), and in the choice for the decimation parameter FORMULA . As
+is evident from (REF ), a decimation parameter FORMULA  – employed
+for most numerical studies
+{{cite:6b4b155a-cccc-46c5-8418-34b3b1ff1e57}}, {{cite:d1a17a8e-abdd-4277-a1ca-40fa1f760946}}, {{cite:32d9e3c6-fd78-4b60-8e84-ad3ec42ba1dd}}, {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}
+– corresponds to a volume decimation of FORMULA  at each iteration. For
+Dyson's model, the measure is chosen as
+FORMULA 
+{{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}, where we require FORMULA  for FORMULA ,
+and FORMULA  with FORMULA . A standard choice is
+FORMULA  {{cite:99903a80-bb66-47db-b0b3-e5ceabbe36ab}}. By definition, (REF )
+describes a flow towards the infrared for decimation parameters FORMULA .
+For FORMULA , the hierarchical transformation (REF ) becomes continuous
+and the measure factor turns into a FORMULA -function FORMULA . Performing FORMULA (REF ), which is
+equivalent to FORMULA (REF ), we arrive at a differential flow equation
+for the effective potential {{cite:99903a80-bb66-47db-b0b3-e5ceabbe36ab}}
+FORMULA 
+where an irrelevant factor is rescaled into the fields and the potential;
+FORMULA . The interaction terms in (REF ) originate from the
+scale-derivative of the measure FORMULA , which
+reads FORMULA  in the limit FORMULA . This
+highlights the relevance of the measure factor in hierarchical models. Our
+normalisation corresponds to the choice FORMULA  to match with
+{{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}}. The limit (REF ) is independent of FORMULA ,
+but at FORMULA , we expect that scaling solutions and exponents from
+(REF ) depend on it. Eq. (REF ) is the well-known Wilson-Polchinski flow
+{{cite:f166da5c-d6b2-4800-bc41-3ec606f7a437}}, {{cite:4fdc441a-1d5f-4c70-9ecf-9b1e2af4e1d4}}. We therefore conclude that the
+potential in (REF ) is related to the potential in (REF ) by a
+Legendre transformation {{cite:00f5dece-cf18-410e-9749-9d1911354e0d}}, {{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}}.
+A different version of a hierarchical model has been introduced by Wilson
+{{cite:b7985927-84d2-4178-8213-48b5de7e02b2}}. Here, the recursion relation is written as
+FORMULA 
+In Wilson's original model, the FORMULA -dependence of the measure is
+FORMULA , where the normalisation factor FORMULA 
+is FORMULA -independent {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}. The measure factor is different
+from the one in Dyson's model, because the Gaussian width is
+FORMULA -independent. If instead we employ the measure of Dyson's model, the
+limit FORMULA  can be performed analytically.The variance of the Gaussian measure in (REF ) can be changed by an
+explicit rescaling of the fields as FORMULA  for
+finite FORMULA , see {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}. Rescaling also the integration
+variable FORMULA , and denoting the potential in terms of
+the rescaled fields again as FORMULA , we obtain (REF ) with a
+rescaled measure FORMULA .
+It agrees with the measure of Dyson's model for FORMULA  and
+FORMULA . I thank Y. Meurice for e-mail correspondence on this
+point. Up to a trivial rescaling, we find
+FORMULA 
+In contrast to the Wilson-Polchinski flow (REF ), the non-linear term
+FORMULA  is absent. This comes about because the integrand of (REF ) – as
+opposed to the integrand of (REF ) – is manifestly symmetric under
+FORMULA . Numerical evaluations of (REF ) have been reported
+in {{cite:b7985927-84d2-4178-8213-48b5de7e02b2}}, {{cite:60520209-0320-4483-b561-4d9b461c7aa1}}. For other representations of
+hierarchical models we refer to {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}} and references therein.
+5. Matching Hierarchical Models
+In order to match hierarchical models by functional flows, we have to detail
+the scheme dependences of physical observables in either formalism. In the
+functional RG framework, the fully integrated flow is independent of the
+momentum cutoff FORMULA  chosen for the integration. Scheme dependences,
+which enter as a consequence of truncations of FORMULA , have been
+discussed extensively in the literature
+{{cite:85a8c6b5-4beb-4fee-b90d-80654405d5b4}}, {{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:f5aa7c54-9214-4e35-99c6-590e48a89401}}. Their
+origin is easily understood. Since the momentum cutoff FORMULA  in (REF ) couples
+to all operators in the theory, the missing back-coupling of operators
+neglected in a given truncation can result in a spurious dependence of
+physical observables evaluated either from FORMULA , or from a fixed
+point solution FORMULA . The scheme dependence is reduced by
+identifying those momentum cutoffs, which, in a given truncation, lead to an
+improved convergence and stability of the flow.
+In Fig. REF , we discuss the scheme dependence quantitatively for
+the leading order scaling exponent FORMULA  at a fixed point of the FORMULA  Ising
+universality class {{cite:f5aa7c54-9214-4e35-99c6-590e48a89401}}. Within exact flows (REF ), the
+full FORMULA -dependence has been studied in {{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}} by evaluating
+the fixed points of (REF ) for general cutoffs (Fig. REF ,
+first column). The main result is that the range of achievable values is
+bounded from above and from below. The upper bound is attained for
+Callan-Symanzik type flows with FORMULA . The lower bound with
+FORMULA  is attained with the optimal flow (REF ), and
+hence equivalent to the Wilson-Polchinski flow. The sharp cutoff result is
+indicated for comparison.
+FIGURE 
+The proper-time flow (REF ) rests on an intrinsically different
+truncation, because implicit dependences on the background field have been
+neglected as well as higher order flow terms proportional to the flow of
+FORMULA ; see Sec. 3. Therefore scheme dependences are quantitatively
+different. In the approximation (REF ), the FORMULA -dependence of scaling
+exponents from (REF ) has been studied in
+{{cite:c6040ae8-d404-4b27-8fa9-e2cd5709d38a}}, {{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}} (Fig. REF , second column). The
+range of values is again bounded from above by a Callan-Symanzik flow. The
+lower bound is achieved for FORMULA . We note that the range of values
+exceeds those achievable within (standard) exact flows. The lower bound may be
+overcome once the additional flow terms, neglected here, are taken into
+account {{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}}. This is indicated by the dashed line.
+Next we consider scheme dependences of hierarchical models. Based on their
+construction, we expect that physical observables depend on the averaging
+procedure, on the measure factor FORMULA , and on the decimation parameter
+FORMULA . It has proven difficult to systematically include wave function
+renormalisations and higher order operators in hierarchical models, and it is
+therefore not known whether the scheme dependence vanishes upon higher order
+corrections {{cite:4e505941-4922-4355-a834-6837734beaf5}}, {{cite:aa678e1e-f69a-441f-8df8-911350c435b7}}. Still, the scheme dependence
+should give a reasonable estimate for the underlying error in the model
+assumptions, in particular in comparison with functional methods.
+The FORMULA -dependence of Wilson's model (REF ), originally constructed for
+FORMULA , has been studied in {{cite:60520209-0320-4483-b561-4d9b461c7aa1}} in the range
+FORMULA  (Fig. REF , third column). The full line covers
+the range of values obtained in the literature, while the dashed lines
+indicate that the underlying parameter space has not been exhausted. Because
+of (REF ) being linear in the potential as opposed to (REF ), we
+expect a strong FORMULA -dependence, possibly a discontinuity, in the limit
+FORMULA . The slope FORMULA  along the data points
+with FORMULA  is negative, meaning that FORMULA  increases for
+smaller FORMULA . We stress that Wilson's HM has an overlap both with exact
+flows and proper-time flows. Therefore, it is possible to map FORMULA  of
+Wilson's model for certain decimation parameters FORMULA  onto FORMULA  from
+functional flows with appropriately chosen FORMULA . On the other hand, for some
+decimation parameter FORMULA , Wilson's model can only be mapped onto
+proper-time flows but not on exact flows, while for some decimation parameter
+it cannot be mapped onto either of them.
+The FORMULA -dependence of Dyson's model (REF ) is displayed in
+Fig. REF , fourth column. The full line connects the known results
+at FORMULA  {{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}, {{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}}, FORMULA 
+{{cite:6b4b155a-cccc-46c5-8418-34b3b1ff1e57}}, {{cite:32d9e3c6-fd78-4b60-8e84-ad3ec42ba1dd}}
+and FORMULA  {{cite:6b4b155a-cccc-46c5-8418-34b3b1ff1e57}}. The dashed line towards larger values
+for FORMULA  indicates that the parameter space FORMULA  has not been
+exhausted. We note that the FORMULA -dependence is very weak, with a tiny slope
+in the range of FORMULA -values covered. The important observation is that the
+slope FORMULA  is positive in the vicinity of
+FORMULA , implying that FORMULA  for FORMULA .
+Consequently, it is possible to map the scaling exponent FORMULA  at
+discrete block-spin transformation FORMULA  onto FORMULA  from functional
+flows for specific momentum cutoff FORMULA , both within the standard exact flows
+and within proper-time flows. This supports the conjecture that Dyson's model
+can be mapped onto functional flows.
+6. Spectrum of Eigenvalues
+Whether the observations of the preceeding section can be promoted to a full
+map between the formalisms crucially depends on further observables including
+the subleading scaling exponents. Here and in the following section, we study
+the spectrum of universal eigenvalues (scaling exponents) form functional
+flows (REF ) to high accuracy. A fixed point solution FORMULA 
+of (REF ) is characterised by the universal eigenvalues of
+eigenperturbations in its vicinity. We denote the ordered set of eigenvalues
+as FORMULA , with
+FORMULA  for FORMULA .In our conventions, the sole negative
+eigenvalue at the Wilson-Fisher fixed point is FORMULA . In addition to
+the leading exponent FORMULA , we study the first three
+subleading scaling exponents FORMULA , FORMULA  and
+FORMULA  within the exact flow (REF ) for various cutoffs and
+coarse graining parameters.
+For the numerical analysis, we introduce several classes of momentum cutoffs
+defined through FORMULA , FORMULA ; FORMULA , with FORMULA ; and FORMULA . These cutoffs include the sharp cutoff
+FORMULA  and asymptotically smooth Callan-Symanzik type cutoffs FORMULA  as limiting cases. The larger the parameter FORMULA , for each class, the
+`sharper' the corresponding momentum cutoff. The cutoff FORMULA 
+probes a two-dimensional parameter space in the vicinity of FORMULA  to
+which it reduces for FORMULA  and FORMULA . For integer FORMULA , FORMULA  is a
+FORMULA  function. In addition, we consider the cutoffs FORMULA  and FORMULA , which obey FORMULA . Note that we have covered a large variety of qualitatively
+different momentum cutoffs including exponential, algebraic, power-law, sharp
+cutoffs and cutoffs with compact support. Except for FORMULA , all
+cutoffs are FORMULA -functions. We employ the numerical techniques
+developed in {{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}, {{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}}.
+
+FIGURE 
+Our results for the universal eigenvalues at criticality are displayed in
+Fig. REF  for the six two-dimensional projections of the
+four-dimensional subspace FORMULA  of
+observables. The plot contains roughly FORMULA  data points, the different
+classes of cutoffs are colour-coded. We focus on the relevant FORMULA -vicinity
+of the Wilson-Polchinski result with scaling exponents FORMULA  from (REF ), indicated by a large
+black dot, see {{cite:2b47ad97-56cb-46d7-a241-a3733ca27d62}} for the high-accuracy numerical
+values. The central result of Fig. REF  is that scaling
+exponents are very strongly correlated. Despite having probed the space of
+observables by many qualitatively different momentum cutoffs, we find that
+only a small subset of values can actually be achieved. The correlations
+increase the closer the eigenvalues FORMULA  move towards FORMULA . In the immediate vicinity of the Wilson-Polchinski result, we only
+find a very narrow “throat” connecting observables FORMULA  with FORMULA . For the sub-leading scaling exponents FORMULA , the throat
+remains very narrow even further away from FORMULA . This is seen
+most clearly in the correlation of FORMULA  with FORMULA  in
+Fig. REF e), as well as in the correlations of FORMULA 
+with both FORMULA  and FORMULA  in Fig. REF d) and f).
+In turn, for the leading exponents FORMULA , the throat opens up more rapidly
+once its value is further away from FORMULA , see
+Fig. REF a), b) and c).
+7. Correlations of Eigenvalues
+The strong correlation of scaling exponents is a structural fingerprint of
+Wilsonian flows (REF ). Since
+the Wilson-Polchinski result is distinguished in the space of scaling
+exponents, it is natural to normalise the data of Fig. REF 
+with respect to it. We introduce the distance of any pair of scaling exponents
+FORMULA  from the optimal result FORMULA  as
+FORMULA 
+We have chosen a standard metric in the space of observables (other choices
+can be applied as well). In this representation, full agreement with the
+(optimal) Wilson-Polchinski result is achieved for FORMULA  and
+FORMULA . We also introduce the angles
+FORMULA 
+The critical indices FORMULA  and FORMULA , are positive numbers.
+Therefore, they can cover the range FORMULA  and
+FORMULA , and FORMULA  for any pair of observables
+FORMULA . In the subspace FORMULA , the extremal values FORMULA  have the polar coordinates FORMULA , where the angle reads FORMULA  which is close to FORMULA , and FORMULA . The radial distance from the origin is FORMULA .
+FIGURE 
+FIGURE 
+In the representation (REF ), we can study the close vicinity of the
+Wilson-Polchinski result. In Fig. REF , we display our data
+points as functions of the angles FORMULA , and their distance from
+FORMULA  in a semi-logarithmic basis. It is noteworthy that only a
+very narrow range of angles FORMULA  is actually achieved by the data,
+despite the fact that large fractions of the underlying space of momentum
+cutoffs is covered. Also, and in contrast to Fig. REF a),
+many data points are degenerate in the representation FORMULA . A
+priori, the Wilson-Polchinski value FORMULA  could
+have been approached along many different paths. Instead, we find that only a
+narrow range of FORMULA -values is achieved for arbitrary
+momentum cutoff.
+This pattern is further highlighted in Fig. REF , where we have
+magnified the non-trivial range of data sets from functional flows
+(REF ). In addition, we have added data points from the background field
+flow (REF ) using the cutoff FORMULA  for FORMULA . It is
+remarkable that these data sets display the same pattern as the data from
+(REF ). Our results from this and the preceeding section are summarised
+as follows:
+Extremum.— The Wilson-Polchinski (optimal flow) result in
+Fig. REF  corresponds to an extremum in the space of
+physical observables with FORMULA  for all
+obervables in the vicinity of FORMULA . The extremum is local,
+because the exponents approach FORMULA , FORMULA , for very soft
+(Callan-Symanzik-type) momentum cutoffs {{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}. For the
+eigenvalue products FORMULA , the
+Wilson-Polchinski extremum is a global one.
+Uniqueness.— Our result indicates that the correlations of
+eigenvalues at the Wilson-Pochinski result are strongest, in the sense that
+any flow of the form (REF ) with the exponent FORMULA 
+automatically also agrees with the Wilson-Polchinski result in all other
+observables FORMULA . In general, for FORMULA , this is clearly not the case.
+Redundancy.—
+The eigenvalue correlations are so strong that the first two scaling exponents
+FORMULA  and FORMULA , for a given FORMULA , contain enough information to fix
+the remaining observables on the percent level or below. These `dynamical'
+constraints point at a major redundancy of (REF ) with respect to the
+underlying momentum cutoffs FORMULA . A relevant parameter has been identified
+previously. The gap FORMULA  for normalised cutoffs
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, when maximised, leads towards the Wilson-Polchinski
+result {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}.
+Optimised observables.— Previous reasonings in favour of an
+optimisation only invoked properties of the underlying flow (REF ),
+FORMULA  its convergence, locality, stability and boundedness, allowing for
+improved physical predictions. This has been exemplified quantitatively for
+the observable FORMULA  which obeys FORMULA 
+{{cite:bfedc09e-430f-4ca1-95eb-81db5ffb2891}}, where the lower bound FORMULA  is closest to the
+physical result {{cite:23037c08-0155-47a1-918b-2b2d7409c5bd}}. Fig. REF  now shows
+that this pattern extends to subleading eigenvalues. This equally extends to
+asymmetric corrections-to-scaling {{cite:950e5216-2ce0-4db8-96c6-a9ac29de82c9}}. Therefore, one may
+turn the original reasoning around and argue that – because of the extremum
+property of the observables FORMULA  – an extremisation of the
+functional flow along the lines discussed in
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:aba92f2b-d360-482a-90d8-07973b2da6a8}}, or similar, should
+naturally lead towards the values FORMULA . Stated differently,
+Figs. REF -REF  show that observables derived
+from (REF ) admit an optimisation.
+Finally, we note that the data point from Dyson's hierarchical model with
+FORMULA  – as plotted in Figs. REF 
+and REF  – nicely fits into the set of data points covered by
+functional flows, extending the link observed in Sec. 5 beyond the leading
+exponent. This observation is addressed quantitatively in the following
+section.
+8. Matching Beyond the Leading Exponent
+To further substantiate our conjecture that hierarchical models could be
+mapped onto functional flows, we have to show quantitatively that results from
+hierarchical model are reproduced by specific functional flows. Here, we
+study the close vicinity of the Wilson-Polchinski result FORMULA ,
+where the correlations are strongest, see Figs. REF 
+and REF . We have to restrict our search to Dyson's
+hierarchical model, where high-accuracy data for the first sub-leading scaling
+exponent FORMULA  is available. No subleading exponents have been computed for
+Wilson's model.
+For the numerical analysis, we introduce additional classes of momentum
+cutoffs FORMULA  which contain the optimal flow (REF ) in some limit. In
+addition to the two-parameter family of cutoffs FORMULA , we also
+study the cutoff FORMULA  for
+FORMULA  which is FORMULA , and the cutoff FORMULA  with FORMULA , which is effective
+for a finite interval of momenta FORMULA . In the limit FORMULA 
+FORMULA , the corresponding flows are equivalent to (REF ). Hence,
+FORMULA , FORMULA  and FORMULA  parametrise
+substantially different classes of cutoffs. More generally, there are
+infinitely many cutoffs FORMULA  leading to scaling exponents identical with
+FORMULA , and the examples provided above serve to
+illustrate this.
+TABLE 
+At FORMULA , Dyson's hierarchical transformation is continuous, and the
+scaling exponents are equivalent to those from the optimal flow (REF )
+and the Wilson-Polchinski flow (REF ). In Tab. REF , we
+compare exponents from different functional flows. We confirm numerically, and
+with high accuracy, that the cutoffs FORMULA , FORMULA  and
+FORMULA  lead to the Wilson-Polchinski result for specific parameter
+values.
+At FORMULA , Dyson's hierarchical transformation is discrete. The
+reference data reads FORMULA  and FORMULA  {{cite:32d9e3c6-fd78-4b60-8e84-ad3ec42ba1dd}}.In {{cite:32d9e3c6-fd78-4b60-8e84-ad3ec42ba1dd}},
+high-accuracy results at FORMULA  have been given for
+FORMULA  and FORMULA  (and FORMULA  with 13 significant digits. They imply FORMULA  and FORMULA . For the
+present study, only the first six figures are required. These values differ
+only at the order FORMULA  from the optimal (Wilson-Polchinski) result, and
+are therefore sufficiently close to FORMULA  to confirm or refute
+the correlations observed in the previous section.
+Figs. REF  and REF  indicate that the result
+from Dyson's hierarchical model is fully matched by functional flows. Our
+numerical results are given in Tab. REF ; brackets indicate that
+a digit is possibly affected by numerical errors. We have found several sets
+of parameter values, such that the scaling exponents agree with Dyson's model
+to order FORMULA . More importantly, the momentum cutoffs are quite
+different. Hence, our analysis also confirms the strong correlation of
+scaling exponents in the immediate vicinity of the Wilson-Polchinski result.
+Based on the eigenvalue correlations within functional flows, we conjecture
+that the subleading eigenvalues FORMULA  with FORMULA  of Dyson's model at
+FORMULA  also agree to the corresponding accuracy with the values
+implied through the functional flows in Tab. REF .
+Our results based on the proper-time flow (REF ) with FORMULA  has
+also been given in Tab. REF . Full agreement is achieved either
+with the exponent FORMULA  or the subleading exponent
+FORMULA , but not with both of them. Once one of them is
+matched, the deviation in the other observable is of the order FORMULA . The
+relevant parameters are FORMULA , the regime where (REF ) is mapped onto
+(REF ) {{cite:6163a718-f79d-4a72-a52a-2a69139f7ebb}}. Therefore, the values in
+Tab. REF  reflects well the range covered by standard Wilsonian
+flows (REF ). We expect that full agreement is achieved for proper-time
+flows which are linear combinations of (REF ) for different FORMULA , but we
+did not attempt to do so here.
+TABLE 
+In summary, we have provided numerical maps from several functional flows onto
+Dyson's model at a non-trivial FORMULA , with an accuracy of the order
+FORMULA . The set of achievable values for scaling exponents from functional
+flows in the close vicinity of the optimal result is just wide enough to
+accommodate for the data from Dyson's model. This is a non-trivial result,
+also showing that the FORMULA -dependence of Dyson's model and the
+FORMULA -dependence of functional flows are very intimately related. Based on
+our results for FORMULA  and FORMULA  at FORMULA , and on continuity in
+FORMULA , we expect that this map extends to other universal quantities in the
+same approximation, analogous to the full map which is known for FORMULA .
+Data for further symmetric and asymmetric corrections-to-scaling exponents,
+once available, will allow for additional checks of this picture. Full
+equivalence is guaranteed as soon as an explicit link in the form
+FORMULA  or FORMULA  is furnished. For the local
+potential approximation, our results indicate that this map, if it exists, is
+not unique.
+9. Discussion and Conclusions
+Establishing equivalences between implementations of Wilson's renormalisation
+group as different as discrete hierarchical models of lattice scalar fields on
+one side and continuous functional flows on the other, allows for new views
+and insights on the respective formalisms and on the underlying physics.
+Previously, equivalences were known only in the limit where the hierarchical
+transformation becomes continuous. In this paper, based on similarities in
+the dependences related to the underlying coarse-graining, we have extended
+this link towards discrete hierarchical transformations. This correspondence
+shows that continuous RG flows (REF ) are sensitive to implicit
+discretisation effects via the momentum cutoff.
+Specifically, for the FORMULA  Ising universality class, we have compared the
+formalisms on the level of scaling exponents. Their dependence on the
+step-size parameter FORMULA  within Dyson's hierarchical model (REF ) is
+qualitatively and quantitatively similar to their dependence on the momentum
+cutoff FORMULA  within functional flows (REF ). In either case, scaling
+exponents are bounded by the Wilson-Polchinski values obtained for FORMULA  and FORMULA . Once the hierarchical transformations are
+discrete, FORMULA , slight variations in all known scaling exponents from
+Dyson's model are matched by functional flows with non-optimal momentum
+cutoffs FORMULA . This is quite remarkable, particularily in view
+of the strong eigenvalue correlations found amongst functional flows. In this
+light, the optimisation of functional flows with FORMULA  can now,
+alternatively, be viewed as the removal of discretisation effects, at least to
+leading order in a derivative expansion as studied here. It will be
+interesting to contrast these findings with the construction of improved or
+perfect actions on the lattice. More generally, it is conceivable that
+Dyson's model for arbitrary FORMULA  is mapped by functional flows on a
+fundamental level beyond the numerical map provided for FORMULA . An
+explicit map would be very welcome, also in view of linking hierarchical
+models to a path integral representation of the theory. In Wilson's
+hierarchical model (REF ), the range covered by the leading scaling exponent
+indicates that a partial map onto functional flows exists, though only for a
+restricted domain of FORMULA -values. Interestingly, the overlap with background
+field flows is even larger. Whether these maps extend beyond the leading
+exponent cannot be settled presently due to a lack of data for subleading
+exponents from Wilson's model.
+In addition, we found a distinct correlation of scaling exponents from
+functional flows (REF ). The eigenvalue spectrum, a fingerprint of the
+physics in a local potential approximation, is severely constrained and
+achieves the Wilson-Polchinski values as an extremum. Furthermore, the full
+space of physical observables is described by very few parameters only,
+instead of the infinitely many moments of the momentum cutoff. Resolving this
+redundancy should prove useful for studies of FORMULA  non-trivial momentum
+structures and higher orders in the derivative expansion. Finally this
+pattern amongst physical observables highlights the extremum property of
+cutoffs leading to the optimal Wilson-Polchinski result
+{{cite:50a96bf2-99c4-49e3-8cf9-1772ff8a8a71}}, {{cite:8935b7f0-07a9-456b-9886-92ebf33a7cfc}}, {{cite:df23a142-2ea3-42d8-966e-8e44f46ed0f9}}, {{cite:aba92f2b-d360-482a-90d8-07973b2da6a8}}. We expect
+that the intimate link between optimised flows on one side, and extremum
+points in the space of observables on the other, persists in more complex
+theories. This observation will prove useful for studies in QCD and quantum
+gravity, where an appropriate optimisation is even more important to extract
+the relevant physics.
+Acknowledgements.— This work is supported by an EPSRC Advanced
+Fellowship. I thank Y. Meurice for e-mail correspondence, the Galileo
+Galilei Institute for Theoretical Physics for hospitality, and the INFN for
+partial support.

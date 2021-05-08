@@ -1,0 +1,1108 @@
+
+Lensing & reddening effects of MgII absorbers
+Ménard et al.
+Lensing, reddening and extinction effects
+of MgII absorbers
+from FORMULA  to  FORMULA
+Brice Ménard 1,
+Daniel Nestor 2,
+David Turnshek 3,
+Anna Quider 3,
+Gordon Richards 4,
+Doron Chelouche 5
+& Sandhya Rao 3
+1Canadian Institute for Theoretical Astrophysics,
+University of Toronto, 50 St George street, Toronto ON
+2Institute of Astronomy, University of Cambridge,
+Madingley Road, Cambridge. CB3 0HA, U.K.
+3Dept. of Physics and Astronomy, University of Pittsburgh,
+Pittsburgh, PA 15260, USA
+4Department of Physics, Drexel University,
+3141 Chestnut Street, Philadelphia, PA 19104.
+5Institute for Advanced Study, Einstein Drive,
+Princeton NJ 08540, USA
+Using a sample of almost 7000 strong MgII absorbers with
+FORMULA  detected in the SDSS DR4 dataset, we investigate the
+gravitational lensing and dust extinction effects they induce on
+background quasars. After carefully quantifying several selection
+biases, we isolate the reddening effects as a function of redshift
+and absorber rest equivalent width, FORMULA . We find the amount of
+dust to increase with cosmic time as
+FORMULA , following the evolution of
+cosmic star density or integrated star formation rate. We measure
+the reddening effects over a factor 30 in E(B–V) and we find that
+FORMULA , providing us with an important
+scaling for theoretical modeling of metal absorbers. We also measure
+the dust-to-metals ratio and find it similar to that of the
+Milky Way. In contrast to previous studies, we do not detect any
+gravitational magnification by MgII systems. We measure the upper
+limit FORMULA  and discuss the origin of the discrepancy.
+Finally, we estimate the fraction of absorbers missed due to
+extinction effects and show that it rises from 1 to 50% in the
+range FORMULA  Å. We parametrize this effect and provide a
+correction for recovering the intrinsic FORMULA 
+distribution.
+quasars – absorbers: MgII – gravitational lensing:
+statistical – reddening – dust
+Introduction
+Quasar absorption lines provide us with a unique tool to probe the gas
+content in the Universe. They offer an unmatched sensitivity up to
+high redshift, allow us to detect arbitrarily faint objects, and
+constrain the gas distribution in velocity space. However, the lack
+of direct spatial information tends to be a limitation for
+understanding the nature of these systems and fundamental questions
+still remain. One way to overcome this problem is to relate the gas
+distribution to that of other components such as dark matter, stars
+and dust by measuring their cross-correlations.
+Galactic environments have been studied using various types of
+absorption lines. Among metal lines, the MgII doublet,
+FORMULA Å, has been extensively used due to the
+strength and wavelength of the transitions making it easily detectable
+from the ground at FORMULA 
+({{cite:db154dbf-14ac-4e2c-844e-d4e587b906ae}}, {{cite:5b15138f-9170-41b0-979e-1965bae4b025}}, {{cite:b54a6cb4-f48f-4d27-b9dc-c41f89aea599}}, {{cite:5a81add8-897e-4745-9cbc-f10492efa742}}).
+MgII turns out to be a sensitive tracer of galactic environment: it
+arises in gas spanning more than five decades of neutral hydrogen
+column density (e.g. {{cite:4b7eecc2-ba3c-4e68-abf5-d20a409f1b12}}), and it has been shown
+that the detection of a strong MgII absorber indicates the presence of
+a nearby FORMULA  galaxy along the line-of-sight
+({{cite:c092e317-83ba-4a07-ad08-87492171c421}}, {{cite:a91dfd67-61af-42f7-9ec9-fa3d4656f1c8}}, {{cite:d21c57cc-01a6-4efc-bc18-900444ee5cc3}}, {{cite:7d502af2-04f1-4526-85bc-b252377261c8}}, {{cite:a91dfd67-61af-42f7-9ec9-fa3d4656f1c8}}, {{cite:c984fbf7-55fe-4aec-9f7d-5e93ff01dd1d}}), and at low redshift {{cite:835810af-b34b-4db2-a27a-cc5f38f9bfe3}} have
+shown that strong MgII absorbers are good tracers of Damped Lyman
+alpha systems.
+For reviews of the progress on the determination of
+these systems, see {{cite:963f4fc7-9760-4cfc-92db-15ce7ba77730}} and {{cite:fa0d45f5-4502-48cc-9e6f-92c4cba9e505}}.
+Recently, the size and homogeneity the SDSS has allowed several
+statistical analyzes to be done: {{cite:c572a4d8-dc15-46b2-8c38-74347a44200d}} measured the
+cross-correlation between FORMULA  luminous red galaxies and MgII
+absorbers. {{cite:f4c2a626-a1d7-424d-98bf-e6e9d97bed56}}, {{cite:0e1cbf6d-b99b-4e49-a2b3-992b6476b4ed}} investigated the
+distribution of absorber impact parameters and the emission properties
+of MgII related galaxies. They have shown that a cross-correlation
+between light and gas can be detected up to 200 kpc and that stronger
+absorbers are related to bluer galaxies. The SDSS has also provided us
+with closely separated quasar pairs allowing us to analyze the
+spectrum of background quasars to probe the gas distribution around
+foreground ones {{cite:13bc0e54-236d-423e-82c7-ebabc2af9c82}}, {{cite:f41f44ab-d5fb-4adc-8d25-40504fa116b9}}. Such a technique allows us
+to compare the gaseous halos of quasars and galaxies and it can
+ultimately be used to test the quasar unification scheme on large
+scales {{cite:3f06e104-74a6-4e37-bfb2-09ad23c9b733}}.
+However, despite significant observational progress fundamental
+questions such as the nature of the gas seen in absorption and its
+spatial distribution still remain. More importantly, we still do not
+understand the process(es) responsible for the observed values of MgII
+rest equivalent widths. As strong MgII absorbers are known to be
+tracers of galaxies, they are expected to induce gravitational lensing
+and reddening effects to the light of their background
+quasars. Correlations between quasar magnitudes and the presence or
+strength of metal lines can therefore be used in order to quantify the
+relationships between gas, dark matter and dust. Such an approach also
+allows us to quantify the extinction and magnification biases in
+samples of optically selected quasars.
+Dust reddening
+The presence of dust associated with various types of absorbers has
+been reported by many authors: {{cite:20673c9f-757a-4967-8b50-4d45724a01ee}} & {{cite:d57c9cf4-a018-438b-981f-87dc4c3a5081}} found
+quasars with DLAs to be on average redder than quasars
+without. {{cite:1410529c-a59f-4178-8489-5e38fbb23328}} observed a similar effect with CIV
+absorption lines. Using the 2dF survey {{cite:2adf3608-da50-4490-b080-5c167c91c01e}} found evidence
+of reddening due to strong MgII systems. {{cite:c50eb415-d557-4b16-904d-f965f8d31c21}} showed that
+a fraction of SDSS quasars are reddened with SMC-type dust and argued
+that this effect comes predominantly from dust located at the quasar
+redshifts. Using the SDSS database, {{cite:e165255e-a130-45dd-8aea-47f7a291efe8}}, {{cite:d8113f38-1284-489b-99a4-b4a372de7ce4}} found an
+E(B-V)FORMULA  associated with CaII absorbers, and {{cite:d1329470-2bce-425f-9c1e-ec582b6d805c}} &
+{{cite:e4442143-b270-4429-acd3-20331bfd18f9}} measured the mean reddening effects of about 800
+quasars with FORMULA  MgII absorbers.
+Constraints on dust can also be obtained by measuring the relative
+abundances of volatile and refractory elements in order to infer a
+depletion level
+(e.g. {{cite:d90a8a61-c9ab-4dc0-a8ba-b175933c8675}}, {{cite:f2a74261-a3ba-478f-828d-be6078a3d425}}, {{cite:da7fc288-611a-49ae-8eec-bc8ead78aac6}}).
+While the presence of dust reddening associated with metal absorbers
+has been convincingly shown, its detailed properties (dependencies on
+redshift, rest equivalent width, etc.) need to be quantified in order
+to understand the underlying physics and connect theory to
+observations.
+The presence of dust along given lines-of-sight also implies the
+existence of a dust obscuration bias that can affect quasar and
+absorber number counts. Using 75 radio-selected quasars,
+{{cite:7b09bb68-705b-4cb1-9d58-5eee01fade1f}} investigated such an effect and did not find any
+difference (at the 20% level) between the incidence of MgII absorbers
+in radio-selected and optically-selected quasars. This result shows
+that in general optically-selected quasars are not strongly
+affected by an extinction bias, but it does not provide us with the
+full information: it does not show how the shape of the
+observed distribution of absorber rest equivalent widths is affected
+by dust extinction.
+In order to unveil the relationships between extinction and absorption
+properties, we present a new analysis based on the Sloan Digital Sky
+Survey (SDSS, {{cite:2b47698c-595d-4ff9-b1f5-5d9f6736a893}}) using the fourth data release (DR4).
+After having quantified the efficiency of the SDSS pipeline to detect
+reddened quasars, we use a sample of about 7,000 MgII absorbers –
+i.e. almost an order of magnitude larger than previous studies
+– to measure the excess reddening induced by these systems and
+investigate its dependence on absorption rest equivalent width and
+redshift.
+
+Gravitational lensing
+In addition to cause reddening effects, the presence of a galaxy along
+the line-of-sight is expected to give rise to gravitational lensing
+effects. Several cases of strong gravitational lensing of quasars due
+to an absorbing galaxy are known (e.g. {{cite:abb57fbc-b58f-45fc-989e-a61a5244c25e}}). However,
+in general, the impact parameters of MgII absorbers are larger than a
+few kpc and gravitational lensing effects occur in the weak regime and
+solely change quasar magnitudes
+({{cite:113978a7-d006-42c7-bb39-e0092a494ee0}}, {{cite:eb41ac43-0ea3-4c0a-90f3-b0effdb77252}}, {{cite:b7ae040b-5bac-478c-a2f0-4fafab6daa08}}, {{cite:330b0be0-65ce-43b6-a7c7-c981ac8e088e}}, {{cite:b576353a-61a2-4020-a8fd-7b1bdaf9cb55}}). The
+detection of such an effect would ultimately allow us to constrain the
+mass of MgII systems.
+Several authors have attempted to detect the statistical magnification
+induced by MgII systems. Some have looked for redshift distribution
+changes ({{cite:93868d17-160c-44e0-86d8-f14d9d56e638}}, {{cite:9fffcef8-4dc9-403d-977b-288cf072e7c7}}) but did not find any
+compelling evidence for gravitational lensing. Others have
+investigated the occurrence of metal absorbers (CIV, SiIV, MgII) on
+bright and faint quasars ({{cite:a6674f0f-389e-4cd7-95c7-9f7ed2848720}}, {{cite:73413234-8986-4326-a4a6-3dbe03ad4645}}, {{cite:21853aa9-32d1-4038-978f-7455d13e8fc9}})
+and reported possible magnification effects for certain absorber
+species only. {{cite:2adf3608-da50-4490-b080-5c167c91c01e}} used the 2dF-Quasar survey to compare the
+number of quasars with and without MgII absorbers as a function of
+magnitude and reported a relative excess of optically bright
+radio-selected quasars with absorbers as well as indications of
+reddening effects. Murphy & Liske (2004) applied the same method to a
+sample of Damped Lyman-FORMULA  systems and reported a similar trend
+found at 2FORMULA . Using radio-selected quasars, {{cite:7b09bb68-705b-4cb1-9d58-5eee01fade1f}}
+reported a possible excess of optically bright quasars with MgII
+absorbers, and more recently {{cite:dfadef9d-6788-4dc3-80ca-cdea15440043}} found that quasars
+with high-redshift DLAs are on average brighter than quasars
+without. The various results found among all these analyzes turn out
+to be rather difficult to combine because the absorber species,
+redshift and equivalent width ranges differ. In addition, as noted in
+some of these analyzes, biases due to selection effects can mimic the
+lensing signal: it is easier to detect absorption lines in high
+quality (or high S/N) spectra, however, these spectra tend to
+correspond to bright objects. This selection bias results in a
+preference for detecting absorption lines in brighter quasars, which
+is an effect similar to the signal of interest. Unfortunately, none of
+these works could convincingly demonstrate that the level of such
+systematics was sufficiently low in their analysis, leaving the
+amplitude of lensing effects rather uncertain.
+In this paper we attempt to make a significant improvement in making
+such a measurement by overcoming the problem of systematic effects
+using Monte Carlo simulations and by reaching a much higher precision
+thanks to the size and homogeneity of the SDSS. We use a robust
+semi-automatic absorption line finder algorithm, carefully select a
+population of reference quasars, test potential biases, and use Monte
+Carlo simulations to measure and quantify the level of systematics of
+our selection procedure. To detect a magnification signal we will
+apply the method proposed by {{cite:b576353a-61a2-4020-a8fd-7b1bdaf9cb55}} and look for a
+correlation between the presence of absorbers and a change in the mean
+magnitude of their background quasars. Contrarily to previous studies,
+this approach allows the use of a non-parametric estimator.
+The outline of the paper is as follows: in §
+we introduce the formalism of dust extinction and gravitational
+magnification. We describe the data used in our analysis in
+§ as well as the selection of the different samples
+of quasars. The magnitude shifts and color changes due to the presence
+of absorbers along quasar lines-of-sight are presented in
+§. We discuss the results and conclude in
+§.
+
+FORMALISM
+Strong MgII absorbers (usually defined with FORMULA  Å) are
+known to be tracers of galaxies with luminosities ranging from 0.1 to
+several FORMULA . The presence of such a system seen along the
+line-of-sight of a background source can therefore modify its
+brightness in two ways: first, the presence of dust in and/or around
+the absorber can extinct and redden the source's light and second, it
+can act as a gravitational lens and amplify the flux of the
+source. This can be described by
+FORMULA 
+where FORMULA  is the observed flux of a source behind an
+absorber, FORMULA  is the flux that would be
+observed without intervening system, FORMULA  is the optical
+depth for extinction induced by the galaxy and FORMULA  the gravitational
+amplification. The corresponding magnitude change can then be written
+FORMULA 
+These two contributions have different wavelength and redshift
+contributions. One can therefore attempt to constrain them separately.
+Measuring reddening effects
+Following {{cite:b576353a-61a2-4020-a8fd-7b1bdaf9cb55}}, we introduce the observed mean magnitude
+difference between a population of quasars with absorbers and one
+without:
+FORMULA 
+where FORMULA  is the magnitude in a given band FORMULA . In the next section
+we will measure this quantity using a large sample of MgII absorbers
+from the SDSS. We will then investigate how FORMULA  varies as a function of absorber rest equivalent width and
+redshift. Similarly, we can then define the mean excess color
+FORMULA 
+where FORMULA  and FORMULA  denote two different bands. It should be noted that
+such a quantity is not sensitive to gravitational lensing effects as
+it no longer depends on the magnification FORMULA . It can be used to
+probe the statistical properties of the extinction curve of absorbers
+systems as well as the dust column densities as a function of absorber
+rest equivalent width.
+In optical surveys, sources like quasars are both magnitude and color
+selected. When dust extinction occurs, such sources can become
+undetectable because they become too faint and/or too red.
+As long as sources are no longer detectable because of a limiting
+magnitude and not because of a color cut, we have
+FORMULA 
+However, if the sources become undetectable because they no longer
+satisfy a color cut, the measured reddening is then lower than the
+intrinsic one. Such a property depends on the details of the quasar
+selection procedure and will be addressed in section
+REF .
+The current study is based on the photometry of SDSS quasars using the
+FORMULA  filter set. However, historically people have quantified
+color excesses using the Johnson FORMULA  and FORMULA  filters. In order to be
+able to present our results in similar units, we provide here a list of
+useful conversions.
+First, it should be noted that previous statistical studies
+({{cite:e4442143-b270-4429-acd3-20331bfd18f9}}, {{cite:dc71e810-6525-4742-895f-41000f5647dc}}, {{cite:d1329470-2bce-425f-9c1e-ec582b6d805c}}, {{cite:d8113f38-1284-489b-99a4-b4a372de7ce4}}) have indicated that, on
+average, the extinction curves of MgII selected galaxies are
+consistent with that of the SMC, i.e. do not present an excess around
+the rest frame wavelength of 0.2FORMULA  (in the optical, such a
+feature can only be detected for systems at redshift greater than
+FORMULA  and is therefore irrelevant for lower redshift galaxies). In
+this paper we will therefore consider only SMC-type extinction curves.
+We will also see in section § that such a
+property is confirmed by the present analysis.
+In the range 0.1 to 1 FORMULA , the SMC extinction curve
+Templates of the reddening curves can be obtained from
+http://www.astro.princeton.edu/FORMULA draine
+can be very well approximated by a power law
+FORMULA  {{cite:ffc3b9d1-22d8-4fd3-bc71-e0270e13232d}}. By using the FORMULA  and
+FORMULA  filters, the conversion between the two color systems therefore
+reads
+FORMULA 
+and the average wavelengths for a flat spectrum are given by
+FORMULA  FORMULA 
+nm. Using the effective wavelength for realistic quasar spectra does
+not change the results significantly. In practice, two frames are
+interesting for considering colors excesses: in order to quantify the
+fraction of sources missed because of an extinction bias,
+observed E(B-V) values are relevant. However, for estimating
+the amount of dust associated with an absorber system the rest
+frame E(B-V) is the quantity of interest. For an SMC-like extinction
+curve we have
+FORMULA 
+In a given band, we will therefore observe almost four times more
+extinction by an absorber at FORMULA  than the same system located at
+FORMULA . For an SMC extinction curve we also have FORMULA  where the proportionality coefficient FORMULA  depends on
+the redshift of the dust and varies from 3.2 to 2.0 when FORMULA  is in the
+range 0.5 to 2.0, with a mean value of 2.6.
+
+Measuring gravitational lensing effects
+In this section we show how magnification effects can (or cannot)
+affect the observed magnitude of distant sources like quasars. For
+more details we refer the reader to the original discussion presented
+in {{cite:b576353a-61a2-4020-a8fd-7b1bdaf9cb55}}.
+Here we will first assume that extinction effects can be neglected
+(which is expected at sufficiently large wavelengths). Let us
+consider an area of the sky which is large enough for the mean
+magnification to be close to unity. In this area, let us consider a
+population of sources, with a fraction FORMULA  of them lying behind an
+absorber system. We will write the magnitude distribution of the
+sources behind absorbers FORMULA , and FORMULA 
+for the non-absorbed sources. We then have the following relation
+between the magnitude number counts:
+FORMULA 
+where FORMULA  is the induced magnitude shift and
+FORMULA  is the probability density to have a given
+value of FORMULA  along a quasar line-of-sight. Note that in the
+case of absorber systems, FORMULA  is not known. Observational estimates of
+the number density of absorbers are necessarily affected by lensing
+and/or extinction effects due to the need of background quasars to
+observe absorber systems. Therefore the only usable information from
+the previous equation comes from the shape of the distribution
+FORMULA , i.e. its moments. In this paper we will focus only on the
+first moment, i.e. we will attempt to constrain the mean magnification
+and extinction effects by measuring the mean magnitude shift induced
+by the presence of absorber systems.
+By defining FORMULA  and FORMULA  to be
+the observed mean magnitudes of the two quasar populations, we see
+that the observable mean magnitude shift
+FORMULA  (eq. REF )
+can be used to probe the unknown distribution FORMULA .
+It is important to note that the observed-magnitude changes
+FORMULA  depend on both the
+magnification effects and the slope of the source luminosity
+distribution:
+FORMULA 
+and in general we have
+FORMULA . For
+SDSS quasars with FORMULA , {{cite:b576353a-61a2-4020-a8fd-7b1bdaf9cb55}} has shown that we have
+FORMULA  where
+FORMULA  is an achromatic magnitude change. For a limiting magnitude
+of FORMULA , we find FORMULA .
+It should be noted that if the number of sources as
+a function of luminosity follows a power law then FORMULA  and magnitude
+changes cannot be observed whatever the value of the induced magnitude
+shift FORMULA .
+This absence of observable lensing effects can be understood in the
+following way: gravitational magnification makes each source brighter
+but allows also new sources to be detectable as they become brighter
+than the limiting magnitude of a given survey. This latter effect
+increases the number of faint sources and tends to diminish the mean
+flux of the detected objects. For a power law luminosity
+distribution, the flux increase due to magnification is
+exactly canceled by the additional faint sources that enter the sample
+due to magnification, and lensing effects due to absorbers cannot be
+observed. Therefore, it is possible to detect changes in the
+magnitude distribution of a population lensed by absorbers only if its
+unlensed number counts depart from a power law as a function of
+luminosity. Extinction effects will be affected in a similar way
+but the ability to observe sources in different bands allows us to
+measure reddening effects and then infer the related extinction.
+
+DATA & SELECTION BIASES
+The quasar sample
+In order to isolate the magnitude changes due to the presence of
+intervening absorber systems we need to compare the magnitude of
+quasars with absorption lines to that of a reference quasar
+population. Defining such a reference population without introducing
+any selection bias is a difficult task. Indeed, the detection of
+absorption lines depends on quasar redshift, spectrum S/N, and the
+extinction and reddening effects they might induce on their background source.
+All these effects have to be taken into account in
+order to carefully select a population of reference quasars.
+The first requirement is to work with a well defined sample of
+quasars. Among the large sample of quasars available from the SDSS
+DR4 sample (FORMULA 50,000), we will use the primary spectroscopic
+quasar sample, i.e. quasars with FORMULA  (FORMULA 29,000), as the
+selection of these objects is based on a well defined series of color
+cuts {{cite:b350acf9-cab7-45c5-954a-af9c6d0619d8}}. We will not make use of fainter quasars
+(observed with SDSS serendipity fibers) as they are not selected from
+well defined selection criteria. Before characterizing the absorber
+systems used in this study, the first step of our analysis will be to
+investigate the sensitivity of the SDSS quasar target algorithm to
+reddening and extinction.
+
+Detection of reddened quasars
+FIGURE 
+FIGURE 
+Evidence for the presence of dust associated with MgII absorbers has
+already been shown by several authors by isolating the reddening and
+extinction effects they induce. Since the selection of quasars
+depends on quasar magnitudes and colors {{cite:b350acf9-cab7-45c5-954a-af9c6d0619d8}}, such an
+effect might introduce a bias in the object selection and it is
+therefore important to quantify it. In this section we now
+investigate the sensitivity of the SDSS quasar target algorithm
+{{cite:b50cfae8-60bf-40a8-91de-1b79ed899b0e}} to reddening and extinction {{cite:69872e26-da8a-4072-a8b4-ac6c1594fc23}}. In order to do so we use
+Montecarlo-like simulations to test the ability of the SDSS quasar
+algorithm to detect quasars for different amounts of reddening and
+extinction. We proceed as follows:
+
+We use a sample of quasars without strong MgII absorber (as
+described in section REF ), consider the SMC
+extinction curve and apply various amounts of extinction. We quantify
+the amount of reddening with the FORMULA  excess.
+
+The applied extinction will cause some objects to drop out of
+the input quasar sample as they become too faint and/or their colors
+no longer satisfy the series of selection criteria of the SDSS quasar
+selection algorithm, considering only non-radio and point sources. We
+reject the objects no longer labeled as quasars by the SDSS pipeline.
+
+For each value of FORMULA  applied, we measure the fraction of
+quasars missed due to limiting magnitude and color cuts effects,
+we measure the mean FORMULA  and FORMULA  magnitudes of the re-observed
+quasars and compare them to those of the initial sample of unreddened
+quasars.
+
+We illustrate some of the results of this procedure in
+Fig. REF . From top to bottom we show the
+ability of the SDSS quasar selection algorithm to select quasars with
+increasing reddening and show the effects on quasar magnitudes. In
+each case we present the FORMULA  and FORMULA -band magnitude
+distributions of the original (solid line histograms) and reddened
+samples (filled histograms). These panels show that the fraction of
+quasars missed due to dust extinction becomes substantial for observed
+reddening values of FORMULA  larger than 0.2. In this figure we also
+show the mean magnitude of each sample with a vertical line. As the
+amount of extinction increases, we can easily observe reddening
+effects rising as the mean magnitude shifts are more pronounced in
+bluer bands. In addition, we can observe that the mean magnitude in
+the FORMULA  band is almost unaffected by reddening in the range considered
+here.
+We present the summary of the completeness and reddening results in
+Figure REF . From top to bottom we show, as a
+function of FORMULA , the input extinction, the measured extinction
+and the fraction of objects that can be detected.
+These results show that the observed extinction, defined as the
+difference between the mean magnitude of the reddened quasars and
+those of the initial sample, is always smaller than the induced
+extinction. As explained in section REF , such an
+effect is expected and is due to the shape of the quasar luminosity
+function. Moreover, we can see that the observed mean FORMULA -band
+magnitude is not significantly affected by extinction effects (for the
+range of reddening values of interest in this analysis). This property
+allows us to use the FORMULA  band to constrain gravitational lensing
+effects.
+The bottom panel of the figure allows us to quantify the fraction of
+objects missed as a function of observed FORMULA . By knowing the
+amount of reddening induced by a class of absorber systems one can use
+this curve to infer the fraction of objects missed by the SDSS quasar
+finder.
+In the right panel of Figure REF , we show
+another property related to the selection of reddened quasars: the
+induced and measured colors are the same in the range of
+reddening values of interest in our case, i.e. with FORMULA . This
+indicates that the fraction of quasars lost due to color cuts is
+small. This property therefore allows us to measure the mean color
+excess of a sample of quasars and use the corresponding color value to
+infer the induced extinction.
+The properties and selection biases of the SDSS target quasar
+algorithm will be used below to interpret the measurements. Our
+analysis is restricted to the main sample of SDSS spectroscopic
+quasars (with FORMULA ) in order to quantify certain selection
+effects. Including fainter quasars is expected to change the above
+numbers by a modest amount as the slope of quasar number counts
+distribution is a slowly varying function of magnitude (see
+{{cite:88cb8fdf-22d7-4b2a-ad66-61692af69971}}).
+Redshift-dependent selection effects are not considered here. As
+shown by {{cite:b50cfae8-60bf-40a8-91de-1b79ed899b0e}}, the SDSS quasar selection algorithm is
+less efficient in detecting reddened quasars at FORMULA . This effect
+can be neglected in the present analysis as only a small fraction of objects
+are found at such a redshift (see Fig. REF ).
+FIGURE 
+
+
+Absorber systems
+The MgII absorber sample
+In order to investigate the effects of reddening and magnification due
+to intervening absorbers, we use the sample of MgII systems compiled
+with the method presented in {{cite:b54a6cb4-f48f-4d27-b9dc-c41f89aea599}} and based on SDSS DR4
+data. In this section we briefly summarize the main steps involved in
+the absorption line detection procedure. For more details we refer
+the reader to {{cite:b54a6cb4-f48f-4d27-b9dc-c41f89aea599}}.
+All quasar spectra from the SDSS DR4 database were analyzed,
+regardless of QSO magnitude. The continuum-normalized SDSS QSO spectra
+were searched for MgII FORMULA  doublets using an
+optimal extraction method employing a Gaussian line-profile to measure
+each rest equivalent width FORMULA . All candidates were interactively
+checked for false detections, a satisfactory continuum fit, blends
+with absorption lines from other systems, and special cases. The
+identification of Mg II doublets required the detection of the 2796
+line and at least one additional line, the most convenient being the
+2803 doublet partner. A 5FORMULA  significance level was required for
+all FORMULA  lines, as well as a FORMULA  significance level for
+the corresponding FORMULA  lines. Only systems 0.1c blue-ward of
+the quasar redshift and red-ward of LyFORMULA  emission were accepted.
+For simplicity, systems with separations of less than 500 km/s were
+considered as a single system.
+The line finder is able to detect MgII absorption lines with a rest
+equivalent width FORMULA  Å. However a high
+completeness is reached only in the range FORMULA  Å. We
+will therefore focus our analysis on these stronger systems only.
+In such a range, multiple absorbers detected in the same quasar
+spectrum are found only in FORMULA  of the systems. For such cases
+we consider only the stronger system. We note that MgII absorption
+lines are in general saturated and in these cases no column density
+information can be directly extracted from FORMULA . The
+redshift distribution of the systems used in this analysis is
+presented in Figure REF . The filled histogram
+shows that of the MgII systems and the solid line their background
+quasars. The middle panel of Figure REF  shows
+the observed distributions of absorber rest equivalent width
+FORMULA . The intrinsic distribution, i.e. corrected for incompleteness
+is presented in {{cite:b54a6cb4-f48f-4d27-b9dc-c41f89aea599}}. The right panel of the figure shows
+the distribution of rest equivalent width measurement uncertainty. It
+shows the existence of a correlation between line detectability and
+absorber rest equivalent width. As can be seen, the relative FORMULA 
+uncertainty becomes larger for weaker systems. Because we require the
+2796 Å absorption lines to be detected at least at the 5-sigma
+level, this results in a selection bias: weaker lines are
+preferentially found in high S/N spectra. In addition, given the fact
+that all SDSS quasars are taken with a similar exposure time, the
+selection criteria introduce a correlation between quasar brightness
+and spectrum S/N. The line finder is therefore expected to
+preferentially find weaker systems in brighter quasars. A crucial
+step in our analysis will be to properly take this effect into account
+when we define a reference population of quasars without absorbers.
+
+The simulated MgII samples
+In order to test the efficiency of our detection technique and to
+identify biases and systematic effects we ran Monte Carlo simulations
+of the absorber catalog to create a sample of simulated MgII
+absorption lines reproducing the same properties as the real sample
+(FORMULA , FORMULA , FORMULA , etc.) and same biases, but with the
+difference that the absorption lines are put in random spectra,
+i.e. that no correlation exists between quasar magnitude and absorber
+properties. Such a population can then be used as a control sample.
+In order to create this sample, we proceed as follows: for each
+detected system, a simulated doublet having the same redshift, and
+similar FORMULA , doublet ratio, and Gaussian-fit width was put into many
+randomly selected EDR spectra. Each spectrum containing a simulated
+doublet was then run through the entire non-interactive and
+interactive pipelines, and FORMULA  and FORMULA  were measured for
+detected systems. Over 9100 simulated doublets were put in random
+quasar spectra. A large fraction of them appear in regions of spectra
+with insufficient signal to noise ratio to meet the detection
+threshold for the input FORMULA . The line finder is then able to
+recover about 4400 systems. Measurement error of the rest equivalent
+width FORMULA  can cause systems with FORMULA  to
+scatter into the output catalog as well as systems with
+FORMULA  to scatter out. Therefore, the recovered
+distribution of rest equivalent width differs from the input one. In
+order to create a simulated absorption line sample with statistically
+identical distributions of rest equivalent widths, a trial FORMULA 
+distribution was specified and then adjusted so that the simulated
+output best represents the data. We initially chose lines randomly from
+the input catalog according to a distribution of the form
+FORMULA  with an initial guess
+for FORMULA , until the number of lines recovered were equal to that
+of the actual catalog. Lines with input FORMULA  Å were
+used, although only lines with recovered FORMULA  Å were
+retained. We determined a maximum-likelihood value for FORMULA 
+using the recovered FORMULA  values. We then corrected our guess
+for FORMULA  to minimize FORMULA .
+This procedure allows us to create a simulated absorption line sample
+having the same properties as the real sample described in the
+previous section. The distributions of real and simulated absorber
+redshifts, rest equivalent widths and rest equivalent widths
+uncertainties are presented in Fig REF .
+As can be seen, the statistical properties of the simulated samples
+match very well those of the real data. The figure shows that weaker
+absorption lines are preferentially found in high spectrum S/N – and
+therefore brighter quasars – in the same way as the real systems
+are. This bias is systematically introduced by the requirements of the
+line finder algorithm. Below we show that the selection of reference
+quasars described in the previous section takes this effect into
+account.
+
+Defining reference quasars
+As our goal is to isolate the magnitude shifts induced by intervening
+absorber systems, the selection of reference quasars must (i) not
+depend on quasar magnitudes and (ii) take into account the fact that
+the absorption line detectability depends on the spectrum S/N as seen
+above.
+Here we describe how we define such populations of quasars: we first
+select the quasars with detected absorbers above a given rest
+equivalent width FORMULA  Å. We will compare them
+to quasars without any detected absorber above this limit. In the goal
+of avoiding biases that would give rise to magnitude shifts, a number
+of criteria must be applied: the two quasar populations must have the
+same redshift distribution and present the same absorption-line
+detectability. For a given absorber with rest equivalent width FORMULA 
+and redshift FORMULA , we randomly look for a quasar without any
+detected absorber (above FORMULA  Å) such that:
+(i) they have similar redshifts, i.e.
+ FORMULAFORMULA  ;
+(ii) in addition, we need
+to check whether this quasar would have allowed for the detection of
+the absorption line, i.e. if its S/N at the corresponding wavelengths
+is high enough. Such a requirement translates into
+FORMULA , where FORMULA  is the minimum
+equivalent width that can be detected by the line finder at the
+corresponding wavelength. The quasars selected in this way are called
+reference quasars in the following. Our selection procedure
+ensures that if similar absorbers population were present in front of
+the selected reference quasars, we would have been able to detect
+them.
+Since the number of available quasars without detected
+absorbers is larger than the number of quasars with absorbers for the range
+of FORMULA  we are interested in, we repeat the previous step FORMULA  times
+in order to create a series of FORMULA  reference samples that will be used
+for estimating the noise associated to a single quasar sample.
+
+ANALYSIS & RESULTS
+In order to isolate the magnitude changes due to the presence of the
+absorber systems we measure, in a given band FORMULA , the mean magnitude
+difference between quasars with absorbers and reference quasars:
+FORMULA 
+As explained above, we can repeat the selection of reference quasars
+FORMULA  times and create a series of reference samples in a
+bootstrap manner. The intrinsic dispersion of the series samples can
+then be used in order to estimate the errors in the measured magnitude
+shifts.
+As an example, we show in Figure REF  the results
+obtained by using a sample of quasars with MgII absorbers having
+FORMULA  Å and their corresponding reference quasars. The left
+panels show the magnitude distributions of quasars with absorbers
+(solid line histograms) and reference quasars (filled histograms).
+Within the Poisson noise, no significant difference can be seen
+between the two types of distributions. In the right panels, we show
+the mean magnitudes of these two populations. For each band, the
+vertical line shows the value
+FORMULA  and the histogram shows
+the distribution of the mean magnitudes
+FORMULA  of FORMULA  reference
+samples. Such an estimator allows to reveal a significant difference
+between the magnitude distributions of the two populations and
+indicates that quasars with absorbers are affected by reddening
+effects.
+FIGURE 
+FIGURE 
+Before attempting to detect various signals with the data, we make use
+of the sample of simulated absorbers in order to test whether our
+procedure introduces any selection bias. Indeed, as measuring the
+quantity FORMULA  involves the use of
+various procedures performed over a large number of objects (continuum
+normalization, line detectability, rest equivalent width fitting,
+etc.), it is important to investigate the presence of systematic
+effects and quantify them.
+To check whether the properties of quasars with (detected) random
+absorption lines match those of quasars without, we proceed as follows:
+for a given sample of simulated absorbers, we define a population of
+reference quasars as defined in section REF . We
+then compare the mean magnitude difference between the two
+populations. Since the simulated absorption lines were initially put
+in random spectra, any departure from zero will quantify the level of
+systematics associated to our selection procedure. Such a process can
+therefore test whether the samples of quasars with and without
+absorption lines to have the statistical properties.
+We measure the corresponding mean magnitudes and the results are summarized
+in the left panel of Figure REF .
+As can be seen, the mean magnitudes of these two samples are similar,
+but a non-zero magnitude difference is found and does not seem to
+depend on absorber rest equivalent width or wavelength. Using the
+FORMULA -band as a reference (the least affected by extinction effects, see
+section REF ), the mean offset is found to be
+FORMULA 
+Other bands give similar results, ranging from FORMULA  to
+FORMULA . This negative value indicates that our global
+procedure, i.e. line finder and/or reference quasar selection,
+preferentially selects absorbers in brighter quasars. This systematic
+effect occurs at the FORMULA  level in terms of quasar magnitude or
+similarly spectrum S/N. It could be corrected by increasing the
+estimates of FORMULA  by a similar amount. Here we prefer to take
+this effect into account by considering the existence of an offset in
+the mean magnitude differences. It should also be pointed out that
+our procedure indicates that the selection of absorption lines does
+not introduce any color-dependent bias. Indeed, no significant excess
+can be detected by comparing the colors of quasars with simulated
+absorption lines to those of reference quasars.
+We now apply the same procedure to the sample of real MgII absorbers.
+The results are presented in the right panel of Figure
+REF . The gray region shows the zero point
+offset, FORMULA , given by the Montecarlo
+simulations. As we can see, it appears very clearly that the presence
+of a MgII absorber reddens the light of background quasars and the
+stronger the absorber rest equivalent width, the redder the quasar.
+The direct measurements indicate that FORMULA  for
+the strongest systems. However, by taking into account the offset due
+to the selection bias FORMULA , no significant
+difference can be observed. This result contrasts with a number of
+previous studies claiming that absorber systems are preferentially
+found in the spectrum of brighter quasars. It suggests that previous
+claims of such correlations may have arisen due to selection biases.
+The current analysis shows that the use of Montecarlo simulations in
+order to test the recovery of random absorption lines is an important
+task to achieve in order to quantify the amount of systematic effects.
+More details on the reddening and magnification effects are presented
+below.
+Dust reddening
+From the magnitude shifts measured in each band we measure the
+corresponding color excess induced by MgII systems. The measured color
+excess induced by the presence of absorbers provides us with
+constraints on the properties of the dust associated with these
+systems such as the size distribution of the dust particles and the
+related column densities.
+It should be noted that the magnitude shifts measured in different
+bands (fig. REF ) are correlated and the errors
+on the colors are in general significantly smaller than the errors on
+the magnitude shifts. We have therefore computed the color covariance
+matrix from bootstrap re-sampling and estimated the errors on the
+measured color changes. The results are presented in
+fig. REF  where we show the mean color excess measured
+for the four color combinations FORMULA  and FORMULA , as a
+function of absorber rest equivalent width. As can be seen, strong
+MgII absorbers induce, on average, reddening values ranging from
+FORMULA  to FORMULA , which correspond to similar
+FORMULA  values.
+As the SMC extinction curve is known to describe, on average, the reddening
+properties of MgII absorbers ({{cite:e4442143-b270-4429-acd3-20331bfd18f9}}, {{cite:dc71e810-6525-4742-895f-41000f5647dc}}, {{cite:d1329470-2bce-425f-9c1e-ec582b6d805c}}),
+we can write
+FORMULA 
+where FORMULA  is the hydrogen column density associated to a MgII
+system, FORMULA  is the dust to gas ratio, and FORMULA  is the
+wavelength dependence of the extinction curve. This relation shows that
+investigating the color excess as a function of redshift allows us to
+constrain the mean product FORMULA .
+In Figure REF  we have plotted the SMC-based reddening
+values for a series of amplitudes normalized by the SMC dust column
+density
+FORMULA 
+where FORMULA  is the dust-to-gas ratio and FORMULA  is the hydrogen column
+density. Our calculation includes the redshift distribution of the
+corresponding absorbers in each bin. First, we can see the SMC-like
+dust provides a good fit to the measured reddening for most of the
+absorber systems. The dotted lines can be used to quantify the amount
+of dust among various strengths of MgII absorbers. They correspond to
+FORMULA  and show that the optical depth for
+extinction spans a factor FORMULA  for MgII systems in the range
+FORMULA  to 6 Å.
+If the dust-to-gas ratio of MgII absorbers is comparable of that of
+the SMC, it implies that the strongest MgII absorbers have, on
+average, hydrogen column densities of
+FORMULA , i.e. correspond to the regime of
+damped Lyman-FORMULA  systems. This result is in agreement with the
+hydrogen column densities of MgII-selected systems measured by Rao et
+al. (2005).
+FIGURE 
+FIGURE 
+As the sensitivity of the SDSS filters is significantly lower in the
+FORMULA  and FORMULA  bands compared to the FORMULA  and FORMULA  ones, the FORMULA  color
+is measured the most accurately and will be used below to quantify
+reddening properties. We then convert the color excesses FORMULA 
+into FORMULA  and present the color excesses as a function of absorber
+rest equivalent width. The results are presented in
+Fig. REF . As can be seen, we find a strong
+correlation between these two parameters. We can also observe that the
+relation between observed mean FORMULA  and FORMULA  is well described by
+a simple power-law:
+FORMULA 
+with FORMULA , FORMULA . As shown
+in section REF , for an SMC-type
+extinction law, the color excess FORMULA  is roughly proportionally to
+the optical depth for extinction. Hence we can also write
+FORMULA 
+with FORMULA .
+The relation holds for systems with FORMULA  Å which correspond to
+velocity dispersions spanning FORMULA  km/s
+and the dust column densities change by a factor FORMULA  in this
+range. The weakest and strongest absorbers of this sample are
+therefore significantly different but our results indicate
+that their dust and gas content follows a universal relation,
+suggesting that one phenomenon regulates, on average, the amount of
+one quantity with respect to the other.
+Modeling the gas distribution in the halo of galaxies is beyond the
+scope of this paper but we note that this relation strongly constrains
+theoretical models of absorber systems, as the dependence relates
+spatial information, FORMULA , to a quantity that mostly carries
+velocity space information, FORMULA . We believe that understanding this
+relation will greatly improve our knowledge about the nature of these
+systems.
+If we consider the global distribution of strong MgII absorbers it is
+interesting to estimate the relative contribution of optical depth for extinction
+FORMULA , as a function of absorber rest
+equivalent width. Such a quantity is given by the product:
+FORMULA 
+The number of absorbers per unit rest equivalent width and redshift is
+given by Nestor et al. (2005):
+FORMULA 
+with the maximum likelihood values FORMULA  Å and
+FORMULA . This estimation takes into account
+incompleteness detections and is valid down to a rest equivalent width
+limit of FORMULA  Å. Using this result, we have computed the
+relative contribution of dust FORMULA , as a
+function of absorber rest equivalent width and present the results
+in the upper panel of Figure REF . The data points show
+that, for MgII systems with FORMULA  Å, most of the dust contribution
+originates from systems with FORMULA  Å. Therefore most of the
+extinction effects are expected to be associated to such systems. It
+is interesting to mention that an excess of MgII absorbers with
+FORMULA  Å is reported along gamma ray burst lines-of-sight with
+respect to those of quasars (Prochter et al. 2006).
+We can also attempt to estimate the relative dust contribution
+originating from all MgII absorbers, i.e. including also weaker
+systems. First, we know that the functional form used for the
+incidence of MgII absorbers FORMULA 
+holds down to systems as weak as FORMULA Å. In the range 0.3 to
+1 Å we do not have any detection of dust reddening but we can
+attempt to extrapolate the scaling found above (eq. REF ). By
+doing so, we find that the global dust contribution originating from
+systems weaker than 1 Å is smaller than FORMULA 20%. The result is
+similar if, instead of extrapolating eq. REF , we use an upper
+limit from systems with FORMULA  Å, i.e. the weakest systems
+used in the present analysis. Therefore, the vast majority of
+the dust probed by MgII absorption lines originates from strong
+systems, with FORMULA  Å. As dust originates from stars, this
+result appears to be in line with the association between strong MgII
+absorbers and FORMULA  galaxies, i.e. galaxies from which most
+of the star light originates.
+Dust redshift evolution
+We now investigate the dust column densities associated with MgII
+systems as a function of redshift. Using an SMC-type extinction curve,
+we have computed the rest frame E(B-V) values as a function of rest
+equivalent width for three redshift bins. The results are presented in
+Figure REF  and show that the scaling between
+FORMULA  and FORMULA  found in the previous section is consistent with
+being redshift independent but the overall amplitude decreases with
+redshift indicating that MgII absorbers are less dusty at earlier
+times.
+In order to quantify the redshift evolution of the dust, we measure
+the average FORMULA  of all absorbers systems with FORMULA  Å, in
+three redshift bins spanning the range FORMULA . In each case we
+measure the observed and rest frame FORMULA  values. The results are
+shown in the right panel of Figure REF . As we
+can see, the observed reddening effects of MgII systems are on average
+consistent with being redshift independent. Our vision of the distant
+universe is equally affected by MgII absorbers at FORMULA  and
+FORMULA . In contrast, the rest frame FORMULA  values, and
+therefore the dust column densities, show a significant redshift
+evolution. We find that the amount of dust associated with MgII
+absorbers increases by more than a factor two between FORMULA  and
+FORMULA . A simple power law fit to the data points gives
+FORMULA .
+It is interesting to see that such a variation is similar to that of
+the cosmic star density FORMULA . We illustrate this agreement
+in the figure by showing the integrated star formation rate given by
+{{cite:26f792d5-ea5c-4cbf-80e8-4386a2f5139d}} where the scaling has been renormalized to the reddening
+values. Our results therefore provide a new and independent method to
+probe the star formation rate over cosmological time scales.
+If we assume that the redshift and rest equivalent widths dependencies
+can be separated (as suggested by the data points), we can write that
+FORMULA 
+where FORMULA  (see section REF ),
+FORMULA  and FORMULA .
+This functional form provides us with interesting constraints on
+the properties of cold gas and dust. It will be particularly interesting
+to include such information in theoretical models of absorber systems.
+FIGURE 
+
+Dust-to-metals ratio
+We can use the above results to estimate the dust-to-metals
+ratio of MgII absorbers by computing the ratio
+FORMULA 
+adopting Zn (an undepleted Fe-peak element) as an indicator of overall
+metal content. This ratio provides us with an estimate ot the fraction
+of refractory elements depleted onto dust grains, a quantity
+determined by the balance between the formation and destruction of
+dust particules. Using a similar sample of MgII absorbers with
+FORMULA , {{cite:da7fc288-611a-49ae-8eec-bc8ead78aac6}} have measured the mean rest equivalent
+width of FORMULA  and found FORMULA  Å. Assuming
+that most of the zinc is in the form of ZnII, we obtain
+FORMULA  cmFORMULA . Combining this value
+with our estimate of the mean E(B-V) of MgII systems at FORMULA  we
+find
+FORMULA 
+As shown by Wild et al. (2006, see their table 5), the dust-to-metals
+ratios, FORMULA , of the Milky way, LMC and SMC are 4.7,
+3.1 and 1.6 FORMULA , respectively. Our
+analysis therefore shows that, on average, MgII absorbers with
+FORMULA  Å have a dust-to-metals ratio similar to that of our
+Galaxy. The properties of FORMULA  as a function of
+redshift and MgII rest equivalent width will be presented in a future
+paper.
+
+Dust extinction bias in magnitude limited QSO samples
+From the observed E(B-V) values, we can now use the results of the
+reddening Montecarlo simulations presented in section
+REF  and infer the fraction of quasars with
+absorbers missed in the magnitude limited sample. Note that our
+procedure takes into account quasars missed due to both magnitude and
+color selections.
+Assuming that the distribution of intrinsic reddening values is not
+strongly skewed (which is suggested by the results of {{cite:7b09bb68-705b-4cb1-9d58-5eee01fade1f}} with
+radio-selected quasars), we estimate the fraction of MgII absorbers
+missed due to extinction effects and present the results in Fig.
+REF . The fraction of missed systems
+is below one percent for absorbers with FORMULA  Å. However, above this value, incompleteness effects become more
+important. Our analysis indicates that the SDSS misses more than 10%
+of FORMULA  Å MgII absorbers and this rises to more than FORMULA 
+at FORMULA  Å. By extrapolating the trend to stronger systems, we
+see that the SDSS could not detect MgII systems with FORMULA  Å. The fraction of missed quasars with absorbers can be
+parametrized by
+FORMULA 
+with FORMULA  and FORMULA .
+The knowledge of FORMULA  allows us to estimate the global fraction of
+quasars with strong MgII absorbers, per unit redshift, missed
+due to the extinction bias. We have
+FORMULA 
+Therefore, if we consider quasars at FORMULA , about one percent of them
+cannot be observed due to extinction effects by MgII systems.
+As both FORMULA  and the observed FORMULA  of MgII
+systems do not vary strongly with redshift (see section
+REF ), this missing fraction is roughly proportional
+to the quasar redshift. Therefore, if we consider the main sample of
+SDSS quasars (for which the mean redshift is above 1.5) the
+incompleteness due to the dust hosted by MgII absorbers is about
+FORMULA .
+FIGURE 
+
+Recovering the unbiased FORMULA  distribution
+As the fraction of missed quasars with absorbers depends on FORMULA , the
+observed distribution of absorber rest equivalent widths differs from the
+intrinsic one and we have
+FORMULA 
+As we have used the functional form of FORMULA  to
+estimate the missing fraction FORMULA , an exact estimation of these
+quantities should be made with an iterative process using
+eq. REF . However, given the small values of FORMULA 
+and the exponential cutoff of FORMULA , such an
+approach will only bring negligible corrections to FORMULA . Our previous
+estimations are therefore robust.
+The values of FORMULA  shown in Figure REF 
+indicate that the shape of the observed distribution of FORMULA  is expected to be significantly affected at the
+high-end values and to present a deficit.
+
+Gravitational lensing
+In order to detect the potential effects of gravitational lensing, we
+now estimate the magnitude shifts induced by the presence of strong
+MgII absorbers, after correcting for dust extinction.
+In section REF  we have shown that, on
+average, the induced and measured color excess are equivalent (in the
+range of values of interest in our analysis). However, given the shape
+of the QSO magnitude distribution and the selection criteria of the
+SDSS quasar target algorithm, a difference exists between induced and
+measured extinction. Having quantified these effects in section
+REF , we can now use the observed FORMULA 
+values and apply the appropriate observed extinction correction
+to the quasar magnitudes. The corresponding results are shown in Fig.
+REF  where the horizontal line represents the zero
+point obtained with the Monte Carlo simulations for simulated
+absorption lines. By comparing the extinction-corrected magnitude
+shifts to this reference level, we do not find any significant magnification
+signal (for which FORMULA  would be negative).
+If we consider all strong MgII absorbers with FORMULA  Å, we find the
+mean magnitude shift in the FORMULA  band to be:
+FORMULA 
+which was compared to the zero-point and taking into account its
+uncertainty. These mean magnitude shifts are consistent with zero
+(FORMULA  is positive at the 2-FORMULA 
+level only). Our analysis does not show any detectable brightening
+effect, which differs from a number of previous studies claiming
+detections of magnification effects due to metal absorbers. It is
+interesting to point out that without the quantification of systematic
+effects done with the Montecarlo simulations, i.e. without the
+calibration of the zero point, the raw measurement with the real data
+would have led to the detection of a negative magnitude shift which
+could have been interpreted as magnification effects.
+FIGURE 
+We can use the above results to infer an upper limit on magnification effects.
+If we consider the FORMULA  and FORMULA  bands the 3-FORMULA  upper limit on magnification is
+FORMULA 
+As explained in section REF  and detailed in Ménard
+(2005), given the shape of the quasar magnitude distribution, this
+corresponds to an upper limit for the mean magnification:
+FORMULA 
+meaning that the excess magnification is smaller than about ten
+percent. In order to convert this value into a more interesting
+quantity, we can assume the mass distribution of the galaxies
+responsible for the absorption to follow that of a singular isothermal
+sphere. The galactic halos therefore have the following density and
+surface density:
+FORMULA 
+and the corresponding magnification effects of a point source can then be
+computed in a simple way:
+FORMULA 
+where FORMULA  is the impact parameter normalized to the Einstein radius of the
+lens:
+FORMULA 
+where FORMULA  is the velocity dispersion and FORMULA  are
+the angular diameter distances from the observer to the lens, to the
+source, and from the lens to the source. Using the above upper limit
+on the magnification, and the average impact parameter for MgII
+systems with FORMULA  Å recently measured by Zibetti et al. (2006):
+FORMULA  kpc, we find
+FORMULA 
+for absorbers at FORMULA  and quasars at FORMULA . This result shows that,
+on average, MgII absorbers are not associated with massive elliptical
+galaxies and is in agreement with previous estimates based on
+different methods. Previous works have shown that the average MgII
+absorbing galaxy has a luminosity about FORMULA 
+{{cite:0e1cbf6d-b99b-4e49-a2b3-992b6476b4ed}}, {{cite:c984fbf7-55fe-4aec-9f7d-5e93ff01dd1d}}. The expected velocity dispersion of the
+gravitational potential of such galaxies is expected to be FORMULA 
+km sFORMULA . Therefore the sensitivity of the present measurement
+needs to be improved only by a factor of a few in order to detect the
+magnification signal originating from the galaxies associated with
+MgII absorbers. The present analysis is based only on quasars with
+FORMULA . In the future, it might be of interest to quantify the
+selection effects of fainter SDSS quasars as it would double the
+sample size. In a longer term, being able to measure this
+magnification signal as a function of absorber rest equivalent width
+and redshift will provide us with important constraints on the nature
+and environment of metal absorbers.
+
+SUMMARY
+We have used a sample of almost 7000 strong MgII absorbers with
+FORMULA  detected in the SDSS DR4 dataset to investigate the
+gravitational lensing and dust reddening effects they induce on
+background quasars.
+We have attempted to make significant improvements in making such
+measurements, by using a sample of MgII absorbers an order of
+magnitude larger than earlier analyzes and by carefully quantifying a
+number of systematic effects previously neglected.
+In order to do so
+we have restricted our analysis to a well defined sample of FORMULA  SDSS quasars with FORMULA  and considered strong MgII
+absorbers with a rest equivalent width FORMULA  Å. We have
+quantified the efficiency of the absorption-line finder algorithm with
+Monte Carlo simulations and the sensitivity of the SDSS quasar target
+algorithm to detect reddened quasars. We then measured the
+statistical magnitude changes induced by the presence of MgII
+absorbers.
+Our main results are as follows:
+(i) Strong MgII absorbers significantly redden the light of
+their background quasars. We confirm previous results showing that,
+on average, the dust particle size distribution of these systems is
+similar to that of the SMC, i.e. without the presence of a reddening
+excess at FORMULA . Moreover, we find that the observable
+reddening effects follow the simple relation:
+FORMULA  with FORMULA ,
+FORMULA , for absorbers with FORMULA  Å. In this
+range, the mean dust column density increases by a factor
+FORMULA . Since most MgII lines with FORMULA  Å are saturated, this
+scaling suggests that, on average, the dust column density is
+proportional to the velocity dispersion of the gas Such a relation
+provides us with an important constraint for theoretical models of
+absorber systems.
+
+(ii) The analysis of reddening effects as a function of has
+shown that the rest-frame FORMULA  values follows FORMULA , with
+FORMULA , which implies that the amount of dust in MgII
+systems increases by a factor FORMULA  between FORMULA  and FORMULA . Such
+a trend is similar to the evolution of the cosmic star density. Our
+results therefore provide a new and independent method to probe the
+star formation rate through the production of dust over cosmological
+time scales.
+The observed FORMULA  values induced by MgII appear to be
+consistent with no redshift evolution down to FORMULA . This observation
+results from less dust at higher redshift being canceled out by
+higher SMC extinction at high redshift (which probe bluer rest-frame
+wavelengths). We have also showed that, considering all MgII
+absorbers, most of the dust is carried by systems with
+FORMULA  Å.
+
+(iii) We have estimated the dust-to-metals ratio of MgII
+absorbers by measuring the quantity FORMULA  which is similar to that of the Milky way.
+
+(iv) We have quantified the fraction of absorbers and/or quasars
+missed due to extinction effects induced by MgII systems. While less
+than 2% of absorbers with FORMULA  Å are missed, this fraction
+increases up to FORMULA  for the strongest systems of our sample,
+with FORMULA  Å. This effect therefore affects the shape of the
+distribution of absorber rest equivalent widths and we provide a
+correction factor for it. We also show that extinction effects due to
+MgII systems decrease the number of observable quasars by less than
+2%.
+
+(v) Regarding gravitational lensing, in contrast to previous
+studies we do not find an excess of absorbers in brighter quasars and
+we obtain only an upper limit on gravitational magnification:
+FORMULA . We have shown that testing
+the global selection procedure (for detecting absorption lines and
+defining reference quasars) is crucial in order to make such a
+measurement. Our result provides an upper limit for the velocity
+dispersion of MgII absorbing galaxies: FORMULA  km
+sFORMULA . As it has been shown that the mean luminosity of MgII
+absorbing galaxies is about FORMULA  {{cite:0e1cbf6d-b99b-4e49-a2b3-992b6476b4ed}},
+it implies that improving the sensitivity of our measurements by a
+factor of a few might lead to the detection of the magnification
+effects induced by MgII absorbing galaxies and therefore a characterization
+of their mass.
+
+Future directions
+Understanding the nature of the structures probed by absorption lines
+is an important task to achieved. Among metal lines, the MgII doublet, FORMULA Å is one of the most commonly
+detected features in optical quasar spectra but little
+is known about the properties and origin of MgII absorber systems.
+Attempts to find correlations between FORMULA  and galaxy parameters have
+turned out to be rather difficult. Recently, using HST images of 37
+galaxies giving rise to MgII absorption, {{cite:c3b9ac78-7114-41c6-ac82-817e26c3a322}}
+showed that most galactic parameters do not correlate with
+absorptioin strength.
+In this paper we have shown the existence of a well-defined scaling
+relation between the mean E(B–V) induced by MgII absorbers and their
+rest equivalent width FORMULA , and presented its evolution as a function
+of redshift.
+Since most MgII lines with FORMULA  Å are saturated, this scaling
+translates into a relation between dust column density and gas
+velocity dispersion, with FORMULA  spanning the range 100 to about
+600 km/s.
+Theoretical models are needed in order to gain insight into the origin
+of this relation. We believe that being able to understand and
+reproduce this scaling will shed light on the nature and properties
+of the structures traced by low-ionization absorption lines.
+
+acknowledgments
+B. M. thanks Nadia Zakamska for her help with using the SDSS pipeline.
+Funding for the creation and distribution of the SDSS Archive has been
+provided by the Alfred P. Sloan Foundation, the Participating
+Institutions, the National Aeronautics and Space Administration, the
+National Science Foundation, the U.S. Department of Energy, the
+Japanese Monbukagakusho, and the Max Planck Society.

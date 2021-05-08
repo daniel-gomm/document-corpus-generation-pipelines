@@ -1,0 +1,458 @@
+
+ Subrings of the asymptotic Hecke algebra of type  FORMULA
+Dean AlvisDepartment of Mathematical SciencesIndiana University South BendSouth Bend, IN, 46634, USA2020/09/07 17:57:52
+Introduction
+Let FORMULA  be a finite Coxeter
+group with set of distinguished generators FORMULA ,
+length function FORMULA ,
+and Bruhat order FORMULA .
+Let FORMULA  be the asymptotic Hecke algebra
+of FORMULA , as defined by Lusztig in
+{{cite:e7da283d-6424-4c14-9dbf-d4c78d56d746}} (see also
+{{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}}). As an
+additive group,
+FORMULA  is a free abelian group with basis
+FORMULA  indexed by FORMULA .
+The multiplication
+operation of FORMULA  is given by
+FORMULA 
+where the structure constants
+FORMULA 
+are described in the next section.
+It is known that FORMULA  is an associative ring
+with identity.
+Moreover,
+if FORMULA  is a left cell of FORMULA , then
+FORMULA 
+is a FORMULA -subalgebra of FORMULA .
+We denote this ring FORMULA .
+Fokko du Cloux
+has computed FORMULA 
+for all FORMULA .
+In fact,
+du Cloux has determined all of the coefficients,
+not just the leading coefficients,
+of the structure constants FORMULA  of
+the Hecke algrebra: see {{cite:b8e593e3-6e2d-4889-8f4b-f5a2517b99b6}}.
+By du Cloux's calculations, the coefficients
+of the FORMULA  are nonnegative integers.
+Since the same is known for the
+Kazhdan-Lusztig polynomials,
+results of Lusztig ({{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}})
+show that all of the conjectures of
+{{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}},
+hold in type FORMULA .
+In particular, each left cell FORMULA 
+of FORMULA  contains a unique element
+of FORMULA , the set of distinguished
+involutions. Moreover, if
+FORMULA ,
+then FORMULA  is the identity element of
+FORMULA .
+In the current investigation, the
+structure constants FORMULA 
+are needed only
+for FORMULA ,
+FORMULA  a left cell of FORMULA .
+These constants
+were calculated by computer using
+the algorithm described in Section 2,
+which differs from that used by du Cloux.
+There are a total of 206 left cells in
+type FORMULA  ({{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}}).
+For FORMULA  a
+left cell of FORMULA , the associated
+FORMULA -graph gives rise to a corresponding
+FORMULA -module as in {{cite:715d1f09-5ebf-40f5-87d3-d3033bc03d56}},
+which will be denoted
+FORMULA .
+We say a bijection
+FORMULA 
+is a
+permutation isomorphism
+from FORMULA  to FORMULA  if
+FORMULA 
+for all
+FORMULA .
+A computer search of the matrices
+of structure constants reveals the following
+result. (The author knows of no a priori
+proof of this result.)
+Theorem 1.1 Suppose FORMULA  is of type FORMULA  and
+FORMULA , FORMULA  are left cells of FORMULA 
+such that the corresponding modules
+FORMULA , FORMULA  are isomorphic.
+Then there is a unique permutation
+isomorphism
+from
+FORMULA  to
+FORMULA .
+
+For a left cell FORMULA  not in the largest
+two-sided cell FORMULA , we have
+FORMULA  or 2,
+and hence FORMULA  is easily described (see Section 3).
+Thus the interesting cases are those
+for which FORMULA . There are
+three isomorphism classes of modules
+FORMULA , FORMULA , represented
+by FORMULA , FORMULA , FORMULA  (in the notation
+of {{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}}).
+Sections 4–6 describe the rings FORMULA 
+for these cases. A CAS program was used to find
+a set of generators over FORMULA , the
+characteristic polynomials for the left multiplication
+operators FORMULA ,
+and the subsets of
+FORMULA 
+spanning subalgebras of FORMULA .
+The author is indebted to Victor Ostrik for suggesting
+this problem, and to George Lusztig and Victor Ostrik
+for several helpful communications.
+
+The computation of the structure constants
+Let FORMULA , FORMULA  be as in the previous section.
+Let FORMULA  be the corresponding Hecke algebra
+over FORMULA ,
+FORMULA  an indeterminate, with standard basis
+FORMULA  satisfying
+FORMULA 
+for FORMULA , FORMULA .
+(This notation of {{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}} differs
+slightly from that in {{cite:715d1f09-5ebf-40f5-87d3-d3033bc03d56}}.)
+The semilinear involution FORMULA 
+of FORMULA  is given by FORMULA ,
+FORMULA .
+The basis
+FORMULA  for
+FORMULA  (denoted
+FORMULA 
+in {{cite:715d1f09-5ebf-40f5-87d3-d3033bc03d56}}) satisfies
+FORMULA 
+where FORMULA 
+when FORMULA , FORMULA , FORMULA  when FORMULA ,
+and
+FORMULA .
+For FORMULA ,
+define FORMULA  by
+FORMULA 
+Then FORMULA  is determined
+by
+FORMULA 
+({{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}}), where
+FORMULA  is a nonnegative integer depending
+only on the two-sided cell containing FORMULA 
+(see below).
+Now, if FORMULA  are given by
+FORMULA 
+then
+FORMULA 
+by {{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}},
+where
+FORMULA  is the inverse matrix
+of
+FORMULA .
+Further, if FORMULA  is finite then
+FORMULA 
+by {{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}},
+where FORMULA  is the longest element of FORMULA  and
+FORMULA .
+Put
+FORMULA ,
+and let
+FORMULA 
+so FORMULA 
+is the Kazhdan-Lusztig polynomial for FORMULA , FORMULA .
+Define
+FORMULA 
+Then
+FORMULA 
+Therefore
+formula (REF ) is equivalent to
+FORMULA 
+To find the structure constants
+FORMULA 
+for FORMULA  in type FORMULA ,
+the polynomials
+FORMULA  were evaluated by computer for a
+fixed FORMULA 
+and all FORMULA , FORMULA ,
+using a
+straightforward calculation based on
+(REF ).
+The leading term of the sum on the left
+side of (REF ) was then found for
+FORMULA , using the
+Kazhdan-Lusztig polynomials computed in the
+course of determining the left cells
+in {{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}}.
+Varying FORMULA 
+over FORMULA  produced the
+value of the FORMULA -function on FORMULA :
+if FORMULA  denotes the degree of the
+left side of (REF ) and
+FORMULA 
+then FORMULA  for FORMULA .
+Once the value FORMULA  had been found,
+the structure constants FORMULA 
+were then determined using (REF ).
+The results of these calculations are summarized
+in the next sections.
+
+Small left cells
+For the remainder of this paper
+FORMULA  is of type FORMULA .
+The notations of {{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}} are used
+for the left and two-sided cells.
+(There is a typographic error in {{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}}:
+the left cell FORMULA  is equal to FORMULA ,
+not FORMULA .)
+In particular, the two-sided cells of FORMULA 
+are FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , FORMULA , with
+FORMULA  the “big” cell.
+If FORMULA  is contained in one
+of the two-sided cells FORMULA , FORMULA  or FORMULA , then
+FORMULA .
+In this case FORMULA 
+where FORMULA ,
+and FORMULA .
+Now suppose FORMULA  is contained in one
+of the two-sided cells FORMULA , FORMULA , or FORMULA .
+In this case
+FORMULA ,
+and
+FORMULA 
+where FORMULA  is the distinguished involution
+and FORMULA  is the other involution in FORMULA .
+Then
+FORMULA 
+with identity element FORMULA .
+Moreover, the calculations described in
+Section 2 show
+FORMULA 
+From these results and the structure of the
+modules FORMULA  given in {{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}},
+Theorem REF  holds
+for left cells FORMULA  not contained in FORMULA .
+
+The case  FORMULA
+It remains only to consider the left cells
+FORMULA  such that
+FORMULA .
+Suppose FORMULA  is the left cell FORMULA , so
+FORMULA  and
+FORMULA  ({{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}}).
+Let
+FORMULA , where
+FORMULA .
+The elements FORMULA , ..., FORMULA  of
+FORMULA  are indexed
+according to the
+list of reduced expressions given in
+Table REF .
+TABLE 
+The structure constants
+FORMULA  are described below
+by giving matrices
+FORMULA , ..., FORMULA , where
+for fixed FORMULA , FORMULA  is the
+matrix FORMULA ,
+with FORMULA  and FORMULA  varying over
+FORMULA  in the order given in
+Table REF .
+Note that FORMULA  is the transpose of the
+left multiplication operator
+FORMULA .
+To save space, only a set of generators is
+given explicitly, and the other matrices
+are then described in terms of those
+generators.
+The calculations described in
+Section 2 yield FORMULA , the identity matrix,
+so FORMULA  is the distinguished involution of FORMULA .
+Also,
+FORMULA 
+FORMULA 
+and
+FORMULA 
+Moreover,
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+and
+FORMULA 
+This completes the description of the multiplication structure
+constants when FORMULA .
+After similar calculations were carried out
+for the left cells FORMULA ,..., FORMULA ,
+a computer search established the
+corresponding cases of Theorem REF .
+In addition, we have the following.
+Theorem 4.1 Suppose FORMULA  and
+FORMULA  is a nonempty subset of FORMULA .
+Then
+FORMULA  is a subring (with 1) of
+FORMULA  if and only if
+FORMULA  is one of the sets
+FORMULA ,
+FORMULA ,
+FORMULA .
+
+The characteristic polynomials of
+the matrices FORMULA  appear in Table REF .
+TABLE 
+
+The case  FORMULA
+In this section FORMULA  is the left cell FORMULA 
+of FORMULA , so
+FORMULA  and
+FORMULA .
+We use a adapt the notation of the previous section
+to this case.
+The elements FORMULA , ..., FORMULA  of
+FORMULA  are indexed as in
+Table REF .
+TABLE 
+Let FORMULA  be the FORMULA -matrix
+FORMULA .
+Then
+FORMULA ,
+FORMULA 
+FORMULA 
+and
+FORMULA 
+by the calculations described in
+Section 2.
+Further,
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+and
+FORMULA 
+This completes the description of the structure constants
+for the left cell FORMULA .
+As before, after the structure constants for
+FORMULA ,...,FORMULA  were also computed,
+the relevant cases of Theorem REF  were verified by a
+computer search.
+We also have the following.
+Theorem 5.1 Suppose FORMULA  and
+FORMULA  is a nonempty subset of FORMULA .
+Then
+FORMULA  is a subring (with 1) of
+FORMULA  if and only if
+FORMULA  is one of the sets
+FORMULA 
+
+The characteristic polynomials of
+the matrices FORMULA  appear in
+Table REF .
+TABLE 
+
+The case  FORMULA
+Suppose FORMULA  is the left cell FORMULA .
+Thus
+FORMULA  and
+FORMULA .
+A notation similar to that in the previous
+two sections is used for the elements of
+FORMULA  and the matrices
+of structure constants.
+Table REF  lists the
+elements FORMULA , ..., FORMULA  of
+FORMULA .
+TABLE 
+Let FORMULA  be the FORMULA  matrix
+FORMULA .
+Then
+FORMULA ,
+FORMULA 
+FORMULA 
+and
+FORMULA 
+Also,
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+and
+FORMULA 
+As before, a computer search was used to verify the cases
+of Theorem REF  corresponding to left cells with
+FORMULA -modules isomorphic to FORMULA .
+Moreover, the following holds.
+Theorem 6.1 Suppose FORMULA 
+and
+FORMULA  is a nonempty subset of FORMULA .
+Then
+FORMULA  is a subring (with 1) of
+FORMULA  if and only if
+FORMULA  is one of sets
+FORMULA 
+
+Table REF  contains the characteristic polynomials
+of the matrices FORMULA .
+TABLE 
+
+Concluding remarks
+We consider the effect of extending scalars to
+FORMULA .
+It is known that FORMULA  is a splitting
+field for FORMULA  and FORMULA  is a splitting
+field for FORMULA  by {{cite:7affa1e9-d38a-4eb7-88d2-0328dc8e05dd}}.
+For FORMULA  a left cell of FORMULA  and FORMULA  a field, put
+FORMULA 
+Since the coefficients of the structure constants
+FORMULA  are nonnegative for FORMULA 
+by the calculation of du Cloux {{cite:b8e593e3-6e2d-4889-8f4b-f5a2517b99b6}}, a
+result of Lusztig ({{cite:c1498bc2-4e91-4cdb-9c5f-b40b63266893}})
+shows that
+FORMULA 
+is semisimple.
+Thus FORMULA  is semisimple.
+A CAS program was used to compute the dimension of
+the derived algebra
+FORMULA 
+This dimension is 0 unless FORMULA , and is
+3, 6, and 12 if
+FORMULA , FORMULA , and FORMULA ,
+respectively. Another CAS program has
+verified that the number of central idempotents
+in FORMULA  is 11, 12, and 12 if
+FORMULA , FORMULA , and FORMULA ,
+respectively.
+From these observations and the structure
+of the modules FORMULA 
+given in {{cite:b06ac8f9-f8a2-4786-9280-fab3e65da1cd}}, the following holds.
+Theorem 7.1 Let FORMULA  be a left cell of FORMULA .
+Then FORMULA 
+is spit semisimple over FORMULA , and is isomorphic
+to the endomorphism algebra of the FORMULA -module
+FORMULA .
+
+Databases containing the
+structure constants for FORMULA 
+for all left cells FORMULA  and the
+Kazhdan-Luztig polynomials are available
+from the author on request.

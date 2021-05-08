@@ -1,0 +1,298 @@
+
+Friedmann Equations and Thermodynamics of Apparent Horizons
+Yungui Gong
+[]gongyg@cqupt.edu.cn
+College of Mathematics and Physics, Chongqing
+University of Posts and Telecommunications, Chongqing 400065,
+China
+GCAP-CASPER, Department of Physics, Baylor University,
+Waco, TX 76798, USA
+Anzhong Wang
+[]anzhongwang@baylor.edu
+GCAP-CASPER, Department of Physics, Baylor University,
+Waco, TX 76798, USA
+With the help of a masslike function which has dimension of energy and equals to
+the Misner-Sharp mass at the apparent horizon, we show that the first law of
+thermodynamics of the apparent horizon FORMULA  can be derived from the
+Friedmann equation in various theories of gravity, including the Einstein,
+Lovelock, nonlinear, and scalar-tensor theories. This result strongly suggests
+that the relationship between the first law of thermodynamics of the apparent
+horizon and the Friedmann equation is not just a simple coincidence, but rather
+a more profound physical connection.
+
+98.80.-k,04.20.Cv,04.70.Dy
+The derivation of the thermodynamic laws of black holes from the classical
+Einstein equation suggests a deep connection between gravitation and thermodynamics {{cite:761ee96d-43f1-4a9d-b1c9-cda8d6179e40}}.
+The discovery of the quantum Hawking radiation {{cite:f7ed2fde-867b-4913-9275-358c7a48c3d5}} and black hole
+entropy which is proportional to the area of the event horizon of the black hole
+{{cite:78a9e2c0-2d07-4fb4-8706-ed88f9a9d001}} further supports this connection and the thermodynamic (physical) interpretation
+of geometric quantities.
+The interesting relation between thermodynamics
+and gravitation became manifest when Jacobson derived Einstein equation
+from the first law of thermodynamics by assuming
+the proportionality of the entropy and the horizon area
+for all local acceleration horizons {{cite:6689a314-7582-418a-9cb5-d4591844ea0a}}.
+In cosmology, like in black holes, for the cosmological model
+with a cosmological constant (called de Sitter space), there
+also exist Hawking temperature and entropy associated with the
+cosmological event horizon, and thermodynamic laws of the
+cosmological event horizon {{cite:def3a772-a982-4d65-b3ce-37d38dd5bc0c}}. In de Sitter space, the event horizon coincides
+with the apparent horizon (AH). For more general cosmological models, the event horizon
+may not exist, but the AH always exists, so it is possible to have
+Hawking temperature and entropy associated with the AH. The connection
+between the first law of thermodynamics of the AH and the Friedmann equation
+was shown in {{cite:7a84e4c7-3ed9-4250-9292-5ef14f76cdf9}}. Now, we must ask if this interesting relation between gravitation
+and thermodynamics exists in more general theories of gravity, like Brans-Dicke (BD) theory and
+nonlinear gravitational theory. In {{cite:29753d80-3bc9-4fab-8284-98d494118b10}}, the gravitational field equations for
+the nonlinear theory of gravity were
+derived from the first law of thermodynamics
+by adding some nonequilibrium corrections.
+In this Letter, we show that equilibrium thermodynamics indeed exists for more general
+theories of gravity, provided that a new masslike function is introduced.
+To show our claim, we begin by
+reviewing the thermodynamics of the AH with the use of the Misner-Sharp (MS) mass in
+Einstein and BD theories of gravity, whereby we find the
+equilibrium thermodynamics fails to hold for the BD theory.
+The Einstein equation can be rewritten as the mass formulas with the help of the MS
+mass FORMULA . The energy flow through the AH FORMULA  is related with the MS
+mass. Since the MS mass FORMULA , the Hawking temperature FORMULA , and the entropy
+FORMULA  of the AH are geometric quantities, the first law of thermodynamics of
+the AH can be thought of as a geometric relation. Therefore, we expect
+the geometric relation to hold in other gravitational theory if it holds in Einstein theory.
+To achieve this, we replace the MS mass FORMULA  by a masslike function
+FORMULA  which equals to the MS mass FORMULA  at the AH, we then
+show that the connection between the first law of thermodynamics of the AH
+and the gravitational equations holds in scalar-tensor and nonlinear
+theories of gravity without adding nonequilibrium correction.
+For a spherically symmetric space-time
+with the metric FORMULA ,
+using the MS mass
+FORMULA  {{cite:cc434bf1-fd62-4f16-8f1e-b75e56f12851}},
+the FORMULA  components of the Einstein equation give the mass formulas {{cite:23185a94-f44d-400b-b14e-eee9e963fb67}}, {{cite:6c7631de-f7db-427a-94e5-ede61e881b70}}
+FORMULA 
+where the unit spherical metric is given by FORMULA 
+and FORMULA . From now on, all the indices are raised and lowered by the metric FORMULA 
+and the covariant derivative is with respect to FORMULA .
+The AH is
+FORMULA 
+At the AH, the MS mass FORMULA , which
+can be interpreted as
+the total energy inside the AH. Now we use the (approximate)
+generator FORMULA  of the
+AH, which is null at the horizon, to project the mass formulas.
+Since FORMULA , at the AH we find that
+FORMULA 
+where the horizon temperature is FORMULA 
+and the horizon entropy is FORMULA .
+On the other hand, using
+the mass formulae (REF ), we get the energy flow through the AH
+FORMULA 
+Therefore, the Friedmann equation gives rise to the first law of
+thermodynamics FORMULA  of the
+AH. From the above definitions, we see that
+the relation FORMULA  is a geometrical relation which depends on
+the only assumption of the Robertson-Walker metric. To connect the geometrical quantity FORMULA 
+with the energy flow through the AH, we need to use the Friedmann
+equations. Therefore, for any gravitational theory, if we can write the gravitational field equation as
+FORMULA  and regard the right-hand side as the effective
+energy-momentum tensor, then we find the energy flow through the AH,
+whereby we derive the first law of thermodynamics
+of the AH FORMULA . For example, in the Jordan frame of the
+scalar-tensor theory of gravity, if we take the right-hand side of gravitational field equation
+as the total effective energy-momentum tensor, then the Friedmann equation
+can be regarded as a thermodynamic identity at the AH {{cite:7008a273-1649-421c-8552-5b50b84835b9}}.
+The connection between the first law of thermodynamics and
+the Friedmann equation at the AH was also found for gravity with Gauss-Bonnet term,
+the Lovelock theory of gravity {{cite:7a84e4c7-3ed9-4250-9292-5ef14f76cdf9}}, and the braneworld cosmology
+{{cite:b92295ab-66d0-401c-ae32-62a37d048386}}. For a general static spherically symmetric and stationary axisymmetric space-times,
+it was shown that Einstein equation at the horizon give rise to
+the first law of thermodynamics {{cite:af6d4085-5257-43d7-b548-d26c7c10ea60}}, {{cite:4046bcec-83f2-450d-a968-66561d7b1cfe}}. For the Lovelock gravity, the interpretation
+of gravitational field equation as a thermodynamic identity was proposed in
+{{cite:da2da64a-7989-4a8d-95d2-865d6917c5fc}}.
+Alternatively, the mass formulae (REF ) can be written as the so-called unified first law
+FORMULA  {{cite:bcb22c16-ccd9-45bc-a373-b53814315ab6}}, {{cite:35d52cd2-13b7-467f-9017-d447e50d07b6}}, where FORMULA 
+and FORMULA . Projecting the
+unified first law along the direction tangent to the AH
+(or trapping horizon in Hayward's terminology), the first law of thermodynamics
+FORMULA  can be
+derived, where the horizon temperature and entropy are given, respectively,
+by FORMULA  and FORMULA . Based on this result,
+the connection between the Friedmann equation and the first law of
+thermodynamics of the AH with the work term was widely discussed for Einstein
+gravity, Lovelock's gravity, the scalar-tensor theory of gravity,
+the nonlinear theory of gravity, and the braneworld scenario
+{{cite:11740073-8570-4919-8308-eff344e04865}}, {{cite:a157d472-70be-415f-93c6-e8e642ddb974}}, {{cite:30dc2d7e-3d9b-4934-9b1e-1a742f9f33ab}}, {{cite:8463de5b-ce3b-41ba-b363-e2c2abba4555}}, {{cite:094105d9-012d-4e3b-84f8-930a8bbdee3c}}, {{cite:8014b267-2cc4-49b9-b316-5387f14f798f}}.
+This connection between the Friedmann equation and the first law of thermodynamics
+of the AH suggests the unique role of the AH in thermodynamics
+of cosmology. This may be used to probe the property of dark energy {{cite:6c7631de-f7db-427a-94e5-ede61e881b70}}, {{cite:67e9afc0-56bc-404e-bf1e-aaa4c66be202}}.
+For example, if we assume that the temperature of the dark components is FORMULA , then use the relation
+FORMULA , we find that the total energy density
+of the dark components is given by
+FORMULA 
+where FORMULA , FORMULA  is the
+energy density of the cosmological constant, FORMULA  is the constant comoving entropy
+density, and FORMULA  is the physical entropy density. The right-hand side of the above
+equation contains three different terms, which correspond to, respectively,
+the cosmological constant, the stiff fluid, and the pressureless matter. However,
+the coefficients of these terms are not all independent. In fact, the current
+observational constraints tell us that the stiff fluid is negligibly small,
+for which we must assume FORMULA . This in turn implies that the pressureless
+matter given by the last term is also negligibly small. So the pressureless
+matter in the last term cannot account for dark matter. In other words,
+the dark matter must not be in equilibrium with the AH.
+For the BD theory {{cite:58c32bfe-8c14-4b89-8372-83421b012972}}
+FORMULA 
+the
+BD scalar FORMULA  plays the role of the gravitational
+constant. The MS mass is {{cite:b08d7a0f-3b0a-4072-9b1f-ce95060b3d5f}}
+FORMULA 
+At the AH,
+FORMULA . The horizon entropy is
+FORMULA , so we get
+FORMULA 
+On the other hand, we have
+FORMULA 
+Comparing Eqs. (REF ) with (REF ), we find that the equilibrium
+thermodynamics FORMULA  fails to hold for the BD
+theory. Similarly, it can be shown that FORMULA  does not hold
+in the nonlinear and scalar-tensor theories of gravity. It is
+exactly because of this that it was argued nonequilibrium
+treatment might be needed.
+As mentioned above,
+the mass, temperature and entropy of the AH are all geometrical
+quantities, and the first law of thermodynamics
+of the AH can be regarded as a geometric relation.
+Now, the important question is whether a mass function exists that serves
+as the bridge between the Friedmann equation and the first law of thermodynamics
+of the AH without nonequilibrium correction.
+In the following, we show that the answer is affirmative.
+It has exactly the dimension of energy, and is equal to the MS mass
+at the AH. To distinguish it with the MS mass,
+we call it the masslike function.
+To show our above claim, let us write
+the FORMULA  components of the Einstein equation as
+FORMULA 
+where the mass-like function FORMULA  is defined as
+FORMULA 
+At the AH, FORMULA  and
+the masslike function FORMULA , which is equal to the MS mass.
+For the Robertson-Walker metric we have FORMULA ,
+FORMULA  and FORMULA .
+Then, the mass formulas (REF )
+yield the Friedmann equations
+FORMULA 
+FORMULA 
+Combining Eqs. (REF ) and (REF ), we can derive
+the energy conservation law FORMULA . Thus,
+the mass formulas (REF ) give rise to the full set of the
+cosmological equations.
+At the AH, the masslike function FORMULA , which
+is the total energy inside the AH. The energy flow is
+FORMULA 
+On the other hand, using
+the mass formulas (REF ), we get the energy flow through the AH
+FORMULA 
+Therefore, the Friedmann equation gives rise to the first law of
+thermodynamics FORMULA  of the AH. While this result is the same as
+that obtained by using the MS mass, we show below that the equilibrium
+thermodynamics can be derived for BD and nonlinear gravities by using our
+newly defined masslike function, although it cannot be done by using
+the MS mass, as shown above.
+For the BD theory, the mass-like function is defined as
+FORMULA 
+At the AH, it reduces to the MS mass,
+FORMULA . The FORMULA  components
+of the gravitational field equation become
+FORMULA 
+Applying to the Robertson-Walker metric, the above equation gives the
+Friedmann equations
+FORMULA 
+FORMULA 
+The mass formulas (REF ) or Eqs.  (REF ) and (REF ) are
+not sufficient to describe the full
+dynamics of the BD cosmology. In the BD cosmology, we also need
+the equation of motion of the BD scalar field FORMULA 
+in addition to Eqs. (REF ) and (REF ), which is given by
+FORMULA 
+From the definition of the masslike function (REF ), at the AH we find
+FORMULA 
+where the entropy now is FORMULA . Using the mass formulas (REF ),
+we get the energy flow through the AH
+FORMULA 
+where we used Eq. (REF ) in deriving the above equation.
+From Eqs. (REF )-(REF ), the right-hand side of
+Eq. (REF ) can be written as
+FORMULA .
+Therefore, we see that in BD theory, the first law of thermodynamics of
+the AH FORMULA  can be derived from the Friedmann equation.
+The thermodynamic prescription can be easily extended to
+general scalar-tensor theory of gravity with the Lagrangian
+FORMULA 
+In this case, FORMULA  plays the role of
+the gravitational constant, so now we can define the mass-like function as
+FORMULA 
+and the horizon entropy as FORMULA . Then, using these
+definitions, we can show that FORMULA .
+For the nonlinear theory of gravity FORMULA , we can define the masslike function as
+FORMULA 
+and the horizon entropy FORMULA , where FORMULA .
+Again, it is easy to show that FORMULA . Therefore,
+the thermodynamics of the AH holds for both the general
+scalar-tensor theory of gravity and the nonlinear theory of gravity.
+Now we show how to derive the first law of thermodynamics of the AH
+from the Friedmann equation in the Lovelock gravity. The Lovelock
+Lagrangian is FORMULA  {{cite:4474c61c-fe9d-4cf7-9f6e-95193f4b3a8d}}, where
+FORMULA 
+Using the Robertson-Walker metric, we obtain the Friedmann equations in FORMULA  dimensional
+space-time
+FORMULA 
+and
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  for
+FORMULA .
+The masslike function can now be defined as
+FORMULA 
+where FORMULA  is the volume of unit FORMULA -dimensional sphere
+and the last equality is evaluated at the AH. Note that although the geometric
+form is different, the masslike function at the AH
+has the same value as that in Einstein theory of gravity,
+which is the total energy inside the AH. The entropy of
+the AH is
+FORMULA 
+From Eqs. (REF ) and (REF ), we can easily check that FORMULA 
+holds with the horizon temperature FORMULA . Using the Friedmann Eqs.
+(REF ) and (REF ), we find the energy flow through the AH
+is FORMULA , which is the same as that in Einstein's gravity.
+By properly
+defining the masslike function in each theory of gravity, we find
+that the corresponding Friedmann equations can be written in the
+form FORMULA  of the first law of thermodynamics at the
+AH. In other words, the thermodynamic description of
+the gravitational dynamics is manifest through the mass formulas.
+Therefore, the gravitational dynamics can be considered as the
+thermodynamic identity FORMULA . This is true for a variety of
+theories of gravity, including the Einstein, Lovelock, nonlinear,
+and scalar-tensor theories. This non-trivial connection between the
+thermodynamics of the AH and the Friedmann equation
+may represent a generic connection, and it suggests the unique role
+that the AH can play in the thermodynamics of
+cosmology. Such a thermodynamic description of the AH can
+also be used to probe other physical systems and properties, such as
+the nature of dark energy and the thermodynamics of black holes in
+each of these theories.
+Finally, we would like to note that, although the newly defined masslike function
+reduces to the MS mass at the AH, the corresponding energy
+flows passing through the horizon are different. This explains why our
+masslike function gives rise to the first law of
+thermodynamics in various theories of gravity, while the MS mass does not.
+Because of the masslike function, the energy momentum tensor includes the contribution
+of gravitational fields such as BD scalars, or curvature scalars in nonlinear
+theory of gravity, in addition to the matter fields. This treatment allows a reinterpretation
+of the nonequilibrium correction introduced in {{cite:29753d80-3bc9-4fab-8284-98d494118b10}}.
+The studies of other properties of the newly-defined masslike function, including
+the physical and geometrical difference between the MS mass and it are
+important and should be reported somewhere else.
+Y.G. Gong is supported by NNSFC under Grants
+No. 10447008 and 10605042, CMEC under Grant No. KJ060502, and
+SRF for ROCS, State Education Ministry. A. Wang's work was partially supported
+by a VPR fund from Baylor University.

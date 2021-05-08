@@ -1,0 +1,359 @@
+
+Quantum toy model for black-hole back-reaction
+Clovis MaiaFORMULA  and Ralf Schützhold FORMULA
+FORMULA Institut für Theoretische Physik,
+Technische Universität Dresden, 01062 Dresden, Germany
+FORMULA Instituto de Física Teórica,
+Universidade Estadual Paulista, 01405-900, São Paulo, SP, Brazil
+We propose a simple quantum field theoretical toy model for black hole
+evaporation and study the back-reaction of Hawking radiation onto
+the classical background.
+It turns out that the horizon is also “pushed back” in this situation
+(i.e., the interior region shrinks) but this back-reaction is not caused
+by energy conservation but by momentum balance.
+The effective heat capacity and the induced entropy variation can have
+both signs – depending on the parameters of the model.
+04.62.+v, 04.70.Dy.
+Introduction   Black holes are arguably the most simple and at the same time most
+intriguing objects in the universe.
+The no-hair theorem states that they can fully be described by a
+small set of parameters such as their mass FORMULA  and angular momentum FORMULA .
+Yet our standard picture of black holes contains many striking
+properties:
+Even though black holes should be completely black classically,
+they emit Hawking radiation due to quantum effects {{cite:c4dd95fd-de25-4d98-90b8-d60d59d3d913}}.
+This evaporation process causes the black hole (horizon) to shrink
+(in the absence of infalling matter) due to the back-reaction of
+Hawking radiation.
+Therefore, black holes possess a negative heat capacity {{cite:c4af1eb0-23c0-4c6c-9890-8872584632e8}},
+i.e., the temperature grows with decreasing energy.
+Extrapolating this picture till the final stages of the evaporation,
+the black hole should end up in an explosion, where its temperature
+blows up and thus effects of quantum gravity should become important.
+Perhaps most fascinating is the observation that the second law of
+thermodynamics apparently {{cite:84780078-fc3a-43e2-9e00-8900548c7f5e}} requires to assign an entropy
+FORMULA  to the black hole, which is determined by the horizon surface
+area FORMULA  via FORMULA  (in natural units FORMULA ).
+Taking the analogy between black holes and thermodynamics seriously
+provides a very consistent picture, which has been confirmed by various
+gedanken experiments {{cite:84780078-fc3a-43e2-9e00-8900548c7f5e}}, {{cite:3bbc9fcc-d351-4111-a61e-0efa4ff52e90}} considering the construction of
+heat engines with black holes etc.
+It almost seems as if nature was trying to give us some hints regarding
+the underlying structure which unifies quantum theory and gravity –
+which we do not fully understand yet.
+In order to understand these hints better, it might be useful to ask
+the question of whether (and how) the aforementioned properties depend
+on the detailed structure of the Einstein equations or whether they are
+more universal.
+For example, the study of condensed-matter based black hole analogues
+{{cite:0e888b1e-6b6a-433c-8660-9346677d8d1a}}, {{cite:d25effde-d9bf-4e32-8e96-a65979e3b7ee}} shows that Hawking radiation is a fairly robust
+quantum phenomenom {{cite:fbce44ad-0bbf-4a12-b453-086e69dd0dc5}}, which just requires the
+occurrence of an effective horizon and is quite independent of the
+Einstein equations.
+In contrast, the introduction of a black hole entropy with the desired
+properties seems to rely on the Einstein equations.
+In the following, we try to further disentangle universal features from
+properties which are specific to black holes (e.g., Einstein equations,
+rotational symmetry, conserved ADM mass).
+To this end, we propose a toy model which captures some of the relevant
+features of black holes and allows us to study the back-reaction of the
+emitted Hawking radiation onto the classical background solution.
+Toy Model   In the toy model we are going to discuss, the gravitational field will
+be represented by a real scalar field FORMULA  in 1+1 dimensions with
+the Lagrangian (FORMULA )
+FORMULA 
+With respect to the propagation speed FORMULA  of the FORMULA  field,
+this form is Lorentz invariant.
+The potential FORMULA  is supposed to be very stiff, i.e., the field
+FORMULA  is assumed to be heavy in the sense that it can be well
+approximated by a classical field.
+For definiteness, we choose the sine-Gordon potential
+FORMULA , but other potentials admitting
+stable solitonic solutions would also work.
+The global ground state FORMULA  then corresponds to a vanishing
+gravitational field whereas a kink (topological defect) models a black
+(or white) hole horizon
+FORMULA 
+The position FORMULA  of the kink at rest is arbitrary and its width
+FORMULA  is determined by FORMULA  and FORMULA .
+In comparison to other models of black holes
+(see, e.g., {{cite:37377475-8496-4a02-9c78-ef28b14e5dfc}}, {{cite:439af7b0-a8e1-4482-97ce-43ac62d0c17a}}), the advantage of the above
+set-up lies in the topologically protected stability and localization
+of the kink, which behaves very similar to a particle
+(see also {{cite:f779e703-4fb5-4f51-a92b-e1db78b6d706}}).
+In order to study Hawking radiation and its impact on the kink, we
+consider a massless quantum field FORMULA  coupled to the heavy field
+FORMULA  via the coupling constant  FORMULA
+FORMULA 
+Note that the velocity FORMULA  of the light (massless) field may
+differ from FORMULA .
+The propagation of the light field FORMULA  in the approximately
+classical background FORMULA  is completely analogous to that in a
+gravitational field described by the
+Painlevé-Gullstrand-Lemaître metric
+(cf. {{cite:0e888b1e-6b6a-433c-8660-9346677d8d1a}}, {{cite:d25effde-d9bf-4e32-8e96-a65979e3b7ee}})
+FORMULA 
+where FORMULA  denotes the local velocity of freely falling frames.
+A horizon occurs if this velocity FORMULA  exceeds the speed of light
+FORMULA .
+Based on the analogy to gravity, we may also derive the pseudo
+energy-momentum tensor of the FORMULA  field with respect to the above
+metric  FORMULA
+FORMULA 
+The associated energy density FORMULA  of the light field
+FORMULA 
+contains negative parts beyond the horizon FORMULA .
+Of course, this is precisely the reason why effects like Hawking
+radiation are possible {{cite:da0d8fe0-1a73-4a3a-8945-a47b50ce15dd}}.
+However, an energy density which is not bounded from below seems
+unphysical and typically indicates instabilities (already on the
+classical level).
+In order to avoid this problem, we may add an extra term which does
+not modify the linearized low-energy behavior of our model
+FORMULA 
+but generates a positive definite energy density
+FORMULA 
+In the exterior region FORMULA , the classical ground state is
+still given by FORMULA , but beyond the horizon
+FORMULA , we have
+FORMULA .
+Thus, the classical ground state profile would not be differentiable
+at the horizon, i.e., the term FORMULA  in the energy
+density, for example, would be ill-defined.
+This problem can be cured by adding another term (which again does
+not modify the low-energy behavior) and we finally arrive at the
+total Lagrangian of our toy model
+FORMULA 
+The last term smoothens the classical ground state profile at the
+horizon and induces a super-luminal dispersion relation
+FORMULA  at large
+wavenumbers.
+Back-reaction   The equation of motion of the light field can be derived from the
+Lagrangian above
+FORMULA 
+where FORMULA  denote the higher-order FORMULA  and
+FORMULA  terms we added for stability and regularity reasons.
+Similarly, the heavy field evolves according to
+FORMULA 
+From the full set of equations, we see that the kink profile in
+Eq. (REF ) together with FORMULA  exactly solves the classical
+equations of motion (though it is not the ground state).
+However, the impact of quantum fluctuations changes this picture:
+For FORMULA , the kink acts as a black hole horizon and
+thus emits Hawking radiation.
+Of course, the energy/momentum given off must come from somewhere and
+hence this quantum effects should have some impact on the classical
+kink background.
+In order to estimate the quantum back-reaction, we quantize the fields
+FORMULA  as well as FORMULA  and employ a mean-field
+expansion FORMULA  where
+FORMULA  denotes the classical kink profile in Eq. (REF )
+and FORMULA  as well as FORMULA  are supposed to be small
+(i.e., FORMULA ).
+Taking the expectation value of Eq. (REF ) and comparing it
+with Eq. (REF ), we find that the lowest-order contributions
+of the quantum back-reaction force are just given by the expectation
+value of the pseudo energy-momentum tensor {{cite:6e9f0943-5509-4914-96da-766b3d98e9c3}}
+FORMULA 
+Remembering the covariant energy-momentum balance
+FORMULA 
+we find that FORMULA  denotes the momentum density
+FORMULA , which varies with position in general.
+In contrast, the energy flux FORMULA  measured with
+respect to the stationary frame is constant
+FORMULA 
+for a kink at rest.
+Fortunately, the expectation value FORMULA  can
+be calculated analytically for a scalar field in 1+1 dimensions.
+In the Unruh state (which is the appropriate state for describing
+black-hole evaporation), one obtains {{cite:98472bc9-8972-4b53-b410-4328fcccc36a}}
+FORMULA 
+with FORMULA  and the effective surface gravity FORMULA 
+determining the Hawking temperature
+FORMULA 
+Note that FORMULA  calculated in the Unruh state
+is regular across black-hole horizon FORMULA , but singular at
+the white hole horizon FORMULA .
+(The Israel-Hartle-Hawking state would be regular at both
+horizons.)
+Far away from the kink/horizon FORMULA , we just get the usual thermal
+flux FORMULA .
+The corrections induced by the quantum back-reaction can be visualized
+by incorporating them into an effective potential FORMULA  via
+FORMULA 
+For the classical potential FORMULA , all minima
+FORMULA  occur at the same energy FORMULA .
+However, the effective potential FORMULA  is distorted such that
+the central minimum is lower than the next one describing the black
+hole interior FORMULA .
+In this sense, the exterior region is effectively energetically
+favorable and thus the horizon starts to move inwards, i.e., the black
+hole shrinks.
+Alternatively, the same result can be derived directly from
+Eq. (REF ) via classical time-dependent perturbation theory
+around the kink solution.
+The differential operator on the left-hand side of Eq. (REF )
+possesses a continuum of gapped propagating (delocalized) modes with
+FORMULA  and one localized zero-mode FORMULA 
+with FORMULA , which just corresponds to a translation of the kink
+position {{cite:7a884e5c-22de-4745-926d-95c92acd8320}}.
+After expanding the source term FORMULA  in
+Eq. (REF ) into these modes, the perturbations in the continuous
+spectrum FORMULA  just propagate away from the kink – whereas the
+spatial overlap between FORMULA  and the zero-mode
+determines the acceleration FORMULA  of the kink position.
+Energy and Momentum   In contrast to the fluid analogues for black holes (with a steady
+in- and out-flow of energy and momentum), for example, the
+kink considered here represents a well localized object, which allows
+us to ask the question of where the force pushing back the horizon
+comes from.
+In general, the contribution of the FORMULA  field to the total
+energy-momentum tensor FORMULA  is different
+from the pseudo energy-momentum tensor FORMULA 
+defined with respect to the effective metric (REF ), which
+complicates the analysis {{cite:38df3ffe-5b43-4a1b-8e5f-fc296c96d3a0}}.
+Fortunately, these difficulties are absent in our toy model where the
+mixed components of both tensors coincide
+FORMULA .
+The energy density FORMULA  is given by Eq. (REF ) and the
+classical expression for the momentum flux density just reads
+FORMULA  due to conformal invariance of the scalar field in 1+1
+dimensions.
+Note, however, that the quantum expectation values differ due to the
+trace anomaly {{cite:98472bc9-8972-4b53-b410-4328fcccc36a}}.
+The energy flux density
+FORMULA  is given by
+FORMULA  and differs from the
+momentum density FORMULA  in Eqs. (REF ) and (REF )
+for FORMULA .
+Far away from the kink, we may estimate the above quantities by
+employing the geometric-optics approximation and replacing
+FORMULA  and FORMULA .
+For solutions of the dispersion relation
+FORMULA  corresponding to the outgoing
+Hawking radiation and its infalling partner particles, the energy
+density per normalized amplitude FORMULA  changes its
+sign at the horizon, cf. Eq. (REF ).
+The energy flux density FORMULA  is constant and positive
+everywhere (which is even true beyond the geometric-optics
+approximation).
+Note that FORMULA  is conserved as we are considering a
+quasi-stationary scenario.
+Thus, the total energy budget is balanced since the outgoing Hawking
+radiation carries away positive energy, but the infalling partners
+have a negative energy.
+The momentum density FORMULA , on the other hand,
+turns out to be negative everywhere – or more precisely, far away
+from the kink, cf. the exact expression (REF ) with
+FORMULA .
+Thus the momentum flux density FORMULA , i.e., the
+pressure, also changes sign at the horizon.
+(The trace anomaly vanishes in the asymptotic region FORMULA  far
+away from the kink where the geometric-optics approximation applies
+FORMULA .)
+Consequently, while the Hawking particles carry away positive momentum
+and push back the kink, their infalling partner particles act in the
+opposite way and pull on the kink.
+In summary, the momentum is not balanced and thus the kink starts to
+move, i.e., the black-hole interior region shrinks.
+Thermodynamics   The application of thermodynamic concepts to our toy model (in analogy
+to real black holes) presents some difficulties and ambiguities:
+Considering the heat capacity FORMULA , for example, we would
+associate FORMULA  with the Hawking temperature (REF ).
+The variation of the internal energy FORMULA , however, could be identified
+with the heat given off by the Hawking radiation
+FORMULA  or with the change of the kinetic
+energy of the kink FORMULA 
+(for FORMULA ).
+Since the kink does not possess a conserved ADM mass, these quantities
+will be different in general.
+Either way, the heat capacity FORMULA  could be positive as well as
+negative since the Hawking temperature can be increased FORMULA  or
+decreased FORMULA  by the quantum back-reaction of the evaporation
+process.
+There are several different effects:
+Due to the distortion of the effective potential FORMULA , the
+shape of the kink deviates from the classical profile (REF ).
+This deviation is governed by the aforementioned continuum modes
+FORMULA .
+Furthermore, the kink starts to move – which is described by the
+zero-mode.
+The motion of the kink, in turn, implies a Doppler shift of the
+Hawking radiation.
+Finally, even in the rest frame of the kink, the position of the
+horizon FORMULA  changes since the kink velocity FORMULA  effectively
+reduces the local frame-dragging speed FORMULA  and therefore the surface
+gravity FORMULA  may change.
+As a result of all these effects, the heat capacity depends on many
+parameters (FORMULA , FORMULA , and FORMULA  etc.) and may assume
+negative as well as positive values.
+In order to demonstrate this sign ambiguity, let us consider the case
+FORMULA  for simplicity.
+In this limit, the continuum modes FORMULA  are very fast and
+hence the change of the shape of the kink can be neglected, i.e.,
+the quantum back-reaction induces a rigid motion of the kink only.
+As another simplification, the transformation of the FORMULA -field into
+the rest frame of the kink is just a Galilei transformation due to
+FORMULA .
+The new horizon position is then simply determined by
+FORMULA .
+Linearizing this equality together with FORMULA ,
+we find that the variation FORMULA  of the surface gravity
+induced by the acceleration of the kink FORMULA  is determined
+by FORMULA .
+Since FORMULA  can be positive or negative (depending on the
+relation between FORMULA  and FORMULA ), the temperature measured in
+the rest frame of the kink could change in both directions.
+The temperature in the laboratory frame acquires an additional Doppler
+shift, which is given by FORMULA .
+The relative strength of the two competing effects (Doppler shift and
+horizon displacement) is given by FORMULA , which can be
+above or below one.
+Ergo, both temperatures (in the kink frame and in the laboratory
+frame) may increase or decrease due to the back-reaction of Hawking
+radiation, i.e., the heat capacity can be positive or negative
+(or even infinite – at the turning point where FORMULA ).
+Similar ambiguities apply to the entropy FORMULA .
+Choosing FORMULA  just reproduces the entropy
+balance of the Hawking radiation in the exterior region – which is of
+course indeed thermal.
+Inserting the kinetic energy FORMULA , on the other
+hand, we could violate the 2nd law since the kink can be
+slowed down by incident coherent radiation (carrying zero entropy).
+Conclusions   Modeling the black hole (horizon) by a stable topological defect in
+the form of a kink, we were able to derive the quantum back-reaction
+of the resulting evaporation process.
+It turns out that the kink/horizon is also pushed inwards as in a
+real black hole but, in contrast to the gravitational case, this
+back-reaction force is not caused by energy conservation but by
+momentum balance.
+Energetically, the expansion of the horizon would be favorable because
+the minimum energy density in exterior region FORMULA  is far
+above FORMULA  the ground state in the interior region.
+Hence, going beyond the linear analysis performed here, one might
+suspect that the FORMULA  field approaches its ground state via
+non-linear (quantum) instabilities until the evaporation stops.
+Further thermodynamical concepts such as heat capacity or entropy
+(variation) cannot be defined unambiguously and can have both signs –
+depending on the considered parameters {{cite:3ac3fb88-f9f0-4553-867f-6031d5f91b6f}}.
+Together with the results in {{cite:439af7b0-a8e1-4482-97ce-43ac62d0c17a}}, our calculations and the
+energy-momentum considerations above suggest that Hawking radiation and
+the resulting back-reaction force “pushing” the horizon inwards may
+be universal – whereas the heat capacity and the entropy concept
+strongly depend on the underlying structure (e.g., Einstein
+equations).
+Note that in the Israel-Hartle-Hawking state with the expectation
+value being
+FORMULA , the horizon
+is still pushed inwards – i.e., it does not correspond to the thermal
+equilibrium state for the combined system
+[kink in Eq. (REF ) plus FORMULA  field].
+R. S. acknowledges valuable discussions with Ted Jacobson, Bill Unruh,
+Renaud Parentani, and others at the workshop From Quantum to
+Emergent Gravity: Theory and Phenomenology
+(SISSA, Trieste, Italy 2007) and support by the Emmy-Noether Programme
+of the German Research Foundation (DFG, SCHU 1557/1-2).
+C. M. is indebted to G. Matsas for the support, the ITP at TU Dresden
+for the hospitality and Fundação de Amparo à Pesquisa do
+Estado de São Paulo for financial support.
+FORMULA  schuetz@theory.phy.tu-dresden.de

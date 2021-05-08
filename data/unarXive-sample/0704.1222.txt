@@ -1,0 +1,510 @@
+
+Plasmaneutrino spectrum
+A. Odrzywołek
+M. Smoluchowski Institute of Physics,
+Jagiellonian University, Reymonta 4, 30-059 Krakow, Poland
+2020/09/07 07:30:54
+
+Spectrum of the neutrinos produced in the massive photon
+and longitudal plasmon decay process has been computed
+with four levels of approximation for the dispersion
+relations. Some analytical formulae in limiting cases
+are derived. Interesting conclusions related to previous
+calculations of the energy loss in stars are presented.
+High energy tail of the neutrino spectrum is shown
+to be proportional to exp(-E/kT), where E is the neutrino
+energy and kT is the temperature of the plasma.
+
+97.90.+j 97.60.-s 95.55.Vj 52.27.Ep
+Introduction & Motivation
+Thermal neutrino loses from plasma are
+very important for stellar astrophysics {{cite:333b4160-80bf-4d79-abbd-b1e534f86f85}}, {{cite:12bf2f65-3dfd-42f0-a90b-bd82122cabad}}.
+Plasmon decay is one of the three main reactions.
+Extensive calculations for these processes were
+done by group of Itoh
+{{cite:b5ac19d9-7de2-42be-b6fa-83720552c308}}, {{cite:793cb319-6449-4caa-8f4f-37ec5dc24fa6}}, {{cite:290f460d-5202-42fb-b093-a15edac0377b}}, {{cite:78367e9f-d4be-4986-a6d0-c8f651631885}}, {{cite:61636a21-e3e7-452f-bd78-111664a3a89f}}, {{cite:50af04ac-e3d3-4b28-8d10-2f361720ff7e}}, {{cite:d82774f5-b9f0-4ed2-9747-4f5e3594c65c}}, {{cite:6f81383a-9489-473d-8bd2-445bbc991f97}}, {{cite:a00d2104-3130-44d4-87f6-4f48a9ce53f2}}.
+Other influential article include
+{{cite:05ce1a06-e3be-4ac2-87b7-f6a3009feb5e}}, {{cite:3f3418cf-2702-490b-8400-e35ad042e836}}, {{cite:f55624e0-4841-4d21-9d8b-c75482ea72f6}}, {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}, {{cite:dbf26b53-33f2-4a60-8a8c-5cad2bcb75d0}}, {{cite:7d0d22a4-f2bc-4856-ae9a-9cf5dca9fa7b}}, {{cite:f7e537c7-13d4-4831-a2d8-398014928656}}, {{cite:d5057854-8ae9-40c2-aeaf-8b9316503109}}, {{cite:c61ee0b7-ea4d-4a08-be1d-9555ea57e170}}. Meanwhile, our abilities
+to detect neutrinos has grown by many orders of magnitude,
+beginning with FORMULA  tonne experiment of Reines&Cowan {{cite:ec69adcf-560b-4888-be8f-d42fd1c62af0}} up to
+the biggest existing now 50 kt Super-Kamiokande detector {{cite:3f269487-f4d5-4a74-99c5-a2fc5d853f4b}}.
+Recently, ”GADZOOKS!” upgrade to Super-Kamiokande proposed by Beacom&Vagins {{cite:44dd378f-8c09-407c-8485-51244a0c14f7}}
+attract attention of both experimental and theoretical physicists. At last
+one new source of the astrophysical antineutrinos is guaranteed
+with this upgrade, namely Diffuse Supernova Neutrino Background {{cite:c643088d-9710-446f-8237-9d5b44d7fd7d}}, {{cite:31470daa-b4c5-431c-9cec-cb87b36f28d1}}.
+Pre-supernova stars will be available to observations
+out to FORMULA 2 kiloparsecs {{cite:c643088d-9710-446f-8237-9d5b44d7fd7d}}.
+This technique is the only extensible to megaton scale {{cite:c643088d-9710-446f-8237-9d5b44d7fd7d}}.
+Memphys, Hyper-Kamiokande and UNO (Mt-scale water Cherenkov detectors cf. e.g.
+{{cite:8d8f15a0-b144-4028-9736-9c6c5cf8e34e}})
+proposals now seriously consider to add GdClFORMULA  to the one of the tanks with
+typical three-tank design {{cite:84ce4be0-61d8-4a4d-9a73-84c9f54e1307}}.
+Recently, the discussion on the geoneutrino detection {{cite:3ca92bad-3c36-43d3-8b19-992f42a7800c}},
+increased attention
+to the deep underwater neutrino observatories {{cite:6cc4ec71-0a54-42a6-88b4-df8836e71a2b}} with target mass
+5-10 Mt {{cite:c643088d-9710-446f-8237-9d5b44d7fd7d}} and even bigger {{cite:0294e716-13f5-498e-bf22-60a15444652c}}.
+It seems that (anti)neutrino astronomy is on our doorstep,
+but numerous astrophysical sources of the FORMULA 's still are
+not analyzed from the detection point of view.
+Detection of the solar {{cite:8551a315-2bf5-4b4e-9ae2-9d972c89ce06}}, {{cite:81184293-61c4-4885-9d84-74e626f9be57}}, {{cite:f9c698c4-d94d-4f81-b9c1-f5d85ec797be}}, {{cite:8a54735e-0450-4106-8892-6613a7709eca}} and supernova neutrinos
+{{cite:73d9dc87-ed56-47c5-915b-41808023232d}}, {{cite:c7d28f0c-f3ac-4288-b349-bd396c0ddc37}}, {{cite:fc73373c-3238-47d9-bf4f-9b4f8cba8e35}}, {{cite:4baf8919-ecb9-4e36-9361-10e5bfab6ecd}}
+was accompanied and followed with extensive set of detailed
+calculations (see e.g. {{cite:f2c44c98-6fa6-4fd0-99bc-058d5b35ddfe}}, {{cite:7a7f4bf5-06cd-4360-9cec-ca7434b628bf}}, {{cite:468cb756-3726-4de6-9ddd-c808e286f643}}, {{cite:eae0037b-2b04-4f09-9ac5-45299b30909f}}, {{cite:625f4fe3-b159-43b0-9a42-b6a5ffd35e8f}}, {{cite:664d8455-bc11-4e5a-8c4c-1d8548bcd96c}}
+and references therein as a representatives of this broad subject)
+of the neutrino spectrum. On the contrary, very little
+is known about spectral neutrino emission from other astrophysical
+objects. Usually, some analytical representation of the spectrum
+is used, based on earlier experience
+and numerical simulations, cf. e.g. {{cite:1c80dca9-04fa-4dbb-b76d-d6ef36ac5fb9}}.
+While this approach is justified for supernovae, where neutrinos
+are trapped, other astrophysical
+objects are transparent to neutrinos, and spectrum can be
+computed with an arbitrary precision.
+Our goal is to compute neutrino spectra as exact as possible and fill this gap.
+Plasmaneutrino process dominates dense, degenerate objects
+like red giant cores {{cite:a5beabd1-16c5-4bc2-ba79-376d8be689be}}, cooling white dwarfs {{cite:48d9ebc4-e248-4bcd-9116-12bb0bcd1eac}} including
+Ia supernova progenitors before so-called ,,smoldering” phase {{cite:174be993-ddbf-43a5-80fa-8bf2001b5af2}}. It is also
+important secondary cooling process in e.g. neutron star crusts {{cite:0a83f189-becf-493f-a508-53ccc4c8f3a5}}
+and massive stars {{cite:99c35f9c-9f85-4bba-8d3d-f50840255754}}.
+Unfortunately, thermal neutrino loses
+usually are calculated using methods completely erasing almost any
+information related to the neutrino energy FORMULA  and directionality
+as well. This information is not required to compute total energy FORMULA  radiated
+as neutrinos per unit volume and time.
+From experimental point of view, however, it is extremely
+important if given amount of energy is radiated as e.g. numerous
+keV neutrinos or one 10 MeV neutrino. In the first case
+we are unable to detect (using available techniques) any transient neutrino source
+regardless of the total luminosity and proximity of the object. In the second
+case we can detect astrophysical neutrino sources if they are
+strong and not too far away using advanced detector which is big enough.
+Few of the research articles in this area attempt to estimate
+average neutrino energy {{cite:dbf26b53-33f2-4a60-8a8c-5cad2bcb75d0}}, {{cite:7d0d22a4-f2bc-4856-ae9a-9cf5dca9fa7b}}, {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}, {{cite:ad3cb2ac-ff40-43c2-886a-f47d77624976}}
+computing additionally reaction rate FORMULA . Strangely, they presented
+figures and formulae for FORMULA  instead of FORMULA . This gives
+false picture of real situation, as former expression gives
+FORMULA .
+Obviously, we detect neutrinos not FORMULA -FORMULA  pairs.
+FORMULA  do not
+give average neutrino energy, as in general neutrino
+and antineutrino spectra are different. As we will see
+only for longitudal plasmon decay neutrinos energies
+of neutrinos and antineutrinos are equal. However, difference
+in all situations where thermal neutrino loses are important is numerically
+small and formula:
+FORMULA 
+is still a ”working” estimate.
+Mean neutrino energy is useful in the purpose of qualitative discussion
+of the detection prospects/methods. Quantitative discussion require knowledge
+of spectrum shape (differential emissivity FORMULA ).
+High energy tail is particularly important from an experimental
+detection point of view. Detection of the lowest energy neutrinos is extremely
+challenging due to numerous background signal noise sources e.g. FORMULA C
+decay for FORMULA  keV {{cite:8d5481ea-3b21-44c4-9b76-89cf4c910437}}.
+Relevant calculations for the spectrum of the medium energy
+FORMULA MeV
+neutrinos emitted from thermal processes has become available
+recently {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}, {{cite:ad3cb2ac-ff40-43c2-886a-f47d77624976}}, {{cite:b66758f2-d9eb-49c7-856d-93c9c49eac42}}. Purpose of this article is
+to develop accurate methods and discuss various theoretical and practical
+(important for detection) aspects of the neutrino spectra from astrophysical plasma process.
+This could help experimental physicists to discuss possible realistic
+approach to detect astrophysical sources of the neutrinos in the future.
+
+Plasmaneutrino spectrum
+Properties of plasmons
+Emissivity and the spectrum shape from the plasmon decay is strongly affected by the dispersion relation
+for transverse plasmons (massive in-medium photons) and longitudal
+plasmons. In contrast to transverse plasmons, with vacuum dispersion relation
+FORMULA , longitudal plasmons exist only in the plasma.
+Dispersion relation, by the definition is a function
+FORMULA  where FORMULA  is the energy of the (quasi)particle
+and FORMULA  is the momentum.
+Issues related to particular handling of these functions
+are discussed clearly in the article of Braaten and Segel {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}.
+We will repeat here the most important features of the plasmons.
+For both types, plasmon energy for momentum FORMULA  is equal to FORMULA .
+Value FORMULA  is refereed to as plasma frequency
+and can be computed from:
+FORMULA 
+where FORMULA , FORMULA  (FORMULA  units are used),
+FORMULA  MeV and
+fine structure constant is FORMULA  {{cite:a875226b-d5b0-45c2-90af-36f494b14fe5}}.
+Functions FORMULA  and FORMULA 
+are the Fermi-Dirac distributions for electrons and positrons, respectively:
+FORMULA 
+Quantity FORMULA  is the electron chemical potential (including the rest mass).
+Other important parameters include first relativistic correction
+FORMULA :
+FORMULA 
+maximum longitudal plasmon momentum (energy) FORMULA :
+FORMULA 
+and asymptotic transverse plasmon mass FORMULA :
+FORMULA 
+Value FORMULA  is often referred to as thermal photon mass.
+We also define parameter FORMULA :
+FORMULA 
+interpreted as typical velocity of the electrons in the plasma {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}.
+Axial polarization coefficient is:
+FORMULA 
+Value of the FORMULA  is a measure of the difference between
+neutrino and antineutrino spectra.
+Set of numerical values used
+to display sample result
+is presented in Table REF .
+TABLE 
+Values FORMULA  define sub-area of the FORMULA -FORMULA 
+plane where dispersion relations for photons FORMULA 
+and longitudal plasmons FORMULA  are found:
+FORMULA 
+FORMULA 
+FIGURE 
+FIGURE 
+Dispersion relations are solution to the equations {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}:
+FORMULA 
+FORMULA 
+
+where longitudal and transverse polarization functions are given
+as an integrals:
+FORMULA 
+FORMULA 
+Typical example of the exact plasmon dispersion relations (dash-dotted) is presented in
+Fig. REF .
+As solving eqns. (REF , REF ) with (REF )
+is computationally intensive, three levels
+of approximation for dispersion relations are widely used:
+
+zero-order analytical approximations
+
+first order relativistic corrections
+
+Braaten&Segel approximation
+
+Approximations for longitudal plasmons
+For longitudal plasmons, the simplest zero-order approach
+used in early calculations of Adams et al. {{cite:3f3418cf-2702-490b-8400-e35ad042e836}}
+and more recently in {{cite:ad3cb2ac-ff40-43c2-886a-f47d77624976}} for photoneutrino process is to put simply:
+FORMULA 
+where FORMULA  is the plasma frequency (REF ).
+Maximum plasmon energy FORMULA  in this approximation.
+Zero-order approximation is valid only for non-relativistic regime,
+and leads to large errors of the total emissivity {{cite:05ce1a06-e3be-4ac2-87b7-f6a3009feb5e}}.
+First relativistic correction to (REF )
+has been introduced by Beaudet et al. {{cite:05ce1a06-e3be-4ac2-87b7-f6a3009feb5e}}. Dispersion relation FORMULA 
+is given in an implicit form:
+FORMULA 
+with maximum plasmon energy equal to:
+FORMULA 
+This approximation, however, do not introduce really serious
+improvement (Figs. REF , REF  (left) & REF ). Breaking point was publication
+of the Braaten&Segel approximation {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}. Using simple analytical equation:
+FORMULA 
+where FORMULA  is defined in (REF ) one is able to
+get almost exact dispersion relation, cf.
+Figs. REF  & REF , left panels.
+Solution to the eq. (REF ) exist in the range FORMULA ,
+where, in this approximation, maximum longitudal plasmon momentum is:
+FORMULA 
+what gives value slightly different than exact value
+(Fig. REF , left),
+but required for consistency of the approximation.
+
+Approximations for transverse plasmons
+For photons in vacuum dispersion relation is FORMULA . Zero order
+approximation for in-medium photons is:
+FORMULA 
+valid for small FORMULA  and:
+FORMULA 
+
+valid for very large FORMULA . Formulae (REF ) and
+(REF ) provide
+lower and upper limit for realistic FORMULA , respectively
+(cf. Fig. REF , right panel, dotted).
+First order relativistic corrections lead to the formula:
+FORMULA 
+with asymptotic photon mass:
+FORMULA 
+Finally, Braaten&Segel approximation leads to:
+FORMULA 
+Asymptotic photon mass FORMULA  derived from (REF ) is:
+FORMULA 
+This is slightly smaller (left panel of Fig. REF , dashed)
+than exact value (solid line).
+All four relations are presented in Fig. REF .
+Differences are clearly visible, but they are much less
+pronounced for transverse than for longitudal plasmons. Inspection of Fig. REF 
+reveals however, that in the large momentum regime asymptotic
+behavior is correct only for exact integral relations (REF ) and
+may be easily reproduced using (REF ) with FORMULA  from (REF ).
+Let us recapitulate main conclusions. Braaten&Segel approximation provide
+reasonable approximation, as nonlinear equations (REF ) and (REF )
+are easily solved using e.g. bisection method. Zero and first-order approximations
+(REF , REF , REF ) with limiting
+values (REF ) provide starting
+points and ranges. Approximation has been tested by {{cite:5423f528-0f8f-41a5-a883-80c57c0ab48f}}
+and is considered as the best available {{cite:c61ee0b7-ea4d-4a08-be1d-9555ea57e170}}. Errors for part of the FORMULA -FORMULA 
+plane where plasmaneutrino process is not dominant may be as large as 5% {{cite:5423f528-0f8f-41a5-a883-80c57c0ab48f}}.
+At present, these inaccuracies are irrelevant for any practical
+application, and Braaten&Segel approximation is recommended for all purposes.
+
+Plasmon decay rate
+In the Standard Model of electroweak interactions,
+massive in-medium photons and longitudal plasmons
+may decay into neutrino-antineutrino pairs:
+FORMULA 
+In the first-order calculations two Feynmann diagrams
+(Fig. REF ) contribute to
+decay rate {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}, {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}.
+FIGURE 
+For the decay of the longitudal plasmon squared matrix element is:
+FORMULA 
+where FORMULA  is four momentum
+of the plasmon. FORMULA  and
+FORMULA  is four-momentum of the neutrino
+and antineutrino, respectively.
+Squared matrix element for decay of the massive photon is:
+FORMULA 
+
+where FORMULA  is defined in (REF ) and axial polarization function FORMULA 
+reads:
+FORMULA 
+Fermi constant is  FORMULA
+{{cite:a875226b-d5b0-45c2-90af-36f494b14fe5}} and, in standard model of electroweak interactions, vector and
+axial coupling constants are:
+FORMULA 
+FORMULA 
+for electron and FORMULA  neutrinos, respectively.
+The Weinberg angle is FORMULA  {{cite:a875226b-d5b0-45c2-90af-36f494b14fe5}}.
+Terms containing FORMULA  (so-called axial contribution) in (REF ) are frequently
+treated separately {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}} or removed at all {{cite:b5ac19d9-7de2-42be-b6fa-83720552c308}}.
+In calculations concentrated on the total emissivity this is justified
+as anti-symmetric term multiplied by FORMULA  do not contribute at all and term
+FORMULA  is suppressed relative to the term beginning with FORMULA 
+by four orders of magnitude {{cite:b5ac19d9-7de2-42be-b6fa-83720552c308}}. However, if one attempts
+to compute neutrino energy spectrum all three terms should be
+added together, as mixed V-A ,,channel” alone leads to negative emission
+probability for some neutrino energy range (Fig. REF ),
+what is physically unacceptable.
+These terms remains numerically small but only for
+electron neutrinos. For FORMULA  and FORMULA  neutrino spectra axial
+part contributes at FORMULA  1% level due to very small
+value FORMULA  while still FORMULA . ”Mixed” term
+leads to significant differences between FORMULA  and FORMULA 
+spectra, cf. Fig. REF . Relative contributions
+of the three transverse ”channels” for electron and FORMULA 
+are presented in Table REF .
+TABLE 
+In general, all the terms in the
+squared matrix element (REF ) should be added.
+We have only two different spectra: longitudal and transverse one.
+Particle production rate from plasma in thermal equilibrium is:
+FORMULA 
+where FORMULA  for longitudal mode and FORMULA  for transverse mode.
+Bose-Einstein distribution for plasmons FORMULA  is:
+FORMULA 
+and residue factors FORMULA  are expressed by polarization functions FORMULA 
+(REF , REF ):
+FORMULA 
+FORMULA 
+For massive photons FORMULA  and for longitudal plasmon FORMULA .
+Differential ratesDouble differential rate FORMULA  has an identical
+form as (REF ) but now four momenta cannot be given explicitly, unless
+simple analytical approximation for FORMULA  is used. Analytical
+approximations for the specrum shape are derived this way.
+has been derived for the first time in {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}.
+Here, we present result in the form valid for both types of plasmons, ready
+for calculations using any available form of dispersion relation:
+FORMULA 
+where FORMULA  or FORMULA .
+Product FORMULA  of the unit step functions FORMULA  in (REF ) restrict
+result to the kinematically allowed area:
+FORMULA 
+Four-momenta in the squared matrix element are:
+FORMULA 
+where FORMULA  denotes function inverse to the dispersion relation.
+Jacobian FORMULA  arising from Dirac delta integration in (REF ) is:
+FORMULA 
+Residue factors FORMULA  are given in (REF ) and (REF ). Maximum
+energy FORMULA  in (REF ) for longitudal plasmons must be in the
+agreement with particular approximation used for FORMULA :
+FORMULA , (REF ) or (REF )
+for zero-order (REF ), first-order (REF ) or Braaten&Segel (REF )
+approximation, respectively. For transverse plasmons FORMULA 
+and last FORMULA  function in (REF ) has no effect and may be omitted.
+
+Longitudal neutrino spectrum
+Analytical approximation
+We begin with general remark on the spectrum.
+Note, that eq. (REF ) is symmetric for longitudal mode
+under change FORMULA  because (REF )
+is symmetric with respect to exchange FORMULA .
+Resulting energy spectrum is thus identical for neutrinos and antineutrinos.
+This is not true for transverse plasmons with axial
+contribution included, cf. Sect. REF .
+Using zero-order dispersion relation for longitudal plasmons
+(REF ) we are able to express spectrum by the elementary functions.
+Longitudal residue factor FORMULA  is now:
+FORMULA 
+and Jacobian FORMULA  resulting from the integration
+of the Dirac delta function is:
+FORMULA 
+Now, differential rate FORMULA  (cf. (REF )
+and footnote REF ) becomes much more simple
+and integral over FORMULA  can be evaluated analytically.
+Finally, we get the longitudal spectrum:
+FORMULA 
+where normalized spectrum is:
+FORMULA 
+Let us note that FORMULA  is undefined at FORMULA ; use limit instead:
+FORMULA 
+Function FORMULA  is symmetric with respect to point FORMULA , where FORMULA 
+has a maximum value (Fig. REF , dotted line).
+In this limit, correct for non-relativistic, non-degenerate plasma,
+average neutrino and antineutrino energy is FORMULA 
+and maximum FORMULA  energy is FORMULA .
+Inspection of Fig. REF 
+reveals little difference between analytical result (REF )
+and result obtained with first-order relativistic corrections to the
+dispersion relation (REF ).
+FIGURE 
+
+Numerical results
+Simple formula (REF ) significantly underestimates flux and the
+maximum neutrino energy, equal to FORMULA  rather than FORMULA .
+Therefore we have used Braaten & Segel approximation for longitudal plasmon
+dispersion relation.
+To derive spectrum we will use form of differential rate (REF )
+provided by {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}.
+In the Braaten&Segel approximation:
+FORMULA 
+FORMULA 
+FORMULA 
+Spectrum is computed as an integral of (REF )
+over FORMULA .
+Example result is presented in Fig. REF . Integration of
+the function in Fig. REF  over neutrino
+energy gives result in well agreement with both (30) from {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}
+and (54) from {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}.
+
+Transverse plasmon decay spectrum 
+Analytical approximation
+Derivation of massive in-medium photon decay spectrum closely follows
+previous subsection. Semi-analytical formula can be derived for dispersion relations
+(REF ).
+For dispersion relation (REF )
+transverse residue factor FORMULA  is:
+FORMULA 
+polarization function FORMULA  is equal to:
+FORMULA 
+and Jacobian resulting from integration
+of the Dirac delta function FORMULA  is:
+FORMULA 
+FIGURE 
+Approximate spectrum, neglecting differences between
+neutrinos and antineutrinos, is given by the following integral:
+FORMULA 
+where rational function FORMULA  is:
+FORMULA 
+Result presented in Fig. REF  show
+that spectrum (REF ) obtained with dispersion relation (REF )
+agree well in both low and high neutrino energy part
+with spectrum obtained from Braaten&Segel approximation for
+dispersion relations. Dispersion relation (REF )
+produces much larger error, and spectrum nowhere agree with correct
+result. This fact is not a big surprise: as was pointed out by Braaten {{cite:dbf26b53-33f2-4a60-8a8c-5cad2bcb75d0}}
+dispersion relation is crucial.
+Therefore, all previous results, including seminal BPS work {{cite:05ce1a06-e3be-4ac2-87b7-f6a3009feb5e}},
+could be easily improved just by the trivial replacement
+FORMULA . Moreover, closely related photoneutrino
+process also has been computed {{cite:05ce1a06-e3be-4ac2-87b7-f6a3009feb5e}}, {{cite:b5ac19d9-7de2-42be-b6fa-83720552c308}}, {{cite:7d0d22a4-f2bc-4856-ae9a-9cf5dca9fa7b}}, {{cite:f55624e0-4841-4d21-9d8b-c75482ea72f6}}
+with simplified dispersion relation
+(REF ) with FORMULA .
+One exception is work of Esposito et. al. {{cite:049a1c5c-40a5-4960-9b7e-24351e0ec6ec}}. It remains unclear however,
+which result is better, as accurate dispersion relations have never
+been used within photoneutrino process context. For plasmaneutrino,
+Eq. (REF ) is much better approximation than (REF ),
+especially if one put FORMULA  from exact formula (REF ).
+High energy tail of the spectrum also will be exact in this case.
+As formula (REF ) agree perfectly with the tail
+of the spectrum, we may use it to derive very useful analytical expression.
+Leaving only leading terms of the rational function (REF )
+FORMULA 
+one is able to compute integral
+(REF ) analytically:
+FORMULA 
+where FORMULA , FORMULA , FORMULA .
+Interestingly, spectrum (REF ) is invariant
+under transformation:
+FORMULA 
+and all results obtained for high energy tail of the spectrum
+immediately may be transformed for low-energy approximation.
+The asymptotic behavior of (REF ) for FORMULA 
+is of main interest:
+FORMULA 
+where for electron neutrinos :
+FORMULA 
+and FORMULA , FORMULA  are in MeV. For FORMULA  neutrinos just
+replace FORMULA  with FORMULA .
+Formula (REF ) gives also quite reasonable estimates
+of the total emissivity FORMULA  and mean neutrino energies FORMULA :
+FORMULA 
+FORMULA 
+
+For a comparison, Braaten & Segel {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}} derived exact formulae
+in the high temperature limit FORMULA :
+FORMULA 
+FORMULA 
+
+Formulae above agree with FORMULA 25% error in the leading coefficients.
+
+Numerical results
+Calculation of the spectrum in the framework of Braaten&Segel
+approximation requires residue factor, polarization function
+{{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}} (transverse&axial) and Jacobian {{cite:d4945d16-64a6-418f-a776-5cc6909a6ef8}}:
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+FORMULA 
+Example spectrum, computed as an integral of (REF ) over FORMULA 
+is shown in Fig. REF .
+FIGURE 
+FIGURE 
+
+Summary
+Main new results presented in the article are analytical formulae for neutrino spectra
+(REF , REF ) and exact analytical formula (REF ) for the
+high energy tail of the transverse spectrum. The latter is of main interest from
+the detection of astrophysical sources point of view:
+recently available detection techniques are unable to detect keV plasmaneutrinos
+emitted with typical energies FORMULA 
+(Fig. REF , REF ), where
+FORMULA  is the plasma frequency (REF ).
+Tail behavior of the transverse spectrum quickly ”decouple” from FORMULA  dominated
+maximum area, and becomes dominated by temperature-dependent
+term FORMULA . Calculation of the events
+in the detector is then straightforward, as detector threshold
+in the realistic experiment will be above maximum area. This approach
+is much more reliable compared to the typical practice, where
+an average neutrino energy is used as a parameter in an arbitrary
+analytical formula.
+Analytical formulae for the spectrum are shown to be a poor approximation
+of the realistic situation, especially for longitudal plasmons (Fig. REF ).
+This is in the agreement with general remarks on the dispersion relations
+presented by Braaten {{cite:dbf26b53-33f2-4a60-8a8c-5cad2bcb75d0}}. On the contrary,
+Braaten & Segel {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}
+approximation is shown to be a very good approach not only for the total emissivities,
+but also for the spectrum. Exception is the tail of the massive
+photon decay neutrino spectrum: Braaten & Segel {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}} formulae lead to
+underestimate of the thermal photon mass while the formula (REF )
+gives exact result. Numerical difference between FORMULA  from (REF ) and (REF )
+is however small {{cite:fc807455-1cd3-46c6-b814-8682ac43bd4a}}. Calculating of the emissivities
+by the spectrum integration seems much longer route compared to typical
+methods, but we are given much more insight into process details.
+For example, we obtain exact formula for the tail for free this way.
+Interesting surprise revealed in the course of our calculations is importance
+of the high-momentum behavior of the massive photon. While mathematically
+identical to simplest approach used in the early calculations, formula (REF )
+gives much better approximation for the total emissivity than (REF ).
+This work was supported by grant of Polish Ministry of Education and Science (former
+Ministry of Scientific Research and Information Technology,
+now Ministry of Science and Higher Education) No. 1 P03D 005 28.

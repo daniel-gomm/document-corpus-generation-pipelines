@@ -1,0 +1,647 @@
+
+The SLOCC invariant and the residual entanglement for n-qubits
+The paper was supported by NSFC(Grant No. 60433050), the basic research fund
+of Tsinghua university No: JC2003043 and partially by the state key lab. of
+intelligence technology and systemDafa Li Dept of mathematical sciencesTsinghua University, Beijing 100084 CHINAemail address: dli@math.tsinghua.edu.cn Xiangrong Li Department of MathematicsUniversity of California, Irvine, CA 92697-3875, USA Hongtao Huang Electrical Engineering and Computer Science DepartmentUniversity of Michigan, Ann Arbor, MI 48109, USA Xinxin Li Dept. of computer scienceWayne State University, Detroit, MI 48202, USA2020/09/07 07:32:47In this paper, we find the invariant for FORMULA -qubits and propose the residual
+entanglement for FORMULA -qubits by means of the invariant. Thus, we establish a
+relation between SLOCC entanglement and the residual entanglement. The
+invariant and the residual entanglement can be used for SLOCC entanglement
+classification for FORMULA -qubits.
+PACS numbers: 03.67.-a, 03.65.Ta, 89.70.+c
+Keywords: Concurrence, quantum computing, the residual entanglement, SLOCC
+entanglement classification, SLOCC invariant.
+Introduction
+Entanglement plays a key role in quantum computing and quantum information.
+If two states can be obtained from each other by means of local operations
+and classical communication (LOCC) with nonzero probability, we say that two
+states have the same kind of entanglement{{cite:7bc5e199-3c02-413e-8823-bc7df8fd65b6}}. Recently, many
+authors have studied the equivalence classes of three-qubit states specified
+SLOCC (stochastic local operations and classical communication ) {{cite:508d49c8-9b78-43dc-8308-44ec00c513f1}} FORMULA{{cite:9bd7a03e-811d-4e0e-9c60-a5a8db90cfe2}}. Dür et al. showed that for pure states of three-qubits
+there are six inequivalent entanglement classes{{cite:29d34d01-3392-4a84-99d0-987bbc39c51f}}. A. Miyake
+discussed the onionlike classification of SLOCC orbits and proposed the
+SLOCC equivalence classes using the orbits{{cite:d5a31767-1b84-4521-b506-adac68646624}}. A.K. Rajagopal
+and R.W. Rendell gave the conditions for the full separability and the
+biseparability{{cite:ca624e62-fc28-47c5-b7d7-81d90931df97}}. In {{cite:d57976cb-89bd-4e4a-a036-3877ba86d44d}} we gave the simple
+criteria for the complete SLOCC classification for three-qubits. In {{cite:665ee52b-3871-4d42-b274-e6d277033863}} we presented the invariant for 4-qubits and used the invariant for
+SLOCC entanglement classification for 4-qubits. Verstraete et al.{{cite:538de469-23f7-4b7c-bbf5-e6508ccdf103}}
+considered the entanglement classes of four-qubits under SLOCC and concluded
+that there exist nine families of states corresponding to nine different
+ways of entanglement.
+Coffman et al. presented the concurrence and the residual entanglement for 2
+and 3-qubits{{cite:ee3b3b09-dbdf-41c0-89a3-86d99b2c5cd9}}. It was proven that the residual entanglement for
+3-qubits or 3-tangle is an entanglement monotone{{cite:29d34d01-3392-4a84-99d0-987bbc39c51f}}. The general
+residual entanglement was discussed in {{cite:c1682ec6-87f2-409b-a41f-11053a5117b2}}. Wong and Nelson presented FORMULA -tangle for even FORMULA -qubits{{cite:e11cda68-af96-467e-9848-cb25471866ac}}. For odd FORMULA -qubits, they did not
+define FORMULA -tangle. Osterloh and Siewert constructed FORMULA -qubit entanglement
+monotone from antilinear operators{{cite:dc6b0775-c014-4fe7-8db9-5d42badf3e57}}{{cite:68efda59-26c7-4d13-8a40-4b889c7307ab}}.
+In this paper, we find the SLOCC invariant for FORMULA -qubits and extend Coffman
+et al. 's residual entanglement or 3-tangle for 3-qubits to FORMULA -qubits in
+terms of the invariant. The necessary FORMULA -criteria and FORMULA -criteria for
+SLOCC classification are also given in this paper. Using the invariant, the
+residual entanglement and the criteria, it can be determined that if two
+states belong to different SLOCC entanglement classes. The invariant, the
+residual entanglement and the criteria only require simple arithmetic
+operations: multiplication, addition and subtraction.
+The paper is organized as follows. In section 2, we present the invariant
+for FORMULA -qubits and prove the invariant by induction in Appendix D. In
+section 3, we propose the residual entanglement for FORMULA -qubits and
+investigate properties of the residual entanglement. In section 4, we
+exploit SLOCC entanglement classification for FORMULA -qubits.
+
+The SLOCC invariant for FORMULA -qubits
+Let FORMULA  and FORMULA  be any states of FORMULA -qubits. Then we can write
+FORMULA 
+where FORMULA  and FORMULA .
+Two states FORMULA  and FORMULA  are equivalent
+under SLOCC if and only if there exist invertible local operators FORMULA , FORMULA  such that
+FORMULA 
+where the local operators FORMULA  can be expressed as
+FORMULA  invertible matrices as follows.
+FORMULA 
+We reported the invariants for 2-qubits, 3-qubits and 4-qubits in {{cite:665ee52b-3871-4d42-b274-e6d277033863}}. When FORMULA  is small, by solving the corresponding matrix equations
+in (REF ), we can obtain the amplitudes FORMULA . Then, it is easy
+to verify the invariants for 2-qubits, 3-qubits and 4-qubits. However, when FORMULA  is large, it is hard to solve the matrix equations in (REF ).
+We define function FORMULA  to describe the invariant below.
+Always FORMULA . For FORMULA  and FORMULA ,
+we define FORMULA  as follows.
+When FORMULA , FORMULA . When FORMULA , FORMULA  provided that FORMULA  is odd; when FORMULA  is even, FORMULA .
+The SLOCC invariant for even FORMULA -qubits
+For 2-qubits
+If FORMULA  and FORMULA  are equivalent under
+SLOCC, then they satisfy the following equation,
+FORMULA 
+(REF ) guarantees that FORMULA  does not vary when FORMULA  or vanish under SLOCC operators FORMULA  and
+FORMULA .
+
+For 4-qubits
+FORMULA  and FORMULA  are equivalent under SLOCC
+if and only if there exist invertible local operators FORMULA , FORMULA , FORMULA  and FORMULA  such that
+FORMULA 
+where
+FORMULA 
+Let
+FORMULA 
+and
+FORMULA 
+Then, if FORMULA  and FORMULA  are equivalent
+under SLOCC, then we have the following equation:
+FORMULA 
+In Appendix A of this paper, we give a formal derivation of (REF ).
+The ideas for the proof will be used to by induction derive the following
+Theorem 1.
+By (REF ), FORMULA  does not vary when FORMULA  or vanish under SLOCC operators.
+
+The definition and proof of the invariant for even FORMULA -qubits
+Let FORMULA  and FORMULA  be any pure states of FORMULA -qubits.
+Version 1 of the invariant
+When FORMULA , let
+FORMULA 
+ Theorem 1.
+For FORMULA -qubits, assume that FORMULA  and FORMULA  are equivalent under SLOCC. Then the amplitudes of the two states
+satisfy the following equation,
+FORMULA 
+where FORMULA  is obtained from FORMULA  by replacing FORMULA  in FORMULA  by
+FORMULA .
+An inductive proof of Theorem 1 is put in Part 1 of Appendix D.
+By (REF ), clearly FORMULA  does not vary when FORMULA  or vanish under SLOCC operators. So,
+here, FORMULA  is called as an invariant of even FORMULA -qubits.
+So far, no one has reported the invariant for 6-qubits. Therefore, it is
+valuable to verify that (REF ) holds when FORMULA .
+For 6-qubits,
+FORMULA  and FORMULA  are equivalent under SLOCC
+if and only if there exist invertible local operators FORMULA , FORMULA , FORMULA , FORMULA , FORMULA  and FORMULA  such that
+FORMULA 
+where FORMULA  and FORMULA .
+From (REF ),
+FORMULA 
+By solving the complicated matrix equation in (REF ) by using
+MATHEMATICA, we obtain the amplitudes FORMULA . Each FORMULA  is an algebraic
+sum of 64 terms being of the form FORMULA . Then, by substituting FORMULA  into FORMULA , we obtain the following.
+FORMULA 
+Version 2 of the invariant
+Definition
+FORMULA . When FORMULA , FORMULA 
+whenever FORMULA  and FORMULA 
+whenever FORMULA .
+When FORMULA , let
+FORMULA 
+Clearly, when FORMULA , FORMULA .
+Thus, Theorem 1 can be rephrased as follows.
+For FORMULA -qubits,
+FORMULA 
+where FORMULA  is obtained from FORMULA  by replacing FORMULA 
+in FORMULA  by FORMULA .
+When FORMULA , 4 and 6, (REF ) is reduced to (REF ), (REF ) and (REF ), respectively. FORMULA  is another
+version of the invariant for even FORMULA -qubits.
+
+ The SLOCC invariant for odd FORMULA -qubits
+For 3-qubits
+If FORMULA  and FORMULA  are equivalent under
+SLOCC, then they satisfy the following equation,
+FORMULA 
+The above equation can be equivalently replaced by one of the following two
+equations.
+FORMULA 
+Let FORMULA , FORMULA  and FORMULA . Then, (REF ) can be rewritten as
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  are
+obtained from FORMULA , FORMULA  and FORMULA  by replacing FORMULA  by FORMULA , respectively.
+In Appendix B of this paper, we give a formal proof of (REF ). The
+ideas for the proof will be used to by induction show the following Theorem
+2.
+By (REF ),FORMULA  does not vary when FORMULA  or vanish under SLOCC operators.
+
+For 5-qubits
+So far, no one has reported the invariant for 5-qubits. Therefore, it is
+worth listing the explicit expression of the invariant for 5-qubits to
+understand the complicated expression of the invariant for odd FORMULA -qubits
+which is manifested below.
+FORMULA  and FORMULA  are equivalent under SLOCC
+if and only if there exist invertible local operators FORMULA , FORMULA , FORMULA , FORMULA  and FORMULA  such that
+FORMULA 
+Let
+FORMULA 
+and let FORMULA  be obtained from FORMULA  by replacing FORMULA  in FORMULA  by FORMULA .
+Then if FORMULA  and FORMULA  are equivalent under
+SLOCC, then the amplitudes of the two states satisfy the following equation,
+FORMULA 
+We have verified (REF ) by using MATHEMATICA. That is, by solving the
+complicated matrix equation in (REF ), we obtain the amplitudes FORMULA . Each FORMULA  is an algebraic sum of 32 terms being of the form FORMULA . Then, by
+substituting FORMULA  into FORMULA , we obtain (REF ). However,
+this verification is helpless to finding a formal proof of the following
+Theorem 2. Hence, it is necessary to give a formal argument of (REF )
+for readers to readily follow the complicated deduction in Appendix D of the
+following Theorem 2. The formal argument of (REF ) is put in Appendix
+C and gives hints which are used to by induction prove the following Theorem
+2.
+By (REF ), FORMULA  does not vary when FORMULA  or
+vanish under SLOCC operators.
+
+The definition and proof of SLOCC invariant for odd FORMULA -qubits
+Let FORMULA  and FORMULA  be any pure states of FORMULA (FORMULA )-qubits. Let
+FORMULA 
+Let FORMULA  be obtained from FORMULA  by
+adding FORMULA  to the subscripts in FORMULA  as follows.
+FORMULA 
+For example, FORMULA . Then FORMULA  FORMULA .
+Theorem 2.
+Assume that FORMULA  and FORMULA  are equivalent
+under SLOCC. Then the amplitudes of the two states satisfy the following
+equation,
+FORMULA 
+where FORMULA  and FORMULA  are obtained
+from FORMULA  and FORMULA  by replacing FORMULA 
+by FORMULA , respectively.
+An inductive proof of Theorem 2 is put in Part 2 of Appendix D. When FORMULA 
+and 5, (REF ) becomes (REF ) and (REF ),
+respectively.
+(REF ) declares that FORMULA  does not vary when FORMULA  or vanish under SLOCC
+operators. Here, FORMULA  is called as an invariant of odd FORMULA -qubits.
+
+The residual entanglement for FORMULA -qubits
+Coffman et al. {{cite:ee3b3b09-dbdf-41c0-89a3-86d99b2c5cd9}} defined the residual entanglement for
+3-qubits. We propose the residual entanglement for FORMULA -qubits as follows.
+The residual entanglement forFORMULA even FORMULA -qubits
+Wong and Nelson's FORMULA -tangle for even FORMULA -qubits is listed as follows. See
+(2) in {{cite:e11cda68-af96-467e-9848-cb25471866ac}}.
+FORMULA 
+The FORMULA -tangle requires FORMULA  multiplications.
+When FORMULA  is even, by means of (REF ), i.e., the invariant for even
+FORMULA -qubits, we define that for any state FORMULA , the residual
+entanglement
+FORMULA 
+This residual entanglement requires FORMULA  multiplications. When FORMULA ,
+the residual entanglement FORMULA  just is
+Coffman et al. 's concurrence FORMULA  {{cite:ee3b3b09-dbdf-41c0-89a3-86d99b2c5cd9}}.
+From Theorem 1, we have the following corollary.
+Corollary 1.
+If FORMULA  and FORMULA  are equivalent under
+SLOCC, then from (REF ),
+FORMULA 
+It is straightforward to verify the following properties.
+Lemma 1.
+If a state of even FORMULA -qubits is a tensor product of a state of 1-qubit and
+a state of FORMULA -qubits, then FORMULA .
+In particular, if a state of even FORMULA -qubits is full separable, then FORMULA .
+Lemma 2.
+For 4-qubits, if FORMULA  is a tensor product of state FORMULA  of 2-qubits and state FORMULA  of 2-qubits, then FORMULA .
+For 6-qubits, there are two cases.
+Case 1. If FORMULA  is a tensor product of state FORMULA  of
+2-qubits and state FORMULA  of 4-qubits, then FORMULA .
+Case 2. If FORMULA  is a tensor product of state FORMULA  of
+3-qubits and state FORMULA  of 3-qubits, then FORMULA .
+Conjecture:
+(1). If FORMULA  is a tensor product of state FORMULA  of FORMULA -qubits and state FORMULA  of FORMULA -qubits, then FORMULA .
+(2). If FORMULA  is a tensor product of state FORMULA  of FORMULA -qubits and state FORMULA  of FORMULA -qubits, then FORMULA .
+ FORMULA
+FORMULA .
+Therefore FORMULA . When FORMULA , FORMULA , where FORMULA .
+
+The residual entanglement forFORMULA odd FORMULA -qubits
+Wong and Nelson did not discuss odd FORMULA -tangle{{cite:e11cda68-af96-467e-9848-cb25471866ac}}. When FORMULA  is odd,
+by means of the invariant for odd FORMULA -qubits, we define that for any state FORMULA , the residual entanglement
+FORMULA 
+When FORMULA , this residual entanglement FORMULA  just is Coffman et al. 's
+residual entanglement or 3-tangle  FORMULA{{cite:ee3b3b09-dbdf-41c0-89a3-86d99b2c5cd9}}.
+From Theorem 2, we have the following corollary.
+Corollary 2.
+If FORMULA  and FORMULA  are equivalent under
+SLOCC, then by Theorem 2, we obtain
+FORMULA 
+The following results follow the definition of the residual entanglement
+immediately.
+Lemma 3.
+If a state of odd FORMULA -qubits is a tensor product of a state of 1-qubit and a
+state of FORMULA -qubits, then FORMULA .
+In particular, if a state of odd FORMULA -qubits is full separable, then FORMULA .
+ FORMULA
+The fact can be shown by computing the extremes. See Appendix E for the
+details. When FORMULA , FORMULA ,
+where FORMULA .
+
+The invariant residual entanglement
+Corollaries 1 and 2 imply that the residual entanglement does not vary when FORMULA  or
+vanish under SLOCC operators. Also, from Corollaries 1 and 2, it
+is easy to see that if FORMULA  and FORMULA  are
+equivalent under SLOCC, then either FORMULA 
+or FORMULA .  Otherwise, the two states
+belong to different SLOCC classes.
+
+States with the maximal residual entanglement
+(1). Let state FORMULA  of FORMULA -qubits be FORMULA . Then, no matter how
+FORMULA  is even or odd, it is easy to see that FORMULA  for state FORMULA 
+of FORMULA -qubits. We have shown that FORMULA . Therefore, state FORMULA  has the maximal residual entanglement, i.e., FORMULA . Also, FORMULA  for any state of FORMULA -qubits which is equivalent to FORMULA 
+under determinant one SLOCC operations.
+(2). There are many true entangled states with the maximal residual
+entanglement.
+For example, when FORMULA , FORMULA  {{cite:d57976cb-89bd-4e4a-a036-3877ba86d44d}}. FORMULA . As
+well, FORMULA  for any state of 4-qubits which is equivalent to FORMULA  under determinant one SLOCC operations.
+(3) There are many product states with the maximal residual entanglement.
+When FORMULA , FORMULA  for any state which is equivalent to FORMULA , FORMULA 
+or FORMULA  under determinant one SLOCC operations.
+When FORMULA , FORMULA  and FORMULA have the
+maximal residual entanglement FORMULA .
+The examples above illustrate that the residual entanglement is not the FORMULA -way entanglement.
+
+The true entanglement classes with the minimal residual
+entanglement
+(1). For state FORMULA  of FORMULA -qubits, no matter how FORMULA  is even(FORMULA ) or odd(FORMULA ), FORMULA . By Corollaries 1 and 2, FORMULA  for any
+state which is equivalent to FORMULA  under SLOCC.
+(2). For 4-qubits, there are many true SLOCC entanglement classes which have
+the minimal residual entanglement  FORMULA{{cite:d57976cb-89bd-4e4a-a036-3877ba86d44d}}.
+
+SLOCC classification
+We used the invariant, FORMULA -criteria and FORMULA -criteria for SLOCC
+classification of 4-qubits{{cite:665ee52b-3871-4d42-b274-e6d277033863}}. The invariant and residual
+entanglement for FORMULA -qubits and the following FORMULA -criteria and FORMULA -criteria
+for FORMULA -qubits can be used for SLOCC classification of FORMULA -qubits. In this
+section, we also show that the dual states are SLOCC equivalent.
+FORMULA  criteria for FORMULA -qubits
+ FORMULA
+ FORMULA
+ FORMULA
+ FORMULA
+ FORMULA
+ FORMULA
+FORMULA .
+
+FORMULA criteria
+When FORMULA  is odd,
+FORMULA .
+Otherwise,
+FORMULA .
+The subscripts above satisfy the following conditions.
+FORMULA 
+For example, FORMULA -criteria include expressions in which FORMULA 
+and 23 and the expressions in which FORMULA  and FORMULA  exclude the
+expressions in which FORMULA  or 22.
+
+The dual states are SLOCC equivalent
+Let FORMULA  ( FORMULA  ) be the complement of a bit 1 FORMULA . Then FORMULA  FORMULA  and FORMULA . Let FORMULA 
+denote the complement of a binary string FORMULA . Also, the
+set of the basis states FORMULA . Let FORMULA  be any state of FORMULA -qubits. Then we can write FORMULA  FORMULA  FORMULA  FORMULA . Let FORMULA  FORMULA  FORMULA . We call FORMULA  the complement of FORMULA .
+Let FORMULA . Then FORMULA  FORMULA .
+Consequently, if two states of FORMULA -qubits are dual then they are SLOCC
+equivalent.
+
+Summary
+In this paper, we report the invariant for FORMULA -qubits. The invariant is only
+related to the amplitudes of the related two states and the determinants of
+the related operators. It reveals the inherent properties of SLOCC
+equivalence. By means of the invariant we propose the residual entanglement
+for FORMULA -qubits. When FORMULA , it becomes Coffman et al.'s concurrence for 2-qubits and when FORMULA , it is 3-tangle. For even FORMULA -qubits, it is much
+simpler than Wong and Nelson's even FORMULA -tangle{{cite:e11cda68-af96-467e-9848-cb25471866ac}}. For odd FORMULA -qubits, it requires FORMULA  multiplications. Wong and Nelson did not
+define the odd FORMULA -tangle. The properties of the residual entanglement are
+discussed in this paper. Wong and Nelson indicated out that when FORMULA  is
+even, FORMULA -qubit FORMULA  state has the maximal FORMULA -FORMULA gle and FORMULA -qubit FORMULA  state has the minimal FORMULA -FORMULA gle{{cite:e11cda68-af96-467e-9848-cb25471866ac}}. The
+present paper gives many true entangled states with the maximal residual
+entanglement: FORMULA  and many true SLOCC entanglement classes with the
+minimal residual entanglement: FORMULA . Wong and Nelson indicated out that
+their even FORMULA -tangle is not the FORMULA -way entanglement{{cite:e11cda68-af96-467e-9848-cb25471866ac}}. In the
+present paper, the properties of the residual entanglement claim that no
+matter how FORMULA  is even or odd, the residual entanglement is not the FORMULA -way
+entanglement. The invariant and the residual entanglement can be used for
+SLOCC entanglement classification for FORMULA -qubits.
+
+Appendix A: The proof of the invariant for 4-qubits
+Let us prove (REF ). We can rewrite
+FORMULA 
+where
+FORMULA 
+Notice that from () and () it happens that FORMULA , where FORMULA  is an identity.
+(REF ) follows the following Steps 1 and 2 obviously.
+Step 1. Prove FORMULA , where FORMULA  is obtained
+from FORMULA  by replacing FORMULA  by FORMULA .
+From (REF ), by computing,
+FORMULA 
+FORMULA 
+So the proof of Step 1 is done.
+Step 2. Prove that
+FORMULA 
+We can rewrite () as
+FORMULA 
+where
+FORMULA 
+Similarly, () can be rewritten as
+FORMULA 
+where
+FORMULA 
+By substituting () and () into FORMULA ,
+FORMULA 
+where FORMULA  is obtained from FORMULA  by replacing FORMULA  by FORMULA .
+From (REF ) and (),
+FORMULA 
+From (REF ) and (),
+FORMULA 
+From (REF ) and (REF ),
+FORMULA 
+Similarly, from (REF ) we can derive
+FORMULA 
+From (REF ) and (REF ), the proof of Step 2 is done.
+
+Appendix B: The proof of the invariant for 3-qubits
+We can rewrite
+FORMULA 
+where
+FORMULA 
+Notice that from () and () it happens that FORMULA , where FORMULA  is an identity.
+(REF ) can be obtained from the following Steps 1 and 2.
+Step 1. Prove that
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  are
+obtained from FORMULA , FORMULA  and FORMULA  by replacing FORMULA  by FORMULA , respectively.
+From (REF ), by computing,
+FORMULA 
+Then the proof of Step 1 follows (REF ), () and ()
+straightforwardly.
+Step 2. Prove that
+FORMULA 
+By (REF ), from (),
+FORMULA 
+and from (),
+FORMULA 
+Let us compute FORMULA . From () and () we
+obtain
+FORMULA 
+By (REF ), from (REF ) it is easy to see
+FORMULA 
+Expanding (REF ), we have
+FORMULA 
+From (REF ), (REF ) and (REF ), we get
+FORMULA 
+The proof of Step 2 follows (REF ), (REF ) and (REF )
+immediately.
+
+Appendix C: The proof of the invariant for 5-qubits
+FORMULA  can be rewritten as
+FORMULA 
+Thus,
+FORMULA 
+Let
+FORMULA 
+and
+FORMULA 
+By (REF ) and (REF ), we can rewrite
+FORMULA 
+From (REF ), we have
+FORMULA 
+From (REF ), we can obtain the amplitudes
+FORMULA 
+where FORMULA .
+By substituting (REF ) into FORMULA , we obtain
+FORMULA 
+where
+FORMULA 
+Next let us show that
+FORMULA 
+From (REF ) and by (REF ), we obtain
+FORMULA 
+From (REF ) and by (REF ), we obtain
+FORMULA 
+From (REF ) and (REF ), we have
+FORMULA 
+By (REF ), from (REF ) we obtain
+FORMULA 
+By expanding (REF ) and using (REF ) and (REF ), we obtain
+FORMULA 
+Then (REF ) follows (REF ), (REF ) and (REF ).
+Finally, (REF ) follows () and (REF ).
+
+Appendix D: The proofs of the invariant for FORMULA -qubits
+We can rewrite
+FORMULA 
+where
+FORMULA 
+FORMULA 
+From (REF ) and (), it happens that FORMULA , where FORMULA  is an identity.
+Lemma 1.
+FORMULA 
+Proof.
+By (REF ),
+FORMULA 
+By (REF ),
+FORMULA 
+By (REF ),
+FORMULA 
+So, by (REF ),
+FORMULA 
+So, by (REF ) and (REF ),
+FORMULA 
+Lemma 2.
+When FORMULA , FORMULA .
+Proof. There are two cases.
+Case 1. FORMULA .
+By the definitions, FORMULA  and FORMULA . Therefore for the case, FORMULA .
+Case 2. FORMULA .
+By the definitions FORMULA  and FORMULA  because FORMULA  is odd. Since FORMULA , by the definition FORMULA . Hence, FORMULA  for the case.
+Consequently, the argument is done by Cases 1 and 2.
+Part 1. The proof of Theorem 1 (for even FORMULA -qubits)
+For the proof of the invariant for 4-qubits, see Appendix A. The proof of
+Theorem 1 follows the following Steps 1 and 2.
+Step 1. Prove FORMULA , where FORMULA  is obtained
+from FORMULA  by replacing FORMULA  by FORMULA .
+By lemma 1 above, clearly Step 1 holds.
+Step 2. Prove FORMULA .
+Step 2.1. Prove FORMULA , where FORMULA  and FORMULA  is obtained
+from FORMULA  by replacing FORMULA  by FORMULA .
+Notice that in Step 2.1 we will present the idea which will be used in the
+proof of Step 2.2 (for general case).
+Proof.
+From (REF ),
+FORMULA 
+Let
+FORMULA 
+Then (REF ) can be rewritten as follows.
+FORMULA 
+Thus
+FORMULA 
+As well, from () we obtain
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+From (REF ), we obtain
+FORMULA 
+where FORMULA .
+Note that from (REF ) and (REF ), clearly
+FORMULA 
+Now we demonstrate FORMULA .
+To compute FORMULA , let
+FORMULA 
+in (REF ).
+Let us compute FORMULA  by using (REF ) and (REF ). Then we obtain the
+coefficients of FORMULA  and FORMULA  in FORMULA  as follows.
+(1). The coefficients of FORMULA  in FORMULA  is
+FORMULA 
+Then it is easy to see that the coefficient of FORMULA  in FORMULA  is FORMULA .
+(2). The coefficient of FORMULA  in FORMULA  is
+FORMULA 
+Then, the coefficient of FORMULA  in FORMULA  is
+FORMULA 
+Let FORMULA . Note that FORMULA  by the
+definition. It is not hard to see that the coefficient of FORMULA  in FORMULA  happens to be FORMULA .
+(3). The coefficient of FORMULA  in FORMULA  is
+FORMULA 
+Note that the coefficient of FORMULA  in FORMULA  is
+the opposite number of the one of FORMULA  in FORMULA  because FORMULA .  Therefore the coefficient of FORMULA  in FORMULA  vanishes.
+(4). The coefficient of FORMULA  in FORMULA  is
+FORMULA 
+Note that the coefficient of FORMULA  in FORMULA  is
+the opposite number of the one of FORMULA  in FORMULA . As well,
+the coefficient of FORMULA  in FORMULA  vanishes.
+From the above discussion, it is straightforward that FORMULA .
+Step 2.2. For general case
+Let
+FORMULA 
+Then FORMULA , where
+FORMULA 
+Note that FORMULA  and FORMULA  are obtained from FORMULA  by replacing FORMULA  by FORMULA  and FORMULA , respectively.
+Proof.
+We rewrite
+FORMULA 
+Then
+FORMULA 
+Thus, FORMULA , where FORMULA .
+By the above discussion,
+FORMULA 
+Let
+FORMULA 
+and
+FORMULA 
+where FORMULA .
+From (REF ) and (REF ), it is not hard to see that
+FORMULA 
+Then, from (REF ), (REF ) and (REF )
+FORMULA 
+Thus, from (REF )
+FORMULA 
+where FORMULA  and FORMULA .
+By using the idea used in Step 2.1 above,  from (REF ) we can show FORMULA .
+Conclusively, it is not hard to prove Step 2 by repeating applications of
+Step 2.2.
+Part 2. The proof of Theorem 2 (for odd FORMULA -qubits)
+For the proofs for 3-qubits and 5-qubits, see Appendixes B and C,
+respectively.
+The proof of Theorem 2 follows the following Steps 1 and 2 immediately.
+Step 1. Prove
+FORMULA 
+where FORMULA , FORMULA  and FORMULA  are obtained from FORMULA , FORMULA  and FORMULA  by replacing FORMULA  by FORMULA , respectively.
+Step 1.1. Prove
+FORMULA 
+By the definition,
+FORMULA 
+When FORMULA , clearly
+FORMULA 
+Hence, from (REF ),
+FORMULA 
+By substituting (REF ) into FORMULA ,
+FORMULA 
+Step 1.2. Calculating  FORMULA
+As discussed in Step 1.1, we can demonstrate
+FORMULA 
+Step 1.3. Prove
+FORMULA 
+By the definition,
+FORMULA 
+When FORMULA , clearly
+FORMULA 
+Therefore, by (REF )
+FORMULA 
+By substituting (REF ) and (REF ) and computing,
+FORMULA 
+Note that when FORMULA , FORMULA  by the
+definition and FORMULA  by lemma 2. Thus, the proof
+of Step 1.3 is done.
+By Steps 1.1, 1.2 and 1.3, we finish the proof of Step 1.
+Step 2. Prove that
+FORMULA 
+By Theorem 1 for FORMULA -qubits, from (REF ),
+FORMULA 
+and from ()
+FORMULA 
+Let us compute FORMULA . From (REF ) and () we
+obtain
+FORMULA 
+Let FORMULA  and FORMULA . Then (REF ) can be rewritten as
+FORMULA 
+By Theorem 1 for FORMULA -qubits, from (REF ) it is easy to see
+FORMULA 
+Note that
+FORMULA 
+and FORMULA  whenever FORMULA  by ().
+By expanding,
+FORMULA 
+Similarly, by expanding,
+FORMULA 
+Thus, substituting (REF ) and (REF ) into (REF ), we have
+FORMULA 
+From (REF ), (REF ) and (REF ), we get
+FORMULA 
+The proof of Step 2 follows (REF ), (REF ) and (REF )
+immediately.
+
+Appendix E: The proof of  FORMULA
+Let FORMULA  and FORMULA  be real. To find the extremes of FORMULA , we compute the
+following partial derivatives:
+FORMULA 
+FORMULA 
+...........
+FORMULA 
+FORMULA 
+FORMULA 
+..........
+FORMULA 
+From (REF ) FORMULA  (REF ),
+FORMULA 
+From (REF )FORMULA  (REF ),
+FORMULA 
+........
+From (REF )FORMULA (REF ),
+FORMULA 
+........
+Evaluate the sum over the above expressions like (REF ), we obtain
+FORMULA 
+As well, we have
+FORMULA 
+From (REF ), FORMULA  or FORMULA . From (REF ) , FORMULA  or FORMULA . When FORMULA  or FORMULA , it is not hard to see that FORMULA . When FORMULA , FORMULA .
+Therefore FORMULA  and FORMULA .

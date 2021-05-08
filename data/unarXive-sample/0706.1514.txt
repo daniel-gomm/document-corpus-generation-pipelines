@@ -1,0 +1,548 @@
+
+Electron and hole spin dynamics and decoherence in quantum
+dots
+[D. Klauser et al.]D. Klauser, D. V. Bulaev, W. A. Coish and Daniel Loss
+Department of Physics and Astronomy, University of Basel,
+Klingelbergstrasse 82, CH-4056 Basel, Switzerland
+In this article we review our work on the dynamics and decoherence of electron and hole
+spins in single and double quantum dots. The first
+part, on electron spins, focuses on decoherence induced via the
+hyperfine interaction while the second part covers decoherence and
+relaxation of heavy-hole spins due to spin-orbit interaction as
+well as the manipulation of heavy-hole spin using electric dipole spin
+resonance.
+
+Introduction
+The Loss-DiVincenzo proposal{{cite:2acbb64b-9708-48bb-a870-6eb650e313c1}} to use the spin of a
+single electron confined in a quantum dot as a qubit for quantum
+computation has triggered significant interest in the dynamics and
+control of single spins in quantum dots. This has led to numerous
+exciting experimental achievements, among them the realization of single
+electrons in single dots {{cite:92313d7e-047b-4f2f-8ef8-2fbe9f96c0c5}}, {{cite:83723ace-3226-4d20-879b-7cf5cd6f4921}} as well
+as double dots {{cite:269c9fef-3855-46bf-8002-c49906948e4b}}, {{cite:bc9275ca-bc99-4507-8623-bfbf35b20c32}}, {{cite:c85891a3-46ab-4ae2-b6ed-6bf7d7ad2f73}}, the
+implementation of single-spin read
+out{{cite:8ed42dac-4620-4e49-8c4f-df3184ad1915}}, {{cite:45620779-52ff-41c8-92fd-873b512ac13b}}, the demonstration of the
+FORMULA  operation via pulsed exchange
+interaction{{cite:5e2bcdf2-f181-4ced-b8cb-7ecb76b33c74}} and the measurement of single-spin ESR
+{{cite:d880a50c-925f-49e5-a4a2-e78e55aee554}}. For a detailed account of the progress in
+implementing the Loss-DiVincenzo proposal, see the extensive reviews in
+Refs. Cerletti:2005a and Coish:2006a.
+On the theoretical side, one focus was, and still is, the investigation of the
+decoherence induced by the nuclei in the host material via the
+hyperfine interaction. The first part of this review article is devoted to
+the discussion of the rich spin dynamics that results from the
+hyperfine interaction. We first give an introduction to hyperfine
+interaction in quantum dots (Sec. ). Subsequently, we
+discuss dynamics under the influence of hyperfine
+interaction for the case of a single spin in a single
+dot (Sec. ) and for a double dot with one electron in
+each dot (Sec. ). To conclude the part about
+hyperfine interaction, we discuss the idea of narrowing the nuclear
+spin state in order to increase the spin coherence time (Sec. ).
+The second part of the article is devoted to the dynamics and the
+manipulation of heavy-hole spins in quantum dots. The motivation to
+study hole spins comes from the fact that the valence band has
+FORMULA -symmetry and thus the hyperfine interaction with lattice nuclei
+for holes is suppressed in comparison to that of the conduction band
+electrons. As a consequence, the main interest for hole spin dynamics
+is the relaxation and decoherence due to spin-orbit interaction and we
+discuss this in Sec. . The next task towards using
+hole spins as qubits for quantum computation is of course the coherent
+manipulation of single hole spins. A potentially powerful method to
+achieve coherent manipulation of spins is electric dipole spin
+resonance (EDSR). An analysis of EDSR for heavy holes in quantum dots
+will be presented in Sec. .
+
+Hyperfine interaction for electrons in quantum dots
+In this part of the article concerning electron spin decoherence we
+assume that the orbital level spacing is much larger than the typical
+energy scale of the hyperfine interaction. This is the case in typical
+lateral quantum dots containing single electrons and allows one to
+write an effective hyperfine Hamiltonian FORMULA  for a
+single electron confined to the quantum-dot orbital ground state  FORMULA
+FORMULA 
+where FORMULA  is the spin-1/2 operator for a single electron and
+FORMULA  is the spin operator for the nuclear spin at lattice
+site FORMULA , while FORMULA  is the volume of the crystal unit cell and FORMULA 
+is the hyperfine coupling strength. For GaAs, which is mostly used for
+the fabrication of lateral dots, the average hyperfine coupling strength
+weighted by the natural abundance of each isotope is FORMULA  {{cite:d352831e-0440-4ed5-a6de-fe631ff2798a}}. In Fig. REF  the hyperfine coupling
+of the electron spin in a lateral double quantum dot is illustrated.
+FIGURE 
+The electron spin dynamics under FORMULA  have been studied
+under various approximations and in different parameter regimes. For
+an extensive overview, see reviews in
+Refs. Cerletti:2005a, Schliemann:2003a and Taylor:2006a. Here,
+we briefly mention parts of this study before we focus on a few cases
+of special interest. The first analysis of electron spin dynamics under
+FORMULA  in this context showed that the long-time longitudinal spin-flip
+probability is FORMULA  {{cite:4194e43e-dd35-4f33-8e0e-77514f216b3f}}, i.e., this
+probability is suppressed
+in the limit of large nuclear spin polarization FORMULA  and large number FORMULA 
+of nuclear spins in the dot. An exact solution for the case of full
+polarization (FORMULA ) gives, for both transverse and longitudinal
+electron spin components, a long-time power law decay FORMULA  by a
+fraction FORMULA  on a timescale of FORMULA 
+(for a GaAs dot with FORMULA ){{cite:79b6d219-55c7-4f82-a7df-cd95c071c009}}. The fact that
+this exact solution shows a non-exponential decay demonstrates the
+non-Markovian behavior of the nuclear spin bath. For non-fully
+polarized systems FORMULA  and in the limit of large magnetic fields
+(or high polarization FORMULA ), the transverse electron spin
+undergoes a Gaussian decay{{cite:79b6d219-55c7-4f82-a7df-cd95c071c009}}, {{cite:dcd6f96a-f6a1-4d46-8f95-10d01214504b}} on a
+timescale FORMULA  (FORMULA 
+for GaAs with FORMULA  and FORMULA ){{cite:d48c2e14-d45c-421b-9e8e-2fbfd1040f4d}}. This Gaussian
+decay can be reversed using a spin-echo sequence or by preparing the nuclear
+spin system in an eigenstate of FORMULA  {{cite:d48c2e14-d45c-421b-9e8e-2fbfd1040f4d}}.
+Several methods to prepare
+the nuclear spin system have recently been suggested
+{{cite:206da1e6-2428-4164-90ad-4c04653bc938}}, {{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}}, {{cite:86f3905f-0de3-4790-a8c4-a56a1e690b21}} and we discuss
+one of these methods {{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}} in
+Sec. . Once the nuclear spin system is prepared in an
+eigenstate, the electron spin coherence is
+on one hand limited by dynamics in the nuclear spin system driven by
+the dipole-dipole interaction for which a
+worst case estimate {{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}} gives FORMULA  and on
+the other hand, even for an eigenstate of FORMULA , there is decoherence
+due to the flip-flop dynamics which can be important at times FORMULA  (or less, depending on the size of the electron Zeeman
+splitting). For the decay of nuclear spin polarization experiments
+suggest timescales up to tens of seconds{{cite:f0741133-3ed6-426f-8789-363b3cc448f0}}, {{cite:2a31caa4-f509-4aa7-9b91-66d538a1d4b5}}, {{cite:9f040e87-41eb-49ce-be6e-7724e78829f5}}, {{cite:e5e8062e-1c09-459c-9c41-bc3c83714724}} and hysteretic behavior of the
+nuclear spin polarization with respect to the external magnetic field
+has been observed {{cite:c94ede9d-87e9-41cc-8429-19b4ec9f71fc}}. Further, measurements of the
+transport current in the so-called spin-blockade regime {{cite:f15190a5-96ca-457b-a205-2286ef3299b3}}
+revealed hysteretic behavior with respect to the magnetic field {{cite:71ff723a-56ed-43eb-a9f8-5011d9b4ec58}}, {{cite:f0741133-3ed6-426f-8789-363b3cc448f0}}
+and bistable behavior in time{{cite:f0741133-3ed6-426f-8789-363b3cc448f0}}, which is attributed to a
+bistability in the nuclear spin polarization.
+Further, very recent experiments suggest a
+strong dependence of the nuclear field correlation time depending on whether
+an electron is present in the dot or not and thus hyperfine mediated nuclear
+spin flips are a possible mechanism for nuclear spin
+diffusion{{cite:2a31caa4-f509-4aa7-9b91-66d538a1d4b5}}. This last mechanism has been
+estimated to lead to fluctuations of nuclear spin polarization
+on a timescale of  FORMULA{{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}}.
+
+Single-electron spin decoherence
+In this section we look in more detail at hyperfine-induced decoherence for a
+single spin in a quantum dot in the regime of large Zeeman splitting
+FORMULA  (due to an externally applied magnetic
+field FORMULA ). If FORMULA  is much larger than
+FORMULA ,
+with FORMULA  (where FORMULA  is the density
+matrix of the nuclear spin system), we may neglect the transverse term
+FORMULA  and find that the Hamiltonian is simply
+FORMULA 
+This Hamiltonian just induces precession around the FORMULA -axis with a
+frequency that is determined by the eigenvalue FORMULA  of FORMULA , where
+FORMULA . For a large but
+finite number of nuclear spins (FORMULA  for lateral GaAs dots)
+the eigenvalues FORMULA  are Gaussian distributed (due to the central
+limit theorem) with mean FORMULA  and variance FORMULA 
+{{cite:d48c2e14-d45c-421b-9e8e-2fbfd1040f4d}}.
+Calculating the dynamics under FORMULA  (which is valid up to a
+timescale of FORMULA , where the transverse
+terms become relevant) leads to a Gaussian decay of the transverse electron
+spin state FORMULA 
+{{cite:d48c2e14-d45c-421b-9e8e-2fbfd1040f4d}}:
+FORMULA 
+Here again, FORMULA  denotes the polarization and for an unpolarized GaAs
+quantum dot with FORMULA  we find FORMULA .
+Applying an additional ac driving field with amplitude FORMULA  along the FORMULA -direction leads to
+single-spin ESR. Assuming again that
+FORMULA , we have the Hamiltonian
+FORMULA 
+In a rotating-wave approximation (which is valid for
+FORMULA ) the decay of the driven Rabi oscillations is
+given by{{cite:fefa9799-e15d-44d6-9b08-0b764eca09e4}}
+FORMULA 
+for FORMULA  and
+FORMULA . Here,
+FORMULA  is defined in the same way as
+FORMULA  in Eq. (REF ). The time-independent constant is
+given by FORMULA .
+The two interesting features of the decay are the slow (FORMULA ) power law and the universal phase shift of
+FORMULA . The fact that the power law already becomes valid after a
+short time FORMULA  (for FORMULA ) preserves the coherence over a long
+time, which makes the Rabi oscillations visible even when the Rabi
+period is much longer than the timescale FORMULA  for
+transverse spin decay. Both the universal phase shift and the
+non-exponential decay have recently been observed in experiment
+{{cite:fefa9799-e15d-44d6-9b08-0b764eca09e4}}.
+In order to take corrections due to the transverse terms
+FORMULA  into account, a more elaborate
+calculation is required. The Hamiltonian with flip-flop terms (but
+without a driving field) takes the form
+FORMULA 
+In Ref. Coish:2004a a systematic
+calculation taking into account these so-called flip-flop terms was
+performed using a generalized master equation, valid in the limit of
+large magnetic field or large polarization. This calculation shows that
+even for an eigenstate of FORMULA , for which the Gaussian decay in
+Eq. (REF ) vanishes, the electron spin undergoes nontrivial
+non-Markovian decay on a timescale FORMULA .
+Other calculations {{cite:836e526e-ca6f-4c02-b892-9eb9424edb1b}}, {{cite:88b2ab18-fc08-4572-bba2-0d99168a3824}}, {{cite:15cca7e2-e08a-481e-8819-bbb173a4548f}} give
+microsecond timescales for the electron spin decoherence due to electron-nuclear
+spin flip-flops processes. The results in Ref. Yao:2005a suggest that also the
+decoherence due to dynamics in the nuclear spin system via
+electron mediated nuclear dipole-dipole interaction is suppressed by a
+spin echo and thus that the spin-echo decay time may be considerably
+different from the (not ensemble averaged) free-induction decay.
+
+Singlet-triplet decoherence in a double quantum
+qot
+We now move on to discuss hyperfine induced decoherence in a double
+quantum dot. The effective Hamiltonian in the subspace
+of one electron on each dot is best written in terms of the sum and
+difference of electron spin and collective nuclear spin operators:
+FORMULA 
+and FORMULA :
+FORMULA 
+Here, FORMULA  is the Heisenberg exchange coupling between the two
+electron spins. Similar to the single-dot case, we assume that the
+Zeeman splitting is much larger than FORMULA  and FORMULA , where FORMULA  is the
+root-mean-square expectation value of the operator FORMULA 
+with respect to the nuclear spin state FORMULA . Under these
+conditions the relevant spin Hamiltonian becomes block diagonal with
+blocks labeled by the total electron spin projection along the
+magnetic field FORMULA . In the subspace of FORMULA  (singlet
+FORMULA , and triplet FORMULA ) the Hamiltonian can
+be written as {{cite:762f2c99-fe52-4560-b4b5-30a2b3ff9a6e}}, {{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}}
+FORMULA 
+Here, FORMULA  is the inhomogeneity of the externally
+applied classical static magnetic field with FORMULA , while the nuclear difference field FORMULA  is Gaussian
+distributed, as was FORMULA  in the single dot case. A full account of the
+rich pseudo-spin dynamics under
+FORMULA  can be
+found in Refs. Klauser:2006a and Coish:2005a. Here we only discuss
+the most prominent features for FORMULA , which gives
+the probability to find the singlet FORMULA , if the system was initialized to
+FORMULA  at FORMULA . The parameters that determine the
+dynamics are the exchange coupling FORMULA , the expectation value of the
+total difference field FORMULA  and the width of
+the difference field FORMULA  (with FORMULA  and
+FORMULA ). For the asymptotics one finds that
+the singlet probability does not decay to zero, but goes to a finite,
+parameter-dependent value {{cite:762f2c99-fe52-4560-b4b5-30a2b3ff9a6e}}. In the case of strong
+exchange coupling FORMULA  the singlet
+only decays by a small fraction
+quadratic in FORMULA  or FORMULA :
+FORMULA 
+At short times FORMULA  undergoes a Gaussian decay on a
+timescale FORMULA  while at long
+times FORMULA  we have a power law decay
+FORMULA 
+As in the case of single-spin ESR, we again have a power-law decay, now
+with FORMULA  and a universal phase shift, in this case:
+FORMULA . Measurements{{cite:07eb1492-bfb8-4a58-be6b-b5b3a8522431}} of the correlator FORMULA 
+confirmed the parameter dependence of the saturation value and were
+consistent with the theoretical predictions concerning the decay.
+Using the same methods, one may also look at transverse correlators in
+the FORMULA  subspace and find again power-law decays and a universal
+phase shift, albeit, with different decay power and different value
+of the universal phase shift{{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}}. Looking at the
+short-time behavior of the transverse correlators also allows one to
+analyze the fidelity of the FORMULA  gate{{cite:89bfe610-7d73-45ec-9cc5-421c592df2d8}}.
+
+Nuclear spin state narrowing
+The idea to prepare the nuclear spin system in order to prolong the
+electron spin coherence was put forward in
+Ref. Coish:2005a. Specific methods for nuclear spin state
+narrowing have been described in Ref. Klauser:2006a in the
+context of a double dot with oscillating exchange interaction, in
+Ref. Giedke:2006a for phase-estimation of a single (undriven)
+spin in a single dot and in an optical setup in
+Ref. Stepanenko:2006a. Here, we discuss narrowing for the case of
+a driven single spin in a single dot, for which the details are very
+similar to the treatment in Ref. Klauser:2006a. The general idea behind state
+narrowing is that the evolution of the electron spin system depends on the value of the
+nuclear field since the effective Zeeman splitting is given by FORMULA .
+This leads to a nuclear field dependent resonance condition FORMULA 
+for ESR and thus measuring the evolution of the electron spin system determines FORMULA  and thus
+the nuclear spin state.
+We start from the Hamiltonian for single-spin ESR as given in
+Eq. (REF ). The electron spin is initialized to the
+FORMULA  state at time FORMULA  and evolves under FORMULA 
+up to a measurement performed at time FORMULA . The probability to find
+FORMULA  for a given eigenvalue FORMULA  of the nuclear
+field operator (FORMULA ) is then given by
+FORMULA 
+where FORMULA  and FORMULA  is the amplitude of
+the driving field. As mentioned above, in equilibrium we have a
+Gaussian distribution for the eigenvalues FORMULA , i.e., for the
+diagonal elements of the nuclear spin density matrix FORMULA .
+Thus, averaged over the nuclear distribution we have the probability
+FORMULA  to find the state FORMULA , i.e.,
+FORMULA .
+After one measurement with outcome FORMULA , we thus find for
+the diagonal of the nuclear spin density matrix {{cite:7f6b88fc-3735-4774-9943-f8db227bfda4}}
+FORMULA 
+Assuming now that the measurement is performed in
+such a way that it gives the time averaged value (i.e., with a time
+resolution less than FORMULA ) we have for the probability
+FORMULA  of measurement result FORMULA  as a
+function of the nuclear field eigenvalue FORMULA . Thus, by performing a
+measurement on the electron spin (with outcome FORMULA ),
+the nuclear-spin density matrix is
+multiplied by a Lorentzian with width FORMULA  centered around the FORMULA  that satisfies the resonance condition
+FORMULA . This results in a narrowed nuclear
+spin distribution, and thus an extension of the electron spin
+coherence, if FORMULA .
+In the case of measurement outcome FORMULA  we find
+FORMULA 
+i.e., the Gaussian nuclear spin distribution
+is multiplied by one minus a Lorentzian, thus reducing the probability
+for the nuclear field to have a value matching the resonance
+condition FORMULA . Due to the slow dynamics of the nuclear spin system (see
+discussion at the end of Sec. ), many
+such measurements of the electron spin are possible (with
+re-initialization of the electron spin between measurements). Under the
+assumption of a static nuclear field during FORMULA  such initialization
+and measurement cycles we find
+FORMULA 
+where FORMULA  is the number of times the measurement
+outcome was FORMULA . The simplest way to narrow is to
+perform single measurements with FORMULA . If
+the outcome is FORMULA , narrowing has been achieved.
+Otherwise, the nuclear system should be allowed to re-equilibrate before the
+next measurement{{cite:8ad3d8b3-e581-4ae7-945a-a356ea9d10c1}}. In order to achieve a systematic
+narrowing, one can envision adapting the driving frequency (and thus
+the resonance condition) depending on the outcome of the previous
+measurements. Such an adaptive scheme is described in detail in
+Refs. Stepanenko:2006a and Klauser:2006a. With
+this we conclude the part on hyperfine-induced decoherence of electron
+spins in quantum dots and move on to the heavy holes.
+
+Spin decoherence and relaxation for heavy holes
+Now we consider the spin coherence of heavy holes in quantum dots. The
+contact hyperfine interaction between lattice nuclei and heavy-hole
+spin is much weaker than that for electrons, since the valence band
+has FORMULA  symmetry. Thus (neglecting FORMULA  hybridization) only the weaker anisotropic hyperfine interaction is present. Therefore, the decoherence due to hyperfine
+interaction is suppressed for heavy holes and in this section we focus
+only on the spin decoherence due to spin-orbit interaction induced by
+heavy-hole - phonon coupling.
+From the two-band Kane model, the Hamiltonian for the valence band of
+III–V semiconductors is given by
+FORMULA 
+where FORMULA  is the Luttinger-Kohn Hamiltonian
+{{cite:269cbe7e-da72-4ea6-820d-dda071f0f32f}}. The second term is the Dresselhaus spin-orbit coupling (due
+to bulk inversion asymmetry) for the valence band {{cite:e49d7720-313d-4421-a42c-d08fbe867fd4}}, {{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}},
+FORMULA  are FORMULA  matrices corresponding to
+spin FORMULA , FORMULA , and
+FORMULA , FORMULA  are given by cyclic permutations. The last term
+in Eq. (REF ) FORMULA  is the Zeeman term
+for the valence band {{cite:1cfc8c8a-3db9-4ab3-b25d-c6051b983138}} (FORMULA  and
+FORMULA  are the Luttinger parameters {{cite:1cfc8c8a-3db9-4ab3-b25d-c6051b983138}} and
+FORMULA ).
+FIGURE 
+We consider a FORMULA -grown two-dimensional system. In the case of an
+asymmetric quantum well, due
+to structure inversion asymmetry along the growth direction, there is
+an additional spin-orbit term, the Bychkov-Rashba spin-orbit term,
+which, in the two-band model is given
+by {{cite:ecea4fdb-3b51-41b0-8e2f-5c4ec31f3af1}} FORMULA , where
+FORMULA  is the Bychkov-Rashba spin-orbit coupling constant and
+FORMULA  is an effective electric field along the growth
+direction.
+Due to confinement along the growth direction, the valence
+band splits into a heavy-hole subband with FORMULA  and a
+light-hole subband with FORMULA  (see
+Fig. REF  and Ref. BLPRL2005). If the
+splitting FORMULA  of heavy-hole and light-hole subbands is
+large, we describe the properties of heavy-holes and light-holes
+separately, using only the FORMULA  submatrices for the
+FORMULA  and FORMULA  states, respectively. The heavy-hole
+submatrices have the property that
+FORMULA  and FORMULA . For such a system and
+low temperatures, only the lowest heavy-hole subband is significantly
+occupied. In this case, we consider heavy holes
+only. In the framework of perturbation theory {{cite:e49d7720-313d-4421-a42c-d08fbe867fd4}}, using
+Eq. (REF ) and taking into account the Zeeman
+energy and the Bychkov-Rashba spin-orbit coupling term, the
+effective Hamiltonian for heavy holes of a quantum dot with lateral
+confinement potential FORMULA  is given
+by
+FORMULA 
+where FORMULA  is the effective heavy-hole mass,
+FORMULA ,
+FORMULA , FORMULA  is the
+component of the FORMULA -factor tensor along the growth direction, and
+FORMULA 
+is the spin-orbit coupling of heavy holes consisting of three
+contributions: the Dresselhaus term (FORMULA ) {{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}}, the
+Rashba term (FORMULA ) {{cite:524d4c88-f7d8-4f0c-9de1-056831b6a3f2}}, and the last term
+(FORMULA ) combines two effects: orbital coupling via non-diagonal
+elements in the Luttinger-Kohn Hamiltonian (FORMULA ) and
+magnetic coupling via non-diagonal elements in the Zeeman term
+(FORMULA ). This latter term represents a new type of
+spin-orbit interaction which is unique for heavy holes
+{{cite:0a55208e-48a9-45e5-b3f2-1ef8ad6fa281}}. Here, FORMULA , FORMULA , FORMULA ,
+FORMULA , FORMULA , FORMULA , FORMULA  is
+the free electron mass, FORMULA  is the Luttinger parameter
+{{cite:1cfc8c8a-3db9-4ab3-b25d-c6051b983138}}, FORMULA  is the
+averaged effective electric field along the growth direction of a
+quantum dot, and FORMULA  is the splitting of light-hole and
+heavy-hole
+subbands. The splitting between heavy-hole and light-hole subbands
+FORMULA , where FORMULA  is the quantum-dot height.
+The spectrum of (REF ) for parabolic lateral confinement FORMULA 
+and for vanishing spin-orbit interaction
+(FORMULA ) is the Fock-Darwin spectrum split
+by the Zeeman term {{cite:046dd867-9635-4907-9c1b-adb5506ea52e}}, {{cite:5f2120d3-85ac-4598-b0a6-06c607b55e80}}. From Eq. (REF ), it can
+be seen that FORMULA  leads to coupling of the
+two lowest states FORMULA  to the states with the opposite
+spin orientations and different orbital momenta
+FORMULA . Note that the three spin-orbit terms in
+Eq. (REF ) differ by symmetry in momentum space and hence mix
+different states resulting in avoided crossings of the energy levels
+(see inset of Fig. REF ). Due to this spin-orbit mixing of the
+heavy-hole states, the transitions between the states
+FORMULA  with emission or absorption of an acoustic phonon
+become possible and this is the main source of spin relaxation and
+decoherence for heavy-holes {{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}}.
+We consider a single-particle quantum dot, in which a heavy hole can
+occupy one of the low-lying levels. In the following, we study the
+relaxation of an FORMULA -level system, the first FORMULA  levels have the
+same spin and the FORMULA -th
+level has the opposite spin orientation. In the framework of Bloch-Redfield theory {{cite:56f4428b-cf58-4d36-8634-8d7ba1a44e7b}}, the Bloch equations for heavy-hole
+spin motion for such a system in the interaction representation are given by
+FORMULA 
+where FORMULA ,
+FORMULA  is the density matrix, FORMULA  is the
+transition rate from state FORMULA  to state FORMULA , FORMULA  is a constant
+(which has the value of FORMULA  in thermodynamic
+equilibrium if FORMULA ),
+FORMULA 
+where pure dephasing (due to fluctuations along FORMULA  direction) is
+absent in the spin decoherence time FORMULA  since the spectral function
+is superohmic.
+As can be seen from Eq. (REF ), the spin motion has a complex
+dependence on the density matrix and, in the general
+case, there are FORMULA  spin relaxation rates. However, in the case of
+low temperatures (FORMULA ), when
+phonon absorption becomes strongly suppressed, solving the master
+equation, we find that FORMULA . Therefore, there is only one spin relaxation time FORMULA . In this
+limit, the last sum in Eq. (REF ) is
+negligible and the spin decoherence time saturates, i.e., FORMULA .
+Note that in contrast to electrons {{cite:9da8bcc7-38be-421c-9e07-19a71670d5ca}} there are no
+interference effects between different spin-orbit coupling terms,
+thus the total spin relaxation rate FORMULA  is the sum of rates
+FORMULA 
+{{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}}, {{cite:0a55208e-48a9-45e5-b3f2-1ef8ad6fa281}}:
+FORMULA 
+where FORMULA ,
+FORMULA ,
+FORMULA .
+FIGURE 
+In Fig. REF  the total spin relaxation rate FORMULA  is plotted
+as a function of perpendicular magnetic field FORMULA . There are
+three peaks in the relaxation rate curve at
+FORMULA , and FORMULA , which are
+caused by strong spin mixing at the anticrossing points. In the inset,
+the first (third) avoided crossing resulting from Dresselhaus (Rashba)
+spin-orbit coupling corresponds to the first (third) peak of the spin
+relaxation curve in Fig. REF . At non-zero in-plane magnetic
+fields (FORMULA ), there is an additional peak which is due to an
+anticrossing between the energy levels FORMULA  and FORMULA 
+(see the second avoided crossing in the inset). Note that the spin
+relaxation rate for heavy holes is comparable to that for electrons
+{{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}}, {{cite:eeb0f520-4e49-435f-b3da-3d3d2a1e697a}} due to the fact that spin-orbit coupling of
+heavy holes is strongly suppressed for flat quantum dots (see
+Eq. (REF )), as confirmed by a recent experiment {{cite:0ec44a8d-37f6-4918-8724-1b6025911efe}}.
+
+Electric dipole spin resonance for heavy holes
+Let us now consider methods for the manipulation and detection of
+the heavy-hole spin in quantum dots. For electrons in two-dimensional
+structures, an applied oscillating in-plane magnetic field couples
+spin-up and spin-down states via magnetic-dipole transitions and is
+commonly used in electron spin resonance, Rabi oscillation, and spin
+echo experiments {{cite:d880a50c-925f-49e5-a4a2-e78e55aee554}}. It can be shown that
+magnetic-dipole transitions (FORMULA , FORMULA , and
+FORMULA ) are forbidden and, due to spin-orbit mixing of the
+states FORMULA  with FORMULA ,
+electric-dipole transitions (FORMULA , FORMULA , and
+FORMULA ) are most likely to occur.
+Therefore, the heavy holes are affected by the oscillating electric
+field component and not by the magnetic one.
+We consider a circularly polarized electric field rotating in the
+XY-plane with frequency FORMULA : FORMULA . Therefore, the interaction of heavy holes with
+the electric field is described by the Hamiltonian
+FORMULA . The coupling
+between the states FORMULA  is given by
+FORMULA , where
+FORMULA 
+is an effective dipole moment of a heavy hole depending on Dresselhaus
+spin-orbit coupling constants, perpendicular magnetic field FORMULA ,
+lateral size of a quantum dot, and frequency FORMULA  of an rf electric field.
+In the framework of the Bloch-Redfield theory {{cite:56f4428b-cf58-4d36-8634-8d7ba1a44e7b}} (taking
+into account also off-diagonal matrix elements), the effective master
+equation for the density matrix FORMULA  assumes the form of Bloch
+equations {{cite:56f4428b-cf58-4d36-8634-8d7ba1a44e7b}}, with the detuning of the rf field given by
+FORMULA .
+FORMULA  is
+the Larmor frequency, FORMULA  the spin relaxation
+time (FORMULA  is the transition rate from state FORMULA  to state FORMULA ),
+FORMULA  {{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}} the spin decoherence time, and
+FORMULA  the equilibrium value of FORMULA 
+without rf field.
+The coupling energy between a heavy hole and an oscillating electric
+field is given by
+FORMULA 
+where
+FORMULA 
+is the dipole moment of a heavy hole. Therefore, the rf power FORMULA  absorbed by
+a heavy-hole spin system in the stationary state is given by
+{{cite:c88e95d8-315f-4943-a52e-dfa3a11865c5}}
+FORMULA 
+In Fig. REF , the dependence of FORMULA  on a perpendicular magnetic
+field FORMULA  and frequency FORMULA  of the oscillating electric
+field is plotted. The rf power FORMULA  absorbed by the system has three
+resonances and one resonant dip. The first resonance appears when the
+energy of rf radiation equals the Zeeman energy of heavy holes:
+FORMULA . The shape
+of this resonance (at certain FORMULA ) is given by
+FORMULA .
+FIGURE 
+If the first and second resonances are well separated
+(FORMULA ), then the absorbed power can be estimated as
+FORMULA 
+in the region of the second and third resonances and the resonant
+dip. The second resonance corresponds to an anticrossing of the levels
+FORMULA  and FORMULA  (see the first avoided crossing in the inset
+of Fig. REF ) at FORMULA  {{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}}
+(at FORMULA ). At the anticrossing point, there is
+strong mixing of the spin-up and spin-down states and the dipole
+moment of a heavy-hole spin system is maximal
+FORMULA  and
+equals half of the lowest electric dipole moment of a quantum dot
+(FORMULA ). Therefore, the height of the second resonance
+is given by
+FORMULA . The
+resonant dip appears at
+FORMULA , which corresponds to FORMULA 
+and to zero dipole moment (see Eq. (REF )). The third
+resonance reflects the peak in the spin decoherence rate FORMULA 
+due to an applied in-plane magnetic field (see Fig. REF ) at the
+second anticrossing point (the second avoided crossing in inset of
+Fig. REF ) at FORMULA 
+(FORMULA ). From the positions of the resonances we can determine
+FORMULA , FORMULA , and FORMULA , from the shape and the height of those
+we can extract information about the spin-orbit interaction constants
+FORMULA , FORMULA , and spin-orbit interaction strength due to in-plane
+magnetic field (which is proportional to
+FORMULA ). Moreover, we can determine the dependence of
+the spin relaxation and decoherence times on FORMULA .
+
+Conclusions
+We have discussed the rich dynamics of single electron spins in single and
+double quantum dots due to hyperfine interaction with the nuclei. Key
+features are non-exponential decays of various kinds and a remarkable universal
+phase-shift. Further, we have studied spin decoherence and relaxation
+of heavy holes in quantum dots due to spin-orbit coupling. The spin
+relaxation time FORMULA  for heavy holes in flat quantum dots can be
+comparable to that for electrons {{cite:2c10b7c1-17d0-43ab-8711-741c5beed5d2}}, {{cite:eeb0f520-4e49-435f-b3da-3d3d2a1e697a}} as confirmed by experiment {{cite:0ec44a8d-37f6-4918-8724-1b6025911efe}}. The spin
+decoherence time for heavy holes is given by FORMULA  at low temperatures. There is strong spin
+mixing at energy-level crossings resulting in a non-monotonic dependence
+FORMULA . We have proposed a new method for manipulation of a
+heavy-hole spin in a quantum dot via rf electric fields. This method
+can be used for detection of heavy-hole spin resonance signals, for spin manipulation, and for determining important parameters of
+heavy holes {{cite:0a55208e-48a9-45e5-b3f2-1ef8ad6fa281}}.
+Aknowledgments: We aknowledge financial support from the Swiss
+NSF, the NCCR Nanoscience and JST ICORP.

@@ -1,0 +1,650 @@
+
+Third-order cosmological perturbations of zero-pressure multi-component fluids:
+Pure general relativistic nonlinear effects
+Jai-chan Hwang
+jchan@knu.ac.kr
+Department of Astronomy and Atmospheric Sciences,
+Kyungpook National University, Taegu, Korea
+Hyerim Noh
+hr@kasi.re.kr
+Korea Astronomy and Space Science Institute,
+Daejon, Korea
+2020/09/07 07:31:51
+Present expansion stage of the universe is believed to be mainly
+governed by the cosmological constant, collisionless dark matter and
+baryonic matter. The latter two components are often modeled as
+zero-pressure fluids. In our previous work we have shown that to the
+second-order cosmological perturbations, the relativistic equations
+of the zero-pressure, irrotational, multi-component fluids in a
+spatially near flat background effectively coincide with the
+Newtonian equations. As the Newtonian equations only have quadratic
+order nonlinearity, it is practically interesting to derive the
+potential third-order perturbation terms in general relativistic
+treatment which correspond to pure general relativistic corrections.
+In our previous work we have shown that even in a single component
+fluid there exists substantial amount of pure relativistic
+third-order correction terms. We have, however, shown that those
+correction terms are independent of the horizon scale, and are quite
+small (FORMULA  smaller compared with the
+relativistic/Newtonian second-order terms) due to the weak level
+anisotropy of the cosmic microwave background radiation. Here, we
+present pure general relativistic correction terms appearing in the
+third-order perturbations of the multi-component zero-pressure
+fluids. As a result we show that, as in a single component
+situation, the third-order correction terms are quite small (FORMULA  smaller) in the context of the evolution of our
+universe. Still, there do exist pure general relativistic correction
+terms in third-order perturbations which could potentially become
+important in future development of precision cosmology. We include
+the cosmological constant in all our analyses.
+PACS numbers: 04.50.+h, 04.62.+v, 98.80.-k
+
+Introduction
+Recently, we have been presenting a series of work based on our
+theoretical study of relativistic nonlinear cosmological
+perturbations {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, {{cite:a6bd7f84-4bca-470c-9869-6617db5bd463}}, {{cite:47b85dd3-646e-4132-89bd-a2353a948e72}}, {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}. We
+have shown that to the second-order perturbations, general
+relativistic equations of a zero-pressure, irrotational fluid in a
+spatially flat background have exact Newtonian correspondence except
+for the presence of the gravitational wave contributions
+{{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, {{cite:a6bd7f84-4bca-470c-9869-6617db5bd463}}. In an accompanying paper
+{{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}} we have relaxed all the assumptions we
+made in the second-order perturbations in {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, {{cite:a6bd7f84-4bca-470c-9869-6617db5bd463}},
+and have derived pure general relativistic effects from the
+pressures, rotation, spatial curvature, and multi-component. In that
+work, we have shown that except for the multi-component situation,
+relaxing any of the other three assumptions leads to pure general
+relativistic correction terms appearing in the second order.
+Pressures are intrinsically general relativistic even in the
+background and the linear-order perturbations. The presence of
+background curvature leads to first non-vanishing relativistic
+correction terms appearing in the second order. The rotational
+perturbations generally lead to relativistic correction terms which
+become negligible in the small-scale (sub-horizon scale) limit, thus
+having relativistic/Newtonian correspondence in that limit. In the
+case of zero-pressure, irrotational multi-component fluids in a flat
+background, effectively we have exact relativistic/Newtonian
+correspondence even in the multi-component situation; this will be
+summarized in the later section of this work.
+The relativistic/Newtonian correspondence in the background world
+model was known in the zero-pressure medium by the work of Friedmann
+in 1922 {{cite:2b54dc7f-ef51-40ab-ad0c-63c50223770b}} in the context of Einstein's gravity,
+and by the work of Milne and McCrea in 1934 {{cite:6c4a1d61-ca5c-4f9c-a4a7-014efeee8ca4}} in the
+context of Newton's gravity; the latter Newtonian derivation is
+later known to be a guided one by the already derived Einstein
+gravity result {{cite:e57be96f-7710-4e2f-a792-15067fddd13c}}. In the case of linear
+perturbations, the relativistic/Newtonian correspondence was also
+known in the zero-pressure medium by the work of Lifshitz in 1946
+{{cite:ea3b2362-43c0-44ff-9513-11b415c26adf}} in the context of Einstein's gravity, and by
+the work of Bonnor in 1957 {{cite:c07defbe-d05a-415b-9507-f6277de301f4}} in the context of
+Newton's gravity. The fully nonlinear perturbation equations in the
+context of Newtonian cosmology in a zero-pressure medium were known
+in a textbook by Peebles in 1980 {{cite:931f3f93-0094-471d-9cb6-3859e28b9ce4}}. The Einstein's
+gravity counterpart of the nonlinearly perturbed cosmological
+medium, especially the continued relativistic/Newtonian
+correspondence even to the second order, was first shown only
+recently in our works in {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, {{cite:a6bd7f84-4bca-470c-9869-6617db5bd463}}.
+Meanwhile, in {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}, we derived pure general
+relativistic correction terms appearing in the third-order single
+component, zero-pressure, irrotational fluid in a flat background.
+Thus, now it is a natural step to find out the potential third-order
+pure general relativistic correction terms appearing in the
+multi-component, zero-pressure, irrotational fluids in a flat
+background. As the Newtonian system has only quadratic nonlinearity
+even in the multi-component situation, see Sec. II of
+{{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}, any nonvanishing third-order terms can be
+regarded as pure general relativistic corrections. The situation is
+also practically important because current stage of the universe is
+supposed to be dominated by two zero-pressure components and the
+cosmological constant. We will include the effect of cosmological
+constant in all our analyses and equations in this work which is
+also true in our previous works in
+{{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, {{cite:a6bd7f84-4bca-470c-9869-6617db5bd463}}, {{cite:47b85dd3-646e-4132-89bd-a2353a948e72}}, {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}, {{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}.
+In Sec.  we present the metric and
+fluid quantities perturbed to the third order which will be required
+in our calculation. We present fluid quantities for most general
+fluids with pressures and stresses which will turn out to be
+important even in the zero-pressure situation in our main analysis.
+As in the single component case in {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}, under our
+proper choice of variables and gauges we do not need third-order
+perturbations of the connection or curvature tensor. In Sec.  we summarize the relativistic equations to
+the second order, and their effective correspondence with the
+Newtonian ones even in the multi-component situation. In Sec.  we derive the general relativistic
+third-order terms and present equations in the context of Newtonian
+gravity with pure general relativistic corrections. We compare our
+equations in the multi-component case with the previously derived
+ones in a single component. Section  is a
+discussion. We often set FORMULA , but recover FORMULA  in the
+Newtonian context presentation.
+
+Third-order perturbations
+The covariant and ADM equations
+In the following we summarize the basic sets of covariant equations
+and ADM equations we need in our analysis. These equations, except
+for the covariant equations of individual component, are presented
+Sec. II of {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}; notations can be found in that work. For
+original studies of the covariant and the ADM equations, see
+{{cite:3754076e-11d1-43fe-841e-dec39fb9b348}}, and {{cite:9a51cbc8-05ce-4851-a96a-d744b87f0831}}, respectively. Although, we will
+use the ADM equations in our calculation, the covariant equations
+show another aspects of the same fully nonlinear system of
+Einstein's equation.
+The energy-momentum tenor of a fluid can be decomposed into fluid
+quantities as
+FORMULA 
+Without losing generality, we take the energy frame, thus set
+FORMULA . This decomposition is valid even in the
+multiple component fluids; in such a case the above fluid quantities
+can be regarded as collective fluid quantities. In the
+multi-component case we introduce the energy-momentum tensor and
+fluid quantities of individual component as
+FORMULA 
+where, without losing generality, we also took the energy-frame
+condition for each component, thus set FORMULA .
+For interactions among components we introduce
+FORMULA 
+In a single component situation, taking the energy-frame (thus,
+setting FORMULA ), the energy conservation equation,
+the momentum conservation equation, and the Raychaudhury equation
+are
+FORMULA 
+In the multi-component case, taking the energy-frame for
+individual component (thus, setting FORMULA ) we
+have
+FORMULA 
+In order to handle cosmological perturbations to the third
+order, we also need the momentum constraint equation for a
+collective fluid
+FORMULA 
+In the ADM formulation, the energy conservation, momentum
+conservation, and trace of ADM propagation equations are
+FORMULA 
+In the multi-component case we have
+FORMULA 
+The momentum constraint equation is
+FORMULA 
+The above sets of equations are only parts of the covariant and the
+ADM equations; for complete sets, see
+{{cite:3754076e-11d1-43fe-841e-dec39fb9b348}}, {{cite:9a51cbc8-05ce-4851-a96a-d744b87f0831}}, {{cite:5190b9f0-06ac-4d64-bf79-763cac5da996}}, {{cite:f9f1beb8-ad30-4a43-8684-d89ce0dd0447}}, {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}. We will show that, by
+taking proper choice of gauges, the scalar-type perturbations to the
+third order can be derived from either of the above sets of
+equations. We will present the derivation based on the ADM
+equations, because the covariant formalism often requires lengthier
+calculation in our particular case; of course, the covariant
+equations also give the same result. As we will show, however, we
+use both formulations simultaneously depending on the convenience.
+
+Metric
+Our metric convention is the same as in {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}
+FORMULA 
+where tensor indices of FORMULA  and FORMULA  are
+based on FORMULA . To the third order, the inverse
+metric becomes
+FORMULA 
+In order to derive perturbation equations to the third order,
+we need the connection only to the second-order. These are presented
+in Eq. (52) of {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}.
+The ADM metric variables follow from Eq. (2) of {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}} as
+FORMULA 
+where tensor index of FORMULA  is based on FORMULA 
+as the metric; FORMULA  is an inverse metric of
+FORMULA  .
+
+Fluid quantities
+We introduce perturbations of fluid quantities as
+FORMULA 
+where tensor indices of FORMULA  and FORMULA  are
+based on FORMULA . The above fluid quantities can be
+regarded as collective fluid quantities in the case of
+multi-component fluids, see below Eq. (REF ). Although we
+will consider zero-pressure fluids, it is important to keep the
+perturbed pressure (FORMULA ) and anisotropic stress
+(FORMULA ) because the collective pressure and
+anisotropic stress do not vanish to nonlinear order in the
+multi-component fluids even in the zero-pressure case, see Eq. (REF ). In any case, for later
+convenience, in this section we will present fluid quantities for
+most general fluids.
+Components of the four-vector FORMULA  are
+FORMULA 
+In {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, instead of FORMULA , we used FORMULA  defined
+as
+FORMULA 
+Thus, we have
+FORMULA 
+Components of FORMULA  are
+FORMULA 
+From FORMULA  we have
+FORMULA 
+To the third order, the energy-momentum tensor becomes
+FORMULA 
+Above relations of four-vectors, energy-momentum tensor, and fluid
+quantities are derived for a single component fluid. However, these
+are also valid as the collective component in the case of
+multi-component fluids. We can easily see that, by replacing these
+quantities with the ones of individual component, the same relations
+are valid for individual component as well. That is, for an
+individual component, say FORMULA -th component, by replacing
+FORMULA 
+with
+FORMULA 
+Eqs. (REF )-(REF ) are
+valid for the FORMULA -th component.
+From Eqs. (REF ),(REF ) we can express the
+collective fluid quantities in terms of the individual one. To the
+background order we have
+FORMULA 
+To the third order in perturbations, we can show
+FORMULA 
+Thus, we have
+FORMULA 
+The ADM fluid quantities are introduced as
+FORMULA 
+where tensor indices of FORMULA  and FORMULA  are
+based on FORMULA  as the metric. The four-vector FORMULA  is a normal frame four-vector with FORMULA .
+Thus by setting FORMULA  we have FORMULA , and Eq. (REF ) gives
+FORMULA 
+Using Eqs. (REF ),(REF ), Eq. (REF ) gives
+FORMULA 
+The individual ADM fluid quantities can be found by replacing
+FORMULA 
+with
+FORMULA 
+and similarly for the fluid quantities and the energy-momentum
+tensor as in Eqs. (REF ),(REF ). From Eq. (REF ) we have
+FORMULA 
+
+Decomposition
+We decompose the metric into three perturbation types
+{{cite:6fcc3bd1-6941-45fc-ab91-1f7270d10314}}
+FORMULA 
+where superscripts FORMULA  and FORMULA  indicate the transverse
+vector-type, and transverse-tracefree tensor-type perturbations,
+respectively. Only to the linear-order perturbations in the
+homogeneous-isotropic background, these three types of perturbations
+decouple and evolve independently. We introduce
+FORMULA 
+which are spatially gauge-invariant combinations to the linear
+order {{cite:5190b9f0-06ac-4d64-bf79-763cac5da996}}. We set
+FORMULA 
+By using FORMULA  we can avoid third-order expansion of the
+trace of extrinsic curvature FORMULA . Identifying FORMULA  with
+Newtonian velocity variable later will be an important step in our
+analysis, see Eqs. (REF ),(REF ).
+For the fluid quantities we decompose
+FORMULA 
+The perturbed fluid velocity variables FORMULA  and
+FORMULA  subtly differ from the ones introduced in
+{{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, see {{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}.
+
+Zero-pressure irrotational fluids in the comoving gauge
+The zero-pressure condition sets
+FORMULA 
+The comoving gauge condition (FORMULA ) and irrotational
+condition (FORMULA ) give
+FORMULA 
+Under these conditions, Eq. (REF )
+becomes
+FORMULA 
+Notice that for the nonlinear perturbations, the collective
+pressure FORMULA  and anisotropic stress FORMULA  no
+longer vanish even for zero-pressure fluids; also, the collective
+energy density FORMULA  is no longer a simple sum of individual
+component.
+For the ADM fluid quantities, Eq. (REF ) becomes
+FORMULA 
+For the individual component, Eq. (REF ) gives
+FORMULA 
+
+Second-order equations: summary
+In this section we summarize our previous work of second-order
+perturbations in zero-pressure, irrotational, but multi-component
+fluids {{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}. The results show that, to the
+second order, effectively the relativistic equations coincide with
+the Newtonian ones even in the multi-component situation. This
+provides a reason to go to the third order in relativistic
+perturbation in order to find out pure general relativistic
+deviations from Newton's theory. Since the zero-pressure Newtonian
+perturbation equations have only quadratic order nonlinearity, any
+non-vanishing third-order terms in relativistic analysis can be
+regarded as a pure general relativistic correction terms. In
+{{cite:f28885fc-23c7-4532-bdab-3374f2d90169}} we presented such third-order correction terms in
+a single component case. In the next section we will derive the
+third-order correction terms appearing in the multi-component
+situation. As the third-order analysis closely follows the case of
+second-order, in the following we will derive the second-order
+equations directly from the ADM equations presented in Sec. REF .
+We consider zero-pressure multi-fluids, thus
+FORMULA 
+The irrotational condition and the temporal comoving gauge
+condition lead to FORMULA , thus we have FORMULA ; as
+the spatial gauge condition we take FORMULA , thus FORMULA . To the second-order perturbations, Eq. () gives
+FORMULA 
+thus
+FORMULA 
+Using Eqs. (REF ),(REF ), Eqs. (REF ),(),(REF ),()
+give
+FORMULA 
+From Eqs.
+(REF ),(),
+and Eqs. ()-()
+we can derive
+FORMULA 
+We have recovered FORMULA  using
+FORMULA 
+where FORMULA  with normalized FORMULA  or FORMULA .
+Without the rotational mode, we introduce
+FORMULA 
+Since we used the comoving gauge condition, to the linear
+order, we have
+FORMULA 
+where FORMULA  and FORMULA  to the linear order. To the linear order,
+Newtonian velocity perturbation variables are introduced as
+{{cite:7e6e9518-74eb-416c-b77a-5eda9078e45f}}
+FORMULA 
+thus
+FORMULA 
+Dimensions are
+FORMULA 
+Thus, we have
+FORMULA 
+Newtonian correspondence
+We assume a flat background, thus FORMULA . Thus, we have
+FORMULA  to the linear order even in the presence of the
+cosmological constant and multiple components
+{{cite:bdad7b81-8316-4178-9be9-b686504220a2}}, {{cite:7e6e9518-74eb-416c-b77a-5eda9078e45f}}, see Eq. (REF ). To the second order, we identify the
+Newtonian perturbation variables FORMULA , FORMULA , FORMULA ,
+and FORMULA  as
+FORMULA 
+Comparison of the consequent relativistic equations with the
+Newtonian equations will show apparently why these identifications
+are the proper ones. Examination of Eqs. (REF )-()
+shows that we need FORMULA  only to the linear order. From
+the momentum constraint equation in Eq. (REF ),
+see Eq. (197) of {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}, we have
+FORMULA 
+thus
+FORMULA 
+to the linear order.
+Equations
+(REF )-()
+become
+FORMULA 
+In {{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}} we have shown that, to the linear
+order, FORMULA  simply decays
+FORMULA 
+in an expanding phase. Thus, ignoring quadratic combination of
+FORMULA  terms, we have
+FORMULA 
+and
+FORMULA 
+Equations
+(REF )-() coincide with
+the density and velocity perturbation equations of a single
+component medium {{cite:a6bd7f84-4bca-470c-9869-6617db5bd463}}; thus, except for the
+contribution from gravitational waves, these equations coincide with
+ones in the Newtonian context. In the Newtonian context, Eqs. (REF )-() without the
+gravitational waves were presented in {{cite:931f3f93-0094-471d-9cb6-3859e28b9ce4}} which are
+valid to fully nonlinear order. To the linear order, Eq. () was derived by Lifshitz
+{{cite:ea3b2362-43c0-44ff-9513-11b415c26adf}} in the synchronous gauge, and by Nariai
+{{cite:714854bc-67fc-4a01-8fad-b29e4f8a4e6c}} in the comoving gauge. In the zero-pressure
+medium the free-falling object is also comoving, thus we can impose
+both the synchronous gauge and the comoving gauge simultaneously. In
+{{cite:47b85dd3-646e-4132-89bd-a2353a948e72}} we compared subtle differences of the
+second-order perturbation equations in the synchronous gauge with
+the ones in the comoving gauge.
+If we further ignore FORMULA  terms appearing in the
+pure second-order combinations, Eqs. (REF )-() become
+FORMULA 
+which coincide with the Newtonian equations except for the
+contributions from the gravitational waves. In this context, except
+for the contribution from gravitational waves, the above equations
+coincide with ones in the Newtonian context even in the
+multi-component case. Therefore, we have shown the
+relativistic/Newtonian correspondence, except for the contributions
+from the gravitational waves, to the second-order perturbations in
+the case of multi-component, zero-pressure, irrotational fluids
+assuming a flat background.
+
+Third-order equations
+We consider irrotational fluids, thus ignore all vector-type
+perturbations. As all three-types of perturbations are generally
+coupled in nonlinear perturbations, apparently this is an important
+assumption we make in this section. In an expanding phase, however,
+the linear order rotational perturbations have only decaying mode
+due to the angular-momentum conservation. Effects of rotational
+perturbations to the second-order perturbations are considered in
+our accompanying work in {{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}.
+We take the temporal comoving gauge
+FORMULA 
+Together with the irrotational condition FORMULA  we have FORMULA . Equation (REF ) shows
+that this leads to FORMULA  for general fluids. As the spatial
+gauge condition we take
+FORMULA 
+In {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}} we have shown that these gauge conditions fix the
+space-time gauge transformation properties completely to all orders
+in perturbations. Thus, each perturbation variable under these gauge
+conditions has a corresponding unique gauge-invariant combination,
+and can be equivalently regarded as gauge-invariant one to all
+orders in perturbations.
+We consider zero-pressure fluids, thus
+FORMULA 
+The collective fluid quantities are nontrivial and are
+presented in Eq. (REF ).
+In our previous study of second-order perturbations, summarized in a
+previous section, we showed that FORMULA 
+terms simply correspond to pure decaying mode in expanding phase. We
+showed that by ignoring these terms we recover complete
+relativistic/Newtonian correspondence even in the multi-component
+case. Based on this observation, in our third order calculation in
+the following we will ignore FORMULA 
+terms. If we ignore FORMULA  terms, the
+collective fluid quantities in Eq. (REF ) give
+FORMULA 
+and the ADM fluid quantities in Eqs. (REF ),(REF ) become
+FORMULA 
+Equation () gives
+FORMULA 
+thus,
+FORMULA 
+Using Eq. (REF ), Eqs. (REF ),(),(REF ),()
+give
+FORMULA 
+where we recovered FORMULA . Equation () can be
+written as
+FORMULA 
+Equations (REF ) and () are
+the same as Eqs. (20) and (21) in {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}} which were
+derived in the single component situation.
+Combining Eqs. (REF ),() and
+Eqs. ()-(), respectively, we
+can derive
+FORMULA 
+All terms in the RHS of Eq. () contain
+FORMULA  which decays to the linear order as
+FORMULA 
+see Eqs. (REF ),(REF ) and
+{{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}. By setting FORMULA  the
+LHS of Eq. () is the same as Eq. (REF ). By setting FORMULA  and
+FORMULA , Eq. () becomes Eq. (REF ).
+In order to complete Eq. () we need
+equations for FORMULA , FORMULA , and
+FORMULA  terms to the second-order perturbations.
+Equation for FORMULA  is in Eq. (REF )
+which gives
+FORMULA 
+to the second order. The relation between FORMULA  and FORMULA 
+can be found in Eq. (23) of {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}. Recovering the
+background curvature, from the momentum constraint equation in Eq. (REF ), we can derive
+FORMULA 
+to the second order. Equation for FORMULA  to the second order
+follows from Eq. (99) in {{cite:69303bc4-8df5-466a-a9bc-e8aef3369082}}. Ignoring FORMULA , thus using Eq. (REF ) for
+FORMULA  we can derive
+FORMULA 
+In a flat background, the RHS is the second order; thus, to the
+linear order we have FORMULA . Equation for
+FORMULA  to the second order is presented in Eq. (43) of {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}.
+Pure general relativistic corrections
+Now, we assume
+FORMULA 
+thus FORMULA  to the linear order. Based on the
+apparent success in second-order perturbations, we continue to use
+the identifications made in Eq. (REF ) valid
+to the third order, thus
+FORMULA 
+In the following we consider pure scalar-type perturbations,
+thus set FORMULA . Contributions from the
+gravitational waves will be considered in the next section.
+We need FORMULA  only to the second order. Equation
+(REF ) gives
+FORMULA 
+where
+FORMULA 
+Equations (REF )-() become
+FORMULA 
+Equations (REF ),()
+coincide with Eqs. (39),(40) in {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}. Equation
+(REF ) gives
+FORMULA 
+Equation (REF ),()
+give
+FORMULA 
+Equation (REF ) becomes
+FORMULA 
+A close examination of above equations reveals the followings.
+(i) Equations
+(REF ),(),(REF )
+are the same as Eqs. (25),(26),(28) in {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}} which are
+valid in a single component fluid; we note, however, that FORMULA  correction terms, which simply decay in an
+expanding phase, appear even in the second-order perturbations, see
+Eqs. (REF ),(),()
+above, or {{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}}.
+(ii) If we ignore the FORMULA -indices, Eqs.
+(),(),()
+are identical to Eqs. (REF ),(),(REF ),
+respectively; we note, however, that the presence of FORMULA  correction terms causes differences even in the
+second-order perturbations, see Eqs. (REF )-().
+(iii) We already showed that, to the second order, even in the case
+of multi-component, the general relativistic equations are identical
+to the Newtonian ones, thus having relativistic/Newtonian
+correspondence. The presence of FORMULA 
+correction terms may cause differences, but we have shown that these
+corrections are simply decaying in the expanding phase.
+(iv) The pure third-order correction terms in the above equations
+all involve FORMULA -term to the linear order in various forms of
+convolution with the second-order terms. As we took the comoving
+gauge FORMULA , the spatial curvature variable FORMULA  is the
+same as a gauge-invariant combination FORMULA  to the linear order.
+(v) We note that, to the linear order, FORMULA  is one of the
+well known conserved quantity in the large-scale
+{{cite:4d4d3eae-268a-4020-a255-f81246147c44}}, {{cite:e15abb1f-8220-47e4-a259-5205ef1ae774}}. For FORMULA , but considering general
+FORMULA , we have FORMULA , thus
+FORMULA 
+with vanishing decaying mode (in an expanding phase) to the
+leading order in the large-scale expansion
+{{cite:bdad7b81-8316-4178-9be9-b686504220a2}}.
+(vi) We also note that the value of FORMULA  in the large-scale
+is of the same order as the gravitational potential fluctuation
+FORMULA  which is again of the same order as the relative
+temperature fluctuations FORMULA  of the cosmic microwave
+background radiation (CMB). In general we have {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}
+FORMULA 
+to the linear order, where we have FORMULA  and FORMULA ; FORMULA  is the
+Newtonian gravitational potential identified to the linear order in
+{{cite:bbf84793-0098-4564-93f2-c9dbfc3e55b8}}, {{cite:5190b9f0-06ac-4d64-bf79-763cac5da996}}, {{cite:bdad7b81-8316-4178-9be9-b686504220a2}}. For FORMULA  we have
+FORMULA 
+The temperature anisotropy of CMB, in a flat background without
+the cosmological constant, gives {{cite:65f870eb-eef0-42f5-9737-75b5aeaee4db}}, {{cite:1bf319b2-6284-4bd1-91ae-3410c4401c4f}}
+FORMULA 
+to the linear order; this is a part of the Sachs-Wolfe effect
+{{cite:65f870eb-eef0-42f5-9737-75b5aeaee4db}}. The COBE observations of CMB give FORMULA  {{cite:c155551b-1d9f-48ed-a5e4-808f61aa4a19}}, thus
+FORMULA 
+in the large-scale limit near horizon scale. Therefore, the
+pure general relativistic third-order correction terms are
+independent of the presence of the horizon scale and are smaller by
+factor FORMULA  compared with the second-order
+relativistic/Newtonian terms due to the low level anisotropies of
+the cosmic microwave background radiation.
+
+Contributions from tensor-type perturbations
+Here we present set of equations describing the scalar-type
+perturbation equations to the third order, now including the
+contributions from the tensor-type perturbations. We continue to use
+the Newtonian variables identified in Eq. (REF ).
+Equations (REF )-() become
+FORMULA 
+Equations (REF ),()
+coincide with Eqs. (39),(40) in {{cite:f28885fc-23c7-4532-bdab-3374f2d90169}}. Equation
+(REF ) gives
+FORMULA 
+Equation (REF ) gives
+FORMULA 
+Equations (REF ),(REF ) become
+FORMULA 
+
+Discussion
+In this work we have successfully derived pure general relativistic
+correction terms appearing in the third-order perturbations of the
+zero-pressure irrotational multi-component fluids in a flat
+background. We have ignored FORMULA 
+correction terms which simply decay in an expanding phase. Our main
+results are presented in Eqs. (REF )-(REF ), and in Eqs. (REF )-() in the presence of the
+gravitational waves. The equations for the collective component are
+identical to the ones in the single component case. If we further
+ignore FORMULA  correction terms, which are
+again simply decaying in an expanding phase, the forms of
+relativistic correction terms in the individual component are the
+same as the ones in the collective component. Our results show that,
+even in the multi-component situation, the pure relativistic
+correction terms are smaller by a factor
+FORMULA 
+compared with the relativistic/Newtonian second-order terms and
+are independent of the presence of horizon scale.
+By taking different temporal gauge condition (hypersurface
+condition) we can easily introduce apparently horizon dependent
+terms with arbitrarily huge amplitudes. The exact
+relativistic/Newtonian correspondence to the second-order
+perturbations was available essentially due to our proper choice of
+gauge conditions and correct identifications of relativistic
+variables with the Newtonian ones. In our third-order extension we
+have assumed the same identification holds even in the third-order
+perturbations, which might not be necessarily the unique choice.
+However, the properties (the smallness of the amplitudes and
+independence from the horizon scale) of our third-order correction
+terms assure that our choice of the gauge and identifications are
+very likely to be the correct and best ones even to the third order.
+Our results may have practically important implications in currently
+favored cosmological pursuits by assuring the use of Newtonian
+physics in the large-scale nonlinear processes which often involve
+two-component zero-pressure fluids (say, dust and cold dark matter).
+As we have shown the exact relativistic/Newtonian correspondence to
+the second order and small horizon-independent third-order
+correction terms, it is now more secure to use Newtonian physics
+near (and even beyond) the horizon scale which is indeed a
+noticeable trend in current cosmological simulations
+{{cite:2611fe90-aba4-4b90-a2e7-cda3e490c7ad}}. At this point it might be also worth emphasizing
+the effects of rotational perturbations. In
+{{cite:4cb25cc7-d422-45e5-a385-779ef0a4b838}} we have shown that the rotational
+perturbations to the second-order also have relativistic/Newtonian
+correspondence in the small-scale (sub-horizon scale) limit. As the
+numerical simulations naturally include the rotational mode, this
+might be another good news to the cosmology community based on
+Newtonian physics.
+Although we have estimated that the third-order pure general
+relativistic correction terms are small in the current large-scale
+structures, it would be still interesting to see whether cosmology
+could reach a stage where FORMULA -factor
+smaller correction terms could have noticeable effect on the
+large-scale structure formation processes. In either case the
+third-order terms we have presented in this work are the first
+non-vanishing general relativistic correction terms in Newtonian
+nonlinear equations, and may have historical as well as practical
+importance in cosmology. Analytic studies in the Newtonian context
+of a single component zero-pressure, irrotational fluid have been
+actively investigated in {{cite:4509915b-eb9f-4ae6-b3d7-21a0f71f1b8d}}. Whether our general
+relativistic corrections appearing in the third order (both in the
+single-component and multi-component cases), and corrections
+appearing even in the second order by effects of pressure, rotation,
+and background curvature, will have noticeable roles in the
+large-scale structure formation process are left for future
+investigations.
+Acknowledgments
+H.N. was supported by grant No. C00022 from the Korea Research
+Foundation.

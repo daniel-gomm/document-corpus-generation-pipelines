@@ -1,0 +1,1001 @@
+
+The minority game: An economics perspectiveWillemien KetsAddress: Tilburg University, P.O. Box 90153, 5000 LE
+Tilburg, The Netherlands. E-mail: w.kets@uvt.nl. Tel:
++31-13-4662478. Fax: +31-13-4663280. I am indebted to Ginestra
+Bianconi, George Ehrhardt, Doyne Farmer, Matteo Marsili, Esteban
+Moro, Jan Potters, Dolf Talman, and Mark Voorneveld for inspiring
+discussions and helpful comments and suggestions. In addition, I
+would like to thank Esteban Moro for his kind permission for
+reproducing some of the figures from {{cite:bf7d5197-21cc-4e54-8522-6c0f1abf6cb4}}. All
+remaining errors are of course my own.June 27, 2007
+This paper gives a critical account of the minority game
+literature. The minority game is a simple congestion game: players
+need to choose between two options, and those who have selected
+the option chosen by the minority win. The learning model proposed
+in this literature seems to differ markedly from the learning
+models commonly used in economics. We relate the learning model
+from the minority game literature to standard game-theoretic
+learning models, and show that in fact it shares many features
+with these models. However, the predictions of the learning model
+differ considerably from the predictions of most other learning
+models. We discuss the main predictions of the learning model
+proposed in the minority game literature, and compare these to
+experimental findings on congestion games.
+JEL classification: C73, C90.
+Keywords: Learning, congestion games, experiments.
+
+Introduction
+Congestion games are ubiquitous in economics. In a congestion game
+{{cite:94373daa-5c9d-47d0-97b8-0bec56901b10}}, players use several facilities from a
+common pool. The costs or benefits that a player derives from a
+facility depends on the number of users of that facility. A
+congestion game is therefore a natural game to model scarcity of
+common resources. Examples of such systems include vehicular
+traffic {{cite:f3f2275d-0052-4e57-8240-5524a293a3ea}}, packet traffic in
+networks {{cite:41a1ce34-e787-49b5-b8f4-508962280086}}, and ecologies of foraging
+animals {{cite:77bc6253-2499-4093-ab8d-a20df61bf8f3}}. Similar coordination problems
+are encountered in market entry games {{cite:e2e8db94-c5d6-4d71-83da-fa1a39128ff4}}.
+Congestion games are also interesting from a theoretical point of
+view. In congestion games, players need to coordinate to
+differentiate. This seems to be more difficult than coordinating
+on the same action, as any commonality of expectations is broken
+up. For instance, when commuters have to choose between two roads
+FORMULA  and FORMULA  and all believe that the others will choose road FORMULA ,
+nobody will choose that road, invalidating beliefs. The sorting of
+players predicted in the pure-strategy Nash equilibria of such
+games violates the common belief that in symmetric games, all
+rational players will evaluate the situation identically, and
+hence, make the same choices in similar situations {{cite:c2475998-b70f-48e1-8e99-f7f0bcfa5779}}. Moreover, in congestion games, players
+may obtain asymmetric payoffs in equilibrium which may complicate
+attainment of equilibrium, as coordination cannot be achieved
+through tacit coordination based on historical precedent
+{{cite:700c03e9-0131-4695-9af2-6589edd5deb8}}. Finally, congestion games often
+have many equilibria, so that players also face the difficulty of
+coordinating on the same equilibrium.
+Nevertheless, the theory of learning in games provides sharp
+predictions on players' behavior in congestion games. As
+congestion games belong to the class of potential games
+{{cite:6c295a43-3113-491b-af94-b6dc2ac59383}}, all results that have been derived
+for potential games apply to the class of congestion
+games.See e.g. {{cite:aa95b8ec-e4b5-4f3b-a911-860b3b9f7804}},
+{{cite:80b70b1c-f6bc-47f6-8286-f4a82213ab2d}}, {{cite:6c295a43-3113-491b-af94-b6dc2ac59383}}, and
+{{cite:c247e94a-7108-4f02-b40a-b9346ab240e0}}, {{cite:ff45c266-48ae-479e-bccf-58cef79081e1}}. {{cite:31668b10-bfb2-4f25-b8af-7e440dcef4a5}}
+study the convergence of play under different learning processes
+in the minority game. Experimental evidence, however, is not
+always in line with these predictions. Though several experimental
+studies have shown that players are remarkably successful at
+learning to coordinate in congestion games,For instance,
+interacting players rapidly achieve a “magical” degree of tacit
+coordination in market entry games, which is accounted for on the
+aggregate level by the Nash equilibrium solution
+{{cite:fda9d9fe-72be-45dc-a763-4ba49c83f0e9}}, {{cite:7199f500-c440-4fbb-a5bb-984e7bb4a9fc}}, {{cite:0c4c6869-a736-49c5-a335-ff5297820049}}, {{cite:446d92a5-6070-4d31-83dd-def12efc41dd}}, {{cite:61148dbb-9d79-4a1c-a5c0-7c2a55ffb6b9}}, {{cite:6bad94d0-eda6-4a48-a97b-d5b36d5b6e93}}. See
+e.g. {{cite:700c03e9-0131-4695-9af2-6589edd5deb8}} and {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}} for similar
+results on related games. regularities on the aggregate level
+generally conceal non-equilibrium behavior at the individual
+level. Even though aggregate play is close to the Nash
+equilibrium, individual players generally do not play equilibrium
+strategies.See e.g. {{cite:700c03e9-0131-4695-9af2-6589edd5deb8}},
+{{cite:446d92a5-6070-4d31-83dd-def12efc41dd}}, {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}},
+{{cite:a0e0dcb9-8a97-4edc-9f23-e783d8f1dd2d}}. Moreover, providing players with
+more information does not always lead to better
+outcomes.For instance, in their experiments on market
+entry games, {{cite:446d92a5-6070-4d31-83dd-def12efc41dd}} find that providing players
+with information on other players' actions may actually lead to
+lower average payoffs.
+These experimental findings are hard to explain with standard
+learning models. This paper discusses the literature on the
+minority game, a simple congestion game based on the El Farol bar
+problem of {{cite:25386889-6fce-4caf-bd2f-7dc400172f43}}. Players have to choose between two
+alternatives. Only those who have chosen the minority side get a
+positive payoff. The minority game literature proposes a learning
+model that is able to account for many of the experimental
+findings listed above. We relate this learning model to the
+standard learning models in economics, and compare its predictions
+to experimental results on congestion games. The contribution of
+the current paper is that it relates the literature on the
+minority game, which has been largely developed in physics, to the
+literature on learning in game theory and to the literature in
+experimental economics on congestion games.We have no
+intention of giving a comprehensive survey of the minority game
+literature, as an enormous amount of work on the minority game has
+been done. For an extensive collection of papers on the minority
+game, see http://www.unifr.ch/econophysics/minority/. See
+{{cite:bf7d5197-21cc-4e54-8522-6c0f1abf6cb4}}, {{cite:1ff0dff4-40db-415c-9bf9-11816120f129}} or {{cite:9ae53dfe-1504-4383-a644-f21958dcf4df}}
+for an introduction to the field. Papers in economics on the
+minority game include {{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}},
+{{cite:913a9eb5-bb81-4dfa-b418-b6c59d4f7c39}}, and {{cite:ab95fa8c-39c4-49a2-b857-c97242c41c43}}.
+{{cite:ac229224-08f8-4364-a162-ff7acb743dd1}} and {{cite:6b2f2ab1-e18a-445f-99a2-9fd56a4504c0}} study learning
+in games very similar to the minority game.
+The outline of this paper is as follows. In
+Section , we introduce the minority game
+and discuss its equilibria. The learning model proposed in the
+minority game literature is discussed in
+Section . In Section , we
+discuss the main predictions from the learning model. These
+predictions are compared to experimental results on congestion
+games in Section . Section  concludes.
+
+The stage game
+The minority game is a game in which an odd number of players have
+to choose between two actions; for instance, players either go to
+a bar or stay home, either buy or sell an asset, etcetera. Players
+want to distinguish themselves from the crowd: their aim is to
+take a different action than the majority of players.
+Following the notation of Tercieux and Voorneveld (2005), we
+denote the set of players by FORMULA ,
+with FORMULA . Each player FORMULA  has a set
+of pure strategies FORMULA : agents have to choose
+between two options. The set of mixed strategies of player
+FORMULA  is denoted by FORMULA . We denote a mixed strategy
+profile by FORMULA ,
+and we use the standard notation FORMULA  to denote a strategy
+profile of players other than FORMULA . With each
+action FORMULA , a function
+FORMULA 
+can be associated which indicates for each FORMULA  the payoffs to a player choosing FORMULA  when the total number
+of players choosing FORMULA  equals FORMULA . The von Neumann-Morgenstern
+utility function of a player is then given by
+FORMULA 
+where FORMULA . Payoffs are extended
+to mixed strategies in the usual way.
+The function FORMULA  can have several forms.
+It is commonly assumed that congestion is costly:
+[Mon]       FORMULA  and FORMULA  are strictly
+decreasing functions,
+and that the congestion effect is the same across alternatives:
+[Sym]       FORMULA .
+A commonly used form is FORMULA  if FORMULA  and 0 otherwise {{cite:7914239f-c2f0-42d3-a92b-7f4a770254f1}}.
+Alternatively, one could define payoffs in terms of the aggregate
+action FORMULA  for a given action profile
+FORMULA , with FORMULA  for all
+FORMULA . Let FORMULA  be a function on FORMULA  such that FORMULA 
+for all FORMULA  and FORMULA  for FORMULA . A player FORMULA  is then assigned the payoff
+FORMULA 
+In our notation:
+FORMULA 
+Common choices include
+FORMULA 
+and
+FORMULA 
+Most of the predictions of the learning model are not affected
+qualitatively by the precise choice of payoff function, given that
+it satisfies [Mon] and [Sym] {{cite:d674e088-ded8-469c-bc1d-ecf1a4fc79d4}}. Notice
+that the minority game is a congestion game {{cite:94373daa-5c9d-47d0-97b8-0bec56901b10}}
+and hence a finite exact potential game
+{{cite:6c295a43-3113-491b-af94-b6dc2ac59383}}.
+To analyze the game's Nash equilibria, we introduce some
+more notation. A player who uses a mixed strategy that puts
+positive probability on both pure strategies is referred to as a
+mixer. A player that puts full probability mass on the
+alternative FORMULA  is called a FORMULA -player; similarly, a
+player that puts full probability mass on the alternative FORMULA  is
+called a FORMULA -player.
+The stage game has a large number of Nash equilibria.
+{{cite:64d71073-9f9d-44be-99d9-fa992b8b41d1}} show that a pure strategy profile
+is a Nash equilibrium if and only if one of the alternatives FORMULA 
+or FORMULA  is chosen by exactly FORMULA  of the FORMULA  players. Note that
+these Nash equilibria are not strict, as a player that is
+in the majority is indifferent between sticking to his choice or
+switching actions, as his deviation would shift the majority.
+There are FORMULA  of such asymmetric pure-strategy
+Nash equilibria.
+{{cite:31668b10-bfb2-4f25-b8af-7e440dcef4a5}} characterize the game's mixed-strategy
+Nash equilibria. It can be shown that in any Nash equilibrium with
+at least one mixer, all mixers use the same mixed strategy.
+Moreover, player labels are irrelevant by [Sym] (if FORMULA  is a
+Nash equilibrium, so is every permutation of FORMULA ). Together,
+these facts imply that a Nash equilibrium with at least one mixer
+can be summarized by its type FORMULA , where
+FORMULA  denote the number of players
+choosing pure strategy FORMULA  or FORMULA , respectively, and FORMULA  the probability with which the remaining FORMULA  mixers choose FORMULA . Let
+FORMULA  denote the expected payoff to a player
+choosing FORMULA ; FORMULA  is defined similarly.
+Then, a strategy profile of type FORMULA  is a Nash
+equilibrium if and only if
+FORMULA 
+i.e., the expected payoffs to a mixer of playing the pure strategy
+FORMULA  are equal to the expected payoffs of the pure strategy FORMULA . It can be shown that there exist Nash equilibria with
+exactly one mixer. These equilibria are of type FORMULA 
+with arbitrary FORMULA , i.e., the mixer uses an
+arbitrary mixed strategy, whereas the remaining FORMULA  players are
+spread evenly over the two pure strategies. In addition, there are
+Nash equilibria with more than one mixer. For FORMULA  such that FORMULA , there is a Nash
+equilibrium of type FORMULA  if and only if
+FORMULA . The corresponding probability FORMULA  solves (REF ), and can be shown to be
+unique. It follows from these results that there is a unique
+symmetric mixed-strategy Nash equilibrium. In this equilibrium,
+each player chooses each option with probability FORMULA .
+The expected number of players choosing each option is then
+FORMULA .
+
+Learning in the minority game
+Players in the minority game face both a coordination problem and
+an incentive problem. The coordination problem is not easy to
+solve. As the equilibria in pure strategies cannot be
+Pareto-ranked or ordered in terms of risk-dominance, no particular
+pure-strategy Nash equilibrium can be singled out as being most
+salient {{cite:69fe027c-9d31-48de-91bc-e846073a260a}}. Hence, without pre-play
+communication, players do not have enough information to implement
+a pure-strategy Nash equilibrium
+{{cite:a83f47d9-d28e-4c19-9234-c36648d22192}}. While players could use
+common knowledge of rationality and symmetry to deduce and select
+the symmetric mixed-strategy Nash equilibrium
+{{cite:2a4f38cb-c76c-4b47-a7c5-070fae1e1d9f}}, {{cite:700c03e9-0131-4695-9af2-6589edd5deb8}}, this may raise an
+incentive problem, as players can earn a higher payoff than in the
+symmetric mixed-strategy Nash equilibrium if they manage to
+outsmart the other players. Hence, players may try to find
+patterns in the play of others when the game is played repeatedly
+{{cite:25386889-6fce-4caf-bd2f-7dc400172f43}}, {{cite:700c03e9-0131-4695-9af2-6589edd5deb8}}. The learning model
+proposed in the minority game literature provides a way of
+formalizing this notion. In this section, we first introduce the
+model, and then discuss its assumptions, relating the learning
+model to other learning models in the literature.
+Model
+The stage game is played repeatedly. After each round of play FORMULA 
+of the stage game, the players are informed of the aggregate
+action FORMULA , where FORMULA  is the action taken by player FORMULA  in round FORMULA .
+Furthermore, it is assumed that players only retain the sequence
+of the last FORMULA  winning groups FORMULA , where FORMULA . Hence, in round FORMULA , players observe the FORMULA  most
+recent outcomes FORMULA .
+A response mode FORMULA  assigns to each information set FORMULA  an action FORMULA . That is, a response mode FORMULA 
+prescribes which action FORMULA  to take, for a
+given history of play FORMULA  at time FORMULA . There are FORMULA 
+different response modes: there are FORMULA  possible signals FORMULA 
+of length FORMULA , and for each signal, there are two possible
+actions. For memory length FORMULA , denote the set of all response
+modes by FORMULA . An important assumption in the
+minority game learning model is that each player FORMULA  is endowed with a subset FORMULA  of all possible
+response modes, with for each FORMULA  the response
+modes in FORMULA  drawn uniformly at random from FORMULA ,
+independently across players. Results are then obtained by
+averaging over all possible assignments of response modes. This
+endowment is fixed for each player, and all players are endowed
+with the same number FORMULA  of response modes. An example of
+such a subset of response modes for FORMULA  and FORMULA  is given
+in Table REF .
+TABLE 
+When faced with a history FORMULA , an player has to choose which
+of his FORMULA  response modes to use in the next round. Each player
+FORMULA  keeps a virtual score FORMULA  for each response
+mode FORMULA  that reflects that response mode's past
+performance. The virtual score of each response mode is updated
+after each round, regardless of whether the response mode has been
+used or not. When a response mode would have correctly predicted
+the winning side, its virtual score is increased with the payoffs
+it would have earned, otherwise it is decreased with the same
+amount. This means that players do not take the effect of
+their action on the aggregate outcome FORMULA  into account. In
+determining the virtual score of a response mode, players only
+consider whether this response mode would have predicted the
+actual outcome correctly, neglecting the question whether playing
+this response mode would have affected the outcome.
+Example 3.1  
+Suppose that the payoffs are of the form (REF ).
+Then, the updating rule is:
+FORMULA 
+where FORMULA . Suppose that in some round
+FORMULA , player FORMULA  has chosen action FORMULA , and that the
+total number of players choosing action FORMULA  is FORMULA , i.e.,
+FORMULA  is the majority action. Then the virtual score of all
+response modes prescribing FORMULA  would be decreased by FORMULA , while the virtual scores of all other response modes would
+be increased by 1. However, if player FORMULA  would have played one
+of those response modes, the number of players choosing FORMULA 
+would have been FORMULA , and FORMULA  would have been the majority
+action.
+ FORMULA
+
+The probability that player FORMULA  chooses the
+response mode FORMULA  in the next round is given by
+the well-known logit choice rule:
+FORMULA 
+The parameter FORMULA  can be interpreted as the sensitivity of
+choice to marginal information. In the limiting case FORMULA , play becomes fully deterministic in the sense that
+players choose the response mode with the highest virtual score.
+Allowing for FORMULA  adds noise at the individual level
+as well as it introduces additional heterogeneity
+{{cite:e2d30185-2840-496e-9f29-017f89fc8452}}. When FORMULA , all players
+endowed with a certain response mode keep the same virtual score
+for that response mode. By contrast, for finite FORMULA , players
+differ in their ranking of response modes, as their endowment of
+response modes determines the denominator of
+Equation (REF ). Perhaps surprisingly, this added
+heterogeneity and noise actually improves collective performance,
+as discussed in Section REF .
+Actions, outcomes and performance are thus linked by a complex
+feedback system, as illustrated in Figure REF .
+Players observe the recent outcomes, and choose a response mode
+with a probability depending on the number of virtual points that
+response mode collected, resulting in an action FORMULA . The actions of all players determine the winning side
+through the minority rule; this information is then fed back to
+the players and adds to the sequence of outcomes.
+FIGURE 
+
+Discussion
+In this section, we discuss two of the most important assumptions
+of the learning model in the minority game model: the assumption
+that all players are endowed with a random subset of response
+modes and the assumption that players update the virtual scores of
+response modes not used, without taking into account the effect of
+that response mode on the game's outcome. Although the learning
+model of the minority game literature seems to depart markedly
+from the standard evolutionary and learning models used in
+economics, we argue here that in fact the learning model combines
+different aspects of several game-theoretic models to provide a
+realistic model of player behavior in congestion games.
+Response modes and heterogeneity
+In the learning model proposed in the minority game literature,
+players base their action on the recent past, trying to discern
+patterns in their opponents' behavior, as in {{cite:25386889-6fce-4caf-bd2f-7dc400172f43}}.
+{{cite:25386889-6fce-4caf-bd2f-7dc400172f43}} proposes that players condition their
+decision to go to a bar on attendance levels in the previous
+weeks. He employs the terms “predictor” or “hypothesis” rather
+than response mode: if the bar has been crowded for the last three
+weeks, I expect it to be crowded next week also. These mental
+models are mapped into actions: if I expect the bar to be crowded,
+I will not go.
+The response modes in the minority game learning model are a
+concise way of modelling this notion. An important question,
+however, is which response modes need to be included in the model.
+There are two possible avenues. Firstly, one could simply
+incorporate all possible response modes. However, if all possible
+response modes are included in the learning model, the strategy
+space becomes huge already for very simple games. Many different
+response modes are conceivable in a simple game such as the
+minority game, as illustrated by the list of examples
+in {{cite:25386889-6fce-4caf-bd2f-7dc400172f43}}.
+A second possibility is to include only a selection of possible
+response modes. In that case, one could either make a selection
+based on behavioral assumptions, or let the subset of response
+modes be determined randomly. In the first case, a natural choice
+is to include response modes that reflect beliefs about other
+players' actions, based on recent outcomes. The first approach is
+commonly taken in the economics literature
+{{cite:446d92a5-6070-4d31-83dd-def12efc41dd}}, {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}}, while the minority
+game learning model takes the second avenue. When players'
+response modes are drawn uniformly at random from the set of all
+possible response modes, there are no restrictions on the types of
+response modes that players use.
+At first sight, this may seem to be a weak point of the model, as
+response modes do not need to have a sensible interpretation in
+the minority game learning model. However, it can be shown that
+regardless which response modes players are endowed with, players
+will self-organize into groups that use different response modes
+in such a way that their actions cancel out (see
+{{cite:1758f8f8-650e-4045-a7a6-b71bb6cd222e}}, {{cite:5401eacd-029a-488f-b062-d1ca92c638c4}}; see also
+Section REF ). Hence, the minority game learning model
+provides a possible explanation for the simultaneous evolution of
+behavioral rules (e.g. “switch roads if the road was crowded in
+the previous period”) and their antagonists (“stay at the same
+road if the road was crowded in the previous period”) often
+observed in congestion game experiments {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}}
+through the structure of the game and players' heterogeneity. The
+strong point of the minority game learning model is exactly that
+no assumptions regarding response modes are needed. In games such
+as the minority game, whether a response mode is reasonable
+only depends on the response modes used by
+others.For instance, {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}} reports that
+some subjects use a “direct” response mode in his experiments on
+route-choice games, while other subjects use a “contrarian”
+response mode. Subject who use the former response mode will
+switch roads if they experienced congestion in the last period,
+while subjects using the contrarian response mode stick with their
+choice, as they expect other subjects to switch. The important
+point to note is that the direct response mode is only sensible if
+there are players who use the contrarian response mode and vice
+versa. Conversely, any response mode, whether it has a
+sensible interpretation or not, will work if opponents use
+response modes that recommend them to take the opposite action
+(see Section REF ).
+Note that the minority game differs in this respect from games
+such as the p-beauty contest {{cite:e183931a-789c-4107-8b6e-f48f58181ae9}}.In the p-beauty contest, players have
+to choose a number in a certain interval. Players have to guess
+what the average choice will be; the player that picks the number
+that is closest to some fraction FORMULA  of the average
+choice will win. Suppose players have to choose a number between 0
+and 100, and will win with their choice is closest to FORMULA  of the average choice. Then nobody will choose a number
+higher than FORMULA , so nobody should pick a
+number higher than FORMULA , and
+so on. When players are rational and there is common knowledge of
+rationality, the equilibrium choice is 0. Both in the p-beauty
+contest and the minority game, players base their actions on their
+beliefs about other players' actions, who in turn base their
+actions on ..., etcetera. While in the p-beauty contest, this
+recursion of actions and beliefs ends at a well-defined limit
+point, the Nash equilibrium action, there is no such limit point
+in the minority game. This means that there is no action in the
+minority game that is optimal a priori, as in the p-beauty
+contest: if all think that FORMULA  will be the minority choice,
+then all will choose that action.Also see
+{{cite:9ef6883f-a046-44bc-8364-42235b42168c}}. {{cite:9ef6883f-a046-44bc-8364-42235b42168c}} explain
+behavior in congestion games and the p-beauty contest using the
+cognitive hierarchy approach {{cite:4104ff49-0792-49ec-b62f-8886921e0fed}}, {{cite:e2fbfaab-71fd-48ed-adc6-139a399b4c9c}}. In such a case, agnosticism on the type of
+response modes that players use may well provide a more realistic
+model of players' reasoning processes than the more restrictive
+assumptions employed in different learning models. This offers an
+elegant solution to the dilemma signalled by {{cite:74f57d65-39f9-4726-b59f-184bacc1e44b}} that it is virtually impossible to include all
+possible behavioral rules, but that selection of specific rules
+bears the risk of “parameter fitting in a model with an enormous
+number of parameters”. In the minority game learning model, no
+response mode is ruled out on a priori grounds, while sensible
+behavioral rules evolve naturally, as the only criterion for a
+behavioral rule to be sensible in the minority game is that there
+are other players who follow a “contrarian” behavioral rule.
+However, this approach raises some questions. Firstly, one may ask
+why it is assumed that players are heterogeneous in their
+endowment of response modes. Perhaps more importantly, one could
+ask why players only consider a fixed number FORMULA  of response
+modes. Indeed, individual players have an incentive to increase
+the number of response modes they use, as that gives them an
+advantage over other players {{cite:0e5ad01c-51aa-43ff-b6d6-1bc93ca10b7f}}. However,
+these assumptions are not uncommon in game-theoretic models of
+learning and bounded rationality.For instance, in
+cognitive hierarchy models {{cite:34d19d42-f25b-4f62-9051-0dc68ebceee3}}, {{cite:e2fbfaab-71fd-48ed-adc6-139a399b4c9c}},
+it is assumed that each player is of some exogenously specified
+type; players of different types use different strategies. Another
+example is the replicator dynamic {{cite:1a318bd3-df22-4b38-8384-8801fcef2e0f}} in
+which players are “programmed” to play a given strategy.
+Possible justifications for such assumptions include that each
+player has different experiences prior to playing the minority
+game and therefore deems different response modes more reasonable
+than others {{cite:fc290868-7e36-44bd-9e38-1a4002b13ee6}}, {{cite:33c4ffed-0a81-4458-b20c-15f4262401c7}}, and that boundedly rational player may
+prefer to just consider a subset of response modes that have
+worked well in the past, rather than considering all FORMULA 
+response modes {{cite:72bd1494-7913-459f-bada-84d51123f452}}.The
+precise value of FORMULA  is irrelevant. The qualitative behavior of
+the model is not affected by the choice of FORMULA , as long as there
+is some heterogeneity among players
+{{cite:1ff0dff4-40db-415c-9bf9-11816120f129}}.
+
+The law of simulated effect and boundedly rational
+players
+Which response mode players choose from the set of response modes
+they are endowed with, is determined by the virtual score of each
+response mode. The learning process proposed in the minority game
+literature is closely related to the reinforcement learning model
+of {{cite:2f505be8-e7ba-44dc-bc8f-41d0fd4b6998}} and {{cite:74f57d65-39f9-4726-b59f-184bacc1e44b}}. The main
+difference between the basic reinforcement learning model of
+{{cite:2f505be8-e7ba-44dc-bc8f-41d0fd4b6998}} and the learning model of the minority
+game literature lies in the updating of the score of strategies or
+response modes not played. In the basic reinforcement learning
+model, the scores of these strategies are not updated, while in
+the minority game learning model, the scores of all response modes
+are updated in every period, as in hypothetical reinforcement
+learning or stochastic fictitious play
+{{cite:33c4ffed-0a81-4458-b20c-15f4262401c7}}. The assumption that players also
+consider the payoffs to strategies or response modes not played
+seems to be reasonable. {{cite:34d19d42-f25b-4f62-9051-0dc68ebceee3}} argue on the basis
+of theoretical arguments as well as on the basis of experimental
+results that players obey not only the “law of actual
+effect”, but also the “law of simulated effect”, meaning
+that in reinforcement, not only payoffs from strategies that are
+actually used count, but also foregone payoffs from strategies not
+played.
+However, for players to play according to the act of simulated
+effect, they need more information than for standard reinforcement
+learning.Recall that players only need to know their own
+payoff to play according to the standard reinforcement learning
+model of {{cite:2f505be8-e7ba-44dc-bc8f-41d0fd4b6998}}. In general, to play according to
+fictitious play, players need to know the payoff rule as well as
+the actions of their opponents in addition to their own payoff.
+Even in a game such as the minority game, where the players only
+need to know the aggregate choice of other players (and not their
+individual choices), calculating foregone payoffs of strategies
+not used may be too hard for players that are boundedly rational.
+In the minority game learning model, players' bounded rationality
+is reconciled with the law of simulated effect by assuming that
+players do not take the effect of their own action on the global
+outcome into account. In that way, players can account for
+foregone payoffs of response modes not used, without having to do
+complicated calculations.
+At first sight, one may think that for a large number of players,
+it does not matter whether players account for their own impact.
+However, due to the minority rule, there remains a systematic bias
+in the rewarding of response modes, even if the number of players
+goes to infinity. The reason is that the virtual score of a
+response mode that is currently played is systematically lower
+than that of the response modes that are not used. These latter
+response modes get a point if they prescribe the current minority
+side, even if they would have tipped the minority to the other
+side if they would have been played, so that they would have
+guessed wrong in reality (cf. Example REF ). As the
+response mode that is actually played does not have this
+advantage, the response modes that are not played are
+systematically favored and hence results depend on whether players
+take the effect of their action on the aggregate outcome into
+account {{cite:0e5ad01c-51aa-43ff-b6d6-1bc93ca10b7f}}, {{cite:bd8d9acc-5e34-4a41-beb0-aa0bcd4d29f5}}.
+The minority game learning model thus combines features
+from several learning models in the literature on learning in
+games. However, the minority game learning model makes distinctly
+different predictions than game-theoretical learning models. To
+these predictions we now turn.
+
+Predictions of the learning model
+In this section, we discuss the main predictions on the minority
+game learning model. In the first two sections, we characterize
+the behavior of the model in terms of social efficiency and
+informational efficiency, and show that the two are inherently
+linked in the minority game learning model. In Section
+REF , we show how different response modes may evolve,
+and discuss the implications for efficiency.
+Volatility and attendance
+Typically, dust never settles down in the minority game learning
+model: the aggregate attendance FORMULA  as a function of round number FORMULA  keeps
+fluctuating, as can be seen in Figure REF . As the
+game is symmetric, the time average of FORMULA  will be 0 in the
+steady state, as borne out by simulations {{cite:7914239f-c2f0-42d3-a92b-7f4a770254f1}}, {{cite:1758f8f8-650e-4045-a7a6-b71bb6cd222e}}, {{cite:23ed2ebe-0079-40d9-a3cb-5a6fbd2977a0}}, {{cite:3dfa6df1-20fc-4717-967c-223fd31db844}}. More interesting is the behavior of the variance
+FORMULA , where FORMULA 
+denotes the (time) average of a quantity. The variance, or
+volatility, is a measure of the degree of efficiency achieved in a
+population. The higher the variance, the larger the aggregate
+welfare loss: large fluctuations around the time average FORMULA  imply that the size of the minority is only small.
+When payoffs are linear in FORMULA , this is easy to see: in that
+case, total payoffs are proportional to FORMULA .
+FIGURE 
+It has been found that FORMULA  is only a function of FORMULA  for a given value of FORMULA , where we recall that FORMULA 
+is the number of response modes of each player
+{{cite:70e87071-e219-4c2f-8fef-76287e7bf291}}. Figure REF  shows the
+volatility as a function of FORMULA . As can be seen in the
+figure, the volatility converges to the volatility exhibited in
+the symmetric mixed-strategy Nash equilibrium for FORMULA . With a large number of players (FORMULA  small), overall
+performance is much worse; in fact, the volatility is of the order
+of FORMULA , so that the size of the winning group is much
+smaller than FORMULA . At intermediate values of FORMULA , volatility
+is low, and it attains a minimum at FORMULA  {{cite:0e5ad01c-51aa-43ff-b6d6-1bc93ca10b7f}}. Hence, at intermediate values of
+FORMULA , players are able to coordinate their actions and perform
+better collectively than under the symmetric mixed-strategy Nash
+equilibrium. This means that players can exploit the available
+information to predict future market movements so that the
+aggregate welfare loss FORMULA  is reduced relative to the
+symmetric mixed-strategy Nash equilibrium. Note that this is not
+the result of some form of cooperative behavior of the players:
+agents are selfishly maximizing their own return, and in doing
+that, they come closer to global efficiency.
+However, coordination is not complete under the current learning
+model. In the socially efficient outcome, players would play
+according to one of the pure-strategy Nash equilibria of the game,
+and the minority would consist of FORMULA  players. In that case,
+almost half of the players are in the minority, and
+FORMULA . Players come close to this optimum at
+FORMULA , although they never reach it. For smaller
+values of FORMULA , performance is much worse than under this
+optimum, while for large values of FORMULA , aggregate payoffs are
+close to those of the symmetric mixed-strategy Nash equilibria
+(see Figure REF ). By contrast, when players do take
+the effect of their own action on the aggregate outcome into
+account, play converges to one of the pure-strategy Nash
+equilibria of the game so that coordination is complete
+{{cite:a487b1d7-aaa1-4c6f-a6c4-ad4767d031c1}}, {{cite:0e5ad01c-51aa-43ff-b6d6-1bc93ca10b7f}}, {{cite:bd8d9acc-5e34-4a41-beb0-aa0bcd4d29f5}}, {{cite:53bc4217-533e-425a-a2e7-bd34e99e9926}}.Also, {{cite:31668b10-bfb2-4f25-b8af-7e440dcef4a5}}
+show that most standard learning processes such as the replicator
+dynamic converge to the pure-strategy Nash equilibria of the
+game.
+FIGURE 
+Strikingly, global efficiency is enhanced for certain values of
+FORMULA  when players do not always choose the response mode FORMULA 
+with the highest number of virtual points, i.e. when FORMULA  in Equation (REF ). It can be shown that for
+FORMULA  (the socially inefficient regime), volatility
+decreases when the noise level increases. For
+FORMULA , the value of FORMULA  does not affect the
+level of volatility {{cite:e2d30185-2840-496e-9f29-017f89fc8452}}, {{cite:d4133cd3-f0c6-4fdf-a6b3-f23db3e656a4}}, {{cite:f171d4a3-bb7c-4289-b338-26415cbfdf98}}, {{cite:47f48834-71c7-43bf-9cf5-ac563ef99c9c}}.
+This result is not so surprising, however, if one recalls that in
+the minority game learning model, rational players herd in the
+socially inefficient regime (FORMULA ). When FORMULA , there are few response modes relative to the number of
+players. In that case, players have to crowd at a limited number
+of response modes, leading to a large number of players choosing
+the same alternative (see Section REF ). Setting
+FORMULA  is equivalent to slowing down the updating of
+virtual scores for response modes more slowly. A finite FORMULA 
+therefore acts as a brake against overreaction
+{{cite:f171d4a3-bb7c-4289-b338-26415cbfdf98}}.This result is
+reminiscent of the findings of {{cite:4c4ff959-047f-4396-a8e5-a09b0ddfd825}} who show
+that payoff-dependent noise in the decision process is able to
+break the cascades that would result otherwise in a social
+learning model.
+To summarize, the minority game learning model is characterized by
+competition and coordination. Agents compete in trying to exploit
+asymmetries in the games outcome, but at the same time, they try
+to reduce volatility, as volatility harms all players. Hence,
+there is a tension between competition and coordination. These two
+are intimately linked in the minority game learning model, as are
+information and efficiency. We discuss these issues in more detail
+in the next section.
+
+Information and efficiency
+As discussed in the previous section, players seem to be able to
+coordinate reasonably well for some parameter configurations. The
+only way players can interact is through the virtual scores of
+their response modes, implying that there is some information in
+these values {{cite:1758f8f8-650e-4045-a7a6-b71bb6cd222e}}. This observation led some
+authors to study the information contained in the history of play.
+The information content of the history of play, or the degree of
+predictability can be measured by {{cite:0ab2197a-155c-4f98-a125-2e88602095ed}}
+FORMULA 
+where the time average of FORMULA  is conditioned to the
+requirement that the last FORMULA  winning groups are given by
+FORMULA . If FORMULA  and FORMULA  are independent, then FORMULA .
+Loosely speaking, FORMULA  measures the information in the time series
+of FORMULA . If FORMULA , then the signal FORMULA  contains information.
+It can be shown that players in the minority game learning model
+minimize the degree of predictability
+{{cite:1ff0dff4-40db-415c-9bf9-11816120f129}}. Depending on the value of
+FORMULA , they are more or less successful in doing that. At
+FORMULA , the system changes from an informationally efficient
+and socially inefficient phase (FORMULA , FORMULA  large) to an
+information-rich and socially efficient phase (FORMULA , FORMULA  small). In the informationally efficient
+phase, players do worse than players playing according to the
+symmetric mixed-strategy Nash-equilibrium. By contrast, in the
+information rich phase, players manage to coordinate and do better
+than players who play according to the symmetric mixed-strategy
+Nash equilibrium.
+FIGURE 
+At FORMULA , the symmetry between the two actions is
+broken. In the so-called symmetric phase (FORMULA ),
+both actions are equivalent. Both actions are taken by the players
+with equal frequency. For FORMULA , one of the actions
+is preferred, i.e. the outcome is asymmetric. An asymmetry in the
+game's outcome represents an opportunity that could in principle
+be exploited. Hence, this is just a concomitant feature of the
+presence or absence of information in the history of play.
+As an alternative to FORMULA , one could also consider the fraction of
+frozen players {{cite:0ab2197a-155c-4f98-a125-2e88602095ed}}. Frozen players are
+players who never change their response mode in the stationary
+state (in the limit of FORMULA  in
+Equation (REF )). That is, these players have one
+response mode that outperforms all others.Note that this
+does not imply that these players take the same action
+always: a response mode is a function of past play, hence the
+actions vary with the history FORMULA . As can be seen from Figure
+REF , the fraction FORMULA  of frozen players is
+zero in the informationally efficient phase, while it first rises
+for intermediate values of FORMULA  and then falls again when
+FORMULA  goes to infinity. The intuition is that, for very small
+values of FORMULA  (the informationally efficient phase), both
+actions are equivalent, so that there is little variation in the
+virtual scores of the different response modes. This means that
+players switch response modes easily. For very large values of
+FORMULA , players behave more or less randomly, so they switch
+response modes frequently. Only at intermediate values of FORMULA 
+the fraction of frozen players is large, as many players have a
+response mode that is superior to other response modes. Note that
+the success of a response mode depends on the response modes used
+by opponents: a response mode per se is not superior, it is
+the collective of response modes that is successful {{cite:70e87071-e219-4c2f-8fef-76287e7bf291}}. In particular, it only pays to be
+predictable if others are predictable as well.
+This transition between the informationally efficient and the
+information rich phase, or equivalently between the socially
+inefficient and the socially efficient phase, is central to the
+minority game learning model. At this transition, there is a
+qualitative change in collective behavior, while the principles
+behind the behavior of individuals remain unchanged. For all
+values of FORMULA , players in the minority game learning model
+try to outsmart each other, but for low values of FORMULA , they
+are on average less successful. In the next section, we discuss
+the interpretation of FORMULA .
+
+Response modes and their antagonists
+The former sections have shown that the qualitative behavior of
+the system depends only on FORMULA , not on other
+variables such as FORMULA . Moreover, for some values of this
+parameter, players are much more successful in coordinating
+behavior than for other values. What is the feature of the model
+underlying this behavior? We address this question in the current
+section. The answer to this question points to an intuitive
+interpretation of the model's results in terms of response modes
+and their antagonists.
+The minority rule forces players to differentiate: if all players
+choose the same response mode, all will loose. Agents want to be
+as far apart in the space of response modes as possible. However,
+there are only FORMULA  possible response modes for FORMULA 
+players. Hence, one would expect that players succeed in
+differentiating if FORMULA , while they behave more like
+a crowd when FORMULA . So, one would expect a qualitative
+change at FORMULA , rather than at FORMULA , as
+observed. The reason that the transition occurs at FORMULA 
+rather than at FORMULA  is that two response modes
+FORMULA  only give rise to distinctively different behavior if
+either they prescribe different actions for every history of play
+(i.e., FORMULA  and FORMULA  are anti-correlated) or if their predictions
+are uncorrelated {{cite:1758f8f8-650e-4045-a7a6-b71bb6cd222e}}, {{cite:23ed2ebe-0079-40d9-a3cb-5a6fbd2977a0}}, {{cite:5401eacd-029a-488f-b062-d1ca92c638c4}}. It can be shown that for every response mode FORMULA ,
+the number of response modes that are anti-correlated or
+uncorrelated with FORMULA  is given by FORMULA 
+{{cite:1758f8f8-650e-4045-a7a6-b71bb6cd222e}}, {{cite:5401eacd-029a-488f-b062-d1ca92c638c4}}. Hence, FORMULA  is
+proportional to the inverse of this number.
+This leads us to an intuitive interpretation of the model's
+results in terms of the interplay between different response
+modes. Let FORMULA  be a response mode, and let FORMULA  be the
+response mode that is anti-correlated with FORMULA . Suppose FORMULA 
+players use the response mode FORMULA  at a given time step, and
+FORMULA  players use the anti-correlated response mode
+FORMULA  at the same time step. If FORMULA  for
+all anti-correlated pairs FORMULA  of response modes, then
+the actions of players using these response modes effectively
+cancel and the volatility will be small.
+Hence, it would be optimal if the group of players that use a
+certain response mode is of about the same size as the group that
+uses the “antagonistic” response mode. However, this is not
+always possible, as the dimension of the space of response modes
+is fixed by the parameter FORMULA . Hence, players can only be “far
+apart” in terms of response modes if the number of players is not
+too large relative to the dimension of the response mode space.
+For a given number of players, players cannot differentiate if FORMULA 
+is small, as the space of response modes is too crowded in that
+case. The players display herding behavior: for a pair of
+anti-correlated response modes FORMULA , almost all players
+herd at one of them, with very few players choosing the other.
+Hence, the actions of the players choosing a given response mode
+do not cancel those of the players using its antagonist, so that
+FORMULA  will be large. For somewhat larger FORMULA  (for a fixed
+number of players), players can differentiate, and the actions of
+players effectively cancel. Hence, the system is quite successful
+collectively at intermediate values of FORMULA , although the
+minority rule prevents the system from attaining full efficiency,
+i.e., not all players can be on the minority side. For a given
+FORMULA , the response modes of most players are uncorrelated, but a
+small share of players uses response modes that are mutually
+anti-correlated. This coordinated avoidance is beneficial for
+everybody, as it helps to get a more even division of players over
+both alternatives {{cite:946aa6ec-d8a3-4206-bd32-ae6dac341b10}}.
+Now, for very large FORMULA  at a fixed number of players, the number
+of players using a given response mode will only be small, so that
+players act more or less independently {{cite:bf7d5197-21cc-4e54-8522-6c0f1abf6cb4}}. However,
+the system still performs better than players who play the
+symmetric mixed-strategy Nash equilibrium would, as there always
+exists pairs of players that follow anti-correlated response
+modes, so that the players' actions are never truly independent
+and FORMULA  is smaller than 1, the value of
+FORMULA  under the symmetric mixed-strategy Nash
+equilibrium {{cite:1758f8f8-650e-4045-a7a6-b71bb6cd222e}}.
+
+Comparison to experimental results
+In this section, we discuss some experiments on the minority game
+and related congestion games. In addition to the minority game, we
+focus on market entry games and route-choice games. First, we
+briefly introduce these two classes of games. We then present some
+experimental results, and discuss whether and how the learning
+model proposed in the minority game literature could explain these
+results.
+The market entry game {{cite:e2e8db94-c5d6-4d71-83da-fa1a39128ff4}} has been
+studied extensively in economics.See e.g.
+{{cite:a2024c37-f66b-4235-84d8-69a355a5b417}}, {{cite:fda9d9fe-72be-45dc-a763-4ba49c83f0e9}},
+{{cite:7199f500-c440-4fbb-a5bb-984e7bb4a9fc}}, {{cite:0c4c6869-a736-49c5-a335-ff5297820049}},
+{{cite:446d92a5-6070-4d31-83dd-def12efc41dd}}, {{cite:61148dbb-9d79-4a1c-a5c0-7c2a55ffb6b9}}, {{cite:6bad94d0-eda6-4a48-a97b-d5b36d5b6e93}}. In a market entry game, FORMULA 
+players must decide independently and simultaneously to enter a
+market with a fixed capacity FORMULA  or to stay out. Players who
+enter the market receive a payoff that decreases in the number of
+entrants. The payoff of players who stay out of the market is
+commonly taken to be constant. The game generally has a large
+number of Nash equilibria, both in pure and in mixed strategies.
+Depending on the exact form of the payoff function, there may even
+be a continuum of equilibria. Pure-strategy Nash equilibria may be
+payoff-symmetric or payoff-asymmetric, and strict or non-strict,
+depending on the choice of parameters. For the payoff functions
+commonly studied, the number of entrants is between FORMULA  and FORMULA 
+in equilibrium {{cite:446d92a5-6070-4d31-83dd-def12efc41dd}}, {{cite:a2024c37-f66b-4235-84d8-69a355a5b417}}. An
+important difference between the market entry game and the
+minority game is that in the latter game, congestion effects are
+symmetric, while in the former game, players can choose between a
+safe option with guaranteed payoffs – staying out – and
+entering, the payoffs of which depends on the number of other
+players that enter.
+As the market entry game is a congestion game, the fictitious play
+process converges in beliefs to one of the Nash equilibria of the
+game {{cite:e5506a5a-87e7-44c6-b669-f6e2cc71192d}}. {{cite:a2024c37-f66b-4235-84d8-69a355a5b417}} show
+that the evolutionary replicator dynamic converge to one of its
+rest points, and that the mixed-strategy Nash equilibria of the
+game are unstable under the dynamic. They also show that under
+standard reinforcement learning {{cite:2f505be8-e7ba-44dc-bc8f-41d0fd4b6998}}, the learning
+process converges with probability one to one of the pure-strategy
+Nash equilibria of the game (when FORMULA ). Under
+hypothetical reinforcement learning, where also the propensities
+of strategies not used are updated, the learning process converges
+with probability one to one of the (logit) perturbed equilibria
+corresponding to the pure-strategy Nash equilibria of the game for
+FORMULA  {{cite:a2024c37-f66b-4235-84d8-69a355a5b417}}.The
+perturbed equilibria are the logit quantal response equilibria
+{{cite:0f04e599-ac85-4e9a-9e21-7e4cfa706659}} of the game.
+Route-choice games are closer to the minority game in that there
+is no safe option. In a route-choice game, players choose between
+two or more roads. The payoffs of choosing one of these roads
+falls in the number of other players who have chosen that road.
+Roads may differ in terms of capacity. In equilibrium, players
+divide themselves over the roads in such a way that traveling
+times and hence payoffs are equalized. These games have been
+studied experimentally by a number of authors.See e.g.
+{{cite:1119c31b-4886-45e5-9c11-29b578e90136}}, {{cite:9ab9381e-d235-4423-802c-60badaf146c6}}, and
+{{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}}. An important difference with the minority
+game is that the pure-strategy Nash equilibria of the route-choice
+game are payoff-symmetric. Moreover, these Nash equilibria are
+strict, unlike in the minority game. It is easy to see that the
+fictitious play process converges in beliefs to one of the Nash
+equilibria of the game {{cite:e5506a5a-87e7-44c6-b669-f6e2cc71192d}}. No other
+analytic results are available on the behavior of different
+learning processes in this type of games; however, given the
+similarities with market entry games and the minority game, we may
+expect learning processes to behave similarly in these games.
+The minority game has been discussed in detail in
+Section . {{cite:31668b10-bfb2-4f25-b8af-7e440dcef4a5}} study
+the predictions of different learning models for the minority
+game. They show that the collection Nash equilibria with at most
+one mixer is asymptotically stable under the multi-population
+replicator dynamic, while other stationary states of the
+replicator dynamic are not Lyapunov stable
+{{cite:1a318bd3-df22-4b38-8384-8801fcef2e0f}}. Finally, as in all congestion games,
+the fictitious play process converges in beliefs to one of the
+Nash equilibria of the game.
+We now discuss some experimental results on market entry
+games, route-choice games and the minority game, and whether, and
+how, these results can be explained by the minority game learning
+model. A robust finding in experiments on these games is that
+subjects quickly achieve a “magical” degree of coordination.
+However, individual players generally do not play equilibrium
+strategies. For instance, while {{cite:446d92a5-6070-4d31-83dd-def12efc41dd}} find that
+the number of entrants in a market entry game rapidly converges to
+the equilibrium value, they also observe large between- and
+within-subject variability, which does not diminish with
+experience. This is a common finding in experiments on market
+entry games {{cite:5169a80d-b8ed-454a-8e88-99f763725b9c}}.An exception is
+{{cite:a2024c37-f66b-4235-84d8-69a355a5b417}} who find that subjects coordinate on one
+of the pure Nash equilibria of the market entry game after a large
+number of rounds when they are given feedback on others' choices.
+Similarly, in experiments on a route-choice game,
+{{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}} observe that the mean number of drivers on the
+different roads is very close to the equilibrium number, while
+large fluctuations persist until the end of the session. Similar
+experimental results have been reported for the minority game
+{{cite:913a9eb5-bb81-4dfa-b418-b6c59d4f7c39}}, {{cite:7915248e-2134-401e-9172-0e0fe4be3181}}, {{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}}.
+In all cases, the hypothesis that fluctuations can be explained by
+a symmetric mixed-strategy Nash strategy equilibrium of the game
+can be rejected. These results cannot be explained with standard
+learning or evolutionary models, as these models typically predict
+convergence to the pure-strategy Nash equilibria of such games
+{{cite:a2024c37-f66b-4235-84d8-69a355a5b417}}, {{cite:31668b10-bfb2-4f25-b8af-7e440dcef4a5}}. However, as
+discussed in Section REF , the minority game
+learning model predicts precisely that average behavior will be
+close to the equilibrium prediction, while fluctuations will
+persist.
+Some authors attempt to reconcile aggregate “equilibrium”
+behavior in experiments with individual non-equilibrium play by
+conjecturing that subjects may use counteracting behavioral
+rules.See {{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}},
+{{cite:913a9eb5-bb81-4dfa-b418-b6c59d4f7c39}}, {{cite:446d92a5-6070-4d31-83dd-def12efc41dd}},
+{{cite:6bad94d0-eda6-4a48-a97b-d5b36d5b6e93}}, {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}}, and
+{{cite:87c8be8f-1396-4807-ab27-05cdc6f1580c}}. For instance, {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}}
+report that some subjects revise their choice if the road of their
+choice turned out to be congested, while other players stick with
+their choice in that case, as they expect others to switch. Also
+{{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}} find that there is considerable
+heterogeneity in players' behavior in their experiments on the
+minority game. They show that it is not the heterogeneity per se
+which determines the players' success in coordinating, rather, it
+is the interaction between these different behavioral rules that
+players can successfully coordinate on choosing different actions.
+These findings are in line with the predictions of the minority
+game learning model that response modes and their antagonists
+coevolve in such a way that their actions effectively cancel out,
+thus reconciling aggregate equilibrium behavior and individual
+non-equilibrium play.
+However, it is not fully clear which behavioral rules subjects
+employ. For instance, {{cite:dbd5959e-b525-443f-9fac-e99ea1141b53}} are unable to classify
+42% of the subjects in terms of the behavioral rules they use in
+their route-choice experiments. This leaves open the possibility
+that subjects use some response modes that may not have an
+intuitive interpretation and are thus not recognized by the
+experimenters, but that nevertheless perform well as response
+modes and their antagonists coevolve, as predicted by the minority
+game learning model (see Section REF  and
+REF ). A systematic study of the different response
+modes used by experimental subjects seems needed. Indeed,
+{{cite:87c8be8f-1396-4807-ab27-05cdc6f1580c}} conclude that there is a need “to
+re-orient research on interactive decision making to individual
+differences, identify patterns of behavior shared by subsets of
+players ..., and then attempt to account for aggregate behavior
+in terms of the behavior of the clusters of players that form
+these aggregates”.
+Finally, the effect of information on players' behavior in such
+games remains a puzzle. Two dimensions of information have been
+investigated in the experimental literature. Firstly, it has been
+studied how behavior depends on the information given on other
+players' choices. Players can be provided with information only on
+the payoff rule and aggregate behavior in the past rounds or may
+be informed additionally of the individual choices of all other
+players. If players learn e.g. according to the standard
+reinforcement learning model of {{cite:2f505be8-e7ba-44dc-bc8f-41d0fd4b6998}}, hypothetical
+reinforcement {{cite:a2024c37-f66b-4235-84d8-69a355a5b417}}, the minority game learning
+model, or if the learning process can be described by the
+replicator dynamic, this should not affect results.
+However, in many experimental studies, behavior differs
+qualitatively depending on the information players have.
+{{cite:a2024c37-f66b-4235-84d8-69a355a5b417}} reports that behavior becomes less random
+when players are provided with information on the individual
+choices of other players: the hypothesis of randomizing behavior
+can be rejected for a larger share of the players, and subjects
+seem to display some inertia in their behavior. However, this may
+be due to the fact that the additional information given to
+players allows them to play complicated repeated-game strategies:
+players may signal their commitment to a certain action. While for
+the market entry game, such a signalling strategy pays off, this
+is not the case in the minority game.For instance,
+suppose that FORMULA  players commit to action FORMULA , and FORMULA 
+players commit to action FORMULA . The remaining player will not
+be deterred from choosing either of those actions by the
+commitment of other players, nor does the commitment of these
+players guarantee them a positive payoff. A repeated-game strategy
+that does pay off in the minority game is one in which players
+“take turns”: players alternately choose each of the two actions
+in such a way that each player is in the minority roughly half of
+the time. Indeed, {{cite:9ab9381e-d235-4423-802c-60badaf146c6}} find some
+evidence of such behavior in their experiments on route-choice
+games with small groups, but it is unlikely that players will be
+able to successfully play according to such a repeated-game
+equilibrium when the number of players is large. Also, one can
+imagine that feelings like regret or envy play a larger role in
+the market entry game {{cite:446d92a5-6070-4d31-83dd-def12efc41dd}}. In that sense,
+experiments on the minority game provide a cleaner test of
+learning theory. Nevertheless, {{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}} find
+that providing players with additional information on their
+opponents' play makes that players switch less often between
+different actions. In the treatment with full information on
+individual players' actions, players tend to stick more often to
+their last period's action, especially when this action was the
+minority action. Combined with some heterogeneity in players'
+beliefs, this inertia and “reinforcement” effect partly explains
+players' success at coordinating in the minority game. However,
+{{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}} show that inertia, reinforcement,
+and heterogeneity alone are not sufficient: players' strategies
+also coevolve, or self-organize to improve aggregate payoffs, as
+predicted by the minority game learning model.
+A second dimension of information that has been studied in the
+literature refers to the salience of information on the recent
+history of play. {{cite:accd67f8-aaed-4b14-a455-bc2c72e3fd6a}} provide players with
+a string of past outcomes of varying length. When players are
+provided with information on play in more rounds than just the
+previous one, aggregate efficiency is significantly improved. They
+find that providing players with a string of greater length allows
+players to correlate their behavior over a longer time period:
+when players are provided with the outcome of the previous round,
+there is only a significant relation between present and past
+choices for the first two time lags, whereas such a relation hold
+for up to three time lags when more information is provided.
+Notably, in a treatment where players are provided with a string
+of intermediate length and the degree of aggregate efficiency is
+highest, play is characterized by a substantial lack of
+short-range correlations between current and past actions: players
+seem to exploit the additional information to improve their
+payoffs.
+All together, these experimental studies give some support to the
+learning model proposed in the minority game literature. However,
+the question how information influences play in congestion games
+has still not been satisfactorily answered. It would be
+interesting to compare players' behavior under different
+informational treatments in different congestion games. While most
+learning models make similar predictions for the different
+congestion games discussed here, intuitively, one would expect
+that information will play a different role in these games, as
+emotions like envy and regret will be more important in some games
+than in others, and also the scope for repeated-game strategies
+differs across games. Such a systematic comparison would allow one
+to better separate the learning effects from possible
+repeated-game and behavioral effects.
+
+Conclusions
+In this paper, we have given a critical account of the learning
+model proposed in the learning model proposed in the minority game
+literature, and related it to standard learning and evolutionary
+models in economics, showing that it shares quite a few features
+with these models. Still, the predictions of this learning model
+are markedly different from the predictions from other models.
+However, these predictions are in line with some experimental
+results on the minority game and related games, which cannot be
+explained by other models.
+However, our understanding of learning in such games is far from
+complete. For instance, the effect of feedback on play is unclear.
+An interesting direction for further research would be to
+systematically vary players' information in experiments on
+different congestion games such as the minority game and the
+market entry game, and to compare play under the different
+information treatments and across games. While most learning
+models provide similar predictions for these games, intuitively,
+one would expect that information may have different effect in
+these games, as in some games, repeated-game strategies or
+emotions may play a larger role than in others. Such an experiment
+may help shed light on the question which learning model is
+appropriate in such games.

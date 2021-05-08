@@ -1,0 +1,321 @@
+
+
+GLRT-Optimal Noncoherent Lattice Decoding
+
+
+Daniel J. RyanFORMULA ,  Iain B. CollingsFORMULA   and  I. Vaughan L. ClarksonFORMULA  
+I. V. L. Clarkson was on study leave throughout 2005 at the Dept. of Electrical & Computer Engineering, University of British Columbia, Canada. This paper has appeared in part at VTC-Spring 2006 and ICASSP 2006.
+
+
+FORMULA School of Electrical and Information Engineering, University of Sydney, Australia,
+Phone: +612 9372 4465, Fax: +612 9372 4490, Email: dan@ee.usyd.edu.au
+
+FORMULA Wireless Technologies Laboratory, CSIRO ICT Centre, Australia,
+Phone: +612 9372 4120, Fax: +612 9372 4490, Email: iain.collings@csiro.au
+
+FORMULA School of Information Technology and Electrical Engineering, University of Queensland, Australia,
+Phone: +617 3365 8834, Fax: +617 3365 4999, Email: v.clarkson@itee.uq.edu.au
+
+
+
+This paper presents new low-complexity lattice-decoding algorithms for noncoherent block detection of QAM and PAM signals over complex-valued fading channels. The algorithms are optimal in terms of the generalized likelihood ratio test (GLRT). The computational complexity is polynomial in the block length; making GLRT-optimal noncoherent detection feasible for implementation. We also provide even lower complexity suboptimal algorithms. Simulations show that the suboptimal algorithms have performance indistinguishable from the optimal algorithms. Finally, we consider block based transmission, and propose to use noncoherent detection as an alternative to pilot assisted transmission (PAT). The new technique is shown to outperform PAT.
+Noncoherent detection, lattice decoding, wireless communications.
+Introduction
+Noncoherent transmission of digital signals over unknown fading channels has recently received significant attention especially for the case of the block-fading channel model. Applications include recovery from deep fades in pilot-symbol assisted modulation based schemes, eavesdropping, and non-data-aided channel estimation. Noncoherent transmission is particularly applicable to systems exhibiting small coherence intervals where the use of training signals would result in a significant loss in throughput. Recently, some elegant information-theoretic results have been derived for noncoherent single and multiple-antenna systems under the assumption of Rayleigh fading, for example {{cite:f745300d-daf6-4bfc-b543-b9423db5241e}}, {{cite:ad34a074-ab29-41b8-91f7-15db24c68a51}}. Information theoretic aspects of noncoherent transmission were considered in {{cite:3dd001cb-195a-4aa6-8c83-08f815279a6c}} which concluded that at low SNR and for small coherence intervals there is a significant capacity penalty by using training. Under this noncoherent detection regime, it has been shown by numerical simulation that standard modulation techniques such as quadrature amplitude modulation (QAM) can achieve near-capacity in the single-antenna noncoherent block Rayleigh-fading channel {{cite:cab4030b-849b-4fde-b706-eb80385f4d2f}}.
+This paper focuses on noncoherent receiver design for the block fading channel. A great deal of work has been performed on partially coherent receivers such as pilot-symbol assisted modulation (PSAM) {{cite:0920a7d8-a091-4d6a-907d-21199d984211}}, {{cite:dbe1ea61-affe-4a4b-b7f8-ee03c265ce59}}, per-survivor techniques {{cite:40f42a62-7553-4bb5-8659-815de271e395}}, and coupled estimators {{cite:5ea68a6b-992e-4aa9-ad36-78cdf0ac6cc7}}. However the challenge remains to develop high-performance, low-complexity, fully noncoherent receivers.
+Various suboptimal algorithms have been proposed for block-based noncoherent detection. For slowly fading channels, a blind phase recovery approach was proposed in {{cite:9d6493a8-3892-4a6a-8ce9-5959d7b1c550}} for noncoherent detection of differentially encoded QAM {{cite:f073032d-7158-46fe-b8cf-165d33795da2}} where the attenuation was assumed to be known exactly at the receiver. In {{cite:173c7881-13a3-4a99-bdf0-e781f0f4ff58}}, a suboptimal technique for PSK was proposed which involved forming a number of equally spaced channel phase estimates. An extension to multi-amplitude constellations was also presented, where every sequence of symbol amplitudes is considered, and then the PSK technique is applied to determine the phase of the symbols. Unfortunately, the complexity of this suboptimal approach is still exponential in the sequence length, albeit with a smaller base.
+Recently, lattice decoding algorithms have been applied to noncoherent and differential detection. For PSK over temporally-correlated Rayleigh fading channels, a form of lattice decoding (namely sphere-decoding) can be applied since it turns out that the detection metric is Euclidean {{cite:8bba74d3-cdd7-4b55-88f8-9371a8760e9f}}. Lattice decoding techniques have also been used for differential detection of diagonal space-time block codes over Rayleigh fading channels, by approximating the decision metric with a Euclidean metric {{cite:822e86fd-1b13-47bf-97b5-008dbd5a20d8}}, {{cite:a9f0ba4c-1648-40fd-9c15-abce632e1fd4}}. In {{cite:2467c6e4-2a8b-4617-9aeb-95ea9fd2b90b}}, we presented simulation results for another lattice projection approach for suboptimal PAM and QAM detection. Unfortunately, each of these algorithms require complexity exponential with the block length to guarantee that the optimal estimate is found {{cite:bcb32864-4985-4839-b182-f4241b391acb}}, {{cite:0bb422e9-2841-4d29-ab65-88253c5f9220}}. Practical implementation considerations demand that low complexity algorithms be developed.
+For the case of the constant envelope PSK constellation, a detection algorithm with complexity FORMULA  was developed in {{cite:f4a44b4a-566b-4800-b1c9-cfd709db9d2e}}, {{cite:6f09dfa6-5821-4204-a2c1-1d5640c1c509}} (where FORMULA  is the block length), which can provide the optimal data estimate over an unknown noncoherent fading channel, in terms of the Generalized Likelihood Ratio Test (GLRT). The GLRT is equivalent to joint ML estimation of a continuous valued channel parameter and discrete-valued data parameters. This approach was generalized in {{cite:1dfc36ae-5e89-424c-9396-1f109f153170}}, where they outlined a general graph-based approach which involved forming a spanning tree. Specific details were presented for the cases of QAM over a phase noncoherent channel (known channel amplitude) {{cite:1dfc36ae-5e89-424c-9396-1f109f153170}}, {{cite:ca2f976c-a57b-4f33-8fc2-cfcebf5c3647}}, and for PSK over a fading channel with coding {{cite:8bbc4a21-ef0c-4427-a7fe-716e8532f0da}}. The challenge remains to develop efficient algorithms for optimal noncoherent sequence detection of multi-amplitude constellations over fading channels.
+In this paper we propose a new GLRT-optimal noncoherent lattice decoding approach for QAM and PAM symbols which has complexity polynomial in the block length. We start by considering detection of FORMULA -ary PAM over real-valued fading channels (which we shall term real-PAM). We show that the GLRT-optimal codeword estimate is the closest codeword (or lattice point) in angle to the line described by the received vector. We propose an algorithm that searches along the line, and chooses the best codeword estimate from this search. We provide a theorem that bounds the search to a segment of the line, limiting the number of codewords that need to be considered. We show how the search can be done in an iterative manner, and that the resulting complexity of the algorithm is FORMULA .
+We then consider the more practical case of FORMULA -ary QAM detection over complex-valued fading channels, and show that in this case the GLRT-optimal codeword estimate is the closest codeword in angle to a plane described by the received vector. We propose an algorithm that searches across the plane, and chooses the best codeword estimate from this search. We provide a theorem that bounds the search to a segment of the plane. We show how the extent of the search can be further reduced by exploiting the rotational symmetry of the constellation. The resulting plane search algorithm can be performed with complexity of order FORMULA .
+We also present new suboptimal noncoherent QAM detection algorithms with even lower complexity; by combining a channel phase estimator with our fast real-PAM algorithm. We propose using FORMULA  instances of the real-PAM algorithm. This approach therefore has complexity of order FORMULA . Simulations indicate that there is a negligible performance loss compared to GLRT, when using this suboptimal technique.
+Finally, we also propose a pilot-assisted version of our new reduced-search noncoherent lattice-decoding algorithms. The pilot symbol is used to remove the ambiguities inherent with noncoherent detection. Our approach obtains improved performance compared with standard pilot assisted transmission {{cite:dbe1ea61-affe-4a4b-b7f8-ee03c265ce59}}, while maintaining the same data rate.
+
+System Model
+Signal Model
+We define a codebook FORMULA  as the set of all possible sequences of FORMULA  transmitted symbols, FORMULA , such that each FORMULA  is in some constellation FORMULA . For an FORMULA -ary PAM constellation, FORMULA . For QAM, FORMULA  is a subset of the Gaussian (complex) integers with odd real and imaginary components. For example, for an FORMULA -ary square QAM constellation, FORMULA  where FORMULA . Thus each codebook FORMULA  is a set of lattice points drawn from a subset of the unit lattice of FORMULA  or FORMULA .
+We consider block fading channels and assume that the channel FORMULA  is constant for at least FORMULA  symbols as in {{cite:cab4030b-849b-4fde-b706-eb80385f4d2f}}, {{cite:ad34a074-ab29-41b8-91f7-15db24c68a51}}, {{cite:3dd001cb-195a-4aa6-8c83-08f815279a6c}}, {{cite:f745300d-daf6-4bfc-b543-b9423db5241e}}, {{cite:173c7881-13a3-4a99-bdf0-e781f0f4ff58}}. We will consider narrowband fading channels where FORMULA  is either real-valued and complex-valued channels. Thus we can write the received codeword FORMULA  as follows,
+FORMULA 
+where FORMULA  is a vector of additive white Gaussian noise.
+
+Detection
+The noncoherent detection problem is to estimate FORMULA  based on FORMULA  without knowledge of the channel and in the absence of training data. The log-likelihood function of the maximum likelihood (ML) detector (of both channel and data) is given by
+FORMULA 
+where constant factors have been discarded and FORMULA  represents the Euclidean norm. For a given codeword hypothesis FORMULA , the likelihood function is maximized by choosing
+FORMULA 
+where FORMULA  denotes Hermitian transpose.
+Hence, the ML estimate of FORMULA  conditioned on the corresponding channel estimate, is given by
+FORMULA 
+
+This is the Generalized Likelihood Ratio Test (GLRT) {{cite:52be89d5-40d0-445b-8cba-e731a02436ad}} considered in {{cite:173c7881-13a3-4a99-bdf0-e781f0f4ff58}}, {{cite:1dfc36ae-5e89-424c-9396-1f109f153170}}.
+Note that (REF ) is equivalently given by
+FORMULA 
+
+where FORMULA  is the principal angle between FORMULA  and FORMULA  {{cite:21927560-2812-45de-a9a8-f30f1e8c90d7}}. Thus FORMULA  can be found by searching the points of FORMULA  to find the one closest in angle to FORMULA .
+For QAM, we can also obtain a geometric interpretation of (REF ) by expressing the complex vectors in FORMULA . We will use the underscore notation FORMULA  to denote the mapped version of FORMULA  as follows,
+FORMULA 
+and denote the real-valued codebook as FORMULA . For FORMULA -ary square QAM, we therefore have FORMULA  where FORMULA  is an FORMULA -ary PAM constellation. We also define FORMULA  as a basis for the subspace FORMULA  mapped into the real space FORMULA ; that is
+FORMULA 
+
+Note that the columns of FORMULA  are orthogonal. The projection matrix FORMULA  is defined as
+FORMULA 
+such that
+FORMULA 
+That is, the vector FORMULA  is the projection of FORMULA  onto the subspace FORMULA .
+Now, it can be easily shown that
+FORMULA 
+Thus the GLRT-optimal data estimate FORMULA , corresponds to the FORMULA  closest in angle to the plane FORMULA .
+It is important to note that two forms of ambiguity exist for this noncoherent detection problem. The first is the well-known phase ambiguity which occurs for any constellation that is invariant to a particular phase rotation. For example, for square QAM constellations the following four optimal channel estimate and codeword pairs have the same likelihood: FORMULA , FORMULA , FORMULA  and FORMULA ; corresponding to the four FORMULA  rotations of the constellation. We will assume that this type of ambiguity can be resolved, for example, by using the phase of the last symbol from the previous codeword {{cite:cab4030b-849b-4fde-b706-eb80385f4d2f}}, or by using differential encoding {{cite:f073032d-7158-46fe-b8cf-165d33795da2}}. The second type of ambiguity we call a divisor ambiguity and arises when there are multiple points in FORMULA  that lie on the same 1-dimensional (real or complex) subspace e.g. FORMULA  and FORMULA  for 4-ary real-PAM with FORMULA . This produces a lower bound on the noncoherent block detection error rate as discussed and analyzed in {{cite:27f68a39-40a0-4b84-86cf-f9b3baf8145e}}.
+
+Reduced Search Space
+In this section we show that the GLRT-optimal data estimate FORMULA , can be found without testing all the elements of FORMULA . In the previous section we established that FORMULA  is the codeword closest in angle to a particular subspace, so it naturally makes sense to define a `nearest neighbor set' of the subspace and search within that set. The subspace of interest has basis vector FORMULA  and passes through the origin. We show that the nearest neighbor set for this subspace contains FORMULA . This implies that low complexity decoding algorithms can be developed, based on finding this particular nearest neighbor set, and searching it.
+We define FORMULA  to be the point, or set of points, in FORMULA  closest to the arbitrary point FORMULA  (i.e., the nearest neighbor to FORMULA ). That is, FORMULA  is an element of FORMULA  if FORMULA  for all FORMULA .
+
+Of course, usually FORMULA  will have a single element, and in this case we can write FORMULA .
+We define FORMULA  to be the nearest neighbor subset of the codebook FORMULA , corresponding to the subspace with basis vector FORMULA , passing through the origin. That is, FORMULA  if and only if there exists some FORMULA  such that FORMULA .
+
+Note that from a geometrical perspective, it is useful to think of FORMULA  as being equivalent to the inverse of a channel estimate; implying that a point FORMULA  is in the nearest neighbor set if there is a channel estimate FORMULA  such that the distance FORMULA  is smaller than for any other point. Consequently we define FORMULA  as the reciprocal of the optimal channel estimate.
+The following property of the GLRT-optimal codeword estimate FORMULA , allows us to reduce the set of codewords which need to be tested, to a small subset of the FORMULA  possible codewords (where FORMULA  denotes set cardinality). Note that an equivalent result was presented in {{cite:1dfc36ae-5e89-424c-9396-1f109f153170}}, however the geometrical interpretation of our formulation is more apparent; and is important when developing our new search algorithms later.
+FORMULA 
+
+
+Consider the case where FORMULA . From Definition  this implies that there exists some FORMULA  such that FORMULA  however this would imply FORMULA  from (REF ) and hence we have a proof by contradiction.
+
+PAM Detection For Real-Valued Fading Channels
+This section presents a low complexity algorithm for GLRT-optimal noncoherent PAM detection over real-valued channels. Practically, such channels arise in baseband transmission (eg. multi-level PCM), or in certain bandpass systems where phase and frequency are separately estimated by a phase-locked loop.
+We first present a theorem that we will use to reduce the number of codewords that need to be examined, even beyond the limitations imposed by Property . Note that in this real-valued channel case, the subspace of interest (defined by FORMULA ) actually reduces to a line, FORMULA . The theorem implies that only a limited extent of the line needs to be searched; and that the extent depends on the largest value of FORMULA . We then propose a fast low-complexity iterative algorithm to perform the search. In the sequel, we will extend the algorithm to complex-valued channels. Later, we will directly incorporate the algorithm from this section into an extremely low complexity suboptimal algorithm for noncoherent detection over the more commonly encountered complex-valued channels.
+Limiting the Search Space
+For noncoherent detection of FORMULA -ary PAM codewords of length FORMULA  over a real-valued fading channel
+FORMULA 
+for all FORMULA .
+
+
+Define FORMULA . Note that if FORMULA  then the theorem is satisfied.
+Now, consider the alternative case when FORMULA . Rearranging the GLRT-optimal channel estimate in (REF ) gives FORMULA  and hence
+FORMULA 
+We will use this property to bound FORMULA . Using (REF ) and the fact that FORMULA  contains all possible sequences FORMULA , the elements of FORMULA  can be determined on an element-wise basis as
+FORMULA 
+For the case we are considering where FORMULA , it follows that since the largest PAM constellation values are FORMULA , that FORMULA  where FORMULA  is the signum function.
+We now substitute (REF ) into (REF ) to bound FORMULA , which gives
+FORMULA 
+Now (REF ) and the symmetry of the PAM constellation implies that FORMULA . Moreover, since FORMULA  it follows form the definition of FORMULA  that FORMULA  for all FORMULA  except FORMULA . More generally, for all FORMULA , FORMULA  and hence FORMULA . Substituting this into (REF ) gives
+FORMULA 
+
+and hence
+FORMULA 
+
+Therefore, since FORMULA  for all FORMULA  the theorem is proved.
+
+PAM Algorithm
+In this Section we use Property  and Theorem REF  to develop a low-complexity algorithm for real-PAM detection. This algorithm reduces the number of codewords for which the decision metric is evaluated to order FORMULA , which is much smaller than the set of all possible FORMULA  codewords that would be considered by an exhaustive search. Furthermore, we demonstrate how the algorithm can be implemented in an iterative manner so that the complexity is FORMULA .
+Property  implies that FORMULA  can be found by calculating the metric in (REF ) for only those FORMULA , for only those FORMULA  for which the line FORMULA  passes through its Euclidean nearest neighbor region. Furthermore, Theorem REF  implies that only a finite segment of the line need be considered. We have demonstrated such a search in Figure REF , which shows the positive axes for 8-ary PAM with FORMULA , where the shaded regions indicate the nearest neighbor regions of the points which need to be searched. The specifics of the algorithm are as follows.
+First, for ease of notation we modify the received codeword FORMULA  by changing the signs of all negative elements in FORMULA . This will mean that the corresponding (modified) FORMULA  will now have all positive elements. The true (original) GLRT estimate of FORMULA  can be obtained by applying the reverse sign changes to FORMULA . Observe that we can do this without loss of generality since the PAM constellation is symmetric around zero.
+We define FORMULA  to be the range of FORMULA  such that FORMULA  is the nearest neighbor to FORMULA , within the limits FORMULA  (where the limits are due to Theorem REF  and the fact that all FORMULA  are greater than zero for the modified received codeword). Formally,
+FORMULA 
+Note that each non-empty FORMULA  corresponds to a distinct interval of the line FORMULA . The proposed algorithm proceeds by enumerating these non-empty FORMULA 's, by first enumerating their boundary points along the line FORMULA . We then sort the boundary points so that the decision metrics for the corresponding FORMULA  can be calculated in an iterative manner.
+For real-PAM, the boundary values of FORMULA  can be shown to be given by FORMULA  for all FORMULA  and FORMULA  such that FORMULA  (where the values of FORMULA  come from the regular boundaries in the positive half of the PAM constellation FORMULA ). We use FORMULA  to denote the set of all FORMULA  pairs.
+We then sort the elements of FORMULA  in ascending order of their FORMULA  value, and append the value FORMULA  to the end of the ordered set (since this is the outer boundary of the segment of the line FORMULA  which needs to be searched, according to Theorem REF ; where the second element of the pair is arbitrarily set to 0 since it is not needed in the algorithm). We denote the newly ordered set by FORMULA , and index it by FORMULA , (we denote its FORMULA th element by FORMULA ). These ordered values are shown on the example case of Figure REF , where the values of FORMULA  denote the distance along the line FORMULA  where the line crosses from one nearest neighbor region into the next.
+We now show how FORMULA  can be used to enumerate the codewords which need to be searched, and show how to calculate the corresponding decision metrics in an iterative manner. The algorithm can be visualized geometrically as searching along a segment of the line FORMULA , by iterating in FORMULA . Whenever the line crosses from the nearest neighbor region of one lattice point (codeword) to the nearest neighbor region of another, we calculate the metric for the new lattice point. Note that in this context, the value of FORMULA  indicates the dimension of the boundary that is going to be crossed (in the FORMULA -dimensional space) when leaving the FORMULA th segment of the line.
+The iterative search starts with the codeword FORMULA ; which has a corresponding decision metric FORMULA , where FORMULA  is the likelihood function in (REF ). We will use the symbol FORMULA  as a marker for the most likely codeword, and we initially set it to FORMULA  (during the iteration process, FORMULA  will be updated whenever a codeword is found to have a higher likelihood than any previously searched codeword, and the value of FORMULA  will be chosen such that FORMULA  gives the new codeword).
+The iteration proceeds by noting that each time a nearest neighbor boundary is crossed, only one element of the FORMULA -dimensional nearest neighbor codeword vector changes (since for real-PAM, the boundaries are straight lines, orthogonal to one of the dimensions, and parallel to all the others). Therefore the FORMULA th codeword which needs to be considered, is calculated from the FORMULA th codeword, on an element-wise basis as follows:
+FORMULA 
+We define FORMULA  and FORMULA , and hence FORMULA  is the decision metric for the FORMULA th codeword considered. The values FORMULA  and FORMULA  are calculated iteratively as follows,
+FORMULA 
+If FORMULA  improves on the previous best codeword estimate then we update FORMULA  in the interior of FORMULA , by setting FORMULA .
+Once all segments of the line have been searched, we have FORMULA . Pseudo-code for the algorithm is given in Table REF .
+The complexity of the algorithm is a function of the number of intersection points FORMULA , i.e., FORMULA , where FORMULA  denotes set cardinality. FORMULA  is upper bounded by FORMULA , however in general it will be much less than this due to the restricted line search implied by Theorem REF , as shown by simulation in Section . The sorting of FORMULA  can be performed using standard sorting techniques in FORMULA  {{cite:fb4ab8dd-f7b1-4a8e-b717-ec92ef969fa2}}. The updates (REF ), (REF ) and () have complexity FORMULA , and the final calculation of FORMULA  is of order FORMULA . Thus the overall complexity is dominated by the sorting operation, and hence the complexity of the algorithm is of order FORMULA ; a significant improvement compared with an exhaustive search over all FORMULA  possible codewords in the codebook FORMULA .
+
+GLRT-Optimal QAM Detection For Complex-Valued Fading Channels
+This section presents a low complexity algorithm for GLRT-optimal noncoherent QAM detection over complex-valued fading channels. Similarly to the the real-PAM case, we first present a theorem that we will use to reduce the number of codewords that need to be examined, beyond the limitations imposed by Property . In the complex-valued channel case, the subspace of interest is the plane FORMULA , where FORMULA  was defined in (REF ). The theorem implies that only a limited extent of the plane needs to be searched; and that the extent depends on the largest element in FORMULA . We then propose a fast low-complexity algorithm to perform the search for QAM. We also show how PAM detection over complex-valued channels can be viewed as a special case of the QAM algorithm.
+Limiting the Search Space
+For noncoherent detection of FORMULA -ary QAM codewords of length FORMULA  over a complex-valued fading channel
+FORMULA 
+
+for all FORMULA .
+
+
+Define the point FORMULA , along with its corresponding real-valued representation FORMULA , as in (REF ). Also define FORMULA . Note that if FORMULA  then FORMULA  and FORMULA  for all FORMULA  and the theorem is satisfied.
+Now, consider the alternative case when FORMULA . Similarly to the real-PAM case, rearranging the GLRT-optimal channel estimate in (REF ) gives FORMULA  and hence
+FORMULA 
+It follows that
+FORMULA 
+Combining this with the the fact that for any vector FORMULA , the real-valued representation of the complex scalar FORMULA  is FORMULA , we obtain the real-valued representation of FORMULA  as
+FORMULA 
+and therefore
+FORMULA 
+It follows that FORMULA , i.e.
+FORMULA 
+Using (REF ) and the fact that FORMULA  contains all possible sequences FORMULA , the elements of FORMULA  can be determined on an element-wise basis as
+FORMULA 
+
+for all FORMULA  where we recall from Section REF  that FORMULA .
+We now substitute (REF ) into (REF ) which gives
+FORMULA 
+This is similar to (REF ) in the proof of Theorem 1. By following through the subsequent steps in the proof of Theorem 1, and keeping in mind that the dimensions of the vectors are now of dimension FORMULA , we obtain FORMULA  which implies that FORMULA  and FORMULA  for all FORMULA .
+
+QAM Algorithm
+In this Section we use Property  and Theorem REF  to develop a low-complexity algorithm for QAM detection. Property  implies that FORMULA  can be found by calculating the metric in (REF ) for only those FORMULA , for only those FORMULA  for which the plane FORMULA  passes through its Euclidean nearest neighbor region. Furthermore, Theorem REF  implies that only a finite region of the plane need be considered. Conceptually, this is a direct extension of the real-PAM case shown in Figure REF  (considered previously). The difference being that Figure REF  shows the line FORMULA , but we now have a plane FORMULA . Also the number of orthogonal dimensions doubles when considering complex-valued channels. We demonstrated this complex-valued channel QAM case in Figure REF  which is a two dimensional plot in the plane FORMULA . The parallel lines (at various angles) are the boundaries arising from the QAM constellation, and the shaded region indicates the nearest neighbor regions of codewords which need to be searched. The QAM search algorithm we present here, follows the same principles as the real-PAM algorithm of Section REF , where instead of working with boundary points of line segments, we need to work with boundary edges of planar regions. The specifics of the algorithm are as follows.
+First, for ease of notation we modify the received codeword FORMULA  by multiplying it by the complex scalar FORMULA , where FORMULA . This will mean that the FORMULA th element of FORMULA  will be real-valued and positive. The true (original) GLRT-optimal estimate of the channel can be be obtained by applying the reverse phase rotation to FORMULA , while the optimality of the new GLRT-optimal codeword estimate is unaffected.
+Hence Theorem REF  implies that the search over the plane FORMULA  is reduced to the segment of the plane for which FORMULA  where FORMULA . Furthermore, as discussed in Section REF  because of the FORMULA  phase ambiguity in square QAM constellations, there are four GLRT-optimal inverse channel estimates FORMULA  (with corresponding phase ambiguous GLRT-optimal codeword estimates). Hence, we only need to consider the square region of the plane
+FORMULA 
+since exactly one of FORMULA  will exist in this region of the plane. Note that FORMULA  is the shaded region in Figure REF  (mentioned previously).
+Similarly to the real-PAM case we make the following definition.
+ 
+We define FORMULA  to be the range of FORMULA  such that FORMULA  is the nearest neighbor to FORMULA . Formally,
+FORMULA 
+Note that each non-empty FORMULA  corresponds to a distinct region of the plane FORMULA . The proposed algorithm proceeds by enumerating these non-empty FORMULA 's, by first enumerating their boundary vertices in the plane. These vertices are found by calculating the intersection of all the constellation-point boundary lines in the plane (e.g. as shown in Figure REF ). The vertices are then used to calculate an interior-point inside each of the nearest neighbor regions in the shaded square FORMULA . The respective nearest neighbor codeword is calculated for each interior-point, and then it is only these points for which the likelihood metrics are calculated. Clearly, this is a significantly reduced search space compared with the space of all possible codewords.
+For QAM the vertices of the nearest-neighbor regions in the plane FORMULA  can be found by first noting that, since FORMULA  can be given in on an element-wise basis as in (REF ), FORMULA  can be written as
+FORMULA 
+
+where FORMULA  is the FORMULA th element of FORMULA  and we recall that FORMULA . This can be written as the feasible region for the set of linear inequalities corresponding to the nearest neighbor region boundaries in FORMULA  for each element of FORMULA , as
+FORMULA 
+
+where FORMULA  and FORMULA  are the upper and lower nearest neighbor boundaries in the constellation FORMULA . For FORMULA  they take on values in the set FORMULA . For FORMULA  we must consider intersections with the boundary of FORMULA , and therefore in this case FORMULA  and FORMULA  take on values in the set FORMULA .
+By including the square boundary of the region FORMULA , all non-empty FORMULA  are closed simply connected sets on the plane FORMULA . Therefore, since FORMULA  is formed from linear inequalities it is a convex polygon in FORMULA . For each FORMULA , denote FORMULA  as its polygonal boundary and FORMULA  as the vertices of the polygon.
+We now propose a method that enumerates all the vertices FORMULA  for all non-empty FORMULA , and then uses these vertices to generate a point in the interior of all FORMULA , which is then used to obtain a unique codeword via finding the nearest neighbor codeword to that point. Consider the set of points FORMULA . If FORMULA  is some vector that is not parallel to any side of the polygon FORMULA , and if FORMULA  is chosen sufficiently small, then at least one point in this set will be in the interior of FORMULA . Since the received symbol is subject to AWGN, and is therefore irrational with probability one, it follows that the arbitrary choice of FORMULA  will almost surely guarantee this, given that FORMULA  is chosen sufficiently small. In practice, simply setting FORMULA  to some small positive constant will be sufficient to ensure that a point in the interior of FORMULA  is enumerated. However, in Appendix REF  we present a technique to perform this in a strictly optimal fashion with complexity per vertex of FORMULA .
+Since the vertices are shared by adjacent FORMULA , each vertex is only required to be enumerated once. We define the set of all vertices within or on the boundary of FORMULA  as FORMULA . The set FORMULA  can be enumerated as the the intersections of the lines FORMULA  and FORMULA , for all pairs of FORMULA 
+and for all nearest neighbor boundaries FORMULA  in FORMULA . That is
+FORMULA 
+for all FORMULA , FORMULA , and FORMULA , where FORMULA  if FORMULA  and for symbol indices FORMULA  where we consider the square boundary FORMULA .
+To enumerate a point in each FORMULA , for each vertex FORMULA  enumerated we calculate the points on the plane FORMULA , and FORMULA . Then for each of these two points, if it is in the square FORMULA , we calculate the corresponding codewords FORMULA  and/or FORMULA  and the decision metrics in (REF ).
+Pseudo-code is provided in Table REF .
+The complexity of the algorithm is a function of the number of codewords examined, FORMULA , which is in turn a function of the number of vertices calculated. The number of vertices calculated in (REF ) corresponding to the intersections between lines in where FORMULA  is a boundary of FORMULA  and both FORMULA  and FORMULA  are non-zero is FORMULA ; for which at most two codewords are generated for a quarter of these intersections. For the intersections of the boundaries of FORMULA  and the square FORMULA  there are FORMULA  intersections, which for one quarter of these intersections one codeword is generated. For the vertices at FORMULA  and FORMULA  one codeword is generated. Hence the total number of codewords examined is at most
+FORMULA 
+Since the complexity of each codeword and decision metric calculation is of order FORMULA  then the overall complexity is of order FORMULA  (which is linear in the constellation size FORMULA ) a significant improvement over an exhaustive search over all FORMULA  possible codewords in the codebook FORMULA .
+A further reduction in computational expense, without any loss in optimality, can be achieved by enumerating only one out of each set of four phase ambiguous vertices. The technique is not presented here due to space constraints, however the number of non-zero vertices examined is reduced by a factor of 4 and FORMULA  of the matrix inverse calculations in (REF ) are avoided.
+
+PAM Over Complex Channels
+PAM detection over complex fading channels can be viewed as a special case of complex-channel QAM, where there is zero imaginary component in the constellation. In this case, the search over the plane FORMULA  can be restricted by extending the proof of Theorem REF . To do this, we note that the condition in (REF ) holds, which implies that FORMULA  since FORMULA  is always real-valued. The rest of the proof follows to give the result that FORMULA . This fact combined with Property  and the FORMULA  phase ambiguity of PAM constellations, implies that we only consider codewords FORMULA  for FORMULA  in the region FORMULA .
+The specifics of the FORMULA -ary PAM algorithm are the same as for the FORMULA -ary QAM case, with the exception that the calculation of (REF ) to obtain the vertices in the interior of the (REF ) is only performed for all FORMULA , FORMULA , and FORMULA , where FORMULA  if FORMULA  and for FORMULA  if FORMULA .
+The total number of codewords searched can be shown to be at most
+FORMULA 
+Since the complexity of each codeword and decision metric calculation is of order FORMULA  then the overall complexity is FORMULA . In the following section, we will see that a simple suboptimal approach can achieve even lower complexity with near-optimal performance.
+
+Suboptimal Algorithms for Complex-Valued Fading Channels
+In this section, we propose even lower complexity suboptimal algorithms for detection of QAM and PAM over complex-valued fading channels. We directly use the GLRT-optimal algorithm for real-PAM from Section  as the basis for the algorithms.
+Suboptimal PAM algorithm
+Since for PAM constellations, all constellation points lie along the real line in the complex plane, a suboptimal phase estimation technique combined with our GLRT-optimal algorithm for real-valued fading channels should be sufficient to provide near-optimal performance. This effectively reduces the search over the whole plane FORMULA  for the GLRT-optimal case, to a search over a single line at the given estimated phase angle.
+We use the power-law estimator {{cite:ed1f8a9c-0c72-4cc3-9fea-2b7280bb1ed4}} which, for constellations exhibiting a rotational symmetry of FORMULA  radians, is simply
+FORMULA 
+where FORMULA  refers to the complex argument. Detection is performed by first rotating the received codeword FORMULA  according to this estimate, and then detecting FORMULA  using the GLRT-optimal algorithm of PAM over a real-valued fading channel.
+
+Suboptimal QAM algorithm
+Here we propose a suboptimal algorithm, which reduces the overall algorithmic complexity to FORMULA  by using FORMULA  instances of the PAM detection algorithm presented in Section . Instead of enumerating the intersections of lines on the FORMULA -plane, as we did in Section REF , here we propose to use a modified version of the nearest-neighbor real-PAM line-search algorithm for FORMULA  lines of the type presented in Section . We generate these lines emanating from the origin into FORMULA  (the shaded region in Figure REF ), evenly spaced in angle. Of course, this does not guarantee that we fully enumerate FORMULA  since a finite number of radiating lines can not completely cover a plane, however, we will see by simulation in Section REF  that the performance is close to the optimal.
+As in the optimal case, we multiply FORMULA  by FORMULA  so that FORMULA  will be real-valued and positive. In this suboptimal QAM case, this implies that we only examine points on the plane FORMULA  for FORMULA  satisfying FORMULA , where FORMULA .
+The FORMULA  directions of the lines with respect to the direction of positive FORMULA  have angles FORMULA  where FORMULA . For each angle FORMULA , we perform a nearest neighbor line search for the line with basis vector FORMULA , as proposed in the suboptimal PAM algorithm in Section REF . The search is performed for the segment of the line FORMULA  where FORMULA  and FORMULA  where FORMULA . In this case the lines searches are performed for blocks of length FORMULA .
+There is of course a modification required to update the codeword metrics in terms of complex numbers. The first line search performed is for FORMULA , and hence the line search is over FORMULA . In this case the intervals of the line FORMULA  are defined as,
+FORMULA 
+
+Hence the algorithm works by enumerating and calculating the metric for all FORMULA  for which FORMULA  is non-empty.
+In this case the set FORMULA  of boundary points of the regions FORMULA  is enumerated by calculating FORMULA  for all FORMULA  and FORMULA , (which are the nearest neighbor boundaries in the positive half of the constellation FORMULA ), and storing only those values of FORMULA  such that FORMULA . The set of ordered boundary points FORMULA  is again obtained by sorting, and FORMULA  is appended to FORMULA  as the extent of the search. Recall that FORMULA  are the FORMULA th elements of FORMULA .
+The search through the codewords is initialized to the first codeword for the which the line segment passes through, which is given by FORMULA  where FORMULA . The likelihood update variables are initialized to FORMULA  and FORMULA . To regenerate the optimal codeword, the values of FORMULA  and FORMULA  are initialized to FORMULA  and FORMULA .
+The FORMULA th codeword considered, FORMULA , is calculated from the FORMULA th codeword as
+FORMULA 
+To update the decision metric we define FORMULA  and FORMULA , and hence FORMULA  is the decision metric for the FORMULA th codeword considered. The values FORMULA  are updated as follows,
+If FORMULA  is odd, then FORMULA  is updated as
+FORMULA 
+The values of FORMULA  are updated according to
+FORMULA 
+If FORMULA  improves on the best codeword estimate then we store FORMULA  and FORMULA .
+To start the next line search, FORMULA  is multiplied by FORMULA  and the line search is then performed again for the new value of FORMULA . When all line searches have been performed, we calculate FORMULA  for the original FORMULA .
+Pseudo-code is provided in Table REF .
+The significantly reduced algorithmic complexity compared to the GLRT-optimal algorithm is governed by the number of line searches and the complexity of each line search. Since there are FORMULA  phases, each performing a version of the real-PAM line-search algorithm of Section  for the case FORMULA -ary PAM detection of FORMULA  symbols. Thus FORMULA . From Section REF  we have noted that the number of codewords in FORMULA  is of order FORMULA  and thus FORMULA  must be FORMULA  for it to be possible that the majority of FORMULA  is enumerated. Hence, if FORMULA  is increased proportionally to FORMULA , the overall complexity of the algorithm is FORMULA . Note that however, the improved computational performance of the algorithm is largely due to being able to choose FORMULA  small, which corresponds to avoiding examining a significant number of the FORMULA  with associated FORMULA  being so small as to imply that FORMULA  is not relatively close in angle to the plane FORMULA . We will see via simulation in Section  that small FORMULA  (FORMULA  for FORMULA  16-QAM detection) can achieve near-optimal performance.
+
+Simulation Results
+We now present simulation results to demonstrate the performance of the new PAM and QAM noncoherent reduced search lattice-decoding algorithms. Simulations are performed to obtain the codeword error rate (CER) as a function of SNR for noncoherent detection of 8-ary PAM and 16-ary square QAM. For both case, the simulations are performed for codeword lengths of FORMULA  and 7 over a block Rayleigh fading channel where FORMULA  is i.i.d. circularly symmetric complex Gaussian with unit variance. We have assumed that the phase ambiguities have been removed within each codeword, (for example, by the use of differential encoding {{cite:f073032d-7158-46fe-b8cf-165d33795da2}}).
+Figure REF  presents results for 8-ary PAM for the GLRT-optimal plane search algorithm from Section REF  and the suboptimal phase-estimator plus line-search algorithm from Section REF . We also compare with the suboptimal grid-search algorithm proposed in {{cite:1dfc36ae-5e89-424c-9396-1f109f153170}} and the quantization based receiver proposed in {{cite:173c7881-13a3-4a99-bdf0-e781f0f4ff58}}. For the grid-search algorithm we use uniformly spaced channel phase estimates and the channel attenuation estimates are chosen uniformly from the CDF of the Rayleigh fading channel distribution. For fairness the number of channel attenuation estimates is adjusted so that the total number of channel estimates was kept equal to the maximum number of codeword estimates that potentially could be produced by our GLRT-optimal algorithm. Best results are obtained for choosing the channel phase estimates as 0 and FORMULA , and hence the FORMULA th channel amplitude estimate is given by FORMULA . For the quantization-based receiver (QBR) considered in {{cite:173c7881-13a3-4a99-bdf0-e781f0f4ff58}}, all possible sequences of (positive) amplitude levels are produced, and the sign of each symbol is then determined by symbol-wise coherent detection using uniformly spaced channel phase estimates (a channel amplitude estimate is not required since the signal amplitude is assumed known). For QBR, we again use the channel phase estimates 0 and FORMULA .
+Figure REF  presents the CER as a function of SNR, for 16-QAM transmission. Results are shown for the GLRT-optimal QAM algorithm given in Section REF  and the suboptimal algorithm given in Section REF . We also compare with the grid-based algorithm, where best performance for a fixed number of codeword estimates was obtained using FORMULA  channel phase estimates, which we also use for QBR.
+For both the PAM and QAM cases we see that the suboptimal line-search algorithms provide negligible performance loss compared to the GLRT-optimal algorithm. For the case of FORMULA , where QBR is computationally possible, there is a noticeable performance loss. As discussed in Section REF , divisor ambiguities result in a lower bound on the CER. Expressions for these lower bounds were provided in {{cite:27f68a39-40a0-4b84-86cf-f9b3baf8145e}} and are also shown in the figure. Clearly, for high SNR, both of our GLRT-optimal algorithms and both suboptimal algorithms detection achieve these bounds for both PAM and QAM. As noted in {{cite:173c7881-13a3-4a99-bdf0-e781f0f4ff58}}, there is an inherent suboptimality introduced by quantizing the unbounded channel attenuation by employing a grid-search approach, and hence the performance is clearly inferior. Also, although QBR achieves near-optimal performance for FORMULA , since the complexity of QBR increases exponentially with FORMULA  is not possible to produce curves for FORMULA .
+In Table REF  we present the relative computational complexities of the algorithms for the simulations in terms of the average number of codewords examined. The numbers in brackets indicate the number of codewords examined by the search if the restrictions on the search region provided by Theorems REF  and REF  are not applied (and are therefore slightly greater than the worst case values given in (REF ) and (REF )). We see that the suboptimal phase-estimator plus line-search approaches examine far fewer codewords yet obtains near-optimal performance, and that the complexity of QBR quickly becomes infeasible with increasing FORMULA .
+TABLE 
+
+Reduced Ambiguity Transmission
+In this section we extend our new noncoherent detection algorithm to pilot assisted transmission (PAT) systems {{cite:dbe1ea61-affe-4a4b-b7f8-ee03c265ce59}}. Unlike, standard PAT we propose to use the pilot symbol for noncoherent ambiguity resolution, rather than simply for channel estimation. We propose to replace the pilot symbol of PAT with a symbol generated in the following way. Two bits are allocated for resolving the FORMULA  phase ambiguity of square QAM, and the remaining bits in the symbol are allocated to parity, remove divisor ambiguities and improve error performance. Therefore, this scheme has the same data rate as PAT and can be compared directly.
+With parity check bits in the codeword, we can now even further reduce the search space of our reduced search GLRT lattice-decoding algorithm by only considering codewords which satisfy a parity check. This significantly reduces the ambiguity problem. We will denote this parity-aided transmission scheme as reduced ambiguity (RA) transmission.
+An arbitrarily chosen parity check scheme might reduce the number of divisor ambiguities, however since the metric (REF ) has a geometric interpretation it may be possible to design other parity-check schemes which both resolve ambiguities and optimize performance by providing a minimum angular separation between codewords. The resolution of ambiguities can be achieved, at least for 16-QAM, by using the following parity-check scheme. Two parity bits FORMULA  are calculated from the data bits FORMULA  as follows,
+FORMULA 
+
+where FORMULA  denotes equality in FORMULA . They are then mapped to the upper right-hand quadrant of the QAM constellation of the first (pilot) symbol in the codeword as follows: FORMULA , FORMULA , FORMULA  and FORMULA . Effectively this means the first two bits of the first symbol of each codeword is chosen such that FORMULA , which removes the FORMULA  phase ambiguity, and the other two bits are parity bits, which in this case can be shown to completely remove the divisor ambiguities (see Appendix REF ).
+Figure REF  presents the bit error rate (BER) as a
+function of SNR for detection of 16-QAM transmitted over a block
+independent phase-noncoherent AWGN channel. Again we have assumed
+that the phase ambiguities have been removed within each codeword.
+Results are shown for three codeword lengths FORMULA . The figure
+shows curves for our new RA reduced-search GLRT-optimal algorithm, and
+compares them to standard PAT. Both schemes use a single pilot
+symbol per codeword; which for the RA scheme is generated as
+described above, and for PAT it is a symbol which has energy equal
+to the average energy per symbol. For PAT, the GLRT estimate of the
+channel (based on the pilot symbol) is used to perform GLRT-optimal data
+detection, while for RA lattice decoding we use our reduced search
+GLRT-optimal algorithm. Note that for PAT, the BER is independent of the
+codeword length FORMULA  since it is a symbol-by-symbol detection scheme,
+whereas for RA lattice decoding the BER decreases as FORMULA  increases
+since it is a sequence detection scheme. Clearly our scheme
+outperforms PAT increasingly with FORMULA .
+Figure REF  shows the CER for the scenario of Figure
+REF . This serves to highlight even further the
+benefit from our lattice (sequence) decoding approach compared with
+PAT. For PAT, since bit errors occur independently on a
+symbol-by-symbol basis, the CER increases with FORMULA . However, for RA
+lattice decoding the CER decreases. Also the figure highlights the
+advantage of using pilot symbols, compared with fully noncoherent
+transmission, by observing that the SNR range is significantly lower
+than for Figures REF  and REF .
+
+Conclusion
+In this paper we developed polynomial-time lattice-decoding algorithms for noncoherent block detection of PAM and QAM. Faster suboptimal algorithms for QAM were also presented which have excellent agreement with the optimal algorithms. A reduced ambiguity transmission scheme was introduced which was shown to outperform pilot assisted transmission over the phase noncoherent channel.
+Strictly Optimal Calculation of Interior Points
+For each non-empty region FORMULA , there exists a vertex FORMULA  and small scalars FORMULA , such that either FORMULA  or FORMULA  is in the interior of FORMULA .
+Suppose the first case is true. Now, the line FORMULA intersects an edge of the boundary of FORMULA , and we will call this intersection point FORMULA . We propose to choose FORMULA  so that FORMULA  is the midpoint of FORMULA  and FORMULA . Defining FORMULA  as the FORMULA th element of FORMULA , where FORMULA  is defined by the original received vector FORMULA , we can calculate FORMULA  as follows,
+FORMULA 
+Note that almost surely FORMULA . Similarly, using the line FORMULA  we calculate FORMULA  as
+FORMULA 
+This process will in general always calculate a point in each non-empty FORMULA . However, to avoid calculation problems we first rotate FORMULA  by FORMULA , so that the vectors FORMULA  and FORMULA  are not parallel to any of the edges of FORMULA  (those that are part of FORMULA ). This rotation is later reversed, so that the points calculated are in the original coordinates.
+
+Removal of Ambiguities in 16-ary QAM
+In this section we show that the proposed RA pilot symbol approach (using parity checks, as discussed in Section ) totally removes both the phase and divisor ambiguities otherwise inherent in a noncoherent detection system (as discussed in Section REF ).
+We start by recalling that the proposed parity scheme involves calculating the parity bits from the data bits FORMULA  for FORMULA  as follows.
+FORMULA 
+where FORMULA  denotes equality in FORMULA .
+The data and parity bits are then mapped to the symbols as shown in Table REF , where we recall from the definition in (REF ) that FORMULA  and FORMULA .
+TABLE 
+Since FORMULA  is constrained to have positive real and imaginary components, the phase ambiguity has been removed. It remains to show that all divisor ambiguities have also been removed.
+To do this, we first define the associates of a Gaussian integer FORMULA  to be the elements of the set FORMULA . We also denote FORMULA  to be a codeword of length FORMULA  composed of only elements of FORMULA . For 16-QAM, it can be easily shown that a necessary condition for a divisor ambiguity to exist is that there exists codewords FORMULA , FORMULA  for some FORMULA  such that FORMULA .
+For a codeword FORMULA  and some FORMULA , we define FORMULA  and FORMULA  as the number of occurrences in a codeword of each of the four possible rotations of FORMULA  in the codeword, that is FORMULA  and FORMULA  respectively.
+Noting that the phase ambiguity has been removed (since FORMULA  is constrained to have positive real and imaginary components), a sufficient condition for two codewords to be unambiguous is that there exists some FORMULA , such that the FORMULA th symbols from the two codewords are in different quadrants of the complex plane. It follows then, that a sufficient condition for two codewords to be unambiguous is that they do not have the same values of FORMULA  to FORMULA .
+We now use this property on FORMULA  to FORMULA  to show that for arbitrary FORMULA , it is not possible for two ambiguous codewords FORMULA , FORMULA , to satisfy the parity check (REF ) for any FORMULA  such that FORMULA .
+We consider each FORMULA  (where we have previously defined FORMULA ) in turn, showing that all codewords FORMULA  that satisfy the parity check, are distinguishable in phase from all parity-satisfying codewords considered up to that point. For 16-QAM this process involves considering the four Gaussian integers FORMULA , FORMULA , FORMULA  and FORMULA  in turn, as detailed in the following four cases.
+Define FORMULA  to be the data codeword component of FORMULA , i.e. FORMULA .
+
+Case  FORMULA:
+In this case, we show that there does not exist any FORMULA  that satisfies the parity check.
+Using Table REF , the bits FORMULA  are mapped to the symbol FORMULA  in the following way: FORMULA  and FORMULA . Clearly from (), FORMULA , and therefore the pilot symbol FORMULA  will be either FORMULA  or FORMULA . It follows that FORMULA .
+
+Case  FORMULA:
+In this case, we show the conditions under which a codeword FORMULA  satisfies the parity check.
+The associated bit mappings are FORMULA  and FORMULA . Clearly, FORMULA  and FORMULA .
+Therefore,
+FORMULA 
+Furthermore it follows that FORMULA  only if FORMULA .
+
+Case  FORMULA:
+In this case, we show the conditions under which a codeword FORMULA  satisfies the parity check, and show that under these conditions there does not exist any ambiguous codeword from FORMULA , i.e. from the previous case. The bit mappings are FORMULA  and FORMULA . In this case, FORMULA  and FORMULA . If FORMULA  is odd, then FORMULA  and therefore FORMULA  and therefore FORMULA  . If FORMULA  is even then FORMULA  and FORMULA .
+Therefore
+FORMULA 
+It follows that FORMULA  only if FORMULA  and FORMULA  is even. Recall that in the previous case, valid parity satisifying codewords only occurred if FORMULA . Therefore an ambiguity will not occur between two codewords FORMULA  and FORMULA  since they will be distinguishable in phase.
+
+Case  FORMULA:
+In this case, we show the conditions under which a codeword FORMULA  satisfies the parity check, and show that under these conditions there does not exist any ambiguous codeword from either FORMULA  or FORMULA , i.e. from the previous two cases. The bit mappings are FORMULA  and FORMULA . Here, FORMULA  and FORMULA . If FORMULA  is even, then FORMULA  and therefore FORMULA  and no ambiguity occurs. If FORMULA  is odd then FORMULA  and FORMULA . Therefore,
+FORMULA 
+It follows that FORMULA  only if FORMULA  and FORMULA  is odd. Clearly, these conditions are different to those to the previous two cases and therefore no ambiguities exist.
+
+TABLE 
+TABLE 
+TABLE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 
+FIGURE 

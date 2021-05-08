@@ -1,0 +1,929 @@
+
+GRB 051022 as a prototype dark burst
+Rol et al.
+GRB 051022: physical parameters and extinction of a prototype
+dark burst
+Evert Rol1,
+Alexander van der Horst2,
+Klaas Wiersema2,
+Sandeep K. Patel3,4,
+Andrew Levan5,
+Melissa Nysewander6,
+Chryssa Kouveliotou3,7,
+Ralph A. M. J. Wijers2,
+Nial Tanvir1,
+Dan Reichart8,
+Andrew S. Fruchter6,
+John Graham6,9,
+Jan-Erik Ovaldsen10,
+Andreas O. Jaunsen10,
+Peter Jonker11,12,13,
+Wilbert van Ham14,
+Jens Hjorth15,
+Rhaana L. C. Starling1,
+Paul T. O'Brien1,
+Johan Fynbo15,
+David N. Burrows16,
+Richard Strom2,17
+1Department of Physics and Astronomy, University of
+Leicester, University Road, Leicester, LE1 7RH, United Kingdom;
+evert.rol@star.le.ac.uk
+2Astronomical Institute, University of Amsterdam,
+Kruislaan 403, NL-1098 SJ Amsterdam, The Netherlands
+3National Space Science
+and Technology Center, 320 Sparkman Drive, Huntsville, AL-35805,
+USA
+4Optical Sciences Corporation, 6767 Old Madison Pike,
+Suite 650, Huntsville, AL, 35806
+5Department of Physics, University of Warwick,
+Coventry, CV4 7AL, UK
+6Space Telescope Science Institute, 3700 San Martin
+Drive, Baltimore, MD-21218
+7NASA Marshall Space Flight Center
+8Department of Physics and Astronomy, University of
+North Carolina at Chapel Hill, Campus Box 3255, Chapel Hill,
+NC-27599, USA
+9Department of Physics and Astronomy, Johns Hopkins
+University, 3400 North Charles St., Baltimore, MD-21218
+10Institute of Theoretical Astrophysics, University of
+Oslo, P.O.Box 1029, Blindern, N-0315 Oslo, Norway
+11SRON, Netherlands Institute for Space Research,
+Sorbonnelaan 2, NL-3584 CA Utrecht, The Netherlands
+12Harvard–Smithsonian Center for Astrophysics, 60
+Garden Street, Cambridge, MA-02138, Massachusetts, USA
+13Astronomical Institute, Utrecht University, P.O.Box
+80000, 3508 TA, Utrecht, The Netherlands
+14Department of Astrophysics, Radboud University
+Nijmegen, P.O.Box 9010, NL-6500 GL Nijmegen, The Netherlands
+15Dark Cosmology Centre, Niels Bohr Institute,
+University of Copenhagen, Juliane Maries Vej 30, DK-2100 Copenhagen
+Ø, Denmark
+16Penn State University, State College, PA 16801, USA
+17ASTRON, P.O. Box 2, NL-7990 AA Dwingeloo, Netherlands
+GRB 051022 was undetected to deep limits in early optical
+observations, but precise astrometry from radio and X-ray showed
+that it most likely originated in a galaxy at FORMULA . We
+report radio, optical, near infra-red and X-ray observations of
+GRB 051022. Using the available X-ray and radio data, we model the
+afterglow and calculate the energetics of the afterglow, finding it
+to be an order of magnitude lower than that of the prompt emission.
+The broad-band modeling also allows us to precisely define various
+other physical parameters and the minimum required amount of
+extinction, to explain the absence of an optical afterglow. Our
+observations suggest a high extinction, at least FORMULA  magnitudes in
+the infrared (FORMULA ) and at least 5.4 magnitudes in the optical (FORMULA ) in
+the host-galaxy restframe. Such high extinctions are unusual for
+GRBs, and likely indicate a geometry where our line of sight to the
+burst passes through a dusty region in the host that is not directly
+co-located with the burst itself.
+gamma rays: bursts — dust, extinction
+Introduction
+Dark gamma-ray bursts (GRBs) — at the most basic level those without
+optical afterglows — are a long-standing issue in GRB observations.
+Although in many cases the non-detection of an afterglow at optical
+wavelengths may simply be due to an insufficiently deep search, or one
+which takes place at late times {{cite:74cba95b-10c0-4558-8d52-6a7a54b2aae7}}, a
+subset of GRBs with bright X-ray afterglows remains undetected despite
+prompt and deep optical searches {{cite:3b9144aa-59a3-4eb7-9440-5e2c909f267f}}
+and directly implies suppression of the optical light.
+There are several plausible explanations for this, the most likely
+being that the burst is at high redshift, such that the Ly-alpha break
+has crossed the passband in question, or that there is high extinction
+in the direction of the GRB. Examples of both have been found, with a
+small number of GRBs at FORMULA  appearing as FORMULA  and FORMULA  band dropouts
+{{cite:eba28b34-59bb-45be-a0cc-35a74f14010c}}, {{cite:d8d5cc2e-2cf0-4640-b318-f295b13722a2}} and
+some GRB afterglows appearing very red at lower redshift, due to
+effects of extinction
+{{cite:3a59db52-c152-4818-a97c-089d556a6e19}}, {{cite:775af546-54fb-4fa1-ad64-908fc2562784}}.
+Identification of GRBs at very high redshifts is the key to using them
+as cosmological probes. The proportion of bursts exhibiting
+high dust extinction is also interesting from the point of view of
+estimating the proportion of star formation that
+is dust enshrouded, as well as understanding the environments
+which favor GRB production {{cite:b3ec7453-c00d-41f9-975a-df8e0d454499}}, {{cite:fe011016-c688-4d80-af28-d3bf3010abb2}}.
+The detection and follow-up of dark bursts at other
+wavelengths is essential, as it enables 1) the modeling of the
+afterglow, deriving estimates of the extinction and energies involved,
+potentially providing information about the direct burst environment, 2)
+pinpointing the burst position in the host, to enable late-time
+high resolution imaging and the detection of dust enhanced regions in
+the host, and 3) determination of the properties of the GRB host itself,
+such as the SFR and average host-galaxy extinction.
+The High Energy Transient Explorer 2 mission (HETE-2;
+{{cite:5c932213-6377-4cd9-9f2f-c58bb04fdb2e}}) detected and located an unusually
+bright gamma-ray burst {{cite:ebc310da-deb0-4c76-89a4-0cc897adcd05}}
+with its three main instruments, the French Gamma Telescope (FREGATE),
+the Wide field X-ray monitor (WXM) and the Soft X-ray Camera, (SXC), on
+October 22, 2005. A 2.5 arcminute localization was sent out within
+minutes, enabling prompt follow-up observations
+{{cite:dc882179-fecc-423e-988a-916f22b2945b}}, {{cite:399c6844-e68d-48b3-ac48-08ee0090fe4b}}; a
+target-of-opportunity observation was also performed with Swift.
+Details of the HETE-2 observations can be found in
+{{cite:39127288-e831-43b0-9a0f-a64323682873}}.
+The Swift observations resulted in the detection of a single fading
+point source inside the SXC error region, which was consequently
+identified as the X-ray afterglow of GRB 051022 {{cite:40c88624-7ae4-4217-98fe-a82f5d3f854e}}. However, optical and near infra-red (nIR)
+observations failed to reveal any afterglow to deep limits, while
+radio and millimeter observations with the Very Large Array (VLA), the
+Westerbork Synthesis Radio Telescope (WSRT) and the Plateau de Bure
+Interferometer detected the radio counterpart
+{{cite:9886b905-7a7b-47b7-ad98-f022f520cf16}}, {{cite:e2a6eced-7dc0-4a1e-ba1b-9c07fe3951e4}}, {{cite:5e416485-4823-4b51-8e0e-2fb186b11db2}}.
+The position coincides with its likely host galaxy
+{{cite:bf9502e3-4da8-401d-880a-7ffe0d01a063}} at a redshift of FORMULA 
+{{cite:d1506256-14fe-47d7-a10d-2939c1752222}}.
+In this paper, we describe our X-ray, optical, nIR and radio
+observations of [GRB 051022]GRB 051022. The outline of the
+paper is as follows: in Section  we describe our
+observations, data reduction and initial results. In Section
+, we analyze these results and form our
+afterglow picture, which is discussed in Section
+. Our findings are summarized in Section
+.
+In the following, we have used FORMULA  in
+our definition of FORMULA  and FORMULA . We assume a cosmology with
+FORMULA , FORMULA  and FORMULA . All quoted errors in this paper
+are 1 sigma (68%) errors.
+
+Observations and data reduction
+X-ray observations
+X-ray observations were performed with the Swift X-Ray Telescope
+(XRT) and the Chandra X-ray Observatory (CXO).
+The XRT started observing the afterglow of GRB 051022 3.46 hours after
+the HETE-2 trigger, for a total effective integration time of 137 ks
+between October 22 and November 6.
+Observations were performed in Photon Counting (PC) mode, the most
+sensitive observing mode. We reduced the data using the Swift software version 2.6 in the HEAsoft package version 6.2.0. Data were
+obtained from the quick-look site and processed from level 1 to level
+2 FITS files using the xrtpipeline tool in its standard
+configuration. The first two orbits (until FORMULA  seconds
+post burst) show pile-up and were therefore extracted with an annular
+rather than circular region, with an inner radius of 19 and 12 for orbits 1 and 2, respectively, and an outer radius of 71.
+Orbits 3 – 7 (FORMULA  – FORMULA  seconds) were
+extracted with a circular region of 71 radius, and later
+orbits were extracted using a 47 radius circle instead. The
+data for the light curve were extracted between channels 100 and 1000,
+corresponding to 1 and 10 keV, respectively; while the commonly used
+range is 0.3 – 10 keV, the large absorption prevents the detection of
+any data from the source below 1 keV. Otherwise, the procedure is
+similar to that described in {{cite:b472df4a-0e61-4b45-99ab-d3b5c9292867}}.
+Observations with the CXO started on October 25, 2005, 21:14:20, 3.34
+days after the HETE trigger, for a total integration time of 20 ks
+{{cite:8202b0f2-a80e-4ec1-ba9a-8324419c3d40}}. Data were reduced in a standard fashion
+with the CIAO package.
+We performed astrometry by matching X-ray sources with an optical
+FORMULA -band image that was astrometrically calibrated to the 2MASS
+catalog. Our CXO position is RA, Dec = 23:56:04.115, +19:36:24.04
+(J2000), with positional errors of 0.33 and 0.12 for
+the Right Ascension and Declination, respectively. This puts the
+afterglow within 0.5 of the center of its host galaxy.
+We modeled the XRT spectra with an absorbed power law in XSpec
+{{cite:88a9ae16-065d-4fb4-afef-7c04d6ee7275}}, using data from the first seven orbits. A
+good fit (FORMULA ) was obtained with a resulting
+spectral energy index of FORMULA  and excess absorption
+(at FORMULA  and for assumed Galactic abundances) of FORMULA  on top of the estimated
+Galactic absorption at this position (FORMULA , {{cite:6985e9a8-834a-4ab8-8fe3-4dc9656205f1}}). The CXO data are
+fully in agreement with these values, showing no change in the
+spectrum over time between 0.3 and 3.3 days after the burst. The
+absorption measured is far less than that measured by the HETE team in
+their prompt data, FORMULA  {{cite:39127288-e831-43b0-9a0f-a64323682873}}. This could
+indicate a change in absorption between the early (prompt)
+measurements and those at the time of the XRT observations. For the
+prompt emission spectrum, however, the values found by Konus-Wind
+{{cite:496c7b84-f255-40c1-877c-e60b1ecebbc4}} are rather different than those found
+by HETE-2, and may be the result of the lower energy cut-off for
+FREGATE compared to Konus-wind. Alternatively, the fact that these
+spectra are an average over the whole emission period may also result
+in incorrect model parameters. In the two last cases, the FORMULA  in the
+prompt emission could be as low as the XRT value and still produce an
+equally well fit, but with slightly different model parameters.
+For the XRT data, {{cite:fd03e572-94df-4812-8530-14ccc4afb5a4}} and
+{{cite:39127288-e831-43b0-9a0f-a64323682873}} find a value somewhat higher than our
+value (FORMULA  and FORMULA  respectively, when scaled by FORMULA ,
+{{cite:7786603d-f60c-49d4-8639-0fa8ee874297}}). This difference could be explained by
+a different count-binning or an updated XRT calibration used in our
+modeling.
+The XRT light curve count rates have been converted to 1–10 keV
+fluxes using the results from our spectral modeling and calculating
+the ratio of the flux and count rate at the logarithmic center of the
+orbits. The 1 – 10 keV CXO flux was derived using the actual spectral fit.
+A broken power law fit to the X-ray light curve results in FORMULA , FORMULA  and a break time of
+FORMULA  ks, or around 1.27 days. The difference between
+FORMULA  and FORMULA , and the fact that the spectral slope does
+not change across the break (the CXO measurement is past the break),
+are highly indicative that the observed break in the light curve is a jet
+break. In Section REF , we perform full
+modeling of the afterglow using the fireball model, indeed resulting
+in a jet-break time FORMULA  that agrees reasonably well with the break time as
+determined from only the X-rays. We point out that our value for
+FORMULA  is different than that cited in {{cite:feee57a9-d9c5-4e2d-ae20-bf557048b00d}},
+largely because their measurement of FORMULA  was based on a preliminary
+XRT light curve.
+
+Optical and near infra-red observations
+Observations were obtained in FORMULA  and FORMULA -band with the William
+Herschel Telescope (WHT) using the Auxiliary Port and the Prime Focus
+Imaging Camera, respectively, in FORMULA  with
+the Gemini South telescope using the GMOS instrument, in FORMULA  with
+the Wide Field Camera on the United Kingdom InfraRed Telescope
+(UKIRT), in FORMULA  with the DFOSC instrument on the Danish 1.54m
+telescope and in FORMULA  and FORMULA  with the Southern Astrophysical
+Research (SOAR) telescope using OSIRIS. The optical data were reduced
+in a standard fashion using the ccdproc package within the
+IRAF software {{cite:99123077-9f5c-40da-99f1-378f286c4368}}, whereas the SOAR data were
+reduced using the cirred package within IRAF. The UKIRT
+data were reduced using the standard pipeline reduction for WFCAM.
+Photometric calibration was done using the calibration provided by
+{{cite:6e146981-79ff-404f-9a3e-a8e0f93ae465}} for Johnson-Cousins filters. For the
+FORMULA  GMOS filters, we converted the
+magnitudes of the calibration stars provided by Henden to the Sloan
+filter system using the transformations provided by
+{{cite:feee335b-491a-46d3-8c93-daa3802902c0}}, and verified by the published GMOS zero
+points. The WHT FORMULA -band was calibrated using the spectroscopic
+standard star SP2323+157. Calibration of the infrared FORMULA 
+magnitudes was done using the 2MASS catalog
+{{cite:8891daf1-e8fe-4b33-add5-2b81177c4b6e}}.
+No variable optical source was found at the position of the X-ray and
+radio afterglow. For the early epoch images (FORMULA  day post burst), we
+estimated a limiting magnitude by performing image subtraction between
+this and a later image using the ISIS image subtraction package
+{{cite:6ec7d5e3-d682-4752-b243-f6fafd000faf}}. To this end, artificial low signal-to-noise
+sources were added onto the images, with a Gaussian PSF matched in
+size to the seeing (some artificial sources were added on top of
+existing sources, e.g. galaxies, some on the background sky). We
+determined our upper limit to be the point where we could retrieve
+50% of the artificial sources in the subtracted image. This assumes that
+the change in brightness of any point source on top of the host
+galaxy is sufficient to be seen in such a subtracted image. With the
+difference in time between the epochs, this seems a reasonable
+assumption (for example, for a source fading with a shallow power law like
+slope of FORMULA , the magnitude difference between the
+two WHT FORMULA -band observations is FORMULA  magnitudes).
+Photometry of the host galaxy has been performed using aperture
+photometry, with an aperture 1.5 times the seeing for each image,
+estimated from the measured FWHM of the PSF for point sources in the
+images.
+Table REF  shows the log of our optical/nIR
+observations, while Table REF  shows the upper limits
+for any optical/nIR afterglow.
+lccccc
+Overview of optical observations
+
+Start date 
+FORMULA  (average) 
+exposure time 
+filter 
+seeing 
+telescope & instrument
+
+(days) 
+(seconds) 
+
+(arcsec) 
+
+2005-10-22T23:25:14  0.4287  1800  FORMULA   0.8  WHT + API
+2005-10-23T00:22:33  0.4684  1620  FORMULA   1.2  SOAR + OSIRIS
+2005-10-23T00:56:00  0.4917  1620  FORMULA   1.3  SOAR + OSIRIS
+2005-10-23T00:48:03  0.5144  1920  FORMULA   0.6  Gemini South + GMOS
+2005-10-23T01:07:53  0.5288  1920  FORMULA   0.6  Gemini South + GMOS
+2005-10-23T01:27:46  0.5426  1920  FORMULA   0.5  Gemini South + GMOS
+2005-10-23T06:31:03  0.7525  720  FORMULA   1.4  UKIRT + WFCAM
+2005-10-23T06:36:39  0.7526  360  FORMULA   1.3  UKIRT + WFCAM
+2005-10-23T06:47:59  0.7604  360  FORMULA   1.3  UKIRT + WFCAM
+2005-10-23T21:15:57  1.3389  1200  FORMULA   1.0  WHT + API
+2005-10-24T09:35:10  1.8467  720  FORMULA   0.3  UKIRT + WFCAM
+2005-10-25T01:34:03  2.5181  1602  FORMULA   1.3  SOAR + OSIRIS
+2005-10-25T02:13:18  2.5454  720  FORMULA   1.2  SOAR + OSIRIS
+2005-10-25T02:22:02  2.5698  1920  FORMULA   1.1  Gemini South + GMOS
+2005-10-25T02:39:59  2.5792  1440  FORMULA   1.2  Gemini South + GMOS
+2005-10-26T00:36:58  3.4785  1800  FORMULA   1.4  WHT+PFIP
+2005-10-26T02:48:06  3.5695  600  Gunn FORMULA   1.4  DK1.54m + DFOSC
+2005-10-26T03:23:35  3.5942  600  FORMULA   1.9  DK1.54m + DFOSC
+2005-10-27T01:01:04  4.4952  600  FORMULA   2.3  DK1.54m + DFOSC
+2005-10-27T02:59:20  4.5773  600  FORMULA   1.6  DK1.54m + DFOSC
+2005-10-27T02:00:48  4.5367  600  FORMULA   1.8  DK1.54m + DFOSC
+2005-10-28T02:18:38  5.5491  600  FORMULA   1.4  DK1.54m + DFOSC
+2005-10-30T02:32:59  7.5590  600  FORMULA   1.8  DK1.54m + DFOSC
+2005-10-30T04:18:30  7.6323  600  FORMULA   1.8  DK1.54m + DFOSC
+2005-10-30T01:33:57  7.5180  600  FORMULA   1.4  DK1.54m + DFOSC
+2005-10-31T03:19:05  8.5910  600  FORMULA   1.0  DK1.54m + DFOSC
+2005-10-31T01:03:40  8.4970  600  FORMULA   1.0  DK1.54m + DFOSC
+2005-10-31T02:10:02  8.5431  600  FORMULA   1.0  DK1.54m + DFOSC
+2005-11-01T01:52:57  9.5312  600  FORMULA   0.9  DK1.54m + DFOSC
+2005-11-02T02:04:47  10.539  600  FORMULA   1.2  DK1.54m + DFOSC
+2005-11-03T01:10:34  11.502  600  FORMULA   1.2  DK1.54m + DFOSC
+2005-11-07T01:25:30  15.512  600  Gunn FORMULA   1.4  DK1.54m + DFOSC
+2005-11-08T01:40:48  16.523  600  Gunn FORMULA   1.4  DK1.54m + DFOSC
+ccccc
+Limiting magnitudes
+
+filter 
+limiting magnitudea 
+FORMULA  (average) 
+frequency 
+specific fluxb
+
+
+days 
+Hz 
+FORMULA Jy
+
+FORMULA   FORMULA   0.4917  FORMULA    FORMULA
+FORMULA   FORMULA   0.4684  FORMULA    FORMULA
+FORMULA   FORMULA   0.4287  FORMULA    FORMULA
+FORMULA   FORMULA   0.5426  FORMULA    FORMULA
+FORMULA   FORMULA   0.5288  FORMULA    FORMULA
+aSee text for the definition of the limiting
+magnitude. bSpecifc fluxes have been corrected for a
+Galactic extinction value of FORMULA 
+{{cite:481f1c8b-db81-4032-85c8-40decfc39f30}}, and converted from magnitudes using
+the calibration by {{cite:a2642541-fa77-4373-87ce-7dd2efb74ab3}} for the FORMULA 
+filters; the other filters are on the magnitude AB-system
+{{cite:03eeffde-1ccc-46f7-8a8c-58360757961d}}
+
+Radio observations
+Radio observations were performed with the WSRT at 8.4 GHz, 4.9 GHz
+and 1.4 GHz. We used the Multi Frequency Front Ends
+{{cite:c9f9e95b-4631-4e65-a238-37f2e86c964b}} in combination with the IVC+DZB back
+endSee sect. 5.2 at
+http://www.astron.nl/wsrt/wsrtGuide/node6.html in continuum mode,
+with a bandwidth of 8x20 MHz. Gain and phase calibrations were
+performed with the calibrators 3C 286 and 3C 48, although at one 8.4
+GHz measurement 3C 147 was used. Reduction and analysis were performed
+using the MIRIAD software
+packagehttp://www.atnf.csiro.au/computing/software/miriad.
+The observations are detailed in Table REF . In our
+modeling described in section REF  we
+have also used the VLA radio detection at 8.5 GHz from
+{{cite:9886b905-7a7b-47b7-ad98-f022f520cf16}}.
+lcccc
+Overview of WSRT radio
+observations
+
+Start date 
+FORMULA  (average) 
+integration time 
+frequency 
+specific flux
+
+(days) 
+(hours) 
+(GHz) 
+(FORMULA Jy)
+2005-11-04T18:14:24  13.37  4.0  8.5  38 FORMULA  132
+2005-11-08T14:19:41  17.19  7.0  8.5  28 FORMULA  97
+2005-10-23T15:20:10  1.19  5.0  4.9  281 FORMULA  32
+2005-10-24T15:17:17  2.22  6.2  4.9  342 FORMULA  34
+2005-10-25T15:12:58  3.30  5.4  4.9  143 FORMULA  30
+2005-10-28T18:33:08  6.40  8.5  4.9  91 FORMULA  28
+2005-10-30T18:00:00  8.32  5.8  4.9  138 FORMULA  28
+2005-11-01T18:00:00  10.38  8.9  4.9  169 FORMULA  28
+2005-11-04T17:31:12  13.37  4.6  4.9  70 FORMULA  34
+2005-10-25T15:56:10  3.33  5.4  1.4  8 FORMULA  78
+
+Analysis
+Broadband modeling
+We have performed broadband modeling of the X-ray and radio
+measurements, using the methods presented in {{cite:3bc834b8-35dd-408e-adc0-3dbe22ce6791}}. In our modeling we assume a purely
+synchrotron radiation mechanism.
+The relativistic blastwave causing the afterglow accelerates electrons
+to relativistic velocities, which gives rise to a broadband spectrum
+with three characteristic frequencies: the peak frequency FORMULA ,
+corresponding to the minimum energy of the relativistic electrons that
+are accelerated by the blastwave, the cooling frequency FORMULA ,
+corresponding to the electron energy at which electrons lose a
+significant fraction of their energy by radiation on a timescale that
+is smaller than the dynamical timescale, and the self-absorption
+frequency FORMULA , below which synchrotron self-absorption produces
+significant attenuation. The broadband spectrum is further
+characterized by the specific peak flux FORMULA  and the slope FORMULA  of the electron
+energy distribution.
+The dynamics of the relativistic blastwave determine the temporal
+behavior of the broadband synchrotron spectrum, i.e. the light curves
+at given frequencies. At first the blastwave is extremely
+relativistic, but is decelerated by the surrounding medium. When the
+Lorentz factor FORMULA  of the blastwave becomes comparable to
+FORMULA , where FORMULA  is the opening angle of the jet, the
+jet starts to spread sideways. At that time, FORMULA , the temporal
+behavior of the broadband spectrum changes {{cite:7786211e-40ff-417e-a834-6efa523c1e11}}.
+We fit our data to six parameters: FORMULA , FORMULA , FORMULA , FORMULA , FORMULA  and
+FORMULA . From these parameters and the redshift of the burst, FORMULA , we can find the physical parameters governing the blastwave and
+its surroundings: the blastwave isotropic equivalent energy FORMULA , the
+jet opening angle FORMULA , the collimation corrected blastwave
+energy FORMULA , the fractional energy densities behind the relativistic
+shock in electrons and in the magnetic field, FORMULA  and FORMULA  respectively, and the density of the surrounding medium. The meaning
+of the latter parameter depends on the density profile of the surrounding
+medium. For a homogeneous circumburst medium, we simply determine the density
+FORMULA . For a massive stellar wind, where the density is proportional to
+FORMULA  with FORMULA  the distance to the GRB explosion center, we
+obtain the parameter FORMULA , which is the ratio of the mass-loss
+rate over the terminal wind velocity of the GRB progenitor.
+Our modeling results are shown in Table REF , for
+both the homogeneous external medium and the stellar wind environment.
+The light curves for the best fit parameters are shown in Figure
+REF . We have performed Monte Carlo simulations
+with synthetic data sets in order to derive accuracy estimates of the
+best fit parameters, which are also given in the table. It is evident
+from the results that our six fit parameters are reasonably well
+constrained in both cases for the circumburst medium. The derived
+physical parameters are also well constrained, except for FORMULA  and
+FORMULA . The values we find for both the isotropic and the collimation
+corrected energy, are similar to those found for other bursts; this is
+also true for FORMULA . See e.g. {{cite:78a16b44-0492-40b3-a1b3-59700500fd89}} and
+{{cite:83548c09-95da-4a48-9eaf-a782bc62c20c}}. The jet opening angle and the density of
+the surrounding medium are quite small, but both not unprecedented.
+The jet-break time FORMULA  is somewhat smaller than estimated in
+Section REF , but both estimates have relatively
+large errors, likely because of the lack of (X-ray) data around the
+jet-break time.
+With the absence of optical light curves, it is not possible to
+discriminate between the two different circumburst media. This is
+mainly due to the fact that the X-ray band lies above both FORMULA  and
+FORMULA , in which case the slopes of the light curves do not depend on
+the density profile of the circumburst medium (even at 0.15 days,
+back-extrapolating FORMULA  from Table REF  results in
+its value being below the X-ray band). The FORMULA  is somewhat
+better for the stellar wind case, but the homogeneous case cannot be
+excluded. From the X-ray light curve, however, one can conclude that
+the density profile of the medium does not change between
+approximately 0.15 and 12 days after the burst. If there were a
+transition from a stellar wind to a homogeneous medium, the X-ray flux
+has to rise or drop significantly, unless the densities are the
+fine-tuned at the transition point {{cite:c78c20a2-5c17-48a7-ad7b-9049e680d945}}. From
+the fact that the medium does not change during the X-ray
+observations, one can draw conclusions on the distance of the wind
+termination shock of the massive star: if one assumes that the medium
+is already homogeneous at FORMULA  days, the wind termination
+shock position is at FORMULA  (0.32 pc); if the circumburst medium is a
+stellar wind up to FORMULA  days after the burst, FORMULA  (3.7 pc).
+lll
+Results of broadband modeling for both a homogeneous
+external medium and a massive stellar wind. The best fit
+parameters are shown together with accuracy estimates from Monte
+Carlo simulations with synthetic data sets. The characteristic
+frequencies of the synchrotron spectrum and the specific peak flux are
+given at FORMULA .
+
+
+
+Parameter 
+Homogeneous 
+Stellar wind
+
+FORMULA (FORMULA ) 
+FORMULA  Hz
+ FORMULA  Hz
+FORMULA (FORMULA )
+ FORMULA  Hz
+ FORMULA  Hz
+FORMULA (FORMULA )
+ FORMULA  Hz
+ FORMULA  Hz
+FORMULA (FORMULA )
+ FORMULA  FORMULA Jy
+ FORMULA  FORMULA Jy
+FORMULA 
+ FORMULA 
+  FORMULA
+FORMULA  FORMULA  days
+FORMULA  days
+FORMULA  FORMULA  deg
+ FORMULA  deg
+FORMULA  FORMULA  erg
+ FORMULA  erg
+FORMULA  FORMULA  erg
+ FORMULA  erg
+FORMULA  FORMULA 
+  FORMULA
+FORMULA  FORMULA 
+  FORMULA
+FORMULA 
+ FORMULA   FORMULA
+ FORMULAFORMULA 
+   FORMULA
+FORMULA  FORMULA 
+  FORMULA
+aThe parameter FORMULA  is a measure
+for the density in the case of a stellar wind environment, being
+the ratio of the mass-loss rate over the terminal wind velocity,
+and here given in units of FORMULA  Solar masses per year divided
+by a wind velocity of 1000 km/s {{cite:3bc834b8-35dd-408e-adc0-3dbe22ce6791}}.
+figure:resultsall
+FIGURE 
+
+The non-detection of the optical afterglow
+It is quickly seen that GRB 051022 falls into the category of the
+so-called “dark bursts”. Using, for example, the quick criterion
+proposed by {{cite:e5c40ca6-d042-4d0b-9c8c-1d5e7bdaf788}}, we find FORMULA  at 12.7 hours after the burst using the Gemini FORMULA 
+band observation, well below the proposed limit of FORMULA .
+A more precise criterion would combine the available spectral and
+temporal parameters of the X-ray afterglow, allow all valid
+combinations, and from that infer the range of possible optical
+magnitudes from the X-rays {{cite:ec4bd85c-0d38-404d-a948-8d9ecc735805}}.
+This is, in fact implied in our previous modeling: the modeled
+specific fluxes corresponding to the band and epoch of our optical and
+nIR upper limits are listed in Table REF  (see
+also Table REF ).
+While the values in this table are given for local extinction, not
+K-corrected to FORMULA , it is
+immediately obvious that our FORMULA -band observations put a
+stringent constraint on the required extinction directly surrounding
+the burst.
+cccccccc
+Upper limits compared to model specific flux calculations. The
+inferred lower limits on the extinction are given in the observers
+frame. The FORMULA  values are given for a Galactic extinction curve
+(FORMULA ), and are for illustrative purposes; see the
+comments at the end of Section REF .
+
+
+filter 
+upper limit 
+3chomogeneous density profile 
+3cstellar wind density profile
+
+
+modeled specific flux 
+extinction 
+FORMULA  
+modeled specific flux 
+extinction 
+ FORMULA
+
+(FORMULA Jy) 
+(FORMULA Jy) 
+(mag.)
+ 
+(FORMULA Jy) 
+(mag.)
+FORMULA   FORMULA   FORMULA   2.84  7.74  FORMULA   2.31  6.29
+FORMULA   FORMULA   117  2.44  2.71  FORMULA   1.95  2.16
+FORMULA   FORMULA   103  3.97  2.58  FORMULA   3.52  2.29
+FORMULA   FORMULA   FORMULA   5.97  2.17  FORMULA   5.41  1.97
+FORMULA   FORMULA   FORMULA   4.40  2.97  FORMULA   3.83  2.59
+To estimate the amount of local extinction in the host galaxy, we have
+modeled the nIR to X-ray spectrum around 0.5 days after the burst,
+considering 3 different extinction curves: those of the Milky Way
+(MW), the Large Magellanic Cloud (LMC) and the Small Magellanic Cloud
+(SMC), from {{cite:032c8862-dd7d-4198-b390-ca76fe24bb74}}, with FORMULA  of 3.08, 3.16 and
+2.93, respectively.
+For this, we used the unabsorbed XRT flux obtained from the spectral
+fit to orbits 3 – 7 (which do not contain piled-up data), and fixed
+the energy spectral slope in the X-rays at FORMULA  (also from the
+X-ray spectral fit). The optical specific fluxes were scaled to the
+logarithmic mid-observation time of the X-ray observations with an
+assumed FORMULA  decline. This estimated optical decay is
+derived from the pre-break X-ray decay value, allowing for the cooling
+break between the two wavelength regions, and averaging the two
+possible values for FORMULA  (-0.25 and
+0.25). We can further put the most stringent constraint on the broken
+power law spectral shape, by setting the spectral break just below the
+X-rays, at FORMULA  Hz, which follows from our previous
+broad-band modeling. Our results indicate that, for the aforementioned
+extinction curves, a local extinction of FORMULA  (for all
+three extinction curves) is necessary to explain the FORMULA -band upper
+limit.
+We can relate the resulting FORMULA  from our X-ray spectral fits to any
+local FORMULA , using the relations found in {{cite:15e23e31-90a9-406c-b068-b04769a8cc6e}},
+{{cite:dcfc8a21-73e8-43b3-b045-b42f181c1051}} and {{cite:a32995c6-44f3-49a4-beab-218aafb8bd56}} for
+FORMULA , and adjusting the metallicity in our X-ray absorption
+model accordingly. We obtain FORMULA  and 0.84 for a MW, LMC
+and SMC extinction curve respectively, with the MW value showing the
+best agreement with our findings for optical extinction (both
+{{cite:39127288-e831-43b0-9a0f-a64323682873}} and {{cite:3bb45b14-cc01-45db-a3e3-054ab95c4ed0}}
+find FORMULA  values roughly twice as high here, for a MW extinction
+curve only, since their FORMULA  estimate is larger than ours). This,
+obviously, depends on the assumption that the MW (or otherwise, LMC or
+SMC) extinction curves are valid models to compare with our observed
+data here. Since these data happen to originate from just one sight
+line in a galaxy, this may very well not be the case. Further, even
+if the extinction curve is correct, the actual value of FORMULA  may be
+rather different for the host galaxy. Finally, the FORMULA  – FORMULA  relations show a rather large scatter, especially at higher column
+densities, nor is the FORMULA  always derived using X-ray spectroscopy.
+Our above results are therefore approximations, which are useful to
+compare with other (GRB host) studies, but should be taken with the
+necessary caution.
+
+The host galaxy of GRB 051022
+ccc
+Measured host galaxy magnitudes
+
+filter 
+magnitude 
+magnitude error
+
+FORMULA   18.40  0.04
+FORMULA   18.36  0.09
+FORMULA   19.42  0.09
+FORMULA   19.92  0.05
+FORMULA a  21.41  0.05
+FORMULA   21.30  0.04
+FORMULA   21.77  0.01
+FORMULA   22.04  0.01
+FORMULA   21.84  0.09
+FORMULA   22.30  0.04
+FORMULA   22.75  0.02
+FORMULA   FORMULA  21.3b  aAB magnitude
+b5-FORMULA  upper limit
+Using the optical data described above, we fit the SED of the host of
+GRB 051022 using the HyperZ programSee
+http://webast.ast.obs-mip.fr/hyperz developed by
+{{cite:394423cc-ac72-436a-9954-0a9d49a9ea22}}. The photometry of the host has been
+performed using apphot within IRAF, in an aperture 1.5
+times the estimated seeing in the different exposures. The results are
+reported in Table REF  (see also
+{{cite:61d28418-f291-43da-a694-2b9fac70d937}}). The range of photometric
+magnitudes reported in this paper provides one of the most complete
+broadband optical datasets of a GRB host galaxy to date. We fit using
+the eight synthetic galaxy templates provided within HyperZ at the
+redshift of the host, and find that the host galaxy is a blue compact
+galaxy of type irregular, with a dominant stellar population age of
+FORMULA  Myr, similar to other long GRB hosts
+{{cite:cde2f619-6403-4098-b3fa-f2ac2c4eaf27}}. A moderate amount of extinction
+of FORMULA  mag is required to fit the SED, with an SMC-type
+extinction curve providing a best fit, and the luminosity of the host
+is approximately 1.5 FORMULA  (assuming FORMULA ); these findings
+are in full agreement with {{cite:1b4955a4-862b-486e-b8b9-a08fa0bec3db}}. The
+amount of extinction in the line of sight towards the GRB required to
+suppress the optical light of the afterglow to the observed limits is
+clearly higher than the FORMULA  value found from the host SED: FORMULA  magnitudes towards the GRB, estimated from blueshifting our
+measured (observer frame) FORMULA  band extinction to FORMULA .
+The host galaxy SED extinction is, however, an average value derived
+from the integrated colors of the host.
+The host of GRB 051022 is located in a field crowded with galaxies of
+various Hubble types. We perform photometry on several galaxies close
+to the GRB host (within 1 arcminute) to investigate the possibility
+that the high star formation rate seen in the optical
+({{cite:1b4955a4-862b-486e-b8b9-a08fa0bec3db}} report an SFR of
+FORMULA MFORMULA yrFORMULA ) is induced by a recent interaction
+with one of the neighboring galaxies. As formation of high mass stars
+has also been observed to occur in dusty regions in merging systems
+{{cite:2d9c0fe7-83a5-436b-af05-f9b85112a2f9}}, this could help to explain the
+excess optical extinction towards GRB 051022. We performed HyperZ
+fits to these galaxies, and find that none of them is well fit by a
+photometric redshift of FORMULA . Particularly the two galaxies
+closest to the GRB host galaxy are not compatible with a redshift 0.8,
+and show best fits with photometric redshifts of FORMULA  – 0.25. Out of the sample of six galaxies close to the GRB host
+we find that four have best-fit photometric redshifts in the range
+0.20 – 0.25, making it unlikely that a possible overdensity of
+galaxies near the host galaxy is due to a cluster or galaxy group at
+the host redshift.
+
+Discussion
+The issue of non-detected (“dark”) GRB afterglows has received
+significant interest ever since the discovery of the first GRB
+afterglow, starting with the non-detection of GRB 970828 to very deep
+limits {{cite:3b9144aa-59a3-4eb7-9440-5e2c909f267f}}, {{cite:1975e9a1-3cd1-48d3-a663-6c1e7134cd5c}}. For this
+particular afterglow, its non-detection has been attributed to a
+dust-lane in its host galaxy {{cite:cc59fafe-c052-46f5-b4d9-2ea31abb597d}}. Dust
+extinction as the cause of the non-detection of the optical afterglow
+has been inferred in the case of several other GRBs, notably those
+with a precise X-ray or radio position, where one can pinpoint the
+afterglow position on top of its host galaxy (e.g. GRB 000210,
+{{cite:3ca291f4-7fd2-4d38-a6d0-1b64af0f7f5f}}).
+Optical drop-outs due to high redshift will also result in dark
+bursts, but are harder to confirm, since it would require at least one
+detection in a red band, to detect the LyFORMULA  break. Otherwise, it
+becomes indistinguishable from dust extinction.
+Other explanations of afterglow non-detections include the intrinsic
+faintness of the afterglow. For HETE-2 detected GRBs, this has been
+inferred for e.g. GRB 020819 {{cite:bd5b695a-028c-4696-b614-0f7590388f2f}}. For
+Swift bursts, where rapid and accurate X-ray positions are often
+available, this is a major cause of non-detections
+{{cite:7470ad3e-f278-477e-bd91-84d2e119b8dc}}, largely attributed to a higher average
+redshift.
+In our case here, the host galaxy has been detected at a relatively
+modest redshift, which almost automatically points to the dust
+extinction scenario. The radio and X-ray detections even allow us to
+accurately model the necessary amount of extinction between us and the
+GRB.
+The burst environment
+The issue of the role of dust extinction in the lines of sight towards
+GRBs is still very much an open one. While clear signs of dust
+depletion are seen in several afterglow spectra, the FORMULA  values that
+are predicted from these depletion measures are generally much higher
+than the observed ones, that can be found from the continuum shape
+{{cite:6f98adcf-17ce-4fd8-8961-eccf6d80e238}}. Recently, selected samples of GRB
+afterglows were homogeneously analyzed for X-ray and optical
+extinction, showing dust to gas ratios different from Galactic and
+Magellanic cloud values
+{{cite:c7d594cd-72d1-4890-a9c3-e966b1a1ce4b}}, {{cite:db9d891a-cbd3-4aba-9ed8-cf270239b8ac}}.
+{{cite:2f07ecea-a0c3-49fc-bf6f-bdc75129abda}} and {{cite:5a885d95-446b-47f9-b0c9-9cf554b831a1}} had
+already found dust (optical) to gas (X-ray) ratios to be lower than
+the Galactic value (in all cases, however, there is a bias in
+these samples to optically and X-ray detected afterglows). Comparison
+of neutral hydrogen columns and metallicities of afterglow lines of
+sight with X-ray extinction values {{cite:f1d14f30-f5fa-4cdf-a10b-818a9a86cded}}
+showed that the absorption probed by these two wavelength regimes is
+generally located at different positions in the host. In all these
+cases there may be significant biases against bursts with low apparent
+magnitudes, preventing optical spectroscopy, which are hard to
+quantify.
+In the case of GRB 051022  there is a significant discrepancy between
+the extinction for the host as a whole and that along the line of
+sight to the burst, or at least along our line of sight towards the
+burst. This is perhaps not too surprising if one assumes, for example,
+that the burst occurred inside a Giant Molecular Cloud (GMC).
+{{cite:51248fd4-1111-46fb-80ac-9a3c07c9b4e5}} compared the GRB FORMULA (HI) distribution
+to that of modeled GRBs located inside Galactic-like GMCs. They found
+that the two distributions are incompatible, and possibly GRBs are
+more likely to occur inside clouds with a lower FORMULA (HI), or
+alternatively, outside the actual GMC. (Note that their study
+concentrates on bursts with FORMULA , where the Ly-FORMULA  absorption
+is visible in the optical wavebands; it is also biased towards
+optically detected afterglows). A GMC could therefore actually be
+positioned in front of the GRB, where the required optical and X-ray
+extinction is easily achieved. This agrees with the findings by
+{{cite:242bc541-7483-40d8-8649-5f4ad8fdeddd}}, who analyzed several
+GRB-Damped Lyman Alpha spectra and from observed depletion levels
+infer that the gas is not located directly near the GRB (e.g. its
+molecular cloud) but further out. The specific case of GRB 060418
+confirmed this through time-resolved high resolution spectroscopy,
+showing that the observed metal lines originate past 1.7 kpc from the
+burst itself {{cite:2af4d77a-ef31-47fa-a17d-b187f496397f}}. In fact, X-ray radiation
+from the burst could easily destroy grains out to 100 pc
+{{cite:b53b95e0-660c-4d8e-a60c-9e5864841cdb}}, {{cite:169893c4-0010-40ff-b8a6-e48c2e26edef}}, {{cite:c77b330c-be80-4dfb-9545-dbe63aaa1fd1}}
+and permit the afterglow radiation to penetrate the surrounding
+molecular cloud. Dust extinction is therefore likely to occur further
+out, perhaps to several kiloparsecs.
+It is interesting to find a non-SMC type of extinction curve from the
+combination of X-ray and optical absorption (though not completely
+ruled out): in most cases modeled, an SMC extinction curve fits the
+optical–X-ray spectra best
+{{cite:c7d594cd-72d1-4890-a9c3-e966b1a1ce4b}}, {{cite:db9d891a-cbd3-4aba-9ed8-cf270239b8ac}}, presumably
+attributable to the absence of the 2175 Å feature
+{{cite:eb130ef2-f422-4cb8-9fac-91cac331d7ed}} and the low dust to gas ratio. Our
+findings indicate that the extinction along the line of sight to the
+GRB will generally be different than one of the three assumed
+extinction curves. Local small scale density variations in clouds,
+such as found by from infrared studies in the Taurus region and from
+simulations {{cite:fef4865e-859d-475c-969e-b6a440c80982}}, could cause this fairly
+easily.
+
+Energetics
+Our modeling provides us with a detailed set of parameters of the
+afterglow energetics, including FORMULA , the energy of the afterglow.
+For the prompt emission energy, we use the data from the Konus-Wind
+measurements {{cite:496c7b84-f255-40c1-877c-e60b1ecebbc4}}. We calculate a prompt
+isotropic energy of FORMULA  erg in
+the 20 keV – 20 MeV observer frame, and, by applying a K-correction
+{{cite:c590a72d-24e4-4cfc-833e-8832243b3ceb}}, FORMULA  erg in the 1 – FORMULA  keV
+rest frame. The collimation corrected energy depends on the assumed
+density profile of the surrounding medium: for a homogeneous medium, we
+obtain FORMULA  erg, and for a wind-like
+medium, FORMULA  erg. With FORMULA  keV in the burst rest frame, we find that the
+FORMULA  – FORMULA  relation {{cite:1d9a7426-b2e8-4fa7-9faa-7e0951c93601}}
+somewhat underestimates the FORMULA  when calculated from FORMULA :
+FORMULA  keV for a homogeneous medium, and FORMULA 
+keV for a wind medium (the difference between our chosen cosmology and
+that used by {{cite:1d9a7426-b2e8-4fa7-9faa-7e0951c93601}} amounts to only a
+0.3% difference in FORMULA ). These estimates, however, come with a few
+caveats: 1) the FORMULA  from the Konus-Wind data is calculated
+using an exponential cut-off model, not the Band function
+{{cite:4a2f5ad0-4560-4120-8412-9358b8592cf9}}. Since the Band function includes the case
+of an exponential cut-off model (with FORMULA , this should,
+however, pose no problem in estimating the actual FORMULA ), 2)
+our break time, and therefore the jet-opening angle, are calculated
+from the full modeling of the afterglow, which effectively means
+derived from the available X-ray and radio data. Further, the original
+Ghirlanda relation was derived using optical break times. Recent
+efforts show that estimating jet-break times from X-ray light curves
+may not lead to the same results
+{{cite:ee8bca31-b4db-4d1b-b05d-d05efcea329a}}, and 3) the
+relatively large error on the jet opening angle estimate allows for a
+relatively large range in collimation corrected energies. We have
+simply used here our best value, but an FORMULA  value of 1498 keV
+derived from FORMULA  can still be accommodated within our errors. (We
+note that, with a different FORMULA  estimate and an incorrect value
+for the jet-break time, {{cite:39127288-e831-43b0-9a0f-a64323682873}} still found
+their results to lie on the Ghirlanda relation). The break time
+problem can be avoided by looking only at the FORMULA  – FORMULA  relation {{cite:b29d70e5-fc00-4153-9187-8878f2dc2503}}, {{cite:3b63ad72-12c4-4dcd-aa83-4549a025d6e4}}. From this,
+we estimate FORMULA  keV, nicely in agreement with the
+value found directly from the spectra fit.
+Comparing the prompt emission energy (FORMULA ) and afterglow blast
+wave kinetic energy (FORMULA ), we find their ratio to be FORMULA  in the case of a wind-like circumburst medium, while for
+a homogeneous medium, FORMULA . These ratios are
+similar to those found for other bursts {{cite:65426757-7f0e-4fd7-9a08-31da3f65e663}}.
+GRB 051022 is also one of the brightest bursts observed by HETE, with a
+prompt 30–400 keV fluence of FORMULA  erg cmFORMULA 
+{{cite:39127288-e831-43b0-9a0f-a64323682873}}. In fact, compared to the sample of 35
+FREGATE bursts analyzed by {{cite:50a73565-588b-44f8-8ead-849c802d5b3c}}, GRB 051022 has
+the largest fluence, even topping the relatively close-by GRB 030329
+({{cite:81f5ac91-3ab8-4458-a7da-a9a901df1993}}; note that for GRB 051022, its
+redshift is close to the median redshift of HETE-2 detected GRBs and
+therefore distance effects will play a very minor role).
+{{cite:ec4bd85c-0d38-404d-a948-8d9ecc735805}} noted this potential correlation of fluence
+with the non-detection of a GRB afterglow for the small subset of
+genuinely dark bursts in their sample: the truly dark bursts all have
+a much higher than average fluence (although this is for a relatively
+small sample only). Potentially, this could point to an external
+origin for the prompt emission, instead of being due to internal
+shocks: a large amount of dust may result in more matter that will
+radiate, while at the same time the radiation will be suppressed at UV
+and optical wavelengths. This would indicate an origin of the
+extinction quite close to the burst instead, in contrast to previous
+findings for other bursts, as discussed in Section
+REF . These latter bursts, however, were all
+optically selected to obtain spectroscopy, and may therefore show
+different surroundings than GRB 051022. Unfortunately, with the small
+sample size of genuine dark bursts a firm conclusion on this
+correlation is not possible, but remains something to watch for in
+future dark bursts.
+
+Conclusions
+GRB 051022 is a prototypical dark burst, with the local extinction
+exceeding FORMULA  magnitudes in FORMULA  and 5.4 magnitudes in FORMULA , in the
+host-galaxy restframe, with the exact limits depending on the
+circumburst density profile. The extinction curve derived from an
+X-ray – optical spectral fit points towards a Galactic type of
+extinction curve, although it is likely that this is more or less a
+coincidence: the host galaxy itself is best modeled with an SMC-like
+extinction curve, with a modest amount of extinction, FORMULA  mag. The large optical absorption towards the afterglow of
+GRB 051022 is therefore probably the effect of an unfortunate
+position in the host where the line of sight crosses dense regions
+within the host.
+The X-ray and radio afterglow data allow for a full solution of the
+blastwave model, although we unfortunately cannot distinguish between
+the density profile (homogeneous or wind-like) of the circumburst
+medium. We estimate a collimation-corrected energy in the afterglow
+emission of 0.92 – 2.3 FORMULA  erg, while the energy in
+prompt emission (1 – FORMULA  keV rest frame) is 8.4 – 18 FORMULA  erg. Aside from the large optical extinction, the afterglow
+otherwise appears as an average afterglow, with no outstanding
+properties. The potentially interesting point here is that the
+30-400 keV fluence of the prompt emission is one of the largest ever
+detected in the HETE-2 sample.
+In the era of Swift GRBs, dust-extincted bursts can actually be
+found in optical/nIR thanks to the rapid availability of precise
+positions: examples are found where the burst is relatively bright
+early on at optical/nIR wavelengths, while the afterglow proper (post
+few hours) often can go undetected
+{{cite:7e5a74b6-cc80-4473-9e19-d329f21dd6c6}}, {{cite:9515cab1-28c2-45d6-b0ad-6906805a5c35}}.
+This allows targeted follow-up of such dark bursts, i.e. determining
+the host galaxy (and the bursts precise position therein) and a
+redshift measurement. In our case, a precise CXO and radio position
+pinpointed the host galaxy, but such data may not always be available.
+High resolution late-time observations of the host, at the location of
+the GRB, may then reveal whether the burst indeed occurred inside a
+dense host region.
+We thank the referee for a careful reading of the manuscript
+and constructive comments. We thank Kim Page and Andy Beardmore for
+useful discussions regarding the XRT data analysis. ER and RLCS
+acknowledge support from PPARC. KW and RAMJW acknowledge support of
+NWO under grant 639.043.302. The authors acknowledge funding for the
+Swift mission in the UK by STFC, in the USA by NASA and in Italy by
+ASI. The Dark Cosmology Centre is funded by the Danish National
+Research Foundation. The William Herschel Telescope is operated on
+the island of La Palma by the Isaac Newton Group in the Spanish
+Observatorio del Roque de los Muchachos of the Instituto de
+Astrofísica de Canarias. The United Kingdom Infrared Telescope
+is operated by the Joint Astronomy Centre on behalf of the U.K.
+Particle Physics and Astronomy Research Council. The data reported
+here were obtained as part of the UKIRT Service Programme. The
+Westerbork Synthesis Radio Telescope is operated by ASTRON
+(Netherlands Foundation for Research in Astronomy) with support from
+the Netherlands Foundation for Scientific Research (NWO). Support
+for this work was provided by the National Aeronautics and Space
+Administration through Chandra Award Number 1736937 issued by the
+Chandra X-ray Observatory Center, which is operated by the
+Smithsonian Astrophysical Observatory for and on behalf of the
+National Aeronautics Space Administration under contract NAS8-03060.
+This publication makes use of data products from the Two Micron All
+Sky Survey, which is a joint project of the University of
+Massachusetts and the Infrared Processing and Analysis
+Center/California Institute of Technology, funded by the National
+Aeronautics and Space Administration and the National Science
+Foundation. This research has made use of data obtained from the
+High Energy Astrophysics Science Archive Research Center (HEASARC),
+provided by NASA's Goddard Space Flight Center. 
+
+Interstellar scintillation in the radio modeling
+The 4.9 GHz measurements show scatter around the best fit light curve,
+which can be accounted for by interstellar scintillation (ISS). In
+Figure REF  we have indicated the predicted rms
+scatter due to ISS. We have calculated the scattering measure from
+the {{cite:d3ea7fce-eb7e-4b8e-a0cf-f787d7c50fa9}} model for the Galactic
+distribution of free electrons: FORMULA . The radio specific flux will be
+modulated when the source size is close to one of the three
+characteristic angular scales, i.e. for weak, refractive or
+diffractive ISS. From {{cite:232f5490-835c-459f-8392-28840d228f51}}, we calculate
+the transition frequency between weak and strong ISS,
+FORMULA , and the angular size of the first Fresnel
+zone, FORMULA . Our
+measurements were all performed at frequencies below FORMULA , i.e. in
+the strong ISS regime, which means that only refractive and
+diffractive ISS modulate the specific flux significantly. We calculate the
+evolution of the source size in the extreme relativistic phase
+(FORMULA ) and after the jet-break
+(FORMULA ), and compare this source
+size with the diffractive angular scale
+FORMULA  and the refractive angular
+scale
+FORMULA  to calculate the modulation
+index FORMULA . In the case of diffractive ISS the modulation
+index is 1, and in the case of refractive ISS
+FORMULA . Because of the expansion of the
+blastwave the angular source size exceeds one of the characteristic
+angular scales at some point in time. Then the modulation will begin
+to quench as FORMULA  in
+the case of diffractive ISS, and as
+FORMULA  in the case
+of refractive ISS.

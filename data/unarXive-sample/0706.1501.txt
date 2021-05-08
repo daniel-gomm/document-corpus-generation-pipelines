@@ -1,0 +1,210 @@
+
+Longitudinal Shower Profile Reconstruction from Fluorescence and
+Cherenkov Light
+M. Unger, R. Engel, F. Schüssler and R. Ulrich
+M. Unger, R. Engel, F. Schüssler and R. Ulrich
+Forschungszentrum Karlsruhe, Postfach 3640, 76021 Karlsruhe, Germany
+Michael.Unger@ik.fzk.de
+Traditionally, longitudinal shower profiles are reconstructed in
+fluorescence light experiments by treating the Cherenkov light
+contribution as background. Here we will argue that, due to
+universality of the energy spectra of electrons and positrons, both
+fluorescence and Cherenkov light can be used simultaneously as signal
+to infer the longitudinal shower development.
+We present a new profile reconstruction method that is based on the analytic
+least-square solution for the estimation of the shower profile from the observed
+light signal and discuss the extrapolation of the profile
+with a Gaisser-Hillas function.
+Longitudinal Shower Profile Reconstruction from Fluorescence and
+Cherenkov Light2020/09/07 10:21:24
+Introduction
+During its passage through the atmosphere of the earth an extensive air shower
+excites nitrogen molecules of the air, which subsequently radiate isotropically
+ultraviolet fluorescence light. Since the amount of emitted light is
+proportional to the energy deposited, the longitudinal shower development
+can be observed by appropriate optical detectors such as HiRes {{cite:b34df682-25a8-40cd-af76-2d532c870246}},
+Auger {{cite:90503fbb-c30b-4079-bec5-9d64885e0802}} or TA {{cite:976c5dae-2586-401b-8b88-17c2a8455fe2}}.
+As part of the charged shower particles travel faster than the speed of light in air,
+Cherenkov light is emitted in addition. Therefore, in general a mixture of the
+two light sources reaches the aperture of the detector.
+In the traditional method {{cite:7fb6d99c-87b0-4440-a14f-e6cc13f29f8a}}
+for the reconstruction of the longitudinal shower development
+the Cherenkov light is iteratively subtracted from
+the measured total light. The drawbacks of this ansatz are
+the lack of convergence for events with a large amount of
+Cherenkov light and the difficulty of propagating the
+uncertainty of the subtracted signal to the reconstructed shower profile.
+It has already been noted in {{cite:5c8fac06-6971-45ed-b1a0-47c02836b6c0}} that, due to the universality
+of the energy spectra of the secondary electrons and positrons within an
+air shower, there exists a non-iterative solution for the reconstruction
+of a longitudinal shower profile from light detected by fluorescence telescopes.
+Here we will present the analytic
+least-square solution for the estimation of the shower profile from the observed
+light signal in which both, fluorescence and Cherenkov light,
+are treated as signal.
+FIGURE 
+
+Scattered and Direct Light
+The non-scattered, i.e. direct fluorescence light emitted at a certain slant depth FORMULA  is measured
+at the detector at a time FORMULA . Given the fluorescence yield FORMULA 
+{{cite:f55bdaaa-d474-4890-8356-a87ac8dfdee4}}, {{cite:cb17df67-4d97-4a26-a6d1-9a0c2785b931}}
+at this point of the atmosphere, the number of photons produced at the shower in a slant
+depth interval FORMULA  is
+FORMULA 
+where FORMULA  denotes the energy deposited at slant depth FORMULA  (cf. Fig. REF ).
+These photons are distributed over
+a sphere with surface FORMULA , where FORMULA  denotes the distance of the detector.
+Due to atmospheric attenuation only a fraction FORMULA  of them can be detected. Given
+a light detection efficiency of FORMULA , the measured fluorescence light flux
+FORMULA  can be written as
+FORMULA 
+where the abbreviation
+FORMULA  was used. For the sake of clarity
+the wave length dependence of FORMULA , FORMULA  and FORMULA 
+will be disregarded in the following but be discussed later.
+The number of Cherenkov photons emitted at the shower is proportional to the
+number of charged particles above the Cherenkov threshold energy. Since the
+electromagnetic component dominates the shower development, the emitted Cherenkov light,
+FORMULA , can e calculated from
+FORMULA 
+where FORMULA  denotes the number of electrons and positrons above a certain energy cutoff, which
+is constant over the full shower track and not to be confused with the Cherenkov emission
+energy threshold. Details of the Cherenkov light
+production like these thresholds are included
+in the Cherenkov yield factor FORMULA  {{cite:5c8fac06-6971-45ed-b1a0-47c02836b6c0}}, {{cite:9753c7a2-2ca5-4362-b516-c68eacff9466}}, {{cite:cd4d295b-f485-4cf0-b35d-28478103069f}}, {{cite:0e07e60b-4f56-4160-aff0-5714f7a986f1}}.
+Although
+the Cherenkov photons are emitted in a narrow cone along the particle direction, they
+cover a considerable angular range with respect to the shower axis, because
+the charged particles are deflected from the primary particle direction due to multiple
+scattering. Given the fraction FORMULA  of Cherenkov photons emitted at an angle
+FORMULA  with respect
+to the shower axis {{cite:9753c7a2-2ca5-4362-b516-c68eacff9466}}, {{cite:0e07e60b-4f56-4160-aff0-5714f7a986f1}}, the light flux at the detector
+aperture originating from direct Cherenkov light is
+FORMULA 
+Due to the forward peaked nature of Cherenkov light production, an intense Cherenkov
+light beam can build up along the shower as it traverses the atmosphere (cf. Fig. REF ).
+If a fraction FORMULA  of the beam is scattered towards the detector it can
+contribute significantly to the total light received. In a simple one-dimensional model
+the number of photons in the beam at depth FORMULA  is just the sum of Cherenkov light produced at
+all previous depths FORMULA  attenuated on the way from FORMULA  to FORMULA  by FORMULA :
+FORMULA 
+Similar to the direct contributions, the scattered Cherenkov light received at the detector is then
+FORMULA 
+Finally, the total light received at the detector at the time FORMULA  is obtained by
+adding the scattered and direct
+light contributions.
+
+Shower Profile Reconstruction
+The aim of the profile reconstruction is to estimate the energy deposit and/or
+electron profile from the light flux observed at the detector. At
+first glance this seems to be hopeless, since at each depth there are the
+two unknown variables FORMULA  and FORMULA , and only one measured quantity,
+namely FORMULA .
+Since the total energy deposit is just the sum of the energy loss of electrons,
+FORMULA  and FORMULA  are related via
+FORMULA 
+where FORMULA  denotes the normalized electron energy distribution
+and FORMULA  is the energy loss of a single electron with energy FORMULA .
+As it is shown in {{cite:cd4d295b-f485-4cf0-b35d-28478103069f}}, {{cite:5c8fac06-6971-45ed-b1a0-47c02836b6c0}}, {{cite:0e07e60b-4f56-4160-aff0-5714f7a986f1}}, the electron energy
+spectrum FORMULA  is universal in shower age FORMULA ,
+i.e. it does not depend on the primary mass or energy, but only on
+the relative distance to the shower maximum, FORMULA . Eq. (REF ) can
+thus be simplified to
+FORMULA 
+where FORMULA  is the average energy deposit per electron at shower age
+FORMULA .
+With this one-to-one
+relation between the energy deposit and the number of electrons, the shower profile
+is readily calculable from the equations given in the last section.
+For the solution of the problem, it is convenient to rewrite the
+relation between energy deposit and
+light at the detector
+in matrix notation:
+Let
+FORMULA  be the FORMULA -component vector (histogram) of the measured photon flux at the aperture and
+FORMULA  the energy deposit vector at the shower track. Using the ansatz
+FORMULA 
+the elements of the Cherenkov-fluorescence matrix FORMULA  can be found
+by a comparison with the coefficients in equations (REF ), (REF )
+and (REF ):
+FORMULA 
+where
+FORMULA 
+and
+FORMULA 
+The solution of Eq. (REF ) can be obtained by inversion, leading to the energy deposit
+estimator FORMULA :
+FORMULA 
+Due to the triangular structure of the Cherenkov-fluorescence matrix the inverse can
+be calculated fast even for matrices with large dimension. As the matrix elements in (REF )
+are always FORMULA , FORMULA  is never singular.
+The statistical uncertainties of FORMULA  are obtained by error propagation:
+FORMULA 
+It is interesting to note that even if the measurements FORMULA  are uncorrelated, i.e. their
+covariance matrix FORMULA  is diagonal, the calculated energy loss values
+FORMULA  are not. This is,
+because the light observed during time interval
+FORMULA  does not solely originate from FORMULA , but also receives
+a contribution from earlier shower parts FORMULA , FORMULA ,
+via the 'Cherenkov beam'.
+
+Wavelength Dependence
+Until now it has been assumed that the shower induces light emission at a single wavelength FORMULA .
+In reality, the fluorescence yield
+shows distinct emission peaks and the number of Cherenkov photons is proportional
+to FORMULA . In that case, also the wavelength dependence of the
+detector efficiency and the light transmission need to be taken into account.
+Assuming that a binned wavelength distribution of the yields is available
+(FORMULA ), the above considerations still hold when replacing FORMULA  and
+FORMULA  in Eq. (REF ) by
+FORMULA 
+and
+FORMULA 
+where
+FORMULA 
+The detector efficiency FORMULA  and transmission coefficients FORMULA 
+and FORMULA  are evaluated at the wavelength FORMULA .
+
+Shower Age Dependence
+Due to the age dependence of the electron spectra FORMULA , the
+Cherenkov yield factors FORMULA  and the average electron energy deposits FORMULA 
+depend on the shower maximum, which is not known before the profile has been reconstructed.
+Fortunately, these dependencies are small: In the age range of importance for the
+shower profile reconstruction (FORMULA ) FORMULA  varies only within
+a few percent {{cite:0e07e60b-4f56-4160-aff0-5714f7a986f1}} and FORMULA  by less than 15% {{cite:5c8fac06-6971-45ed-b1a0-47c02836b6c0}}.
+Therefore, a good estimate of FORMULA  and FORMULA  can be obtained by setting
+FORMULA . After the shower profile has been calculated with these estimates,
+FORMULA  can be determined and the profiles can be re-calculated with an updated
+Cherenkov-fluorescence matrix.
+
+Gaisser-Hillas Fit
+The knowledge of the complete profile is required for the calculation of the Cherenkov beam
+and the shower energy.
+If due to the limited field of view of the detector only a part of the profile is observed,
+an appropriate function for the extrapolation to unobserved depths is needed.
+A possible choice is the Gaisser-Hillas
+function {{cite:65cf7db8-9528-42b9-b8eb-c3b2f3f2ad1a}}
+which was found to give a good description of measured longitudinal profiles {{cite:5f914c3d-8376-40c8-b17b-197b376d418c}}.
+It has only four free parameters:
+FORMULA , the depth where the shower reaches its maximum energy deposit FORMULA 
+and two shape parameters FORMULA  and FORMULA .
+The best
+set of Gaisser-Hillas parameters FORMULA  can be obtained by minimizing
+the error weighted squared difference between the vector of function
+values FORMULA  and FORMULA , which is
+FORMULA 
+This minimization works well if a large fraction of the shower has been observed
+below and above the shower maximum. If this is not the case, or even worse, if the shower
+maximum is outside the field of view, the problem is under-determined, i.e. the experimental
+information is not sufficient to reconstruct all four Gaisser-Hillas parameters.
+This complication can be overcome by weakly constraining FORMULA  and FORMULA  to their
+average values FORMULA  and FORMULA . The new
+minimization function is then the modified  FORMULA
+FORMULA 
+where the variance of FORMULA  and FORMULA  around their mean values are in the denominators.
+In this way, even if FORMULA  is not sensitive to FORMULA  and FORMULA , the minimization
+will still converge. On the other hand, if the measurements have small statistical uncertainties and/or
+cover a wide range in depth, the minimization function is flexible enough to allow for
+shape parameters differing from their mean values. These mean values can be determined
+from air shower simulations or, preferably, from high quality data profiles which can be
+reconstructed without constraints.

@@ -1,0 +1,831 @@
+
+[
+FORMULA COMFORMULA DTU,
+Technical University of Denmark, Bld. 345v, DK-2800 Lyngby, Denmark.
+FORMULA Department of Applied and Engineering Physics, Cornell
+University, Ithaca, New York 14853.
+FORMULA Currently with: Research Laboratory of Electronics,
+Massachusetts Institute of Technology, Cambridge, MA 02139
+FORMULA Corresponding author: bache@com.dtu.dk
+We present a detailed study of soliton compression of ultra-short
+pulses based on phase-mismatched second-harmonic
+generation (i.e., the cascaded quadratic nonlinearity) in
+bulk quadratic nonlinear media. The single-cycle propagation
+equations in the temporal domain including higher-order nonlinear
+terms are presented. The balance between the quadratic (SHG) and the
+cubic (Kerr) nonlinearity plays a crucial role: we define an
+effective soliton number – related to the difference between the
+SHG and the Kerr soliton numbers – and show that it has to be
+larger than unity for successful pulse compression to take place.
+This requires that the phase mismatch be below a critical
+level, which is high in a material where the quadratic nonlinearity
+dominates over the cubic Kerr nonlinearity. Through extensive
+numerical simulations we find dimensionless scaling laws, expressed
+through the effective soliton number, which control the behaviour of
+the compressed pulses. These laws hold in the stationary regime, in
+which group-velocity mismatch effects are small, and they are
+similar to the ones observed for fiber soliton compressors. The
+numerical simulations indicate that clean compressed pulses below
+two optical cycles can be achieved in a FORMULA -barium borate
+crystal at appropriate wavelengths, even for picosecond input
+pulses.
+320.5520, 320.7110, 190.5530, 190.2620, 190.4400
+Scaling laws for soliton pulse compression by cascaded
+quadratic nonlinearitiesM. BacheFORMULA , J. MosesFORMULA , and F. W. Wise FORMULA2020/09/07 10:22:03
+]
+Introduction
+Second-harmonic generation (SHG) in the limit of large phase
+mismatch gives rise to the so-called cascaded
+FORMULA -nonlinearity, in which weak conversion to the second
+harmonic (SH) occurs, while a Kerr-like nonlinear phase shift is
+induced on the fundamental wave (FW)
+{{cite:06291924-f030-47f9-8c26-d41d825acaa3}}, {{cite:084a0f41-6339-4620-9f91-92955cbd5f48}}. An elegant theoretical view of
+this process is that in the cascading limit the system can be
+described by a nonlinear Schrödinger equation (NLSE) for the FW
+alone {{cite:53d46784-e08e-42d3-bc9c-31be8f6abd69}}. The induced FW nonlinear phase shift then
+comes from an effective self-phase modulation arising from the phase
+mismatch. The phase shift can be quite large and negative, since the
+phase mismatch determines the sign and magnitude of the effective
+cubic nonlinearity. Such a self-defocusing nonlinearity can
+be used to compress a pulse when combined with normal dispersion
+{{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}}, {{cite:5b36657c-6b2d-4dd0-9489-c4dfec9065a8}}, {{cite:96b10ac7-00b1-4645-97e2-1e7367699ca3}}, {{cite:5ae87707-257b-40cc-b679-164d56c085a8}}, {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}, {{cite:a137d35a-70ec-4a6b-842d-4f97e213629d}},
+and problems normally encountered due to self-focusing in
+cubic media are avoided. Thus, having no power limit, a
+self-defocusing compressor can create high-energy near single-cycle fs
+pulses in bulk media {{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}}, {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}. The exploited
+compression mechanism is the periodic behaviour of higher-order
+temporal solitons of the NLSE. They oscillate in temporal duration
+upon propagation, and the optimal compressor length is when the pulse
+width is the narrowest.
+As the compressor scheme exploits an effective self-defocusing cubic
+term from cascaded quadratic effects, the compressor will naturally be
+affected by the self-focusing cubic nonlinearity inherent to any
+transparent material. This detrimental cubic nonlinearity must be
+counterbalanced and then exceeded to achieve compression
+{{cite:5b36657c-6b2d-4dd0-9489-c4dfec9065a8}}, {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}. In this work we systematically
+demonstrate theoretically and numerically how this can be expressed
+conveniently using the soliton number formalism known from the NLSE in
+fiber optics {{cite:c6ccb8f6-5d7a-4c53-a3ea-d0fec94aa18a}}, {{cite:593f3aac-7b01-4ba0-b825-9ed1db68023c}}. Firstly, we show that
+the SHG soliton number {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}} FORMULA  must outbalance the
+Kerr soliton number FORMULA  before compression takes place. More
+precisely, the effective soliton number
+FORMULA  must be larger than unity. This
+can be achieved by adjusting the phase mismatch, but only if the
+quadratic material nonlinearity is sufficiently stronger than the
+cubic Kerr nonlinearity. Secondly, when compression is successful, the
+compression factor, pulse quality, and optimal compressor length
+follow certain scaling laws. Such empirical scaling laws expressed
+through FORMULA  were previously given for the NLSE
+{{cite:189fc3c2-afb0-409e-9895-eecc45ffa154}}, {{cite:33383d6a-4e48-4160-8274-19a705e206d0}}, {{cite:ad97c033-837e-48c0-8f22-08c935d2647b}}. Here we present
+detailed numerical simulations of pulse propagation in a commonly-used
+nonlinear material, FORMULA -barium borate (BBO). We find
+general dimensionless scaling laws quite similar to the ones from the
+NLSE, except that one must express them through FORMULA . The
+simulations span a very wide input-pulse parameter space and the
+scaling laws therefore provide an important tool for experimental
+situations.
+A major obstacle to the cascaded-quadratic soliton compressor is the
+group-velocity mismatch (GVM) between the FW and SH pulses. GVM
+induces a Raman-like perturbation that distorts the compression,
+resulting in asymmetric pulses and pulse splitting
+{{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}}, {{cite:88b5f38d-e5a0-4944-afd8-bbece973bf19}}, {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}. Two distinct regimes exist: in
+the stationary regime the GVM-induced Raman-like
+perturbations are weak, resulting in clean compressed pulses. In the
+nonstationary regime, the GVM-induced perturbations are
+strong, and poor pulse compression is observed. Moreover, the
+compression behavior deviates from the NLSE scaling laws. Here we
+focus on the stationary regime, where cleanly compressed few-cycle
+pulses may be obtained, and summarize the guidelines for avoiding
+nonstationary behavior. Subsequent publications will focus on
+compression in the nonstationary regime in greater detail. In
+particular, we have recently devised a nonlocal theory that
+quantitatively defines the boundary between the stationary and
+nonstationary regimes {{cite:a4537867-3a53-4629-8105-f5da2a25fe60}}.
+Finally, when describing (ultra)-short pulse propagation in nonlinear
+media it is generally important to describe both temporal and spatial
+effects as they will inherently be interlinked. Examples include
+space-time focusing in bulk media {{cite:cc8c6a84-6468-4e44-95ff-0b050a0e9d50}}, and strong
+modification of the dispersion and nonlinear mode overlap in waveguide
+geometries. However, the simplified 1D temporal description presented
+here is often an adequate starting point for understanding the general
+temporal behaviour of the system during compression. In this work we
+consider interaction in a bulk material (no wave guiding) and we
+neglect diffraction (i.e., the beam must not be focused too
+tightly). In subsequent publications we will address the behaviour in
+a wave-guiding geometry such as a fiber, as well as in bulk geometry
+including the spatial effects.
+
+Generalized propagation equations for ultra-short pulses
+Below we present the generalized bulk SHG propagation equations,
+including both quadratic and cubic nonlinear effects. We aim to
+investigate compressed pulses that may be near-single optical cycle in
+duration, so we must use the propagation equations derived without
+approximations that directly impart constraints on the pulse duration
+and bandwidth. Such SHG equations have been derived elsewhere
+{{cite:3c595f6a-dca3-42d6-91dc-f202165a75b8}} using the slowly evolving wave approximation (SEWA)
+{{cite:cc8c6a84-6468-4e44-95ff-0b050a0e9d50}}. Here we recast these equations in the framework of
+cascaded quadratic soliton compression as to define all critical
+experimental parameters. We also include generalized cubic
+nonlinearities from interaction of two fields with different
+frequencies (the FW and SH), see App. .
+The investigation is a temporal study only. We neglect transverse
+spatial effects, assuming that diffraction plays a negligible role on
+the length scale of the compressor, i.e., that each point on
+the beam may be considered a plane wave. Previously-reported
+quadratic soliton compressors have lengths on the order of a few
+centimeters
+{{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}}, {{cite:5b36657c-6b2d-4dd0-9489-c4dfec9065a8}}, {{cite:96b10ac7-00b1-4645-97e2-1e7367699ca3}}, {{cite:5ae87707-257b-40cc-b679-164d56c085a8}}, {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}. For
+a Gaussian beam at near-infrared wavelengths, this implies that our
+assumptions are valid for beam waists larger than approximately 100
+FORMULA m. Section REF  will discuss
+considerations of compression with transverse-spatially varying
+profiles. Finally note that in our notation, a primed variable
+is always dimensionless.
+The dimensional form
+In SHG two FW photons of frequency FORMULA  combine to give a photon
+of frequency FORMULA  (the SH). We consider scalar fields
+and either a Type-0 or Type-I SHG geometry, in which the two FW
+photons have identical polarization {{cite:017965c4-78ce-4115-a7f4-4b7016d5c0e0}}. In a bulk
+medium, the generalized SEWA propagation equations for the coupled
+electric fields are
+FORMULA 
+
+
+where FORMULA . For a Type-0 geometry the cross-phase
+modulation (XPM) coefficient is FORMULA , while for a Type-I geometry
+FORMULA  because the FW and SH have orthogonal polarization
+{{cite:593f3aac-7b01-4ba0-b825-9ed1db68023c}}. We assume that the FW and SH spectra do not
+significantly overlap, an assumption generally valid down to
+single-cycle pulse durations. The linear propagation operators are
+FORMULA 
+
+
+where FORMULA  are the dispersion operators
+FORMULA 
+
+Here FORMULA , where FORMULA  is the refractive index. The
+fields are in the frame of reference traveling with the FW group
+velocity FORMULA  by the transformation FORMULA . This is
+the origin of the GVM-term FORMULA , where
+FORMULA . FORMULA  accounts for dispersion, and FORMULA  is the phase mismatch. Note the unfamiliar term in
+Eq. (), which is an effective SH dispersion operator
+FORMULA  [see
+Eq. (REF )], which deviates from FORMULA  due to GVM
+and self-steepening in the SEWA model {{cite:3c595f6a-dca3-42d6-91dc-f202165a75b8}},
+see App. .
+The quadratic nonlinear coefficient is FORMULA 
+where FORMULA  is the value of the
+quadratic nonlinear tensor along the polarization direction of the
+interacting waves, and as is typical we take FORMULA .
+Dispersion of FORMULA  is assumed negligible.
+The cubic nonlinear coefficient is FORMULA .
+The Kerr nonlinear refractive index is FORMULA , where
+FORMULA , see App. .
+We neglect two-photon absorption, implying
+FORMULA , which holds as long as
+the SH frequency spectrum lies below the two-photon absorption edge of
+the medium. Note, the usual notation for FORMULA  is
+FORMULA , but we reserve the subscript 2 for the SH.
+Self-steepening effects are modelled by the operator FORMULA ,
+It approaches unity when bandwidths FORMULA 
+are small compared to the carrier frequencies FORMULA , i.e., for
+pulses longer than roughly 10 optical cycles.
+Finally, FORMULA  describes the vibrational Raman
+response of the cubic nonlinearity, see
+App. . We henceforth set
+FORMULA , because Raman scattering plays a negligible role under the
+relevant experimental conditions.
+We now scale the fields by defining FORMULA  so FORMULA  gives the beam intensity FORMULA .
+Eqs. (REF ) become
+FORMULA 
+
+
+The nonlinear coefficients due to the intensity scaling are FORMULA , and FORMULA .
+Here the intensity-version of the Kerr nonlinear refractive
+index with unit FORMULA  is FORMULA 
+Note the connection to the fiber NLSE
+(where FORMULA  is scaled to the power);
+FORMULA  is equivalent to the
+parameter {{cite:c6ccb8f6-5d7a-4c53-a3ea-d0fec94aa18a}} FORMULA , where FORMULA  is the effective mode area of the
+FW. Finally, FORMULA  which is
+typically close to unity, except when FORMULA  is large.
+
+The dimensionless form
+We now rescale space and time as FORMULA , and FORMULA ,
+where FORMULA  and FORMULA  are the FW dispersion
+length
+and input pulse duration. When compressing a FW
+pulse, no SH is launched, so both fields are scaled
+to the peak FW input intensity FORMULA ,
+i.e., FORMULA . Thus,
+FORMULA , where FORMULA , and Eqs. (REF ) become
+FORMULA 
+
+
+where FORMULA  and FORMULA , the dimensionless quadratic and cubic
+soliton numbers, respectively, are defined as
+FORMULA 
+
+
+and the dimensionless phase mismatch is FORMULA .
+The parameter FORMULA  is deliberately chosen for a soliton
+compression scenario, as will become clear later.
+Equations (REF ) on dimensionless form are FORMULA  and FORMULA ,
+and FORMULA  is given by Eq. (REF ).
+The dimensionless dispersion operators and corresponding coefficients are FORMULA ,
+and FORMULA , and FORMULA 
+Finally, using FORMULA  we have the steepening
+operators with dimensionless time FORMULA , and  FORMULA
+
+The soliton numbers
+We now turn our attention to the soliton numbers as defined in
+Sec. REF . We will argue – and later show
+with numerical simulations – that the effective soliton number
+FORMULA  can be used to describe the system
+in general. Indeed, FORMULA  characterizes the outcome for any given
+input state of the system.
+First, consider the NLSE in absence of quadratic nonlinearities. We
+include for instruction the Raman terms and ignore the steepening
+terms [Eq. (REF ) with FORMULA  and FORMULA ]. In dimensionless form it reads:
+FORMULA 
+which holds when the pulse duration is much slower than the Raman
+response, and FORMULA , where FORMULA  is a
+characteristic Raman vibrational response time {{cite:c6ccb8f6-5d7a-4c53-a3ea-d0fec94aa18a}},
+see App. . The Kerr soliton
+number () we express as FORMULA ,
+where FORMULA  is the characteristic
+Kerr length. Equation (REF ) governs soliton compression
+in cubic nonlinear media, and the compression characteristics are well
+understood to be critically dependent on FORMULA 
+{{cite:c6ccb8f6-5d7a-4c53-a3ea-d0fec94aa18a}}, {{cite:593f3aac-7b01-4ba0-b825-9ed1db68023c}}, {{cite:189fc3c2-afb0-409e-9895-eecc45ffa154}}, {{cite:33383d6a-4e48-4160-8274-19a705e206d0}}, {{cite:ad97c033-837e-48c0-8f22-08c935d2647b}}.
+We stress that soliton compression using a pure Kerr self-focusing
+nonlinearity requires anomalous dispersion FORMULA .
+Likewise, the quadratic soliton number FORMULA  is a critical
+parameter in cascaded quadratic soliton compression that as we shall
+now see has a role analogous to the cubic soliton number of the NLSE.
+Using perturbative methods one can reduce the
+dimensionless SHG equations (REF ) – in absence of
+steepening and cubic nonlinear terms –
+to a single equation for the FW analogous to Eq. (REF )
+when the phase mismatch FORMULA  is suitably large
+{{cite:53d46784-e08e-42d3-bc9c-31be8f6abd69}}, {{cite:88b5f38d-e5a0-4944-afd8-bbece973bf19}}. The approximate equation for the FW
+field can for soliton compression purposes be cast as
+{{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}
+FORMULA 
+where FORMULA . In
+analogy to the cubic nonlinearity, a characteristic
+length for the cascaded quadratic nonlinearity FORMULA ,
+such that FORMULA .
+The similarity to Eq. (REF ) is clear, and explains the
+choice of FORMULA  in Eq. (REF ). Similar to
+FORMULA  for the NLSE, FORMULA  is namely a critical parameter in cascaded
+quadratic soliton compression. Several other features should be noted.
+First, the sign of the phase mismatch controls the sign of the induced
+cubic nonlinearity. For the purpose of soliton compression with
+normal dispersion FORMULA , we require FORMULA  in
+order to have self-defocusing, or negative nonlinearity. Second, the
+Raman-like term in Eq. (REF ) is important in
+the compression dynamics, as will be explained in
+Sec. REF .
+Equations (REF ) and (REF ) consider
+the cases where either the cubic or the quadratic nonlinearity is
+significant. However, we must consider both orders of nonlinearity, so
+using the same perturbation methods, we reduce
+Eqs. (REF ) to an approximate equation for the FW. To
+first order, and neglecting steepening effects, we find
+FORMULA 
+In Eq. (REF )
+self-phase modulation (SPM) effects from both quadratic
+and cubic nonlinear effects are present. For FORMULA ,
+FORMULA  self-defocusing phase shifts starts to cancel
+the FORMULA  self-focusing phase shifts. Thus, for soliton
+compression with normal dispersion and self-defocusing phase shifts,
+the effective soliton number
+FORMULA 
+
+must be larger than unity, FORMULA . This is analogous to the cubic
+soliton compressor, for which compression will only occur for
+FORMULA . In Sec.  these conclusions
+are supported numerically through simulations of
+Eqs. (REF ). By this we demonstrate that
+FORMULA  governs all the behaviour of the compressed solitons, at
+least in the stationary regime. This
+regime is now discussed.
+
+The stationary regime
+An important observation is that Eq. (REF ) has
+a GVM-induced Raman-like term similar to the one
+induced by the delayed cubic response in the NLSE (REF ).
+Its characteristic dimensionless temporal response is
+{{cite:88b5f38d-e5a0-4944-afd8-bbece973bf19}}, {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}
+FORMULA 
+
+and FORMULA . Typically,
+FORMULA  lies between 1-5 fs in BBO. This term imposes a Raman-like
+red-shift of the FW, which causes the compressed pulse to be
+asymmetric and limits the compression achievable.
+To understand this better, observe the effective nonlinear FW
+phase shift built up during propagation
+FORMULA 
+{{cite:06291924-f030-47f9-8c26-d41d825acaa3}}, which holds when FORMULA 
+(weak conversion to the SH). For efficient compression FORMULA 
+should at least be on the order of FORMULA 
+{{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}}, {{cite:5b36657c-6b2d-4dd0-9489-c4dfec9065a8}}, and evidently the pulse needs to
+propagate a shorter distance to achieve this for FORMULA  low (as
+long as the cascading limit is upheld). However, Liu et al.
+{{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}} pointed out that GVM sets a lower limit to FORMULA :
+In phase-mismatched SHG, the phase between the FW and SH changes
+several times, corresponding to a conversion/back-conversion cycle of
+energy between FW and SH fields. The distance over which the relative
+phase changes sign once is exactly characterized by the coherence
+length FORMULA . Thus, it is important that the
+temporal walk-off (GVM) length FORMULA  is (much)
+larger that the coherence length. Liu et al. {{cite:7296a9f9-3557-4f81-b643-4f90ac1000dc}}
+found that it is sufficient to demand that FORMULA .
+Thereby the so-called stationary regime was defined, thus
+requiring FORMULA . Therefore it is advantageous to have low GVM because it gives access
+to large nonlinear phase shifts that occur when FORMULA  is not too
+large. In addition, low GVM will result in a smaller FORMULA -term in Eq. (REF ) so the Raman-like
+perturbations become smaller. This was a main point of
+Ref. {{cite:4d9f0540-a4d8-4c1e-99ba-0fba8f55902e}}, where it was shown that for a given amount of
+GVM the compression increases as the soliton number is increased until
+a certain critical value where the Raman-like perturbations start to
+dominate. If GVM is reduced the soliton number can be increased further
+before this happens, and stronger compression can be achieved. We recently devised a more accurate theory for the stationary and
+nonstationary regimes {{cite:a4537867-3a53-4629-8105-f5da2a25fe60}}, showing that the cascaded
+nonlinearity gives rise to a nonlocal response, and that in presence
+of GVM the nonlocal response function is asymmetric (Raman-like). In
+the stationary regime the nonlocal response function is localized and
+Eq. (REF ) is recovered in the weakly nonlocal
+regime (where the response function is very narrow compared to the
+propagating pulse). In the nonstationary regime the nonlocal response
+function is oscillatory and does not decay. This has severe
+consequences to the built up negative nonlinear phase shift and
+results in very poor compression. Finally, a more accurate requirement
+for being in the stationary regime
+was found as
+FORMULA 
+
+which notably is independent of FORMULA . In what follows, we will use
+this value. We should note that satisfaction of
+inequality (REF ) does not eliminate the GVM-induced
+perturbation: Raman-like effects
+are present when GVM is nonzero both in the stationary regime FORMULA , where Eq. (REF ) holds,
+and in the nonstationary regime FORMULA . However, in the latter case, where the nonlocal response
+function is oscillatory and unbound, the Raman-like perturbations are
+stronger.
+
+The compression window
+In the previous sections we have imposed two requirements for clean
+soliton compression. First, in order to observe
+solitons, the effective soliton number must
+be larger than unity FORMULA . This gives from
+Eq. (REF ) a critical value of the phase mismatch
+FORMULA 
+
+Second, FORMULA  to be in the stationary regime,
+see Eq. (REF ), which is strictly related to the size of
+GVM and SH group-velocity dispersion, and is independent of the input
+pulse duration. This defines a compression window, inside
+which we can expect clean compression:
+FORMULA 
+
+Staying inside this window is therefore a question of choosing the
+right phase mismatch. Keeping the window open (FORMULA ) is also a matter of having the right input pulse
+intensity and duration, see Fig. REF . Moreover, there are
+cases where the material nonlinearity balance and/or GVM effects
+do not allow for Eq. (REF ) to be satisfied. For
+instance, although FORMULA  increases with the input intensity,
+see Fig. REF (a), its maximum value, occurring when
+FORMULA , is FORMULA . Thus, the
+balance between quadratic and cubic nonlinearities is a
+fundamental limit on the peak value of FORMULA . Moreover, when
+GVM is large FORMULA  becomes high, so very
+large quadratic nonlinearities are needed to open the window.
+Note that compression can be achieved outside the compression window
+when FORMULA . However, due to the strong
+Raman-like effects in the nonstationary regime FORMULA  must be kept
+small in order to get a clean symmetric pulse, allowing only for
+moderate compression. Conversely, even inside the compression window
+distorted compressed pulses may occur {{cite:a4537867-3a53-4629-8105-f5da2a25fe60}}.
+FIGURE 
+
+Transverse spatial effects
+Let us end with a brief discussion of the implications of including
+effects of modulation in the transverse spatial dimensions (FORMULA  and
+FORMULA ). The equations will then include both diffraction terms and
+space-time focusing terms (due to steepening effects of diffraction
+{{cite:cc8c6a84-6468-4e44-95ff-0b050a0e9d50}}). In its simplest effect, diffraction will act to
+alter the pulse intensity by altering the mode area, which will lead
+to changes in the soliton order during propagation. Therefore, when
+FORMULA  is on the order of a characteristic diffraction length or
+longer, diffraction will have significant effects on the compression
+results. Additionally, the space-time focusing terms, which couple
+temporal and transverse spatial coordinates and become significant at
+few-cycle pulse durations, will be expected to produce nontrivial
+spatiotemporal distortions.
+Moreover, in the plane-wave limit, i.e., where diffraction
+effects are small, while the temporal dynamics can be well described
+by the model presented in this paper, inhomogeneity in the spatial
+intensity profile will result in inhomogeneous compression across the
+beam. For example, for a Gaussian profile only the central part of
+the beam may have the appropriate intensity to be efficiently
+compressed. In order to achieve a more homogeneous compression, a
+super-Gaussian profile can be used {{cite:29ec378a-30a8-4dab-82c8-f4912e7898bc}}.
+Another case is where the light is guided, such as in an optical
+fiber. Here, the nonlinear terms in the propagation equations must
+include the effective spatial mode overlap areas, and thus modifying
+the soliton numbers as well. Another important difference in the
+guided case is that the dispersion is affected. Moreover, it is
+possible to achieve very high intensities with low energy pulses
+because the light can be confined in a very small area. We will in
+another publication go into details with the specific case of a
+photonic crystal fiber, and try to investigate the implications of
+wave-guiding effects on the cascaded quadratic soliton compressor.
+
+Numerical results
+We now proceed to the numerical results, where we first study the
+transition to compression, and then derive the empirical scaling laws
+for the compressed pulses. The simulations were done using
+Eqs. (REF ), which include self-steepening, the SEWA
+corrected SH dispersion term and higher-order nonlinear mixing terms.
+The coupled equations were solved using a split-step Fourier technique
+with a 2nd order Runge-Kutta algorithm to evaluate the nonlinear terms
+in the time domain. The dispersion terms were evaluated in the
+frequency domain, and since FORMULA  is known analytically (from
+the Sellmeier equations of BBO {{cite:017965c4-78ce-4115-a7f4-4b7016d5c0e0}}) we can actually
+evaluate the dispersion operator FORMULA  exactly {{cite:7f11d8d2-144a-4203-ba34-170336bd69e4}}
+instead of using the expansions (REF ). For the effective
+SH operator (REF ) we used 30 terms in
+the expansion of FORMULA .The steepening terms were applied by using the convolution theorem and
+thus letting the steepening operator act on the nonlinear terms in the
+frequency domain. The number of discretization points FORMULA  in the
+FORMULA -direction was chosen so that around 15 steps were taken within a
+single coherence length FORMULA . The number of
+temporal points were FORMULA -FORMULA , primarily dictated by the fact
+that due to GVM the SH will have a trailing pulse, which must stay
+inside the time window of the simulations.
+We decided to use BBO as the nonlinear medium for
+reasons described in App. . We chose the
+Yb/Nd:YAG wavelength FORMULA nm.
+At this wavelength BBO has a medium level of GVM (FORMULA  fs/mm). If instead we consider FORMULA nm – another
+wavelength of considerable interest – GVM is roughly twice as big and
+the compression window is much smaller. From this point of view
+FORMULA nm is better suited for this investigation.
+FIGURE 
+Transition to compression
+First, we characterize the system at the transition to
+compression, in order to understand whether the requirement
+FORMULA  holds. Quantitatively, we first found the critical
+phase mismatch FORMULA  for a given FORMULA  and FORMULA  (thus,
+FORMULA  is fixed, while FORMULA  is varied as FORMULA  is
+scanned). This was done through numerics of FORMULA  mm propagation in a
+BBO crystal. First, we located a FORMULA  just before the
+transition (slight decrease in pulse intensity due to pulse
+broadening) and a FORMULA  just after the transition (slight
+increase in pulse intensity due to pulse narrowing). FORMULA  was
+then found by interpolation. We chose sech-shaped input pulses FORMULA 
+because they are solitonic solutions to the NLSE (without higher order
+dispersion and nonlinearities), and the pulse intensities during
+propagation were correspondingly fitted to a sechFORMULA -shaped pulse.
+Based on Ref. {{cite:ea20c25a-48ff-4070-a58e-cba60e740262}} we expect the results presented here to
+remain largely identical for sech- and Gaussian-shaped input pulses.
+In Fig. REF (a) we plot FORMULA  vs. FORMULA  for many
+different values of FORMULA  and FORMULA . As
+Sec. REF  suggested, the transition to
+compression can expressed as FORMULA , and the corresponding
+theoretical line calculated from Eq. (REF ) is also shown.
+We observe that the prediction FORMULA  only holds for low values
+FORMULA , while for larger values the simple requirement FORMULA 
+is not enough. A careful study revealed that for large values of
+FORMULA  and FORMULA  the critical effective soliton number scales as
+FORMULA .
+FIGURE 
+This suggests that the effect is not related to any of the soliton
+numbers (which scale as FORMULA ). Instead, consider the
+energy fluence FORMULA , which for a sech-shaped pulse
+FORMULA  is FORMULA . In Fig. REF 
+the corresponding FORMULA  from the FORMULA  data of Fig. REF  is plotted vs.
+FORMULA , and the data are well represented by the rational fit
+FORMULA 
+
+where the free fitting parameter FORMULA . We
+expect that this FORMULA  value is only valid for the particular case
+studied. A possible explanation for the deviation from FORMULA  was found by
+studying the initial stages of propagation when the fluence is high
+such that FORMULA , see Fig. REF  for
+FORMULA  and FORMULA .
+As one would expect when FORMULA  a substantial negative FW phase
+shift builds up. However, in the pulse center an increase in the phase
+is seen, which causes the chirp across the pulse center to be
+non-monotonic making the pulse unable to compress upon further
+propagation. By turning off the Kerr cross-phase modulation (XPM)
+terms in the numerics, we observe that this phase increase in the
+pulse center disappears; now the pulse has a monotonic chirp across
+the pulse center so it can compress. This was indeed observed upon
+further propagation. Turning on the Kerr XPM terms again and taking
+FORMULA  to achieve FORMULA ,
+FORMULA  is now large enough cancel also the detrimental contribution
+from the Kerr XPM terms: the phase increase in the center is no longer
+there making the chirp monotonic. Therefore the pulse can compress,
+which we indeed observed. Thus, the deviation from FORMULA  comes
+from a positive phase contribution in the pulse center, which seems to
+originate from the Kerr XPM terms. These cannot be neglected due to
+the high fluence, but were indeed neglected in the NLSE-type
+model (REF ) from which the conjecture FORMULA 
+originated. An indication of this high-fluence effect on the XPM
+terms was recently observed experimentally {{cite:54d19054-022f-41e3-b8a6-39b540bcc1e3}}.
+Finally, as the Kerr XPM coefficient is changed we found that
+FORMULA .
+FIGURE 
+We can conclude that FORMULA  deviates quite strongly from unity when
+the fluence (and thus the soliton numbers) is large. However, for FORMULA , FORMULA  can be used as a safe
+estimate of the transition point.
+
+Scaling laws for compression parameters 
+We proceed to investigate how the soliton compressor behaves when
+compression is successful. We seek to find general scaling laws that
+can tell us at what position FORMULA  in the crystal the pulse reaches
+its optimal single-spike compressed state – i.e., with
+maximum intensity and minimum duration – and to check its duration,
+compression factor, and quality.
+For soliton compression in the NLSE Mollenauer et al.
+{{cite:189fc3c2-afb0-409e-9895-eecc45ffa154}} first studied the compression for
+FORMULA . Based on this Dianov et al.
+{{cite:ad97c033-837e-48c0-8f22-08c935d2647b}} showed the following empirical scaling law for the
+optimal compression length
+FORMULA 
+
+where FORMULA  is the soliton
+length {{cite:c6ccb8f6-5d7a-4c53-a3ea-d0fec94aa18a}}. Also based on Ref. {{cite:189fc3c2-afb0-409e-9895-eecc45ffa154}},
+Tomlinson et al. {{cite:33383d6a-4e48-4160-8274-19a705e206d0}} reported the empirical
+scaling law for the compression factor
+ FORMULA
+FORMULA 
+
+The validity range was reported in Ref. {{cite:ad97c033-837e-48c0-8f22-08c935d2647b}}.
+Finally, the pulse quality is defined as the fluence in a sechFORMULA -fit
+to the central spike relative to the input fluence FORMULA , which is equivalent to taking FORMULA . Thus, we should
+expect that FORMULA  {{cite:593f3aac-7b01-4ba0-b825-9ed1db68023c}}. As we will now
+show, the cascaded quadratic soliton compressor follows nicely
+these scaling laws when FORMULA  is replaced by FORMULA .
+This holds as long as we are in
+the stationary regime, i.e., when the NLSE-like model
+Eq. (REF ) is a good approximation to the system
+and when GVM effects are small.
+FIGURE 
+We performed a wide range of simulations using sech-shaped un-chirped
+input pulses with parameters ranging from FORMULA  fs and
+FORMULA . The simulations used in the following
+resulted in cleanly compressed pulses as demonstrated in
+Fig. REF . It is worth to stress that the
+depletion of the FW due to conversion into SH was quite low in all
+cases (FORMULA  in the stationary regime) due to the large values of
+phase mismatch FORMULA  accessible in the compression window.
+Some selected compression examples are given in
+Fig. REF : (a) shows a typical case with a
+200 fs input, where we have optimized the phase mismatch and the input
+intensity to give a 6.0 fs compressed pulse. This implies a
+compression ratio of FORMULA  and the pulse quality is FORMULA .
+The remaining pulse energy resides in the unwanted pedestal as well as
+in the SH (2.3% conversion occurred). As a more extreme case, (b)
+shows a 2 ps long pulse compressed to a clean 8.3 fs pulse, implying
+an impressive FORMULA . A lot of the energy remains in the pedestal
+(only 0.5% is converted to the SH), and the pulse quality is merely
+FORMULA . This is typical of large compression ratios. Note the
+difference in FORMULA ; FORMULA mm in
+Fig. REF (b) is long, but may be realized
+using multiple crystals.
+FIGURE 
+In Fig. REF (a) we show FORMULA  as function of the
+effective soliton number FORMULA . The data follow the scaling
+law (REF ) – with FORMULA  is replaced by
+FORMULA  – quite well, but there are deviations for
+small FORMULA . This is due to the FORMULA  term in
+Eq. (REF ), so an improved fit gave
+FORMULA 
+
+We have also included data points where the compressed
+pulses were less clean (either having trailing or leading
+oscillations, or being somewhat asymmetric). As the plot indicates
+they start kicking in when FORMULA , which can be explained by
+increased XPM contributions as well as increased influence of the
+GVM induced Raman-like perturbation. Nonetheless,
+these less clean data still follow the scaling law (REF )
+closely. An exception is when the nonstationary regime is close: We
+included four data points (black symbols), which have the same
+parameters as Fig. REF (a) and where FORMULA  is gradually decreased so the final data point is in the
+nonstationary regime. These data
+points start to deviate from the scaling laws because the compressed
+pulses experience more strongly the GVM induced Raman-like effects.
+In Fig. REF (b) we plot the compression factor FORMULA  as
+function of FORMULA . Again the scaling law (REF ) holds
+well except for small FORMULA . A linear fit to the clean data gave
+the following scaling law valid also for small  FORMULA
+FORMULA 
+
+The less clean data also follow the scaling law (REF )
+quite well, but the data points approaching the nonstationary regime
+(black triangles) very quickly separate out. Thus, FORMULA  is very
+sensitive to the effects of the GVM induced Raman-like effects in the
+nonstationary regime.
+As the last dimensionless parameter, we show in Fig. REF (c)
+the pulse compression quality FORMULA  as a function of FORMULA . The
+data roughly follow a rational function
+FORMULA 
+
+The exponent 1.11 deviates from unity due to the behaviour of FORMULA  for
+small FORMULA . However, for large FORMULA  we find FORMULA , as predicted.
+FIGURE 
+As a more concrete example Fig. REF  shows the
+compressor length one should choose for optimal compression FORMULA ,
+together with the expected compressed pulse duration. These were
+calculated from Eqs. (REF ) and (REF ) for
+FORMULA . Single-cycle pulses are available for
+FORMULA  with realistic compressor lengths around
+FORMULA  mm.
+FIGURE 
+Finally, Fig. REF  summarizes output pulse duration vs.
+FORMULA , providing a sense of the possible pulse compression in BBO
+at FORMULA  nm. The lowest value observed was 4.7 fs
+FWHM, corresponding to 1.3 optical cycles. Single-cycle pulses were
+not observed, most likely due to GVM-induced Raman
+effects and Kerr XPM effects.
+
+Conclusions
+In summary, we find that the effective soliton number
+FORMULA  is the proper dimensionless
+quantity for describing soliton compression using cascaded quadratic
+nonlinearities in the stationary regime. Soliton compression generally
+only occurs when FORMULA , and this in turn requires that the
+quadratic nonlinearity dominates over the cubic nonlinearity. In this
+balance, material and input pulse parameters such as the phase
+mismatch, the input pulse intensity and duration play a crucial role.
+When the pulse energy is large FORMULA  is no
+longer a sufficient demand. We attributed this to Kerr XPM effects,
+and we found an empirical scaling law relating FORMULA  to the input
+fluence.
+We showed through a large number of realistic numerical simulations of
+a BBO crystal that the system clearly obeys dimensionless scaling laws
+dictating the optimal compression propagation distance, the pulse
+compression factor and quality. These scaling laws were expressed
+through the effective soliton number FORMULA , and are very similar to
+the ones observed in the NLSE. The scaling laws are general and hold
+also for other materials and wavelengths, and will serve as a crucial
+tool to determine input pulse peak intensity and duration as well as
+phase-matching conditions and optimal crystal lengths.
+Besides the requirement of a strong quadratic nonlinearity, avoiding
+the nonstationary regime, where GVM-effects are strong, is another
+obstacle to observe the desired compression in the considered system.
+While compression may still occur, the final pulse is too distorted to
+be of any use due to GVM induced Raman-like effects. This is
+particularly a problem for short pulses, high intensity pulses, and in
+materials with a weak quadratic nonlinearity and/or large GVM. In this
+paper we considered the stationary regime, where this effect is
+negligible and stress that the scaling laws for compression hold only
+in this regime. In subsequent publications we will study the GVM
+effects in more detail, and show that the cascaded quadratic
+nonlinearity induces a nonlocal response on the FW, and that in
+presence of GVM this response becomes Raman-like {{cite:a4537867-3a53-4629-8105-f5da2a25fe60}}.
+Moreover, in the nonstationary regime the response function is no
+longer localized, which has severe implications on the compressed
+pulse.
+Let us finally touch on the exciting prospect of the cascaded
+quadratic soliton compressor in a wave-guiding configuration. As
+mentioned, GVM effects are detrimental to the compression performance,
+and these become even more pronounced for shorter input wavelengths
+such as 800 nm because GVM is much stronger. However, in a photonic
+crystal fiber (PCF) wave-guiding effects can dramatically alter the
+dispersion, and in particular it was shown that for SHG it is possible
+to achieve zero GVM {{cite:0ef1991a-3207-4fbb-8c46-2b5a02aa6612}}. Moreover, in a PCF the mode
+areas are very small (roughly a few FORMULA  is possible) so
+very high peak intensities are possible even with very low pulse
+energies. This will allow achievement of low-energy clean compressed
+pulses, once issues with quadratic nonlinear response of optical
+fibers have been resolved.
+
+Acknowledgments
+M.B. was supported by The Danish Natural Science Research Council
+Grant 21-04-0506. J.M. and F.W.W. were supported by NSF Grants
+PHY-0099564 and ECS-0217958. O. Bang is acknowledged for discussions.
+
+The cubic nonlinear response
+We here show how a cubic nonlinearity is included
+in the model. The cubic nonlinear polarization response is
+FORMULA 
+FORMULA  is a rank 4 tensor describing the
+cubic nonlinear response of the material, which we let take the
+functional form FORMULA ,
+where FORMULA  is the normalized material Kerr response function. In
+arriving at Eqs. (REF ) we then assumed the waves
+monochromatic and polarized along arbitrary directions FORMULA ,
+where FORMULA  is the unit polarization vector. In SHG the FW
+and SH waves are either all polarized along the same direction (Type
+0), or the two FW are polarized along the same direction but
+orthogonal to the SH (Type I), or finally the two FW photons could be
+polarized orthogonally to each other while the SH is parallel with one
+of the FW photons (Type II) {{cite:017965c4-78ce-4115-a7f4-4b7016d5c0e0}}. The propagation
+equations presented here are valid for Type 0 and I, since the FW
+photons are considered degenerate. We assume an isotropic cubic Kerr
+nonlinearity, for which the only nonzero tensor
+components of FORMULA  are
+FORMULA 
+{{cite:593f3aac-7b01-4ba0-b825-9ed1db68023c}}. This means that the XPM coefficient in
+Eq. (REF ) is FORMULA  for Type 0 SHG, and FORMULA 
+for Type I SHG. We now divide the material Kerr response into an
+electronic response and a vibrational Raman response
+FORMULA  {{cite:c6ccb8f6-5d7a-4c53-a3ea-d0fec94aa18a}},
+where FORMULA  is the fractional contribution of the vibrational Raman
+response. The first part describes the electronic response, which can
+be considered instantaneous, resulting in the cubic SPM and XPM terms
+in
+Eqs. (REF ). The vibrational Raman response for a general 3-wave mixing process
+with two different frequencies is {{cite:1091452b-f66d-42d7-822a-d4b2935bc13c}}
+FORMULA 
+where FORMULA  and FORMULA , and only terms that are phase matched are
+included {{cite:1091452b-f66d-42d7-822a-d4b2935bc13c}}. This Raman response is governed by the gain function FORMULA . For SHG, the
+integral over the term containing FORMULA  is
+vanishing since it implies evaluation of FORMULA  is evaluated at frequency
+offset FORMULA  much larger than the
+typical spectral width of FORMULA  (in the THz range). Therefore,
+for SHG only the term FORMULA  remains,
+and the generalized coupled
+equations (REF ) become
+FORMULA 
+Finally, the Raman overlap integral has an approximate
+form for short, but not extremely
+short, pulses
+FORMULA 
+where we have used that FORMULA , and defined the
+well-known Raman response time FORMULA .
+Eq. (REF ) is related to intra- and inter-pulse Raman
+scattering (IIRS), and
+Eqs. () become
+FORMULA 
+
+
+Here we have neglected the 2nd order derivatives from
+applying self-steepening to the IIRS
+term in Eq. (REF ).
+
+Extending the propagation equations to the SEWA regime
+Here we discuss the difference between the slowly varying envelope
+approximation (SVEA) and the SEWA propagation equations. SEWA
+{{cite:cc8c6a84-6468-4e44-95ff-0b050a0e9d50}} is a general spatio-temporal model that describes
+spatio-temporal pulse propagation down to single-cycle pulse
+durations. It was recently derived for SHG by Moses and Wise
+{{cite:3c595f6a-dca3-42d6-91dc-f202165a75b8}}. SEWA does not pose any direct constriction on the
+pulse bandwidth, whereas the extended SVEA (with steepening terms and
+the general Raman convolution response) holds for {{cite:aad9fff8-caad-44cd-9f8e-77fab238c67e}}
+FORMULA . Neglecting transverse spatial terms, the
+only term the SHG extended SVEA model does not include is related to
+the dispersion of the SH, since due to GVM the SH dispersion
+operator (REF ) must be replaced by the following
+effective operator {{cite:3c595f6a-dca3-42d6-91dc-f202165a75b8}} FORMULA . Imposing the scalings
+FORMULA  and FORMULA , the dimensionless operator
+becomes
+FORMULA 
+
+where the dimensionless factor FORMULA .
+Expanding the inverse steepening operator FORMULA 
+we get
+FORMULA 
+In the SEWA there is no restriction on the pulse bandwidth so
+single-cycle temporal resolution is achieved. However, since we
+consider SHG we should be careful. One assumption made when deriving
+Eqs. (REF ) is namely that the spectra of the FW and SH
+do not overlap (substantially). This assumption allows us to separate
+the fields as shown in App. . We chose
+FORMULA . This gives some overlap between the FW
+and SH spectra, but we always made sure that the spectral components
+in the overlapping regions were negligible.
+
+BBO
+We use a FORMULA -FORMULA  (beta-barium-borate,
+BBO) nonlinear crystal, where collinear Type I SHG is possible through
+the interaction FORMULA , i.e. the FW photons
+are ordinarily polarized, while the generated SH photon is
+extraordinarily polarized. BBO is a uni-axial crystal where phase
+matching can be achieved by birefringent phase matching by changing
+the angle FORMULA  between the FW input and the optical FORMULA -axis of
+the crystal. FORMULA  also changes with FORMULA , and is on average
+2.22 pm/V in the area in which we are interested in. The dispersion is
+calculated from the Sellmeier equations {{cite:017965c4-78ce-4115-a7f4-4b7016d5c0e0}}. Note in
+this connection that the analytical transition to compression
+FORMULA , as calculated from Eq. (REF ), is on implicit form.
+BBO is an excellent nonlinear medium for the current purpose because
+it has a decent quadratic nonlinear strength, and perhaps more
+important, it has a small GVM at NIR wavelengths, which is the major
+reason for using BBO instead of, e.g., periodically poled
+LiNbOFORMULA  for these wavelengths. BBO also has a very low cubic
+nonlinear refractive index. As we noted from Eq. (REF ) the
+balance between these is crucial. BBO also has a very low two-photon absorption
+coefficient (except in the ultra-violet part of the spectrum
+{{cite:74bd396b-1fe0-4a64-9475-96e552a0474e}}), justifying the approximation made in the
+derivation of Eqs. (REF ).
+In the literature several values for the nonlinear refractive index
+have been reported. We chose to use FORMULA  reported in
+Ref. sheik-bahae:1997 mainly because the measurements are
+done at phase-matching angles close to ours and also used fs pulses,
+but also because this value in the past has given the best agreement
+with experimental observations.

@@ -1,0 +1,105 @@
+
+HD 189733b's Radius and Density
+Baines & van Belle et al.
+Direct Measurement of the Radius and Density of the Transiting Exoplanet HD 189733B with the CHARA Array
+Ellyn K. Baines
+Center for High Angular Resolution Astronomy, Georgia State University, P.O. Box 3969, Atlanta, GA 30302-3969
+baines@chara.gsu.edu
+Gerard T. van Belle
+Michelson Science Center, California Institute of Technology, 770 S. Wilson Avenue, MS 100-22, Pasadena, CA 91125
+gerard@ipac.caltech.edu
+Theo A. ten Brummelaar, Harold A. McAlister
+Center for High Angular Resolution Astronomy, Georgia State University, P.O. Box 3969, Atlanta, GA 30302-3969
+theo@chara-array.org, hal@chara.gsu.edu
+Mark Swain
+Jet Propulsion Laboratory, 4800 Oak Grove Drive, Pasadena, CA 91109
+mark.swain@jpl.nasa.gov
+Nils H. Turner, Laszlo Sturmann, Judit Sturmann
+Center for High Angular Resolution Astronomy, Georgia State University, P.O. Box 3969, Atlanta, GA 30302-3969
+nils, sturmann, judit@chara-array.org
+1For preprints, please email baines@chara.gsu.edu.
+We have measured the angular diameter of the transiting extrasolar planet host star HD 189733 using the CHARA O/IR interferometric array. Combining our new angular diameter of FORMULA  mas with the Hipparcos parallax leads to a linear radius for the host star of FORMULA  FORMULA  and a radius for the planet of FORMULA  FORMULA . Adopting the mass of the planet as derived by its discoverers, we derive a mean density of the planet of FORMULA  g cmFORMULA . This is the first determination of the diameter of an extrasolar planet through purely direct means.
+infrared: stars, stars: fundamental parameters, techniques: interferometric, stars: individual: HD 189733
+Introduction
+A handful of extrasolar planets transit their host stars, causing a reduction in stellar flux as the planet blocks part of the star's disk. The planet orbiting HD 189733 is one of the fourteen known transiting planets. Using radial velocity and photometric measurements made at the Haute-Provence Observatory, {{cite:df59dc60-1840-4d51-a539-3554d36ec6c5}} discovered a hot Jupiter-like planet with an orbital period of 2.219 days and estimated the star's radius to be 0.76 FORMULA  0.01 FORMULA . This value, along with a planet-to-star radius ratio of 0.172 FORMULA  0.003, led to a planetary radius of 1.26 FORMULA  0.03 FORMULA . More recently, {{cite:a2a6e636-ac38-4007-96fc-47cdf0e05513}} refined the orbital parameters using FORMULA  multi-band photometry and found the planet's radius to be 1.154 FORMULA  0.032 FORMULA .
+We observed HD 189733 using Georgia State University's Center for High Angular Resolution Astronomy (CHARA) Array in order to directly determine the host star's radius and thereby calculate, in a strictly geometric manner, the radius and density for the planet.
+Planetary densities were previously estimated from photometric observations of the transiting planets and range from 0.38 g cmFORMULA  for HD 209458b {{cite:e103ebe2-46bf-4240-b4c2-3a33db5e48e2}} to 1.17 g cmFORMULA  for HD 149026b {{cite:9f79a1d8-fa05-4f9a-9bce-2cdb9981ef57}}. These density calculations are highly dependent on estimated stellar diameters based on spectral energy distribution (SED) fits using published photometric values, which are fundamentally indirect in nature, relying upon a priori assumptions regarding the host stars' stellar atmospheres. For the four `bright' FORMULA  transit host stars, these angular sizes are in the range of 0.05 to 0.40 milliarcseconds (mas). The longest baselines of the CHARA Array are capable of resolving the largest and brightest of these objects.
+
+Interferometric Observations and Diameter Determination
+Observations and Data Reduction
+Spatially resolved observations of HD 189733 were obtained with the CHARA Array, a six-element interferometer located on Mount Wilson, California {{cite:08706278-b8df-4690-a27e-c1d441893b01}}. The Array operates in two wavelength regimes: in visible wavelengths (470-800 nm) for tracking and tip/tilt correction; and in the near infrared FORMULA  (2.13 FORMULA m) and FORMULA  (1.67 FORMULA m) bands for fringe detection. Because of the small angular diameter for the star, only the FORMULA -band observations obtained at our longest baseline pair (telescopes E1 and S1) are used in our final diameter analysis.
+HD 189733 was observed on several nights during the summer of 2006 along with the calibrator star HD 190993, a B3 V star offset by 1.7FORMULA , selected on the basis of its small estimated angular diameter and its apparent lack of any close companion. The latter criterion was verified by a thorough literature search while a spectral energy distribution fit to HD 190993 led to an estimated angular diameter of FORMULA  mas with no residuals suggestive of a companion (see Figure REF ). This results in a predicted visibility (FORMULA ) for the calibrator of FORMULA =0.961FORMULA  at our longest baseline of 330 m, resulting in a contribution of FORMULA  to the calibrated visibility errors seen in Table 1. The small angular size and high visibility of the calibrator means HD 190993 is essentially unresolved using the CHARA Array, and the uncertainty in visibility due to calibrator diameter error is small compared to the measurement error. Therefore uncertainties in the calibrator diameter will not affect the HD 189733 diameter measurement significantly {{cite:751d8ec2-3cc2-4e7a-82a0-ec987a337624}}. Even HD 190993's considerable FORMULA  sin FORMULA  does not contribute error to our diameter fits due to its small angular size.
+We note that the M-dwarf companion to HD 189733 reported by {{cite:e11434bf-fa26-4b94-a81f-a2a50eeefafc}} on the basis of common space motion at an angular separation of 11.2 arcsec is well outside the interferometric field of view, and its presence has no effect on our results. Although the effect on visibility would be small in the first lobe of the FORMULA  curve, we have confirmed that our observed epochs do not occur within the predicted times of planetary transit or eclipse using the period and reference time of central transit of {{cite:a2a6e636-ac38-4007-96fc-47cdf0e05513}}
+All our observations were obtained with the single-baseline, pupil-plane “CHARA Classic” beam combiner, and we employed the standard practice of observing the target and calibrator sequentially to provide a series of time-bracketed observations from which the instrumental visibilities could be reduced to calibrated values for the target star. The observing practice and reduction process employed here is identical to that described by {{cite:4af4f5d9-3921-479a-bdb9-87be00b45fbf}}. The results of this process are summarized in Table .
+Single baseline Michelson stellar interferometers measure complex visibilities, usually recorded as amplitudes and phases, which are related to the intensity distribution of the target through a Fourier transform; phase information is typically corrupted by the atmosphere, leaving the amplitude, referred to simply as the FORMULA  {{cite:b3d00ae2-c0ba-4266-b272-825bf3a703a3}}.
+
+Diameter Fit
+Diameter fits to the visibilities and baselines from Table  were performed using the uniform disk (UD) approximation given by:
+FORMULA 
+where JFORMULA  is the first-order Bessel function and
+FORMULA 
+where B is the projected baseline at the star's position, FORMULA  is the apparent UD angular diameter of the star, and FORMULA  is the wavelength of the observation. The limb-darkened (LD) relationship incorporating the
+linear limb darkening coefficient FORMULA  {{cite:9782353e-b3f1-4995-9e24-715360d7e0e5}} is given by:
+FORMULA 
+These fits resulted in FORMULA  = FORMULA  mas and FORMULA  = FORMULA  mas, the latter incorporating FORMULA  = 0.36 taken from {{cite:47095b38-2cca-4dba-8e55-a5cc3ac006c2}} after adopting log FORMULA  = 4.5 and FORMULA  = 5000 K for HD 189733 (see Figure REF ). The reduced FORMULA  minimization in both cases yielded a value of 1.593, and the errors quoted are for an increase of the FORMULA  value of 1.0, that is, the 68% confidence interval. Dividing this FORMULA  by the number of degrees of freedom, which in our case is 8, yields 0.199, which is much less than 1.0 showing that the fit is quite good and that
+our error estimates for the visibility points are conservative. If we rescale these errors bars to force FORMULA  to be equal to the number of degrees of freedom, which assumes that there are no systematics in the measurements, they are approximately half the size as they are shown in
+Figure 2 and would also reduce our final error estimates by a factor of two. However, we will remain conservative and continue to use the error estimate based on the raw FORMULA  value.
+
+Estimate of the Angular Size of HD 189733
+An a priori estimate of the angular size of HD 189733 is a parameter of considerable interest, because the size of HD 189733b is determined only relative to the size of its parent star from the photometric transit timing data. {{cite:a2a6e636-ac38-4007-96fc-47cdf0e05513}} consider no less than four separate methods in their investigation of the system: FORMULA  color angular radius prediction {{cite:07fd4072-f185-45a8-bc9d-d3c57b97bb24}}, temperature radius, isochrone radii from {{cite:23ccc9f0-b396-4078-9a6f-4601c4a98241}} and {{cite:4b972e4c-e6ee-4f0c-bf7e-fdff4af05ba6}}, and the Johnson V - 2MASS FORMULA  calibration of {{cite:3cbb1a04-6d67-4cb5-8c57-ad4980a90dfd}}.
+None of these approaches appears to have much merit, since the only primary data we have been able to find in the literature were Tycho FORMULA , FORMULA  {{cite:cbce584a-d3ce-4a34-8e05-9edf56e7fba8}}, Strömgren ubvy {{cite:8a5212d0-a640-4fc6-8a89-26200bf37f50}}, and 2MASS FORMULA  photometry {{cite:7dc6fcdc-3329-402f-b239-d9a9565e004a}}. No spectroscopy or measures of log FORMULA  appear to be available in the literature, nor do direct measures of Johnson photometry. The values of FORMULA  used in {{cite:07fd4072-f185-45a8-bc9d-d3c57b97bb24}} and {{cite:3cbb1a04-6d67-4cb5-8c57-ad4980a90dfd}} appear to have been extrapolated from FORMULA . Furthermore, sustained long-term observations of HD 189733 by the MOST asteroseismology satellite have found the star to be photometrically variable {{cite:ca7eee59-b8b5-4e72-b0ca-b7a10bdb13bd}}, casting significant doubt on any radius derived from a photometric relationship. Based on this information, we consider the size errors for HD 189733 quoted in {{cite:df59dc60-1840-4d51-a539-3554d36ec6c5}} and {{cite:e11434bf-fa26-4b94-a81f-a2a50eeefafc}} derived from the methods cited above to be underestimates.
+To explore what is a more appropriate error for an inferred angular size, we executed a spectral energy distribution fit of the available spectrophotometry for HD 189733 cited above. Given the known variability of HD 189733, the quoted millimagnitude error estimates of the Tycho and Strömgren photometric data points were increased by a factor of ten. These photometric data points were fit to the solar-abundance K0 V and K2 V templates available from {{cite:6a0e5970-55c6-4656-8113-b65ef7574fa1}}, with the resulting fit values for reddening, bolometric flux, and angular diameter seen in Table , along with the appropriate FORMULA  per degree of freedom (FORMULA  PDF) values. Unfortunately, a K1 V template is not available in that library, although an estimate of one from interpolating between the two bracketing spectral types was synthesized by us for testing this spectral type. These fits are seen in Figure REF .
+The appropriate model spectrum from {{cite:3e34b4f8-2483-4f19-bac2-b032bde66736}} for a 5000 K star was fit with a FORMULA  PDF of 2.80, but this model (nor any other available in the literature) unfortunately only covered the visible portion of the spectrum. The 115 to 2500 nm range of {{cite:6a0e5970-55c6-4656-8113-b65ef7574fa1}} was necessary to fully characterize the available photometry, and thus we constrained our analysis to this particular set of stellar templates.
+Our finding is that, even with this highly detailed analysis of the stellar spectral energy distribution, the most appropriate modelling of that SED reveals a predicted angular size of only FORMULA  mas - a 3% error bar - which corresponds to a stellar linear radius of FORMULA  FORMULA .
+
+Discussion
+Our new direct determination for the angular diameter of HD 189733 of FORMULA  mas can be combined with the Hipparcos parallax for the star of FORMULA  mas {{cite:62848b51-fa76-404c-be13-da39a7c35bd8}} to give a physical radius for the star of FORMULA  FORMULA , which is about 3% larger than that adopted by {{cite:a2a6e636-ac38-4007-96fc-47cdf0e05513}}.
+By the nature of the light curve analysis, the relative increase for the radius of the host star will directly translate into the same relative increase in the radius of the planet HD 189733b. Thus, revising the radius of {{cite:a2a6e636-ac38-4007-96fc-47cdf0e05513}} of 1.154 FORMULA , our new estimate for this value is FORMULA  FORMULA . Furthermore, adopting the value of {{cite:df59dc60-1840-4d51-a539-3554d36ec6c5}} for the mass of the planet of 1.15 FORMULA , we derive a new estimate for the density of HD 189733b to be FORMULA  g cmFORMULA . These values are in good agreement with {{cite:97bdaeb0-6139-40bd-a1ed-1d4ad2e367e1}}, who used transit photometry to constrain the stellar and planetary radii. The values of FORMULA , FORMULA , and FORMULA  are all consistent with the modest collection of these parameters presently available for transiting exoplanet systems and support the conclusion that HD 189733 is not among the few hot Jupiters that present extraordinarily large radii for their masses.
+
+Interferometric Non-Detection of Binarity of HD 189733
+Given the higher resolution of interferometric arrays, a possible close-separation tertiary companion may affect our measures of HD 189733's visibility and thereby complicate our interpretation. As such, it was prudent for us to also observe HD 189733 with the Palomar Testbed Interferometer (PTI) {{cite:b3d00ae2-c0ba-4266-b272-825bf3a703a3}}, an instrument with intermediate baselines on a variety of sky projections, suitable for exploration of possible unseen nearby luminous (stellar) companions. PTI has been demonstrated to be sensitive to nearby companions with FORMULA  {{cite:de701403-ae47-4a83-b445-36e7ed232f96}}, which for a K2-3 V primary star rules out any M-dwarf companions {{cite:5b7c27c2-7811-4f6a-8c21-aeea9160ac76}}.
+PTI observed HD 189733 in the FORMULA -band on the nights of 2006 June 10-12, 2006 June 24, and 2006 July 8-10. Four of those nights used PTI's 85-m NW baseline configuration, two used the 110-m NS
+baseline, and one night was a 85-m SW baseline night. For all of these nights, HD 189733's normalized FORMULA  data points were indistinguishable from unit visibility, which corresponds to a completely unresolved point source, as would be expected for a single FORMULA  mas star being observed by PTI at 2.2 FORMULA m.
+
+Conclusion
+Our results for the radii of the host star and planet in the HD 189733 exoplanet system are formally in good agreement with existing measurements of these parameters as well as with the estimate for the density of the planet and have the additional and significant merit that they represent FORMULA  measurements of stellar and planetary diameters that do not rely upon inferences about stellar atmospheres. While the diameter measurements are currently at a 6% level of accuracy, we expect to improve this considerably as we implement fringe detection at shorter wavelengths at the CHARA Array. In the meantime, these results demonstrate a new role that long-baseline optical/infrared interferometry can play in the field of exoplanet astronomy.
+We would like to thank Andy Boden for sharing his SEDfit tools with us, which we used to produce the fits seen in Figures 1 and 3, and we appreciate the care that CHARA Array Operator P.J. Goldfinger used in obtaining many of these observations. The CHARA Array is funded by the National Science Foundation through NSF grants AST-0307562 and AST-06006958 and by Georgia State University through the College of Arts and Sciences and the Office of the Vice President for Research. Observations with PTI are made possible through the efforts of the PTI Collaboration, which we acknowledge. Funding for PTI was provided to the Jet Propulsion Laboratory under its TOPS (Towards Other Planetary Systems), ASEPS (Astronomical Studies of Extrasolar Planetary Systems), and Origins programs and from the JPL Director's Discretionary Fund. Part of the work described in this paper was performed at the Jet Propulsion Laboratory under contract with the National Aeronautics and Space Administration. This research has made use of the SIMBAD literature database, operated at CDS, Strasbourg, France, and of NASA's Astrophysics Data System. This publication makes use of data products from the Two Micron All Sky Survey, which is a joint project of the University of Massachusetts and the Infrared Processing and Analysis Center/California Institute of Technology, funded by the National Aeronautics and Space Administration and the National Science Foundation.
+cccc
+0pc Interferometric Measurements of HD 189733.
+
+MJD  Baseline  Visibility  FORMULA Vis
+(53886.0 +)  (m)
+
+0.905  330.5  0.851  0.071
+1.936  327.9  0.843  0.056
+1.958  324.9  0.857  0.054
+8.865  330.5  0.869  0.034
+76.742  326.5  0.909  0.069
+76.761  323.8  0.863  0.049
+76.778  321.3  0.877  0.045
+76.793  319.0  0.839  0.045
+76.824  315.5  0.829  0.061
+cc|cccc
+6
+
+0pc
+Spectral energy distribution fits for HD 189733 photometry to
+empirical spectral templates.
+
+ 2cModel Parametersa 
+ 4cFitted parameters
+Spectral type  Effective Temperature  FORMULA  PDF
+ Reddening  Bolometric Flux FORMULA  
+Angular Diameter
+ FORMULA  (K) 
+ FORMULA  (mag)  (erg cmFORMULA  sFORMULA  FORMULA mFORMULA )
+ FORMULA  (mas)
+
+K0 V  FORMULA   2.62  FORMULA   FORMULA    FORMULA
+K1 Vb  FORMULA   1.94  FORMULA   FORMULA    FORMULA
+K2 V  FORMULA   2.39  FORMULA   FORMULA    FORMULA
+aModels from {{cite:6a0e5970-55c6-4656-8113-b65ef7574fa1}}.
+bK1 V model interpolated from the K0 V and K2 V models.
+FIGURE 
+FIGURE 
+FIGURE 

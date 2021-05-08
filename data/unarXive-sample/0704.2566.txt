@@ -1,0 +1,89 @@
+
+hep-th/??????On the quark propagator singularity
+V. Šauli
+CFTP and Departamento de Física,
+Instituto Superior Técnico, Av. Rovisco Pais, 1049-001 Lisbon,
+Portugal
+Using the method of Fukuda and Kugo {{cite:3c215f62-29b2-4543-838a-a67d8157b5aa}} the continuation of Euclidean solution is performed to the timelike axis of fourmomenta. It is shown that
+assumed presence of the real simple pole in quark propagator is not in agreement with the solution. The simple pole disappears because of the discontinuity in the
+resulting quark mass function.
+11.10.St, 11.15.Tk
+Theoretical analysis of the singularities and the behaviour of QCD Greens functions in the timelike momentum regime is still not well understood. Natural nonperturbative framework for the study of infrared properties of QCD Green's functions is the formalism of Schwinger-Dyson equations (SDEs). For a review of recent progress in the whole QCD see {{cite:59c2ee28-e272-4f90-9b4f-40c1650ecf8a}}.
+Few possibilities of the quark propagator behaviour have been discussed in the literature.
+As quarks are confined objects in nature one of the most natural expectation is the absence of a real pole in quark propagator. Some of the models suggest that the real pole can be split into the complex ones. The complex conjugated poles have been phenomenologically appreciated in various studies. Furthermore, it has been recently realized in {{cite:dcb65264-ab9e-4b0c-8479-fa63757302d5}} that the structure of light quark propagator is not reliably described by the Lehmann representation. The numerical analyzes exhibit inefficiency of spectral representation for correct description of QCD chiral symmetry breaking. It is also known that when the strong interaction happen to lead to the highly infrared singular interaction then the real quark pole naturally disappear {{cite:61011e32-d577-40ae-9a44-5cda2fbb62cd}}.
+However, the absence of pole in the quark propagator is not the only possible mechanism of quarks confinement and the existence/absence of the real pole is still undetrmined {{cite:f7d50e99-7aa0-4b61-adc6-917520395e83}}.
+The primary objective of this paper is to check the presence/absence of a real quark propagator pole by using a simple generalization of the Fukuda-Kugo timelike continuation of ladder fermion SDE
+to the case of QCD, e.g. the asymptotic freedom is correctly taken into account through the known behaviour of running coupling. Using usual assumptions we describe contradicting results we obtained: The quark propagator does not exhibit the simple pole behaviour, instead, the mass function is largely discontinuous at observed real branch point.
+The following conventions are used: the positive variables FORMULA  represent
+the square of momenta such that FORMULA  for timelike
+momenta when FORMULA , while FORMULA  for FORMULA  in spacelike region. Our metric is
+FORMULA . For purpose of clarity the mass function FORMULA  is labeled as
+FORMULA  in the spacelike region of fourmomenta and as FORMULA  when evaluated for timelike
+fourmomenta (i.e., FORMULA ).
+The quark propagator FORMULA  can be conventionally characterized by two independent scalars, the mass function FORMULA  and renormalization wave function FORMULA  such that
+FORMULA 
+noting the bare fermion propagator is FORMULA , where
+SDE for the inverse of FORMULA  reads
+FORMULA 
+where simply FORMULA , FORMULA  and FORMULA  is the full quark gluon vertex, FORMULA  represents gluon propagator, both Greens functions satisfy their own SDE.
+To make the later continuation to the timelike regime more easily tractable
+we intruduce approximations that we believe do not change qualitatively feature of solution.
+We will work in Landau gauge and take FORMULA . The importance of (un)presence of FORMULA  can be estimated from similar Euclidean studies.
+The so called Analytic Running Coupling (ARC) {{cite:355a2f2b-9fb6-4fd6-8cbd-2b2bbd9fb72e}}, {{cite:f4563c22-e8fd-4bb3-9c99-6619f2e8b896}} is used
+to properly include the running of the QCD coupling.
+Noting that the effect of dynamical chiral symmetry breaking has been already studied {{cite:e966b37f-461b-4de7-968e-680e995daa04}} within ARC-SDE combined framework.
+In dressed one loop approximation the following prescription of the SDE kernel is used
+FORMULA 
+with ARC written via dispersion relation as
+FORMULA 
+The correct one loop QCD running coupling at asymptotically large FORMULA  is ensured
+when  FORMULA
+FORMULA 
+while the infrared behaviour of ARC is modeled through the following modification of the spectral function:
+FORMULA 
+where FORMULA  is given by (REF ). Nonperturbative extra term FORMULA 
+is chosen such that it does not affect ultraviolet asymptotics. Simultaneously it leads to the expected QCD scaling of infrared up and down quark masses FORMULA , where FORMULA  numerically.
+In order to define the kernel entirely we fix FORMULA 
+and FORMULA , noting the later value corresponds with one loop ARC FORMULA  calculated for three active quarks.
+After making the trace, SDE (REF ) for the mass function reads
+FORMULA 
+where FORMULA  for FORMULA  group generators.
+Using the integral representation (REF ) and the following simple algebra
+FORMULA 
+we get after the Wick rotation and angular integration the resulting equation for FORMULA :
+FORMULA 
+The gap Eq. (REF ) contains potential UV divergence and can be renormalized after a suitable regularization. Since low relevance for our topic, the explanation is simplified and the renormalization issues are not discussed. In presented work we do not renormalize at all and solve the regularized gap equation. For this purpose we follow hard cutoff scheme and introduce the upper integral regulator FORMULA , the numerical data has been obtained for FORMULA . Let us mention that we have explicitly checked that renormalization has only marginal numerical effect when comparing to the properly regularized solution solely. Within presented model the mass function of the light and and heavy quarks has been calculated. The current bare masses were chosen to be
+FORMULA . The resulting mass functions are plotted in Fig. REF .
+FIGURE 
+To make a continuation of Euclidean Greens function to the physical timelike momenta is a rather cumbersome task. The assumptions are indispensable and not rarely if checked consequently, they appear not justified in many physically important cases. In what follows we will show that the assumption of Fukuda-Kugo continuation
+in QCD is another case.
+Changing trivially the order of the integrations we can immediately follow the Fukuda-Kugo prescription and write down the result for the timelike momentum. Continued SDE for the positive timelike square of fourmomenta can be written in the following way:
+——————————————————————————-
+FORMULA 
+———————————————————————————–
+where the function FORMULA  is defined in Eq. (),
+FORMULA  is a pole mass,
+and the function FORMULA  is defined as
+FORMULA 
+Eq. (REF ) represents the integral equation for the mass function FORMULA  defined at the timelike axis FORMULA . It consists of the dominant term FORMULA  represented by regular integral which including the mass spacelike regime defined function FORMULA . It also contains the principal value integral that includes the complex function FORMULA  itself. As usually, absorptive part of FORMULA  is generated when crossing the branch point.
+FIGURE 
+The gap equation has been solved by the standard numerical iteration. To check a numerical stability several integrators
+have been used to perform the integration numerically, e.g. the Gaussian and Simpson ones.
+The observed form of the
+discontinuity in numerically obtained quark mass function strongly indicates that the singularity of quark propagator is softened such that
+FORMULA 
+which is in contradiction with the assumption. The limit (REF ) is well defined since the left and right limits coincide. Note taht this is not a case of FORMULA  because of discontinuity in FORMULA . The function FORMULA  becomes complex above the FORMULA  with FORMULA  starting from zero at this point. However, the right limit, if considered for the real part of FORMULA , is a bit model dependent, however we should stress that it has never leaded to the singular propagator. There are two possible realizations observed numerically which spectacularly differ by the behaviour of FORMULA  in the right vicinity of FORMULA . Using a large UV cutoff one can find that the function FORMULA  cuts the linear function FORMULA  for some FORMULA  but FORMULA  is always nonzero at that point.
+The second possibility that the inequaility FORMULA  is hold for any FORMULA  is observed for low scale cutoff. Such situation is displaed in Fig.4 for the case FORMULA  and light quark
+mass FORMULA . Of course, the later case is not real QCD, but this is rather qualitative test of cutoff independence. As mentioned the left limit of FORMULA  is less affected by the model changes, here it has been lowered about 50MeV. Thus in any case, one can conclude that the shape and perhaps complexity of the function FORMULA  in the vicinity of its discontinuity prohibit the appearance of the real pole in the dressed quark propagator.
+Termed in other way, we obtain finite quark propagator
+with discontinuous mass function at the point where the ordinary threshold would be expected.
+If one need, the discontinuity can be classified
+FORMULA 
+where FORMULA  is the "left discontinuity" of the function FORMULA  at the point FORMULA .
+The point FORMULA  is just defined by this discontinuity. Its numerical value has been searched by
+minimization of FORMULA  during the iteration procedure for each quark flavor separately. The numerical values we have found start from approximately FORMULA  for vanishing current masses and slowly grows up to be FORMULA  for heavy quarks. The ratio FORMULA  decreases for heavier flavors, which is agreement with expected supression of nonperturbative effects in the case of heavy quarks.
+FIGURE 
+The numerical solutions are displayed in Fig. REF  for the light quarks FORMULA  and
+in Fig. REF  for the heavy flavors, in the later case, the mass function for the strange quark is added for comparison.
+FIGURE 
+In a strict sense the observed solutions should not be taken seriously, since based on wrong assumptions. On the other hand, the timelike continuation up to the discontinuity point FORMULA  should be trustworthed. Then we can conlude that there is strong indication of disappearance of pure real pole at all, no matter what the continuation above the point FORMULA  is. The observation of mass gap FORMULA  is in agreement with the confinement of quarks. Hadrons can never dissociate into the free quarks. A development of a new techniques for more complete study of timelike behaviour of QCD Greens function are beeing looked for.

@@ -1,0 +1,1133 @@
+
+Self-consistent slave rotor mean field theory for strongly
+correlated systems
+E. Zhao
+Department of Physics, University of Toronto, Toronto,
+Ontario M5S-1A7, Canada
+A. Paramekanti
+Department of Physics, University of Toronto, Toronto,
+Ontario M5S-1A7, Canada
+
+Building on work by Florens and Georges, we formulate and study a self-consistent slave rotor mean field theory for strongly correlated systems. This approach views the electron, in the strong correlation regime, as a composite of a neutral spinon and a charged rotor field. We solve the coupled spinon-rotor model self-consistently using a cluster mean field theory for the rotors and various ansatzes for the spinon ground state. We illustrate this approach with a number of examples relevant to ongoing experiments in strongly correlated electronic systems such as: (i) the phase diagram of the isotropic triangular lattice organic Mott insulators, (ii) quasiparticle excitations and tunneling asymmetry in the weakly doped cuprate superconductors, and (iii) the cyclotron mass of carriers in commensurate spin-density wave and U(1) staggered flux (or d-density wave) normal states of the underdoped cuprates. We compare the estimated cyclotron mass with results from recent quantum oscillation experiments on ortho-II YBCO by N. Doiron-Leyraud et al (Nature 447, 565 [2007]) which appear to find hole pockets in the magnetic field induced normal state. We comment on the relation of this normal ground state to Fermi arcs seen in photoemission experiments above Tc. This slave rotor mean field theory can be generalized to study inhomogeneous states and strongly interacting models relevant to ultracold atoms in optical lattices.
+Introduction
+It is well known that strong electronic correlations in systems such
+as the transition metal oxides and ultracold atoms in optical lattices
+can lead to a wealth of novel phases and
+interesting phenomena not observed in conventional metals and
+superconductors. A continuing theoretical challenge is to develop
+tools to solve model Hamiltonians, such as the Hubbard model or the
+FORMULA -FORMULA  model, to gain a qualitative as well as quantitative
+understanding of the strong correlation regime of these models where
+perturbative methods are no longer expected to work. A
+variety of different approaches have been developed to address this
+issue, and they can be classified roughly into two categories. The
+first category includes numerical methods such as
+exact diagonalization which are good at capturing the short distance
+physics {{cite:6ed006df-2321-42ab-a4e5-b54fe5f6160b}}. A much more sophisticated approach
+is dynamical mean field
+theory (DMFT) which maps the Hubbard Hamiltonian onto a quantum
+impurity model
+self-consistently coupled to a dynamical bath {{cite:b14a7411-ac2a-4b4c-bac3-607c3f2491d0}}, {{cite:9c97c4b8-5abc-40da-b4d9-b62be65d0757}}.
+This approach
+and its extensions, which include some degree of
+spatial fluctuations, have led to significant
+progress in our understanding of the Mott (metal-insulator)
+transition as well as the short-range spin correlations and
+superconductivity in doped Mott insulators {{cite:4ce85161-ca42-45e7-8bf4-18083da21287}}, {{cite:7a945a4e-ca47-4d23-8b83-9e88b8c0431f}}.
+In the second category
+are semi-analytical approaches including renormalized mean field
+theory {{cite:0c3277f4-81b8-49df-aeef-d1b996d8f3f8}}, {{cite:9b68d231-f4a9-4b10-adce-79e7827ad92c}}, {{cite:d346d9ea-1afc-4b73-ab20-50c38a359840}}
+and slave particle mean field theories.
+Slave-particle mean field theories, such as slave boson
+{{cite:73ca65a7-5b3a-4944-aa4c-cdf4fdf7b2e0}}, {{cite:135f550c-1f78-4e3c-9313-62427ac6b69f}}, {{cite:55bd53fc-8242-4a8c-a3c8-150b69cc71c3}} and slave
+rotor {{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}} theories, are motivated
+by the observation that strongly interacting systems often display (i)
+quite disparate charge and spin response with (ii) little evidence
+of sharply defined electron-like quasiparticles. This observation
+has led to the phenomenological spin-charge separation postulate
+that electrons in many strongly correlated materials
+may be better viewed as composites of `chargons' and
+`spinons', which respectively describe the charge and spin degrees
+of freedom. A physically transparent way to encapsulate this
+idea is provided by the slave particle approaches which enlarge the
+Hilbert space of the physical electronic degrees of freedom in terms
+of separate chargon and spinon Hilbert space. The unphysical
+states are then eliminated by enforcing constraints on the enlarged
+Hilbert space. The strongly correlated model
+then maps onto a model of interacting slave particles
+coupled to gauge fields {{cite:55bd53fc-8242-4a8c-a3c8-150b69cc71c3}}, {{cite:a764eb60-7f56-4354-b608-d99de6c79445}}.
+This rewriting of the strongly
+correlated electronic model is useful in situations where the
+gauge fluctuations are weak. This assumption, that the gauge fluctuations
+are weak and can be ignored, is a reasonable approximation for conducting
+(metallic or superconducting) states, broken symmetry insulating phases
+such as the Neel antiferromagnet, or if the gauge fluctuations are
+gapped {{cite:a764eb60-7f56-4354-b608-d99de6c79445}}. In other cases, we have to appeal to
+comparisons with experiments to see if such slave particle mean field
+approaches provide a more useful starting point to think about the
+physics compared to perturbative analyses.
+In this paper we present a further development in the slave particle
+mean field approach. In conventional U(1) slave boson theory for
+the ground state of the FORMULA -FORMULA  model {{cite:135f550c-1f78-4e3c-9313-62427ac6b69f}}, {{cite:55bd53fc-8242-4a8c-a3c8-150b69cc71c3}}, one is
+in the regime where the
+on-site Coulomb repulsion FORMULA , and the bosons are assumed to be
+condensed with the boson fluctuations being ignored. However, the
+boson model is a strongly interacting model which has to be solved
+in order to obtain its ground state and excitations. Similarly, for
+systems close to a Mott transition, number (charge) fluctuations are
+significant so it is more appropriate to describe the charge degree
+freedom using slave rotors {{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}}.
+The rotor model is also nontrivial: its Hamiltonian
+resembles the Bose-Hubbard model and again it has to be solved. For
+instance, at commensurate densities, the rotor model can undergo a Mott
+transition leading to an electronic Mott transition in the
+coupled spinon-rotor problem. We study a number of simple
+situations and present results which suggest
+that solving the rotor model and coupling it
+self-consistently to the spinons provides a reasonable mean field
+framework to study strongly correlated electronic systems, and also
+recovers U(1) slave boson mean field results for FORMULA .
+The rotor sector have been studied by several authors using single
+site mean field theory as originally applied to the Bose-Hubbard
+model {{cite:c9fc2c39-3521-4bc2-8db4-ba6cab4f7bd0}}, {{cite:94632e8a-71e4-4142-af0c-ea860939c688}}. We shall show that while the single
+site approximation
+captures the essence of Mott transition {{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}}, it is inadequate
+in some
+respects and sometimes yields incorrect results. Going beyond this
+requires the evaluation of short range spatial correlations. We
+propose to solve the rotor Hamiltonian by
+diagonalizing it on a small cluster coupled to the rest of the
+lattice self-consistently through an order parameter bath.
+We demonstrate that such a
+cluster mean field theory can get rid of the aforementioned problems
+of single site approximation while keeping the whole procedure
+conceptually simple and computationally affordable. This constitutes
+the main new aspect of the present work. This procedure is rather
+general, and we expect it would also be useful for other strongly
+interacting bosonic models, e.g., those which arise in the context
+of cold atoms in optical lattices. It can also be
+adapted to address inhomogeneous electronic states. In this paper,
+we apply this technique to address issues arising from some recent
+experiments in strongly correlated electronic systems.
+The outline of this paper and a summary of the main results
+is as follows. We begin in sections II
+with a review of the basic idea of the slave rotor approach and the
+FORMULA  model Hamiltonian. In section III we introduce the
+self-consistent mean field theory of the rotor sector and spinon
+sector. Sections IV and V discuss various mean field ansatzes for the
+spinon Hamiltonian, and the cluster mean field theory for the
+rotors. The remainder of the paper deals with applications of the
+coupled spinon-rotor mean field theory. In Section VI, we study a metal
+to Mott insulator transition as well as the possibility of a spin
+liquid phase in a Hubbard-type model at half-filling on triangular
+lattice. This model describes organic compounds, such as
+FORMULA -(ET)FORMULA CuFORMULA (CN)FORMULA , which feature a pressure-tuned Mott
+transition {{cite:eb06c036-1b1f-4900-af06-cb599a864762}}, {{cite:4b43e23c-1bcd-43f7-8022-38a0ea2b1434}}. We show that in contrast to a single-site
+mean field theory,
+the cluster approach leads to the possibility of a spin liquid state
+between the metallic state and the antiferromagnetically ordered
+insulator. Section VII illustrates the application of the mean field
+theory to the superconducting state of doped cuprates. Specifically,
+we find that properties of quasiparticle excitations such as their
+spectral weight and Fermi velocity, which are measured in photoemission
+experiments, are in qualitative agreement with variational
+wavefunction and renormalized mean field theory results. We also
+study the particle-hole asymmetry observed in recent tunneling
+experiments {{cite:efde05c9-f237-462a-93f5-ab08131a6a3a}}
+on the weakly doped cuprates, and make an estimate of
+how this asymmetry varies with the cutoff energy scale in tunneling
+asymmetry imaging. In section VIII, we study a strongly correlated
+commensurate spin-density wave (SDW) state and a U(1) staggered flux or
+d-density wave (DDW) state
+as possible underlying normal states of the underdoped cuprates. We
+use the slave rotor mean field theory to estimate the effective
+cyclotron mass of the carriers in these states. These results are
+compared with recent high field quantum oscillation experiments on
+ortho-II YBCO which shows evidence of hole pockets. We suggest that
+doping dependent studies of the cyclotron mass should
+be able to distinguish between these two normal states.
+
+Model and slave rotor representation
+We consider the FORMULA  model for electrons on a two dimensional
+lattice
+FORMULA 
+Here
+FORMULA  represents hopping amplitudes to nearest and
+next nearest neighbor sites respectively. FORMULA  is the local Coulomb
+repulsion. FORMULA  is the
+electron spin operator, where FORMULA  are the Pauli matrices. FORMULA  is an
+antiferromagnetic spin exchange between spins on neighboring sites.
+Ordinarily, the superexchange FORMULA  derives from a combination of the
+kinetic terms and the Hubbard repulsion in the regime FORMULA ,
+with FORMULA . Here, however, we retain an explicit FORMULA  term
+in the model since we will analyze the spin physics of this model
+below using mean field theory. The FORMULA  term is required in order to
+reproduce the strong coupling antiferromagnetic spin correlations
+within mean field theory (which decouples the spin and charge
+degrees of freedom). Even for weak to moderate couplings, FORMULA , the Hubbard repulsion leads to antiferromagnetic spin
+fluctuations: in this regime, the FORMULA  term can be viewed as a way to
+reproduce the weak coupling equal time spin structure factor within
+mean field theory. The FORMULA  model have been studied previously by
+several authors {{cite:a40fcf0c-07d4-4eba-9745-919f330df4f0}}, {{cite:04509f22-7073-4254-a532-dc475220b5bf}}, {{cite:e4fbc228-11ab-44e0-9301-1fed1e54f4a8}}.
+We will solve this model using the slave rotor
+method, for a range of densities around half-filling and for a range
+of repulsive interactions FORMULA . For studying interaction driven
+transitions such as the Mott transition, we will keep FORMULA  fixed for
+simplicity. In order to study the doping dependent correlations at
+fixed FORMULA , we set the antiferromagnetic exchange FORMULA .
+We begin with a review of the slave-rotor description of strongly
+correlated electron systems introduced by Florens and Georges
+{{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}}. The
+electron Hilbert space at a single lattice site has four states,
+FORMULA . That is, it could be
+empty, or be occupied by a spin up electron, or a spin down
+electron, or be doubly occupied. In the slave rotor representation,
+the electron charge degree of freedom is described by a charged
+rotor and the spin degree of freedom is described by a spin-1/2
+spinon (fermion). Each of the four physical states then corresponds
+to a direct product of the rotor state and the spinon state,
+FORMULA 
+Here on the r.h.s.,
+the first ket FORMULA  is the eigenstate of rotor charge
+with eigenvalue FORMULA , and the second ket is eigenstate
+of spinon occupation number, FORMULA  for
+FORMULA . Notice we have chosen a background
+charge FORMULA  for the state with no electrons and each added electron
+contributes charge FORMULA . The enlarged rotor-spinon Hilbert space
+contains unphysical states such as FORMULA . These unphysical
+states are avoided by imposing the operator constraint
+FORMULA 
+In the slave
+rotor representation, the electron number is equal to the spinon
+number, i.e.,
+FORMULA 
+The
+electron creation (annihilation) operator
+FORMULA 
+where FORMULA  is the
+spinon annihilation operator, and the rotor creation (annihilation)
+operator , FORMULA  (FORMULA ), is
+defined by
+FORMULA 
+We can then rewrite
+the FORMULA  Hamiltonian in terms of the spinon and rotor field
+operator as
+FORMULA 
+Here we have expressed the Hubbard
+repulsion between electron charges in terms of the rotors since only
+the rotors carry charge. Similarly, the antiferromagnetic exchange
+interaction is expressed in terms of the spinons, with FORMULA  since only the spinons have a spin
+quantum number. Finally, the electron density is determined via the
+spinon density since FORMULA  as mentioned
+earlier. Notice that in the usual slave-boson formulation of the
+FORMULA  model, the doubly occupied state is forbidden because FORMULA . By comparison, double occupancy is allowed in the slave
+rotor theory, which makes it possible to investigate the effect of
+charge fluctuations for arbitrary values of FORMULA . The slave rotor
+formulation was used by Florens and Georges to study the Mott
+transition of the Hubbard model (using single site mean field theory
+as well as a sigma model for the rotor fluctuations) and the Coulomb
+blockade phenomenon in quantum dots {{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}}. Lee and Lee
+have used the slave
+rotor representation to study possible spin liquid phases near the
+Mott transition in Hubbard model on the triangular lattice {{cite:6128ec79-f771-4d39-9d17-0bb244f7bdc4}}.
+
+Slave Rotor Mean Field Theory
+In the spirit of slave particle mean field theory, we approximate
+the electron wavefunction by the direct product of appropriate
+spinon and rotor wavefunctions, with the constraint equation
+satisfied on average in the resulting mean field state,FORMULA .
+Together with FORMULA , this leads to two
+mean field constraints,
+FORMULA 
+where we have defined the doping FORMULA , with
+FORMULA  (FORMULA ) representing hole (electron) doping. For
+example, the electron ground state FORMULA , and our task reduces to find the normalized
+wavefunctions FORMULA  subject to the
+constraint that FORMULA  and FORMULA .
+We define reduced spinon and rotor Hamiltonian as
+FORMULA 
+Here we
+have used the notation, FORMULA  and FORMULA , and also defined
+FORMULA 
+Note that there is no implicit summation over spin
+FORMULA  in defining FORMULA , and we have assumed FORMULA  is
+spin-independent. We will denote the nearest and next-nearest
+neighbor values of FORMULA  as FORMULA  and FORMULA  respectively. Similarly,
+the nearest and next-nearest neighbor values of FORMULA  will be
+denoted by FORMULA  and FORMULA .
+The ground state energy in mean field theory is FORMULA . Thus, in order to minimize FORMULA , we must choose
+FORMULA  to be the ground state of FORMULA , and
+FORMULA  to be the ground state of FORMULA . This
+means we must self consistently solve for the ground state of the
+two coupled Hamiltonians
+FORMULA 
+ where we have introduced chemical potentials for
+the spinons (FORMULA ) and rotors (FORMULA ) as Lagrange
+multipliers to impose the mean field number constraints
+Eq.(REF ) and (). Note that the two decoupled
+Hamiltonians FORMULA  are, at this stage, still strongly
+interacting models, and we will use further approximations in the
+spinon and rotor sectors to make progress. However, note that if we
+develop better techniques to solve these independent spinon and
+rotor Hamiltonians, we can obtain better results within this
+self-consistent mean field approach.
+The ground state energy of the electronic model is given by the
+expectation value of the Hamiltonian FORMULA  of Eq.(REF ),
+which leads to
+FORMULA 
+
+Spinon Sector
+The spinon sector corresponds to a Hamiltonian with kinetic energy
+and an antiferromagnetic exchange interaction. In principle, the
+spinon sector can be treated using diagrammatic techniques,
+especially when the spin interaction strength is small compared to
+the spinon kinetic energy. Away from this regime, for larger spin
+interactions, the diagrammatic methods may not be adequate. Here we
+adopt a simpler mean field approach to the spinon sector which has
+the advantage that we can describe the normal state, various broken
+symmetry states, and singlet pairing states of spinons.
+Uniform spin liquid and FORMULA  Neel state on the
+triangular lattice
+There have been extensive theoretical studies of the Mott
+transition on the triangular lattice
+{{cite:0a030a53-269b-4093-86c1-ccf9320c359d}}, {{cite:c876c9e8-2ab8-490c-bb82-0d20ea80e5be}}, {{cite:5e810afa-d419-456a-97af-d32f8d137ead}}, {{cite:5182831d-2368-4f4d-91cb-862172fb3d40}}, {{cite:ee708048-dda3-4e87-ab99-042e8c31d4ba}}, {{cite:02731120-2668-4a68-8815-f06b189c558f}}, {{cite:aeef2f02-b40e-4919-ab92-276ceb4958bd}}, {{cite:e4fbc228-11ab-44e0-9301-1fed1e54f4a8}}.
+Among the suggested insulating
+states are a uniform spin liquid which can be viewed as a `Fermi
+liquid' of spinon quasiparticles {{cite:00fa6f24-a527-44a3-84d9-a4b12c2dc872}}, {{cite:6128ec79-f771-4d39-9d17-0bb244f7bdc4}},
+and the FORMULA  Neel ordered
+antiferromagnet. In order to study the Mott transition into such
+states, we decouple the exchange interaction as
+FORMULA 
+where FORMULA  is real and FORMULA  is the
+sublattice magnetization which lies in the XY plane. The wavevector
+FORMULA  is chosen to correspond to the FORMULA  Neel state, namely
+FORMULA  where FORMULA  and FORMULA  are unit
+basis vectors on the triangular lattice. If FORMULA , the ansatz
+reduces to a Fermi sea of spinons, while a nonzero FORMULA  leads to an
+antiferromagnetically ordered state.
+
+D-wave pairing ansatz
+In order to describe the superconducting state of the cuprates, we
+make a mean field ansatz for the spinon Hamiltonian, FORMULA ,
+following Kotliar and Liu {{cite:135f550c-1f78-4e3c-9313-62427ac6b69f}}. We decouple the antiferromagnetic
+exchange term in the particle-particle and well as in the
+particle-hole channel. Upto constant terms, this yields
+FORMULA 
+Here we assume FORMULA 
+is real, and FORMULA  is
+magnitude of the d-wave pairing, with FORMULA  being positive
+on FORMULA -bonds and negative on FORMULA -bonds of the square lattice. This
+decoupling scheme highlights the fact that there is no difference,
+at short distance, between the tendency to antiferromagnetism
+and the tendency to form d-wave pairs: both involve spin-singlet formation.
+The difference between these states only becomes clear on longer
+length scales, and will be dealt with in a subsequent paper.
+
+Commensurate spin-density wave ansatz
+As a candidate for the underlying normal state of the underdoped
+cuprates, we examine a strongly correlated spin-density wave (SDW)
+state with ordering wavevector FORMULA , which is consistent
+with that of the adjacent antiferromagnetic phase. To describe the
+commensurate SDW ordered at FORMULA , we decouple the exchange
+interaction as
+FORMULA 
+ Here
+FORMULA  refers to the expectation value of
+FORMULA  on the FORMULA  sublattices.
+
+U(1) staggered flux or DDW ansatz
+Another candidate normal state for the weakly doped cuprates is the
+so-called U(1) staggered flux {{cite:a40fcf0c-07d4-4eba-9745-919f330df4f0}}, {{cite:68c59dc3-e3df-45f2-8848-fbf629b9cbf3}} or
+DDW state {{cite:abed715e-3ced-4739-b413-8a1014310c6e}}, {{cite:5797e4d6-152d-4ac0-b654-7e55eafc2c9c}}. This state
+has orbital currents on the bonds of the square lattice which form a
+staggered pattern and break time-reversal and lattice symmetries.
+The mean field ansatz for this state is obtained by decoupling the
+exchange interaction as
+FORMULA 
+where
+FORMULA  is complex, with a phase corresponding to an
+enclosed flux of FORMULA  per plaquette. FORMULA  is
+staggered (alternating in sign) from one square plaquette to the
+next in a checkerboard pattern. Further, we assume FORMULA  is
+real on diagonal bonds which connect sites of the same sublattice.
+
+Rotor Sector: Cluster mean field theory
+The rotor Hamiltonian can be solved by a variety of techniques used
+commonly for bosonic systems. Here we formulate a self-consistent
+cluster mean field theory which is a straightforward extension of
+the single-site mean field theory used to describe the Mott
+transition in the Bose-Hubbard model {{cite:c9fc2c39-3521-4bc2-8db4-ba6cab4f7bd0}}, {{cite:94632e8a-71e4-4142-af0c-ea860939c688}}.
+The idea of the cluster mean
+field theory is to focus on a finite cluster of sites and treat the
+influence of the sites outside the cluster (the “bath") using a
+mean field order parameter. The hopping terms that couple sites
+within the cluster to sites outside the cluster are decoupled using
+FORMULA 
+where the mean field superfluid order
+parameter FORMULA  induces number
+fluctuations in the cluster, and has to be determined
+self-consistently. This is schematically shown in Fig.
+REF  for the square lattice.
+In the superfluid phase, FORMULA , and we choose it to be real.
+The Mott insulator phase, on the other hand, is characterized by
+FORMULA  and a charge gap. All terms within the cluster, including
+the onsite FORMULA  and intra-cluster hopping, are retained completely.
+This cluster mean field Hamiltonian is diagonalized exactly to
+obtain the eigen-energies and the ground state rotor wave function.
+The explicit cluster Hamiltonian is given for specific cases below.
+We note that by going to larger clusters, we can obtain a
+progressively better description of the bosonic excitations of the
+rotor sector.
+FIGURE 
+Single-site mean field theory: Applying the mean
+field theory to a single-site “cluster", FORMULA  for a square
+lattice model is reduced to a single site rotor Hamiltonian,
+FORMULA 
+For given FORMULA  (obtained from the spinon problem) and charge density
+FORMULA , we start from some trial value of
+FORMULA  and diagonalize FORMULA  in the rotor number (angular
+momentum) basis FORMULA  by truncating the rotor
+Hilbert space to FORMULA . FORMULA  is increased until the
+results converge. We found FORMULA  is accurate enough for all of our
+calculations. Using the ground state wavefunction FORMULA , the
+ground state average FORMULA  and FORMULA  are computed. FORMULA  is adjusted
+to give the correct charge density, and the procedure is iterated
+until FORMULA  is converged. Alternatively, one may minimize the
+ground state energy under the charge density constraint FORMULA  to find FORMULA , and the result will be the
+same. Once FORMULA  is determined self-consistently, we record energy
+eigenvalues FORMULA  and eigen states FORMULA . Within the
+single site approximation, the rotor kinetic energy FORMULA . These values will be fed into the spinon Hamiltonian as
+parameters. For the triangular lattice model with FORMULA , the
+corresponding single-site Hamiltonian is
+FORMULA 
+Two-site cluster: Going to larger cluster size yields
+much better approximations for the rotor kinetic energy and
+intersite correlations. For example, in a two site cluster model of
+the the square lattice problem, the Hamiltonian FORMULA  is
+approximated by
+FORMULA 
+Similar to the single
+site case, this Hamiltonian is diagonalized numerically in basis
+FORMULA  and FORMULA  is determined
+self-consistently via FORMULA , where the average is with
+respect to the ground state FORMULA . Intersite correlations
+are obtained from the ground state wavefunction using FORMULA  for nearest
+neighbors and FORMULA  for next nearest neighbors. These
+will be used in the spinon Hamiltonian. For the triangular lattice,
+the two site cluster Hamiltonian is given by
+FORMULA 
+Finally, we note that the
+rotor hopping FORMULA  is complex in the U(1) staggered flux state.
+The rotor Hamiltonian in this case can be solved similarly on a
+two-site lattice to obtain the complex FORMULA . It is straightforward
+to generalize this to larger clusters depending on the available
+computational resources.
+The main qualitative difference in the results obtained from the
+single-site mean field theory and the cluster mean field theories is
+the following. In single site mean field theory, the kinetic energy
+FORMULA  is the same as the square of the order parameter, FORMULA .
+Thus, it vanishes in the Mott insulating phase. This amounts to
+neglecting all number fluctuations within the Mott phase, and it is
+too crude an approximation especially when close to the Mott
+transition. By contrast, the cluster mean field theory does much
+better job capturing the short distance correlations, the kinetic
+energy FORMULA  does not simply follow FORMULA . For instance at
+the commensurate filling FORMULA  and large FORMULA ,
+deep in the Mott insulator, we find FORMULA .
+
+Mott transition on the triangular lattice at half-filling
+A Mott transition refers to an interaction induced transition from
+a conducting phase to an insulating phase. The insulating phases
+may or may not be accompanied by any conventional broken
+symmetries.
+One interesting recent example of such a Mott transition
+is the pressure induced insulator to metal
+transition in organic compounds such as FORMULA -(ET)FORMULA CuFORMULA (CN)FORMULA 
+at an effective density of one electron per site (half-filling)
+{{cite:eb06c036-1b1f-4900-af06-cb599a864762}}, {{cite:4b43e23c-1bcd-43f7-8022-38a0ea2b1434}}.
+The simplest model Hamiltonian describing this material is the Hubbard
+model on an isotropic triangular lattice. Here we use the cluster
+slave rotor mean field theory to study the FORMULA  phase diagram of
+model Eq. (REF ) on a triangular lattice with FORMULA .
+Previous exact diagonalization studies of the triangular lattice Hubbard
+model suggested {{cite:0a030a53-269b-4093-86c1-ccf9320c359d}} a direct first order transition from a
+uniform metallic phase
+into an antiferromagnetic insulator with FORMULA  Neel order at
+FORMULA . However that study also pointed out {{cite:0a030a53-269b-4093-86c1-ccf9320c359d}}
+that a more
+complex phase diagram emerges from Hartree-Fock calculations which
+show a metallic SDW and incommensurate spiral ordering in addition to
+the non-magnetic metal and the antiferromagnetic insulator. However,
+the validity of such a weak-coupling approach is unclear for such
+large values of FORMULA .
+More recent numerical studies {{cite:c876c9e8-2ab8-490c-bb82-0d20ea80e5be}}
+using the so-called
+“path integral renormalization group" (PIRG) method indicate that the
+ground state first undergoes a metal to spin-liquid insulator transition
+at a critical FORMULA . At larger FORMULA , the spin liquid
+phase undergoes a second transition into the FORMULA  Neel ordered
+antiferromagnetic
+state. Variational wave function studies, which attack the problem from
+the insulating phase, find that the FORMULA  Neel ordered insulator
+is unstable to a spin liquid state which may resemble a projected Fermi sea
+of spinons {{cite:00fa6f24-a527-44a3-84d9-a4b12c2dc872}}. This spin liquid state with a Fermi sea of
+spinons has been argued {{cite:00fa6f24-a527-44a3-84d9-a4b12c2dc872}}, {{cite:6128ec79-f771-4d39-9d17-0bb244f7bdc4}}
+to provide a description of the non-magnetic insulating phase
+seen in FORMULA -(ET)FORMULA CuFORMULA (CN)FORMULA .
+Using the ansatz Eq. (REF ) for the triangular lattice,
+we can obtain the mean field spinon Hamiltonian
+FORMULA 
+ where
+FORMULA , FORMULA , and FORMULA . The
+spinon kinetic energy has contributions from the bare spinon hopping
+as well as from the antiferromagnetic interactions.
+The excitation energy of the SDW quasiparticles is
+given by
+FORMULA 
+The self-consistency conditions for FORMULA  and the number
+constraint equation FORMULA  (which determines
+FORMULA ) reduce to
+FORMULA 
+Here FORMULA  is the step
+function, and the coherence factor
+FORMULA 
+FIGURE 
+The results obtained for the Mott transition with a fixed FORMULA 
+are plotted in Fig.REF . We show results for the rotor
+order parameter FORMULA , which distinguishes metallic (FORMULA ) from insulating (FORMULA ) states, and the sublattice
+magnetization FORMULA  for the FORMULA  Neel state. Using a single-site
+cluster for the rotors, and computing the energy of the different states,
+we find the phase diagram in Fig.REF (a) which shows
+a direct, strongly
+discontinuous, transition from the uniform metal into a magnetically
+ordered insulating state, occurring at FORMULA . The magnetic
+ordering in the insulator is
+`classical' in the sense that the ordered moment is the full moment
+(FORMULA ),
+and the electronic kinetic energy vanishes in the insulator.
+By contrast, the 2-site
+cluster for the rotor yields a richer phase diagram as shown in
+Fig.REF (b). It exhibits a
+continuous Mott transition into an insulating state at about
+FORMULA . However the insulating state has no ordered moment,
+FORMULA  is essentially zero within our numerical accuracy.
+The insulating phase is thus consistent with a
+featureless `spin liquid' described by a spinon Fermi sea. This
+`spin liquid' state may be further unstable to spinon pairing but we
+have not, thus far, explored such a possibility.
+For larger FORMULA , we find a
+discontinuous transition of this uniform `spin liquid' state into a
+FORMULA  ordered antiferromagnet. This result, of a transition
+at large FORMULA  from the spin liquid into the ordered state, can be checked
+using PIRG calculations extended to larger values
+of FORMULA  than in Ref. morita. Our main message is that
+using a cluster approach to the rotor sector leads to a significant
+qualitative difference with respect to a single-site mean field theory
+in that it leads to an insulating spin liquid phase at intermediate
+FORMULA .
+This phase diagram is not too sensitive to the precise value of
+FORMULA  so long as it is not too large. For smaller values
+of FORMULA , the window of the `spin liquid' phase extends to larger
+FORMULA . For much larger values of FORMULA , we find that even the larger
+clusters can yield a strong discontinuous transition from the metal
+to a magnetically ordered insulator. The details of the phase
+diagram in the slave rotor mean field theory are determined by the
+competition between the renormalized spinon kinetic energy, FORMULA , and the fixed exchange constant FORMULA . If the Mott
+transition of the rotors occurs at a small FORMULA , then the
+renormalized spinon kinetic energy is large compared to the
+antiferromagnetic exchange constant FORMULA  and this can frustrate
+magnetic ordering. This is similar in spirit, although not in details,
+to local charge fluctuations frustrating
+magnetic order on the triangular lattice via ring-exchange processes.
+Using a variational approach to the ring-exchange model, Motrunich has
+shown that it can significantly suppress or completely destroy magnetic
+order leading to a uniform spin liquid state {{cite:7fb608af-3763-4452-af27-01595b7ca38d}}. A phase
+diagram for the triangular lattice Mott insulator with an
+intervening spin liquid phase is also consistent with results from
+numerical approaches such as the PIRG. However the metal-insulator
+transition point obtained in that study is at FORMULA 
+indicating that our mean field result may not be quantitatively accurate.
+
+d-wave superconductivity in the doped cuprate materials
+High temperature superconductivity in the hole doped cuprates
+has been a prototypical example of how strong correlations lead
+to a variety of novel phenomena not observed in conventional superconductors.
+There are two, seemingly quite different, approaches to d-wave
+superconductivity in the cuprates. One approach starts from an
+electronic Fermi liquid and shows that antiferromagnetic spin fluctuations
+centered at momentum FORMULA  on a square lattice
+can mediate d-wave pairing of electrons
+{{cite:5a2cc6d9-14e9-41c9-8c1c-7a958551189c}}, {{cite:be691aff-016d-4cef-9aa7-6273541ecb6f}}, {{cite:c240a519-29cf-40ce-a8ae-b7907c1a6dc9}}. The
+other point of view, proposed initially
+by Anderson, {{cite:c5a5b574-8572-4801-a303-bd3c6ed12cd3}} begins from the
+undoped insulating state of the
+cuprates and argues that this is close to forming a spin liquid with
+d-wave singlet pairing which naturally leads to d-wave superconductivity
+upon doping away from half-filling.
+From the perspective of the coupled spinon-rotor theory these two
+approaches may be reconciled at low energy.
+The weak coupling spin-fluctuation
+calculations would, when applied to the spinon sector of the
+slave rotor mean field theory,
+predict an instability of spinons towards d-wave pairing
+arising from antiferromagnetic fluctuations induced by FORMULA .
+Thus, although conventional spin fluctuation theories and models such
+as the spin-fermion model {{cite:07d307a8-4cbc-4448-b178-b9496643809c}} are
+quite different from spin liquid based approaches, they appear to
+be formally identical when reinterpreted as applying to spinons
+rather than electrons.
+At low dopings, when the exchange interaction becomes much stronger
+than the spinon kinetic energy, the weak coupling `spinon pair' may
+smoothly cross over into the resonating valence bond singlets
+of the spin liquid Mott state. Naively, this crossover is expected
+to happen
+when the kinetic energy of the doped carriers becomes comparable to the
+exchange energy between neighboring spins.
+Recent cellular DMFT calculations {{cite:15d06062-cb95-431c-bf16-1f1b8d5125b5}}
+suggest that this crossover may
+exhibit some features of `local quantum criticality'.
+There has been extensive work
+on the FORMULA  model using U(1) and SU(2) slave boson mean field
+(and corresponding gauge) theories {{cite:d346d9ea-1afc-4b73-ab20-50c38a359840}}, {{cite:135f550c-1f78-4e3c-9313-62427ac6b69f}}, {{cite:55bd53fc-8242-4a8c-a3c8-150b69cc71c3}}.
+The slave boson mean field theory successfully captures some
+essential features of the high temperature superconductors,
+including the d-wave symmetry, the pseudogap energy scale, and the
+superconducting dome {{cite:135f550c-1f78-4e3c-9313-62427ac6b69f}}. Despite the seemingly bold
+approximations involved in such a slave particle formulation,
+the qualitative predictions of the slave boson mean field theory
+agree remarkably well with more sophisticated methods like the variational
+wave function approach {{cite:26470ea4-f647-4a33-9dcb-5230ae8268a0}}, {{cite:fefde901-d8f2-4ef1-840d-422abde0071e}}.
+In this section, we apply
+the cluster slave rotor mean field theory to study the superconducting
+phase of the hole-doped square lattice FORMULA  model.
+Our first purpose is to check that it can qualitatively
+reproduce the well known
+results of the FORMULA  model in the regime FORMULA . Second,
+we show that by solving the rotor problem, we learn about the
+incoherent spectrum weight associated with charge fluctuations which
+leads to, among other things, particle-hole tunneling asymmetry.
+The d-wave pairing ansatz for the spinon sector leads to the well
+known Hartree-Fock-Bogoliubov Hamiltonian
+FORMULA 
+FORMULA  is diagonalized by the standard Bogoliubov transformation to
+yield quasiparticle excitation energies
+FORMULA . Here FORMULA  is the antinodal gap. FORMULA , FORMULA , and
+FORMULA  are determined self-consistently by
+FORMULA 
+After self-consistency is achieved,
+FORMULA 
+is
+computed as input to the rotor sector.
+FIGURE 
+We have numerically solved
+the coupled rotor-spinon problem for FORMULA , FORMULA , FORMULA 
+(these values are typical for hole doped cuprate high temperature
+superconductors) at doping FORMULA  using a two site
+rotor cluster.
+Fig. REF  shows the doping dependence of the
+antinodal spinon gap FORMULA  as well as the superconducting order
+parameter FORMULA . The spinon gap decreases monotonically
+with increasing doping and corresponds to the psuedogap observed in
+high temperature superconductors. The doping dependence of the order
+parameter, on the other hand, takes a dome shape, reaching maximum
+at optimal doping FORMULA . This is in accordance with the
+doping evolution of FORMULA  of high temperature superconductors. The
+demise of superconductivity at low doping is due to the vanishing of
+condensate density, which in the slave rotor formulation is
+proportional to FORMULA  and goes roughly as FORMULA  at low
+dopings.
+Doping dependence of quasiparticle weight and nodal Fermi
+velocity
+FIGURE 
+Interaction effects result in a transfer of spectral weight from
+sharply defined coherent quasiparticles to incoherent excitations. This
+reduces the quasiparticle weight FORMULA  from unity. Within the slave
+rotor mean field theory, FORMULA  is given by FORMULA  and plotted in the
+left panel of Fig. REF .
+Our slave rotor result is close to the slave boson result, as expected
+since FORMULA  and the number (charge) fluctuation is suppressed.
+In the right panel of Fig. REF  we plot the nodal
+quasiparticle Fermi velocity, FORMULA  for
+FORMULA  along the nodal direction. Here in order to measure FORMULA  in
+unit of eV-FORMULA  we have used FORMULA meV and a lattice
+spacing 3.8FORMULA . We find that FORMULA  is a smooth function
+of FORMULA  and does not vanish as FORMULA . The doping
+dependence of FORMULA  and FORMULA  is in qualitative agreement with
+experiments.
+However, slave boson and slave rotor theories underestimate FORMULA 
+when compared with Gutzwiller
+projected variational wavefunction calculations {{cite:26470ea4-f647-4a33-9dcb-5230ae8268a0}}, {{cite:fefde901-d8f2-4ef1-840d-422abde0071e}},
+indicating that gauge fluctuations that bind slave particles have to be taken
+into account to describe those calculations. Furthermore, the
+calculated value of FORMULA  is smaller (by a factor of two) compared with
+experiments
+{{cite:3a1cc39c-6bb9-4c0c-bc81-f48face12e5b}}, {{cite:d6982676-4311-4baa-9ebd-e3db5aa4dd1f}}, while the doping dependence of FORMULA  in the
+range FORMULA  disagrees with the experimental observation {{cite:d6982676-4311-4baa-9ebd-e3db5aa4dd1f}}
+that FORMULA eV-FORMULA  is essentially completely doping
+independent in this range.
+On the other hand good agreement with experiments is achieved
+by variational wave function calculations {{cite:26470ea4-f647-4a33-9dcb-5230ae8268a0}}, {{cite:fefde901-d8f2-4ef1-840d-422abde0071e}}. These
+disagreements show a shared weakness of the slave-particle
+mean field theories. Namely some degree of spinon-chargon interaction
+beyond mean field theory, arising from gauge fluctuations, needs to be
+retained in order to make a quantitative comparison with
+the photoemission experiments.
+
+Particle-hole asymmetry in tunneling
+Tunneling experiments in the underdoped cuprate superconductors
+find a marked asymmetry between the tunneling conductance at
+positive bias (tunneling in an electron from tip to sample) versus
+negative bias (extracting an electron from the sample). This had been
+observed in earlier experiments in slightly underdoped materials
+{{cite:6575f8d8-2c34-4607-89d8-1e2dfa04e561}}, {{cite:5ab0aeaa-4d6c-4d07-8fb2-0897903b9fd5}} which focussed on the tunneling conductance at
+low energy. More recent experiments, which have gone to lower doping
+and to larger bias, have shown that this asymmetry grows significantly
+in the strongly underdoped regime {{cite:efde05c9-f237-462a-93f5-ab08131a6a3a}}.
+This asymmetry was explained by calculations using slave boson mean field
+theory, which pointed out that it arises from the proximity of the
+underdoped cuprates to a correlated insulating state at zero doping
+{{cite:b29ea61b-5ee3-460b-9871-1712363eb7b2}}. Rantner and Wen {{cite:b29ea61b-5ee3-460b-9871-1712363eb7b2}}, {{cite:bd12cbd5-0054-4d15-a5d6-df55f164b188}}
+calculated the expected tunneling spectrum
+assuming that the slave bosons behave as free particles with a bandwidth
+FORMULA . Here we use the self-consistent
+slave rotor mean field theory to calculate the tunneling spectrum into
+the weakly doped superconducting state of the cuprates. We show that
+the tunneling spectrum has a coherent BCS-like form at low energies
+while it has significant incoherent weight at negative bias in agreement
+with earlier results. We also compute
+the ratio of the integrated (upto a cutoff)
+tunneling density of states at positive to
+that at negative bias and
+compare the doping and cutoff dependence of this ratio with
+recent tunneling experiments {{cite:efde05c9-f237-462a-93f5-ab08131a6a3a}}.
+Within the slave rotor mean field approach, using Eq. (REF )
+and (), the electron Green function
+factorizes into spinon and rotor Green functions. This leads to
+a simple qualitative picture for the electronic
+tunneling process — namely, tunneling an electron involves tunneling
+a spinon and a charge. This factorization
+preserves the sum rule on
+the electron spectral function FORMULA  that
+FORMULA . The
+resulting local electron Green function
+FORMULA 
+ In another word, on the mean field level, in order
+to tunnel in an electron one needs to tunnel in both a spinon and a
+charge. Using the Hartree-Fock-Bogoliubov mean field solution of the
+spinons and cluster mean field solution of the rotors, we find
+FORMULA  at zero temperature:
+FORMULA 
+where FORMULA 
+refers to the FORMULA -th eigenstates of the rotor cluster with
+eigenenergy FORMULA , with FORMULA  being the ground state, FORMULA  is a
+site belonging to the cluster, FORMULA  and
+FORMULA  are the usual BCS coherence factors. This leads
+to the electronic tunneling density of states (TDOS) FORMULA ,
+FORMULA 
+where FORMULA . The first term
+proportional to FORMULA , called the coherent part, simply reflects
+the Bogoliubov quasiparticle spectrum with energy FORMULA . It
+describes processes in which the tunneling charge joins the ground state
+(the condensate) with no energy cost. This leads to the usual V-shaped
+nodal spectrum at low energy characteristic of the d-wave symmetry.
+The second term is the incoherent part, corresponding
+to processes creating an incoherent charge excitation whose local
+energetics is well captured by the cluster mean field theory, and it
+dominates at high energies.
+The calculated TDOS is shown in the left panel of Fig. REF 
+for FORMULA , FORMULA , and doping FORMULA .
+Within the cluster mean field approximation, the incoherent weight
+consists of discrete peaks corresponding to the excitation energy
+levels of the rotor cluster. We have included a small Lorentzian
+broadening for these discrete levels. We find that the
+tunneling spectrum exhibits a pronounced particle-hole asymmetry:
+there are more significant incoherent charge excitations at
+negative bias than large positive bias. Roughly speaking, upon extracting
+an electron from
+the system, the nearby electrons which are within a few lattice
+spacings can lower their kinetic energy,
+by FORMULA , by rattling around the
+created empty space. On the contrary, it costs a lot
+of energy to add electrons to the system unless one finds an
+unoccupied site, and hence one has
+little incoherent spectral weight on the positive low bias side.
+Qualitatively similar ideas have been proposed by others
+using variational wavefunctions or exact
+diagonalization of the FORMULA -FORMULA  model on small clusters
+{{cite:60325e6d-c9d4-4fbd-9abb-5adea8304d5c}}.
+This particle-hole asymmetry can be quantified by introducing the ratio
+{{cite:8fd0cb1d-557d-4fad-82da-fa1eabeef61d}} FORMULA  of the positive to
+the negative spectral weights at a given space point FORMULA ,
+FORMULA 
+where the cutoff FORMULA .
+FIGURE 
+The right panel of Fig. REF  shows the FORMULA 
+dependence of the ratio
+FORMULA  in the doping range FORMULA . For small FORMULA , it starts off
+close to unity for all dopings, reflecting the nearly particle-hole
+symmetric d-wave TDOS at low bias. Very rapidly, however, the
+incoherent weight present on the occupied side leads to a
+suppression of FORMULA  which plateaus at a value smaller than unity
+(FORMULA ) with
+little doping dependence. This is in rough agreement with
+the data in Ref. davis-Rmap. At bias FORMULA  there
+is a rapid change in FORMULA  versus the cutoff, beyond which all the
+curves appear to saturate. This is consistent with the bulk of the
+incoherent weight on the occupied side being centered at an energy
+FORMULA  2FORMULA . (The wiggles in FORMULA  versus FORMULA  in Fig.REF 
+are due to the finite size cluster method.)
+It has been shown out that for electronic states which obey a Gutzwiller
+projection constraint (two electrons are forbidden from occupying
+the same lattice site), there is a rigorous `partial sum rule'
+{{cite:70aea6d2-a2c0-4698-9965-1f55b737bfab}}
+which constrains the spectral weight of occupied and unoccupied states
+when there is a separation of scales FORMULA .
+In the context of tunneling measurements, this translates
+{{cite:8fd0cb1d-557d-4fad-82da-fa1eabeef61d}} into the result that the ratio of the integrated
+TDOS at positive bias to that at
+negative bias is FORMULA  where FORMULA  is the density
+of doped holes {{cite:8fd0cb1d-557d-4fad-82da-fa1eabeef61d}}, {{cite:eeb9bfba-636f-4bd5-a788-3e4988a73e59}}. Furthermore,
+the ratio FORMULA  has the advantage that the unknown
+tunneling matrix elements
+that determine the relation between the TDOS and the measured conductance,
+which can depend on the coordinate FORMULA , cancel out
+{{cite:8fd0cb1d-557d-4fad-82da-fa1eabeef61d}} (assuming they are energy independent).
+This `partial sum rule' can then be used to estimate the hole density locally
+from tunneling experiments on doped Mott insulators {{cite:8fd0cb1d-557d-4fad-82da-fa1eabeef61d}}, {{cite:efde05c9-f237-462a-93f5-ab08131a6a3a}}.
+The slave boson and rotor mean field theories violate this `partial sum rule'
+since the spinons and rotors are assumed to be independent particles
+at mean field level. For FORMULA ,
+the ratio FORMULA  thus saturates, as a function of FORMULA , to a value
+which is close to FORMULA .
+This violation is expected to be fixed by including gauge fluctuations
+about the mean field theory {{cite:c51f344c-e789-4c8a-a5bf-5d9b98faa5ae}}.
+
+Correlated normal states in a weakly doped Mott insulator
+on the square lattice
+The finite temperature normal state of underdoped high temperature
+superconductors, for FORMULA ,
+is the least understood part of the phase diagram.
+It exhibits pseudogap phenomenon and highly anomalous thermodynamic
+and transport properties. It has been suggested that understanding the
+underlying FORMULA  normal state in this regime might shed light on the
+pseudogap phenomena.
+Very recent experiments by
+Doiron-Leyraud et al {{cite:2262c65e-aa00-48b5-b257-19e9d3696a0a}} have begun to
+access this ground state in clean crystals of
+underdoped oxygen-ordered YBaFORMULA CuFORMULA OFORMULA . Applying high
+magnetic fields, in the range FORMULA -60T, to suppress
+superconductivity, they
+discovered quantum oscillations in the electrical resistance at
+low temperatures. This discovery can be most simply understood by
+postulating a well-defined Fermi surface made of small pockets
+in the field induced normal ground state. The authors argue that
+the data is less consistent with a specific band structure feature
+{{cite:34c0d5b3-47bf-4d06-a4a0-21a4d396c10c}}
+of ortho-II YBCO, and more in line with a state with broken
+symmetry giving rise to Fermi surface reconstruction.
+This state is supposed to compete with superconductivity, to be close
+in energy to the superconducting state, and to show up as the ground
+state when superconductivity is strongly suppressed.
+Several such candidate states have been proposed. One is the
+commensurate SDW at ordering vector FORMULA , which has been
+argued to be relevant to the electron doped cuprate superconductors
+{{cite:27dad125-6182-43a0-8008-3a49c99d2ee1}}.
+Given the proximity to the antiferromagnetic Neel phase at low doping, it
+is likely that SDW is stabilized and extends to higher doping
+under high fields. This is supported for example by the observation
+of antiferromagnetism inside the vortex cores {{cite:e053faf6-6eac-4c1f-91dd-3d8b1869b579}}, {{cite:4e18ebd6-f21e-4a20-9c35-f89902351919}}
+and from theoretical studies of the
+vortex structure using
+Bogoliubov-deGennes (BdG) equations {{cite:fcfbcf86-67e7-43d2-af16-3bf765a61ba2}}.
+Another candidate is
+the U(1) staggered flux state {{cite:a40fcf0c-07d4-4eba-9745-919f330df4f0}} (also known as the DDW
+state {{cite:abed715e-3ced-4739-b413-8a1014310c6e}}, {{cite:5797e4d6-152d-4ac0-b654-7e55eafc2c9c}}).
+This state is also well known to be close in energy with the d-wave
+superconducting state {{cite:68c59dc3-e3df-45f2-8848-fbf629b9cbf3}}
+and has been advocated by Patrick Lee and collaborators to describe the
+pseudogap phase {{cite:55bd53fc-8242-4a8c-a3c8-150b69cc71c3}}.
+In
+this section we study the SDW state and the U(1) staggered flux state
+using cluster slave rotor mean field theory. We then compute the
+expected cyclotron mass FORMULA 
+for each state as a function of doping, and compare them with
+the experiment of Doiron-Leyraud et al {{cite:2262c65e-aa00-48b5-b257-19e9d3696a0a}}.
+We show that by
+studying the doping dependence of the FORMULA  one can, in principle,
+unambiguously differentiate between these two scenarios
+for the normal state.
+We also suggest a possible resolution for
+the observed difference
+{{cite:2262c65e-aa00-48b5-b257-19e9d3696a0a}}
+between the hole density as inferred from the
+quantum oscillation measurements and from the FORMULA  value.
+Spin density wave state
+Applying the SDW ansatz Eq. (REF ), we obtain the mean field spinon
+Hamiltonian
+FORMULA 
+where we have defined
+FORMULA 
+The
+mean field self-consistency conditions then read
+FORMULA 
+After self-consistency is
+achieved, we can calculate the second neighbor spinon hopping
+amplitude using
+FORMULA 
+and
+use this in solving the rotor model.
+In Fig.REF  we plot the sublattice magnetization FORMULA  as
+function of
+doping predicted by the cluster slave rotor mean field theory. FORMULA  starts at
+the classical Neel state value FORMULA  at half filling and drops monotonically
+with increasing doping and vanishes at FORMULA . The doped
+SDW state has four Fermi pockets centered at the nodal points FORMULA . Naively, from a weak-coupling picture, one expects
+additional electron-like pockets centered around the FORMULA  point for
+small doping. We find that these do not appear in our self-consistent
+ground state, suggesting that the weak coupling argument does not work
+in this regime. Consistent with this, the area enclosed by the
+hole pockets around FORMULA  satisfies the Luttinger's theorem for
+a broken symmetry state with a doubled unit cell.
+
+Staggered Flux state
+The U(1) staggered flux ansatz Eq. (REF ) leads to the
+mean field spinon Hamiltonian
+FORMULA 
+
+where FORMULA , and the complex hopping
+FORMULA 
+FORMULA  is easily diagonalized to yield the the energy
+spectrum, FORMULA . The “FORMULA "
+and the “FORMULA " branch touches each other at the nodal points
+FORMULA  regardless the values of staggered
+flux, and the low energy excitations are massless Dirac fermions.
+In the doping regime of our interest only the “FORMULA "
+branch is occupied. The spinon chemical potential FORMULA  and the complex
+“order parameter"
+FORMULA  are found by solving
+the following self-consistency equations
+FORMULA 
+Here the sum over FORMULA  is within the reduced Brillouin zone, and
+FORMULA  is the number of sites on each sublattice. Finally, FORMULA  is obtained
+by
+FORMULA 
+FIGURE 
+With self-consistency achieved in the coupled rotor-spinon problem,
+we obtain FORMULA 
+and FORMULA , where FORMULA  is the spinon flux per
+plaquette and FORMULA  is the rotor flux (we work in a symmetric
+gauge, e.g., FORMULA ). The orbital
+bond current
+FORMULA 
+can be
+taken as the order parameter of the U(1) staggered flux (or DDW)
+phase. Fig.REF  shows the doping dependence of
+FORMULA , FORMULA , and the magnitude of the orbital current. At
+half filling the system is in the FORMULA  flux state, FORMULA  and
+FORMULA  have the same magnitude FORMULA  but opposite sign,
+accordingly the bond current is zero. The current FORMULA  increases with doping,
+reaching maximum
+at FORMULA . For a single plaquette, the maximal bond current
+corresponds approximately to a magnetic field of 150 Gauss at the center
+of the plaquette. FORMULA  drops to zero around FORMULA ,
+where the U(1) staggered flux state gives way to the Fermi liquid state and
+both FORMULA  and FORMULA  vanish.
+The total area enclosed by the hole pockets increase linearly
+with doping at small doping and is consistent with Luttinger's theorem
+for a broken symmetry state with a doubled unit cell.
+
+Cyclotron mass
+We next discuss whether the quantum oscillation measurements of
+Ref. Taillefer-pockets can shed more light on the
+non-superconducting normal state at low doping, and, in particular,
+distinguish between a commensurate SDW metal and the U(1) staggered
+flux (or DDW) state. The quantum
+oscillation data offer two pieces of information if the field induced
+normal state is a conventional Fermi liquid.
+(although more exotic possibilities cannot
+be ruled out {{cite:813a694e-6446-4054-8de4-0338f76c0aea}}, {{cite:c604d3f6-a07f-4ae2-be9c-d464c791ff2b}}).
+The first is the area of the hole pocket which is
+obtained from the oscillation frequency, and the second is the cyclotron
+mass which is obtained from the temperature dependence of the oscillation
+amplitude and which is related to the density of states at the Fermi
+level. In our calculations, both the SDW and the U(1) staggered flux state have
+hole pocket areas consistent with the Luttinger theorem for a broken symmetry
+state with
+a doubled unit cell and this information cannot be used to discriminate
+between them. We therefore turn to a calculation of the cyclotron
+mass in these two states to compare with experiments.
+The cyclotron effective mass FORMULA  is related to the density of states
+at the Fermi level in a Fermi liquid state,
+FORMULA 
+Here FORMULA  is the density of states per hole pocket per spin at the Fermi
+level measured in units of FORMULA .
+As before, we set the hopping FORMULA meV and the Cu-Cu lattice spacing
+FORMULA . The doping dependence of FORMULA  in the SDW state is
+shown in the left panel of Fig.REF . The SDW state is
+characterized by a diverging FORMULA  as FORMULA . This reflects
+the classical character of the magnetically ordered insulator at
+FORMULA , namely the staggered magnetization of the insulator in the
+mean field theory is FORMULA  and the spinon kinetic energy is zero. This
+leads to a divergent effective mass for FORMULA . Spin
+fluctuations beyond mean field theory are expected to cut off this
+divergence; nevertheless the
+mass is expected to be a strongly increasing function as FORMULA 
+decreases. The peak in FORMULA  around FORMULA  is a
+feature associated with the vanishing of the SDW order and arises from the
+large density of states around the FORMULA  point.
+The magnitude of FORMULA  in the range FORMULA -FORMULA 
+is around FORMULA  (FORMULA  being the bare electron mass),
+in apparent disagreement with the experimental value FORMULA .
+FIGURE 
+The doping evolution of the cyclotron effective mass FORMULA  in the U(1)
+staggered flux (DDW)
+state is shown in the right panel of Fig.REF .
+This state is characterized by a square root increase of FORMULA , i.e.
+FORMULA , at small doping. This is a direct consequence of
+the linear Dirac spectrum at low energies and therefore a linear density of
+states. Again, the peak feature at FORMULA  is associated with the
+sudden disappearance of the staggered flux state.
+The value of FORMULA  at FORMULA  is closer to the
+experiment result FORMULA .
+While a comparison of the cyclotron effective mass with experiments
+may seem to favor the staggered flux state over the SDW state as a
+normal state candidate, we cannot rule
+out the SDW scenario based on this quantitative comparison. As we have
+seen in previous sections, slave particle
+theory is not quantitatively accurate at the mean field level and
+underestimates the nodal FORMULA  in the
+superconducting state by a factor of two at FORMULA .
+To distinguish these two scenarios, it is more useful to study the
+doping dependence of FORMULA .
+From Fig.REF  we observe that the effective cyclotron mass
+in the SDW state and the staggered flux state have almost opposite doping
+dependences, we propose that measurements of FORMULA  at a series of
+nearby dopings, especially at smaller FORMULA ,
+may help to identify which candidate normal state is
+realized.
+Finally, the experiments {{cite:2262c65e-aa00-48b5-b257-19e9d3696a0a}} find a difference
+between the carrier densities as inferred from the quantum
+oscillation period and from FORMULA . Assuming 2 hole
+pockets in a reduced Brillouin zone, which is consistent with a SDW or
+a U(1) staggered flux state, the oscillation period leads to
+an estimate FORMULA  while the value estimated from
+FORMULA  is closer to FORMULA . This discrepancy
+{{cite:2262c65e-aa00-48b5-b257-19e9d3696a0a}}, an apparently significant
+violation of the Luttinger count, can be accounted for in several
+ways including a possible bilayer splitting {{cite:3600ce43-19db-4646-a964-8f4a72698273}}. However,
+the bilayer splitting is expected to be very small at low doping
+due to renormalization by strong correlation effects. We offer another
+plausible explanation for this
+discrepancy. The field induced `normal state' is likely to
+contain vortices, which can be inferred from the sign change, with
+temperature,
+of the Hall coefficient, a feature which is seen in the mixed state
+in other cuprate materials and at other dopings {{cite:80ca533e-7cd6-4eef-9885-0afb1000d6fb}}.
+It has been suggested that the underlying
+normal state of the cuprates should appear in the vicinity of such
+vortices
+{{cite:4729d579-4fe3-46d1-bfd4-58c7877f1460}}. However, it has also been found in BdG calculations
+{{cite:fcfbcf86-67e7-43d2-af16-3bf765a61ba2}}
+of the structure of a single vortex that the density around the
+vortex is not uniform. At
+low doping and even in the presence of moderate Coulomb interactions
+{{cite:fcfbcf86-67e7-43d2-af16-3bf765a61ba2}},
+the density appears to be depleted within the vortex core and piled up as a
+screening cloud at
+some distance away from the core, with the far region being superconducting
+and at the bulk density.
+If the normal state being explored arises from the depleted core region,
+the observed density could deviate from the
+bulk density in the correct direction. Testing this explanation calls
+for further experiments as well as
+detailed theoretical calculations of the vortex structure.
+
+Implications for Fermi arcs
+We end this section by commenting on the relation between the hole
+pockets revealed in the low temperature quantum oscillation experiments
+and the Fermi arcs observed in the high temperature normal state
+above FORMULA  in photoemission experiments. Assuming that the field
+induced normal state has hole pockets, it has been suggested that the
+Fermi arcs seen in photoemission studies {{cite:bb640387-639f-4e99-9097-8ff9082984ae}} may be just these
+hole pockets.
+However, the quantum oscillation experiments are carried out at rather
+high magnetic fields FORMULA  at very low temperature FORMULA ,
+while the photoemission experiments are done in zero magnetic
+field and
+at fairly high temperatures FORMULA . Given this, there is no
+a priori
+reason to expect that the photoemission experiments are accessing
+the properties of such an underlying normal ground state.
+The Fermi arcs seen in the photoemission experiments
+seem to be more consistent with fluctuating d-wave superconductivity
+{{cite:760c6ac9-21ee-4374-bc5d-b28bccd6238e}}, {{cite:1c1fb70d-b57d-4ff3-a5e5-1bbdb8eb926f}}. In particular, earlier work by us {{cite:760c6ac9-21ee-4374-bc5d-b28bccd6238e}}
+suggests an explanation which relies on phenomenological spin charge
+separation ideas, quite close to the route explored in this paper,
+and provides a possible explanation for Fermi arcs
+whose length scales FORMULA , where FORMULA  is the pseudogap temperature.
+Current photoemission experiments do not appear to have the
+resolution to settle the issue of whether the arcs indeed arise
+from hole pockets. We suggest that further high resolution photoemission
+experiments could focus on the momentum distribution of the low
+energy spectral weight (integrated from zero to some small energy).
+It would be useful to check whether this spectral weight tends to be
+centered at momenta corresponding to
+the low temperature d-wave nodes of the SC, or whether it tends to shift
+away towards some underlying hole pocket Fermi surface once the
+system is heated to temperatures above FORMULA .
+
+Discussion
+We have formulated a cluster slave rotor mean field theory
+of strongly interacting electronic systems, which extends earlier work
+of Florens and Georges {{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}}. In this formulation, the rotor
+sector and spinon sector are coupled to each other by self-consistency
+equations, and the rotor Hamiltonian is solved on a finite cluster
+self-consistently coupled to an order parameter bath (rest of the lattice).
+The main advantage of the cluster mean field theory lies in that the short
+range correlation functions of the rotors is properly taken into account.
+By applying it to several examples, we have shown that this method
+provides a unified framework to study strongly correlated electronic
+systems.
+Although we only focused on zero temperature, it is straight forward to
+generalize the theory to finite temperature. Extensions to inhomogeneous
+states are also likely to be of interest.
+One shortcoming of the cluster mean field theory for the rotor sector
+is that, by working with finite clusters coupled to a static bath, we
+freeze the Goldstone modes (phase fluctuations). Such Goldstone mode
+fluctuations can be explicitly retained in complementary
+methods such as the random phase approximation {{cite:94632e8a-71e4-4142-af0c-ea860939c688}} or
+other approaches {{cite:96c1a5e6-67dd-489e-9f1e-8a472598602d}} to the rotor sector. These methods of solving
+the rotor problem can be combined with the spinon sector to formulate the
+self-consistent slave rotor mean field theory {{cite:245811c2-a4e2-41fe-928f-dde56b830e3d}}.
+In the path integral formulation of the slave rotor approach
+{{cite:d6cf141a-56f4-473e-b667-b518f61b05e7}}, {{cite:6128ec79-f771-4d39-9d17-0bb244f7bdc4}}, {{cite:114b55e5-c630-4442-9f56-3898f1fac66b}}, our
+mean field theory is equivalent to a saddle point approximation which
+ignores the gauge field fluctuations. Such fluctuations
+beyond mean field theory are expected to introduce effective interactions
+between slave particles to yield the correct low energy sum rules
+{{cite:c51f344c-e789-4c8a-a5bf-5d9b98faa5ae}}
+including the `partial sum rule' for the particle-hole asymmetry ratio FORMULA .
+These will be explored elsewhere {{cite:245811c2-a4e2-41fe-928f-dde56b830e3d}}.
+Note added: After our paper was submitted, some related works
+have appeared on the arxiv. The self-consistent cluster mean field theory
+for bosons has been shown to successfully describe the supersolid phase
+and the phase diagram of bosons on a triangular lattice {{cite:457c0477-d68a-4a13-84a2-ad6140fd153f}}.
+Two further experiments
+carried out on YBaFORMULA CuFORMULA OFORMULA  (hole doping FORMULA ) have also
+found evidence of Shubnikov-de Haas oscillations {{cite:d70b46a6-0e8e-47cb-bb4a-c8af63821905}}, {{cite:9f4ab799-ce93-413f-b744-6da811e1ff83}}
+in a magnetic field with a larger cyclotron mass, FORMULA ,
+than in ortho-II YBCO. A
+recent preprint by Chen et al discusses the
+field induced antiferromagnetic metallic ground state in the underdoped
+cuprates {{cite:1912bc0d-4cf0-439d-8085-d0270d483433}}. Their principal result is the relation
+between the quantum oscillation frequency and the hole doping in this
+state and it is in agreement with our conclusion.
+Various proposals for interpreting the Fermi arcs above FORMULA , as well as
+their connection to the hole pockets in ground state, have been examined
+recently by Harrison et al {{cite:fe073ed9-4ffa-4355-994b-2b46383928ad}} and Norman et al {{cite:76754bb7-488c-487c-b392-61916892f03d}}.
+This research was supported by NSERC and the A.P. Sloan foundation.
+We acknowledge stimulating conversations and exchanges with E. Altman,
+Y.-B. Kim, N. Harrison, S. R. Hassan, T. Senthil, and A.-M. Tremblay.
+We are particularly grateful to J. C. Davis,
+N. Doiron-Leyraud, and L. Taillefer for useful discussions about their
+experiments.
