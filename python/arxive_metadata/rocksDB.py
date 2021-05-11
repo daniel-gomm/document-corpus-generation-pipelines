@@ -25,7 +25,9 @@ class RocksDBAdapter:
         return requests.post("{}/multiple/{}".format(self._url, self._name), json = dictionary)
     
     def get_all(self, list_of_keys:list):
-        return requests.get("{}/multiple/{}".format(self._url, self._name), json = list_of_keys)
+        js = json.dumps(list_of_keys)
+        headers = {'Content-type': 'application/json'}
+        return requests.get("{}/multiple/{}".format(self._url, self._name), data=js, headers=headers)
 
 
 
