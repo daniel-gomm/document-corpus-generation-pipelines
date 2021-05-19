@@ -27,6 +27,8 @@ class UnarxiveAdapter(Adapter):
     def generate_documents(self, no_documents: int) -> List[Dict]:
         documents = []
         counter = 0
+        if not os.path.exists(self._folderpath):
+            os.makedirs(self._folderpath)
         while counter < no_documents and self._unprocessed_files:
             counter += 1
             document = {}
@@ -34,8 +36,9 @@ class UnarxiveAdapter(Adapter):
             file = self._unprocessed_files.pop()
             filename = "{}/{}".format(self._folderpath, os.fsdecode(file))
             with open(filename, "r") as paper:
-                document["text"] = paper.readlines()
-            document["meta"]["id"] = filename.split("/")[-1][:-4]
+                text = paper.readlines()
+                document["text"] = "".join(text).replace("\n", " ")
+            document["meta"]["arixive-id"] = filename.split("/")[-1][:-4]
             documents.append(document)
         return documents
     

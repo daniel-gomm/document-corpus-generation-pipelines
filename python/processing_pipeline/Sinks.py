@@ -8,10 +8,6 @@ class Sink(metaclass=abc.ABCMeta):
     @classmethod
     def __subclasshook__(cls, subclass):
         return (hasattr(subclass, 'process') and callable(subclass.process) or NotImplemented)
-
-    @abc.abstractmethod
-    def process(self, document:Dict):
-        raise NotImplementedError
     
     @abc.abstractmethod
     def process(self, documents:List[Dict]):
@@ -25,9 +21,6 @@ class ElasticsearchSink(Sink):
     
     def process(self, documents: List[Dict]) -> List[Dict]:
         self._document_store.write_documents(documents)
-    
-    def process(self, document: Dict):
-        self.process([document])
 
 
 class TextfileSink(Sink):
@@ -44,7 +37,3 @@ class TextfileSink(Sink):
             filename += "json"
             with open(filename, "w") as file:
                     file.writelines(json.dumps(document))
-    
-    def process(self, document: Dict):
-        self.process([document])
-                

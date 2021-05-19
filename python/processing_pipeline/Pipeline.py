@@ -2,9 +2,9 @@ import abc
 import sys
 from re import S
 from typing import List
-from .Processors import Processor
-from .Sinks import Sink
-from .Adapters import Adapter
+from Processors import Processor
+from Sinks import Sink
+from Adapters import Adapter
 
 def progressbar(it, prefix="", size=60, file=sys.stdout):
     count = len(it)
@@ -49,9 +49,9 @@ class Pipeline:
                     sink.process(docs)
     
     def __str__(self) -> str:
-        ret = type(self._adapter)
+        ret = "({})".format(type(self._adapter).__name__)
         for processor in self._processors:
-            ret += " ---> " + type(processor)
+            ret += " ---> " + "*{}*".format(type(processor).__name__)
         for sink in self._sinks:
-            ret += "\n---> " + type(sink)
+            ret += "\n===> " + "|_{}_|".format(type(sink).__name__)
         return ret
