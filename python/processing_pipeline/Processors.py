@@ -1,9 +1,14 @@
 import abc
 import re
 import json
+import torch
+
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
 from .arxive_metadata.rocksDB import RocksDBAdapter
+from transformers import pipeline
+from transformers import BertForSequenceClassification
+from nltk.tokenize import sent_tokenize
 
 class Processor(metaclass=abc.ABCMeta):
     #Interface for processing steps
@@ -129,3 +134,54 @@ class FilterOnMetadataValue(Processor):
     
     def process(self, document:Dict) -> Dict:
         return self.process([document]).pop()
+
+
+#IMRAD Processing
+class IMRaDClassification(Processor):
+    
+
+    def __init__(self, filter:str, replacement:str):
+        self._filter = filter
+        self._replacement = replacement
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            sentences=sent_tokenize(document)
+            tokens = word_tokenize(document)
+            labels=classify(sentences)
+            a=0
+            b=0+len(sentences[0].split())
+            document["meta"]["IMRAD"]=f"{a} {b} {labels[0]}"
+            for l in range (0,len(labels)):
+                a=b
+                b=b+len(sentences[l].split())
+                document["meta"]["IMRAD"].append[f"{a} {b} {labels[l]}"]
+
+
+        return documents
+    
+    def process(self, document:Dict) -> Dict:
+        return self.process([document]).pop()
+
+
+class Classificaton:
+    model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=4, output_attentions=False, output_hidden_states=False)
+    model.load_state_dict(torch.load("/home/kd-sem/test_GroupD/finetuned_BERT_epoch_5.model", map_location=torch.device('cpu')))
+    classificationPipeline=pipeline("text-classification", model=model, tokenizer='bert-base-uncased')
+    
+
+    def classify(string):
+        a=classificationPipeline(string)
+        labels=[]
+
+        for i in range(0,len(a)):
+            b=a[i]['label']
+            if b=="LABEL_0":
+                labels.append("intro")
+            if b=="LABEL_1":
+                labels.append("methods")
+            if b=="LABEL_2":
+                labels.append("results")
+            if b=="LABEL_3":
+                labels.append("discussion")
+        return labels
