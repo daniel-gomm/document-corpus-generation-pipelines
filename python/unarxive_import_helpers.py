@@ -3,13 +3,22 @@ from arXive_categories import cs_categories
 import json
 import re
 import os
+import abc
 from alive_progress import alive_bar
 from timeit import default_timer as timer
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
-from haystack.preprocessor import PreProcessor
 
 def delete_citations(string:str):
     return re.sub(r"\{{(.*?)\}}", "", string)
+
+def clean_metadata(meta:dict):
+    
+    for key in ["update_date", "versions", "comments", "report-no", "license"]:
+        try:
+            meta.pop(key)
+        except:
+            print("Could not clean up metadata.")
+    return meta
 
 class Document:
     def __init__(self, filepath:str):
@@ -20,9 +29,9 @@ class Document:
         
     def set_meta(self, metadata:(str or dict)):
         if(isinstance(metadata, str)):
-            self._meta = json.loads(metadata)
+            self._meta = clean_metadata(json.loads(metadata))
         if(isinstance(metadata, dict)):
-            self._meta = metadata
+            self._meta = clean_metadata(metadata)
     
     def get_document_as_dict(self):
         return {
@@ -43,32 +52,52 @@ class Document:
     def _extract_id(self):
         return self._filepath.split("/")[-1][:-4]
 
+class document_saver_interface(metaclass=abc.ABCMeta):
+
+    @classmethod
+    def __subclasshook__(cls, subclass):
+        return (hasattr(subclass, 'store_data') and callable(subclass.store_data) or NotImplemented)
+
+    @abc.abstractmethod
+    def store_data(self, documents:list):
+        raise NotImplementedError
+
+class document_store_document_saver(document_saver_interface):
+
+    def __init__(self, document_store, processor):
+        self._document_store = document_store
+        self._processor = processor
+    
+    def store_data(self, documents:list):
+        docs_to_write = []
+        for d in documents:
+            docs_to_write.extend(self._processor.process(d.get_document_as_dict()))
+        self._document_store.write_documents(docs_to_write)
+
+class textfile_document_saver(document_saver_interface):
+
+    def __init__(self, folderpath:str, processor):
+        self._processor = processor
+        self._folderpath = folderpath
+    
+    def store_data(self, documents:list):
+        for document in documents:
+            docs_to_write = self._processor.process(document.get_document_as_dict())
+            for index, doc_part in enumerate(docs_to_write):
+                with open("{}/{}.{}.txt".format(self._folderpath, document._id, index), "w") as file:
+                    file.writelines(json.dumps(doc_part))
+
 def contains_cs_category(text:str):
     return any(substring in text for substring in cs_categories)
 
-def put_into_documentstore(document_store, documents:list):
-    processor = PreProcessor(
-        clean_empty_lines=True,
-        clean_whitespace=True,
-        clean_header_footer=True,
-        split_by="word",
-        split_length=200,
-        split_respect_sentence_boundary=True,
-        split_overlap=0
-    )
-    docs_to_write = []
-    for d in documents:
-        docs_to_write.extend(processor.process(d.get_document_as_dict()))
-    document_store.write_documents(docs_to_write)
-
-def process_docements(directory:str, files:list, db:rocksDB.RocksDBAdapter, batch_size:int=100):
+def process_documents(directory:str, files:list, db:rocksDB.RocksDBAdapter, document_saver:document_saver_interface, batch_size:int=100):
     statistics = {
         "no_original_papers": files.__len__(),
         "no_output_papers": 0,
         "no_paper_without_metadata":0,
         "elapsed_time":0
     }
-    document_store = ElasticsearchDocumentStore(host="localhost", username="", password="", index="document")
+    
     time_start = timer()
     print("Processing {} documents in batches of {}.".format(statistics["no_original_papers"], batch_size))
     dummy = []
@@ -91,8 +120,8 @@ def process_docements(directory:str, files:list, db:rocksDB.RocksDBAdapter, batc
             cs_documents = list(filter(lambda d: contains_cs_category(d._meta["categories"]), docs_with_metadata))
             statistics["no_output_papers"] += cs_documents.__len__()
             bar()
-            #Write documents into ElasticSearch DocumentStore
-            put_into_documentstore(document_store, cs_documents)
+            #Write out documents
+            document_saver.store_data(cs_documents)
     statistics["elapsed_time"] = timer() - time_start
     return statistics
 
