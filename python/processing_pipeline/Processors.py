@@ -5,14 +5,11 @@ import torch
 
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
-<<<<<<< HEAD
 from .arxive_metadata.rocksDB import RocksDBAdapter
 from transformers import pipeline
 from transformers import BertForSequenceClassification
 from nltk.tokenize import sent_tokenize
-=======
 from arxive_metadata.rocksDB import RocksDBAdapter
->>>>>>> dev
 
 class Processor(metaclass=abc.ABCMeta):
     #Interface for processing steps
@@ -124,9 +121,8 @@ class FilterOnMetadataValue(Processor):
         else:
             return list(filter(lambda d: not self._contains_value(d["meta"][self._metadata_field]), documents))
     
-<<<<<<< HEAD
-    def process(self, document:Dict) -> Dict:
-        return self.process([document]).pop()
+    def _contains_value(self, text:str):
+        return any(substring in text for substring in self._values)
 
 
 #IMRAD Processing
@@ -149,12 +145,7 @@ class IMRaDClassification(Processor):
                 a=b
                 b=b+len(sentences[l].split())
                 document["meta"]["IMRAD"].append[f"{a} {b} {labels[l]}"]
-
-
         return documents
-    
-    def process(self, document:Dict) -> Dict:
-        return self.process([document]).pop()
 
 
 class Classificaton:
@@ -178,7 +169,3 @@ class Classificaton:
             if b=="LABEL_3":
                 labels.append("discussion")
         return labels
-=======
-    def _contains_value(self, text:str):
-        return any(substring in text for substring in self._values)
->>>>>>> dev
