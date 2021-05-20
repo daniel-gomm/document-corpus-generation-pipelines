@@ -5,20 +5,20 @@ import torch
 
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
+<<<<<<< HEAD
 from .arxive_metadata.rocksDB import RocksDBAdapter
 from transformers import pipeline
 from transformers import BertForSequenceClassification
 from nltk.tokenize import sent_tokenize
+=======
+from arxive_metadata.rocksDB import RocksDBAdapter
+>>>>>>> dev
 
 class Processor(metaclass=abc.ABCMeta):
     #Interface for processing steps
     @classmethod
     def __subclasshook__(cls, subclass):
         return (hasattr(subclass, 'process') and callable(subclass.process) or NotImplemented)
-
-    @abc.abstractmethod
-    def process(self, document:Dict) -> Dict:
-        raise NotImplementedError
     
     @abc.abstractmethod
     def process(self, documents:List[Dict]) -> List[Dict]:
@@ -32,10 +32,11 @@ class HaystackPreProcessor(Processor):
         self._preprocessor = preprocessor
     
     def process(self, documents: List[Dict]) -> List[Dict]:
-        return self._preprocessor.process(documents)
-    
-    def process(self, document:Dict) -> Dict:
-        return self._preprocessor.process(document)
+        docs = []
+        for document in documents:
+            docs.extend(self._preprocessor.process(document))
+        return docs
+
 
 #Metadata Processors
 
@@ -49,9 +50,6 @@ class MetadataFieldDiscarder(Processor):
             for field in self._fields_to_discard:
                 document["meta"].pop(field, None)
         return documents
-    
-    def process(self, document:Dict) -> Dict:
-        return self.process([document]).pop()
 
 
 class MetadataArxiveEnricher(Processor):
@@ -67,22 +65,22 @@ class MetadataArxiveEnricher(Processor):
         metadata = json.loads(response.text)
         for document in documents:
             received_meta = metadata[document["meta"][self._id_field]]
-            if(not self._discard_missing and received_meta == "Data unavailable"):
+            if(received_meta == "Data unavailable"):
                 document["meta"].update({"unavailable metadata":"Metadata not found in database."})
+                if self._discard_missing:
+                    documents.pop(document)
             elif received_meta != "Data unavailable":
-                document["meta"].update(received_meta)
+                document["meta"].update(json.loads(received_meta))
         return documents
     
-    def process(self, document:Dict) -> Dict:
-        return self.process([document]).pop()
 
 #Text Processors
 
 class TextKeywordCut(Processor):
 
-    def __init__(self, keyword:str, cut__off_upper_part:bool = True):
+    def __init__(self, keyword:str, cut_off_upper_part:bool = True):
         self._keyword = keyword
-        self._cut__off_upper_part = cut__off_upper_part
+        self._cut__off_upper_part = cut_off_upper_part
 
     def process(self, documents: List[Dict]) -> List[Dict]:
         for document in documents:
@@ -97,8 +95,6 @@ class TextKeywordCut(Processor):
                 document["text"] = text
         return documents
     
-    def process(self, document:Dict) -> Dict:
-        return self.process([document]).pop()
 
 
 class TextReplaceFilter(Processor):
@@ -112,8 +108,6 @@ class TextReplaceFilter(Processor):
             document["text"] = re.sub(self._filter, self._replacement, document["text"])
         return documents
     
-    def process(self, document:Dict) -> Dict:
-        return self.process([document]).pop()
 
 #Filter Processors
 
@@ -122,16 +116,15 @@ class FilterOnMetadataValue(Processor):
     def __init__(self, metadata_field:str, values:List, discard_docs_wo_value:bool=True):
         self._metadata_field = metadata_field
         self._values = values
-        self._discart_wo_values = discard_docs_wo_value
+        self._discard_wo_values = discard_docs_wo_value
     
     def process(self, documents: List[Dict]) -> List[Dict]:
-        for document in documents:
-            if self._discart_wo_values and any(item in document["meta"][self._metadata_field] for item in self._values):
-                documents.remove(document)
-            elif not self._discart_wo_values and not any(item in document["meta"][self._metadata_field] for item in self._values):
-                documents.remove(document)
-        return documents
+        if self._discard_wo_values:
+            return list(filter(lambda d: self._contains_value(d["meta"][self._metadata_field]), documents))
+        else:
+            return list(filter(lambda d: not self._contains_value(d["meta"][self._metadata_field]), documents))
     
+<<<<<<< HEAD
     def process(self, document:Dict) -> Dict:
         return self.process([document]).pop()
 
@@ -185,3 +178,7 @@ class Classificaton:
             if b=="LABEL_3":
                 labels.append("discussion")
         return labels
+=======
+    def _contains_value(self, text:str):
+        return any(substring in text for substring in self._values)
+>>>>>>> dev
