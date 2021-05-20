@@ -1,9 +1,19 @@
 import abc
 import re
 import json
+import torch
+import nltk
+
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
 from arxive_metadata.rocksDB import RocksDBAdapter
+from transformers import pipeline
+from transformers import BertForSequenceClassification
+nltk.download('punkt')
+
+from nltk.tokenize import sent_tokenize
+#from nltk.tokenize import word_tokenize
+from nltk.tokenize.punkt import PunktSentenceTokenizer
 
 class Processor(metaclass=abc.ABCMeta):
     #Interface for processing steps
@@ -117,3 +127,48 @@ class FilterOnMetadataValue(Processor):
     
     def _contains_value(self, text:str):
         return any(substring in text for substring in self._values)
+
+class IMRaDClassification(Processor):
+    def __init__(self):
+        #self._keyword = keyword
+        #self._cut__off_upper_part = cut_off_upper_part
+        myClass=Classification()
+
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            sentences=sent_tokenize(document["text"])
+            #tokens = word_tokenize(document["text"])
+            labels=myClass.classify(sentences) #instanz
+            a=0
+            b=0+len(str.split(sentences[0]))
+            textIMRaD=f"{a} {b} {labels[0]} "
+            for l in range (1,len(labels)):
+                a=b
+                b=b+len(str.split(sentences[l]))
+                textIMRaD+=f"{a} {b} {labels[l]} "
+            document["meta"]["IMRAD"]=textIMRaD
+        return documents
+
+
+class Classification:
+    def __init__(self):
+        model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=4, output_attentions=False, output_hidden_states=False)
+        model.load_state_dict(torch.load("/home/kd-sem/GroupD/finetuned_BERT_epoch_5.model", map_location=torch.device('cpu')))
+        global classificationPipeline
+        classificationPipeline=pipeline("text-classification", model=model, tokenizer='bert-base-uncased')
+    
+
+    def classify(self,string):
+        labels=[]
+        a=classificationPipeline(string)
+        for i in range(0,len(a)):
+            b=a[i]['label']
+            if b=="LABEL_0":
+                labels.append("intro")
+            if b=="LABEL_1":
+                labels.append("methods")
+            if b=="LABEL_2":
+                labels.append("results")
+            if b=="LABEL_3":
+                labels.append("discussion")
+        return labels
