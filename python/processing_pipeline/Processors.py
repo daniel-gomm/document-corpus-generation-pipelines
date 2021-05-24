@@ -7,13 +7,11 @@ import nltk
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
 from arxive_metadata.rocksDB import RocksDBAdapter
-from transformers import pipeline
-from transformers import BertForSequenceClassification
-nltk.download('punkt')
 
 from nltk.tokenize import sent_tokenize
-#from nltk.tokenize import word_tokenize
+nltk.download('punkt')
 from nltk.tokenize.punkt import PunktSentenceTokenizer
+from imrad_classification import ClassificationHandler, BERTClassificationHandler
 
 class Processor(metaclass=abc.ABCMeta):
     #Interface for processing steps
@@ -64,15 +62,17 @@ class MetadataArxiveEnricher(Processor):
         ids = list(map(lambda doc: doc["meta"][self._id_field], documents))
         response = self._db.get_all(ids)
         metadata = json.loads(response.text)
+        docs_to_return = []
         for document in documents:
             received_meta = metadata[document["meta"][self._id_field]]
             if(received_meta == "Data unavailable"):
                 document["meta"].update({"unavailable metadata":"Metadata not found in database."})
-                if self._discard_missing:
-                    documents.pop(document)
+                if not self._discard_missing:
+                    docs_to_return.append(document)
             elif received_meta != "Data unavailable":
                 document["meta"].update(json.loads(received_meta))
-        return documents
+                docs_to_return.append(document)
+        return docs_to_return
     
 
 #Text Processors
@@ -80,7 +80,7 @@ class MetadataArxiveEnricher(Processor):
 class TextKeywordCut(Processor):
 
     def __init__(self, keyword:str, cut_off_upper_part:bool = True):
-        self._keyword = keyword
+        self._keyword = keyword.lower()
         self._cut__off_upper_part = cut_off_upper_part
 
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -92,7 +92,7 @@ class TextKeywordCut(Processor):
                     text = text[-(len(text_substring)+len(self._keyword)):]
                 else:
                     text_substring = text.lower().partition(self._keyword)[0]
-                    text = text[:(len(text_substring)+len(self._keyword))]
+                    text = text[0:(len(text_substring))]
                 document["text"] = text
         return documents
     
@@ -108,7 +108,23 @@ class TextReplaceFilter(Processor):
         for document in documents:
             document["text"] = re.sub(self._filter, self._replacement, document["text"])
         return documents
+
+
+class TextAppendMetadataField(Processor):
+
+    def __init__(self, field_to_attach:str, metdata_field_content_before_text:bool = True):
+        self._field_to_attach = field_to_attach
+        self._metdata_field_content_before_text = metdata_field_content_before_text
     
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            meta_field_content = document["meta"][self._field_to_attach]
+            if meta_field_content != None:
+                if self._metdata_field_content_before_text:
+                    document["text"] = meta_field_content + " " + document["text"]
+                else:
+                    document["text"] += " " + meta_field_content
+        return documents
 
 #Filter Processors
 
@@ -129,46 +145,22 @@ class FilterOnMetadataValue(Processor):
         return any(substring in text for substring in self._values)
 
 class IMRaDClassification(Processor):
-    def __init__(self):
+    def __init__(self, classification_handler:ClassificationHandler = BERTClassificationHandler("/home/daniel/BERT_copy.model")):
         #self._keyword = keyword
         #self._cut__off_upper_part = cut_off_upper_part
-        myClass=Classification()
+        self._classification_handler=classification_handler
 
     def process(self, documents: List[Dict]) -> List[Dict]:
         for document in documents:
-            sentences=sent_tokenize(document["text"])
+            sentences = sent_tokenize(document["text"])
             #tokens = word_tokenize(document["text"])
-            labels=myClass.classify(sentences) #instanz
-            a=0
-            b=0+len(str.split(sentences[0]))
-            textIMRaD=f"{a} {b} {labels[0]} "
-            for l in range (1,len(labels)):
-                a=b
-                b=b+len(str.split(sentences[l]))
-                textIMRaD+=f"{a} {b} {labels[l]} "
-            document["meta"]["IMRAD"]=textIMRaD
+            labels = self._classification_handler.classify(sentences) #instance
+            first_token_in_sentence = 0
+            last_token_in_sentence = 0
+            classification_result = []
+            for index, label in enumerate(labels):
+                last_token_in_sentence = last_token_in_sentence+len(str.split(sentences[index]))
+                classification_result.append([first_token_in_sentence, last_token_in_sentence, label])
+                first_token_in_sentence = last_token_in_sentence
+            document["meta"]["IMRAD"] = classification_result
         return documents
-
-
-class Classification:
-    def __init__(self):
-        model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=4, output_attentions=False, output_hidden_states=False)
-        model.load_state_dict(torch.load("/home/kd-sem/GroupD/finetuned_BERT_epoch_5.model", map_location=torch.device('cpu')))
-        global classificationPipeline
-        classificationPipeline=pipeline("text-classification", model=model, tokenizer='bert-base-uncased')
-    
-
-    def classify(self,string):
-        labels=[]
-        a=classificationPipeline(string)
-        for i in range(0,len(a)):
-            b=a[i]['label']
-            if b=="LABEL_0":
-                labels.append("intro")
-            if b=="LABEL_1":
-                labels.append("methods")
-            if b=="LABEL_2":
-                labels.append("results")
-            if b=="LABEL_3":
-                labels.append("discussion")
-        return labels

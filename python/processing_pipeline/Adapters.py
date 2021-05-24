@@ -51,7 +51,26 @@ class UnarxiveAdapter(Adapter):
         return documents
     
     def __len__(self) -> int:
-        return self._unprocessed_files.__len__()
+        return len(self._unprocessed_files)
+
+
+class TextfileAdapter(Adapter):
+    
+    def __init__(self, folderpath:str):
+        self._folderpath = folderpath
+        files = os.listdir(folderpath)
+        self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
+    
+    def reset(self):
+        files = os.listdir(self._folderpath)
+        self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
+    
+    def generate_documents(self, no_documents: int) -> List[Dict]:
+        #TODO: Implement
+        return super().generate_documents(no_documents)
+    
+    def __len__(self) -> int:
+        return len(self._unprocessed_files)
 
 
 class UnpaywallAdapter(Adapter):
@@ -92,14 +111,6 @@ class ElasticsearchAdapter(Adapter):
             docs.append(new_document)
         self._unprocessed_documents -= len(docs)
         return docs
-        '''
-        if len(docs) < no_documents:
-            ret = self._unprocessed_documents
-            self._unprocessed_documents = []
-        else:
-            ret = self._unprocessed_documents[:no_documents]
-            self._unprocessed_documents = self._unprocessed_documents[no_documents:]
-        return ret'''
     
     def __len__(self):
         return self._unprocessed_documents
