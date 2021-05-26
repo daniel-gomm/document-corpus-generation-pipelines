@@ -18,7 +18,8 @@ class ClassificationHandler(metaclass=abc.ABCMeta):
 class BERTClassificationHandler(ClassificationHandler):
     def __init__(self, bert_filename:str):
         self._model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=4, output_attentions=False, output_hidden_states=False)
-        self._model.load_state_dict(torch.load(bert_filename, map_location=torch.device('cpu')))
+        #self._model.load_state_dict(torch.load(bert_filename, map_location=torch.device('cpu')))
+        self._model.load_state_dict(torch.load(bert_filename, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')))
         self._classificationPipeline = TextClassificationPipeline(model=self._model, tokenizer = BertTokenizer.from_pretrained('bert-base-uncased'))
 
     def classify(self,text_to_classify:str) -> List:
