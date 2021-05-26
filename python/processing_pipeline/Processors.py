@@ -1,9 +1,11 @@
 import abc
 import re
 import json
-import torch
 import nltk
+import logging
+logging.basicConfig(filename="processor_logs.log", level=logging.DEBUG)
 
+from pandas import DataFrame
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
 from arxive_metadata.rocksDB import RocksDBAdapter
@@ -74,6 +76,27 @@ class MetadataArxiveEnricher(Processor):
                 docs_to_return.append(document)
         return docs_to_return
     
+class MetadataMagArxiveLinker(Processor):
+
+    def __init__(self, dataframe:DataFrame, column_to_match:str, column_to_add:str, field_to_match:str = "arixive-id"):
+        self._column_to_match = column_to_match
+        self._column_to_add = column_to_add
+        self._dataframe = dataframe[[self._column_to_add, self._column_to_match]]
+        self._field_to_match = field_to_match
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        docs_to_return = []
+        for document in documents:
+            try:
+                document["meta"][self._column_to_add] = self._find_match(document["meta"][self._field_to_match])
+                docs_to_return.append(document)
+            except IndexError:
+                logging.info("No matching id found for {}".format(document["meta"][self._field_to_match]))
+        return documents
+    
+    def _find_match(self, value):
+        matching_value = self._dataframe[self._dataframe[self._column_to_match] == value][self._column_to_add].iloc[0]
+        return int(matching_value)
 
 #Text Processors
 
@@ -160,7 +183,10 @@ class IMRaDClassification(Processor):
             classification_result = []
             for index, label in enumerate(labels):
                 last_token_in_sentence = last_token_in_sentence+len(str.split(sentences[index]))
-                classification_result.append([first_token_in_sentence, last_token_in_sentence, label])
+                classification_result.append(
+                    {"first_token": first_token_in_sentence,
+                    "last_token": last_token_in_sentence,
+                    "label": label})
                 first_token_in_sentence = last_token_in_sentence
             document["meta"]["IMRAD"] = classification_result
         return documents

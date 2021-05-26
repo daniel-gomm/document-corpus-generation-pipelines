@@ -37,3 +37,8 @@ class TextfileSink(Sink):
             filename += "json"
             with open(filename, "w") as file:
                     file.writelines(json.dumps(document))
+
+class PrintSink(Sink):
+
+    def process(self, documents: List[Dict]):
+        print(documents)
