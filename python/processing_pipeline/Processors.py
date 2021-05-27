@@ -3,7 +3,7 @@ import re
 import json
 import nltk
 import logging
-logging.basicConfig(filename="processor_logs.log", level=logging.DEBUG)
+logging.basicConfig(filename="processor_logs.log", level=logging.INFO)
 
 from pandas import DataFrame
 from typing import List, Dict
