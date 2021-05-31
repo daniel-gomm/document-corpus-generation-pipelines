@@ -38,6 +38,26 @@ class TextfileSink(Sink):
             with open(filename, "w") as file:
                     file.writelines(json.dumps(document))
 
+
+class CSVMetadataSink(Sink):
+
+    def __init__(self, filepath:str, metadata_field:str) -> None:
+        self._file = open(filepath, "a+")
+        self._metadata_field = metadata_field
+    
+    def process(self, documents: List[Dict]):
+        batch_set = set()
+        for document in documents:
+            try:
+                batch_set.add(document["meta"][self._metadata_field])
+            except:
+                pass
+        for entry in batch_set:
+            self._file.write(str(entry) + ",\n")
+    
+    def __del__(self):
+        self._file.close()
+
 class PrintSink(Sink):
 
     def process(self, documents: List[Dict]):

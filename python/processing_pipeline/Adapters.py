@@ -1,7 +1,21 @@
 import abc
 import os
+from pathlib import Path
+from os import scandir
+from os.path import isfile, join, exists
 from typing import List, Dict
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+
+#Helpers
+
+def get_files(path:Path):
+    if exists(path):
+        for file in scandir(path):
+            full_path = join(path, file.name)
+            if isfile(full_path):
+                yield full_path
+    else:
+        print('Path doesn\'t exist')
 
 class Adapter(metaclass=abc.ABCMeta):
     #Adapter to input data
@@ -26,32 +40,36 @@ class UnarxiveAdapter(Adapter):
     def __init__(self, folderpath:str):
         self._folderpath = folderpath
         files = os.listdir(folderpath)
-        self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
+        self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".txt"), files)))
+        self._file_iterator = get_files(Path(folderpath))
     
     def reset(self):
         files = os.listdir(self._folderpath)
-        self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
+        self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".txt"), files)))
+        self._file_iterator = get_files(Path(self._folderpath))
 
     def generate_documents(self, no_documents: int) -> List[Dict]:
         documents = []
         counter = 0
-        if not os.path.exists(self._folderpath):
-            os.makedirs(self._folderpath)
-        while counter < no_documents and self._unprocessed_files:
-            counter += 1
-            document = {}
-            document["meta"] = {}
-            file = self._unprocessed_files.pop()
-            filename = "{}/{}".format(self._folderpath, os.fsdecode(file))
-            with open(filename, "r") as paper:
-                text = paper.readlines()
-                document["text"] = "".join(text).replace("\n", " ")
-            document["meta"]["arixive-id"] = filename.split("/")[-1][:-4]
-            documents.append(document)
+        doc = next(self._file_iterator, None)
+        while counter < no_documents and doc:
+            path = str(doc)
+            if path.endswith(".txt"):
+                counter += 1
+                document = {}
+                document["meta"] = {}
+                with open(doc, "r") as paper:
+                    text = paper.readlines()
+                    document["text"] = "".join(text).replace("\n", " ")
+                document["meta"]["arixive-id"] = path.split("/")[-1][:-4]
+                documents.append(document)
+                self._no_unprocessed_files -= 1
+                if counter < no_documents:
+                    doc = next(self._file_iterator, None)
         return documents
     
     def __len__(self) -> int:
-        return len(self._unprocessed_files)
+        return self._no_unprocessed_files
 
 
 class TextfileAdapter(Adapter):

@@ -2,8 +2,8 @@ import abc
 import re
 import json
 import nltk
+import sys
 import logging
-logging.basicConfig(filename="processor_logs.log", level=logging.INFO)
 
 from pandas import DataFrame
 from typing import List, Dict
@@ -168,7 +168,7 @@ class FilterOnMetadataValue(Processor):
         return any(substring in text for substring in self._values)
 
 class IMRaDClassification(Processor):
-    def __init__(self, classification_handler:ClassificationHandler = BERTClassificationHandler("/home/daniel/BERT_copy.model")):
+    def __init__(self, classification_handler:ClassificationHandler):
         #self._keyword = keyword
         #self._cut__off_upper_part = cut_off_upper_part
         self._classification_handler=classification_handler
