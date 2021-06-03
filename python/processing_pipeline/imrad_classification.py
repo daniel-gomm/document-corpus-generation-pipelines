@@ -12,11 +12,27 @@ class ClassificationHandler(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
     def classify(self, text_to_classify:str) -> List:
+        """Classifies a given String.
+
+        Args:
+            text_to_classify (str): String that is classified.
+
+        Raises:
+            NotImplementedError: Raised if sublass doesn't implement method.
+
+        Returns:
+            List: Classification results.
+        """        
         raise NotImplementedError
 
 
 class BERTClassificationHandler(ClassificationHandler):
     def __init__(self, bert_filename:str):
+        """IMRaD classifier using BERT for word embeddings.
+
+        Args:
+            bert_filename (str): Model file with BERT parameters.
+        """        
         self._model = BertForSequenceClassification.from_pretrained("bert-base-uncased", num_labels=4, output_attentions=False, output_hidden_states=False)
         #self._model.load_state_dict(torch.load(bert_filename, map_location=torch.device('cpu')))
         self._model.load_state_dict(torch.load(bert_filename, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')))

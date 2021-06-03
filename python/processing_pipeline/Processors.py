@@ -23,6 +23,17 @@ class Processor(metaclass=abc.ABCMeta):
     
     @abc.abstractmethod
     def process(self, documents:List[Dict]) -> List[Dict]:
+        """Processes a batch of documents, modifies them and outputs the result.
+
+        Args:
+            documents (List[Dict]): Input documents which should have the structure {'text':..., 'meta':{...}}.
+
+        Raises:
+            NotImplementedError: Raised if the Method is not implemented by subclass.
+
+        Returns:
+            List[Dict]: Output documents modified by the processor.
+        """        
         raise NotImplementedError
 
 #General Processors
@@ -30,6 +41,11 @@ class Processor(metaclass=abc.ABCMeta):
 class HaystackPreProcessor(Processor):
 
     def __init__(self, preprocessor:PreProcessor):
+        """Wrapper for Haystack PreProcessor.
+
+        Args:
+            preprocessor (PreProcessor): Haystack PreProcessor that should be applied.
+        """        
         self._preprocessor = preprocessor
     
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -44,6 +60,11 @@ class HaystackPreProcessor(Processor):
 class MetadataFieldDiscarder(Processor):
 
     def __init__(self, fields_to_discard:List):
+        """Discards provided metadata fields from meta dictionary.
+
+        Args:
+            fields_to_discard (List): list of names of the fields that should be discarded.
+        """        
         self._fields_to_discard = fields_to_discard
 
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -56,6 +77,13 @@ class MetadataFieldDiscarder(Processor):
 class MetadataArxiveEnricher(Processor):
 
     def __init__(self, id_field:str, db:RocksDBAdapter, discard_entries_without_metadata:bool=True):
+        """Adds arXive metadata to the metadata dictionary.
+
+        Args:
+            id_field (str): Field in metadata that contains the arXive ID.
+            db (RocksDBAdapter): Connector to RocksDB that contains the arXive Metadata.
+            discard_entries_without_metadata (bool, optional): Flags if entries for which no metadata is found should be discarded. Defaults to True.
+        """        
         self._db = db
         self._id_field = id_field
         self._discard_missing = discard_entries_without_metadata
@@ -79,6 +107,14 @@ class MetadataArxiveEnricher(Processor):
 class MetadataMagArxiveLinker(Processor):
 
     def __init__(self, dataframe:DataFrame, column_to_match:str, column_to_add:str, field_to_match:str = "arixive-id"):
+        """Adds the MAG-ID to documents based on their arXive-ID.
+
+        Args:
+            dataframe (DataFrame): datframe containing pairs of MAG-IDs and arXive-IDs.
+            column_to_match (str): Columnname containing the arXive-IDs.
+            column_to_add (str): Columnname containing the MAG-IDs.
+            field_to_match (str, optional): Metadata field that contains the arXive-ID. Defaults to "arixive-id".
+        """        
         self._column_to_match = column_to_match
         self._column_to_add = column_to_add
         self._dataframe = dataframe[[self._column_to_add, self._column_to_match]]
@@ -103,6 +139,12 @@ class MetadataMagArxiveLinker(Processor):
 class TextKeywordCut(Processor):
 
     def __init__(self, keyword:str, cut_off_upper_part:bool = True):
+        """Cuts off the text above or below a certain keyword.
+
+        Args:
+            keyword (str): Keyword on anchoring the cut.
+            cut_off_upper_part (bool, optional): If True the part above the keyword is cut of, if False the part below the keyword is cut of. Defaults to True.
+        """        
         self._keyword = keyword.lower()
         self._cut__off_upper_part = cut_off_upper_part
 
@@ -124,6 +166,12 @@ class TextKeywordCut(Processor):
 class TextReplaceFilter(Processor):
 
     def __init__(self, filter:str, replacement:str):
+        """Replace a substring of the text.
+
+        Args:
+            filter (str): Specifies the substring that should be replaced.
+            replacement (str): Replacement for instances of the filter.
+        """        
         self._filter = filter
         self._replacement = replacement
     
@@ -136,6 +184,12 @@ class TextReplaceFilter(Processor):
 class TextAppendMetadataField(Processor):
 
     def __init__(self, field_to_attach:str, metdata_field_content_before_text:bool = True):
+        """Appends a metadata field to the docuemnts text field.
+
+        Args:
+            field_to_attach (str): Field which should be attached (e.g. 'abstract').
+            metdata_field_content_before_text (bool, optional): True if field should be attached in front of existing text, False if it should be appended. Defaults to True.
+        """        
         self._field_to_attach = field_to_attach
         self._metdata_field_content_before_text = metdata_field_content_before_text
     
@@ -154,6 +208,13 @@ class TextAppendMetadataField(Processor):
 class FilterOnMetadataValue(Processor):
 
     def __init__(self, metadata_field:str, values:List, discard_docs_wo_value:bool=True):
+        """Filters out documents which don't have any of the provided values in a  specific field.
+
+        Args:
+            metadata_field (str): Field that's value is assessed.
+            values (List): Possible values.
+            discard_docs_wo_value (bool, optional): [description]. Defaults to True.
+        """        
         self._metadata_field = metadata_field
         self._values = values
         self._discard_wo_values = discard_docs_wo_value
@@ -167,10 +228,15 @@ class FilterOnMetadataValue(Processor):
     def _contains_value(self, text:str):
         return any(substring in text for substring in self._values)
 
+#IMRaD
+
 class IMRaDClassification(Processor):
     def __init__(self, classification_handler:ClassificationHandler):
-        #self._keyword = keyword
-        #self._cut__off_upper_part = cut_off_upper_part
+        """Classifies sentences in the documents text field into Introduction, Methodology, Results and Discussion.
+
+        Args:
+            classification_handler (ClassificationHandler): ClassificationHandler used to classify sentences.
+        """        
         self._classification_handler=classification_handler
 
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -189,4 +255,28 @@ class IMRaDClassification(Processor):
                     "label": label})
                 first_token_in_sentence = last_token_in_sentence
             document["meta"]["IMRAD"] = classification_result
+        return documents
+
+#NE Processors
+
+class WikidataStringMatchingProcessor(Processor):
+
+    def __init__(self, wikidata_entities:dict, field_to_add:str):
+        """Adds a link to Wikidata entities based on string matching.
+
+        Args:
+            wikidata_entities (dict): Dictionary of wikidata entities in the format: {'itemLabel':'item'}.
+            field_to_add (str): Name of the metadata field added.
+        """        
+        self._wikidata_entities = wikidata_entities
+        self._field_to_add = field_to_add
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            if not (self._field_to_add in document['meta'].keys()):
+                document['meta'][self._field_to_add] = []
+            if any(entity in document['text'] for entity in self._wikidata_entities.keys()):
+                for key, value in self._wikidata_entities.items():
+                    if key in document['text']:
+                        document['meta'][self._field_to_add].append({'title':key, 'wikidata_id':value})
         return documents

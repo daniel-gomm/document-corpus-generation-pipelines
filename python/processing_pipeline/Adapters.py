@@ -1,8 +1,10 @@
 import abc
 import os
+import logging
 from pathlib import Path
 from os import scandir
 from os.path import isfile, join, exists
+import traceback
 from typing import List, Dict
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
 
@@ -25,9 +27,25 @@ class Adapter(metaclass=abc.ABCMeta):
 
     @abc.abstractmethod
     def generate_documents(self, no_documents:int) -> List[Dict]:
+        """Generates a given number of documents.
+
+        Args:
+            no_documents (int): Number of documents that should be generated.
+
+        Raises:
+            NotImplementedError: Raised if subclass doesn't implement method.
+
+        Returns:
+            List[Dict]: Documents represented by a dictionary.
+        """        
         raise NotImplementedError
     
     def reset(self):
+        """Resets the adapter to its initial state.
+
+        Raises:
+            NotImplementedError: Raised if subclass doesn't implement method.
+        """        
         raise NotImplementedError
     
     @abc.abstractmethod
@@ -38,6 +56,11 @@ class Adapter(metaclass=abc.ABCMeta):
 class UnarxiveAdapter(Adapter):
     
     def __init__(self, folderpath:str):
+        """Adapter for unarXive textfiles.
+
+        Args:
+            folderpath (str): Directory of the unarXive fulltexts.
+        """        
         self._folderpath = folderpath
         files = os.listdir(folderpath)
         self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".txt"), files)))
@@ -55,15 +78,18 @@ class UnarxiveAdapter(Adapter):
         while counter < no_documents and doc:
             path = str(doc)
             if path.endswith(".txt"):
-                counter += 1
-                document = {}
-                document["meta"] = {}
-                with open(doc, "r") as paper:
-                    text = paper.readlines()
-                    document["text"] = "".join(text).replace("\n", " ")
-                document["meta"]["arixive-id"] = path.split("/")[-1][:-4]
-                documents.append(document)
-                self._no_unprocessed_files -= 1
+                try:
+                    counter += 1
+                    document = {}
+                    document["meta"] = {}
+                    with open(doc, "r") as paper:
+                        text = paper.readlines()
+                        document["text"] = "".join(text).replace("\n", " ")
+                    document["meta"]["arixive-id"] = path.split("/")[-1][:-4]
+                    documents.append(document)
+                    self._no_unprocessed_files -= 1
+                except:
+                    logging.error(traceback.format_exc())
                 if counter < no_documents:
                     doc = next(self._file_iterator, None)
         return documents
@@ -75,6 +101,11 @@ class UnarxiveAdapter(Adapter):
 class TextfileAdapter(Adapter):
     
     def __init__(self, folderpath:str):
+        """**Not Implemented** Adapter for textfiles that contain a json representation of the document.
+
+        Args:
+            folderpath (str): Directory holding the textfiles.
+        """        
         self._folderpath = folderpath
         files = os.listdir(folderpath)
         self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
@@ -91,9 +122,14 @@ class TextfileAdapter(Adapter):
         return len(self._unprocessed_files)
 
 
-class UnpaywallAdapter(Adapter):
+class GrobidAdapter(Adapter):
     
     def __init__(self, folderpath:str):
+        """**Not Implemented** Adapter for GROBID output (TEI XML Files).
+
+        Args:
+            folderpath (str): Directory holding the textfiles.
+        """   
         self._folderpath = folderpath
     
     def reset(self):
@@ -111,6 +147,12 @@ class UnpaywallAdapter(Adapter):
 class ElasticsearchAdapter(Adapter):
 
     def __init__(self, document_store:ElasticsearchDocumentStore, batch_size: int = 10000):
+        """Adapter for the Haystack Elasticsearch DocumentStore.
+
+        Args:
+            document_store (ElasticsearchDocumentStore): Elasticsearch DocumentStore from which documents should be processed.
+            batch_size (int, optional): Batch size in which documents should be retrieved from the document store. Defaults to 10000.
+        """        
         self._document_store = document_store
         self._batch_size = batch_size
         self._generator = self._document_store.get_all_documents_generator(batch_size = batch_size)

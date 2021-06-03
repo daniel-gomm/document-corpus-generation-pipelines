@@ -11,12 +11,25 @@ class Sink(metaclass=abc.ABCMeta):
     
     @abc.abstractmethod
     def process(self, documents:List[Dict]):
+        """Processes documents through the sink.
+
+        Args:
+            documents (List[Dict]): Documents to be processed.
+
+        Raises:
+            NotImplementedError: Raised if sublclass doesn't implement the method. 
+        """        
         raise NotImplementedError
 
 
 class ElasticsearchSink(Sink):
 
     def __init__(self, document_store:ElasticsearchDocumentStore):
+        """Wrapper for the Haystack Elasticsearch Document Store.
+
+        Args:
+            document_store (ElasticsearchDocumentStore): Preconfigured Haystack Elasticsearch Documentstore
+        """        
         self._document_store = document_store
     
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -26,6 +39,12 @@ class ElasticsearchSink(Sink):
 class TextfileSink(Sink):
 
     def __init__(self, folderpath:str, filename_meta_fields:List[str]):
+        """Saves output to textfiles.
+
+        Args:
+            folderpath (str): Directory to which files should be saved to.
+            filename_meta_fields (List[str]): Metadata fields specifiying the filenames.
+        """        
         self._folderpath = folderpath
         self._filename_meta_fields = filename_meta_fields
     
@@ -42,6 +61,12 @@ class TextfileSink(Sink):
 class CSVMetadataSink(Sink):
 
     def __init__(self, filepath:str, metadata_field:str) -> None:
+        """Saves a metadata field into a CSV file.
+
+        Args:
+            filepath (str): Path under which the CSV-file should be stored.
+            metadata_field (str): Metadatafield to be saved.
+        """        
         self._file = open(filepath, "a+")
         self._metadata_field = metadata_field
     
