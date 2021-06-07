@@ -9,6 +9,7 @@ from pandas import DataFrame
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
 from arxive_metadata.rocksDB import RocksDBAdapter
+from DocumentFields import MetadataFields
 
 from nltk.tokenize import sent_tokenize
 nltk.download('punkt')
@@ -228,6 +229,22 @@ class FilterOnMetadataValue(Processor):
     def _contains_value(self, text:str):
         return any(substring in text for substring in self._values)
 
+class FilterExistingDocuments(Processor):
+
+    def __init__(self, metadata_field:str, existing_ids:List[str]):
+        """Filters documents based on a blacklist of strings.
+
+        Args:
+            metadata_field (str): Metadata field to compare to list.
+            existing_ids (List[str]): List containing already registered ids.
+        """        
+        self._metadata_field = metadata_field
+        self._existing_ids = existing_ids
+
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        return list(filter(lambda d: not d['meta'][self._metadata_field] in self._existing_ids, documents))   
+        
+
 #IMRaD
 
 class IMRaDClassification(Processor):
@@ -254,7 +271,7 @@ class IMRaDClassification(Processor):
                     "last_token": last_token_in_sentence,
                     "label": label})
                 first_token_in_sentence = last_token_in_sentence
-            document["meta"]["IMRAD"] = classification_result
+            document["meta"][MetadataFields.IMRAD.value] = classification_result
         return documents
 
 #NE Processors

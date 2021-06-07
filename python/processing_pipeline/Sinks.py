@@ -24,16 +24,18 @@ class Sink(metaclass=abc.ABCMeta):
 
 class ElasticsearchSink(Sink):
 
-    def __init__(self, document_store:ElasticsearchDocumentStore):
+    def __init__(self, document_store:ElasticsearchDocumentStore, batch_size:int=10000):
         """Wrapper for the Haystack Elasticsearch Document Store.
 
         Args:
-            document_store (ElasticsearchDocumentStore): Preconfigured Haystack Elasticsearch Documentstore
+            document_store (ElasticsearchDocumentStore): Preconfigured Haystack Elasticsearch Documentstore.
+            batch_size (int): Number of documents that are passed to Elasticsearch's bulk function at a time.
         """        
         self._document_store = document_store
+        self._batch_size = batch_size
     
     def process(self, documents: List[Dict]) -> List[Dict]:
-        self._document_store.write_documents(documents)
+        self._document_store.write_documents(documents, batch_size=self._batch_size)
 
 
 class TextfileSink(Sink):

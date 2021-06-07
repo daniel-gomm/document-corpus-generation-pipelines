@@ -1,12 +1,15 @@
 import abc
 import os
 import logging
+from DocumentFields import MetadataFields
 from pathlib import Path
 from os import scandir
 from os.path import isfile, join, exists
 import traceback
 from typing import List, Dict
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+import bs4
+from bs4 import BeautifulSoup
 
 #Helpers
 
@@ -85,7 +88,7 @@ class UnarxiveAdapter(Adapter):
                     with open(doc, "r") as paper:
                         text = paper.readlines()
                         document["text"] = "".join(text).replace("\n", " ")
-                    document["meta"]["arixive-id"] = path.split("/")[-1][:-4]
+                    document["meta"][MetadataFields.ARXIVE_ID.value] = path.split("/")[-1][:-4]
                     documents.append(document)
                     self._no_unprocessed_files -= 1
                 except:
@@ -131,18 +134,52 @@ class GrobidAdapter(Adapter):
             folderpath (str): Directory holding the textfiles.
         """   
         self._folderpath = folderpath
+        files = os.listdir(folderpath)
+        self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".xml"), files)))
+        self._file_iterator = get_files(Path(folderpath))
     
     def reset(self):
-        #TODO: Implement
-        return super().reset()
+        files = os.listdir(self._folderpath)
+        self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".xml"), files)))
+        self._file_iterator = get_files(Path(self._folderpath))
     
     def generate_documents(self, no_documents: int) -> List[Dict]:
-        #TODO: Implement
-        return super().generate_documents(no_documents)
+        documents = []
+        counter = 0
+        doc = next(self._file_iterator, None)
+        while counter < no_documents and doc:
+            path = str(doc)
+            if path.endswith(".xml"):
+                try:
+                    counter += 1
+                    document = {}
+                    document["meta"] = {}
+                    with open(doc, "r") as paper:
+                        document["text"] = self._extract_text(BeautifulSoup(paper, 'lxml'))
+                    document["meta"][MetadataFields.MAKG_ID.value] = path.split("/")[-1][:-8]
+                    documents.append(document)
+                    self._no_unprocessed_files -= 1
+                except:
+                    logging.error(traceback.format_exc())
+                if counter < no_documents:
+                    doc = next(self._file_iterator, None)
+        return documents
+    
+    def _extract_text(self, soup:BeautifulSoup):
+        abstract = soup.abstract.getText(separator=' ', strip=True)
+        divs_text = []
+        for div in soup.body.find_all("div"):
+            if not div.get("type"):
+                for child in div.children:
+                    if(not child.name == "listbibl"):
+                        if(isinstance(child, bs4.element.NavigableString)):
+                            divs_text.append(str(child))
+                        elif(isinstance(child, bs4.element.Tag)):
+                            divs_text.append(child.text)
+        return " ".join(divs_text)
     
     def __len__(self) -> int:
-        #TODO: Implement
-        return super().__len__()
+        return self._no_unprocessed_files
 
 class ElasticsearchAdapter(Adapter):
 
