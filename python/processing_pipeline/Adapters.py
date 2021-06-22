@@ -9,7 +9,10 @@ import traceback
 from typing import List, Dict
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
 import bs4
+import numpy as np
 from bs4 import BeautifulSoup
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.tokenize.treebank import TreebankWordDetokenizer
 
 #Helpers
 
@@ -127,7 +130,7 @@ class TextfileAdapter(Adapter):
 
 class GrobidAdapter(Adapter):
     
-    def __init__(self, folderpath:str):
+    def __init__(self, folderpath:str, split_len:int=100):
         """**Not Implemented** Adapter for GROBID output (TEI XML Files).
 
         Args:
@@ -137,6 +140,7 @@ class GrobidAdapter(Adapter):
         files = os.listdir(folderpath)
         self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".xml"), files)))
         self._file_iterator = get_files(Path(folderpath))
+        self._split_len = split_len
     
     def reset(self):
         files = os.listdir(self._folderpath)
@@ -155,7 +159,7 @@ class GrobidAdapter(Adapter):
                     document = {}
                     document["meta"] = {}
                     with open(doc, "r") as paper:
-                        document["text"] = self._extract_text(BeautifulSoup(paper, 'lxml'))
+                        document["text"] = "\n".join(self._extract_paragraphs(BeautifulSoup(paper, 'lxml')))
                     document["meta"][MetadataFields.MAKG_ID.value] = path.split("/")[-1][:-8]
                     documents.append(document)
                     self._no_unprocessed_files -= 1
@@ -165,8 +169,61 @@ class GrobidAdapter(Adapter):
                     doc = next(self._file_iterator, None)
         return documents
     
+    def generate_and_split_documents(self, no_documents: int) -> List[Dict]:
+        documents = []
+        counter = 0
+        doc = next(self._file_iterator, None)
+        while counter < no_documents and doc:
+            path = str(doc)
+            if path.endswith(".xml"):
+                try:
+                    counter += 1
+                    with open(doc, "r") as paper:
+                        paragraphs = self._extract_paragraphs(BeautifulSoup(paper, 'lxml'))
+                    split_id = 0
+                    p_cleaned = []
+                    for paragraph in paragraphs:
+                        p_tokenized = word_tokenize(paragraph)
+                        if len(p_tokenized) < 5:
+                            continue
+                        elif len(p_tokenized) < self._split_len:
+                            p_cleaned.append(paragraph)
+                        else:
+                            p_sentences = sent_tokenize(paragraph)
+                            current_sent = ""
+                            len_current = 0
+                            for sent in p_sentences:
+                                words = word_tokenize(sent)
+                                len_sent = len(words)
+                                if len_current >= self._split_len:
+                                    while len_sent >= self._split_len:
+                                        w = words[0:np.minimum(self._split_len, len(words))]
+                                        p_cleaned.append(TreebankWordDetokenizer().detokenize(w))
+                                        words = words[self._split_len:]
+                                        len_sent = len(words)
+                                elif len_current + len_sent < self._split_len:
+                                    current_sent += " " + sent
+                                    len_current += len_sent
+                                else:
+                                    p_cleaned.append(current_sent)
+                                    current_sent = sent
+                                    len_current = len_sent
+                    for paragraph in p_cleaned:
+                        document = {}
+                        document["meta"] = {}
+                        document["meta"][MetadataFields.MAKG_ID.value] = path.split("/")[-1][:-8]
+                        document["meta"]["_split_id"] = split_id
+                        split_id += 1
+                        document["text"] = paragraph
+                        documents.append(document)
+                    self._no_unprocessed_files -= 1
+                except:
+                    logging.error(traceback.format_exc())
+                if counter < no_documents:
+                    doc = next(self._file_iterator, None)
+        return documents
+    
     def _extract_text(self, soup:BeautifulSoup):
-        abstract = soup.abstract.getText(separator=' ', strip=True)
         divs_text = []
         for div in soup.body.find_all("div"):
             if not div.get("type"):
@@ -177,6 +234,18 @@ class GrobidAdapter(Adapter):
                         elif(isinstance(child, bs4.element.Tag)):
                             divs_text.append(child.text)
         return " ".join(divs_text)
+    
+    def _extract_paragraphs(self, soup:BeautifulSoup)->List:
+        divs_text = []
+        for div in soup.body.find_all("div"):
+            if not div.get("type"):
+                for child in div.children:
+                    if(not child.name == "listbibl"):
+                        if(isinstance(child, bs4.element.NavigableString)):
+                            divs_text.append(str(child))
+                        elif(isinstance(child, bs4.element.Tag)):
+                            divs_text.append(child.text)
+        return divs_text
     
     def __len__(self) -> int:
         return self._no_unprocessed_files
