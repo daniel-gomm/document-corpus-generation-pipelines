@@ -1,7 +1,7 @@
 import abc
 import json
 from typing import List, Dict
-from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+from haystack_copy import ElasticsearchDocumentStore
 
 class Sink(metaclass=abc.ABCMeta):
     #Interface for sinks (saving data)

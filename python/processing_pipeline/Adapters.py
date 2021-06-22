@@ -7,7 +7,7 @@ from os import scandir
 from os.path import isfile, join, exists
 import traceback
 from typing import List, Dict
-from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+from haystack_copy import ElasticsearchDocumentStore
 import bs4
 import numpy as np
 from bs4 import BeautifulSoup

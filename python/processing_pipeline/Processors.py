@@ -1,5 +1,4 @@
-from imrad_classification import ClassificationHandler, BERTClassificationHandler
-from nltk.tokenize.punkt import PunktSentenceTokenizer
+from imrad_classification import ClassificationHandler
 import abc
 import re
 import json
@@ -8,7 +7,6 @@ import sys
 import logging
 import numpy as np
 import copy
-import enchant
 
 from pandas import DataFrame
 from typing import List, Dict
