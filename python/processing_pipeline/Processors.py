@@ -10,7 +10,6 @@ import copy
 
 from pandas import DataFrame
 from typing import List, Dict
-from haystack.preprocessor import PreProcessor
 from arxive_metadata.rocksDB import RocksDBAdapter
 from DocumentFields import MetadataFields
 
@@ -41,24 +40,6 @@ class Processor(metaclass=abc.ABCMeta):
         raise NotImplementedError
 
 # General Processors
-
-
-class HaystackPreProcessor(Processor):
-
-    def __init__(self, preprocessor: PreProcessor):
-        """Wrapper for Haystack PreProcessor.
-
-        Args:
-            preprocessor (PreProcessor): Haystack PreProcessor that should be applied.
-        """
-        self._preprocessor = preprocessor
-
-    def process(self, documents: List[Dict]) -> List[Dict]:
-        docs = []
-        for document in documents:
-            docs.extend(self._preprocessor.process(document))
-        return docs
-
 
 class SplitByLinePreProcessor(Processor):
 
