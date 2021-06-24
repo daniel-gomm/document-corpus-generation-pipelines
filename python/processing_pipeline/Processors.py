@@ -109,6 +109,17 @@ class MetadataFieldDiscarder(Processor):
             for field in self._fields_to_discard:
                 document["meta"].pop(field, None)
         return documents
+    
+class MetadataFieldAdder(Processor):
+
+    def __init__(self, field_name:str, default_value):
+        self._field_name = field_name
+        self._default_value = default_value
+
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            document["meta"][self._field_name] = self._default_value
+        return documents
 
 
 class MetadataArxiveEnricher(Processor):
@@ -250,7 +261,6 @@ class TextAppendMetadataField(Processor):
 
 # Filter Processors
 
-
 class FilterOnMetadataValue(Processor):
 
     def __init__(self, metadata_field: str, values: List, discard_docs_wo_value: bool = True):
@@ -346,7 +356,6 @@ class IMRaDClassification(Processor):
         return documents
 
 # NE Processors
-
 
 class StringMatchingProcessor(Processor):
 
