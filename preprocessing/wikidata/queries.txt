@@ -1,0 +1,33 @@
+# Datasets
+SELECT ?item ?itemLabel ?subclass_of ?subclass_ofLabel ?instance_of ?instance_ofLabel
+WHERE
+{
+  {
+	?item wdt:P31 wd:Q1172284 . # find instances of subclasses of data set
+ 	}
+  UNION
+  {
+    ?item wdt:P31 ?o .
+    ?o wdt:P279*  wd:Q1172284 .
+    }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  OPTIONAL { ?item wdt:P279 ?subclass_of. }
+  OPTIONAL { ?item wdt:P31 ?instance_of. }
+}
+
+# Algorithms
+
+SELECT ?item ?itemLabel ?instance_of ?instance_ofLabel
+WHERE
+{
+  {
+	?item wdt:P31 wd:Q8366 . # find instances of subclasses of algorithm
+ 	}
+  UNION
+  {
+    ?item wdt:P31 ?o .
+    ?o wdt:P279*  wd:Q8366 .
+    }
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
+  OPTIONAL { ?item wdt:P31 ?instance_of. }
+}
