@@ -261,7 +261,7 @@ class TextAppendMetadataField(Processor):
             meta_field_content = document["meta"][self._field_to_attach]
             if meta_field_content != None:
                 if self._metdata_field_content_before_text:
-                    document["text"] = meta_field_content + \
+                    document["text"] = meta_field_content.replace("\n", "") + \
                         " " + document["text"]
                 else:
                     document["text"] += " " + meta_field_content
