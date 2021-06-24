@@ -252,7 +252,7 @@ class GrobidAdapter(Adapter):
 
 class ElasticsearchAdapter(Adapter):
 
-    def __init__(self, document_store:ElasticsearchDocumentStore, batch_size: int = 10000):
+    def __init__(self, document_store:ElasticsearchDocumentStore, filters:Dict[str, List[str]]=None, batch_size: int = 10000):
         """Adapter for the Haystack Elasticsearch DocumentStore.
 
         Args:
@@ -261,12 +261,13 @@ class ElasticsearchAdapter(Adapter):
         """        
         self._document_store = document_store
         self._batch_size = batch_size
-        self._generator = self._document_store.get_all_documents_generator(batch_size = batch_size)
-        self._unprocessed_documents = self._document_store.get_document_count()
+        self._filters = filters
+        self._generator = self._document_store.get_all_documents_generator(batch_size = batch_size, filters=filters)
+        self._unprocessed_documents = self._document_store.get_document_count(filters=filters)
     
     def reset(self):
-        self._generator = self._document_store.get_all_documents_generator(batch_size = self._batch_size)
-        self._unprocessed_documents = self._document_store.get_document_count()
+        self._generator = self._document_store.get_all_documents_generator(batch_size = self._batch_size, filters=self._filters)
+        self._unprocessed_documents = self._document_store.get_document_count(filters=self._filters)
     
     def generate_documents(self, no_documents: int) -> List[Dict]:
         docs = []
@@ -274,7 +275,7 @@ class ElasticsearchAdapter(Adapter):
             new_document = next(self._generator, None)
             if new_document is None:
                 break
-            docs.append(new_document)
+            docs.append(new_document.to_dict())
         self._unprocessed_documents -= len(docs)
         return docs
     
