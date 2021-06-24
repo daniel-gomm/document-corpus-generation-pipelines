@@ -59,7 +59,7 @@ class Pipeline:
             batch_mode (bool, optional): Processing mode; when enabled documents are processed in groups (batches). Defaults to True.
             batch_size (int, optional): Size of individual batches. Defaults to 200.
             cpus (int, optional): Number of CPU cores used in parallel for processing (Should be lower than the actual amount of (virtual) cpu cores). Defaults to 1.
-            max_runtime(int, optional): SPecifies the time in seconds after which processing should be gracefully stopped. If no value is provided the runtime is not limited.
+            max_runtime(int, optional): Specifies the time in seconds after which processing should be gracefully stopped. If no value is provided the runtime is not limited.
 
         Raises:
             ValueError: Raised if number of cpus is not properly configured.

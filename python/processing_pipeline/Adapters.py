@@ -257,6 +257,7 @@ class ElasticsearchAdapter(Adapter):
 
         Args:
             document_store (ElasticsearchDocumentStore): Elasticsearch DocumentStore from which documents should be processed.
+            filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}git ch
             batch_size (int, optional): Batch size in which documents should be retrieved from the document store. Defaults to 10000.
         """        
         self._document_store = document_store
