@@ -133,6 +133,7 @@ class Pipeline:
             bar.update(cycles, f"Processed documents: {self._processed_documents} Output Documents: {self._output_documents}\nProcessing Done!")
 
     def _process_singlecore(self):
+        documentProcessor = DocumentProcessor(self._processors)
         end_time = None
         if self._max_runtime:
             end_time = time.time() + self._max_runtime
@@ -143,7 +144,7 @@ class Pipeline:
             if len(self._adapter) > 0:
                 docs = self._adapter.generate_documents(self._batch_size)
                 self._processed_documents += len(docs)
-                docs = self._process_processors(docs)
+                docs = documentProcessor.process_docs(docs)
                 self._output_documents += len(docs)
                 self._process_sinks(docs)
             if end_time:
