@@ -1,10 +1,8 @@
-from imrad_classification import ClassificationHandler, BERTClassificationHandler
-from nltk.tokenize.punkt import PunktSentenceTokenizer
+from .imrad_classification import ClassificationHandler
 import abc
 import re
 import json
 import nltk
-import sys
 import logging
 import numpy as np
 import copy
@@ -12,8 +10,8 @@ import copy
 from pandas import DataFrame
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
-from arxive_metadata.rocksDB import RocksDBAdapter
-from DocumentFields import MetadataFields
+from ..database.rocksDB import RocksDBAdapter
+from .DocumentFields import MetadataFields
 
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer

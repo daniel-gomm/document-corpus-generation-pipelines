@@ -1,12 +1,11 @@
-import abc
 import sys
 import traceback
 import time
 from re import S
 from typing import List, Sized
-from Processors import Processor
-from Sinks import Sink
-from Adapters import Adapter
+from .pipeline_elements.Processors import Processor
+from .pipeline_elements.Sinks import Sink
+from .pipeline_elements.Adapters import Adapter
 from multiprocessing import Pool, cpu_count
 
 import logging

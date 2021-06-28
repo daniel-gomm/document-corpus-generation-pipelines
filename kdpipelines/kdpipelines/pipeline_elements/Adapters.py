@@ -1,7 +1,7 @@
 import abc
 import os
 import logging
-from DocumentFields import MetadataFields
+from .DocumentFields import MetadataFields
 from pathlib import Path
 from os import scandir
 from os.path import isfile, join, exists
