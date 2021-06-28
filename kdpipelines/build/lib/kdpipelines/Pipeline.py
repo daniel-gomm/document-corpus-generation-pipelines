@@ -1,4 +1,3 @@
-import abc
 import sys
 import traceback
 import time
@@ -10,7 +9,7 @@ from .pipeline_elements.Adapters import Adapter
 from multiprocessing import Pool, cpu_count
 
 import logging
-logging.basicConfig(filename="pipeline_logs.log", level=logging.INFO)
+logging.basicConfig(filename="../../pipeline_logs.log", level=logging.INFO)
 
 #Helpers
 

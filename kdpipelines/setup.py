@@ -20,7 +20,6 @@ setup(
             "bs4",
             "elasticsearch",
             "nltk",
-            "farm-haystack",
             "transformers",
             "torch",
             "sklearn",
