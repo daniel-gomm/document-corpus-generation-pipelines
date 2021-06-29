@@ -55,6 +55,13 @@ class Processor(metaclass=abc.ABCMeta):
         """
         raise NotImplementedError
 
+class IndexedProcessor(Processor):
+    """Adds an index field to the process function.
+    """
+
+    def process(self, documents: List[Dict], index: int) -> List[Dict]:
+        return super().process(documents, index=index)
+
 # General Processors
 
 class SplitByLinePreProcessor(Processor):
