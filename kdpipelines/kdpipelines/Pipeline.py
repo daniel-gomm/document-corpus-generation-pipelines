@@ -1,12 +1,11 @@
-import abc
 import sys
 import traceback
 import time
 from re import S
 from typing import List, Sized
-from Processors import Processor
-from Sinks import Sink
-from Adapters import Adapter
+from .pipeline_elements.Processors import Processor, IndexedProcessor
+from .pipeline_elements.Sinks import Sink
+from .pipeline_elements.Adapters import Adapter
 from multiprocessing import Pool, cpu_count
 
 import logging
@@ -28,22 +27,25 @@ class Progressbar:
         self._file.flush()
     
 
-def process_docs_through_processors(documents:List[dict], processors:List[Processor]) -> List:
-    for processor in processors:
-        if documents:
-            documents = processor.process(documents)
-    return documents
+def get_list_of_tuples(l:List, number_of_indices):
+    ret = []
+    for index, item in enumerate(l):
+        ret.append((item, index % number_of_indices))
+    return ret
 
 class DocumentProcessor:
 
     def __init__(self, processors:List[Processor]) -> None:
         self._processors = processors
 
-    def process_docs(self, documents:List[dict]):
+    def process_docs(self, documents:List[dict], index:int=None):
         for processor in self._processors:
             try:
                 if documents:
-                    documents = processor.process(documents)
+                    if issubclass(type(processor), IndexedProcessor):
+                        documents = IndexedProcessor(processor).process_index(documents, index)
+                    else:
+                        documents = processor.process(documents)
             except:
                 logging.error(traceback.format_exc())
         return documents
@@ -51,7 +53,7 @@ class DocumentProcessor:
 
 class Pipeline:
 
-    def __init__(self, adapter:Adapter, batch_mode:bool = True, batch_size:int=200, cpus:int=1, max_runtime:int=None):
+    def __init__(self, adapter:Adapter, batch_mode:bool = True, batch_size:int=200, cpus:int=1, max_runtime:int=None, number_of_indices:int=None):
         """Pipeline that processes documents from an adapter through processors, before outputting the result in sinks.
 
         Args:
@@ -72,37 +74,38 @@ class Pipeline:
         self._adapter = adapter
         self._processed_documents = 0
         self._output_documents = 0
+        self._number_indices = number_of_indices
         if cpus > cpu_count() or cpus < 1:
             raise ValueError(f"Number of processors exceedes the machines capabilities (max. {cpu_count()} processors)")
         self._cpus = cpus
-    
+
     def add_processor(self, processor:Processor):
         """Add a processor to the Pipeline.
 
         Args:
             processor (Processor): Configured Processor.
-        """        
+        """
         self._processors.append(processor)
-    
+
     def add_sink(self, sink:Sink):
         """Add a sink to the Pipeline.
 
-        Args:
+        Args:  
             sink (Sink): Configured Sink.
-        """        
+        """
         self._sinks.append(sink)
-    
+
     def process(self):
         """The documents from the adapter are processed according to the Pipelines configuration
-        """        
+        """
         logging.info(f"Pipeline processing started. A total of {len(self._adapter)} documents will be processed.")
         if not self._batch_mode:
             self._batch_size = 1
         if self._cpus > 1:
             self._process_multicore()
-        else:
+        else:    
             self._process_singlecore()
-    
+
     def _process_multicore(self):
         end_time = None
         if self._max_runtime:
@@ -121,8 +124,10 @@ class Pipeline:
                 for batch in docs_batches:
                     self._processed_documents += len(batch)
                 #Process a batch of documents on each processing core
-                results = pool.map(documentProcessor.process_docs, docs_batches)
-                #Process results in sinks sequentially
+                if self._number_indices:
+                    results = pool.starmap(documentProcessor.process_docs, get_list_of_tuples(docs_batches, 4))
+                else:
+                    results = pool.map(documentProcessor.process_docs, docs_batches)
                 for result in results:
                     self._output_documents += len(result)
                     self._process_sinks(result)
@@ -133,6 +138,7 @@ class Pipeline:
             bar.update(cycles, f"Processed documents: {self._processed_documents} Output Documents: {self._output_documents}\nProcessing Done!")
 
     def _process_singlecore(self):
+        documentProcessor = DocumentProcessor(self._processors)
         end_time = None
         if self._max_runtime:
             end_time = time.time() + self._max_runtime
@@ -143,7 +149,7 @@ class Pipeline:
             if len(self._adapter) > 0:
                 docs = self._adapter.generate_documents(self._batch_size)
                 self._processed_documents += len(docs)
-                docs = self._process_processors(docs)
+                docs = documentProcessor.process_docs(docs)
                 self._output_documents += len(docs)
                 self._process_sinks(docs)
             if end_time:
@@ -151,7 +157,7 @@ class Pipeline:
                     logging.info("Maximum processing time exceeded. Stopping the pipeline.")
                     break
         bar.update(cycles, f"Processed documents: {self._processed_documents} Output Documents: {self._output_documents}\nProcessing Done!")
-    
+
     def _process_sinks(self, documents:List):
         for sink in self._sinks:
             try:
@@ -159,7 +165,7 @@ class Pipeline:
                     sink.process(documents)
             except:
                 logging.error(traceback.format_exc())
-    
+
     def __str__(self) -> str:
         ret = f"({type(self._adapter).__name__})"
         for processor in self._processors:

@@ -1,24 +1,38 @@
-from imrad_classification import ClassificationHandler, BERTClassificationHandler
-from nltk.tokenize.punkt import PunktSentenceTokenizer
+from .imrad_classification import ClassificationHandler
 import abc
 import re
 import json
 import nltk
-import sys
 import logging
 import numpy as np
 import copy
-import enchant
 
 from pandas import DataFrame
 from typing import List, Dict
 from haystack.preprocessor import PreProcessor
-from arxive_metadata.rocksDB import RocksDBAdapter
-from DocumentFields import MetadataFields
+from ..database.rocksDB import RocksDBAdapter
+from .DocumentFields import MetadataFields
 
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 nltk.download('punkt')
+
+
+
+#Helpers
+
+def _string_alpha_percentage(s:str):
+    words = word_tokenize(s)
+    num_non = 0
+    for word in words:
+        if not word.isalpha() or len(word) < 2:
+            num_non += 1
+    return num_non/(len(words)*1.0)
+
+def _string_pattern_percentage(s:str, filter):
+    words = len(word_tokenize(s))
+    matches = len(re.findall(filter, s))
+    return matches/(words*1.0)
 
 
 class Processor(metaclass=abc.ABCMeta):
@@ -33,6 +47,28 @@ class Processor(metaclass=abc.ABCMeta):
 
         Args:
             documents (List[Dict]): Input documents which should have the structure {'text':..., 'meta':{...}}.
+
+        Raises:
+            NotImplementedError: Raised if the Method is not implemented by subclass.
+
+        Returns:
+            List[Dict]: Output documents modified by the processor.
+        """
+        raise NotImplementedError
+
+class IndexedProcessor(metaclass=abc.ABCMeta):
+    # Interface for processing steps
+    @classmethod
+    def __subclasshook__(cls, subclass):
+        return (hasattr(subclass, 'process_index') and callable(subclass.process_index) or NotImplemented)
+
+    @abc.abstractmethod
+    def process_index(self, documents: List[Dict], index: int) -> List[Dict]:
+        """Processes a batch of documents, modifies them and outputs the result. Adds an index field to the process function.
+
+        Args:
+            documents (List[Dict]): Input documents which should have the structure {'text':..., 'meta':{...}}.
+            index (int): Integer value to be used in dividing the processing load along external resources, e.g. GPUs.
 
         Raises:
             NotImplementedError: Raised if the Method is not implemented by subclass.
@@ -259,7 +295,7 @@ class TextReplaceFilter(Processor):
 
 class TextAppendMetadataField(Processor):
 
-    def __init__(self, field_to_attach: str, metdata_field_content_before_text: bool = True):
+    def __init__(self, field_to_attach: str, metdata_field_content_before_text: bool = True, line_mode:bool=False):
         """Appends a metadata field to the docuemnts text field.
 
         Args:
@@ -268,17 +304,52 @@ class TextAppendMetadataField(Processor):
         """
         self._field_to_attach = field_to_attach
         self._metdata_field_content_before_text = metdata_field_content_before_text
+        if line_mode:
+            self._connecting_token = "\n"
+        else:
+            self._connecting_token = " "
 
     def process(self, documents: List[Dict]) -> List[Dict]:
         for document in documents:
-            meta_field_content = document["meta"][self._field_to_attach]
+            meta_field_content = document["meta"][self._field_to_attach].replace("\n", " ")
             if meta_field_content != None:
                 if self._metdata_field_content_before_text:
                     document["text"] = meta_field_content + \
-                        " " + document["text"]
+                        self._connecting_token + document["text"]
                 else:
-                    document["text"] += " " + meta_field_content
+                    document["text"] += self._connecting_token + meta_field_content
         return documents
+
+#Text Processors -> Sentence wise
+
+class TextSentenceDiscardNonAlpha(Processor):
+
+    def __init__(self, maximum_percentage:float=0.3):
+        self._maximum_percentage = maximum_percentage
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            sentences = []
+            for sentence in sent_tokenize(document['text']):
+                if _string_alpha_percentage(sentence) <= self._maximum_percentage:
+                    sentences.append(sentence)
+            document['text'] = " ".join(sentences)
+        return documents
+
+class TextSentenceDiscardFilter(Processor):
+    def __init__(self, filter:str, maximum_percentage:float=0.2):
+        self._filter = filter
+        self._maximum_percentage = maximum_percentage
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            sentences = []
+            for sentence in sent_tokenize(document['text']):
+                if _string_alpha_percentage(sentence) <= self._maximum_percentage:
+                    sentences.append(sentence)
+            document['text'] = " ".join(sentences)
+        return documents
+
 
 # Filter Processors
 
@@ -322,9 +393,18 @@ class FilterExistingDocuments(Processor):
         return list(filter(lambda d: not d['meta'][self._metadata_field] in self._existing_ids, documents))
 
 
+class FilterShortDocuments(Processor):
+
+    def __init__(self, minimal_length:int):
+        self._minimal_length = minimal_length
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        return list(filter(lambda d: len(word_tokenize(d['text'])) >= self._minimal_length, documents))
+
+
 # Line wise Processors
 
-class DiscardLineProcessor(Processor):
+class LineDiscardProcessor(Processor):
 
     def __init__(self, percentage: float = 0.5) -> None:
         self._percentage = percentage
@@ -334,15 +414,30 @@ class DiscardLineProcessor(Processor):
         for document in documents:
             lines = []
             for line in document["text"].split("\n"):
-                line_tokens = word_tokenize(line)
-                num_non = 0
-                for word in line_tokens:
-                    if not word.isalpha() or len(word) <= 2:
-                        num_non += 1
-                if num_non <= len(line_tokens) * self._percentage:
+                if _string_alpha_percentage(line) <= self._percentage:
                     lines.append(line)
             document["text"] = "\n".join(lines)
         return documents
+
+class LineUnarxiveGenerator(Processor):
+
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            paragraphs = document["text"].split("\n\n")
+            p_cleaned = []
+            for paragraph in paragraphs:
+                paragraph = paragraph.strip("\n")
+                lines = paragraph.split("\n")
+                if lines:
+                    if len(word_tokenize(lines[0])) < 5:
+                        lines.remove(lines[0])
+                    elif not lines[0].endswith("."):
+                        lines.insert(0, lines[0] + ".")
+                        lines.pop(1)
+                p_cleaned.append(" ".join(lines))
+            document['text'] = "\n".join(p_cleaned)
+        return documents
+
 
 # IMRaD
 
@@ -380,26 +475,49 @@ class IMRaDClassification(Processor):
 
 class StringMatchingProcessor(Processor):
 
-    def __init__(self, entities: dict, field_to_add: str, info_key: str = 'info'):
+    def __init__(self, entities: dict, info_field_name: str, info_key: str = 'info', flag_field_name:str=None):
         """Links entities with corresponding information.
 
         Args:
             entities (dict): Dictionary of entities in the format: {'entityName':'entityInformation'}.
-            field_to_add (str): Name of the metadata field added.
+            info_field_name (str): Name of the metadata field added.
             info_key (str): Name of the key holding the entity information
         """
+        if flag_field_name:
+            self._flag_field_name = flag_field_name
+        else:
+            self._flag_field_name = "has_"+info_field_name
         self._entities = entities
-        self._field_to_add = field_to_add
+        self._field_to_add = info_field_name
         self._info_key = info_key
 
     def process(self, documents: List[Dict]) -> List[Dict]:
-        for entity_key, entity_value in self._entities.items():
-            regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
-            for document in documents:
-                if not (self._field_to_add in document['meta'].keys()):
-                    document['meta'][self._field_to_add] = []
+        for document in documents:
+            if not document['meta'][self._field_to_add]:
+                document['meta'][self._field_to_add] = []
+            document['meta'][self._flag_field_name] = 'false'
+            for entity_key, entity_value in self._entities.items():
+                regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
                 found_entities = regex.finditer(document['text'].lower())
                 for found_entity in found_entities:
+                    document['meta'][self._flag_field_name] = 'true'
                     document['meta'][self._field_to_add].append(
                         {'title': entity_key, self._info_key: entity_value, 'span': found_entity.span()})
         return documents
+
+
+        """for document in documents:
+            document['meta'][self._field_to_add] = []
+        for entity_key, entity_value in self._entities.items():
+            regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
+            for document in documents:
+                document['meta'][self._flag_field_name] = 'false'
+                found_entities = regex.finditer(document['text'].lower())
+                for found_entity in found_entities:
+                    document['meta'][self._flag_field_name] = 'true'
+                    document['meta'][self._field_to_add].append(
+                        {'title': entity_key, self._info_key: entity_value, 'span': found_entity.span()})
+        for document in documents:
+            if document['meta'][self._field_to_add]:
+                document['meta'][self._field_to_add] = json.dumps(document['meta'][self._field_to_add])
+        return documents"""

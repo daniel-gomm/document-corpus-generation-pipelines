@@ -1,8 +1,9 @@
-python/__pycache__
-python/.ipynb_checkpoints/*
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+__pycache__
+*/__pycache__/*
+.vscode
+*/.vscode/*
 python/mlruns/*
-python/arxive_metadata/__pycache__
-python/.vscode/launch.json
-.vscode/settings.json
-python/processing_pipeline/.ipynb_checkpoints/*
-python/processing_pipeline/__pycache__/*
+*.log
+data/unarxive_metadata/

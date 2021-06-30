@@ -1,7 +1,7 @@
 import abc
 import os
 import logging
-from DocumentFields import MetadataFields
+from .DocumentFields import MetadataFields
 from pathlib import Path
 from os import scandir
 from os.path import isfile, join, exists
@@ -61,7 +61,7 @@ class Adapter(metaclass=abc.ABCMeta):
 
 class UnarxiveAdapter(Adapter):
     
-    def __init__(self, folderpath:str):
+    def __init__(self, folderpath:str, line_mode:bool=False):
         """Adapter for unarXive textfiles.
 
         Args:
@@ -71,6 +71,7 @@ class UnarxiveAdapter(Adapter):
         files = os.listdir(folderpath)
         self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".txt"), files)))
         self._file_iterator = get_files(Path(folderpath))
+        self._line_mode = line_mode
     
     def reset(self):
         files = os.listdir(self._folderpath)
@@ -90,7 +91,10 @@ class UnarxiveAdapter(Adapter):
                     document["meta"] = {}
                     with open(doc, "r") as paper:
                         text = paper.readlines()
-                        document["text"] = "".join(text).replace("\n", " ")
+                        if self._line_mode:
+                            document["text"] = "".join(text)
+                        else:
+                            document["text"] = "".join(text).replace("\n", " ")
                     document["meta"][MetadataFields.ARXIVE_ID.value] = path.split("/")[-1][:-4]
                     documents.append(document)
                     self._no_unprocessed_files -= 1
