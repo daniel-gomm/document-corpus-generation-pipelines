@@ -56,12 +56,27 @@ class Processor(metaclass=abc.ABCMeta):
         """
         raise NotImplementedError
 
-class IndexedProcessor(Processor):
-    """Adds an index field to the process function.
-    """
+class IndexedProcessor(metaclass=abc.ABCMeta):
+    # Interface for processing steps
+    @classmethod
+    def __subclasshook__(cls, subclass):
+        return (hasattr(subclass, 'process_index') and callable(subclass.process_index) or NotImplemented)
 
-    def process(self, documents: List[Dict], index: int) -> List[Dict]:
-        return super().process(documents, index=index)
+    @abc.abstractmethod
+    def process_index(self, documents: List[Dict], index: int) -> List[Dict]:
+        """Processes a batch of documents, modifies them and outputs the result. Adds an index field to the process function.
+
+        Args:
+            documents (List[Dict]): Input documents which should have the structure {'text':..., 'meta':{...}}.
+            index (int): Integer value to be used in dividing the processing load along external resources, e.g. GPUs.
+
+        Raises:
+            NotImplementedError: Raised if the Method is not implemented by subclass.
+
+        Returns:
+            List[Dict]: Output documents modified by the processor.
+        """
+        raise NotImplementedError
 
 # General Processors
 
@@ -460,26 +475,49 @@ class IMRaDClassification(Processor):
 
 class StringMatchingProcessor(Processor):
 
-    def __init__(self, entities: dict, field_to_add: str, info_key: str = 'info'):
+    def __init__(self, entities: dict, info_field_name: str, info_key: str = 'info', flag_field_name:str=None):
         """Links entities with corresponding information.
 
         Args:
             entities (dict): Dictionary of entities in the format: {'entityName':'entityInformation'}.
-            field_to_add (str): Name of the metadata field added.
+            info_field_name (str): Name of the metadata field added.
             info_key (str): Name of the key holding the entity information
         """
+        if flag_field_name:
+            self._flag_field_name = flag_field_name
+        else:
+            self._flag_field_name = "has_"+info_field_name
         self._entities = entities
-        self._field_to_add = field_to_add
+        self._field_to_add = info_field_name
         self._info_key = info_key
 
     def process(self, documents: List[Dict]) -> List[Dict]:
-        for entity_key, entity_value in self._entities.items():
-            regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
-            for document in documents:
-                if not (self._field_to_add in document['meta'].keys()):
-                    document['meta'][self._field_to_add] = []
+        for document in documents:
+            if not document['meta'][self._field_to_add]:
+                document['meta'][self._field_to_add] = []
+            document['meta'][self._flag_field_name] = 'false'
+            for entity_key, entity_value in self._entities.items():
+                regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
                 found_entities = regex.finditer(document['text'].lower())
                 for found_entity in found_entities:
+                    document['meta'][self._flag_field_name] = 'true'
                     document['meta'][self._field_to_add].append(
                         {'title': entity_key, self._info_key: entity_value, 'span': found_entity.span()})
         return documents
+
+
+        """for document in documents:
+            document['meta'][self._field_to_add] = []
+        for entity_key, entity_value in self._entities.items():
+            regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
+            for document in documents:
+                document['meta'][self._flag_field_name] = 'false'
+                found_entities = regex.finditer(document['text'].lower())
+                for found_entity in found_entities:
+                    document['meta'][self._flag_field_name] = 'true'
+                    document['meta'][self._field_to_add].append(
+                        {'title': entity_key, self._info_key: entity_value, 'span': found_entity.span()})
+        for document in documents:
+            if document['meta'][self._field_to_add]:
+                document['meta'][self._field_to_add] = json.dumps(document['meta'][self._field_to_add])
+        return documents"""

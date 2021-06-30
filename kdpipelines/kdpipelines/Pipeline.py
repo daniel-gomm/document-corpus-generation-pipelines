@@ -43,7 +43,7 @@ class DocumentProcessor:
             try:
                 if documents:
                     if issubclass(type(processor), IndexedProcessor):
-                        documents = processor.process(documents, index)
+                        documents = IndexedProcessor(processor).process_index(documents, index)
                     else:
                         documents = processor.process(documents)
             except:
