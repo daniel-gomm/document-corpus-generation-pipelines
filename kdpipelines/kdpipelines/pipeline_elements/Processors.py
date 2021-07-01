@@ -493,7 +493,7 @@ class StringMatchingProcessor(Processor):
 
     def process(self, documents: List[Dict]) -> List[Dict]:
         for document in documents:
-            if not document['meta'][self._field_to_add]:
+            if not self._field_to_add in document['meta']:
                 document['meta'][self._field_to_add] = []
             document['meta'][self._flag_field_name] = 'false'
             for entity_key, entity_value in self._entities.items():
