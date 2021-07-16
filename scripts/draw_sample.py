@@ -15,8 +15,9 @@ def __get_args():
     """
     parser = argparse.ArgumentParser(
         description = '''Draws sample data from an elasticsearch instance''')    
-    parser.add_argument('--host', type=str, default="", help='The server address')
-    parser.add_argument('--out_dir', type=str, default="", help='The directory where you want to store the files')
+    parser.add_argument('--host', type=str, default="localhost", help='The server address.')
+    parser.add_argument('--out_dir', type=str, default="~/Downloads", help='The directory where you want to store the files.')
+    parser.add_argument('--num_samples', type=int, default=5, help='The number of samples you want.')
     
     return parser.parse_args()
 
@@ -37,5 +38,5 @@ def write_docs(documents, out_dir):
 if __name__ == "__main__":
     """-----Drawing samples from elasticsearch-----"""
     args = __get_args()
-    documents = get_sample_from_server(args.host)
+    documents = get_sample_from_server(args.num_samples, args.host)
     write_docs(documents, args.out_dir)
