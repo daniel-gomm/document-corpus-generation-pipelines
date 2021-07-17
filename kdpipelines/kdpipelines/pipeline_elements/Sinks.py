@@ -2,6 +2,7 @@ import abc
 import json
 from typing import List, Dict
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+from haystack.document_store import MilvusDocumentStore
 
 class Sink(metaclass=abc.ABCMeta):
     #Interface for sinks (saving data)
@@ -30,6 +31,22 @@ class ElasticsearchSink(Sink):
         Args:
             document_store (ElasticsearchDocumentStore): Preconfigured Haystack Elasticsearch Documentstore.
             batch_size (int): Number of documents that are passed to Elasticsearch's bulk function at a time.
+        """        
+        self._document_store = document_store
+        self._batch_size = batch_size
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        self._document_store.write_documents(documents, batch_size=self._batch_size)
+
+
+class MilvusSink(Sink):
+
+    def __init__(self, document_store:MilvusDocumentStore, batch_size:int=10000):
+        """Wrapper for the Haystack Milvus Document Store.
+
+        Args:
+            document_store (MilvusDocumentStore): Preconfigured Haystack Milvus Documentstore.
+            batch_size (int): Number of documents that are passed to Milvus's bulk function at a time.
         """        
         self._document_store = document_store
         self._batch_size = batch_size

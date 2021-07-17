@@ -245,6 +245,21 @@ class MetadataMagArxiveLinker(Processor):
                                          == value][self._column_to_add].iloc[0]
         return int(matching_value)
 
+class MetadataFlattener(Processor):
+
+    def __init__(self, fields_to_flatten:List[str]):
+        self._fields_to_flatten = fields_to_flatten
+    
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        docs_to_return = []
+        for document in documents:
+            for key in [key for key in document['meta'].keys() if key in self._fields_to_flatten]:
+                document["meta"][key] = json.dumps(document["meta"][key])
+            docs_to_return.append(document)
+        return docs_to_return
+
+
+
 # Text Processors
 
 

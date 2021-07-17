@@ -8,6 +8,7 @@ from os.path import isfile, join, exists
 import traceback
 from typing import List, Dict
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
+from haystack.document_store import MilvusDocumentStore
 import bs4
 import numpy as np
 from bs4 import BeautifulSoup
@@ -261,6 +262,40 @@ class ElasticsearchAdapter(Adapter):
 
         Args:
             document_store (ElasticsearchDocumentStore): Elasticsearch DocumentStore from which documents should be processed.
+            filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}git ch
+            batch_size (int, optional): Batch size in which documents should be retrieved from the document store. Defaults to 10000.
+        """        
+        self._document_store = document_store
+        self._batch_size = batch_size
+        self._filters = filters
+        self._generator = self._document_store.get_all_documents_generator(batch_size = batch_size, filters=filters)
+        self._unprocessed_documents = self._document_store.get_document_count(filters=filters)
+    
+    def reset(self):
+        self._generator = self._document_store.get_all_documents_generator(batch_size = self._batch_size, filters=self._filters)
+        self._unprocessed_documents = self._document_store.get_document_count(filters=self._filters)
+    
+    def generate_documents(self, no_documents: int) -> List[Dict]:
+        docs = []
+        while len(docs) < no_documents:
+            new_document = next(self._generator, None)
+            if new_document is None:
+                break
+            docs.append(new_document.to_dict())
+        self._unprocessed_documents -= len(docs)
+        return docs
+    
+    def __len__(self):
+        return self._unprocessed_documents
+
+
+class MilvusAdapter(Adapter):
+
+    def __init__(self, document_store:MilvusDocumentStore, filters:Dict[str, List[str]]=None, batch_size: int = 10000):
+        """Adapter for the Haystack Milvus DocumentStore.
+
+        Args:
+            document_store (MilvusDocumentStore): Milvus DocumentStore from which documents should be processed.
             filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}git ch
             batch_size (int, optional): Batch size in which documents should be retrieved from the document store. Defaults to 10000.
         """        
