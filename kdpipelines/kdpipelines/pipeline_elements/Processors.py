@@ -22,6 +22,11 @@ nltk.download('punkt')
 #Helpers
 
 def _string_alpha_percentage(s:str):
+    """Calculate the percentage of non alpha numeric words in a given string
+
+        Args:
+            s (str): String that is looked at for the calculation.
+        """
     words = word_tokenize(s)
     num_non = 0
     for word in words:
@@ -30,6 +35,12 @@ def _string_alpha_percentage(s:str):
     return num_non/(len(words)*1.0)
 
 def _string_pattern_percentage(s:str, filter):
+    """Calculate the percentage of a given expression in a given string
+
+        Args:
+            s (str): String that is looked at for the calculation.
+            filter: Expression thats percentage is calculated.
+        """
     words = len(word_tokenize(s))
     matches = len(re.findall(filter, s))
     return matches/(words*1.0)
@@ -257,6 +268,26 @@ class MetadataFlattener(Processor):
                 document["meta"][key] = json.dumps(document["meta"][key])
             docs_to_return.append(document)
         return docs_to_return
+
+class MetadataReplaceFilter(Processor):
+
+    def __init__(self, filters: List[str], replacement: str, field:str):
+        """Replace a substring of the text.
+
+        Args:
+            filters (List[str]): Specifies the substrings that should be replaced.
+            replacement (str): Replacement for instances of the filter.
+        """
+        self._filters = filters
+        self._replacement = replacement
+        self._field = field
+
+    def process(self, documents: List[Dict]) -> List[Dict]:
+        for document in documents:
+            for filter in self._filters:
+                document["metadata"][filter] = re.sub(
+                    self._filter, self._replacement, document["metadata"][filter])
+        return documents
 
 
 
