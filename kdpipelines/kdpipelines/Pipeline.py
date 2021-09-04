@@ -16,18 +16,41 @@ logging.basicConfig(filename="pipeline_logs.log", level=logging.INFO)
 class Progressbar:
 
     def __init__(self, count:int, prefix:str="", size:int=60, file=sys.stdout):
+        """Visualisation tool for the progress of processing data.
+
+        Args:
+            count (int): Number reached at 100%.
+            prefix (str, optional): Text displayed in front of the progressbar. Defaults to "".
+            size (int, optional): Size of the bar. Defaults to 60.
+            file ([type], optional): Defined where the progressbar should be output to. Defaults to sys.stdout.
+        """
         self._count = count
         self._size = size
         self._file = file
         self._prefix = prefix
     
     def update(self, position:int, postfix:str=""):
+        """Update the progressbar.
+
+        Args:
+            position (int): How far the process has progressed.
+            postfix (str, optional): Text to display behind the progressbar. Defaults to "".
+        """
         x = int(self._size*position/self._count)
         self._file.write("%s[%s%s] %i/%i %s\r" % (self._prefix, "#"*x, "."*(self._size-x), position, self._count, postfix))
         self._file.flush()
     
 
 def get_list_of_tuples(l:List, number_of_indices):
+    """Convert a list into a list of tuples with indices, which repeat at a given limit.
+
+    Args:
+        l (List): List of entities.
+        number_of_indices ([type]): Number of the maximum index, at which the next item will again be assigned the index 0.
+
+    Returns:
+        [type]: List of tuples with indices, which repeat at a given limit.
+    """
     ret = []
     for index, item in enumerate(l):
         ret.append((item, index % number_of_indices))
@@ -36,6 +59,11 @@ def get_list_of_tuples(l:List, number_of_indices):
 class DocumentProcessor:
 
     def __init__(self, processors:List[Processor]) -> None:
+        """Wrapps a list of processors and processes documents through them.
+
+        Args:
+            processors (List[Processor]): Processors through which documents should be processed.
+        """
         self._processors = processors
 
     def process_docs(self, documents:List[dict], index:int=None):
@@ -107,6 +135,8 @@ class Pipeline:
             self._process_singlecore()
 
     def _process_multicore(self):
+        """Process documents accross multiple cores.
+        """
         end_time = None
         if self._max_runtime:
             end_time = time.time() + self._max_runtime
@@ -138,6 +168,8 @@ class Pipeline:
             bar.update(cycles, f"Processed documents: {self._processed_documents} Output Documents: {self._output_documents}\nProcessing Done!")
 
     def _process_singlecore(self):
+        """Process documents on a single core.
+        """
         documentProcessor = DocumentProcessor(self._processors)
         end_time = None
         if self._max_runtime:
@@ -167,6 +199,11 @@ class Pipeline:
                 logging.error(traceback.format_exc())
 
     def __str__(self) -> str:
+        """Generate a String representation of the pipeline.
+
+        Returns:
+            str: String representation of the pipeline.
+        """
         ret = f"({type(self._adapter).__name__})"
         for processor in self._processors:
             ret += f" ---> *{type(processor).__name__}*"

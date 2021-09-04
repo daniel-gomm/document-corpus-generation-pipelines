@@ -103,6 +103,7 @@ class CSVMetadataSink(Sink):
         self._file.close()
 
 class PrintSink(Sink):
+    #Prints documents to console.
 
     def process(self, documents: List[Dict]):
         print(documents)

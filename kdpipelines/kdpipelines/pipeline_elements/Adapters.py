@@ -66,7 +66,8 @@ class UnarxiveAdapter(Adapter):
         """Adapter for unarXive textfiles.
 
         Args:
-            folderpath (str): Directory of the unarXive fulltexts.
+            folderpath (str): Directory of the unarXive fulltexts textfiles.
+            line_mode (bool): If set to true documents are reformatet to feature one paragraph per line.
         """        
         self._folderpath = folderpath
         files = os.listdir(folderpath)
@@ -96,6 +97,7 @@ class UnarxiveAdapter(Adapter):
                             document["text"] = "".join(text)
                         else:
                             document["text"] = "".join(text).replace("\n", " ")
+                    #Extract the arXiv id from the documet title
                     document["meta"][MetadataFields.ARXIVE_ID.value] = path.split("/")[-1][:-4]
                     documents.append(document)
                     self._no_unprocessed_files -= 1
@@ -109,38 +111,15 @@ class UnarxiveAdapter(Adapter):
         return self._no_unprocessed_files
 
 
-class TextfileAdapter(Adapter):
-    
-    def __init__(self, folderpath:str):
-        """**Not Implemented** Adapter for textfiles that contain a json representation of the document.
-
-        Args:
-            folderpath (str): Directory holding the textfiles.
-        """        
-        self._folderpath = folderpath
-        files = os.listdir(folderpath)
-        self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
-    
-    def reset(self):
-        files = os.listdir(self._folderpath)
-        self._unprocessed_files = list(filter(lambda x: x.endswith(".txt"), files))
-    
-    def generate_documents(self, no_documents: int) -> List[Dict]:
-        #TODO: Implement
-        return super().generate_documents(no_documents)
-    
-    def __len__(self) -> int:
-        return len(self._unprocessed_files)
-
-
 class GrobidAdapter(Adapter):
     
     def __init__(self, folderpath:str, split_len:int=100):
-        """**Not Implemented** Adapter for GROBID output (TEI XML Files).
+        """Adapter for GROBID output (TEI XML Files).
 
         Args:
             folderpath (str): Directory holding the textfiles.
-        """   
+            split_len (int, optional): Length of sections the documents should be splitted in. Defaults to 100.
+        """
         self._folderpath = folderpath
         files = os.listdir(folderpath)
         self._no_unprocessed_files = len(list(filter(lambda x: x.endswith(".xml"), files)))
@@ -165,6 +144,7 @@ class GrobidAdapter(Adapter):
                     document["meta"] = {}
                     with open(doc, "r") as paper:
                         document["text"] = "\n".join(self._extract_paragraphs(BeautifulSoup(paper, 'lxml')))
+                    #Extract the MAKG ID from the document title.
                     document["meta"][MetadataFields.MAKG_ID.value] = path.split("/")[-1][:-8]
                     documents.append(document)
                     self._no_unprocessed_files -= 1
@@ -175,6 +155,7 @@ class GrobidAdapter(Adapter):
         return documents
     
     def generate_and_split_documents(self, no_documents: int) -> List[Dict]:
+        #In addition to generating the documents from the Grobid files split the text into chunks of a predefined size while respecting paragraph borders as much as possible.
         documents = []
         counter = 0
         doc = next(self._file_iterator, None)
@@ -262,7 +243,7 @@ class ElasticsearchAdapter(Adapter):
 
         Args:
             document_store (ElasticsearchDocumentStore): Elasticsearch DocumentStore from which documents should be processed.
-            filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}git ch
+            filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}
             batch_size (int, optional): Batch size in which documents should be retrieved from the document store. Defaults to 10000.
         """        
         self._document_store = document_store
@@ -296,7 +277,7 @@ class MilvusAdapter(Adapter):
 
         Args:
             document_store (MilvusDocumentStore): Milvus DocumentStore from which documents should be processed.
-            filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}git ch
+            filters(Dict[str, List[str]]): Optional filters to narrow down the documents to return. Example: {"name": ["some", "more"], "category": ["only_one"]}
             batch_size (int, optional): Batch size in which documents should be retrieved from the document store. Defaults to 10000.
         """        
         self._document_store = document_store

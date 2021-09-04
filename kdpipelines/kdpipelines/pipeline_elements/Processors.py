@@ -112,10 +112,17 @@ class HaystackPreProcessor(Processor):
 class SplitByLinePreProcessor(Processor):
 
     def __init__(self, split_len: int = 100, minimal_split_len: int = 50):
+        """Alternative Preprocessor that splits documents respecting boundaries set be linebreaks.
+
+        Args:
+            split_len (int, optional): Maximum length of a segment. Defaults to 100.
+            minimal_split_len (int, optional): Minimal length of a segment. Defaults to 50.
+        """
         self._split_len = split_len
         self._minimal_split_len = minimal_split_len
 
     def process(self, documents: List[Dict]) -> List[Dict]:
+        #Construct segments by appending as many sentences as possible from the same line without exceeding the upper limit. If there are not enough sentences to satisfy the lower limit paragraphs from the next section are appended.
         docs = []
         for document in documents:
             lines = document["text"].split("\n")
@@ -181,6 +188,12 @@ class MetadataFieldDiscarder(Processor):
 class MetadataFieldAdder(Processor):
 
     def __init__(self, field_name:str, default_value):
+        """Adds a field with a specified default value to each document.
+
+        Args:
+            field_name (str): Name of the field to be added.
+            default_value ([type]): Default value that is assigned to the field.
+        """
         self._field_name = field_name
         self._default_value = default_value
 
@@ -225,7 +238,7 @@ class MetadataArxiveEnricher(Processor):
 class MetadataMagArxiveLinker(Processor):
 
     def __init__(self, dataframe: DataFrame, column_to_match: str, column_to_add: str, field_to_match: str = "arixive-id"):
-        """Adds the MAG-ID to documents based on their arXive-ID.
+        """Adds the MAG-ID to documents based on their arXiv-ID.
 
         Args:
             dataframe (DataFrame): datframe containing pairs of MAG-IDs and arXive-IDs.
@@ -259,6 +272,11 @@ class MetadataMagArxiveLinker(Processor):
 class MetadataFlattener(Processor):
 
     def __init__(self, fields_to_flatten:List[str]):
+        """Flattens the specified fiels by serialising them to json objects.
+
+        Args:
+            fields_to_flatten (List[str]): List of fields that should be flattened.
+        """
         self._fields_to_flatten = fields_to_flatten
     
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -277,6 +295,7 @@ class MetadataReplaceFilter(Processor):
         Args:
             filters (List[str]): Specifies the substrings that should be replaced.
             replacement (str): Replacement for instances of the filter.
+            field (str): Metadata field the filter is applied to.
         """
         self._filters = filters
         self._replacement = replacement
@@ -342,7 +361,7 @@ class TextReplaceFilter(Processor):
 class TextAppendMetadataField(Processor):
 
     def __init__(self, field_to_attach: str, metdata_field_content_before_text: bool = True, line_mode:bool=False):
-        """Appends a metadata field to the docuemnts text field.
+        """Appends a metadata field to the documents text field.
 
         Args:
             field_to_attach (str): Field which should be attached (e.g. 'abstract').
@@ -371,6 +390,11 @@ class TextAppendMetadataField(Processor):
 class TextSentenceDiscardNonAlpha(Processor):
 
     def __init__(self, maximum_percentage:float=0.3):
+        """Discards sentences from documents when lines contain more than a specified percentage of non alphanumeric words.
+
+        Args:
+            maximum_percentage (float, optional): Maximum percentage of non alphanumeric words allowed. Defaults to 0.3.
+        """
         self._maximum_percentage = maximum_percentage
     
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -383,7 +407,13 @@ class TextSentenceDiscardNonAlpha(Processor):
         return documents
 
 class TextSentenceDiscardFilter(Processor):
+
     def __init__(self, filter:str, maximum_percentage:float=0.2):
+        """Discards sentences from documents when lines contain more than a specified percentage of words that match a specified filter.
+
+        Args:
+            maximum_percentage (float, optional): Maximum percentage of non words that match the filter allowed. Defaults to 0.3.
+        """
         self._filter = filter
         self._maximum_percentage = maximum_percentage
     
@@ -426,7 +456,7 @@ class FilterOnMetadataValue(Processor):
 class FilterExistingDocuments(Processor):
 
     def __init__(self, metadata_field: str, existing_ids: List[str]):
-        """Filters documents based on a blacklist of strings.
+        """Filters documents based on a blacklist of strings that is not allowed to be contained in a specified metadata field.
 
         Args:
             metadata_field (str): Metadata field to compare to list.
@@ -442,6 +472,11 @@ class FilterExistingDocuments(Processor):
 class FilterShortDocuments(Processor):
 
     def __init__(self, minimal_length:int):
+        """Discards documents that are to short.
+
+        Args:
+            minimal_length (int): Minimal length at which documents are not discarded.
+        """
         self._minimal_length = minimal_length
     
     def process(self, documents: List[Dict]) -> List[Dict]:
@@ -453,6 +488,11 @@ class FilterShortDocuments(Processor):
 class LineDiscardProcessor(Processor):
 
     def __init__(self, percentage: float = 0.5) -> None:
+        """Discards lines from documents when lines contain more than a specified percentage of non alphanumeric words.
+
+        Args:
+            percentage (float, optional): Maximum percentage of non alphanumeric words allowed. Defaults to 0.5.
+        """
         self._percentage = percentage
         super().__init__()
 
@@ -466,6 +506,7 @@ class LineDiscardProcessor(Processor):
         return documents
 
 class LineUnarxiveGenerator(Processor):
+    #Processor that converts an unarXive paper from its default structure to a document thats lines resemble paragraphs in the original paper.
 
     def process(self, documents: List[Dict]) -> List[Dict]:
         for document in documents:
@@ -528,6 +569,7 @@ class StringMatchingProcessor(Processor):
             entities (dict): Dictionary of entities in the format: {'entityName':'entityInformation'}.
             info_field_name (str): Name of the metadata field added.
             info_key (str): Name of the key holding the entity information
+            flag_field_name: Name of the field that flags whether an entity has been found. Defaults to None.
         """
         if flag_field_name:
             self._flag_field_name = flag_field_name
@@ -550,20 +592,3 @@ class StringMatchingProcessor(Processor):
                     document['meta'][self._field_to_add].append(
                         {'title': entity_key, self._info_key: entity_value, 'span': found_entity.span()})
         return documents
-
-
-        """for document in documents:
-            document['meta'][self._field_to_add] = []
-        for entity_key, entity_value in self._entities.items():
-            regex = re.compile(r'\b' + re.escape(entity_key) + r'\b')
-            for document in documents:
-                document['meta'][self._flag_field_name] = 'false'
-                found_entities = regex.finditer(document['text'].lower())
-                for found_entity in found_entities:
-                    document['meta'][self._flag_field_name] = 'true'
-                    document['meta'][self._field_to_add].append(
-                        {'title': entity_key, self._info_key: entity_value, 'span': found_entity.span()})
-        for document in documents:
-            if document['meta'][self._field_to_add]:
-                document['meta'][self._field_to_add] = json.dumps(document['meta'][self._field_to_add])
-        return documents"""
