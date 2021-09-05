@@ -1,0 +1,14 @@
+
+version: "3.7"
+
+services:
+  rocksdb:
+    image: daniel88279/restful_rocksdb:0.0.1
+    environment:
+      - ROCKSDB_PATH=/etc/rocksdb
+    volumes:
+      - type: bind
+        source: ./db
+        target: /etc/rocksdb
+    ports:
+      - "8089:8080"

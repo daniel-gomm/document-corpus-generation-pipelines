@@ -1,5 +1,7 @@
 from enum import Enum
 
+#Enum of metadata fields
+
 class MetadataFields(Enum):
     ARXIVE_ID = "arixive-id"
     MAKG_ID = "mag_id"
