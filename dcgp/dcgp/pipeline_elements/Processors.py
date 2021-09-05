@@ -548,8 +548,22 @@ class IMRaDClassification(Processor):
             self._classificationPipeline0 = TextClassificationPipeline(model=self._model, tokenizer=BertTokenizer.from_pretrained('allenai/scibert_scivocab_uncased'), device=0)
         if not (torch.cuda.is_available()):
             self._classificationPipeline0 = TextClassificationPipeline(model=self._model, tokenizer=BertTokenizer.from_pretrained('allenai/scibert_scivocab_uncased'), device=-1)
-
+        self._model = BertForSequenceClassification.from_pretrained("allenai/scibert_scivocab_uncased", num_labels=5, output_attentions=False, output_hidden_states=False)
+        self._model.load_state_dict(torch.load(model_path, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')))
         
+        """
+        just replace the above with this to use scibert cased (used in our paper)
+        
+        self._model = BertForSequenceClassification.from_pretrained("allenai/scibert_scivocab_cased", num_labels=5, output_attentions=False, output_hidden_states=False)
+        self._model.load_state_dict(torch.load(model_path, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')))       
+        if torch.cuda.is_available():
+            self._classificationPipeline0 = TextClassificationPipeline(model=self._model, tokenizer=BertTokenizer.from_pretrained('allenai/scibert_scivocab_cased'), device=0)
+        if not (torch.cuda.is_available()):
+            self._classificationPipeline0 = TextClassificationPipeline(model=self._model, tokenizer=BertTokenizer.from_pretrained('allenai/scibert_scivocab_cased'), device=-1)
+        self._model = BertForSequenceClassification.from_pretrained("allenai/scibert_scivocab_cased", num_labels=5, output_attentions=False, output_hidden_states=False)
+        self._model.load_state_dict(torch.load(model_path, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')))
+            
+        """
 
     def process(self, documents: List[Dict]) -> List[Dict]:
         helperArray=[]
