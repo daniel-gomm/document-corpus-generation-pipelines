@@ -551,11 +551,32 @@ class IMRaDClassification(Processor):
 
         
 
-    def process(self, documents: List[Dict]) -> List[Dict]:        
+    def process(self, documents: List[Dict]) -> List[Dict]:
         helperArray=[]
         for document in documents:
             helperArray.append(document["text"])
         changedLabelsCounter=0
+
+        labelArray=self._classificationPipeline0(helperArray)
+        
+        for i in range (0, len(labelArray)):
+            label=labelArray[i]["label"]
+            if (label=="LABEL_0"):
+                label="intro"
+                
+            if (label=="LABEL_1"):
+                label="related"
+                
+            if (label=="LABEL_2"):
+                label="method"
+                
+            if (label=="LABEL_3"):
+                label="results"
+                
+            if (label=="LABEL_4"):
+                label="discussion"
+            documents[i]["meta"]["Section"]=label
+            #documents[i]["meta"]["_status"]=1
         
         for i in range(0, len(documents)):
             if (i<(len(documents)+2)):
