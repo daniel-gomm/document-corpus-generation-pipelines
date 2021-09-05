@@ -87,8 +87,8 @@ pipeline.process()
 ## 4. Recreating the SciQUACK document corpus
 To recreate the SciQUACK document corpus you need some additional data:
 1. The unarXive dataset that is available on [Zenodo](https://zenodo.org/record/4313164)
-2. The arXiv metadata dataset available from [kaggle](https://www.kaggle.com/Cornell-University/arxiv)
-3. The pretrained transformer model for the IMRaD classification task
+2. The arXiv metadata dataset available from [Kaggle](https://www.kaggle.com/Cornell-University/arxiv)
+3. The pretrained transformer model for the IMRaD classification task from [Dropbox](https://www.dropbox.com/sh/ze4iupdx78a7ac5/AAAYfvd0XOM87PJuERnKpoiEa?dl=0)
 
 When you have all the additional files you need to prepare the corpus generation and to execute it.
 
@@ -118,7 +118,8 @@ Finally you need to adjust the [code of the pipeline](./scripts/generate_sciquac
 
 When you have setup everything correctly you can generate the corpus by executing the following command from the root directory of this repository:
 ```bash
-python ./scripts/generate_sciquack_corpus.py
+cd scripts
+python generate_sciquack_corpus.py
 ```
 
 If you have any questions feel free to reach out to us (daniel.gomm@student.kit.edu).
