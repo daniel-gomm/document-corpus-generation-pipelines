@@ -17,6 +17,9 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.tokenize.treebank import TreebankWordDetokenizer
 nltk.download('punkt')
 
+from transformers import BertForSequenceClassification, BertTokenizer, TextClassificationPipeline
+import torch
+
 
 
 #Helpers
@@ -530,32 +533,40 @@ class LineUnarxiveGenerator(Processor):
 
 
 class IMRaDClassification(Processor):
-    def __init__(self, classification_handler: ClassificationHandler):
-        """Classifies sentences in the documents text field into Introduction, Methodology, Results and Discussion.
+    def __init__(self, model_path:str):
+        """Classifies sentences in the documents text field into Introduction, Related Work, Methodology, Results and Discussion.
 
         Args:
-            classification_handler (ClassificationHandler): ClassificationHandler used to classify sentences.
+            model_path (str): Path of the model.
         """
-        self._classification_handler = classification_handler
+        global gpu_counter
+        gpu_counter=0
+        self._model = BertForSequenceClassification.from_pretrained("allenai/scibert_scivocab_uncased", num_labels=5, output_attentions=False, output_hidden_states=False)
+        self._model.load_state_dict(torch.load(model_path, map_location=torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')))
 
-    def process(self, documents: List[Dict]) -> List[Dict]:
+        if torch.cuda.is_available():
+            self._classificationPipeline0 = TextClassificationPipeline(model=self._model, tokenizer=BertTokenizer.from_pretrained('allenai/scibert_scivocab_uncased'), device=0)
+        if not (torch.cuda.is_available()):
+            self._classificationPipeline0 = TextClassificationPipeline(model=self._model, tokenizer=BertTokenizer.from_pretrained('allenai/scibert_scivocab_uncased'), device=-1)
+
+        
+
+    def process(self, documents: List[Dict]) -> List[Dict]:        
+        helperArray=[]
         for document in documents:
-            sentences = sent_tokenize(document["text"])
-            #tokens = word_tokenize(document["text"])
-            labels = self._classification_handler.classify(
-                sentences)  # instance
-            first_token_in_sentence = 0
-            last_token_in_sentence = 0
-            classification_result = []
-            for index, label in enumerate(labels):
-                last_token_in_sentence = last_token_in_sentence + \
-                    len(str.split(sentences[index]))
-                classification_result.append(
-                    {"first_token": first_token_in_sentence,
-                     "last_token": last_token_in_sentence,
-                     "label": label})
-                first_token_in_sentence = last_token_in_sentence
-            document["meta"][MetadataFields.IMRAD.value] = classification_result
+            helperArray.append(document["text"])
+        changedLabelsCounter=0
+        
+        for i in range(0, len(documents)):
+            if (i<(len(documents)+2)):
+                if (documents[i]["meta"]["mag_id"]==documents[np.minimum(i+1, len(documents)-1)]["meta"]["mag_id"]==documents[np.minimum(i+2, len(documents)-1)]["meta"]["mag_id"]):
+                    if ((documents[i]["meta"]["_split_id"]+2)==(documents[np.minimum(i+1, len(documents)-1)]["meta"]["_split_id"]+1)==(documents[np.minimum(i+2, len(documents)-1)]["meta"]["_split_id"])):
+                        if(documents[i]["meta"]["Section"]==documents[i+2]["meta"]["Section"]):
+                            if (documents[np.minimum(i+1, len(documents)-1)]["meta"]["Section"]!=documents[i]["meta"]["Section"]):
+                                documents[np.minimum(i+1, len(documents)-1)]["meta"]["Section"]=documents[i]["meta"]["Section"]
+                                changedLabelsCounter=changedLabelsCounter+1
+            documents[i]["meta"]["_status"]=4
+        
         return documents
 
 # NE Processors

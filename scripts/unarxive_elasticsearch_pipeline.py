@@ -1,5 +1,5 @@
-from kdpipelines.Pipeline import Pipeline
-from kdpipelines import Adapters, Processors, Sinks
+from dcgp.Pipeline import Pipeline
+from dcgp import Adapters, Processors, Sinks
 
 adapter = Adapters.UnarxiveAdapter("/media/daniel/01D6FA6DDBE9CC00/unarxive/unarXive-2020/papers")
 #adapter = Adapters.UnarxiveAdapter("/home/daniel/KIT/KD/samples/sample", line_mode=True)

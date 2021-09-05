@@ -3,7 +3,7 @@ import json
 
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
 from pathlib import Path
-from kdpipelines import Adapters
+from dcgp import Adapters
 
 def __get_args():
     """Parses the CLI arguments
