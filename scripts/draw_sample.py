@@ -3,9 +3,9 @@ import json
 
 from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
 from pathlib import Path
-from dcgp import Adapters
+from dcgp.pipeline_elements import Adapters
 
-def __get_args():
+def _get_args():
     """Parses the CLI arguments
 
     Returns
@@ -36,7 +36,8 @@ def write_docs(documents, out_dir):
     print('{} files written'.format(str(count)))
 
 if __name__ == "__main__":
-    """-----Drawing samples from elasticsearch-----"""
-    args = __get_args()
+    """Draws data sample from a running elasticsearch instance. Sample size and output dir can be set via CLI."""
+    print("-----Drawing samples from elasticsearch-----")
+    args = _get_args()
     documents = get_sample_from_server(args.num_samples, args.host)
     write_docs(documents, args.out_dir)
