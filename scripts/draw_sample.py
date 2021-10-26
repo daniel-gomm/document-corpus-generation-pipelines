@@ -5,7 +5,7 @@ from haystack.document_store.elasticsearch import ElasticsearchDocumentStore
 from pathlib import Path
 from dcgp import Adapters
 
-def __get_args():
+def _get_args():
     """Parses the CLI arguments
 
     Returns
@@ -37,6 +37,6 @@ def write_docs(documents, out_dir):
 
 if __name__ == "__main__":
     """-----Drawing samples from elasticsearch-----"""
-    args = __get_args()
+    args = _get_args()
     documents = get_sample_from_server(args.num_samples, args.host)
     write_docs(documents, args.out_dir)
